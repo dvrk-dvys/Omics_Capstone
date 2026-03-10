@@ -28,11 +28,13 @@ NOTE ON TRANSPOSE:
   for this dataset. Going straight from this script to file_splitter.py is correct.
 
 Usage:
-  python3 preprocess.py <pseudobulk_csv> <output_csv>
-  python3 preprocess.py pseudobulk_matrix.csv preprocessed_matrix.csv
+  python3 preprocess.py [<pseudobulk_csv> <output_csv>]
+  python3 preprocess.py  (uses defaults: data/pseudobulk/pseudobulk_matrix.csv → data/pseudobulk/preprocessed_matrix.csv)
+  python3 preprocess.py data/pseudobulk/pseudobulk_matrix.csv data/pseudobulk/preprocessed_matrix.csv
 """
 
 import sys
+import os
 import pandas as pd
 import numpy as np
 
@@ -179,14 +181,23 @@ def print_summary(df: pd.DataFrame) -> None:
 # ---------------------------------------------------------------------------
 # MAIN
 # ---------------------------------------------------------------------------
+DEFAULT_INPUT_CSV  = "/Users/jordanharris/Code/Omics_Capstone/data/pseudobulk/pseudobulk_matrix.csv"
+DEFAULT_OUTPUT_CSV = "/Users/jordanharris/Code/Omics_Capstone/data/pseudobulk/preprocessed_matrix.csv"
+
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print("Usage: python3 preprocess.py <pseudobulk_csv> <output_csv>")
-        print("Example: python3 preprocess.py pseudobulk_matrix.csv preprocessed_matrix.csv")
+    if len(sys.argv) == 1:
+        input_path  = DEFAULT_INPUT_CSV
+        output_path = DEFAULT_OUTPUT_CSV
+    elif len(sys.argv) == 3:
+        input_path  = sys.argv[1]
+        output_path = sys.argv[2]
+    else:
+        print("Usage: python3 preprocess.py [<pseudobulk_csv> <output_csv>]")
+        print(f"  Default input  : {DEFAULT_INPUT_CSV}")
+        print(f"  Default output : {DEFAULT_OUTPUT_CSV}")
         sys.exit(1)
 
-    input_path  = sys.argv[1]
-    output_path = sys.argv[2]
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
     # Step 1: Load pseudobulk matrix
     df = load_pseudobulk(input_path)

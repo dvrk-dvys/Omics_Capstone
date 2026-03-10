@@ -102,8 +102,8 @@ python preprocess.py
 # Output: preprocessed_matrix.csv — this is the Weka-ready file
 ```
 
-> `preprocessed_matrix.csv` and `pseudobulk_matrix.csv` are also gitignored (large generated
-> files). They are fully reproducible by running the two scripts above on the raw GEO data.
+> `data/pseudobulk/preprocessed_matrix.csv` and `data/pseudobulk/pseudobulk_matrix.csv` are
+> gitignored (large generated files). Fully reproducible by running the two scripts above.
 
 ---
 
@@ -210,8 +210,9 @@ Omics_Capstone/
 │   └── test_split/                         ← Output of file_splitter.py on course data
 ├── pseudobulk.py                           ← Step 1: collapse 46,891 cells → 5 rows (BUILT)
 ├── preprocess.py                           ← Step 2: filter + normalize genes (BUILT)
-├── pseudobulk_matrix.csv                   ← Output of pseudobulk.py (5 × 33,538)
-├── preprocessed_matrix.csv                 ← Output of preprocess.py (5 × 29,629) ← USE THIS
+├── data/pseudobulk/
+│   ├── pseudobulk_matrix.csv               ← Output of pseudobulk.py (5 × 33,538)
+│   └── preprocessed_matrix.csv             ← Output of preprocess.py (5 × 29,629) ← USE THIS
 ├── soulaan_prostate_cancer/                ← Fallback dataset (bulk RNA-seq, not used)
 └── femoral_head_necrosis/                  ← PRIMARY DATASET
     ├── GSE316957_RAW_...tar                ← Original archive (can delete after extraction)

@@ -13,7 +13,7 @@ WHAT IT READS (per sample folder):
   matrix.mtx.gz    — the actual counts in sparse format (gene#, cell#, count triplets)
 
 WHAT IT PRODUCES:
-  pseudobulk_matrix.csv — 5 rows × 33,539 columns (33,538 genes + 1 class label column)
+  data/pseudobulk/pseudobulk_matrix.csv — 5 rows × 33,539 columns (33,538 genes + 1 class label column)
   Each row = one patient sample, summed across all its cells.
   This CSV is the input to normalize → transpose → file_splitter → Weka.
 
@@ -25,8 +25,9 @@ SAMPLE LAYOUT:
   GSM9463152_oa_3    →  Hip Osteoarthritis, patient 3    (11,950 cells)
 
 Usage:
-  python3 pseudobulk.py <samples_dir> <output_csv>
-  python3 pseudobulk.py data/femoral_head_necrosis pseudobulk_matrix.csv
+  python3 pseudobulk.py [<samples_dir> <output_csv>]
+  python3 pseudobulk.py  (uses defaults: data/femoral_head_necrosis → data/pseudobulk/pseudobulk_matrix.csv)
+  python3 pseudobulk.py data/femoral_head_necrosis data/pseudobulk/pseudobulk_matrix.csv
 """
 
 import sys
@@ -208,14 +209,24 @@ def print_summary(df: pd.DataFrame) -> None:
 # MAIN
 # Parses command-line arguments and runs the full pseudobulk pipeline.
 # ---------------------------------------------------------------------------
+DEFAULT_SAMPLES_DIR = "data/femoral_head_necrosis"
+DEFAULT_OUTPUT_CSV  = "/Users/jordanharris/Code/Omics_Capstone/data/pseudobulk/pseudobulk_matrix.csv"
+
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print("Usage: python3 pseudobulk.py <samples_dir> <output_csv>")
-        print("Example: python3 pseudobulk.py data/femoral_head_necrosis pseudobulk_matrix.csv")
+    if len(sys.argv) == 1:
+        samples_dir = DEFAULT_SAMPLES_DIR
+        output_csv  = DEFAULT_OUTPUT_CSV
+    elif len(sys.argv) == 3:
+        samples_dir = sys.argv[1]
+        output_csv  = sys.argv[2]
+    else:
+        print("Usage: python3 pseudobulk.py [<samples_dir> <output_csv>]")
+        print(f"  Default samples_dir : {DEFAULT_SAMPLES_DIR}")
+        print(f"  Default output_csv  : {DEFAULT_OUTPUT_CSV}")
         sys.exit(1)
 
-    samples_dir = sys.argv[1]
-    output_csv  = sys.argv[2]
+    # Create output directory if it doesn't exist
+    os.makedirs(os.path.dirname(output_csv), exist_ok=True)
 
     # Build the pseudobulk matrix from all 5 sample folders
     df = build_pseudobulk_matrix(samples_dir)
