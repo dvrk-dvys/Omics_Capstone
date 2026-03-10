@@ -1,0 +1,81 @@
+# ============================================================
+# Omics Capstone .gitignore
+# ============================================================
+
+# ----- macOS -----
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ----- IDE -----
+.idea/
+.vscode/
+*.iml
+
+# ----- Claude Code -----
+.claude/
+
+# ----- Python -----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.env
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# ----- Jupyter -----
+.ipynb_checkpoints/
+*.ipynb
+
+# ----- R -----
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+.Renviron
+
+# ----- Large / Generated Data Files -----
+# Split output directories (29k+ files — never commit these)
+data/split_output_*/
+split_output_*/
+
+# Large generated matrices (regenerate from source)
+preprocessed_matrix.csv
+pseudobulk_matrix.csv
+
+# Raw genomics downloads (large, re-downloadable)
+data/GSE*_raw/
+data/soulaan_prostate_cancer/
+data/femoral_head_necrosis/
+
+# Generic large genomics file types
+*.bam
+*.bai
+*.vcf
+*.vcf.gz
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.sam
+*.bed
+*.bigwig
+*.bw
+*.h5
+*.hdf5
+
+# ----- Logs & Temp -----
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
