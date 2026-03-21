@@ -209,8 +209,8 @@ def print_summary(df: pd.DataFrame) -> None:
 # MAIN
 # Parses command-line arguments and runs the full pseudobulk pipeline.
 # ---------------------------------------------------------------------------
-DEFAULT_SAMPLES_DIR = "data/femoral_head_necrosis"
-DEFAULT_OUTPUT_CSV  = "/Users/jordanharris/Code/Omics_Capstone/data/pseudobulk/pseudobulk_matrix.csv"
+DEFAULT_SAMPLES_DIR = "/data/femoral_head_necrosis_old"
+DEFAULT_OUTPUT_CSV  = "/Users/jordanharris/Code/Omics_Capstone/data/femoral_head_necrosis/pseudobulk/pseudobulk_matrix.csv"
 
 if __name__ == "__main__":
     if len(sys.argv) == 1:

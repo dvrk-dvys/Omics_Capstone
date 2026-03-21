@@ -1,195 +1,532 @@
-# Capstone: RNA-Seq Analysis with Weka
-## Femoral Head Necrosis (scRNA-seq) – GSE316957
-### Due: March 21 — Target completion: March 19
+# Capstone: Microarray Analysis with Weka
+## Steroid-Induced Osteonecrosis of the Femoral Head — GSE123568
+### Extended deadline: April 30 — Target submission: before March 31 (certificate cutoff)
 
 ---
 
 ## Before Anything Else
 
-- [x] **EMAIL THE PROFESSOR (Mar 6)** — asked whether prostate cancer is mandatory; professor
-  approved femoral head necrosis (GSE316957) as the dataset for this project.
+~~- [x] **EMAIL THE PROFESSOR (Mar 6)** — asked whether prostate cancer is mandatory; professor approved femoral head necrosis (GSE316957) as the dataset for this project.~~
+
+**Switched to GSE123568** — 40-sample microarray study, peripheral serum, SONFH vs control.
+Old scRNA-seq dataset (GSE316957) archived to `data/femoral_head_necrosis_old/`.
 
 ---
 
 ## Dataset Decision
 
-**Using GSE316957** (Femoral Head Necrosis, scRNA-seq)
+**Using GSE123568** — Steroid-Induced Osteonecrosis of the Femoral Head (SONFH)
 
-Notes:
-- scRNA-seq data (sparse MTX/TSV format, 336 MB) — will require additional preprocessing to
-  aggregate/pseudobulk into a tabular format suitable for Weka
-- Confirm class labels and sample groupings from the series matrix before starting Phase 3
-- GSE305522 (prostate cancer bulk RNA-seq) remains downloaded as a fallback if needed
+| Field | Value |
+|-------|-------|
+| GEO Accession | GSE123568 |
+| Title | Identification of Potential Biomarkers for Improving the Precision of Early Detection of SONFH |
+| Submitter | Yanqiong Zhang — Institute of Chinese Materia Medica, China Academy of Chinese Medical Sciences |
+| Submitted | Dec 10, 2018 — Public Dec 31, 2019 |
+| Samples | 40 total — **30 SONFH patients, 10 non-SONFH controls** |
+| Platform | **GPL15207 — Affymetrix Human PrimeView Array** (see explanation below) |
+| Data type | Gene expression microarray — log2 RMA-normalized intensity values |
+| Probes | 49,293 probe sets covering the human transcriptome |
+| Value range | ~2.6 – 6.7 log2 units (confirmed from file inspection) |
+| Sample source | Human peripheral blood serum — non-invasive, clinically accessible |
+| Study goal | Blood-based gene expression biomarkers for early SONFH detection |
+| Linked paper | Jia Y et al. *Clin Transl Med* 2023;13(6):e1295. PMID: 37313692 |
+
+**What is GPL15207 — Affymetrix Human PrimeView Array?**
+
+A **microarray** is a glass chip printed with thousands of short DNA sequences (called probes),
+one for each gene in the human genome. When you wash a blood sample over the chip, each gene's
+RNA sticks to its matching probe and glows proportionally to how active that gene is. The
+machine reads the brightness and converts it to a number.
+
+- **Affymetrix** — the company that makes the chip (now part of Thermo Fisher)
+- **PrimeView** — the specific chip model; covers **~49,000 probe sets** mapping to ~36,000 human genes
+- **GPL15207** — GEO's internal ID for this chip design (every array platform gets one)
+- **RMA normalization** — a standard algorithm (Robust Multi-Array Average) already applied
+  before GEO upload; corrects for background noise and makes samples comparable. Values come
+  out in **log2 scale** (e.g. a value of 7 means 2⁷ = 128 relative intensity units)
+- **Not DNA sequencing** — microarrays measure known genes only; RNA-seq discovers new ones.
+  For biomarker studies, microarrays are faster, cheaper, and clinically validated.
+
+**SONFH — Steroid-induced Osteonecrosis of the Femoral Head**
+- **Steroid-induced** — triggered by long-term corticosteroid use (e.g. prednisone, dexamethasone)
+- **Osteonecrosis** — bone death caused by disrupted blood supply (also called avascular necrosis)
+- **Femoral Head** — the ball at the top of the thigh bone that sits in the hip socket
+
+When blood supply to the femoral head is cut off, the bone dies and eventually collapses,
+causing severe hip pain and loss of function. Early detection (before collapse) allows
+intervention with core decompression or other joint-preserving procedures.
+The controls in this study are steroid users who did *not* develop osteonecrosis —
+making the comparison about **disease susceptibility**, not just steroid exposure.
+
+**Why this is better than the old dataset:**
+- 40 samples vs 5 — 8× more data, meaningful statistical power
+- Already sample-level — no pseudobulk aggregation needed
+- Published and peer-reviewed with a linked paper
+- Clinically relevant: blood-based early detection (actionable before bone collapse)
+
+**Class imbalance note:** 30 SONFH vs 10 control (3:1 ratio). Mention in Methods
+as a study design limitation. Standard practice: report class-weighted metrics in Weka.
 
 ---
 
 ## Getting Started — Data Download
 
-> **Data is not included in this repository.** All raw and processed data files are gitignored
-> due to file size. Follow the steps below to download the necessary datasets before running
-> any scripts.
+> **Data is not included in this repository.** All raw and processed data files are gitignored.
+> Follow these steps before running any scripts.
 
----
-
-### Primary Dataset — Femoral Head Necrosis (scRNA-seq)
-
-**GEO Accession:** [GSE316957](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316957)
-
-**Study:** *Single-Cell RNA Sequencing Reveals Distinct Cellular and Molecular Features of
-Steroid-Induced Osteonecrosis of the Femoral Head Compared to Alcohol-Induced Osteonecrosis
-and Hip Osteoarthritis*
+### Primary Dataset — GSE123568
 
 **Download steps:**
-1. Go to https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316957
-2. Scroll to the bottom of the page to the **"Download family"** section
-3. Click **"(custom)"** or use the **HTTP** link next to `GSE316957_RAW.tar` to download the raw data archive
-4. Also download `GSE316957_series_matrix.txt.gz` (sample metadata / condition labels)
-5. Place the downloaded files into: `data/femoral_head_necrosis/`
-6. Extract the tar archive:
-   ```bash
-   cd data/femoral_head_necrosis/
-   tar -xf GSE316957_RAW.tar
-   ```
-   This will produce 5 sample folders (`GSM9463148_onfh_1/` through `GSM9463152_oa_3/`),
-   each containing `barcodes.tsv.gz`, `features.tsv.gz`, and `matrix.mtx.gz`.
+1. Go to: `https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE123568`
+2. Scroll to **"Download family"** section
+3. Download **Series Matrix File(s)** (TXT format) — this is the main data file
+4. Download **SOFT formatted family file(s)** — study and sample metadata
+5. Place both files in: `data/femoral_head_necrosis/`
 
-**Expected structure after extraction:**
+**Expected structure after download:**
 ```
 data/femoral_head_necrosis/
-├── GSE316957_series_matrix.txt.gz
-├── GSM9463148_onfh_1/
-│   ├── barcodes.tsv.gz
-│   ├── features.tsv.gz
-│   └── matrix.mtx.gz
-├── GSM9463149_onfh_2/  ...
-├── GSM9463150_oa_1/    ...
-├── GSM9463151_oa_2/    ...
-└── GSM9463152_oa_3/    ...
+├── GSE123568_series_matrix.txt.gz   ← primary data + sample labels
+└── GSE123568_family.soft.gz         ← metadata (optional but useful)
 ```
 
----
-
-### Fallback / Secondary Dataset — Prostate Adenocarcinoma (bulk RNA-seq)
-
-**GEO Accession:** [GSE305522](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE305522)
-
-**Study:** *DHODH regulates mitochondrial bioenergetics, methylation cycle, and DNA repair in
-Prostate Adenocarcinoma*
-
-**Download steps:**
-1. Go to https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE305522
-2. Scroll to the **"Download family"** section at the bottom
-3. Download the supplementary files (typically a counts matrix or series matrix)
-4. Place downloaded files into: `data/soulaan_prostate_cancer/`
-
-> This dataset is bulk RNA-seq, so no pseudobulk aggregation is needed. The samples come
-> pre-aggregated — one row per sample. The transpose step may be required depending on
-> the orientation of the downloaded matrix.
+**Skip:** `GSE123568_RAW.tar` (71.8 MB CEL files) — raw Affymetrix files requiring
+R/oligo to process. The series matrix already contains RMA-normalized log2 values.
 
 ---
 
 ### After Downloading — Run the Pipeline
 
-Once the primary dataset is in place, run the scripts in this order:
-
-```bash
-# Step 1: Aggregate 46,891 cells → 5 rows (one per patient)
-python pseudobulk.py
-
-# Step 2: Filter low-expression genes + normalize (log-CPM)
-python preprocess.py
-
-# Output: preprocessed_matrix.csv — this is the Weka-ready file
+```
+GSE123568_series_matrix.txt.gz
+(40 samples × ~49,000 probes, log2 RMA values, already normalized)
+         │
+         │  parse_series_matrix.py     ← NEW (replaces pseudobulk.py)
+         ▼
+parsed_matrix.csv  (40 rows × ~49k probe columns + class)
+         │
+         │  preprocess.py
+         ▼
+preprocessed_matrix.csv  (40 rows × filtered probes, log2 values)
+         │
+         │  feature_select.py
+         ▼
+top100_features.arff  ◄── load this into Weka
+EDA/  ◄── exploratory plots
 ```
 
-> `data/pseudobulk/preprocessed_matrix.csv` and `data/pseudobulk/pseudobulk_matrix.csv` are
-> gitignored (large generated files). Fully reproducible by running the two scripts above.
+```bash
+# Step 1 — Parse series matrix
+# Reads GSE123568_series_matrix.txt.gz.
+# Extracts probe matrix, transposes to samples × probes, assigns class labels.
+python3 parse_series_matrix.py
+```
+
+**Output → `data/femoral_head_necrosis/parsed/parsed_matrix.csv`**
+Shape: 40 rows × (~49k probe columns + class)
+
+```bash
+# Step 2 — Filter probes
+# Removes low-variance probes (IQR < 0.5 log2 units across all 40 samples).
+# No normalization applied — data is already log2 RMA from the series matrix.
+python3 preprocess.py
+```
+
+**Output → `data/femoral_head_necrosis/parsed/preprocessed_matrix.csv`**
+Shape: 40 rows × (filtered probes + class)
+
+```bash
+# Step 3 — Feature selection + ARFF export + EDA plots
+# Ranks all probes by |fold change| between SONFH and control.
+# Selects top 100. Exports Weka ARFF. Generates 3 EDA plots.
+python3 feature_select.py
+```
+
+**Output → `data/femoral_head_necrosis/feature_selection/`**
+- `top100_features.arff` — import directly into Weka Explorer
+- `top100_features.csv` — same data in CSV form
+- `gene_rankings.csv` — all probes ranked by |FC| and variance
+
+**Output → `data/femoral_head_necrosis/EDA/`** — see EDA section below
+
+> All generated files are gitignored. Fully reproducible by running the three scripts above in order.
 
 ---
 
-## Understanding the Raw Data Files
+## EDA — Exploratory Data Analysis
 
-The original download consisted of 3 files:
+> Generated by `feature_select.py`, saved to `data/femoral_head_necrosis/EDA/`.
 
-1. **`GSE316957_RAW_femoral_head_necrosis_alcohol.tar`** — a tar archive, which is like a folder
-   zipped into one file. Think of it as a box containing many files. When you extract it, the
-   box opens. Inside were 15 files: 5 patient samples × 3 files each.
+---
 
-2. **`GSE316957_family.soft.gz`** — metadata about the study (study title, summary, methods).
+### 1 — The full feature landscape (Volcano-style plot)
 
-3. **`GSE316957_series_matrix.txt.gz`** — metadata about each sample (sample names, conditions,
-   which patient is ONFH vs osteoarthritis).
+> **"There are many potentially informative genes"** — shows the full landscape of 11,687 filtered probes; our top 100 sit in the high-FC, high-variance corner.
 
-> `.gz` = a single compressed file (like `.zip`). Decompress it to get the original file back.
+Every dot is one of the 11,687 probes that survived the IQR filter. The top 10 selected probes are labeled by gene name.
 
-### What's inside each sample folder
+The key insight: the top 100 probes are not just high fold change — they're also high variance, meaning they're genuinely informative rather than noise.
 
-Every sample produces exactly 3 files from the sequencing machine:
+- **X-axis — |Fold Change|:** how different each probe's average expression is between SONFH and control patients, in log2 units. Further right = more different between groups.
+- **Y-axis — Variance:** how much a probe's expression varies across all 40 patients regardless of group. Higher = more spread out across everyone.
+- **Legend:** grey dots = all 11,687 filtered probes; red dots = the top 100 selected probes; gene name labels on the top 10.
 
-| File | What it is |
-|------|-----------|
-| `barcodes.tsv.gz` | A list of individual cells — one line per cell. Each barcode (e.g. `AAACCCAAGCGACATG-1`) is a unique ID assigned to one cell during the experiment. |
-| `features.tsv.gz` | A list of every gene measured — 33,538 genes total. Each line = gene ID, gene name, type. Same list for every sample. |
-| `matrix.mtx.gz` | The actual data — how much of each gene was detected in each cell. Stored as triplets: `gene# cell# count`. Only non-zero values are stored to save space (called "sparse" format). |
+![volcano_plot](data/femoral_head_necrosis/EDA/volcano_plot.png)
 
-### The 5 samples
+---
 
-| Folder | Condition | # Cells |
-|--------|-----------|---------|
-| `GSM9463148_onfh_1/` | Steroid-induced ONFH | 8,160 |
-| `GSM9463149_onfh_2/` | Steroid-induced ONFH | 2,128 |
-| `GSM9463150_oa_1/` | Hip Osteoarthritis | 8,164 |
-| `GSM9463151_oa_2/` | Hip Osteoarthritis | 16,489 |
-| `GSM9463152_oa_3/` | Hip Osteoarthritis | 11,950 |
+### 2 — Why these probes? — Top 20 by Fold Change
 
-33,538 genes × ~46,891 total cells across all 5 samples.
+> **"We selected the most discriminative ones"** — top 20 probes ranked by how differently they're expressed in SONFH vs control.
 
-### What pseudobulk.py actually compressed
+Each bar = the absolute log2 fold change between SONFH and control. Top genes include **EIF1AY** (|FC|=3.60), **CA1** (3.57), **IGF2** (3.45), **RHCE/RHD** (3.39), **BPGM** (3.39).
 
-Each patient's folder contained thousands of individual cell measurements.
-`pseudobulk.py` summed all of those cells into one row per patient:
+- **X-axis — |Log Fold Change|:** magnitude of the difference in mean log2 expression between SONFH and control. A value of 3.6 means the SONFH average is ~12× different from control (2³·⁶ ≈ 12).
+- **Y-axis — Probe ID:** each bar is one probe, labeled by its Affymetrix probe ID. Longer bar = selected earlier = more discriminative.
+- **Legend:** dark red bars = top 10 highest |FC|; blue bars = ranks 11–20. Colour is rank-only — both colours were selected for Weka.
 
-| Patient folder | Condition | Cells in raw data | After pseudobulk |
-|----------------|-----------|------------------:|-----------------|
-| GSM9463148_onfh_1 | ONFH | 8,160 cells | 1 row |
-| GSM9463149_onfh_2 | ONFH | 2,128 cells | 1 row |
-| GSM9463150_oa_1   | OA   | 8,164 cells | 1 row |
-| GSM9463151_oa_2   | OA   | 16,489 cells | 1 row |
-| GSM9463152_oa_3   | OA   | 11,950 cells | 1 row |
-| **Total** | | **46,891 cells** | **5 rows** |
+![fold_change_top20](data/femoral_head_necrosis/EDA/fold_change_top20.png)
 
-Result: `pseudobulk_matrix.csv` — 5 rows × 33,539 columns (33,538 genes + class label).
+---
 
-### What preprocess.py did to the genes
+### 3 — Do individual genes actually separate the groups? — Box plots (Top 6)
 
-Of the 33,538 genes measured, many were silent in nearly every sample —
-measuring them adds noise without adding signal. `preprocess.py` did two things:
+> **"These genes clearly differ between classes"** — individual gene distributions for SONFH vs control patients, no overlap.
 
-**Filter:** kept only genes expressed (count > 0) in at least 2 of 5 samples.
-- Genes before : 33,538
-- Genes removed: 3,909  (zero in 4 or 5 samples — no useful signal)
-- Genes kept   : **29,629**
+Each of the 6 panels shows one top probe. The box covers the middle 50% of values (IQR); the line inside is the median; whiskers extend to the furthest non-outlier value. For the top probes, the boxes barely overlap, confirming the genes are genuinely expressed differently — not just statistically selected artifacts.
 
-**Normalize (log-CPM):** corrected for the fact that different patients had very
-different total read counts (23M to 70M). Without this, a gene could appear more
-active in one patient just because that sample has more total data — not biology.
-- Raw count range after summing: 0 – 3,151,398
-- After log-CPM: 0.000 – 10.788  (compressed to a manageable scale)
+- **X-axis:** the two groups being compared — `control (n=10)` on the left, `SONFH (n=30)` on the right.
+- **Y-axis — log2 expression:** the actual measured log2 intensity value for that probe, per patient. Higher = more mRNA detected.
+- **Legend:** blue box = control patients; red box = SONFH patients. Each panel title shows the gene symbol and probe ID.
 
-Result: `preprocessed_matrix.csv` — 5 rows × 29,630 columns, ready for feature selection.
+![boxplots_top6](data/femoral_head_necrosis/EDA/boxplots_top6.png)
 
-### Which files to look at first (and which to skip)
+> **Interpretation note:** Several of the top-ranked probes (CA1, BPGM, RHCE/RHD, GYPA) show *lower* expression in SONFH than in controls. A first instinct might be that steroids are suppressing these genes. A more accurate reading: these genes are all associated with erythrocyte (red blood cell) function and oxygen transport. Their reduced signal in SONFH likely reflects a **systemic vascular or hematological shift** in the blood — consistent with the impaired blood supply that defines osteonecrosis — rather than direct transcriptional suppression. They are best understood as **biomarker signals that reflect the disease state**, not as genes causing it. See the Biological Interpretation section below for the full discussion.
 
-Look at these first, in this order:
+---
 
-1. **`features.tsv.gz`** (any sample — they're all identical) — this is your gene list. Easy to
-   read, just a text file. Tells you what 33,538 genes were measured.
-2. **`GSE316957_series_matrix.txt.gz`** — confirms which sample is ONFH vs OA. You already know
-   from the folder names but this is the official record.
-3. **`matrix.mtx.gz`** — the actual numbers. Hard to read raw, but you can peek at it to
-   understand the format.
+### 4 — Are SONFH patients similar to each other? — Sample Correlation Heatmap
 
-Don't bother opening `barcodes.tsv.gz` — it's just a list of cell IDs, nothing useful to look at manually.
+> **"Patients cluster by disease state"** — all 40 patients, color-coded; SONFH patients are more similar to each other than to controls.
+
+A 40×40 grid — one cell per pair of patients. Rows and columns are reordered by hierarchical clustering (the dendrograms on the edges group similar patients together automatically). If the disease signal is real, SONFH patients should form their own cluster and controls theirs.
+
+- **X-axis & Y-axis:** both axes are the 40 patient samples. Each row and each column is one patient. The cell where row i meets column j shows how similar patients i and j are.
+- **Cell colour — Pearson correlation:** warm red = correlation close to 1.0 (nearly identical expression profiles); cool blue = lower correlation (more different). Scale runs from 0.7 to 1.0 — all patients are human blood cells so no pair scores below ~0.7.
+- **Sidebar colour bars (top and left edges):** red = SONFH patient; blue = control patient. These let you see at a glance whether clustered patients share a diagnosis.
+- **Legend:** SONFH (n=30) in red, control (n=10) in blue — shown in the dendrogram area.
+
+![sample_correlation](data/femoral_head_necrosis/EDA/sample_correlation.png)
+
+---
+
+### 5 — Expression patterns — Heatmap (Top 20 Probes)
+
+> **"The signal is consistent across patients"** — a different view of the same separation, showing all 20 top probes at once.
+
+Log2 expression of the top 20 probes across all 40 samples. Both rows (probes) and columns (patients) are reordered by hierarchical clustering. Block structure shows SONFH and control have distinct expression profiles — genes that are high in SONFH are consistently high across all 30 SONFH samples, not just a few outliers.
+
+- **X-axis — Sample:** each column is one patient sample. GSM IDs shown on the axis (tick labels may overlap — zoom in to read individual IDs).
+- **Y-axis — Probe ID:** each row is one of the top 20 probes ranked by |fold change|.
+- **Cell colour:** log2 expression intensity. Warm red = high expression; cool blue = low expression. Scale is relative across the heatmap.
+- **Column colour bar (top strip):** red = SONFH patient column; blue = control patient column. This is the key visual — if the red and blue columns form distinct blocks, the probes separate the groups.
+- **Legend:** SONFH (red) and control (blue) shown in the dendrogram area above the heatmap.
+
+![heatmap_top20](data/femoral_head_necrosis/EDA/heatmap_top20.png)
+
+---
+
+### 6 — Do the samples separate? — PCA
+
+> **"Low-dimensional structure confirms separation"** — 84.6% of all variation captured in one axis, perfectly separating the two groups.
+
+PCA compresses the 100-probe feature space down to 2 numbers per patient. Each dot is one patient. If the two groups land in different regions of this 2D space, the selected probes are genuinely capturing disease signal — not noise.
+
+- **X-axis — PC1 (84.6% variance explained):** the single most important "direction of variation" across all 100 probes. Because it captures 84.6% of all variation, nearly everything meaningful about the data is in this one axis. SONFH and control patients are separated along PC1.
+- **Y-axis — PC2 (2.4% variance explained):** the second most important direction, after removing the PC1 effect. Adds minor additional separation.
+- **Legend:** red filled circles = SONFH patients (n=30); blue filled circles = control patients (n=10). Each dot is labeled with the patient's GSM sample ID.
+
+![pca_plot](data/femoral_head_necrosis/EDA/pca_plot.png)
+
+---
+
+## Glossary — Key Terms
+
+Plain-English definitions for every technical term used in this project, grouped by topic.
+
+---
+
+### Biology & Genomics
+
+| Term | What it means |
+|------|---------------|
+| **Gene expression** | How actively a gene is being "read" by a cell at a given moment. DNA contains the instructions; mRNA is the photocopy the cell makes to actually use those instructions. Expression level = how many copies of that mRNA are present. |
+| **mRNA (messenger RNA)** | The intermediate molecule between a gene (DNA) and a protein. When a gene is "expressed," the cell transcribes DNA into mRNA. Microarrays and RNA-seq both measure mRNA levels — not DNA, not protein. |
+| **Transcriptome** | The complete set of all mRNA molecules in a cell or tissue at a specific moment. Measuring the transcriptome tells you which genes are active. |
+| **Microarray** | A chip (about the size of a glass slide) printed with tens of thousands of short DNA sequences called probes. A patient sample is washed over the chip; mRNA from the sample sticks to matching probes. A scanner reads how much stuck to each probe — that's the expression value. Affymetrix PrimeView (GPL15207) is the specific chip used in this dataset: 49,293 probes covering ~20,000 human genes. |
+| **Probe** | One of the 49,293 short DNA sequences printed on the Affymetrix chip. Each probe "catches" one specific mRNA sequence from the patient sample. Each gene typically has multiple probes targeting it from different angles. |
+| **Probe set** | The group of all probes on the chip that target the same gene. The chip combines their readings into one summary expression value per gene. |
+| **_at probe suffix** | Standard probe — targets exactly one gene's transcript. Most specific, most reliable. |
+| **_s_at probe suffix** | "Shared" — matches multiple transcripts (splice variants) of the *same* gene. Still gene-specific but less precise. |
+| **_x_at probe suffix** | "Cross-hybridizing" — can stick to sequences from *multiple different genes*. Least specific; flag when interpreting results. |
+| **Cross-hybridization** | When a probe binds to an unintended mRNA sequence because the sequences are similar enough. _x_at probes are known cross-hybridizers — their readings reflect a mix of genes, not just one. |
+| **Splice variant / isoform** | The same gene can produce slightly different mRNA molecules depending on how it's "spliced" — different sections included or excluded. One gene can have many isoforms. _s_at probes target multiple isoforms of the same gene. |
+| **Biomarker** | A measurable biological signal (gene expression level, protein level, etc.) that reliably indicates the presence, severity, or risk of a disease. The top differentially expressed probes in this project are candidate biomarkers for SONFH. |
+| **SONFH** | Steroid-induced Osteonecrosis of the Femoral Head — bone death in the hip joint caused by long-term corticosteroid (steroid) use. Steroids can reduce blood flow to the femoral head; without blood supply the bone tissue dies. The "disease" class in this dataset. |
+| **Osteonecrosis** | Literally "bone death" — the tissue dies because its blood supply is cut off. Also called avascular necrosis (AVN). |
+| **Femoral head** | The ball at the top of the thigh bone (femur) that fits into the hip socket. It is especially vulnerable to osteonecrosis because it has a limited blood supply. |
+| **Corticosteroids** | A class of steroid hormones (e.g. prednisone, dexamethasone) used medically to suppress inflammation. Long-term high-dose use is one of the leading causes of SONFH. |
+| **Peripheral serum** | Blood serum collected from a vein (as opposed to bone marrow or tissue biopsy). This is what was sampled from the 40 patients — a non-invasive blood draw, not surgery. |
+| **Control group** | In this dataset: patients who received corticosteroids but did NOT develop SONFH (n=10). They serve as the comparison baseline. Not completely healthy people — they are steroid-treated patients without bone necrosis. |
+
+---
+
+### Data & Measurement
+
+| Term | What it means |
+|------|---------------|
+| **GEO (Gene Expression Omnibus)** | The public database run by NCBI where researchers deposit raw and processed genomics data when they publish a study. All data in this project came from GEO. Free to download. |
+| **GSE accession** | "GEO Series" — the ID for one complete study deposited in GEO. Our dataset: GSE123568. Think of it as the study's library catalogue number. |
+| **GSM accession** | "GEO Sample" — the ID for one individual patient sample within a study. Our 40 patients have IDs GSM3507251–GSM3507290. |
+| **Series matrix file** | The main data file GEO provides for microarray studies. Contains two sections: a metadata header (patient labels, disease status, gender) and a data table (probe expression values for every patient). Our file: `GSE123568_series_matrix.txt.gz`. |
+| **SOFT file** | "Simple Omnibus Format in Text" — a second GEO file that contains the platform annotation: which probe ID maps to which gene symbol. Our file: `GSE123568_family.soft.gz`. Used to translate probe IDs like `11720807_x_at` into gene names like `EIF1AY`. |
+| **log2 expression** | The gene expression value after a log base-2 transformation. RMA normalization already applies this. Values in our dataset range from ~2–14. Log scale is used because expression can vary by orders of magnitude — log scale compresses that range so differences are comparable. |
+| **RMA normalization** | "Robust Multi-array Average" — the standard processing pipeline for Affymetrix microarray data. It corrects for chip background noise, makes expression values comparable across all 40 chips, and outputs log2-transformed intensities. Already applied by GEO before we downloaded the data. We do not normalize again. |
+| **IQR filter** | The first filtering step in `preprocess.py`. For each of the 49,293 probes, it looks at the expression values across all 40 patients and computes the IQR (see below). If the IQR is less than 0.5 log2 units, the probe is removed. Intuition: if a probe gives nearly the same reading in every patient — sick or healthy — it carries no information about disease status and would just add noise for the classifier. Result: 49,293 → 11,687 probes kept (76% removed as flat). |
+| **IQR (Interquartile Range)** | The spread of the middle 50% of a set of values. Calculated as Q75 − Q25 (the 75th percentile value minus the 25th percentile value). A small IQR means the values are tightly bunched — the probe is "flat." A large IQR means the probe varies a lot across patients, which is what we want. For the IQR filter, we use 0.5 log2 units as the cutoff. |
+| **Variance** | How spread out a set of values is around their average. Mathematically the average of squared differences from the mean. Used as a secondary ranking metric in feature selection — high-variance probes are variable across patients and thus potentially informative. |
+| **Fold change (FC)** | How much more (or less) a gene is expressed in one group vs another, measured in log2 units. An FC of 1.0 means the SONFH average is 2× higher than control's (because 2¹ = 2). An FC of 3.6 means ~12× higher (2³·⁶ ≈ 12). We use **absolute** FC (|FC|) so direction doesn't matter — we just want genes that differ strongly in either direction. |
+| **Pearson correlation** | A number from −1 to +1 measuring how similar two things move together. For two patients: +1.0 = their full expression profiles are identical across all probes; 0 = no relationship at all. In our sample correlation heatmap, all patient pairs score >0.7 because they're all human blood — but SONFH patients score higher *with each other* than with controls. |
+| **Hierarchical clustering** | An algorithm that groups similar things together by repeatedly merging the two most similar items. In our heatmaps, this reorders the rows and columns so that similar probes (or similar patients) end up next to each other, revealing block patterns. |
+| **Dendrogram** | The tree diagram on the edge of a clustered heatmap. Each branch point shows where two items (or clusters) were merged. Items connected at a low branch are very similar; items connected only at the top are more different. |
+| **Pseudobulk** | A technique used with single-cell RNA-seq data (not used in this project). When you have ~46,000 individual cells from 5 patients, you sum all cell counts per patient into one row — making it look like bulk RNA-seq. Used in the old dataset (GSE316957); not needed here because microarray data is already one row per patient. |
+
+---
+
+### Machine Learning & Classification
+
+| Term | What it means |
+|------|---------------|
+| **Feature** | One input variable used by a classifier. In this project, each probe is a feature — its log2 expression value for a given patient. After feature selection, we have 100 features. |
+| **Feature selection** | The process of choosing which subset of features to give the classifier. We rank all 11,687 probes by |fold change| and keep the top 100. More features ≠ better model — too many features with too few samples causes overfitting. |
+| **Classifier** | An algorithm that takes a set of input features (probe values) for one patient and predicts which class (SONFH or control) that patient belongs to. |
+| **Class imbalance** | When one class has many more samples than the other. Here: 30 SONFH vs 10 control (3:1 ratio). This matters because a classifier could get 75% accuracy by always guessing SONFH — without learning anything real. Per-class metrics (TP rate, F1) expose this. |
+| **Overfitting** | When a model memorizes the training data instead of learning generalizable patterns. Happens easily when you have many features but few samples. Cross-validation helps detect it. |
+| **10-fold cross-validation** | A way to test classifier accuracy on all data without needing a separate holdout set. The 40 samples are split into 10 groups of 4. Each group takes a turn being the "test set" while the classifier trains on the other 36. Final accuracy = average across all 10 turns. More reliable than a single train/test split. |
+| **Confusion matrix** | A 2×2 table showing how the classifier's predictions compare to the true labels: True Positives (SONFH correctly called SONFH), True Negatives (control correctly called control), False Positives, False Negatives. |
+| **TP rate (True Positive rate)** | Also called sensitivity or recall. Of all actual SONFH patients, what fraction did the classifier correctly identify as SONFH? = TP / (TP + FN). |
+| **F1 score** | The harmonic mean of precision and recall. A single number (0–1) that balances both. More informative than raw accuracy when classes are imbalanced. |
+| **AUC (Area Under the ROC Curve)** | Measures overall classifier quality across all possible decision thresholds. AUC = 1.0 is a perfect classifier; AUC = 0.5 is random guessing. Robust to class imbalance. |
+| **Naive Bayes** | A probabilistic classifier that assumes all features are independent of each other (the "naive" assumption). Fast, interpretable, often works well on high-dimensional data. Good baseline. |
+| **J48 Decision Tree** | A tree-based classifier that makes sequential yes/no splits on feature values. Interpretable — you can read the tree rules and see which probes the model splits on first. Weka's implementation of the C4.5 algorithm. |
+| **Random Forest** | An ensemble of many decision trees, each trained on a random subset of features and samples. The final prediction is a vote across all trees. Generally the most accurate of the five classifiers; also provides feature importance scores. |
+| **SVM / SMO** | Support Vector Machine — finds the widest possible margin (gap) between the two classes in feature space. SMO is the algorithm Weka uses to train it. Works well when features > samples. |
+| **k-NN / IBk** | k-Nearest Neighbours — classifies a patient by looking at its k most similar patients in the training set and taking a majority vote. No explicit "training" — it just memorizes the data. Sensitive to the choice of k. |
+| **Weka** | "Waikato Environment for Knowledge Analysis" — an open-source machine learning GUI from the University of Waikato. Lets you run classifiers on an ARFF file without writing code. Used in Phase 5. |
+| **ARFF file** | "Attribute-Relation File Format" — Weka's input format. Like a CSV but with a header block that declares each column's name and data type. The `class` column must be listed last and declared as a nominal attribute. |
+| **PCA (Principal Component Analysis)** | A technique that finds the directions of greatest variation in high-dimensional data and projects all points onto those directions. PC1 = the single axis that explains the most variation. Useful for visualizing whether disease groups separate before running any classifier. |
+
+---
+
+---
+
+## Understanding the Data Files
+
+### The most important difference from the old dataset
+
+The old scRNA-seq dataset (GSE316957) came as **5 separate patient folders**, each with
+3 files. That's because single-cell sequencing produces enormous per-patient files that
+must be stored separately.
+
+This microarray dataset works completely differently: **all 40 patients live inside
+just 2 files**. There are no patient folders. The data is all in one table.
+
+```
+OLD (scRNA-seq — GSE316957):            NEW (microarray — GSE123568):
+data/femoral_head_necrosis_old/         data/femoral_head_necrosis/
+├── GSM9463148_onfh_1/                  ├── GSE123568_series_matrix.txt.gz  ← ALL 40 patients
+│   ├── barcodes.tsv.gz                 └── GSE123568_family.soft.gz        ← annotation
+│   ├── features.tsv.gz
+│   └── matrix.mtx.gz
+├── GSM9463149_onfh_2/
+├── GSM9463150_oa_1/
+├── GSM9463151_oa_2/
+└── GSM9463152_oa_3/
+
+5 folders, 3 files each = 15 files        2 input files = 40 patients
+Both stay compressed — scripts read .gz directly, no extraction needed.
+```
+
+---
+
+### File 1 — `GSE123568_series_matrix.txt.gz` (7.7 MB compressed, read directly by scripts)
+
+This is the main data file. It has two parts:
+
+**Part A — Metadata header** (lines starting with `!`) *(the labels)*
+
+Every line beginning with `!` is a label describing the study or the samples.
+The important ones:
+
+| Line | What it contains |
+|------|-----------------|
+| `!Sample_geo_accession` | The GSM ID for each of the 40 patients, in column order |
+| `!Sample_title` | Plain-English name: `"Peripheral serum, control group, patient 1"` etc. |
+| `!Sample_characteristics_ch1` | Three rows: `tissues:`, `gender:`, and `disease:` |
+| `!series_matrix_table_begin` | Marks where the actual numbers start |
+| `!series_matrix_table_end` | Marks where the numbers end |
+
+The `disease:` characteristics line is what the pipeline uses to assign class labels:
+`disease: non-SONFH` → `control` | `disease: SONFH` → `SONFH`
+
+**Part B — Data matrix** (between the begin/end markers) *(the raw feature data)*
+
+A tab-separated table. Rows = probe sets (49,293 total). Columns = the 40 patient samples.
+
+```
+"ID_REF"       "GSM3507251"  "GSM3507252"  ... "GSM3507290"
+"11715100_at"    3.135515      4.202642    ...   3.714249
+"11715101_s_at"  5.223045      6.073092    ...   5.748748
+... (49,293 rows total)
+```
+
+Each number is a **log2 intensity value** — how active that gene was in that patient's blood.
+Higher = more active. Values range from ~2.6 to ~6.7 (confirmed from file inspection).
+The `log2` part means: a value of 6 represents 2⁶ = 64 units of signal; a value of 7
+represents 2⁷ = 128 — so each +1 step is a doubling of expression.
+
+---
+
+### File 2 — `GSE123568_family.soft.gz` (51 MB compressed) *(the translation dictionary)*
+
+The SOFT file is a comprehensive metadata file. It has three sections:
+
+| Section | What it contains |
+|---------|-----------------|
+| `^SERIES = GSE123568` | Study title, summary, design, contributors — the "about this study" info |
+| `^PLATFORM = GPL15207` | The chip specification + probe annotation table (49,395 rows) |
+| `^SAMPLE = GSM3507251` ... (×40) | One section per patient: their metadata and expression values |
+
+The most useful part for this project is the **platform annotation table** inside the
+`^PLATFORM` section, which maps each cryptic probe ID to a real gene name.
+`feature_select.py` reads this directly from the `.soft.gz` on the fly — no extraction needed.
+
+Example of what the annotation looks like:
+
+| Probe ID | Gene Title | Gene Symbol |
+|----------|-----------|-------------|
+| `11715100_at` | histone cluster 1, H3g | HIST1H3G |
+| `11715101_s_at` | histone cluster 1, H3g | HIST1H3G |
+| `11715103_x_at` | tumor necrosis factor, alpha-induced protein 8-like 1 | TNFAIP8L1 |
+
+**Gene Symbol** (`HIST1H3G`, `TNFAIP8L1`) is what you use when reading papers and writing
+the Discussion — these are the internationally agreed short names for genes.
+
+### Why multiple probes map to the same gene
+
+49,293 probes covering ~36,000 human genes means some genes have 2–4 probes each.
+This is intentional. Three reasons:
+
+**1. Redundancy by design.** The chip puts multiple probes per important gene so that
+if one probe gets a bad reading (contamination, poor hybridization), the others still
+work. More reliable measurement.
+
+**2. Alternative splicing.** One gene can produce multiple slightly different mRNA
+versions (called isoforms). Different probes can target different versions of the
+same gene — so each probe is technically measuring something slightly different.
+
+**3. Probe type suffixes** — Affymetrix encodes *why* there are multiple probes in
+the probe ID name itself:
+
+| Suffix | What it means |
+|--------|--------------|
+| `_at` | Standard probe — matches one specific gene |
+| `_s_at` | "Shared" — matches multiple transcripts of the *same* gene |
+| `_x_at` | "Cross-hybridizing" — matches sequences across *multiple different genes* (least specific) |
+
+Example from this dataset: `11715100_at`, `11715101_s_at`, `11715102_x_at` all → `HIST1H3G`
+
+**What this means for your results:** When feature_select.py picks the "top 100 probes,"
+it might include 3 probes all pointing to the same gene. That gene is effectively counted
+3 times. This is not an error — it reinforces the signal — but when writing the Discussion
+you report *gene names*, not probe counts. Use the annotation file to look up each
+selected probe ID → gene symbol → then list unique genes.
+
+Note: some probes have `---` in the Gene Symbol column — these are control probes or
+unannotated sequences. They will be present in the pipeline but ignored when looking up
+biology (you can't search `---` on PubMed).
+
+---
+
+### The 40 samples — who they are
+
+| GSM ID | Title in file | Disease | Gender | Pipeline label |
+|--------|--------------|---------|--------|----------------|
+| GSM3507251 | control group, patient 1 | non-SONFH | Female | `control` |
+| GSM3507252 | control group, patient 2 | non-SONFH | Male | `control` |
+| GSM3507253 | control group, patient 3 | non-SONFH | Male | `control` |
+| GSM3507254 | control group, patient 4 | non-SONFH | Male | `control` |
+| GSM3507255 | control group, patient 5 | non-SONFH | Male | `control` |
+| GSM3507256 | control group, patient 6 | non-SONFH | Male | `control` |
+| GSM3507257 | control group, patient 7 | non-SONFH | Male | `control` |
+| GSM3507258 | control group, patient 8 | non-SONFH | Female | `control` |
+| GSM3507259 | control group, patient 9 | non-SONFH | Male | `control` |
+| GSM3507260 | control group, patient 10 | non-SONFH | Female | `control` |
+| GSM3507261 | disease group, patient 1 | SONFH | Male | `SONFH` |
+| GSM3507262 | disease group, patient 2 | SONFH | Male | `SONFH` |
+| GSM3507263 | disease group, patient 3 | SONFH | Female | `SONFH` |
+| GSM3507264 | disease group, patient 4 | SONFH | Female | `SONFH` |
+| GSM3507265 | disease group, patient 5 | SONFH | Male | `SONFH` |
+| GSM3507266 | disease group, patient 6 | SONFH | Male | `SONFH` |
+| GSM3507267 | disease group, patient 7 | SONFH | Male | `SONFH` |
+| GSM3507268 | disease group, patient 8 | SONFH | Female | `SONFH` |
+| GSM3507269 | disease group, patient 9 | SONFH | Female | `SONFH` |
+| GSM3507270 | disease group, patient 10 | SONFH | Male | `SONFH` |
+| GSM3507271 | disease group, patient 11 | SONFH | Male | `SONFH` |
+| GSM3507272 | disease group, patient 12 | SONFH | Male | `SONFH` |
+| GSM3507273 | disease group, patient 13 | SONFH | Male | `SONFH` |
+| GSM3507274 | disease group, patient 14 | SONFH | Male | `SONFH` |
+| GSM3507275 | disease group, patient 15 | SONFH | Male | `SONFH` |
+| GSM3507276 | disease group, patient 16 | SONFH | Female | `SONFH` |
+| GSM3507277 | disease group, patient 17 | SONFH | Female | `SONFH` |
+| GSM3507278 | disease group, patient 18 | SONFH | Female | `SONFH` |
+| GSM3507279 | disease group, patient 19 | SONFH | Female | `SONFH` |
+| GSM3507280 | disease group, patient 20 | SONFH | Male | `SONFH` |
+| GSM3507281 | disease group, patient 21 | SONFH | Female | `SONFH` |
+| GSM3507282 | disease group, patient 22 | SONFH | Female | `SONFH` |
+| GSM3507283 | disease group, patient 23 | SONFH | Female | `SONFH` |
+| GSM3507284 | disease group, patient 24 | SONFH | Female | `SONFH` |
+| GSM3507285 | disease group, patient 25 | SONFH | Female | `SONFH` |
+| GSM3507286 | disease group, patient 26 | SONFH | Male | `SONFH` |
+| GSM3507287 | disease group, patient 27 | SONFH | Female | `SONFH` |
+| GSM3507288 | disease group, patient 28 | SONFH | Female | `SONFH` |
+| GSM3507289 | disease group, patient 29 | SONFH | Female | `SONFH` |
+| GSM3507290 | disease group, patient 30 | SONFH | Female | `SONFH` |
+
+> Note on naming: unlike the old dataset where folder names encoded everything
+> (`GSM9463148_onfh_1` = ONFH patient 1), this dataset uses sequential GSM IDs.
+> The human-readable info is inside the series matrix header.
+> The pipeline reads those details automatically — you don't need to decode the IDs.
+
+**Gender breakdown:**
+- Control (non-SONFH): 3 Female, 7 Male
+- SONFH: 17 Female, 13 Male
+- Combined: 20 Female, 20 Male — balanced overall, but unequal within groups.
+  Worth mentioning as a potential confound in the Discussion.
+
+---
+
+### What preprocess.py does to the probes
+
+Microarray data does **not** need log normalization — it's already log2 from RMA processing.
+The only step is filtering probes with near-zero variance (IQR < 0.5 log2 units across
+all 40 samples). These flat probes show the same value in every patient regardless of disease
+status — they cannot help a classifier distinguish SONFH from control.
+
+| Before filtering | After filtering |
+|-----------------|----------------|
+| 49,293 probes | 11,687 probes (37,606 removed — flat across all 40 samples) |
 
 ---
 
@@ -197,321 +534,469 @@ Don't bother opening `barcodes.tsv.gz` — it's just a list of cell IDs, nothing
 
 ```
 Omics_Capstone/
-├── Screenshots from course (Feb 27)        ← Weka/workflow reference
-├── Tranpose_Function.R                     ← Professor's transpose utility (R)
-├── transpose.py                            ← Python equivalent of above (BUILT)
-├── file_splitter.py                        ← Python single-gene split utility (BUILT)
-├── simple ANN wrapper and filter.R         ← Professor's ANN + filter/wrapper
-├── TCGA_download_from_Manifest*.R          ← Professor's TCGA download scripts
-├── tcga merge by and align by geneid tpm.R ← Professor's merge/align utility
-├── data/
-│   ├── data_for_course.csv                 ← Course example (already post-transpose)
-│   ├── data_for_courseweka.csv             ← Same + case ID column
-│   └── test_split/                         ← Output of file_splitter.py on course data
-├── pseudobulk.py                           ← Step 1: collapse 46,891 cells → 5 rows (BUILT)
-├── preprocess.py                           ← Step 2: filter + normalize genes (BUILT)
-├── data/pseudobulk/
-│   ├── pseudobulk_matrix.csv               ← Output of pseudobulk.py (5 × 33,538)
-│   └── preprocessed_matrix.csv             ← Output of preprocess.py (5 × 29,629) ← USE THIS
-├── soulaan_prostate_cancer/                ← Fallback dataset (bulk RNA-seq, not used)
-└── femoral_head_necrosis/                  ← PRIMARY DATASET
-    ├── GSE316957_RAW_...tar                ← Original archive (can delete after extraction)
-    ├── GSE316957_family.soft.gz            ← Study-level metadata
-    ├── GSE316957_series_matrix.txt.gz      ← Sample conditions/labels
-    ├── GSM9463148_onfh_1/                  ← Steroid ONFH patient 1 (8,160 cells)
-    ├── GSM9463149_onfh_2/                  ← Steroid ONFH patient 2 (2,128 cells)
-    ├── GSM9463150_oa_1/                    ← Osteoarthritis patient 1 (8,164 cells)
-    ├── GSM9463151_oa_2/                    ← Osteoarthritis patient 2 (16,489 cells)
-    └── GSM9463152_oa_3/                    ← Osteoarthritis patient 3 (11,950 cells)
+│
+├── parse_series_matrix.py           ← Step 1: parse GEO series matrix → samples × probes CSV
+├── preprocess.py                    ← Step 2: filter low-variance probes
+├── feature_select.py                ← Step 3: top-100 feature selection + ARFF + EDA plots
+├── file_splitter.py                 ← Single-gene split utility (professor's method)
+├── transpose.py                     ← Transpose utility (not needed for this dataset)
+├── pseudobulk.py                    ← OLD — scRNA-seq pipeline (kept for reference)
+│
+├── r_base_scripts/                  ← Professor's original R scripts (reference only)
+│   ├── Tranpose_Function.R
+│   ├── simple ANN wrapper and filter.R
+│   ├── TCGA_download_from_Manifest*.R
+│   └── tcga merge by and align by geneid tpm.R
+│
+└── data/
+    ├── data_for_course.csv          ← Course example data
+    ├── data_for_courseweka.csv
+    ├── screenshots/
+    ├── test_split/
+    ├── soulaan_prostate_cancer/     ← Fallback dataset (not used)
+    ├── femoral_head_necrosis_old/   ← OLD scRNA-seq data (GSE316957, archived)
+    │
+    └── femoral_head_necrosis/       ← PRIMARY DATASET (all 40 patients in 2 files)
+        ├── GSE123568_series_matrix.txt.gz   ← downloaded — read directly by parse_series_matrix.py
+        ├── GSE123568_family.soft.gz         ← downloaded — contains probe annotation
+        │
+        ├── parsed/                  ← Generated by parse_series_matrix.py + preprocess.py
+        │   ├── parsed_matrix.csv           (40 rows × 49,293 probes + class)
+        │   └── preprocessed_matrix.csv     (40 rows × filtered probes + class)
+        │
+        ├── feature_selection/       ← Generated by feature_select.py
+        │   ├── top100_features.arff  ← LOAD THIS INTO WEKA
+        │   ├── top100_features.csv
+        │   ├── gene_rankings.csv     ← all 11,687 probes ranked by |FC| + gene symbol
+        │   └── gene_level_summary.csv ← post-selection: selected probes grouped by gene
+        │
+        └── EDA/                     ← Generated by feature_select.py
+            ├── volcano_plot.png       ← all 11,687 probes; top 100 highlighted
+            ├── fold_change_top20.png  ← top 20 probes ranked by |FC|
+            ├── boxplots_top6.png      ← top 6 probes, SONFH vs control distributions
+            ├── sample_correlation.png ← 40×40 patient similarity heatmap
+            ├── heatmap_top20.png      ← top 20 probes × 40 samples expression heatmap
+            └── pca_plot.png           ← 2D PCA of top 100 probes
 ```
 
 ---
 
 ## Schedule Overview
 
-| Phase | Task | Target Dates |
-|-------|------|-------------|
-| 0 | Orientation — recordings, scripts, example data | Mar 5–7 |
-| 1 | R vs Python decision | Mar 7 |
-| 3 | Data Acquisition & Verification | Mar 7–8 |
-| 4 | Preprocessing | Mar 8–10 |
-| 5 | Feature Selection | Mar 10–11 |
-| 6 | Weka Analysis | Mar 11–13 |
-| 2 | LLM Agent build & test | Mar 13–14 |
-| 7 | Run LLM Interpretation | Mar 14–15 |
-| 8 | Report Writing (draft all sections) | Mar 14–19 |
-| 9 | Polish & final checks | Mar 19 |
-| — | **Buffer / submission** | Mar 19–21 |
-
-> Start drafting the Introduction and Methods sections **while** running the analysis (Phase 4 onward).
-> Don't wait until everything is done to start writing.
+| Phase | Task | Target | Status |
+|-------|------|--------|--------|
+| 0 | Orientation — recordings, scripts, example data | ✅ Done | ✅ Done |
+| 1 | R vs Python decision | ✅ Done | ✅ Done |
+| 2 | Data Acquisition — GSE123568 download | ✅ Done | ✅ Done |
+| 3 | Preprocessing — parse + filter | ✅ Done | ✅ Done |
+| 4 | Feature Selection | ✅ Done | ✅ Done |
+| 5 | Weka Analysis | Mar 22 | ⬜ Next |
+| 6 | LLM Agent build & test | Mar 23–24 | ⬜ |
+| 7 | Run LLM Interpretation | Mar 25 | ⬜ |
+| 8 | Report Writing | Mar 26–29 | ⬜ |
+| 9 | Polish & final checks | Mar 30 | ⬜ |
+| — | **Submit before March 31 (certificates)** | Mar 31 | Apr 30 hard deadline |
 
 ---
 
 ## To-Do Checklist
 
-### Phase 0 — Orientation `Mar 5–7`
+### Phase 0 — Orientation `DONE`
 
-- [x] **Email professor (Mar 6)** — asked whether prostate cancer is mandatory; proposed femoral head necrosis (GSE316957) as alternative; awaiting reply
-- [x] **Watch course recording 4 (Mar 5–6)** — Weka GUI walkthrough, data import, classifier setup
-- [x] **Watch course recording 5 (Mar 6–7)** — feature selection, evaluation metrics, output interpretation
-- [x] While watching, note:
-  - [x] Which steps the professor does in R (use his scripts as-is or adapt)
-  - [x] Which steps could be done in Python instead
-  - [x] Any specific Weka settings, file formats, or workflow order he recommends
-  - [x] Whether he demonstrates LLM interpretation — what tool/API does he use? ChatGPT UI or API?
-- [x] Study `data_for_courseweka.csv` — understand format (rows = samples, cols = genes + class label);
-  confirmed: course example is already post-transpose (samples as rows, genes as columns)
-- [x] Skim `Tranpose_Function.R` — understood; built Python equivalent (`transpose.py`)
-- [x] Understand split pattern from `simple ANN wrapper and filter.R` — built Python equivalent (`file_splitter.py`); tested on course data → 4 split files produced correctly
+- [x] Watch course recordings 4 & 5 (Weka walkthrough, feature selection)
+- [x] Study `data_for_courseweka.csv` — confirmed Weka format (samples as rows, class last)
+- [x] Build `transpose.py` and `file_splitter.py` equivalents of professor's R scripts
 
-### Phase 1 — Decide R vs Python for Each Step `Mar 7`
+### Phase 1 — R vs Python Decision `DONE`
 
-Fill in after watching recordings:
+| Step | Decision |
+|------|----------|
+| Data parsing | **Python** (`parse_series_matrix.py`) |
+| Filtering | **Python** (`preprocess.py`) |
+| Feature selection | **Python** (`feature_select.py`) |
+| ARFF export | **Python** (manual ARFF writer in `feature_select.py`) |
+| Weka classification | **Weka GUI** |
+| Visualization | **Python** (matplotlib/seaborn) |
+| LLM interpretation | **Claude API** |
 
-| Step | Professor's Tool | Your Option | Decision |
-|------|-----------------|-------------|----------|
-| Data loading & merging | R (tcga merge script) | Python (pandas) | **Python** (`pseudobulk.py` — DONE) |
-| Normalization (DESeq2/TMM) | R (DESeq2/edgeR) | Python (log-CPM) | **Python** (`preprocess.py` — DONE) |
-| Transpose for Weka | R (`Tranpose_Function.R`) | Python (df.T) | **Not needed** — pseudobulk already outputs correct orientation |
-| Feature selection (filter/split) | R (`simple ANN wrapper`) | Python (sklearn) | **Python** (`file_splitter.py`) — run after Phase 5 on top genes only |
-| ARFF export | R (RWeka / foreign) | Python (manual ARFF) | TBD |
-| Weka classification | Weka GUI | Weka GUI | Weka GUI |
-| Visualization / figures | R (ggplot2, pheatmap) | Python (seaborn, matplotlib) | TBD |
-| LLM result interpretation | ChatGPT (per lecture) | Claude API (ResidentRAG pattern) | TBD |
+### Phase 2 — Data Acquisition `✅ DONE`
 
-**Guideline:** Use professor's R scripts for steps he demonstrates. Python for everything else.
+- [x] Download `GSE123568_series_matrix.txt.gz` from GEO
+- [x] Download `GSE123568_family.soft.gz` from GEO
+- [x] Place both in `data/femoral_head_necrosis/`
+- [x] Run `python3 parse_series_matrix.py` — 40 samples parsed correctly
+- [x] Verified class distribution: 30 SONFH + 10 control
 
-### Phase 3 — Data Acquisition & Verification `Mar 7–8`
+### Phase 3 — Preprocessing `✅ DONE`
 
-- [x] Extract `GSE316957_RAW_femoral_head_necrosis.tar` and inspect file structure
-- [x] Record all GSM IDs and their condition labels from the series matrix
-- [x] Determine cell type / condition groupings for class labels (ONFH vs OA, 2 vs 3 samples)
-- [x] Verify sparse MTX/TSV format; plan pseudobulk aggregation strategy for Weka input
-
-### Phase 4 — Preprocessing `Mar 8–10`
-
-> **scRNA-seq note:** The README was originally written assuming bulk RNA-seq. For scRNA-seq
-> there is an extra step not in the original plan: collapsing ~46,000 cells into 5 rows (one
-> per patient sample) before any other preprocessing can happen. This is called pseudobulk
-> aggregation and it is the first thing Phase 4 needs to tackle. Everything else flows from it.
->
-> Pipeline order for this dataset:
-> pseudobulk → filter genes → normalize → [no transpose needed] → feature select → file splitter → Weka
-
-- [x] **pseudobulk.py** — loaded all 5 sample folders, summed counts across cells per sample → `pseudobulk_matrix.csv` (5 × 33,538)
-- [x] Filter lowly expressed genes — removed 3,909 genes expressed in fewer than 2 samples; kept 29,629
-- [x] Normalize — log-CPM applied; count range compressed from 0–3,151,398 to 0–10.788
-- [x] QC: all 5 sample totals confirmed > 0; no missing values
-- [x] **transpose.py NOT needed** — pseudobulk.py already outputs samples as rows (Weka format). Only needed for bulk RNA-seq where genes come out as rows.
-- [x] Output: `preprocessed_matrix.csv` (5 rows × 29,630 cols) — this is the Weka-ready file
+- [x] Run `python3 preprocess.py`
+- [x] Probes before filter: 49,293 — after IQR filter: 11,687 (37,606 removed, 76% flat)
+- [x] Value range confirmed: 1.43 – 14.14 (log2 RMA, OK)
+- [x] No log normalization applied — "OK" confirmed in output
 - [ ] **START WRITING: Methods — dataset and preprocessing sections**
-  - Introduce the dataset: GEO accession GSE316957, single-cell RNA sequencing of femoral head
-    tissue from patients undergoing total hip arthroplasty
-  - Explain the two conditions being compared: steroid-induced osteonecrosis of the femoral head
-    (ONFH, n=2) vs hip osteoarthritis (OA, n=3) — 5 patient samples total
-  - Explain pseudobulk aggregation: 46,891 individual cells across 5 patients were summed per
-    sample to produce one gene expression row per patient (the step that makes scRNA-seq usable
-    in a tabular ML classifier like Weka)
-  - Report the real numbers: started with 33,538 genes × 46,891 cells; after pseudobulk → 5 rows
-    × 33,538 genes; after filtering genes expressed in fewer than 2 samples → 29,629 genes kept
-  - Explain normalization: log-CPM applied to correct for differences in total read counts between
-    patients (ranged from 23M to 70M); brings all samples to a comparable scale
-  - Note the limitation: n=5 is very small; results are exploratory and hypothesis-generating,
-    not clinically definitive; future work requires larger cohorts
+  - Dataset: GEO GSE123568, microarray (Affymetrix PrimeView GPL15207), 40 peripheral serum samples
+  - Classes: 30 SONFH patients vs 10 non-SONFH steroid controls
+  - Parse step: extracted probe expression matrix from GEO series matrix file
+  - Filter step: removed probes with IQR < 0.5 log2 units (low-variance, non-discriminative)
+  - Normalization: RMA normalization already applied by GEO submitter; log2 values used as-is
+  - Note class imbalance (30:10) as limitation
 
-### Phase 5 — Feature Selection / Dimensionality Reduction `Mar 10–11`
+### Phase 4 — Feature Selection `✅ DONE`
 
-- [ ] Write `feature_select.py` — rank genes by variance or mean expression difference between
-  ONFH and OA; select top 50–200 genes from `preprocessed_matrix.csv`
-- [ ] **file_splitter.py** — run on the feature-selected output only (top 50–200 genes);
-  do NOT run on the full 29,629-gene matrix (would produce ~29,000 files, too many)
-- [ ] Document gene count at each filtering step (for Methods)
-- [ ] Optionally: PCA plot to visualize whether the 5 samples separate by condition
-- [ ] **START WRITING: Introduction — background on femoral head necrosis and disease biology**
+- [x] Run `python3 feature_select.py`
+- [x] Top 20 probes identified with gene symbols (see table below)
+- [x] Selection is probe-level — 100 probes from ~59 unique genes (see `gene_level_summary.csv`)
+- [x] `gene_level_summary.csv` generated — groups selected probes by gene, flags multi-probe genes and direction consistency
+- [x] PCA: strong separation — PC1 = 84.6%, PC2 = 2.4%
+- [x] 6 EDA plots saved to `data/femoral_head_necrosis/EDA/` (volcano, FC bar, box plots, sample correlation, heatmap, PCA)
+- [x] Gene names read on the fly from SOFT file — displayed alongside probe IDs in output
+- [x] EDA narrative: plots form a logical story from "candidate probes" → "separation confirmed"
 
-### Phase 6 — Weka Analysis `Mar 11–13`
+**Top 20 probes by |fold change|:**
+```
+Rank  Probe ID           Gene Symbol          |FC|
+ 1    11720807_x_at      EIF1AY               3.5987
+ 2    11729582_s_at      CA1                  3.5691
+ 3    11739787_a_at      IGF2 /// INS-IGF2    3.4523
+ 4    11740680_s_at      RHCE /// RHD         3.3934
+ 5    11719581_a_at      BPGM                 3.3880
+ 6    11756003_x_at      IGF2 /// INS-IGF2    3.3839
+ 7    11736395_a_at      BPGM                 3.3265
+ 8    11729583_x_at      CA1                  3.3250
+ 9    11742315_s_at      RHCE /// RHD         3.3176
+10    11742143_s_at      RHCE /// RHD         3.3086
+11    11732236_a_at      GYPA                 3.3060
+12    11725497_a_at      RAP1GAP              3.2520
+13    11736538_s_at      RHCE /// RHD         3.2413
+14    11731448_a_at      SNCA                 3.0974
+15    11737280_at        IFIT1B               2.9970
+16    11745557_x_at      GYPB                 2.9867
+17    11736696_a_at      HEMGN                2.9438
+18    11728138_at        XK                   2.8971
+19    11729920_at        BBOF1                2.8918
+20    11720494_a_at      CTNNAL1              2.8612
+```
 
-- [ ] Import `.arff` into Weka Explorer; set class attribute to condition label
-- [ ] Run and compare multiple classifiers:
-  - [ ] Naive Bayes
-  - [ ] J48 Decision Tree
-  - [ ] Random Forest
-  - [ ] SVM (SMO)
-  - [ ] k-NN (IBk)
-- [ ] Evaluation: choose LOOCV or 10-fold CV based on final sample count — justify in Methods
-- [ ] Record per classifier: Accuracy, AUC, Confusion Matrix, Precision/Recall/F1
-- [ ] Save Weka output logs / screenshots
-- [ ] **Collect the top contributing genes/features** — this list is the input to Phase 2
-- [ ] **START WRITING: Methods — classifiers and evaluation strategy**
+**PCA results:**
+- PC1 = 84.6% variance — strong class separation
+- PC2 = 2.4% variance — Total: 87.0% in 2 components
+- Visual separation: **Yes — clear**
 
-### Phase 2 — LLM Agent for Literature Search & Result Interpretation `Mar 13–14`
+**Writing — Methods (feature selection):**
+- [ ] Feature selection: probes ranked by |log2 fold change| (SONFH mean − control mean);
+  top 100 selected; justify over t-test (t-test is valid with n=40, but |FC| gives
+  biologically interpretable ranking without p-value multiple testing issues at this stage)
+- [ ] Note: selection is probe-level, not gene-level; multiple probes per gene may appear
+  in the selected set; this is acknowledged and documented in `gene_level_summary.csv`
 
-> **This targets the bonus 5 marks** ("novel insights or particularly well-executed analysis")
-> and is exactly what the professor means by "use LLMs to help interpret results."
+**Optional future analysis — one-probe-per-gene branch:**
+> Not implemented in the main pipeline. May be tested as a comparison analysis.
+> If implemented, the representative probe per gene should NOT be chosen by highest mean
+> expression (that selects for highly expressed genes, not differentially expressed ones).
+> Better criteria:
+> - **Highest absolute fold change** (most discriminative for this task)
+> - **Best annotation specificity** (`_at` preferred over `_s_at` over `_x_at`)
+> - **Highest variance** across all 40 samples
+> - Or a combined gene-level aggregate score
 
-**What to build:** `gene_interpreter.py` — a Python script that takes your top genes from Weka,
-searches PubMed live, and asks Claude API to interpret results and find supporting papers.
+---
 
-**Reuse from `/Users/jordanharris/Code/ResidentRAG`:**
+### Phase 5 — Weka Analysis `Mar 22 target`
 
-| ResidentRAG file | What it does | How to reuse |
+**ARFF file:** `data/femoral_head_necrosis/feature_selection/top100_features.arff`
+- 40 instances, 100 numeric attributes, class {SONFH, control}
+- Use **10-fold cross-validation** (n=40 is sufficient; LOOCV was only needed for n=5)
+
+**Step-by-step Weka import:**
+1. Open Weka GUI → **Explorer**
+2. Preprocess tab → **Open file** → select `top100_features.arff`
+3. Go to **Classify** tab
+4. Test options: **"Cross-validation" → Folds: 10**
+
+**Classifiers to run:**
+
+| Classifier | Weka path | Notes |
 |---|---|---|
-| `app/tools/search_pubmed.py` (`PubMedTool`) | Searches PubMed via Biopython Entrez, fetches abstracts | **Extract `search_pmids()` + `get_title_and_abstract()`** — these are standalone. Remove the embedding/sentence-transformer dependency for simplicity. |
-| `app/llm/openai_client.py` (`agentic_llm`) | Iterative tool-calling agent loop | **Reuse the loop pattern.** Swap `OpenAI()` → `anthropic.Anthropic()` and adapt to Claude's tool-use API format. Loop structure (accumulate results → rebuild prompt → iterate) is identical. |
-| `app/tools/registry.py` | Defines `pubmed_search` as a JSON-schema LLM tool | **Copy the tool JSON schema** for `pubmed_search` — Claude's tool-use API uses the same format. |
+| Naive Bayes | `bayes > NaiveBayes` | Baseline; note handles class imbalance poorly |
+| J48 Decision Tree | `trees > J48` | Note top splits — which probes? |
+| Random Forest | `trees > RandomForest` | Usually best accuracy |
+| SVM (SMO) | `functions > SMO` | Default kernel first |
+| k-NN (IBk) | `lazy > IBk` | Try k=3 and k=5 |
 
-**What you do NOT need from ResidentRAG:**
-- Elasticsearch, Qdrant, Docker, hybrid search — those are for a local document corpus.
-  Your use case is live PubMed API. None of that infrastructure is needed.
+**Results table (fill in after Weka runs):**
 
-**Script workflow:**
-```
-Input:  - Top N genes from Weka (e.g., ["DHODH", "SHMT2", "MTHFD1"])
-        - Weka summary (accuracy, AUC, confusion matrix as text)
-        - Context: femoral head necrosis, scRNA-seq cell type/condition labels
+| Classifier | Accuracy (%) | AUC | TP SONFH | TP control | F1 | Confusion Matrix |
+|---|---|---|---|---|---|---|
+| NaiveBayes | | | | | | |
+| J48 | | | | | | |
+| RandomForest | | | | | | |
+| SMO (SVM) | | | | | | |
+| IBk (k-NN) | | | | | | |
 
-Agent loop (from agentic_llm pattern):
-  Iter 0: Claude sees gene list + Weka results → decides which genes to search
-  Iter 1: Claude calls pubmed_search tool for top genes
-  Iter 2: Claude synthesizes abstracts + metrics → produces interpretation
+- [ ] Run all 5 classifiers, fill in table
+- [ ] Screenshot each result window
+- [ ] For J48: copy the decision tree rules
+- [ ] For Random Forest: note top attributes by importance
+- [ ] Collect top contributing probe IDs → map to gene names → input to LLM agent (Phase 6)
 
-Output: - Biological interpretation of top classifying genes
-        - PubMed citations (PMID + title + year) supporting results
-        - Suggested pathways/cell types/interactions for Discussion
-        - Draft paragraph for the Discussion section
-```
+### Phase 6 — LLM Agent `Mar 23–24 target`
 
-**To-dos:**
-- [ ] After watching recordings — confirm whether professor uses ChatGPT API or just the UI;
-  this changes how much you need to build
-- [ ] Extract `search_pmids()` + `get_title_and_abstract()` into standalone `pubmed_utils.py`
-  (remove the embedding model dependency — not needed for keyword search)
-- [ ] Build `gene_interpreter.py` using Claude API tool-use
-- [ ] Test on known gene first related to femoral head necrosis → verify relevant papers return
-- [ ] Run on actual Weka top features
+**What to build:** `gene_interpreter.py` — takes top Weka genes, searches PubMed,
+asks Claude API to interpret in SONFH biology context.
 
-### Phase 7 — Run LLM Interpretation `Mar 14–15`
+**Reuse from ResidentRAG:**
+- `search_pmids()` + `get_title_and_abstract()` from `app/tools/search_pubmed.py`
+- Tool-calling loop pattern from `app/llm/openai_client.py` (swap OpenAI → Claude API)
+
+- [ ] Extract PubMed utils into `pubmed_utils.py`
+- [ ] Build `gene_interpreter.py`
+- [ ] Test on a known SONFH gene first
+- [ ] Run on actual Weka top features after Phase 5
+
+### Phase 7 — Run LLM Interpretation `Mar 25 target`
 
 - [ ] Run `gene_interpreter.py` with actual Weka gene list + results
-- [ ] Read the returned PubMed abstracts — do not cite blindly; verify relevance
-- [ ] Note citations (PMID, title, year) to include in References
-- [ ] Use interpretation output to draft the Discussion section
-- [ ] Add a short Methods note:
-  *"LLM-assisted literature search was performed using the PubMed Entrez API and Claude API
-  to identify supporting publications for top classifying features identified by Weka."*
+- [ ] Read returned abstracts — verify relevance before citing
+- [ ] Note PMIDs, titles, years for References
+- [ ] Use output to draft Discussion
 
-### Phase 8 — Report Writing (all sections) `Mar 14–19`
+### Phase 8 — Report Finalization `Mar 26–29 target`
 
-> Start earlier sections (Intro, Methods) while analysis is still running — don't wait.
+**Target: 8 pages A4, 11pt, 1.5x line spacing**
 
-#### Title & Abstract (5 marks)
-- [ ] Draft concise, informative title
-- [ ] Abstract: background, objective, methods, results, conclusions (~250 words)
+#### Rubric breakdown
 
-#### Introduction (15 marks)
-- [ ] Femoral head necrosis background, disease biology, clinical relevance
-- [ ] Rationale for scRNA-seq (transcriptomic profiling of cell type/condition changes)
-- [ ] Justification for Weka and ML classification
-- [ ] Clear stated aim and objectives
+| Section | Marks | Status |
+|---------|-------|--------|
+| Title | 1 | ⬜ |
+| Abstract | 4 | ⬜ |
+| Introduction — biological background | 5 | ⬜ |
+| Introduction — rationale for RNA-seq/microarray | 3 | ⬜ |
+| Introduction — justification for ML/Weka | 3 | ⬜ |
+| Introduction — aims and objectives | 4 | ⬜ |
+| Methods — dataset | included in 20 | ⬜ |
+| Methods — preprocessing | included in 20 | ⬜ |
+| Methods — feature selection | 3 | ⬜ |
+| Methods — classifiers (description) | 6 | ⬜ |
+| Methods — justification for classifier choices | 3 | ⬜ |
+| Methods — evaluation methods | 3 | ⬜ |
+| Results — commentary on patterns | 3 | ⬜ |
+| Results — figures/tables | included in 20 | ⬜ |
+| Discussion — interpretation in biology context | 5 | ⬜ |
+| Discussion — comparison with literature | 5 | ⬜ |
+| Discussion — limitations | 5 | ⬜ |
+| Discussion — future work | 5 | ⬜ |
+| Conclusion | 5 | ⬜ |
+| References | 5 | ⬜ |
+| Structure / style / presentation | 10 | ⬜ |
+| Bonus (novel analysis / LLM use) | up to 5 | ⬜ |
 
-#### Materials & Methods (20 marks)
-- [ ] Dataset: GEO accession GSE316957, femoral head necrosis scRNA-seq — confirm sample count and conditions
-- [ ] Pseudobulk aggregation strategy for converting scRNA-seq to Weka-compatible format
-- [ ] Preprocessing pipeline (tools, versions, filtering thresholds, normalization)
-- [ ] Feature selection: DE analysis approach + reference professor's filter/wrapper
-- [ ] Weka classifiers: brief description of each + justification for choosing them
-- [ ] Evaluation: LOOCV, metrics (Accuracy, AUC, F1, Confusion Matrix), justify LOOCV for n=12
-- [ ] (If applicable) LLM-assisted literature search methodology
+**Introduction — biology sub-sections:**
+- [ ] What is SONFH: steroid-induced bone death from disrupted blood supply in femoral head;
+  causes hip joint collapse; requires early intervention to prevent surgery
+- [ ] Clinical problem: SONFH is often diagnosed late (after collapse); blood-based biomarkers
+  could enable earlier detection in at-risk steroid users
+- [ ] Why microarray: captures genome-wide expression; peripheral blood is non-invasive;
+  appropriate for biomarker discovery studies
+- [ ] Why ML + Weka: with 40 samples and ~49k probes, dimensionality reduction + classification
+  allows systematic identification of discriminative gene signatures
+- [ ] Study aim: identify gene expression signatures in peripheral blood that distinguish SONFH
+  patients from steroid-treated controls without osteonecrosis
 
-#### Results (20 marks)
-- [ ] Table of classifier performance (Accuracy, AUC, F1 per classifier)
-- [ ] ROC curves or accuracy bar chart
-- [ ] Confusion matrices for best model(s)
-- [ ] PCA or heatmap of normalized expression (class separation)
-- [ ] Narrative commentary on observed patterns
+**Discussion — biology context:**
+- [ ] Interpret top probes/genes in SONFH pathophysiology context
+  (likely: lipid metabolism genes, vascular/endothelial genes, osteoblast/osteoclast markers,
+   inflammation/apoptosis genes — typical SONFH biology in peripheral blood)
+- [ ] Discuss class imbalance (30:10) — what does this mean for classifier performance?
+  (control class harder to classify; Naive Bayes most affected)
+- [ ] Discuss blood vs tissue: these are peripheral serum biomarkers, not tissue expression;
+  they reflect systemic response, not local bone changes — different from tissue biopsies
+- [ ] Literature comparison: cite Jia Y et al. 2023 (the linked paper) + LLM agent results
 
-#### Discussion (20 marks) ← LLM agent output most useful here
-- [ ] Interpret top classifying genes in femoral head necrosis biology context (use agent output)
-- [ ] Compare to PubMed-retrieved papers on relevant pathways/cell types
-- [ ] Limitations: scRNA-seq sparsity, pseudobulk assumptions, no external validation
-- [ ] Future work: larger cohorts, patient samples, multi-omics, deep learning
+**Limitations:**
+- [ ] Class imbalance: 30 SONFH vs 10 control (3:1 ratio)
+- [ ] Peripheral serum ≠ tissue: cannot identify cell-type-specific changes
+- [ ] No external validation cohort
+- [ ] Fold change ranking is exploratory — formal statistical testing (t-test with FDR
+  correction) would be more rigorous with n=40
+- [ ] Probe IDs require annotation mapping — some may not correspond to well-characterized genes
 
-#### Conclusion (5 marks)
-- [ ] Summarize key findings; tie back to stated objectives (~150 words)
+### Phase 9 — Polish `Mar 30 target`
 
-#### References (5 marks)
-- [ ] Key femoral head necrosis papers (identify via LLM agent search)
-- [ ] DESeq2 / edgeR or Seurat/pseudobulk methods papers
-- [ ] Weka (Hall et al. 2009, SIGKDD Explorations)
-- [ ] PubMed papers returned by LLM agent (verify each before citing)
-- [ ] Consistent APA or Harvard throughout
-
-### Phase 9 — Polish & Final Checks `Mar 19`
-
-- [ ] All figures have captions and are referenced in-text
-- [ ] Proofread for scientific tone and grammar
-- [ ] Methods section is reproducible (all tools, versions, parameters documented)
-- [ ] Consider bonus: run both 4-class (NT/KD1/KD2/Rescue) and binary (NT vs KD pooled);
-  discuss which classifier performs better and what that implies biologically
-
----
-
-## Key Reference
-
-> To be identified — run LLM agent on top Weka features to surface relevant femoral head necrosis
-> literature from PubMed.
-
----
-
-## Suggested Tools
-
-| Task | Tool |
-|------|------|
-| Preprocessing & DE | R (DESeq2, edgeR, ggplot2) or Python (pydeseq2, pandas) |
-| ARFF export | R `RWeka` or Python manual ARFF writer |
-| Classification | Weka 3.8 (GUI Explorer) |
-| Figures | R ggplot2, pheatmap or Python seaborn/matplotlib |
-| LLM interpretation | Claude API (tool-use) + Biopython Entrez |
-| Writing | Overleaf or Word |
+- [ ] All figures captioned and referenced in text
+- [ ] All acronyms defined on first use (SONFH, ONFH, RMA, IQR, LOOCV, ARFF, CPM)
+- [ ] Consistent APA references throughout
+- [ ] Methods section is reproducible (tools, versions, parameters documented)
+- [ ] Scientific passive voice throughout
 
 ---
 
-## Data Format & Workflow Order
+## Bonus Analysis — Biomarker Discovery & Biological Interpretation
 
-### Transpose → Split (this order is mandatory)
+This project goes beyond standard classification by using machine learning to identify
+**biologically meaningful transcriptomic features**, rather than only predicting disease labels.
 
-**Step 1 — Transpose** (`transpose.py` / `Tranpose_Function.R`)
+**Core research question:**
+> Which transcriptomic features most strongly distinguish SONFH from non-SONFH steroid-treated
+> patients, and what do those features reveal about candidate biomarkers and underlying
+> biological mechanisms?
 
-RNA-seq data comes out of preprocessing in bioinformatics standard orientation:
-- Rows = genes (~20,000+)
-- Columns = samples (12 GSM IDs)
+---
 
-Weka requires the opposite (ML standard orientation):
-- Rows = samples (one observation per row)
-- Columns = genes (features) + class label as the last column
+### Interpretation Note — Vascular / Hematological Signature vs Causal Mechanism
 
-Run transpose first to flip the matrix.
+An initial observation from the box plots is that several of the top-ranked probes (e.g., CA1, BPGM, RHCE/RHD, GYPA-related probes) show lower expression in SONFH samples compared to controls. A naive interpretation might suggest that gene expression is being "suppressed" in the disease state, potentially due to direct steroid effects.
 
-**Step 2 — Split** (`file_splitter.py`)
+However, a more biologically grounded interpretation is that these signals likely reflect a **system-level vascular or hematological signature**, rather than direct suppression of individual genes or primary causal mechanisms.
 
-After transposing, split the full matrix into one file per gene for single-gene
-wrapper/ANN feature selection. Each split file contains:
-`[TNFAlpha, <one_gene>, class_label]`
+Many of the top features are associated with erythrocyte function and oxygen transport. Their reduced expression in SONFH samples may indicate:
 
-**Why the course example data (`data_for_course.csv`) looks different:**
-The professor provided that file already in post-transpose format (samples as rows).
-So splitting it directly produced correct output — but the general rule is always
-transpose first, then split.
+- alterations in blood cell composition (e.g., relative abundance of erythrocytes or related transcripts)
+- systemic vascular or hematological changes associated with the disease state
+- disrupted oxygen transport dynamics consistent with ischemia
+
+Given that steroid-induced osteonecrosis is strongly associated with impaired blood supply, microvascular damage, and ischemia, these transcriptomic patterns are consistent with **disease-associated vascular dysfunction**.
+
+Importantly, this does **not** imply that:
+- these genes are directly causing the disease
+- steroids are directly suppressing their transcription
+
+Instead, these genes are more appropriately interpreted as:
+
+> **Biomarker signals reflecting downstream physiological effects of the disease state.**
+
+This distinction is critical for interpreting results:
+
+| Category | Definition | Do our top genes fit? |
+|----------|------------|----------------------|
+| Causal genes | Drive disease onset | Unlikely — these are erythrocyte markers, not osteogenic regulators |
+| Mechanistic genes | Participate in disease biology | Possibly — vascular disruption is central to SONFH pathophysiology |
+| Biomarker genes | Reflect the disease state in a measurable way | Most likely — detected in peripheral blood, not bone tissue |
+
+The genes identified here most likely fall into the **biomarker category**, capturing systemic changes associated with SONFH rather than its primary molecular drivers.
+
+Additionally, because this dataset reflects transcriptomic measurements from **peripheral blood serum** (not local bone tissue), these signals should be interpreted as **systemic indicators** of disease-associated physiology, not direct measurements of gene activity within the femoral head.
+
+**Summary:** The observed downregulation of erythrocyte-related genes is best interpreted as a transcriptomic signature of altered vascular and hematological physiology in SONFH, rather than a direct causal mechanism of disease.
+
+---
+
+### Analytical Strategy — Four Layers
+
+#### 1. Predictive Signal (Model-Level)
+
+ML models (Weka classifiers + sklearn) identify discriminative features and benchmark
+classification performance. Outputs:
+- Feature importance scores (Random Forest)
+- Model coefficients (Elastic Net if added)
+- Top selected probes by |fold change|
+
+#### 2. Feature Stability (Robustness Layer)
+
+Ensures findings aren't driven by noise:
+- Feature selection evaluated across cross-validation folds
+- Selection frequency per probe across folds
+- Rank consistency across multiple training splits
+
+Goal: identify **robust biomarkers** that appear consistently, not just in one lucky split.
+
+#### 3. Gene-Level Mapping (Biological Translation)
+
+Probe IDs are not directly interpretable. After classification:
+- Probe IDs mapped to gene symbols via GPL15207 annotation (read from SOFT file)
+- Multiple probes mapping to the same gene are aggregated
+- Output: gene-level ranked feature table
+
+#### 4. Pathway & Mechanism Interpretation (Biological Insight)
+
+Top-ranked genes grouped into biological themes:
+- Lipid metabolism
+- Vascular / endothelial function
+- Bone remodeling (osteoblast/osteoclast activity)
+- Inflammation and apoptosis
+
+Compared against known SONFH mechanisms in literature (via LLM-assisted PubMed search, Phase 6 → Phase 7).
+
+---
+
+### Biomarker Prioritization Table (fill in after Phase 5 Weka + Phase 7 LLM)
+
+| Probe ID | Gene | Selection Freq | Mean |FC| | Notes |
+|----------|------|---------------|----------|-------|
+| | | | | |
+
+---
+
+### Methodological Considerations
+
+- Feature selection performed **within** cross-validation folds to prevent data leakage
+- Class imbalance (30 SONFH vs 10 control) handled via stratified CV and class-weighted metrics
+- Results are exploratory — no external validation cohort
+- Report per-class metrics (TP rate, F1) not just overall accuracy, given imbalance
+
+### Why This Matters
+
+Transforms the project from:
+> "Can a model classify disease vs control?"
+
+into:
+> "Which genes and biological processes are most strongly associated with SONFH, and how
+> can ML prioritize candidate biomarkers for future validation?"
+
+### Optional Extensions (if time permits)
+- Permutation feature importance (model-agnostic validation)
+- Comparison of probe-level vs gene-level models
+- Integration with PubMed / LLM-based literature review (Phase 6 → Phase 7)
+
+---
+
+## Key References
+
+### Dataset source
+
+**GEO Series GSE123568** — deposited Dec 2018, public Dec 2019.
+Contributor: Yanqiong Zhang, Institute of Chinese Materia Medica, China Academy of Chinese
+Medical Sciences, Beijing.
+Cite as: GEO accession GSE123568 (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE123568)
+
+### Paper linked to this dataset (listed in GEO as the citing publication)
+
+**Jia Y, Zhang Y, Li S, Li R et al. (2023)** — *Identification and assessment of novel dynamic
+biomarkers for monitoring non-traumatic osteonecrosis of the femoral head staging.*
+Clin Transl Med. 13(6):e1295. PMID: 37313692
+
+> **What this means:** GEO's "Citation(s)" field lists papers that used this dataset.
+> Jia Y 2023 is the paper that published the analysis of GSE123568 — it's the study you
+> are replicating/extending. Cite it as the source study for this dataset.
+> Note: the dataset was deposited in 2018 but the paper was published in 2023 — a 5-year
+> gap between data deposit and publication, which is normal for GEO submissions.
+
+### Platform reference
+
+**Affymetrix Human PrimeView Array (GPL15207)** — Thermo Fisher Scientific.
+No separate citation needed; reference the GEO platform page:
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL15207
+
+### Standard methods references
+
+- Hall M. et al. (2009). The WEKA data mining software: an update. *SIGKDD Explorations* 11(1).
+- Barrett T. et al. (2013). NCBI GEO: archive for functional genomics data sets — update.
+  *Nucleic Acids Res.* 41(D1):D991-5. PMID: 23193258
+- Irizarry RA et al. (2003). Exploration, normalization, and summaries of high density
+  oligonucleotide array probe level data (RMA). *Biostatistics* 4(2):249-264. PMID: 12925520
+
+### To identify via LLM agent (Phase 6 → Phase 7)
+> Run gene_interpreter.py on top Weka features to surface SONFH-specific supporting papers.
 
 ---
 
 ## Notes
 
-- Choose CV strategy (LOOCV vs 10-fold) based on final pseudobulk sample count — justify in Methods
-- Consider whether class labels can be framed as binary (disease vs control) in addition to
-  multi-class — run both and compare; good bonus insight
-- Keep all preprocessing scripts in this directory for reproducibility marks
-- Professor's R scripts assume Windows paths (`C:/Graham/...`) — update paths before running locally
-- **Do not cite LLM-generated text directly** — use the agent to *find* papers and *suggest*
-  interpretations, but read the actual papers and write Discussion in your own words
+- Probe-to-gene mapping: use the GPL15207 annotation from the SOFT file or GEO2R.
+  Weka/classification works with probe IDs, but the Discussion requires gene names.
+- CV strategy: 10-fold CV is appropriate for n=40 (unlike LOOCV which was required for n=5)
+- Class imbalance: if classifiers perform poorly on the control class, consider
+  reporting per-class metrics (TP rate, F1) rather than overall accuracy
+- Professor's R scripts assume Windows paths — update before running locally
+- **Do not cite LLM-generated text directly** — use the agent to find papers and suggest
+  interpretations, then read the actual papers

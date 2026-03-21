@@ -1,36 +1,35 @@
 """
-preprocess.py — Filter and normalize the pseudobulk matrix for Weka
+preprocess.py — Filter the parsed microarray matrix for Weka
 
 WHY THIS SCRIPT EXISTS:
-  pseudobulk.py produced a 5 × 33,538 gene matrix — but most of those genes
-  are useless noise (zero or near-zero counts in nearly every sample).
-  This script does two things:
+  parse_series_matrix.py produced a 40 × ~49,000 probe matrix — but the vast
+  majority of those probes carry no useful discriminative signal (flat expression
+  across all samples, or near-identical values regardless of condition).
+  This script filters them out so feature_select.py and Weka work on a cleaner
+  and smaller feature set.
 
-  1. FILTER — remove genes that aren't meaningfully expressed.
-     Keeps only genes with a count > 0 in at least 2 of the 5 samples.
-     Rationale: if a gene is silent in 4/5 patients it can't help a classifier
-     distinguish ONFH from OA.
+  NOTE: Unlike the old scRNA-seq pipeline, NO normalization is applied here.
+  Affymetrix microarray data in the GEO series matrix has already been processed
+  (RMA normalization produces log2 intensity values that are directly comparable
+  across all 40 samples). Applying log-CPM on top of log2 values would be wrong.
 
-  2. NORMALIZE — correct for the fact that different samples have different
-     total counts (onfh_1 has 62M counts, onfh_2 has only 23M).
-     Without normalization, a gene could appear "highly expressed" in onfh_1
-     just because that sample has more total data — not because of biology.
-     We use log-CPM: convert to Counts Per Million, then apply log(x+1).
+  WHAT THIS SCRIPT DOES:
+  1. FILTER — remove low-variance probes.
+     Keeps only probes whose interquartile range (IQR) across all 40 samples
+     exceeds a threshold (default: IQR > 0.5 in log2 space).
+     Rationale: a probe with IQR < 0.5 shows less than 0.5 log2-units of
+     spread — it is essentially flat and cannot help distinguish SONFH from
+     control regardless of any classifier.
 
 OUTPUT:
-  A filtered, normalized CSV still in Weka format:
-  5 rows × (filtered genes + class column)
-  This file feeds directly into file_splitter.py and Weka.
-
-NOTE ON TRANSPOSE:
-  Unlike bulk RNA-seq, our pseudobulk.py already output samples as rows and
-  genes as columns — the correct Weka orientation. transpose.py is NOT needed
-  for this dataset. Going straight from this script to file_splitter.py is correct.
+  A filtered CSV in Weka format:
+  40 rows × (filtered probes + class column)
+  This file feeds directly into feature_select.py and Weka.
 
 Usage:
-  python3 preprocess.py [<pseudobulk_csv> <output_csv>]
-  python3 preprocess.py  (uses defaults: data/pseudobulk/pseudobulk_matrix.csv → data/pseudobulk/preprocessed_matrix.csv)
-  python3 preprocess.py data/pseudobulk/pseudobulk_matrix.csv data/pseudobulk/preprocessed_matrix.csv
+  python3 preprocess.py [<parsed_csv> <output_csv>]
+  python3 preprocess.py  (uses defaults shown below)
+  python3 preprocess.py data/femoral_head_necrosis/parsed/parsed_matrix.csv data/.../preprocessed_matrix.csv
 """
 
 import sys
@@ -39,123 +38,95 @@ import pandas as pd
 import numpy as np
 
 
-def load_pseudobulk(path: str) -> pd.DataFrame:
+def load_parsed(path: str) -> pd.DataFrame:
     """
-    Load the pseudobulk CSV produced by pseudobulk.py.
-
-    Reads the CSV back in with the sample names as the row index.
-    Separates the gene expression columns from the class label column
-    so we can work on them independently.
+    Load the parsed CSV produced by parse_series_matrix.py.
 
     Parameters:
-      path : str — path to pseudobulk_matrix.csv
+      path : str — path to parsed_matrix.csv
 
     Returns:
-      pd.DataFrame — shape (5, 33539): gene columns + class column
+      pd.DataFrame — shape (40, N_probes + 1): probe columns + class column
     """
     df = pd.read_csv(path, index_col=0)
-    print(f"Loaded: {df.shape[0]} samples x {df.shape[1]} columns "
-          f"({df.shape[1] - 1} genes + class)")
+    print(f"Loaded: {df.shape[0]} samples × {df.shape[1]} columns "
+          f"({df.shape[1] - 1} probes + class)")
     return df
 
 
-def filter_genes(df: pd.DataFrame, min_samples: int = 2) -> pd.DataFrame:
+def filter_probes(df: pd.DataFrame, iqr_threshold: float = 0.5) -> pd.DataFrame:
     """
-    Remove genes that are not expressed in enough samples.
+    Remove low-variance probes using Interquartile Range (IQR).
 
-    What "expressed" means here: count > 0 in a given sample.
-    A gene that is zero in 4 out of 5 samples carries no useful signal
-    for distinguishing ONFH from OA — it just adds noise and slows Weka down.
-
-    Strategy:
-      For each gene column, count how many of the 5 samples have count > 0.
-      Keep the gene only if that count >= min_samples (default: 2).
+    WHY IQR INSTEAD OF ZERO-COUNT FILTER:
+      Microarray data (log2 RMA values) almost never has true zeros —
+      every probe gets a background-corrected signal even if the gene isn't
+      expressed. So the old "count > 0 in N samples" filter doesn't apply.
+      Instead we use IQR: a probe that barely moves across all 40 samples
+      (IQR < 0.5 log2 units) contributes no information and is removed.
 
     Parameters:
-      df          : pd.DataFrame — pseudobulk matrix with class column last
-      min_samples : int — minimum number of samples that must express a gene to keep it
+      df            : pd.DataFrame — parsed matrix with class column last
+      iqr_threshold : float — minimum IQR to keep a probe (default 0.5 log2 units)
 
     Returns:
-      pd.DataFrame — same shape minus the dropped gene columns, class column preserved
+      pd.DataFrame — same shape minus dropped probe columns, class column preserved
     """
-    # Split gene columns from class column (always keep class)
-    gene_cols = df.columns[:-1]
-    class_col = df["class"]
+    probe_cols = df.columns[:-1]
+    class_col  = df["class"]
+    probe_df   = df[probe_cols]
 
-    gene_df = df[gene_cols]
+    q75 = probe_df.quantile(0.75, axis=0)
+    q25 = probe_df.quantile(0.25, axis=0)
+    iqr = q75 - q25
 
-    # For each gene: count how many samples have count > 0
-    expressed_in_n_samples = (gene_df > 0).sum(axis=0)
-
-    # Keep genes expressed in at least min_samples samples
-    keep_mask = expressed_in_n_samples >= min_samples
-    filtered = gene_df.loc[:, keep_mask]
+    keep_mask = iqr >= iqr_threshold
+    filtered  = probe_df.loc[:, keep_mask]
 
     n_removed = (~keep_mask).sum()
     n_kept    = keep_mask.sum()
-    print(f"\nFiltering (expressed in >= {min_samples} samples):")
-    print(f"  Genes before : {len(gene_cols)}")
-    print(f"  Genes removed: {n_removed}  (zero or near-zero in most samples)")
-    print(f"  Genes kept   : {n_kept}")
+    print(f"\nFiltering (IQR >= {iqr_threshold} log2 units across all samples):")
+    print(f"  Probes before  : {len(probe_cols)}")
+    print(f"  Probes removed : {n_removed}  (flat expression — no discriminative signal)")
+    print(f"  Probes kept    : {n_kept}")
 
-    # Re-attach class column at the end
     filtered["class"] = class_col
     return filtered
 
 
-def normalize_log_cpm(df: pd.DataFrame) -> pd.DataFrame:
+def check_normalization(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Normalize gene counts using log-CPM (log Counts Per Million).
+    Verify the data looks like log2 microarray values and report the range.
 
-    WHY NORMALIZE:
-      Different samples have different total counts:
-        onfh_1:  62,450,342  total counts
-        onfh_2:  23,286,947  total counts  ← less than 3x onfh_1
-        oa_2:    70,496,767  total counts
-      Without correction, a gene with 1000 counts in onfh_2 looks less active
-      than the same gene with 1000 counts in onfh_1, even though relative to
-      each sample's total it's the same. That's a technical artifact, not biology.
-
-    HOW LOG-CPM WORKS:
-      Step 1 — CPM: divide each gene's count by the sample's total counts, multiply by 1,000,000
-               This puts all samples on the same scale (per-million reads).
-      Step 2 — log1p: apply log(count + 1) to compress the range.
-               Raw counts span 0 to millions; log brings that to 0–15 range.
-               The +1 avoids log(0) which is undefined.
+    Microarray data from GEO series matrix (RMA processed) is already in log2
+    space. Values should roughly be in the range 2–16. No transformation applied.
 
     Parameters:
       df : pd.DataFrame — filtered matrix with class column last
 
     Returns:
-      pd.DataFrame — same shape, gene values replaced with log-CPM values
+      pd.DataFrame — unchanged (this is a check, not a transform)
     """
-    gene_cols = df.columns[:-1]
-    class_col = df["class"]
-    gene_df   = df[gene_cols].copy().astype(float)
+    probe_cols = df.columns[:-1]
+    vals = df[probe_cols].values.flatten()
 
-    # Step 1: divide each row by its total, multiply by 1,000,000
-    row_totals    = gene_df.sum(axis=1)           # total counts per sample
-    cpm           = gene_df.div(row_totals, axis=0) * 1_000_000
+    print(f"\nNormalization check (data is already log2 from RMA — no transform applied):")
+    print(f"  Value range : {vals.min():.3f} – {vals.max():.3f}")
+    print(f"  Mean        : {vals.mean():.3f}")
+    print(f"  Std dev     : {vals.std():.3f}")
 
-    # Step 2: log(x + 1) to compress the scale
-    log_cpm       = np.log1p(cpm)
+    if vals.max() > 25:
+        print("  WARNING: values exceed 25 — data may NOT be log2 transformed. "
+              "Check the series matrix source.")
+    else:
+        print("  OK: range consistent with log2 RMA microarray values.")
 
-    print(f"\nNormalization (log-CPM):")
-    print(f"  Raw count range  : {gene_df.values.min():.0f} – {gene_df.values.max():,.0f}")
-    print(f"  log-CPM range    : {log_cpm.values.min():.3f} – {log_cpm.values.max():.3f}")
-    print(f"  Sample totals (pre-norm):")
-    for sample, total in row_totals.items():
-        print(f"    {sample}: {total:,.0f}")
-
-    # Re-attach class column at the end
-    log_cpm["class"] = class_col
-    return log_cpm
+    return df
 
 
 def print_summary(df: pd.DataFrame) -> None:
     """
     Print a final summary of the preprocessed matrix before saving.
-    Confirms shape, gene count, and Weka readiness.
 
     Parameters:
       df : pd.DataFrame — the fully preprocessed matrix
@@ -163,26 +134,24 @@ def print_summary(df: pd.DataFrame) -> None:
     print("\n" + "=" * 60)
     print("PREPROCESSED MATRIX SUMMARY")
     print("=" * 60)
-    print(f"Shape          : {df.shape[0]} rows x {df.shape[1]} columns")
-    print(f"Gene columns   : {df.shape[1] - 1}")
+    print(f"Shape          : {df.shape[0]} rows × {df.shape[1]} columns")
+    print(f"Probe columns  : {df.shape[1] - 1}")
     print(f"Class column   : '{df.columns[-1]}'  (last — correct for Weka)")
     print(f"Missing values : {df.isnull().sum().sum()}")
     print(f"\nClass distribution:")
     print(df["class"].value_counts().to_string())
-    print(f"\nPreview (first 4 genes, all samples):")
+    print(f"\nPreview (first 4 probes, all samples):")
     print(df.iloc[:, :4].round(3))
     print("=" * 60)
-    print("\nNext steps:")
-    print("  1. Run file_splitter.py on this output (for Weka single-gene wrapper)")
-    print("  2. Load full matrix directly into Weka Explorer")
-    print("  NOTE: transpose.py is NOT needed — samples are already rows (Weka format)")
+    print("\nNext step:")
+    print("  python3 feature_select.py")
 
 
 # ---------------------------------------------------------------------------
 # MAIN
 # ---------------------------------------------------------------------------
-DEFAULT_INPUT_CSV  = "/Users/jordanharris/Code/Omics_Capstone/data/pseudobulk/pseudobulk_matrix.csv"
-DEFAULT_OUTPUT_CSV = "/Users/jordanharris/Code/Omics_Capstone/data/pseudobulk/preprocessed_matrix.csv"
+DEFAULT_INPUT_CSV  = "/Users/jordanharris/Code/Omics_Capstone/data/femoral_head_necrosis/parsed/parsed_matrix.csv"
+DEFAULT_OUTPUT_CSV = "/Users/jordanharris/Code/Omics_Capstone/data/femoral_head_necrosis/parsed/preprocessed_matrix.csv"
 
 if __name__ == "__main__":
     if len(sys.argv) == 1:
@@ -192,21 +161,21 @@ if __name__ == "__main__":
         input_path  = sys.argv[1]
         output_path = sys.argv[2]
     else:
-        print("Usage: python3 preprocess.py [<pseudobulk_csv> <output_csv>]")
+        print("Usage: python3 preprocess.py [<parsed_csv> <output_csv>]")
         print(f"  Default input  : {DEFAULT_INPUT_CSV}")
         print(f"  Default output : {DEFAULT_OUTPUT_CSV}")
         sys.exit(1)
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
-    # Step 1: Load pseudobulk matrix
-    df = load_pseudobulk(input_path)
+    # Step 1: Load parsed matrix from parse_series_matrix.py
+    df = load_parsed(input_path)
 
-    # Step 2: Filter lowly expressed genes
-    df = filter_genes(df, min_samples=2)
+    # Step 2: Filter low-variance probes (IQR-based)
+    df = filter_probes(df, iqr_threshold=0.5)
 
-    # Step 3: Normalize with log-CPM
-    df = normalize_log_cpm(df)
+    # Step 3: Verify normalization (data is already log2 — no transform applied)
+    df = check_normalization(df)
 
     # Step 4: Summary check
     print_summary(df)

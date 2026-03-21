@@ -51,10 +51,21 @@ split_output_*/
 preprocessed_matrix.csv
 pseudobulk_matrix.csv
 
+# Parsed/intermediate matrices (regenerate by running parse_series_matrix.py + preprocess.py)
+data/femoral_head_necrosis/parsed/parsed_matrix.csv
+data/femoral_head_necrosis/parsed/preprocessed_matrix.csv
+
+# Raw GEO data downloads (large, re-downloadable from GEO — do not commit)
+data/femoral_head_necrosis/GSE123568_series_matrix.txt.gz
+data/femoral_head_necrosis/GSE123568_family.soft.gz
+
 # Raw genomics downloads (large, re-downloadable)
 data/GSE*_raw/
 data/soulaan_prostate_cancer/
-data/femoral_head_necrosis/
+data/femoral_head_necrosis_old/
+
+# Large screenshots (not essential for reproducibility)
+data/screenshots/Screenshot*.png
 
 # Generic large genomics file types
 *.bam
