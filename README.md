@@ -2,13 +2,17 @@
 ## Steroid-Induced Osteonecrosis of the Femoral Head — GSE123568
 ### Extended deadline: April 30 — Target submission: before March 31 (certificate cutoff)
 
+<p align="center">
+  <img src="data/fhn_hip_replacement.jpeg" alt="Hip Replacement — Femoral Head Osteonecrosis" width="700">
+</p>
+
 ---
 
 ## Before Anything Else
 
 ~~- [x] **EMAIL THE PROFESSOR (Mar 6)** — asked whether prostate cancer is mandatory; professor approved femoral head necrosis (GSE316957) as the dataset for this project.~~
 
-**Switched to GSE123568** — 40-sample microarray study, peripheral serum, SONFH vs control.
+**Switched to GSE123568** — 40-sample microarray study, peripheral blood-derived samples, SONFH vs control.
 Old scRNA-seq dataset (GSE316957) archived to `data/femoral_head_necrosis_old/`.
 
 ---
@@ -28,7 +32,7 @@ Old scRNA-seq dataset (GSE316957) archived to `data/femoral_head_necrosis_old/`.
 | Data type | Gene expression microarray — log2 RMA-normalized intensity values |
 | Probes | 49,293 probe sets covering the human transcriptome |
 | Value range | ~2.6 – 6.7 log2 units (confirmed from file inspection) |
-| Sample source | Human peripheral blood serum — non-invasive, clinically accessible |
+| Sample source | Human peripheral blood-derived samples — non-invasive, clinically accessible |
 | Study goal | Blood-based gene expression biomarkers for early SONFH detection |
 | Linked paper | Jia Y et al. *Clin Transl Med* 2023;13(6):e1295. PMID: 37313692 |
 
@@ -66,7 +70,7 @@ making the comparison about **disease susceptibility**, not just steroid exposur
 - Clinically relevant: blood-based early detection (actionable before bone collapse)
 
 **Class imbalance note:** 30 SONFH vs 10 control (3:1 ratio). Mention in Methods
-as a study design limitation. Standard practice: report class-weighted metrics in Weka.
+as a study design limitation. Because the classes are imbalanced, results should be reported using per-class metrics (TP rate, F1, confusion matrix, and AUC), not overall accuracy alone.
 
 ---
 
@@ -166,7 +170,7 @@ python3 feature_select.py
 
 Every dot is one of the 11,687 probes that survived the IQR filter. The top 10 selected probes are labeled by gene name.
 
-The key insight: the top 100 probes are not just high fold change — they're also high variance, meaning they're genuinely informative rather than noise.
+The key insight: the top 100 probes are not just high fold change — they're also high variance, meaning they are likely informative candidates rather than flat background probes.
 
 - **X-axis — |Fold Change|:** how different each probe's average expression is between SONFH and control patients, in log2 units. Further right = more different between groups.
 - **Y-axis — Variance:** how much a probe's expression varies across all 40 patients regardless of group. Higher = more spread out across everyone.
@@ -190,9 +194,9 @@ Each bar = the absolute log2 fold change between SONFH and control. Top genes in
 
 ---
 
-### 3 — Do individual genes actually separate the groups? — Box plots (Top 6)
+### 3 — Do individual top probes actually separate the groups? — Box plots (Top 6)
 
-> **"These genes clearly differ between classes"** — individual gene distributions for SONFH vs control patients, no overlap.
+> **"These top probes clearly differ between classes"** — individual probe distributions for SONFH vs control patients, minimal overlap. Each panel is annotated with the gene symbol for interpretability.
 
 Each of the 6 panels shows one top probe. The box covers the middle 50% of values (IQR); the line inside is the median; whiskers extend to the furthest non-outlier value. For the top probes, the boxes barely overlap, confirming the genes are genuinely expressed differently — not just statistically selected artifacts.
 
@@ -213,7 +217,7 @@ Each of the 6 panels shows one top probe. The box covers the middle 50% of value
 A 40×40 grid — one cell per pair of patients. Rows and columns are reordered by hierarchical clustering (the dendrograms on the edges group similar patients together automatically). If the disease signal is real, SONFH patients should form their own cluster and controls theirs.
 
 - **X-axis & Y-axis:** both axes are the 40 patient samples. Each row and each column is one patient. The cell where row i meets column j shows how similar patients i and j are.
-- **Cell colour — Pearson correlation:** warm red = correlation close to 1.0 (nearly identical expression profiles); cool blue = lower correlation (more different). Scale runs from 0.7 to 1.0 — all patients are human blood cells so no pair scores below ~0.7.
+- **Cell colour — Pearson correlation:** warm red = correlation close to 1.0 (nearly identical expression profiles); cool blue = lower correlation (more different). Scale runs from 0.7 to 1.0 — all samples are blood-derived human samples, so moderate baseline correlation is expected even across different patients.
 - **Sidebar colour bars (top and left edges):** red = SONFH patient; blue = control patient. These let you see at a glance whether clustered patients share a diagnosis.
 - **Legend:** SONFH (n=30) in red, control (n=10) in blue — shown in the dendrogram area.
 
@@ -239,7 +243,7 @@ Log2 expression of the top 20 probes across all 40 samples. Both rows (probes) a
 
 ### 6 — Do the samples separate? — PCA
 
-> **"Low-dimensional structure confirms separation"** — 84.6% of all variation captured in one axis, perfectly separating the two groups.
+> **"Low-dimensional structure confirms separation"** — 84.6% of all variation captured in one axis, clearly separating the two groups.
 
 PCA compresses the 100-probe feature space down to 2 numbers per patient. Each dot is one patient. If the two groups land in different regions of this 2D space, the selected probes are genuinely capturing disease signal — not noise.
 
@@ -248,86 +252,6 @@ PCA compresses the 100-probe feature space down to 2 numbers per patient. Each d
 - **Legend:** red filled circles = SONFH patients (n=30); blue filled circles = control patients (n=10). Each dot is labeled with the patient's GSM sample ID.
 
 ![pca_plot](data/femoral_head_necrosis/EDA/pca_plot.png)
-
----
-
-## Glossary — Key Terms
-
-Plain-English definitions for every technical term used in this project, grouped by topic.
-
----
-
-### Biology & Genomics
-
-| Term | What it means |
-|------|---------------|
-| **Gene expression** | How actively a gene is being "read" by a cell at a given moment. DNA contains the instructions; mRNA is the photocopy the cell makes to actually use those instructions. Expression level = how many copies of that mRNA are present. |
-| **mRNA (messenger RNA)** | The intermediate molecule between a gene (DNA) and a protein. When a gene is "expressed," the cell transcribes DNA into mRNA. Microarrays and RNA-seq both measure mRNA levels — not DNA, not protein. |
-| **Transcriptome** | The complete set of all mRNA molecules in a cell or tissue at a specific moment. Measuring the transcriptome tells you which genes are active. |
-| **Microarray** | A chip (about the size of a glass slide) printed with tens of thousands of short DNA sequences called probes. A patient sample is washed over the chip; mRNA from the sample sticks to matching probes. A scanner reads how much stuck to each probe — that's the expression value. Affymetrix PrimeView (GPL15207) is the specific chip used in this dataset: 49,293 probes covering ~20,000 human genes. |
-| **Probe** | One of the 49,293 short DNA sequences printed on the Affymetrix chip. Each probe "catches" one specific mRNA sequence from the patient sample. Each gene typically has multiple probes targeting it from different angles. |
-| **Probe set** | The group of all probes on the chip that target the same gene. The chip combines their readings into one summary expression value per gene. |
-| **_at probe suffix** | Standard probe — targets exactly one gene's transcript. Most specific, most reliable. |
-| **_s_at probe suffix** | "Shared" — matches multiple transcripts (splice variants) of the *same* gene. Still gene-specific but less precise. |
-| **_x_at probe suffix** | "Cross-hybridizing" — can stick to sequences from *multiple different genes*. Least specific; flag when interpreting results. |
-| **Cross-hybridization** | When a probe binds to an unintended mRNA sequence because the sequences are similar enough. _x_at probes are known cross-hybridizers — their readings reflect a mix of genes, not just one. |
-| **Splice variant / isoform** | The same gene can produce slightly different mRNA molecules depending on how it's "spliced" — different sections included or excluded. One gene can have many isoforms. _s_at probes target multiple isoforms of the same gene. |
-| **Biomarker** | A measurable biological signal (gene expression level, protein level, etc.) that reliably indicates the presence, severity, or risk of a disease. The top differentially expressed probes in this project are candidate biomarkers for SONFH. |
-| **SONFH** | Steroid-induced Osteonecrosis of the Femoral Head — bone death in the hip joint caused by long-term corticosteroid (steroid) use. Steroids can reduce blood flow to the femoral head; without blood supply the bone tissue dies. The "disease" class in this dataset. |
-| **Osteonecrosis** | Literally "bone death" — the tissue dies because its blood supply is cut off. Also called avascular necrosis (AVN). |
-| **Femoral head** | The ball at the top of the thigh bone (femur) that fits into the hip socket. It is especially vulnerable to osteonecrosis because it has a limited blood supply. |
-| **Corticosteroids** | A class of steroid hormones (e.g. prednisone, dexamethasone) used medically to suppress inflammation. Long-term high-dose use is one of the leading causes of SONFH. |
-| **Peripheral serum** | Blood serum collected from a vein (as opposed to bone marrow or tissue biopsy). This is what was sampled from the 40 patients — a non-invasive blood draw, not surgery. |
-| **Control group** | In this dataset: patients who received corticosteroids but did NOT develop SONFH (n=10). They serve as the comparison baseline. Not completely healthy people — they are steroid-treated patients without bone necrosis. |
-
----
-
-### Data & Measurement
-
-| Term | What it means |
-|------|---------------|
-| **GEO (Gene Expression Omnibus)** | The public database run by NCBI where researchers deposit raw and processed genomics data when they publish a study. All data in this project came from GEO. Free to download. |
-| **GSE accession** | "GEO Series" — the ID for one complete study deposited in GEO. Our dataset: GSE123568. Think of it as the study's library catalogue number. |
-| **GSM accession** | "GEO Sample" — the ID for one individual patient sample within a study. Our 40 patients have IDs GSM3507251–GSM3507290. |
-| **Series matrix file** | The main data file GEO provides for microarray studies. Contains two sections: a metadata header (patient labels, disease status, gender) and a data table (probe expression values for every patient). Our file: `GSE123568_series_matrix.txt.gz`. |
-| **SOFT file** | "Simple Omnibus Format in Text" — a second GEO file that contains the platform annotation: which probe ID maps to which gene symbol. Our file: `GSE123568_family.soft.gz`. Used to translate probe IDs like `11720807_x_at` into gene names like `EIF1AY`. |
-| **log2 expression** | The gene expression value after a log base-2 transformation. RMA normalization already applies this. Values in our dataset range from ~2–14. Log scale is used because expression can vary by orders of magnitude — log scale compresses that range so differences are comparable. |
-| **RMA normalization** | "Robust Multi-array Average" — the standard processing pipeline for Affymetrix microarray data. It corrects for chip background noise, makes expression values comparable across all 40 chips, and outputs log2-transformed intensities. Already applied by GEO before we downloaded the data. We do not normalize again. |
-| **IQR filter** | The first filtering step in `preprocess.py`. For each of the 49,293 probes, it looks at the expression values across all 40 patients and computes the IQR (see below). If the IQR is less than 0.5 log2 units, the probe is removed. Intuition: if a probe gives nearly the same reading in every patient — sick or healthy — it carries no information about disease status and would just add noise for the classifier. Result: 49,293 → 11,687 probes kept (76% removed as flat). |
-| **IQR (Interquartile Range)** | The spread of the middle 50% of a set of values. Calculated as Q75 − Q25 (the 75th percentile value minus the 25th percentile value). A small IQR means the values are tightly bunched — the probe is "flat." A large IQR means the probe varies a lot across patients, which is what we want. For the IQR filter, we use 0.5 log2 units as the cutoff. |
-| **Variance** | How spread out a set of values is around their average. Mathematically the average of squared differences from the mean. Used as a secondary ranking metric in feature selection — high-variance probes are variable across patients and thus potentially informative. |
-| **Fold change (FC)** | How much more (or less) a gene is expressed in one group vs another, measured in log2 units. An FC of 1.0 means the SONFH average is 2× higher than control's (because 2¹ = 2). An FC of 3.6 means ~12× higher (2³·⁶ ≈ 12). We use **absolute** FC (|FC|) so direction doesn't matter — we just want genes that differ strongly in either direction. |
-| **Pearson correlation** | A number from −1 to +1 measuring how similar two things move together. For two patients: +1.0 = their full expression profiles are identical across all probes; 0 = no relationship at all. In our sample correlation heatmap, all patient pairs score >0.7 because they're all human blood — but SONFH patients score higher *with each other* than with controls. |
-| **Hierarchical clustering** | An algorithm that groups similar things together by repeatedly merging the two most similar items. In our heatmaps, this reorders the rows and columns so that similar probes (or similar patients) end up next to each other, revealing block patterns. |
-| **Dendrogram** | The tree diagram on the edge of a clustered heatmap. Each branch point shows where two items (or clusters) were merged. Items connected at a low branch are very similar; items connected only at the top are more different. |
-| **Pseudobulk** | A technique used with single-cell RNA-seq data (not used in this project). When you have ~46,000 individual cells from 5 patients, you sum all cell counts per patient into one row — making it look like bulk RNA-seq. Used in the old dataset (GSE316957); not needed here because microarray data is already one row per patient. |
-
----
-
-### Machine Learning & Classification
-
-| Term | What it means |
-|------|---------------|
-| **Feature** | One input variable used by a classifier. In this project, each probe is a feature — its log2 expression value for a given patient. After feature selection, we have 100 features. |
-| **Feature selection** | The process of choosing which subset of features to give the classifier. We rank all 11,687 probes by |fold change| and keep the top 100. More features ≠ better model — too many features with too few samples causes overfitting. |
-| **Classifier** | An algorithm that takes a set of input features (probe values) for one patient and predicts which class (SONFH or control) that patient belongs to. |
-| **Class imbalance** | When one class has many more samples than the other. Here: 30 SONFH vs 10 control (3:1 ratio). This matters because a classifier could get 75% accuracy by always guessing SONFH — without learning anything real. Per-class metrics (TP rate, F1) expose this. |
-| **Overfitting** | When a model memorizes the training data instead of learning generalizable patterns. Happens easily when you have many features but few samples. Cross-validation helps detect it. |
-| **10-fold cross-validation** | A way to test classifier accuracy on all data without needing a separate holdout set. The 40 samples are split into 10 groups of 4. Each group takes a turn being the "test set" while the classifier trains on the other 36. Final accuracy = average across all 10 turns. More reliable than a single train/test split. |
-| **Confusion matrix** | A 2×2 table showing how the classifier's predictions compare to the true labels: True Positives (SONFH correctly called SONFH), True Negatives (control correctly called control), False Positives, False Negatives. |
-| **TP rate (True Positive rate)** | Also called sensitivity or recall. Of all actual SONFH patients, what fraction did the classifier correctly identify as SONFH? = TP / (TP + FN). |
-| **F1 score** | The harmonic mean of precision and recall. A single number (0–1) that balances both. More informative than raw accuracy when classes are imbalanced. |
-| **AUC (Area Under the ROC Curve)** | Measures overall classifier quality across all possible decision thresholds. AUC = 1.0 is a perfect classifier; AUC = 0.5 is random guessing. Robust to class imbalance. |
-| **Naive Bayes** | A probabilistic classifier that assumes all features are independent of each other (the "naive" assumption). Fast, interpretable, often works well on high-dimensional data. Good baseline. |
-| **J48 Decision Tree** | A tree-based classifier that makes sequential yes/no splits on feature values. Interpretable — you can read the tree rules and see which probes the model splits on first. Weka's implementation of the C4.5 algorithm. |
-| **Random Forest** | An ensemble of many decision trees, each trained on a random subset of features and samples. The final prediction is a vote across all trees. Generally the most accurate of the five classifiers; also provides feature importance scores. |
-| **SVM / SMO** | Support Vector Machine — finds the widest possible margin (gap) between the two classes in feature space. SMO is the algorithm Weka uses to train it. Works well when features > samples. |
-| **k-NN / IBk** | k-Nearest Neighbours — classifies a patient by looking at its k most similar patients in the training set and taking a majority vote. No explicit "training" — it just memorizes the data. Sensitive to the choice of k. |
-| **Weka** | "Waikato Environment for Knowledge Analysis" — an open-source machine learning GUI from the University of Waikato. Lets you run classifiers on an ARFF file without writing code. Used in Phase 5. |
-| **ARFF file** | "Attribute-Relation File Format" — Weka's input format. Like a CSV but with a header block that declares each column's name and data type. The `class` column must be listed last and declared as a nominal attribute. |
-| **PCA (Principal Component Analysis)** | A technique that finds the directions of greatest variation in high-dimensional data and projects all points onto those directions. PC1 = the single axis that explains the most variation. Useful for visualizing whether disease groups separate before running any classifier. |
-
----
 
 ---
 
@@ -359,6 +283,9 @@ Both stay compressed — scripts read .gz directly, no extraction needed.
 ```
 
 ---
+
+<details>
+<summary><strong>File 1 — GSE123568_series_matrix.txt.gz</strong> — main data file, 7.7 MB compressed (click to expand)</summary>
 
 ### File 1 — `GSE123568_series_matrix.txt.gz` (7.7 MB compressed, read directly by scripts)
 
@@ -396,7 +323,12 @@ Higher = more active. Values range from ~2.6 to ~6.7 (confirmed from file inspec
 The `log2` part means: a value of 6 represents 2⁶ = 64 units of signal; a value of 7
 represents 2⁷ = 128 — so each +1 step is a doubling of expression.
 
+</details>
+
 ---
+
+<details>
+<summary><strong>File 2 — GSE123568_family.soft.gz</strong> — probe annotation / translation dictionary, 51 MB (click to expand)</summary>
 
 ### File 2 — `GSE123568_family.soft.gz` (51 MB compressed) *(the translation dictionary)*
 
@@ -457,7 +389,12 @@ Note: some probes have `---` in the Gene Symbol column — these are control pro
 unannotated sequences. They will be present in the pipeline but ignored when looking up
 biology (you can't search `---` on PubMed).
 
+</details>
+
 ---
+
+<details>
+<summary><strong>The 40 samples — who they are</strong> — full GSM ID table with disease status and gender (click to expand)</summary>
 
 ### The 40 samples — who they are
 
@@ -515,6 +452,8 @@ biology (you can't search `---` on PubMed).
 - Combined: 20 Female, 20 Male — balanced overall, but unequal within groups.
   Worth mentioning as a potential confound in the Discussion.
 
+</details>
+
 ---
 
 ### What preprocess.py does to the probes
@@ -529,6 +468,9 @@ status — they cannot help a classifier distinguish SONFH from control.
 | 49,293 probes | 11,687 probes (37,606 removed — flat across all 40 samples) |
 
 ---
+
+<details>
+<summary><strong>Repository Contents</strong> — full directory tree (click to expand)</summary>
 
 ## Repository Contents
 
@@ -568,7 +510,7 @@ Omics_Capstone/
         │   ├── top100_features.arff  ← LOAD THIS INTO WEKA
         │   ├── top100_features.csv
         │   ├── gene_rankings.csv     ← all 11,687 probes ranked by |FC| + gene symbol
-        │   └── gene_level_summary.csv ← post-selection: selected probes grouped by gene
+        │   └── gene_level_summary.csv ← post-selection interpretation only: selected probes grouped by gene (not used as Weka input)
         │
         └── EDA/                     ← Generated by feature_select.py
             ├── volcano_plot.png       ← all 11,687 probes; top 100 highlighted
@@ -578,6 +520,8 @@ Omics_Capstone/
             ├── heatmap_top20.png      ← top 20 probes × 40 samples expression heatmap
             └── pca_plot.png           ← 2D PCA of top 100 probes
 ```
+
+</details>
 
 ---
 
@@ -634,7 +578,7 @@ Omics_Capstone/
 - [x] Value range confirmed: 1.43 – 14.14 (log2 RMA, OK)
 - [x] No log normalization applied — "OK" confirmed in output
 - [ ] **START WRITING: Methods — dataset and preprocessing sections**
-  - Dataset: GEO GSE123568, microarray (Affymetrix PrimeView GPL15207), 40 peripheral serum samples
+  - Dataset: GEO GSE123568, microarray (Affymetrix PrimeView GPL15207), 40 peripheral blood-derived samples
   - Classes: 30 SONFH patients vs 10 non-SONFH steroid controls
   - Parse step: extracted probe expression matrix from GEO series matrix file
   - Filter step: removed probes with IQR < 0.5 log2 units (low-variance, non-discriminative)
@@ -646,7 +590,7 @@ Omics_Capstone/
 - [x] Run `python3 feature_select.py`
 - [x] Top 20 probes identified with gene symbols (see table below)
 - [x] Selection is probe-level — 100 probes from ~59 unique genes (see `gene_level_summary.csv`)
-- [x] `gene_level_summary.csv` generated — groups selected probes by gene, flags multi-probe genes and direction consistency
+- [x] `gene_level_summary.csv` generated — post-selection interpretation layer only, not a replacement for the probe-level classifier input used by Weka; groups selected probes by gene, flags multi-probe genes and direction consistency
 - [x] PCA: strong separation — PC1 = 84.6%, PC2 = 2.4%
 - [x] 6 EDA plots saved to `data/femoral_head_necrosis/EDA/` (volcano, FC bar, box plots, sample correlation, heatmap, PCA)
 - [x] Gene names read on the fly from SOFT file — displayed alongside probe IDs in output
@@ -809,7 +753,7 @@ asks Claude API to interpret in SONFH biology context.
    inflammation/apoptosis genes — typical SONFH biology in peripheral blood)
 - [ ] Discuss class imbalance (30:10) — what does this mean for classifier performance?
   (control class harder to classify; Naive Bayes most affected)
-- [ ] Discuss blood vs tissue: these are peripheral serum biomarkers, not tissue expression;
+- [ ] Discuss blood vs tissue: these are blood-based transcriptomic biomarkers, not tissue expression;
   they reflect systemic response, not local bone changes — different from tissue biopsies
 - [ ] Literature comparison: cite Jia Y et al. 2023 (the linked paper) + LLM agent results
 
@@ -830,6 +774,90 @@ asks Claude API to interpret in SONFH biology context.
 - [ ] Scientific passive voice throughout
 
 ---
+
+<details>
+<summary><strong>Glossary — Key Terms</strong> &nbsp;(click to expand)</summary>
+
+Plain-English definitions for every technical term used in this project, grouped by topic.
+
+---
+
+### Biology & Genomics
+
+| Term | What it means |
+|------|---------------|
+| **Gene expression** | How actively a gene is being "read" by a cell at a given moment. DNA contains the instructions; mRNA is the photocopy the cell makes to actually use those instructions. Expression level = how many copies of that mRNA are present. |
+| **mRNA (messenger RNA)** | The intermediate molecule between a gene (DNA) and a protein. When a gene is "expressed," the cell transcribes DNA into mRNA. Microarrays and RNA-seq both measure mRNA levels — not DNA, not protein. |
+| **Transcriptome** | The complete set of all mRNA molecules in a cell or tissue at a specific moment. Measuring the transcriptome tells you which genes are active. |
+| **Microarray** | A chip (about the size of a glass slide) printed with tens of thousands of short DNA sequences called probes. A patient sample is washed over the chip; mRNA from the sample sticks to matching probes. A scanner reads how much stuck to each probe — that's the expression value. Affymetrix PrimeView (GPL15207) is the specific chip used in this dataset: 49,293 probes covering ~20,000 human genes. |
+| **Probe** | One of the 49,293 short DNA sequences printed on the Affymetrix chip. Each probe "catches" one specific mRNA sequence from the patient sample. Each gene typically has multiple probes targeting it from different angles. |
+| **Probe set** | The group of all probes on the chip that target the same gene. The chip combines their readings into one summary expression value per gene. |
+| **_at probe suffix** | Standard probe — targets exactly one gene's transcript. Most specific, most reliable. |
+| **_s_at probe suffix** | "Shared" — matches multiple transcripts (splice variants) of the *same* gene. Still gene-specific but less precise. |
+| **_x_at probe suffix** | "Cross-hybridizing" — can stick to sequences from *multiple different genes*. Least specific; flag when interpreting results. |
+| **Cross-hybridization** | When a probe binds to an unintended mRNA sequence because the sequences are similar enough. _x_at probes are known cross-hybridizers — their readings reflect a mix of genes, not just one. |
+| **Splice variant / isoform** | The same gene can produce slightly different mRNA molecules depending on how it's "spliced" — different sections included or excluded. One gene can have many isoforms. _s_at probes target multiple isoforms of the same gene. |
+| **Biomarker** | A measurable biological signal (gene expression level, protein level, etc.) that reliably indicates the presence, severity, or risk of a disease. The top differentially expressed probes in this project are candidate biomarkers for SONFH. |
+| **SONFH** | Steroid-induced Osteonecrosis of the Femoral Head — bone death in the hip joint caused by long-term corticosteroid (steroid) use. Steroids can reduce blood flow to the femoral head; without blood supply the bone tissue dies. The "disease" class in this dataset. |
+| **Osteonecrosis** | Literally "bone death" — the tissue dies because its blood supply is cut off. Also called avascular necrosis (AVN). |
+| **Femoral head** | The ball at the top of the thigh bone (femur) that fits into the hip socket. It is especially vulnerable to osteonecrosis because it has a limited blood supply. |
+| **Corticosteroids** | A class of steroid hormones (e.g. prednisone, dexamethasone) used medically to suppress inflammation. Long-term high-dose use is one of the leading causes of SONFH. |
+| **Peripheral serum** | Blood serum collected from a vein (as opposed to bone marrow or tissue biopsy). This is what was sampled from the 40 patients — a non-invasive blood draw, not surgery. |
+| **Control group** | In this dataset: patients who received corticosteroids but did NOT develop SONFH (n=10). They serve as the comparison baseline. Not completely healthy people — they are steroid-treated patients without bone necrosis. |
+
+---
+
+### Data & Measurement
+
+| Term | What it means |
+|------|---------------|
+| **GEO (Gene Expression Omnibus)** | The public database run by NCBI where researchers deposit raw and processed genomics data when they publish a study. All data in this project came from GEO. Free to download. |
+| **GSE accession** | "GEO Series" — the ID for one complete study deposited in GEO. Our dataset: GSE123568. Think of it as the study's library catalogue number. |
+| **GSM accession** | "GEO Sample" — the ID for one individual patient sample within a study. Our 40 patients have IDs GSM3507251–GSM3507290. |
+| **Series matrix file** | The main data file GEO provides for microarray studies. Contains two sections: a metadata header (patient labels, disease status, gender) and a data table (probe expression values for every patient). Our file: `GSE123568_series_matrix.txt.gz`. |
+| **SOFT file** | "Simple Omnibus Format in Text" — a second GEO file that contains the platform annotation: which probe ID maps to which gene symbol. Our file: `GSE123568_family.soft.gz`. Used to translate probe IDs like `11720807_x_at` into gene names like `EIF1AY`. |
+| **log2 expression** | The gene expression value after a log base-2 transformation. RMA normalization already applies this. Values in our dataset range from ~2–14. Log scale is used because expression can vary by orders of magnitude — log scale compresses that range so differences are comparable. |
+| **RMA normalization** | "Robust Multi-array Average" — the standard processing pipeline for Affymetrix microarray data. It corrects for chip background noise, makes expression values comparable across all 40 chips, and outputs log2-transformed intensities. Already applied by GEO before we downloaded the data. We do not normalize again. |
+| **IQR filter** | The first filtering step in `preprocess.py`. For each of the 49,293 probes, it looks at the expression values across all 40 patients and computes the IQR (see below). If the IQR is less than 0.5 log2 units, the probe is removed. Intuition: if a probe gives nearly the same reading in every patient — sick or healthy — it carries no information about disease status and would just add noise for the classifier. Result: 49,293 → 11,687 probes kept (76% removed as flat). |
+| **IQR (Interquartile Range)** | The spread of the middle 50% of a set of values. Calculated as Q75 − Q25 (the 75th percentile value minus the 25th percentile value). A small IQR means the values are tightly bunched — the probe is "flat." A large IQR means the probe varies a lot across patients, which is what we want. For the IQR filter, we use 0.5 log2 units as the cutoff. |
+| **Variance** | How spread out a set of values is around their average. Mathematically the average of squared differences from the mean. Used as a secondary ranking metric in feature selection — high-variance probes are variable across patients and thus potentially informative. |
+| **Fold change (FC)** | How much more (or less) a gene is expressed in one group vs another, measured in log2 units. An FC of 1.0 means the SONFH average is 2× higher than control's (because 2¹ = 2). An FC of 3.6 means ~12× higher (2³·⁶ ≈ 12). We use **absolute** FC (|FC|) so direction doesn't matter — we just want genes that differ strongly in either direction. |
+| **Pearson correlation** | A number from −1 to +1 measuring how similar two things move together. For two patients: +1.0 = their full expression profiles are identical across all probes; 0 = no relationship at all. In our sample correlation heatmap, all patient pairs score >0.7 because they're all human blood — but SONFH patients score higher *with each other* than with controls. |
+| **Hierarchical clustering** | An algorithm that groups similar things together by repeatedly merging the two most similar items. In our heatmaps, this reorders the rows and columns so that similar probes (or similar patients) end up next to each other, revealing block patterns. |
+| **Dendrogram** | The tree diagram on the edge of a clustered heatmap. Each branch point shows where two items (or clusters) were merged. Items connected at a low branch are very similar; items connected only at the top are more different. |
+| **Pseudobulk** | A technique used with single-cell RNA-seq data (not used in this project). When you have ~46,000 individual cells from 5 patients, you sum all cell counts per patient into one row — making it look like bulk RNA-seq. Used in the old dataset (GSE316957); not needed here because microarray data is already one row per patient. |
+
+---
+
+### Machine Learning & Classification
+
+| Term | What it means |
+|------|---------------|
+| **Feature** | One input variable used by a classifier. In this project, each probe is a feature — its log2 expression value for a given patient. After feature selection, we have 100 features. |
+| **Feature selection** | The process of choosing which subset of features to give the classifier. We rank all 11,687 probes by |fold change| and keep the top 100. More features ≠ better model — too many features with too few samples causes overfitting. |
+| **Classifier** | An algorithm that takes a set of input features (probe values) for one patient and predicts which class (SONFH or control) that patient belongs to. |
+| **Class imbalance** | When one class has many more samples than the other. Here: 30 SONFH vs 10 control (3:1 ratio). This matters because a classifier could get 75% accuracy by always guessing SONFH — without learning anything real. Per-class metrics (TP rate, F1) expose this. |
+| **Overfitting** | When a model memorizes the training data instead of learning generalizable patterns. Happens easily when you have many features but few samples. Cross-validation helps detect it. |
+| **10-fold cross-validation** | A way to test classifier accuracy on all data without needing a separate holdout set. The 40 samples are split into 10 groups of 4. Each group takes a turn being the "test set" while the classifier trains on the other 36. Final accuracy = average across all 10 turns. More reliable than a single train/test split. |
+| **Confusion matrix** | A 2×2 table showing how the classifier's predictions compare to the true labels: True Positives (SONFH correctly called SONFH), True Negatives (control correctly called control), False Positives, False Negatives. |
+| **TP rate (True Positive rate)** | Also called sensitivity or recall. Of all actual SONFH patients, what fraction did the classifier correctly identify as SONFH? = TP / (TP + FN). |
+| **F1 score** | The harmonic mean of precision and recall. A single number (0–1) that balances both. More informative than raw accuracy when classes are imbalanced. |
+| **AUC (Area Under the ROC Curve)** | Measures overall classifier quality across all possible decision thresholds. AUC = 1.0 is a perfect classifier; AUC = 0.5 is random guessing. Robust to class imbalance. |
+| **Naive Bayes** | A probabilistic classifier that assumes all features are independent of each other (the "naive" assumption). Fast, interpretable, often works well on high-dimensional data. Good baseline. |
+| **J48 Decision Tree** | A tree-based classifier that makes sequential yes/no splits on feature values. Interpretable — you can read the tree rules and see which probes the model splits on first. Weka's implementation of the C4.5 algorithm. |
+| **Random Forest** | An ensemble of many decision trees, each trained on a random subset of features and samples. The final prediction is a vote across all trees. Generally the most accurate of the five classifiers; also provides feature importance scores. |
+| **SVM / SMO** | Support Vector Machine — finds the widest possible margin (gap) between the two classes in feature space. SMO is the algorithm Weka uses to train it. Works well when features > samples. |
+| **k-NN / IBk** | k-Nearest Neighbours — classifies a patient by looking at its k most similar patients in the training set and taking a majority vote. No explicit "training" — it just memorizes the data. Sensitive to the choice of k. |
+| **Weka** | "Waikato Environment for Knowledge Analysis" — an open-source machine learning GUI from the University of Waikato. Lets you run classifiers on an ARFF file without writing code. Used in Phase 5. |
+| **ARFF file** | "Attribute-Relation File Format" — Weka's input format. Like a CSV but with a header block that declares each column's name and data type. The `class` column must be listed last and declared as a nominal attribute. |
+| **PCA (Principal Component Analysis)** | A technique that finds the directions of greatest variation in high-dimensional data and projects all points onto those directions. PC1 = the single axis that explains the most variation. Useful for visualizing whether disease groups separate before running any classifier. |
+
+</details>
+
+---
+
+<details>
+<summary><strong>Bonus Analysis — Biomarker Discovery & Biological Interpretation</strong> (click to expand)</summary>
 
 ## Bonus Analysis — Biomarker Discovery & Biological Interpretation
 
@@ -875,7 +903,7 @@ This distinction is critical for interpreting results:
 
 The genes identified here most likely fall into the **biomarker category**, capturing systemic changes associated with SONFH rather than its primary molecular drivers.
 
-Additionally, because this dataset reflects transcriptomic measurements from **peripheral blood serum** (not local bone tissue), these signals should be interpreted as **systemic indicators** of disease-associated physiology, not direct measurements of gene activity within the femoral head.
+Additionally, because this dataset reflects transcriptomic measurements from **peripheral blood-derived samples** (not local bone tissue), these signals should be interpreted as **systemic indicators** of disease-associated physiology, not direct measurements of gene activity within the femoral head.
 
 **Summary:** The observed downregulation of erythrocyte-related genes is best interpreted as a transcriptomic signature of altered vascular and hematological physiology in SONFH, rather than a direct causal mechanism of disease.
 
@@ -929,8 +957,8 @@ Compared against known SONFH mechanisms in literature (via LLM-assisted PubMed s
 
 ### Methodological Considerations
 
-- Feature selection performed **within** cross-validation folds to prevent data leakage
-- Class imbalance (30 SONFH vs 10 control) handled via stratified CV and class-weighted metrics
+- The current Weka pipeline performs feature selection on the full filtered dataset before classification. This is appropriate for exploratory analysis and rubric alignment, but it introduces potential information leakage. A stricter leakage-safe implementation, where feature selection is repeated within each cross-validation fold, is planned as a Python-side extension.
+- Class imbalance (30 SONFH vs 10 control): results reported using per-class metrics (TP rate, F1, AUC, confusion matrix), not overall accuracy alone
 - Results are exploratory — no external validation cohort
 - Report per-class metrics (TP rate, F1) not just overall accuracy, given imbalance
 
@@ -947,6 +975,8 @@ into:
 - Permutation feature importance (model-agnostic validation)
 - Comparison of probe-level vs gene-level models
 - Integration with PubMed / LLM-based literature review (Phase 6 → Phase 7)
+
+</details>
 
 ---
 
@@ -1000,3 +1030,4 @@ https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL15207
 - Professor's R scripts assume Windows paths — update before running locally
 - **Do not cite LLM-generated text directly** — use the agent to find papers and suggest
   interpretations, then read the actual papers
+
