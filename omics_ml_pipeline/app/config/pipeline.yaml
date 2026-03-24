@@ -1,0 +1,68 @@
+project:
+  name: omics_ml_pipeline
+  description: "Python ML pipeline for SONFH biomarker discovery — parallel to manual Weka capstone"
+  dataset: GSE123568
+
+# ---------------------------------------------------------------------------
+# PATHS — all resolved relative to app/data/
+# ---------------------------------------------------------------------------
+paths:
+  # Raw GEO inputs (app's own copies)
+  series_matrix: app/data/GSE123568_series_matrix.txt.gz
+  soft_file:     app/data/GSE123568_family.soft.gz
+
+  # Intermediate outputs
+  parsed_csv:       app/data/parsed/parsed_matrix.csv
+  preprocessed_csv: app/data/parsed/preprocessed_matrix.csv
+
+  # Feature selection outputs
+  feature_select_dir:  app/data/feature_selection
+  gene_rankings:       app/data/feature_selection/gene_rankings.csv
+  top_features_csv:    app/data/feature_selection/top_features.csv
+
+  # Model outputs
+  model_output_dir:  app/data/models
+  model_comparison:  app/data/models/model_comparison.csv
+
+  # Plots
+  plots_dir: app/data/plots
+
+  # Final biomarker shortlist
+  biomarker_shortlist: app/data/biomarker_shortlist.csv
+
+# ---------------------------------------------------------------------------
+# PREPROCESSING
+# ---------------------------------------------------------------------------
+preprocessing:
+  iqr_threshold: 0.5
+
+# ---------------------------------------------------------------------------
+# FEATURE SELECTION
+# ---------------------------------------------------------------------------
+feature_selection:
+  top_n: 100
+  method: fc       # 'fc' = fold-change | 'var' = variance
+
+# ---------------------------------------------------------------------------
+# TRAINING
+# ---------------------------------------------------------------------------
+training:
+  cv_splits: 5
+  cv_repeats: 10
+  random_state: 42
+
+# ---------------------------------------------------------------------------
+# HYPEROPT
+# ---------------------------------------------------------------------------
+hyperopt:
+  max_evals: 50
+  models:
+    - xgboost
+    - random_forest
+
+# ---------------------------------------------------------------------------
+# MLFLOW
+# ---------------------------------------------------------------------------
+mlflow:
+  tracking_uri: http://localhost:5002   # requires: docker compose up -d (from omics_ml_pipeline/)
+  experiment_name: sonfh_classification

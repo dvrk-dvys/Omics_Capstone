@@ -15,8 +15,13 @@
 .vscode/
 *.iml
 
-# ----- Claude Code -----
+# ----- Claude Code / Anthropic -----
 .claude/
+.anthropic/
+CLAUDE.md
+.claude_files/
+claude_output*/
+claude_cache*/
 
 # ----- Python -----
 __pycache__/
@@ -42,8 +47,23 @@ venv/
 *.Rproj
 .Renviron
 
+# ----- omics_ml_pipeline app -----
+# GEO source copies (large, re-copyable from data/femoral_head_necrosis/)
+omics_ml_pipeline/app/data/GSE123568_series_matrix.txt.gz
+omics_ml_pipeline/app/data/GSE123568_family.soft.gz
+# App pipeline outputs (generated — do not commit)
+omics_ml_pipeline/app/data/parsed/
+omics_ml_pipeline/app/data/feature_selection/
+omics_ml_pipeline/app/data/models/
+omics_ml_pipeline/app/data/plots/
+omics_ml_pipeline/app/data/biomarker_shortlist.csv
+# MLflow tracking
+omics_ml_pipeline/mlruns/
+omics_ml_pipeline/mlartifacts/
+omics_ml_pipeline/mlflow.db
+
 # ----- Large / Generated Data Files -----
-# Split output directories (29k+ files — never commit these)
+# Split output directories (29k five files — never commit these)
 data/split_output_*/
 split_output_*/
 

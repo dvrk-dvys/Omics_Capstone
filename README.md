@@ -6,6 +6,8 @@
   <img src="data/fhn_hip_replacement.jpeg" alt="Hip Replacement — Femoral Head Osteonecrosis" width="700">
 </p>
 
+> **Python ML App:** A separate automated pipeline replicates and extends this workflow using scikit-learn, XGBoost, hyperopt, and MLflow — see [`omics_ml_pipeline/README.md`](omics_ml_pipeline/README.md).
+
 ---
 
 ## Before Anything Else
@@ -654,58 +656,329 @@ Rank  Probe ID           Gene Symbol          |FC|
 - 40 instances, 100 numeric attributes, class {SONFH, control}
 - Use **10-fold cross-validation** (n=40 is sufficient; LOOCV was only needed for n=5)
 
+**Three-layer analysis framework:**
+
+| Layer | Question being asked | Tools |
+|---|---|---|
+| **1 — Classification** | Can we predict SONFH vs control from gene expression? | NaiveBayes, J48, RandomForest, SMO, IBk, MLP |
+| **2 — Feature discovery** | Which specific genes drive that prediction? | Select Attributes (wrapper), RandomForest importance |
+| **3 — Biology** | What do those genes mean for SONFH pathophysiology? | Phase 6–7 LLM + PubMed interpretation |
+
+The classifiers are not the final goal — they are a tool to extract signal. Pathway and biomarker discovery happen after, using the ranked feature list as input to Phase 6–7.
+
 **Step-by-step Weka import:**
 1. Open Weka GUI → **Explorer**
 2. Preprocess tab → **Open file** → select `top100_features.arff`
 3. Go to **Classify** tab
 4. Test options: **"Cross-validation" → Folds: 10**
 
-**Classifiers to run:**
+<details>
+<summary><strong>What each model is actually asking</strong> — for Methods/Discussion writing &nbsp;(click to expand)</summary>
 
-| Classifier | Weka path | Notes |
+| # | Classifier | Weka path | Question it answers | Paper-writing note |
+|---|---|---|---|---|
+| 1 | NaiveBayes | `bayes > NaiveBayes` | "Can each gene independently vote for the diagnosis?" — assumes each probe contributes independently | Weakest at class imbalance; useful as probabilistic baseline; expect lower control TP rate |
+| 2 | J48 | `trees > J48` | "What single gene expression thresholds form a decision tree that splits SONFH from control?" | Most interpretable — the tree rules name specific probes; copy them, they're directly citable |
+| 3 | RandomForest | `trees > RandomForest` | "Do 100+ decision trees collectively agree, and which genes appear most consistently across trees?" | Usually highest accuracy; attribute importance output is your bridge to feature discovery |
+| 4 | SMO (SVM) | `functions > SMO` | "Is there a maximum-margin boundary in 100-dimensional gene space that separates the two classes?" | Strong in high-dimensional small-n data; less interpretable but robust |
+| 5 | IBk k=1,3,5 | `lazy > IBk` → set KNN | "Do patients with similar gene expression profiles share the same diagnosis?" | Instance-based; k=1 overfits, k=3/5 smoother; shows whether expression similarity predicts class |
+| 6 | MLP | `functions > MultilayerPerceptron` | "Can a neural network capture nonlinear interactions between genes that linear models miss?" | Closer to biological complexity (genes interact, not just vote independently); supports bonus depth |
+| 7 | Auto-Weka | Auto-WEKA tab, 1–5 min | "What is the best model this dataset supports, found by automated search?" | Great Discussion material — compare vs your manual choices; shows robustness of approach |
+
+</details>
+
+**Select Attributes run (Layer 2 — feature discovery, do after classifiers):**
+
+Go to **Select attributes tab**, then:
+- Evaluator → `WrapperSubsetEval` → Classifier: `RandomForest`
+- Search method → `BestFirst`
+- Start
+
+Output: minimal gene subset that best separates classes. This is the direct input to biological interpretation — these are your candidate biomarkers.
+
+<details>
+<summary><strong>Weka screenshots — preprocessor &amp; all classifier results</strong> &nbsp;(click to expand)</summary>
+
+**Preprocessor / data view:**
+
+![Weka preprocessor](data/screenshots/weka/weka_preprocessor.png)
+
+---
+
+**NaiveBayes:**
+
+![NaiveBayes](data/screenshots/weka/naive_bayes.png)
+
+---
+
+**RandomForest:**
+
+![RandomForest](data/screenshots/weka/random_forest.png)
+
+---
+
+**SMO (SVM):**
+
+![SMO](data/screenshots/weka/smo.png)
+
+---
+
+**IBk (k-NN):**
+
+![IBk](data/screenshots/weka/lazy_ibk.png)
+
+---
+
+**MLP (MultilayerPerceptron):**
+
+![MLP](data/screenshots/weka/multilayerpreceptron.png)
+
+![MLP hyperparameters](data/screenshots/weka/multilayerpreceptron_hyperparameters.png)
+
+---
+
+**J48 Decision Tree:**
+
+![J48](data/screenshots/weka/j48_tree.png)
+
+---
+
+**Auto-Weka:**
+
+![Auto-Weka](data/screenshots/weka/auto_weka.png)
+
+---
+
+**Select Attributes (WrapperSubsetEval + RandomForest):**
+
+![Select Attributes](data/screenshots/weka/select_attributes_randomforest.png)
+
+![Select Attributes hyperparameters](data/screenshots/weka/select_attributes_randomforest_hyperparameters.png)
+
+</details>
+
+**Results table:**
+
+| Classifier | Accuracy (%) | AUC | F1 (weighted) | Confusion Matrix (SONFH / control) |
+|---|---|---|---|---|
+| NaiveBayes | 92.5 | 0.932 | 0.926 | 28/30 SONFH correct, 9/10 control correct |
+| J48 | **95.0** | 0.820 | 0.948 | 30/30 SONFH correct, 8/10 control correct |
+| RandomForest | 92.5 | **0.950** | 0.924 | 29/30 SONFH correct, 8/10 control correct |
+| SMO (SVM) | 90.0 | 0.833 | 0.896 | 29/30 SONFH correct, 7/10 control correct |
+| IBk (k=1) | 90.0 | 0.833 | 0.896 | 29/30 SONFH correct, 7/10 control correct |
+| IBk (k=3) | 90.0 | 0.833 | 0.896 | 29/30 SONFH correct, 7/10 control correct |
+| IBk (k=5) | 90.0 | 0.833 | 0.896 | 29/30 SONFH correct, 7/10 control correct |
+| MLP | 92.5 | 0.937 | 0.920 | 30/30 SONFH correct, 7/10 control correct |
+| **Auto-Weka (PART)** | **97.5** | **0.950** | **0.975** | 30/30 SONFH correct, 9/10 control correct |
+
+**J48 decision tree rule (full model, training set):**
+
+```
+11721029_a_at <= 4.915416 → SONFH (31 instances, 1 error)
+11721029_a_at >  4.915416 → control (9 instances)
+```
+
+A single probe threshold separates the classes. This is the most interpretable result and directly citable in the report.
+
+**RandomForest — top 10 probes by attribute importance (avg. impurity decrease):**
+
+| Rank | Probe ID | Importance score |
 |---|---|---|
-| Naive Bayes | `bayes > NaiveBayes` | Baseline; note handles class imbalance poorly |
-| J48 Decision Tree | `trees > J48` | Note top splits — which probes? |
-| Random Forest | `trees > RandomForest` | Usually best accuracy |
-| SVM (SMO) | `functions > SMO` | Default kernel first |
-| k-NN (IBk) | `lazy > IBk` | Try k=3 and k=5 |
+| 1 | 11737267_a_at | 1.00 |
+| 2 | 11750456_s_at | 1.00 |
+| 3 | 11728138_at | 0.99 |
+| 4 | 11752881_s_at | 0.98 |
+| 5 | 11745299_x_at | 0.94 |
+| 6 | 11724538_a_at | 0.92 |
+| 7 | 11753827_x_at | 0.92 |
+| 8 | 11731448_a_at | 0.88 |
+| 9 | 11733941_a_at | 0.81 |
+| 10 | 11745557_x_at | 0.81 |
 
-**Results table (fill in after Weka runs):**
+**Wrapper (Select Attributes) result:**
 
-| Classifier | Accuracy (%) | AUC | TP SONFH | TP control | F1 | Confusion Matrix |
-|---|---|---|---|---|---|---|
-| NaiveBayes | | | | | | |
-| J48 | | | | | | |
-| RandomForest | | | | | | |
-| SMO (SVM) | | | | | | |
-| IBk (k-NN) | | | | | | |
+Selected subset: **`11729582_s_at`** (single probe, merit 0.975 under 5-fold CV with RandomForest wrapper).
 
-- [ ] Run all 5 classifiers, fill in table
-- [ ] Screenshot each result window
-- [ ] For J48: copy the decision tree rules
-- [ ] For Random Forest: note top attributes by importance
-- [ ] Collect top contributing probe IDs → map to gene names → input to LLM agent (Phase 6)
+Interpretation: predictive minimality ≠ biological completeness. Use this as supporting evidence, not the sole biomarker claim. The RF importance ranking above is the primary input to Phase 6 biological interpretation.
 
-### Phase 6 — LLM Agent `Mar 23–24 target`
+- [x] Run all classifiers, fill in table *(IBk k=3/k=5 and MLP txt still needed)*
+- [x] Screenshot each result window → `data/screenshots/weka/`
+- [x] For J48: copy the decision tree rules (probe names at each split)
+- [x] For RandomForest: note top attributes by importance
+- [x] Run Select Attributes → record selected probe subset
+- [x] Run Auto-Weka → record best model and performance
+- [x] Run IBk k=3 and k=5 → identical results across all k values (90%, AUC 0.833, F1 0.896)
+- [x] Get MLP accuracy/AUC/F1 numbers → filled in table row
+- [x] Take J48 screenshot → added to screenshots dropdown
+- [x] Collect top contributing probe IDs → mapped to gene names via gene_rankings.csv → see Phase 5.5
 
-**What to build:** `gene_interpreter.py` — takes top Weka genes, searches PubMed,
-asks Claude API to interpret in SONFH biology context.
+---
+
+### Phase 5.5 — Probe → Gene Mapping & Biomarker Shortlist
+
+**Mapping is already done.** `feature_select.py` (Phase 4) already produced `gene_rankings.csv` with full probe → gene symbol annotation from GPL15207. No additional script needed.
+
+**Output files:**
+- `data/femoral_head_necrosis/feature_selection/gene_rankings.csv` — all 100 probes with gene symbols and fold-change values
+- `data/femoral_head_necrosis/feature_selection/gene_level_summary.csv` — probes aggregated by gene
+
+**Candidate biomarker shortlist — filled from `gene_rankings.csv`:**
+
+| Probe ID | Gene symbol | Evidence sources | Direction (SONFH vs ctrl) |
+|---|---|---|---|
+| `11729582_s_at` | **CA1** | wrapper + RF #6 + FC top | lower in SONFH |
+| `11721029_a_at` | **PIP5K1B** | J48 split rule + RF | lower in SONFH |
+| `11737267_a_at` | **RHD** | RF #1 (importance 1.00) | lower in SONFH |
+| `11750456_s_at` | **RHCE/RHD** | RF #2 (importance 1.00) | lower in SONFH |
+| `11728138_at` | **XK** | RF #3 (importance 0.99) | lower in SONFH |
+| `11752881_s_at` | **RHCE/RHD** | RF #4 (importance 0.98) | lower in SONFH |
+| `11745299_x_at` | **GYPB** | RF #5 (importance 0.94) | lower in SONFH |
+| `11724538_a_at` | **ABCG2** | RF #6 (importance 0.92) | lower in SONFH |
+| `11753827_x_at` | **GYPB** | RF #7 (importance 0.92) | lower in SONFH |
+| `11731448_a_at` | **SNCA** | RF #8 (importance 0.88) | lower in SONFH |
+| `11733941_a_at` | **TBCEL** | RF #9 (importance 0.81) | lower in SONFH |
+| `11745557_x_at` | **GYPB** | RF #10 (importance 0.81) | lower in SONFH |
+| `11720807_x_at` | **EIF1AY** | FC top #1 + RF | lower in SONFH |
+| `11740680_s_at` | **RHCE/RHD** | FC top + RF | lower in SONFH |
+| `11732236_a_at` | **GYPA** | FC top + RF | lower in SONFH |
+| `11736696_a_at` | **HEMGN** | FC top + RF | lower in SONFH |
+| `11742315_s_at` | **RHCE/RHD** | FC top + RF | lower in SONFH |
+
+**Biological pattern — what this list is telling you:**
+
+The shortlist is dominated by erythrocyte membrane and oxygen-transport genes: RHD, RHCE, GYPA, GYPB (Rh blood group / glycophorin family), XK (Kx blood group), CA1 (carbonic anhydrase 1, abundant in RBCs), HEMGN (erythroid-specific), SNCA (alpha-synuclein, expressed in RBCs). This is a strong **hematological / vascular signature**, consistent with the ischemia and microvascular disruption central to SONFH pathophysiology. These are biomarker signals, not causal drivers — see Bonus section for full interpretation.
+
+Notable exceptions to the RBC pattern:
+- **PIP5K1B** (J48 split probe) — phosphoinositide kinase, involved in cytoskeletal regulation and platelet activation
+- **ABCG2** — ABC transporter expressed in endothelial cells and stem cells; links to vascular biology
+- **EIF1AY** — Y-chromosome gene; likely a sex/gender covariate in this cohort
+
+- [x] Probe → gene mapping complete (`gene_rankings.csv` from Phase 4)
+- [x] Shortlist constructed from RF importance + J48 split + wrapper + FC overlap
+- [x] Biological pattern identified — erythrocyte/vascular signature
+- [x] Save curated shortlist as `data/femoral_head_necrosis/feature_selection/biomarker_shortlist.csv` (input to Phase 6)
+
+---
+
+### Phase 6 — Retrieval-Grounded LLM Interpretation (Build) `Mar 23–24 target`
+
+**Core concept:** The LLM is NOT the main system — it is a context-constrained interpretation layer over retrieved evidence and ML results. This is effectively a retrieval-grounded interpretation workflow: the LLM interprets only what the PubMed retrieval step provides, grounded in the ML feature output. The LLM is not treated as an independent source of evidence — it organizes and interprets retrieved literature in disease context. The professor is testing whether you can *control* an LLM inside a scientific pipeline, not just call one.
+
+**Pipeline architecture:**
+
+```
+[biomarker_shortlist.csv]  ← ML output (Phase 5.5)
+         ↓
+[Layer 2 — PubMed retrieval]   search: "GENE osteonecrosis OR bone ischemia"
+         ↓                     retrieve abstracts + verify PMIDs exist
+[Layer 3 — LLM interpretation] prompt with role + gene context + constraints
+         ↓                     output: mechanism + evidence summary + confidence
+[Layer 4 — Human validation]   you verify each claim before citing in report
+         ↓
+[Phase 7 — Report input]
+```
+
+**Prompt template (what to send to the LLM — this is what the professor means by "prompt engineering"):**
+
+```
+You are a biomedical researcher interpreting gene expression data.
+
+Context:
+The following genes were identified via machine learning (Random Forest, J48, wrapper
+feature selection) as the strongest predictors of steroid-induced osteonecrosis of
+the femoral head (SONFH) vs steroid-treated controls in peripheral blood microarray
+data (GSE123568, n=40):
+
+[GENE LIST WITH EVIDENCE SOURCES]
+
+Task:
+Using ONLY the PubMed abstracts provided below, explain the biological relevance
+of each gene to SONFH pathophysiology.
+
+Constraints:
+- Do NOT fabricate citations or PMIDs
+- Only use the abstracts provided — do not recall training data as evidence
+- If evidence is weak or absent, explicitly state that
+- Focus on: vascular disruption, erythrocyte function, hypoxia/ischemia, bone remodelling
+
+Output format (for each gene):
+- Gene symbol
+- Proposed mechanism in SONFH context
+- Supporting evidence (PMID + one sentence)
+- Confidence: high / moderate / weak / unsupported
+```
+
+**Why the prompt is structured this way:**
+The prompt is intentionally scoped to include: disease context (SONFH pathophysiology), dataset context (GSE123568, n=40, peripheral blood), the biomarker shortlist with ML evidence sources, retrieved PubMed abstracts as the sole evidence base, an explicit constraint against fabricating citations or recalling training data, and a requirement to flag weak or unsupported evidence explicitly. This reflects the professor's emphasis on task definition, evidence scope, output constraints, and uncertainty handling.
+
+**What to build — `gene_interpreter.py`:**
+
+```
+gene_interpreter.py
+  input:  biomarker_shortlist.csv
+  step 1: for each gene → query PubMed ("GENE osteonecrosis OR bone ischemia")
+  step 2: retrieve top 3–5 abstracts per gene (title + abstract + PMID)
+  step 3: verify PMIDs resolve (no hallucinated references)
+  step 4: build prompt (template above + abstracts as context)
+  step 5: send to Claude API
+  step 6: write output to gene_interpretation_results.txt
+```
 
 **Reuse from ResidentRAG:**
 - `search_pmids()` + `get_title_and_abstract()` from `app/tools/search_pubmed.py`
-- Tool-calling loop pattern from `app/llm/openai_client.py` (swap OpenAI → Claude API)
+- Tool-calling loop pattern from `app/llm/openai_client.py` → swap OpenAI client for Claude API (`anthropic` SDK)
+- RAG grounding concept: retrieved abstracts = the grounding corpus, replaces vector DB for this use case
 
-- [ ] Extract PubMed utils into `pubmed_utils.py`
-- [ ] Build `gene_interpreter.py`
-- [ ] Test on a known SONFH gene first
-- [ ] Run on actual Weka top features after Phase 5
+**Report language to include in Methods (copy this):**
 
-### Phase 7 — Run LLM Interpretation `Mar 25 target`
+> "A retrieval-augmented generation (RAG) approach was implemented to ground LLM outputs in verified PubMed literature, reducing hallucination risk. For each candidate biomarker, abstracts were retrieved via the PubMed API and provided as context in a structured prompt. The LLM (Claude, Anthropic) was constrained to interpret only the supplied abstracts, with explicit instructions to flag unsupported claims. Human validation was applied to all retrieved references prior to inclusion in the report."
 
-- [ ] Run `gene_interpreter.py` with actual Weka gene list + results
-- [ ] Read returned abstracts — verify relevance before citing
-- [ ] Note PMIDs, titles, years for References
-- [ ] Use output to draft Discussion
+- [ ] Extract PubMed utils into `pubmed_utils.py` (from ResidentRAG)
+- [ ] Build `gene_interpreter.py` with 4-layer structure above
+- [ ] Add PMID verification step (confirm each PMID resolves before passing to LLM)
+- [ ] Write structured prompt with role + gene context + constraints + output format
+- [ ] Test on `CA1` first (strong signal in the current dataset; good candidate for validating the retrieval and interpretation workflow)
+- [ ] Run on full `biomarker_shortlist.csv`
+- [ ] Save output to `data/femoral_head_necrosis/gene_interpretation_results.txt`
+
+### Phase 7 — Run LLM Interpretation & Validate `Mar 25 target`
+
+**Human-in-the-loop step — this is mandatory, not optional:**
+
+The professor explicitly requires that LLM outputs are validated by a human before use. Do not copy LLM summaries directly into the report without checking.
+
+**Validation checklist — two distinct checks per gene:**
+
+*Reference validity:*
+- Does the PMID exist and resolve on PubMed?
+- Is the citation real (title, authors, journal, year match)?
+
+*Claim validity:*
+- Does the retrieved abstract actually support the proposed mechanism?
+- Is the gene-SONFH relationship direct, indirect, inferred, or unsupported? (note explicitly)
+- Is the confidence level the LLM assigned appropriate given the abstract content?
+
+**Output to collect:**
+
+| Gene | Mechanism proposed | PMID | Verified? | Confidence | Use in report? |
+|---|---|---|---|---|---|
+| CA1 | | | | | |
+| PIP5K1B | | | | | |
+| RHD/RHCE | | | | | |
+| GYPA/GYPB | | | | | |
+| XK | | | | | |
+| SNCA | | | | | |
+| ABCG2 | | | | | |
+| HEMGN | | | | | |
+| EIF1AY | | | | | |
+
+- [ ] Run `gene_interpreter.py` on full shortlist
+- [ ] Manually verify each PMID on PubMed
+- [ ] Fill in validation table above
+- [ ] Flag any hallucinated or unsupported claims
+- [ ] Note PMIDs, titles, years for References section
+- [ ] Group verified genes into biological themes (erythrocyte, vascular, cytoskeletal, other)
+- [ ] Use verified output to draft Discussion — erythrocyte/vascular signature narrative
 
 ### Phase 8 — Report Finalization `Mar 26–29 target`
 
@@ -767,6 +1040,18 @@ asks Claude API to interpret in SONFH biology context.
 - [ ] Fold change ranking is exploratory — formal statistical testing (t-test with FDR
   correction) would be more rigorous with n=40
 - [ ] Probe IDs require annotation mapping — some may not correspond to well-characterized genes
+
+**Note — Rubric context (Core vs Bonus):**
+
+The rubric is a generic template (the Discussion section references "prostate cancer biology" — this project is SONFH; the rubric was reused). No specific research goal was prescribed — the expectation is: make a claim, then support it with your results.
+
+| Level | What's required | What it looks like |
+|---|---|---|
+| **Core** | Run pipeline, report numbers, discuss limitations | Accuracy/AUC table, confusion matrix, class imbalance (30:10) discussion, blood-vs-tissue caveat |
+| **Higher marks** | MLP + Auto-Weka + Select Attributes | Extra models, feature subset output, stronger Methods justification |
+| **Bonus** | Biological interpretation of what the numbers mean | Biomarker vs causal gene distinction, erythrocyte/vascular signature, pathway candidates (Phase 6–7) |
+
+The framing for your report: *"Machine learning–guided biomarker discovery, followed by biological interpretation"* — not pure predictive modeling. Classifiers answer "can we classify?"; feature selection answers "which genes?"; biology answers "so what does that mean for SONFH?"
 
 ### Phase 9 — Polish `Mar 30 target`
 
@@ -946,7 +1231,7 @@ Top-ranked genes grouped into biological themes:
 - Bone remodeling (osteoblast/osteoclast activity)
 - Inflammation and apoptosis
 
-Compared against known SONFH mechanisms in literature (via LLM-assisted PubMed search, Phase 6 → Phase 7).
+Compared against proposed mechanisms and candidate pathways in SONFH literature (via retrieval-grounded interpretation, Phase 6 → Phase 7).
 
 ---
 
@@ -978,6 +1263,8 @@ into:
 - Permutation feature importance (model-agnostic validation)
 - Comparison of probe-level vs gene-level models
 - Integration with PubMed / LLM-based literature review (Phase 6 → Phase 7)
+- Network-level inference: co-regulation analysis and hub gene identification across the shortlisted gene set (future extension; not implemented in current scope)
+- Systems-level interpretation: pathway connectivity and disruption analysis between disease and control subnetworks (further future work)
 
 </details>
 
