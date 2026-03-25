@@ -21,6 +21,26 @@ import os
 import argparse
 
 from app.utils.io_utils import load_config
+
+
+def _next_run_id(config: dict) -> str:
+    """
+    Increment a persistent counter and return a zero-padded run prefix.
+    Stored at app/data/.run_counter so every pipeline execution gets a unique ID.
+    Example: 'r001_', 'r002_', ...
+    """
+    data_dir = os.path.dirname(config["paths"]["model_output_dir"])
+    os.makedirs(data_dir, exist_ok=True)
+    counter_path = os.path.join(data_dir, ".run_counter")
+
+    count = 1
+    if os.path.exists(counter_path):
+        with open(counter_path) as f:
+            count = int(f.read().strip()) + 1
+    with open(counter_path, "w") as f:
+        f.write(str(count))
+
+    return f"r{count:03d}_"
 from app.utils.logging_utils import get_logger
 from app.jobs import (
     ingest_job,
@@ -51,9 +71,12 @@ def main():
     args   = parse_args()
     config = load_config(args.config)
 
+    run_id = _next_run_id(config)
+
     log.info("=" * 60)
     log.info("Omics ML Pipeline — SONFH Biomarker Discovery")
     log.info(f"Config: {args.config}")
+    log.info(f"Run ID: {run_id.rstrip('_')}")
     log.info("=" * 60)
 
     # 1. Ingest
@@ -71,12 +94,12 @@ def main():
 
     # 4. Train + evaluate
     if not args.skip_train:
-        comparison_df = train_eval_job.run(config, selected_df)
+        comparison_df = train_eval_job.run(config, selected_df, run_id)
     else:
         log.info("Skipping training (--skip-train)")
 
     # 5. Biomarker shortlist
-    shortlist = biomarker_job.run(config, selected_df, fc_ranking, gene_map)
+    shortlist = biomarker_job.run(config, selected_df, fc_ranking, gene_map, run_id)
 
     # 6. LLM (optional)
     if args.llm:

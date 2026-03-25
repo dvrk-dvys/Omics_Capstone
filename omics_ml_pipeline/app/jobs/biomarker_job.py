@@ -24,6 +24,7 @@ def run(
     selected_df: pd.DataFrame,
     fc_ranking: pd.Series,
     gene_map: pd.Series,
+    run_id: str = "",
 ) -> pd.DataFrame:
     probe_cols = selected_df.columns[:-1].tolist()
     X = selected_df[probe_cols].values
@@ -63,6 +64,9 @@ def run(
     shortlist = shortlist.drop(columns=["rf_norm", "fc_norm"])
     shortlist = shortlist.sort_values("combined_score", ascending=False).reset_index(drop=True)
 
+    top_n = config.get("biomarker", {}).get("top_n", len(shortlist))
+    shortlist = shortlist.head(top_n)
+
     output_path = config["paths"]["biomarker_shortlist"]
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     shortlist.to_csv(output_path, index=False)
@@ -71,7 +75,7 @@ def run(
     log.info("\nTop 10 candidates:")
     log.info(shortlist[["probe_id", "gene_symbol", "combined_score"]].head(10).to_string(index=False))
 
-    with mlflow.start_run(run_name="biomarker_shortlist"):
+    with mlflow.start_run(run_name=f"{run_id}biomarker_shortlist"):
         mlflow.set_tag("stage", "biomarker")
         mlflow.log_metric("n_probes", len(shortlist))
 

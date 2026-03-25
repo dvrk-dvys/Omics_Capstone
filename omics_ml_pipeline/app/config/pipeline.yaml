@@ -18,7 +18,7 @@ paths:
   # Feature selection outputs
   feature_select_dir:  app/data/feature_selection
   gene_rankings:       app/data/feature_selection/gene_rankings.csv
-  top_features_csv:    app/data/feature_selection/top_features.csv
+  top_features_csv:    app/data/feature_selection/top50_features.csv
 
   # Model outputs
   model_output_dir:  app/data/models
@@ -31,6 +31,12 @@ paths:
   biomarker_shortlist: app/data/biomarker_shortlist.csv
 
 # ---------------------------------------------------------------------------
+# BIOMARKER
+# ---------------------------------------------------------------------------
+biomarker:
+  top_n: 20    # probes to include in shortlist (covers ~14 unique genes at top 20)
+
+# ---------------------------------------------------------------------------
 # PREPROCESSING
 # ---------------------------------------------------------------------------
 preprocessing:
@@ -40,7 +46,7 @@ preprocessing:
 # FEATURE SELECTION
 # ---------------------------------------------------------------------------
 feature_selection:
-  top_n: 100
+  top_n: 50
   method: fc       # 'fc' = fold-change | 'var' = variance
 
 # ---------------------------------------------------------------------------
@@ -66,3 +72,13 @@ hyperopt:
 mlflow:
   tracking_uri: http://localhost:5002   # requires: docker compose up -d (from omics_ml_pipeline/)
   experiment_name: sonfh_classification
+
+# ---------------------------------------------------------------------------
+# LLM  (Phase 6 — enable with: python -m app.main --llm)
+# ---------------------------------------------------------------------------
+llm:
+  model: gpt-4o                          # OpenAI model ID
+  api_key_env: OPENAI_API_KEY            # env var name — never hardcode the key
+  pubmed_query_template: "{gene} osteonecrosis OR bone ischemia OR avascular necrosis"
+  max_abstracts_per_gene: 3              # PubMed abstracts to retrieve per gene
+  output_path: app/data/llm_interpretation.csv   # final output for Phase 7 report
