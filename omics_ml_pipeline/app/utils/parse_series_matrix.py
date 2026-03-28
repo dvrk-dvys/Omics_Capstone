@@ -53,14 +53,16 @@ import sys
 import os
 import gzip
 import io
+import pathlib
 import pandas as pd
 
 
 # ---------------------------------------------------------------------------
-# PATHS
+# PATHS  (relative to app/ — works from any working directory)
 # ---------------------------------------------------------------------------
-DEFAULT_INPUT  = "/Users/jordanharris/Code/Omics_Capstone/data/femoral_head_necrosis/GSE123568_series_matrix.txt.gz"
-DEFAULT_OUTPUT = "/Users/jordanharris/Code/Omics_Capstone/data/femoral_head_necrosis/parsed/parsed_matrix.csv"
+_APP_DIR       = pathlib.Path(__file__).resolve().parent.parent
+DEFAULT_INPUT  = str(_APP_DIR / "data" / "input"  / "GSE123568_series_matrix.txt.gz")
+DEFAULT_OUTPUT = str(_APP_DIR / "data" / "output" / "parsed" / "parsed_matrix.csv")
 
 
 # ---------------------------------------------------------------------------
@@ -171,22 +173,29 @@ def parse_data_matrix(path: str) -> pd.DataFrame:
 # ---------------------------------------------------------------------------
 # ASSIGN CLASS LABELS
 # ---------------------------------------------------------------------------
-def assign_classes(gsm_ids: list[str], disease_vals: list[str]) -> dict[str, str]:
+def assign_classes(
+    gsm_ids: list[str],
+    disease_vals: list[str],
+    disease_label: str = "SONFH",
+    control_label: str = "control",
+) -> dict[str, str]:
     """
-    Map each GSM accession ID to a class label (SONFH or control).
+    Map each GSM accession ID to a class label.
 
     Uses the 'disease:' characteristics field, NOT the sample title.
     Titles for this dataset say 'control group' / 'disease group' which is ambiguous;
     the characteristics field 'disease: SONFH' / 'disease: non-SONFH' is authoritative.
 
     Detection logic (case-insensitive):
-      'sonfh' but not 'non-sonfh'  →  'SONFH'
-      'non-sonfh'                  →  'control'
+      'sonfh' but not 'non-sonfh'  →  disease_label
+      'non-sonfh'                  →  control_label
       neither                      →  'unknown'  (warning printed)
 
     Parameters:
-      gsm_ids      : list of GSM accession IDs
-      disease_vals : list of disease characteristic values in matching order
+      gsm_ids       : list of GSM accession IDs
+      disease_vals  : list of disease characteristic values in matching order
+      disease_label : output label for the disease group (from config)
+      control_label : output label for the control group (from config)
 
     Returns:
       dict mapping GSM ID → class label string
@@ -195,9 +204,9 @@ def assign_classes(gsm_ids: list[str], disease_vals: list[str]) -> dict[str, str
     for gsm, val in zip(gsm_ids, disease_vals):
         v = val.lower().strip()
         if v == "sonfh":
-            class_map[gsm] = "SONFH"
+            class_map[gsm] = disease_label
         elif "non-sonfh" in v or v == "non_sonfh" or v == "control":
-            class_map[gsm] = "control"
+            class_map[gsm] = control_label
         else:
             class_map[gsm] = "unknown"
             print(f"  WARNING: unrecognised disease value '{val}' for {gsm}")
@@ -281,7 +290,7 @@ if __name__ == "__main__":
 
     if not os.path.exists(input_path):
         print(f"ERROR: Input file not found: {input_path}")
-        print("Download GSE123568_series_matrix.txt.gz from GEO and place it at that path.")
+        print("Download the series matrix file from GEO and place it in app/data/input/")
         sys.exit(1)
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)

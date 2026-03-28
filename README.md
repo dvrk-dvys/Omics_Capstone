@@ -76,6 +76,27 @@ as a study design limitation. Because the classes are imbalanced, results should
 
 ---
 
+## Dataset Choice & Modality Rationale (Microarray vs RNA-seq)
+
+> **Capstone report reminder:** Discuss this section explicitly in the Methods and/or Discussion — explain why microarray was chosen over RNA-seq and acknowledge the scientific assumptions and limitations below.
+
+This project uses GSE123568, a microarray-based gene expression dataset (30 SONFH vs 10 controls), selected over available RNA-seq datasets due to sample size, structure, and suitability for supervised machine learning.
+
+Although RNA-seq (especially single-cell RNA-seq) provides higher resolution and enables discovery of novel transcripts and cell-type–specific expression patterns, the available RNA-seq datasets for femoral head necrosis were limited in patient-level sample size (typically n < 15) and often involved single-cell designs, where thousands of cells are derived from only a small number of biological specimens. In such cases, individual cells are not statistically independent samples, making them less appropriate for standard classification and biomarker ranking workflows.
+
+In contrast, microarray data measures gene expression using predefined probes across a fixed gene set, producing a structured matrix of samples × genes that is well-suited for traditional machine learning pipelines (e.g., Weka, feature selection, classification). The larger sample size (n = 40) improves statistical stability, reduces overfitting risk, and enables more reliable cross-sample comparisons.
+
+This choice introduces important scientific assumptions:
+
+- **Feature space constraint:** Microarrays only measure known genes represented by probes, so novel transcripts or isoforms cannot be discovered (unlike RNA-seq).
+- **Quantification model:** Expression values are relative and probe-based, with a narrower dynamic range compared to RNA-seq counts.
+- **Biological resolution:** Data reflects bulk expression across mixed cell populations, rather than cell-type–specific signals available in single-cell RNA-seq.
+- **Statistical independence:** Each sample corresponds to a distinct patient, supporting valid supervised learning assumptions.
+
+Despite these limitations, the downstream analytical framework (normalization → feature selection → classification → biomarker interpretation) is largely modality-agnostic, and microarray data remains a robust and widely accepted platform for biomarker discovery. The selected dataset therefore provides a strong balance between biological relevance and statistical reliability for this capstone.
+
+---
+
 ## Getting Started — Data Download
 
 > **Data is not included in this repository.** All raw and processed data files are gitignored.
@@ -88,17 +109,23 @@ as a study design limitation. Because the classes are imbalanced, results should
 2. Scroll to **"Download family"** section
 3. Download **Series Matrix File(s)** (TXT format) — this is the main data file
 4. Download **SOFT formatted family file(s)** — study and sample metadata
-5. Place both files in: `data/femoral_head_necrosis/`
+5. Place both files in: `omics_ml_pipeline/app/data/input/`
 
 **Expected structure after download:**
 ```
-data/femoral_head_necrosis/
+omics_ml_pipeline/app/data/input/
 ├── GSE123568_series_matrix.txt.gz   ← primary data + sample labels
-└── GSE123568_family.soft.gz         ← metadata (optional but useful)
+├── GSE123568_family.soft.gz         ← probe → gene symbol annotations
+└── GSE123568_abstract.txt           ← dataset summary for LLM context (already in repo)
 ```
 
 **Skip:** `GSE123568_RAW.tar` (71.8 MB CEL files) — raw Affymetrix files requiring
 R/oligo to process. The series matrix already contains RMA-normalized log2 values.
+
+> **Swapping datasets:** To run the pipeline on a different GEO dataset, place the new
+> series matrix and SOFT files in `app/data/input/`, update the filenames in
+> `app/config/pipeline.yaml` under `paths.series_matrix` and `paths.soft_file`, and
+> add a matching `<dataset>_abstract.txt` for LLM context.
 
 ---
 
@@ -108,8 +135,7 @@ Run these three scripts in order from the repo root.
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│  RAW DATA                                                               │
-│  data/femoral_head_necrosis/                                            │
+│  INPUT  omics_ml_pipeline/app/data/input/                               │
 │  ├── GSE123568_series_matrix.txt.gz  (40 samples × ~49,000 probes)     │
 │  └── GSE123568_family.soft.gz        (probe → gene symbol annotations) │
 └───────────────────────────────┬─────────────────────────────────────────┘
@@ -118,7 +144,7 @@ Run these three scripts in order from the repo root.
                                  │
                                  ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
-│  data/femoral_head_necrosis/parsed/parsed_matrix.csv                    │
+│  app/data/output/parsed/parsed_matrix.csv                               │
 │  40 rows × 49,293 probe columns + class label                           │
 └───────────────────────────────┬─────────────────────────────────────────┘
                                  │
@@ -126,7 +152,7 @@ Run these three scripts in order from the repo root.
                                  │
                                  ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
-│  data/femoral_head_necrosis/parsed/preprocessed_matrix.csv              │
+│  app/data/output/parsed/preprocessed_matrix.csv                         │
 │  40 rows × 11,687 probes  (37,606 low-variance probes removed)          │
 └───────────────────────────────┬─────────────────────────────────────────┘
                                  │
@@ -134,12 +160,11 @@ Run these three scripts in order from the repo root.
                                  │
                                  ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
-│  OUTPUTS                                                                │
-│  data/femoral_head_necrosis/feature_selection/                          │
-│  ├── top100_features.arff    ← load directly into Weka Explorer         │
-│  └── gene_rankings.csv       ← all probes ranked by |fold change|       │
-│                                                                         │
-│  data/femoral_head_necrosis/EDA/  ← 6 exploratory plots                │
+│  OUTPUT  app/data/output/                                               │
+│  ├── feature_selection/                                                 │
+│  │   ├── top100_features.arff  ← load directly into Weka Explorer       │
+│  │   └── gene_rankings.csv     ← all probes ranked by |fold change|     │
+│  └── plots/  ← 6 exploratory plots                                     │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -150,7 +175,7 @@ Run these three scripts in order from the repo root.
 python3 omics_ml_pipeline/app/utils/parse_series_matrix.py
 ```
 
-**Output → `data/femoral_head_necrosis/parsed/parsed_matrix.csv`**
+**Output → `omics_ml_pipeline/app/data/output/parsed/parsed_matrix.csv`**
 Shape: 40 rows × (~49k probe columns + class)
 
 ```bash
@@ -160,7 +185,7 @@ Shape: 40 rows × (~49k probe columns + class)
 python3 omics_ml_pipeline/app/utils/preprocess.py
 ```
 
-**Output → `data/femoral_head_necrosis/parsed/preprocessed_matrix.csv`**
+**Output → `omics_ml_pipeline/app/data/output/parsed/preprocessed_matrix.csv`**
 Shape: 40 rows × (filtered probes + class)
 
 ```bash
@@ -170,12 +195,12 @@ Shape: 40 rows × (filtered probes + class)
 python3 omics_ml_pipeline/app/utils/feature_select.py
 ```
 
-**Output → `data/femoral_head_necrosis/feature_selection/`**
+**Output → `omics_ml_pipeline/app/data/output/feature_selection/`**
 - `top100_features.arff` — import directly into Weka Explorer
 - `top100_features.csv` — same data in CSV form
 - `gene_rankings.csv` — all probes ranked by |FC| and variance
 
-**Output → `data/femoral_head_necrosis/EDA/`** — see EDA section below
+**Output → `omics_ml_pipeline/app/data/output/plots/`** — see EDA section below
 
 > All generated files are gitignored. Fully reproducible by running the three scripts above in order.
 
@@ -600,10 +625,10 @@ Omics_Capstone/
 | 2 | Data Acquisition — GSE123568 download | ✅ Done | ✅ Done |
 | 3 | Preprocessing — parse + filter | ✅ Done | ✅ Done |
 | 4 | Feature Selection | ✅ Done | ✅ Done |
-| 5 | Weka Analysis | Mar 22 | ⬜ Next |
-| 6 | LLM Agent build & test | Mar 23–24 | ⬜ |
-| 7 | Run LLM Interpretation | Mar 25 | ⬜ |
-| 8 | Report Writing | Mar 26–29 | ⬜ |
+| 5 | Weka Analysis | ✅ Done | ✅ Done |
+| 6 | LLM Agent build & test | ✅ Done | ✅ Done |
+| 7 | Run LLM Interpretation | ✅ Done | ✅ Done |
+| 8 | Report Writing | Mar 30 | ⬜ Next |
 | 9 | Polish & final checks | Mar 30 | ⬜ |
 | — | **Submit before March 31 (certificates)** | Mar 31 | Apr 30 hard deadline |
 
@@ -1013,7 +1038,7 @@ The shortlist is capped at 20 probes — a deliberate cutoff chosen to match the
 
 ---
 
-### Phase 6 — Retrieval-Grounded LLM Interpretation `🔜 implement tonight`
+### Phase 6 — Retrieval-Grounded LLM Interpretation `✅ DONE`
 
 **Core concept:** The LLM is NOT the main system — it is a context-constrained interpretation layer over retrieved evidence and ML results. This is effectively a retrieval-grounded interpretation workflow: the LLM interprets only what the PubMed retrieval step provides, grounded in the ML feature output. The LLM is not treated as an independent source of evidence — it organizes and interprets retrieved literature in disease context. The professor is testing whether you can *control* an LLM inside a scientific pipeline, not just call one.
 
@@ -1079,13 +1104,13 @@ llm_job.py
   step 6: write output to app/data/llm_interpretation.csv
 ```
 
-- [ ] Implement PubMed retrieval (NCBI E-utilities — no API key needed for low-volume use)
-- [ ] Add PMID verification step
-- [ ] Build structured prompt with constraints (interpret abstracts only, flag unsupported claims)
-- [ ] Call OpenAI API via `openai` SDK (`gpt-4o`)
-- [ ] Write `app/data/llm_interpretation.csv` — gene, mechanism, evidence strength, PMIDs
-- [ ] Test on `CA1` first (strong signal, good retrieval target)
-- [ ] Run on full 20-probe shortlist
+- [x] Implement PubMed retrieval (NCBI E-utilities — no API key needed for low-volume use)
+- [x] Add PMID verification step
+- [x] Build structured prompt with constraints (interpret abstracts only, flag unsupported claims)
+- [x] Call OpenAI API via `openai` SDK (`gpt-4o`)
+- [x] Write per-gene JSON outputs to `app/data/output/llm_outputs/` (10 genes completed)
+- [x] Test on `CA1` first (strong signal, good retrieval target)
+- [x] Run on full shortlist — 10 gene JSON files written
 - [ ] Human validation before any output goes into the report
 
 ### Phase 7 — Run LLM Interpretation & Validate `after Phase 6`

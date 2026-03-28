@@ -11,12 +11,13 @@ All runs visible in MLflow UI at http://localhost:5002
 
 import io
 import os
+import time
 import logging
 import contextlib
 import pandas as pd
 import numpy as np
 import mlflow
-from rich.progress import track
+from rich.progress import track, Progress, BarColumn, TextColumn, TimeElapsedColumn, TimeRemainingColumn
 from sklearn.model_selection import RepeatedStratifiedKFold, cross_validate, StratifiedKFold
 from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestClassifier
@@ -26,9 +27,9 @@ from hyperopt import fmin, tpe, Trials, STATUS_OK, space_eval
 # Suppress MLflow's per-run URL banners
 logging.getLogger("mlflow").setLevel(logging.WARNING)
 
-from app.models.baseline_models import BASELINE_MODELS, HYPEROPT_SPACES, make_pipeline
+from app.models.baseline_models import get_baseline_models, get_hyperopt_spaces, make_pipeline
 from app.utils.mlflow_utils import setup_mlflow
-from app.utils.logging_utils import get_logger
+from app.utils.logging_utils import get_logger, console
 
 log = get_logger("train_eval_job")
 
@@ -41,7 +42,7 @@ def prepare_data(selected_df: pd.DataFrame):
     X = selected_df[probe_cols].values
     le = LabelEncoder()
     y = le.fit_transform(selected_df["class"].values)
-    log.info(f"Classes: {list(le.classes_)}  (encoded 0/1)")
+    log.info(f"🏷️  Classes: {list(le.classes_)}  (encoded 0/1)")
     return X, y, probe_cols.tolist()
 
 
@@ -85,7 +86,10 @@ def _eval_cv(
             }
             mlflow.log_params(loggable)
 
+        t0 = time.perf_counter()
         scores = cross_validate(model, X, y, cv=cv, scoring=SCORING)
+        duration_s = round(time.perf_counter() - t0, 2)
+
         metrics = {
             "accuracy_mean":          round(float(scores["test_accuracy"].mean()), 4),
             "accuracy_std":           round(float(scores["test_accuracy"].std()),  4),
@@ -95,6 +99,7 @@ def _eval_cv(
             "f1_weighted_std":        round(float(scores["test_f1_weighted"].std()),  4),
             "balanced_accuracy_mean": round(float(scores["test_balanced_accuracy"].mean()), 4),
             "balanced_accuracy_std":  round(float(scores["test_balanced_accuracy"].std()),  4),
+            "duration_s":             duration_s,
         }
         mlflow.log_metrics(metrics)
 
@@ -113,9 +118,13 @@ def run_baseline(X: np.ndarray, y: np.ndarray, config: dict, run_id: str = "") -
         random_state=config["training"]["random_state"],
     )
 
+    project = config.get("project", {})
+    scale_pos_weight = project.get("n_disease", 30) / project.get("n_control", 10)
+    baseline_models = get_baseline_models(scale_pos_weight)
+
     results = []
-    for name, model in track(BASELINE_MODELS.items(), description="Baseline models", total=len(BASELINE_MODELS)):
-        log.info(f"  {name}")
+    for name, model in track(baseline_models.items(), description="Baseline models", total=len(baseline_models), console=console):
+        log.info(f"  🤖 {name}")
         pipeline = make_pipeline(name, model)
         metrics = _eval_cv(
             pipeline, X, y, cv, config,
@@ -125,7 +134,7 @@ def run_baseline(X: np.ndarray, y: np.ndarray, config: dict, run_id: str = "") -
             source="baseline_default",
         )
         results.append({"model": f"baseline_{name}", "source": "baseline_default", **metrics})
-        log.info(f"    acc={metrics['accuracy_mean']:.3f}  auc={metrics['roc_auc_mean']:.3f}")
+        log.info(f"    📈 acc={metrics['accuracy_mean']:.3f}  auc={metrics['roc_auc_mean']:.3f}")
 
     return pd.DataFrame(results).sort_values("roc_auc_mean", ascending=False)
 
@@ -145,49 +154,65 @@ def run_hyperopt(X: np.ndarray, y: np.ndarray, config: dict, run_id: str = "") -
     cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=config["training"]["random_state"])
     best_params = {}
 
+    project = config.get("project", {})
+    scale_pos_weight = project.get("n_disease", 30) / project.get("n_control", 10)
+    hyperopt_spaces = get_hyperopt_spaces(scale_pos_weight)
+
     for model_name in config["hyperopt"]["models"]:
-        log.info(f"  Hyperopt search: {model_name}")
-        space = HYPEROPT_SPACES[model_name]
+        log.info(f"  🔍 Hyperopt search: {model_name}")
+        space = hyperopt_spaces[model_name]
+        max_evals = config["hyperopt"]["max_evals"]
 
-        def objective(params):
-            if model_name == "xgboost":
-                model = XGBClassifier(**params)
-            else:
-                model = RandomForestClassifier(**params)
+        with Progress(
+            TextColumn("[progress.description]{task.description}"),
+            BarColumn(),
+            TextColumn("{task.completed}/{task.total}"),
+            TimeElapsedColumn(),
+            TimeRemainingColumn(),
+            console=console,
+        ) as progress:
+            task = progress.add_task(f"Hyperopt {model_name}", total=max_evals)
 
-            with mlflow.start_run(run_name=f"{run_id}hyperopt_{model_name}_trial", nested=True):
-                mlflow.set_tag("stage", "hyperopt_trial")
+            def objective(params):
+                if model_name == "xgboost":
+                    model = XGBClassifier(**params)
+                else:
+                    model = RandomForestClassifier(**params)
+
+                with mlflow.start_run(run_name=f"{run_id}hyperopt_{model_name}_trial", nested=True):
+                    mlflow.set_tag("stage", "hyperopt_trial")
+                    mlflow.set_tag("model", model_name)
+                    mlflow.set_tag("run_kind", "search")
+                    loggable = {k: v for k, v in params.items() if isinstance(v, (int, float, str, bool))}
+                    mlflow.log_params(loggable)
+
+                    scores = cross_validate(model, X, y, cv=cv, scoring=["roc_auc", "balanced_accuracy"])
+                    auc  = scores["test_roc_auc"].mean()
+                    bacc = scores["test_balanced_accuracy"].mean()
+                    mlflow.log_metric("roc_auc_mean", auc)
+                    mlflow.log_metric("balanced_accuracy_mean", bacc)
+
+                progress.advance(task)
+                return {"loss": -auc, "status": STATUS_OK}
+
+            with mlflow.start_run(run_name=f"{run_id}hyperopt_{model_name}_search"):
+                mlflow.set_tag("stage", "hyperopt_search")
                 mlflow.set_tag("model", model_name)
                 mlflow.set_tag("run_kind", "search")
-                loggable = {k: v for k, v in params.items() if isinstance(v, (int, float, str, bool))}
-                mlflow.log_params(loggable)
 
-                scores = cross_validate(model, X, y, cv=cv, scoring=["roc_auc", "balanced_accuracy"])
-                auc  = scores["test_roc_auc"].mean()
-                bacc = scores["test_balanced_accuracy"].mean()
-                mlflow.log_metric("roc_auc_mean", auc)
-                mlflow.log_metric("balanced_accuracy_mean", bacc)
-
-            return {"loss": -auc, "status": STATUS_OK}
-
-        with mlflow.start_run(run_name=f"{run_id}hyperopt_{model_name}_search"):
-            mlflow.set_tag("stage", "hyperopt_search")
-            mlflow.set_tag("model", model_name)
-            mlflow.set_tag("run_kind", "search")
-
-            trials = Trials()
-            with contextlib.redirect_stdout(io.StringIO()):
-                best = fmin(
-                    fn=objective,
-                    space=space,
-                    algo=tpe.suggest,
-                    max_evals=config["hyperopt"]["max_evals"],
-                    trials=trials,
-                    verbose=False,
-                )
-            best_params[model_name] = best
-            mlflow.log_params({f"best_{k}": v for k, v in best.items()})
-            log.info(f"    Best params: {best}")
+                trials = Trials()
+                with contextlib.redirect_stdout(io.StringIO()):
+                    best = fmin(
+                        fn=objective,
+                        space=space,
+                        algo=tpe.suggest,
+                        max_evals=max_evals,
+                        trials=trials,
+                        verbose=False,
+                    )
+                best_params[model_name] = best
+                mlflow.log_params({f"best_{k}": v for k, v in best.items()})
+                log.info(f"    ✅ Best params: {best}")
 
     return best_params
 
@@ -209,12 +234,16 @@ def run_tuned_models(X: np.ndarray, y: np.ndarray, config: dict, best_params: di
         random_state=config["training"]["random_state"],
     )
 
+    project = config.get("project", {})
+    scale_pos_weight = project.get("n_disease", 30) / project.get("n_control", 10)
+    hyperopt_spaces = get_hyperopt_spaces(scale_pos_weight)
+
     results = []
-    for model_name in track(config["hyperopt"]["models"], description="Tuned models"):
-        log.info(f"  {model_name}")
+    for model_name in track(config["hyperopt"]["models"], description="Tuned models", console=console):
+        log.info(f"  🤖 {model_name}")
 
         # Resolve hp label names → actual constructor kwargs (handles hp.choice indices, scope.int, etc.)
-        params = space_eval(HYPEROPT_SPACES[model_name], best_params[model_name])
+        params = space_eval(hyperopt_spaces[model_name], best_params[model_name])
 
         if model_name == "xgboost":
             model = XGBClassifier(**params)
@@ -230,7 +259,7 @@ def run_tuned_models(X: np.ndarray, y: np.ndarray, config: dict, best_params: di
             extra_params=params,
         )
         results.append({"model": f"tuned_{model_name}", "source": "hyperopt_tuned", **metrics})
-        log.info(f"    acc={metrics['accuracy_mean']:.3f}  auc={metrics['roc_auc_mean']:.3f}")
+        log.info(f"    📈 acc={metrics['accuracy_mean']:.3f}  auc={metrics['roc_auc_mean']:.3f}")
 
     return pd.DataFrame(results).sort_values("roc_auc_mean", ascending=False)
 
@@ -242,21 +271,24 @@ def run_tuned_models(X: np.ndarray, y: np.ndarray, config: dict, best_params: di
 def run(config: dict, selected_df: pd.DataFrame, run_id: str = "") -> pd.DataFrame:
     setup_mlflow(config)
 
-    log.info("Preparing data...")
-    X, y, probe_cols = prepare_data(selected_df)
-    log.info(f"  X shape: {X.shape}  |  class balance: {np.bincount(y)}")
+    project = config.get("project", {})
+    scale_pos_weight = project.get("n_disease", 30) / project.get("n_control", 10)
 
-    log.info("Running baseline models...")
+    log.info("🔧 Preparing data...")
+    X, y, probe_cols = prepare_data(selected_df)
+    log.info(f"  📐 X shape: {X.shape}  |  class balance: {np.bincount(y)}")
+
+    log.info("🤖 Running baseline models...")
     baseline_df = run_baseline(X, y, config, run_id)
-    log.info("\nBaseline results:")
+    log.info("\n📊 Baseline results:")
     log.info(baseline_df[["model", "roc_auc_mean", "balanced_accuracy_mean", "f1_weighted_mean"]].to_string(index=False))
 
-    log.info("Running hyperopt search...")
+    log.info("🔍 Running hyperopt search...")
     best_params = run_hyperopt(X, y, config, run_id)
 
-    log.info("Running tuned model evaluation...")
+    log.info("⚡ Running tuned model evaluation...")
     tuned_df = run_tuned_models(X, y, config, best_params, run_id)
-    log.info("\nTuned results:")
+    log.info("\n📊 Tuned results:")
     log.info(tuned_df[["model", "roc_auc_mean", "balanced_accuracy_mean", "f1_weighted_mean"]].to_string(index=False))
 
     # Combined comparison: baseline + tuned, sorted by AUC descending
@@ -266,7 +298,7 @@ def run(config: dict, selected_df: pd.DataFrame, run_id: str = "") -> pd.DataFra
         .reset_index(drop=True)
     )
 
-    log.info("\nFull comparison (baseline + tuned):")
+    log.info("\n🏆 Full comparison (baseline + tuned):")
     log.info(
         combined_df[["model", "source", "roc_auc_mean", "balanced_accuracy_mean", "f1_weighted_mean"]]
         .to_string(index=False)
@@ -275,6 +307,6 @@ def run(config: dict, selected_df: pd.DataFrame, run_id: str = "") -> pd.DataFra
     comparison_path = config["paths"]["model_comparison"]
     os.makedirs(os.path.dirname(comparison_path), exist_ok=True)
     combined_df.to_csv(comparison_path, index=False)
-    log.info(f"Saved combined comparison: {comparison_path}")
+    log.info(f"💾 Saved combined comparison: {comparison_path}")
 
     return combined_df

@@ -6,11 +6,19 @@ from typing import Any, Dict, List
 # from sentence_transformers.util import cos_sim
 import wikipedia as w
 
+# Plain default — overridden at runtime by llm_job.run() from pipeline.yaml
+WIKIPEDIA_TIMEOUT = 30  # seconds
+
 w.set_lang("en")
+# Apply to wikipedia.search() calls; AttributeError = older package without set_timeout
+try:
+    w.set_timeout(WIKIPEDIA_TIMEOUT)
+except AttributeError:
+    pass
 
 import numpy as np
 import wikipediaapi
-from app.tools.tool_utils import chunk_text, get_model
+from app.tools.tool_utils import chunk_text, get_model, encode_safe
 
 # MAX_CHUNK_TOKENS = os.getenv('MAX_CHUNK_TOKENS')
 # CHUNK_OVERLAP = os.getenv('CHUNK_OVERLAP')
@@ -84,9 +92,7 @@ class WikipediaTool:
             return []
 
         model = get_model()  # same the qdrant sentencetransformer model
-        q_vec = model.encode([query], normalize_embeddings=True, convert_to_numpy=True)[
-            0
-        ]
+        q_vec = encode_safe([query], normalize_embeddings=True, convert_to_numpy=True)[0]
 
         candidates = []
         for title in titles:
@@ -97,9 +103,7 @@ class WikipediaTool:
             # score each chunk by cosine similarity
             #! note: L2-normalized, then the dot product = cosine similarity.
             #! If they are not normalized, the dot product will overweight long vectors (magnitude), whereas cosine similarity divides by the norms to measure the angle only.
-            ch_vecs = model.encode(
-                chunks, normalize_embeddings=True, convert_to_numpy=True
-            )
+            ch_vecs = encode_safe(chunks, normalize_embeddings=True, convert_to_numpy=True)
             sims = np.dot(ch_vecs, q_vec)  # faster
 
             for chunk, sim in zip(chunks, sims):

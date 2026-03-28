@@ -56,6 +56,7 @@ Usage:
 import sys
 import os
 import argparse
+import pathlib
 import numpy as np
 import pandas as pd
 import matplotlib
@@ -66,12 +67,13 @@ from sklearn.preprocessing import StandardScaler
 
 
 # ---------------------------------------------------------------------------
-# PATHS
+# PATHS  (relative to app/ — works from any working directory)
 # ---------------------------------------------------------------------------
-INPUT_CSV   = "/Users/jordanharris/Code/Omics_Capstone/data/femoral_head_necrosis/parsed/preprocessed_matrix.csv"
-OUTPUT_DIR  = "/Users/jordanharris/Code/Omics_Capstone/data/femoral_head_necrosis/feature_selection"
-EDA_DIR     = "/Users/jordanharris/Code/Omics_Capstone/data/femoral_head_necrosis/EDA"
-SOFT_GZ     = "/Users/jordanharris/Code/Omics_Capstone/data/femoral_head_necrosis/GSE123568_family.soft.gz"
+_APP_DIR   = pathlib.Path(__file__).resolve().parent.parent
+INPUT_CSV  = str(_APP_DIR / "data" / "output" / "parsed"            / "preprocessed_matrix.csv")
+OUTPUT_DIR = str(_APP_DIR / "data" / "output" / "feature_selection")
+EDA_DIR    = str(_APP_DIR / "data" / "output" / "plots")
+SOFT_GZ    = str(_APP_DIR / "data" / "input"  / "GSE123568_family.soft.gz")
 
 
 # ---------------------------------------------------------------------------
@@ -128,19 +130,23 @@ def load_probe_annotation(soft_gz_path: str) -> pd.Series:
 # ---------------------------------------------------------------------------
 # RANK PROBES
 # ---------------------------------------------------------------------------
-def rank_by_fold_change(df: pd.DataFrame) -> pd.Series:
+def rank_by_fold_change(
+    df: pd.DataFrame,
+    disease_label: str = "SONFH",
+    control_label: str = "control",
+) -> pd.Series:
     """
-    Rank probes by absolute log2-fold-change between SONFH and control.
+    Rank probes by absolute log2-fold-change between disease and control groups.
 
     Values are already log2 RMA intensities, so the difference of group means
     is the log2-fold-change. Absolute value captures both up- and down-regulated
-    probes in SONFH relative to control.
+    probes relative to control.
 
     Returns a Series of |FC| values indexed by probe ID, sorted descending.
     """
     probe_cols = df.columns[:-1]
-    sonfh   = df[df["class"] == "SONFH"][probe_cols]
-    control = df[df["class"] == "control"][probe_cols]
+    sonfh   = df[df["class"] == disease_label][probe_cols]
+    control = df[df["class"] == control_label][probe_cols]
 
     fc = (sonfh.mean() - control.mean()).abs()
     fc.name = "abs_log_fold_change"
@@ -239,9 +245,15 @@ def write_arff(df: pd.DataFrame, relation_name: str, path: str) -> None:
 # ---------------------------------------------------------------------------
 # PCA PLOT
 # ---------------------------------------------------------------------------
-def plot_pca(df: pd.DataFrame, output_path: str) -> None:
+def plot_pca(
+    df: pd.DataFrame,
+    output_path: str,
+    disease_label: str = "SONFH",
+    control_label: str = "control",
+    dataset: str = "",
+) -> None:
     """
-    Generate a 2D PCA plot of the 40 samples coloured by condition.
+    Generate a 2D PCA plot of samples coloured by condition.
     Uses the top selected probes as features. Separation in PC space
     confirms the selected probes capture disease-state signal.
     """
@@ -259,8 +271,11 @@ def plot_pca(df: pd.DataFrame, output_path: str) -> None:
     var_exp = pca.explained_variance_ratio_ * 100
 
     # Colour map
-    colour_map = {"SONFH": "#d62728", "control": "#1f77b4"}
+    colour_map = {disease_label: "#d62728", control_label: "#1f77b4"}
     colours = [colour_map[c] for c in y]
+
+    n_disease = int((df["class"] == disease_label).sum())
+    n_control = int((df["class"] == control_label).sum())
 
     fig, ax = plt.subplots(figsize=(7, 5))
     for i, (x1, x2) in enumerate(coords):
@@ -273,18 +288,18 @@ def plot_pca(df: pd.DataFrame, output_path: str) -> None:
     # Legend
     from matplotlib.lines import Line2D
     handles = [
-        Line2D([0], [0], marker="o", color="w", markerfacecolor=colour_map["SONFH"],
-               markeredgecolor="k", markersize=9, label="SONFH (n=30)"),
-        Line2D([0], [0], marker="o", color="w", markerfacecolor=colour_map["control"],
-               markeredgecolor="k", markersize=9, label="control (n=10)"),
+        Line2D([0], [0], marker="o", color="w", markerfacecolor=colour_map[disease_label],
+               markeredgecolor="k", markersize=9, label=f"{disease_label} (n={n_disease})"),
+        Line2D([0], [0], marker="o", color="w", markerfacecolor=colour_map[control_label],
+               markeredgecolor="k", markersize=9, label=f"{control_label} (n={n_control})"),
     ]
     ax.legend(handles=handles, framealpha=0.9)
 
     ax.set_xlabel(f"PC1 ({var_exp[0]:.1f}% variance explained)", fontsize=11)
     ax.set_ylabel(f"PC2 ({var_exp[1]:.1f}% variance explained)", fontsize=11)
     ax.set_title(
-        f"PCA of 40 Samples — Top {len(gene_cols)} Features (log2 microarray)\n"
-        "SONFH vs Control — GSE123568",
+        f"PCA of {len(df)} Samples — Top {len(gene_cols)} Features (log2 microarray)\n"
+        f"{disease_label} vs {control_label} — {dataset}",
         fontsize=11
     )
     ax.grid(True, alpha=0.3)
@@ -301,9 +316,15 @@ def plot_pca(df: pd.DataFrame, output_path: str) -> None:
 # ---------------------------------------------------------------------------
 # EXPRESSION HEATMAP (top 20 genes)
 # ---------------------------------------------------------------------------
-def plot_heatmap(df: pd.DataFrame, output_path: str) -> None:
+def plot_heatmap(
+    df: pd.DataFrame,
+    output_path: str,
+    disease_label: str = "SONFH",
+    control_label: str = "control",
+    dataset: str = "",
+) -> None:
     """
-    Heatmap of the top 20 probes × 40 samples, annotated by condition.
+    Heatmap of the top 20 probes × samples, annotated by condition.
     Uses seaborn clustermap for automatic row/column ordering.
     """
     try:
@@ -316,7 +337,7 @@ def plot_heatmap(df: pd.DataFrame, output_path: str) -> None:
     heatmap_data = df[gene_cols].T      # probes × samples
 
     # Colour bar for condition labels
-    condition_colours = df["class"].map({"SONFH": "#d62728", "control": "#1f77b4"})
+    condition_colours = df["class"].map({disease_label: "#d62728", control_label: "#1f77b4"})
     condition_colours.index = df.index
 
     g = sns.clustermap(
@@ -332,16 +353,16 @@ def plot_heatmap(df: pd.DataFrame, output_path: str) -> None:
     g.ax_heatmap.set_xlabel("Sample", fontsize=10)
     g.ax_heatmap.set_ylabel("Gene", fontsize=10)
     g.fig.suptitle(
-        "Top 20 Differentially Expressed Probes — SONFH vs Control\n"
-        "(log2 microarray, hierarchical clustering) — GSE123568",
+        f"Top 20 Differentially Expressed Probes — {disease_label} vs {control_label}\n"
+        f"(log2 microarray, hierarchical clustering) — {dataset}",
         y=1.02, fontsize=11
     )
 
     # Add condition legend
     from matplotlib.patches import Patch
     legend_handles = [
-        Patch(facecolor="#d62728", label="SONFH"),
-        Patch(facecolor="#1f77b4", label="control"),
+        Patch(facecolor="#d62728", label=disease_label),
+        Patch(facecolor="#1f77b4", label=control_label),
     ]
     g.ax_col_dendrogram.legend(
         handles=legend_handles, loc="upper left",
@@ -356,7 +377,14 @@ def plot_heatmap(df: pd.DataFrame, output_path: str) -> None:
 # ---------------------------------------------------------------------------
 # FOLD CHANGE BAR CHART (top 20 genes — explains why features were selected)
 # ---------------------------------------------------------------------------
-def plot_fold_change_bar(ranking: pd.Series, output_path: str, top_n: int = 20) -> None:
+def plot_fold_change_bar(
+    ranking: pd.Series,
+    output_path: str,
+    top_n: int = 20,
+    disease_label: str = "SONFH",
+    control_label: str = "control",
+    dataset: str = "",
+) -> None:
     """
     Horizontal bar chart of the top N probes by |log2-fold-change|.
     Colour-codes by rank tier (top 10 vs 11–20).
@@ -379,11 +407,11 @@ def plot_fold_change_bar(ranking: pd.Series, output_path: str, top_n: int = 20) 
         ax.text(val + 0.03, bar.get_y() + bar.get_height() / 2,
                 f"{val:.2f}", va="center", fontsize=8, color="#333333")
 
-    ax.set_xlabel("|Log Fold Change| (SONFH mean − control mean, log2 scale)", fontsize=10)
+    ax.set_xlabel(f"|Log Fold Change| ({disease_label} mean − {control_label} mean, log2 scale)", fontsize=10)
     ax.set_ylabel("Gene", fontsize=10)
     ax.set_title(
-        f"Top {top_n} Probes by Absolute Fold Change — SONFH vs Control\n"
-        "Feature selection basis: probes most different between conditions (GSE123568)",
+        f"Top {top_n} Probes by Absolute Fold Change — {disease_label} vs {control_label}\n"
+        f"Feature selection basis: probes most different between conditions ({dataset})",
         fontsize=11, pad=12
     )
     ax.axvline(0, color="black", linewidth=0.8)
@@ -406,11 +434,18 @@ def plot_fold_change_bar(ranking: pd.Series, output_path: str, top_n: int = 20) 
 # ---------------------------------------------------------------------------
 # BOX PLOTS — top N genes, expression split by class
 # ---------------------------------------------------------------------------
-def plot_boxplots(df: pd.DataFrame, annotation: pd.Series, output_path: str, top_n: int = 6) -> None:
+def plot_boxplots(
+    df: pd.DataFrame,
+    annotation: pd.Series,
+    output_path: str,
+    top_n: int = 6,
+    disease_label: str = "SONFH",
+    control_label: str = "control",
+    dataset: str = "",
+) -> None:
     """
     Box plots of the top N probes (by fold change — already ordered in df columns).
-    Each subplot shows the log2 expression distribution for SONFH vs control.
-    This is the first direct biological claim: "Gene X is up/down in SONFH."
+    Each subplot shows the log2 expression distribution for disease vs control.
     """
     top_probes = df.columns[:-1][:top_n].tolist()
 
@@ -419,23 +454,25 @@ def plot_boxplots(df: pd.DataFrame, annotation: pd.Series, output_path: str, top
     fig, axes = plt.subplots(nrows, ncols, figsize=(13, 4 * nrows))
     axes = axes.flatten()
 
-    colour_map = {"SONFH": "#d62728", "control": "#1f77b4"}
+    colour_map = {disease_label: "#d62728", control_label: "#1f77b4"}
+    n_control = int((df["class"] == control_label).sum())
+    n_disease = int((df["class"] == disease_label).sum())
 
     for i, probe in enumerate(top_probes):
         ax = axes[i]
         groups = [
-            df[df["class"] == "control"][probe].values,
-            df[df["class"] == "SONFH"][probe].values,
+            df[df["class"] == control_label][probe].values,
+            df[df["class"] == disease_label][probe].values,
         ]
         bp = ax.boxplot(groups, patch_artist=True, widths=0.5,
                         medianprops=dict(color="white", linewidth=2))
-        bp["boxes"][0].set_facecolor(colour_map["control"])
-        bp["boxes"][1].set_facecolor(colour_map["SONFH"])
+        bp["boxes"][0].set_facecolor(colour_map[control_label])
+        bp["boxes"][1].set_facecolor(colour_map[disease_label])
 
         gene_sym = annotation.get(probe, probe) if len(annotation) else probe
         ax.set_title(f"{gene_sym}\n({probe})", fontsize=9)
         ax.set_xticks([1, 2])
-        ax.set_xticklabels(["control\n(n=10)", "SONFH\n(n=30)"], fontsize=9)
+        ax.set_xticklabels([f"{control_label}\n(n={n_control})", f"{disease_label}\n(n={n_disease})"], fontsize=9)
         ax.set_ylabel("log2 expression", fontsize=8)
         ax.grid(axis="y", alpha=0.3, linestyle="--")
 
@@ -444,8 +481,8 @@ def plot_boxplots(df: pd.DataFrame, annotation: pd.Series, output_path: str, top
         axes[j].set_visible(False)
 
     fig.suptitle(
-        f"Top {top_n} Probes — Expression by Condition (SONFH vs Control)\n"
-        "GSE123568 | log2 RMA microarray",
+        f"Top {top_n} Probes — Expression by Condition ({disease_label} vs {control_label})\n"
+        f"{dataset} | log2 RMA microarray",
         fontsize=12, y=1.01
     )
     plt.tight_layout()
@@ -457,10 +494,16 @@ def plot_boxplots(df: pd.DataFrame, annotation: pd.Series, output_path: str, top
 # ---------------------------------------------------------------------------
 # SAMPLE CORRELATION HEATMAP — 40×40 patient similarity matrix
 # ---------------------------------------------------------------------------
-def plot_sample_correlation(df: pd.DataFrame, output_path: str) -> None:
+def plot_sample_correlation(
+    df: pd.DataFrame,
+    output_path: str,
+    disease_label: str = "SONFH",
+    control_label: str = "control",
+    dataset: str = "",
+) -> None:
     """
-    Pearson correlation between all 40 patient samples across the top 100 probes.
-    If SONFH patients cluster together and controls cluster together, the disease
+    Pearson correlation between all patient samples across the top 100 probes.
+    If disease patients cluster together and controls cluster together, the disease
     signal is real and not just noise.
     """
     try:
@@ -472,7 +515,9 @@ def plot_sample_correlation(df: pd.DataFrame, output_path: str) -> None:
     gene_cols = df.columns[:-1]
     corr = df[gene_cols].T.corr()   # samples × samples
 
-    condition_colours = df["class"].map({"SONFH": "#d62728", "control": "#1f77b4"})
+    n_disease = int((df["class"] == disease_label).sum())
+    n_control = int((df["class"] == control_label).sum())
+    condition_colours = df["class"].map({disease_label: "#d62728", control_label: "#1f77b4"})
     condition_colours.index = df.index
 
     g = sns.clustermap(
@@ -489,14 +534,14 @@ def plot_sample_correlation(df: pd.DataFrame, output_path: str) -> None:
     )
     g.fig.suptitle(
         "Sample-Level Pearson Correlation — Top 100 Probes\n"
-        "Red = SONFH  |  Blue = control  |  GSE123568",
+        f"Red = {disease_label}  |  Blue = {control_label}  |  {dataset}",
         y=1.02, fontsize=11
     )
 
     from matplotlib.patches import Patch
     legend_handles = [
-        Patch(facecolor="#d62728", label="SONFH (n=30)"),
-        Patch(facecolor="#1f77b4", label="control (n=10)"),
+        Patch(facecolor="#d62728", label=f"{disease_label} (n={n_disease})"),
+        Patch(facecolor="#1f77b4", label=f"{control_label} (n={n_control})"),
     ]
     g.ax_col_dendrogram.legend(
         handles=legend_handles, loc="upper left",
@@ -511,8 +556,16 @@ def plot_sample_correlation(df: pd.DataFrame, output_path: str) -> None:
 # ---------------------------------------------------------------------------
 # VOLCANO-STYLE PLOT — fold change vs variance, global feature landscape
 # ---------------------------------------------------------------------------
-def plot_volcano(fc_ranking: pd.Series, var_ranking: pd.Series,
-                 top_probe_ids: list, annotation: pd.Series, output_path: str) -> None:
+def plot_volcano(
+    fc_ranking: pd.Series,
+    var_ranking: pd.Series,
+    top_probe_ids: list,
+    annotation: pd.Series,
+    output_path: str,
+    disease_label: str = "SONFH",
+    control_label: str = "control",
+    dataset: str = "",
+) -> None:
     """
     All 11,687 filtered probes plotted as |fold change| (x) vs variance (y).
     Top 100 selected probes highlighted in red.
@@ -556,11 +609,11 @@ def plot_volcano(fc_ranking: pd.Series, var_ranking: pd.Series,
                 arrowprops=dict(arrowstyle="-", color="#aaaaaa", lw=0.5)
             )
 
-    ax.set_xlabel("|Fold Change| (SONFH mean − control mean, log2)", fontsize=11)
-    ax.set_ylabel("Variance across all 40 samples", fontsize=11)
+    ax.set_xlabel(f"|Fold Change| ({disease_label} mean − {control_label} mean, log2)", fontsize=11)
+    ax.set_ylabel(f"Variance across all {len(fc_ranking)} probes", fontsize=11)
     ax.set_title(
         "Volcano-Style Plot: Effect Size vs Variability\n"
-        f"All {len(common):,} filtered probes — top 100 selected highlighted in red | GSE123568",
+        f"All {len(common):,} filtered probes — top 100 selected highlighted in red | {dataset}",
         fontsize=11
     )
     ax.legend(fontsize=9, framealpha=0.9)
@@ -580,6 +633,8 @@ def build_gene_level_summary(
     fc_ranking: pd.Series,
     annotation: pd.Series,
     output_path: str,
+    disease_label: str = "SONFH",
+    control_label: str = "control",
 ) -> pd.DataFrame:
     """
     Group the selected probes by gene symbol and produce a summary table.
@@ -614,8 +669,8 @@ def build_gene_level_summary(
     probe_cols = selected_df.columns[:-1].tolist()
 
     # Compute signed FC (needed for direction consistency check)
-    sonfh_mean   = selected_df[selected_df["class"] == "SONFH"][probe_cols].mean()
-    control_mean = selected_df[selected_df["class"] == "control"][probe_cols].mean()
+    sonfh_mean   = selected_df[selected_df["class"] == disease_label][probe_cols].mean()
+    control_mean = selected_df[selected_df["class"] == control_label][probe_cols].mean()
     signed_fc    = sonfh_mean - control_mean   # positive = higher in SONFH
 
     def probe_type(pid: str) -> str:

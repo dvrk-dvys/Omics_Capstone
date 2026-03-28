@@ -1,4 +1,6 @@
 import os
+import socket
+import time
 
 from dotenv import load_dotenv
 
@@ -6,11 +8,18 @@ load_dotenv()
 
 from Bio import Entrez
 
-ENTREZ_EMAIL = os.getenv("ENTREZ_EMAIL")
-Entrez.email = ENTREZ_EMAIL
+ENTREZ_EMAIL   = os.getenv("ENTREZ_EMAIL")
+# Plain defaults — overridden at runtime by llm_job.run() from pipeline.yaml
+ENTREZ_TIMEOUT = 45    # seconds; Biopython default = infinite
+ENTREZ_SLEEP   = 0.4   # seconds between Entrez calls; NCBI rate limit ≤ 3 req/s
+
+Entrez.email   = ENTREZ_EMAIL
+Entrez.timeout = ENTREZ_TIMEOUT
+# Belt-and-suspenders: bound ALL socket ops in this process that don't set their own timeout
+socket.setdefaulttimeout(ENTREZ_TIMEOUT)
 
 import numpy as np
-from app.tools.tool_utils import chunk_text, get_model
+from app.tools.tool_utils import chunk_text, get_model, encode_safe
 
 
 class PubMedTool:
@@ -31,6 +40,7 @@ class PubMedTool:
             )
             record = Entrez.read(handle)
             handle.close()
+            time.sleep(ENTREZ_SLEEP)
             return list(record.get("IdList", []))
         except Exception as e:
             print(f"[PubMed] esearch error: {e}")
@@ -89,6 +99,7 @@ class PubMedTool:
             )
             record = Entrez.read(handle)
             handle.close()
+            time.sleep(ENTREZ_SLEEP)
 
             articles = record["PubmedArticle"]
             medline_citation = articles[0].get("MedlineCitation", {})
@@ -173,33 +184,71 @@ class PubMedTool:
         Search PubMed by query, fetch abstracts, chunk + encode, cosine-score to query.
         Returns: [{id,title,url,text,cos_sim_score,source_type}]
         """
-        pmids = self.search_pmids(query, retmax=10)
+        import threading
+        _t0 = time.perf_counter()
+        print(
+            f"[PUBMED] start | thread={threading.current_thread().name!r} | query={query!r}",
+            flush=True,
+        )
 
-        # Encode query once (L2-normalized so dot = cosine)
-        q_vec = self.model.encode(
+        # --- Step 1: esearch ---
+        print("[PUBMED] esearch start", flush=True)
+        pmids = self.search_pmids(query, retmax=5)
+        print(
+            f"[PUBMED] esearch done  | pmids={pmids} | elapsed={time.perf_counter()-_t0:.2f}s",
+            flush=True,
+        )
+
+        if not pmids:
+            print("[PUBMED] no PMIDs — returning early", flush=True)
+            return []
+
+        # --- Step 2: encode query ---
+        print("[PUBMED] encode query start", flush=True)
+        _te = time.perf_counter()
+        q_vec = encode_safe(
             [query], normalize_embeddings=True, convert_to_numpy=True
         )[0]
+        print(f"[PUBMED] encode query done | elapsed={time.perf_counter()-_te:.2f}s", flush=True)
 
         candidates = []
-        for pmid in pmids:
+        for idx, pmid in enumerate(pmids):
             url = self.pubmed_url(pmid)
+
+            # --- Step 3: efetch per PMID ---
+            print(f"[PUBMED] efetch start | pmid={pmid} ({idx+1}/{len(pmids)})", flush=True)
+            _tf = time.perf_counter()
             meta = self.get_title_and_abstract(pmid)
+            print(
+                f"[PUBMED] efetch done  | pmid={pmid} | elapsed={time.perf_counter()-_tf:.2f}s"
+                f" | abstract={'yes' if meta and meta.get('abstract') else 'no/empty'}",
+                flush=True,
+            )
+
             if not meta:
                 continue
-
             title = meta["title"]
             abstract = meta["abstract"]
-
             if not abstract.strip():
                 continue
 
             chunks = chunk_text(abstract)
 
-            ch_vecs = self.model.encode(
+            # --- Step 4: encode chunks ---
+            print(
+                f"[PUBMED] encode chunks start | pmid={pmid} | chunks={len(chunks)}",
+                flush=True,
+            )
+            _tc = time.perf_counter()
+            ch_vecs = encode_safe(
                 chunks, normalize_embeddings=True, convert_to_numpy=True
             )
-            sims = np.dot(ch_vecs, q_vec)
+            print(
+                f"[PUBMED] encode chunks done  | pmid={pmid} | elapsed={time.perf_counter()-_tc:.2f}s",
+                flush=True,
+            )
 
+            sims = np.dot(ch_vecs, q_vec)
             for ch, sim in zip(chunks, sims):
                 candidates.append(
                     {
@@ -214,17 +263,41 @@ class PubMedTool:
                 )
 
         candidates.sort(key=lambda d: d["cos_sim_score"], reverse=True)
+        print(
+            f"[PUBMED] done | candidates={len(candidates)} | total_elapsed={time.perf_counter()-_t0:.2f}s",
+            flush=True,
+        )
         return candidates[:top_k]
 
 
 if __name__ == "__main__":
     pubmed_tool = PubMedTool()
+
+    # --- pubmed_fetch_by_id ---
+    test_pmids = [
+        "30929741",   # SONFH / steroid-induced osteonecrosis
+        "33761044",   # avascular necrosis coagulation
+    ]
+    print("=== pubmed_fetch_by_id ===")
+    for pmid in test_pmids:
+        results = pubmed_tool.pubmed_fetch_by_id(pmid)
+        if results:
+            r = results[0]
+            print(f"PMID {pmid}: {r['title'][:80]}")
+            print(f"  year={r['year']}  url={r['url']}")
+            print(f"  abstract[:200]: {r['text'][:200]}")
+        else:
+            print(f"PMID {pmid}: no result")
+        print("-" * 40)
+
+    # --- pubmed_semantic_search ---
     query = [
         "Femoral Head Necrosis?",
         "How does anesthesia block pain receptors?",
         "Femoral Head Avascular Necrosis Joint Corticosteroids",
     ]
 
+    print("\n=== pubmed_semantic_search ===")
     for q in query:
         print(f"Query: {q}")
         res = pubmed_tool.pubmed_semantic_search(q, top_k=5)

@@ -32,22 +32,26 @@ omics_ml_pipeline/
 │   ├── main.py               ← pipeline entry point
 │   ├── config/
 │   │   └── pipeline.yaml     ← all paths, params, MLflow config
-│   ├── data/                 ← all inputs and outputs
-│   │   ├── GSE123568_series_matrix.txt.gz
-│   │   ├── GSE123568_family.soft.gz
-│   │   ├── parsed/
-│   │   ├── feature_selection/
-│   │   │   ├── top50_features.csv
-│   │   │   ├── gene_rankings.csv
-│   │   │   └── gene_level_summary.csv
-│   │   ├── models/
-│   │   │   └── model_comparison.csv
-│   │   ├── plots/
-│   │   │   ├── volcano_plot.png
-│   │   │   ├── fold_change_top20.png
-│   │   │   ├── boxplots_top6.png
-│   │   │   └── pca_plot.png
-│   │   └── biomarker_shortlist.csv
+│   ├── data/
+│   │   ├── input/            ← raw dataset files (drop any GEO dataset here)
+│   │   │   ├── GSE123568_series_matrix.txt.gz
+│   │   │   ├── GSE123568_family.soft.gz
+│   │   │   └── GSE123568_abstract.txt
+│   │   └── output/           ← all generated files (safe to delete & regenerate)
+│   │       ├── parsed/
+│   │       ├── feature_selection/
+│   │       │   ├── top50_features.csv
+│   │       │   ├── gene_rankings.csv
+│   │       │   └── gene_level_summary.csv
+│   │       ├── models/
+│   │       │   └── model_comparison.csv
+│   │       ├── plots/
+│   │       │   ├── volcano_plot.png
+│   │       │   ├── fold_change_top20.png
+│   │       │   ├── boxplots_top6.png
+│   │       │   └── pca_plot.png
+│   │       ├── llm_outputs/  ← one JSON per gene (Phase 6)
+│   │       └── biomarker_shortlist.csv
 │   ├── jobs/                 ← orchestration layer
 │   │   ├── ingest_job.py
 │   │   ├── parse_job.py
@@ -100,25 +104,65 @@ pip install -r requirements.txt
 ### 3. Run the pipeline
 
 ```bash
-# Full run (parse + preprocess + feature select + train + biomarker)
+# Full pipeline (ingest → parse → preprocess → feature_select → train → biomarker)
 python -m app.main
 
-# Skip parse/preprocess on subsequent runs (outputs already saved)
-python -m app.main --skip-parse
+# Full pipeline + LLM interpretation
+python -m app.main --llm
 
-# Include Phase 6 LLM interpretation (requires ANTHROPIC_API_KEY set)
-python -m app.main --skip-parse --llm
+# Skip ingest/parse/preprocess — re-run models + biomarker on existing data
+python -m app.main --skip-pre
 
-# Point LLM job at the Weka-produced shortlist instead
-python -m app.main --skip-parse --llm --shortlist data/femoral_head_necrosis/feature_selection/biomarker_shortlist.csv
+# Skip pre + run LLM (most common on subsequent runs)
+python -m app.main --skip-pre --llm
+
+# LLM only — skip everything except feature_select and biomarker
+python -m app.main --skip-pre --skip-train --llm
 ```
 
-### 4. View results
+| Flag | Effect |
+|---|---|
+| *(none)* | Full pipeline |
+| `--skip-pre` | Skip ingest, parse, preprocess (use existing outputs) |
+| `--skip-train` | Skip model training |
+| `--llm` | Run LLM biological interpretation (opt-in) |
+
+### 4. Running long jobs (Mac local)
+
+The `--llm` step runs for several minutes per gene and must not be interrupted.
+Use `caffeinate` to prevent the Mac from sleeping and `tee` to save a live log.
+
+```bash
+# Official run command
+export OPENAI_API_KEY=sk-...
+caffeinate -i python -u -m app.main --skip-pre --llm 2>&1 | tee llm_run_$(date +%Y%m%d_%H%M%S).log
+```
+
+| Flag | Effect |
+|---|---|
+| `caffeinate -i` | Prevents the Mac from sleeping while the job runs |
+| `python -u` | Forces unbuffered stdout — logs appear immediately |
+| `2>&1 \| tee ...` | Shows logs live in the terminal and saves them to a timestamped file |
+
+Monitor and inspect the run:
+
+```bash
+# Follow the latest log in a second terminal
+tail -f llm_run_*.log
+
+# Check output files being written
+ls -lt app/data/output/llm_outputs/ | head
+
+# Filter key progress lines
+grep -a "\[ITER\|\[START\|\[DONE\|\[FAIL\|\[WRITE\|\[AGENT" llm_run_*.log
+```
+
+### 5. View results
 
 - MLflow UI: http://localhost:5002 → experiment `sonfh_classification`
-- Model comparison CSV: `app/data/models/model_comparison.csv`
-- Biomarker shortlist: `app/data/biomarker_shortlist.csv`
-- EDA plots: `app/data/plots/`
+- Model comparison CSV: `app/data/output/models/model_comparison.csv`
+- Biomarker shortlist: `app/data/output/biomarker_shortlist.csv`
+- EDA plots: `app/data/output/plots/`
 
 ---
 
@@ -170,25 +214,25 @@ Generated automatically by `feature_select_job.py` on each pipeline run.
 
 **Volcano plot** — full landscape of 11,687 filtered probes; top 50 highlighted:
 
-![volcano_plot](app/data/plots/volcano_plot.png)
+![volcano_plot](app/data/output/plots/volcano_plot.png)
 
 ---
 
 **Top 20 probes by fold-change:**
 
-![fold_change_top20](app/data/plots/fold_change_top20.png)
+![fold_change_top20](app/data/output/plots/fold_change_top20.png)
 
 ---
 
 **Box plots — top 6 probes, SONFH vs control:**
 
-![boxplots_top6](app/data/plots/boxplots_top6.png)
+![boxplots_top6](app/data/output/plots/boxplots_top6.png)
 
 ---
 
 **PCA — PC1 = 88.0%, PC2 = 2.4% (total 90.4% in 2 dimensions):**
 
-![pca_plot](app/data/plots/pca_plot.png)
+![pca_plot](app/data/output/plots/pca_plot.png)
 
 > Strong separation: 88% of all expression variance captured in a single axis, clearly separating SONFH from control. Slightly stronger than the 100-probe run (PC1=84.6%) — reducing feature count from 100 to 50 removed noise and sharpened the signal.
 
@@ -200,7 +244,7 @@ All pipeline runs are logged to MLflow automatically. These screenshots show the
 
 **Runs table — every baseline, hyperopt search, tuned model, and biomarker run in one view:**
 
-![mlflow_eda_runs](app/data/plots/mlflow_eda_runs.png)
+![mlflow_eda_runs](app/data/output/plots/mlflow_eda_runs.png)
 
 > Each row is a tracked MLflow run from the `sonfh_classification` experiment. Runs are prefixed `r001_` so all runs from a single pipeline execution are visually grouped. Metrics (accuracy, balanced accuracy, F1, AUC) and hyperopt best-params are stored as columns, making it straightforward to filter or sort. The hyperopt parent runs (`r001_hyperopt_xgboost_search`, `r001_hyperopt_random_forest_search`) show the best params found; the tuned evaluation runs below them show the final held-out performance. This is the experiment tracking capability that Weka lacks entirely — every run is reproducible, timestamped, and queryable.
 
@@ -208,7 +252,7 @@ All pipeline runs are logged to MLflow automatically. These screenshots show the
 
 **Parallel coordinates plot — hyperopt parameter sweeps vs metric outcomes:**
 
-![mlflow_eda_graph](app/data/plots/mlflow_eda_graph.png)
+![mlflow_eda_graph](app/data/output/plots/mlflow_eda_graph.png)
 
 > MLflow's parallel coordinates view maps each parameter combination (learning rate, max depth, n_estimators, subsample) to its resulting metrics (AUC, balanced accuracy, F1, accuracy) via connecting lines. Lines that converge on the high-AUC end of the right axes trace back to the winning parameter regions. This reiterates the same signal seen in the EDA plots — a clear, learnable separation in the data — but from the model's perspective: the fact that many different parameter combinations all achieve high AUC (colour-coded warm = high) confirms the signal is robust, not dependent on a lucky hyperparameter choice.
 
@@ -220,7 +264,7 @@ Generated by `biomarker_job.py`: RF feature importance (across 5 CV folds) × fo
 
 **Top 20 candidates — fixed shortlist (50-probe input, 20-probe output):**
 
-The shortlist is capped at 20 probes to enable direct comparison with the Weka pipeline's top-ranked features, while still covering the full biologically coherent cluster. All 20 probes appeared in every CV fold (selection_freq = 1.00).
+The shortlist includes all probes with `combined_score >= 0.60` — a threshold-based cutoff rather than an arbitrary top-N, ensuring every included probe has genuine signal on both RF importance and fold-change. All shortlisted probes appeared in every CV fold (selection_freq = 1.00).
 
 | Rank | Probe | Gene | Combined score | Selection freq |
 |---|---|---|---|---|
@@ -263,7 +307,7 @@ All top genes are **lower in SONFH than in controls** — consistent with a syst
 
 ### Gene-level summary
 
-`app/data/feature_selection/gene_level_summary.csv` groups the 50 selected probes by gene:
+`app/data/output/feature_selection/gene_level_summary.csv` groups the 50 selected probes by gene:
 - **27 unique gene symbols** from 50 probes
 - **12 genes** represented by more than one probe (multi-probe confirmation)
 - **0 genes** with mixed fold-change direction (all probes for each gene agree on direction)
@@ -303,12 +347,13 @@ Each pipeline execution is prefixed with a run ID (`r001_`, `r002_`, ...) so all
 
 | File | Description |
 |---|---|
-| `app/data/feature_selection/top50_features.csv` | Top 50 probes by fold-change + class column |
-| `app/data/feature_selection/gene_rankings.csv` | Full probe ranking (11,687 probes) with gene symbols |
-| `app/data/feature_selection/gene_level_summary.csv` | Probes grouped by gene symbol (LLM input) |
-| `app/data/models/model_comparison.csv` | AUC/F1/balanced-acc for all baseline + tuned models |
-| `app/data/biomarker_shortlist.csv` | Top candidates ranked by combined RF + fold-change score |
-| `app/data/plots/*.png` | 4 EDA plots (volcano, FC bar, box plots, PCA) |
+| `app/data/output/feature_selection/top50_features.csv` | Top 50 probes by fold-change + class column |
+| `app/data/output/feature_selection/gene_rankings.csv` | Full probe ranking (11,687 probes) with gene symbols |
+| `app/data/output/feature_selection/gene_level_summary.csv` | Probes grouped by gene symbol (LLM input) |
+| `app/data/output/models/model_comparison.csv` | AUC/F1/balanced-acc for all baseline + tuned models |
+| `app/data/output/biomarker_shortlist.csv` | Top candidates ranked by combined RF + fold-change score |
+| `app/data/output/llm_outputs/*.json` | Per-gene LLM interpretation (Phase 6) |
+| `app/data/output/plots/*.png` | EDA plots (volcano, FC bar, box plots, PCA) |
 | MLflow UI | All run params, metrics, tags, and artifacts |
 
 ---
@@ -336,7 +381,7 @@ Triggered with `--llm` flag. Wired into `main.py` — runs after the biomarker s
 export OPENAI_API_KEY=sk-...
 
 # Run full pipeline including LLM step
-python -m app.main --skip-parse --llm
+python -m app.main --skip-pre --llm
 ```
 
 **Architecture:** PubMed retrieval → semantic ranking → constrained GPT-4o prompt → structured output → human validation → Phase 7 report input.
@@ -348,8 +393,8 @@ python -m app.main --skip-parse --llm
 | 3 | Retrieve abstracts, chunk + cosine-rank by semantic similarity |
 | 4 | Build structured prompt: researcher role + gene + ranked abstracts + constraints |
 | 5 | Call OpenAI API (`gpt-4o`) — interpret only what the abstracts contain |
-| 6 | Write `app/data/llm_interpretation.csv` — gene, mechanism summary, evidence strength, PMIDs |
+| 6 | Write `app/data/output/llm_outputs/{gene}.json` — interpretation, citations, token usage per gene |
 
 Config in `pipeline.yaml` under `llm:` — model, query template, abstracts per gene, output path all configurable.
 
-Output `llm_interpretation.csv` is the direct input to the Phase 7 written report Discussion section.
+Output `app/data/output/llm_outputs/` is the direct input to the Phase 7 written report Discussion section.

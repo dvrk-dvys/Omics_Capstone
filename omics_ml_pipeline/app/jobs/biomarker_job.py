@@ -10,11 +10,12 @@ import os
 import numpy as np
 import pandas as pd
 import mlflow
+from rich.progress import track
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import StratifiedKFold
 from sklearn.preprocessing import LabelEncoder
 
-from app.utils.logging_utils import get_logger
+from app.utils.logging_utils import get_logger, console
 
 log = get_logger("biomarker_job")
 
@@ -37,12 +38,17 @@ def run(
         random_state=config["training"]["random_state"],
     )
 
-    log.info("Computing RF feature importance across CV folds...")
+    log.info("🌲 Computing RF feature importance across CV folds...")
     importance_matrix = np.zeros((config["training"]["cv_splits"], len(probe_cols)))
 
     rf = RandomForestClassifier(n_estimators=200, class_weight="balanced", random_state=42)
 
-    for fold_idx, (train_idx, _) in enumerate(cv.split(X, y)):
+    for fold_idx, (train_idx, _) in track(
+        enumerate(cv.split(X, y)),
+        description="RF importance folds",
+        total=cv.n_splits,
+        console=console,
+    ):
         rf.fit(X[train_idx], y[train_idx])
         importance_matrix[fold_idx] = rf.feature_importances_
 
@@ -64,15 +70,15 @@ def run(
     shortlist = shortlist.drop(columns=["rf_norm", "fc_norm"])
     shortlist = shortlist.sort_values("combined_score", ascending=False).reset_index(drop=True)
 
-    top_n = config.get("biomarker", {}).get("top_n", len(shortlist))
-    shortlist = shortlist.head(top_n)
+    min_score = config.get("biomarker", {}).get("min_score", 0.60)
+    shortlist = shortlist[shortlist["combined_score"] >= min_score]
 
     output_path = config["paths"]["biomarker_shortlist"]
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     shortlist.to_csv(output_path, index=False)
-    log.info(f"Saved biomarker shortlist: {output_path}  ({len(shortlist)} probes)")
+    log.info(f"💾 Saved biomarker shortlist: {output_path}  ({len(shortlist)} probes, min_score≥{min_score})")
 
-    log.info("\nTop 10 candidates:")
+    log.info("\n🎯 Top 10 candidates:")
     log.info(shortlist[["probe_id", "gene_symbol", "combined_score"]].head(10).to_string(index=False))
 
     with mlflow.start_run(run_name=f"{run_id}biomarker_shortlist"):

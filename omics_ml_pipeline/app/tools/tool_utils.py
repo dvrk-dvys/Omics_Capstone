@@ -1,12 +1,18 @@
 import os
+import threading
 
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+# Prevent HuggingFace tokenizers from forking child processes when called
+# from multiple threads — avoids SIGSEGV on macOS with ThreadPoolExecutor.
+os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
+
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from sentence_transformers import SentenceTransformer
 
 
 MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 EMBED_DEVICE = os.getenv("EMBED_DEVICE", "cpu")
 EMBED = None
+_ENCODE_LOCK = threading.Lock()
 
 
 def chunk_text(document, max_tokens=1000, overlap=200):
@@ -28,7 +34,10 @@ def chunk_text(document, max_tokens=1000, overlap=200):
 def get_model():
     global EMBED
     if EMBED is None:
-        # Use MPS on Apple Silicon; falls back to CPU if unavailable
-        # device = "mps" if SentenceTransformer(MODEL_NAME).device.type != "cuda" else "cuda"
         EMBED = SentenceTransformer(MODEL_NAME, device=EMBED_DEVICE)
     return EMBED
+
+def encode_safe(texts, **kwargs):
+    """Thread-safe wrapper around model.encode() — serializes calls via lock."""
+    with _ENCODE_LOCK:
+        return get_model().encode(texts, **kwargs)

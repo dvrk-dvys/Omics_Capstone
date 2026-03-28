@@ -50,14 +50,15 @@ query Target($id: String!) {
 
 class OpenTargetsTool:
 
-    def __init__(self):
+    def _make_client(self):
+        """Create a fresh gql Client per call — required for thread safety."""
         transport = RequestsHTTPTransport(url=OT_ENDPOINT, timeout=15)
-        self._client = Client(transport=transport, fetch_schema_from_transport=False)
+        return Client(transport=transport, fetch_schema_from_transport=False)
 
-    def _resolve_target_id(self, gene: str) -> tuple[str, str] | tuple[None, None]:
+    def _resolve_target_id(self, gene: str, client) -> tuple[str, str] | tuple[None, None]:
         """Map gene symbol → (ensembl_id, approved_name). Returns (None, None) on miss."""
         try:
-            res = self._client.execute(_SEARCH_QUERY, variable_values={"q": gene})
+            res = client.execute(_SEARCH_QUERY, variable_values={"q": gene})
             hits = res.get("search", {}).get("hits", [])
             if not hits:
                 return None, None
@@ -73,7 +74,8 @@ class OpenTargetsTool:
 
         Returns: [{id, title, url, text, source_type}]
         """
-        ensembl_id, approved_name = self._resolve_target_id(gene)
+        client = self._make_client()
+        ensembl_id, approved_name = self._resolve_target_id(gene, client)
         if not ensembl_id:
             print(f"[OpenTargets] no target found for {gene}")
             return []
@@ -81,7 +83,7 @@ class OpenTargetsTool:
         target_url = f"https://platform.opentargets.org/target/{ensembl_id}"
 
         try:
-            res = self._client.execute(_TARGET_QUERY, variable_values={"id": ensembl_id})
+            res = client.execute(_TARGET_QUERY, variable_values={"id": ensembl_id})
         except Exception as e:
             print(f"[OpenTargets] target query error for {gene}: {e}")
             return []

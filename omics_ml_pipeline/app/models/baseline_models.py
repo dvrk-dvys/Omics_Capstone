@@ -25,27 +25,32 @@ from hyperopt.pyll import scope
 # BASELINE MODELS
 # class_weight='balanced' applied wherever sklearn supports it
 # ---------------------------------------------------------------------------
-BASELINE_MODELS = {
-    "logistic_elasticnet": LogisticRegression(
-        solver="saga", l1_ratio=0.5,
-        C=1.0, max_iter=5000, class_weight="balanced", random_state=42
-    ),
-    "random_forest": RandomForestClassifier(
-        n_estimators=200, class_weight="balanced", random_state=42
-    ),
-    "linear_svc": LinearSVC(
-        class_weight="balanced", max_iter=5000, random_state=42
-    ),
-    "gaussian_nb": GaussianNB(),
-    "knn": KNeighborsClassifier(n_neighbors=5),
-    "mlp": MLPClassifier(
-        hidden_layer_sizes=(64, 32), max_iter=500, random_state=42
-    ),
-    "xgboost": XGBClassifier(
-        n_estimators=200, scale_pos_weight=3,   # 30 SONFH / 10 control
-        eval_metric="logloss", random_state=42
-    ),
-}
+def get_baseline_models(scale_pos_weight: float = 3.0) -> dict:
+    """Return baseline model registry. scale_pos_weight = n_disease / n_control."""
+    return {
+        "logistic_elasticnet": LogisticRegression(
+            solver="saga", l1_ratio=0.5,
+            C=1.0, max_iter=5000, class_weight="balanced", random_state=42
+        ),
+        "random_forest": RandomForestClassifier(
+            n_estimators=200, class_weight="balanced", random_state=42
+        ),
+        "linear_svc": LinearSVC(
+            class_weight="balanced", max_iter=5000, random_state=42
+        ),
+        "gaussian_nb": GaussianNB(),
+        "knn": KNeighborsClassifier(n_neighbors=5),
+        "mlp": MLPClassifier(
+            hidden_layer_sizes=(64, 32), max_iter=500, random_state=42
+        ),
+        "xgboost": XGBClassifier(
+            n_estimators=200, scale_pos_weight=scale_pos_weight,
+            eval_metric="logloss", random_state=42
+        ),
+    }
+
+
+BASELINE_MODELS = get_baseline_models()  # default 3.0 — overridden at runtime from config
 
 # Models that require feature scaling
 NEEDS_SCALING = {"logistic_elasticnet", "linear_svc", "knn", "mlp"}
@@ -62,25 +67,30 @@ def make_pipeline(name: str, model) -> Pipeline:
 # HYPEROPT SEARCH SPACES
 # Tuned models: xgboost + random_forest
 # ---------------------------------------------------------------------------
-HYPEROPT_SPACES = {
-    "xgboost": {
-        "max_depth":        scope.int(hp.quniform("max_depth", 3, 10, 1)),
-        "learning_rate":    hp.loguniform("learning_rate", -3, 0),
-        "n_estimators":     scope.int(hp.quniform("n_estimators", 100, 400, 50)),
-        "subsample":        hp.uniform("subsample", 0.6, 1.0),
-        "colsample_bytree": hp.uniform("colsample_bytree", 0.6, 1.0),
-        "reg_alpha":        hp.loguniform("reg_alpha", -5, 0),
-        "reg_lambda":       hp.loguniform("reg_lambda", -5, 0),
-        "scale_pos_weight": 3,
-        "eval_metric":      "logloss",
-        "random_state":     42,
-    },
-    "random_forest": {
-        "n_estimators":    scope.int(hp.quniform("rf_n_estimators", 100, 400, 50)),
-        "max_depth":       scope.int(hp.quniform("rf_max_depth", 3, 20, 1)),
-        "min_samples_split": scope.int(hp.quniform("rf_min_samples_split", 2, 10, 1)),
-        "max_features":    hp.choice("rf_max_features", ["sqrt", "log2"]),
-        "class_weight":    "balanced",
-        "random_state":    42,
-    },
-}
+def get_hyperopt_spaces(scale_pos_weight: float = 3.0) -> dict:
+    """Return hyperopt search spaces. scale_pos_weight = n_disease / n_control."""
+    return {
+        "xgboost": {
+            "max_depth":        scope.int(hp.quniform("max_depth", 3, 10, 1)),
+            "learning_rate":    hp.loguniform("learning_rate", -3, 0),
+            "n_estimators":     scope.int(hp.quniform("n_estimators", 100, 400, 50)),
+            "subsample":        hp.uniform("subsample", 0.6, 1.0),
+            "colsample_bytree": hp.uniform("colsample_bytree", 0.6, 1.0),
+            "reg_alpha":        hp.loguniform("reg_alpha", -5, 0),
+            "reg_lambda":       hp.loguniform("reg_lambda", -5, 0),
+            "scale_pos_weight": scale_pos_weight,
+            "eval_metric":      "logloss",
+            "random_state":     42,
+        },
+        "random_forest": {
+            "n_estimators":    scope.int(hp.quniform("rf_n_estimators", 100, 400, 50)),
+            "max_depth":       scope.int(hp.quniform("rf_max_depth", 3, 20, 1)),
+            "min_samples_split": scope.int(hp.quniform("rf_min_samples_split", 2, 10, 1)),
+            "max_features":    hp.choice("rf_max_features", ["sqrt", "log2"]),
+            "class_weight":    "balanced",
+            "random_state":    42,
+        },
+    }
+
+
+HYPEROPT_SPACES = get_hyperopt_spaces()  # default 3.0 — overridden at runtime from config
