@@ -1,0 +1,145 @@
+{
+  "probe_id": "11755190_a_at",
+  "gene_symbol": "POLR1D",
+  "rf_importance": 0.0062,
+  "selection_freq": 1.0,
+  "abs_fold_change": 1.372295300000001,
+  "combined_score": 0.303,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-03-30T14:18:36",
+  "interpretation": "POLR1D encodes a protein that is a component of DNA-directed RNA polymerases I and III, which are essential for synthesizing ribosomal RNA and various non-coding RNAs. This function is critical for ribosome biogenesis and cellular growth. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the role of POLR1D may be indirectly relevant, as steroid treatment can affect cellular proliferation and apoptosis in bone tissue, potentially leading to osteonecrosis. However, there is no direct evidence linking POLR1D to SONFH specifically, making the connection somewhat speculative. \n\nThe strength of the evidence regarding POLR1D's involvement in SONFH is classified as indirect, as it is primarily associated with other genetic disorders like Treacher Collins syndrome rather than bone pathology. Given the lack of direct evidence, the biological inference is that POLR1D may play a role in the cellular processes affected by steroid treatment, but its specific contribution to SONFH remains unclear. \n\nAs for clinical relevance, while POLR1D could theoretically serve as a biomarker due to its role in cellular processes, the current evidence does not support its use as a reliable early-detection biomarker for SONFH. Further research would be necessary to establish any definitive link.",
+  "citations": [
+    "POLR1D (P0DPB6). https://www.uniprot.org/uniprotkb/P0DPB6",
+    "POLR1D (P0DPB5). https://www.uniprot.org/uniprotkb/P0DPB5",
+    "POLR1D \u2014 POLR1D. https://platform.opentargets.org/target/ENSG00000186184",
+    "POLR1D \u2194 Treacher Collins syndrome 2. https://platform.opentargets.org/target/ENSG00000186184/associations",
+    "POLR1D \u2194 Treacher-Collins syndrome. https://platform.opentargets.org/target/ENSG00000186184/associations",
+    "POLR1D \u2194 genetic disorder. https://platform.opentargets.org/target/ENSG00000186184/associations",
+    "POLR1D \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000186184/associations",
+    "POLR1D. https://en.wikipedia.org/wiki/POLR1D",
+    "Treacher Collins syndrome. https://en.wikipedia.org/wiki/Treacher_Collins_syndrome",
+    "Treacher Collins syndrome. https://en.wikipedia.org/wiki/Treacher_Collins_syndrome",
+    "Treacher Collins syndrome. https://en.wikipedia.org/wiki/Treacher_Collins_syndrome",
+    "List of genetic disorders. https://en.wikipedia.org/wiki/List_of_genetic_disorders"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4956,
+    "completion_tokens": 263,
+    "total_tokens": 5219,
+    "estimated_cost_usd": 0.000901
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P0DPB6",
+          "title": "POLR1D (P0DPB6)",
+          "url": "https://www.uniprot.org/uniprotkb/P0DPB6",
+          "text": "Protein: DNA-directed RNA polymerases I and III subunit RPAC2\nFunction: DNA-dependent RNA polymerase catalyzes the transcription of DNA into RNA using the four ribonucleoside triphosphates as substrates. Common component of RNA polymerases I and III which synthesize ribosomal RNA precursors and short non-coding RNAs including 5S rRNA, snRNAs, tRNAs and miRNAs, respectively",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P0DPB5",
+          "title": "POLR1D (P0DPB5)",
+          "url": "https://www.uniprot.org/uniprotkb/P0DPB5",
+          "text": "Protein: Protein POLR1D, isoform 2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000186184::function",
+          "title": "POLR1D \u2014 POLR1D",
+          "url": "https://platform.opentargets.org/target/ENSG00000186184",
+          "text": "Function: DNA-dependent RNA polymerase catalyzes the transcription of DNA into RNA using the four ribonucleoside triphosphates as substrates. Common component of RNA polymerases I and III which synthesize ribosomal RNA precursors and short non-coding RNAs including 5S rRNA, snRNAs, tRNAs and miRNAs, respectively.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000186184::MONDO_0013385",
+          "title": "POLR1D \u2194 Treacher Collins syndrome 2",
+          "url": "https://platform.opentargets.org/target/ENSG00000186184/associations",
+          "text": "Disease: Treacher Collins syndrome 2\nDescription: Any Treacher-Collins syndrome in which the cause of the disease is a mutation in the POLR1D gene.\nAssociation score: 0.754",
+          "cos_sim_score": 0.7535618418937056,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000186184::MONDO_0002457",
+          "title": "POLR1D \u2194 Treacher-Collins syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000186184/associations",
+          "text": "Disease: Treacher-Collins syndrome\nDescription: A congenital disorder of craniofacial development characterized by bilateral symmetrical oto-mandibular dysplasia without abnormalities of the extremities, and associated with several head and neck defects.\nAssociation score: 0.685",
+          "cos_sim_score": 0.6846422775608979,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000186184::EFO_0000508",
+          "title": "POLR1D \u2194 genetic disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000186184/associations",
+          "text": "Disease: genetic disorder\nDescription: Genetic diseases are diseases in which inherited genes predispose to increased risk. The genetic disorders associated with cancer often result from an alteration or mutation in a single gene. The diseases range from rare dominant cancer family syndrome to familial tendencies in which low-penetrance genes may interact with other genes or environmental factors to induce cancer. Research may involve clinical, epidemiologic, and laboratory studies of persons, families, and populations at high risk of these disorders.\nAssociation score: 0.186",
+          "cos_sim_score": 0.18641887175432353,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000186184::EFO_0005772",
+          "title": "POLR1D \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000186184/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.147",
+          "cos_sim_score": 0.14710899391749138,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::POLR1D",
+          "title": "POLR1D",
+          "url": "https://en.wikipedia.org/wiki/POLR1D",
+          "text": "DNA-directed RNA polymerases I and III subunit RPAC2 is a protein that in humans is encoded by the POLR1D gene.\n\nInteractions\nPOLR1D has been shown to interact with POLR1C.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.5271686315536499,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Treacher Collins syndrome",
+          "title": "Treacher Collins syndrome",
+          "url": "https://en.wikipedia.org/wiki/Treacher_Collins_syndrome",
+          "text": "Genetics\nMutations in TCOF1, POLR1C, or POLR1D genes can cause Treacher Collins syndrome. TCOF1 gene mutations are the most common cause of the disorder, with POLR1C and POLR1D gene mutations causing an additional 2% of cases. In individuals without an identified mutation in one of these genes, the genetic cause of the condition is unknown. The TCOF1, POLR1C, and POLR1D genes code for proteins which play important roles in the early development of bones and other tissues of the face. Mutations in these genes  reduce the production of rRNA, which may trigger the self-destruction (apoptosis) of certain cells involved in the development of facial bones and tissues. It is unclear why the effects of a reduction in rRNA are limited to facial development. Mutations in TCOF1 and POLR1D cause the autosomal dominant form of Treacher Collins, and mutations in POLR1C cause the autosomal recessive form.\n\nTCOF1\nTCOF1 is the primary gene associated with TCS, a mutation in this gene being found in 90\u201395% of the individuals with TCS. However, in some individuals with typical symptoms of TCS, mutations in TCOF1 have not been found. Investigation of the DNA has resulted in the identification of the kind of mutations found in TCOF1. The majority of mutations are small deletions or insertions, though splice site and missense mutations also have been identified.\nMutation analysis has unveiled more than 100 disease-causing mutations in TCOF1, which are mostly family-specific mutations. The only recurrent mutation accounts for about 17% of the cases.\nTCOF1 is found on the 5th chromosome in the 5q32 region. It codes for a relatively simple nucleolar protein called treacle, that is thought to be involved in ribosome assembly. Mutations in TCOF1 lead to haploinsufficiency of the treacle protein. Haploinsufficiency occurs when a diploid organism has only one functional copy of a gene, because the other copy is inactivated by a mutation. The one normal copy of the gene does not produce enough protein, causing disease. Haploinsufficiency of the treacle protein leads to a depletion of the neural crest cell precursor, which leads to a reduced number of crest cells migrating to the first and second pharyngeal arches. These cells play an important role in the development of the craniofacial appearance, and loss of one copy of treacle affects the cells' ability to form the bones and tissues of the face.\n\nOther mutations\nPOLR1C and POLR1D mutations are responsible for a minority of cases of Treacher Collins. POLR1C is found on chromosome 6 at position 6q21.2 and POLR1D is found on chromosome 13 at position 13q12.2. Those genes code for a protein subunits shared between RNA polymerase I and III. Both of these polymerases are important for ribosome biogenesis.\n\nDiagnosis\nGenetic counseling\nTCS is inherited in an autosomal dominant manner and the penetrance of the affected gene is almost complete. Some recent investigations, though, described some rare cases in which the penetrance in TCS was not complete. Causes may be a variable expressivity, an incomplete penetrance or germline mosaicism. Only 40% of the mutations are inherited. The remaining 60% are a result of a de novo mutation, where a child has a new mutation in the responsible gene and did not inherit it from either parent. In the outcome of the disease, inter- and intrafamilial variability occurs. This suggests that when an affected child is born, it is important to investigate the parents to determine whether the affected gene is present, because the parent could have a mild form of the disease that has not been diagnosed. In this case, the risk of having another affected child is 50%. If the parents do not have the affected gene, the recurrence risk appears to be low. In following generations, the severity of the clinical symptoms increases.\n\nPrenatal diagnosis\nMutations in the main genes responsible for TCS can be detected with chorionic villus sampling or amniocentesis. Rare mutations may not be detected by these methods. Ultrasonography can be used to detect craniofacial abnormalities later in pregnancy, but may not detect milder cases.",
+          "cos_sim_score": 0.31516021490097046,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Treacher Collins syndrome",
+          "title": "Treacher Collins syndrome",
+          "url": "https://en.wikipedia.org/wiki/Treacher_Collins_syndrome",
+          "text": "Treacher Collins syndrome (TCS) is a genetic disorder characterized by deformities of the ears, eyes, cheekbones, and chin. The degree to which a person is affected may vary from mild to severe. Complications may include breathing problems, problems seeing, cleft palate, and hearing loss. Those affected generally have normal intelligence.\nTCS is usually autosomal dominant. More than half of occurrences are as a result of a new mutation rather than inherited. The involved genes may include TCOF1, POLR1C, or POLR1D. Diagnosis is generally based on symptoms and X-rays, and potentially confirmation by genetic testing.\nTreacher Collins syndrome is not curable. Symptoms may be managed with reconstructive surgery, hearing aids, speech therapy, and other assistive devices. Life expectancy is generally normal. TCS occurs in about one in 50,000 people. The syndrome is named after Edward Treacher Collins, an English surgeon and ophthalmologist, who described its essential traits in 1900.\n\nSigns and symptoms\nSymptoms in people with Treacher Collins syndrome vary. Some individuals are so mildly affected that they remain undiagnosed, while others have moderate to severe facial involvement and life-threatening airway compromise. Most of the features of TCS are symmetrical and are already recognizable at birth.\nThe most common symptom of Treacher Collins syndrome is underdevelopment of the lower jaw and underdevelopment of the zygomatic bone. This can be accompanied by the tongue being retracted. The small mandible can result in a poor occlusion of the teeth or in more severe cases, trouble breathing or swallowing. The respiratory system of a child with Treacher Collins syndrome is the primary concern at birth, with other issues only addressed once respiratory function has been stabilized. Underdevelopment of the zygomatic bone gives the cheeks a sunken appearance.\nThe external ear is sometimes small, rotated, malformed, or absent entirely in people with TCS. Symmetric, bilateral narrowing or absence of the external ear canal, is also described. In most cases, the bones of the middle ear and the middle ear cavity are misshapen. Inner ear malformations are rarely described. As a result of these abnormalities, a majority of the individuals with TCS have conductive hearing loss.\nMost affected people also experience eye problems, including coloboma (notches) in the lower eyelids, partial or complete absence of eyelashes on the lower lid, downward angled eyelids, drooping of upper and lower eyelids, and narrowing of the tear ducts. Vision loss can occur and is associated with strabismus, refractive errors, and anisometropia. It can also be caused by severely dry eyes, a consequence of lower eyelid abnormalities and frequent eye infections.\nAlthough an abnormally shaped skull is not distinctive for Treacher Collins syndrome, brachycephaly with bitemporal narrowing is sometimes observed. Cleft palate is also common.\nDental anomalies are seen in 60% of affected people, including tooth agenesis (33%), discoloration (enamel opacities) (20%), malplacement of the maxillary first molars (13%), and wide spacing of the teeth. In some cases, dental anomalies in combination with mandible hypoplasia result in a malocclusion. This can lead to problems with food intake and the ability to close the mouth.\nLess common features of TCS may add to an affected person's breathing problems, including sleep apnea. Choanal atresia or stenosis is a narrowing or absence of the choanae, the internal opening of the nasal passages, which may also be observed. Underdevelopment of the pharynx can also narrow the airway.\nFeatures related to TCS that are seen less frequently include nasal deformities, high-arched palate, macrostomia, preauricular hair displacement, cleft palate, hypertelorism, notched upper eyelid, and congenital heart defects.\nAlthough facial deformity is often associated with developmental delay and intellectual disability, more than 95% of people affected with TCS have normal intelligence. The psychological and social problems associated with facial deformity can affect quality of life in individuals with TCS.",
+          "cos_sim_score": 0.09759995341300964,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Treacher Collins syndrome",
+          "title": "Treacher Collins syndrome",
+          "url": "https://en.wikipedia.org/wiki/Treacher_Collins_syndrome",
+          "text": "Prenatal diagnosis\nMutations in the main genes responsible for TCS can be detected with chorionic villus sampling or amniocentesis. Rare mutations may not be detected by these methods. Ultrasonography can be used to detect craniofacial abnormalities later in pregnancy, but may not detect milder cases.\n\nClinical findings\nTCS is often first suspected with characteristic symptoms observed during a physical exam. The clinical presentation of TCS can resemble other diseases, making diagnosis difficult. The OMENS classification was developed as a comprehensive and stage-based approach to differentiate the diseases. This acronym describes five distinct dysmorphic manifestations, namely orbital asymmetry, mandibular hypoplasia, auricular deformity, nerve development, and soft-tissue disease.\nOrbital symmetry\n\nO0: normal orbital size, position\nO1: abnormal orbital size\nO2: abnormal orbital position\nO3: abnormal orbital size and position\nMandible\n\nM0: normal mandible\nM1: small mandible and glenoid fossa with short ramus\nM2: ramus short and abnormally shaped\n2A: glenoid fossa in anatomical acceptable position\n2B: Temperomandibular joint inferiorly (TMJ), medially, anteriorly displaced, with severely hypoplastic condyle\nM3: Complete absence of ramus, glenoid fossa, and TMJ\nEar\n\nE0: normal ear\nE1: Minor hypoplasia and cupping with all structures present\nE2: Absence of external auditory canal with variable hypoplasia of the auricle\nE3: Malposition of the lobule with absent auricle, lobular remnant usually inferior anteriorly displaced\nFacial nerve\n\nN0: No facial nerve involvement\nN1: Upper facial nerve involvement (temporal or zygomatic branches)\nN2: Lower facial nerve involvement (buccal, mandibular or cervical)\nN3: All branches affected\nSoft tissue\n\nS0: No soft tissue or muscle deficiency\nS1: Minimal tissue or muscle deficiency\nS2: Moderate tissue or muscle deficiency\nS3: Severe tissue or muscle deficiency\n\nRadiographs\nA few techniques are used to confirm the diagnosis in TCS.\nAn orthopantomogram (OPG) is a panoramic dental X-ray of the upper and lower jaw. It shows a two-dimensional image from ear to ear. Particularly, OPG facilitates an accurate postoperative follow-up and monitoring of bone growth under a mono- or double-distractor treatment. Thereby, some TCS features could be seen on OPG, but better techniques are used to include the whole spectrum of TCS abnormalities instead of showing only the jaw abnormalities.\nAnother method of radiographic evaluation is taking an X-ray image of the whole head. The lateral cephalometric radiograph in TCS shows hypoplasia of the facial bones, like the malar bone, mandible, and the mastoid.\nFinally, occipitomental radiographs are used to detect hypoplasia or discontinuity of the zygomatic arch.\n\nCT Scan\nA temporal-bone CT using thin slices makes it possible to diagnose the degree of stenosis and atresia of the external auditory canal, the status of the middle ear cavity, the absent or dysplastic and rudimentary ossicles, or inner ear abnormalities such as a deficient cochlea. Two- and three-dimensional CT reconstructions with VRT and bone and skin-surfacing are helpful for more accurate staging and the three-dimensional  planning of mandibular and external ear reconstructive surgery.\n\nDifferential diagnosis\nOther diseases have similar characteristics to Treacher Collins syndrome. In the differential diagnosis, one should consider the acrofacial dysostoses. The facial appearance resembles that of Treacher Collins syndrome, but additional limb abnormalities occur in those persons. Examples of these diseases are Nager syndrome and  Miller syndrome.\nThe oculoauriculovertebral spectrum should also be considered in the differential diagnosis. An example is hemifacial microsomia, which primarily affects development of the ear, mouth, and mandible. This anomaly may occur bilaterally. Another disease which belongs to this spectrum is Goldenhar syndrome, which includes vertebral abnormalities, epibulbar dermoids and facial deformities.",
+          "cos_sim_score": 0.08913567662239075,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of genetic disorders",
+          "title": "List of genetic disorders",
+          "url": "https://en.wikipedia.org/wiki/List_of_genetic_disorders",
+          "text": "The following is a list of genetic disorders and if known, type of mutation and for the chromosome involved. Although the parlance \"disease-causing gene\" is common, it is the occurrence of an abnormality in the parents that causes the impairment to develop within the child. There are over 6,000 known genetic disorders in humans.\n\nMost common\nP \u2013 Point mutation, or any insertion/deletion entirely inside one gene\nD \u2013 Deletion of a gene or genes\nDup - Duplication of a gene or genes\nC \u2013 Whole chromosome extra, missing, or both (see chromosome abnormality)\nT \u2013 Trinucleotide repeat disorders: gene is extended in length\n\nFull genetic disorders list\nReferences\nFurther reading\n\"Specific Genetic Disorders\". National Human Genome Research Institute (NHGRI). genome.gov. Retrieved 15 November 2017.\n\"Congenital and Genetic Diseases | Genetic and Rare Diseases Information Center (GARD) \u2013 an NCATS Program\". rarediseases.info.nih.gov. NIH.gov. Retrieved 15 November 2017.\n\"Color Vision deficiency | Genetics Home Reference\". ghr.nlm.nih.gov.",
+          "cos_sim_score": 0.0667225569486618,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

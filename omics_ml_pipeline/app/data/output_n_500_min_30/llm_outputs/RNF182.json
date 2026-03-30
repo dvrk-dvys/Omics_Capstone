@@ -1,0 +1,137 @@
+{
+  "probe_id": "11737774_a_at",
+  "gene_symbol": "RNF182",
+  "rf_importance": 0.001,
+  "selection_freq": 0.2,
+  "abs_fold_change": 2.4195157000000007,
+  "combined_score": 0.3543,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-03-30T14:01:47",
+  "interpretation": "RNF182 encodes an E3 ubiquitin-protein ligase that plays a crucial role in the ubiquitination process, targeting proteins for degradation via the ubiquitin-proteasome pathway. This gene has been shown to mediate the degradation of ATP6V0C and inhibit the innate immune response by degrading the NF-kappa-B component RELA, which is involved in inflammatory responses. \n\nIn the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the role of RNF182 in regulating inflammation and cellular stress responses could be significant, as steroid treatment is known to induce bone and vascular damage, potentially leading to osteonecrosis. However, direct evidence linking RNF182 specifically to SONFH is lacking, making the connection more speculative. \n\nThe strength of the evidence regarding RNF182's involvement in SONFH is indirect, as it is based on its known biological functions rather than direct studies on SONFH. Given its role in inflammation and cellular regulation, RNF182 may serve as a potential early-detection biomarker for SONFH, but further research is needed to establish its clinical relevance in this specific context. \n\nOverall, while RNF182 shows promise as a biomarker due to its biological functions, the evidence for its direct involvement in SONFH is insufficient at this time.",
+  "citations": [
+    "RNF182 (Q8N6D2). https://www.uniprot.org/uniprotkb/Q8N6D2",
+    "RNF182 \u2014 RNF182. https://platform.opentargets.org/target/ENSG00000180537",
+    "RNF182 \u2194 periapical tissue disease. https://platform.opentargets.org/target/ENSG00000180537/associations",
+    "RNF182 \u2194 diabetic ketoacidosis. https://platform.opentargets.org/target/ENSG00000180537/associations",
+    "RNF182 \u2194 Thrombophlebitis. https://platform.opentargets.org/target/ENSG00000180537/associations",
+    "RNF182 \u2194 Phlebitis. https://platform.opentargets.org/target/ENSG00000180537/associations",
+    "RING finger domain. https://en.wikipedia.org/wiki/RING_finger_domain",
+    "RING finger domain. https://en.wikipedia.org/wiki/RING_finger_domain",
+    "RING finger domain. https://en.wikipedia.org/wiki/RING_finger_domain",
+    "RING finger domain. https://en.wikipedia.org/wiki/RING_finger_domain",
+    "RING finger domain. https://en.wikipedia.org/wiki/RING_finger_domain"
+  ],
+  "token_usage": {
+    "prompt_tokens": 3758,
+    "completion_tokens": 267,
+    "total_tokens": 4025,
+    "estimated_cost_usd": 0.000724
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q8N6D2",
+          "title": "RNF182 (Q8N6D2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8N6D2",
+          "text": "Protein: E3 ubiquitin-protein ligase RNF182\nFunction: E3 ubiquitin-protein ligase that mediates the ubiquitination of ATP6V0C and targets it to degradation via the ubiquitin-proteasome pathway (PubMed:18298843). Also plays a role in the inhibition of TLR-triggered innate immune response by mediating 'Lys'-48-linked ubiquitination and subsequent degradation of NF-kappa-B component RELA (PubMed:31432514)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000180537::function",
+          "title": "RNF182 \u2014 RNF182",
+          "url": "https://platform.opentargets.org/target/ENSG00000180537",
+          "text": "Function: E3 ubiquitin-protein ligase that mediates the ubiquitination of ATP6V0C and targets it to degradation via the ubiquitin-proteasome pathway (PubMed:18298843). Also plays a role in the inhibition of TLR- triggered innate immune response by mediating 'Lys'-48-linked ubiquitination and subsequent degradation of NF-kappa-B component RELA (PubMed:31432514).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000180537::EFO_0010688",
+          "title": "RNF182 \u2194 periapical tissue disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000180537/associations",
+          "text": "Disease: periapical tissue disease\nDescription: Any disease of the periapical tissue.\nAssociation score: 0.305",
+          "cos_sim_score": 0.304701328693288,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000180537::EFO_1000897",
+          "title": "RNF182 \u2194 diabetic ketoacidosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000180537/associations",
+          "text": "Disease: diabetic ketoacidosis\nDescription: The metabolic condition resulted from uncontrolled diabetes mellitus, in which the shift of acid-base status of the body toward the acid side because of loss of base or retention of acids other than carbonic acid is accompanied by the accumulation of ketone bodies in body tissues and fluids.\nAssociation score: 0.293",
+          "cos_sim_score": 0.29322337520183595,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000180537::HP_0004418",
+          "title": "RNF182 \u2194 Thrombophlebitis",
+          "url": "https://platform.opentargets.org/target/ENSG00000180537/associations",
+          "text": "Disease: Thrombophlebitis\nDescription: Inflammation of a vein associated with venous thrombosis (blood clot formation within the vein).\nAssociation score: 0.199",
+          "cos_sim_score": 0.19910693659083464,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000180537::EFO_1001395",
+          "title": "RNF182 \u2194 Phlebitis",
+          "url": "https://platform.opentargets.org/target/ENSG00000180537/associations",
+          "text": "Disease: Phlebitis\nDescription: Inflammation of a vein.\nAssociation score: 0.199",
+          "cos_sim_score": 0.19910693659083464,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::RING finger domain",
+          "title": "RING finger domain",
+          "url": "https://en.wikipedia.org/wiki/RING_finger_domain",
+          "text": "RNFT1, SH3MD4, SH3RF1, SH3RF2, SYVN1, TIF1, TMEM118, TOPORS, TRAF2, TRAF3, TRAF4, TRAF5, TRAF6, TRAF7, TRAIP, TRIM2, TRIM3, TRIM4, TRIM5, TRIM6, TRIM7, TRIM8, TRIM9, TRIM10, TRIM11, TRIM13, TRIM15, TRIM17, TRIM21, TRIM22, TRIM23, TRIM24, TRIM25, TRIM26, TRIM27, TRIM28, TRIM31, TRIM32, TRIM33, TRIM34, TRIM35, TRIM36, TRIM38, TRIM39, TRIM40, TRIM41, TRIM42, TRIM43, TRIM45, TRIM46, TRIM47, TRIM48, TRIM49, TRIM50, TRIM52, TRIM54, TRIM55, TRIM56, TRIM58, TRIM59, TRIM60, TRIM61, TRIM62, TRIM63, TRIM65, TRIM67, TRIM68, TRIM69, TRIM71, TRIM72, TRIM73, TRIM74, TRIML1, TTC3, UHRF1, UHRF2, VPS11, VPS8, ZNF179, ZNF294, ZNF313, ZNF364, ZNF451, ZNF650, ZNFB7, ZNRF1, ZNRF2, ZNRF3, ZNRF4, and ZSWIM2.",
+          "cos_sim_score": 0.30256834626197815,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::RING finger domain",
+          "title": "RING finger domain",
+          "url": "https://en.wikipedia.org/wiki/RING_finger_domain",
+          "text": "AMFR, BARD1, BBAP, BFAR, BIRC2, BIRC3, BIRC7, BIRC8, BMI1, BRAP, BRCA1, CBL, CBLB, CBLC, CBLL1, CHFR, CNOT4, COMMD3, DTX1, DTX2, DTX3, DTX3L, DTX4, DZIP3, HCGV, HLTF, HOIL-1, IRF2BP2, LNX1, LNX2, LONRF1, LONRF2, LONRF3, MARCH1, MARCH2, MARCH3, MARCH4, MARCH5, MARCH6, MARCH7, MARCH8, MARCH9, MARCH10, MDM2, MEX3A, MEX3B, MEX3C, MEX3D, MGRN1, MIB1, MID1, MID2, MKRN1, MKRN2, MKRN3, MKRN4, MNAT1, MYLIP, NFX1, NFX2, PCGF1, PCGF2, PCGF3, PCGF4, PCGF5, PCGF6, PDZRN3, PDZRN4, PEX10, PHRF1, PJA1, PJA2, PML, PML-RAR, PXMP3, RAD18, RAG1, RAPSN, RBCK1, RBX1, RC3H1, RC3H2, RCHY1, RFP2, RFPL1, RFPL2, RFPL3, RFPL4B, RFWD2, RFWD3, RING1, RNF2, RNF4, RNF5, RNF6, RNF7, RNF8, RNF10, RNF11, RNF12, RNF13, RNF14, RNF19A, RNF20, RNF24, RNF25, RNF26, RNF32, RNF38, RNF39, RNF40, RNF41, RNF43, RNF44, RNF55, RNF71, RNF103, RNF111, RNF113A, RNF113B, RNF121, RNF122, RNF123, RNF125, RNF126, RNF128, RNF130, RNF133, RNF135, RNF138, RNF139, RNF141, RNF144A, RNF145, RNF146, RNF148, RNF149, RNF150, RNF151, RNF152, RNF157, RNF165, RNF166, RNF167, RNF168, RNF169, RNF170, RNF175, RNF180, RNF181, RNF182, RNF185, RNF207, RNF213, RNF215, RNFT1, SH3MD4, SH3RF1, SH3RF2, SYVN1, TIF1, TMEM118, TOPORS, TRAF2, TRAF3, TRAF4, TRAF5, TRAF6, TRAF7, TRAIP, TRIM2, TRIM3, TRIM4, TRIM5, TRIM6, TRIM7, TRIM8, TRIM9, TRIM10, TRIM11, TRIM13, TRIM15, TRIM17, TRIM21, TRIM22, TRIM23, TRIM24, TRIM25, TRIM26, TRIM27, TRIM28, TRIM31, TRIM32,",
+          "cos_sim_score": 0.2068927139043808,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::RING finger domain",
+          "title": "RING finger domain",
+          "url": "https://en.wikipedia.org/wiki/RING_finger_domain",
+          "text": "In molecular biology, a RING (short for Really Interesting New Gene) finger domain is a protein structural domain of zinc finger type which contains a C3HC4 amino acid motif which binds two zinc cations (seven cysteines and one histidine arranged non-consecutively).  This protein domain contains 40 to 60 amino acids. Many proteins containing a RING finger play a key role in the ubiquitination pathway. Conversely, proteins with RING finger domains are the largest type of ubiquitin ligases in the human genome.\n\nZinc fingers\nZinc finger (Znf) domains are relatively small protein motifs that bind one or more zinc atoms, and which usually contain multiple finger-like protrusions that make tandem contacts with their target molecule. They bind DNA, RNA, protein and/or lipid substrates. Their binding properties depend on the amino acid sequence of the finger domains and of the linker between fingers, as well as on the higher-order structures and the number of fingers. Znf domains are often found in clusters, where fingers can have different binding specificities. There are many superfamilies of Znf motifs, varying in both sequence and structure.\nThey display considerable versatility in binding modes, even between members of the same class (e.g. some bind DNA, others protein), suggesting that Znf motifs are stable scaffolds that have evolved specialised functions. For example, Znf-containing proteins function in gene transcription, translation, mRNA trafficking, cytoskeleton organisation, epithelial development, cell adhesion, protein folding, chromatin remodelling and zinc sensing. Zinc-binding motifs are stable structures, and they rarely undergo conformational changes upon binding their target.\nSome Zn finger domains have diverged such that they still maintain their core structure, but have lost their ability to bind zinc, using other means such as salt bridges or binding to other metals to stabilise the finger-like folds.\n\nFunction\nMany RING finger domains simultaneously bind ubiquitination enzymes and their substrates and hence function as ligases. Ubiquitination in turn targets the substrate protein for degradation.\n\nMeiotic recombination\nDuring meiosis, crossing over between homologous chromosomes (homologs) promotes accurate chromosome segregation.  In mammals, the ring-domain proteins RNF212, HEI10 and RNF212B facilitate crossing over between each pair of homologs during meiosis.  Studies in the mouse showed that these pro-crossover ring-domain proteins have distinct, but interdependent functions, in facilitating the homologous recombination and DNA repair processes that produce crossovers.\n\nStructure\nThe RING finger domain has the consensus sequence C-X2-C-X[9-39]-C-X[1-3]-H-X[2-3]-C-X2-C-X[4-48]-C-X2-C.\nwhere:\n\nC is a conserved cysteine residue involved zinc coordination,\nH is a conserved histidine involved in zinc coordination,\nZn is zinc atom, and\nX is any amino acid residue.\nThe following is a schematic representation of the structure of the RING finger domain:",
+          "cos_sim_score": 0.20023533701896667,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::RING finger domain",
+          "title": "RING finger domain",
+          "url": "https://en.wikipedia.org/wiki/RING_finger_domain",
+          "text": "References\nExternal links\nRING+Finger+Domains at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.16142231225967407,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::RING finger domain",
+          "title": "RING finger domain",
+          "url": "https://en.wikipedia.org/wiki/RING_finger_domain",
+          "text": "Examples\nExamples of human genes which encode proteins containing a RING finger domain include:",
+          "cos_sim_score": 0.1563449501991272,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

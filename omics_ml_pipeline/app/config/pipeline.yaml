@@ -29,7 +29,6 @@ paths:
 
   feature_select_dir:  app/data/output/feature_selection
   gene_rankings:       app/data/output/feature_selection/gene_rankings.csv
-  top_features_csv:    app/data/output/feature_selection/top50_features.csv
 
   model_output_dir:  app/data/output/models
   model_comparison:  app/data/output/models/model_comparison.csv
@@ -45,20 +44,26 @@ paths:
 # BIOMARKER
 # ---------------------------------------------------------------------------
 biomarker:
-  min_score: 0.60   # minimum combined_score threshold for shortlist inclusion (RF importance + fold-change, normalized avg)
+  min_score: 0.50 #.30 for 500 .55 for 100
+    # minimum combined_score threshold for shortlist inclusion (RF importance + fold-change, normalized avg)
+    # NOTE: lowered from 0.60 → 0.30 after top_n_feats increased to 500.
+    # RF importance dilutes across more features so raw scores are smaller.
+  top_n_display: 12   # how many top candidates to highlight across reporting outputs
+                      # routed to → biomarker_job.py  : shortlist preview log
+                      # routed to → train_eval_job.py : fig 4 scatter gene labels
 
 # ---------------------------------------------------------------------------
 # PREPROCESSING
 # ---------------------------------------------------------------------------
 preprocessing:
-  iqr_threshold: 0.5
+  iqr_threshold: 0.2
 
 # ---------------------------------------------------------------------------
 # FEATURE SELECTION
 # ---------------------------------------------------------------------------
 feature_selection:
-  top_n: 50
-  method: fc       # 'fc' = fold-change | 'var' = variance
+  top_n_feats: 100 #500
+  method: fc       # kept for config compat; ranking now uses hybrid score regardless
 
 # ---------------------------------------------------------------------------
 # TRAINING

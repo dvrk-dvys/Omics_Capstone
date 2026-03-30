@@ -1,0 +1,145 @@
+{
+  "probe_id": "11733360_x_at",
+  "gene_symbol": "SLC14A1",
+  "rf_importance": 0.0008,
+  "selection_freq": 1.0,
+  "abs_fold_change": 2.661250633333334,
+  "combined_score": 0.3842,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-03-30T13:55:26",
+  "interpretation": "SLC14A1 encodes the urea transporter 1 (UT-B), which is primarily involved in the transport of urea across cell membranes, particularly in erythrocytes and the kidneys. This function is crucial for maintaining osmotic balance and proper renal function, which can be affected in various pathological conditions. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), while there is no direct evidence linking SLC14A1 to the disease, the role of urea transport in cellular metabolism and tissue health suggests a potential indirect connection. Steroid administration can lead to metabolic changes that may affect urea transport and, consequently, bone health. \n\nThe strength of the evidence regarding SLC14A1's role in SONFH is indirect, as no specific studies were found directly linking this gene to the disease. However, the gene's involvement in renal function and potential implications in metabolic processes could make it relevant in the broader context of steroid-induced complications. \n\nAs a candidate biomarker, SLC14A1 may have potential for early detection of SONFH, particularly if further studies confirm its involvement in the metabolic pathways affected by steroid use. However, more targeted research is needed to establish its clinical utility in this specific context.",
+  "citations": [
+    "SLC14A1 (Q13336). https://www.uniprot.org/uniprotkb/Q13336",
+    "SLC14A1 (Q13336-2). https://www.uniprot.org/uniprotkb/Q13336-2",
+    "SLC14A1 \u2014 SLC14A1. https://platform.opentargets.org/target/ENSG00000141469",
+    "SLC14A1 \u2194 urinary bladder cancer. https://platform.opentargets.org/target/ENSG00000141469/associations",
+    "SLC14A1 \u2194 urinary bladder carcinoma. https://platform.opentargets.org/target/ENSG00000141469/associations",
+    "SLC14A1 \u2194 Increased total eosinophil count. https://platform.opentargets.org/target/ENSG00000141469/associations",
+    "SLC14A1 \u2194 Back pain. https://platform.opentargets.org/target/ENSG00000141469/associations",
+    "Urea transporter 1. https://en.wikipedia.org/wiki/Urea_transporter_1",
+    "Urea transporter 2. https://en.wikipedia.org/wiki/Urea_transporter_2",
+    "Urea transporter. https://en.wikipedia.org/wiki/Urea_transporter",
+    "GLUT2. https://en.wikipedia.org/wiki/GLUT2",
+    "Kidd antigen system. https://en.wikipedia.org/wiki/Kidd_antigen_system"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4431,
+    "completion_tokens": 256,
+    "total_tokens": 4687,
+    "estimated_cost_usd": 0.000818
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q13336",
+          "title": "SLC14A1 (Q13336)",
+          "url": "https://www.uniprot.org/uniprotkb/Q13336",
+          "text": "Protein: Urea transporter 1\nFunction: Mediates the transport of urea driven by a concentration gradient across the cell membrane of erythrocytes (PubMed:10514515, PubMed:7797558, PubMed:7989337, PubMed:8997401). Also mediates the transport of urea across the cell membrane of the renal inner medullary collecting duct which is critical to the urinary concentrating mechanism (By similarity). Facilitates water transport in erythrocytes (By similarity)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q13336-2",
+          "title": "SLC14A1 (Q13336-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q13336-2",
+          "text": "Protein: Isoform 2 of Urea transporter 1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000141469::function",
+          "title": "SLC14A1 \u2014 SLC14A1",
+          "url": "https://platform.opentargets.org/target/ENSG00000141469",
+          "text": "Function: Mediates the transport of urea driven by a concentration gradient across the cell membrane of erythrocytes (PubMed:10514515, PubMed:7797558, PubMed:7989337, PubMed:8997401). Also mediates the transport of urea across the cell membrane of the renal inner medullary collecting duct which is critical to the urinary concentrating mechanism (By similarity). Facilitates water transport in erythrocytes (By similarity).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000141469::MONDO_0001187",
+          "title": "SLC14A1 \u2194 urinary bladder cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000141469/associations",
+          "text": "Disease: urinary bladder cancer\nDescription: A primary or metastatic malignant neoplasm involving the bladder.\nAssociation score: 0.490",
+          "cos_sim_score": 0.48981250023607875,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000141469::MONDO_0004986",
+          "title": "SLC14A1 \u2194 urinary bladder carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000141469/associations",
+          "text": "Disease: urinary bladder carcinoma\nDescription: A carcinoma that arises from epithelial cells of the urinary bladder\nAssociation score: 0.408",
+          "cos_sim_score": 0.40844612979451406,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000141469::HP_0001880",
+          "title": "SLC14A1 \u2194 Increased total eosinophil count",
+          "url": "https://platform.opentargets.org/target/ENSG00000141469/associations",
+          "text": "Disease: Increased total eosinophil count\nDescription: Increased count of eosinophils in the blood.\nAssociation score: 0.313",
+          "cos_sim_score": 0.3128801134730441,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000141469::HP_0003418",
+          "title": "SLC14A1 \u2194 Back pain",
+          "url": "https://platform.opentargets.org/target/ENSG00000141469/associations",
+          "text": "Disease: Back pain\nDescription: An unpleasant sensation characterized by physical discomfort (such as pricking, throbbing, or aching) localized to the back.\nAssociation score: 0.306",
+          "cos_sim_score": 0.30637116841667617,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Urea transporter 1",
+          "title": "Urea transporter 1",
+          "url": "https://en.wikipedia.org/wiki/Urea_transporter_1",
+          "text": "Urea transporter 1 is a protein that in humans is encoded by the SLC14A1 gene.\n\nFunction\nThe SLC14A1 codes for a urea transporter (UTB) that is expressed in erythrocytes and kidney. SLC14A2 and SLC14A1 constitute solute carrier family 14. UTB proteins constitute the Kidd antigen system.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.3963766396045685,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Urea transporter 2",
+          "title": "Urea transporter 2",
+          "url": "https://en.wikipedia.org/wiki/Urea_transporter_2",
+          "text": "Urea transporter 2 is a protein that in humans is encoded by the SLC14A2 gene.\n\nFunction\nIn mammalian cells, urea is the chief end-product of nitrogen catabolism and plays an important role in the urinary concentration mechanism. Thus, the plasma membrane of erythrocytes and some renal epithelial cells exhibit an elevated urea permeability that is mediated by highly selective urea transporters. In mammals, two urea transporters have been identified: the renal tubular urea transporter, UT2 (UT-A), and the erythrocyte urea transporter, UT11 (also called UT-B, coded for by the SLC14A1 gene). SLC14A2 and SLC14A1 constitute solute carrier family 14.\n\nReferences\nFurther reading\n\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.2715553939342499,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Urea transporter",
+          "title": "Urea transporter",
+          "url": "https://en.wikipedia.org/wiki/Urea_transporter",
+          "text": "A urea transporter is a membrane transport protein, transporting urea. Humans and other mammals have two types of urea transport proteins, UT-A and UT-B. The UT-A proteins are important for renal urea handling and are produced by alternative splicing of the SLC14A2 gene.  Urea transport in the kidney is regulated by vasopressin.\nThe structure of a urea transport family protein from Desulfovibrio vulgaris was determined by x-ray crystallography. The structure has a pathway through the membrane that is similar to that of ion channel proteins, accounting for the ability of urea transport proteins to move up to one million urea molecules per second across the membrane.\nUrea transporters can be inhibited by the action of urea analogues like thiourea and glycosides like phloretin. Their inhibition results in increased diuresis due to urea induced osmosis in the collecting ducts of the kidney.\n\nTypes\nIn mammals, there are two urea transporter genes: UT-A (SLC14A2) and UT-B (SLC14A1). Multiple protein isoforms derived from each gene are produced by alternative splicing and alternative promoters.\n\nUT-A1\nUrea transporter A1 transports urea across the apical membrane into the intracellular space of luminal cells in the inner medullary collecting duct of the kidneys.  UT-1 is activated by ADH, but is a passive transporter.  It reabsorbs up to 70% of the original filtered load of urea.\n\nUT-A2\nUrea Transporter 2 transports urea across the apical membrane into the luminal space of cells in the thin descending loop of Henle of the kidneys.\n\nUT-A3\nUrea transporter 3 transports urea into the interstitium of the Inner Medullary Collecting Duct.\n\nUT-A4\nUrea transporter 4 has been detected in rat but not mouse kidney medulla.\n\nUT-A5\nUrea transporter 5 is not expressed in the kidney but in the testis.\n\nUT-B\nUT-B is widely expressed and has been studied in erythrocytes, kidney, intestine, and at the blood\u2013brain barrier. The SLC14A1 gene codes for the UT-B protein. UT-B is expressed at the basolateral and apical regions of the descending Vasa recta.\n\n\n== References ==",
+          "cos_sim_score": 0.20271068811416626,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::GLUT2",
+          "title": "GLUT2",
+          "url": "https://en.wikipedia.org/wiki/GLUT2",
+          "text": "Glucose transporter 2 (GLUT2) also known as solute carrier family 2 (facilitated glucose transporter), member 2 (SLC2A2) is a transmembrane carrier protein that enables protein facilitated glucose movement across cell membranes. It is the principal transporter for transfer of glucose between liver and blood Unlike GLUT4, it does not rely on insulin for facilitated diffusion.\nIn humans, this protein is encoded by the SLC2A2 gene.\n\nTissue distribution\nGLUT2 is found in cellular membranes of:\n\nliver (Primary)\npancreatic \u03b2 cell (Primary in mice, tertiary in humans after GLUT1 and GLUT3)\nhypothalamus (Not overly significant)\nbasolateral membrane of small intestine and apical GLUT2 is also suggested.\nbasolateral membrane of renal tubular cells\n\nFunction\nGLUT2 has high capacity for glucose but low affinity (high KM, ca. 15\u201320 mM) and thus functions as part of the \"glucose sensor\" in the pancreatic \u03b2-cells of rodents, though in human \u03b2-cells the role of GLUT2 seems to be a minor one. It is a very efficient carrier for glucose. Similarly, a recent study showed that lack of GLUT2 in \u03b2-cells doesn't impair glucose homeostasis or glucose-stimulated insulin secretion in mice.\nGLUT2 also carries glucosamine and fructose.\nWhen the glucose concentration in the lumen of the small intestine goes above 30 mM, such as occurs in the fed-state, GLUT2 is up-regulated at the brush border membrane, enhancing the capacity of glucose transport. Basolateral GLUT2 in enterocytes also aids in the transport of fructose into the bloodstream through glucose-dependent cotransport.\nRecent studies show that renal GLUT2 contributes to systemic glucose homeostasis by regulating glucose reabsorption. Lack of renal Glut2 reversed features of diabetes and obesity in mice. In addition, renal Glut2 deficiency caused knockdown of renal Sglt2 through the transcription factor Hnf1\u03b1.\n\nClinical significance\nDefects in the SLC2A2 gene are associated with a particular type of glycogen storage disease called Fanconi-Bickel syndrome.\nIn drug-treated diabetic pregnancies in which glucose levels in the woman are uncontrolled, neural tube and cardiac defects in the early-developing brain, spine, and heart depend upon functional GLUT2 carriers, and defects in the GLUT2 gene have been shown to be protective against such defects in rats.  However, whilst a lack of GLUT2 adaptability is negative, it is important to remember the fact that the main result of untreated gestational diabetes appears to cause babies to be of above-average size, which may well be an advantage that is managed very well with a healthy GLUT2 status.\nMaintaining a regulated osmotic balance of sugar concentration between the blood circulation and the interstitial spaces is critical in some cases of edema including cerebral edema.\nGLUT2 appears to be particularly important to osmoregulation, and preventing edema-induced stroke, transient ischemic attack or coma, especially when blood glucose concentration is above average. GLUT2 could reasonably be referred to as the \"diabetic glucose transporter\" or a \"stress hyperglycemia glucose transporter.\"\nSLC2A2 was associated with clinical stages and independently associated with overall survival in patients with Hepatocellular carcinoma, and could be considered a new prognostic factor for HCC.\n\nInteractive pathway map\nClick on genes, proteins and metabolites below to link to respective articles.\n\nSee also\nGlucose transporter\n\nReferences\nExternal links\nGlucose+Transporter+Type+2 at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.16827590763568878,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Kidd antigen system",
+          "title": "Kidd antigen system",
+          "url": "https://en.wikipedia.org/wiki/Kidd_antigen_system",
+          "text": "The Kidd antigen system (also known as Jk antigen) are proteins found in the Kidd's blood group, which act as antigens, i.e., they have the ability to produce antibodies under certain circumstances. The Jk antigen is found on a protein responsible for urea transport in the red blood cells and the kidney. They are important in transfusion medicine. People with two Jk(a) antigens, for instance, may form antibodies against donated blood containing two Jk(b) antigens (and thus no Jk(a) antigens). This can lead to hemolytic anemia, in which the body destroys the transfused blood, leading to low red blood cell counts. Another disease associated with the Jk antigen is hemolytic disease of the newborn, in which a pregnant woman's body creates antibodies against the blood of her fetus, leading to destruction of the fetal blood cells. Hemolytic disease of the newborn associated with Jk antibodies is typically mild, though fatal cases have been reported.\nThe gene encoding this protein is found on chromosome 18. Three Jk alleles are Jk (a), Jk (b)and Jk3. Jk (a) was discovered by Allen et al. in 1951 and is named after a patient (Mrs Kidd delivered a baby with a haemolytic disease of the newborn associated with an antibody directed against a new antigen Jk (a). Whereas Jk (b) was discovered by Plant et al. in 1953, individuals who lack the Jk antigen (Jk null) are unable to maximally concentrate their urine.\n\nGenetics and biochemistry\nKidd comprises three antigens on a glycoprotein with 10 transmembrane spanning domains, cytoplasmic N- and C-termini and one extracellular N-glycosylation site.\nThe Kidd gene has 11 exons with exons 4-11 encoding the mature protein. The Kidd gene (SLC14A1) is on chromosome 18q12.3.\n\nClinical diagnostic\nClinical testing in patient care for Kidd antigens follows published minimum quality and operational requirements, similar to red cell genotyping for any of the other recognized blood group systems.  Molecular analysis can identify gene variants (alleles) that may affect Kidd antigens expression on the red cell membrane.\n\nKidd antigens\nJka (JK1) and Jkb (JK2)\nJka and Jkb are the products of alleles with Asp280 and Asn280 in the fourth external loop of the Kidd glycoprotein. Jka and Jkb have similar prevalences in White and Asian populations but Jka is more common in Black populations than Jkb.\nKidd antigens are enhanced by enzymes\n\nJk(a-b-) and Jk3\nJk(a-b-) represents the null phenotype and usually results from homozygosity for a silent gene at the JK locus. The null phenotype is rare in most populations but does have increased prevalence in Polynesians (one in 400) and Niueans (1.4%).\nIn Polynesians the null allele contains a splice site mutation in intron 5 causing a loss of exon 6 from the mRNA product.\nIn Finns (null phenotype less rare than in other European populations), the null phenotype results from a mutation encoding a Ser291Pro substitution.\nA rare null phenotype in Japanese individuals results from heterozygosity for an inhibitor gene. In(Jk) in analogy with the In(Lu) dominant inhibitor of Lutheran and other antigens.\nImmunized individuals with the Jk(a-b-) phenotype may produce anti-Jk3.\nVery weak expression of Jka and/or Jkb can be detected on In(Jk) red blood cells in adsorption/elution tests.\n\nKidd antibodies and clinical significance\nAntibody subtypes and complement fixation\nAnti-Jka and -Jkb are not common. They are usually warm-reacting IgG1 and IgG3 but may also include IgG2, IgG4 or IgM. Approximately 50% of anti-Jka and -Jkb antibodies are capable of binding complement.\n\nDosage\nKidd antibodies display dosage: red cells from homozygous individuals (JkaJka or Jk(a+b-)) express more antigen than heterozygous individuals (JkaJkb or Jk(a+b+)). Anti-Kidd antibodies appear to react more strongly against cells that are homozygous.\n\nLaboratory detection\nKidd antibodies can be difficult to detect by direct agglutination testing and generally require addition of antihuman globulin after a warm incubation period.",
+          "cos_sim_score": 0.08656051754951477,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

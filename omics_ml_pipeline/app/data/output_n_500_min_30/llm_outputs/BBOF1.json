@@ -1,0 +1,110 @@
+{
+  "probe_id": "11729920_at",
+  "gene_symbol": "BBOF1",
+  "rf_importance": 0.0001,
+  "selection_freq": 1.0,
+  "abs_fold_change": 2.8918062000000013,
+  "combined_score": 0.4036,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-03-30T13:53:58",
+  "interpretation": "BBOF1 (Basal body-orientation factor 1) is a protein that plays a crucial role in sperm motility and male fertility by stabilizing the structure of sperm flagella. It is involved in the orientation and maintenance of cilia in multiciliated cells, which is essential for proper cellular function. However, there is no direct evidence linking BBOF1 to the mechanisms underlying Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), which is characterized by bone necrosis due to steroid administration.\n\nThe evidence retrieved primarily highlights BBOF1's role in reproductive biology and its expression in various tissues, but it lacks specific connections to bone health or osteonecrosis. Therefore, the strength of the evidence regarding BBOF1's relevance to SONFH is classified as indirect. \n\nGiven the absence of direct associations with SONFH and the current understanding of the gene's functions, it is challenging to propose BBOF1 as a clinically relevant early-detection biomarker for SONFH. [INFERENCE] suggests that while BBOF1 may have biological significance in other contexts, its role in SONFH remains unclear, indicating limited potential for blood-based early detection in this specific disease context.",
+  "citations": [
+    "BBOF1 (Q8ND07). https://www.uniprot.org/uniprotkb/Q8ND07",
+    "BBOF1 \u2014 BBOF1. https://platform.opentargets.org/target/ENSG00000119636",
+    "BBOF1 \u2194 methylmalonate semialdehyde dehydrogenase deficiency. https://platform.opentargets.org/target/ENSG00000119636/associations",
+    "BBOF1 \u2194 genetic disorder. https://platform.opentargets.org/target/ENSG00000119636/associations",
+    "BBOF1 \u2194 atrial fibrillation. https://platform.opentargets.org/target/ENSG00000119636/associations",
+    "BBOF1 \u2194 azoospermia. https://platform.opentargets.org/target/ENSG00000119636/associations",
+    "CCDC176. https://en.wikipedia.org/wiki/CCDC176",
+    "List of human protein-coding genes 1. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_1"
+  ],
+  "token_usage": {
+    "prompt_tokens": 2659,
+    "completion_tokens": 246,
+    "total_tokens": 2905,
+    "estimated_cost_usd": 0.000546
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q8ND07",
+          "title": "BBOF1 (Q8ND07)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8ND07",
+          "text": "Protein: Basal body-orientation factor 1\nFunction: Plays an essential role in sperm motility and male fertility by stabilizing the sperm flagellar axonemal structure. May be required for the stability of ODF2 and MANS1 proteins. Dispensable for the assembly and function of motile cilia",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000119636::function",
+          "title": "BBOF1 \u2014 BBOF1",
+          "url": "https://platform.opentargets.org/target/ENSG00000119636",
+          "text": "Function: Plays an essential role in sperm motility and male fertility by stabilizing the sperm flagellar axonemal structure. May be required for the stability of ODF2 and MANS1 proteins. Dispensable for the assembly and function of motile cilia. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000119636::MONDO_0013579",
+          "title": "BBOF1 \u2194 methylmalonate semialdehyde dehydrogenase deficiency",
+          "url": "https://platform.opentargets.org/target/ENSG00000119636/associations",
+          "text": "Disease: methylmalonate semialdehyde dehydrogenase deficiency\nAssociation score: 0.483",
+          "cos_sim_score": 0.4831660950815092,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000119636::EFO_0000508",
+          "title": "BBOF1 \u2194 genetic disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000119636/associations",
+          "text": "Disease: genetic disorder\nDescription: Genetic diseases are diseases in which inherited genes predispose to increased risk. The genetic disorders associated with cancer often result from an alteration or mutation in a single gene. The diseases range from rare dominant cancer family syndrome to familial tendencies in which low-penetrance genes may interact with other genes or environmental factors to induce cancer. Research may involve clinical, epidemiologic, and laboratory studies of persons, families, and populations at high risk of these disorders.\nAssociation score: 0.168",
+          "cos_sim_score": 0.16836415602303081,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000119636::EFO_0000275",
+          "title": "BBOF1 \u2194 atrial fibrillation",
+          "url": "https://platform.opentargets.org/target/ENSG00000119636/associations",
+          "text": "Disease: atrial fibrillation\nDescription: Abnormal cardiac rhythm that is characterized by rapid, uncoordinated firing of electrical impulses in the upper chambers of the heart (HEART ATRIA). In such case, blood cannot be effectively pumped into the lower chambers of the heart (HEART VENTRICLES). It is caused by abnormal impulse generation.\nAssociation score: 0.154",
+          "cos_sim_score": 0.15443670733375567,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000119636::EFO_0000279",
+          "title": "BBOF1 \u2194 azoospermia",
+          "url": "https://platform.opentargets.org/target/ENSG00000119636/associations",
+          "text": "Disease: azoospermia\nDescription: A male infertility characterized by dirsuption of the process of sperm development from diploid cells into mature haploid spermatozoa.\nAssociation score: 0.099",
+          "cos_sim_score": 0.09931651434213573,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::CCDC176",
+          "title": "CCDC176",
+          "url": "https://en.wikipedia.org/wiki/CCDC176",
+          "text": "Basal body-orientation factor 1 (BBOF1) is a protein that in humans is encoded by the gene CCDC176, which is located on the plus strand of chromosome 14 at 14q24.3. CCDC176 is neighbored by ALDH6A1 and ENTPD5 at the same locus. \nThe mRNA is 3123 base pairs long and has 12 exons, the protein is 529 amino acids long and has a molecular weight of 61987 Da and a predicted isoelectric point of 9.07 in humans.\n\nHomology and evolution\nCCDC176 has no known paralogs and is orthologous in primates, mammals, birds, reptiles, amphibians, fish, all the way back to invertebrates, a fungal parasite and a proteobacteria. The domain found to be homologous is the DUF4515, a domain of unknown function.\n\nProtein function and characteristics\nThis basal body protein has been shown in multiciliated cells to align and maintain cilia orientation in response to flow. This protein may also act by mediating a maturation step that stabilizes and aligns cilia orientation.\nNo other genes or proteins have been found that encode basal body orientation factors. A similar set of genes, tubulin tyrosine ligase-like genes 3 and 6, has been found in zebrafish that maintain cilia structure and motility. These genes belong to the TTL (tubulin tyrosine ligase) family.\nBBOF1 has two coiled coil domains, one that is 117 amino acids in length at the position 85-201 and the second is 91 amino acids in length at the position 271-361. There is also a region of interest located at the position 77-270 and is named DUF4515, a domain of unknown function belonging to the family of pfam14988.\nThere are three predicted protein-protein interactions concerning CCDC176. The most prevalent and most likely interaction is with LIG4, a human gene that encodes the protein DNA Ligase IV. Two experiments in a publication of 1030 unique reactions support the LIG4-CCDC176 interaction. The second and third predicted interactions are NRF1 and HYLS1.\nThe predicted secondary structure of BBOF1 in humans is as follows:  87.1% alpha helix, 63.9% beta sheet, and 15.7% beta turn.\n\nExpression, research, and clinical significance\nCCDC176 has known expression in the human testis, cerebellum, and lung tissues.\nThere are six articles of research related to the gene CCDC176, with four out of six being large-scale sequencing, one article not naming the gene or protein, and one article with only the abstract available. This last article, Global, in vivo, and site-specific phosphorylation dynamics in signaling networks, is the only article that directly mentions the protein of interest and it does so only once. This study detected 6,600 phosphorylation sites on 2,244 proteins.\nExpression data from different health states in humans predicts high expression of CCDC176 in glioma. \nThe interaction data concerning CCDC176 and LIG4 came from a publication studying protein-protein interaction involved with the DNA damage response network in association with cancer\n\n\n== References ==",
+          "cos_sim_score": 0.21856430172920227,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of human protein-coding genes 1",
+          "title": "List of human protein-coding genes 1",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_1",
+          "text": "== References ==",
+          "cos_sim_score": 0.11851213127374649,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

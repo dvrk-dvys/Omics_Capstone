@@ -28,6 +28,11 @@ from hyperopt import fmin, tpe, Trials, STATUS_OK, space_eval
 logging.getLogger("mlflow").setLevel(logging.WARNING)
 
 from app.models.baseline_models import get_baseline_models, get_hyperopt_spaces, make_pipeline
+from app.utils.feature_select import (
+    plot_roc_curves, plot_confusion_matrix, plot_feature_importance,
+    plot_model_comparison_bar, plot_composite_eval,
+    plot_statistical_vs_model_importance,
+)
 from app.utils.mlflow_utils import setup_mlflow
 from app.utils.logging_utils import get_logger, console
 
@@ -268,7 +273,7 @@ def run_tuned_models(X: np.ndarray, y: np.ndarray, config: dict, best_params: di
 # Orchestrator
 # ---------------------------------------------------------------------------
 
-def run(config: dict, selected_df: pd.DataFrame, run_id: str = "") -> pd.DataFrame:
+def run(config: dict, selected_df: pd.DataFrame, run_id: str = "", gene_map: pd.Series = None) -> pd.DataFrame:
     setup_mlflow(config)
 
     project = config.get("project", {})
@@ -308,5 +313,74 @@ def run(config: dict, selected_df: pd.DataFrame, run_id: str = "") -> pd.DataFra
     os.makedirs(os.path.dirname(comparison_path), exist_ok=True)
     combined_df.to_csv(comparison_path, index=False)
     log.info(f"💾 Saved combined comparison: {comparison_path}")
+
+    # --- ML evaluation plots -------------------------------------------------
+    plots_dir = config["paths"]["plots_dir"]
+    top_n     = config["feature_selection"]["top_n_feats"]
+    dataset   = f"{config.get('project', {}).get('dataset', '')} — top {top_n} probes"
+    os.makedirs(plots_dir, exist_ok=True)
+
+    # Reconstruct tuned XGBoost with resolved best params for plotting
+    hyperopt_spaces_plot = get_hyperopt_spaces(scale_pos_weight)
+    tuned_xgb_params     = space_eval(hyperopt_spaces_plot["xgboost"], best_params["xgboost"])
+    tuned_xgb            = XGBClassifier(**tuned_xgb_params)
+
+    # Baseline logistic for ROC comparison
+    baseline_models_plot = get_baseline_models(scale_pos_weight)
+    log_pipe             = make_pipeline("logistic_elasticnet", baseline_models_plot["logistic_elasticnet"])
+
+    named_models = [
+        ("Tuned XGBoost",       tuned_xgb),
+        ("Logistic ElasticNet", log_pipe),
+    ]
+
+    log.info("📊 Generating ML evaluation plots...")
+
+    plot_roc_curves(
+        X, y, named_models, plots_dir,
+        cv_splits    = config["training"]["cv_splits"],
+        cv_repeats   = config["training"]["cv_repeats"],
+        random_state = config["training"]["random_state"],
+        dataset      = dataset,
+    )
+
+    # class_names sorted to match LabelEncoder (np.unique order)
+    class_names = sorted(selected_df["class"].unique().tolist())
+    plot_confusion_matrix(
+        X, y, tuned_xgb, "Tuned XGBoost", class_names, plots_dir,
+        cv_splits    = config["training"]["cv_splits"],
+        random_state = config["training"]["random_state"],
+        dataset      = dataset,
+    )
+
+    plot_feature_importance(
+        X, y, probe_cols, tuned_xgb, "Tuned XGBoost", gene_map, plots_dir,
+        dataset = dataset,
+    )
+
+    # Figure 2 — model comparison bar chart (all models)
+    plot_model_comparison_bar(
+        models_csv = comparison_path,
+        plots_dir  = plots_dir,
+        dataset    = dataset,
+    )
+
+    # Figure 3 — final model evaluation composite (ROC | CM | feature importance)
+    eval_composite_path = os.path.join(plots_dir, "fig_3_model_eval.png")
+    plot_composite_eval(plots_dir, eval_composite_path, dataset=dataset)
+
+    # Figure 4 — statistical vs model importance scatter
+    # biomarker.top_n_display also routes to: biomarker_job.py (shortlist preview log)
+    top_genes_csv = os.path.join(config["paths"]["feature_select_dir"], "top100_genes.csv")
+    plot_statistical_vs_model_importance(
+        X, y, probe_cols, tuned_xgb, gene_map,
+        top_genes_csv = top_genes_csv,
+        plots_dir     = plots_dir,
+        dataset       = dataset,
+        random_state  = config["training"]["random_state"],
+        label_top_n   = config["biomarker"].get("top_n_display", 20),
+    )
+
+    log.info(f"✅ ML evaluation plots saved to: {plots_dir}")
 
     return combined_df

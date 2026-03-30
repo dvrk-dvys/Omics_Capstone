@@ -16,8 +16,8 @@ WHY THIS SCRIPT EXISTS:
   WHAT THIS SCRIPT DOES:
   1. FILTER — remove low-variance probes.
      Keeps only probes whose interquartile range (IQR) across all 40 samples
-     exceeds a threshold (default: IQR > 0.5 in log2 space).
-     Rationale: a probe with IQR < 0.5 shows less than 0.5 log2-units of
+     exceeds a threshold (default: IQR > 0.2 in log2 space).
+     Rationale: a probe with IQR < 0.2 shows less than 0.2 log2-units of
      spread — it is essentially flat and cannot help distinguish SONFH from
      control regardless of any classifier.
 
@@ -34,8 +34,23 @@ Usage:
 
 import sys
 import os
+import pathlib
 import pandas as pd
 import numpy as np
+
+# ---------------------------------------------------------------------------
+# PATHS  (relative to app/ — works from any working directory)
+# ---------------------------------------------------------------------------
+_APP_DIR   = pathlib.Path(__file__).resolve().parent.parent
+INPUT_CSV  = str(_APP_DIR / "data" / "output" / "parsed" / "parsed_matrix.csv")
+OUTPUT_CSV = str(_APP_DIR / "data" / "output" / "parsed" / "preprocessed_matrix.csv")
+
+# ---------------------------------------------------------------------------
+# WEKA STANDALONE PATHS  (used only when running this file directly)
+# ---------------------------------------------------------------------------
+_PROJECT_ROOT    = _APP_DIR.parent.parent   # /Omics_Capstone/
+_WEKA_INPUT_CSV  = str(_PROJECT_ROOT / "data" / "femoral_head_necrosis" / "parsed" / "parsed_matrix.csv")
+_WEKA_OUTPUT_CSV = str(_PROJECT_ROOT / "data" / "femoral_head_necrosis" / "parsed" / "preprocessed_matrix.csv")
 
 
 def load_parsed(path: str) -> pd.DataFrame:
@@ -54,7 +69,7 @@ def load_parsed(path: str) -> pd.DataFrame:
     return df
 
 
-def filter_probes(df: pd.DataFrame, iqr_threshold: float = 0.5) -> pd.DataFrame:
+def filter_probes(df: pd.DataFrame, iqr_threshold: float = 0.2) -> pd.DataFrame:
     """
     Remove low-variance probes using Interquartile Range (IQR).
 
@@ -63,11 +78,11 @@ def filter_probes(df: pd.DataFrame, iqr_threshold: float = 0.5) -> pd.DataFrame:
       every probe gets a background-corrected signal even if the gene isn't
       expressed. So the old "count > 0 in N samples" filter doesn't apply.
       Instead we use IQR: a probe that barely moves across all 40 samples
-      (IQR < 0.5 log2 units) contributes no information and is removed.
+      (IQR < 0.2 log2 units) contributes no information and is removed.
 
     Parameters:
       df            : pd.DataFrame — parsed matrix with class column last
-      iqr_threshold : float — minimum IQR to keep a probe (default 0.5 log2 units)
+      iqr_threshold : float — minimum IQR to keep a probe (default 0.2 log2 units)
 
     Returns:
       pd.DataFrame — same shape minus dropped probe columns, class column preserved
@@ -147,23 +162,22 @@ def print_summary(df: pd.DataFrame) -> None:
     print("  python3 feature_select.py")
 
 
+
+
 # ---------------------------------------------------------------------------
 # MAIN
 # ---------------------------------------------------------------------------
-DEFAULT_INPUT_CSV  = "/Users/jordanharris/Code/Omics_Capstone/data/femoral_head_necrosis/parsed/parsed_matrix.csv"
-DEFAULT_OUTPUT_CSV = "/Users/jordanharris/Code/Omics_Capstone/data/femoral_head_necrosis/parsed/preprocessed_matrix.csv"
-
 if __name__ == "__main__":
     if len(sys.argv) == 1:
-        input_path  = DEFAULT_INPUT_CSV
-        output_path = DEFAULT_OUTPUT_CSV
+        input_path  = _WEKA_INPUT_CSV
+        output_path = _WEKA_OUTPUT_CSV
     elif len(sys.argv) == 3:
         input_path  = sys.argv[1]
         output_path = sys.argv[2]
     else:
         print("Usage: python3 preprocess.py [<parsed_csv> <output_csv>]")
-        print(f"  Default input  : {DEFAULT_INPUT_CSV}")
-        print(f"  Default output : {DEFAULT_OUTPUT_CSV}")
+        print(f"  Default input  : {_WEKA_INPUT_CSV}")
+        print(f"  Default output : {_WEKA_OUTPUT_CSV}")
         sys.exit(1)
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
@@ -172,7 +186,7 @@ if __name__ == "__main__":
     df = load_parsed(input_path)
 
     # Step 2: Filter low-variance probes (IQR-based)
-    df = filter_probes(df, iqr_threshold=0.5)
+    df = filter_probes(df, iqr_threshold=0.2)
 
     # Step 3: Verify normalization (data is already log2 — no transform applied)
     df = check_normalization(df)

@@ -1,52 +1,59 @@
-Auto-WEKA result:
-best classifier: weka.classifiers.rules.PART
-arguments: [-M, 1]
-attribute search: weka.attributeSelection.GreedyStepwise
-attribute search arguments: [-B, -R]
-attribute evaluation: weka.attributeSelection.CfsSubsetEval
-attribute evaluation arguments: [-M, -L]
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AutoWEKAClassifier -seed 123 -timeLimit 15 -memLimit 1024 -nBestConfigs 1 -metric errorRate -parallelRuns 1
+Relation:     femoral_head_necrosis
+Instances:    40
+Attributes:   101
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+best classifier: weka.classifiers.rules.OneR
+arguments: [-B, 1]
+attribute search: null
+attribute search arguments: []
+attribute evaluation: null
+attribute evaluation arguments: []
 metric: errorRate
-estimated errorRate: 0.025
-training time on evaluation dataset: 0.004 seconds
+estimated errorRate: 0.0
+training time on evaluation dataset: 0.001 seconds
 
 You can use the chosen classifier in your own code as follows:
 
-AttributeSelection as = new AttributeSelection();
-ASSearch asSearch = ASSearch.forName("weka.attributeSelection.GreedyStepwise", new String[]{"-B", "-R"});
-as.setSearch(asSearch);
-ASEvaluation asEval = ASEvaluation.forName("weka.attributeSelection.CfsSubsetEval", new String[]{"-M", "-L"});
-as.setEvaluator(asEval);
-as.SelectAttributes(instances);
-instances = as.reduceDimensionality(instances);
-Classifier classifier = AbstractClassifier.forName("weka.classifiers.rules.PART", new String[]{"-M", "1"});
+Classifier classifier = AbstractClassifier.forName("weka.classifiers.rules.OneR", new String[]{"-B", "1"});
 classifier.buildClassifier(instances);
 
 
-Correctly Classified Instances          39               97.5    %
-Incorrectly Classified Instances         1                2.5    %
-Kappa statistic                          0.931
-Mean absolute error                      0.0484
-Root mean squared error                  0.1555
-Relative absolute error                 12.7016 %
-Root relative squared error             35.9075 %
-Total Number of Instances               40
+Correctly Classified Instances          40              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances               40     
 
 === Confusion Matrix ===
 
   a  b   <-- classified as
  30  0 |  a = SONFH
-  1  9 |  b = control
+  0 10 |  b = control
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 1,000    0,100    0,968      1,000    0,984      0,933    0,950     0,968     SONFH
-                 0,900    0,000    1,000      0,900    0,947      0,933    0,950     0,925     control
-Weighted Avg.    0,975    0,075    0,976      0,975    0,975      0,933    0,950     0,957
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     SONFH
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     control
+Weighted Avg.    1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     
 
 Temporary run directories:
-/var/folders/_r/_94p_t6s1933ynymfxl25_7h0000gn/T/autoweka7080934529232894433/
+/var/folders/_r/_94p_t6s1933ynymfxl25_7h0000gn/T/autoweka7324049226272680022/
 
 
 For better performance, try giving Auto-WEKA more time.
-Tried 303 configurations; to get good results reliably you may need to allow for trying thousands of configurations.
+Tried 606 configurations; to get good results reliably you may need to allow for trying thousands of configurations.
+
+
+Time taken to build model: 754.23 seconds
+

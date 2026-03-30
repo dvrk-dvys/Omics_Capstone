@@ -1,0 +1,145 @@
+{
+  "probe_id": "11719359_a_at",
+  "gene_symbol": "ALDH5A1",
+  "rf_importance": 0.0052,
+  "selection_freq": 1.0,
+  "abs_fold_change": 2.0644096666666663,
+  "combined_score": 0.381,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-03-30T13:56:41",
+  "interpretation": "ALDH5A1 encodes the enzyme succinate-semialdehyde dehydrogenase, which is involved in the metabolism of the neurotransmitter gamma-aminobutyric acid (GABA). This enzyme catalyzes the conversion of succinate semialdehyde to succinate, playing a crucial role in GABA degradation. While there is no direct evidence linking ALDH5A1 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in metabolic pathways related to neurotransmitter regulation may suggest a potential indirect connection to bone health and osteonecrosis mechanisms, particularly in the context of steroid use which can affect metabolic processes.\n\nThe evidence regarding ALDH5A1's role in SONFH is weak, as no specific studies were found directly associating this gene with the disease. Therefore, the connection remains largely speculative [INFERENCE]. However, given the gene's metabolic function and the known effects of steroids on bone metabolism, ALDH5A1 could be considered a candidate for further investigation as a potential biomarker for early detection of SONFH.\n\nIn summary, while ALDH5A1's direct relevance to SONFH is not established, its biological function in metabolism may warrant further exploration in the context of steroid-induced bone changes. Its potential as a blood-based early-detection biomarker for SONFH remains uncertain and requires additional research.",
+  "citations": [
+    "ALDH5A1 (P51649). https://www.uniprot.org/uniprotkb/P51649",
+    "ALDH5A1 (P51649-2). https://www.uniprot.org/uniprotkb/P51649-2",
+    "ALDH5A1 \u2014 ALDH5A1. https://platform.opentargets.org/target/ENSG00000112294",
+    "ALDH5A1 \u2194 succinic semialdehyde dehydrogenase deficiency. https://platform.opentargets.org/target/ENSG00000112294/associations",
+    "ALDH5A1 \u2194 epilepsy. https://platform.opentargets.org/target/ENSG00000112294/associations",
+    "ALDH5A1 \u2194 bipolar disorder. https://platform.opentargets.org/target/ENSG00000112294/associations",
+    "ALDH5A1 \u2194 Seizure. https://platform.opentargets.org/target/ENSG00000112294/associations",
+    "Aldehyde dehydrogenase. https://en.wikipedia.org/wiki/Aldehyde_dehydrogenase",
+    "Aldehyde dehydrogenase. https://en.wikipedia.org/wiki/Aldehyde_dehydrogenase",
+    "Aldehyde dehydrogenase 5 family, member A1. https://en.wikipedia.org/wiki/Aldehyde_dehydrogenase_5_family,_member_A1",
+    "Aldehyde dehydrogenase. https://en.wikipedia.org/wiki/Aldehyde_dehydrogenase",
+    "Aldehyde dehydrogenase. https://en.wikipedia.org/wiki/Aldehyde_dehydrogenase"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4147,
+    "completion_tokens": 278,
+    "total_tokens": 4425,
+    "estimated_cost_usd": 0.000789
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P51649",
+          "title": "ALDH5A1 (P51649)",
+          "url": "https://www.uniprot.org/uniprotkb/P51649",
+          "text": "Protein: Succinate-semialdehyde dehydrogenase, mitochondrial\nFunction: Catalyzes one step in the degradation of the inhibitory neurotransmitter gamma-aminobutyric acid (GABA)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P51649-2",
+          "title": "ALDH5A1 (P51649-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P51649-2",
+          "text": "Protein: Isoform 2 of Succinate-semialdehyde dehydrogenase, mitochondrial",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000112294::function",
+          "title": "ALDH5A1 \u2014 ALDH5A1",
+          "url": "https://platform.opentargets.org/target/ENSG00000112294",
+          "text": "Function: Catalyzes one step in the degradation of the inhibitory neurotransmitter gamma-aminobutyric acid (GABA). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000112294::MONDO_0010083",
+          "title": "ALDH5A1 \u2194 succinic semialdehyde dehydrogenase deficiency",
+          "url": "https://platform.opentargets.org/target/ENSG00000112294/associations",
+          "text": "Disease: succinic semialdehyde dehydrogenase deficiency\nDescription: Succinic semialdehyde dehydrogenase (SSADH) deficiency is a rare neurometabolic disorder of gamma-aminobutyric acid (GABA) metabolism with a nonspecific clinical presentation (ranging from mild to severe) with the most frequent symptoms being cognitive impairment with prominent deficit in expressive language, hypotonia, ataxia, epilepsy, and behavioral dysregulation.\nAssociation score: 0.844",
+          "cos_sim_score": 0.8435061416819137,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000112294::EFO_0000474",
+          "title": "ALDH5A1 \u2194 epilepsy",
+          "url": "https://platform.opentargets.org/target/ENSG00000112294/associations",
+          "text": "Disease: epilepsy\nDescription: A brain disorder characterized by episodes of abnormally increased neuronal discharge resulting in transient episodes of sensory or motor neurological dysfunction, or psychic dysfunction. These episodes may or may not be associated with loss of consciousness or convulsions.\nAssociation score: 0.608",
+          "cos_sim_score": 0.6080948746747509,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000112294::MONDO_0004985",
+          "title": "ALDH5A1 \u2194 bipolar disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000112294/associations",
+          "text": "Disease: bipolar disorder\nDescription: A disorder of the brain that causes unusual shifts in mood, energy, activity levels and the ability to carry out day-to-day tasks. Often these moods range and shift from periods of elation and energized behavior to those of hopelessness and depression.\nAssociation score: 0.606",
+          "cos_sim_score": 0.6058393009697971,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000112294::HP_0001250",
+          "title": "ALDH5A1 \u2194 Seizure",
+          "url": "https://platform.opentargets.org/target/ENSG00000112294/associations",
+          "text": "Disease: Seizure\nDescription: A seizure is an intermittent abnormality of nervous system physiology characterized by a transient occurrence of signs and/or symptoms due to abnormal excessive or synchronous neuronal activity in the brain.\nAssociation score: 0.582",
+          "cos_sim_score": 0.5821310174756064,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Aldehyde dehydrogenase",
+          "title": "Aldehyde dehydrogenase",
+          "url": "https://en.wikipedia.org/wiki/Aldehyde_dehydrogenase",
+          "text": "Genes\nALDH1A1, ALDH1A2, ALDH1A3, ALDH1B1, ALDH1L1, ALDH1L2\nALDH2\nALDH3A1, ALDH3A2, ALDH3B1, ALDH3B2\nALDH4A1, ALDH5A1, ALDH6A1, ALDH7A1, ALDH8A1, ALDH9A1, ALDH16A1, ALDH18A1\n\nSee also\nAlcohol dehydrogenase\n\nReferences\nExternal links\nAldehyde+dehydrogenase at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.44409090280532837,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Aldehyde dehydrogenase",
+          "title": "Aldehyde dehydrogenase",
+          "url": "https://en.wikipedia.org/wiki/Aldehyde_dehydrogenase",
+          "text": "Aldehyde dehydrogenases (EC 1.2.1.3) are a group of enzymes that catalyse the oxidation of aldehydes. They convert aldehydes (R\u2013C(=O)\u2013H) to carboxylic acids (R\u2013C(=O)\u2013O\u2013H). The oxygen comes from a water molecule.  To date, nineteen ALDH genes have been identified within the human genome. These genes participate in a wide variety of biological processes including the detoxification of exogenously and endogenously generated aldehydes.\n\nFunction\nAldehyde dehydrogenase is a polymorphic enzyme responsible for the oxidation of aldehydes to carboxylic acids. There are three different classes of these enzymes in mammals: class 1 (low Km, cytosolic), class 2 (low Km, mitochondrial), and class 3 (high Km, such as those expressed in tumors, stomach, and cornea).  In all three classes, constitutive and inducible forms exist.   ALDH1 and ALDH2 are the most important enzymes for aldehyde oxidation, and both are tetrameric enzymes composed of 54 kDa subunits. These enzymes are found in many tissues of the body but are at the highest concentration in the liver.\n\nActive site\nThe active site of the aldehyde dehydrogenase enzyme is largely conserved throughout the different classes of the enzyme and, although the number of amino acids present in a subunit can change, the overall function of the site changes little. The active site binds to one molecule of an aldehyde and one molecule of either NAD+ or NADP+, which functions as a cofactor. Cysteine and glutamate molecules interact with the aldehyde substrate. Many other residues will interact with NAD(P)+ to hold it in place. Magnesium may be used to help the enzyme function, although the degree to which magnesium assists the enzyme varies between different classes of aldehydes.\n\nMechanism\nThe overall reaction catalysed by the aldehyde dehydrogenases is:\n\nRCHO + NAD+ + H2O \u2192 RCOOH + NADH + H+\nIn this NAD(P)+-dependent reaction, the aldehyde enters the active site through a channel extending from the surface of the enzyme. The active site contains a Rossmann fold, and interactions between the cofactor and the fold allow for the action of the active site.\n\nA sulfur from a cysteine in the active site makes a nucleophilic attack on the carbonyl carbon of the aldehyde.  The hydrogen is kicked off as a hydride and attacks NAD(P)+ to make NAD(P)H.  The enzyme's active site then goes through an isomorphic change whereby the NAD(P)H is moved, creating room for a water molecule to access the substrate.  The water is primed by a glutamate in the active site, and the water makes a nucleophilic attack on the carbonyl carbon, kicking off the sulfur as a leaving group.\nResearchers at the University of Tsukuba found that durian extract inhibited aldehyde dehydrogenase activity, lending credence to an Asian folklore warning against consuming durian with alcohol.",
+          "cos_sim_score": 0.4250413775444031,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Aldehyde dehydrogenase 5 family, member A1",
+          "title": "Aldehyde dehydrogenase 5 family, member A1",
+          "url": "https://en.wikipedia.org/wiki/Aldehyde_dehydrogenase_5_family,_member_A1",
+          "text": "Succinate-semialdehyde dehydrogenase, mitochondrial is an enzyme that in humans is encoded by the ALDH5A1 gene.\n\nFunction\nThis protein belongs to the aldehyde dehydrogenase family of proteins. This gene encodes a mitochondrial NAD+-dependent succinic semialdehyde dehydrogenase. A deficiency of this enzyme, known as 4-hydroxybutyricaciduria, is a rare inborn error in the metabolism of the neurotransmitter \u03b3-aminobutyric acid (GABA). In response to the defect, physiologic fluids from patients accumulate GHB, a compound with numerous neuromodulatory properties. Two transcript variants encoding distinct isoforms have been identified for this gene.\n\nReferences\nExternal links\nHuman ALDH5A1 genome location and ALDH5A1 gene details page  in the UCSC Genome Browser.\nOverview of all the structural information available in the PDB for UniProt: P51649 (Succinate-semialdehyde dehydrogenase, mitochondrial) at the PDBe-KB.\n\n\n== Further reading ==",
+          "cos_sim_score": 0.41375139355659485,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Aldehyde dehydrogenase",
+          "title": "Aldehyde dehydrogenase",
+          "url": "https://en.wikipedia.org/wiki/Aldehyde_dehydrogenase",
+          "text": "Pathology (aldehyde dehydrogenase deficiency)\nALDH2 plays a crucial role in maintaining low blood levels of acetaldehyde during alcohol oxidation. In this pathway (ethanol to acetaldehyde to acetate), the intermediate structures can be toxic, and health problems arise when those intermediates cannot be cleared. When high levels of acetaldehyde occur in the blood, facial flushing, lightheadedness, palpitations, nausea, and general \"hangover\" symptoms occur. It also is thought to be the cause of a medical condition known as the alcohol flush reaction, also known as \"Asian flush\" or \"Oriental flushing syndrome\".\nThere is a mutant form of aldehyde dehydrogenase, termed ALDH2*2, wherein a lysine residue replaces a glutamate in the active site at position 487 of ALDH2.  Homozygous individuals with the mutant allele have almost no ALDH2 activity, and those heterozygous for the mutation have reduced activity.  Thus, the mutation is partially dominant. The ineffective homozygous allele works at a rate of about 8% of the normal allele, for it shows a higher Km for NAD+ and has a higher maximum velocity than the wild-type allele.  This mutation is common in Japan, where 41% of a non-alcoholic control group were ALDH2 deficient, where only 2\u20135% of an alcoholic group were ALDH2-deficient.  In Taiwan, the numbers are similar, with 30% of the control group showing the deficiency and 6% of alcoholics displaying it.  The deficiency is manifested by slow acetaldehyde removal, with low alcohol tolerance perhaps leading to a lower frequency of alcoholism.\nThese symptoms are the same as those observed in people who drink while being treated by the drug disulfiram, which is why disulfiram is used to treat alcoholism.  The patients show higher blood levels of acetaldehyde, and become violently ill upon consumption of even small amounts of alcohol. Several drugs (e.g., metronidazole) cause a similar reaction known as disulfiram-like reaction.\nYokoyama et al. found that decreased enzyme activity of aldehyde dehydrogenase-2, caused by the mutated ALDH2 allele, contributes to a higher chance of esophageal and oropharyngolaryngeal cancers.  The metabolized acetaldehyde in the blood, which is six times higher than in individuals without the mutation, has shown to be a carcinogen in lab animals.  ALDH2*2 is associated with increased odds of oropharyngolaryngeal, esophageal, gastric, colon, and lung cancer.  However, they found no connection between increased levels of ALDH2*2 in the blood and an increased risk of liver cancer.\nHigh expression of the genes that encode ALDH1A1 and ALDH2 is associated with a poor prognosis in patients with acute myeloid leukemia.\nDemir et al. found that ALDH1 is a potentially important, poor prognostic factor in breast cancer, associated with high histological grade, estrogen/progesterone receptor negativity and HER2 positivity.\nSome case-control studies claimed that carriage of ALDH2*2 allele was a risk of late-onset Alzheimer's disease independent of the apolipoprotein E gene (the odds for LOAD in carriers of ALDH2*2 allele almost twice that of non-carriers). Moreover, ALDH gene, protein expression and activity are substantially decreased in the substantia nigra of Parkinson's disease patients. These reports are in line with findings implementing toxic lipid oxidation-derived aldehydes in these diseases and in neurodegeneration in general.\nFitzmaurice et al. explored aldehyde dehydrogenase inhibition as a pathogenic mechanism in Parkinson disease. \"This ALDH model for PD etiology may help explain the selective vulnerability of dopaminergic neurons in PD and provide a potential mechanism through which environmental toxicants contribute to PD pathogenesis.\"\nKnockout mouse models further confirm the involvement of ALDH family in neurodegeneration. Mice null for ALDH1a1 and ALDH2 exhibit Parkinson's disease-like age-dependent deficits in motor performance and significant increase in biogenic aldehydes.",
+          "cos_sim_score": 0.30625197291374207,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Aldehyde dehydrogenase",
+          "title": "Aldehyde dehydrogenase",
+          "url": "https://en.wikipedia.org/wiki/Aldehyde_dehydrogenase",
+          "text": "Fitzmaurice et al. explored aldehyde dehydrogenase inhibition as a pathogenic mechanism in Parkinson disease. \"This ALDH model for PD etiology may help explain the selective vulnerability of dopaminergic neurons in PD and provide a potential mechanism through which environmental toxicants contribute to PD pathogenesis.\"\nKnockout mouse models further confirm the involvement of ALDH family in neurodegeneration. Mice null for ALDH1a1 and ALDH2 exhibit Parkinson's disease-like age-dependent deficits in motor performance and significant increase in biogenic aldehydes.\nThe ALDH2-/- mice display age-related memory deficits in various tasks, as well as endothelial dysfunction, brain atrophy, and other Alzheimer's disease-associated pathologies, including marked increases in lipid peroxidation products, amyloid-beta, p-tau and activated caspases. These behavioral and biochemical Alzheimer's disease-like deficits were efficiently ameliorated when the ALDH2-/- mice were treated with isotope-reinforced, deuterated polyunsaturated fatty acids (D-PUFA).",
+          "cos_sim_score": 0.2933538258075714,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

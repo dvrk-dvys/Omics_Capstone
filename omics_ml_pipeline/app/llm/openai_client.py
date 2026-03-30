@@ -4,7 +4,7 @@ import time
 from dataclasses import dataclass
 from typing import Any, List, Optional, Tuple
 
-from app.llm.rag_utils import build_rag_context, build_rag_prompt
+from app.llm.rag_utils import build_rag_context, build_rag_prompt, BiomarkerSynthesis
 from openai import OpenAI
 from app.tools.registry import FUNCTION_MAP, TOOLS_JSON
 
@@ -65,12 +65,13 @@ Rules:
 
 @dataclass
 class LLMResponse:
-    text: str
+    text: str                                        # prose interpretation (backward-compatible)
     model: str
     prompt_tokens: int
     completion_tokens: int
     total_tokens: int
     used_tools: Optional[List[Tuple[str, Any]]] = None
+    synthesis: Optional[BiomarkerSynthesis] = None   # structured Iter 4 output; None for earlier iters
 
 
 def llm(prompt, sys_prompt=None, model=DEFAULT_MODEL) -> LLMResponse:
@@ -281,6 +282,51 @@ def agentic_llm(
             messages.append({"role": "user", "content": prompt})
 
             print(f"[ITER {i}] calling LLM...", flush=True)
+
+            # ------------------------------------------------------------------
+            # Iter 4 — final synthesis: structured output via parse(), returns here.
+            # Iters 0–3 fall through to the standard create() + tool-call path below.
+            # ------------------------------------------------------------------
+            if i == max_iterations - 1:
+                r1        = client.beta.chat.completions.parse(
+                    model=model,
+                    messages=messages,
+                    response_format=BiomarkerSynthesis,
+                    temperature=temperature,
+                    max_tokens=max_tokens,
+                )
+                m1        = r1.choices[0].message
+                synthesis = getattr(m1, "parsed", None)   # BiomarkerSynthesis | None
+                if synthesis is None:
+                    print(
+                        f"[ITER {i}] WARNING: structured parse failed, falling back to raw text",
+                        flush=True,
+                    )
+                print(
+                    f"[ITER {i}] FINAL SYNTHESIS (structured) parsed={synthesis is not None}",
+                    flush=True,
+                )
+                usage = getattr(r1, "usage", None)
+                final_response = LLMResponse(
+                    text=synthesis.interpretation if synthesis else (m1.content or ""),
+                    model=model,
+                    prompt_tokens=getattr(usage, "prompt_tokens", 0) if usage else 0,
+                    completion_tokens=getattr(usage, "completion_tokens", 0) if usage else 0,
+                    total_tokens=getattr(usage, "total_tokens", 0) if usage else 0,
+                    used_tools=used_tools,
+                    synthesis=synthesis,
+                )
+                citations = (
+                    []
+                    if not used_tools or not search_results
+                    else [format_citation(d) for d in search_results]
+                )
+                print(f"[ITER {i}] DONE elapsed={time.perf_counter() - _iter_t0:.2f}s", flush=True)
+                return final_response, citations
+
+            # ------------------------------------------------------------------
+            # Iters 0–3 — standard create() with tool-calling (unchanged)
+            # ------------------------------------------------------------------
             r1 = client.chat.completions.create(
                 model=model,
                 messages=messages,
@@ -295,28 +341,6 @@ def agentic_llm(
             tool_calls = tool_calls[:curr_tools_per_iter]
             if tool_calls:
                 print(f"[ITER {i}] tool_calls={len(tool_calls)}", flush=True)
-
-            # Final iteration: always return here — synthesis complete
-            if i == max_iterations - 1:
-                print(f"[ITER {i}] FINAL SYNTHESIS", flush=True)
-                usage = getattr(r1, "usage", None)
-                final_response = LLMResponse(
-                    text=m1.content or "",
-                    model=model,
-                    prompt_tokens=getattr(usage, "prompt_tokens", 0) if usage else 0,
-                    completion_tokens=(
-                        getattr(usage, "completion_tokens", 0) if usage else 0
-                    ),
-                    total_tokens=getattr(usage, "total_tokens", 0) if usage else 0,
-                    used_tools=used_tools,
-                )
-                citations = (
-                    []
-                    if not used_tools or not search_results
-                    else [format_citation(d) for d in search_results]
-                )
-                print(f"[ITER {i}] DONE elapsed={time.perf_counter() - _iter_t0:.2f}s", flush=True)
-                return final_response, citations
 
             # Non-final iteration with no tool call: record and advance to next iteration
             if not tool_calls:
@@ -413,7 +437,8 @@ if __name__ == "__main__":
     import pathlib
     from datetime import datetime
 
-    # Diagnostic: switched to NUDT4 to match pipeline stall case
+    # Smoke test: run the full agentic loop for one gene and verify the new
+    # structured output contract (BiomarkerSynthesis) round-trips correctly.
     BIOMARKER = {
         "probe_id": "11758559_s_at",
         "gene_symbol": "NUDT4",
@@ -424,42 +449,54 @@ if __name__ == "__main__":
     }
 
     gene = BIOMARKER["gene_symbol"]
-    print(f"Gene: {gene}  |  probe: {BIOMARKER['probe_id']}  |  score: {BIOMARKER['combined_score']}")
+    disease = "Steroid-Induced Osteonecrosis of the Femoral Head (SONFH)"
     print("=" * 60)
-
-    # --- Diagnostic: direct pubmed_semantic_search with exact pipeline query ---
-    # Goal: isolate whether encode_safe hangs on MainThread with the same query
-    # that caused the pipeline to stall in ThreadPoolExecutor-1_0.
-    # This does NOT go through the LLM — it calls the tool directly.
-    import threading as _threading
-    from app.tools.registry import PUBMED as _PUBMED
-    _diag_query = "NUDT4 role in osteonecrosis or bone health"
-    print(f"\n[DIAG] Direct pubmed_semantic_search on {_threading.current_thread().name!r}")
-    print(f"[DIAG] query={_diag_query!r}")
-    _t_diag = time.perf_counter()
-    _diag_results = _PUBMED.pubmed_semantic_search(_diag_query, top_k=5)
-    print(f"[DIAG] completed | results={len(_diag_results)} | elapsed={time.perf_counter()-_t_diag:.2f}s")
+    print(f"SMOKE TEST — agentic_llm + structured output")
+    print(f"Gene  : {gene}  |  probe: {BIOMARKER['probe_id']}  |  score: {BIOMARKER['combined_score']}")
+    print(f"Model : {DEFAULT_MODEL}")
     print("=" * 60)
-    # --- End diagnostic block ---
 
     t_total = time.perf_counter()
-    t_llm = time.perf_counter()
     result, out_citations = agentic_llm(
         gene=gene,
         abstracts=[],
         model=DEFAULT_MODEL,
         temperature=0.1,
         max_tokens=500,
+        disease_context=disease,
     )
-    print(f"\nagentic_llm runtime : {time.perf_counter() - t_llm:.2f}s")
+    elapsed = time.perf_counter() - t_total
+    print(f"\nagentic_llm runtime : {elapsed:.2f}s")
 
-    # --- Output payload ---
+    # --- Structured output check ---
+    s = result.synthesis
+    if s is not None:
+        print("\n[PASS] Structured synthesis parsed successfully")
+        print(f"  evidence_relation   : {s.evidence_relation}")
+        print(f"  evidence_tier       : {s.evidence_tier}")
+        print(f"  evidence_confidence : {s.evidence_confidence}")
+        print(f"  biomarker_potential : {s.biomarker_potential}")
+        print(f"  relevance_summary   : {s.relevance_summary}")
+    else:
+        print("\n[WARN] Structured parse returned None — fallback to raw text")
+
+    # --- Build payload matching llm_job.py contract ---
+    evidence = {
+        "evidence_relation":   s.evidence_relation   if s else "inferred",
+        "evidence_tier":       s.evidence_tier       if s else "Tier 4",
+        "evidence_confidence": s.evidence_confidence if s else "low",
+        "biomarker_potential": s.biomarker_potential if s else "weak",
+        "relevance_summary":   s.relevance_summary   if s else "",
+    }
+    deduped_citations = list(dict.fromkeys(out_citations))
+
     output = {
         **BIOMARKER,
         "model": result.model,
         "timestamp": datetime.now().isoformat(timespec="seconds"),
-        "interpretation": result.text,
-        "citations": out_citations,
+        "interpretation": s.interpretation if s else result.text,
+        **evidence,
+        "citations": deduped_citations,
         "token_usage": {
             "prompt_tokens": result.prompt_tokens,
             "completion_tokens": result.completion_tokens,
@@ -480,10 +517,10 @@ if __name__ == "__main__":
 
     # --- Print summary ---
     print("\n— Interpretation —")
-    print(result.text)
+    print(s.interpretation if s else result.text)
 
-    print(f"\n— Citations ({len(out_citations)}) —")
-    for c in out_citations:
+    print(f"\n— Citations ({len(deduped_citations)}) —")
+    for c in deduped_citations:
         print(f"  {c}")
 
     print(f"\n— Token usage —")
@@ -500,5 +537,17 @@ if __name__ == "__main__":
     else:
         print("\n— Tools used — none")
 
+    # Verify all expected keys are present in the saved JSON
+    expected_keys = {
+        "interpretation", "evidence_relation", "evidence_tier",
+        "evidence_confidence", "biomarker_potential", "relevance_summary",
+        "citations", "token_usage", "tools_used",
+    }
+    missing = expected_keys - set(output.keys())
+    if missing:
+        print(f"\n[FAIL] Output JSON missing keys: {missing}")
+    else:
+        print(f"\n[PASS] All expected output keys present")
+
     print(f"\n— Saved → {out_path}")
-    print(f"Total runtime       : {time.perf_counter() - t_total:.2f}s")
+    print(f"Total runtime       : {elapsed:.2f}s")

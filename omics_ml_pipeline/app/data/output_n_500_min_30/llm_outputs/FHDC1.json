@@ -1,0 +1,101 @@
+{
+  "probe_id": "11743306_at",
+  "gene_symbol": "FHDC1",
+  "rf_importance": 0.0012,
+  "selection_freq": 0.4,
+  "abs_fold_change": 2.114155499999999,
+  "combined_score": 0.3155,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-03-30T14:13:44",
+  "interpretation": "FHDC1 (FH2 domain-containing protein 1) is a microtubule-associated formin that plays a crucial role in regulating actin and microtubule dynamics, which are essential for various cellular processes, including cell shape, motility, and division. It is involved in microtubule acetylation and stabilization, as well as the formation of actin stress fibers, which are important for maintaining cellular integrity and function.\n\nIn the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the disruption of cellular dynamics and structural integrity due to steroid administration can lead to compromised bone health and osteonecrosis. While there is no direct evidence linking FHDC1 specifically to SONFH, its role in cytoskeletal dynamics suggests that it could be involved in the pathological processes associated with this condition, particularly in how steroid treatment affects bone cell function and viability. \n\nThe strength of the evidence regarding FHDC1's role in SONFH is indirect, as there are no specific studies or data directly connecting this gene to the disease. However, given its biological functions, one could infer that alterations in FHDC1 expression or activity may contribute to the cellular changes observed in SONFH.\n\nAs for clinical relevance, while FHDC1 may not currently be recognized as a biomarker for early detection of SONFH, its involvement in cellular dynamics could warrant further investigation. If its expression levels correlate with disease progression or response to steroid treatment, it could potentially serve as a blood-based early-detection biomarker for SONFH.",
+  "citations": [
+    "FHDC1 (Q9C0D6). https://www.uniprot.org/uniprotkb/Q9C0D6",
+    "FHDC1 \u2014 FHDC1. https://platform.opentargets.org/target/ENSG00000137460",
+    "FHDC1 \u2194 response to cranial radiation therapy. https://platform.opentargets.org/target/ENSG00000137460/associations",
+    "FHDC1 \u2194 intelligence. https://platform.opentargets.org/target/ENSG00000137460/associations",
+    "FHDC1 \u2194 Abnormality of the gastrointestinal tract. https://platform.opentargets.org/target/ENSG00000137460/associations",
+    "FHDC1 \u2194 enteritis. https://platform.opentargets.org/target/ENSG00000137460/associations",
+    "List of human protein-coding genes 3. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_3"
+  ],
+  "token_usage": {
+    "prompt_tokens": 1956,
+    "completion_tokens": 312,
+    "total_tokens": 2268,
+    "estimated_cost_usd": 0.000481
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9C0D6",
+          "title": "FHDC1 (Q9C0D6)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9C0D6",
+          "text": "Protein: FH2 domain-containing protein 1\nFunction: Microtubule-associated formin which regulates both actin and microtubule dynamics. Induces microtubule acetylation and stabilization and actin stress fiber formation (PubMed:18815276). Regulates Golgi ribbon formation (PubMed:26564798). Required for normal cilia assembly. Early in cilia assembly, may assist in the maturation and positioning of the centrosome/basal body, and once cilia assembly has initiated, may also promote cilia elongation by inhibiting disassembly (PubMed:29742020)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000137460::function",
+          "title": "FHDC1 \u2014 FHDC1",
+          "url": "https://platform.opentargets.org/target/ENSG00000137460",
+          "text": "Function: Microtubule-associated formin which regulates both actin and microtubule dynamics. Induces microtubule acetylation and stabilization and actin stress fiber formation (PubMed:18815276). Regulates Golgi ribbon formation (PubMed:26564798). Required for normal cilia assembly. Early in cilia assembly, may assist in the maturation and positioning of the centrosome/basal body, and once cilia assembly has initiated, may also promote cilia elongation by inhibiting disassembly (PubMed:29742020).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000137460::EFO_0010950",
+          "title": "FHDC1 \u2194 response to cranial radiation therapy",
+          "url": "https://platform.opentargets.org/target/ENSG00000137460/associations",
+          "text": "Disease: response to cranial radiation therapy\nDescription: Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of cranial radiation therapy.\nAssociation score: 0.304",
+          "cos_sim_score": 0.30383141627983995,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000137460::EFO_0004337",
+          "title": "FHDC1 \u2194 intelligence",
+          "url": "https://platform.opentargets.org/target/ENSG00000137460/associations",
+          "text": "Disease: intelligence\nDescription: The ability to learn and to deal with new situations and to deal effectively with tasks involving abstractions.\nAssociation score: 0.304",
+          "cos_sim_score": 0.30383141627983995,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000137460::HP_0011024",
+          "title": "FHDC1 \u2194 Abnormality of the gastrointestinal tract",
+          "url": "https://platform.opentargets.org/target/ENSG00000137460/associations",
+          "text": "Disease: Abnormality of the gastrointestinal tract\nDescription: An abnormality of the gastrointestinal tract.\nAssociation score: 0.292",
+          "cos_sim_score": 0.29244631365753665,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000137460::MONDO_0043579",
+          "title": "FHDC1 \u2194 enteritis",
+          "url": "https://platform.opentargets.org/target/ENSG00000137460/associations",
+          "text": "Disease: enteritis\nDescription: Inflammation of the small intestine.\nAssociation score: 0.131",
+          "cos_sim_score": 0.1311428539584569,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::List of human protein-coding genes 3",
+          "title": "List of human protein-coding genes 3",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_3",
+          "text": "== References ==",
+          "cos_sim_score": 0.10368569195270538,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

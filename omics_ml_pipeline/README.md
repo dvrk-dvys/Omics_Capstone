@@ -18,9 +18,23 @@ The capstone course uses Weka (GUI-based) for classification. This app replicate
 | Single 10-fold CV run per model | RepeatedStratifiedKFold (50 evaluations per model) |
 | No hyperparameter tuning | Hyperopt TPE search (50 trials × 2 models) |
 | Manual biomarker shortlist | Auto-generated `biomarker_shortlist.csv` |
-| No EDA plots from pipeline | 4 EDA plots generated automatically |
+| No EDA plots from pipeline | 7 EDA plots generated automatically (6 individual + composite multi-panel) |
 
 Both pipelines share the same preprocessing logic (`app/utils/`). The automated pipeline feeds the same LLM interpretation stage (Phase 6).
+
+---
+
+## Feature selection method (updated)
+
+Probes are now ranked by a **hybrid score** instead of fold change alone:
+
+```
+hybrid_score = zscore(|fold change|) + zscore(|Welch t-statistic|)
+```
+
+Both components are z-scored before summing so neither dominates. The IQR variance filter threshold was also loosened from `IQR < 0.5` to `IQR < 0.2` to retain moderate-effect probes earlier in the pipeline.
+
+The absolute fold change column is still included in all outputs for biological interpretability.
 
 ---
 
@@ -40,16 +54,22 @@ omics_ml_pipeline/
 │   │   └── output/           ← all generated files (safe to delete & regenerate)
 │   │       ├── parsed/
 │   │       ├── feature_selection/
-│   │       │   ├── top50_features.csv
-│   │       │   ├── gene_rankings.csv
-│   │       │   └── gene_level_summary.csv
+│   │       │   ├── top100_features.csv      ← Weka-comparable branch (train/eval default)
+│   │       │   ├── top500_features.csv      ← broader discovery branch
+│   │       │   ├── gene_rankings.csv        ← all probes ranked: hybrid_score, FC, t-stat, p-value, IQR
+│   │       │   ├── gene_level_summary.csv   ← selected probes grouped by gene symbol
+│   │       │   ├── gene_level_rankings.csv  ← one best probe per gene (deduped, all genes)
+│   │       │   └── top100_genes.csv         ← top 100 genes from gene_level_rankings.csv
 │   │       ├── models/
 │   │       │   └── model_comparison.csv
 │   │       ├── plots/
 │   │       │   ├── volcano_plot.png
 │   │       │   ├── fold_change_top20.png
 │   │       │   ├── boxplots_top6.png
-│   │       │   └── pca_plot.png
+│   │       │   ├── pca_plot.png
+│   │       │   ├── sample_correlation.png
+│   │       │   ├── heatmap_top20.png
+│   │       │   └── eda_composite.png     ← 2×3 multi-panel composite (report Figure 1)
 │   │       ├── llm_outputs/  ← one JSON per gene (Phase 6)
 │   │       └── biomarker_shortlist.csv
 │   ├── jobs/                 ← orchestration layer
@@ -101,217 +121,152 @@ conda activate omics
 pip install -r requirements.txt
 ```
 
-### 3. Run the pipeline
+### 3. Run the full pipeline — from scratch
+
+Run this once to parse, preprocess, select features, and train:
 
 ```bash
 # Full pipeline (ingest → parse → preprocess → feature_select → train → biomarker)
 python -m app.main
-
-# Full pipeline + LLM interpretation
-python -m app.main --llm
-
-# Skip ingest/parse/preprocess — re-run models + biomarker on existing data
-python -m app.main --skip-pre
-
-# Skip pre + run LLM (most common on subsequent runs)
-python -m app.main --skip-pre --llm
-
-# LLM only — skip everything except feature_select and biomarker
-python -m app.main --skip-pre --skip-train --llm
 ```
 
-| Flag | Effect |
-|---|---|
-| *(none)* | Full pipeline |
-| `--skip-pre` | Skip ingest, parse, preprocess (use existing outputs) |
-| `--skip-train` | Skip model training |
-| `--llm` | Run LLM biological interpretation (opt-in) |
+This runs on **top 100 probes** (the default, matching the Weka branch).
 
-### 4. Running long jobs (Mac local)
+It produces all outputs including `top500_features.csv` and `gene_level_rankings.csv` automatically — no extra step needed.
 
-The `--llm` step runs for several minutes per gene and must not be interrupted.
-Use `caffeinate` to prevent the Mac from sleeping and `tee` to save a live log.
+---
+
+### 4. Re-run feature selection + training only (skip parse/preprocess)
+
+Use `--skip-pre` on every subsequent run — parse and preprocess only need to run once:
 
 ```bash
-# Official run command
+# Re-run feature selection, train, biomarker (use existing preprocessed matrix)
+python -m app.main --skip-pre
+```
+
+---
+
+### 5. Run A vs Run B — controlled comparison
+
+#### Run A — top 100 (default, Weka-comparable)
+
+This is already the default config. Nothing to change:
+
+```bash
+python -m app.main --skip-pre
+```
+
+- Trains on: `top100_features.csv` (100 probes × 40 samples)
+- Comparable to the Weka top-100 branch
+- Results go to: `app/data/output/models/model_comparison.csv`
+
+---
+
+#### Run B — top 500 (discovery branch)
+
+Edit `app/config/pipeline.yaml` and change two lines:
+
+```yaml
+feature_selection:
+  top_n: 500
+
+paths:
+  top_features_csv: app/data/output/feature_selection/top500_features.csv
+```
+
+Then run:
+
+```bash
+python -m app.main --skip-pre
+```
+
+- Trains on: `top500_features.csv` (500 probes × 40 samples)
+- More features = better biomarker recovery, potentially different model behaviour
+- Compare results to Run A in `model_comparison.csv`
+
+**To switch back to Run A afterward**, restore the original values:
+```yaml
+feature_selection:
+  top_n: 100
+
+paths:
+  top_features_csv: app/data/output/feature_selection/top100_features.csv
+```
+
+---
+
+### 6. Full pipeline + LLM interpretation
+
+```bash
+export OPENAI_API_KEY=sk-...
+python -m app.main --skip-pre --llm
+```
+
+### 7. Running long jobs (Mac local)
+
+```bash
 export OPENAI_API_KEY=sk-...
 caffeinate -i python -u -m app.main --skip-pre --llm 2>&1 | tee llm_run_$(date +%Y%m%d_%H%M%S).log
 ```
 
 | Flag | Effect |
 |---|---|
-| `caffeinate -i` | Prevents the Mac from sleeping while the job runs |
-| `python -u` | Forces unbuffered stdout — logs appear immediately |
-| `2>&1 \| tee ...` | Shows logs live in the terminal and saves them to a timestamped file |
+| `caffeinate -i` | Prevents the Mac from sleeping |
+| `python -u` | Unbuffered stdout — logs appear immediately |
+| `2>&1 \| tee ...` | Shows logs live and saves to a timestamped file |
 
-Monitor and inspect the run:
-
+Monitor:
 ```bash
-# Follow the latest log in a second terminal
 tail -f llm_run_*.log
-
-# Check output files being written
-ls -lt app/data/output/llm_outputs/ | head
-
-# Filter key progress lines
 grep -a "\[ITER\|\[START\|\[DONE\|\[FAIL\|\[WRITE\|\[AGENT" llm_run_*.log
 ```
 
-### 5. View results
+---
+
+### All flags
+
+| Flag | Effect |
+|---|---|
+| *(none)* | Full pipeline from scratch |
+| `--skip-pre` | Skip ingest, parse, preprocess (use existing outputs) |
+| `--skip-train` | Skip model training |
+| `--llm` | Run LLM biological interpretation (opt-in) |
+
+---
+
+### 8. View results
 
 - MLflow UI: http://localhost:5002 → experiment `sonfh_classification`
 - Model comparison CSV: `app/data/output/models/model_comparison.csv`
 - Biomarker shortlist: `app/data/output/biomarker_shortlist.csv`
-- EDA plots: `app/data/output/plots/`
+- Gene-level deduped rankings: `app/data/output/feature_selection/gene_level_rankings.csv`
+- Top 100 genes: `app/data/output/feature_selection/top100_genes.csv`
+- EDA plots: `app/data/output/plots/` (7 plots: volcano, FC bar, boxplots, PCA, sample correlation, heatmap, eda_composite)
 
 ---
 
-## Pipeline Results
+## Outputs
 
-All results below are from the run using top 50 probes by fold-change, evaluated with `RepeatedStratifiedKFold(n_splits=5, n_repeats=10)` = 50 CV evaluations per model. Dataset: GSE123568, 40 samples (30 SONFH / 10 control).
-
-### Model comparison
-
-| Model | Source | AUC (mean) | Balanced acc | F1 (weighted) |
-|---|---|---|---|---|
-| tuned_random_forest | hyperopt_tuned | **0.9700** | 0.863 | 0.893 |
-| baseline_linear_svc | baseline_default | 0.9667 | 0.852 | 0.897 |
-| baseline_random_forest | baseline_default | 0.9650 | 0.843 | 0.886 |
-| tuned_xgboost | hyperopt_tuned | 0.9458 | 0.872 | 0.902 |
-| baseline_mlp | baseline_default | 0.9567 | 0.825 | 0.869 |
-| baseline_gaussian_nb | baseline_default | 0.9450 | 0.885 | 0.904 |
-| baseline_logistic_elasticnet | baseline_default | 0.9350 | 0.818 | 0.864 |
-| baseline_xgboost | baseline_default | 0.9283 | 0.878 | 0.907 |
-| baseline_knn | baseline_default | 0.8742 | 0.835 | 0.887 |
-
-**Winner: tuned_random_forest (AUC 0.970).** Hyperopt found better RF params (+0.005 AUC over baseline RF). XGBoost improved modestly with tuning (+0.018 AUC over baseline XGBoost). LinearSVC performed surprisingly well with 50 features — linear models benefit from the reduced feature count.
-
-All models use `class_weight="balanced"` to correct for the 30:10 class imbalance. Balanced accuracy is reported alongside AUC because a naive majority-class predictor would be 75% accurate on this dataset — accuracy alone is not a reliable metric here.
-
----
-
-### Hyperopt results
-
-XGBoost best params (50-trial TPE search):
-```
-learning_rate=0.097, max_depth=6, n_estimators=200
-subsample=0.870, colsample_bytree=0.794
-reg_alpha=0.058, reg_lambda=0.134
-```
-
-RandomForest best params:
-```
-n_estimators=250, max_depth=15, min_samples_split=6, max_features=sqrt
-```
-
-Hyperopt trials use `StratifiedKFold(n_splits=5)` for speed. Final tuned evaluation uses the full `RepeatedStratifiedKFold(5×10)` so results are directly comparable to baseline.
-
----
-
-### EDA plots
-
-Generated automatically by `feature_select_job.py` on each pipeline run.
-
-**Volcano plot** — full landscape of 11,687 filtered probes; top 50 highlighted:
-
-![volcano_plot](app/data/output/plots/volcano_plot.png)
-
----
-
-**Top 20 probes by fold-change:**
-
-![fold_change_top20](app/data/output/plots/fold_change_top20.png)
-
----
-
-**Box plots — top 6 probes, SONFH vs control:**
-
-![boxplots_top6](app/data/output/plots/boxplots_top6.png)
-
----
-
-**PCA — PC1 = 88.0%, PC2 = 2.4% (total 90.4% in 2 dimensions):**
-
-![pca_plot](app/data/output/plots/pca_plot.png)
-
-> Strong separation: 88% of all expression variance captured in a single axis, clearly separating SONFH from control. Slightly stronger than the 100-probe run (PC1=84.6%) — reducing feature count from 100 to 50 removed noise and sharpened the signal.
-
----
-
-### MLflow experiment tracking
-
-All pipeline runs are logged to MLflow automatically. These screenshots show the experiment UI from the final run.
-
-**Runs table — every baseline, hyperopt search, tuned model, and biomarker run in one view:**
-
-![mlflow_eda_runs](app/data/output/plots/mlflow_eda_runs.png)
-
-> Each row is a tracked MLflow run from the `sonfh_classification` experiment. Runs are prefixed `r001_` so all runs from a single pipeline execution are visually grouped. Metrics (accuracy, balanced accuracy, F1, AUC) and hyperopt best-params are stored as columns, making it straightforward to filter or sort. The hyperopt parent runs (`r001_hyperopt_xgboost_search`, `r001_hyperopt_random_forest_search`) show the best params found; the tuned evaluation runs below them show the final held-out performance. This is the experiment tracking capability that Weka lacks entirely — every run is reproducible, timestamped, and queryable.
-
----
-
-**Parallel coordinates plot — hyperopt parameter sweeps vs metric outcomes:**
-
-![mlflow_eda_graph](app/data/output/plots/mlflow_eda_graph.png)
-
-> MLflow's parallel coordinates view maps each parameter combination (learning rate, max depth, n_estimators, subsample) to its resulting metrics (AUC, balanced accuracy, F1, accuracy) via connecting lines. Lines that converge on the high-AUC end of the right axes trace back to the winning parameter regions. This reiterates the same signal seen in the EDA plots — a clear, learnable separation in the data — but from the model's perspective: the fact that many different parameter combinations all achieve high AUC (colour-coded warm = high) confirms the signal is robust, not dependent on a lucky hyperparameter choice.
-
----
-
-### Biomarker shortlist
-
-Generated by `biomarker_job.py`: RF feature importance (across 5 CV folds) × fold-change, normalised and averaged into a `combined_score`.
-
-**Top 20 candidates — fixed shortlist (50-probe input, 20-probe output):**
-
-The shortlist includes all probes with `combined_score >= 0.60` — a threshold-based cutoff rather than an arbitrary top-N, ensuring every included probe has genuine signal on both RF importance and fold-change. All shortlisted probes appeared in every CV fold (selection_freq = 1.00).
-
-| Rank | Probe | Gene | Combined score | Selection freq |
-|---|---|---|---|---|
-| 1 | 11719581_a_at | **BPGM** | 0.934 | 1.00 |
-| 2 | 11758559_s_at | **NUDT4** | 0.836 | 1.00 |
-| 3 | 11736395_a_at | **BPGM** | 0.813 | 1.00 |
-| 4 | 11732236_a_at | **GYPA** | 0.791 | 1.00 |
-| 5 | 11720494_a_at | **CTNNAL1** | 0.775 | 1.00 |
-| 6 | 11750918_a_at | **HEPACAM2** | 0.722 | 1.00 |
-| 7 | 11736696_a_at | **HEMGN** | 0.713 | 1.00 |
-| 8 | 11728821_a_at | **HEPACAM2** | 0.713 | 1.00 |
-| 9 | 11732235_a_at | **GYPA** | 0.688 | 1.00 |
-| 10 | 11725497_a_at | **RAP1GAP** | 0.687 | 1.00 |
-| 11 | 11721930_a_at | **TMCC2** | 0.651 | 1.00 |
-| 12 | 11739787_a_at | **IGF2** | 0.630 | 1.00 |
-| 13 | 11729583_x_at | **CA1** | 0.612 | 1.00 |
-| 14 | 11729582_s_at | **CA1** | 0.587 | 1.00 |
-| 15 | 11756003_x_at | **IGF2** | 0.576 | 1.00 |
-| 16 | 11733482_a_at | **DYRK3** | 0.573 | 1.00 |
-| 17 | 11736538_s_at | **RHCE/RHD** | 0.566 | 1.00 |
-| 18 | 11733360_x_at | **SLC14A1** | 0.553 | 1.00 |
-| 19 | 11751870_x_at | **GYPA** | 0.550 | 1.00 |
-| 20 | 11720807_x_at | **EIF1AY** | 0.547 | 1.00 |
-
-`selection_freq = 1.00` for all 20 probes — selected in every single CV fold across 50 evaluations without exception. This is the pipeline's confidence score: none of these were lucky picks from one split. Note that **RHCE/RHD** — Weka's #1 gene — appears here at rank 17. It has high fold-change but lower RF importance, meaning it discriminates but is not among the most informative features when the full 50-probe set is available.
-
-**Biological pattern:** The top candidates form a coherent erythrocyte / oxygen-transport cluster:
-
-- **BPGM** (bisphosphoglycerate mutase) — RBC enzyme regulating 2,3-BPG, which directly controls oxygen release from hemoglobin. Mechanistically compelling for ischemia: lower BPGM signal in SONFH may reflect reduced oxygen-carrying capacity at the bone site. **Primary novel finding of this pipeline** — not ranked highly by Weka.
-- **GYPA** (Glycophorin A) — major RBC surface protein; marker of erythroid lineage
-- **HEMGN** (Hemogen) — erythroid-specific transcription cofactor
-- **HEPACAM2** — cell adhesion, vascular biology; two probes independently selected
-- **CTNNAL1** (Catenin alpha-like 1) — cytoskeletal scaffold, cell adhesion
-- **RAP1GAP** — GTPase regulator; RAP1 pathway is involved in platelet activation and integrin signalling
-- **NUDT4** — nudix hydrolase, metabolic housekeeping; significance in SONFH context requires LLM/literature follow-up
-
-All top genes are **lower in SONFH than in controls** — consistent with a systemic hematological/vascular shift rather than transcriptional upregulation. This matches the disease mechanism: SONFH is caused by impaired blood supply to the femoral head.
-
----
-
-### Gene-level summary
-
-`app/data/output/feature_selection/gene_level_summary.csv` groups the 50 selected probes by gene:
-- **27 unique gene symbols** from 50 probes
-- **12 genes** represented by more than one probe (multi-probe confirmation)
-- **0 genes** with mixed fold-change direction (all probes for each gene agree on direction)
-- **7 genes** with at least one cross-hybridising (`_x_at`) probe — interpret with care
+| File | Description |
+|---|---|
+| `feature_selection/top100_features.csv` | Top 100 probes by hybrid score + class column — default train/eval input |
+| `feature_selection/top500_features.csv` | Top 500 probes by hybrid score + class column — discovery branch |
+| `feature_selection/gene_rankings.csv` | All probes ranked by hybrid score; includes abs_fold_change, t_stat, p_value, IQR |
+| `feature_selection/gene_level_summary.csv` | Selected probes grouped by gene symbol (direction consistency, probe count) |
+| `feature_selection/gene_level_rankings.csv` | One best probe per gene (deduped); all genes ranked by hybrid score |
+| `feature_selection/top100_genes.csv` | Top 100 rows of gene_level_rankings.csv — for literature comparison |
+| `models/model_comparison.csv` | AUC / F1 / balanced-acc for all baseline + tuned models |
+| `biomarker_shortlist.csv` | Top candidates ranked by combined RF importance + fold-change score |
+| `llm_outputs/*.json` | Per-gene LLM interpretation (Phase 6) |
+| `plots/volcano_plot.png` | Volcano plot — all filtered probes, top N highlighted |
+| `plots/fold_change_top20.png` | Top 20 probes by absolute fold change |
+| `plots/boxplots_top6.png` | Box plots — top 6 probes, SONFH vs control |
+| `plots/pca_plot.png` | PCA — PC1/PC2 variance explained |
+| `plots/sample_correlation.png` | 40×40 sample Pearson correlation heatmap |
+| `plots/heatmap_top20.png` | Expression heatmap — top 20 probes × 40 samples |
+| `plots/eda_composite.png` | 2×3 multi-panel composite — **report Figure 1** |
+| MLflow UI | All run params, metrics, tags, and artifacts |
 
 ---
 
@@ -343,24 +298,11 @@ Each pipeline execution is prefixed with a run ID (`r001_`, `r002_`, ...) so all
 
 ---
 
-## Outputs
-
-| File | Description |
-|---|---|
-| `app/data/output/feature_selection/top50_features.csv` | Top 50 probes by fold-change + class column |
-| `app/data/output/feature_selection/gene_rankings.csv` | Full probe ranking (11,687 probes) with gene symbols |
-| `app/data/output/feature_selection/gene_level_summary.csv` | Probes grouped by gene symbol (LLM input) |
-| `app/data/output/models/model_comparison.csv` | AUC/F1/balanced-acc for all baseline + tuned models |
-| `app/data/output/biomarker_shortlist.csv` | Top candidates ranked by combined RF + fold-change score |
-| `app/data/output/llm_outputs/*.json` | Per-gene LLM interpretation (Phase 6) |
-| `app/data/output/plots/*.png` | EDA plots (volcano, FC bar, box plots, PCA) |
-| MLflow UI | All run params, metrics, tags, and artifacts |
-
----
-
 ## Manual utils scripts
 
-The shared preprocessing scripts in `app/utils/` can still be run standalone:
+The shared preprocessing scripts in `app/utils/` can still be run standalone. These produce the Weka-compatible ARFF output and all EDA plots.
+
+**Run from the repo root (`Omics_Capstone/`):**
 
 ```bash
 python omics_ml_pipeline/app/utils/parse_series_matrix.py
@@ -368,7 +310,26 @@ python omics_ml_pipeline/app/utils/preprocess.py
 python omics_ml_pipeline/app/utils/feature_select.py
 ```
 
-These use hardcoded default paths pointing to `data/femoral_head_necrosis/` and produce the Weka-compatible ARFF output alongside the pipeline outputs.
+`feature_select.py` accepts an `--outdir` argument (defaults to `data/femoral_head_necrosis/`). It derives two subdirectories from that root automatically:
+- `{outdir}/EDA/` — 7 EDA plots including `eda_composite.png`
+- `{outdir}/feature_selection/` — CSV/ARFF outputs
+
+```bash
+# Custom output root (optional)
+python omics_ml_pipeline/app/utils/feature_select.py --outdir path/to/output_root
+```
+
+**After both pipelines have run, generate the model comparison figures:**
+
+```bash
+# From repo root — reads Weka .txt results + Python model_comparison.csv
+python generate_report_figures.py
+```
+
+Outputs to `report/figures/`:
+- `fig_weka_model_comparison.png` — report Figure 2
+- `fig_python_model_comparison.png` — report Figure 3
+- `weka_model_comparison.csv` — Weka results in same schema as Python's model_comparison.csv
 
 ---
 

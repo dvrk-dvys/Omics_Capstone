@@ -1,0 +1,145 @@
+{
+  "probe_id": "11731442_at",
+  "gene_symbol": "ARHGEF12",
+  "rf_importance": 0.0058,
+  "selection_freq": 0.6,
+  "abs_fold_change": 1.4963359333333337,
+  "combined_score": 0.313,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-03-30T14:15:41",
+  "interpretation": "ARHGEF12, also known as Rho guanine nucleotide exchange factor 12, functions as a guanine nucleotide exchange factor (GEF) for the RhoA GTPase, which is crucial for regulating the actin cytoskeleton and cellular responses to mechanical stimuli. This protein may also act as a GTPase-activating protein (GAP) for GNA12 and GNA13, indicating its role in cellular signaling pathways that could influence bone health and remodeling.\n\nIn the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the dysregulation of RhoA signaling could contribute to the pathological processes leading to bone necrosis, particularly under the influence of steroids, which are known to affect bone metabolism and vascular health. However, direct evidence linking ARHGEF12 specifically to SONFH is lacking, making the connection more speculative at this stage. Therefore, the strength of evidence for ARHGEF12's role in SONFH is classified as indirect.\n\nGiven its involvement in cellular signaling and potential impact on bone health, ARHGEF12 may serve as a candidate biomarker for early detection of SONFH, although further research is needed to establish its clinical relevance definitively. Overall, the potential for blood-based early detection of SONFH using ARHGEF12 remains promising but requires validation through additional studies.",
+  "citations": [
+    "ARHGEF12 (Q9NZN5). https://www.uniprot.org/uniprotkb/Q9NZN5",
+    "ARHGEF12 (Q9NZN5-2). https://www.uniprot.org/uniprotkb/Q9NZN5-2",
+    "ARHGEF12 \u2014 ARHGEF12. https://platform.opentargets.org/target/ENSG00000196914",
+    "ARHGEF12 \u2194 glaucoma. https://platform.opentargets.org/target/ENSG00000196914/associations",
+    "ARHGEF12 \u2194 open-angle glaucoma. https://platform.opentargets.org/target/ENSG00000196914/associations",
+    "ARHGEF12 \u2194 skin basal cell carcinoma. https://platform.opentargets.org/target/ENSG00000196914/associations",
+    "ARHGEF12 \u2194 lymphoid neoplasm. https://platform.opentargets.org/target/ENSG00000196914/associations",
+    "ARHGEF12. https://en.wikipedia.org/wiki/ARHGEF12",
+    "RhoGEF domain. https://en.wikipedia.org/wiki/RhoGEF_domain",
+    "List of human protein-coding genes 1. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_1",
+    "Plexin-B1. https://en.wikipedia.org/wiki/Plexin-B1",
+    "Insulin-like growth factor 1 receptor. https://en.wikipedia.org/wiki/Insulin-like_growth_factor_1_receptor"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4146,
+    "completion_tokens": 279,
+    "total_tokens": 4425,
+    "estimated_cost_usd": 0.000789
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9NZN5",
+          "title": "ARHGEF12 (Q9NZN5)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9NZN5",
+          "text": "Protein: Rho guanine nucleotide exchange factor 12\nFunction: Acts as guanine nucleotide exchange factor (GEF) for RhoA GTPase and may act as GTPase-activating protein (GAP) for GNA12 and GNA13 (PubMed:11094164). May play a role in the regulation of RhoA GTPase by guanine nucleotide-binding alpha-12 (GNA12) and alpha-13 (GNA13) (PubMed:11094164). Promotes endothelial cell and actin stress fiber reorientation in response to mechanotransduction (By similarity)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9NZN5-2",
+          "title": "ARHGEF12 (Q9NZN5-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9NZN5-2",
+          "text": "Protein: Isoform 2 of Rho guanine nucleotide exchange factor 12",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000196914::function",
+          "title": "ARHGEF12 \u2014 ARHGEF12",
+          "url": "https://platform.opentargets.org/target/ENSG00000196914",
+          "text": "Function: Acts as guanine nucleotide exchange factor (GEF) for RhoA GTPase and may act as GTPase-activating protein (GAP) for GNA12 and GNA13 (PubMed:11094164). May play a role in the regulation of RhoA GTPase by guanine nucleotide-binding alpha-12 (GNA12) and alpha-13 (GNA13) (PubMed:11094164). Promotes endothelial cell and actin stress fiber reorientation in response to mechanotransduction (By similarity). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000196914::MONDO_0005041",
+          "title": "ARHGEF12 \u2194 glaucoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000196914/associations",
+          "text": "Disease: glaucoma\nDescription: Increased pressure in the eyeball due to obstruction of the outflow of aqueous humor.\nAssociation score: 0.543",
+          "cos_sim_score": 0.5425904569436921,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000196914::EFO_0004190",
+          "title": "ARHGEF12 \u2194 open-angle glaucoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000196914/associations",
+          "text": "Disease: open-angle glaucoma\nDescription: Chronic outflow obstruction of the eye's drainage canals that can lead to increased internal eye pressure and optic nerve damage.\nAssociation score: 0.527",
+          "cos_sim_score": 0.5269936812717109,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000196914::MONDO_0005341",
+          "title": "ARHGEF12 \u2194 skin basal cell carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000196914/associations",
+          "text": "Disease: skin basal cell carcinoma\nDescription: The most frequently seen skin cancer. It arises from basal cells of the epidermis and pilosebaceous units. Clinically it is divided into the following types: nodular, ulcerative, superficial, multicentric, erythematous, and sclerosing or morphea-like. More than 95% of these carcinomas occur in patients over 40. They develop on hair-bearing skin, most commonly on sun-exposed areas. Approximately 85% are found on the head and neck and the remaining 15% on the trunk and extremities. Basal cell carcinoma usually grows in a slow and indolent fashion. However, if untreated, the tumor may invade the subcutaneous fat, skeletal muscle and bone. Distant metastases are rare. Excision, curettage and irradiation cure most basal cell carcinomas.\nAssociation score: 0.370",
+          "cos_sim_score": 0.37013422446672883,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000196914::EFO_0001642",
+          "title": "ARHGEF12 \u2194 lymphoid neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000196914/associations",
+          "text": "Disease: lymphoid neoplasm\nDescription: A neoplasm composed of a lymphocytic cell population which is usually malignant (clonal) by molecular genetic and/or immunophenotypic analysis. Lymphocytic neoplasms include Hodgkin and non-Hodgkin lymphomas, acute and chronic lymphocytic leukemias, and plasma cell neoplasms.\nAssociation score: 0.370",
+          "cos_sim_score": 0.36994943453938645,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::ARHGEF12",
+          "title": "ARHGEF12",
+          "url": "https://en.wikipedia.org/wiki/ARHGEF12",
+          "text": "Rho guanine nucleotide exchange factor 12 is a protein that in humans is encoded by the ARHGEF12 gene. This protein is also called RhoGEF12 or Leukemia-associated Rho guanine nucleotide exchange factor (LARG).\n\nFunction\nRho guanine nucleotide exchange factor 12 is guanine nucleotide exchange factor (GEF) for the RhoA small GTPase protein.  Rho is a small GTPase protein that is inactive when bound to the guanine nucleotide GDP. But when acted on by Rho GEF proteins such as RhoGEF1, this GDP is released and replaced by GTP, leading to the active state of Rho. In this active, GTP-bound conformation, Rho can bind to and activate specific effector proteins and enzymes to regulate cellular functions. In particular, active Rho is a major regulator of the cell actin cytoskeleton.\nRhoGEF12 is a member of a group of four RhoGEF proteins known to be activated by G protein coupled receptors coupled to the  G12 and G13 heterotrimeric G proteins. The others are ARHGEF1 (also known as p115-RhoGEF), ARHGEF11 (also known as PDZ-RhoGEF) and AKAP13 (also known as ARHGEF13 and Lbc).  GPCR-regulated RhoGEF12 (and these related GEF proteins) acts as an effector for G12 and G13 G proteins. In addition to being activated by G12 or G13 G proteins, three of these four RhoGEF proteins (ARHGEF1/11/12) also function as RGS family GTPase-activating proteins (GAPs) to increase the rate of GTP hydrolysis of G12/G13 alpha proteins (which are themselves GTPase proteins). This action increases the rate of G protein deactivation, limiting the time during which these RhoGEFs activate Rho.\n\nClinical significance\nThis protein is observed to form myeloid/lymphoid fusion partner in acute myeloid leukemia.\n\nInteractions\nARHGEF12 has been shown to interact with:\n\nSee also\nSecond messenger system\nG protein-coupled receptor\nHeterotrimeric G protein\nSmall GTPases\nRho family of GTPases\n\nReferences\nFurther reading\nExternal links\nHuman ARHGEF12 genome location and ARHGEF12 gene details page  in the UCSC Genome Browser.",
+          "cos_sim_score": 0.39275115728378296,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::RhoGEF domain",
+          "title": "RhoGEF domain",
+          "url": "https://en.wikipedia.org/wiki/RhoGEF_domain",
+          "text": "RhoGEF domain describes two distinct structural domains with  guanine nucleotide exchange factor (GEF) activity to regulate small GTPases in the Rho family. Rho small GTPases are inactive when bound to GDP but active when bound to GTP; RhoGEF domains in proteins are able to promote GDP release and GTP binding to activate specific Rho family members, including RhoA, Rac1 and Cdc42.\nThe largest class of RhoGEFs is composed of proteins containing the \"Dbl-homology\" (DH) domain, which almost always is found together with a pleckstrin-homology (PH) domain to form a combined DH/PH domain structure.\nA distinct class of RhoGEFs is those proteins containing the DOCK/CZH/DHR-2 domain. This structure has no sequence similarity with DBL-homology domains.\n\nHuman proteins containing DH/PH RhoGEF domain\nABR;  AKAP13/ARHGEF13/Lbc;  ALS2;  ALS2CL;   ARHGEF1/p115-RhoGEF;  ARHGEF10;  ARHGEF10L;  ARHGEF11/PDZ-RhoGEF.;   ARHGEF12/LARG;  ARHGEF15;  ARHGEF16;  ARHGEF17;  ARHGEF18;  ARHGEF19;  ARHGEF2;  ARHGEF25;  ARHGEF26;  ARHGEF28;  ARHGEF3;  ARHGEF33;  ARHGEF35;  ARHGEF37; ARHGEF38;  ARHGEF39;  ARHGEF4;  ARHGEF40;  ARHGEF5;  ARHGEF6/alpha-PIX;  ARHGEF7/beta-PIX;  ARHGEF9;  BCR;  DNMBP;  ECT2;  ECT2L;  FARP1;  FARP2;  FGD1;  FGD2;  FGD3;  FGD4;  FGD5;  FGD6;   ITSN1/Intersectin 1;   ITSN2/Intersectin 2;  KALRN/Kalirin;  MCF2;  MCF2L;  MCF2L2;  NET1;  NGEF;  OBSCN;  PLEKHG1;  PLEKHG2;  PLEKHG3;  PLEKHG4;  PLEKHG4B;  PLEKHG5;  PLEKHG6;  PREX1;  PREX2;  RASGRF1;  RASGRF2; SPATA13;  TIAM1;  TIAM2;  TRIO;  VAV1;  VAV2;  VAV3.\n\nHuman proteins containing DOCK/CZH RhoGEF domain\nDOCK1/DOCK180;  DOCK2;  DOCK3/MOCA;  DOCK4;  DOCK5;  DOCK6/ZIR1;  DOCK7/ZIR2;  DOCK8/ZIR3;  DOCK9/Zizimin1;  DOCK10/Zizimin2;  DOCK11/Zizimin3\n\nSee also\nGTPase\nSmall GTPase\nGuanine nucleotide exchange factor\nRho family of GTPases\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.23591765761375427,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of human protein-coding genes 1",
+          "title": "List of human protein-coding genes 1",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_1",
+          "text": "== References ==",
+          "cos_sim_score": 0.16907328367233276,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Plexin-B1",
+          "title": "Plexin-B1",
+          "url": "https://en.wikipedia.org/wiki/Plexin-B1",
+          "text": "Plexin-B1 is a protein of the plexin family that in humans is encoded by the PLXNB1 gene.\n\nFunction\nWithin neural tissues, the plexin family serves as transmembrane receptors for Semaphorins. Outside of neural tissues, Plexin B1 is implicated in the control of cell migration.\n\nInteractions\nPLXNB1 has been shown to interact with ARHGEF12, Rnd1 and ARHGEF11.\n\nReferences\nChapoval SP, Hritzo M, Qi X, Tamagnone L, Golding A and Keegan AD. \"Semaphorin 4A Stabilizes Human Regulatory T Cell Phenotype via Plexin B1\". ImmunoHorizons,  February 1, 2019,  3  (2)  71-87;  doi:10.4049/immunohorizons.1800026\n\nFurther reading\nExternal links\nOverview of all the structural information available in the PDB for UniProt: O43157 (Plexin-B1) at the PDBe-KB.",
+          "cos_sim_score": 0.15065568685531616,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Insulin-like growth factor 1 receptor",
+          "title": "Insulin-like growth factor 1 receptor",
+          "url": "https://en.wikipedia.org/wiki/Insulin-like_growth_factor_1_receptor",
+          "text": "Inhibitors\nDue to the similarity of the structures of IGF-1R and the insulin receptor (IR), especially in the regions of the ATP binding site and tyrosine kinase regions, synthesising selective inhibitors of IGF-1R is difficult.  Prominent in current research are three main classes of inhibitor:\n\nTyrphostins such as AG538 and AG1024. These are in early pre-clinical testing. They are not thought to be ATP-competitive, although they are when used in EGFR as described in QSAR studies.  These show some selectivity towards IGF-1R over IR.\nPyrrolo(2,3-d)-pyrimidine derivatives such as NVP-AEW541, invented by Novartis, which show far greater (100 fold) selectivity towards IGF-1R over IR.\nMonoclonal antibodies are probably the most specific and promising therapeutic compounds. Teprotumumab is a novel therapy showing significant benefit for Thyroid Eye Disease.\n\nInteractions\nInsulin-like growth factor 1 receptor has been shown to interact with:\n\nRegulation\nThere is evidence to suggest that IGF1R is negatively regulated by the microRNA miR-7.\n\nSee also\nHypothalamic\u2013pituitary\u2013somatic axis\nInsulin receptor\nLinsitinib, an inhibitor of IGF-1R in clinical trials for cancer treatment\n\nReferences\nFurther reading\nExternal links\nIGF-1+Receptor at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nOverview of all the structural information available in the PDB for UniProt: P08069 (Insulin-like growth factor 1 receptor) at the PDBe-KB.",
+          "cos_sim_score": 0.1392267793416977,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

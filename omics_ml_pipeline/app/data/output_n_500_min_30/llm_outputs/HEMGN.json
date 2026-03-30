@@ -1,0 +1,102 @@
+{
+  "probe_id": "11736696_a_at",
+  "gene_symbol": "HEMGN",
+  "rf_importance": 0.0038,
+  "selection_freq": 0.4,
+  "abs_fold_change": 2.943764233333332,
+  "combined_score": 0.4778,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-03-30T13:48:07",
+  "interpretation": "HEMGN (Hemogen) is a protein that regulates the proliferation and differentiation of hematopoietic cells and may prevent apoptosis through the activation of nuclear factor-kappa B (NF-kB). In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), HEMGN has been identified as a potential diagnostic biomarker based on its differential expression in patients with SONFH compared to healthy controls. The study utilizing the GSE123568 dataset found that HEMGN was downregulated in SONFH patients, suggesting its involvement in the disease's pathophysiology, particularly in processes related to inflammation and apoptosis, which are critical in osteonecrosis development. \n\nThe strength of the evidence is direct, as it is supported by findings from the microarray analysis and subsequent validation in another dataset. Clinically, HEMGN's downregulation in SONFH patients indicates its potential as an early-detection biomarker, which could aid in the timely diagnosis and management of this debilitating condition. Overall, HEMGN shows promise for improving the precision of early detection of SONFH.",
+  "citations": [
+    "HEMGN (Q9BXL5). https://www.uniprot.org/uniprotkb/Q9BXL5",
+    "HEMGN \u2014 HEMGN. https://platform.opentargets.org/target/ENSG00000136929",
+    "HEMGN \u2194 hypothyroidism. https://platform.opentargets.org/target/ENSG00000136929/associations",
+    "HEMGN \u2194 thrombocytopenia 4. https://platform.opentargets.org/target/ENSG00000136929/associations",
+    "HEMGN \u2194 hemorrhagic disease. https://platform.opentargets.org/target/ENSG00000136929/associations",
+    "HEMGN \u2194 Blackfan-Diamond anemia. https://platform.opentargets.org/target/ENSG00000136929/associations",
+    "HEMGN and SLC2A1 might be potential diagnostic biomarkers of steroid-induced osteonecrosis of femoral head: study based on WGCNA and DEGs screening. (2021). https://pubmed.ncbi.nlm.nih.gov/33451334/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 2317,
+    "completion_tokens": 223,
+    "total_tokens": 2540,
+    "estimated_cost_usd": 0.000481
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9BXL5",
+          "title": "HEMGN (Q9BXL5)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BXL5",
+          "text": "Protein: Hemogen\nFunction: Regulates the proliferation and differentiation of hematopoietic cells. Overexpression block the TPA-induced megakaryocytic differentiation in the K562 cell model. May also prevent cell apoptosis through the activation of the nuclear factor-kappa B (NF-kB)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000136929::function",
+          "title": "HEMGN \u2014 HEMGN",
+          "url": "https://platform.opentargets.org/target/ENSG00000136929",
+          "text": "Function: Regulates the proliferation and differentiation of hematopoietic cells. Overexpression block the TPA-induced megakaryocytic differentiation in the K562 cell model. May also prevent cell apoptosis through the activation of the nuclear factor-kappa B (NF-kB).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000136929::EFO_0004705",
+          "title": "HEMGN \u2194 hypothyroidism",
+          "url": "https://platform.opentargets.org/target/ENSG00000136929/associations",
+          "text": "Disease: hypothyroidism\nDescription: Abnormally low levels of thyroid hormone.\nAssociation score: 0.158",
+          "cos_sim_score": 0.1582165437817256,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000136929::MONDO_0012775",
+          "title": "HEMGN \u2194 thrombocytopenia 4",
+          "url": "https://platform.opentargets.org/target/ENSG00000136929/associations",
+          "text": "Disease: thrombocytopenia 4\nDescription: Any thrombocytopenia in which the cause of the disease is a mutation in the CYCS gene.\nAssociation score: 0.138",
+          "cos_sim_score": 0.1383441823287546,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000136929::MONDO_0002243",
+          "title": "HEMGN \u2194 hemorrhagic disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000136929/associations",
+          "text": "Disease: hemorrhagic disease\nDescription: Spontaneous or near spontaneous bleeding caused by a defect in clotting mechanisms (blood coagulation disorders) or another abnormality causing a structural flaw in the blood vessels (hemostatic disorders).\nAssociation score: 0.138",
+          "cos_sim_score": 0.1383441823287546,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000136929::Orphanet_124",
+          "title": "HEMGN \u2194 Blackfan-Diamond anemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000136929/associations",
+          "text": "Disease: Blackfan-Diamond anemia\nAssociation score: 0.086",
+          "cos_sim_score": 0.08633077422222395,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::33451334",
+          "title": "HEMGN and SLC2A1 might be potential diagnostic biomarkers of steroid-induced osteonecrosis of femoral head: study based on WGCNA and DEGs screening.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33451334/",
+          "year": "2021",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SONFH) is a chronic and crippling bone disease. This study aims to reveal novel diagnostic biomarkers of SONFH. The GSE123568 dataset based on peripheral blood samples from 10 healthy individuals and 30 SONFH patients was used for weighted gene co-expression network analysis (WGCNA) and differentially expressed genes (DEGs) screening. The genes in the module related to SONFH and the DEGs were extracted for Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analysis. Genes with |gene significance|\u2009>\u20090.7 and |module membership| >\u20090.8 were selected as hub genes in modules. The DEGs with the degree of connectivity \u22655 were chosen as hub genes in DEGs. Subsequently, the overlapping genes of hub genes in modules and hub genes in DEGs were selected as key genes for SONFH. And then, the key genes were verified in another dataset, and the diagnostic value of key genes was evaluated by receiver operating characteristic (ROC) curve. Nine gene co-expression modules were constructed via WGCNA. The brown module with 1258 genes was most significantly correlated with SONFH and was identified as the key module for SONFH. The results of functional enrichment analysis showed that the genes in the key module were mainly enriched in the inflammatory response, apoptotic process and osteoclast differentiation. A total of 91 genes were identified as hub genes in the key module. Besides, 145 DEGs were identified by DEGs screening and 26 genes were identified as hub genes of DEGs. Overlapping genes of hub genes in the key module and hub genes in DEGs, including RHAG, RNF14, HEMGN, and SLC2A1, were further selected as key genes for SONFH. The diagnostic value of these key genes for SONFH was confirmed by ROC curve. The validation results of these key genes in GSE26316 dataset showed that only HEMGN and SLC2A1 were downregulated in the SONFH group, suggesting that they were more likely to be diagnostic biomarkers of SOFNH than RHAG and RNF14. Our study identified that two key genes, HEMGN and SLC2A1, might be potential diagnostic biomarkers of SONFH.",
+          "cos_sim_score": 0.45014917850494385,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_fetch_by_id",
+      "result": []
+    }
+  ]
+}

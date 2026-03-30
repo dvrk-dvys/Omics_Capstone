@@ -1,0 +1,137 @@
+{
+  "probe_id": "11730138_at",
+  "gene_symbol": "KLF1",
+  "rf_importance": 0.004,
+  "selection_freq": 1.0,
+  "abs_fold_change": 1.9626970000000004,
+  "combined_score": 0.3452,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-03-30T14:03:59",
+  "interpretation": "KLF1 (Krueppel-like factor 1) is a transcription factor crucial for the development and maturation of erythroid (red blood) cells. It regulates several pathways essential for erythropoiesis, including globin gene expression and iron metabolism. While KLF1 is primarily associated with hematopoietic functions, its role in regulating cellular differentiation and apoptosis may have implications in conditions like Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), where steroid administration can disrupt normal bone and blood cell function.\n\nThe evidence connecting KLF1 directly to SONFH is limited, as no specific studies were found linking KLF1 to this condition. However, given its involvement in erythropoiesis and potential effects on bone health through blood supply and oxygenation, one could infer that alterations in KLF1 expression might influence the pathophysiology of SONFH indirectly [INFERENCE]. \n\nOverall, while KLF1's direct relevance to SONFH remains unclear, its critical role in erythropoiesis and potential indirect effects on bone health suggest it could be a candidate for further investigation as a biomarker for early detection of SONFH. However, more specific studies are needed to establish its clinical utility in this context.",
+  "citations": [
+    "KLF1 (Q13351). https://www.uniprot.org/uniprotkb/Q13351",
+    "KLF1 \u2014 KLF1. https://platform.opentargets.org/target/ENSG00000105610",
+    "KLF1 \u2194 congenital dyserythropoietic anemia type 4. https://platform.opentargets.org/target/ENSG00000105610/associations",
+    "KLF1 \u2194 Congenital dyserythropoietic anemia type IV. https://platform.opentargets.org/target/ENSG00000105610/associations",
+    "KLF1 \u2194 Hereditary persistence of fetal hemoglobin - beta-thalassemia. https://platform.opentargets.org/target/ENSG00000105610/associations",
+    "KLF1 \u2194 hereditary persistence of fetal hemoglobin-sickle cell disease syndrome. https://platform.opentargets.org/target/ENSG00000105610/associations",
+    "Kruppel-like factors. https://en.wikipedia.org/wiki/Kruppel-like_factors",
+    "Kruppel-like factors. https://en.wikipedia.org/wiki/Kruppel-like_factors",
+    "KLF3. https://en.wikipedia.org/wiki/KLF3",
+    "Kruppel-like factors. https://en.wikipedia.org/wiki/Kruppel-like_factors",
+    "KLF1. https://en.wikipedia.org/wiki/KLF1"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5663,
+    "completion_tokens": 252,
+    "total_tokens": 5915,
+    "estimated_cost_usd": 0.001001
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q13351",
+          "title": "KLF1 (Q13351)",
+          "url": "https://www.uniprot.org/uniprotkb/Q13351",
+          "text": "Protein: Krueppel-like factor 1\nFunction: Transcription regulator of erythrocyte development that probably serves as a general switch factor during erythropoiesis. Is a dual regulator of fetal-to-adult globin switching. Binds to the CACCC box in the beta-globin gene promoter and acts as a preferential activator of this gene. Furthermore, it binds to the BCL11A promoter and activates expression of BCL11A, which in turn represses the HBG1 and HBG2 genes. This dual activity ensures that, in most adults, fetal hemoglobin levels are low. Able to activate CD44 and AQP1 promoters (PubMed:21055716). When sumoylated, acts as a transcriptional repressor by promoting interaction with CDH2/MI2beta and also represses megakaryocytic differentiation",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000105610::function",
+          "title": "KLF1 \u2014 KLF1",
+          "url": "https://platform.opentargets.org/target/ENSG00000105610",
+          "text": "Function: Transcription regulator of erythrocyte development that probably serves as a general switch factor during erythropoiesis. Is a dual regulator of fetal-to-adult globin switching. Binds to the CACCC box in the beta-globin gene promoter and acts as a preferential activator of this gene. Furthermore, it binds to the BCL11A promoter and activates expression of BCL11A, which in turn represses the HBG1 and HBG2 genes. This dual activity ensures that, in most adults, fetal hemoglobin levels are low. Able to activate CD44 and AQP1 promoters (PubMed:21055716). When sumoylated, acts as a transcriptional repressor by promoting interaction with CDH2/MI2beta and also represses megakaryocytic differentiation.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000105610::MONDO_0013355",
+          "title": "KLF1 \u2194 congenital dyserythropoietic anemia type 4",
+          "url": "https://platform.opentargets.org/target/ENSG00000105610/associations",
+          "text": "Disease: congenital dyserythropoietic anemia type 4\nDescription: Congenital dyserythropoietic anemia type IV (CDA IV) is a newly discovered form of CDA characterized by ineffective erythropoiesis and hemolysis that leads to severe anemia at birth.\nAssociation score: 0.769",
+          "cos_sim_score": 0.7691866940664915,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000105610::Orphanet_293825",
+          "title": "KLF1 \u2194 Congenital dyserythropoietic anemia type IV",
+          "url": "https://platform.opentargets.org/target/ENSG00000105610/associations",
+          "text": "Disease: Congenital dyserythropoietic anemia type IV\nDescription: Congenital dyserythropoietic anemia type IV (CDA IV) is a newly discovered form of CDA (see this term) characterized by ineffective erythropoiesis and hemolysis that leads to severe anemia at birth.\nAssociation score: 0.769",
+          "cos_sim_score": 0.7691228306660239,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000105610::Orphanet_46532",
+          "title": "KLF1 \u2194 Hereditary persistence of fetal hemoglobin - beta-thalassemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000105610/associations",
+          "text": "Disease: Hereditary persistence of fetal hemoglobin - beta-thalassemia\nDescription: Hereditary persistence of fetal hemoglobin (HPFH) associated with beta-thalassemia (see this term) is characterized by high hemoglobin (Hb) F levels and an increased number of fetal-Hb-containing-cells.\nAssociation score: 0.561",
+          "cos_sim_score": 0.5613966288944454,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000105610::MONDO_0016672",
+          "title": "KLF1 \u2194 hereditary persistence of fetal hemoglobin-sickle cell disease syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000105610/associations",
+          "text": "Disease: hereditary persistence of fetal hemoglobin-sickle cell disease syndrome\nDescription: A rare, genetic, hemoglobinopathy characterized by generally mild clinical phenotype, high fetal hemoglobin levels and mild microcytosis and hypochromia. In some cases, acute sickle cell disease manifestations were reported, namely acute chest syndrome and acute pain crisis. The genotype is characterized by the combination of an HbS and HbF allele; symptoms depend on the degree of HbF:HbS expressivity with patients with more than 35% pancellular HbF expression being asymptomatic. Symptomatic patients have heterocellular expression of HbF.\nAssociation score: 0.560",
+          "cos_sim_score": 0.5602440747260756,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Kruppel-like factors",
+          "title": "Kruppel-like factors",
+          "url": "https://en.wikipedia.org/wiki/Kruppel-like_factors",
+          "text": "Evolutionary and biochemical mechanisms\nThe proliferation of KLF genes, presumably from an ancestral KLF, is also interesting. In some cases different family members are expressed in different tissues. The first KLF, KLF1, originally known as Erythroid KLF (EKLF) is expressed only in red blood cells and megakaryocytes. It drives red blood cell differentiation and represses megakaryocyte formation. It appears that it has arisen as a KLF family member that has a particular role in these two blood lineages. Other KLFs are more broadly expressed and there are interactions between family members. KLF3 for instance is driven by KLF1 as is KLF8. On the other hand, KLF3 represses KLF8. Such cross-regulation occurs extensively in transcription factor families. Many transcription factor genes regulate their own promoters and when a gene duplicates during evolution then cross-regulation often occurs. The cross-regulation can ensure that the total amount of KLFs in the cell is monitored and controlled.\nFinally, the biological roles of the KLFs are of wide interest. KLF1 is a very important factor in red blood cell biology. Naturally occurring human mutations in the KLF1 gene have been associated with de-repression of the fetal globin gene. KLF2 (originally Lung KLF ) also has a role in embryonic globin gene expression, as does KLF3 (originally Basic KLF). KLF3 also has roles in adipocyte or fat formation, and in B lymphocytes. Recently, KLF3 was shown to be important in heart development. KLF4 (originally Gut KLF) is an important gene in the gut and skin but has more recently risen to prominence as one of the four genes that can reprogram body cells to become stem cells. [KLF4] is one of the so-called magic four transcription factors, KLF4, Oct4, Sox2 and Myc. KLF5, like KLF3, is important in adipocytes  and KLF6 is an important tumour suppressor gene, that is often mutated in prostate cancers.\n\nKr\u00fcppel-like factor 3\nKLF3 has a short motif in the N-terminus (of the form Proline-Isoleucine-Aspartate-Leucine-Serine or PIDLS) that recruits CtBP1 and 2. CtBP in turn recruits histone modifying enzymes. It brings in histone deacetylases, histone demethylases and histone methylases, which are thought to \nremove active chromatin marks and lay down repressive marks to eliminate gene expression.",
+          "cos_sim_score": 0.45858171582221985,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Kruppel-like factors",
+          "title": "Kruppel-like factors",
+          "url": "https://en.wikipedia.org/wiki/Kruppel-like_factors",
+          "text": "Kr\u00fcppel-like factor 3\nKLF3 has a short motif in the N-terminus (of the form Proline-Isoleucine-Aspartate-Leucine-Serine or PIDLS) that recruits CtBP1 and 2. CtBP in turn recruits histone modifying enzymes. It brings in histone deacetylases, histone demethylases and histone methylases, which are thought to \nremove active chromatin marks and lay down repressive marks to eliminate gene expression.\n\nKr\u00fcppel-like factors 4 and 5\nKlf4, also known as gut-enriched Kr\u00fcppel-like factor (GKLF), acts as a transcriptional activator or repressor depending on the promoter context and/or cooperation with other transcription factors. For example, Klf4 transactivates the iNOS promoter in cooperation with p65 (RelA), and the p21Cip1/Waf1 promoter in cooperation with p53, but it directly suppresses the p53 promoter and inhibits ornithine decarboxylase (ODC) promoter activity by competing with specificity protein-1 (Sp-1). Klf4 also interacts with the p300/CBP transcription co-activators.  Klf5, also known as intestinal enriched Kr\u00fcppel-like factor (IKLF) or basic transcription element binding protein 2 (Bteb2), has been assigned purely transcriptional activation activity but, similar to Klf4, binds p300 which acetylates the first zinc finger conferring a trans-activating function. Importantly for Klf4 and Klf5, the amino acids that are predicted to interact with DNA are identical and the two compete for the same CACCC element or GC-rich sequence of the gene promoter region to regulate cell proliferation or differentiation-elated gene expression. Klf4 and Klf5 can act antagonistically during cellular proliferation, differentiation, and promoter activation, either via direct competition or via alterations in their own gene expression. The expression of Klf4 in terminally differentiated, post-mitotic intestinal epithelial cells as opposed to proliferating crypt cells which contain high levels of Klf5 is one example of such opposing effects. Klf4 inhibits proliferation through activation of p21Cip1/Waf1, and direct suppression of cyclin D1  and cyclin B1  gene expression. Both Klf4 & Klf5 proteins act on the Klf4 promoter where Klf4 increases expression and Klf5 decreases expression of Klf4 mRNA. The Wnt/APC signal pathway also plays an important role in the regulation of KLF4 expression. LOH, point mutations in the coding region and promoter hypermethylation are the main causes of klf4 gene silencing.",
+          "cos_sim_score": 0.44194209575653076,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::KLF3",
+          "title": "KLF3",
+          "url": "https://en.wikipedia.org/wiki/KLF3",
+          "text": "Kr\u00fcppel-like factor 3 is a protein that in humans is encoded by the KLF3 gene.\n\nStructure\nKLF3, originally termed Basic Kr\u00fcppel-like Factor (BKLF), was the third member of the Kr\u00fcppel-like factor family of zinc finger transcription factors to be discovered. Transcription factors in this family bind DNA by virtue of 3 characteristic three C2H2 zinc fingers at their C-termini. Since their DNA-binding domains are highly conserved within the family, all KLF proteins recognize CACCC or CGCCC boxes of the general form NCR CRC CCN, (where N is any base and R is a purine).\n\nFunction\nWhile the C-termini are similar in different KLFs, the N-termini vary and accordingly different KLFs can either activate or repress transcription or both. KLF3 appears to function predominantly as a repressor of transcription. It turns genes off. It does this by recruiting the C-terminal Binding Protein co-repressors CTBP1 and CTBP2. CtBP docks onto a short motif (residues 61-65) in the N-terminus of KLF3, of the general form Proline \u2013 Isoleucine \u2013 Aspartate \u2013 Leucine \u2013 Serine (the PIDLS motif). CtBP in turn recruits histone modifying enzymes to alter chromatin and repress gene expression.\nKLF3 is expressed highly in the red blood cell or erythroid lineage. Here it is driven by another KLF, Erythroid KLF or KLF1, and its expression increases as erythroid cells mature. Studies in knockout mice reveal a mild anemia in the absence of functional KLF3 and the de-repression of several target genes that contain CACCC boxes in their regulatory regions. Many of these genes are activated by KLF1, hence it appears that KLF3 operates in a negative feedback loop to balance the activating potential of KLF1. KLF3 also regulates another repressive KLF, KLF8. Thus KLF1, KLF3 and KLF8 operate in a tight regulatory network. KLF3 and KLF8 may have redundant functions, as mice lacking both KLF3 and KLF8 show defects that are more severe than in either single knockout. They die in utero around day 14 of gestation.\nAs well as being expressed in erythroid cells, KLF3 is present in other cell types and analysis of the knockout mice has revealed defects affecting adipose tissue and B cells. KLF3 deficient mice have less adipose tissue and indications of metabolic health that may be attributable to de-repression of the adipokine hormone gene adipolin. The role of KLF3 in B lymphocytes is complex but it appears to operate in a network with KLF2 and KLF4 to influence the switch between spleen marginal zone and follicular B cells.\n\nInteractions\nKLF3 has been shown to interact with:\n\nCTBP2 and\nFHL3.\n\nReferences\nFurther reading\nExternal links\nKLF3 protein, human at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.4369269609451294,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Kruppel-like factors",
+          "title": "Kruppel-like factors",
+          "url": "https://en.wikipedia.org/wiki/Kruppel-like_factors",
+          "text": "In molecular genetics, the Kr\u00fcppel-like family of transcription factors (KLFs) are a set of eukaryotic Cys2His2 zinc finger DNA-binding proteins that regulate gene expression. This family has been expanded to also include the Sp transcription factor and related proteins, forming the Sp/KLF family.\n\nMembers\nThe following human genes encode Kruppel-like factors:\nKLF1,  KLF2,  KLF3,  KLF4,  KLF5,  KLF6,  KLF7,  KLF8,  KLF9, KLF10, KLF11,  KLF12,  KLF13,  KLF14,  KLF15,  KLF16,  KLF17\nThe following genes are Sp factors:\nSp1, Sp2, Sp3, Sp4, Sp5, Sp6, Sp7, Sp8, and Sp9.\nNote that although KLF14 was an alias for Sp6 (Q3SY56), it now refers to a protein (Q8TD94) derived from KLF16 by a retrotransposon event.\n\nFunction and properties\nKLF/Sps are a family of transcription factors that contain three carboxyl-terminal (C-terminal) Cys2His2-type zinc finger structural motifs that bind to the GC-rich regions in DNA and regulate various cellular functions, such as proliferation, differentiation, and apoptosis, as well as the development and homeostasis of several types of tissue. The C-terminal end binds to the promoter and enhancer regions of a gene. Each KLF also has a unique amino-terminal (N-terminal) end that acts as the functional domain that allows it to bind specifically to a certain partner. KLFs share the similar function of transcription regulation via the recruitment of regulatory proteins. These transcription factors have a conserved structural homology between mammalian species, which allow for similar function due to similar protein interaction motifs at the N-terminal domains. The C-terminal end is also highly conserved with both the first and second zinc finger have 25 amino acids, while the third has 23 amino acids. Each of the three zinc fingers recognize three unique base pairs for their DNA-binding sites, which together make the general form NCR CRC CCN (where N is any base and R is a purine). There is some evidence that positively-charged amino acids within the three zinc fingers may contribute towards localizing the protein in the Nucleus. The N-terminal end allows for the binding of various coactivators, corepressors, and modifiers. All family members share the zinc finger signature KLF-DBD of CxxxxCxxxxxxxxxxxxHxxxHxxxxxxxCxxxxCxxxxxxxxxxxxHxxxHxxxxxxxCxxCxxxxxxxxxxxxHxxxH and use a 9aaTAD.\nKLFs are divided into three subgroups; Group 1 (KLF 3,8, and 12) are repressors via interaction with the C-terminal Binding Protein 1 and 2 (CtBP1 and CtBP2). Group 2 (KLFs 1,2,4,5,6, and 7) are transcription activators. Group 3 (KLFs 9,10,11,13,12, and 16) have repressor activity via interaction with the common transcriptional co-repressor, Sin3A. KLFs 15 and 17 are distantly related without any defined protein interaction motifs.\nThe Sp family members diverged from KLFs since Filozoa. They are typically divided into two groups of Sp1-4 and Sp5-9. One of the signatures is the \"Btd box\" CxCPxC preceding the KLF-DBD.",
+          "cos_sim_score": 0.41835176944732666,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::KLF1",
+          "title": "KLF1",
+          "url": "https://en.wikipedia.org/wiki/KLF1",
+          "text": "Krueppel-like factor 1 is a protein that in humans is encoded by the KLF1 gene. The gene for KLF1 is on the human chromosome 19 and on mouse chromosome 8. Krueppel-like factor 1  is a transcription factor that is necessary for the proper maturation of erythroid (red blood) cells.\n\nStructure\nThe molecule has two domains; the transactivation domain and the chromatin-remodeling domain. The carboxyl (C) terminal is composed of three C2H2 zinc fingers that binds to DNA, and the amino (N) terminus is proline rich and acidic.\n\nFunction\nStudies in mice first demonstrated the critical function of KLF1 in hematopoietic development. KLF1 deficient (knockout) mouse embryos exhibit a lethal anemic phenotype, fail to promote the transcription of adult \u03b2-globin, and die by embryonic day 15.\nOver-expression of KLF1 results in a reduction of the number of circulating platelets and hastens the onset of the \u03b2-globin gene.\nKLF1 coordinates the regulation of six cellular pathways that are all essential to terminal erythroid differentiation:\n\nCell Membrane & Cytoskeleton\nApoptosis\nHeme Synthesis & Transport\nCell Cycling\nIron Procurement\nGlobin Chain Production\nIt has also been linked to three main processes that are all essential to transcription of the \u03b2 globin gene:\n\nChromatin remodeling\nModulation of the gamma to beta globin switch\nTranscriptional activation\nKLF1 binds specifically to the \"CACCC\" motif of the \u03b2-globin gene promoter.  When natural mutations occur in the promoter, \u03b2+ thalassemia can arise in humans.  Thalassemia's prevalence (2 million worldwide carry the trait) makes KLF1 clinically significant.\n\nClinical significance\nNext-Generation sequencing efforts have revealed a surprisingly high prevalence of mutations in human KLF1. The chance of a KLF1 null child being conceived is approximately 1:24,000 in Southern China. With pre-natal blood transfusions and bone marrow transplant, it is possible to be born without KLF1. Most mutations in KLF1 lead to a recessive loss-of-function phenotype, however semi-dominant mutations have been identified in humans and mice as the cause of a rare inherited anemia CDA type IV. Additional family studies and clinical research unveiled the molecular genetics of the HPFH KLF1-related condition and established KLF1 as a novel quantitative trait locus for HbF (HBFQTL6). Permissive nature of the role of KLF1 on expression of several RBC antigens are evidenced by a series of known KLF1 mutations which are named after its modifier gene effect on Lutheral blood group In(Lu) ie \"Inhibitor of Lutheran\". No homozygouse alive human examples are known, corroborating with the Embryonic lethality of KLF1 homozygous mice. So the In(Lu) mutatants are significantly heteroinsuffient for KLF1 function such that RBC are formed, but there is an apparent dominant negative effect on expression of Lutheran Antigen (Basal cell adhesion Molecule) after which it was named, but also significant but somewhat variable degree of inhibition of expression of Colton (Aquaporin1), Ok (CD147 ie EMMPRIN), Indian(CD44), Duffy (Duffy antigen/chemokine receptor or Fy), Scianna (ERMAP), MN (glycophorin A), Diego(band 3), P1, i, AnWj (CD44) etc. Antigens on RBC membrane, and some of which might overlap with KLF1 mutations causing the fraction of hereditary persistence of fetal hemoglobin  with CDA type IV.\n\nReferences\nExternal links\nOverview of all the structural information available in the PDB for UniProt: Q13351 (Krueppel-like factor 1) at the PDBe-KB.",
+          "cos_sim_score": 0.39871954917907715,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

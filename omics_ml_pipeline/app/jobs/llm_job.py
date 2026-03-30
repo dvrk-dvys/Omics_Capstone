@@ -90,12 +90,29 @@ def _process_gene(
     log.info(f"[DONE] gene={gene} probe={probe} elapsed={elapsed:.1f}s")
     cost = _calc_cost(result.prompt_tokens, result.completion_tokens, input_cost_per_1m, output_cost_per_1m)
 
+    # Merge structured evidence fields from Pydantic synthesis object.
+    # Falls back to conservative defaults if parse() failed (synthesis is None).
+    s = result.synthesis
+    evidence = {
+        "evidence_relation":   s.evidence_relation   if s else "inferred",
+        "evidence_tier":       s.evidence_tier       if s else "Tier 4",
+        "evidence_confidence": s.evidence_confidence if s else "low",
+        "biomarker_potential": s.biomarker_potential if s else "weak",
+        "relevance_summary":   s.relevance_summary   if s else "",
+    }
+
+    # Deduplicate citations preserving insertion order
+    deduped_citations = list(dict.fromkeys(citations))
+
     payload = {
         **row,
         "model": result.model,
         "timestamp": datetime.now().isoformat(timespec="seconds"),
-        "interpretation": result.text,
-        "citations": citations,
+        # Prefer synthesis.interpretation so saved prose always matches parsed output;
+        # fall back to result.text only if structured parse failed.
+        "interpretation": s.interpretation if s else result.text,
+        **evidence,
+        "citations": deduped_citations,
         "token_usage": {
             "prompt_tokens": result.prompt_tokens,
             "completion_tokens": result.completion_tokens,

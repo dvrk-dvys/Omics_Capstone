@@ -96,6 +96,16 @@ def main():
     args   = parse_args()
     config = load_config(args.config)
 
+    # Ensure all output directories exist — safe to run on every startup
+    for dir_key in ("feature_select_dir", "model_output_dir", "plots_dir", "llm_outputs_dir"):
+        dir_path = config["paths"].get(dir_key)
+        if dir_path:
+            os.makedirs(dir_path, exist_ok=True)
+    for file_key in ("parsed_csv", "preprocessed_csv", "biomarker_shortlist"):
+        file_path = config["paths"].get(file_key)
+        if file_path:
+            os.makedirs(os.path.dirname(file_path), exist_ok=True)
+
     run_id = _next_run_id(config)
     crash_id = uuid.uuid4().hex[:8]
     pipeline_start = time.perf_counter()
@@ -158,7 +168,7 @@ def main():
             try:
                 with log_duration(log, "Train + evaluate"):
                     t0 = time.perf_counter()
-                    comparison_df = train_eval_job.run(config, selected_df, run_id)
+                    comparison_df = train_eval_job.run(config, selected_df, run_id, gene_map=gene_map)
                     durations["Train + evaluate"] = time.perf_counter() - t0
             except Exception as e:
                 log.error(f"❌ Train + evaluate failed (continuing): {e}")

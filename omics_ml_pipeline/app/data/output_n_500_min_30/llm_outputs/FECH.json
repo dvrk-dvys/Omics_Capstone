@@ -1,0 +1,145 @@
+{
+  "probe_id": "11727807_at",
+  "gene_symbol": "FECH",
+  "rf_importance": 0.003,
+  "selection_freq": 0.6,
+  "abs_fold_change": 2.8394822333333343,
+  "combined_score": 0.4489,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-03-30T13:50:37",
+  "interpretation": "Ferrochelatase (FECH) is a mitochondrial enzyme that catalyzes the insertion of ferrous iron into protoporphyrin IX, forming heme B, which is crucial for various biological processes, including oxygen transport in hemoglobin. While there is no direct evidence linking FECH to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in heme biosynthesis suggests a potential indirect connection, as heme is involved in cellular metabolism and oxidative stress responses, which may be relevant in the context of steroid-induced bone damage. The evidence regarding FECH's involvement in SONFH is weak, as no specific studies were found directly addressing this relationship. Therefore, the connection remains largely speculative [INFERENCE]. \n\nGiven its biological function, FECH could be considered for further investigation as a potential biomarker for SONFH, particularly in understanding the metabolic changes associated with steroid treatment. However, more research is needed to establish its clinical relevance as an early-detection biomarker for SONFH.",
+  "citations": [
+    "FECH (P22830). https://www.uniprot.org/uniprotkb/P22830",
+    "FECH (P22830-2). https://www.uniprot.org/uniprotkb/P22830-2",
+    "FECH \u2014 FECH. https://platform.opentargets.org/target/ENSG00000066926",
+    "FECH \u2194 autosomal erythropoietic protoporphyria. https://platform.opentargets.org/target/ENSG00000066926/associations",
+    "FECH \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000066926/associations",
+    "FECH \u2194 erythropoietic protoporphyria. https://platform.opentargets.org/target/ENSG00000066926/associations",
+    "FECH \u2194 Alzheimer disease. https://platform.opentargets.org/target/ENSG00000066926/associations",
+    "Ferrochelatase. https://en.wikipedia.org/wiki/Ferrochelatase",
+    "Ferrochelatase. https://en.wikipedia.org/wiki/Ferrochelatase",
+    "Erythropoietic protoporphyria. https://en.wikipedia.org/wiki/Erythropoietic_protoporphyria",
+    "Sirohydrochlorin ferrochelatase. https://en.wikipedia.org/wiki/Sirohydrochlorin_ferrochelatase",
+    "Porphyria. https://en.wikipedia.org/wiki/Porphyria"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5485,
+    "completion_tokens": 207,
+    "total_tokens": 5692,
+    "estimated_cost_usd": 0.000947
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P22830",
+          "title": "FECH (P22830)",
+          "url": "https://www.uniprot.org/uniprotkb/P22830",
+          "text": "Protein: Ferrochelatase, mitochondrial\nFunction: Catalyzes the ferrous insertion into protoporphyrin IX and participates in the terminal step in the heme biosynthetic pathway",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P22830-2",
+          "title": "FECH (P22830-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P22830-2",
+          "text": "Protein: Isoform 2 of Ferrochelatase, mitochondrial",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000066926::function",
+          "title": "FECH \u2014 FECH",
+          "url": "https://platform.opentargets.org/target/ENSG00000066926",
+          "text": "Function: Catalyzes the ferrous insertion into protoporphyrin IX and participates in the terminal step in the heme biosynthetic pathway. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000066926::MONDO_0019263",
+          "title": "FECH \u2194 autosomal erythropoietic protoporphyria",
+          "url": "https://platform.opentargets.org/target/ENSG00000066926/associations",
+          "text": "Disease: autosomal erythropoietic protoporphyria\nDescription: Erythropoietic protoporphyria (EPP) is an inherited disorder of the heme metabolic pathway characterized by accumulation of protoporphyrin in blood, erythrocytes and tissues, and cutaneous manifestations of photosensitivity.\nAssociation score: 0.842",
+          "cos_sim_score": 0.8424032706667833,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000066926::EFO_0005772",
+          "title": "FECH \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000066926/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.547",
+          "cos_sim_score": 0.5471385088244659,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000066926::MONDO_0001676",
+          "title": "FECH \u2194 erythropoietic protoporphyria",
+          "url": "https://platform.opentargets.org/target/ENSG00000066926/associations",
+          "text": "Disease: erythropoietic protoporphyria\nDescription: A rare congenital metabolic disorder characterized by an inborn error of porphyrin-heme biosynthesis. Signs and symptoms include painful cutaneous photosensitivity leading to blistering and scarring of the exposed skin areas, erythrodontia, red discoloration of urine, hemolytic anemia, and splenomegaly.\nAssociation score: 0.468",
+          "cos_sim_score": 0.46847057847687856,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000066926::MONDO_0004975",
+          "title": "FECH \u2194 Alzheimer disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000066926/associations",
+          "text": "Disease: Alzheimer disease\nDescription: A progressive, neurodegenerative disease characterized by loss of function and death of nerve cells in several areas of the brain leading to loss of cognitive function such as memory and language.\nAssociation score: 0.337",
+          "cos_sim_score": 0.3365518567454565,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Ferrochelatase",
+          "title": "Ferrochelatase",
+          "url": "https://en.wikipedia.org/wiki/Ferrochelatase",
+          "text": "Protoporphyrin ferrochelatase (EC 4.98.1.1, formerly EC 4.99.1.1, or ferrochelatase; systematic name protoheme ferro-lyase (protoporphyrin-forming)) is an enzyme encoded by the FECH gene in humans. Ferrochelatase catalyses the eighth and terminal step in the biosynthesis of heme, converting protoporphyrin IX into heme B. It catalyses the reaction:\n\nFunction\nFerrochelatase catalyzes the insertion of ferrous iron into protoporphyrin IX in the heme biosynthesis pathway to form heme B. The enzyme is localized to the matrix-facing side of the inner mitochondrial membrane. Ferrochelatase is the best known member of a family of enzymes that add divalent metal cations to tetrapyrrole structures. For example, magnesium chelatase adds magnesium to protoporphyrin IX in the first step of bacteriochlorophyll biosynthesis.\nHeme B is an essential cofactor in many proteins and enzymes. In particular, heme b plays a key role as the oxygen carrier in hemoglobin in red blood cells and myoglobin in muscle cells. Furthermore, heme B is found in cytochrome b, a key component in Q-cytochrome c oxidoreductase (complex III) in oxidative phosphorylation.\n\nStructure\nHuman ferrochelatase is a homodimer composed of two 359-amino-acid polypeptide chains. It has a total molecular weight of 85.07 kDa. Each subunit is composed of five regions: a mitochondrial localization sequence, the N-terminal domain, two folded domains, and a C-terminal extension. Residues 1\u201362 form a mitochondrial localization domain that is cleaved in post-translational modification. The folded domains contain a total of 17 \u03b1-helices and 8 \u03b2-sheets. The C-terminal extension contains three of the four cysteine residues (Cys403, Cys406, Cys411) that coordinate the catalytic iron\u2013sulfur cluster (2Fe-2S). The fourth coordinating cysteine resides in the N-terminal domain (Cys196).\nThe active pocket of ferrocheltase consists of two hydrophobic \"lips\" and a hydrophilic interior. The hydrophobic lips, consisting of the highly conserved residues 300\u2013311, face the inner mitochondrial membrane and facilitate the passage of the poorly soluble protoporphyrin IX substrate and the heme product via the membrane. The interior of the active site pocket contains a highly conserved acidic surface that facilitates proton extraction from protoporphyrin. Histidine and aspartate residues roughly 20 angstroms from the center of the active site on the mitochondrial matrix side of the enzyme coordinate metal binding.\n\nMechanism\nThe mechanism of human protoporphyrin metalation remains under investigation. Many researchers have hypothesized distortion of the porphyrin macrocycle as key to catalysis. Researchers studying Bacillus subtilis ferrochelatase propose a mechanism for iron insertion into protoporphyrin in which the enzyme tightly grips rings B, C, and D while bending ring A 36\u00b0. Normally planar, this distortion exposes the lone pair of electrons on the nitrogen in ring A to the Fe+2 ion. Subsequent investigation revealed a 100\u00b0 distortion in protoporphyrin bound to human ferrochelatase.  A highly conserved histidine residue (His183 in B. subtilis, His263 in humans) is essential for determining the type of distortion, as well as acting as the initial proton acceptor from protoporphyrin. Anionic residues form a pathway facilitating proton movement away from the catalytic histidine. Frataxin chaperones iron to the matrix side of ferrochelatase, where aspartate and histidine residues on both proteins coordinate iron transfer into ferrochelatase. Two arginine and tyrosine residues in the active site (Arg164, Tyr165) may perform the final metalation.",
+          "cos_sim_score": 0.578626275062561,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Ferrochelatase",
+          "title": "Ferrochelatase",
+          "url": "https://en.wikipedia.org/wiki/Ferrochelatase",
+          "text": "Clinical significance\nDefects in ferrochelatase create a buildup of protoporphyrin IX, causing erythropoietic protoporphyria (EPP). The disease can result from a variety of mutations in FECH, most of which behave in an autosomal dominant manner with low clinical penetrance. Clinically, patients with EPP present with a range of symptoms, from asymptomatic to suffering from an extremely painful photosensitivity. In less than five percent of cases, accumulation of protoporphyrin in the liver results in cholestasis (blockage of bile flow from the liver to the small intestine) and terminal liver failure.\nIn cases of lead poisoning, lead inhibits ferrochelatase activity, in part resulting in porphyria. In the presence of lead or when there is a deficiency of iron Zinc protoporphyrin is produced instead if heme.\n\nInteractions\nFerrochelatase interacts with numerous other enzymes involved in heme biosynthesis, catabolism, and transport, including protoporphyrinogen oxidase, 5-aminolevulinate synthase, ABCB10, ABCB7, succinyl-CoA synthetase, and mitoferrin-1. Multiple studies have suggested the existence of an oligomeric complex that enables substrate channeling and coordination of overall iron and porphyrin metabolism throughout the cell. N-methylmesoporphyrin (N-MeMP) is a competitive inhibitor with protoporphyrin IX and is thought to be a transition state analog. As such, N-MeMP has been used extensively as a stabilizing ligand for x-ray crystallography structure determination. Frataxin acts as the Fe+2 chaperone and complexes with ferrochelatase on its mitochondrial matrix side. Ferrochelatase can also insert other divalent metal ions into protoporphyrin. Some ions, such as Zn+2, Ni, and Co form other metalloporphyrins while heavier metal ions such as Mn, Pb, Hg, and Cd inhibit product release after metallation.\n\nSee also\nLyases\nErythropoietic protoporphyria\nSirohydrochlorin ferrochelatase\nZinc protoporphyrin\n\nReferences\nFurther reading\nExternal links\nUMich Orientation of Proteins in Membranes protein/pdbid-1hrk\nFerrochelatase at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.44755834341049194,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Erythropoietic protoporphyria",
+          "title": "Erythropoietic protoporphyria",
+          "url": "https://en.wikipedia.org/wiki/Erythropoietic_protoporphyria",
+          "text": "Pregnancy\nEPP photosensitivity symptoms are reported to lessen in some female patients during pregnancy and menstruation, although this phenomenon is not consistent, and the mechanism is not understood.\n\nGenetics\nMost cases of EPP are results of inborn errors of metabolism but the metabolic defect in some patients may be acquired. Mutation of the gene that encodes for ferrochelatase in the long arm of chromosome 18 is found in majority of the cases. Ferrochelatase (FECH) catalyzes the insertion of ferrous iron into the protoporphyrin IX ring to form heme. EPP exhibits both recessive and dominant patterns of inheritance and a high degree of allelic heterogeneity with incomplete penetrance. Most heterozygotes are asymptomatic. Symptoms do not occur unless FECH activity is less than 30% of normal, but such low levels are not present in a majority of patients.\n\nPathophysiology\nCells which synthesize heme are predominantly erythroblasts/reticulocytes in the bone marrow (80%) and hepatocytes (20%). Deficiency of FECH results in increased release of protoporphyrin, which binds to albumin in plasma and subsequently undergoes hepatic extraction. Normally, most protoporphyrin in hepatocytes is secreted into bile; the remainder undergoes transformation into heme. Some protoporphyrin in bile is returned to the liver as a consequence of the enterohepatic circulation; the remaining protoporphyrin in the intestine undergoes fecal excretion. Protoporphyrin is insoluble and hence unavailable for renal excretion. In EPP, subnormal biotransformation of protoporphyrin into heme results in accumulation of protoporphyrin in hepatocytes.\nSince FECH deficiency is associated with increased concentrations of protoporphyrin in erythrocytes, plasma, skin and liver, retention of protoporphyrin in skin predisposes to acute photosensitivity. As a result of absorption of ultraviolet and visible light (peak sensitivity at 400 nm, with lesser peaks between 500\u2013625 nm) by protoporphyrin in plasma and erythrocytes when blood circulates through the dermal vessels, free radicals are formed, erythrocytes become unstable and injury to the skin is induced.\nA significant increase in the hepatobiliary excretion of protoporphyrin can damage the liver through both cholestatic phenomena and oxidative stress\u2014predisposing to hepatobiliary disease of varying degrees of severity.\n\nDiagnosis\nEPP is generally suspected by the presence of acute photosensitivity of the skin and can be confirmed by detection of a plasmatic fluorescence peak at 634 nm. It is also useful to find increased levels of protoporphyrin in feces and the demonstration of an excess of free protoporphyrin in erythrocytes.\nScreening for FECH mutation on one allele or aminolevulinic acid synthase 2 gain-of-function mutation in selected family members may be useful, especially in genetic counseling.\nLiver biopsy confirms hepatic disease in EPP by the presence of protoporphyrin deposits in the hepatocytes that can be observed as a brown pigment within the biliary canaliculi and the portal macrophages. Macroscopically, the cirrhotic liver can have a black color due to protoporphyrin deposits. Using polarized light the characteristic Maltese cross shape of birefringent crystalline pigment deposits is found. The examination of liver tissue under a Wood's lamp reveals a red fluorescence due to protoporphyrin. Liver biopsy is not helpful for estimation of prognosis of liver disease.",
+          "cos_sim_score": 0.37775710225105286,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Sirohydrochlorin ferrochelatase",
+          "title": "Sirohydrochlorin ferrochelatase",
+          "url": "https://en.wikipedia.org/wiki/Sirohydrochlorin_ferrochelatase",
+          "text": "The enzyme sirohydrochlorin ferrochelatase (EC 4.99.1.4) catalyzes the following reaction:\n\nThis enzyme belongs to the family of lyases, to be specific the \"catch-all\" class of lyases that do not fit into any other sub-class.  The systematic name of this enzyme class is siroheme ferro-lyase (sirohydrochlorin-forming). The enzyme is also known as SirB and present in all plants and nitrate and sulfate assimilating/dissimilating bacteria. Siroheme is a co-factor of both assimilatory and dissimilatory nitrite and sulfite reductases. It is synthesized from the central tetrapyrrole molecule uroporphyrinogen III, which forms the first branch-point of tetrapyrrole biosynthetic pathway, the other branch being the heme/chlorophyll branch. The siroheme branch consists of three steps: methylation, dehydrogenation, and ferrochelation, with the last step carried out by sirohydrochlorin ferrochelatase.\nSirohydrochlorin ferrochelatase is a class II chelatase, i.e. it does not require ATP for its activity unlike class I chelatases such as Mg-chelatase. In E. coli, all three steps of siroheme biosynthesis are carried out by a single multifunctional enzyme called CysG, while in yeast Saccharomyces cerevisiae the last two steps are carried out by a bifunctional enzyme called Met8p. CysG and Met8p share common folds but are unrelated to SirB and constitute the so-called class III chelatase. SirB belongs to CbiX family protein and the plant SirB is half the length of bacterial SirB and aligns with its N- and C-terminal halves suggesting that the longer form evolved from the gene duplication and fusion of the shorter form.\nSirohydrochlorin ferrochelatase in all land plants and certain green algae, but not bacteria or other algae, consists of an iron sulfur cluster, which can switch between [2Fe-2S] and [4Fe-4S] forms depending on the redox status of the cellular milieu. Although it is not clearly determined what role this switching of the cluster might play, it is postulated to be involved in a critical redox regulation of siroheme biosynthesis.\n\n\n== References ==",
+          "cos_sim_score": 0.3717712163925171,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Porphyria",
+          "title": "Porphyria",
+          "url": "https://en.wikipedia.org/wiki/Porphyria",
+          "text": "Notable cases\nThe mental illness exhibited by King George III of the United Kingdom in the regency crisis of 1788 has inspired several attempts at retrospective diagnosis. The first, written in 1855, thirty-five years after his death, concluded that he had acute mania. M. Guttmacher, in 1941, suggested manic-depressive psychosis as a more likely diagnosis. The first suggestion that a physical illness was the cause of King George's mental derangement came in 1966 in a paper by psychiatrists Ida Macalpine and Richard A. Hunter called \"The Insanity of King George III: A Classic Case of Porphyria\", with a follow-up in 1968, \"Porphyria in the Royal Houses of Stuart, Hanover and Prussia\". Many of their colleagues disagreed with the diagnosis, suggesting bipolar disorder as far more probable. The theory is treated in Purple Secret, which documents the ultimately unsuccessful search for genetic evidence of porphyria in the remains of royals suspected to have had it. In 2005, it was suggested that arsenic (which is known to be porphyrogenic) given to George III with antimony may have caused his porphyria. This study found high levels of arsenic in King George's hair.  In 2010, one analysis of historical records argued that the porphyria claim was based on spurious and selective interpretation of contemporary medical and historical sources.   The mental illness of George III is the basis of the plot in The Madness of King George, a 1994 British film based upon the 1991 Alan Bennett play, The Madness of George III. The closing credits of the film include the comment that the King's symptoms suggest that he had porphyria, and note that the disease is \"periodic, unpredictable, and hereditary\". The traditional argument that George III did not have porphyria, but rather bipolar disorder, is defended by Andrew Roberts in his biography The Last King of America.\nAmong other descendants of George III theorized by the authors of Purple Secret to have had porphyria (based on analysis of their extensive and detailed medical correspondence) were his great-great-granddaughter Princess Charlotte of Prussia (Emperor William II's eldest sister) and her daughter Princess Feodora of Saxe-Meiningen. They uncovered better evidence that George III's great-great-great-grandson Prince William of Gloucester was reliably diagnosed with variegate porphyria.\nIt is believed that Mary, Queen of Scots, King George III's ancestor, also had acute intermittent porphyria, although this is subject to much debate. It is assumed she inherited the disorder, if indeed she had it, from her father, King James V of Scotland. Both father and daughter endured well-documented attacks that could fall within the constellation of symptoms of porphyria.\nQueen Maria I of Portugal, known as Maria the Pious or Maria the Mad because of both her religious fervor and her acute mental illness, which made her incapable of handling state affairs after 1792\u2014is also thought to have had porphyria. Francis Willis, the physician who treated George III, was even summoned by the Portuguese court but returned to England after the court limited the treatments he could oversee. Contemporary sources, such as Secretary of State for Foreign Affairs Lu\u00eds Pinto de Sousa Coutinho, noted that the queen had ever-worsening stomach pains and abdominal spasms: hallmarks of porphyria.\nCommentators have suggested that Vincent van Gogh may have had acute intermittent porphyria.\nThe description of King Nebuchadnezzar II of Babylon in Daniel 4 suggests to some that he had porphyria.\nPhysician Archie Cochrane was born with porphyria, which caused health problems throughout his life.\nPaula Fr\u00edas Allende, the daughter of the Chilean novelist Isabel Allende, fell into a porphyria-induced coma in 1991, which inspired Isabel to write the memoir Paula, dedicated to her.\nTommy Steele, London-born entertainer, frequently hospitalized as a child due to the condition.\n\nUses in literature\nStated or implied references to porphyria are included in some literature, particularly gothic literature. These include the following:\n\nThe condition is the name of the title character in the gothic poem \"Porphyria's Lover\", by Robert Browning.\nThe condition is heavily implied to be the cause of the symptoms suffered by the narrator in the gothic short story \"Lusus Naturae\", by Margaret Atwood. Some of the narrator's symptoms resemble those of porphyria, and one passage of the story states that the name of the narrator's disease \"had some Ps and Rs in it.\"\n\nReferences\nExternal links",
+          "cos_sim_score": 0.23289942741394043,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

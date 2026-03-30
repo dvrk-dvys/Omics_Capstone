@@ -1,0 +1,125 @@
+{
+  "probe_id": "11719392_a_at",
+  "gene_symbol": "RNF14",
+  "rf_importance": 0.0067,
+  "selection_freq": 0.8,
+  "abs_fold_change": 1.6043287333333334,
+  "combined_score": 0.3443,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-03-30T14:04:23",
+  "interpretation": "RNF14 encodes an E3 ubiquitin-protein ligase that is involved in the quality control of protein translation, particularly in response to stalled ribosomes. It mediates the ubiquitination and degradation of translation factors and ribosomal proteins, which is crucial for maintaining cellular homeostasis under stress conditions. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), RNF14 was identified as one of the overlapping genes in a study that utilized weighted gene co-expression network analysis (WGCNA) and differential expression screening to find biomarkers associated with the disease. \n\nThe evidence linking RNF14 to SONFH is indirect, primarily derived from its inclusion in a module of genes significantly correlated with SONFH and its role in cellular stress responses, which may be relevant given the pathophysiology of SONFH related to steroid exposure. However, it is important to note that while RNF14 was identified as a candidate biomarker, it was not among the most significantly downregulated genes in SONFH patients compared to healthy controls, suggesting that its diagnostic potential may be weaker than other identified biomarkers like HEMGN and SLC2A1.\n\nIn summary, RNF14 has a biological role in protein quality control and stress response, with indirect evidence connecting it to SONFH through gene expression analysis. However, its clinical relevance as an early-detection biomarker for SONFH appears limited compared to other candidates identified in the study.",
+  "citations": [
+    "RNF14 (Q9UBS8). https://www.uniprot.org/uniprotkb/Q9UBS8",
+    "RNF14 (Q9UBS8-2). https://www.uniprot.org/uniprotkb/Q9UBS8-2",
+    "RNF14 \u2014 RNF14. https://platform.opentargets.org/target/ENSG00000013561",
+    "RNF14 \u2194 Abnormality of the skeletal system. https://platform.opentargets.org/target/ENSG00000013561/associations",
+    "RNF14 \u2194 osteoarthritis, hand. https://platform.opentargets.org/target/ENSG00000013561/associations",
+    "RNF14 \u2194 osteoarthritis, knee. https://platform.opentargets.org/target/ENSG00000013561/associations",
+    "RNF14 \u2194 tooth disease. https://platform.opentargets.org/target/ENSG00000013561/associations",
+    "HEMGN and SLC2A1 might be potential diagnostic biomarkers of steroid-induced osteonecrosis of femoral head: study based on WGCNA and DEGs screening. (2021). https://pubmed.ncbi.nlm.nih.gov/33451334/",
+    "HEMGN and SLC2A1 might be potential diagnostic biomarkers of steroid-induced osteonecrosis of femoral head: study based on WGCNA and DEGs screening. (2021). https://pubmed.ncbi.nlm.nih.gov/33451334/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 3746,
+    "completion_tokens": 293,
+    "total_tokens": 4039,
+    "estimated_cost_usd": 0.000738
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9UBS8",
+          "title": "RNF14 (Q9UBS8)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UBS8",
+          "text": "Protein: E3 ubiquitin-protein ligase RNF14\nFunction: E3 ubiquitin-protein ligase that plays a key role in the RNF14-RNF25 translation quality control pathway, a pathway that takes place when a ribosome has stalled during translation, and which promotes ubiquitination and degradation of translation factors on stalled ribosomes (PubMed:36638793, PubMed:37651229, PubMed:37951215, PubMed:37951216). Recruited to stalled ribosomes by the ribosome collision sensor GCN1 and mediates 'Lys-6'-linked ubiquitination of target proteins, leading to their degradation (PubMed:36638793, PubMed:37651229, PubMed:37951215, PubMed:37951216). Mediates ubiquitination of EEF1A1/eEF1A and ETF1/eRF1 translation factors on stalled ribosomes, leading to their degradation (PubMed:36638793, PubMed:37651229). Also catalyzes ubiquitination of ribosomal proteins RPL0, RPL1, RPL12, RPS13 and RPS17 (PubMed:36638793). Specifically required to resolve RNA-protein cross-links caused by reactive aldehydes, which trigger translation stress by stalling ribosomes: acts by catalying 'Lys-6'-linked ubiquitination of RNA-protein cross-links, leading to their removal by the ATP-dependent unfoldase VCP and subsequent degradation by the proteasome (PubMed:37951215, PubMed:37951216). Independently of its function in the response to stalled ribosomes, acts as a regulator of transcription in Wnt signaling via its interaction with TCF transcription factors (TCF7/TCF1, TCF7L1/TCF3 and TCF7L2/TCF4) (PubMed:23449499). May also play a role as a coactivator for androgen- and, to a lesser extent, progesterone-dependent transcription (PubMed:19345326)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9UBS8-2",
+          "title": "RNF14 (Q9UBS8-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UBS8-2",
+          "text": "Protein: Isoform 2 of E3 ubiquitin-protein ligase RNF14",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000013561::function",
+          "title": "RNF14 \u2014 RNF14",
+          "url": "https://platform.opentargets.org/target/ENSG00000013561",
+          "text": "Function: E3 ubiquitin-protein ligase that plays a key role in the RNF14-RNF25 translation quality control pathway, a pathway that takes place when a ribosome has stalled during translation, and which promotes ubiquitination and degradation of translation factors on stalled ribosomes (PubMed:36638793, PubMed:37651229, PubMed:37951215, PubMed:37951216). Recruited to stalled ribosomes by the ribosome collision sensor GCN1 and mediates 'Lys-6'-linked ubiquitination of target proteins, leading to their degradation (PubMed:36638793, PubMed:37651229, PubMed:37951215, PubMed:37951216). Mediates ubiquitination of EEF1A1/eEF1A and ETF1/eRF1 translation factors on stalled ribosomes, leading to their degradation (PubMed:36638793, PubMed:37651229). Also catalyzes ubiquitination of ribosomal proteins RPL0, RPL1, RPL12, RPS13 and RPS17 (PubMed:36638793). Specifically required to resolve RNA-protein cross-links caused by reactive aldehydes, which trigger translation stress by stalling ribosomes: acts by catalying 'Lys-6'-linked ubiquitination of RNA-protein cross-links, leading to their removal by the ATP-dependent unfoldase VCP and subsequent degradation by the proteasome (PubMed:37951215, PubMed:37951216). Independently of its function in the response to stalled ribosomes, acts as a regulator of transcription in Wnt signaling via its interaction with TCF transcription factors (TCF7/TCF1, TCF7L1/TCF3 and TCF7L2/TCF4) (PubMed:23449499). May also play a role as a coactivator for androgen- and, to a lesser extent, progesterone-dependent transcription (PubMed:19345326).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000013561::HP_0000924",
+          "title": "RNF14 \u2194 Abnormality of the skeletal system",
+          "url": "https://platform.opentargets.org/target/ENSG00000013561/associations",
+          "text": "Disease: Abnormality of the skeletal system\nDescription: An abnormality of the skeletal system.\nAssociation score: 0.041",
+          "cos_sim_score": 0.04058423047769944,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000013561::EFO_1000789",
+          "title": "RNF14 \u2194 osteoarthritis, hand",
+          "url": "https://platform.opentargets.org/target/ENSG00000013561/associations",
+          "text": "Disease: osteoarthritis, hand\nDescription: Osteoarthritis of the hands usually happens as part of nodal osteoarthritis (a form of osteoarthritis that runs in families). This mainly affects women and often starts in your 40s or 50s, around the menopause (the time when menstruation ends and it\u2019s no longer possible to have children).\nAssociation score: 0.034",
+          "cos_sim_score": 0.03444833400285445,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000013561::EFO_0004616",
+          "title": "RNF14 \u2194 osteoarthritis, knee",
+          "url": "https://platform.opentargets.org/target/ENSG00000013561/associations",
+          "text": "Disease: osteoarthritis, knee\nDescription: Noninflammatory degenerative disease of the knee joint consisting of three large categories: conditions that block normal synchronous movement, conditions that produce abnormal pathways of motion, and conditions that cause stress concentration resulting in changes to articular cartilage. (Crenshaw, Campbell's Operative Orthopaedics, 8th ed, p2019)\nAssociation score: 0.032",
+          "cos_sim_score": 0.032123683625961595,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000013561::EFO_1001216",
+          "title": "RNF14 \u2194 tooth disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000013561/associations",
+          "text": "Disease: tooth disease\nDescription: A disease involving the calcareous tooth.\nAssociation score: 0.029",
+          "cos_sim_score": 0.02927544397624519,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::33451334",
+          "title": "HEMGN and SLC2A1 might be potential diagnostic biomarkers of steroid-induced osteonecrosis of femoral head: study based on WGCNA and DEGs screening.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33451334/",
+          "year": "2021",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SONFH) is a chronic and crippling bone disease. This study aims to reveal novel diagnostic biomarkers of SONFH. The GSE123568 dataset based on peripheral blood samples from 10 healthy individuals and 30 SONFH patients was used for weighted gene co-expression network analysis (WGCNA) and differentially expressed genes (DEGs) screening. The genes in the module related to SONFH and the DEGs were extracted for Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analysis. Genes with |gene significance|\u2009>\u20090.7 and |module membership| >\u20090.8 were selected as hub genes in modules. The DEGs with the degree of connectivity \u22655 were chosen as hub genes in DEGs. Subsequently, the overlapping genes of hub genes in modules and hub genes in DEGs were selected as key genes for SONFH. And then, the key genes were verified in another dataset, and the diagnostic value of key genes was evaluated by receiver operating characteristic (ROC) curve. Nine gene co-expression modules were constructed via WGCNA. The brown module with 1258 genes was most significantly correlated with SONFH and was identified as the key module for SONFH. The results of functional enrichment analysis showed that the genes in the key module were mainly enriched in the inflammatory response, apoptotic process and osteoclast differentiation. A total of 91 genes were identified as hub genes in the key module. Besides, 145 DEGs were identified by DEGs screening and 26 genes were identified as hub genes of DEGs. Overlapping genes of hub genes in the key module and hub genes in DEGs, including RHAG, RNF14, HEMGN, and SLC2A1, were further selected as key genes for SONFH. The diagnostic value of these key genes for SONFH was confirmed by ROC curve. The validation results of these key genes in GSE26316 dataset showed that only HEMGN and SLC2A1 were downregulated in the SONFH group, suggesting that they were more likely to be diagnostic biomarkers of SOFNH than RHAG and RNF14. Our study identified that two key genes, HEMGN and SLC2A1, might be potential diagnostic biomarkers of SONFH.",
+          "cos_sim_score": 0.449939101934433,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_fetch_by_id",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::33451334",
+          "title": "HEMGN and SLC2A1 might be potential diagnostic biomarkers of steroid-induced osteonecrosis of femoral head: study based on WGCNA and DEGs screening.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33451334/",
+          "year": "2021",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SONFH) is a chronic and crippling bone disease. This study aims to reveal novel diagnostic biomarkers of SONFH. The GSE123568 dataset based on peripheral blood samples from 10 healthy individuals and 30 SONFH patients was used for weighted gene co-expression network analysis (WGCNA) and differentially expressed genes (DEGs) screening. The genes in the module related to SONFH and the DEGs were extracted for Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analysis. Genes with |gene significance|\u2009>\u20090.7 and |module membership| >\u20090.8 were selected as hub genes in modules. The DEGs with the degree of connectivity \u22655 were chosen as hub genes in DEGs. Subsequently, the overlapping genes of hub genes in modules and hub genes in DEGs were selected as key genes for SONFH. And then, the key genes were verified in another dataset, and the diagnostic value of key genes was evaluated by receiver operating characteristic (ROC) curve. Nine gene co-expression modules were constructed via WGCNA. The brown module with 1258 genes was most significantly correlated with SONFH and was identified as the key module for SONFH. The results of functional enrichment analysis showed that the genes in the key module were mainly enriched in the inflammatory response, apoptotic process and osteoclast differentiation. A total of 91 genes were identified as hub genes in the key module. Besides, 145 DEGs were identified by DEGs screening and 26 genes were identified as hub genes of DEGs. Overlapping genes of hub genes in the key module and hub genes in DEGs, including RHAG, RNF14, HEMGN, and SLC2A1, were further selected as key genes for SONFH. The diagnostic value of these key genes for SONFH was confirmed by ROC curve. The validation results of these key genes in GSE26316 dataset showed that only HEMGN and SLC2A1 were downregulated in the SONFH group, suggesting that they were more likely to be diagnostic biomarkers of SOFNH than RHAG and RNF14. Our study identified that two key genes, HEMGN and SLC2A1, might be potential diagnostic biomarkers of SONFH.",
+          "cos_sim_score": 0.449939101934433,
+          "source_type": "pubmed"
+        }
+      ]
+    }
+  ]
+}

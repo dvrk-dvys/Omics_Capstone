@@ -1,6 +1,33 @@
 import pathlib
 import time
 from contextlib import contextmanager
+from typing import Literal
+
+from pydantic import BaseModel, ConfigDict
+
+
+# ---------------------------------------------------------------------------
+# Structured synthesis output contract — Iter 4 response_format
+#
+# Used with client.beta.chat.completions.parse(response_format=BiomarkerSynthesis).
+# disease_context is injected into the prompt dynamically from
+# config["project"]["disease"] — do not hardcode any disease name here.
+# ---------------------------------------------------------------------------
+class BiomarkerSynthesis(BaseModel):
+    """Final synthesis output for one candidate biomarker gene.
+
+    extra='forbid' ensures the model returns ONLY these six fields —
+    no additional keys are permitted in the structured output.
+    """
+
+    model_config = ConfigDict(extra="forbid")
+
+    interpretation:      str
+    evidence_relation:   Literal["direct", "indirect", "inferred"]
+    evidence_tier:       Literal["Tier 1", "Tier 2", "Tier 3", "Tier 4"]
+    evidence_confidence: Literal["high", "moderate", "low"]
+    biomarker_potential: Literal["strong", "moderate", "weak"]
+    relevance_summary:   str
 
 # ---------------------------------------------------------------------------
 # GEO dataset context — loaded once at import time
@@ -66,6 +93,48 @@ with verifiable citations.
 
 
 # ---------------------------------------------------------------------------
+# Evidence rubric — documents the BiomarkerSynthesis fields produced at Iter 4.
+#
+# BiomarkerSynthesis is the response_format for client.beta.chat.completions.parse().
+# The schema drives output — no prose+JSON splitting or regex extraction.
+# disease_context is always injected dynamically from config["project"]["disease"].
+#
+# IMPORTANT: all tier/relation/confidence ratings must reflect the STRONGEST
+# RETRIEVED evidence actually returned by tools, not inference or speculation.
+# If retrieved evidence is weak, rate accordingly — do not inflate the tier.
+#
+# evidence_relation
+#   direct   = retrieved sources explicitly link this gene to the active disease,
+#              ideally human and disease-specific
+#   indirect = no direct disease paper, but biologically relevant pathway or
+#              mechanism support exists in retrieved context
+#   inferred = reasoning from general gene biology; weak disease-specific grounding
+#
+# evidence_tier  (choose the HIGHEST tier your RETRIEVED evidence actually supports)
+#   Tier 1 = human biomarker evidence directly tied to the active disease context,
+#            matching the study modality (e.g. peripheral blood microarray) when possible
+#   Tier 2 = human disease-specific mechanistic, network, or association evidence
+#   Tier 3 = human evidence in disease-adjacent biology relevant to the active disease.
+#            "disease-adjacent" is CONTEXTUAL — the model infers it from the active
+#            disease name, GEO dataset context, tissue/source, and retrieved evidence.
+#            Example (current SONFH study): vascular/ischemic/hypoxia biology,
+#            musculoskeletal/bone biology, immune/erythroid/blood-biomarker biology.
+#            These are examples for this dataset, not a universal definition.
+#   Tier 4 = animal, cell-line, speculative, or otherwise weakly grounded support only
+#
+# evidence_confidence
+#   high     = multiple independent retrieved sources converge on the same conclusion
+#   moderate = some retrieved evidence, but limited or indirect
+#   low      = weak retrieved grounding; interpretation relies primarily on [INFERENCE]
+#
+# biomarker_potential
+#   strong   = biologically plausible, consistent with study findings, clinically actionable
+#   moderate = some evidence of relevance but limited specificity or mechanistic support
+#   weak     = limited or no clear connection to the disease; unlikely to be a useful biomarker
+# ---------------------------------------------------------------------------
+
+
+# ---------------------------------------------------------------------------
 # Per-iteration stage metadata — drives prompt content in build_rag_prompt
 # ---------------------------------------------------------------------------
 _ITER_STAGES = {
@@ -115,10 +184,13 @@ _ITER_GUIDANCE = {
         "- If context is already sufficient → do not call a tool."
     ),
     4: (
-        "No tools this iteration. Produce the final interpretation now.\n"
-        "Cover all four points in OUTPUT FORMAT below.\n"
-        "Distinguish direct evidence (from retrieved sources) from [INFERENCE].\n"
-        "End with a one-sentence assessment of blood-based early-detection potential."
+        "No tools this iteration. Produce the final structured synthesis now.\n"
+        "Fill all fields in OUTPUT FORMAT below.\n"
+        "interpretation: 4–8 sentence prose — distinguish retrieved evidence from [INFERENCE].\n"
+        "evidence_tier / evidence_relation / evidence_confidence / biomarker_potential:\n"
+        "  must reflect the STRONGEST RETRIEVED evidence — not inference or speculation.\n"
+        "  If retrieved evidence is weak, rate Tier 4 / low — do not inflate.\n"
+        "relevance_summary: one sentence connecting this gene to the active disease context."
     ),
 }
 
@@ -187,12 +259,42 @@ REASONING (internal — do not expose):
 
 OUTPUT FORMAT:
 - If calling a tool: output only the tool call. Do not produce a narrative answer yet.
-- If this is the FINAL SYNTHESIS iteration (Iter 4), produce a 4–8 sentence interpretation:
-    (a) What the gene/protein does biologically.
-    (b) Its connection to the known mechanisms of {disease_context}
-        (as described in the GEO_DATASET_CONTEXT in the system prompt).
-    (c) Strength of evidence — label clearly: direct / indirect / [INFERENCE].
-    (d) Clinical relevance as an early-detection biomarker for {disease_context}.
+- If this is the FINAL SYNTHESIS iteration (Iter 4), produce a structured response with these fields:
+
+  interpretation      : 4–8 sentence prose covering:
+                        (a) What the gene/protein does biologically.
+                        (b) Its connection to the known mechanisms of {disease_context}
+                            (as described in the GEO_DATASET_CONTEXT in the system prompt).
+                        (c) Strength of evidence — label retrieved evidence vs [INFERENCE].
+                        (d) Clinical relevance as an early-detection biomarker for {disease_context}.
+
+  evidence_relation   : "direct" | "indirect" | "inferred"
+                        direct   = retrieved sources explicitly link this gene to {disease_context}
+                        indirect = retrieved evidence supports a plausible mechanistic/pathway link
+                        inferred = general biological reasoning; weak disease-specific grounding
+
+  evidence_tier       : "Tier 1" | "Tier 2" | "Tier 3" | "Tier 4"
+                        Tier 1 = human biomarker evidence directly tied to {disease_context},
+                                 matching the study modality (e.g. peripheral blood) when possible
+                        Tier 2 = human disease-specific mechanistic, network, or association evidence
+                        Tier 3 = human evidence in disease-adjacent biology relevant to {disease_context};
+                                 infer "disease-adjacent" from the disease name, GEO_DATASET_CONTEXT,
+                                 tissue/source, and retrieved evidence — not a fixed universal definition
+                        Tier 4 = animal, cell-line, speculative, or weakly grounded support only
+                        IMPORTANT: select the highest tier your RETRIEVED evidence actually supports.
+                        Do not inflate — if retrieved evidence is weak, rate Tier 4.
+
+  evidence_confidence : "high" | "moderate" | "low"
+                        high     = multiple independent retrieved sources converge on the same conclusion
+                        moderate = some retrieved evidence, limited or indirect
+                        low      = weak grounding; interpretation relies primarily on [INFERENCE]
+
+  biomarker_potential : "strong" | "moderate" | "weak"
+                        strong   = biologically plausible, study-consistent, clinically actionable
+                        moderate = some relevance but limited specificity or mechanistic support
+                        weak     = limited connection to disease; unlikely to be a useful biomarker
+
+  relevance_summary   : one sentence connecting this gene to {disease_context}
 
 STOP CONDITIONS:
 - Stop after the final synthesis iteration. Do not continue beyond iteration {max_iter}.
@@ -362,9 +464,89 @@ def build_rag_prompt(
 
 
 # ---------------------------------------------------------------------------
-# Quick test harness — eyeball both prompts across all 5 iterations
+# Smoke test harness — schema validation + prompt rendering across all 5 iters
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":
+    import sys
+    from pydantic import ValidationError
+
+    # ------------------------------------------------------------------
+    # TEST 1 — BiomarkerSynthesis schema validation (no API call needed)
+    # ------------------------------------------------------------------
+    print("=" * 60)
+    print("TEST 1 — BiomarkerSynthesis schema validation")
+    print("=" * 60)
+
+    # 1a. Valid instantiation
+    try:
+        good = BiomarkerSynthesis(
+            interpretation="BPGM catalyzes 2,3-BPG synthesis in erythrocytes, regulating oxygen delivery.",
+            evidence_relation="direct",
+            evidence_tier="Tier 2",
+            evidence_confidence="moderate",
+            biomarker_potential="moderate",
+            relevance_summary="BPGM links erythrocyte oxygen delivery to SONFH hypoxia.",
+        )
+        print(f"  [PASS] Valid instance: tier={good.evidence_tier!r}  relation={good.evidence_relation!r}  confidence={good.evidence_confidence!r}")
+    except Exception as e:
+        print(f"  [FAIL] Valid instantiation raised: {e}")
+        sys.exit(1)
+
+    # 1b. Invalid literal value
+    try:
+        BiomarkerSynthesis(
+            interpretation="test",
+            evidence_relation="maybe",   # invalid — not in Literal
+            evidence_tier="Tier 2",
+            evidence_confidence="moderate",
+            biomarker_potential="moderate",
+            relevance_summary="test",
+        )
+        print("  [FAIL] Should have rejected invalid evidence_relation='maybe'")
+        sys.exit(1)
+    except ValidationError:
+        print("  [PASS] Invalid literal correctly rejected")
+
+    # 1c. Extra field rejected (extra='forbid')
+    try:
+        BiomarkerSynthesis(
+            interpretation="test",
+            evidence_relation="inferred",
+            evidence_tier="Tier 4",
+            evidence_confidence="low",
+            biomarker_potential="weak",
+            relevance_summary="test",
+            extra_key="should_fail",
+        )
+        print("  [FAIL] Should have rejected extra field")
+        sys.exit(1)
+    except ValidationError:
+        print("  [PASS] Extra field correctly rejected (extra='forbid')")
+
+    # 1d. Missing required field
+    try:
+        BiomarkerSynthesis(
+            interpretation="test",
+            evidence_relation="inferred",
+            # evidence_tier missing
+            evidence_confidence="low",
+            biomarker_potential="weak",
+            relevance_summary="test",
+        )
+        print("  [FAIL] Should have rejected missing evidence_tier")
+        sys.exit(1)
+    except ValidationError:
+        print("  [PASS] Missing required field correctly rejected")
+
+    print("\nAll schema tests passed.\n")
+
+    # ------------------------------------------------------------------
+    # TEST 2 — Prompt rendering across all 5 iterations (no API call)
+    # ------------------------------------------------------------------
+    print("=" * 60)
+    print("TEST 2 — Prompt rendering (all 5 iterations)")
+    print("=" * 60)
+
     GENE    = "BPGM"
     DISEASE = "Steroid-Induced Osteonecrosis of the Femoral Head (SONFH)"
 

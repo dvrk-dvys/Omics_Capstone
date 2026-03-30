@@ -78,8 +78,9 @@ def run(
     shortlist.to_csv(output_path, index=False)
     log.info(f"💾 Saved biomarker shortlist: {output_path}  ({len(shortlist)} probes, min_score≥{min_score})")
 
-    log.info("\n🎯 Top 10 candidates:")
-    log.info(shortlist[["probe_id", "gene_symbol", "combined_score"]].head(10).to_string(index=False))
+    top_n = config["biomarker"].get("top_n_display", 10)
+    log.info(f"\n🎯 Top {top_n} candidates:")
+    log.info(shortlist[["probe_id", "gene_symbol", "combined_score"]].head(top_n).to_string(index=False))
 
     with mlflow.start_run(run_name=f"{run_id}biomarker_shortlist"):
         mlflow.set_tag("stage", "biomarker")

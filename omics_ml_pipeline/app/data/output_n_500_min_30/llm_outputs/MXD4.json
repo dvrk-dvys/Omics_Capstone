@@ -1,0 +1,137 @@
+{
+  "probe_id": "11754299_a_at",
+  "gene_symbol": "MXD4",
+  "rf_importance": 0.0083,
+  "selection_freq": 0.6,
+  "abs_fold_change": 1.1649989333333322,
+  "combined_score": 0.3122,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-03-30T14:16:07",
+  "interpretation": "MXD4 (Max dimerization protein 4) is a transcriptional repressor that forms a complex with MAX, regulating gene expression by competing with MYC, a well-known oncogene. This competition is crucial for maintaining cellular homeostasis and preventing uncontrolled cell growth, which is particularly relevant in differentiating tissues. \n\nIn the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the role of MXD4 may be linked to the regulation of bone cell differentiation and apoptosis, processes that are disrupted by steroid administration. Although direct evidence connecting MXD4 to SONFH is lacking, its involvement in transcriptional regulation and potential tumor-suppressive functions suggest it could play a role in the pathological mechanisms underlying SONFH, particularly in the context of steroid-induced cellular stress and bone remodeling.\n\nThe strength of the evidence regarding MXD4's role in SONFH is indirect, as it is primarily associated with other diseases and general cellular processes rather than specifically with SONFH. However, given its biological functions, MXD4 could be considered a candidate for further investigation as a potential early-detection biomarker for SONFH, especially in the context of steroid treatment.\n\nIn summary, while direct evidence linking MXD4 to SONFH is insufficient, its biological functions suggest a plausible connection, warranting further research into its potential as a blood-based early-detection biomarker for this condition.",
+  "citations": [
+    "MXD4 (Q14582). https://www.uniprot.org/uniprotkb/Q14582",
+    "MXD4 \u2014 MXD4. https://platform.opentargets.org/target/ENSG00000123933",
+    "MXD4 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000123933/associations",
+    "MXD4 \u2194 acute myeloid leukemia. https://platform.opentargets.org/target/ENSG00000123933/associations",
+    "MXD4 \u2194 Familial progressive cardiac conduction defect. https://platform.opentargets.org/target/ENSG00000123933/associations",
+    "MXD4 \u2194 Romano-Ward syndrome. https://platform.opentargets.org/target/ENSG00000123933/associations",
+    "MXD4. https://en.wikipedia.org/wiki/MXD4",
+    "Basic helix\u2013loop\u2013helix. https://en.wikipedia.org/wiki/Basic_helix%E2%80%93loop%E2%80%93helix",
+    "Sex-determining region Y protein. https://en.wikipedia.org/wiki/Sex-determining_region_Y_protein",
+    "GSX1. https://en.wikipedia.org/wiki/GSX1",
+    "Sex-determining region Y protein. https://en.wikipedia.org/wiki/Sex-determining_region_Y_protein"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4414,
+    "completion_tokens": 283,
+    "total_tokens": 4697,
+    "estimated_cost_usd": 0.000832
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q14582",
+          "title": "MXD4 (Q14582)",
+          "url": "https://www.uniprot.org/uniprotkb/Q14582",
+          "text": "Protein: Max dimerization protein 4\nFunction: Transcriptional repressor. Binds with MAX to form a sequence-specific DNA-binding protein complex which recognizes the core sequence 5'-CAC[GA]TG-3'. Antagonizes MYC transcriptional activity by competing for MAX and suppresses MYC dependent cell transformation (By similarity)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000123933::function",
+          "title": "MXD4 \u2014 MXD4",
+          "url": "https://platform.opentargets.org/target/ENSG00000123933",
+          "text": "Function: Transcriptional repressor. Binds with MAX to form a sequence- specific DNA-binding protein complex which recognizes the core sequence 5'-CAC[GA]TG-3'. Antagonizes MYC transcriptional activity by competing for MAX and suppresses MYC dependent cell transformation (By similarity). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000123933::EFO_0005772",
+          "title": "MXD4 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000123933/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.462",
+          "cos_sim_score": 0.4619748183558772,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000123933::EFO_0000222",
+          "title": "MXD4 \u2194 acute myeloid leukemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000123933/associations",
+          "text": "Disease: acute myeloid leukemia\nDescription: Acute myeloid leukemia (AML) is a group of neoplasms arising from precursor cells committed to the myeloid cell-line differentiation. All of them are characterized by clonal expansion of myeloid blasts. AML manifests by fever, pallor, anemia, hemorrhages and recurrent infections.\nAssociation score: 0.078",
+          "cos_sim_score": 0.07790948658895006,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000123933::Orphanet_871",
+          "title": "MXD4 \u2194 Familial progressive cardiac conduction defect",
+          "url": "https://platform.opentargets.org/target/ENSG00000123933/associations",
+          "text": "Disease: Familial progressive cardiac conduction defect\nDescription: Familial progressive cardiac conduction defect (PCCD) is a hereditary cardiac conduction disorder that may progress to complete atrioventricular (AV) block. The disease is either asymptomatic or manifests as dyspnea, dizziness, syncope, abdominal pain, heart failure or sudden death.\nAssociation score: 0.055",
+          "cos_sim_score": 0.05470295154687314,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000123933::Orphanet_101016",
+          "title": "MXD4 \u2194 Romano-Ward syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000123933/associations",
+          "text": "Disease: Romano-Ward syndrome\nAssociation score: 0.051",
+          "cos_sim_score": 0.05081866727413694,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::MXD4",
+          "title": "MXD4",
+          "url": "https://en.wikipedia.org/wiki/MXD4",
+          "text": "Max-interacting transcriptional repressor MAD4 is a protein that in humans is encoded by the MXD4 gene.\n\nFunction\nThis gene is a member of the MAD gene family . The MAD genes encode basic helix-loop-helix-leucine zipper proteins that heterodimerize with MAX protein, forming a transcriptional repression complex. The MAD proteins compete for MAX binding with MYC, which heterodimerizes with MAX forming a transcriptional activation complex. Studies in rodents suggest that the MAD genes are tumor suppressors and contribute to the regulation of cell growth in differentiating tissues.\n\nReferences\nFurther reading\nExternal links\nMXD4+protein,+human at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.3485056161880493,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Basic helix\u2013loop\u2013helix",
+          "title": "Basic helix\u2013loop\u2013helix",
+          "url": "https://en.wikipedia.org/wiki/Basic_helix%E2%80%93loop%E2%80%93helix",
+          "text": "Human proteins with helix\u2013loop\u2013helix DNA-binding domain\nAHR;       AHRR;      ARNT;      ARNT2;     ARNTL;     ARNTL2;    ASCL1;     ASCL2; ASCL3;     ASCL4;     ATOH1;     ATOH7;     ATOH8;     BHLHB2;    BHLHB3;    BHLHB4; BHLHB5;    BHLHB8;    CLOCK;     EPAS1;     FERD3L;    FIGLA;     HAND1;     HAND2; HES1;      HES2;      HES3;      HES4;      HES5;      HES6;      HES7;      HEY1; HEY2;      HIF1A;     ID1;       ID2;       ID3;       ID4;       KIAA2018;  LYL1; MASH1;     MATH2;     MAX;       MESP1;     MESP2;     MIST1;     MITF;      MLX;       MLXIP; MLXIPL;    MNT;       MSC;       MSGN1;     MXD1;      MXD3;      MXD4;      MXI1; MYC;       MYCL1;     MYCL2;     MYCN;      MYF5;      MYF6;      MYOD1;     MYOG; NCOA1;     NCOA3;     NEUROD1;   NEUROD2;   NEUROD4;   NEUROD6;   NEUROG1;   NEUROG2; NEUROG3;   NHLH1;     NHLH2;     NPAS1;     NPAS2;     NPAS3;    NPAS4;    OAF1;      OLIG1; OLIG2;     OLIG3;     PTF1A;     SCL;       SCXB;      SIM1;      SIM2;      SOHLH1; SOHLH2;    SREBF1;    SREBF2;    TAL1;      TAL2;      TCF12;     TCF15;     TCF21; TCF3;      TCF4;      TCFL5;     TFAP4;     TFE3;      TFEB;      TFEC;      TWIST1; TWIST2;    USF1;      USF2.\n\nSee also\nBasic helix-loop-helix leucine zipper transcription factors\n\nReferences\nExternal links\nPDOC00038 in PROSITE\nBasic+Helix-Loop-Helix+Transcription+Factors at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nbHLH family Archived 2016-04-22 at the Wayback Machine at PlantTFDB:Plant Transcription Factor Database",
+          "cos_sim_score": 0.1711663007736206,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Sex-determining region Y protein",
+          "title": "Sex-determining region Y protein",
+          "url": "https://en.wikipedia.org/wiki/Sex-determining_region_Y_protein",
+          "text": "See also\nSex-determination system\nSexual differentiation in humans\n\nReferences\nFurther reading\nExternal links\n\nGenes,+sry at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nSex-Determining+Region+Y+Protein at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nOMIM entries on 46,XX Testicular Disorder of Sex Development\nPDBe-KB provides an overview of all the structure information available in the PDB for Human Sex-determining region Y protein",
+          "cos_sim_score": 0.14172926545143127,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::GSX1",
+          "title": "GSX1",
+          "url": "https://en.wikipedia.org/wiki/GSX1",
+          "text": "GS homeobox 1 (GSX1) is a protein encoded by the gene of the same name, located on chromosome 13 in humans and chromosome 5 in mice.\nGSX1 is part of the homeobox gene family and acts as a transcription factor. It is essential for the expression of growth hormone-releasing hormone (GHRH) and is crucial for the development of neurons involved in sensory processing, particularly in prepulse inhibition. \nAdditionally, GSX1 is implicated in spinal cord injury recovery, promoting neural stem cell proliferation and enhancing locomotor function in injured mice.\n\nStructure\nGSX1 is a polypeptide chain consisting of 264 amino acids, with a molecular weight of 27,833 Da. The GSX1 protein contains a homeodomain, a conserved protein domain that facilitates binding to double-stranded DNA, suggesting its role as a transcription factor.\n\nGene Location\nThe GSX1 gene is located on the short arm of chromosome 13 at the cytogenetic band 13q12.3. It is part of a larger family of homeobox genes, which are crucial for developmental processes and the regulation of gene expression during embryonic development.\n\nFunction\nGSX1 is classified as an activator and developmental protein. It plays a significant role in various biological processes, including transcription and transcription regulation. The protein features a DNA-binding domain and is predominantly localized in the cell nucleus, where it influences the expression of target genes.\n\nGrowth hormone-releasing hormone\nOne of the key functions of GSX1 is its involvement in the expression of the growth hormone-releasing hormone (GHRH) gene. Research indicates that GSX1, known as Gsh-1 in mice, is essential for GHRH gene expression. \nA study demonstrated that the absence of Gsh-1 in knockout mice resulted in a dwarf phenotype and a complete loss of GHRH expression. This study elucidated that GSX1 binds to multiple regulatory sites in the GHRH promoter, enhancing its transcriptional activity, especially in the presence of CREB-binding protein, indicating a cooperative regulatory mechanism within the hypothalamus.\n\nPrepulse inhibition in the brain\nGSX1 plays a critical role in the development of specific neurons involved in sensory processing and cognitive regulation. Research has shown that GSX1-expressing neurons are essential for prepulse inhibition, a mechanism that helps the brain filter out irrelevant information and prevent cognitive overload. In studies using larval zebrafish and GSX1 knockout mice, the absence or silencing of these neurons resulted in significant impairments in prepulse inhibition, because they are involved in initiating startle responses.\n\nApplications\nSpinal Cord Injury\nGSX1 has been implicated in tissue regeneration strategies, particularly in the context of spinal cord injury (SCI). \nPromoting resident cells, especially neural stem and progenitor cells (NSPCs), is a potential approach for treating SCI. However, adult NSPCs primarily differentiate into glial cells (a type of brain cell that's not a neuron and helps support neural structure), contributing to glial scar formation at injury sites, which isn't useful.\nGSX1, in its developmental role, regulates the generation of excitatory and inhibitory interneurons during spinal cord embryonic development. \nRecent studies show that lentivirus-mediated expression of GSX1 increases the number of NSPCs in a mouse model of SCI during shortly after injury. This expression subsequently boosts the generation of glutamatergic and cholinergic interneurons while decreasing the production interneurons that produce GABA in the long term. \nThis ultimately means that GSX1 expression reduces reactive astrogliosis and glial scar formation, enhances serotonin neuronal activity, and improves locomotor function in injured mice, leading to better long-term outcomes.\n\n\n== References ==",
+          "cos_sim_score": 0.08332397043704987,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Sex-determining region Y protein",
+          "title": "Sex-determining region Y protein",
+          "url": "https://en.wikipedia.org/wiki/Sex-determining_region_Y_protein",
+          "text": "Action in the nucleus\nThe SRY protein consists of three main regions. The central region encompasses the high-mobility group (HMG) domain, which contains nuclear localization sequences and acts as the DNA-binding domain. The C-terminal domain has no conserved structure, and the N-terminal domain can be phosphorylated to enhance DNA-binding. The process begins with nuclear localization of SRY by acetylation of the nuclear localization signal regions, which allows for the binding of importin \u03b2 and calmodulin to SRY, facilitating its import into the nucleus. Once in the nucleus, SRY and SF1 (steroidogenic factor 1, another transcriptional regulator) complex and bind to TESCO (testis-specific enhancer of Sox9 core), the testes-specific enhancer element of the Sox9 gene in Sertoli cell precursors, located upstream of the Sox9 gene transcription start site. Specifically, it is the HMG region of SRY that binds to the minor groove of the DNA target sequence, causing the DNA to bend and unwind. The establishment of this particular DNA \"architecture\" facilitates the transcription of the Sox9 gene. In the nucleus of Sertoli cells, SOX9 directly targets the Amh gene as well as the prostaglandin D synthase (Ptgds) gene. SOX9 binding to the enhancer near the Amh promoter allows for the synthesis of Amh while SOX9 binding to the Ptgds gene allows for the production of prostaglandin D2 (PGD2). The reentry of SOX9 into the nucleus is facilitated by autocrine or paracrine signaling conducted by PGD2. SOX9 protein then initiates a positive feedback loop, involving SOX9 acting as its own transcription factor and resulting in the synthesis of large amounts of SOX9.\n\nSOX9 and testes differentiation\nThe SF-1 protein, on its own, leads to minimal transcription of the SOX9 gene in both the XX and XY bipotential gonadal cells along the urogenital ridge. However, binding of the SRY-SF1 complex to the testis-specific enhancer (TESCO) on SOX9 leads to significant up-regulation of the gene in only the XY gonad, while transcription in the XX gonad remains negligible. Part of this up-regulation is accomplished by SOX9 itself through a positive feedback loop; like SRY, SOX9 complexes with SF1 and binds to the TESCO enhancer, leading to further expression of SOX9 in the XY gonad. Two other proteins, FGF9 (fibroblast growth factor 9) and PDG2 (prostaglandin D2), also maintain this up-regulation. Although their exact pathways are not fully understood, they have been proven to be essential for the continued expression of SOX9 at the levels necessary for testes development.\nSOX9 and SRY are believed to be responsible for the cell-autonomous differentiation of supporting cell precursors in the gonads into Sertoli cells, the beginning of testes development. These initial Sertoli cells, in the center of the gonad, are hypothesized to be the starting point for a wave of FGF9 that spreads throughout the developing XY gonad, leading to further differentiation of Sertoli cells via the up-regulation of SOX9. SOX9 and SRY are also believed to be responsible for many of the later processes of testis development (such as Leydig cell differentiation, sex cord formation, and formation of testis-specific vasculature), although exact mechanisms remain unclear. It has been shown, however, that SOX9, in the presence of PDG2, acts directly on Amh (encoding anti-M\u00fcllerian hormone) and is capable of inducing testis formation in XX mice gonads, indicating it is vital to testes development.",
+          "cos_sim_score": 0.056101277470588684,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

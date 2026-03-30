@@ -131,7 +131,11 @@ R/oligo to process. The series matrix already contains RMA-normalized log2 value
 
 ### After Downloading — Run the Pipeline
 
-Run these three scripts in order from the repo root.
+There are two branches: **Weka** (manual GUI, steps 1–3 below) and **Python pipeline** (automated app, step 5 below). Both start from the same three preprocessing scripts.
+
+---
+
+#### Weka branch — complete run steps
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
@@ -153,18 +157,24 @@ Run these three scripts in order from the repo root.
                                  ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
 │  app/data/output/parsed/preprocessed_matrix.csv                         │
-│  40 rows × 11,687 probes  (37,606 low-variance probes removed)          │
+│  40 rows × (filtered probes + class)                                    │
+│  Filter: IQR ≥ 0.2 log2 units  (loosened from 0.5 — retains more)      │
 └───────────────────────────────┬─────────────────────────────────────────┘
                                  │
            STEP 3  python3 omics_ml_pipeline/app/utils/feature_select.py
                                  │
                                  ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
-│  OUTPUT  app/data/output/                                               │
+│  OUTPUT  data/femoral_head_necrosis/                                    │
 │  ├── feature_selection/                                                 │
-│  │   ├── top100_features.arff  ← load directly into Weka Explorer       │
-│  │   └── gene_rankings.csv     ← all probes ranked by |fold change|     │
-│  └── plots/  ← 6 exploratory plots                                     │
+│  │   ├── top100_features.arff      ← LOAD THIS INTO WEKA                │
+│  │   ├── top100_features.csv       ← same data, CSV form                │
+│  │   ├── top500_features.csv       ← broader discovery set (500 probes) │
+│  │   ├── gene_rankings.csv         ← all probes: hybrid_score, FC,      │
+│  │   │                                t-stat, p-value, IQR              │
+│  │   ├── gene_level_rankings.csv   ← one best probe per gene (deduped)  │
+│  │   └── top100_genes.csv          ← top 100 genes for literature check │
+│  └── EDA/    ← 7 EDA plots (6 individual + eda_composite.png)           │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -180,29 +190,115 @@ Shape: 40 rows × (~49k probe columns + class)
 
 ```bash
 # Step 2 — Filter probes
-# Removes low-variance probes (IQR < 0.5 log2 units across all 40 samples).
+# Removes low-variance probes (IQR < 0.2 log2 units across all 40 samples).
+# Threshold loosened from 0.5 to 0.2 — retains more moderate-effect probes.
 # No normalization applied — data is already log2 RMA from the series matrix.
 python3 omics_ml_pipeline/app/utils/preprocess.py
 ```
 
 **Output → `omics_ml_pipeline/app/data/output/parsed/preprocessed_matrix.csv`**
-Shape: 40 rows × (filtered probes + class)
+Shape: 40 rows × (filtered probes + class) — more probes retained than the previous 0.5 threshold run.
 
 ```bash
 # Step 3 — Feature selection + ARFF export + EDA plots
-# Ranks all probes by |fold change| between SONFH and control.
-# Selects top 100. Exports Weka ARFF. Generates 3 EDA plots.
+# Ranks all retained probes by hybrid score: zscore(|FC|) + zscore(|t-stat|).
+# Selects top 100 for Weka. Also exports top 500 and gene-level deduped files.
+# Generates 7 EDA plots (6 individual + composite).
 python3 omics_ml_pipeline/app/utils/feature_select.py
 ```
 
-**Output → `omics_ml_pipeline/app/data/output/feature_selection/`**
+**Output → `data/femoral_head_necrosis/feature_selection/`**
 - `top100_features.arff` — import directly into Weka Explorer
 - `top100_features.csv` — same data in CSV form
-- `gene_rankings.csv` — all probes ranked by |FC| and variance
+- `top500_features.csv` — 500-probe discovery set (not used in Weka)
+- `gene_rankings.csv` — all probes ranked by hybrid score + all metrics
+- `gene_level_rankings.csv` — one best probe per gene, deduped
+- `top100_genes.csv` — top 100 genes for literature comparison
 
-**Output → `omics_ml_pipeline/app/data/output/plots/`** — see EDA section below
+**Output → `data/femoral_head_necrosis/EDA/`** — 7 EDA plots including `eda_composite.png` (report Figure 1)
 
-> All generated files are gitignored. Fully reproducible by running the three scripts above in order.
+**Step 4 — Run Weka classifiers on `top100_features.arff`:**
+1. Open Weka GUI → Explorer
+2. Preprocess tab → Open file → `data/femoral_head_necrosis/feature_selection/top100_features.arff`
+3. Classify tab → Test options: Cross-validation, Folds: 10
+4. Run: NaiveBayes, J48, RandomForest, SMO, IBk (k=1/3/5), MLP, Auto-Weka
+
+> Do **not** run Weka on `top500_features.csv`. The Weka branch is top 100 only.
+
+---
+
+#### Python pipeline — complete run steps
+
+**Prerequisites:** Docker running (`docker compose up -d` from `omics_ml_pipeline/`), conda env active.
+
+```bash
+# All commands from omics_ml_pipeline/
+
+# --- FIRST RUN (from scratch — runs everything including parse + preprocess) ---
+python -m app.main
+
+# --- SUBSEQUENT RUNS (skip parse/preprocess, re-run feature select + train + biomarker) ---
+python -m app.main --skip-pre
+```
+
+The pipeline runs on **top 100 probes** by default (matching the Weka branch). It also automatically generates `top500_features.csv` and `gene_level_rankings.csv` as side outputs — no extra steps needed.
+
+---
+
+**Run A — top 100 (Weka-comparable, default):**
+
+```bash
+# Nothing to change — top_n: 100 is already the default config
+python -m app.main --skip-pre
+```
+
+Results → `app/data/output/models/model_comparison.csv`
+
+---
+
+**Run B — top 500 (discovery branch):**
+
+Edit `omics_ml_pipeline/app/config/pipeline.yaml`, change two lines:
+
+```yaml
+feature_selection:
+  top_n: 500
+
+paths:
+  top_features_csv: app/data/output/feature_selection/top500_features.csv
+```
+
+Then run:
+
+```bash
+python -m app.main --skip-pre
+```
+
+Compare Run B `model_comparison.csv` to Run A to see the effect of the broader feature set.
+
+**Restore to Run A defaults afterward:**
+```yaml
+feature_selection:
+  top_n: 100
+
+paths:
+  top_features_csv: app/data/output/feature_selection/top100_features.csv
+```
+
+---
+
+```bash
+# Step 5 — Generate report figures (run after both Weka and Python pipeline are complete)
+# Parses Weka .txt results + Python model_comparison.csv → bar charts for report Figures 2 & 3
+python3 generate_report_figures.py
+```
+
+**Output → `report/figures/`**
+- `fig_weka_model_comparison.png` — report Figure 2
+- `fig_python_model_comparison.png` — report Figure 3
+- `weka_model_comparison.csv` — Weka results in standard CSV schema
+
+> All generated files are gitignored. Fully reproducible by running the steps above in order.
 
 ---
 
@@ -306,22 +402,28 @@ PCA compresses the 100-probe feature space down to 2 numbers per patient. Each d
 
 ### Pipeline EDA plots — automated Python pipeline (top 50 probes)
 
-> Generated by `omics_ml_pipeline/app/jobs/feature_select_job.py`, saved to `omics_ml_pipeline/app/data/plots/`.
+> Generated by `omics_ml_pipeline/app/jobs/feature_select_job.py`, saved to `omics_ml_pipeline/app/data/output/plots/`.
 > These are produced automatically each pipeline run. PC1 = **88.0%**, PC2 = 2.4% (total 90.4%) — even stronger separation with 50 probes than the manual 100-probe run.
 
-![volcano_plot](omics_ml_pipeline/app/data/plots/volcano_plot.png)
+![volcano_plot](omics_ml_pipeline/app/data/output_500_min_55/plots/volcano_plot.png)
 
 ---
 
-![fold_change_top20](omics_ml_pipeline/app/data/plots/fold_change_top20.png)
+![fold_change_top20](omics_ml_pipeline/app/data/output_500_min_55/plots/fold_change_top20.png)
 
 ---
 
-![boxplots_top6](omics_ml_pipeline/app/data/plots/boxplots_top6.png)
+![boxplots_top6](omics_ml_pipeline/app/data/output_500_min_55/plots/boxplots_top6.png)
 
 ---
 
-![pca_plot](omics_ml_pipeline/app/data/plots/pca_plot.png)
+![pca_plot](omics_ml_pipeline/app/data/output_500_min_55/plots/pca_plot.png)
+
+---
+
+**EDA composite (Python pipeline — top 50 probes):**
+
+![eda_composite](omics_ml_pipeline/app/data/output_500_min_55/plots/eda_composite.png)
 
 ---
 
@@ -531,13 +633,17 @@ biology (you can't search `---` on PubMed).
 ### What preprocess.py does to the probes
 
 Microarray data does **not** need log normalization — it's already log2 from RMA processing.
-The only step is filtering probes with near-zero variance (IQR < 0.5 log2 units across
+The only step is filtering probes with near-zero variance (IQR < 0.2 log2 units across
 all 40 samples). These flat probes show the same value in every patient regardless of disease
 status — they cannot help a classifier distinguish SONFH from control.
 
+The threshold was loosened from the original 0.5 to 0.2 to retain moderate-effect probes
+that are biologically relevant but had small absolute spread. Exact retained count will
+depend on the dataset; run `preprocess.py` and check the printed output.
+
 | Before filtering | After filtering |
 |-----------------|----------------|
-| 49,293 probes | 11,687 probes (37,606 removed — flat across all 40 samples) |
+| 49,293 probes | TBD after re-run (more than previous 11,687 — IQR threshold now 0.2) |
 
 ---
 
@@ -568,12 +674,20 @@ Omics_Capstone/
 │       └── utils/                   ← Standalone scripts + shared pipeline utilities
 │           ├── parse_series_matrix.py   ← Step 1: parse GEO series matrix → samples × probes CSV
 │           ├── preprocess.py            ← Step 2: filter low-variance probes
-│           ├── feature_select.py        ← Step 3: top-100 feature selection + ARFF + EDA plots
+│           ├── feature_select.py        ← Step 3: top-100 feature selection + ARFF + 7 EDA plots
 │           ├── file_splitter.py         ← Single-gene split utility (professor's method)
 │           ├── transpose.py             ← Transpose utility
 │           ├── io_utils.py             ← Config loading (pipeline internal)
 │           ├── logging_utils.py        ← Rich logging setup (pipeline internal)
 │           └── mlflow_utils.py         ← MLflow setup (pipeline internal)
+│
+├── generate_report_figures.py       ← Step 4: Weka result parser + Figures 2 & 3 (model comparison charts)
+├── report/
+│   ├── report_skeleton.html         ← Report writing skeleton (import into Google Docs)
+│   └── figures/                     ← Generated by generate_report_figures.py (gitignored)
+│       ├── fig_weka_model_comparison.png    ← Figure 2 — insert into report
+│       ├── fig_python_model_comparison.png  ← Figure 3 — insert into report
+│       └── weka_model_comparison.csv        ← Weka results in standard schema
 │
 ├── r_base_scripts/                  ← Professor's original R scripts (reference only)
 │   ├── Tranpose_Function.R
@@ -598,10 +712,13 @@ Omics_Capstone/
         │   └── preprocessed_matrix.csv     (40 rows × filtered probes + class)
         │
         ├── feature_selection/       ← Generated by feature_select.py
-        │   ├── top100_features.arff  ← LOAD THIS INTO WEKA
+        │   ├── top100_features.arff      ← LOAD THIS INTO WEKA
         │   ├── top100_features.csv
-        │   ├── gene_rankings.csv     ← all 11,687 probes ranked by |FC| + gene symbol
-        │   └── gene_level_summary.csv ← probes grouped by gene (post-selection reference)
+        │   ├── top500_features.csv       ← broader discovery set (Python pipeline)
+        │   ├── gene_rankings.csv         ← all probes: hybrid_score, FC, t-stat, p-value, IQR
+        │   ├── gene_level_summary.csv    ← selected probes grouped by gene symbol
+        │   ├── gene_level_rankings.csv   ← one best probe per gene, deduped
+        │   └── top100_genes.csv          ← top 100 genes for literature comparison
         │
         └── EDA/                     ← Generated by feature_select.py
             ├── volcano_plot.png       ← all 11,687 probes; top 100 highlighted
@@ -609,7 +726,8 @@ Omics_Capstone/
             ├── boxplots_top6.png      ← top 6 probes, SONFH vs control distributions
             ├── sample_correlation.png ← 40×40 patient similarity heatmap
             ├── heatmap_top20.png      ← top 20 probes × 40 samples expression heatmap
-            └── pca_plot.png           ← 2D PCA of top 100 probes
+            ├── pca_plot.png           ← 2D PCA of top 100 probes
+            └── eda_composite.png      ← 2×3 multi-panel figure — INSERT as report Figure 1
 ```
 
 </details>
@@ -665,14 +783,15 @@ Omics_Capstone/
 ### Phase 3 — Preprocessing `✅ DONE`
 
 - [x] Run `python3 omics_ml_pipeline/app/utils/preprocess.py`
-- [x] Probes before filter: 49,293 — after IQR filter: 11,687 (37,606 removed, 76% flat)
+- [x] Probes before filter: 49,293 — after IQR filter with 0.5: 11,687 (37,606 removed, 76% flat)
 - [x] Value range confirmed: 1.43 – 14.14 (log2 RMA, OK)
 - [x] No log normalization applied — "OK" confirmed in output
+- [ ] **RE-RUN with IQR 0.2** — threshold loosened; re-run `preprocess.py` + `feature_select.py` to get updated probe count
 - [ ] **START WRITING: Methods — dataset and preprocessing sections**
   - Dataset: GEO GSE123568, microarray (Affymetrix PrimeView GPL15207), 40 peripheral blood-derived samples
   - Classes: 30 SONFH patients vs 10 non-SONFH steroid controls
   - Parse step: extracted probe expression matrix from GEO series matrix file
-  - Filter step: removed probes with IQR < 0.5 log2 units (low-variance, non-discriminative)
+  - Filter step: removed probes with IQR < 0.2 log2 units (low-variance, non-discriminative)
   - Normalization: RMA normalization already applied by GEO submitter; log2 values used as-is
   - Note class imbalance (30:10) as limitation
 
@@ -718,21 +837,17 @@ Rank  Probe ID           Gene Symbol          |FC|
 - Visual separation: **Yes — clear**
 
 **Writing — Methods (feature selection):**
-- [ ] Feature selection: probes ranked by |log2 fold change| (SONFH mean − control mean);
-  top 100 selected; justify over t-test (t-test is valid with n=40, but |FC| gives
-  biologically interpretable ranking without p-value multiple testing issues at this stage)
-- [ ] Note: selection is probe-level, not gene-level; multiple probes per gene may appear
-  in the selected set; this is acknowledged and documented in `gene_level_summary.csv`
+- [ ] Feature selection: probes ranked by hybrid score = zscore(|log2 FC|) + zscore(|Welch t-stat|);
+  top 100 selected for Weka branch; top 500 generated as broader discovery set
+- [ ] Note: selection is probe-level, not gene-level; multiple probes per gene may appear;
+  documented in `gene_level_summary.csv` and now also in `gene_level_rankings.csv`
+- [ ] Gene-level deduplication: `gene_level_rankings.csv` picks one best probe per gene
+  (priority: highest hybrid score → `_at` > `_s_at` > `_x_at` → higher IQR)
 
-**Optional future analysis — one-probe-per-gene branch:**
-> Not implemented in the main pipeline. May be tested as a comparison analysis.
-> If implemented, the representative probe per gene should NOT be chosen by highest mean
-> expression (that selects for highly expressed genes, not differentially expressed ones).
-> Better criteria:
-> - **Highest absolute fold change** (most discriminative for this task)
-> - **Best annotation specificity** (`_at` preferred over `_s_at` over `_x_at`)
-> - **Highest variance** across all 40 samples
-> - Or a combined gene-level aggregate score
+**Gene-level dedup — implemented:**
+`gene_level_rankings.csv` and `top100_genes.csv` are now generated automatically.
+Use `top100_genes.csv` for literature comparison and report Discussion.
+Do **not** use these gene-level files as input to Weka — the probe-level `top100_features.arff` is still the Weka input.
 
 ---
 
@@ -787,59 +902,59 @@ Output: minimal gene subset that best separates classes. This is the direct inpu
 
 **Preprocessor / data view:**
 
-![Weka preprocessor](data/screenshots/weka/weka_preprocessor.png)
+![Weka preprocessor](data/weka/weka_old/weka_preprocessor.png)
 
 ---
 
 **NaiveBayes:**
 
-![NaiveBayes](data/screenshots/weka/naive_bayes.png)
+![NaiveBayes](data/weka/weka_old/naive_bayes.png)
 
 ---
 
 **RandomForest:**
 
-![RandomForest](data/screenshots/weka/random_forest.png)
+![RandomForest](data/weka/weka_old/random_forest.png)
 
 ---
 
 **SMO (SVM):**
 
-![SMO](data/screenshots/weka/smo.png)
+![SMO](data/weka/weka_old/smo.png)
 
 ---
 
 **IBk (k-NN):**
 
-![IBk](data/screenshots/weka/lazy_ibk.png)
+![IBk](data/weka/weka_old/lazy_ibk.png)
 
 ---
 
 **MLP (MultilayerPerceptron):**
 
-![MLP](data/screenshots/weka/multilayerpreceptron.png)
+![MLP](data/weka/weka_old/multilayerpreceptron.png)
 
-![MLP hyperparameters](data/screenshots/weka/multilayerpreceptron_hyperparameters.png)
+![MLP hyperparameters](data/weka/weka_old/multilayerpreceptron_hyperparameters.png)
 
 ---
 
 **J48 Decision Tree:**
 
-![J48](data/screenshots/weka/j48_tree.png)
+![J48](data/weka/weka_old/j48_tree.png)
 
 ---
 
 **Auto-Weka:**
 
-![Auto-Weka](data/screenshots/weka/auto_weka.png)
+![Auto-Weka](data/weka/weka_old/auto_weka.png)
 
 ---
 
 **Select Attributes (WrapperSubsetEval + RandomForest):**
 
-![Select Attributes](data/screenshots/weka/select_attributes_randomforest.png)
+![Select Attributes](data/weka/weka_old/select_attributes_randomforest.png)
 
-![Select Attributes hyperparameters](data/screenshots/weka/select_attributes_randomforest_hyperparameters.png)
+![Select Attributes hyperparameters](data/weka/weka_old/select_attributes_randomforest_hyperparameters.png)
 
 </details>
 
@@ -897,6 +1012,44 @@ Interpretation: predictive minimality ≠ biological completeness. Use this as s
 - [x] Get MLP accuracy/AUC/F1 numbers → filled in table row
 - [x] Take J48 screenshot → added to screenshots dropdown
 - [x] Collect top contributing probe IDs → mapped to gene names via gene_rankings.csv → see Phase 5.5
+
+---
+
+### Phase 5 — New Run Results (2026-03-30 rerun — IQR ≥ 0.2, hybrid score, top 100)
+
+> **Context:** Pipeline was rerun with loosened variance filter (IQR ≥ 0.2 vs old 0.5) and hybrid
+> ranking (z-scored |FC| + z-scored |t-stat|). Probe space increased from 11,687 → 45,465.
+> New `top100_features.arff` loaded into Weka for all classifiers.
+
+#### Weka classifier comparison — old vs new
+
+| Classifier | Old accuracy | Old κ | New accuracy | New κ | Δ |
+|---|---|---|---|---|---|
+| NaiveBayes | 92.5% | 0.807 | 92.5% | 0.807 | = |
+| J48 | 95.0% | 0.857 | **not run yet** | — | — |
+| RandomForest | 92.5% | 0.793 | 92.5% | 0.793 | = |
+| SMO | 90.0% | 0.714 | **95.0%** | **0.857** | ↑ +5% |
+| IBk k=1 | 90.0% | 0.714 | **92.5%** | **0.778** | ↑ +2.5% |
+| IBk k=3 | 90.0% | 0.714 | **92.5%** | **0.778** | ↑ +2.5% |
+| IBk k=5 | 90.0% | 0.714 | 90.0% | 0.714 | = |
+| MLP | 92.5% | 0.778 | **95.0%** | **0.857** | ↑ +2.5% |
+| Auto-WEKA | 97.5% | 0.931 | **100%** | **1.0** | ↑ +2.5% |
+
+The new filters strictly improved or matched every classifier. Nothing got worse.
+
+- [ ] **TODO: Run J48** on new `top100_features.arff` — save to `weka_models/j48_tree.txt`
+
+#### Biomarker shortlist — TODO after J48 is run
+
+The old shortlist (`feature_selection_OLD/biomarker_shortlist.csv`) was built by hand from:
+1. Attribute selection wrapper — which probes the wrapper selected
+2. RandomForest — top probes by feature importance
+3. J48 — which probe(s) appear in the split rules
+
+- [ ] **TODO: Run `generate_weka_biomarker_shortlist.py`** (script to be written) — reads
+  `weka_models/randomforest.txt`, `weka_models/j48_tree.txt`,
+  `weka_models/attribute_selection_randomforest.txt`, maps probes to gene symbols via
+  `gene_rankings.csv`, outputs new `feature_selection/biomarker_shortlist.csv`
 
 ---
 

@@ -1,0 +1,136 @@
+{
+  "probe_id": "11716467_x_at",
+  "gene_symbol": "ISCA1",
+  "rf_importance": 0.0,
+  "selection_freq": 0.0,
+  "abs_fold_change": 2.3439887000000006,
+  "combined_score": 0.3257,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-03-30T14:09:35",
+  "interpretation": "ISCA1 (Iron-sulfur cluster assembly 1 homolog) is a mitochondrial protein involved in the maturation of iron-sulfur (Fe/S) proteins, which are crucial for various cellular processes, including energy metabolism and mitochondrial function. The connection to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) is indirect; however, mitochondrial dysfunction has been implicated in the pathogenesis of osteonecrosis, as steroid treatment can adversely affect mitochondrial health and lead to cell death in bone tissue.\n\nThe evidence regarding ISCA1's direct involvement in SONFH is weak, as there are no specific studies linking ISCA1 to this condition. The associations with mitochondrial dysfunction syndromes suggest that disruptions in mitochondrial protein assembly could contribute to the cellular stress seen in SONFH, but this remains speculative [INFERENCE].\n\nGiven its role in mitochondrial function, ISCA1 could potentially serve as a biomarker for early detection of SONFH, particularly if mitochondrial dysfunction is a contributing factor in the disease's progression. However, further research is needed to establish its clinical relevance definitively. Overall, while ISCA1 may have potential as a blood-based early-detection biomarker for SONFH, the current evidence is insufficient to support its use in clinical practice.",
+  "citations": [
+    "ISCA1 (Q9BUE6). https://www.uniprot.org/uniprotkb/Q9BUE6",
+    "ISCA1 (Q9BUE6-2). https://www.uniprot.org/uniprotkb/Q9BUE6-2",
+    "ISCA1 \u2014 ISCA1. https://platform.opentargets.org/target/ENSG00000135070",
+    "ISCA1 \u2194 Fatal multiple mitochondrial dysfunction syndrome. https://platform.opentargets.org/target/ENSG00000135070/associations",
+    "ISCA1 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000135070/associations",
+    "ISCA1 \u2194 fatal multiple mitochondrial dysfunctions syndrome. https://platform.opentargets.org/target/ENSG00000135070/associations",
+    "ISCA1 \u2194 Fatal multiple mitochondrial dysfunction syndrome type 2. https://platform.opentargets.org/target/ENSG00000135070/associations",
+    "ISCA1. https://en.wikipedia.org/wiki/ISCA1",
+    "List of human protein-coding genes 4. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_4",
+    "Nuclear prelamin A recognition factor like. https://en.wikipedia.org/wiki/Nuclear_prelamin_A_recognition_factor_like",
+    "Chromosome 9. https://en.wikipedia.org/wiki/Chromosome_9"
+  ],
+  "token_usage": {
+    "prompt_tokens": 2343,
+    "completion_tokens": 252,
+    "total_tokens": 2595,
+    "estimated_cost_usd": 0.000503
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9BUE6",
+          "title": "ISCA1 (Q9BUE6)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BUE6",
+          "text": "Protein: Iron-sulfur cluster assembly 1 homolog, mitochondrial\nFunction: Involved in the maturation of mitochondrial 4Fe-4S proteins functioning late in the iron-sulfur cluster assembly pathway. Probably involved in the binding of an intermediate of Fe/S cluster assembly",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9BUE6-2",
+          "title": "ISCA1 (Q9BUE6-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BUE6-2",
+          "text": "Protein: Isoform 2 of Iron-sulfur cluster assembly 1 homolog, mitochondrial",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000135070::function",
+          "title": "ISCA1 \u2014 ISCA1",
+          "url": "https://platform.opentargets.org/target/ENSG00000135070",
+          "text": "Function: Involved in the maturation of mitochondrial 4Fe-4S proteins functioning late in the iron-sulfur cluster assembly pathway. Probably involved in the binding of an intermediate of Fe/S cluster assembly. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000135070::Orphanet_289573",
+          "title": "ISCA1 \u2194 Fatal multiple mitochondrial dysfunction syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000135070/associations",
+          "text": "Disease: Fatal multiple mitochondrial dysfunction syndrome\nAssociation score: 0.715",
+          "cos_sim_score": 0.7148258929168214,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000135070::EFO_0005772",
+          "title": "ISCA1 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000135070/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.513",
+          "cos_sim_score": 0.5126460039885855,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000135070::MONDO_0017338",
+          "title": "ISCA1 \u2194 fatal multiple mitochondrial dysfunctions syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000135070/associations",
+          "text": "Disease: fatal multiple mitochondrial dysfunctions syndrome\nDescription: Multiple mitochondrial dysfunctions syndrome describes a group of rare inborn errors of energy metabolism due to defects in mitochondrial [4Fe-4S] protein assembly. Patients present with a neonatal/infancy onset of metabolic lactic acidosis (that may be associated with hyperglycinemia and other abnormal metabolic testing results), muscular hypotonia, absence of psychomotor development or developmental regression, as well as abnormal neuroimaging findings (including leukodystrophy, brain developmental defects, white matter abnormalities, cerebral atrophy), and other variable clinical features (e.g., optic atrophy, cardiomyopathy, pulmonary hypertension, seizures, and dysmorphic features). Early fatal outcome is usual.\nAssociation score: 0.335",
+          "cos_sim_score": 0.33506330347017166,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000135070::Orphanet_401874",
+          "title": "ISCA1 \u2194 Fatal multiple mitochondrial dysfunction syndrome type 2",
+          "url": "https://platform.opentargets.org/target/ENSG00000135070/associations",
+          "text": "Disease: Fatal multiple mitochondrial dysfunction syndrome type 2\nAssociation score: 0.333",
+          "cos_sim_score": 0.3326218692162316,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::ISCA1",
+          "title": "ISCA1",
+          "url": "https://en.wikipedia.org/wiki/ISCA1",
+          "text": "Iron-sulfur cluster assembly 1 homolog, mitochondrial is an evolutionarily highly conserved protein for the biogenesis of iron-sulfur cluster across species. In humans it is encoded by the ISCA1 gene.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.4067626893520355,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of human protein-coding genes 4",
+          "title": "List of human protein-coding genes 4",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_4",
+          "text": "== References ==",
+          "cos_sim_score": 0.18365895748138428,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Nuclear prelamin A recognition factor like",
+          "title": "Nuclear prelamin A recognition factor like",
+          "url": "https://en.wikipedia.org/wiki/Nuclear_prelamin_A_recognition_factor_like",
+          "text": "Nuclear prelamin A recognition factor like is a protein that in humans is encoded by the NARFL gene.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.07486002147197723,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Chromosome 9",
+          "title": "Chromosome 9",
+          "url": "https://en.wikipedia.org/wiki/Chromosome_9",
+          "text": "Chromosome 9 is one of the 23 pairs of chromosomes in humans. Humans normally have two copies of this chromosome, as they normally do with all chromosomes. Chromosome 9 spans about 138 million base pairs of nucleic acids (the building blocks of DNA) and represents between 4.0 and 4.5% of the total DNA in cells.\n\nGenes\nNumber of genes\nThese are some of the gene count estimates of human chromosome 9. Because researchers use different approaches to genome annotation, their predictions of the number of genes on each chromosome varies (for technical details, see gene prediction). Among various projects, the collaborative consensus coding sequence project (CCDS) takes an extremely conservative strategy. So CCDS's gene number prediction represents a lower bound on the total number of human protein-coding genes.\n\nGene list\nThe following is a partial list of genes on human chromosome 9. For a complete list, see the link in the infobox on the right.\n\nDiseases and disorders\nThe following diseases are some of those related to genes on chromosome 9:\n\nCytogenetic band\nReferences\nExternal links\n\nNational Institutes of Health. \"Chromosome 9\". Genetics Home Reference. Archived from the original on 2007-06-30. Retrieved 2017-05-06.\n\"Chromosome 9\". Human Genome Project Information Archive 1990\u20132003. Retrieved 2017-05-06.",
+          "cos_sim_score": 0.0712239220738411,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

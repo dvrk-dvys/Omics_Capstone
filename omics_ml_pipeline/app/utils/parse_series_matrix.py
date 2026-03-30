@@ -36,7 +36,7 @@ DATA VALUES:
 CLASS DETECTION:
   Based on the GEO page, sample titles contain "control group" or "SONFH group".
   This script detects class by looking for those strings (case-insensitive).
-  If a sample title does not match either pattern, it is labelled 'unknown'
+  If a sample title does not match either pattern, it is labeled 'unknown'
   and printed as a warning — you should inspect and relabel those rows manually.
 
 OUTPUT:
@@ -63,6 +63,12 @@ import pandas as pd
 _APP_DIR       = pathlib.Path(__file__).resolve().parent.parent
 DEFAULT_INPUT  = str(_APP_DIR / "data" / "input"  / "GSE123568_series_matrix.txt.gz")
 DEFAULT_OUTPUT = str(_APP_DIR / "data" / "output" / "parsed" / "parsed_matrix.csv")
+
+# ---------------------------------------------------------------------------
+# WEKA STANDALONE PATHS  (used only when running this file directly)
+# ---------------------------------------------------------------------------
+_PROJECT_ROOT = _APP_DIR.parent.parent   # /Omics_Capstone/
+_WEKA_OUTPUT  = str(_PROJECT_ROOT / "data" / "femoral_head_necrosis" / "parsed" / "parsed_matrix.csv")
 
 
 # ---------------------------------------------------------------------------
@@ -280,7 +286,7 @@ def print_summary(df: pd.DataFrame) -> None:
 if __name__ == "__main__":
     if len(sys.argv) == 1:
         input_path  = DEFAULT_INPUT
-        output_path = DEFAULT_OUTPUT
+        output_path = _WEKA_OUTPUT
     elif len(sys.argv) == 3:
         input_path  = sys.argv[1]
         output_path = sys.argv[2]
