@@ -1,0 +1,142 @@
+{
+  "probe_id": "11732236_a_at",
+  "gene_symbol": "GYPA",
+  "rf_importance": 0.0107,
+  "selection_freq": 1.0,
+  "abs_fold_change": 3.306031566666667,
+  "combined_score": 0.5405,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-03-30T23:24:00",
+  "interpretation": "Glycophorin A (GYPA) is a major intrinsic membrane protein of erythrocytes, playing a crucial role in maintaining the stability and shape of red blood cells. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), GYPA has been identified as a potential biomarker through differential expression analysis in peripheral blood samples from SONFH patients. The evidence suggests that GYPA is involved in immune-related biological processes and may influence erythrocyte function, which is relevant given the vascular implications in SONFH. The retrieved studies indicate a strong association of GYPA with SONFH, supporting its potential as a biomarker for early detection. However, the evidence primarily stems from expression profiling and network analysis, which may not fully establish direct causative links. Overall, GYPA shows promise as a clinically actionable biomarker for SONFH, particularly in the context of early diagnosis and monitoring.",
+  "evidence_relation": "direct",
+  "evidence_tier": "Tier 1",
+  "evidence_confidence": "high",
+  "biomarker_potential": "strong",
+  "relevance_summary": "GYPA is a potential biomarker for early detection of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) due to its role in erythrocyte stability and immune processes.",
+  "citations": [
+    "GYPA (P02724). https://www.uniprot.org/uniprotkb/P02724",
+    "GYPA (P02724-2). https://www.uniprot.org/uniprotkb/P02724-2",
+    "GYPA (P02724-3). https://www.uniprot.org/uniprotkb/P02724-3",
+    "GYPA \u2014 GYPA. https://platform.opentargets.org/target/ENSG00000170180",
+    "GYPA \u2194 malaria. https://platform.opentargets.org/target/ENSG00000170180/associations",
+    "GYPA \u2194 dyshidrosis. https://platform.opentargets.org/target/ENSG00000170180/associations",
+    "GYPA \u2194 Abnormality of the skeletal system. https://platform.opentargets.org/target/ENSG00000170180/associations",
+    "GYPA \u2194 diabetic neuropathy. https://platform.opentargets.org/target/ENSG00000170180/associations",
+    "Screening of Potential Biomarkers in the Peripheral Serum for Steroid-Induced Osteonecrosis of the Femoral Head Based on WGCNA and Machine Learning Algorithms. (2022). https://pubmed.ncbi.nlm.nih.gov/35154510/",
+    "[Transcriptome data mining combined with clinical and animal experiments for identification of syndrome element marker genes during entire course of steroid-induced osteonecrosis of femoral head]. (2024). https://pubmed.ncbi.nlm.nih.gov/38621982/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4664,
+    "completion_tokens": 271,
+    "total_tokens": 4935,
+    "estimated_cost_usd": 0.000862
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P02724",
+          "title": "GYPA (P02724)",
+          "url": "https://www.uniprot.org/uniprotkb/P02724",
+          "text": "Protein: Glycophorin-A\nFunction: Component of the ankyrin-1 complex, a multiprotein complex involved in the stability and shape of the erythrocyte membrane (PubMed:35835865). Glycophorin A is the major intrinsic membrane protein of the erythrocyte. The N-terminal glycosylated segment, which lies outside the erythrocyte membrane, has MN blood group receptors. Appears to be important for the function of SLC4A1 and is required for high activity of SLC4A1. May be involved in translocation of SLC4A1 to the plasma membrane (Microbial infection) Appears to be a receptor for Hepatitis A virus (HAV) (Microbial infection) Receptor for P.falciparum erythrocyte-binding antigen 175 (EBA-175); binding of EBA-175 is dependent on sialic acid residues of the O-linked glycans",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P02724-2",
+          "title": "GYPA (P02724-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P02724-2",
+          "text": "Protein: Isoform 2 of Glycophorin-A",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P02724-3",
+          "title": "GYPA (P02724-3)",
+          "url": "https://www.uniprot.org/uniprotkb/P02724-3",
+          "text": "Protein: Isoform 3 of Glycophorin-A",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000170180::function",
+          "title": "GYPA \u2014 GYPA",
+          "url": "https://platform.opentargets.org/target/ENSG00000170180",
+          "text": "Function: Component of the ankyrin-1 complex, a multiprotein complex involved in the stability and shape of the erythrocyte membrane (PubMed:35835865). Glycophorin A is the major intrinsic membrane protein of the erythrocyte. The N-terminal glycosylated segment, which lies outside the erythrocyte membrane, has MN blood group receptors. Appears to be important for the function of SLC4A1 and is required for high activity of SLC4A1. May be involved in translocation of SLC4A1 to the plasma membrane.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000170180::EFO_0001068",
+          "title": "GYPA \u2194 malaria",
+          "url": "https://platform.opentargets.org/target/ENSG00000170180/associations",
+          "text": "Disease: malaria\nDescription: Malaria is a serious and sometimes fatal disease caused by a parasite that commonly infects a certain type of mosquito which feeds on humans. Infection with malaria parasites may result in a wide variety of symptoms, ranging from absent or very mild symptoms to severe disease and even death. People who get malaria are typically very sick with high fevers, shaking chills, and flu-like illness. In general, malaria is a curable disease if diagnosed and treated promptly and correctly.Treatment depends on many factors including disease severity, the species of malaria parasite causing the infection and the part of the world in which the infection was acquired.\nAssociation score: 0.377",
+          "cos_sim_score": 0.37656968762740295,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000170180::EFO_1000688",
+          "title": "GYPA \u2194 dyshidrosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000170180/associations",
+          "text": "Disease: dyshidrosis\nDescription: A recurrent eczematous reaction characterized by the development of vesicular eruptions on the palms and soles, particularly along the sides and between the digits. It is accompanied by pruritus, a burning sensation, and hyperhidrosis. The disease is self-limiting, lasting only a few weeks. (Dorland, 27th ed)\nAssociation score: 0.329",
+          "cos_sim_score": 0.3293003546156474,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000170180::HP_0000924",
+          "title": "GYPA \u2194 Abnormality of the skeletal system",
+          "url": "https://platform.opentargets.org/target/ENSG00000170180/associations",
+          "text": "Disease: Abnormality of the skeletal system\nDescription: An abnormality of the skeletal system.\nAssociation score: 0.323",
+          "cos_sim_score": 0.3233210749772892,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000170180::EFO_1000783",
+          "title": "GYPA \u2194 diabetic neuropathy",
+          "url": "https://platform.opentargets.org/target/ENSG00000170180/associations",
+          "text": "Disease: diabetic neuropathy\nDescription: Peripheral, autonomic, and cranial nerve disorders that are associated with DIABETES MELLITUS. These conditions usually result from diabetic microvascular injury involving small blood vessels that supply nerves ( VASA NERVORUM). Relatively common conditions which may be associated with diabetic neuropathy include third nerve palsy (see OCULOMOTOR NERVE DISEASES); MONONEUROPATHY; mononeuropathy multiplex; diabetic amyotrophy; a painful POLYNEUROPATHY; autonomic neuropathy; and thoracoabdominal neuropathy. (From Adams et al., Principles of Neurology, 6th ed, p1325)\nAssociation score: 0.320",
+          "cos_sim_score": 0.32034699753197476,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::35154510",
+          "title": "Screening of Potential Biomarkers in the Peripheral Serum for Steroid-Induced Osteonecrosis of the Femoral Head Based on WGCNA and Machine Learning Algorithms.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35154510/",
+          "year": "2022",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SONFH) has produced a substantial burden of medical and social experience. However, the current diagnosis is still limited. Thus, this study is aimed at identifying potential biomarkers in the peripheral serum of patients with SONFH. The expression profile data of SONFH (number: GSE123568) was acquired from the Gene Expression Omnibus (GEO) database. Differentially expressed genes (DEGs) in SONFH were identified and used for weighted gene coexpression network analysis (WGCNA). Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analyses were performed to investigate the biological functions. The protein-protein interaction (PPI) network and machine learning algorithms were employed to screen for potential biomarkers. Gene set enrichment analysis (GSEA), transcription factor (TF) enrichment analysis, and competing endogenous RNA (ceRNA) network were used to determine the biological functions and regulatory mechanisms of the potential biomarkers. A total of 562 DEGs, including 318 upregulated and 244 downregulated genes, were identified between SONFH and control samples, and 94 target genes were screened based on WGCNA. Moreover, biological function analysis suggested that target genes were mainly involved in erythrocyte differentiation, homeostasis and development, and myeloid cell homeostasis and development. Furthermore, GYPA, TMCC2, and BPGM were identified as potential biomarkers in the peripheral serum of patients with SONFH based on machine learning algorithms and showed good diagnostic values. GSEA revealed that GYPA, TMCC2, and BPGM were mainly involved in immune-related biological processes (BPs) and signaling pathways. Finally, we found that GYPA might be regulated by hsa-miR-3137 and that BPGM might be regulated by hsa-miR-340-3p. GYPA, TMCC2, and BPGM are potential biomarkers in the peripheral serum of patients with SONFH and might affect SONFH by regulating erythrocytes and immunity.",
+          "cos_sim_score": 0.45601195096969604,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::38621982",
+          "title": "[Transcriptome data mining combined with clinical and animal experiments for identification of syndrome element marker genes during entire course of steroid-induced osteonecrosis of femoral head].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38621982/",
+          "year": "2024",
+          "text": "A research strategy combining transcriptome data mining and experimental verification was adopted to identify the marker genes characterizing the syndrome elements of phlegm, stasis, and deficiency in steroid-induced osteonecrosis of the femoral head(SONFH). Firstly, the common differentially expressed gene sets of SONFH with the syndromes of phlegm-stasis obstructing collaterals, vessel obstruction, and liver-kidney deficiency were obtained from the clinical transcriptomic analysis of a previous study. The differential expression trend analysis and functional gene mining were then employed to predict the candidate marker gene sets representing phlegm, stasis, and deficiency. The whole blood samples from SONFH patients, whole blood samples from SONFH rats, and affected femoral head tissue samples were collected for qPCR, which aimed to determine the expression levels of the candidate marker genes mentioned above. Furthermore, the receiver operating characteristic curve(ROC) was established to objectively evaluate the syndrome differentiation effectiveness of the candidate marker genes mentioned above. The transcriptome data analysis results showed that the candidate marker genes for phlegm was ELOVL fatty acid elongase 6(ELOVL6), and those for stasis were ankyrin 1(ANK1), glycophorin A/B(GYPA/B), and Rh-associated glycoprotein(RHAG). The candidate marker genes for deficiency were solute carrier family 2 member 1(SLC2A1) and stomatin(STOM). The qPCR results showed that compared with that in the non-SONFH group, ELOVL6 had the lowest expression level in the peripheral blood of the SONFH patients with the syndrome of phlegm-stasis obstructing collaterals(P&lt;0.05). Compared with that in the normal control group, ELOVL6 had the lowest expression level in the peripheral blood and affected femoral head tissue of SONFH rats modeled for 4 weeks(P&lt;0.01), and it showed better syndrome differentiation effectiveness of rats modeled for 4 weeks(AUC=0.850, P=0.006) than at other modeling time points(8, 12, 16, and 21 weeks, AUC of 0.689, 0.766, 0.588, and 0.662, respectively). Compared with that in the non-SONFH group, the expression levels of ANK1, GYPA, and RHAG were the lowest in the peripheral blood of SONFH patients with the vessel obstruction syndrome(P&lt;0.05). The expression levels of the three genes were the lowest in the peripheral blood and affected femoral head tissue of",
+          "cos_sim_score": 0.41403090953826904,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::38621982",
+          "title": "[Transcriptome data mining combined with clinical and animal experiments for identification of syndrome element marker genes during entire course of steroid-induced osteonecrosis of femoral head].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38621982/",
+          "year": "2024",
+          "text": "than at other modeling time points(8, 12, 16, and 21 weeks, AUC of 0.689, 0.766, 0.588, and 0.662, respectively). Compared with that in the non-SONFH group, the expression levels of ANK1, GYPA, and RHAG were the lowest in the peripheral blood of SONFH patients with the vessel obstruction syndrome(P&lt;0.05). The expression levels of the three genes were the lowest in the peripheral blood and affected femoral head tissue of SONFH rats modeled for 12 weeks(P&lt;0.05, P&lt;0.01), and their syndrome differentiation effectiveness in the rats modeled for 12 weeks(GYPA: AUC=0.861, P=0.012; ANK1: AUC=0.855, P=0.006; RHAG: AUC=0.854, P=0.009) was superior to that for 4, 8, 16, and 21 weeks(GYPA: AUC=0.646, 0.573, 0.691, and 0.617, respectively; ANK: AUC1=0.630, 0.658, 0.657, and 0.585, respectively; RHAG: AUC=0.592, 0.511, 0.515, and 0.536, respectively). Compared with the non-SONFH group, both SLC2A1 and STOM had the lowest expression levels in the peripheral blood of patients with the syndrome of liver and kidney deficiency(P&lt;0.05). Compared with the normal control group, their expression levels were the lowest in the peripheral blood and affected femoral head tissue of SONFH rats modeled for 21 weeks(P&lt;0.05, except STOM in the peripheral blood of rats). Moreover, the syndrome differentiation effectiveness of SLC2A1 in the rats modeled for 21 weeks(AUC=0.806, P=0.009) was superior to that for 4, 8, 12, and 16 weeks(AUC=0.520, 0.580, 0.741, 0.774, respectively), and STOM was meaningless in syndrome differentiation. In summary, the candidate marker gene for phlegm in SONFH is ELOVL6; the candidate marker genes for stasis are GYPA, RHAG, and ANK1; the candidate marker gene for deficiency is SLC2A1. The results help to reveal the biological connotations of phlegm, stasis, and deficiency in SONFH at the genetic level.",
+          "cos_sim_score": 0.19895605742931366,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_fetch_by_id",
+      "result": []
+    }
+  ]
+}

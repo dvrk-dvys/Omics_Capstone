@@ -1,0 +1,10 @@
+model,source,accuracy_mean,accuracy_std,roc_auc_mean,roc_auc_std,f1_weighted_mean,f1_weighted_std,balanced_accuracy_mean,balanced_accuracy_std,duration_s
+baseline_logistic_elasticnet,baseline_default,0.975,0.05,1.0,0.0,0.9718,0.0564,0.95,0.1,1.4
+baseline_linear_svc,baseline_default,0.9225,0.0607,0.9967,0.0163,0.9222,0.0615,0.915,0.0905,0.17
+tuned_xgboost,hyperopt_tuned,0.975,0.05,0.995,0.035,0.9718,0.0564,0.95,0.1,0.41
+baseline_random_forest,baseline_default,0.925,0.0829,0.9867,0.0306,0.9158,0.1004,0.8833,0.1481,5.64
+tuned_random_forest,hyperopt_tuned,0.925,0.0829,0.9867,0.0306,0.9158,0.1004,0.8833,0.1481,6.98
+baseline_mlp,baseline_default,0.955,0.06,0.9767,0.0528,0.9529,0.0632,0.9367,0.098,1.25
+baseline_gaussian_nb,baseline_default,0.9275,0.0833,0.965,0.0411,0.9214,0.0994,0.9083,0.1387,0.11
+baseline_xgboost,baseline_default,0.975,0.05,0.95,0.1,0.9718,0.0564,0.95,0.1,0.47
+baseline_knn,baseline_default,0.925,0.0866,0.9117,0.1469,0.9094,0.1128,0.86,0.167,0.18

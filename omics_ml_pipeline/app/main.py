@@ -56,6 +56,7 @@ from app.jobs import (
     train_eval_job,
     biomarker_job,
     llm_job,
+    univariate_ann_job,
 )
 
 log = get_logger("main")
@@ -152,7 +153,7 @@ def main():
             log.info("⏭️  Skipping ingest/parse/preprocess (--skip-pre)")
 
         # 4. Feature selection
-        log.info("📊 [4/6] Feature selection")
+        log.info("📊 [4/7] Feature selection")
         try:
             with log_duration(log, "Feature selection"):
                 t0 = time.perf_counter()
@@ -162,9 +163,21 @@ def main():
             log.error(f"❌ Feature selection failed: {e}")
             raise
 
-        # 5. Train + evaluate (non-critical — failure continues to biomarker)
+        # 5. Univariate ANN — professor-faithful single-probe ranking
+        #    Runs automatically as part of the default pipeline on this branch.
+        #    Depends on preprocessed_csv (step 3); does not require feature_select outputs.
+        log.info("🧬 [5/7] Univariate ANN (professor-faithful)")
+        try:
+            with log_duration(log, "Univariate ANN"):
+                t0 = time.perf_counter()
+                univariate_ann_job.run(config, run_id=run_id)
+                durations["Univariate ANN"] = time.perf_counter() - t0
+        except Exception as e:
+            log.error(f"❌ Univariate ANN failed (continuing): {e}")
+
+        # 6. Train + evaluate (non-critical — failure continues to biomarker)
         if not args.skip_train:
-            log.info("🤖 [5/6] Train + evaluate")
+            log.info("🤖 [6/7] Train + evaluate")
             try:
                 with log_duration(log, "Train + evaluate"):
                     t0 = time.perf_counter()
@@ -176,7 +189,7 @@ def main():
             log.info("⏭️  Skipping training (--skip-train)")
 
         # 6. Biomarker shortlist
-        log.info("🎯 [6/6] Biomarker shortlist")
+        log.info("🎯 [7/7] Biomarker shortlist")
         try:
             with log_duration(log, "Biomarker shortlist"):
                 t0 = time.perf_counter()

@@ -40,6 +40,10 @@ paths:
   # LLM interpretation outputs — one JSON per gene
   llm_outputs_dir: app/data/output/llm_outputs
 
+  # Univariate ANN outputs (professor-faithful single-probe workflow)
+  univariate_ann_dir:             app/data/output/feature_selection/univariate_ann
+  univariate_biomarker_shortlist: app/data/output/feature_selection/univariate_ann/biomarker_shortlist.csv
+
 # ---------------------------------------------------------------------------
 # BIOMARKER
 # ---------------------------------------------------------------------------
@@ -112,3 +116,28 @@ llm:
   gene_timeout: 900             # max seconds per gene (15 min; 5 iters × worst-case tools)
   batch_timeout: 7200           # max seconds for the full LLM batch job (2 hr for debug)
   debug_set_torch_threads_1: false   # diagnostic: force torch num_threads=1 before executor (set true to test thread-context stall)
+
+# ---------------------------------------------------------------------------
+# UNIVARIATE WRAPPER  (single-probe wrapper; model selectable via model_type)
+# App pipeline:  python -m app.main          → uses model_type below
+# Standalone:    python -m app.utils.univariate_ann  → defaults to --model-type all
+# ---------------------------------------------------------------------------
+univariate_ann:
+  model_type:        logistic   # DEFAULT for app pipeline: logistic | professor_ann | svm_rbf
+  use_filter:        true       # pre-screen probes by univariate AUC before wrapper
+  filter_top_n:      2000       # keep top N probes from filter step
+  n_mccv:            5          # Monte Carlo CV iterations per probe
+  train_frac:        0.70       # stratified train fraction per split
+  seed:              123        # global RNG seed (reproducibility)
+
+  # ANN hyperparameters — unused when model_type != professor_ann; kept for future experiments
+  epochs:            60
+  batch_size:        16
+  patience:          8
+  learning_rate:     0.001
+  val_frac:          0.20
+
+  # Shared split guards
+  min_train_samples: 10
+  min_test_samples:  5
+  max_na_fraction:   0.20
