@@ -474,22 +474,27 @@ def plot_fold_change_bar(
     disease_label: str = "SONFH",
     control_label: str = "control",
     dataset: str = "",
+    gene_map: pd.Series = None,
 ) -> None:
     """
     Horizontal bar chart of the top N probes by |log2-fold-change|.
     Colour-codes by rank tier (top 10 vs 11–20).
     This is the key EDA plot explaining the probe selection decision.
     """
-    top = ranking.head(top_n)
-    genes  = top.index.tolist()
-    values = top.values.tolist()
+    top       = ranking.head(top_n)
+    probe_ids = top.index.tolist()
+    values    = top.values.tolist()
 
-    # We'll colour by a simple rule: load signed FC from the ranking Series name
-    # Since ranking is |FC|, use a neutral colour scheme with magnitude only
-    colours = ["#c0392b" if i < top_n // 2 else "#2980b9" for i in range(len(genes))]
+    labels = []
+    for p in probe_ids:
+        sym = (gene_map.get(p, "") if gene_map is not None and len(gene_map) else "")
+        sym = sym if sym and sym != "---" else ""
+        labels.append(f"{p} — {sym}" if sym else p)
 
-    fig, ax = plt.subplots(figsize=(9, 7))
-    bars = ax.barh(genes[::-1], values[::-1], color=colours[::-1],
+    colours = ["#c0392b" if i < top_n // 2 else "#2980b9" for i in range(len(labels))]
+
+    fig, ax = plt.subplots(figsize=(11, 7))
+    bars = ax.barh(labels[::-1], values[::-1], color=colours[::-1],
                    edgecolor="white", linewidth=0.5)
 
     # Value labels on bars
@@ -498,7 +503,7 @@ def plot_fold_change_bar(
                 f"{val:.2f}", va="center", fontsize=8, color="#333333")
 
     ax.set_xlabel(f"|Log Fold Change| ({disease_label} mean − {control_label} mean, log2 scale)", fontsize=10)
-    ax.set_ylabel("Gene", fontsize=10)
+    ax.set_ylabel("Probe ID — Gene Symbol", fontsize=10)
     ax.set_title(
         f"Top {top_n} Probes by Absolute Fold Change — {disease_label} vs {control_label}\n"
         f"Feature selection basis: probes most different between conditions ({dataset})",
@@ -1197,24 +1202,264 @@ def plot_feature_importance(
     top_labels = []
     for p in top_probes:
         sym = (gene_map.get(p, "") if gene_map is not None and len(gene_map) else "")
-        top_labels.append(sym if sym and sym != "---" else p)
+        sym = sym if sym and sym != "---" else ""
+        top_labels.append(f"{p} — {sym}" if sym else p)
 
     colours = ["#d62728" if i == 0 else "#1f77b4" for i in range(len(top_vals))]
 
-    fig, ax = plt.subplots(figsize=(9, 7))
-    y_pos   = np.arange(len(top_labels))
-    ax.barh(y_pos, top_vals[::-1], color=colours[::-1], edgecolor="white", linewidth=0.4)
-    ax.set_yticks(y_pos)
-    ax.set_yticklabels(top_labels[::-1], fontsize=9)
-    ax.set_xlabel(importance_label, fontsize=11)
-    ax.set_title(f"Top {top_n} Features — {model_name}\n{dataset}", fontsize=11)
-    ax.grid(True, axis="x", alpha=0.3, linestyle="--")
-    plt.tight_layout()
+    def _draw_importance_bars(ax, vals, labels, title):
+        y_pos = np.arange(len(labels))
+        ax.barh(y_pos, vals[::-1], color=colours[::-1], edgecolor="white", linewidth=0.4)
+        ax.set_yticks(y_pos)
+        ax.set_yticklabels(labels[::-1], fontsize=8)
+        ax.set_xlabel(importance_label, fontsize=11)
+        ax.set_ylabel("Probe ID — Gene Symbol", fontsize=10)
+        ax.set_title(title, fontsize=11)
+        ax.grid(True, axis="x", alpha=0.3, linestyle="--")
 
+    # Full-scale plot
+    fig, ax = plt.subplots(figsize=(11, 7))
+    _draw_importance_bars(ax, top_vals, top_labels,
+                          f"Top {top_n} Features — {model_name}\n{dataset}")
+    plt.tight_layout()
     out_path = os.path.join(plots_dir, "feature_importance.png")
     plt.savefig(out_path, dpi=150, bbox_inches="tight")
     plt.close()
     print(f"Feature importance plot saved: {out_path}")
+
+    # Zoomed plot — clip at 1.5× the second-highest value so the outlier doesn't compress the rest
+    if len(top_vals) >= 2 and top_vals[1] > 1e-8:
+        zoom_xlim = top_vals[1] * 1.5
+        fig, ax = plt.subplots(figsize=(11, 7))
+        _draw_importance_bars(ax, top_vals, top_labels,
+                              f"Top {top_n} Features — {model_name} (zoomed — top outlier truncated)\n{dataset}")
+        ax.set_xlim(0, zoom_xlim)
+        # Annotate the truncated outlier bar with its actual value
+        # y=0 is the top bar after barh reversal
+        outlier_label = f"{top_vals[0]:.3f}"
+        ax.text(
+            zoom_xlim * 0.98, 0,
+            f"← {top_labels[0]}  ({outlier_label})",
+            va="center", ha="right", fontsize=7.5, color="#d62728",
+        )
+        plt.tight_layout()
+        zoom_path = os.path.join(plots_dir, "feature_importance_zoomed.png")
+        plt.savefig(zoom_path, dpi=150, bbox_inches="tight")
+        plt.close()
+        print(f"Feature importance zoomed plot saved: {zoom_path}")
+
+
+def plot_gene_importance_aggregated(
+    X: np.ndarray,
+    y: np.ndarray,
+    probe_cols: list,
+    model,
+    model_name: str,
+    gene_map: pd.Series,
+    plots_dir: str,
+    top_n: int = 20,
+    dataset: str = "",
+) -> None:
+    """
+    Horizontal bar chart of top N genes by maximum probe importance.
+
+    Groups all probes per gene symbol and takes the max importance value —
+    "strongest signal observed for this gene". Separate from probe-level
+    feature_importance.png; this is the biological gene-level summary.
+
+    Saved as gene_importance_aggregated.png.
+    """
+    from sklearn.base import clone
+
+    if gene_map is None or len(gene_map) == 0:
+        print("plot_gene_importance_aggregated: no gene_map — skipping")
+        return
+
+    m = clone(model)
+    m.fit(X, y)
+
+    def _get_importances(est):
+        if hasattr(est, "feature_importances_"):
+            return est.feature_importances_, "Aggregated feature importance (max probe importance)"
+        if hasattr(est, "coef_"):
+            coef = est.coef_
+            vals = np.abs(coef).mean(axis=0) if coef.ndim > 1 else np.abs(coef[0])
+            return vals, "Aggregated |Coefficient| (max probe)"
+        return None, None
+
+    if hasattr(m, "named_steps"):
+        inner = list(m.named_steps.values())[-1]
+        importances, importance_label = _get_importances(inner)
+    else:
+        importances, importance_label = _get_importances(m)
+
+    if importances is None:
+        print(f"plot_gene_importance_aggregated: {model_name} has no importances — skipping")
+        return
+
+    # Build probe → importance series, map to gene symbol, group by max
+    probe_imp   = pd.Series(importances, index=probe_cols)
+    gene_series = probe_imp.index.map(gene_map).fillna("---")
+    agg = (
+        pd.DataFrame({"importance": probe_imp.values, "gene": gene_series})
+        .groupby("gene")["importance"]
+        .max()
+        .sort_values(ascending=False)
+    )
+    agg = agg[agg.index != "---"].head(top_n)
+
+    if agg.empty:
+        print("plot_gene_importance_aggregated: no gene-mapped probes — skipping")
+        return
+
+    agg_vals   = agg.values
+    agg_labels = list(agg.index)
+    colours    = ["#d62728" if i == 0 else "#1f77b4" for i in range(len(agg_vals))]
+
+    def _draw_gene_bars(ax, vals, labels, title):
+        y_pos = np.arange(len(labels))
+        ax.barh(y_pos, vals[::-1], color=colours[::-1], edgecolor="white", linewidth=0.4)
+        ax.set_yticks(y_pos)
+        ax.set_yticklabels(labels[::-1], fontsize=9)
+        ax.set_xlabel(importance_label, fontsize=10)
+        ax.set_ylabel("Gene Symbol", fontsize=10)
+        ax.set_title(title, fontsize=11)
+        ax.grid(True, axis="x", alpha=0.3, linestyle="--")
+
+    # Full-scale plot
+    fig, ax = plt.subplots(figsize=(9, 7))
+    _draw_gene_bars(ax, agg_vals, agg_labels,
+                    f"Top {top_n} Genes by Maximum Probe Importance — {model_name}\n{dataset}")
+    plt.tight_layout()
+    out_path = os.path.join(plots_dir, "gene_importance_aggregated.png")
+    plt.savefig(out_path, dpi=150, bbox_inches="tight")
+    plt.close()
+    print(f"Gene importance aggregated plot saved: {out_path}")
+
+    # Zoomed plot — clip at 1.5× second-highest gene so the outlier doesn't compress the rest
+    if len(agg_vals) >= 2 and agg_vals[1] > 1e-8:
+        zoom_xlim = agg_vals[1] * 1.5
+        fig, ax = plt.subplots(figsize=(9, 7))
+        _draw_gene_bars(ax, agg_vals, agg_labels,
+                        f"Top {top_n} Genes by Maximum Probe Importance — {model_name} (zoomed — top outlier truncated)\n{dataset}")
+        ax.set_xlim(0, zoom_xlim)
+        # y=0 is the top bar after barh reversal
+        outlier_label = f"{agg_vals[0]:.3f}"
+        ax.text(
+            zoom_xlim * 0.98, 0,
+            f"← {agg_labels[0]}  ({outlier_label})",
+            va="center", ha="right", fontsize=8, color="#d62728",
+        )
+        plt.tight_layout()
+        zoom_path = os.path.join(plots_dir, "gene_importance_aggregated_zoomed.png")
+        plt.savefig(zoom_path, dpi=150, bbox_inches="tight")
+        plt.close()
+        print(f"Gene importance aggregated zoomed plot saved: {zoom_path}")
+
+
+def plot_biomarker_summary_composite(
+    plots_dir:     str,
+    shortlist_csv: str,
+    output_path:   str,
+    dataset:       str = "",
+) -> None:
+    """
+    3-panel biomarker summary composite figure.
+
+    Panel A — Probe-level feature importance  (loads feature_importance.png)
+    Panel B — Gene-aggregated importance      (loads gene_importance_aggregated.png)
+    Panel C — Shortlist scatter: abs_fold_change vs combined_score
+
+    Saved to output_path (suggested: fig_biomarker_summary_composite.png).
+    """
+    import matplotlib.image as mpimg
+
+    # --- Shortlist data for Panel C ---
+    shortlist_df = None
+    if os.path.exists(shortlist_csv):
+        try:
+            shortlist_df = pd.read_csv(shortlist_csv)
+        except Exception as e:
+            print(f"  plot_biomarker_summary_composite: could not read shortlist — {e}")
+
+    # --- PNG panels A and B ---
+    # TODO: replace PNG loading with direct plotting functions for full resolution control
+    png_panels = [
+        (os.path.join(plots_dir, "feature_importance.png"),        "A", "Probe-Level Feature Importance"),
+        (os.path.join(plots_dir, "gene_importance_aggregated.png"), "B", "Gene-Aggregated Importance"),
+    ]
+    loaded = [(p, lbl, ttl) for p, lbl, ttl in png_panels if os.path.exists(p)]
+
+    n_panels = len(loaded) + (1 if shortlist_df is not None else 0)
+    if n_panels == 0:
+        print("  plot_biomarker_summary_composite: no panels available — skipping")
+        return
+
+    fig, axes = plt.subplots(1, n_panels, figsize=(6 * n_panels, 6))
+    if n_panels == 1:
+        axes = [axes]
+
+    for idx, (fpath, label, title) in enumerate(loaded):
+        ax = axes[idx]
+        try:
+            img = mpimg.imread(fpath)
+            ax.imshow(img)
+        except Exception as e:
+            ax.text(0.5, 0.5, f"[Error: {os.path.basename(fpath)}]",
+                    ha="center", va="center", fontsize=9, color="red", transform=ax.transAxes)
+        ax.axis("off")
+        ax.set_title(f"{label}  {title}", fontsize=10, fontweight="bold", pad=6)
+
+    # Panel C — inline scatter
+    if shortlist_df is not None:
+        ax = axes[len(loaded)]
+        req = {"probe_id", "gene_symbol", "abs_fold_change", "combined_score"}
+        if req.issubset(shortlist_df.columns):
+            # Sort so top combined_score points render last (most visible)
+            shortlist_df = shortlist_df.sort_values("combined_score", ascending=True)
+
+            x    = shortlist_df["abs_fold_change"].values
+            y_sc = shortlist_df["combined_score"].values
+            sz   = (
+                shortlist_df["rf_importance"].values * 800 + 30
+                if "rf_importance" in shortlist_df.columns else 60
+            )
+            c = (
+                shortlist_df["selection_freq"].values
+                if "selection_freq" in shortlist_df.columns else "#1f77b4"
+            )
+            sc = ax.scatter(x, y_sc, s=sz, c=c, cmap="Blues", alpha=0.85,
+                            edgecolors="#333", linewidths=0.5)
+            if "selection_freq" in shortlist_df.columns:
+                plt.colorbar(sc, ax=ax, label="Selection frequency", shrink=0.8)
+
+            # Use cleaned gene name consistently — handle "GENE /// ALIAS" format
+            clean_genes  = shortlist_df["gene_symbol"].apply(lambda x: str(x).split("///")[0].strip())
+            gene_counts  = clean_genes.value_counts()
+            for (_, row), gene in zip(shortlist_df.iterrows(), clean_genes):
+                lbl = f"{gene} ({row['probe_id']})" if gene_counts.get(gene, 0) > 1 else gene
+                ax.annotate(lbl, (row["abs_fold_change"], row["combined_score"]),
+                            fontsize=7, xytext=(4, 2), textcoords="offset points")
+
+            ax.set_xlabel("|Log2 Fold Change| (SONFH − control)", fontsize=10)
+            ax.set_ylabel("Combined Score", fontsize=10)
+            ax.set_title("C  Shortlist Probes: Fold Change vs Combined Score",
+                         fontsize=10, fontweight="bold", pad=6)
+            ax.grid(True, alpha=0.3, linestyle="--")
+        else:
+            ax.text(0.5, 0.5, "Missing columns in shortlist CSV",
+                    ha="center", va="center", fontsize=9, transform=ax.transAxes)
+            ax.axis("off")
+            ax.set_title("C  Shortlist Probes: Fold Change vs Combined Score",
+                         fontsize=10, fontweight="bold")
+
+    if dataset:
+        fig.suptitle(f"Biomarker Summary — {dataset}", fontsize=13, fontweight="bold", y=1.01)
+
+    plt.tight_layout()
+    plt.savefig(output_path, dpi=150, bbox_inches="tight")
+    plt.close()
+    print(f"Biomarker summary composite saved: {output_path}")
 
 
 # ---------------------------------------------------------------------------
@@ -1369,6 +1614,7 @@ def plot_model_comparison_bar(
     models_csv: str,
     plots_dir: str,
     dataset: str = "",
+    mode_suffix: str = "",
 ) -> None:
     """
     Horizontal bar chart of CV ROC-AUC (mean ± std) for all trained models,
@@ -1433,7 +1679,7 @@ def plot_model_comparison_bar(
     ax.spines[["top", "right"]].set_visible(False)
 
     fig.tight_layout()
-    out_path = os.path.join(plots_dir, "fig_2_model_comparison.png")
+    out_path = os.path.join(plots_dir, f"fig_2_model_comparison{mode_suffix}.png")
     plt.savefig(out_path, dpi=150, bbox_inches="tight")
     plt.close()
     print(f"Model comparison figure saved: {out_path}")
@@ -1518,6 +1764,7 @@ def plot_statistical_vs_model_importance(
     dataset: str = "",
     random_state: int = 42,
     label_top_n: int = 20,
+    mode_suffix: str = "",
 ) -> None:
     """
     Scatter plot reconciling statistical signal (hybrid score) with model
@@ -1627,8 +1874,10 @@ def plot_statistical_vs_model_importance(
 
     ax.set_xlabel("Model Importance (XGBoost Gain, log scale)", fontsize=10)
     ax.set_ylabel("Hybrid Score (Statistical Signal)", fontsize=10)
+    mode_label = mode_suffix.replace("_", "  ").strip() if mode_suffix else ""
+    title_line2 = f"\nGSE123568  {mode_label}" if mode_label else "\nGSE123568"
     ax.set_title(
-        "BioStatistical vs Model Importance of Candidate Biomarkers\nGSE123568",
+        f"BioStatistical vs Model Importance of Candidate Biomarkers{title_line2}",
         fontsize=14,
         fontweight="bold",
     )
@@ -1645,7 +1894,7 @@ def plot_statistical_vs_model_importance(
     ax.spines[["top", "right"]].set_visible(False)
 
     plt.tight_layout(rect=[0, 0, 0.85, 1])
-    out_path = os.path.join(plots_dir, "fig_4_stat_vs_model_importance.png")
+    out_path = os.path.join(plots_dir, f"fig_4_stat_vs_model_importance{mode_suffix}.png")
     plt.savefig(out_path, dpi=150, bbox_inches="tight")
     plt.close()
     print(f"Statistical vs model importance plot saved: {out_path}")
@@ -1725,7 +1974,7 @@ if __name__ == "__main__":
 
     # 7. EDA — Fold change bar chart (top 20 by |FC| — keeps existing plot behaviour)
     bar_path = os.path.join(eda_dir, "fold_change_top20.png")
-    plot_fold_change_bar(fc_ranking, bar_path, top_n=20)
+    plot_fold_change_bar(fc_ranking, bar_path, top_n=20, gene_map=annotation)
 
     # 8. EDA — PCA plot (sample separation in top-N-probe space)
     pca_path = os.path.join(eda_dir, "pca_plot.png")

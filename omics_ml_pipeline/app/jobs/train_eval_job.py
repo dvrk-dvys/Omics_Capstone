@@ -32,6 +32,7 @@ from app.utils.feature_select import (
     plot_roc_curves, plot_confusion_matrix, plot_feature_importance,
     plot_model_comparison_bar, plot_composite_eval,
     plot_statistical_vs_model_importance,
+    plot_gene_importance_aggregated, plot_biomarker_summary_composite,
 )
 from app.utils.mlflow_utils import setup_mlflow
 from app.utils.logging_utils import get_logger, console
@@ -315,9 +316,12 @@ def run(config: dict, selected_df: pd.DataFrame, run_id: str = "", gene_map: pd.
     log.info(f"💾 Saved combined comparison: {comparison_path}")
 
     # --- ML evaluation plots -------------------------------------------------
-    plots_dir = config["paths"]["plots_dir"]
-    top_n     = config["feature_selection"]["top_n_feats"]
-    dataset   = f"{config.get('project', {}).get('dataset', '')} — top {top_n} probes"
+    plots_dir   = config["paths"]["plots_dir"]
+    top_n       = config["feature_selection"]["top_n_feats"]
+    mode        = config.get("_mode", "")
+    mode_suffix = f"_{mode}_top{top_n}" if mode else f"_top{top_n}"
+    mode_label  = f"  [mode={mode}, top_n={top_n}]" if mode else f"  [top_n={top_n}]"
+    dataset     = f"{config.get('project', {}).get('dataset', '')} — top {top_n} probes{mode_label}"
     os.makedirs(plots_dir, exist_ok=True)
 
     # Reconstruct tuned XGBoost with resolved best params for plotting
@@ -358,11 +362,25 @@ def run(config: dict, selected_df: pd.DataFrame, run_id: str = "", gene_map: pd.
         dataset = dataset,
     )
 
+    plot_gene_importance_aggregated(
+        X, y, probe_cols, tuned_xgb, "Tuned XGBoost", gene_map, plots_dir,
+        dataset = dataset,
+    )
+
+    shortlist_csv = config["paths"]["biomarker_shortlist"]
+    plot_biomarker_summary_composite(
+        plots_dir    = plots_dir,
+        shortlist_csv= shortlist_csv,
+        output_path  = os.path.join(plots_dir, "fig_biomarker_summary_composite.png"),
+        dataset      = dataset,
+    )
+
     # Figure 2 — model comparison bar chart (all models)
     plot_model_comparison_bar(
-        models_csv = comparison_path,
-        plots_dir  = plots_dir,
-        dataset    = dataset,
+        models_csv  = comparison_path,
+        plots_dir   = plots_dir,
+        dataset     = dataset,
+        mode_suffix = mode_suffix,
     )
 
     # Figure 3 — final model evaluation composite (ROC | CM | feature importance)
@@ -379,8 +397,26 @@ def run(config: dict, selected_df: pd.DataFrame, run_id: str = "", gene_map: pd.
         dataset       = dataset,
         random_state  = config["training"]["random_state"],
         label_top_n   = config["biomarker"].get("top_n_display", 20),
+        mode_suffix   = mode_suffix,
     )
 
-    log.info(f"✅ ML evaluation plots saved to: {plots_dir}")
+    # Rename remaining mode-dependent plots to include mode+top_n suffix
+    _rename_plots = [
+        "confusion_matrix.png",
+        "roc_curves.png",
+        "feature_importance.png",
+        "feature_importance_zoomed.png",
+        "gene_importance_aggregated.png",
+        "gene_importance_aggregated_zoomed.png",
+        "fig_3_model_eval.png",
+        "fig_biomarker_summary_composite.png",
+    ]
+    for _fname in _rename_plots:
+        _old = os.path.join(plots_dir, _fname)
+        _new = os.path.join(plots_dir, _fname.replace(".png", f"{mode_suffix}.png"))
+        if os.path.exists(_old):
+            os.rename(_old, _new)
+
+    log.info(f"✅ ML evaluation plots saved to: {plots_dir}  (suffix: {mode_suffix})")
 
     return combined_df

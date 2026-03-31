@@ -41,15 +41,36 @@ def _clean_gene(gene_symbol: str):
 
 def _load_shortlist(path: str) -> list:
     """
-    Load shortlist CSV, clean gene symbols, deduplicate by primary gene
-    (keep highest combined_score per gene), return list of row dicts.
+    Load shortlist CSV, clean gene symbols, aggregate all probes per gene.
+
+    For genes with multiple probes (e.g. TSTA3 appears 4×), keeps the best
+    probe row as the base and adds aggregate columns so the saved JSON reflects
+    the full multi-probe evidence:
+      probe_count          — number of probes mapping to this gene
+      probe_ids            — all probe IDs joined by " | "
+      max_combined_score   — highest combined_score across all probes
+      mean_abs_fold_change — mean absolute fold change across all probes
+      max_rf_importance    — highest RF importance across all probes
+
+    Returns list of row dicts sorted by max_combined_score descending.
     """
     df = pd.read_csv(path)
     df["gene_symbol"] = df["gene_symbol"].apply(_clean_gene)
     df = df.dropna(subset=["gene_symbol"])
     df = df.sort_values("combined_score", ascending=False)
-    df = df.drop_duplicates(subset="gene_symbol", keep="first")
-    return df.to_dict(orient="records")
+
+    records = []
+    for gene, group in df.groupby("gene_symbol", sort=False):
+        best = group.iloc[0].to_dict()          # highest combined_score row
+        best["probe_count"]          = len(group)
+        best["probe_ids"]            = " | ".join(group["probe_id"].tolist())
+        best["max_combined_score"]   = round(float(group["combined_score"].max()), 4)
+        best["mean_abs_fold_change"] = round(float(group["abs_fold_change"].mean()), 4)
+        best["max_rf_importance"]    = round(float(group["rf_importance"].max()), 4)
+        records.append(best)
+
+    records.sort(key=lambda r: r["max_combined_score"], reverse=True)
+    return records
 
 
 def _calc_cost(prompt_tokens: int, completion_tokens: int, input_cost_per_1m: float, output_cost_per_1m: float) -> float:

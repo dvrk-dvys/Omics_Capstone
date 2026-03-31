@@ -45,6 +45,7 @@ from datetime import datetime
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import pandas as pd
 
 from app.utils.io_utils import load_config
 from app.utils.logging_utils import get_logger, log_duration
@@ -90,6 +91,12 @@ def parse_args():
     parser.add_argument("--skip-train",  action="store_true",    help="Skip model training")
     parser.add_argument("--llm",         action="store_true",    help="Run LLM job (scaffold)")
     parser.add_argument("--shortlist",   default=None,           help="Override shortlist path for LLM job")
+    parser.add_argument(
+        "-m", "--mode",
+        default="univariate",
+        choices=["univariate", "multivariate"],
+        help="Feature selection mode: univariate (ANN-based ranking) or multivariate (hybrid statistical ranking)",
+    )
     return parser.parse_args()
 
 
@@ -116,6 +123,7 @@ def main():
     log.info(f"🧬 Omics ML Pipeline — {config['project'].get('disease', 'Biomarker Discovery')}")
     log.info(f"📄 Config : {args.config}")
     log.info(f"🔖 Run ID : {run_id.rstrip('_')}")
+    log.info(f"⚙️  Mode   : {args.mode}  (top_n={config['feature_selection']['top_n_feats']})")
     log.info("=" * 60)
 
     try:
@@ -152,8 +160,10 @@ def main():
         else:
             log.info("⏭️  Skipping ingest/parse/preprocess (--skip-pre)")
 
-        # 4. Feature selection
-        log.info("📊 [4/7] Feature selection")
+        # 4. Feature selection — always runs for fc_ranking, gene_map, and EDA plots.
+        #    In multivariate mode selected_df is used downstream.
+        #    In univariate mode selected_df is replaced after the ANN step.
+        log.info("📊 [4/7] Feature selection  (rankings + EDA)")
         try:
             with log_duration(log, "Feature selection"):
                 t0 = time.perf_counter()
@@ -163,21 +173,52 @@ def main():
             log.error(f"❌ Feature selection failed: {e}")
             raise
 
-        # 5. Univariate ANN — professor-faithful single-probe ranking
-        #    Runs automatically as part of the default pipeline on this branch.
-        #    Depends on preprocessed_csv (step 3); does not require feature_select outputs.
-        log.info("🧬 [5/7] Univariate ANN (professor-faithful)")
-        try:
-            with log_duration(log, "Univariate ANN"):
-                t0 = time.perf_counter()
-                univariate_ann_job.run(config, run_id=run_id)
-                durations["Univariate ANN"] = time.perf_counter() - t0
-        except Exception as e:
-            log.error(f"❌ Univariate ANN failed (continuing): {e}")
+        # 5. Mode-specific feature source
+        top_n = config["feature_selection"]["top_n_feats"]
+        if args.mode == "univariate":
+            log.info("🧬 [5/7] Univariate ANN  (mode=univariate)")
+            try:
+                with log_duration(log, "Univariate ANN"):
+                    t0 = time.perf_counter()
+                    univariate_ann_job.run(config, run_id=run_id)
+                    durations["Univariate ANN"] = time.perf_counter() - t0
+                uni_csv = os.path.join(
+                    config["paths"]["univariate_ann_dir"],
+                    f"top{top_n}_features_univariate_ann.csv",
+                )
+                selected_df = pd.read_csv(uni_csv, index_col="sample")
+                log.info(
+                    f"  selected_df → ANN top-{top_n}  "
+                    f"({selected_df.shape[0]} samples × {selected_df.shape[1] - 1} probes)"
+                )
+                log.info(f"  Source : {uni_csv}")
+            except Exception as e:
+                log.error(f"❌ Univariate ANN failed — falling back to hybrid selected_df: {e}")
+        else:
+            log.info("⏭️  [5/7] Univariate ANN skipped  (mode=multivariate)")
+            log.info(
+                f"  selected_df → hybrid top-{top_n}  "
+                f"({selected_df.shape[0]} samples × {selected_df.shape[1] - 1} probes)"
+            )
 
-        # 6. Train + evaluate (non-critical — failure continues to biomarker)
+        # Inject mode + top_n into config so downstream plot functions can label outputs
+        config["_mode"]  = args.mode
+        config["_top_n"] = top_n
+
+        # 6. Biomarker shortlist — runs before train so composite plot has the CSV
+        log.info("🎯 [6/7] Biomarker shortlist")
+        try:
+            with log_duration(log, "Biomarker shortlist"):
+                t0 = time.perf_counter()
+                shortlist = biomarker_job.run(config, selected_df, fc_ranking, gene_map, run_id)
+                durations["Biomarker shortlist"] = time.perf_counter() - t0
+        except Exception as e:
+            log.error(f"❌ Biomarker shortlist failed: {e}")
+            raise
+
+        # 7. Train + evaluate (non-critical — failure does not abort pipeline)
         if not args.skip_train:
-            log.info("🤖 [6/7] Train + evaluate")
+            log.info("🤖 [7/7] Train + evaluate")
             try:
                 with log_duration(log, "Train + evaluate"):
                     t0 = time.perf_counter()
@@ -187,17 +228,6 @@ def main():
                 log.error(f"❌ Train + evaluate failed (continuing): {e}")
         else:
             log.info("⏭️  Skipping training (--skip-train)")
-
-        # 6. Biomarker shortlist
-        log.info("🎯 [7/7] Biomarker shortlist")
-        try:
-            with log_duration(log, "Biomarker shortlist"):
-                t0 = time.perf_counter()
-                shortlist = biomarker_job.run(config, selected_df, fc_ranking, gene_map, run_id)
-                durations["Biomarker shortlist"] = time.perf_counter() - t0
-        except Exception as e:
-            log.error(f"❌ Biomarker shortlist failed: {e}")
-            raise
 
         # LLM (opt-in, non-critical — failure does not abort pipeline)
         if args.llm:
@@ -215,10 +245,11 @@ def main():
         total_str = f"{total_elapsed / 60:.1f} min" if total_elapsed >= 60 else f"{total_elapsed:.1f}s"
 
         # Duration bar chart
-        _plot_pipeline_duration(durations, config["paths"]["plots_dir"], run_id)
+        _plot_pipeline_duration(durations, config["paths"]["plots_dir"], run_id,
+                                mode_suffix=f"_{args.mode}_top{top_n}")
 
         log.info("=" * 60)
-        log.info(f"🏁 Pipeline complete  [{total_str}]")
+        log.info(f"🏁 Pipeline complete  [{total_str}]  mode={args.mode}  top_n={top_n}")
         log.info(f"  📋 Biomarker shortlist : {config['paths']['biomarker_shortlist']}")
         log.info(f"  📈 Model comparison    : {config['paths']['model_comparison']}")
         log.info(f"  🌐 MLflow UI           : {config['mlflow']['tracking_uri']}")
@@ -237,7 +268,7 @@ def main():
         raise
 
 
-def _plot_pipeline_duration(durations: dict, plots_dir: str, run_id: str = "") -> None:
+def _plot_pipeline_duration(durations: dict, plots_dir: str, run_id: str = "", mode_suffix: str = "") -> None:
     """Horizontal bar chart of per-job and total pipeline duration."""
     os.makedirs(plots_dir, exist_ok=True)
 
@@ -269,7 +300,7 @@ def _plot_pipeline_duration(durations: dict, plots_dir: str, run_id: str = "") -
     ax.grid(axis="x", alpha=0.3, linestyle="--")
     plt.tight_layout()
 
-    out_path = os.path.join(plots_dir, "pipeline_duration.png")
+    out_path = os.path.join(plots_dir, f"pipeline_duration{mode_suffix}.png")
     plt.savefig(out_path, dpi=150, bbox_inches="tight")
     plt.close()
     print(f"📊 Duration plot saved: {out_path}")

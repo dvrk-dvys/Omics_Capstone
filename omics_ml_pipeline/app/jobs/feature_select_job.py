@@ -110,6 +110,7 @@ def run(config: dict) -> tuple[pd.DataFrame, pd.Series, pd.Series]:
             fc_ranking,
             os.path.join(plots_dir, "fold_change_top20.png"),
             disease_label=disease_label, control_label=control_label, dataset=dataset,
+            gene_map=gene_map,
         )),
         ("Box plots",             lambda: plot_boxplots(
             selected_df, gene_map,

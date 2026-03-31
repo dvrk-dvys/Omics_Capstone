@@ -939,7 +939,7 @@ def run_univariate_pipeline(
     shortlist["combined_score"] = shortlist["Median_TestAUC"]   # [0,1], directly interpretable
     shortlist = shortlist.sort_values("combined_score", ascending=False).reset_index(drop=True)
 
-    shortlist_path = os.path.join(output_dir, "biomarker_shortlist.csv")
+    shortlist_path = os.path.join(output_dir, "ann_probe_ranking.csv")
     shortlist.to_csv(shortlist_path, index=False)
     log_fn(f"Saved: {shortlist_path}")
 
@@ -957,6 +957,13 @@ def run_univariate_pipeline(
     top10 = shortlist[["probe_id", "gene_symbol", "combined_score"]].head(10)
     log_fn("\nTop 10 probes by Median_TestAUC:")
     log_fn(top10.to_string(index=False))
+
+    # 9. Per-probe AUC distribution figure
+    _plot_probe_auc_distribution(
+        summary_df, gene_map, output_dir, model_type,
+        disease_label=disease_label, control_label=control_label,
+        top_n_selected=weka_top_ns[0] if weka_top_ns else None,
+    )
 
     return perf_df, summary_df, pred_df, gene_map
 
@@ -1065,6 +1072,120 @@ def _print_comparison_table(comp_df: pd.DataFrame) -> None:
     print("=" * 70)
     print(comp_df.to_string(index=False))
     print("=" * 70)
+
+
+def _plot_probe_auc_distribution(
+    summary_df:     pd.DataFrame,
+    gene_map:       "pd.Series",
+    output_dir:     str,
+    model_type:     str,
+    disease_label:  str = "SONFH",
+    control_label:  str = "control",
+    annotate_top_n: int = 10,
+    top_n_selected: int = None,
+) -> str:
+    """
+    2-panel figure showing the distribution of per-probe Median_TestAUC across
+    all screened probes.
+
+    Panel A — Ranked AUC curve: all valid probes sorted descending by
+    Median_TestAUC. Top N probes are annotated with 'probe_id — gene_symbol'.
+    Shaded ribbon shows ±1 SD. A horizontal dashed line at AUC=0.9 marks the
+    high-performance threshold.
+
+    Panel B — Histogram: distribution of Median_TestAUC values across all
+    probes. Vertical dashed line at 0.9 separates the high-AUC tail from the
+    bulk.
+
+    Saved as univariate_probe_auc_distribution.png in output_dir.
+    """
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    valid = (
+        summary_df[
+            (summary_df["N_runs"] > 0) & (summary_df["Median_TestAUC"].notna())
+        ]
+        .sort_values("Median_TestAUC", ascending=False)
+        .reset_index(drop=True)
+        .copy()
+    )
+
+    if valid.empty:
+        print("_plot_probe_auc_distribution: no valid probe results — skipping")
+        return ""
+
+    gene_map_safe = gene_map if (gene_map is not None and len(gene_map)) else None
+    n_mccv        = int(valid["N_runs"].iloc[0])
+    aucs          = valid["Median_TestAUC"].values.astype(float)
+    sds           = valid["SD_TestAUC"].fillna(0.0).values.astype(float)
+    ranks         = np.arange(1, len(aucs) + 1)
+
+    fig, (ax_a, ax_b) = plt.subplots(1, 2, figsize=(14, 6))
+
+    # ── Panel A: ranked curve ────────────────────────────────────────────────
+    ax_a.plot(ranks, aucs, color="#1f77b4", linewidth=1.2, zorder=3)
+    ax_a.fill_between(
+        ranks, np.maximum(0, aucs - sds), np.minimum(1, aucs + sds),
+        alpha=0.15, color="#1f77b4",
+    )
+    ax_a.axhline(0.9, color="#d62728", linewidth=0.8, linestyle="--", label="AUC = 0.90")
+    ax_a.set_xlabel(f"Probe rank (n = {len(valid):,})", fontsize=10)
+    ax_a.set_ylabel("Median Test AUC", fontsize=10)
+    ax_a.set_ylim(0, 1.05)
+    ax_a.set_xlim(1, len(aucs))
+    ax_a.set_title(
+        f"Ranked Probe AUC — {model_type}\n"
+        f"{disease_label} vs {control_label} | {n_mccv}× MCCV",
+        fontsize=10,
+    )
+    ax_a.grid(True, alpha=0.25, linestyle="--")
+    ax_a.legend(fontsize=9)
+
+    # Annotate top N probes
+    for i in range(min(annotate_top_n, len(valid))):
+        probe = valid.loc[i, "Gene"]
+        sym   = (gene_map_safe.get(probe, "") if gene_map_safe is not None else "")
+        sym   = sym if sym and sym != "---" else ""
+        label = f"{probe} — {sym}" if sym else probe
+        ax_a.annotate(
+            label,
+            xy=(ranks[i], aucs[i]),
+            xytext=(ranks[i] + max(len(aucs) * 0.015, 5), aucs[i]),
+            fontsize=6.5,
+            arrowprops={"arrowstyle": "-", "color": "#888", "lw": 0.5},
+            va="center",
+        )
+
+    # ── Panel B: histogram ───────────────────────────────────────────────────
+    n_high = int((aucs >= 0.9).sum())
+    ax_b.hist(aucs, bins=40, color="#1f77b4", edgecolor="white", linewidth=0.4)
+    ax_b.axvline(0.9, color="#d62728", linewidth=1.0, linestyle="--",
+                 label=f"AUC ≥ 0.90 ({n_high} probes)")
+    ax_b.set_xlabel("Median Test AUC", fontsize=10)
+    ax_b.set_ylabel("Number of probes", fontsize=10)
+    ax_b.set_title(
+        f"AUC Distribution — {len(valid):,} probes\n"
+        f"{disease_label} vs {control_label}",
+        fontsize=10,
+    )
+    ax_b.grid(True, axis="y", alpha=0.25, linestyle="--")
+    ax_b.legend(fontsize=9)
+
+    top_n_label = f"  |  top_{top_n_selected} selected" if top_n_selected else ""
+    plt.suptitle(
+        f"Univariate ANN probe screening — {disease_label} vs {control_label}{top_n_label}",
+        fontsize=12, y=1.01,
+    )
+    plt.tight_layout()
+
+    fname    = f"univariate_probe_auc_distribution_top{top_n_selected}.png" if top_n_selected else "univariate_probe_auc_distribution.png"
+    out_path = os.path.join(output_dir, fname)
+    plt.savefig(out_path, dpi=150, bbox_inches="tight")
+    plt.close()
+    print(f"Probe AUC distribution figure saved: {out_path}")
+    return out_path
 
 
 def _plot_comparison_composite(

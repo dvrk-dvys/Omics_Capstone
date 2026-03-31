@@ -897,6 +897,82 @@ Go to **Select attributes tab**, then:
 
 Output: minimal gene subset that best separates classes. This is the direct input to biological interpretation — these are your candidate biomarkers.
 
+---
+
+**Key distinction — evaluation models vs. shortlist-producing models:**
+
+Not all Weka models have the same purpose. This is the most important thing to understand when writing Methods and interpreting output:
+
+```
+Weka on top100.arff
+    │
+    ├── NaiveBayes ─┐
+    ├── SMO        ─┤  → "Which model wins?" → accuracy numbers → Results table / Discussion
+    ├── MLP        ─┤
+    ├── IBk        ─┘
+    │
+    ├── J48  ──────────→ split node probes   ─┐
+    └── RF   ──────────→ importance ranking   ─┴──→ biomarker shortlist → LLM
+```
+
+- **Evaluation models** (NaiveBayes, SMO, MLP, IBk) answer: *can we classify SONFH from gene expression?* Their output is accuracy/AUC numbers for the Results table. They do **not** produce a gene list.
+- **J48** produces an interpretable decision tree. The probes named at each split node are directly actionable — one probe at a specific expression threshold separates cases from controls. These are directly citable in the paper.
+- **RandomForest** produces attribute importances — a ranked list of which probes contributed most across 100+ trees. The top-ranked probes are the shortlist candidates.
+- **The shortlist = J48 split nodes + RF top features + fold-change confirmation.** Only these two models produce the gene list that feeds Phase 6–7 (biological interpretation / LLM).
+
+---
+
+**Extracting the Weka shortlist — `generate_weka_biomarker_shortlist.py` (project root):**
+
+After running Weka on either ARFF file, save the J48 and RandomForest classifier output as `.txt` files (right-click result panel → Save output in Weka). Then run:
+
+```bash
+# Multivariate path (old — run Weka on data/femoral_head_necrosis/feature_selection/top100_features.arff)
+python3 generate_weka_biomarker_shortlist.py \
+    --j48   data/femoral_head_necrosis/weka_models/j48.txt \
+    --rf    data/femoral_head_necrosis/weka_models/randomforest.txt \
+    --ranks data/femoral_head_necrosis/feature_selection/gene_rankings.csv \
+    --out   data/femoral_head_necrosis/weka_biomarker_shortlist.csv
+
+# Univariate ANN path (new — run Weka on the univariate ARFF first, save outputs)
+python3 generate_weka_biomarker_shortlist.py \
+    --j48   data/weka/univariate/j48.txt \
+    --rf    data/weka/univariate/randomforest.txt \
+    --ranks omics_ml_pipeline/app/data/output/feature_selection/gene_rankings.csv \
+    --out   data/weka/univariate/weka_biomarker_shortlist.csv
+```
+
+**ARFF inputs to use:**
+| Path | What it is |
+|---|---|
+| `omics_ml_pipeline/app/data/output/feature_selection/univariate_ann/top100_features_univariate_ann.arff` | Primary — load this into Weka for the univariate path |
+| `omics_ml_pipeline/app/data/output/feature_selection/univariate_ann/top500_features_univariate_ann.arff` | Optional exploratory — broader probe set |
+| `data/femoral_head_necrosis/feature_selection/top100_features.arff` | Old multivariate path |
+
+**Output `weka_biomarker_shortlist.csv` columns:** `probe_id`, `gene_symbol`, `j48_split` (Y/N), `rf_importance`, `abs_fold_change`, `combined_score`
+
+Once the Weka shortlist CSV exists, run LLM interpretation against it directly:
+
+```bash
+python -m app.main --skip-pre --skip-train --llm \
+    --shortlist data/weka/univariate/weka_biomarker_shortlist.csv
+```
+
+This completes the fully connected univariate pipeline:
+
+```
+preprocessed_matrix.csv
+    → univariate ANN (screens 45k probes)
+    → top100.arff (Weka input)
+    → Weka J48 + RF
+    → generate_weka_biomarker_shortlist.py
+    → weka_biomarker_shortlist.csv
+    → python -m app.main --llm --shortlist ...
+    → LLM biological interpretation
+```
+
+---
+
 <details>
 <summary><strong>Weka screenshots — preprocessor &amp; all classifier results</strong> &nbsp;(click to expand)</summary>
 
