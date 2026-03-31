@@ -60,7 +60,7 @@ def run(config: dict) -> tuple[pd.DataFrame, pd.Series, pd.Series]:
     log.info(f"📥 Loading preprocessed matrix: {input_path}")
     df = load_preprocessed(input_path)
 
-    log.info(f"📊 Ranking probes by hybrid score (|FC| + |t-stat|), selecting top {top_n}")
+    log.info(f"📊 Ranking probes by multivariate score Z(|FC|) + Z(|t|), selecting top {top_n}")
     fc_ranking  = rank_by_fold_change(df, disease_label=disease_label, control_label=control_label)
     var_ranking = rank_by_variance(df)          # kept for volcano plot
     hybrid_df   = rank_by_hybrid_score(df, disease_label=disease_label, control_label=control_label)
@@ -78,7 +78,7 @@ def run(config: dict) -> tuple[pd.DataFrame, pd.Series, pd.Series]:
     ranked.index.name = "probe_id"
     ranked.insert(0, "probe_rank", range(1, len(ranked) + 1))
     ranked["gene_symbol"] = ranked.index.map(gene_map).fillna("---")
-    _col_order = ["probe_rank", "gene_symbol", "hybrid_score", "abs_fold_change",
+    _col_order = ["probe_rank", "gene_symbol", "multivariate_score", "abs_fold_change",
                   "log_fold_change", "t_stat", "p_value", "iqr", "variance",
                   "mean_sonfh", "mean_control", "probe_type"]
     rankings_path = config["paths"]["gene_rankings"]

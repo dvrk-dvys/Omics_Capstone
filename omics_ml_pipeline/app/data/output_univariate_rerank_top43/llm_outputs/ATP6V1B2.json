@@ -1,0 +1,144 @@
+{
+  "probe_id": "11716073_a_at",
+  "gene_symbol": "ATP6V1B2",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0331269329999968,
+  "abs_fold_change": 1.2044,
+  "univariate_score": 1.2056,
+  "probe_count": 1,
+  "probe_ids": "11716073_a_at",
+  "max_combined_score": 1.2056,
+  "mean_abs_fold_change": 1.2044,
+  "max_rf_importance": 0.0,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T00:23:35",
+  "interpretation": "ATP6V1B2 encodes a non-catalytic subunit of the V-type proton ATPase (V-ATPase), which is crucial for acidifying intracellular compartments and regulating pH levels in various cell types, including osteoclasts. This gene's expression is particularly relevant in bone resorption processes, as V-ATPase activity is essential for osteoclast function, which is directly linked to bone health and integrity. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the disruption of normal osteoclast activity due to steroid treatment can lead to impaired bone resorption and subsequent osteonecrosis. While the retrieved evidence does not directly link ATP6V1B2 to SONFH, its role in osteoclast function and bone metabolism suggests a potential involvement in the disease process. Therefore, ATP6V1B2 may serve as a candidate biomarker for early detection of SONFH, although the evidence is primarily inferred rather than directly established.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "ATP6V1B2 is implicated in osteoclast function, which is critical in the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "ATP6V1B2 (P21281). https://www.uniprot.org/uniprotkb/P21281",
+    "ATP6V1B2 \u2014 ATP6V1B2. https://platform.opentargets.org/target/ENSG00000147416",
+    "ATP6V1B2 \u2194 Zimmermann-Laband syndrome 2. https://platform.opentargets.org/target/ENSG00000147416/associations",
+    "ATP6V1B2 \u2194 Autosomal dominant deafness-onychodystrophy syndrome. https://platform.opentargets.org/target/ENSG00000147416/associations",
+    "ATP6V1B2 \u2194 autosomal dominant deafness - onychodystrophy syndrome. https://platform.opentargets.org/target/ENSG00000147416/associations",
+    "ATP6V1B2 \u2194 Zimmermann-Laband syndrome. https://platform.opentargets.org/target/ENSG00000147416/associations",
+    "ATP6V1B2. https://en.wikipedia.org/wiki/ATP6V1B2",
+    "V-ATPase. https://en.wikipedia.org/wiki/V-ATPase"
+  ],
+  "token_usage": {
+    "prompt_tokens": 6482,
+    "completion_tokens": 284,
+    "total_tokens": 6766,
+    "estimated_cost_usd": 0.001143
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P21281",
+          "title": "ATP6V1B2 (P21281)",
+          "url": "https://www.uniprot.org/uniprotkb/P21281",
+          "text": "Protein: V-type proton ATPase subunit B, brain isoform\nFunction: Non-catalytic subunit of the V1 complex of vacuolar(H+)-ATPase (V-ATPase), a multisubunit enzyme composed of a peripheral complex (V1) that hydrolyzes ATP and a membrane integral complex (V0) that translocates protons (PubMed:33065002). V-ATPase is responsible for acidifying and maintaining the pH of intracellular compartments and in some cell types, is targeted to the plasma membrane, where it is responsible for acidifying the extracellular environment (PubMed:32001091). In renal intercalated cells, can partially compensate the lack of ATP6V1B1 and mediate secretion of protons (H+) into the urine under base-line conditions but not in conditions of acid load (By similarity)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000147416::function",
+          "title": "ATP6V1B2 \u2014 ATP6V1B2",
+          "url": "https://platform.opentargets.org/target/ENSG00000147416",
+          "text": "Function: Non-catalytic subunit of the V1 complex of vacuolar(H+)- ATPase (V-ATPase), a multisubunit enzyme composed of a peripheral complex (V1) that hydrolyzes ATP and a membrane integral complex (V0) that translocates protons (PubMed:33065002). V-ATPase is responsible for acidifying and maintaining the pH of intracellular compartments and in some cell types, is targeted to the plasma membrane, where it is responsible for acidifying the extracellular environment (PubMed:32001091). In renal intercalated cells, can partially compensate the lack of ATP6V1B1 and mediate secretion of protons (H+) into the urine under base-line conditions but not in conditions of acid load (By similarity).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000147416::MONDO_0014646",
+          "title": "ATP6V1B2 \u2194 Zimmermann-Laband syndrome 2",
+          "url": "https://platform.opentargets.org/target/ENSG00000147416/associations",
+          "text": "Disease: Zimmermann-Laband syndrome 2\nDescription: Any Zimmermann-Laband syndrome in which the cause of the disease is a mutation in the ATP6V1B2 gene.\nAssociation score: 0.717",
+          "cos_sim_score": 0.7173813048839504,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000147416::Orphanet_79499",
+          "title": "ATP6V1B2 \u2194 Autosomal dominant deafness-onychodystrophy syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000147416/associations",
+          "text": "Disease: Autosomal dominant deafness-onychodystrophy syndrome\nDescription: Dominant deafness-onychodystrophy (DDOD) syndrome is a multiple congenital anomalies syndrome characterized by congenital hearing impairment, small or absent nails on the hands and feet, and small terminal phalanges.\nAssociation score: 0.668",
+          "cos_sim_score": 0.6681395935046149,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000147416::MONDO_0007420",
+          "title": "ATP6V1B2 \u2194 autosomal dominant deafness - onychodystrophy syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000147416/associations",
+          "text": "Disease: autosomal dominant deafness - onychodystrophy syndrome\nDescription: Dominant deafness-onychodystrophy (DDOD) syndrome is a multiple congenital anomalies syndrome characterized by congenital hearing impairment, small or absent nails on the hands and feet, and small terminal phalanges.\nAssociation score: 0.645",
+          "cos_sim_score": 0.6454054219055758,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000147416::MONDO_0000200",
+          "title": "ATP6V1B2 \u2194 Zimmermann-Laband syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000147416/associations",
+          "text": "Disease: Zimmermann-Laband syndrome\nDescription: A rare disorder characterized by gingival fibromatosis, coarse facial appearance, and absence or hypoplasia of nails or terminal phalanges of hands and feet.\nAssociation score: 0.596",
+          "cos_sim_score": 0.5962017471929469,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::ATP6V1B2",
+          "title": "ATP6V1B2",
+          "url": "https://en.wikipedia.org/wiki/ATP6V1B2",
+          "text": "V-type proton ATPase subunit B, brain isoform is an enzyme that in humans is encoded by the ATP6V1B2 gene.\nThis gene encodes a component of vacuolar ATPase (V-ATPase), a multisubunit enzyme that mediates acidification of eukaryotic intracellular organelles. V-ATPase dependent organelle acidification is necessary for such intracellular processes as protein sorting, zymogen activation, receptor-mediated endocytosis, and synaptic vesicle proton gradient generation. V-ATPase is composed of a cytosolic V1 domain and a transmembrane V0 domain. The V1 domain consists of three A, three B, and two G subunits, as well as a C, D, E, F, and H subunit. The V1 domain contains the ATP catalytic site. The protein encoded by this gene is one of two V1 domain B subunit isoforms and is the only B isoform highly expressed in osteoclasts.\nIn melanocytic cells ATP6V1B2 gene expression may be regulated by MITF.\n\nReferences\nExternal links\nHuman ATP6V1B2 genome location and ATP6V1B2 gene details page  in the UCSC Genome Browser.\n\n\n== Further reading ==",
+          "cos_sim_score": 0.6458438038825989,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::V-ATPase",
+          "title": "V-ATPase",
+          "url": "https://en.wikipedia.org/wiki/V-ATPase",
+          "text": "Vacuolar-type ATPase (V-ATPase) is a highly conserved evolutionarily ancient enzyme with remarkably diverse functions in eukaryotic organisms. V-ATPases acidify a wide array of intracellular organelles and pump protons across the plasma membranes of numerous cell types. V-ATPases couple the energy of ATP hydrolysis to proton transport across intracellular and plasma membranes of eukaryotic cells. It is generally seen as the polar opposite of ATP synthase because ATP synthase is a proton channel that uses the energy from a proton gradient to produce ATP. V-ATPase however, is a proton pump that uses the energy from ATP hydrolysis to produce a proton gradient.\nThe Archaea-type ATPase (A-ATPase) is a related group of ATPases found in archaea that often work as an ATP synthase. It forms a clade V/A-ATPase with V-ATPase. Most members of either group shuttle protons (H+), but a few members have evolved to use sodium ions (Na+) instead.\n\nRoles played by V-ATPases\nV-ATPases are found within the membranes of many organelles, such as endosomes, lysosomes, and secretory vesicles, where they play a variety of roles crucial for the function of these organelles. For example, the proton gradient across the yeast vacuolar membrane generated by V-ATPases drives calcium uptake into the vacuole through an H+/Ca2+ antiporter system. In synaptic transmission in neuronal cells, V-ATPase acidifies synaptic vesicles. Norepinephrine enters vesicles by V-ATPase .\nV-ATPases are also found in the plasma membranes of a wide variety of cells such as intercalated cells of the kidney, osteoclasts (bone resorbing cells), macrophages, neutrophils, sperm, midgut cells of insects, and certain tumor cells. Plasma membrane V-ATPases are involved in processes such as pH homeostasis, coupled transport, and tumor metastasis. V-ATPases in the acrosomal membrane of sperm acidify the acrosome. This acidification activates proteases required to drill through the plasma membrane of the egg. V-ATPases in the osteoclast plasma membrane pump protons onto the bone surface, which is necessary for bone resorption. In the intercalated cells of the kidney, V-ATPases pump protons into the urine, allowing for bicarbonate reabsorption into the blood. In addition, other variety of biological processes, such as toxin delivery, viral entry, membrane targeting, apoptosis, regulation of cytoplasmic pH, proteolytic process, and acidification of intracellular systems, are important roles of V-ATPases.\nV-ATPases also play a significant role in cell morphogenesis development. Disruption of the gene vma-1 gene which encodes for the catalytic subunit (A) of the enzyme severely impairs the rate of growth, differentiation, and the capacity to produce viable spores in fungus Neurospora crassa.",
+          "cos_sim_score": 0.521003007888794,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::V-ATPase",
+          "title": "V-ATPase",
+          "url": "https://en.wikipedia.org/wiki/V-ATPase",
+          "text": "V1\nThe V1 domain of the V-ATPase is the site of ATP hydrolysis.  Unlike Vo, the V1 domain is hydrophilic. This soluble domain consists of a hexamer of alternating A and B subunits, a central rotor D, peripheral stators G and E, and regulatory subunits C and H.  Hydrolysis of ATP drives a conformational change in the six A|B interfaces and with it rotation of the central rotor D.  Unlike with the ATP synthase, the V1 domain is not an active ATPase when dissociated.\n\nSubunit C\nV-ATPase (Vacuolar-ATPase) C represents the C terminal subunit that is part of the V1 complex, and is localised to the interface between the V1 and Vo complexes.\n\nSubunit C function\nThe C subunit plays an essential role in controlling the assembly of V-ATPase, acting as a flexible stator that holds together the catalytic (V1) and membrane (VO) sectors of the enzyme . The release of subunit C from the ATPase complex results in the dissociation of the V1 and Vo subcomplexes, which is an important mechanism in controlling V-ATPase activity in cells. Essentially, by creating a high electrochemical gradient and low pH, this powers the enzyme to create more ATP.\n\nSubunits E, G\nThese related subunits make up the stalk(s) of A/V-ATPase. They are important in assembly, and may function as pushrods in activity. E has a cap to connect to A/B, while G does not. They likely evolved from a single protein by gene duplication.\n\nSubunit H\nSubunit H, is only involved in activity and not in assembly. This subunit also acts as an inhibitor of free V1 subunits; it stops ATP hydrolysis when V1 and Vo are dissociated.\n\nVo\nThe Vo domain is responsible for proton translocation.  Unlike the F-type ATP synthase, the Vo domain generally transports protons against their own concentration gradient.  Rotation of the Vo domain transports the protons in movement coordinated with the V1 domain, which is responsible for ATP hydrolysis. The Vo domain is hydrophobic and composed of several dissociable subunits. These subunits are present in the Vo domain to make this a functional proton translocase; they are described below.\n\nSubunit a/I\nThe 116kDa subunit (or subunit a) and subunit I are found in the Vo or Ao complex of V- or A-ATPases, respectively. The 116kDa subunit is a transmembrane glycoprotein required for the assembly and proton transport activity of the ATPase complex. Several isoforms of the 116kDa subunit exist, providing a potential role in the differential targeting and regulation of the V-ATPase for specific organelles.\nThe function of the 116-kDa subunit is not defined, but its predicted structure consists of 6\u20138 transmembranous sectors, suggesting that it may function similar to subunit a of FO.\n\nSubunit d/C\nSubunit d in V-ATPases, called subunit C in A-ATPases, is a part of the Vo complex. They fit onto the middle of the c ring, so are thought to function as a rotor. There are two versions of this subunit in eukaryotes, d/d1 and d2.\nIn mammals, d1 (ATP6V0D1) is the ubiquitously expressed version and d2 (ATP6V0D2) is expressed in specific cell types only.\n\nSubunit c\nSimilar to the F-type ATP synthase, the transmembrane region of the V-ATPase includes a ring of membrane-spanning subunits that are primarily responsible for proton translocation.  Dissimilar from the F-type ATP synthase, however, the V-ATPase has multiple related subunits in the c-ring; in fungi such as yeast there are three related subunits (of varied stoichiometry) and in most other eukaryotes there are two.",
+          "cos_sim_score": 0.520823061466217,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::V-ATPase",
+          "title": "V-ATPase",
+          "url": "https://en.wikipedia.org/wiki/V-ATPase",
+          "text": "Subunit c\nSimilar to the F-type ATP synthase, the transmembrane region of the V-ATPase includes a ring of membrane-spanning subunits that are primarily responsible for proton translocation.  Dissimilar from the F-type ATP synthase, however, the V-ATPase has multiple related subunits in the c-ring; in fungi such as yeast there are three related subunits (of varied stoichiometry) and in most other eukaryotes there are two.\n\nV-ATPase assembly\nYeast V-ATPases fail to assemble when any of the genes that encode subunits are deleted except for subunits H and c\". Without subunit H, the assembled V-ATPase is not active, and the loss of the c\" subunit results in uncoupling of enzymatic activity.\nThe precise mechanisms by which V-ATPases assembly are still controversial, with evidence suggesting two different possibilities. Mutational analysis and in vitro assays have shown that preassembled Vo and V1 domains can combine to form one complex in a process called independent assembly. Support for independent assembly includes the findings that the assembled Vo domain can be found at the vacuole in the absence of the V1 domain, whereas free V1 domains can be found in the cytoplasm and not at the vacuole. In contrast, in vivo pulse-chase experiments have revealed early interactions between Vo and V1 subunits, to be specific, the a and B subunits, suggesting that subunits are added in a step-wise fashion to form a single complex in a concerted assembly process.\n\nV-ATPase evolution\nA relatively new technique called ancestral gene resurrection has shed new light on the evolutionary history of the V-ATPase. It has been shown how the V-ATPase structure of the ancestral form consisting of two different proteins evolves into the fungi version with three different proteins. The V-Type ATPase is similar to the archaeal (so called) A-Type ATP synthase, a fact that supports an archaeal origin of eukaryotes (like Eocyte Hypothesis, see also Lokiarchaeota). The exceptional occurrence of some lineages of archaea with F-type and of some lineages of bacteria with A-type ATPase respectively is regarded as a result of horizontal gene transfer.\n\nRegulation of V-ATPase activity\nV-ATPases are known to be specifically inhibited by macrolide antibiotics, such as concanamycin (CCA) and balifomycin A1. In vivo regulation of V-ATPase activity is accomplished by reversible dissociation of the V1 domain from the Vo domain. After initial assembly, both the insect Manduca sexta and yeast V-ATPases can reversibly disassemble into free Vo and V1 domains after a 2- to 5-minute deprivation of glucose. Reversible disassembly may be a general mechanism of regulating V-ATPase activity, since it exists in yeast and insects. Reassembly is proposed to be aided by a complex termed RAVE (regulator of H+-ATPase of vacuolar and endosomal membranes). Disassembly and reassembly of V-ATPases does not require new protein synthesis but does need an intact microtubular network.\n\nHuman diseases\nOsteopetrosis\nOsteopetrosis is a generic name that represents a group of heritable conditions in which there is a defect in osteoclastic bone resorption. Both dominant and recessive osteopetrosis occur in humans. Autosomal dominant osteopetrosis shows mild symptoms in adults experiencing frequent bone fractures due to brittle bones. A more severe form of osteopetrosis is termed autosomal recessive infantile malignant osteopetrosis. Three genes that are responsible for recessive osteopetrosis in humans have been identified. Their products are all directly involved in the proton generation and secretion pathways that are essential for bone resorption. One gene is carbonic anhydrase II (CAII), which, when mutated, causes osteopetrosis with renal tubular acidosis (type 3). Mutations to the chloride channel CLC-7 gene also lead to both dominant and recessive osteopetrosis.  Approximately 50% of patients with recessive infantile malignant osteopetrosis have mutations to the a3 subunit isoform of V-ATPase. In humans, 26 mutations have been identified in V-ATPase subunit isoform a3, found in osteoclasts, that result in the bone disease autosomal recessive osteopetrosis.",
+          "cos_sim_score": 0.49681854248046875,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::V-ATPase",
+          "title": "V-ATPase",
+          "url": "https://en.wikipedia.org/wiki/V-ATPase",
+          "text": "Structure\nThe yeast V-ATPase is the best characterized. There are at least thirteen subunits identified to form a functional V-ATPase complex, which consists of two domains. The subunits belong to either the Vo domain (membrane associated subunits, lowercase letters on the figure) or the V1 domain (peripherally associated subunits, uppercase letters on the figure).\nThe V1 includes eight subunits, A-H, with three copies of the catalytic A and B subunits, three copies of the stator subunits E and G, and one copy of the regulatory C and H subunits. In addition, the V1 domain also contains the subunits D and F, which form a central rotor axle. The V1 domain contains tissue-specific subunit isoforms including B, C, E, and G. Mutations to the B1 isoform result in the human disease distal renal tubular acidosis and sensorineural deafness.\nThe Vo domain contains six different subunits, a, d, c, c', c\", and e, with the stoichiometry of the c ring still a matter of debate with a decamer being postulated for the tobacco hornworm (Manduca sexta) V-ATPase. The mammalian Vo domain contains tissue-specific isoforms for subunits a and d, while yeast V-ATPase contains two organelle-specific subunit isoforms of a, Vph1p, and Stv1p. Mutations to the a3 isoform result in the human disease infantile malignant osteopetrosis, and mutations to the a4 isoform result in distal renal tubular acidosis, in some cases with sensorineural deafness.\nThe V1 domain is responsible for ATP hydrolysis, whereas the Vo domain is responsible for proton translocation. ATP hydrolysis at the catalytic nucleotide binding sites on subunit A drives rotation of a central stalk composed of subunits D and F, which in turn drives rotation of a barrel of c subunits relative to the a subunit. The complex structure of the V-ATPase has been revealed through the structure of the M. Sexta and Yeast complexes that were solved by single-particle cryo-EM and negative staining, respectively. These structures have revealed that the V-ATPase has a 3-stator network, linked by a collar of density formed by the C, H, and a subunits, which, while dividing the V1 and Vo domains, make no interactions with the central rotor axle formed by the F, D, and d subunits. Rotation of this central rotor axle caused by the hydrolysis of ATP within the catalytic AB domains results in the movement of the barrel of c subunits past the a subunit, which drives proton transport across the membrane. A stoichiometry of two protons translocated for each ATP hydrolyzed has been proposed by Johnson.\nIn addition to the structural subunits of yeast V-ATPase, associated proteins that are necessary for assembly have been identified. These associated proteins are essential for Vo domain assembly and are termed Vma12p, Vma21p, and Vma22p. Two of the three proteins, Vma12p and Vma22p, form a complex that binds transiently to Vph1p (subunit a) to aid its assembly and maturation. Vma21p coordinates assembly of the Vo subunits as well as escorting the Vo domain into vesicles for transport to the Golgi.\n\nV1\nThe V1 domain of the V-ATPase is the site of ATP hydrolysis.  Unlike Vo, the V1 domain is hydrophilic. This soluble domain consists of a hexamer of alternating A and B subunits, a central rotor D, peripheral stators G and E, and regulatory subunits C and H.  Hydrolysis of ATP drives a conformational change in the six A|B interfaces and with it rotation of the central rotor D.  Unlike with the ATP synthase, the V1 domain is not an active ATPase when dissociated.\n\nSubunit C\nV-ATPase (Vacuolar-ATPase) C represents the C terminal subunit that is part of the V1 complex, and is localised to the interface between the V1 and Vo complexes.",
+          "cos_sim_score": 0.4764867424964905,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

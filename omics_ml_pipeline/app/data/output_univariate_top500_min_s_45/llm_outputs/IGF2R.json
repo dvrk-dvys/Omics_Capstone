@@ -1,0 +1,146 @@
+{
+  "probe_id": "11716128_at",
+  "gene_symbol": "IGF2R",
+  "rf_importance": 0.0101,
+  "selection_freq": 0.8,
+  "abs_fold_change": 1.1746576666666702,
+  "combined_score": 0.5155,
+  "probe_count": 1,
+  "probe_ids": "11716128_at",
+  "max_combined_score": 0.5155,
+  "mean_abs_fold_change": 1.1747,
+  "max_rf_importance": 0.0101,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-03-31T20:04:26",
+  "interpretation": "The IGF2R gene encodes the insulin-like growth factor 2 receptor, which plays a crucial role in mediating the transport of lysosomal enzymes and regulating the availability of IGF2, a growth factor involved in cellular growth and development. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), dysregulation of growth factors like IGF2 may contribute to the pathological processes leading to bone necrosis, particularly following steroid treatment. While the retrieved evidence does not directly link IGF2R to SONFH, its involvement in lysosomal enzyme transport and growth factor regulation suggests a potential indirect role in bone health and disease progression. Therefore, the evidence is rated as Tier 4 due to the lack of direct association with SONFH, leading to a low confidence in its relevance as a biomarker. However, the biological functions of IGF2R imply that it could be a candidate for further investigation as a biomarker for early detection of SONFH.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "IGF2R may play a role in the pathological processes of Steroid-Induced Osteonecrosis of the Femoral Head through its regulation of growth factors and lysosomal enzyme transport.",
+  "citations": [
+    "IGF2R (P11717). https://www.uniprot.org/uniprotkb/P11717",
+    "IGF2R \u2014 IGF2R. https://platform.opentargets.org/target/ENSG00000197081",
+    "IGF2R \u2194 coronary artery disease. https://platform.opentargets.org/target/ENSG00000197081/associations",
+    "IGF2R \u2194 hepatocellular carcinoma. https://platform.opentargets.org/target/ENSG00000197081/associations",
+    "IGF2R \u2194 Hypercholesterolemia. https://platform.opentargets.org/target/ENSG00000197081/associations",
+    "IGF2R \u2194 heart disease. https://platform.opentargets.org/target/ENSG00000197081/associations",
+    "Insulin-like growth factor 2 receptor. https://en.wikipedia.org/wiki/Insulin-like_growth_factor_2_receptor",
+    "Insulin-like growth factor. https://en.wikipedia.org/wiki/Insulin-like_growth_factor",
+    "Epigenetics of human development. https://en.wikipedia.org/wiki/Epigenetics_of_human_development",
+    "Denise P. Barlow. https://en.wikipedia.org/wiki/Denise_P._Barlow"
+  ],
+  "token_usage": {
+    "prompt_tokens": 6960,
+    "completion_tokens": 278,
+    "total_tokens": 7238,
+    "estimated_cost_usd": 0.001211
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P11717",
+          "title": "IGF2R (P11717)",
+          "url": "https://www.uniprot.org/uniprotkb/P11717",
+          "text": "Protein: Cation-independent mannose-6-phosphate receptor\nFunction: Mediates the transport of phosphorylated lysosomal enzymes from the Golgi complex and the cell surface to lysosomes (PubMed:18817523, PubMed:2963003). Lysosomal enzymes bearing phosphomannosyl residues bind specifically to mannose-6-phosphate receptors in the Golgi apparatus and the resulting receptor-ligand complex is transported to an acidic prelysosomal compartment where the low pH mediates the dissociation of the complex (PubMed:18817523, PubMed:2963003). The receptor is then recycled back to the Golgi for another round of trafficking through its binding to the retromer (PubMed:18817523). This receptor also binds IGF2 (PubMed:18046459). Acts as a positive regulator of T-cell coactivation by binding DPP4 (PubMed:10900005)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000197081::function",
+          "title": "IGF2R \u2014 IGF2R",
+          "url": "https://platform.opentargets.org/target/ENSG00000197081",
+          "text": "Function: Mediates the transport of phosphorylated lysosomal enzymes from the Golgi complex and the cell surface to lysosomes (PubMed:18817523, PubMed:2963003). Lysosomal enzymes bearing phosphomannosyl residues bind specifically to mannose-6-phosphate receptors in the Golgi apparatus and the resulting receptor-ligand complex is transported to an acidic prelysosomal compartment where the low pH mediates the dissociation of the complex (PubMed:18817523, PubMed:2963003). The receptor is then recycled back to the Golgi for another round of trafficking through its binding to the retromer (PubMed:18817523). This receptor also binds IGF2 (PubMed:18046459). Acts as a positive regulator of T-cell coactivation by binding DPP4 (PubMed:10900005).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197081::EFO_0001645",
+          "title": "IGF2R \u2194 coronary artery disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000197081/associations",
+          "text": "Disease: coronary artery disease\nDescription: Thickening and loss of elasticity of the CORONARY ARTERIES, leading to progressive arterial insufficiency (CORONARY DISEASE).\nAssociation score: 0.511",
+          "cos_sim_score": 0.511249370339317,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197081::EFO_0000182",
+          "title": "IGF2R \u2194 hepatocellular carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000197081/associations",
+          "text": "Disease: hepatocellular carcinoma\nDescription: A malignant tumor that arises from hepatocytes. Hepatocellular carcinoma is relatively rare in the United States but very common in all African countries south of the Sahara and in Southeast Asia. Most cases are seen in patients over the age of 50 years, but this tumor can also occur in younger individuals and even in children. Hepatocellular carcinoma is more common in males than females and is associated with hepatitis B, hepatitis C, chronic alcohol abuse and cirrhosis. Serum elevation of alpha-fetoprotein occurs in a large percentage of patients with hepatocellular carcinoma. Grossly, hepatocellular carcinoma may present as a single mass, as multiple nodules, or as diffuse liver involvement. Microscopically, there is a wide range of differentiation from tumor to tumor (well differentiated to poorly differentiated tumors). Hepatocellular carcinomas quickly metastasize to regional lymph nodes and lung. The overall median survival of untreated liver cell carcinoma is about 4 months. The most effective treatment of hepatocellular carcinoma is complete resection of the tumor. Lately, an increasing number of tumors have been treated with liver transplantation.\nAssociation score: 0.498",
+          "cos_sim_score": 0.4976242296901386,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197081::HP_0003124",
+          "title": "IGF2R \u2194 Hypercholesterolemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000197081/associations",
+          "text": "Disease: Hypercholesterolemia\nDescription: An increased concentration of cholesterol in the blood.\nAssociation score: 0.448",
+          "cos_sim_score": 0.44791963066009366,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197081::EFO_0003777",
+          "title": "IGF2R \u2194 heart disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000197081/associations",
+          "text": "Disease: heart disease\nDescription: Pathological conditions involving the HEART including its structural and functional abnormalities.\nAssociation score: 0.395",
+          "cos_sim_score": 0.3952455779094724,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Insulin-like growth factor 2 receptor",
+          "title": "Insulin-like growth factor 2 receptor",
+          "url": "https://en.wikipedia.org/wiki/Insulin-like_growth_factor_2_receptor",
+          "text": "Insulin-like growth factor 2 receptor (IGF2R), also called the cation-independent mannose-6-phosphate receptor (CI-MPR) is a protein that in humans is encoded by the IGF2R gene. IGF2R is a multifunctional protein receptor that binds insulin-like growth factor 2 (IGF2) at the cell surface and mannose-6-phosphate (M6P)-tagged proteins in the trans-Golgi network.\n\nStructure\nThe structure of the IGF2R is a type I transmembrane protein (that is, it has a single transmembrane domain with its C-terminus on the cytoplasmic side of lipid membranes) with a large extracellular/lumenal domain and a relatively short cytoplasmic tail. The extracellular domain consists of a small region homologous to the collagen-binding domain of fibronectin and of fifteen repeats of approximately 147 amino acid residues. Each of these repeats is homologous to the 157-residue extracytoplasmic domain of the mannose 6-phosphate receptor. Binding to IGF2 is mediated through one of the repeats, while two different repeats are responsible for binding to mannose-6-phosphate. The IGF2R is approximately 300 kDa in size; it appears to exist and function as a dimer.\n\nFunction\nIGF2R functions to clear IGF2 from the cell surface to attenuate signalling, and to transport lysosomal acid hydrolase precursors from the Golgi apparatus to the lysosome. After binding IGF2 at the cell surface, IGF2Rs accumulate in forming clathrin-coated vesicles and are internalized. In the lumen of the trans-Golgi network, the IGF2R binds M6P-tagged cargo. The IGF2Rs (bound to their cargo) are recognized by the GGA family of clathrin adaptor proteins and accumulate in forming clathrin-coated vesicles. IGF2Rs from both the cell surface and the Golgi are trafficked to the early endosome where, in the relatively low pH environment of the endosome, the IGF2Rs release their cargo. The IGF2Rs are recycled back to the Golgi by the retromer complex, again by way of interaction with GGAs and vesicles. The cargo proteins are then trafficked to the lysosome via the late endosome independently of the IGF2Rs.\n\nInteractions\nInsulin-like growth factor 2 receptor has been shown to interact with M6PRBP1.\n\nEvolution\nThe insulin-like growth factor 2 receptor function evolved from the cation-independent mannose 6-phosphate receptor and is first seen in Monotremes. The IGF-2 binding site was likely acquired fortuitously with the generation of an exonic splice site enhancer cluster in exon 34, presumably necessitated by several kilobases of repeat element insertions in the preceding intron. A six-fold affinity maturation then followed during therian evolution, coincident with the onset of imprinting and consistent with the theory of parental conflict.\n\nSee also\nCluster of differentiation\nIGF-1 Receptor\nMannose 6-phosphate receptor\n\nReferences\nFurther reading\nExternal links\nInsulin-Like-Growth-Factor+II+Receptor at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.5887435078620911,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Insulin-like growth factor",
+          "title": "Insulin-like growth factor",
+          "url": "https://en.wikipedia.org/wiki/Insulin-like_growth_factor",
+          "text": "The insulin-like growth factors (IGFs) are proteins with high sequence similarity to insulin. IGFs are part of a complex system that cells use to communicate with their physiologic environment. This complex system (often referred to as the IGF \"axis\") consists of two cell-surface receptors (IGF1R and IGF2R), two ligands (IGF-1 and IGF-2), a family of seven high-affinity IGF-binding proteins (IGFBP1 to IGFBP7), as well as associated IGFBP degrading enzymes, referred to collectively as proteases.\n\nIGF1/GH axis\nThe IGF \"axis\" is also commonly referred to as the Growth Hormone/IGF-1 Axis. Insulin-like growth factor 1 (commonly referred to as IGF-1 or at times using Roman numerals as IGF-I) is mainly secreted by the liver as a result of stimulation by growth hormone (GH). IGF-1 is important for both the regulation of normal physiology, as well as a number of pathological states, including cancer. The IGF axis has been shown to play roles in the promotion of cell proliferation and the inhibition of cell death (apoptosis). \nInsulin-like growth factor 2 (IGF-2, at times IGF-II) is thought to be a primary growth factor required for early development while IGF-1 expression is required for achieving maximal growth. Gene knockout studies in mice have confirmed this, though other animals are likely to regulate the expression of these genes in distinct ways. While IGF-2 may be primarily fetal in action it is also essential for development and function of organs such as the brain, liver, and kidney.\nFactors that are thought to cause variation in the levels of GH and IGF-1 in the circulation include an individual's genetic make-up, the time of day, age, sex, exercise status, stress levels, nutrition level, body mass index (BMI), disease state, race, estrogen status, and xenobiotic intake.\nIGF-1 has an involvement in regulating neural development including neurogenesis, myelination, synaptogenesis, and dendritic branching and neuroprotection after neuronal damage. Increased serum levels of IGF-I in children have been associated with higher IQ.\nIGF-1 shapes the development of the cochlea through controlling apoptosis. Its deficit can cause hearing loss. Serum level of it also underlies a correlation between short height and reduced hearing abilities particularly around 3\u20135 years of age, and at age 18 (late puberty).\n\nIGF receptors\nThe IGFs are known to bind the IGF-1 receptor, the insulin receptor, the IGF-2 receptor, the insulin-related receptor and possibly other receptors.  The IGF-1 receptor is the \"physiological\" receptor. IGF-1 binds to it at significantly higher affinity than it binds the insulin receptor.  Like the insulin receptor, the IGF-1 receptor is a receptor tyrosine kinase\u2014meaning the receptor signals by causing the addition of a phosphate molecule on particular tyrosines. The IGF-2 receptor only binds IGF-2 and acts as a \"clearance receptor\"\u2014it activates no intracellular signaling pathways, functioning only as an IGF-2 sequestering agent and preventing IGF-2 signaling.\n\nOrgans and tissues affected by IGF-1\nSince many distinct tissue types express the IGF-1 receptor, IGF-1's effects are diverse.   It acts as a neurotrophic factor, inducing the survival of neurons.  It may catalyse skeletal muscle hypertrophy, by inducing protein synthesis, and by blocking muscle atrophy.  It is protective for cartilage cells, and is associated with activation of osteocytes, and thus may be an anabolic factor for bone.   Since at high concentrations it is capable of activating the insulin receptor, it can also complement for the effects of insulin. Receptors for IGF-1 are found in vascular smooth muscle, while typical receptors for insulin are not found in vascular smooth muscle.",
+          "cos_sim_score": 0.5045981407165527,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Epigenetics of human development",
+          "title": "Epigenetics of human development",
+          "url": "https://en.wikipedia.org/wiki/Epigenetics_of_human_development",
+          "text": "Igf2r regulation\nThe lncRNA Airn is an lncRNA that regulates Igf2r expression. Igf2r is a gene which expresses a receptor for insulin-like growth factor 2, and assists in lysosomal enzyme transport, activation of growth factors, and degradation of insulin-like growth factor 2. This lncRNA is an RNA modified by imprinting, leading to Airn expression in the paternal allele, but not in the maternal allele. Airn acts by cis-acting silencing of the Igf2r region through overlapping the Igf2r gene through the antisense transcript encoded by Airn. Airn is silenced in the maternal allele through Igf2r transcription. In the brain, however, Igf2r alleles are both expressed due to Airn mediation being repressed in neuronal cells.\n\nRole of PRC2\nPRC2 (Polycomb repressive complex 2) is a complex of proteins that repress chromatin by histone methylation and by working to recruit other proteins that help further the repression of chromatin. The structure of this complex and group of mechanisms used by this complex are highly conserved across various eukaryotic species. Very few species have duplicates of these complexes in the genome beyond PRC1 and PRC2.\n\nRole of lncRNAs\nLong non-coding RNAs, or lncRNAs, are RNA transcripts produced by RNA polymerase II that are not translated but participate in the regulation of gene expression. Long non-coding RNAs are used in various epigenetic processes in development, including the regulation of Hox genes, as well as in the creation of Barr bodies.\n\nRecruitment by lncRNA\nRepressive function\nPRC2 is a multi-protein complex composed of four major subunits (E2H1/2, SUZ12, EED, and RbAp46/48) and three variable subunits (AEBP2, JARID2, and PCLs).  The three variable subunits are used for catalysis of enzymatic reactions or binding to specific regions, not for repression of genes or chromatin. Similar to a zinc finger, AEBP2 docks onto the major grooves of DNA to assist in binding. PRC2 is usually recruited by other proteins or lncRNa and then catalyzes the trimethylation of lysine 27 of histone 3 tails (H3K27me3). This methylation is thought to cause repression by steric hindrance of RNA polymerase II. Even though the polymerase is not prevented from binding, the polymerase, after beginning transcription, will pause at H3K27me3 marks. The short transcript produced by the pausing of the polymerase often recruits regulatory complexes, like PRC2. Thus, PRC2 represses by two mechanisms: by directly altering the structure of the chromatin through methylation or by binding of transcripts.\n\nPhosphorylation\nPRC2 has been shown in many experiments to be necessary for the proper formation of organs, starting with the maintenance of cellular differentiation and silencing of pluripotency genes.  The exact mechanism in early embryogenesis that induces cells to differentiate is still unclear, but this mechanism has been closely linked to protein kinase A (PKA). Since the PRC2 complex has sites able to be phosphorylated and has differentiated behavior based on the level of phosphorylation, a logical hypothesis can be made that PKA affects PRC2 behavior and may phosphorylate PRC2, activating the protein and starting the methylation cascade that silences genes.\n\nEarly cell differentiation\nExperimentally, PRC2 has been shown to be highly enriched at the Hox genes and near developmental gene regulators, resulting in their methylation. Some time after the second or third cleavage event, PRC2 begins to bind to these developmental genes, even though they have the markers for highly active genes like H3K9me3. This has been described as the \"leaking\" of PRC2 binding. Variable binding will cause some genes to be silenced before others, causing differentiation, but this is likely regulated by the organism. What causes the specificity of cell differentiation is still unknown but some hypotheses say it largely has to do with the cell environment and the \"awareness\" of the cells to each other, considering all cells in this stage contain identical genomes at this point. The maintained cell lines after this differentiation event are largely dependent on PRC2. Without it, pluripotency genes will still be active, causing the cells to be unstable and reversion back to a stem cell-like stage where the cell would have to undergo differentiation again in order to return to its normal state. Properly differentiated cells have silenced pluripotency genes.",
+          "cos_sim_score": 0.4921206831932068,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Insulin-like growth factor",
+          "title": "Insulin-like growth factor",
+          "url": "https://en.wikipedia.org/wiki/Insulin-like_growth_factor",
+          "text": "Organs and tissues affected by IGF-1\nSince many distinct tissue types express the IGF-1 receptor, IGF-1's effects are diverse.   It acts as a neurotrophic factor, inducing the survival of neurons.  It may catalyse skeletal muscle hypertrophy, by inducing protein synthesis, and by blocking muscle atrophy.  It is protective for cartilage cells, and is associated with activation of osteocytes, and thus may be an anabolic factor for bone.   Since at high concentrations it is capable of activating the insulin receptor, it can also complement for the effects of insulin. Receptors for IGF-1 are found in vascular smooth muscle, while typical receptors for insulin are not found in vascular smooth muscle.\n\nIGF-binding proteins\nIGF-1 and IGF-2 are regulated by a family of proteins known as the IGF-binding proteins.  These proteins help to modulate IGF action in complex ways that involve both inhibiting IGF action by preventing binding to the IGF-1 receptor as well as promoting IGF action possibly through aiding in delivery to the receptor and increasing IGF half-life.  Currently, there are seven characterized IGF Binding Proteins (IGFBP1 to IGFBP7).  There is currently significant data suggesting that IGFBPs play important roles in addition to their ability to regulate IGFs.\nIGF-1 and IGFBP-3 are GH dependent, whereas IGFBP-1 is insulin regulated.\nIGFBP-1 production from the liver is significantly elevated during insulinopenia while serum levels of bioactive IGF-1 is increased by insulin.\n\nDiseases affected by IGF\nStudies of recent interest show that the Insulin/IGF axis play an important role in aging. Nematodes, fruit-flies, and other organisms have an increased life span when the gene equivalent to the mammalian insulin is knocked out.  It is somewhat difficult to relate this finding to mammals, however, because there are many genes (at least 37 in the nematode Caenorhabditis elegans) in smaller organisms that are \"insulin-like\" or \"IGF-1-like\", whereas in mammals insulin-like proteins comprise only seven members (insulin, IGFs, relaxins, EPIL, and relaxin-like factor). The human insulin-like genes have apparently distinct roles with some but less crosstalk presumably because there are multiple insulin-receptor-like proteins in humans. Simpler organisms typically have fewer receptors; for example, only one insulin-like receptor exists in the nematode C. elegans. Additionally, C. elegans do not have specialized organs such as the (Islets of Langerhans), which sense insulin in response to glucose homeostasis. Moreover, IGF1 affects lifespan in nematodes by causing dauer formation, a developmental stage of C. elegans larva. There is no mammalian correlate. Therefore, it is an open question as to whether either IGF-1 or insulin in the mammal may perturb aging, although there is the suggestion that dietary restriction phenomena may be related.\nOther studies are beginning to uncover the important role the IGFs play in diseases such as cancer and diabetes, showing for instance that IGF-1 stimulates growth of both prostate and breast cancer cells.  Researchers are not in complete agreement about the degree of cancer risk that IGF-1 poses.\n\nSee also\nGrowth hormone treatment\nHGH controversies\nInsulin/IGF/Relaxin family\n\n\n== References ==",
+          "cos_sim_score": 0.46846550703048706,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Denise P. Barlow",
+          "title": "Denise P. Barlow",
+          "url": "https://en.wikipedia.org/wiki/Denise_P._Barlow",
+          "text": "Denise P. Barlow (31 January 1950 \u2013 21 October 2017) was a British geneticist who worked in the field of epigenomics. Barlow was an elected member of European Molecular Biology Organization (EMBO), an honorary professor of genetics at the University of Vienna and recipient of the Erwin Schr\u00f6dinger Prize of the Austrian Academy of Sciences. In 1991, she discovered the first mammalian imprinted gene, IGF2R, which codes for the insulin-like growth factor.\n\nBiography\nEarly years\nDenise Barlow was born in Yorkshire, UK on 31 January 1950. When she was 16, she started a two-year pre-nursing course at a technical college. At the age of 18, she trained and worked for four years as a state registered nurse (SRN) in the United Kingdom. During this time, she decided to enroll at a university to learn more about human physiology and diseases, but had to attend another technical college to take A-levels first.\n\nResearch work\nAt the age of 25, Barlow started to study at the University of Reading for a three-year BSc Honors course in Zoology with Physiology and Biochemistry. After her graduation, Barlow took up a PhD position at Warwick University, supervised by Derek Burke, to study the interferon response to virus infections in mouse embryos. She obtained a PhD in the area of mouse developmental biology in 1981.\nBarlow was invited by Brigid Hogan of the Imperial Cancer Research Fund Laboratories in London to work in her laboratory on isolating genes expressed in the very early stages of embryonic development. After Barlow met Hans Lehrach at a scientific meeting in Cold Spring Harbor, she joined his laboratory at the European Molecular Biology Laboratory (EMBL) in Heidelberg, Germany, to isolate mutated mouse genes using techniques developed in this lab.\nIn 1988, Barlow joined the newly founded Research Institute of Molecular Pathology (IMP) in Vienna, where she worked as a group leader until 1996. During this time in 1991, she discovered the first imprinted gene in mice, IGF2R.\nAfter her stay at the IMP, Barlow moved to a group leader position at the Netherlands Cancer Institute in Amsterdam in 1996. Thereafter, she continued her work at the Institute of Molecular Biology of the Austrian Academy of Sciences in Salzburg.\nIn 2003, Barlow joined the Research Center for Molecular Medicine of the Austrian Academy of Sciences (CeMM) as a founding member, where she continued her epigenetic research as principal investigator until her retirement in 2015. In 2014, she received the Erwin Schr\u00f6dinger Prize, worth 15.000 Euros, for her lifetime achievements. This prize, which was endowed in 1958, is the most prestigious award of the Austrian Academy of Sciences. The last published work of Barlow's former group described the first complete allelome, adding to previous discoveries of Barlow and her lab such as the first imprinted gene and the first imprinted non-coding RNA, which controls imprinted silencing\nBarlow was appointed a member of the European Molecular Biology Organization (EMBO) in 1995 and has served on the EMBO Science and Society Committee since 1998. There she was appointed chairwoman of this committee since 2002. She advocated better opportunities for female scientists in leading positions at universities and research institutes.",
+          "cos_sim_score": 0.3450808525085449,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

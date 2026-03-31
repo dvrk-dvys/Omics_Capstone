@@ -1,0 +1,137 @@
+{
+  "probe_id": "11715948_at",
+  "gene_symbol": "KCTD12",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.2318885309999782,
+  "abs_fold_change": 1.6836,
+  "univariate_score": 1.6731,
+  "probe_count": 1,
+  "probe_ids": "11715948_at",
+  "max_combined_score": 1.6731,
+  "mean_abs_fold_change": 1.6836,
+  "max_rf_importance": 0.0,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T00:23:49",
+  "interpretation": "KCTD12 encodes a protein that acts as an auxiliary subunit of GABA-B receptors, influencing their pharmacology and signaling. While there is no direct evidence linking KCTD12 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in modulating G-protein signaling could suggest a potential involvement in the pathways affected by steroid treatment, which is known to contribute to SONFH. The evidence retrieved primarily describes KCTD12's general biological functions and associations with other conditions, leading to a weak connection to SONFH. Therefore, while KCTD12 may have some relevance in the context of steroid-induced effects, its potential as a biomarker for early detection of SONFH is limited and speculative. Overall, the evidence is weak, and the clinical relevance of KCTD12 as a biomarker for SONFH remains uncertain.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "KCTD12's role in GABA-B receptor signaling may indirectly relate to the mechanisms of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), but direct evidence is lacking.",
+  "citations": [
+    "KCTD12 (Q96CX2). https://www.uniprot.org/uniprotkb/Q96CX2",
+    "KCTD12 \u2014 KCTD12. https://platform.opentargets.org/target/ENSG00000178695",
+    "KCTD12 \u2194 adolescent idiopathic scoliosis. https://platform.opentargets.org/target/ENSG00000178695/associations",
+    "KCTD12 \u2194 ovarian dysfunction. https://platform.opentargets.org/target/ENSG00000178695/associations",
+    "KCTD12 \u2194 ovarian neoplasm. https://platform.opentargets.org/target/ENSG00000178695/associations",
+    "KCTD12 \u2194 inflammatory bowel disease. https://platform.opentargets.org/target/ENSG00000178695/associations",
+    "KCTD12. https://en.wikipedia.org/wiki/KCTD12",
+    "Potassium channel tetramerisation domain. https://en.wikipedia.org/wiki/Potassium_channel_tetramerisation_domain",
+    "List of human protein-coding genes 4. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_4"
+  ],
+  "token_usage": {
+    "prompt_tokens": 3960,
+    "completion_tokens": 258,
+    "total_tokens": 4218,
+    "estimated_cost_usd": 0.000749
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q96CX2",
+          "title": "KCTD12 (Q96CX2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q96CX2",
+          "text": "Protein: BTB/POZ domain-containing protein KCTD12\nFunction: Auxiliary subunit of GABA-B receptors that determine the pharmacology and kinetics of the receptor response. Increases agonist potency and markedly alter the G-protein signaling of the receptors by accelerating onset and promoting desensitization (By similarity)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000178695::function",
+          "title": "KCTD12 \u2014 KCTD12",
+          "url": "https://platform.opentargets.org/target/ENSG00000178695",
+          "text": "Function: Auxiliary subunit of GABA-B receptors that determine the pharmacology and kinetics of the receptor response. Increases agonist potency and markedly alter the G-protein signaling of the receptors by accelerating onset and promoting desensitization (By similarity). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000178695::EFO_0005423",
+          "title": "KCTD12 \u2194 adolescent idiopathic scoliosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000178695/associations",
+          "text": "Disease: adolescent idiopathic scoliosis\nDescription: A scoliosis with no known cause arising in adolescent.\nAssociation score: 0.323",
+          "cos_sim_score": 0.322721226197688,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000178695::EFO_0009003",
+          "title": "KCTD12 \u2194 ovarian dysfunction",
+          "url": "https://platform.opentargets.org/target/ENSG00000178695/associations",
+          "text": "Disease: ovarian dysfunction\nDescription: The inability of the ovaries to function.\nAssociation score: 0.243",
+          "cos_sim_score": 0.2427006950146139,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000178695::EFO_0003893",
+          "title": "KCTD12 \u2194 ovarian neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000178695/associations",
+          "text": "Disease: ovarian neoplasm\nDescription: Neoplasms located in the ovary that can be benign or malignant. They are classified according to the tissue of origin, such as the surface EPITHELIUM, the stromal endocrine cells, and the totipotent GERM CELLS.\nAssociation score: 0.130",
+          "cos_sim_score": 0.1303699338052371,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000178695::EFO_0003767",
+          "title": "KCTD12 \u2194 inflammatory bowel disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000178695/associations",
+          "text": "Disease: inflammatory bowel disease\nDescription: A spectrum of small and large bowel inflammatory diseases of unknown etiology. It includes Crohn's disease, ulcerative colitis, and colitis of indeterminate type.\nAssociation score: 0.128",
+          "cos_sim_score": 0.1281544437784529,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::KCTD12",
+          "title": "KCTD12",
+          "url": "https://en.wikipedia.org/wiki/KCTD12",
+          "text": "BTB/POZ domain-containing protein KCTD12 is a protein that in humans is encoded by the KCTD12 gene.\nIt may be associated with rumination and Bipolar Disorder.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.4188811182975769,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Potassium channel tetramerisation domain",
+          "title": "Potassium channel tetramerisation domain",
+          "url": "https://en.wikipedia.org/wiki/Potassium_channel_tetramerisation_domain",
+          "text": "K+ channel tetramerisation domain  is the N-terminal, cytoplasmic tetramerisation domain (T1) of voltage-gated K+ channels. It defines molecular determinants for subfamily-specific assembly of alpha-subunits into functional tetrameric channels. It is distantly related to the BTB/POZ domain Pfam PF00651.\n\nPotassium channels\nPotassium channels are the most diverse group of the ion channel family. They are important in shaping the action potential, and in neuronal excitability and plasticity. The potassium channel family is composed of several functionally distinct isoforms, which can be broadly separated into 2 groups: the practically non-inactivating 'delayed' group and the rapidly inactivating 'transient' group.\nThese are all highly similar proteins, with only small amino acid changes causing the diversity of the voltage-dependent gating mechanism, channel conductance and toxin binding properties. Each type of K+ channel is activated by different signals and conditions depending on their type of regulation: some open in response to depolarisation of the plasma membrane; others in response to hyperpolarisation or an increase in intracellular calcium concentration; some can be regulated by binding of a transmitter, together with intracellular kinases; while others are regulated by GTP-binding proteins or other second messengers. In eukaryotic cells, K+ channels are involved in neural signalling and generation of\nthe cardiac rhythm, act as effectors in signal transduction pathways involving G protein-coupled receptors (GPCRs)\nand may have a role in target cell lysis by cytotoxic T-lymphocytes. In prokaryotic cells, they play a role in the maintenance of ionic homeostasis.\n\nAlpha subunits of the channels\nAll K+ channels discovered so far possess a core of alpha subunits, each comprising either one or two copies of a highly conserved pore loop domain (P-domain). The P-domain contains the sequence (T/SxxTxGxG), which has\nbeen termed the K+ selectivity sequence. In families that contain one P-domain, four subunits assemble to form a selective pathway for K+ across the membrane. However, it remains unclear how the 2 P-domain subunits assemble to form a selective pore. The functional diversity of these families can arise through homo- or hetero-associations of alpha subunits or association with auxiliary cytoplasmic beta subunits. K+ channel subunits containing one pore domain can be assigned into one of two superfamilies: those that possess six transmembrane (TM) domains and those that possess only two TM domains. The six TM domain superfamily can be further subdivided into conserved gene families: the voltage-gated (Kv) channels; the KCNQ channels (originally known as KvLQT channels); the EAG-like K+ channels; and three types of calcium (Ca)-activated K+ channels (BK, IK and SK). The 2TM domain family comprises inward-rectifying K+ channels. In addition, there are K+ channel alpha-subunits that possess two P-domains. These are usually highly regulated K+ selective leak channels.\nThe Kv family can be divided into several subfamilies on the basis of sequence similarity and function. Four of these subfamilies, Kv1 (Shaker), Kv2 (Shab), Kv3 (Shaw) and Kv4 (Shal), consist of pore-forming alpha subunits that associate with different types of beta subunit. Each alpha subunit comprises six hydrophobic TM domains with a P-domain between the fifth and sixth, which partially resides in the membrane. The fourth TM domain has positively charged residues at every third residue and acts as a voltage sensor, which triggers the conformational change that opens the channel pore in response to a displacement in membrane potential. More recently, 4 new electrically-silent alpha subunits have been\ncloned: Kv5 (KCNF), Kv6 (KCNG), Kv8 and Kv9 (KCNS). These subunits do not themselves possess any functional activity, but appear to form heteromeric channels with Kv2 subunits, and thus modulate Shab channel activity. When highly expressed, they inhibit channel activity, but at lower levels show more specific modulatory actions.",
+          "cos_sim_score": 0.35306692123413086,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Potassium channel tetramerisation domain",
+          "title": "Potassium channel tetramerisation domain",
+          "url": "https://en.wikipedia.org/wiki/Potassium_channel_tetramerisation_domain",
+          "text": "Tetramerization domain\nThe N-terminal, cytoplasmic tetramerization domain (T1) of voltage-gated potassium channels encodes molecular determinants for subfamily-specific assembly of alpha-subunits into functional tetrameric channels. This domain is found in a subset of a larger group of proteins that contain the BTB/POZ domain.\n\nHuman proteins containing this domain\nBTBD10;    KCNA1;     KCNA10;    KCNA2;     KCNA3;     KCNA4;     KCNA5;     KCNA6;\nKCNA7;     KCNB1;     KCNB2;     KCNC1;     KCNC2;     KCNC3;     KCNC4;     KCND1;\nKCND2;     KCND3;     KCNF1;     KCNG1;     KCNG2;     KCNG3;     KCNG4;     KCNRG;\nKCNS1;     KCNS2;     KCNS3;     KCNV1;     KCNV2;     KCTD1;     KCTD10;    KCTD11;\nKCTD12;    KCTD13;    KCTD14;    KCTD15;    KCTD16;    KCTD17;    KCTD18;    KCTD19;\nKCTD2;     KCTD20;    KCTD21;    KCTD3;     KCTD4;     KCTD5;     KCTD6;     KCTD7;\nKCTD8;     KCTD9;     SHKBP1;    TNFAIP1;\n\nReferences\nFurther reading\nBixby, KA; Nanao, MH; Shen, NV; Kreusch, A; Bellamy, H; Pfaffinger, PJ; Choe, S (1999). \"Zn2+-binding and molecular determinants of tetramerization in voltage-gated K+ channels\". Nature Structural & Molecular Biology. 6 (1): 38\u201343. doi:10.1038/4911. PMID 9886290. S2CID 5414052.",
+          "cos_sim_score": 0.3193224370479584,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of human protein-coding genes 4",
+          "title": "List of human protein-coding genes 4",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_4",
+          "text": "== References ==",
+          "cos_sim_score": 0.08259791880846024,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

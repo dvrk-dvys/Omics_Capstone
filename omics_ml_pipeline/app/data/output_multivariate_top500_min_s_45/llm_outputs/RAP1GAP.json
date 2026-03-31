@@ -1,0 +1,161 @@
+{
+  "probe_id": "11725497_a_at",
+  "gene_symbol": "RAP1GAP",
+  "rf_importance": 0.0026,
+  "selection_freq": 0.6,
+  "abs_fold_change": 3.251957766666667,
+  "combined_score": 0.4989,
+  "probe_count": 1,
+  "probe_ids": "11725497_a_at",
+  "max_combined_score": 0.4989,
+  "mean_abs_fold_change": 3.252,
+  "max_rf_importance": 0.0026,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-03-31T20:43:18",
+  "interpretation": "RAP1GAP encodes a GTPase-activating protein that regulates the activity of the small GTPase RAP-1A, which is involved in various cellular processes including cell signaling and proliferation. While there is no direct evidence linking RAP1GAP to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in regulating GTPase activity suggests it could influence pathways related to bone metabolism and cellular responses to steroid treatment. The retrieved evidence indicates that RAP1GAP is involved in mechanisms relevant to other diseases, such as cancer and metabolic disorders, but lacks specific connections to SONFH. Therefore, while RAP1GAP may have biological relevance, its potential as a biomarker for SONFH is weak due to insufficient direct evidence linking it to the disease context.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "RAP1GAP may influence cellular signaling pathways relevant to bone metabolism, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "RAP1GAP (P47736). https://www.uniprot.org/uniprotkb/P47736",
+    "RAP1GAP (P47736-3). https://www.uniprot.org/uniprotkb/P47736-3",
+    "RAP1GAP (P47736-4). https://www.uniprot.org/uniprotkb/P47736-4",
+    "RAP1GAP \u2014 RAP1GAP. https://platform.opentargets.org/target/ENSG00000076864",
+    "RAP1GAP \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000076864/associations",
+    "RAP1GAP \u2194 type 2 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000076864/associations",
+    "RAP1GAP \u2194 smoking initiation. https://platform.opentargets.org/target/ENSG00000076864/associations",
+    "RAP1GAP \u2194 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000076864/associations",
+    "RAP1GAP. https://en.wikipedia.org/wiki/RAP1GAP",
+    "GTPase-activating protein. https://en.wikipedia.org/wiki/GTPase-activating_protein",
+    "GoLoco motif. https://en.wikipedia.org/wiki/GoLoco_motif"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5677,
+    "completion_tokens": 238,
+    "total_tokens": 5915,
+    "estimated_cost_usd": 0.000994
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P47736",
+          "title": "RAP1GAP (P47736)",
+          "url": "https://www.uniprot.org/uniprotkb/P47736",
+          "text": "Protein: Rap1 GTPase-activating protein 1\nFunction: GTPase activator for the nuclear Ras-related regulatory protein RAP-1A (KREV-1), converting it to the putatively inactive GDP-bound state",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P47736-3",
+          "title": "RAP1GAP (P47736-3)",
+          "url": "https://www.uniprot.org/uniprotkb/P47736-3",
+          "text": "Protein: Isoform 3 of Rap1 GTPase-activating protein 1",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P47736-4",
+          "title": "RAP1GAP (P47736-4)",
+          "url": "https://www.uniprot.org/uniprotkb/P47736-4",
+          "text": "Protein: Isoform 4 of Rap1 GTPase-activating protein 1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000076864::function",
+          "title": "RAP1GAP \u2014 RAP1GAP",
+          "url": "https://platform.opentargets.org/target/ENSG00000076864",
+          "text": "Function: GTPase activator for the nuclear Ras-related regulatory protein RAP-1A (KREV-1), converting it to the putatively inactive GDP- bound state. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000076864::EFO_0005772",
+          "title": "RAP1GAP \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000076864/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.471",
+          "cos_sim_score": 0.4713550585206696,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000076864::MONDO_0005148",
+          "title": "RAP1GAP \u2194 type 2 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000076864/associations",
+          "text": "Disease: type 2 diabetes mellitus\nDescription: A type of diabetes mellitus that is characterized by insulin resistance or desensitization and increased blood glucose levels. This is a chronic disease that can develop gradually over the life of a patient and can be linked to both environmental factors and heredity.\nAssociation score: 0.431",
+          "cos_sim_score": 0.43104850189502203,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000076864::EFO_0005670",
+          "title": "RAP1GAP \u2194 smoking initiation",
+          "url": "https://platform.opentargets.org/target/ENSG00000076864/associations",
+          "text": "Disease: smoking initiation\nDescription: initation of the habit of smoking, the inhaling and exhaling of tobacco smoke.\nAssociation score: 0.393",
+          "cos_sim_score": 0.3931047954105277,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000076864::EFO_0000400",
+          "title": "RAP1GAP \u2194 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000076864/associations",
+          "text": "Disease: diabetes mellitus\nDescription: A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization.\nAssociation score: 0.331",
+          "cos_sim_score": 0.3306547627321414,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::RAP1GAP",
+          "title": "RAP1GAP",
+          "url": "https://en.wikipedia.org/wiki/RAP1GAP",
+          "text": "Rap1 GTPase-activating protein 1 is an enzyme that in humans is encoded by the RAP1GAP gene.\n\nInteractions\nRAP1GAP has been shown to interact with MLLT4.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.5635628700256348,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::GTPase-activating protein",
+          "title": "GTPase-activating protein",
+          "url": "https://en.wikipedia.org/wiki/GTPase-activating_protein",
+          "text": "Examples and classification\nEIF5 is a GTPase-activating protein. Furthermore, YopE is a protein domain that is a Rho GTPase-activating protein (GAP), which targets small GTPases such as RhoA, Rac1, and Rac2.\n\nMonomeric\nThe GAPs that act on small GTP-binding proteins of the Ras superfamily have conserved structures and use similar mechanisms,\nAn example of a GTPase is the monomer Ran, which is found in the cytosol as well as the nucleus.  Hydrolysis of GTP by Ran is thought to provide the energy needed to transport nuclear proteins into the cell.  Ran is turned on and off by GEFs and GAPs, respectively.\n\nHeterotrimeric\nMost GAPs  that act on alpha subunits of heterotrimeric G proteins belong to a distinct family, the RGS protein family.\n\nRegulation\nWhile GAPs serve to regulate the G proteins, there is also some level of regulation of the GAPs themselves.  Many GAPs have allosteric sites that serve as interfaces with downstream targets of the particular path that they regulate.  For example, RGS9-1, the GAP in the photoreceptors from above, interacts with cGMP phosphodiesterase (cGMP PDE), a downstream component of phototransduction in the retina.  Upon binding with cGMP PDE, RGS9-1 GAP activity is enhanced.  In other words, a downstream target of photoreceptor-induced signaling binds and activates the inhibitor of signaling, GAP.  This positive regulatory binding of downstream targets to GAP serves as a negative feedback loop that eventually turns off the signaling that was originally activated.  GAPs are regulated by targets of the G protein that they regulate.\nThere are also examples of negative regulatory mechanisms, where downstream targets of G protein signaling inhibit the GAPs.  In G protein-gated potassium channels, phosphatidylinositol 3, 4, 5-triphosphate (PIP3) is a downstream target of G protein signaling.  PIP3 binds and inhibits the RGS4 GAP.  Such inhibition of GAP may perhaps \"prime\" the signaling pathway for activation.  This creates a window of activity for the G proteins once activated because the GAP is temporarily inhibited.  When the potassium channel is activated, Ca2+ gets released and binds calmodulin.  Together, they displace PIP3 from GAP by binding competitively to the same site, and by doing so, they reactivate GAP to turn G protein signaling off.  This particular process demonstrates both inhibition and activation of GAP by its regulators.  There is cross-talk between GAP and other components of the signaling pathway that regulate the activity of GAP.\nThere have been some findings suggesting the possibility of crosstalk between GAPs.  A recent study showed that the p120Ras GAP could bind the DLC1 Rho GAP at its catalytic domain.  The binding of the Ras GAP to the Rho GAP inhibits the activity of the Rho GAP, thereby activating the Rho G protein.  One GAP serves as a negative regulator of another GAP.  The reasons for such cross-regulation across GAPs are yet unclear, but one possible hypothesis is that this cross-talk across GAPs attenuates the \"off\" signal of all the GAPs.  Although the p120Ras GAP is active, therefore inhibiting that particular pathway, other cellular processes can still continue because it inhibits other GAPs.  This may ensure that the whole system does not shut down from a single off signal.  GAP activity is highly dynamic, interacting with many other components of signaling pathways.",
+          "cos_sim_score": 0.2135101556777954,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::GTPase-activating protein",
+          "title": "GTPase-activating protein",
+          "url": "https://en.wikipedia.org/wiki/GTPase-activating_protein",
+          "text": "GTPase-activating proteins or GTPase-accelerating proteins (GAPs) are a family of regulatory proteins whose members can bind to activated G proteins and stimulate their GTPase activity, with the result of terminating the signaling event.  GAPs are also known as RGS protein, or RGS proteins, and these proteins are crucial in controlling the activity of G proteins.  Regulation of G proteins is important because these proteins are involved in a variety of important cellular processes.  The large G proteins, for example, are involved in transduction of signaling from the G protein-coupled receptor for a variety of signaling processes like hormonal signaling, and small G proteins are involved in processes like cellular trafficking and cell cycling.  GAP's role in this function is to turn the G protein's activity off.  In this sense, GAPs function is opposite to that of guanine nucleotide exchange factors (GEFs), which serve to enhance G protein signaling.\n\nMechanism\nGAP are heavily linked to the G-protein linked receptor family. The activity of G proteins comes from their ability to bind guanosine triphosphate (GTP).   Binding of GTP inherently changes the activity of the G proteins and increases their activity, through the loss of inhibitory subunits.  In this more active state, G proteins can bind other proteins and turn on downstream signalling targets. This whole process is regulated by GAPs, which can down regulate the activity of G proteins.\n\nG proteins can weakly hydrolyse GTP, breaking a phosphate bond to make GDP.  In the GDP-bound state, the G proteins are subsequently inactivated and can no longer bind their targets.  This hydrolysis reaction, however, occurs very slowly, meaning G proteins have a built-in timer for their activity.  G proteins have a window of activity followed by slow hydrolysis, which turns them off.  GAP accelerates this G protein timer by increasing the hydrolytic GTPase activity of the G proteins, hence the name GTPase-activating protein. \nIt is thought that GAPs serve to make GTP on the G protein a better substrate for nucleophilic attack and lower the transition state energy for the hydrolysis reaction.  For example, many GAPs of the small G proteins have a conserved finger-like domain, usually an arginine finger, which changes the conformation of the GTP-bound G protein to orient the GTP for better nucleophilic attack by water.  This makes the GTP a better substrate for the reaction.  Similarly, GAPs seem to induce a GDP-like charge distribution in the bound GTP.  Because the change in charge distribution makes the GTP substrate more like the products of the reaction, GDP and monophosphate, this, along with opening the molecule for nucleophilic attack, lowers the transition state energy barrier of the reaction and allows GTP to be hydrolyzed more readily.  GAPs, then, work to enhance the GTP hydrolysis reaction of the G proteins.  By doing so, they accelerate the G protein's built-in timer, which inactivates the G proteins more quickly, and along with the inactivation of GEFs, this keeps the G protein signal off.  GAPs, then, are critical in the regulation of G proteins.\n\nSpecificity to G proteins\nIn general, GAPs tend to be pretty specific for their target G proteins.  The exact mechanism of target specificity is not fully known, but it is likely that this specificity comes from a variety of factors.  At the most basic level, GAP-to-G protein specificity may come simply from the timing and location of protein expression.  RGS9-1, for example, is specifically expressed in the rod and cone photoreceptors in the eye retina, and is the only one to interact with G proteins involved in phototransduction in this area.  A certain GAP and a certain G protein happen to be expressed in the same time and place, and that is how the cell ensures specificity.  Meanwhile, scaffold proteins can also sequester the proper GAP to its G protein and enhance the proper binding interactions.  These binding interactions may be specific for a particular GAP and G protein.  Also, GAPs may have particular amino acid domains that recognize only a particular G protein.  Binding to other G proteins may not have the same favorable interactions, and they therefore do not interact.  GAPs can, therefore, regulate specific G proteins.",
+          "cos_sim_score": 0.15901494026184082,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::GTPase-activating protein",
+          "title": "GTPase-activating protein",
+          "url": "https://en.wikipedia.org/wiki/GTPase-activating_protein",
+          "text": "Disease associations and clinical relevance\nThe importance of GAPs comes from its regulation of the crucial G proteins.  Many of these G proteins are involved in cell cycling, and as such are known proto-oncogenes.  The Ras superfamily of G proteins, for example, has been associated with many cancers because Ras is a common downstream target of many growth factors like FGF, or fibroblast growth factor.  Under normal conditions, this signaling ultimately induces regulated cell growth and proliferation.  However, in the cancer state, such growth is no longer regulated and results in the formation of tumors.   Often, this oncogenic behavior is due to a loss of function of GAPs associated with those G proteins or a loss of the G protein's ability to respond to its GAP.  With the former, G proteins are unable to hydrolyze GTP quickly, resulting in sustained expression of the active form of G proteins.  Although the G proteins have weak hydrolytic activity, in the presence of functional GEFs, the inactivated G proteins are constantly replaced with activated ones because the GEFs exchange GDP for GTP in these proteins. With no GAPs to curb the G protein's activity, this results in constitutively active G proteins, unregulated cell growth, and  the cancerous state.  In the case of the latter, a loss of the G protein's ability to respond to GAP, the G proteins have lost their ability to hydrolyze GTP.  With a nonfunctional G protein enzyme, GAPs cannot activate the GTPase activity, and the G protein is constitutively on.  This also results in unregulated cell growth and cancer.\nExamples of GAP malfunction are ubiquitous clinically.  Some cases involve a decreased expression of the GAP gene.  For example, some recently characterized cases of papillary thyroid cancer cells in patients show a decreased expression of Rap1GAP, and this expression is seemingly caused by a decreased expression of the GAP mRNA, shown by qRT-PCR experiments.  In this case, there appears to be a loss of proper Rap1GAP gene expression.  In another case, expression of the Ras GAP is lost in several cancers due to improper epigenetic silencing of the gene.  These cells have CpG methylations near the gene that, in effect, silence gene transcription.  Regulation of G proteins is lost because the regulator is absent, resulting in cancer. \nOther cancers show a loss of sensitivity of the G protein to the GAPs.  These G proteins acquire missense mutations that disrupt the inherent GTPase activity of the proteins.  The mutant G proteins are still bound by GAPs, but enhancing GTPase activity by the GAPs is meaningless when GTPase activity of the G protein itself is lost.  GAP works to activate a nonfunctional hydrolytic enzyme.  T24 bladder cancer cells, for example, were shown to have a missense mutation, G12V, resulting in constitutively active Ras protein.  Despite the presence of the G protein regulator, regulation is lost due to a loss of function in the G protein itself.  This loss of function also manifests itself in cancer.  GAPs and their interaction with G proteins are, therefore, highly important clinically and are potential targets for cancer therapies.\n\nReferences\nExternal links\nGTPase-Activating+Proteins at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.13758909702301025,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::GoLoco motif",
+          "title": "GoLoco motif",
+          "url": "https://en.wikipedia.org/wiki/GoLoco_motif",
+          "text": "GoLoco motif is a protein structural motif. In heterotrimeric G-protein signalling, cell surface receptors (GPCRs) are coupled to membrane-associated heterotrimers comprising a GTP-hydrolyzing subunit G-alpha and a G-beta/G-gamma dimer. The inactive form contains the alpha subunit bound to GDP and complexes with the beta and gamma subunit. When the ligand is associated to the receptor, GDP is displaced from G-alpha and GTP is bound. The GTP/G-alpha complex dissociates from the trimer and associates to an effector until the intrinsic GTPase activity of G-alpha returns the protein to GDP bound form. Reassociation of GDP-bound G-alpha with G-beta/G-gamma dimer terminates the signal. Several mechanisms regulate the signal output at different stage of the G-protein cascade. Two classes of intracellular proteins act as inhibitors of G protein activation: GTPase activating proteins (GAPs), which enhance GTP hydrolysis (see PDOC50132), and guanine dissociation inhibitors (GDIs), which inhibit GDP dissociation. The GoLoco or G-protein regulatory (GPR) motif found in various G-protein regulators. acts as a GDI on G-alpha(i).\n\nStructure\nThe crystal structure of the GoLoco motif in complex with G-alpha(i) has been solved. It consists of three small alpha helices. The highly conserved Asp-Gln-Arg triad within the GoLoco motif participates directly in GDP binding by extending the arginine side chain into the nucleotide binding pocket, highly reminiscent of the catalytic arginine finger employed in GTPase-activating protein (see PDOC50238). This addition of an arginine in the binding pocket affects the interaction of GDP with G-alpha and therefore is certainly important for the GoLoco GDI activity.\n\nExamples\nSome proteins known to contain a GoLoco motif are listed below:\n\nMammalian regulators of G-protein signaling 12 and 14 (RGS12 and RGS14), multifaceted signal transduction regulators.\nLoco, the drosophila RGS12 homologue.\nMammalian Purkinje-cell protein-2 (Pcp2). It may function as a cell-type specific modulator for G protein-mediated cell signaling. It is uniquely expressed in cerebellar Purkinje cells and in retinal bipolar neurons.\nEukaryotic Rap1GAP. A GTPase activator for the nuclear ras-related regulatory protein RAP-1A.\nDrosophila protein Rapsynoid (also known as Partner of Inscuteable, Pins) and its mammalian homologues, AGS3 and LGN. They form a G-protein regulator family that also contains TPR repeats.\nHuman proteins containing this domain include:\n\nGPSM1, GPSM2, GPSM3\nPCP2\nRAP1GAP. RGS12, RGS14\n\n\n== References ==",
+          "cos_sim_score": 0.11648595333099365,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

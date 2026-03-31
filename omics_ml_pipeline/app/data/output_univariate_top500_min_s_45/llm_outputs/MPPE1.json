@@ -1,0 +1,127 @@
+{
+  "probe_id": "11736159_a_at",
+  "gene_symbol": "MPPE1",
+  "rf_importance": 0.0061,
+  "selection_freq": 1.0,
+  "abs_fold_change": 1.2839315666666664,
+  "combined_score": 0.4627,
+  "probe_count": 1,
+  "probe_ids": "11736159_a_at",
+  "max_combined_score": 0.4627,
+  "mean_abs_fold_change": 1.2839,
+  "max_rf_importance": 0.0061,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-03-31T20:08:22",
+  "interpretation": "MPPE1 (Metallophosphoesterase 1) is involved in the maturation of glycosylphosphatidylinositol (GPI)-anchored proteins, which are crucial for cellular signaling and adhesion. While there is no direct evidence linking MPPE1 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in glycan remodeling may suggest a potential involvement in the cellular responses to steroid treatment, which is known to affect bone health. The retrieved evidence primarily indicates its function in protein transport rather than a specific connection to SONFH, leading to a low confidence in its relevance as a biomarker. Therefore, while MPPE1 may play a role in cellular processes that could be indirectly related to SONFH, the evidence does not support its use as a reliable early-detection biomarker for this condition.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "MPPE1's role in glycan remodeling suggests a potential but unproven link to the cellular effects of steroids in SONFH.",
+  "citations": [
+    "MPPE1 (Q53F39). https://www.uniprot.org/uniprotkb/Q53F39",
+    "MPPE1 (Q53F39-4). https://www.uniprot.org/uniprotkb/Q53F39-4",
+    "MPPE1 (Q53F39-5). https://www.uniprot.org/uniprotkb/Q53F39-5",
+    "MPPE1 \u2014 MPPE1. https://platform.opentargets.org/target/ENSG00000154889",
+    "MPPE1 \u2194 infectious meningitis. https://platform.opentargets.org/target/ENSG00000154889/associations",
+    "MPPE1 \u2194 ocular hypotension. https://platform.opentargets.org/target/ENSG00000154889/associations",
+    "MPPE1 \u2194 frozen shoulder. https://platform.opentargets.org/target/ENSG00000154889/associations",
+    "MPPE1 \u2194 alcohol drinking. https://platform.opentargets.org/target/ENSG00000154889/associations",
+    "List of human protein-coding genes 5. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_5"
+  ],
+  "token_usage": {
+    "prompt_tokens": 2713,
+    "completion_tokens": 240,
+    "total_tokens": 2953,
+    "estimated_cost_usd": 0.000551
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q53F39",
+          "title": "MPPE1 (Q53F39)",
+          "url": "https://www.uniprot.org/uniprotkb/Q53F39",
+          "text": "Protein: Metallophosphoesterase 1\nFunction: Metallophosphoesterase that catalyzes the removal of a side-chain ethanolamine-phosphate (EtNP) from the second mannose of the GPI-anchor protein intermediate (PubMed:19837036, PubMed:29374258). Participates in the glycan remodeling steps of GPI-anchor maturation to allow an efficient transport of GPI-anchor proteins from the endoplasmic reticulum to the Golgi (PubMed:19837036, PubMed:29374258)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q53F39-4",
+          "title": "MPPE1 (Q53F39-4)",
+          "url": "https://www.uniprot.org/uniprotkb/Q53F39-4",
+          "text": "Protein: Isoform 4 of Metallophosphoesterase 1",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q53F39-5",
+          "title": "MPPE1 (Q53F39-5)",
+          "url": "https://www.uniprot.org/uniprotkb/Q53F39-5",
+          "text": "Protein: Isoform 5 of Metallophosphoesterase 1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000154889::function",
+          "title": "MPPE1 \u2014 MPPE1",
+          "url": "https://platform.opentargets.org/target/ENSG00000154889",
+          "text": "Function: Metallophosphoesterase that catalyzes the removal of a side- chain ethanolamine-phosphate (EtNP) from the second mannose of the GPI- anchor protein intermediate (PubMed:19837036, PubMed:29374258). Participates in the glycan remodeling steps of GPI-anchor maturation to allow an efficient transport of GPI-anchor proteins from the endoplasmic reticulum to the Golgi (PubMed:19837036, PubMed:29374258). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000154889::EFO_0000584",
+          "title": "MPPE1 \u2194 infectious meningitis",
+          "url": "https://platform.opentargets.org/target/ENSG00000154889/associations",
+          "text": "Disease: infectious meningitis\nDescription: Inflammation of the meninges of the brain and/or spinal cord caused by an infectious agent (viral, bacterial, or fungal). Symptoms include headache, fever, vomiting, neck stiffness, photophobia, confusion, and seizures.\nAssociation score: 0.201",
+          "cos_sim_score": 0.2006247123641081,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000154889::MONDO_0004390",
+          "title": "MPPE1 \u2194 ocular hypotension",
+          "url": "https://platform.opentargets.org/target/ENSG00000154889/associations",
+          "text": "Disease: ocular hypotension\nDescription: Abnormally low intraocular pressure often related to chronic inflammation (uveitis).\nAssociation score: 0.171",
+          "cos_sim_score": 0.1711712161072907,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000154889::EFO_1000941",
+          "title": "MPPE1 \u2194 frozen shoulder",
+          "url": "https://platform.opentargets.org/target/ENSG00000154889/associations",
+          "text": "Disease: frozen shoulder\nDescription: Inflammation or irritation of a bursa, the fibrous sac that acts as a cushion between moving structures of bones, muscles, tendons or skin.\nAssociation score: 0.171",
+          "cos_sim_score": 0.17071832855833963,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000154889::EFO_0004329",
+          "title": "MPPE1 \u2194 alcohol drinking",
+          "url": "https://platform.opentargets.org/target/ENSG00000154889/associations",
+          "text": "Disease: alcohol drinking\nDescription: Behaviors associated with the ingesting of alcoholic beverages, including social drinking.\nAssociation score: 0.156",
+          "cos_sim_score": 0.156393477101216,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::List of human protein-coding genes 5",
+          "title": "List of human protein-coding genes 5",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_5",
+          "text": "== References ==",
+          "cos_sim_score": 0.19813105463981628,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

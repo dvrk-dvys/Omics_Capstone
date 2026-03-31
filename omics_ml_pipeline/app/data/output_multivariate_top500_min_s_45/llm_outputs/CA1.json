@@ -1,0 +1,145 @@
+{
+  "probe_id": "11729582_s_at",
+  "gene_symbol": "CA1",
+  "rf_importance": 0.0,
+  "selection_freq": 0.2,
+  "abs_fold_change": 3.5690905000000015,
+  "combined_score": 0.4959,
+  "probe_count": 2,
+  "probe_ids": "11729582_s_at | 11729583_x_at",
+  "max_combined_score": 0.4959,
+  "mean_abs_fold_change": 3.4471,
+  "max_rf_importance": 0.001,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-03-31T20:43:40",
+  "interpretation": "Carbonic anhydrase 1 (CA1) is an enzyme that catalyzes the reversible hydration of carbon dioxide, playing a crucial role in maintaining acid-base balance and facilitating carbon dioxide transport in the body. While there is no direct evidence linking CA1 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in bone metabolism and acid-base homeostasis suggests a potential indirect connection. The enzyme's activity may influence the microenvironment of bone tissue, which could be affected by steroid administration, a known risk factor for SONFH. However, the evidence specifically relating CA1 to SONFH is weak, relying primarily on general biological reasoning rather than direct studies. Therefore, while CA1 may have some relevance as a biomarker, its clinical utility in the early detection of SONFH remains uncertain.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "CA1 may influence bone metabolism and acid-base balance, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "CA1 (P00915). https://www.uniprot.org/uniprotkb/P00915",
+    "CA1 \u2014 CA1. https://platform.opentargets.org/target/ENSG00000133742",
+    "CA1 \u2194 altitude sickness. https://platform.opentargets.org/target/ENSG00000133742/associations",
+    "CA1 \u2194 glaucoma. https://platform.opentargets.org/target/ENSG00000133742/associations",
+    "CA1 \u2194 angle-closure glaucoma. https://platform.opentargets.org/target/ENSG00000133742/associations",
+    "CA1 \u2194 Seizure. https://platform.opentargets.org/target/ENSG00000133742/associations",
+    "Carbonic anhydrase. https://en.wikipedia.org/wiki/Carbonic_anhydrase",
+    "Carbonic anhydrase II. https://en.wikipedia.org/wiki/Carbonic_anhydrase_II",
+    "CA1 (gene). https://en.wikipedia.org/wiki/CA1_(gene)"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4759,
+    "completion_tokens": 237,
+    "total_tokens": 4996,
+    "estimated_cost_usd": 0.000856
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P00915",
+          "title": "CA1 (P00915)",
+          "url": "https://www.uniprot.org/uniprotkb/P00915",
+          "text": "Protein: Carbonic anhydrase 1\nFunction: Catalyzes the reversible hydration of carbon dioxide (PubMed:10550681, PubMed:16506782, PubMed:16686544, PubMed:16807956, PubMed:17127057, PubMed:17314045, PubMed:17407288, PubMed:18618712, PubMed:19186056, PubMed:19206230). Can hydrate cyanamide to urea (PubMed:10550681)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000133742::function",
+          "title": "CA1 \u2014 CA1",
+          "url": "https://platform.opentargets.org/target/ENSG00000133742",
+          "text": "Function: Catalyzes the reversible hydration of carbon dioxide (PubMed:10550681, PubMed:16506782, PubMed:16686544, PubMed:16807956, PubMed:17127057, PubMed:17314045, PubMed:17407288, PubMed:18618712, PubMed:19186056, PubMed:19206230). Can hydrate cyanamide to urea (PubMed:10550681).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000133742::EFO_1000782",
+          "title": "CA1 \u2194 altitude sickness",
+          "url": "https://platform.opentargets.org/target/ENSG00000133742/associations",
+          "text": "Disease: altitude sickness\nDescription: Multiple symptoms associated with reduced oxygen at high altitude.\nAssociation score: 0.598",
+          "cos_sim_score": 0.5983925233183186,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000133742::MONDO_0005041",
+          "title": "CA1 \u2194 glaucoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000133742/associations",
+          "text": "Disease: glaucoma\nDescription: Increased pressure in the eyeball due to obstruction of the outflow of aqueous humor.\nAssociation score: 0.598",
+          "cos_sim_score": 0.5981876237880506,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000133742::MONDO_0001744",
+          "title": "CA1 \u2194 angle-closure glaucoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000133742/associations",
+          "text": "Disease: angle-closure glaucoma\nDescription: The sudden increase of intraocular pressure, resulting in pain and an abrupt decrease in visual acuity.\nAssociation score: 0.593",
+          "cos_sim_score": 0.5928576076731663,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000133742::HP_0001250",
+          "title": "CA1 \u2194 Seizure",
+          "url": "https://platform.opentargets.org/target/ENSG00000133742/associations",
+          "text": "Disease: Seizure\nDescription: A seizure is an intermittent abnormality of nervous system physiology characterized by a transient occurrence of signs and/or symptoms due to abnormal excessive or synchronous neuronal activity in the brain.\nAssociation score: 0.589",
+          "cos_sim_score": 0.5889858301017256,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Carbonic anhydrase",
+          "title": "Carbonic anhydrase",
+          "url": "https://en.wikipedia.org/wiki/Carbonic_anhydrase",
+          "text": "Background\nAn enzyme is a substance that acts as a catalyst in living organisms which helps to speed up chemical reactions. Carbonic anhydrase is one important enzyme that is found in red blood cells, gastric mucosa, pancreatic cells, and even renal tubules. It was discovered in the year 1932 and it has been categorized into three general classes. Class one being alpha carbonic anhydrase which is found in mammals, class two being beta carbonic anhydrase which is found in bacteria and plants and lastly, class three which is gamma carbonic anhydrase which is found in methanogen bacteria in hot springs. The three classes of carbonic anhydrase all have the same active site with a Zn metal centre; however, they are not structurally similar to each other. The main role of carbonic anhydrase in humans is to catalyze the conversion of carbon dioxide to carbonic acid and back again. However, it can also help with CO2 transport in the blood which in turn helps respiration. It can even function in the formation of hydrochloric acid by the stomach. Therefore, the role of carbonic anhydrase depends on where it is found in the body.\n\nStructure\nIn mammalian CA II, the active site consists of the following: a hard Lewis acid Zn+2 metal atom coordinated to His -94, -96, and -119 residues 109\u02da apart from one another and a hydroxide ion (pKa=6.8; 120\u00b0 in Td  configuration, a hydrophobic pocket adjacent to Zinc-bound hydroxide consisting of by Val-143 at its base and Val-121, Trp-209, and Leu-198 at its neck, a Proton Shuttling Residue (PSR) His-64 H+ shuttles H+ in and out of active site via conformational switching, and a hydrogen bonding network consisting of Thr-199 hydroxyl group and Glu-106 the carboxyl group which stabilizes the Zinc-bound hydroxide by facilitating the orientation of water molecules in the active side to a specific geometric configuration. CA II has a turnover frequency of 106 s\u22121 which is 107 times faster than the uncatalyzed reaction.\n\nReaction\nThe reaction that shows the catalyzation by carbonic anhydrase in our tissues is\n\nCO2 + H2O \u27f6 H2CO3 \u27f6 H+ + HCO\u22123\nThe catalyzation by carbonic anhydrase in the lungs is shown by\n\nH+ + HCO\u22123 \u27f6 H2CO3 \u27f6 CO2 + H2O\nThe reason for the reactions being in opposite directions for the tissues and lungs is because of the different pH levels found in them. Without the carbonic anhydrase catalyst, the reaction is slow, however with the catalyst the reaction is 107 times faster.\nThe reaction catalyzed by carbonic anhydrase is\n\nHCO\u22123 + H+ \u21cc CO2 + H2O\nCarbonic acid has a pKa of around 6.36 (the value depends on the conditions), so at pH 7 a small percentage of the bicarbonate is protonated.\nCarbonic anhydrase is one of the fastest enzymes, and its rate is typically limited by the diffusion rate of its substrates. Typical catalytic rates of the different forms of this enzyme ranging between 104 and 106 reactions per second.\nThe uncatalyzed reverse reaction is relatively slow (kinetics in the 15-second range).  This is why a carbonated drink does not instantly degas when opening the container; however, it will rapidly degas in the mouth when it comes in contact with carbonic anhydrase that is contained in saliva.\nAn anhydrase is defined as an enzyme that catalyzes the removal of a water molecule from a compound, and so it is this \"reverse\" reaction that gives carbonic anhydrase its name, because it removes a water molecule from carbonic acid.\nIn the lungs carbonic anhydrase converts bicarbonate to carbon dioxide, suited for exhalation.\n\nCO2 transport\nCarbon dioxide is transported in the blood in three forms:\n\nDissolved as gas in plasma \u2013 7-10%\nBound to hemoglobin as carbaminohemoglobin in red blood cells \u2013 20%\nPresent as bicarbonate ion in plasma and transported as bicarbonate - 70%",
+          "cos_sim_score": 0.7479590177536011,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Carbonic anhydrase",
+          "title": "Carbonic anhydrase",
+          "url": "https://en.wikipedia.org/wiki/Carbonic_anhydrase",
+          "text": "Carbon capture and sequestration\nCarbonic anhydrase could in principle prove relevant to carbon capture. Some carbonic anhydrases can withstand temperatures up to 107 \u00b0C and extreme alkalinity (pH > 10). A pilot run with the more stable CA on a flue stream that consisted of 12\u201313% mol composition CO2 had a capture rate of 63.6% over a 60-hour period with no noticeable effects in enzyme performance. CA was placed in a N-methyldiethanolamine (MDEA) solution where it served to increase the concentration difference (driving force) of CO2 between the flue stream of the power plant and liquid phase in a liquid-gas contactor.\n\nSee also\nCarbonic anhydrase inhibitor\n\nReferences\nFurther reading\nExternal links\nOverview of all the structural information available in the PDB for UniProt: P00918 (Human Carbonic anhydrase 2) at the PDBe-KB.",
+          "cos_sim_score": 0.6803981065750122,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Carbonic anhydrase II",
+          "title": "Carbonic anhydrase II",
+          "url": "https://en.wikipedia.org/wiki/Carbonic_anhydrase_II",
+          "text": "Carbonic anhydrase II (gene name CA2) is one of sixteen forms of human \u03b1 carbonic anhydrases. Carbonic anhydrase catalyzes reversible hydration of carbon dioxide.  Defects in this enzyme are associated with osteopetrosis and renal tubular acidosis. \nRenal carbonic anhydrase allows the reabsorption of bicarbonate ions in the proximal tubule.\n Loss of carbonic anhydrase activity in bones impairs the ability of osteoclasts to promote bone resorption, leading to osteopetrosis.\n\nInteractions\nCarbonic anhydrase II has been shown to interact with band 3 and sodium-hydrogen antiporter 1.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.67673659324646,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Carbonic anhydrase",
+          "title": "Carbonic anhydrase",
+          "url": "https://en.wikipedia.org/wiki/Carbonic_anhydrase",
+          "text": "The carbonic anhydrases (or carbonate dehydratases) (EC 4.2.1.1) form a family of enzymes that catalyze the interconversion between carbon dioxide and water and the dissociated ions of carbonic acid (i.e. bicarbonate and hydrogen ions). The active site of most carbonic anhydrases contains a zinc ion. They are therefore classified as metalloenzymes. The enzyme maintains acid-base balance and helps transport carbon dioxide.\nCarbonic anhydrase helps maintain acid\u2013base homeostasis and regulate pH and fluid balance. Depending on its location, the role of the enzyme changes slightly. For example, carbonic anhydrase produces acid in the stomach lining. In the kidney, the control of bicarbonate ions influences the water content of the cell. The control of bicarbonate ions also influences the water content in the eyes. Inhibitors of carbonic anhydrase are used to treat glaucoma, the excessive build-up of water in the eyes. Blocking this enzyme shifts the fluid balance in the eyes to reduce fluid build-up thereby relieving pressure.\nCarbonic anhydrase is critical to hemoglobin function via the Bohr effect which catalyzes the hydration of carbon dioxide to form carbonic acid and rapidly dissociate into water. Essentially an increase in carbon dioxide results in lowered blood pH, which lowers oxygen-hemoglobin binding. The opposite is true where a decrease in the concentration of carbon dioxide raises the blood pH which raises the rate of oxygen-hemoglobin binding. Relating the Bohr effect to carbonic anhydrase is simple: carbonic anhydrase speeds up the reaction of carbon dioxide reacting with water to produce hydrogen ions (protons) and bicarbonate ions.\nTo describe equilibrium in the carbonic anhydrase reaction, Le Chatelier's principle is used. Most tissue is more acidic than lung tissue because carbon dioxide is produced by cellular respiration in these tissues, where it reacts with water to produce protons and bicarbonate. Because the carbon dioxide concentration is higher, the equilibrium shifts to the bicarbonate side. The opposite is seen in the lungs, where carbon dioxide is being released, reducing its concentration, so the equilibrium shifts to favoring carbon dioxide production.\n\nOccurrence and function\nCarbonic anhydrase was initially isolated and characterised from red blood cells in 1933, with simultaneous reports by Meldrum and Roughton (at Cambridge University in the United Kingdom) and by Stadie and O\u2019Brien (at the University of Pennsylvania in the United States), both while searching for a \"catalytic factor... necessary for rapid transit of the HCO3\u2212 [bicarbonate anion] from the erythrocyte to... pulmonary capillar[ies]\".",
+          "cos_sim_score": 0.6496968269348145,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::CA1 (gene)",
+          "title": "CA1 (gene)",
+          "url": "https://en.wikipedia.org/wiki/CA1_(gene)",
+          "text": "Carbonic anhydrase 1 is an enzyme that in humans is encoded by the CA1 gene.\nCarbonic anhydrases (CAs) are a large family of zinc metalloenzymes that catalyze the reversible hydration of carbon dioxide.  They participate in a variety of biological processes, including cellular respiration, calcification, acid-base balance, bone resorption, and the formation of aqueous humor, cerebrospinal fluid, saliva, and gastric acid.\nThey show extensive diversity in tissue distribution and in their subcellular localization.  CA1 is closely linked to CA2 and CA3 genes on chromosome 8, and it encodes a cytosolic protein which is found at the highest level in erythrocytes.  Transcript variants of CA1 utilizing alternative polyA_sites have been described in literature.\n\nStructure\nThe human CA1 protein contains an N-terminus active site, zinc binding site, and substrate-binding site. The crystal structure of the human CA1-bicarbonate anion complex reveals the geometry of two H-bonds between the Glu106-Thr199 pair and the Glu117-His119 pair, and one pi H-bond between a water molecule and the phenyl ring of the Tyr114 residue. The product inhibition of CA1 via bicarbonate anions is correlated to the proton localization change on His119. So the Glu117-His119 H-bond is considered to regulate the ionicity of the zinc ion and the binding strength of the bicarbonate anion.\n\nMechanism\nThe reaction catalyzed by CA1 is the same as other carbonic anhydrase family proteins:",
+          "cos_sim_score": 0.6146590113639832,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

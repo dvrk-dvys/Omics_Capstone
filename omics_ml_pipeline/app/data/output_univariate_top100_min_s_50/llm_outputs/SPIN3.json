@@ -1,0 +1,152 @@
+{
+  "probe_id": "11756894_a_at",
+  "gene_symbol": "SPIN3",
+  "rf_importance": 0.0337,
+  "selection_freq": 1.0,
+  "abs_fold_change": 0.8296025333333326,
+  "combined_score": 0.5606,
+  "probe_count": 1,
+  "probe_ids": "11756894_a_at",
+  "max_combined_score": 0.5606,
+  "mean_abs_fold_change": 0.8296,
+  "max_rf_importance": 0.0337,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-03-31T19:33:30",
+  "interpretation": "SPIN3, or Spindlin-3, is a protein that binds to trimethylated histone H3 at lysine 4 (H3K4me3), which is a marker of active transcription. This binding activity suggests a role in gene regulation, potentially influencing pathways involved in bone metabolism and cellular responses to steroid treatment. However, the retrieved evidence does not directly link SPIN3 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), and its association with other diseases such as neurodegenerative disorders and type 2 diabetes indicates a broader biological relevance rather than a specific connection to SONFH. Therefore, while SPIN3 may play a role in cellular processes that could be relevant to bone health, the evidence is weak and primarily inferred. As such, its potential as a biomarker for early detection of SONFH is limited.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "SPIN3's role in gene regulation may indirectly relate to processes involved in Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), but direct evidence is lacking.",
+  "citations": [
+    "SPIN3 (Q5JUX0). https://www.uniprot.org/uniprotkb/Q5JUX0",
+    "SPIN3 (Q5JUX0-2). https://www.uniprot.org/uniprotkb/Q5JUX0-2",
+    "SPIN3 \u2014 SPIN3. https://platform.opentargets.org/target/ENSG00000204271",
+    "SPIN3 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000204271/associations",
+    "SPIN3 \u2194 type 2 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000204271/associations",
+    "SPIN3 \u2194 systemic lupus erythematosus. https://platform.opentargets.org/target/ENSG00000204271/associations",
+    "SPIN3 \u2194 depressive disorder. https://platform.opentargets.org/target/ENSG00000204271/associations",
+    "List of human protein-coding genes 7. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_7",
+    "List of Boogiepop media. https://en.wikipedia.org/wiki/List_of_Boogiepop_media"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5114,
+    "completion_tokens": 253,
+    "total_tokens": 5367,
+    "estimated_cost_usd": 0.000919
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q5JUX0",
+          "title": "SPIN3 (Q5JUX0)",
+          "url": "https://www.uniprot.org/uniprotkb/Q5JUX0",
+          "text": "Protein: Spindlin-3\nFunction: Exhibits H3K4me3-binding activity",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q5JUX0-2",
+          "title": "SPIN3 (Q5JUX0-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q5JUX0-2",
+          "text": "Protein: Isoform 2 of Spindlin-3",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000204271::function",
+          "title": "SPIN3 \u2014 SPIN3",
+          "url": "https://platform.opentargets.org/target/ENSG00000204271",
+          "text": "Function: Exhibits H3K4me3-binding activity. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000204271::EFO_0005772",
+          "title": "SPIN3 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000204271/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.321",
+          "cos_sim_score": 0.3208836192611726,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000204271::MONDO_0005148",
+          "title": "SPIN3 \u2194 type 2 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000204271/associations",
+          "text": "Disease: type 2 diabetes mellitus\nDescription: A type of diabetes mellitus that is characterized by insulin resistance or desensitization and increased blood glucose levels. This is a chronic disease that can develop gradually over the life of a patient and can be linked to both environmental factors and heredity.\nAssociation score: 0.273",
+          "cos_sim_score": 0.2725814209200642,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000204271::MONDO_0007915",
+          "title": "SPIN3 \u2194 systemic lupus erythematosus",
+          "url": "https://platform.opentargets.org/target/ENSG00000204271/associations",
+          "text": "Disease: systemic lupus erythematosus\nDescription: An autoimmune multi-organ disease typically associated with vasculopathy and autoantibody production. Most patients have antinuclear antibodies (ANA). The presence of anti-dsDNA or anti-Smith antibodies are highly-specific.\nAssociation score: 0.259",
+          "cos_sim_score": 0.2591592440247022,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000204271::MONDO_0002050",
+          "title": "SPIN3 \u2194 depressive disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000204271/associations",
+          "text": "Disease: depressive disorder\nDescription: A melancholy feeling of sadness and despair.\nAssociation score: 0.135",
+          "cos_sim_score": 0.1345177572580848,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::List of human protein-coding genes 7",
+          "title": "List of human protein-coding genes 7",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_7",
+          "text": "== References ==",
+          "cos_sim_score": 0.13484790921211243,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of Boogiepop media",
+          "title": "List of Boogiepop media",
+          "url": "https://en.wikipedia.org/wiki/List_of_Boogiepop_media",
+          "text": "Anime\nBoogiepop Phantom\nOne month ago, an unknown pillar of light pierced the sky over the city. Now, strange events begin to take place. Some people are disappearing, others are beginning to show signs of highly evolved powers, while others are seeing apparitions of people who should be dead. Rumors circulate about urban legend Boogiepop being involved.\n\nBoogiepop and Others\nMarking the 20th Anniversary of Kouhei Kadono's original novel debut and announced at the Dengeki Bunko's 25th Anniversary & New Work Unveiling Stage, a series based on Boogiepop and Others, Boogiepop Returns: Vs. Imaginator, Boogiepop at Dawn, and Boogiepop Overdrive: The King of Distortion aired from January 4 to March 29, 2019. The series updated the setting to the present day.\n\nFilm\nBoogiepop and Others (\u30d6\u30ae\u30fc\u30dd\u30c3\u30d7\u306f\u7b11\u308f\u306a\u3044, Bug\u012bpoppu wa Warawanai) 11 March 2000  1 March 2005\nBased on the novel of the same name, the film follows an alien and a man-eater playing a deadly game of cat-and-mouse at Shinyo Academy, and the students are the ones who suffer as a result of this.\n\nMusic\nTwo audio CDs have been released.\nBoogiepop Phantom Original Soundtrack,  25 February 2000,  30 April 2002.\n\nMusic Inspired by Boogiepop and Others,  25 March 2000,  30 April 2002.\n\nBooks\nBoogiepop wa Warawanai the Movie: Eiga Fanbook  1 March 2000; ISBN 4-8402-1521-9\nThe Art of K\u014dji Ogata: Boogiepop and Others  20 April 2000; ISBN 4-8402-1422-0\n\nManga\nBoogiepop Doesn't Laugh (\u30d6\u30ae\u30fc\u30dd\u30c3\u30d7\u306f\u7b11\u308f\u306a\u3044, Bug\u012bpoppu wa Warawanai)Volume 1  1 February 2001; ISBN 4-8402-1754-8  24 April 2006; ISBN 1-933164-18-2Volume 2  December 2002; ISBN 4-8402-2279-7  15 July 2006; ISBN 1-933164-21-2\nBased on the Boogiepop and Others novel.\nBoogiepop Dual: Losers' Circus (\u30d6\u30ae\u30fc\u30dd\u30c3\u30d7\u00b7\u30c7\u30e5\u30a2\u30eb \u8ca0\u3051\u72ac\u305f\u3061\u306e\u30b5\u30fc\u30ab\u30b9, Bug\u012bpoppu Duaru: Maikenu-tachi no Circus)Volume 1  1 April 2000; ISBN 4-8402-1526-X  15 September 2006; ISBN 1-933164-22-0Volume 2  15 December 2000; ISBN 4-8402-1705-X  15 December 2006 ISBN 1-933164-31-X\n\nReferences\nExternal links\nSeven Seas Entertainment Boogiepop Page\nThe Right Stuf International Boogiepop and Others Page Archived 2007-02-03 at the Wayback Machine\nboogiesite v1.0\nForbidden Booklists of Boogiepop (in Japanese)",
+          "cos_sim_score": 0.12795400619506836,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of Boogiepop media",
+          "title": "List of Boogiepop media",
+          "url": "https://en.wikipedia.org/wiki/List_of_Boogiepop_media",
+          "text": "This is a list of media in Boogiepop series created by Kouhei Kadono. This metaseries consists of 23 light novels, three four-volume light novel spin-offs, a live-action movie, two anime, four manga, audio CDs, and other books.\nAn oddity of the titles of Boogiepop series is that they are almost always made of more than one title, and there is often a mix of English and Japanese ones. This list provides the English release title, the Japanese title (and transliteration), with any further subtitles below.",
+          "cos_sim_score": 0.12168630957603455,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of Boogiepop media",
+          "title": "List of Boogiepop media",
+          "url": "https://en.wikipedia.org/wiki/List_of_Boogiepop_media",
+          "text": "Light novels\n1. Boogiepop and Others (\u30d6\u30ae\u30fc\u30dd\u30c3\u30d7\u306f\u7b11\u308f\u306a\u3044, Bug\u012bpoppu wa Warawanai)Boogiepop and Others   10 February 1998; ISBN 4-8402-0804-2  14 February 2006; ISBN 1-933164-16-6\nAn alien being chases an escaped clone of itself, a man-eater hiding in Shinyo Academy. As students disappear one by one, people begin to wonder if they are being taken by the legendary Boogiepop.\n2. Boogiepop Returns: VS Imaginator Part 1 (\u30d6\u30ae\u30fc\u30dd\u30c3\u30d7\u00b7\u30ea\u30bf\u30fc\u30f3\u30ba VS\u30a4\u30de\u30b8\u30cd\u30fc\u30bf\u30fcPart 1, Bug\u012bpoppu Rit\u0101nzu vs. Imajin\u0113t\u0101 Part 1)\"Sign\"  10 August 1998; ISBN 4-07-309430-0  21 June 2006; ISBN 1-933164-20-4\nOne year ago, Boogiepop defeated Imaginator which seems to be trying to return. Jin Asakura, who can see people's hearts as plants, is visited by the phantom of Imaginator's last host.  Meanwhile, two agents from the Towa Organisation are trying to find Boogiepop. Whilst Camille tries to lure out Boogiepop indirectly, Spooky E finds himself face-to-face with Shinyo Academy's shinigami.\n3. Boogiepop Returns: VS Imaginator Part 2 (\u30d6\u30ae\u30fc\u30dd\u30c3\u30d7\u00b7\u30ea\u30bf\u30fc\u30f3\u30ba VS\u30a4\u30de\u30b8\u30cd\u30fc\u30bf\u30fcPart 2, Bug\u012bpoppu Rit\u0101nzu vs. Imajin\u0113t\u0101 Part 2)\"Parade\"  10 August 1998; ISBN 4-07-309447-5  15 October 2006; ISBN 4-07-309447-5\n4. Boogiepop in the Mirror: \"Pandora\" (\u30d6\u30ae\u30fc\u30dd\u30c3\u30d7\u00b7\u30a4\u30f3\u00b7\u30b6\u00b7\u30df\u30e9\u30fc \u300c\u30d1\u30f3\u30c9\u30e9\u300d, Bug\u012bpoppu in za Mir\u0101 \"Pandora\")Does anybody really know what time is it?  10 December 1998; ISBN 4-07-310350-4   19 July 2018 (e-book); 5 February 2019; ISBN 978-1-642750-38-6 (print)\nSix children with the ability to predict the future, each in different ways. One day, Boogiepop begins to enter their premonitions.\n5. Boogiepop Overdrive: The King of Distortion (\u30d6\u30ae\u30fc\u30dd\u30c3\u30d7\u00b7\u30aa\u30fc\u30d0\u30fc\u30c9\u30e9\u30a4\u30d6 \u6b6a\u66f2\u738b, Bug\u012bpoppu Oob\u0101doraibu Waikyoku\u014d)Heartbreaker II  10 February 1999; ISBN 4-07-310887-5  9 August 2018 (e-book);  5 February 2019; ISBN 978-1-642750-38-6 (print)\nTeratsuki Kyouichiro, a man with connections to the Towa Organisation, constructed The Moon Temple, but has now suddenly died.  The building is to be demolished in a month's time, but an accident seals visitors to the building, allowing the King of Distortion to manifest.\n6. Boogiepop at Dawn (\u591c\u660e\u3051\u306e\u30d6\u30ae\u30fc\u30dd\u30c3\u30d7, Yoake no Bug\u012bpoppu)Boogiepop at Dawn  10 May 1999; ISBN 4-8402-1197-3  5 August 2008; ISBN 978-1-934876-06-0\nThe prequel to the Boogiepop series.  A serial killer is stalking the streets, meanwhile Kirima Nagi is hospitalised with an unknown disease, and Miyashita Touka begins to exhibit unusual behaviour.\n7. Boogiepop Missing: Peppermint Wizard (\u30d6\u30ae\u30fc\u30dd\u30c3\u30d7\u00b7\u30df\u30c3\u30b7\u30f3\u30b0 \u30da\u30d1\u30fc\u30df\u30f3\u30c8\u306e\u9b54\u8853\u5e2b, Bug\u012bpoppu Misshingu: Pep\u0101minto no Majutsushi)Peppermint wizard, or Rize and fall of poor innocent puppet   10 August 1999; ISBN 4-8402-1250-3\nAfter trying the Peppermint ice cream made by Kigawa Tosuke, Teratsuki Kyouichiro uses him to start a chain known as The Peppermint Wizard.  The ice cream is able to take away people's pain, but does not go unnoticed by the Towa Organisation.",
+          "cos_sim_score": 0.11181284487247467,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of Boogiepop media",
+          "title": "List of Boogiepop media",
+          "url": "https://en.wikipedia.org/wiki/List_of_Boogiepop_media",
+          "text": "14. Boogiepop Intolerance: The Ark of Orpheus (\u30d6\u30ae\u30fc\u30dd\u30c3\u30d7\u00b7\u30a4\u30f3\u30c8\u30ec\u30e9\u30f3\u30b9 \u30aa\u30eb\u30d5\u30a7\u306e\u65b9\u821f, Bug\u012bpoppu Intorerinsu: Orufe no Hakobune)Ark of Orpheus  10 April 2006; ISBN 4-8402-3384-5\nA boy discovers his girlfriend is an MPLS, and both the Towa Organization and Boogiepop are after her.\n15. Boogiepop Question: The Pyramid in Silence (\u30d6\u30ae\u30fc\u30dd\u30c3\u30d7\u00b7\u30af\u30a8\u30b9\u30c1\u30e7\u30f3 \u6c88\u9ed9\u30d4\u30e9\u30df\u30c3\u30c9, Bug\u012bpoppu Kuesuchon: Chinmoku Piramiddo)The Silent Pyramid  10 January 2008; ISBN 4-8402-4141-4\n16. Boogiepop Darkly: The Scat Singing Cat (\u30d6\u30ae\u30fc\u30dd\u30c3\u30d7\u00b7\u30c0\u30fc\u30af\u30ea\u30fc \u5316\u3051\u732b\u3068\u3081\u307e\u3044\u306e\u30b9\u30ad\u30e3\u30c3\u30c8, Bug\u012bpoppu D\u0101kur\u012b: Bakeneko to Memai no Sukkyatto)The Scat Singing Cat  10 December 2009; ISBN 978-4-04-868197-1\n17. Boogiepop Unknown: Into The Lunar Rainbow (\u30d6\u30ae\u30fc\u30dd\u30c3\u30d7\u00b7\u30a2\u30f3\u30ce\u30a6\u30f3 \u58ca\u308c\u304b\u3051\u306e\u30e0\u30fc\u30f3\u30e9\u30a4\u30c8, Bug\u012bpoppu Announ Kowarekake no M\u016bnraito)Into The Lunar Rainbow  10 January 2011; ISBN 978-4-04-870122-8\n18. Boogiepop Within: Paradigm Rust (\u30d6\u30ae\u30fc\u30dd\u30c3\u30d7\u00b7\u30a6\u30a3\u30ba\u30a4\u30f3 \u3055\u3073\u307e\u307f\u308c\u306e\u30d0\u30d3\u30ed\u30f3, Bug\u012bpoppu Wizuin: Sabimamire no Babiron)Paradigm Rust  10 September 2013; ISBN 978-4-04-891870-1\n19. Boogiepop Changeling: Stalking in Decadent Black (\u30d6\u30ae\u30fc\u30dd\u30c3\u30d7\u00b7\u30c1\u30a7\u30f3\u30b8\u30ea\u30f3\u30b0 \u6eb6\u6697\u306e\u30c7\u30ab\u30c0\u30f3\u30c8\u00b7\u30d6\u30e9\u30c3\u30af, Bug\u012bpoppu Chenjiringu Youan no Dekadanto Burakku)Stalking in Decadent Black  10 November 2014; ISBN 978-4-04-869047-8\n20. Boogiepop Antithesis: Revolt of Alternative Ego (\u30d6\u30ae\u30fc\u30dd\u30c3\u30d7\u00b7\u30a2\u30f3\u30c1\u30c6\u30fc\u30bc \u30aa\u30eb\u30bf\u30ca\u30c6\u30a3\u30f4\u00b7\u30a8\u30b4\u306e\u4e71\u9006, Bug\u012bpoppu Anchit\u0113ze: Orutanathibu Ego no Rangyaku)Revolt of Alternative Ego  10 March 2016; ISBN 978-4-04-865831-7\n21. Boogiepop Doubtful: Rabbit Run Rapidly (\u30d6\u30ae\u30fc\u30dd\u30c3\u30d7\u00b7\u30c0\u30a6\u30c8\u30d5\u30eb\u3000\u4e0d\u53ef\u6297\u529b\u306e\u30e9\u30d3\u30c3\u30c8\u30fb\u30e9\u30f3, Bug\u012bpoppu Dautofuru: Fukakou no Rabitto Ran)Rabbit Run Rapidly  7 July 2017; ISBN 978-4-04-893233-2\n22. Boogiepop Beautiful: The Kingcraft of Panic-Cute (\u30d6\u30ae\u30fc\u30dd\u30c3\u30d7\u00b7\u30d3\u30e5\u30fc\u30c6\u30a3\u30d5\u30eb\u3000\u30d1\u30cb\u30c3\u30af\u30ad\u30e5\u30fc\u30c8\u306e\u5e1d\u738b\u5b66, Bug\u012bpoppu Byutifuru: Panikku Ky\u016bto no Teiougaku)Kingcraft of Panic-Cute  10 April 2018; ISBN 978-4-04-893800-6\n23. Boogiepop Almighty: When Dizzy Thinks of Lizzy (\u30d6\u30ae\u30fc\u30dd\u30c3\u30d7\u30fb\u30aa\u30fc\u30eb\u30de\u30a4\u30c6\u30a3 \u30c7\u30a3\u30b8\u30fc\u304c\u30ea\u30b8\u30fc\u3092\u60f3\u3046\u3068\u304d, Bug\u012bpoppu \u014crumaiti: Dij\u012b ga Rij\u012b o Omou Toki)When Dizzy Thinks of Lizzy  10 May 2019; ISBN 978-4-04-912323-4\nThese serialized novels take place within the Boogiepop universe:",
+          "cos_sim_score": 0.10480254888534546,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

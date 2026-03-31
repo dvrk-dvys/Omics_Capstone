@@ -1,0 +1,160 @@
+{
+  "probe_id": "11731879_a_at",
+  "gene_symbol": "NLRP1",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0165634664999983,
+  "abs_fold_change": 1.2655,
+  "univariate_score": 1.2654,
+  "probe_count": 1,
+  "probe_ids": "11731879_a_at",
+  "max_combined_score": 1.2654,
+  "mean_abs_fold_change": 1.2655,
+  "max_rf_importance": 0.0,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T00:16:44",
+  "interpretation": "NLRP1 encodes a protein that acts as a sensor in the NLRP1 inflammasome, which is crucial for mediating inflammatory responses through the activation of caspase-1 and the subsequent release of pro-inflammatory cytokines like IL-1\u03b2 and IL-18. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), pyroptosis\u2014a form of programmed cell death associated with inflammation\u2014has been implicated in the disease's pathology. Evidence from recent studies indicates that NLRP1 is among the top differentially expressed pyroptosis-related genes in SONFH patients, suggesting its significant role in the inflammatory processes that contribute to the disease. The diagnostic potential of NLRP1 is highlighted by its high area under the curve (AUC) value of 0.953, indicating strong predictive capability for SONFH. Thus, NLRP1 is not only biologically relevant to the inflammatory mechanisms underlying SONFH but also serves as a promising biomarker for early detection of the condition.",
+  "evidence_relation": "direct",
+  "evidence_tier": "Tier 1",
+  "evidence_confidence": "high",
+  "biomarker_potential": "strong",
+  "relevance_summary": "NLRP1 is a key regulator of pyroptosis and inflammation, making it a significant biomarker for early detection of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "NLRP1 (Q9C000). https://www.uniprot.org/uniprotkb/Q9C000",
+    "NLRP1 (Q9C000-3). https://www.uniprot.org/uniprotkb/Q9C000-3",
+    "NLRP1 (Q9C000-2). https://www.uniprot.org/uniprotkb/Q9C000-2",
+    "NLRP1 \u2014 NLRP1. https://platform.opentargets.org/target/ENSG00000091592",
+    "NLRP1 \u2194 corneal intraepithelial dyskeratosis-palmoplantar hyperkeratosis-laryngeal dyskeratosis syndrome. https://platform.opentargets.org/target/ENSG00000091592/associations",
+    "NLRP1 \u2194 autoinflammation with arthritis and dyskeratosis. https://platform.opentargets.org/target/ENSG00000091592/associations",
+    "NLRP1 \u2194 Corneal intraepithelial dyskeratosis with palmoplantar hyperkeratosis and laryngeal dyskeratosis. https://platform.opentargets.org/target/ENSG00000091592/associations",
+    "NLRP1 \u2194 respiratory papillomatosis, juvenile recurrent, congenital. https://platform.opentargets.org/target/ENSG00000091592/associations",
+    "Pyroptosis -related potential diagnostic biomarkers in steroid-induced osteonecrosis of the femoral head. (2023). https://pubmed.ncbi.nlm.nih.gov/37491198/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 6447,
+    "completion_tokens": 292,
+    "total_tokens": 6739,
+    "estimated_cost_usd": 0.001142
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9C000",
+          "title": "NLRP1 (Q9C000)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9C000",
+          "text": "Protein: NACHT, LRR and PYD domains-containing protein 1\nFunction: Acts as the sensor component of the NLRP1 inflammasome, which mediates inflammasome activation in response to various pathogen-associated signals, leading to subsequent pyroptosis (PubMed:12191486, PubMed:17349957, PubMed:22665479, PubMed:27662089, PubMed:31484767, PubMed:33093214, PubMed:33410748, PubMed:33731929, PubMed:33731932, PubMed:35857590). Inflammasomes are supramolecular complexes that assemble in the cytosol in response to pathogens and other damage-associated signals and play critical roles in innate immunity and inflammation (PubMed:12191486, PubMed:17349957, PubMed:22665479). Acts as a recognition receptor (PRR): recognizes specific pathogens and other damage-associated signals, such as cleavage by some human enteroviruses and rhinoviruses, double-stranded RNA, UV-B irradiation, or Val-boroPro inhibitor, and mediates the formation of the inflammasome polymeric complex composed of NLRP1, CASP1 and PYCARD/ASC (PubMed:12191486, PubMed:17349957, PubMed:22665479, PubMed:25562666, PubMed:30096351, PubMed:30291141, PubMed:33093214, PubMed:33243852, PubMed:33410748, PubMed:35857590). In response to pathogen-associated signals, the N-terminal part of NLRP1 is degraded by the proteasome, releasing the cleaved C-terminal part of the protein (NACHT, LRR and PYD domains-containing protein 1, C-terminus), which polymerizes and associates with PYCARD/ASC to initiate the formation of the inflammasome complex: the NLRP1 inflammasome recruits pro-caspase-1 (proCASP1) and promotes caspase-1 (CASP1) activation, which subsequently cleaves and activates inflammatory cytokines IL1B and IL18 and gasdermin-D (GSDMD), leading to pyroptosis (PubMed:12191486, PubMed:17349957, PubMed:22665479, PubMed:32051255, PubMed:33093214). In the absence of GSDMD expression, the NLRP1 inflammasome is able to recruit and activate CASP8, leading to activation of gasdermin-E (GSDME) (PubMed:33852854, PubMed:35594856). Activation of NLRP1 inflammasome is also required for HMGB1 secretion; the active cytokines and HMGB1 stimulate inflammatory responses (PubMed:22801494). Binds ATP and shows ATPase activity (PubMed:11113115, PubMed:15212762, PubMed:33243852). Plays an important role in antiviral immunity and inflammation in the human airway epithelium (PubMed:33093214). Specifically recognizes a number of pathogen-associated signals: upon infection by human rhinoviruses 14 and 16 (HRV-14 and HRV-16), NLRP1 is cleaved and activated which triggers NLRP1-dependent inflammasome activation and IL18 secretion (PubMed:33093214). Positive-strand RNA viruses, such as Semliki forest virus and long dsRNA activate the NLRP1 inflammasome, triggering IL1B release in a NLRP1-dependent fashion (PubMed:33243852). Acts as a direct sensor for long dsRNA and thus RNA virus infection (PubMed:33243852). May also be activated by muramyl dipeptide (MDP), a fragment of bacterial peptidoglycan, in a NOD2-dependent manner (PubMed:18511561). The NLRP1 inflammasome is also activated in response to UV-B irradiation causing ribosome collisions: ribosome collisions cause phosphorylation and activation of NLRP1 in a MAP3K20-dependent manner, leading to pyroptosis (PubMed:35857590) Constitutes the precursor of the NLRP1 inflammasome, which mediates autoproteolytic processing within the FIIND domain to generate the N-terminal and C-terminal parts, which are associated non-covalently in absence of pathogens and other damage-associated signals Regulatory part that prevents formation of the NLRP1 inflammasome: in absence of pathogens and other damage-associated signals, interacts with the C-terminal part of NLRP1 (NACHT, LRR and PYD domains-containing protein 1, C-terminus), preventing activation of the NLRP1 inflammasome (PubMed:33093214). In response to pathogen-associated signals, this part is ubiquitinated and degraded by the proteasome, releasing the cleaved C-terminal part of the protein, which polymerizes and forms the NLRP1 inflammasome (PubMed:33093214) Constitutes the active part of the NLRP1 inflammasome (PubMed:33093214, PubMed:33731929, PubMed:33731932). In absence of pathogens and other damage-associated signals, interacts with the N-terminal part of NLRP1 (NACHT, LRR and PYD domains-containing protein 1, N-terminus), preventing activation of the NLRP1 inflammasome (PubMed:33093214). In response to pathogen-associated signals, the N-terminal part of NLRP1 is degraded by the proteasome, releasing this form, which polymerizes and associates with PYCARD/ASC to form of the NLRP1 inflammasome complex: the NLRP1 inflammasome complex then directly recruits pro-caspase-1 (proCASP1) and promotes caspase-1 (CASP1) activation, leading to gasdermin-D (GSDMD) cleavage and subsequent pyroptosis (PubMed:33093214) It is unclear whether is involved in inflammasome formation. It is not cleaved within the FIIND domain, does not assemble into specks, nor promote IL1B release (PubMed:22665479). However, in an vitro cell-free system, it has been shown to be activated by MDP (PubMed:17349957)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9C000-3",
+          "title": "NLRP1 (Q9C000-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9C000-3",
+          "text": "Protein: Isoform 3 of NACHT, LRR and PYD domains-containing protein 1",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9C000-2",
+          "title": "NLRP1 (Q9C000-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9C000-2",
+          "text": "Protein: Isoform 2 of NACHT, LRR and PYD domains-containing protein 1\nFunction: It is unclear whether is involved in inflammasome formation. It is not cleaved within the FIIND domain, does not assemble into specks, nor promote IL1B release (PubMed:22665479). However, in an vitro cell-free system, it has been shown to be activated by MDP (PubMed:17349957)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000091592::function",
+          "title": "NLRP1 \u2014 NLRP1",
+          "url": "https://platform.opentargets.org/target/ENSG00000091592",
+          "text": "Function: Acts as the sensor component of the NLRP1 inflammasome, which mediates inflammasome activation in response to various pathogen- associated signals, leading to subsequent pyroptosis (PubMed:12191486, PubMed:17349957, PubMed:22665479, PubMed:27662089, PubMed:31484767, PubMed:33093214, PubMed:33410748, PubMed:33731929, PubMed:33731932, PubMed:35857590). Inflammasomes are supramolecular complexes that assemble in the cytosol in response to pathogens and other damage- associated signals and play critical roles in innate immunity and inflammation (PubMed:12191486, PubMed:17349957, PubMed:22665479). Acts as a recognition receptor (PRR): recognizes specific pathogens and other damage-associated signals, such as cleavage by some human enteroviruses and rhinoviruses, double-stranded RNA, UV-B irradiation, or Val-boroPro inhibitor, and mediates the formation of the inflammasome polymeric complex composed of NLRP1, CASP1 and PYCARD/ASC (PubMed:12191486, PubMed:17349957, PubMed:22665479, PubMed:25562666, PubMed:30096351, PubMed:30291141, PubMed:33093214, PubMed:33243852, PubMed:33410748, PubMed:35857590). In response to pathogen-associated signals, the N-terminal part of NLRP1 is degraded by the proteasome, releasing the cleaved C-terminal part of the protein (NACHT, LRR and PYD domains-containing protein 1, C-terminus), which polymerizes and associates with PYCARD/ASC to initiate the formation of the inflammasome complex: the NLRP1 inflammasome recruits pro-caspase-1 (proCASP1) and promotes caspase-1 (CASP1) activation, which subsequently cleaves and activates inflammatory cytokines IL1B and IL18 and gasdermin-D (GSDMD), leading to pyroptosis (PubMed:12191486, PubMed:17349957, PubMed:22665479, PubMed:32051255, PubMed:33093214). In the absence of GSDMD expression, the NLRP1 inflammasome is able to recruit and activate CASP8, leading to activation of gasdermin-E (GSDME) (PubMed:33852854, PubMed:35594856). Activation of NLRP1 inflammasome is also required for HMGB1 secretion; the active cytokines and HMGB1 stimulate inflammatory responses (PubMed:22801494). Binds ATP and shows ATPase activity (PubMed:11113115, PubMed:15212762, PubMed:33243852). Plays an important role in antiviral immunity and inflammation in the human airway epithelium (PubMed:33093214). Specifically recognizes a number of pathogen-associated signals: upon infection by human rhinoviruses 14 and 16 (HRV-14 and HRV-16), NLRP1 is cleaved and activated which triggers NLRP1-dependent inflammasome activation and IL18 secretion (PubMed:33093214). Positive-strand RNA viruses, such as Semliki forest virus and long dsRNA activate the NLRP1 inflammasome, triggering IL1B release in a NLRP1-dependent fashion (PubMed:33243852). Acts as a direct sensor for long dsRNA and thus RNA virus infection (PubMed:33243852). May also be activated by muramyl dipeptide (MDP), a fragment of bacterial peptidoglycan, in a NOD2- dependent manner (PubMed:18511561). The NLRP1 inflammasome is also activated in response to UV-B irradiation causing ribosome collisions: ribosome collisions cause phosphorylation and activation of NLRP1 in a MAP3K20-dependent manner, leading to pyroptosis (PubMed:35857590).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000091592::MONDO_0014089",
+          "title": "NLRP1 \u2194 corneal intraepithelial dyskeratosis-palmoplantar hyperkeratosis-laryngeal dyskeratosis syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000091592/associations",
+          "text": "Disease: corneal intraepithelial dyskeratosis-palmoplantar hyperkeratosis-laryngeal dyskeratosis syndrome\nAssociation score: 0.725",
+          "cos_sim_score": 0.7252039859799739,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000091592::MONDO_0060457",
+          "title": "NLRP1 \u2194 autoinflammation with arthritis and dyskeratosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000091592/associations",
+          "text": "Disease: autoinflammation with arthritis and dyskeratosis\nAssociation score: 0.692",
+          "cos_sim_score": 0.6917829454562446,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000091592::Orphanet_352662",
+          "title": "NLRP1 \u2194 Corneal intraepithelial dyskeratosis with palmoplantar hyperkeratosis and laryngeal dyskeratosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000091592/associations",
+          "text": "Disease: Corneal intraepithelial dyskeratosis with palmoplantar hyperkeratosis and laryngeal dyskeratosis\nAssociation score: 0.613",
+          "cos_sim_score": 0.612729124763208,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000091592::MONDO_0032925",
+          "title": "NLRP1 \u2194 respiratory papillomatosis, juvenile recurrent, congenital",
+          "url": "https://platform.opentargets.org/target/ENSG00000091592/associations",
+          "text": "Disease: respiratory papillomatosis, juvenile recurrent, congenital\nAssociation score: 0.464",
+          "cos_sim_score": 0.4637561778632678,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::37491198",
+          "title": "Pyroptosis -related potential diagnostic biomarkers in steroid-induced osteonecrosis of the femoral head.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37491198/",
+          "year": "2023",
+          "text": "Steroid-induced necrosis of the femoral head (SONFH) is a refractory orthopedic hip disease occurring in young and middle-aged people, with glucocorticoids being the most common cause. Previous experimental studies have shown that cell pyroptosis may be involved in the pathological process of SONFH, but its pathogenesis in SONFH is still unclear. This study aims to screen and validate potential pyroptosis-related genes in SONFH diagnosis by bioinformatics analysis to further elucidate the mechanism of pyroptosis in SONFH. There were 33 pyroptosis-related genes obtained from the prior reviews. The mRNA expression was downloaded from GSE123568 dataset in the Gene Expression Omnibus (GEO) database, including 10 non-SONFH (following steroid administration) samples and 30 SONFH samples. The pyroptosis-related differentially expressed genes involved in SONFH were identified with \"affy\" and \"limma\" R package by intersecting the GSE123568 dataset with pyroptosis genes. In addition, Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analyses of the pyroptosis-related differentially expressed genes involved in SONFH were conducted by \"clusterProfiler\" R package and visualized by \"GOplot\" R package. Then, the correlations between the expression levels of the pyroptosis-related differentially expressed genes involved in SONFH were confirmed with \"corrplot\" R package. Moreover, the protein-protein interaction (PPI) network was analysed by using GeneMANIA database. Next, The ROC curve of pyroptosis-related differentially expressed genes were analyzed by \"pROC\" R package. A total of 10 pyroptosis-related differentially expressed genes were identified between the peripheral blood samples of SONFH patients and non-SONFH patients based on the defined criteria, including 20 upregulated genes and 10 downregulated genes. The GO and KEGG pathway enrichment analyses revealed that these 10 pyroptosis-related differentially expressed genes involved in SONFH were particularly enriched in cysteine-type endopeptidase activity involved in apoptotic process, positive regulation of interleukin-1 beta secretion and NOD-like receptor signaling pathway. Correlation analysis revealed significant correlations among the 10 differentially expressed pyroptosis-related genes involved in SONFH. The PPI results demonstrated that the 10 pyroptosis-related differentially expressed genes interacted with each other. Compared to non-SONFH samples, these pyroptosis-related differentially expressed genes had good predictive diagnostic efficacy",
+          "cos_sim_score": 0.39592668414115906,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::37491198",
+          "title": "Pyroptosis -related potential diagnostic biomarkers in steroid-induced osteonecrosis of the femoral head.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37491198/",
+          "year": "2023",
+          "text": "were particularly enriched in cysteine-type endopeptidase activity involved in apoptotic process, positive regulation of interleukin-1 beta secretion and NOD-like receptor signaling pathway. Correlation analysis revealed significant correlations among the 10 differentially expressed pyroptosis-related genes involved in SONFH. The PPI results demonstrated that the 10 pyroptosis-related differentially expressed genes interacted with each other. Compared to non-SONFH samples, these pyroptosis-related differentially expressed genes had good predictive diagnostic efficacy (AUC\u2009=\u20091.000, CI\u2009=\u20091.000-1.000) in the SONFH samples, and NLRP1 had the highest diagnostic value (AUC: 0.953) in the SONFH samples. There were 10 potential pyroptosis-related differentially expressed genes involved in SONFH were identified via bioinformatics analysis, which might serve as potential diagnostic biomarkers because they regulated pyroptosis. These results expand the understanding of SONFH associated with pyroptosis and provide new insights to further explore the mechanism of action and diagnosis of pyroptosis associated in SONFH.",
+          "cos_sim_score": 0.16164091229438782,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_fetch_by_id",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::37491198",
+          "title": "Pyroptosis -related potential diagnostic biomarkers in steroid-induced osteonecrosis of the femoral head.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37491198/",
+          "year": "2023",
+          "text": "Steroid-induced necrosis of the femoral head (SONFH) is a refractory orthopedic hip disease occurring in young and middle-aged people, with glucocorticoids being the most common cause. Previous experimental studies have shown that cell pyroptosis may be involved in the pathological process of SONFH, but its pathogenesis in SONFH is still unclear. This study aims to screen and validate potential pyroptosis-related genes in SONFH diagnosis by bioinformatics analysis to further elucidate the mechanism of pyroptosis in SONFH. There were 33 pyroptosis-related genes obtained from the prior reviews. The mRNA expression was downloaded from GSE123568 dataset in the Gene Expression Omnibus (GEO) database, including 10 non-SONFH (following steroid administration) samples and 30 SONFH samples. The pyroptosis-related differentially expressed genes involved in SONFH were identified with \"affy\" and \"limma\" R package by intersecting the GSE123568 dataset with pyroptosis genes. In addition, Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analyses of the pyroptosis-related differentially expressed genes involved in SONFH were conducted by \"clusterProfiler\" R package and visualized by \"GOplot\" R package. Then, the correlations between the expression levels of the pyroptosis-related differentially expressed genes involved in SONFH were confirmed with \"corrplot\" R package. Moreover, the protein-protein interaction (PPI) network was analysed by using GeneMANIA database. Next, The ROC curve of pyroptosis-related differentially expressed genes were analyzed by \"pROC\" R package. A total of 10 pyroptosis-related differentially expressed genes were identified between the peripheral blood samples of SONFH patients and non-SONFH patients based on the defined criteria, including 20 upregulated genes and 10 downregulated genes. The GO and KEGG pathway enrichment analyses revealed that these 10 pyroptosis-related differentially expressed genes involved in SONFH were particularly enriched in cysteine-type endopeptidase activity involved in apoptotic process, positive regulation of interleukin-1 beta secretion and NOD-like receptor signaling pathway. Correlation analysis revealed significant correlations among the 10 differentially expressed pyroptosis-related genes involved in SONFH. The PPI results demonstrated that the 10 pyroptosis-related differentially expressed genes interacted with each other. Compared to non-SONFH samples, these pyroptosis-related differentially expressed genes had good predictive diagnostic efficacy",
+          "cos_sim_score": 0.39592668414115906,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::37491198",
+          "title": "Pyroptosis -related potential diagnostic biomarkers in steroid-induced osteonecrosis of the femoral head.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37491198/",
+          "year": "2023",
+          "text": "were particularly enriched in cysteine-type endopeptidase activity involved in apoptotic process, positive regulation of interleukin-1 beta secretion and NOD-like receptor signaling pathway. Correlation analysis revealed significant correlations among the 10 differentially expressed pyroptosis-related genes involved in SONFH. The PPI results demonstrated that the 10 pyroptosis-related differentially expressed genes interacted with each other. Compared to non-SONFH samples, these pyroptosis-related differentially expressed genes had good predictive diagnostic efficacy (AUC\u2009=\u20091.000, CI\u2009=\u20091.000-1.000) in the SONFH samples, and NLRP1 had the highest diagnostic value (AUC: 0.953) in the SONFH samples. There were 10 potential pyroptosis-related differentially expressed genes involved in SONFH were identified via bioinformatics analysis, which might serve as potential diagnostic biomarkers because they regulated pyroptosis. These results expand the understanding of SONFH associated with pyroptosis and provide new insights to further explore the mechanism of action and diagnosis of pyroptosis associated in SONFH.",
+          "cos_sim_score": 0.16164091229438782,
+          "source_type": "pubmed"
+        }
+      ]
+    }
+  ]
+}

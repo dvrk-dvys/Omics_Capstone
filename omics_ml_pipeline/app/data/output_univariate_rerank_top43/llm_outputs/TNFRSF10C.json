@@ -1,0 +1,147 @@
+{
+  "probe_id": "11746957_a_at",
+  "gene_symbol": "TNFRSF10C",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0331269329999968,
+  "abs_fold_change": 1.1651,
+  "univariate_score": 1.1672,
+  "probe_count": 1,
+  "probe_ids": "11746957_a_at",
+  "max_combined_score": 1.1672,
+  "mean_abs_fold_change": 1.1651,
+  "max_rf_importance": 0.0,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T00:29:06",
+  "interpretation": "TNFRSF10C, also known as Decoy Receptor 1, is a member of the tumor necrosis factor receptor superfamily that acts as a receptor for the cytotoxic ligand TRAIL. It is characterized by its lack of a cytoplasmic death domain, which means it does not induce apoptosis but may protect cells from TRAIL-mediated apoptosis by competing for ligand binding. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the role of TNFRSF10C could be relevant as it may influence cell survival in the bone microenvironment, particularly under stress conditions induced by steroid treatment. However, the evidence linking TNFRSF10C directly to SONFH is limited, primarily suggesting its involvement in apoptosis regulation rather than a direct association with the disease. Therefore, while TNFRSF10C has biological relevance, its potential as a biomarker for early detection of SONFH is weak due to insufficient direct evidence.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "TNFRSF10C may influence cell survival in the bone microenvironment, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "TNFRSF10C (O14798). https://www.uniprot.org/uniprotkb/O14798",
+    "TNFRSF10C \u2014 TNFRSF10C. https://platform.opentargets.org/target/ENSG00000173535",
+    "TNFRSF10C \u2194 Iron deficiency anemia. https://platform.opentargets.org/target/ENSG00000173535/associations",
+    "TNFRSF10C \u2194 vascular disease. https://platform.opentargets.org/target/ENSG00000173535/associations",
+    "TNFRSF10C \u2194 intracranial hemorrhage. https://platform.opentargets.org/target/ENSG00000173535/associations",
+    "TNFRSF10C \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000173535/associations",
+    "Decoy receptor 1. https://en.wikipedia.org/wiki/Decoy_receptor_1",
+    "Herpesvirus entry mediator. https://en.wikipedia.org/wiki/Herpesvirus_entry_mediator",
+    "CXCR4. https://en.wikipedia.org/wiki/CXCR4",
+    "Type I cytokine receptor. https://en.wikipedia.org/wiki/Type_I_cytokine_receptor",
+    "List of human clusters of differentiation. https://en.wikipedia.org/wiki/List_of_human_clusters_of_differentiation"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4526,
+    "completion_tokens": 269,
+    "total_tokens": 4795,
+    "estimated_cost_usd": 0.00084
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O14798",
+          "title": "TNFRSF10C (O14798)",
+          "url": "https://www.uniprot.org/uniprotkb/O14798",
+          "text": "Protein: Tumor necrosis factor receptor superfamily member 10C\nFunction: Receptor for the cytotoxic ligand TRAIL. Lacks a cytoplasmic death domain and hence is not capable of inducing apoptosis. May protect cells against TRAIL mediated apoptosis by competing with TRAIL-R1 and R2 for binding to the ligand",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000173535::function",
+          "title": "TNFRSF10C \u2014 TNFRSF10C",
+          "url": "https://platform.opentargets.org/target/ENSG00000173535",
+          "text": "Function: Receptor for the cytotoxic ligand TRAIL. Lacks a cytoplasmic death domain and hence is not capable of inducing apoptosis. May protect cells against TRAIL mediated apoptosis by competing with TRAIL- R1 and R2 for binding to the ligand.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000173535::HP_0001891",
+          "title": "TNFRSF10C \u2194 Iron deficiency anemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000173535/associations",
+          "text": "Disease: Iron deficiency anemia\nAssociation score: 0.394",
+          "cos_sim_score": 0.3943507643611911,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000173535::EFO_0004264",
+          "title": "TNFRSF10C \u2194 vascular disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000173535/associations",
+          "text": "Disease: vascular disease\nDescription: Pathological processes involving any of the BLOOD VESSELS in the cardiac or peripheral circulation. They include diseases of ARTERIES; VEINS; and rest of the vasculature system in the body.\nAssociation score: 0.356",
+          "cos_sim_score": 0.3563578413534014,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000173535::EFO_0000551",
+          "title": "TNFRSF10C \u2194 intracranial hemorrhage",
+          "url": "https://platform.opentargets.org/target/ENSG00000173535/associations",
+          "text": "Disease: intracranial hemorrhage\nDescription: Bleeding within the SKULL, including hemorrhages in the brain and the three membranes of MENINGES. The escape of blood often leads to the formation of HEMATOMA in the cranial epidural, subdural, and subarachnoid spaces.\nAssociation score: 0.290",
+          "cos_sim_score": 0.2895171165584986,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000173535::EFO_0005772",
+          "title": "TNFRSF10C \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000173535/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.271",
+          "cos_sim_score": 0.2709851781695109,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Decoy receptor 1",
+          "title": "Decoy receptor 1",
+          "url": "https://en.wikipedia.org/wiki/Decoy_receptor_1",
+          "text": "Decoy receptor 1 (DCR1), also known as TRAIL receptor 3 (TRAILR3) and tumor necrosis factor receptor superfamily member 10C (TNFRSF10C), is a human cell surface receptor of the TNF-receptor superfamily.\n\nFunction\nThe protein encoded by this gene is a member of the TNF-receptor superfamily. This receptor contains an extracellular TRAIL-binding domain and a transmembrane domain, but no cytoplasmic death domain. This receptor is not capable of inducing apoptosis, and is thought to function as an antagonistic receptor that protects cells from TRAIL-induced apoptosis. This gene was found to be a p53-regulated DNA damage-inducible gene. The expression of this gene was detected in many normal tissues but not in most cancer cell lines, which may explain the specific sensitivity of cancer cells to the apoptosis-inducing activity of TRAIL.\n\nReferences\nFurther reading\n\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.30422064661979675,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Herpesvirus entry mediator",
+          "title": "Herpesvirus entry mediator",
+          "url": "https://en.wikipedia.org/wiki/Herpesvirus_entry_mediator",
+          "text": "Herpesvirus entry mediator (HVEM), also known as tumor necrosis factor receptor superfamily member 14 (TNFRSF14), is a human cell surface receptor of the TNF-receptor superfamily encoded by the TNFRSF14 gene.\n\nNomenclature\nThis protein was originally known as herpesvirus entry mediator A (HveA); HveB and HveC are structurally unrelated proteins of the immunoglobulin superfamily. It is also known as CD270 in the cluster of differentiation classification. Moreover, it is also referred to as ATAR (another TRAF-associated receptor).\n\nFunction\nThe protein encoded by this gene is a member of the TNF-receptor superfamily. The cytoplasmic region of this receptor was found to bind to several TNF receptor associated factor (TRAF) family members, which may mediate the signal transduction pathways that activate the immune response.\nIn melanocytic cells TNFRSF14 gene expression may be regulated by MITF.\n\nInteractions\nTNFRSF14 has been shown to interact with TRAF2, TNFSF14 and TRAF5.\n\nClinical relevance\nMutations in this gene have been recurrently been associated to cases of diffuse large B-cell lymphoma and pediatric-type follicular lymphoma.\nThis receptor was identified as a cellular mediator of herpes simplex virus (HSV) entry. Binding of HSV viral envelope glycoprotein D (gD) to this receptor protein has been shown to be part of the viral entry mechanism.\n\nReferences\nFurther reading\n\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.24732905626296997,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::CXCR4",
+          "title": "CXCR4",
+          "url": "https://en.wikipedia.org/wiki/CXCR4",
+          "text": "Clinical significance\nDrugs that block the CXCR4 receptor appear to be capable of \"mobilizing\" hematopoietic stem cells into the bloodstream as peripheral blood stem cells. Peripheral blood stem cell mobilization is very important in hematopoietic stem cell transplantation (as a recent  alternative to transplantation of surgically harvested bone marrow) and is currently performed using drugs such as G-CSF. G-CSF is a growth factor for neutrophils (a common type of white blood cells), and may act by increasing the activity of neutrophil-derived proteases such as neutrophil elastase in the bone marrow leading to proteolytic degradation of SDF-1. Plerixafor (AMD3100) is a drug, approved for routine clinical use, which directly blocks the CXCR4 receptor. It is a very efficient inducer of hematopoietic stem cell mobilization in animal and human studies. In a small human clinical trial to evaluate the safety and efficacy of fucoidan ingestion (brown seaweed extract), 3g daily of 75% w/w oral fucoidan for 12 days increased the proportion of CD34+CXCR4+ from 45 to 90% and the serum SDF-1 levels, which could be useful in CD34+ cells homing/mobilization via SDF-1/CXCR4 axis.\nIt has been associated with WHIM syndrome. WHIM like mutations in CXCR4 were recently identified in patients with Waldenstr\u00f6m's macroglobulinemia, a B-cell malignancy. The presence of CXCR4 WHIM mutations has been associated with clinical resistance to ibrutinib in patients with Waldenstr\u00f6m's macroglobulinemia.\nWhile CXCR4's expression is low or absent in many healthy tissues, it was demonstrated to be expressed in over 23 types of cancer, including breast cancer, ovarian cancer, melanoma, and prostate cancer. Expression of this receptor in cancer cells has been linked to metastasis to tissues containing a high concentration of CXCL12, such as lungs, liver and bone marrow. However, in breast cancer where SDF1/CXCL12 is also expressed by the cancer cells themselves along with CXCR4, CXCL12 expression is positively correlated with disease free (metastasis free) survival. CXCL12 (over-)expressing cancers might not sense the CXCL12 gradient released from the metastasis target tissues since the receptor, CXCR4, is saturated with the ligand produced in an autocrine manner. Another explanation of this observation is provided by a study that shows the ability of CXCL12 (and  CCL2) producing tumors to entrain neutrophils that inhibit seeding of tumor cells in the lung.\n\nDrug response\nChronic exposure to THC has been shown to increase T lymphocyte CXCR4 expression on both CD4+ and CD8+ T lymphocytes in rhesus macaques. It has been shown that BCR signalling inhibitors also affect CXCR4 pathway and thus CD20 expression.\n\nInteractions\nCXCR4 has been shown to interact with USP14.\n\nSee also\nCXCR4 antagonist\nHIV tropism\nEntry inhibitor\nDiscovery and development of CCR5 receptor antagonists\n\nReferences\nFurther reading\nExternal links\n\"Chemokine Receptors: CXCR4\". IUPHAR Database of Receptors and Ion Channels. International Union of Basic and Clinical Pharmacology.\nHuman CXCR4 genome location and CXCR4 gene details page  in the UCSC Genome Browser.\nHuman LAP3 genome location and LAP3 gene details page  in the UCSC Genome Browser.\nOverview of all the structural information available in the PDB for UniProt: P61073 (C-X-C chemokine receptor type 4) at the PDBe-KB.",
+          "cos_sim_score": 0.18949437141418457,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Type I cytokine receptor",
+          "title": "Type I cytokine receptor",
+          "url": "https://en.wikipedia.org/wiki/Type_I_cytokine_receptor",
+          "text": "Type I cytokine receptors are transmembrane receptors expressed on the surface of cells that recognize and respond to cytokines with four \u03b1-helical strands.  These receptors are also known under the name hemopoietin receptors, and share a common amino acid motif (WSXWS) in the extracellular portion adjacent to the cell membrane.  Members of the type I cytokine receptor family comprise different chains, some of which are involved in ligand/cytokine interaction and others that are involved in signal transduction.\nThe common cytokine-binding domain is related to the Fibronectin type III domain.\n\nSignal transduction chains\nThe signal transducing chains are often shared between different receptors within this receptor family.\n\nThe IL-2 receptor common gamma chain (also known as CD132) is shared between:\nIL-2 receptor\nIL-4 receptor\nIL-7 receptor\nIL-9 receptor\nIL-13 receptor\nIL-15 receptor\nIL-21 receptor\nThe common beta chain (CSF2RB, CD131, or CDw131) is shared between the following type I cytokine receptors:\nGM-CSF receptor\nIL-3 receptor\nIL-5 receptor.\nThe gp130 receptor (Glycoprotein 130) (also known as gp130, IL6ST, IL6-beta or CD130) is shared between:\nIL-6 receptor\nIL-11 receptor\nIL-12 receptor\nIL-27 receptor\nLeukemia inhibitory factor receptor\nOncostatin M receptor\n\nExamples\nType I cytokine receptors include interleukin receptors, colony stimulating factor receptors and other cytokine receptors\n\nInterleukin receptors\nInterleukin-1 receptor\nInterleukin-2 receptor\nInterleukin-3 receptor\nInterleukin-4 receptor\nInterleukin-5 receptor\nInterleukin-6 receptor\nInterleukin-7 receptor\nInterleukin-9 receptor\nInterleukin-11 receptor\nInterleukin-12 receptor\nInterleukin-13 receptor\nInterleukin-15 receptor\nInterleukin-18 receptor\nInterleukin-21 receptor\nInterleukin-23 receptor\nInterleukin-27 receptor\n\nColony stimulating factor receptors\nErythropoietin receptor\nGM-CSF receptor\nG-CSF receptor\nThrombopoietin receptor\n\nHormone receptor/neuropeptide receptor\nGrowth hormone receptor\nProlactin receptor\nLeptin receptor\n\nOther\nOncostatin M receptor\nLeukemia inhibitory factor receptor\n\nReferences\nExternal links\nCytokine+Receptors at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.11971236765384674,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of human clusters of differentiation",
+          "title": "List of human clusters of differentiation",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_clusters_of_differentiation",
+          "text": "The following is a list of human clusters of differentiation (or CD) molecules.\n\n* = group; \n** = not listed on hcdm\n\nReferences\nExternal links\nAbCam antigen poster\nCD Marker Poster, Beckman Coulter",
+          "cos_sim_score": 0.1188703328371048,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

@@ -97,6 +97,17 @@ def parse_args():
         choices=["univariate", "multivariate"],
         help="Feature selection mode: univariate (ANN-based ranking) or multivariate (hybrid statistical ranking)",
     )
+    parser.add_argument(
+        "--univariate-rerank",
+        action="store_true",
+        default=False,
+        help=(
+            "Univariate mode only. When set, rerank the ANN shortlist by "
+            "univariate_score = 0.7*z(Median_TestAUC) + 0.3*z(abs_fold_change) "
+            "before writing biomarker_shortlist.csv. "
+            "Default: OFF (baseline ANN-rank-only behavior)."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -202,8 +213,9 @@ def main():
             )
 
         # Inject mode + top_n into config so downstream plot functions can label outputs
-        config["_mode"]  = args.mode
-        config["_top_n"] = top_n
+        config["_mode"]             = args.mode
+        config["_top_n"]            = top_n
+        config["_univariate_rerank"] = args.univariate_rerank
 
         # 6. Biomarker shortlist — runs before train so composite plot has the CSV
         log.info("🎯 [6/7] Biomarker shortlist")

@@ -1,0 +1,163 @@
+{
+  "probe_id": "11735177_at",
+  "gene_symbol": "HAL",
+  "rf_importance": 0.0,
+  "selection_freq": 0.4,
+  "abs_fold_change": 1.7645861999999983,
+  "combined_score": 0.4648,
+  "probe_count": 1,
+  "probe_ids": "11735177_at",
+  "max_combined_score": 0.4648,
+  "mean_abs_fold_change": 1.7646,
+  "max_rf_importance": 0.0,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-03-31T20:08:03",
+  "interpretation": "The HAL gene encodes the enzyme histidine ammonia-lyase, which catalyzes the conversion of histidine to ammonia and urocanic acid, playing a crucial role in histidine metabolism. While there is no direct evidence linking HAL to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in amino acid metabolism and potential implications in metabolic disorders suggest a possible indirect connection. Elevated levels of histidine or disruptions in its metabolism could theoretically influence bone health, although this remains speculative. The evidence retrieved primarily discusses HAL's role in histidinemia and other skin-related conditions, which do not directly correlate with SONFH. Therefore, while HAL may have biological relevance, its potential as a biomarker for SONFH is weak due to the lack of specific evidence linking it to the disease context.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "HAL may have indirect implications in metabolic processes that could affect bone health, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "HAL (P42357). https://www.uniprot.org/uniprotkb/P42357",
+    "HAL (P42357-2). https://www.uniprot.org/uniprotkb/P42357-2",
+    "HAL (P42357-3). https://www.uniprot.org/uniprotkb/P42357-3",
+    "HAL \u2194 histidinemia. https://platform.opentargets.org/target/ENSG00000084110/associations",
+    "HAL \u2194 skin neoplasm. https://platform.opentargets.org/target/ENSG00000084110/associations",
+    "HAL \u2194 cutaneous melanoma. https://platform.opentargets.org/target/ENSG00000084110/associations",
+    "HAL \u2194 skin disease. https://platform.opentargets.org/target/ENSG00000084110/associations",
+    "HAL \u2194 basal cell carcinoma. https://platform.opentargets.org/target/ENSG00000084110/associations",
+    "Histidine ammonia-lyase. https://en.wikipedia.org/wiki/Histidine_ammonia-lyase",
+    "Tyrosine ammonia-lyase. https://en.wikipedia.org/wiki/Tyrosine_ammonia-lyase",
+    "Histidine. https://en.wikipedia.org/wiki/Histidine",
+    "Phenylalanine ammonia-lyase. https://en.wikipedia.org/wiki/Phenylalanine_ammonia-lyase"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5651,
+    "completion_tokens": 240,
+    "total_tokens": 5891,
+    "estimated_cost_usd": 0.000992
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P42357",
+          "title": "HAL (P42357)",
+          "url": "https://www.uniprot.org/uniprotkb/P42357",
+          "text": "Protein: Histidine ammonia-lyase",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P42357-2",
+          "title": "HAL (P42357-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P42357-2",
+          "text": "Protein: Isoform 2 of Histidine ammonia-lyase",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P42357-3",
+          "title": "HAL (P42357-3)",
+          "url": "https://www.uniprot.org/uniprotkb/P42357-3",
+          "text": "Protein: Isoform 3 of Histidine ammonia-lyase",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000084110::MONDO_0009345",
+          "title": "HAL \u2194 histidinemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000084110/associations",
+          "text": "Disease: histidinemia\nDescription: Histidinemia is a rare metabolic disorder characterized by elevated histidine levels in blood, urine, and cerebrospinal fluid, generally with no clinical repercussions.\nAssociation score: 0.687",
+          "cos_sim_score": 0.6865922812669484,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000084110::EFO_0004198",
+          "title": "HAL \u2194 skin neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000084110/associations",
+          "text": "Disease: skin neoplasm\nDescription: Tumors or cancer of the SKIN.\nAssociation score: 0.403",
+          "cos_sim_score": 0.4031121218381411,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000084110::EFO_0000389",
+          "title": "HAL \u2194 cutaneous melanoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000084110/associations",
+          "text": "Disease: cutaneous melanoma\nDescription: A primary melanoma arising from atypical melanocytes in the skin. Precursor lesions include acquired and congenital melanocytic nevi, and dysplastic nevi. Several histologic variants have been recognized, including superficial spreading melanoma, acral lentiginous melanoma, nodular melanoma, and lentigo maligna melanoma.\nAssociation score: 0.372",
+          "cos_sim_score": 0.37212288446823333,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000084110::EFO_0000701",
+          "title": "HAL \u2194 skin disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000084110/associations",
+          "text": "Disease: skin disease\nDescription: Any deviation from the normal structure or function of the skin or subcutaneous tissue that is manifested by a characteristic set of symptoms and signs.\nAssociation score: 0.368",
+          "cos_sim_score": 0.367619962636044,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000084110::EFO_0004193",
+          "title": "HAL \u2194 basal cell carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000084110/associations",
+          "text": "Disease: basal cell carcinoma\nDescription: A carcinoma involving the basal cells.\nAssociation score: 0.367",
+          "cos_sim_score": 0.3674889484075245,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Histidine ammonia-lyase",
+          "title": "Histidine ammonia-lyase",
+          "url": "https://en.wikipedia.org/wiki/Histidine_ammonia-lyase",
+          "text": "Histidine ammonia-lyase (EC 4.3.1.3, histidase, histidinase) is an enzyme that in humans is encoded by the HAL gene. It converts histidine into ammonia and urocanic acid. Its systematic name is L-histidine ammonia-lyase (urocanate-forming).\n\nFunction\nHistidine ammonia-lyase is a cytosolic enzyme catalyzing the first reaction in histidine catabolism, the nonoxidative deamination of L-histidine to trans-urocanic acid. The reaction is catalyzed by 3,5-dihydro-5-methyldiene-4H-imidazol-4-one (MIO), an electrophilic cofactor which is formed autocatalytically by cyclization of the protein backbone of the enzyme.\n\nPathology\nMutations in the gene for histidase are associated with histidinemia and urocanic aciduria.\n\nSee also\nPhenylalanine ammonia-lyase, another enzyme that contains the MIO cofactor\n\nReferences\nFurther reading\nExternal links\nHistidine+Ammonia-Lyase at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.7611178159713745,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Tyrosine ammonia-lyase",
+          "title": "Tyrosine ammonia-lyase",
+          "url": "https://en.wikipedia.org/wiki/Tyrosine_ammonia-lyase",
+          "text": "Tyrosine ammonia lyase (EC 4.3.1.23, L-tyrosine ammonia-lyase, TAL or Tyrase) is an enzyme in the natural phenols biosynthesis pathway. It transforms L-tyrosine into p-coumaric acid.\n\n  \n  \n    \n      \n        \n          \n            \u2192\n            \n              T\n              A\n              L\n            \n          \n        \n      \n    \n    {\\displaystyle {\\xrightarrow {TAL}}}\n  \n  + Ammonia + H+\nL-tyrosine = trans-p-hydroxycinnamate + NH3\n\nSee also\nEC 4.3.1.24 (phenylalanine ammonia-lyase)\nEC 4.3.1.25 (phenylalanine/tyrosine ammonia-lyase)\n\nReferences\nExternal links\nTyrosine+ammonia-lyase at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nwww.hhmi.org",
+          "cos_sim_score": 0.6490421295166016,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Histidine",
+          "title": "Histidine",
+          "url": "https://en.wikipedia.org/wiki/Histidine",
+          "text": "Histidine or histidin (symbol His or H) is an essential amino acid that is used in the biosynthesis of proteins. It contains an \u03b1-amino group (which is in the protonated \u2013NH3+ form under biological conditions), a carboxylic acid group (which is in the deprotonated \u2013COO\u2212 form under biological conditions), and an imidazole side chain (which is partially protonated), classifying it as a positively charged amino acid at physiological pH. Initially thought essential only for infants, it has now been shown in longer-term studies to be essential for adults also. It is encoded by the codons CAU and CAC.\nHistidine was first isolated by Albrecht Kossel and Sven Gustaf Hedin in 1896. The name stems from its discovery in tissue, from \u1f31\u03c3\u03c4\u03cc\u03c2 hist\u00f3s \"tissue\". It is also a precursor to histamine, a vital inflammatory agent in immune responses. The acyl radical is histidyl.\n\nProperties of the imidazole side chain\nAt neutral or physiological pH, the imidazole side chain is neutral. The imidazole side chain in histidine has a pKa of approximately 6.0. Thus, below a pH of 6, the imidazole ring is mostly protonated and carries a positive +1 charge (as described by the Henderson\u2013Hasselbalch equation). The resulting imidazolium ring bears two NH bonds and has a positive charge. The positive charge is equally distributed between both nitrogen atoms and can be represented with two equally important resonance structures. Sometimes, the symbol Hip is used for this protonated form instead of the usual His. Above pH 6, one of the two protons is lost. The remaining proton of the imidazole ring can reside on either nitrogen atom, giving rise to what are known as the N3-H or N1-H tautomers. In the N1-H tautomer, the NH group is nearer the backbone. These neutral tautomers, also referred to as N\u03b5 (or N\u03c4, tau meaning tele \u2014 far) and N\u03b4 (or N\u03c0, pi meaning pros \u2014 near), are sometimes referred to with symbols Hie and Hid, respectively. The imidazole/imidazolium ring of histidine is aromatic at all pH values. Under certain conditions, all three ion-forming groups of histidine can be charged forming the histidinium cation.\nThe acid-base properties of the imidazole side chain are relevant to the catalytic mechanism of many enzymes. In catalytic triads, the basic nitrogen of histidine abstracts a proton from serine, threonine, or cysteine to activate it as a nucleophile. In a histidine proton shuttle, histidine is used to quickly shuttle protons. It can do this by abstracting a proton with its basic nitrogen to make a positively charged intermediate and then use another molecule, a buffer, to extract the proton from its acidic nitrogen. In carbonic anhydrases, a histidine proton shuttle is utilized to rapidly shuttle protons away from a zinc-bound water molecule to quickly regenerate the active form of the enzyme. In helices E and F of hemoglobin, histidine influences binding of dioxygen as well as carbon monoxide. This interaction enhances the affinity of Fe(II) for O2 but destabilizes the binding of CO, which binds only 200 times stronger in hemoglobin, compared to 20,000 times stronger in free heme.\nThe tautomerism and acid-base properties of the imidazole side chain has been characterized by 15N NMR spectroscopy. The two 15N chemical shifts are similar (about 200 ppm, relative to nitric acid on the sigma scale, on which increased shielding corresponds to increased chemical shift). NMR spectral measurements shows that the chemical shift of N1-H drops slightly, whereas the chemical shift of N3-H drops considerably (about 190 vs. 145 ppm). This change indicates that the N1-H tautomer is preferred, possibly due to hydrogen bonding to the neighboring ammonium. The shielding at N3 is substantially reduced due to the second-order paramagnetic effect, which involves a symmetry-allowed interaction between the nitrogen lone pair and the excited \u03c0* states of the aromatic ring. At pH > 9, the chemical shifts of N1 and N3 are approximately 185 and 170 ppm.",
+          "cos_sim_score": 0.5950486660003662,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Phenylalanine ammonia-lyase",
+          "title": "Phenylalanine ammonia-lyase",
+          "url": "https://en.wikipedia.org/wiki/Phenylalanine_ammonia-lyase",
+          "text": "The enzyme phenylalanine ammonia lyase (EC 4.3.1.24)  catalyzes the conversion of L-phenylalanine to ammonia and trans-cinnamic acid.:\n\nL-phenylalanine = trans-cinnamate + NH3\nPhenylalanine ammonia lyase (PAL) is the first and committed step in the phenyl propanoid pathway and is therefore involved in the biosynthesis of the polyphenol compounds such as flavonoids, phenylpropanoids, and lignin in plants. Phenylalanine ammonia lyase is found widely in plants, as well as some bacteria, yeast, and fungi, with isoenzymes existing within many different species. It has a molecular mass in the range of 270\u2013330 kDa.  The activity of PAL is induced dramatically in response to various stimuli such as tissue wounding, pathogenic attack, light, low temperatures, and hormones.  PAL has recently been studied for possible therapeutic benefits in humans afflicted with phenylketonuria. It has also been used in the generation of L-phenylalanine as precursor of the sweetener aspartame.\nThe enzyme is a member of the ammonia lyase family, which cleaves carbon\u2013nitrogen bonds.  Like other lyases, PAL requires only one substrate for the forward reaction, but two for the reverse. It is thought to be mechanistically similar to the related enzyme histidine ammonia-lyase (EC:4.3.1.3, HAL). The systematic name of this enzyme class is L-phenylalanine ammonia-lyase (trans-cinnamate-forming). Previously, it was designated as EC 4.3.1.5, but that class has been redesignated as EC 4.3.1.24 (phenylalanine ammonia-lyases), EC 4.3.1.25 (tyrosine ammonia-lyases), and EC 4.3.1.26 (phenylalanine/tyrosine ammonia-lyases). Other names in common use include tyrase, phenylalanine deaminase, tyrosine ammonia-lyase, L-tyrosine ammonia-lyase, phenylalanine ammonium-lyase, PAL, and L-phenylalanine ammonia-lyase.\n\nMechanism\nPhenylalanine ammonia lyase is specific for L-phenylalanine, and to a lesser extent, L-tyrosine. The reaction catalyzed by PAL is a spontaneous elimination reaction rather than an oxidative deamination.\nThe cofactor 3,5-dihydro-5-methyldiene-4H-imidazol-4-one (MIO) is involved in the reaction and sits atop the positive pole of three polar helices in the active site, which helps to increase its electrophilicity. MIO is attacked by the aromatic ring of L-phe, which activates the C-H bond on the \u03b2 carbon for deprotonation by a basic residue. The carbanion intermediate of this E1cB-elimination reaction, which is stabilized by partial positive regions in the active site, then expels ammonia to form the cinnamate alkene. The mechanism of the reaction of PAL is thought to be similar to the mechanism of the related enzyme histidine ammonia lyase.\n\nA dehydroalanine residue was long thought to be the key electrophilic catalytic residue in PAL and HAL, but the active residue was later found instead to be MIO, which is even more electrophilic. It is formed by cyclization and dehydration of conserved Ala-Ser-Gly tripeptide segment. The first step of MIO formation is a cyclization-elimination by an intramolecular nucleophilic attack of the nitrogen of Gly204 at the carbonyl group of Ala202. A subsequent water elimination from the side chain of Ser203 completes the system of crossconjugated double bonds. Numbers are given for the phenylalanine ammonia lyase from Petroselinum crispum (PDB 1W27). Although MIO is a polypeptide modification, it was proposed to call it a prosthetic group, because it has the quality of an added organic compound.\nPAL is inhibited by trans-cinnamic acid, and, in some species, may be inhibited by trans-cinnamic acid derivatives. The unnatural amino acids D-Phe and D-Tyr, the enantiomeric forms of the normal substrate, are competitive inhibitors.",
+          "cos_sim_score": 0.5428745746612549,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Phenylalanine ammonia-lyase",
+          "title": "Phenylalanine ammonia-lyase",
+          "url": "https://en.wikipedia.org/wiki/Phenylalanine_ammonia-lyase",
+          "text": "Structure\nPhenylalanine ammonia lyase is composed of four identical subunits composed mainly of alpha-helices, with pairs of monomers forming a single active site.  Catalysis in PAL may be governed by the dipole moments of seven different alpha helices associated with the active site.  The active site contains the electrophilic group MIO non-covalently bonded to three helices. Leu266, Asn270, Val269, Leu215, Lys486, and Ile472 are located on the active site helices, while Phe413, Glu496, and Gln500 contribute to the stabilization of the MIO cofactor. The orientation of dipole moments generated by helices within the active site generates an electropositive region for ideal reactivity with MIO. The partially positive regions in the active site may also help stabilize the charge of a carbanion intermediate. PAL is structurally similar to the mechanistically related histidine ammonia lyase, although PAL has approximately 215 additional residues.\n\nFunction\nPhenylalanine ammonia lyase can perform different functions in different species. It is found mainly in some plants and fungi (i.e.  yeast). In fungal and yeast cells, PAL plays an important catabolic role, generating carbon and nitrogen. In plants it is a key biosynthetic enzyme that catalyzes the first step in the synthesis of a variety of polyphenyl compounds  and is mainly involved in defense mechanisms. PAL is involved in 5 metabolic pathways: tyrosine metabolism, phenylalanine metabolism, nitrogen metabolism, phenylpropanoid biosynthesis, and alkaloid biosynthesis.\n\nDisease relevance\nEnzyme substitution therapy using PAL to treat phenylketonuria (PKU), an autosomal recessive genetic disorder in humans in which mutations in the phenylalanine hydroxylase (PAH, EC 1.14.16.1) gene inactivate the enzyme is being explored. This leads to an inability of the patient to metabolize phenylalanine, causing elevated levels of Phe in the bloodstream (hyperphenylalaninemia) and intellectual disability if therapy is not begun at birth.\nIn May 2018, the FDA approved pegvaliase, a recombinant PEGylated phenylalanine ammonia-lyase for the treatment of PKU that had been developed by Biomarin.\n\nIn plants\nLactuca sativa was investigated by V\u00e0squez et al. 2017. They find that UV-C treatment increased PAL enzyme activity. This increase results in decreased susceptibility to Botrytis cinerea.\n\nResearch\nArtificial sweeteners\nThe reverse reaction catalyzed by PAL has been explored for use to convert trans-cinnamic acid to L-phenylalanine, which is a precursor of the sweetener aspartame. This process was developed by Genex Corporation but was never commercially adopted.\n\nUnnatural amino acid synthesis\nAnalogous to how aspartame is synthesized, PAL is also used to synthesize unnatural amino acids from various substituted cinnamic acids for research purposes. Steric hindrance from arene substitution limits PAL's utility for this purpose however. For instance, when Rhodotorula glutinis was used to affect this biotransformation the enzyme was discovered to be intolerant of all para substituents other than fluorine, presumably due to the element's small atomic radius. Meta and ortho positions were found to be more tolerant, but still limited by, larger substituents. For instance the enzyme's active site permitted ortho methoxy substitution but forbade meta ethoxy. Other organisms with different versions of the enzyme may be less limited in this way.\n\nStructural studies\nAs of late 2007, 5 structures have been solved for this class of enzymes, with PDB accession codes 1T6J, 1T6P, 1W27, 1Y2M, and 2NYF.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.5422019958496094,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

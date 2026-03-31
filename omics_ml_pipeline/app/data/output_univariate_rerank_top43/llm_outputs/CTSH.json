@@ -1,0 +1,144 @@
+{
+  "probe_id": "11757383_a_at",
+  "gene_symbol": "CTSH",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0,
+  "abs_fold_change": 1.1463,
+  "univariate_score": 1.1488,
+  "probe_count": 1,
+  "probe_ids": "11757383_a_at",
+  "max_combined_score": 1.1488,
+  "mean_abs_fold_change": 1.1463,
+  "max_rf_importance": 0.0,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T00:30:22",
+  "interpretation": "CTSH encodes the protein Cathepsin H, which plays a crucial role in the degradation of proteins within lysosomes. While there is no direct evidence linking CTSH to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its function in protein degradation may be relevant in the context of bone metabolism and cellular responses to steroid treatment. Steroids can induce changes in bone remodeling and may affect lysosomal activity, potentially implicating CTSH in the pathological processes of SONFH. However, the evidence supporting this connection is weak, relying primarily on general biological reasoning rather than specific studies. Therefore, while CTSH may have some biological relevance, its potential as a clinical biomarker for early detection of SONFH is limited.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "CTSH may be involved in lysosomal protein degradation, which could be relevant to the bone changes seen in Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "CTSH (P09668). https://www.uniprot.org/uniprotkb/P09668",
+    "CTSH \u2014 CTSH. https://platform.opentargets.org/target/ENSG00000103811",
+    "CTSH \u2194 type 1 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000103811/associations",
+    "CTSH \u2194 skin cancer. https://platform.opentargets.org/target/ENSG00000103811/associations",
+    "CTSH \u2194 basal cell carcinoma. https://platform.opentargets.org/target/ENSG00000103811/associations",
+    "CTSH \u2194 narcolepsy-cataplexy syndrome. https://platform.opentargets.org/target/ENSG00000103811/associations",
+    "CTSH (disambiguation). https://en.wikipedia.org/wiki/CTSH_(disambiguation)",
+    "Cognizant. https://en.wikipedia.org/wiki/Cognizant"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5531,
+    "completion_tokens": 223,
+    "total_tokens": 5754,
+    "estimated_cost_usd": 0.000963
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P09668",
+          "title": "CTSH (P09668)",
+          "url": "https://www.uniprot.org/uniprotkb/P09668",
+          "text": "Protein: Pro-cathepsin H\nFunction: Important for the overall degradation of proteins in lysosomes",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000103811::function",
+          "title": "CTSH \u2014 CTSH",
+          "url": "https://platform.opentargets.org/target/ENSG00000103811",
+          "text": "Function: Important for the overall degradation of proteins in lysosomes.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000103811::MONDO_0005147",
+          "title": "CTSH \u2194 type 1 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000103811/associations",
+          "text": "Disease: type 1 diabetes mellitus\nDescription: A chronic condition characterized by minimal or absent production of insulin by the pancreas.\nAssociation score: 0.548",
+          "cos_sim_score": 0.5481319551898879,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000103811::MONDO_0002898",
+          "title": "CTSH \u2194 skin cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000103811/associations",
+          "text": "Disease: skin cancer\nDescription: A malignant neoplasm involving the zone of skin\nAssociation score: 0.493",
+          "cos_sim_score": 0.49342178164822753,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000103811::EFO_0004193",
+          "title": "CTSH \u2194 basal cell carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000103811/associations",
+          "text": "Disease: basal cell carcinoma\nDescription: A carcinoma involving the basal cells.\nAssociation score: 0.493",
+          "cos_sim_score": 0.4925687961281261,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000103811::MONDO_0016158",
+          "title": "CTSH \u2194 narcolepsy-cataplexy syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000103811/associations",
+          "text": "Disease: narcolepsy-cataplexy syndrome\nDescription: A type of narcolepsy characterized by excessive day-time sleepiness associated with uncontrollable sleep urges and cataplexy (loss of muscle tone often triggered by pleasant emotions).\nAssociation score: 0.449",
+          "cos_sim_score": 0.4488539386758845,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::CTSH (disambiguation)",
+          "title": "CTSH (disambiguation)",
+          "url": "https://en.wikipedia.org/wiki/CTSH_(disambiguation)",
+          "text": "CTSH is the ticker symbol of Cognizant.\nCTSH may also refer to\n\nCTSH (gene), a human gene which encodes the protein Cathepsin H\n\nSee also\nCognizance (disambiguation)",
+          "cos_sim_score": 0.6953185200691223,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Cognizant",
+          "title": "Cognizant",
+          "url": "https://en.wikipedia.org/wiki/Cognizant",
+          "text": "Cognizant Technology Solutions Corporation is an American multinational information technology consulting and outsourcing company originally founded in India. It is headquartered in Teaneck, New Jersey, United States. Cognizant is part of the NASDAQ-100 and trades under CTSH.  It was founded in Chennai, India, as an in-house technology unit of Dun & Bradstreet in 1994, and started serving external clients in 1996. After a series of corporate reorganizations, there was an initial public offering in 1998. Ravi Kumar Singisetti has been the CEO of the company since January 2023, replacing Brian Humphries. Cognizant has historically struggled with high attrition; however, its current rate of 13.9% is relatively high compared to other IT service-based companies.\n\nHistory\nCognizant was established in 1994 in Chennai, India, as Dun & Bradstreet Satyam Software (DBSS), a 76:24 joint venture between Dun & Bradstreet and Satyam Computers, with Kumar Mahadeva, and Srini Raju as the founding CEOs and MDs. It began with 50 employees in Chennai as Dun & Bradstreet's in-house technology unit focused on implementing large-scale IT projects for Dun & Bradstreet businesses. In 1996, the company started pursuing customers beyond Dun & Bradstreet.\nIn 1996, Dun & Bradstreet spun off several of its subsidiaries, including Erisco, IMS International, Nielsen Media Research, Pilot Software, Strategic Technologies and DBSS, to form a new company called Cognizant Corporation, headquartered in Chennai, India. Three months later, in 1997, DBSS renamed itself Cognizant Technology Solutions. \nIn July 1997, Dun & Bradstreet bought Satyam's 24% stake in DBSS for $3.4 million. Headquarters were moved to the United States, and in March 1998, Kumar Mahadeva was named CEO. Operating as a division of the Cognizant Corporation, the company focused on Y2K-related projects and web development.\n\nIn 1998, the parent company, Cognizant Corporation, split into two companies: IMS Health and Nielsen Media Research. After this restructuring, Cognizant Technology Solutions became a public subsidiary of IMS Health. In June 1998, IMS Health partially spun off the company, conducting an initial public offering of the Cognizant stock. \n\nIn 2003, IMS Health sold its entire 56% stake in Cognizant, which instituted a poison pill provision to prevent hostile takeover attempts. Kumar Mahadeva resigned as the CEO in 2003, and was replaced by Lakshmi Narayanan. Gradually, the company's services portfolio expanded across the IT services landscape and into business process outsourcing (BPO) and business consulting. Lakshmi Narayanan was succeeded by Francisco D'Souza in 2006. \nIn September 2014, Cognizant acquired healthcare IT services provider TriZetto Corp for $2.7 billion. Cognizant shares rose nearly 3 percent in pre-market trading.\nOn 24 June 2015, the company signed a multimillion-dollar agreement with Escorts Group in India to help Escorts' businesses in digital transformation and modernize its operations across all business segments.\nOn 30 June 2015, it partnered with Singapore-based supermarket retailer NTUC FairPrice to perform digital transformation in NTUC's business to improve personalized and consistent customer service across multiple channels.\nOn 1 April 2019, Francisco D'Souza was replaced by Brian Humphries as the CEO.\nIn January 2022, Cognizant sold its acquisition Oy Samlink to Kyndryl and Mustache to DJE Holdings.\nIn 2023, Ravi Kumar S was named as CEO of Cognizant.\nOn 22 April 2024, Cognizant announced its partnership with Microsoft Corporation to extend its reach of Generative AI and Copilots, also to enhance experiences of employee and speed up their cross-industry innovation.\n\nAcquisitions\nOperations\nRegions\nAs of December 2023, the company had over 347,700 employees globally, of which about 254,000 were in India across 13 cities. By 2024, Cognizant's largest employee bases were in Chennai and Hyderabad, each with more than 50,000 employees, followed by Bengaluru with nearly 40,000. The company has local, regional, and global delivery centers in other countries like the UK, Australia, Hungary, Netherlands, Spain, China, Philippines, Canada, Brazil, Argentina, Mexico, Costa Rica.",
+          "cos_sim_score": 0.1721048653125763,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Cognizant",
+          "title": "Cognizant",
+          "url": "https://en.wikipedia.org/wiki/Cognizant",
+          "text": "Toxic workplace, sexual harassment and mental health issues\nIn February 2019, an investigative report by The Verge described poor working conditions in Cognizant's Phoenix, Arizona, office. Cognizant employees tasked with content moderation for Facebook developed mental health issues, including post-traumatic stress disorder, as a result of exposure to graphic violence, hate speech, and conspiracy theories in the videos they were instructed to evaluate. Moderators at the Phoenix office reported drug abuse, alcohol abuse, and sexual intercourse in the workplace, and feared retaliation from terminated workers who threatened to harm them. In response, a Cognizant representative stated the company would examine the issues in the report.\nThe Verge published a follow-up investigation of Cognizant's Tampa, Florida, office in June 2019. Employees in the Tampa location described working conditions that were worse than the conditions in the Phoenix office. Content moderator Keith Utley suffered a heart attack while working for Cognizant in March 2018 and died in a hospital; the Tampa office lacked an on-site defibrillator. Moderators were required to sign non-disclosure agreements with Cognizant to obtain the job, although three former workers broke the agreements to provide information to The Verge. In the Tampa office, workers reported bed bugs, unsanitary work conditions, inadequate mental health resources, sexual harassment, workplace violence, and theft. As a result of exposure to videos depicting graphic violence, animal abuse, and child sexual abuse, some employees developed psychological trauma and posttraumatic stress disorder. Cognizant sanitized the office before The Verge's visit, a practice the publication described as a \"dog-and-pony-show phenomenon\". In response to negative coverage related to its content moderation contracts, a Facebook director indicated that Facebook is in the process of developing a \"global resiliency team\" that would assist its contractors.\nOn October 30, 2019, Cognizant announced that it would phase out a portion of its content moderation contracts in 2020.\n\nSee also\nDisney collusion litigation\nTech companies in the New York City metropolitan region\n\nReferences\nExternal links\n Media related to Cognizant Technology Solutions at Wikimedia Commons\nOfficial website \nBusiness data for Cognizant Technology Solutions Corporation:",
+          "cos_sim_score": 0.13952550292015076,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Cognizant",
+          "title": "Cognizant",
+          "url": "https://en.wikipedia.org/wiki/Cognizant",
+          "text": "Company culture\nCognizant has been included on many employer recognition lists, including Great Place to Work, Forbes\u2019 World\u2019s Best Employers and TIME\u2019s World\u2019s Best Companies. Their independent research highlight Cognizant\u2019s emphasis on career development through learning programs and internal job moves. They also note initiatives that encourage associates to experiment with new ideas, innovate and feel a sense of belonging.\n\nCriticism and controversies\nIndia\nBribery\nLarsen & Toubro Ltd (L&T) paid $3.64 million in bribes to Indian government officials on behalf of Cognizant Technology Solutions Corp. to secure permits, ranging from environmental clearance to power. L&T has made illicit payments and Cognizant reimbursed the money by disguising it as compensation for cost overruns.\n\nCompanies Act violations\nIn March 2019, significant publicity was raised because Cognizant repetitively violated the directives of the Registrar of Companies. The Company \"has moved [sic] the Madras High Court fearing possibility of criminal prosecution being launched against it by [the] Registrar of Companies for alleged violation of the provisions of the Companies Act of 2013 and the Companies (Appointment and Disqualification of Directors) Rules of 2014.\"  One of those questions was as to why the company had not disclosed complete information on stock options of its parent holding company \u2014 CTS Corporation in the United States \u2014 having been given to the employees, including its directors, and the payments running to several hundred crores of rupees (approx US $40 million) having been paid to the parent company in the US towards stock compensating recharge.\n\nDiscrimination\nIn 2018, a race discrimination suit was brought: \"Three former employees claim they were forced out of their jobs and replaced with 'less qualified' Indians after being poorly treated by their Indian supervisors and colleagues, given unjustifiably low performance ratings and denied promotions.\" Cognizant said it was \"national origin\" and not race. In a 2024 retrial, a jury found the company had discriminated and should pay damages.\n\nLayoffs\n200 senior executives above the director level were dismissed because they were not able to catch up with the latest technologies. The number of executives who were dismissed is unusually high and brings into question the ability of the company to catch up with the latest technologies.\nIn 2017, eight employees filed petitions with the labor department, complaining Cognizant forced them to resign as part of a performance-based review. The labor department closed the case in favor of employees and advised company management to give one more opportunity for the petitioners to prove themselves. At the time Cognizant had also rolled out a \u2018voluntary separation program\u2019 for directors, associate vice-presidents and senior VP's which compensated them with 6\u20139 months of their salary.\nIn 2017, approximately 6000 Cognizant employees in Hyderabad/Bangalore/Chennai lost their job as a part of company's annual performance review process.\nOn July 1, 2023, Cognizant acquired the Microsoft/Nuance Dragon Ambient eXperience US medical scribes division. On January 8, 2024, Cognizant laid off over 700 of those US medical scribes and managers to migrate the US hospital accounts to their Indian scribes division in a rolling/tiered fashion with termination dates at the end of February and March 2024. In addition, approximately 40 of the US employees (thus not triggering the WARN Act, which stipulates a minimum of 50 employees) were terminated immediately on January 8, 2024, with only 1 month's severance pay instead of the 2 months' severance that would have been required by the WARN Act.\n\nTax evasion\nThe Income Tax department has frozen Cognizant Technology Solutions Corp's bank accounts and deposits in Chennai and Mumbai for allegedly evading a dividend distribution tax (DDT). A Cognizant spokesman confirmed the report and said in a statement that a court has instructed the tax department not to take further action pending further hearings. Cognizant failed to pay the tax of more than 25 billion rupees ($385 million) in the 2016\u201317 financial year, according to The Hindu, citing officials from the tax department.\nThe court asked the company to deposit 15 percent of the disputed tax, amounting to 4.9 billion rupees ($75 million) as security deposit till it decides on the case.\n\nIreland\nWorking conditions\nIn February 2018 the UK and Irish press expressed concerns about contractors employed by Cognizant in Dublin as part of the outsourcing contract with Google about the conditions of employment in relationship to compensation and basic employment allowances like sick leave.",
+          "cos_sim_score": 0.11486509442329407,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Cognizant",
+          "title": "Cognizant",
+          "url": "https://en.wikipedia.org/wiki/Cognizant",
+          "text": "Tax evasion\nThe Income Tax department has frozen Cognizant Technology Solutions Corp's bank accounts and deposits in Chennai and Mumbai for allegedly evading a dividend distribution tax (DDT). A Cognizant spokesman confirmed the report and said in a statement that a court has instructed the tax department not to take further action pending further hearings. Cognizant failed to pay the tax of more than 25 billion rupees ($385 million) in the 2016\u201317 financial year, according to The Hindu, citing officials from the tax department.\nThe court asked the company to deposit 15 percent of the disputed tax, amounting to 4.9 billion rupees ($75 million) as security deposit till it decides on the case.\n\nIreland\nWorking conditions\nIn February 2018 the UK and Irish press expressed concerns about contractors employed by Cognizant in Dublin as part of the outsourcing contract with Google about the conditions of employment in relationship to compensation and basic employment allowances like sick leave.\n\nUnited States\nCorruption\nIn 2016, Cognizant announced that it was cooperating with US authorities in an investigation related to the Foreign Corrupt Practices Act, and carrying out its own probe to determine whether some payments made in India breached the law. The company also said President Gordon Coburn had resigned and would be replaced by Rajeev Mehta.\n\nCrawford & Company lawsuit\nCognizant has been sued by Crawford & Company, the US-based independent providers of insurance claims-handling services, for alleged breach of contract. Cognizant had been mandated by Crawford to implement PeopleSoft Financials software as part of an ERP project called Project Atlas that it was critical to Crawford's operations. Project Atlas included components for both internal operations and client-facing services.\n\nWage theft and H-1B visa violations\nCognizant leads the ranks of companies receiving H-1B visas from the United States. The company has been steadily increasing its U.S. work force. In January 2011, the company announced plans to expand its U.S. delivery centers, including a new 1,000-person (0.4% of worldwide workforce) facility in Phoenix, Arizona. \nIn 2009, an investigation by the US Department of Labor (DoL) found Cognizant in violation of the H-1B provisions of the Immigration and Nationality Administrative Act. The DoL discovered that the company had stolen wages and benefits from 67 of its workers, for which they demanded they repay $509,607 in back wages. Joseph Petrecca, the director of the Wage and Hour Division's Northern New Jersey District Office noted that the company took immediate steps to correct the violations, saying the \"level of cooperation sets a standard for others in the industry.\"\nIn 2016, the company was the subject of a lawsuit by workers for Walt Disney World who said workers from India were brought into the United States on H-1B visas in order to replace them. However, in October 2016, federal Judge Gregory A. Presnel of the United States District Court in Orlando dismissed the lawsuits, stating \"none of the allegedly false statements put at issue in the complaint are adequate.\"\nCognizant was also required to pay $5.7 million in back pay and fines in a U.S. District Court ruling for a class action lawsuit. The lawsuit claimed that Cognizant did not provide quality assurance analysts the full value of their overtime pay.",
+          "cos_sim_score": 0.11021506041288376,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

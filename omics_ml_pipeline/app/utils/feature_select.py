@@ -246,12 +246,12 @@ def rank_by_hybrid_score(
             return pd.Series(0.0, index=s.index)
         return (s - mu) / sigma
 
-    ranking["hybrid_score"] = (
+    ranking["multivariate_score"] = (
         _zscore(ranking["abs_fold_change"]) + _zscore(ranking["abs_t_stat"])
     ).round(4)
 
     ranking.index.name = "probe_id"
-    return ranking.sort_values("hybrid_score", ascending=False)
+    return ranking.sort_values("multivariate_score", ascending=False)
 
 
 # ---------------------------------------------------------------------------
@@ -888,16 +888,16 @@ def build_gene_level_dedup(
 
     # Sort so groupby.first() picks the best probe per gene
     work_sorted = work.sort_values(
-        ["hybrid_score", "type_priority", "iqr"],
+        ["multivariate_score", "type_priority", "iqr"],
         ascending=[False, True, False],
     )
     best = work_sorted.groupby("gene_symbol", sort=False).first().reset_index()
-    best = best.sort_values("hybrid_score", ascending=False).reset_index(drop=True)
+    best = best.sort_values("multivariate_score", ascending=False).reset_index(drop=True)
     best["gene_rank"] = range(1, len(best) + 1)
 
     keep_cols = [
         "gene_rank", "gene_symbol", "probe_id", "probe_rank", "probe_type",
-        "hybrid_score", "abs_fold_change", "log_fold_change",
+        "multivariate_score", "abs_fold_change", "log_fold_change",
         "mean_sonfh", "mean_control", "t_stat", "p_value", "iqr", "variance",
     ]
     out_cols = [c for c in keep_cols if c in best.columns]
@@ -1584,9 +1584,10 @@ def plot_weka_model_results(weka_models_dir: str, output_path: str) -> None:
 # ---------------------------------------------------------------------------
 def print_summary(df: pd.DataFrame, ranking: pd.Series, method: str) -> None:
     _method_labels = {
-        "fc":     "|fold change|",
-        "var":    "variance",
-        "hybrid": "hybrid score (|FC| + |t-stat|, z-scored)",
+        "fc":           "|fold change|",
+        "var":          "variance",
+        "hybrid":       "hybrid score (|FC| + |t-stat|, z-scored)",
+        "multivariate": "multivariate score  Z(|FC|) + Z(|t|)",
     }
     print("\n" + "=" * 60)
     print("FEATURE SELECTION SUMMARY")
@@ -1814,7 +1815,7 @@ def plot_statistical_vs_model_importance(
     # Jitter to prevent point stacking (seeded for reproducibility)
     rng = np.random.default_rng(random_state)
     df["importance_j"] = df["importance"] + rng.normal(0, 0.0015, len(df))
-    df["hybrid_j"]     = df["hybrid_score"] + rng.normal(0, 0.05,   len(df))
+    df["hybrid_j"]     = df["multivariate_score"] + rng.normal(0, 0.05,   len(df))
     # Clamp jittered importance to positive values (log scale requires > 0)
     df["importance_j"] = df["importance_j"].clip(lower=1e-5)
 
@@ -1852,12 +1853,12 @@ def plot_statistical_vs_model_importance(
 
     # Quadrant lines at medians of the original (un-jittered) values
     x_med = df["importance"].median()
-    y_med = df["hybrid_score"].median()
+    y_med = df["multivariate_score"].median()
     ax.axvline(x_med if x_med > 0 else 1e-5, linestyle="--", color="#888", linewidth=0.9, zorder=0)
     ax.axhline(y_med, linestyle="--", color="#888", linewidth=0.9, zorder=0)
 
-    # Label top N by hybrid score + top N by model importance (N = biomarker.top_n_display)
-    top_stat  = set(df.nlargest(label_top_n, "hybrid_score")["gene_symbol"])
+    # Label top N by multivariate score + top N by model importance (N = biomarker.top_n_display)
+    top_stat  = set(df.nlargest(label_top_n, "multivariate_score")["gene_symbol"])
     top_model = set(df.nlargest(label_top_n, "importance")["gene_symbol"])
     to_label  = top_stat | top_model
 
@@ -1873,7 +1874,7 @@ def plot_statistical_vs_model_importance(
             )
 
     ax.set_xlabel("Model Importance (XGBoost Gain, log scale)", fontsize=10)
-    ax.set_ylabel("Hybrid Score (Statistical Signal)", fontsize=10)
+    ax.set_ylabel("Multivariate Score  Z(|FC|) + Z(|t|)", fontsize=10)
     mode_label = mode_suffix.replace("_", "  ").strip() if mode_suffix else ""
     title_line2 = f"\nGSE123568  {mode_label}" if mode_label else "\nGSE123568"
     ax.set_title(
@@ -1936,7 +1937,7 @@ if __name__ == "__main__":
     # 3. Select top N probes by hybrid score — Weka reproducibility branch
     top_probes  = hybrid_df.head(args.top).index.tolist()
     selected_df = df[top_probes + ["class"]].copy()
-    print(f"\nTop {args.top} probes selected by hybrid score (|FC| + |t-stat|)")
+    print(f"\nTop {args.top} probes selected by multivariate score  Z(|FC|) + Z(|t|)")
 
     # 3b. Top 500 — Python discovery branch (always generated alongside Weka top-N)
     _n500         = max(args.top, 500)
@@ -1962,7 +1963,7 @@ if __name__ == "__main__":
     ranked.index.name = "probe_id"
     ranked.insert(0, "probe_rank", range(1, len(ranked) + 1))
     ranked["gene_symbol"] = ranked.index.map(annotation).fillna("---") if len(annotation) else "---"
-    _col_order = ["probe_rank", "gene_symbol", "hybrid_score", "abs_fold_change",
+    _col_order = ["probe_rank", "gene_symbol", "multivariate_score", "abs_fold_change",
                   "log_fold_change", "t_stat", "p_value", "iqr", "variance",
                   "mean_sonfh", "mean_control", "probe_type"]
     ranked[[c for c in _col_order if c in ranked.columns]].to_csv(rankings_path)
@@ -2007,7 +2008,7 @@ if __name__ == "__main__":
     build_gene_level_dedup(hybrid_df, annotation, gene_level_path, top_genes_path, top_n=100)
 
     # 14. Summary
-    print_summary(selected_df, hybrid_df["hybrid_score"], "hybrid")
+    print_summary(selected_df, hybrid_df["multivariate_score"], "multivariate")
 
     print(f"\nWeka files in  : {csv_outdir}/")
     print(f"EDA plots in   : {eda_dir}/")

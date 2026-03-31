@@ -1,0 +1,163 @@
+{
+  "probe_id": "11719183_a_at",
+  "gene_symbol": "DEF8",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.152707615763617,
+  "abs_fold_change": 1.1456,
+  "univariate_score": 1.1481,
+  "probe_count": 1,
+  "probe_ids": "11719183_a_at",
+  "max_combined_score": 1.1481,
+  "mean_abs_fold_change": 1.1456,
+  "max_rf_importance": 0.0,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T00:30:49",
+  "interpretation": "DEF8, or Differentially expressed in FDCP 8 homolog, is involved in regulating lysosome distribution and ruffled border formation in osteoclasts, which are critical for bone resorption. Given that Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) is characterized by bone necrosis and compromised bone remodeling, the role of DEF8 in osteoclast function suggests a potential link to the disease's pathology. However, while the biological function of DEF8 aligns with processes relevant to bone health, there is no direct evidence connecting DEF8 specifically to SONFH from the retrieved sources. Therefore, the evidence is primarily inferred from its role in osteoclast activity and bone resorption mechanisms. As such, DEF8 may have moderate potential as a biomarker for SONFH, but further studies are needed to establish its clinical relevance in this context.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "DEF8 is involved in osteoclast function, which is relevant to the bone resorption processes implicated in Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "DEF8 (Q6ZN54). https://www.uniprot.org/uniprotkb/Q6ZN54",
+    "DEF8 (Q6ZN54-2). https://www.uniprot.org/uniprotkb/Q6ZN54-2",
+    "DEF8 (Q6ZN54-5). https://www.uniprot.org/uniprotkb/Q6ZN54-5",
+    "DEF8 \u2014 DEF8. https://platform.opentargets.org/target/ENSG00000140995",
+    "DEF8 \u2194 melanoma. https://platform.opentargets.org/target/ENSG00000140995/associations",
+    "DEF8 \u2194 benign neoplasm of skin. https://platform.opentargets.org/target/ENSG00000140995/associations",
+    "DEF8 \u2194 cancer. https://platform.opentargets.org/target/ENSG00000140995/associations",
+    "DEF8 \u2194 Epidermal Inclusion Cyst. https://platform.opentargets.org/target/ENSG00000140995/associations",
+    "List of human protein-coding genes 2. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_2",
+    "Steeneichthys. https://en.wikipedia.org/wiki/Steeneichthys",
+    "Cura fortis. https://en.wikipedia.org/wiki/Cura_fortis",
+    "Rubicon homology domain. https://en.wikipedia.org/wiki/Rubicon_homology_domain",
+    "Hemichromis frempongi. https://en.wikipedia.org/wiki/Hemichromis_frempongi"
+  ],
+  "token_usage": {
+    "prompt_tokens": 3426,
+    "completion_tokens": 250,
+    "total_tokens": 3676,
+    "estimated_cost_usd": 0.000664
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q6ZN54",
+          "title": "DEF8 (Q6ZN54)",
+          "url": "https://www.uniprot.org/uniprotkb/Q6ZN54",
+          "text": "Protein: Differentially expressed in FDCP 8 homolog\nFunction: Positively regulates lysosome peripheral distribution and ruffled border formation in osteoclasts. Involved in bone resorption",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q6ZN54-2",
+          "title": "DEF8 (Q6ZN54-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q6ZN54-2",
+          "text": "Protein: Isoform 2 of Differentially expressed in FDCP 8 homolog",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q6ZN54-5",
+          "title": "DEF8 (Q6ZN54-5)",
+          "url": "https://www.uniprot.org/uniprotkb/Q6ZN54-5",
+          "text": "Protein: Isoform 5 of Differentially expressed in FDCP 8 homolog",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000140995::function",
+          "title": "DEF8 \u2014 DEF8",
+          "url": "https://platform.opentargets.org/target/ENSG00000140995",
+          "text": "Function: Positively regulates lysosome peripheral distribution and ruffled border formation in osteoclasts. Involved in bone resorption. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000140995::EFO_0000756",
+          "title": "DEF8 \u2194 melanoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000140995/associations",
+          "text": "Disease: melanoma\nDescription: A malignant, usually aggressive tumor composed of atypical, neoplastic melanocytes. Most often, melanomas arise in the skin (cutaneous melanomas) and include the following histologic subtypes: superficial spreading melanoma, nodular melanoma, acral lentiginous melanoma, and lentigo maligna melanoma. Cutaneous melanomas may arise from acquired or congenital melanocytic or dysplastic nevi. Melanomas may also arise in other anatomic sites including the gastrointestinal system, eye, urinary tract, and reproductive system. Melanomas frequently metastasize to lymph nodes, liver, lungs, and brain.\nAssociation score: 0.470",
+          "cos_sim_score": 0.47036124616465724,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000140995::MONDO_0021440",
+          "title": "DEF8 \u2194 benign neoplasm of skin",
+          "url": "https://platform.opentargets.org/target/ENSG00000140995/associations",
+          "text": "Disease: benign neoplasm of skin\nDescription: A benign neoplasm that involves the zone of skin.\nAssociation score: 0.395",
+          "cos_sim_score": 0.39512247894157737,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000140995::MONDO_0004992",
+          "title": "DEF8 \u2194 cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000140995/associations",
+          "text": "Disease: cancer\nDescription: A tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues. Malignant neoplasms often metastasize to distant anatomic sites and may recur after excision. The most common malignant neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), Hodgkin and non-Hodgkin lymphomas, leukemias, melanomas, and sarcomas.\nAssociation score: 0.391",
+          "cos_sim_score": 0.3911901604161236,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000140995::EFO_1000243",
+          "title": "DEF8 \u2194 Epidermal Inclusion Cyst",
+          "url": "https://platform.opentargets.org/target/ENSG00000140995/associations",
+          "text": "Disease: Epidermal Inclusion Cyst\nDescription: Epidermal inclusion cyst (EIC), also known as sebaceous cyst and epidermoid cyst, is the most common cyst of the skin. It ranges in size from a few millimeters to a few centimeters and originates from the follicular infundibulum. Its contents are a cheesy, malodorous mixture of degraded lipid and keratin. It often ruptures, with associated pain and inflammation. (http://www.medicinenet.com/image-collection/epidermal_inclusion_cyst_eic_picture/picture.htm)\nAssociation score: 0.374",
+          "cos_sim_score": 0.37408625541756985,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::List of human protein-coding genes 2",
+          "title": "List of human protein-coding genes 2",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_2",
+          "text": "== References ==",
+          "cos_sim_score": 0.14283815026283264,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Steeneichthys",
+          "title": "Steeneichthys",
+          "url": "https://en.wikipedia.org/wiki/Steeneichthys",
+          "text": "Steeneichthys is a genus of ray-finned fish in the family Plesiopidae, the longfins or roundheads.\n\nSpecies\nThere are two recognised species in the genus:\n\nSteeneichthys nativitatus Allen, 1987 (Christmas longfin)\nSteeneichthys plesiopsus Allen & Randall, 1985 (Steene's prettyfin)\n\n\n== References ==",
+          "cos_sim_score": 0.06788432598114014,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Cura fortis",
+          "title": "Cura fortis",
+          "url": "https://en.wikipedia.org/wiki/Cura_fortis",
+          "text": "Cura fortis is a species of freshwater planarian belonging to the family Dugesiidae. It is found in New Zealand.\n\nEtymology\nThe specific epithet is derived from the Latin fortis, meaning \"firm\". This is in reference to the species' large penial papilla.\n\nDescription\nCura fortis is about eight millimeters long and 3.5 mm wide. It can range from a dark brown to reddish color on its backside, and its underside is a dark grey with black spots. Its eyes are set in unpigmented patches.\n\n\n== References ==",
+          "cos_sim_score": 0.05814233049750328,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Rubicon homology domain",
+          "title": "Rubicon homology domain",
+          "url": "https://en.wikipedia.org/wiki/Rubicon_homology_domain",
+          "text": "The Rubicon homology domain (also known as RH domain) is an evolutionarily conserved protein domain of approximately 250 amino acids that mediates protein\u2013protein interaction. RH domains are present in several human proteins involved in regulation of autophagy and endosomal trafficking. While not all RH domains have been characterized, those of human Rubicon and PLEKHM1 mediate interaction with the small GTPase Rab7, which is found on late endosomes and autophagosomes.\nRH domains contain 16 conserved cysteine and histidine residues that bind zinc atoms and form at least 4 zinc finger motifs. Amino acid residues toward the C-terminus of the RH domain of Rubicon have been shown to be essential for interaction with Rab7.\n\nStructure\nThe 3D atomic structure of the Rubicon RH domain in complex with Rab7 has been determined by X-ray crystallography. The structure of the RH domain has an \"L\" shape, with the base of the \"L\" making contact with the switch regions of Rab7. The structure is predominantly alpha helical, with short beta strand regions present in the vicinity of zinc finger motifs. The N-terminal region of the Rubicon RH domain resembles a FYVE domain, however the basic residues required for canonical FYVE domain binding of PI3P are not present.\n\nProteins containing an RH domain\nRH domains are found in a number of proteins, including (in humans):\n\nRubicon, the defining member of the RH domain-containing family of proteins and a negative regulator of autophagy\nPLEKHM1, a protein implicated in osteopetrosis\nPacer, a positive regulator of autophagy\nDEF8, a regulator of lysosome peripheral distribution\nPLEKHM3, involved in skeletal muscle differentiation\n\n\n== References ==",
+          "cos_sim_score": 0.03346943482756615,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Hemichromis frempongi",
+          "title": "Hemichromis frempongi",
+          "url": "https://en.wikipedia.org/wiki/Hemichromis_frempongi",
+          "text": "Hemichromis frempongi is a species of fish in the cichlid family. It is endemic to Lake Bosumtwi in Ghana. Its validity as a species is questionable, and some believe it should be included in the widespread H. fasciatus.\n\n\n== References ==",
+          "cos_sim_score": -0.005068603903055191,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

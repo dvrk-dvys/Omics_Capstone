@@ -1,0 +1,146 @@
+{
+  "probe_id": "11728926_at",
+  "gene_symbol": "NFAM1",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.1803060954761197,
+  "abs_fold_change": 1.1839,
+  "univariate_score": 1.1856,
+  "probe_count": 1,
+  "probe_ids": "11728926_at",
+  "max_combined_score": 1.1856,
+  "mean_abs_fold_change": 1.1839,
+  "max_rf_importance": 0.0,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T00:25:50",
+  "interpretation": "NFAM1 encodes a type I membrane receptor that activates cytokine gene promoters, including IL-13 and TNF-alpha, through the calcineurin/NFAT signaling pathway. This pathway is crucial in immune responses and inflammation, which may play a role in the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH). While the retrieved evidence does not directly link NFAM1 to SONFH, its involvement in cytokine regulation suggests a potential indirect role in the inflammatory processes that could contribute to bone necrosis following steroid treatment. The evidence is limited, leading to a low confidence in its direct relevance to SONFH as a biomarker. Therefore, NFAM1 may have weak potential as a clinical biomarker for early detection of SONFH, primarily due to its biological functions rather than direct disease association.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "NFAM1 may be involved in inflammatory processes relevant to the pathogenesis of Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "NFAM1 (Q8NET5). https://www.uniprot.org/uniprotkb/Q8NET5",
+    "NFAM1 \u2014 NFAM1. https://platform.opentargets.org/target/ENSG00000235568",
+    "NFAM1 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000235568/associations",
+    "NFAM1 \u2194 Splenomegaly. https://platform.opentargets.org/target/ENSG00000235568/associations",
+    "NFAM1 \u2194 morbid obesity. https://platform.opentargets.org/target/ENSG00000235568/associations",
+    "NFAM1 \u2194 upper respiratory tract disorder. https://platform.opentargets.org/target/ENSG00000235568/associations",
+    "NFAM1. https://en.wikipedia.org/wiki/NFAM1",
+    "Nfat activating protein with itam motif 1. https://en.wikipedia.org/wiki/Nfat_activating_protein_with_itam_motif_1",
+    "List of human protein-coding genes 5. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_5",
+    "22q13 deletion syndrome. https://en.wikipedia.org/wiki/22q13_deletion_syndrome"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4074,
+    "completion_tokens": 239,
+    "total_tokens": 4313,
+    "estimated_cost_usd": 0.000755
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q8NET5",
+          "title": "NFAM1 (Q8NET5)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8NET5",
+          "text": "Protein: NFAT activation molecule 1\nFunction: May function in immune system as a receptor which activates via the calcineurin/NFAT-signaling pathway the downstream cytokine gene promoters. Activates the transcription of IL-13 and TNF promoters. May be involved in the regulation of B-cell, but not T-cell, development. Overexpression activates downstream effectors without ligand binding or antibody cross-linking",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000235568::function",
+          "title": "NFAM1 \u2014 NFAM1",
+          "url": "https://platform.opentargets.org/target/ENSG00000235568",
+          "text": "Function: May function in immune system as a receptor which activates via the calcineurin/NFAT-signaling pathway the downstream cytokine gene promoters. Activates the transcription of IL-13 and TNF promoters. May be involved in the regulation of B-cell, but not T-cell, development. Overexpression activates downstream effectors without ligand binding or antibody cross-linking.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000235568::EFO_0005772",
+          "title": "NFAM1 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000235568/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.470",
+          "cos_sim_score": 0.469735240485174,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000235568::HP_0001744",
+          "title": "NFAM1 \u2194 Splenomegaly",
+          "url": "https://platform.opentargets.org/target/ENSG00000235568/associations",
+          "text": "Disease: Splenomegaly\nDescription: Abnormal increased size of the spleen.\nAssociation score: 0.248",
+          "cos_sim_score": 0.24825068774932518,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000235568::EFO_0001074",
+          "title": "NFAM1 \u2194 morbid obesity",
+          "url": "https://platform.opentargets.org/target/ENSG00000235568/associations",
+          "text": "Disease: morbid obesity\nDescription: An excess of body weight, normally defined as an individual with a body mass index greater than 35 or a body weight greater than one hundred percent of ideal body weight.\nAssociation score: 0.201",
+          "cos_sim_score": 0.2006603547618027,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000235568::MONDO_0004867",
+          "title": "NFAM1 \u2194 upper respiratory tract disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000235568/associations",
+          "text": "Disease: upper respiratory tract disorder\nDescription: A disease involving the upper respiratory tract.\nAssociation score: 0.198",
+          "cos_sim_score": 0.19787328668002388,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::NFAM1",
+          "title": "NFAM1",
+          "url": "https://en.wikipedia.org/wiki/NFAM1",
+          "text": "NFAT activating protein with ITAM motif 1 is a protein that in humans is encoded by the NFAM1 gene.\n\nFunction\nThe protein encoded by this gene is a type I membrane receptor that activates cytokine gene promoters such as the IL-13 and TNF-alpha promoters. The encoded protein contains an Immunoreceptor tyrosine-based activation motif (ITAM) and is thought to regulate the signaling and development of B-cells. [provided by RefSeq, Jul 2008].\n\nReferences\nFurther reading\n\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.3460519313812256,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Nfat activating protein with itam motif 1",
+          "title": "Nfat activating protein with itam motif 1",
+          "url": "https://en.wikipedia.org/wiki/Nfat_activating_protein_with_itam_motif_1",
+          "text": "NFAT activating protein with ITAM motif 1 is a protein that in humans is encoded by the NFAM1 gene.\n\nFunction\nThe protein encoded by this gene is a type I membrane receptor that activates cytokine gene promoters such as the IL-13 and TNF-alpha promoters. The encoded protein contains an immunoreceptor tyrosine-based activation motif (ITAM) and is thought to regulate the signaling and development of B-cells. [provided by RefSeq, Jul 2008].\n\nReferences\nFurther reading\n\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.3460519313812256,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of human protein-coding genes 5",
+          "title": "List of human protein-coding genes 5",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_5",
+          "text": "== References ==",
+          "cos_sim_score": 0.21212589740753174,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::22q13 deletion syndrome",
+          "title": "22q13 deletion syndrome",
+          "url": "https://en.wikipedia.org/wiki/22q13_deletion_syndrome",
+          "text": "22q13 deletion syndrome, \nknown as Phelan\u2013McDermid syndrome (PMS), is a genetic disorder caused by deletions or rearrangements on the q terminal end (long arm) of chromosome 22. Any abnormal genetic variation in the q13 region that presents with significant manifestations (phenotype) typical of a terminal deletion may be diagnosed as 22q13 deletion syndrome. There is disagreement among researchers as to the exact definition of 22q13 deletion syndrome. The Developmental Synaptopathies Consortium defines PMS as being caused by SHANK3 mutations, a definition that appears to exclude terminal deletions. The requirement to include SHANK3 in the definition is supported by many but not by those who first described 22q13 deletion syndrome.\nPrototypical terminal deletion of 22q13 can be uncovered by karyotype analysis, but many terminal and interstitial deletions are too small. The availability of DNA microarray technology for revealing multiple genetic problems simultaneously has been the diagnostic tool of choice. The falling cost for the whole exome sequencing and, eventually, whole genome sequencing, may replace DNA microarray technology for candidate evaluation. However, fluorescence in situ hybridization (FISH) tests remain valuable for diagnosing cases of mosaicism (mosaic genetics) and chromosomal rearrangements (e.g., ring chromosome, unbalanced chromosomal translocation). Although early researchers sought a monogenic (single gene genetic disorder) explanation, recent studies have not supported that hypothesis (see Etiology).\n\nSigns and symptoms\nAffected individuals present with a broad array of medical and behavioral manifestations (tables 1 and 2). Patients are consistently characterized by global developmental delay, intellectual disability, speech abnormalities, ASD-like behaviors, hypotonia and mild dysmorphic features. Table 1 summarizes the dysmorphic and medical conditions that have been reported in individuals with PMS. Table 2 summarizes the psychiatric and neurological symptoms associated with PMS. Most of the studies include small samples or relied on parental report or medical record review to collect information, which can account in part for the variability in the presentation of some of the presenting features. Larger prospective studies are needed to further characterize the phenotype.",
+          "cos_sim_score": 0.14684346318244934,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::22q13 deletion syndrome",
+          "title": "22q13 deletion syndrome",
+          "url": "https://en.wikipedia.org/wiki/22q13_deletion_syndrome",
+          "text": "Table of protein coding genes involved in 22q13 deletion syndrome (based on Human Genome Browser \u2013 hg38 assembly). Underline identifies 13 genes that are associated with autism. Bold identifies genes associated with hypotonia (based on Human Phenotype Browser search for 'hypotonia' and the OMIM database).\n\nDiagnosis and management\nClinical genetics and genetic testing\nGenetic testing is necessary to confirm the diagnosis of PMS. A prototypical terminal deletion of 22q13 can be uncovered by karyotype analysis, but many terminal and interstitial deletions are too small to detect with this method. Chromosomal microarray should be ordered in children with suspected developmental delays or ASD. Most cases will be identified by microarray; however, small variations in genes might be missed. The falling cost for whole exome sequencing may replace DNA microarray technology for candidate gene evaluation. Biological parents should be tested with fluorescence in situ hybridization (FISH) to rule out balanced translocations or inversions. Balanced translocation in a parent increases the risk for recurrence and heritability within families (figure 3).\nClinical genetic evaluations and dysmorphology exams should be done to evaluate growth, pubertal development, dysmorphic features (table 1) and screen for organ defects (table 2)\n\nCognitive and behavioral assessment\nAll patients should undergo comprehensive developmental, cognitive and behavioral assessments by clinicians with experience in developmental disorders. Cognitive evaluation should be tailored for individuals with significant language and developmental delays. All patients should be referred for specialized speech/language, occupational and physical therapy evaluations.\n\nNeurological management\nIndividuals with PMS should be followed by a pediatric neurologist regularly to monitor motor development, coordination, and gait, as well as conditions that might be associated with hypotonia. Head circumference should be performed routinely up until 36 months. Given the high rate of seizure disorders (up to 41% of patients) reported in the literature in patients with PMS and its overall negative impact on development, an overnight video EEG should be considered early to rule out seizure activity. In addition, a baseline structural brain MRI should be considered to rule out the presence of structural abnormalities.\n\nNephrology\nAll patients should have a baseline renal and bladder ultrasonography and a voiding cystourethrogram should be considered to rule out structural and functional abnormalities. Renal abnormalities are reported in up to 38% of patients with PMS. Vesicouretral reflux, hydronephrosis, renal agenesis, dysplastic kidney, polycystic kidney and recurrent urinary tract infections have all been reported in patients with PMS.\n\nCardiology\nCongenital heart defects (CHD) are reported in samples of children with PMS with varying frequency (up to 25%)(29,36). The most common CHD include tricuspid valve regurgitation, atrial septal defects and patent ductus arteriosus. Cardiac evaluation, including echocardiography and electrocardiogram, should be considered.\n\nGastroenterology\nGastrointestinal symptoms are common in individuals with PMS. Gastroesophageal reflux, constipation, diarrhea and cyclic vomiting are frequently described.\nTable 3: Clinical Assessment Recommendations in Phelan\u2013McDermid Syndrome\n\nEpidemiology\nThe true prevalence of PMS has not been determined. More than 1,200 people have been identified worldwide according to the Phelan\u2013McDermid Syndrome Foundation. However, it is believed to be underdiagnosed due to inadequate genetic testing and lack of specific clinical features. It is known to occur with equal frequency in males and females. Studies using chromosomal microarray for diagnosis indicate that at least 0.5% of cases of ASD can be explained by mutations or deletions in the SHANK3 gene. In addition, when ASD is associated with ID, SHANK3 mutations or deletions have been found in up to 2% of individuals.",
+          "cos_sim_score": 0.13829752802848816,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

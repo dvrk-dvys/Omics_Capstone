@@ -1,0 +1,129 @@
+{
+  "probe_id": "11736575_x_at",
+  "gene_symbol": "GPR155",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0,
+  "abs_fold_change": 1.2112,
+  "univariate_score": 1.2123,
+  "probe_count": 2,
+  "probe_ids": "11736575_x_at | 11746456_x_at",
+  "max_combined_score": 1.2123,
+  "mean_abs_fold_change": 1.2056,
+  "max_rf_importance": 0.0,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T00:23:07",
+  "interpretation": "GPR155 is a cholesterol-binding protein that regulates the mTORC1 signaling pathway, which is crucial for cellular growth and metabolism. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), dysregulation of cholesterol metabolism and mTORC1 signaling may contribute to the pathophysiology of bone necrosis following steroid treatment. However, the evidence linking GPR155 directly to SONFH is limited, with no specific studies identified that connect this gene to the disease. Thus, while GPR155's role in cholesterol signaling is biologically relevant, its potential as a biomarker for early detection of SONFH remains weak and speculative. The current understanding does not provide strong clinical relevance for GPR155 as a biomarker in this specific context.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "GPR155 may be involved in cholesterol metabolism, which is relevant to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "GPR155 (Q7Z3F1). https://www.uniprot.org/uniprotkb/Q7Z3F1",
+    "GPR155 \u2014 GPR155. https://platform.opentargets.org/target/ENSG00000163328",
+    "GPR155 \u2194 self-injurious ideation. https://platform.opentargets.org/target/ENSG00000163328/associations",
+    "GPR155 \u2194 cirrhosis of liver. https://platform.opentargets.org/target/ENSG00000163328/associations",
+    "GPR155 \u2194 sign or symptom. https://platform.opentargets.org/target/ENSG00000163328/associations",
+    "GPR155 \u2194 atrial fibrillation. https://platform.opentargets.org/target/ENSG00000163328/associations",
+    "GPR155. https://en.wikipedia.org/wiki/GPR155",
+    "Yamaha Aerox. https://en.wikipedia.org/wiki/Yamaha_Aerox",
+    "List of human protein-coding genes 3. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_3"
+  ],
+  "token_usage": {
+    "prompt_tokens": 3707,
+    "completion_tokens": 244,
+    "total_tokens": 3951,
+    "estimated_cost_usd": 0.000702
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q7Z3F1",
+          "title": "GPR155 (Q7Z3F1)",
+          "url": "https://www.uniprot.org/uniprotkb/Q7Z3F1",
+          "text": "Protein: Lysosomal cholesterol signaling protein\nFunction: Cholesterol-binding protein that acts as a regulator of mTORC1 signaling pathway (PubMed:36007018). Acts as a sensor of cholesterol to signal cholesterol sufficiency to mTORC1: in presence of cholesterol, binds cholesterol, leading to disruption of the interaction between the GATOR1 and KICSTOR complexes and promotion of mTORC1 signaling (PubMed:36007018, PubMed:39358511). Upon cholesterol starvation, GPR155/LYCHOS is unable to perturb the association between GATOR1 and KICSTOR, leading to mTORC1 signaling inhibition (PubMed:36007018). Binds indole-3-acetic acid and may play a role in tryptophan metabolism (PubMed:39358511)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000163328::function",
+          "title": "GPR155 \u2014 GPR155",
+          "url": "https://platform.opentargets.org/target/ENSG00000163328",
+          "text": "Function: Cholesterol-binding protein that acts as a regulator of mTORC1 signaling pathway (PubMed:36007018). Acts as a sensor of cholesterol to signal cholesterol sufficiency to mTORC1: in presence of cholesterol, binds cholesterol, leading to disruption of the interaction between the GATOR1 and KICSTOR complexes and promotion of mTORC1 signaling (PubMed:36007018, PubMed:39358511). Upon cholesterol starvation, GPR155/LYCHOS is unable to perturb the association between GATOR1 and KICSTOR, leading to mTORC1 signaling inhibition (PubMed:36007018). Binds indole-3-acetic acid and may play a role in tryptophan metabolism (PubMed:39358511).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000163328::EFO_0010817",
+          "title": "GPR155 \u2194 self-injurious ideation",
+          "url": "https://platform.opentargets.org/target/ENSG00000163328/associations",
+          "text": "Disease: self-injurious ideation\nDescription: A risk factor for self-injurious attempts and completions. Only a minority of ideators engage in overt self-harm.\nAssociation score: 0.286",
+          "cos_sim_score": 0.2858546729516351,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000163328::EFO_0001422",
+          "title": "GPR155 \u2194 cirrhosis of liver",
+          "url": "https://platform.opentargets.org/target/ENSG00000163328/associations",
+          "text": "Disease: cirrhosis of liver\nDescription: Liver disease in which the normal microcirculation, the gross vascular anatomy, and the hepatic architecture have been variably destroyed and altered with fibrous septa surrounding regenerated or regenerating parenchymal nodules.\nAssociation score: 0.268",
+          "cos_sim_score": 0.2675719072570686,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000163328::EFO_0003765",
+          "title": "GPR155 \u2194 sign or symptom",
+          "url": "https://platform.opentargets.org/target/ENSG00000163328/associations",
+          "text": "Disease: sign or symptom\nDescription: Objective evidence of disease perceptible to the examining physician (sign) and subjective evidence of disease perceived by the patient (symptom).\nAssociation score: 0.258",
+          "cos_sim_score": 0.25781617768042486,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000163328::EFO_0000275",
+          "title": "GPR155 \u2194 atrial fibrillation",
+          "url": "https://platform.opentargets.org/target/ENSG00000163328/associations",
+          "text": "Disease: atrial fibrillation\nDescription: Abnormal cardiac rhythm that is characterized by rapid, uncoordinated firing of electrical impulses in the upper chambers of the heart (HEART ATRIA). In such case, blood cannot be effectively pumped into the lower chambers of the heart (HEART VENTRICLES). It is caused by abnormal impulse generation.\nAssociation score: 0.203",
+          "cos_sim_score": 0.20274056668954957,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::GPR155",
+          "title": "GPR155",
+          "url": "https://en.wikipedia.org/wiki/GPR155",
+          "text": "Integral membrane protein GPR155, also known as G protein-coupled receptor 155, is a protein that in humans is encoded by the GPR155 gene. Mutations in this gene may be associated with autism.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.5232815742492676,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Yamaha Aerox",
+          "title": "Yamaha Aerox",
+          "url": "https://en.wikipedia.org/wiki/Yamaha_Aerox",
+          "text": "The Yamaha Aerox is a lineup of single-cylinder scooters made by Yamaha since 1997, available in either 50 cc or 100 cc for the European market, and 125 cc or 155 cc for the Southeast Asian and Indian market with several different body designs.\n\nMarkets\nEurope\nYamaha introduced the Aerox in the European market in 1997. It came in two models, the 2-Stroke 50 cc (Internally known as the YQ50) powered by the Minarelli MA-50 horizontal Liquid cooled engine with a front and rear disc brake (DD), this engine came restricted to 45 km/h from the factory to follow European law on 50 cc mopeds. The 2-Stroke 101 cc (internally known as the YQ100) version powered by a horizontal 101 cc forced air cooled Minarelli 2-Stroke engine with a single front disc and a rear drum brake (SD). Both models came equipped with an automatic lubrication system with a separate oil tank for 2-Stroke oil.\nSlight changes were made in 2003. The Aerox was renamed to Aerox R and the 101 cc model was discontinued. The 2-Stroke 50 cc model was updated with a newer exhaust, tachometer and a newer type of ignition and CDI. In 2013, Yamaha launched the updated Aerox with an updated body design and the introduction of the Aerox Naked and Aerox 4 (equipped with 4-stroke engine).\n\nSoutheast Asia\nAerox 125 (2-valve)\nThe liquid-cooled 4-stroke 2-valve 125 cc model of the Aerox was launched in Indonesia in January 2016 under the name Aerox 125 LC. It had a claimed power output of 8.4 kW (11.3 hp; 11.4 PS) @ 9,000 rpm and 10.4 N\u22c5m (7.7 lb\u22c5ft) of torque at 6,500 rpm. It was only sold in Indonesia and discontinued ten months later due to low sales. This model was succeeded by the 155 cc Aerox 155.\n\nAerox 125 (4-valve)/155\nThe liquid-cooled 4-stroke 4-valve 125 cc/155 cc version of the Aerox (internally known as the GDR125/GDR155/GPR155) was unveiled at Sepang International Circuit in Malaysia in October 2016. It is powered by a 125 cc (unrelated to the engine used in Indonesian-only Aerox 125 LC) or bored-up 155 cc Blue Core engine equipped with Variable Valve Actuation (VVA) that produces a claimed power output of 8.8 kW (11.8 hp; 12.0 PS) or 11\u201311.3 kW (14.8\u201315.2 hp; 15.0\u201315.4 PS). These engines are shared with the NMAX. It is sold under the Aerox 155 name in Indonesia and Thailand, Mio Aerox 155 in the Philippines, NVX 155 in Malaysia, NVX 125/155 in Vietnam  and Aerosports X 155 in China.\nThe Aerox 155 received its first facelift in November 2020 that included connected motorcycle technology. The second facelift Aerox, called Aerox Alpha, was launched in December 2024. The Aerox Alpha features a redesigned model and Yamaha Electronic CVT (YECVT) system marketed as \"Turbo\" which is shared with the third facelift NMAX.\nOther than Southeast Asia, the Aerox 155 has also been made available in India since September 2021.\nThe battery electric variant named Aerox E was unveiled on 12 November 2025.\n\nReferences\nExternal links\n\nOfficial website (UK)\nOfficial website (Indonesia)\nOfficial website (India)\nYamaha Aerox history",
+          "cos_sim_score": 0.10692881792783737,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of human protein-coding genes 3",
+          "title": "List of human protein-coding genes 3",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_3",
+          "text": "== References ==",
+          "cos_sim_score": 0.06616243720054626,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

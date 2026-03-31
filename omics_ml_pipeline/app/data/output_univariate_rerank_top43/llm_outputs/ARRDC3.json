@@ -1,0 +1,144 @@
+{
+  "probe_id": "11718724_at",
+  "gene_symbol": "ARRDC3",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.115944265499989,
+  "abs_fold_change": 1.173,
+  "univariate_score": 1.1749,
+  "probe_count": 1,
+  "probe_ids": "11718724_at",
+  "max_combined_score": 1.1749,
+  "mean_abs_fold_change": 1.173,
+  "max_rf_importance": 0.0,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T00:26:49",
+  "interpretation": "ARRDC3 encodes an adapter protein involved in regulating the endocytosis and degradation of G protein-coupled receptors (GPCRs), particularly adrenergic receptors. This function is critical in cellular responses to stress and metabolic changes, which may be relevant in the context of steroid-induced osteonecrosis of the femoral head (SONFH). Steroid treatment can disrupt normal bone metabolism and lead to osteonecrosis, potentially implicating ARRDC3 in the cellular mechanisms that mediate these effects. However, the evidence linking ARRDC3 specifically to SONFH is limited, primarily relying on its general role in receptor trafficking and endocytosis rather than direct studies in the context of SONFH. Thus, while ARRDC3 may play a role in the cellular response to steroids, its potential as a biomarker for early detection of SONFH remains uncertain and requires further investigation.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "ARRDC3 may be involved in the cellular mechanisms affected by steroid treatment, but its direct relevance to steroid-induced osteonecrosis of the femoral head is not well established.",
+  "citations": [
+    "ARRDC3 (Q96B67). https://www.uniprot.org/uniprotkb/Q96B67",
+    "ARRDC3 \u2014 ARRDC3. https://platform.opentargets.org/target/ENSG00000113369",
+    "ARRDC3 \u2194 breast carcinoma. https://platform.opentargets.org/target/ENSG00000113369/associations",
+    "ARRDC3 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000113369/associations",
+    "ARRDC3 \u2194 luminal A breast carcinoma. https://platform.opentargets.org/target/ENSG00000113369/associations",
+    "ARRDC3 \u2194 breast cancer. https://platform.opentargets.org/target/ENSG00000113369/associations",
+    "Alpha Arrestin. https://en.wikipedia.org/wiki/Alpha_Arrestin",
+    "List of human protein-coding genes 1. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_1"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5539,
+    "completion_tokens": 251,
+    "total_tokens": 5790,
+    "estimated_cost_usd": 0.000981
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q96B67",
+          "title": "ARRDC3 (Q96B67)",
+          "url": "https://www.uniprot.org/uniprotkb/Q96B67",
+          "text": "Protein: Arrestin domain-containing protein 3\nFunction: Adapter protein that plays a role in regulating cell-surface expression of adrenergic receptors and probably also other G protein-coupled receptors (PubMed:20559325, PubMed:21982743, PubMed:23208550). Plays a role in NEDD4-mediated ubiquitination and endocytosis af activated ADRB2 and subsequent ADRB2 degradation (PubMed:20559325, PubMed:23208550). May recruit NEDD4 to ADRB2 (PubMed:20559325). Alternatively, may function as adapter protein that does not play a major role in recruiting NEDD4 to ADRB2, but rather plays a role in a targeting ADRB2 to endosomes (PubMed:23208550)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000113369::function",
+          "title": "ARRDC3 \u2014 ARRDC3",
+          "url": "https://platform.opentargets.org/target/ENSG00000113369",
+          "text": "Function: Adapter protein that plays a role in regulating cell-surface expression of adrenergic receptors and probably also other G protein- coupled receptors (PubMed:20559325, PubMed:21982743, PubMed:23208550). Plays a role in NEDD4-mediated ubiquitination and endocytosis af activated ADRB2 and subsequent ADRB2 degradation (PubMed:20559325, PubMed:23208550). May recruit NEDD4 to ADRB2 (PubMed:20559325). Alternatively, may function as adapter protein that does not play a major role in recruiting NEDD4 to ADRB2, but rather plays a role in a targeting ADRB2 to endosomes (PubMed:23208550). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000113369::EFO_0000305",
+          "title": "ARRDC3 \u2194 breast carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000113369/associations",
+          "text": "Disease: breast carcinoma\nDescription: A carcinoma that arises from epithelial cells of the breast\nAssociation score: 0.422",
+          "cos_sim_score": 0.4221896571567212,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000113369::EFO_0005772",
+          "title": "ARRDC3 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000113369/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.360",
+          "cos_sim_score": 0.3596235787774158,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000113369::MONDO_0021116",
+          "title": "ARRDC3 \u2194 luminal A breast carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000113369/associations",
+          "text": "Disease: luminal A breast carcinoma\nDescription: A biologic subset of breast carcinoma defined by high expression of genes characteristic of luminal epithelial cells, including estrogen receptor (ER), estrogen regulated protein LIV-1, and the transcription factors hepatocyte nuclear factor 3, HNF3A, XBP1, and GATA 3. This subtype of breast cancer is associated with a good prognosis.\nAssociation score: 0.305",
+          "cos_sim_score": 0.3054369763267926,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000113369::MONDO_0007254",
+          "title": "ARRDC3 \u2194 breast cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000113369/associations",
+          "text": "Disease: breast cancer\nDescription: A primary or metastatic malignant neoplasm involving the breast. The vast majority of cases are carcinomas arising from the breast parenchyma or the nipple. Malignant breast neoplasms occur more frequently in females than in males.\nAssociation score: 0.285",
+          "cos_sim_score": 0.28457398413029283,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Alpha Arrestin",
+          "title": "Alpha Arrestin",
+          "url": "https://en.wikipedia.org/wiki/Alpha_Arrestin",
+          "text": "The arrestin family of proteins is subdivided into \u03b1-arrestins (also referred to as arrestin-related trafficking adaptors (ARTs) or arrestin-like yeast proteins (ALYs) in yeast or ARRDCs (arrestin domain containing proteins) in mammals, \u03b2-arrestins (also referred to as visual and non-visual arrestins) and Vps26-like arrestin proteins. The \u03b1-Arrestins are an ancestral branch of the larger arrestin family of proteins and they are conserved across eukaryotes but are best characterized in the budding yeast Saccharomyces cerevisiae; as of 2026 there are six \u03b1-arrestins identified in mammalian cells (arrestin-domain containing proteins [ARRDC]1-5 and thioredoxin interacting protein [TXNIP]) and 14 \u03b1-arrestins identified in the budding yeast Saccharomyces cerevisiae. The yeast \u03b1-arrestin family comprises Ldb19/Art1, Ecm21/Art2, Aly1/Art6, Aly2/Art3, Rod1/Art4, Rog3/Art7, Art5, Csr2/Art8, Rim8/Art9, Art10, Bul1, Bul2, Bul3 and Spo23. The best characterized \u03b1-arrestin function to date is their endocytic regulation of plasma membrane proteins, including G-protein coupled receptors (GPCRs) and nutrient transporters (reviewed in). \u03b1-Arrestins control endocytosis of these membrane proteins in response to cellular stressors, including nutrient or metal ion excess.\n\nStructure\nAll members of the arrestin protein family possess two arrestin-fold domains consisting of seven anti-parallel beta-sheets assembled into a \u03b2-sandwich structure. \u03b2-arrestins contain a polar core flanked on both sides by the arrestin N- and C-terminal fold domains. They also contain domains responsible for binding components of the endocytic machinery (i.e. a clathrin binding box and an AP-2 binding site). These key structural features allow for \u03b2-arrestins to regulate endocytic turnover of G-protein coupled receptors (GPCRs) expressed at the mammalian plasma membrane. It is unclear if \u03b1-arrestins lack each of these structural features thought to distinguish the \u03b2-arrestins from the \u03b1-arrestins. However, \u03b1-arrestins directly bind clathrin adaptor complex proteins and until more extensive structural and interaction studies of \u03b1-arrestins are performed, we will not know the degree of conservation for these functional features. A distinguishing characteristic in the \u03b1-arrestins is the presence of a Leucine/Proline-Proline-x-Tyrosine (L/PPXY where x represents any amino acid) consensus motif that extends from the C-terminal arrestin-fold domain. In yeast \u03b1-arrestins, these L/PPXY motifs bind to WW domains found in a variety of proteins including the ubiquitin ligase Rsp5, which is a member of the NEDD4 ubiquitin ligase family. In yeast, these motifs are required for \u03b1-arrestin-mediated endocytosis of membrane proteins. Analogously, binding of mammalian \u03b1-arrestins with NEDD4-family ubiquitin ligases is required for ARRDC protein trafficking.",
+          "cos_sim_score": 0.24671845138072968,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of human protein-coding genes 1",
+          "title": "List of human protein-coding genes 1",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_1",
+          "text": "== References ==",
+          "cos_sim_score": 0.12222086638212204,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Alpha Arrestin",
+          "title": "Alpha Arrestin",
+          "url": "https://en.wikipedia.org/wiki/Alpha_Arrestin",
+          "text": "Regulation of \u03b1-arrestins by phosphorylation\nPhosphorylation is another critical regulatory mechanism controlling \u03b1-arrestin function. Overall, phosphorylation is thought to inhibit \u03b1-arrestin-mediated endocytosis and is considered a primary means by which \u03b1-arrestins are regulated. Phosphorylation status for many of the yeast \u03b1-arrestins is regulated by major nutrient sensing kinases, including the target of rapamycin complex 1 (TORC1) and AMP-activated kinase (AMPK) and/or their downstream effectors. This regulation highlights that coupling of \u03b1-arrestin function with metabolic status. In some cases, phosphorylation of \u03b1-arrestins creates binding sites for 14-3-3 proteins which in turn impede interactions with the ubiquitin ligase, and thus block \u03b1-arrestin function. Binding of 14-3-3 proteins to the \u03b1-arrestins may impair their function by hindering Rsp5-mediated ubiquitination or may promote deubiquitination, but the underlying mechanisms remains unclear. Phosphorylation can also alter \u03b1-arrestins' function by changing their subcellular localization. In the case of Ldb19, phosphorylation leaves the protein primarily localized in the cytosol or Golgi, whereas the dephosphorylated species can associate with the plasma membrane and promote endocytosis of the methionine permease Mup1. Phosphorylation status of \u03b1-arrestins is controlled by major nutrient sensing kinases including TORC1, which is responsible for stimulation of cell growth by promoting anabolic process and inhibiting catabolic processes. Substrate-induced endocytosis of the amino acid permeases Can1, Mup1, Lyp1, Fur4, and Tat2 is controlled indirectly by TORC1-dependent phospho-regulation of Ldb19. TORC1 phosphorylates the downstream kinase Npr1 in response to amino acid flux, hindering its activity. When TORC1 becomes inactive in response to low amino acids, Npr1 becomes an active kinase and phosphorylates Ldb19, thereby preventing Ldb19 recruitment to the plasma membrane. Substrate-induced endocytosis can also be promoted by Ecm21 and Aly2 where Npr1-dependent phosphorylation events were detected on these \u03b1-arrestins. There is some promise for additional TORC1-controlled pathways affecting phosphorylation status of the \u03b1-arrestins where endocytosis of thiamine transporter, Thi7, mediated by Ecm21 requires TORC1 activity, but is independent of Npr1 activity. Therefore, it is possible that many other \u03b1-arrestins are controlled by TORC1-dependent signaling cascades under certain conditions. \u03b1-Arrestin phosphorylation is controlled in many cases by AMPK (Snf1 in budding yeast), which is required for adaptation to glucose limitation and for utilization of non-preferred carbon sources. Snf1 regulates cell metabolism in a multitude of different signaling pathways, which includes altering the expression of glucose transporters at the plasma membrane . When cells are grown in glucose-depleted conditions, Snf1 becomes active and directly phosphorylates and inhibits Rod1- and Rog3-mediated endocytosis of glucose transporters Hxt1 and Hxt3 and the Jen1 lactate transporter. Phosphorylation of Rod1 promotes its binding to 14-3-3 proteins, thereby inhibiting its activity. In contrast, phosphorylation of Rog3 by Snf1 promotes its degradation. The regulation of Rog3 stability in this context is strikingly similar to that observed for the mammalian \u03b1-arrestin TXNIP. TXNIP is required for the endocytosis of the glucose transporter GLUT1, and its phosphorylation by AMPK targets it for degradation, preventing GLUT1 internalization. Therefore, \u03b1-arrestin activity is controlled by carbohydrate availability through AMPK, and the underlying mechanisms may have a degree of conservation between humans and yeast.\n\n\n== References ==",
+          "cos_sim_score": 0.11587220430374146,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Alpha Arrestin",
+          "title": "Alpha Arrestin",
+          "url": "https://en.wikipedia.org/wiki/Alpha_Arrestin",
+          "text": "Function\nThe related \u03b2-arrestins are the best studied members of the arrestin family. They act as multi-faceted protein trafficking adaptors that bind to membrane proteins at the plasma membrane, including GPCRs, and interact with the AP-2 adaptin complex and clathrin to promote endocytosis of these membrane proteins. \u03b2-arrestins additionally regulate post-endocytic sorting of membrane proteins and act as signaling scaffolds by associating with several protein kinases to localize their activity. The \u03b1-arrestin's functions are best characterized in the budding yeast Saccharomyces cerevisiae. Like the related \u03b2-arrestins, \u03b1-arrestins bind selectively to membrane proteins and promote their endocytosis in a signaling-dependent manner. However, the physiological roles and molecular mechanisms by which \u03b1-arrestins function are still emerging. Briefly, \u03b1-arrestins bind to membrane proteins and, via their L/PPXY motifs, bind the WW domain of the Rsp5 ubiquitin ligase. By binding to both the membrane protein and ubiquitin ligase, \u03b1-arrestins serve as a bridge between these two factors, bring the ubiquitin ligase into close-proximity with its membrane protein substrate. Ubiquitination of the membrane protein is a common signal that promotes endocytosis, acting as a molecular signpost that allows for interaction of the membrane protein with endocytic machinery containing ubiquitin-interacting motifs. Similar to their yeast relatives, mammalian \u03b1-arrestins bind ubiquitin ligases in the NEDD4 family using this same mechanism. The mechanism by which \u03b1-arrestins selectively recognize transmembrane proteins requires further study, but some \u03b1-arrestins possess a basic patch between their two arrestin-fold domains that interact with patches of acidic amino acids on the cytoplasmic face of target transmembrane proteins. The role of \u03b1-arrestins in protein trafficking is expanding and yeast \u03b1-arrestins localize to the trans-Golgi network (TGN) where they regulate sorting of membrane proteins. For example, upon exposure to glucose, the yeast \u03b1-arrestins Bul1 and Rod1 promote ubiquitination of the lactate transporter Jen1 to initiate endocytosis, but then Rod1 is essential for post-endocytic sorting of Jen1 to the multi-vesicular body (MVB) pathway. It is clear that \u03b1-arrestin activity is often tightly controlled by metabolic signaling pathways including those governed by the major nutrient sensing kinases TORC1 and AMPK. Thus, \u03b1-arrestins link cellular metabolic status with selective endocytosis of nutrient transporters to help cells adapt to nutrient availability. For example, the yeast \u03b1-arrestin Rod1 promotes endocytosis of the glucose transporter Hxt6 and the lactate transporter Jen1 in glucose replete conditions but under glucose starvation conditions Rod1 activity is impeded by phospho-regulation. However, in response to glucose starvation or treatment with 2-deoxyglucose, a toxic analog of glucose that disrupts cellular metabolism, Csr2 or Rod1, respectively, stimulate endocytosis of the low affinity, high capacity glucose transporters Hxt1 and Hxt3. In contrast, amino acid excess in yeast initiates endocytosis of the methionine or arginine amino acid transporters, Mup1 and Can1, respectively, and this requires the activity of Ecm21. In humans, the \u03b1-arrestins ARRDC3 and TXNIP are similarly nutrient regulated, being insulin-responsive; Inhibition of TXNIP by insulin diminishes the endocytosis of the glucose transporter GLUT4 and activation of TXNIP by the toxic glucose analog 2DG stimulates glucose transporter GLUT1 internalization in HepG2 cells. Thus, \u03b1-arrestins are critical for fundamental responses to complex metabolic signaling networks present in mammals.",
+          "cos_sim_score": 0.07833682000637054,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Alpha Arrestin",
+          "title": "Alpha Arrestin",
+          "url": "https://en.wikipedia.org/wiki/Alpha_Arrestin",
+          "text": "Regulation\nUbiquitin-dependent regulation of \u03b1-arrestin activity\nThe activity of \u03b1-arrestins is tightly regulated by post-translational modifications dictated by environmental cues and metabolic signaling. \u03b1-Arrestins are themselves mono-ubiquitinated by the Rsp5 ubiquitin ligase and, in most cases, this modification is required for optimal function. For example, Ldb19-dependent endocytosis of the yeast arginine transporter Can1 requires ubiquitination at K486. In response to glucose exposure, ubiquitination of Rod1 is critical for the endocytosis of lactate transporter Jen1. In contrast, Rod1 ubiquitination is not required for endocytosis of the low affinity glucose transporters Hxt1 and Hxt3. Additionally, the endocytosis of the general amino acid permease Gap1 triggered by stress conditions, occurs without altering the ubiquitination status of the \u03b1-arrestins involved; Bul1/2 and Aly1/2. Therefore, mono-ubiquitination contributes to \u03b1-arrestin activation in some, but not all cases. \u03b1-Arrestins can be poly-ubiquitinated on amino acids distinct from the sites of Rsp5 mono-ubiquitination. Attachment of Lys(63)-linked polyubiquitination chains induces proteasomal degradation of several \u03b1-arrestins, which is antagonized by the deubiquitinating enzymes (DUBs) Ubp2 and Ubp15. A remaining open question is how ubiquitination regulates \u03b1-arrestin function on a mechanistic level. In multiple cases it seems that ubiquitination may control the subcellular localization of \u03b1-arrestins. In the context of Ldb19, ubiquitination is required for its endocytic function and subcellular localization, as mutants that cannot be mono-ubiquitinated accumulate diffusely in the cytosol. Ubiquitination of \u03b1-arrestins can regulate interaction with select substrates such as is the case for Rim8, which mediates binding of the pH sensor Rim21 with ESCRT machinery. Mono-ubiquitination of Rim8 by Rsp5 promotes binding of ESCRT-I subunit Vps23, preventing poly-ubiquitination of Rim8 by Rsp5.",
+          "cos_sim_score": 0.05368167906999588,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "probe_id": "11731798_a_at",
+  "gene_symbol": "LGALS2",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.1768494279453825,
+  "abs_fold_change": 1.8983,
+  "univariate_score": 1.8831,
+  "probe_count": 1,
+  "probe_ids": "11731798_a_at",
+  "max_combined_score": 1.8831,
+  "mean_abs_fold_change": 1.8983,
+  "max_rf_importance": 0.0,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T00:22:02",
+  "interpretation": "LGALS2 encodes Galectin-2, a protein that binds beta-galactosides and is involved in various biological processes, although its precise physiological function remains unclear. The retrieved evidence does not directly link LGALS2 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), but it suggests potential roles in inflammation and tissue remodeling, which are relevant to osteonecrosis mechanisms. The lack of strong evidence connecting LGALS2 specifically to SONFH indicates that its role as a biomarker for early detection is speculative at best. Therefore, while LGALS2 may have some indirect relevance through its general biological functions, it does not currently meet the criteria for a strong candidate biomarker in this context. [INFERENCE]",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "LGALS2 may play a role in biological processes relevant to osteonecrosis, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "LGALS2 (P05162). https://www.uniprot.org/uniprotkb/P05162",
+    "LGALS2 \u2014 LGALS2. https://platform.opentargets.org/target/ENSG00000100079",
+    "LGALS2 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000100079/associations",
+    "LGALS2 \u2194 placenta praevia. https://platform.opentargets.org/target/ENSG00000100079/associations",
+    "LGALS2 \u2194 neoplasm. https://platform.opentargets.org/target/ENSG00000100079/associations",
+    "LGALS2 \u2194 triple-negative breast cancer. https://platform.opentargets.org/target/ENSG00000100079/associations",
+    "Galectin-2. https://en.wikipedia.org/wiki/Galectin-2",
+    "Galectin-3. https://en.wikipedia.org/wiki/Galectin-3",
+    "List of human protein-coding genes 4. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_4",
+    "22q13 deletion syndrome. https://en.wikipedia.org/wiki/22q13_deletion_syndrome"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4519,
+    "completion_tokens": 227,
+    "total_tokens": 4746,
+    "estimated_cost_usd": 0.000814
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P05162",
+          "title": "LGALS2 (P05162)",
+          "url": "https://www.uniprot.org/uniprotkb/P05162",
+          "text": "Protein: Galectin-2\nFunction: This protein binds beta-galactoside. Its physiological function is not yet known",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000100079::function",
+          "title": "LGALS2 \u2014 LGALS2",
+          "url": "https://platform.opentargets.org/target/ENSG00000100079",
+          "text": "Function: This protein binds beta-galactoside. Its physiological function is not yet known.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000100079::EFO_0005772",
+          "title": "LGALS2 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000100079/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.207",
+          "cos_sim_score": 0.2065824084436509,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000100079::EFO_0007442",
+          "title": "LGALS2 \u2194 placenta praevia",
+          "url": "https://platform.opentargets.org/target/ENSG00000100079/associations",
+          "text": "Disease: placenta praevia\nDescription: Abnormal placentation in which the placenta implants in the lower segment of the uterus (the zone of dilation) and may cover part or all of the opening of the cervix. It is often associated with serious antepartum bleeding and premature labor.\nAssociation score: 0.188",
+          "cos_sim_score": 0.1881007932809787,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000100079::EFO_0000616",
+          "title": "LGALS2 \u2194 neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000100079/associations",
+          "text": "Disease: neoplasm\nDescription: A benign or malignant tissue growth resulting from uncontrolled cell proliferation. Benign neoplastic cells resemble normal cells without exhibiting significant cytologic atypia, while malignant cells exhibit overt signs such as dysplastic features, atypical mitotic figures, necrosis, nuclear pleomorphism, and anaplasia. Representative examples of benign neoplasms include papillomas, cystadenomas, and lipomas; malignant neoplasms include carcinomas, sarcomas, lymphomas, and leukemias.\nAssociation score: 0.093",
+          "cos_sim_score": 0.09349118290475684,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000100079::EFO_0005537",
+          "title": "LGALS2 \u2194 triple-negative breast cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000100079/associations",
+          "text": "Disease: triple-negative breast cancer\nDescription: An invasive breast carcinoma which is negative for expression of estrogen receptor (ER), progesterone receptor (PR), and human epidermal growth factor receptor 2 (HER2).\nAssociation score: 0.080",
+          "cos_sim_score": 0.08041684604496824,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Galectin-2",
+          "title": "Galectin-2",
+          "url": "https://en.wikipedia.org/wiki/Galectin-2",
+          "text": "Galectin-2 is a protein that in humans is encoded by the LGALS2 gene.\nThe protein encoded by this gene is a soluble beta-galactoside binding lectin. The encoded protein is found as a homodimer and can bind to Lymphotoxin alpha. A single nucleotide polymorphism in an intron of this gene can alter the transcriptional level of the protein, with a resultant increased risk of myocardial infarction.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.41460680961608887,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Galectin-3",
+          "title": "Galectin-3",
+          "url": "https://en.wikipedia.org/wiki/Galectin-3",
+          "text": "Galectin-3 is a protein that in humans is encoded by the LGALS3 gene.  Galectin-3 is a member of the lectin family, of which 14 mammalian galectins have been identified.\nGalectin-3 is approximately 30 kDa and, like all galectins, contains a carbohydrate-recognition-binding domain (CRD) of about 130 amino acids that enable the specific binding of \u03b2-galactosides.\nGalectin-3 is also a member of the beta-galactoside-binding protein family that plays an important role in cell-cell adhesion, cell-matrix interactions, macrophage activation, angiogenesis, metastasis, apoptosis.\nGalectin-3 is encoded by a single gene, LGALS3, located on chromosome 14, locus q21\u2013q22. Galectin-3 is expressed in the nucleus, cytoplasm, mitochondrion, cell surface, and extracellular space.\n\nFunction\nGalectin-3 has an affinity for beta-galactosides and exhibits antimicrobial activity against bacteria and fungi.\nThis protein has been shown to be involved in the following biological processes: cell adhesion, cell activation and chemoattraction, cell growth and differentiation, cell cycle, and apoptosis. Given galectin-3's broad biological functionality, it has been demonstrated to be involved in cancer, inflammation and fibrosis, heart disease, and stroke. Studies have also shown that the expression of galectin-3 is implicated in a variety of processes associated with heart failure, including myofibroblast proliferation, fibrogenesis, tissue repair, inflammation, and ventricular remodeling.\nGalectin-3 associates with the primary cilium and modulates renal cyst growth in congenital polycystic kidney disease.\nThe functional roles of galectins in cellular response to membrane damage are rapidly expanding. It has been recently shown that galectin-3 recruits ESCRTs to damaged lysosomes so that lysosomes can be repaired.\n\nClinical significance\nEarly neurodevelopment\nIn early murine embryogenesis, galectin-3 is known to be expressed in the trophectoderm, notochord, and embryonic macrophages, but its functions in neurodevelopment remain unclear. Details as to how galectin-3 regulates murine neurogenesis continue to evolve. In the subventricular zone (SVZ), galectin-3 was shown to be important for neuroblast migration, acting possibly through an EGFR-based mechanism. Galectin-3 has also been implicated in gliogenesis. In the postnatal ventricular subventricular zone (V-SVZ), galectin-3 expression was shown to be necessary for optimal gliogenesis, as reduced expression of galectin-3 led to a reduction in gliogenesis.\nGalectin-3 expression levels also affect glia subpopulations differently. Increasing galectin-3 expression suppressed oligodendrogenesis and induced astrogenesis by virtue of BMP signaling. Galectin-3 binds BMPR1\u03b1 and increases BMP signaling in the V-SVZ. Galectin-3 also binds to \u03b2-catenin, an important component of adherens junctions, potentially linking its activity to Wnt signaling pathways. Knockdown of galectin-3 increases Wnt signaling in the postnatal SVZ, furthering support for its potential involvement as a regulator or component of these pathways.\nGalectin-3 expression has also been reported in stem cell niches of human and murine embryonic brain tissue, and has recently been revealed to play a role in the process of gyrification in the brain. Galectin-3 is necessary to establish apical-basal polarity (ABP) in human embryonic stem cells (hESCs) during neural differentiation, and galectin-3 inhibition disrupts the apical distribution of junctional complex proteins in vitro. In fetal brains of female mice treated with galectin-3 inhibitors, the integrity of tight junctions in the ventricular zone (VZ) was lost, leading to early delamination of neural stem cells and increased vertical divisions. Unlike humans, the cerebral cortex of lower mammalian species such as mice do not have cortical folds (see gyri and sulci), but instead have lissencephalic cortices (smooth brain). Recently, it was reported that both pharmacological inhibition and genetic deletion of galectin-3 caused sulci to appear in the developing mouse cerebral cortex.",
+          "cos_sim_score": 0.2617627680301666,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of human protein-coding genes 4",
+          "title": "List of human protein-coding genes 4",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_4",
+          "text": "== References ==",
+          "cos_sim_score": 0.1329527497291565,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::22q13 deletion syndrome",
+          "title": "22q13 deletion syndrome",
+          "url": "https://en.wikipedia.org/wiki/22q13_deletion_syndrome",
+          "text": "22q13 deletion syndrome, \nknown as Phelan\u2013McDermid syndrome (PMS), is a genetic disorder caused by deletions or rearrangements on the q terminal end (long arm) of chromosome 22. Any abnormal genetic variation in the q13 region that presents with significant manifestations (phenotype) typical of a terminal deletion may be diagnosed as 22q13 deletion syndrome. There is disagreement among researchers as to the exact definition of 22q13 deletion syndrome. The Developmental Synaptopathies Consortium defines PMS as being caused by SHANK3 mutations, a definition that appears to exclude terminal deletions. The requirement to include SHANK3 in the definition is supported by many but not by those who first described 22q13 deletion syndrome.\nPrototypical terminal deletion of 22q13 can be uncovered by karyotype analysis, but many terminal and interstitial deletions are too small. The availability of DNA microarray technology for revealing multiple genetic problems simultaneously has been the diagnostic tool of choice. The falling cost for the whole exome sequencing and, eventually, whole genome sequencing, may replace DNA microarray technology for candidate evaluation. However, fluorescence in situ hybridization (FISH) tests remain valuable for diagnosing cases of mosaicism (mosaic genetics) and chromosomal rearrangements (e.g., ring chromosome, unbalanced chromosomal translocation). Although early researchers sought a monogenic (single gene genetic disorder) explanation, recent studies have not supported that hypothesis (see Etiology).\n\nSigns and symptoms\nAffected individuals present with a broad array of medical and behavioral manifestations (tables 1 and 2). Patients are consistently characterized by global developmental delay, intellectual disability, speech abnormalities, ASD-like behaviors, hypotonia and mild dysmorphic features. Table 1 summarizes the dysmorphic and medical conditions that have been reported in individuals with PMS. Table 2 summarizes the psychiatric and neurological symptoms associated with PMS. Most of the studies include small samples or relied on parental report or medical record review to collect information, which can account in part for the variability in the presentation of some of the presenting features. Larger prospective studies are needed to further characterize the phenotype.",
+          "cos_sim_score": 0.11235012114048004,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Galectin-3",
+          "title": "Galectin-3",
+          "url": "https://en.wikipedia.org/wiki/Galectin-3",
+          "text": "Clinical applications\nCardiovascular risk indicator\nChronic heart failure has been found to be indicated by a galectin-3 tests, using the ARCHITECT immunochemistry platform developed by BG Medicine and marketed by Abbott, helping to determine which patients are most at risk for the disease. This test is also offered on the VIDAS platform marketed by bioM\u00e9rieux. Pecta-Sol C binds to galectin-3 binding sites on the surfaces of cells as a preventative measure created by Isaac Eliaz in conjunction with EcoNugenics.\nGalectin-3 is upregulated in patients with idiopathic pulmonary fibrosis. The cells that receive galectin-3 stimulation (fibroblasts, epithelial cells, and myofibroblasts) upregulated the formation of fibrosis and  collagen formation. Fibrosis is necessary in many aspects of intrabody regeneration. The myocardial lining constantly undergoes necessary fibrosis, and the inhibition of galectin-3 interferes with myocardial fibrogenesis. A study concluded that pharmacological inhibition of galectin-3 attenuates cardiac fibrosis, LV dysfunction, and subsequent heart failure development.\n\nDrug development\nGalecto Biotech in Sweden is focused on developing drugs targeting galectin-3 to treat fibrosis, specifically idiopathic pulmonary fibrosis.  Galectin Therapeutics in the United States is also targeting galectins for clinical applications.  Preclinical studies demonstrate that inhibition of galectin-3 significantly reduces portal hypertension and fibrosis.   In a phase 2b/3 trial, Galectin Therapeutics galectin-3 inhibitor belapectin reduces liver stiffness progression and prevents varices at 18 months in MASH cirrhosis.. Earlier phase 1 data for belapectin also showed increased effectiveness and reduced side effects of cancer immunotherapy.\n\nBiomarkers\nGalectin-3 is increasingly being used as a diagnostic marker for different cancers. It can be screened for and used as a prognostic factor to predict the progression of the cancer. Galectin-3 has varying effects in different types of cancer. One approach to cancers with high galectin-3 expression is to inhibit galectin-3 to enhance treatment response.\n\nInteractions\nLGALS3 has been shown to interact with LGALS3BP.\nIn melanocytic cells LGALS3 gene expression may be regulated by MITF.\n\nReferences\n\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.1069825068116188,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

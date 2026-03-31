@@ -1,0 +1,128 @@
+{
+  "probe_id": "11721029_a_at",
+  "gene_symbol": "PIP5K1B",
+  "rf_importance": 0.0107,
+  "selection_freq": 1.0,
+  "abs_fold_change": 2.0196019666666665,
+  "combined_score": 0.4744,
+  "probe_count": 1,
+  "probe_ids": "11721029_a_at",
+  "max_combined_score": 0.4744,
+  "mean_abs_fold_change": 2.0196,
+  "max_rf_importance": 0.0107,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-03-31T20:46:37",
+  "interpretation": "PIP5K1B (Phosphatidylinositol 4-phosphate 5-kinase type-1 beta) is involved in the phosphorylation of phosphatidylinositol 4-phosphate to produce phosphatidylinositol 4,5-bisphosphate, a crucial lipid second messenger that regulates various cellular processes including signal transduction and cytoskeletal dynamics. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), PIP5K1B has been identified as one of the candidate biomarkers through differential expression analysis in patients with SONFH compared to controls. The retrieved evidence indicates that PIP5K1B is part of a group of lipid metabolism-related genes that may play a role in the pathophysiology of SONFH, suggesting its potential as a diagnostic marker. The strength of the evidence is moderate, as it is based on the identification of PIP5K1B in a study focused on SONFH biomarkers, but further validation is needed to establish its clinical utility. Overall, PIP5K1B shows promise as a biomarker for early detection of SONFH due to its involvement in lipid metabolism and cellular signaling pathways relevant to the disease.",
+  "evidence_relation": "direct",
+  "evidence_tier": "Tier 2",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "PIP5K1B is a candidate biomarker for early detection of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) due to its role in lipid metabolism and cellular signaling.",
+  "citations": [
+    "PIP5K1B (O14986). https://www.uniprot.org/uniprotkb/O14986",
+    "PIP5K1B (O14986-2). https://www.uniprot.org/uniprotkb/O14986-2",
+    "PIP5K1B (O14986-3). https://www.uniprot.org/uniprotkb/O14986-3",
+    "PIP5K1B \u2014 PIP5K1B. https://platform.opentargets.org/target/ENSG00000107242",
+    "PIP5K1B \u2194 ovarian dysfunction. https://platform.opentargets.org/target/ENSG00000107242/associations",
+    "PIP5K1B \u2194 Abnormal pupillary function. https://platform.opentargets.org/target/ENSG00000107242/associations",
+    "PIP5K1B \u2194 neuroinflammatory disorder. https://platform.opentargets.org/target/ENSG00000107242/associations",
+    "PIP5K1B \u2194 chronic kidney disease. https://platform.opentargets.org/target/ENSG00000107242/associations",
+    "Discovery of lipid metabolism-related diagnostic biomarkers and construction of diagnostic model in steroid-induced osteonecrosis of femoral head. (2025). https://pubmed.ncbi.nlm.nih.gov/40823179/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 3410,
+    "completion_tokens": 331,
+    "total_tokens": 3741,
+    "estimated_cost_usd": 0.00071
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O14986",
+          "title": "PIP5K1B (O14986)",
+          "url": "https://www.uniprot.org/uniprotkb/O14986",
+          "text": "Protein: Phosphatidylinositol 4-phosphate 5-kinase type-1 beta\nFunction: Catalyzes the phosphorylation of phosphatidylinositol 4-phosphate (PtdIns(4)P/PI4P) to form phosphatidylinositol 4,5-bisphosphate (PtdIns(4,5)P2/PIP2), a lipid second messenger that regulates several cellular processes such as signal transduction, vesicle trafficking, actin cytoskeleton dynamics, cell adhesion, and cell motility (By similarity). PtdIns(4,5)P2 can directly act as a second messenger or can be utilized as a precursor to generate other second messengers: inositol 1,4,5-trisphosphate (IP3), diacylglycerol (DAG) or phosphatidylinositol-3,4,5-trisphosphate (PtdIns(3,4,5)P3/PIP3) (By similarity). Mediates RAC1-dependent reorganization of actin filaments. Contributes to the activation of phospholipase PLD2. Together with PIP5K1A, is required, after stimulation by G-protein coupled receptors, for the synthesis of IP3 that will induce stable platelet adhesion (By similarity)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::O14986-2",
+          "title": "PIP5K1B (O14986-2)",
+          "url": "https://www.uniprot.org/uniprotkb/O14986-2",
+          "text": "Protein: Isoform 2 of Phosphatidylinositol 4-phosphate 5-kinase type-1 beta",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::O14986-3",
+          "title": "PIP5K1B (O14986-3)",
+          "url": "https://www.uniprot.org/uniprotkb/O14986-3",
+          "text": "Protein: Isoform 3 of Phosphatidylinositol 4-phosphate 5-kinase type-1 beta",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000107242::function",
+          "title": "PIP5K1B \u2014 PIP5K1B",
+          "url": "https://platform.opentargets.org/target/ENSG00000107242",
+          "text": "Function: Catalyzes the phosphorylation of phosphatidylinositol 4- phosphate (PtdIns(4)P/PI4P) to form phosphatidylinositol 4,5- bisphosphate (PtdIns(4,5)P2/PIP2), a lipid second messenger that regulates several cellular processes such as signal transduction, vesicle trafficking, actin cytoskeleton dynamics, cell adhesion, and cell motility (By similarity). PtdIns(4,5)P2 can directly act as a second messenger or can be utilized as a precursor to generate other second messengers: inositol 1,4,5-trisphosphate (IP3), diacylglycerol (DAG) or phosphatidylinositol-3,4,5-trisphosphate (PtdIns(3,4,5)P3/PIP3) (By similarity). Mediates RAC1-dependent reorganization of actin filaments. Contributes to the activation of phospholipase PLD2. Together with PIP5K1A, is required, after stimulation by G-protein coupled receptors, for the synthesis of IP3 that will induce stable platelet adhesion (By similarity). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000107242::EFO_0009003",
+          "title": "PIP5K1B \u2194 ovarian dysfunction",
+          "url": "https://platform.opentargets.org/target/ENSG00000107242/associations",
+          "text": "Disease: ovarian dysfunction\nDescription: The inability of the ovaries to function.\nAssociation score: 0.318",
+          "cos_sim_score": 0.31764053237551393,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000107242::HP_0007686",
+          "title": "PIP5K1B \u2194 Abnormal pupillary function",
+          "url": "https://platform.opentargets.org/target/ENSG00000107242/associations",
+          "text": "Disease: Abnormal pupillary function\nDescription: A functional abnormality of the pupil.\nAssociation score: 0.314",
+          "cos_sim_score": 0.31422613165989943,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000107242::EFO_0020092",
+          "title": "PIP5K1B \u2194 neuroinflammatory disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000107242/associations",
+          "text": "Disease: neuroinflammatory disorder\nDescription: A hypersensitivity reaction type II disease that involves the central nervous system.\nAssociation score: 0.314",
+          "cos_sim_score": 0.3138709988989848,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000107242::EFO_0003884",
+          "title": "PIP5K1B \u2194 chronic kidney disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000107242/associations",
+          "text": "Disease: chronic kidney disease\nDescription: The end-stage of CHRONIC RENAL INSUFFICIENCY. It is characterized by the severe irreversible kidney damage (as measured by the level of PROTEINURIA) and the reduction in GLOMERULAR FILTRATION RATE to less than 15 ml per min (Kidney Foundation: Kidney Disease Outcome Quality Initiative, 2002). These patients generally require HEMODIALYSIS or KIDNEY TRANSPLANTATION.\nAssociation score: 0.275",
+          "cos_sim_score": 0.27506395411448237,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::40823179",
+          "title": "Discovery of lipid metabolism-related diagnostic biomarkers and construction of diagnostic model in steroid-induced osteonecrosis of femoral head.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40823179/",
+          "year": "2025",
+          "text": "This study aimed to identify candidate diagnostic biomarkers for steroid-induced osteonecrosis of the femoral head (SONFH). Two datasets were downloaded from the Gene Expression Omnibus for analyses of differentially expressed genes (DEGs) and lipid scores in SONFH and control groups and a weighted gene co-expression network analysis. Overlap between genes in the disease-related module, DEGs, and lipid metabolism-related genes was evaluated to obtain lipid metabolism-related DEGs. A diagnostic model was constructed and evaluated using a nomogram analysis and calibration curves. Correlations between immune cells and lipid metabolism-related DEGs in the model were evaluated. In total, 1,724 DEGs were screened between the SONFH and control groups. Seven SONFH-related modules and 18 lipid metabolism-related DEGs were identified. A total of six optimized genes, <i>CDK8</i>, <i>CHPT1</i>, <i>DPEP3</i>, <i>ORMDL3</i>, <i>PIP5K1B</i>, and <i>PPT2</i>, were obtained. A model based on these genes had good diagnostic performance for SONFH in GSE123568 and GSE74089. The six genes were significantly related to two immune cell subsets, myeloid dendritic cell activated and neutrophil. These six genes may be novel biomarkers for SONFH and the combination is a potential diagnostic signature.",
+          "cos_sim_score": 0.514923095703125,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_fetch_by_id",
+      "result": []
+    }
+  ]
+}

@@ -48,13 +48,23 @@ paths:
 # BIOMARKER
 # ---------------------------------------------------------------------------
 biomarker:
-  min_score: 0.50 #.30 for 500 .55 for 100
+  min_score: 0.50 #.30 for 500 .50 for 100
     # minimum combined_score threshold for shortlist inclusion (RF importance + fold-change, normalized avg)
     # NOTE: lowered from 0.60 → 0.30 after top_n_feats increased to 500.
     # RF importance dilutes across more features so raw scores are smaller.
+
+    # For multivariate
+    # top100: 0.50
+    # top500: 0.30 to 0.40
+
+    # For univariate
+    # top100: 0.50 to 0.60
+    # top500: 0.40 to 0.50, probably start at 0.45
+
   top_n_display: 12   # how many top candidates to highlight across reporting outputs
                       # routed to → biomarker_job.py  : shortlist preview log
                       # routed to → train_eval_job.py : fig 4 scatter gene labels
+                      # routed to → llm_job.py        : max genes sent to LLM (cost control for univariate shortlists)
 
 # ---------------------------------------------------------------------------
 # PREPROCESSING
@@ -66,7 +76,7 @@ preprocessing:
 # FEATURE SELECTION
 # ---------------------------------------------------------------------------
 feature_selection:
-  top_n_feats: 100 #500
+  top_n_feats: 100 # 100 or 500
   method: fc       # kept for config compat; ranking now uses hybrid score regardless
 
 # ---------------------------------------------------------------------------

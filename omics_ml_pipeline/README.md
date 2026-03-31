@@ -224,6 +224,76 @@ grep -a "\[ITER\|\[START\|\[DONE\|\[FAIL\|\[WRITE\|\[AGENT" llm_run_*.log
 
 ---
 
+### 9. Multi-run comparison — archiving outputs
+
+After each pipeline run, archive the output directory with a descriptive name before starting the next run:
+
+```bash
+# Archive completed run output (name by mode + top_n + any run notes)
+mv app/data/output app/data/output_<mode>_top<n>_<notes>
+mkdir app/data/output
+```
+
+**Example — full 4-run comparison sequence (run from `omics_ml_pipeline/`):**
+
+```bash
+# Run 1 — multivariate, top 100
+python -m app.main --skip-pre --mode multivariate
+mv app/data/output app/data/output_multivariate_top100
+mkdir app/data/output
+
+# Run 2 — multivariate, top 500
+# (edit pipeline.yaml: top_n_feats: 500)
+python -m app.main --skip-pre --mode multivariate
+mv app/data/output app/data/output_multivariate_top500_min_s_45
+mkdir app/data/output
+
+# Run 3 — univariate, top 100
+# (edit pipeline.yaml: top_n_feats: 100)
+python -m app.main --skip-pre --mode univariate
+mv app/data/output app/data/output_univariate_top100_min_s_50
+mkdir app/data/output
+```
+
+Each archived directory is self-contained — it holds all plots, CSVs, and the biomarker shortlist for that run.
+
+> **Tip:** Run the gene audit (below) before archiving to avoid symlink gymnastics. If you've already archived, see the symlink approach in the audit section.
+
+---
+
+### 10. Gene audit — known SONFH biomarker overlap
+
+Cross-references each pipeline run against the known gene reference list (`report/sonfh_known_genes.csv`).
+
+**Run from `Omics_Capstone/` (project root):**
+
+```bash
+# Multivariate audit — reads from data/femoral_head_necrosis/feature_selection/ (standalone Weka prep path)
+python report/generate_sonfh_gene_audit.py --mode multivariate
+# Output: report/sonfh_gene_audit.csv
+
+# Univariate audit — reads from omics_ml_pipeline/app/data/output/feature_selection/univariate_ann/
+python report/generate_sonfh_gene_audit.py --mode univariate
+# Output: report/sonfh_gene_audit_univariate.csv
+```
+
+**If the output has already been archived**, use a symlink to point the script at the right directory:
+
+```bash
+# Univariate audit on archived output_univariate_top100_min_s_50
+ln -sfn output_univariate_top100_min_s_50 omics_ml_pipeline/app/data/output
+python report/generate_sonfh_gene_audit.py --mode univariate
+cp report/sonfh_gene_audit_univariate.csv report/sonfh_gene_audit_univariate_top100.csv
+rm omics_ml_pipeline/app/data/output   # remove symlink
+
+# Multivariate audit on archived output_multivariate_top500_min_s_45
+# (reads standalone Weka prep paths — no symlink needed)
+python report/generate_sonfh_gene_audit.py --mode multivariate
+cp report/sonfh_gene_audit.csv report/sonfh_gene_audit_multivariate_top500.csv
+```
+
+---
+
 ### All flags
 
 | Flag | Effect |
@@ -232,6 +302,8 @@ grep -a "\[ITER\|\[START\|\[DONE\|\[FAIL\|\[WRITE\|\[AGENT" llm_run_*.log
 | `--skip-pre` | Skip ingest, parse, preprocess (use existing outputs) |
 | `--skip-train` | Skip model training |
 | `--llm` | Run LLM biological interpretation (opt-in) |
+| `-m univariate` | Use ANN MCCV probe ranking for feature selection (default) |
+| `-m multivariate` | Use hybrid fold-change + t-stat ranking for feature selection |
 
 ---
 
