@@ -1,6 +1,5 @@
 # Capstone: Microarray Analysis with Weka
 ## Steroid-Induced Osteonecrosis of the Femoral Head — GSE123568
-### Extended deadline: April 30 — Target submission: before March 31 (certificate cutoff)
 
 <p align="center">
   <img src="data/fhn_hip_replacement.jpeg" alt="Hip Replacement — Femoral Head Osteonecrosis" width="700">
@@ -10,18 +9,9 @@
 
 ---
 
-## Before Anything Else
+## Dataset
 
-~~- [x] **EMAIL THE PROFESSOR (Mar 6)** — asked whether prostate cancer is mandatory; professor approved femoral head necrosis (GSE316957) as the dataset for this project.~~
-
-**Switched to GSE123568** — 40-sample microarray study, peripheral blood-derived samples, SONFH vs control.
-Old scRNA-seq dataset (GSE316957) archived to `data/femoral_head_necrosis_old/`.
-
----
-
-## Dataset Decision
-
-**Using GSE123568** — Steroid-Induced Osteonecrosis of the Femoral Head (SONFH)
+**GSE123568** — Steroid-Induced Osteonecrosis of the Femoral Head (SONFH)
 
 | Field | Value |
 |-------|-------|
@@ -30,10 +20,9 @@ Old scRNA-seq dataset (GSE316957) archived to `data/femoral_head_necrosis_old/`.
 | Submitter | Yanqiong Zhang — Institute of Chinese Materia Medica, China Academy of Chinese Medical Sciences |
 | Submitted | Dec 10, 2018 — Public Dec 31, 2019 |
 | Samples | 40 total — **30 SONFH patients, 10 non-SONFH controls** |
-| Platform | **GPL15207 — Affymetrix Human PrimeView Array** (see explanation below) |
+| Platform | **GPL15207 — Affymetrix Human PrimeView Array** |
 | Data type | Gene expression microarray — log2 RMA-normalized intensity values |
 | Probes | 49,293 probe sets covering the human transcriptome |
-| Value range | ~2.6 – 6.7 log2 units (confirmed from file inspection) |
 | Sample source | Human peripheral blood-derived samples — non-invasive, clinically accessible |
 | Study goal | Blood-based gene expression biomarkers for early SONFH detection |
 | Linked paper | Jia Y et al. *Clin Transl Med* 2023;13(6):e1295. PMID: 37313692 |
@@ -65,12 +54,6 @@ intervention with core decompression or other joint-preserving procedures.
 The controls in this study are steroid users who did *not* develop osteonecrosis —
 making the comparison about **disease susceptibility**, not just steroid exposure.
 
-**Why this is better than the old dataset:**
-- 40 samples vs 5 — 8× more data, meaningful statistical power
-- Already sample-level — no pseudobulk aggregation needed
-- Published and peer-reviewed with a linked paper
-- Clinically relevant: blood-based early detection (actionable before bone collapse)
-
 **Class imbalance note:** 30 SONFH vs 10 control (3:1 ratio). Mention in Methods
 as a study design limitation. Because the classes are imbalanced, results should be reported using per-class metrics (TP rate, F1, confusion matrix, and AUC), not overall accuracy alone.
 
@@ -93,7 +76,7 @@ This choice introduces important scientific assumptions:
 - **Biological resolution:** Data reflects bulk expression across mixed cell populations, rather than cell-type–specific signals available in single-cell RNA-seq.
 - **Statistical independence:** Each sample corresponds to a distinct patient, supporting valid supervised learning assumptions.
 
-Despite these limitations, the downstream analytical framework (normalization → feature selection → classification → biomarker interpretation) is largely modality-agnostic, and microarray data remains a robust and widely accepted platform for biomarker discovery. The selected dataset therefore provides a strong balance between biological relevance and statistical reliability for this capstone.
+Despite these limitations, the downstream analytical framework (normalization → feature selection → classification → biomarker interpretation) is largely modality-agnostic, and microarray data remains a robust and widely accepted platform for biomarker discovery.
 
 ---
 
@@ -101,8 +84,6 @@ Despite these limitations, the downstream analytical framework (normalization �
 
 > **Data is not included in this repository.** All raw and processed data files are gitignored.
 > Follow these steps before running any scripts.
-
-### Primary Dataset — GSE123568
 
 **Download steps:**
 1. Go to: `https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE123568`
@@ -122,206 +103,345 @@ omics_ml_pipeline/app/data/input/
 **Skip:** `GSE123568_RAW.tar` (71.8 MB CEL files) — raw Affymetrix files requiring
 R/oligo to process. The series matrix already contains RMA-normalized log2 values.
 
-> **Swapping datasets:** To run the pipeline on a different GEO dataset, place the new
-> series matrix and SOFT files in `app/data/input/`, update the filenames in
-> `app/config/pipeline.yaml` under `paths.series_matrix` and `paths.soft_file`, and
-> add a matching `<dataset>_abstract.txt` for LLM context.
+---
+
+## Pipeline Architecture
+
+Two parallel branches start from the same shared preprocessing steps.
+
+```
+omics_ml_pipeline/app/data/input/
+├── GSE123568_series_matrix.txt.gz
+└── GSE123568_family.soft.gz
+        │
+        ▼
+parse_series_matrix.py  ─┐
+preprocess.py            ─┴─ (run once, shared by both branches)
+        │
+        ├───────────────────────────────┐
+        ▼                               ▼
+feature_select.py               app/utils/univariate_ann.py
+(multivariate hybrid score)     (univariate ANN ranking)
+        │                               │
+        ▼                               ▼
+feature_selection/multivariate/ feature_selection/univariate_ann/
+top100_features.arff            top100_features_univariate_ann.arff
+        │                               │
+        ▼                               ▼
+weka_models/multivariate/       weka_models/univariate_ann/
+(J48, RF, NB, SMO, MLP, IBk)   (J48, RF, NB, SMO, MLP, IBk)
+        │                               │
+        ▼                               ▼
+generate_weka_biomarker_shortlist.py (both branches)
+        │                               │
+        ▼                               ▼
+weka_biomarker_shortlist.csv    weka_biomarker_shortlist.csv
+        │                               │
+        └───────────────┬───────────────┘
+                        ▼
+              LLM biological interpretation
+              (omics_ml_pipeline --llm)
+```
 
 ---
 
-### After Downloading — Run the Pipeline
+## Running the Pipeline
 
-There are two branches: **Weka** (manual GUI, steps 1–3 below) and **Python pipeline** (automated app, step 5 below). Both start from the same three preprocessing scripts.
+All commands run from the **project root** (`/Omics_Capstone/`) unless noted.
 
----
-
-#### Weka branch — complete run steps
-
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│  INPUT  omics_ml_pipeline/app/data/input/                               │
-│  ├── GSE123568_series_matrix.txt.gz  (40 samples × ~49,000 probes)     │
-│  └── GSE123568_family.soft.gz        (probe → gene symbol annotations) │
-└───────────────────────────────┬─────────────────────────────────────────┘
-                                 │
-          STEP 1  python3 omics_ml_pipeline/app/utils/parse_series_matrix.py
-                                 │
-                                 ▼
-┌─────────────────────────────────────────────────────────────────────────┐
-│  app/data/output/parsed/parsed_matrix.csv                               │
-│  40 rows × 49,293 probe columns + class label                           │
-└───────────────────────────────┬─────────────────────────────────────────┘
-                                 │
-              STEP 2  python3 omics_ml_pipeline/app/utils/preprocess.py
-                                 │
-                                 ▼
-┌─────────────────────────────────────────────────────────────────────────┐
-│  app/data/output/parsed/preprocessed_matrix.csv                         │
-│  40 rows × (filtered probes + class)                                    │
-│  Filter: IQR ≥ 0.2 log2 units  (loosened from 0.5 — retains more)      │
-└───────────────────────────────┬─────────────────────────────────────────┘
-                                 │
-           STEP 3  python3 omics_ml_pipeline/app/utils/feature_select.py
-                                 │
-                                 ▼
-┌─────────────────────────────────────────────────────────────────────────┐
-│  OUTPUT  data/femoral_head_necrosis/                                    │
-│  ├── feature_selection/                                                 │
-│  │   ├── top100_features.arff      ← LOAD THIS INTO WEKA                │
-│  │   ├── top100_features.csv       ← same data, CSV form                │
-│  │   ├── top500_features.csv       ← broader discovery set (500 probes) │
-│  │   ├── gene_rankings.csv         ← all probes: hybrid_score, FC,      │
-│  │   │                                t-stat, p-value, IQR              │
-│  │   ├── gene_level_rankings.csv   ← one best probe per gene (deduped)  │
-│  │   └── top100_genes.csv          ← top 100 genes for literature check │
-│  └── EDA/    ← 7 EDA plots (6 individual + eda_composite.png)           │
-└─────────────────────────────────────────────────────────────────────────┘
-```
+### Step 1 — Parse series matrix (shared)
 
 ```bash
-# Step 1 — Parse series matrix
-# Reads GSE123568_series_matrix.txt.gz.
-# Extracts probe matrix, transposes to samples × probes, assigns class labels.
 python3 omics_ml_pipeline/app/utils/parse_series_matrix.py
 ```
+
+Reads `GSE123568_series_matrix.txt.gz`. Extracts probe expression matrix, transposes to samples × probes, assigns class labels from `disease:` field.
 
 **Output → `omics_ml_pipeline/app/data/output/parsed/parsed_matrix.csv`**
 Shape: 40 rows × (~49k probe columns + class)
 
+---
+
+### Step 2 — Filter low-variance probes (shared)
+
 ```bash
-# Step 2 — Filter probes
-# Removes low-variance probes (IQR < 0.2 log2 units across all 40 samples).
-# Threshold loosened from 0.5 to 0.2 — retains more moderate-effect probes.
-# No normalization applied — data is already log2 RMA from the series matrix.
 python3 omics_ml_pipeline/app/utils/preprocess.py
 ```
 
+Removes probes with IQR < 0.2 log2 units across all 40 samples. These flat probes show the same value in every patient regardless of disease status — they cannot help a classifier distinguish SONFH from control.
+
+> **Why IQR 0.2?** The threshold was deliberately loosened from the textbook default of 0.5 to retain moderate-effect probes that are biologically relevant but have small absolute spread. At 0.5, only the most variable probes survive; at 0.2, genes with consistent moderate shifts between groups are preserved. The tradeoff: more noise enters the feature space, but fewer genuine signals are discarded. For a 40-sample dataset with strong class separation, this tradeoff favors sensitivity.
+
+No normalization is applied — data is already log2 RMA from GEO.
+
 **Output → `omics_ml_pipeline/app/data/output/parsed/preprocessed_matrix.csv`**
-Shape: 40 rows × (filtered probes + class) — more probes retained than the previous 0.5 threshold run.
+Shape: 40 rows × (filtered probes + class)
+
+---
+
+### Step 3a — Multivariate feature selection + ARFF
 
 ```bash
-# Step 3 — Feature selection + ARFF export + EDA plots
-# Ranks all retained probes by hybrid score: zscore(|FC|) + zscore(|t-stat|).
-# Selects top 100 for Weka. Also exports top 500 and gene-level deduped files.
-# Generates 7 EDA plots (6 individual + composite).
 python3 omics_ml_pipeline/app/utils/feature_select.py
 ```
 
-**Output → `data/femoral_head_necrosis/feature_selection/`**
-- `top100_features.arff` — import directly into Weka Explorer
+Ranks all retained probes by **hybrid score = zscore(|log2 FC|) + zscore(|Welch t-stat|)**. Selects top 100 for Weka. Also exports top 500 and gene-level deduped files. Generates 7 EDA plots.
+
+> **Why the hybrid score?** Pure fold-change ranking selects genes with large absolute differences but ignores whether that difference is consistent across all 40 patients. Pure t-statistic ranking captures consistency but can promote genes with tiny differences that happen to be rock-solid. Z-scoring both metrics and summing them gives a balanced ranking: a gene must have *both* a meaningful difference in magnitude *and* consistent separation across patients to rank highly. This is more robust than either alone for a small-n dataset.
+
+**Output → `data/femoral_head_necrosis/feature_selection/multivariate/`**
+- `top100_features.arff` — **load this into Weka**
 - `top100_features.csv` — same data in CSV form
-- `top500_features.csv` — 500-probe discovery set (not used in Weka)
-- `gene_rankings.csv` — all probes ranked by hybrid score + all metrics
+- `top500_features.csv` — broader discovery set (not used in Weka)
+- `gene_rankings.csv` — all probes ranked by hybrid score + FC, t-stat, p-value, IQR
 - `gene_level_rankings.csv` — one best probe per gene, deduped
 - `top100_genes.csv` — top 100 genes for literature comparison
 
-**Output → `data/femoral_head_necrosis/EDA/`** — 7 EDA plots including `eda_composite.png` (report Figure 1)
-
-**Step 4 — Run Weka classifiers on `top100_features.arff`:**
-1. Open Weka GUI → Explorer
-2. Preprocess tab → Open file → `data/femoral_head_necrosis/feature_selection/top100_features.arff`
-3. Classify tab → Test options: Cross-validation, Folds: 10
-4. Run: NaiveBayes, J48, RandomForest, SMO, IBk (k=1/3/5), MLP, Auto-Weka
+**Output → `data/femoral_head_necrosis/plots/eda/`** — 7 EDA plots including `eda_composite.png`
 
 > Do **not** run Weka on `top500_features.csv`. The Weka branch is top 100 only.
 
 ---
 
-#### Python pipeline — complete run steps
-
-**Prerequisites:** Docker running (`docker compose up -d` from `omics_ml_pipeline/`), conda env active.
+### Step 3b — Univariate ANN feature selection + ARFF
 
 ```bash
-# All commands from omics_ml_pipeline/
+cd omics_ml_pipeline
+python -m app.utils.univariate_ann
+cd ..
+```
 
-# --- FIRST RUN (from scratch — runs everything including parse + preprocess) ---
+Ranks probes using a single-probe ANN classifier (the professor's method) — each probe is evaluated independently by how well a small neural network can classify SONFH vs control from that one probe alone. Top 100 by AUC are selected.
+
+> **Why also run univariate?** The multivariate hybrid score picks probes that work best *together* as a feature set — it captures synergistic gene combinations. The univariate ANN asks a different question: which single probes are individually the most diagnostic? These two ranking strategies don't always agree, and the genes that appear in *both* shortlists are the highest-confidence candidates. Running both also mirrors the professor's original R-based workflow, providing a direct methodological comparison.
+
+**Output → `data/femoral_head_necrosis/feature_selection/univariate_ann/`**
+- `top100_features_univariate_ann.arff` — **load this into Weka**
+- `top100_features_univariate_ann.csv` — same data in CSV form
+- `filter_univariate_auc.csv` — per-probe AUC from the filter step
+
+---
+
+### Step 4 — Run Weka classifiers
+
+Open **Weka Explorer** (`/Applications/weka-3.8.6.app`) → **Open file** → select the ARFF.
+
+Run both branches. **Multivariate ARFF:** `feature_selection/multivariate/top100_features.arff`
+**Univariate ARFF:** `feature_selection/univariate_ann/top100_features_univariate_ann.arff`
+
+All classifiers use **Cross-validation, Folds: 10**. After each run, right-click the result → **Save result buffer** → save `.txt` to the appropriate `weka_models/` subfolder.
+
+#### Three-layer analysis framework
+
+| Layer | Question | Tools |
+|---|---|---|
+| **1 — Classification** | Can we predict SONFH vs control from gene expression? | NaiveBayes, SMO, MLP, IBk |
+| **2 — Feature discovery** | Which specific genes drive that prediction? | J48, RandomForest, WrapperSubsetEval |
+| **3 — Biology** | What do those genes mean for SONFH pathophysiology? | Phase 6–7 LLM + PubMed |
+
+The classifiers are not the final goal — they are a tool to extract signal. Pathway and biomarker discovery happen after, using the ranked feature list as input.
+
+#### What each model is actually asking
+
+| Classifier | Question it answers | Paper-writing note |
+|---|---|---|
+| NaiveBayes | "Can each gene independently vote for the diagnosis?" — assumes each probe contributes independently | Weakest at class imbalance; useful as probabilistic baseline; expect lower control TP rate |
+| J48 | "What single gene expression thresholds form a decision tree that splits SONFH from control?" | Most interpretable — the tree rules name specific probes at specific thresholds; directly citable |
+| RandomForest | "Do 100+ decision trees collectively agree, and which genes appear most consistently across trees?" | Usually highest accuracy; attribute importance output is your bridge to feature discovery |
+| SMO (SVM) | "Is there a maximum-margin boundary in 100-dimensional gene space that separates the two classes?" | Strong in high-dimensional small-n data; less interpretable but robust |
+| IBk k=1,3,5 | "Do patients with similar gene expression profiles share the same diagnosis?" | Instance-based; k=1 overfits, k=3/5 smoother; shows whether expression similarity predicts class |
+| MLP | "Can a neural network capture nonlinear interactions between genes that linear models miss?" | Closer to biological complexity; genes interact, not just vote independently |
+| Auto-Weka | "What is the best model this dataset supports, found by automated search?" | Great Discussion material — compare vs manual choices; shows robustness of approach |
+
+#### Evaluation models vs. shortlist-producing models
+
+Not all Weka models have the same purpose:
+
+```
+Weka on top100.arff
+    │
+    ├── NaiveBayes ─┐
+    ├── SMO        ─┤  → "Which model wins?" → accuracy/AUC numbers → Results table
+    ├── MLP        ─┤
+    ├── IBk        ─┘
+    │
+    ├── J48  ──────────→ split node probes   ─┐
+    └── RF   ──────────→ importance ranking   ─┴──→ biomarker shortlist → LLM
+```
+
+- **Evaluation models** (NaiveBayes, SMO, MLP, IBk) answer: *can we classify SONFH from gene expression?* Output is accuracy/AUC numbers for the Results table. They do **not** produce a gene list.
+- **J48** produces an interpretable decision tree. The probes named at each split node are directly actionable — one probe at a specific expression threshold separates cases from controls. Directly citable in the paper.
+- **RandomForest** produces attribute importances — a ranked list of which probes contributed most across 200 trees. The top-ranked probes are the shortlist candidates.
+- **The shortlist = J48 split nodes + RF top features.** Only these two models produce the gene list that feeds biological interpretation.
+
+#### Weka classifier settings
+
+**Classify tab** — all with Cross-validation, Folds: 10:
+
+| # | Path in Weka | Key options | Save as |
+|---|---|---|---|
+| 1 | `bayes` → `NaiveBayes` | defaults | `naive_bayes.txt` |
+| 2 | `functions` → `SMO` | defaults | `functions_smo.txt` |
+| 3 | `functions` → `MultilayerPerceptron` | `hiddenLayers=a`, `learningRate=0.3`, `momentum=0.2`, `trainingTime=500` | `multilayerperceptron.txt` |
+| 4 | `lazy` → `IBk` | `KNN=1` | `lazy_ibk_knn_1.txt` |
+| 5 | `lazy` → `IBk` | `KNN=3` | `lazy_ibk_knn_3.txt` |
+| 6 | `lazy` → `IBk` | `KNN=5` | `lazy_ibk_knn_5.txt` |
+| 7 | `trees` → `J48` | `confidenceFactor=0.25`, `minNumObj=2` | `j48_tree.txt` |
+| 8 | `trees` → `RandomForest` | `numIterations=200`, `computeAttributeImportance=true` | `randomforest.txt` |
+
+**Select Attributes tab:**
+
+| # | Evaluator | Classifier | Search | Save as |
+|---|---|---|---|---|
+| 9 | `WrapperSubsetEval` | `RandomForest` | `BestFirst` | `select_attributes_randomforest.txt` |
+
+Save all `.txt` files to:
+- `data/femoral_head_necrosis/weka_models/multivariate/` for the multivariate run
+- `data/femoral_head_necrosis/weka_models/univariate_ann/` for the univariate run
+
+---
+
+### Step 5 — Generate biomarker shortlists
+
+Run after Weka is complete for each branch.
+
+```bash
+# Multivariate shortlist
+python3 generate_weka_biomarker_shortlist.py \
+  --rf    data/femoral_head_necrosis/weka_models/multivariate/randomforest.txt \
+  --j48   data/femoral_head_necrosis/weka_models/multivariate/j48_tree.txt \
+  --ranks data/femoral_head_necrosis/feature_selection/multivariate/gene_rankings.csv \
+  --out   data/femoral_head_necrosis/weka_models/multivariate/weka_biomarker_shortlist.csv
+
+# Univariate shortlist
+python3 generate_weka_biomarker_shortlist.py \
+  --rf    data/femoral_head_necrosis/weka_models/univariate_ann/randomforest.txt \
+  --j48   data/femoral_head_necrosis/weka_models/univariate_ann/j48_tree.txt \
+  --ranks omics_ml_pipeline/app/data/output/feature_selection/gene_rankings.csv \
+  --out   data/femoral_head_necrosis/weka_models/univariate_ann/weka_biomarker_shortlist.csv
+```
+
+Output columns: `probe_id`, `gene_symbol`, `rf_rank`, `rf_importance`, `j48_split`, `abs_fc`, `log_fc`, `hybrid_score`, `source`
+
+---
+
+### Step 6 — Generate Weka model comparison charts
+
+```bash
+python3 - <<'EOF'
+import sys
+sys.path.insert(0, "omics_ml_pipeline")
+from app.utils.feature_select import plot_weka_model_results
+
+plot_weka_model_results(
+    "data/femoral_head_necrosis/weka_models/multivariate",
+    "data/femoral_head_necrosis/plots/multivariate/weka_model_comparison.png"
+)
+plot_weka_model_results(
+    "data/femoral_head_necrosis/weka_models/univariate_ann",
+    "data/femoral_head_necrosis/plots/univariate_ann/weka_model_comparison.png"
+)
+EOF
+```
+
+---
+
+## Python Pipeline (Automated)
+
+The automated pipeline in `omics_ml_pipeline/` replicates and extends the Weka workflow using scikit-learn, XGBoost, hyperopt, and MLflow. It produces equivalent plots and biomarker shortlists with stronger statistical evaluation (50-fold repeated CV vs Weka's single 10-fold run).
+
+```bash
+cd omics_ml_pipeline
+
+# Full run from scratch
 python -m app.main
 
-# --- SUBSEQUENT RUNS (skip parse/preprocess, re-run feature select + train + biomarker) ---
+# Skip parse/preprocess (re-run feature select + train + biomarker)
 python -m app.main --skip-pre
+
+# Univariate mode
+python -m app.main --skip-pre --mode univariate
+
+# LLM interpretation only
+python -m app.main --skip-pre --skip-train --llm
 ```
 
-The pipeline runs on **top 100 probes** by default (matching the Weka branch). It also automatically generates `top500_features.csv` and `gene_level_rankings.csv` as side outputs — no extra steps needed.
+See [`omics_ml_pipeline/README.md`](omics_ml_pipeline/README.md) for full documentation.
 
 ---
 
-**Run A — top 100 (Weka-comparable, default):**
+## Output Directory Structure
 
-```bash
-# Nothing to change — top_n: 100 is already the default config
-python -m app.main --skip-pre
 ```
-
-Results → `app/data/output/models/model_comparison.csv`
+data/femoral_head_necrosis/
+├── GSE123568_series_matrix.txt.gz   ← raw input (downloaded)
+├── GSE123568_family.soft.gz         ← probe annotation (downloaded)
+│
+├── parsed/
+│   ├── parsed_matrix.csv            ← Step 1 output: 40 × 49,293 probes + class
+│   └── preprocessed_matrix.csv     ← Step 2 output: 40 × filtered probes + class
+│
+├── plots/
+│   ├── eda/                         ← Step 3 output: 7 EDA plots
+│   │   ├── volcano_plot.png
+│   │   ├── fold_change_top20.png
+│   │   ├── boxplots_top6.png
+│   │   ├── sample_correlation.png
+│   │   ├── heatmap_top20.png
+│   │   ├── pca_plot.png
+│   │   └── eda_composite.png        ← report Figure 1
+│   ├── multivariate/                ← Step 6 output: Weka comparison chart
+│   └── univariate_ann/              ← Step 6 output: Weka comparison chart
+│
+├── feature_selection/
+│   ├── multivariate/                ← Step 3a output
+│   │   ├── top100_features.arff     ← LOAD INTO WEKA (multivariate)
+│   │   ├── top100_features.csv
+│   │   ├── top500_features.csv
+│   │   ├── gene_rankings.csv        ← used by shortlist script
+│   │   ├── gene_level_rankings.csv
+│   │   └── top100_genes.csv
+│   └── univariate_ann/              ← Step 3b output
+│       ├── top100_features_univariate_ann.arff   ← LOAD INTO WEKA (univariate)
+│       ├── top100_features_univariate_ann.csv
+│       └── filter_univariate_auc.csv
+│
+└── weka_models/
+    ├── multivariate/                ← Step 4 output: Weka .txt result files
+    │   ├── naive_bayes.txt
+    │   ├── functions_smo.txt
+    │   ├── multilayerpreceptron.txt
+    │   ├── lazy_ibk_knn_1.txt
+    │   ├── lazy_ibk_knn_3.txt
+    │   ├── lazy_ibk_knn_5.txt
+    │   ├── j48_tree.txt
+    │   ├── randomforest.txt
+    │   ├── select_attributes_randomforest.txt
+    │   └── weka_biomarker_shortlist.csv   ← Step 5 output
+    └── univariate_ann/              ← same structure, univariate run
+```
 
 ---
 
-**Run B — top 500 (discovery branch):**
+## EDA — Exploratory Data Analysis
 
-Edit `omics_ml_pipeline/app/config/pipeline.yaml`, change two lines:
+> Generated by `omics_ml_pipeline/app/utils/feature_select.py`, saved to `data/femoral_head_necrosis/plots/eda/`.
 
-```yaml
-feature_selection:
-  top_n: 500
-
-paths:
-  top_features_csv: app/data/output/feature_selection/top500_features.csv
-```
-
-Then run:
-
-```bash
-python -m app.main --skip-pre
-```
-
-Compare Run B `model_comparison.csv` to Run A to see the effect of the broader feature set.
-
-**Restore to Run A defaults afterward:**
-```yaml
-feature_selection:
-  top_n: 100
-
-paths:
-  top_features_csv: app/data/output/feature_selection/top100_features.csv
-```
-
----
-
-```bash
-# Step 5 — Generate report figures (run after both Weka and Python pipeline are complete)
-# Parses Weka .txt results + Python model_comparison.csv → bar charts for report Figures 2 & 3
-python3 generate_report_figures.py
-```
-
-**Output → `report/figures/`**
-- `fig_weka_model_comparison.png` — report Figure 2
-- `fig_python_model_comparison.png` — report Figure 3
-- `weka_model_comparison.csv` — Weka results in standard CSV schema
-
-> All generated files are gitignored. Fully reproducible by running the steps above in order.
-
----
-
-<details>
-<summary><strong>EDA — Exploratory Data Analysis</strong></summary>
-
-> Generated by `omics_ml_pipeline/app/utils/feature_select.py`, saved to `data/femoral_head_necrosis/EDA/`.
+The EDA plots run before the branch split and are identical for both multivariate and univariate approaches — they visualize the preprocessed data and the top probe landscape, not the final feature sets.
 
 ---
 
 ### 1 — The full feature landscape (Volcano-style plot)
 
-> **"There are many potentially informative genes"** — shows the full landscape of 11,687 filtered probes; our top 100 sit in the high-FC, high-variance corner.
+> **"There are many potentially informative genes"** — shows the full landscape of filtered probes; our top 100 sit in the high-FC, high-variance corner.
 
-Every dot is one of the 11,687 probes that survived the IQR filter. The top 10 selected probes are labeled by gene name.
+Every dot is one probe that survived the IQR filter. The top 10 selected probes are labeled by gene name. The key insight: the top 100 probes are not just high fold change — they're also high variance, meaning they are likely informative candidates rather than flat background probes.
 
-The key insight: the top 100 probes are not just high fold change — they're also high variance, meaning they are likely informative candidates rather than flat background probes.
+- **X-axis — |Fold Change|:** how different each probe's average expression is between SONFH and control patients, in log2 units.
+- **Y-axis — Variance:** how much a probe's expression varies across all 40 patients.
+- **Legend:** grey = all filtered probes; red = top 100 selected; top 10 labeled.
 
-- **X-axis — |Fold Change|:** how different each probe's average expression is between SONFH and control patients, in log2 units. Further right = more different between groups.
-- **Y-axis — Variance:** how much a probe's expression varies across all 40 patients regardless of group. Higher = more spread out across everyone.
-- **Legend:** grey dots = all 11,687 filtered probes; red dots = the top 100 selected probes; gene name labels on the top 10.
-
-![volcano_plot](data/femoral_head_necrosis/EDA/volcano_plot.png)
+![volcano_plot](data/femoral_head_necrosis/plots/eda/volcano_plot.png)
 
 ---
 
@@ -329,29 +449,25 @@ The key insight: the top 100 probes are not just high fold change — they're al
 
 > **"We selected the most discriminative ones"** — top 20 probes ranked by how differently they're expressed in SONFH vs control.
 
-Each bar = the absolute log2 fold change between SONFH and control. Top genes include **EIF1AY** (|FC|=3.60), **CA1** (3.57), **IGF2** (3.45), **RHCE/RHD** (3.39), **BPGM** (3.39).
+Each bar = the absolute log2 fold change between SONFH and control. A value of 3.6 means the SONFH average is ~12× different from control (2³·⁶ ≈ 12).
 
-- **X-axis — |Log Fold Change|:** magnitude of the difference in mean log2 expression between SONFH and control. A value of 3.6 means the SONFH average is ~12× different from control (2³·⁶ ≈ 12).
-- **Y-axis — Probe ID:** each bar is one probe, labeled by its Affymetrix probe ID. Longer bar = selected earlier = more discriminative.
-- **Legend:** dark red bars = top 10 highest |FC|; blue bars = ranks 11–20. Colour is rank-only — both colours were selected for Weka.
+- **X-axis — |Log Fold Change|:** magnitude of the difference in mean log2 expression.
+- **Y-axis — Probe ID:** each bar is one probe, labeled by Affymetrix probe ID.
+- **Legend:** dark red = top 10 by |FC|; blue = ranks 11–20. Both were selected.
 
-![fold_change_top20](data/femoral_head_necrosis/EDA/fold_change_top20.png)
+![fold_change_top20](data/femoral_head_necrosis/plots/eda/fold_change_top20.png)
 
 ---
 
 ### 3 — Do individual top probes actually separate the groups? — Box plots (Top 6)
 
-> **"These top probes clearly differ between classes"** — individual probe distributions for SONFH vs control patients, minimal overlap. Each panel is annotated with the gene symbol for interpretability.
+> **"These top probes clearly differ between classes"** — individual probe distributions for SONFH vs control, minimal overlap.
 
 Each of the 6 panels shows one top probe. The box covers the middle 50% of values (IQR); the line inside is the median; whiskers extend to the furthest non-outlier value. For the top probes, the boxes barely overlap, confirming the genes are genuinely expressed differently — not just statistically selected artifacts.
 
-- **X-axis:** the two groups being compared — `control (n=10)` on the left, `SONFH (n=30)` on the right.
-- **Y-axis — log2 expression:** the actual measured log2 intensity value for that probe, per patient. Higher = more mRNA detected.
-- **Legend:** blue box = control patients; red box = SONFH patients. Each panel title shows the gene symbol and probe ID.
+![boxplots_top6](data/femoral_head_necrosis/plots/eda/boxplots_top6.png)
 
-![boxplots_top6](data/femoral_head_necrosis/EDA/boxplots_top6.png)
-
-> **Interpretation note:** Several of the top-ranked probes (CA1, BPGM, RHCE/RHD, GYPA) show *lower* expression in SONFH than in controls. A first instinct might be that steroids are suppressing these genes. A more accurate reading: these genes are all associated with erythrocyte (red blood cell) function and oxygen transport. Their reduced signal in SONFH likely reflects a **systemic vascular or hematological shift** in the blood — consistent with the impaired blood supply that defines osteonecrosis — rather than direct transcriptional suppression. They are best understood as **biomarker signals that reflect the disease state**, not as genes causing it. See the Biological Interpretation section below for the full discussion.
+> **Interpretation note:** Several top-ranked probes (CA1, BPGM, RHCE/RHD, GYPA) show *lower* expression in SONFH than in controls. These genes are all associated with erythrocyte (red blood cell) function and oxygen transport. Their reduced signal in SONFH likely reflects a **systemic vascular or hematological shift** in the blood — consistent with the impaired blood supply that defines osteonecrosis — rather than direct transcriptional suppression. They are best understood as **biomarker signals that reflect the disease state**, not as genes causing it.
 
 ---
 
@@ -359,14 +475,12 @@ Each of the 6 panels shows one top probe. The box covers the middle 50% of value
 
 > **"Patients cluster by disease state"** — all 40 patients, color-coded; SONFH patients are more similar to each other than to controls.
 
-A 40×40 grid — one cell per pair of patients. Rows and columns are reordered by hierarchical clustering (the dendrograms on the edges group similar patients together automatically). If the disease signal is real, SONFH patients should form their own cluster and controls theirs.
+A 40×40 grid — one cell per pair of patients. Rows and columns are reordered by hierarchical clustering. If the disease signal is real, SONFH patients should form their own cluster and controls theirs.
 
-- **X-axis & Y-axis:** both axes are the 40 patient samples. Each row and each column is one patient. The cell where row i meets column j shows how similar patients i and j are.
-- **Cell colour — Pearson correlation:** warm red = correlation close to 1.0 (nearly identical expression profiles); cool blue = lower correlation (more different). Scale runs from 0.7 to 1.0 — all samples are blood-derived human samples, so moderate baseline correlation is expected even across different patients.
-- **Sidebar colour bars (top and left edges):** red = SONFH patient; blue = control patient. These let you see at a glance whether clustered patients share a diagnosis.
-- **Legend:** SONFH (n=30) in red, control (n=10) in blue — shown in the dendrogram area.
+- **Cell colour — Pearson correlation:** warm red = correlation close to 1.0 (nearly identical profiles); cool blue = lower correlation. Scale runs 0.7–1.0 — all samples are blood-derived human samples, so moderate baseline correlation is expected.
+- **Sidebar colour bars:** red = SONFH patient; blue = control patient.
 
-![sample_correlation](data/femoral_head_necrosis/EDA/sample_correlation.png)
+![sample_correlation](data/femoral_head_necrosis/plots/eda/sample_correlation.png)
 
 ---
 
@@ -374,176 +488,50 @@ A 40×40 grid — one cell per pair of patients. Rows and columns are reordered 
 
 > **"The signal is consistent across patients"** — a different view of the same separation, showing all 20 top probes at once.
 
-Log2 expression of the top 20 probes across all 40 samples. Both rows (probes) and columns (patients) are reordered by hierarchical clustering. Block structure shows SONFH and control have distinct expression profiles — genes that are high in SONFH are consistently high across all 30 SONFH samples, not just a few outliers.
+Log2 expression of the top 20 probes across all 40 samples. Block structure shows SONFH and control have distinct expression profiles — genes that are high in SONFH are consistently high across all 30 SONFH samples, not just a few outliers.
 
-- **X-axis — Sample:** each column is one patient sample. GSM IDs shown on the axis (tick labels may overlap — zoom in to read individual IDs).
-- **Y-axis — Probe ID:** each row is one of the top 20 probes ranked by |fold change|.
-- **Cell colour:** log2 expression intensity. Warm red = high expression; cool blue = low expression. Scale is relative across the heatmap.
-- **Column colour bar (top strip):** red = SONFH patient column; blue = control patient column. This is the key visual — if the red and blue columns form distinct blocks, the probes separate the groups.
-- **Legend:** SONFH (red) and control (blue) shown in the dendrogram area above the heatmap.
-
-![heatmap_top20](data/femoral_head_necrosis/EDA/heatmap_top20.png)
+![heatmap_top20](data/femoral_head_necrosis/plots/eda/heatmap_top20.png)
 
 ---
 
 ### 6 — Do the samples separate? — PCA
 
-> **"Low-dimensional structure confirms separation"** — 84.6% of all variation captured in one axis, clearly separating the two groups.
+> **"Low-dimensional structure confirms separation"** — PC1 captures strong class separation.
 
-PCA compresses the 100-probe feature space down to 2 numbers per patient. Each dot is one patient. If the two groups land in different regions of this 2D space, the selected probes are genuinely capturing disease signal — not noise.
+PCA compresses the 100-probe feature space down to 2 numbers per patient. If the two groups land in different regions of this 2D space, the selected probes are genuinely capturing disease signal.
 
-- **X-axis — PC1 (84.6% variance explained):** the single most important "direction of variation" across all 100 probes. Because it captures 84.6% of all variation, nearly everything meaningful about the data is in this one axis. SONFH and control patients are separated along PC1.
-- **Y-axis — PC2 (2.4% variance explained):** the second most important direction, after removing the PC1 effect. Adds minor additional separation.
-- **Legend:** red filled circles = SONFH patients (n=30); blue filled circles = control patients (n=10). Each dot is labeled with the patient's GSM sample ID.
+- **X-axis — PC1 (~84% variance explained):** the single most important direction of variation. Because it captures most of the variance, nearly everything meaningful is in this one axis.
+- **Y-axis — PC2:** second direction, minor additional separation.
 
-![pca_plot](data/femoral_head_necrosis/EDA/pca_plot.png)
-
----
-
-### Pipeline EDA plots — automated Python pipeline (top 50 probes)
-
-> Generated by `omics_ml_pipeline/app/jobs/feature_select_job.py`, saved to `omics_ml_pipeline/app/data/output/plots/`.
-> These are produced automatically each pipeline run. PC1 = **88.0%**, PC2 = 2.4% (total 90.4%) — even stronger separation with 50 probes than the manual 100-probe run.
-
-![volcano_plot](omics_ml_pipeline/app/data/output_500_min_55/plots/volcano_plot.png)
+![pca_plot](data/femoral_head_necrosis/plots/eda/pca_plot.png)
 
 ---
-
-![fold_change_top20](omics_ml_pipeline/app/data/output_500_min_55/plots/fold_change_top20.png)
-
----
-
-![boxplots_top6](omics_ml_pipeline/app/data/output_500_min_55/plots/boxplots_top6.png)
-
----
-
-![pca_plot](omics_ml_pipeline/app/data/output_500_min_55/plots/pca_plot.png)
-
----
-
-**EDA composite (Python pipeline — top 50 probes):**
-
-![eda_composite](omics_ml_pipeline/app/data/output_500_min_55/plots/eda_composite.png)
-
----
-
-</details>
 
 ## Understanding the Data Files
 
-### The most important difference from the old dataset
+### How microarray data is structured
 
-The old scRNA-seq dataset (GSE316957) came as **5 separate patient folders**, each with
-3 files. That's because single-cell sequencing produces enormous per-patient files that
-must be stored separately.
-
-This microarray dataset works completely differently: **all 40 patients live inside
-just 2 files**. There are no patient folders. The data is all in one table.
+Unlike single-cell RNA-seq (which produces enormous per-patient folders), microarray data puts **all 40 patients inside just 2 files**. There are no patient folders. All data lives in one table.
 
 ```
-OLD (scRNA-seq — GSE316957):            NEW (microarray — GSE123568):
-data/femoral_head_necrosis_old/         data/femoral_head_necrosis/
-├── GSM9463148_onfh_1/                  ├── GSE123568_series_matrix.txt.gz  ← ALL 40 patients
-│   ├── barcodes.tsv.gz                 └── GSE123568_family.soft.gz        ← annotation
-│   ├── features.tsv.gz
-│   └── matrix.mtx.gz
-├── GSM9463149_onfh_2/
-├── GSM9463150_oa_1/
-├── GSM9463151_oa_2/
-└── GSM9463152_oa_3/
-
-5 folders, 3 files each = 15 files        2 input files = 40 patients
-Both stay compressed — scripts read .gz directly, no extraction needed.
+omics_ml_pipeline/app/data/input/
+├── GSE123568_series_matrix.txt.gz   ← ALL 40 patients × 49,293 probes
+└── GSE123568_family.soft.gz         ← probe → gene symbol annotation
 ```
 
----
+**`GSE123568_series_matrix.txt.gz`** has two parts:
+- **Metadata header** (lines starting with `!`) — sample IDs, titles, disease status. The `disease:` characteristics line assigns class labels: `disease: non-SONFH` → `control` | `disease: SONFH` → `SONFH`
+- **Data matrix** — tab-separated table, rows = probes (49,293), columns = patients (40). Each number is a log2 intensity value.
 
-<details>
-<summary><strong>File 1 — GSE123568_series_matrix.txt.gz</strong> — main data file, 7.7 MB compressed (click to expand)</summary>
-
-### File 1 — `GSE123568_series_matrix.txt.gz` (7.7 MB compressed, read directly by scripts)
-
-This is the main data file. It has two parts:
-
-**Part A — Metadata header** (lines starting with `!`) *(the labels)*
-
-Every line beginning with `!` is a label describing the study or the samples.
-The important ones:
-
-| Line | What it contains |
-|------|-----------------|
-| `!Sample_geo_accession` | The GSM ID for each of the 40 patients, in column order |
-| `!Sample_title` | Plain-English name: `"Peripheral serum, control group, patient 1"` etc. |
-| `!Sample_characteristics_ch1` | Three rows: `tissues:`, `gender:`, and `disease:` |
-| `!series_matrix_table_begin` | Marks where the actual numbers start |
-| `!series_matrix_table_end` | Marks where the numbers end |
-
-The `disease:` characteristics line is what the pipeline uses to assign class labels:
-`disease: non-SONFH` → `control` | `disease: SONFH` → `SONFH`
-
-**Part B — Data matrix** (between the begin/end markers) *(the raw feature data)*
-
-A tab-separated table. Rows = probe sets (49,293 total). Columns = the 40 patient samples.
-
-```
-"ID_REF"       "GSM3507251"  "GSM3507252"  ... "GSM3507290"
-"11715100_at"    3.135515      4.202642    ...   3.714249
-"11715101_s_at"  5.223045      6.073092    ...   5.748748
-... (49,293 rows total)
-```
-
-Each number is a **log2 intensity value** — how active that gene was in that patient's blood.
-Higher = more active. Values range from ~2.6 to ~6.7 (confirmed from file inspection).
-The `log2` part means: a value of 6 represents 2⁶ = 64 units of signal; a value of 7
-represents 2⁷ = 128 — so each +1 step is a doubling of expression.
-
-</details>
-
----
-
-<details>
-<summary><strong>File 2 — GSE123568_family.soft.gz</strong> — probe annotation / translation dictionary, 51 MB (click to expand)</summary>
-
-### File 2 — `GSE123568_family.soft.gz` (51 MB compressed) *(the translation dictionary)*
-
-The SOFT file is a comprehensive metadata file. It has three sections:
-
-| Section | What it contains |
-|---------|-----------------|
-| `^SERIES = GSE123568` | Study title, summary, design, contributors — the "about this study" info |
-| `^PLATFORM = GPL15207` | The chip specification + probe annotation table (49,395 rows) |
-| `^SAMPLE = GSM3507251` ... (×40) | One section per patient: their metadata and expression values |
-
-The most useful part for this project is the **platform annotation table** inside the
-`^PLATFORM` section, which maps each cryptic probe ID to a real gene name.
-`omics_ml_pipeline/app/utils/feature_select.py` reads this directly from the `.soft.gz` on the fly — no extraction needed.
-
-Example of what the annotation looks like:
-
-| Probe ID | Gene Title | Gene Symbol |
-|----------|-----------|-------------|
-| `11715100_at` | histone cluster 1, H3g | HIST1H3G |
-| `11715101_s_at` | histone cluster 1, H3g | HIST1H3G |
-| `11715103_x_at` | tumor necrosis factor, alpha-induced protein 8-like 1 | TNFAIP8L1 |
-
-**Gene Symbol** (`HIST1H3G`, `TNFAIP8L1`) is what you use when reading papers and writing
-the Discussion — these are the internationally agreed short names for genes.
+**`GSE123568_family.soft.gz`** is the probe annotation file. The `^PLATFORM = GPL15207` section maps each cryptic probe ID to a real gene name. Read on the fly by `feature_select.py` — no extraction needed.
 
 ### Why multiple probes map to the same gene
 
-49,293 probes covering ~36,000 human genes means some genes have 2–4 probes each.
-This is intentional. Three reasons:
+49,293 probes covering ~36,000 human genes means some genes have 2–4 probes each. This is intentional:
 
-**1. Redundancy by design.** The chip puts multiple probes per important gene so that
-if one probe gets a bad reading (contamination, poor hybridization), the others still
-work. More reliable measurement.
-
-**2. Alternative splicing.** One gene can produce multiple slightly different mRNA
-versions (called isoforms). Different probes can target different versions of the
-same gene — so each probe is technically measuring something slightly different.
-
-**3. Probe type suffixes** — Affymetrix encodes *why* there are multiple probes in
-the probe ID name itself:
+1. **Redundancy by design** — if one probe gets a bad reading (contamination, poor hybridization), the others still work.
+2. **Alternative splicing** — one gene can produce multiple mRNA isoforms; different probes target different versions.
+3. **Probe type suffixes** — Affymetrix encodes this in the probe ID:
 
 | Suffix | What it means |
 |--------|--------------|
@@ -551,26 +539,12 @@ the probe ID name itself:
 | `_s_at` | "Shared" — matches multiple transcripts of the *same* gene |
 | `_x_at` | "Cross-hybridizing" — matches sequences across *multiple different genes* (least specific) |
 
-Example from this dataset: `11715100_at`, `11715101_s_at`, `11715102_x_at` all → `HIST1H3G`
-
-**What this means for your results:** When `omics_ml_pipeline/app/utils/feature_select.py` picks the "top 100 probes,"
-it might include 3 probes all pointing to the same gene. That gene is effectively counted
-3 times. This is not an error — it reinforces the signal — but when writing the Discussion
-you report *gene names*, not probe counts. Use the annotation file to look up each
-selected probe ID → gene symbol → then list unique genes.
-
-Note: some probes have `---` in the Gene Symbol column — these are control probes or
-unannotated sequences. They will be present in the pipeline but ignored when looking up
-biology (you can't search `---` on PubMed).
-
-</details>
+**What this means for results:** When `feature_select.py` picks the top 100 probes, it might include 3 probes all pointing to the same gene. That gene is effectively counted 3 times. This is not an error — it reinforces the signal. When writing the Discussion, report *gene names*, not probe counts. Use `gene_level_rankings.csv` (one best probe per gene, deduped) for the literature-facing gene list.
 
 ---
 
 <details>
-<summary><strong>The 40 samples — who they are</strong> — full GSM ID table with disease status and gender (click to expand)</summary>
-
-### The 40 samples — who they are
+<summary><strong>The 40 samples — who they are</strong> (click to expand)</summary>
 
 | GSM ID | Title in file | Disease | Gender | Pipeline label |
 |--------|--------------|---------|--------|----------------|
@@ -615,740 +589,79 @@ biology (you can't search `---` on PubMed).
 | GSM3507289 | disease group, patient 29 | SONFH | Female | `SONFH` |
 | GSM3507290 | disease group, patient 30 | SONFH | Female | `SONFH` |
 
-> Note on naming: unlike the old dataset where folder names encoded everything
-> (`GSM9463148_onfh_1` = ONFH patient 1), this dataset uses sequential GSM IDs.
-> The human-readable info is inside the series matrix header.
-> The pipeline reads those details automatically — you don't need to decode the IDs.
-
 **Gender breakdown:**
-- Control (non-SONFH): 3 Female, 7 Male
+- Control: 3 Female, 7 Male
 - SONFH: 17 Female, 13 Male
-- Combined: 20 Female, 20 Male — balanced overall, but unequal within groups.
-  Worth mentioning as a potential confound in the Discussion.
+- Combined: 20 Female, 20 Male — balanced overall, but unequal within groups. Worth mentioning as a potential confound in the Discussion.
 
 </details>
 
 ---
 
-### What preprocess.py does to the probes
-
-Microarray data does **not** need log normalization — it's already log2 from RMA processing.
-The only step is filtering probes with near-zero variance (IQR < 0.2 log2 units across
-all 40 samples). These flat probes show the same value in every patient regardless of disease
-status — they cannot help a classifier distinguish SONFH from control.
-
-The threshold was loosened from the original 0.5 to 0.2 to retain moderate-effect probes
-that are biologically relevant but had small absolute spread. Exact retained count will
-depend on the dataset; run `preprocess.py` and check the printed output.
-
-| Before filtering | After filtering |
-|-----------------|----------------|
-| 49,293 probes | TBD after re-run (more than previous 11,687 — IQR threshold now 0.2) |
-
----
-
-<details>
-<summary><strong>Repository Contents</strong> — full directory tree (click to expand)</summary>
-
-## Repository Contents
-
-```
-Omics_Capstone/
-│
-├── omics_ml_pipeline/               ← Automated Python ML pipeline (Phase 5+)
-│   ├── docker-compose.yml           ← MLflow tracking server (port 5002)
-│   ├── requirements.txt
-│   └── app/
-│       ├── main.py                  ← Pipeline entry point: python -m app.main
-│       ├── config/pipeline.yaml
-│       ├── jobs/                    ← Automated pipeline stages (import utils below)
-│       │   ├── ingest_job.py
-│       │   ├── parse_job.py         ← wraps parse_series_matrix.py logic
-│       │   ├── preprocess_job.py    ← wraps preprocess.py logic
-│       │   ├── feature_select_job.py← wraps feature_select.py logic
-│       │   ├── train_eval_job.py
-│       │   ├── biomarker_job.py
-│       │   └── llm_job.py
-│       ├── models/
-│       │   └── baseline_models.py
-│       └── utils/                   ← Standalone scripts + shared pipeline utilities
-│           ├── parse_series_matrix.py   ← Step 1: parse GEO series matrix → samples × probes CSV
-│           ├── preprocess.py            ← Step 2: filter low-variance probes
-│           ├── feature_select.py        ← Step 3: top-100 feature selection + ARFF + 7 EDA plots
-│           ├── file_splitter.py         ← Single-gene split utility (professor's method)
-│           ├── transpose.py             ← Transpose utility
-│           ├── io_utils.py             ← Config loading (pipeline internal)
-│           ├── logging_utils.py        ← Rich logging setup (pipeline internal)
-│           └── mlflow_utils.py         ← MLflow setup (pipeline internal)
-│
-├── generate_report_figures.py       ← Step 4: Weka result parser + Figures 2 & 3 (model comparison charts)
-├── report/
-│   ├── report_skeleton.html         ← Report writing skeleton (import into Google Docs)
-│   └── figures/                     ← Generated by generate_report_figures.py (gitignored)
-│       ├── fig_weka_model_comparison.png    ← Figure 2 — insert into report
-│       ├── fig_python_model_comparison.png  ← Figure 3 — insert into report
-│       └── weka_model_comparison.csv        ← Weka results in standard schema
-│
-├── r_base_scripts/                  ← Professor's original R scripts (reference only)
-│   ├── Tranpose_Function.R
-│   ├── simple ANN wrapper and filter.R
-│   ├── TCGA_download_from_Manifest*.R
-│   └── tcga merge by and align by geneid tpm.R
-│
-└── data/
-    ├── data_for_course.csv          ← Course example data
-    ├── data_for_courseweka.csv
-    ├── screenshots/
-    ├── test_split/
-    ├── soulaan_prostate_cancer/     ← Fallback dataset (not used)
-    ├── femoral_head_necrosis_old/   ← OLD scRNA-seq data (GSE316957, archived)
-    │
-    └── femoral_head_necrosis/       ← PRIMARY DATASET (all 40 patients in 2 files)
-        ├── GSE123568_series_matrix.txt.gz   ← downloaded — read by parse_series_matrix.py
-        ├── GSE123568_family.soft.gz         ← downloaded — contains probe annotation
-        │
-        ├── parsed/                  ← Generated by parse_series_matrix.py + preprocess.py
-        │   ├── parsed_matrix.csv           (40 rows × 49,293 probes + class)
-        │   └── preprocessed_matrix.csv     (40 rows × filtered probes + class)
-        │
-        ├── feature_selection/       ← Generated by feature_select.py
-        │   ├── top100_features.arff      ← LOAD THIS INTO WEKA
-        │   ├── top100_features.csv
-        │   ├── top500_features.csv       ← broader discovery set (Python pipeline)
-        │   ├── gene_rankings.csv         ← all probes: hybrid_score, FC, t-stat, p-value, IQR
-        │   ├── gene_level_summary.csv    ← selected probes grouped by gene symbol
-        │   ├── gene_level_rankings.csv   ← one best probe per gene, deduped
-        │   └── top100_genes.csv          ← top 100 genes for literature comparison
-        │
-        └── EDA/                     ← Generated by feature_select.py
-            ├── volcano_plot.png       ← all 11,687 probes; top 100 highlighted
-            ├── fold_change_top20.png  ← top 20 probes ranked by |FC|
-            ├── boxplots_top6.png      ← top 6 probes, SONFH vs control distributions
-            ├── sample_correlation.png ← 40×40 patient similarity heatmap
-            ├── heatmap_top20.png      ← top 20 probes × 40 samples expression heatmap
-            ├── pca_plot.png           ← 2D PCA of top 100 probes
-            └── eda_composite.png      ← 2×3 multi-panel figure — INSERT as report Figure 1
-```
-
-</details>
-
----
-
-## Schedule Overview
-
-| Phase | Task | Target | Status |
-|-------|------|--------|--------|
-| 0 | Orientation — recordings, scripts, example data | ✅ Done | ✅ Done |
-| 1 | R vs Python decision | ✅ Done | ✅ Done |
-| 2 | Data Acquisition — GSE123568 download | ✅ Done | ✅ Done |
-| 3 | Preprocessing — parse + filter | ✅ Done | ✅ Done |
-| 4 | Feature Selection | ✅ Done | ✅ Done |
-| 5 | Weka Analysis | ✅ Done | ✅ Done |
-| 6 | LLM Agent build & test | ✅ Done | ✅ Done |
-| 7 | Run LLM Interpretation | ✅ Done | ✅ Done |
-| 8 | Report Writing | Mar 30 | ⬜ Next |
-| 9 | Polish & final checks | Mar 30 | ⬜ |
-| — | **Submit before March 31 (certificates)** | Mar 31 | Apr 30 hard deadline |
-
----
-
-## To-Do Checklist
-
-### Phase 0 — Orientation `DONE`
-
-- [x] Watch course recordings 4 & 5 (Weka walkthrough, feature selection)
-- [x] Study `data_for_courseweka.csv` — confirmed Weka format (samples as rows, class last)
-- [x] Build `transpose.py` and `file_splitter.py` equivalents of professor's R scripts
-
-### Phase 1 — R vs Python Decision `DONE`
-
-| Step | Decision |
-|------|----------|
-| Data parsing | **Python** (`app/utils/parse_series_matrix.py`) |
-| Filtering | **Python** (`app/utils/preprocess.py`) |
-| Feature selection | **Python** (`app/utils/feature_select.py`) |
-| ARFF export | **Python** (manual ARFF writer in `app/utils/feature_select.py`) |
-| Weka classification | **Weka GUI** |
-| Visualization | **Python** (matplotlib/seaborn) |
-| LLM interpretation | **OpenAI API (GPT-4o)** |
-
-### Phase 2 — Data Acquisition `✅ DONE`
-
-- [x] Download `GSE123568_series_matrix.txt.gz` from GEO
-- [x] Download `GSE123568_family.soft.gz` from GEO
-- [x] Place both in `data/femoral_head_necrosis/`
-- [x] Run `python3 omics_ml_pipeline/app/utils/parse_series_matrix.py` — 40 samples parsed correctly
-- [x] Verified class distribution: 30 SONFH + 10 control
-
-### Phase 3 — Preprocessing `✅ DONE`
-
-- [x] Run `python3 omics_ml_pipeline/app/utils/preprocess.py`
-- [x] Probes before filter: 49,293 — after IQR filter with 0.5: 11,687 (37,606 removed, 76% flat)
-- [x] Value range confirmed: 1.43 – 14.14 (log2 RMA, OK)
-- [x] No log normalization applied — "OK" confirmed in output
-- [ ] **RE-RUN with IQR 0.2** — threshold loosened; re-run `preprocess.py` + `feature_select.py` to get updated probe count
-- [ ] **START WRITING: Methods — dataset and preprocessing sections**
-  - Dataset: GEO GSE123568, microarray (Affymetrix PrimeView GPL15207), 40 peripheral blood-derived samples
-  - Classes: 30 SONFH patients vs 10 non-SONFH steroid controls
-  - Parse step: extracted probe expression matrix from GEO series matrix file
-  - Filter step: removed probes with IQR < 0.2 log2 units (low-variance, non-discriminative)
-  - Normalization: RMA normalization already applied by GEO submitter; log2 values used as-is
-  - Note class imbalance (30:10) as limitation
-
-### Phase 4 — Feature Selection `✅ DONE`
-
-- [x] Run `python3 omics_ml_pipeline/app/utils/feature_select.py`
-- [x] Top 20 probes identified with gene symbols (see table below)
-- [x] Selection is probe-level — 100 probes from ~59 unique genes (see `gene_level_summary.csv`)
-- [x] `gene_level_summary.csv` generated — post-selection interpretation layer only, not a replacement for the probe-level classifier input used by Weka; groups selected probes by gene, flags multi-probe genes and direction consistency
-- [x] PCA: strong separation — PC1 = 84.6%, PC2 = 2.4%
-- [x] 6 EDA plots saved to `data/femoral_head_necrosis/EDA/` (volcano, FC bar, box plots, sample correlation, heatmap, PCA)
-- [x] Gene names read on the fly from SOFT file — displayed alongside probe IDs in output
-- [x] EDA narrative: plots form a logical story from "candidate probes" → "separation confirmed"
-
-**Top 20 probes by |fold change|:**
-```
-Rank  Probe ID           Gene Symbol          |FC|
- 1    11720807_x_at      EIF1AY               3.5987
- 2    11729582_s_at      CA1                  3.5691
- 3    11739787_a_at      IGF2 /// INS-IGF2    3.4523
- 4    11740680_s_at      RHCE /// RHD         3.3934
- 5    11719581_a_at      BPGM                 3.3880
- 6    11756003_x_at      IGF2 /// INS-IGF2    3.3839
- 7    11736395_a_at      BPGM                 3.3265
- 8    11729583_x_at      CA1                  3.3250
- 9    11742315_s_at      RHCE /// RHD         3.3176
-10    11742143_s_at      RHCE /// RHD         3.3086
-11    11732236_a_at      GYPA                 3.3060
-12    11725497_a_at      RAP1GAP              3.2520
-13    11736538_s_at      RHCE /// RHD         3.2413
-14    11731448_a_at      SNCA                 3.0974
-15    11737280_at        IFIT1B               2.9970
-16    11745557_x_at      GYPB                 2.9867
-17    11736696_a_at      HEMGN                2.9438
-18    11728138_at        XK                   2.8971
-19    11729920_at        BBOF1                2.8918
-20    11720494_a_at      CTNNAL1              2.8612
-```
-
-**PCA results:**
-- PC1 = 84.6% variance — strong class separation
-- PC2 = 2.4% variance — Total: 87.0% in 2 components
-- Visual separation: **Yes — clear**
-
-**Writing — Methods (feature selection):**
-- [ ] Feature selection: probes ranked by hybrid score = zscore(|log2 FC|) + zscore(|Welch t-stat|);
-  top 100 selected for Weka branch; top 500 generated as broader discovery set
-- [ ] Note: selection is probe-level, not gene-level; multiple probes per gene may appear;
-  documented in `gene_level_summary.csv` and now also in `gene_level_rankings.csv`
-- [ ] Gene-level deduplication: `gene_level_rankings.csv` picks one best probe per gene
-  (priority: highest hybrid score → `_at` > `_s_at` > `_x_at` → higher IQR)
-
-**Gene-level dedup — implemented:**
-`gene_level_rankings.csv` and `top100_genes.csv` are now generated automatically.
-Use `top100_genes.csv` for literature comparison and report Discussion.
-Do **not** use these gene-level files as input to Weka — the probe-level `top100_features.arff` is still the Weka input.
-
----
-
-### Phase 5 — Weka Analysis `Mar 22 target`
-
-**ARFF file:** `data/femoral_head_necrosis/feature_selection/top100_features.arff`
-- 40 instances, 100 numeric attributes, class {SONFH, control}
-- Use **10-fold cross-validation** (n=40 is sufficient; LOOCV was only needed for n=5)
-
-**Three-layer analysis framework:**
-
-| Layer | Question being asked | Tools |
-|---|---|---|
-| **1 — Classification** | Can we predict SONFH vs control from gene expression? | NaiveBayes, J48, RandomForest, SMO, IBk, MLP |
-| **2 — Feature discovery** | Which specific genes drive that prediction? | Select Attributes (wrapper), RandomForest importance |
-| **3 — Biology** | What do those genes mean for SONFH pathophysiology? | Phase 6–7 LLM + PubMed interpretation |
-
-The classifiers are not the final goal — they are a tool to extract signal. Pathway and biomarker discovery happen after, using the ranked feature list as input to Phase 6–7.
-
-**Step-by-step Weka import:**
-1. Open Weka GUI → **Explorer**
-2. Preprocess tab → **Open file** → select `top100_features.arff`
-3. Go to **Classify** tab
-4. Test options: **"Cross-validation" → Folds: 10**
-
-<details>
-<summary><strong>What each model is actually asking</strong> — for Methods/Discussion writing &nbsp;(click to expand)</summary>
-
-| # | Classifier | Weka path | Question it answers | Paper-writing note |
-|---|---|---|---|---|
-| 1 | NaiveBayes | `bayes > NaiveBayes` | "Can each gene independently vote for the diagnosis?" — assumes each probe contributes independently | Weakest at class imbalance; useful as probabilistic baseline; expect lower control TP rate |
-| 2 | J48 | `trees > J48` | "What single gene expression thresholds form a decision tree that splits SONFH from control?" | Most interpretable — the tree rules name specific probes; copy them, they're directly citable |
-| 3 | RandomForest | `trees > RandomForest` | "Do 100+ decision trees collectively agree, and which genes appear most consistently across trees?" | Usually highest accuracy; attribute importance output is your bridge to feature discovery |
-| 4 | SMO (SVM) | `functions > SMO` | "Is there a maximum-margin boundary in 100-dimensional gene space that separates the two classes?" | Strong in high-dimensional small-n data; less interpretable but robust |
-| 5 | IBk k=1,3,5 | `lazy > IBk` → set KNN | "Do patients with similar gene expression profiles share the same diagnosis?" | Instance-based; k=1 overfits, k=3/5 smoother; shows whether expression similarity predicts class |
-| 6 | MLP | `functions > MultilayerPerceptron` | "Can a neural network capture nonlinear interactions between genes that linear models miss?" | Closer to biological complexity (genes interact, not just vote independently); supports bonus depth |
-| 7 | Auto-Weka | Auto-WEKA tab, 1–5 min | "What is the best model this dataset supports, found by automated search?" | Great Discussion material — compare vs your manual choices; shows robustness of approach |
-
-</details>
-
-**Select Attributes run (Layer 2 — feature discovery, do after classifiers):**
-
-Go to **Select attributes tab**, then:
-- Evaluator → `WrapperSubsetEval` → Classifier: `RandomForest`
-- Search method → `BestFirst`
-- Start
-
-Output: minimal gene subset that best separates classes. This is the direct input to biological interpretation — these are your candidate biomarkers.
-
----
-
-**Key distinction — evaluation models vs. shortlist-producing models:**
-
-Not all Weka models have the same purpose. This is the most important thing to understand when writing Methods and interpreting output:
-
-```
-Weka on top100.arff
-    │
-    ├── NaiveBayes ─┐
-    ├── SMO        ─┤  → "Which model wins?" → accuracy numbers → Results table / Discussion
-    ├── MLP        ─┤
-    ├── IBk        ─┘
-    │
-    ├── J48  ──────────→ split node probes   ─┐
-    └── RF   ──────────→ importance ranking   ─┴──→ biomarker shortlist → LLM
-```
-
-- **Evaluation models** (NaiveBayes, SMO, MLP, IBk) answer: *can we classify SONFH from gene expression?* Their output is accuracy/AUC numbers for the Results table. They do **not** produce a gene list.
-- **J48** produces an interpretable decision tree. The probes named at each split node are directly actionable — one probe at a specific expression threshold separates cases from controls. These are directly citable in the paper.
-- **RandomForest** produces attribute importances — a ranked list of which probes contributed most across 100+ trees. The top-ranked probes are the shortlist candidates.
-- **The shortlist = J48 split nodes + RF top features + fold-change confirmation.** Only these two models produce the gene list that feeds Phase 6–7 (biological interpretation / LLM).
-
----
-
-**Extracting the Weka shortlist — `generate_weka_biomarker_shortlist.py` (project root):**
-
-After running Weka on either ARFF file, save the J48 and RandomForest classifier output as `.txt` files (right-click result panel → Save output in Weka). Then run:
-
-```bash
-# Multivariate path (old — run Weka on data/femoral_head_necrosis/feature_selection/top100_features.arff)
-python3 generate_weka_biomarker_shortlist.py \
-    --j48   data/femoral_head_necrosis/weka_models/j48.txt \
-    --rf    data/femoral_head_necrosis/weka_models/randomforest.txt \
-    --ranks data/femoral_head_necrosis/feature_selection/gene_rankings.csv \
-    --out   data/femoral_head_necrosis/weka_biomarker_shortlist.csv
-
-# Univariate ANN path (new — run Weka on the univariate ARFF first, save outputs)
-python3 generate_weka_biomarker_shortlist.py \
-    --j48   data/weka/univariate/j48.txt \
-    --rf    data/weka/univariate/randomforest.txt \
-    --ranks omics_ml_pipeline/app/data/output/feature_selection/gene_rankings.csv \
-    --out   data/weka/univariate/weka_biomarker_shortlist.csv
-```
-
-**ARFF inputs to use:**
-| Path | What it is |
-|---|---|
-| `omics_ml_pipeline/app/data/output/feature_selection/univariate_ann/top100_features_univariate_ann.arff` | Primary — load this into Weka for the univariate path |
-| `omics_ml_pipeline/app/data/output/feature_selection/univariate_ann/top500_features_univariate_ann.arff` | Optional exploratory — broader probe set |
-| `data/femoral_head_necrosis/feature_selection/top100_features.arff` | Old multivariate path |
-
-**Output `weka_biomarker_shortlist.csv` columns:** `probe_id`, `gene_symbol`, `j48_split` (Y/N), `rf_importance`, `abs_fold_change`, `combined_score`
-
-Once the Weka shortlist CSV exists, run LLM interpretation against it directly:
-
-```bash
-python -m app.main --skip-pre --skip-train --llm \
-    --shortlist data/weka/univariate/weka_biomarker_shortlist.csv
-```
-
-This completes the fully connected univariate pipeline:
-
-```
-preprocessed_matrix.csv
-    → univariate ANN (screens 45k probes)
-    → top100.arff (Weka input)
-    → Weka J48 + RF
-    → generate_weka_biomarker_shortlist.py
-    → weka_biomarker_shortlist.csv
-    → python -m app.main --llm --shortlist ...
-    → LLM biological interpretation
-```
-
----
-
-<details>
-<summary><strong>Weka screenshots — preprocessor &amp; all classifier results</strong> &nbsp;(click to expand)</summary>
-
-**Preprocessor / data view:**
-
-![Weka preprocessor](data/weka/weka_old/weka_preprocessor.png)
-
----
-
-**NaiveBayes:**
-
-![NaiveBayes](data/weka/weka_old/naive_bayes.png)
-
----
-
-**RandomForest:**
-
-![RandomForest](data/weka/weka_old/random_forest.png)
-
----
-
-**SMO (SVM):**
-
-![SMO](data/weka/weka_old/smo.png)
-
----
-
-**IBk (k-NN):**
-
-![IBk](data/weka/weka_old/lazy_ibk.png)
-
----
-
-**MLP (MultilayerPerceptron):**
-
-![MLP](data/weka/weka_old/multilayerpreceptron.png)
-
-![MLP hyperparameters](data/weka/weka_old/multilayerpreceptron_hyperparameters.png)
-
----
-
-**J48 Decision Tree:**
-
-![J48](data/weka/weka_old/j48_tree.png)
-
----
-
-**Auto-Weka:**
-
-![Auto-Weka](data/weka/weka_old/auto_weka.png)
-
----
-
-**Select Attributes (WrapperSubsetEval + RandomForest):**
-
-![Select Attributes](data/weka/weka_old/select_attributes_randomforest.png)
-
-![Select Attributes hyperparameters](data/weka/weka_old/select_attributes_randomforest_hyperparameters.png)
-
-</details>
-
-**Results table:**
-
-| Classifier | Accuracy (%) | AUC | F1 (weighted) | Confusion Matrix (SONFH / control) |
-|---|---|---|---|---|
-| NaiveBayes | 92.5 | 0.932 | 0.926 | 28/30 SONFH correct, 9/10 control correct |
-| J48 | **95.0** | 0.820 | 0.948 | 30/30 SONFH correct, 8/10 control correct |
-| RandomForest | 92.5 | **0.950** | 0.924 | 29/30 SONFH correct, 8/10 control correct |
-| SMO (SVM) | 90.0 | 0.833 | 0.896 | 29/30 SONFH correct, 7/10 control correct |
-| IBk (k=1) | 90.0 | 0.833 | 0.896 | 29/30 SONFH correct, 7/10 control correct |
-| IBk (k=3) | 90.0 | 0.833 | 0.896 | 29/30 SONFH correct, 7/10 control correct |
-| IBk (k=5) | 90.0 | 0.833 | 0.896 | 29/30 SONFH correct, 7/10 control correct |
-| MLP | 92.5 | 0.937 | 0.920 | 30/30 SONFH correct, 7/10 control correct |
-| **Auto-Weka (PART)** | **97.5** | **0.950** | **0.975** | 30/30 SONFH correct, 9/10 control correct |
-
-**J48 decision tree rule (full model, training set):**
-
-```
-11721029_a_at <= 4.915416 → SONFH (31 instances, 1 error)
-11721029_a_at >  4.915416 → control (9 instances)
-```
-
-A single probe threshold separates the classes. This is the most interpretable result and directly citable in the report.
-
-**RandomForest — top 10 probes by attribute importance (avg. impurity decrease):**
-
-| Rank | Probe ID | Importance score |
-|---|---|---|
-| 1 | 11737267_a_at | 1.00 |
-| 2 | 11750456_s_at | 1.00 |
-| 3 | 11728138_at | 0.99 |
-| 4 | 11752881_s_at | 0.98 |
-| 5 | 11745299_x_at | 0.94 |
-| 6 | 11724538_a_at | 0.92 |
-| 7 | 11753827_x_at | 0.92 |
-| 8 | 11731448_a_at | 0.88 |
-| 9 | 11733941_a_at | 0.81 |
-| 10 | 11745557_x_at | 0.81 |
-
-**Wrapper (Select Attributes) result:**
-
-Selected subset: **`11729582_s_at`** (single probe, merit 0.975 under 5-fold CV with RandomForest wrapper).
-
-Interpretation: predictive minimality ≠ biological completeness. Use this as supporting evidence, not the sole biomarker claim. The RF importance ranking above is the primary input to Phase 6 biological interpretation.
-
-- [x] Run all classifiers, fill in table *(IBk k=3/k=5 and MLP txt still needed)*
-- [x] Screenshot each result window → `data/screenshots/weka/`
-- [x] For J48: copy the decision tree rules (probe names at each split)
-- [x] For RandomForest: note top attributes by importance
-- [x] Run Select Attributes → record selected probe subset
-- [x] Run Auto-Weka → record best model and performance
-- [x] Run IBk k=3 and k=5 → identical results across all k values (90%, AUC 0.833, F1 0.896)
-- [x] Get MLP accuracy/AUC/F1 numbers → filled in table row
-- [x] Take J48 screenshot → added to screenshots dropdown
-- [x] Collect top contributing probe IDs → mapped to gene names via gene_rankings.csv → see Phase 5.5
-
----
-
-### Phase 5 — New Run Results (2026-03-30 rerun — IQR ≥ 0.2, hybrid score, top 100)
-
-> **Context:** Pipeline was rerun with loosened variance filter (IQR ≥ 0.2 vs old 0.5) and hybrid
-> ranking (z-scored |FC| + z-scored |t-stat|). Probe space increased from 11,687 → 45,465.
-> New `top100_features.arff` loaded into Weka for all classifiers.
-
-#### Weka classifier comparison — old vs new
-
-| Classifier | Old accuracy | Old κ | New accuracy | New κ | Δ |
-|---|---|---|---|---|---|
-| NaiveBayes | 92.5% | 0.807 | 92.5% | 0.807 | = |
-| J48 | 95.0% | 0.857 | **not run yet** | — | — |
-| RandomForest | 92.5% | 0.793 | 92.5% | 0.793 | = |
-| SMO | 90.0% | 0.714 | **95.0%** | **0.857** | ↑ +5% |
-| IBk k=1 | 90.0% | 0.714 | **92.5%** | **0.778** | ↑ +2.5% |
-| IBk k=3 | 90.0% | 0.714 | **92.5%** | **0.778** | ↑ +2.5% |
-| IBk k=5 | 90.0% | 0.714 | 90.0% | 0.714 | = |
-| MLP | 92.5% | 0.778 | **95.0%** | **0.857** | ↑ +2.5% |
-| Auto-WEKA | 97.5% | 0.931 | **100%** | **1.0** | ↑ +2.5% |
-
-The new filters strictly improved or matched every classifier. Nothing got worse.
-
-- [ ] **TODO: Run J48** on new `top100_features.arff` — save to `weka_models/j48_tree.txt`
-
-#### Biomarker shortlist — TODO after J48 is run
-
-The old shortlist (`feature_selection_OLD/biomarker_shortlist.csv`) was built by hand from:
-1. Attribute selection wrapper — which probes the wrapper selected
-2. RandomForest — top probes by feature importance
-3. J48 — which probe(s) appear in the split rules
-
-- [ ] **TODO: Run `generate_weka_biomarker_shortlist.py`** (script to be written) — reads
-  `weka_models/randomforest.txt`, `weka_models/j48_tree.txt`,
-  `weka_models/attribute_selection_randomforest.txt`, maps probes to gene symbols via
-  `gene_rankings.csv`, outputs new `feature_selection/biomarker_shortlist.csv`
-
----
-
-### Phase 5.5 — Probe → Gene Mapping & Biomarker Shortlist
-
-**Mapping is already done.** `omics_ml_pipeline/app/utils/feature_select.py` (Phase 4) already produced `gene_rankings.csv` with full probe → gene symbol annotation from GPL15207. No additional script needed.
-
-**Output files:**
-- `data/femoral_head_necrosis/feature_selection/gene_rankings.csv` — all 100 probes with gene symbols and fold-change values
-- `data/femoral_head_necrosis/feature_selection/gene_level_summary.csv` — probes aggregated by gene
-
-**Candidate biomarker shortlist — filled from `gene_rankings.csv`:**
-
-| Probe ID | Gene symbol | Evidence sources | Direction (SONFH vs ctrl) |
-|---|---|---|---|
-| `11729582_s_at` | **CA1** | wrapper + RF #6 + FC top | lower in SONFH |
-| `11721029_a_at` | **PIP5K1B** | J48 split rule + RF | lower in SONFH |
-| `11737267_a_at` | **RHD** | RF #1 (importance 1.00) | lower in SONFH |
-| `11750456_s_at` | **RHCE/RHD** | RF #2 (importance 1.00) | lower in SONFH |
-| `11728138_at` | **XK** | RF #3 (importance 0.99) | lower in SONFH |
-| `11752881_s_at` | **RHCE/RHD** | RF #4 (importance 0.98) | lower in SONFH |
-| `11745299_x_at` | **GYPB** | RF #5 (importance 0.94) | lower in SONFH |
-| `11724538_a_at` | **ABCG2** | RF #6 (importance 0.92) | lower in SONFH |
-| `11753827_x_at` | **GYPB** | RF #7 (importance 0.92) | lower in SONFH |
-| `11731448_a_at` | **SNCA** | RF #8 (importance 0.88) | lower in SONFH |
-| `11733941_a_at` | **TBCEL** | RF #9 (importance 0.81) | lower in SONFH |
-| `11745557_x_at` | **GYPB** | RF #10 (importance 0.81) | lower in SONFH |
-| `11720807_x_at` | **EIF1AY** | FC top #1 + RF | lower in SONFH |
-| `11740680_s_at` | **RHCE/RHD** | FC top + RF | lower in SONFH |
-| `11732236_a_at` | **GYPA** | FC top + RF | lower in SONFH |
-| `11736696_a_at` | **HEMGN** | FC top + RF | lower in SONFH |
-| `11742315_s_at` | **RHCE/RHD** | FC top + RF | lower in SONFH |
-
-**Biological pattern — what this list is telling you:**
-
-The shortlist is dominated by erythrocyte membrane and oxygen-transport genes: RHD, RHCE, GYPA, GYPB (Rh blood group / glycophorin family), XK (Kx blood group), CA1 (carbonic anhydrase 1, abundant in RBCs), HEMGN (erythroid-specific), SNCA (alpha-synuclein, expressed in RBCs). This is a strong **hematological / vascular signature**, consistent with the ischemia and microvascular disruption central to SONFH pathophysiology. These are biomarker signals, not causal drivers — see Bonus section for full interpretation.
-
-Notable exceptions to the RBC pattern:
-- **PIP5K1B** (J48 split probe) — phosphoinositide kinase, involved in cytoskeletal regulation and platelet activation
-- **ABCG2** — ABC transporter expressed in endothelial cells and stem cells; links to vascular biology
-- **EIF1AY** — Y-chromosome gene; likely a sex/gender covariate in this cohort
-
-- [x] Probe → gene mapping complete (`gene_rankings.csv` from Phase 4)
-- [x] Shortlist constructed from RF importance + J48 split + wrapper + FC overlap
-- [x] Biological pattern identified — erythrocyte/vascular signature
-- [x] Save curated shortlist as `data/femoral_head_necrosis/feature_selection/biomarker_shortlist.csv` (input to Phase 6)
-
----
-
-### Phase 5.6 — Python Pipeline vs Weka: Model & Gene Comparison
-
-<details>
-<summary><strong>Full comparison — who found what, and why it matters</strong> &nbsp;(click to expand)</summary>
-
-#### Methodology
+## Weka vs Python Pipeline: Methodology Comparison
 
 | | Weka | Python Pipeline |
 |---|---|---|
 | CV strategy | 10-fold, single run | RepeatedStratifiedKFold(5×10) = 50 folds |
-| Test set per fold | 4 samples (2.5% per sample) | ~8 samples |
+| Test set per fold | 4 samples | ~8 samples |
 | Primary metric | Accuracy | AUC + balanced accuracy |
 | Class imbalance handling | None explicit | `class_weight="balanced"` on all models |
 | Hyperparameter tuning | None (manual) | Hyperopt (TPE, 50 trials per model) |
-| Feature count | 100 probes | 50 probes |
+| Feature count | 100 probes | 50 probes (multivariate mode) |
 
-Weka's accuracy numbers move in 2.5% jumps (1 sample = 2.5% on 40 patients). A single lucky fold inflates the result. Python's 50-fold mean is much harder to game.
+**Where Weka looks better:** J48 achieved 95% with a single decision split — one probe at a threshold correctly classifies 38/40 samples. This is a biomarker finding more than a classifier result. Auto-WEKA searched 300+ algorithm+hyperparameter configurations.
 
----
+**Where Python pipeline is better:** AUC and balanced accuracy are the correct metrics for 30:10 class imbalance. A model that always predicts SONFH would be 75% accurate. Python's balanced accuracy confirms models are learning both classes. The 50-fold evaluation is statistically far more reliable — Weka's single 10-fold run cannot report standard deviations. A finding with `selection_freq = 1.0` across 50 folds is far more trustworthy than an importance score from a single run.
 
-#### Model accuracy head-to-head
+**Gene-level differences between pipelines:** Weka RF is dominated by 3 correlated blood-type probes (RHD/RHCE/XK) that can overwhelm the Gini metric in a single run. The Python pipeline ranks **BPGM** (bisphosphoglycerate mutase) first — a red blood cell enzyme that regulates 2,3-BPG, which directly controls oxygen release from hemoglobin to tissues. For a disease caused by bone ischemia, BPGM is a mechanistically stronger candidate. The genes that appear in *both* pipelines (CA1, GYPA, RHD/RHCE) are the highest-confidence shortlist candidates.
 
-| Model | Weka accuracy | Python AUC | Python balanced acc |
-|---|---|---|---|
-| Random Forest | 92.5% | 0.965 (baseline) / **0.970 (tuned)** | 0.843 / 0.863 |
-| Naive Bayes | 92.5% | 0.945 | 0.885 |
-| KNN (K=5) | 90.0% | 0.874 | 0.835 |
-| SVM | 90.0% | **0.967** (LinearSVC) | 0.852 |
-| MLP | ~93%* | 0.957 | 0.825 |
-| J48 (decision tree) | **95.0%** | — | — |
-| Auto-WEKA | **97.5%** | — (AutoML upper bound) | — |
-
-*Weka MLP accuracy approximate (output file truncated).
-
-**Where Weka looks better:** J48 achieved 95% with a single decision split — probe `11721029_a_at` (PIP5K1B) at threshold 4.915 correctly classifies 38/40 samples. This is a biomarker finding more than a classifier result: one gene nearly separates the classes. Auto-WEKA at 97.5% ran 303 algorithm+hyperparameter+feature-selection configurations — not a fair single-model comparison.
-
-**Where Python pipeline is better:** AUC and balanced accuracy are the correct metrics for 30:10 class imbalance. A model that always predicts SONFH would be 75% accurate. Python's balanced accuracy confirms models are learning both classes. The 50-fold evaluation is statistically far more reliable — Weka's single 10-fold run cannot report standard deviations.
+**The key insight:** Weka accuracy numbers move in 2.5% jumps (1 sample = 2.5% on 40 patients). A single lucky fold can inflate results. Run both pipelines and look for overlap in the gene lists — that overlap is the credible biomarker set.
 
 ---
 
-#### Gene findings: pipeline vs Weka
+## Biological Signal — What the Top Genes Are Telling You
 
-**Weka Random Forest top 4 (Gini impurity decrease):**
+The biomarker shortlist is dominated by erythrocyte membrane and oxygen-transport genes: RHD, RHCE, GYPA, GYPB (Rh blood group / glycophorin family), XK (Kx blood group), CA1 (carbonic anhydrase 1, abundant in RBCs), HEMGN (erythroid-specific), SNCA (alpha-synuclein, expressed in RBCs). This is a strong **hematological / vascular signature**, consistent with the ischemia and microvascular disruption central to SONFH pathophysiology.
 
-| Rank | Probe | Gene | Importance |
-|---|---|---|---|
-| 1 | 11737267_a_at | **RHD** | 1.00 |
-| 2 | 11750456_s_at | **RHCE/RHD** | 1.00 |
-| 3 | 11728138_at | **XK** | 0.99 |
-| 4 | 11729582_s_at | **CA1** | 0.66 |
+These are **biomarker signals**, not causal drivers — the disease disrupts blood supply to the femoral head, and peripheral blood gene expression reflects that systemic vascular shift.
 
-**Python pipeline — top 20 biomarker shortlist (50-probe input, fixed 20-probe output):**
+Notable exceptions to the RBC pattern:
+- **PIP5K1B** (J48 split probe) — phosphoinositide kinase, involved in cytoskeletal regulation and platelet activation
+- **BPGM** — regulates 2,3-BPG in RBCs; directly controls oxygen delivery to tissues; mechanistically compelling for an ischemic disease
+- **ABCG2** — ABC transporter expressed in endothelial cells and stem cells; links to vascular biology
+- **EIF1AY** — Y-chromosome gene; likely a sex/gender covariate in this cohort (note: 13M vs 17F in SONFH group)
 
-The shortlist is capped at 20 probes — a deliberate cutoff chosen to match the scale of Weka's ranked feature output and make the comparison apples-to-apples. Score = RF importance (mean across 5 CV folds) × fold-change, normalised. All 20 probes have selection_freq = 1.00 — appeared in every CV fold.
-
-| Rank | Probe | Gene | Combined score |
-|---|---|---|---|
-| 1 | 11719581_a_at | **BPGM** | 0.934 |
-| 2 | 11758559_s_at | **NUDT4** | 0.836 |
-| 3 | 11736395_a_at | **BPGM** | 0.813 |
-| 4 | 11732236_a_at | **GYPA** | 0.791 |
-| 5 | 11720494_a_at | **CTNNAL1** | 0.775 |
-| 6 | 11750918_a_at | **HEPACAM2** | 0.722 |
-| 7 | 11736696_a_at | **HEMGN** | 0.713 |
-| 8 | 11728821_a_at | **HEPACAM2** | 0.713 |
-| 9 | 11732235_a_at | **GYPA** | 0.688 |
-| 10 | 11725497_a_at | **RAP1GAP** | 0.687 |
-| 11 | 11721930_a_at | **TMCC2** | 0.651 |
-| 12 | 11739787_a_at | **IGF2** | 0.630 |
-| 13 | 11729583_x_at | **CA1** | 0.612 |
-| 14 | 11729582_s_at | **CA1** | 0.587 |
-| 15 | 11756003_x_at | **IGF2** | 0.576 |
-| 16 | 11733482_a_at | **DYRK3** | 0.573 |
-| 17 | 11736538_s_at | **RHCE/RHD** | 0.566 |
-| 18 | 11733360_x_at | **SLC14A1** | 0.553 |
-| 19 | 11751870_x_at | **GYPA** | 0.550 |
-| 20 | 11720807_x_at | **EIF1AY** | 0.547 |
-
-**What's the same:** CA1, RHD/RHCE, GYPA, and the erythrocyte biology cluster appear in both. Both pipelines independently point at red blood cell biology as the dominant signal in peripheral blood from SONFH patients.
-
-**What's different:** Weka RF was dominated by RHD/RHCE/XK (blood type antigens) and ranked little else. In the Python pipeline those same genes appear — but RHCE/RHD ranks 17th, not 1st. The reason: the combined score weights both RF importance *and* fold-change. RHD has a high fold-change, but its RF importance across 50 repeated folds is moderate — other genes contribute more to class separation when the full 50-probe feature set is available. This is precisely what repeating the evaluation 50 times reveals. The Python pipeline ranks **BPGM** first instead. BPGM is bisphosphoglycerate mutase — a red blood cell enzyme that regulates 2,3-BPG, which directly controls oxygen release from hemoglobin to tissues. For a disease caused by bone ischemia, BPGM is a mechanistically stronger candidate than blood type antigens.
-
-**Confidence:** Python pipeline has `selection_freq = 1.0` for all 20 probes — selected in every single CV fold across 50 evaluations. Weka ran once, so there is no way to know whether RHD's importance=1.00 was a stable finding or a single-run artifact. The 50-fold Python result is statistically far more reliable.
-
-**J48's independent finding:** The single-split on PIP5K1B (probe 11721029_a_at) achieving 95% accuracy cross-validates this gene as the strongest individual discriminator. It appears in the Python pipeline too and is the primary output of the Select Attributes wrapper run.
-
-**Bottom line:** Python pipeline finds a broader, more biologically coherent picture with quantified confidence. Weka's narrow RHD focus reflects three correlated blood-type probes overwhelming the Gini metric in a single 10-fold run. The 20-probe Python shortlist includes CA1, IGF2, EIF1AY, and GYPA that Weka also ranked — confirming the shared signal — while surfacing **BPGM** as the primary novel finding: the most mechanistically compelling Discussion candidate from the Python pipeline.
-
-</details>
+> **Predictive minimality vs biological completeness:** The WrapperSubsetEval often selects just 1–2 probes with near-perfect wrapper accuracy. This means a minimal gene set is sufficient for classification — but it does not mean those are the only biologically relevant genes. Use the wrapper result as supporting evidence for the most discriminative individual genes, not as the complete biological picture.
 
 ---
 
-### Phase 6 — Retrieval-Grounded LLM Interpretation `✅ DONE`
+## Phase 6 — LLM Biological Interpretation
 
-**Core concept:** The LLM is NOT the main system — it is a context-constrained interpretation layer over retrieved evidence and ML results. This is effectively a retrieval-grounded interpretation workflow: the LLM interprets only what the PubMed retrieval step provides, grounded in the ML feature output. The LLM is not treated as an independent source of evidence — it organizes and interprets retrieved literature in disease context. The professor is testing whether you can *control* an LLM inside a scientific pipeline, not just call one.
+**Core concept:** The LLM is NOT the main system — it is a context-constrained interpretation layer over retrieved evidence and ML results. The LLM interprets only what the PubMed retrieval step provides, grounded in the ML feature output. It is not treated as an independent source of evidence — it organizes and interprets retrieved literature in disease context.
 
 **Pipeline architecture:**
 
 ```
-[biomarker_shortlist.csv]  ← ML output (Phase 5.5)
+[weka_biomarker_shortlist.csv]   ← ML output
          ↓
-[Layer 2 — PubMed retrieval]   search: "GENE osteonecrosis OR bone ischemia"
-         ↓                     retrieve abstracts + verify PMIDs exist
-[Layer 3 — LLM interpretation] prompt with role + gene context + constraints
-         ↓                     output: mechanism + evidence summary + confidence
-[Layer 4 — Human validation]   you verify each claim before citing in report
+[PubMed retrieval]   search: "GENE osteonecrosis OR bone ischemia"
+         ↓           retrieve abstracts + verify PMIDs exist
+[LLM interpretation] prompt with role + gene context + constraints
+         ↓           output: mechanism + evidence summary + confidence
+[Human validation]   verify each claim before citing in report
          ↓
-[Phase 7 — Report input]
+[Report Discussion]
 ```
 
-**Prompt template (what to send to the LLM — this is what the professor means by "prompt engineering"):**
+**Prompt structure (what the professor means by "prompt engineering"):**
+The prompt is intentionally scoped to include: disease context (SONFH pathophysiology), dataset context (GSE123568, n=40, peripheral blood), the biomarker shortlist with ML evidence sources, retrieved PubMed abstracts as the sole evidence base, an explicit constraint against fabricating citations or recalling training data, and a requirement to flag weak or unsupported evidence explicitly. This reflects the emphasis on task definition, evidence scope, output constraints, and uncertainty handling.
 
-```
-You are a biomedical researcher interpreting gene expression data.
-
-Context:
-The following genes were identified via machine learning (Random Forest, J48, wrapper
-feature selection) as the strongest predictors of steroid-induced osteonecrosis of
-the femoral head (SONFH) vs steroid-treated controls in peripheral blood microarray
-data (GSE123568, n=40):
-
-[GENE LIST WITH EVIDENCE SOURCES]
-
-Task:
-Using ONLY the PubMed abstracts provided below, explain the biological relevance
-of each gene to SONFH pathophysiology.
-
-Constraints:
-- Do NOT fabricate citations or PMIDs
-- Only use the abstracts provided — do not recall training data as evidence
-- If evidence is weak or absent, explicitly state that
-- Focus on: vascular disruption, erythrocyte function, hypoxia/ischemia, bone remodelling
-
-Output format (for each gene):
-- Gene symbol
-- Proposed mechanism in SONFH context
-- Supporting evidence (PMID + one sentence)
-- Confidence: high / moderate / weak / unsupported
+```bash
+cd omics_ml_pipeline
+python -m app.main --skip-pre --skip-train --llm
 ```
 
-**Why the prompt is structured this way:**
-The prompt is intentionally scoped to include: disease context (SONFH pathophysiology), dataset context (GSE123568, n=40, peripheral blood), the biomarker shortlist with ML evidence sources, retrieved PubMed abstracts as the sole evidence base, an explicit constraint against fabricating citations or recalling training data, and a requirement to flag weak or unsupported evidence explicitly. This reflects the professor's emphasis on task definition, evidence scope, output constraints, and uncertainty handling.
-
-**What to build — inside `omics_ml_pipeline/app/jobs/llm_job.py`:**
-
-The scaffold is already wired into `main.py`. Run with `--llm` flag. Config under `llm:` in `pipeline.yaml`.
-
-```
-llm_job.py
-  input:  app/data/biomarker_shortlist.csv  (20 probes, ~14 unique genes)
-  step 1: for each unique gene → query PubMed (query template from pipeline.yaml)
-  step 2: retrieve up to 3 abstracts per gene (title + abstract + PMID)
-  step 3: verify PMIDs resolve (no hallucinated references)
-  step 4: build structured prompt (role + gene context + constraints + output format)
-  step 5: call OpenAI API  (model: gpt-4o, key from OPENAI_API_KEY)
-  step 6: write output to app/data/llm_interpretation.csv
-```
-
-- [x] Implement PubMed retrieval (NCBI E-utilities — no API key needed for low-volume use)
-- [x] Add PMID verification step
-- [x] Build structured prompt with constraints (interpret abstracts only, flag unsupported claims)
-- [x] Call OpenAI API via `openai` SDK (`gpt-4o`)
-- [x] Write per-gene JSON outputs to `app/data/output/llm_outputs/` (10 genes completed)
-- [x] Test on `CA1` first (strong signal, good retrieval target)
-- [x] Run on full shortlist — 10 gene JSON files written
-- [ ] Human validation before any output goes into the report
-
-### Phase 7 — Run LLM Interpretation & Validate `after Phase 6`
-
-**Human-in-the-loop step — this is mandatory, not optional:**
-
-The professor explicitly requires that LLM outputs are validated by a human before use. Do not copy LLM summaries directly into the report without checking.
-
-**Validation checklist — two distinct checks per gene:**
+**Human validation checklist — mandatory before citing in report:**
 
 *Reference validity:*
 - Does the PMID exist and resolve on PubMed?
@@ -1356,369 +669,100 @@ The professor explicitly requires that LLM outputs are validated by a human befo
 
 *Claim validity:*
 - Does the retrieved abstract actually support the proposed mechanism?
-- Is the gene-SONFH relationship direct, indirect, inferred, or unsupported? (note explicitly)
-- Is the confidence level the LLM assigned appropriate given the abstract content?
+- Is the gene-SONFH relationship direct, indirect, inferred, or unsupported?
+- Is the confidence level the LLM assigned appropriate?
 
-**Output to collect:**
+---
 
-| Gene | Mechanism proposed | PMID | Verified? | Confidence | Use in report? |
-|---|---|---|---|---|---|
-| CA1 | | | | | |
-| PIP5K1B | | | | | |
-| RHD/RHCE | | | | | |
-| GYPA/GYPB | | | | | |
-| XK | | | | | |
-| SNCA | | | | | |
-| ABCG2 | | | | | |
-| HEMGN | | | | | |
-| EIF1AY | | | | | |
+## Report Writing Notes
 
-- [ ] Run `gene_interpreter.py` on full shortlist
-- [ ] Manually verify each PMID on PubMed
-- [ ] Fill in validation table above
-- [ ] Flag any hallucinated or unsupported claims
-- [ ] Note PMIDs, titles, years for References section
-- [ ] Group verified genes into biological themes (erythrocyte, vascular, cytoskeletal, other)
-- [ ] Use verified output to draft Discussion — erythrocyte/vascular signature narrative
+**Target:** 8 pages A4, 11pt, 1.5x line spacing
 
-### Phase 8 — Report Finalization `Mar 26–29 target`
+**Rubric breakdown:**
 
-**Target: 8 pages A4, 11pt, 1.5x line spacing**
+| Section | Marks |
+|---------|-------|
+| Title | 1 |
+| Abstract | 4 |
+| Introduction — biological background | 5 |
+| Introduction — rationale for RNA-seq/microarray | 3 |
+| Introduction — justification for ML/Weka | 3 |
+| Introduction — aims and objectives | 4 |
+| Methods (dataset, preprocessing, feature selection, classifiers, evaluation) | 20 |
+| Results (commentary + figures/tables) | 20 |
+| Discussion (biology, literature, limitations, future work) | 20 |
+| Conclusion | 5 |
+| References | 5 |
+| Structure / style / presentation | 10 |
+| Bonus (novel analysis / LLM use) | up to 5 |
 
-#### Rubric breakdown
+**Level framing:**
 
-| Section | Marks | Status |
-|---------|-------|--------|
-| Title | 1 | ⬜ |
-| Abstract | 4 | ⬜ |
-| Introduction — biological background | 5 | ⬜ |
-| Introduction — rationale for RNA-seq/microarray | 3 | ⬜ |
-| Introduction — justification for ML/Weka | 3 | ⬜ |
-| Introduction — aims and objectives | 4 | ⬜ |
-| Methods — dataset | included in 20 | ⬜ |
-| Methods — preprocessing | included in 20 | ⬜ |
-| Methods — feature selection | 3 | ⬜ |
-| Methods — classifiers (description) | 6 | ⬜ |
-| Methods — justification for classifier choices | 3 | ⬜ |
-| Methods — evaluation methods | 3 | ⬜ |
-| Results — commentary on patterns | 3 | ⬜ |
-| Results — figures/tables | included in 20 | ⬜ |
-| Discussion — interpretation in biology context | 5 | ⬜ |
-| Discussion — comparison with literature | 5 | ⬜ |
-| Discussion — limitations | 5 | ⬜ |
-| Discussion — future work | 5 | ⬜ |
-| Conclusion | 5 | ⬜ |
-| References | 5 | ⬜ |
-| Structure / style / presentation | 10 | ⬜ |
-| Bonus (novel analysis / LLM use) | up to 5 | ⬜ |
+| Level | What it looks like |
+|---|---|
+| Core | Accuracy/AUC table, confusion matrix, class imbalance discussion, blood-vs-tissue caveat |
+| Higher marks | MLP + Auto-Weka + Select Attributes, stronger Methods justification |
+| Bonus | Biological interpretation of what the numbers mean, biomarker vs causal gene distinction, erythrocyte/vascular signature, LLM pipeline (Phase 6–7) |
 
-**Introduction — biology sub-sections:**
-- [ ] What is SONFH: steroid-induced bone death from disrupted blood supply in femoral head;
-  causes hip joint collapse; requires early intervention to prevent surgery
-- [ ] Clinical problem: SONFH is often diagnosed late (after collapse); blood-based biomarkers
-  could enable earlier detection in at-risk steroid users
-- [ ] Why microarray: captures genome-wide expression; peripheral blood is non-invasive;
-  appropriate for biomarker discovery studies
-- [ ] Why ML + Weka: with 40 samples and ~49k probes, dimensionality reduction + classification
-  allows systematic identification of discriminative gene signatures
-- [ ] Study aim: identify gene expression signatures in peripheral blood that distinguish SONFH
-  patients from steroid-treated controls without osteonecrosis
+The framing for the report: *"Machine learning–guided biomarker discovery, followed by biological interpretation"* — not pure predictive modeling. Classifiers answer "can we classify?"; feature selection answers "which genes?"; biology answers "so what does that mean for SONFH?"
 
-**Discussion — biology context:**
-- [ ] Interpret top probes/genes in SONFH pathophysiology context
-  (likely: lipid metabolism genes, vascular/endothelial genes, osteoblast/osteoclast markers,
-   inflammation/apoptosis genes — typical SONFH biology in peripheral blood)
-- [ ] Discuss class imbalance (30:10) — what does this mean for classifier performance?
-  (control class harder to classify; Naive Bayes most affected)
-- [ ] Discuss blood vs tissue: these are blood-based transcriptomic biomarkers, not tissue expression;
-  they reflect systemic response, not local bone changes — different from tissue biopsies
-- [ ] Literature comparison: cite Jia Y et al. 2023 (the linked paper) + LLM agent results
+**Key Discussion points:**
+- Interpret top probes/genes in SONFH pathophysiology context — erythrocyte/vascular signature, ischemic mechanism
+- Discuss class imbalance (30:10) — control class harder to classify; Naive Bayes most affected
+- Discuss blood vs tissue: these are blood-based transcriptomic biomarkers, not tissue expression; they reflect systemic response, not local bone changes
+- Literature comparison: cite Jia Y et al. 2023 (PMID: 37313692) + LLM agent results
 
-**Limitations:**
-- [ ] Class imbalance: 30 SONFH vs 10 control (3:1 ratio)
-- [ ] Peripheral serum ≠ tissue: cannot identify cell-type-specific changes
-- [ ] No external validation cohort
-- [ ] Fold change ranking is exploratory — formal statistical testing (t-test with FDR
-  correction) would be more rigorous with n=40
-- [ ] Probe IDs require annotation mapping — some may not correspond to well-characterized genes
+**Limitations to address:**
+- Class imbalance: 30 SONFH vs 10 control (3:1 ratio)
+- Peripheral serum ≠ tissue: cannot identify cell-type-specific changes
+- No external validation cohort
+- Fold-change ranking is exploratory — formal statistical testing (t-test with FDR correction) would be more rigorous
+- Some probe IDs may not correspond to well-characterized genes (`---` in gene symbol column)
 
-**Note — Rubric context (Core vs Bonus):**
-
-The rubric is a generic template (the Discussion section references "prostate cancer biology" — this project is SONFH; the rubric was reused). No specific research goal was prescribed — the expectation is: make a claim, then support it with your results.
-
-| Level | What's required | What it looks like |
-|---|---|---|
-| **Core** | Run pipeline, report numbers, discuss limitations | Accuracy/AUC table, confusion matrix, class imbalance (30:10) discussion, blood-vs-tissue caveat |
-| **Higher marks** | MLP + Auto-Weka + Select Attributes | Extra models, feature subset output, stronger Methods justification |
-| **Bonus** | Biological interpretation of what the numbers mean | Biomarker vs causal gene distinction, erythrocyte/vascular signature, pathway candidates (Phase 6–7) |
-
-The framing for your report: *"Machine learning–guided biomarker discovery, followed by biological interpretation"* — not pure predictive modeling. Classifiers answer "can we classify?"; feature selection answers "which genes?"; biology answers "so what does that mean for SONFH?"
-
-### Phase 9 — Polish `Mar 30 target`
-
-- [ ] All figures captioned and referenced in text
-- [ ] All acronyms defined on first use (SONFH, ONFH, RMA, IQR, LOOCV, ARFF, CPM)
-- [ ] Consistent APA references throughout
-- [ ] Methods section is reproducible (tools, versions, parameters documented)
-- [ ] Scientific passive voice throughout
+> **Note on rubric framing:** The Discussion rubric references "prostate cancer biology" — this project is SONFH; the rubric was reused. No specific research goal was prescribed — the expectation is: make a claim, then support it with your results.
 
 ---
 
 <details>
-<summary><strong>Glossary — Key Terms</strong> &nbsp;(click to expand)</summary>
-
-Plain-English definitions for every technical term used in this project, grouped by topic.
-
----
+<summary><strong>Glossary — Key Terms</strong> (click to expand)</summary>
 
 ### Biology & Genomics
 
 | Term | What it means |
 |------|---------------|
 | **Gene expression** | How actively a gene is being "read" by a cell at a given moment. DNA contains the instructions; mRNA is the photocopy the cell makes to actually use those instructions. Expression level = how many copies of that mRNA are present. |
-| **mRNA (messenger RNA)** | The intermediate molecule between a gene (DNA) and a protein. When a gene is "expressed," the cell transcribes DNA into mRNA. Microarrays and RNA-seq both measure mRNA levels — not DNA, not protein. |
+| **mRNA (messenger RNA)** | The intermediate molecule between a gene (DNA) and a protein. Microarrays and RNA-seq both measure mRNA levels — not DNA, not protein. |
 | **Transcriptome** | The complete set of all mRNA molecules in a cell or tissue at a specific moment. Measuring the transcriptome tells you which genes are active. |
-| **Microarray** | A chip (about the size of a glass slide) printed with tens of thousands of short DNA sequences called probes. A patient sample is washed over the chip; mRNA from the sample sticks to matching probes. A scanner reads how much stuck to each probe — that's the expression value. Affymetrix PrimeView (GPL15207) is the specific chip used in this dataset: 49,293 probes covering ~20,000 human genes. |
-| **Probe** | One of the 49,293 short DNA sequences printed on the Affymetrix chip. Each probe "catches" one specific mRNA sequence from the patient sample. Each gene typically has multiple probes targeting it from different angles. |
-| **Probe set** | The group of all probes on the chip that target the same gene. The chip combines their readings into one summary expression value per gene. |
-| **_at probe suffix** | Standard probe — targets exactly one gene's transcript. Most specific, most reliable. |
-| **_s_at probe suffix** | "Shared" — matches multiple transcripts (splice variants) of the *same* gene. Still gene-specific but less precise. |
-| **_x_at probe suffix** | "Cross-hybridizing" — can stick to sequences from *multiple different genes*. Least specific; flag when interpreting results. |
-| **Cross-hybridization** | When a probe binds to an unintended mRNA sequence because the sequences are similar enough. _x_at probes are known cross-hybridizers — their readings reflect a mix of genes, not just one. |
-| **Splice variant / isoform** | The same gene can produce slightly different mRNA molecules depending on how it's "spliced" — different sections included or excluded. One gene can have many isoforms. _s_at probes target multiple isoforms of the same gene. |
-| **Biomarker** | A measurable biological signal (gene expression level, protein level, etc.) that reliably indicates the presence, severity, or risk of a disease. The top differentially expressed probes in this project are candidate biomarkers for SONFH. |
-| **SONFH** | Steroid-induced Osteonecrosis of the Femoral Head — bone death in the hip joint caused by long-term corticosteroid (steroid) use. Steroids can reduce blood flow to the femoral head; without blood supply the bone tissue dies. The "disease" class in this dataset. |
-| **Osteonecrosis** | Literally "bone death" — the tissue dies because its blood supply is cut off. Also called avascular necrosis (AVN). |
-| **Femoral head** | The ball at the top of the thigh bone (femur) that fits into the hip socket. It is especially vulnerable to osteonecrosis because it has a limited blood supply. |
-| **Corticosteroids** | A class of steroid hormones (e.g. prednisone, dexamethasone) used medically to suppress inflammation. Long-term high-dose use is one of the leading causes of SONFH. |
-| **Peripheral serum** | Blood serum collected from a vein (as opposed to bone marrow or tissue biopsy). This is what was sampled from the 40 patients — a non-invasive blood draw, not surgery. |
-| **Control group** | In this dataset: patients who received corticosteroids but did NOT develop SONFH (n=10). They serve as the comparison baseline. Not completely healthy people — they are steroid-treated patients without bone necrosis. |
+| **Microarray** | A glass chip with thousands of pre-printed probes. Blood RNA hybridizes to matching probes; fluorescence intensity = expression level. Only measures known genes. |
+| **Probe** | A short DNA sequence on the microarray chip that matches one gene. Affymetrix PrimeView has 49,293 probes covering ~36,000 genes. |
+| **RMA normalization** | Robust Multi-Array Average — background correction + normalization already applied by GEO submitter. Values are in log2 scale. |
+| **log2 intensity** | The measured expression value. A value of 7 = 2⁷ = 128 units of signal. Each +1 step is a doubling of expression. |
+| **Fold change** | How much more or less a gene is expressed in one group vs another. log2 FC = 2 means 4× more expression in one group (2² = 4). |
+| **IQR (Interquartile Range)** | The range between the 25th and 75th percentile of a probe's expression across all 40 samples. Low IQR = flat probe (remove). High IQR = variable probe (keep). |
 
----
-
-### Data & Measurement
+### Machine Learning
 
 | Term | What it means |
 |------|---------------|
-| **GEO (Gene Expression Omnibus)** | The public database run by NCBI where researchers deposit raw and processed genomics data when they publish a study. All data in this project came from GEO. Free to download. |
-| **GSE accession** | "GEO Series" — the ID for one complete study deposited in GEO. Our dataset: GSE123568. Think of it as the study's library catalogue number. |
-| **GSM accession** | "GEO Sample" — the ID for one individual patient sample within a study. Our 40 patients have IDs GSM3507251–GSM3507290. |
-| **Series matrix file** | The main data file GEO provides for microarray studies. Contains two sections: a metadata header (patient labels, disease status, gender) and a data table (probe expression values for every patient). Our file: `GSE123568_series_matrix.txt.gz`. |
-| **SOFT file** | "Simple Omnibus Format in Text" — a second GEO file that contains the platform annotation: which probe ID maps to which gene symbol. Our file: `GSE123568_family.soft.gz`. Used to translate probe IDs like `11720807_x_at` into gene names like `EIF1AY`. |
-| **log2 expression** | The gene expression value after a log base-2 transformation. RMA normalization already applies this. Values in our dataset range from ~2–14. Log scale is used because expression can vary by orders of magnitude — log scale compresses that range so differences are comparable. |
-| **RMA normalization** | "Robust Multi-array Average" — the standard processing pipeline for Affymetrix microarray data. It corrects for chip background noise, makes expression values comparable across all 40 chips, and outputs log2-transformed intensities. Already applied by GEO before we downloaded the data. We do not normalize again. |
-| **IQR filter** | The first filtering step in `preprocess.py`. For each of the 49,293 probes, it looks at the expression values across all 40 patients and computes the IQR (see below). If the IQR is less than 0.5 log2 units, the probe is removed. Intuition: if a probe gives nearly the same reading in every patient — sick or healthy — it carries no information about disease status and would just add noise for the classifier. Result: 49,293 → 11,687 probes kept (76% removed as flat). |
-| **IQR (Interquartile Range)** | The spread of the middle 50% of a set of values. Calculated as Q75 − Q25 (the 75th percentile value minus the 25th percentile value). A small IQR means the values are tightly bunched — the probe is "flat." A large IQR means the probe varies a lot across patients, which is what we want. For the IQR filter, we use 0.5 log2 units as the cutoff. |
-| **Variance** | How spread out a set of values is around their average. Mathematically the average of squared differences from the mean. Used as a secondary ranking metric in feature selection — high-variance probes are variable across patients and thus potentially informative. |
-| **Fold change (FC)** | How much more (or less) a gene is expressed in one group vs another, measured in log2 units. An FC of 1.0 means the SONFH average is 2× higher than control's (because 2¹ = 2). An FC of 3.6 means ~12× higher (2³·⁶ ≈ 12). We use **absolute** FC (|FC|) so direction doesn't matter — we just want genes that differ strongly in either direction. |
-| **Pearson correlation** | A number from −1 to +1 measuring how similar two things move together. For two patients: +1.0 = their full expression profiles are identical across all probes; 0 = no relationship at all. In our sample correlation heatmap, all patient pairs score >0.7 because they're all human blood — but SONFH patients score higher *with each other* than with controls. |
-| **Hierarchical clustering** | An algorithm that groups similar things together by repeatedly merging the two most similar items. In our heatmaps, this reorders the rows and columns so that similar probes (or similar patients) end up next to each other, revealing block patterns. |
-| **Dendrogram** | The tree diagram on the edge of a clustered heatmap. Each branch point shows where two items (or clusters) were merged. Items connected at a low branch are very similar; items connected only at the top are more different. |
-| **Pseudobulk** | A technique used with single-cell RNA-seq data (not used in this project). When you have ~46,000 individual cells from 5 patients, you sum all cell counts per patient into one row — making it look like bulk RNA-seq. Used in the old dataset (GSE316957); not needed here because microarray data is already one row per patient. |
+| **Feature selection** | Choosing which of the 49,293 probes to give to the classifier. The top 100 by hybrid score are used. |
+| **ARFF** | Attribute-Relation File Format — Weka's native data format. Each row is one patient; each column is one gene + the class label. |
+| **10-fold cross-validation** | Split 40 patients into 10 groups of 4. Train on 9 groups, test on 1. Repeat 10 times, average the results. Required because n=40 is too small to hold out a fixed test set. |
+| **Kappa statistic (κ)** | Measures agreement between predictions and true labels, adjusted for chance. κ=0 means no better than random; κ=1 means perfect. More informative than accuracy for imbalanced classes. |
+| **AUC (Area Under ROC Curve)** | Probability that the model ranks a random SONFH patient higher than a random control. AUC=0.5 = random; AUC=1.0 = perfect. Preferred metric for imbalanced classes. |
+| **Gini impurity** | What RandomForest uses to decide which probe to split on at each tree node. Lower impurity = purer split. Attribute importance = how much each probe reduced impurity across all trees. |
+| **Hybrid score** | zscore(|log2 FC|) + zscore(|Welch t-stat|). Combines effect size (fold change) with statistical consistency (t-stat). Used to rank probes for feature selection. |
 
----
-
-### Machine Learning & Classification
+### Tools
 
 | Term | What it means |
 |------|---------------|
-| **Feature** | One input variable used by a classifier. In this project, each probe is a feature — its log2 expression value for a given patient. After feature selection, we have 100 features. |
-| **Feature selection** | The process of choosing which subset of features to give the classifier. We rank all 11,687 probes by |fold change| and keep the top 100. More features ≠ better model — too many features with too few samples causes overfitting. |
-| **Classifier** | An algorithm that takes a set of input features (probe values) for one patient and predicts which class (SONFH or control) that patient belongs to. |
-| **Class imbalance** | When one class has many more samples than the other. Here: 30 SONFH vs 10 control (3:1 ratio). This matters because a classifier could get 75% accuracy by always guessing SONFH — without learning anything real. Per-class metrics (TP rate, F1) expose this. |
-| **Overfitting** | When a model memorizes the training data instead of learning generalizable patterns. Happens easily when you have many features but few samples. Cross-validation helps detect it. |
-| **10-fold cross-validation** | A way to test classifier accuracy on all data without needing a separate holdout set. The 40 samples are split into 10 groups of 4. Each group takes a turn being the "test set" while the classifier trains on the other 36. Final accuracy = average across all 10 turns. More reliable than a single train/test split. |
-| **Confusion matrix** | A 2×2 table showing how the classifier's predictions compare to the true labels: True Positives (SONFH correctly called SONFH), True Negatives (control correctly called control), False Positives, False Negatives. |
-| **TP rate (True Positive rate)** | Also called sensitivity or recall. Of all actual SONFH patients, what fraction did the classifier correctly identify as SONFH? = TP / (TP + FN). |
-| **F1 score** | The harmonic mean of precision and recall. A single number (0–1) that balances both. More informative than raw accuracy when classes are imbalanced. |
-| **AUC (Area Under the ROC Curve)** | Measures overall classifier quality across all possible decision thresholds. AUC = 1.0 is a perfect classifier; AUC = 0.5 is random guessing. Robust to class imbalance. |
-| **Naive Bayes** | A probabilistic classifier that assumes all features are independent of each other (the "naive" assumption). Fast, interpretable, often works well on high-dimensional data. Good baseline. |
-| **J48 Decision Tree** | A tree-based classifier that makes sequential yes/no splits on feature values. Interpretable — you can read the tree rules and see which probes the model splits on first. Weka's implementation of the C4.5 algorithm. |
-| **Random Forest** | An ensemble of many decision trees, each trained on a random subset of features and samples. The final prediction is a vote across all trees. Generally the most accurate of the five classifiers; also provides feature importance scores. |
-| **SVM / SMO** | Support Vector Machine — finds the widest possible margin (gap) between the two classes in feature space. SMO is the algorithm Weka uses to train it. Works well when features > samples. |
-| **k-NN / IBk** | k-Nearest Neighbours — classifies a patient by looking at its k most similar patients in the training set and taking a majority vote. No explicit "training" — it just memorizes the data. Sensitive to the choice of k. |
-| **Weka** | "Waikato Environment for Knowledge Analysis" — an open-source machine learning GUI from the University of Waikato. Lets you run classifiers on an ARFF file without writing code. Used in Phase 5. |
-| **ARFF file** | "Attribute-Relation File Format" — Weka's input format. Like a CSV but with a header block that declares each column's name and data type. The `class` column must be listed last and declared as a nominal attribute. |
-| **PCA (Principal Component Analysis)** | A technique that finds the directions of greatest variation in high-dimensional data and projects all points onto those directions. PC1 = the single axis that explains the most variation. Useful for visualizing whether disease groups separate before running any classifier. |
+| **Weka** | Waikato Environment for Knowledge Analysis — Java-based ML GUI. Used for manual classifier runs in this project. |
+| **Weka Explorer** | The main Weka GUI. Preprocess tab loads data; Classify tab runs classifiers; Select Attributes tab runs feature selection. |
+| **ARFF relation** | The `@RELATION` field in an ARFF file. Weka shows this as "Current relation" in the Preprocess tab. |
+| **MLflow** | Experiment tracking system used by the Python pipeline to log metrics, parameters, and artifacts across runs. |
 
 </details>
 
 ---
 
-<details>
-<summary><strong>Bonus Analysis — Biomarker Discovery & Biological Interpretation</strong> (click to expand)</summary>
-
-## Bonus Analysis — Biomarker Discovery & Biological Interpretation
-
-This project goes beyond standard classification by using machine learning to identify
-**biologically meaningful transcriptomic features**, rather than only predicting disease labels.
-
-**Core research question:**
-> Which transcriptomic features most strongly distinguish SONFH from non-SONFH steroid-treated
-> patients, and what do those features reveal about candidate biomarkers and underlying
-> biological mechanisms?
-
----
-
-### Interpretation Note — Vascular / Hematological Signature vs Causal Mechanism
-
-An initial observation from the box plots is that several of the top-ranked probes (e.g., CA1, BPGM, RHCE/RHD, GYPA-related probes) show lower expression in SONFH samples compared to controls. A naive interpretation might suggest that gene expression is being "suppressed" in the disease state, potentially due to direct steroid effects.
-
-However, a more biologically grounded interpretation is that these signals likely reflect a **system-level vascular or hematological signature**, rather than direct suppression of individual genes or primary causal mechanisms.
-
-Many of the top features are associated with erythrocyte function and oxygen transport. Their reduced expression in SONFH samples may indicate:
-
-- alterations in blood cell composition (e.g., relative abundance of erythrocytes or related transcripts)
-- systemic vascular or hematological changes associated with the disease state
-- disrupted oxygen transport dynamics consistent with ischemia
-
-Given that steroid-induced osteonecrosis is strongly associated with impaired blood supply, microvascular damage, and ischemia, these transcriptomic patterns are consistent with **disease-associated vascular dysfunction**.
-
-Importantly, this does **not** imply that:
-- these genes are directly causing the disease
-- steroids are directly suppressing their transcription
-
-Instead, these genes are more appropriately interpreted as:
-
-> **Biomarker signals reflecting downstream physiological effects of the disease state.**
-
-This distinction is critical for interpreting results:
-
-| Category | Definition | Do our top genes fit? |
-|----------|------------|----------------------|
-| Causal genes | Drive disease onset | Unlikely — these are erythrocyte markers, not osteogenic regulators |
-| Mechanistic genes | Participate in disease biology | Possibly — vascular disruption is central to SONFH pathophysiology |
-| Biomarker genes | Reflect the disease state in a measurable way | Most likely — detected in peripheral blood, not bone tissue |
-
-The genes identified here most likely fall into the **biomarker category**, capturing systemic changes associated with SONFH rather than its primary molecular drivers.
-
-Additionally, because this dataset reflects transcriptomic measurements from **peripheral blood-derived samples** (not local bone tissue), these signals should be interpreted as **systemic indicators** of disease-associated physiology, not direct measurements of gene activity within the femoral head.
-
-**Summary:** The observed downregulation of erythrocyte-related genes is best interpreted as a transcriptomic signature of altered vascular and hematological physiology in SONFH, rather than a direct causal mechanism of disease.
-
----
-
-### Analytical Strategy — Four Layers
-
-#### 1. Predictive Signal (Model-Level)
-
-ML models (Weka classifiers + sklearn) identify discriminative features and benchmark
-classification performance. Outputs:
-- Feature importance scores (Random Forest)
-- Model coefficients (Elastic Net if added)
-- Top selected probes by |fold change|
-
-#### 2. Feature Stability (Robustness Layer)
-
-Ensures findings aren't driven by noise:
-- Feature selection evaluated across cross-validation folds
-- Selection frequency per probe across folds
-- Rank consistency across multiple training splits
-
-Goal: identify **robust biomarkers** that appear consistently, not just in one lucky split.
-
-#### 3. Gene-Level Mapping (Biological Translation)
-
-Probe IDs are not directly interpretable. After classification:
-- Probe IDs mapped to gene symbols via GPL15207 annotation (read from SOFT file)
-- Multiple probes mapping to the same gene are aggregated
-- Output: gene-level ranked feature table
-
-#### 4. Pathway & Mechanism Interpretation (Biological Insight)
-
-Top-ranked genes grouped into biological themes:
-- Lipid metabolism
-- Vascular / endothelial function
-- Bone remodeling (osteoblast/osteoclast activity)
-- Inflammation and apoptosis
-
-Compared against proposed mechanisms and candidate pathways in SONFH literature (via retrieval-grounded interpretation, Phase 6 → Phase 7).
-
----
-
-### Biomarker Prioritization Table (fill in after Phase 5 Weka + Phase 7 LLM)
-
-| Probe ID | Gene | Selection Freq | Mean |FC| | Notes |
-|----------|------|---------------|----------|-------|
-| | | | | |
-
----
-
-### Methodological Considerations
-
-- The current Weka pipeline performs feature selection on the full filtered dataset before classification. This is appropriate for exploratory analysis and rubric alignment, but it introduces potential information leakage. A stricter leakage-safe implementation, where feature selection is repeated within each cross-validation fold, is planned as a Python-side extension.
-- Class imbalance (30 SONFH vs 10 control): results reported using per-class metrics (TP rate, F1, AUC, confusion matrix), not overall accuracy alone
-- Results are exploratory — no external validation cohort
-- Report per-class metrics (TP rate, F1) not just overall accuracy, given imbalance
-
-### Why This Matters
-
-Transforms the project from:
-> "Can a model classify disease vs control?"
-
-into:
-> "Which genes and biological processes are most strongly associated with SONFH, and how
-> can ML prioritize candidate biomarkers for future validation?"
-
-### Optional Extensions (if time permits)
-- Permutation feature importance (model-agnostic validation)
-- Comparison of probe-level vs gene-level models
-- Integration with PubMed / LLM-based literature review (Phase 6 → Phase 7)
-- Network-level inference: co-regulation analysis and hub gene identification across the shortlisted gene set (future extension; not implemented in current scope)
-- Systems-level interpretation: pathway connectivity and disruption analysis between disease and control subnetworks (further future work)
-
-</details>
-
----
-
-## Key References
-
-### Dataset source
-
-**GEO Series GSE123568** — deposited Dec 2018, public Dec 2019.
-Contributor: Yanqiong Zhang, Institute of Chinese Materia Medica, China Academy of Chinese
-Medical Sciences, Beijing.
-Cite as: GEO accession GSE123568 (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE123568)
-
-### Paper linked to this dataset (listed in GEO as the citing publication)
-
-**Jia Y, Zhang Y, Li S, Li R et al. (2023)** — *Identification and assessment of novel dynamic
-biomarkers for monitoring non-traumatic osteonecrosis of the femoral head staging.*
-Clin Transl Med. 13(6):e1295. PMID: 37313692
-
-> **What this means:** GEO's "Citation(s)" field lists papers that used this dataset.
-> Jia Y 2023 is the paper that published the analysis of GSE123568 — it's the study you
-> are replicating/extending. Cite it as the source study for this dataset.
-> Note: the dataset was deposited in 2018 but the paper was published in 2023 — a 5-year
-> gap between data deposit and publication, which is normal for GEO submissions.
-
-### Platform reference
-
-**Affymetrix Human PrimeView Array (GPL15207)** — Thermo Fisher Scientific.
-No separate citation needed; reference the GEO platform page:
-https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL15207
-
-### Standard methods references
-
-- Hall M. et al. (2009). The WEKA data mining software: an update. *SIGKDD Explorations* 11(1).
-- Barrett T. et al. (2013). NCBI GEO: archive for functional genomics data sets — update.
-  *Nucleic Acids Res.* 41(D1):D991-5. PMID: 23193258
-- Irizarry RA et al. (2003). Exploration, normalization, and summaries of high density
-  oligonucleotide array probe level data (RMA). *Biostatistics* 4(2):249-264. PMID: 12925520
-
-### To identify via LLM agent (Phase 6 → Phase 7)
-> Run gene_interpreter.py on top Weka features to surface SONFH-specific supporting papers.
-
----
-
-## Notes
-
-- Probe-to-gene mapping: use the GPL15207 annotation from the SOFT file or GEO2R.
-  Weka/classification works with probe IDs, but the Discussion requires gene names.
-- CV strategy: 10-fold CV is appropriate for n=40 (unlike LOOCV which was required for n=5)
-- Class imbalance: if classifiers perform poorly on the control class, consider
-  reporting per-class metrics (TP rate, F1) rather than overall accuracy
-- Professor's R scripts assume Windows paths — update before running locally
-- **Do not cite LLM-generated text directly** — use the agent to find papers and suggest
-  interpretations, then read the actual papers
-
+> All generated files are gitignored. Fully reproducible by running the steps above in order.

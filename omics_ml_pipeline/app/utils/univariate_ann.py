@@ -78,7 +78,7 @@ _WEKA_INPUT_CSV  = str(
     _PROJECT_ROOT / "data" / "femoral_head_necrosis" / "parsed" / "preprocessed_matrix.csv"
 )
 _WEKA_SOFT_GZ    = str(_APP_DIR / "data" / "input" / "GSE123568_family.soft.gz")
-_WEKA_OUTPUT_DIR = str(_PROJECT_ROOT / "data" / "femoral_head_necrosis" / "univariate_ann")
+_WEKA_OUTPUT_DIR = str(_PROJECT_ROOT / "data" / "femoral_head_necrosis" / "feature_selection" / "univariate_ann")
 
 
 # ---------------------------------------------------------------------------

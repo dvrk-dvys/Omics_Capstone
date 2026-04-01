@@ -81,8 +81,8 @@ SOFT_GZ    = str(_APP_DIR / "data" / "input"  / "GSE123568_family.soft.gz")
 # ---------------------------------------------------------------------------
 _PROJECT_ROOT    = _APP_DIR.parent.parent   # /Omics_Capstone/
 _WEKA_INPUT_CSV  = str(_PROJECT_ROOT / "data" / "femoral_head_necrosis" / "parsed" / "preprocessed_matrix.csv")
-_WEKA_EDA_DIR    = str(_PROJECT_ROOT / "data" / "femoral_head_necrosis" / "EDA")
-_WEKA_OUT_DIR    = str(_PROJECT_ROOT / "data" / "femoral_head_necrosis" / "feature_selection")
+_WEKA_EDA_DIR    = str(_PROJECT_ROOT / "data" / "femoral_head_necrosis" / "plots" / "eda")
+_WEKA_OUT_DIR    = str(_PROJECT_ROOT / "data" / "femoral_head_necrosis" / "feature_selection" / "multivariate")
 _WEKA_MODELS_DIR = str(_PROJECT_ROOT / "data" / "femoral_head_necrosis" / "weka_models")
 
 

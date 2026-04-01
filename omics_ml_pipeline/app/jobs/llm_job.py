@@ -58,28 +58,27 @@ def _load_shortlist(path: str) -> list:
     df["gene_symbol"] = df["gene_symbol"].apply(_clean_gene)
     df = df.dropna(subset=["gene_symbol"])
 
-    # Sort by whichever score column is present (multivariate uses combined_score;
-    # univariate baseline uses Median_TestAUC; univariate augmented uses univariate_score)
-    if "combined_score" in df.columns:
-        _sort_col = "combined_score"
-    elif "univariate_score" in df.columns:
-        _sort_col = "univariate_score"
-    else:
-        _sort_col = "Median_TestAUC"
-    df = df.sort_values(_sort_col, ascending=False)
+    # Normalize primary score column to "score" regardless of pipeline source:
+    #   combined_score   — Python multivariate (hybrid Z-score)
+    #   rf_importance    — Weka multivariate
+    #   univariate_score — univariate augmented
+    #   Median_TestAUC   — univariate baseline
+    _score_candidates = ["combined_score", "rf_importance", "univariate_score", "Median_TestAUC"]
+    _orig_col = next((c for c in _score_candidates if c in df.columns), None)
+    if _orig_col and _orig_col != "score":
+        df = df.rename(columns={_orig_col: "score"})
+    df = df.sort_values("score", ascending=False)
 
     records = []
     for gene, group in df.groupby("gene_symbol", sort=False):
         best = group.iloc[0].to_dict()          # highest score row
         best["probe_count"]          = len(group)
         best["probe_ids"]            = " | ".join(group["probe_id"].tolist())
-        best["max_combined_score"]   = round(float(group[_sort_col].max()), 4)
+        best["max_score"]            = round(float(group["score"].max()), 4)
         best["mean_abs_fold_change"] = round(float(group["abs_fold_change"].mean()), 4)
-        # rf_importance absent in univariate shortlists — default to 0
-        best["max_rf_importance"]    = round(float(group["rf_importance"].max()), 4) if "rf_importance" in group.columns else 0.0
         records.append(best)
 
-    records.sort(key=lambda r: r["max_combined_score"], reverse=True)
+    records.sort(key=lambda r: r["max_score"], reverse=True)
     return records
 
 

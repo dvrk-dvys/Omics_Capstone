@@ -253,7 +253,7 @@ def build_shortlist(
 
     # --- Annotation ---
     shortlist["gene_symbol"] = "---"
-    shortlist["abs_fc"]      = None
+    shortlist["abs_fold_change"] = None
     shortlist["log_fc"]      = None
     shortlist["hybrid_score"] = None
 
@@ -263,7 +263,7 @@ def build_shortlist(
             rank_df = load_rankings(rankings_path)
             for col_out, col_in in [
                 ("gene_symbol", "gene_symbol"),
-                ("abs_fc",      "abs_fold_change"),
+                ("abs_fold_change", "abs_fold_change"),
                 ("log_fc",      "log_fold_change"),
                 ("hybrid_score","hybrid_score"),
             ]:
@@ -279,7 +279,7 @@ def build_shortlist(
         "rf_rank", "probe_id", "gene_symbol",
         "rf_importance", "rf_n_nodes",
         "j48_split", "j48_threshold", "j48_direction", "j48_depth",
-        "abs_fc", "log_fc", "hybrid_score",
+        "abs_fold_change", "log_fc", "hybrid_score",
         "source",
     ]
     shortlist = shortlist[[c for c in col_order if c in shortlist.columns]]
@@ -320,10 +320,10 @@ def parse_args():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__,
     )
-    p.add_argument("--rf",             required=True,  help="Weka RandomForest output .txt")
-    p.add_argument("--j48",            default=None,   help="Weka J48 output .txt (optional)")
-    p.add_argument("--ranks",          default=None,   help="gene_rankings.csv for annotation (optional)")
-    p.add_argument("--out",            default="weka_biomarker_shortlist.csv", help="Output CSV path")
+    p.add_argument("--rf",    default="data/femoral_head_necrosis/weka_models/multivariate/randomforest.txt",        help="Weka RandomForest output .txt")
+    p.add_argument("--j48",   default="data/femoral_head_necrosis/weka_models/multivariate/j48_tree.txt",            help="Weka J48 output .txt (optional)")
+    p.add_argument("--ranks", default="data/femoral_head_necrosis/feature_selection/multivariate/gene_rankings.csv", help="gene_rankings.csv for annotation (optional)")
+    p.add_argument("--out",   default="data/femoral_head_necrosis/weka_models/multivariate/weka_biomarker_shortlist.csv", help="Output CSV path")
     p.add_argument("--min-importance", type=float, default=0.0,
                    help="Minimum RF importance to include (0–1, default 0.0)")
     p.add_argument("--top-n",          type=int,   default=None,

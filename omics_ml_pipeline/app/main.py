@@ -171,62 +171,68 @@ def main():
         else:
             log.info("⏭️  Skipping ingest/parse/preprocess (--skip-pre)")
 
-        # 4. Feature selection — always runs for fc_ranking, gene_map, and EDA plots.
-        #    In multivariate mode selected_df is used downstream.
-        #    In univariate mode selected_df is replaced after the ANN step.
-        log.info("📊 [4/7] Feature selection  (rankings + EDA)")
-        try:
-            with log_duration(log, "Feature selection"):
-                t0 = time.perf_counter()
-                selected_df, fc_ranking, gene_map = feature_select_job.run(config)
-                durations["Feature selection"] = time.perf_counter() - t0
-        except Exception as e:
-            log.error(f"❌ Feature selection failed: {e}")
-            raise
-
-        # 5. Mode-specific feature source
-        top_n = config["feature_selection"]["top_n_feats"]
-        if args.mode == "univariate":
-            log.info("🧬 [5/7] Univariate ANN  (mode=univariate)")
+        if args.skip_train and args.shortlist:
+            # Steps 4–6 skipped: external shortlist provided and training disabled.
+            # LLM job will consume args.shortlist directly.
+            log.info("⏭️  Skipping feature selection, ANN, and biomarker shortlist (--skip-train + --shortlist)")
+            selected_df = fc_ranking = gene_map = None
+        else:
+            # 4. Feature selection — runs for fc_ranking, gene_map, EDA plots, and biomarker shortlist.
+            #    In multivariate mode selected_df is used downstream.
+            #    In univariate mode selected_df is replaced after the ANN step.
+            log.info("📊 [4/7] Feature selection  (rankings + EDA)")
             try:
-                with log_duration(log, "Univariate ANN"):
+                with log_duration(log, "Feature selection"):
                     t0 = time.perf_counter()
-                    univariate_ann_job.run(config, run_id=run_id)
-                    durations["Univariate ANN"] = time.perf_counter() - t0
-                uni_csv = os.path.join(
-                    config["paths"]["univariate_ann_dir"],
-                    f"top{top_n}_features_univariate_ann.csv",
-                )
-                selected_df = pd.read_csv(uni_csv, index_col="sample")
+                    selected_df, fc_ranking, gene_map = feature_select_job.run(config)
+                    durations["Feature selection"] = time.perf_counter() - t0
+            except Exception as e:
+                log.error(f"❌ Feature selection failed: {e}")
+                raise
+
+            # 5. Mode-specific feature source
+            top_n = config["feature_selection"]["top_n_feats"]
+            if args.mode == "univariate":
+                log.info("🧬 [5/7] Univariate ANN  (mode=univariate)")
+                try:
+                    with log_duration(log, "Univariate ANN"):
+                        t0 = time.perf_counter()
+                        univariate_ann_job.run(config, run_id=run_id)
+                        durations["Univariate ANN"] = time.perf_counter() - t0
+                    uni_csv = os.path.join(
+                        config["paths"]["univariate_ann_dir"],
+                        f"top{top_n}_features_univariate_ann.csv",
+                    )
+                    selected_df = pd.read_csv(uni_csv, index_col="sample")
+                    log.info(
+                        f"  selected_df → ANN top-{top_n}  "
+                        f"({selected_df.shape[0]} samples × {selected_df.shape[1] - 1} probes)"
+                    )
+                    log.info(f"  Source : {uni_csv}")
+                except Exception as e:
+                    log.error(f"❌ Univariate ANN failed — falling back to hybrid selected_df: {e}")
+            else:
+                log.info("⏭️  [5/7] Univariate ANN skipped  (mode=multivariate)")
                 log.info(
-                    f"  selected_df → ANN top-{top_n}  "
+                    f"  selected_df → hybrid top-{top_n}  "
                     f"({selected_df.shape[0]} samples × {selected_df.shape[1] - 1} probes)"
                 )
-                log.info(f"  Source : {uni_csv}")
+
+            # Inject mode + top_n into config so downstream plot functions can label outputs
+            config["_mode"]             = args.mode
+            config["_top_n"]            = top_n
+            config["_univariate_rerank"] = args.univariate_rerank
+
+            # 6. Biomarker shortlist — runs before train so composite plot has the CSV
+            log.info("🎯 [6/7] Biomarker shortlist")
+            try:
+                with log_duration(log, "Biomarker shortlist"):
+                    t0 = time.perf_counter()
+                    shortlist = biomarker_job.run(config, selected_df, fc_ranking, gene_map, run_id)
+                    durations["Biomarker shortlist"] = time.perf_counter() - t0
             except Exception as e:
-                log.error(f"❌ Univariate ANN failed — falling back to hybrid selected_df: {e}")
-        else:
-            log.info("⏭️  [5/7] Univariate ANN skipped  (mode=multivariate)")
-            log.info(
-                f"  selected_df → hybrid top-{top_n}  "
-                f"({selected_df.shape[0]} samples × {selected_df.shape[1] - 1} probes)"
-            )
-
-        # Inject mode + top_n into config so downstream plot functions can label outputs
-        config["_mode"]             = args.mode
-        config["_top_n"]            = top_n
-        config["_univariate_rerank"] = args.univariate_rerank
-
-        # 6. Biomarker shortlist — runs before train so composite plot has the CSV
-        log.info("🎯 [6/7] Biomarker shortlist")
-        try:
-            with log_duration(log, "Biomarker shortlist"):
-                t0 = time.perf_counter()
-                shortlist = biomarker_job.run(config, selected_df, fc_ranking, gene_map, run_id)
-                durations["Biomarker shortlist"] = time.perf_counter() - t0
-        except Exception as e:
-            log.error(f"❌ Biomarker shortlist failed: {e}")
-            raise
+                log.error(f"❌ Biomarker shortlist failed: {e}")
+                raise
 
         # 7. Train + evaluate (non-critical — failure does not abort pipeline)
         if not args.skip_train:

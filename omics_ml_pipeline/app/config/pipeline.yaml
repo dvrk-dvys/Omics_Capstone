@@ -61,7 +61,7 @@ biomarker:
     # top100: 0.50 to 0.60
     # top500: 0.40 to 0.50, probably start at 0.45
 
-  top_n_display: 12   # how many top candidates to highlight across reporting outputs
+  top_n_display: 25   # how many top candidates to highlight across reporting outputs
                       # routed to → biomarker_job.py  : shortlist preview log
                       # routed to → train_eval_job.py : fig 4 scatter gene labels
                       # routed to → llm_job.py        : max genes sent to LLM (cost control for univariate shortlists)

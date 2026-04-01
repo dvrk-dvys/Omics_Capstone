@@ -1,0 +1,34 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 5 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     femoral_head_necrosis
+Instances:    40
+Attributes:   101
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          36               90      %
+Incorrectly Classified Instances         4               10      %
+Kappa statistic                          0.7143
+Mean absolute error                      0.0995
+Root mean squared error                  0.2655
+Relative absolute error                 26.0629 %
+Root relative squared error             61.2952 %
+Total Number of Instances               40     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,967    0,300    0,906      0,967    0,935      0,722    0,890     0,933     SONFH
+                 0,700    0,033    0,875      0,700    0,778      0,722    0,890     0,839     control
+Weighted Avg.    0,900    0,233    0,898      0,900    0,896      0,722    0,890     0,909     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 29  1 |  a = SONFH
+  3  7 |  b = control
+
