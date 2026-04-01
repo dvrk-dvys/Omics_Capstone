@@ -1,0 +1,166 @@
+{
+  "rf_rank": 3,
+  "probe_id": "11731448_a_at",
+  "gene_symbol": "SNCA",
+  "score": 0.94,
+  "rf_n_nodes": 2,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 3.0974,
+  "log_fc": -3.0974,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 2,
+  "probe_ids": "11731448_a_at | 11731446_s_at",
+  "max_score": 0.94,
+  "mean_abs_fold_change": 2.7292,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T14:53:24",
+  "interpretation": "Alpha-synuclein, encoded by the SNCA gene, is a neuronal protein primarily involved in synaptic vesicle trafficking and neurotransmitter release. While its direct connection to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) is not established, the protein's role in calcium signaling and synaptic function may suggest a potential link to the pathophysiology of SONFH, particularly in the context of steroid-induced cellular stress and neuronal health. The retrieved evidence indicates that alpha-synuclein is implicated in neurodegenerative diseases, which may share common pathways with the cellular mechanisms affected in SONFH. However, the evidence specifically linking SNCA to SONFH is weak, relying on general biological reasoning rather than direct studies. Therefore, while alpha-synuclein may have some relevance as a biomarker, its clinical utility in the early detection of SONFH remains uncertain.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "Alpha-synuclein may be involved in cellular processes relevant to Steroid-Induced Osteonecrosis of the Femoral Head, but direct evidence linking it to the disease is lacking.",
+  "citations": [
+    "SNCA (P37840). https://www.uniprot.org/uniprotkb/P37840",
+    "SNCA (P37840-3). https://www.uniprot.org/uniprotkb/P37840-3",
+    "SNCA (P37840-2). https://www.uniprot.org/uniprotkb/P37840-2",
+    "SNCA \u2014 SNCA. https://platform.opentargets.org/target/ENSG00000145335",
+    "SNCA \u2194 Hereditary late-onset Parkinson disease. https://platform.opentargets.org/target/ENSG00000145335/associations",
+    "SNCA \u2194 Young adult-onset Parkinsonism. https://platform.opentargets.org/target/ENSG00000145335/associations",
+    "SNCA \u2194 Parkinson disease. https://platform.opentargets.org/target/ENSG00000145335/associations",
+    "SNCA \u2194 Lewy body dementia. https://platform.opentargets.org/target/ENSG00000145335/associations",
+    "Alpha-synuclein. https://en.wikipedia.org/wiki/Alpha-synuclein",
+    "Prion. https://en.wikipedia.org/wiki/Prion"
+  ],
+  "token_usage": {
+    "prompt_tokens": 6938,
+    "completion_tokens": 257,
+    "total_tokens": 7195,
+    "estimated_cost_usd": 0.001195
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P37840",
+          "title": "SNCA (P37840)",
+          "url": "https://www.uniprot.org/uniprotkb/P37840",
+          "text": "Protein: Alpha-synuclein\nFunction: Neuronal protein that plays several roles in synaptic activity such as regulation of synaptic vesicle trafficking and subsequent neurotransmitter release (PubMed:20798282, PubMed:26442590, PubMed:28288128, PubMed:30404828). Participates as a monomer in synaptic vesicle exocytosis by enhancing vesicle priming, fusion and dilation of exocytotic fusion pores (PubMed:28288128, PubMed:30404828). Mechanistically, acts by increasing local Ca(2+) release from microdomains which is essential for the enhancement of ATP-induced exocytosis (PubMed:30404828). Also acts as a molecular chaperone in its multimeric membrane-bound state, assisting in the folding of synaptic fusion components called SNAREs (Soluble NSF Attachment Protein REceptors) at presynaptic plasma membrane in conjunction with cysteine string protein-alpha/DNAJC5 (PubMed:20798282). This chaperone activity is important to sustain normal SNARE-complex assembly during aging (PubMed:20798282). Also plays a role in the regulation of the dopamine neurotransmission by associating with the dopamine transporter (DAT1) and thereby modulating its activity (PubMed:26442590)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P37840-3",
+          "title": "SNCA (P37840-3)",
+          "url": "https://www.uniprot.org/uniprotkb/P37840-3",
+          "text": "Protein: Isoform 2-5 of Alpha-synuclein",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P37840-2",
+          "title": "SNCA (P37840-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P37840-2",
+          "text": "Protein: Isoform 2-4 of Alpha-synuclein",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000145335::function",
+          "title": "SNCA \u2014 SNCA",
+          "url": "https://platform.opentargets.org/target/ENSG00000145335",
+          "text": "Function: Neuronal protein that plays several roles in synaptic activity such as regulation of synaptic vesicle trafficking and subsequent neurotransmitter release (PubMed:20798282, PubMed:26442590, PubMed:28288128, PubMed:30404828). Participates as a monomer in synaptic vesicle exocytosis by enhancing vesicle priming, fusion and dilation of exocytotic fusion pores (PubMed:28288128, PubMed:30404828). Mechanistically, acts by increasing local Ca(2+) release from microdomains which is essential for the enhancement of ATP-induced exocytosis (PubMed:30404828). Also acts as a molecular chaperone in its multimeric membrane-bound state, assisting in the folding of synaptic fusion components called SNAREs (Soluble NSF Attachment Protein REceptors) at presynaptic plasma membrane in conjunction with cysteine string protein-alpha/DNAJC5 (PubMed:20798282). This chaperone activity is important to sustain normal SNARE-complex assembly during aging (PubMed:20798282). Also plays a role in the regulation of the dopamine neurotransmission by associating with the dopamine transporter (DAT1) and thereby modulating its activity (PubMed:26442590).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000145335::Orphanet_411602",
+          "title": "SNCA \u2194 Hereditary late-onset Parkinson disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000145335/associations",
+          "text": "Disease: Hereditary late-onset Parkinson disease\nDescription: Hereditary late-onset Parkinson disease (LOPD) is a form of Parkinson disease (PD), characterized by an age of onset of more than 50 years, tremor at rest, gait complaints and falls, bradykinesia, rigidity and painful cramps. Patients usually present a low risk of developing non motor symptoms, dystonia, dyskinesia and levodopa-induced dyskinesia (LID).\nAssociation score: 0.801",
+          "cos_sim_score": 0.8010568055473846,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000145335::Orphanet_2828",
+          "title": "SNCA \u2194 Young adult-onset Parkinsonism",
+          "url": "https://platform.opentargets.org/target/ENSG00000145335/associations",
+          "text": "Disease: Young adult-onset Parkinsonism\nDescription: Young-onset Parkinson disease (YOPD) is a form of Parkinson disease (PD), characterized by an age of onset between 21-45 years, rigidity, painful cramps followed by tremor, bradykinesia, dystonia, gait complaints and falls, and other non-motor symptoms. A slow disease progression and a more pronounced response to dopaminergic therapy are also observed in most YOPD forms.\nAssociation score: 0.786",
+          "cos_sim_score": 0.7858970456274329,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000145335::MONDO_0005180",
+          "title": "SNCA \u2194 Parkinson disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000145335/associations",
+          "text": "Disease: Parkinson disease\nDescription: A progressive degenerative disorder of the central nervous system characterized by loss of dopamine producing neurons in the substantia nigra and the presence of Lewy bodies in the substantia nigra and locus coeruleus. Signs and symptoms include tremor which is most pronounced during rest, muscle rigidity, slowing of the voluntary movements, a tendency to fall back, and a mask-like facial expression.\nAssociation score: 0.753",
+          "cos_sim_score": 0.7529953877159611,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000145335::EFO_0006792",
+          "title": "SNCA \u2194 Lewy body dementia",
+          "url": "https://platform.opentargets.org/target/ENSG00000145335/associations",
+          "text": "Disease: Lewy body dementia\nDescription: A progressive form of dementia characterized by the presence of protein deposits called Lewy bodies in the midbrain and cerebral cortex, and loss of cholinergic and dopaminergic neurons. The signs and symptoms overlap with Alzheimer and Parkinson disease.\nAssociation score: 0.749",
+          "cos_sim_score": 0.7492903909741342,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Alpha-synuclein",
+          "title": "Alpha-synuclein",
+          "url": "https://en.wikipedia.org/wiki/Alpha-synuclein",
+          "text": "Clinical significance\nAlpha synuclein, having no single, well-defined tertiary structure, is an intrinsically disordered protein, with a pI value of 4.7, which, under certain pathological conditions, can misfold in a way that exposes its core hydrophobic residues to the intracellular milieu, thus providing the opportunity for hydrophobic interactions to occur with a similar, equally exposed protein. This could lead to self assembly and subsequent aggregation into large, insoluble fibrils known as amyloids. The conversion of soluble alpha synuclein into highly ordered, cross-\u03b2 sheet, fibrillar structures does not, as previously thought, follow a two-step mechanism, rather, occurs through a series of transient, soluble oligomeric intermediates. In 2011, two groups published their findings that unmutated \u03b1-synuclein forms a stably folded tetramer that resists aggregation, asserting that this folded tetramer represented the relevant in vivo structure in cells, thereby relieving alpha synuclein of its disordered status. Proponents of the tetramer hypothesis argued that in vivo cross-linking in bacteria, primary neurons and human erythroleukemia cells confirmed the presence of labile, tetrameric species. However, despite numerous in-cell NMR reports demonstrating that alpha synuclein is indeed monomeric and disordered in intact E. coli cells, it is still a matter of debate in the field despite an ever growing mountain of conflicting reports. Nevertheless, alpha-synuclein aggregates to form insoluble fibrils in pathological conditions characterized by Lewy bodies, such as Parkinson's disease, dementia with Lewy bodies and multiple system atrophy. These disorders are known as synucleinopathies. In vitro models of synucleinopathies revealed that aggregation of alpha-synuclein may lead to various cellular disorders including microtubule impairment, synaptic and mitochondrial dysfunctions, oxidative stress as well as dysregulation of Calcium signaling, proteasomal and lysosomal pathway. Alpha-synuclein is the primary structural component of Lewy body fibrils. Occasionally, Lewy bodies contain tau protein; however, alpha-synuclein and tau constitute two distinctive subsets of filaments in the same inclusion bodies. Alpha-synuclein pathology is also found in both sporadic and familial cases with Alzheimer's disease.  The alpha-synuclein seed amplification assay (SAA) using cerebrospinal fluid demonstrated high diagnostic performance in distinguishing synucleinopathies with Lewy bodies from control subjects. Additionally, SAA kinetics are associated with cognitive impairment and predict the development of dementia.\nThe aggregation mechanism of alpha-synuclein is uncertain. There is evidence of a structured intermediate rich in beta structure that can be the precursor of aggregation and, ultimately, Lewy bodies. A single molecule study in 2008 suggests alpha-synuclein exists as a mix of unstructured, alpha-helix, and beta-sheet-rich conformers in equilibrium. Mutations or buffer conditions known to improve aggregation strongly increase the population of the beta conformer, thus suggesting this could be a conformation related to pathogenic aggregation. One theory is that the majority of alpha-synuclein aggregates are located in the presynapse as smaller deposits which causes synaptic dysfunction. Among the strategies for treating synucleinopathies are compounds that inhibit aggregation of alpha-synuclein. It has been shown that the small molecule cuminaldehyde inhibits fibrillation of alpha-synuclein.\nThe Epstein-Barr virus has been implicated in these disorders.\nIn rare cases of familial forms of Parkinson's disease, there is a mutation in the gene coding for alpha-synuclein. Five point mutations have been identified thus far: A53T, A30P, E46K, H50Q, and G51D; however, in total, nineteen mutations in the SNCA gene have been associated with parkinsonism: A18T, A29S, A53E, A53V, E57A, V15A, T72M, L8I, V15D, M127I, P117S, M5T, G93A, E83Q, and A30G.",
+          "cos_sim_score": 0.6362875699996948,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Alpha-synuclein",
+          "title": "Alpha-synuclein",
+          "url": "https://en.wikipedia.org/wiki/Alpha-synuclein",
+          "text": "Alpha-synuclein (aSyn) is a protein that in humans is encoded by the SNCA gene. It is a neuronal protein involved in the regulation of synaptic vesicle trafficking and the release of neurotransmitters.\nAlpha-synuclein is abundant in the brain, with smaller amounts present in the heart, muscles, and other tissues. Within the brain, it is primarily localized to the axon terminals of presynaptic neurons. There, it interacts with phospholipids and other proteins. Presynaptic terminals release neurotransmitters from specialized compartments called synaptic vesicles, a process essential for neuronal communication and normal brain function.\nIn Parkinson's disease and related synucleinopathies, abnormal, insoluble forms of alpha-synuclein accumulate within neurons as inclusions known as Lewy bodies.\nMutations in the SNCA gene are linked to familial forms of Parkinson's disease. During the process of seeded nucleation, alpha-synuclein adopts a cross-beta sheet structure characteristic of amyloid fibrils.\nThe human alpha-synuclein protein consists of 140 amino acids. A fragment of alpha-synuclein, known as the non-amyloid beta component (NAC) of Alzheimer's disease amyloid, was initially isolated from an amyloid-rich brain fraction and shown to derive from a precursor protein named NACP. NACP was subsequently identified as the human homologue of synuclein from the electric ray genus Torpedo, leading to its renaming as human alpha-synuclein.\n\nTissue expression\nAlpha-synuclein is a synuclein protein primarily found in neural tissue, making up as much as one percent of all proteins in the cytosol of brain cells. It is expressed highly in neurons within the frontal cortex, hippocampus, striatum, and olfactory bulb, but can also be found in the non-neuronal glial cells.\nIt has been established that alpha-synuclein is extensively localized in the nucleus of mammalian brain neurons, suggesting a role of alpha-synuclein in the nucleus. Synuclein is however found predominantly in the presynaptic termini, in both free or membrane-bound forms, with roughly 15% of synuclein being membrane-bound at any moment in neurons.\nIt has also been shown that alpha-synuclein is localized in neuronal mitochondria. Alpha-synuclein is highly expressed in the mitochondria in olfactory bulb, hippocampus, striatum and thalamus, where the cytosolic alpha-synuclein is also rich. However, the cerebral cortex and cerebellum are\ntwo exceptions, which contain rich cytosolic alpha-synuclein but very low levels of mitochondrial alpha-synuclein. It has been shown that alpha-synuclein is localized in the inner membrane of mitochondria, and that the inhibitory effect of alpha-synuclein on complex I activity of the mitochondrial respiratory chain is dose-dependent. Thus, it is suggested that alpha-synuclein in mitochondria is differentially expressed in different brain regions and the background levels of mitochondrial alpha-synuclein may be a potential factor affecting mitochondrial function and predisposing some neurons to degeneration.\nAt least three isoforms of synuclein are produced through alternative splicing. The majority form of the protein, and the one most investigated, is the full-length protein of 140 amino acids. Other isoforms are alpha-synuclein-126, which lacks residues 41-54 due to loss of exon 3; and alpha-synuclein-112, which lacks residues 103-130 due to loss of exon 5.",
+          "cos_sim_score": 0.6336902379989624,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Prion",
+          "title": "Prion",
+          "url": "https://en.wikipedia.org/wiki/Prion",
+          "text": "Alpha-synuclein\nBoth multiple system atrophy (MSA) and Parkinson's disease (PD) are associated with misfolded alpha-synuclein. In 2015, it was found that mice engineered to have a susceptible human version of alpha-synuclein become sick with MSA when injected in the brain with the brain homogenate of human MSA patients, but they do not get PD when injected with the brain homogenate of human PD patients. This suggests that the two diseases are different, with MSA being more transmissible. Misfolded alpha-synuclein from either Parkinson's disease or MSA can be detected by protein misfolding cyclic amplification (PMCA). The two forms, after PMCA, show different levels of fluorescence when bound to thioflavin T. This allows for distinguishing between the two diseases.\n\nHistory\nIn the 18th and 19th centuries, exportation of sheep from Spain was observed to coincide with a disease called scrapie. This disease caused the affected animals to \"lie down, bite at their feet and legs, rub their backs against posts, fail to thrive, stop feeding and finally become lame\". The disease was also observed to have the long incubation period that is a key characteristic of transmissible spongiform encephalopathies (TSEs). Although the cause of scrapie was not known back then, it is probably the first transmissible spongiform encephalopathy to be recorded.\nIn the 1950s, Carleton Gajdusek began research which eventually showed that kuru could be transmitted to chimpanzees by what was possibly a new infectious agent, work for which he eventually won the 1976 Nobel Prize. During the 1960s, two London-based researchers, radiation biologist Tikvah Alper and biophysicist John Stanley Griffith, developed the hypothesis that the transmissible spongiform encephalopathies are caused by an infectious agent consisting solely of proteins. Earlier investigations by E.J. Field into scrapie and kuru had found evidence for the transfer of pathologically inert polysaccharides that only become infectious post-transfer, in the new host. Alper and Griffith wanted to account for the discovery that the mysterious infectious agent causing the diseases scrapie and Creutzfeldt\u2013Jakob disease resisted ionizing radiation. Griffith proposed three ways in which a protein could be a pathogen:\nIn the first hypothesis, he suggested that if the protein is the product of a normally suppressed gene, and introducing the protein could induce the gene's expression, that is, wake the dormant gene up, then the result would be a process indistinguishable from replication, as the gene's expression would produce the protein, which would then wake the gene in other cells.\nHis second hypothesis forms the basis of the modern prion theory, and proposed that an abnormal form of a cellular protein can convert normal proteins of the same type into its abnormal form, thus leading to replication.\nHis third hypothesis proposed that the agent could be an antibody if the antibody was its own target antigen, as such an antibody would result in more and more antibody being produced against itself. However, Griffith acknowledged that this third hypothesis was unlikely to be true due to the lack of a detectable immune response.\nFrancis Crick recognized the potential significance of the Griffith protein-only hypothesis for scrapie propagation in the second edition of his \"Central dogma of molecular biology\" (1970): While asserting that the flow of sequence information from protein to protein, or from protein to RNA and DNA was \"precluded\", he noted that Griffith's hypothesis was a potential contradiction (although it was not so promoted by Griffith). The central dogma was later revised, in part, to accommodate reverse transcription (which both Howard Temin and David Baltimore discovered in 1970).\nIn 1982, Stanley B. Prusiner of the University of California, San Francisco, announced that his team had purified the hypothetical infectious protein, which did not appear to be present in healthy hosts, though they did not manage to isolate the protein until two years after Prusiner's announcement. The protein was named a prion, for \"proteinacious infectious particle\", derived from the words protein and infection. When the prion was discovered, Griffith's first hypothesis, that the protein was the product of a normally silent gene, was favored by many. It was subsequently discovered, however, that the same protein exists in normal hosts but in different form.\nFollowing the discovery of the same protein in different form in uninfected individuals, the specific protein that the prion was composed of was named the prion protein (PrP), and Griffith's second hypothesis, that an abnormal form of a host protein can convert other proteins of the same type into its abnormal form, became the dominant theory. Prusiner was awarded the Nobel Prize in Physiology or Medicine in 1997 for his research into prions.",
+          "cos_sim_score": 0.6210995316505432,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Alpha-synuclein",
+          "title": "Alpha-synuclein",
+          "url": "https://en.wikipedia.org/wiki/Alpha-synuclein",
+          "text": "Self-replicating \"prion-like\" amyloid assemblies of alpha-synuclein have been described that are invisible to the amyloid dye Thioflavin T and that can acutely spread in neurons in vitro and in vivo. \nAntibodies against alpha-synuclein have replaced antibodies against ubiquitin as the gold standard for immunostaining of Lewy bodies. The central panel in the figure to the right shows the major pathway for protein aggregation. Monomeric \u03b1-synuclein is natively unfolded in solution but can also bind to membranes in an \u03b1-helical form. It seems likely that these two species exist in equilibrium within the cell, although this is unproven. From in vitro work, it is clear that unfolded monomer can aggregate first into small oligomeric species that can be stabilized by \u03b2-sheet-like interactions and then into higher molecular weight insoluble fibrils. In a cellular context, there is some evidence that the presence of lipids can promote oligomer formation: \u03b1-synuclein can also form annular, pore-like structures that interact with membranes, allowing small molecules to be translocated from one side of the membrane to the other through the hollow oligomer. The deposition of \u03b1-synuclein into pathological structures such as Lewy bodies is probably a late event that occurs in some neurons. On the left hand side are some of the known modifiers of this process. Electrical activity in neurons changes the association of \u03b1-synuclein with vesicles and may also stimulate polo-like kinase 2 (PLK2), which has been shown to phosphorylate \u03b1-synuclein at Ser129. Other kinases have also been proposed to be involved. As well as phosphorylation, truncation through proteases such as calpains, and nitration, probably through nitric oxide (NO) or other reactive nitrogen species that are present during inflammation, all modify synuclein such that it has a higher tendency to aggregate. The addition of ubiquitin (shown as a black spot) to Lewy bodies is probably a secondary process to deposition. On the right are some of the proposed cellular targets for \u03b1-synuclein mediated toxicity, which include (from top to bottom) ER-golgi transport, synaptic vesicles, mitochondria and lysosomes and other proteolytic machinery. In each of these cases, it is proposed that \u03b1-synuclein has detrimental effects, listed below each arrow, although at this time it is not clear if any of these are either necessary or sufficient for toxicity in neurons.\n\nProtein-protein interactions\nAlpha-synuclein has been shown to interact with\n\nDopamine transporter,\nParkin (ligase),\nPhospholipase D1,\nSNCAIP,\nTau protein.\nBeta amyloid\n\nSee also\nSynuclein\nContursi Terme - the village in Italy where a mutation in the \u03b1-synuclein gene led to a family history of Parkinson's disease\nAnti-\u03b1-synuclein drug\n\nReferences\nFurther reading\nExternal links\n Media related to Alpha-synuclein at Wikimedia Commons\nalpha-Synuclein at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nHuman SNCA genome location and SNCA gene details page  in the UCSC Genome Browser.",
+          "cos_sim_score": 0.6097965836524963,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Alpha-synuclein",
+          "title": "Alpha-synuclein",
+          "url": "https://en.wikipedia.org/wiki/Alpha-synuclein",
+          "text": "The Epstein-Barr virus has been implicated in these disorders.\nIn rare cases of familial forms of Parkinson's disease, there is a mutation in the gene coding for alpha-synuclein. Five point mutations have been identified thus far: A53T, A30P, E46K, H50Q, and G51D; however, in total, nineteen mutations in the SNCA gene have been associated with parkinsonism: A18T, A29S, A53E, A53V, E57A, V15A, T72M, L8I, V15D, M127I, P117S, M5T, G93A, E83Q, and A30G.\nIt has been reported that some mutations influence the initiation and amplification steps of the aggregation process. Genomic duplication and triplication of the gene appear to be a rare cause of Parkinson's disease in other lineages, although more common than point mutations. Hence certain mutations of alpha-synuclein may cause it to form amyloid-like fibrils that contribute to Parkinson's disease. Over-expression of human wild-type or A53T-mutant alpha-synuclein in primates drives deposition of alpha-synuclein in the ventral midbrain, degeneration of the dopaminergic system and impaired motor performance. Although the accumulation and aggregation of alpha-synuclein in most Parkinson's disease patients primarily result from posttranscriptional mechanisms, targeting its production remains a potential therapeutic approach. Research indicates that microRNA-7 and the naturally occurring small molecule quercetin can reduce alpha-synuclein levels under experimental conditions.\nCertain sections of the alpha-synuclein protein may play a role in the tauopathies.\nIn children with autism spectrum disorders, the serum levels of alpha-synuclein have been reported to be significantly higher. A correlation to higher levels of e.coli and pro-inflammatory gut microbiome in those patients and an approach through disease modifying polysaccharides has been reported in clinical pilot studies.\nA prion form of the protein alpha-synuclein may be a causal agent for the disease multiple system atrophy.",
+          "cos_sim_score": 0.5786805748939514,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}
