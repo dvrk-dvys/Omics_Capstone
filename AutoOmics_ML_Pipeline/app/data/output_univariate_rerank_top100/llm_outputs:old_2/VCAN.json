@@ -1,0 +1,229 @@
+{
+  "probe_id": "11748311_s_at",
+  "gene_symbol": "VCAN",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0523782800878923,
+  "abs_fold_change": 1.6353,
+  "score": 1.6259,
+  "probe_count": 4,
+  "probe_ids": "11748311_s_at | 11748164_a_at | 11755009_s_at | 11757783_s_at",
+  "max_score": 1.6259,
+  "mean_abs_fold_change": 1.7158,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T19:11:51",
+  "interpretation": "VCAN, or versican, is a large chondroitin sulfate proteoglycan that plays a crucial role in the extracellular matrix, influencing cell adhesion, proliferation, and migration. Its involvement in intercellular signaling and the regulation of cell motility suggests a significant role in the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), particularly in the context of vascular homeostasis and bone remodeling. The retrieved evidence indicates that VCAN is associated with skeletal system abnormalities, which aligns with the mechanisms of SONFH where vascular disruption and bone cell dysfunction lead to necrosis. However, the evidence linking VCAN directly to SONFH is limited, leading to a moderate confidence in its potential as a biomarker. Thus, while VCAN may serve as a relevant candidate for further investigation, its clinical utility as an early-detection biomarker for SONFH remains uncertain.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 3",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "VCAN is implicated in the extracellular matrix dynamics that may contribute to the pathogenesis of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "VCAN (P13611). https://www.uniprot.org/uniprotkb/P13611",
+    "VCAN (P13611-3). https://www.uniprot.org/uniprotkb/P13611-3",
+    "VCAN (P13611-2). https://www.uniprot.org/uniprotkb/P13611-2",
+    "VCAN \u2014 VCAN. https://platform.opentargets.org/target/ENSG00000038427",
+    "VCAN \u2194 Wagner disease. https://platform.opentargets.org/target/ENSG00000038427/associations",
+    "VCAN \u2194 Abnormality of the skeletal system. https://platform.opentargets.org/target/ENSG00000038427/associations",
+    "VCAN \u2194 diverticular disease. https://platform.opentargets.org/target/ENSG00000038427/associations",
+    "VCAN \u2194 Retinal dystrophy. https://platform.opentargets.org/target/ENSG00000038427/associations",
+    "VCAN \u2014 versican (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TP53 \u2014 tumor protein p53 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "VEGFA \u2014 vascular endothelial growth factor A (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TGFB1 \u2014 transforming growth factor beta 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Identifying the Potential Differentially Expressed miRNAs and mRNAs in Osteonecrosis of the Femoral Head Based on Integrated Analysis (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC7851582/",
+    "Exploring the pathogenesis of steroid-induced osteonecrosis of the femoral head co-regulated by mesenchymal stem cells and pyroptosis-related genes with the use of transcriptome (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12532964/",
+    "Analysis of the Potential Angiogenic Mechanisms of BuShenHuoXue Decoction against Osteonecrosis of the Femoral Head Based on Network Pharmacology and Experimental Validation (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC10925519/",
+    "Identification of hub genes and therapeutic drugs in osteonecrosis of the femoral head through integrated bioinformatics analysis and literature mining (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC10366127/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8926,
+    "completion_tokens": 318,
+    "total_tokens": 9244,
+    "estimated_cost_usd": 0.00153
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P13611",
+          "title": "VCAN (P13611)",
+          "url": "https://www.uniprot.org/uniprotkb/P13611",
+          "text": "Protein: Versican core protein\nFunction: May play a role in intercellular signaling and in connecting cells with the extracellular matrix. May take part in the regulation of cell motility, growth and differentiation. Binds hyaluronic acid",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P13611-3",
+          "title": "VCAN (P13611-3)",
+          "url": "https://www.uniprot.org/uniprotkb/P13611-3",
+          "text": "Protein: Isoform V2 of Versican core protein",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P13611-2",
+          "title": "VCAN (P13611-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P13611-2",
+          "text": "Protein: Isoform V1 of Versican core protein",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000038427::function",
+          "title": "VCAN \u2014 VCAN",
+          "url": "https://platform.opentargets.org/target/ENSG00000038427",
+          "text": "Function: May play a role in intercellular signaling and in connecting cells with the extracellular matrix. May take part in the regulation of cell motility, growth and differentiation. Binds hyaluronic acid.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000038427::MONDO_0007740",
+          "title": "VCAN \u2194 Wagner disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000038427/associations",
+          "text": "Disease: Wagner disease\nDescription: Wagner disease is a rare hereditary vitreoretinopathy characterized by an anomaleous vitreous associated with myopia, cataract, chorioretinal atrophy, and peripheral tractional or rhegmatogenous retinal detachment.\nAssociation score: 0.752",
+          "cos_sim_score": 0.7519984716597904,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000038427::HP_0000924",
+          "title": "VCAN \u2194 Abnormality of the skeletal system",
+          "url": "https://platform.opentargets.org/target/ENSG00000038427/associations",
+          "text": "Disease: Abnormality of the skeletal system\nDescription: An abnormality of the skeletal system.\nAssociation score: 0.575",
+          "cos_sim_score": 0.5750145910898877,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000038427::EFO_0009959",
+          "title": "VCAN \u2194 diverticular disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000038427/associations",
+          "text": "Disease: diverticular disease\nDescription: A complex disorder characterised by mucosal outpouchings (diverticulae) of the colonic wall which can become infected and inflamed leading to diverticulitis, perforation and bleeding.\nAssociation score: 0.514",
+          "cos_sim_score": 0.5140674220054801,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000038427::HP_0000556",
+          "title": "VCAN \u2194 Retinal dystrophy",
+          "url": "https://platform.opentargets.org/target/ENSG00000038427/associations",
+          "text": "Disease: Retinal dystrophy\nDescription: Retinal dystrophy is an abnormality of the retina associated with a hereditary process. Retinal dystrophies are defined by their predominantly monogenic inheritance and they are frequently associated with loss or dysfunction of photoreceptor cells as a primary or secondary event.\nAssociation score: 0.446",
+          "cos_sim_score": 0.44557073730269836,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "VCAN \u2014 versican",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: VCAN\nGene name: versican\nAliases / synonyms: CSPG2, ERVR, GHAP, PG-M, WGN, WGN1\nOrganism: Homo sapiens\nGene summary: This gene is a member of the aggrecan/versican proteoglycan family. The protein encoded is a large chondroitin sulfate proteoglycan and is a major component of the extracellular matrix. This protein is involved in cell adhesion, proliferation, proliferation, migration and angiogenesis and plays a central role in tissue morphogenesis and maintenance. Mutations in this gene are the cause of Wagner syndrome type 1. Multiple transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Aug 2009]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "VCAN",
+          "aliases": "CSPG2, ERVR, GHAP, PG-M, WGN, WGN1",
+          "gene_description": "versican"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TP53 \u2014 tumor protein p53",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TP53\nGene name: tumor protein p53\nAliases / synonyms: BCC7, BMFS5, LFS1, P53, TRP53\nOrganism: Homo sapiens\nGene summary: This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TP53",
+          "aliases": "BCC7, BMFS5, LFS1, P53, TRP53",
+          "gene_description": "tumor protein p53"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "VEGFA \u2014 vascular endothelial growth factor A",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: VEGFA\nGene name: vascular endothelial growth factor A\nAliases / synonyms: L-VEGF, MVCD1, VEGF, VPF\nOrganism: Homo sapiens\nGene summary: This gene is a member of the PDGF/VEGF growth factor family. It encodes a heparin-binding protein, which exists as a disulfide-linked homodimer. This growth factor induces proliferation and migration of vascular endothelial cells, and is essential for both physiological and pathological angiogenesis. Disruption of this gene in mice resulted in abnormal embryonic blood vessel formation. This gene is upregulated in many known tumors and its expression is correlated with tumor stage and progression. Elevated levels of this protein are found in patients with POEMS syndrome, also known as Crow-Fukase syndrome. Allelic variants of this gene have been associated with microvascular complications of diabetes 1 (MVCD1) and atherosclerosis. Alternatively spliced transcript variants encoding different...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "VEGFA",
+          "aliases": "L-VEGF, MVCD1, VEGF, VPF",
+          "gene_description": "vascular endothelial growth factor A"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TGFB1 \u2014 transforming growth factor beta 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TGFB1\nGene name: transforming growth factor beta 1\nAliases / synonyms: CAEND1, CED, DPD1, IBDIMDE, LAP, TGF-beta1, TGFB, TGFbeta\nOrganism: Homo sapiens\nGene summary: This gene encodes a secreted ligand of the TGF-beta (transforming growth factor-beta) superfamily of proteins. Ligands of this family bind various TGF-beta receptors leading to recruitment and activation of SMAD family transcription factors that regulate gene expression. The encoded preproprotein is proteolytically processed to generate a latency-associated peptide (LAP) and a mature peptide, and is found in either a latent form composed of a mature peptide homodimer, a LAP homodimer, and a latent TGF-beta binding protein, or in an active form consisting solely of the mature peptide homodimer. The mature peptide may also form heterodimers with other TGFB family members. This encoded protein regulates cell proliferation, differentiation and growth, and can modulate expression and activation...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TGFB1",
+          "aliases": "CAEND1, CED, DPD1, IBDIMDE, LAP, TGF-beta1, TGFB, TGFbeta",
+          "gene_description": "transforming growth factor beta 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::7851582",
+          "title": "Identifying the Potential Differentially Expressed miRNAs and mRNAs in Osteonecrosis of the Femoral Head Based on Integrated Analysis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7851582/",
+          "text": "Introduction\nOsteonecrosis of the femoral head is a disabling and progressive chronic disease, which leads to femoral head collapse and further total hip arthroplasty.1,2 It is estimated that the age range of about 75% of patients is from 30\u201360 years old.3 Pain is one of the common clinical symptoms of osteonecrosis of the femoral head.4 However, most patients with a lesion less than 30% of the femoral head are initially asymptomatic.5 Malizos6,7 and Zalavras and Lieberman found that osteocytes death and bone marrow cells was the main characteristic of the early stages of osteonecrosis of the femoral head. In the next moment, the repair reaction of necrotic bone is initiated. During this process, the imbalance between bone resorption and bone reformation leads to structural damage of the femoral head, among which there is a significant degeneration and cracking of the hip articular cartilage, which accelerates the development of osteonecrosis of the femoral head.8,9\nThe pathogenic mechanism of osteonecrosis of the femoral head is complex. Kerachian et al10 found that local microvascular thrombosis resulted in decreasing blood flow in the femoral head. It was pointed out that fibroblast growth factor 2 (FGF2), insulin-like growth factor 1 (IGF1), SRY-box transcription factor 9 (SoX9), and collagen type ii \u03b11 affected the pathogenesis of osteonecrosis of the femoral head.11 In addition, several risks, such as the trauma, steroids, smoking, alcoholism, irradiation/chemotherapy, clotting disturbances, hyperlipidemia, hyperviscosity, autoimmune diseases, Legg-Calve-Perthes diseases, and genetic factors are possible causes of osteonecrosis of the femoral head.12\u201322\nThe incidence of osteonecrosis of the femoral head is on the rise, in spite of various research efforts and trials. Therefore, understanding the pathophysiology of the disease and its progression is urgently needed. Interestingly, miRNAs play roles in targeting mRNAs, and regulate diverse biological processes in bones, such as osteoblasts, osteoclasts differentiation, and bone programming.23\u201326 In this study, we performed the differentially expression analysis of miRNA and mRNA in osteonecrosis of the femoral head, which may provide a novel field in understanding the pathological mechanism of osteonecrosis of the femoral head.\nMaterials and Methods\nDatasets\nThe miRNA and mRNA expression profile was downloaded from the Gene Expression Omnibus database (GEO) dataset. The keywords of ((\u201cfemur head\u201d [MeSH Terms] OR femoral head [All Fields]) AND (\u201cnecrosis\u201d [MeSH Terms] OR necrosis [All Fields])) AND \u201cgse\u201d [Filter] was used to retrieve related datasets. According to above screening criteria, one miRNA dataset (GSE89587, involving ten cases and seven normal controls) and one mRNA dataset (GSE74089, involving four cases and four normal controls) were finally selected.\nIdentification of Differentially Expressed miRNAs and mRNAs\nFirstly, the raw data of miRNAs and mRNAs was preprocessed as follows: the probes corresponding to multiple miRNAs/mRNAs were removed; and the miRNAs/mRNAs corresponding to multiple probes were left with only the one with the highest average expression. In this study, the identification method of differentially expressed miRNAs and mRNAs was referred to previous studies.27,28 The screening criteria of differentially expressed miRNAs and mRNAs was, respectively, FDR<0.05, |log2FC|>3, and FDR<0.05, |log2FC|>1.\nCorrelation Analysis Between miRNAs and mRNAs\nIn this study, miRWalk (http://mirwalk.umm.uni-heidelberg.de/) was used to predict targeted mRNAs of miRNAs. The establishment of a miRNA-target regulatory network was visualized using Cytoscape software.\nFunctional Enrichment of mRNAs\nIn order to understand the biological function of the targeted differentially expressed mRNAs of differentially expressed miRNAs, we performed functional analysis via GeneCodis3 software. FDR<0.05 was set as the criterion for selecting significantly enriched functional terms.\nIn vitro Validation of miRNAs and Targeted mRNAs",
+          "cos_sim_score": 0.6573201417922974,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12532964",
+          "title": "Exploring the pathogenesis of steroid-induced osteonecrosis of the femoral head co-regulated by mesenchymal stem cells and pyroptosis-related genes with the use of transcriptome",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12532964/",
+          "text": "Introduction\nSteroid induced osteonecrosis of the femoral head (SONFH) is a severe skeletal disorder, and is usually attributed to prolonged and/or high-dose use of steroid drugs [1, 2]. Steroids are a class of drugs that have been extensively used for many diseases, including but not limited to rheumatoid arthritis, autoimmune diseases and transplant rejection [3, 4]. SONFH poses a serious threat to human health, particularly to the individuals aged 30\u201350\u00a0years. In the absence of timely and effective therapy, up to 80% of the patients diagnosed with SONFH will undergo the collapse of the femoral within 1\u20134\u00a0years, for which artificial joint replacement is required [5, 6]. SONFH usually presents as hip pain, which may spread to the thighs and knees as the disease progresses, resulting in symptoms, such as limited movement, abnormal gait, and muscle atrophy [7]. It has been identified that the majority of SONFH patients have a history of the use of hormones, including glucocorticoids [8], which may affect the vascular homeostasis and bone cell function of the femoral head in various ways. Regarding vascular homeostasis, it is recognized as a critical element in the pathogenesis of SONFH. Specifically, the use of hormones has been found to trigger vasoconstriction and microcirculation disorders, resulting in insufficient blood supply to the femoral head; moreover, the use of hormones causes the formation of blood clots, further aggravating the blood supply. All such vascular disturbances cause ischemia and hypoxia of the femoral head, ultimately resulting in osteonecrosis [3]. While, for the bone cell function, it may be directed affected by the use of hormones, and studies have shown that the use of hormones caused increased osteocyte apoptosis, leading to the destruction of bone tissue and osteonecrosis [9, 10]. Furthermore, hormones may inhibit the osteogenic function of osteocytes, leading to osteoporosis and damaged structure of the femoral head [11]. Other than the use of hormones, the development of SONFH may also related to genetic factors, such as vascular endothelial growth factor and nitric oxide, as well as behaviors, such as alcoholism and smoking and physical conditions like obesity [12, 13]. The treatment of SONFH includes both operative and nonoperative treatments. Nonoperative treatments include activity restriction, physical therapy, and medication, while operative treatment includes bone reconstruction, such as femoral head replacement surgery [14]. Although SONFH is a serious disease, its early diagnosis and treatment are conducive to the significant improvement of improve patient outcomes. Thus, it is of great value to identify the biomarkers in the early stage of SONFH.\nMesenchymal stem cells (MSCs) are multipotent stem cells that able to self-renew and present multilineage differentiation. Under normal circumstances, MSCs are involved in bone repair and regeneration [15]. However, some studies have shown that dysplasia of adipogenesis and osteogenic differentiation of MSCs is a contributing factor to SONFH [16]. Pyroptosis is an inflammatory cell death caused by severe cell injury, ischemia and/or hypoxia [9]. Pyroptosis-related genes are associated with cell death by regulating apoptosis signaling pathway, inflammatory response and cell cycle, etc. It has been indicated an important part of pyroptosis in the formation and development of necrotic bone tissue during the occurrence of SONFH, and for which 10 pyroptosis-related genes have been identified as potential key genes of SONFH and thus are of great value for diagnosis [5]. Although studies have demonstrated that pyroptosis and MSCs work together in bone degenerative diseases, Huang Guanrui et al. protected the function of MSCs of intervertebral disc by inhibiting the pyroptosis of intervertebral disc cells, thereby improving the therapeutic effect of intervertebral disc degeneration [17]. However, there are no reports on the genes related to both MSCs and pyroptosis in SONFH. Therefore, understanding the association between SONFH and MSC-related genes (MSC-RGs) and pyroptosis-related genes (PRGs) has important clinical and biological significance.",
+          "cos_sim_score": 0.6201995015144348,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::7851582",
+          "title": "Identifying the Potential Differentially Expressed miRNAs and mRNAs in Osteonecrosis of the Femoral Head Based on Integrated Analysis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7851582/",
+          "text": "Hsa-let-7a-5p is down-regulated in osteogenic differentiation, while up-regulated during osteoclastogenesis, which indicates the role of hsa-let-7a-5p in the bone imbalance.38\u201340 Under mechanical tension, hsa-let-7a-5p is remarkably increased in cartilage endplate chondrocytes.41 In this study, we found that hsa-let-7a-5p was up-regulated in osteonecrosis of the femoral head. Furthermore, a regulator of calcineurin 2 (RCAN2) and interleukin 9 receptor (IL9R) were down-regulated and targeted by hsa-let-7a-5p. It is worth mentioning that RCAN2 and IL9R could be considered as diagnostic biomarkers for osteonecrosis of the femoral head. RCAN2, an angiogenesis related gene, is transcribed activation by vascular endothelial growth factor (VEGF).42\u201345 The expression of RCAN2 is negatively correlated with cartilage proliferation and differentiation.46 It is reported that disruption of RCAN2 could lead to reducing bone mass, which is related to increased osteoclast function and reduced osteoblast function.47 IL9R is associated with hematopoietic cell lineage.48 Our result indicated that hsa-let-7a-5p and its target (RCAN2 and IL9R) could be involved in osteonecrosis of the femoral head.\nDeregulation of hsa-miR-28-5p is related to rheumatic diseases, such as axial spondyloarthritis and rheumatoid arthritis.49,50 Herein, we first found that hsa-miR-28-5p was up-regulated in osteonecrosis of the femoral head. In addition, the down-regulated RELA proto-oncogene, NF-kB subunit (RELA, also called p65) was one of the targets of hsa-miR-28-5p. It is reported that RELA is the most potent transcriptional factor of hypoxic induction factor 2 (HIF2) that regulates chondrocyte differentiation and cartilage degradation.51 Lacking or deletion of RELA inhibits the expression of cartilage catabolic factors such as matrix metalloproteinases 9 (MMP9), SRY-box transcription factor 9 (SOX9), nitric oxide synthase 2 (NOS2), and cyclooxygenase 2 (COX2) in chondrocytes, which results in reduced bone loss and accelerated cartilage degeneration.52\u201357 In addition, RELA is regarded as an angiogenesis modulating agent.58 It is suggested that RELA may be involved in cartilage degeneration of osteonecrosis of the femoral head under that regulation of hsa-miR-28-5p.\nPrevious studies on hsa-miR-3200-5p in orthopedic disease are very rare, and only a recent report showed significantly higher expression of hsa-miR-3200-5p in the osteosarcoma.59 In our study, we found that the expression level of hsa-miR-3200-5p was increased in osteonecrosis of the femoral head. Moreover, down-regulated reelin (RELN) was targeted by hsa-miR-3200-5p. It is noted that RELN had a diagnostic value for osteonecrosis of the femoral head. RELN, expressed in osteoblast lineage cells, is considered as a stromal cell-specific and hematopoietic cell-lineage marker.60 Clinically, RELN is a potential molecular target candidate for diagnosis and therapy of rheumatoid arthritis.61 Our result indicated that hsa-miR-3200-5p and RELN may play a critical role in osteonecrosis of the femoral head.",
+          "cos_sim_score": 0.5346275568008423,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10925519",
+          "title": "Analysis of the Potential Angiogenic Mechanisms of BuShenHuoXue Decoction against Osteonecrosis of the Femoral Head Based on Network Pharmacology and Experimental Validation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10925519/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a pathological process that occurs in the femoral head and results from an interruption of the blood supply following an ischemic injury and is an orthopedic disease with a very high disability rate.\n1\n, \n2\n In China, the overall prevalence of non\u2010traumatic ONFH is 0.725%, with a cumulative total of about 8.12 million cases of non\u2010traumatic ONFH patients over 15\u2009years of age, of which the prevalence is significantly higher in men than in women (1.02% vs. 0.51%).\n1\n, \n2\n, \n3\n Over 80% of non\u2010traumatic osteonecrosis cases are caused by corticosteroids or alcohol, decompression sickness, systemic lupus erythematosus, sickle cell anemia, and so forth, are also risk factors for ONFH that cannot be ignored.\n4\n, \n5\n To date, there is no specific drug that can effectively prevent the progression of ONFH. Total hip arthroplasty (THA) is the final choice for patients with advanced ONFH, however, this faces problems such as distant revision, making it crucial to prevent and control ONFH in the early and mid\u2010term stages.\n4\nIn recent years, the \u201cvascular hypothesis\u201d has been gradually recognized in the pathogenesis of ONFH. An imbalance in the vascular homeostasis of the femoral head can cause impaired blood supply to the femoral head, which can affect the delivery of oxygen and nutrients as well as the removal of metabolites, thereby causing or aggravating osteonecrosis.\n6\n, \n7\n, \n8\n Glucocorticosteroid use and excessive alcohol consumption reduce vascular perfusion in the femoral head through mechanisms such as endothelial injury and microvascular thrombosis, and restoration of vascular perfusion is an important factor in determining the progression of ONFH.\n4\n, \n9\n Consequently, exploring therapeutic approaches to promote femoral angiogenesis would facilitate the design of more effective ONFH therapeutic strategies.\nIn China, traditional Chinese medicine (TCM) is an integral part of the medical system and is widely used in clinical practice due to its unique system of diagnosis and treatment and holistic concept. Numerous studies have shown that Chinese medicine monomers and compound can promote the reconstruction and regeneration of femoral head blood vessels as well as the repair of femoral head osteonecrosis through modulating the \u201costeogenic\u2010angiogenic coupling.\u201d\n10\n, \n11\n BSHX has the pharmacological effects of tonifying the kidney and strengthening the bones, activating blood circulation and removing blood stasis, and has been proved to have good efficacy in the early and middle stage of ONFH patients with \u201cdeficiency of kidney qi, stagnation of qi and blood stasis\u201d in numerous clinical practices.\n12\n BSHX consist of 10 herbs, comprising Epimedium sagittatum (Siebold & Zucc.) Maxim. (Chinese name: Yinyanghuo, YYH), Salvia miltiorrhiza Bunge (Chinese name: Danshen, DS), Eucommia ulmoides Oliv. (Chinese name: Duzhong, DZ), Conioselinum anthriscoides \u201cChuanxiong\u201d (Chinese name: Chuanxiong, CX), Paeonia lactiflora Pall. (Chinese name: Baishao, BS), Achyranthes bidentata Blume (Chinese name: Niuxi, NX), Smilax glabra Roxb. (Fuling, FL), buckhorn gelatin (Lujiaojiao, LJJ), Cyperus rotundus L. (Xiangfu, XF), and Glycyrrhiza glabra L. (Gancao, GC). The English name of gelatin of buckhorn was verified using the Batman\u2010TCM database (http://bionet.ncpsb.org.cn/batman-tcm/), and the remaining nine herbs were fully verified using the \u201cMedicinal Plant Name Services\u201d key search tool (http://mpns.kew.org). Accumulating evidence has demonstrated that kidney tonifying and blood activating herbs can promote angiogenesis by mediating signaling pathways such as VEGFR2/MEK/ERK, Src/FAK and PI3K/AKT/Ras/MAPK, and play a critical role in angiogenesis and vascular repair.\n13\n, \n14\n, \n15",
+          "cos_sim_score": 0.5173015594482422,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10366127",
+          "title": "Identification of hub genes and therapeutic drugs in osteonecrosis of the femoral head through integrated bioinformatics analysis and literature mining",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10366127/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a multifactorial disease with an unknown etiology, characterized by loss of integrity of the subchondral bone1. It mainly affects men aged 30\u201350 years and involves more and more youngers1,2. Despite the identification of corticosteroid use, alcohol, sickle-cell disease, and trauma as the major risk factors for ONFH, its pathogenesis remains incompletely understood2,3. Surgery is the only effective way to treat ONFH at present4. In the USA, approximately 10% of hip replacements are due to ONFH, and in the UK, ONFH is the third most common indication for total hip replacements in people under 50, which causes a heavy socioeconomic burden1,4. Effective drug therapies have not been established5. Therefore, identifying novel biomarkers and therapeutic drugs involved in the ONFH is of great significance in exploring efficient treatment strategies.\nOver the past two decades, few researchers have focused on exploring the mechanism of ONFH at the gene level6. Abnormalities in some genes, such as plasminogen-activating inhibitor-1 and nitric oxide synthase 3, have been proven to weaken the osteogenic differentiation capacity of bone marrow mesenchymal stem cells or disrupt angiogenesis, leading to the collapse of the femoral head surface7,8. However, the specific molecular mechanism of ONFH has not yet been clarified, and drug discovery has had little success. Recently, gene chips and high-throughput sequencing technologies have been widely used in the screening of disease-causing genes and have achieved practical and reliable results9. A new drug prediction method, drug-gene-disease triangulation based on literature mining, has been confirmed to be robust and reliable for identifying new drug candidates10.\nIn this study, we analyzed two gene expression profiles (Table 1) extracted from the National Center for Biotechnology Information Gene Expression Omnibus (GEO) database, which is a free global database of sequencing results. DEGs were identified by using the online tool GEO2R. Subsequently, the function of DEGs was determined by the Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analysis. With the help of Cytoscape, ten hub genes were selected and then validated by ROC analysis. Finally, the targeted drugs for ONFH were identified through the Drug-Gene Interaction Database (DGIdb) and cross-validated by integrated literature mining. Our study figured out the drug-gene-disease correlation to generate new insights into the prevention and treatment of ONFH.Table 1Detailed information on the GEO microarray profiles.ProfileOrganismSample sourceTechnology typeCasesControlsPlatformGSE123568Homo sapiensPeripheral serumIn situ oligonucleotide3010GPL15207GSE74089Homo sapiensHip cartilageIn situ oligonucleotide44GPL13497\nTable 1\nDetailed information on the GEO microarray profiles.\nResults\nIdentification of DEGs in ONFH",
+          "cos_sim_score": 0.503982663154602,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

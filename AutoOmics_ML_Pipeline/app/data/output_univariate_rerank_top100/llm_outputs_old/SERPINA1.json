@@ -1,0 +1,161 @@
+{
+  "probe_id": "11721454_a_at",
+  "gene_symbol": "SERPINA1",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.1605887658420652,
+  "abs_fold_change": 1.3668,
+  "score": 1.3633,
+  "probe_count": 1,
+  "probe_ids": "11721454_a_at",
+  "max_score": 1.3633,
+  "mean_abs_fold_change": 1.3668,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T02:19:15",
+  "interpretation": "SERPINA1 encodes the protein alpha-1-antitrypsin (A1AT), which is a serine protease inhibitor primarily targeting neutrophil elastase. This protein plays a crucial role in protecting tissues from proteolytic damage, particularly in the lungs. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the inflammatory response triggered by steroid use may lead to increased protease activity, potentially exacerbating tissue damage and necrosis. While there is no direct evidence linking SERPINA1 to SONFH, its role in inflammation and tissue protection suggests a plausible connection. The evidence retrieved primarily supports its general biological function rather than a specific association with SONFH, leading to a moderate confidence in its relevance as a biomarker for early detection of this condition.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "SERPINA1 may be involved in the inflammatory processes associated with Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), but direct evidence linking it to this condition is lacking.",
+  "citations": [
+    "SERPINA1 (P01009). https://www.uniprot.org/uniprotkb/P01009",
+    "SERPINA1 (P01009-2). https://www.uniprot.org/uniprotkb/P01009-2",
+    "SERPINA1 (P01009-3). https://www.uniprot.org/uniprotkb/P01009-3",
+    "SERPINA1 \u2014 SERPINA1. https://platform.opentargets.org/target/ENSG00000197249",
+    "SERPINA1 \u2194 Alpha-1-antitrypsin deficiency. https://platform.opentargets.org/target/ENSG00000197249/associations",
+    "SERPINA1 \u2194 chronic obstructive pulmonary disease. https://platform.opentargets.org/target/ENSG00000197249/associations",
+    "SERPINA1 \u2194 alpha 1-antitrypsin deficiency. https://platform.opentargets.org/target/ENSG00000197249/associations",
+    "SERPINA1 \u2194 cholelithiasis. https://platform.opentargets.org/target/ENSG00000197249/associations",
+    "SERPINA2. https://en.wikipedia.org/wiki/SERPINA2",
+    "Alpha-1 antitrypsin deficiency. https://en.wikipedia.org/wiki/Alpha-1_antitrypsin_deficiency",
+    "Alpha-1 antitrypsin. https://en.wikipedia.org/wiki/Alpha-1_antitrypsin",
+    "Chronic obstructive pulmonary disease. https://en.wikipedia.org/wiki/Chronic_obstructive_pulmonary_disease"
+  ],
+  "token_usage": {
+    "prompt_tokens": 6794,
+    "completion_tokens": 245,
+    "total_tokens": 7039,
+    "estimated_cost_usd": 0.001166
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P01009",
+          "title": "SERPINA1 (P01009)",
+          "url": "https://www.uniprot.org/uniprotkb/P01009",
+          "text": "Protein: Alpha-1-antitrypsin\nFunction: Inhibitor of serine proteases. Its primary target is elastase, but it also has a moderate affinity for plasmin and thrombin. Irreversibly inhibits trypsin, chymotrypsin and plasminogen activator. The aberrant form inhibits insulin-induced NO synthesis in platelets, decreases coagulation time and has proteolytic activity against insulin and plasmin Reversible chymotrypsin inhibitor. It also inhibits elastase, but not trypsin. Its major physiological function is the protection of the lower respiratory tract against proteolytic destruction by human leukocyte elastase (HLE)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P01009-2",
+          "title": "SERPINA1 (P01009-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P01009-2",
+          "text": "Protein: Isoform 2 of Alpha-1-antitrypsin",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P01009-3",
+          "title": "SERPINA1 (P01009-3)",
+          "url": "https://www.uniprot.org/uniprotkb/P01009-3",
+          "text": "Protein: Isoform 3 of Alpha-1-antitrypsin",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000197249::function",
+          "title": "SERPINA1 \u2014 SERPINA1",
+          "url": "https://platform.opentargets.org/target/ENSG00000197249",
+          "text": "Function: Inhibitor of serine proteases. Its primary target is elastase, but it also has a moderate affinity for plasmin and thrombin. Irreversibly inhibits trypsin, chymotrypsin and plasminogen activator. The aberrant form inhibits insulin-induced NO synthesis in platelets, decreases coagulation time and has proteolytic activity against insulin and plasmin.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197249::Orphanet_60",
+          "title": "SERPINA1 \u2194 Alpha-1-antitrypsin deficiency",
+          "url": "https://platform.opentargets.org/target/ENSG00000197249/associations",
+          "text": "Disease: Alpha-1-antitrypsin deficiency\nAssociation score: 0.764",
+          "cos_sim_score": 0.764279219769394,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197249::EFO_0000341",
+          "title": "SERPINA1 \u2194 chronic obstructive pulmonary disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000197249/associations",
+          "text": "Disease: chronic obstructive pulmonary disease\nDescription: A group of disorders affecting the bronchi and the lung parenchyma. It is characterized by chronic and irreversible obstruction of the airflow. It includes chronic bronchitis and pulmonary emphysema.\nAssociation score: 0.678",
+          "cos_sim_score": 0.6780030751826506,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197249::MONDO_0013282",
+          "title": "SERPINA1 \u2194 alpha 1-antitrypsin deficiency",
+          "url": "https://platform.opentargets.org/target/ENSG00000197249/associations",
+          "text": "Disease: alpha 1-antitrypsin deficiency\nDescription: Alpha-1-antitrypsin deficiency is a hereditary disease that develops in adulthood and is characterized by chronic liver disorders (cirrhosis), respiratory disorders (emphysema), and rarely panniculitis.\nAssociation score: 0.604",
+          "cos_sim_score": 0.6037825997560741,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197249::EFO_0004799",
+          "title": "SERPINA1 \u2194 cholelithiasis",
+          "url": "https://platform.opentargets.org/target/ENSG00000197249/associations",
+          "text": "Disease: cholelithiasis\nDescription: The presence of crystallized deposits forming in the gallbladder or biliary tree, primarily composed of cholesterol, bilirubin, and bile.\nAssociation score: 0.556",
+          "cos_sim_score": 0.5560958760719121,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::SERPINA2",
+          "title": "SERPINA2",
+          "url": "https://en.wikipedia.org/wiki/SERPINA2",
+          "text": "Serpin peptidase inhibitor, clade A (alpha-1 antiproteinase, antitrypsin), member 2 is a protein that in humans is encoded by the SERPINA2 gene. Serine peptidase inhibitor, clade A member 2 belongs to the member of serine family of proteins which have a functional activity of inhibiting serine proteases.\n\nDiscovery\nSERPINA2 was known as pseudogenes as it had a very similar structure and function to SERPINA1. During the cloning characterisation of alpha 1- antitrypsin like gene, it was discovered that SERPINA2 did not have any promoter but did contain substantial homology to SERPINA1 gene sequence.\n\nGene location\nSERPINA2 is located at 14q32.13.\n\nGene expression and localisation\nExtracellular predictions of SERPINs and common domain clades show that ER localisation of SERPINA2 are most likely be more, these common ER motifs indicates their localisation are most likely to be in the ER.\n\nStructure\nPopulation studies indicate that this gene is polymorphic. Deletions, frameshift mutations, and a critical start codon mutation (ATG to ATA) have been found in some populations, as well as an allele that can encode a functional protein. This gene may be an evolving pseudogene. The reference genome contains the start codon mutation and has a coding region deletion. A three-dimensional model of SERPINA2 was created using the non-deleted form of crystal structure, which is homologous with the SERPINA1 protein. The model was created using swissmodel in EXPASY, and has shown that SERPINA2 preserves a SERPIN reactive centre loop which is most compatible with protease inhibitory activity. The consensus sequence surrounding the reactive centre loop have diverged considerably so that now it contains tryptophan sarin motifs instead of the methionine serine motif.\n\nFunction\nSERPINA2 was previously identified as pseudogene; however, recently there have been new evidence which specifies that SERPINA2 produces an active transcript that is responsible for encoding protein located in the endoplasmic reticulum. A detailed study of the SERPINA2 gene across multiple ethnic groups have relieved that with the addition of SERPINA2 gene therein a haplotype characterisation by partial deletion which has patterns suggesting positive selection of loss of function of SERPINA2 protein.\nSERPINA2 studies have shown different results regarding the extent of sequence degeneration it can undergo. Bao et al. (1988) describes in his studies that sequence with RNA splice sites are preserved in SERPINA2, and when expressed, it encodes a new secretory protein (SERPIN) with different substrate specificity. These studies with SERPINA2 in humans have concluded that recent positive selection is favoured by the loss of SERPINA2 function and  pseudogenization. SERPINA2 genes are mostly expressed in leukocytes and testes which gives a residual expression in liver. SERPINA2 have been linked with ongoing adaptive process linked with advantages in the role of fertility and host pathogen interactions.\n\nMutations\nA critical mutation present in the start codon and an 2kb deletion over exon IV and part of exon V. This deletion in the start codon occurs at a frequency of 30%. Studies with SERPINA2 in vitro and in vivo have shown that it expresses stable proteins with n-linked glycosylation with a molecular weight of 52kDa and compatible with regular SERPINs\n\nDisease associated\nSERPINA2 is a member of SERPIN family, which are known as protein coding genes. A disease associated with this gene is emphysema, due to aat protein deficiency. SERPINA2 has similar function to SERPINA1 and is related to the function of serine type peptidase inhibitor activity.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.49168068170547485,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Alpha-1 antitrypsin deficiency",
+          "title": "Alpha-1 antitrypsin deficiency",
+          "url": "https://en.wikipedia.org/wiki/Alpha-1_antitrypsin_deficiency",
+          "text": "Genetics\nSerpin peptidase inhibitor, clade A, member 1 (SERPINA1) is the gene that encodes the protein alpha-1 antitrypsin.  SERPINA1 has been localized to chromosome 14q32. Over 75 mutations of the SERPINA1 gene have been identified, many with clinically significant effects. The most common cause of severe deficiency, PiZ, is a single base-pair substitution leading to a glutamic acid to lysine mutation at position 342 (dbSNP: rs28929474), while PiS is caused by a glutamic acid to valine mutation at position 264 (dbSNP: rs17580). Other rarer forms have been described.\n\nPathophysiology\nA1AT is a glycoprotein mainly produced in the liver by hepatocytes, and, in some quantity, by enterocytes, monocytes, and macrophages. In a healthy lung, it functions as an inhibitor against neutrophil elastase, a neutral serine protease that controls lung elastolytic activity which stimulates mucus secretion and CXCL8 release from epithelial cells that perpetuate the inflammatory state. With A1AT deficiency, neutrophil elastase can disrupt elastin and components of the alveolar wall of the lung that may lead to emphysema, and hypersecretion of mucus that can develop into chronic bronchitis. Both conditions are the makeup of chronic obstructive pulmonary disease (COPD).\nNormal blood levels of alpha-1 antitrypsin may vary with analytical method but are typically around 1.0-2.7 g/L.  In individuals with PiSS, PiMZ and PiSZ genotypes, blood levels of A1AT are reduced to between 40% and 60% of normal levels; this is usually sufficient to protect the lungs from the effects of elastase in people who do not smoke. However, in individuals with the PiZZ genotype, A1AT levels are less than 15% of normal, and they are likely to develop panlobular emphysema at a young age. Cigarette smoke is especially harmful to individuals with A1AD. In addition to increasing the inflammatory reaction in the airways, cigarette smoke directly inactivates alpha-1 antitrypsin by oxidizing essential methionine residues to sulfoxide forms, decreasing the enzyme activity by a factor of 2,000.\nWith A1AT deficiency, the pathogenesis of the lung disease is different from that of the liver disease, which is caused by the accumulation of abnormal A1AT proteins in the liver, resulting in liver damage. As such, lung disease and liver disease of A1AT deficiency appear unrelated, and the presence of one does not appear to predict the presence of the other. Between 10% and 15% of people with the PiZZ genotype will develop liver fibrosis or liver cirrhosis, because the A1AT is not secreted properly and therefore accumulates in the liver. The mutant Z form of A1AT protein undergoes inefficient protein folding (a physical process where a protein chain achieves its final conformation). 85 percent of the mutant Z form are unable to be secreted and remain in the hepatocyte.  Nearly all liver disease caused by A1AT is due to the PiZZ genotype, although other genotypes involving different combinations of mutated alleles (compound heterozygotes) may also result in liver disease. A liver biopsy in such cases will reveal PAS-positive, diastase-resistant inclusions within hepatocytes. Unlike glycogen and other mucins which are diastase sensitive (i.e., diastase treatment disables PAS staining), A1AT deficient hepatocytes will stain with PAS even after diastase treatment - a state thus referred to as \"diastase resistant\". The accumulation of these inclusions or globules is the main cause of liver injury in A1AT deficiency. However, not all individuals with PiZZ genotype develop liver disease (incomplete penetrance), despite the presence of accumulated mutated protein in the liver. Therefore, additional factors (environmental, genetic, etc.) likely influence whether liver disease develops.",
+          "cos_sim_score": 0.42662638425827026,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Alpha-1 antitrypsin deficiency",
+          "title": "Alpha-1 antitrypsin deficiency",
+          "url": "https://en.wikipedia.org/wiki/Alpha-1_antitrypsin_deficiency",
+          "text": "Alpha-1 antitrypsin deficiency (A1AD or AATD) is a genetic disorder that may result in lung disease or liver disease. Onset of lung problems is typically between 20 and 50 years of age. This may result in shortness of breath, wheezing, or an increased risk of lung infections. Complications may include chronic obstructive pulmonary disease (COPD), cirrhosis, neonatal jaundice, or panniculitis.\nA1AD is due to a mutation in the SERPINA1 gene that results in not enough alpha-1 antitrypsin (A1AT). Risk factors for lung disease include tobacco smoking and environmental dust. The underlying mechanism involves unblocked neutrophil elastase and buildup of abnormal A1AT in the liver. It is autosomal co-dominant, meaning that one defective allele tends to result in milder deficiency than two defective alleles; for example, carriers with an MS (or SS) allele combination usually produce enough alpha-1 antitrypsin to protect the lungs, while those with MZ alleles have a slightly increased risk of impaired lung or liver function. The diagnosis is suspected based on symptoms and confirmed by blood tests or genetic tests.\nTreatment of lung disease may include bronchodilators, inhaled steroids, and, when infections occur, antibiotics. Intravenous infusions of the A1AT protein or in severe disease lung transplantation may also be recommended. In those with severe liver disease liver transplantation may be an option. Avoiding smoking is recommended. Vaccination for influenza, pneumococcus, and hepatitis is also recommended. Life expectancy among those who smoke is 50 years while among those who do not smoke it is almost normal.\nThe condition affects about 1 in 2,500 people of European descent. Severe deficiency occurs in about 1 in 5,000. In Asians it is uncommon. About 3% of people with COPD are believed to have the condition. Alpha-1 antitrypsin deficiency was first described in the 1960s.\n\nSigns and symptoms\nIndividuals with A1AD may develop emphysema, or chronic obstructive pulmonary disease during their thirties or forties even without a history of smoking, though smoking greatly increases the risk. Symptoms may include shortness of breath (on exertion and later at rest), wheezing, and sputum production. Symptoms may resemble recurrent respiratory infections or asthma.\nA1AD may cause several manifestations associated with liver disease, which include impaired liver function and cirrhosis. In newborns, alpha-1 antitrypsin deficiency can result in early onset jaundice followed by prolonged jaundice. Between 3% and 5% of children with ZZ mutations develop life-threatening liver disease, including liver failure. A1AD is a leading reason for liver transplantation in newborns. In newborns and children, A1AD may cause jaundice, poor feeding, poor weight gain, hepatomegaly and splenomegaly.\n\nApart from COPD and chronic liver disease, \u03b11-antitrypsin deficiency has been associated with necrotizing panniculitis (a skin condition) and with granulomatosis with polyangiitis in which inflammation of the blood vessels may affect a number of organs but predominantly the lungs and the kidneys.\n\nGenetics\nSerpin peptidase inhibitor, clade A, member 1 (SERPINA1) is the gene that encodes the protein alpha-1 antitrypsin.  SERPINA1 has been localized to chromosome 14q32. Over 75 mutations of the SERPINA1 gene have been identified, many with clinically significant effects. The most common cause of severe deficiency, PiZ, is a single base-pair substitution leading to a glutamic acid to lysine mutation at position 342 (dbSNP: rs28929474), while PiS is caused by a glutamic acid to valine mutation at position 264 (dbSNP: rs17580). Other rarer forms have been described.",
+          "cos_sim_score": 0.20362603664398193,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Alpha-1 antitrypsin",
+          "title": "Alpha-1 antitrypsin",
+          "url": "https://en.wikipedia.org/wiki/Alpha-1_antitrypsin",
+          "text": "Alpha-1 antitrypsin or \u03b11-antitrypsin (A1AT, \u03b11AT, A1A, or AAT) is a protein belonging to the serpin superfamily. It is encoded in humans by the SERPINA1 gene. A protease inhibitor, it is also known as alpha1\u2013proteinase inhibitor (A1PI) or alpha1-antiproteinase (A1AP) because it inhibits various proteases (not just trypsin).  As a type of enzyme inhibitor, it protects tissues from enzymes of inflammatory cells, especially neutrophil elastase.\nWhen the blood contains inadequate or defective A1AT (as in alpha-1 antitrypsin deficiency), neutrophil elastase can excessively break down elastin, leading to the loss of elasticity in the lungs. This results in respiratory issues, such as chronic obstructive pulmonary disease, in adults. Normally, A1AT is produced in the liver and enters the systemic circulation. However, defective A1AT may accumulate in the liver, potentially causing cirrhosis in both adults and children.\nA1AT not only binds to neutrophil elastase from inflammatory cells but also to elastase on the cell surface. In this latter role, elastase acts as a signaling molecule for cell movement, rather than as an enzyme. Besides liver cells, A1PI is also produced in bone marrow, lymphoid tissue, and the Paneth cells of the gut.\nInactivation of A1AT by other enzymes during inflammation or infection can halt T cell migration precisely at the site of the pathological insult. This suggests that \u03b11PI plays a key role in lymphocyte movement and immune surveillance, particularly in response to infection.\nA1AT is both an endogenous protease inhibitor and an exogenous one used as medication. The pharmaceutical form is purified from human donor blood and is sold under the nonproprietary name alpha1\u2013proteinase inhibitor (human) and under various trade names (including  Aralast NP, Glassia, Prolastin, Prolastin-C, and Zemaira). Recombinant versions are also available but are currently used in medical research more than as medication.\n\nNomenclature\nThe protein was initially named \"antitrypsin\" because of its ability to bind and irreversibly inactivate the enzyme trypsin in vitro covalently. Trypsin, a type of peptidase, is a digestive enzyme active in the duodenum and elsewhere. In older biomedical literature it was sometimes called serum trypsin inhibitor (STI, dated terminology), because its capability as a trypsin inhibitor was a salient feature of its early study.\nThe term alpha-1 refers to the protein's behavior on protein electrophoresis. On electrophoresis, the protein component of the blood is separated by electric current. There are several clusters, the first being albumin, the second being the alpha, the third beta and the fourth gamma (immunoglobulins). The non-albumin proteins are referred to as globulins.\nThe alpha region can be further divided into two sub-regions, termed \"1\" and \"2\". Alpha-1 antitrypsin is the main protein of the alpha-globulin 1 region.\nAnother name used is alpha-1 proteinase inhibitor (\u03b11-PI).\n\nGenetics\nThe gene is located on the long arm of chromosome 14 (14q32.1).\nOver 100 different variants of \u03b11-antitrypsin have been described in various populations. North-Western Europeans are most at risk for carrying one of the most common mutant forms of A1AT, the Z mutation (Glu342Lys on M1A, rs28929474).",
+          "cos_sim_score": 0.19882433116436005,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Chronic obstructive pulmonary disease",
+          "title": "Chronic obstructive pulmonary disease",
+          "url": "https://en.wikipedia.org/wiki/Chronic_obstructive_pulmonary_disease",
+          "text": "Other phenotypes\nCOPD is complex, and is increasingly recognized as a diverse group of disorders with differing risk factors and clinical courses. This has resulted in other subtypes or phenotypes of COPD being proposed.  A common phenotype is the frequent exacerbator, someone who has had two or more flare-ups within a year.  Frequent exacerbators have a poor prognosis, so identifying them and preventing further flare-ups is a major concern.\nAsthma-COPD overlap (ACO phenotype), a condition with clinical features of both asthma and COPD, is another proposed subtype of COPD. It is considered by some to be a separate medical condition. A pulmonary vascular COPD phenotype has been described involving cardiovascular dysfunction. A molecular phenotype of CFTR dysfunction is shared with cystic fibrosis. A combined phenotype of chronic bronchitis and bronchiectasis has been described, with a difficulty noted in determining the best treatment. The identification and recognition of different phenotypes can guide appropriate treatment approaches.\n\nGenotypes\nThe alpha-1 antitrypsin deficiency (AATD) genetic subtype involves a rare mutation in the SERPINA1 gene that is linked to proteinase-antiprotease imbalance. In this genotype, unchecked activity of elastase in white blood cells called neutrophils leads to early-onset emphysema. A treatment for this type of COPD has been proposed, involving intravenous administration of purified AAT protein.\n\nEndotypes\nAn endotype is defined in terms of a biological or molecular mechanism that explains why a given patient has specific observable disease features. Two well-defined COPD endotypes are related to inflammation mechanisms of white blood cells in the immune system. The types of white blood cells involved are neutrophils and eosinophils.\nNeutrophils are a type of white blood cell that deals with injury and infection. Environmental stressors (e.g. cigarette smoke, air pollution) cause inflammation of neutrophils in airways, resulting in release of interleukin (IL)\u22121, IL-8, Th17 and other chemical messengers. This is called the neutrophil-centric inflammasome pathway, or \"T2-low\" COPD. Patients display elevated levels of IL-17 and other proteins related to neutrophils. Their symptoms align with the classical smoking-associated chronic bronchitis phenotype. This endotype is associated with accelerated decline in lung function and recurrent infectious flare-ups.\nEosinophils are white blood cells involved in allergies and asthma.  Mechanisms involved are similar to those in allergen response, and similar, but not identical, to those in asthma. In a pathway known as IgE-independent mast cell activation, mast cells release inflammatory chemical messengers (histamine and tryptase), stimulatingType 2 helper cells to produce cytokines (IL-4, IL-5, and IL-13). This drives inflammation of eosinophils and mucus production. This is called eosinophil-dependent type 2 immunity or \"T2-high\" COPD.  20\u201340% of COPD patients display activation of type 2 immune pathways with elevated eosinophil counts in blood or sputum.  They have \"asthma-like\" symptoms, and higher risk of flare-ups and hospitalization. The \"T2-high\" endotype may overlap with the ACO phenotype.\n\nEtiotypes\nIn 2023, the Global Initiative for Chronic Obstructive Lung Disease (GOLD)  recognized the variety of causes contributing to COPD by introducing a new classification system categorizing COPD in terms of underlying causes and risk factors, or etiotypes.  The 2023 GOLD report identifies seven distinct etiotypes:",
+          "cos_sim_score": 0.19877579808235168,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

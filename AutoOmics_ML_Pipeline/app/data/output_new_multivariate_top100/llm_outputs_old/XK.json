@@ -1,0 +1,146 @@
+{
+  "probe_id": "11728138_at",
+  "gene_symbol": "XK",
+  "rf_importance": 0.0041,
+  "selection_freq": 1.0,
+  "abs_fold_change": 2.8971089,
+  "score": 0.4336,
+  "probe_count": 2,
+  "probe_ids": "11728138_at | 11728137_at",
+  "max_score": 0.4336,
+  "mean_abs_fold_change": 2.8313,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T00:00:30",
+  "interpretation": "The XK gene encodes a protein that is involved in the transport of lipids and is associated with the Kx antigen on red blood cells. While its primary function is not directly linked to bone metabolism, the protein's role in cellular processes may have implications in conditions like Steroid-Induced Osteonecrosis of the Femoral Head (SONFH). The retrieved evidence does not explicitly connect XK to SONFH, indicating a lack of direct biological relevance. However, the association of XK with conditions like McLeod syndrome, which involves muscle and neurological symptoms, suggests that alterations in XK function could potentially influence bone health indirectly through systemic effects. Therefore, while there is no strong evidence linking XK directly to SONFH, its biological role in cellular transport and potential involvement in systemic disorders may warrant further investigation as a biomarker for early detection of SONFH.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "XK may have indirect implications for Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) through its role in cellular processes, but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "XK (P51811). https://www.uniprot.org/uniprotkb/P51811",
+    "XK \u2014 XK. https://platform.opentargets.org/target/ENSG00000047597",
+    "XK \u2194 McLeod neuroacanthocytosis syndrome. https://platform.opentargets.org/target/ENSG00000047597/associations",
+    "XK \u2194 genetic disorder. https://platform.opentargets.org/target/ENSG00000047597/associations",
+    "XK \u2194 isolated asymptomatic elevation of creatine phosphokinase. https://platform.opentargets.org/target/ENSG00000047597/associations",
+    "XK \u2194 Elevated circulating creatine kinase concentration. https://platform.opentargets.org/target/ENSG00000047597/associations",
+    "XK. https://en.wikipedia.org/wiki/XK",
+    "XKR7. https://en.wikipedia.org/wiki/XKR7",
+    "XK (protein). https://en.wikipedia.org/wiki/XK_(protein)",
+    "Kell antigen system. https://en.wikipedia.org/wiki/Kell_antigen_system",
+    "McLeod syndrome. https://en.wikipedia.org/wiki/McLeod_syndrome"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5785,
+    "completion_tokens": 249,
+    "total_tokens": 6034,
+    "estimated_cost_usd": 0.001017
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P51811",
+          "title": "XK (P51811)",
+          "url": "https://www.uniprot.org/uniprotkb/P51811",
+          "text": "Protein: Endoplasmic reticulum membrane adapter protein XK\nFunction: Recruits the lipid transfer protein VPS13A from lipid droplets to the endoplasmic reticulum (ER) membrane",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000047597::function",
+          "title": "XK \u2014 XK",
+          "url": "https://platform.opentargets.org/target/ENSG00000047597",
+          "text": "Function: Recruits the lipid transfer protein VPS13A from lipid droplets to the endoplasmic reticulum (ER) membrane. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000047597::MONDO_0018945",
+          "title": "XK \u2194 McLeod neuroacanthocytosis syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000047597/associations",
+          "text": "Disease: McLeod neuroacanthocytosis syndrome\nDescription: A form of neuroacanthocytosis and is characterized clinically by a Huntington's disease-like phenotype with an involuntary hyperkinetic movement disorder, psychiatric manifestations and cognitive alterations, and biochemically by absence of the Kx antigen and by weak expression of the Kell antigens.\nAssociation score: 0.803",
+          "cos_sim_score": 0.8031785116963852,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000047597::EFO_0000508",
+          "title": "XK \u2194 genetic disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000047597/associations",
+          "text": "Disease: genetic disorder\nDescription: Genetic diseases are diseases in which inherited genes predispose to increased risk. The genetic disorders associated with cancer often result from an alteration or mutation in a single gene. The diseases range from rare dominant cancer family syndrome to familial tendencies in which low-penetrance genes may interact with other genes or environmental factors to induce cancer. Research may involve clinical, epidemiologic, and laboratory studies of persons, families, and populations at high risk of these disorders.\nAssociation score: 0.411",
+          "cos_sim_score": 0.4110702004650696,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000047597::MONDO_0016103",
+          "title": "XK \u2194 isolated asymptomatic elevation of creatine phosphokinase",
+          "url": "https://platform.opentargets.org/target/ENSG00000047597/associations",
+          "text": "Disease: isolated asymptomatic elevation of creatine phosphokinase\nDescription: Isolated hyperCKemia is a condition characterized by elevated levels of an enzyme called creatine kinase in the blood. In affected individuals, levels of this enzyme are typically 3 to 10 times higher than normal. While elevated creatine kinase often accompanies various muscle diseases, individuals with isolated hyperCKemia have no muscle weakness or other symptoms. Some people with this condition have abnormalities of muscle cells that can be seen with a microscope, such as unusual variability in the size of muscle fibers, but these changes do not affect the function of the muscle.\nAssociation score: 0.271",
+          "cos_sim_score": 0.2707080040601769,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000047597::HP_0003236",
+          "title": "XK \u2194 Elevated circulating creatine kinase concentration",
+          "url": "https://platform.opentargets.org/target/ENSG00000047597/associations",
+          "text": "Disease: Elevated circulating creatine kinase concentration\nDescription: An elevation of the level of the enzyme creatine kinase (also known as creatine phosphokinase (CK; EC 2.7.3.2) in the blood. CK levels can be elevated in a number of clinical disorders such as myocardial infarction, rhabdomyolysis, and muscular dystrophy.\nAssociation score: 0.259",
+          "cos_sim_score": 0.25870589827929125,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::XK",
+          "title": "XK",
+          "url": "https://en.wikipedia.org/wiki/XK",
+          "text": "XK may refer to:\n\nXK (protein), a protein responsible for Kx antigen which helps determine a person's blood type\nXK (2015 album), by Brendan Croskerry\nJaguar XK, a car series made by Jaguar\nJeep Commander XK, a SUV made by Jeep\nRepublic of Kosovo, ISO 3166-1 alpha-2 user-assigned code element XK (user assigned code)\n.xk, the unofficial ccTLD of the Republic of Kosovo\nCCM Airlines (IATA airline designator XK)\nX-K aka X Kryptonite\nXK, United States aircraft designator for Experimental Tanker",
+          "cos_sim_score": 0.725283145904541,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::XKR7",
+          "title": "XKR7",
+          "url": "https://en.wikipedia.org/wiki/XKR7",
+          "text": "XK Related 7 (XKR7) is a protein predicted to be a transmembrane protein in Homo sapiens encoded by the XKR7 gene. The primary alias is c20orf159, but it is commonly referred to as XKR7. It is predicted to be involved in apoptotic process during development.\n\nGene\nThe XKR7 gene is located on plus end strand of chromosome 20 at locus 20q.11.21 and spans from 31968151 to 32003387. It is 1740 base pairs long and contains 3 exons with no known isoforms.\n\nGene neighbors\nSeveral other genes are near the XKR7 gene along chromosome 20. Some of the closest ones are PDRG1, TTLL9, and CCM2L.\n\nGene level regulation\nXKR7 is expressed in the brain and pancreas, but lowly at around fifteen percent. The multiple sequence alignment of XKR7 and it's orthologs showed high conservation of the 5' untranslated region where transcription factor ZNF460 binds too.\n\nProtein\nThe XKR7 protein contains 579 amino acids with a molecular weight of 63 kDa, and consists of 3 disordered regions, alongside 6 transmembrane regions. XKR7 was found to have high amounts of these amino acids: Leu,Val, Ile, Phe, and Met; all of which contribute to transmembrane helices. There are no major charge clusters, showing no strong cytoplasmic regulatory domains. However, the isoelectric point is 9.2, so at lower pHs, XKR7 will be positively charged.\n\nStructure\nThe tertiary structure of XKR7 mostly consists of alpha helices. The most confident parts of the structure is the transmembrane region, which is highly hydrophobic and uncharged. The disordered regions are shown by red and blue, which consists of cations and anions, and is hydrophilic.\n\nProtein level regulation\nThere are around 7 phosphorylation sites between 2nd and 3rd transmembrane protein. Analysis on the mouse ortholog produces the exact same image with these phosphorylation sites conserved: S154, G167, T183, Y201, S206, S240, and S249. Y201 is the most functionally important site. When Y201 is phosphorylated, it\u2019s a binding site for SH2-domain proteins (docking site), and when it\u2019s unphosphorylated it functions as a tyrosine-based sorting signal for adaptor proteins.\n\nProtein - protein interactions\nCCM2L and PGBD5 have the highest interaction scores. Using co-IP or pull-down assays could test physical binding. Using fluorescence microscopy would verify whether the proteins are in the same cellular compartment.\n\nSingle nucleotide polymorphisms\nMost of the SNPs were found towards the C-term, transmembrane regions, or disordered regions.\n\nHomology\nXKR7 in Homo Sapiens has many paralogs as it\u2019s a part of a very large X-Kell related protein family. The XKR protein family primarily functions as lipid scramblases, a crucial protein to signal for apoptosis.  There are a total of seven paralogs with the two most similar to XKR7 are XKR4 and XKR6 (Ref. Paralog table). Paralogs were found using Genecards and NCBI Protein database, while the sequence similarity and identity were done through Emboss Needle. \n\nOrthologs of XKR7 Homo sapiens are sorted by median date of divergence and then by sequence identity to XKR7 Homo sapiens. There were an overwhelming number of mammal, avian, and reptilian orthologs, but the number of orthologs decreased as the median date of divergence increased. Actinopterygii and Chondrichthyes both only had a handful of orthologs for XKR7 Homo sapiens, but it mostly consisted of orthologs for XKR7 Homo sapiens paralogs. Sequences, identity, and similarity were found using NCBI Protein and Emboss Needle.Cyclostomata, Jawless fish, are the most distantly related species to humans with the Sea Lamprey having a median date of divergent of 563 million years ago and 53% identity. Marsupials, Avians, Reptilia, with average sequence identity of  73.6% sequence identity.",
+          "cos_sim_score": 0.6433505415916443,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::XK (protein)",
+          "title": "XK (protein)",
+          "url": "https://en.wikipedia.org/wiki/XK_(protein)",
+          "text": "XK (also known as Kell blood group precursor) is a protein found on human red blood cells and other tissues which is responsible for the Kx antigen which helps determine a person's blood type.\n\nClinical significance\nThe Kx antigen plays a role in matching blood for blood transfusions.\nMutation of XK protein may lead to McLeod syndrome, a multi-system disorder characterized by hemolytic anemia, myopathy, acanthocytosis, and chorea.\nXK is located on the X chromosome (cytogenetic band Xp21.1) and absence of the XK protein is an X-linked disease.\n\nClinical diagnostic\nClinical testing in patient care for Kx antigen follows published minimum quality and operational requirements, similar to red cell genotyping for any of the other recognized blood group systems.  Molecular analysis can identify gene variants (alleles) that may affect Kx antigen expression on the red cell membrane.\n\nFunction\nXK is a membrane transport protein of unknown action.\n\nReferences\nExternal links\nGeneReviews/NCBI/NIH/UW entry on McLeod Neuroacanthocytosis Syndrome\nXK at BGMUT Blood Group Antigen Gene Mutation Database at NCBI, NIH\nXK+protein,+human at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.6241343021392822,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Kell antigen system",
+          "title": "Kell antigen system",
+          "url": "https://en.wikipedia.org/wiki/Kell_antigen_system",
+          "text": "The Kell antigen system (also known as the Kell\u2013Cellano system) is a human blood group system, that is, a group of antigens on the human red blood cell surface which are important determinants of blood type and are targets for autoimmune or alloimmune diseases which destroy red blood cells. The Kell antigens are K, k, Kpa, Kpb, Jsa and Jsb. The Kell antigens are peptides found within the Kell protein, a 93-kilodalton transmembrane zinc-dependent endopeptidase which is responsible for cleaving endothelin-3.\n\nProtein\nThe KEL gene encodes a type II transmembrane glycoprotein that is the highly polymorphic Kell blood group antigen. The Kell glycoprotein links via a single disulfide bond to the XK membrane protein that carries the Kx antigen. The encoded protein contains sequence and structural similarity to members of the neprilysin (M13) family of zinc endopeptidases.\nThere are several alleles of the gene which creates Kell protein. Two such alleles, K1 (Kell) and K2 (Cellano), are the most common. The kell protein is tightly bound to a second protein, XK, by a disulfide bond. Absence of the XK protein (such as through genetic deletion or through a single point mutation within the coding region of the XK gene), leads to marked reduction of the Kell antigens on the red blood cell surface. Absence of the Kell protein (K0), however, does not affect the XK protein.\nThe Kell protein has also recently been designated CD238 (cluster of differentiation 238).\n\nDisease association\nKell antigens are important in transfusion medicine, autoimmune hemolytic anemia and hemolytic disease of the newborn (anti-Kell). Anti-K is the next most common immune red cell antibody after those in the ABO and Rh system. Anti-K typically presents as IgG class alloantibody. Individuals lacking a specific Kell antigen may develop antibodies against Kell antigens when transfused with blood containing that antigen. This is particularly true for the \"K\" antigen which shows a relatively high antigenicity and moderately low frequency (~9%) in Caucasian populations. Anti-K can also occur following transplacental hemorrhage associated with childbirth making Kell an important concern for hemolytic disease of the newborn. Following the formation of anti-K, subsequent blood transfusions may be marked by destruction of the new cells by these antibodies, a process known as hemolysis. Anti-K does not bind complement, therefore hemolysis is extravascular. Individuals without K antigens(K0) who have formed an antibody to a K antigen, must be transfused with blood from donors who are also K0 to prevent hemolysis.\nAutoimmune hemolytic anemia (AIHA) occurs when the body produces an antibody against a blood group antigen on its own red blood cells. The antibodies lead to destruction of the red blood cells with resulting anemia. Similarly, a pregnant woman may develop antibodies against fetal red blood cells, resulting in destruction, anemia, and hydrops fetalis in a process known as hemolytic disease of the newborn (HDN). Both AIHA and HDN may be severe when caused by anti-Kell antibodies, as they are the most immunogenic antigens after those of the ABO and Rhesus blood group systems.\n\nMcLeod phenotype\nMcLeod phenotype (or McLeod syndrome) is an X-linked anomaly of the Kell blood group system in which Kell antigens are poorly detected by laboratory tests. The McLeod gene encodes the XK protein, a protein with structural characteristics of a membrane transport protein but of unknown function. The XK appears to be required for proper synthesis or presentation of the Kell antigens on the red blood cell surface.\n\nHistory\nThe Kell group was named after the first patient described with antibodies to K1, a pregnant woman named Mrs. Kelleher in 1945. Mrs. Cellano was likewise a pregnant woman with the first described antibodies to K2. The K0 phenotype was first described in 1957 and the McLeod phenotype was found in Hugh McLeod, a Harvard dental student, in 1961.\nKing Henry VIII of England may have had Kell-positive blood type, explaining the deaths of seven of his ten children at, or soon after, birth, supported by the revelation that Henry may have inherited Kell from his maternal great-grandmother, Jacquetta of Luxembourg. Alternatively he may have had McLeod syndrome, explaining his mental deterioration around age 40.",
+          "cos_sim_score": 0.42189693450927734,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::McLeod syndrome",
+          "title": "McLeod syndrome",
+          "url": "https://en.wikipedia.org/wiki/McLeod_syndrome",
+          "text": "McLeod syndrome ( m\u0259-KLOWD) is an X-linked recessive genetic disorder that may affect the blood, brain, peripheral nerves, muscle, and heart. It is caused by a variety of recessively inherited mutations in the XK gene on the X chromosome. The gene is responsible for producing the Kx protein, a secondary supportive protein for the Kell antigen on the red blood cell surface.\n\nPresentation\nPatients usually begin to notice symptoms in their 30s and the course is usually slowly progressive. Common features include peripheral neuropathy, cardiomyopathy, and hemolytic anemia. Other features include limb chorea, facial tics, other oral movements (lip and tongue biting), seizures, a late-onset dementia, and behavioral changes.\n\nGenetics\nThe McLeod phenotype is a recessive mutation of the Kell blood group system. The McLeod gene encodes the XK protein, which is located on the X chromosome, and has the structural characteristics of a membrane transport protein but an unknown function. Absence of the XK protein is an X-linked disease.\nMutational variants result in McLeod syndrome either with or without neuroacanthocytosis: the gene on the X chromosome for McLeod syndrome is physically close to the gene for chronic granulomatous disease. As a result, an individual with one relatively small deletion may have both diseases.\nThe phenotype may be present without the syndrome presenting.\n\nDiagnosis\nLaboratory features\nMcLeod syndrome is one of only a few disorders in which acanthocytes may be found on the peripheral blood smear. Blood chemistry testing may show increased lactate dehydrogenase (LDH) indicative of hemolytic anemia or elevated creatine kinase when the patient is affected by myopathy (skeletal muscle damage).\n\nRadiologic and pathologic features\nMRI shows increased T2 signal in the lateral putamen with caudate atrophy and secondary lateral ventricular dilation. Necropsy shows loss of neurons and gliosis in the caudate and globus pallidus. Similar changes may also be seen in the thalamus, substantia nigra, and putamen. The cerebellum and cerebral cortex are generally spared.\n\nTreatment\nThere is no cure for McLeod syndrome; the treatment is supportive depending on symptoms. Medication may assist with management of epilepsy, and cardiac and psychiatric features, although patients may respond poorly to treatment for chorea.\n\nPrognosis\nA typical patient with severe McLeod syndrome that begins in adulthood lives for an additional 5 to 10 years. Patients with cardiomyopathy have elevated risk for congestive heart failure and sudden cardiac death. The prognosis for a normal life span is often good in some patients with mild neurological or cardiac sequelae.\n\nEpidemiology\nMcLeod syndrome is present in 0.5 to 1 per 100,000 of the population. McLeod males have variable acanthocytosis due to a defect in the inner leaflet bilayer of the red blood cell, as well as mild hemolysis. McLeod females have only occasional acanthocytes and very mild hemolysis; the lesser severity is thought to be due to X chromosome inactivation via the Lyon effect. Some individuals with McLeod phenotype develop myopathy, neuropathy, or psychiatric symptoms, producing a syndrome that may mimic chorea.\n\nHistory\nMcLeod syndrome was discovered in 1961 and, similar to the Kell antigen system, was named after the first patient in which it was discovered; a Harvard dental student by the name of Hugh McLeod.  McLeod's red blood cells demonstrated a peculiar appearance when viewed microscopically (acanthocytic (spiky)) and showed weak expression of Kell system antigens.\nA pattern of pregnancy loss and infant deaths associated with the wives of King Henry VIII of England suggests he may have been Kell-positive and had McLeod syndrome given his eventual premature mental deterioration.\n\nReferences\nExternal links\nGeneReview/NIH/UW entry on McLeod Neuroacanthocytosis Syndrome",
+          "cos_sim_score": 0.40838611125946045,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

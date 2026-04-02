@@ -1,0 +1,34 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     univariate_ann
+Instances:    40
+Attributes:   101
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          37               92.5    %
+Incorrectly Classified Instances         3                7.5    %
+Kappa statistic                          0.7931
+Mean absolute error                      0.075 
+Root mean squared error                  0.2739
+Relative absolute error                 19.6552 %
+Root relative squared error             63.2164 %
+Total Number of Instances               40     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,967    0,200    0,935      0,967    0,951      0,795    0,883     0,929     SONFH
+                 0,800    0,033    0,889      0,800    0,842      0,795    0,883     0,761     control
+Weighted Avg.    0,925    0,158    0,924      0,925    0,924      0,795    0,883     0,887     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 29  1 |  a = SONFH
+  2  8 |  b = control
+

@@ -1,0 +1,148 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -attribute-importance -I 200 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     univariate_ann
+Instances:    40
+Attributes:   101
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 200 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Attribute importance based on average impurity decrease (and number of nodes using that attribute)
+
+      0.92 (     1)  11718340_x_at
+      0.92 (     1)  11723153_a_at
+      0.92 (     1)  11728424_x_at
+      0.88 (     4)  11718260_at
+      0.86 (     7)  11741035_a_at
+      0.84 (     2)  11718568_a_at
+      0.79 (     4)  11733611_a_at
+      0.76 (     5)  11732415_s_at
+      0.75 (     5)  11728926_at
+      0.72 (     3)  11732373_a_at
+      0.72 (     1)  11719728_s_at
+      0.71 (     6)  11722269_a_at
+      0.69 (     2)  11728961_a_at
+      0.69 (     2)  11741435_s_at
+      0.67 (    13)  11733691_a_at
+      0.67 (     3)  11755644_s_at
+      0.67 (    12)  11720739_s_at
+      0.65 (     4)  11750862_a_at
+      0.65 (     5)  11747203_x_at
+      0.65 (     5)  11746456_x_at
+      0.65 (     3)  11718387_s_at
+      0.64 (     8)  11731879_a_at
+      0.63 (     6)  11740096_a_at
+      0.63 (     7)  11754832_a_at
+      0.62 (    10)  11724224_a_at
+      0.6  (    24)  11740553_a_at
+      0.6  (     8)  11726384_at
+      0.6  (     2)  11731728_at
+      0.59 (    13)  11757383_a_at
+      0.59 (    11)  11730005_a_at
+      0.59 (     2)  11760387_at
+      0.59 (    14)  11754863_s_at
+      0.59 (     1)  11747020_x_at
+      0.59 (    17)  11717267_x_at
+      0.58 (    15)  11756746_s_at
+      0.58 (     2)  11748839_a_at
+      0.57 (     2)  11745768_a_at
+      0.57 (    16)  11737423_a_at
+      0.56 (     1)  11715617_a_at
+      0.56 (     7)  11725180_a_at
+      0.55 (     4)  11746195_x_at
+      0.55 (     6)  11725165_a_at
+      0.55 (     5)  11739069_s_at
+      0.54 (     3)  11750585_a_at
+      0.53 (    12)  11740206_x_at
+      0.53 (     4)  11759407_at
+      0.52 (     8)  11746639_a_at
+      0.5  (     3)  11716389_a_at
+      0.5  (     1)  11726636_s_at
+      0.49 (    15)  11717836_a_at
+      0.49 (     2)  11728827_at
+      0.48 (     1)  11747992_a_at
+      0.48 (     8)  11717208_at
+      0.47 (     5)  11752282_a_at
+      0.47 (     3)  11723893_s_at
+      0.45 (     5)  11715423_s_at
+      0.45 (     3)  11717214_s_at
+      0.45 (     1)  11763557_x_at
+      0.44 (     3)  11756361_x_at
+      0.44 (     4)  11719686_a_at
+      0.44 (     7)  11759416_x_at
+      0.43 (     2)  11717752_s_at
+      0.42 (     8)  11733938_x_at
+      0.4  (     2)  11745779_a_at
+      0.39 (     4)  11718078_a_at
+      0.38 (     3)  11722387_at
+      0.37 (     6)  11751304_a_at
+      0.37 (     8)  11739813_a_at
+      0.35 (     7)  11720392_at
+      0.35 (     1)  11716346_at
+      0.35 (     2)  11718920_a_at
+      0.33 (     9)  11730433_a_at
+      0.32 (     4)  11741190_a_at
+      0.31 (     1)  11715462_x_at
+      0.31 (     6)  11721777_at
+      0.24 (     2)  11754278_x_at
+      0.23 (     6)  11755086_x_at
+      0.21 (     3)  11721499_x_at
+      0.21 (     1)  11724645_at
+      0.18 (     1)  11740652_x_at
+      0.15 (     1)  11748410_a_at
+      0.13 (     1)  11726019_at
+      0.1  (     1)  11716765_s_at
+      0.07 (     1)  11747190_a_at
+      0    (     0)  11741086_x_at
+      0    (     0)  11723468_at
+      0    (     0)  11723792_at
+      0    (     0)  11744180_a_at
+      0    (     0)  11748615_a_at
+      0    (     0)  11759627_at
+      0    (     0)  11745165_a_at
+      0    (     0)  11752689_a_at
+      0    (     0)  11722834_x_at
+      0    (     0)  11763426_a_at
+      0    (     0)  11723842_s_at
+      0    (     0)  11759205_a_at
+      0    (     0)  11752737_a_at
+      0    (     0)  11717091_s_at
+      0    (     0)  11744862_x_at
+      0    (     0)  11724005_s_at
+
+
+Time taken to build model: 0.09 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          37               92.5    %
+Incorrectly Classified Instances         3                7.5    %
+Kappa statistic                          0.7931
+Mean absolute error                      0.145 
+Root mean squared error                  0.2502
+Relative absolute error                 38      %
+Root relative squared error             57.7488 %
+Total Number of Instances               40     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,967    0,200    0,935      0,967    0,951      0,795    0,935     0,971     SONFH
+                 0,800    0,033    0,889      0,800    0,842      0,795    0,935     0,889     control
+Weighted Avg.    0,925    0,158    0,924      0,925    0,924      0,795    0,935     0,951     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 29  1 |  a = SONFH
+  2  8 |  b = control
+

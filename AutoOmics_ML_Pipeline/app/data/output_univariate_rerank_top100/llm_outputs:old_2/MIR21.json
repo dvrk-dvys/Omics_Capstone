@@ -1,0 +1,202 @@
+{
+  "probe_id": "11718657_a_at",
+  "gene_symbol": "MIR21",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0662538659999937,
+  "abs_fold_change": 1.3196,
+  "score": 1.3171,
+  "probe_count": 1,
+  "probe_ids": "11718657_a_at",
+  "max_score": 1.3171,
+  "mean_abs_fold_change": 1.3196,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T19:30:54",
+  "interpretation": "MIR21, or microRNA 21, is a small non-coding RNA that plays a crucial role in regulating gene expression post-transcriptionally. It has been implicated in various bone diseases, including osteonecrosis, by influencing the balance between osteoblast and osteoclast activity. Specifically, studies have shown that MIR21 can promote osteoblast proliferation, which is essential for bone formation and repair. However, the retrieved evidence does not directly link MIR21 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), indicating a gap in specific mechanistic understanding. Therefore, while MIR21 shows potential as a biomarker due to its involvement in bone metabolism, the evidence remains weak, and its clinical relevance as an early-detection biomarker for SONFH is uncertain. [INFERENCE]",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "MIR21 may influence bone metabolism, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "MIR21 \u2194 Balkan nephropathy. https://platform.opentargets.org/target/ENSG00000284190/associations",
+    "MIR21 \u2194 nephrotic syndrome, IIa 26. https://platform.opentargets.org/target/ENSG00000284190/associations",
+    "MIR21 \u2194 colorectal carcinoma. https://platform.opentargets.org/target/ENSG00000284190/associations",
+    "MIR21 \u2194 hyper-IgE recurrent infection syndrome 5, autosomal recessive. https://platform.opentargets.org/target/ENSG00000284190/associations",
+    "MIR21 \u2194 hereditary leiomyomatosis and renal cell cancer. https://platform.opentargets.org/target/ENSG00000284190/associations",
+    "MIR21 \u2014 microRNA 21 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TP53 \u2014 tumor protein p53 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TNF \u2014 tumor necrosis factor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "PTEN \u2014 phosphatase and tensin homolog (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TGFB1 \u2014 transforming growth factor beta 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Recent advancements of miRNAs in the treatment of bone diseases and their delivery potential (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9860349/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8716,
+    "completion_tokens": 298,
+    "total_tokens": 9014,
+    "estimated_cost_usd": 0.001486
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": []
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000284190::EFO_0007164",
+          "title": "MIR21 \u2194 Balkan nephropathy",
+          "url": "https://platform.opentargets.org/target/ENSG00000284190/associations",
+          "text": "Disease: Balkan nephropathy\nDescription: An interstitial nephritis endemic to the regions along the Danube river, in the modern countries of Croatia, Bosnia and Herzegovina, Serbia, Romania and Bulgaria.\nAssociation score: 0.063",
+          "cos_sim_score": 0.06281379210221191,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000284190::MONDO_0031061",
+          "title": "MIR21 \u2194 nephrotic syndrome, IIa 26",
+          "url": "https://platform.opentargets.org/target/ENSG00000284190/associations",
+          "text": "Disease: nephrotic syndrome, IIa 26\nAssociation score: 0.050",
+          "cos_sim_score": 0.05001154593593384,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000284190::EFO_1001951",
+          "title": "MIR21 \u2194 colorectal carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000284190/associations",
+          "text": "Disease: colorectal carcinoma\nDescription: A malignant epithelial neoplasm that arises from the colon or rectum and invades through the muscularis mucosa into the submucosa. The vast majority are adenocarcinomas.\nAssociation score: 0.040",
+          "cos_sim_score": 0.039844198811416216,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000284190::MONDO_0030069",
+          "title": "MIR21 \u2194 hyper-IgE recurrent infection syndrome 5, autosomal recessive",
+          "url": "https://platform.opentargets.org/target/ENSG00000284190/associations",
+          "text": "Disease: hyper-IgE recurrent infection syndrome 5, autosomal recessive\nAssociation score: 0.040",
+          "cos_sim_score": 0.03980375034954238,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000284190::MONDO_0007888",
+          "title": "MIR21 \u2194 hereditary leiomyomatosis and renal cell cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000284190/associations",
+          "text": "Disease: hereditary leiomyomatosis and renal cell cancer\nDescription: Hereditary leiomyomatosis and renal cell cancer (HLRCC) is a hereditary cancer syndrome characterized by a predisposition to cutaneous and uterine leiomyomas and, in some families, to renal cell cancer.\nAssociation score: 0.035",
+          "cos_sim_score": 0.035073128209578204,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "MIR21 \u2014 microRNA 21",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MIR21\nGene name: microRNA 21\nAliases / synonyms: MIRN21, hsa-mir-21, miR-21, miRNA21\nOrganism: Homo sapiens\nGene summary: microRNAs (miRNAs) are short (20-24 nt) non-coding RNAs that are involved in post-transcriptional regulation of gene expression in multicellular organisms by affecting both the stability and translation of mRNAs. miRNAs are transcribed by RNA polymerase II as part of capped and polyadenylated primary transcripts (pri-miRNAs) that can be either protein-coding or non-coding. The primary transcript is cleaved by the Drosha ribonuclease III enzyme to produce an approximately 70-nt stem-loop precursor miRNA (pre-miRNA), which is further cleaved by the cytoplasmic Dicer ribonuclease to generate the mature miRNA and antisense miRNA star (miRNA*) products. The mature miRNA is incorporated into a RNA-induced silencing complex (RISC), which recognizes target mRNAs through imperfect base pairing with...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MIR21",
+          "aliases": "MIRN21, hsa-mir-21, miR-21, miRNA21",
+          "gene_description": "microRNA 21"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TP53 \u2014 tumor protein p53",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TP53\nGene name: tumor protein p53\nAliases / synonyms: BCC7, BMFS5, LFS1, P53, TRP53\nOrganism: Homo sapiens\nGene summary: This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TP53",
+          "aliases": "BCC7, BMFS5, LFS1, P53, TRP53",
+          "gene_description": "tumor protein p53"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TNF \u2014 tumor necrosis factor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TNF\nGene name: tumor necrosis factor\nAliases / synonyms: DIF, IMD127, TNF-alpha, TNFA, TNFSF2, TNLG1F\nOrganism: Homo sapiens\nGene summary: This gene encodes a multifunctional proinflammatory cytokine that belongs to the tumor necrosis factor (TNF) superfamily. This cytokine is mainly secreted by macrophages. It can bind to, and thus functions through its receptors TNFRSF1A/TNFR1 and TNFRSF1B/TNFBR. This cytokine is involved in the regulation of a wide spectrum of biological processes including cell proliferation, differentiation, apoptosis, lipid metabolism, and coagulation. This cytokine has been implicated in a variety of diseases, including autoimmune diseases, insulin resistance, psoriasis, rheumatoid arthritis ankylosing spondylitis, tuberculosis, autosomal dominant polycystic kidney disease, and cancer. Mutations in this gene affect susceptibility to cerebral malaria, septic shock, and Alzheimer disease. Knockout studie...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TNF",
+          "aliases": "DIF, IMD127, TNF-alpha, TNFA, TNFSF2, TNLG1F",
+          "gene_description": "tumor necrosis factor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "PTEN \u2014 phosphatase and tensin homolog",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PTEN\nGene name: phosphatase and tensin homolog\nAliases / synonyms: 10q23del, BZS, CWS1, DEC, GLM2, MHAM, MMAC1, PTEN1, PTENbeta, PTENgama, TEP1\nOrganism: Homo sapiens\nGene summary: This gene was identified as a tumor suppressor that is mutated in a large number of cancers at high frequency. The protein encoded by this gene is a phosphatidylinositol-3,4,5-trisphosphate 3-phosphatase. It contains a tensin like domain as well as a catalytic domain similar to that of the dual specificity protein tyrosine phosphatases. Unlike most of the protein tyrosine phosphatases, this protein preferentially dephosphorylates phosphoinositide substrates. It negatively regulates intracellular levels of phosphatidylinositol-3,4,5-trisphosphate in cells and functions as a tumor suppressor by negatively regulating AKT/PKB signaling pathway. The use of a non-canonical (CUG) upstream initiation site produces a longer isoform that initiates translation with a leucine, and is thought to be pre...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PTEN",
+          "aliases": "10q23del, BZS, CWS1, DEC, GLM2, MHAM, MMAC1, PTEN1, PTENbeta, PTENgama, TEP1",
+          "gene_description": "phosphatase and tensin homolog"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TGFB1 \u2014 transforming growth factor beta 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TGFB1\nGene name: transforming growth factor beta 1\nAliases / synonyms: CAEND1, CED, DPD1, IBDIMDE, LAP, TGF-beta1, TGFB, TGFbeta\nOrganism: Homo sapiens\nGene summary: This gene encodes a secreted ligand of the TGF-beta (transforming growth factor-beta) superfamily of proteins. Ligands of this family bind various TGF-beta receptors leading to recruitment and activation of SMAD family transcription factors that regulate gene expression. The encoded preproprotein is proteolytically processed to generate a latency-associated peptide (LAP) and a mature peptide, and is found in either a latent form composed of a mature peptide homodimer, a LAP homodimer, and a latent TGF-beta binding protein, or in an active form consisting solely of the mature peptide homodimer. The mature peptide may also form heterodimers with other TGFB family members. This encoded protein regulates cell proliferation, differentiation and growth, and can modulate expression and activation...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TGFB1",
+          "aliases": "CAEND1, CED, DPD1, IBDIMDE, LAP, TGF-beta1, TGFB, TGFbeta",
+          "gene_description": "transforming growth factor beta 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::9860349",
+          "title": "Recent advancements of miRNAs in the treatment of bone diseases and their delivery potential",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9860349/",
+          "text": "3.3\nOsteonecrosis\nA proper homeostatic balance between the osteoblasts and osteoclasts is essential for the proper functioning of the bones. Any kind of disruption in the homeostatic balance may downregulate the osteogenic activities with an increase in adipogenesis, resulting in osteonecrosis (Liu et\u00a0al., 2020; Wang et\u00a0al., 2018). Xu et\u00a0al. have elucidated the significance of employing miR-186-5p as a therapeutic agent, as it downregulates the PI3K/AKT signaling pathway and controls the proliferation of human mesenchymal stem cells (Xu et\u00a0al., 2019). The overexpression of miR-410 targets the Wnt signaling pathway, which dominates a balance between the osteoblast and osteoclast cells. The miR-410 can stimulate osteogenesis and downregulate osteoclasts' production. With such a regulation, miR-410 can offer an excellent way of treating osteonecrosis (Omar et\u00a0al., 2019). Dai et\u00a0al. have also pointed out the role of miR-127 in osteonecrosis. The miR-127 targets the DKK1 gene, which is closely involved in several pathways of bone metabolism. The overexpression of this miRNA triggers osteoblast differentiation by downregulating the expression of the DKK1 gene (Dai et\u00a0al., 2019). The delivery of miR-214 using an adeno-associated virus has shown promising results in animal models of osteonecrosis. This miRNA plays a dual role in dominating both osteoblast and osteoclast differentiation. The upregulation of miR-214 represses osteoblast differentiation and promotes osteoclast differentiation. The downregulation of the miR-214 results in arresting osteonecrosis during the initiation of the disease (Wang et\u00a0al., 2019). Moreover, the miRNAs like miR-27a, miR-548d-5p, and miR-708 can be employed as therapeutic agents against osteonecrosis because of their ability to stimulate the differentiation of osteoblast cells. Sometimes, they often regulate the phenomenon of adipogenesis which is a pivotal cause of osteonecrosis (Li et\u00a0al., 2018).\n3.4\nAtrophic non-union\nAtrophic non-union is caused when the individual loses the natural process of bone repair and healing after the occurrence of any fracture. In this disease, all sorts of osteogenic activities and the differentiation of osteoblast cells are delayed (Chen et\u00a0al., 2017). Like many other bone disorders, miRNAs also have therapeutic roles in treating Atrophic non-union. For instance, miR-628-3p can be used for treating this disorder as it can inhibit the differentiation of the osteoblasts by altering the expression of the RUNX2 gene (Chen et\u00a0al., 2017). Alternatively, miR-381 is also a potential candidate for treating Atrophic non-union. miR-381 downregulates the functioning of the genes like Wnt5A and FZD3 in the Wnt signaling pathway and exhibits an anti-osteogenic activity, as validated by administering miR-381 in rat models (Long et\u00a0al., 2019). Moreover, Waki et\u00a0al. have already illustrated that miR-146a-5p, miR-223-3p, miR-31a-3p, miR-146b-5p, and miR-146a-5p can be employed as therapeutic agents for the treatment of Atrophic non-union because these miRNAs are closely related with the pathogenesis of the disease as obtained from the samples examined from different subjects (Waki et\u00a0al., 2015).\n3.5\nRheumatoid arthritis (RA)",
+          "cos_sim_score": 0.668605625629425,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9860349",
+          "title": "Recent advancements of miRNAs in the treatment of bone diseases and their delivery potential",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9860349/",
+          "text": "Table\u00a01\nChromosomal location and specific functions of miRNAs in bone.\nFig.\u00a01\nHuman miRNAs secondary structures (stem-loop) responsible for gene regulation and associated with bone disorders. Structure predicted by Rfam server (https://rfam.org/).\nTable\u00a02\nHuman miRNAs, their mature sequences, pre-microRNA nucleotides, and miRBase ID (having a role in bone diseases).\n3.1\nOP\nThe osteoblast and osteoclast cells are important for bone remodeling and bone matrix synchronization. OP results from the massive deterioration of the bone tissues, followed by a decrease in the density of the bones. This disorder is most prevalent in older ages and after menopause in females (Feng et\u00a0al., 2019; Rozenberg et\u00a0al., 2020). A disruption of the equilibrium between bone resorption and osteogenesis is majorly responsible for this ailment (Li et\u00a0al., 2020). Similar to several diseases, miRNAs act as attractive therapeutic mediators in OP treatment. Some initial approaches have highlighted the superiority of Resveratrol in treating OP. The in-vitro studies in rats lacking one or more ovaries have elucidated that Resveratol could treat OP by altering the expression of miR-338-3p (Guo et\u00a0al., 2015). Another miRNA, miR-365, can be employed for treating glucocorticoid-induced secondary OP by stimulating the process of osteogenesis. It targets one of the vital enzymes involved in histone acetylation named HDAC4 and nullifies the dexamethasone-induced suppression of osteogenesis in MC3T3 cells (Xu et\u00a0al., 2017). Besides, two miRNAs, miR-150 and miR-214, might be considered novel agents for the OP treatment. The miR-150 is responsible for enhancing the process of bone formation by stimulating osteoblast functions and bone mineralization. Its agomir was shown to effectively increase the osteogenic markers in MC3T3 cells and was suggested as an effective agent for curing OP (Dong et\u00a0al., 2015). On the contrary, miR-214 regulates the process of differentiation of osteoclast cells and might act as a therapeutic agent for preventing OP. Inhibition of miR-214 causes a decreased activation of the PI3K/Akt pathway by targeting phosphatase and tensin homolog (Pten), attenuating the process of osteoclastogenesis (Zhao et\u00a0al., 2015). The estrogen hormone plays a vital role in protecting bone cells. It alters the levels of miRNAs in order to control the progression of bone-related diseases like OP, endometriosis, cancer, etc. It can even suppress the bone resorption process in the osteoclast cells (Hamilton et\u00a0al., 2017; Hu et\u00a0al., 2020). The anti-miR-148a exploits a similar strategy. Increased expression of miR-148a downregulated the expression of estrogen receptor alpha (ERa) by suppressing the activity of the PI3K/AKT signaling pathway in osteoblasts. anti-miR-148a rescued the ovariectomy-induced OP through ER\u03b1 by PI3K/AKT signaling (Xiao et\u00a0al., 2018). Feng et\u00a0al. have highlighted that the reduction in the expression of miR-152 can stimulate the osteoblast cells' differentiation and upregulate the RICTOR protein that dominates the activities of the osteoblasts (Feng et\u00a0al., 2019). The expression level of miRNA-151a-3p was found elivated in postmenopausal women with OP and promoted osteoclast differentiation. In a rat model of ovariectomy-induced osteoporosis, silencing of miRNA-151a-3p decreased osteoclastogenesis-related factors and raised BMD (He et\u00a0al., 2021). miRNA-197-3p has been shown to inhibit osteogenic differentiation by downregulating KLF 10 in MC3T3-E1 cells (You et\u00a0al., 2021). In OP patients' femoral neck trabeculae, the expression level of miR-874-3p is quite low compared to healthy individuals, while the leptin level is high. In human bone marrow mesenchymal stem cells, overexpression of miR-874-3p upregulated the gene expression levels of osteogenic markers like ALP, RUNX2, OCN, and OSX by suppressing leptin (Mei et\u00a0al., 2021).\n3.2\nOsteosarcoma",
+          "cos_sim_score": 0.6309288740158081,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9860349",
+          "title": "Recent advancements of miRNAs in the treatment of bone diseases and their delivery potential",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9860349/",
+          "text": "5\nConclusion\nResearch studies in the last decade have provided crucial information about the functional roles of miRNAs and their role in diseases. Lately, studies have observed the role of miRNAs in the etiology and progression of numerous bone diseases, including osteosarcoma, OP, osteonecrosis, osteomyelitis, Osteogenesis Imperfecta, RA, and bone metastasis. In this review, we have summarized various miRNAs involved in bone-related diseases and delivery systems that may be utilized to deliver them to the target site (Fig.\u00a02).Fig.\u00a02A schematic illustration of the miRNAs and their delivery system in bone diseases.Fig.\u00a02\nFig.\u00a02\nA schematic illustration of the miRNAs and their delivery system in bone diseases.\nA combination of bioinformatic tools along with progress in experimental protocols has worked as a boon for deciphering the functional roles of miRNAs. Results are encouraging, and miRNAs as next-generation medicine therapeutics show promising potential. Nonetheless, the interaction between the miRNA transcriptome and bone disease-associated genes should be further researched for any risks associated with their use in vivo. Concerns like degradation from RNase in vivo, preventing unintentional triggering of an immune cascade, must be resolved before projecting miRNAs as future-generation medicine. Moreover, efforts must be put forward to detect (a profile of the expression pattern) miRNAs associated with bone-related diseases so that miRNAs could be projected as potential biomarkers for properly diagnosing bone diseases and their severity.\nTo become a therapeutic candidate, miRNAs must undergo various refined animal experiments and clinical trials. The functionality of miRNAs might depend on certain factors like time of action, different concentrations, nature of microenvironments, and efficacy of delivery to the target. However, in this case, understanding miRNAs is still in its initial fancy stage. Studies focused on achieving safety, efficacy, and targeted delivery systems, along with optimized chemical modifications for miRNA as modulators, can be the answers to resolve these issues. Though progress has been made in delivering oligonucleotides to the cells and tissues, improved targeting ability, and the ability to stay long-term in the blood circulation, miRNA-based delivery systems need further research and continuous efforts by researchers. In this review, we have discussed some of the progress in the delivery systems of miRNAs to the bone. However, more studies are required to analyze new biomaterials with new methods for the delivery of miRNAs to the desired site of action. Recent studies have shown that cell-derived membrane vesicles, which include exosomes, microvesicles, and apoptotic bodies, can offer a great advantage as miRNA delivery systems. They have been projected as ideal delivery vectors because of their negligible antigenicity and low cytotoxicity. Moreover, these delivery systems are sufficiently stable for long-term storage and oral administration.\nFunding\nThis research was funded by 10.13039/501100002632Hallym University Research Fund and by Basic Science Research Program through the 10.13039/501100003725National Research Foundation of Korea (NRF) funded by the Ministry of Education (NRF-2020R1C1C1008694).\nCRediT authorship contribution statement\nAshish Ranjan Sharma: Writing \u2013 original draft, Writing \u2013 review & editing, Funding acquisition, Project administration, Supervision. Yeon-Hee Lee: Formal analysis, Validation. Sang-Soo Lee: Writing \u2013 review & editing.\nDeclaration of competing interest\nThe authors declare the following financial interests/personal relationships which may be considered as potential competing interests:\nAshish Ranjan Sharma reports financial support was provided by 10.13039/501100003725National Research Foundation of Korea.",
+          "cos_sim_score": 0.6204738616943359,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9860349",
+          "title": "Recent advancements of miRNAs in the treatment of bone diseases and their delivery potential",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9860349/",
+          "text": "The miRNAs have been employed as a therapeutic agent in many bone diseases. Some of the miRNAs and their therapeutic roles in bone diseases are listed below (Table\u00a01). The secondary structures of the miRNAs is depicted in Fig.\u00a01. Human miRNAs, their mature sequences, pre-microRNAs nucleotide, and miRBase ID having a significant role in bone disease are summarized in Table\u00a02.Table\u00a01Chromosomal location and specific functions of miRNAs in bone.Table\u00a01Sl.no.miRNA nameChromosomal locationFunctionsReferences1miR-185Chr22Represses cells growth and metastasis of osteosarcoma cells by targeting cathepsin E(Wu et\u00a0al., 2022)2miR-338-3pChr17Enhances the proliferation of osteosarcoma cells by regulating the HIF-1/Rap1/PI3K-Akt pathway(Li et\u00a0al., 2021)3miR-365Chr16Helps in the progression of OP by inhibiting osteogenic differentiation by targeting RUNX2Cheng et\u00a0al. (2019)4miR-150Chr19Act as major epigenetic repressors and inhibits cell proliferationSelvam et\u00a0al. (2022)5miR-214Chr1Inhibits the osteoblast function by targeting ATF4 protein and promotes the function of osteoclast through phosphatase and tensin homologWang et\u00a0al. (2019)6miR-152Chr17Stimulates the viability and osteogenic differentiation of periodontal ligament stem cells by targeting integrin alphaWu and Ma (2020)7miR-134Chr14Augments the osteosarcoma chemoresistance through miR-134/PTBP1 signaling cascadeZhang et\u00a0al. (2021)8miR-544Chr14Deregulates a gene\u2013protein network and contributes to the pathogenesis of osteosarcomaThayanithy et\u00a0al. (2012)9miR-369-3pChr14Deregulates a gene\u2013protein network and contributes to the pathogenesis of osteosarcomaThayanithy et\u00a0al. (2012)10miR-382Chr14Deregulates a gene\u2013protein network and contributes to the pathogenesis of osteosarcomaThayanithy et\u00a0al. (2012)11MiR-21Chr17Regulates the KLF3 protein to promote osteoblast proliferationZhai et\u00a0al. (2019)12miR-186-5pChr1Inhibits the PI3K/AKT signaling of non-traumatic osteonecrosisXu et\u00a0al. (2019)13miR-127Chr14Helps in the progression of osteoarthritis by regulating the miR-127-5p/NAMPT axisLiu et\u00a0al. (2021)14miR-214Chr1Supports osteoclasts' differentiation through PI3K/Akt pathway by targeting\u00a0\u200bPTEN.Zhao et\u00a0al.",
+          "cos_sim_score": 0.6143413782119751,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9860349",
+          "title": "Recent advancements of miRNAs in the treatment of bone diseases and their delivery potential",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9860349/",
+          "text": "3.7\nOsteomyelitis\nOsteomyelitis is a bacterial infection caused by Streptococcus pnuemoniae, Staphylococcus aureus, or Kingella kingae, resulting in bone swelling. The disease gradually causes bone decay, leading to necrotic bone (Hatzenbuehler and Pulling, 2011; Birt et\u00a0al., 2017). The research of using miRNA-based therapeutics against osteomyelitis has not been explored to a greater extent to date. Jin et\u00a0al. reported that miR-24, a key regulator of osteogenesis, was downregulated in osteomyelitis patients. This miRNA targets the CHI3L1 gene responsible for the secretion of several proteins responsible for inflammation. Thus, the overexpression of miR-24 can be a competent agent in preventing this bone infection caused by Staphylococcus aureus (Jin et\u00a0al., 2015). However, treatment with algal extracts dramatically increased the expression of osteoblast-specific markers like Runx2, osteocalcin, alkaline phosphatase, and other miRNAs like miR-29b and miR-27a (Bourebaba et\u00a0al., 2020). miR-146a suppressed inflammation response and induced osteogenesis in Staphylococcus aureus-induced osteomyelitis mice model (Jiang et\u00a0al., 2022).\n3.8\nMultiple myeloma bone disease\nMultiple myeloma bone disease is caused by excessive osteolysis due to increased osteoclastogenesis and decreased osteoblastogenesis, which is also the clinical symptom of multiple myeloma that is the second most common hematologic malignancy (Rajkumar and Kumar, 2016; Szudy-Szczyrek et\u00a0al., 2022). miRNA-29b has been projected as a tumor suppressor in multiple myeloma as it was shown to induce apoptosis in human myeloma cell lines and is antagonistic with IL-6 (Zhang et\u00a0al., 2011). Exosomal miR-4261 can target and downregulate the ATP2B4 of the red blood cells with hypercalcemia, suggesting it to be an efficient therapeutic agent (Bian et\u00a0al., 2022). The encapsulation of miR-34a into chitosan/PLGA nanoparticles can be employed as a potential therapeutic against multiple myeloma disease as it hindered the tumor growth in mice models (Cosco et\u00a0al., 2015). The exosomal circ-ATP10A can also promote multiple myeloma angiogenesis by regulating the miRNAs like hsa-miR-1266-3p, hsa-miR-3620-3p, hsa-miR-3977, hsa-miR-6758-3p, and hsa-miR-6804-3p and their downstream mRNAs namely VEGFB, PDGF, HIF1A, and FGF) (Yu et\u00a0al., 2022). Some previous study reported that miR-15, miR-16, miR-21, miR-34 family, and miR-221 are involved in the pathogenesis and progression of multiple myeloma (Handa et\u00a0al., 2019). Papanota et\u00a0al. provided the insight that circulating let-7b-5p, miR-143-3p, miR-17-5p, miR-335-5p, and miR-214-3p can be employed as a biomarker for the prognosis of multiple myeloma bone disease (Papanota et\u00a0al., 2021).\n3.9\nThalassemia bone disease",
+          "cos_sim_score": 0.5856591463088989,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

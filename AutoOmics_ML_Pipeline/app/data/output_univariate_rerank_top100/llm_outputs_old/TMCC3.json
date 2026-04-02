@@ -1,0 +1,120 @@
+{
+  "probe_id": "11728840_at",
+  "gene_symbol": "TMCC3",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0993807989999906,
+  "abs_fold_change": 1.4759,
+  "score": 1.47,
+  "probe_count": 1,
+  "probe_ids": "11728840_at",
+  "max_score": 1.47,
+  "mean_abs_fold_change": 1.4759,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T02:12:39",
+  "interpretation": "TMCC3 (Transmembrane and coiled-coil domain protein 3) is involved in maintaining the structure of the endoplasmic reticulum (ER) and is known to interact with proteins that regulate cellular processes. While there is no direct evidence linking TMCC3 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its association with bone fracture suggests a potential relevance to bone health. The retrieved evidence primarily connects TMCC3 to other diseases, such as schizophrenia and diabetic eye disease, with no strong mechanistic link to SONFH identified. Therefore, the biological inference is that TMCC3 may play a role in cellular stress responses that could be relevant in the context of steroid-induced bone damage, but this connection remains speculative. Overall, the evidence is weak, indicating that TMCC3 is unlikely to serve as a reliable early-detection biomarker for SONFH.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "TMCC3's role in cellular processes may indirectly relate to bone health, but it lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "TMCC3 (Q9ULS5). https://www.uniprot.org/uniprotkb/Q9ULS5",
+    "TMCC3 \u2194 schizophrenia. https://platform.opentargets.org/target/ENSG00000057704/associations",
+    "TMCC3 \u2194 diabetic eye disease. https://platform.opentargets.org/target/ENSG00000057704/associations",
+    "TMCC3 \u2194 mathematical ability. https://platform.opentargets.org/target/ENSG00000057704/associations",
+    "TMCC3 \u2194 bone fracture. https://platform.opentargets.org/target/ENSG00000057704/associations",
+    "TMCC3 \u2194 male infertility. https://platform.opentargets.org/target/ENSG00000057704/associations",
+    "Atlastin. https://en.wikipedia.org/wiki/Atlastin",
+    "List of human protein-coding genes 8. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_8"
+  ],
+  "token_usage": {
+    "prompt_tokens": 3019,
+    "completion_tokens": 257,
+    "total_tokens": 3276,
+    "estimated_cost_usd": 0.000607
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9ULS5",
+          "title": "TMCC3 (Q9ULS5)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9ULS5",
+          "text": "Protein: Transmembrane and coiled-coil domain protein 3",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000057704::MONDO_0005090",
+          "title": "TMCC3 \u2194 schizophrenia",
+          "url": "https://platform.opentargets.org/target/ENSG00000057704/associations",
+          "text": "Disease: schizophrenia\nDescription: A major psychotic disorder characterized by abnormalities in the perception or expression of reality. It affects the cognitive and psychomotor functions. Common clinical signs and symptoms include delusions, hallucinations, disorganized thinking, and retreat from reality.\nAssociation score: 0.374",
+          "cos_sim_score": 0.3744130343038497,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000057704::EFO_0009486",
+          "title": "TMCC3 \u2194 diabetic eye disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000057704/associations",
+          "text": "Disease: diabetic eye disease\nDescription: A group of disorders affecting the eye in patients with diabetes mellitus. It includes cataract, glaucoma, retinopathy, and blindness. [ NCI ]\nAssociation score: 0.317",
+          "cos_sim_score": 0.31740372410900175,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000057704::EFO_0004875",
+          "title": "TMCC3 \u2194 mathematical ability",
+          "url": "https://platform.opentargets.org/target/ENSG00000057704/associations",
+          "text": "Disease: mathematical ability\nDescription: Is the mental process necessary to acquire knowledge or skill in the measurement, properties, and relationships of quantities and sets, using numbers and symbols (mathematics)\nAssociation score: 0.316",
+          "cos_sim_score": 0.3157385764935919,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000057704::EFO_0003931",
+          "title": "TMCC3 \u2194 bone fracture",
+          "url": "https://platform.opentargets.org/target/ENSG00000057704/associations",
+          "text": "Disease: bone fracture\nDescription: Breaks in bones.\nAssociation score: 0.297",
+          "cos_sim_score": 0.2966020233763761,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000057704::EFO_0004248",
+          "title": "TMCC3 \u2194 male infertility",
+          "url": "https://platform.opentargets.org/target/ENSG00000057704/associations",
+          "text": "Disease: male infertility\nDescription: The inability of the male to effect fertilization of an ovum after a specified period of unprotected intercourse. Male sterility is permanent infertility.\nAssociation score: 0.287",
+          "cos_sim_score": 0.28681820723789025,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Atlastin",
+          "title": "Atlastin",
+          "url": "https://en.wikipedia.org/wiki/Atlastin",
+          "text": "Atlastins (ATLs) are a class of endoplasmic reticulum (ER) GTPases. Invertebrates have a single ATL, while vertebrates possess three ATL proteins (ATL1-3) that are differentially expressed. ATL1 is the predominant paralog of the central nervous system, whereas ATL2 and ATL3 are mainly expressed in tissues outside of the CNS. Loss of all ATLs in mammalian cells dramatically impacts ER structure, including a reduction in tubule three-way junctions.\n\nFunction and Regulation\nATLs maintain the ER tubular network via homotypic fusion. ATLs have a conserved domain structure consisting of a globular G domain, a three-helix bundle, two transmembrane domains, and an amphipathic helix. The ATL fusion cycle consists of two ATL monomers in opposing membranes binding GTP, which induces trans G domain dimerization and a crossing over of the three-helix bundle. Crossover and subsequent insertion of the amphipathic helix into the lipid bilayer triggers lipids to mix for fusion. Lastly, GTP is hydrolyzed driving the dimer to disassembly and resetting the fusion machinery.\nWhile most of the human ATL protein structure is conserved between paralogs, the proteins have non-conserved N- and C-termini with the C-termini of ATL1 and ATL2 being autoinhibitory. ATL1 has been shown to interact with a range of proteins including spastin and REEP1, with spastin enhancing ATL1 fusion activity in vitro. ATL1 and ATL2 have also been observed as interacting with ER protein TMCC3, and ATL3 with nonstructural viral proteins, however it is not currently known how these interactions modulate protein function.\n\nATLs and Disease\nMutations in ATLs are linked to human disease. Mutations in ATL3 are associated with hereditary sensory neuropathy (HSN), and mutations in ATL1 are linked to HSN and hereditary spastic paraplegia (HSP). Research has identified a number of mutations that correspond to the disease phenotype, including the ATL3 Y192C disease mutation that is equivalent to the Y196C mutation in ATL1. Work to identify disease mutants remains ongoing, with a novel nonsense ATL3 mutation being identified in early 2023. ATL3 HSN mutations affect the protein's fusion cycle by causing aberrant tethering. Similarly, an ATL1 HSP mutation was shown to increase tethering but not impact GTPase activity.\n\n\n== References ==",
+          "cos_sim_score": 0.14836207032203674,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of human protein-coding genes 8",
+          "title": "List of human protein-coding genes 8",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_8",
+          "text": "== References ==",
+          "cos_sim_score": 0.09947171807289124,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

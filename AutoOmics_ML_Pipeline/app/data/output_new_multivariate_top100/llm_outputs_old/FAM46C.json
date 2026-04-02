@@ -1,0 +1,96 @@
+{
+  "probe_id": "11739340_at",
+  "gene_symbol": "FAM46C",
+  "rf_importance": 0.0062,
+  "selection_freq": 1.0,
+  "abs_fold_change": 2.7707061999999985,
+  "score": 0.432,
+  "probe_count": 3,
+  "probe_ids": "11739340_at | 11739338_at | 11739339_s_at",
+  "max_score": 0.432,
+  "mean_abs_fold_change": 2.4691,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T00:00:52",
+  "interpretation": "FAM46C, also known as TENT5C, is involved in the stabilization and expression of mRNA, particularly those encoding proteins targeted to the endoplasmic reticulum. This function is crucial for maintaining cellular homeostasis and responding to stress, which may be relevant in the context of steroid-induced osteonecrosis of the femoral head (SONFH). Although there is no direct evidence linking FAM46C to SONFH, its role in mRNA stability and potential involvement in bone metabolism suggest it could influence the disease process indirectly. The retrieved evidence primarily connects FAM46C to other conditions such as multiple myeloma and diabetes, which are associated with bone health and metabolic dysregulation. Therefore, while the evidence is limited, FAM46C may serve as a weak candidate biomarker for SONFH due to its biological functions and associations with related diseases.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "FAM46C may influence the pathophysiology of steroid-induced osteonecrosis of the femoral head through its role in mRNA stability and cellular stress responses.",
+  "citations": [
+    "TENT5C (Q5VWP2). https://www.uniprot.org/uniprotkb/Q5VWP2",
+    "FAM46C \u2014 TENT5C. https://platform.opentargets.org/target/ENSG00000183508",
+    "FAM46C \u2194 multiple myeloma. https://platform.opentargets.org/target/ENSG00000183508/associations",
+    "FAM46C \u2194 type 2 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000183508/associations",
+    "FAM46C \u2194 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000183508/associations",
+    "FAM46C \u2194 Thromboembolism. https://platform.opentargets.org/target/ENSG00000183508/associations"
+  ],
+  "token_usage": {
+    "prompt_tokens": 2785,
+    "completion_tokens": 250,
+    "total_tokens": 3035,
+    "estimated_cost_usd": 0.000568
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q5VWP2",
+          "title": "TENT5C (Q5VWP2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q5VWP2",
+          "text": "Protein: Terminal nucleotidyltransferase 5C\nFunction: Catalyzes the transfer of one adenosine molecule from an ATP to an mRNA poly(A) tail bearing a 3'-OH terminal group and enhances mRNA stability and gene expression (PubMed:28931820, PubMed:32009146, PubMed:34048638). Can also elongate RNA oligos ending with uridine molecule, provided that the sequence is adenosine-rich (PubMed:34048638). Mainly targets mRNAs encoding endoplasmic reticulum-targeted protein (PubMed:28931820) (Microbial infection) Seems to enhance replication of some viruses, including yellow fever virus, in response to type I interferon",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000183508::function",
+          "title": "FAM46C \u2014 TENT5C",
+          "url": "https://platform.opentargets.org/target/ENSG00000183508",
+          "text": "Function: Catalyzes the transfer of one adenosine molecule from an ATP to an mRNA poly(A) tail bearing a 3'-OH terminal group and enhances mRNA stability and gene expression (PubMed:28931820, PubMed:32009146, PubMed:34048638). Can also elongate RNA oligos ending with uridine molecule, provided that the sequence is adenosine-rich (PubMed:34048638). Mainly targets mRNAs encoding endoplasmic reticulum- targeted protein (PubMed:28931820).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000183508::EFO_0001378",
+          "title": "FAM46C \u2194 multiple myeloma",
+          "url": "https://platform.opentargets.org/target/ENSG00000183508/associations",
+          "text": "Disease: multiple myeloma\nDescription: A bone marrow-based plasma cell neoplasm characterized by a serum monoclonal protein and skeletal destruction with osteolytic lesions, pathological fractures, bone pain, hypercalcemia, and anemia. Clinical variants include non-secretory myeloma, smoldering myeloma, indolent myeloma, and plasma cell leukemia. (WHO, 2001)\nAssociation score: 0.538",
+          "cos_sim_score": 0.5382095589220899,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000183508::MONDO_0005148",
+          "title": "FAM46C \u2194 type 2 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000183508/associations",
+          "text": "Disease: type 2 diabetes mellitus\nDescription: A type of diabetes mellitus that is characterized by insulin resistance or desensitization and increased blood glucose levels. This is a chronic disease that can develop gradually over the life of a patient and can be linked to both environmental factors and heredity.\nAssociation score: 0.515",
+          "cos_sim_score": 0.5146248614059772,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000183508::EFO_0000400",
+          "title": "FAM46C \u2194 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000183508/associations",
+          "text": "Disease: diabetes mellitus\nDescription: A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization.\nAssociation score: 0.484",
+          "cos_sim_score": 0.4844536273570946,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000183508::HP_0001907",
+          "title": "FAM46C \u2194 Thromboembolism",
+          "url": "https://platform.opentargets.org/target/ENSG00000183508/associations",
+          "text": "Disease: Thromboembolism\nDescription: The formation of a blood clot inside a blood vessel that subsequently travels through the blood stream from the site where it formed to another location in the body, generally leading to vascular occlusion at the distant site.\nAssociation score: 0.420",
+          "cos_sim_score": 0.42013208083354797,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

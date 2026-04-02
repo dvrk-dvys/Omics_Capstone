@@ -1,0 +1,152 @@
+{
+  "rf_rank": 49,
+  "probe_id": "11726636_s_at",
+  "gene_symbol": "KAT6A",
+  "score": 0.5,
+  "rf_n_nodes": 1,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.7369,
+  "log_fc": 0.7369,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11726636_s_at",
+  "max_score": 0.5,
+  "mean_abs_fold_change": 0.7369,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T20:33:45",
+  "interpretation": "KAT6A (lysine acetyltransferase 6A) is a histone acetyltransferase that plays a crucial role in modifying chromatin structure and regulating gene expression by acetylating lysine residues on histones. This gene is involved in various cellular processes, including transcriptional regulation, and has been linked to developmental disorders and certain cancers. While there is no direct evidence linking KAT6A to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in gene regulation and potential involvement in pathways related to bone health suggest it may influence osteogenic processes indirectly. The evidence regarding KAT6A's specific connection to SONFH is limited, leading to a moderate confidence in its relevance as a biomarker. Thus, while KAT6A may not be a strong candidate for early detection of SONFH, its biological functions warrant further investigation in the context of steroid-induced bone pathologies.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "KAT6A may influence osteogenic processes, but its specific role in Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) remains unclear.",
+  "citations": [
+    "KAT6A (Q92794). https://www.uniprot.org/uniprotkb/Q92794",
+    "KAT6A \u2014 KAT6A. https://platform.opentargets.org/target/ENSG00000083168",
+    "KAT6A \u2194 autosomal dominant intellectual disability-craniofacial anomalies-cardiac defects syndrome. https://platform.opentargets.org/target/ENSG00000083168/associations",
+    "KAT6A \u2194 Intellectual disability. https://platform.opentargets.org/target/ENSG00000083168/associations",
+    "KAT6A \u2194 autosomal dominant non-syndromic intellectual disability. https://platform.opentargets.org/target/ENSG00000083168/associations",
+    "KAT6A \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000083168/associations",
+    "KAT6A. https://en.wikipedia.org/wiki/KAT6A",
+    "Autosomal dominant intellectual disability-craniofacial anomalies-cardiac defects syndrome. https://en.wikipedia.org/wiki/Autosomal_dominant_intellectual_disability-craniofacial_anomalies-cardiac_defects_syndrome",
+    "Papillary hidradenoma. https://en.wikipedia.org/wiki/Papillary_hidradenoma",
+    "Prifetrastat. https://en.wikipedia.org/wiki/Prifetrastat"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5371,
+    "completion_tokens": 263,
+    "total_tokens": 5634,
+    "estimated_cost_usd": 0.000963
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q92794",
+          "title": "KAT6A (Q92794)",
+          "url": "https://www.uniprot.org/uniprotkb/Q92794",
+          "text": "Protein: Histone acetyltransferase KAT6A\nFunction: Histone acetyltransferase that acetylates lysine residues in histone H3 and histone H4 (in vitro) (PubMed:11742995, PubMed:11965546). Component of the MOZ/MORF complex which has a histone H3 acetyltransferase activity (PubMed:11965546). May act as a transcriptional coactivator for RUNX1 and RUNX2 (PubMed:12771199). Acetylates p53/TP53 at 'Lys-120' and 'Lys-382' and controls its transcriptional activity via association with PML (PubMed:23431171). May play a role in leukemogenic gene transcription (PubMed:39794553)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000083168::function",
+          "title": "KAT6A \u2014 KAT6A",
+          "url": "https://platform.opentargets.org/target/ENSG00000083168",
+          "text": "Function: Histone acetyltransferase that acetylates lysine residues in histone H3 and histone H4 (in vitro) (PubMed:11742995, PubMed:11965546). Component of the MOZ/MORF complex which has a histone H3 acetyltransferase activity (PubMed:11965546). May act as a transcriptional coactivator for RUNX1 and RUNX2 (PubMed:12771199). Acetylates p53/TP53 at 'Lys-120' and 'Lys-382' and controls its transcriptional activity via association with PML (PubMed:23431171). May play a role in leukemogenic gene transcription (PubMed:39794553).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000083168::MONDO_0014558",
+          "title": "KAT6A \u2194 autosomal dominant intellectual disability-craniofacial anomalies-cardiac defects syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000083168/associations",
+          "text": "Disease: autosomal dominant intellectual disability-craniofacial anomalies-cardiac defects syndrome\nDescription: A rare genetic neurodevelopmental disorder characterized by global developmental delay (DD) and variable degrees of intellectual disability (ID) with delayed or limited/absent speech development associated with neonatal hypotonia, feeding difficulties, cardiac anomalies and dysmorphic facial features, predominantly broad nasal tip and thin, tented upper lip. Microcephaly, frequent infections, gastrointestinal and/or ocular anomalies have also been described.\nAssociation score: 0.791",
+          "cos_sim_score": 0.7908994336990406,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000083168::HP_0001249",
+          "title": "KAT6A \u2194 Intellectual disability",
+          "url": "https://platform.opentargets.org/target/ENSG00000083168/associations",
+          "text": "Disease: Intellectual disability\nDescription: The term intellectual disability or intellectual developmental disorder is used to describe significantly sub-average intellectual and adaptive functioning based on clinical assessment and as measured by individually administered, appropriately normed, standardized and validated tests of intellectual functioning and adaptive behavior, with onset during the developmental period from infancy through adolescence.\nAssociation score: 0.576",
+          "cos_sim_score": 0.575995566021211,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000083168::MONDO_0015802",
+          "title": "KAT6A \u2194 autosomal dominant non-syndromic intellectual disability",
+          "url": "https://platform.opentargets.org/target/ENSG00000083168/associations",
+          "text": "Disease: autosomal dominant non-syndromic intellectual disability\nDescription: Autosomal dominant form of non-syndromic intellectual disability.\nAssociation score: 0.572",
+          "cos_sim_score": 0.5717561501238687,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000083168::EFO_0005772",
+          "title": "KAT6A \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000083168/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.560",
+          "cos_sim_score": 0.5598449030818289,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::KAT6A",
+          "title": "KAT6A",
+          "url": "https://en.wikipedia.org/wiki/KAT6A",
+          "text": "K(lysine) acetyltransferase 6A (KAT6A), is an enzyme that, in humans, is encoded by the KAT6A gene. This gene is located on human chromosome 8, band 8p11.21.\n\nProtein function\nThe KAT6A protein contains two nuclear localization domains, a C2HC3 zinc finger and an acetyltransferase domain.  This structure suggests that KAT6A functions as a chromatin-bound acetyltransferase. KAT6A is important for the proper development of hematopoietic stem cells.\n\nArboleda-Tham syndrome\nArboleda-Tham syndrome (ARTHS), also referred to as KAT6A Syndrome (Arboleda-Tham Syndrome), is a rare autosomal dominant developmental disorder, caused by various missense, nonsense, and frameshift mutations in the KAT6A gene. The main characteristics of this syndrome are developmental delay, impaired intellectual development, speech delay, microcephaly, cardiac anomalies, and gastrointestinal complications.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.4659285843372345,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Autosomal dominant intellectual disability-craniofacial anomalies-cardiac defects syndrome",
+          "title": "Autosomal dominant intellectual disability-craniofacial anomalies-cardiac defects syndrome",
+          "url": "https://en.wikipedia.org/wiki/Autosomal_dominant_intellectual_disability-craniofacial_anomalies-cardiac_defects_syndrome",
+          "text": "Autosomal dominant intellectual disability-craniofacial anomalies-cardiac defects syndrome is a rare genetic disorder which is characterized by multi-systemic symptoms primarily affecting the intellect and  post-natal development.\n\nSigns and symptoms\nSymptoms within people with the disorder vary, but they are generally the following:\n\nIntellectual\nIntellectual disabilities\n\nDevelopmental\nWidespread developmental delays\nSpeech delays (which can sometimes last into adulthood)\nFeeding difficulties\n\nIntestinal\nAcid reflux\nChronic constipation\n\nCardiac\nAtrial septal defect\nVentricular septal defect\nPatent foramen ovale\nPersistent ductus arteriosus\n\nOcular\nStrabismus\nAmblyopia\nRefractory errors\n\nFacial\nBroad nose\nThin upper lip\nBitemporal narrowing\nMicrocephaly\nLess common symptoms include craniosynostosis, autism, sleep disturbance, epilepsy, recurrent viral infections.\n\nCauses\nThis condition is caused by heterozygous mutations in the KAT6A gene, in chromosome 8. These mutations are often sporadic, and are either frameshift, missense, and nonsense.\n\nDiagnosis\nDiagnosis of the disorder is established by gene sequencing.\n\nTreatment\nEpidemiology\nAccording to OMIM, 78 cases have been described in medical literature.\n\n\n== References ==",
+          "cos_sim_score": 0.3105529546737671,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Papillary hidradenoma",
+          "title": "Papillary hidradenoma",
+          "url": "https://en.wikipedia.org/wiki/Papillary_hidradenoma",
+          "text": "Gene and signaling pathway abnormalities\nSeveral studies have reported the presence in anogenital papillary hidradenoma tumor cells of mutations in one or multiple genes that lead to the production of proteins that directly or indirectly stimulate the PI3K/AKT/mTOR intracellular signaling pathway. The mutated genes include PIK3CA, AKT1, PIK3CA, MAGI1, SYNE1, USP9X, KLNI (also termed CASC5), RNF213, FLCN, PDGFRB, AR (i.e. the androgen receptor gene), BTK, MLL3, KAT6A, BRD3, EP400, TET2, IL6, and IL7R. The PI3K/AKT/mTOR pathway promotes the grow (i.e. proliferation) and survival of cells and is abnormally activated in, and appears to contribute to the development and or progression of, a wide range of tumors. While further studies are needed, these findings suggest that the cited mutations lead to stimulation of the PI3K/AKT/mTOR pathway and thereby promote the development and/or progression of anogenital papillary hidradenoma in the majority of cases. These abnormalities have not yet been reported in ectopic papillary hidradenomas.\n\nDiagnosis\nThe diagnosis of anogenital papillary hidradenoma lesions, while often suggested based on their clinical presentations, must be differentiated from a wide range of other similarly presenting anogenital lesions such as hemorrhoidal disease, anorectal abscesses, virus-related wart-like lesions, sebaceous cysts, mucous cysts, lipomas, neurofibromas, metastatic carcinomas with papillary histopathology, syringocystoadenocarcinoma papilliferum (i.e. malignant syringocystadenoma papilliferum), syringocystadenoma papilliferum, melanomas, eccrine porocarcinomas, squamous cell carcinomas, nodular lesions in extramammary Paget disease, dermatofibroma, focal areas of mucinosis, colloid milium, and sebaceous adenomas. This differentiation is made by finding that a lesion has the histopathological features typical of papillary hidradenomas. However, some cases diagnosed as ectopic papillary hidradenomas, particularly those occurring in men, have subsequently been found to be syringocystadenoma papilliferums or trichoepitheliomas. Further studies are required to better define the criteria for ectopic papillary hidradenomas.\n\nTreatment and prognosis\nThe treatment of choice for anogenital and ectopic papillary hidradenomas, regardless of their locations, is similar: resection of the tumor while preserving the surrounding structures. Recurrence of these tumors is rare and usually due to incomplete removal of the primary lesion. As of 2021, there has been no reported recurrence of ectopic papillary hidradenomas. Prognosis after complete surgical removal of anogenital and ectopic papillary hidradenomas is excellent.\n\nMalignant transformation of papillary hidradenomas\nTransformations of papillary hidradenomas into malignant forms are extremely rare. Two cases progressed to in situ (malignant cells present in the tumor but have neither metastasized, i.e. spread to distant tissues nor invaded beyond the layer of tissue from where they arose) cancers; two cases appeared to have infiltrated locally but not metastasized; and one case was a rapidly fatal lesion that appeared to be an adenosquamous carcinoma that arose in a papillary hidradenoma. It is not clear that these cases actually represent true progression of papillary hidradenoma into a cancer.\n\nSee also\nHidroacanthoma simplex\nList of cutaneous conditions\n\nReferences\n\n\n== External links ==",
+          "cos_sim_score": 0.24199847877025604,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Prifetrastat",
+          "title": "Prifetrastat",
+          "url": "https://en.wikipedia.org/wiki/Prifetrastat",
+          "text": "Prifetrastat (development code PF-07248144) is an investigational oral epigenetic drug developed by Pfizer for the treatment of hormone receptor-positive, HER2-negative metastatic breast cancer.\nThe drug is a first-in-class selective inhibitor of the histone acetyltransferases KAT6A and KAT6B, enzymes that regulate gene transcription through histone acetylation at lysine 23 (H3K23). Prifetrastat has shown promising results in early clinical trials, particularly when combined with fulvestrant, in patients whose disease has progressed after treatment with CDK4/6 inhibitors and endocrine therapy. As of 2025, the compound is being evaluated in Phase 3 clinical development.\n\nMedical uses\nPrifetrastat is being investigated for the treatment of patients with estrogen receptor-positive (ER+), HER2-negative metastatic breast cancer, particularly those who have experienced disease progression following treatment with a CDK4/6 inhibitor and at least one line of endocrine therapy.\n\nMechanism of action\nPrifetrastat functions as a potent and selective catalytic inhibitor of the histone lysine acetyltransferases KAT6A and KAT6B. These enzymes are members of the MYST family of acetyltransferases and play crucial roles in regulating gene expression by adding acetyl groups to histone H3 at lysine 23 (H3K23), as well as to other non-histone substrates.\nKAT6A is located on chromosome 8 and is amplified in approximately 10-15% of patients with ER-positive breast cancer. KAT6A amplification has been associated with the ability to repress estrogen receptor gene transcription, thereby contributing to resistance to endocrine therapy, particularly in the context of ESR1 mutations. By inhibiting KAT6A and KAT6B, prifetrastat suppresses estrogen receptor expression and overcomes resistance mechanisms that limit the efficacy of standard endocrine therapies.\nIn preclinical studies, prifetrastat demonstrated potent antitumor activity in ER-positive, HER2-negative patient-derived xenograft (PDX) models that had been pretreated with palbociclib and letrozole, suggesting the compound's ability to overcome acquired resistance to CDK4/6 inhibitors, which is under investigation.\n\nClinical development\nPhase 1 study\nAn ongoing Phase 1 study (NCT04606446) is a multicenter, open-label dose escalation and expansion trial designed to evaluate the safety, tolerability, pharmacokinetics, pharmacodynamics, and preliminary efficacy of prifetrastat as monotherapy and in combination with other anticancer agents. As of 2024, interim results from multiple completed cohorts have been reported in peer-reviewed publications and at scientific conferences.\n\nPhase 3 development\nBased on the Phase 1 results, Pfizer has advanced prifetrastat  to a Phase 3 trial to evaluate prifetrastat in combination with fulvestrant in patients with ER+/HER2- metastatic breast cancer who have progressed following treatment with a CDK4/6 inhibitor and endocrine therapy.\n\nSee also\nBreast cancer\nEstrogen receptor\nEpigenetics\nHistone acetyltransferase\nFulvestrant\nCDK4/6 inhibitor\n\nReferences\nExternal links\nClinical Trials Information at Clinical Trials\nPhase 1 Trial Publication at Nature Medicine",
+          "cos_sim_score": 0.2175758332014084,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Papillary hidradenoma",
+          "title": "Papillary hidradenoma",
+          "url": "https://en.wikipedia.org/wiki/Papillary_hidradenoma",
+          "text": "A papillary hidradenoma, also termed hidradenoma papilliferum or mammary-like gland adenoma of the vulva, is a rare, but nonetheless most common benign tumor that occurs in and between anal and genital regions (i.e. anogenital  area) of females. These hidradenomas are sharply circumscribed, nodular tumors that usually develop in women's anogenital area (particularly the vulva) but uncommonly occur in other sites in women and men. Papillary hidradenomas that develop outside of the anogenital region are termed ecctopic papillary hidradenomas or ectopic hidradenoma papilliferums.\nAnogenital papillary hidradenomas are regarded as tumors that form in anogenital mammary\u2013like glands (MLAGs); MLAGs are a type of apocrine gland. MLAGs were once classified as abnormally located breast tissue glands (see accessory breast tissue@ https://doi.org/10.53347/rID-11125) but are now considered to be normal components of the anogenital region. Microscopically, papillary hidradenomas often resemble certain types of breast tumors. Ectopic papillary hidradenomas are thought to be tumors of apocrine glands which have an as yet unclear relationship to MLAGs.\nTypically, papillary hidradenomas are solitary, slow-growing, small tumors that may have been present for months to many years before the time of diagnosis. The tumors are usually symptomless but may be intermittently or constantly painful, become ulcerated, and exhibit minor levels of bleeding. The pain resulting from these tumors may be simple tenderness, more or less constant usually mild pain, or, in females, dyspareunia, i.e. pain during and just after sexual intercourse.\nRarely, papillary hidradenomas have progressed to what appear to be 1) in situ malignancies (i.e. malignancies that have neither metastasized nor invaded beyond the layer of tissue where they arose); 2) locally invasive malignancies; or 3) complex tumors intermixed with other malignancies such as extramammary Paget disease, melanoma, and squamous cell carcinoma. Furthermore, benign papillary hidradenoma tumors may be confused clinically with cancerous tumors and recent studies have indicated that other types of tumors have often been mistakenly diagnosed as papillary hidradenomas. Papillary hidradenomas, particularly ectopic papillary hidradenomas, require further study to better define the criteria for their diagnosis.",
+          "cos_sim_score": 0.08127176016569138,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

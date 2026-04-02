@@ -1,0 +1,225 @@
+{
+  "probe_id": "11753909_x_at",
+  "gene_symbol": "BANP",
+  "score": 1.0,
+  "SD_TestAUC": 0.0523782800878923,
+  "abs_fold_change": 0.6223,
+  "probe_count": 1,
+  "probe_ids": "11753909_x_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.6223,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T18:38:32",
+  "interpretation": "BANP (BTG3 associated nuclear protein) is involved in regulating cell cycle and apoptosis through its interaction with the tumor suppressor protein TP53, which is crucial for maintaining cellular homeostasis. Although there is no direct evidence linking BANP to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in cell cycle regulation and apoptosis suggests a potential involvement in the pathophysiology of bone diseases, particularly those influenced by steroid treatment. The retrieved evidence primarily highlights its functions in T-cell development and transcriptional repression, which may indirectly relate to the mechanisms of SONFH. Given the lack of direct evidence, the confidence in its role as a biomarker for SONFH is low, but it may still hold moderate potential for further investigation as a candidate biomarker in the context of steroid-induced bone damage.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "BANP may play a role in the cellular processes affected by steroid treatment, which are relevant to the development of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "BANP (Q8N9N5). https://www.uniprot.org/uniprotkb/Q8N9N5",
+    "BANP (Q8N9N5-2). https://www.uniprot.org/uniprotkb/Q8N9N5-2",
+    "BANP (Q8N9N5-7). https://www.uniprot.org/uniprotkb/Q8N9N5-7",
+    "BANP \u2014 BANP. https://platform.opentargets.org/target/ENSG00000172530",
+    "BANP \u2194 obesity. https://platform.opentargets.org/target/ENSG00000172530/associations",
+    "BANP \u2194 metabolic syndrome. https://platform.opentargets.org/target/ENSG00000172530/associations",
+    "BANP \u2194 breast carcinoma. https://platform.opentargets.org/target/ENSG00000172530/associations",
+    "BANP \u2194 prostate carcinoma. https://platform.opentargets.org/target/ENSG00000172530/associations",
+    "BANP \u2014 BTG3 associated nuclear protein (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TP53 \u2014 tumor protein p53 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "BEND3 \u2014 BEN domain containing 3 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HIF1A \u2014 hypoxia inducible factor 1 subunit alpha (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Circular RNAs in stem cell differentiation: a sponge-like role for miRNAs (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8100645/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8466,
+    "completion_tokens": 311,
+    "total_tokens": 8777,
+    "estimated_cost_usd": 0.001456
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q8N9N5",
+          "title": "BANP (Q8N9N5)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8N9N5",
+          "text": "Protein: Protein BANP\nFunction: Controls V(D)J recombination during T-cell development by repressing T-cell receptor (TCR) beta enhancer function (By similarity). Binds to scaffold/matrix attachment region beta (S/MARbeta), an ATC-rich DNA sequence located upstream of the TCR beta enhancer (By similarity). Represses cyclin D1 transcription by recruiting HDAC1 to its promoter, thereby diminishing H3K9ac, H3S10ph and H4K8ac levels (PubMed:16166625). Promotes TP53 activation, which causes cell cycle arrest (By similarity). Plays a role in the regulation of alternative splicing (PubMed:26080397). Binds to CD44 pre-mRNA and negatively regulates the inclusion of CD44 proximal variable exons v2-v6 but has no effect on distal variable exons v7-v10 (PubMed:26080397)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q8N9N5-2",
+          "title": "BANP (Q8N9N5-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8N9N5-2",
+          "text": "Protein: Isoform 2 of Protein BANP",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q8N9N5-7",
+          "title": "BANP (Q8N9N5-7)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8N9N5-7",
+          "text": "Protein: Isoform 7 of Protein BANP",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000172530::function",
+          "title": "BANP \u2014 BANP",
+          "url": "https://platform.opentargets.org/target/ENSG00000172530",
+          "text": "Function: Controls V(D)J recombination during T-cell development by repressing T-cell receptor (TCR) beta enhancer function (By similarity). Binds to scaffold/matrix attachment region beta (S/MARbeta), an ATC-rich DNA sequence located upstream of the TCR beta enhancer (By similarity). Represses cyclin D1 transcription by recruiting HDAC1 to its promoter, thereby diminishing H3K9ac, H3S10ph and H4K8ac levels (PubMed:16166625). Promotes TP53 activation, which causes cell cycle arrest (By similarity). Plays a role in the regulation of alternative splicing (PubMed:26080397). Binds to CD44 pre-mRNA and negatively regulates the inclusion of CD44 proximal variable exons v2-v6 but has no effect on distal variable exons v7-v10 (PubMed:26080397).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172530::EFO_0001073",
+          "title": "BANP \u2194 obesity",
+          "url": "https://platform.opentargets.org/target/ENSG00000172530/associations",
+          "text": "Disease: obesity\nDescription: An eating-related disorder in which excess body fat has accumulated to such an extent that health may be negatively affected. It is commonly defined as a body mass index (weight divided by height squared) of 30 kg/m2 or higher.\nAssociation score: 0.342",
+          "cos_sim_score": 0.3416111234812648,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172530::EFO_0000195",
+          "title": "BANP \u2194 metabolic syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000172530/associations",
+          "text": "Disease: metabolic syndrome\nDescription: A cluster of metabolic risk factors for CARDIOVASCULAR DISEASES and TYPE 2 DIABETES MELLITUS. The major components of metabolic syndrome X include excess ABDOMINAL FAT; atherogenic DYSLIPIDEMIA; HYPERTENSION; HYPERGLYCEMIA; INSULIN RESISTANCE; a proinflammatory state; and a prothrombotic (THROMBOSIS) state. (from AHA/NHLBI/ADA Conference Proceedings, Circulation 2004; 109:551-556)\nAssociation score: 0.290",
+          "cos_sim_score": 0.2899138530124414,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172530::EFO_0000305",
+          "title": "BANP \u2194 breast carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000172530/associations",
+          "text": "Disease: breast carcinoma\nDescription: A carcinoma that arises from epithelial cells of the breast\nAssociation score: 0.290",
+          "cos_sim_score": 0.289584479015962,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172530::EFO_0001663",
+          "title": "BANP \u2194 prostate carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000172530/associations",
+          "text": "Disease: prostate carcinoma\nDescription: A carcinoma that arises from epithelial cells of the prostate gland.\nAssociation score: 0.279",
+          "cos_sim_score": 0.27903994784434105,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "BANP \u2014 BTG3 associated nuclear protein",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: BANP\nGene name: BTG3 associated nuclear protein\nAliases / synonyms: BEND1, SMAR1, SMARBP1\nOrganism: Homo sapiens\nGene summary: This gene encodes a protein that binds to matrix attachment regions. The protein forms a complex with p53 and negatively regulates p53 transcription, and functions as a tumor suppressor and cell cycle regulator. Multiple transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Mar 2010]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "BANP",
+          "aliases": "BEND1, SMAR1, SMARBP1",
+          "gene_description": "BTG3 associated nuclear protein"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TP53 \u2014 tumor protein p53",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TP53\nGene name: tumor protein p53\nAliases / synonyms: BCC7, BMFS5, LFS1, P53, TRP53\nOrganism: Homo sapiens\nGene summary: This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TP53",
+          "aliases": "BCC7, BMFS5, LFS1, P53, TRP53",
+          "gene_description": "tumor protein p53"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "BEND3 \u2014 BEN domain containing 3",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: BEND3\nGene name: BEN domain containing 3\nAliases / synonyms: KIAA1553\nOrganism: Homo sapiens\nGene summary: Enables rDNA binding activity. Involved in negative regulation of macromolecule biosynthetic process; positive regulation of ATP metabolic process; and protein homooligomerization. Located in heterochromatin; nucleolus; and nucleoplasm. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "BEND3",
+          "aliases": "KIAA1553",
+          "gene_description": "BEN domain containing 3"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "HIF1A \u2014 hypoxia inducible factor 1 subunit alpha",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HIF1A\nGene name: hypoxia inducible factor 1 subunit alpha\nAliases / synonyms: HIF-1-alpha, HIF-1A, HIF-1alpha, HIF1, HIF1-ALPHA, MOP1, PASD8, bHLHe78\nOrganism: Homo sapiens\nGene summary: This gene encodes the alpha subunit of transcription factor hypoxia-inducible factor-1 (HIF-1), which is a heterodimer composed of an alpha and a beta subunit. HIF-1 functions as a master regulator of cellular and systemic homeostatic response to hypoxia by activating transcription of many genes, including those involved in energy metabolism, angiogenesis, apoptosis, and other genes whose protein products increase oxygen delivery or facilitate metabolic adaptation to hypoxia. HIF-1 thus plays an essential role in embryonic vascularization, tumor angiogenesis and pathophysiology of ischemic disease. Alternatively spliced transcript variants encoding different isoforms have been identified for this gene. [provided by RefSeq, Jul 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HIF1A",
+          "aliases": "HIF-1-alpha, HIF-1A, HIF-1alpha, HIF1, HIF1-ALPHA, MOP1, PASD8, bHLHe78",
+          "gene_description": "hypoxia inducible factor 1 subunit alpha"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::8100645",
+          "title": "Circular RNAs in stem cell differentiation: a sponge-like role for miRNAs",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8100645/",
+          "text": "Previous studies showed that ER\u03b2 plays an important role in the osteogenesis and trigger MC3T3-E1 cells to undergo osteogenic differentiation 58. However, little is known about the relationship between circRNAs and bone metabolism. In a recent study, RNA-Seq was performed to detect the differentially expressed circRNAs between control and estrogen receptor beta (ER\u03b2) deficient rat BMSCs. It was found that up to 146 cases of circRNAs were diversely expressed by the range of fold-change 2.0 (p \u2264 0.05). Moreover, a total of 68 circRNAs were down-regulated, while 78 were found to be up-regulated 59. Li et al constructed circRNA-microRNA network to predict the miRNA sponges. This study showed that ER\u03b2 may regulate osteoblast differentiation via miR-328-5p-mRNA axis. Previous study indicated that miR-328 up-regulates C/EBP\u03b1 expression to inhibit cell proliferation 59. Taken together, circRNAs-miRNAs network plays an important role in the regulation of osteogenic differentiation and C/EBP\u03b1 may be considered as a mediator during this process. RNA-seq was performed with the aim to explore differential expression of circRNAs in osteoblast differentiation using particular cells named MC3T3-E1 60. A total of 158 circRNAs were differentially expressed between BMP2-treated MC3T3-E1 cells and untreated control cells, and among them 74 were up-regulated while 84 were down-regulated. The expression of circRNA.5846, circRNA.19142 and circRNA.10042 was confirmed to be dramatically up-regulated in the BMP2-treated cells. BMP2 was found to enhance the bone formation and remodeling by regulating the transcription of osteogenic genes both in osteoblast and BMSCs. Bioinformatic analysis of circ_19142 and circ_5846 showed Ywhaz, Plcg1, Src, Thbs1, Ncor2, Rps6kb1, Pdk1, Xiap and Prkci are potential target genes related to FGF, EGF, PDGF and Wnt pathways during this process. The circ_19142/circ_5846-miR-7067-5p-mRNAs axis may participate in the regulation of osteoblast differentiation (Figure 3B).\nCircRNAs in induced pluripotent stem cells differentiation\nInduced pluripotent stem cells (iPSCs) are the reversion of somatic cells differentiation and cell reprogramming. Several circRNAs have been shown to participate in this process. Yu et al reported that circRNA BIRC6 reprograms the somatic cells to human iPSCs by directly acting as a sponge for miRNA involved in the maintenance of the pluripotent state 22. Another circRNA, circFOXP1, has been shown to be downregulated in mesenchymal stem cells when reprogramming to pluripotency 61. The circular RNA map for human iPSCs of fetal origin was also provided and it may highly benefit from clinical research 62. Zhang et al demonstrated that circRNAs upregulate the expression levels of exogenous octamer-binding protein 4 (OCT4) by sponging regulatory microRNAs in iPSCs 63. Overall, circRNAs act as ceRNA for miRNAs that play a critical role during cellular reprogramming.\nPrevious studies have revealed a close linkage between alternations in ribosome and proliferation, cell development and differentiation. Siede et al used RNA-seq to detect 320 differentially expressed circRNAs in human dilated cardiomyopathy (DCM) and control patients 64. The same dynamics of circRNAs from ATXN10, CHD7, DNAJC6 and SLC8A1 were also validated. The rodent homologs of circ_MYOD, circ_SLC8A1, circ_ATXN7 and circ_PHF21A interact with the ribosome during human induced pluripotent stem cell derived cardiomyocytes (hiPSC-CMs) differentiation, which are highly relevant in cardiac dysfunction. Functional studies are required to further clarify the role of these circRNAs refer to their host genes in pathophysiology (Figure 3C).\nCircRNAs in epidermal stem cells differentiation",
+          "cos_sim_score": 0.29639285802841187,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8100645",
+          "title": "Circular RNAs in stem cell differentiation: a sponge-like role for miRNAs",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8100645/",
+          "text": "CircRNA in maxillary sinus membrane stem cells differentiation\nMaxillary sinus membrane stem cells (MSMSCs) exhibit osteogenic potential and may find their use in bone repair of maxilla. By using microarray analysis, Peng et al. revealed that the novel pathway circRNA_33287/miR-214-3p/Runx3 plays a role in the regulation of the osteoblastic differentiation in MSMSCs. Additionally, BMP2 may also induce the osteogenic differentiation by enhancing the expression of circRNA_33287 38. However, only a few studies have been carried out on this aspect of circRNAs in MSMSCs and therefore the underlying mechanisms remain largely elusive (Figure 2B).\nCircRNAs in periodontal ligament stem cells osteogenic differentiation\nGu et al. indicated that in the phase of periodontal ligament stem cells (PDLSCs) osteogenic differentiation, recognition and disposal of circRNAs plays an imperative role in ceRNAs. They used RNA sequencing and found 1456 circRNAs to be differentially expressed in normal and osteogenic inductive PDLSCs. Furthermore, 1382 circRNAs were found to combine with 148 common miRNAs, which were predicted to be involved in osteoblast differentiation 39. By acting as miR-7 sponge, circRNA-CDR1as has been reported to mediate the inhibitory effect of LPS on proliferation of PDLSCs by activating the ERK signaling pathway 39. Importantly, circRNA-CDR1as was also reported to regulate the osteoblastic differentiation of PDLSCs by triggering the activation of Smad and p38 MAPK signaling pathway, as well as upregulation of GDF5 40. The circRNA-CDR1as/miR-7 axis may be involved in PDLSCs upon periodontitis burst. Moreover, Zheng et al. ascertained that hsa_circ_0003489 is located at cyclin-dependent kinase 8 (CDK8) gene so they referred it as circCDK8 41. Meanwhile, the overexpression of circCDK8 was found to induce autophagy and apoptosis, whereas the silencing of circCDK8 reversed the inhibitory effects of cobalt chloride (CoCl2) on osteogenic differentiation of PDLSCs. Hereof, Zheng et al, pointed out that circCDK8 inhibits the osteogenic differentiation of PDLSCs in a hypoxic environment 42. In addition, the mechanical force may induce the changes in the expression of circRNAs in PDLSCs with regard to miRNAs transformation 42. A previous study showed that miRNA146a exerted its unique role by post-transcriptionally modulating the expression levels of the target genes to regulate the PDLSC osteogenic differentiation 43. Moreover, in another study Chen et al. 44 showed that miRNA-34a inhibits the differentiation of osteoblasts. Interfering with miRNA34a and miRNA146a as we inferred, circRNA BANP coupled with circRNA ITCH could modulate PDLSC osteogenic differentiation through MAPK pathway. DUSP1, FAS and RAC1 are targeted by miRNA34a, while as PDGFRA, TGFBR2 and MYC are targeted by miRNA146a. Kovaci\u0107 et al. showed that Fas/Fas ligand system inhibits the differentiation of murine osteoblasts 45. The inhibition of RAC1 has been reported to promote the BMP-2-induced osteoblastic differentiation 46. Circ_BANP/circ_ITCH-miR-34a-FAS/RAC1 may be an axial regulator of osteoblast differentiation. Zheng et al examined the expression profile of circRNAs, miRNAs and mRNAs during the osteogenic differentiation of PDLSCs, and a network containing potential targeting relationships was constructed 47. A previous report indicated that miR-204 inhibits the osteogenesis and promotes adipogenesis of mesenchymal stem cells by targeting Runx2 48. In the regulatory aspect of osteogenesis and chondrogenesis, RUNX2 has been regarded as a pivotal transcription factor 49. Circ_2929 and circ_ARHGAP35-miR-204-5p-Runx2 may be potential axial regulators of osteoblast differentiation (Figure 2C).\nCircRNAs in the differentiation of embryonic stem cells",
+          "cos_sim_score": 0.2456347644329071,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8100645",
+          "title": "Circular RNAs in stem cell differentiation: a sponge-like role for miRNAs",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8100645/",
+          "text": "Conclusions and perspectives\nTaken together, circRNAs are confirmed to play a critical role in stem cell differentiation by regulation the miRNA functions via their sponging activity. The interactions between circRNAs and miRNAs may activate downstream signaling to promote stem cell differentiation. We hypothesize that whether circRNAs with potential sponging function is related to existence of each miRNAs. Furthermore, we conclude that the role of osteogenic promotion by circRNAs is the major part during the differentiation of several stem cells, such as DPSCs, MSMSCs, PDLSCs and BMSCs. Interventions targeting relevant circRNAs may have potential to regulate stem cells differentiation. Ultimately, we propose several regulatory axes such as circRNA_33287/miR-214-3p/Runx3, Circ_2929-circ_ARHGAP35/miR-204-5p/Runx2, circ_BANP/circ_ITCH-miR-34a-FAS/RAC1, and circ_19142/circ_5846-miR-7067-5p-mRNAs as vital players during stem cells osteogenic differentiation.",
+          "cos_sim_score": 0.19138094782829285,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8100645",
+          "title": "Circular RNAs in stem cell differentiation: a sponge-like role for miRNAs",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8100645/",
+          "text": "Identified circRNAs in stem cells differentiation\nRecent evidence has shown that circRNAs are associated with the differentiation of several types of stem cells, such as dental pulp stem cells (DPSCs), maxillary sinus membrane stem cells (MSMSCs), periodontal ligament stem cells (PDLSCs), embryonic stem cells (ESCs), bone marrow-derived mesenchymal stem cells (BMSCs), induced pluripotent stem cells (iPSCs), epidermal stem cells (EpSCs), germline stem cells (GSCs), intestinal stem cells (ISCs) and hematopoietic stem cells (HSCs).\nCircRNAs in the differentiation of dental pulp stem cells\nDental pulp stem cells (DPSCs) are present in the dental pulp and exhibit higher proliferation rates, self-renewal and cloning potential due to its vested abilities. Recent studies have identified that circRNAs play a critical role in the involvement in the differentiation of DPSCs. From these investigations, circRNA124534 has been reported to promote osteogenic differentiation as a miR-496 sponge in human DPSCs. Additionally, circRNA124534/miR-496/\u03b2-catenin axis has been demonstrated as a covert curative clue for elevation of dental bone remodeling 34. Moreover, circRNA hsa_circ_0026827 has also been reported to play a sponging role by targeting miR-188-3p via Beclin1 and RUNX1 signaling pathways that enhances the osteogenic differentiation in human DPSCs 35. In yet another study, circRNA SIPA1L1 was found to regulate miR-617/Smad3 axis to potentiate osteogenic differentiation of DPSCs 20. Furthermore, role of exosomes in osteogenic differentiation of DPSCs has been investigated and it was found that circLPAR1 adsorbs to hsa-miR-31 to avoid its inhibitory effects on osteogenesis of DPSCs 36. A microarray analysis revealed 43 upregulated circRNAs and 144 downregulated circRNAs to be differentially expressed in human DPSCs during odontogenic differentiation process. Moreover, hsa_circRNA_104101 was highly assumed to enhance the odontogenic differentiation of human DPSCs 37. Based on above, it is well established that the common mechanisms of circRNAs in DPSCs are competently binding with miRNAs to deliver a promoting effect on osteogenic differentiation (Figure 2A).\nCircRNA in maxillary sinus membrane stem cells differentiation\nMaxillary sinus membrane stem cells (MSMSCs) exhibit osteogenic potential and may find their use in bone repair of maxilla. By using microarray analysis, Peng et al. revealed that the novel pathway circRNA_33287/miR-214-3p/Runx3 plays a role in the regulation of the osteoblastic differentiation in MSMSCs. Additionally, BMP2 may also induce the osteogenic differentiation by enhancing the expression of circRNA_33287 38. However, only a few studies have been carried out on this aspect of circRNAs in MSMSCs and therefore the underlying mechanisms remain largely elusive (Figure 2B).\nCircRNAs in periodontal ligament stem cells osteogenic differentiation",
+          "cos_sim_score": 0.1777041256427765,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8100645",
+          "title": "Circular RNAs in stem cell differentiation: a sponge-like role for miRNAs",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8100645/",
+          "text": "CircRNAs in the differentiation of embryonic stem cells\nUsing RNA-sequencing analysis, a total of 3,894 circRNAs within the body of 2,097 known genes were identified expressed in murine embryonic stem cells (ESCs) derived motor neurons (MNs) 50. Analysis from studies showed that most of them having a homologous trend like the annular structures, but the circ_5906 and circ_2193 were counter examples. According to Lorenzo Errichelli et al reported that the expression of circ_5906 upregulates during the mESCs differentiation, whereas circ_2193 was found to be downregulated 50. Interestingly, the RNA-binding protein FUS-dependent linear correlations were highly presented in mESCs and down-regulated under differentiation. Both of them may play an important role in preventing the murine embryonic stem cell differentiation. Intriguingly, several candidate circRNAs were identified to play crucial roles in neuronal differentiation in mESCs and circZNF827 was reported to be negatively regulated in this process through nerve growth factor (NGF) signaling 51.\nHuman embryonic stem cells (hESCs) with the characteristics of unlimited self-renewal and pluripotency are studies on first priority for applicability 52. It is known that miR-34a and miR-145 can promote in vitro differentiation of hESCs by repressing pluripotency-associated genes 22. Yu et al. identified a subgroup of circRNAs that are enriched in undifferentiated hESCs 22. Additionally, circBIRC6 is associated with the pluripotent state. Moreover, it was found that circBIRC6 interacts with miR-34a and miR-145 and is enriched in the AGO2 complex. Correspondingly, circBIRC6 suppresses hESCs differentiation by down-regulating the expression of miR-34a and miR-145. Furthermore, the biogenesis of circBIRC6 in hESCs was found to be regulated by the hESC-enriched splicing factors (SFs) ESRP1. The expression of ESRP1 was controlled by the core pluripotency-associated factors, NANOG and OCT4. CircRNAs can suppress the hESCs differentiation by serving as a microRNA \u201csponge\u201d (Figure 2D).\nCircRNAs in bone marrow-derived mesenchymal stem cells osteoblast differentiation\nThe proliferation and differentiation of bone marrow-derived mesenchymal stem cells (BMSCs) into osteoblasts is first stage for osteogenesis. In presence of calcitonin gene-related peptide (CGRP) stimulation, the expression of circRNA_003795 was significantly increased to promote proliferation and FOS like 2 AP-1 transcription factor subunit (FOSL2) expression, whereas slicing it dramatically up-regulated the miR-504-3p expression. These results indicated that circRNA_003795 indirectly regulates FOSL2 expression via sponging of miR-504-3p to promote BMSCs proliferation which prepared for further differentiation 53. The milieu of BMSCs was also found to regulate its differentiation by influencing the expression of numerous circRNAs. As ceRNAs, circRNAs have been detected to exhibit variable expression in BMSCs on the different materials surface 54. Recently, our study also discovered hsa_circ_0074834 to act as a ceRNA to regulate the expression of ZEB1 and VEGF via microRNA-942-5p to promote osteogenic differentiation of BMSCs which is advantageous to bone remodeling 55. Opposite regulation of circRNAs with miRNAs was reported in the early osteogenic differentiation of BMSCs, and masked genes (FLBN1, MT2A, and BSCL2) were given rise to attention during this part 56. The adipogenic or osteogenic differentiation of BMSCs has been reported to be associated with the pathogenesis of steroid-induced osteonecrosis in femoral head. A recently carried out study identified circRNA CDR1as promotes the development of adipogenic differentiation which dampens the osteogenic differentiation in BMSCs via CDR1as-miR-7-5p-WNT5B axis providing new insights into the treatment of related diseases (Figure 3A) 57.",
+          "cos_sim_score": 0.07237258553504944,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

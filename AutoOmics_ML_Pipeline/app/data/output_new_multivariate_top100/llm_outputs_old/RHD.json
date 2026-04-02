@@ -1,0 +1,160 @@
+{
+  "probe_id": "11737267_a_at",
+  "gene_symbol": "RHD",
+  "rf_importance": 0.0001,
+  "selection_freq": 1.0,
+  "abs_fold_change": 2.466462766666666,
+  "score": 0.3434,
+  "probe_count": 2,
+  "probe_ids": "11737267_a_at | 11741977_a_at",
+  "max_score": 0.3434,
+  "mean_abs_fold_change": 2.4174,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T00:10:20",
+  "interpretation": "The RHD gene encodes the RhD protein, which is a component of the erythrocyte membrane and plays a role in the transport of molecules across the cell membrane. While RHD is primarily known for its role in blood group determination and Rh deficiency syndrome, there is no direct evidence linking it to the mechanisms of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH). The retrieved evidence indicates that RHD is involved in maintaining red blood cell integrity, which could be indirectly relevant to conditions affecting bone health due to its role in oxygen transport and potential implications in anemia. However, the connection to SONFH is weak, and the evidence primarily relies on general biological reasoning rather than specific disease-related studies. Therefore, RHD's potential as a biomarker for early detection of SONFH is limited.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "RHD is involved in red blood cell function but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "RHD (Q02161). https://www.uniprot.org/uniprotkb/Q02161",
+    "RHD (Q02161-2). https://www.uniprot.org/uniprotkb/Q02161-2",
+    "RHD (Q02161-4). https://www.uniprot.org/uniprotkb/Q02161-4",
+    "RHD \u2014 RHD. https://platform.opentargets.org/target/ENSG00000187010",
+    "RHD \u2194 Rh deficiency syndrome. https://platform.opentargets.org/target/ENSG00000187010/associations",
+    "RHD \u2194 Tinnitus. https://platform.opentargets.org/target/ENSG00000187010/associations",
+    "RHD \u2194 rheumatoid arthritis. https://platform.opentargets.org/target/ENSG00000187010/associations",
+    "RHD \u2194 anemia. https://platform.opentargets.org/target/ENSG00000187010/associations",
+    "RHD. https://en.wikipedia.org/wiki/RHD",
+    "RHD (gene). https://en.wikipedia.org/wiki/RHD_(gene)",
+    "Rh blood group system. https://en.wikipedia.org/wiki/Rh_blood_group_system"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5838,
+    "completion_tokens": 234,
+    "total_tokens": 6072,
+    "estimated_cost_usd": 0.001016
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q02161",
+          "title": "RHD (Q02161)",
+          "url": "https://www.uniprot.org/uniprotkb/Q02161",
+          "text": "Protein: Blood group Rh(D) polypeptide\nFunction: May be part of an oligomeric complex which is likely to have a transport or channel function in the erythrocyte membrane",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q02161-2",
+          "title": "RHD (Q02161-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q02161-2",
+          "text": "Protein: Isoform 2 of Blood group Rh(D) polypeptide",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q02161-4",
+          "title": "RHD (Q02161-4)",
+          "url": "https://www.uniprot.org/uniprotkb/Q02161-4",
+          "text": "Protein: Isoform 4 of Blood group Rh(D) polypeptide",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000187010::function",
+          "title": "RHD \u2014 RHD",
+          "url": "https://platform.opentargets.org/target/ENSG00000187010",
+          "text": "Function: May be part of an oligomeric complex which is likely to have a transport or channel function in the erythrocyte membrane.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000187010::MONDO_0019107",
+          "title": "RHD \u2194 Rh deficiency syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000187010/associations",
+          "text": "Disease: Rh deficiency syndrome\nDescription: The Rh deficiency syndrome, also known as Rh-null syndrome, is a blood disorder where people have red blood cells (RBCs) lacking all Rh antigens. The Rh antigens maintain the integrity of the RBC membrane and therefore, RBCs which lack Rh antigens have an abnormal shape. There are two types of Rh deficiency syndrome: The regulator type is associated with many different changes (mutations) in the RHAG gene. The amorph type is caused by inactive copies of a gene (silent alleles) at the RH locus. As a result, the RBCs do not express any of the Rh antigens. The absence of the Rh complex alters the RBC shape, increases its tendency to break down (osmotic fragility), and shortens its lifespan, resulting in a hemolytic anemia that is usually mild. These patients are at risk of having adverse transfusion reactions because they may produce antibodies against several of the Rh antigens and can only receive blood from people who have the same condition. Rh deficiency syndrome is inherited in an autosomal recessive manner. Management is individualized according to the severity of hemolytic anemia.\nAssociation score: 0.378",
+          "cos_sim_score": 0.37846202208491025,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000187010::HP_0000360",
+          "title": "RHD \u2194 Tinnitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000187010/associations",
+          "text": "Disease: Tinnitus\nDescription: Tinnitus is an auditory perception that can be described as the experience of sound, in the ear or in the head, in the absence of external acoustic stimulation.\nAssociation score: 0.269",
+          "cos_sim_score": 0.2687978471312952,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000187010::EFO_0000685",
+          "title": "RHD \u2194 rheumatoid arthritis",
+          "url": "https://platform.opentargets.org/target/ENSG00000187010/associations",
+          "text": "Disease: rheumatoid arthritis\nDescription: A chronic, systemic autoimmune disorder characterized by inflammation in the synovial membranes and articular surfaces. It manifests primarily as a symmetric, erosive polyarthritis that spares the axial skeleton and is typically associated with the presence in the serum of rheumatoid factor.\nAssociation score: 0.236",
+          "cos_sim_score": 0.2358087778183798,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000187010::MONDO_0002280",
+          "title": "RHD \u2194 anemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000187010/associations",
+          "text": "Disease: anemia\nDescription: A reduction in the number of red blood cells, the amount of hemoglobin, and/or the volume of packed red blood cells. Clinically, anemia represents a reduction in the oxygen-transporting capacity of a designated volume of blood, resulting from an imbalance between blood loss (through hemorrhage or hemolysis) and blood production. Signs and symptoms of anemia may include pallor of the skin and mucous membranes, shortness of breath, palpitations of the heart, soft systolic murmurs, lethargy, and fatigability.\nAssociation score: 0.208",
+          "cos_sim_score": 0.20773501138929673,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::RHD",
+          "title": "RHD",
+          "url": "https://en.wikipedia.org/wiki/RHD",
+          "text": "RHD may refer to:\n\nRHD (gene), a gene which determines RhD positive or negative\nRhD haemolytic disease of the newborn\nRh(D), an antigen within the rhesus blood group system\nFAP 403 RHD, a coach bus model manufactured by Fabrika automobila Priboj\nRabbit haemorrhagic disease, a disease caused by the rabbit haemorrhagic disease virus\nRed Hand Defenders, an illegal paramilitary organisation in Northern Ireland\nRheumatic heart disease, a possible result of rheumatic fever\nRibblehead railway station, North Yorkshire, England (National Rail station code)\nRight hemisphere brain damage\nRight-hand drive, where a car's steering wheel is mounted on the right side, see Left- and right-hand traffic\nRobbery Homicide Division, a division of the Los Angeles Police Department's Detective Bureau\nRobbery Homicide Division (TV series), a fictional American TV series set in that LAPD division\nRandom House Dictionary of the English language\nRoads and Highways Department, a government organization of Bangladesh",
+          "cos_sim_score": 0.5953999757766724,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::RHD (gene)",
+          "title": "RHD (gene)",
+          "url": "https://en.wikipedia.org/wiki/RHD_(gene)",
+          "text": "Rh blood group, D antigen also known as Rh polypeptide 1 (RhPI) or cluster of differentiation 240D (CD240D) is a protein that in humans is encoded by the RHD gene.\nThe RHD gene codes for the RhD erythrocyte membrane protein that is the Rh factor antigen of the Rh blood group system. RHD has sequence similarity to RHCE, RhAG, RhBG, and RhCG and these five genes constitute the Rh family. It was proposed that the erythrocyte Rh complex is a heterotrimer of RhAG, RhD, and RhCE protein subunits. RhAG is a functional ammonia transporter and is required for normal cell surface expression of RhD and RhCE. Patients who lack RhD/RhCE/RhAG on the surface of their erythrocytes have hemolytic anemia. Antibodies to the RhD protein can cause Rh disease.\n\nReferences\nFurther reading\nSee also\nABO (gene)",
+          "cos_sim_score": 0.4051484763622284,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Rh blood group system",
+          "title": "Rh blood group system",
+          "url": "https://en.wikipedia.org/wiki/Rh_blood_group_system",
+          "text": "Non-human Rh proteins\nRh-like proteins can be found even in species other than vertebrates (which have red blood cells) \u2013 worms, bacteria, and algae. All these Rh proteins have the same biochemical function of transporting CO2, differing slightly in their amino acid sequences. The Rh family as a whole is related to ammonia transporters (Amt). In C. elegans worms, disruption of the Rh1 gene causes growth defects under high CO2 levels. Chlamydomonas reinhardtii algae fail to grow rapidly if its Rh gene is knocked down. Although in vitro evidence shows the Rh complex is capable of moving ammonia, its disruption does not cause growth defects under modified ammonia levels.\n\nRHD polymorphism\nOrigin of RHD polymorphism\nFor a long time, the origin of RHD polymorphism was an evolutionary enigma. Before the advent of modern medicine, the carriers of the rarer allele (e.g. RhD-negative women in a population of RhD positives or RhD-positive men in a population of RhD negatives) were at a disadvantage as some of their children (RhD-positive children born to preimmunised RhD-negative mothers) were at a higher risk of fetal or newborn death or health impairment from hemolytic disease.\nNatural selection aside, the RHD-RHCE region is structurally predisposed to many mutations seen in humans, since the pair arose by gene duplication and remain similar enough for unequal crossing over to occur. In addition to the case where D is deleted, crossover can also produce a single gene mixing exons from both RHD and RHCE, forming the majority of partial D types.\n\nWeak D\nIn serologic testing, D positive blood is easily identified. Units that are D negative are often retested to rule out a weaker reaction. This was previously referred to as Du, which has been replaced. By definition, weak D phenotype is characterized by negative reaction with anti-D reagent at immediate spin (IS), negative reaction after 37 \u00b0C incubation, and positive reaction at anti-human globulin (AHG) phase. Weak D phenotype can occur in several ways. In some cases, this phenotype occurs because of an altered surface protein that is more common in people of European descent. An inheritable form also occurs, as a result of a weakened form of the R0 gene. Weak D may also occur as \"C in trans\", whereby a C gene is present on the opposite chromosome to a D gene (as in the combination R0r', or \"Dce/dCe\"). The testing is difficult, since using different anti-D reagents, especially the older polyclonal reagents, may give different results.\nThe practical implication of this is that people with this sub-phenotype will have a product labeled as \"D positive\" when donating blood. When receiving blood, they are sometimes typed as a \"D negative\", though this is the subject of some debate. Most \"Weak D\" patients can receive \"D positive\" blood without complications. However, it is important to correctly identify the ones that have to be considered D+ or D\u2212. This is important, since most blood banks have a limited supply of \"D negative\" blood and the correct transfusion is clinically relevant. In this respect, genotyping of blood groups has much simplified this detection of the various variants in the Rh blood group system.\n\nPartial D\nIt is important to differentiate weak D (due to a quantitative difference in the D antigen) from partial D (due to a qualitative difference in the D antigen). Simply put, the weak D phenotype is due to a reduced number of D antigens on a red blood cell. In contrast, the partial D phenotype is due to an alteration in D-epitopes. Thus, in partial D, the number of D antigens is not reduced but the protein structure is altered. These individuals, if alloimmunized to D, can produce an anti-D antibody. Therefore, partial D patients who are donating blood should be labeled as D-positive but, if receiving blood, they should be labeled as D-negative and receive D-negative units.\nIn the past, partial D was called 'D mosaic' or 'D variant.' Different partial D phenotypes are defined by different D epitopes on the outer surface of the red blood cell membrane. More than 30 different partial D phenotypes have been described.",
+          "cos_sim_score": 0.33812960982322693,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Rh blood group system",
+          "title": "Rh blood group system",
+          "url": "https://en.wikipedia.org/wiki/Rh_blood_group_system",
+          "text": "History\nThe term \"Rh\" was originally an abbreviation of \"Rhesus factor\". It was discovered in 1939 by Karl Landsteiner and Alexander S. Wiener, who, at the time, believed it to be a similar antigen found in rhesus macaque red blood cells. It was subsequently discovered that the human factor is not identical to the rhesus monkey factor, but by then, \"Rhesus Group\" and like terms were already in widespread, worldwide use. Thus, notwithstanding it is a misnomer, the term survives (e.g., rhesus blood group system and the obsolete terms rhesus factor,  rhesus positive, and rhesus negative \u2013 all three of which actually refer specifically and only to the Rh D factor and are thus misleading when unmodified). Contemporary practice is to use \"Rh\" as a term of art instead of \"Rhesus\" (e.g., \"Rh Group\", \"Rh factors\", \"Rh D\", etc.).\nThe significance of their discovery was not immediately apparent and was only realized in 1940, after subsequent findings by Philip Levine and Rufus Stetson.  The serum that led to the discovery was produced by immunizing rabbits with red blood cells from a rhesus macaque. The antigen that induced this immunization was designated by them as Rh factor to indicate that rhesus blood had been used for the production of the serum.\nIn 1939, Phillip Levine and Rufus Stetson published in a first case report the clinical consequences of non-recognized Rh factor, hemolytic transfusion reaction, and hemolytic disease of the newborn in its most severe form. It was recognized that the serum of the reported woman agglutinated with red blood cells of about 80% of the people although the then known blood groups, in particular ABO were matched. No name was given to this agglutinin when described. In 1940, Landsteiner and Wiener made the connection to their earlier discovery, reporting a serum that also reacted with about 85% of different human red blood cells.\nIn 1941, Group O: a patient in Irvington, New Jersey, US, delivered a normal infant in 1931; this pregnancy was followed by a long period of sterility. The second pregnancy (April, 1941) resulted in an infant with icterus gravis. In May 1941, the third anti-Rh serum (M.S.) of Group O became available.\nBased on the serologic similarities, 'Rh factor' was later also used for antigens, and anti-Rh for antibodies, found in humans such as those previously described by Levine and Stetson. Although differences between these two sera were shown already in 1942 and clearly demonstrated in 1963, the already widely used term \"Rh\" was kept for the clinically described human antibodies which are different from the ones related to the rhesus monkey. This real factor found in rhesus macaque was classified in the Landsteiner-Weiner antigen system (antigen LW, antibody anti-LW) in honor of the discoverers.\nIt was recognized that the Rh factor was just one in a system of various antigens. Based on different models of genetic inheritance, two different terminologies were developed; both of them are still in use.\nThe clinical significance of this highly immunizing D antigen (i.e., Rh factor) was soon realized. Some keystones were to recognize its importance for blood transfusion (including reliable diagnostic tests), hemolytic disease of the newborn (including exchange transfusion), and very importantly the prevention of it by screening and prophylaxis.\nThe discovery of cell-free fetal DNA in maternal circulation by Holzgrieve et al. led to the noninvasive genotyping of fetal Rh genes in many countries.\n\nReferences\nExternal links\nRh at BGMUT Blood Group Antigen Gene Mutation Database at NCBI, NIH",
+          "cos_sim_score": 0.3121395707130432,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Rh blood group system",
+          "title": "Rh blood group system",
+          "url": "https://en.wikipedia.org/wiki/Rh_blood_group_system",
+          "text": "Population data\nAccording to a comprehensive study, the worldwide frequency of Rh-positive and Rh-negative blood types is approximately 94% and 6%, respectively. The same study concluded that the share of the population with Rh-negative blood type is set to fall further in the future primarily due to low population growth in Europe. The frequency of Rh factor blood types and the RhD neg allele gene differs in various populations.\n\nGenetics\nThe D antigen is inherited as one gene (RHD) (on the short arm of the first chromosome, p36.13\u2013p34.3) with various alleles. Typically, Rhesus positive people have an intact RHD gene while negative people lack the gene (or have mutations in it). However, there are exceptions: for instance, Japanese and black Africans may have an intact gene that is not expressed or only at very low levels. The gene codes for the RhD protein on the red blood cell membrane. D\u2212 individuals who lack a functional RHD gene do not produce the D antigen and may be immunized by D+ blood.\nThe D antigen is a dominant trait. If both of a child's parents are Rh negative, the child will definitely be Rh negative. Otherwise, the child may be Rh positive or Rh negative, depending on the parents' specific genotypes.\nThe epitopes for the next 4 most common Rh antigens, C, c, E and e are expressed on the highly similar RhCE protein that is genetically encoded in the RHCE gene, also found on chromosome 1. It has been shown that the RHD gene arose by duplication of the RHCE gene during primate evolution. Mice have just one RH gene.\nThe RHAG gene, which is responsible for encoding Rh-associated glycoprotein (RhAG), is found on chromosome 6a.\nThe polypeptides produced from the RHD and RHCE genes form a complex on the red blood cell membrane with the Rh-associated glycoprotein.\n\nClinical diagnostic\nClinical testing in patient care for Rh antigens follows published minimum quality and operational requirements, similar to red cell genotyping for any of the other recognized blood group systems.  Molecular analysis can identify gene variants (alleles) that may affect Rh antigens expression on the red cell membrane.\n\nFunction\nOn the basis of structural homology it has been proposed that the product of RHD gene, the RhD protein, is a membrane transport protein of uncertain specificity (CO2 or NH3) and unknown physiological role. The three-dimensional structure of the related RHCG protein and biochemical analysis of the RhD protein complex indicates that the RhD protein is one of three subunits of an ammonia transporter. Three recent studies have reported a protective effect of the RhD-positive phenotype, especially RhD heterozygosity, against the negative effect of latent toxoplasmosis on psychomotor performance in infected subjects. RhD-negative compared to RhD-positive subjects without anamnestic titres of anti-Toxoplasma antibodies have shorter reaction times in tests of simple reaction times. And conversely, RhD-negative subjects with anamnestic titres (i.e. with latent toxoplasmosis) exhibited much longer reaction times than their RhD-positive counterparts. The published data suggested that only the protection of RhD-positive heterozygotes was long term in nature; the protection of RhD-positive homozygotes decreased with duration of the infection while the performance of RhD-negative homozygotes decreased immediately after the infection. The overall change in reaction times was always larger in the RhD-negative group than in the RhD-positive.\n\nNon-human Rh proteins\nRh-like proteins can be found even in species other than vertebrates (which have red blood cells) \u2013 worms, bacteria, and algae. All these Rh proteins have the same biochemical function of transporting CO2, differing slightly in their amino acid sequences. The Rh family as a whole is related to ammonia transporters (Amt). In C. elegans worms, disruption of the Rh1 gene causes growth defects under high CO2 levels. Chlamydomonas reinhardtii algae fail to grow rapidly if its Rh gene is knocked down. Although in vitro evidence shows the Rh complex is capable of moving ammonia, its disruption does not cause growth defects under modified ammonia levels.",
+          "cos_sim_score": 0.3028925955295563,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

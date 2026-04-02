@@ -1,0 +1,160 @@
+{
+  "probe_id": "11731437_at",
+  "gene_symbol": "MED6",
+  "score": 1.0,
+  "SD_TestAUC": 0.0331269329999968,
+  "abs_fold_change": 0.6541,
+  "probe_count": 1,
+  "probe_ids": "11731437_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.6541,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:47:17",
+  "interpretation": "MED6 encodes a subunit of the Mediator complex, which is crucial for the transcription of nearly all RNA polymerase II-dependent genes. This complex acts as a bridge between gene-specific regulatory proteins and the transcription machinery, facilitating the expression of genes involved in various cellular processes. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), altered gene expression due to steroid treatment may disrupt normal bone metabolism and repair mechanisms, potentially implicating MED6 in the disease's pathogenesis. However, the evidence linking MED6 specifically to SONFH is limited, primarily relying on its general role in transcription regulation rather than direct associations with the disease. Therefore, while MED6 may play a role in the transcriptional changes observed in SONFH, its potential as a biomarker for early detection remains uncertain and weakly supported by current evidence.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "MED6 may influence transcriptional changes relevant to the pathogenesis of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "MED6 (O75586). https://www.uniprot.org/uniprotkb/O75586",
+    "MED6 (O75586-2). https://www.uniprot.org/uniprotkb/O75586-2",
+    "MED6 (O75586-3). https://www.uniprot.org/uniprotkb/O75586-3",
+    "MED6 \u2014 MED6. https://platform.opentargets.org/target/ENSG00000133997",
+    "MED6 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000133997/associations",
+    "MED6 \u2194 prostate carcinoma. https://platform.opentargets.org/target/ENSG00000133997/associations",
+    "MED6 \u2194 Hypercholesterolemia. https://platform.opentargets.org/target/ENSG00000133997/associations",
+    "MED6 \u2194 neoplasm. https://platform.opentargets.org/target/ENSG00000133997/associations",
+    "RNA polymerase II. https://en.wikipedia.org/wiki/RNA_polymerase_II",
+    "RNA polymerase. https://en.wikipedia.org/wiki/RNA_polymerase",
+    "Eukaryotic transcription. https://en.wikipedia.org/wiki/Eukaryotic_transcription",
+    "Transcription (biology). https://en.wikipedia.org/wiki/Transcription_(biology)"
+  ],
+  "token_usage": {
+    "prompt_tokens": 6663,
+    "completion_tokens": 252,
+    "total_tokens": 6915,
+    "estimated_cost_usd": 0.001151
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O75586",
+          "title": "MED6 (O75586)",
+          "url": "https://www.uniprot.org/uniprotkb/O75586",
+          "text": "Protein: Mediator of RNA polymerase II transcription subunit 6\nFunction: Component of the Mediator complex, a coactivator involved in the regulated transcription of nearly all RNA polymerase II-dependent genes. Mediator functions as a bridge to convey information from gene-specific regulatory proteins to the basal RNA polymerase II transcription machinery. Mediator is recruited to promoters by direct interactions with regulatory proteins and serves as a scaffold for the assembly of a functional preinitiation complex with RNA polymerase II and the general transcription factors",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::O75586-2",
+          "title": "MED6 (O75586-2)",
+          "url": "https://www.uniprot.org/uniprotkb/O75586-2",
+          "text": "Protein: Isoform 2 of Mediator of RNA polymerase II transcription subunit 6",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::O75586-3",
+          "title": "MED6 (O75586-3)",
+          "url": "https://www.uniprot.org/uniprotkb/O75586-3",
+          "text": "Protein: Isoform 3 of Mediator of RNA polymerase II transcription subunit 6",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000133997::function",
+          "title": "MED6 \u2014 MED6",
+          "url": "https://platform.opentargets.org/target/ENSG00000133997",
+          "text": "Function: Component of the Mediator complex, a coactivator involved in the regulated transcription of nearly all RNA polymerase II-dependent genes. Mediator functions as a bridge to convey information from gene- specific regulatory proteins to the basal RNA polymerase II transcription machinery. Mediator is recruited to promoters by direct interactions with regulatory proteins and serves as a scaffold for the assembly of a functional preinitiation complex with RNA polymerase II and the general transcription factors. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000133997::EFO_0005772",
+          "title": "MED6 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000133997/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.513",
+          "cos_sim_score": 0.5128950599462041,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000133997::EFO_0001663",
+          "title": "MED6 \u2194 prostate carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000133997/associations",
+          "text": "Disease: prostate carcinoma\nDescription: A carcinoma that arises from epithelial cells of the prostate gland.\nAssociation score: 0.199",
+          "cos_sim_score": 0.19908325148082975,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000133997::HP_0003124",
+          "title": "MED6 \u2194 Hypercholesterolemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000133997/associations",
+          "text": "Disease: Hypercholesterolemia\nDescription: An increased concentration of cholesterol in the blood.\nAssociation score: 0.153",
+          "cos_sim_score": 0.1533196727588739,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000133997::EFO_0000616",
+          "title": "MED6 \u2194 neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000133997/associations",
+          "text": "Disease: neoplasm\nDescription: A benign or malignant tissue growth resulting from uncontrolled cell proliferation. Benign neoplastic cells resemble normal cells without exhibiting significant cytologic atypia, while malignant cells exhibit overt signs such as dysplastic features, atypical mitotic figures, necrosis, nuclear pleomorphism, and anaplasia. Representative examples of benign neoplasms include papillomas, cystadenomas, and lipomas; malignant neoplasms include carcinomas, sarcomas, lymphomas, and leukemias.\nAssociation score: 0.075",
+          "cos_sim_score": 0.0750041782868453,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::RNA polymerase II",
+          "title": "RNA polymerase II",
+          "url": "https://en.wikipedia.org/wiki/RNA_polymerase_II",
+          "text": "Subunits\nThe eukaryotic core RNA polymerase II was first purified using transcription assays. The purified enzyme has typically 10\u201312 subunits (12 in humans and yeast) and is incapable of specific promoter recognition. Many subunit-subunit interactions are known.\n\nDNA-directed RNA polymerase II subunit RPB1 \u2013 an enzyme that in humans is encoded by the POLR2A gene and in yeast is encoded by RPO21. RPB1 is the largest subunit of RNA polymerase II. It contains a carboxy terminal domain (CTD) composed of up to 52 heptapeptide repeats (YSPTSPS) that are essential for polymerase activity. The CTD was first discovered in the laboratory of C.J. Ingles at the University of Toronto and by JL Corden at Johns Hopkins University. In combination with several other polymerase subunits, the RPB1 subunit forms the DNA binding domain of the polymerase, a groove in which the DNA template is transcribed into RNA. It strongly interacts with RPB8.\nRPB2 (POLR2B) \u2013 the second-largest subunit that in combination with at least two other polymerase subunits forms a structure within the polymerase that maintains contact in the active site of the enzyme between the DNA template and the newly synthesized RNA.\nRPB3 (POLR2C) \u2013 the third-largest subunit. Exists as a heterodimer with another polymerase subunit, POLR2J forming a core subassembly. RPB3 strongly interacts with RPB1-5, 7, 10\u201312.\nRNA polymerase II subunit B4 (RPB4) \u2013 encoded by the POLR2D gene is the fourth-largest subunit and may have a stress protective role.\nRPB5 \u2013 In humans is encoded by the POLR2E gene. Two molecules of this subunit are present in each RNA polymerase II. RPB5 strongly interacts with RPB1, RPB3, and RPB6.\nRPB6 (POLR2F) \u2013 forms a structure with at least two other subunits that stabilizes the transcribing polymerase on the DNA template.\nRPB7 \u2013 encoded by POLR2G and may play a role in regulating polymerase function. RPB7 interacts strongly with RPB1 and RPB5.\nRPB8 (POLR2H) \u2013 interacts with subunits RPB1-3, 5, and 7.\nRPB9 \u2013 The groove in which the DNA template is transcribed into RNA is composed of RPB9 (POLR2I) and RPB1.\nRPB10 \u2013 the product of gene POLR2L. It interacts with RPB1-3 and 5, and strongly with RPB3.\nRPB11 \u2013 the RPB11 subunit is itself composed of three subunits in humans: POLR2J (RPB11-a), POLR2J2 (RPB11-b), and POLR2J3 (RPB11-c).\nRPB12 \u2013 Also interacts with RPB3 is RPB12 (POLR2K).\n\nAssembly\nRPB3 is involved in RNA polymerase II assembly. A subcomplex of RPB2 and RPB3 appears soon after subunit synthesis. This complex subsequently interacts with RPB1. RPB3, RPB5, and RPB7 interact with themselves to form homodimers, and RPB3 and RPB5 together are able to contact all of the other RPB subunits, except RPB9. Only RPB1 strongly binds to RPB5. The RPB1 subunit also contacts RPB7, RPB10, and more weakly but most efficiently with RPB8. Once RPB1 enters the complex, other subunits such as RPB5 and RPB7 can enter, where RPB5 binds to RPB6 and RPB8 and RPB3 brings in RPB10, RPB 11, and RPB12. RPB4 and RPB9 may enter once most of the complex is assembled. RPB4 forms a complex with RPB7.",
+          "cos_sim_score": 0.6452375650405884,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::RNA polymerase II",
+          "title": "RNA polymerase II",
+          "url": "https://en.wikipedia.org/wiki/RNA_polymerase_II",
+          "text": "RNA polymerase II (RNAP II and Pol II) is a multiprotein complex that transcribes DNA into precursors of messenger RNA (mRNA) and most small nuclear RNA (snRNA) and microRNA. It is one of the three RNAP enzymes found in the nucleus of eukaryotic cells. A 550 kDa complex of 12 subunits, RNAP II is the most studied type of RNA polymerase. A wide range of transcription factors are required for it to bind to upstream gene promoters and begin transcription.\n\nDiscovery\nEarly studies suggested a minimum of two RNAPs: one which synthesized rRNA in the nucleolus, and one which synthesized other RNA in the nucleoplasm, part of the nucleus but outside the nucleolus. In 1969, biochemists Robert G. Roeder and William Rutter discovered there are total three distinct nuclear RNA polymerases, an additional RNAP that was responsible for transcription of some kind of RNA in the nucleoplasm.  The finding was obtained by the use of ion-exchange chromatography via DEAE coated Sephadex beads. The technique separated the enzymes by the order of the corresponding elutions, \u0399,\u0399\u0399,\u0399\u0399\u0399, by increasing the concentration of ammonium sulfate. The enzymes were named according to the order of the elutions, RNAP I, RNAP II, RNAP I\u0399I. This discovery demonstrated that there was an additional enzyme present in the nucleoplasm, which allowed for the differentiation between RNAP II and RNAP III.\nRNA polymerase II (RNAP2) undergoes regulated transcriptional pausing during early elongation. Various studies has shown that disruption of transcription elongation is implicated in cancer, neurodegeneration, HIV latency etc.\n\nSubunits\nThe eukaryotic core RNA polymerase II was first purified using transcription assays. The purified enzyme has typically 10\u201312 subunits (12 in humans and yeast) and is incapable of specific promoter recognition. Many subunit-subunit interactions are known.",
+          "cos_sim_score": 0.5931699275970459,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::RNA polymerase",
+          "title": "RNA polymerase",
+          "url": "https://en.wikipedia.org/wiki/RNA_polymerase",
+          "text": "In molecular biology, RNA polymerase (abbreviated RNAP or RNApol), or more specifically DNA-directed/dependent RNA polymerase (DdRP), is an enzyme that catalyzes the chemical reactions that synthesize RNA from a DNA template.\nUsing the enzyme helicase, RNAP locally opens the double-stranded DNA so that one strand of the exposed nucleotides can be used as a template for the synthesis of RNA, a process called transcription. A transcription factor and its associated transcription mediator complex must be attached to a DNA binding site called a promoter region before RNAP can initiate the DNA unwinding at that position. RNAP not only initiates RNA transcription, it also guides the nucleotides into position, facilitates attachment and elongation, has intrinsic proofreading and replacement capabilities, and termination recognition capability.\nRNAP can produce different types of RNA, including:\nMessenger RNA (mRNA)\n\nAn RNA copy of the coding strand of a gene which is translated into a polypeptide chain at a ribosome;\nTransfer RNA (tRNA)\nTransfers specific amino acids to growing polypeptide chains at the ribosomal site of protein synthesis during translation;\nRibosomal RNA (rRNA)\nIncorporates into ribosomes;\nMicro RNA (miRNA)\nRegulates gene activity; and, RNA silencing\nCatalytic RNA (ribozyme)\nFunctions as an enzymatically active RNA molecule.\nRNA polymerase is essential to life, and is found in all living organisms and many viruses. Depending on the organism, a RNA polymerase can be a protein complex (multi-subunit RNAP) or only consist of one subunit (single-subunit RNAP, ssRNAP), each representing an independent lineage. The former is found in bacteria, archaea, and eukaryotes alike, sharing a similar core structure and mechanism. The latter is found in phages as well as eukaryotic chloroplasts and mitochondria, and is related to modern DNA polymerases. Eukaryotic and archaeal RNAPs have more subunits than bacterial ones do, and are controlled differently.\nBacteria and archaea only have one RNA polymerase. Eukaryotes have multiple types of nuclear RNAP, each responsible for synthesis of a distinct subset of RNA:\n\nStructure\nIn most prokaryotes, a single RNA polymerase species transcribes all types of RNA. RNA polymerase \"core\" from E. coli consists of five subunits: two alpha (\u03b1) subunits of 36 kDa, a beta (\u03b2) subunit of 150 kDa, a beta prime subunit (\u03b2\u2032) of 155 kDa, and a small omega (\u03c9) subunit. A sigma (\u03c3) factor binds to the core, forming the holoenzyme. After transcription starts, the \u03c3 factor can unbind and let the core enzyme perform transcription. The core RNA polymerase complex forms a \"crab claw\" or \"clamp-jaw\" structure with an internal channel running along the full length. Eukaryotic and archaeal RNA polymerases have a similar core structure and work in a similar manner, although they have many extra subunits. The 2006 Nobel Prize in Chemistry was awarded to Roger D. Kornberg for creating detailed molecular images of RNA polymerase during various stages of the transcription process.\nAll RNAPs contain metal cofactors, in particular zinc and magnesium cations which aid in the transcription process.\n\nFunction\nControl of the process of gene transcription affects patterns of gene expression and, thereby, allows a cell to adapt to a changing environment, perform specialized roles within a multicellular organism, and maintain basic metabolic processes necessary for survival. The activity of RNAP is complex and highly regulated. In Escherichia coli bacteria, more than 100 transcription factors have been identified, which modify the activity of RNAP.\nRNAP can initiate transcription at specific DNA sequences known as promoters. It then produces an RNA chain, which is complementary to the template DNA strand. The process of adding nucleotides to the RNA strand is known as elongation; in eukaryotes, RNAP can build chains as long as 2.4 million nucleotides (the full length of the dystrophin gene). RNAP will preferentially release its RNA transcript at specific DNA sequences encoded at the end of genes, which are known as terminators.\nProducts of RNAP include:",
+          "cos_sim_score": 0.5844278931617737,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Eukaryotic transcription",
+          "title": "Eukaryotic transcription",
+          "url": "https://en.wikipedia.org/wiki/Eukaryotic_transcription",
+          "text": "Initiation\nThe initiation of gene transcription in eukaryotes occurs in specific steps.  First, an RNA polymerase along with general transcription factors binds to the promoter region of the gene to form a closed complex called the preinitiation complex. The subsequent transition of the complex from the closed state to the open state results in the melting or separation of the two DNA strands and the positioning of the template strand to the active site of the RNA polymerase. Without the need of a primer, RNA polymerase can initiate the synthesis of a new RNA chain using the template DNA strand to guide ribonucleotide selection and polymerization chemistry. However, many of the initiated syntheses are aborted before the transcripts reach a significant length (~10 nucleotides). During these abortive cycles, the polymerase keeps making and releasing short transcripts until it is able to produce a transcript that surpasses ten nucleotides in length. Once this threshold is attained, RNA polymerase passes the promoter and transcription proceeds to the elongation phase.\n\nEukaryotic promoters and general transcription factors\nPol II-transcribed genes contain a region in the immediate vicinity of the transcription start site (TSS) that binds and positions the preinitiation complex. This region is called the core promoter because of its essential role in transcription initiation. Different classes of sequence elements are found in the promoters. For example, the TATA box is the highly conserved DNA recognition sequence for the TATA box binding protein, TBP, whose binding initiates transcription complex assembly at many genes.\nEukaryotic genes also contain regulatory sequences beyond the core promoter. These cis-acting control elements bind transcriptional activators or repressors to increase or decrease transcription from the core promoter. Well-characterized regulatory elements include enhancers, silencers, and insulators. These regulatory sequences can be spread over a large genomic distance, sometimes located hundreds of kilobases from the core promoters.\nGeneral transcription factors are a group of proteins involved in transcription initiation and regulation. These factors typically have DNA-binding domains that bind specific sequence elements of the core promoter and help recruit RNA polymerase to the transcriptional start site.\nGeneral transcription factors for RNA polymerase II include TFIID, TFIIA, TFIIB, TFIIF, TFIIE, and TFIIH.\n\nAssembly of preinitiation complex\nThe transcription, a complete set of general transcription factors and RNA polymerase need to be assembled at the core promoter to form the ~2.5 million Dalton preinitiation complex.  For example, for promoters that contain a TATA box near the TSS, the recognition of TATA box by the TBP subunit of TFIID initiates the assembly of a transcription complex. The next proteins to enter are TFIIA and TFIIB, which stabilize the DNA-TFIID complex and recruit Pol II in association with TFIIF and additional transcription factors. TFIIB serves as the bridge between the TATA-bound TBP and the RNA polymerase. It also helps to place the active centre of the polymerase in the correct position to initiate transcription. One of the last transcription factors to be recruited to the preinitiation complex is TFIIH, which plays an important role in promoter melting and escape.\n\nPromoter melting and open complex formation\nFor pol II-transcribed genes, and unlike bacterial RNA polymerase, promoter melting requires hydrolysis of ATP and is mediated by TFIIH.  TFIIH is a ten-subunit protein, including both ATPase and protein kinase activities. While the upstream promoter DNA is held in a fixed position by TFIID, TFIIH pulls downstream double-stranded DNA into the cleft of the polymerase, driving the separation of DNA strands and the transition of the preinitiation complex from the closed to open state. TFIIB aids in open complex formation by binding the melted DNA and stabilizing the transcription bubble.\n\nAbortive initiation\nOnce the initiation complex is open, the first ribonucleotide is brought into the active site to initiate the polymerization reaction in the absence of a primer. This generates a nascent RNA chain that forms a hetero-duplex with the template DNA strand. However, before entering the elongation phase, polymerase may terminate prematurely and release a short, truncated transcript. This process is called abortive initiation. Many cycles of abortive initiation may occur before the transcript grows to sufficient length to promote polymerase escape from the promoter. Throughout abortive initiation cycles, RNA polymerase remains bound to the promoter and pulls downstream DNA into its catalytic cleft in a scrunching-kind of motion.",
+          "cos_sim_score": 0.581773579120636,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Transcription (biology)",
+          "title": "Transcription (biology)",
+          "url": "https://en.wikipedia.org/wiki/Transcription_(biology)",
+          "text": "Initiation\nTranscription begins with the RNA polymerase and one or more general transcription factors binding to a DNA promoter sequence to form an RNA polymerase-promoter closed complex. In the closed complex, the promoter DNA is still fully double-stranded.\nRNA polymerase, assisted by one or more general transcription factors, then unwinds approximately 14 base pairs of DNA to form an RNA polymerase-promoter open complex. In the open complex, the promoter DNA is partly unwound and single-stranded. The exposed, single-stranded DNA is referred to as the \"transcription bubble\".\nRNA polymerase, assisted by one or more general transcription factors, then selects a transcription start site in the transcription bubble, binds to an initiating NTP and an extending NTP (or a short RNA primer and an extending NTP) complementary to the transcription start site sequence, and catalyzes bond formation to yield an initial RNA product.\nIn bacteria, the RNA polymerase core enzyme consists of five subunits: 2 \u03b1 subunits, 1 \u03b2 subunit, 1 \u03b2' subunit, and 1 \u03c9 subunit. It binds to a single transcription factor, called the sigma factor, and together they make up the RNA polymerase holoenzyme. Unlike in eukaryotes, the initiating nucleotide of nascent bacterial mRNA is not capped with a modified guanine nucleotide. It instead bears a 5\u2032 triphosphate (5\u2032-PPP), which can be used for genome-wide mapping of transcription initiation sites.\nIn archaea and eukaryotes, RNA polymerase contains subunits homologous to each of the five bacterial RNA polymerase subunits as well as unique ones. Instead of a single sigma factor, multiple general transcription factors are required to initiate transcription. Archaea have three general transcription factors: TBP, TFB, and TFE. In eukaryotes, RNA polymerase II requires six general transcription factors: TFIIA, TFIIB (an ortholog of archaeal TFB), TFIID (a multisubunit factor in which the key subunit, TBP, is an ortholog of archaeal TBP), TFIIE (an ortholog of archaeal TFE), TFIIF, and TFIIH. The TBP subunit of TFIID is the first to bind to DNA, while TFIIH is the last component to be recruited. In archaea and eukaryotes, the RNA polymerase-promoter closed complex is usually referred to as the \"preinitiation complex\".\nTranscription initiation is regulated by additional proteins, known as activators and repressors, and, in some cases, associated coactivators or corepressors, which modulate formation and function of the transcription initiation complex.\n\nPromoter escape\nAfter the first bond is synthesized, RNA polymerase must escape the promoter. During this time there is a tendency to release the RNA transcript and produce truncated transcripts. This is called abortive initiation, and is common for both eukaryotes and prokaryotes. Abortive initiation continues to occur until an RNA product of a threshold length of approximately 10 nucleotides is synthesized, at which point promoter escape occurs and a transcription elongation complex is formed.\nMechanistically, promoter escape occurs through DNA scrunching, providing the energy needed to break interactions between RNA polymerase holoenzyme and the promoter.\nIn bacteria, it was historically thought that the sigma factor is definitely released after promoter clearance occurs. This theory had been known as the obligate release model. However, later data showed that upon and following promoter clearance, the sigma factor is released according to a stochastic model known as the stochastic release model.\nIn eukaryotes, at an RNA polymerase II-dependent promoter, upon promoter clearance, TFIIH phosphorylates serine 5 on the carboxy terminal domain of RNA polymerase II, leading to the recruitment of capping enzyme (CE). The exact mechanism of how CE induces promoter clearance in eukaryotes is not yet known.",
+          "cos_sim_score": 0.5731568336486816,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

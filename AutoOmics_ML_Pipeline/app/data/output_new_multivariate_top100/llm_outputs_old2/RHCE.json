@@ -1,0 +1,227 @@
+{
+  "probe_id": "11736538_s_at",
+  "gene_symbol": "RHCE",
+  "rf_importance": 0.0063,
+  "selection_freq": 1.0,
+  "abs_fold_change": 3.241274266666667,
+  "score": 0.4981,
+  "probe_count": 8,
+  "probe_ids": "11736538_s_at | 11740680_s_at | 11742315_s_at | 11742143_s_at | 11752881_s_at | 11737268_s_at | 11752701_s_at | 11750456_s_at",
+  "max_score": 0.4981,
+  "mean_abs_fold_change": 2.9131,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T20:20:59",
+  "interpretation": "The RHCE gene encodes the Rh blood group CcEe antigens, which are integral to the stability and shape of red blood cells (RBCs). This gene is part of the ankyrin-1 complex, which is crucial for maintaining the integrity of the RBC membrane. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), compromised blood supply to the femoral head is a key pathological feature, leading to necrosis. While there is no direct evidence linking RHCE to SONFH, its role in erythrocyte stability suggests that variations in RHCE could influence blood flow and oxygen delivery to bone tissues, potentially exacerbating conditions like SONFH. However, the evidence supporting RHCE as a specific biomarker for SONFH is weak, leading to a low confidence in its clinical relevance as an early detection biomarker for this condition.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "RHCE may influence blood supply and oxygenation in the femoral head, which is critical in the pathogenesis of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "RHCE (P18577). https://www.uniprot.org/uniprotkb/P18577",
+    "RHCE (P18577-13). https://www.uniprot.org/uniprotkb/P18577-13",
+    "RHCE (P18577-14). https://www.uniprot.org/uniprotkb/P18577-14",
+    "RHCE \u2014 RHCE. https://platform.opentargets.org/target/ENSG00000188672",
+    "RHCE \u2194 Rh deficiency syndrome. https://platform.opentargets.org/target/ENSG00000188672/associations",
+    "RHCE \u2194 response to stimulus. https://platform.opentargets.org/target/ENSG00000188672/associations",
+    "RHCE \u2194 Chronic Obstructive Asthma. https://platform.opentargets.org/target/ENSG00000188672/associations",
+    "RHCE \u2194 response to statin. https://platform.opentargets.org/target/ENSG00000188672/associations",
+    "RHCE \u2014 Rh blood group CcEe antigens (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "RHCE \u2014 Rhesus blood group C antigen (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HLA-DRB1 \u2014 major histocompatibility complex, class II, DR beta 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "RHD \u2014 Rh blood group D antigen (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "RHD/RHCE@ \u2014 Rhesus blood group cluster (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "The pathomechanism of bone marrow edema in the femoral head necrosis with pericollapse stage (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11707338/",
+    "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8525,
+    "completion_tokens": 332,
+    "total_tokens": 8857,
+    "estimated_cost_usd": 0.001478
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P18577",
+          "title": "RHCE (P18577)",
+          "url": "https://www.uniprot.org/uniprotkb/P18577",
+          "text": "Protein: Blood group Rh(CE) polypeptide\nFunction: Component of the ankyrin-1 complex, a multiprotein complex involved in the stability and shape of the erythrocyte membrane (PubMed:35835865). Mediates the primary membrane attachment site for ANK1 when associated with RHAG (PubMed:35835865). May participate in the ammonium and carbon dioxide transport through the heterotrimer form (Probable)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P18577-13",
+          "title": "RHCE (P18577-13)",
+          "url": "https://www.uniprot.org/uniprotkb/P18577-13",
+          "text": "Protein: Isoform 8h of Blood group Rh(CE) polypeptide",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P18577-14",
+          "title": "RHCE (P18577-14)",
+          "url": "https://www.uniprot.org/uniprotkb/P18577-14",
+          "text": "Protein: Isoform RhPI-Alpha of Blood group Rh(CE) polypeptide",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000188672::function",
+          "title": "RHCE \u2014 RHCE",
+          "url": "https://platform.opentargets.org/target/ENSG00000188672",
+          "text": "Function: Component of the ankyrin-1 complex, a multiprotein complex involved in the stability and shape of the erythrocyte membrane (PubMed:35835865). Mediates the primary membrane attachment site for ANK1 when associated with RHAG (PubMed:35835865). May participate in the ammonium and carbon dioxide transport through the heterotrimer form (Probable). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000188672::MONDO_0019107",
+          "title": "RHCE \u2194 Rh deficiency syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000188672/associations",
+          "text": "Disease: Rh deficiency syndrome\nDescription: The Rh deficiency syndrome, also known as Rh-null syndrome, is a blood disorder where people have red blood cells (RBCs) lacking all Rh antigens. The Rh antigens maintain the integrity of the RBC membrane and therefore, RBCs which lack Rh antigens have an abnormal shape. There are two types of Rh deficiency syndrome: The regulator type is associated with many different changes (mutations) in the RHAG gene. The amorph type is caused by inactive copies of a gene (silent alleles) at the RH locus. As a result, the RBCs do not express any of the Rh antigens. The absence of the Rh complex alters the RBC shape, increases its tendency to break down (osmotic fragility), and shortens its lifespan, resulting in a hemolytic anemia that is usually mild. These patients are at risk of having adverse transfusion reactions because they may produce antibodies against several of the Rh antigens and can only receive blood from people who have the same condition. Rh deficiency syndrome is inherited in an autosomal recessive manner. Management is individualized according to the severity of hemolytic anemia.\nAssociation score: 0.609",
+          "cos_sim_score": 0.6093164550623191,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000188672::GO_0050896",
+          "title": "RHCE \u2194 response to stimulus",
+          "url": "https://platform.opentargets.org/target/ENSG00000188672/associations",
+          "text": "Disease: response to stimulus\nDescription: Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus. The process begins with detection of the stimulus and ends with a change in state or activity or the cell or organism.\nAssociation score: 0.422",
+          "cos_sim_score": 0.421993278157785,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000188672::EFO_0009759",
+          "title": "RHCE \u2194 Chronic Obstructive Asthma",
+          "url": "https://platform.opentargets.org/target/ENSG00000188672/associations",
+          "text": "Disease: Chronic Obstructive Asthma\nDescription: Chronic airway obstruction caused by asthma.\nAssociation score: 0.275",
+          "cos_sim_score": 0.27456008615882926,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000188672::GO_0036273",
+          "title": "RHCE \u2194 response to statin",
+          "url": "https://platform.opentargets.org/target/ENSG00000188672/associations",
+          "text": "Disease: response to statin\nDescription: Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a statin stimulus. Statins are organooxygen compounds whose structure is related to compactin (mevastatin) and which may be used as an anticholesteremic drug due its EC:1.1.1.34/EC:1.1.1.88 (hydroxymethylglutaryl-CoA reductase) inhibitory properties.\nAssociation score: 0.214",
+          "cos_sim_score": 0.2142190929265764,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "RHCE \u2014 Rh blood group CcEe antigens",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RHCE\nGene name: Rh blood group CcEe antigens\nAliases / synonyms: CD240CE, RH, RH30A, RHC, RHCe(152N), RHE, RHIXB, RHNA, RHPI, Rh4, RhIVb(J), RhVI, RhVIII, SLC42A4\nOrganism: Homo sapiens\nGene summary: The Rh blood group system is the second most clinically significant of the blood groups, second only to ABO. It is also the most polymorphic of the blood groups, with variations due to deletions, gene conversions, and missense mutations. The Rh blood group includes this gene which encodes both the RhC and RhE antigens on a single polypeptide and a second gene which encodes the RhD protein. The classification of Rh-positive and Rh-negative individuals is determined by the presence or absence of the highly immunogenic RhD protein on the surface of erythrocytes. A mutation in this gene results in amorph-type Rh-null disease. Alternative splicing of this gene results in multiple transcript variants encoding several different isoforms. [provided by RefSeq, Aug 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RHCE",
+          "aliases": "CD240CE, RH, RH30A, RHC, RHCe(152N), RHE, RHIXB, RHNA, RHPI, Rh4, RhIVb(J), RhVI, RhVIII, SLC42A4",
+          "gene_description": "Rh blood group CcEe antigens"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "RHCE \u2014 Rhesus blood group C antigen",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RHCE\nGene name: Rhesus blood group C antigen\nOrganism: Homo sapiens",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RHCE",
+          "aliases": "",
+          "gene_description": "Rhesus blood group C antigen"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "HLA-DRB1 \u2014 major histocompatibility complex, class II, DR beta 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HLA-DRB1\nGene name: major histocompatibility complex, class II, DR beta 1\nAliases / synonyms: DRB1, HLA-DR1B, HLA-DRB, SS1\nOrganism: Homo sapiens\nGene summary: HLA-DRB1 belongs to the HLA class II beta chain paralogs. The class II molecule is a heterodimer consisting of an alpha (DRA) and a beta chain (DRB), both anchored in the membrane. It plays a central role in the immune system by presenting peptides derived from extracellular proteins. Class II molecules are expressed in antigen presenting cells. The beta chain is approximately 26-28 kDa. It is encoded by 6 exons. Exon one encodes the leader peptide; exons 2 and 3 encode the two extracellular domains; exon 4 encodes the transmembrane domain; and exon 5 encodes the cytoplasmic tail. Within the DR molecule the beta chain contains all the polymorphisms specifying the peptide binding specificities. Hundreds of DRB1 alleles have been described and some alleles have increased frequencies associat...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HLA-DRB1",
+          "aliases": "DRB1, HLA-DR1B, HLA-DRB, SS1",
+          "gene_description": "major histocompatibility complex, class II, DR beta 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "RHD \u2014 Rh blood group D antigen",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RHD\nGene name: Rh blood group D antigen\nAliases / synonyms: CD240D, DIIIc, HDFNRH, RH, RH30, RHCED, RHDVA(TT), RHDel, RHPII, RHXIII, Rh4, RhDCw, RhII, RhK562-II, RhPI, SLC42A5\nOrganism: Homo sapiens\nGene summary: The Rh blood group system is the second most clinically significant of the blood groups, second only to ABO. It is also the most polymorphic of the blood groups, with variations due to deletions, gene conversions, and missense mutations. The Rh blood group includes this gene, which encodes the RhD protein, and a second gene that encodes both the RhC and RhE antigens on a single polypeptide. The two genes, and a third unrelated gene, are found in a cluster on chromosome 1. The classification of Rh-positive and Rh-negative individuals is determined by the presence or absence of the highly immunogenic RhD protein on the surface of erythrocytes. Multiple transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RHD",
+          "aliases": "CD240D, DIIIc, HDFNRH, RH, RH30, RHCED, RHDVA(TT), RHDel, RHPII, RHXIII, Rh4, RhDCw, RhII, RhK562-II, RhPI, SLC42A5",
+          "gene_description": "Rh blood group D antigen"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "RHD/RHCE@ \u2014 Rhesus blood group cluster",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RHD/RHCE@\nGene name: Rhesus blood group cluster\nOrganism: Homo sapiens\nGene summary: The Rh blood group system is the second most clinically significant of the blood groups, second only to ABO. It is also the most polymorphic of the blood groups, with variations due to deletions, gene conversions, and missense mutations. The classification of Rh-positive and Rh-negative individuals is determined by the presence or absence of the highly immunogenic RhD protein on the surface of erythrocytes. The Rh blood group includes the RHD gene that encodes the RhD protein and the RHCE gene that encodes both the RhC and RhE antigens on a single polypeptide. The two genes are found in a tail-to-tail orientation with a third gene interspersed between them. The RHD gene is flanked by two nearly identical 9000 bp sequences called rhesus boxes; unequal crossing-over involving the rhesus boxe...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RHD/RHCE@",
+          "aliases": "",
+          "gene_description": "Rhesus blood group cluster"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::11707338",
+          "title": "The pathomechanism of bone marrow edema in the femoral head necrosis with pericollapse stage",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11707338/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a refractory and debilitating bone disease that commonly affects young and middle-aged individuals. Trauma, corticosteroid use, and excessive alcohol consumption are its primary risk factors1. In recent decades, ONFH has garnered substantial attention from researchers. However, a consensus on the precise pathogenesis has not yet been reached. Nevertheless,\u00a0existing studies indicate that regardless of different risk factors and underlying conditions, ONFH arises from compromised blood supply to the femoral head, leading to necrosis of the bone marrow. Subsequent stress on the affected area can result in subchondral fractures and collapse of the joint2. Total hip arthroplasty (THA) is currently an effective treatment for end-stage ONFH. However, for young and middle-aged patients, there are long-term concerns such as prosthetic failure associated with joint replacement3,4. Therefore, hip preservation treatments, which aim to salvage the patient\u2019s own hip joints, are of significant clinical and societal value.\nThe selection of patients is of utmost importance in determining the success rate of treatments for hip preservation5,6. To better guide the diagnosis and treatment of ONFH, researchers have put forward a novel definition of the peri-collapse stage of ONFH, which is characterized by the presence of a subchondral fracture and continues until the collapse of the femoral head exceeds 2\u00a0mm7. Bone marrow edema (BME) is a diffuse and ill-defined abnormality in the femoral head and neck and is a typical radiographic manifestation during the peri-collapse stage of ONFH7. It appears as decreased signal intensity on magnetic resonance imaging (MRI) T1-weighted images and increased signal intensity on MRI T2-weighted images, which can be attributed to elevated levels of free water or hemorrhage within the bone marrow8. With the widespread use of MRI in clinical practice, it has been observed that BME frequently accompanies ONFH and is closely associated with the progression of the disease9. Meier et al.10reported that BME of the femoral head in ONFH patients represents a secondary sign of subchondral fracture and thus indicates stage 3 disease according to the Association for Research on Osseous Circulation (ARCO) . Another study has also confirmed this conclusion11. However, current research predominantly focuses on exploring the correlation among BME, femoral head collapse, and pain, with limited investigation on the underlying pathological mechanisms.\nUnderstanding the pathological mechanisms of ONFH with BME is particularly important for selecting hip preservation treatments during the peri-collapse stage. Therefore, to better investigate the potential mechanisms, the histopathological characteristics between BME and non-BME bone tissues were compared. Furthermore, we conducted a data-independent acquisition (DIA) based quantitative proteomics analysis of BME and control bone tissues, including femoral neck, necrotic and sclerotic regions. The results of this study may give new insight into the molecular basis of the pathogenesis in ONFH accompanied BME and provide novel clues for the treatment of ONFH during the peri-collapse stage.\nMaterials and methods\nStudy population\nThis study was approved by the Ethical Committee of the First Affiliated Hospital of Guangzhou University of Chinese Medicine (No. K-2022-059). The research was performed in accordance with the Declaration of Helsinki and relevant guidelines, all patients provided written informed consent to participate in the research. Patients who were diagnosed with ONFH caused by excessive glucocorticoid use or alcohol abuse, and were scheduled for THA were recruited. The imaging data (X-ray, MRI, CT) of all the included patients were independently assessed by two radiologists.\nThe diagnostic criteria for BME were consistent with earlier research10, manifesting as reduced signal intensity on T1-weighted images and heightened signal intensity on T2-weighted images. The severity of BME was classified based on the extent of edema affecting either the femoral head only (1-degree, minimal), both the femoral head and neck (2-degree, moderate), or extending to the intertrochanteric region (3-degree, extensive).\nInclusion and exclusion criteria",
+          "cos_sim_score": 0.5695059299468994,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "1. Introduction\nOsteonecrosis of the femoral head (ONFH) is a common disease mainly characterized by apoptosis of bone cells that leads to collapse of the femoral head and cartilage damage. Notably, the round surface of the head and acetabulum joint flattens and eventually leads to secondary osteoarthritis.[1] Studies have shown that the disease is mainly prevalent in patients with long-term use of hormonal drugs, long-term alcohol abuse, and hip trauma.[2] Steroid-induced ONFH (SONFH) is a common type of femoral head necrosis. SONFH patients are frequently misdiagnosed as hip synovitis or osteoarthritis owing to lack of obvious signs coupled with imaging abnormalities during early stages of disease development.[3] Although transcriptomic analyses have contributed to development of clinical treatment strategies for SONFH, the precise underlying mechanism of SONFH remains unclear.[4,5]\nBioinformatics analyses have significantly improved the search and identification of key genes regulating the occurrence of various diseases, thereby generating new insights to guide development of treatment strategies. SONFH has a complex pathophysiological mechanism. Genotyping of SONFH in adults revealed that gene coding protein polymorphism was associated with SONFH.[6] It has been hypothesized that progression of SONFH to the end stage in adult patients may be due to differential expression of protein-coding genes involved in thrombosis, angiogenesis inhibition, programmed cell death, lipid biosynthesis, and bone homeostasis. In the present study, we aimed to identify differentially expressed genes in peripheral blood of patients with early SONFH and further explored the pathogenesis of this disease using transcriptome data from the Gene Expression Omnibus database.\n2. Materials and Methods\n2.1. Data acquisition\nThe Gene Expression Omnibus database not only stores many gene chips and sequence data but also provides tools for users to query and download gene expression profiles. In the present study, we searched for relevant datasets using \u201csteroid-induced osteonecrosis of femoral head\u201d as the keyword, with focus on SONFH-related datasets. Consequently, we downloaded transcriptome data (GSE123568) belonging to 30 SONFH and 10 non-SONFH (following steroid administration) subjects.\n2.2. Sample correlation analysis\nOverall expression profiles of the transcriptome data were clustered using ClusterProfiler packages implemented in R software (version 4.0.2). Only dimension features containing the vast majority of variances were retained, with those containing zero variances discarded based on a principal component analysis (PCA) plot. Using weighted gene correlation network analysis (WGCNA) package in R language to perform WGCNA on data. WGCNA adds phenotypic weight parameters in the process of constructing gene co-expression network and optimizes classification using scale-free clustering and dynamic tree cut algorithm to achieve accurate and efficient data analysis.\n2.3. Functional annotation of DEGs\nFunctional annotation of key genes was performed using the ClusterProfiler package in R and followed by comprehensive functional correlation of candidate genes. Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analyses were performed to evaluate related functional categories. Significant differentially expressed genes (DEGs) were filtered, and bar charts and bubble charts were drawn according to their functions and pathways, respectively.\n2.4. Construction of protein\u2013protein interaction networks\nProtein\u2013protein interaction (PPI) networks of the DEGs were generated using the STRING online tool and Cytoscape software. Summarily, DEGs were entered into the STRING online tool to screen for interacting proteins with a combined score of\u2005>\u20050.9. The obtained PPI results were imported into Cytoscape software, then prominent modules in PPI were screened to construct the network through molecular complex detection. NetworkX package was then used to visualize the network in Python, with node sizes taken to be proportional to node degree.\n2.5. Quantitative real-time polymerase chain reaction",
+          "cos_sim_score": 0.5580368041992188,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "Figure 3.\nqRT-PCR results showing significant upregulation of ITGAX and LILRB2 and significant downregulation of PPP3CB and MMP8 in SONFH patients., ITGAX = integrin subunit alpha X, LILRB2 = leukocyte immunoglobulin like receptor B2, MMP8 = matrix metallopeptidase 8, PPP3CB = protein phosphatase 3 catalytic subunit beta, qRT-PCR = quantitative real-time polymerase chain reaction, SONFH = steroid-induced osteonecrosis of the femoral head.\n4. Discussion\nMore than 30 years ago, researchers discovered a close relationship between use of glucocorticoids with the occurrence of femoral head necrosis.[7] Results from a retrospective analysis showed that hormone-related nontraumatic ONFH is dominant.[8] Investigating the genetic factors regulating SONFH characteristics is an important strategy, and scholars have employed bioinformatics to explore sequence data. However, these studies also present some defects, such as inability to accurately interpret high-throughput sequence data to ensure that a certain deviation exists between PCR verification data and the data significance.[9,10] In the present study, we explored the signaling pathways regulating development of early SONFH and predicted diagnostic biomarkers in peripheral blood from this group of patients.\nOur results revealed that hundreds of coding genes, including tumor necrosis factor-\u03b1 (TNF-\u03b1), phosphoinositide 3-kinase Akt (PI3K-Akt), hypoxia-inducible factor-1 (HIF-1), adherens junction, and mitogen-activated protein kinase signaling pathways, were significantly upregulated in peripheral blood of patients with early SONFH. Notably, these DEGs participate in regulation of redox, inflammatory response, angiogenesis, and cell metabolism by secreting inflammatory chemokine signaling proteins. We constructed a PPI network of these DEGs and found that PRDX2, HP, MMP8, FPR2, and ITGAX may be associated with the SONFH process. Among them, FPR2 is a low-affinity receptor of N-formyl methionine peptides and a powerful neutrophil chemokine.[11] Family with sequence similarity 19 member A5 is a neural factor or brain-specific chemokine that was shown to remarkably downregulate expression of osteoclast-related genes, such as receptor activator of nuclear factor kappa and TNF receptor-associated factor 6, and mediate upregulation of osteoclast-producing negative regulators, such as musculoaponeurotic fibrosarcoma oncogene homolog B and interferon regulatory factor-8.[12,13] Interestingly, FPR2 antagonist WRW4 or FPR2 deficiency were shown to markedly reverse inhibition of Family with sequence similarity 19 member A5-inducedosteoclastogenesis, indicating that FPR2 plays an important role in regulation of osteoclastogenesis as well as occurrence and development of SONFH disease.[9,14]\nIntegrin alpha-X/beta-2, which is encoded by ITGAX, is a receptor that recognizes the G protein-coupled receptor sequence in fibrinogen, thereby mediating cell\u2013cell interactions during inflammatory responses. Functionally, it plays an important role in monocyte adhesion and chemotaxis.[15,16] In the present study, we found that PRDX2 was a thiol-specific peroxidase in downregulated genes in SONFH relative to non-SONFH group. Functionally, this gene catalyzes reduction of hydrogen peroxide and organic peroxide to produce water and alcohol, thereby causing inactivation of toxic substances.[17] Studies have shown that PRDX2, a hydrogen peroxide-mediated signal transduction sensor that prevents oxidative stress, not only plays a role in cell protection but may also be participating in signal cascade reaction of growth factor and TNF-\u03b1 by regulating the intracellular concentration of hydrogen peroxide.[18,19]\nHP-related diseases, which include haptoglobinemia and Plasmodium falciparum malaria,[20] are regulated by the innate immune system and vesicle-mediated transport. HP accumulates in the kidney and is secreted in the urine due to hemolysis. Moreover, HP reportedly captures and binds to free plasma HP, thereby preventing kidney damage. HP also acts as an antioxidant, presents antibacterial activity, and plays a role in many acute phase regulations.[21] Therefore, the observed downregulation of PRDX2 and HP may suggest that both genes promote development of SONFH disease through the redox pathway.",
+          "cos_sim_score": 0.49136489629745483,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11707338",
+          "title": "The pathomechanism of bone marrow edema in the femoral head necrosis with pericollapse stage",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11707338/",
+          "text": "Conclusion\nBME in ONFH patients significantly impacts both the biological and morphological aspects of the surrounding environment. Biologically, the condition triggers inflammatory and oxidative stress responses, leading to tissue fibrosis and heightened osteoclast activity. This elevated osteoclast activity subsequently causes structural damage to the bone tissue. Morphologically, the primary change observed is an increase in the area of low bone mass. Such changes render the femoral head more prone to subchondral fractures under stress (Fig.\u00a07).\nFig. 7A proposed scheme for the increased risks of femoral head collapse and re-collapse with BME in ONFH.\nFig. 7\nA proposed scheme for the increased risks of femoral head collapse and re-collapse with BME in ONFH.\nElectronic Supplementary Material\nBelow is the link to the electronic supplementary material.\nSupplementary Material 1\nSupplementary Material 1\nSupplementary Material 2\nSupplementary Material 2",
+          "cos_sim_score": 0.4697617292404175,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11707338",
+          "title": "The pathomechanism of bone marrow edema in the femoral head necrosis with pericollapse stage",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11707338/",
+          "text": "The microstructure of bone is closely associated with the mechanical strength of the femoral head. Previous study has indicated that the early stage of ONFH does not exhibit significant changes in the appearance of the femoral head. However, there are already alterations in osteoblast and osteoclast activities within the subchondral bone and necrotic regions17. As a result of excessive bone resorption activity in the necrotic region and increased bone formation activity the sclerotic region, the mechanical properties and structure of trabecular bone undergo significant changes18. In conjunction with sustained load pressure and stress, the subchondral trabecular bone eventually develops numerous microfractures when the applied pressure exceeds the load-bearing capacity of the trabeculae19. In the present study, we discovered that when ONFH is accompanied by severe BME, despite the absence of significant changes in the appearance of the femoral head, evident subchondral fractures can be observed on CT images. Patients with BME showed a high probability of low-density changes in CT. In addition, the expression levels of RANK and CTSK, which are bone resorption-related genes, were also increased in the BME group, especially in the necrotic and sclerotic regions. In a murine model of collagen-induced arthritis with subchondral BME, researchers observed significant changes in the bone marrow microenvironment following the onset of BME, including a notable increase in the number of osteoclasts and elevated expression of RANKL protein, increased proinflammatory cytokines and chemokines, and highly activated T cells and monocytes20. The results were consistent with our findings. Therefore, it speculated that when ONFH is accompanied by BME, the enhanced activity of osteoclasts leads to increased bone resorption, resulting in a decline in the biomechanical properties of the bone tissue, which may be a contributing factor to the occurrence of femoral head collapse or re-collapse.\nIn this study, the rate of empty lacunae in the necrotic area was significantly higher in both the BME and non-BME groups when compared to the sclerotic and control bone tissues. Interestingly, there were no significant differences in the empty lacunae rate between the BME and non-BME groups in the control and sclerotic regions, suggesting that BME does not represent a direct extension of bone tissue necrosis. Additionally, DIA proteomics technique was used to identify DEPs between BME and non-BME groups. In total, 141, 299 and 853 DEPs were identified in the control, necrotic, and sclerotic regions, respectively. Notably, BME had the most significant impact on protein expression in the sclerotic region, with the most DEPs being upregulated. This observation might be attributed to BME in ONFH patients potentially serving as a secondary, reparative response to the ischemic tissue surrounding the necrotic area.",
+          "cos_sim_score": 0.452117919921875,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

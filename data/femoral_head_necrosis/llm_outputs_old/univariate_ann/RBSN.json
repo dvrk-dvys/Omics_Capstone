@@ -1,0 +1,160 @@
+{
+  "rf_rank": 21,
+  "probe_id": "11718387_s_at",
+  "gene_symbol": "RBSN",
+  "score": 0.65,
+  "rf_n_nodes": 3,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.5649,
+  "log_fc": 0.5649,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11718387_s_at",
+  "max_score": 0.65,
+  "mean_abs_fold_change": 0.5649,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T17:36:12",
+  "interpretation": "Rabenosyn-5 (RBSN) is a protein that functions as an effector for Rab4 and Rab5, which are small GTPases involved in endocytic membrane trafficking and recycling of cellular components. This protein is crucial for the fusion of endosomes and the transport of proteins such as cathepsin D to lysosomes, which is important for cellular homeostasis. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the disruption of endocytic pathways may contribute to the pathological processes leading to bone necrosis following steroid treatment. However, the evidence linking RBSN directly to SONFH is limited, primarily suggesting its role in general cellular trafficking rather than a specific mechanism in SONFH. Therefore, while RBSN may play a role in cellular processes relevant to bone health, its potential as a biomarker for early detection of SONFH remains weak and speculative. [INFERENCE]",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "RBSN is involved in endocytic trafficking, which may indirectly relate to the cellular disruptions seen in Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "RBSN (Q9H1K0). https://www.uniprot.org/uniprotkb/Q9H1K0",
+    "RBSN (Q9H1K0-2). https://www.uniprot.org/uniprotkb/Q9H1K0-2",
+    "RBSN \u2014 RBSN. https://platform.opentargets.org/target/ENSG00000131381",
+    "RBSN \u2194 Kariminejad neurodevelopmental syndrome. https://platform.opentargets.org/target/ENSG00000131381/associations",
+    "RBSN \u2194 myelofibrosis, congenital, with anemia, neutropenia, developmental delay, and ocular abnormalities. https://platform.opentargets.org/target/ENSG00000131381/associations",
+    "RBSN \u2194 insomnia. https://platform.opentargets.org/target/ENSG00000131381/associations",
+    "RBSN \u2194 benign chondrogenic neoplasm. https://platform.opentargets.org/target/ENSG00000131381/associations",
+    "ZFYVE20. https://en.wikipedia.org/wiki/ZFYVE20",
+    "RAB5A. https://en.wikipedia.org/wiki/RAB5A",
+    "RAB4A. https://en.wikipedia.org/wiki/RAB4A",
+    "EHD protein family. https://en.wikipedia.org/wiki/EHD_protein_family"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4442,
+    "completion_tokens": 268,
+    "total_tokens": 4710,
+    "estimated_cost_usd": 0.000827
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9H1K0",
+          "title": "RBSN (Q9H1K0)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9H1K0",
+          "text": "Protein: Rabenosyn-5\nFunction: Rab4/Rab5 effector protein acting in early endocytic membrane fusion and membrane trafficking of recycling endosomes. Required for endosome fusion either homotypically or with clathrin coated vesicles. Plays a role in the lysosomal trafficking of CTSD/cathepsin D from the Golgi to lysosomes. Also promotes the recycling of transferrin directly from early endosomes to the plasma membrane. Binds phospholipid vesicles containing phosphatidylinositol 3-phosphate (PtdInsP3) (PubMed:11062261, PubMed:11788822, PubMed:15020713). Plays a role in the recycling of transferrin receptor to the plasma membrane (PubMed:22308388)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9H1K0-2",
+          "title": "RBSN (Q9H1K0-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9H1K0-2",
+          "text": "Protein: Isoform 2 of Rabenosyn-5",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000131381::function",
+          "title": "RBSN \u2014 RBSN",
+          "url": "https://platform.opentargets.org/target/ENSG00000131381",
+          "text": "Function: Rab4/Rab5 effector protein acting in early endocytic membrane fusion and membrane trafficking of recycling endosomes. Required for endosome fusion either homotypically or with clathrin coated vesicles. Plays a role in the lysosomal trafficking of CTSD/cathepsin D from the Golgi to lysosomes. Also promotes the recycling of transferrin directly from early endosomes to the plasma membrane. Binds phospholipid vesicles containing phosphatidylinositol 3-phosphate (PtdInsP3) (PubMed:11062261, PubMed:11788822, PubMed:15020713). Plays a role in the recycling of transferrin receptor to the plasma membrane (PubMed:22308388).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000131381::MONDO_0975795",
+          "title": "RBSN \u2194 Kariminejad neurodevelopmental syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000131381/associations",
+          "text": "Disease: Kariminejad neurodevelopmental syndrome\nAssociation score: 0.521",
+          "cos_sim_score": 0.521312917246921,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000131381::MONDO_0975797",
+          "title": "RBSN \u2194 myelofibrosis, congenital, with anemia, neutropenia, developmental delay, and ocular abnormalities",
+          "url": "https://platform.opentargets.org/target/ENSG00000131381/associations",
+          "text": "Disease: myelofibrosis, congenital, with anemia, neutropenia, developmental delay, and ocular abnormalities\nAssociation score: 0.453",
+          "cos_sim_score": 0.45273532198875965,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000131381::EFO_0004698",
+          "title": "RBSN \u2194 insomnia",
+          "url": "https://platform.opentargets.org/target/ENSG00000131381/associations",
+          "text": "Disease: insomnia\nDescription: Disorders characterized by impairment of the ability to initiate or maintain sleep. This may occur as a primary disorder or in association with another medical or psychiatric condition\nAssociation score: 0.236",
+          "cos_sim_score": 0.2364743558420678,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000131381::MONDO_0024470",
+          "title": "RBSN \u2194 benign chondrogenic neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000131381/associations",
+          "text": "Disease: benign chondrogenic neoplasm\nDescription: A non-metastasizing cartilaginous matrix-producing neoplasm characterized by the presence of neoplastic chondrocytes. Representative examples include osteochondroma and chondroma.\nAssociation score: 0.234",
+          "cos_sim_score": 0.2338677907310612,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::ZFYVE20",
+          "title": "ZFYVE20",
+          "url": "https://en.wikipedia.org/wiki/ZFYVE20",
+          "text": "Rabenosyn-5 is a protein that in humans is encoded by the ZFYVE20 gene.\n\nInteractions\nZFYVE20 has been shown to interact with RAB5A.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.5788614153862,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::RAB5A",
+          "title": "RAB5A",
+          "url": "https://en.wikipedia.org/wiki/RAB5A",
+          "text": "Ras-related protein Rab-5A is a protein that in humans is encoded by the RAB5A gene.\n\nFunction\nRAB5A localizes to early endosomes where it is involved in the recruitment of RAB7A and the maturation of these compartments to early endosomes. It drives the maturation of endosomes by transporting vacuolar (H+)-ATPases (V-ATPases) from trans-Golgi network to endocytic vesicles.\n\nInteractions\nRAB5A has been shown to interact with:\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.27102845907211304,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::RAB4A",
+          "title": "RAB4A",
+          "url": "https://en.wikipedia.org/wiki/RAB4A",
+          "text": "Ras-related protein Rab-4A is a protein that in humans is encoded by the RAB4A gene.\n\nInteractions\nRAB4A has been shown to interact with:\n\nCD2AP,\nKIF3B,\nRAB11FIP1,\nRABEP1,  and\nSTX4.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.22329655289649963,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::EHD protein family",
+          "title": "EHD protein family",
+          "url": "https://en.wikipedia.org/wiki/EHD_protein_family",
+          "text": "The EHD protein family is a relatively small group of proteins which have been shown to play a role in several physiological functions, the most notable being the regulation of endocytotic vesicles. This family is recognized by its highly conserved EH (Eps15 homology) domain, a structural motif that has been shown to facilitate specificity and interaction between protein and ligand. The four mammalian EHD proteins that have been classified are: EHD1, EHD2, EHD3, and EHD4.\n\nHistory\nDuring the late 20th century, several advances were made regarding the identification of proteins involved in endocytotic recycling and other mechanisms of intracellular trafficking. This period of research led to the discovery of over 60 proteins which collectively make up the Rab family. Rab proteins have been found to play a major role in endocytotic recycling via SNARE-based vesicle fusion and transport. When bound to GTP, Rab proteins have a large affinity for their respective effectors which then work to carry out a specific function.\nSome years later after the identification of the Rab family, the EHD family was discovered and was found to be associated with the same effectors that interact with the Rab proteins. This mutual interaction insinuates that the EHD proteins must somehow be cooperatively involved in the endocytotic recycling pathway. Some novel research even suggests that the EHD family has the ability to function in the place of Rab proteins when Rab concentrations drop.\n\nProtein structure\nWhile only the complete structure of EHD2 is known, all four of the EHD proteins have similar arrangements. Every EHD protein consists of approximately 534-543 amino acids. These amino acids assemble to form a unique secondary structure containing two helical regions, an ATP binding domain, a small linker region, and a C-terminus EH domain (see Figure 1).\n\nEH domain\nThe EH domain is responsible for promoting specificity of interaction between the EHD protein and its associated effector. Current research suggests that the EH domain interacts with the NPF motif, a basic region classified by its arginine (N), proline (P), and phenylalanine (F) constituents.  There have been several questions regarding the interaction between these two domains as they are both basic in nature and should, logically speaking, repel one another. The domains, however, are able to interact due to the flanking acidic amino acids (glutamate or aspartate) that surround either side of the NPF motif. These acidic amino acids create salt bridges with the lysine residues that lie within the EH domain and ultimately promote EHD functionality.\nRabenosyn-5, Rab11-FIP2 and Syndapin II are examples of interaction partners that all contain multiple NPF motifs within their individual architectures.\n\nATP-binding domain\nThe ATP binding domain shows impressive structural and functional similarity to the Dynamin GTP binding domain which is known to facilitate clathrin-coated vesicle budding. Given this resemblance, several researchers tend to consider the EHD protein family a sub-group that falls within the Dynamin protein superfamily. When ATP binds to this domain, EHD dimerization occurs, activating a cascade of reactions that results in the oligomerization of EHD and budding of the cell membrane to form a vesicle.\n\nHelical regions\nThe two helical domains act as lipid binding interfaces so that the EHD protein can interact with the cell membrane. These regions are rotated 50\u00b0 in relation to the ATP binding domain. This angulation is what facilitates the interaction of EHD with the lipid bilayer during endocytotic tubulation and vesiculation.\n\nTransportation pathways\nEHD proteins can recycle antigens, receptors, and other cellular materials through two mechanisms of recycling \u2013 slow and fast. Fast recycling is a direct pathway from early endosome to the cell membrane without an intermediate organelle present. Contrastingly, slow recycling requires cellular components to travel from early endosome to an endocytotic recycling compartment (ERC) before heading back towards the cell membrane. Other mechanisms of vesicular transport include retrograde transport, the movement of vesicles to the golgi apparatus, or lysosomal transport which results in the degradation of cellular material. \n\nThe currently accepted model for the mechanism of EHD vesiculation and recycling is as follows (see Figure 2):\n\nCytoplasmic EHD binds ATP at the ATP binding domain which leads to dimerization of the protein\nMembrane binding sites are formed and EHD associates with available tubular membranes\nATP is hydrolyzed which leads to the destabilization of the membrane\nVesicles are excised with cellular material trapped inside its walls",
+          "cos_sim_score": 0.19252333045005798,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::EHD protein family",
+          "title": "EHD protein family",
+          "url": "https://en.wikipedia.org/wiki/EHD_protein_family",
+          "text": "The currently accepted model for the mechanism of EHD vesiculation and recycling is as follows (see Figure 2):\n\nCytoplasmic EHD binds ATP at the ATP binding domain which leads to dimerization of the protein\nMembrane binding sites are formed and EHD associates with available tubular membranes\nATP is hydrolyzed which leads to the destabilization of the membrane\nVesicles are excised with cellular material trapped inside its walls\n\nFamily members\nEHD1\nThe EHD1 protein is thought to carry out vesicular transportation from the early endosome to the ERC, which has been linked to dynein motor proteins, as well as transportation from the ERC to the cell membrane. It has also been implicated in specialized modes of transport dependent upon the cellular material involved. Current research suggests that EHD1 plays a role in carrying the transferrin receptor, the LDL receptor, and other receptors that are associated with clathrin-independent internalization.\n\nEHD2\nNo consensus has been reached regarding the role of EHD2 but it seems to play a role in the structure of caveolae. Further it may be required to tether caveolae to cell surfaces\n\nEHD3\nStudies regarding the physiological functions of EHD3 are still being debated today. Currently, EHD3 is thought to interact with EHD1 to carry out transportation from the early endosome to the ERC. Evidence for this is implied as present-day research has only observed the consequences of the depletion of EHD3 concentration levels which renders transport from early endosome to ERC defective. Other research suggests that the EHD3 protein is involved in the retrograde pathway. A common receptor that is recycled via EHD3 is the dopamine receptor.\n\nEHD4\nEHD4 is implicated in vesicular transport from early endosome to ERC as well as in the lysosomal degradation pathway. Recent studies have shown that the EHD4 protein may only function within specific tissues. Nerve growth receptors such as TrkA/TrkB are commonly transported via EDH4.\n\nOther EHD receptors\nAnkyrin\nTCR-CD3\nYolk receptors\nGLUT4 glucose transporter\nHIV Nef\nGlutamate receptors\nNGF-R\n\n\n== References ==",
+          "cos_sim_score": 0.009431196376681328,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

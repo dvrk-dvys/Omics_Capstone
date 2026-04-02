@@ -1,0 +1,162 @@
+{
+  "probe_id": "11728821_a_at",
+  "gene_symbol": "HEPACAM2",
+  "rf_importance": 0.0104,
+  "selection_freq": 1.0,
+  "abs_fold_change": 2.665415500000001,
+  "score": 0.4492,
+  "probe_count": 2,
+  "probe_ids": "11728821_a_at | 11750918_a_at",
+  "max_score": 0.4492,
+  "mean_abs_fold_change": 2.5668,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T23:59:13",
+  "interpretation": "HEPACAM2 encodes a protein that is involved in centrosome maturation during cell division, specifically during prometaphase. This protein plays a crucial role in the formation of microtubules necessary for chromosome movement, which is vital for proper cell division. Although there is no direct evidence linking HEPACAM2 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in cell division and potential involvement in cellular stress responses could suggest a connection to the pathological processes underlying SONFH. The retrieved evidence primarily describes its biological functions without specific ties to SONFH, leading to a moderate confidence in its relevance. Thus, while HEPACAM2 may not be a strong candidate biomarker for early detection of SONFH, its biological functions could imply a role in the disease's cellular mechanisms.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "HEPACAM2 may be involved in cellular processes relevant to Steroid-Induced Osteonecrosis of the Femoral Head, but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "HEPACAM2 (A8MVW5). https://www.uniprot.org/uniprotkb/A8MVW5",
+    "HEPACAM2 (A8MVW5-2). https://www.uniprot.org/uniprotkb/A8MVW5-2",
+    "HEPACAM2 (A8MVW5-3). https://www.uniprot.org/uniprotkb/A8MVW5-3",
+    "HEPACAM2 \u2014 HEPACAM2. https://platform.opentargets.org/target/ENSG00000188175",
+    "HEPACAM2 \u2194 prostate cancer. https://platform.opentargets.org/target/ENSG00000188175/associations",
+    "HEPACAM2 \u2194 Familial prostate cancer. https://platform.opentargets.org/target/ENSG00000188175/associations",
+    "HEPACAM2 \u2194 glomerulonephritis. https://platform.opentargets.org/target/ENSG00000188175/associations",
+    "HEPACAM2 \u2194 liver disease. https://platform.opentargets.org/target/ENSG00000188175/associations",
+    "HEPACAM. https://en.wikipedia.org/wiki/HEPACAM",
+    "HEPACAM2. https://en.wikipedia.org/wiki/HEPACAM2",
+    "IgSF CAM. https://en.wikipedia.org/wiki/IgSF_CAM",
+    "List of human protein-coding genes 4. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_4",
+    "Tankyrase. https://en.wikipedia.org/wiki/Tankyrase"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4165,
+    "completion_tokens": 241,
+    "total_tokens": 4406,
+    "estimated_cost_usd": 0.000769
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::A8MVW5",
+          "title": "HEPACAM2 (A8MVW5)",
+          "url": "https://www.uniprot.org/uniprotkb/A8MVW5",
+          "text": "Protein: HEPACAM family member 2\nFunction: Required during prometaphase for centrosome maturation. Following poly-ADP-ribosylation (PARsylation) by TNKS, translocates from the Golgi apparatus to mitotic centrosomes and plays a key role in the formation of robust microtubules for prompt movement of chromosomes: anchors AKAP9/CG-NAP, a scaffold protein of the gamma-tubulin ring complex and promotes centrosome maturation",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::A8MVW5-2",
+          "title": "HEPACAM2 (A8MVW5-2)",
+          "url": "https://www.uniprot.org/uniprotkb/A8MVW5-2",
+          "text": "Protein: Isoform 2 of HEPACAM family member 2",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::A8MVW5-3",
+          "title": "HEPACAM2 (A8MVW5-3)",
+          "url": "https://www.uniprot.org/uniprotkb/A8MVW5-3",
+          "text": "Protein: Isoform 3 of HEPACAM family member 2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000188175::function",
+          "title": "HEPACAM2 \u2014 HEPACAM2",
+          "url": "https://platform.opentargets.org/target/ENSG00000188175",
+          "text": "Function: Required during prometaphase for centrosome maturation. Following poly-ADP-ribosylation (PARsylation) by TNKS, translocates from the Golgi apparatus to mitotic centrosomes and plays a key role in the formation of robust microtubules for prompt movement of chromosomes: anchors AKAP9/CG-NAP, a scaffold protein of the gamma- tubulin ring complex and promotes centrosome maturation. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000188175::MONDO_0008315",
+          "title": "HEPACAM2 \u2194 prostate cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000188175/associations",
+          "text": "Disease: prostate cancer\nDescription: A primary or metastatic malignant tumor involving the prostate gland. The vast majority are carcinomas.\nAssociation score: 0.112",
+          "cos_sim_score": 0.11179790604212228,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000188175::Orphanet_1331",
+          "title": "HEPACAM2 \u2194 Familial prostate cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000188175/associations",
+          "text": "Disease: Familial prostate cancer\nDescription: Prostate carcinoma that has developed in relatives of patients with a history of prostate carcinoma.\nAssociation score: 0.111",
+          "cos_sim_score": 0.11087395640541053,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000188175::MONDO_0002462",
+          "title": "HEPACAM2 \u2194 glomerulonephritis",
+          "url": "https://platform.opentargets.org/target/ENSG00000188175/associations",
+          "text": "Disease: glomerulonephritis\nDescription: A renal disorder characterized by damage in the glomeruli. It may be acute or chronic, focal or diffuse, and it may lead to renal failure. Causes include autoimmune disorders, infections, diabetes, and malignancies.\nAssociation score: 0.096",
+          "cos_sim_score": 0.09608682657477641,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000188175::EFO_0001421",
+          "title": "HEPACAM2 \u2194 liver disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000188175/associations",
+          "text": "Disease: liver disease\nDescription: Pathological processes of the LIVER.\nAssociation score: 0.092",
+          "cos_sim_score": 0.09243326052432255,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::HEPACAM",
+          "title": "HEPACAM",
+          "url": "https://en.wikipedia.org/wiki/HEPACAM",
+          "text": "Gene HEPACAM*, named based on its original site of identification - hepatocytes and the nature of its protein product - a cell adhesion molecule (CAM), was first discovered and characterised in human liver. The gene encodes a protein of 416 amino acids, designated as hepaCAM**, which is a new member of the immunoglobulin superfamily of cell adhesion molecules (IgSF CAM). The main biological functions of hepaCAM include a) modulating cell-matrix adhesion and migration, and b) inhibiting cancer cell growth.\n(Note: *HEPACAM, gene name; **hepaCAM, protein name)\n\nDiscovery\nThrough differential screening of gene expression, over 200 genes were found to be either up- or down-regulated in a hepatocellular carcinoma patient. These genes were subsequently evaluated against a panel of human HCC specimens, leading to the identification of a novel gene HEPN1. Based on the sequence of HEPN1, the new gene HEPACAM was then isolated and characterised.\n\nCharacteristics and functions\nStructurally, hepaCAM is a glycoprotein containing an extracellular domain with 2 Ig-like loops, a transmembrane region and a cytoplasmic domain. Matched to chromosome 11q24, gene HEPACAM is ubiquitously expressed in normal human tissues, with particularly high expression levels in the central nervous system (CNS), and is frequently suppressed in a variety of tumour types. Functionally, hepaCAM is involved in cell-extracellular matrix interactions and growth control of cancer cells, and is able to induce differentiation of glioblastoma cells. In cell signaling, hepaCAM directly interacts with F-actin and calveolin 1, and is capable of inducing senescence-like growth arrest via a p53/p21-dependent pathway. Moreover, hepaCAM is proteolytically cleaved near the transmembrane region. These findings indicate that the new Ig-like cell adhesion molecule hepaCAM is also a tumour suppressor.\nMutations in the human HEPACAM gene are linked to forms of leukodystrophy, a group of inherited disorders characterized by degeneration of brain white matter. The protein produced from the HEPACAM gene was found to interact with the gene products of MLC1 and CLCN2, two other human genes linked to leukodystrophies.\n\nOther names\nglialCAM, which was cloned from a human brain cDNA library in 2008 and found to be identical to hepaCAM; and\nHEPACAM1, when HEPACAM2 emerged in 2010.\n\nAbout HEPACAM 2\nMetastatic canine mammary carcinoma and their metastases are characterized by decreased HEPACAM2 but unchanged HEPACAM2 expression levels when compared to normal glands.\n\n\n== References ==",
+          "cos_sim_score": 0.4366011619567871,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::HEPACAM2",
+          "title": "HEPACAM2",
+          "url": "https://en.wikipedia.org/wiki/HEPACAM2",
+          "text": "HEPACAM family member 2 is a protein that in humans is encoded by the HEPACAM2 gene.\n\nFunction\nThis gene encodes a protein related to the immunoglobulin superfamily that plays a role in mitosis. Knockdown of this gene results in prometaphase arrest, abnormal nuclear morphology, and apoptosis. \nPoly (ADP-ribosylation) of the encoded protein promotes its translocation to centrosomes, which may stimulate centrosome maturation. A chromosomal deletion including this gene may be associated with myeloid leukemia and myelodysplastic syndrome in human patients.\n\nReferences\nFurther reading\n\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.4192664623260498,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::IgSF CAM",
+          "title": "IgSF CAM",
+          "url": "https://en.wikipedia.org/wiki/IgSF_CAM",
+          "text": "IgSF CAMs (Immunoglobulin-like Cell Adhesion Molecules) are cell adhesion molecules that belong to Immunoglobulin superfamily. It is regarded as the most diverse superfamily of CAMs. This family is characterized by their extracellular domains containing Ig-like domains. The Ig domains are then followed by Fibronectin type III domain repeats and IgSFs are anchored to the membrane by a GPI moiety. This family is involved in both homophilic or heterophilic binding and has the ability to bind integrins or different IgSF CAMs.\n\nExamples\n\nHere is a list of some molecules of this family:\n\nNCAMs Neural Cell Adhesion Molecules\nICAM-1 Intercellular Cell Adhesion Molecule\nVCAM-1 Vascular Cell Adhesion Molecule\nPECAM-1 Platelet-endothelial Cell Adhesion Molecule\nMAdCAM-1 Mucosal Vascular Addressin Cell Adhesion Molecule\nL1 family including L1 (protein), CHL1, Neurofascin and NrCAM\nSIGLEC family including Myelin-associated glycoprotein (MAG, SIGLEC-4), CD22 and CD83\nCTX family including CTX, Junctional adhesion molecule (JAM), BT-IgSF, Coxsackie virus and adenovirus receptor (CAR), VSIG, ESAM\nNectins and related proteins, including CADM1 and other Synaptic Cell Adhesion Molecules\nCD2\nCD48\nHEPACAM\nHEPACAM2\nDSCAM - Down syndrome cell adhesion molecule\n\n\n== References ==",
+          "cos_sim_score": 0.1670663058757782,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of human protein-coding genes 4",
+          "title": "List of human protein-coding genes 4",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_4",
+          "text": "== References ==",
+          "cos_sim_score": 0.07340211421251297,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Tankyrase",
+          "title": "Tankyrase",
+          "url": "https://en.wikipedia.org/wiki/Tankyrase",
+          "text": "Tankyrase, also known as tankyrase 1, is an enzyme that in humans is encoded by the TNKS gene. It inhibits the binding of TERF1 to telomeric DNA.\nTankyrase attracts substantial interest in cancer research through its interaction with AXIN1 and AXIN2, which are negative regulators of pro-oncogenic \u03b2-catenin signaling. Importantly, activity in the \u03b2-catenin destruction complex can be increased by tankyrase inhibitors and thus such inhibitors are a potential therapeutic option to reduce the growth of \u03b2-catenin-dependent cancers.\n\nDescription\nSource:\nTankyrase-1 is a poly-ADP-ribosyltransferase involved in various processes such as Wnt signaling pathway, telomere length and vesicle trafficking. Acts as an activator of the Wnt signaling pathway by mediating poly-ADP-ribosylation (PARylation) of AXIN1 and AXIN2, 2 key components of the beta-catenin destruction complex: poly-ADP-ribosylated target proteins are recognized by RNF146, which mediates their ubiquitination and subsequent degradation. Also mediates PARsylation of BLZF1 and CASC3, followed by recruitment of RNF146 and subsequent ubiquitination. Mediates PARsylation of TERF1, thereby contributing to the regulation of telomere length. Involved in centrosome maturation during prometaphase by mediating PARsylation of HEPACAM2/MIKI. May also regulate vesicle trafficking and modulate the subcellular distribution of SLC2A4/GLUT4-vesicles. May be involved in spindle pole assembly through PARsylation of NUMA1. Stimulates 26S proteasome activity.\n\nProtein interactions\nTNKS has been shown to interact with:\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.03436858952045441,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

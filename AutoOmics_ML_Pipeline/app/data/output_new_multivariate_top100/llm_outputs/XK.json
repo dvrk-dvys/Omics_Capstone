@@ -1,0 +1,211 @@
+{
+  "probe_id": "11728138_at",
+  "gene_symbol": "XK",
+  "rf_importance": 0.0041,
+  "selection_freq": 1.0,
+  "abs_fold_change": 2.8971089,
+  "score": 0.4336,
+  "probe_count": 2,
+  "probe_ids": "11728138_at | 11728137_at",
+  "max_score": 0.4336,
+  "mean_abs_fold_change": 2.8313,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T21:32:50",
+  "interpretation": "The XK gene encodes a protein that functions as an endoplasmic reticulum membrane adapter, facilitating the recruitment of lipid transfer proteins. While there is no direct evidence linking XK to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in lipid metabolism and cellular processes may suggest a potential involvement in the pathophysiology of osteonecrosis, particularly in the context of steroid use which is known to disrupt lipid homeostasis and blood supply to bone. The evidence retrieved primarily discusses XK's association with other conditions, such as McLeod syndrome, but does not provide a direct link to SONFH. Therefore, the biological inference is that alterations in XK function could hypothetically contribute to the mechanisms underlying SONFH, but this remains speculative. Overall, the evidence is weak, indicating that XK is unlikely to serve as a reliable biomarker for early detection of SONFH.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "XK may be involved in lipid metabolism processes that could hypothetically relate to the mechanisms of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "XK (P51811). https://www.uniprot.org/uniprotkb/P51811",
+    "XK \u2014 XK. https://platform.opentargets.org/target/ENSG00000047597",
+    "XK \u2194 McLeod neuroacanthocytosis syndrome. https://platform.opentargets.org/target/ENSG00000047597/associations",
+    "XK \u2194 genetic disorder. https://platform.opentargets.org/target/ENSG00000047597/associations",
+    "XK \u2194 isolated asymptomatic elevation of creatine phosphokinase. https://platform.opentargets.org/target/ENSG00000047597/associations",
+    "XK \u2194 Elevated circulating creatine kinase concentration. https://platform.opentargets.org/target/ENSG00000047597/associations",
+    "XK \u2014 X-linked Kx blood group antigen, Kell and VPS13A binding protein (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "XKR8 \u2014 XK related 8 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "XKR6 \u2014 XK related 6 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "XKR4 \u2014 XK related 4 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "XKR3 \u2014 XK related 3 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Association of a polymorphism in PON-1 gene with steroid-induced osteonecrosis of femoral head in Chinese Han population (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC4226244/",
+    "Avascular necrosis of bone in severe acute respiratory syndrome (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC7124301/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8098,
+    "completion_tokens": 316,
+    "total_tokens": 8414,
+    "estimated_cost_usd": 0.001404
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P51811",
+          "title": "XK (P51811)",
+          "url": "https://www.uniprot.org/uniprotkb/P51811",
+          "text": "Protein: Endoplasmic reticulum membrane adapter protein XK\nFunction: Recruits the lipid transfer protein VPS13A from lipid droplets to the endoplasmic reticulum (ER) membrane",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000047597::function",
+          "title": "XK \u2014 XK",
+          "url": "https://platform.opentargets.org/target/ENSG00000047597",
+          "text": "Function: Recruits the lipid transfer protein VPS13A from lipid droplets to the endoplasmic reticulum (ER) membrane. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000047597::MONDO_0018945",
+          "title": "XK \u2194 McLeod neuroacanthocytosis syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000047597/associations",
+          "text": "Disease: McLeod neuroacanthocytosis syndrome\nDescription: A form of neuroacanthocytosis and is characterized clinically by a Huntington's disease-like phenotype with an involuntary hyperkinetic movement disorder, psychiatric manifestations and cognitive alterations, and biochemically by absence of the Kx antigen and by weak expression of the Kell antigens.\nAssociation score: 0.803",
+          "cos_sim_score": 0.8031785116963852,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000047597::EFO_0000508",
+          "title": "XK \u2194 genetic disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000047597/associations",
+          "text": "Disease: genetic disorder\nDescription: Genetic diseases are diseases in which inherited genes predispose to increased risk. The genetic disorders associated with cancer often result from an alteration or mutation in a single gene. The diseases range from rare dominant cancer family syndrome to familial tendencies in which low-penetrance genes may interact with other genes or environmental factors to induce cancer. Research may involve clinical, epidemiologic, and laboratory studies of persons, families, and populations at high risk of these disorders.\nAssociation score: 0.411",
+          "cos_sim_score": 0.4110702004650696,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000047597::MONDO_0016103",
+          "title": "XK \u2194 isolated asymptomatic elevation of creatine phosphokinase",
+          "url": "https://platform.opentargets.org/target/ENSG00000047597/associations",
+          "text": "Disease: isolated asymptomatic elevation of creatine phosphokinase\nDescription: Isolated hyperCKemia is a condition characterized by elevated levels of an enzyme called creatine kinase in the blood. In affected individuals, levels of this enzyme are typically 3 to 10 times higher than normal. While elevated creatine kinase often accompanies various muscle diseases, individuals with isolated hyperCKemia have no muscle weakness or other symptoms. Some people with this condition have abnormalities of muscle cells that can be seen with a microscope, such as unusual variability in the size of muscle fibers, but these changes do not affect the function of the muscle.\nAssociation score: 0.271",
+          "cos_sim_score": 0.2707080040601769,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000047597::HP_0003236",
+          "title": "XK \u2194 Elevated circulating creatine kinase concentration",
+          "url": "https://platform.opentargets.org/target/ENSG00000047597/associations",
+          "text": "Disease: Elevated circulating creatine kinase concentration\nDescription: An elevation of the level of the enzyme creatine kinase (also known as creatine phosphokinase (CK; EC 2.7.3.2) in the blood. CK levels can be elevated in a number of clinical disorders such as myocardial infarction, rhabdomyolysis, and muscular dystrophy.\nAssociation score: 0.259",
+          "cos_sim_score": 0.25870589827929125,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "XK \u2014 X-linked Kx blood group antigen, Kell and VPS13A binding protein",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: XK\nGene name: X-linked Kx blood group antigen, Kell and VPS13A binding protein\nAliases / synonyms: KX, NA, NAC, X1k, XKR1\nOrganism: Homo sapiens\nGene summary: This locus controls the synthesis of the Kell blood group 'precursor substance' (Kx). Mutations in this gene have been associated with McLeod syndrome, an X-linked, recessive disorder characterized by abnormalities in the neuromuscular and hematopoietic systems. The encoded protein has structural characteristics of prokaryotic and eukaryotic membrane transport proteins. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "XK",
+          "aliases": "KX, NA, NAC, X1k, XKR1",
+          "gene_description": "X-linked Kx blood group antigen, Kell and VPS13A binding protein"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "XKR8 \u2014 XK related 8",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: XKR8\nGene name: XK related 8\nAliases / synonyms: XRG8, hXkr8\nOrganism: Homo sapiens\nGene summary: Enables phospholipid scramblase activity. Involved in engulfment of apoptotic cell; phosphatidylserine exposure on apoptotic cell surface; and positive regulation of myoblast differentiation. Located in plasma membrane. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "XKR8",
+          "aliases": "XRG8, hXkr8",
+          "gene_description": "XK related 8"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "XKR6 \u2014 XK related 6",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: XKR6\nGene name: XK related 6\nAliases / synonyms: C8orf21, C8orf5, C8orf7, XRG6\nOrganism: Homo sapiens\nGene summary: Predicted to be involved in apoptotic process involved in development; engulfment of apoptotic cell; and phosphatidylserine exposure on apoptotic cell surface. Predicted to be located in membrane. Predicted to be active in plasma membrane. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "XKR6",
+          "aliases": "C8orf21, C8orf5, C8orf7, XRG6",
+          "gene_description": "XK related 6"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "XKR4 \u2014 XK related 4",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: XKR4\nGene name: XK related 4\nAliases / synonyms: XRG4, hXKR4\nOrganism: Homo sapiens\nGene summary: Enables phospholipid scramblase activity. Involved in phosphatidylserine exposure on apoptotic cell surface. Predicted to be located in membrane. Predicted to be active in plasma membrane. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "XKR4",
+          "aliases": "XRG4, hXKR4",
+          "gene_description": "XK related 4"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "XKR3 \u2014 XK related 3",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: XKR3\nGene name: XK related 3\nAliases / synonyms: XRG3, XTES\nOrganism: Homo sapiens\nGene summary: XKRX (MIM 300684) and XKR3 are homologs of the Kell blood group precursor XK (MIM 314850), which is a putative membrane transporter and a component of the XK/Kell complex of the Kell blood group system (Calenda et al., 2006 [PubMed 16431037]).[supplied by OMIM, Mar 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "XKR3",
+          "aliases": "XRG3, XTES",
+          "gene_description": "XK related 3"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::4226244",
+          "title": "Association of a polymorphism in PON-1 gene with steroid-induced osteonecrosis of femoral head in Chinese Han population",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4226244/",
+          "text": "Introduction\nOsteonecrosis of femoral head (ONFH) is a bone disease that cellular death happens within femoral head owing to damage of blood supply to the anterior\u2013superior\u2013 lateral part of the femoral head [1]. Without effective intervention, most cases will develop collapse of femoral head and eventually degenerative arthritis of the hip [2]. Although quite a number of treatments were developed to relief or reverse the course of this illness, none of them is satisfactory to solve this intractable medical condition. Invention of total hip arthroplasty is a milestone in management of ONFH, however, the patients often require multiple increasingly difficult surgeries over the course of a lifetime because the average age at presentation is very young (about 33 years of age).\nLots of factors as trauma, alcoholism, coagulation defects, hematopathy, certain autoimmune diseases may lead to osteonecrosis. Beyond that, some treating modalities also increase the risk of this disease. For example, Bisphosphonate contributes to osteonecrosis of jaw (BRONJ) as well as steroids may induce osteonecrosis in multiple joints including hip joint [3]. Among ONFH caused by different etiologies, steroid-induced ONFH attracts vast attention for following reasons: first, there is a growing trend of its morbidity and some epidemic studies suggests it has became the leading cause of ONFH; Second, it typically happens in young patients that is the worst cases to handle; Last, preventative methods seems effective due to laboratory trial [4]. From the fact that even receive same steroid administration regime, not every patient develop ONFH, it is easy to reach the conclusion that steroid sensitivity are different among people. Hence, it is imperative for medical community to bring about substantial moves in prevention. Early perception of susceptible signs in patients on steroid medication is needed for its prospective benefits. To address this problem, the etiology and pathogenesis of ONFH must be thoroughly surveyed to find a starting point. According to current condition, it is neither practicable nor necessary to apply preventative modality on the all patients medicated by steroid, thus screening for susceptible population seems to be the key point making prevention more efficient. With the progress of molecular biology, increasing number of gene was found to be associated with certain disease. Further studies combined several functional genes into a model to predict the occurrence of cancer which make it even closer to clinical application [5]. Presently, single nucleotide polymorphism (SNP) arouses vast interests and is believed to be the most promising direction in this field. In addition to sound proof favoring SNP is related to disease-susceptibility, it also possesses a merit called dimorphism which means each locus comprises of two alleles\u2014it is either this or that. That leads to low cost and difficulty of detect and screen which helps SNP to become a hot spot in medical research. Since its advantages mentioned above, SNP is widely used in research involving steroid-induced ONFH.",
+          "cos_sim_score": 0.6878604888916016,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::7124301",
+          "title": "Avascular necrosis of bone in severe acute respiratory syndrome",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7124301/",
+          "text": "1\nIntroduction\nSevere acute respiratory syndrome (SARS) is a newly recognized disease that was first reported in Guangdong province, People's Republic of China, in November 2002, and it has rapidly spread to other Asian countries, North America, and Europe. By 12 August, 2003, more than 8000 individuals have been infected with SARS, of which 812 were fatal.1., 2. It has been shown that a previously unknown coronavirus is the primary cause of SARS.3., 4., 5., 6.\nAvascular osteonecrosis (AVN) is a well-recognized condition of unknown aetiology whereby the circulation of the blood to an area of bone is impaired.7 Eventually the involved area of bone dies and necrosis develops. It may be idiopathic or associated with a number of diseases, such as trauma, use of steroids, sickle cell disease, and vasculitis. Risk factors include the use of steroids and alcohol abuse. Intravascular fat embolism or thrombosis, coagulopathy, venous congestion and development of intra-osseous hypertension have been postulated as aetiological factors.8., 9. The early diagnosis of AVN is important as surgical core decompression may arrest the progress of the condition and prevent subsequent femoral head collapse.10\nAbout 23\u201332% of SARS patients become critically ill,11 so corticosteroids are frequently prescribed. Corticosteroids have long been regarded as a predisposing factor for the development of AVN. AVN has not been previously reported in patients with SARS so the present study was undertaken to investigate the incidence of AVN in SARS patients.\n2\nMaterials and methods\n2.1\nPatients\nSixty-seven patients (age range 21\u201355 years; mean age 32.3 years) consisting of 55 women (age range 21\u201355 years; mean age 32.9 years) and 12 men (age range 21\u201352 years; mean age 28.5 years) who fitted the WHO case definition for SARS,12 and who had also reported large joint pain during or after hospitalization were included in our study group. None of the patients had pre-SARS joint pain. The joint pain was discovered in a retrospective review of the notes, and occurred 12\u2013120 days after the onset of SARS (average 60.73 days). Except for one patient, all patients were hospital staff, and the majority were nurses.\nThey were screened with plain radiographs of the affected joints. If no suitable reason was found for the pain (such as osteoarthritis or fractures), magnetic resonance imaging (MRI) examination was undertaken on the affected joint (hip, knee or ankle) on the same day as plain radiograph. Informed consents were obtained from all the patients, and they could withdraw at any time.\nThe antiviral agent, ribavirin, was administered to all patients, 750 mg daily for about 2 weeks, then taken orally 250 mg daily for 1 week. All patients were treated with intravenous methylprednisolone (80\u2013800 mg daily) for 3\u201320 consecutive days, 1\u201311 days after the diagnosis of SARS was made, then oral prednisolone was given, they were managed conservatively with stepwise steroid withdrawal. The cumulative dosage of therapeutic doses was 4117.33 mg (range 640\u201320,000 mg).\nNone of the patients were alcoholics or intravenous drug users.\n2.2\nMRI protocol\nMRI was performed using a 1.5\u00a0T Signa CVi imager (GE Medical Systems, Milwaukee WI, USA). A phased-array body coil was used. All MRI examinations were performed by using preset protocols, as follows: for the hip, coronal T2-weighted fast spin-echo sequence (3400 ms/100 ms (repetition time/echo time), 5 mm section thickness, 0.5 mm section gap, echo train length of 16, 256\u00d7224 matrix, 400 mm field of view) followed by a coronal short tau inversion recovery (STIR) fat-suppressed T2-weighted sequence (3420/100, 5 mm section thickness, 0.5 mm section gap, echo train length of 16, 256\u00d7224 matrix, 400 mm field of view) and a coronal T1-weighted spin-echo sequence (460/8.3, 5 mm section thickness, 0.5 mm section gap, 256\u00d7224 matrix, 400 mm field of view).",
+          "cos_sim_score": 0.45107513666152954,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::7124301",
+          "title": "Avascular necrosis of bone in severe acute respiratory syndrome",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7124301/",
+          "text": "It is said that body weight gain might also be a risk factor for the development of AVN, but this is controversial.14., 25. Body weight gain might be an independent risk factor for AVN, as it did not correlate with the use of steroids.29\nIt is unknown why AVN occurred 91\u2013143 days after the steroid use, which is shorter than is generally recognized for patients receiving chronic steroid therapy.22., 30. Also why many patchy areas of AVN involving the subchondral areas of the distal femoral condyle and tibia plateau were found. As MRI is more sensitive than plain radiography, this could be one reason to explain the anomalies in the present study; but as we know little about this new coronavirus, whether the virus itself or in combination with steroid use could lead to these phenomenon, still needs to be studied. Further study is needed to follow up those SARS patients without joint pain to investigate whether they develop AVN in the future.\nIn conclusion, we have documented the incidence of AVN in association with SARS. Corticosteroids could be the major predisposing factor in the development of AVN in SARS patients. This risk of the development of AVN should be borne in mind, and steroids should be administrated cautiously.",
+          "cos_sim_score": 0.44991254806518555,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::7124301",
+          "title": "Avascular necrosis of bone in severe acute respiratory syndrome",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7124301/",
+          "text": "3\nResults\nNo abnormality could be found on the plain radiographs of all of the patients. The diagnosis of AVN was based on MR findings. Twenty-eight of 65 SARS patients between April 2003 and August 2003 were identified as having AVN (Table 1). Among them, there are 22 women (age range, 23\u201350 years; mean age, 31.8 years) and six men (age range, 21\u201352 years; mean age, 29.2 years). The mean time to diagnosis of AVN was 119 days after the diagnosis of SARS, or 116 days after steroid administration. Three patients had bilateral AVN of the hips (Fig. 1), four patients of one femoral head (Fig. 2), five patients of the bilateral hips, distal femur and proximal tibia, four patients of the ipsilateral hip and knees, 10 patients of the knee(s), one patient of right proximal fibula, and one patient of knees and talus (Fig. 3). However, many small patchy areas of AVN involving the subchondral areas of the medial, lateral femoral condyle and tibia plateau were found (Fig. 4).Table 1Clinical characteristics of patients with severe acquired respiratory sydrome (SARS) complicated by avascular necrosis (AVN)Patient No.AgeSexAVNMean time to diagnosis of AVN after:SARS (days)Steroid use (days)136FBilateral distal femur, proximal tibia and left talus10899221MBilateral distal femur and right proximal tibia9391347FBilateral distal femur109108433FLeft hip and bilateral distal femur104103533FBilateral hips122120628MBilateral hips and right distal femur10096724MRight proximal fibula125125822FLeft distal femur135131933FLeft hip1121171030FRight distal femur1111101149FBilateral hips, distal femur and left proximal tibia1091091234FBilateral hips, distal femur and left proximal tibia1301271323FRight hip1211181452MRight femur neck, distal femur and bilateral proximal tibia1111071525FLeft hip1331331625FBilateral hips, distal femur and proximal tibia1221221725FBilateral hips1121101824FRight distal femur and proximal tibia1161141930FRight hip, bilateral distal femur and left proximal tibia1181162024FRight hip, left distal femur and bilateral proximal tibia1181172134FLeft hip1121102224FRight distal femur and bilateral proximal tibia1351342326MLeft distal femur and right proximal tibia1201152431Fbilateral distal femur1221202536FBilateral hips, distal femur and right proximal tibia1451432624MLeft distal femur and right proximal tibia1241232731FBilateral hips1311242850FRight distal femur128118Figure 1MR images of pelvis of patient 7. (a) Coronal T2-weighted and (b) coronal T2-weighted fat-suppressed and (c) coronal T1-weighted MR images showing bilateral AVN of the femoral heads.Figure 2MR images of pelvis of patient 21. (a) Coronal T2-weighted and (b) coronal T2-weighted fat-suppressed and (c) coronal T1-weighted MR images showing AVN of the left femoral head.Figure 3MR images of the knee and left ankle of patient 1. (a) Coronal T2-weighted and (b) coronal T2-weighted fat-suppressed and (c) coronal T1-weighted and (d) coronal T2-weighted and (e) coronal T1-weighted and (f) sagittal T1-weighted MR images showing AVN of the bilateral distal femurs, left proximal tibia and left talus.Figure 4MR images of knee of patient 19. (a) Coronal T2-weighted and (b) coronal T2-weighted fat-suppressed and (c) coronal T1-weighted MR images showing AVN of the subchondral areas of the bilateral femoral condyle and left tibia plateau.\nTable 1\nClinical characteristics of patients with severe acquired respiratory sydrome (SARS) complicated by avascular necrosis (AVN)\nFigure 1",
+          "cos_sim_score": 0.4391220211982727,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::4226244",
+          "title": "Association of a polymorphism in PON-1 gene with steroid-induced osteonecrosis of femoral head in Chinese Han population",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4226244/",
+          "text": "Table 3\nExact test of rs662 for Hardy-Weinberg equilibrium (n\u2009=\u2009195)\nAs shown in Table\u00a04, the rs662 allele and genotype frequencies showed a significantly higher risk factor in ONFH patients compared with those in controls with P values 0.022 (OR; 0.39, 95% CI; 0.17-0.89) in the overdominant model. Though the P value of rs662 genotype frequency in the condominant model was slightly greater than 0.05 (P\u2009=\u20090.072), it showed the tendency of weak association with the risk of ONFH development. No differences in the frequencies of the allele and genotypes were seen in patients and the controls in the case rs662 polymorphisms.\nTable 4\nAssociation between rs662 SNPs and the risk of steroid-induced ONFH\nDiscussion\nAlthough collapse of femoral head is the distinctive feature in radiography which is easy to be identified, it commonly happens in the middle stage. Before that, bone marrow edema, cystic degeneration, bone density loss and other manifestations are all nonspecific signs. Then, the forthcoming subchondral fracture (crescent signs) and calcification zone is reasonable proof for diagnosis but they also mean that the best time for treatment has been past. In addition, pain-the major symptom in early stage, may occurs in lower back, hip or even knees that makes it even more difficult to be diagnosed. Histopathological study reveals that, steroid-induced ONFH suffered diffusive lesions in whole femoral head. Due to the inhibiting effects of steroid on osteoblast the bone repairing course becomes much slower. Furthermore, insufficient blood flow caused by steroid further compromise the repairing process. Consequently, the collapse may develop much faster. Take into account these unfavorable characteristics of steroid-induced ONFH, predicting factors of this disease are needed for prevention and early intervention.\nThis study was conducted to identify a genetic factor contributing to onset of steroid-induced ONFH. The result indicated that, under the overdominant model, A/G carriers were less susceptible to steroid-induced ONFH than A/A and G/G carriers among patients managed by steroid, suggesting that A/G carriers may have a lower sensitivity to GC than A/A and G/G carriers. In a word, our data suggest for the first time that SNP (rs662) of the PON-1 gene was associated with the risk of steroid-induced ONFH.\nAs mentioned above, accumulating studies were performed to investigate the relationship between SNP of rs662 (Q192R) and other vascular ischemic diseases. However, their results were not consistent. Two cohort studies in Britain which found no evidence that PON-1 Q192R polymorphism is associated with CHD risk in Caucasian women or men [22,23]. However, the investigation in Thai population turned out to be opposite\u2014a firm association between polymorphism of Q192R and CHD was observed [24]. For stroke, a study in Chinese population showed that Q192R polymorphism (the R allele and RR genotype) was associated with an increased risk of ischemic stroke [17]. On the contrary, a research in Greece indicated that no links between Q192R and stroke was detected [25,26]. The demographic factors as ethic background may contribute to this paradox.\nThere are several highlights in the current study as following: first, PON-1 polymorphism has been a hot issue, however, very few researches was designed to investigate its relationship with ONFH; Second, differences in PON-1 activity, concentration and genotype distribution have long been known to occur between different populations and geographical regions throughout the world. Accordingly, this is deemed as one of the major controversies between studies concerning relationship between PON-1 polymorphism and other diseases. In this study, all participants were confined as Han Chinese lived in north areas of the Yellow River that is designed to avoid deviation caused by ethical and geographical factors. Last but not the least, unlike some other studies that using healthy people as controls, this research recruit steroid users without developing ONFH as reference group. This scheme is of an obvious advantage that it excludes the influence of steroid\u2014a pathogenic factor on subjects of different groups. Consequently, it increases the reliability of the result.",
+          "cos_sim_score": 0.38418567180633545,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

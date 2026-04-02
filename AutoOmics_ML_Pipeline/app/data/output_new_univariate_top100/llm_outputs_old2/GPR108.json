@@ -1,0 +1,167 @@
+{
+  "probe_id": "11722216_a_at",
+  "gene_symbol": "GPR108",
+  "score": 1.0,
+  "SD_TestAUC": 0.0721984766282145,
+  "abs_fold_change": 0.5897,
+  "probe_count": 1,
+  "probe_ids": "11722216_a_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.5897,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T18:38:03",
+  "interpretation": "GPR108 is a G protein-coupled receptor that may play a role in immune modulation by activating the NF-kappaB pathway and attenuating Toll-like receptor responses. While there is no direct evidence linking GPR108 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in immune responses could suggest a potential role in the inflammatory processes associated with steroid treatment and subsequent bone health. The retrieved evidence primarily indicates its function in immune modulation, which is relevant to the pathophysiology of SONFH, but lacks specific studies directly connecting GPR108 to this condition. Therefore, the evidence is weak, leading to an inference that GPR108 may be involved in the broader context of steroid-induced effects on bone but is unlikely to serve as a reliable early-detection biomarker for SONFH.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "GPR108 may be involved in immune modulation processes that could relate to the inflammatory response in Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "GPR108 (Q9NPR9). https://www.uniprot.org/uniprotkb/Q9NPR9",
+    "GPR108 \u2014 GPR108. https://platform.opentargets.org/target/ENSG00000125734",
+    "GPR108 \u2194 Absent tibia - polydactyly. https://platform.opentargets.org/target/ENSG00000125734/associations",
+    "GPR108 \u2194 tibia, hypoplasia or aplasia of, with polydactyly. https://platform.opentargets.org/target/ENSG00000125734/associations",
+    "GPR108 \u2194 age-related macular degeneration. https://platform.opentargets.org/target/ENSG00000125734/associations",
+    "GPR108 \u2194 Acheiropodia. https://platform.opentargets.org/target/ENSG00000125734/associations",
+    "GPR108 \u2014 G protein-coupled receptor 108 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MUC1 \u2014 mucin 1, cell surface associated (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "LMNA \u2014 lamin A/C (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "GLP1R \u2014 glucagon like peptide 1 receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "PRKAR1A \u2014 protein kinase cAMP-dependent type I regulatory subunit alpha (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4863,
+    "completion_tokens": 296,
+    "total_tokens": 5159,
+    "estimated_cost_usd": 0.000907
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9NPR9",
+          "title": "GPR108 (Q9NPR9)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9NPR9",
+          "text": "Protein: Protein GPR108\nFunction: May play a role in intracellular immune modulation by activating NF-kappaB response and attenuating Toll-like-receptor response (Microbial infection) Plays an essential function in adeno-associated virus (AAV) transduction across multiple serotypes except AAV5. May play a critical role in mediating the endosomal virus escape or in the AAV virions trafficking from endosomes to the nucleus",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000125734::function",
+          "title": "GPR108 \u2014 GPR108",
+          "url": "https://platform.opentargets.org/target/ENSG00000125734",
+          "text": "Function: May play a role in intracellular immune modulation by activating NF-kappaB response and attenuating Toll-like-receptor response. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000125734::Orphanet_988",
+          "title": "GPR108 \u2194 Absent tibia - polydactyly",
+          "url": "https://platform.opentargets.org/target/ENSG00000125734/associations",
+          "text": "Disease: Absent tibia - polydactyly\nAssociation score: 0.052",
+          "cos_sim_score": 0.052053474633066824,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000125734::MONDO_0008572",
+          "title": "GPR108 \u2194 tibia, hypoplasia or aplasia of, with polydactyly",
+          "url": "https://platform.opentargets.org/target/ENSG00000125734/associations",
+          "text": "Disease: tibia, hypoplasia or aplasia of, with polydactyly\nDescription: Tibial hemimelia-polysyndactyly-triphalangeal thumb syndrome is a rare, genetic dysostosis syndrome, with marked inter- and intra-familial variation, typically characterized by triphalangeal thumbs, hand and/or foot polysyndactyly and/or absent/hypoplastic tibiae (associated with duplication of fibulae in some cases), although isolated triphalangeal thumbs have also been reported. It is often accompanied with remarkable short stature and additional features may include radio-ulnar synostosis and hand oligodactyly, as well as abnormal carpal and metatarsal bones.\nAssociation score: 0.052",
+          "cos_sim_score": 0.052053474633066824,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000125734::EFO_0001365",
+          "title": "GPR108 \u2194 age-related macular degeneration",
+          "url": "https://platform.opentargets.org/target/ENSG00000125734/associations",
+          "text": "Disease: age-related macular degeneration\nDescription: Degenerative changes in the macula lutea of the retina.\nAssociation score: 0.050",
+          "cos_sim_score": 0.05004729466891098,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000125734::Orphanet_931",
+          "title": "GPR108 \u2194 Acheiropodia",
+          "url": "https://platform.opentargets.org/target/ENSG00000125734/associations",
+          "text": "Disease: Acheiropodia\nDescription: Acheiropodia is an extremely rare developmental disorder characterized by bilateral, congenital and complete amputation of the distal extremities (amputation of distal epiphysis of the humerus, distal portion of the tibial diaphysis, aplasia of the radius, ulna, fibula) and aplasia of hands and feet (aplasia of carpal, metacarpal, tarsal, metatarsal and phalangeal bones). Rarely, an ectopic bone can be found at the distal end of the humerus. No other systemic manifestations have been reported and the disorder follows an autosomal recessive pattern of inheritance.\nAssociation score: 0.050",
+          "cos_sim_score": 0.049828603907864914,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "GPR108 \u2014 G protein-coupled receptor 108",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: GPR108\nGene name: G protein-coupled receptor 108\nAliases / synonyms: LUSTR2\nOrganism: Homo sapiens\nGene summary: Predicted to be involved in negative regulation of toll-like receptor signaling pathway. Predicted to act upstream of or within defense response to virus; protein catabolic process; and type I interferon-mediated signaling pathway. Located in trans-Golgi network. [provided by Alliance of Genome Resources, Apr 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "GPR108",
+          "aliases": "LUSTR2",
+          "gene_description": "G protein-coupled receptor 108"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MUC1 \u2014 mucin 1, cell surface associated",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MUC1\nGene name: mucin 1, cell surface associated\nAliases / synonyms: ADMCKD, ADMCKD1, ADTKD2, CA 15-3, CD227, Ca15-3, EMA, H23AG, KL-6, MAM6, MCD, MCKD, MCKD1, MUC-1, MUC-1/SEC, MUC-1/X, MUC1/ZD, PEM, PEMT, PUM\nOrganism: Homo sapiens\nGene summary: This gene encodes a membrane-bound protein that is a member of the mucin family. Mucins are O-glycosylated proteins that play an essential role in forming protective mucous barriers on epithelial surfaces. These proteins also play a role in intracellular signaling. This protein is expressed on the apical surface of epithelial cells that line the mucosal surfaces of many different tissues including lung, breast stomach and pancreas. This protein is proteolytically cleaved into alpha and beta subunits that form a heterodimeric complex. The N-terminal alpha subunit functions in cell-adhesion and the C-terminal beta subunit is involved in cell signaling. Overexpression, aberrant intracellular localization, and changes in glycosylation of this protein have been associated with carcinomas. This ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MUC1",
+          "aliases": "ADMCKD, ADMCKD1, ADTKD2, CA 15-3, CD227, Ca15-3, EMA, H23AG, KL-6, MAM6, MCD, MCKD, MCKD1, MUC-1, MUC-1/SEC, MUC-1/X, MUC1/ZD, PEM, PEMT, PUM",
+          "gene_description": "mucin 1, cell surface associated"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "LMNA \u2014 lamin A/C",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: LMNA\nGene name: lamin A/C\nAliases / synonyms: CDCD1, CDDC, CMD1A, CMT2B1, EMD2, FPL, FPLD, FPLD2, HGPS, IDC, LDP1, LFP, LGMD1B, LMN1, LMNC, LMNL1, MADA, PRO1\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is part of the nuclear lamina, a two-dimensional matrix of proteins located next to the inner nuclear membrane. The lamin family of proteins make up the matrix and are highly conserved in evolution. During mitosis, the lamina matrix is reversibly disassembled as the lamin proteins are phosphorylated. Lamin proteins are thought to be involved in nuclear stability, chromatin structure and gene expression. Vertebrate lamins consist of two types, A and B. Alternative splicing results in multiple transcript variants. Mutations in this gene lead to several diseases: Emery-Dreifuss muscular dystrophy, familial partial lipodystrophy, limb girdle muscular dystrophy, dilated cardiomyopathy, Charcot-Marie-Tooth disease, and Hutchinson-Gilford progeria syndrome. [provi...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "LMNA",
+          "aliases": "CDCD1, CDDC, CMD1A, CMT2B1, EMD2, FPL, FPLD, FPLD2, HGPS, IDC, LDP1, LFP, LGMD1B, LMN1, LMNC, LMNL1, MADA, PRO1",
+          "gene_description": "lamin A/C"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "GLP1R \u2014 glucagon like peptide 1 receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: GLP1R\nGene name: glucagon like peptide 1 receptor\nAliases / synonyms: GLP-1, GLP-1-R, GLP-1R\nOrganism: Homo sapiens\nGene summary: This gene encodes a 7-transmembrane receptor for glucagon-like peptide 1 (GLP-1), which stimulates glucose-dependent insulin secretion. The receptor, located on the cell surface, is internalized upon ligand binding and triggers signaling pathways that regulate insulin release, appetite, gastric emptying, and energy balance. It also has neuroprotective and cardiovascular effects. Polymorphisms in this gene are linked to type 2 diabetes risk, and the receptor is a key drug target for diabetes, obesity, and stroke therapies. [provided by RefSeq, Mar 2026]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "GLP1R",
+          "aliases": "GLP-1, GLP-1-R, GLP-1R",
+          "gene_description": "glucagon like peptide 1 receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "PRKAR1A \u2014 protein kinase cAMP-dependent type I regulatory subunit alpha",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PRKAR1A\nGene name: protein kinase cAMP-dependent type I regulatory subunit alpha\nAliases / synonyms: ACRDYS1, ADOHR, CAR, CNC, CNC1, PKR1, PPNAD1, PRKAR1, Prkar1alpha, TSE1\nOrganism: Homo sapiens\nGene summary: cAMP is a signaling molecule important for a variety of cellular functions. cAMP exerts its effects by activating the cAMP-dependent protein kinase, which transduces the signal through phosphorylation of different target proteins. The inactive kinase holoenzyme is a tetramer composed of two regulatory and two catalytic subunits. cAMP causes the dissociation of the inactive holoenzyme into a dimer of regulatory subunits bound to four cAMP and two free monomeric catalytic subunits. Four different regulatory subunits and three catalytic subunits have been identified in humans. This gene encodes one of the regulatory subunits. This protein was found to be a tissue-specific extinguisher that down-regulates the expression of seven liver genes in hepatoma x fibroblast hybrids. Mutations in this g...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PRKAR1A",
+          "aliases": "ACRDYS1, ADOHR, CAR, CNC, CNC1, PKR1, PPNAD1, PRKAR1, Prkar1alpha, TSE1",
+          "gene_description": "protein kinase cAMP-dependent type I regulatory subunit alpha"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

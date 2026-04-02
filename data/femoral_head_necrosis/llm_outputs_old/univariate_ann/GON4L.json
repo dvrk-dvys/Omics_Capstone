@@ -1,0 +1,151 @@
+{
+  "rf_rank": 3,
+  "probe_id": "11723153_a_at",
+  "gene_symbol": "GON4L",
+  "score": 0.92,
+  "rf_n_nodes": 1,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.4805,
+  "log_fc": 0.4805,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11723153_a_at",
+  "max_score": 0.92,
+  "mean_abs_fold_change": 0.4805,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T17:27:01",
+  "interpretation": "GON4L encodes a protein that functions as a transcription regulator, particularly involved in the activation of histone genes, which are crucial for chromatin structure and gene expression. While there is no direct evidence linking GON4L to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in transcription regulation suggests a potential involvement in cellular processes affected by steroid treatment, such as bone metabolism and cell differentiation. The evidence retrieved primarily indicates GON4L's association with various diseases, including skeletal abnormalities, but lacks specific ties to SONFH. Therefore, the biological inference is that GON4L may play a role in the broader context of bone health and disease, but its utility as a biomarker for early detection of SONFH remains uncertain. Overall, the evidence is weak, and the potential for GON4L as a clinically actionable biomarker for SONFH is limited.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "GON4L may be involved in transcriptional regulation relevant to bone health, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "GON4L (Q3T8J9). https://www.uniprot.org/uniprotkb/Q3T8J9",
+    "GON4L (Q3T8J9-2). https://www.uniprot.org/uniprotkb/Q3T8J9-2",
+    "GON4L (Q3T8J9-3). https://www.uniprot.org/uniprotkb/Q3T8J9-3",
+    "GON4L \u2014 GON4L. https://platform.opentargets.org/target/ENSG00000116580",
+    "GON4L \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000116580/associations",
+    "GON4L \u2194 complex neurodevelopmental disorder. https://platform.opentargets.org/target/ENSG00000116580/associations",
+    "GON4L \u2194 Abnormality of the skeletal system. https://platform.opentargets.org/target/ENSG00000116580/associations",
+    "GON4L \u2194 atrial fibrillation. https://platform.opentargets.org/target/ENSG00000116580/associations",
+    "GON4L. https://en.wikipedia.org/wiki/GON4L",
+    "List of human protein-coding genes 3. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_3",
+    "Chromosome 1. https://en.wikipedia.org/wiki/Chromosome_1"
+  ],
+  "token_usage": {
+    "prompt_tokens": 3686,
+    "completion_tokens": 260,
+    "total_tokens": 3946,
+    "estimated_cost_usd": 0.000709
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q3T8J9",
+          "title": "GON4L (Q3T8J9)",
+          "url": "https://www.uniprot.org/uniprotkb/Q3T8J9",
+          "text": "Protein: GON-4-like protein\nFunction: Acts as a key transcription regulator of histones (PubMed:25339177, PubMed:40516528, PubMed:40516529). Activates transcription of the histone H2A, histone H2B, histone H3 and histone H4 genes in conjunction with GON4L and MIZF (PubMed:25339177). Together with CRAMP1, binds to the promoters of H1 genes (H1-2, H1-3, H1-4, H1-5 and H1-10/H1x), driving their transcription (PubMed:40516528, PubMed:40516529). Also acts as a transcription corepressor, as part of a complex with YY1, SIN3A and HDAC1 (By similarity). Required for B-cell lymphopoiesis (By similarity)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q3T8J9-2",
+          "title": "GON4L (Q3T8J9-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q3T8J9-2",
+          "text": "Protein: Isoform 2 of GON-4-like protein",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q3T8J9-3",
+          "title": "GON4L (Q3T8J9-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q3T8J9-3",
+          "text": "Protein: Isoform 3 of GON-4-like protein",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000116580::function",
+          "title": "GON4L \u2014 GON4L",
+          "url": "https://platform.opentargets.org/target/ENSG00000116580",
+          "text": "Function: Acts as a key transcription regulator of histones (PubMed:25339177, PubMed:40516528, PubMed:40516529). Activates transcription of the histone H2A, histone H2B, histone H3 and histone H4 genes in conjunction with GON4L and MIZF (PubMed:25339177). Together with CRAMP1, binds to the promoters of H1 genes (H1-2, H1-3, H1-4, H1-5 and H1-10/H1x), driving their transcription (PubMed:40516528, PubMed:40516529). Also acts as a transcription corepressor, as part of a complex with YY1, SIN3A and HDAC1 (By similarity). Required for B- cell lymphopoiesis (By similarity).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000116580::EFO_0005772",
+          "title": "GON4L \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000116580/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.528",
+          "cos_sim_score": 0.528262292537644,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000116580::MONDO_0100038",
+          "title": "GON4L \u2194 complex neurodevelopmental disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000116580/associations",
+          "text": "Disease: complex neurodevelopmental disorder\nDescription: A disorder that involves more than one phenotype associated with the central nervous system, including but not limited to intellectual disability, autism, and seizures (epilepsy).\nAssociation score: 0.370",
+          "cos_sim_score": 0.3695798546847018,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000116580::HP_0000924",
+          "title": "GON4L \u2194 Abnormality of the skeletal system",
+          "url": "https://platform.opentargets.org/target/ENSG00000116580/associations",
+          "text": "Disease: Abnormality of the skeletal system\nDescription: An abnormality of the skeletal system.\nAssociation score: 0.316",
+          "cos_sim_score": 0.3163176353890354,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000116580::EFO_0000275",
+          "title": "GON4L \u2194 atrial fibrillation",
+          "url": "https://platform.opentargets.org/target/ENSG00000116580/associations",
+          "text": "Disease: atrial fibrillation\nDescription: Abnormal cardiac rhythm that is characterized by rapid, uncoordinated firing of electrical impulses in the upper chambers of the heart (HEART ATRIA). In such case, blood cannot be effectively pumped into the lower chambers of the heart (HEART VENTRICLES). It is caused by abnormal impulse generation.\nAssociation score: 0.304",
+          "cos_sim_score": 0.3039631950724643,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::GON4L",
+          "title": "GON4L",
+          "url": "https://en.wikipedia.org/wiki/GON4L",
+          "text": "GON-4-like protein is a protein that in humans is encoded by the GON4L gene. It is a nuclear protein containing two serine phosphosites and a lysine-glutamine cross-link  and is thought to be a transcription factor.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.5447707176208496,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of human protein-coding genes 3",
+          "title": "List of human protein-coding genes 3",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_3",
+          "text": "== References ==",
+          "cos_sim_score": 0.18154413998126984,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Chromosome 1",
+          "title": "Chromosome 1",
+          "url": "https://en.wikipedia.org/wiki/Chromosome_1",
+          "text": "Chromosome 1 is the designation for the largest human chromosome. Humans have two copies of chromosome 1, as they do with all of the autosomes, which are the non-sex chromosomes. Chromosome 1 spans about 249 million nucleotide base pairs, which are the basic units of information for DNA. It represents about 8% of the total DNA in human cells.\nIt was the last completed chromosome, sequenced two decades after the beginning of the Human Genome Project.\n\nGenes\nNumber of genes\nThe following are some of the gene count estimates of human chromosome 1. Because researchers use different approaches to genome annotation their predictions of the number of genes on each chromosome varies (for technical details, see gene prediction). Among various projects, the collaborative consensus coding sequence project (CCDS) takes an extremely conservative strategy. So CCDS's gene number prediction represents a lower bound on the total number of human protein-coding genes.\n\nGene list\nThe following is a partial list of genes on human chromosome 1. For complete list, see the link in the infobox on the right.\n\nC1orf112: encoding protein Chromosome 1 open reading frame 112\nC1orf127:  encoding protein Chromosome 1 open reading frame 127\nC1orf27: encoding protein Chromosome 1 open reading frame 27\nC1orf38: encoding protein Chromosome 1 open reading frame 38\nCCDC181: encoding protein Coiled-coil domain-containing protein 181\nDENND1B: hypothesized to be related to asthma\nFHAD1: encoding protein Forkhead-associated domain containing protein 1\nLOC100132287: uncharacterized protein\nLRRIQ3: encoding protein Leucine-rich repeats and IQ motif containing 3\nShisa family member 4: encoding protein Shisa family member 4\nTINAGL1: encoding protein Tubulointerstitial nephritis antigen-like\n\np-arm\nPartial list of the genes located on p-arm (short arm) of human chromosome 1:\n\nq-arm\nPartial list of the genes  located on q-arm (long arm) of human chromosome 1:\n\nDiseases and disorders\nThere are 890 known diseases related to this chromosome. Some of these diseases are hearing loss, Alzheimer's disease, glaucoma and breast cancer. Rearrangements and mutations of chromosome 1 are prevalent in cancer and many other diseases. Patterns of sequence variation reveal signals of recent selection in specific genes that may contribute to human fitness, and also in regions where no function is evident.\nComplete monosomy (only having one copy of the entire chromosome) is invariably lethal before birth.  Complete trisomy (having three copies of the entire chromosome) is lethal within days after conception.  Some partial deletions and partial duplications produce birth defects.\nThe following diseases are some of those related to genes on chromosome 1 (which contains the most known genetic diseases of any human chromosome):\n\nCytogenetic band\nReferences\nFurther reading\nExternal links\n\nNational Institutes of Health. \"Chromosome 1\". Genetics Home Reference. Archived from the original on 2012-02-04. Retrieved 2017-05-06.\n\"Final genome 'chapter' published\". BBC News. 2006-05-18. Retrieved 2017-05-06.\n\"Chromosome 1\". Human Genome Project Information Archive 1990\u20132003. Retrieved 2017-05-06.",
+          "cos_sim_score": 0.011540025472640991,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

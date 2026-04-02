@@ -1,0 +1,167 @@
+{
+  "rf_rank": 52,
+  "probe_id": "11747992_a_at",
+  "gene_symbol": "WDR20",
+  "score": 0.48,
+  "rf_n_nodes": 1,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.333,
+  "log_fc": 0.333,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11747992_a_at",
+  "max_score": 0.48,
+  "mean_abs_fold_change": 0.333,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T20:35:07",
+  "interpretation": "WDR20 encodes a protein that is a regulator of deubiquitinating complexes, particularly enhancing the activity of USP12, which is involved in protein degradation and cellular signaling. While there is no direct evidence linking WDR20 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in regulating protein stability and cellular processes could be relevant in the context of steroid-induced cellular stress and apoptosis, which are implicated in SONFH. The evidence retrieved primarily discusses WDR20's general biological functions without specific ties to SONFH, leading to a lower confidence in its direct relevance. Thus, while WDR20 may play a role in cellular mechanisms that could influence SONFH, its potential as a biomarker for early detection remains weak due to the lack of specific evidence connecting it to the disease.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "WDR20 may influence cellular processes relevant to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) through its role in protein regulation, but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "WDR20 (Q8TBZ3). https://www.uniprot.org/uniprotkb/Q8TBZ3",
+    "WDR20 (Q8TBZ3-6). https://www.uniprot.org/uniprotkb/Q8TBZ3-6",
+    "WDR20 (Q8TBZ3-8). https://www.uniprot.org/uniprotkb/Q8TBZ3-8",
+    "WDR20 \u2014 WDR20. https://platform.opentargets.org/target/ENSG00000140153",
+    "WDR20 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000140153/associations",
+    "WDR20 \u2194 gout. https://platform.opentargets.org/target/ENSG00000140153/associations",
+    "WDR20 \u2194 alcohol drinking. https://platform.opentargets.org/target/ENSG00000140153/associations",
+    "WDR20 \u2194 crush injury. https://platform.opentargets.org/target/ENSG00000140153/associations",
+    "WD40 repeat. https://en.wikipedia.org/wiki/WD40_repeat",
+    "SURF2. https://en.wikipedia.org/wiki/SURF2",
+    "Heat shock protein 90kDa alpha (cytosolic), member A1. https://en.wikipedia.org/wiki/Heat_shock_protein_90kDa_alpha_(cytosolic),_member_A1"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5265,
+    "completion_tokens": 248,
+    "total_tokens": 5513,
+    "estimated_cost_usd": 0.000939
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q8TBZ3",
+          "title": "WDR20 (Q8TBZ3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8TBZ3",
+          "text": "Protein: WD repeat-containing protein 20\nFunction: Regulator of deubiquitinating complexes. Activates deubiquitinating activity of complexes containing USP12 (PubMed:20147737, PubMed:27373336). Anchors at the base of the ubiquitin-contacting loop of USP12 and remotely modulates the catalytic center of the enzyme (PubMed:27373336). Regulates shuttling of the USP12 deubiquitinase complex between the plasma membrane, cytoplasm and nucleus (PubMed:30466959)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q8TBZ3-6",
+          "title": "WDR20 (Q8TBZ3-6)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8TBZ3-6",
+          "text": "Protein: Isoform 6 of WD repeat-containing protein 20",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q8TBZ3-8",
+          "title": "WDR20 (Q8TBZ3-8)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8TBZ3-8",
+          "text": "Protein: Isoform 8 of WD repeat-containing protein 20",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000140153::function",
+          "title": "WDR20 \u2014 WDR20",
+          "url": "https://platform.opentargets.org/target/ENSG00000140153",
+          "text": "Function: Regulator of deubiquitinating complexes. Activates deubiquitinating activity of complexes containing USP12 (PubMed:20147737, PubMed:27373336). Anchors at the base of the ubiquitin-contacting loop of USP12 and remotely modulates the catalytic center of the enzyme (PubMed:27373336). Regulates shuttling of the USP12 deubiquitinase complex between the plasma membrane, cytoplasm and nucleus (PubMed:30466959).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000140153::EFO_0005772",
+          "title": "WDR20 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000140153/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.506",
+          "cos_sim_score": 0.5057867008023308,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000140153::EFO_0004274",
+          "title": "WDR20 \u2194 gout",
+          "url": "https://platform.opentargets.org/target/ENSG00000140153/associations",
+          "text": "Disease: gout\nDescription: metabolic disorder characterized by recurrent acute arthritis, hyperuricemia and deposition of sodium urate in and around the joints, sometimes with formation of uric acid calculi. Gout is partly genetic.\nAssociation score: 0.339",
+          "cos_sim_score": 0.33906961171765776,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000140153::EFO_0004329",
+          "title": "WDR20 \u2194 alcohol drinking",
+          "url": "https://platform.opentargets.org/target/ENSG00000140153/associations",
+          "text": "Disease: alcohol drinking\nDescription: Behaviors associated with the ingesting of alcoholic beverages, including social drinking.\nAssociation score: 0.278",
+          "cos_sim_score": 0.27844694070641546,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000140153::EFO_0009504",
+          "title": "WDR20 \u2194 crush injury",
+          "url": "https://platform.opentargets.org/target/ENSG00000140153/associations",
+          "text": "Disease: crush injury\nDescription: Traumatic compression of the body or a part of the body. [ NCI ]\nAssociation score: 0.273",
+          "cos_sim_score": 0.2727337106641075,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::WD40 repeat",
+          "title": "WD40 repeat",
+          "url": "https://en.wikipedia.org/wiki/WD40_repeat",
+          "text": "The WD40 repeat (also known as the WD or beta-transducin repeat) is a short structural motif of approximately 40 amino acids, often terminating in a tryptophan-aspartic acid (W-D) dipeptide.  Tandem copies of these repeats typically fold together to form a type of circular solenoid protein domain called the WD40 domain.\n\nStructure\nWD40 domain-containing proteins have 4 to 16 repeating units, all of which are thought to form a circularised beta-propeller structure (see figure to the right). The WD40 domain is composed of about 40 to 60 amino acids with a glycine and histidine dipeptide near the N-terminus and a tryptophan and aspartic acid dipeptide most commonly at the C-terminus.  Two variable regions are present. The repeats typically form a four-stranded anti-parallel beta sheet or blade. These blades come together to form a propeller with the most common being a seven-bladed beta propeller.  The blades interlock so that the last beta strand of one repeat forms with the first three of the next repeat to form the 3D blade structure.\n\nFunction\nWD40-repeat proteins are a large family found in all eukaryotes and are implicated in a variety of functions ranging from signal transduction and transcription regulation to cell cycle control, autophagy and apoptosis. The underlying common function of all WD40-repeat proteins is coordinating multi-protein complex assemblies, where the repeating units serve as a rigid scaffold for protein interactions. The specificity of the proteins is determined by the sequences outside the repeats themselves. Examples of such complexes are G proteins (beta subunit is a beta-propeller), TAFII transcription factor, and E3 ubiquitin ligase.\n\nExamples\nAccording to the initial analysis of the human genome WD40 repeats are the eighth largest family of proteins. In all 277 proteins were identified to contain them. Human genes encoding proteins containing this domain include:",
+          "cos_sim_score": 0.42081159353256226,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::WD40 repeat",
+          "title": "WD40 repeat",
+          "url": "https://en.wikipedia.org/wiki/WD40_repeat",
+          "text": "RAE1, RPTOR, RBBP4, RBBP5, RBBP7, RFWD2, RFWD3, RRP9,\nSCAP, SEC13, SEC31A, SEC31B, SEH1L, SHKBP1, SMU1, SPAG16, SPG, STRAP, STRN, STRN3, STRN4, STXBP5, STXBP5L,\nTAF5, TAF5L, TBL1X, TBL1XR1, TBL1Y, TBL2, TBL3, TEP1, THOC3, THOC6, TLE1, TLE2, TLE3, TLE4, TLE6, TRAF7, TSSC1, TULP4, TUWD12,\nUTP15, UTP18,\nWAIT1, WDF3, WDFY1, WDFY2, WDFY3, WDFY4, WDHD1, WDR1, WDR10, WDR11, WDR12, WDR13, WDR16, WDR17, WDR18, WDR19, WDR20, WDR21A, WDR21C, WDR22, WDR23, WDR24, WDR25, WDR26, WDR27, WDR3, WDR31, WDR32, WDR33, WDR34, WDR35, WDR36, WDR37, WDR38, WDR4, WDR40A, WDR40B, WDR40C, WDR41, WDR42A, WDR42B, WDR43, WDR44, WDR46, WDR47, WDR48, WDR49, WDR5, WDR51A, WDR51B, WDR52, WDR53, WDR54, WDR55, WDR57, WDR59, WDR5B, WDR6, WDR60, WDR61, WDR62, WDR63, WDR64, WDR65, WDR66, WDR67, WDR68, WDR69, WDR7, WDR70, WDR72, WDR73, WDR74, WDR75, WDR76, WDR77, WDR78, WDR79, WDR8, WDR81, WDR82, WDR85, WDR86, WDR88, WDR89, WDR90, WDR91, WDR92, WDSOF1, WDSUB1, WDTC1, WSB1, WSB2,\nZFP106",
+          "cos_sim_score": 0.2353104203939438,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::WD40 repeat",
+          "title": "WD40 repeat",
+          "url": "https://en.wikipedia.org/wiki/WD40_repeat",
+          "text": "AAAS, AAMP, AHI1, AMBRA1, APAF1, ARPC1A, ARPC1B, ATG16L1,\nBOP1, BRWD1, BRWD3, BTRC, BUB3,\nC6orf11, CDC20, CDC40, CDRT1, CHAF1B, CIAO1, CIRH1A, COPA, COPB2, CORO1A, CORO1B, CORO1C, CORO2A, CORO2B, CORO6, CORO7, CSTF1,\nDDB2, DENND3, DMWD, DMXL1, DMXL2, DNAI1, DNAI2, DNCI1, DTL, DYNC1I1, DYNC1I2, EDC4,\nEED, EIF3S2, ELP2, EML1, EML2, EML3, EML4, EML4-ALK, EML5, ERCC8,\nFBXW10, FBXW11, FBXW2, FBXW4, FBXW5, FBXW7, FBXW8, FBXW9, FZR1,\nGBL, GEMIN5, GNB1, GNB1L, GNB2, GNB2L1, GNB3, GNB4, GNB5, GRWD1, GTF3C2,\nHERC1, HIRA, HZGJ,\nIFT121, IFT122, IFT140, IFT172, IFT80, IQWD1,\nKATNB1, KIAA1336, KIF21A, KIF21B, KM-PA-2,\nKEAP1,\nLLGL1, LLGL2, LRBA, LRRK1, LRRK2, LRWD1, LYST,\nMAPKBP1, MED16, MORG1,\nNBEA, NBEAL1, NEDD1, NLE1, NSMAF, NUP37, NUP43, NWD1,\nPAAF1, PAFAH1B1, PAK1IP1, PEX7, PHIP, PIK3R4, PLAA, PLRG1, PPP2R2A, PPP2R2B, PPP2R2C, PPP2R2D, PPWD1, PREB, PRPF19, PRPF4, PWP1, PWP2,\nRAE1, RPTOR, RBBP4, RBBP5, RBBP7, RFWD2, RFWD3, RRP9,\nSCAP, SEC13, SEC31A, SEC31B, SEH1L, SHKBP1, SMU1, SPAG16, SPG, STRAP, STRN, STRN3, STRN4, STXBP5, STXBP5L,\nTAF5, TAF5L, TBL1X, TBL1XR1, TBL1Y, TBL2, TBL3, TEP1, THOC3, THOC6, TLE1, TLE2, TLE3, TLE4, TLE6, TRAF7, TSSC1, TULP4, TUWD12,\nUTP15, UTP18,",
+          "cos_sim_score": 0.22668954730033875,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::SURF2",
+          "title": "SURF2",
+          "url": "https://en.wikipedia.org/wiki/SURF2",
+          "text": "SURF2 is a protein which in humans is encoded by the SURF2 gene.\nSURF2 is a member of the surfeit gene family. The SURF2 molecule interacts with beta-1, 4-Gal-T3, uPAR, and WDR20. As part of the surfeit gene cluster, SURF2 is one of several tightly linked genes that do not share sequence similarity. SURF2 maps to human chromosome 9q34.2 and shares a bidirectional promoter with SURF1 on the opposite strand. A bidirectional promoter activity is expected in the intergenic region between SURF1 and SURF2, as seen in mice.\n\n\n== References ==",
+          "cos_sim_score": 0.1742343008518219,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Heat shock protein 90kDa alpha (cytosolic), member A1",
+          "title": "Heat shock protein 90kDa alpha (cytosolic), member A1",
+          "url": "https://en.wikipedia.org/wiki/Heat_shock_protein_90kDa_alpha_(cytosolic),_member_A1",
+          "text": "Clinical significance\nExpression of Hsp90A also correlates with disease prognosis. Increased levels of Hsp90A are found in leukemia, breast and pancreatic cancers as well as in patients with chronic obstructive pulmonary disease (COPD). In human T-cells, HSP90AA1 expression is increased by the cytokines IL-2, IL-4 and IL-13. HSP90, alongside other conserved chaperones and co-chaperones that interact to safeguard proteostasis, is repressed in aging human brains. This repression was found to be further exacerbated in the brains of patients with age-onset neurodegenerative diseases such as Alzheimer's or Huntington's disease.\n\nCancer\nOver the last two decades HSP90 has emerged as an intriguing target in the war on cancer.  HSP90 interacts and supports numerous proteins that promote oncogenesis, thus distinguishing Hsp90 as a cancer enabler as it is regarded as essential for malignant transformation and progression.  Moreover, through their extensive interactomes, both paralogs are associated with each hallmark of cancer. The HSP90AA1 gene however is not altered in a majority of tumors according to The Cancer Genome Atlas (TCGA). Currently bladder cancer is found to have the largest number of alterations followed by pancreatic cancer.  This may not come as a surprise since overall Hsp90 expression levels are held at such a high level compared to most all other proteins within the cell, therefore further increasing Hsp90 levels may not provide any benefit to cancer growth.  Additionally, whole genome sequencing across all tumor types and cancer cell lines reveals that there are presently 115 different mutations within the HSP90AA1 open reading frame. The effects of these mutations on HSP90A function, however, remain unknown. Remarkably, in a number of tumors the HSP90AA1 gene is homozygously deleted, suggesting that these tumors may have a reduced level of malignancy. This is supported by a comparative genome-wide analysis of 206 gastric cancer patients that reported loss of HSP90AA1 is indeed associated with favorable outcomes after surgery alone.  This supports the possibility that the absence of Hsp90A in tumor biopsies may serve as a biomarker for positive clinical outcomes.\nBiologically, Hsp90A differs from Hsp90B in that Hsp90A is presently understood to function as a secreted extracellular agent in wound healing and inflammation in addition to its intracellular roles. These two processes are often hijacked by cancer allowing for malignant cell motility, metastasis and extravasion.  Current research in prostate cancer indicates that extracellular Hsp90A transduces signals that promote the chronic inflammation of cancer-associated fibroblasts.  This reprogramming of the extracellular milieu surrounding malignant adenocarcinoma cells is understood to stimulate prostate cancer progression.  Extracellular HSP90A induces inflammation through the activation of the NF-\u03baB (RELA) and STAT3 transcription programs that include the pro-inflammatory cytokines IL-6 and IL-8.  Coincidentally NF-\u03baB also induces expression Hsp90A., thus providing a model where newly expressed Hsp90A would also be secreted from the stimulated fibroblast thereby creating positive autocrine and paracrine feedback loops resulting in an inflammatory storm at the site of malignancy.  This concept requires further attention as it may explain the correlation of increased levels of Hsp90A in the plasma of patients with advanced stages of malignancy.",
+          "cos_sim_score": 0.15067905187606812,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

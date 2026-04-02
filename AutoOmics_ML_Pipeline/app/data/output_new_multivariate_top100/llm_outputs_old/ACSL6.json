@@ -1,0 +1,161 @@
+{
+  "probe_id": "11722470_x_at",
+  "gene_symbol": "ACSL6",
+  "rf_importance": 0.0002,
+  "selection_freq": 0.6,
+  "abs_fold_change": 2.4637315999999982,
+  "score": 0.3438,
+  "probe_count": 1,
+  "probe_ids": "11722470_x_at",
+  "max_score": 0.3438,
+  "mean_abs_fold_change": 2.4637,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T00:09:50",
+  "interpretation": "ACSL6 encodes an enzyme that catalyzes the conversion of long-chain fatty acids into acyl-CoA, which is essential for lipid metabolism and energy production. This process is particularly relevant in the context of steroid-induced osteonecrosis of the femoral head (SONFH), as steroids can disrupt lipid metabolism and contribute to the pathogenesis of osteonecrosis. While there is no direct evidence linking ACSL6 specifically to SONFH, its role in fatty acid metabolism suggests a potential involvement in the disease's progression. The retrieved evidence primarily supports the biological function of ACSL6, but lacks direct connections to SONFH, leading to a moderate confidence in its relevance as a biomarker. Therefore, while ACSL6 may have some potential as an early-detection biomarker for SONFH, the evidence is not strong enough to classify it as a robust candidate.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "ACSL6 is involved in fatty acid metabolism, which may be disrupted in steroid-induced osteonecrosis of the femoral head.",
+  "citations": [
+    "ACSL6 (Q9UKU0). https://www.uniprot.org/uniprotkb/Q9UKU0",
+    "ACSL6 (Q9UKU0-7). https://www.uniprot.org/uniprotkb/Q9UKU0-7",
+    "ACSL6 (Q9UKU0-9). https://www.uniprot.org/uniprotkb/Q9UKU0-9",
+    "ACSL6 \u2014 ACSL6. https://platform.opentargets.org/target/ENSG00000164398",
+    "ACSL6 \u2194 asthma. https://platform.opentargets.org/target/ENSG00000164398/associations",
+    "ACSL6 \u2194 placenta praevia. https://platform.opentargets.org/target/ENSG00000164398/associations",
+    "ACSL6 \u2194 hypertension. https://platform.opentargets.org/target/ENSG00000164398/associations",
+    "ACSL6 \u2194 atopic eczema. https://platform.opentargets.org/target/ENSG00000164398/associations",
+    "ACSL6. https://en.wikipedia.org/wiki/ACSL6",
+    "Clonal hypereosinophilia. https://en.wikipedia.org/wiki/Clonal_hypereosinophilia",
+    "Long-chain-fatty-acid\u2014CoA ligase. https://en.wikipedia.org/wiki/Long-chain-fatty-acid%E2%80%94CoA_ligase",
+    "Acyl-CoA synthetase. https://en.wikipedia.org/wiki/Acyl-CoA_synthetase"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4568,
+    "completion_tokens": 240,
+    "total_tokens": 4808,
+    "estimated_cost_usd": 0.000829
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9UKU0",
+          "title": "ACSL6 (Q9UKU0)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UKU0",
+          "text": "Protein: Long-chain-fatty-acid--CoA ligase 6\nFunction: Catalyzes the conversion of long-chain fatty acids to their active form acyl-CoA for both synthesis of cellular lipids, and degradation via beta-oxidation (PubMed:22633490, PubMed:24269233). Plays an important role in fatty acid metabolism in brain and the acyl-CoAs produced may be utilized exclusively for the synthesis of the brain lipid",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9UKU0-7",
+          "title": "ACSL6 (Q9UKU0-7)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UKU0-7",
+          "text": "Protein: Isoform 7 of Long-chain-fatty-acid--CoA ligase 6",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9UKU0-9",
+          "title": "ACSL6 (Q9UKU0-9)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UKU0-9",
+          "text": "Protein: Isoform 9 of Long-chain-fatty-acid--CoA ligase 6",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000164398::function",
+          "title": "ACSL6 \u2014 ACSL6",
+          "url": "https://platform.opentargets.org/target/ENSG00000164398",
+          "text": "Function: Catalyzes the conversion of long-chain fatty acids to their active form acyl-CoA for both synthesis of cellular lipids, and degradation via beta-oxidation (PubMed:22633490, PubMed:24269233). Plays an important role in fatty acid metabolism in brain and the acyl- CoAs produced may be utilized exclusively for the synthesis of the brain lipid.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000164398::MONDO_0004979",
+          "title": "ACSL6 \u2194 asthma",
+          "url": "https://platform.opentargets.org/target/ENSG00000164398/associations",
+          "text": "Disease: asthma\nDescription: A bronchial disease that is characterized by chronic inflammation and narrowing of the airways, which is caused by a combination of environmental and genetic factors resulting in recurring periods of wheezing (a whistling sound while breathing), chest tightness, shortness of breath, mucus production and coughing. The symptoms appear due to a variety of triggers such as allergens, irritants, respiratory infections, weather changes, exercise, stress, reflux disease, medications, foods and emotional anxiety.\nAssociation score: 0.343",
+          "cos_sim_score": 0.34253299441263063,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000164398::EFO_0007442",
+          "title": "ACSL6 \u2194 placenta praevia",
+          "url": "https://platform.opentargets.org/target/ENSG00000164398/associations",
+          "text": "Disease: placenta praevia\nDescription: Abnormal placentation in which the placenta implants in the lower segment of the uterus (the zone of dilation) and may cover part or all of the opening of the cervix. It is often associated with serious antepartum bleeding and premature labor.\nAssociation score: 0.316",
+          "cos_sim_score": 0.31563764110036774,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000164398::EFO_0000537",
+          "title": "ACSL6 \u2194 hypertension",
+          "url": "https://platform.opentargets.org/target/ENSG00000164398/associations",
+          "text": "Disease: hypertension\nDescription: Persistently high systemic arterial blood pressure. Based on multiple readings (blood pressure determination), hypertension is currently defined as when systolic pressure is consistently greater than 140 mm Hg or when diastolic pressure is consistently 90 mm Hg or more.\nAssociation score: 0.294",
+          "cos_sim_score": 0.2935372618055133,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000164398::EFO_0000274",
+          "title": "ACSL6 \u2194 atopic eczema",
+          "url": "https://platform.opentargets.org/target/ENSG00000164398/associations",
+          "text": "Disease: atopic eczema\nDescription: A common chronic pruritic inflammatory skin disease with a strong genetic component. Onset typically occurs during the first 2 years of life.\nAssociation score: 0.290",
+          "cos_sim_score": 0.28986783021311086,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::ACSL6",
+          "title": "ACSL6",
+          "url": "https://en.wikipedia.org/wiki/ACSL6",
+          "text": "Acyl-CoA synthetase long-chain family member 6 is an enzyme that in humans is encoded by the ACSL6 gene. Long-chain acyl-CoA synthetases such as ACSL6, catalyze the formation of acyl-CoA from fatty acids, ATP, and CoA.\n\nStructure\nThe ACSL6 gene is located on the 5th chromosome, with its specific location being 5q31.1. The gene contains 23 exons. ACSL6 encodes a 77.7 kDa protein that is composed of 697 amino acids; 10 peptides have been observed through mass spectrometry data.\n\nReferences\nExternal links\nHuman ACSL6 genome location and ACSL6 gene details page  in the UCSC Genome Browser.\n\n\n== Further reading ==",
+          "cos_sim_score": 0.5099456906318665,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Clonal hypereosinophilia",
+          "title": "Clonal hypereosinophilia",
+          "url": "https://en.wikipedia.org/wiki/Clonal_hypereosinophilia",
+          "text": "Clinical presentation and treatment\nMost patients with ETV6-ACSL6-related disease present with findings similar to eosinophilia, hypereosinophilia, or chronic eosinophilic leukemia; at least 4 cases presented with eosinophilia plus findings of the red blood cell neoplasm, polycythemia vera; three cases resembled acute myelogenous leukemia; and one case presented with findings of a combined Myelodysplastic syndrome/myeloproliferative neoplasm. Best treatments for ETV6-ACSL6-related disease are unclear. Patients with the polycythemia vera form of the disease have been treated by reducing the circulating red blood cell load by phlebotomy or suppressing red blood cell formation using hydroxyurea. Individual case studies report that ETV6-ACSL6-associated disease is insensitive to tyrosine kinase inhibitors. Best treatment currently available, therefore, may involve chemotherapy and bone marrow transplantion.\n\nEosinophilia associated with other hematological diseases\n\nLymphocyte-variant hypereosinophilia is a rare disease in which eosinophilia is caused by aberrant T cell lymphocytes which secrete cytokines (e.g. interleukin-5) that stimulate the proliferation of eosinophil precursor cells. The disease, which occasionally proceeds to a malignant lymphocytic phase, clearly reflects a clonal disturbance in lymphocytes, not eosinophils, and therefore is not a clonal hypereosinophilia. Similar non-clonal eosinophilia due to eosinophil precursor cell stimulation by clonal malignant cells is sometimes seen in cases of Hodgkin disease, B-cell lymphoma, T-cell lymphomas, T cell leukemias, and Langerhans cell histiocytosis. Other hematological diseases are associated with eosinophilia but regarded as clonal eosinophilia associated with a more important clonal malignancy in another cell type. For example, eosinophilia occurs in 20% to 30% of patients with systemic mastocytosis. Also referred to as SM-eo (systemic mastocytosis with eosinophilia) or SM-SEL (systemic mastocytosis with chronic eosinophilic leukemia), this disease's clonal eosinophils bear the same driving mutation, D816V in the KIT gene, as the clonal mast cells.\n\n\n== References ==",
+          "cos_sim_score": 0.2484549731016159,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Long-chain-fatty-acid\u2014CoA ligase",
+          "title": "Long-chain-fatty-acid\u2014CoA ligase",
+          "url": "https://en.wikipedia.org/wiki/Long-chain-fatty-acid%E2%80%94CoA_ligase",
+          "text": "Clinical significance\nAdrenoleukodystrophy (ALD) is the build up of long chain fatty acids in the brain and adrenal cortex, because of the decreased activity of long chain fatty acyl coa synthetase. The oxidation of the long chain fatty acids normally occurs in the peroxisome where the long chain fatty acyl coa synthetase is found.  Long chain fatty acids enter the peroxisome via a transporter protein, ALDP, which creates a gate in the membrane of the peroxisome.  In ALD the gene for this peroximal membrane transporter, ALDP, is defective, preventing long chain fatty acids from entering the peroxisome.\n\nExamples\nHuman genes encoding long-chain-fatty-acid\u2014CoA ligase enzymes (also known as acyl-CoA synthetase long-chain, or ACSL) include:\n\nACSL1\nACSL3\nACSL4\nACSL5\nACSL6\nSLC27A2\n\nSee also\nFatty acyl-CoA synthase\nTriacsin C - an inhibitor of Fatty acyl CoA synthetase\n\nReferences\nExternal links\nACSL6+protein,+human at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.23638597130775452,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Long-chain-fatty-acid\u2014CoA ligase",
+          "title": "Long-chain-fatty-acid\u2014CoA ligase",
+          "url": "https://en.wikipedia.org/wiki/Long-chain-fatty-acid%E2%80%94CoA_ligase",
+          "text": "Structure\nThere are several highly conserved areas and a 20-30% amino acid sequence similarity between the members of this superfamily. The enzymes in the family consist of a large N-terminal and a small C-terminal domain, with the catalytic site positioned between the two domains. Substrate binding may affect the relative positions of the C- and N-terminal domains. The C-terminal domain of LC-FACS is assumed to be in an open conformation when a substrate is absent and in a closed conformation when a substrate is bound. The accessibility of the active site to solvent is reduced when the C- and N-terminal domains approach one another.\nThe structure-function relationship between LC-FACS and the formation and processing of the acyl-AMP intermediate was still unclear. A domain swapped dimer is formed by LC-FACS, with monomer interacting at the N-terminal domains. A large electrostatically positive concave is located at the back of the structure in the central valley of the homodimer. Asp15 forms an intermolecular salt bridge with Arg176 in the dimer interactions. An intermolecular hydrogen bond is formed between the main chain carbonyl group of Glu16and the side chain of Arg199.  At the interface, Glu175 forms an intermolecular salt bridge with Arg199. The L motif, a six-amino acid peptide linker, connects the large N-terminal domain and a small C-terminal domain of each LC-FACS monomer. The N-terminal domain is composed of two subdomains: a distorted antiparallel \u03b2-barrel and two \u03b2-sheets surrounded by \u03b1-helices forming an \u03b1\u03b2\u03b1\u03b2\u03b1 sandwich.  The small C-terminal globular domain consists of two-stranded \u03b2-sheet and a three-stranded antiparallel \u03b2-sheet flanked by three \u03b1-helices.\n\nDimer interaction\nThe dimerization of LC-FACS is stabilized through a salt bridge between Asp15 of sequence A and Arg176 of sequence B. Figure 3 shows this salt bridge between these two amino acids. The yellow line between Asp15 and Arg176 shows the salt bridge present.\n\nATP binding to the C-terminal domain\nThe conformations of the C-terminal domain of the LC-FACS structures are dependent on the presence of a ligand. AMP-PNP, a nonhydrolyzable ATP analogue, bound to LC-FACS results in the closed conformation with the C- and N-terminal domains directly interacting. In crystal structures, AMP-PNP is bound in a crevasse of each monomer at the interface between the N- and C-terminal domains. The closed conformation of the C-terminal domain is retained with myristroyl-AMP. Three residues in the C-terminal domain, Glu443, Glu475, and Lys527, interact noncovalently with L motif residues and the N-terminal domain to stabilize the closed conformation. There are two types of open conformations in the C-terminal domains of the uncomplexed structure. The C- and N-terminal domains do not interact directly for both monomers of the dimer. An extensive hydrogen bond network is used by the AMP moiety of the bound ATP molecule to hold the C- and N-terminal domains together.",
+          "cos_sim_score": 0.19318102300167084,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Acyl-CoA synthetase",
+          "title": "Acyl-CoA synthetase",
+          "url": "https://en.wikipedia.org/wiki/Acyl-CoA_synthetase",
+          "text": "In the 2nd step, CoA-SH displaces the adenylate group, which is released as AMP, and forms a thioester bond with the substrate.\n\n  \n    \n      \n        \n          A\n          c\n          y\n          l\n          \n            \u2212\n          \n          A\n          M\n          P\n          +\n          C\n          o\n          A\n          \n            \u2212\n          \n          S\n          H\n           \n          \n            \u2192\n            \n               \n            \n          \n          A\n          c\n          y\n          l\n          \n            \u2212\n            S\n            \u2212\n          \n          C\n          o\n          A\n          +\n          A\n          M\n          P\n        \n      \n    \n    {\\displaystyle \\mathrm {Acyl{-}AMP+CoA{-}SH\\ \\xrightarrow {\\ } Acyl{-S-}CoA+AMP} }\n  \n\nIn summary:",
+          "cos_sim_score": 0.17485688626766205,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "probe_id": "11757379_a_at",
+  "gene_symbol": "TYK2",
+  "score": 1.0,
+  "SD_TestAUC": 0.0662538659999937,
+  "abs_fold_change": 1.0155,
+  "probe_count": 1,
+  "probe_ids": "11757379_a_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 1.0155,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T18:36:11",
+  "interpretation": "TYK2 (tyrosine kinase 2) is a non-receptor tyrosine kinase that plays a crucial role in cytokine signaling, particularly in the pathways involving interleukins and interferons. Its function is vital for regulating immune responses, cell growth, and development, which are all processes that can be disrupted in conditions like Steroid-Induced Osteonecrosis of the Femoral Head (SONFH). In the context of SONFH, the dysregulation of immune responses and inflammation is a significant factor, as glucocorticoids can impair angiogenesis and promote necrosis in bone tissue. Although direct evidence linking TYK2 to SONFH is limited, its involvement in immune modulation and inflammatory pathways suggests that it could be a relevant biomarker for early detection of SONFH. The evidence gathered indicates a moderate connection to the disease context, primarily through its role in immune signaling pathways that are affected by steroid treatment. Therefore, while TYK2 may not be a definitive biomarker, it holds potential as part of a broader panel for assessing SONFH risk.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 2",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "TYK2 is implicated in immune signaling pathways that may be disrupted in Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "TYK2 (P29597). https://www.uniprot.org/uniprotkb/P29597",
+    "TYK2 \u2014 TYK2. https://platform.opentargets.org/target/ENSG00000105397",
+    "TYK2 \u2194 immunodeficiency 35. https://platform.opentargets.org/target/ENSG00000105397/associations",
+    "TYK2 \u2194 rheumatoid arthritis. https://platform.opentargets.org/target/ENSG00000105397/associations",
+    "TYK2 \u2194 psoriasis. https://platform.opentargets.org/target/ENSG00000105397/associations",
+    "TYK2 \u2194 psoriasis vulgaris. https://platform.opentargets.org/target/ENSG00000105397/associations",
+    "TYK2 \u2014 tyrosine kinase 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "STAT3 \u2014 signal transducer and activator of transcription 3 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ACE \u2014 angiotensin I converting enzyme (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "NFKB1 \u2014 nuclear factor kappa B subunit 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "IFNG \u2014 interferon gamma (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "NEDD4 regulates VEGF signaling and mTOR to promote angiogenesis and the cell cycle in steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12676940/",
+    "Differential Gene Expression and Immune Cell Infiltration in Patients with Steroid-induced Necrosis of the Femoral Head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11348512/",
+    "Luteolin\u2019s Potential in Managing Osteoporosis and Bone Metabolism Disorders: Preclinical Insights (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12579884/",
+    "Macrophage Polarization and the Regulation of Bone Immunity in Bone Homeostasis (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC10460180/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9794,
+    "completion_tokens": 359,
+    "total_tokens": 10153,
+    "estimated_cost_usd": 0.001685
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P29597",
+          "title": "TYK2 (P29597)",
+          "url": "https://www.uniprot.org/uniprotkb/P29597",
+          "text": "Protein: Non-receptor tyrosine-protein kinase TYK2\nFunction: Tyrosine kinase of the non-receptor type involved in numerous cytokines and interferons signaling, which regulates cell growth, development, cell migration, innate and adaptive immunity (PubMed:10542297, PubMed:10995743, PubMed:7657660, PubMed:7813427, PubMed:8232552). Plays both structural and catalytic roles in numerous interleukins and interferons (IFN-alpha/beta) signaling (PubMed:10542297). Associates with heterodimeric cytokine receptor complexes and activates STAT family members including STAT1, STAT3, STAT4 or STAT6 (PubMed:10542297, PubMed:7638186). The heterodimeric cytokine receptor complexes are composed of (1) a TYK2-associated receptor chain (IFNAR1, IL12RB1, IL10RB or IL13RA1), and (2) a second receptor chain associated either with JAK1 or JAK2 (PubMed:10542297, PubMed:25762719, PubMed:7526154, PubMed:7813427). In response to cytokine-binding to receptors, phosphorylates and activates receptors (IFNAR1, IL12RB1, IL10RB or IL13RA1), creating docking sites for STAT members (PubMed:7526154, PubMed:7657660). In turn, recruited STATs are phosphorylated by TYK2 (or JAK1/JAK2 on the second receptor chain), form homo- and heterodimers, translocate to the nucleus, and regulate cytokine/growth factor responsive genes (PubMed:10542297, PubMed:25762719, PubMed:7657660). Negatively regulates STAT3 activity by promototing phosphorylation at a specific tyrosine that differs from the site used for signaling (PubMed:29162862)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000105397::function",
+          "title": "TYK2 \u2014 TYK2",
+          "url": "https://platform.opentargets.org/target/ENSG00000105397",
+          "text": "Function: Tyrosine kinase of the non-receptor type involved in numerous cytokines and interferons signaling, which regulates cell growth, development, cell migration, innate and adaptive immunity (PubMed:10542297, PubMed:10995743, PubMed:7657660, PubMed:7813427, PubMed:8232552). Plays both structural and catalytic roles in numerous interleukins and interferons (IFN-alpha/beta) signaling (PubMed:10542297). Associates with heterodimeric cytokine receptor complexes and activates STAT family members including STAT1, STAT3, STAT4 or STAT6 (PubMed:10542297, PubMed:7638186). The heterodimeric cytokine receptor complexes are composed of (1) a TYK2-associated receptor chain (IFNAR1, IL12RB1, IL10RB or IL13RA1), and (2) a second receptor chain associated either with JAK1 or JAK2 (PubMed:10542297, PubMed:25762719, PubMed:7526154, PubMed:7813427). In response to cytokine-binding to receptors, phosphorylates and activates receptors (IFNAR1, IL12RB1, IL10RB or IL13RA1), creating docking sites for STAT members (PubMed:7526154, PubMed:7657660). In turn, recruited STATs are phosphorylated by TYK2 (or JAK1/JAK2 on the second receptor chain), form homo- and heterodimers, translocate to the nucleus, and regulate cytokine/growth factor responsive genes (PubMed:10542297, PubMed:25762719, PubMed:7657660). Negatively regulates STAT3 activity by promototing phosphorylation at a specific tyrosine that differs from the site used for signaling (PubMed:29162862).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000105397::MONDO_0012682",
+          "title": "TYK2 \u2194 immunodeficiency 35",
+          "url": "https://platform.opentargets.org/target/ENSG00000105397/associations",
+          "text": "Disease: immunodeficiency 35\nDescription: Any hereditary predisposition to infections in which the cause of the disease is a mutation in the TYK2 gene.\nAssociation score: 0.756",
+          "cos_sim_score": 0.7558409773655441,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000105397::EFO_0000685",
+          "title": "TYK2 \u2194 rheumatoid arthritis",
+          "url": "https://platform.opentargets.org/target/ENSG00000105397/associations",
+          "text": "Disease: rheumatoid arthritis\nDescription: A chronic, systemic autoimmune disorder characterized by inflammation in the synovial membranes and articular surfaces. It manifests primarily as a symmetric, erosive polyarthritis that spares the axial skeleton and is typically associated with the presence in the serum of rheumatoid factor.\nAssociation score: 0.750",
+          "cos_sim_score": 0.7497293273044546,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000105397::EFO_0000676",
+          "title": "TYK2 \u2194 psoriasis",
+          "url": "https://platform.opentargets.org/target/ENSG00000105397/associations",
+          "text": "Disease: psoriasis\nDescription: An autoimmune condition characterized by red, well-delineated plaques with silvery scales that are usually on the extensor surfaces and scalp. They can occasionally present with these manifestations: pustules; erythema and scaling in intertriginous areas, and erythroderma, that are often distributed on extensor surfaces and scalp.\nAssociation score: 0.732",
+          "cos_sim_score": 0.7316212699543979,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000105397::EFO_1001494",
+          "title": "TYK2 \u2194 psoriasis vulgaris",
+          "url": "https://platform.opentargets.org/target/ENSG00000105397/associations",
+          "text": "Disease: psoriasis vulgaris\nDescription: Plaque psoriasis is the most common presentation of psoriasis. It presents as small to large, well demarcated, red, scaly and thickened areas of skin. It most likely to affect elbows, knees, and lower back but may arise on any part of the body.\nAssociation score: 0.696",
+          "cos_sim_score": 0.6960308568733284,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "TYK2 \u2014 tyrosine kinase 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TYK2\nGene name: tyrosine kinase 2\nAliases / synonyms: IMD35, JTK1\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the tyrosine kinase and, more specifically, the Janus kinases (JAKs) protein families. This protein associates with the cytoplasmic domain of type I and type II cytokine receptors and promulgate cytokine signals by phosphorylating receptor subunits. It is also a component of both the type I and type III interferon signaling pathways. As such, it may play a role in anti-viral immunity. A mutation in this gene has been associated with Immunodeficiency 35. [provided by RefSeq, Sep 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TYK2",
+          "aliases": "IMD35, JTK1",
+          "gene_description": "tyrosine kinase 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "STAT3 \u2014 signal transducer and activator of transcription 3",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: STAT3\nGene name: signal transducer and activator of transcription 3\nAliases / synonyms: ADMIO, ADMIO1, APRF, HIES\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the STAT protein family. In response to cytokines and growth factors, STAT family members are phosphorylated by the receptor associated kinases, and then form homo- or heterodimers that translocate to the cell nucleus where they act as transcription activators. This protein is activated through phosphorylation in response to various cytokines and growth factors including IFNs, EGF, IL5, IL6, HGF, LIF and BMP2. This protein mediates the expression of a variety of genes in response to cell stimuli, and thus plays a key role in many cellular processes such as cell growth and apoptosis. The small GTPase Rac1 has been shown to bind and regulate the activity of this protein. PIAS3 protein is a specific inhibitor of this protein. This gene also play...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "STAT3",
+          "aliases": "ADMIO, ADMIO1, APRF, HIES",
+          "gene_description": "signal transducer and activator of transcription 3"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ACE \u2014 angiotensin I converting enzyme",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ACE\nGene name: angiotensin I converting enzyme\nAliases / synonyms: ACE1, CD143, DCP, DCP1\nOrganism: Homo sapiens\nGene summary: This gene encodes an enzyme involved in blood pressure regulation and electrolyte balance. It catalyzes the conversion of angiotensin I into a physiologically active peptide angiotensin II. Angiotensin II is a potent vasopressor and aldosterone-stimulating peptide that controls blood pressure and fluid-electrolyte balance. This angiotensin converting enzyme (ACE) also inactivates the vasodilator protein, bradykinin. Accordingly, the encoded enzyme increases blood pressure and is a drug target of ACE inhibitors, which are often prescribed to reduce blood pressure. This enzyme additionally plays a role in fertility through its ability to cleave and release GPI-anchored membrane proteins in spermatozoa. Many studies have associated the presence or absence of a 287 bp Alu repeat element in thi...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ACE",
+          "aliases": "ACE1, CD143, DCP, DCP1",
+          "gene_description": "angiotensin I converting enzyme"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "NFKB1 \u2014 nuclear factor kappa B subunit 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: NFKB1\nGene name: nuclear factor kappa B subunit 1\nAliases / synonyms: CVID12, EBP-1, KBF1, NF-kB, NF-kB1, NF-kappa-B1, NF-kappaB, NF-kappabeta, NFKB-p105, NFKB-p50, NFkappaB\nOrganism: Homo sapiens\nGene summary: This gene encodes a 105 kD protein which can undergo cotranslational processing by the 26S proteasome to produce a 50 kD protein. The 105 kD protein is a Rel protein-specific transcription inhibitor and the 50 kD protein is a DNA binding subunit of the NF-kappa-B (NFKB) protein complex. NFKB is a transcription regulator that is activated by various intra- and extra-cellular stimuli such as cytokines, oxidant-free radicals, ultraviolet irradiation, and bacterial or viral products. Activated NFKB translocates into the nucleus and stimulates the expression of genes involved in a wide variety of biological functions. Inappropriate activation of NFKB has been associated with a number of inflammatory diseases while persistent inhibition of NFKB leads to inappropriate immune cell development or d...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "NFKB1",
+          "aliases": "CVID12, EBP-1, KBF1, NF-kB, NF-kB1, NF-kappa-B1, NF-kappaB, NF-kappabeta, NFKB-p105, NFKB-p50, NFkappaB",
+          "gene_description": "nuclear factor kappa B subunit 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "IFNG \u2014 interferon gamma",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: IFNG\nGene name: interferon gamma\nAliases / synonyms: IFG, IFI, IMD69\nOrganism: Homo sapiens\nGene summary: This gene encodes a soluble cytokine that is a member of the type II interferon class. The encoded protein is secreted by cells of both the innate and adaptive immune systems. The active protein is a homodimer that binds to the interferon gamma receptor which triggers a cellular response to viral and microbial infections. Mutations in this gene are associated with an increased susceptibility to viral, bacterial and parasitic infections and to several autoimmune diseases. [provided by RefSeq, Dec 2015]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "IFNG",
+          "aliases": "IFG, IFI, IMD69",
+          "gene_description": "interferon gamma"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::12676940",
+          "title": "NEDD4 regulates VEGF signaling and mTOR to promote angiogenesis and the cell cycle in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12676940/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a degenerative hip joint disease that worsens over time (1). ONFH is characterized by bone cell death due to a lack of blood supply, which can lead to joint collapse and hip dysfunction (1). The causes of ONFH are complex and involve mechanical injury, genetic predisposition and biochemical imbalances (2,3). Among these factors, steroid use is reported in ~51% of ONFH cases (4). Prolonged or high-dose steroid therapy markedly increases the risk of ONFH, leading to steroid-induced ONFH (SONFH) (1). For example, in patients with systemic lupus erythematosus, the corticosteroid dosage is positively associated with the occurrence of ONFH. Daily doses as low as 10 mg have been associated with a 3.6% increase in risk, while doses >40 mg greatly increase the chance of developing ONFH (5). Steroids damage bone and blood vessel health through various mechanisms, including endothelial cell dysfunction and reduced angiogenesis, ultimately impairing blood flow supply (3,6). Endothelial cells serve an important role in angiogenesis, as their growth, migration and tube formation are important for repairing bone tissue (6,7). When angiogenesis is impaired, bone regeneration often fails (8). VEGF, a key factor that promotes angiogenesis, has been shown to enhance bone repair by stimulating angiogenesis, making it a potential treatment for ONFH (9\u201311). Angiogenesis and osteogenesis are closely linked processes that occur throughout bone development, maturation, aging and disease progression (12). Notably, activation of the VEGF-Notch signaling pathway has been reported to restore the proliferation of mesenchymal stem cells in aplastic anemia (13), while the mTOR/AP-1 complex subunit \u00b5-1/VEGF axis regulates endothelial cell growth (14). Additionally, increasing hypoxia-inducible factor (HIF)-1\u03b1/VEGF levels can help to protect against bone loss in models of nasal obstruction (15). Therefore, understanding the molecular mechanisms of angiogenesis and endothelial cell function is important for advancing treatments for ONFH.\nUbiquitination has become an important post-translational modification for regulating protein stability, signal transduction and cellular homeostasis (16\u201319). Neural precursor cell expressed developmentally downregulated protein 4 (NEDD4) is an E3 ubiquitin ligase that facilitates substrate ubiquitination and degradation, thereby influencing multiple biological processes such as cell proliferation, migration, angiogenesis and endothelial cell protection (20\u201322). NEDD4 has been demonstrated to promote endothelial cell proliferation, migration and angiogenesis (23). In addition to its role in endothelial regulation, NEDD4 also affects macrophage autophagy and tumor cell proliferation, highlighting its versatile function in maintaining the cellular balance (21,24).\nNEDD4 subfamily influences osteogenesis and bone cell biology (25). By mediating PTEN degradation, NEDD4 activates the PI3K/AKT pathway, which promotes cell proliferation and survival. This pathway also supports angiogenesis through PTEN inactivation and VEGF upregulation (26\u201329). Additionally, NEDD4 boosts osteocyte proliferation and is associated with improved outcomes in postmenopausal osteoporosis (30,31). Overall, these findings emphasize the potential of NEDD4 as a regulator of both angiogenesis and osteogenesis, making it a promising target in ONFH therapy. The present study was based on the concept that NEDD4 may serve a role in SONFH. To explore this, the present study observed how overexpression of NEDD4 affected the viability, migration and tube formation of bone microvascular endothelial cells (BMECs). The present study also investigated how glucocorticoids influenced NEDD4 expression and promoter methylation, shedding light on how NEDD4 contributes to angiogenesis and repair in SONFH.\nMaterials and methods\nConstruction of the NEDD4 overexpression (OE) vector",
+          "cos_sim_score": 0.6093008518218994,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11348512",
+          "title": "Differential Gene Expression and Immune Cell Infiltration in Patients with Steroid-induced Necrosis of the Femoral Head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11348512/",
+          "text": "1\nINTRODUCTION\nAvascular necrosis of the femoral head (ANFH or ONFH) is a debilitating disease that primarily affects young and middle-aged individuals. According to statistics, the total number of diagnosed patients worldwide has exceeded 30 million, with over 8 million in China alone. Additionally, approximately 75,000 to 150,000 new cases are reported each year [1, 2]. Among the various types of ONFH, steroid-associated necrosis of the femoral head (SANFH) is the most common. It is estimated that there are around 80,000 individuals aged 12 or above in China affected by femoral head necrosis, with steroid-induced cases accounting for 51% and showing an increasing trend over the years. SANFH primarily affects young to middle-aged individuals, with a higher incidence rate among males compared to females [1-3]. However, the complex pathogenesis of SANFH has not been fully elucidated. The main recognized theories regarding its development include the vascular thromboembolic theory, lipid metabolism disorder theory, osteoporosis theory, and cellular apoptosis theory [4-6]. With the rise of bone immunology, increasing research suggests shared molecules and interactions between the immune system and the skeletal system. Studies have indicated that bone marrow tissue is rich in hematopoietic stem cells and mature immune cells, and that the activation or inhibition of immune cell surface factors (RANKL) and secreted immune factors (IL-1, IL-6, M-CSF, TGF-\u03b2, TNF, CD80, etc.) in SANFH interact with bone tissue cells, such as osteoblasts, osteoclasts, and bone microvascular endothelial cells, ultimately leading to an imbalance in bone homeostasis [7]. Currently, there is limited research on the molecular mechanisms of immune cells in SANFH. Immune cells play a crucial role in the occurrence and development of SANFH. Targeting immune cells in the SANFH region and key factors and proteins in their regulatory pathways may contribute to immune-targeted and personalized therapies, helping to regulate bone balance and prevent or reduce further damage to the femoral head caused by immune dysregulation. This approach may become a viable method for delaying the occurrence and progression of SANFH, and even reversing the pathology. Therefore, from an immunological perspective, evaluating the differences in immune infiltrating cell composition in SANFH is of significant value in elucidating its molecular mechanisms and identifying molecular markers associated with immune infiltration.\nIn this study, gene expression profile data of serum samples from SANFH patients were downloaded from the Gene Expression Omnibus (GEO) dataset. Differential gene expression analysis and functional signaling pathway analysis were conducted to identify the genes and signaling pathways associated with SANFH. Additionally, the expression levels of 22 immune cell types in SANFH were analyzed using the CIBERSORT software package in R. The interaction between differential genes, signaling pathways, and immune cells in SANFH was further investigated. Finally, a SANFH mouse model was established to validate immune cell infiltration in SANFH through immunohistochemistry. These findings provide a new approach for studying the molecular immune mechanisms of SANFH.\n2\nMATERIALS AND METHODS\n2.1\nSANFH Chip Screening\n\u201cSteroid-induced osteonecrosis of the femoral head\u201d, \u201chuman\u201d, and \u201cperipheral blood\u201d were used as keywords to search the related chips of SANFH in the GEO database, and the matrix file numbered GSE123568 and the gene annotation file of GPL15207 were obtained. The chip contained 40 peripheral serum samples, including 30 SANFH patients and 10 healthy controls.\n2.2\nSANFH Chip Data Analysis\nGene re-annotation was performed on the data using Perl language (version 5.30.0.1) to obtain gene expression profiling datasets of SANFH patients and healthy controls, and the genes were corrected and differentially analyzed using the limma package of the R language (version 4.1.2). Using p <0.05 and |log2 fold change (FC)|>0.5 as filter conditions, the differentially expressed genes were screened out, and the pheatmap package in R language was used to draw a heat map for the differential genes.\n2.3\nConstruction of Protein Interaction Network",
+          "cos_sim_score": 0.5561065673828125,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12579884",
+          "title": "Luteolin\u2019s Potential in Managing Osteoporosis and Bone Metabolism Disorders: Preclinical Insights",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12579884/",
+          "text": "Bone Metabolism Regulation of Luteolin in a Femoral Head Necrosis Model\nSteroid-induced avascular necrosis of the femoral head is a condition caused by long-term, high-dose use of GC, characterized by vascular embolism, impaired blood supply, ischemic necrosis of bone tissue, and fracture of trabecular bone.85 Yan et al30 successfully established a glucocorticoid-induced osteonecrosis of the femoral head (GIONFH) model by intramuscularly injecting 10 mg/kg Dex into SD rats twice a week for 8\u00a0weeks, and then intervened with luteolin. The results showed that the incidence of GIONFH was significantly reduced in the Lut group compared with the model group. Compared with the control group, the model group showed a significantly increased proportion of cavities on HE staining, whereas a lower proportion of cavities was observed in the luteolin group. Micro-CT results of femoral head bone tissue showed that in the model group, cartilage was severely damaged, with significant decreases in Tb.N and BV/TV, and a significant increase in Tb.Sp. However, luteolin significantly reversed these changes, protecting against Dex-induced bone loss. In addition, they found that, mechanistically, luteolin may exert its protective effect against bone loss in GIONFH model rats by inhibiting Dex-induced apoptosis activation through the STAT1/caspase3 signaling pathway.\nBone Metabolism Regulation of Luteolin in Alveolar Bone Loss Models\nPeriodontal disease-induced alveolar bone loss is a common form of bone pathology and a major cause of tooth loss in adults.86 Modulating bone remodeling can greatly influence the occurrence and severity of alveolar bone loss. Research indicates that lipopolysaccharide (LPS) is one of the most important molecules involved in the development of periapical inflammation and alveolar bone resorption. An increase in its concentration leads to the release of various pro-inflammatory mediators, which activate multiple pathways to cause inflammation in periodontal tissues.87 Casili et al77 used intragingival injection of LPS to induce a periodontitis model in SD rats and then administered luteolin intervention. The results showed that luteolin could reduce LPS-induced alveolar bone loss, with the best effects observed at medium and high doses (30 and 100 mg/kg), while the low dose (10 mg/kg) had no significant improvement. Kariu et al78 found that luteolin can alleviate the extent of alveolar bone resorption around the maxillary molars by inhibiting the growth of Porphyromonas gingivalis in the oral cavity. Kawakami et al79 established Beagle and mouse models of alveolar bone resorption and intervened with luteolin. The results showed that luteolin significantly reduced bone resorption in both animal models, making it a promising candidate drug for the treatment of pulpitis and alveolar bone resorption. In a recent study, Ma et al80 induced periodontitis in SD rats using ligation. Local injection of luteolin significantly restored trabecular bone parameters (Tb.Th, BV/TV) while reducing the expression of TNF-\u03b1, IL-6, IL-1\u03b2, and IL-10, alleviating alveolar bone loss, and thereby improving periodontal inflammation and bone destruction. The above evidence indicates that luteolin, as a natural compound, significantly improves inflammation around the teeth and progressive bone destruction, and has the potential to become a strategy for oral health management.\nMechanism of Luteolin in Regulating Bone Metabolism\nBone metabolism represents a dynamic equilibrium between bone formation and resorption processes, potentially involving key signaling pathways that influence bone metabolism, including PI3K/Akt, Wnt, RANKL/RANK/OPG, Nrf2, and ERK pathways. We note that luteolin exerts beneficial regulatory effects on mitochondrial dysfunction, programmed cell death, oxidative stress, and the immune microenvironment through these pathways (Figure 2), making it a significant target for preventing and treating bone metabolism-related diseases.\nFigure 2Mechanistic pathways by which luteolin influences bone metabolism.\nFigure 2\nMechanistic pathways by which luteolin influences bone metabolism.\nPI3K/Akt Signaling Pathway",
+          "cos_sim_score": 0.5361475944519043,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10460180",
+          "title": "Macrophage Polarization and the Regulation of Bone Immunity in Bone Homeostasis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10460180/",
+          "text": "Macrophages and Steroid-Induced Femoral Head Necrosis\nThe SANFH is caused by the unregulated use of glucocorticoids, which cause programmed osteogenic cell death, resulting in a lower rate of bone formation than bone resorption. This leads to an imbalance of bone homeostasis in the femoral head, as well as ischemic necrosis of the femoral head due to glucocorticoid damage to the bone microvasculature and localized complications of aseptic inflammation.8 Under the stimulation of chronic inflammation, necrotic bone forms, preventing normal bone reconstruction and repair and allowing the further development of SANFH. Macrophages, as major players in the immune system, have an important regulatory function in chronic inflammation and also regulate physiological cell functions, such as lipogenic osteogenic differentiation of BMSCs, osteogenic properties of OBs, and vascular endothelial cell turnover and repair, as well as the removal of apoptotic or necrotic cellular debris. Based on clinical data, it has been found that there is a significant infiltration of macrophages in the necrotic zone and adjacent areas of patients with ONFH. With significantly more macrophages present in SANFH patients compared to those with other risk factors.109 Additionally, the greatest number of inflammatory cells found in the cancellous bone tissue of the femoral head affected by osteonecrosis were macrophages.110 The expression of IL-1\u03b2, TNF-\u03b1, and IL-6 was likewise markedly enhanced in the ONFH piglet model, and the necrotic bone stimulated the inflammatory response by activating TLR4 to stimulate M1 polarization of macrophages, a large number of M1 macrophages infiltrated the necrotic area of SANFH.111 Glucocorticoids have an extremely potent inhibitory effect on immune system cells, regulating macrophage survival, migration, and proliferation by binding to glucocorticoid receptors in different ways. Glucocorticoids not only counteract the expression of proinflammatory genes in cells, but they also induce M2 polarization and enhance the production of IL-10 and TGF-\u03b2 in THP1 monocytes treated with dexamethasone (Dex), while suppressing the production of IL-1\u03b2, TNF-\u03b1, and IL-6.112 It also increases the expression of NLRP3 inflammatory vesicles in macrophages113 and acts synergistically with cytokines to increase the production of pro-inflammatory mediators.114 Immune factors can be transmitted from the local lesion to the blood in the early stages of SANFH due to enhanced TNF- activity and significant infiltration of M1 macrophages in the osteonecrosis zone.115 Curcumin interferes with the JAK1/2-STAT1 pathway to inhibit M1 macrophage polarization and reduce M1 infiltration and systemic inflammation in the femoral head of a mouse model of SANFH. Additionally, curcumin also reduces osteocyte apoptosis and SANFH symptoms.116 Astragaloside, on the other hand, promotes the repolarization of M1 to M2 and reduces the proportion of M1 macrophages in SANFH. This reduces TNF-\u03b1 and IL-1\u03b2 levels, decreases osteocyte apoptosis, and alleviates arthritic symptoms, inflammatory cytokines, and other SANFH symptoms.117 In conclusion, macrophage polarization and autoimmunity play a very important role in the development of SANFH. In long-term inflammation, pro-inflammatory factors secreted by M1 macrophages promote the rate of bone resorption, which leads to bone loss and accelerates the process of SANFH. By inhibiting M1 macrophage polarization and promoting repolarization to M2 macrophages, this can help reduce inflammation, alleviate arthritic symptoms, and decrease osteocyte apoptosis in the femoral head, so that intervention in M1 macrophage polarization could be one of the treatment methods for SANFH.\nMacrophages and Rheumatoid Arthritis",
+          "cos_sim_score": 0.5293657183647156,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12579884",
+          "title": "Luteolin\u2019s Potential in Managing Osteoporosis and Bone Metabolism Disorders: Preclinical Insights",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12579884/",
+          "text": "Introduction\nBone is a highly dynamic and metabolically active tissue, one of the largest organ systems in the human body, serving functions such as mechanical support, muscle attachment, and calcium and phosphorus storage.1,2 Bone metabolism is a dynamic process of continuous renewal and repair within the skeletal system. At its core lies the coordinated interaction between bone resorption and bone formation. The dynamic equilibrium maintained between these two processes constitutes bone homeostasis, which is crucial for ensuring stable bone mass, structural integrity, and normal physiological function of the skeleton. Bone resorption is primarily driven by osteoclasts.3 After attaching to the bone surface, osteoclasts secrete acidic substances to dissolve bone minerals and enzymes to break down the bone matrix, thereby removing old bone tissue. Bone formation is carried out by osteoblasts,4 which first synthesize and secrete substances like collagen to construct the bone matrix. Subsequently, this matrix undergoes mineralization, gradually forming new bone tissue. Maintaining homeostasis relies on multiple factors, including hormones, vitamin D, mechanical stimuli, and cytokines. Excessive resorption or insufficient formation disrupts this balance, leading to bone loss. Thus, skeletal health depends on the precise regulation of metabolic processes and equilibrium between internal and external environments.5\nImbalance in bone metabolism homeostasis is one of the fundamental causes of osteoporosis (OP) and osteonecrosis of the femoral head (ONFH) and other metabolic bone diseases. OP, as a classic metabolic bone disease, is characterized by low bone mass and destruction of bone microstructure, resulting in significantly increased bone fragility and a high risk of fractures.6 It has been reported that the prevalence of OP worldwide is approximately one-fifth of the population.7 Drug therapy plays a key role in the prevention and treatment of OP. Currently, commonly used drug options include bone nutrition supplements, bone resorption inhibitors, and bone formation promoters (Table 1). However, some of these drugs may cause serious side effects during long-term use, often limiting their clinical application. ONFH is a refractory orthopedic disease characterized by microscopic structural damage to the femoral head, collapse of the femoral head, and resulting hip joint pain.8 Currently, approximately 150,000 to 200,000 new cases of ONFH are diagnosed annually in China.9 In the late stages of ONFH, surgery has become the primary treatment method, such as total hip arthroplasty. However, artificial joints have a limited lifespan, and a second replacement may be necessary, and the trauma caused by the surgery itself is unavoidable. In addition, alveolar bone defects are a chronic disease process that can be caused by periodontal disease, oral and maxillofacial trauma, and other factors, leading to deformities, oral functional impairments, and significantly impacting patients\u2019 quality of life.10 For severe alveolar bone defects, autologous bone transplantation is a commonly used treatment method, but it has limitations such as limited supply, potential deformities at the donor site, and risks of infection.11 Overall, the treatment of bone metabolic disorders currently faces certain challenges, making the development of effective and safe new therapeutic strategies urgently needed.\nTable 1Commonly Used Drugs for the Treatment of OsteoporosisDrug CategoryRepresentative DrugCore MechanismAdverse ReactionsBone Nutrition SupplementCalcium supplementCalcium CarbonateProvide raw materials for bone synthesisConstipation, abdominal distension, and even hypercalcemiaVitamin D analoguesCalcitriolPromote calcium absorptionLoss of appetite, nausea, and even hypercalcemiaBone resorption inhibitorBisphosphonatesAlendronate SodiumInhibition of osteoclast functionEsophageal irritation, indigestion, and even mandibular necrosisRANKL monoclonal antibodyDisuliximabInhibition of osteoclast functionHeadaches, constipation, and even hypocalcemia, osteonecrosis of the jaw, and atypical femoral fracturesCalcitoninSalmon CalcitoninInhibits osteoclast activity and possesses central analgesic effectsNasal spray: Nasal mucosal irritation, headacheInjection: Facial flushing, nausea, vomitingEstrogen receptor modulatorsRaloxifeneExerts estrogen-like effects, inhibiting bone resorptionHot flashes, leg cramps, risk of venous thrombosisOsteogenesis PromoterParathyroid hormone analogTeriparatideStimulate osteoblasts to promote bone formationNausea, dizziness, and even hypercalcemia and increased risk of osteosarcoma\nTable 1\nCommonly Used Drugs for the Treatment of Osteoporosis",
+          "cos_sim_score": 0.4432297945022583,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

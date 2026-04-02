@@ -1,0 +1,186 @@
+{
+  "probe_id": "11722752_a_at",
+  "gene_symbol": "ELMSAN1",
+  "score": 1.0,
+  "SD_TestAUC": 0.0523782800878923,
+  "abs_fold_change": 0.8022,
+  "probe_count": 1,
+  "probe_ids": "11722752_a_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.8022,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T18:25:36",
+  "interpretation": "ELMSAN1, also known as MIDEAS, is involved in transcription regulation and is part of the mitotic deacetylase complex, which plays a role in cellular processes such as cell cycle regulation and gene expression. While there is no direct evidence linking ELMSAN1 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in metabolic processes and potential roles in cellular stress responses may suggest a connection to the pathophysiology of SONFH, particularly in the context of steroid-induced cellular damage. The evidence retrieved is limited and does not establish a clear mechanistic link to SONFH, leading to a low confidence in its relevance as a biomarker. Therefore, while ELMSAN1 may have biological implications in related pathways, its potential as a clinical biomarker for early detection of SONFH is weak and speculative.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "ELMSAN1 may be involved in metabolic processes that could relate to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), but direct evidence is lacking.",
+  "citations": [
+    "MIDEAS (Q6PJG2). https://www.uniprot.org/uniprotkb/Q6PJG2",
+    "ELMSAN1 \u2194 metabolic disease. https://platform.opentargets.org/target/ENSG00000156030/associations",
+    "ELMSAN1 \u2194 cutaneous lupus erythematosus. https://platform.opentargets.org/target/ENSG00000156030/associations",
+    "ELMSAN1 \u2194 multiple sclerosis. https://platform.opentargets.org/target/ENSG00000156030/associations",
+    "ELMSAN1 \u2194 triple-negative breast cancer. https://platform.opentargets.org/target/ENSG00000156030/associations",
+    "ELMSAN1 \u2194 breast cancer. https://platform.opentargets.org/target/ENSG00000156030/associations",
+    "MIDEAS \u2014 mitotic deacetylase associated SANT domain protein (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "LOC132090872 \u2014 Neanderthal introgressed variant-containing enhancer experimental_36600 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Activation of a nongenetic AHR-ELMSAN1 axis optimizes BET-targeting therapy and suppresses leukemia stem cells in preclinical models [GSE240497] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE240497",
+    "Loss of Elmsan1 in Cardiomyocytes Leads to Age-Dependent Cardiac Dysfunction and Reduced Lifespan [GSE301440] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE301440",
+    "Activation of a nongenetic AHR-ELMSAN1 axis optimizes BET-targeting therapy and suppresses leukemia stem cells in preclinical models [RNA-Seq] [GSE240496] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE240496",
+    "Activation of a nongenetic AHR-ELMSAN1 axis optimizes BET-targeting therapy and suppresses leukemia stem cells in preclinical models [RNA-Seq2] [GSE241936] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE241936",
+    "Activation of a nongenetic AHR-ELMSAN1 axis optimizes BET-targeting therapy and suppresses leukemia stem cells in preclinical models [CUT&RUN] [GSE240495] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE240495"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4940,
+    "completion_tokens": 322,
+    "total_tokens": 5262,
+    "estimated_cost_usd": 0.000934
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q6PJG2",
+          "title": "MIDEAS (Q6PJG2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q6PJG2",
+          "text": "Protein: Mitotic deacetylase-associated SANT domain protein",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000156030::EFO_0000589",
+          "title": "ELMSAN1 \u2194 metabolic disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000156030/associations",
+          "text": "Disease: metabolic disease\nDescription: A congenital disorder (due to inherited enzyme abnormality) or acquired (due to failure of a metabolically important organ) disorder resulting from an abnormal metabolic process.\nAssociation score: 0.132",
+          "cos_sim_score": 0.1320609981579076,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000156030::EFO_0003834",
+          "title": "ELMSAN1 \u2194 cutaneous lupus erythematosus",
+          "url": "https://platform.opentargets.org/target/ENSG00000156030/associations",
+          "text": "Disease: cutaneous lupus erythematosus\nDescription: An autoimmune disorder that manifests as different lupus-specific skin disorders; it can occur with systemic lupus erythematosus, or as a singular disease.\nAssociation score: 0.103",
+          "cos_sim_score": 0.10339285724188639,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000156030::MONDO_0005301",
+          "title": "ELMSAN1 \u2194 multiple sclerosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000156030/associations",
+          "text": "Disease: multiple sclerosis\nDescription: A progressive autoimmune disorder affecting the central nervous system resulting in demyelination. Patients develop physical and cognitive impairments that correspond with the affected nerve fibers.\nAssociation score: 0.102",
+          "cos_sim_score": 0.10183207047881153,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000156030::EFO_0005537",
+          "title": "ELMSAN1 \u2194 triple-negative breast cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000156030/associations",
+          "text": "Disease: triple-negative breast cancer\nDescription: An invasive breast carcinoma which is negative for expression of estrogen receptor (ER), progesterone receptor (PR), and human epidermal growth factor receptor 2 (HER2).\nAssociation score: 0.074",
+          "cos_sim_score": 0.07391597093694036,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000156030::MONDO_0007254",
+          "title": "ELMSAN1 \u2194 breast cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000156030/associations",
+          "text": "Disease: breast cancer\nDescription: A primary or metastatic malignant neoplasm involving the breast. The vast majority of cases are carcinomas arising from the breast parenchyma or the nipple. Malignant breast neoplasms occur more frequently in females than in males.\nAssociation score: 0.055",
+          "cos_sim_score": 0.055436978202705274,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "MIDEAS \u2014 mitotic deacetylase associated SANT domain protein",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MIDEAS\nGene name: mitotic deacetylase associated SANT domain protein\nAliases / synonyms: C14orf117, C14orf43, ELMSAN1, LSR68, c14_5541\nOrganism: Homo sapiens\nGene summary: Predicted to enable transcription corepressor activity. Predicted to be involved in negative regulation of DNA-templated transcription and regulation of transcription by RNA polymerase II. Located in nucleoplasm. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MIDEAS",
+          "aliases": "C14orf117, C14orf43, ELMSAN1, LSR68, c14_5541",
+          "gene_description": "mitotic deacetylase associated SANT domain protein"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "LOC132090872 \u2014 Neanderthal introgressed variant-containing enhancer experimental_36600",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: LOC132090872\nGene name: Neanderthal introgressed variant-containing enhancer experimental_36600\nOrganism: Homo sapiens\nGene summary: This genomic region contains a Neanderthal adaptively introgressed expression-modulating variant (emVar). It was validated as a functional enhancer by massively parallel reporter assays (MPRAs) in K562 erythroleukemia cells, with activity observed for both the introgressed and non-introgressed 14:74209097 or rs11624425 variant alleles, and with lower activity for the introgressed rs11624425 'G' variant. CRISPR/Cas9-mediated deletion of a 22 bp subregion centered on rs11624425 indicates that this region positively regulates expression of the MIDEAS (mitotic deacetylase associated SANT domain protein, also known as ELMSAN1) and DNAL1 (dynein axonemal light chain 1) genes. [provided by RefSeq, Sep 2023]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "LOC132090872",
+          "aliases": "",
+          "gene_description": "Neanderthal introgressed variant-containing enhancer experimental_36600"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": [
+        {
+          "id": "geo::200240497",
+          "title": "Activation of a nongenetic AHR-ELMSAN1 axis optimizes BET-targeting therapy and suppresses leukemia stem cells in preclinical models",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE240497",
+          "text": "Title: Activation of a nongenetic AHR-ELMSAN1 axis optimizes BET-targeting therapy and suppresses leukemia stem cells in preclinical models\nAccession: GSE240497\nStudy type: Other; Expression profiling by high throughput sequencing\nOrganism: Homo sapiens\nSamples: IntegerElement(66, attributes={})\nSummary: This SuperSeries is composed of the SubSeries listed below.",
+          "cos_sim_score": 0.40959519147872925,
+          "source_type": "geo",
+          "accession": "GSE240497"
+        },
+        {
+          "id": "geo::200301440",
+          "title": "Loss of Elmsan1 in Cardiomyocytes Leads to Age-Dependent Cardiac Dysfunction and Reduced Lifespan",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE301440",
+          "text": "Title: Loss of Elmsan1 in Cardiomyocytes Leads to Age-Dependent Cardiac Dysfunction and Reduced Lifespan\nAccession: GSE301440\nStudy type: Expression profiling by high throughput sequencing\nOrganism: Mus musculus\nSamples: IntegerElement(8, attributes={})\nSummary: Histone deacetylase (HDAC) complexes regulate pathological gene programs during heart disease progression. The recently identified mitotic deacetylase complex (MiDAC), which includes DNTTIP1, ELMSAN1, and HDAC1/2, remains the least characterized among these complexes. ELMSAN1 has been implicated in left ventricular remodeling, and its global deletion in mice leads to heart malformation. To investigate its role in mouse heart, we generated cardiomyocyte-specific Elmsan1 knockout (ELM cKO) using \u03b1MHC driven Cre recombinase. We analyzed both male and female animals across three experimental group...",
+          "cos_sim_score": 0.33217906951904297,
+          "source_type": "geo",
+          "accession": "GSE301440"
+        },
+        {
+          "id": "geo::200240496",
+          "title": "Activation of a nongenetic AHR-ELMSAN1 axis optimizes BET-targeting therapy and suppresses leukemia stem cells in preclinical models [RNA-Seq]",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE240496",
+          "text": "Title: Activation of a nongenetic AHR-ELMSAN1 axis optimizes BET-targeting therapy and suppresses leukemia stem cells in preclinical models [RNA-Seq]\nAccession: GSE240496\nStudy type: Expression profiling by high throughput sequencing\nOrganism: Homo sapiens\nSamples: IntegerElement(24, attributes={})\nSummary: Developing strategies to enhance the response to bromodomain and extraterminal domain (BET) inhibitors and effectively eradicate cancer stem cells would represent a major cancer treatment advance against leukemia. Through a functional CRISPR screen, we identified the aryl hydrocarbon receptor (AHR), a ligand-activated transcription factor, as a critical regulator of MYC expression and BET inhibitor sensitivity in human acute myeloid leukemia (AML). Constitutive or pharmacological activation of AHR repressed MYC and synergized with BET inhibitors to inhibit MYC transcription and suppress leukem...",
+          "cos_sim_score": 0.22645162045955658,
+          "source_type": "geo",
+          "accession": "GSE240496"
+        },
+        {
+          "id": "geo::200241936",
+          "title": "Activation of a nongenetic AHR-ELMSAN1 axis optimizes BET-targeting therapy and suppresses leukemia stem cells in preclinical models [RNA-Seq2]",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE241936",
+          "text": "Title: Activation of a nongenetic AHR-ELMSAN1 axis optimizes BET-targeting therapy and suppresses leukemia stem cells in preclinical models [RNA-Seq2]\nAccession: GSE241936\nStudy type: Expression profiling by high throughput sequencing\nOrganism: Homo sapiens\nSamples: IntegerElement(36, attributes={})\nSummary: Developing strategies to enhance the response to bromodomain and extraterminal domain (BET) inhibitors and effectively eradicate cancer stem cells would represent a major cancer treatment advance against leukemia. Through a functional CRISPR screen, we identified the aryl hydrocarbon receptor (AHR), a ligand-activated transcription factor, as a critical regulator of MYC expression and BET inhibitor sensitivity in human acute myeloid leukemia (AML). Constitutive or pharmacological activation of AHR repressed MYC and synergized with BET inhibitors to inhibit MYC transcription and suppress leukem...",
+          "cos_sim_score": 0.22606517374515533,
+          "source_type": "geo",
+          "accession": "GSE241936"
+        },
+        {
+          "id": "geo::200240495",
+          "title": "Activation of a nongenetic AHR-ELMSAN1 axis optimizes BET-targeting therapy and suppresses leukemia stem cells in preclinical models [CUT&RUN]",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE240495",
+          "text": "Title: Activation of a nongenetic AHR-ELMSAN1 axis optimizes BET-targeting therapy and suppresses leukemia stem cells in preclinical models [CUT&RUN]\nAccession: GSE240495\nStudy type: Other\nOrganism: Homo sapiens\nSamples: IntegerElement(6, attributes={})\nSummary: Developing strategies to enhance the response to bromodomain and extraterminal domain (BET) inhibitors and effectively eradicate cancer stem cells would represent a major cancer treatment advance against leukemia. Through a functional CRISPR screen, we identified the aryl hydrocarbon receptor (AHR), a ligand-activated transcription factor, as a critical regulator of MYC expression and BET inhibitor sensitivity in human acute myeloid leukemia (AML). Constitutive or pharmacological activation of AHR repressed MYC and synergized with BET inhibitors to inhibit MYC transcription and suppress leukem...",
+          "cos_sim_score": 0.20568908751010895,
+          "source_type": "geo",
+          "accession": "GSE240495"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Report — SONFH Biomarker Discovery</title>
+  <style>
+    body { font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.7; max-width: 820px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; }
+    h1 { font-size: 20pt; color: #1a3d5c; }
+    h2 { font-size: 15pt; color: #1a3d5c; margin-top: 36px; padding-bottom: 5px; border-bottom: 2px solid #2c5f8a; }
+    h3 { font-size: 13pt; color: #1a3d5c; margin-top: 22px; }
+    h4 { font-size: 11pt; margin-top: 14px; font-style: italic; color: #333; }
+    .guide { background-color: #f2f2f2; border-left: 4px solid #999; padding: 10px 14px; margin: 12px 0 18px 0; font-size: 9.5pt; color: #555; }
+    .guide-label { display: block; font-weight: bold; font-size: 8.5pt; color: #888; letter-spacing: 0.05em; margin-bottom: 5px; text-transform: uppercase; }
+    .placeholder { color: #aaa; font-style: italic; border: 1px dashed #ccc; padding: 10px 12px; margin: 8px 0; min-height: 36px; background-color: #fafafa; }
+    .ph-inline { color: #aaa; font-style: italic; }
+    .figure-box { border: 2px dashed #b0c4d8; background-color: #f7fafd; padding: 30px 20px; text-align: center; margin: 20px 0 8px 0; color: #7a9db8; font-size: 10.5pt; }
+    .figure-caption { font-size: 9.5pt; color: #555; margin: 4px 0 20px 0; font-style: italic; border-bottom: 1px solid #ddd; padding-bottom: 8px; }
+    table { border-collapse: collapse; width: 100%; margin: 14px 0 20px 0; font-size: 9pt; table-layout: fixed; page-break-inside: avoid; }
+    th { background-color: #2c5f8a; color: #fff; padding: 5px 6px; text-align: left; font-size: 8.5pt; }
+    td { padding: 4px 6px; border: 1px solid #ccc; vertical-align: top; word-wrap: break-word; }
+    tr { page-break-inside: avoid; }
+    tr:nth-child(even) td { background-color: #f4f8fc; }
+    tr.best td { background-color: #d4edda !important; font-weight: bold; }
+    tr.overlap td { background-color: #fff3cd !important; }
+    td.center { text-align: center; }
+    caption { font-size: 9.5pt; color: #444; font-style: italic; text-align: left; margin-bottom: 5px; caption-side: top; font-weight: bold; }
+    .title-page { text-align: center; padding: 50px 10px 40px 10px; border-bottom: 2px solid #2c5f8a; margin-bottom: 40px; }
+    .title-page h1 { font-size: 22pt; }
+    .title-field { color: #555; border-bottom: 1px solid #ddd; margin: 10px auto; width: 65%; padding: 4px 0; display: block; font-size: 11pt; }
+    .howto { background-color: #e8f4fd; border: 1px solid #aacde8; padding: 14px 18px; margin: 24px 0; font-size: 10pt; }
+    .howto strong { color: #1a3d5c; }
+    .note { background-color: #fff8e1; border-left: 4px solid #ffc107; padding: 10px 14px; margin: 12px 0; font-size: 9.5pt; color: #5a4a00; }
+    .insight { background-color: #e8f5e9; border-left: 4px solid #2e7d32; padding: 10px 14px; margin: 12px 0; font-size: 9.5pt; color: #1b5e20; }
+    .star { background-color: #fff3e0; border-left: 4px solid #e65100; padding: 10px 14px; margin: 12px 0; font-size: 9.5pt; color: #bf360c; }
+    .pending { background-color: #fce4ec; border-left: 4px solid #c62828; padding: 10px 14px; margin: 12px 0; font-size: 9.5pt; color: #7f0000; }
+    .future-task { background-color: #fce8ff; border-left: 4px solid #b866d4; padding: 10px 14px; margin: 12px 0; font-size: 9.5pt; color: #4a1060; }
+    hr { border: none; border-top: 1px solid #ddd; margin: 30px 0; }
+    .tag-weka { background-color: #c0392b; color: white; padding: 1px 6px; font-size: 8.5pt; font-weight: bold; border-radius: 3px; }
+    .tag-weka-uni { background-color: #8e44ad; color: white; padding: 1px 6px; font-size: 8.5pt; font-weight: bold; border-radius: 3px; }
+    .tag-python { background-color: #1a3d5c; color: white; padding: 1px 6px; font-size: 8.5pt; font-weight: bold; border-radius: 3px; }
+    .tag-python-uni { background-color: #16a085; color: white; padding: 1px 6px; font-size: 8.5pt; font-weight: bold; border-radius: 3px; }
+    .tag-shared { background-color: #e67e22; color: white; padding: 1px 6px; font-size: 8.5pt; font-weight: bold; border-radius: 3px; }
+    .tag-tier1 { background-color: #1b5e20; color: white; padding: 1px 5px; font-size: 8pt; font-weight: bold; border-radius: 3px; }
+    .tag-tier2 { background-color: #1565c0; color: white; padding: 1px 5px; font-size: 8pt; font-weight: bold; border-radius: 3px; }
+    .tag-tier3 { background-color: #6d4c41; color: white; padding: 1px 5px; font-size: 8pt; font-weight: bold; border-radius: 3px; }
+  </style>
+</head>
+<body>
+
+<!-- ========================================================
+     TITLE PAGE
+     ======================================================== -->
+<div class="title-page">
+  <p style="color:#888; font-size:9pt; margin-bottom:40px;">CAPSTONE PROJECT — FINAL REPORT</p>
+  <h1>Microarray-Based Biomarker Discovery for Steroid-Induced<br>
+  Osteonecrosis of the Femoral Head Using Machine Learning</h1>
+  <br>
+  <p><strong>Student Name:</strong> <span class="title-field">Jordan Alexander Harris</span></p>
+  <p><strong>Course / Module:</strong> <span class="title-field">Omics Logic Artificial Intelligence and Machine Learning</span></p>
+  <p><strong>Instructor / Supervisor:</strong> <span class="title-field">Prof. Graham Ball</span></p>
+  <p><strong>Submission Date:</strong> <span class="title-field">30 March 2026</span></p>
+  <p><strong>Word Count:</strong> <span class="title-field ph-inline">[~xxxx words — excluding tables and references]</span></p>
+</div>
+
+<div class="howto">
+  <strong>How to use this template</strong><br><br>
+  Your human-written paragraphs appear in normal black text — do not change them unless you want to. Everything in <span style="color:#aaa; font-style:italic;">grey italic</span> is a placeholder you replace in your own voice. Guide boxes in grey are deleted before submission. Orange/red/green boxes are notes to yourself — delete once addressed.
+  <ol style="margin:8px 0 0 0;">
+    <li>Write all <em>[WRITE HERE]</em> blocks in your own voice, using the guide box as a prompt.</li>
+    <li>Insert figures into the dashed blue boxes. File paths are inside each box.</li>
+    <li>Fill <span style="color:#c62828; font-weight:bold;">PENDING</span> table rows once the Python multivariate re-run completes.</li>
+    <li>Fill the tier audit Table 8 from <code>report/best_runs/</code> JSON files.</li>
+    <li>Delete ALL guide boxes, note boxes, and this How-to box before submission.</li>
+    <li>Export as PDF.</li>
+  </ol>
+</div>
+
+<div class="star">
+  <strong>Your winning narrative — keep this arc in mind for every section:</strong><br>
+  <strong>1.</strong> Weka baseline (required) &rarr;
+  <strong>2.</strong> Python pipeline (automation + extension) &rarr;
+  <strong>3.</strong> Feature selection exploration (multivariate hybrid vs univariate ANN) &rarr;
+  <strong>4.</strong> Tier-aware biological validation (your original contribution) &rarr;
+  <strong>5.</strong> Converging biomarker signals across independent pipelines<br><br>
+  Do <strong>not</strong> explain every branch, failed experiment, or parameter choice. Keep it: baseline → extension → evaluation → insight.
+</div>
+
+<hr>
+
+
+<!-- ========================================================
+     ABSTRACT
+     ======================================================== -->
+<h2>Abstract</h2>
+
+<div class="guide">
+  <span class="guide-label">Writing Guide — Abstract (150–250 words, ~7 sentences) — DELETE BEFORE SUBMITTING</span>
+  Write one sentence per beat in this order:
+  <ol style="margin:6px 0 0 0;">
+    <li><strong>Context:</strong> SONFH, clinical challenge, unmet need for early molecular detection.</li>
+    <li><strong>Gap:</strong> Lack of reliable blood-based biomarkers validated across independent analytical frameworks.</li>
+    <li><strong>Objective:</strong> Applied supervised ML to GSE123568 via multiple independent pipelines to identify convergent candidate biomarkers.</li>
+    <li><strong>Dataset and methods:</strong> GSE123568 (40 samples, 30 SONFH / 10 control); Weka (baseline) + Python (extension), each with multivariate hybrid-score and univariate ANN feature selection; LLM tier-based evidence evaluation.</li>
+    <li><strong>Findings:</strong> Best classifiers, AUC, total unique candidates. Name specific genes.</li>
+    <li><strong>Overlap finding:</strong> Do NOT use the old gene set (GYPA, HEMGN, CA1). Your latest findings: GYPA, PIP5K1B, TSTA3 (multivariate overlap), NLRP1 (univariate overlap). Try: "Several biomarkers including GYPA, TSTA3, and NLRP1 were consistently identified across independent pipelines, with additional candidates emerging under a tier-based evidence evaluation framework."</li>
+    <li><strong>Significance:</strong> Cross-pipeline convergence + tier validation supports biological relevance; erythroid-vascular and immune-inflammatory signals implicated.</li>
+  </ol>
+  <em>Write the abstract last. Past tense for methods/findings; present tense for significance.</em>
+</div>
+
+<p class="placeholder">
+  [SENTENCE 1 — Clinical context]<br><br>
+  [SENTENCE 2 — Gap: lack of validated molecular biomarkers across independent frameworks]<br><br>
+  [SENTENCE 3 — Objective: GSE123568, multiple independent pipelines]<br><br>
+  [SENTENCE 4 — Methods: Weka baseline + Python extension, multivariate + univariate modes, LLM tier evaluation]<br><br>
+  [SENTENCE 5 — Findings: best classifiers + AUC, total unique candidates]<br><br>
+  [SENTENCE 6 — Overlap: GYPA, TSTA3, PIP5K1B (multivariate); NLRP1 (univariate); Tier 1 highlights]<br><br>
+  [SENTENCE 7 — Significance: convergence + tier support; erythroid-vascular and immune-inflammatory signals]
+</p>
+
+<hr>
+
+
+<!-- ========================================================
+     1. INTRODUCTION
+     ======================================================== -->
+<h2>1. Introduction</h2>
+
+<div class="guide">
+  <span class="guide-label">Writing Guide — Introduction (4 paragraphs, ~600–800 words) — DELETE BEFORE SUBMITTING</span>
+  Your four paragraphs are written and appear below in black text. Expand only where prompted. Structure is correct.
+</div>
+
+
+<h3>1.1 SONFH Background</h3>
+
+<p>Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) is a severe debilitating joint and bone condition that is characterized by reduced blood supply to the hip socket (acetabulum) leading to bone death (osteonecrosis) and even a full joint collapse. The disease is known to be caused by commonly prescribed glucosteroid medication used to treat autoimmune-related and inflammatory diseases such as prednisone for Allergy Induced Asthma and others (citation 1). The condition also can be triggered by reduced blood supply (ischemia), altered lipid metabolism and oxidative stress caused by prolonged alcohol abuse (citation 2). Pharmacological interventions and experimental blood serum transfusion have been promising but without early detection the condition is usually irreversible and requires surgical intervention such as a full joint replacement. Recent research efforts have been able to find promising potential serum biomarkers for early detection but more work is still needed. This paper serves as an exploratory research analysis to showcase robust machine learning and automation techniques for identifying and qualifying biomarkers for SONFH detection.</p>
+
+<p class="placeholder">[EXPAND (optional) — ~50 words. Add: prevalence, typical patient demographics, or note that controls in GSE123568 are steroid users who did NOT develop osteonecrosis — making this a study of disease susceptibility rather than steroid exposure alone. 1–2 citations.]</p>
+
+
+<h3>1.2 Rationale for Transcriptomic / Microarray Data</h3>
+
+<p>Unfortunately because of recent and ongoing research in the field the most robust datasets and results have not been made fully public. So I have had difficulty finding a GEO dataset that had enough patients and raw data to actually be able to train a machine learning model to a statistically valuable result. So I decided to rely on the dataset that has the most patients and switch to using microarray data (GSE123568) rather than RNA-seq data as mentioned in the rubric because of insufficient patient-level samples, and several were single-cell datasets unsuitable for bulk-level supervised classification. Because of this we cannot discover novel isoforms, but the ML approach is suitable enough toward classification goals and using a custom automated ML pipeline to discover and research found genes of interest.</p>
+
+<div class="note">
+  <strong>Note — microarray vs RNA-seq framing:</strong> The rubric says "RNA-Seq Analysis with Weka" but the dataset used is microarray. Acknowledge and justify this. Key arguments: (1) larger patient-level sample size (n=40); (2) available SONFH RNA-seq datasets were single-cell or under-powered; (3) downstream ML workflow is modality-agnostic. Frame as a justified methodological choice, not an oversight.
+</div>
+
+<p class="placeholder">[EXPAND (optional) — ~50 words. Add: microarray measures relative probe intensity for predefined transcripts, producing a stable normalised matrix well-suited to supervised classification. Novel transcript discovery is not possible, but this is not a limitation for the classification goals of this study. Cite 1–2 references.]</p>
+
+
+<h3>1.3 Rationale for Machine Learning and Weka</h3>
+
+<p>As mentioned before, there has been issues with limitations of available data and the expression data we do have has a dimensionality asymmetry (49,293 probes, 40 samples) meaning that we could be prone to noise and overfitting while also accidentally filtering out key genes of interest before we ever even run the pipeline. Weka and the other tools covered in the course are well made and easy to use, but I also wanted to test how well my own pythonic approaches to this problem would fare on the same dataset. So I decided after doing a manual run of a suite of relevant WEKA ml models and an auto-weka analysis to also create a more automated and robust Omics ML Pipeline to try and increase the chances of finding genes of interest. I created the automated python app to mirror the manual steps taken in Weka to then compare and combine findings of both pipelines. The provided README.md documentation for both pipelines is fully comprehensive with step by step reproducibility screenshots and EDA plots.</p>
+
+<p class="placeholder">[EXPAND — ~50–70 words. Add: each pipeline was evaluated under two feature selection strategies — a multivariate hybrid score (combining fold change and t-statistic) and a univariate ANN wrapper (evaluating each gene independently). Running both allows comparison of which genes are individually diagnostic vs which work best as a collective feature set. Genes appearing in both shortlists carry the strongest evidential support.]</p>
+
+
+<h3>1.4 Aims and Objectives</h3>
+
+<p>In summary, the goal of this report is to use both WEKA and an automated ml pipeline to analyse the same dataset to:</p>
+
+<ol>
+  <li>To identify differentially expressed genes in SONFH patients vs controls using GSE123568</li>
+  <li>To identify which ml model type best performs on the given dataset</li>
+  <li>To generate a candidate biomarker shortlist from both pipelines and identify shared candidates</li>
+  <li>To interpret the biological relevance of top candidate genes in the context of SONFH pathophysiology using an LLM-powered Agentic RAG system to search and find relevant research papers &amp; documentation to then infer relevant connections between actual literature and verified citations and the findings produced by WEKA and my novel Omics ML Pipeline</li>
+</ol>
+
+<p class="placeholder">[CLOSE WITH — 1 sentence: e.g., "Together, these objectives form a layered approach — from classification performance and feature selection, through convergent biomarker shortlisting, to tier-based literature validation — aimed at producing a robust and reproducible candidate gene list from this microarray dataset."]</p>
+
+<hr>
+
+
+<!-- ========================================================
+     2. MATERIALS AND METHODS
+     ======================================================== -->
+<h2>2. Materials and Methods</h2>
+
+<div class="guide">
+  <span class="guide-label">Writing Guide — Materials and Methods (~700–900 words total) — DELETE BEFORE SUBMITTING</span>
+  Write in past tense. Six subsections. Your preprocessing paragraphs (2.1) are preserved exactly. Remaining subsections have placeholder text to adapt into your own voice. Include somewhere: "Multiple feature selection strategies were explored; only those yielding stable and interpretable results are emphasised in this report." This cleanly handles any experimental branches you want to de-emphasise.
+</div>
+
+
+<h3>2.1 Dataset and Preprocessing</h3>
+
+<p>As outlined in the Introduction, the GSE123568 dataset was chosen for the sheer amount of probes used and the fact that there were enough samples (30 SONFH and 10 non-SONFH controls), providing both biological relevance and sufficient class representation for supervised machine learning. The GSE123568 was obtained from the NCBI Gene Expression Omnibus (GEO) repository and was generated using microarray technology (Affymetrix Human PrimeView, GPL15207) to detect raw expression data for the genes which those probes targeted. This does not allow for the detection of novel transcripts like RNA-seq would, but given that there is a dearth of public and human patient-level samples data available for this disease, I believe that a microarray panel will suffice for the purposes of this course and this capstone project. The raw files of this study provide an initial matrix of 49,293 probes across 40 samples, after which variance filtering was applied to remove probes with IQR &lt; 0.5 log2 units, resulting in 11,687 retained probes; the data were confirmed as log2-transformed RMA-normalised (range 1.43–14.14) and required no further transformation.</p>
+
+<p>After downloading the input files (GEO series matrix and SOFT files) a series of preprocessing scripts were ran to prepare for the training of the ml models. These scripts reproduce and expand upon the core functionality of the R scripts provided during the course:</p>
+
+<p><strong>Step 1:</strong> The <em>Tranpose_Function.R</em> was converted into the <em>parse_series_matrix.py</em> as a stand alone script which parses the GEO series matrix format, extracts sample metadata, then transposes to a Weka acceptable orientation (samples × probes) with class ids appended ("control group" or "SONFH group").</p>
+
+<p><strong>Step 2:</strong> The filtering functionality of <em>simple ANN wrapper and filter.R</em> was split into the <em>preprocess.py</em> script which filters out uninformative features but uses different and in some cases less strict filtering to allow for wider and more robust training steps. The new filtering parameters probes with an interquartile range below 0.2 log₂ units across all 40 samples were removed as uninformative. Because GEO series matrix data is already RMA-normalised and log₂-transformed, no additional normalisation was applied. This step reduced the feature space from 49,293 to 45,465 probes, retaining only those with meaningful expression variation.</p>
+
+
+<h3>2.2 Feature Selection Strategies</h3>
+
+<div class="guide">
+  <span class="guide-label">Writing Guide — Feature Selection (two approaches) — DELETE BEFORE SUBMITTING</span>
+  Describe both approaches and contrast them at the end. The contrast is the key point: hybrid score finds genes that work well collectively; ANN wrapper finds genes that are individually diagnostic. These are different scientific questions, and the combination is more informative than either alone. This contrast sets up your Discussion section on multivariate vs univariate interpretation.
+</div>
+
+<p><strong>Multivariate (Hybrid Scoring Approach):</strong> The ranking and selecting functionality of <em>simple ANN wrapper and filter.R</em> was split into the <em>feature_select.py</em> script which now uses a hybrid ranking score:</p>
+
+<p style="margin-left:30px;"><strong>Hybrid Score = Z(|FC|) + Z(|t|)</strong></p>
+
+<p style="margin-left:30px;">Where FC (fold change) is the difference in mean log₂ expression between SONFH and control groups (FC = μ<sub>SONFH</sub> − μ<sub>control</sub>); t is Welch's t-statistic comparing probe expression between groups; Z(·) denotes z-score normalisation across all probes.</p>
+
+<p>This approach prioritises probes that are both strongly differentially expressed (effect size) and statistically significant across all samples. The top 100 probes were selected for Weka-based classification, while the top 500 probes were retained for the Python-based Omics ML pipeline. Output files were generated in .arff format for direct compatibility with Weka.</p>
+
+<p><strong>Univariate (ANN Wrapper Approach):</strong></p>
+<p class="placeholder">[WRITE HERE — ~80 words. Describe the univariate ANN ranking: each probe evaluated independently; small neural network trained on one probe at a time using repeated stratified splits; probes scored by median held-out test AUC; top 100 selected for Weka, top 43 for Python univariate mode. Multiple feature selection strategies were explored; only those yielding stable and interpretable results are emphasised in this report. Close with: "This approach isolates genes with strong independent predictive signal, but does not capture interactions between genes."]</p>
+
+
+<h3>2.3 Weka Pipeline — Manual Baseline</h3>
+
+<div class="guide">
+  <span class="guide-label">Writing Guide — Weka Pipeline (~130 words) — DELETE BEFORE SUBMITTING</span>
+  Frame Weka as the required baseline. Key points: Weka 3.8 GUI; classifiers (NB, SMO, MLP, IBk k=1/3/5, J48, RF, Auto-Weka on multivariate branch); 10-fold stratified CV on both ARFF files; metrics (accuracy, AUC, F1, confusion matrix). J48 and RF serve dual purpose — classification metrics AND biomarker shortlist generation. Note accuracy caveat: standard accuracy can be inflated by 30:10 class imbalance — AUC is the more reliable metric.
+</div>
+
+<p class="placeholder">[WRITE HERE — ~130 words in your own voice.]</p>
+
+
+<h3>2.4 Python Pipeline — Automated Extension</h3>
+
+<div class="guide">
+  <span class="guide-label">Writing Guide — Python Pipeline (~130 words) — DELETE BEFORE SUBMITTING</span>
+  Frame Python as the extension of the Weka workflow — replicating core logic but adding reproducibility, scalability, and richer statistical evaluation. Key points: scikit-learn; classifiers (LR ElasticNet, RF, Linear SVC, GNB, KNN, MLP, XGBoost); Hyperopt tuning (50 trials; RF + XGBoost); RepeatedStratifiedKFold (5×10 = 50 evaluations); MLflow tracking; balanced accuracy as primary metric (more appropriate than standard accuracy for 30:10 imbalance); two modes (--mode multivariate, --mode univariate).
+</div>
+
+<p class="placeholder">[WRITE HERE — ~130 words in your own voice. Good framing: "In contrast to the Weka workflow, the Python pipeline allowed systematic experimentation with feature selection strategies, ranking mechanisms, and evaluation metrics."]</p>
+
+
+<h3>2.5 LLM-Based Evidence Integration</h3>
+
+<div class="star">
+  <strong>This is your most original contribution — make it visible in the writing.</strong> Every ML project finds genes. Not every project then evaluates them against the literature with a structured tier system. This section moves your report from "we got genes" to "we evaluated biological validity rigorously." Write it with confidence. Keep conclusions soft, but be clear the framework itself is a deliberate methodological choice.
+</div>
+
+<div class="guide">
+  <span class="guide-label">Writing Guide — LLM Evidence Integration (~100 words) — DELETE BEFORE SUBMITTING</span>
+  Describe: (1) agentic RAG pipeline (GPT-4o-mini + biomedical source queries); (2) structured JSON output per gene with evidence summaries; (3) tier classification (Tier 1/2/3) and evidence relation (direct/indirect); (4) only direct-evidence genes retained for final evaluation. Keep language soft — "contextualise findings," not "confirm biomarkers." The four audit JSON files are in report/best_runs/.
+</div>
+
+<p class="placeholder">[WRITE HERE — ~100 words in your own voice. Include: "Candidates with direct Tier 1 or Tier 2 evidence were prioritised for biological interpretation. This tier-aware framework provides a measure of biological credibility beyond statistical selection alone."]</p>
+
+
+<h3>2.6 Evaluation Framework — Predictive Performance and Biological Validity</h3>
+
+<div class="star">
+  <strong>Key conceptual point — write clearly, it is worth marks:</strong> Total gene count ≠ pipeline quality. A pipeline finding 25 genes with 2 Tier 1 direct matches is NOT superior to one finding 7 genes with 4 Tier 1 direct matches. Your framework addresses this explicitly.
+</div>
+
+<div class="guide">
+  <span class="guide-label">Writing Guide — Evaluation Framework (~80 words) — DELETE BEFORE SUBMITTING</span>
+  Two-level evaluation: (1) classification metrics (AUC, balanced accuracy, F1); (2) tier-based biomarker quality (Tier 1/2/3 direct evidence counts). Tier definitions: Tier 1 = high-confidence, directly SONFH-relevant in established literature; Tier 2 = moderate-confidence or pathway-adjacent; Tier 3 = low-confidence or indirect. Note the Weka vs Python metric caveat: standard accuracy vs balanced accuracy are not directly comparable on 30:10 data.
+</div>
+
+<p class="placeholder">[WRITE HERE — ~80 words. Define both evaluation levels. Define tiers. Close with the bridge sentence: "This evaluation framework enables comparison not only of predictive performance, but also of biological validity, distinguishing pipelines that identify statistically predictive features from those that recover biologically supported biomarkers."]</p>
+
+
+<h3>2.7 Pipeline Overview</h3>
+
+<table style="font-size:8.5pt;">
+  <caption>Table 1. Workflow comparison across all four analytical pipelines. Steps 1–2 (parse + preprocess) are shared. Feature selection diverges at Step 3.</caption>
+  <tr>
+    <th style="width:22%;">Aspect</th>
+    <th style="width:19%;"><span class="tag-weka">WEKA</span> Multivariate</th>
+    <th style="width:19%;"><span class="tag-weka-uni">WEKA</span> Univariate</th>
+    <th style="width:19%;"><span class="tag-python">PYTHON</span> Multivariate</th>
+    <th style="width:21%;"><span class="tag-python-uni">PYTHON</span> Univariate</th>
+  </tr>
+  <tr><td>Feature selection</td><td>Hybrid score: Z(|FC|) + Z(|t|)</td><td>Per-probe ANN AUC</td><td>Hybrid score: Z(|FC|) + Z(|t|)</td><td>Per-probe ANN AUC re-rank</td></tr>
+  <tr><td>Input probes</td><td>Top 100</td><td>Top 100</td><td>Top 100 / 500</td><td>Top 43</td></tr>
+  <tr><td>Platform</td><td>Weka 3.8 GUI</td><td>Weka 3.8 GUI</td><td>scikit-learn, MLflow, Hyperopt</td><td>scikit-learn, MLflow, Hyperopt</td></tr>
+  <tr><td>Classifiers</td><td>NB, SMO, MLP, IBk k=1/3/5, J48, RF, Auto-Weka</td><td>NB, SMO, MLP, IBk k=1/3/5, J48, RF</td><td>LR, RF, SVC, GNB, KNN, MLP, XGBoost</td><td>LR, RF, SVC, GNB, KNN, MLP, XGBoost</td></tr>
+  <tr><td>Tuning</td><td>Auto-Weka</td><td>Weka defaults</td><td>Hyperopt (50 trials; RF + XGB)</td><td>Hyperopt (50 trials; RF + XGB)</td></tr>
+  <tr><td>Cross-validation</td><td>10-fold stratified</td><td>10-fold stratified</td><td>RepeatedStratifiedKFold (5×10)</td><td>RepeatedStratifiedKFold (5×10)</td></tr>
+  <tr><td>Primary metric</td><td>Standard accuracy + AUC</td><td>Standard accuracy + AUC</td><td>Balanced accuracy + AUC</td><td>Balanced accuracy + AUC</td></tr>
+  <tr><td>Shortlist basis</td><td>RF importance + J48 splits + FC rank</td><td>RF importance + J48 splits + FC rank</td><td>RF importance × freq × FC</td><td>ANN univariate score (no RF re-rank)</td></tr>
+  <tr><td>LLM tier validation</td><td>25 genes</td><td>25 genes</td><td>11–19 genes</td><td>43 genes</td></tr>
+</table>
+
+<hr>
+
+
+<!-- ========================================================
+     3. RESULTS
+     ======================================================== -->
+<h2>3. Results</h2>
+
+<div class="guide">
+  <span class="guide-label">Writing Guide — Results (~800–1000 words) — DELETE BEFORE SUBMITTING</span>
+  Present findings objectively. No interpretation — save that for Discussion. For each result: (1) what was observed, (2) specific numbers, (3) notable patterns. Reference every table and figure by number in the text.
+</div>
+
+
+<h3>3.1 Dataset Summary</h3>
+
+<p>The GSE123568 dataset comprised <strong>40 patient-level microarray samples</strong> — <strong>30 SONFH cases</strong> and <strong>10 non-SONFH controls</strong>. Raw expression data contained <strong>49,293 probes</strong>. After variance filtering (IQR &lt; 0.2 log2 units), <strong>45,465 probes</strong> were retained for downstream analysis. Principal component analysis (PCA) of the filtered matrix revealed that the first two components explained <strong>88.0% and 2.4%</strong> of total variance respectively (total: <strong>90.4%</strong>), indicating strong dominant structure consistent with a biological signal separating the two classes.</p>
+
+<p>As this study uses microarray data, expression values are derived from probe hybridisation intensity rather than direct transcript counts (as in RNA-seq). While this introduces limitations such as probe cross-hybridisation and reduced dynamic range, the resulting expression matrix remains suitable for downstream machine learning analysis.</p>
+
+<p class="placeholder">[ADD 1–2 sentences: note class imbalance (30:10), and any observations from the PCA or correlation heatmap visible in Figure 1.]</p>
+
+
+<h3>3.2 Exploratory Data Analysis</h3>
+
+<!-- [FIGURE: PCA plot here] -->
+<!-- [FIGURE: Volcano plot here] -->
+
+<div class="insight">
+  <strong>Figure 1 — EDA composite (shared step, generated before pipeline branching):</strong><br>
+  <code>data/femoral_head_necrosis/plots/eda/eda_composite.png</code><br>
+  2×3 grid: A=PCA, B=Volcano, C=Heatmap top 20 probes, D=Fold-change bar top 20, E=Boxplots top 6, F=Sample correlation heatmap.
+</div>
+
+<div class="figure-box">[INSERT FIGURE 1 — <strong>data/femoral_head_necrosis/plots/eda/eda_composite.png</strong>]</div>
+<p class="figure-caption"><strong>Figure 1.</strong> Multi-panel EDA of GSE123568 (shared preprocessing step). (A) PCA: PC1 = 88.0%, PC2 = 2.4%. (B) Volcano plot. (C) Heatmap, top 20 probes. (D) Fold-change bar chart, top 20 probes. (E) Boxplots, top 6 probes by class. (F) Sample correlation heatmap. n=40 (30 SONFH, 10 control).</p>
+
+<p class="placeholder">[WRITE HERE — ~80 words. Reference panels A–F. Key points: (A) near-complete class separation along PC1; (B) cluster of high-FC probes at top of volcano; (C) SONFH and control form distinct expression blocks; (D) top probes predominantly downregulated in SONFH; (E) near-zero class overlap; (F) SONFH samples cluster together, controls separately.]</p>
+
+
+<h3>3.3 <span class="tag-weka">WEKA</span> Multivariate — Model Performance</h3>
+
+<!-- [FIGURE: Model comparison here] -->
+
+<div class="insight">
+  <strong>Figure 2:</strong> <code>data/femoral_head_necrosis/plots/multivariate/weka_model_comparison.png</code>
+</div>
+
+<div class="figure-box">[INSERT FIGURE 2 — <strong>data/femoral_head_necrosis/plots/multivariate/weka_model_comparison.png</strong>]</div>
+<p class="figure-caption"><strong>Figure 2.</strong> Weka multivariate classifier performance. Standard accuracy, weighted F1, ROC AUC — 10-fold CV on top-100 hybrid-score features (n=40).</p>
+
+<p class="placeholder">[WRITE HERE — ~80 words. Auto-Weka selected PART rule learner (CfsSubsetEval), achieved 97.5% accuracy (1 error). RF and Auto-Weka tied for highest AUC (0.950). All models exceeded 90% accuracy. Note standard accuracy caveat. Reference Table 2 and Figure 2.]</p>
+
+<table style="table-layout:auto;">
+  <caption>Table 2. Weka multivariate — 10-fold CV, top-100 hybrid-score features (n=40). Green = best performers.</caption>
+  <tr><th style="width:22%;">Model</th><th style="width:14%;">Accuracy (%)</th><th style="width:12%;">F1 (Wt.)</th><th style="width:12%;">ROC AUC</th><th>Notes</th></tr>
+  <tr class="best"><td>Auto-Weka</td><td class="center">97.5</td><td class="center">0.975</td><td class="center">0.950</td><td>Best overall; PART + CfsSubsetEval; 1 error</td></tr>
+  <tr><td>J48</td><td class="center">95.0</td><td class="center">0.948</td><td class="center">0.820</td><td>Single split on PIP5K1B (≥4.915)</td></tr>
+  <tr class="best"><td>Random Forest</td><td class="center">92.5</td><td class="center">0.924</td><td class="center">0.950</td><td>Tied highest AUC; top features: RHD, RHCE</td></tr>
+  <tr><td>Naive Bayes</td><td class="center">92.5</td><td class="center">0.926</td><td class="center">0.932</td><td></td></tr>
+  <tr><td>MLP</td><td class="center">92.5</td><td class="center">0.920</td><td class="center">0.937</td><td></td></tr>
+  <tr><td>SMO (SVM)</td><td class="center">90.0</td><td class="center">0.896</td><td class="center">0.833</td><td>Lowest AUC overall</td></tr>
+  <tr><td>IBk (k=1)</td><td class="center">90.0</td><td class="center">0.896</td><td class="center">0.833</td><td>4 misclassifications</td></tr>
+  <tr><td>IBk (k=3)</td><td class="center">90.0</td><td class="center">0.896</td><td class="center">0.837</td><td></td></tr>
+  <tr><td>IBk (k=5)</td><td class="center">90.0</td><td class="center">0.896</td><td class="center">0.835</td><td></td></tr>
+</table>
+
+
+<h3>3.4 <span class="tag-weka-uni">WEKA</span> Univariate ANN — Model Performance</h3>
+
+<div class="insight">
+  <strong>Figure 3:</strong> <code>data/femoral_head_necrosis/plots/univariate_ann/weka_model_comparison.png</code>
+</div>
+
+<div class="figure-box">[INSERT FIGURE 3 — <strong>data/femoral_head_necrosis/plots/univariate_ann/weka_model_comparison.png</strong>]</div>
+<p class="figure-caption"><strong>Figure 3.</strong> Weka univariate ANN classifier performance. Standard accuracy, weighted F1, ROC AUC — 10-fold CV on top-100 univariate-ANN-ranked features (n=40).</p>
+
+<p class="placeholder">[WRITE HERE — ~80 words. Compare to multivariate branch. Which model performed best? Any notable differences in J48 split gene or RF top features compared to multivariate? Reference Table 3 and Figure 3.]</p>
+
+<table style="table-layout:auto;">
+  <caption>Table 3. Weka univariate ANN — 10-fold CV, top-100 ANN-ranked features (n=40).</caption>
+  <tr><th style="width:22%;">Model</th><th style="width:14%;">Accuracy (%)</th><th style="width:12%;">F1 (Wt.)</th><th style="width:12%;">ROC AUC</th><th>Notes</th></tr>
+  <tr class="placeholder"><td colspan="5" style="text-align:center; color:#aaa; font-style:italic;">[FILL FROM weka_models/univariate_ann/ .txt result files]</td></tr>
+</table>
+
+
+<h3>3.5 <span class="tag-python">PYTHON</span> Multivariate — Model Performance</h3>
+
+<div class="pending">
+  <strong>PENDING:</strong> Python multivariate re-run (hard depth limit = 25 genes) in progress. Table 4 reflects run r024. Update biomarker shortlist in Section 3.7 once re-run completes.
+</div>
+
+<div class="insight">
+  <strong>Figure 4:</strong> <code>AutoOmics_ML_Pipeline/app/data/output_multivariate_top100_min_s_50/plots/model_comparison.png</code>
+</div>
+
+<div class="figure-box">[INSERT FIGURE 4 — Python multivariate model comparison]</div>
+<p class="figure-caption"><strong>Figure 4.</strong> Python multivariate classifier performance (MLflow run r024). ROC AUC, balanced accuracy, weighted F1 — RepeatedStratifiedKFold (5×10) on top-100 hybrid-score features (n=40).</p>
+
+<p class="placeholder">[WRITE HERE — ~80 words. Tuned RF: highest AUC (0.972). GNB: highest balanced accuracy (0.885). Hyperopt tuning improved RF AUC from 0.965 → 0.972. Note: balanced accuracy used here, not standard accuracy. MLflow run r024. Weka reports standard accuracy; Python reports balanced accuracy — not directly comparable on 30:10 data. Reference Table 4 and Figure 4.]</p>
+
+<table style="table-layout:auto;">
+  <caption>Table 4. Python multivariate — RepeatedStratifiedKFold (5×10), top-100 features (n=40). Green = best AUC. (T) = tuned. Run r024.</caption>
+  <tr><th style="width:30%;">Model</th><th style="width:14%;">AUC</th><th style="width:14%;">Bal. Acc.</th><th style="width:12%;">F1 (Wt.)</th><th style="width:12%;">Accuracy</th></tr>
+  <tr class="best"><td>Random Forest (T)</td><td class="center">0.972</td><td class="center">0.857</td><td class="center">0.882</td><td class="center">0.890</td></tr>
+  <tr><td>Linear SVC</td><td class="center">0.967</td><td class="center">0.852</td><td class="center">0.897</td><td class="center">0.908</td></tr>
+  <tr><td>Random Forest</td><td class="center">0.965</td><td class="center">0.843</td><td class="center">0.886</td><td class="center">0.900</td></tr>
+  <tr><td>MLP</td><td class="center">0.957</td><td class="center">0.825</td><td class="center">0.869</td><td class="center">0.883</td></tr>
+  <tr><td>XGBoost (T)</td><td class="center">0.953</td><td class="center">0.872</td><td class="center">0.902</td><td class="center">0.913</td></tr>
+  <tr><td>Gaussian Naive Bayes</td><td class="center">0.945</td><td class="center">0.885</td><td class="center">0.904</td><td class="center">0.908</td></tr>
+  <tr><td>Logistic (ElasticNet)</td><td class="center">0.935</td><td class="center">0.818</td><td class="center">0.864</td><td class="center">0.878</td></tr>
+  <tr><td>XGBoost</td><td class="center">0.928</td><td class="center">0.878</td><td class="center">0.907</td><td class="center">0.918</td></tr>
+  <tr><td>KNN</td><td class="center">0.874</td><td class="center">0.835</td><td class="center">0.887</td><td class="center">0.903</td></tr>
+</table>
+
+
+<h3>3.6 <span class="tag-python-uni">PYTHON</span> Univariate — Model Performance</h3>
+
+<div class="insight">
+  <strong>Figure 5:</strong> <code>AutoOmics_ML_Pipeline/app/data/output_univariate_rerank_top43/plots/model_comparison.png</code>
+</div>
+
+<div class="figure-box">[INSERT FIGURE 5 — Python univariate model comparison]</div>
+<p class="figure-caption"><strong>Figure 5.</strong> Python univariate ANN classifier performance. ROC AUC, balanced accuracy, weighted F1 — RepeatedStratifiedKFold (5×10) on top-43 ANN-ranked features (n=40).</p>
+
+<p class="placeholder">[WRITE HERE — ~80 words. Compare to multivariate. Did simpler linear models (Logistic, SVC) perform well here? — this is expected if ANN-ranked features are individually diagnostic. Reference Table 5 and Figure 5.]</p>
+
+<table style="table-layout:auto;">
+  <caption>Table 5. Python univariate ANN — RepeatedStratifiedKFold (5×10), top-43 ANN-ranked features (n=40).</caption>
+  <tr><th style="width:30%;">Model</th><th style="width:14%;">AUC</th><th style="width:14%;">Bal. Acc.</th><th style="width:12%;">F1 (Wt.)</th><th style="width:12%;">Accuracy</th></tr>
+  <tr class="placeholder"><td colspan="5" style="text-align:center; color:#aaa; font-style:italic;">[FILL FROM output_univariate_rerank_top43/model_comparison.csv]</td></tr>
+</table>
+
+
+<h3>3.7 Full Four-Pipeline Biomarker Audit</h3>
+
+<!-- [TABLE: Tier-aware gene comparison here] -->
+
+<p>Both Weka and Python pipelines independently generated biomarker shortlists under both multivariate and univariate feature selection strategies. Table 6 presents a complete audit of all candidate genes across all four pipelines. Table 7 summarises per-pipeline counts.</p>
+
+<div class="pending">
+  <strong>NOTE:</strong> Python multivariate column is preliminary — run before hard depth-25 limit. Update once re-run completes.
+</div>
+
+<table style="table-layout:auto; font-size: 8.5pt;">
+  <caption>Table 6. Full cross-pipeline biomarker audit. 11 unique candidate genes. ✓ = identified by that pipeline. *Python multi preliminary.</caption>
+  <tr>
+    <th style="width:12%;">Gene</th>
+    <th style="width:11%;"><span class="tag-weka">Weka</span> Multi</th>
+    <th style="width:11%;"><span class="tag-weka-uni">Weka</span> Uni</th>
+    <th style="width:11%;"><span class="tag-python">Python</span> Multi*</th>
+    <th style="width:11%;"><span class="tag-python-uni">Python</span> Uni</th>
+    <th style="width:9%;"># Pipelines</th>
+    <th style="width:9%;">Tier</th>
+    <th>Notes</th>
+  </tr>
+  <tr class="overlap"><td><strong>GYPA</strong></td><td class="center">✓</td><td class="center">—</td><td class="center">✓</td><td class="center">—</td><td class="center">2</td><td class="center"><span class="tag-tier1">Tier 1</span></td><td>Overlap (multi); erythrocyte surface glycoprotein</td></tr>
+  <tr class="overlap"><td><strong>PIP5K1B</strong></td><td class="center">✓</td><td class="center">—</td><td class="center">✓</td><td class="center">—</td><td class="center">2</td><td class="center"><span class="tag-tier1">Tier 1</span></td><td>Overlap (multi); J48 split gene (threshold ≥4.915)</td></tr>
+  <tr class="overlap"><td><strong>TSTA3</strong></td><td class="center">✓</td><td class="center">—</td><td class="center">✓</td><td class="center">—</td><td class="center">2</td><td class="center">—</td><td>Overlap (multi); #1 hybrid score overall</td></tr>
+  <tr class="overlap"><td><strong>NLRP1</strong></td><td class="center">—</td><td class="center">✓</td><td class="center">—</td><td class="center">✓</td><td class="center">2</td><td class="center">—</td><td>Overlap (uni); inflammasome sensor; immune signal</td></tr>
+  <tr><td>CISD2</td><td class="center">✓</td><td class="center">—</td><td class="center">—</td><td class="center">—</td><td class="center">1</td><td class="center">—</td><td>Unique Weka multi; mitochondrial iron-sulphur</td></tr>
+  <tr><td>BPGM</td><td class="center">✓</td><td class="center">—</td><td class="center">—</td><td class="center">—</td><td class="center">1</td><td class="center"><span class="tag-tier1">Tier 1</span></td><td>Unique Weka multi; #4 hybrid score; O₂ metabolism; absent from Python due to model redundancy</td></tr>
+  <tr><td>TMCC2</td><td class="center">✓</td><td class="center">—</td><td class="center">—</td><td class="center">—</td><td class="center">1</td><td class="center"><span class="tag-tier1">Tier 1</span></td><td>Unique Weka multi; ER membrane protein</td></tr>
+  <tr><td>HEMGN</td><td class="center">✓</td><td class="center">—</td><td class="center">—</td><td class="center">—</td><td class="center">1</td><td class="center">—</td><td>Unique Weka multi; erythroid transcription cofactor</td></tr>
+  <tr><td>CXCR2</td><td class="center">—</td><td class="center">—</td><td class="center">—</td><td class="center">✓</td><td class="center">1</td><td class="center">—</td><td>Unique Python uni; neutrophil chemokine receptor</td></tr>
+  <tr><td>P2RY13</td><td class="center">—</td><td class="center">—</td><td class="center">—</td><td class="center">✓</td><td class="center">1</td><td class="center">—</td><td>Unique Python uni; purinergic receptor; platelet/immune</td></tr>
+  <tr><td>TYROBP</td><td class="center">—</td><td class="center">—</td><td class="center">—</td><td class="center">✓</td><td class="center">1</td><td class="center">—</td><td>Unique Python uni; DAP12; NK/microglial signalling</td></tr>
+</table>
+
+<table style="table-layout:auto;">
+  <caption>Table 7. Per-pipeline summary counts. *Python multi preliminary.</caption>
+  <tr><th>Pipeline</th><th>Total genes</th><th>In ≥2 pipelines</th><th>Unique</th><th>Tier 1 direct matches</th></tr>
+  <tr><td><span class="tag-weka">Weka</span> Multivariate</td><td class="center">7</td><td class="center">3</td><td class="center">4</td><td class="center"><span class="ph-inline">[from weka_multi JSON]</span></td></tr>
+  <tr><td><span class="tag-weka-uni">Weka</span> Univariate</td><td class="center">1</td><td class="center">1</td><td class="center">0</td><td class="center"><span class="ph-inline">[from weka_uni JSON]</span></td></tr>
+  <tr><td><span class="tag-python">Python</span> Multivariate*</td><td class="center">3</td><td class="center">3</td><td class="center">0</td><td class="center"><span class="ph-inline">[preliminary]</span></td></tr>
+  <tr><td><span class="tag-python-uni">Python</span> Univariate</td><td class="center">4</td><td class="center">1</td><td class="center">3</td><td class="center"><span class="ph-inline">[from uni_top43 JSON]</span></td></tr>
+  <tr style="font-weight:bold; background:#e3f2fd;"><td>Union (all pipelines)</td><td class="center">11</td><td class="center">4</td><td class="center">7</td><td class="center"><span class="ph-inline">[total Tier 1 across union]</span></td></tr>
+</table>
+
+
+<h3>3.8 Tier-Based Evidence Evaluation</h3>
+
+<!-- [TABLE: Tier-aware gene comparison here] -->
+
+<div class="star">
+  <strong>Fill Table 8 from the four JSON files in <code>report/best_runs/</code>.</strong> File naming pattern: <code>[pipeline]_evidence_tier_Tier_1_OR_Tier_2_OR_Tier_3_AND_evidence_relation_direct.json</code>. Open each and count genes per tier.
+</div>
+
+<p class="placeholder">[WRITE HERE — ~80 words. Introduce tier evaluation. After each pipeline produced its shortlist, candidate genes were evaluated by an agentic LLM pipeline (GPT-4o-mini). Each gene received an evidence tier (1/2/3) and evidence relation (direct/indirect). Only genes with direct evidence were counted. This tier-aware framework allows comparison of pipeline quality beyond simple gene count — as Table 8 shows, a deeper shortlist does not automatically mean higher biological credibility. Reference Table 8.]</p>
+
+<table style="table-layout:auto;">
+  <caption>Table 8. LLM tier-based evidence audit. Filter: evidence_tier IN (Tier 1, 2, 3) AND evidence_relation = direct. Source: report/best_runs/.</caption>
+  <tr><th style="width:28%;">Pipeline</th><th style="width:14%;">Genes evaluated</th><th style="width:14%;">Tier 1 direct</th><th style="width:14%;">Tier 2 direct</th><th style="width:14%;">Tier 3 direct</th><th>Total direct</th></tr>
+  <tr><td><span class="tag-weka">Weka</span> Multivariate</td><td class="center">25</td><td class="center"><span class="ph-inline">[#]</span></td><td class="center"><span class="ph-inline">[#]</span></td><td class="center"><span class="ph-inline">[#]</span></td><td class="center"><span class="ph-inline">[#]</span></td></tr>
+  <tr><td><span class="tag-weka-uni">Weka</span> Univariate ANN</td><td class="center">25</td><td class="center"><span class="ph-inline">[#]</span></td><td class="center"><span class="ph-inline">[#]</span></td><td class="center"><span class="ph-inline">[#]</span></td><td class="center"><span class="ph-inline">[#]</span></td></tr>
+  <tr><td><span class="tag-python">Python</span> Multivariate (top-100)*</td><td class="center">11–19</td><td class="center"><span class="ph-inline">[#]</span></td><td class="center"><span class="ph-inline">[#]</span></td><td class="center"><span class="ph-inline">[#]</span></td><td class="center"><span class="ph-inline">[#]</span></td></tr>
+  <tr><td><span class="tag-python-uni">Python</span> Univariate (top-43)</td><td class="center">43–45</td><td class="center"><span class="ph-inline">[#]</span></td><td class="center"><span class="ph-inline">[#]</span></td><td class="center"><span class="ph-inline">[#]</span></td><td class="center"><span class="ph-inline">[#]</span></td></tr>
+</table>
+
+<div class="future-task">
+  <strong>Figure 6 (optional):</strong> Grouped bar chart of Tier 1/2/3 direct counts per pipeline. Save to <code>report/figures/fig6_tier_audit.png</code>.
+</div>
+
+
+<h3>3.9 Selected Candidate Gene Profiles</h3>
+
+<div class="guide">
+  <span class="guide-label">Writing Guide — Gene Profiles (3-part per gene) — DELETE BEFORE SUBMITTING</span>
+  For each gene: (1) what is it, (2) how was it expressed here, (3) what does this suggest for SONFH. Use cautious language. LLM outputs in each pipeline's llm_outputs/ folder are reference material — rewrite in your own voice. Focus on the four overlap candidates plus BPGM.
+</div>
+
+<h4>GYPA (Glycophorin A) — <span class="tag-shared">SHARED multivariate candidate</span></h4>
+<p class="placeholder">[WRITE HERE — ~80 words. Major erythrocyte surface sialoglycoprotein; essential for RBC membrane stability. Downregulated in SONFH. Found independently by both multivariate pipelines — strongest cross-pipeline evidence. Part of the broader erythrocyte gene cluster discussed in Section 4.3. May reflect disrupted erythropoiesis or altered RBC biology in SONFH patients.]</p>
+
+<h4>PIP5K1B — <span class="tag-shared">SHARED multivariate candidate / J48 split gene</span></h4>
+<p class="placeholder">[WRITE HERE — ~70 words. PI signalling kinase; involved in cell adhesion. Identified by both multivariate pipelines AND as the single J48 decision-tree split gene (threshold ≥4.915 provides clean binary separation). The J48 designation is particularly notable — one gene's expression level alone correctly classifies the majority of patients in this dataset. Discuss any known bone, vascular, or steroid-related roles.]</p>
+
+<h4>NLRP1 — <span class="tag-shared">SHARED univariate candidate</span></h4>
+<p class="placeholder">[WRITE HERE — ~70 words. NLRP1 is an inflammasome sensor that activates IL-1β in response to cellular stress. Identified independently by both univariate pipelines but not by either multivariate pipeline — this approach isolates genes with strong independent predictive signal, but does not capture interactions between genes. NLRP1 represents a distinct immune-inflammatory signal. NLRP1-driven sterile inflammation is plausible in steroid-induced vascular disruption. Cautious language: univariate finding only, requires validation.]</p>
+
+<h4>BPGM — <span class="tag-weka">Weka multivariate top-4 candidate</span></h4>
+<p class="placeholder">[WRITE HERE — ~80 words. Erythrocyte-specific enzyme producing 2,3-bisphosphoglycerate — the key regulator of haemoglobin oxygen affinity. Ranked #4 by hybrid score (hybrid_score = 15.14, |FC| = 3.39). Found in Weka multivariate shortlist but not Python multivariate — not because the signal is absent, but because RF/XGBoost selected TSTA3 as the representative for the correlated erythrocyte cluster (explained in Section 4.3). Downregulation may suggest impaired oxygen delivery to bone — potentially relevant to avascular necrosis.]</p>
+
+<hr>
+
+
+<!-- ========================================================
+     4. DISCUSSION
+     ======================================================== -->
+<h2>4. Discussion</h2>
+
+<div class="guide">
+  <span class="guide-label">Writing Guide — Discussion (7 subsections, ~900–1100 words) — DELETE BEFORE SUBMITTING</span>
+  Interpret, do not repeat. Sections 4.3 and 4.4 are the analytical centrepiece. Use cautious language throughout. Two main ideas to convey: (1) best predictive model ≠ most biologically meaningful features; (2) multivariate and univariate approaches capture different aspects of biology — the combination is more informative than either alone.
+</div>
+
+
+<h3>4.1 Principal Findings</h3>
+
+<p class="placeholder">[WRITE HERE — ~120 words. Synthesise: all four pipelines achieved strong classification (Weka Auto-Weka 97.5%; Python Tuned RF AUC 0.972). 11 unique candidate genes identified. 4 genes found by ≥2 pipelines: GYPA, PIP5K1B, TSTA3 (multivariate), NLRP1 (univariate). Tier-based evaluation revealed [X] genes with Tier 1 direct evidence — quality-weighted view beyond raw gene counts. Multivariate pipelines converged on erythroid-vascular signature; univariate pipelines independently found immune-inflammatory signal (NLRP1). Together: richer picture than either approach alone.]</p>
+
+
+<h3>4.2 Biological Interpretation — Erythrocyte and Erythroid Theme</h3>
+
+<div class="guide">
+  <span class="guide-label">Writing Guide — Erythrocyte cluster (~150 words) — DELETE BEFORE SUBMITTING</span>
+  Say explicitly: "Several identified genes belong to erythrocyte-related pathways, suggesting a shared underlying biological signal rather than independent mechanisms." This is a strong point. Possible explanation: steroid-induced disruption of bone marrow blood supply may alter haematopoiesis and peripheral erythrocyte biology, reflected as coordinated downregulation of RBC-related genes. Contrast with NLRP1 signal — immune-inflammatory, distinct from erythrocyte cluster. Discuss whether complementary or confounded.
+</div>
+
+<p class="placeholder">[WRITE HERE — ~150 words. Erythrocyte cluster (GYPA, BPGM, CA1, RHD/RHCE, HEMGN, TSTA3); shared pathway = coherent biological signal; possible mechanisms; contrast with NLRP1 immune signal; cautious language throughout.]</p>
+
+
+<h3>4.3 ML Feature Importance vs Biological Importance</h3>
+
+<div class="star">
+  <strong>Your strongest analytical insight — write it confidently.</strong> BPGM ranked #4 statistically but disappeared from the Python shortlist. This is not a bug — it is a well-understood phenomenon in omics ML. Say it clearly and with authority.
+</div>
+
+<div class="guide">
+  <span class="guide-label">Writing Guide — ML vs biological importance (~160 words) — DELETE BEFORE SUBMITTING</span>
+  Three points: (1) Feature importance = predictive contribution, not biological relevance. (2) Correlated erythrocyte genes (BPGM, GYPA, CA1, RHD/RHCE) all measure the same process — models only need one proxy, and they pick whichever splits cleanest (TSTA3). (3) High AUC on a small feature subset does not mean only those features matter — it means the disease signal is redundantly represented.
+  Close with: "High predictive accuracy achieved with a small feature subset does not imply that only those features are biologically relevant — it implies that the disease signal is redundantly represented across many correlated genes."
+</div>
+
+<p class="placeholder">[WRITE HERE — ~160 words. Include the BPGM example. Close with the key sentence above. Use cautious but confident language.]</p>
+
+
+<h3>4.4 Multivariate vs Univariate Feature Selection</h3>
+
+<div class="guide">
+  <span class="guide-label">Writing Guide — Multivariate vs univariate (~150 words) — DELETE BEFORE SUBMITTING</span>
+  Two different scientific questions: hybrid score = "which genes work best together?"; ANN wrapper = "which genes are individually diagnostic?" — this approach isolates genes with strong independent predictive signal, but does not capture interactions between genes. The combination is more informative: genes in BOTH shortlists carry the strongest evidence (individually diagnostic AND consistently differentially expressed). GYPA satisfies this most strongly. NLRP1 found only by univariate — captured because it is not correlated with the erythrocyte cluster. Brief mention of the hybrid pipeline issue (ANN ranking → RF re-ranking = conflicting assumptions) is appropriate here.
+</div>
+
+<p class="placeholder">[WRITE HERE — ~150 words. Cover: what each approach is optimised for; what each recovered; why NLRP1 appeared only in univariate; why GYPA carries strongest evidence; implication that combining both produces a more complete picture.]</p>
+
+
+<h3>4.5 Comparison with Published Literature</h3>
+
+<p class="placeholder">[WRITE HERE — ~150 words. Priority: (1) Jia Y et al. Clin Transl Med 2023 — GSE123568 source paper; (2) GYPA or erythrocyte genes in osteonecrosis; (3) NLRP1/inflammasome in steroid-induced bone disease; (4) AUC benchmark for small-cohort ML studies on expression data. 4–6 citations. Note where findings agree with or add to prior work.]</p>
+
+<div class="note">
+  <strong>Metric caveat:</strong> Weka standard accuracy vs Python balanced accuracy are not directly comparable on 30:10 data. State this explicitly when comparing numbers across pipelines.
+</div>
+
+
+<h3>4.6 Limitations</h3>
+
+<p class="placeholder">[WRITE HERE — ~130 words. Include: (1) n=40, 30:10 imbalance; (2) single dataset, no external validation; (3) microarray platform — predefined probes, cross-hybridisation, reduced dynamic range; (4) EIF1AY (Y-chromosome gene) ranked highly — possible sex confounder; (5) pipeline depth mismatch — Python multi initially shallower than Weka multi (being corrected); (6) no functional validation; (7) different feature set sizes and CV strategies — approximate comparison only.]</p>
+
+
+<h3>4.7 Future Directions</h3>
+
+<p class="placeholder">[WRITE HERE — ~100 words. Suggest: (1) larger balanced independent cohort; (2) functional validation of GYPA and NLRP1; (3) pathway-level analysis mapping erythrocyte cluster and inflammasome signal to upstream regulators; (4) multi-omics integration; (5) clinical panel development — GYPA, PIP5K1B, or NLRP1 as blood-based diagnostic signature.]</p>
+
+<hr>
+
+
+<!-- ========================================================
+     5. CONCLUSION
+     ======================================================== -->
+<h2>5. Conclusion</h2>
+
+<div class="guide">
+  <span class="guide-label">Writing Guide — Conclusion (~120–160 words) — DELETE BEFORE SUBMITTING</span>
+  Brief and confident. No new information. No restating limitations. Three parts: (1) central finding, (2) methodological contribution, (3) broader significance.
+</div>
+
+<p class="placeholder">[SENTENCE 1 — Central finding: 11 unique candidate genes across four pipelines; GYPA, PIP5K1B, TSTA3, NLRP1 as most reproducible; tier evaluation adds quality layer beyond count.]</p>
+
+<p class="placeholder">[SENTENCE 2 — Methodological contribution: parallel Weka + Python pipelines in multivariate and univariate modes, combined with tier-based LLM validation, provides a layered framework that distinguishes predictive utility from biological credibility.]</p>
+
+<p class="placeholder">[SENTENCE 3 — Biological significance: convergence on erythrocyte-associated genes (multivariate) and independent identification of NLRP1 (univariate) suggests both erythroid-vascular and immune-inflammatory signals are present in GSE123568, consistent with known SONFH pathophysiology.]</p>
+
+<p class="placeholder">[SENTENCE 4 — Forward-looking: GYPA and NLRP1 as most reproducible multi-pipeline findings warrant investigation as components of a blood-based early detection panel for SONFH.]</p>
+
+<hr>
+
+
+<!-- ========================================================
+     REFERENCES
+     ======================================================== -->
+<h2>References</h2>
+
+<div class="guide">
+  <span class="guide-label">Writing Guide — References (Vancouver style) — DELETE BEFORE SUBMITTING</span>
+  Vancouver numbered format. Cite in order of first appearance. ≥10 peer-reviewed sources. Priority journals: Bone, Arthritis Res Ther, Front Genet, PLOS ONE, Bioinformatics, BMC Bioinformatics, Clin Transl Med.
+</div>
+
+<ol>
+  <li class="placeholder">[SONFH clinical overview / steroid-induced AVN aetiology]</li>
+  <li class="placeholder">[Alcohol or ischaemia-triggered AVN mechanisms]</li>
+  <li class="placeholder">[Jia Y, et al. Clin Transl Med. 2023;13(6):e1295. — GSE123568 source paper]</li>
+  <li class="placeholder">[Microarray methodology / RMA normalisation]</li>
+  <li class="placeholder">[Weka / ML in bioinformatics]</li>
+  <li class="placeholder">[Random Forest / feature importance in high-dimensional omics]</li>
+  <li class="placeholder">[GYPA or erythrocyte genes in osteonecrosis / bone marrow]</li>
+  <li class="placeholder">[BPGM — erythrocyte oxygen metabolism]</li>
+  <li class="placeholder">[NLRP1 / inflammasome in steroid-induced inflammation or bone disease]</li>
+  <li class="placeholder">[ML classification benchmark — AUC for small-cohort bone or expression studies]</li>
+</ol>
+
+<hr>
+
+
+<!-- ========================================================
+     APPENDIX
+     ======================================================== -->
+<h2>Appendix / Supplementary Materials</h2>
+
+<h3>Appendix A — Pipeline Architecture Diagram</h3>
+<div class="figure-box">[INSERT PIPELINE DIAGRAM — flow: raw GEO → parse → preprocess → branch split (multivariate / univariate) → Weka + Python → biomarker shortlist → LLM tier audit.]</div>
+
+<h3>Appendix B — MLflow Experiment Screenshots</h3>
+<div class="figure-box">[INSERT MLFLOW SCREENSHOTS — run r024; experiment UI; model metric comparison; parameter logs.]</div>
+
+<h3>Appendix C — Weka Workflow Screenshots</h3>
+<div class="figure-box">[INSERT WEKA SCREENSHOTS — Weka Explorer classify tab; 10-fold CV setup; RF result buffer; Auto-Weka result.]</div>
+
+<h3>Appendix D — LLM Gene Interpretation Summaries</h3>
+<p class="placeholder">[OPTIONAL — summary table of LLM outputs. Columns: Gene, Pipeline, Tier, Evidence Relation, 1-sentence summary. Source: four JSON files in report/best_runs/.]</p>
+
+<h3>Appendix E — Full Weka Multivariate Biomarker Shortlist (17 probes)</h3>
+<table style="table-layout:auto; font-size:8.5pt;">
+  <caption>Appendix Table E. Weka multivariate biomarker shortlist. All downregulated in SONFH. Evidence: RF = importance rank, FC = fold-change rank, W = WrapperSubsetEval, J48 = decision-tree split.</caption>
+  <tr><th>Probe ID</th><th>Gene</th><th>Evidence</th><th>RF Imp.</th><th>Overlap?</th></tr>
+  <tr class="best"><td>11737267_a_at</td><td><strong>RHD</strong></td><td>RF #1</td><td class="center">1.00</td><td>—</td></tr>
+  <tr class="best"><td>11750456_s_at</td><td>RHCE / RHD</td><td>RF #2</td><td class="center">1.00</td><td>—</td></tr>
+  <tr><td>11728138_at</td><td>XK</td><td>RF #3</td><td class="center">0.99</td><td>—</td></tr>
+  <tr><td>11752881_s_at</td><td>RHCE / RHD</td><td>RF #4</td><td class="center">0.98</td><td>—</td></tr>
+  <tr><td>11745299_x_at</td><td>GYPB</td><td>RF #5</td><td class="center">0.94</td><td>—</td></tr>
+  <tr class="overlap"><td>11729582_s_at</td><td><strong>CA1</strong></td><td>RF #6 / Wrapper / FC top</td><td class="center">0.92</td><td>Prior overlap (earlier run)</td></tr>
+  <tr><td>11753827_x_at</td><td>GYPB</td><td>RF #7</td><td class="center">0.92</td><td>—</td></tr>
+  <tr><td>11731448_a_at</td><td>SNCA</td><td>RF #8</td><td class="center">0.88</td><td>—</td></tr>
+  <tr><td>11733941_a_at</td><td>TBCEL</td><td>RF #9</td><td class="center">0.81</td><td>—</td></tr>
+  <tr><td>11745557_x_at</td><td>GYPB</td><td>RF #10</td><td class="center">0.81</td><td>—</td></tr>
+  <tr><td>11740680_s_at</td><td>RHCE / RHD</td><td>FC top + RF</td><td class="center">0.80</td><td>—</td></tr>
+  <tr><td>11742315_s_at</td><td>RHCE / RHD</td><td>FC top + RF</td><td class="center">0.76</td><td>—</td></tr>
+  <tr class="overlap"><td>11732236_a_at</td><td><strong>GYPA</strong></td><td>FC top + RF</td><td class="center">0.73</td><td><span class="tag-shared">SHARED multi</span></td></tr>
+  <tr><td>11736696_a_at</td><td>HEMGN</td><td>FC top + RF</td><td class="center">0.73</td><td>—</td></tr>
+  <tr><td>11720807_x_at</td><td>EIF1AY</td><td>FC top #1 / RF</td><td class="center">0.67</td><td>— (Y-chromosome; possible sex confounder)</td></tr>
+  <tr><td>11729582_s_at</td><td>CA1</td><td>Wrapper / RF #6</td><td class="center">0.66</td><td>—</td></tr>
+  <tr class="overlap"><td>11721029_a_at</td><td><strong>PIP5K1B</strong></td><td>J48 split / RF</td><td class="center">0.52</td><td><span class="tag-shared">SHARED multi</span></td></tr>
+</table>
+
+<h3>Appendix F — Full Weka Univariate ANN Biomarker Shortlist</h3>
+<p class="placeholder">[INSERT TABLE from <code>data/femoral_head_necrosis/weka_models/univariate_ann/weka_biomarker_shortlist.csv</code>. Highlight NLRP1 row.]</p>
+
+<h3>Appendix G — Full Python Multivariate Biomarker Shortlist (preliminary)</h3>
+<table style="table-layout:auto; font-size:8.5pt;">
+  <caption>Appendix Table G. Python multivariate shortlist (run r024, combined_score ≥ 0.50). All downregulated in SONFH. *Preliminary — pending depth-25 re-run.</caption>
+  <tr><th>#</th><th>Probe ID</th><th>Gene</th><th>RF Imp.</th><th>|FC|</th><th>Score</th><th>Overlap?</th></tr>
+  <tr><td class="center">1</td><td>11719581_a_at</td><td><strong>BPGM</strong></td><td class="center">0.064</td><td class="center">3.39</td><td class="center">0.934</td><td>—</td></tr>
+  <tr><td class="center">2</td><td>11758559_s_at</td><td>NUDT4</td><td class="center">0.069</td><td class="center">2.42</td><td class="center">0.836</td><td>—</td></tr>
+  <tr><td class="center">3</td><td>11736395_a_at</td><td><strong>BPGM</strong></td><td class="center">0.048</td><td class="center">3.33</td><td class="center">0.813</td><td>—</td></tr>
+  <tr class="overlap"><td class="center">4</td><td>11732236_a_at</td><td><strong>GYPA</strong></td><td class="center">0.045</td><td class="center">3.31</td><td class="center">0.791</td><td><span class="tag-shared">SHARED multi</span></td></tr>
+  <tr><td class="center">5</td><td>11720494_a_at</td><td>CTNNAL1</td><td class="center">0.052</td><td class="center">2.86</td><td class="center">0.775</td><td>—</td></tr>
+  <tr><td class="center">6</td><td>11750918_a_at</td><td>HEPACAM2</td><td class="center">0.052</td><td class="center">2.47</td><td class="center">0.722</td><td>—</td></tr>
+  <tr><td class="center">7</td><td>11736696_a_at</td><td>HEMGN</td><td class="center">0.042</td><td class="center">2.94</td><td class="center">0.713</td><td>—</td></tr>
+  <tr><td class="center">8</td><td>11728821_a_at</td><td>HEPACAM2</td><td class="center">0.047</td><td class="center">2.67</td><td class="center">0.713</td><td>—</td></tr>
+  <tr class="overlap"><td class="center">9</td><td>11732235_a_at</td><td><strong>GYPA</strong></td><td class="center">0.041</td><td class="center">2.80</td><td class="center">0.688</td><td><span class="tag-shared">SHARED multi</span></td></tr>
+  <tr><td class="center">10</td><td>11725497_a_at</td><td>RAP1GAP</td><td class="center">0.032</td><td class="center">3.25</td><td class="center">0.687</td><td>—</td></tr>
+  <tr><td class="center">11</td><td>11721930_a_at</td><td>TMCC2</td><td class="center">0.037</td><td class="center">2.76</td><td class="center">0.651</td><td>—</td></tr>
+  <tr><td class="center">12</td><td>11739787_a_at</td><td>IGF2</td><td class="center">0.021</td><td class="center">3.45</td><td class="center">0.630</td><td>—</td></tr>
+  <tr><td class="center">13</td><td>11729583_x_at</td><td>CA1</td><td class="center">0.021</td><td class="center">3.33</td><td class="center">0.612</td><td>—</td></tr>
+</table>
+
+<h3>Appendix H — Full Python Univariate ANN Biomarker Shortlist</h3>
+<p class="placeholder">[INSERT TABLE from <code>AutoOmics_ML_Pipeline/app/data/output_univariate_rerank_top43/biomarker_shortlist.csv</code>. Columns: probe_id, gene_symbol, univariate_score, abs_fold_change. Highlight NLRP1, CXCR2, P2RY13, TYROBP. Note: ranked by ANN test AUC, not RF importance.]</p>
+
+<h3>Appendix I — Extended Model Metrics</h3>
+<p class="placeholder">[OPTIONAL — Python model_comparison.csv exports or Weka confusion matrices. Useful for showing per-class TP/FP rates and confirming models are not predicting majority class only.]</p>
+
+<hr>
+<p style="text-align:center; color:#aaa; font-size:9pt; margin-top:30px;">
+  — Final report skeleton — GSE123568 | Four-pipeline architecture | Tier-aware evidence evaluation<br>
+  Delete all guide, note, and howto boxes before submission.
+</p>
+
+</body>
+</html>

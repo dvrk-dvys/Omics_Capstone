@@ -1,0 +1,153 @@
+{
+  "probe_id": "11753827_x_at",
+  "gene_symbol": "GYPB",
+  "rf_importance": 0.0031,
+  "selection_freq": 1.0,
+  "abs_fold_change": 2.8288814333333336,
+  "score": 0.4166,
+  "probe_count": 4,
+  "probe_ids": "11753827_x_at | 11745557_x_at | 11753662_x_at | 11745299_x_at",
+  "max_score": 0.4166,
+  "mean_abs_fold_change": 2.8667,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T00:02:58",
+  "interpretation": "Glycophorin-B (GYPB) is a sialoglycoprotein that plays a crucial role in maintaining the stability and shape of erythrocyte membranes through its involvement in the ankyrin-1 complex. While there is no direct evidence linking GYPB to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its function in erythrocyte membrane integrity may suggest a role in the vascular health of bone tissue, which is critical in osteonecrosis. The retrieved evidence primarily highlights its general biological functions and associations with other diseases, but does not provide specific insights into SONFH mechanisms. Therefore, the potential of GYPB as a biomarker for early detection of SONFH remains weak, as it lacks direct relevance to the disease context.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "GYPB's role in erythrocyte membrane stability may indirectly relate to vascular health in the context of Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "GYPB (P06028). https://www.uniprot.org/uniprotkb/P06028",
+    "GYPB (P06028-2). https://www.uniprot.org/uniprotkb/P06028-2",
+    "GYPB \u2014 GYPB. https://platform.opentargets.org/target/ENSG00000250361",
+    "GYPB \u2194 chronic obstructive pulmonary disease. https://platform.opentargets.org/target/ENSG00000250361/associations",
+    "GYPB \u2194 malaria. https://platform.opentargets.org/target/ENSG00000250361/associations",
+    "GYPB \u2194 thyroid cancer. https://platform.opentargets.org/target/ENSG00000250361/associations",
+    "GYPB \u2194 Abnormality of the skeletal system. https://platform.opentargets.org/target/ENSG00000250361/associations",
+    "Glycophorin. https://en.wikipedia.org/wiki/Glycophorin",
+    "Glycophorin C. https://en.wikipedia.org/wiki/Glycophorin_C",
+    "GYPB. https://en.wikipedia.org/wiki/GYPB",
+    "Glycophorin A. https://en.wikipedia.org/wiki/Glycophorin_A"
+  ],
+  "token_usage": {
+    "prompt_tokens": 6383,
+    "completion_tokens": 236,
+    "total_tokens": 6619,
+    "estimated_cost_usd": 0.001099
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P06028",
+          "title": "GYPB (P06028)",
+          "url": "https://www.uniprot.org/uniprotkb/P06028",
+          "text": "Protein: Glycophorin-B\nFunction: Component of the ankyrin-1 complex, a multiprotein complex involved in the stability and shape of the erythrocyte membrane",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P06028-2",
+          "title": "GYPB (P06028-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P06028-2",
+          "text": "Protein: Isoform 2 of Glycophorin-B",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000250361::function",
+          "title": "GYPB \u2014 GYPB",
+          "url": "https://platform.opentargets.org/target/ENSG00000250361",
+          "text": "Function: Component of the ankyrin-1 complex, a multiprotein complex involved in the stability and shape of the erythrocyte membrane. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000250361::EFO_0000341",
+          "title": "GYPB \u2194 chronic obstructive pulmonary disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000250361/associations",
+          "text": "Disease: chronic obstructive pulmonary disease\nDescription: A group of disorders affecting the bronchi and the lung parenchyma. It is characterized by chronic and irreversible obstruction of the airflow. It includes chronic bronchitis and pulmonary emphysema.\nAssociation score: 0.380",
+          "cos_sim_score": 0.38043612139480076,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000250361::EFO_0001068",
+          "title": "GYPB \u2194 malaria",
+          "url": "https://platform.opentargets.org/target/ENSG00000250361/associations",
+          "text": "Disease: malaria\nDescription: Malaria is a serious and sometimes fatal disease caused by a parasite that commonly infects a certain type of mosquito which feeds on humans. Infection with malaria parasites may result in a wide variety of symptoms, ranging from absent or very mild symptoms to severe disease and even death. People who get malaria are typically very sick with high fevers, shaking chills, and flu-like illness. In general, malaria is a curable disease if diagnosed and treated promptly and correctly.Treatment depends on many factors including disease severity, the species of malaria parasite causing the infection and the part of the world in which the infection was acquired.\nAssociation score: 0.375",
+          "cos_sim_score": 0.37530594713779186,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000250361::MONDO_0002108",
+          "title": "GYPB \u2194 thyroid cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000250361/associations",
+          "text": "Disease: thyroid cancer\nDescription: A malignant neoplasm involving the thyroid gland\nAssociation score: 0.325",
+          "cos_sim_score": 0.32450843082951547,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000250361::HP_0000924",
+          "title": "GYPB \u2194 Abnormality of the skeletal system",
+          "url": "https://platform.opentargets.org/target/ENSG00000250361/associations",
+          "text": "Disease: Abnormality of the skeletal system\nDescription: An abnormality of the skeletal system.\nAssociation score: 0.281",
+          "cos_sim_score": 0.2810434918027672,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Glycophorin",
+          "title": "Glycophorin",
+          "url": "https://en.wikipedia.org/wiki/Glycophorin",
+          "text": "A glycophorin is a sialoglycoprotein of the membrane of a red blood cell.  It is a membrane-spanning protein and carries sugar molecules. It is heavily glycosylated (60%). Glycophorins are rich in sialic acid, which gives the red blood cells a very hydrophilic-charged coat. This enables them to circulate without adhering to other cells or vessel walls.\nA particular mutation in Glycophorins is thought to produce a 40% reduction in risk of severe malaria.\n\nIdentification\nAfter separation of red cell membranes by SDS-polyacrylamide gel electrophoresis and staining with periodic acid-Schiff staining (PAS), four glycophorins have been identified. These have been named glycophorin A, B, C, and D in order of the quantity present in the membrane, glycophorin A being the most and glycophorin D the least common. A fifth (glycophorin E) has been identified within the human genome but cannot easily be detected on routine gel staining. In total, the glycophorins constitute ~2% of the total erythrocyte membrane protein mass. These proteins are also known under different nomenclatures but they are probably best known as the glycophorins.\n\nFamily members\nThe following four human genes encode glycophorin proteins:\n\nGlycophorin A\nGlycophorin B\nGlycophorin C\nGlycophorin E\nGlycophorin D is now known to be a variant of Glycophorin C.\n\nReferences\nExternal links\nGlycophorin at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nUMich Orientation of Proteins in Membranes protein/pdbid-1afo",
+          "cos_sim_score": 0.676435112953186,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Glycophorin C",
+          "title": "Glycophorin C",
+          "url": "https://en.wikipedia.org/wiki/Glycophorin_C",
+          "text": "History\nThe antigen was discovered in 1960 when three women who lacked the antigen made anti-Gea in response to pregnancy. The antigen is named after one of the patients \u2013 a Mrs Gerbich. The following year a new but related antigen was discovered in a Mrs Yus for whom an antigen in this system is also named. In 1972 a numerical system for the antigens in this blood group was introduced.\n\nGenomics\nDespite the similar names glycophorin C and D are unrelated to the other three glycophorins which encoded on chromosome 4 at location 4q28-q31. These latter proteins are closely related. Glycophorin A and glycophorin B carry the blood group MN and Ss antigens respectively. There are ~225,000 molecules of GPC and GPD per erythrocyte.\nOriginally it was thought that glycophorin C and D were the result of a gene duplication event but it was only later realised that they were encoded by the same gene. Glycophorin D (GPD) is generated from the glycophorin C messenger RNA by leaky translation at an in frame AUG at codon 30: glycophorin D = glycophorin C residues 30 to 128. This leaky translation appears to be a uniquely human trait.\nGlycophorin C (GPC) is a single polypeptide chain of 128 amino acids and is encoded by a gene on the long arm of chromosome 2 (2q14-q21). The gene was first cloned in 1989 by High et al. The GPC gene is organized in four exons distributed over 13.5 kilobase pairs of DNA. Exon 1 encodes residues 1-16, exon 2 residues 17-35, exon 3 residues 36-63 and exon 4 residues 64-128. Exons 2 and 3 are highly homologous, with less than 5% nucleotide divergence. These exons also differ by a 9 amino acid insert at the 3' end of exon 3. The direct repeated segments containing these exons is 3.4 kilobase pairs long and may be derived from a recent duplication of a single ancestral domain. Exons 1, 2 and most of exon 3 encode the N-terminal extracellular domain while the remainder of exon 3 and exon 4 encode transmembrane and cytoplasmic domains.\nTwo isoforms are known and the gene is expressed in a wide variety of tissues including kidney, thymus, stomach, breast, adult liver and erythrocyte. In the non erythroid cell lines, expression is lower than in the erythrocyte and the protein is differentially glycosylated. In the erythrocyte glycophorin C makes up ~4% of the membrane sialoglycoproteins. The average number of O linked chains is 12 per molecule.\nThe gene is expressed early in the development of the erythrocyte, specifically in the erythroid burst-forming unit and erythroid colony-forming unit. The mRNA from human erythroblasts is ~1.4 kilobases long and the transcription start site in erythroid cells has been mapped to 1050 base pairs 5' of the start codon. It is expressed early in development and before the Kell antigens, Rhesus-associated glycoprotein, glycophorin A, band 3, the Rhesus antigen and glycophorin B.\nIn melanocytic cells Glycophorin C gene expression may be regulated by MITF.\nGPC appears to be synthesized in excess in the erythrocyte and that the membrane content is regulated by band 4.1 (protein 4.1). Additional data on the regulation of glycophorin C is here.\nIn a study of this gene among the Hominoidea two finding unique to humans emerged: (1) an excess of non-synonymous divergence among species that appears to be caused solely by accelerated evolution and (2) the ability of the single GYPC gene to encode both the GPC and GPD proteins. The cause for this is not known but it was suggested that these findings might be the result of infection by Plasmodium falciparum.",
+          "cos_sim_score": 0.6220153570175171,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::GYPB",
+          "title": "GYPB",
+          "url": "https://en.wikipedia.org/wiki/GYPB",
+          "text": "Glycophorin B (MNS blood group) (gene designation GYPB) also known as sialoglycoprotein delta and SS-active sialoglycoprotein is a protein which in humans is encoded by the GYPB gene. GYPB has also recently been designated CD235b (cluster of differentiation 235b).\n\nFunction\nGlycophorin A (GYPA) and B (GYPB; this protein) are major sialoglycoproteins of the human erythrocyte membrane which bear the antigenic determinants for the MN and Ss blood groups respectively. In addition to the M or N and S or s antigens, that commonly occur in all populations, about 40 related variant phenotypes have been identified. These variants include the Miltenberger (Mi) complex and several isoforms of Stones (Sta); also Dantu, Sat, Henshaw (He or MNS6), Mg and deletion variants Ena, S-s-U- and Mk. Most of these are the result of gene recombinations between GYPA and GYPB.\n\nGenomics\nThe gene is located on the long arm of chromosome 4 (4q28-q31) and has 5 exons. It was first sequenced in 1987 the peptide sequence of 72 amino acids having been determined earlier that year.\nThe gene has 97% sequence homology with the glycophorin A gene from the 5' UTR approximately 1 kilobase upstream from the exon encoding the transmembrane regions to the portion of the coding sequence encoding the first 45 amino acids. There is a signal sequence of 19 amino acid residues. The leader peptide differs by one amino acid and the next 26 amino acids are identical. Amino acids 27-55 of glycophorin A are absent from glycophorin B. This section includes an N-glycosylation site. Only O-glycosylation sites are found on glycoprotein B and these are linked via serine or threonine. Residues 80-100 of glycophorin A and 51-71 of glycophorin B are very similar. The intervening residues in contrast differ significantly. The antigenic determinant for the blood group Ss is located at residue 29 where S has a methionine and s a threonine. This is due to a mutation at nucleotide 143 (C->T). The S antigen is also known as MNS3 and the s antigen as MNS4.\nIt seems likely that this gene evolved by gene duplication and subsequent mutation of glycophorin A. The transition site from homologous to nonhomologous sequences can be localized within Alu repeat sequences.\n\nMolecular biology\nThere are ~80000 copies of glycophorin B per erythrocyte. Both glycophorin A and B are expressed on the renal endothelium and epithelium.\nThe first 40 amino acids of the mature protein are extracellular. The next 22 form a transmembrane segment and the remainder are intra cellular.\n\nBlood groups\nThe MNS blood group was the second set of antigens discovered. M and N were identified in 1927 by Landsteiner and Levine. S and s in were described later in 1947\nThe frequencies of these antigens are\n\nM: 78% Caucasian; 74% African descent\nN: 72% Caucasian; 75% African descent\nS: 55% Caucasian; 31% African descent\ns: 89% Caucasian; 93% African descent",
+          "cos_sim_score": 0.6192547082901001,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Glycophorin C",
+          "title": "Glycophorin C",
+          "url": "https://en.wikipedia.org/wiki/Glycophorin_C",
+          "text": "Molecular biology\nAfter separation of red cell membranes by SDS-polyacrylamide gel electrophoresis and staining with periodic acid-Schiff staining (PAS) four glycophorins have been identified. These have been named glycophorin A, B, C and D in order of the quantity present in the membrane \u2013 glycophorin A being the most and glycophorin D the least common. A fifth (glycophorin E) has been identified within the human genome but cannot easily be detected on routine gel staining. In total the glycophorins constitute ~2% of the total erythrocyte membrane protein mass. Confusingly these proteins are also known under different nomenclatures but they are probably best known as the glycophorins.\nGlycophorin C was first isolated in 1978. Glycophorin C and D are minor sialoglycoproteins contributing to 4% and 1% to the PAS-positive material and are present at about 2.0 and 0.5 x 105 copies/cell respectively. In polyacrylimide gels glycophorin C's apparent weight is 32 kilodaltons (32 kDa). Its structure is similar to that of other glycophorins: a highly glycoslated extracellular domain (residues 1-58), a transmembrane domain (residues 59-81) and an intracellular domain (residues 82-128). About 90% of the glycophorin C present in the erythrocyte is bound to the cytoskeleton and the remaining 10% moves freely within the membrane.\nGlycophorin D's apparent molecular weight is 23kDa. On average this protein has 6 O linked oligosaccharides per molecule.\nWithin the erythrocyte it interacts with band 4.1 (an 80-kDa protein) and p55 (a palmitoylated peripheral membrane phosphoprotein and a member of the membrane-associated guanylate kinase family) to form a ternary complex that is critical for the shape and stability of erythrocytes. The major attachment sites between the erythrocyte spectrin-actin cytoskeleton and the lipid bilayer are glycophorin C and band 3. The interaction with band 4.1 and p55 is mediated by the N terminal 30 kD domain of band 4.1 binding to a 16 amino acid segment (residues 82-98: residues 61-77 of glycophorin D) within the cytoplasmic domain of glycophorin C and to a positively charged 39 amino acid motif in p55. The majority of protein 4.1 is bound to glycophorin C. The magnitude of the strength of the interaction between glycophorin C and band 4.1 has been estimated to be 6.9 microNewtons per meter, a figure typical of protein\u2013protein interactions.\nGlycophorin C normally shows oscillatory movement in the erythrocyte membrane. This is reduced in Southeast Asian ovalocytosis a disease of erythrocytes due to a mutation in band 3.\n\nTransfusion medicine\nThese glycophorins are associated with eleven antigens of interest to transfusion medicine: the Gerbich (Ge2, Ge3, Ge4), the Yussef (Yus), the Webb (Wb or Ge5), the Duch (Dh(a) or Ge8), the Leach, the Lewis II (Ls(a) or Ge6), the Ahonen (An(a) or Ge7) and GEPL (Ge10*), GEAT (Ge11*) and GETI (Ge12*). Six are of high prevalence (Ge2, Ge3, Ge4, Ge10*, Ge11*, Ge12*) and five of low prevalence (Wb, Ls(a), An(a), Dh(a) and Ge9).",
+          "cos_sim_score": 0.6139681935310364,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Glycophorin A",
+          "title": "Glycophorin A",
+          "url": "https://en.wikipedia.org/wiki/Glycophorin_A",
+          "text": "Glycophorin A (MNS blood group), also known as GYPA, is a protein which in humans is encoded by the GYPA gene. GYPA has also recently been designated CD235a (cluster of differentiation 235a).\n\nFunction\nGlycophorins A (GYPA; this protein) and B (GYPB) are major sialoglycoproteins of the human erythrocyte membrane which bear the antigenic determinants for the MN and Ss blood groups. In addition to the M or N and S or s antigens, that commonly occur in all populations, about 40 related variant phenotypes have been identified. These variants include all the variants of the Miltenberger complex and several isoforms of Sta; also, Dantu, Sat, He, Mg, and deletion variants Ena, S-s-U- and Mk. Most of the variants are the result of gene recombinations between GYPA and GYPB.\n\nGenomics\nGypA, GypB and GypE are members of the same family and are located on the long arm of chromosome 4 (chromosome 4q31).  The family evolved via two separate gene duplication events. The initial duplication gave rise to two genes one of subsequently evolved into GypA and the other which give rise via a second duplication event to GypB and GypE. These events appear to have occurred within a relatively short time span. The second duplication appears to have occurred via an unequal crossing over event.\nThe GypA gene itself consists of 7 exons and has 97% sequence homology with GypB and GypE from the 5' untranslated transcription region (UTR) to the coding sequence encoding the first 45 amino acids. The exon at this point encodes the transmembrane domain. Within the intron downstream of this pint is an Alu repeat. The cross over event which created the genes ancestral to\nGypA and GypB/E occurred within this region.\nGypA can be found in all primates. GypB can be found only in gorillas and some of the higher primates suggesting that the duplication events occurred only recently.\n\nMolecular biology\nThere are about one million copies of this protein per erythrocyte.\n\nBlood groups\nThe MNS blood group was the second set of antigens discovered. M and N were identified in 1927 by Landsteiner and Levine. S and s in were described later in 1947.\nThe frequencies of these antigens are\n\nM: 78% Caucasoid; 74% African descent\nN: 72% Caucasoid; 75% African descent\nS: 55% Caucasoid; 31% African descent\ns: 89% Caucasoid; 93% African descent\n\nMolecular medicine\nTransfusion medicine\nThe M and N antigens differ at two amino acid residues: the M allele has serine at position 1 (C at nucleotide 2) and glycine at position 5 (G at nucleotide 14) while the N allele has leucine at position 1 (T at nucleotide 2) and glutamate at position 5 (A at nucleotide 14). Both glycophorin A and B bind the Vicia graminea anti-N lectin.\nThere are about 40 known variants in the MNS blood group system. These have arisen largely as a result of mutations within the 4 kb region coding for the extracellular domain. These include the antigens Mg, Dantu, Henshaw (He), Miltenberger, Nya, Osa, Orriss (Or), Raddon (FR) and Stones (Sta). Chimpanzees also have an MN blood antigen system. In chimpanzees M reacts strong but N only weakly.\n\nNull mutants\nIn individuals who lack both glycophorin A and B the phenotype has been designated Mk.\n\nDantu antigen\nThe Dantu antigen was described in 1984. The Dantu antigen has an apparent molecular weight of 29 kilodaltons (kDa) and 99 amino acids. The first 39 amino acids of the Dantu antigen are derived from glycophorin B and residues 40-99 are derived from glycophorin A. Dantu is associated with very weak s antigen, a protease-resistant N antigen and either very weak or no U antigen. There are at least three variants: MD, NE and Ph. The Dantu phenotype occurs with a frequency of Dantu phenotype is ~0.005 in American Blacks and < 0.001 in Germans.",
+          "cos_sim_score": 0.5884150862693787,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

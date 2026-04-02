@@ -1,0 +1,159 @@
+{
+  "rf_rank": 48,
+  "probe_id": "11716389_a_at",
+  "gene_symbol": "BAZ1B",
+  "score": 0.5,
+  "rf_n_nodes": 3,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.35,
+  "log_fc": 0.35,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11716389_a_at",
+  "max_score": 0.5,
+  "mean_abs_fold_change": 0.35,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T20:33:19",
+  "interpretation": "BAZ1B encodes an atypical tyrosine-protein kinase involved in chromatin remodeling and transcription regulation. It plays a critical role in the DNA damage response by phosphorylating histone H2AX, which is essential for DNA repair mechanisms. While there is no direct evidence linking BAZ1B to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in DNA repair processes may suggest a potential role in cellular responses to steroid-induced stress, which can lead to osteonecrosis. The evidence retrieved primarily supports its general biological functions rather than a specific connection to SONFH, leading to a lower confidence in its relevance as a biomarker. Therefore, while BAZ1B may have some biological plausibility in the context of SONFH, its clinical utility as an early-detection biomarker remains weak.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "BAZ1B may be involved in cellular responses to steroid-induced stress, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "BAZ1B (Q9UIG0). https://www.uniprot.org/uniprotkb/Q9UIG0",
+    "BAZ1B (Q9UIG0-2). https://www.uniprot.org/uniprotkb/Q9UIG0-2",
+    "BAZ1B \u2014 BAZ1B. https://platform.opentargets.org/target/ENSG00000009954",
+    "BAZ1B \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000009954/associations",
+    "BAZ1B \u2194 gout. https://platform.opentargets.org/target/ENSG00000009954/associations",
+    "BAZ1B \u2194 hyperuricemia. https://platform.opentargets.org/target/ENSG00000009954/associations",
+    "BAZ1B \u2194 hyperlipidemia. https://platform.opentargets.org/target/ENSG00000009954/associations",
+    "BAZ1B. https://en.wikipedia.org/wiki/BAZ1B",
+    "Self-domestication. https://en.wikipedia.org/wiki/Self-domestication",
+    "Williams syndrome. https://en.wikipedia.org/wiki/Williams_syndrome"
+  ],
+  "token_usage": {
+    "prompt_tokens": 6677,
+    "completion_tokens": 246,
+    "total_tokens": 6923,
+    "estimated_cost_usd": 0.001149
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9UIG0",
+          "title": "BAZ1B (Q9UIG0)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UIG0",
+          "text": "Protein: Tyrosine-protein kinase BAZ1B\nFunction: Atypical tyrosine-protein kinase that plays a central role in chromatin remodeling and acts as a transcription regulator (PubMed:19092802). Involved in DNA damage response by phosphorylating 'Tyr-142' of histone H2AX (H2AXY142ph) (PubMed:19092802, PubMed:19234442). H2AXY142ph plays a central role in DNA repair and acts as a mark that distinguishes between apoptotic and repair responses to genotoxic stress (PubMed:19092802, PubMed:19234442). Regulatory subunit of the ATP-dependent WICH-1 and WICH-5 ISWI chromatin remodeling complexes, which form ordered nucleosome arrays on chromatin and facilitate access to DNA during DNA-templated processes such as DNA replication, transcription, and repair (PubMed:11980720, PubMed:28801535). Both complexes regulate the spacing of nucleosomes along the chromatin and have the ability to slide mononucleosomes to the center of a DNA template (PubMed:28801535). The WICH-1 ISWI chromatin remodeling complex has a lower ATP hydrolysis rate than the WICH-5 ISWI chromatin remodeling complex (PubMed:28801535). The WICH-5 ISWI chromatin-remodeling complex regulates the transcription of various genes, has a role in RNA polymerase I transcription (By similarity). Within the B-WICH complex has a role in RNA polymerase III transcription (PubMed:16603771). Mediates the recruitment of the WICH-5 ISWI chromatin remodeling complex to replication foci during DNA replication (PubMed:15543136)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9UIG0-2",
+          "title": "BAZ1B (Q9UIG0-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UIG0-2",
+          "text": "Protein: Isoform 2 of Tyrosine-protein kinase BAZ1B",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000009954::function",
+          "title": "BAZ1B \u2014 BAZ1B",
+          "url": "https://platform.opentargets.org/target/ENSG00000009954",
+          "text": "Function: Atypical tyrosine-protein kinase that plays a central role in chromatin remodeling and acts as a transcription regulator (PubMed:19092802). Involved in DNA damage response by phosphorylating 'Tyr-142' of histone H2AX (H2AXY142ph) (PubMed:19092802, PubMed:19234442). H2AXY142ph plays a central role in DNA repair and acts as a mark that distinguishes between apoptotic and repair responses to genotoxic stress (PubMed:19092802, PubMed:19234442). Regulatory subunit of the ATP-dependent WICH-1 and WICH-5 ISWI chromatin remodeling complexes, which form ordered nucleosome arrays on chromatin and facilitate access to DNA during DNA-templated processes such as DNA replication, transcription, and repair (PubMed:11980720, PubMed:28801535). Both complexes regulate the spacing of nucleosomes along the chromatin and have the ability to slide mononucleosomes to the center of a DNA template (PubMed:28801535). The WICH-1 ISWI chromatin remodeling complex has a lower ATP hydrolysis rate than the WICH-5 ISWI chromatin remodeling complex (PubMed:28801535). The WICH-5 ISWI chromatin-remodeling complex regulates the transcription of various genes, has a role in RNA polymerase I transcription (By similarity). Within the B-WICH complex has a role in RNA polymerase III transcription (PubMed:16603771). Mediates the recruitment of the WICH-5 ISWI chromatin remodeling complex to replication foci during DNA replication (PubMed:15543136).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000009954::EFO_0005772",
+          "title": "BAZ1B \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000009954/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.453",
+          "cos_sim_score": 0.4534862263542063,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000009954::EFO_0004274",
+          "title": "BAZ1B \u2194 gout",
+          "url": "https://platform.opentargets.org/target/ENSG00000009954/associations",
+          "text": "Disease: gout\nDescription: metabolic disorder characterized by recurrent acute arthritis, hyperuricemia and deposition of sodium urate in and around the joints, sometimes with formation of uric acid calculi. Gout is partly genetic.\nAssociation score: 0.396",
+          "cos_sim_score": 0.3955706596863487,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000009954::EFO_0009104",
+          "title": "BAZ1B \u2194 hyperuricemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000009954/associations",
+          "text": "Disease: hyperuricemia\nDescription: An abnormally high level of uric acid.\nAssociation score: 0.335",
+          "cos_sim_score": 0.3348707899616446,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000009954::MONDO_0021187",
+          "title": "BAZ1B \u2194 hyperlipidemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000009954/associations",
+          "text": "Disease: hyperlipidemia\nAssociation score: 0.315",
+          "cos_sim_score": 0.3145280197677303,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::BAZ1B",
+          "title": "BAZ1B",
+          "url": "https://en.wikipedia.org/wiki/BAZ1B",
+          "text": "Tyrosine-protein kinase, or Bromodomain adjacent to zinc finger domain, 1B (BAZ1B) is an enzyme that in humans is encoded by the BAZ1B gene.\n\nFunction\nThis gene encodes a member of the bromodomain protein family. The bromodomain is a structural motif characteristic of proteins involved in chromatin-dependent regulation of transcription. This gene is deleted in Williams-Beuren syndrome, a developmental disorder caused by deletion of multiple genes at 7q11.23.\nBAZ1B has been found to affect the activity of 448 other genes and is very important in the development of the neural crest and the face. Research suggests that changes in BAZ1B may have been involved in \"self-domesticating\" humans.\n\nReferences\nFurther reading\nExternal links\nBAZ1B+protein,+human at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nHuman BAZ1B genome location and BAZ1B gene details page  in the UCSC Genome Browser.\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.4989895224571228,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Self-domestication",
+          "title": "Self-domestication",
+          "url": "https://en.wikipedia.org/wiki/Self-domestication",
+          "text": "In July 2019, a team from the Institute of Marine Sciences of Barcelona described, through the methylation of certain genes in DNA, the epigenetic and genetic changes through which neural crest cells were reduced. Subsequently, another research team from the University of Barcelona discovered that the BAZ1B gene controls the behavior of neural crest cells. Comparable with the Neanderthal genome, BAZ1B is also related to genes that have many mutations not present in the homologous genes of our past hominini. Cedric Boeckx, one of the researchers in this study, states:\"We believe this means that the genetic network of BAZ1B is an important reason why our face is different compared to other already extinct ancestors, like the Neanderthals [...]. In broad terms, it gives us, for the first time, experimental validation of the autodomestication hypothesis based on the neural crest.\"\n\nHominids\nClark & Henneberg argue that during the earliest stages of human evolution a more paedomorphic skull arose through self-domestication. This assertion is based upon a comparison of the skull of Ardipithecus and chimpanzees of various ages. It was found that Ardipithecus clustered with the infant and juvenile species. The consequent lack of a pubertal growth spurt in males of the species and the consequent growth of aggressive canine armoury was taken as evidence that Ardipithecus evolved its paedomorphic skull through self domestication. As the authors state, comparing the species with bonobos:\n\"Of course A. ramidus differs significantly from bonobos, bonobos having retained a functional canine honing complex. However, the fact that A. ramidus shares with bonobos reduced sexual dimorphism, and a more paedomorphic form relative to chimpanzees, suggests that the developmental and social adaptations evident in bonobos may be of assistance in future reconstructions of early hominin social and sexual psychology. In fact the trend towards increased maternal care, female mate selection and self-domestication may have been stronger and more refined in A. ramidus than what we see in bonobos.\"\nFurther research has confirmed that Ardipithecus possessed paedomorphic cranial base angulation, position of the foramen magnum as well as vocal tract dimensions. This was interpreted as not only evidence of a change in social behavior but also a potentially early emergence of hominid vocal capability. If this thesis is correct then not only human social behavior but also language ability originally evolved through paedomorphic skull morphogenesis via the process of self-domestication.\nThe most comprehensive case for human self-domestication has been proposed for the changes that account for the much later transition from robust humans such as Neanderthals or Denisovans to anatomically modern humans. Occurring between 40,000 and 25,000 years ago, this rapid neotenization has been explained as the result of cultural selection of mating partners on the basis of variables lacking evolutionary benefits, such as perceived attractiveness, facial symmetry, youth, specific body ratios, skin tone or hair, none of which play any role in any other animal species. This unintentional auto-domestication, coinciding with the introduction of imagery of female sexuality, occurred simultaneously in four continents then occupied by hominins. It led to rapid changes typical for domestication, such as in cranial morphology, skeletal architecture, reduction in brain volume, to playful and exploratory behavior, and the establishment of thousands of deleterious conditions, syndromes, disorders and illnesses presumed absent in robust humans.\nOf course, these specific views are very clearly based on multi-regionalist perspectives of human evolution which claim modern human populations evolved from relevant archaics present in each world region, as demonstrated in robust skeletal fossils. Such views are largely disproven by genetic evidence supporting the Out of Africa hypothesis with minor inter-breeding and genetic introgression. Despite this, however, human self-domestication entirely within Africa, say, during transition from earlier hominins, especially H. heidelbergensis to H. sapiens remains an open possibility. This would mean archaics in each region (e.g., neanderthals, denisovans) were largely replaced by self-domesticated H. sapiens as they spread around the globe. This possibility suggests self-domestication played a role in the success of modern humans, and the extinction of other lineages.\nThe idea of self-domestication was used by early Social Darwinism which, according to psychiatrist Martin Br\u00fcne in an article \"On human self-domestication\", developed from the idea that humans could \"perfect\" themselves biologically. The idea of self-domestication is also related to the concept of sociodicy.",
+          "cos_sim_score": 0.2949548661708832,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Williams syndrome",
+          "title": "Williams syndrome",
+          "url": "https://en.wikipedia.org/wiki/Williams_syndrome",
+          "text": "Williams syndrome (WS), also Williams\u2013Beuren syndrome (WBS), is a genetic disorder that affects many parts of the body. Facial features frequently include a broad forehead, underdeveloped chin, short nose, and full cheeks. Mild to moderate intellectual disability is observed, particularly challenges with visual spatial tasks such as drawing. Verbal skills are relatively unaffected. Many people have an outgoing personality, a happy disposition, an openness to engaging with other people, increased empathy and decreased aggression. Medical issues with teeth, heart problems (especially supravalvular aortic stenosis), and periods of high blood calcium are common.\nWilliams syndrome is caused by a genetic abnormality, specifically a deletion of about 27 genes from the long arm of one of the two chromosome 7s. Typically, this occurs as a random event during the formation of the egg or sperm from which a person develops. In a small number of cases, it is inherited from an affected parent in an autosomal dominant manner. The different characteristic features have been linked to the loss of specific genes. The diagnosis is typically suspected based on symptoms and confirmed by genetic testing.\nInterventions include special education programs and various types of therapy. Surgery may be performed to correct heart problems. Dietary changes or medications may be required for high blood calcium. The syndrome was first described in 1961 by New Zealander John C. P. Williams. Williams syndrome affects between one in 7,500 to 20,000 people at birth. Life expectancy is less than that of the general population, mostly due to the increased rates of heart disease.\n\nSigns and symptoms\nThe most common symptoms of Williams syndrome are heart defects and unusual facial features. Other symptoms include failure to gain weight appropriately in infancy and low muscle tone. People with WS tend to have widely spaced teeth, a long philtrum, and a flattened nasal bridge. Microcephaly is present in one-third of affected individuals.\nMost people with WS are highly verbal relative to their intelligence, and are often very sociable, having what has been described as a \"cocktail party\"-type personality. People with Williams syndrome hyperfocus on the eyes of others in social engagements.\n\nPhysical\nPeople with Williams syndrome experience many cardiac problems, commonly heart murmurs and the narrowing of major blood vessels, as well as supravalvular aortic stenosis. Other symptoms may include gastrointestinal problems, such as severe or prolonged colic, abdominal pain and diverticulitis, nocturnal enuresis (bed wetting) and urinary difficulties, dental irregularities and defective tooth enamel, and hormone problems, the most common being hypercalcemia. Hypothyroidism has been reported to occur in children, although no proof has been found of it occurring in adults; adults with WS have a higher risk of developing type 2 diabetes, with some cases apparent as young as 21 years old.\nPeople with WS often have hyperacusia and phonophobia, which resembles noise-induced hearing loss; however, this may be due to a malfunctioning auditory nerve.  People with WS also tend to demonstrate a love of music, and they appear significantly more likely to possess absolute pitch. Also, higher prevalences of left-handedness and left-eye dominance seem to occur.\nOphthalmologic issues are common among people with WS. Up to 75% of subjects in some studies have strabismus (ocular misalignment), particularly esotropia, due to inherent subnormal binocular visual function\nand cognitive deficits in visuospatial construction. People with WS have problems with visual processing, but this is related to difficulty in dealing with complex spatial relationships rather than depth perception per se.",
+          "cos_sim_score": 0.18746057152748108,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Williams syndrome",
+          "title": "Williams syndrome",
+          "url": "https://en.wikipedia.org/wiki/Williams_syndrome",
+          "text": "Cause\nWilliams syndrome is a microdeletion syndrome caused by the spontaneous deletion of genetic material from the chromosomal region 7q11.23. This is a heterozygous deletion, which results in haploinsufficient expression of the 25\u201327 genes in this region. CLIP2, ELN, GTF2I, GTF2IRD1, and LIMK1 are among the genes typically deleted. Haploinsufficiency for the ELN gene, which codes for the extracellular matrix protein elastin, is associated with connective-tissue abnormalities and cardiovascular disease (specifically supravalvular aortic stenosis and supravalvular pulmonary stenosis). Elastin insufficiency may also contribute to distinct faces, harsh or hoarse voice, hernias, and bladder diverticula often found in those with Williams syndrome. Haploinsufficiency in LIMK1, GTF2I, GTF2IRD1, and perhaps other genes may help explain the characteristic difficulties with visual\u2013spatial tasks. Additionally, some evidence shows that haploinsufficiency in several of these genes, including CLIP2, may contribute to the unique behavioral characteristics, learning disabilities, and other cognitive difficulties seen in WS.\n\nDiagnosis\nAccording to the Williams Syndrome Association, its diagnosis begins with the recognition of physical symptoms and markers, which is followed by a confirmatory genetic test. The physical signs that often indicate a suspected case of WS include puffiness around the eyes, a long philtrum, and a stellate pattern in the iris. Physiological symptoms that often contribute to a WS diagnosis are cardiovascular problems, particularly aortic or pulmonary stenosis, and feeding disturbance in infants. Developmental delays are often taken as an initial sign of the syndrome, as well.\nIf a physician suspects a case of WS, the diagnosis is confirmed using one of two possible genetic tests: Micro-array analysis or the fluorescent in situ hybridization test, which examines chromosome 7 and probes for the existence of two copies of the elastin gene. Since 98-99% of individuals with WS lack half of the 7q11.23 region of chromosome 7, where the elastin gene is located, the presence of only one copy of the gene is a strong sign of WS.  This confirmatory genetic test has been validated in epidemiological studies  and has been demonstrated to be a more effective method of identifying WS than previous methods, which often relied on the presence of cardiovascular problems and facial features (which, while common, are not always present).\nReliance on facial features to identify WS may cause a misdiagnosis of the condition. Among the more reliable features suggestive of WS are congenital heart disease, periorbital fullness (\"puffy\" eyes), and the presence of a long, smooth philtrum. Less reliable signs of the syndrome include anteverted nostrils, a wide mouth, and an elongated neck. Even with significant clinical experience,  reliably identifying Williams syndrome based on facial features alone is difficult. This is particularly the case in individuals of non-white backgrounds, where typical WS facial features (such as full lips) are more prevalent.",
+          "cos_sim_score": 0.14503809809684753,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Williams syndrome",
+          "title": "Williams syndrome",
+          "url": "https://en.wikipedia.org/wiki/Williams_syndrome",
+          "text": "Nervous system\nBecause of missing multiple genes, many effects on the brain are seen, including abnormalities in the cerebellum, right parietal lobe, and left frontal cortical regions. This pattern is consistent with the visual-spatial disabilities and problems with behavioral timing often seen in WS.\nFrontal-cerebellar pathways, involved in behavioral timing, are often abnormally developed in people with WS, which may be related to their deficits in coordination and execution of fine motor tasks such as drawing and writing. In addition, people with WS often exhibit gross motor difficulties, including trouble walking downstairs,  overactive motor reflexes (hyperreflexia), and hyperactive, involuntary movement of the eyes (nystagmus).\nWilliams syndrome is also noteworthy for exhibiting abnormalities in the parietal-dorsal areas of the neocortex, but not the ventral areas. The parietal-dorsal area handles visual processing that supports visual-spatial analysis of the environment, while the ventral is related to semantic recognition of visual stimuli, and the recognition of faces. Thus, people with WS are often able to visually identify and recognize whole objects, and refer to them by name, but struggle with visuospatial construction (seeing an object as being composed of many smaller parts, and recreating it) and orienting themselves in space.\nPeople with WS are often affable and hyperverbal, demonstrating the decreased inhibition ability that stems from dorsal-frontal deficits. Some studies suggest that the amygdala of a person with Williams syndrome has greater volume than the average person's (though it is smaller than average in childhood).\nIn general, neuroimaging studies demonstrate that people with WS have diminished amygdala reactivity in response to socially frightening stimuli (such as disapproving faces), but demonstrate hyperreactivity in the amygdala when presented with nonsocial fear stimuli (such as frightening animals). This may partially account for the apparent absence of social inhibition observed in people with the syndrome, as well as the prevalence of anxious symptoms (but see fear for details on the relationship between the amygdala and fear response). Also, some evidence indicates that people with WS exhibit  amygdalal hyperactivity when viewing happy facial expressions. They are talkative and eager to please.\nIncreased volume and activation of the left auditory cortex has been observed in people with WS, which has been interpreted as a neural correlation of patients' rhythm propensity and fondness of music. Similar sizes of the auditory cortex have been previously reported only in professional musicians.\n\nDevelopment\nThe earliest observable symptoms of Williams syndrome include low birth weight, failure to thrive, breastfeeding difficulties, nocturnal irritability, and gastroesophageal reflux. Facial dysmorphies thought to be characteristic of the syndrome are also present early in development, as are heart murmurs. Research on the development of the syndrome suggests that congenital heart disease is typically present at an early age, often at the infant's first pediatric appointment. Heart problems in infancy often lead to the initial diagnosis of WS.\nDevelopmental delays are present in most cases of WS, and include delay of language abilities and delayed motor-skill development. People with WS develop language abilities quite late relative to other children, with the child's first word often occurring as late as 3 years of age. Language abilities are often observed to be deficient until adolescence, in terms of semantics, morphology, and phonology, though not in vocabulary.\nWilliams syndrome is also marked by a delay in the development of motor skills. Infants with WS develop the ability to lift their heads and sit without support months later than typically developing children. These delays continue into childhood, where patients with WS are delayed in learning to walk. In young children, the observed motor delay is around 5\u20136 months, though some research suggests that children with WS have a delay in development that becomes more extreme with age. Children with motor delays as a result of WS are particularly behind in the development of coordination, fine motor skills such as writing and drawing, response time, and strength and dexterity of the arms. Impaired motor ability persists (and possibly worsens) as children with WS reach adolescence.\nAdults and adolescents with Williams syndrome typically achieve a below-average height and weight, compared with unaffected populations. As people with WS age, they frequently develop joint limitations and hypertonia, or abnormally increased muscle tone. Hypertension, gastrointestinal problems, and genitourinary symptoms often persist into adulthood, as well as cardiovascular problems. Adults are typically limited in their ability to live independently or work in competitive employment settings, but this developmental impairment is attributed more to psychological symptoms than physiological problems.",
+          "cos_sim_score": 0.12433858215808868,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

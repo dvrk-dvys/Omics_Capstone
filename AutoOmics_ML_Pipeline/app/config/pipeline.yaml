@@ -1,0 +1,172 @@
+project:
+  name: AutoOmics_ML_Pipeline
+  description: "Python ML pipeline for SONFH biomarker discovery — parallel to manual Weka capstone"
+  dataset: GSE123568
+  disease: "Steroid-Induced Osteonecrosis of the Femoral Head (SONFH)"
+  disease_label: "SONFH"       # class label used in parsed data (disease group)
+  control_label: "control"     # class label used in parsed data (control group)
+  n_samples: 40                # total samples in dataset
+  n_disease: 30                # disease group sample count
+  n_control: 10                # control group sample count
+  platform: "Affymetrix PrimeView GPL15207"   # microarray platform ID
+
+# ---------------------------------------------------------------------------
+# PATHS — all resolved relative to app/data/
+# ---------------------------------------------------------------------------
+paths:
+  # ---------------------------------------------------------------------------
+  # INPUT — raw GEO downloads; drop any dataset's files here to swap datasets
+  # ---------------------------------------------------------------------------
+  series_matrix: app/data/input/GSE123568_series_matrix.txt.gz
+  soft_file:     app/data/input/GSE123568_family.soft.gz
+  abstract_file: app/data/input/GSE123568_abstract.txt
+
+  # ---------------------------------------------------------------------------
+  # OUTPUT — all generated files; safe to delete and regenerate
+  # ---------------------------------------------------------------------------
+  parsed_csv:       app/data/output/parsed/parsed_matrix.csv
+  preprocessed_csv: app/data/output/parsed/preprocessed_matrix.csv
+
+  feature_select_dir:  app/data/output/feature_selection
+  gene_rankings:       app/data/output/feature_selection/gene_rankings.csv
+
+  model_output_dir:  app/data/output/models
+  model_comparison:  app/data/output/models/model_comparison.csv
+
+  plots_dir: app/data/output/plots
+
+  biomarker_shortlist: app/data/output/biomarker_shortlist.csv
+
+  # LLM interpretation outputs — one JSON per gene
+  # ── Run sequence ────────────────────────────────────────────────────────────
+  # Run 1 (ACTIVE): univariate top100
+  #llm_outputs_dir: app/data/output_new_univariate_top100/llm_outputs
+  # Run 2: univariate rerank top100
+  #biomarker_shortlist: app/data/output_univariate_rerank_top100/biomarker_shortlist.csv
+  #llm_outputs_dir: app/data/output_univariate_rerank_top100/llm_outputs
+  # Run 3: multivariate top100
+  #biomarker_shortlist: app/data/output_new_multivariate_top100/biomarker_shortlist.csv
+  llm_outputs_dir: app/data/output_new_multivariate_top100/llm_outputs
+  # Run 4: multivariate top500
+  #biomarker_shortlist: app/data/output_new_multivariate_top500/biomarker_shortlist.csv
+  #llm_outputs_dir: app/data/output_new_multivariate_top500/llm_outputs
+  # Run 5: femoral_head_necrosis (absolute paths, legacy location)
+  #biomarker_shortlist: app/data/output_new_univariate_top100/biomarker_shortlist.csv
+  #llm_outputs_dir: /Users/jordanharris/Code/Omics_Capstone/data/femoral_head_necrosis/llm_outputs
+  # ────────────────────────────────────────────────────────────────────────────
+  # Previous runs (archived)
+  #llm_outputs_dir: app/data/jia2023_paper_gene_candidates/llm_outputs
+  #llm_outputs_dir: app/data/output/llm_outputs  # DEFAULT
+
+  # Univariate ANN outputs (professor-faithful single-probe workflow)
+  univariate_ann_dir:             app/data/output/feature_selection/univariate_ann
+  univariate_ann_ranking: app/data/output/feature_selection/univariate_ann/ann_probe_ranking.csv
+
+# ---------------------------------------------------------------------------
+# BIOMARKER
+# ---------------------------------------------------------------------------
+
+
+
+biomarker:
+  min_score: 0.0 #.30 for 500 .50 for 100
+    # minimum combined_score threshold for shortlist inclusion (RF importance + fold-change, normalized avg)
+    # NOTE: lowered from 0.60 → 0.30 after top_n_feats increased to 500.
+    # RF importance dilutes across more features so raw scores are smaller.
+
+    # For multivariate
+    # top100: 0.50
+    # top500: 0.30 to 0.40
+
+    # For univariate
+    # top100: 0.50 to 0.60
+    # top500: 0.40 to 0.50, probably start at 0.45
+
+  top_n: 50           # max candidates for shortlist preview log (biomarker_job) and LLM batch (llm_job)
+  scatter_label_n: 10 # gene labels on fig 4 scatter (0 = no labels)
+
+# ---------------------------------------------------------------------------
+# PREPROCESSING
+# ---------------------------------------------------------------------------
+preprocessing:
+  iqr_threshold: 0.2
+
+# ---------------------------------------------------------------------------
+# FEATURE SELECTION
+# ---------------------------------------------------------------------------
+feature_selection:
+  top_n_feats: 100 # 100 or 500
+  method: fc       # kept for config compat; ranking now uses hybrid score regardless
+
+# ---------------------------------------------------------------------------
+# TRAINING
+# ---------------------------------------------------------------------------
+training:
+  cv_splits: 5
+  cv_repeats: 10
+  random_state: 42
+
+# ---------------------------------------------------------------------------
+# HYPEROPT
+# ---------------------------------------------------------------------------
+hyperopt:
+  max_evals: 50
+  models:
+    - xgboost
+    - random_forest
+
+# ---------------------------------------------------------------------------
+# MLFLOW
+# ---------------------------------------------------------------------------
+mlflow:
+  tracking_uri: http://localhost:5002   # requires: docker compose up -d (from AutoOmics_ML_Pipeline/)
+  experiment_name: sonfh_classification
+
+# ---------------------------------------------------------------------------
+# LLM  (Phase 6 — enable with: python -m app.main --llm)
+# ---------------------------------------------------------------------------
+llm:
+  model: gpt-4o-mini                     # OpenAI model ID (overrides OPENAI_DEFAULT_MODEL env var)
+  max_workers: 1                        # parallel genes (safe with gpt-4o-mini 4M TPM limit)
+  # Pricing per 1M tokens — update if OpenAI changes rates
+  # gpt-4o-mini:  input $0.15 / output $0.60
+  # gpt-4o:       input $2.50 / output $10.00
+  input_cost_per_1m:  0.15
+  output_cost_per_1m: 0.60
+  pubmed_query_template: "{gene} osteonecrosis OR bone ischemia OR avascular necrosis"
+  max_abstracts_per_gene: 3              # PubMed abstracts to retrieve per gene
+  output_path: app/data/output/llm_interpretation.csv   # legacy CSV summary (Phase 7 report)
+  # --- Timeouts & rate-limiting (all values in seconds) ---
+  openai_request_timeout: 300   # per-request; completions can legitimately take 3-4 min
+  tool_call_sleep: 0.5          # pause between consecutive tool calls (rate-limit buffer)
+  entrez_timeout: 45            # Biopython Entrez HTTP timeout (default = infinite)
+  entrez_sleep: 0.4             # pause after each Entrez call (NCBI limit ≤ 3 req/s)
+  wikipedia_timeout: 30         # Wikipedia HTTP call timeout
+  gene_timeout: 900             # max seconds per gene (15 min; 5 iters × worst-case tools)
+  batch_timeout: 7200           # max seconds for the full LLM batch job (2 hr for debug)
+  debug_set_torch_threads_1: false   # diagnostic: force torch num_threads=1 before executor (set true to test thread-context stall)
+
+# ---------------------------------------------------------------------------
+# UNIVARIATE WRAPPER  (single-probe wrapper; model selectable via model_type)
+# App pipeline:  python -m app.main          → uses model_type below
+# Standalone:    python -m app.utils.univariate_ann  → defaults to --model-type all
+# ---------------------------------------------------------------------------
+univariate_ann:
+  model_type:        logistic   # DEFAULT for app pipeline: logistic | professor_ann | svm_rbf
+  use_filter:        true       # pre-screen probes by univariate AUC before wrapper
+  filter_top_n:      2000       # keep top N probes from filter step
+  n_mccv:            5          # Monte Carlo CV iterations per probe
+  train_frac:        0.70       # stratified train fraction per split
+  seed:              123        # global RNG seed (reproducibility)
+
+  # ANN hyperparameters — unused when model_type != professor_ann; kept for future experiments
+  epochs:            60
+  batch_size:        16
+  patience:          8
+  learning_rate:     0.001
+  val_frac:          0.20
+
+  # Shared split guards
+  min_train_samples: 10
+  min_test_samples:  5
+  max_na_fraction:   0.20

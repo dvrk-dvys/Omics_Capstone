@@ -1,0 +1,142 @@
+{
+  "probe_id": "11716765_s_at",
+  "gene_symbol": "IQGAP1",
+  "score": 1.0,
+  "SD_TestAUC": 0.0331269329999969,
+  "abs_fold_change": 0.9519,
+  "probe_count": 1,
+  "probe_ids": "11716765_s_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.9519,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:46:50",
+  "interpretation": "IQGAP1 is a scaffold protein that regulates the dynamics of the actin cytoskeleton, cell adhesion, and the cell cycle. It interacts with various signaling molecules, including Rho GTPases, which are crucial for cellular processes such as migration and proliferation. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the disruption of these cellular processes can lead to bone cell death and impaired bone repair mechanisms. While the retrieved evidence does not directly link IQGAP1 to SONFH, its role in cytoskeletal dynamics and cellular adhesion suggests it could be involved in the pathological processes underlying SONFH. Therefore, IQGAP1 may serve as a potential biomarker for early detection of SONFH, although the evidence is primarily inferred rather than directly established.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "IQGAP1's role in actin dynamics and cell adhesion may contribute to the mechanisms of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "IQGAP1 (P46940). https://www.uniprot.org/uniprotkb/P46940",
+    "IQGAP1 \u2014 IQGAP1. https://platform.opentargets.org/target/ENSG00000140575",
+    "IQGAP1 \u2194 cancer. https://platform.opentargets.org/target/ENSG00000140575/associations",
+    "IQGAP1 \u2194 Noonan syndrome. https://platform.opentargets.org/target/ENSG00000140575/associations",
+    "IQGAP1 \u2194 hypertrophic cardiomyopathy. https://platform.opentargets.org/target/ENSG00000140575/associations",
+    "IQGAP1 \u2194 Costello syndrome. https://platform.opentargets.org/target/ENSG00000140575/associations",
+    "IQGAP1. https://en.wikipedia.org/wiki/IQGAP1",
+    "MDia1. https://en.wikipedia.org/wiki/MDia1"
+  ],
+  "token_usage": {
+    "prompt_tokens": 6526,
+    "completion_tokens": 237,
+    "total_tokens": 6763,
+    "estimated_cost_usd": 0.001121
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P46940",
+          "title": "IQGAP1 (P46940)",
+          "url": "https://www.uniprot.org/uniprotkb/P46940",
+          "text": "Protein: Ras GTPase-activating-like protein IQGAP1\nFunction: Plays a crucial role in regulating the dynamics and assembly of the actin cytoskeleton. Recruited to the cell cortex by interaction with ILK which allows it to cooperate with its effector DIAPH1 to locally stabilize microtubules and allow stable insertion of caveolae into the plasma membrane (By similarity). Binds to activated CDC42 but does not stimulate its GTPase activity. Associates with calmodulin. May promote neurite outgrowth (PubMed:15695813). May play a possible role in cell cycle regulation by contributing to cell cycle progression after DNA replication arrest (PubMed:20883816)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000140575::function",
+          "title": "IQGAP1 \u2014 IQGAP1",
+          "url": "https://platform.opentargets.org/target/ENSG00000140575",
+          "text": "Function: Plays a crucial role in regulating the dynamics and assembly of the actin cytoskeleton. Recruited to the cell cortex by interaction with ILK which allows it to cooperate with its effector DIAPH1 to locally stabilize microtubules and allow stable insertion of caveolae into the plasma membrane (By similarity). Binds to activated CDC42 but does not stimulate its GTPase activity. Associates with calmodulin. May promote neurite outgrowth (PubMed:15695813). May play a possible role in cell cycle regulation by contributing to cell cycle progression after DNA replication arrest (PubMed:20883816).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000140575::MONDO_0004992",
+          "title": "IQGAP1 \u2194 cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000140575/associations",
+          "text": "Disease: cancer\nDescription: A tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues. Malignant neoplasms often metastasize to distant anatomic sites and may recur after excision. The most common malignant neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), Hodgkin and non-Hodgkin lymphomas, leukemias, melanomas, and sarcomas.\nAssociation score: 0.609",
+          "cos_sim_score": 0.6085472569405791,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000140575::MONDO_0018997",
+          "title": "IQGAP1 \u2194 Noonan syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000140575/associations",
+          "text": "Disease: Noonan syndrome\nDescription: Noonan Syndrome (NS) is characterized by short stature, typical facial dysmorphism and congenital heart defects.\nAssociation score: 0.526",
+          "cos_sim_score": 0.5261379875719714,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000140575::EFO_0000538",
+          "title": "IQGAP1 \u2194 hypertrophic cardiomyopathy",
+          "url": "https://platform.opentargets.org/target/ENSG00000140575/associations",
+          "text": "Disease: hypertrophic cardiomyopathy\nDescription: A form of CARDIAC MUSCLE disease, characterized by left and/or right ventricular hypertrophy (HYPERTROPHY, LEFT VENTRICULAR; HYPERTROPHY, RIGHT VENTRICULAR), frequent asymmetrical involvement of the HEART SEPTUM, and normal or reduced left ventricular volume. Risk factors include HYPERTENSION; AORTIC STENOSIS; and gene MUTATION; (FAMILIAL HYPERTROPHIC CARDIOMYOPATHY).\nAssociation score: 0.515",
+          "cos_sim_score": 0.5154201717861149,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000140575::MONDO_0009026",
+          "title": "IQGAP1 \u2194 Costello syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000140575/associations",
+          "text": "Disease: Costello syndrome\nDescription: Costello syndrome (CS) is a rare multisystemic disorder characterized by failure to thrive, short stature, developmental delay or intellectual disability, joint laxity, soft skin, and distinctive facial features. Cardiac and neurological involvement is common and there is an increased lifetime risk of certain tumors.\nAssociation score: 0.503",
+          "cos_sim_score": 0.5030392466541774,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::IQGAP1",
+          "title": "IQGAP1",
+          "url": "https://en.wikipedia.org/wiki/IQGAP1",
+          "text": "Related Proteins\nHomologues of IQGAP1 are known in species as divergent as yeast, worms, and humans (as well as other mammals), though the domains are not always highly conserved.\nIQGAP1 is the most well studied member of the IQGAP family of scaffold proteins. The two other members of the family include IQGAP2 and IQGAP3 which have far more restricted expression patterns in comparison with IQGAP1. IQGAP2 is found in the liver, stomach, and platelets and is 62% identical to IQGAP1,  but appears to have a drastically divergent function in terms of pathology.\nIn the brain, IQGAP3 appears to play an important role in neuronal morphogenesis.\n\nFunction\nThis gene encodes a member of the IQGAP family. The protein contains four IQ domains, one calponin homology domain, one Ras-GAP domain and one WW domain. It interacts with components of the cytoskeleton such as the formin Dia1 (mDia1), with cell adhesion molecules (CAMs), and with several signaling molecules to regulate cell morphology and motility. For example, IQGAP1 expression is necessary for neuronal process outgrowth on the cell adhesion molecule PTPmu (PTPRM).  Expression of the protein is upregulated by gene amplification in two gastric cancer cell lines and its over-expression and distinct membrane localisation is also observed in a range of tumours.\n\nInteractions\nIQGAP1 is a node intersected by many signaling pathways. As such it has many binding partners, many of which have essential roles in control of the cell cycle and actin cytoskeleton.\nIQGAP1 has been shown to interact with:\n\nFunction as a Scaffold\nProtein binding does not by itself construct an interesting story. Far more important is the outcome of the binding event. Does binding change the target protein\u2019s localization? Does it activate the target, or in some way change the target (or effector molecule\u2019s) conformation? As a scaffolding protein, IQGAP1 binds and regulates many targets\u2014its role is to integrate and mediate signaling from diverse pathways and insulate key pathway members from crosstalk.\n\nScaffolds organize signaling pathways\u2014help regulate how various extracellular signals can be transduced by the same canonical pathway members into various cellular outputs. Generally, scaffolds regulate output, localization, and selectivity of pathways.\nAs a scaffold involved in different signaling pathways (actin cytoskeleton, cellular adhesion, cell cycle, transcription), IQGAP1 has a unique ability to potentially couple diverse cellular functions. For example IQGAP1 is associated with actin dynamics through direct binding of actin and indirect regulation via Cdc42/Rac1, but also modulates the MAPK pathway which is associated with cell cycle control. Thus IQGAP1 may couple MAPK signaling (decisions about cell fate) to the cytoskeleton or cellular adhesion (potentially acting out those decisions)\u2014an important implication for cancer.\nTo simplify, due to its diverse range of binding partners, IQGAP1 may act as a link between logically related but molecularly distinct cellular functions. In the above example, actin cytoskeleton rearrangement is required for proliferation (cytokinesis during mitosis). IQGAP1 helps cells both listen to and act on signals, playing an integral role in connecting the dots between signals for proliferation and the actual cellular response.\n\nKey pathways\nERK MAPK\nThe Ras\u2192Raf\u2192MEK\u2192ERK MAPK signaling pathway plays an integral part in the processes of cell proliferation, differentiation, and apoptosis. This pathway is conserved across all eukaryotes.\nVarious extracellular signals induce the ERK MAPK pathway including EGF, IGF-1, PDGF, and NGF. The various scaffolds of this pathway, including IQGAP1, are responsible for modulating the cellular response to the activity of this pathway. For instance, in a given cell line, activation by one extracellular signal may induce differentiation but not proliferation, while activation of the same ERK MAPK pathway by a different extracellular signal will induce proliferation but not differentiation.   IQGAP1 seems to be responsible for the specific output of the pathway upon activation by EGF.\nIQGAP1 plays a significant role in the propagation of this MAPK signaling pathway. IQGAP directly binds b-RAF,  MEK1/2 and ERK1/2, and is in fact necessary for the phosphorylation (activation) of ERK upon stimulation by EGF.",
+          "cos_sim_score": 0.5132030248641968,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::IQGAP1",
+          "title": "IQGAP1",
+          "url": "https://en.wikipedia.org/wiki/IQGAP1",
+          "text": "Transcription\nIQGAP1 also affects transcription through the Wnt signaling pathway by its interaction with beta-catenin.  Beta-catenin is usually sequestered in a complex and excluded from the nucleus, but upon WNT activation this complex is broken and beta-catenin translocates to the nucleus where it activates transcriptional programs. IQGAP1 binds b-catenin and increases nuclear localization and expression of beta-catenin\u2019s transcriptional targets.\n\nClinical significance\nIQGAP1 is associated with cytoskeletal dynamics, transcription, cell adhesion, cell cycle, and morphology, all of which are disrupted in cancer. As a modulatory protein intersecting all of these pathways, IQGAP1 can couple many of them, and is also responsible for their proper propagation. Since cancer is a disease characterized by the perturbation of many of these cellular processes, IQGAP1 is a logical oncogene candidate and therapeutic target.\nExpression analysis has implicated IQGAP1 in colorectal, squamous cell, breast, gastric, liver, lung, and ovarian cancers, and in some of these cancers, higher IQGAP1 expression levels indicate a poor prognosis.\nIn order for a cancer to metastasize, cells must gain migratory abilities and invade other tissues. Through Rac1/CDC42, IQGAP1 regulates cellular adhesion and actin dynamics.\nIn normal cells IQGAP1 localizes to areas of high actin turnover. This characteristic is echoed in invasive tissues, where IQGAP1 localizes to the leading edge of migrating cells. Over-expression of IQGAP1 was associated with increased migration and invasion in a human breast epithelial cancer cell line (MCF-7 cells).  IQGAP1 may also be involved in the deregulation of proliferation and differentiation through its modulation of the ERK MAPK pathway.\nIQGAP1 may be necessary for tumorigenesis. IQGAP1 knockdown in MCF-7 cancer cells reduced the malignant phenotype (serum-dependent proliferation and anchorage independent growth). 100% of mice injected with MCF-7 cells overexpressing IQGAP1 developed tumors and these tumors were highly invasive. Control MCF-7 cells formed tumors in 60% of the mice, and MCF-7 cells with stable knockdown of IQGAP1 only formed tumors 20% of the time. The mechanism for how IQGAP1 may modulate tumorigenesis/invasion through its various binding partners is of great interest.\nIQGAP1 null mice appear significantly normal, with the only life history abnormality being an increase in gastric hyperplasia. Thus, IQGAP1 may be an effective therapeutic target, if its knockdown has little effect in homeostatic tissue but its expression is important in cancer.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.43297943472862244,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::IQGAP1",
+          "title": "IQGAP1",
+          "url": "https://en.wikipedia.org/wiki/IQGAP1",
+          "text": "Ras GTPase-activating-like protein IQGAP1 (IQGAP1) also known as p195 is a ubiquitously expressed protein that in humans is encoded by the IQGAP1 gene. IQGAP1 is a scaffold protein involved in regulating various cellular processes ranging from organization of the actin cytoskeleton, transcription, and cellular adhesion to regulating the cell cycle.\n\nHistory\nIQGAP1 was discovered in 1994.\nIts name stems from the fact that its RasGAP-related domain (GRD) has sequence homology to the Sar1 GTPase.  It was hypothesized that IQGAP1 would act as a GTPase activating protein (GAP) protein, promoting the switch of ras GTPases from the active GTP to GDP-bound forms. However, despite the homology of IQGAP\u2019s GAP domain to sar1 and the fact that IQGAP1 binds Rho GTPases Rac1 and Cdc42, IQGAP does not actually have GAP function. Instead, it binds the active (GTP-bound) forms of RAC1 and CDC42 with higher affinity than GDP-bound forms, and stabilizes the active form in vivo.\nIQGAP1 is now recognized as a protein scaffold that integrates signals regulating cell adhesion, actin cytoskeleton, the cell cycle,  and other cellular functions. IQGAP is particularly interesting as a therapeutic target since it acts as a node for so many signaling pathways implicated in cancer progression.\n\nExpression\nAnalysis of IQGAP1 expression in human tissues has indicated that the scaffold is more or less ubiquitously expressed. It is usually found in the nucleus, plasma membrane, and cytoplasm. In other words it is found throughout the cell as well as throughout tissue types. Expression analysis has also indicated that IQGAP1 is overexpressed in many cancers, and in more aggressive colorectal and ovarian cancers, IQGAP1 is localized at the invasive front of the neoplasm, indicating a role in mobilization of the cells.   Importantly, approximately 10% of genes that show increased expression in metastatic cells are IQGAP1 binding partners.\n\nDomains\nIQGAP1 is a 190 kDa protein with 5 domains.  A protein domain is a subsection of a protein that shows up multiple times in biology and can exist independently of the surrounding protein. It is very similar to subsections of other proteins, and could be cut out of the current protein, exist and function by itself, or be pasted in to a new protein strand and still function properly. Since this area of the protein is conserved in amino acid sequence and structure, it can be characterized by function or binding partner.  IQGAP1 has 5 well-known domains separated by other amino acids.\n\nStarting at the N-terminus (or front of the protein), IQGAP1 contains a calponin homology domain (CHD), which mediates actin-binding and binds calponin.\nThe WW, or poly-proline protein-protein domain, so named because of two functionally conserved tryptophans, W, is a protein-protein interaction domain that associates with proline-rich regions of other proteins.\nThe WW domain is followed by 4 IQ motifs which form an IQ domain. This domain binds calmodulin, a protein known as a calcium sensor that can bind and regulate many target proteins.\nA GRD (rasGAP-related domain) follows the IQ domain. This domain is highly similar to the functional subunit of Ras GTPase-activating proteins (GAPs) and was thus thought to have GAP function. IQGAP1 does bind Rho GTPases CDC42 and RAC1, however, IQGAP1 is unusual in that it actually has no GAP function, and instead stabilizes the GTP-bound proteins in their active state.\nFinally, IQGAP1 has a RasGAP_c carboxy terminal sequence important for binding Beta-catenin and E-cadherin.",
+          "cos_sim_score": 0.4247506260871887,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::IQGAP1",
+          "title": "IQGAP1",
+          "url": "https://en.wikipedia.org/wiki/IQGAP1",
+          "text": "Cytoskeletal control (actin dynamics)\nActin is a major building block of every eukaryotic cell\u2019s cytoskeleton. Actin dynamics play a major role in cell motility (filaments are built at the leading edge of a moving cell and deconstructed at the receding edge). IQGAP1 binds actin and influences actin dynamics by localizing to the leading edge and recruiting actin polymerization machinery.\nIQGAP1 binds and is a target of the Rho GTPases CDC42 and RAC1 which are well known regulators of the actin cytoskeleton. Despite its name, IQGAP1 does not have GAP function, and instead stabilizes active Cdc42. This increase in a local pool of active Cdc42 stimulates actin filament formation and thus filopodia formation.\nIQGAP1 can crosslink actin, and in many organisms, IQGAP1 is involved in cytokinesis.\n\nAdhesion\nCadherins are a family of adhesion proteins that localize to the cell surface where they anchor a cell to its neighbors by clasping on to the extracellular portion of the neighbor\u2019s cadherins. Actin binds a-catenin which binds beta-catenin which in turn binds E-cadherin. E-cadherin juts into the extracellular space to grasp the extracellular domains of neighboring E-cadherins. IQGAP1 localizes to cell-cell contacts and binds actin, b-catenin, and E-cadherin, weakening these junctions and thus decreasing cell-cell adhesion. IQGAP weakens cell adhesion by displacing a-catenin from the complex.\nActive RAC1 binds IQGAP1 to crosslink actin filaments and prevents IQGAP1 from interacting with beta-catenin, stabilizing cell-cell contacts. When IQGAP1 does not bind Rac1, however, it binds beta-catenin, displacing a-catenin from the cadherin-catenin cellular adhesion complex.\n\nTranscription\nIQGAP1 also affects transcription through the Wnt signaling pathway by its interaction with beta-catenin.  Beta-catenin is usually sequestered in a complex and excluded from the nucleus, but upon WNT activation this complex is broken and beta-catenin translocates to the nucleus where it activates transcriptional programs. IQGAP1 binds b-catenin and increases nuclear localization and expression of beta-catenin\u2019s transcriptional targets.",
+          "cos_sim_score": 0.2664218842983246,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::MDia1",
+          "title": "MDia1",
+          "url": "https://en.wikipedia.org/wiki/MDia1",
+          "text": "mDia1 (also known as Dia1, Drf1 for Diaphanous-related formin-1, Diaph1, KIAA4062, p140mDia, mKIAA4062, or D18Wsu154e) is a member of the protein family called the formins and is a Rho effector. It is the mouse version of the diaphanous homolog 1 of Drosophila. mDia1 localizes to cells' mitotic spindle and midbody, plays a role in stress fiber and filopodia formation, phagocytosis, activation of serum response factor, formation of adherens junctions,  and it can act as a transcription factor. mDia1 accelerates actin nucleation and elongation by interacting with barbed ends (fast-growing ends) of actin filaments. The gene encoding mDia1 is located on Chromosome 18 of Mus musculus and named Diap1.\nmDia1 is highly homologous to Drosophila diaphanous, regulating the cytokinetic ring during cytokinesis. Homologues in other species are known as well, like the human DIAP1, budding yeast Bni1 or fission yeast Cdc12p.\nThe gene has been knocked-out in mice.\n\nStructure\nThe product of the Diap1 (Diaph1) gene consists of 1255 amino acids resulting in a molecular weight of 139,343 daltons. \nThe mDia1 polypeptide chain can be divided into four protein domains:\n\nGBD/FH3 (Rho GTPase-binding domain/formin homology 3)domain (366 amino acids long): positions 75-440\nFH1 (formin homology 1) domain (162 amino acids long): positions 586-747\nFH2 (formin homology 2) domain (403 amino acids long): positions 752-1154\nDAD (diaphanous autoregulatory domain) (29 amino acids long): positions 1177-1205\nThree supplementary domains were discovered:\n\ncoiled coil (103 amino acids long): positions 460-562\ncoiled coil (153 amino acids long): positions 1027-1179\nArg/Lys-rich domain (4 amino acids long): positions: 1196-1199\nThe active region of the C terminus consists of formin homology 1 and 2 (FH1 and FH2) and the Dia autoregulatory domain (DAD). The FH1 domain is predicted to be rope-like and it contains binding sites for profilin-actin complexes. The adjacent FH2 domain forms together with the FH2 domain of a second mDia1 molecule a head-to-tail doughnut shaped dimer that encircles the barbed end of an actin filament. Thus the FH2 domain has the ability to dimerize.\nThe N terminus consists of a Rho GTPase-binding domain (GBD), which is joint to the formin homology 3 (FH3).\nDAD can mediate autoinhibition through interactions with the Dia inhibitory domain (DID), which is a subdomain of the GDB/FH3 domain (see section Regulation).\n\nRegulation\nAutoinhibition is achieved through binding of the C-terminal DAD to the N-terminal DID. This interaction inhibits the ability of FH2 to nucleate actin assembly. Rho-GTP binds to the GDB domain and disrupts the DAD-DID-interaction thus promoting actin assembly. But this requires high concentrations of Rho-GTP, which may be not physiological. Hence, the release of mDia1 from autoinhibition seems to require nonspecific membrane-associated factors that cooperate with Rho-GTP.\nSeveral binding proteins can regulate mDia1 localization and activity:",
+          "cos_sim_score": 0.155270516872406,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "rf_rank": 5,
+  "probe_id": "11742315_s_at",
+  "gene_symbol": "RHCE",
+  "score": 0.85,
+  "rf_n_nodes": 5,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 3.3176,
+  "log_fc": -3.3176,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 8,
+  "probe_ids": "11742315_s_at | 11752701_s_at | 11752881_s_at | 11737268_s_at | 11742143_s_at | 11740680_s_at | 11736538_s_at | 11750456_s_at",
+  "max_score": 0.85,
+  "mean_abs_fold_change": 2.9131,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T17:14:43",
+  "interpretation": "The RHCE gene encodes the Rh blood group Rh(CE) polypeptide, which is a component of the ankyrin-1 complex that stabilizes the erythrocyte membrane. This gene plays a role in maintaining red blood cell shape and integrity, which is crucial for proper oxygen transport. While there is no direct evidence linking RHCE to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in red blood cell stability may suggest a potential indirect connection, as compromised blood flow and oxygen delivery are critical factors in osteonecrosis. The evidence retrieved primarily discusses the gene's role in blood disorders rather than SONFH specifically, leading to a low confidence in its relevance as a biomarker for this condition. Thus, while RHCE may have some biological relevance, its potential as a clinical biomarker for early detection of SONFH is weak.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "RHCE may be indirectly relevant to SONFH due to its role in erythrocyte membrane stability, but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "RHCE (P18577). https://www.uniprot.org/uniprotkb/P18577",
+    "RHCE (P18577-13). https://www.uniprot.org/uniprotkb/P18577-13",
+    "RHCE (P18577-14). https://www.uniprot.org/uniprotkb/P18577-14",
+    "RHCE \u2014 RHCE. https://platform.opentargets.org/target/ENSG00000188672",
+    "RHCE \u2194 Rh deficiency syndrome. https://platform.opentargets.org/target/ENSG00000188672/associations",
+    "RHCE \u2194 response to stimulus. https://platform.opentargets.org/target/ENSG00000188672/associations",
+    "RHCE \u2194 Chronic Obstructive Asthma. https://platform.opentargets.org/target/ENSG00000188672/associations",
+    "RHCE \u2194 response to statin. https://platform.opentargets.org/target/ENSG00000188672/associations",
+    "RHCE. https://en.wikipedia.org/wiki/RHCE",
+    "Red Hat Certification Program. https://en.wikipedia.org/wiki/Red_Hat_Certification_Program",
+    "RHD (gene). https://en.wikipedia.org/wiki/RHD_(gene)",
+    "RHCE (gene). https://en.wikipedia.org/wiki/RHCE_(gene)",
+    "Rh blood group system. https://en.wikipedia.org/wiki/Rh_blood_group_system"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4923,
+    "completion_tokens": 249,
+    "total_tokens": 5172,
+    "estimated_cost_usd": 0.000888
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P18577",
+          "title": "RHCE (P18577)",
+          "url": "https://www.uniprot.org/uniprotkb/P18577",
+          "text": "Protein: Blood group Rh(CE) polypeptide\nFunction: Component of the ankyrin-1 complex, a multiprotein complex involved in the stability and shape of the erythrocyte membrane (PubMed:35835865). Mediates the primary membrane attachment site for ANK1 when associated with RHAG (PubMed:35835865). May participate in the ammonium and carbon dioxide transport through the heterotrimer form (Probable)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P18577-13",
+          "title": "RHCE (P18577-13)",
+          "url": "https://www.uniprot.org/uniprotkb/P18577-13",
+          "text": "Protein: Isoform 8h of Blood group Rh(CE) polypeptide",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P18577-14",
+          "title": "RHCE (P18577-14)",
+          "url": "https://www.uniprot.org/uniprotkb/P18577-14",
+          "text": "Protein: Isoform RhPI-Alpha of Blood group Rh(CE) polypeptide",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000188672::function",
+          "title": "RHCE \u2014 RHCE",
+          "url": "https://platform.opentargets.org/target/ENSG00000188672",
+          "text": "Function: Component of the ankyrin-1 complex, a multiprotein complex involved in the stability and shape of the erythrocyte membrane (PubMed:35835865). Mediates the primary membrane attachment site for ANK1 when associated with RHAG (PubMed:35835865). May participate in the ammonium and carbon dioxide transport through the heterotrimer form (Probable). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000188672::MONDO_0019107",
+          "title": "RHCE \u2194 Rh deficiency syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000188672/associations",
+          "text": "Disease: Rh deficiency syndrome\nDescription: The Rh deficiency syndrome, also known as Rh-null syndrome, is a blood disorder where people have red blood cells (RBCs) lacking all Rh antigens. The Rh antigens maintain the integrity of the RBC membrane and therefore, RBCs which lack Rh antigens have an abnormal shape. There are two types of Rh deficiency syndrome: The regulator type is associated with many different changes (mutations) in the RHAG gene. The amorph type is caused by inactive copies of a gene (silent alleles) at the RH locus. As a result, the RBCs do not express any of the Rh antigens. The absence of the Rh complex alters the RBC shape, increases its tendency to break down (osmotic fragility), and shortens its lifespan, resulting in a hemolytic anemia that is usually mild. These patients are at risk of having adverse transfusion reactions because they may produce antibodies against several of the Rh antigens and can only receive blood from people who have the same condition. Rh deficiency syndrome is inherited in an autosomal recessive manner. Management is individualized according to the severity of hemolytic anemia.\nAssociation score: 0.609",
+          "cos_sim_score": 0.6093164550623191,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000188672::GO_0050896",
+          "title": "RHCE \u2194 response to stimulus",
+          "url": "https://platform.opentargets.org/target/ENSG00000188672/associations",
+          "text": "Disease: response to stimulus\nDescription: Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus. The process begins with detection of the stimulus and ends with a change in state or activity or the cell or organism.\nAssociation score: 0.422",
+          "cos_sim_score": 0.421993278157785,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000188672::EFO_0009759",
+          "title": "RHCE \u2194 Chronic Obstructive Asthma",
+          "url": "https://platform.opentargets.org/target/ENSG00000188672/associations",
+          "text": "Disease: Chronic Obstructive Asthma\nDescription: Chronic airway obstruction caused by asthma.\nAssociation score: 0.275",
+          "cos_sim_score": 0.27456008615882926,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000188672::GO_0036273",
+          "title": "RHCE \u2194 response to statin",
+          "url": "https://platform.opentargets.org/target/ENSG00000188672/associations",
+          "text": "Disease: response to statin\nDescription: Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a statin stimulus. Statins are organooxygen compounds whose structure is related to compactin (mevastatin) and which may be used as an anticholesteremic drug due its EC:1.1.1.34/EC:1.1.1.88 (hydroxymethylglutaryl-CoA reductase) inhibitory properties.\nAssociation score: 0.214",
+          "cos_sim_score": 0.2142190929265764,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::RHCE",
+          "title": "RHCE",
+          "url": "https://en.wikipedia.org/wiki/RHCE",
+          "text": "RHCE may refer to:\n\nRed Hat Certified Engineer\nRHCE (gene), Rh blood group, CcEe antigens, a human gene",
+          "cos_sim_score": 0.7166769504547119,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Red Hat Certification Program",
+          "title": "Red Hat Certification Program",
+          "url": "https://en.wikipedia.org/wiki/Red_Hat_Certification_Program",
+          "text": "Red Hat, an IBM subsidiary specializing in computer software, offers different level of certification programs, most of which specialize in system administration. Certifications can be validated through Red Hat's webpage, and expire after 3 years.\n\nCertifications\nRed Hat Certified System Administrator (RHCSA)\nRHCSA is an entry-level certification that focuses on competencies at system administration, including installation and configuration of a Red Hat Enterprise Linux system and attach it to a live network running network services.\nTo achieve the RHCSA certification the student must pass EX200, a 3-hour hands-on lab exam. The minimum passing score for the exam is 210 out of 300 possible points (70%). There is no prerequisite for the exam, but Red Hat recommends preparing for the exam by taking courses in Red Hat System Administration (RH124 and RH134) if one does not have previous experience.\nRHCSA was launched in 2002 as Red Hat Certified Technician (RHCT). As of July 2009 there were 30,000 RHCTs. In November 2010 it was renamed to RHCSA.\n\nRed Hat Certified Engineer (RHCE)\nSelf-titled \"the flagship\" certification, RHCE is a mid- to advanced-level certification that builds on topics covered in the RHCSA certification to include more advanced topics such as security and installing common enterprise networking (IP) services. The certification has a heavy focus on automation using Ansible.\nTo achieve the RHCE certification, the student must pass the RHCSA exam, EX200, and in addition EX294, a 4-hour hands-on lab exam.  Red Hat recommends preparing for the exam by taking courses in Linux essentials (RH124), Linux administration (RH134), and Linux networking and security (RH254) if one does not have previous experience. Previous real-world experience is also advised.\nRHCE was the first Red Hat certificate launched, in 1999. As of July 2009 there were 40,000 RHCEs. It was named the Hottest Certification for 2006 by CertCities.com.\n\nRed Hat Certified Architect (RHCA)\nSelf-titled \"the capstone certificate\", RHCA is the most complete certificate in the program, adding an enterprise-level focus.\nThere are concentrations inside the RHCA on which a candidate may choose to focus, however choosing to do so is not required. The focuses are:\n\nDatacenter: skills with tasks common in an on-premises datacenter\nCloud Archived 2015-07-14 at the Wayback Machine: skills with tasks common to cloud infrastructure\nDevops: skills and knowledge in technologies and practices that can accelerate the process of moving applications and updates from development through the build and test processes and on to production\nApplication Development: skills in enterprise application development, integration, and architecture\nApplication Platform: skills with tasks common for building and managing tools and applications\nRHCA was launched in 2005.\n\nRed Hat Certified Virtualization Administrator (RHCVA)\nRHCVA is a certification that focuses on Virtualization administration.\nTo achieve the RHCVA certification the student must pass EX318, a 3-hour hands-on lab exam. There is no prerequisite for the exam, but Red Hat recommends preparing for the exam by taking the respective course, RH318, and by obtaining the RHCSA certification described above. The exam also requires knowledge in using and installing Microsoft Windows operating systems.\nRHCVA was Launched in November 2009.\n\nJBoss Certified Application Administrator (JBCAA)\nJBCAA is a certification that focuses on managing the JBoss Enterprise Application Platform.\nTo achieve the JBCAA certification the student must pass EX248, a four-hour hands-on lab exam. There is no prerequisite for the exam, but Red Hat recommends preparing for the exam by taking course JB248, a four-day course in JBoss application administration.\nJBCAA was Launched in September 2009.\n\nExamination required for each certification\nSee also\nCompTIA Linux+\nLinux Professional Institute certifications\n\nReferences\nFurther reading\nJang, Michael. RHCSA/RHCE Red Hat Linux Certification Study Guide (RHEL 6). p. 1072. ISBN 978-0-07-176565-7.\nTommasino, Damian (2011). Hands-on Guide to the Red Hat Exams: RHCSA and RHCE Cert Guide and Lab Manual (RHEL 6). p. 600. ISBN 978-0321767950.\nGhori, Asghar (3 December 2012). Red Hat Certified System Administrator & Engineer (RHEL 6). p. 640. ISBN 978-1-467549400.\n\nExternal links\nRed Hat Certification Program\nList of Red Hat Courses",
+          "cos_sim_score": 0.49748992919921875,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::RHD (gene)",
+          "title": "RHD (gene)",
+          "url": "https://en.wikipedia.org/wiki/RHD_(gene)",
+          "text": "Rh blood group, D antigen also known as Rh polypeptide 1 (RhPI) or cluster of differentiation 240D (CD240D) is a protein that in humans is encoded by the RHD gene.\nThe RHD gene codes for the RhD erythrocyte membrane protein that is the Rh factor antigen of the Rh blood group system. RHD has sequence similarity to RHCE, RhAG, RhBG, and RhCG and these five genes constitute the Rh family. It was proposed that the erythrocyte Rh complex is a heterotrimer of RhAG, RhD, and RhCE protein subunits. RhAG is a functional ammonia transporter and is required for normal cell surface expression of RhD and RhCE. Patients who lack RhD/RhCE/RhAG on the surface of their erythrocytes have hemolytic anemia. Antibodies to the RhD protein can cause Rh disease.\n\nReferences\nFurther reading\nSee also\nABO (gene)",
+          "cos_sim_score": 0.343099445104599,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::RHCE (gene)",
+          "title": "RHCE (gene)",
+          "url": "https://en.wikipedia.org/wiki/RHCE_(gene)",
+          "text": "Blood group Rh(CE) polypeptide is a protein that in humans is encoded by the RHCE gene. RHCE has also recently been designated CD240CE (cluster of differentiation 240CE).\nThe Rh blood group system is the second most clinically significant of the blood groups, second only to ABO. It is also the most polymorphic of the blood groups, with variations due to deletions, gene conversions, and missense mutations. The Rh blood group includes this gene which encodes both the RhC and RhE antigens on a single polypeptide and a second gene which encodes the RhD protein. The classification of Rh-positive and Rh-negative individuals is determined by the presence or absence of the highly immunogenic RhD protein on the surface of erythrocytes. Alternative splicing of this gene results in four transcript variants encoding four different isoforms.\nA recent study in the population of the island of Sardinia shows the association of a noncoding variant in the RHCE gene (rs630337) with an increased erythrocyte sedimentation rate(ESR). This suggest a possible causal effect of this polymorphism on this inflammatory marker despite not found in coding region of the gene.\n\nReferences\nFurther reading\nExternal links\nRHCE+protein,+human at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.32661786675453186,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Rh blood group system",
+          "title": "Rh blood group system",
+          "url": "https://en.wikipedia.org/wiki/Rh_blood_group_system",
+          "text": "Rhnull phenotype\nRhnull individuals have no Rh antigens (no Rh or RhAG) on their red blood cells. This rare condition has been called \"Golden Blood\". As a consequence of Rh antigen absence, Rhnull red blood cells also lack LW and Fy5 and show weak expression of S, s, and U antigens.\nRed blood cells lacking Rh/RhAG proteins have structural abnormalities (such as stomatocytosis) and cell membrane defects that can result in hemolytic anemia.\nThe first Rhnull blood was discovered in an Aboriginal Australian woman, in 1961. Only 43 individuals have been reported to have it worldwide. Only nine active donors have been reported. Its properties make it attractive in numerous medical applications, but scarcity makes it expensive to transport and acquire.\nWhile this blood type has been identified in fewer than 50 people, it is not quite as rare as this figure is often interpreted to mean, though still exceedingly rare. It is estimated that 1 in 6 million people have this blood type.\n\nOther Rh group antigens\nAs of 2023, over 50 antigens have been described in the Rh group system; among those described here, the D, C, c, E and e antigens are the most important. The others are much less frequently encountered or are rarely clinically significant. Each is given a number, though the highest assigned number (CEVF or RH61 according to the ISBT terminology) is not an accurate reflection of the antigens encountered since many (e.g. Rh38) have been combined, reassigned to other groups, or otherwise removed.\nSome of the other Rh \"antigens\" are f (\"ce\", RH6), Ce (RH7), Cw (RH8), Cx (RH9), V (RH10), Ew (RH11), G (RH12), Tar (RH40), VS (RH20), Dw (RH23), and CE (RH22). Some of these groups, including f, Ce and CE, describe grouping of some existing groups. Others, like V, describe an epitope created by some other mutation on the RHD and RHCE genes. V in particular is caused by a mutation on RHCE.",
+          "cos_sim_score": 0.3177976906299591,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

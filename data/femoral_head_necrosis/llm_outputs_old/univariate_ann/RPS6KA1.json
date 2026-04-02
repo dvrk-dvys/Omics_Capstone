@@ -1,0 +1,166 @@
+{
+  "rf_rank": 5,
+  "probe_id": "11741035_a_at",
+  "gene_symbol": "RPS6KA1",
+  "score": 0.86,
+  "rf_n_nodes": 7,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.7602,
+  "log_fc": 0.7602,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11741035_a_at",
+  "max_score": 0.86,
+  "mean_abs_fold_change": 0.7602,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T17:28:46",
+  "interpretation": "RPS6KA1 encodes a serine/threonine protein kinase that plays a crucial role in cell signaling pathways, particularly those involving the mitogen-activated protein kinase (MAPK) pathway. This gene is involved in regulating cellular processes such as proliferation, survival, and differentiation by modulating mTOR signaling, which is essential for protein synthesis and cell growth. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), RPS6KA1 may influence the cellular response to steroid treatment, potentially affecting bone cell survival and function. However, while the biological functions of RPS6KA1 are well-documented, direct evidence linking it specifically to SONFH is lacking, leading to an inference that its role may be indirect or inferred from related pathways. Therefore, while RPS6KA1 shows potential as a biomarker due to its involvement in critical signaling pathways, the evidence for its specific relevance to SONFH is weak, suggesting a moderate biomarker potential for early detection.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "RPS6KA1 may influence cellular responses to steroid treatment, which is relevant to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "RPS6KA1 (Q15418). https://www.uniprot.org/uniprotkb/Q15418",
+    "RPS6KA1 (Q15418-3). https://www.uniprot.org/uniprotkb/Q15418-3",
+    "RPS6KA1 (Q15418-2). https://www.uniprot.org/uniprotkb/Q15418-2",
+    "RPS6KA1 \u2014 RPS6KA1. https://platform.opentargets.org/target/ENSG00000117676",
+    "RPS6KA1 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000117676/associations",
+    "RPS6KA1 \u2194 type 2 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000117676/associations",
+    "RPS6KA1 \u2194 response to statin. https://platform.opentargets.org/target/ENSG00000117676/associations",
+    "RPS6KA1 \u2194 bone disease. https://platform.opentargets.org/target/ENSG00000117676/associations",
+    "RPS6KA1. https://en.wikipedia.org/wiki/RPS6KA1",
+    "MTORC1. https://en.wikipedia.org/wiki/MTORC1"
+  ],
+  "token_usage": {
+    "prompt_tokens": 7895,
+    "completion_tokens": 282,
+    "total_tokens": 8177,
+    "estimated_cost_usd": 0.001353
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q15418",
+          "title": "RPS6KA1 (Q15418)",
+          "url": "https://www.uniprot.org/uniprotkb/Q15418",
+          "text": "Protein: Ribosomal protein S6 kinase alpha-1\nFunction: Serine/threonine-protein kinase that acts downstream of ERK (MAPK1/ERK2 and MAPK3/ERK1) signaling and mediates mitogenic and stress-induced activation of the transcription factors CREB1, ETV1/ER81 and NR4A1/NUR77, regulates translation through RPS6 and EIF4B phosphorylation, and mediates cellular proliferation, survival, and differentiation by modulating mTOR signaling and repressing pro-apoptotic function of BAD and DAPK1 (PubMed:10679322, PubMed:12213813, PubMed:15117958, PubMed:16223362, PubMed:17360704, PubMed:18722121, PubMed:26158630, PubMed:35772404, PubMed:9430688). In fibroblast, is required for EGF-stimulated phosphorylation of CREB1, which results in the subsequent transcriptional activation of several immediate-early genes (PubMed:18508509, PubMed:18813292). In response to mitogenic stimulation (EGF and PMA), phosphorylates and activates NR4A1/NUR77 and ETV1/ER81 transcription factors and the cofactor CREBBP (PubMed:12213813, PubMed:16223362). Upon insulin-derived signal, acts indirectly on the transcription regulation of several genes by phosphorylating GSK3B at 'Ser-9' and inhibiting its activity (PubMed:18508509, PubMed:18813292). Phosphorylates RPS6 in response to serum or EGF via an mTOR-independent mechanism and promotes translation initiation by facilitating assembly of the pre-initiation complex (PubMed:17360704). In response to insulin, phosphorylates EIF4B, enhancing EIF4B affinity for the EIF3 complex and stimulating cap-dependent translation (PubMed:16763566). Is involved in the mTOR nutrient-sensing pathway by directly phosphorylating TSC2 at 'Ser-1798', which potently inhibits TSC2 ability to suppress mTOR signaling, and mediates phosphorylation of RPTOR, which regulates mTORC1 activity and may promote rapamycin-sensitive signaling independently of the PI3K/AKT pathway (PubMed:15342917). Also involved in feedback regulation of mTORC1 and mTORC2 by phosphorylating DEPTOR (PubMed:22017876). Mediates cell survival by phosphorylating the pro-apoptotic proteins BAD and DAPK1 and suppressing their pro-apoptotic function (PubMed:10679322, PubMed:16213824). Promotes the survival of hepatic stellate cells by phosphorylating CEBPB in response to the hepatotoxin carbon tetrachloride (CCl4) (PubMed:11684016). Mediates induction of hepatocyte prolifration by TGFA through phosphorylation of CEBPB (PubMed:18508509, PubMed:18813292). Is involved in cell cycle regulation by phosphorylating the CDK inhibitor CDKN1B, which promotes CDKN1B association with 14-3-3 proteins and prevents its translocation to the nucleus and inhibition of G1 progression (PubMed:18508509, PubMed:18813292). Phosphorylates EPHA2 at 'Ser-897', the RPS6KA-EPHA2 signaling pathway controls cell migration (PubMed:26158630). In response to mTORC1 activation, phosphorylates EIF4B at 'Ser-406' and 'Ser-422' which stimulates bicarbonate cotransporter SLC4A7 mRNA translation, increasing SLC4A7 protein abundance and function (PubMed:35772404) (Microbial infection) Promotes the late transcription and translation of viral lytic genes during Kaposi's sarcoma-associated herpesvirus/HHV-8 infection, when constitutively activated",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q15418-3",
+          "title": "RPS6KA1 (Q15418-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q15418-3",
+          "text": "Protein: Isoform 3 of Ribosomal protein S6 kinase alpha-1",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q15418-2",
+          "title": "RPS6KA1 (Q15418-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q15418-2",
+          "text": "Protein: Isoform 2 of Ribosomal protein S6 kinase alpha-1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000117676::function",
+          "title": "RPS6KA1 \u2014 RPS6KA1",
+          "url": "https://platform.opentargets.org/target/ENSG00000117676",
+          "text": "Function: Serine/threonine-protein kinase that acts downstream of ERK (MAPK1/ERK2 and MAPK3/ERK1) signaling and mediates mitogenic and stress-induced activation of the transcription factors CREB1, ETV1/ER81 and NR4A1/NUR77, regulates translation through RPS6 and EIF4B phosphorylation, and mediates cellular proliferation, survival, and differentiation by modulating mTOR signaling and repressing pro- apoptotic function of BAD and DAPK1 (PubMed:10679322, PubMed:12213813, PubMed:15117958, PubMed:16223362, PubMed:17360704, PubMed:18722121, PubMed:26158630, PubMed:35772404, PubMed:9430688). In fibroblast, is required for EGF-stimulated phosphorylation of CREB1, which results in the subsequent transcriptional activation of several immediate-early genes (PubMed:18508509, PubMed:18813292). In response to mitogenic stimulation (EGF and PMA), phosphorylates and activates NR4A1/NUR77 and ETV1/ER81 transcription factors and the cofactor CREBBP (PubMed:12213813, PubMed:16223362). Upon insulin-derived signal, acts indirectly on the transcription regulation of several genes by phosphorylating GSK3B at 'Ser-9' and inhibiting its activity (PubMed:18508509, PubMed:18813292). Phosphorylates RPS6 in response to serum or EGF via an mTOR-independent mechanism and promotes translation initiation by facilitating assembly of the pre-initiation complex (PubMed:17360704). In response to insulin, phosphorylates EIF4B, enhancing EIF4B affinity for the EIF3 complex and stimulating cap- dependent translation (PubMed:16763566). Is involved in the mTOR nutrient-sensing pathway by directly phosphorylating TSC2 at 'Ser- 1798', which potently inhibits TSC2 ability to suppress mTOR signaling, and mediates phosphorylation of RPTOR, which regulates mTORC1 activity and may promote rapamycin-sensitive signaling independently of the PI3K/AKT pathway (PubMed:15342917). Also involved in feedback regulation of mTORC1 and mTORC2 by phosphorylating DEPTOR (PubMed:22017876). Mediates cell survival by phosphorylating the pro- apoptotic proteins BAD and DAPK1 and suppressing their pro-apoptotic function (PubMed:10679322, PubMed:16213824). Promotes the survival of hepatic stellate cells by phosphorylating CEBPB in response to the hepatotoxin carbon tetrachloride (CCl4) (PubMed:11684016). Mediates induction of hepatocyte prolifration by TGFA through phosphorylation of CEBPB (PubMed:18508509, PubMed:18813292). Is involved in cell cycle regulation by phosphorylating the CDK inhibitor CDKN1B, which promotes CDKN1B association with 14-3-3 proteins and prevents its translocation to the nucleus and inhibition of G1 progression (PubMed:18508509, PubMed:18813292). Phosphorylates EPHA2 at 'Ser-897', the RPS6KA-EPHA2 signaling pathway controls cell migration (PubMed:26158630). In response to mTORC1 activation, phosphorylates EIF4B at 'Ser-406' and 'Ser-422' which stimulates bicarbonate cotransporter SLC4A7 mRNA translation, increasing SLC4A7 protein abundance and function (PubMed:35772404).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000117676::EFO_0005772",
+          "title": "RPS6KA1 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000117676/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.490",
+          "cos_sim_score": 0.48990940598712673,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000117676::MONDO_0005148",
+          "title": "RPS6KA1 \u2194 type 2 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000117676/associations",
+          "text": "Disease: type 2 diabetes mellitus\nDescription: A type of diabetes mellitus that is characterized by insulin resistance or desensitization and increased blood glucose levels. This is a chronic disease that can develop gradually over the life of a patient and can be linked to both environmental factors and heredity.\nAssociation score: 0.256",
+          "cos_sim_score": 0.25567786448346363,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000117676::GO_0036273",
+          "title": "RPS6KA1 \u2194 response to statin",
+          "url": "https://platform.opentargets.org/target/ENSG00000117676/associations",
+          "text": "Disease: response to statin\nDescription: Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a statin stimulus. Statins are organooxygen compounds whose structure is related to compactin (mevastatin) and which may be used as an anticholesteremic drug due its EC:1.1.1.34/EC:1.1.1.88 (hydroxymethylglutaryl-CoA reductase) inhibitory properties.\nAssociation score: 0.250",
+          "cos_sim_score": 0.24970480064908981,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000117676::EFO_0004260",
+          "title": "RPS6KA1 \u2194 bone disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000117676/associations",
+          "text": "Disease: bone disease\nDescription: Diseases of bones.\nAssociation score: 0.243",
+          "cos_sim_score": 0.24340680219366334,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::RPS6KA1",
+          "title": "RPS6KA1",
+          "url": "https://en.wikipedia.org/wiki/RPS6KA1",
+          "text": "Ribosomal protein S6 kinase alpha-1 is an enzyme that in humans is encoded by the RPS6KA1 gene.\n\nFunction\nThis gene encodes a member of the RSK (ribosomal S6 kinase) family of serine/threonine kinases. This kinase contains 2 nonidentical kinase catalytic domains and phosphorylates various substrates, including members of the mitogen-activated kinase (MAPK) signalling pathway. The activity of this protein has been implicated in controlling cell growth and differentiation. Alternate transcriptional splice variants, encoding different isoforms, have been characterized.\n\nInteractions\nRPS6KA1 has been shown to interact with:\n\nSee also\nRibosomal s6 kinase\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.39356088638305664,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::MTORC1",
+          "title": "MTORC1",
+          "url": "https://en.wikipedia.org/wiki/MTORC1",
+          "text": "JNK pathway\nc-Jun N-terminal kinase (JNK) signaling is part of the mitogen-activated protein kinase (MAPK) signaling pathway essential in stress signaling pathways relating to gene expression, neuronal development, and cell survival.  Recent studies have shown there is a direct molecular interaction where JNK phosphorylates Raptor at Ser-696, Thr-706, and Ser-863. Therefore, mTORC1 activity is JNK-dependent. Thus, JNK activation plays a role in protein synthesis via subsequent downstream effectors of mTORC1 such as S6 kinase and eIFs.\n\nWnt pathway\nThe Wnt pathway is responsible for cellular growth and proliferation during organismal development; thus, it could be reasoned that activation of this pathway also activates mTORC1. Activation of the Wnt pathway inhibits glycogen synthase kinase 3 beta (GSK3B). When the Wnt pathway is not active, GSK3B is able to phosphorylate TSC2 on Ser1341 and Ser1337 in conjunction with AMPK phosphorylation of Ser1345. It has been  reported that the AMPK is required to first phosphorylate Ser1345 before GSK3B can phosphorylate its target serine residues. This phosphorylation of TSC2 would activate this complex, if GSK3B were active. Since the Wnt pathway inhibits GSK3 signaling, the active Wnt pathway is also involved in the mTORC1 pathway. Thus, mTORC1 can activate protein synthesis for the developing organism.\n\nCytokines\nCytokines like tumor necrosis factor alpha (TNF-alpha) can induce mTOR activity through IKK beta, also known as IKK2. IKK beta can phosphorylate TSC1 at serine residue 487 and TSC1 at serine residue 511. This causes the heterodimer TSC complex to fall apart, keeping Rheb in its active GTP-bound state.\n\nEnergy and oxygen\nEnergy status\nIn order for translation to take place, abundant sources of energy, particularly in the form of ATP, need to be present. If these levels of ATP are not present, due to its hydrolysis into other forms like AMP, and the ratio of AMP to ATP molecules gets too high, AMPK will become activated. AMPK will go on to inhibit energy consuming pathways such as protein synthesis.\nAMPK can phosphorylate TSC2 on serine residue 1387, which activates the GAP activity of this complex, causing Rheb-GTP to be hydrolyzed into Rheb-GDP. This inactivates mTORC1 and blocks protein synthesis through this pathway.\nAMPK can also phosphorylate Raptor on two serine residues. This phosphorylated Raptor recruits 14-3-3 to bind to it and prevents Raptor from being part of the mTORC1 complex. Since mTORC1 cannot recruit its substrates without Raptor, no protein synthesis via mTORC1 occurs.\nLKB1, also known as STK11, is a known tumor suppressor that can activate AMPK. More studies on this aspect of mTORC1 may help shed light on its strong link to cancer.\n\nHypoxic stress\nWhen oxygen levels in the cell are low, it will limit its energy expenditure through the inhibition of protein synthesis. Under hypoxic conditions, hypoxia inducible factor one alpha (HIF1A) will stabilize and activate transcription of REDD1, also known as DDIT4. After translation, this REDD1 protein will bind to TSC2, which prevents 14-3-3 from inhibiting the TSC complex. Thus, TSC retains its GAP activity towards Rheb, causing Rheb to remain bound to GDP and mTORC1 to be inactive.\nDue to the lack of synthesis of ATP in the mitochondria under hypoxic stress or hypoxia, AMPK will also become active and thus inhibit mTORC1 through its processes.\n\nDownstream signaling\nmTORC1 activates transcription and translation through its interactions with p70-S6 Kinase 1 (S6K1) and 4E-BP1, the eukaryotic initiation factor 4E (eIF4E) binding protein 1, primarily via phosphorylation and dephosphorylation of its downstream targets. S6K1 and 4E-BP1 modulate translation in eukaryotic cells. Their signaling will converge at the translation initiation complex on the 5' end of mRNA, and thus activate translation.",
+          "cos_sim_score": 0.2164648175239563,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::MTORC1",
+          "title": "MTORC1",
+          "url": "https://en.wikipedia.org/wiki/MTORC1",
+          "text": "Downstream signaling\nmTORC1 activates transcription and translation through its interactions with p70-S6 Kinase 1 (S6K1) and 4E-BP1, the eukaryotic initiation factor 4E (eIF4E) binding protein 1, primarily via phosphorylation and dephosphorylation of its downstream targets. S6K1 and 4E-BP1 modulate translation in eukaryotic cells. Their signaling will converge at the translation initiation complex on the 5' end of mRNA, and thus activate translation.\n\n4E-BP1\nActivated mTORC1 will phosphorylate translation repressor protein 4E-BP1, thereby releasing it from eukaryotic translation initiation factor 4E (eIF4E). eIF4E is now free to join the eukaryotic translation initiation factor 4G (eIF4G) and the eukaryotic translation initiation factor 4A (eIF4A). This complex then binds to the 5' cap of mRNA and will recruit the helicase eukaryotic translation initiation factor A (eIF4A) and its cofactor eukaryotic translation initiation factor 4B (eIF4B). The helicase is required to remove hairpin loops that arise in the 5' untranslated regions of mRNA, which prevent premature translation of proteins. Once the initiation complex is assembled at the 5' cap of mRNA, it will recruit the 40S small ribosomal subunit that is now capable of scanning for the AUG start codon start site, because the hairpin loop has been degraded by the eIF4A helicase. Once the ribosome reaches the AUG codon, translation can begin.\n\nS6K\nPrevious studies suggest that S6K signaling is mediated by mTOR in a rapamycin-dependent manner wherein S6K is displaced from the eIF3 complex upon binding of mTOR with eIF3. Hypophosphorylated S6K is located on the eIF3 scaffold complex. Active mTORC1 gets recruited to the scaffold, and once there, will phosphorylate S6K to make it active.\nmTORC1 phosphorylates S6K1 on at least two residues, with the most critical modification occurring on a threonine residue (T389). This event stimulates the subsequent phosphorylation of S6K1 by PDPK1.  Active S6K1 can in turn stimulate the initiation of protein synthesis through activation of S6 Ribosomal protein (a component of the ribosome) and eIF4B, causing them to be recruited to the pre-initiation complex.\nActive S6K can bind to the SKAR scaffold protein that can get recruited to exon junction complexes (EJC). Exon junction complexes span the mRNA region where two exons come together after an intron has been spliced out. Once S6K binds to this complex, increased translation on these mRNA regions occurs.\nS6K1 can also participate in a positive feedback loop with mTORC1 by phosphorylating mTOR's negative regulatory domain at two sites thr-2446 and ser-2448; phosphorylation at these sites appears to stimulate mTOR activity.\nS6K also can phosphorylate programmed cell death 4 (PDCD4), which marks it for degradation by ubiquitin ligase Beta-TrCP (BTRC). PDCD4 is a tumor suppressor that binds to eIF4A and prevents it from being incorporated into the initiation complex.\n\nRole in disease and aging\nmTOR was  reported to be related to aging in 2001 when the ortholog of S6K, SCH9, was deleted in S. cerevisiae, doubling its lifespan. This greatly increased the interest in upstream signaling and mTORC1. Studies in inhibiting mTORC1 on the model organisms of  C. elegans, fruitflies, and mice significantly increased lifespans in all of them. Disrupting the gut microbiota of infant mice was  reported to lead to reduced longevity with mTORC1 implicated as a potential mechanism.\nA relationship between food consumption and mTORC1 activity has been reported. Carbohydrate consumption activates mTORC1 through the insulin growth factor pathway. Amino acid consumption stimulates mTORC1 through the branched chain amino acid/Rag pathway. Dietary restriction inhibits mTORC1 signaling through both upstream pathways of mTORC that converge on the lysosome.",
+          "cos_sim_score": 0.2024913728237152,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::MTORC1",
+          "title": "MTORC1",
+          "url": "https://en.wikipedia.org/wiki/MTORC1",
+          "text": "mTORC1, also known as mammalian target of rapamycin complex 1 or mechanistic target of rapamycin complex 1, is a protein kinase complex that functions as a nutrient/energy/redox sensor and controls protein synthesis.\nmTOR Complex 1 (mTORC1) is composed of the mTOR protein complex, regulatory-associated protein of mTOR (commonly known as raptor), mammalian lethal with SEC13 protein 8 (MLST8), PRAS40 and DEPTOR. This complex embodies the classic functions of mTOR, namely as a nutrient/energy/redox sensor and controller of protein synthesis. The activity of this complex is regulated by rapamycin, insulin, growth factors, phosphatidic acid, certain amino acids and their derivatives (e.g., L-leucine and \u03b2-hydroxy \u03b2-methylbutyric acid), mechanical stimuli, and oxidative stress. Recently it has been also demonstrated that cellular bicarbonate metabolism can be regulated by mTORC1 signaling.\nThe role of mTORC1 is to activate translation of proteins. In order for cells to grow and proliferate by manufacturing more proteins, the cells must ensure that they have the resources available for protein production. Thus, for protein production, and therefore mTORC1 activation, cells must have adequate energy resources, nutrient availability, oxygen abundance, and proper growth factors in order for mRNA translation to begin.\n\nActivation at the lysosome\nTSC complex\nAlmost all of the variables required for protein synthesis affect mTORC1 activation by interacting with the TSC1/TSC2 protein complex. TSC2 is a GTPase activating protein (GAP). Its GAP activity interacts with a G protein called Rheb by hydrolyzing the GTP of the active Rheb-GTP complex, converting it to the inactive Rheb-GDP complex. The active Rheb-GTP activates mTORC1 through unelucidated pathways.  Thus, many of the pathways that influence mTORC1 activation do so through the activation or inactivation of the TSC1/TSC2 heterodimer. This control is usually performed through phosphorylation of the complex. This phosphorylation can cause the dimer to dissociate and lose its GAP activity, or the phosphorylation can cause the heterodimer to have increased GAP activity, depending on which amino acid residue becomes phosphorylated. Thus, the signals that influence mTORC1 activity do so through activation or inactivation of the TSC1/TSC2 complex, upstream of mTORC1.\n\nRagulator-Rag complex\nmTORC1 interacts at the Ragulator-Rag complex on the surface of the lysosome in response to amino acid levels  in the cell. Even if a cell has the proper energy for protein synthesis, if it does not have the amino acid building blocks for proteins, no protein synthesis will occur. Studies have shown that depriving amino acid levels inhibits mTORC1 signaling to the point where both energy abundance and amino acids are necessary for mTORC1 to function. When amino acids are introduced to a deprived cell, the presence of amino acids causes Rag GTPase heterodimers to switch to their active conformation. Active Rag heterodimers interact with raptor, localizing mTORC1 to the surface of late endosomes and lysosomes where the Rheb-GTP is located. This allows mTORC1 to physically interact with Rheb. Thus the amino acid pathway as well as the growth factor/energy pathway converge on endosomes and lysosomes. Thus the Ragulator-Rag complex recruits mTORC1 to lysosomes to interact with Rheb.\n\nRegulation of the Ragulator-Rag complex\nRag activity is regulated by at least two highly conserved complexes: the \"GATOR1\" complex containing DEPDC5, NPRL2 and NPRL3 and the \"\"GATOR2\" complex containing Mios, WDR24, WDR59, Seh1L, Sec13. GATOR1 inhibits Rags (it is a GTPase-activating protein for Rag subunits A/B) and GATOR2 activates Rags by inhibiting DEPDC5.",
+          "cos_sim_score": 0.16195860505104065,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::MTORC1",
+          "title": "MTORC1",
+          "url": "https://en.wikipedia.org/wiki/MTORC1",
+          "text": "Inhibitors\nThere have been several dietary compounds that have been suggested to inhibit mTORC1 signaling including EGCG, resveratrol, curcumin, caffeine, and alcohol.\n\nFirst generation drugs\nRapamycin was the first known inhibitor of mTORC1, considering that mTORC1 was discovered as being the target of rapamycin. Rapamycin will bind to cytosolic FKBP12 and act as a scaffold molecule, allowing this protein to dock on the FRB regulatory region (FKBP12-Rapamycin Binding region/domain) on mTORC1. The binding of the FKBP12-rapamycin complex to the FRB regulatory region inhibits mTORC1 through processes not yet known. mTORC2 is also inhibited by rapamycin in some cell culture lines and tissues, particularly those that express high levels of FKBP12 and low levels of FKBP51.\nRapamycin itself is not very water soluble and is not very stable, so scientists developed rapamycin analogs, called rapalogs, to overcome these two problems with rapamycin. These drugs are considered the first generation inhibitors of mTOR. These other inhibitors include everolimus and temsirolimus. Compared with the parent compound rapamycin, everolimus is more selective for the mTORC1 protein complex, with little impact on the mTORC2 complex. mTORC1 inhibition by everolimus was reported to normalize tumor blood vessels, to increase tumor-infiltrating lymphocytes, and to improve adoptive cell transfer therapy.\nSirolimus, which is the drug name for rapamycin, was approved by the U.S. Food and Drug Administration (FDA) in 1999 to prevent against transplant rejection in patients undergoing kidney transplantation. In 2003, it was approved as a stent covering for widening arteries to prevent against future heart attacks. In 2007, mTORC1 inhibitors began being approved for treatments against cancers such as renal cell carcinoma. In 2008 they were approved for treatment of mantle cell lymphoma. mTORC1 inhibitors have recently been approved for treatment of pancreatic cancer. In 2010 they were approved for treatment of tuberous sclerosis.\n\nSecond generation drugs\nThe second generation of inhibitors were created to overcome problems with upstream signaling upon the introduction of first generation inhibitors to the treated cells. One problem with the first generation inhibitors of mTORC1 is that there is a negative feedback loop from phosphorylated S6K, that can inhibit the insulin RTK via phosphorylation. When this negative feedback loop is no longer there, the upstream regulators of mTORC1 become more active than they would otherwise would have been under normal mTORC1 activity. Another problem is that since mTORC2 is resistant to rapamycin, and it too acts upstream of mTORC1 by activating Akt. Thus signaling upstream of mTORC1 still remains very active upon its inhibition via rapamycin and the rapalogs. Rapamycin and its analogues also have procoagulant side effects caused by off-target binding of the activated immunophilin FKBP12, which are not produced by structurally unrelated inhibitors of mTORC such as gedatolisib, WYE-687 and XL-388.\nSecond generation inhibitors are able to bind to the ATP-binding motif on the kinase domain of the mTOR core protein itself and abolish activity of both mTOR complexes. In addition, since the mTOR and the PI3K proteins are both in the same phosphatidylinositol 3-kinase-related kinase (PIKK) family of kinases, some second generation inhibitors have dual inhibition towards the mTOR complexes as well as PI3K, which acts upstream of mTORC1. As of 2011, these second generation inhibitors were in phase II of clinical trials.",
+          "cos_sim_score": 0.15436318516731262,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

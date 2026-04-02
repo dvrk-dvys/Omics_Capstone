@@ -1,0 +1,117 @@
+{
+  "rf_rank": 12,
+  "probe_id": "11722269_a_at",
+  "gene_symbol": "SASH3",
+  "score": 0.71,
+  "rf_n_nodes": 6,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.8832,
+  "log_fc": 0.8832,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11722269_a_at",
+  "max_score": 0.71,
+  "mean_abs_fold_change": 0.8832,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T17:31:54",
+  "interpretation": "SASH3 (SAM and SH3 domain-containing protein 3) is a protein that may function as a signaling adapter in lymphocytes, playing a role in immune responses. While there is no direct evidence linking SASH3 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in immune signaling could suggest a potential role in the inflammatory processes associated with steroid treatment and bone health. The retrieved evidence primarily indicates its connection to immunodeficiency disorders, which may imply that dysregulation of immune signaling could contribute to the pathogenesis of SONFH. However, the lack of specific studies directly connecting SASH3 to SONFH limits the strength of this association. Therefore, while SASH3 may have some relevance in the context of immune response and inflammation, its potential as a biomarker for early detection of SONFH is weak and primarily inferred from its biological function.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "SASH3 may be involved in immune signaling, which could indirectly relate to the inflammatory processes in Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "SASH3 (O75995). https://www.uniprot.org/uniprotkb/O75995",
+    "SASH3 \u2014 SASH3. https://platform.opentargets.org/target/ENSG00000122122",
+    "SASH3 \u2194 immunodeficiency 102. https://platform.opentargets.org/target/ENSG00000122122/associations",
+    "SASH3 \u2194 X-Linked Combined Immunodeficiency Diseases. https://platform.opentargets.org/target/ENSG00000122122/associations",
+    "SASH3 \u2194 Immunodeficiency. https://platform.opentargets.org/target/ENSG00000122122/associations",
+    "SASH3 \u2194 cancer. https://platform.opentargets.org/target/ENSG00000122122/associations",
+    "List of human protein-coding genes 7. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_7"
+  ],
+  "token_usage": {
+    "prompt_tokens": 2621,
+    "completion_tokens": 255,
+    "total_tokens": 2876,
+    "estimated_cost_usd": 0.000546
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O75995",
+          "title": "SASH3 (O75995)",
+          "url": "https://www.uniprot.org/uniprotkb/O75995",
+          "text": "Protein: SAM and SH3 domain-containing protein 3\nFunction: May function as a signaling adapter protein in lymphocytes",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000122122::function",
+          "title": "SASH3 \u2014 SASH3",
+          "url": "https://platform.opentargets.org/target/ENSG00000122122",
+          "text": "Function: May function as a signaling adapter protein in lymphocytes. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000122122::MONDO_0024781",
+          "title": "SASH3 \u2194 immunodeficiency 102",
+          "url": "https://platform.opentargets.org/target/ENSG00000122122/associations",
+          "text": "Disease: immunodeficiency 102\nDescription: An X-linked recessive immunologic disorder characterized by the onset of recurrent sinopulmonary, mucosal, and other infections in early childhood, usually accompanied by refractory autoimmune cytopenias. Affected individuals have bacterial, viral, and fungal infections, as well as hemolytic anemia, thrombocytopenia, lymphopenia, and decreased NK cells. Laboratory studies show defective T-cell proliferation and function, likely due to signaling abnormalities. The disorder may also manifest as a hyperinflammatory state with immune dysregulation.\nAssociation score: 0.704",
+          "cos_sim_score": 0.7035609564776072,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000122122::EFO_1001451",
+          "title": "SASH3 \u2194 X-Linked Combined Immunodeficiency Diseases",
+          "url": "https://platform.opentargets.org/target/ENSG00000122122/associations",
+          "text": "Disease: X-Linked Combined Immunodeficiency Diseases\nDescription: Forms of combined immunodeficiency caused by mutations in the gene for INTERLEUKIN RECEPTOR COMMON GAMMA SUBUNIT. Both severe and non-severe subtypes of the disease have been identified.\nAssociation score: 0.381",
+          "cos_sim_score": 0.3811509664770255,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000122122::HP_0002721",
+          "title": "SASH3 \u2194 Immunodeficiency",
+          "url": "https://platform.opentargets.org/target/ENSG00000122122/associations",
+          "text": "Disease: Immunodeficiency\nDescription: Failure of the immune system to protect the body adequately from infection, due to the absence or insufficiency of some component process or substance.\nAssociation score: 0.120",
+          "cos_sim_score": 0.12034828997185898,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000122122::MONDO_0004992",
+          "title": "SASH3 \u2194 cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000122122/associations",
+          "text": "Disease: cancer\nDescription: A tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues. Malignant neoplasms often metastasize to distant anatomic sites and may recur after excision. The most common malignant neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), Hodgkin and non-Hodgkin lymphomas, leukemias, melanomas, and sarcomas.\nAssociation score: 0.076",
+          "cos_sim_score": 0.0760211043177767,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::List of human protein-coding genes 7",
+          "title": "List of human protein-coding genes 7",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_7",
+          "text": "== References ==",
+          "cos_sim_score": 0.10100768506526947,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

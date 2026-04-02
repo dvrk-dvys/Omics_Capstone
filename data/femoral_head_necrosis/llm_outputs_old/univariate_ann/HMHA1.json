@@ -1,0 +1,160 @@
+{
+  "rf_rank": 33,
+  "probe_id": "11747020_x_at",
+  "gene_symbol": "HMHA1",
+  "score": 0.59,
+  "rf_n_nodes": 1,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.756,
+  "log_fc": 0.756,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11747020_x_at",
+  "max_score": 0.59,
+  "mean_abs_fold_change": 0.756,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T20:21:00",
+  "interpretation": "HMHA1 encodes a minor histocompatibility antigen, which is involved in immune responses, particularly in the context of transplantation and graft-versus-host disease. While there is no direct evidence linking HMHA1 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in immune modulation suggests a potential indirect connection, as immune responses can influence bone health and repair mechanisms. The retrieved evidence primarily discusses its function in immune recognition and T-cell activation, which may be relevant in the context of steroid-induced changes in bone metabolism. However, the lack of specific studies directly addressing HMHA1 in SONFH limits the strength of this connection. Therefore, while HMHA1 may have some relevance as a biomarker, its clinical utility in early detection of SONFH remains uncertain.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "HMHA1 may play a role in immune responses that could indirectly affect the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "ARHGAP45 (Q92619). https://www.uniprot.org/uniprotkb/Q92619",
+    "ARHGAP45 (Q92619-2). https://www.uniprot.org/uniprotkb/Q92619-2",
+    "HMHA1 \u2014 ARHGAP45. https://platform.opentargets.org/target/ENSG00000180448",
+    "HMHA1 \u2194 inflammatory bowel disease. https://platform.opentargets.org/target/ENSG00000180448/associations",
+    "HMHA1 \u2194 dementia. https://platform.opentargets.org/target/ENSG00000180448/associations",
+    "HMHA1 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000180448/associations",
+    "HMHA1 \u2194 Alzheimer disease. https://platform.opentargets.org/target/ENSG00000180448/associations",
+    "HMHA1. https://en.wikipedia.org/wiki/HMHA1",
+    "RhoGAP domain. https://en.wikipedia.org/wiki/RhoGAP_domain",
+    "Minor histocompatibility antigen. https://en.wikipedia.org/wiki/Minor_histocompatibility_antigen",
+    "C1 domain. https://en.wikipedia.org/wiki/C1_domain"
+  ],
+  "token_usage": {
+    "prompt_tokens": 6114,
+    "completion_tokens": 234,
+    "total_tokens": 6348,
+    "estimated_cost_usd": 0.001057
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q92619",
+          "title": "ARHGAP45 (Q92619)",
+          "url": "https://www.uniprot.org/uniprotkb/Q92619",
+          "text": "Protein: Rho GTPase-activating protein 45\nFunction: Contains a GTPase activator for the Rho-type GTPases (RhoGAP) domain that would be able to negatively regulate the actin cytoskeleton as well as cell spreading. However, also contains N-terminally a BAR-domin which is able to play an autoinhibitory effect on this RhoGAP activity Precursor of the histocompatibility antigen HA-1. More generally, minor histocompatibility antigens (mHags) refer to immunogenic peptide which, when complexed with MHC, can generate an immune response after recognition by specific T-cells. The peptides are derived from polymorphic intracellular proteins, which are cleaved by normal pathways of antigen processing. The binding of these peptides to MHC class I or class II molecules and its expression on the cell surface can stimulate T-cell responses and thereby trigger graft rejection or graft-versus-host disease (GVHD) after hematopoietic stem cell transplantation from HLA-identical sibling donor. GVHD is a frequent complication after bone marrow transplantation (BMT), due to mismatch of minor histocompatibility antigen in HLA-matched sibling marrow transplants. Specifically, mismatching for mHag HA-1 which is recognized as immunodominant, is shown to be associated with the development of severe GVHD after HLA-identical BMT. HA-1 is presented to the cell surface by MHC class I HLA-A*0201, but also by other HLA-A alleles. This complex specifically elicits donor-cytotoxic T-lymphocyte (CTL) reactivity against hematologic malignancies after treatment by HLA-identical allogenic BMT. It induces cell recognition and lysis by CTL",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q92619-2",
+          "title": "ARHGAP45 (Q92619-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q92619-2",
+          "text": "Protein: Isoform 2 of Rho GTPase-activating protein 45",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000180448::function",
+          "title": "HMHA1 \u2014 ARHGAP45",
+          "url": "https://platform.opentargets.org/target/ENSG00000180448",
+          "text": "Function: Contains a GTPase activator for the Rho-type GTPases (RhoGAP) domain that would be able to negatively regulate the actin cytoskeleton as well as cell spreading. However, also contains N-terminally a BAR- domin which is able to play an autoinhibitory effect on this RhoGAP activity. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000180448::EFO_0003767",
+          "title": "HMHA1 \u2194 inflammatory bowel disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000180448/associations",
+          "text": "Disease: inflammatory bowel disease\nDescription: A spectrum of small and large bowel inflammatory diseases of unknown etiology. It includes Crohn's disease, ulcerative colitis, and colitis of indeterminate type.\nAssociation score: 0.276",
+          "cos_sim_score": 0.27613388085505536,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000180448::MONDO_0001627",
+          "title": "HMHA1 \u2194 dementia",
+          "url": "https://platform.opentargets.org/target/ENSG00000180448/associations",
+          "text": "Disease: dementia\nDescription: Loss of intellectual abilities interfering with an individual's social and occupational functions. Causes include Alzheimer's disease, brain injuries, brain tumors, and vascular disorders.\nAssociation score: 0.247",
+          "cos_sim_score": 0.24691659399683707,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000180448::EFO_0005772",
+          "title": "HMHA1 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000180448/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.207",
+          "cos_sim_score": 0.20747234831327835,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000180448::MONDO_0004975",
+          "title": "HMHA1 \u2194 Alzheimer disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000180448/associations",
+          "text": "Disease: Alzheimer disease\nDescription: A progressive, neurodegenerative disease characterized by loss of function and death of nerve cells in several areas of the brain leading to loss of cognitive function such as memory and language.\nAssociation score: 0.150",
+          "cos_sim_score": 0.15036174918596223,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::HMHA1",
+          "title": "HMHA1",
+          "url": "https://en.wikipedia.org/wiki/HMHA1",
+          "text": "Minor histocompatibility protein HA-1 is a protein that in humans is encoded by the HMHA1 gene.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.5002642273902893,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::RhoGAP domain",
+          "title": "RhoGAP domain",
+          "url": "https://en.wikipedia.org/wiki/RhoGAP_domain",
+          "text": "RhoGAP domain  is an evolutionary conserved protein domain of \nGTPase activating proteins towards Rho/Rac/Cdc42-like small GTPases.\n\nHuman proteins containing this domain\nABR;       ARHGAP1;   ARHGAP10;  ARHGAP11A; ARHGAP11B; ARHGAP12;  ARHGAP15;  ARHGAP17;\nARHGAP18;  ARHGAP19;  ARHGAP20;  ARHGAP21;  ARHGAP22;  ARHGAP23;  ARHGAP24;  ARHGAP25;\nARHGAP26;  ARHGAP27;  ARHGAP28;  ARHGAP29;  ARHGAP30;  ARHGAP4;   ARHGAP5;   ARHGAP6;\nARHGAP8;   ARHGAP9;   BCR;       BPGAP1;    C1;        C5orf5;    CDGAP;     CENTD1;\nCENTD2;    CENTD3;    CHN1;      CHN2;      DEPDC1;    DEPDC1A;   DEPDC1B;   DLC1;\nFAM13A1;   FKSG42;    GMIP;      GRLF1;     HMHA1;     INPP5B;    KIAA1688;  LOC553158;\nMYO9A;     MYO9B;     OCRL;      OPHN1;     PIK3R1;    PIK3R2;    PRR5;      RACGAP1;\nRACGAP1P;  RALBP1;    RICH2;     RICS;      SH3BP1;    SLIT1;     SNX26;     SRGAP1;\nSRGAP2;    SRGAP3;    STARD13;   STARD8;    SYDE1;     SYDE2;\n\nNotes\nReferences\nMusacchio, A.; Cantley, L. C.; Harrison, S. C. (1996). \"Crystal structure of the breakpoint cluster region-homology domain from phosphoinositide 3-kinase p85 alpha subunit\". Proceedings of the National Academy of Sciences of the United States of America. 93 (25): 14373\u201314378. doi:10.1073/pnas.93.25.14373. PMC 26139. PMID 8962058.\nBarrett, T.; Xiao, B.; Dodson, E. J.; Dodson, G.; Ludbrook, S. B.; Nurmahomed, K.; Gamblin, S. J.; Musacchio, A.; Smerdon, S. J.; Eccleston, J. F. (1997). \"The structure of the GTPase-activating domain from p50rhoGAP\". Nature. 385 (6615): 458\u2013461. doi:10.1038/385458a0. PMID 9009196. S2CID 4235645.\nGamblin, S. J.; Rittinger, K.; Walker, P. A.; Eccleston, J. F.; Nurmahomed, K.; Owen, D.; Laue, E.; Smerdon, S. J. (1997). \"Crystal structure of a small G protein in complex with the GTPase-activating protein rhoGAP\". Nature. 388 (6643): 693\u2013697. doi:10.1038/41805. PMID 9262406. S2CID 4415826.\nBoguski, M. S.; McCormick, F. (1993). \"Proteins regulating Ras and its relatives\". Nature. 366 (6456): 643\u2013654. doi:10.1038/366643a0. PMID 8259209. S2CID 4338237.",
+          "cos_sim_score": 0.23960073292255402,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Minor histocompatibility antigen",
+          "title": "Minor histocompatibility antigen",
+          "url": "https://en.wikipedia.org/wiki/Minor_histocompatibility_antigen",
+          "text": "Discovery of MiHAs\nThe significance of MiHAs in an immune response was recognized following transplantation. The recipient developed GVHD despite having a HLA- matched genes at the Major Histocompatibility locus. The experiment raised questions about the possibility of there being MiHAs.  More specifically, the first MiHA was discovered when bone marrow transplantation occurred between opposite sexes. The female recipient obtained MHC-matched bone marrow cells but still had active cytotoxic T cells (CD8+). The CD8+ T cells were active and targeted the male bone marrow cells. The male bone marrow cells were found to be presenting a peptide in the MHC groove encoded by a gene on Y chromosome. The peptide was foreign to the female T cells and females lack the Y chromosome and, thus, this MiHA. The  MiHAs encoded by the Y chromosome are known as HY antigens.\n\nH-Y Antigen\nH-Y antigens are encoded by genes on the Y chromosome. Both HLA class I and II alleles have been found to present these antigens. Some of these antigens are ubiquitously expressed in nucleated male cells, and the presence of these antigens has been associated with a greater risk of developing GVHD allogeneic stem cell transplantation for a HLA matched gene when there's a male recipient and female donor. H-Y MiHA play a role in pregnancy with a male fetus because fetal cells can cross from the placenta into the maternal blood stream where the maternal T cells respond to the foreign antigen presented on both MHC class I and II. Therefore, H-Y specific CD8+ T cells develop in the maternal blood and can target the fetal cells with nucleus expressing the antigen on a MHC class I molecule. The response to these fetal H-Y antigens are involved with women experiencing secondary recurrent miscarriage who were previously pregnant with a male fetus. Women with an earlier male pregnancy have T cells which were previously exposed to these H-Y antigens, and consequently recognize them quicker. It has been found that women with recurrent miscarriage also contain MHC II with ability to present these antigens to T helper cells (CD4+) which is significant for CD8+ activation.\n\nHistocompatibility Antigen 1 (HA1)\nHA1 results from a SNP converting the nonimmunogenic allele (KECVLRDDLLEA) to an immunogenic allele (KECVLHDDLLEA). This SNP results in better peptide binding ability to the groove of a particular MHC class I molecules found on antigen presenting cells.  The significance of the peptide changing to an immunogenic form is that now specific HLA-A 0201 restricted T cells can recognize the peptide presented by MHC class I HLA-A0201 molecules. This recognition leads to an immune response if the T cells recognize the peptide as foreign. This recognition occurs when an individual lacks the immunogenic version of the peptide, but is exposed to the HA-1 peptide during pregnancy or allogeneic stem cell transplantation. During pregnancy, the fetal HA-1 has been found to originate in the placenta and specific maternal CD8+ T cells recognizing this MiHA have been identified.\n\nImmunotherapy Graft-Versus- Leukemia Effect\nCD8+ T cells that are specific for a MiHA can target these antigens when they are expressed specifically on tumor cells, which allows for the destruction of harmful tumor cells. In mice, allogeneic stem cell transplantation donor CD8+ T cells specific for a MiHA found in the recipient has been shown to inhibit the division of leukemic cells. However, there is a risk in developing GVHD if the T cells are specific for MiHAs expressed ubiquitously on epithelial cells. More specifically, HA-8, UGT2B17 and SMCY MiHAs that are ubiquitously expressed present a higher risk of developing GVHD. Therefore, in order to prevent adverse GVHD effects, immune cell restricted MiHAs are ideal targets for graft-versus- leukemia (GVL) since not all nucleated cells are targeted by responding T cells.  An example of an ideal target is the MiHA HB-1, which is highly expressed in harmful B cells, but has a low expression in other tissue cells.\n\nClinical implications\nImmunisation of mothers against male-specific minor histocompatibility (H-Y) antigens has a pathogenic role in many cases of secondary recurrent miscarriage, that is, recurrent miscarriage in pregnancies succeeding a previous live birth. An example of this effect is that the male:female ratio of children born prior and subsequent to secondary recurrent miscarriage is 1.49 and 0.76 respectively.",
+          "cos_sim_score": 0.22627520561218262,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Minor histocompatibility antigen",
+          "title": "Minor histocompatibility antigen",
+          "url": "https://en.wikipedia.org/wiki/Minor_histocompatibility_antigen",
+          "text": "Minor histocompatibility antigen (also known as MiHA) are peptides presented on the cellular surface of donated organs that are known to give an immunological response in some organ transplants. They cause problems of rejection less frequently than those of the major histocompatibility complex (MHC). Minor histocompatibility antigens (MiHAs)  are diverse, short segments of proteins and are referred to as peptides. These peptides are normally around 9-12 amino acids in length and are bound to both the major histocompatibility complex (MHC) class I and class II proteins. Peptide sequences can differ among individuals and these differences arise from SNPs in the coding region of genes, gene deletions, frameshift mutations, or insertions. About a third of the characterized MiHAs come from the Y chromosome.  Prior to becoming a short peptide sequence, the proteins expressed by these polymorphic or diverse genes need to be digested in the proteasome into shorter peptides. These endogenous or self peptides are then transported into the endoplasmic reticulum with a peptide transporter pump called TAP where they encounter and bind to the MHC class I molecule. This contrasts with MHC class II molecules's antigens which are peptides derived from phagocytosis/endocytosis and molecular degradation of non-self entities' proteins, usually by antigen-presenting cells.  MiHA antigens are either ubiquitously expressed in most tissue like skin and intestines or restrictively expressed in the immune cells.\nMinor histocompatibility antigens are due to normal proteins that are in themselves polymorphic in a given population. Even when a transplant donor and recipient are identical with respect to their major histocompatibility complex genes, the amino acid differences in minor proteins can cause the grafted tissue to be slowly rejected.\nSeveral of the identified Autosomally and Y chromosome encoded MiHAs\n\nKnown minor histocompatibility antigens\nThe following table lists the known MiHAs, the variant of genes encode MiHA peptides and their restricted HLA alleles.\n\nT cell Response to MiHAs\nThe MiHAs bound to a MHC presented on a cell surface may be recognized as a self peptide or not recognized by either  CD8+ or CD4+ T cells. The lack of recognition of a T cell to this self antigen is the reason why allogeneic stem cell transplantation for an HLA matched gene or a developing fetus's MiHAs during pregnancy may not be recognized by T cells and marked as foreign leading to an immune response. Although B cell receptors can also recognize MHCs, immune responses seem to only be elicited by T cells. The consequences of an immune response are seen in allogeneic hematopoietic stem cell transplantation (HCT) when the peptides encoded by polymorphic genes differ between the recipient and the donor T cells.  As a result, the donor  T cells can target the recipients cells called graft-versus-host disease (GVHD). Although graft or bone marrow rejection can have detrimental effects, there are immunotherapy benefits when cytotoxic T lymphocytes are specific for a self antigen and can target antigens expressed selectively on leukemic cells in order to destroy these tumor cells referred to as graft-versus- leukemia effect (GVL).\nThe recognition of a mature T cell to this self antigen should not induce an immune response. During thymic selection occurring in the thymus, only a thymocyte TCR that recognizes either class I or class II MHC molecule plus peptide should survive positive selection. However, there is death by apoptosis of thymocytes that do not interact with MHC molecules or have high-affinity receptors for self MHC plus self antigen a process referred to as negative selection. Therefore, the process of positive and negative selection means fewer self-reactive mature T cells will leave the thymus and lead to autoimmune problems.",
+          "cos_sim_score": 0.2047528475522995,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::C1 domain",
+          "title": "C1 domain",
+          "url": "https://en.wikipedia.org/wiki/C1_domain",
+          "text": "C1 domain (also known as phorbol esters/diacylglycerol binding domain) binds an important secondary messenger diacylglycerol (DAG), as well as the analogous phorbol esters. Phorbol esters can directly stimulate protein kinase C, PKC.\nPhorbol esters (such as PMA) are analogues of DAG and potent tumor promoters that cause a variety of physiological changes when administered to both cells and tissues. DAG activates a family of serine/threonine protein kinases, collectively known as protein kinase C (PKC). Phorbol esters can directly stimulate PKC.\nThe N-terminal region of PKC, known as C1, binds PMA and DAG in a phospholipid and zinc-dependent fashion. The C1 region contains one or two copies of a cysteine-rich domain, which is about 50 amino-acid residues long, and which is essential for DAG/PMA-binding.\nThe DAG/PMA-binding domain binds two zinc ions; the ligands of these metal ions are probably the six cysteines and two histidines that are conserved in this domain.\n\nHuman proteins containing this domain\nAKAP13;    ARAF;      ARHGAP29;  ARHGEF2;   BRAF;      CDC42BPA;  CDC42BPB;  CDC42BPG;\nCHN1;      CHN2;      CIT;  CIC;     DGKA;      DGKB;      DGKD;      DGKE;      DGKG;\nDGKH;      DGKI;      DGKK;      DGKQ;      DGKZ;      GMIP;      HMHA1;     KSR1;\nKSR2;      MYO9A;     MYO9B;     PDZD8;     PRKCA;     PRKCB1;    PRKCD;     PRKCE;\nPRKCG;     PRKCH;     PRKCI;     PRKCN;     PRKCQ;     PRKCZ;     PRKD1;     PRKD2;\nPRKD3;     RACGAP1;   RAF1;      RASGRP;    RASGRP1;   RASGRP2;   RASGRP3;   RASGRP4;\nRASSF1;    RASSF5;    ROCK1;     ROCK2;     STAC;      STAC2;     STAC3;     TENC1;\nUNC13A;    UNC13B;    UNC13C;    VAV1;      VAV2;      VAV3;\n\nReferences\nExternal links\nUMich Orientation of Proteins in Membranes families/superfamily-63 - Orientations of C1 domains in membranes (OPM)",
+          "cos_sim_score": 0.1473839282989502,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

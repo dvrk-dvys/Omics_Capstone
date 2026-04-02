@@ -1,0 +1,118 @@
+{
+  "probe_id": "11722216_a_at",
+  "gene_symbol": "GPR108",
+  "score": 1.0,
+  "SD_TestAUC": 0.0721984766282145,
+  "abs_fold_change": 0.5897,
+  "probe_count": 1,
+  "probe_ids": "11722216_a_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.5897,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:41:55",
+  "interpretation": "GPR108 is a protein that may play a role in intracellular immune modulation by activating the NF-kappaB response and attenuating Toll-like receptor responses. While there is no direct evidence linking GPR108 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in immune modulation could suggest a potential role in the inflammatory processes associated with steroid administration, which is a known risk factor for SONFH. The retrieved evidence primarily indicates its general biological functions without specific ties to SONFH, leading to a conclusion based on inference rather than direct evidence. Therefore, while GPR108 may have some relevance in the context of immune response, its potential as a biomarker for early detection of SONFH is weak due to the lack of specific evidence connecting it to the disease.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "GPR108's role in immune modulation may suggest a connection to the inflammatory processes involved in Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), but evidence is insufficient to support its use as a biomarker.",
+  "citations": [
+    "GPR108 (Q9NPR9). https://www.uniprot.org/uniprotkb/Q9NPR9",
+    "GPR108 \u2014 GPR108. https://platform.opentargets.org/target/ENSG00000125734",
+    "GPR108 \u2194 Absent tibia - polydactyly. https://platform.opentargets.org/target/ENSG00000125734/associations",
+    "GPR108 \u2194 tibia, hypoplasia or aplasia of, with polydactyly. https://platform.opentargets.org/target/ENSG00000125734/associations",
+    "GPR108 \u2194 age-related macular degeneration. https://platform.opentargets.org/target/ENSG00000125734/associations",
+    "GPR108 \u2194 Acheiropodia. https://platform.opentargets.org/target/ENSG00000125734/associations",
+    "GPR107. https://en.wikipedia.org/wiki/GPR107",
+    "List of human protein-coding genes 3. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_3"
+  ],
+  "token_usage": {
+    "prompt_tokens": 2778,
+    "completion_tokens": 246,
+    "total_tokens": 3024,
+    "estimated_cost_usd": 0.000564
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9NPR9",
+          "title": "GPR108 (Q9NPR9)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9NPR9",
+          "text": "Protein: Protein GPR108\nFunction: May play a role in intracellular immune modulation by activating NF-kappaB response and attenuating Toll-like-receptor response (Microbial infection) Plays an essential function in adeno-associated virus (AAV) transduction across multiple serotypes except AAV5. May play a critical role in mediating the endosomal virus escape or in the AAV virions trafficking from endosomes to the nucleus",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000125734::function",
+          "title": "GPR108 \u2014 GPR108",
+          "url": "https://platform.opentargets.org/target/ENSG00000125734",
+          "text": "Function: May play a role in intracellular immune modulation by activating NF-kappaB response and attenuating Toll-like-receptor response. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000125734::Orphanet_988",
+          "title": "GPR108 \u2194 Absent tibia - polydactyly",
+          "url": "https://platform.opentargets.org/target/ENSG00000125734/associations",
+          "text": "Disease: Absent tibia - polydactyly\nAssociation score: 0.052",
+          "cos_sim_score": 0.052053474633066824,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000125734::MONDO_0008572",
+          "title": "GPR108 \u2194 tibia, hypoplasia or aplasia of, with polydactyly",
+          "url": "https://platform.opentargets.org/target/ENSG00000125734/associations",
+          "text": "Disease: tibia, hypoplasia or aplasia of, with polydactyly\nDescription: Tibial hemimelia-polysyndactyly-triphalangeal thumb syndrome is a rare, genetic dysostosis syndrome, with marked inter- and intra-familial variation, typically characterized by triphalangeal thumbs, hand and/or foot polysyndactyly and/or absent/hypoplastic tibiae (associated with duplication of fibulae in some cases), although isolated triphalangeal thumbs have also been reported. It is often accompanied with remarkable short stature and additional features may include radio-ulnar synostosis and hand oligodactyly, as well as abnormal carpal and metatarsal bones.\nAssociation score: 0.052",
+          "cos_sim_score": 0.052053474633066824,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000125734::EFO_0001365",
+          "title": "GPR108 \u2194 age-related macular degeneration",
+          "url": "https://platform.opentargets.org/target/ENSG00000125734/associations",
+          "text": "Disease: age-related macular degeneration\nDescription: Degenerative changes in the macula lutea of the retina.\nAssociation score: 0.050",
+          "cos_sim_score": 0.05004729466891098,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000125734::Orphanet_931",
+          "title": "GPR108 \u2194 Acheiropodia",
+          "url": "https://platform.opentargets.org/target/ENSG00000125734/associations",
+          "text": "Disease: Acheiropodia\nDescription: Acheiropodia is an extremely rare developmental disorder characterized by bilateral, congenital and complete amputation of the distal extremities (amputation of distal epiphysis of the humerus, distal portion of the tibial diaphysis, aplasia of the radius, ulna, fibula) and aplasia of hands and feet (aplasia of carpal, metacarpal, tarsal, metatarsal and phalangeal bones). Rarely, an ectopic bone can be found at the distal end of the humerus. No other systemic manifestations have been reported and the disorder follows an autosomal recessive pattern of inheritance.\nAssociation score: 0.050",
+          "cos_sim_score": 0.049828603907864914,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::GPR107",
+          "title": "GPR107",
+          "url": "https://en.wikipedia.org/wiki/GPR107",
+          "text": "Protein GPR107 is a protein that in humans is encoded by the GPR107 gene.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.558773934841156,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of human protein-coding genes 3",
+          "title": "List of human protein-coding genes 3",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_3",
+          "text": "== References ==",
+          "cos_sim_score": -0.00029667140915989876,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

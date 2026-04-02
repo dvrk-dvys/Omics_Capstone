@@ -1,0 +1,140 @@
+{
+  "probe_id": "11750862_a_at",
+  "gene_symbol": "ADGRE3",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.1325077319999875,
+  "abs_fold_change": 1.5619,
+  "score": 1.5541,
+  "probe_count": 1,
+  "probe_ids": "11750862_a_at",
+  "max_score": 1.5541,
+  "mean_abs_fold_change": 1.5619,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T19:13:03",
+  "interpretation": "ADGRE3 encodes an adhesion G protein-coupled receptor that is primarily expressed in immune cells, playing a role in myeloid-myeloid interactions during immune and inflammatory responses. While there is no direct evidence linking ADGRE3 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in inflammation could be relevant, as inflammation is a known factor in the pathogenesis of osteonecrosis. The retrieved evidence primarily describes its general biological functions and associations with other diseases, but does not provide specific connections to SONFH. Therefore, the clinical relevance of ADGRE3 as a biomarker for early detection of SONFH remains weak and speculative, relying on inferred connections rather than direct evidence.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "ADGRE3 may be involved in inflammatory processes that could contribute to the pathogenesis of Steroid-Induced Osteonecrosis of the Femoral Head, but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "ADGRE3 (Q9BY15). https://www.uniprot.org/uniprotkb/Q9BY15",
+    "ADGRE3 (Q9BY15-3). https://www.uniprot.org/uniprotkb/Q9BY15-3",
+    "ADGRE3 (Q9BY15-2). https://www.uniprot.org/uniprotkb/Q9BY15-2",
+    "ADGRE3 \u2014 ADGRE3. https://platform.opentargets.org/target/ENSG00000131355",
+    "ADGRE3 \u2194 Alzheimer disease. https://platform.opentargets.org/target/ENSG00000131355/associations",
+    "ADGRE3 \u2194 asthma. https://platform.opentargets.org/target/ENSG00000131355/associations",
+    "ADGRE3 \u2194 cerebral artery occlusion. https://platform.opentargets.org/target/ENSG00000131355/associations",
+    "ADGRE3 \u2194 hepatocellular carcinoma. https://platform.opentargets.org/target/ENSG00000131355/associations",
+    "ADGRE3 \u2014 adhesion G protein-coupled receptor E3 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4053,
+    "completion_tokens": 286,
+    "total_tokens": 4339,
+    "estimated_cost_usd": 0.00078
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9BY15",
+          "title": "ADGRE3 (Q9BY15)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BY15",
+          "text": "Protein: Adhesion G protein-coupled receptor E3\nFunction: Orphan receptor that may play a role myeloid-myeloid interactions during immune and inflammatory responses. A ligand for the soluble form of this receptor is present at the surface of monocytes-derived macrophages and activated neutrophils",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9BY15-3",
+          "title": "ADGRE3 (Q9BY15-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BY15-3",
+          "text": "Protein: Isoform 3 of Adhesion G protein-coupled receptor E3",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9BY15-2",
+          "title": "ADGRE3 (Q9BY15-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BY15-2",
+          "text": "Protein: Isoform 2 of Adhesion G protein-coupled receptor E3",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000131355::function",
+          "title": "ADGRE3 \u2014 ADGRE3",
+          "url": "https://platform.opentargets.org/target/ENSG00000131355",
+          "text": "Function: Orphan receptor that may play a role myeloid-myeloid interactions during immune and inflammatory responses. A ligand for the soluble form of this receptor is present at the surface of monocytes- derived macrophages and activated neutrophils. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000131355::MONDO_0004975",
+          "title": "ADGRE3 \u2194 Alzheimer disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000131355/associations",
+          "text": "Disease: Alzheimer disease\nDescription: A progressive, neurodegenerative disease characterized by loss of function and death of nerve cells in several areas of the brain leading to loss of cognitive function such as memory and language.\nAssociation score: 0.089",
+          "cos_sim_score": 0.08884859003906383,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000131355::MONDO_0004979",
+          "title": "ADGRE3 \u2194 asthma",
+          "url": "https://platform.opentargets.org/target/ENSG00000131355/associations",
+          "text": "Disease: asthma\nDescription: A bronchial disease that is characterized by chronic inflammation and narrowing of the airways, which is caused by a combination of environmental and genetic factors resulting in recurring periods of wheezing (a whistling sound while breathing), chest tightness, shortness of breath, mucus production and coughing. The symptoms appear due to a variety of triggers such as allergens, irritants, respiratory infections, weather changes, exercise, stress, reflux disease, medications, foods and emotional anxiety.\nAssociation score: 0.064",
+          "cos_sim_score": 0.06445031055953189,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000131355::MONDO_0000944",
+          "title": "ADGRE3 \u2194 cerebral artery occlusion",
+          "url": "https://platform.opentargets.org/target/ENSG00000131355/associations",
+          "text": "Disease: cerebral artery occlusion\nAssociation score: 0.048",
+          "cos_sim_score": 0.0477952051810695,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000131355::EFO_0000182",
+          "title": "ADGRE3 \u2194 hepatocellular carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000131355/associations",
+          "text": "Disease: hepatocellular carcinoma\nDescription: A malignant tumor that arises from hepatocytes. Hepatocellular carcinoma is relatively rare in the United States but very common in all African countries south of the Sahara and in Southeast Asia. Most cases are seen in patients over the age of 50 years, but this tumor can also occur in younger individuals and even in children. Hepatocellular carcinoma is more common in males than females and is associated with hepatitis B, hepatitis C, chronic alcohol abuse and cirrhosis. Serum elevation of alpha-fetoprotein occurs in a large percentage of patients with hepatocellular carcinoma. Grossly, hepatocellular carcinoma may present as a single mass, as multiple nodules, or as diffuse liver involvement. Microscopically, there is a wide range of differentiation from tumor to tumor (well differentiated to poorly differentiated tumors). Hepatocellular carcinomas quickly metastasize to regional lymph nodes and lung. The overall median survival of untreated liver cell carcinoma is about 4 months. The most effective treatment of hepatocellular carcinoma is complete resection of the tumor. Lately, an increasing number of tumors have been treated with liver transplantation.\nAssociation score: 0.035",
+          "cos_sim_score": 0.03545913383558222,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "ADGRE3 \u2014 adhesion G protein-coupled receptor E3",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ADGRE3\nGene name: adhesion G protein-coupled receptor E3\nAliases / synonyms: EMR3\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the class B seven-span transmembrane (TM7) receptor family expressed predominantly by cells of the immune system. Family members are characterized by an extended extracellular region with a variable number of N-terminal epidermal growth factor (EGF)-like domains coupled to a TM7 domain via a mucin-like spacer domain. This gene is closely linked to the gene encoding egf-like molecule containing mucin-like hormone receptor 2 on chromosome 19. This protein may play a role in myeloid-myeloid interactions during immune and inflammatory responses. Alternative splicing results in multiple transcript variants encoding different isoforms. [provided by RefSeq, Jan 2014]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ADGRE3",
+          "aliases": "EMR3",
+          "gene_description": "adhesion G protein-coupled receptor E3"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "probe_id": "11732189_at",
+  "gene_symbol": "NOTCH2",
+  "score": 1.0,
+  "SD_TestAUC": 0.0,
+  "abs_fold_change": 1.1274,
+  "probe_count": 1,
+  "probe_ids": "11732189_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 1.1274,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T18:37:31",
+  "interpretation": "NOTCH2 encodes a receptor involved in cell signaling that regulates various biological processes, including cell fate determination, differentiation, and apoptosis. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), NOTCH2 is implicated in bone remodeling and homeostasis, particularly through its role in the differentiation of bone marrow mesenchymal stem cells (BMSCs). Evidence suggests that activation of the Notch signaling pathway can influence the osteogenic differentiation of BMSCs, which is critical in the pathophysiology of SONFH, where glucocorticoids disrupt normal bone cell function and blood supply. The retrieved evidence indicates a moderate connection between NOTCH2 and SONFH, primarily through its mechanistic role in BMSC differentiation and bone remodeling. Thus, NOTCH2 may serve as a potential biomarker for early detection of SONFH, although further validation in clinical settings is necessary.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 2",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "NOTCH2 is involved in the regulation of bone remodeling and BMSC differentiation, linking it to the pathogenesis of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "NOTCH2 (Q04721). https://www.uniprot.org/uniprotkb/Q04721",
+    "NOTCH2 \u2014 NOTCH2. https://platform.opentargets.org/target/ENSG00000134250",
+    "NOTCH2 \u2194 acroosteolysis dominant type. https://platform.opentargets.org/target/ENSG00000134250/associations",
+    "NOTCH2 \u2194 Alagille syndrome due to a NOTCH2 point mutation. https://platform.opentargets.org/target/ENSG00000134250/associations",
+    "NOTCH2 \u2194 Alagille syndrome. https://platform.opentargets.org/target/ENSG00000134250/associations",
+    "NOTCH2 \u2194 diffuse large B-cell lymphoma. https://platform.opentargets.org/target/ENSG00000134250/associations",
+    "NOTCH2 \u2014 notch receptor 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "NOTCH1 \u2014 notch receptor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TGFB1 \u2014 transforming growth factor beta 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ERBB2 \u2014 erb-b2 receptor tyrosine kinase 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "NEDD4 regulates VEGF signaling and mTOR to promote angiogenesis and the cell cycle in steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12676940/",
+    "Notch-RBPJ Pathway for the Differentiation of Bone Marrow Mesenchymal Stem Cells in Femoral Head Necrosis (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC10094204/",
+    "Phase-contrast imaging with synchrotron hard X-ray reveals the effect of icariin on bone tissue morphology and microstructure in rabbits with early glucocorticoid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC10192577/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9683,
+    "completion_tokens": 341,
+    "total_tokens": 10024,
+    "estimated_cost_usd": 0.001657
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q04721",
+          "title": "NOTCH2 (Q04721)",
+          "url": "https://www.uniprot.org/uniprotkb/Q04721",
+          "text": "Protein: Neurogenic locus notch homolog protein 2\nFunction: Functions as a receptor for membrane-bound ligands Jagged-1 (JAG1), Jagged-2 (JAG2) and Delta-1 (DLL1) to regulate cell-fate determination. Upon ligand activation through the released notch intracellular domain (NICD) it forms a transcriptional activator complex with RBPJ/RBPSUH and activates genes of the enhancer of split locus (PubMed:21378985, PubMed:21378989). Affects the implementation of differentiation, proliferation and apoptotic programs (By similarity). Involved in bone remodeling and homeostasis. In collaboration with RELA/p65 enhances NFATc1 promoter activity and positively regulates RANKL-induced osteoclast differentiation (PubMed:29149593). Positively regulates self-renewal of liver cancer cells (PubMed:25985737)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000134250::function",
+          "title": "NOTCH2 \u2014 NOTCH2",
+          "url": "https://platform.opentargets.org/target/ENSG00000134250",
+          "text": "Function: Functions as a receptor for membrane-bound ligands Jagged-1 (JAG1), Jagged-2 (JAG2) and Delta-1 (DLL1) to regulate cell-fate determination. Upon ligand activation through the released notch intracellular domain (NICD) it forms a transcriptional activator complex with RBPJ/RBPSUH and activates genes of the enhancer of split locus (PubMed:21378985, PubMed:21378989). Affects the implementation of differentiation, proliferation and apoptotic programs (By similarity). Involved in bone remodeling and homeostasis. In collaboration with RELA/p65 enhances NFATc1 promoter activity and positively regulates RANKL-induced osteoclast differentiation (PubMed:29149593). Positively regulates self-renewal of liver cancer cells (PubMed:25985737).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000134250::MONDO_0007057",
+          "title": "NOTCH2 \u2194 acroosteolysis dominant type",
+          "url": "https://platform.opentargets.org/target/ENSG00000134250/associations",
+          "text": "Disease: acroosteolysis dominant type\nDescription: A rare genetic osteolysis syndrome resulting from protein-truncating variants in exon 34 of the NOTCH2 gene. These variants disrupt only the PEST domain, escape nonsense-mediated decay, and are postulated to function through a gain-of-function mechanism. This condition is characterized by acroosteolysis of distal phalanges and generalized osteoporosis, associated with additional ossification anomalies, craniofacial dysmorphism, dental anomalies and a wide range of other characteristics. Hearing loss, renal cysts, and cardiovascular anomalies are variably present.\nAssociation score: 0.827",
+          "cos_sim_score": 0.8269418008042602,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000134250::MONDO_0012439",
+          "title": "NOTCH2 \u2194 Alagille syndrome due to a NOTCH2 point mutation",
+          "url": "https://platform.opentargets.org/target/ENSG00000134250/associations",
+          "text": "Disease: Alagille syndrome due to a NOTCH2 point mutation\nDescription: A genetic condition caused by pathogenic variants in the NOTCH2 gene upstream of those implicated with Hajdu-Cheney syndrome. The mechanism of pathogenicity for Alagille syndrome appears to be haploinsufficiency. Key features include bile duct paucity, cholestasis, congenital heart defects, butterfly vertebrae, posterior embryotoxon, and distinctive facial characteristics. Renal abnormalities may also be present.\nAssociation score: 0.777",
+          "cos_sim_score": 0.7769385946865731,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000134250::MONDO_0007318",
+          "title": "NOTCH2 \u2194 Alagille syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000134250/associations",
+          "text": "Disease: Alagille syndrome\nDescription: Alagille (AGS) syndrome is variably characterized by chronic cholestasis due to paucity of intrahepatic bile ducts, peripheral pulmonary artery stenosis, vertebrae segmentation anomalies, characteristic facies, posterior embryotoxon/anterior segment abnormalities, pigmentary retinopathy, and dysplastic kidneys.\nAssociation score: 0.680",
+          "cos_sim_score": 0.6799146137776275,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000134250::EFO_0000403",
+          "title": "NOTCH2 \u2194 diffuse large B-cell lymphoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000134250/associations",
+          "text": "Disease: diffuse large B-cell lymphoma\nDescription: Diffuse large B-cell lymphoma is the most common subtype of non-Hodgkin lymphoma (NHL) in adults characterized by a median age of presentation in the sixth decade of life (but also rarely occurring in adolescents and children) with the initial presentation being single or multiple rapidly growing masses (that may or may not be painful) in nodal or extranodal sites (such as thyroid, skin, breast, gastrointestinal tract, testes, bone, or brain) and that can be accompanied by symptoms of fever, night sweats and weight loss. DLBCL has an aggressive disease course, with the elderly having a poorer prognosis than younger patients, and with relapses being common.\nAssociation score: 0.550",
+          "cos_sim_score": 0.550058712494815,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "NOTCH2 \u2014 notch receptor 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: NOTCH2\nGene name: notch receptor 2\nAliases / synonyms: AGS2, HJCYS, hN2\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the Notch family. Members of this Type 1 transmembrane protein family share structural characteristics including an extracellular domain consisting of multiple epidermal growth factor-like (EGF) repeats, and an intracellular domain consisting of multiple, different domain types. Notch family members play a role in a variety of developmental processes by controlling cell fate decisions. The Notch signaling network is an evolutionarily conserved intercellular signaling pathway which regulates interactions between physically adjacent cells. In Drosophilia, notch interaction with its cell-bound ligands (delta, serrate) establishes an intercellular signaling pathway that plays a key role in development. Homologues of the notch-ligands have also been identified in h...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "NOTCH2",
+          "aliases": "AGS2, HJCYS, hN2",
+          "gene_description": "notch receptor 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "NOTCH1 \u2014 notch receptor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: NOTCH1\nGene name: notch receptor 1\nAliases / synonyms: AOS5, AOVD1, TAN1, hN1\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the NOTCH family of proteins. Members of this Type I transmembrane protein family share structural characteristics including an extracellular domain consisting of multiple epidermal growth factor-like (EGF) repeats, and an intracellular domain consisting of multiple different domain types. Notch signaling is an evolutionarily conserved intercellular signaling pathway that regulates interactions between physically adjacent cells through binding of Notch family receptors to their cognate ligands. The encoded preproprotein is proteolytically processed in the trans-Golgi network to generate two polypeptide chains that heterodimerize to form the mature cell-surface receptor. This receptor plays a role in the development of numerous cell and tissue types. Mutations ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "NOTCH1",
+          "aliases": "AOS5, AOVD1, TAN1, hN1",
+          "gene_description": "notch receptor 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TGFB1 \u2014 transforming growth factor beta 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TGFB1\nGene name: transforming growth factor beta 1\nAliases / synonyms: CAEND1, CED, DPD1, IBDIMDE, LAP, TGF-beta1, TGFB, TGFbeta\nOrganism: Homo sapiens\nGene summary: This gene encodes a secreted ligand of the TGF-beta (transforming growth factor-beta) superfamily of proteins. Ligands of this family bind various TGF-beta receptors leading to recruitment and activation of SMAD family transcription factors that regulate gene expression. The encoded preproprotein is proteolytically processed to generate a latency-associated peptide (LAP) and a mature peptide, and is found in either a latent form composed of a mature peptide homodimer, a LAP homodimer, and a latent TGF-beta binding protein, or in an active form consisting solely of the mature peptide homodimer. The mature peptide may also form heterodimers with other TGFB family members. This encoded protein regulates cell proliferation, differentiation and growth, and can modulate expression and activation...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TGFB1",
+          "aliases": "CAEND1, CED, DPD1, IBDIMDE, LAP, TGF-beta1, TGFB, TGFbeta",
+          "gene_description": "transforming growth factor beta 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ERBB2 \u2014 erb-b2 receptor tyrosine kinase 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ERBB2\nGene name: erb-b2 receptor tyrosine kinase 2\nAliases / synonyms: CD340, HER-2, HER-2/neu, HER2, MLN 19, MLN-19, NEU, NGL, TKR1, VSCN2, c-ERB-2, c-ERB2, p185(erbB2)\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the epidermal growth factor (EGF) receptor family of receptor tyrosine kinases. This protein has no ligand binding domain of its own and therefore cannot bind growth factors. However, it does bind tightly to other ligand-bound EGF receptor family members to form a heterodimer, stabilizing ligand binding and enhancing kinase-mediated activation of downstream signalling pathways, such as those involving mitogen-activated protein kinase and phosphatidylinositol-3 kinase. Allelic variations at amino acid positions 654 and 655 of isoform a (positions 624 and 625 of isoform b) have been reported, with the most common allele, Ile654/Ile655, shown here. Amplification and/or overexpression of this gene has been reported in numerous cancers, including breast and ovarian...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ERBB2",
+          "aliases": "CD340, HER-2, HER-2/neu, HER2, MLN 19, MLN-19, NEU, NGL, TKR1, VSCN2, c-ERB-2, c-ERB2, p185(erbB2)",
+          "gene_description": "erb-b2 receptor tyrosine kinase 2"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::12676940",
+          "title": "NEDD4 regulates VEGF signaling and mTOR to promote angiogenesis and the cell cycle in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12676940/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a degenerative hip joint disease that worsens over time (1). ONFH is characterized by bone cell death due to a lack of blood supply, which can lead to joint collapse and hip dysfunction (1). The causes of ONFH are complex and involve mechanical injury, genetic predisposition and biochemical imbalances (2,3). Among these factors, steroid use is reported in ~51% of ONFH cases (4). Prolonged or high-dose steroid therapy markedly increases the risk of ONFH, leading to steroid-induced ONFH (SONFH) (1). For example, in patients with systemic lupus erythematosus, the corticosteroid dosage is positively associated with the occurrence of ONFH. Daily doses as low as 10 mg have been associated with a 3.6% increase in risk, while doses >40 mg greatly increase the chance of developing ONFH (5). Steroids damage bone and blood vessel health through various mechanisms, including endothelial cell dysfunction and reduced angiogenesis, ultimately impairing blood flow supply (3,6). Endothelial cells serve an important role in angiogenesis, as their growth, migration and tube formation are important for repairing bone tissue (6,7). When angiogenesis is impaired, bone regeneration often fails (8). VEGF, a key factor that promotes angiogenesis, has been shown to enhance bone repair by stimulating angiogenesis, making it a potential treatment for ONFH (9\u201311). Angiogenesis and osteogenesis are closely linked processes that occur throughout bone development, maturation, aging and disease progression (12). Notably, activation of the VEGF-Notch signaling pathway has been reported to restore the proliferation of mesenchymal stem cells in aplastic anemia (13), while the mTOR/AP-1 complex subunit \u00b5-1/VEGF axis regulates endothelial cell growth (14). Additionally, increasing hypoxia-inducible factor (HIF)-1\u03b1/VEGF levels can help to protect against bone loss in models of nasal obstruction (15). Therefore, understanding the molecular mechanisms of angiogenesis and endothelial cell function is important for advancing treatments for ONFH.\nUbiquitination has become an important post-translational modification for regulating protein stability, signal transduction and cellular homeostasis (16\u201319). Neural precursor cell expressed developmentally downregulated protein 4 (NEDD4) is an E3 ubiquitin ligase that facilitates substrate ubiquitination and degradation, thereby influencing multiple biological processes such as cell proliferation, migration, angiogenesis and endothelial cell protection (20\u201322). NEDD4 has been demonstrated to promote endothelial cell proliferation, migration and angiogenesis (23). In addition to its role in endothelial regulation, NEDD4 also affects macrophage autophagy and tumor cell proliferation, highlighting its versatile function in maintaining the cellular balance (21,24).\nNEDD4 subfamily influences osteogenesis and bone cell biology (25). By mediating PTEN degradation, NEDD4 activates the PI3K/AKT pathway, which promotes cell proliferation and survival. This pathway also supports angiogenesis through PTEN inactivation and VEGF upregulation (26\u201329). Additionally, NEDD4 boosts osteocyte proliferation and is associated with improved outcomes in postmenopausal osteoporosis (30,31). Overall, these findings emphasize the potential of NEDD4 as a regulator of both angiogenesis and osteogenesis, making it a promising target in ONFH therapy. The present study was based on the concept that NEDD4 may serve a role in SONFH. To explore this, the present study observed how overexpression of NEDD4 affected the viability, migration and tube formation of bone microvascular endothelial cells (BMECs). The present study also investigated how glucocorticoids influenced NEDD4 expression and promoter methylation, shedding light on how NEDD4 contributes to angiogenesis and repair in SONFH.\nMaterials and methods\nConstruction of the NEDD4 overexpression (OE) vector",
+          "cos_sim_score": 0.6424187421798706,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10094204",
+          "title": "Notch-RBPJ Pathway for the Differentiation of Bone Marrow Mesenchymal Stem Cells in Femoral Head Necrosis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10094204/",
+          "text": "1. Introduction\nBone marrow mesenchymal stem cells (BMSCs) are cells present in bone marrow tissue with no hematopoietic potential, easy access, and demonstrate multiple differentiation potentials and the ability to secrete trophic factors [1,2]. Over the past 30 years, BMSCs have been widely studied for their clinical applications in tissue engineering and regenerative medicine, such as bone and cartilage reconstruction and wound healing [3]. Related researches report that BMSCs play a vital role in osteonecrosis repair, which invades the necrotic area, differentiates, and forms new bone to complete the repair [4,5]. Femoral head necrosis (FHN) is a disease of abnormal bone metabolism, and its pathogenesis is closely associated with a decrease in the activity and number of BMSCs [6,7,8]. In addition, the osteogenic capacity of MSCs derived from patients with steroid-induced FHN was compromised, with increased adipogenesis and decreased proliferation rates [9,10,11,12,13]. However, the mechanism in the differentiation alteration of BMSCs in FHN remains poorly understood.\nBMSCs are regulated by several signaling pathways, among which the Notch signaling pathway is involved in regulating the proliferation and differentiation of BMSCs cells, determining cell fate and participating in the development of embryonic and adult tissues, such as skeletal tissues [14,15,16,17]. Under the action of external factors, the Notch receptor-ligand junctions at the cell surface are decoded, and the receptor protein is cleaved by the metalloproteinase tumor necrosis factor-\u03b1 converting enzyme (TACE) and \u03b3-secretase complex, releasing the Notch intracellular structural domain (NICD) [3,18,19]. NICD enters the nucleus and binds to the transcription factor RBPJ to form a transcriptional complex that initiates the expression of downstream genes such as hairy and enhancer of split (HES) and hairy/enhancer-of-split related (HEY) to exert biological effects [18]. Dong et al. demonstrated that JAG 1-mediated Notch signaling promoted the maintenance and expansion of BMSCs while enhancing their osteogenic differentiation capacity [20]. It reported that circ-DAB1 furtherance cell multiplication and osteogenic differentiation of BMSCs through the Notch-RBPJ pathway [21]. These studies highlight the need for the Notch signaling pathway in the osteogenic differentiation of BMSCs.\nTherefore, the aim of this study was to compare and analyze the changes in BMSCs differentiation in spontaneous FHN-affected broilers, and simultaneously conduct the in vitro cell assay to investigate the related mechanisms of the Notch-RBPJ signaling pathway in BMSCs differentiation progression.\n2. Results\n2.1. Decreased Osteogenic and Chondrogenic Differentiation and Increased Lipogenic Capacity of BMSCs in Spontaneous FHN Broiler Femur Tissue\nMesenchymal stem cells (MSCs) applied in this study were isolated from bone marrow in broilers and were confirmed for their identity and suitability for usage according to current criteria (Figure 1A,B). To investigate the effective regulator of the Notch pathway on osteogenesis and chondrogenesis in FHN-affected broilers, femoral head tissue samples and BMSCs were collected. The results of ARS staining and alcian blue staining were shown in Figure 1B focusing on the differentiation ability of BMSCs. BMSCs in the control group exhibited normal osteogenic chondrogenic and adipogenesis differentiation, while attenuated osteogenic and chondrogenic differentiation and increased lipogenic capacity were observed in FHN-affected broilers, indicating the osteogenic and chondrogenic differentiate dysfunction of the BMSCs. Meanwhile, the levels of chondrogenic and osteogenic metabolism-related proteins in femoral head tissues of FHN-affected broilers were changed as previously described, that was, the levels of Col2a1, Aggrecan and BMP2 proteins were significantly downregulated, while the protein levels of matrix metalloproteinase hydrolase (MMP13) were significantly elevated (Figure 1C,D). A significantly upregulated transcript level and protein expression levels of Notch pathway-related genes occurred in FHN-affected broilers (Figure 1E,F), indicating that the Notch pathway was activated.\n2.2. MP Causes the Homeostatic Imbalance of BMSCs and Activation of the Notch Pathway",
+          "cos_sim_score": 0.602446436882019,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10192577",
+          "title": "Phase-contrast imaging with synchrotron hard X-ray reveals the effect of icariin on bone tissue morphology and microstructure in rabbits with early glucocorticoid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10192577/",
+          "text": "The development of glucocorticoid-induced ONFH involves multiple mechanisms and is the result of the interaction of multiple pathogenic factors. Many theories about its mechanism include intravascular coagulation, abnormal differentiation of bone marrow mesenchymal stem cells, lipid metabolism disorder, inflammatory response, osteoporosis, and osteoclast apoptosis (Li et al., 2021b). The most widely accepted theory is lipid metabolism disorder: long-term or large-scale use of glucocorticoids leads to a significant increase in the concentration of glucocorticoids in the body, increased fat mobilization throughout the body, and tiny fat particles lead to bone microvascular embolism and local bone microcirculation disturbance. On the other hand, high concentrations of glucocorticoids decrease the osteogenic differentiation of bone marrow mesenchymal stem cells (BMSCs) and increase adipogenic differentiation, leading to fat accumulation in the bone marrow and increased intramedullary pressure of the femoral head. Exacerbate the reduction of local blood flow, bone cell ischemia, and hypoxia, and eventually cause osteonecrosis (Wang et al., 2000; Seamon et al., 2012; Mont et al., 2015; Shah et al., 2015). With the ongoing investigation of the pathogenesis of glucocorticoid-induced ONFH, a novel multiple-hit theory has been proposed. That is, high concentrations of glucocorticoids directly lead to the imbalance of bone homeostasis and cell apoptosis, and at the same time indirectly cause damage to the microcirculation in the bone by inhibiting the microcirculation in the new bone. The promotion of angiogenesis and blood hypercoagulability jointly lead to the occurrence of osteonecrosis (Seamon et al., 2012; Mont et al., 2015). Among them, the theory of osteocyte apoptosis and bone homeostasis imbalance has been paid more and more attention. Many studies believe that ONFH induced by glucocorticoids is a manifestation of massive apoptosis of bone cells, imbalance of bone homeostasis, and destruction of bone tissue morphology (Wang et al., 2019). On the one hand, glucocorticoids directly kill osteoblasts and osteocytes through endoplasmic reticulum stress and autophagy, resulting in increased apoptosis (Calder et al., 2004; Liu et al., 2018), decreased osteoblast activity and osteogenic activity, and decreased bone formation (Weinstein et al., 2000; Plotkin et al., 2007; Youm et al., 2010). On the other hand, glucocorticoids lead to enhanced bone resorption by osteoclasts in necrotic areas, leading to an imbalance in bone remodeling, which eventually leads to osteopenia, sparse trabecular bone, and decreased bone strength. When the trabecular bone structure in the necrotic area is subjected to a slight external force, microfractures will occur, and then the subchondral bone plate will fracture. As the disease progresses, the femoral head collapses and hip osteoarthritis develops (Shi et al., 2015; Zou et al., 2015; He et al., 2016).\nIcariin is the main active ingredient of Epimedium, which has certain curative effects in the treatment of bone defects, osteoporosis, and osteonecrosis. Icariin can reduce the damage of glucocorticoids to bone microvascular endothelial cells (BMECs), improve the autophagy of BMECs induced by low concentrations of glucocorticoids, protect endothelial cells, and promote neovascularization (Wu et al., 2017; Yu et al., 2019; Zhang et al., 2019). ICA was found to have estrogen-like effects that directly promote the growth and maturation of osteoblasts. ICA can also increase osteogenic factors\u2019 expression level and mineralization capacity to increase new bone formation (Wang et al., 2018) and can be used to regenerate bone defects and accelerate bone tissue repair (Zhang et al., 2017; Chen et al., 2019). At the same time, some studies have shown that ICA can inhibit bone loss and significantly improve osteoporosis (Liu et al., 2017; Tang et al., 2018). However, the effects of ICA on bone tissue morphology and structure in early ONFH pathological changes induced by glucocorticoids are less studied.",
+          "cos_sim_score": 0.5035690665245056,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10192577",
+          "title": "Phase-contrast imaging with synchrotron hard X-ray reveals the effect of icariin on bone tissue morphology and microstructure in rabbits with early glucocorticoid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10192577/",
+          "text": "FIGURE 2\nPhase-contrast imaging with synchrotron hard X-ray of the control group. (A) overall structure; (B) cancellous bone structure; (C) coronal reconstructions of trabecular bone; (D) cross-sectional reconstructions of trabecular bone.\nFigure 3 shows the 3D imaging results of the ultrastructure of bone tissue specimens in each group. In the control group, the bone trabeculae were arranged neatly and continuously, with small gaps, thicker bone trabeculae, dense structure, smooth surface, complete shape, and no defect (Figure 3A). In the GC group, specimens of the femoral head with osteonecrosis revealed a disordered and fractured trabecular bone arrangement, a significantly widened gap, a reduced thickness of the trabecular bone, a reduced structural density, a rough surface, visible defects, and a severely damaged trabecular bone structure (Figure 3B). The results showed that, under the action of a high concentration of GC, osteocyte necrosis, apoptosis, and bone mass loss were severe, resulting in a serious disruption of the structural integrity of the bone trabecula. In the osteonecrosis femoral head specimens of the ICA group, the microstructure of the trabecular bone was slightly degenerated, yet the overall structural integrity was better than seen in the GC group. The trabecular bone was irregularly arranged, and its surface was rough, displaying defects in some areas (Figure 3C). The results showed that ICA had a protective effect on bone cell destruction, bone tissue morphology, and bone microstructure caused by GC, and could enhance the body\u2019s ability to repair bone.\nFIGURE 3\nUltrastructural imaging of bone tissue. (A) Control group; (B) GC group; (C) ICA Group.\n3.2 Verification\nThis study verified the reliability of PCI with synchrotron hard X-ray technique by bone histomorphology and HE staining on the left femoral head in all groups. Micro-CT scanning reconstruction and HE staining showed no ONFH in the control group. In the ONFH identified by the PCI with synchrotron hard X-ray technique in the GC group, both Micro-CT scan reconstruction and HE staining revealed thinning of the necrotic cartilage and fracture of the subchondral bone plate. The number of bone trabeculae in the femoral head decreased, the structure was disordered, the gap widened, the arrangement was sparse and irregular, and the continuity of some bone trabeculae was interrupted. In ONFH identified by the PCI with synchrotron hard X-ray technique in the ICA group, Micro-CT scan reconstruction and HE staining observed results similar to those in the GC group, but the extent of obvious lesions was milder. Only a few trabecular arrangements became sparse and a few trabecular structures were interrupted. These results demonstrate the reliability of the PCI with synchrotron hard X-ray technique to identify ONFH and its efficacy in assessing the severity of ONFH.\n4 Discussion",
+          "cos_sim_score": 0.495596319437027,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10094204",
+          "title": "Notch-RBPJ Pathway for the Differentiation of Bone Marrow Mesenchymal Stem Cells in Femoral Head Necrosis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10094204/",
+          "text": "MP is commonly used to induce the establishment of FHN cell models, so BMSCs was exposed to MP for in vitro studies. Notch signaling is a highly conserved pathway that takes place via direct correlation between Notch receptors and ligands on neighboring cells [33]. According to our work, the Notch of BMSCs derived from spontaneous FHN broilers was activated, while the same result was found in vitro MP model (Figure 1 and Figure 2), which is consistent with the regulatory effect of MP/dexamethasone on human MSC [10,34]. At present, there are two views on the regulation of Notch signal on the differentiation of MSCs. On the one hand, Notch signal transduction promotes the mineralization of human bone-derived cells [35,36], on the other hand, it is believed that Notch RBP-Jk has a negative effect on BMP-induced MSCs differentiation [37,38,39]. Notch signaling affects bone remodeling and regeneration processes after fracture [40,41]. Notch receptors are upregulated during fracture healing and their pharmacological inhibition contributes to fracture healing [40], and the Notch ligand JAG-1 has a similar effect [41]. The addition of JAG-1 in the present study did aggravate the weakened osteogenesis of BMSCs induced by MP (Figure 3F,G). The present study\u2019s findings are consistent with Oldershaw et al., showing that sustained activation of the Notch pathway in BMSCs caused by JAG-1 treatment inhibited chondrogenic differentiation (Figure 3D,E) [42]. Notch signaling is obstructed by \u03b3-secretase inhibitor (DAPT), thereby inhibiting the expression of downstream target genes and repressing cell growth and proliferation [43,44]. In Figure 4, by inhibiting \u03b3-secretase activity, DAPT was able to attenuate the Notch activation induced by MP treatment and alleviate the MP-induced decrease in osteogenesis and chondrogenesis metabolism in BMSCs. These data (Figure 1, Figure 2, Figure 3 and Figure 4) reveal that the Notch pathway is involved in the regulation of osteogenesis and chondrogenic differentiation of BMSCs.\nThe activation of the Notch pathway triggers the release of NICD from the cell membrane and converts RBPJ from blocking to transcription of Notch target genes by supplementing additional coactivators upon nuclear transposition [45]. In this work, transfection with si-RBPJ attenuated the results of MP-induced reduction of bone formation and cartilage metabolism in BMSCs, which was consistent with exposure to DAPT, indicating that the protein and mRNA levels of Col2a1 were significantly increased with si-RBPJ compared with the MP treatment group (Figure 4 and Figure 5). Thus, we would predict that Notch-RBPJ modulates the osteogenic and chondrogenic differentiation of BMSCs in FHN progression.\nIn conclusion, we found that the Notch-RBPJ pathway was activated in FHN-affected broilers, suppressing the osteogenic and chondrogenic differentiation capacity of BMSCs (Figure 6).\n4. Materials and Methods\n4.1. Sample Collection\nThe spontaneous FHN and healthy broiler BMSCs were cultured separately at 21 days of age, and the difference in osteogenic, chondrogenic and lipogenic differentiation ability was examined to demonstrate that the occurrence of FHN is related to the change in the direction of BMSCs differentiation. Notch, as one of the most conserved pathways, has been studied more frequently on the regulation of stem cell differentiation, but there are few reports on the regulatory role of Notch in regulating the direction of BMSCs differentiation on the occurrence of FHN. The regulatory role of Notch in regulating the direction of BMSCs differentiation on FHN development has been rarely reported. BMSCs were isolated and cultured from healthy broilers at 10\u201321 days of age for in vitro experimental studies. Both sexes\u2019 broilers (Ross 308) were acquired from a farm in Jiangsu Province. Femoral tissue from normal broilers and spontaneous FHN broilers was collected and stored in liquid nitrogen, as previously reported [23,24]. All animal protocols were approved by the Animal Protection and Use Committee of Nanjing Agricultural University (#NJAU-Poult-2019102205, approved on 22 October 2019).\n4.2. Isolation, Culture, and Identification of Primary BMSCs",
+          "cos_sim_score": 0.441416472196579,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "probe_id": "200021_PM_at",
+  "gene_symbol": "CFL1",
+  "score": 1.0,
+  "SD_TestAUC": 0.0641500299099584,
+  "abs_fold_change": 0.5752,
+  "probe_count": 1,
+  "probe_ids": "200021_PM_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.5752,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:53:48",
+  "interpretation": "Cofilin-1 (CFL1) is an actin-binding protein that plays a crucial role in the dynamics of the cytoskeleton by depolymerizing filamentous actin (F-actin). This activity is essential for various cellular processes, including cell motility and morphology, which are critical in the context of bone health and repair. In the case of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the disruption of normal cellular functions due to steroid treatment may lead to altered actin dynamics, contributing to the pathophysiology of the disease. While direct evidence linking CFL1 specifically to SONFH is lacking, its involvement in actin regulation suggests a potential role in the disease's progression. Therefore, CFL1 may serve as a candidate biomarker for early detection of SONFH, although further studies are needed to establish its clinical relevance. The evidence supporting this interpretation is primarily inferred from its biological functions and associations with cellular processes relevant to bone health.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "CFL1 is implicated in actin dynamics, which may be disrupted in Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "CFL1 (P23528). https://www.uniprot.org/uniprotkb/P23528",
+    "CFL1 \u2014 CFL1. https://platform.opentargets.org/target/ENSG00000172757",
+    "CFL1 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000172757/associations",
+    "CFL1 \u2194 neuroblastoma. https://platform.opentargets.org/target/ENSG00000172757/associations",
+    "CFL1 \u2194 neoplasm. https://platform.opentargets.org/target/ENSG00000172757/associations",
+    "CFL1 \u2194 hepatocellular carcinoma. https://platform.opentargets.org/target/ENSG00000172757/associations",
+    "Cofilin 1. https://en.wikipedia.org/wiki/Cofilin_1",
+    "ADF/Cofilin family. https://en.wikipedia.org/wiki/ADF/Cofilin_family",
+    "Cofilin-2. https://en.wikipedia.org/wiki/Cofilin-2",
+    "Actin filament. https://en.wikipedia.org/wiki/Actin_filament"
+  ],
+  "token_usage": {
+    "prompt_tokens": 6016,
+    "completion_tokens": 271,
+    "total_tokens": 6287,
+    "estimated_cost_usd": 0.001065
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P23528",
+          "title": "CFL1 (P23528)",
+          "url": "https://www.uniprot.org/uniprotkb/P23528",
+          "text": "Protein: Cofilin-1\nFunction: Binds to F-actin and exhibits pH-sensitive F-actin depolymerizing activity (PubMed:11812157). In conjunction with the subcortical maternal complex (SCMC), plays an essential role for zygotes to progress beyond the first embryonic cell divisions via regulation of actin dynamics (PubMed:15580268). Required for the centralization of the mitotic spindle and symmetric division of zygotes (By similarity). Plays a role in the regulation of cell morphology and cytoskeletal organization in epithelial cells (PubMed:21834987). Required for the up-regulation of atypical chemokine receptor ACKR2 from endosomal compartment to cell membrane, increasing its efficiency in chemokine uptake and degradation (PubMed:23633677). Required for neural tube morphogenesis and neural crest cell migration (By similarity)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000172757::function",
+          "title": "CFL1 \u2014 CFL1",
+          "url": "https://platform.opentargets.org/target/ENSG00000172757",
+          "text": "Function: Binds to F-actin and exhibits pH-sensitive F-actin depolymerizing activity (PubMed:11812157). In conjunction with the subcortical maternal complex (SCMC), plays an essential role for zygotes to progress beyond the first embryonic cell divisions via regulation of actin dynamics (PubMed:15580268). Required for the centralization of the mitotic spindle and symmetric division of zygotes (By similarity). Plays a role in the regulation of cell morphology and cytoskeletal organization in epithelial cells (PubMed:21834987). Required for the up-regulation of atypical chemokine receptor ACKR2 from endosomal compartment to cell membrane, increasing its efficiency in chemokine uptake and degradation (PubMed:23633677). Required for neural tube morphogenesis and neural crest cell migration (By similarity).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172757::EFO_0005772",
+          "title": "CFL1 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000172757/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.514",
+          "cos_sim_score": 0.5136377184129143,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172757::EFO_0000621",
+          "title": "CFL1 \u2194 neuroblastoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000172757/associations",
+          "text": "Disease: neuroblastoma\nDescription: Neuroblastoma (NB) is the most common solid, extracranial childhood tumor. It is an aggressive pediatric cancer that originates from neural crest tissues of the sympathetic nervous system.\nAssociation score: 0.158",
+          "cos_sim_score": 0.1582719857121411,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172757::EFO_0000616",
+          "title": "CFL1 \u2194 neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000172757/associations",
+          "text": "Disease: neoplasm\nDescription: A benign or malignant tissue growth resulting from uncontrolled cell proliferation. Benign neoplastic cells resemble normal cells without exhibiting significant cytologic atypia, while malignant cells exhibit overt signs such as dysplastic features, atypical mitotic figures, necrosis, nuclear pleomorphism, and anaplasia. Representative examples of benign neoplasms include papillomas, cystadenomas, and lipomas; malignant neoplasms include carcinomas, sarcomas, lymphomas, and leukemias.\nAssociation score: 0.112",
+          "cos_sim_score": 0.11227893319580885,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172757::EFO_0000182",
+          "title": "CFL1 \u2194 hepatocellular carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000172757/associations",
+          "text": "Disease: hepatocellular carcinoma\nDescription: A malignant tumor that arises from hepatocytes. Hepatocellular carcinoma is relatively rare in the United States but very common in all African countries south of the Sahara and in Southeast Asia. Most cases are seen in patients over the age of 50 years, but this tumor can also occur in younger individuals and even in children. Hepatocellular carcinoma is more common in males than females and is associated with hepatitis B, hepatitis C, chronic alcohol abuse and cirrhosis. Serum elevation of alpha-fetoprotein occurs in a large percentage of patients with hepatocellular carcinoma. Grossly, hepatocellular carcinoma may present as a single mass, as multiple nodules, or as diffuse liver involvement. Microscopically, there is a wide range of differentiation from tumor to tumor (well differentiated to poorly differentiated tumors). Hepatocellular carcinomas quickly metastasize to regional lymph nodes and lung. The overall median survival of untreated liver cell carcinoma is about 4 months. The most effective treatment of hepatocellular carcinoma is complete resection of the tumor. Lately, an increasing number of tumors have been treated with liver transplantation.\nAssociation score: 0.108",
+          "cos_sim_score": 0.10829525806668805,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Cofilin 1",
+          "title": "Cofilin 1",
+          "url": "https://en.wikipedia.org/wiki/Cofilin_1",
+          "text": "Cofilin 1 (non-muscle; n-cofilin), also known as CFL1, is a human gene, part of the ADF/cofilin family.\nCofilin is a widely distributed intracellular actin-modulating protein that binds and depolymerizes filamentous F-actin and inhibits the polymerization of monomeric G-actin in a pH-dependent manner. It is involved in the translocation of actin-cofilin complex from cytoplasm to nucleus.\nOne group reports that reelin signaling leads to serine3-phosphorylation of cofilin-1, and this interaction may play a role in the reelin-related regulation of neuronal migration.\n\nInteractions\nCofilin 1 has been shown to interact with HSPH1 and LIMK1.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.5789998769760132,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::ADF/Cofilin family",
+          "title": "ADF/Cofilin family",
+          "url": "https://en.wikipedia.org/wiki/ADF/Cofilin_family",
+          "text": "ADF/cofilin is a family of actin-binding proteins associated with the rapid depolymerization of actin microfilaments that give actin its characteristic dynamic instability. This dynamic instability is central to actin's role in muscle contraction, cell motility and transcription regulation.\nThree highly conserved and highly (70%-82%) identical genes belonging to this family have been described in humans and mice:\n\nCFL1, coding for cofilin 1 (non-muscle, or n-cofilin)\nCFL2, coding for cofilin 2 (found in muscle: m-cofilin)\nDSTN, coding for destrin, also known as ADF or actin depolymerizing factor\nActin-binding proteins regulate assembly and disassembly of actin filaments. Cofilin, a member of the ADF/cofilin family is actually a protein with 70% sequence identity to destrin, making it part of the ADF/cofilin family of small ADP-binding proteins. The protein binds to actin monomers and filaments, G actin and F actin, respectively. Cofilin causes depolymerization at the minus end of filaments, thereby preventing their reassembly. The protein is known to sever actin filaments by creating more positive ends on filament fragments. Cofilin/ADF (destrin) is likely to sever F-actin without capping  and prefers ADP-actin. These monomers can be recycled by profilin, activating monomers to go back into filament form again by an ADP-to-ATP exchange. ATP-actin is then available for assembly.\n\nStructure\nThe structure of actin depolymerizing factors is highly conserved across many organism due to actin's importance in many cellular processes. Proteins of the actin depolymerizing factor family characteristically consist of five beta sheets, four antiparallel and one parallel, and four alpha helices with a central alpha helix providing the structure and stability of the proteins. The actin depolymerizing factor homology domain (ADF-H domain) allows for binding to actin subunits and includes the central alpha helix, the N-terminus extension, and the C terminus helix.\n\nThe N-terminus extension consists of a tilted loop that facilitates binding to G-actin but not F-actin due to steric hindrance present in F-actin.\nThe C-terminus  can form hydrogen bonds to F actin through its amide backbone and a serine at position S274. This serine is especially highly evolutionarily conserved due to its importance in actin binding.\nThe central alpha helix is inserted into the hydrophobic cleft in between the first and third subunits of actin during actin binding.\nCofilin binds monomeric (G-actin) and filamentous actin (F-actin). Its binding affinities are higher for ADP-actin over ADP-Pi and ATP-actin. Its binding changes the twist of F-actin. The structure of ADF was first characterized in 1980 by James Bamburg. Four actin histidines near the cofilin binding site may be needed for cofilin/actin interaction, but pH sensitivity alone may not be enough of an explanation for the levels of interaction encountered. Cofilin is accommodated in ADP-F actin because of increased flexibility in this form of actin. Binding by both cofilin and ADF (destrin) causes the crossover length of the filament to be reduced. Therefore, strains increase filament dynamics and the level of filament fragmentation observed.",
+          "cos_sim_score": 0.511009931564331,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Cofilin-2",
+          "title": "Cofilin-2",
+          "url": "https://en.wikipedia.org/wiki/Cofilin-2",
+          "text": "Cofilin 2 (muscle) also known as CFL2 is a protein which in humans is encoded by the CFL2 gene.\n\nFunction\nCofilin is a widely distributed intracellular actin-modulating protein that binds and depolymerizes filamentous F-actin and inhibits the polymerization of monomeric G-actin in a pH-dependent manner. Cofilin-2 is a member of the AC group of proteins that also includes cofilin-1 (CFL1) and destrin (DSTN), all of which regulate actin-filament dynamics. The CFL2 gene encodes a skeletal muscle-specific isoform localized to the thin filaments, where it exerts its effect on actin, in part through interactions with tropomyosins.\n\nClinical significance\nMutations in the CFL2 gene are associated with nemaline myopathy. Deficiency of cofilin-2 may result in reduced depolymerization of actin filaments, causing their accumulation in nemaline bodies, minicores, and, possibly concentric laminated bodies.\n\nReferences\nExternal links\nGeneReviews/NCBI/NIH/UW entry on Nemaline Myopathy\nHuman CFL2 genome location and CFL2 gene details page  in the UCSC Genome Browser.\n\nFurther reading\n\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.489825963973999,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::ADF/Cofilin family",
+          "title": "ADF/Cofilin family",
+          "url": "https://en.wikipedia.org/wiki/ADF/Cofilin_family",
+          "text": "Function\nCofilin is a ubiquitous actin-binding factor required for the reorganization of actin filaments. ADF/Cofilin family members bind G-actin monomers and depolymerize actin filaments through two mechanisms: severing and increasing the off-rate for actin monomers from the pointed end. \"Older\" ADP/ADP-Pi actin filaments free of tropomyosin and proper pH are required for cofilin to function effectively. In the presence of readily available ATP-G-actin cofilin speeds up actin polymerization via its actin-severing activity (providing free barbed ends for further polymerization and nucleation by the Arp2/3 complex). As a long-lasting in vivo effect, cofilin recycles older ADP-F-actin, helping cell to maintain ATP-G-actin pool for sustained motility. pH, phosphorylation and phosphoinositides regulate cofilin's binding and associating activity with actin\nThe Arp2/3 complex and cofilin work together to reorganize the actin filaments in the cytoskeleton. Arp 2/3, an actin binding proteins complex, binds to the side of ATP-F-actin near the growing barbed end of the filament, causing nucleation of a new F-actin branch, while cofilin-driven depolymerization takes place after dissociating from the Arp2/3 complex. They also work together to reorganize actin filaments in order to traffic more proteins by vesicle to continue the growth of filaments.\nCofilin also binds with other proteins such as myosin, tropomyosin, \u03b1-actinin, gelsolin and scruin. These proteins compete with cofilin for actin binding. Cofilin also play role in innate immune response.\n\nIn a Model Organism\nADF/cofilin is found in ruffling membranes and at the leading edge of mobile cells. In particular, ADF/cofilin promotes disassembly of the filament at the rear of the brush in Xenopus laevis lamellipodia, a protrusion from fibroblast cells characterized by actin networks. Subunits are added to barbed ends and lost from rear-facing pointed ends. Increasing the rate constant, k, for actin dissociation from the pointed ends was found to sever actin filaments. Through this experimentation, it was found that ATP or ADP-Pi are probably involved in binding to actin filaments.\n\nMechanism of Action\nF-actin (filamentous actin) is stabilized when it is bound to ATP due to the presence of a serine on the second subunit of actin that is able to form hydrogen bonds to the last phosphate group in ATP and a nearby histidine attached to the main loop. This interaction stabilizes the structure internally due to the interactions between the main loop and the second subunit. When ATP is hydrolyzed to ADP, the serine can no longer form a hydrogen bond to ADP due to the loss of the inorganic phosphate which causes the serine side chain to twist, causing a conformational change in the second subunit. This conformational change also causes the serine to no longer be able to form a hydrogen bond with the histidine attached to the main loop and this weakens the linkage between subunits one and three, causing the entire molecule to twist. This twisting puts strain on the molecule and destabilizes it.\nActin depolymerizing factor is able to bind to the destabilized F-actin by inserting the central helix into the cleft between the first and third subunits of actin. Actin depolymerizing factor binds F-actin cooperatively and induces a conformational change in F-actin that causes it to twist further and become more destabilized. This twisting causes severing of the bond between actin monomers, depolymerizing the filament.\n\nRegulation\nPhosphorylation\nActin depolymerization factor is regulated by the phosphorylation of a serine on the C terminus by LIM kinases. Actin depolymerizing factor is activated when it is dephosphorylated and inhibited when it is phosphorylated.\n\npH\nAn alkaline environment stabilizes the inorganic phosphate released when ATP is hydrolyzed to ADP, so therefore a higher pH increases the favorability of the ATP bound to F-actin to be hydrolyzed to ADP resulting in the destabilization of actin.",
+          "cos_sim_score": 0.41762837767601013,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Actin filament",
+          "title": "Actin filament",
+          "url": "https://en.wikipedia.org/wiki/Actin_filament",
+          "text": "Associated proteins\nIn non-muscle cells, actin filaments are formed close to membrane surfaces. Their formation and turnover are regulated by many proteins, including:\n\nFilament end-tracking protein (Formins, VASP and N-WASP)\nFilament-nucleator known as the Arp2/3 complex (Actin-related protein-2/3)\nFilament cross-linkers (e.g., \u03b1-actinin, fascin, and fimbrin)\nActin monomer-binding proteins profilin and thymosin \u03b24\nFilament barbed-end cappers such as Capping Protein and CapG, etc.\nFilament-severing proteins like gelsolin.\nActin depolymerizing proteins such as ADF/cofilin.\nThe actin filament network in non-muscle cells is highly dynamic. The actin filament network is arranged with the barbed-end of each filament attached to the cell's peripheral membrane by means of clamped-filament elongation motors, the above-mentioned \"actoclampins\", formed from a filament barbed-end and a clamping protein (formins, VASP, Mena, WASP, and N-WASP).  The primary substrate for these elongation motors is profilin-actin-ATP complex which is directly transferred to elongating filament ends.  The pointed-end of each filament is oriented toward the cell's interior. In the case of lamellipodial growth, the Arp2/3 complex generates a branched network, and in filopodia a parallel array of filaments is formed.\n\nActin acts as a track for myosin motor motility\nMyosin motors are intracellular ATP-dependent enzymes that bind to and move along actin filaments.  Various classes of myosin motors have very different behaviors, including exerting tension in the cell and transporting cargo vesicles.\n\nA proposed model \u2013 actoclampins track filament ends\nOne proposed model suggests the existence of actin filament barbed-end-tracking molecular motors termed \"actoclampins\". The proposed actoclampins generate the propulsive forces needed for actin-based motility of lamellipodia, filopodia, invadipodia, dendritic spines, intracellular vesicles, and motile processes in endocytosis, exocytosis, podosome formation, and phagocytosis. Actoclampins also propel such intracellular pathogens as Listeria monocytogenes, Shigella flexneri, Vaccinia and Rickettsia. When assembled under suitable conditions, these end-tracking molecular motors can also propel biomimetic particles.\nThe term actoclampin is derived from acto- to indicate the involvement of an actin filament, as in actomyosin, and clamp to indicate a clasping device used for strengthening flexible or moving objects, and for securely fastening two or more components, followed by the suffix -in to indicate its protein origin. An actin filament end-tracking protein may thus be termed a clampin.\nDickinson and Purich recognized that prompt ATP hydrolysis could explain the forces achieved during actin-based motility.  They proposed a simple mechano-enzymatic sequence known as the Lock, Load & Fire Model, in which an end-tracking protein remains tightly bound (locked or clamped) onto the end of one sub-filament of the double-stranded actin filament. After binding to Glycyl-Prolyl-Prolyl-Prolyl-Prolyl-Prolyl-registers on tracker proteins, Profilin-ATP-actin is delivered (\"loaded\") to the unclamped end of the other sub-filament, whereupon ATP within the already clamped terminal subunit of the other subfragment is hydrolyzed (\"fired\"), providing the energy needed to release that arm of the end-tracker, which then can bind another Profilin-ATP-actin to begin a new monomer-addition round.\n\nSteps involved\nThe following steps describe one force-generating cycle of an actoclampin molecular motor:",
+          "cos_sim_score": 0.27910488843917847,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

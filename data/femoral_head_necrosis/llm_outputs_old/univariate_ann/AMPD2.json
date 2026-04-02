@@ -1,0 +1,168 @@
+{
+  "rf_rank": 25,
+  "probe_id": "11724224_a_at",
+  "gene_symbol": "AMPD2",
+  "score": 0.62,
+  "rf_n_nodes": 10,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 1.035,
+  "log_fc": 1.035,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11724224_a_at",
+  "max_score": 0.62,
+  "mean_abs_fold_change": 1.035,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T17:38:03",
+  "interpretation": "AMPD2 encodes the enzyme AMP deaminase 2, which is crucial for energy metabolism by catalyzing the conversion of adenosine monophosphate (AMP) to inosine monophosphate (IMP) in the purine nucleotide cycle. This process is vital for maintaining cellular energy levels, particularly in tissues with high energy demands, such as bone. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), disruptions in energy metabolism can contribute to bone cell death and necrosis, suggesting a potential link between AMPD2 activity and the disease. However, the evidence connecting AMPD2 directly to SONFH is limited, primarily indicating its role in energy metabolism rather than specific disease mechanisms. Therefore, while AMPD2 may play a role in the broader context of bone health and metabolism, its potential as a biomarker for early detection of SONFH remains weak and speculative. Further studies are needed to clarify its relevance in this specific disease context.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "AMPD2 may influence energy metabolism in bone cells, which is relevant to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "AMPD2 (Q01433). https://www.uniprot.org/uniprotkb/Q01433",
+    "AMPD2 (Q01433-2). https://www.uniprot.org/uniprotkb/Q01433-2",
+    "AMPD2 (Q01433-4). https://www.uniprot.org/uniprotkb/Q01433-4",
+    "AMPD2 \u2014 AMPD2. https://platform.opentargets.org/target/ENSG00000116337",
+    "AMPD2 \u2194 pontocerebellar hypoplasia type 9. https://platform.opentargets.org/target/ENSG00000116337/associations",
+    "AMPD2 \u2194 pontocerebellar hypoplasia. https://platform.opentargets.org/target/ENSG00000116337/associations",
+    "AMPD2 \u2194 hereditary spastic paraplegia 63. https://platform.opentargets.org/target/ENSG00000116337/associations",
+    "AMPD2 \u2194 hereditary spastic paraplegia. https://platform.opentargets.org/target/ENSG00000116337/associations",
+    "AMP deaminase 2. https://en.wikipedia.org/wiki/AMP_deaminase_2",
+    "Purine nucleotide cycle. https://en.wikipedia.org/wiki/Purine_nucleotide_cycle",
+    "AMP deaminase. https://en.wikipedia.org/wiki/AMP_deaminase",
+    "Adenosine monophosphate deaminase deficiency type 1. https://en.wikipedia.org/wiki/Adenosine_monophosphate_deaminase_deficiency_type_1"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4896,
+    "completion_tokens": 277,
+    "total_tokens": 5173,
+    "estimated_cost_usd": 0.000901
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q01433",
+          "title": "AMPD2 (Q01433)",
+          "url": "https://www.uniprot.org/uniprotkb/Q01433",
+          "text": "Protein: AMP deaminase 2\nFunction: AMP deaminase plays a critical role in energy metabolism. Catalyzes the deamination of AMP to IMP and plays an important role in the purine nucleotide cycle",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q01433-2",
+          "title": "AMPD2 (Q01433-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q01433-2",
+          "text": "Protein: Isoform Ex1A-2-3 of AMP deaminase 2",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q01433-4",
+          "title": "AMPD2 (Q01433-4)",
+          "url": "https://www.uniprot.org/uniprotkb/Q01433-4",
+          "text": "Protein: Isoform Ex1B-3 of AMP deaminase 2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000116337::function",
+          "title": "AMPD2 \u2014 AMPD2",
+          "url": "https://platform.opentargets.org/target/ENSG00000116337",
+          "text": "Function: AMP deaminase plays a critical role in energy metabolism. Catalyzes the deamination of AMP to IMP and plays an important role in the purine nucleotide cycle. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000116337::MONDO_0014351",
+          "title": "AMPD2 \u2194 pontocerebellar hypoplasia type 9",
+          "url": "https://platform.opentargets.org/target/ENSG00000116337/associations",
+          "text": "Disease: pontocerebellar hypoplasia type 9\nDescription: Any non-syndromic pontocerebellar hypoplasia in which the cause of the disease is a mutation in the AMPD2 gene.\nAssociation score: 0.815",
+          "cos_sim_score": 0.8149450703818453,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000116337::MONDO_0020135",
+          "title": "AMPD2 \u2194 pontocerebellar hypoplasia",
+          "url": "https://platform.opentargets.org/target/ENSG00000116337/associations",
+          "text": "Disease: pontocerebellar hypoplasia\nDescription: Pontocerebellar hypoplasias (PCH) are a rare heterogeneous group of diseases characterized by hypoplasia and atrophy and/or early neurodegeneration of the cerebellum and pons. Eight subtypes named type 1-8 have been described, generally inherited in an autosomal recessive pattern.\nAssociation score: 0.664",
+          "cos_sim_score": 0.6641914624573192,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000116337::MONDO_0014305",
+          "title": "AMPD2 \u2194 hereditary spastic paraplegia 63",
+          "url": "https://platform.opentargets.org/target/ENSG00000116337/associations",
+          "text": "Disease: hereditary spastic paraplegia 63\nDescription: An extremely rare and complex form of hereditary spastic paraplegia characterized by an onset in infancy of spastic paraplegia (presenting with delayed walking and a scissors gait) associated with short stature, and normal cognition. Periventricular deep white matter changes in the corpus callosum are noted on brain imaging. SPG63 is caused by a homozygous mutation in the AMPD2 gene (1p13.3) encoding AMP deaminase 2.\nAssociation score: 0.645",
+          "cos_sim_score": 0.6451549722458255,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000116337::MONDO_0019064",
+          "title": "AMPD2 \u2194 hereditary spastic paraplegia",
+          "url": "https://platform.opentargets.org/target/ENSG00000116337/associations",
+          "text": "Disease: hereditary spastic paraplegia\nDescription: Hereditary spastic paraplegias (HSP) comprise a genetically and clinically heterogeneous group of neurodegenerative disorders characterized by progressive spasticity and hyperreflexia of the lower limbs.\nAssociation score: 0.599",
+          "cos_sim_score": 0.5990246264118126,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::AMP deaminase 2",
+          "title": "AMP deaminase 2",
+          "url": "https://en.wikipedia.org/wiki/AMP_deaminase_2",
+          "text": "AMP deaminase 2 is an enzyme that in humans is encoded by the AMPD2 gene. \nHigh AMPD2 expression levels correlate with poor patient outcome and a proliferative tumor phenotype in undifferentiated pleomorphic sarcoma (UPS).\n\nReferences\nExternal links\nHuman AMPD2 genome location and AMPD2 gene details page  in the UCSC Genome Browser.\n\n\n== Further reading ==",
+          "cos_sim_score": 0.6280149221420288,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Purine nucleotide cycle",
+          "title": "Purine nucleotide cycle",
+          "url": "https://en.wikipedia.org/wiki/Purine_nucleotide_cycle",
+          "text": "AMP deaminase deficiency (MADD)\nAMP deaminase deficiency (formally known as myoadenylate deaminase deficiency or MADD) is a metabolic myopathy which results in excessive AMP buildup brought on by exercise. AMP deaminase is needed to convert AMP into IMP in the purine nucleotide cycle. Without this enzyme, the excessive AMP buildup is initially due to the adenylate kinase (myokinase) reaction which occurs after a muscle contraction. However, AMP is also used to allosterically regulate the enzyme myophosphorylase (see Glycogen phosphorylase \u00a7 Regulation), so the initial buildup of AMP triggers the enzyme myophosphorylase to release muscle glycogen into glucose-1-P (glycogen\u2192glucose-1-P), which eventually depletes the muscle glycogen, which in turn triggers protein metabolism, which then produces even more AMP. In AMP deaminase deficiency, excess adenosine is converted into uric acid in the following reaction:\n\nAMP \u2192 Adenosine \u2192 Inosine \u2192 Hypoxanthine \u2192 Xanthine \u2192 Uric Acid\n\nGlycogenoses (GSDs)\nMyogenic hyperuricemia, as a result of the purine nucleotide cycle running when ATP reservoirs in muscle cells are low (ADP > ATP), is a common pathophysiologic feature of glycogenoses such as GSD-III, GSD-V and GSD-VII, as they are metabolic myopathies which impair the ability of ATP (energy) production within muscle cells. In these metabolic myopathies, myogenic hyperuricemia is exercise-induced; inosine, hypoxanthine and uric acid increase in plasma after exercise and decrease over hours with rest. Excess AMP (adenosine monophosphate) is converted into uric acid. \n\nAMP \u2192 IMP \u2192 Inosine \u2192 Hypoxanthine \u2192 Xanthine \u2192 Uric acid\nHyperammonemia is also seen post-exercise in McArdle disease (GSD-V) and phosphoglucomutase deficiency (PGM1-CDG, formerly GSD-XIV), due to the purine nucleotide cycle running when the ATP reservoir is low due to the glycolytic block.AMP + H2O + H+ \u2192 IMP + NH3\n\nSee also\nAMP deaminase deficiency (MADD)\nBioenergetic systems\nGlycogenoses (GSDs)\nMetabolic myopathies\nPhosphagen System (ATP-PCr)\nProtein catabolism\nUric Acid \u00a7 High uric acid\n\n\n== References ==",
+          "cos_sim_score": 0.5564559698104858,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::AMP deaminase",
+          "title": "AMP deaminase",
+          "url": "https://en.wikipedia.org/wiki/AMP_deaminase",
+          "text": "AMP deaminase 1 is an enzyme that in humans is encoded by the AMPD1 gene.\nAdenosine monophosphate deaminase is an enzyme that converts adenosine monophosphate (AMP) to inosine monophosphate (IMP), freeing an ammonia molecule in the process.\n\nFunction\nAdenosine monophosphate deaminase 1 catalyzes the deamination of AMP to IMP in skeletal muscle and plays an important role in the purine nucleotide cycle. Two other genes have been identified, AMPD2 and AMPD3, for the liver- and erythrocyte-specific isoforms, respectively. Deficiency of the muscle-specific enzyme is apparently a common cause of exercise-induced myopathy and probably the most common cause of metabolic myopathy in the human.\nA research report shows that the widely prescribed diabetes medication metformin works on AMP-activated kinase (AMPK) by directly inhibiting AMP deaminase, thereby increasing cellular AMP.\n\nRegulation\nIt has been shown that in environments with high potassium concentrations, AMP-deaminase is regulated by ATP and ADP through a \u201cKm-type\u201d mechanism. In low potassium ion concentrations, a mixed \u201cKm V-type\u201d of the regulation is observed.\n\nPathology\nAMPD1 deficiency, also known as myoadenylate deaminase deficiency, is a disorder in which the body produces insufficient AMP deaminase.\n\nReferences\nFurther reading\nExternal links\nAMP+Deaminase at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nHuman AMPD1 genome location and AMPD1 gene details page  in the UCSC Genome Browser.",
+          "cos_sim_score": 0.5300039052963257,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Adenosine monophosphate deaminase deficiency type 1",
+          "title": "Adenosine monophosphate deaminase deficiency type 1",
+          "url": "https://en.wikipedia.org/wiki/Adenosine_monophosphate_deaminase_deficiency_type_1",
+          "text": "Potential complications\nThere is an increased risk that statin (cholesterol-reducing drugs) will cause myopathy (muscle weakness) in individuals with MADD.\nAnesthesia has the potential to cause malignant hyperthermia, an uncontrolled increase in body temperature, and permanent muscle damage in patients with MADD. Individuals with MADD are advised to notify their anesthesiologist about their condition prior to surgery.\nIn most cases where myopathy is present with MADD, a second muscle disease is present and symptoms are worse than either disease in isolation.\n\nCauses\nAMP deaminase is an enzyme that converts adenosine monophosphate (AMP) to inosine monophosphate (IMP), freeing an ammonia molecule in the process. It is a part of the metabolic process that converts sugar, fat, and protein into cellular energy. In order to use energy, a cell converts one of the above fuels into adenosine triphosphate (ATP) via the mitochondria. Cellular processes, especially muscles, then convert the ATP into adenosine diphosphate (ADP), freeing the energy to do work.\nDuring heavy or prolonged mild to moderate activity, other enzymes convert two molecules of ADP into one ATP molecule and one AMP molecule, making more ATP available to supply energy. AMP is normally converted into IMP by myoadenylate deaminase\u2014so myoadenylate deaminase deficiency reduces energy that would be available to the cell through the purine nucleotide cycle. Instead of being converted to IMP, the AMP builds up in the cells of affected individuals, spills into the blood, and is eventually metabolized in the liver. In persons with a defective enzyme, 5'-nucleotidase removes the ribose and phosphorus from AMP, increasing levels of adenosine measured in muscle cells by ~16\u201325\u00d7, after exercise.\n\nMechanism\nThis failure to deaminate the AMP molecules has three major effects. First, significant amounts of AMP are lost from the cell and the body. Second, ammonia is not freed when the cell does work. Third, the level of IMP in the cell is not maintained.",
+          "cos_sim_score": 0.4368098974227905,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Adenosine monophosphate deaminase deficiency type 1",
+          "title": "Adenosine monophosphate deaminase deficiency type 1",
+          "url": "https://en.wikipedia.org/wiki/Adenosine_monophosphate_deaminase_deficiency_type_1",
+          "text": "As the short-term regulation of ATP production becomes very weak after the exhaustion of glycogen, the medium-term regulation becomes enabled, but with a progressively weaker authority at higher purine nucleotide energy charge levels, which causes some differences in symptoms compared to McArdle's. In McArdle's, the highly active AMP deaminase, which additionally experiences amplification from the bloated AMP pool due to the lack of the moderating effect of myophosphorylase, is able to produce a readily observable \"second wind\" phenomenon almost exactly 7 minutes after a significant load increment. In AMPD deficiency, glycogen-less muscles will feel mostly the same by the time they become able to take another load increment. A load decrement may produce some sense of relief, though, if the pool of the citric acid cycle intermediates built up so far is sufficient to maintain full purine nucleotide energy charge at the lower load.\nIt is unclear, what, if anything, does it take to unknowingly trigger rhabdomyolysis at this point, assuming the muscle cell is otherwise healthy. Adenosine production and lack of ammonia overproduction seem to strongly suppress rhabdomyolysis down to the purine nucleotide energy charge level, where the cell is able to signal pain, or where individual muscle fibers start cramping (fail to relax from contraction in sync with the rest of the muscle), or the whole muscle fails to contract (when walking quickly downhill), allowing the person to appropriately modulate the exertion.\nMost of the AMP probably spills into blood unchanged, and is gradually returned to the muscle cell, if its concentration there falls due to gradual recharge to ATP. The blood thus plays a role of a big AMP buffer. Idle muscles may also take up some free AMP. The spillover also limits, how much the residual AMPD activity can be amplified in this state. Thus, it may take the residual AMPD activity less time to build up citric acid cycle intermediates, when the whole body is warmed up for an exercise at the same time, rather than a specific group of muscles needed in the exercise.\nIn case of leg muscles, where circulation is substantially dependent on their cyclical contraction when the body is upright, a small but useful degree of initial up-regulation of the citric acid cycle may be achieved just by standing still for a few minutes. It is most useful when a long period of rest, or sitting in a vehicle, must be followed by brisk walking.\nIf the person keeps standing still for longer, rather than restoring circulation in the leg muscles (e.g. by sitting down, walking, or cycling), the ammonia, produced by the amplified residual AMPD activity, may accumulate in the muscle cells and in the surrounding tissues to toxic levels, and may also indirectly affect other organs. There is little or no warning for nearing toxicity, because the purine nucleotide energy charge is still relatively high, the leg muscles do not cramp, and remain functional. In contrast, while muscle glycogen is available, accumulation of lactic acid in this situation would produce a noticeable sensation. On the other hand, in persons with balanced AMPD and myophosphorylase activities in muscle cells, lactic acid and ammonia are produced simultaneously, counteracting each other's effects to some degree.\nSome seldom used but strong voluntary muscles, such as those involved in \"pushing\" during the act of defecation, are not tuned for aerobic mode, and may dump plenty of purines during their short work routine, if it happens in this state.",
+          "cos_sim_score": 0.40666767954826355,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

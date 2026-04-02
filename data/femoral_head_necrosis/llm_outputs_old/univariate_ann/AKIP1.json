@@ -1,0 +1,167 @@
+{
+  "rf_rank": 35,
+  "probe_id": "11756746_s_at",
+  "gene_symbol": "AKIP1",
+  "score": 0.58,
+  "rf_n_nodes": 15,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 1.1032,
+  "log_fc": 1.1032,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11756746_s_at",
+  "max_score": 0.58,
+  "mean_abs_fold_change": 1.1032,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T20:21:58",
+  "interpretation": "AKIP1 (A-kinase-interacting protein 1) enhances the transcriptional activity of NF-kappa-B by regulating the nuclear localization and phosphorylation of its subunit RELA. This pathway is crucial in inflammatory responses and bone metabolism, which are relevant to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH). While there is no direct evidence linking AKIP1 to SONFH, its role in modulating NF-kappa-B activity suggests a potential involvement in the inflammatory processes that contribute to osteonecrosis. The evidence retrieved primarily supports its biological function rather than a specific connection to SONFH, leading to a lower confidence in its clinical relevance as a biomarker. Therefore, while AKIP1 may have some biological plausibility in the context of SONFH, its potential as a clinically actionable biomarker remains weak.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "AKIP1 may play a role in the inflammatory processes associated with Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) through its regulation of NF-kappa-B.",
+  "citations": [
+    "AKIP1 (Q9NQ31). https://www.uniprot.org/uniprotkb/Q9NQ31",
+    "AKIP1 (Q9NQ31-3). https://www.uniprot.org/uniprotkb/Q9NQ31-3",
+    "AKIP1 (Q9NQ31-2). https://www.uniprot.org/uniprotkb/Q9NQ31-2",
+    "AKIP1 \u2014 AKIP1. https://platform.opentargets.org/target/ENSG00000166452",
+    "AKIP1 \u2194 hyperpituitarism. https://platform.opentargets.org/target/ENSG00000166452/associations",
+    "AKIP1 \u2194 neoplasm. https://platform.opentargets.org/target/ENSG00000166452/associations",
+    "AKIP1 \u2194 prostate carcinoma. https://platform.opentargets.org/target/ENSG00000166452/associations",
+    "AKIP1 \u2194 gastric cancer. https://platform.opentargets.org/target/ENSG00000166452/associations",
+    "Janus kinase and microtubule-interacting protein 1. https://en.wikipedia.org/wiki/Janus_kinase_and_microtubule-interacting_protein_1",
+    "Mitogen-activated protein kinase. https://en.wikipedia.org/wiki/Mitogen-activated_protein_kinase",
+    "Protein kinase A. https://en.wikipedia.org/wiki/Protein_kinase_A"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5655,
+    "completion_tokens": 253,
+    "total_tokens": 5908,
+    "estimated_cost_usd": 0.001
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9NQ31",
+          "title": "AKIP1 (Q9NQ31)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9NQ31",
+          "text": "Protein: A-kinase-interacting protein 1\nFunction: Enhances NF-kappa-B transcriptional activity by regulating the nuclear localization of the NF-kappa-B subunit RELA and promoting the phosphorylation of RELA by PRKACA. Regulates the effect of the cAMP-dependent protein kinase signaling pathway on the NF-kappa-B activation cascade",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9NQ31-3",
+          "title": "AKIP1 (Q9NQ31-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9NQ31-3",
+          "text": "Protein: Isoform 3 of A-kinase-interacting protein 1",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9NQ31-2",
+          "title": "AKIP1 (Q9NQ31-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9NQ31-2",
+          "text": "Protein: Isoform 2 of A-kinase-interacting protein 1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000166452::function",
+          "title": "AKIP1 \u2014 AKIP1",
+          "url": "https://platform.opentargets.org/target/ENSG00000166452",
+          "text": "Function: Enhances NF-kappa-B transcriptional activity by regulating the nuclear localization of the NF-kappa-B subunit RELA and promoting the phosphorylation of RELA by PRKACA. Regulates the effect of the cAMP-dependent protein kinase signaling pathway on the NF-kappa-B activation cascade.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000166452::EFO_1000973",
+          "title": "AKIP1 \u2194 hyperpituitarism",
+          "url": "https://platform.opentargets.org/target/ENSG00000166452/associations",
+          "text": "Disease: hyperpituitarism\nDescription: Disease of the glandular, anterior portion of the pituitary (pituitary gland, anterior) resulting in hypersecretion of adenohypophyseal hormones such as growth hormone; prolactin; thyrotropin; luteinizing hormone; follicle stimulating hormone ; and adrenocorticotropic hormone. Hyperpituitarism usually is caused by a functional adenoma.\nAssociation score: 0.210",
+          "cos_sim_score": 0.20987420093863865,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000166452::EFO_0000616",
+          "title": "AKIP1 \u2194 neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000166452/associations",
+          "text": "Disease: neoplasm\nDescription: A benign or malignant tissue growth resulting from uncontrolled cell proliferation. Benign neoplastic cells resemble normal cells without exhibiting significant cytologic atypia, while malignant cells exhibit overt signs such as dysplastic features, atypical mitotic figures, necrosis, nuclear pleomorphism, and anaplasia. Representative examples of benign neoplasms include papillomas, cystadenomas, and lipomas; malignant neoplasms include carcinomas, sarcomas, lymphomas, and leukemias.\nAssociation score: 0.113",
+          "cos_sim_score": 0.11326299764449835,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000166452::EFO_0001663",
+          "title": "AKIP1 \u2194 prostate carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000166452/associations",
+          "text": "Disease: prostate carcinoma\nDescription: A carcinoma that arises from epithelial cells of the prostate gland.\nAssociation score: 0.107",
+          "cos_sim_score": 0.10730133913048713,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000166452::MONDO_0001056",
+          "title": "AKIP1 \u2194 gastric cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000166452/associations",
+          "text": "Disease: gastric cancer\nDescription: A primary or metastatic malignant neoplasm involving the stomach.\nAssociation score: 0.101",
+          "cos_sim_score": 0.10097605920728586,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Janus kinase and microtubule-interacting protein 1",
+          "title": "Janus kinase and microtubule-interacting protein 1",
+          "url": "https://en.wikipedia.org/wiki/Janus_kinase_and_microtubule-interacting_protein_1",
+          "text": "Janus kinase and microtubule-interacting protein 1 is a protein in humans encoded by the JAKMIP1 gene.\n\n\n== References ==",
+          "cos_sim_score": 0.5847904682159424,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Mitogen-activated protein kinase",
+          "title": "Mitogen-activated protein kinase",
+          "url": "https://en.wikipedia.org/wiki/Mitogen-activated_protein_kinase",
+          "text": "In animals\nThe ERK1/2 pathway of mammals is probably the best-characterized MAPK system. The most important upstream activators of this pathway are the Raf proteins (A-Raf, B-Raf or c-Raf), the key mediators of response to growth factors (EGF, FGF, PDGF, etc.); but other MAP3Ks such as c-Mos and Tpl2/Cot can also play the same role. All these enzymes phosphorylate and thus activate the MKK1 and/or MKK2 kinases, that are highly specific activators for ERK1 and ERK2. The latter phosphorylate a number of substrates important for cell proliferation, cell cycle progression, cell division and differentiation (RSK kinases, Elk-1 transcription factor, etc.)\nIn contrast to the relatively well-insulated ERK1/2 pathway, mammalian p38 and JNK kinases have most of their activators shared at the MAP3K level (MEKK1, MEKK4, ASK1, TAK1, MLK3, TAOK1, etc.). In addition, some MAP2K enzymes may activate both p38 and JNK (MKK4), while others are more specific for either JNK (MKK7) or p38 (MKK3 and MKK6). Due to these interlocks, there are very few if any stimuli that can elicit JNK activation without simultaneously activating p38 or reversed. Both JNK and p38 signaling pathways are responsive to stress stimuli, such as cytokines, ultraviolet irradiation, heat shock, and osmotic shock, and are involved in adaptation to stress, apoptosis or cell differentiation. JNKs have a number of dedicated substrates that only they can phosphorylate (c-Jun, NFAT4, etc.), while p38s also have some unique targets (e.g. the MAPKAP kinases MK2 and MK3), ensuring the need for both in order to respond to stressful stimuli.\nERK5 is part of a fairly well-separated pathway in mammals. Its sole specific upstream activator MKK5 is turned on in response to the MAP3 kinases MEKK2 and MEKK3. The specificity of these interactions are provided by the unique architecture of MKK5 and MEKK2/3, both containing N-terminal PB1 domains, enabling direct heterodimerisation with each other. The PB1 domain of MKK5 also contributes to the ERK5-MKK5 interaction: it provides a special interface (in addition to the D-motif found in MKK5) through which MKK5 can specifically recognize its substrate ERK5. Although the molecular-level details are poorly known, MEKK2 and MEKK3 respond to certain developmental cues to direct endothel formation and cardiac morphogenesis. While also implicated in brain development, the embryonic lethality of ERK5 inactivation due to cardiac abnormalities underlines its central role in mammalian vasculogenesis. It is notable, that conditional knockout of ERK5 in adult animals is also lethal, due to the widespread disruption of endothelial barriers. Mutations in the upstream components of the ERK5 pathway (the CCM complex) are thought to underlie cerebral cavernous malformations in humans.",
+          "cos_sim_score": 0.5152691602706909,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Protein kinase A",
+          "title": "Protein kinase A",
+          "url": "https://en.wikipedia.org/wiki/Protein_kinase_A",
+          "text": "In cell biology, protein kinase A (PKA) is a family of serine-threonine kinases whose activity is dependent on cellular levels of cyclic AMP (cAMP). PKA is also known as cAMP-dependent protein kinase (EC 2.7.11.11). PKA has several functions in the cell, including regulation of glycogen, sugar, and lipid metabolism. It should not be confused with 5'-AMP-activated protein kinase (AMP-activated protein kinase).\n\nHistory\nProtein kinase A, more precisely known as adenosine 3',5'-monophosphate (cyclic AMP)-dependent protein kinase, abbreviated to PKA, was discovered by chemists Edmond H. Fischer and Edwin G. Krebs in 1968. They won the Nobel Prize in Physiology or Medicine in 1992 for their work on phosphorylation and dephosphorylation and how it relates to PKA activity.\nPKA is one of the most widely researched protein kinases, in part because of its uniqueness; out of 540 different protein kinase genes that make up the human kinome, only one other protein kinase, casein kinase 2, is known to exist in a physiological tetrameric complex, meaning it consists of four subunits.\nThe diversity of mammalian PKA subunits was realized after Dr. Stan McKnight and others identified four possible catalytic subunit genes and four regulatory subunit genes. In 1991, Susan Taylor and colleagues crystallized the PKA C\u03b1 subunit, which revealed the bi-lobe structure of the protein kinase core for the very first time, providing a blueprint for all the other protein kinases in a genome (the kinome).\n\nStructure\nWhen inactive, the PKA apoenzyme exists as a tetramer which consists of two regulatory subunits and two catalytic subunits. The catalytic subunit contains the active site, a series of canonical residues found in protein kinases that bind and hydrolyse ATP, and a domain to bind the regulatory subunit. The regulatory subunit has domains to bind to cyclic AMP, a domain that interacts with catalytic subunit, and an auto inhibitory domain. There are two major forms of regulatory subunit; RI and RII.    \nMammalian cells have at least two types of PKAs: type I is mainly in the cytosol, whereas type II is bound via its regulatory subunits and special anchoring proteins, described in the anchorage section, to the plasma membrane, nuclear membrane, mitochondrial outer membrane, and microtubules. In both types, once the catalytic subunits are freed and active, they can migrate into the nucleus (where they can phosphorylate transcription regulatory proteins), while the regulatory subunits remain in the cytoplasm.  \nThe following human genes encode PKA subunits:\n\ncatalytic subunit \u2013 PRKACA, PRKACB, PRKACG\nregulatory subunit type I - PRKAR1A, PRKAR1B\nregulatory subunit type II - PRKAR2A, PRKAR2B",
+          "cos_sim_score": 0.4890921413898468,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Mitogen-activated protein kinase",
+          "title": "Mitogen-activated protein kinase",
+          "url": "https://en.wikipedia.org/wiki/Mitogen-activated_protein_kinase",
+          "text": "Extracellular signal-regulated kinases (ERKs)\nc-Jun N-terminal kinases (JNKs)\np38 mitogen-activated protein kinases (p38s)\nGenerally, ERKs are activated by growth factors and mitogens, whereas cellular stresses and inflammatory cytokines activate JNKs and p38s.\n\nActivation\nMitogen-activated protein kinases are catalytically inactive in their base form. In order to become active, they require (potentially multiple) phosphorylation events in their activation loops. This is conducted by specialized enzymes of the STE protein kinase group. In this way protein dynamics can induce a conformational change in the structure of the protein via long-range allostery.\nIn the case of classical MAP kinases, the activation loop contains a characteristic TxY (threonine-x-tyrosine) motif (TEY in mammalian ERK1 and ERK2, TDY in ERK5, TPY in JNKs, TGY in p38 kinases) that needs to be phosphorylated on both the threonine and the tyrosine residues in order to lock the kinase domain in a catalytically competent conformation. In vivo and in vitro, phosphorylation of tyrosine oftentimes precedes phosphorylation of threonine, although phosphorylation of either residue can occur in the absence of the other.\nThis tandem activation loop phosphorylation (that was proposed to be either distributive or processive, dependent on the cellular environment) is performed by members of the Ste7 protein kinase family, also known as MAP2 kinases. MAP2 kinases in turn, are also activated by phosphorylation, by a number of different upstream serine-threonine kinases (MAP3 kinases). Because MAP2 kinases display very little activity on substrates other than their cognate MAPK, classical MAPK pathways form multi-tiered, but relatively linear pathways. These pathways can effectively convey stimuli from the cell membrane (where many MAP3Ks are activated) to the nucleus (where only MAPKs may enter) or to many other subcellular targets.\nIn comparison to the three-tiered classical MAPK pathways, some atypical MAP kinases appear to have a more ancient, two-tiered system. ERK3 (MAPK6) and ERK4 (MAPK4) were recently shown to be directly phosphorylated and thus activated by PAK kinases (related to other MAP3 kinases). In contrast to the classical MAP kinases, these atypical MAPKs require only a single residue in their activation loops to be phosphorylated. The details of NLK and ERK7 (MAPK15) activation remain unknown.\nInactivation of MAPKs is performed by a number of phosphatases. A very conserved family of dedicated phosphatases is the so-called MAP kinase phosphatases (MKPs), a subgroup of dual-specificity phosphatases (DUSPs). As their name implies, these enzymes are capable of hydrolyzing the phosphate from both phosphotyrosine and the phosphothreonine residues. Since removal of either phosphate groups will greatly reduce MAPK activity, essentially abolishing signaling, some tyrosine phosphatases are also involved in inactivating MAP kinases (e.g. the phosphatases HePTP, STEP and PTPRR in mammals).",
+          "cos_sim_score": 0.474041610956192,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Mitogen-activated protein kinase",
+          "title": "Mitogen-activated protein kinase",
+          "url": "https://en.wikipedia.org/wiki/Mitogen-activated_protein_kinase",
+          "text": "Substrate and partner recognition\nAs typical for the CMGC kinase group, the catalytic site of MAP kinases has a very loose consensus sequence for substrates. Like all their relatives, they only require the target serine / threonine amino acids to be followed by a small amino acid, preferably proline (\"proline-directed kinases\"). But as SP/TP sites are extremely common in all proteins, additional substrate-recognition mechanisms have evolved to ensure signaling fidelity. Unlike their closest relatives, the cyclin-dependent kinases (CDKs), where substrates are recognized by the cyclin subunit, MAPKs associate with their substrates via auxiliary binding regions on their kinase domains. The most important such region consists of the hydrophobic docking groove and the negatively charged CD-region. Together they recognize the so-called MAPK docking or D-motifs (also called kinase interaction motif / KIM). D-motifs essentially consist of one or two positively charged amino acids, followed by alternating hydrophobic residues (mostly leucines), typically upstream of the phosphorylation site by 10\u201350 amino acids. Many of the known MAPK substrates contain such D-motifs that can not only bind to, but also provide specific recognition by certain MAPKs. D-motifs are not restricted to substrates: MAP2 kinases also contain such motifs on their N-termini that are absolutely required for MAP2K-MAPK interaction and MAPK activation. Similarly, both dual-specificity MAP kinase phosphatases and MAP-specific tyrosine phosphatases bind to MAP kinases through the same docking site. D-motifs can even be found in certain MAPK pathway regulators and scaffolds (e.g. in the mammalian JIP proteins).\nOther, less well characterised substrate-binding sites also exist. One such site (the DEF site) is formed by the activation loop (when in the active conformation) and the MAP kinase-specific insert below it. This site can accommodate peptides with an FxFP consensus sequence, typically downstream of the phosphorylation site. Note that the latter site can only be found in proteins that need to selectively recognize the active MAP kinases, thus they are almost exclusively found in substrates. Different motifs may cooperate with each other, as in the Elk family of transcription factors, that possess both a D-motif and an FxFP motif. The presence of an FxFP motif in the KSR1 scaffold protein also serves to make it an ERK1/2 substrate, providing a negative feedback mechanism to set the correct strength of ERK1/2 activation.\n\nScaffold proteins\nSince the discovery of Ste5 in yeast, scientists were on the hunt to discover similar non-enzymatic scaffolding pathway elements in mammals. There are indeed a number of proteins involved in ERK signaling, that can bind to multiple elements of the pathway:  MP1 binds both MKK1/2 and ERK1/2, KSR1 and KSR2 can bind B-Raf or c-Raf, MKK1/2 and ERK1/2. Analogous proteins were also discovered for the JNK pathway: the JIP1/JIP2  and the JIP3/JIP4 families of proteins were all shown to bind MLKs, MKK7 and any JNK kinase. Unfortunately, unlike the yeast Ste5, the mechanisms by which they regulate MAPK activation are considerably less understood. While Ste5 actually forms a ternary complex with Ste7 and Fus3 to promote phosphorylation of the latter, known mammalian scaffold proteins appear to work by very different mechanisms. For example, KSR1 and KSR2 are actually MAP3 kinases and related to the Raf proteins. Although KSRs alone display negligible MAP3 kinase activity, KSR proteins can still participate in the activation of Raf kinases by forming side-to-side heterodimers with them, providing an allosteric pair to turn on each enzymes.  JIPs  on the other hand, are apparently transport proteins, responsible for enrichment of MAPK signaling components in certain compartments of polarized cells. In this context, JNK-dependent phosphorylation of JIP1 (and possibly JIP2) provides a signal for JIPs to release the JIP-bound and inactive upstream pathway components, thus driving a strong local positive feedback loop. This sophisticated mechanism couples kinesin-dependent transport to local JNK activation, not only in mammals, but also in the fruitfly Drosophila melanogaster.",
+          "cos_sim_score": 0.47254329919815063,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

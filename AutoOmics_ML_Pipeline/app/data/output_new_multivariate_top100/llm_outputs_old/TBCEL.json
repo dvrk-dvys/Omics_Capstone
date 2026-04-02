@@ -1,0 +1,110 @@
+{
+  "probe_id": "11733941_a_at",
+  "gene_symbol": "TBCEL",
+  "rf_importance": 0.0057,
+  "selection_freq": 1.0,
+  "abs_fold_change": 2.0214829999999995,
+  "score": 0.3241,
+  "probe_count": 1,
+  "probe_ids": "11733941_a_at",
+  "max_score": 0.3241,
+  "mean_abs_fold_change": 2.0215,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T00:11:52",
+  "interpretation": "TBCEL (Tubulin-specific chaperone cofactor E-like protein) is involved in regulating tubulin stability, which is crucial for maintaining the structural integrity of microtubules in cells. While there is no direct evidence linking TBCEL to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in cellular stability and function could imply a potential indirect connection, as microtubules are essential for various cellular processes, including those related to bone health and response to steroid treatment. The evidence retrieved does not specifically address SONFH, leading to a low confidence in its relevance as a biomarker. Therefore, while TBCEL may play a role in cellular processes that could be affected in SONFH, its potential as a clinical biomarker for early detection remains weak and speculative.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "TBCEL's role in tubulin stability suggests a potential, albeit weak, connection to the cellular processes involved in Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "TBCEL (Q5QJ74). https://www.uniprot.org/uniprotkb/Q5QJ74",
+    "TBCEL \u2014 TBCEL. https://platform.opentargets.org/target/ENSG00000154114",
+    "TBCEL \u2194 Sensorineural hearing impairment. https://platform.opentargets.org/target/ENSG00000154114/associations",
+    "TBCEL \u2194 inborn disorder of amino acid metabolism. https://platform.opentargets.org/target/ENSG00000154114/associations",
+    "TBCEL \u2194 allergic urticaria. https://platform.opentargets.org/target/ENSG00000154114/associations",
+    "TBCEL \u2194 hyperaldosteronism. https://platform.opentargets.org/target/ENSG00000154114/associations",
+    "List of human protein-coding genes 8. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_8"
+  ],
+  "token_usage": {
+    "prompt_tokens": 2567,
+    "completion_tokens": 240,
+    "total_tokens": 2807,
+    "estimated_cost_usd": 0.000529
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q5QJ74",
+          "title": "TBCEL (Q5QJ74)",
+          "url": "https://www.uniprot.org/uniprotkb/Q5QJ74",
+          "text": "Protein: Tubulin-specific chaperone cofactor E-like protein\nFunction: Acts as a regulator of tubulin stability",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000154114::function",
+          "title": "TBCEL \u2014 TBCEL",
+          "url": "https://platform.opentargets.org/target/ENSG00000154114",
+          "text": "Function: Acts as a regulator of tubulin stability. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000154114::HP_0000407",
+          "title": "TBCEL \u2194 Sensorineural hearing impairment",
+          "url": "https://platform.opentargets.org/target/ENSG00000154114/associations",
+          "text": "Disease: Sensorineural hearing impairment\nDescription: A type of hearing impairment in one or both ears related to an abnormal functionality of the cochlear nerve.\nAssociation score: 0.338",
+          "cos_sim_score": 0.33838191308620685,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000154114::MONDO_0004736",
+          "title": "TBCEL \u2194 inborn disorder of amino acid metabolism",
+          "url": "https://platform.opentargets.org/target/ENSG00000154114/associations",
+          "text": "Disease: inborn disorder of amino acid metabolism\nDescription: An inherited disorder that affects the metabolism of the amino acids. Representative examples include alkaptonuria, homocystinuria, tyrosinemia, and phenylketonuria.\nAssociation score: 0.172",
+          "cos_sim_score": 0.17204347457472788,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000154114::EFO_1000669",
+          "title": "TBCEL \u2194 allergic urticaria",
+          "url": "https://platform.opentargets.org/target/ENSG00000154114/associations",
+          "text": "Disease: allergic urticaria\nDescription: commonly referred to as hives, is a kind of skin rash notable for pale red, raised, itchy bumps. Hives may cause a burning or stinging sensation. Histamine and other proinflammatory substances are released from mast cells in the skin and tissues in response to the binding of allergen-bound IgE antibodies to high-affinity cell surface receptors. Basophils and other inflammatory cells are also seen to release histamine and other mediators, and are thought to play an important role, especially in chronic urticarial diseases.\nAssociation score: 0.136",
+          "cos_sim_score": 0.13603537883062658,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000154114::EFO_0009452",
+          "title": "TBCEL \u2194 hyperaldosteronism",
+          "url": "https://platform.opentargets.org/target/ENSG00000154114/associations",
+          "text": "Disease: hyperaldosteronism\nDescription: Overproduction of aldosterone by the adrenal glands, which may lead to hypokalemia and/or hypernatremia. [ NCIt:P378 ]\nAssociation score: 0.113",
+          "cos_sim_score": 0.11323653630727894,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::List of human protein-coding genes 8",
+          "title": "List of human protein-coding genes 8",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_8",
+          "text": "== References ==",
+          "cos_sim_score": 0.18886637687683105,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

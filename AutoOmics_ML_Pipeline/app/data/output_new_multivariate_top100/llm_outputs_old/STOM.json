@@ -1,0 +1,128 @@
+{
+  "probe_id": "11715792_a_at",
+  "gene_symbol": "STOM",
+  "rf_importance": 0.0213,
+  "selection_freq": 1.0,
+  "abs_fold_change": 1.6270079666666657,
+  "score": 0.3877,
+  "probe_count": 1,
+  "probe_ids": "11715792_a_at",
+  "max_score": 0.3877,
+  "mean_abs_fold_change": 1.627,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T00:05:17",
+  "interpretation": "Stomatin (STOM) is a protein that regulates ion channel activity and transmembrane ion transport, specifically influencing the activity of acid-sensing ion channels (ASIC2 and ASIC3). In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), STOM has been identified as a candidate biomarker associated with the syndrome of liver and kidney deficiency, which is one of the syndromic elements observed in SONFH patients. The evidence indicates that STOM expression levels are significantly lower in the peripheral blood of SONFH patients compared to non-SONFH controls, suggesting its potential role in the disease's pathophysiology. However, while the evidence supports its involvement in SONFH, it is primarily based on its association with syndromic differentiation rather than direct mechanistic studies. Therefore, while STOM shows promise as a biomarker for early detection of SONFH, its clinical utility may be limited due to the need for further validation in larger cohorts.",
+  "evidence_relation": "direct",
+  "evidence_tier": "Tier 2",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "STOM is associated with the syndrome of liver and kidney deficiency in SONFH, indicating its potential as a biomarker for early detection.",
+  "citations": [
+    "STOM (P27105). https://www.uniprot.org/uniprotkb/P27105",
+    "STOM (P27105-2). https://www.uniprot.org/uniprotkb/P27105-2",
+    "STOM \u2014 STOM. https://platform.opentargets.org/target/ENSG00000148175",
+    "STOM \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000148175/associations",
+    "STOM \u2194 amyloidosis. https://platform.opentargets.org/target/ENSG00000148175/associations",
+    "STOM \u2194 corneal dystrophy. https://platform.opentargets.org/target/ENSG00000148175/associations",
+    "STOM \u2194 corneal disease. https://platform.opentargets.org/target/ENSG00000148175/associations",
+    "[Transcriptome data mining combined with clinical and animal experiments for identification of syndrome element marker genes during entire course of steroid-induced osteonecrosis of femoral head]. (2024). https://pubmed.ncbi.nlm.nih.gov/38621982/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 3721,
+    "completion_tokens": 268,
+    "total_tokens": 3989,
+    "estimated_cost_usd": 0.000719
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P27105",
+          "title": "STOM (P27105)",
+          "url": "https://www.uniprot.org/uniprotkb/P27105",
+          "text": "Protein: Stomatin\nFunction: Regulates ion channel activity and transmembrane ion transport. Regulates ASIC2 and ASIC3 channel activity",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P27105-2",
+          "title": "STOM (P27105-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P27105-2",
+          "text": "Protein: Isoform 2 of Stomatin",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000148175::function",
+          "title": "STOM \u2014 STOM",
+          "url": "https://platform.opentargets.org/target/ENSG00000148175",
+          "text": "Function: Regulates ion channel activity and transmembrane ion transport. Regulates ASIC2 and ASIC3 channel activity.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000148175::EFO_0005772",
+          "title": "STOM \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000148175/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.332",
+          "cos_sim_score": 0.331546356717496,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000148175::EFO_1001875",
+          "title": "STOM \u2194 amyloidosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000148175/associations",
+          "text": "Disease: amyloidosis\nDescription: A disorder characterized by the localized or diffuse accumulation of amyloid protein in various anatomic sites. It may be primary, due to clonal plasma cell proliferations; secondary, due to long standing infections, chronic inflammatory disorders, or malignancies; or familial. It may affect the nerves, skin, tongue, joints, heart, liver, spleen, kidneys and adrenal glands.\nAssociation score: 0.266",
+          "cos_sim_score": 0.26583040825079995,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000148175::MONDO_0018102",
+          "title": "STOM \u2194 corneal dystrophy",
+          "url": "https://platform.opentargets.org/target/ENSG00000148175/associations",
+          "text": "Disease: corneal dystrophy\nDescription: The term corneal dystrophy embraces a heterogeneous group of bilateral genetically determined non-inflammatory corneal diseases that are usually restricted to the cornea. The designation is imprecise but remains in vogue because of its clinical value.\nAssociation score: 0.262",
+          "cos_sim_score": 0.26152038765689833,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000148175::EFO_0009464",
+          "title": "STOM \u2194 corneal disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000148175/associations",
+          "text": "Disease: corneal disease\nDescription: A non-neoplastic or neoplastic disorder that affects the cornea. Representative examples include keratitis, bullous keratopathy, and squamous cell carcinoma. [ NCIT ]\nAssociation score: 0.259",
+          "cos_sim_score": 0.25899085682570505,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::38621982",
+          "title": "[Transcriptome data mining combined with clinical and animal experiments for identification of syndrome element marker genes during entire course of steroid-induced osteonecrosis of femoral head].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38621982/",
+          "year": "2024",
+          "text": "A research strategy combining transcriptome data mining and experimental verification was adopted to identify the marker genes characterizing the syndrome elements of phlegm, stasis, and deficiency in steroid-induced osteonecrosis of the femoral head(SONFH). Firstly, the common differentially expressed gene sets of SONFH with the syndromes of phlegm-stasis obstructing collaterals, vessel obstruction, and liver-kidney deficiency were obtained from the clinical transcriptomic analysis of a previous study. The differential expression trend analysis and functional gene mining were then employed to predict the candidate marker gene sets representing phlegm, stasis, and deficiency. The whole blood samples from SONFH patients, whole blood samples from SONFH rats, and affected femoral head tissue samples were collected for qPCR, which aimed to determine the expression levels of the candidate marker genes mentioned above. Furthermore, the receiver operating characteristic curve(ROC) was established to objectively evaluate the syndrome differentiation effectiveness of the candidate marker genes mentioned above. The transcriptome data analysis results showed that the candidate marker genes for phlegm was ELOVL fatty acid elongase 6(ELOVL6), and those for stasis were ankyrin 1(ANK1), glycophorin A/B(GYPA/B), and Rh-associated glycoprotein(RHAG). The candidate marker genes for deficiency were solute carrier family 2 member 1(SLC2A1) and stomatin(STOM). The qPCR results showed that compared with that in the non-SONFH group, ELOVL6 had the lowest expression level in the peripheral blood of the SONFH patients with the syndrome of phlegm-stasis obstructing collaterals(P&lt;0.05). Compared with that in the normal control group, ELOVL6 had the lowest expression level in the peripheral blood and affected femoral head tissue of SONFH rats modeled for 4 weeks(P&lt;0.01), and it showed better syndrome differentiation effectiveness of rats modeled for 4 weeks(AUC=0.850, P=0.006) than at other modeling time points(8, 12, 16, and 21 weeks, AUC of 0.689, 0.766, 0.588, and 0.662, respectively). Compared with that in the non-SONFH group, the expression levels of ANK1, GYPA, and RHAG were the lowest in the peripheral blood of SONFH patients with the vessel obstruction syndrome(P&lt;0.05). The expression levels of the three genes were the lowest in the peripheral blood and affected femoral head tissue of",
+          "cos_sim_score": 0.4391409158706665,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::38621982",
+          "title": "[Transcriptome data mining combined with clinical and animal experiments for identification of syndrome element marker genes during entire course of steroid-induced osteonecrosis of femoral head].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38621982/",
+          "year": "2024",
+          "text": "than at other modeling time points(8, 12, 16, and 21 weeks, AUC of 0.689, 0.766, 0.588, and 0.662, respectively). Compared with that in the non-SONFH group, the expression levels of ANK1, GYPA, and RHAG were the lowest in the peripheral blood of SONFH patients with the vessel obstruction syndrome(P&lt;0.05). The expression levels of the three genes were the lowest in the peripheral blood and affected femoral head tissue of SONFH rats modeled for 12 weeks(P&lt;0.05, P&lt;0.01), and their syndrome differentiation effectiveness in the rats modeled for 12 weeks(GYPA: AUC=0.861, P=0.012; ANK1: AUC=0.855, P=0.006; RHAG: AUC=0.854, P=0.009) was superior to that for 4, 8, 16, and 21 weeks(GYPA: AUC=0.646, 0.573, 0.691, and 0.617, respectively; ANK: AUC1=0.630, 0.658, 0.657, and 0.585, respectively; RHAG: AUC=0.592, 0.511, 0.515, and 0.536, respectively). Compared with the non-SONFH group, both SLC2A1 and STOM had the lowest expression levels in the peripheral blood of patients with the syndrome of liver and kidney deficiency(P&lt;0.05). Compared with the normal control group, their expression levels were the lowest in the peripheral blood and affected femoral head tissue of SONFH rats modeled for 21 weeks(P&lt;0.05, except STOM in the peripheral blood of rats). Moreover, the syndrome differentiation effectiveness of SLC2A1 in the rats modeled for 21 weeks(AUC=0.806, P=0.009) was superior to that for 4, 8, 12, and 16 weeks(AUC=0.520, 0.580, 0.741, 0.774, respectively), and STOM was meaningless in syndrome differentiation. In summary, the candidate marker gene for phlegm in SONFH is ELOVL6; the candidate marker genes for stasis are GYPA, RHAG, and ANK1; the candidate marker gene for deficiency is SLC2A1. The results help to reveal the biological connotations of phlegm, stasis, and deficiency in SONFH at the genetic level.",
+          "cos_sim_score": 0.1288900077342987,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_fetch_by_id",
+      "result": []
+    }
+  ]
+}

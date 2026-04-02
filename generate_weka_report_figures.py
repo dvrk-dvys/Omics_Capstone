@@ -2,8 +2,8 @@
 generate_report_figures.py — Report figure generator for the SONFH capstone.
 
 Run this script AFTER both pipelines have been executed:
-  1. Weka pipeline  → python omics_ml_pipeline/app/utils/feature_select.py
-  2. Python pipeline → python omics_ml_pipeline/app/main.py --config config/pipeline.yaml
+  1. Weka pipeline  → python AutoOmics_ML_Pipeline/app/utils/feature_select.py
+  2. Python pipeline → python AutoOmics_ML_Pipeline/app/main.py --config config/pipeline.yaml
 
 What this script produces
 ─────────────────────────
@@ -15,7 +15,7 @@ What this script produces
 The EDA composite figures (fig_eda_composite) are generated automatically by
 each pipeline run and saved alongside the other EDA plots:
   data/femoral_head_necrosis/EDA/eda_composite.png          ← Weka EDA composite
-  omics_ml_pipeline/app/data/output/plots/eda_composite.png ← Python EDA composite
+  AutoOmics_ML_Pipeline/app/data/output/plots/eda_composite.png ← Python EDA composite
 
 Usage
 ─────
@@ -40,13 +40,18 @@ import matplotlib.pyplot as plt
 # ---------------------------------------------------------------------------
 _ROOT         = pathlib.Path(__file__).resolve().parent
 
-WEKA_MODELS   = _ROOT / "data" / "femoral_head_necrosis" / "weka_models"
-PYTHON_CSV    = _ROOT / "omics_ml_pipeline" / "app" / "data" / "output" / "models" / "model_comparison.csv"
+WEKA_MULTI    = _ROOT / "data" / "femoral_head_necrosis" / "weka_models"     / "multivariate"
+WEKA_UNI      = _ROOT / "data" / "femoral_head_necrosis" / "weka_models"     / "univariate_ann"
+PLOTS_MULTI   = _ROOT / "data" / "femoral_head_necrosis" / "plots"           / "multivariate"
+PLOTS_UNI     = _ROOT / "data" / "femoral_head_necrosis" / "plots"           / "univariate_ann"
+PYTHON_CSV    = _ROOT / "AutoOmics_ML_Pipeline" / "app" / "data" / "output" / "models" / "model_comparison.csv"
 REPORT_DIR    = _ROOT / "report" / "figures"
 
-WEKA_OUT_CSV  = REPORT_DIR / "weka_model_comparison.csv"
-WEKA_CHART    = REPORT_DIR / "fig_weka_model_comparison.png"
-PYTHON_CHART  = REPORT_DIR / "fig_python_model_comparison.png"
+WEKA_MULTI_CSV   = PLOTS_MULTI / "weka_model_comparison.csv"
+WEKA_MULTI_CHART = PLOTS_MULTI / "weka_model_comparison.png"
+WEKA_UNI_CSV     = PLOTS_UNI   / "weka_model_comparison.csv"
+WEKA_UNI_CHART   = PLOTS_UNI   / "weka_model_comparison.png"
+PYTHON_CHART     = REPORT_DIR  / "fig_python_model_comparison.png"
 
 # ---------------------------------------------------------------------------
 # STEP 1 — Parse Weka .txt files → weka_model_comparison.csv
@@ -54,16 +59,19 @@ PYTHON_CHART  = REPORT_DIR / "fig_python_model_comparison.png"
 
 # Human-readable labels keyed by filename stem
 _WEKA_LABELS = {
-    "auto_weka":                      "Auto-Weka (PART)",
-    "j48_tree":                       "J48",
-    "randomforest":                   "Random Forest",
-    "naive_bayes":                    "Naive Bayes",
-    "multilayerpreceptron":           "MLP",
-    "functions_smo":                  "SMO (SVM)",
-    "lazy_ibk":                       "IBk (k=1)",
-    "lazy_ibk_knn_3":                 "IBk (k=3)",
-    "lazy_ibk_knn_5":                 "IBk (k=5)",
-    "attribute_selection_randomforest": None,   # attribute selection only — no classifier metrics
+    "auto_weka":                        "Auto-WEKA",
+    "j48_tree":                         "J48",
+    "randomforest":                     "Random Forest",
+    "naive_bayes":                      "Naive Bayes",
+    "multilayerpreceptron":             "MLP",
+    "multilayer_perceptron":            "MLP",        # univariate_ann uses underscore variant
+    "functions_smo":                    "SMO (SVM)",
+    "lazy_ibk_knn_1":                   "IBk (k=1)",
+    "lazy_ibk":                         "IBk (k=1)", # fallback for alternate filename
+    "lazy_ibk_knn_3":                   "IBk (k=3)",
+    "lazy_ibk_knn_5":                   "IBk (k=5)",
+    "select_attributes_randomforest":   None,        # attribute selection only — skip
+    "attribute_selection_randomforest": None,        # attribute selection only — skip
 }
 
 
@@ -213,40 +221,52 @@ def plot_model_comparison(
 # MAIN
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":
+    PLOTS_MULTI.mkdir(parents=True, exist_ok=True)
+    PLOTS_UNI.mkdir(parents=True, exist_ok=True)
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
-    print(f"Output directory: {REPORT_DIR}\n")
 
-    # ── Step 1: Parse Weka .txt files → weka_model_comparison.csv ──────────
-    print("[ 1/3 ] Parsing Weka result files...")
-    if not WEKA_MODELS.exists():
-        print(f"  ERROR: Weka models directory not found: {WEKA_MODELS}")
-        print("  Run feature_select.py first to generate Weka results.")
+    # ── Step 1: Multivariate Weka chart ─────────────────────────────────────
+    print("[ 1/4 ] Parsing multivariate Weka results...")
+    if not WEKA_MULTI.exists():
+        print(f"  ERROR: {WEKA_MULTI} not found")
     else:
-        weka_df = parse_weka_results(WEKA_MODELS)
-        weka_df.to_csv(WEKA_OUT_CSV, index=False)
-        print(f"  Saved: {WEKA_OUT_CSV}\n")
-
-        # ── Step 2: Weka model comparison bar chart ─────────────────────────
-        print("[ 2/3 ] Generating Weka model comparison chart...")
+        weka_multi_df = parse_weka_results(WEKA_MULTI)
+        weka_multi_df.to_csv(WEKA_MULTI_CSV, index=False)
+        print(f"  Saved CSV: {WEKA_MULTI_CSV}")
         plot_model_comparison(
-            df          = weka_df,
-            output_path = WEKA_CHART,
+            df          = weka_multi_df,
+            output_path = WEKA_MULTI_CHART,
             title       = (
-                "Weka Classifier Performance — 10-fold Cross-Validation\n"
+                "Weka Classifier Performance — Multivariate (Hybrid Score) — 10-fold CV\n"
                 "GSE123568 | Top 100 Features | 40 Samples (30 SONFH / 10 Control)"
             ),
         )
         print()
 
-    # ── Step 3: Python model comparison bar chart ───────────────────────────
-    print("[ 3/3 ] Generating Python pipeline model comparison chart...")
+    # ── Step 2: Univariate Weka chart ────────────────────────────────────────
+    print("[ 2/4 ] Parsing univariate ANN Weka results...")
+    if not WEKA_UNI.exists():
+        print(f"  ERROR: {WEKA_UNI} not found")
+    else:
+        weka_uni_df = parse_weka_results(WEKA_UNI)
+        weka_uni_df.to_csv(WEKA_UNI_CSV, index=False)
+        print(f"  Saved CSV: {WEKA_UNI_CSV}")
+        plot_model_comparison(
+            df          = weka_uni_df,
+            output_path = WEKA_UNI_CHART,
+            title       = (
+                "Weka Classifier Performance — Univariate ANN — 10-fold CV\n"
+                "GSE123568 | Top 100 Features | 40 Samples (30 SONFH / 10 Control)"
+            ),
+        )
+        print()
+
+    # ── Step 3: Python pipeline chart ───────────────────────────────────────
+    print("[ 3/4 ] Generating Python pipeline model comparison chart...")
     if not PYTHON_CSV.exists():
-        print(f"  ERROR: Python model comparison CSV not found: {PYTHON_CSV}")
-        print("  Run main.py first to generate Python pipeline results.")
+        print(f"  SKIP: Python model comparison CSV not found: {PYTHON_CSV}")
     else:
         python_df = pd.read_csv(PYTHON_CSV)
-
-        # Clean up model names for readability
         python_df["model"] = (
             python_df["model"]
             .str.replace("baseline_", "", regex=False)
@@ -254,18 +274,16 @@ if __name__ == "__main__":
             .str.replace("_", " ", regex=False)
             .str.title()
         )
-
         plot_model_comparison(
             df          = python_df,
             output_path = PYTHON_CHART,
             title       = (
                 "Python Pipeline Classifier Performance — Stratified 5-fold CV\n"
-                "GSE123568 | Top 50 Features | 40 Samples (30 SONFH / 10 Control) | MLflow run r024"
+                "GSE123568 | Top 50 Features | 40 Samples (30 SONFH / 10 Control)"
             ),
         )
         print()
 
     print("Done.")
-    print(f"\nFiles written to {REPORT_DIR}:")
-    for f in sorted(REPORT_DIR.glob("*")):
-        print(f"  {f.name}")
+    print(f"\n  Multivariate chart : {WEKA_MULTI_CHART}")
+    print(f"  Univariate chart   : {WEKA_UNI_CHART}")

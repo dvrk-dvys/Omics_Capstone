@@ -1,0 +1,167 @@
+{
+  "rf_rank": 24,
+  "probe_id": "11754832_a_at",
+  "gene_symbol": "PPP1R12C",
+  "score": 0.63,
+  "rf_n_nodes": 7,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.3819,
+  "log_fc": 0.3819,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11754832_a_at",
+  "max_score": 0.63,
+  "mean_abs_fold_change": 0.3819,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T17:37:33",
+  "interpretation": "PPP1R12C encodes a regulatory subunit of protein phosphatase 1, which is involved in the regulation of myosin phosphatase activity and the assembly of the actin cytoskeleton. While there is no direct evidence linking PPP1R12C to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in cellular signaling and cytoskeletal dynamics suggests a potential involvement in bone health and remodeling processes that could be disrupted in SONFH. The retrieved evidence primarily indicates its general biological functions without specific ties to SONFH, leading to a lower confidence in its direct relevance as a biomarker. Therefore, while PPP1R12C may play a role in cellular processes relevant to bone health, its potential as a clinical biomarker for early detection of SONFH is weak due to the lack of specific evidence connecting it to the disease context.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "PPP1R12C may influence cellular processes relevant to bone health, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "PPP1R12C (Q9BZL4). https://www.uniprot.org/uniprotkb/Q9BZL4",
+    "PPP1R12C (Q9BZL4-2). https://www.uniprot.org/uniprotkb/Q9BZL4-2",
+    "PPP1R12C (Q9BZL4-3). https://www.uniprot.org/uniprotkb/Q9BZL4-3",
+    "PPP1R12C \u2014 PPP1R12C. https://platform.opentargets.org/target/ENSG00000125503",
+    "PPP1R12C \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000125503/associations",
+    "PPP1R12C \u2194 scarlet fever. https://platform.opentargets.org/target/ENSG00000125503/associations",
+    "PPP1R12C \u2194 spondylolisthesis. https://platform.opentargets.org/target/ENSG00000125503/associations",
+    "PPP1R12C \u2194 alcohol drinking. https://platform.opentargets.org/target/ENSG00000125503/associations",
+    "Protein phosphatase 1 regulatory subunit 12c. https://en.wikipedia.org/wiki/Protein_phosphatase_1_regulatory_subunit_12c",
+    "Protein phosphatase 1. https://en.wikipedia.org/wiki/Protein_phosphatase_1",
+    "Ankyrin repeat. https://en.wikipedia.org/wiki/Ankyrin_repeat"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5535,
+    "completion_tokens": 253,
+    "total_tokens": 5788,
+    "estimated_cost_usd": 0.000982
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9BZL4",
+          "title": "PPP1R12C (Q9BZL4)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BZL4",
+          "text": "Protein: Protein phosphatase 1 regulatory subunit 12C\nFunction: Regulates myosin phosphatase activity",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9BZL4-2",
+          "title": "PPP1R12C (Q9BZL4-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BZL4-2",
+          "text": "Protein: Isoform 2 of Protein phosphatase 1 regulatory subunit 12C",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9BZL4-3",
+          "title": "PPP1R12C (Q9BZL4-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BZL4-3",
+          "text": "Protein: Isoform 3 of Protein phosphatase 1 regulatory subunit 12C",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000125503::function",
+          "title": "PPP1R12C \u2014 PPP1R12C",
+          "url": "https://platform.opentargets.org/target/ENSG00000125503",
+          "text": "Function: Regulates myosin phosphatase activity. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000125503::EFO_0005772",
+          "title": "PPP1R12C \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000125503/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.352",
+          "cos_sim_score": 0.3523269931535489,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000125503::EFO_0007477",
+          "title": "PPP1R12C \u2194 scarlet fever",
+          "url": "https://platform.opentargets.org/target/ENSG00000125503/associations",
+          "text": "Disease: scarlet fever\nDescription: An upper respiratory tract disease described as an acute contagious disease caused by Group A bacteria of the genus Streptococcus (especially various strains of S. pyogenes) and characterized by inflammation of the nose, throat, and mouth, generalized toxemia, and a red rash.\nAssociation score: 0.138",
+          "cos_sim_score": 0.13817225952726672,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000125503::EFO_0007493",
+          "title": "PPP1R12C \u2194 spondylolisthesis",
+          "url": "https://platform.opentargets.org/target/ENSG00000125503/associations",
+          "text": "Disease: spondylolisthesis\nDescription: A condition in which there is forward displacement of a vertebral bone over the on below it.\nAssociation score: 0.107",
+          "cos_sim_score": 0.10668112175898474,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000125503::EFO_0004329",
+          "title": "PPP1R12C \u2194 alcohol drinking",
+          "url": "https://platform.opentargets.org/target/ENSG00000125503/associations",
+          "text": "Disease: alcohol drinking\nDescription: Behaviors associated with the ingesting of alcoholic beverages, including social drinking.\nAssociation score: 0.096",
+          "cos_sim_score": 0.09624100527778282,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Protein phosphatase 1 regulatory subunit 12c",
+          "title": "Protein phosphatase 1 regulatory subunit 12c",
+          "url": "https://en.wikipedia.org/wiki/Protein_phosphatase_1_regulatory_subunit_12c",
+          "text": "Protein phosphatase 1 regulatory subunit 12C is a protein that in humans is encoded by the PPP1R12C gene.\n\nFunction\nThe gene encodes a subunit of myosin phosphatase. The encoded protein regulates the catalytic activity of protein phosphatase 1 delta and assembly of the actin cytoskeleton. Alternatively spliced transcript variants encoding multiple isoforms have been observed for this gene.\n\nReferences\nFurther reading\n\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.3667365610599518,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Protein phosphatase 1",
+          "title": "Protein phosphatase 1",
+          "url": "https://en.wikipedia.org/wiki/Protein_phosphatase_1",
+          "text": "Protein phosphatase 1 (PP1) belongs to a certain class of phosphatases known as protein serine/threonine phosphatases. This type of phosphatase includes metal-dependent protein phosphatases (PPMs) and aspartate-based phosphatases. PP1 has been found to be important in the control of glycogen metabolism, muscle contraction, cell progression, neuronal activities, splicing of RNA, mitosis, cell division, apoptosis, protein synthesis, and regulation of membrane receptors and channels.\n\nStructure\nEach PP1 enzyme contains both a catalytic subunit and at least one regulatory subunit. The catalytic subunit consists of a 30-kD single-domain protein that can form complexes with other regulatory subunits. The catalytic subunit is highly conserved among all eukaryotes, thus suggesting a common catalytic mechanism. The catalytic subunit can form complexes with various regulatory subunits. These regulatory subunits play an important role in substrate specificity as well as compartmentalization. Some common regulatory subunits include GM (PPP1R3A) and GL (PPP1R3B), which are named after their locations of action within the body (muscle and liver respectively), While the yeast S. cerevisiae only encodes one catalytic subunit, mammals have four isozymes encoded by three genes, each attracting a different set of regulatory subunits. Regulation of these different processes is performed by distinct PP1 holoenzymes that facilitate the complexation of the PP1 catalytic subunit to various regulatory subunits. and PPP1R3G.\nX-ray crystallographic structural data is available for PP1 catalytic subunit. The catalytic subunit of PP1 forms an \u03b1/\u03b2 fold with a central \u03b2-sandwich arranged between two \u03b1-helical domains. The interaction of the three \u03b2-sheets of the \u03b2-sandwich creates a channel for catalytic activity, as it is the site of coordination of metal ions. These metal ions have been identified as Mn and Fe and their coordination is provided by three histidines, two aspartic acids, and one asparagine.\n\nCatalytic mechanism\nThe mechanism involves two metal ions binding and activating water, which initiates a nucleophilic attack on the phosphorus atom.\n\nExogeneous inhibitors\nPotential inhibitors include a variety of naturally occurring toxins including okadaic acid, a diarrhetic shellfish poison, strong tumor promoter, and microcystin. Microcystin is a liver toxin produced by blue-green algae and contains a cyclic heptapeptide structure that interacts with three distinct regions of the surface of the catalytic subunit of PP1.  The structure of MCLR does not change when complexed with PP1, but the catalytic subunit of PP1 does in order to avoid steric effects of Tyr 276 of PP1 and Mdha side chain of MCLR.\nCantharidic acid is also an inhibitor of PP1.",
+          "cos_sim_score": 0.3650375306606293,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Ankyrin repeat",
+          "title": "Ankyrin repeat",
+          "url": "https://en.wikipedia.org/wiki/Ankyrin_repeat",
+          "text": "CDKN2A;    CDKN2B;    CDKN2C;    CDKN2D;    CENTB1;    CENTB2;    CENTB5;    CENTG1;\nCENTG2;    CENTG3;    CLIP3;     CLIP4;     CLPB;      CTGLF1;    CTGLF2;    CTGLF3;\nCTGLF4;    CTGLF5;    CTTNBP2;   DAPK1;     DDEF1;     DDEF2;     DDEFL1;    DGKI;\nDGKZ;      DP58;      DYSFIP1;   DZANK;  EHMT1;     EHMT2;     ESPN;      FANK1;     FEM1A;\nFEM1B;     GABPB2;    GIT1;      GIT2;      GLS;       GLS2;      HACE1;     HECTD1;\nIBTK;      ILK;       INVS;      KIDINS220; KRIT1;     LRRK1;\nMAIL;      MIB1;      MIB2;      MPHOSPH8;  MTPN;      MYO16;\nNFKB1;     NFKB2;     NFKBIA;    NFKBIB;    NFKBIE;    NFKBIL1;   NFKBIL2;   NOTCH1;\nNOTCH2;    NOTCH3;    NOTCH4;    NRARP;     NUDT12;    OSBPL1A;   OSTF1;     PLA2G6;\nPOTE14;    POTE15;    POTE8;     PPP1R12A;  PPP1R12B;  PPP1R12C;  PPP1R13B;  PPP1R13L;\nPPP1R16A;  PPP1R16B;  PSMD10;    RAI14;     RFXANK;    RIPK4;     RNASEL;    SHANK1;\nSHANK2;    SHANK3;    SNCAIP;    TA-NFKBH;  TEX14;     TNKS;      TNKS2;     TNNI3K;    TP53BP2;   TRP7;      TRPA1;     TRPC3;     TRPC4;     TRPC5;     TRPC6;     TRPC7;     TRPV1;     TRPV2;     TRPV3;     TRPV4;     TRPV5;     TRPV6;     UACA;      USH1G;     ZDHHC13;   ZDHHC17;",
+          "cos_sim_score": 0.3019235134124756,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Protein phosphatase 1",
+          "title": "Protein phosphatase 1",
+          "url": "https://en.wikipedia.org/wiki/Protein_phosphatase_1",
+          "text": "Catalytic mechanism\nThe mechanism involves two metal ions binding and activating water, which initiates a nucleophilic attack on the phosphorus atom.\n\nExogeneous inhibitors\nPotential inhibitors include a variety of naturally occurring toxins including okadaic acid, a diarrhetic shellfish poison, strong tumor promoter, and microcystin. Microcystin is a liver toxin produced by blue-green algae and contains a cyclic heptapeptide structure that interacts with three distinct regions of the surface of the catalytic subunit of PP1.  The structure of MCLR does not change when complexed with PP1, but the catalytic subunit of PP1 does in order to avoid steric effects of Tyr 276 of PP1 and Mdha side chain of MCLR.\nCantharidic acid is also an inhibitor of PP1.\n\nBiological function and regulation\nPP1 plays a crucial role in the regulation of blood glucose levels in the liver and glycogen metabolism. PP1 is important to the reciprocal regulation of glycogen metabolism by ensuring the opposite regulation of glycogen breakdown and glycogen synthesis. A key regulator of PP1 is glycogen phosphorylase a, which serves as a glucose sensor in hepatocytes. When glucose levels are low, phosphorylase a in its active R state has PP1 bound tightly. This binding to phosphorylase a prevents any phosphatase activity of PP1 and maintains the glycogen phosphorylase in its active phosphorylated configuration. Therefore, there phosphorylase a will accelerate glycogen breakdown until adequate levels of glucose are achieved. When glucose concentrations get too high, phosphorylase a is converted to its inactive, T state. By shifting phosphorylase a to its T state, PP1 dissociates from the complex. This dissociation activates glycogen synthase and converts phosphorylase a to phosphorylase b. Phosphorylase b does not bind PP1 allowing PP1 to remain activated.\nWhen the muscles of the body signal the need for glycogen degradation and an increase in blood glucose, PP1 will be regulated accordingly. Protein kinase A (cAMP-dependent protein kinase) can reduce the activity of PP1. The glycogen binding region, GM, becomes phosphorylated, which causes its dissociation from the catalytic PP1 unit. This separation of the catalytic PP1 unit, glycogen, and other substrates causes a significant decrease in dephosphorylation. Also, when other substrates become phosphorylated by protein kinase A, they can bind to the catalytic subunit of PP1 and directly inhibit it. In the end, glycogen phosphorylase is kept in its active form and glycogen synthase in its inactive form. Separately from inhibition of PP1, glucagon will also keep phosphorylase kinase active via cAMP, thereby keeping glycogen phosphorylase active. \nWhen blood sugar is high, insulin will be secreted by beta cells of the pancreas, indirectly activating glycogen synthase and triggering glycogen synthesis. Although it has been known that PP1 is one of the most important phosphatases involved in insulin action since the late 1990s, the precise mechanisms by which insulin regulates PP1 has only been uncovered more recently. \nA 2019 study by researchers at Tsinghua, Fudan and the University of the Chinese Academy of Sciences demonstrated in both cell culture experiments and in PPP1R3G-knockdown mice that Akt (protein kinase B) directly phosphorylates Protein phosphatase 1 regulatory subunit 3G (PPP1R3G), which then binds to the PP1 complex, activating its phosphatase activity. The study demonstrated that phosphorylated PPP1R3G was also able to bind phosphorylated glycogen synthase (p-GS) independently and recruit p-GS towards PP1, allowing PP1 to dephosphorylate and thereby activate glycogen synthase independent of GSK3 (which is already known to be inhibited by Akt).",
+          "cos_sim_score": 0.2921009659767151,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Protein phosphatase 1",
+          "title": "Protein phosphatase 1",
+          "url": "https://en.wikipedia.org/wiki/Protein_phosphatase_1",
+          "text": "Clinical relevance\nIn Alzheimer's, hyperphosphorylation of the microtubule-associated protein inhibits the assembly of microtubules in neurons.  Researchers at the New York State Institute for Basic Research in Developmental Disabilities showed that there is significantly lower type 1 phosphatase activity in both gray and white matters in Alzheimer disease brains. This suggests that dysfunctional phosphatases play a role in Alzheimer's disease.\nRegulation of HIV-1 transcription by Protein Phosphatase 1 (PP1). It has been recognized that protein phosphatase-1 (PP1) serves as an important regulator of HIV-1 transcription. Researchers at Howard University showed that Tat protein targets PP1 to the nucleus and the consequent interaction is important for HIV-1 transcription. The protein also contributes to ebolavirus pathogenesis by dephosphorylating the viral transcription activator VP30, allowing it to produce viral mRNAs. Inhibition of PP1 prevents VP30 dephosphorylation, thus preventing manufacture of viral mRNA, and thus viral protein. The viral L polymerase is, however, still capable of replicating viral genomes without VP30 dephosphorylation by PP1.\nThe herpes simplex virus protein ICP34.5 also activates protein phosphatase 1, which overcomes the cellular stress response to viral infection; protein kinase R is activated by the virus' double-stranded RNA, and protein kinase R then phosphorylates a protein called eukaryotic initiation factor-2A (eIF-2A), which inactivates eIF-2A.  EIF-2A is required for translation so by shutting down eIF-2A, the cell prevents the virus from hijacking its own protein-making machinery.  Herpesviruses in turn evolved ICP34.5 to defeat the defense;  ICP34.5 activates protein phosphatase-1A which dephosphorylates eIF-2A, allowing translation to occur again. ICP34.5 shares the C-terminal regulatory domain (InterPro: IPR019523) with protein phosphatase 1 subunit 15A/B.\n\nSubunits\nProtein phosphatase 1 is a multimeric enzyme that may contain the following subunits:\n\ncatalytic subunit: PPP1CA, PPP1CB, PPP1CC\nregulatory subunit 1: PPP1R1A, PPP1R1B, PPP1R1C\nregulatory subunit 2: PPP1R2\nregulatory subunit 3: PPP1R3A, PPP1R3B, PPP1R3C, PPP1R3D, PPP1R3E, PPP1R3F, PPP1R3G\nregulatory subunit 7: PPP1R7\nregulatory subunit 8: PPP1R8\nregulatory subunit 9: PPP1R9A, PPP1R9B\nregulatory subunit 10: PPP1R10\nregulatory subunit 11: PPP1R11\nregulatory subunit 12: PPP1R12A, PPP1R12B, PPP1R12C\nregulatory subunit 13: PPP1R13B\nregulatory subunit 14: PPP1R14A, PPP1R14B, PPP1R14C, PPP1R14D\nregulatory subunit 15: PPP1R15A, PPP1R15B\nregulatory subunit 16: PPP1R16A, PPP1R16B\nAs described earlier, a catalytic subunit is always paired with one or more regulatory subunits. The core sequence motif for binding to the catalytic subunit is \"RVxF\", but additional motifs allow for extra sites to be used. Some complexes with two regulatory subunits attached have been reported in 2002 and 2007.\n\nReferences\nExternal links\nProtein+Phosphatase+1 at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.18447890877723694,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

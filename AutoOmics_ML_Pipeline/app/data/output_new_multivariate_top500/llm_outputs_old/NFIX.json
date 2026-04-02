@@ -1,0 +1,161 @@
+{
+  "probe_id": "11727161_a_at",
+  "gene_symbol": "NFIX",
+  "rf_importance": 0.008,
+  "selection_freq": 0.8,
+  "abs_fold_change": 2.259005466666669,
+  "score": 0.4588,
+  "probe_count": 2,
+  "probe_ids": "11727161_a_at | 11727162_x_at",
+  "max_score": 0.4588,
+  "mean_abs_fold_change": 1.8685,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T18:44:20",
+  "interpretation": "NFIX (Nuclear factor 1 X-type) is a transcription factor that binds specific DNA sequences to regulate gene expression, playing a crucial role in cellular processes such as embryonic development and neural differentiation. While there is no direct evidence linking NFIX to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in bone and neural development suggests a potential role in the pathophysiology of osteonecrosis, particularly in the context of steroid exposure which can disrupt normal cellular functions. The evidence retrieved primarily supports NFIX's general biological functions rather than a specific connection to SONFH, leading to a lower confidence in its direct relevance as a biomarker. Therefore, while NFIX may have some biological plausibility in the context of SONFH, its potential as a clinically actionable biomarker remains weak due to the lack of specific disease-related evidence.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "NFIX may be involved in cellular processes relevant to bone health, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "NFIX (Q14938). https://www.uniprot.org/uniprotkb/Q14938",
+    "NFIX (Q14938-5). https://www.uniprot.org/uniprotkb/Q14938-5",
+    "NFIX (Q14938-4). https://www.uniprot.org/uniprotkb/Q14938-4",
+    "NFIX \u2014 NFIX. https://platform.opentargets.org/target/ENSG00000008441",
+    "NFIX \u2194 Malan overgrowth syndrome. https://platform.opentargets.org/target/ENSG00000008441/associations",
+    "NFIX \u2194 Marshall-Smith syndrome. https://platform.opentargets.org/target/ENSG00000008441/associations",
+    "NFIX \u2194 Sotos syndrome. https://platform.opentargets.org/target/ENSG00000008441/associations",
+    "NFIX \u2194 genetic disorder. https://platform.opentargets.org/target/ENSG00000008441/associations",
+    "NFIB (gene). https://en.wikipedia.org/wiki/NFIB_(gene)",
+    "Nuclear factor I. https://en.wikipedia.org/wiki/Nuclear_factor_I",
+    "NFIX. https://en.wikipedia.org/wiki/NFIX",
+    "Nitrogen fixation. https://en.wikipedia.org/wiki/Nitrogen_fixation"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5001,
+    "completion_tokens": 248,
+    "total_tokens": 5249,
+    "estimated_cost_usd": 0.000899
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q14938",
+          "title": "NFIX (Q14938)",
+          "url": "https://www.uniprot.org/uniprotkb/Q14938",
+          "text": "Protein: Nuclear factor 1 X-type\nFunction: Recognizes and binds the palindromic sequence 5'-TTGGCNNNNNGCCAA-3' present in viral and cellular promoters and in the origin of replication of adenovirus type 2. These proteins are individually capable of activating transcription and replication",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q14938-5",
+          "title": "NFIX (Q14938-5)",
+          "url": "https://www.uniprot.org/uniprotkb/Q14938-5",
+          "text": "Protein: Isoform 5 of Nuclear factor 1 X-type",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q14938-4",
+          "title": "NFIX (Q14938-4)",
+          "url": "https://www.uniprot.org/uniprotkb/Q14938-4",
+          "text": "Protein: Isoform 4 of Nuclear factor 1 X-type",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000008441::function",
+          "title": "NFIX \u2014 NFIX",
+          "url": "https://platform.opentargets.org/target/ENSG00000008441",
+          "text": "Function: Recognizes and binds the palindromic sequence 5'- TTGGCNNNNNGCCAA-3' present in viral and cellular promoters and in the origin of replication of adenovirus type 2. These proteins are individually capable of activating transcription and replication.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000008441::MONDO_0013885",
+          "title": "NFIX \u2194 Malan overgrowth syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000008441/associations",
+          "text": "Disease: Malan overgrowth syndrome\nDescription: A rare multisystemic genetic disorder characterized by a characteristic facial features with macrocephaly, overgrowth in infancy, intellectual disability and behavioral problems including anxieties and aggressiveness.\nAssociation score: 0.816",
+          "cos_sim_score": 0.8156080181042044,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000008441::MONDO_0011244",
+          "title": "NFIX \u2194 Marshall-Smith syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000008441/associations",
+          "text": "Disease: Marshall-Smith syndrome\nDescription: Marshall-Smith syndrome is a rare genetic disease characterized by tall stature and advanced bone age at birth.\nAssociation score: 0.796",
+          "cos_sim_score": 0.795738082185076,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000008441::MONDO_0019349",
+          "title": "NFIX \u2194 Sotos syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000008441/associations",
+          "text": "Disease: Sotos syndrome\nDescription: Sotos syndrome is a rare multisystemic genetic disorder characterized by a typical facial appearance, overgrowth of the body in early life with macrocephaly, and mild to severe intellectual disability.\nAssociation score: 0.574",
+          "cos_sim_score": 0.574285780339277,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000008441::EFO_0000508",
+          "title": "NFIX \u2194 genetic disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000008441/associations",
+          "text": "Disease: genetic disorder\nDescription: Genetic diseases are diseases in which inherited genes predispose to increased risk. The genetic disorders associated with cancer often result from an alteration or mutation in a single gene. The diseases range from rare dominant cancer family syndrome to familial tendencies in which low-penetrance genes may interact with other genes or environmental factors to induce cancer. Research may involve clinical, epidemiologic, and laboratory studies of persons, families, and populations at high risk of these disorders.\nAssociation score: 0.523",
+          "cos_sim_score": 0.5225896966934567,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::NFIB (gene)",
+          "title": "NFIB (gene)",
+          "url": "https://en.wikipedia.org/wiki/NFIB_(gene)",
+          "text": "Nuclear factor 1 B-type is a protein that in humans is encoded by the NFIB gene.\nNFIB haploinsufficiency is also associated with intellectual disability and macrocephaly, as are NFIA and NFIX.\n\nEmbryonic development\nThe NFIB gene is a part of the NFI gene complex that includes three other genes (NFIA, NFIC and NFIX). The NFIB gene is a protein coding gene that also serves as a transcription factor. This gene is essential in embryonic development and it works together with its gene complex to initiate tissue differentiation in the fetus. NFIB has the highest concentrations in the lung, skeletal muscle and heart but is also found in the areas of the developing liver, kidneys and brain. \nThrough knockout experiments, researchers found that mice without the NFIB gene have severely underdeveloped lungs. This mutation does not seem to cause spontaneous abortions because in utero the fetus does not use its lungs for respiration. However, this becomes lethal once the fetus is born and has to take its first breath. It is thought that NFIB plays a role in down regulating the transcription factors TGF-\u03b21 and Shh in normal gestation because they remained high in knockout experiments. The absence of NFIB also leads to insufficient amounts of surfactant being produced which is one reason why the mice cannot breathe once it is born. The knockout experiments demonstrated that NFIB has a significant role in fore-brain development. NFIB is typically found in pontine nuclei of the CNS, the cerebral cortex and the white matter of the brain and without NFIB these areas are dramatically affected.\nAbsence of one copy is associated with macrocephaly and intellectual disability. This associated was confirmed in mouse models where deletion of one copy resulted in enlargement of the brain while preserving its overall organisation.\n\nReferences\nFurther reading\nExternal links\nNFIB+protein,+human at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.4021800756454468,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Nuclear factor I",
+          "title": "Nuclear factor I",
+          "url": "https://en.wikipedia.org/wiki/Nuclear_factor_I",
+          "text": "Nuclear factor I (NF-I) is a family of closely related transcription factors. They constitutively bind as dimers to specific sequences of DNA with high affinity. Family members contain an unusual DNA binding domain that binds to the recognition sequence  5'-TTGGCXXXXXGCCAA-3'.\nSubtypes include:\n\nNFIA\nNFIB\nNFIC\nNFIX\n\n\n== References ==",
+          "cos_sim_score": 0.37897682189941406,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::NFIX",
+          "title": "NFIX",
+          "url": "https://en.wikipedia.org/wiki/NFIX",
+          "text": "Nuclear factor 1 X-type is a protein that in humans is encoded by the NFIX gene. NFI-X3, a splice variant of NFIX, regulates Glial fibrillary acidic protein and YKL-40 in astrocytes.\n\nInteractions\nNfix has been shown to interact with SKI protein and it is also known to interact with AP-1. NFI-X3 has been shown to interact with STAT3.\nIn embryonic cells, Nfix has been shown to regulate intermediate progenitor cell (IPC) generation by promoting the transcription of the protein inscuteable (INSC). INSC regulates spindle orientation to facilitate the division of radial glia cells into IPC's. Nfix is thought to be necessary for the commitment of glia progeny into the intermediate progenitors. Mutations may cause overproduction of radial glia, impaired and improperly timed IPC development, and underproduction of neurons. \nIn adult development, the timing of neural differentiation is regulated by Nfix to promote ongoing growth of the hippocampus and proper memory function.  Nfix may suppress oligodendrocyte expression so cells remain committed to neuron development within the dentate gyrus. Intermediate progenitor cells can divide to produce neuroblasts. Neurons produced by Nfix null IPC's do not mature, usually die, and can contribute to cognitive impairments.\nNfix interacts with myostatin and regulates temporal progression of muscle regeneration through modulation of myostatin expression. Nfix also inhibits the slow-twitch muscle phenotype.\n\nReferences\nFurther reading\nExternal links\nNFIX+protein,+human at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.34707510471343994,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Nitrogen fixation",
+          "title": "Nitrogen fixation",
+          "url": "https://en.wikipedia.org/wiki/Nitrogen_fixation",
+          "text": "Homogeneous catalysis\nMuch research has been conducted on the discovery of catalysts for nitrogen fixation, often with the goal of lowering energy requirements. However, such research has thus far failed to approach the efficiency and ease of the Haber process. Many compounds react with atmospheric nitrogen to give dinitrogen complexes. The first dinitrogen complex to be reported was Ru(NH3)5(N2)2+. Some soluble complexes do catalyze nitrogen fixation.\n\nLightning\nNitrogen can be fixed by lightning converting nitrogen gas (N2) and oxygen gas (O2) in the atmosphere into nitrogen oxides (NOx). The N2 molecule is highly stable and nonreactive due to the triple bond between the nitrogen atoms. Lightning produces enough energy and heat to break this bond allowing nitrogen atoms to react with oxygen, forming NOx. These compounds cannot be used by plants, but as this molecule cools, it reacts with oxygen to form nitrogen dioxide (NO2), which in turn reacts with water to produce nitrous acid (HNO2) or nitric acid (HNO3). When these acids seep into the soil, they produce nitrate (NO3\u2212), which is of use to plants.\n\nSee also\nBirkeland\u2013Eyde process: an industrial fertilizer production process\nCarbon fixation\nDenitrification: an organic process of nitrogen release\nGeorge Washington Carver: an American botanist\nHeterocyst\nMarine nitrogen fixation\nNitrification: biological production of nitrogen\nNitrogen cycle: the flow and transformation of nitrogen through the environment\nNitrogen deficiency\nNitrogen fixation package for quantitative measurement of nitrogen fixation by plants\nNitrogenase: enzymes used by organisms to fix nitrogen\nOstwald process: a chemical process for making nitric acid (HNO3)\nElectrification of catalytic processes: electrochemical reduction of N2\n\nReferences\nExternal links\nHirsch AM (2009). \"A Brief History of the Discovery of Nitrogen-fixing Organisms\" (PDF). University of California, Los Angeles. Archived from the original (PDF) on 9 July 2010. Retrieved 14 April 2012.\n\"Marine Nitrogen Fixation laboratory\". University of Southern California.\n\"Travis P. Hignett Collection of Fixed Nitrogen Research Laboratory Photographs // Science History Institute Digital Collections\". digital.sciencehistory.org. Retrieved 16 August 2019. Science History Institute Digital Collections (Photographs depicting numerous stages of the nitrogen fixation process and the various equipment and apparatus used in the production of atmospheric nitrogen, including generators, compressors, filters, thermostats, and vacuum and blast furnaces).\n\"Proposed Process for the Fixation of Atmospheric Nitrogen\", historical perspective, Scientific American, 13 July 1878, p. 21\nA global ocean snapshot of nitrogen fixers by matching sequences to cells in the Tara Ocean",
+          "cos_sim_score": 0.20436641573905945,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Nitrogen fixation",
+          "title": "Nitrogen fixation",
+          "url": "https://en.wikipedia.org/wiki/Nitrogen_fixation",
+          "text": "Nitrogen fixation is a chemical process by which molecular dinitrogen (N2) is converted into ammonia (NH3). It occurs both biologically and  abiologically in chemical industries.  Biological nitrogen fixation or diazotrophy is catalyzed by enzymes called nitrogenases. These enzyme complexes are encoded by the Nif genes (or Nif homologs) and contain iron, often with a second metal (usually molybdenum, but sometimes vanadium).\nSome nitrogen-fixing bacteria have symbiotic relationships with plants, especially legumes, mosses, and aquatic ferns such as Azolla. Looser non-symbiotic relationships between diazotrophs and plants are often referred to as associative, as seen in nitrogen fixation on rice roots. Nitrogen fixation occurs between some termites and fungi. It occurs naturally in the air by means of NOx production by lightning.\nFixed nitrogen is essential to life on Earth. Organic compounds such as DNA and proteins contain nitrogen. Industrial nitrogen fixation underpins the manufacture of all nitrogenous industrial products, which include fertilizers, pharmaceuticals, textiles, dyes and explosives.\n\nHistory\nBiological nitrogen fixation was discovered by Jean-Baptiste Boussingault in 1838. Later, in 1880, the process by which it happens was discovered by German agronomist Hermann Hellriegel and Hermann Wilfarth and was fully described by Dutch microbiologist Martinus Beijerinck.\n\"The protracted investigations of the relation of plants to the acquisition of nitrogen begun by de Saussure, Ville, Lawes, Gilbert and others, and culminated in the discovery of symbiotic fixation by Hellriegel and Wilfarth in 1887.\"\n\"Experiments by Bossingault in 1855 and Pugh, Gilbert & Lawes in 1887 had shown that nitrogen did not enter the plant directly. The discovery of the role of nitrogen-fixing bacteria by Herman Hellriegel and Herman Wilfarth in 1886\u20131888 would open a new era of soil science.\"\nIn 1901, Beijerinck showed that Azotobacter chroococcum was able to fix atmospheric nitrogen. This was the first known species of the Azotobacter genus, so-named by him. It is also the first known diazotroph, species that use diatomic nitrogen as a step in the complete nitrogen cycle.\n\nBiological\nBiological nitrogen fixation (BNF) occurs when atmospheric nitrogen is converted to ammonia by a nitrogenase enzyme. The overall reaction for BNF is:\n\nN2 + 16ATP + 16H2O + 8e\u2212 + 8H+ \u2192 2NH3 +H2 + 16ADP + 16Pi\nThe process is coupled to the hydrolysis of 16 equivalents of ATP and is accompanied by the co-formation of one equivalent of H2. The conversion of N2 into ammonia occurs at a metal cluster called FeMoco, an abbreviation for the iron-molybdenum cofactor. The mechanism proceeds via a series of protonation and reduction steps wherein the FeMoco active site hydrogenates the N2 substrate. In free-living diazotrophs, nitrogenase-generated ammonia is assimilated into glutamate through the glutamine synthetase/glutamate synthase pathway. The microbial nif genes required for nitrogen fixation are widely distributed in diverse environments.\nNitrogenases are rapidly degraded by oxygen. For this reason, many bacteria cease production of the enzyme in the presence of oxygen. Many nitrogen-fixing organisms exist only in anaerobic conditions, respiring to draw down oxygen levels, or binding the oxygen with a protein such as leghemoglobin.\n\nImportance of nitrogen\nAtmospheric nitrogen cannot be metabolized by most organisms, because its triple covalent bond is very strong. Most take up fixed nitrogen from various sources. For every 100 atoms of carbon, roughly 2 to 20 atoms of nitrogen are assimilated. The atomic ratio of carbon (C) : nitrogen (N) : phosphorus (P) observed on average in planktonic biomass was originally described by Alfred Redfield, who determined the stoichiometric relationship between C:N:P atoms, The Redfield Ratio, to be 106:16:1.",
+          "cos_sim_score": 0.19322234392166138,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

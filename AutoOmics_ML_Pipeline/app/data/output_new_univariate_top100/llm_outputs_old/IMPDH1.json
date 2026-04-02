@@ -1,0 +1,160 @@
+{
+  "probe_id": "11720380_a_at",
+  "gene_symbol": "IMPDH1",
+  "score": 1.0,
+  "SD_TestAUC": 0.0641500299099584,
+  "abs_fold_change": 1.0315,
+  "probe_count": 1,
+  "probe_ids": "11720380_a_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 1.0315,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:48:30",
+  "interpretation": "IMPDH1 encodes an enzyme that catalyzes the conversion of inosine 5'-monophosphate (IMP) to xanthosine 5'-monophosphate (XMP), which is a critical step in the de novo synthesis of guanine nucleotides. This process is essential for cell growth and proliferation, particularly in immune cells. While there is no direct evidence linking IMPDH1 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in regulating cell growth and immune responses suggests a potential indirect connection to the disease, especially considering that steroid treatment can affect bone health and cellular metabolism. The evidence is primarily inferred from its biological function and its relevance in other conditions, leading to a low confidence in its direct association with SONFH. Therefore, while IMPDH1 may have some relevance as a biomarker, its potential for early detection of SONFH is weak due to the lack of specific evidence linking it to this condition.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "IMPDH1 is involved in nucleotide synthesis, which may indirectly relate to the cellular effects of steroids in SONFH.",
+  "citations": [
+    "IMPDH1 (P20839). https://www.uniprot.org/uniprotkb/P20839",
+    "IMPDH1 (P20839-3). https://www.uniprot.org/uniprotkb/P20839-3",
+    "IMPDH1 (P20839-5). https://www.uniprot.org/uniprotkb/P20839-5",
+    "IMPDH1 \u2014 IMPDH1. https://platform.opentargets.org/target/ENSG00000106348",
+    "IMPDH1 \u2194 retinitis pigmentosa. https://platform.opentargets.org/target/ENSG00000106348/associations",
+    "IMPDH1 \u2194 retinitis pigmentosa 10. https://platform.opentargets.org/target/ENSG00000106348/associations",
+    "IMPDH1 \u2194 chronic hepatitis C virus infection. https://platform.opentargets.org/target/ENSG00000106348/associations",
+    "IMPDH1 \u2194 hepatitis C virus infection. https://platform.opentargets.org/target/ENSG00000106348/associations",
+    "Inosine-5\u2032-monophosphate dehydrogenase. https://en.wikipedia.org/wiki/Inosine-5%E2%80%B2-monophosphate_dehydrogenase",
+    "IMPDH1. https://en.wikipedia.org/wiki/IMPDH1",
+    "Retinitis pigmentosa. https://en.wikipedia.org/wiki/Retinitis_pigmentosa",
+    "Leber congenital amaurosis. https://en.wikipedia.org/wiki/Leber_congenital_amaurosis"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5481,
+    "completion_tokens": 262,
+    "total_tokens": 5743,
+    "estimated_cost_usd": 0.000979
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P20839",
+          "title": "IMPDH1 (P20839)",
+          "url": "https://www.uniprot.org/uniprotkb/P20839",
+          "text": "Protein: Inosine-5'-monophosphate dehydrogenase 1\nFunction: Catalyzes the conversion of inosine 5'-phosphate (IMP) to xanthosine 5'-phosphate (XMP), the first committed and rate-limiting step in the de novo synthesis of guanine nucleotides, and therefore plays an important role in the regulation of cell growth. Could also have a single-stranded nucleic acid-binding activity and could play a role in RNA and/or DNA metabolism. It may also have a role in the development of malignancy and the growth progression of some tumors",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P20839-3",
+          "title": "IMPDH1 (P20839-3)",
+          "url": "https://www.uniprot.org/uniprotkb/P20839-3",
+          "text": "Protein: Isoform 3 of Inosine-5'-monophosphate dehydrogenase 1",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P20839-5",
+          "title": "IMPDH1 (P20839-5)",
+          "url": "https://www.uniprot.org/uniprotkb/P20839-5",
+          "text": "Protein: Isoform 5 of Inosine-5'-monophosphate dehydrogenase 1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000106348::function",
+          "title": "IMPDH1 \u2014 IMPDH1",
+          "url": "https://platform.opentargets.org/target/ENSG00000106348",
+          "text": "Function: Catalyzes the conversion of inosine 5'-phosphate (IMP) to xanthosine 5'-phosphate (XMP), the first committed and rate-limiting step in the de novo synthesis of guanine nucleotides, and therefore plays an important role in the regulation of cell growth. Could also have a single-stranded nucleic acid-binding activity and could play a role in RNA and/or DNA metabolism. It may also have a role in the development of malignancy and the growth progression of some tumors.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000106348::MONDO_0019200",
+          "title": "IMPDH1 \u2194 retinitis pigmentosa",
+          "url": "https://platform.opentargets.org/target/ENSG00000106348/associations",
+          "text": "Disease: retinitis pigmentosa\nDescription: Retinitis pigmentosa (RP) is an inherited retinal dystrophy leading to progressive loss of the photoreceptors and retinal pigment epithelium and resulting in blindness usually after several decades.\nAssociation score: 0.714",
+          "cos_sim_score": 0.7143344473787991,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000106348::MONDO_0008379",
+          "title": "IMPDH1 \u2194 retinitis pigmentosa 10",
+          "url": "https://platform.opentargets.org/target/ENSG00000106348/associations",
+          "text": "Disease: retinitis pigmentosa 10\nDescription: Any retinitis pigmentosa in which the cause of the disease is a mutation in the IMPDH1 gene.\nAssociation score: 0.680",
+          "cos_sim_score": 0.6800042059295365,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000106348::EFO_0004220",
+          "title": "IMPDH1 \u2194 chronic hepatitis C virus infection",
+          "url": "https://platform.opentargets.org/target/ENSG00000106348/associations",
+          "text": "Disease: chronic hepatitis C virus infection\nDescription: INFLAMMATION of the LIVER in humans that is caused by HEPATITIS C VIRUS lasting six months or more. Chronic hepatitis C can lead to LIVER CIRRHOSIS.\nAssociation score: 0.606",
+          "cos_sim_score": 0.6056841572808627,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000106348::EFO_0003047",
+          "title": "IMPDH1 \u2194 hepatitis C virus infection",
+          "url": "https://platform.opentargets.org/target/ENSG00000106348/associations",
+          "text": "Disease: hepatitis C virus infection\nDescription: A viral infection caused by the hepatitis C virus.\nAssociation score: 0.600",
+          "cos_sim_score": 0.6003730930953121,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Inosine-5\u2032-monophosphate dehydrogenase",
+          "title": "Inosine-5\u2032-monophosphate dehydrogenase",
+          "url": "https://en.wikipedia.org/wiki/Inosine-5%E2%80%B2-monophosphate_dehydrogenase",
+          "text": "Inosine 5\u2032-monophosphate dehydrogenase (IMPDH) is a purine biosynthetic enzyme that catalyzes the nicotinamide adenine dinucleotide (NAD+)-dependent oxidation of inosine monophosphate (IMP) to xanthosine monophosphate (XMP), the first committed and rate-limiting step towards the de novo biosynthesis of guanine nucleotides from IMP. IMPDH is a regulator of the intracellular guanine nucleotide pool, and is therefore important for DNA and RNA synthesis, signal transduction, energy transfer, glycoprotein synthesis, as well as other processes that are involved in cellular proliferation.\n\nStructure and function\nThe canonical monomeric form of IMPDH has a molecular mass of approximately 55 kDa and generally consists of 400-500 residues. IMPDHs have been described as tetrameric, although further data validated the existence of octameric forms.  Most IMPDH monomers contain two domains: a catalytic (\u03b2/\u03b1)8 barrel domain with an active site located in the loops at the C-terminal end of the barrel, and a subdomain, named the Bateman domain, and consisting of two, repeated cystathionine beta synthetase (CBS) domains that are inserted within the dehydrogenase sequence. Monovalent cations have been shown to activate most IMPDH enzymes and may serve to stabilize the conformation of the active-site loop.\nThe Bateman domain is not required for catalytic activity. Mutations within the Bateman domain or a complete deletion of the domain do not impair the in vitro catalytic activity of some IMPDH . Other deletion examples of the Bateman domain in IMPDH have shown an enhanced in vitro catalytic activity in comparison with the corresponding wild-type counterpart. An in vivo deletion of the Bateman domain in E. coli suggests that the domain can act as a negative transregulator of adenine nucleotide synthesis. IMPDH has also been shown to bind nucleic acids, and this function can be impaired by mutations that are located in the Bateman domain. The Bateman domain has also been implicated in mediating IMPDH association with polyribosomes, which suggests a potential moonlighting role for IMPDH as a translational regulatory protein. In Staphylococcus aureus, IMPDH have been identified as a plasminogen-binding protein. Drosophila IMPDH has been demonstrated to act as a sequence-specific transcriptional repressor that can reduce the expression of histone genes and E2F. IMPDH localizes to the nucleus at the end of the S phase and nuclear accumulation is mostly restricted to the G2 phase. In addition, metabolic stress has been shown to induce the nuclear localization of IMPDH.\n\nMechanism\nThe overall reaction catalyzed by IMPDH is:\n\ninosine 5'-phosphate + NAD+ + H2O \n  \n    \n      \n        \u21cc\n      \n    \n    {\\displaystyle \\rightleftharpoons }\n  \n xanthosine 5'-phosphate + NADH + H+\nThe mechanism of IMPDH involves a sequence of two different chemical reactions: (1) a fast redox reaction involving a hydride transfer to NAD+ which generates NADH and an enzyme-bound XMP intermediate (E-XMP*) and (2) a hydrolysis step that releases XMP from the enzyme. IMP binds to the active site and a conserved cysteine residue attacks the 2-position of the purine ring. A hydride ion is then transferred from the C2 position to NAD+ and the E-XMP* intermediate is formed. NADH dissociates from the enzyme and a mobile active-site flap element moves a conserved catalytic dyad of arginine and threonine into the newly unoccupied NAD binding site. The arginine residue is thought to act as the general base that activates a water molecule for the hydrolysis reaction. Alternatively, molecular mechanics simulations suggest that in conditions where the arginine residue is protonated, the threonine residue is also capable of activating water by accepting a proton from water while transferring its own proton to a nearby residue.",
+          "cos_sim_score": 0.46829116344451904,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Inosine-5\u2032-monophosphate dehydrogenase",
+          "title": "Inosine-5\u2032-monophosphate dehydrogenase",
+          "url": "https://en.wikipedia.org/wiki/Inosine-5%E2%80%B2-monophosphate_dehydrogenase",
+          "text": "In humans\nHumans express two distinct isozymes of IMPDH encoded by two distinct genes, IMPDH1 and IMPDH2.\nBoth isozymes contain 514 residues, have an 84% similarity in peptide sequence, and have similar kinetic properties.  Both isozymes are constitutively expressed in most tissues, but IMPDH1 is predominately expressed in the spleen, retina, and peripheral blood leukocytes. IMPDH1 is generally expressed constitutively at low levels, and IMPDH2 is generally upregulated in proliferating cells and neoplastic tissues. Homozygous IMPDH1 knockout mice demonstrate a mild retinopathy in which a slow, progressive form of retinal degeneration gradually weakens visual transduction, while homozygous IMPDH2 knockout mice display embryonic lethality.\n\nClinical significance\nGuanine nucleotide synthesis is essential for maintaining normal cell function and growth, and is also important for the maintenance of cell proliferation and immune responses. IMPDH expression is found to be upregulated in some tumor tissues and cell lines. B and T lymphocytes display a dependence on IMPDH for normal activation and function, and demonstrate upregulated IMPDH expression. Therefore, IMPDH has been addressed as a drug target for immunosuppressive and cancer chemotherapy.\nMycophenolate is an immunosuppressant that is used to prevent transplant rejection and acts through inhibition of IMPDH. Mycophenolate mofetil has been shown to inhibit completely both vaccinia and monkeypox viruses.\nMutations in the Bateman domain of IMPDH1 are associated with the RP10 form of autosomal dominant retinitis pigmentosa and dominant Leber's congenital amaurosis.\n\nResearch\nIMPDH inhibitors have been shown to prevent SARS-CoV-2 replication in cells and are being tested in clinical trials for COVID-19.\n\nSee also\nPurine metabolism\nXanthosine\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.4671822786331177,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::IMPDH1",
+          "title": "IMPDH1",
+          "url": "https://en.wikipedia.org/wiki/IMPDH1",
+          "text": "Inosine-5'-monophosphate dehydrogenase 1, also known as IMP dehydrogenase 1, is an enzyme that in humans is encoded by the IMPDH1 gene.\n\nFunction\nIMP dehydrogenase 1 acts as a homotetramer to regulate cell growth. IMPDH1 is an enzyme that catalyzes the synthesis of xanthine monophosphate (XMP) from inosine-5'-monophosphate (IMP). This is the rate-limiting step in the de novo synthesis of guanine nucleotides.\n\nClinical significance\nDefects in the IMPDH1 gene are a cause of retinitis pigmentosa type 10 (RP10).\n\nSee also\nIMP dehydrogenase\n\nReferences\nFurther reading\nExternal links\nGeneReviews/NCBI/NIH/UW entry on Retinitis Pigmentosa Overview\nOverview of all the structural information available in the PDB for UniProt: P20839 (Inosine-5'-monophosphate dehydrogenase 1) at the PDBe-KB.\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.40189433097839355,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Retinitis pigmentosa",
+          "title": "Retinitis pigmentosa",
+          "url": "https://en.wikipedia.org/wiki/Retinitis_pigmentosa",
+          "text": "RLBP1 (autosomal recessive, Bothnia type RP)\nRP1 (autosomal dominant, RP1)\nRHO (autosomal dominant, RP4)\nRDS (autosomal dominant, RP7)\nPRPF8 (autosomal dominant, RP13)\nPRPF3 (autosomal dominant, RP18)\nCRB1 (autosomal recessive, RP12)\nABCA4 (autosomal recessive, RP19)\nRPE65 (autosomal recessive, RP20)\nFor all other genes (e.g. DHDDS), molecular genetic testing is available on a research basis only.\nRP can be inherited in an autosomal dominant, autosomal recessive, X-linked or Y-linked manner. X-linked RP can be either recessive, affecting primarily only males, or dominant, affecting both males and females, although males are usually more mildly affected. Some digenic (controlled by two genes) and mitochondrial forms have also been described.\nGenetic counseling depends on an accurate diagnosis, determination of the mode of inheritance in each family, and results of molecular genetic testing.\n\nTreatment\nThere is currently no cure for retinitis pigmentosa, but the efficacy and safety of various prospective treatments are currently being evaluated. The efficiency of various supplements, such as vitamin A, DHA, NAC, and lutein, in delaying disease progression remains an unresolved, yet prospective treatment option. Clinical trials investigating optic prosthetic devices, gene therapy mechanisms, and retinal sheet transplantations are active areas of study in the partial restoration of vision in retinitis pigmentosa patients.\n\nNutrition\nStudies have demonstrated the delay of rod photoreceptor degeneration by the daily intake of 15000 IU (equivalent to 4.5 mg) of vitamin A palmitate; thus, stalling disease progression in some patients. 2007 investigations have shown that proper vitamin A supplementation can postpone blindness by up to 10 years (by reducing the 10% loss pa to 8.3% pa) in some patients in certain stages of the disease.\nA 2020 Cochrane review finds insufficient evidence to draw a conclusion on whether there is a benefit with Vitamin A, DHA, or the combination of both.\nA phase II study published in 2022 finds favorable results in patients receiving a combination supplement (\"nutraceutical\") of Vitamin A, carotenoid (lutein and zeaxanthin), and antioxidants (selenium, etc.) over placebo. The manufacturer helped with patient recruitment and supplement distribution.\n\nCell transplantation\nTransplanting pigment cells onto the retina to complete the circuitry has always been an appealing idea, but remains investigational. Human trials have been done for a variety of cell types, both autologous (from the patient) and allogeneic (from other humans).\n\nAutologous bone marrow derived stem cells\nMD Stem Cells, a clinical research company using autologous bone marrow derived stem cells (BMSC) in the treatment of retinal and optic nerve disease, published results from the Retinitis Pigmentosa cohort within their ongoing NIH registered Stem Cell Ophthalmology Study II (SCOTS2) clinical trial (NCT 03011541). Outcomes were encouraging with 45.5% of eyes showing an average of 7.9 lines of improvement (40.9% LogMAR improvement over baseline) and 45.5% of eyes showing stable acuity over the follow-up. Results were statistically significant(p=0.016). Retinitis Pigmentosa continues to be treated and evaluated in the study.\n\nArgus retinal prosthesis\nThe Argus retinal prosthesis became the first approved treatment for the disease in February 2011, and is currently available in Germany, France, Italy, and the UK. Interim results on 30 patients long term trials were published in 2012. The Argus II retinal implant has also received market approval in the US. The device may help adults with RP who have lost the ability to perceive shapes and movement to be more mobile and to perform day-to-day activities. In June 2013, twelve hospitals in the US announced they would soon accept consultation for patients with RP in preparation for the launch of Argus II later that year. The Alpha-IMS is a subretinal implant involving the surgical implantation of a small image-recording chip beneath the optic fovea. Measures of visual improvements from Alpha-IMS studies require the demonstration of the device's safety before proceeding with clinical trials and granting market approval.",
+          "cos_sim_score": 0.20288348197937012,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Leber congenital amaurosis",
+          "title": "Leber congenital amaurosis",
+          "url": "https://en.wikipedia.org/wiki/Leber_congenital_amaurosis",
+          "text": "See also\nVisual cycle\n\nNotes\nReferences\nWorks cited\nKondkar AA, Abu-Amero KK (December 2019). \"Leber congenital amaurosis: Current genetic basis, scope for genetic testing and personalized medicine\". Exp Eye Res. 189 107834. doi:10.1016/j.exer.2019.107834. PMID 31639339. S2CID 204849679.\nSchmitt TM, Ohns MJ, DeVries JJ (May 2023). \"Leber Congenital Amaurosis: Leading Cause of Inherited Blindness in Children\". Journal for Nurse Practitioners. 19 (5) 104560. doi:10.1016/j.nurpra.2023.104560. S2CID 258096914.\n\nFurther reading\nGambino, Megan (December 17, 2008). \"Jocelyn Kaiser on 'Gene Therapy in a New Light'\". Science & Nature. Smithsonian. p. 124. Archived from the original on 25 June 2013. Retrieved 22 May 2021.\nLewis, Ricki (2012). The Forever Fix: Gene Therapy and the Boy Who Saved It. New York: St. Martin's Press. ISBN 978-0-312-68190-6. OCLC 740628904.\n\nExternal links\nGeneReview/NIH/UW entry on Leber Congenital Amaurosis",
+          "cos_sim_score": 0.12383414804935455,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

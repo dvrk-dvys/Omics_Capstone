@@ -5,7 +5,7 @@
   <img src="data/fhn_hip_replacement.jpeg" alt="Hip Replacement — Femoral Head Osteonecrosis" width="700">
 </p>
 
-> **Python ML App:** A separate automated pipeline replicates and extends this workflow using scikit-learn, XGBoost, hyperopt, and MLflow — see [`omics_ml_pipeline/README.md`](omics_ml_pipeline/README.md).
+> **Python ML App:** A separate automated pipeline replicates and extends this workflow using scikit-learn, XGBoost, hyperopt, and MLflow — see [`AutoOmics_ML_Pipeline/README.md`](AutoOmics_ML_Pipeline/README.md).
 
 ---
 
@@ -90,11 +90,11 @@ Despite these limitations, the downstream analytical framework (normalization �
 2. Scroll to **"Download family"** section
 3. Download **Series Matrix File(s)** (TXT format) — this is the main data file
 4. Download **SOFT formatted family file(s)** — study and sample metadata
-5. Place both files in: `omics_ml_pipeline/app/data/input/`
+5. Place both files in: `AutoOmics_ML_Pipeline/app/data/input/`
 
 **Expected structure after download:**
 ```
-omics_ml_pipeline/app/data/input/
+AutoOmics_ML_Pipeline/app/data/input/
 ├── GSE123568_series_matrix.txt.gz   ← primary data + sample labels
 ├── GSE123568_family.soft.gz         ← probe → gene symbol annotations
 └── GSE123568_abstract.txt           ← dataset summary for LLM context (already in repo)
@@ -110,7 +110,7 @@ R/oligo to process. The series matrix already contains RMA-normalized log2 value
 Two parallel branches start from the same shared preprocessing steps.
 
 ```
-omics_ml_pipeline/app/data/input/
+AutoOmics_ML_Pipeline/app/data/input/
 ├── GSE123568_series_matrix.txt.gz
 └── GSE123568_family.soft.gz
         │
@@ -140,8 +140,65 @@ weka_biomarker_shortlist.csv    weka_biomarker_shortlist.csv
         └───────────────┬───────────────┘
                         ▼
               LLM biological interpretation
-              (omics_ml_pipeline --llm)
+              (AutoOmics_ML_Pipeline --llm)
 ```
+
+---
+
+## Output Inventory
+
+### Biomarker Shortlists
+
+| Run | Path | Notes |
+|-----|------|-------|
+| Weka — multivariate | `data/femoral_head_necrosis/weka_models/multivariate/weka_biomarker_shortlist.csv` | RF importance, top 100 hybrid-score probes |
+| Weka — univariate ANN | `data/femoral_head_necrosis/weka_models/univariate_ann/weka_biomarker_shortlist.csv` | RF importance, top 100 ANN-ranked probes |
+| Python — multivariate top100 | `AutoOmics_ML_Pipeline/app/data/output_multivariate_top100_min_s_50/biomarker_shortlist.csv` | combined_score ≥ 0.50 |
+| Python — multivariate top500 | `AutoOmics_ML_Pipeline/app/data/output_multivariate_top500_min_s_45/biomarker_shortlist.csv` | combined_score ≥ 0.45 |
+| Python — univariate rerank | `AutoOmics_ML_Pipeline/app/data/output_univariate_rerank_top43/biomarker_shortlist.csv` | univariate_score, top 43 |
+
+### LLM Outputs (JSON per gene)
+
+| Run | Path | Genes |
+|-----|------|-------|
+| **Weka — multivariate** | `data/femoral_head_necrosis/llm_outputs/multivariate/` | 25 |
+| **Weka — univariate ANN** | `data/femoral_head_necrosis/llm_outputs/univariate_ann/` | 25 (when complete) |
+| Python — multivariate top100 | `AutoOmics_ML_Pipeline/app/data/output_multivariate_top100_min_s_50/llm_outputs/` | 11 |
+| Python — multivariate top500 | `AutoOmics_ML_Pipeline/app/data/output_multivariate_top500_min_s_45/llm_outputs/` | 19 |
+| Python — univariate rerank | `AutoOmics_ML_Pipeline/app/data/output_univariate_rerank_top43/llm_outputs/` | 45 |
+
+### Scraper Outputs
+
+Run `report/llm_output_scraper.py` with `input_dir` pointed at any LLM outputs directory above.
+Save each output with a descriptive name to `report/` — e.g. `audit_weka_multivariate.json`, `audit_weka_univariate_ann.json`.
+
+---
+
+## Pipeline Progress
+
+### Multivariate branch (hybrid score → Weka)
+- [x] Step 1 — Parse series matrix
+- [x] Step 2 — Preprocess (IQR filter)
+- [x] Step 3a — Feature selection + ARFF (`top100_features.arff`)
+- [x] Step 4 — Weka classifiers (9 files in `weka_models/multivariate/`)
+- [ ] Step 4 — J48 re-run with **Output model** enabled (tree not captured in first run)
+- [x] Step 5 — Biomarker shortlist (`weka_biomarker_shortlist.csv`)
+- [x] Step 6 — LLM biological interpretation (multivariate shortlist, top 25 genes)
+- [ ] Step 6 — Weka model comparison chart (`plots/multivariate/weka_model_comparison.png`)
+
+### Univariate branch (ANN ranking → Weka)
+- [ ] Step 3b — Univariate ANN feature selection + ARFF
+- [ ] Step 4 — Weka classifiers (9 files in `weka_models/univariate_ann/`)
+- [ ] Step 5 — Biomarker shortlist (`weka_models/univariate_ann/weka_biomarker_shortlist.csv`)
+- [ ] Step 6 — LLM biological interpretation (univariate shortlist)
+- [ ] Step 6 — Weka model comparison chart (`plots/univariate_ann/weka_model_comparison.png`)
+
+### Report
+- [ ] Results table (accuracy, AUC, kappa per classifier — both branches)
+- [ ] Top biomarker gene table (RF importance + J48 split + fold change)
+- [ ] Discussion — erythrocyte/vascular signature interpretation
+- [ ] Discussion — multivariate vs univariate gene overlap
+- [ ] LLM section — methodology and evidence grounding
 
 ---
 
@@ -152,12 +209,12 @@ All commands run from the **project root** (`/Omics_Capstone/`) unless noted.
 ### Step 1 — Parse series matrix (shared)
 
 ```bash
-python3 omics_ml_pipeline/app/utils/parse_series_matrix.py
+python3 AutoOmics_ML_Pipeline/app/utils/parse_series_matrix.py
 ```
 
 Reads `GSE123568_series_matrix.txt.gz`. Extracts probe expression matrix, transposes to samples × probes, assigns class labels from `disease:` field.
 
-**Output → `omics_ml_pipeline/app/data/output/parsed/parsed_matrix.csv`**
+**Output → `AutoOmics_ML_Pipeline/app/data/output/parsed/parsed_matrix.csv`**
 Shape: 40 rows × (~49k probe columns + class)
 
 ---
@@ -165,7 +222,7 @@ Shape: 40 rows × (~49k probe columns + class)
 ### Step 2 — Filter low-variance probes (shared)
 
 ```bash
-python3 omics_ml_pipeline/app/utils/preprocess.py
+python3 AutoOmics_ML_Pipeline/app/utils/preprocess.py
 ```
 
 Removes probes with IQR < 0.2 log2 units across all 40 samples. These flat probes show the same value in every patient regardless of disease status — they cannot help a classifier distinguish SONFH from control.
@@ -174,7 +231,7 @@ Removes probes with IQR < 0.2 log2 units across all 40 samples. These flat probe
 
 No normalization is applied — data is already log2 RMA from GEO.
 
-**Output → `omics_ml_pipeline/app/data/output/parsed/preprocessed_matrix.csv`**
+**Output → `AutoOmics_ML_Pipeline/app/data/output/parsed/preprocessed_matrix.csv`**
 Shape: 40 rows × (filtered probes + class)
 
 ---
@@ -182,7 +239,7 @@ Shape: 40 rows × (filtered probes + class)
 ### Step 3a — Multivariate feature selection + ARFF
 
 ```bash
-python3 omics_ml_pipeline/app/utils/feature_select.py
+python3 AutoOmics_ML_Pipeline/app/utils/feature_select.py
 ```
 
 Ranks all retained probes by **hybrid score = zscore(|log2 FC|) + zscore(|Welch t-stat|)**. Selects top 100 for Weka. Also exports top 500 and gene-level deduped files. Generates 7 EDA plots.
@@ -206,7 +263,7 @@ Ranks all retained probes by **hybrid score = zscore(|log2 FC|) + zscore(|Welch 
 ### Step 3b — Univariate ANN feature selection + ARFF
 
 ```bash
-cd omics_ml_pipeline
+cd AutoOmics_ML_Pipeline
 python -m app.utils.univariate_ann
 cd ..
 ```
@@ -306,22 +363,20 @@ Save all `.txt` files to:
 Run after Weka is complete for each branch.
 
 ```bash
-# Multivariate shortlist
-python3 generate_weka_biomarker_shortlist.py \
-  --rf    data/femoral_head_necrosis/weka_models/multivariate/randomforest.txt \
-  --j48   data/femoral_head_necrosis/weka_models/multivariate/j48_tree.txt \
-  --ranks data/femoral_head_necrosis/feature_selection/multivariate/gene_rankings.csv \
-  --out   data/femoral_head_necrosis/weka_models/multivariate/weka_biomarker_shortlist.csv
+# Multivariate shortlist (defaults hardcoded — just run)
+python3 generate_weka_biomarker_shortlist.py
 
 # Univariate shortlist
 python3 generate_weka_biomarker_shortlist.py \
   --rf    data/femoral_head_necrosis/weka_models/univariate_ann/randomforest.txt \
   --j48   data/femoral_head_necrosis/weka_models/univariate_ann/j48_tree.txt \
-  --ranks omics_ml_pipeline/app/data/output/feature_selection/gene_rankings.csv \
+  --ranks data/femoral_head_necrosis/feature_selection/multivariate/gene_rankings.csv \
   --out   data/femoral_head_necrosis/weka_models/univariate_ann/weka_biomarker_shortlist.csv
 ```
 
-Output columns: `probe_id`, `gene_symbol`, `rf_rank`, `rf_importance`, `j48_split`, `abs_fc`, `log_fc`, `hybrid_score`, `source`
+> The `--ranks` argument always points to the multivariate `gene_rankings.csv` — it provides fold-change and gene symbol annotation for whichever probes the RF selected, regardless of which branch produced them.
+
+Output columns: `probe_id`, `gene_symbol`, `rf_rank`, `rf_importance`, `j48_split`, `abs_fold_change`, `log_fc`, `hybrid_score`, `source`
 
 ---
 
@@ -330,7 +385,7 @@ Output columns: `probe_id`, `gene_symbol`, `rf_rank`, `rf_importance`, `j48_spli
 ```bash
 python3 - <<'EOF'
 import sys
-sys.path.insert(0, "omics_ml_pipeline")
+sys.path.insert(0, "AutoOmics_ML_Pipeline")
 from app.utils.feature_select import plot_weka_model_results
 
 plot_weka_model_results(
@@ -348,10 +403,10 @@ EOF
 
 ## Python Pipeline (Automated)
 
-The automated pipeline in `omics_ml_pipeline/` replicates and extends the Weka workflow using scikit-learn, XGBoost, hyperopt, and MLflow. It produces equivalent plots and biomarker shortlists with stronger statistical evaluation (50-fold repeated CV vs Weka's single 10-fold run).
+The automated pipeline in `AutoOmics_ML_Pipeline/` replicates and extends the Weka workflow using scikit-learn, XGBoost, hyperopt, and MLflow. It produces equivalent plots and biomarker shortlists with stronger statistical evaluation (50-fold repeated CV vs Weka's single 10-fold run).
 
 ```bash
-cd omics_ml_pipeline
+cd AutoOmics_ML_Pipeline
 
 # Full run from scratch
 python -m app.main
@@ -366,7 +421,7 @@ python -m app.main --skip-pre --mode univariate
 python -m app.main --skip-pre --skip-train --llm
 ```
 
-See [`omics_ml_pipeline/README.md`](omics_ml_pipeline/README.md) for full documentation.
+See [`AutoOmics_ML_Pipeline/README.md`](AutoOmics_ML_Pipeline/README.md) for full documentation.
 
 ---
 
@@ -425,7 +480,7 @@ data/femoral_head_necrosis/
 
 ## EDA — Exploratory Data Analysis
 
-> Generated by `omics_ml_pipeline/app/utils/feature_select.py`, saved to `data/femoral_head_necrosis/plots/eda/`.
+> Generated by `AutoOmics_ML_Pipeline/app/utils/feature_select.py`, saved to `data/femoral_head_necrosis/plots/eda/`.
 
 The EDA plots run before the branch split and are identical for both multivariate and univariate approaches — they visualize the preprocessed data and the top probe landscape, not the final feature sets.
 
@@ -514,7 +569,7 @@ PCA compresses the 100-probe feature space down to 2 numbers per patient. If the
 Unlike single-cell RNA-seq (which produces enormous per-patient folders), microarray data puts **all 40 patients inside just 2 files**. There are no patient folders. All data lives in one table.
 
 ```
-omics_ml_pipeline/app/data/input/
+AutoOmics_ML_Pipeline/app/data/input/
 ├── GSE123568_series_matrix.txt.gz   ← ALL 40 patients × 49,293 probes
 └── GSE123568_family.soft.gz         ← probe → gene symbol annotation
 ```
@@ -656,10 +711,24 @@ Notable exceptions to the RBC pattern:
 **Prompt structure (what the professor means by "prompt engineering"):**
 The prompt is intentionally scoped to include: disease context (SONFH pathophysiology), dataset context (GSE123568, n=40, peripheral blood), the biomarker shortlist with ML evidence sources, retrieved PubMed abstracts as the sole evidence base, an explicit constraint against fabricating citations or recalling training data, and a requirement to flag weak or unsupported evidence explicitly. This reflects the emphasis on task definition, evidence scope, output constraints, and uncertainty handling.
 
+**Weka branch (external shortlist):**
 ```bash
-cd omics_ml_pipeline
+cd AutoOmics_ML_Pipeline
+
+# Multivariate Weka shortlist → LLM
+python -m app.main --skip-pre --skip-train --llm --shortlist ../data/femoral_head_necrosis/weka_models/multivariate/weka_biomarker_shortlist.csv
+
+# Univariate Weka shortlist → LLM
+python -m app.main --skip-pre --skip-train --llm --shortlist ../data/femoral_head_necrosis/weka_models/univariate_ann/weka_biomarker_shortlist.csv
+```
+
+**Python pipeline shortlist → LLM** (uses internally generated shortlist from feature selection):
+```bash
+cd AutoOmics_ML_Pipeline
 python -m app.main --skip-pre --skip-train --llm
 ```
+
+> `--skip-train --shortlist` together skips feature selection, univariate ANN, and biomarker shortlist generation entirely — the LLM job consumes the external CSV directly. Without `--shortlist`, feature selection still runs to build the shortlist internally.
 
 **Human validation checklist — mandatory before citing in report:**
 

@@ -1,0 +1,153 @@
+{
+  "probe_id": "11717208_at",
+  "gene_symbol": "RXRB",
+  "score": 1.0,
+  "SD_TestAUC": 0.0202860206483394,
+  "abs_fold_change": 0.5354,
+  "probe_count": 1,
+  "probe_ids": "11717208_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.5354,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:44:32",
+  "interpretation": "The RXRB gene encodes the retinoic acid receptor RXR-beta, which is a nuclear receptor that regulates gene expression in response to retinoic acid, a derivative of vitamin A. Retinoic acid signaling is crucial for various biological processes, including cell differentiation and growth, which may be relevant in the context of bone health and osteogenesis. Although there is no direct evidence linking RXRB specifically to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), retinoic acid has been implicated in bone metabolism and may influence the pathophysiology of osteonecrosis through its effects on bone cell differentiation and function. The evidence regarding RXRB's role in SONFH is limited, leading to a lower confidence in its potential as a biomarker. Thus, while RXRB may play a role in bone health, its specific utility as an early-detection biomarker for SONFH remains uncertain and speculative.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "RXRB may influence bone health through retinoic acid signaling, but its direct relevance to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) is unclear.",
+  "citations": [
+    "RXRB (P28702). https://www.uniprot.org/uniprotkb/P28702",
+    "RXRB (P28702-3). https://www.uniprot.org/uniprotkb/P28702-3",
+    "RXRB \u2014 RXRB. https://platform.opentargets.org/target/ENSG00000204231",
+    "RXRB \u2194 psoriasis. https://platform.opentargets.org/target/ENSG00000204231/associations",
+    "RXRB \u2194 Cutaneous T-cell lymphoma. https://platform.opentargets.org/target/ENSG00000204231/associations",
+    "RXRB \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000204231/associations",
+    "RXRB \u2194 Eczematoid dermatitis. https://platform.opentargets.org/target/ENSG00000204231/associations",
+    "Retinoic acid receptor alpha. https://en.wikipedia.org/wiki/Retinoic_acid_receptor_alpha",
+    "Retinoic acid receptor gamma. https://en.wikipedia.org/wiki/Retinoic_acid_receptor_gamma",
+    "Retinoic acid receptor. https://en.wikipedia.org/wiki/Retinoic_acid_receptor",
+    "Retinoic acid receptor beta. https://en.wikipedia.org/wiki/Retinoic_acid_receptor_beta",
+    "Retinoic acid. https://en.wikipedia.org/wiki/Retinoic_acid"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5428,
+    "completion_tokens": 264,
+    "total_tokens": 5692,
+    "estimated_cost_usd": 0.000973
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P28702",
+          "title": "RXRB (P28702)",
+          "url": "https://www.uniprot.org/uniprotkb/P28702",
+          "text": "Protein: Retinoic acid receptor RXR-beta\nFunction: Receptor for retinoic acid. Retinoic acid receptors bind as heterodimers to their target response elements in response to their ligands, all-trans or 9-cis retinoic acid, and regulate gene expression in various biological processes. The RAR/RXR heterodimers bind to the retinoic acid response elements (RARE)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P28702-3",
+          "title": "RXRB (P28702-3)",
+          "url": "https://www.uniprot.org/uniprotkb/P28702-3",
+          "text": "Protein: Isoform 2 of Retinoic acid receptor RXR-beta",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000204231::function",
+          "title": "RXRB \u2014 RXRB",
+          "url": "https://platform.opentargets.org/target/ENSG00000204231",
+          "text": "Function: Receptor for retinoic acid. Retinoic acid receptors bind as heterodimers to their target response elements in response to their ligands, all-trans or 9-cis retinoic acid, and regulate gene expression in various biological processes. The RAR/RXR heterodimers bind to the retinoic acid response elements (RARE). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000204231::EFO_0000676",
+          "title": "RXRB \u2194 psoriasis",
+          "url": "https://platform.opentargets.org/target/ENSG00000204231/associations",
+          "text": "Disease: psoriasis\nDescription: An autoimmune condition characterized by red, well-delineated plaques with silvery scales that are usually on the extensor surfaces and scalp. They can occasionally present with these manifestations: pustules; erythema and scaling in intertriginous areas, and erythroderma, that are often distributed on extensor surfaces and scalp.\nAssociation score: 0.590",
+          "cos_sim_score": 0.5895136551916702,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000204231::EFO_0002913",
+          "title": "RXRB \u2194 Cutaneous T-cell lymphoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000204231/associations",
+          "text": "Disease: Cutaneous T-cell lymphoma\nDescription: A T-cell non-Hodgkin lymphoma arising from the skin. Representative examples include mycosis fungoides and primary cutaneous anaplastic large cell lymphoma.\nAssociation score: 0.529",
+          "cos_sim_score": 0.5293820774075371,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000204231::EFO_0005772",
+          "title": "RXRB \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000204231/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.526",
+          "cos_sim_score": 0.5261379875719714,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000204231::HP_0000964",
+          "title": "RXRB \u2194 Eczematoid dermatitis",
+          "url": "https://platform.opentargets.org/target/ENSG00000204231/associations",
+          "text": "Disease: Eczematoid dermatitis\nDescription: Eczema is a form of dermatitis that is characterized by scaly, pruritic, erythematous lesions located on flexural surfaces.\nAssociation score: 0.497",
+          "cos_sim_score": 0.4967050585891646,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Retinoic acid receptor alpha",
+          "title": "Retinoic acid receptor alpha",
+          "url": "https://en.wikipedia.org/wiki/Retinoic_acid_receptor_alpha",
+          "text": "Retinoic acid receptor alpha (RAR-\u03b1), also known as NR1B1 (nuclear receptor subfamily 1, group B, member 1), is a nuclear receptor that in humans is encoded by the RARA gene.\nNR1B1 is a gene with a protein product and has a chromosomal location of 17q21.2. RARA codes for the nuclear hormone receptor retinoic acid receptor, alpha subtype, a transcription factor. There are another two subtypes of RARs: beta and gamma subtypes.\n\nFunction\nRetinoid signaling is transduced by two families of nuclear receptors, retinoic acid receptor (RAR) and retinoid X receptor (RXR), which form RXR/RAR heterodimers. In the absence of ligand, DNA-bound RXR/RARA represses transcription by recruiting the corepressors NCOR1, SMRT (NCOR2), and histone deacetylase. When ligand binds to the complex, it induces a conformational change allowing the recruitment of coactivators, histone acetyltransferases, and the basic transcription machinery.\nRetinoic acid receptor-alpha, the protein, interacts with retinoic acid, a derivative of vitamin A, which plays an important role in cell growth, differentiation, and the formation of organs in embryonic development.\nOnce retinoic acid binds to the RAR, the heterodimer initiates transcription and allows for its target genes to be expressed.\n\nClinical significance\nRA signaling has been correlated with several signaling pathways in early embryonic development. First, it participates in the formation of the embryonic axis, which establishes symmetry in the offspring. RA also influences neural differentiation by regulating the expression of pro-neural induction factor Neurogenin 2 (Neurog2). RA affects cardiogenesis, as it plays a role specifically in the formation of the atrial chambers of the heart. RA also plays a role in the development of the pancreas, kidneys, lungs, and extremities.  \nTranslocations that always involve rearrangement of the RARA gene are a cardinal feature of acute promyelocytic leukemia (APL; MIM 612376). The most frequent translocation is t(15,17)(q21;q22), which fuses the RARA gene with the PML gene.\n\nAcute promyeloid leukemia\nRARA plays an important role in the establishment of the immune system by inducing T-regulatory cells, promoting tolerance, and controlling the differentiation of immature immune cells in the bone marrow called promyelocytes into mature white blood cells. The prevalence of this gene in the developing immune system leaves it subject to possible defects, the most common of which is a condition known as acute promyeloid leukemia (APL), caused by a somatic mutation described by the fusion of RARA and the PML gene located on chromosome 15. This fusion results in the formation of the protein complex PML-RAR\u03b1. Under normal circumstances, PML produces a tumor suppressing protein that works by inhibiting uncontrolled rapid cell growth. When the two proteins fuse together, their normal functions are hindered, resulting in the accumulation of promyelocytes in the bone marrow unable to differentiate past this immature phase. This fusion makes up for the cause of 98% of APL cases, with some other rare mutations and fusions making up the other 2%.6 Current treatment approaches include all-trans-retinoic acid (ATRA) which works by targeting and degrading the PML-RAR\u03b1 protein complex, in addition to chemotherapy and platelet transfusions.\n\nInteractions\nRetinoic acid receptor alpha has been shown to interact with:\n\nGenetic studies\nKnock-out mice studies showed that a deletion in one of the copies of the RARA gene did not create any observable defect, while deletion of both copies shows symptoms similar to that of vitamin A deficiency. This proved that all three subtypes of RARs work redundantly.\n\nLigands\nAntagonists\nBMS-189453 (non selective)\nYCT529 (selective for RAR-\u03b1)\n\nSee also\nRetinoic acid receptor\nRetinoic X receptor\nAcute promyelocytic leukemia\n\nReferences\nFurther reading\n\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.7869127988815308,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Retinoic acid receptor gamma",
+          "title": "Retinoic acid receptor gamma",
+          "url": "https://en.wikipedia.org/wiki/Retinoic_acid_receptor_gamma",
+          "text": "Retinoic acid receptor gamma (RAR-\u03b3), also known as NR1B3 (nuclear receptor subfamily 1, group B, member 3) is a nuclear receptor encoded by the RARG gene. Adapalene selectively targets retinoic acid receptor beta and retinoic acid receptor gamma and its agonism of the gamma subtype is largely responsible for adapalene's observed effects.\n\nInteractions\nRetinoic acid receptor gamma has been shown to interact with NCOR1.\n\nSee also\nRetinoic acid receptor\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.743671178817749,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Retinoic acid receptor",
+          "title": "Retinoic acid receptor",
+          "url": "https://en.wikipedia.org/wiki/Retinoic_acid_receptor",
+          "text": "The retinoic acid receptor (RAR) is a type of nuclear receptor which can also act as a ligand-activated transcription factor that is activated by both all-trans retinoic acid and 9-cis retinoic acid, retinoid active derivatives of Vitamin A.  They are typically found within the nucleus. There are three retinoic acid receptors (RAR), RAR-alpha, RAR-beta, and RAR-gamma, encoded by the RARA, RARB, RARG genes, respectively. Within each RAR subtype there are various isoforms differing in their N-terminal region A. Multiple splice variants have been identified in human RARs: four for RARA, five for RARB, and two for RARG. As with other type II nuclear receptors, RAR heterodimerizes with RXR and in the absence of ligand, the RAR/RXR dimer binds to hormone response elements known as retinoic acid response elements (RAREs) complexed with corepressor protein.  Binding of agonist ligands to RAR results in dissociation of corepressor and recruitment of coactivator protein that, in turn, promotes transcription of the downstream target gene into mRNA and eventually protein. In addition, the expression of RAR genes is under epigenetic regulation by promoter methylation. Both the length and magnitude of the retinoid response is dependent of the degradation of RARs and RXRs through the ubiquitin-proteasome.  This degradation can lead to elongation of the DNA transcription through disruption of the initiation complex or to end the response to facilitate further transcriptional programs.  RAR receptors are also known to exhibit many retinoid-independent effects as they bind to and regulate other nuclear receptor pathways, such as the estrogen receptor.\nRARs play a crucial role in embryonic development. Mice knockout studies of RARs revealed that knocking out RARs could fully replicate the spectrum of defects associated with fetal vitamin A deficiency syndrome, unveiling additional abnormalities beyond previously known vitamin A functions. Notably, double RAR mutants exhibited the most severe defects, including ocular and cardiovascular defects, indicating some level of redundancy among RARs. RXR/RAR heterodimers transmit retinoid signals in diverse ways to control the expression of networks of retinoic acid (RA) target genes. This process plays a crucial role in shaping both the axial and limb patterning during early embryo development, as well as influencing various aspects of organ formation in later stages of development.\n\nSee also\nRetinoid receptor\nRetinoid X receptor\n\nReferences\nExternal links\nRetinoic+Acid+Receptor at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.6972033381462097,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Retinoic acid receptor beta",
+          "title": "Retinoic acid receptor beta",
+          "url": "https://en.wikipedia.org/wiki/Retinoic_acid_receptor_beta",
+          "text": "Retinoic acid receptor beta (RAR-beta), also known as NR1B2 (nuclear receptor subfamily 1, group B, member 2) is a nuclear receptor that in humans is encoded by the RARB gene.\n\nFunction\nThis gene encodes retinoic acid receptor beta, a member of the thyroid-steroid hormone receptor superfamily of nuclear transcriptional regulators. This receptor localizes to the cytoplasm and to subnuclear compartments. It binds retinoic acid, the biologically active form of vitamin A which mediates cellular signalling in embryonic morphogenesis, cell growth and differentiation. It is thought that this protein limits growth of many cell types by regulating gene expression. The gene was first identified in a hepatocellular carcinoma where it flanks a hepatitis B virus integration site. A deregulation of this gene has also been detected in uterine cervical carcinoma preneoplastic lesions. The gene expresses at least two transcript variants; one additional transcript has been described, but its full length nature has not been determined.\n\nEpigenetics\nThe Retinoic acid receptor beta aberrant promoter DNA hypermethylation has been observed associated with cancer onset/progression. Indeed, this improper epigenetic phenomenon has been observed in women affected by Vulvar Squamous cell carcinoma arose from vulver lichen sclerosus. Methylation of the Retinoic acid receptor beta promoter may be a marker of cancer risk in patients affected by this disease.\n\nInteractions\nRetinoic acid receptor beta has been shown to interact with NR4A2.\n\nSee also\nRetinoic acid receptor\n\nReferences\nFurther reading\n\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.6277225017547607,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Retinoic acid",
+          "title": "Retinoic acid",
+          "url": "https://en.wikipedia.org/wiki/Retinoic_acid",
+          "text": "Retinoic acid (simplified nomenclature for all-trans-retinoic acid) is a metabolite of vitamin A1 (all-trans-retinol) that is required for embryonic development, male fertility, regulation of bone growth and immune function.  All-trans-retinoic acid is required for chordate animal development, which includes all higher animals from fish to humans. During early embryonic development, all-trans-retinoic acid generated in a specific region of the embryo helps determine position along the embryonic anterior/posterior axis by serving as an intercellular signaling molecule that guides development of the posterior portion of the embryo. It acts through Hox genes, which ultimately control anterior/posterior patterning in early developmental stages. In adult tissues, the activity of endogenous retinoic acid appears limited to immune function and male fertility. \nAll-trans-retinoic acid is the major occurring retinoic acid, while isomers like 13-cis- and 9-cis-retinoic acid are also present in much lower levels.\nThe key role of all-trans-retinoic acid in embryonic development mediates the high teratogenicity of retinoid pharmaceuticals, such as isotretinoin (13-cis-retinoic acid) used for treatment of acne or retinol used for skin disorders. High oral doses of preformed vitamin A (retinyl palmitate), and all-trans-retinoic acid itself, also have teratogenic potential by this same mechanism.\n\nMechanism of biological action\nAll-trans-retinoic acid acts by binding to the retinoic acid receptor (RAR), which is bound to DNA as a heterodimer with the retinoid X receptor (RXR) in regions called retinoic acid response elements (RAREs). Binding of the all-trans-retinoic acid ligand to RAR alters the conformation of the RAR, which affects the binding of other proteins that either induce or repress transcription of a nearby gene (including Hox genes and several other target genes). RARs mediate transcription of different sets of genes controlling differentiation of a variety of cell types, thus the target genes regulated depend upon the target cells. In some cells, one of the target genes is the gene for the retinoic acid receptor itself (RAR-beta in mammals), which amplifies the response. Control of retinoic acid levels is maintained by a suite of proteins that control synthesis and degradation of retinoic acid. The concentration of retinoic acid is tightly controlled and governs activation of the retinoid nuclear receptor pathway. In adults, retinoic acid is only detected at physiologically relevant levels in the testes, pancreas and immune tissues.\nThe molecular basis for the interaction between all-trans-retinoic acid and the Hox genes has been studied by using deletion analysis in transgenic mice carrying constructs of GFP reporter genes. Such studies have identified functional RAREs within flanking sequences of some of the most 3\u2032 Hox genes (including HOXA1, HOXB1, HOXB4, HOXD4), suggesting a direct interaction between the genes and retinoic acid. These types of studies strongly support the normal roles of retinoids in patterning vertebrate embryogenesis through the Hox genes.\nIn adults, retinoic acid has a key role in preventing autoimmunity in mucosal tissues. Retinoic acid produced by dendritic cells promotes regulatory T cell formation to promote tolerance within the colon. This pathway is used by cancer cells to suppress the immune system. In the testes, retinoic acid is necessary for the process of spermatogenesis. Experiments in healthy male subjects suggests that retinoic acid is only necessary for fertility in adult humans.\nRetinoic acid plays a complex role in cancer. In some types of cancer cells that express retinoic acid receptors retinoic acid causes differentiation, while in other types of cancer cells that lack critical components of the retinoic acid signaling pathways retinoic acid may promote cancer progression by suppressing the immune response, and by promoting a dormant state in cancer cells whereby decreased proliferation and metabolism protects them from chemotherapy.",
+          "cos_sim_score": 0.507475733757019,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "probe_id": "11757569_a_at",
+  "gene_symbol": "NDRG3",
+  "score": 1.0,
+  "SD_TestAUC": 0.0405720412966789,
+  "abs_fold_change": 0.6117,
+  "probe_count": 1,
+  "probe_ids": "11757569_a_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.6117,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T18:52:58",
+  "interpretation": "NDRG3 (NDRG family member 3) is a protein involved in various cellular processes, including signal transduction and cellular differentiation. While specific evidence linking NDRG3 directly to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) is lacking, its role in cellular stress responses and potential involvement in bone metabolism suggest a plausible connection to the pathophysiology of SONFH. The retrieved evidence primarily indicates NDRG3's association with other diseases, such as neurodegenerative disorders and cancer, rather than SONFH specifically. Therefore, while NDRG3 may play a role in cellular mechanisms relevant to bone health, the evidence does not robustly support its use as a biomarker for SONFH at this time. [INFERENCE] NDRG3's potential as a biomarker for early detection of SONFH remains weak due to insufficient direct evidence linking it to the disease context.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "NDRG3 may be involved in cellular processes relevant to bone health, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "NDRG3 (Q9UGV2). https://www.uniprot.org/uniprotkb/Q9UGV2",
+    "NDRG3 (Q9UGV2-3). https://www.uniprot.org/uniprotkb/Q9UGV2-3",
+    "NDRG3 (Q9UGV2-2). https://www.uniprot.org/uniprotkb/Q9UGV2-2",
+    "NDRG3 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000101079/associations",
+    "NDRG3 \u2194 skin cancer. https://platform.opentargets.org/target/ENSG00000101079/associations",
+    "NDRG3 \u2194 skin neoplasm. https://platform.opentargets.org/target/ENSG00000101079/associations",
+    "NDRG3 \u2194 hair color. https://platform.opentargets.org/target/ENSG00000101079/associations",
+    "NDRG3 \u2194 nephrotic syndrome. https://platform.opentargets.org/target/ENSG00000101079/associations",
+    "NDRG3 \u2014 NDRG family member 3 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KRAS \u2014 KRAS proto-oncogene, GTPase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "BRAF \u2014 B-Raf proto-oncogene, serine/threonine kinase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CTNNB1 \u2014 catenin beta 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TARDBP \u2014 TAR DNA binding protein (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Exosomes in cartilage microenvironment regulation and cartilage repair (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11919854/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8264,
+    "completion_tokens": 333,
+    "total_tokens": 8597,
+    "estimated_cost_usd": 0.001439
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9UGV2",
+          "title": "NDRG3 (Q9UGV2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UGV2",
+          "text": "Protein: Protein NDRG3",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9UGV2-3",
+          "title": "NDRG3 (Q9UGV2-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UGV2-3",
+          "text": "Protein: Isoform 3 of Protein NDRG3",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9UGV2-2",
+          "title": "NDRG3 (Q9UGV2-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UGV2-2",
+          "text": "Protein: Isoform 2 of Protein NDRG3",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000101079::EFO_0005772",
+          "title": "NDRG3 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000101079/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.481",
+          "cos_sim_score": 0.48111897836638534,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101079::MONDO_0002898",
+          "title": "NDRG3 \u2194 skin cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000101079/associations",
+          "text": "Disease: skin cancer\nDescription: A malignant neoplasm involving the zone of skin\nAssociation score: 0.361",
+          "cos_sim_score": 0.3609547411540863,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101079::EFO_0004198",
+          "title": "NDRG3 \u2194 skin neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000101079/associations",
+          "text": "Disease: skin neoplasm\nDescription: Tumors or cancer of the SKIN.\nAssociation score: 0.343",
+          "cos_sim_score": 0.34270314260472334,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101079::EFO_0003924",
+          "title": "NDRG3 \u2194 hair color",
+          "url": "https://platform.opentargets.org/target/ENSG00000101079/associations",
+          "text": "Disease: hair color\nDescription: Color of hair or fur.\nAssociation score: 0.290",
+          "cos_sim_score": 0.28963884258549333,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101079::EFO_0004255",
+          "title": "NDRG3 \u2194 nephrotic syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000101079/associations",
+          "text": "Disease: nephrotic syndrome\nDescription: A condition characterized by severe PROTEINURIA, greater than 3.5 g/day in an average adult. The substantial loss of protein in the urine results in complications such as HYPOPROTEINEMIA; generalized EDEMA; HYPERTENSION; and HYPERLIPIDEMIAS. Diseases associated with nephrotic syndrome generally cause chronic kidney dysfunction.\nAssociation score: 0.280",
+          "cos_sim_score": 0.28021156500366357,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "NDRG3 \u2014 NDRG family member 3",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: NDRG3\nGene name: NDRG family member 3\nOrganism: Homo sapiens\nGene summary: Predicted to be involved in decidualization and signal transduction. Located in cytoplasm. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "NDRG3",
+          "aliases": "",
+          "gene_description": "NDRG family member 3"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KRAS \u2014 KRAS proto-oncogene, GTPase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KRAS\nGene name: KRAS proto-oncogene, GTPase\nAliases / synonyms: 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2\nOrganism: Homo sapiens\nGene summary: This gene, a Kirsten ras oncogene homolog from the mammalian ras gene family, encodes a protein that is a member of the small GTPase superfamily. A single amino acid substitution is responsible for an activating mutation. The transforming protein that results is implicated in various malignancies, including lung adenocarcinoma, mucinous adenoma, ductal carcinoma of the pancreas and colorectal carcinoma. Alternative splicing leads to variants encoding two isoforms that differ in the C-terminal region. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KRAS",
+          "aliases": "'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2",
+          "gene_description": "KRAS proto-oncogene, GTPase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "BRAF \u2014 B-Raf proto-oncogene, serine/threonine kinase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: BRAF\nGene name: B-Raf proto-oncogene, serine/threonine kinase\nAliases / synonyms: B-RAF1, B-raf, BRAF-1, BRAF1, NS7, RAFB1\nOrganism: Homo sapiens\nGene summary: This gene encodes a protein belonging to the RAF family of serine/threonine protein kinases. This protein plays a role in regulating the MAP kinase/ERK signaling pathway, which affects cell division, differentiation, and secretion. Mutations in this gene, most commonly the V600E mutation, are the most frequently identified cancer-causing mutations in melanoma, and have been identified in various other cancers as well, including non-Hodgkin lymphoma, colorectal cancer, thyroid carcinoma, non-small cell lung carcinoma, hairy cell leukemia and adenocarcinoma of lung. Mutations in this gene are also associated with cardiofaciocutaneous, Noonan, and Costello syndromes, which exhibit overlapping phenotypes. A pseudogene of this gene has been identified on the X chromosome. [provided by RefSeq, A...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "BRAF",
+          "aliases": "B-RAF1, B-raf, BRAF-1, BRAF1, NS7, RAFB1",
+          "gene_description": "B-Raf proto-oncogene, serine/threonine kinase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CTNNB1 \u2014 catenin beta 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CTNNB1\nGene name: catenin beta 1\nAliases / synonyms: CTNNB, EVR7, MRD19, NEDSDV, armadillo\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is part of a complex of proteins that constitute adherens junctions (AJs). AJs are necessary for the creation and maintenance of epithelial cell layers by regulating cell growth and adhesion between cells. The encoded protein also anchors the actin cytoskeleton and may be responsible for transmitting the contact inhibition signal that causes cells to stop dividing once the epithelial sheet is complete. Finally, this protein binds to the product of the APC gene, which is mutated in adenomatous polyposis of the colon. Mutations in this gene are a cause of colorectal cancer (CRC), pilomatrixoma (PTR), medulloblastoma (MDB), and ovarian cancer. Alternative splicing results in multiple transcript variants. [provided by RefSeq, Aug 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CTNNB1",
+          "aliases": "CTNNB, EVR7, MRD19, NEDSDV, armadillo",
+          "gene_description": "catenin beta 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TARDBP \u2014 TAR DNA binding protein",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TARDBP\nGene name: TAR DNA binding protein\nAliases / synonyms: ALS10, TDP-43\nOrganism: Homo sapiens\nGene summary: HIV-1, the causative agent of acquired immunodeficiency syndrome (AIDS), contains an RNA genome that produces a chromosomally integrated DNA during the replicative cycle. Activation of HIV-1 gene expression by the transactivator Tat is dependent on an RNA regulatory element (TAR) located downstream of the transcription initiation site. The protein encoded by this gene is a transcriptional repressor that binds to chromosomally integrated TAR DNA and represses HIV-1 transcription. In addition, this protein regulates alternate splicing of the CFTR gene. A similar pseudogene is present on chromosome 20. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TARDBP",
+          "aliases": "ALS10, TDP-43",
+          "gene_description": "TAR DNA binding protein"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::11919854",
+          "title": "Exosomes in cartilage microenvironment regulation and cartilage repair",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11919854/",
+          "text": "4.1.4 Other stem cells-derived exosomes\nHuman umbilical cord mesenchymal stem cells (HucMSCs) are recognized for their angiogenic and osteogenic properties (Wang et al., 2023; Yang et al., 2024). Within chondrocytes, the involvement of NADPH oxidase 4 (NOX4) in oxidative stress processes is pivotal. Studies have revealed a downregulation of miR-21-5p expression in cartilage tissues from patients with osteonecrosis of the femoral head. It was elucidated that SRY-box transcription factor 5 (SOX5) could enhance enhancer of zeste homolog 2 (EZH2) transcription, collectively counteracting the effects of miR-21-5p. Simultaneously, miR-21-5p demonstrated the ability to suppress both SOX5 and enhancer of zeste 2 polycomb repressive complex 2 subunit (EZH2) expression (Fang et al., 2022), thus fostering angiogenesis and bone repair. Moreover, the delivery of miR-100-5p and miR-23a-3p to chondrocytes targeted NOX4 and phosphatase and tensin homolog (PTEN), consequently promoting AKT expression to mitigate oxidative stress and apoptosis, thereby facilitating cartilage regeneration (Hu et al., 2020; Li X. et al., 2021). In the realm of cartilage restoration, umbilical cord MSCs and pluripotent stem cell-differentiated MSCs showcased superiority over adipose MSCs. Notably, pluripotent stem cell-differentiated MSCs exhibited greater efficacy than synovial MSCs, followed by bone marrow MSCs, in OA treatment (Zhu et al., 2017; Li Q. et al., 2021; Xu T. et al., 2024). Long non-coding RNAs (lncRNAs), acting as \u201cmolecular sponges,\u201d can absorb specific miRNAs, thereby suppressing their target gene expression. For instance, lncRNA H19 within HucMSCs-Exos can absorb miR-29b-3p, elevate TGF-\u03b21 and SMAD family member 3 (Smad3) levels, and inhibit forkhead box o3 (FoxO3) expression, thereby propelling cartilage repair and regeneration (Yan et al., 2021). As the exploration of various MSC types continues to expand, the potential of additional MSCs remains to be unraveled in future investigations.\n4.2 Synovial fibroblasts-derived exosomes",
+          "cos_sim_score": 0.43755853176116943,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11919854",
+          "title": "Exosomes in cartilage microenvironment regulation and cartilage repair",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11919854/",
+          "text": "1 Introduction\nOsteoarthritis (OA), recognized as the prevailing joint pathology globally, is distinguished by the degradation of articular cartilage, formation of bone redundancy, subchondral bone sclerosis, and inflammation and fibrosis in the synovium, predominantly affecting joints such as the hip, hand, and knee. This degenerative process leads to functional constraints and impairment in joint functionality. Current pharmacological interventions, serving as palliative measures, fail to halt or reverse the relentless advancement of the ailment, culminating in the necessity for joint replacement (Fan et al., 2022). Hence, there exists a pressing imperative to innovate novel therapeutic modalities that not only arrest but also potentially reverse the trajectory of OA. In OA, intricate biomechanical transformations transpire within the cartilage and chondrocytes, involving cartilage deterioration, mechanical stress, and modifications in the composition of the cartilage matrix, mediated by vital agents comprising matrix-degrading enzymes and inflammatory cytokines (Chen L. et al., 2024). While chondrocytes reside in a quiescent state in the pristine joint environment marked by diminished metabolic activity and regulated exchange of matrix constituents, upon injury to articular cartilage, chondrocytes mount a reparative response, paradoxically exacerbating arthritic progression due to constrained vascular supply to the cartilage matrix. Resultantly, an accelerated process of cartilage matrix degradation outpaces the chondrocytic synthesis of new matrix elements (Adam et al., 2024; Lee et al., 2024). Consequently, emphasis on the pivotal role of chondrocytes in the therapeutic paradigm of OA is warranted. Damage to articular cartilage or an inflammatory response accelerates joint degeneration, representing a significant pathological manifestation of OA. The challenges associated with repairing cartilage damage are attributed to the absence of blood supply, innervation, and lymphatic tissue within the joint cavity, compounded by the negative pressure environment resulting from ischemia and hypoxia (Chen J. et al., 2024). Formerly extolled as a promising intervention approach, cell-based therapy has manifested some efficacy through intra-articular instillations of pertinent cells, such as mesenchymal stem cells, showing promise in mitigating inflammatory cascades and alleviating pain (Zelinka et al., 2022; Copp et al., 2023). Conversely, empirical evidence underscores the potential unpredictability of cellular therapeutics, evoking adverse sequelae encompassing joint discomfort, edema, swelling, and even grave ramifications like carcinogenesis (Shang et al., 2023). These limitations are also evident in the loss of grafted cells, cellular senescence, apoptosis, hypertrophy, inflammation, and necrosis (Steinert et al., 2007; Alahdal et al., 2021). Exosomes (Exo) wield paramount significance in intercellular signaling mechanisms, serving as pivotal conduits for biological communication among cellular entities to regulate a myriad of physiological processes. Operating as vital signaling moieties, exosomes orchestrate the transfer of proteins, lipids, and nucleic acids, constituting a significant role in diverse physiopathological processes including tissue restitution and immune surveillance (Xu X. et al., 2024). Capitalizing on the multifaceted functions of exosomes, the manipulation of the cartilage microenvironment and facilitation of cartilage repair hold profound therapeutic promise in tackling OA (Yue et al., 2024). Despite elucidative advancements in delineating the molecular underpinnings by which exosomes foster cartilage regeneration, a comprehensive exploration of the diverse cellular origins of exosomes influencing cartilage repair in OA remains a nascent domain. Therefore, a meticulous review delineating the regulatory efficacy of exosomes derived from distinct cellular reservoirs in orchestrating cartilage healing in OA is warranted to furnish a seminal reference for subsequent investigational pursuits.\n2 Overview of extracellular vesicles and exosomes",
+          "cos_sim_score": 0.4104904532432556,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11919854",
+          "title": "Exosomes in cartilage microenvironment regulation and cartilage repair",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11919854/",
+          "text": "Excessive free radicals in the joints trigger oxidative stress, posing a risk for the degradation of the cartilage matrix and the progression of OA (Da et al., 2024). Exosomes extracted from human umbilical vein endothelial cells (HUVEC-Exos) intriguingly stimulated the production of reactive oxygen species (ROS) in chondrocytes. Additionally, they suppressed autophagy and P21 expression, diminishing chondrocyte resilience to oxidative stress, consequently fostering chondrocyte apoptosis, which hampers the repair of OA cartilage (Yang et al., 2021). This observation suggests that the vasculature has an adverse impact on cartilage repair. Inhibiting exosome secretion from intra-articular vascular endothelial cells could potentially serve as a therapeutic approach. Due to its close proximity to the cartilage, the articular subchondral bone plays a pivotal role in the investigation of cartilage repair (Hu Y. J. et al., 2024). Studies have demonstrated a close association between exosomes originating from osteoblasts in the articular subchondral bone and cartilage degeneration. Subsequent investigations unveiled that this mechanism is linked to miR-210-5p, and inhibiting miR-210-5p substantially resulted in chondroprotective effects (Wu X. et al., 2021). Table 1 and Figure 3 depict a summary of the mechanisms by which exosomes from various cell types impact cartilage repair.\nTABLE 1\nMechanism of different cell-derived exosomes in the cartilage repair process of osteoarthritis.\nBMSCs, bone marrow mesenchymal stem cells; ADSCs, adipose mesenchymal stem cells; SMSCs, synovial mesenchymal stem cells; HucMSCs, human umbilical cord mesenchymal stem cells; EVs, extracellular vesicles; PI3K/Akt/mTOR, phosphoinositide 3-kinase/protein kinase b/mammalian target of rapamycin; PTEN/AKT, phosphatase and tensin homologue deleted fromchromosome 10/protein kinase b; STAT1/NF-\u03baB/p65, signal transducer and activator of transcription 1/nuclear factor kappa b subunit 1/p65-relA; FEZ 2, fasciculation and elongation protein zeta 2; Wnt, wingless; ADAMTS9, ADAM metallopeptidase with thrombospondin type 1 motif 9; ELF3, e74 like ETS transcription factor 3; ADAM19, ADAM metallopeptidase domain 19; NOX 4, NADPH oxidase 4; RANKL/RANK/OPG, TNF-related activation-induced cytokine/TNF receptor superfamily member 11a/TNF receptor superfamily member 11b; ATF 7/TLR 4, activating transcription factor 7/toll like receptor 4; RUNX 1/VEGFA, runt-related transcription factor 1/vascular endothelial growth factor A; TLR 3, toll like receptor 3; TGF-\u03b21/Smad 2, transforming growth factor beta 1/mothers against decapentaplegic homolog 2; miRNA, microRNA.\nFIGURE 3\nSummary of cartilage microenvironment regulation and cartilage repair mechanisms by different cellular exosomes. (A) A depicts the observed changes in injury and knee joint structure in knee OA cases, offering insights into the structural impacts of the condition (B) B illustrates the process of plasmid transfection of exosomes and genetic modification to enhance the targeting of exosomes, indicating potential avenues for novel treatment approaches (C) C delineates the specific molecular mechanisms through which exosomes from various cellular origins exert their biological effects on chondrocytes, providing a detailed understanding of the biological interactions involved in the disease. BMSCs, bone marrow mesenchymal stem cells; ADSCs, adipose mesenchymal stem cells; KGN, kartogenin; miR, microRNA.\n5 Engineered exosomes",
+          "cos_sim_score": 0.3885764181613922,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11919854",
+          "title": "Exosomes in cartilage microenvironment regulation and cartilage repair",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11919854/",
+          "text": "4.1.1 Bone marrow mesenchymal stem cells -derived exosomes\nThe Wnt/\u03b2-catenin pathway is a well-established signaling cascade linked to bone formation, tissue regeneration, and joint equilibrium, playing a crucial role in the development of OA (Huang et al., 2020; Feng et al., 2024). Activation of the Wnt signaling pathway induces the stabilization and nuclear translocation of \u03b2-catenin, thereby further activating target gene expression related to cartilage degradation, inflammation, and bone regrowth (Usami et al., 2016; Aziz et al., 2024). The Wnt signaling pathway is categorized into two modes based on \u03b2-catenin dependence: the \u03b2-catenin-dependent mode, referred to as the classical Wnt/\u03b2-catenin signaling pathway, and its counterpart, known as the non-classical pathway. The classical Wnt pathway is initiated by the binding of Wnt to the Wnt receptor (i.e., Frizzled) and the Wnt co-receptor (i.e., lipoprotein receptor-related protein-LRP-5/6), which subsequently induces conformational changes in the downstream molecular complex. The downstream molecular complex comprises dishevelled, glycogen synthase kinase 3\u03b2 (GSK3\u03b2), axin, adenomatosis polyposis coli (APC), \u03b2-catenin, and other associated proteins. Alterations in the interactions and phosphorylation order of constituent proteins disrupt the phosphorylation of the amino-terminal structural domain of \u03b2-catenin, leading to its stabilization and nuclear translocation. This process, in turn, stimulates the transcription of target genes in conjunction with T-cell factors and lymphoid enhancer-binding factors (TCF/LEF), among others. Wnt-associated proteins exhibit differential expression in various regions of cartilage (Witte et al., 2009). Notably, Wnt4, Wnt5a, Wnt5b, Wnt11, and Wnt14 are significantly differentially expressed in cartilage, perichondrium, and surrounding tissues (Hartmann and Tabin, 2000). Wnt4 and Wnt14 are predominantly localized in articular cartilage (Hartmann and Tabin, 2001); Wnt5a is highly expressed in cartilage spanning the epiphysis to the metaphysis (Church et al., 2002); Wnt5b is primarily expressed in the prehypertrophic region; and Wnt11 is predominantly found in chondrocytes during embryonic limb development. Notably, the activation of the Wnt/\u03b2-catenin pathway must be tightly regulated to facilitate normal cartilage development, as either excessive activation or insufficient activation of this signaling pathway can lead to skeletal diseases (Yuasa et al., 2009; Dao et al., 2012).\nExosomes originating from BMSCs have been shown to enhance cartilage regeneration through the stimulation of chondrocyte proliferation and migration while preventing apoptosis, mainly mediated by the Wnt/\u03b2-catenin pathway. Subsequent investigations have identified that the distinctive molecular underpinnings of BMSC-derived exosomes involve the enrichment of miR-127-3p, miR-92a-3p, miR-140-3p, along with proteins associated with cellular adhesion and tissue restoration capabilities (Mao et al., 2018; Dong et al., 2021; Hu Y. et al., 2023; Wang L. et al., 2024).",
+          "cos_sim_score": 0.35833561420440674,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11919854",
+          "title": "Exosomes in cartilage microenvironment regulation and cartilage repair",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11919854/",
+          "text": "Exosomes originating from BMSCs have been shown to enhance cartilage regeneration through the stimulation of chondrocyte proliferation and migration while preventing apoptosis, mainly mediated by the Wnt/\u03b2-catenin pathway. Subsequent investigations have identified that the distinctive molecular underpinnings of BMSC-derived exosomes involve the enrichment of miR-127-3p, miR-92a-3p, miR-140-3p, along with proteins associated with cellular adhesion and tissue restoration capabilities (Mao et al., 2018; Dong et al., 2021; Hu Y. et al., 2023; Wang L. et al., 2024).\nThe PI3K/AKT/mTOR pathway stands as a critical cellular cascade governing cell proliferation, motility, growth, and metabolism, essential for maintaining the homeostasis of joint tissues and implicated in the pathogenesis of OA (Sun et al., 2020). Glucose, insulin, growth factors, and cytokines all activate the PI3K/AKT/mTOR signaling pathway (Engelman et al., 2006). These molecules function by activating receptor tyrosine kinases (RTKs) and G protein-coupled receptors (GPCRs), thereby stimulating PI3K to produce phospholipids and activate downstream proteins, including AKT and the mammalian target of rapamycin complex 1 (mTORC1) (De Santis et al., 2019). Protein kinase B (AKT) serves as a crucial signaling molecule within the PI3K pathway. Once activated, AKT translocates to various cellular compartments to activate several downstream substrates, including protein kinases, E3 ubiquitin ligases, small G-protein modulators, metabolic enzymes, transcription factors, and cell cycle regulators (Manning and Toker, 2017). A key downstream branch of AKT is mTORC1. Phosphorylation of AKT promotes the phosphorylation of mechanistic target of rapamycin kinase (mTOR) at Ser2448 and directly activates mTORC1. Altered mTORC1 activity subsequently affects its effectors, including S6 kinase 1 (S6K1), eukaryotic translation initiation factor 4E binding protein 1 (4EBP1), and unc-51-like kinase 1 (ULK1). Among these, S6K1 and 4EBP1 promote the translation of mRNAs for hypoxia inducible factor 1 subunit alpha (HIF-1\u03b1), cyclin D1, and myelocytomatosis oncogene (c-Myc), thereby participating in processes such as cell cycle regulation and angiogenesis (Laplante and Sabatini, 2012). Notably, mTORC1 serves as a major regulator of unc-51 like autophagy activating kinase 1 (ULK1) and is associated with the initiation of autophagy. Treatment with rapamycin, an inhibitor of mTORC1, enhances ULK1 kinase activity; conversely, the promotion of mTORC1 activity effectively inhibits ULK1 activity (Park et al., 2016; Nnah et al., 2019). Furthermore, ULK1 can form a complex by binding to autophagy related 13 (ATG13) and fak family kinase-interacting protein (FIP200), acting as a node that translates autophagic signaling into the initiation of autophagic biological processes (Ganley et al., 2009). These observations suggest that the PI3K/AKT/mTOR signaling pathway is critical for maintaining cellular homeostasis and is closely associated with various biological processes, including the cell cycle, cell survival, inflammation, metabolism, and apoptosis (Cravero et al., 2009; Tang et al., 2018).",
+          "cos_sim_score": 0.3152889907360077,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

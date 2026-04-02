@@ -1,0 +1,142 @@
+{
+  "probe_id": "11721346_a_at",
+  "gene_symbol": "MPEG1",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.1325077319999875,
+  "abs_fold_change": 1.3124,
+  "score": 1.3101,
+  "probe_count": 1,
+  "probe_ids": "11721346_a_at",
+  "max_score": 1.3101,
+  "mean_abs_fold_change": 1.3124,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T02:22:21",
+  "interpretation": "MPEG1 encodes a protein that plays a significant role in both innate and adaptive immunity, particularly in the process of antigen cross-presentation by dendritic cells. This function is crucial for initiating immune responses, which may be relevant in the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), as immune dysregulation can contribute to bone pathology. However, the retrieved evidence does not directly link MPEG1 to SONFH, indicating a lack of specific studies connecting this gene to the disease. Therefore, while MPEG1's biological role suggests potential relevance, the evidence is weak and primarily inferred. As such, its clinical utility as a biomarker for early detection of SONFH remains uncertain and is likely limited.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "MPEG1 may have a role in immune responses that could indirectly relate to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "MPEG1 (Q2M385). https://www.uniprot.org/uniprotkb/Q2M385",
+    "MPEG1 \u2014 MPEG1. https://platform.opentargets.org/target/ENSG00000197629",
+    "MPEG1 \u2194 immunodeficiency 77. https://platform.opentargets.org/target/ENSG00000197629/associations",
+    "MPEG1 \u2194 primary ciliary dyskinesia. https://platform.opentargets.org/target/ENSG00000197629/associations",
+    "MPEG1 \u2194 premature birth. https://platform.opentargets.org/target/ENSG00000197629/associations",
+    "MPEG1 \u2194 complex regional pain syndrome. https://platform.opentargets.org/target/ENSG00000197629/associations",
+    "MPEG-1. https://en.wikipedia.org/wiki/MPEG-1"
+  ],
+  "token_usage": {
+    "prompt_tokens": 6093,
+    "completion_tokens": 222,
+    "total_tokens": 6315,
+    "estimated_cost_usd": 0.001047
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q2M385",
+          "title": "MPEG1 (Q2M385)",
+          "url": "https://www.uniprot.org/uniprotkb/Q2M385",
+          "text": "Protein: Macrophage-expressed gene 1 protein\nFunction: Pore-forming protein involved in both innate and adaptive immunity (PubMed:23753625, PubMed:26402460, PubMed:28422754, PubMed:30609079, PubMed:31537793, PubMed:33224153). Plays a central role in antigen cross-presentation in dendritic cells by forming a pore in antigen-containing compartments, thereby promoting delivery of antigens for cross-presentation (By similarity). Also involved in innate immune response following bacterial infection; shows antibacterial activity against a wide spectrum of Gram-positive, Gram-negative and acid-fast bacteria (PubMed:23753625, PubMed:26402460, PubMed:28422754, PubMed:30609079, PubMed:33224153). Reduces the viability of the intracytosolic pathogen L.monocytogenes by inhibiting acidification of the phagocytic vacuole of host cells which restricts bacterial translocation from the vacuole to the cytosol (By similarity). Required for the antibacterial activity of reactive oxygen species and nitric oxide (By similarity) Pore-forming protein that plays a central role in antigen cross-presentation in dendritic cells by mediating delivery of antigens for cross-presentation (By similarity). Dendritic cells bridge innate and adaptive immunity by capturing exogenous antigens on MHC class-I molecules and presenting them to naive CD8(+) T-cells (By similarity). Acts by forming a pore in antigen-containing compartments, promoting the release of antigens into the cytosol, enabling generation of MHCI:peptide complexes and T-cell priming (By similarity)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000197629::function",
+          "title": "MPEG1 \u2014 MPEG1",
+          "url": "https://platform.opentargets.org/target/ENSG00000197629",
+          "text": "Function: Pore-forming protein involved in both innate and adaptive immunity (PubMed:23753625, PubMed:26402460, PubMed:28422754, PubMed:30609079, PubMed:31537793, PubMed:33224153). Plays a central role in antigen cross-presentation in dendritic cells by forming a pore in antigen-containing compartments, thereby promoting delivery of antigens for cross-presentation (By similarity). Also involved in innate immune response following bacterial infection; shows antibacterial activity against a wide spectrum of Gram-positive, Gram- negative and acid-fast bacteria (PubMed:23753625, PubMed:26402460, PubMed:28422754, PubMed:30609079, PubMed:33224153). Reduces the viability of the intracytosolic pathogen L.monocytogenes by inhibiting acidification of the phagocytic vacuole of host cells which restricts bacterial translocation from the vacuole to the cytosol (By similarity). Required for the antibacterial activity of reactive oxygen species and nitric oxide (By similarity).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197629::MONDO_0030973",
+          "title": "MPEG1 \u2194 immunodeficiency 77",
+          "url": "https://platform.opentargets.org/target/ENSG00000197629/associations",
+          "text": "Disease: immunodeficiency 77\nAssociation score: 0.704",
+          "cos_sim_score": 0.7043238859467001,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197629::MONDO_0016575",
+          "title": "MPEG1 \u2194 primary ciliary dyskinesia",
+          "url": "https://platform.opentargets.org/target/ENSG00000197629/associations",
+          "text": "Disease: primary ciliary dyskinesia\nDescription: A rare, genetically heterogeneous, primarily respiratory disorder characterized by chronic upper and lower respiratory tract disease. Approximately half of PCD patients have an organ laterality defect (situs inversus totalis or situs ambiguus/heterotaxy).\nAssociation score: 0.333",
+          "cos_sim_score": 0.3326218692162316,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197629::EFO_0003917",
+          "title": "MPEG1 \u2194 premature birth",
+          "url": "https://platform.opentargets.org/target/ENSG00000197629/associations",
+          "text": "Disease: premature birth\nDescription: CHILDBIRTH before 37 weeks of PREGNANCY (259 days from the first day of the mother's last menstrual period, or 245 days after FERTILIZATION).\nAssociation score: 0.297",
+          "cos_sim_score": 0.2967720627260698,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197629::EFO_1001998",
+          "title": "MPEG1 \u2194 complex regional pain syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000197629/associations",
+          "text": "Disease: complex regional pain syndrome\nDescription: Complex regional pain syndrome (CRPS) is a rare neurologic disease painful progressive condition that corresponds to a group of disorders characterized by a disproportionate spontaneous or stimulus-induced pain, accompanied by a variably mixed myriad of autonomic and motor disorders including symptoms such as swelling, allodynia, skin blood supply and trophic disturbances. CRPS most often affects one of the arms, legs, hands, or feet and usually occurs after an injury or trauma to that limb.\nAssociation score: 0.219",
+          "cos_sim_score": 0.21907738523631262,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::MPEG-1",
+          "title": "MPEG-1",
+          "url": "https://en.wikipedia.org/wiki/MPEG-1",
+          "text": "MPEG-1 is a standard for lossy compression of video and audio. It is designed to compress VHS-quality raw digital video and CD audio down to about 1.5 Mbit/s (26:1 and 6:1 compression ratios respectively) without excessive quality loss, making video CDs, digital cable/satellite TV and digital audio broadcasting (DAB) practical.\nToday, MPEG-1 has become the most widely compatible lossy audio/video format in the world, and is used in a large number of products and technologies. Perhaps the best-known part of the MPEG-1 standard is the first version of the MP3 audio format it introduced.\nThe MPEG-1 standard is published as ISO/IEC 11172, titled Information technology\u2014Coding of moving pictures and associated audio for digital storage media at up to about 1.5 Mbit/s.\nThe standard consists of the following five Parts:\n\nSystems (defining a format for storage and synchronization of video, audio, and other data together in a single file\u2014later dubbed the MPEG program stream to distinguish it from the MPEG transport stream format introduced as an alternative in MPEG-2).\nVideo (compressed video content)\nAudio (compressed audio content), including MP3 and MP2\nConformance testing (testing the correctness of implementations of the standard)\nReference software (example software showing how to encode and decode according to the standard)",
+          "cos_sim_score": 0.6347318291664124,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::MPEG-1",
+          "title": "MPEG-1",
+          "url": "https://en.wikipedia.org/wiki/MPEG-1",
+          "text": "See also\nMPEG The Moving Picture Experts Group, developers of the MPEG-1 standard\nMP3 Additional less technical details about MPEG-1 Audio Layer III\nMPEG Multichannel Backwards compatible 5.1 channel surround sound extension to MPEG-1 Audio Layer II\nMPEG-2 The direct successor to the MPEG-1 standard.\nISO/IEC JTC 1/SC 29\nImplementations\nLibavcodec includes MPEG-1/2 video/audio encoders and decoders\nMjpegtools Archived 2008-04-20 at the Wayback Machine MPEG-1/2 video/audio encoders\nTooLAME A high quality MPEG-1 Audio Layer II encoder.\nLAME A high quality MP3 audio encoder.\nMusepack A format originally based on MPEG-1 Audio Layer II, but now incompatible.\n\nReferences\nExternal links\nOfficial Web Page of the Moving Picture Experts Group (MPEG) a working group of ISO/IEC Archived 2017-12-07 at the Wayback Machine\nMPEG Industry Forum Organization Archived 2004-08-30 at the Wayback Machine\nSource Code to Implement MPEG-1 Archived 2006-12-30 at the Wayback Machine\nA simple, concise explanation from Berkeley Multimedia Research Center",
+          "cos_sim_score": 0.6176689863204956,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::MPEG-1",
+          "title": "MPEG-1",
+          "url": "https://en.wikipedia.org/wiki/MPEG-1",
+          "text": "Part 1: Systems\nPart 1 of the MPEG-1 standard covers systems, and is defined in ISO/IEC-11172-1.\nMPEG-1 Systems specifies the logical layout and methods used to store the encoded audio, video, and other data into a standard bitstream, and to maintain synchronization between the different contents. This file format is specifically designed for storage on media, and transmission over communication channels, that are considered relatively reliable. Only limited error protection is defined by the standard, and small errors in the bitstream may cause noticeable defects.\nThis structure was later named an MPEG program stream: \"The MPEG-1 Systems design is essentially identical to the MPEG-2 Program Stream structure.\" This terminology is more popular, precise (differentiates it from an MPEG transport stream) and will be used here.\n\nElementary streams, packets, and clock references\nElementary Streams (ES) are the raw bitstreams of MPEG-1 audio and video encoded data (output from an encoder). These files can be distributed on their own, such as is the case with MP3 files.\nPacketized Elementary Streams (PES) are elementary streams packetized into packets of variable lengths, i.e., divided ES into independent chunks where cyclic redundancy check (CRC) checksum was added to each packet for error detection.\nSystem Clock Reference (SCR) is a timing value stored in a 33-bit header of each PES, at a frequency/precision of 90 kHz, with an extra 9-bit extension that stores additional timing data with a precision of 27 MHz. These are inserted by the encoder, derived from the system time clock (STC). Simultaneously encoded audio and video streams will not have identical SCR values, however, due to buffering, encoding, jitter, and other delay.\n\nProgram streams\nProgram Streams (PS) are concerned with combining multiple packetized elementary streams (usually just one audio and video PES) into a single stream, ensuring simultaneous delivery, and maintaining synchronization. The PS structure is known as a multiplex, or a container format.\nPresentation time stamps (PTS) exist in PS to correct the inevitable disparity between audio and video SCR values (time-base correction). 90 kHz PTS values in the PS header tell the decoder which video SCR values match which audio SCR values. PTS determines when to display a portion of an MPEG program, and is also used by the decoder to determine when data can be discarded from the buffer. Either video or audio will be delayed by the decoder until the corresponding segment of the other arrives and can be decoded.\nPTS handling can be problematic. Decoders must accept multiple program streams that have been concatenated (joined  sequentially). This causes PTS values in the middle of the video to reset to zero, which then begin incrementing again. Such PTS wraparound disparities can cause timing issues that must be specially handled by the decoder.\nDecoding Time Stamps (DTS), additionally, are required because of B-frames. With B-frames in the video stream, adjacent frames have to be encoded and decoded out-of-order (re-ordered frames). DTS is quite similar to PTS, but instead of just handling sequential frames, it contains the proper time-stamps to tell the decoder when to decode and display the next B-frame (types of frames explained below), ahead of its anchor (P- or I-) frame. Without B-frames in the video, PTS and DTS values are identical.\n\nMultiplexing\nTo generate the PS, the multiplexer will interleave the (two or more) packetized elementary streams. This is done so the packets of the simultaneous streams can be transferred over the same channel and are guaranteed to both arrive at the decoder at precisely the same time. This is a case of time-division multiplexing.\nDetermining how much data from each stream should be in each interleaved segment (the size of the interleave) is complicated, yet an important requirement. Improper interleaving will result in buffer underflows or overflows, as the receiver gets more of one stream than it can store (e.g. audio), before it gets enough data to decode the other simultaneous stream (e.g. video). The MPEG Video Buffering Verifier (VBV) assists in determining if a multiplexed PS can be decoded by a device with a specified data throughput rate and buffer size. This offers feedback to the multiplexer and the encoder, so that they can change the multiplex size or adjust bitrates as needed for compliance.",
+          "cos_sim_score": 0.5716349482536316,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::MPEG-1",
+          "title": "MPEG-1",
+          "url": "https://en.wikipedia.org/wiki/MPEG-1",
+          "text": "Resolution/bitrate\nMPEG-1 supports resolutions up to 4095\u00d74095 (12 bits), and bit rates up to 100 Mbit/s.\nMPEG-1 videos are most commonly seen using Source Input Format (SIF) resolution: 352\u00d7240, 352\u00d7288, or 320\u00d7240. These relatively low resolutions, combined with a bitrate less than 1.5 Mbit/s, make up what is known as a constrained parameters bitstream (CPB), later renamed the \"Low Level\" (LL) profile in MPEG-2. This is the minimum video specifications any decoder should be able to handle, to be considered MPEG-1 compliant. This was selected to provide a good balance between quality and performance, allowing the use of reasonably inexpensive hardware of the time.\n\nFrame/picture/block types\nMPEG-1 has several frame/picture types that serve different purposes. The most important, yet simplest, is I-frame.\n\nI-frames\n\"I-frame\" is an abbreviation for \"Intra-frame\", so-called because they can be decoded independently of any other frames. They may also be known as I-pictures, or keyframes due to their somewhat similar function to the key frames used in animation. I-frames can be considered effectively identical to baseline JPEG images.\nHigh-speed seeking through an MPEG-1 video is only possible to the nearest I-frame. When cutting a video it is not possible to start playback of a segment of video before the first I-frame in the segment (at least not without computationally intensive re-encoding). For this reason, I-frame-only MPEG videos are used in editing applications.\nI-frame only compression is very fast, but produces very large file sizes: a factor of 3\u00d7 (or more) larger than normally encoded MPEG-1 video, depending on how temporally complex a specific video is. I-frame only MPEG-1 video is very similar to MJPEG video. So much so that very high-speed and theoretically lossless (in reality, there are rounding errors) conversion can be made from one format to the other, provided a couple of restrictions (color space and quantization matrix) are followed in the creation of the bitstream.\nThe length between I-frames is known as the group of pictures (GOP) size. MPEG-1 most commonly uses a GOP size of 15\u201318. i.e. 1 I-frame for every 14-17 non-I-frames (some combination of P- and B- frames). With more intelligent encoders, GOP size is dynamically chosen, up to some pre-selected maximum limit.\nLimits are placed on the maximum number of frames between I-frames due to decoding complexing, decoder buffer size, recovery time after data errors, seeking ability, and accumulation of IDCT errors in low-precision implementations most common in hardware decoders (See: IEEE-1180).\n\nP-frames\n\"P-frame\" is an abbreviation for \"Predicted-frame\". They may also be called forward-predicted frames or inter-frames (B-frames are also inter-frames).\nP-frames exist to improve compression by exploiting the temporal (over time) redundancy in a video. P-frames store only the difference in image from the frame (either an I-frame or P-frame) immediately preceding it (this reference frame is also called the anchor frame).\nThe difference between a P-frame and its anchor frame is calculated using motion vectors on each macroblock of the frame (see below). Such motion vector data will be embedded in the P-frame for use by the decoder.\nA P-frame can contain any number of intra-coded blocks (DCT and Quantized), in addition to any forward-predicted blocks (Motion Vectors).\nIf a video drastically changes from one frame to the next (such as a cut), it is more efficient to encode it as an I-frame.",
+          "cos_sim_score": 0.5715474486351013,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::MPEG-1",
+          "title": "MPEG-1",
+          "url": "https://en.wikipedia.org/wiki/MPEG-1",
+          "text": "Part 3: Audio\nPart 3 of the MPEG-1 standard covers audio and is defined in ISO/IEC-11172-3.\nMPEG-1 Audio utilizes psychoacoustics to significantly reduce the data rate required by an audio stream. It reduces or completely discards certain parts of the audio that it deduces that the human ear can't hear, either because they are in frequencies where the ear has limited sensitivity, or are masked by other (typically louder) sounds.\nChannel encoding modes:\n\nMono\nJoint stereo \u2013 intensity encoded\nJoint stereo \u2013 M/S encoded (Layer III only)\nStereo\nDual (two uncorrelated mono channels)\nSampling rates:\n\n32000 Hz\n44100 Hz\n48000 Hz\nBit rates:\n\nLayer I: 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416 and 448 kbit/s\nLayer II: 32, 48, 56, 64, 80, 96, 112, 128, 160, 192, 224, 256, 320 and 384 kbit/s\nLayer III: 32, 40, 48, 56, 64, 80, 96, 112, 128, 160, 192, 224, 256 and 320 kbit/s\nMPEG-1 Audio is divided into 3 layers. Each higher layer is more computationally complex, and generally more efficient at lower bitrates than the previous. The layers are semi backwards compatible as higher layers reuse technologies implemented by the lower layers. A \"full\" Layer II decoder can also play Layer I audio, but not Layer III audio, although not all higher level players are \"full\".\n\nLayer I\nMPEG-1 Audio Layer I is a simplified version of MPEG-1 Audio Layer II. Layer I uses a smaller 384-sample frame size for very low delay, and finer resolution. This is advantageous for applications like teleconferencing, studio editing, etc. It has lower complexity than Layer II to facilitate real-time encoding on the hardware available c.\u20091990.\nLayer I saw limited adoption in its time, and most notably was used on Philips' defunct Digital Compact Cassette at a bitrate of 384 kbit/s. With the substantial performance improvements in digital processing since its introduction, Layer I quickly became unnecessary and obsolete.\nLayer I audio files typically use the extension \".mp1\" or sometimes \".m1a\".\n\nLayer II\nMPEG-1 Audio Layer II (the first version of MP2, often informally called MUSICAM) is a lossy audio format designed to provide high quality at about 192 kbit/s for stereo sound. Decoding MP2 audio is computationally simple relative to MP3, AAC, etc.\n\nHistory/MUSICAM\nMPEG-1 Audio Layer II was derived from the MUSICAM (Masking pattern adapted Universal Subband Integrated Coding And Multiplexing) audio codec, developed by Centre commun d'\u00e9tudes de t\u00e9l\u00e9vision et t\u00e9l\u00e9communications (CCETT), Philips, and Institut f\u00fcr Rundfunktechnik (IRT/CNET) as part of the EUREKA 147 pan-European inter-governmental research and development initiative for the development of digital audio broadcasting.\nMost key features of MPEG-1 Audio were directly inherited from MUSICAM, including the filter bank, time-domain processing, audio frame sizes, etc. However, improvements were made, and the actual MUSICAM algorithm was not used in the final MPEG-1 Audio Layer II standard. The widespread usage of the term MUSICAM to refer to Layer II is entirely incorrect and discouraged for both technical and legal reasons.",
+          "cos_sim_score": 0.5633232593536377,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

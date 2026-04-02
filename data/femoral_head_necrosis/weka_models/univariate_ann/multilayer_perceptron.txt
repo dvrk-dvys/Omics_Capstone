@@ -1,0 +1,34 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     univariate_ann
+Instances:    40
+Attributes:   101
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          37               92.5    %
+Incorrectly Classified Instances         3                7.5    %
+Kappa statistic                          0.7931
+Mean absolute error                      0.0842
+Root mean squared error                  0.2716
+Relative absolute error                 22.0583 %
+Root relative squared error             62.6992 %
+Total Number of Instances               40     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,967    0,200    0,935      0,967    0,951      0,795    0,900     0,953     SONFH
+                 0,800    0,033    0,889      0,800    0,842      0,795    0,900     0,874     control
+Weighted Avg.    0,925    0,158    0,924      0,925    0,924      0,795    0,900     0,934     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 29  1 |  a = SONFH
+  2  8 |  b = control
+

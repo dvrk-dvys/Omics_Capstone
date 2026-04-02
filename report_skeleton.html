@@ -410,7 +410,7 @@
 <div class="future-task" style="background-color:#e8f5e9; border-left-color:#2e7d32;">
   <strong>✅ Figure 1 is ready — insert this file:</strong><br>
   <code>data/femoral_head_necrosis/EDA/eda_composite.png</code> &nbsp;(Weka pipeline — top 100 probes)<br>
-  <code>omics_ml_pipeline/app/data/output/plots/eda_composite.png</code> &nbsp;(Python pipeline — top 50 probes)<br>
+  <code>AutoOmics_ML_Pipeline/app/data/output/plots/eda_composite.png</code> &nbsp;(Python pipeline — top 50 probes)<br>
   <em>Use the Weka version for the main report (top 100 probes matches Weka feature selection). 2×3 grid: A=PCA, B=Volcano, C=Heatmap, D=Fold-change bar, E=Boxplots, F=Sample correlation.</em>
 </div>
 
@@ -822,7 +822,7 @@
   <span class="guide-label">Writing Guide — Gene Interpretation (structured mini-profiles) — DELETE BEFORE SUBMITTING</span>
   For each gene you discuss, follow this 3-part anatomy: (1) What is this gene and what does it normally do? (2) How was it expressed in SONFH vs control in this study — and was that expected? (3) What does this potentially suggest for SONFH pathophysiology?<br>
   Focus on 2–4 genes maximum. Suggested primary candidates: <strong>GYPA</strong> (overlap, erythrocyte membrane), <strong>BPGM</strong> (top Python hit, erythrocyte oxygen metabolism), <strong>HEMGN</strong> (overlap, erythroid transcription), and optionally <strong>TMCC2</strong> or <strong>IGF2</strong> depending on your emphasis.
-  Your LLM-generated gene interpretations (in <code>omics_ml_pipeline/app/data/output/llm_outputs/</code>) are available as starting-point reference material — but rewrite them in your own words and verify them against published literature.
+  Your LLM-generated gene interpretations (in <code>AutoOmics_ML_Pipeline/app/data/output/llm_outputs/</code>) are available as starting-point reference material — but rewrite them in your own words and verify them against published literature.
 </div>
 
 <h4>GYPA (Glycophorin A) — <span class="tag-shared">SHARED candidate</span></h4>
@@ -944,7 +944,7 @@
 <div class="figure-box">[INSERT WEKA SCREENSHOT(S) HERE — optional. Screenshots from the Weka Explorer or Knowledge Flow interface showing the experimental setup, model configurations, or result visualisations.]</div>
 
 <h3>Appendix D — LLM Gene Interpretation Summaries (optional)</h3>
-<p class="placeholder">[OPTIONAL — include a summary table of the LLM-generated gene interpretations from <code>omics_ml_pipeline/app/data/output/llm_outputs/</code> as supplementary reference material. 10 genes were processed: BPGM, NUDT4, GYPA, CTNNAL1, HEPACAM2, HEMGN, RAP1GAP, TMCC2, IGF2, CA1. Model used: gpt-4o-mini.]</p>
+<p class="placeholder">[OPTIONAL — include a summary table of the LLM-generated gene interpretations from <code>AutoOmics_ML_Pipeline/app/data/output/llm_outputs/</code> as supplementary reference material. 10 genes were processed: BPGM, NUDT4, GYPA, CTNNAL1, HEPACAM2, HEMGN, RAP1GAP, TMCC2, IGF2, CA1. Model used: gpt-4o-mini.]</p>
 
 <h3>Appendix E — Full Python Biomarker Shortlist (13 probes)</h3>
 <table style="table-layout:auto;">

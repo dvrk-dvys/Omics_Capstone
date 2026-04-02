@@ -1,0 +1,150 @@
+{
+  "rf_rank": 38,
+  "probe_id": "11745768_a_at",
+  "gene_symbol": "NOTCH2",
+  "score": 0.57,
+  "rf_n_nodes": 2,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.8716,
+  "log_fc": 0.8716,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11745768_a_at",
+  "max_score": 0.57,
+  "mean_abs_fold_change": 0.8716,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T20:22:46",
+  "interpretation": "NOTCH2 encodes a receptor involved in cell signaling that regulates various biological processes, including cell differentiation, proliferation, and apoptosis. It plays a significant role in bone remodeling and homeostasis, particularly by positively regulating osteoclast differentiation through RANKL signaling. Given that steroid-induced osteonecrosis of the femoral head (SONFH) is associated with impaired bone remodeling and increased osteoclast activity, the involvement of NOTCH2 in these processes suggests a potential link to SONFH. However, while the retrieved evidence indicates its role in bone biology, there is no direct evidence connecting NOTCH2 specifically to SONFH, leading to a reliance on biological inference. Therefore, while NOTCH2 may be relevant to the disease context, its potential as a biomarker for early detection of SONFH remains uncertain.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 3",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "NOTCH2 is involved in bone remodeling processes that may be disrupted in steroid-induced osteonecrosis of the femoral head.",
+  "citations": [
+    "NOTCH2 (Q04721). https://www.uniprot.org/uniprotkb/Q04721",
+    "NOTCH2 \u2014 NOTCH2. https://platform.opentargets.org/target/ENSG00000134250",
+    "NOTCH2 \u2194 acroosteolysis dominant type. https://platform.opentargets.org/target/ENSG00000134250/associations",
+    "NOTCH2 \u2194 Alagille syndrome due to a NOTCH2 point mutation. https://platform.opentargets.org/target/ENSG00000134250/associations",
+    "NOTCH2 \u2194 Alagille syndrome. https://platform.opentargets.org/target/ENSG00000134250/associations",
+    "NOTCH2 \u2194 diffuse large B-cell lymphoma. https://platform.opentargets.org/target/ENSG00000134250/associations",
+    "Notch 2. https://en.wikipedia.org/wiki/Notch_2",
+    "Notch signaling pathway. https://en.wikipedia.org/wiki/Notch_signaling_pathway"
+  ],
+  "token_usage": {
+    "prompt_tokens": 6437,
+    "completion_tokens": 229,
+    "total_tokens": 6666,
+    "estimated_cost_usd": 0.001103
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q04721",
+          "title": "NOTCH2 (Q04721)",
+          "url": "https://www.uniprot.org/uniprotkb/Q04721",
+          "text": "Protein: Neurogenic locus notch homolog protein 2\nFunction: Functions as a receptor for membrane-bound ligands Jagged-1 (JAG1), Jagged-2 (JAG2) and Delta-1 (DLL1) to regulate cell-fate determination. Upon ligand activation through the released notch intracellular domain (NICD) it forms a transcriptional activator complex with RBPJ/RBPSUH and activates genes of the enhancer of split locus (PubMed:21378985, PubMed:21378989). Affects the implementation of differentiation, proliferation and apoptotic programs (By similarity). Involved in bone remodeling and homeostasis. In collaboration with RELA/p65 enhances NFATc1 promoter activity and positively regulates RANKL-induced osteoclast differentiation (PubMed:29149593). Positively regulates self-renewal of liver cancer cells (PubMed:25985737)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000134250::function",
+          "title": "NOTCH2 \u2014 NOTCH2",
+          "url": "https://platform.opentargets.org/target/ENSG00000134250",
+          "text": "Function: Functions as a receptor for membrane-bound ligands Jagged-1 (JAG1), Jagged-2 (JAG2) and Delta-1 (DLL1) to regulate cell-fate determination. Upon ligand activation through the released notch intracellular domain (NICD) it forms a transcriptional activator complex with RBPJ/RBPSUH and activates genes of the enhancer of split locus (PubMed:21378985, PubMed:21378989). Affects the implementation of differentiation, proliferation and apoptotic programs (By similarity). Involved in bone remodeling and homeostasis. In collaboration with RELA/p65 enhances NFATc1 promoter activity and positively regulates RANKL-induced osteoclast differentiation (PubMed:29149593). Positively regulates self-renewal of liver cancer cells (PubMed:25985737).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000134250::MONDO_0007057",
+          "title": "NOTCH2 \u2194 acroosteolysis dominant type",
+          "url": "https://platform.opentargets.org/target/ENSG00000134250/associations",
+          "text": "Disease: acroosteolysis dominant type\nDescription: A rare genetic osteolysis syndrome resulting from protein-truncating variants in exon 34 of the NOTCH2 gene. These variants disrupt only the PEST domain, escape nonsense-mediated decay, and are postulated to function through a gain-of-function mechanism. This condition is characterized by acroosteolysis of distal phalanges and generalized osteoporosis, associated with additional ossification anomalies, craniofacial dysmorphism, dental anomalies and a wide range of other characteristics. Hearing loss, renal cysts, and cardiovascular anomalies are variably present.\nAssociation score: 0.827",
+          "cos_sim_score": 0.8269418008042602,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000134250::MONDO_0012439",
+          "title": "NOTCH2 \u2194 Alagille syndrome due to a NOTCH2 point mutation",
+          "url": "https://platform.opentargets.org/target/ENSG00000134250/associations",
+          "text": "Disease: Alagille syndrome due to a NOTCH2 point mutation\nDescription: A genetic condition caused by pathogenic variants in the NOTCH2 gene upstream of those implicated with Hajdu-Cheney syndrome. The mechanism of pathogenicity for Alagille syndrome appears to be haploinsufficiency. Key features include bile duct paucity, cholestasis, congenital heart defects, butterfly vertebrae, posterior embryotoxon, and distinctive facial characteristics. Renal abnormalities may also be present.\nAssociation score: 0.777",
+          "cos_sim_score": 0.7769385946865731,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000134250::MONDO_0007318",
+          "title": "NOTCH2 \u2194 Alagille syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000134250/associations",
+          "text": "Disease: Alagille syndrome\nDescription: Alagille (AGS) syndrome is variably characterized by chronic cholestasis due to paucity of intrahepatic bile ducts, peripheral pulmonary artery stenosis, vertebrae segmentation anomalies, characteristic facies, posterior embryotoxon/anterior segment abnormalities, pigmentary retinopathy, and dysplastic kidneys.\nAssociation score: 0.680",
+          "cos_sim_score": 0.6799146137776275,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000134250::EFO_0000403",
+          "title": "NOTCH2 \u2194 diffuse large B-cell lymphoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000134250/associations",
+          "text": "Disease: diffuse large B-cell lymphoma\nDescription: Diffuse large B-cell lymphoma is the most common subtype of non-Hodgkin lymphoma (NHL) in adults characterized by a median age of presentation in the sixth decade of life (but also rarely occurring in adolescents and children) with the initial presentation being single or multiple rapidly growing masses (that may or may not be painful) in nodal or extranodal sites (such as thyroid, skin, breast, gastrointestinal tract, testes, bone, or brain) and that can be accompanied by symptoms of fever, night sweats and weight loss. DLBCL has an aggressive disease course, with the elderly having a poorer prognosis than younger patients, and with relapses being common.\nAssociation score: 0.550",
+          "cos_sim_score": 0.550058712494815,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Notch 2",
+          "title": "Notch 2",
+          "url": "https://en.wikipedia.org/wiki/Notch_2",
+          "text": "Neurogenic locus notch homolog protein 2 (Notch 2) is a protein that in humans is encoded by the NOTCH2 gene.\nNOTCH2 is associated with Alagille syndrome and Hajdu\u2013Cheney syndrome.\n\nFunction\nNotch 2 is a member of the notch family. Members of this type 1 transmembrane protein family share structural characteristics including an extracellular domain consisting of multiple epidermal growth factor-like (EGF) repeats, and an intracellular domain consisting of multiple, different domain types. Notch family members play a role in a variety of developmental processes by controlling cell fate decisions. The Notch signaling network is an evolutionarily conserved intercellular signaling pathway that regulates interactions between physically adjacent cells. In Drosophila, notch interaction with its cell-bound ligands (delta, serrate) establishes an intercellular signaling pathway that plays a key role in development. Homologues of the notch-ligands have also been identified in human, but precise interactions between these ligands and the human notch homologues remain to be determined. This protein is cleaved in the trans-Golgi network, and presented on the cell surface as a heterodimer. This protein functions as a receptor for membrane bound ligands, and may play a role in vascular, renal and hepatic development.\nMutations within the last coding exon of Notch2 that remove  the PEST domain and escape the nonsense-mediated mRNA decay have been shown to be the main cause of the Hajdu\u2013Cheney syndrome.\n\nInteractions\nNOTCH2 has been shown to interact with:\n\nDelta-like 1\nGSK3B,\nJAG1,  and\nJAG2.\n\nReferences\nFurther reading\nExternal links\nGeneReviews/NCBI/UW/NIH entry on Alagille syndrome\nOMIM entries on Alagille syndrome\nOverview of all the structural information available in the PDB for UniProt: Q04721 (Neurogenic locus notch homolog protein 2) at the PDBe-KB.",
+          "cos_sim_score": 0.5517616271972656,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Notch signaling pathway",
+          "title": "Notch signaling pathway",
+          "url": "https://en.wikipedia.org/wiki/Notch_signaling_pathway",
+          "text": "Ligand interactions\nNotch signaling is initiated when Notch receptors on the cell surface engage ligands presented in trans on opposing cells. Despite the expansive size of the Notch extracellular domain, it has been demonstrated that EGF domains 11 and 12 are the critical determinants for interactions with Delta. Additional studies have implicated regions outside of Notch EGF11-12 in ligand binding. For example, Notch EGF domain 8 plays a role in selective recognition of Serrate/Jagged and EGF domains 6-15 are required for maximal signaling upon ligand stimulation. A crystal structure of the interacting regions of Notch1 and Delta-like 4 (Dll4) provided a molecular-level visualization of Notch-ligand interactions, and revealed that the N-terminal MNNL (or C2) and DSL domains of ligands bind to Notch EGF domains 12 and 11, respectively. The Notch1-Dll4 structure also illuminated a direct role for Notch O-linked fucose and glucose moieties in ligand recognition, and rationalized a structural mechanism for the glycan-mediated tuning of Notch signaling.\n\nSynthetic Notch signaling\nIt is possible to engineer synthetic Notch receptors by replacing the extracellular receptor and intracellular transcriptional domains with other domains of choice. This allows researchers to select which ligands are detected, and which genes are upregulated in response. Using this technology, cells can report or change their behavior in response to contact with user-specified signals, facilitating new avenues of both basic and applied research into cell-cell signaling. Notably, this system allows multiple synthetic pathways to be engineered into a cell in parallel.\n\nFunction\nThe Notch signaling pathway is important for cell-cell communication, which involves gene regulation mechanisms that control multiple cell differentiation processes during embryonic and adult life.\nNotch signaling also has a role in the following processes:\n\nneuronal function and development\nstabilization of arterial endothelial fate and angiogenesis\nregulation of crucial cell communication events between endocardium and myocardium during both the formation of the valve primordial and ventricular development and differentiation\ncardiac valve homeostasis, as well as implications in other human disorders involving the cardiovascular system\ntimely cell lineage specification of both endocrine and exocrine pancreas\ninfluencing of binary fate decisions of cells that must choose between the secretory and absorptive lineages in the gut\nexpansion of the hematopoietic stem cell compartment during bone development and participation in commitment to the osteoblastic lineage, suggesting a potential therapeutic role for notch in bone regeneration and osteoporosis\nexpansion of the hemogenic endothelial cells along with signaling axis involving Hedgehog signaling and Scl\nT cell lineage commitment from common lymphoid precursor \nregulation of cell-fate decision in mammary glands at several distinct development stages\npossibly some non-nuclear mechanisms, such as control of the actin cytoskeleton through the tyrosine kinase Abl\nRegulation of the mitotic/meiotic decision in the C. elegans germline\ndevelopment of alveoli in the lung.\nIt has also been found that Rex1 has inhibitory effects on the expression of notch in mesenchymal stem cells, preventing differentiation.\n\nRole in embryogenesis\nThe Notch signaling pathway plays an important role in cell-cell communication, and further regulates embryonic development.\n\nEmbryo polarity\nNotch signaling is required in the regulation of polarity. For example, mutation experiments have shown that loss of Notch signaling causes abnormal anterior-posterior polarity in somites. Also, Notch signaling is required during left-right asymmetry determination in vertebrates.\nEarly studies in the nematode model organism C. elegans indicate that Notch signaling has a major role in the induction of mesoderm and cell fate determination. As mentioned previously, C. elegans has two genes that encode for partially functionally redundant Notch homologs, glp-1 and lin-12. During C. elegans, GLP-1, the C. elegans Notch homolog, interacts with APX-1, the C. elegans Delta homolog. This signaling between particular blastomeres induces differentiation of cell fates and establishes the dorsal-ventral axis.",
+          "cos_sim_score": 0.5358545780181885,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Notch signaling pathway",
+          "title": "Notch signaling pathway",
+          "url": "https://en.wikipedia.org/wiki/Notch_signaling_pathway",
+          "text": "The Notch signaling pathway is a highly conserved cell signaling system present in most animals. Mammals possess four different notch receptors, referred to as NOTCH1, NOTCH2, NOTCH3, and NOTCH4. The notch receptor is a single-pass transmembrane receptor protein. It is a hetero-oligomer composed of a large extracellular portion, which associates in a calcium-dependent, non-covalent interaction with a smaller piece of the notch protein composed of a short extracellular region, a single transmembrane-pass, and a small intracellular region.\nNotch signaling promotes proliferative signaling during neurogenesis, and its activity is inhibited by Numb to promote neural differentiation. It plays a major role in the regulation of embryonic development. \nNotch signaling is dysregulated in many cancers, and faulty notch signaling is implicated in many diseases, including T-cell acute lymphoblastic leukemia (T-ALL), cerebral autosomal-dominant arteriopathy with sub-cortical infarcts and leukoencephalopathy (CADASIL), multiple sclerosis, Tetralogy of Fallot, and Alagille syndrome. Inhibition of notch signaling inhibits the proliferation of T-cell acute lymphoblastic leukemia in both cultured cells and a mouse model.\n\nDiscovery\nIn 1914, John S. Dexter noticed the appearance of a notch in the wings of the fruit fly Drosophila ampelophila. The alleles of the gene were identified in 1917 by American evolutionary biologist Thomas Hunt Morgan. Its molecular analysis and sequencing was independently undertaken in the 1980s by Spyros Artavanis-Tsakonas and Michael W. Young. Alleles of the two C. elegans Notch genes were identified based on developmental phenotypes: lin-12 and glp-1. The cloning and partial sequence of lin-12 was reported at the same time as Drosophila Notch by Iva Greenwald.\n\nMechanism\nThe Notch protein spans the cell membrane, with part of it inside and part outside. Ligand proteins binding to the extracellular domain induce proteolytic cleavage and release of the intracellular domain, which enters the cell nucleus to modify gene expression.\nThe cleavage model was first proposed in 1993 based on work done with Drosophila Notch and C. elegans lin-12, informed by the first oncogenic mutation affecting a human Notch gene. Compelling evidence for this model was provided in 1998 by in vivo analysis in Drosophila by Gary Struhl and in cell culture by Raphael Kopan. Although this model was initially disputed, the evidence in favor of the model was irrefutable by 2001.\nThe receptor is normally triggered via direct cell-to-cell contact, in which the transmembrane proteins of the cells in direct contact form the ligands that bind the notch receptor. The Notch binding allows groups of cells to organize themselves such that, if one cell expresses a given trait, this may be switched off in neighbouring cells by the intercellular notch signal. In this way, groups of cells influence one another to make large structures. Thus, lateral inhibition mechanisms are key to Notch signaling. lin-12 and Notch mediate binary cell fate decisions, and lateral inhibition involves feedback mechanisms to amplify initial differences.\nThe Notch cascade consists of Notch and Notch ligands, as well as intracellular proteins transmitting the notch signal to the cell's nucleus. The Notch/Lin-12/Glp-1 receptor family was found to be involved in the specification of cell fates during development in Drosophila and C. elegans.\nThe intracellular domain of Notch forms a complex with CBF1 and Mastermind to activate transcription of target genes. The structure of the complex has been determined.",
+          "cos_sim_score": 0.5071871876716614,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Notch signaling pathway",
+          "title": "Notch signaling pathway",
+          "url": "https://en.wikipedia.org/wiki/Notch_signaling_pathway",
+          "text": "Role in central nervous system development and function\nEarly findings on Notch signaling in central nervous system (CNS) development were performed mainly in Drosophila with mutagenesis experiments. For example, the finding that an embryonic lethal phenotype in Drosophila was associated with Notch dysfunction indicated that Notch mutations can lead to the failure of neural and Epidermal cell segregation in early Drosophila embryos. In the past decade, advances in mutation and knockout techniques allowed research on the Notch signaling pathway in mammalian models, especially rodents.\nThe Notch signaling pathway was found to be critical mainly for neural progenitor cell (NPC) maintenance and self-renewal. In recent years, other functions of the Notch pathway have also been found, including glial cell specification, neurites development, as well as learning and memory.\n\nNeuron cell differentiation\nThe Notch pathway is essential for maintaining NPCs in the developing brain. Activation of the pathway is sufficient to maintain NPCs in a proliferating state, whereas loss-of-function mutations in the critical components of the pathway cause precocious neuronal differentiation and NPC depletion. Modulators of the Notch signal, e.g., the Numb protein are able to antagonize Notch effects, resulting in the halting of cell cycle and the differentiation of NPCs. Conversely, the fibroblast growth factor pathway promotes Notch signaling to keep stem cells of the cerebral cortex in the proliferative state, amounting to a mechanism regulating cortical surface area growth and, potentially, gyrification. In this way, Notch signaling controls NPC self-renewal as well as cell fate specification.\nA non-canonical branch of the Notch signaling pathway that involves the phosphorylation of STAT3 on the serine residue at amino acid position 727 and subsequent Hes3 expression increase (STAT3-Ser/Hes3 Signaling Axis) has been shown to regulate the number of NPCs in culture and in the adult rodent brain.\nIn adult rodents and in cell culture, Notch3 promotes neuronal differentiation, having a role opposite to Notch1/2. This indicates that individual Notch receptors can have divergent functions, depending on cellular context.\n\nNeurite development\nIn vitro studies show that Notch can influence neurite development. In vivo, deletion of the Notch signaling modulator, Numb, disrupts neuronal maturation in the developing cerebellum, whereas deletion of Numb disrupts axonal arborization in sensory ganglia. Although the mechanism underlying this phenomenon is not clear, together these findings suggest Notch signaling might be crucial in neuronal maturation.\n\nGliogenesis\nIn gliogenesis, Notch appears to have an instructive role that can directly promote the differentiation of many glial cell subtypes. For example, activation of Notch signaling in the retina favors the generation of Muller glia cells at the expense of neurons, whereas reduced Notch signaling induces production of ganglion cells, causing a reduction in the number of Muller glia.\n\nAdult brain function\nApart from its role in development, evidence shows that Notch signaling is also involved in neuronal apoptosis, neurite retraction, and neurodegeneration of ischemic stroke in the brain In addition to developmental functions, Notch proteins and ligands are expressed in cells of the adult nervous system, suggesting a role in CNS plasticity throughout life. Adult mice heterozygous for mutations in either Notch1 or Cbf1 have deficits in spatial learning and memory. Similar results are seen in experiments with presenilins1 and 2, which mediate the Notch intramembranous cleavage. To be specific, conditional deletion of presenilins at 3 weeks after birth in excitatory neurons causes learning and memory deficits, neuronal dysfunction, and gradual neurodegeneration. Several gamma secretase inhibitors that underwent human clinical trials in Alzheimer's disease and MCI patients resulted in statistically significant worsening of cognition relative to controls, which is thought to be due to its incidental effect on Notch signalling.\n\nRole in cardiovascular development\nThe Notch signaling pathway is a critical component of cardiovascular formation and morphogenesis in both development and disease. It is required for the selection of endothelial tip and stalk cells during sprouting angiogenesis.\n\nCardiac development\nNotch signal pathway plays a crucial role in at least three cardiac development processes: Atrioventricular canal development, myocardial development, and cardiac outflow tract (OFT) development.",
+          "cos_sim_score": 0.483501672744751,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Notch signaling pathway",
+          "title": "Notch signaling pathway",
+          "url": "https://en.wikipedia.org/wiki/Notch_signaling_pathway",
+          "text": "To add another level of complexity, in mammals there are three Fringe GlcNAc-transferases, named lunatic fringe, manic fringe, and radical fringe. These enzymes are responsible for something called a \"fringe effect\" on notch signaling. If Fringe adds a GlcNAc to the O-fucose sugar then the subsequent addition of a galactose and sialic acid will occur. In the presence of this tetrasaccharide, notch signals strongly when it interacts with the Delta ligand, but has markedly inhibited signaling when interacting with the Jagged ligand. The means by which this addition of sugar inhibits signaling through one ligand, and potentiates signaling through another is not clearly understood.\nOnce the notch extracellular domain interacts with a ligand, an ADAM-family metalloprotease called ADAM10, cleaves the notch protein just outside the membrane. This releases the extracellular portion of notch (NECD), which continues to interact with the ligand. The ligand plus the notch extracellular domain is then endocytosed by the ligand-expressing cell. There may be signaling effects in the ligand-expressing cell after endocytosis; this part of notch signaling is a topic of active research. After this first cleavage, an enzyme called \u03b3-secretase (which is implicated in Alzheimer's disease) cleaves the remaining part of the notch protein just inside the inner leaflet of the cell membrane of the notch-expressing cell. This releases the intracellular domain of the notch protein (NICD), which then moves to the nucleus, where it can regulate gene expression by activating the transcription factor CSL. It was originally thought that these CSL proteins suppressed Notch target transcription. However, further research showed that, when the intracellular domain binds to the complex, it switches from a repressor to an activator of transcription. Other proteins also participate in the intracellular portion of the notch signaling cascade.",
+          "cos_sim_score": 0.47147077322006226,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

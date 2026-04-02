@@ -1,0 +1,59 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AutoWEKAClassifier -seed 123 -timeLimit 30 -memLimit 1024 -nBestConfigs 1 -metric errorRate -parallelRuns 1
+Relation:     femoral_head_necrosis
+Instances:    40
+Attributes:   101
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+best classifier: weka.classifiers.rules.OneR
+arguments: [-B, 1]
+attribute search: null
+attribute search arguments: []
+attribute evaluation: null
+attribute evaluation arguments: []
+metric: errorRate
+estimated errorRate: 0.0
+training time on evaluation dataset: 0.002 seconds
+
+You can use the chosen classifier in your own code as follows:
+
+Classifier classifier = AbstractClassifier.forName("weka.classifiers.rules.OneR", new String[]{"-B", "1"});
+classifier.buildClassifier(instances);
+
+
+Correctly Classified Instances          40              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances               40     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 30  0 |  a = SONFH
+  0 10 |  b = control
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     SONFH
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     control
+Weighted Avg.    1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     
+
+Temporary run directories:
+/var/folders/_r/_94p_t6s1933ynymfxl25_7h0000gn/T/autoweka11993453251943916221/
+
+
+For better performance, try giving Auto-WEKA more time.
+Tried 660 configurations; to get good results reliably you may need to allow for trying thousands of configurations.
+
+
+Time taken to build model: 1509.78 seconds
+

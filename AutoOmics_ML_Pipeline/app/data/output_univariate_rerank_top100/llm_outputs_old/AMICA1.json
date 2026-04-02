@@ -1,0 +1,159 @@
+{
+  "probe_id": "11730996_a_at",
+  "gene_symbol": "AMICA1",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0662538659999937,
+  "abs_fold_change": 1.2817,
+  "score": 1.28,
+  "probe_count": 1,
+  "probe_ids": "11730996_a_at",
+  "max_score": 1.28,
+  "mean_abs_fold_change": 1.2817,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T02:25:36",
+  "interpretation": "AMICA1, also known as Junctional Adhesion Molecule-Like (JAML), is a transmembrane protein that plays a crucial role in regulating leukocyte migration and activation through its interaction with the Coxsackie virus and Adenovirus Receptor (CXADR). This interaction is significant for the activation of gamma-delta T-cells, which are involved in tissue repair and homeostasis. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the inflammatory response and tissue repair mechanisms are critical, as steroids can disrupt normal bone homeostasis and lead to necrosis. While the retrieved evidence does not directly link AMICA1 to SONFH, its role in immune response and tissue repair suggests a potential involvement in the disease process. Therefore, AMICA1 could serve as a biomarker for early detection of SONFH, although the strength of the evidence is limited and primarily inferred from its biological functions.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "AMICA1 may be involved in the inflammatory and repair processes relevant to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "JAML (Q86YT9). https://www.uniprot.org/uniprotkb/Q86YT9",
+    "JAML (Q86YT9-4). https://www.uniprot.org/uniprotkb/Q86YT9-4",
+    "JAML (Q86YT9-2). https://www.uniprot.org/uniprotkb/Q86YT9-2",
+    "AMICA1 \u2014 JAML. https://platform.opentargets.org/target/ENSG00000160593",
+    "AMICA1 \u2194 lung adenocarcinoma. https://platform.opentargets.org/target/ENSG00000160593/associations",
+    "AMICA1 \u2194 placenta praevia. https://platform.opentargets.org/target/ENSG00000160593/associations",
+    "AMICA1 \u2194 intracranial hemorrhage. https://platform.opentargets.org/target/ENSG00000160593/associations",
+    "AMICA1 \u2194 lung carcinoma. https://platform.opentargets.org/target/ENSG00000160593/associations",
+    "Immunoglobulin V-set domain. https://en.wikipedia.org/wiki/Immunoglobulin_V-set_domain",
+    "JAML. https://en.wikipedia.org/wiki/JAML"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4456,
+    "completion_tokens": 261,
+    "total_tokens": 4717,
+    "estimated_cost_usd": 0.000825
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q86YT9",
+          "title": "JAML (Q86YT9)",
+          "url": "https://www.uniprot.org/uniprotkb/Q86YT9",
+          "text": "Protein: Junctional adhesion molecule-like\nFunction: Transmembrane protein of the plasma membrane of leukocytes that control their migration and activation through interaction with CXADR, a plasma membrane receptor found on adjacent epithelial and endothelial cells. The interaction between both receptors mediates the activation of gamma-delta T-cells, a subpopulation of T-cells residing in epithelia and involved in tissue homeostasis and repair. Upon epithelial CXADR-binding, JAML induces downstream cell signaling events in gamma-delta T-cells through PI3-kinase and MAP kinases. It results in proliferation and production of cytokines and growth factors by T-cells that in turn stimulate epithelial tissues repair. It also controls the transmigration of leukocytes within epithelial and endothelial tissues through adhesive interactions with epithelial and endothelial CXADR",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q86YT9-4",
+          "title": "JAML (Q86YT9-4)",
+          "url": "https://www.uniprot.org/uniprotkb/Q86YT9-4",
+          "text": "Protein: Isoform 4 of Junctional adhesion molecule-like",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q86YT9-2",
+          "title": "JAML (Q86YT9-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q86YT9-2",
+          "text": "Protein: Isoform 2 of Junctional adhesion molecule-like",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000160593::function",
+          "title": "AMICA1 \u2014 JAML",
+          "url": "https://platform.opentargets.org/target/ENSG00000160593",
+          "text": "Function: Transmembrane protein of the plasma membrane of leukocytes that control their migration and activation through interaction with CXADR, a plasma membrane receptor found on adjacent epithelial and endothelial cells. The interaction between both receptors mediates the activation of gamma-delta T-cells, a subpopulation of T-cells residing in epithelia and involved in tissue homeostasis and repair. Upon epithelial CXADR-binding, JAML induces downstream cell signaling events in gamma-delta T-cells through PI3-kinase and MAP kinases. It results in proliferation and production of cytokines and growth factors by T- cells that in turn stimulate epithelial tissues repair. It also controls the transmigration of leukocytes within epithelial and endothelial tissues through adhesive interactions with epithelial and endothelial CXADR.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000160593::EFO_0000571",
+          "title": "AMICA1 \u2194 lung adenocarcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000160593/associations",
+          "text": "Disease: lung adenocarcinoma\nDescription: A carcinoma that arises from the lung and is characterized by the presence of malignant glandular epithelial cells. There is a male predilection with a male to female ratio of 2:1. Usually lung adenocarcinoma is asymptomatic and is identified through screening studies or as an incidental radiologic finding. If clinical symptoms are present they include shortness of breath, cough, hemoptysis, chest pain, and fever. Tobacco smoke is a known risk factor.\nAssociation score: 0.269",
+          "cos_sim_score": 0.2691138162730781,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000160593::EFO_0007442",
+          "title": "AMICA1 \u2194 placenta praevia",
+          "url": "https://platform.opentargets.org/target/ENSG00000160593/associations",
+          "text": "Disease: placenta praevia\nDescription: Abnormal placentation in which the placenta implants in the lower segment of the uterus (the zone of dilation) and may cover part or all of the opening of the cervix. It is often associated with serious antepartum bleeding and premature labor.\nAssociation score: 0.212",
+          "cos_sim_score": 0.2123696974654821,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000160593::EFO_0000551",
+          "title": "AMICA1 \u2194 intracranial hemorrhage",
+          "url": "https://platform.opentargets.org/target/ENSG00000160593/associations",
+          "text": "Disease: intracranial hemorrhage\nDescription: Bleeding within the SKULL, including hemorrhages in the brain and the three membranes of MENINGES. The escape of blood often leads to the formation of HEMATOMA in the cranial epidural, subdural, and subarachnoid spaces.\nAssociation score: 0.205",
+          "cos_sim_score": 0.204631662434226,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000160593::EFO_0001071",
+          "title": "AMICA1 \u2194 lung carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000160593/associations",
+          "text": "Disease: lung carcinoma\nDescription: A carcinoma that arises from epithelial cells of the lung\nAssociation score: 0.204",
+          "cos_sim_score": 0.20377792633178313,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Immunoglobulin V-set domain",
+          "title": "Immunoglobulin V-set domain",
+          "url": "https://en.wikipedia.org/wiki/Immunoglobulin_V-set_domain",
+          "text": "IGSF11;    IGSF2;     IGSF3;     IGSF6;     IGSF8;     IGSF9;     IL18R1;    IREM2;\nIREM3;     JAM2;      JAM3;      KDR;       KIRREL;    KIRREL2;   KIRREL3;   LAG3;\nLOC253012; LOC402482; MAG;       MGC33530;  MOG;       MPZ;       MPZL1;     MPZL2;\nMXRA8;     MYBPC3;    NCA;       NCR2;      NCR3;      NPHS1;     OBSL1;     OPCML;\nP0;        PDCD1;     PIGR;      PILRA;     PILRB;     PRODH2;    PSG1;      PSG10;\nPSG11;     PSG11s';   PSG2;      PSG3;      PSG4;      PSG5;      PSG6;      PSG7;\nPSG8;      PSG9;      PTGFRN;    PTPN1L;    PVR;       PVRL1;     PVRL2;     PVRL3;\nPVRL4;     SCN2B;     SCN3B;     SCN4B;     SEMA3D;    SIGLEC1;   SIGLEC10;  SIGLEC11;\nSIGLEC12;  SIGLEC14;  SIGLEC15;  SIGLEC6;   SIGLEC7;   SIGLEC8;   SIGLEC9;   SIRPA;\nSIRPB1;    SIRPD;     SIRPG;     SISP1;     SLAMF6;    SLAMF7;    TAPBPL;    TCRA;\nTCRB;      TIMD4;     TRA@;      TRAV20;    TRBC1;     TRBV19;    TRBV3-1;   TRBV5-4;\nTRBV7-2;   TRDV2;     TREM1;     TREM2;     TREML1;    TREML2;    TREML4;    TRGV3;\nTRGV5;     TRGV7;     TRGV9;     VCAM1;     VCAN;      VPREB1;    VPREB3;    VSIG1;\nVSIG2;     VSIG4;     VSIG9;     VSIG10;    VSTM1;     VSTM2;     VTCN1;",
+          "cos_sim_score": 0.18751226365566254,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::JAML",
+          "title": "JAML",
+          "url": "https://en.wikipedia.org/wiki/JAML",
+          "text": "JAML or Junctional Adhesion Molecule-Like, or AMICA1 is a JAM transmembrane protein family member.  It is composed of two extracellular immunoglobulin-like domains, a membrane-spanning region, and a cytoplasmic tail involved in activation signaling.   A known ligand of JAML is Coxsackie virus and Adenovirus Receptor (CXADR in humans and CAR in mice) which has been shown to localize to the tight junctions of epithelial cells.\nJAML-mediated activation of CAR is required for neutrophil extravasation in addition to other leukocyte/epithelial cell interaction models.\nOther members of the JAM family of transmembrane proteins include JAM1, JAM2 and JAM3.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.17167747020721436,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Immunoglobulin V-set domain",
+          "title": "Immunoglobulin V-set domain",
+          "url": "https://en.wikipedia.org/wiki/Immunoglobulin_V-set_domain",
+          "text": "== References ==",
+          "cos_sim_score": 0.15573817491531372,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Immunoglobulin V-set domain",
+          "title": "Immunoglobulin V-set domain",
+          "url": "https://en.wikipedia.org/wiki/Immunoglobulin_V-set_domain",
+          "text": "Human proteins containing this domain\nACAM;      ACAN;      ADAMTSL1;  AGC1;      AMICA1;    BCAM;      BCAN;      BGP;\nBGPc;      BT3.3;     BTN1A1;    BTN2A1;    BTN2A2;    BTN2A3;    BTN3A1;    BTN3A2;\nBTN3A3;    BTNL2;     BTNL3;     BTNL8;     BTNL9;     C10orf54;  C1orf32;   C9orf94;\nCADM1;     CADM2;     CADM3;     CADM4;     CD2;       CD226;     CD274;     CD276;\nCD300A;    CD300C;    CD300D;    CD300E;    CD300LB;   CD300LF;   CD300LG;   CD33;\nCD3G;      CD7;       CD79A;     CD79B;     CD80;      CD83;      CD86;      CD8A;\nCD8B;      CD8B1;     CD96;      CEACAM1;   CEACAM16;  CEACAM19;  CEACAM21;  CEACAM3;\nCEACAM4;   CEACAM5;   CEACAM6;   CEACAM7;   CEACAM8;   CHL1;      CREA7-4;   CRTAM;\nCSF1R;     CTLA4;     CXADR;     ERMAP;     ESAM;      F11R;      FCAMR;     FCRL2;\nFKSG87;    GLUDP5;    GPA33;     HAPLN1;    HAPLN2;    HAPLN3;    HAPLN4;    HAVCR1;\nHEPACAM;   HHLA2;     HSPG2;     ICOSLG;    IGHA1;     IGHA2;     IGHD;      IGHG1;\nIGHG3;     IGHM;      IGHV1-69;  IGHV4-31;  IGHV7-81;  IGKC;      IGKV1-5;   IGKV2-24;\nIGL@;      IGLC1;     IGLV2-14;  IGLV3-21;  IGLV3-25;  IGLV4-3;   IGLV5-52;  IGLV6-57;\nIGSF11;    IGSF2;     IGSF3;     IGSF6;     IGSF8;     IGSF9;     IL18R1;    IREM2;\nIREM3;     JAM2;      JAM3;      KDR;       KIRREL;    KIRREL2;   KIRREL3;   LAG3;\nLOC253012; LOC402482; MAG;       MGC33530;  MOG;       MPZ;       MPZL1;     MPZL2;",
+          "cos_sim_score": 0.13433365523815155,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Immunoglobulin V-set domain",
+          "title": "Immunoglobulin V-set domain",
+          "url": "https://en.wikipedia.org/wiki/Immunoglobulin_V-set_domain",
+          "text": "V-set domains are Ig-like domains resembling the antibody variable domain. V-set domains are found in diverse protein families, including immunoglobulin light and heavy chains; in several T-cell receptors such as CD2, CD4, CD80, and CD86; in the N-terminal part of Siglec-receptors, in myelin membrane adhesion molecules; in junctional adhesion molecules (JAM); in tyrosine-protein kinase receptors; and in the programmed cell death protein 1 (PD1).\n\nSubfamilies\nImmunoglobulin V-set, subgroup InterPro: IPR003596\nT-cell surface antigen CD2 InterPro: IPR013285",
+          "cos_sim_score": 0.07608985155820847,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

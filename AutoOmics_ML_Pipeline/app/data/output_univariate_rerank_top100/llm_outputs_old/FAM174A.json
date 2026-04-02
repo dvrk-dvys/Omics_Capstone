@@ -1,0 +1,111 @@
+{
+  "probe_id": "11722259_s_at",
+  "gene_symbol": "FAM174A",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0721984766282145,
+  "abs_fold_change": 1.425,
+  "score": 1.4202,
+  "probe_count": 1,
+  "probe_ids": "11722259_s_at",
+  "max_score": 1.4202,
+  "mean_abs_fold_change": 1.425,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T02:14:49",
+  "interpretation": "FAM174A encodes a membrane protein that may play a role in cellular signaling and interactions. However, the retrieved evidence does not directly link FAM174A to the mechanisms of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH). The associations found with other conditions, such as neuroendocrine neoplasms and diabetes mellitus, suggest potential indirect pathways but lack specificity to SONFH. Therefore, the evidence is weak, and the interpretation relies heavily on inference regarding its biological relevance to SONFH. As such, FAM174A is unlikely to serve as a clinically actionable biomarker for early detection of SONFH.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "FAM174A does not have a strong connection to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) based on current evidence.",
+  "citations": [
+    "FAM174A (Q8TBP5). https://www.uniprot.org/uniprotkb/Q8TBP5",
+    "FAM174A \u2194 neuroendocrine neoplasm. https://platform.opentargets.org/target/ENSG00000174132/associations",
+    "FAM174A \u2194 Abdominal pain. https://platform.opentargets.org/target/ENSG00000174132/associations",
+    "FAM174A \u2194 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000174132/associations",
+    "FAM174A \u2194 disorder of ear. https://platform.opentargets.org/target/ENSG00000174132/associations",
+    "FAM174A \u2194 type 2 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000174132/associations",
+    "List of human protein-coding genes 3. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_3"
+  ],
+  "token_usage": {
+    "prompt_tokens": 2592,
+    "completion_tokens": 202,
+    "total_tokens": 2794,
+    "estimated_cost_usd": 0.00051
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q8TBP5",
+          "title": "FAM174A (Q8TBP5)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8TBP5",
+          "text": "Protein: Membrane protein FAM174A",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000174132::EFO_1001901",
+          "title": "FAM174A \u2194 neuroendocrine neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000174132/associations",
+          "text": "Disease: neuroendocrine neoplasm\nDescription: Endocrine tumors, also referred to as neuroendocrine tumors (NETs), are defined by a common phenotype which is characterized by the expression of general markers (neuron specific enolase, chromogranin, synaptophysin) and hormone secretion products. These tumors may be localized in any part of the body and are generally discovered in non-specific situations, i.e. not immediately suggestive of NETs (tests for inherited predisposition to tumors or for a clinical syndrome caused by abnormal hormone secretion).\nAssociation score: 0.198",
+          "cos_sim_score": 0.1977206059269824,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000174132::HP_0002027",
+          "title": "FAM174A \u2194 Abdominal pain",
+          "url": "https://platform.opentargets.org/target/ENSG00000174132/associations",
+          "text": "Disease: Abdominal pain\nDescription: An unpleasant sensation characterized by physical discomfort (such as pricking, throbbing, or aching) and perceived to originate in the abdomen.\nAssociation score: 0.189",
+          "cos_sim_score": 0.1891235406481999,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000174132::EFO_0000400",
+          "title": "FAM174A \u2194 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000174132/associations",
+          "text": "Disease: diabetes mellitus\nDescription: A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization.\nAssociation score: 0.176",
+          "cos_sim_score": 0.1761734274936728,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000174132::MONDO_0021205",
+          "title": "FAM174A \u2194 disorder of ear",
+          "url": "https://platform.opentargets.org/target/ENSG00000174132/associations",
+          "text": "Disease: disorder of ear\nDescription: A disease that involves the ear.\nAssociation score: 0.056",
+          "cos_sim_score": 0.05559548223623536,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000174132::MONDO_0005148",
+          "title": "FAM174A \u2194 type 2 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000174132/associations",
+          "text": "Disease: type 2 diabetes mellitus\nDescription: A type of diabetes mellitus that is characterized by insulin resistance or desensitization and increased blood glucose levels. This is a chronic disease that can develop gradually over the life of a patient and can be linked to both environmental factors and heredity.\nAssociation score: 0.029",
+          "cos_sim_score": 0.029237403206456056,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::List of human protein-coding genes 3",
+          "title": "List of human protein-coding genes 3",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_3",
+          "text": "== References ==",
+          "cos_sim_score": 0.13461868464946747,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

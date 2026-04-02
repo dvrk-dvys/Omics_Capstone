@@ -1,0 +1,146 @@
+{
+  "probe_id": "11731454_a_at",
+  "gene_symbol": "SEC62",
+  "rf_importance": 0.0118,
+  "selection_freq": 0.8,
+  "abs_fold_change": 1.0380897666666673,
+  "score": 0.358,
+  "probe_count": 5,
+  "probe_ids": "11731454_a_at | 11731451_at | 11731453_at | 11731452_s_at | 11731449_s_at",
+  "max_score": 0.358,
+  "mean_abs_fold_change": 1.5517,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T21:04:22",
+  "interpretation": "SEC62 encodes a protein that is crucial for the translocation of precursor polypeptides into the endoplasmic reticulum (ER), facilitating proper protein folding and secretion. While there is no direct evidence linking SEC62 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in protein translocation suggests a potential involvement in cellular stress responses that could be relevant in the context of steroid treatment. Steroids can induce cellular stress and affect bone metabolism, which may indirectly relate to the functions of SEC62. However, the evidence connecting SEC62 specifically to SONFH is weak, relying primarily on inferred biological reasoning rather than direct studies. Therefore, while SEC62 may play a role in cellular processes that could be disrupted in SONFH, its potential as a biomarker for early detection in this context is limited.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "SEC62 may be involved in cellular processes affected by steroid treatment, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "SEC62 (Q99442). https://www.uniprot.org/uniprotkb/Q99442",
+    "SEC62 \u2014 SEC62. https://platform.opentargets.org/target/ENSG00000008952",
+    "SEC62 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000008952/associations",
+    "SEC62 \u2194 hepatocellular carcinoma. https://platform.opentargets.org/target/ENSG00000008952/associations",
+    "SEC62 \u2194 colorectal carcinoma. https://platform.opentargets.org/target/ENSG00000008952/associations",
+    "SEC62 \u2194 head and neck squamous cell carcinoma. https://platform.opentargets.org/target/ENSG00000008952/associations",
+    "SEC62. https://en.wikipedia.org/wiki/SEC62",
+    "SEC63. https://en.wikipedia.org/wiki/SEC63",
+    "Non-selective cation channel-2 family. https://en.wikipedia.org/wiki/Non-selective_cation_channel-2_family",
+    "Signal peptide. https://en.wikipedia.org/wiki/Signal_peptide",
+    "List of human protein-coding genes 7. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_7"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4217,
+    "completion_tokens": 241,
+    "total_tokens": 4458,
+    "estimated_cost_usd": 0.000777
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q99442",
+          "title": "SEC62 (Q99442)",
+          "url": "https://www.uniprot.org/uniprotkb/Q99442",
+          "text": "Protein: Translocation protein SEC62\nFunction: Mediates post-translational transport of precursor polypeptides across endoplasmic reticulum (ER). Proposed to act as a targeting receptor for small presecretory proteins containing short and apolar signal peptides. Targets and properly positions newly synthesized presecretory proteins into the SEC61 channel-forming translocon complex, triggering channel opening for polypeptide translocation to the ER lumen",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000008952::function",
+          "title": "SEC62 \u2014 SEC62",
+          "url": "https://platform.opentargets.org/target/ENSG00000008952",
+          "text": "Function: Mediates post-translational transport of precursor polypeptides across endoplasmic reticulum (ER). Proposed to act as a targeting receptor for small presecretory proteins containing short and apolar signal peptides. Targets and properly positions newly synthesized presecretory proteins into the SEC61 channel-forming translocon complex, triggering channel opening for polypeptide translocation to the ER lumen.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000008952::EFO_0005772",
+          "title": "SEC62 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000008952/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.542",
+          "cos_sim_score": 0.5420299213234134,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000008952::EFO_0000182",
+          "title": "SEC62 \u2194 hepatocellular carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000008952/associations",
+          "text": "Disease: hepatocellular carcinoma\nDescription: A malignant tumor that arises from hepatocytes. Hepatocellular carcinoma is relatively rare in the United States but very common in all African countries south of the Sahara and in Southeast Asia. Most cases are seen in patients over the age of 50 years, but this tumor can also occur in younger individuals and even in children. Hepatocellular carcinoma is more common in males than females and is associated with hepatitis B, hepatitis C, chronic alcohol abuse and cirrhosis. Serum elevation of alpha-fetoprotein occurs in a large percentage of patients with hepatocellular carcinoma. Grossly, hepatocellular carcinoma may present as a single mass, as multiple nodules, or as diffuse liver involvement. Microscopically, there is a wide range of differentiation from tumor to tumor (well differentiated to poorly differentiated tumors). Hepatocellular carcinomas quickly metastasize to regional lymph nodes and lung. The overall median survival of untreated liver cell carcinoma is about 4 months. The most effective treatment of hepatocellular carcinoma is complete resection of the tumor. Lately, an increasing number of tumors have been treated with liver transplantation.\nAssociation score: 0.095",
+          "cos_sim_score": 0.09503651175761368,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000008952::EFO_1001951",
+          "title": "SEC62 \u2194 colorectal carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000008952/associations",
+          "text": "Disease: colorectal carcinoma\nDescription: A malignant epithelial neoplasm that arises from the colon or rectum and invades through the muscularis mucosa into the submucosa. The vast majority are adenocarcinomas.\nAssociation score: 0.094",
+          "cos_sim_score": 0.09353754099365327,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000008952::EFO_0000181",
+          "title": "SEC62 \u2194 head and neck squamous cell carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000008952/associations",
+          "text": "Disease: head and neck squamous cell carcinoma\nDescription: A squamous cell carcinoma that arises from any of the following anatomic sites: lip and oral cavity, nasal cavity, paranasal sinuses, pharynx, larynx, and salivary glands.\nAssociation score: 0.090",
+          "cos_sim_score": 0.09041007413445472,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::SEC62",
+          "title": "SEC62",
+          "url": "https://en.wikipedia.org/wiki/SEC62",
+          "text": "Translocation protein SEC62 is a protein that in humans is encoded by the SEC62 gene.\n\nFunction\nThe Sec61 complex is the central component of the protein translocation apparatus of the endoplasmic reticulum (ER) membrane. The protein encoded by this gene and SEC63 protein are found to be associated with ribosome-free SEC61 complex. It is speculated that Sec61-Sec62-Sec63 may perform post-translational protein translocation into the ER. The Sec61-Sec62-Sec63 complex might also perform the backward transport of ER proteins that are subject to the ubiquitin-proteasome-dependent degradation pathway. The encoded protein is an integral membrane protein located in the rough ER.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.510259747505188,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::SEC63",
+          "title": "SEC63",
+          "url": "https://en.wikipedia.org/wiki/SEC63",
+          "text": "Translocation protein SEC63 homolog is a protein that in humans is encoded by the SEC63 gene.\n\nFunction\nThe Sec61 complex is the central component of the protein translocation apparatus of the endoplasmic reticulum (ER) membrane. The protein encoded by this gene and SEC62 protein are found to be associated with ribosome-free SEC61 complex. It is speculated that Sec61-Sec62-Sec63 may perform post-translational protein translocation into the ER. The Sec61-Sec62-Sec63 complex might also perform the backward transport of ER proteins that are subject to the ubiquitin-proteasome-dependent degradation pathway. The encoded protein is an integral membrane protein located in the rough ER.\n\nClinical significance\nMutations of this gene have been linked with autosomal dominant polycystic liver disease.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.4366723299026489,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Non-selective cation channel-2 family",
+          "title": "Non-selective cation channel-2 family",
+          "url": "https://en.wikipedia.org/wiki/Non-selective_cation_channel-2_family",
+          "text": "Members of the Non-Selective Cation Channel-2 (NSCC2) Family (TC#1.A.15) have been sequenced from various yeast, fungal and animals species including Saccharomyces cerevisiae, Drosophila melanogaster and Homo sapiens. These proteins are the Sec62 proteins, believed to be associated with the Sec61 and Sec63 constituents of the general protein secretory systems of yeast microsomes. They are also the non-selective (NS) cation channels of the mammalian cytoplasmic membrane.\n\nFunction\nNSCC2 channels are believed to provide entry pathways in response to growth factors. The yeast Sec62 protein has been shown to be essential for cell growth. The mammalian NS channel proteins have been implicated in platelet derived growth factor (PDGF)-dependent single channel current in fibroblasts. These channels are essentially closed in serum deprived tissue-culture cells and are specifically opened by exposure to PDGF.\nThe channels are reported to exhibit equal selectivity for Na+ , K+ and Cs+ with low permeability to Ca2+ , and no permeability to anions. Channel open probability is voltage- and cytoplasmic Ca2+-independent.\n\nTransport reaction\nThe generalized transport reaction catalyzed by members of the NSCC2 family is:\n\nCation (out)  \u21cc cation (in)\n\nStructure and location\nSequenced NSCC2 family proteins are 283-402 amino acyl residues in length and exhibit two putative transmembrane \u03b1-helical segments (TMSs). The S. cerevisiae protein, of 283 amino acyl residues, has cytoplasmic N- and C-termini with two putative TMSs at positions 159-178 and 193-213. The C-terminal 25 residues are rich in arginine and lysine. These proteins have been reported to be present in both endoplasmic reticular and cytoplasmic membranes.\n\nReferences\n\nAs of this edit, this article uses content from \"1.A.15 The Non-selective Cation Channel-2 (NSCC2) Family\", which is licensed in a way that permits reuse under the Creative Commons Attribution-ShareAlike 3.0 Unported License, but not under the GFDL. All relevant terms must be followed.",
+          "cos_sim_score": 0.3628491163253784,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Signal peptide",
+          "title": "Signal peptide",
+          "url": "https://en.wikipedia.org/wiki/Signal_peptide",
+          "text": "Secretion efficiency determination\nSignal peptides are extremely heterogeneous, many prokaryotic and eukaryotic ones are functionally interchangeable within or between species and all determine protein secretion efficiency.\n\nNucleotide level features\nIn vertebrates, the region of the mRNA that codes for the signal peptide (i.e. the signal sequence coding region, or SSCR) can function as an RNA element with specific activities. SSCRs promote nuclear mRNA export and the proper localization to the surface of the endoplasmic reticulum. In addition SSCRs have specific sequence features: they have low adenine-content, are enriched in certain motifs, and tend to be present in the first exon at a frequency that is higher than expected.\n\nAlternate secretion mechanisms\nProteins without signal peptides can also be secreted by unconventional mechanisms. E.g. Interleukin, Galectin. The process by which such secretory proteins gain access to the cell exterior is termed unconventional protein secretion (UPS). In plants, even 50% of secreted proteins can be UPS dependent.\n\nNonclassical sequences\nSignal peptides are usually located at the N-terminus of proteins. Some have C-terminal or internal signal peptides (examples: peroxisomal targeting signal and nuclear localisation signal). The structure of these nonclassical signal peptides differs vastly from the N-terminal signal peptides.\n\nNomenclature\nSignal peptides are not to be confused with the leader peptides sometimes encoded by leader mRNA, although both are sometimes ambiguously referred to as \"leader peptides.\" These other leader peptides are short polypeptides that do not function in protein localization, but instead may regulate transcription or translation of the main protein, and are not part of the final protein sequence. This type of leader peptide primarily refers to a form of gene regulation found in bacteria, although a similar mechanism is used to regulate eukaryotic genes, which is referred to as uORFs (upstream open reading frames).\n\nSignal peptide as a therapeutic target\nSignal peptide is a potential (therapeutic) antiviral target.  The stable signal peptides (SSPs) of mammarenavirus viral glycoprotein precursors re-associate with mature spike proteins after their co-translational cleavage.   SSPs with a penultimate N-terminus glycine are a target for NMT inhibitors, which inhibit the myristoylation of signal peptides and target the signal peptide for proteasomal degradation, affecting virus\u2013cellular fusion.\n\nSee also\nProtein targeting\nTarget peptide\nTopogenic sequence\nPeptides\n\nReferences\nExternal links\nSignal+Peptide at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nSPdb (Signal Peptide DataBase) Archived 2016-01-22 at the Wayback Machine\nSignalP \u2014 predicts the presence and location of signal peptide cleavage sites in amino acid sequences from different organisms.",
+          "cos_sim_score": 0.11100620031356812,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of human protein-coding genes 7",
+          "title": "List of human protein-coding genes 7",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_7",
+          "text": "== References ==",
+          "cos_sim_score": 0.06931790709495544,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

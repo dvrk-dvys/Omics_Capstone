@@ -1,0 +1,145 @@
+{
+  "probe_id": "11720989_a_at",
+  "gene_symbol": "SLC7A7",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.1844429570072404,
+  "abs_fold_change": 1.2997,
+  "score": 1.2976,
+  "probe_count": 1,
+  "probe_ids": "11720989_a_at",
+  "max_score": 1.2976,
+  "mean_abs_fold_change": 1.2997,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T02:23:48",
+  "interpretation": "SLC7A7 encodes the Y+L amino acid transporter 1, which is involved in the transport of cationic amino acids, such as L-arginine, across cell membranes. This transport is crucial for various cellular functions, including nitric oxide synthesis and immune cell function. While there is no direct evidence linking SLC7A7 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in amino acid transport suggests a potential indirect connection, as amino acid imbalances can affect bone metabolism and health. The retrieved evidence primarily supports its general biological function rather than a specific role in SONFH, leading to a low confidence in its direct relevance as a biomarker. Therefore, while SLC7A7 may have some biological plausibility in the context of SONFH, its potential as a clinically actionable biomarker remains weak.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "SLC7A7 may influence amino acid transport, which could indirectly affect bone health in the context of Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "SLC7A7 (Q9UM01). https://www.uniprot.org/uniprotkb/Q9UM01",
+    "SLC7A7 \u2014 SLC7A7. https://platform.opentargets.org/target/ENSG00000155465",
+    "SLC7A7 \u2194 lysinuric protein intolerance. https://platform.opentargets.org/target/ENSG00000155465/associations",
+    "SLC7A7 \u2194 autoinflammatory syndrome. https://platform.opentargets.org/target/ENSG00000155465/associations",
+    "SLC7A7 \u2194 Sensorineural hearing impairment. https://platform.opentargets.org/target/ENSG00000155465/associations",
+    "SLC7A7 \u2194 type 2 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000155465/associations",
+    "Y+L amino acid transporter 1. https://en.wikipedia.org/wiki/Y%2BL_amino_acid_transporter_1",
+    "Pendrin. https://en.wikipedia.org/wiki/Pendrin",
+    "Lysinuric protein intolerance. https://en.wikipedia.org/wiki/Lysinuric_protein_intolerance",
+    "Glucose transporter. https://en.wikipedia.org/wiki/Glucose_transporter"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5579,
+    "completion_tokens": 250,
+    "total_tokens": 5829,
+    "estimated_cost_usd": 0.000987
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9UM01",
+          "title": "SLC7A7 (Q9UM01)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UM01",
+          "text": "Protein: Y+L amino acid transporter 1\nFunction: Heterodimer with SLC3A2, that functions as an antiporter which operates as an efflux route by exporting cationic amino acids from inside the cells in exchange with neutral amino acids plus sodium ions and may participate in nitric oxide synthesis via the transport of L-arginine (PubMed:10080182, PubMed:10655553, PubMed:14603368, PubMed:15756301, PubMed:15776427, PubMed:17329401, PubMed:9829974, PubMed:9878049). Also mediates arginine transport in non-polarized cells, such as monocytes, and is essential for the correct function of these cells (PubMed:15280038, PubMed:31705628). The transport mechanism is electroneutral and operates with a stoichiometry of 1:1 (By similarity). In vitro, Na(+) and Li(+), but also H(+), are cotransported with the neutral amino acids (By similarity)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000155465::function",
+          "title": "SLC7A7 \u2014 SLC7A7",
+          "url": "https://platform.opentargets.org/target/ENSG00000155465",
+          "text": "Function: Heterodimer with SLC3A2, that functions as an antiporter which operates as an efflux route by exporting cationic amino acids from inside the cells in exchange with neutral amino acids plus sodium ions and may participate in nitric oxide synthesis via the transport of L-arginine (PubMed:10080182, PubMed:10655553, PubMed:14603368, PubMed:15756301, PubMed:15776427, PubMed:17329401, PubMed:9829974, PubMed:9878049). Also mediates arginine transport in non-polarized cells, such as monocytes, and is essential for the correct function of these cells (PubMed:15280038, PubMed:31705628). The transport mechanism is electroneutral and operates with a stoichiometry of 1:1 (By similarity). In vitro, Na(+) and Li(+), but also H(+), are cotransported with the neutral amino acids (By similarity).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000155465::MONDO_0009109",
+          "title": "SLC7A7 \u2194 lysinuric protein intolerance",
+          "url": "https://platform.opentargets.org/target/ENSG00000155465/associations",
+          "text": "Disease: lysinuric protein intolerance\nDescription: Lysinuric protein intolerance (LPI) is a very rare inherited multisystem condition caused by disturbance in amino acid metabolism.\nAssociation score: 0.845",
+          "cos_sim_score": 0.8450026270275782,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000155465::MONDO_0019751",
+          "title": "SLC7A7 \u2194 autoinflammatory syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000155465/associations",
+          "text": "Disease: autoinflammatory syndrome\nDescription: A group of disorders of the innate immune system characterized by attacks of seemingly unprovoked inflammation without significant levels of either autoantibodies or autoreactive T cells more characteristic of autoimmune disease.\nAssociation score: 0.407",
+          "cos_sim_score": 0.4069994920871341,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000155465::HP_0000407",
+          "title": "SLC7A7 \u2194 Sensorineural hearing impairment",
+          "url": "https://platform.opentargets.org/target/ENSG00000155465/associations",
+          "text": "Disease: Sensorineural hearing impairment\nDescription: A type of hearing impairment in one or both ears related to an abnormal functionality of the cochlear nerve.\nAssociation score: 0.370",
+          "cos_sim_score": 0.3695798546847018,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000155465::MONDO_0005148",
+          "title": "SLC7A7 \u2194 type 2 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000155465/associations",
+          "text": "Disease: type 2 diabetes mellitus\nDescription: A type of diabetes mellitus that is characterized by insulin resistance or desensitization and increased blood glucose levels. This is a chronic disease that can develop gradually over the life of a patient and can be linked to both environmental factors and heredity.\nAssociation score: 0.299",
+          "cos_sim_score": 0.29857855253359594,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Y+L amino acid transporter 1",
+          "title": "Y+L amino acid transporter 1",
+          "url": "https://en.wikipedia.org/wiki/Y%2BL_amino_acid_transporter_1",
+          "text": "Y+L amino acid transporter 1 is a protein that in humans is encoded by the SLC7A7 gene.\n\nInteractions\nSLC7A7 has been shown to interact with SLC3A2.\n\nSee also\nHeterodimeric amino acid transporter\nSolute carrier family\nLysinuric protein intolerance\n\nReferences\nFurther reading\nExternal links\nGeneReviews/NCBI/NIH/UW entry on Lysinuric Protein Intolerance",
+          "cos_sim_score": 0.3452807068824768,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Pendrin",
+          "title": "Pendrin",
+          "url": "https://en.wikipedia.org/wiki/Pendrin",
+          "text": "References\nFurther reading\nExternal links\nGeneReviews/NCBI/NIH/UW entry on Pendred Syndrome/DFNB4\nDescription at oto.wustl.edu Archived 2006-09-23 at the Wayback Machine\nSLC26A4+protein,+human at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.15140454471111298,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Lysinuric protein intolerance",
+          "title": "Lysinuric protein intolerance",
+          "url": "https://en.wikipedia.org/wiki/Lysinuric_protein_intolerance",
+          "text": "Lysinuric protein intolerance (LPI) is an autosomal recessive metabolic disorder affecting amino acid transport. It is characterised by the body's inability to properly digest and use certain proteins.  This condition leads to various metabolic complications and is typically diagnosed in infancy or early childhood.\nAbout 140 patients have been reported, almost half of them of Finnish origin. Individuals from Japan, Italy, Morocco and North Africa have also been reported plus one in Bixby, Oklahoma.\n\nSigns and symptoms\nInfants with LPI are usually symptom-free when breastfed because of the low protein concentration in human milk, but develop vomiting and diarrhea after weaning. The patients show failure to thrive, poor appetite, growth retardation, enlarged liver and spleen, prominent osteoporosis and osteopenia, delayed bone age and spontaneous protein aversion. Forced feeding of protein may lead to convulsions and coma. Mental development is normal if prolonged episode of hyperammonemia can be avoided. Some patients develop severe pulmonary and kidney complications. High levels of plasma glutamine and glycine are observed.\n\nGenetic Basis\nLPI has been associated with SLC7A7. LPI is caused by mutations in the SLC7A7 gene, which encodes for a protein involved in the transport of amino acids across cell membranes. Mutations in this gene impair the transport function, leading to the characteristic amino acid imbalances seen in LPI patients.\n\nMechanism\nIn LPI, urinary excretion of cationic amino acids (ornithine, arginine and lysine) is increased and these amino acids are poorly absorbed from the intestine. Therefore, their plasma concentrations are low and their body pools become depleted. Deficiency of arginine and ornithine restricts the function of the urea cycle and leads to hyperammonemia after protein-rich meals. Deficiency of lysine may play a major role in the skeletal and immunological abnormalities observed in LPI patients.\n\nClinical Features\nThe symptoms of LPI typically appear after weaning from breast milk to a protein-rich diet. Common symptoms include poor growth, muscle weakness, enlarged liver and spleen, and frequent infections. Neurological symptoms such as confusion and seizures can also occur.\n\nDiagnosis\nThe diagnosis is based on the biochemical findings (increased concentrations of lysine, arginine and ornithine in urine and low concentrations of these amino acids in plasma, elevation of urinary orotic acid excretion after protein-rich meals, and inappropriately high concentrations of serum ferritin and lactate dehydrogenase isoenzymes) and the screening of known mutations of the causative gene from a DNA sample.\n\nTreatment\nTreatment of LPI consists of protein-restricted diet and supplementation with oral  citrulline. Citrulline is a neutral amino acid that improves the function of the urea cycle and allows sufficient protein intake without hyperammonemia.\n\nPrognosis\nUnder proper dietary control and supplementation, the majority of the LPI patients are able to have a nearly normal life. However, severe complications including pulmonary alveolar proteinosis and chronic kidney disease may develop even with proper treatment.Fertility appears to be normal in women, but mothers with LPI have an increased risk for complications during pregnancy and delivery.\n\nReferences\nExternal links\nGeneReview/NIH/UW entry on Lysinuric Protein Intolerance",
+          "cos_sim_score": 0.12984852492809296,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Glucose transporter",
+          "title": "Glucose transporter",
+          "url": "https://en.wikipedia.org/wiki/Glucose_transporter",
+          "text": "Glucose transporters are a wide group of membrane proteins that facilitate the transport of glucose across the plasma membrane, a process known as facilitated diffusion. Because glucose is a vital source of energy for all life, these transporters are present in all phyla. The GLUT or SLC2A family are a protein family that is found in most mammalian cells. 14 GLUTS are encoded by the human genome. GLUT is a type of uniporter transporter protein.\n\nSynthesis of free glucose\nMost non-autotrophic cells are unable to produce free glucose because they lack expression of glucose-6-phosphatase and, thus, are involved only in glucose uptake and catabolism. Usually produced only in hepatocytes, in fasting conditions, other tissues such as the intestines, muscles, brain, and kidneys are able to produce glucose following activation of gluconeogenesis.\n\nGlucose transport in yeast\nIn Saccharomyces cerevisiae glucose transport takes place through facilitated diffusion. The transport proteins are mainly from the Hxt family, but many other transporters have been identified.\n\nGlucose transport in mammals\nGLUTs are integral membrane proteins that contain 12 membrane-spanning helices with both the amino and carboxyl termini exposed on the cytoplasmic side of the plasma membrane. GLUT proteins transport glucose and related hexoses according to a model of alternate conformation, which predicts that the transporter exposes a single substrate binding site toward either the outside or the inside of the cell. Binding of glucose to one site provokes a conformational change associated with transport, and releases glucose to the other side of the membrane. The inner and outer glucose-binding sites are, it seems, located in transmembrane segments 9, 10, 11; also, the DLS motif located in the seventh transmembrane segment could be involved in the selection and affinity of transported substrate.\n\nTypes\nEach glucose transporter isoform plays a specific role in glucose metabolism determined by its pattern of tissue expression, substrate specificity, transport kinetics, and regulated expression in different physiological conditions. To date, 14 members of the GLUT/SLC2 have been identified. On the basis of sequence similarities, the GLUT family has been divided into three subclasses.\n\nClass I\nClass I comprises the well-characterized glucose transporters GLUT1-GLUT4.\n\nClasses II/III\nClass II comprises:\n\nGLUT5 (SLC2A5), a fructose transporter in enterocytes\nGLUT7 (SLC2A7), found in the small and large intestine, transporting glucose out of the endoplasmic reticulum\nGLUT9 (SLC2A9), recently has been found to transport uric acid\nGLUT11 (SLC2A11)\nClass III comprises:\n\nGLUT6 (SLC2A6),\nGLUT8 (SLC2A8),\nGLUT10 (SLC2A10),\nGLUT12 (SLC2A12), and\nGLUT13, also H+/myo-inositol transporter HMIT (SLC2A13), primarily expressed in brain.\nMost members of classes II and III have been identified recently in homology searches of EST databases and the sequence information provided by the various genome projects.\nThe function of these new glucose transporter isoforms is still not clearly defined at present. Several of them (GLUT6, GLUT8) are made of motifs that help retain them intracellularly and therefore prevent glucose transport. Whether mechanisms exist to promote cell-surface translocation of these transporters is not yet known, but it has clearly been established that insulin does not promote GLUT6 and GLUT8 cell-surface translocation.\n\nDiscovery of sodium-glucose cotransport\nIn August 1960, in Prague, Robert K. Crane presented for the first time his discovery of the sodium-glucose cotransport as the mechanism for intestinal glucose absorption. Crane's discovery of cotransport was the first ever proposal of flux coupling in biology. Crane in 1961 was the first to formulate the cotransport concept to explain active transport. Specifically, he proposed that the accumulation of glucose in the intestinal epithelium across the brush border membrane was [is] coupled to downhill Na+ transport cross the brush border. This hypothesis was rapidly tested, refined, and extended [to] encompass the active transport of a diverse range of molecules and ions into virtually every cell type.\n\nSee also\nCotransport\nCotransporter\nGLUT1 deficiency syndrome\nGLUT2 deficiency syndrome",
+          "cos_sim_score": 0.0883842408657074,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Pendrin",
+          "title": "Pendrin",
+          "url": "https://en.wikipedia.org/wiki/Pendrin",
+          "text": "Pendrin is an anion exchange protein that in humans is encoded by the SLC26A4 gene (solute carrier family 26, member 4).\nPendrin was initially identified as a sodium-independent chloride-iodide exchanger with subsequent studies showing that it also accepts formate and bicarbonate as substrates. Pendrin is similar to the Band 3 transport protein found in red blood cells. Pendrin is the protein which is mutated in Pendred syndrome, which is an autosomal recessive disorder characterized by sensorineural hearing loss, goiter and a partial organification problem detectable by a positive perchlorate test.\nPendrin orthologs are responsible for mediating the electroneutral exchange of chloride (Cl\u2212) for bicarbonate (HCO3\u2212) across a plasma membrane in the chloride cells of freshwater fish, and show changes in expression in response to salinity change in the gills of Atlantic stingrays.\nBy phylogenetic analysis, pendrin has been found to be a close relative of prestin present on the hair cells or organ of corti in the inner ear. Prestin is primarily an electromechanical transducer but pendrin is an ion transporter.\n\nFunction\nPendrin is an ion exchanger found in many types of cells in the body. High levels of pendrin expression have been identified in the inner ear and thyroid.\n\nThyroid\nIn the thyroid, pendrin is expressed by thyroid follicular cells. Na+/I\u2212 symporter imports iodide (I\u2212) into the cell across its basolateral side, and pendrin extrudes the I\u2212 across the cell's apical membrane into the thyroid colloid.\n\nInner ear\nThe exact function of pendrin in the inner ear remains unclear; however, pendrin may play a role in acid-base balance as a chloride-bicarbonate exchanger, regulate volume homeostasis through its ability to function as a chloride-formate exchanger or indirectly modulate the calcium concentration of the endolymph. Pendrin is also expressed in the kidney, and has been localized to the apical membrane of a population of intercalated cells in the cortical collecting duct where it is involved in bicarbonate secretion.\n\nKidney\nRenal \u03b2-intercalated cells of the late distal tube and collecting duct express pendrin upon their apical membrane, resorbing one Cl\u2212 in exchange for secreting a HCO3\u2212, with Cl\u2212 subsequently extruded from the cell by a basolateral Cl\u2212 channel. \u03b2-intercalated cells thus utilise pendrin to contribute to acid-base homeostasis by excreting base (HCO3\u2212) into urine. Additionally, \u03b2-intercalated cells may use pendrin in concert with a Na+/HCO3\u2212/2Cl\u2212 antiporter in order to resorb NaCl.\n\nClinical significance\nMutations in this gene are associated with Pendred syndrome, the most common form of syndromic deafness, an autosomal-recessive disease. Pendred syndrome is characterized by thyroid goiter and enlargement of the vestibular aqueduct resulting in deafness; however, despite being expressed in the kidney, individuals with Pendred syndrome do not show any kidney-related acid-base, or volume abnormalities under basal conditions. This is probably the result of other bicarbonate or chloride transporters in the kidney compensating for any loss of pendrin function. Only under extreme situations of salt depletion or metabolic alkalosis, or with inactivation of the sodium-chloride cotransporter, are fluid and electrolyte disorders manifested in these patients.  SLC26A4 is highly homologous to the SLC26A3 gene; they have similar genomic structures and this gene is located 3' of the SLC26A3 gene. The encoded protein has homology to sulfate transporters.\nAnother little-understood role of pendrin is in airway hyperreactivity and inflammation, as during asthma attacks and allergic reactions. Expression of pendrin in the lung increases in response to allergens and high concentrations of IL-13,  and overexpression of pendrin results in airway inflammation, hyperreactivity, and increased mucus production. These symptoms could result from pendrin's effects on ion concentration in the airway surface liquid, possibly causing the liquid to be less hydrated.",
+          "cos_sim_score": 0.0797567293047905,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

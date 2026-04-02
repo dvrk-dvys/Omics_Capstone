@@ -1,0 +1,168 @@
+{
+  "probe_id": "11726122_at",
+  "gene_symbol": "MYO1F",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0,
+  "abs_fold_change": 1.3474,
+  "score": 1.3443,
+  "probe_count": 2,
+  "probe_ids": "11726122_at | 11751544_a_at",
+  "max_score": 1.3443,
+  "mean_abs_fold_change": 1.2952,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T19:28:31",
+  "interpretation": "MYO1F encodes an unconventional myosin that plays a crucial role in intracellular transport by moving membrane-enclosed compartments along actin filaments. While there is no direct evidence linking MYO1F to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in cellular processes such as membrane trafficking and cytoskeletal dynamics could be relevant to the pathophysiology of SONFH, particularly in the context of steroid-induced cellular stress and bone metabolism. The evidence retrieved primarily discusses MYO1F's general biological functions and associations with other diseases, but does not specifically validate it as a biomarker for SONFH. Therefore, the potential for MYO1F as a clinical biomarker for early detection of SONFH remains weak and speculative, relying on inferred connections rather than direct evidence.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "MYO1F may be involved in cellular processes relevant to the pathogenesis of Steroid-Induced Osteonecrosis of the Femoral Head, but lacks direct evidence as a biomarker.",
+  "citations": [
+    "MYO1F (O00160). https://www.uniprot.org/uniprotkb/O00160",
+    "MYO1F \u2014 MYO1F. https://platform.opentargets.org/target/ENSG00000142347",
+    "MYO1F \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000142347/associations",
+    "MYO1F \u2194 smoking behavior. https://platform.opentargets.org/target/ENSG00000142347/associations",
+    "MYO1F \u2194 metabolic syndrome. https://platform.opentargets.org/target/ENSG00000142347/associations",
+    "MYO1F \u2194 cervical carcinoma. https://platform.opentargets.org/target/ENSG00000142347/associations",
+    "MYO1F \u2014 myosin IF (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "LRRK2 \u2014 leucine rich repeat kinase 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "PRKN \u2014 parkin RBR E3 ubiquitin protein ligase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "RIGI \u2014 RNA sensor RIG-I (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "AURKB \u2014 aurora kinase B (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4542,
+    "completion_tokens": 301,
+    "total_tokens": 4843,
+    "estimated_cost_usd": 0.000862
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O00160",
+          "title": "MYO1F (O00160)",
+          "url": "https://www.uniprot.org/uniprotkb/O00160",
+          "text": "Protein: Unconventional myosin-If\nFunction: Myosins are actin-based motor molecules with ATPase activity. Unconventional myosins serve in intracellular movements. Their highly divergent tails are presumed to bind to membranous compartments, which would be moved relative to actin filaments (By similarity)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000142347::function",
+          "title": "MYO1F \u2014 MYO1F",
+          "url": "https://platform.opentargets.org/target/ENSG00000142347",
+          "text": "Function: Myosins are actin-based motor molecules with ATPase activity. Unconventional myosins serve in intracellular movements. Their highly divergent tails are presumed to bind to membranous compartments, which would be moved relative to actin filaments (By similarity). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000142347::EFO_0005772",
+          "title": "MYO1F \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000142347/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.449",
+          "cos_sim_score": 0.44914775431715115,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000142347::EFO_0004318",
+          "title": "MYO1F \u2194 smoking behavior",
+          "url": "https://platform.opentargets.org/target/ENSG00000142347/associations",
+          "text": "Disease: smoking behavior\nDescription: Inhaling and exhaling the smoke of tobacco or something similar to tobacco.\nAssociation score: 0.319",
+          "cos_sim_score": 0.318810915928983,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000142347::EFO_0000195",
+          "title": "MYO1F \u2194 metabolic syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000142347/associations",
+          "text": "Disease: metabolic syndrome\nDescription: A cluster of metabolic risk factors for CARDIOVASCULAR DISEASES and TYPE 2 DIABETES MELLITUS. The major components of metabolic syndrome X include excess ABDOMINAL FAT; atherogenic DYSLIPIDEMIA; HYPERTENSION; HYPERGLYCEMIA; INSULIN RESISTANCE; a proinflammatory state; and a prothrombotic (THROMBOSIS) state. (from AHA/NHLBI/ADA Conference Proceedings, Circulation 2004; 109:551-556)\nAssociation score: 0.294",
+          "cos_sim_score": 0.29389281415180896,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000142347::EFO_0001061",
+          "title": "MYO1F \u2194 cervical carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000142347/associations",
+          "text": "Disease: cervical carcinoma\nDescription: A carcinoma arising from either the exocervical squamous epithelium or the endocervical glandular epithelium. The major histologic types of cervical carcinoma are: squamous carcinoma, adenocarcinoma, adenosquamous carcinoma, adenoid cystic carcinoma and undifferentiated carcinoma.\nAssociation score: 0.111",
+          "cos_sim_score": 0.11089769670948683,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "MYO1F \u2014 myosin IF",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MYO1F\nGene name: myosin IF\nOrganism: Homo sapiens\nGene summary: Myosins are molecular motors that use the energy from ATP hydrolysis to generate force on actin filaments. The protein encoded by this gene is an unconventional myosin that may be involved in the intracellular movement of membrane-enclosed compartments. There is evidence to suggest that mutations in this gene can result in hearing loss. [provided by RefSeq, Jan 2017]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MYO1F",
+          "aliases": "",
+          "gene_description": "myosin IF"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "LRRK2 \u2014 leucine rich repeat kinase 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: LRRK2\nGene name: leucine rich repeat kinase 2\nAliases / synonyms: AURA17, DARDARIN, PARK8, RIPK7, ROCO2\nOrganism: Homo sapiens\nGene summary: This gene is a member of the leucine-rich repeat kinase family and encodes a protein with an ankryin repeat region, a leucine-rich repeat (LRR) domain, a kinase domain, a DFG-like motif, a RAS domain, a GTPase domain, a MLK-like domain, and a WD40 domain. The protein is present largely in the cytoplasm but also associates with the mitochondrial outer membrane. Mutations in this gene have been associated with Parkinson disease-8. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "LRRK2",
+          "aliases": "AURA17, DARDARIN, PARK8, RIPK7, ROCO2",
+          "gene_description": "leucine rich repeat kinase 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "PRKN \u2014 parkin RBR E3 ubiquitin protein ligase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PRKN\nGene name: parkin RBR E3 ubiquitin protein ligase\nAliases / synonyms: AR-JP, LPRS2, PARK2, PDJ\nOrganism: Homo sapiens\nGene summary: The precise function of this gene is unknown; however, the encoded protein is a component of a multiprotein E3 ubiquitin ligase complex that mediates the targeting of substrate proteins for proteasomal degradation. Mutations in this gene are known to cause Parkinson disease and autosomal recessive juvenile Parkinson disease. Alternative splicing of this gene produces multiple transcript variants encoding distinct isoforms. Additional splice variants of this gene have been described but currently lack transcript support. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PRKN",
+          "aliases": "AR-JP, LPRS2, PARK2, PDJ",
+          "gene_description": "parkin RBR E3 ubiquitin protein ligase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "RIGI \u2014 RNA sensor RIG-I",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RIGI\nGene name: RNA sensor RIG-I\nAliases / synonyms: DDX58, RIG-I, RIG1, RLR-1, SGMRT2\nOrganism: Homo sapiens\nGene summary: DEAD box proteins, characterized by the conserved motif Asp-Glu-Ala-Asp (DEAD), are putative RNA helicases which are implicated in a number of cellular processes involving RNA binding and alteration of RNA secondary structure. This gene encodes a protein containing RNA helicase-DEAD box protein motifs and a caspase recruitment domain (CARD). It is involved in viral double-stranded (ds) RNA recognition and the regulation of the antiviral innate immune response. Mutations in this gene are associated with Singleton-Merten syndrome 2. [provided by RefSeq, Aug 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RIGI",
+          "aliases": "DDX58, RIG-I, RIG1, RLR-1, SGMRT2",
+          "gene_description": "RNA sensor RIG-I"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "AURKB \u2014 aurora kinase B",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AURKB\nGene name: aurora kinase B\nAliases / synonyms: AIK2, AIM-1, AIM1, ARK-2, ARK2, AurB, IPL1, PPP1R48, STK-1, STK12, STK5, aurkb-sv1, aurkb-sv2\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the aurora kinase subfamily of serine/threonine kinases. The genes encoding the other two members of this subfamily are located on chromosomes 19 and 20. These kinases participate in the regulation of alignment and segregation of chromosomes during mitosis and meiosis through association with microtubules. A pseudogene of this gene is located on chromosome 8. Alternatively spliced transcript variants have been found for this gene. [provided by RefSeq, Sep 2015]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AURKB",
+          "aliases": "AIK2, AIM-1, AIM1, ARK-2, ARK2, AurB, IPL1, PPP1R48, STK-1, STK12, STK5, aurkb-sv1, aurkb-sv2",
+          "gene_description": "aurora kinase B"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "probe_id": "11742686_a_at",
+  "gene_symbol": "FCGRT",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0482903881866862,
+  "abs_fold_change": 1.2707,
+  "score": 1.2693,
+  "probe_count": 1,
+  "probe_ids": "11742686_a_at",
+  "max_score": 1.2693,
+  "mean_abs_fold_change": 1.2707,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T02:26:23",
+  "interpretation": "The FCGRT gene encodes the neonatal Fc receptor (FcRn), which plays a crucial role in the transport and recycling of immunoglobulin G (IgG) and serum albumin. This receptor is essential for maintaining humoral immunity by extending the half-life of IgG in circulation, which is vital for immune responses. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the dysregulation of immune responses and inflammation may contribute to the disease's pathogenesis. Although there is no direct evidence linking FCGRT to SONFH, its role in immune modulation and potential involvement in inflammatory processes suggests a plausible connection. The evidence is primarily inferred from its biological functions rather than direct disease-specific studies, indicating a moderate level of confidence in its relevance as a biomarker for SONFH.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "FCGRT may influence immune responses relevant to the pathogenesis of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) through its role in IgG recycling.",
+  "citations": [
+    "FCGRT (P55899). https://www.uniprot.org/uniprotkb/P55899",
+    "FCGRT \u2014 FCGRT. https://platform.opentargets.org/target/ENSG00000104870",
+    "FCGRT \u2194 Myasthenia gravis. https://platform.opentargets.org/target/ENSG00000104870/associations",
+    "FCGRT \u2194 chronic inflammatory demyelinating polyradiculoneuropathy. https://platform.opentargets.org/target/ENSG00000104870/associations",
+    "FCGRT \u2194 autoimmune thrombocytopenic purpura. https://platform.opentargets.org/target/ENSG00000104870/associations",
+    "FCGRT \u2194 Graves ophthalmopathy. https://platform.opentargets.org/target/ENSG00000104870/associations",
+    "Neonatal fragment crystallizable receptor. https://en.wikipedia.org/wiki/Neonatal_fragment_crystallizable_receptor"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5751,
+    "completion_tokens": 244,
+    "total_tokens": 5995,
+    "estimated_cost_usd": 0.001009
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P55899",
+          "title": "FCGRT (P55899)",
+          "url": "https://www.uniprot.org/uniprotkb/P55899",
+          "text": "Protein: IgG receptor FcRn large subunit p51\nFunction: Cell surface receptor that transfers passive humoral immunity from the mother to the newborn. Binds to the Fc region of monomeric immunoglobulin gamma and mediates its selective uptake from milk (PubMed:10933786, PubMed:7964511). IgG in the milk is bound at the apical surface of the intestinal epithelium. The resultant FcRn-IgG complexes are transcytosed across the intestinal epithelium and IgG is released from FcRn into blood or tissue fluids. Throughout life, contributes to effective humoral immunity by recycling IgG and extending its half-life in the circulation. Mechanistically, monomeric IgG binding to FcRn in acidic endosomes of endothelial and hematopoietic cells recycles IgG to the cell surface where it is released into the circulation (PubMed:10998088). In addition of IgG, regulates homeostasis of the other most abundant circulating protein albumin/ALB (PubMed:24469444, PubMed:28330995) (Microbial infection) Acts as an uncoating receptor for a panel of echoviruses including Echovirus 5, 6, 7, 9, 11, 13, 25 and 29",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000104870::function",
+          "title": "FCGRT \u2014 FCGRT",
+          "url": "https://platform.opentargets.org/target/ENSG00000104870",
+          "text": "Function: Cell surface receptor that transfers passive humoral immunity from the mother to the newborn. Binds to the Fc region of monomeric immunoglobulin gamma and mediates its selective uptake from milk (PubMed:10933786, PubMed:7964511). IgG in the milk is bound at the apical surface of the intestinal epithelium. The resultant FcRn-IgG complexes are transcytosed across the intestinal epithelium and IgG is released from FcRn into blood or tissue fluids. Throughout life, contributes to effective humoral immunity by recycling IgG and extending its half-life in the circulation. Mechanistically, monomeric IgG binding to FcRn in acidic endosomes of endothelial and hematopoietic cells recycles IgG to the cell surface where it is released into the circulation (PubMed:10998088). In addition of IgG, regulates homeostasis of the other most abundant circulating protein albumin/ALB (PubMed:24469444, PubMed:28330995).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000104870::EFO_0004991",
+          "title": "FCGRT \u2194 Myasthenia gravis",
+          "url": "https://platform.opentargets.org/target/ENSG00000104870/associations",
+          "text": "Disease: Myasthenia gravis\nDescription: Myasthenia gravis (MG) is a rare, clinically heterogeneous, autoimmune disorder of the neuromuscular junction characterized by fatigable weakness of voluntary muscles.\nAssociation score: 0.593",
+          "cos_sim_score": 0.5932721106551206,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000104870::EFO_1000868",
+          "title": "FCGRT \u2194 chronic inflammatory demyelinating polyradiculoneuropathy",
+          "url": "https://platform.opentargets.org/target/ENSG00000104870/associations",
+          "text": "Disease: chronic inflammatory demyelinating polyradiculoneuropathy\nDescription: A slowly progressive autoimmune demyelinating disease of peripheral nerves and nerve roots. Clinical manifestations include weakness and sensory loss in the extremities and enlargement of peripheral nerves. The course may be relapsing-remitting or demonstrate a step-wise progression. Protein is usually elevated in the spinal fluid and cranial nerves are typically spared. GUILLAIN-BARRE SYNDROME features a relatively rapid progression of disease which distinguishes it from this condition. (Adams et al., Principles of Neurology, 6th ed, p1337)\nAssociation score: 0.433",
+          "cos_sim_score": 0.4334237479707765,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000104870::EFO_0007160",
+          "title": "FCGRT \u2194 autoimmune thrombocytopenic purpura",
+          "url": "https://platform.opentargets.org/target/ENSG00000104870/associations",
+          "text": "Disease: autoimmune thrombocytopenic purpura\nDescription: An autoimmune disorder in which the number of circulating platelets is reduced due to their antibody-mediated destruction. ITP is a diagnosis of exclusion and is heterogeneous in origin.\nAssociation score: 0.398",
+          "cos_sim_score": 0.39830707370790674,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000104870::EFO_1001466",
+          "title": "FCGRT \u2194 Graves ophthalmopathy",
+          "url": "https://platform.opentargets.org/target/ENSG00000104870/associations",
+          "text": "Disease: Graves ophthalmopathy\nDescription: An autoimmune disorder of the EYE, occurring in patients with Graves disease. Subtypes include congestive (inflammation of the orbital connective tissue), myopathic (swelling and dysfunction of the extraocular muscles), and mixed congestive-myopathic ophthalmopathy.\nAssociation score: 0.381",
+          "cos_sim_score": 0.3806980486464665,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Neonatal fragment crystallizable receptor",
+          "title": "Neonatal fragment crystallizable receptor",
+          "url": "https://en.wikipedia.org/wiki/Neonatal_fragment_crystallizable_receptor",
+          "text": "The neonatal fragment crystallizable (Fc) receptor (also FcRn, IgG receptor FcRn large subunit p51, or Brambell receptor) is a protein that in humans is encoded by the FCGRT gene. It is an IgG Fc receptor which is similar in structure to the MHC class I molecule and also associates with beta-2-microglobulin.  In rodents, FcRn was originally identified as the receptor that transports maternal immunoglobulin G (IgG) from mother to neonatal offspring via mother's milk, leading to its name as the neonatal Fc receptor. In humans, FcRn is present in the placenta where it transports mother's IgG to the growing fetus. FcRn has also been shown to play a role in regulating IgG and serum albumin turnover. Neonatal Fc receptor expression is up-regulated by the proinflammatory cytokine, TNF, and down-regulated by IFN-\u03b3.\n\nComparative Role of FcRn in Neonatal Immunity Across Species\nThe function of FcRn in neonatal immunity differs across species. In humans, FcRn in the placenta transfers maternal IgG to the fetus during gestation. In rodents, maternal IgG is delivered postnatally through FcRn-mediated uptake in the neonatal gut. Species like piglets and foals, which lack prenatal IgG transfer due to their placental structure, depend entirely on intestinal FcRn to absorb IgG from colostrum shortly after birth. These species-specific mechanisms reflect evolutionary adaptations in FcRn expression and function across mammals.\n\nFcRn Expression Across the Lifespan\nFcRn is highly expressed during the neonatal period, particularly in epithelial and endothelial cells, to support passive immunity through maternal IgG transfer and protection from protein degradation. In adulthood, FcRn expression persists in various tissues including the endothelium, intestinal epithelium, kidney podocytes, and antigen-presenting cells, where it continues to regulate IgG and albumin homeostasis. While overall FcRn function remains critical throughout life, some studies suggest that FcRn expression or activity may decline with aging, potentially contributing to altered antibody pharmacokinetics and immune responses in the elderly.\n\nInteractions of FcRn with IgG and serum albumin\nIn addition to binding to IgG, FCGRT has been shown to interact with human serum albumin. FcRn-mediated transcytosis of IgG across epithelial cells is possible because FcRn binds IgG at acidic pH (<6.5) but not at neutral or higher pH. The binding site for FcRn on IgG has been mapped using functional and structural studies, and involves in the interaction of relatively well conserved histidine residues on IgG with acidic residues on FcRn.\n\nFcRn-mediated recycling and transcytosis of IgG and serum albumin\nFcRn extends the half-life of IgG and serum albumin by reducing lysosomal degradation of these proteins in endothelial cells and bone-marrow derived cells. The clearance rate of IgG and albumin is abnormally short in mice that lack functional FcRn. IgG, serum albumin and other serum proteins are continuously internalized into cells through pinocytosis. Generally, internalized serum proteins are transported from early endosomes to lysosomes, where they are degraded. Following entry into cells, the two most abundant serum proteins, IgG and serum albumin, are bound by FcRn at the slightly acidic pH (<6.5) within early (sorting) endosomes, sorted and recycled to the cell surface where they are released at the neutral pH (>7.0) of the extracellular environment. In this way, IgG and serum albumin are salvaged to avoid lysosomal degradation. This cellular mechanism provides an explanation for the prolonged in vivo half-lives of IgG and serum albumin and transport of these ligands across cellular barriers. In addition, for cell types bathed in an acidic environment such as the slightly acidic intestinal lumen, cell surface FcRn can bind to IgG, transport bound ligand across intestinal epithelial cells followed by release at the near neutral pH at the basolateral surface.",
+          "cos_sim_score": 0.343066930770874,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Neonatal fragment crystallizable receptor",
+          "title": "Neonatal fragment crystallizable receptor",
+          "url": "https://en.wikipedia.org/wiki/Neonatal_fragment_crystallizable_receptor",
+          "text": "Non-Autoimmune applications of FcRn and Fc-Fusion Proteins\nBeyond autoimmune disease, FcRn biology has been leveraged in other therapeutic areas by exploiting Fc-fusion proteins to extend half-life via FcRn-mediated recycling. In oncology, Fc-fusion formats are used to improve the pharmacokinetics of immunomodulatory agents and tumor-targeting biologics. For example, aflibercept (VEGF-Trap), a VEGF-binding Fc-fusion protein used in cancer and ophthalmology. In enzyme replacement therapy (ERT), Fc fusion has been applied to extend circulating levels of recombinant enzymes; an example is elosulfase alfa-Fc, investigated for treating mucopolysaccharidosis IVA. These approaches harness FcRn's recycling pathway to enhance therapeutic durability and reduce dosing frequency.\n\nFcRn in Neurological Disease\nFcRn is expressed at the blood\u2013brain barrier (BBB), where it helps regulate the movement of IgG antibodies between the brain and peripheral circulation. Although IgG can enter the brain via passive diffusion in small amounts, FcRn primarily functions to transport IgG out of the CNS, contributing to immune surveillance and IgG clearance from the brain parenchyma. This efflux activity has implications for neuroinflammatory and neurodegenerative conditions, where pathogenic IgG accumulation in the CNS may be exacerbated by impaired FcRn function. Additionally, FcRn is being explored as a route for antibody-based drug delivery to the brain, using engineered Fc domains to engage FcRn-mediated transcytosis across the BBB.\n\nFcRn in Cancer\nFcRn may influence the tumor microenvironment by modulating the fate of IgG and immune complexes, which play roles in tumor immunity and immune evasion. FcRn is expressed in certain tumor-associated cells, including tumor-infiltrating macrophages and dendritic cells, where it helps process IgG-bound antigens for presentation and clearance. Altered FcRn expression has been observed in some cancers and may correlate with immune escape or therapeutic resistance, especially in tumors treated with monoclonal antibodies. Moreover, FcRn-mediated recycling can affect the local persistence of therapeutic antibodies in tumor tissues, potentially impacting efficiency.\n\nMathematical analysis of the FcRn mechanism\nAntibody binding, salvage and recycling by FcRn is an important part of modelling antibody pharmacokinetics. In fact, besides target-mediated drug dispostiion (TMDD), it is one of the most important factors mediating (non-specific) antibody elimination. Such a mechanism lies at the core of most physiology-based pharmacokinetic (PBPK) models of antibodies, see e.g. Garg and Balthasar, 2007; Shah and Betts, 2012; Niederal et al., 2018; Glassman and Balthasar, 2019; de Witte et al., 2023; De Sutter et al. (2024).\nSome of first steps towards understanding and gaining mathematical insight into the FcRn mechanism was taken by Patsatzis et al. (2022), using the computational singular perturbation (CSP) approach to analyse a minimal FcRn model. This preliminary work was extended and deepend by Katai et al. (2024) using the method of matched asymptotic expansions. This latter work constituted an asymptotic analysis of the mechanism in the high binding affinity limit, i.e. where binding was assumed to be an order of magnitude faster than all other processes. This resulted in a three-tiered scaling framework for non-saturating doses, with binding on the fastest time scale (typically over seconds or minutes), all other cellular process on an intermediate time scale (hours) and a long 'effective' elimination time scale (days, weeks). The emergent long elimination timescale appears because not only is the intrinsic degradation time scale an order of magnitude longer than that of binding, but also because the endosomal antibody concentration is low due to high binding affinity. In particular, the analysis shows that clearance in the terminal phase is inherently nonlinear, with clearance, \n  \n    \n      \n        \n          CL\n        \n      \n    \n    {\\displaystyle {\\text{CL}}}\n  \n, behaving according to",
+          "cos_sim_score": 0.3377743661403656,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Neonatal fragment crystallizable receptor",
+          "title": "Neonatal fragment crystallizable receptor",
+          "url": "https://en.wikipedia.org/wiki/Neonatal_fragment_crystallizable_receptor",
+          "text": "F\n          \n            0\n          \n        \n      \n    \n    {\\displaystyle F_{0}}\n  \n are the association and dissociation rate constants, and baseline free FcRn concentration, respectively; finally, \n  \n    \n      \n        \n          C\n          \n            p\n          \n          \n            IgG\n          \n        \n      \n    \n    {\\displaystyle C_{p}^{\\text{IgG}}}\n  \n is the concentration of IgG in the plasma compartment. Due to the high FcRn expression levels typically reported (see Fan et al., 2019) and used in PBPK models the expression for clearance is essentially constant for typical therapeutic doses.",
+          "cos_sim_score": 0.3214403986930847,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Neonatal fragment crystallizable receptor",
+          "title": "Neonatal fragment crystallizable receptor",
+          "url": "https://en.wikipedia.org/wiki/Neonatal_fragment_crystallizable_receptor",
+          "text": "Diverse roles for FcRn in various organs\nFcRn is expressed on antigen-presenting leukocytes such as dendritic cells and is also expressed in neutrophils to help clear opsonized bacteria. In the kidneys, FcRn is expressed on epithelial cells called podocytes to prevent IgG and albumin from clogging the glomerular filtration barrier. Current studies are investigating FcRn in the liver because there are relatively low concentrations of both IgG and albumin in liver bile despite high concentrations in the blood. Studies have also shown that FcRn-mediated transcytosis is involved with the trafficking of the HIV-1 virus across genital tract epithelium.\n\nHalf-life extension of therapeutic proteins\nThe identification of FcRn as a central regulator of IgG levels led to the engineering of IgG-FcRn interactions to increase in vivo persistence of IgG. For example, the half-life extended complement C5-specific antibody, Ultomiris (ravulizumab), has been approved for the treatment of autoimmunity and a half-life extended antibody cocktail (Evusheld) with 'YTE' mutations is used for the prophylaxis of SARS-CoV2.  Engineering of albumin-FcRn interactions has also generated albumin variants with increased in vivo half-lives. It has also been shown that conjugation of some drugs to the Fc region of IgG or serum albumin to generate fusion proteins significantly increases their half-life.\nThere are several drugs on the market that have Fc portions fused to the effector proteins in order to increase their half-lives through FcRn-mediated recycling. They include: Amevive (alefacept), Arcalyst (rilonacept), Enbrel (etanercept), Nplate (romiplostim), Orencia (abatacept) and Nulojix (belatacept). Enbrel (etanercept) was the first successful IgG Fc-linked soluble receptor therapeutic and works by binding and neutralizing the pro-inflammatory cytokine, TNF-\u03b1.\n\nTargeting FcRn to treat autoimmune disease\nMultiple autoimmune disorders are caused by the binding of IgG to self antigens. Since FcRn extends IgG half-life in the circulation, it can also confer long half-lives on these pathogenic antibodies and promote autoimmune disease. Therapies seek to disrupt the IgG-FcRn interaction to increase the clearance of disease-causing IgG autoantibodies from the body. One such therapy is the infusion of intravenous immunoglobulin (IVIg) to saturate FcRn's IgG recycling capacity and proportionately reduce the levels of disease-causing IgG autoantibody binding to FcRn, thereby increasing disease-causing IgG autoantibody removal. More recent approaches involve the strategy of blocking the binding of IgG to FcRn by delivering antibodies that bind with high affinity to this receptor through their Fc region or variable regions. These engineered Fc fragments or antibodies are being used in clinical trials as treatments for antibody-mediated autoimmune diseases such as primary immune thrombocytopenia and skin blistering diseases (pemphigus), and the Fc-based inhibitor, efgartigimod, based on the 'Abdeg' technology was recently approved (as 'Vyvgart') for the treatment of generalized myasthenia gravis in December 2021.\n\nNon-Autoimmune applications of FcRn and Fc-Fusion Proteins\nBeyond autoimmune disease, FcRn biology has been leveraged in other therapeutic areas by exploiting Fc-fusion proteins to extend half-life via FcRn-mediated recycling. In oncology, Fc-fusion formats are used to improve the pharmacokinetics of immunomodulatory agents and tumor-targeting biologics. For example, aflibercept (VEGF-Trap), a VEGF-binding Fc-fusion protein used in cancer and ophthalmology. In enzyme replacement therapy (ERT), Fc fusion has been applied to extend circulating levels of recombinant enzymes; an example is elosulfase alfa-Fc, investigated for treating mucopolysaccharidosis IVA. These approaches harness FcRn's recycling pathway to enhance therapeutic durability and reduce dosing frequency.",
+          "cos_sim_score": 0.2705174386501312,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Neonatal fragment crystallizable receptor",
+          "title": "Neonatal fragment crystallizable receptor",
+          "url": "https://en.wikipedia.org/wiki/Neonatal_fragment_crystallizable_receptor",
+          "text": "References\nFurther reading\nExternal links\nneonatal+Fc+receptor at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.26914626359939575,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

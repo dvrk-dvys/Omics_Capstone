@@ -1,0 +1,218 @@
+{
+  "probe_id": "11759088_at",
+  "gene_symbol": "MARCH1",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0802943829210325,
+  "abs_fold_change": 1.3315,
+  "score": 1.3287,
+  "probe_count": 2,
+  "probe_ids": "11759088_at | 11746972_a_at",
+  "max_score": 1.3287,
+  "mean_abs_fold_change": 1.3032,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T19:29:41",
+  "interpretation": "MARCH1, also known as MARCHF1, is an E3 ubiquitin-protein ligase that plays a critical role in regulating the degradation of various proteins, including those involved in immune responses and insulin signaling. Its function in ubiquitination may influence the inflammatory processes and cellular stress responses that are relevant in the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH). Although the retrieved evidence does not directly link MARCH1 to SONFH, its involvement in pathways related to inflammation and cellular stress suggests a potential role in the disease's pathophysiology. The evidence is limited, leading to a low confidence in its direct relevance as a biomarker for SONFH, but it may still hold some clinical significance as a candidate for further investigation. Therefore, while MARCH1 is biologically plausible as a biomarker, the current evidence does not strongly support its use in early detection of SONFH.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "MARCH1 may be involved in inflammatory and cellular stress pathways relevant to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "MARCHF1 (Q8TCQ1). https://www.uniprot.org/uniprotkb/Q8TCQ1",
+    "MARCHF1 (Q8TCQ1-2). https://www.uniprot.org/uniprotkb/Q8TCQ1-2",
+    "MARCH1 \u2014 MARCHF1. https://platform.opentargets.org/target/ENSG00000145416",
+    "MARCH1 \u2194 smoking initiation. https://platform.opentargets.org/target/ENSG00000145416/associations",
+    "MARCH1 \u2194 obesity. https://platform.opentargets.org/target/ENSG00000145416/associations",
+    "MARCH1 \u2194 alcohol drinking. https://platform.opentargets.org/target/ENSG00000145416/associations",
+    "MARCH1 \u2194 nervous system benign neoplasm. https://platform.opentargets.org/target/ENSG00000145416/associations",
+    "MARCHF1 \u2014 membrane associated ring-CH-type finger 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "IL10 \u2014 interleukin 10 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MTOR \u2014 mechanistic target of rapamycin kinase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "INSR \u2014 insulin receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TBK1 \u2014 TANK binding kinase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Unlocking the mechanistic potential of Thuja occidentalis for managing diabetic neuropathy and nephropathy (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11752125/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8443,
+    "completion_tokens": 331,
+    "total_tokens": 8774,
+    "estimated_cost_usd": 0.001465
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q8TCQ1",
+          "title": "MARCHF1 (Q8TCQ1)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8TCQ1",
+          "text": "Protein: E3 ubiquitin-protein ligase MARCHF1\nFunction: E3 ubiquitin-protein ligase that mediates ubiquitination of TFRC, CD86, FAS and MHC class II proteins, such as HLA-DR alpha and beta, and promotes their subsequent endocytosis and sorting to lysosomes via multivesicular bodies (PubMed:18389477, PubMed:18305173, PubMed:21220452, PubMed:35045264). By constitutively ubiquitinating MHC class II proteins in immature dendritic cells, down-regulates their cell surface localization thus sequestering them in the intracellular endosomal system. Also regulates insulin sensitivity by controlling surface expression of the insulin receptor subunit beta/INSR by direct ubiquitination and degradation (PubMed:27577745) (Microbial infection) Plays a role in iron metabolism by regulating the levels of the transferrin receptor TFRC during human cytomegalovirus infection, subsequently contributing to a proviral effect",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q8TCQ1-2",
+          "title": "MARCHF1 (Q8TCQ1-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8TCQ1-2",
+          "text": "Protein: Isoform 2 of E3 ubiquitin-protein ligase MARCHF1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000145416::function",
+          "title": "MARCH1 \u2014 MARCHF1",
+          "url": "https://platform.opentargets.org/target/ENSG00000145416",
+          "text": "Function: E3 ubiquitin-protein ligase that mediates ubiquitination of TFRC, CD86, FAS and MHC class II proteins, such as HLA-DR alpha and beta, and promotes their subsequent endocytosis and sorting to lysosomes via multivesicular bodies (PubMed:18389477, PubMed:18305173, PubMed:21220452, PubMed:35045264). By constitutively ubiquitinating MHC class II proteins in immature dendritic cells, down-regulates their cell surface localization thus sequestering them in the intracellular endosomal system. Also regulates insulin sensitivity by controlling surface expression of the insulin receptor subunit beta/INSR by direct ubiquitination and degradation (PubMed:27577745).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000145416::EFO_0005670",
+          "title": "MARCH1 \u2194 smoking initiation",
+          "url": "https://platform.opentargets.org/target/ENSG00000145416/associations",
+          "text": "Disease: smoking initiation\nDescription: initation of the habit of smoking, the inhaling and exhaling of tobacco smoke.\nAssociation score: 0.389",
+          "cos_sim_score": 0.38895332192845583,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000145416::EFO_0001073",
+          "title": "MARCH1 \u2194 obesity",
+          "url": "https://platform.opentargets.org/target/ENSG00000145416/associations",
+          "text": "Disease: obesity\nDescription: An eating-related disorder in which excess body fat has accumulated to such an extent that health may be negatively affected. It is commonly defined as a body mass index (weight divided by height squared) of 30 kg/m2 or higher.\nAssociation score: 0.369",
+          "cos_sim_score": 0.3688723693916846,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000145416::EFO_0004329",
+          "title": "MARCH1 \u2194 alcohol drinking",
+          "url": "https://platform.opentargets.org/target/ENSG00000145416/associations",
+          "text": "Disease: alcohol drinking\nDescription: Behaviors associated with the ingesting of alcoholic beverages, including social drinking.\nAssociation score: 0.360",
+          "cos_sim_score": 0.35953647465744265,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000145416::MONDO_0000648",
+          "title": "MARCH1 \u2194 nervous system benign neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000145416/associations",
+          "text": "Disease: nervous system benign neoplasm\nDescription: Abnormal growth of cells in the nervous system without evidence of malignant characteristics. Unlike other organ systems, tumors in the central nervous system can have benign histological characteristics but still have life threatening effects due to their location within the neuraxis (e.g., brainstem gliomas).\nAssociation score: 0.324",
+          "cos_sim_score": 0.3239429365661314,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "MARCHF1 \u2014 membrane associated ring-CH-type finger 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MARCHF1\nGene name: membrane associated ring-CH-type finger 1\nAliases / synonyms: MARCH-I, MARCH1, RNF171\nOrganism: Homo sapiens\nGene summary: MARCH1 is a member of the MARCH family of membrane-bound E3 ubiquitin ligases (EC 6.3.2.19). MARCH proteins add ubiquitin (see MIM 191339) to target lysines in substrate proteins, thereby signaling their vesicular transport between membrane compartments. MARCH1 downregulates the surface expression of major histocompatibility complex (MHC) class II molecules (see MIM 142880) and other glycoproteins by directing them to the late endosomal/lysosomal compartment (Bartee et al., 2004 [PubMed 14722266]; Thibodeau et al., 2008 [PubMed 18389477]; De Gassart et al., 2008 [PubMed 18305173]).[supplied by OMIM, Mar 2010]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MARCHF1",
+          "aliases": "MARCH-I, MARCH1, RNF171",
+          "gene_description": "membrane associated ring-CH-type finger 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "IL10 \u2014 interleukin 10",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: IL10\nGene name: interleukin 10\nAliases / synonyms: CSIF, GVHDS, IL-10, IL10A, TGIF\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a cytokine produced primarily by monocytes and to a lesser extent by lymphocytes. This cytokine has pleiotropic effects in immunoregulation and inflammation. It down-regulates the expression of Th1 cytokines, MHC class II Ags, and costimulatory molecules on macrophages. It also enhances B cell survival, proliferation, and antibody production. This cytokine can block NF-kappa B activity, and is involved in the regulation of the JAK-STAT signaling pathway. Knockout studies in mice suggested the function of this cytokine as an essential immunoregulator in the intestinal tract. Mutations in this gene are associated with an increased susceptibility to HIV-1 infection and rheumatoid arthritis. [provided by RefSeq, May 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "IL10",
+          "aliases": "CSIF, GVHDS, IL-10, IL10A, TGIF",
+          "gene_description": "interleukin 10"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MTOR \u2014 mechanistic target of rapamycin kinase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MTOR\nGene name: mechanistic target of rapamycin kinase\nAliases / synonyms: FRAP, FRAP1, FRAP2, RAFT1, RAPT1, SKS\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene belongs to a family of phosphatidylinositol kinase-related kinases. These kinases mediate cellular responses to stresses such as DNA damage and nutrient deprivation. This kinase is a component of two distinct complexes, mTORC1, which controls protein synthesis, cell growth and proliferation, and mTORC2, which is a regulator of the actin cytoskeleton, and promotes cell survival and cell cycle progression. This protein acts as the target for the cell-cycle arrest and immunosuppressive effects of the FKBP12-rapamycin complex. Inhibitors of mTOR are used in organ transplants as immunosuppressants, and are being evaluated for their therapeutic potential in SARS-CoV-2 infections. Mutations in this gene are associated with Smith-Kingsmore syndrome and somatic foca...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MTOR",
+          "aliases": "FRAP, FRAP1, FRAP2, RAFT1, RAPT1, SKS",
+          "gene_description": "mechanistic target of rapamycin kinase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "INSR \u2014 insulin receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: INSR\nGene name: insulin receptor\nAliases / synonyms: CD220, HHF5\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the receptor tyrosine kinase family of proteins. The encoded preproprotein is proteolytically processed to generate alpha and beta subunits that form a heterotetrameric receptor. Binding of insulin or other ligands to this receptor activates the insulin signaling pathway, which regulates glucose uptake and release, as well as the synthesis and storage of carbohydrates, lipids and protein. Mutations in this gene underlie the inherited severe insulin resistance syndromes including type A insulin resistance syndrome, Donohue syndrome and Rabson-Mendenhall syndrome. Alternative splicing results in multiple transcript variants. [provided by RefSeq, Oct 2015]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "INSR",
+          "aliases": "CD220, HHF5",
+          "gene_description": "insulin receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TBK1 \u2014 TANK binding kinase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TBK1\nGene name: TANK binding kinase 1\nAliases / synonyms: AIARV, FTDALS4, IIAE8, NAK, T2K\nOrganism: Homo sapiens\nGene summary: The NF-kappa-B (NFKB) complex of proteins is inhibited by I-kappa-B (IKB) proteins, which inactivate NFKB by trapping it in the cytoplasm. Phosphorylation of serine residues on the IKB proteins by IKB kinases marks them for destruction via the ubiquitination pathway, thereby allowing activation and nuclear translocation of the NFKB complex. The protein encoded by this gene is similar to IKB kinases and can mediate NFKB activation in response to certain growth factors. The protein is also an important kinase for antiviral innate immunity response. [provided by RefSeq, Sep 2021]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TBK1",
+          "aliases": "AIARV, FTDALS4, IIAE8, NAK, T2K",
+          "gene_description": "TANK binding kinase 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::11752125",
+          "title": "Unlocking the mechanistic potential of Thuja occidentalis for managing diabetic neuropathy and nephropathy",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11752125/",
+          "text": "anti-apoptotic activityPhytochemistry of Thuja occidentalisProposed mechanism of Thuja occidentalis targeting signaling cascades involved in diabetic nephropathy and neuropathyReferences1.ThujoneThe anti-inflammatory effect of thujone has been evaluated in C57BL/6 mice (metastasis model) induced by injecting highly metastatic B16F-10 melanoma cells into mice; the administration of thujone resulted in suppression of the NF-\u03baB pathway and decreased levels of tumor cell proliferation, adhesion, and invasion molecules involving matrix metalloproteinase, extracellular signal-regulated kinase (ERK)-1, ERK-2, MAPK and vascular endothelial growth factor (VEGF) were decreased in metastatic animals.Thuja occidentalis comprises the active ingredient 65 % Thujone (85\u00a0% \u03b1-thujone and 15\u00a0% \u03b2-thujone)Based on the evidence, Thuja occidentalis's anti-inflammatory activity is shown by nephropathy by inhibiting the NF-\u03baB and decreasing the levels of down-regulating the expression\u00a0of\u00a0matrix\u00a0metalloproteinase, extracellular\u00a0signal-regulated\u00a0kinase\u00a0(ERK), MAPK pathway and\u00a0vascular\u00a0endothelial\u00a0growth\u00a0factor\u00a0(VEGF) and pro-inflammatory mediators causing damage of renal and peripheral nerves.18, 30, 37, 38,39,40,412.FenchoneIN SILICO studies evaluated the apoptotic activity of fenchone. The interaction of Fenchone with anti-apoptotic proteins Bcl-2 and Bcl-XL showed higher interaction with Bcl2 & BAX than tends to be effective in inhibiting the pro-apoptotic proteins and having anti-apoptotic properties. Furthermore, the antioxidant and anti-inflammatory property of fenchone was also evaluated by using a rat model was induced nephrotoxicity by using doxorubicin (Dox), the administration of limonene showed a preventive effect against Dox-induced renal damage. It decreased the expression of NF-\u03baB, COX-2, iNOS, and nitric oxide.Thuja occidentalis comprises the active ingredient Fenchone in a concentration of 1.4\u20134 %.Therefore, the anti-apoptotic activity of Thuja occidentalis comprising Fenchone has been proposed for preventing apoptotic cell death in renal damage and peripheral nerve damage by decreasing the levels of pro-apoptotic proteins that provide the correlation of mitochondrial oxidative stress and apoptosis in diabetic nephropathy ad neuropathy. Therefore, the treatment with Thuja occidentalis could be an effective strategy in preventing mitochondrial oxidative stress-mediated apoptotic death with decreased levels of pro-apoptotic",
+          "cos_sim_score": 0.20007535815238953,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11752125",
+          "title": "Unlocking the mechanistic potential of Thuja occidentalis for managing diabetic neuropathy and nephropathy",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11752125/",
+          "text": "5\nCelluar and molecular mechanisms of diabetic nephropathy\n5.1\nOxidative stress in diabetic nephropathy\nOxidative stress has emerged as a pivotal mediator in the pathogenesis and progression of diabetic nephropathy, a microvascular complication that poses a significant burden on individuals afflicted with diabetes mellitus.112 This phenomenon is characterized by an excessive accumulation of reactive oxygen species (ROS) and a disruption in the equilibrium between oxidants and antioxidants, initiating a cascade of events that ultimately culminate in renal dysfunction and, if left unabated, end-stage renal disease.113,114 Diverse sources can be attributed to the augmented generation of ROS in diabetic states, each contributing to the overall oxidative stress burden.115 A primary contributor is the NADPH oxidase enzyme complex, which catalyzes the production of superoxide anions, a highly reactive form of ROS.116,117 In diabetic conditions, the activity of NADPH oxidase is upregulated, leading to an increased production of superoxide and the subsequent formation of other ROS species.118 Furthermore, the formation of advanced glycation end products (AGEs) plays a significant role in exacerbating oxidative stress in diabetic nephropathy.119,120 These molecules are formed through non-enzymatic reactions between reducing sugars and proteins, lipids, or nucleic acids, and their accumulation is accelerated in persistent hyperglycemic states.119,120 AGEs can interact with their specific receptors (RAGE) on various cell types, triggering intracellular signaling cascades that ultimately lead to the activation of NADPH oxidase and the subsequent generation of ROS.121 Additionally, the polyol pathway, an alternative route for glucose metabolism, has been implicated in the development of oxidative stress in diabetic nephropathy. Under hyperglycemic conditions, glucose is shunted into this pathway, leading to the depletion of NADPH, a cofactor essential for regenerating the antioxidant glutathione.122,123 This depletion compromises the cell's ability to neutralize ROS, contributing to the overall oxidative stress burden. Furthermore, uncoupled nitric oxide synthase (NOS), an enzyme responsible for producing nitric oxide (NO), can also serve as a source of ROS in diabetic nephropathy.113,114 When NOS becomes uncoupled due to substrate or cofactor deficiency, it produces superoxide instead of NO, further exacerbating oxidative stress.113 The deleterious effects of oxidative stress on the renal are multifaceted and contribute to the development and progression of diabetic nephropathy.112 One primary consequence is the upregulation of genes encoding extracellular matrix (ECM) components, such as collagen and fibronectin.118 This increased expression leads to the excessive accumulation of ECM proteins, resulting in glomerular and tubulointerstitial fibrosis, a hallmark of progressive renal disease.113,114 Moreover, oxidative stress can disrupt the glomerular filtration barrier by inducing actin cytoskeleton reorganization in podocytes, specialized cells that play a crucial role in maintaining the selective permeability of the glomerular capillary wall.114 This disruption leads to proteinuria, a clinical manifestation of diabetic nephropathy and a risk factor for further renal function decline.\n5.2\nMitochondrial dysfunction in diabetic nephropathy",
+          "cos_sim_score": 0.18284839391708374,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11752125",
+          "title": "Unlocking the mechanistic potential of Thuja occidentalis for managing diabetic neuropathy and nephropathy",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11752125/",
+          "text": "5.2\nMitochondrial dysfunction in diabetic nephropathy\nMitochondrial dysfunction, a hallmark of diabetic nephropathy, also plays a significant role in the generation of ROS.119 In diabetic conditions, oxidative phosphorylation in the mitochondrial respiratory chain becomes impaired, leading to the leakage of electrons and the subsequent formation of superoxide and other ROS species.119,120 This mitochondrial impairment not only exacerbates oxidative stress but also contributes to the overall renal injury and dysfunction observed in diabetic nephropathy.115 ROS can also activate various signaling pathways that contribute to the pathogenesis of diabetic nephropathy.118 For instance, the AGE-RAGE pathway, when activated by AGEs, triggers downstream signaling cascades that further promote oxidative stress, inflammation, and the production of pro-fibrotic factors.119,120 Similarly, when ROS is stimulated, the protein kinase C (PKC) pathway can activate NADPH oxidase, perpetuating the cycle of oxidative stress.118 While moderate levels of ROS are essential for maintaining various cellular functions, such as gene expression, molecular transcription, and signaling transduction, excessive and uncontrolled ROS production can overwhelm the body's antioxidant defense mechanisms.119,120 The antioxidant defense system, comprising enzymes like superoxide dismutase (SOD), glutathione peroxidase (GSH-Px), catalase (CAT), glutathione reductase (GR), and paraoxonase, plays a crucial role in neutralizing ROS and maintaining redox homeostasis.121 However, in diabetic conditions, the excessive production of ROS can deplete these antioxidant reserves, leading to oxidative damage to cellular components, including lipids, proteins, and nucleic acids.120,122,123 Therefore, oxidative stress acts as a central mediator in the development and progression of diabetic nephropathy, operating through various mechanisms, including the generation of ROS from diverse sources, the activation of signaling pathways, the disruption of the glomerular filtration barrier, the promotion of extracellular matrix accumulation and fibrosis, and the contribution to mitochondrial dysfunction.122, 123, 124\n5.3\nInflammation in the pathogenesis of diabetic nephropathy",
+          "cos_sim_score": 0.17407649755477905,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11752125",
+          "title": "Unlocking the mechanistic potential of Thuja occidentalis for managing diabetic neuropathy and nephropathy",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11752125/",
+          "text": "Thuja occidentalis seems to be a rich source of various active components possessing anti-apoptotic, antioxidant properties that could be beneficial for the treatment of diabetes complications (neuropathy and nephropathy) by inhibiting the JNK signaling.18,38 The JNK signaling is involved in causing mitochondrial oxidative stress-mediated renal fibrosis underlying apoptotic destructive mechanism of tubular damage secondary to glomerular injury in diabetic nephropathy that could be a preventive strategy for dorsal root ganglion (DRG) neuron apoptosis in diabetes neuropathy.18,173,174,208 Therefore, Thuja occidentalis has been proposed to be an effective therapy for diabetic nephropathy and neuropathy by inhibiting the JNK pathway.\n6.8\nThuja occidentalis and p38/MAPK, ERK in diabetic neuropathy and nephropathy\np38MAPK, ERK pathways regulate apoptosis and stress responses under pathological conditions; the activation of mitogen-activated protein kinase (MAPK), extracellular signal-regulated kinase (ERK) further phosphorylates downstream proteins from extracellular stimuli responsible for causing inflammation, oxidative stress, and apoptotic cell death in various diseases.18,209 In diabetes, the hyperglycemia-mediated renal damage, and peripheral nerve damage involve the multifaceted mechanisms related to the polyol pathway, oxidative stress, and enhanced formation of advanced glycation end products (AGEs) through activation of p38MAPK, ERK signaling, further promoting diabetes-induced inflammation and apoptosis in neuropathy and nephropathy.18,209, 210, 211 p38MAPK and ERK signaling activation causes glomerular and tubulointerstitial damage in diabetic nephropathy.212,213 Hyperglycemia-induced nephropathy results in damage to peripheral nerves and central sensitization.209 The central sensitization involves enhanced activity of AMPA and NMDA excitatory synaptic neurotransmission current along with decreased GABA inhibitory synaptic neurotransmission current contributing to neuropathic pain due to central sensitization after nerve injury and increasing the neuroimmune response of glial cell migration activating p38MAPK, ERK signaling increasing inflammatory mediators promoting neuropathic pain.46,209,214 The Peripheral neuropathy involves the dorsal region ganglion neurons damage responsible for neuropathy pain stimulated by enhanced expression of glial cells with activated purinergic (P2X4) and chemokine receptors on glial cells attributing to increased intracellular calcium ion.209,214 Further, the enhanced intracellular calcium ion concentration causes oxidative stress mediated by the activation of p38MAPK, ERK signaling induces the release of PGE2 and IL1\u03b2 or through phosphorylation of transcription factor NF-\u03baB, ATF2 transcribing genes of pro-inflammatory mediators (IL-1 beta, TNF-alpha, COX, prostaglandin (PGE2, BDNF) leading to persistent neuropathic pain hyper sensitization.18,46,183 However, the phytochemical ingredients (kaempferol, proanthocyanidins, myricetin, quercetin, \u03b1-thujone) have been evaluated as potent antioxidants and anti-apoptotic and anti-inflammatory properties that inhibit the activation of downstream p38MAPK, ERK pathway mediated inflammation, and apoptotic oxidative stress.181,46,64,47, 48, 49, 215, 216, 217 The phytochemical screening of Thuja occidentalis resulted in the presence of \u03b1-thujone (65\u00a0%) main component and other flavonoids (borneol, kaempferol, proanthocyanidins, myricetin, quercetin) having anti-inflammatory and antioxidant properties.17,18,58,66 As evidenced, the active constituent borneol, thujone, myrcene, quercetin, myricetin, kaemferol and proanthocyanidin of Thuja occidentalis inhibits p38/MAPK, ERK signaling pathway and decreased inflammation and apoptosis.46,64,49,55 Therefore, the current review proposed Thuja occidentalis as an effective natural remedy for preventing diabetes nephropathy and neuropathy by inhibiting p38MAPK/ERK pathway-mediated renal fibrosis and peripheral nerve damage.",
+          "cos_sim_score": 0.16805501282215118,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11752125",
+          "title": "Unlocking the mechanistic potential of Thuja occidentalis for managing diabetic neuropathy and nephropathy",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11752125/",
+          "text": "4\nCelluar and molecular mechanisms of diabetic neuropathy\n4.1\nOxidative stress in diabetic neuropathy\nOxidative stress plays a crucial role in the onset and advancement of diabetic neuropathy, a disabling complication of diabetes mellitus.72 While the emergence of diabetic neuropathy involves multiple factors, and the exact pathogenic processes remain unclear, several interconnected pathways have been implicated, with oxidative stress playing a central role.73 Persistent high blood sugar levels, a hallmark of diabetes, sets off a cascade of events contributing to the excessive production of reactive oxygen species (ROS) and subsequent oxidative stress.74,75 A critical pathway involved is the polyol pathway, activated under hyperglycemic conditions. In this pathway, the aldose reductase reduces glucose to sorbitol, which is then metabolized to fructose by sorbitol dehydrogenase.76 Increased flux through this polyol pathway leads to sorbitol accumulation inside cells, causing hyperosmolarity and the compensatory efflux of other osmolytes like myoinositol, taurine, and adenosine.77,78 Myoinositol depletion results in phosphatidylinositol depletion and impaired ATP production. Consequently, Na+/K\u00a0+\u00a0-ATPase activity is reduced, impairing axonal transport, structural nerve breakdown, and abnormal action potential propagation.79,80 Moreover, aldose reductase's reduction of glucose to sorbitol consumes NADPH, which is required for regenerating the crucial antioxidant-reduced glutathione (GSH).81,82 This NADPH depletion directly contributes to oxidative stress by compromising antioxidant defenses. Additionally, fructose formation from sorbitol promotes advanced glycation end product (AGE) formation, further exacerbating redox imbalance.83 AGEs themselves play a significant role in diabetic neuropathy's pathogenesis.84,85 Hyperglycemia accelerates AGE formation through reactive carbohydrate groups attaching to proteins, nucleic acids, or lipids.86 These modifications can impair protein biological functions, affecting cellular processes and contributing to oxidative stress.87 Furthermore, extracellular AGEs can bind to their receptor (RAGE), initiating inflammatory responses, activating NADPH oxidases, and generating more ROS. Prolonged inflammation upregulates RAGE expression and stimulates the transcription factor nuclear factor kappa B (NF-\u03baB), perpetuating the cycle of oxidative stress and inflammation.88,89 The hexosamine pathway is Another pathway implicated in diabetes-induced oxidative stress and complications.88 In this pathway, the glycolysis intermediate fructose-6-phosphate is diverted and converted to uridine diphosphate-N-acetylglucosamine (UDP-GlcNAc). UDP-GlcNAc can modify transcription factors by attaching to their serine and threonine residues.89 Under hyperglycemia, increased hexosamine pathway flux activates the transcription factor Sp1, which is implicated in diabetic complications. Sp1 activation results in overexpression of transforming growth factor-\u03b21 (TGF-\u03b21) and plasminogen activator inhibitor-1 (PAI-1), contributing to diabetic neuropathy pathogenesis.90,91 The protein kinase C (PKC) pathway is another critical player in diabetic neuropathy development.92,93 Hyperglycemia stimulates diacylglycerol formation, activating PKC, an enzyme involved in various cellular processes, including nerve function and diabetic neuropathy pathogenesis. Activated PKC initiates an intracellular signaling cascade, leading to PAI-1, NF-\u03baB, and TGF-\u03b2 overexpression.93 Additionally, PKC increases extracellular matrix component and cytokine production, enhances contractility, permeability, and vascular endothelial cell proliferation, and inhibits Na+/K\u00a0+\u00a0-ATPase activity.94 Furthermore, oxidative stress and free radical generation are significant contributors to diabetic neuropathy development through increased glycolytic processes.95,96 ROS and reactive nitrogen species (RNS) link the physiological mediators and metabolic initiators implicated in progressive nerve fiber damage, dysfunction, and loss in diabetic neuropathy.97, 98, 99, 100 Simultaneously, oxidative stress damages mitochondrial DNA, proteins, and membranes during glycolysis.\n4.2\nMitochondrial dysfunction in diabetic neuropathy",
+          "cos_sim_score": 0.16589801013469696,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

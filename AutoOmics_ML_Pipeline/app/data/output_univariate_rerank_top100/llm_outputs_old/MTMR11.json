@@ -1,0 +1,136 @@
+{
+  "probe_id": "11737388_s_at",
+  "gene_symbol": "MTMR11",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.1123388954674303,
+  "abs_fold_change": 1.3686,
+  "score": 1.365,
+  "probe_count": 1,
+  "probe_ids": "11737388_s_at",
+  "max_score": 1.365,
+  "mean_abs_fold_change": 1.3686,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T02:17:57",
+  "interpretation": "MTMR11, or Myotubularin-related protein 11, is involved in lipid metabolism and cellular signaling, particularly through its role as a dual-specific lipid phosphatase that dephosphorylates phosphatidylinositol phosphates. While there is some evidence linking MTMR11 to skeletal system abnormalities, the direct connection to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) is not well established. The retrieved evidence primarily associates MTMR11 with neurodegenerative diseases and skeletal abnormalities, but lacks specific ties to SONFH. Therefore, the biological inference suggests that while MTMR11 may play a role in cellular processes relevant to bone health, its potential as a biomarker for early detection of SONFH is weak due to insufficient direct evidence. Overall, the clinical relevance of MTMR11 as a biomarker for SONFH remains uncertain and requires further investigation.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "MTMR11's role in lipid metabolism suggests a potential, yet unproven, connection to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "MTMR11 (A4FU01). https://www.uniprot.org/uniprotkb/A4FU01",
+    "MTMR11 (A4FU01-2). https://www.uniprot.org/uniprotkb/A4FU01-2",
+    "MTMR11 (A4FU01-4). https://www.uniprot.org/uniprotkb/A4FU01-4",
+    "MTMR11 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000014914/associations",
+    "MTMR11 \u2194 Abnormality of the skeletal system. https://platform.opentargets.org/target/ENSG00000014914/associations",
+    "MTMR11 \u2194 spinal stenosis. https://platform.opentargets.org/target/ENSG00000014914/associations",
+    "MTMR11 \u2194 carpal tunnel syndrome. https://platform.opentargets.org/target/ENSG00000014914/associations",
+    "MTMR11 \u2194 Varicose veins. https://platform.opentargets.org/target/ENSG00000014914/associations",
+    "Myotubularin. https://en.wikipedia.org/wiki/Myotubularin",
+    "List of human protein-coding genes 5. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_5"
+  ],
+  "token_usage": {
+    "prompt_tokens": 2691,
+    "completion_tokens": 258,
+    "total_tokens": 2949,
+    "estimated_cost_usd": 0.000558
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::A4FU01",
+          "title": "MTMR11 (A4FU01)",
+          "url": "https://www.uniprot.org/uniprotkb/A4FU01",
+          "text": "Protein: Myotubularin-related protein 11",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::A4FU01-2",
+          "title": "MTMR11 (A4FU01-2)",
+          "url": "https://www.uniprot.org/uniprotkb/A4FU01-2",
+          "text": "Protein: Isoform 2 of Myotubularin-related protein 11",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::A4FU01-4",
+          "title": "MTMR11 (A4FU01-4)",
+          "url": "https://www.uniprot.org/uniprotkb/A4FU01-4",
+          "text": "Protein: Isoform 4 of Myotubularin-related protein 11",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000014914::EFO_0005772",
+          "title": "MTMR11 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000014914/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.451",
+          "cos_sim_score": 0.45055631837732874,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000014914::HP_0000924",
+          "title": "MTMR11 \u2194 Abnormality of the skeletal system",
+          "url": "https://platform.opentargets.org/target/ENSG00000014914/associations",
+          "text": "Disease: Abnormality of the skeletal system\nDescription: An abnormality of the skeletal system.\nAssociation score: 0.402",
+          "cos_sim_score": 0.40166490939885924,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000014914::EFO_0007490",
+          "title": "MTMR11 \u2194 spinal stenosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000014914/associations",
+          "text": "Disease: spinal stenosis\nDescription: Narrowing of the spinal canal.\nAssociation score: 0.342",
+          "cos_sim_score": 0.341580160717199,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000014914::EFO_0004143",
+          "title": "MTMR11 \u2194 carpal tunnel syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000014914/associations",
+          "text": "Disease: carpal tunnel syndrome\nDescription: Entrapment of the median nerve in the wrist that is characterized by numbness, tingling and painful movement.\nAssociation score: 0.308",
+          "cos_sim_score": 0.30832582790581975,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000014914::HP_0002619",
+          "title": "MTMR11 \u2194 Varicose veins",
+          "url": "https://platform.opentargets.org/target/ENSG00000014914/associations",
+          "text": "Disease: Varicose veins\nDescription: Enlarged and tortuous veins.\nAssociation score: 0.277",
+          "cos_sim_score": 0.2773334937079317,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Myotubularin",
+          "title": "Myotubularin",
+          "url": "https://en.wikipedia.org/wiki/Myotubularin",
+          "text": "Myotubularin domain represents a region within eukaryotic myotubularin-related proteins that is sometimes found with the GRAM domain. Myotubularin is a dual-specific lipid phosphatase that dephosphorylates phosphatidylinositol 3-phosphate and phosphatidylinositol (3,5)-bi-phosphate. Mutations in gene encoding myotubularin-related proteins have been associated with disease.\n\nHuman proteins containing this domain\nMTM1;      MTMR1;     MTMR2;     MTMR3;     MTMR4;\nMTMR6;     MTMR7;     MTMR8;     MTMR9;     MTMR10;    MTMR11;    MTMR12;    MTMR14;    SBF1;      SBF2;\n\nReferences\nExternal links\nPDOC51339 - Myotubularin phosphatase domain in PROSITE",
+          "cos_sim_score": 0.29764026403427124,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of human protein-coding genes 5",
+          "title": "List of human protein-coding genes 5",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_5",
+          "text": "== References ==",
+          "cos_sim_score": 0.08090782910585403,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

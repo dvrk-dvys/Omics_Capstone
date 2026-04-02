@@ -1,0 +1,143 @@
+{
+  "probe_id": "11717752_s_at",
+  "gene_symbol": "SEC14L1",
+  "score": 1.0,
+  "SD_TestAUC": 0.0202860206483394,
+  "abs_fold_change": 0.8329,
+  "probe_count": 1,
+  "probe_ids": "11717752_s_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.8329,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:44:01",
+  "interpretation": "SEC14L1 encodes a protein that may play a role in innate immunity by inhibiting the antiviral RIG-I signaling pathway, which is crucial for the body's response to viral infections. While there is no direct evidence linking SEC14L1 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in cellular processes such as lipid transport and potential regulation of cholinergic transporters suggests a broader role in cellular health and inflammation. The retrieved evidence primarily indicates its function in immune response and neurodegenerative diseases, which may indirectly relate to the inflammatory processes involved in SONFH. However, the lack of specific studies connecting SEC14L1 to SONFH limits the strength of this association. Therefore, while SEC14L1 shows some biological relevance, its potential as a biomarker for early detection of SONFH is weak due to insufficient direct evidence.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "SEC14L1 may be involved in cellular processes relevant to inflammation, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "SEC14L1 (Q92503). https://www.uniprot.org/uniprotkb/Q92503",
+    "SEC14L1 (Q92503-3). https://www.uniprot.org/uniprotkb/Q92503-3",
+    "SEC14L1 (Q92503-2). https://www.uniprot.org/uniprotkb/Q92503-2",
+    "SEC14L1 \u2014 SEC14L1. https://platform.opentargets.org/target/ENSG00000129657",
+    "SEC14L1 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000129657/associations",
+    "SEC14L1 \u2194 nervous system disease. https://platform.opentargets.org/target/ENSG00000129657/associations",
+    "SEC14L1 \u2194 complication. https://platform.opentargets.org/target/ENSG00000129657/associations",
+    "SEC14L1 \u2194 Herpes Zoster. https://platform.opentargets.org/target/ENSG00000129657/associations",
+    "SEC14L1. https://en.wikipedia.org/wiki/SEC14L1",
+    "CRAL-TRIO domain. https://en.wikipedia.org/wiki/CRAL-TRIO_domain",
+    "List of human protein-coding genes 7. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_7"
+  ],
+  "token_usage": {
+    "prompt_tokens": 3229,
+    "completion_tokens": 251,
+    "total_tokens": 3480,
+    "estimated_cost_usd": 0.000635
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q92503",
+          "title": "SEC14L1 (Q92503)",
+          "url": "https://www.uniprot.org/uniprotkb/Q92503",
+          "text": "Protein: SEC14-like protein 1\nFunction: May play a role in innate immunity by inhibiting the antiviral RIG-I signaling pathway. In this pathway, functions as a negative regulator of RIGI, the cytoplasmic sensor of viral nucleic acids. Prevents the interaction of RIGI with MAVS/IPS1, an important step in signal propagation (PubMed:23843640). May also regulate the SLC18A3 and SLC5A7 cholinergic transporters (PubMed:17092608)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q92503-3",
+          "title": "SEC14L1 (Q92503-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q92503-3",
+          "text": "Protein: Isoform 3 of SEC14-like protein 1",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q92503-2",
+          "title": "SEC14L1 (Q92503-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q92503-2",
+          "text": "Protein: Isoform 2 of SEC14-like protein 1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000129657::function",
+          "title": "SEC14L1 \u2014 SEC14L1",
+          "url": "https://platform.opentargets.org/target/ENSG00000129657",
+          "text": "Function: May play a role in innate immunity by inhibiting the antiviral RIG-I signaling pathway. In this pathway, functions as a negative regulator of RIGI, the cytoplasmic sensor of viral nucleic acids. Prevents the interaction of RIGI with MAVS/IPS1, an important step in signal propagation (PubMed:23843640). May also regulate the SLC18A3 and SLC5A7 cholinergic transporters (PubMed:17092608). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000129657::EFO_0005772",
+          "title": "SEC14L1 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000129657/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.536",
+          "cos_sim_score": 0.5358769322306931,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000129657::EFO_0000618",
+          "title": "SEC14L1 \u2194 nervous system disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000129657/associations",
+          "text": "Disease: nervous system disease\nDescription: a general class of medical conditions affecting the nervous system.\nAssociation score: 0.325",
+          "cos_sim_score": 0.32511691555197497,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000129657::EFO_0009518",
+          "title": "SEC14L1 \u2194 complication",
+          "url": "https://platform.opentargets.org/target/ENSG00000129657/associations",
+          "text": "Disease: complication\nDescription: Any disease or disorder that occurs during the course of, or because of, another disease, treatment, or procedure. [ NCI ]\nAssociation score: 0.317",
+          "cos_sim_score": 0.3174901866621237,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000129657::EFO_0006510",
+          "title": "SEC14L1 \u2194 Herpes Zoster",
+          "url": "https://platform.opentargets.org/target/ENSG00000129657/associations",
+          "text": "Disease: Herpes Zoster\nDescription: A common dermal and neurologic disorder caused by reactivation of the varicella-zoster virus that has remained dormant within dorsal root ganglia, often for decades, after the patient's initial exposure to the virus in the form of varicella (chickenpox). It is characterized by severe neuralgic pain along the distribution of the affected nerve and crops of clustered vesicles over the area.\nAssociation score: 0.317",
+          "cos_sim_score": 0.3174901866621237,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::SEC14L1",
+          "title": "SEC14L1",
+          "url": "https://en.wikipedia.org/wiki/SEC14L1",
+          "text": "SEC14-like protein 1 is a protein that in humans is encoded by the SEC14L1 gene.\nThe protein encoded by this gene belongs to the SEC14 cytosolic factor family. It has similarity to yeast SEC14 and to Japanese flying squid RALBP which suggests a possible role of the gene product in an intracellular transport system.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.5405100584030151,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::CRAL-TRIO domain",
+          "title": "CRAL-TRIO domain",
+          "url": "https://en.wikipedia.org/wiki/CRAL-TRIO_domain",
+          "text": "CRAL-TRIO domain is a protein structural domain that binds small lipophilic molecules.  This domain is named after cellular retinaldehyde-binding protein (CRALBP) and TRIO guanine exchange factor.\nCRALB protein carries 11-cis-retinol or 11-cis-retinaldehyde. It modulates interaction of retinoids with visual cycle enzymes. TRIO is involved in coordinating actin remodeling, which is necessary for cell migration and growth.\nOther members of the family are alpha-tocopherol transfer protein and phosphatidylinositol-transfer protein (Sec14). They transport their substrates (alpha-tocopherol and phosphatidylinositol or phosphatidylcholine, respectively)  between different intracellular membranes. Family also include a guanine nucleotide exchange factor that may function as an effector of RAC1 small G-protein.\nThe N-terminal domain of yeast ECM25 protein has been identified as containing a lipid binding CRAL-TRIO domain.\n\nStructure\nThe Sec14 protein was the first CRAL-TRIO domain for which the structure was determined. The structure contains several alpha helices as well as a beta sheet composed of 6 strands.  Strands 2,3,4 and 5 form a parallel beta sheet with strands 1 and 6 being anti-parallel. The structure also identified a hydrophobic binding pocket for lipid binding.\n\nHuman proteins containing this domain\nC20orf121; MOSPD2;    PTPN9;     RLBP1;     RLBP1L1;   RLBP1L2;   SEC14L1;   SEC14L2;\nSEC14L3;   SEC14L4;   TTPA;      NF1;\n\nReferences\nExternal links\nUMich Orientation of Proteins in Membranes families/superfamily-129 - Calculated spatial positions of CRAL-TRIO domains in membrane",
+          "cos_sim_score": 0.24147164821624756,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of human protein-coding genes 7",
+          "title": "List of human protein-coding genes 7",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_7",
+          "text": "== References ==",
+          "cos_sim_score": 0.15787841379642487,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

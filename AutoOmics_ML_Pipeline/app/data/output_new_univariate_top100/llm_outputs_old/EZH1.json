@@ -1,0 +1,159 @@
+{
+  "probe_id": "11717324_at",
+  "gene_symbol": "EZH1",
+  "score": 1.0,
+  "SD_TestAUC": 0.0811440825933579,
+  "abs_fold_change": 0.7287,
+  "probe_count": 1,
+  "probe_ids": "11717324_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.7287,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:37:58",
+  "interpretation": "EZH1 encodes a histone-lysine N-methyltransferase that is part of the Polycomb group proteins, specifically involved in the methylation of histone H3 at lysine 27 (H3K27). This modification is crucial for transcriptional repression and plays a significant role in regulating gene expression during development and differentiation. Although there is no direct evidence linking EZH1 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in epigenetic regulation suggests it may influence pathways related to bone health and cellular responses to steroid treatment. The evidence retrieved primarily supports its general biological functions rather than a specific connection to SONFH, leading to a lower confidence in its potential as a biomarker. Therefore, while EZH1 may have some relevance in the context of SONFH, its clinical utility as an early-detection biomarker remains uncertain and weakly supported.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "EZH1's role in histone methylation suggests a potential, albeit weak, connection to the epigenetic regulation of pathways involved in Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "EZH1 (Q92800). https://www.uniprot.org/uniprotkb/Q92800",
+    "EZH1 (Q92800-3). https://www.uniprot.org/uniprotkb/Q92800-3",
+    "EZH1 (Q92800-4). https://www.uniprot.org/uniprotkb/Q92800-4",
+    "EZH1 \u2014 EZH1. https://platform.opentargets.org/target/ENSG00000108799",
+    "EZH1 \u2194 Neurodevelopmental disorder. https://platform.opentargets.org/target/ENSG00000108799/associations",
+    "EZH1 \u2194 Intellectual disability. https://platform.opentargets.org/target/ENSG00000108799/associations",
+    "EZH1 \u2194 dermatitis. https://platform.opentargets.org/target/ENSG00000108799/associations",
+    "EZH1 \u2194 Eczematoid dermatitis. https://platform.opentargets.org/target/ENSG00000108799/associations",
+    "EZH1. https://en.wikipedia.org/wiki/EZH1",
+    "EZH2. https://en.wikipedia.org/wiki/EZH2",
+    "Tulmimetostat. https://en.wikipedia.org/wiki/Tulmimetostat"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5834,
+    "completion_tokens": 266,
+    "total_tokens": 6100,
+    "estimated_cost_usd": 0.001035
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q92800",
+          "title": "EZH1 (Q92800)",
+          "url": "https://www.uniprot.org/uniprotkb/Q92800",
+          "text": "Protein: Histone-lysine N-methyltransferase EZH1\nFunction: Polycomb group (PcG) protein. Catalytic subunit of the PRC2/EED-EZH1 complex, which methylates 'Lys-27' of histone H3, leading to transcriptional repression of the affected target gene. Able to mono-, di- and trimethylate 'Lys-27' of histone H3 to form H3K27me1, H3K27me2 and H3K27me3, respectively. Required for embryonic stem cell derivation and self-renewal, suggesting that it is involved in safeguarding embryonic stem cell identity. Compared to EZH2-containing complexes, it is less abundant in embryonic stem cells, has weak methyltransferase activity and plays a less critical role in forming H3K27me3, which is required for embryonic stem cell identity and proper differentiation",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q92800-3",
+          "title": "EZH1 (Q92800-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q92800-3",
+          "text": "Protein: Isoform 3 of Histone-lysine N-methyltransferase EZH1",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q92800-4",
+          "title": "EZH1 (Q92800-4)",
+          "url": "https://www.uniprot.org/uniprotkb/Q92800-4",
+          "text": "Protein: Isoform 4 of Histone-lysine N-methyltransferase EZH1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000108799::function",
+          "title": "EZH1 \u2014 EZH1",
+          "url": "https://platform.opentargets.org/target/ENSG00000108799",
+          "text": "Function: Polycomb group (PcG) protein. Catalytic subunit of the PRC2/EED-EZH1 complex, which methylates 'Lys-27' of histone H3, leading to transcriptional repression of the affected target gene. Able to mono-, di- and trimethylate 'Lys-27' of histone H3 to form H3K27me1, H3K27me2 and H3K27me3, respectively. Required for embryonic stem cell derivation and self-renewal, suggesting that it is involved in safeguarding embryonic stem cell identity. Compared to EZH2-containing complexes, it is less abundant in embryonic stem cells, has weak methyltransferase activity and plays a less critical role in forming H3K27me3, which is required for embryonic stem cell identity and proper differentiation. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000108799::EFO_0010642",
+          "title": "EZH1 \u2194 Neurodevelopmental disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000108799/associations",
+          "text": "Disease: Neurodevelopmental disorder\nDescription: A childhood disorder that has a neurological basis and manifests as a developmental disability.\nAssociation score: 0.430",
+          "cos_sim_score": 0.4296526721139111,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000108799::HP_0001249",
+          "title": "EZH1 \u2194 Intellectual disability",
+          "url": "https://platform.opentargets.org/target/ENSG00000108799/associations",
+          "text": "Disease: Intellectual disability\nDescription: The term intellectual disability or intellectual developmental disorder is used to describe significantly sub-average intellectual and adaptive functioning based on clinical assessment and as measured by individually administered, appropriately normed, standardized and validated tests of intellectual functioning and adaptive behavior, with onset during the developmental period from infancy through adolescence.\nAssociation score: 0.370",
+          "cos_sim_score": 0.36994943453938645,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000108799::MONDO_0002406",
+          "title": "EZH1 \u2194 dermatitis",
+          "url": "https://platform.opentargets.org/target/ENSG00000108799/associations",
+          "text": "Disease: dermatitis\nDescription: An inflammatory process affecting the skin. Signs include red rash, itching, and blister formation. Representative examples are contact dermatitis, atopic dermatitis, and seborrheic dermatitis.\nAssociation score: 0.165",
+          "cos_sim_score": 0.16547425493057139,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000108799::HP_0000964",
+          "title": "EZH1 \u2194 Eczematoid dermatitis",
+          "url": "https://platform.opentargets.org/target/ENSG00000108799/associations",
+          "text": "Disease: Eczematoid dermatitis\nDescription: Eczema is a form of dermatitis that is characterized by scaly, pruritic, erythematous lesions located on flexural surfaces.\nAssociation score: 0.161",
+          "cos_sim_score": 0.16060406025185844,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::EZH1",
+          "title": "EZH1",
+          "url": "https://en.wikipedia.org/wiki/EZH1",
+          "text": "Histone-lysine N-methyltransferase EZH1 is an enzyme that in humans is encoded by the EZH1 gene.\n\nFunction\nIn mice, EZH1 and EZH2 cogovern histone H3K27 trimethylation and are essential for hair follicle homeostasis and wound repair. EZH1 also complements EZH2 in maintaining stem cell identity and executing pluripotency.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.5271500945091248,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::EZH2",
+          "title": "EZH2",
+          "url": "https://en.wikipedia.org/wiki/EZH2",
+          "text": "Enhancer of zeste homolog 2 (EZH2) is a histone-lysine N-methyltransferase enzyme (EC 2.1.1.43) encoded by EZH2 gene, that participates in histone methylation and, ultimately, transcriptional repression. EZH2 catalyzes the addition of methyl groups to histone H3 at lysine 27, by using the cofactor S-adenosyl-L-methionine. Methylation activity of EZH2 facilitates heterochromatin formation thereby silences gene function. Remodeling of chromosomal heterochromatin by EZH2 is also required during cell mitosis.\nEZH2 is the functional enzymatic component of the Polycomb Repressive Complex 2 (PRC2), which is responsible for healthy embryonic development through the epigenetic maintenance of genes responsible for regulating development and differentiation. EZH2 is responsible for the methylation activity of PRC2, and the complex also contains proteins required for optimal function (EED, SUZ12, JARID2, AEBP2, RbAp46/48, and PCL).\nMutation or over-expression of EZH2 has been linked to many forms of cancer. EZH2 inhibits genes responsible for suppressing tumor development, and blocking EZH2 activity may slow tumor growth. EZH2 has been targeted for inhibition because it is upregulated in multiple cancers including, but not limited to, breast, prostate, melanoma, and bladder cancer. Mutations in the EZH2 gene are also associated with Weaver syndrome, a rare congenital disorder, and EZH2 is involved in causing neurodegenerative symptoms in the nervous system disorder, ataxia telangiectasia.\n\nFunction\nEZH2 is the catalytic subunit of the Polycomb Repressive Complex 2 (PRC2).  EZH2's catalytic activity relies on its formation of a complex with at least two other PRC2 components, SUZ12 and EED.  \n \nAs a histone methyltransferase (HMTase), EZH2's primary function is to methylate Lys-27 on histone 3 (H3K27me) by transferring a methyl group from the cofactor S-adenosyl-L-methionine (SAM). EZH2 is capable of mono-, di-, and tri-methylation of H3K27 and has been associated with a variety of biological functions, including transcriptional regulation in hematopoiesis, development, and cell differentiation.\nEZH2 has also been identified as capable of methylating non-histone proteins.\n\nTranscription repression\nEZH2, as a part of PRC2, catalyzes trimethylation of H3K27 (H3K27me3), which is a histone modification that has been characterized as part of the histone code. The histone code is the theory that chemical modifications, such as methylation, acetylation, and ubiquitination, of histone proteins play distinctive roles in epigenetic regulation of gene transcription. EZH2-mediated catalysis of H3K27me3 is associated with long term transcription repression.\nEZH2, as well as other Polycomb group proteins, are involved in establishing and maintaining gene repression through cell division. This transcriptionally repressive state is thought to be due to PRC2/EZH2-EED-mediated H3K27 methylation and subsequent recruitment of PRC1 which facilitates condensation of chromatin and formation of heterochromatin. Heterochromatin is tightly packed chromatin which limits the accessibility of transcription machinery to the underlying DNA, thereby suppressing transcription.\nDuring cell division, heterochromatin formation is required for proper chromosome segregation. PRC2/EED-EZH2 complex may also be involved in the recruitment of DNA methyltransferases (DNMTs), which results in increased DNA methylation, another epigenetic layer of transcription repression. Specific genes that have been identified as targets of EZH2-mediated transcriptional repression include HOXA9, HOXC8, MYT1, CDKN2A and retinoic acid target genes.\n\nTranscription activation\nIn cancer, EZH2 may play a role in activation of transcription, independently of PRC2. In breast cancer cells, EZH2 has been demonstrated to activate NF-\u03baB target genes, which are involved in responses to stimuli. The functional role of this activity and its mechanism are still unknown.",
+          "cos_sim_score": 0.4519452154636383,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Tulmimetostat",
+          "title": "Tulmimetostat",
+          "url": "https://en.wikipedia.org/wiki/Tulmimetostat",
+          "text": "Tulmimetostat (also known as CPI-0209 or DZR123) is an orally available, investigational antineoplastic drug being developed for the treatment of various advanced solid tumors and lymphomas that is being developed by MorphoSys.\nTulmimetostat functions as a dual inhibitor of the histone methyltransferases EZH2 and EZH1, which are key components of the polycomb repressive complex 2 (PRC2). PRC2 plays a critical role in gene silencing and is implicated in cancer progression.\n\nMechanism of action\nTulmimetostat exerts its therapeutic effect by inhibiting the activity of EZH2 and EZH1. EZH2 is the catalytic subunit of the Polycomb repressive complex 2 (PRC2), a crucial epigenetic regulator of gene expression. In numerous cancers, EZH2 is overexpressed or mutated, leading to an increase in the methylation of histone H3 on lysine 27 (H3K27). This methylation promotes gene silencing, including that of tumor suppressor genes, thereby contributing to uncontrolled cancer cell proliferation, metastasis, and resistance to established therapies.\nBy inhibiting EZH2, tulmimetostat aims to prevent this aberrant methylation, thereby altering gene expression patterns associated with cancer pathways and reducing the proliferation of EZH2-expressing cancer cells. The dual inhibition of both EZH2 and EZH1 is a design feature intended to overcome potential compensatory functions of EZH1 that might limit the efficacy of first-generation EZH2 inhibitors in some cancer types.\n\nClinical development\nTulmimetostat is currently undergoing investigation in Phase 1 and Phase 2 clinical trials for various advanced solid tumors and lymphomas.\nIt has received Fast Track Designation from the FDA for the treatment of advanced, recurrent, or metastatic endometrial cancer with ARID1A mutations, particularly in patients whose disease has progressed on frontline treatment.\nClinical trials are exploring tulmimetostat as a monotherapy and in combination with other treatments. These include combinations with enzalutamide for castration-resistant prostate cancer and with PD-1 blockade for non-small cell lung cancer.\n\nKey indications under investigation\nAdvanced solid tumors \nLymphomas (e.g., diffuse large B-cell lymphoma, T-cell lymphoma, mycosis fungoides, S\u00e9zary syndrome)\nEndometrial cancer (especially ARID1A-mutated)\nOvarian clear cell carcinoma (ARID1A-mutated)\nMesothelioma (BAP1-mutated)\nProstate cancer (androgen receptor-dependent)\nUrothelial carcinoma\nPreliminary results from clinical trials have demonstrated antitumor activity and disease stabilization in heavily pretreated patients across multiple tumor types. The safety profile has been generally consistent with the mechanism of EZH2 inhibition, with common adverse events including thrombocytopenia, diarrhea, nausea, and anemia.\n\n\n== References ==",
+          "cos_sim_score": 0.43752631545066833,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::EZH2",
+          "title": "EZH2",
+          "url": "https://en.wikipedia.org/wiki/EZH2",
+          "text": "EZH2 primarily catalyzes mono- and di-methylation of H3K27 but a clinically relevant mutation of residue tyrosine 641 to phenylalanine (Y641F) results in higher H3K27 tri-methylation activity. It is proposed that the removal of the hydroxyl group on Y641 abrogates steric hindrance and allows for accommodation of a third methyl group on the substrate lysine.\n\nClinical significance\nCancer\nEZH2 is an attractive target for anti-cancer therapy because it helps cancerous cells divide and proliferate. It is found in larger amounts than in healthy cells in a wide range of cancers including breast, prostate, bladder, uterine, and renal cancers, as well as melanoma and lymphoma. EZH2 is a gene suppressor, so when it becomes overexpressed, many tumor suppressor genes that are normally turned on, are turned off. Inhibition of EZH2 function shrinks malignant tumors in some reported cases because those tumor suppressor genes are not silenced by EZH2. EZH2 typically is not expressed in healthy adults; it is only found in actively dividing cells, like those active during fetal development. Because of this characteristic, overexpression of EZH2 can be used as a diagnostic marker of cancer and some neurodegenerative disorders. However, there are cases where it is difficult to tell whether overexpression of EZH2 is the cause of a disease, or simply a consequence. If it is only a consequence, targeting EZH2 for inhibition may not cure the disease. One example of a cancer pathway in which EZH2 plays a role is the pRB-E2F pathway. It is downstream from the pRB-E2F pathway, and signals from this pathway lead to EZH2 overexpression. Another important characteristic of EZH2 is that when EZH2 is overexpressed, it can activate genes without forming PRC2. This is an issue because it means the methylation activity of the enzyme is not mediated by complex formation. In breast cancer cells, EZH2 activates genes that promote cell proliferation and survival. It can also activate regulatory genes like c-myc and cyclin D1 by interacting with Wnt signaling factors. Importantly, the mutation of tyrosine 641 in the active SET domain to a number of different amino acids is a common feature of some B-cell lymphomas.\n\nInhibitors\nDeveloping an inhibitor of EZH2 and preventing unwanted histone methylation of tumor suppressor genes is a viable area of cancer research. EZH2 inhibitor development has focused on targeting the SET domain active site of the protein. Several inhibitors of EZH2 have been developed as of 2015, including 3-deazaneplanocin A (DZNep), EPZ005687, EI1, GSK126, and UNC1999.",
+          "cos_sim_score": 0.4358304738998413,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::EZH2",
+          "title": "EZH2",
+          "url": "https://en.wikipedia.org/wiki/EZH2",
+          "text": "Transcription activation\nIn cancer, EZH2 may play a role in activation of transcription, independently of PRC2. In breast cancer cells, EZH2 has been demonstrated to activate NF-\u03baB target genes, which are involved in responses to stimuli. The functional role of this activity and its mechanism are still unknown.\n\nDevelopment and cell differentiation\nEZH2 plays an essential role in development. In particular, it helps control transcriptional repression of genes that regulate cell differentiation. In embryonic stem cells, EZH2-mediated trimethylation of H3K27me3 in regions containing developmental genes appears to be important for maintenance of normal cell differentiation. H3K27me3 is also important in driving X-inactivation, the silencing of one X-chromosome in females during development. During X-inactivation, it is thought that EZH2 is involved in initiating heterochromatin formation by trimethylating H3K27 and that other histone methyltransferases and histone marks may be involved in maintaining the silenced state.\nFurther, EZH2 has been identified as an essential protein involved in development and differentiation of B-cells and T-cells. H3K27me3 is involved in suppressing genes that promote differentiation, thus maintaining an undifferentiated state of B- and T-cells and playing an important role in regulating hematopoiesis.\n\nRegulation of EZH2 activity\nThe activity of EZH2 is regulated by the post-translational phosphorylation of threonine and serine residues on EZH2. Specifically, phosphorylation of T350 has been linked to an increase in EZH2 activity while phosphorylation of T492 and S21 have been linked to a decrease in EZH2 activity. Phosphorylation of T492 has been suggested to disrupt contacts between human EZH2 and its binding partners in the PRC2 complex, thus hindering its catalytic activity.\nIn addition to phosphorylation, it has also been shown that PRC2/EZH2-EED activity is antagonized by transcription-activating histone marks, such as acetylation of H3K27 (H3K27ac) and methylation of H3K36 (H3K36me).\nEZH2 expression is regulated by estrogen signaling in human normal breast epithelium and human breast cancers.\n\nEnzymatic activity\nEZH2 function is highly dependent upon its recruitment by the PRC2 complex. In particular, WD40-repeat protein embryonic ectoderm development (EED) and zinc finger protein suppressor of zeste 12 (SUZ12) are needed to stabilize the interaction of EZH2 with its histone substrate Recently, two isoforms of EZH2 generated from alternative splicing have been identified in humans: EZH2\u03b1 and EZH2\u03b2. Both isoforms contain elements that have been identified as important for EZH2 function including the nuclear localization signal, the EED and SUZ12 binding sites as well as the conserved SET domain. Most studies have thus far focused on the longer isoform EZH2\u03b1, but EZH2\u03b2, which lacks exons 4 and 8, has been shown to be active. Furthermore, PRC2/EZH2\u03b2 complexes act on distinct genes from that of its PRC2/EZH2\u03b1 counterpart suggesting that each isoform may act to regulate a specific subset of genes. Additional evidence suggests that EZH2 may also be capable of lysine methylation independent of association with PRC2, when EZH2 is highly upregulated.",
+          "cos_sim_score": 0.42838066816329956,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

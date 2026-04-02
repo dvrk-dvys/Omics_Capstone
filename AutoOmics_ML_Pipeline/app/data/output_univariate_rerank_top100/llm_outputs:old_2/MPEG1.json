@@ -1,0 +1,200 @@
+{
+  "probe_id": "11721346_a_at",
+  "gene_symbol": "MPEG1",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.1325077319999875,
+  "abs_fold_change": 1.3124,
+  "score": 1.3101,
+  "probe_count": 1,
+  "probe_ids": "11721346_a_at",
+  "max_score": 1.3101,
+  "mean_abs_fold_change": 1.3124,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T19:31:35",
+  "interpretation": "MPEG1 encodes a pore-forming protein that plays a significant role in the immune response, particularly in the activation of macrophages and dendritic cells. This gene is involved in the innate immune response, which may be relevant in the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), as immune dysregulation is a known factor in the pathogenesis of osteonecrosis. However, the evidence linking MPEG1 directly to SONFH is limited, with no specific studies demonstrating its role in this condition. Therefore, while MPEG1 may have a biological connection to immune processes that could influence bone health, its potential as a biomarker for early detection of SONFH remains weak and speculative. Further research is needed to clarify its role in this specific disease context.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "MPEG1 may be involved in immune responses that could impact the development of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "MPEG1 (Q2M385). https://www.uniprot.org/uniprotkb/Q2M385",
+    "MPEG1 \u2014 MPEG1. https://platform.opentargets.org/target/ENSG00000197629",
+    "MPEG1 \u2194 immunodeficiency 77. https://platform.opentargets.org/target/ENSG00000197629/associations",
+    "MPEG1 \u2194 primary ciliary dyskinesia. https://platform.opentargets.org/target/ENSG00000197629/associations",
+    "MPEG1 \u2194 premature birth. https://platform.opentargets.org/target/ENSG00000197629/associations",
+    "MPEG1 \u2194 complex regional pain syndrome. https://platform.opentargets.org/target/ENSG00000197629/associations",
+    "MPEG1 \u2014 macrophage expressed 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TP53 \u2014 tumor protein p53 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TNS2 \u2014 tensin 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "RIN3 \u2014 Ras and Rab interactor 3 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Single-Cell Landscape of the Cochlea Revealed Cell-Type-Specific Diversification in Hipposideros armiger Based on PacBio Long-Read Sequencing (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11853400/",
+    "Identification of key biomarkers of the glomerulus in focal segmental glomerulosclerosis and their relationship with immune cell infiltration based on WGCNA and the LASSO algorithm (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC10132234/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9363,
+    "completion_tokens": 293,
+    "total_tokens": 9656,
+    "estimated_cost_usd": 0.00158
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q2M385",
+          "title": "MPEG1 (Q2M385)",
+          "url": "https://www.uniprot.org/uniprotkb/Q2M385",
+          "text": "Protein: Macrophage-expressed gene 1 protein\nFunction: Pore-forming protein involved in both innate and adaptive immunity (PubMed:23753625, PubMed:26402460, PubMed:28422754, PubMed:30609079, PubMed:31537793, PubMed:33224153). Plays a central role in antigen cross-presentation in dendritic cells by forming a pore in antigen-containing compartments, thereby promoting delivery of antigens for cross-presentation (By similarity). Also involved in innate immune response following bacterial infection; shows antibacterial activity against a wide spectrum of Gram-positive, Gram-negative and acid-fast bacteria (PubMed:23753625, PubMed:26402460, PubMed:28422754, PubMed:30609079, PubMed:33224153). Reduces the viability of the intracytosolic pathogen L.monocytogenes by inhibiting acidification of the phagocytic vacuole of host cells which restricts bacterial translocation from the vacuole to the cytosol (By similarity). Required for the antibacterial activity of reactive oxygen species and nitric oxide (By similarity) Pore-forming protein that plays a central role in antigen cross-presentation in dendritic cells by mediating delivery of antigens for cross-presentation (By similarity). Dendritic cells bridge innate and adaptive immunity by capturing exogenous antigens on MHC class-I molecules and presenting them to naive CD8(+) T-cells (By similarity). Acts by forming a pore in antigen-containing compartments, promoting the release of antigens into the cytosol, enabling generation of MHCI:peptide complexes and T-cell priming (By similarity)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000197629::function",
+          "title": "MPEG1 \u2014 MPEG1",
+          "url": "https://platform.opentargets.org/target/ENSG00000197629",
+          "text": "Function: Pore-forming protein involved in both innate and adaptive immunity (PubMed:23753625, PubMed:26402460, PubMed:28422754, PubMed:30609079, PubMed:31537793, PubMed:33224153). Plays a central role in antigen cross-presentation in dendritic cells by forming a pore in antigen-containing compartments, thereby promoting delivery of antigens for cross-presentation (By similarity). Also involved in innate immune response following bacterial infection; shows antibacterial activity against a wide spectrum of Gram-positive, Gram- negative and acid-fast bacteria (PubMed:23753625, PubMed:26402460, PubMed:28422754, PubMed:30609079, PubMed:33224153). Reduces the viability of the intracytosolic pathogen L.monocytogenes by inhibiting acidification of the phagocytic vacuole of host cells which restricts bacterial translocation from the vacuole to the cytosol (By similarity). Required for the antibacterial activity of reactive oxygen species and nitric oxide (By similarity).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197629::MONDO_0030973",
+          "title": "MPEG1 \u2194 immunodeficiency 77",
+          "url": "https://platform.opentargets.org/target/ENSG00000197629/associations",
+          "text": "Disease: immunodeficiency 77\nAssociation score: 0.704",
+          "cos_sim_score": 0.7043238859467001,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197629::MONDO_0016575",
+          "title": "MPEG1 \u2194 primary ciliary dyskinesia",
+          "url": "https://platform.opentargets.org/target/ENSG00000197629/associations",
+          "text": "Disease: primary ciliary dyskinesia\nDescription: A rare, genetically heterogeneous, primarily respiratory disorder characterized by chronic upper and lower respiratory tract disease. Approximately half of PCD patients have an organ laterality defect (situs inversus totalis or situs ambiguus/heterotaxy).\nAssociation score: 0.333",
+          "cos_sim_score": 0.3326218692162316,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197629::EFO_0003917",
+          "title": "MPEG1 \u2194 premature birth",
+          "url": "https://platform.opentargets.org/target/ENSG00000197629/associations",
+          "text": "Disease: premature birth\nDescription: CHILDBIRTH before 37 weeks of PREGNANCY (259 days from the first day of the mother's last menstrual period, or 245 days after FERTILIZATION).\nAssociation score: 0.297",
+          "cos_sim_score": 0.2967720627260698,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197629::EFO_1001998",
+          "title": "MPEG1 \u2194 complex regional pain syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000197629/associations",
+          "text": "Disease: complex regional pain syndrome\nDescription: Complex regional pain syndrome (CRPS) is a rare neurologic disease painful progressive condition that corresponds to a group of disorders characterized by a disproportionate spontaneous or stimulus-induced pain, accompanied by a variably mixed myriad of autonomic and motor disorders including symptoms such as swelling, allodynia, skin blood supply and trophic disturbances. CRPS most often affects one of the arms, legs, hands, or feet and usually occurs after an injury or trauma to that limb.\nAssociation score: 0.219",
+          "cos_sim_score": 0.21907738523631262,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "MPEG1 \u2014 macrophage expressed 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MPEG1\nGene name: macrophage expressed 1\nAliases / synonyms: IMD77, MPG1, MPS-1, MPS1, Mpg-1, P-2, P2\nOrganism: Homo sapiens\nGene summary: Enables wide pore channel activity. Involved in defense response to Gram-negative bacterium and defense response to Gram-positive bacterium. Located in cytoplasmic vesicle. Is active in phagolysosome membrane. Implicated in primary immunodeficiency disease. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MPEG1",
+          "aliases": "IMD77, MPG1, MPS-1, MPS1, Mpg-1, P-2, P2",
+          "gene_description": "macrophage expressed 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TP53 \u2014 tumor protein p53",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TP53\nGene name: tumor protein p53\nAliases / synonyms: BCC7, BMFS5, LFS1, P53, TRP53\nOrganism: Homo sapiens\nGene summary: This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TP53",
+          "aliases": "BCC7, BMFS5, LFS1, P53, TRP53",
+          "gene_description": "tumor protein p53"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TNS2 \u2014 tensin 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TNS2\nGene name: tensin 2\nAliases / synonyms: C1-TEN, C1TEN, TENC1\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene belongs to the tensin family. Tensin is a focal adhesion molecule that binds to actin filaments and participates in signaling pathways. This protein plays a role in regulating cell migration. Alternative splicing occurs at this locus and three transcript variants encoding three distinct isoforms have been identified. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TNS2",
+          "aliases": "C1-TEN, C1TEN, TENC1",
+          "gene_description": "tensin 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "RIN3 \u2014 Ras and Rab interactor 3",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RIN3\nGene name: Ras and Rab interactor 3\nOrganism: Homo sapiens\nGene summary: Summary: This protein encoded by this gene is a member of the RIN family of Ras interaction-interference proteins, which are binding partners to the RAB5 small GTPases. The protein functions as a guanine nucleotide exchange for RAB5B and RAB31. Alternative splicing results in multiple transcript variants. [provided by RefSeq, Feb 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RIN3",
+          "aliases": "",
+          "gene_description": "Ras and Rab interactor 3"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::11853400",
+          "title": "Single-Cell Landscape of the Cochlea Revealed Cell-Type-Specific Diversification in Hipposideros armiger Based on PacBio Long-Read Sequencing",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11853400/",
+          "text": "The KEGG pathway network analysis for M1\u2013M5 showed that the PI3K-Akt signaling pathway exhibited the highest connectivity among all pathways (Figure 6C; Table S6). Numerous transcription factors (TFs) control osteoblasts differentiation. To identify TFs that may regulate the differentiation of cochlear osteoblasts, genes with the top 500 weight values and identified osteoblast TFs were selected to construct a regulatory network, illustrating their relationship (Figure S5A). Among these, we identified a crucial transcription factor, Runx2, which may play a significant role in the development of bat cochlear osteoblasts. Runt-related transcription factor 2 (Runx2) is expressed during the late stages of bone development and in chondroprogenitor cells [88]. It is one of the earliest markers of osteoblast differentiation [89]. As a key regulator of osteoblast formation, Runx2 is involved in multiple steps of mammalian skeletal development. Among the genes regulated downstream of Runx2 (Figure 6D), many are associated with osteoblast development, such as colony stimulating factor 1 (CSF1). CSF1 is an osteoblast-derived factor that directly promotes osteoclast development and serves as a crucial regulator of bone resorption [78,87]. It may also play a key role in the maturation of osteoblasts and chondrocytes.\n3.6. Localization of Deafness Genes and Positively Selected Auditory Genes in the Cochlea of Bats\nHearing loss (HL) affects approximately 1\u20133 out of every 1000 infants globally, severely impairing children\u2019s communication and cognitive development. Hereditary factors account for 60\u201380% of these cases [90,91]. Hereditary hearing loss (HHL) is categorized into syndromic hearing loss (SHL) and non-syndromic hearing loss (NSHL) based on whether it is accompanied by symptoms in organs other than the auditory system. NSHL can be further subdivided by mode of inheritance: autosomal dominant deafness (DFNA), autosomal recessive deafness (DFNB), X chromosome linked, and mitochondrial [92]. HHL is the most common disabling sensorineural disease, with more than half of the affected patients resulting from genetic mutations and exhibiting significant genetic heterogeneity. To date, 153 genes have been identified as associated with NSHL (https://hereditaryhearingloss.org/, accessed on 6 May 2024), and approximately 300 genes have been linked to syndromic forms [42,93].\nThe retrieved deafness genes were mapped onto the single-cell atlas of cochlea in H. armiger, and detailed classification was performed according to cell type and deafness gene categories (Figure 7A). The majority of genes associated with HL were localized to HCs and SCs in the sensory epithelium, followed by SGN and SV cells. A total of 49 HL genes were identified, including 38 HHL genes, 32 NSHL genes (11 DFNA and 21 DFNB), 6 SHL genes, 2 DFNA/DFNB genes, 2 DFNB/SHL genes, and 1 DFNA/DFNB/SHL gene. Additionally, six NHL genes were identified, comprising three age-related hearing loss (ARHL), two cisplatin-related hearing loss (CRHL), and one noise-induced hearing loss (NIHL). Our analyses indicate that most of the genes mapped to bat cochlea are HHL genes, which are significant etiological factors in human hearing loss. The localization and expression of these genes in the bat cochlea may provide valuable insights for future studies on HL.\nBy integrating the positively selected and key hearing genes (62 genes) identified in recent years and mapping them onto the cochlea atlas of H. armiger (Figure 7B), we found that most of these genes are localized in HCs, SCs, and SGN cells. This suggests that HCs and SCs, due to their critical roles in auditory perception, are more susceptible to and prone to genetic mutations compared to other cell types within the cochlea. Notably, compared to humans, deafness genes and positively selected high-frequency hearing genes are also localized in SGN cells within the bat cochlea. These indicate that genetic factors may contribute to the adaptive changes in high-frequency hearing observed in bats.\n4. Discussion",
+          "cos_sim_score": 0.3421284556388855,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10132234",
+          "title": "Identification of key biomarkers of the glomerulus in focal segmental glomerulosclerosis and their relationship with immune cell infiltration based on WGCNA and the LASSO algorithm",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10132234/",
+          "text": "1.\nIntroduction\nNephrotic syndrome (NS) is a manifestation of glomerular disease that is characterized by severe albuminuria with hypoproteinemia and edema or hyperlipidemia. The first-line drug for the clinical treatment of NS is steroid hormones, so NS can be divided into steroid-sensitive, steroid-dependent, and steroid-resistant types according to the response to intensive steroid therapy. Most steroid-resistant NS (SRNS) patients do not have a specific therapeutic strategy and are prone to end-stage renal disease. In these patients, most pathological manifestations are focal segmental glomerulosclerosis (FSGS). The pathological characteristics of FSGS are mainly podocyte hypoplasia, podocyte death, glomerular basement membrane exposure, capillary collapse, etc. [1]. FSGS is divided into primary and secondary FSGS. In primary FSGS, glomerular sclerosis is related to podocyte abnormalities, and most of the podocytes are directly damaged. Recently, studies have shown that primary FSGS is associated with causative circulating permeable factors (soluble urokinase plasminogen activator receptor (suPAR)) [2,3]. However, in secondary FSGS, the causes of podocyte damage are mostly indirect, such as obesity, reduced kidney mass, drug toxicity, viral infection, and other secondary factors [4]. FSGS can occur in a variety of populations. The incidence of FSGS in children and adults with NS is 7\u201310% and 20\u201330%, respectively [5]. Due to immune alterations in a proinflammatory or profibrotic environment, some patients with pathological features of FSGS do not respond clinically to immunotherapy, ultimately leading to end-stage renal disease [6]. It is crucial to research the connection between the infiltration of immune cells and FSGS lesions. There are great limitations in the diagnostic methods of FSGS. A deeper exploration of the core markers linked to FSGS and the connection to the infiltration of immune cells may contribute to the development of effective diagnostic and therapeutic methods.\nCoexpression analysis is a powerful technique used to construct scale-free gene coexpression networks. Weighted gene coexpression network analysis (WGCNA) is a systems biology technique used to describe the correlation patterns of genes in microarray specimens [7]. WGCNA does not find abnormally expressed gene features. It can assign highly correlated genes to the same coexpression module to identify modules related to a clinical phenotype and more effectively identify diagnostic and therapeutic markers [8]. Least absolute shrinkage and selection operator (LASSO) has been used to construct Cox proportional hazards regression models for diagnosis and prognosis based on transcriptome profiles [9].\nZhu et\u00a0al. [10] used comprehensive bioinformatics methods to reveal the pathogenesis of FSGS, but WGCNA and immune cells were not involved. Therefore, this paper further identified the potential key biomarkers of FSGS and revealed its pathogenesis from these two aspects.\nWe used microarray chip data from glomerular samples obtained from FSGS patients and healthy control individuals. Subsequently, WGCNA and LASSO were used to determine the key biomarkers involved in FSGS glomeruli. To understand the functions of key biomarkers more comprehensively and speculate on their potential mechanisms of action, we first predicted their transcription factors. The correlation between key biomarkers and immune cell infiltration was analyzed.\nIn our study, we validated key biomarkers associated with FSGS glomeruli using WGCNA and LASSO using microarray data of mRNA from FSGS patients and healthy donor glomeruli samples. We predict transcription factors for key biomarkers. Subsequently, the association between key biomarkers and immune cell infiltration was analyzed. The findings may provide unique insights for expanding diagnostic and therapeutic approaches for FSGS.\n2.\nMaterials & methods\n2.1.\nData collection\nWe collected the data of GSE200828 and GSE108109 with the help of the GEO (https://www.ncbi.nlm.nih.gov/geo/) database. We chose seventy-three samples, 61 glomerulus samples for the FSGS group and 12 samples for the healthy control group (Table 1). The sequencing platform was GPL19983. The external validation dataset, GSE129973, included 40 samples, 20 FSGS glomerular samples and 20 control samples. GPL17586 was used as the sequencing platform.\nTable 1.\nSummary of the included microarray sets.\n2.2.\nSelection of differentially expressed genes (DEGs)",
+          "cos_sim_score": 0.3192272186279297,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10132234",
+          "title": "Identification of key biomarkers of the glomerulus in focal segmental glomerulosclerosis and their relationship with immune cell infiltration based on WGCNA and the LASSO algorithm",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10132234/",
+          "text": "Studies have indicated that the dysfunction of transcription factors is greatly attributable to the pathogenesis or disease progression of FSGS [38,39]. To elucidate the mechanism of action of the two key biomarkers, we identified 18 transcription factors that may be associated with them. Subsequently, the differential expression of these 18 transcription factors between the control and glomerular FSGS groups was observed in our study, and 9 transcription factors (SMAD3, SIX5, POLR2A, RUNX3, SMC3, EGR1, TP53, JUND, and MAX) were obtained. Among them, TP53 and POLR2A had the greatest difference (p\u2009<\u20090.001). The biological process (BP) GO enrichment analysis was also performed, and the results suggested that it was closely related to the transcriptional regulation of pri-miRNA by RNA polymerase II, the development of osteoblasts, and T-cell activation. The involved transcription factors included TP53, Smad3, Runx3, Jund and EGR1. Through advances in cryo-electron microscopy and software analyses, the functional domain of P53 was found to directly regulate the DNA-binding activity of RNA polymerase II, thereby mediating transcription [40]. Wu J et\u00a0al. [41] demonstrated through clinical studies on FSGS patients and in vitro and in vivo experiments that miR-30s protected podocytes by targeting NOTCH1 and P53, and the downregulation of miR-30s led to enhanced signal transduction of NOTCH1 and P53, leading to podocyte damage. Clinical studies have shown that TGF-\u03b21, TSP-1 and TGF-Betaiir protein and mRNA expression levels, as well as phosphorylated Smad2/Smad3 levels, are significantly elevated in FSGS cases [42]. Su Zeyu et\u00a0al. [43] provided new insights into the pivotal role of CLEC14A in maintaining podocyte function and suppressing NF-\u03baB signaling and early growth response protein 1 (EGR1) signaling. These findings indicate that CLEC14A may be an innovative therapeutic target for FSGS. In conclusion, the transcription factors TP53, Smad3 and EGR1, which are related to key biomarkers, are strongly associated with the occurrence and development of FSGS. The above results are consistent with the enrichment results in this study. The roles of Runx3 and Jund in the mechanisms underlying FSGS need further study. Interestingly, T-cell activation was indicated in the BP enrichment analysis of the key biomarker transcription factors, suggesting that the key biomarkers may be closely related to T-cell activation. This result provides an important reference for the subsequent infiltration of immune cells.\nGSEA enrichment analysis showed that CD4+ T cells ranked highly, followed by B cells. B cells can be modulated by CD4+ T cells and other factors, such as cytokines and TLR ligands [44]. CD4+ T cells and B cells are mostly related to the development of FSGS [45,46]. These results of studies are consistent with our results. These findings highlight the importance of adaptive immune cells in FSGS.\nTo determine the effects of immune cell infiltration on FSGS, we conducted a comprehensive assessment of FSGS immune infiltration using ssGSEA. The number of type 1\u2009T helper cells, MDSCs, monocytes, natural killer cells, natural killer T cells, and T follicular helper cells were higher in FSGS samples than in control samples. Clinical studies have suggested that Th1 cytokines, especially IL-12, IL-2 and GM-CSF, may be involved in the pathology and progression of FSGS [47]. Limin Li et\u00a0al. [48] demonstrated that glucocorticoid treatment ameliorates FSGS by expanding functional MDSCs [49]. A study demonstrated that pro-Th1 iNKT agonists can regulate a complex network to maintain podocyte physiology, providing a new approach for FSGS management [50]. The analysis of the associations between immune cells and the two key biomarkers showed activated CD4+ T cells, regulatory T cells, type 2\u2009T helper cells, activated dendritic cells, T follicular helper cells, memory B cells and gamma delta T cells were associated with the two key biomarkers. Moreover, studies have shown that TGFB1 and NOTCH1 are associated with T cells [51,52]. Additionally, considering the results of the functional enrichment analysis of the transcription factors of the key biomarkers, this study suggested that T-cell infiltration (adaptive immune response) was highly related to glomerular FSGS lesions.",
+          "cos_sim_score": 0.252299427986145,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10132234",
+          "title": "Identification of key biomarkers of the glomerulus in focal segmental glomerulosclerosis and their relationship with immune cell infiltration based on WGCNA and the LASSO algorithm",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10132234/",
+          "text": "Figure 12.\nAnalysis of immune-related interactions in the glomerulus of focal segmental glomerulosclerosis. (a) Heatmap. (b) Violin plot. (c) The link between two key biomarkers and immune cell infiltration.\nTable 5.\nInfiltration of 28 immune cells.\np Value < 0.05\n4.\nDiscussion\nFSGS is a clinicopathologic disorder that is characterized by segmental and localized glomerular injury, macroalbuminuria, nephrotic syndrome (NS), and primary resistance to hormonal therapy [29]. The incidence of FSGS is closely related to the injury and loss of podocytes [30], and its production and development are strongly linked to the immune response [31]. Due to limited diagnostic techniques and therapeutic methods, clinical cure rates are generally lower, and the prognosis is poorer. Therefore, there is a need to understand the underlying mechanisms of FSGS. In particular, the study of infiltrating immune cells in glomerular tissue are needed for the identification of new differential diagnostic markers for the diagnosis and treatment of FSGS.\nIn this study, we downloaded two gene chips, GSE108109 and GSE200828, from the GEO dataset for a series of bioinformatics analyses. First, 1474 DEGs were obtained, of which 574 were upregulated and 900 were downregulated. A PPI network for the DEGs was generated using the MCODE plugin of Cytoscape software, and subsequently, five core modules, including 122 core genes, were obtained. GO and KEGG functional analyses of the 122 core genes suggested that the expression changes of these DEGs affected signal transduction pathways related to inflammation and the immune response, such as the MAPK signaling pathway and cytokine-mediated signaling pathway. Additionally, inflammation was also one of the more common pathways. For example, Hongtian Wang [32] et\u00a0al. demonstrated through animal and clinical studies that fibrinogen is associated with podocyte injury through the TLR4-p38 MAPK-NF-\u03baB p65 pathway and is associated with disease activity in FSGS patients. Recent clinical studies suggested that inhibition of p38 MAPK with losmapimod could not reduce albuminuria by \u226550% in FSGS patients. However, it has been suggested that p38 MAPK inhibition may have strong therapeutic potential for FSGS patients in the future [33]. Interleukin-1\u03b2, tumor necrosis factor-\u03b1 (TNF-\u03b1) and transforming growth factor-\u03b21 (TGF-\u03b21) have become important factors in the occurrence and development of FSGS [6]. These results are in accordance with the results from the functional enrichment analysis in our study. The enrichment results may be associated with chronic renal disease linked with albuminuria and progressive glomerular injury.\nTo better understand the underlying mechanisms of FSGS, candidate biomarkers for FSGS were identified using WGCNA in this study. Using WGCNA, we obtained nine modules, of which the turquoise module (138 genes) was most highly associated with glomerular FSGS. We intercrossed the genes of the five modules of MCODE with those of the WGCNA turquoise module to obtain 11 hub genes (FURIN, CCND1, TGFB1, RELA, NES, ENG, DLL4, SNAI2, FLT4, CDH5, and NOTCH1), followed by four key genes (TGFB1, ENG, SNAI2, and NOTCH1) obtained by the lasso algorithm. Two key biomarkers, TGFB1 and NOTCH1, were finally obtained by box plot and ROC curve verification of the external dataset GSE129973.",
+          "cos_sim_score": 0.18570023775100708,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11853400",
+          "title": "Single-Cell Landscape of the Cochlea Revealed Cell-Type-Specific Diversification in Hipposideros armiger Based on PacBio Long-Read Sequencing",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11853400/",
+          "text": "Studies have shown that SCs maintain a certain degree of plasticity, allowing them to convert into hair cell-like cells [130,131,132]. The mechanisms underlying this regenerative capability have begun to be elucidated [133]. Compared to organoids derived from older mouse cochleae (postnatal day 5), those from younger cochleae (postnatal day 2) form significantly more HCs [134,135]. The calcium signaling pathway is a key pathway enriched with differential genes involved in various differentiation fates. The dynamic balance of calcium between auditory HCs and the fluid they bathe in enables us to hear our first sound. Our interpretation and response to this sound requires rapid calcium flux through neuronal voltage-sensitive calcium channels [136]. Calcium-dependent action potentials have been shown to occur spontaneously in immature IHCs [137,138] but not in OHCs [139,140]. In the mammalian cochlea, immunohistochemistry and physiology indicate that IHCs contain submillimolar concentrations of Ca2+ binding sites. Surprisingly, the primary function of OHCs is mechanical amplification, with little role in sound encoding. They contain higher concentrations of Ca2+ buffers [141], which may play a crucial role in the stereocilia Ca2+ signaling and amplification processes in these cells [142]. Therefore, we propose that calcium signaling pathway may be one of the reasons for the different differentiation trajectories of SCs. The differentiation relationship and potential mechanisms between SCs and HCs in the bat cochlea could provide valuable references for future studies on hair cell regeneration.\n4.4. Origin and Differentiation of Osteoblasts in Bat Cochlea\nMCs are essential for the normal development and hearing of the cochlea [143,144,145]. MCs can terminally differentiate into various cell types, including specialized tympanic border cells, fibrocytes of the lateral wall and spiral limbus, basal cells of the stria vascularis, and modiolar osteoblasts [146]. The pseudotime trajectory indicates differentiation relationships from MCs to OBs and FCs. Differential fate genes were clustered into five modules based on their expression profiles, primarily involved in biological processes such as extracellular structure organization, neuron projection guidance, and extracellular matrix assembly. The PI3K-Akt signaling pathway and TGF-beta signaling pathway are the primary pathways enriched with differential fate genes generated during differentiation. Both pathways are widely recognized for their functions in osteoblast differentiation and bone formation, which are critical in mammalian skeletal development [147,148,149]. Bone homeostasis is maintained through a delicate balance between osteoblast-mediated bone formation and osteoclast-mediated bone resorption [78]. Relevant studies have found that positively selected genes in the echolocating bat cochlea are significantly enriched for processes related to ossification and the osteoclast differentiation pathway. Combined with the key pathways identified in this study, these findings indicate that both bone formation and osteoblast differentiation, critical for bone structure and function, have undergone adaptive changes in the echolocating bat cochlea [46].\nMoreover, this study discovered a TF, Runx2, which may participate in the induction of osteoblast differentiation in the bat cochlea. Runx2 is likely to regulate the potential and direction of early differentiation of bone marrow mesenchymal stem cells, thus influencing osteogenic differentiation. Runx2 is not only a critical TF that regulates the initial stage of mesenchymal cell differentiation into osteoblasts and a specific terminal differentiation product; it also inhibits the maturation and proliferation of osteoblasts, preventing their further differentiation into osteocytes [150,151]. By upregulating the expression of PI3K subunits and Akt, Runx2 enhances its DNA-binding ability in immature MCs, immature OBs, and prechondrocytes [152,153]. Among the genes regulated downstream of Runx2, many are associated with osteoblast development. For instance, Runx2 and CSF1 are marker genes that aid in identifying OBs and are key regulators of osteogenesis and bone resorption. CSF1 has been found to be under positively selected in echolocating bats [46]. In brief, MCs in the bat cochlea possess the potency to differentiate into OBs and FCs. Genes and TFs related to different differentiation fates have undergone adaptive changes in mammals with high-frequency hearing.\n4.5. New Perspective on Gene Targeted Therapy for Deafness",
+          "cos_sim_score": 0.18021981418132782,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

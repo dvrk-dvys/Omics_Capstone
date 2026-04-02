@@ -1,0 +1,151 @@
+{
+  "probe_id": "11750769_s_at",
+  "gene_symbol": "CCR2",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.1729276671100555,
+  "abs_fold_change": 1.349,
+  "score": 1.3459,
+  "probe_count": 1,
+  "probe_ids": "11750769_s_at",
+  "max_score": 1.3459,
+  "mean_abs_fold_change": 1.349,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T02:19:42",
+  "interpretation": "CCR2 (C-C chemokine receptor type 2) is a receptor that primarily binds to chemokines such as CCL2, which plays a crucial role in mediating the migration of monocytes and macrophages to sites of inflammation. This function is particularly relevant in the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), where immune cell infiltration and inflammatory responses are implicated in the disease's pathogenesis. The retrieved evidence indicates that CCR2 is among the hub genes identified in the study of SONFH, suggesting its involvement in the immune response associated with this condition. However, while the evidence supports a connection between CCR2 and SONFH, it is primarily indirect, relying on its role in immune cell dynamics rather than direct disease-specific studies. Therefore, while CCR2 shows potential as a biomarker for SONFH, its clinical utility may be limited without further validation. Overall, CCR2's involvement in immune modulation and its identification as a hub gene in SONFH-related studies underscore its relevance as a candidate biomarker for early detection of the disease.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 2",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "CCR2 is implicated in the immune response associated with Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), making it a candidate biomarker for early detection.",
+  "citations": [
+    "CCR2 (P41597). https://www.uniprot.org/uniprotkb/P41597",
+    "CCR2 (P41597-2). https://www.uniprot.org/uniprotkb/P41597-2",
+    "CCR2 \u2014 CCR2. https://platform.opentargets.org/target/ENSG00000121807",
+    "CCR2 \u2194 cystic disease of lung. https://platform.opentargets.org/target/ENSG00000121807/associations",
+    "CCR2 \u2194 HIV-1 infection. https://platform.opentargets.org/target/ENSG00000121807/associations",
+    "CCR2 \u2194 COVID-19. https://platform.opentargets.org/target/ENSG00000121807/associations",
+    "CCR2 \u2194 celiac disease. https://platform.opentargets.org/target/ENSG00000121807/associations",
+    "IRF8 and its related molecules as potential diagnostic biomarkers or therapeutic candidates and immune cell infiltration characteristics in steroid-induced osteonecrosis of the femoral head. (2023). https://pubmed.ncbi.nlm.nih.gov/36627660/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5113,
+    "completion_tokens": 297,
+    "total_tokens": 5410,
+    "estimated_cost_usd": 0.000945
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P41597",
+          "title": "CCR2 (P41597)",
+          "url": "https://www.uniprot.org/uniprotkb/P41597",
+          "text": "Protein: C-C chemokine receptor type 2\nFunction: Key functional receptor for CCL2 but can also bind CCL7, and CCL12 (PubMed:23408426, PubMed:38157855, PubMed:8048929, PubMed:8146186). Also transduces signaling mediated by CCL13 (PubMed:38157855). Its binding with CCL2 on monocytes and macrophages mediates chemotaxis and migration induction through the activation of the PI3K cascade, the small G protein Rac and lamellipodium protrusion (PubMed:38157855). Also acts as a receptor for the beta-defensin DEFB106A/DEFB106B (PubMed:23938203). Regulates the expression of T-cell inflammatory cytokines and T-cell differentiation, promoting the differentiation of T-cells into T-helper 17 cells (Th17) during inflammation (By similarity). Facilitates the export of mature thymocytes by enhancing directional movement of thymocytes to sphingosine-1-phosphate stimulation and up-regulation of S1P1R expression; signals through the JAK-STAT pathway to regulate FOXO1 activity leading to an increased expression of S1P1R (By similarity). Plays an important role in mediating peripheral nerve injury-induced neuropathic pain (By similarity). Increases NMDA-mediated synaptic transmission in both dopamine D1 and D2 receptor-containing neurons, which may be caused by MAPK/ERK-dependent phosphorylation of GRIN2B/NMDAR2B (By similarity). Mediates the recruitment of macrophages and monocytes to the injury site following brain injury (By similarity) (Microbial infection) Alternative coreceptor with CD4 for HIV-1 infection",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P41597-2",
+          "title": "CCR2 (P41597-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P41597-2",
+          "text": "Protein: Isoform B of C-C chemokine receptor type 2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000121807::function",
+          "title": "CCR2 \u2014 CCR2",
+          "url": "https://platform.opentargets.org/target/ENSG00000121807",
+          "text": "Function: Key functional receptor for CCL2 but can also bind CCL7, and CCL12 (PubMed:23408426, PubMed:38157855, PubMed:8048929, PubMed:8146186). Also transduces signaling mediated by CCL13 (PubMed:38157855). Its binding with CCL2 on monocytes and macrophages mediates chemotaxis and migration induction through the activation of the PI3K cascade, the small G protein Rac and lamellipodium protrusion (PubMed:38157855). Also acts as a receptor for the beta-defensin DEFB106A/DEFB106B (PubMed:23938203). Regulates the expression of T-cell inflammatory cytokines and T-cell differentiation, promoting the differentiation of T-cells into T-helper 17 cells (Th17) during inflammation (By similarity). Facilitates the export of mature thymocytes by enhancing directional movement of thymocytes to sphingosine-1-phosphate stimulation and up-regulation of S1P1R expression; signals through the JAK-STAT pathway to regulate FOXO1 activity leading to an increased expression of S1P1R (By similarity). Plays an important role in mediating peripheral nerve injury-induced neuropathic pain (By similarity). Increases NMDA-mediated synaptic transmission in both dopamine D1 and D2 receptor-containing neurons, which may be caused by MAPK/ERK-dependent phosphorylation of GRIN2B/NMDAR2B (By similarity). Mediates the recruitment of macrophages and monocytes to the injury site following brain injury (By similarity).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000121807::MONDO_0009060",
+          "title": "CCR2 \u2194 cystic disease of lung",
+          "url": "https://platform.opentargets.org/target/ENSG00000121807/associations",
+          "text": "Disease: cystic disease of lung\nAssociation score: 0.620",
+          "cos_sim_score": 0.6204270479984059,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000121807::EFO_0000180",
+          "title": "CCR2 \u2194 HIV-1 infection",
+          "url": "https://platform.opentargets.org/target/ENSG00000121807/associations",
+          "text": "Disease: HIV-1 infection\nDescription: The type species of lentivirus and the etiologic agent of acquired immunodeficiency syndrome (AIDS). It is characterized by its cytopathic effect and affinity for the T4-lymphocyte.\nAssociation score: 0.397",
+          "cos_sim_score": 0.3967448052234313,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000121807::MONDO_0100096",
+          "title": "CCR2 \u2194 COVID-19",
+          "url": "https://platform.opentargets.org/target/ENSG00000121807/associations",
+          "text": "Disease: COVID-19\nDescription: A disease caused by infection with severe acute respiratory syndrome coronavirus 2.\nAssociation score: 0.372",
+          "cos_sim_score": 0.37201406589676406,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000121807::EFO_0001060",
+          "title": "CCR2 \u2194 celiac disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000121807/associations",
+          "text": "Disease: celiac disease\nDescription: An autoimmune genetic disorder with an unknown pattern of inheritance that primarily affects the digestive tract. It is caused by intolerance to dietary gluten. Consumption of gluten protein triggers an immune response which damages small intestinal villi and prevents adequate absorption of nutrients. Clinical signs include abdominal cramping, diarrhea or constipation and weight loss. If untreated, the clinical course may progress to malnutrition, anemia, osteoporosis and an increased risk of intestinal malignancies. However, the prognosis is favorable with successful avoidance of gluten in the diet.\nAssociation score: 0.348",
+          "cos_sim_score": 0.3482201743994541,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::36627660",
+          "title": "IRF8 and its related molecules as potential diagnostic biomarkers or therapeutic candidates and immune cell infiltration characteristics in steroid-induced osteonecrosis of the femoral head.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36627660/",
+          "year": "2023",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SONFH) was a refractory orthopedic hip joint disease in the young and middle-aged people, but the pathogenesis of SONFH remained unclear. We aimed to identify the potential genes and screen potential therapeutic compounds for SONFH. The microarray was obtained for blood tissue from the GEO database, and then it identifies differentially expressed genes (DEGs). The DEGs were analyzed to obtain the differences in immune cell infiltration. The gene functional enrichment analysis of SONFH was analyzed. The PPI of DEGs was identified through the STRING database, and the cluster modules and hub genes were ascertained using MCODE and CytoHubba, and the ROC curve of hub genes was analyzed, and the tissues distribution of hub genes was understood by the HPA, Bgee and BioGPS databases. The hub genes and target miRNAs and corresponding upstream lncRNAs were predicted by TargetScan, miRDB and ENCORI database. Subsequently, we used CMap, DGIdb and L1000FWD databases to identify several potential therapeutic molecular compounds for SONFH. Finally, the AutoDockTools Vina, PyMOL and Discovery Studio were employed for molecular docking analyses between compounds and hub genes. The microarray dataset GSE123568 was obtained related to SONFH. There were 372 DEGs including 197 upregulated genes and 175 downregulated genes by adjusted P value\u2009<\u20090.01 and |log<sub>2</sub>FC|>\u20091. Several significant GSEA enrichment analysis and biological processes and KEGG pathway associated with SONFH were identified, which were significantly related to cytoskeleton organization, nucleobase-containing compound catabolic process, NOD-like receptor signaling pathway, MAPK signaling pathway, FoxO signaling pathway, neutrophil-mediated immunity, neutrophil degranulation and neutrophil activation involved in immune response. Activated T cells CD4 memory, B cells na\u00efve, B cells memory, T cells CD8 and T cells gamma delta might be involved in the occurrence and development of SONFH. Three cluster modules were identified in the PPI network, and eleven hub genes including FPR2, LILRB2, MNDA, CCR1, IRF8, TYROBP, TLR1, HCK, TLR8, TLR2 and CCR2 were identified by Cytohubba, which were differed in bone marrow, adipose tissue and blood, and which had good diagnostic performance in SONFH. We identified IRF8 and 10 target miRNAs that was utilized",
+          "cos_sim_score": 0.48185497522354126,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::36627660",
+          "title": "IRF8 and its related molecules as potential diagnostic biomarkers or therapeutic candidates and immune cell infiltration characteristics in steroid-induced osteonecrosis of the femoral head.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36627660/",
+          "year": "2023",
+          "text": "gamma delta might be involved in the occurrence and development of SONFH. Three cluster modules were identified in the PPI network, and eleven hub genes including FPR2, LILRB2, MNDA, CCR1, IRF8, TYROBP, TLR1, HCK, TLR8, TLR2 and CCR2 were identified by Cytohubba, which were differed in bone marrow, adipose tissue and blood, and which had good diagnostic performance in SONFH. We identified IRF8 and 10 target miRNAs that was utilized including Targetsan, miRDB and ENCORI databases and 8 corresponding upstream lncRNAs that was revealed by ENCORI database. IRF8 was detected with consistent expression by qRT-PCR. Based on the CMap, DGIdb and L1000FWD databases, the 11 small molecular compounds that were most strongly therapeutic correlated with SONFH were estradiol, genistein, domperidone, lovastatin, myricetin, fenbufen, rosiglitazone, sirolimus, phenformin, vorinostat and vinblastine. All of 11 small molecules had good binding affinity with the IRF8 in molecular docking. The occurrence of SONFH was associated with a \"multi-target\" and \"multi-pathway\" pattern, especially related to immunity, and IRF8 and its noncoding RNA were closely related to the development of SONFH. The CMap, DGIdb and L1000FWD databases could be effectively used in a systematic manner to predict potential drugs for the prevention and treatment of SONFH. However, additional clinical and experimental research is warranted.",
+          "cos_sim_score": 0.13605797290802002,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_fetch_by_id",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::36627660",
+          "title": "IRF8 and its related molecules as potential diagnostic biomarkers or therapeutic candidates and immune cell infiltration characteristics in steroid-induced osteonecrosis of the femoral head.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36627660/",
+          "year": "2023",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SONFH) was a refractory orthopedic hip joint disease in the young and middle-aged people, but the pathogenesis of SONFH remained unclear. We aimed to identify the potential genes and screen potential therapeutic compounds for SONFH. The microarray was obtained for blood tissue from the GEO database, and then it identifies differentially expressed genes (DEGs). The DEGs were analyzed to obtain the differences in immune cell infiltration. The gene functional enrichment analysis of SONFH was analyzed. The PPI of DEGs was identified through the STRING database, and the cluster modules and hub genes were ascertained using MCODE and CytoHubba, and the ROC curve of hub genes was analyzed, and the tissues distribution of hub genes was understood by the HPA, Bgee and BioGPS databases. The hub genes and target miRNAs and corresponding upstream lncRNAs were predicted by TargetScan, miRDB and ENCORI database. Subsequently, we used CMap, DGIdb and L1000FWD databases to identify several potential therapeutic molecular compounds for SONFH. Finally, the AutoDockTools Vina, PyMOL and Discovery Studio were employed for molecular docking analyses between compounds and hub genes. The microarray dataset GSE123568 was obtained related to SONFH. There were 372 DEGs including 197 upregulated genes and 175 downregulated genes by adjusted P value\u2009<\u20090.01 and |log<sub>2</sub>FC|>\u20091. Several significant GSEA enrichment analysis and biological processes and KEGG pathway associated with SONFH were identified, which were significantly related to cytoskeleton organization, nucleobase-containing compound catabolic process, NOD-like receptor signaling pathway, MAPK signaling pathway, FoxO signaling pathway, neutrophil-mediated immunity, neutrophil degranulation and neutrophil activation involved in immune response. Activated T cells CD4 memory, B cells na\u00efve, B cells memory, T cells CD8 and T cells gamma delta might be involved in the occurrence and development of SONFH. Three cluster modules were identified in the PPI network, and eleven hub genes including FPR2, LILRB2, MNDA, CCR1, IRF8, TYROBP, TLR1, HCK, TLR8, TLR2 and CCR2 were identified by Cytohubba, which were differed in bone marrow, adipose tissue and blood, and which had good diagnostic performance in SONFH. We identified IRF8 and 10 target miRNAs that was utilized",
+          "cos_sim_score": 0.48185497522354126,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::36627660",
+          "title": "IRF8 and its related molecules as potential diagnostic biomarkers or therapeutic candidates and immune cell infiltration characteristics in steroid-induced osteonecrosis of the femoral head.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36627660/",
+          "year": "2023",
+          "text": "gamma delta might be involved in the occurrence and development of SONFH. Three cluster modules were identified in the PPI network, and eleven hub genes including FPR2, LILRB2, MNDA, CCR1, IRF8, TYROBP, TLR1, HCK, TLR8, TLR2 and CCR2 were identified by Cytohubba, which were differed in bone marrow, adipose tissue and blood, and which had good diagnostic performance in SONFH. We identified IRF8 and 10 target miRNAs that was utilized including Targetsan, miRDB and ENCORI databases and 8 corresponding upstream lncRNAs that was revealed by ENCORI database. IRF8 was detected with consistent expression by qRT-PCR. Based on the CMap, DGIdb and L1000FWD databases, the 11 small molecular compounds that were most strongly therapeutic correlated with SONFH were estradiol, genistein, domperidone, lovastatin, myricetin, fenbufen, rosiglitazone, sirolimus, phenformin, vorinostat and vinblastine. All of 11 small molecules had good binding affinity with the IRF8 in molecular docking. The occurrence of SONFH was associated with a \"multi-target\" and \"multi-pathway\" pattern, especially related to immunity, and IRF8 and its noncoding RNA were closely related to the development of SONFH. The CMap, DGIdb and L1000FWD databases could be effectively used in a systematic manner to predict potential drugs for the prevention and treatment of SONFH. However, additional clinical and experimental research is warranted.",
+          "cos_sim_score": 0.13605797290802002,
+          "source_type": "pubmed"
+        }
+      ]
+    }
+  ]
+}

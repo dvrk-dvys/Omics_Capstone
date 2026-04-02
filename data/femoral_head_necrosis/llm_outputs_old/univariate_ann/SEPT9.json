@@ -1,0 +1,166 @@
+{
+  "rf_rank": 44,
+  "probe_id": "11750585_a_at",
+  "gene_symbol": "SEPT9",
+  "score": 0.54,
+  "rf_n_nodes": 3,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.8228,
+  "log_fc": 0.8228,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11750585_a_at",
+  "max_score": 0.54,
+  "mean_abs_fold_change": 0.8228,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T20:25:38",
+  "interpretation": "SEPT9 encodes a protein that is part of the septin family, which are filament-forming cytoskeletal GTPases involved in various cellular processes, including cytokinesis and cell migration. While there is no direct evidence linking SEPT9 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in cytokinesis suggests a potential involvement in bone cell dynamics and repair mechanisms, which could be disrupted in conditions like SONFH. The retrieved evidence primarily highlights its general biological functions and associations with other diseases, leading to a low confidence in its specific relevance to SONFH. Therefore, while SEPT9 may have biological implications in cellular processes relevant to bone health, its potential as a biomarker for early detection of SONFH remains weak and speculative.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "SEPT9 may be involved in cellular processes relevant to bone health, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "SEPTIN9 (Q9UHD8). https://www.uniprot.org/uniprotkb/Q9UHD8",
+    "SEPTIN9 (Q9UHD8-5). https://www.uniprot.org/uniprotkb/Q9UHD8-5",
+    "SEPTIN9 (Q9UHD8-7). https://www.uniprot.org/uniprotkb/Q9UHD8-7",
+    "SEPT9 \u2014 SEPTIN9. https://platform.opentargets.org/target/ENSG00000184640",
+    "SEPT9 \u2194 neuralgic amyotrophy. https://platform.opentargets.org/target/ENSG00000184640/associations",
+    "SEPT9 \u2194 hypertension. https://platform.opentargets.org/target/ENSG00000184640/associations",
+    "SEPT9 \u2194 essential hypertension. https://platform.opentargets.org/target/ENSG00000184640/associations",
+    "SEPT9 \u2194 alcohol drinking. https://platform.opentargets.org/target/ENSG00000184640/associations",
+    "SEPT9. https://en.wikipedia.org/wiki/SEPT9",
+    "Septin. https://en.wikipedia.org/wiki/Septin"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5789,
+    "completion_tokens": 229,
+    "total_tokens": 6018,
+    "estimated_cost_usd": 0.001006
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9UHD8",
+          "title": "SEPTIN9 (Q9UHD8)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UHD8",
+          "text": "Protein: Septin-9\nFunction: Filament-forming cytoskeletal GTPase (By similarity). May play a role in cytokinesis (Potential). May play a role in the internalization of 2 intracellular microbial pathogens, Listeria monocytogenes and Shigella flexneri",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9UHD8-5",
+          "title": "SEPTIN9 (Q9UHD8-5)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UHD8-5",
+          "text": "Protein: Isoform 5 of Septin-9",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9UHD8-7",
+          "title": "SEPTIN9 (Q9UHD8-7)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UHD8-7",
+          "text": "Protein: Isoform 7 of Septin-9",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000184640::function",
+          "title": "SEPT9 \u2014 SEPTIN9",
+          "url": "https://platform.opentargets.org/target/ENSG00000184640",
+          "text": "Function: Filament-forming cytoskeletal GTPase (By similarity). May play a role in cytokinesis (Potential). May play a role in the internalization of 2 intracellular microbial pathogens, Listeria monocytogenes and Shigella flexneri. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000184640::MONDO_0017362",
+          "title": "SEPT9 \u2194 neuralgic amyotrophy",
+          "url": "https://platform.opentargets.org/target/ENSG00000184640/associations",
+          "text": "Disease: neuralgic amyotrophy\nDescription: Neuralgic amyotrophy (NA) is an uncommon disorder of the peripheral nervous system characterized by the sudden onset of extreme pain in the upper extremity followed by rapid multifocal motor weakness and atrophy and a slow recovery in months to years. NA includes both an idiopathic (INA, also known as Parsonage-Turner syndrome) and hereditary (HNA) form.\nAssociation score: 0.564",
+          "cos_sim_score": 0.5638185740578462,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000184640::EFO_0000537",
+          "title": "SEPT9 \u2194 hypertension",
+          "url": "https://platform.opentargets.org/target/ENSG00000184640/associations",
+          "text": "Disease: hypertension\nDescription: Persistently high systemic arterial blood pressure. Based on multiple readings (blood pressure determination), hypertension is currently defined as when systolic pressure is consistently greater than 140 mm Hg or when diastolic pressure is consistently 90 mm Hg or more.\nAssociation score: 0.546",
+          "cos_sim_score": 0.5458824049136834,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000184640::MONDO_0001134",
+          "title": "SEPT9 \u2194 essential hypertension",
+          "url": "https://platform.opentargets.org/target/ENSG00000184640/associations",
+          "text": "Disease: essential hypertension\nDescription: Hypertension that presents without an identifiable cause.\nAssociation score: 0.489",
+          "cos_sim_score": 0.48855454686357364,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000184640::EFO_0004329",
+          "title": "SEPT9 \u2194 alcohol drinking",
+          "url": "https://platform.opentargets.org/target/ENSG00000184640/associations",
+          "text": "Disease: alcohol drinking\nDescription: Behaviors associated with the ingesting of alcoholic beverages, including social drinking.\nAssociation score: 0.438",
+          "cos_sim_score": 0.43813037041552183,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::SEPT9",
+          "title": "SEPT9",
+          "url": "https://en.wikipedia.org/wiki/SEPT9",
+          "text": "Septin-9 is a protein that in humans is encoded by the SEPT9 gene.\n\nInteractions\nSEPT9 has been shown to interact with SEPT2 and SEPT7.\n\nFunction\nAlong with AHNAK, eIF4E and S100A11, SEPT9 has been shown to be essential for pseudopod protrusion, tumor cell migration and invasion.\n\nClinical significance\nThe v2 region of the SEPT9 promoter has been shown to be methylated in colorectal cancer tissue compared with normal colonic mucosa.  Using highly sensitive real time PCR assays, methylated SEPT9 was detected in the blood of colorectal cancer patients. This alternate methylation pattern in cancer samples is suggestive of an aberrant activation or repression of the gene compared to normal tissue samples.\nTesting to detect methylated SEPT9 is not indicated as a first option for colorectal cancer screening. It is similar in specificity and sensitivity to the stool guaiac test or fecal immune tests, and those tests should be used in preference. In cases when the physician aggressively has recommended a colonoscopy and the patient has declined that and these other tests, then this test has advantages over patients having no screening at all.\n\nSee also\nHereditary neuralgic amyotrophy\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.34262320399284363,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Septin",
+          "title": "Septin",
+          "url": "https://en.wikipedia.org/wiki/Septin",
+          "text": "Caenorhabditis elegans\nIn the nematode worm Caenorhabditis elegans there are two genes coding for septins, and septin complexes contain the two different septins in a tetrameric UNC59-UNC61-UNC61-UNC59 complex. Septins in C.elegans concentrate at the cleavage furrow and the spindle midbody during cell division. Septins are also involved in cell migration and axon guidance in C.elegans.\n\nIn mitochondria\nThe septin localized in the mitochondria is called mitochondrial septin (M-septin). It was identified as a CRMP/CRAM-interacting protein in the developing rat brain.\n\nHistory\nThe septins were discovered in 1970 by Leland H. Hartwell and colleagues in a screen for temperature-sensitive mutants affecting cell division (cdc mutants) in yeast (Saccharomyces cerevisiae). The screen revealed four mutants which prevented cytokinesis at restrictive temperature. The corresponding genes represent the four original septins, ScCDC3, ScCDC10, ScCDC11, and ScCDC12. Despite disrupted cytokinesis, the cells continued budding, DNA synthesis, and nuclear division, which resulted in large multinucleate cells with multiple, elongated buds. In 1976, analysis of electron micrographs revealed ~20 evenly spaced striations of 10-nm filaments around the mother-bud neck in wild-type but not in septin-mutant cells. Immunofluorescence studies revealed that the septin proteins colocalize into a septin ring at the neck. The localization of all four septins is disrupted in conditional Sccdc3 and Sccdc12 mutants, indicating interdependence of the septin proteins. Strong support for this finding was provided by biochemical studies: The four original septins co-purified on affinity columns, together with a fifth septin protein, encoded by ScSEP7 or ScSHS1. Purified septins from budding yeast, Drosophila, Xenopus, and mammalian cells are able to self associate in vitro to form filaments. How the septins interact in vitro to form hetero-oligomers that assemble into filaments was studied in detail in S. cerevisiae.\nMicrographs of purified filaments raised the possibility that the septins are organized in parallel to the mother-bud axis. The 10-nm striations seen on electron micrographs may be the result of lateral interaction between the filaments. Mutant strains lacking factors important for septin organization support this view. Instead of continuous rings, the septins form bars oriented along the mother-bud axis in deletion mutants of ScGIN4, ScNAP1 and ScCLA4.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.2695128917694092,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Septin",
+          "title": "Septin",
+          "url": "https://en.wikipedia.org/wiki/Septin",
+          "text": "Occurrence\nSeptins are found in fungi, animals, and some eukaryotic algae but are not found in plants.\n\nIn yeast\nThere are seven different septins in Saccharomyces cerevisiae. Five of those are involved in mitosis, while two (Spr3 and Spr28) are specific to sporulation. Mitotic septins (Cdc3, Cdc10, Cdc11, Cdc12, Shs1) form a ring structure at the bud neck during cell division. They are involved in the selection of the bud-site, the positioning of the mitotic spindle, polarized growth, and cytokinesis. The sporulating septins (Spr3, Spr28) localize together with Cdc3 and Cdc11 to the edges of prospore membranes.\n\nOrganization\nSeptins form a specialised region in the cell cortex known as the septin cortex. The septin cortex undergoes several changes throughout the cell cycle: The first visible septin structure is a distinct ring which appears ~15 min before bud emergence. After bud emergence, the ring broadens to assume the shape of an hourglass around the mother-bud neck. During cytokinesis, the septin cortex splits into a double ring which eventually disappears. How can the septin cortex undergo such dramatic changes, although some of its functions may require it to be a stable structure? FRAP analysis has revealed that the turnover of septins at the neck undergoes multiple changes during the cell cycle. The predominant, functional conformation is characterized by a low turnover rate (frozen state), during which the septins are phosphorylated. Structural changes require a destabilization of the septin cortex (fluid state) induced by dephosphorylation prior to bud emergence, ring splitting and cell separation.\nThe composition of the septin cortex does not only vary throughout the cell cycle but also along the mother-bud axis. This polarity of the septin network allows concentration of some proteins primarily to the mother side of the neck, some to the center and others to the bud site.\n\nFunctions\nScaffold\nThe septins act as a scaffold, recruiting many proteins. These protein complexes are involved in cytokinesis, chitin deposition, cell polarity, spore formation, in the morphogenesis checkpoint, spindle alignment checkpoint and bud site selection.\n\nCytokinesis\nBudding yeast cytokinesis is driven through two septin dependent, redundant processes: recruitment and contraction of the actomyosin ring and formation of the septum by vesicle fusion with the plasma membrane. In contrast to septin mutants, disruption of one single pathway only leads to a delay in cytokinesis, not complete failure of cell division. Hence, the septins are predicted to act at the most upstream level of cytokinesis.\n\nCell polarity\nAfter the isotropic-apical switch in budding yeast, cortical components, supposedly of the exocyst and polarisome, are delocalized from the apical pole to the entire plasma membrane of the bud, but not the mother cell. The septin ring at the neck serves as a cortical barrier that prevents membrane diffusion of these factors between the two compartments. This asymmetric distribution is abolished in septin mutants.\nSome conditional septin mutants do not form buds at their normal axial location. Moreover, the typical localization of some bud-site-selection factors in a double ring at the neck is lost or disturbed in these mutants. This indicates that the septins may serve as anchoring site for such factors in axially budding cells.\n\nIn filamentous fungi\nSince their discovery in S. cerevisiae, septin homologues have been found in other eukaryotic species, including filamentous fungi. Septins in filamentous fungi display a variety of different shapes within single cells,  where they control aspects of filamentous morphology.\n\nCandida albicans\nThe genome of C. albicans encodes homologues to all S. cerevisiae septins. Without Cdc3 and Cdc12 genes Candida albicans cannot proliferate, other septins affect morphology and chitin deposition, but are not essential. Candida albicans can display different morphologies of vegetative growth, which determines the appearance of septin structures. Newly forming hyphae form a septin ring at the base, Double rings form at sites of hyphal septation, and a septin cap forms at hyphal tips. Elongated septin-filaments encircle the spherical chlamydospores. Double rings of septins at the septation site also bear growth polarity, with the growing tip ring disassembling, while the basal ring remaining intact.",
+          "cos_sim_score": 0.22703731060028076,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Septin",
+          "title": "Septin",
+          "url": "https://en.wikipedia.org/wiki/Septin",
+          "text": "In animals\nIn contrast to septins in yeast, and in contrast to other cytoskeletal components of animals, septins do not form a continuous network in  cells, but several dispersed ones in the cytoplasm of the cell cortex. These are integrated with actin bundles and microtubules. For example, the actin bundling protein anillin is required for correct spatial control of septin organization. In the  sperm cells of mammals, septins form a stable ring called annulus in the tail. In mice (and potentially in humans, too), defective annulus formation leads to male infertility.\n\nHuman\nIn humans, septins are involved in cytokinesis, cilium formation and neurogenesis through the capability to recruit other proteins or serve as a diffusion barrier. There are 13 different human genes coding for septins. The septin proteins produced by these genes are grouped into four subfamilies each named after its founding member: (i) SEPT2 (SEPT1, SEPT4, SEPT5),  (ii) SEPT3 (SEPT9, SEPT12), (iii) SEPT6 (SEPT8, SEPT10, SEPT11, SEPT14), and (iv) SEPT7. Septin protein complexes are assembled to form either hetero-hexamers (incorporating monomers selected from three different groups and the monomer from each group is present in two copies; 3 x 2 = 6) or hetero-octamers (monomers from four different groups, each monomer present in two copies; 4 x 2 = 8). These hetero-oligomers in turn form higher-order structures such as filaments and rings.\nSeptins form cage-like structures around bacterial pathogens, immobilizing harmful microbes and preventing them from invading healthy cells. This cellular defence system could potentially be exploited to create therapies for dysentery and other illnesses. For example, Shigella is a bacterium that causes lethal diarrhoea in humans. To propagate from cell to cell, Shigella bacteria develop actin-polymer 'tails', which propel the microbes and allow them to gain entry into neighbouring host cells. As part of the immune response, human cells produce a cell-signalling protein called TNF-\u03b1 which trigger thick bundles of septin filaments to encircle the microbes within the infected host cell. Microbes that become trapped in these septin cages are broken down by autophagy. Disruptions in septins and mutations in the genes that code for them could be involved in causing leukaemia, colon cancer and neurodegenerative conditions such as Parkinson's disease and Alzheimer's disease. Potential therapies for these, as well as for bacterial conditions such as dysentery caused by Shigella, might bolster the body's immune system with drugs that mimic the behaviour of TNF-\u03b1 and allow the septin cages to proliferate.\n\nCaenorhabditis elegans\nIn the nematode worm Caenorhabditis elegans there are two genes coding for septins, and septin complexes contain the two different septins in a tetrameric UNC59-UNC61-UNC61-UNC59 complex. Septins in C.elegans concentrate at the cleavage furrow and the spindle midbody during cell division. Septins are also involved in cell migration and axon guidance in C.elegans.\n\nIn mitochondria\nThe septin localized in the mitochondria is called mitochondrial septin (M-septin). It was identified as a CRMP/CRAM-interacting protein in the developing rat brain.",
+          "cos_sim_score": 0.21500304341316223,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Septin",
+          "title": "Septin",
+          "url": "https://en.wikipedia.org/wiki/Septin",
+          "text": "Candida albicans\nThe genome of C. albicans encodes homologues to all S. cerevisiae septins. Without Cdc3 and Cdc12 genes Candida albicans cannot proliferate, other septins affect morphology and chitin deposition, but are not essential. Candida albicans can display different morphologies of vegetative growth, which determines the appearance of septin structures. Newly forming hyphae form a septin ring at the base, Double rings form at sites of hyphal septation, and a septin cap forms at hyphal tips. Elongated septin-filaments encircle the spherical chlamydospores. Double rings of septins at the septation site also bear growth polarity, with the growing tip ring disassembling, while the basal ring remaining intact.\n\nAspergillus nidulans\nFive septins are found in A. nidulans (AnAspAp, AnAspBp, AnAspCp, AnAspDp, AnAspEp). AnAspBp forms single rings at septation sites that eventually split into double rings. Additionally, AnAspBp forms a ring at sites of branch emergence which broadens into a band as the branch grows. Like in C. albicans, double rings reflect polarity of the hypha. In the case of Aspergillus nidulans polarity is conveyed by disassembly of the more basal ring (the ring further away from the hyphal growth tip), leaving the apical ring intact, potentially as a growth guidance cue.\n\nAshbya gossypii\nThe ascomycete A. gossypii possesses homologues to all S. cerevisiae septins, with one being duplicated (AgCDC3, AgCDC10, AgCDC11A, AgCDC11B, AgCDC12, AgSEP7). In vivo studies of AgSep7p-GFP have revealed that septins assemble into discontinuous hyphal rings close to growing tips and sites of branch formation, and into asymmetric structures at the base of branching points. Rings are made of filaments which are long and diffuse close to growing tips and short and compact further away from the tip. During septum formation, the septin ring splits into two to form a double ring. Agcdc3\u0394, Agcdc10\u0394 and Agcdc12\u0394 deletion mutants display aberrant morphology and are defective for actin-ring formation, chitin-ring formation, and sporulation. Due to the lack of septa, septin deletion mutants are highly sensitive, and damage of a single hypha can result in complete lysis of a young mycelium.\n\nIn animals\nIn contrast to septins in yeast, and in contrast to other cytoskeletal components of animals, septins do not form a continuous network in  cells, but several dispersed ones in the cytoplasm of the cell cortex. These are integrated with actin bundles and microtubules. For example, the actin bundling protein anillin is required for correct spatial control of septin organization. In the  sperm cells of mammals, septins form a stable ring called annulus in the tail. In mice (and potentially in humans, too), defective annulus formation leads to male infertility.",
+          "cos_sim_score": 0.20361560583114624,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

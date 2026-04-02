@@ -1,0 +1,228 @@
+{
+  "probe_id": "11721454_a_at",
+  "gene_symbol": "SERPINA1",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.1605887658420652,
+  "abs_fold_change": 1.3668,
+  "score": 1.3633,
+  "probe_count": 1,
+  "probe_ids": "11721454_a_at",
+  "max_score": 1.3633,
+  "mean_abs_fold_change": 1.3668,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T19:27:13",
+  "interpretation": "SERPINA1 encodes alpha-1-antitrypsin, a serine protease inhibitor that primarily protects tissues from proteolytic damage by inhibiting enzymes like elastase. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the dysregulation of proteolytic activity may contribute to the pathological processes involved in bone remodeling and apoptosis of osteocytes, which are critical in SONFH progression. Although direct evidence linking SERPINA1 to SONFH is limited, its role in modulating inflammation and tissue repair suggests a potential involvement in the disease's pathophysiology. The evidence gathered indicates a moderate confidence in SERPINA1's relevance as a biomarker, but further studies are needed to establish its clinical utility in early detection of SONFH.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 3",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "SERPINA1 may play a role in the inflammatory and proteolytic processes associated with Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "SERPINA1 (P01009). https://www.uniprot.org/uniprotkb/P01009",
+    "SERPINA1 (P01009-2). https://www.uniprot.org/uniprotkb/P01009-2",
+    "SERPINA1 (P01009-3). https://www.uniprot.org/uniprotkb/P01009-3",
+    "SERPINA1 \u2014 SERPINA1. https://platform.opentargets.org/target/ENSG00000197249",
+    "SERPINA1 \u2194 Alpha-1-antitrypsin deficiency. https://platform.opentargets.org/target/ENSG00000197249/associations",
+    "SERPINA1 \u2194 chronic obstructive pulmonary disease. https://platform.opentargets.org/target/ENSG00000197249/associations",
+    "SERPINA1 \u2194 alpha 1-antitrypsin deficiency. https://platform.opentargets.org/target/ENSG00000197249/associations",
+    "SERPINA1 \u2194 cholelithiasis. https://platform.opentargets.org/target/ENSG00000197249/associations",
+    "SERPINA1 \u2014 serpin family A member 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "APOE \u2014 apolipoprotein E (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ERBB2 \u2014 erb-b2 receptor tyrosine kinase 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CFTR \u2014 CF transmembrane conductance regulator (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CTLA4 \u2014 cytotoxic T-lymphocyte associated protein 4 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Exosomal SPRY4 from adipogenic BMSCs impairs angiogenesis via the PTPRB/TIE2/PI3K axis in Steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12261795/",
+    "Identification of potential autophagy-related genes in steroid-induced osteonecrosis of the femoral head via bioinformatics analysis and experimental verification (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8840318/",
+    "Comparative study of serum proteomes in Legg-Calve-Perthes disease (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC4595068/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9146,
+    "completion_tokens": 309,
+    "total_tokens": 9455,
+    "estimated_cost_usd": 0.001557
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P01009",
+          "title": "SERPINA1 (P01009)",
+          "url": "https://www.uniprot.org/uniprotkb/P01009",
+          "text": "Protein: Alpha-1-antitrypsin\nFunction: Inhibitor of serine proteases. Its primary target is elastase, but it also has a moderate affinity for plasmin and thrombin. Irreversibly inhibits trypsin, chymotrypsin and plasminogen activator. The aberrant form inhibits insulin-induced NO synthesis in platelets, decreases coagulation time and has proteolytic activity against insulin and plasmin Reversible chymotrypsin inhibitor. It also inhibits elastase, but not trypsin. Its major physiological function is the protection of the lower respiratory tract against proteolytic destruction by human leukocyte elastase (HLE)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P01009-2",
+          "title": "SERPINA1 (P01009-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P01009-2",
+          "text": "Protein: Isoform 2 of Alpha-1-antitrypsin",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P01009-3",
+          "title": "SERPINA1 (P01009-3)",
+          "url": "https://www.uniprot.org/uniprotkb/P01009-3",
+          "text": "Protein: Isoform 3 of Alpha-1-antitrypsin",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000197249::function",
+          "title": "SERPINA1 \u2014 SERPINA1",
+          "url": "https://platform.opentargets.org/target/ENSG00000197249",
+          "text": "Function: Inhibitor of serine proteases. Its primary target is elastase, but it also has a moderate affinity for plasmin and thrombin. Irreversibly inhibits trypsin, chymotrypsin and plasminogen activator. The aberrant form inhibits insulin-induced NO synthesis in platelets, decreases coagulation time and has proteolytic activity against insulin and plasmin.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197249::Orphanet_60",
+          "title": "SERPINA1 \u2194 Alpha-1-antitrypsin deficiency",
+          "url": "https://platform.opentargets.org/target/ENSG00000197249/associations",
+          "text": "Disease: Alpha-1-antitrypsin deficiency\nAssociation score: 0.764",
+          "cos_sim_score": 0.764279219769394,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197249::EFO_0000341",
+          "title": "SERPINA1 \u2194 chronic obstructive pulmonary disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000197249/associations",
+          "text": "Disease: chronic obstructive pulmonary disease\nDescription: A group of disorders affecting the bronchi and the lung parenchyma. It is characterized by chronic and irreversible obstruction of the airflow. It includes chronic bronchitis and pulmonary emphysema.\nAssociation score: 0.678",
+          "cos_sim_score": 0.6780030751826506,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197249::MONDO_0013282",
+          "title": "SERPINA1 \u2194 alpha 1-antitrypsin deficiency",
+          "url": "https://platform.opentargets.org/target/ENSG00000197249/associations",
+          "text": "Disease: alpha 1-antitrypsin deficiency\nDescription: Alpha-1-antitrypsin deficiency is a hereditary disease that develops in adulthood and is characterized by chronic liver disorders (cirrhosis), respiratory disorders (emphysema), and rarely panniculitis.\nAssociation score: 0.604",
+          "cos_sim_score": 0.6037825997560741,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197249::EFO_0004799",
+          "title": "SERPINA1 \u2194 cholelithiasis",
+          "url": "https://platform.opentargets.org/target/ENSG00000197249/associations",
+          "text": "Disease: cholelithiasis\nDescription: The presence of crystallized deposits forming in the gallbladder or biliary tree, primarily composed of cholesterol, bilirubin, and bile.\nAssociation score: 0.556",
+          "cos_sim_score": 0.5560958760719121,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "SERPINA1 \u2014 serpin family A member 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SERPINA1\nGene name: serpin family A member 1\nAliases / synonyms: A1A, A1AT, AAT, PI, PI1, PRO2275, alpha1AT, nNIF\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a serine protease inhibitor belonging to the serpin superfamily whose targets include elastase, plasmin, thrombin, trypsin, chymotrypsin, and plasminogen activator. This protein is produced in the liver, the bone marrow, by lymphocytic and monocytic cells in lymphoid tissue, and by the Paneth cells of the gut. Defects in this gene are associated with chronic obstructive pulmonary disease, emphysema, and chronic liver disease. Several transcript variants encoding the same protein have been found for this gene. [provided by RefSeq, Aug 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SERPINA1",
+          "aliases": "A1A, A1AT, AAT, PI, PI1, PRO2275, alpha1AT, nNIF",
+          "gene_description": "serpin family A member 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "APOE \u2014 apolipoprotein E",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: APOE\nGene name: apolipoprotein E\nAliases / synonyms: AD2, APO-E, ApoE4, LDLCQ5, LPG\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a major apoprotein of the chylomicron. It binds to a specific liver and peripheral cell receptor, and is essential for the normal catabolism of triglyceride-rich lipoprotein constituents. This gene maps to chromosome 19 in a cluster with the related apolipoprotein C1 and C2 genes. Mutations in this gene result in familial dysbetalipoproteinemia, or type III hyperlipoproteinemia (HLP III), in which increased plasma cholesterol and triglycerides are the consequence of impaired clearance of chylomicron and VLDL remnants. [provided by RefSeq, Jun 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "APOE",
+          "aliases": "AD2, APO-E, ApoE4, LDLCQ5, LPG",
+          "gene_description": "apolipoprotein E"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ERBB2 \u2014 erb-b2 receptor tyrosine kinase 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ERBB2\nGene name: erb-b2 receptor tyrosine kinase 2\nAliases / synonyms: CD340, HER-2, HER-2/neu, HER2, MLN 19, MLN-19, NEU, NGL, TKR1, VSCN2, c-ERB-2, c-ERB2, p185(erbB2)\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the epidermal growth factor (EGF) receptor family of receptor tyrosine kinases. This protein has no ligand binding domain of its own and therefore cannot bind growth factors. However, it does bind tightly to other ligand-bound EGF receptor family members to form a heterodimer, stabilizing ligand binding and enhancing kinase-mediated activation of downstream signalling pathways, such as those involving mitogen-activated protein kinase and phosphatidylinositol-3 kinase. Allelic variations at amino acid positions 654 and 655 of isoform a (positions 624 and 625 of isoform b) have been reported, with the most common allele, Ile654/Ile655, shown here. Amplification and/or overexpression of this gene has been reported in numerous cancers, including breast and ovarian...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ERBB2",
+          "aliases": "CD340, HER-2, HER-2/neu, HER2, MLN 19, MLN-19, NEU, NGL, TKR1, VSCN2, c-ERB-2, c-ERB2, p185(erbB2)",
+          "gene_description": "erb-b2 receptor tyrosine kinase 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CFTR \u2014 CF transmembrane conductance regulator",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CFTR\nGene name: CF transmembrane conductance regulator\nAliases / synonyms: ABC35, ABCC7, CF, CFTR/MRP, MRP7, TNR-CFTR, dJ760C5.1\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the ATP-binding cassette (ABC) transporter superfamily. The encoded protein functions as a chloride channel, making it unique among members of this protein family, and controls ion and water secretion and absorption in epithelial tissues. Channel activation is mediated by cycles of regulatory domain phosphorylation, ATP-binding by the nucleotide-binding domains, and ATP hydrolysis. Mutations in this gene cause cystic fibrosis, the most common lethal genetic disorder in populations of Northern European descent. The most frequently occurring mutation in cystic fibrosis, DeltaF508, results in impaired folding and trafficking of the encoded protein. Multiple pseudogenes have been identified in the human genome. [provided by RefSeq, Aug 2017]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CFTR",
+          "aliases": "ABC35, ABCC7, CF, CFTR/MRP, MRP7, TNR-CFTR, dJ760C5.1",
+          "gene_description": "CF transmembrane conductance regulator"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CTLA4 \u2014 cytotoxic T-lymphocyte associated protein 4",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CTLA4\nGene name: cytotoxic T-lymphocyte associated protein 4\nAliases / synonyms: ALPS5, CD, CD152, CELIAC3, CTLA-4, GRD4, GSE, IDDM12\nOrganism: Homo sapiens\nGene summary: This gene is a member of the immunoglobulin superfamily and encodes a protein which transmits an inhibitory signal to T cells. The protein contains a V domain, a transmembrane domain, and a cytoplasmic tail. Alternate transcriptional splice variants, encoding different isoforms, have been characterized. The membrane-bound isoform functions as a homodimer interconnected by a disulfide bond, while the soluble isoform functions as a monomer. Mutations in this gene have been associated with insulin-dependent diabetes mellitus, Graves disease, Hashimoto thyroiditis, celiac disease, systemic lupus erythematosus, thyroid-associated orbitopathy, and other autoimmune diseases. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CTLA4",
+          "aliases": "ALPS5, CD, CD152, CELIAC3, CTLA-4, GRD4, GSE, IDDM12",
+          "gene_description": "cytotoxic T-lymphocyte associated protein 4"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::12261795",
+          "title": "Exosomal SPRY4 from adipogenic BMSCs impairs angiogenesis via the PTPRB/TIE2/PI3K axis in Steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12261795/",
+          "text": "Patients and bone tissues\nThis study was conducted in accordance with the guidelines outlined in the Declaration of Helsinki. All experimental protocols were reviewed and approved by the Institutional Review Board of the First Affiliated Hospital of Chongqing Medical University. The research included 15 patients diagnosed with non-traumatic osteonecrosis of the femoral head (SONFH, Acro stages III and IV) and 15 patients with femoral neck fractures (FNF) who underwent hip arthroplasty at the hospital between October 2021 and July 2022. Patients with femoral neck fractures served as the control group. Demographic information for both cohorts is summarized in Table\u00a01. Immediately following resection, each femoral head specimen was bisected using an osteotome. One half of each specimen was promptly immersed in liquid nitrogen for subsequent experimental procedures, while the other half was fixed in 4% paraformaldehyde for histological examination.\nTable 1Demographics data of the study groupsGroupGender (male/female)Side (right/left)Age (years)BMI (kg/m2)Acro stageFNF9/68/772.4\u2009\u00b1\u20096.866.9\u2009\u00b1\u20096.4SONFH8/710/1245.3\u2009\u00b1\u20099.2 ****71.7\u2009\u00b1\u20098.4Stage III n\u2009=\u20095stage IV n\u2009=\u200910Note: Data are presented as mean\u2009\u00b1\u2009SD, ****P\u2009<\u20090.0001. SONFH denotes steroid-induced osteonecrosis of the femoral head group. FNF represents the femoral neck fracture group. BMI refers to body mass index\nTable 1\nDemographics data of the study groups\nNote: Data are presented as mean\u2009\u00b1\u2009SD, ****P\u2009<\u20090.0001. SONFH denotes steroid-induced osteonecrosis of the femoral head group. FNF represents the femoral neck fracture group. BMI refers to body mass index\nIsolation of exosomes from cell culture supernatant\nExosomes were isolated from the supernatants of BMSCs and adipogenic BMSCs using previously described methods. The isolation and purification were conducted through multi-step ultracentrifugation [24]. Specifically, the supernatant was sequentially centrifuged at 300\u00a0g for 10\u00a0min, 1500\u00a0g for 10\u00a0min, and 3200\u00a0g for 20\u00a0min, followed by centrifugation at 20,000\u00a0g for 30\u00a0min. Finally, the supernatant was subjected to 2 rounds of ultracentrifugation at 100,000\u00a0g for 70\u00a0min each, all performed at 4\u00a0\u00b0C. After each centrifugation step, the supernatant was transferred to a new centrifuge tube. Exosomes were subsequently washed with PBS and filtered through a 0.22\u00a0\u03bcm filter before being stored in 100 \u00b5L of PBS at -80\u00a0\u00b0C. For protein extraction, a portion of the exosome particles was lysed using RIPA buffer supplemented with PMSF (RIPA: PMSF\u2009=\u2009100:1). The total exosome protein concentration was determined, and the extracted proteins were stored at -80\u00a0\u00b0C for Western blot analysis.\nCharacterization of exosomes\nThe particle size distribution of exosomes derived from BMSCs and adipogenic BMSCs was characterized using nanoparticle tracking analysis (NTA) with a Malvern Zetasizer Nano ZS90. NTA data were analyzed using Zeta View software. The morphology of exosomes from both cell types was examined using a FEI Tecnai F20 transmission electron microscope. Exosome-specific markers CD63 and TSG101 were detected by Western blotting.\nCell culture and transfection",
+          "cos_sim_score": 0.5603248476982117,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8840318",
+          "title": "Identification of potential autophagy-related genes in steroid-induced osteonecrosis of the femoral head via bioinformatics analysis and experimental verification",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8840318/",
+          "text": "Introduction\nSteroid-induced osteonecrosis of the femoral head (SONFH) is a chronic refractory orthopaedic disease characterized by accumulation of microfractures without continuous remodelling or the collapse of the femoral head, with high mortality, disability and dysfunction [1, 2]. SONFH occurs most frequently in young- and middle-aged adults, and without effective systematic treatment, approximately 80% of SONFH patients develop femoral head collapse within 1\u2009~\u20094\u00a0years and then require artificial joint replacement [3]. Although glucocorticoids (GCs) have been recognized as a risk factor for SONFH, their exact pathogenesis has not been well defined. As the SONFH study deepened, accumulating highly recognized mechanistic hypotheses of pathogenicity have been proposed to explain their developmental mechanisms, including uncoupled bone remodelling or unbalanced osteogenic and adipogenic differentiation of BMSCs, cell proliferation and programmed cell death [4]. Among these biological processes, programmed cell death plays a critical role in the development of SONFH. Autophagy, a programmed cell death-like process, has been identified after SONFH, but the mechanism of autophagy in bone repair and bone homeostasis remains unclear.\nAutophagy is an evolutionarily conserved intracellular catabolic process that contributes to the degradation of accumulated and unnecessary intracellular materials in lysosomes, which differs from apoptosis [5]. The discovery of autophagy mechanisms was recognized by the 2016 Nobel Prize in Physiology or Medicine [6]. Recent studies have revealed that autophagy is related to various diseases including SONFH, and the expression levels of some key targets change after autophagy [7\u201310]. For instance, the proteins necessary for autophagy, Atg5, Atg7, Atg4B and LC3, play a key role in the production of osteoclast crinkle boundaries and the secretory function of osteoclasts and in vitro and in vivo in maintaining balance and homeostasis[11]. Moreover, FIP200 is an integral part of the ULK-Atg13-FIP200 complex and regulates autophagy in osteoblasts, which affects bone fragility and bone loss [12]. In addition, it has been reported that several signalling pathways influence the biological function of SONFH through autophagy. The mTOR pathway is the main regulator of mammalian autophagy, and oestradiol has recently been found to increase the level of autophagy through the ER-ERK-mTOR pathway to prevent osteoblast apoptosis in SONFH [13]. However, many autophagy-related genes involved in SONFH have not yet been found, so further studies of autophagy-related genes involved in SONFH genes need to be explored.\nTo date, there have been no bioinformatics-based studies on the pathogenesis of autophagy-related genes after SONFH. Zhang Y generated a SONFH-related dataset, GSE123568, based on the genome-wide analysis of human peripheral serum, which included both normal patient serum samples and SONFH patient serum samples [14]. Hence, we could use machine learning algorithms and multiple bioinformatic approaches to screen the differentially expressed genes between SONFH patients and normal individuals based on this microarray dataset. In this study, we intersected these differentially expressed genes with the ferroptosis dataset to obtain differentially expressed autophagy-related genes. Then, the Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) databases were used for the enrichment analysis of differentially expressed autophagy-related genes to establish the pathogenesis of SONFH. Moreover, correlation analysis was performed to explore the association of the identified differentially expressed autophagy-related genes with each other. Furthermore, we constructed a protein\u2013protein interaction (PPI) network to identify hub genes. Finally, the expression levels of crucial differentially expressed autophagy-related genes were further verified in the GSE74089 dataset based on hip cartilage specimens. Therefore, our results reveal potential autophagy-related genes involved in SONFH, help to understand the pathogenesis of autophagy in SONFH and provide potential biomarkers for the clinical diagnosis and treatment of SONFH.\nMaterials and methods\nAutophagy-related gene datasets and microarray data\nThe Human Autophagy Database (HADb) is a human autophagy-dedicated database. It is a public repository containing information about the human genes identified as being involved in autophagy to date (http://www.autophagy.lu/index.html) [15].",
+          "cos_sim_score": 0.5310331583023071,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::4595068",
+          "title": "Comparative study of serum proteomes in Legg-Calve-Perthes disease",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4595068/",
+          "text": "Background\nLegg-Calve-Perthes disease (LCPD) is an idiopathic osteonecrosis of the developing femoral head complicated by pain and disability of the hip joint. The disease affects childhood between 6 and 9\u00a0years of age. The estimated annual incidence ranges from 0.2 to 19.1 per 100,000 among children under 15\u00a0years [1]. It occurs 5 times more often in boys than in girls [2]. The main long-term problem with this disease is a permanent deformity of the femoral head, which increases the risk of developing osteoarthritis in adults [3]. However, the underlying mechanisms and determinants of LCPD are still unclear including the proteins involved. This situation hampers effective treatment and etiological investigation.\nCoagulation abnormalities [4\u20136], vascular interruptions of the blood supply to the proximal femur [7] and abnormal immunological reactivity [8] are all linked to the pathogenesis of LCPD. In addition, it has been suggested that leptin, a lipid regulator, might play an important role [9]. Another study showed abnormalities in the vascular structure and function in children with LCPD disease [10]. In experimental animal models, acute bone morphogenic protein 2 (BMP2) upregulation [11], increased vascular endothelial growth factor (VEGF) expression in the epiphyseal cartilage [12], and increased matrix mineralization [13] in the immature femoral head follow induction of ischemic osteonecrosis. These findings imply that multiple pathological reactions may be involved in the development of LCPD.\nComparative serum proteomic analysis has been used for years as a potent tool for understanding the pathology of many diseases, especially for those diseases, like LCPD, about which we have very limited knowledge. A similar strategy has been applied to osteonecrosis of the femoral head in adults [14, 15]. Given that these two diseases occur in the same location and have similar symptoms the results of that study should also help us understand the pathology of LCPD. Isobaric tags for relative and absolute quantitation (iTRAQ), is a quantitative proteomic approach with relatively high throughput that allows for simultaneous identification and peptide quantification by measuring the peak intensities of reporter ions with tandem mass spectroscopy (MS/MS) that has been developed and utilized to identify biomarkers for various disease conditions [16, 17]. This chemical labeling method involves the stable incorporation of isotopes into an amine tagging reagent, which can then be reliably detected by mass spectrometry, thereby permitting comparative quantitation of various proteins. This method has been suggested to be suitable for the discovery of differentially expressed proteins in a wide range of body fluids and tissues, including serum and plasma [17, 18].\nIn this study, we performed a comparison of serum proteomes in child patients with LCPD using the bioinformation match iTRAQ method, to assess the simultaneous expression of several serum proteins. This allowed us to characterize the associations between differentially expressed proteins and the incidence of LCPD.\nMethods\nPatients",
+          "cos_sim_score": 0.5196027159690857,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12261795",
+          "title": "Exosomal SPRY4 from adipogenic BMSCs impairs angiogenesis via the PTPRB/TIE2/PI3K axis in Steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12261795/",
+          "text": "Introduction\nSteroid-induced osteonecrosis of the femoral head (SONFH) accounts for 40\u201350% of non-traumatic osteonecrosis cases, predominantly affecting young and middle-aged individuals around 30\u201350 years old with a disability rate of 80% [1]. SONFH progresses rapidly, disrupting femoral head vascularization and triggering osteocyte apoptosis, ultimately leading to irreversible joint collapse [2]. Current early-stage interventions, such as core decompression combined with mesenchymal stem cell transplantation, exhibit limited therapeutic efficacy, failing to significantly restore hip function [3]. Over 85% of untreated patients eventually require total hip arthroplasty (THA), yet younger individuals face substantial risks of prosthesis failure, osteolysis, and deep infections, underscoring the critical need to delay disease progression and postpone primary THA [1, 4, 5]. Therefore, elucidating SONFH-specific regulatory networks and molecular targets is critical to developing early targeted therapies capable of halting pathological advancement and improving clinical outcomes [3, 6].\nThe pathological progression of SONFH is primarily driven by adipogenic differentiation of BMSCs [7]. Glucocorticoids promote BMSCs adipogenesis via suppression of the Wnt/\u03b2-catenin signaling pathway, which simultaneously inhibits its osteogenic differentiation and compromises bone marrow hematopoiesis through post-chemoradiotherapy adipocyte accumulation [7, 8]. While the angiogenic-osteogenic coupling forms the cornerstone of SONFH repair, current therapeutic strategies targeting single or dual pro-angiogenic/osteogenic factors show limited efficacy, suggesting the presence of inhibitory regulators disrupting this coupling [9, 10]. Although localized adipocyte accumulation is observed in SONFH tissues, its role of angiogenesis suppression remains undefined [11, 12]. This highlights the need to investigate whether dysregulated adipogenesis of BMSCs suppresses angiogenesis of vascular endothelial cells through specific molecular pathways and whether such intercellular crosstalk constitutes a critical mechanism in SONFH progression, thereby identifying novel therapeutic targets to mitigate SONFH advancement [3, 13, 14].\nExosomes, a type of extracellular vesicles around 40\u2013150\u00a0nm, mediate intercellular communication by transferring bioactive molecules including RNAs, proteins, and non-coding RNAs, playing critical roles in physiological regulation and disease progression [15, 16]. In bone microenvironment, BMSCs-derived exosomes enhance osteogenesis-angiogenesis coupling under physiological conditions, BMSCs-secreted exosomes promote osteogenesis, while endothelial cell-derived counterparts reciprocally support vascularized bone formation through angiogenic feedback [17\u201319]. However, exosomes from ONFH lesions exhibit pathological suppression of this coupling. Exosomes from SONFH tissue inhibit osteogenic/vascular differentiation via miR-100-5p/BMPR2 signaling and impair BMSCs function through CD41 deficiency, driving SD rats with SONFH model Progress [20, 21]. Notably, whether adipogenic BMSCs-derived exosomes directly suppress endothelial angiogenesis to exacerbate SONFH progression remains unclear [8, 22, 23]. Identifying specific exosomal components disrupting angiogenic-osteogenic coupling could reveal novel therapeutic targets against SONFH pathology.\nThis study identifies exosomal SPRY4 from adipogenic BMSCs as a novel inhibitor of angiogenesis, linking it to PTPRB-dependent suppression of TIE2/PI3K/AKT signaling. By integrating multi-omics and preclinical models, we establish the SPRY4-PTPRB-TIE2 axis as a therapeutic target to restore vascular-bone crosstalk and halt SONFH progression.\nMaterials and methods\nThe work has been reported in line with the ARRIVE guidelines 2.0.\nPatients and bone tissues\nThis study was conducted in accordance with the guidelines outlined in the Declaration of Helsinki. All experimental protocols were reviewed and approved by the Institutional Review Board of the First Affiliated Hospital of Chongqing Medical University. The research included 15 patients diagnosed with non-traumatic osteonecrosis of the femoral head (SONFH, Acro stages III and IV) and 15 patients with femoral neck fractures (FNF) who underwent hip arthroplasty at the hospital between October 2021 and July 2022. Patients with femoral neck fractures served as the control group. Demographic information for both cohorts is summarized in Table\u00a01. Immediately following resection, each femoral head specimen was bisected using an osteotome. One half of each specimen was promptly immersed in liquid nitrogen for subsequent experimental procedures, while the other half was fixed in 4% paraformaldehyde for histological examination.",
+          "cos_sim_score": 0.47563159465789795,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8840318",
+          "title": "Identification of potential autophagy-related genes in steroid-induced osteonecrosis of the femoral head via bioinformatics analysis and experimental verification",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8840318/",
+          "text": "Fig. 8\nValidation of the expression of potential diagnostic markers including BCL2L1, TNFSF10, PTEN and CFLAR via qRT-PCR. *p\u2009<\u20090.05\nDiscussion\nSONFH, which is a common, progressive and refractory orthopaedic disease, is one of the most frequent causes of hip disability worldwide [16]. The main manifestation of SONFH in the early stage is a pathological change in bone trabeculae combined with a lack of adequate replacement of cells, and its clinical symptoms are not obvious. With the progression of SONFH, the patient's femoral head exhibits local sclerosis cystic changes, and even collapse, which seriously affects the normal life and work of the patient [17]. There are many joint preserving therapeutic approaches in the management of osteonecrosis of the femoral head; these treatments, such as core decompression (CD), CD combined with bone marrow-derived cell therapy and osteotomies, can prevent or delay the necessity of total hip arthroplasty (THA) [18\u201320]. The exact pathogenesis of SONFH has not been defined, but with the accumulation of studies on femoral head necrosis, many hypotheses about SONFH pathogenicity have been proposed to explain the underlying mechanisms, such as programmed cell death [21\u201323]. Programmed cell death is an active process controlled by the related genes that regulates the development of the body and maintains a stable internal environment in multicellular organisms [24]. Autophagy is the key common form of programmed cell death in organisms, and regulates the negative effects of GC on osteoblasts, osteoclasts and osteocytes [25]. However, the potential biomarkers and regulatory mechanisms of autophagy involved in the pathological process of SONFH remain unclear. Therefore, the present study explored several genes that have not previously been mentioned in the context of autophagy and SONFH, which would provide an effective reference and important guidance for the clinical diagnosis and treatment of SONFH patients.\nTo the best of our knowledge, only a few published articles related to bone metabolic diseases have explored autophagy-related genes. A review of the role of autophagy in bone homeostasis and the onset of osteoporosis introduced the relevance of autophagy to bone physiology and discussed its role and therapeutic potential in the pathogenesis of osteoporosis [26]. However, the bioinformatics analysis of autophagy-related genes has not previously been explored in SONFH. In this study, we identified the first 34 potential differentially expressed autophagy-related genes associated with SONFH based on the intersection of differentially expressed genes from the GSE123568 dataset and the autophagy-related HADb via bioinformatics analysis; these genes included 25 upregulated genes and 9 downregulated genes. Some of these differentially expressed autophagy-related genes involved in SONFH have been previously studied. For example, Ye et al. demonstrated that phosphatase and tensin homologue (PTEN), a tumour suppressor gene that promotes cell apoptosis, was elevated in SONFH patients [27]. Chen et al. discovered eight promising serum biomarkers, including PTEN, as a potentially new non-invasive diagnostic tool for the detection of SONFH, which was similar to the results of Wang et al. In addition, accumulating evidence suggests that FAS mRNA expression levels in MC3T3-E1 cells are correlated with bone or osteoblast cell apoptosis in SONFH patients [28]. Additional studies will be needed to confirm the potential differentially expressed autophagy-related genes in SONFH.",
+          "cos_sim_score": 0.4729154706001282,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

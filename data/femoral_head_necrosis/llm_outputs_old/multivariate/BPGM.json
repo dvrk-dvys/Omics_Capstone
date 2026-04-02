@@ -1,0 +1,132 @@
+{
+  "rf_rank": 28,
+  "probe_id": "11719581_a_at",
+  "gene_symbol": "BPGM",
+  "score": 0.65,
+  "rf_n_nodes": 12,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 3.388,
+  "log_fc": -3.388,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 2,
+  "probe_ids": "11719581_a_at | 11736395_a_at",
+  "max_score": 0.65,
+  "mean_abs_fold_change": 3.3572,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T17:20:56",
+  "interpretation": "BPGM (Bisphosphoglycerate mutase) is crucial for regulating hemoglobin's oxygen affinity by modulating levels of 2,3-bisphosphoglycerate (2,3-BPG). In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), BPGM was identified as a potential biomarker through differential expression analysis in peripheral blood samples from SONFH patients. The study highlighted that BPGM, along with other genes, is involved in immune-related biological processes and erythrocyte homeostasis, which may be relevant to the pathophysiology of SONFH. The evidence supporting BPGM's role as a biomarker is derived from its identification in a study specifically focused on SONFH, indicating a direct connection to the disease. Therefore, BPGM shows promise as an early-detection biomarker for SONFH, with moderate confidence in its clinical relevance.",
+  "evidence_relation": "direct",
+  "evidence_tier": "Tier 1",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "BPGM is identified as a potential biomarker for early detection of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) due to its involvement in erythrocyte regulation and immune processes.",
+  "citations": [
+    "BPGM (P07738). https://www.uniprot.org/uniprotkb/P07738",
+    "BPGM \u2014 BPGM. https://platform.opentargets.org/target/ENSG00000172331",
+    "BPGM \u2194 hemolytic anemia due to diphosphoglycerate mutase deficiency. https://platform.opentargets.org/target/ENSG00000172331/associations",
+    "BPGM \u2194 autosomal recessive secondary polycythemia not associated with VHL gene. https://platform.opentargets.org/target/ENSG00000172331/associations",
+    "BPGM \u2194 placenta praevia. https://platform.opentargets.org/target/ENSG00000172331/associations",
+    "BPGM \u2194 vertebral column disorder. https://platform.opentargets.org/target/ENSG00000172331/associations",
+    "Screening of Potential Biomarkers in the Peripheral Serum for Steroid-Induced Osteonecrosis of the Femoral Head Based on WGCNA and Machine Learning Algorithms. (2022). https://pubmed.ncbi.nlm.nih.gov/35154510/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 3532,
+    "completion_tokens": 275,
+    "total_tokens": 3807,
+    "estimated_cost_usd": 0.000695
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P07738",
+          "title": "BPGM (P07738)",
+          "url": "https://www.uniprot.org/uniprotkb/P07738",
+          "text": "Protein: Bisphosphoglycerate mutase\nFunction: Plays a major role in regulating hemoglobin oxygen affinity by controlling the levels of its allosteric effector 2,3-bisphosphoglycerate (2,3-BPG). Also exhibits mutase (EC 5.4.2.11) activity",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000172331::function",
+          "title": "BPGM \u2014 BPGM",
+          "url": "https://platform.opentargets.org/target/ENSG00000172331",
+          "text": "Function: Plays a major role in regulating hemoglobin oxygen affinity by controlling the levels of its allosteric effector 2,3- bisphosphoglycerate (2,3-BPG). Also exhibits mutase (EC 5.4.2.11) activity. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172331::MONDO_0009113",
+          "title": "BPGM \u2194 hemolytic anemia due to diphosphoglycerate mutase deficiency",
+          "url": "https://platform.opentargets.org/target/ENSG00000172331/associations",
+          "text": "Disease: hemolytic anemia due to diphosphoglycerate mutase deficiency\nDescription: A rare, autosomal recessive, inherited disorder caused by mutation of the BPGM gene. It is characterized by hemolytic anemia and splenomegaly.\nAssociation score: 0.680",
+          "cos_sim_score": 0.6802433631082225,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172331::MONDO_0016598",
+          "title": "BPGM \u2194 autosomal recessive secondary polycythemia not associated with VHL gene",
+          "url": "https://platform.opentargets.org/target/ENSG00000172331/associations",
+          "text": "Disease: autosomal recessive secondary polycythemia not associated with VHL gene\nAssociation score: 0.370",
+          "cos_sim_score": 0.3695798546847018,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172331::EFO_0007442",
+          "title": "BPGM \u2194 placenta praevia",
+          "url": "https://platform.opentargets.org/target/ENSG00000172331/associations",
+          "text": "Disease: placenta praevia\nDescription: Abnormal placentation in which the placenta implants in the lower segment of the uterus (the zone of dilation) and may cover part or all of the opening of the cervix. It is often associated with serious antepartum bleeding and premature labor.\nAssociation score: 0.325",
+          "cos_sim_score": 0.3251134522916561,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172331::MONDO_0000812",
+          "title": "BPGM \u2194 vertebral column disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000172331/associations",
+          "text": "Disease: vertebral column disorder\nDescription: A disease involving the vertebral column.\nAssociation score: 0.102",
+          "cos_sim_score": 0.10220726288767065,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::35154510",
+          "title": "Screening of Potential Biomarkers in the Peripheral Serum for Steroid-Induced Osteonecrosis of the Femoral Head Based on WGCNA and Machine Learning Algorithms.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35154510/",
+          "year": "2022",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SONFH) has produced a substantial burden of medical and social experience. However, the current diagnosis is still limited. Thus, this study is aimed at identifying potential biomarkers in the peripheral serum of patients with SONFH. The expression profile data of SONFH (number: GSE123568) was acquired from the Gene Expression Omnibus (GEO) database. Differentially expressed genes (DEGs) in SONFH were identified and used for weighted gene coexpression network analysis (WGCNA). Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analyses were performed to investigate the biological functions. The protein-protein interaction (PPI) network and machine learning algorithms were employed to screen for potential biomarkers. Gene set enrichment analysis (GSEA), transcription factor (TF) enrichment analysis, and competing endogenous RNA (ceRNA) network were used to determine the biological functions and regulatory mechanisms of the potential biomarkers. A total of 562 DEGs, including 318 upregulated and 244 downregulated genes, were identified between SONFH and control samples, and 94 target genes were screened based on WGCNA. Moreover, biological function analysis suggested that target genes were mainly involved in erythrocyte differentiation, homeostasis and development, and myeloid cell homeostasis and development. Furthermore, GYPA, TMCC2, and BPGM were identified as potential biomarkers in the peripheral serum of patients with SONFH based on machine learning algorithms and showed good diagnostic values. GSEA revealed that GYPA, TMCC2, and BPGM were mainly involved in immune-related biological processes (BPs) and signaling pathways. Finally, we found that GYPA might be regulated by hsa-miR-3137 and that BPGM might be regulated by hsa-miR-340-3p. GYPA, TMCC2, and BPGM are potential biomarkers in the peripheral serum of patients with SONFH and might affect SONFH by regulating erythrocytes and immunity.",
+          "cos_sim_score": 0.483070433139801,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_fetch_by_id",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::35154510",
+          "title": "Screening of Potential Biomarkers in the Peripheral Serum for Steroid-Induced Osteonecrosis of the Femoral Head Based on WGCNA and Machine Learning Algorithms.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35154510/",
+          "year": "2022",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SONFH) has produced a substantial burden of medical and social experience. However, the current diagnosis is still limited. Thus, this study is aimed at identifying potential biomarkers in the peripheral serum of patients with SONFH. The expression profile data of SONFH (number: GSE123568) was acquired from the Gene Expression Omnibus (GEO) database. Differentially expressed genes (DEGs) in SONFH were identified and used for weighted gene coexpression network analysis (WGCNA). Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analyses were performed to investigate the biological functions. The protein-protein interaction (PPI) network and machine learning algorithms were employed to screen for potential biomarkers. Gene set enrichment analysis (GSEA), transcription factor (TF) enrichment analysis, and competing endogenous RNA (ceRNA) network were used to determine the biological functions and regulatory mechanisms of the potential biomarkers. A total of 562 DEGs, including 318 upregulated and 244 downregulated genes, were identified between SONFH and control samples, and 94 target genes were screened based on WGCNA. Moreover, biological function analysis suggested that target genes were mainly involved in erythrocyte differentiation, homeostasis and development, and myeloid cell homeostasis and development. Furthermore, GYPA, TMCC2, and BPGM were identified as potential biomarkers in the peripheral serum of patients with SONFH based on machine learning algorithms and showed good diagnostic values. GSEA revealed that GYPA, TMCC2, and BPGM were mainly involved in immune-related biological processes (BPs) and signaling pathways. Finally, we found that GYPA might be regulated by hsa-miR-3137 and that BPGM might be regulated by hsa-miR-340-3p. GYPA, TMCC2, and BPGM are potential biomarkers in the peripheral serum of patients with SONFH and might affect SONFH by regulating erythrocytes and immunity.",
+          "cos_sim_score": 0.483070433139801,
+          "source_type": "pubmed"
+        }
+      ]
+    }
+  ]
+}

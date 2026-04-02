@@ -1,0 +1,183 @@
+{
+  "probe_id": "11754197_x_at",
+  "gene_symbol": "FAM120B",
+  "score": 1.0,
+  "SD_TestAUC": 0.0202860206483394,
+  "abs_fold_change": 0.5032,
+  "probe_count": 3,
+  "probe_ids": "11754197_x_at | 11763266_at | 11736084_a_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.5254,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T18:35:19",
+  "interpretation": "FAM120B is a protein that acts as a coactivator for peroxisome proliferator-activated receptor gamma (PPARG), which is involved in adipogenesis and metabolic regulation. While there is no direct evidence linking FAM120B specifically to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in fat cell differentiation and potential involvement in skeletal system abnormalities suggest a possible indirect connection to bone health. The retrieved evidence primarily indicates its general biological functions without specific ties to SONFH, leading to a low confidence in its direct relevance as a biomarker for early detection of this condition. Therefore, while FAM120B may have some biological relevance, its potential as a clinically actionable biomarker for SONFH is weak and speculative.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "FAM120B may be indirectly related to bone health through its role in adipogenesis, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "FAM120B (Q96EK7). https://www.uniprot.org/uniprotkb/Q96EK7",
+    "FAM120B (Q96EK7-2). https://www.uniprot.org/uniprotkb/Q96EK7-2",
+    "FAM120B (Q96EK7-3). https://www.uniprot.org/uniprotkb/Q96EK7-3",
+    "FAM120B \u2014 FAM120B. https://platform.opentargets.org/target/ENSG00000112584",
+    "FAM120B \u2194 Abnormality of the skeletal system. https://platform.opentargets.org/target/ENSG00000112584/associations",
+    "FAM120B \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000112584/associations",
+    "FAM120B \u2194 sialolithiasis. https://platform.opentargets.org/target/ENSG00000112584/associations",
+    "FAM120B \u2194 inflammatory bowel disease. https://platform.opentargets.org/target/ENSG00000112584/associations",
+    "FAM120B \u2014 family with sequence similarity 120 member B (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MYC \u2014 MYC proto-oncogene, bHLH transcription factor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "PRKN \u2014 parkin RBR E3 ubiquitin protein ligase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MECP2 \u2014 methyl-CpG binding protein 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "UBC \u2014 ubiquitin C (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4548,
+    "completion_tokens": 290,
+    "total_tokens": 4838,
+    "estimated_cost_usd": 0.000856
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q96EK7",
+          "title": "FAM120B (Q96EK7)",
+          "url": "https://www.uniprot.org/uniprotkb/Q96EK7",
+          "text": "Protein: Constitutive coactivator of peroxisome proliferator-activated receptor gamma\nFunction: Functions as a transactivator of PPARG and ESR1. Functions in adipogenesis through PPARG activation (By similarity)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q96EK7-2",
+          "title": "FAM120B (Q96EK7-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q96EK7-2",
+          "text": "Protein: Isoform 2 of Constitutive coactivator of peroxisome proliferator-activated receptor gamma",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q96EK7-3",
+          "title": "FAM120B (Q96EK7-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q96EK7-3",
+          "text": "Protein: Isoform 3 of Constitutive coactivator of peroxisome proliferator-activated receptor gamma",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000112584::function",
+          "title": "FAM120B \u2014 FAM120B",
+          "url": "https://platform.opentargets.org/target/ENSG00000112584",
+          "text": "Function: Functions as a transactivator of PPARG and ESR1. Functions in adipogenesis through PPARG activation (By similarity). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000112584::HP_0000924",
+          "title": "FAM120B \u2194 Abnormality of the skeletal system",
+          "url": "https://platform.opentargets.org/target/ENSG00000112584/associations",
+          "text": "Disease: Abnormality of the skeletal system\nDescription: An abnormality of the skeletal system.\nAssociation score: 0.352",
+          "cos_sim_score": 0.3515658939084716,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000112584::EFO_0005772",
+          "title": "FAM120B \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000112584/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.312",
+          "cos_sim_score": 0.3121923321993046,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000112584::EFO_1001180",
+          "title": "FAM120B \u2194 sialolithiasis",
+          "url": "https://platform.opentargets.org/target/ENSG00000112584/associations",
+          "text": "Disease: sialolithiasis\nDescription: Calculi occurring in a salivary gland. Most salivary gland calculi occur in the submandibular gland, but can also occur in the parotid gland and in the sublingual and minor salivary glands.\nAssociation score: 0.300",
+          "cos_sim_score": 0.3002100341249558,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000112584::EFO_0003767",
+          "title": "FAM120B \u2194 inflammatory bowel disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000112584/associations",
+          "text": "Disease: inflammatory bowel disease\nDescription: A spectrum of small and large bowel inflammatory diseases of unknown etiology. It includes Crohn's disease, ulcerative colitis, and colitis of indeterminate type.\nAssociation score: 0.293",
+          "cos_sim_score": 0.2926724600448868,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "FAM120B \u2014 family with sequence similarity 120 member B",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: FAM120B\nGene name: family with sequence similarity 120 member B\nAliases / synonyms: CCPG, KIAA1838, PGCC1, SAN1, dJ894D12.1\nOrganism: Homo sapiens\nGene summary: Predicted to be involved in fat cell differentiation and peroxisome proliferator activated receptor signaling pathway. Predicted to be active in nucleus. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "FAM120B",
+          "aliases": "CCPG, KIAA1838, PGCC1, SAN1, dJ894D12.1",
+          "gene_description": "family with sequence similarity 120 member B"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MYC \u2014 MYC proto-oncogene, bHLH transcription factor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MYC\nGene name: MYC proto-oncogene, bHLH transcription factor\nAliases / synonyms: MRTL, MYCC, bHLHe39, c-Myc\nOrganism: Homo sapiens\nGene summary: This gene is a proto-oncogene and encodes a nuclear phosphoprotein that plays a role in cell cycle progression, apoptosis and cellular transformation. The encoded protein forms a heterodimer with the related transcription factor MAX. This complex binds to the E box DNA consensus sequence and regulates the transcription of specific target genes. Amplification of this gene is frequently observed in numerous human cancers. Translocations involving this gene are associated with Burkitt lymphoma and multiple myeloma in human patients. There is evidence to show that translation initiates both from an upstream, in-frame non-AUG (CUG) and a downstream AUG start site, resulting in the production of two isoforms with distinct N-termini. [provided by RefSeq, Aug 2017]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MYC",
+          "aliases": "MRTL, MYCC, bHLHe39, c-Myc",
+          "gene_description": "MYC proto-oncogene, bHLH transcription factor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "PRKN \u2014 parkin RBR E3 ubiquitin protein ligase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PRKN\nGene name: parkin RBR E3 ubiquitin protein ligase\nAliases / synonyms: AR-JP, LPRS2, PARK2, PDJ\nOrganism: Homo sapiens\nGene summary: The precise function of this gene is unknown; however, the encoded protein is a component of a multiprotein E3 ubiquitin ligase complex that mediates the targeting of substrate proteins for proteasomal degradation. Mutations in this gene are known to cause Parkinson disease and autosomal recessive juvenile Parkinson disease. Alternative splicing of this gene produces multiple transcript variants encoding distinct isoforms. Additional splice variants of this gene have been described but currently lack transcript support. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PRKN",
+          "aliases": "AR-JP, LPRS2, PARK2, PDJ",
+          "gene_description": "parkin RBR E3 ubiquitin protein ligase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MECP2 \u2014 methyl-CpG binding protein 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MECP2\nGene name: methyl-CpG binding protein 2\nAliases / synonyms: AUTSX3, MRX16, MRX79, MRXS13, MRXSL, PPMX, RS, RTS, RTT\nOrganism: Homo sapiens\nGene summary: DNA methylation is the major modification of eukaryotic genomes and plays an essential role in mammalian development. Human proteins MECP2, MBD1, MBD2, MBD3, and MBD4 comprise a family of nuclear proteins related by the presence in each of a methyl-CpG binding domain (MBD). Each of these proteins, with the exception of MBD3, is capable of binding specifically to methylated DNA. MECP2, MBD1 and MBD2 can also repress transcription from methylated gene promoters. In contrast to other MBD family members, MECP2 is X-linked and subject to X inactivation. MECP2 is dispensible in stem cells, but is essential for embryonic development. MECP2 gene mutations are the cause of most cases of Rett syndrome, a progressive neurologic developmental disorder and one of the most common causes of cognitive dis...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MECP2",
+          "aliases": "AUTSX3, MRX16, MRX79, MRXS13, MRXSL, PPMX, RS, RTS, RTT",
+          "gene_description": "methyl-CpG binding protein 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "UBC \u2014 ubiquitin C",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: UBC\nGene name: ubiquitin C\nAliases / synonyms: HMG20\nOrganism: Homo sapiens\nGene summary: This gene represents a ubiquitin gene, ubiquitin C. The encoded protein is a polyubiquitin precursor. Conjugation of ubiquitin monomers or polymers can lead to various effects within a cell, depending on the residues to which ubiquitin is conjugated. Ubiquitination has been associated with protein degradation, DNA repair, cell cycle regulation, kinase modification, endocytosis, and regulation of other cell signaling pathways. [provided by RefSeq, Aug 2010]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "UBC",
+          "aliases": "HMG20",
+          "gene_description": "ubiquitin C"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

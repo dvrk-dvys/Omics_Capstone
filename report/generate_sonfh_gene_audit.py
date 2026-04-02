@@ -227,42 +227,42 @@ if __name__ == "__main__":
 
     #python3
     #report / generate_sonfh_gene_audit.py \
-    #- -shortlist / Users / jordanharris / Code / Omics_Capstone / omics_ml_pipeline / app / data / output_multivariate_top100_min_s_50 / biomarker_shortlist.csv \
+    #- -shortlist / Users / jordanharris / Code / Omics_Capstone / AutoOmics_ML_Pipeline / app / data / output_multivariate_top100_min_s_50 / biomarker_shortlist.csv \
     #- -label
     #multivariate_top100_min_s_50 \
     #- -out / Users / jordanharris / Code / Omics_Capstone / report / audit_multivariate_top100_min_s_50.csv
 
     #python3
     #report / generate_sonfh_gene_audit.py \
-    #- -shortlist / Users / jordanharris / Code / Omics_Capstone / omics_ml_pipeline / app / data / output_multivariate_top500_min_s_45 / biomarker_shortlist.csv \
+    #- -shortlist / Users / jordanharris / Code / Omics_Capstone / AutoOmics_ML_Pipeline / app / data / output_multivariate_top500_min_s_45 / biomarker_shortlist.csv \
     #- -label
     #multivariate_top500_min_s_45 \
     #- -out / Users / jordanharris / Code / Omics_Capstone / report / audit_multivariate_top500_min_s_45.csv
 
     #python3
     #report / generate_sonfh_gene_audit.py \
-    #- -shortlist / Users / jordanharris / Code / Omics_Capstone / omics_ml_pipeline / app / data / output_univariate_top100_min_s_50 / biomarker_shortlist.csv \
+    #- -shortlist / Users / jordanharris / Code / Omics_Capstone / AutoOmics_ML_Pipeline / app / data / output_univariate_top100_min_s_50 / biomarker_shortlist.csv \
     #- -label
     #univariate_top100_min_s_50 \
     #- -out / Users / jordanharris / Code / Omics_Capstone / report / audit_univariate_top100_min_s_50.csv
 
     #python3
     #report / generate_sonfh_gene_audit.py \
-    #- -shortlist / Users / jordanharris / Code / Omics_Capstone / omics_ml_pipeline / app / data / output_univariate_top500_min_s_45 / biomarker_shortlist.csv \
+    #- -shortlist / Users / jordanharris / Code / Omics_Capstone / AutoOmics_ML_Pipeline / app / data / output_univariate_top500_min_s_45 / biomarker_shortlist.csv \
     #- -label
     #univariate_top500_min_s_45 \
     #- -out / Users / jordanharris / Code / Omics_Capstone / report / audit_univariate_top500_min_s_45.csv
 
     #python3
     #report / generate_sonfh_gene_audit.py \
-    #- -shortlist / Users / jordanharris / Code / Omics_Capstone / omics_ml_pipeline / app / data / output_univariate_top100_min_s_50 / feature_selection / univariate_ann / ann_probe_ranking.csv \
+    #- -shortlist / Users / jordanharris / Code / Omics_Capstone / AutoOmics_ML_Pipeline / app / data / output_univariate_top100_min_s_50 / feature_selection / univariate_ann / ann_probe_ranking.csv \
     #- -label
     #univariate_ann_ranking_top100_run \
     #- -out / Users / jordanharris / Code / Omics_Capstone / report / audit_univariate_ann_ranking_top100_run.csv
 
     #python3
     #report / generate_sonfh_gene_audit.py \
-    #- -shortlist / Users / jordanharris / Code / Omics_Capstone / omics_ml_pipeline / app / data / output_univariate_top500_min_s_45 / feature_selection / univariate_ann / ann_probe_ranking.csv \
+    #- -shortlist / Users / jordanharris / Code / Omics_Capstone / AutoOmics_ML_Pipeline / app / data / output_univariate_top500_min_s_45 / feature_selection / univariate_ann / ann_probe_ranking.csv \
     #- -label
     #univariate_ann_ranking_top500_min_s_45 \
     #- -out / Users / jordanharris / Code / Omics_Capstone / report / audit_univariate_ann_ranking_top500_min_s_45.csv

@@ -1,0 +1,152 @@
+{
+  "probe_id": "11716908_a_at",
+  "gene_symbol": "RNASET2",
+  "score": 1.0,
+  "SD_TestAUC": 0.0721984766282145,
+  "abs_fold_change": 1.1236,
+  "probe_count": 1,
+  "probe_ids": "11716908_a_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 1.1236,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:39:54",
+  "interpretation": "RNASET2 encodes a ribonuclease that plays a crucial role in the innate immune response by degrading RNA from microbial pathogens, which is sensed by Toll-like receptor 8 (TLR8). This function suggests a potential involvement in inflammatory processes, which may be relevant in the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), where inflammation and immune response can contribute to bone degeneration. However, the retrieved evidence does not explicitly connect RNASET2 to SONFH, indicating a lack of direct evidence linking this gene to the disease. Therefore, while RNASET2 may have a biological role in immune response that could theoretically influence SONFH, the evidence is weak and primarily speculative. As such, RNASET2's potential as a biomarker for early detection of SONFH is limited.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "RNASET2 may be involved in immune responses that could impact the progression of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "RNASET2 (O00584). https://www.uniprot.org/uniprotkb/O00584",
+    "RNASET2 (O00584-2). https://www.uniprot.org/uniprotkb/O00584-2",
+    "RNASET2 \u2014 RNASET2. https://platform.opentargets.org/target/ENSG00000026297",
+    "RNASET2 \u2194 cystic leukoencephalopathy without megalencephaly. https://platform.opentargets.org/target/ENSG00000026297/associations",
+    "RNASET2 \u2194 hypothyroidism. https://platform.opentargets.org/target/ENSG00000026297/associations",
+    "RNASET2 \u2194 basal cell carcinoma. https://platform.opentargets.org/target/ENSG00000026297/associations",
+    "RNASET2 \u2194 thyroid disease. https://platform.opentargets.org/target/ENSG00000026297/associations",
+    "RNASET2. https://en.wikipedia.org/wiki/RNASET2",
+    "Actibind. https://en.wikipedia.org/wiki/Actibind",
+    "Ribonuclease T2. https://en.wikipedia.org/wiki/Ribonuclease_T2",
+    "List of OMIM disorder codes. https://en.wikipedia.org/wiki/List_of_OMIM_disorder_codes"
+  ],
+  "token_usage": {
+    "prompt_tokens": 6289,
+    "completion_tokens": 251,
+    "total_tokens": 6540,
+    "estimated_cost_usd": 0.001094
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O00584",
+          "title": "RNASET2 (O00584)",
+          "url": "https://www.uniprot.org/uniprotkb/O00584",
+          "text": "Protein: Ribonuclease T2\nFunction: Ribonuclease that plays an essential role in innate immune response by recognizing and degrading RNAs from microbial pathogens that are subsequently sensed by TLR8 (PubMed:31778653). Cleaves preferentially single-stranded RNA molecules between purine and uridine residues, which critically contributes to the supply of catabolic uridine and the generation of purine-2',3'-cyclophosphate-terminated oligoribonucleotides (PubMed:31778653, PubMed:38697119). In turn, RNase T2 degradation products promote the RNA-dependent activation of TLR8 (PubMed:31778653). In plasmacytoid dendritic cells, it cooperates with PLD3 or PLD4 5'->3' exonucleases to process RNA fragments and release 2',3'-cyclic guanosine monophosphate (2',3'-cGMP), a potent stimulatory ligand for TLR7 (PubMed:38697119). Also plays a key role in degradation of mitochondrial RNA and processing of non-coding RNA imported from the cytosol into mitochondria (PubMed:28730546, PubMed:30184494). Participates as well in degradation of mitochondrion-associated cytosolic rRNAs (PubMed:30385512)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::O00584-2",
+          "title": "RNASET2 (O00584-2)",
+          "url": "https://www.uniprot.org/uniprotkb/O00584-2",
+          "text": "Protein: Isoform 2 of Ribonuclease T2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000026297::function",
+          "title": "RNASET2 \u2014 RNASET2",
+          "url": "https://platform.opentargets.org/target/ENSG00000026297",
+          "text": "Function: Ribonuclease that plays an essential role in innate immune response by recognizing and degrading RNAs from microbial pathogens that are subsequently sensed by TLR8 (PubMed:31778653). Cleaves preferentially single-stranded RNA molecules between purine and uridine residues, which critically contributes to the supply of catabolic uridine and the generation of purine-2',3'-cyclophosphate-terminated oligoribonucleotides (PubMed:31778653, PubMed:38697119). In turn, RNase T2 degradation products promote the RNA-dependent activation of TLR8 (PubMed:31778653). In plasmacytoid dendritic cells, it cooperates with PLD3 or PLD4 5'->3' exonucleases to process RNA fragments and release 2',3'-cyclic guanosine monophosphate (2',3'-cGMP), a potent stimulatory ligand for TLR7 (PubMed:38697119). Also plays a key role in degradation of mitochondrial RNA and processing of non-coding RNA imported from the cytosol into mitochondria (PubMed:28730546, PubMed:30184494). Participates as well in degradation of mitochondrion-associated cytosolic rRNAs (PubMed:30385512).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000026297::MONDO_0013058",
+          "title": "RNASET2 \u2194 cystic leukoencephalopathy without megalencephaly",
+          "url": "https://platform.opentargets.org/target/ENSG00000026297/associations",
+          "text": "Disease: cystic leukoencephalopathy without megalencephaly\nDescription: Cystic leukoencephalopathy without megalencephaly is characterized by non-progressive leukoencephalopathy, bilateral cysts in the anterior part of the temporal lobe, cerebral white matter anomalies and severe psychomotor impairment. Less than 50 patients have been described in the literature so far. Inheritance is most likely autosomal recessive.\nAssociation score: 0.796",
+          "cos_sim_score": 0.7959635809718769,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000026297::EFO_0004705",
+          "title": "RNASET2 \u2194 hypothyroidism",
+          "url": "https://platform.opentargets.org/target/ENSG00000026297/associations",
+          "text": "Disease: hypothyroidism\nDescription: Abnormally low levels of thyroid hormone.\nAssociation score: 0.560",
+          "cos_sim_score": 0.5595007887280244,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000026297::EFO_0004193",
+          "title": "RNASET2 \u2194 basal cell carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000026297/associations",
+          "text": "Disease: basal cell carcinoma\nDescription: A carcinoma involving the basal cells.\nAssociation score: 0.535",
+          "cos_sim_score": 0.5346080765996867,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000026297::EFO_1000627",
+          "title": "RNASET2 \u2194 thyroid disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000026297/associations",
+          "text": "Disease: thyroid disease\nDescription: A disease involving the thyroid gland.\nAssociation score: 0.509",
+          "cos_sim_score": 0.5089193701392393,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::RNASET2",
+          "title": "RNASET2",
+          "url": "https://en.wikipedia.org/wiki/RNASET2",
+          "text": "Ribonuclease T2 is an enzyme that in humans is encoded by the RNASET2 gene. It is a type of endoribonuclease.\nThis ribonuclease gene is a novel member of the Rh/T2/S-glycoprotein class of extracellular ribonucleases. It is a single copy gene that maps to 6q27, a region associated with human malignancies and chromosomal rearrangement.\nRNASET2 has been reported as a tumour associated antigen in anaplastic large cell lymphoma and other lymphomas.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.5627050399780273,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Actibind",
+          "title": "Actibind",
+          "url": "https://en.wikipedia.org/wiki/Actibind",
+          "text": "Actibind is an actin-binding fungal T(2)-RNase protein that is produced by the black mold Aspergillus niger, a microorganism used in biotechnology and food technology. In plants, actibind binds actin, a major component of the cytoskeleton, interfering with the plants' pollen tubes and halting cell growth. Research published in the journal Cancer on 15 May 2006 reports evidence that actibind has antiangiogenic and anticarcinogenic characteristics.  In human colon cancer, breast cancer and melanoma, increasing the level of actibind was found to reduce the ability of these cells to form tumorogenic colonies. In animal models, increased actibind inhibited the growth of colon cancer-derived tumors, metastases and blood vessel formation. During the completion of the Human Genome Project, the gene encoding for RNaseT2, the human actibind-like protein, was found on chromosome 6.\n\nWhy ACTIBIND?\nThe reason why ACTIBIND is an enzyme of interest in biochemical laboratories is due to the fact that researchers observed that ACTIBIND inhibits the elongation of pollen tubes by interfering with the intracellular actin network of the plant cell. The specific actin network ACTIBIND inhibits are actin rich pseudopods, which are important for a variety of cellular functions including elongation of plant pollen tubes, motility of mammalian cells, and most importantly cancer cell function. In cancer cells specifically, the actin rich pseudopods help the cancer's invasion and metastasis. Because ACTIBIND was able to interfere with actin networks in plant cells, researchers aimed to find out whether ACTIBIND could also inhibit mammalian cancer cell development.\n\nACTIBIND as an Antiangiogenic\nACTIBIND, an extracellular ribonuclease (T2-RNase), has been researched heavily in biochemical laboratories due the enzyme's ability to efficiently hydrolyze/degrade RNA molecules. The ability to cleave off RNA molecules it what makes ACTIBIND an effective antiangiogenic. Angiogenesis is the growth of blood vessels from existing ones, and is crucial in tumor growth. rRNA synthesis stimulated by angiogenin has been identified as the main way that tumors form new blood vessels, and therefore Antiangiogenic properties aim to block the growth of these blood vessels and stop potentially blood supply to tumors therefore slowing growth. Angiogenin increases expression in breast, colorectal, gastric, pancreatic, kidney, skin, and lung cancers. ACTIBIN inhibits angiogenesis by cleaving extracellular RNA molecules that are able to bind and potentially activate tumor associated endothelial cells. ACTIBIND also intervenes in angiogenesis through competition with angiogenin. Experiments done in vivo demonstrated that cell surface actin could possibly be a target for ACTIBIND in endothelial cells, which means ACTIBIND and angiogenin would need to compete for cell surface actin. If ACTIBIIND forms with the actin first, this would block the formation of actin-angiogenin which starts angiogenin in cancer cell organization. It was suggested that ACTIBIND inhibits communication, colonies, and motility of cancer cells through extracellular substrates by binding to cell surface actin rich pseudopods and interfering with the intracellular actin network. Further research should be conducted to determine more potential anticarcinogenic and antiangiogenic effects of ACTIBIND in humans.\n\nACTIBIND as an Anticarcinogenic\nIt was also proven through experiments talked about below, that ACTIBIND not only inhibits angiogenesis but apoptosis as well. Apoptosis is used by the body to eliminate unwanted cells that have been damaged beyond repair; the process of programmed cell death. Apoptosis' dysregulation can trigger irregular responses that contribute to cancer development.\n\nACTIBIND Experiments in vitro\nCancer Cell Colony Formation\nIn order to determine the effects of ACTIBIND on cancer cell colony formation, a study done in 2006 grew human colon, breast, and ovarian cancer cells in flasks then plated in a medium in the presence or absence of ACTIBIND. ACTIBIND proved to seriously inhibit the formation of all cancer cells that were tested. This experiment also showed that the control plates without ACTIBIND displayed many cytoplasmic extensions, compared to the inhibited cell extension in the  plates that contained ACTIBIND. This suggested to the researchers that ACTIBIND does in fact inhibit motility of mammalian cells.",
+          "cos_sim_score": 0.37435197830200195,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Ribonuclease T2",
+          "title": "Ribonuclease T2",
+          "url": "https://en.wikipedia.org/wiki/Ribonuclease_T2",
+          "text": "Ribonuclease T2 (EC 3.1.27.1, acid ribonuclease, acid RNase, base-non-specific ribonuclease, Escherichia coli ribonuclease I' ribonuclease PP2, Escherichia coli ribonuclease II, non-base specific ribonuclease, nonbase-specific RNase, nonspecific RNase, ribonnuclease (non-base specific), ribonuclease (non-base specific), ribonuclease II, ribonuclease M, ribonuclease N2, ribonuclease PP3, ribonuclease U4, ribonucleate 3'-oligonucleotide hydrolase, ribonucleate nucleotido-2'-transferase (cyclizing), RNAase CL, RNase (non-base specific), RNase II, RNase M, RNase Ms, RNase T2, ) is an enzyme. It is a type of endoribonuclease. This enzyme catalyses the following chemical reaction\n\nTwo-stage endonucleolytic cleavage to nucleoside 3'-phosphates and 3'-phosphooligonucleotides with 2',3'-cyclic phosphate intermediates\n\nSee also\nRNASET2\n\nReferences\nExternal links\nRibonuclease+T2 at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.34404289722442627,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of OMIM disorder codes",
+          "title": "List of OMIM disorder codes",
+          "url": "https://en.wikipedia.org/wiki/List_of_OMIM_disorder_codes",
+          "text": "Mental retardation, X-linked nonspecific, type 46;  300436; ARHGEF6\nMental retardation, X-linked syndromic 10;  300220; HSD17B10\nMental retardation, X-linked syndromic, Christianson type;  300243; SLC9A6\nMental retardation, X-linked syndromic, Turner type;  300706; HUWE1\nMental retardation, X-linked, 21/34;  300143; IL1RAPL1\nMental retardation, X-linked;  300495; NLGN4\nMental retardation, X-linked, FRAXE type;  309548; AFF2\nMental retardation, X-linked, Lubs type;  300260; MECP2\nMental retardation, X-linked, Snyder-Robinson type;  309583; SMS\nMental retardation, X-linked, syndromic 13;  300055; MECP2\nMental retardation, X-linked, syndromic 14;  300676; UPF3B\nMental retardation, X-linked, syndromic, JARID1C-related;  300534; KDM5C\nMental retardation, X-linked, with cerebellar hypoplasia and distinctive facial appearance;  300486; OPHN1\nMental retardation, X-linked, with epilepsy;  300423; ATP6AP2\nMental retardation, X-linked, with isolated growth hormone deficiency;  300123; SOX3\nMental retardation, X-linked, with or without epilepsy;  300802; SYP\nMental retardation, X-linked, ZDHHC9-related;  300799; ZDHHC9\nMental retardation, X-linked-72;  300271; RAB39B\nMental retardation, X-linked-9;  309549; FTSJ1\nMental retardation, X-linked-91;  300577; ZDHHC15\nMental retardation-hypotonic facies syndrome, X-linked, 2;  300639; CUL4B\nMental retardation-hypotonic facies syndrome, X-linked;  309580; ATRX\nMephenytoin poor metabolizer;  609535; CYP2C\nMetachondromatosis;  156250; PTPN11\nMetachromatic leukodystrophy due to SAP-b deficiency;  249900; PSAP\nMetachromatic leukodystrophy;  250100; ARSA\nMetaphyseal anadysplasia 1;  602111; MMP13\nMetaphyseal anadysplasia 2;  613073; MMP9\nMetaphyseal chondrodysplasia, Murk Jansen type;  156400; PTHR1\nMetaphyseal dysplasia without hypotrichosis;  250460; RMRP\nMetatropic dysplasia;  156530; TRPV4\nMethemoglobinemia, type I;  250800; CYB5R3\nMethemoglobinemia, type II;  250800; CYB5R3\nMethemoglobinemia, type IV;  250790; CYB5A\nMethionine adenosyltransferase deficiency, autosomal recessive;  250850; MAT1A\nMethylcobalamin deficiency, cblG type;  250940; MTR\nMethylmalonic aciduria and homocystinuria, cblC type;  277400; MMACHC\nMethylmalonic aciduria and homocystinuria, cblD type;  277410; C2orf25\nMethylmalonic aciduria and homocystinuria, cblF type;  277380; LMBRD1\nMethylmalonic aciduria due to transcobalamin receptor defect;  613646; CD320\nMethylmalonic aciduria, cblD type, variant 2;  277410; C2orf25\nMethylmalonic aciduria, vitamin B12-responsive;  251100; MMAA\nMethylmalonic aciduria, vitamin B12-responsive, due to defect in synthesis of adenosylcobalamin, cblB complementation type;  251110; MMAB",
+          "cos_sim_score": 0.24637636542320251,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of OMIM disorder codes",
+          "title": "List of OMIM disorder codes",
+          "url": "https://en.wikipedia.org/wiki/List_of_OMIM_disorder_codes",
+          "text": "Aicardi\u2013Gouti\u00e8res syndrome 1, dominant and recessive;  225750; TREX1\nAicardi\u2013Gouti\u00e8res syndrome 2;  610181; RNASEH2B\nAicardi\u2013Gouti\u00e8res syndrome 3;  610329; RNASEH2C\nAicardi\u2013Gouti\u00e8res syndrome 4;  610333; RNASEH2A\nAicardi\u2013Gouti\u00e8res syndrome 5;  612952; SAMHD1\nAICA-ribosiduria due to ATIC deficiency;  608688; ATIC\nAlagille syndrome 2;  610205; NOTCH2\nAlagille syndrome;  118450; JAG1\nAland Island eye disease;  300600; CACNA1F\nAlbinism, brown oculocutaneous;  203200; OCA2\nAlbinism, brown;  203290; TYRP1\nAlbinism, oculocutaneous, type IA;  203100; TYR\nAlbinism, oculocutaneous, type IB;  606952; TYR\nAlbinism, oculocutaneous, type II;  203200; OCA2\nAlbinism, rufous;  278400; TYRP1\nAlcohol sensitivity, acute;  610251; ALDH2\nAldosteronism, glucocorticoid-remediable;  103900; CYP11B1\nAlexander disease;  203450; GFAP\nAlexander disease;  203450; NDUFV1\nAlkaptonuria;  203500; HGD\nAllan\u2013Herndon\u2013Dudley syndrome;  300523; SLC16A2\nAlopecia universalis;  203655; HR\nAlopecia, neurologic defects, and endocrinopathy syndrome;  612079; RBM28\nAlpers syndrome;  203700; POLG\nAlpha/beta T-cell lymphopenia with gamma/delta T-cell expansion, severe cytomegalovirus infection, and autoimmunity;  609889; RAG1\nAlpha-2-plasmin inhibitor deficiency;  262850; PLI\nAlpha-ketoglutarate dehydrogenase deficiency;  203740; OGDH\nAlpha-methylacetoacetic aciduria;  203750; ACAT1\nAlpha-thalassemia myelodysplasia syndrome, somatic;  300448; ATRX\nAlpha-thalassemia mental retardation syndrome;  301040; ATRX\nAlport syndrome;  301050; COL4A5\nAlport syndrome, autosomal recessive;  203780; COL4A3\nAlport syndrome, autosomal recessive;  203780; COL4A4\nAlstr\u00f6m syndrome;  203800; ALMS1\nAlternating hemiplegia of childhood;  104290; ATP1A2\nAlveolar capillary dysplasia with misalignment of pulmonary veins;  265380; FOXF1\nAlveolar soft part sarcoma;  606243; ASPSCR1\nAlzheimer disease 1, familial;  104300; APP\nAlzheimer disease 6;  104300; AD6\nAlzheimer disease 8;  104300; AD8\nAlzheimer disease, late-onset, susceptibility to;  104300; NOS3\nAlzheimer disease, type 3;  607822; PSEN1\nAlzheimer disease, type 3, with spastic paraparesis and apraxia;  607822; PSEN1\nAlzheimer disease, type 3, with spastic paraparesis and unusual plaques;  607822; PSEN1\nAlzheimer disease-10;  104300; AD10\nAlzheimer disease-2;  104310; APOE\nAlzheimer disease-4;  606889; PSEN2\nAlzheimer disease-5;  104300; AD5\nAmelogenesis imperfecta, hypomaturation type, IIA3;  613211; WDR72\nAmelogenesis imperfecta, hypomaturation-hypoplastic type, with taurodontism;  104510; DLX3\nAmelogenesis imperfecta, hypoplastic/hypomaturation type;  301200; AMELX",
+          "cos_sim_score": 0.2209486961364746,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

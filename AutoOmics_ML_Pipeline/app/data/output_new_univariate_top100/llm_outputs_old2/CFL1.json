@@ -1,0 +1,209 @@
+{
+  "probe_id": "200021_PM_at",
+  "gene_symbol": "CFL1",
+  "score": 1.0,
+  "SD_TestAUC": 0.0641500299099584,
+  "abs_fold_change": 0.5752,
+  "probe_count": 1,
+  "probe_ids": "200021_PM_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.5752,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T18:54:36",
+  "interpretation": "Cofilin-1 (CFL1) is an actin-binding protein that plays a crucial role in the dynamics of the cytoskeleton by promoting the depolymerization of filamentous actin (F-actin). This function is vital for various cellular processes, including cell migration and morphology, which are essential in bone remodeling and repair mechanisms. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), dysregulation of actin dynamics may contribute to impaired osteogenic differentiation and bone homeostasis, potentially exacerbating the condition. Although direct evidence linking CFL1 to SONFH is limited, its involvement in actin dynamics and cellular responses to stress suggests a plausible role in the disease's pathophysiology. The evidence gathered indicates a moderate confidence in CFL1's relevance as a biomarker for SONFH, particularly given its association with other orthopedic conditions and its potential impact on bone health.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 2",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "CFL1 is implicated in actin dynamics, which may influence the pathogenesis of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "CFL1 (P23528). https://www.uniprot.org/uniprotkb/P23528",
+    "CFL1 \u2014 CFL1. https://platform.opentargets.org/target/ENSG00000172757",
+    "CFL1 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000172757/associations",
+    "CFL1 \u2194 neuroblastoma. https://platform.opentargets.org/target/ENSG00000172757/associations",
+    "CFL1 \u2194 neoplasm. https://platform.opentargets.org/target/ENSG00000172757/associations",
+    "CFL1 \u2194 hepatocellular carcinoma. https://platform.opentargets.org/target/ENSG00000172757/associations",
+    "CFL1 \u2014 cofilin 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ERBB2 \u2014 erb-b2 receptor tyrosine kinase 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ESR1 \u2014 estrogen receptor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "APP \u2014 amyloid beta precursor protein (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Investigating the Differential Circulating microRNA Expression in Adolescent Females with Severe Idiopathic Scoliosis: A Proof-of-Concept Observational Clinical Study (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC10779108/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8877,
+    "completion_tokens": 333,
+    "total_tokens": 9210,
+    "estimated_cost_usd": 0.001531
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P23528",
+          "title": "CFL1 (P23528)",
+          "url": "https://www.uniprot.org/uniprotkb/P23528",
+          "text": "Protein: Cofilin-1\nFunction: Binds to F-actin and exhibits pH-sensitive F-actin depolymerizing activity (PubMed:11812157). In conjunction with the subcortical maternal complex (SCMC), plays an essential role for zygotes to progress beyond the first embryonic cell divisions via regulation of actin dynamics (PubMed:15580268). Required for the centralization of the mitotic spindle and symmetric division of zygotes (By similarity). Plays a role in the regulation of cell morphology and cytoskeletal organization in epithelial cells (PubMed:21834987). Required for the up-regulation of atypical chemokine receptor ACKR2 from endosomal compartment to cell membrane, increasing its efficiency in chemokine uptake and degradation (PubMed:23633677). Required for neural tube morphogenesis and neural crest cell migration (By similarity)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000172757::function",
+          "title": "CFL1 \u2014 CFL1",
+          "url": "https://platform.opentargets.org/target/ENSG00000172757",
+          "text": "Function: Binds to F-actin and exhibits pH-sensitive F-actin depolymerizing activity (PubMed:11812157). In conjunction with the subcortical maternal complex (SCMC), plays an essential role for zygotes to progress beyond the first embryonic cell divisions via regulation of actin dynamics (PubMed:15580268). Required for the centralization of the mitotic spindle and symmetric division of zygotes (By similarity). Plays a role in the regulation of cell morphology and cytoskeletal organization in epithelial cells (PubMed:21834987). Required for the up-regulation of atypical chemokine receptor ACKR2 from endosomal compartment to cell membrane, increasing its efficiency in chemokine uptake and degradation (PubMed:23633677). Required for neural tube morphogenesis and neural crest cell migration (By similarity).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172757::EFO_0005772",
+          "title": "CFL1 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000172757/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.514",
+          "cos_sim_score": 0.5136377184129143,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172757::EFO_0000621",
+          "title": "CFL1 \u2194 neuroblastoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000172757/associations",
+          "text": "Disease: neuroblastoma\nDescription: Neuroblastoma (NB) is the most common solid, extracranial childhood tumor. It is an aggressive pediatric cancer that originates from neural crest tissues of the sympathetic nervous system.\nAssociation score: 0.158",
+          "cos_sim_score": 0.1582719857121411,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172757::EFO_0000616",
+          "title": "CFL1 \u2194 neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000172757/associations",
+          "text": "Disease: neoplasm\nDescription: A benign or malignant tissue growth resulting from uncontrolled cell proliferation. Benign neoplastic cells resemble normal cells without exhibiting significant cytologic atypia, while malignant cells exhibit overt signs such as dysplastic features, atypical mitotic figures, necrosis, nuclear pleomorphism, and anaplasia. Representative examples of benign neoplasms include papillomas, cystadenomas, and lipomas; malignant neoplasms include carcinomas, sarcomas, lymphomas, and leukemias.\nAssociation score: 0.112",
+          "cos_sim_score": 0.11227893319580885,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172757::EFO_0000182",
+          "title": "CFL1 \u2194 hepatocellular carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000172757/associations",
+          "text": "Disease: hepatocellular carcinoma\nDescription: A malignant tumor that arises from hepatocytes. Hepatocellular carcinoma is relatively rare in the United States but very common in all African countries south of the Sahara and in Southeast Asia. Most cases are seen in patients over the age of 50 years, but this tumor can also occur in younger individuals and even in children. Hepatocellular carcinoma is more common in males than females and is associated with hepatitis B, hepatitis C, chronic alcohol abuse and cirrhosis. Serum elevation of alpha-fetoprotein occurs in a large percentage of patients with hepatocellular carcinoma. Grossly, hepatocellular carcinoma may present as a single mass, as multiple nodules, or as diffuse liver involvement. Microscopically, there is a wide range of differentiation from tumor to tumor (well differentiated to poorly differentiated tumors). Hepatocellular carcinomas quickly metastasize to regional lymph nodes and lung. The overall median survival of untreated liver cell carcinoma is about 4 months. The most effective treatment of hepatocellular carcinoma is complete resection of the tumor. Lately, an increasing number of tumors have been treated with liver transplantation.\nAssociation score: 0.108",
+          "cos_sim_score": 0.10829525806668805,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "CFL1 \u2014 cofilin 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CFL1\nGene name: cofilin 1\nAliases / synonyms: CFL, HEL-S-15, cofilin\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene can polymerize and depolymerize F-actin and G-actin in a pH-dependent manner. Increased phosphorylation of this protein by LIM kinase aids in Rho-induced reorganization of the actin cytoskeleton. Cofilin is a widely distributed intracellular actin-modulating protein that binds and depolymerizes filamentous F-actin and inhibits the polymerization of monomeric G-actin in a pH-dependent manner. It is involved in the translocation of actin-cofilin complex from cytoplasm to nucleus.[supplied by OMIM, Apr 2004]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CFL1",
+          "aliases": "CFL, HEL-S-15, cofilin",
+          "gene_description": "cofilin 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ERBB2 \u2014 erb-b2 receptor tyrosine kinase 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ERBB2\nGene name: erb-b2 receptor tyrosine kinase 2\nAliases / synonyms: CD340, HER-2, HER-2/neu, HER2, MLN 19, MLN-19, NEU, NGL, TKR1, VSCN2, c-ERB-2, c-ERB2, p185(erbB2)\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the epidermal growth factor (EGF) receptor family of receptor tyrosine kinases. This protein has no ligand binding domain of its own and therefore cannot bind growth factors. However, it does bind tightly to other ligand-bound EGF receptor family members to form a heterodimer, stabilizing ligand binding and enhancing kinase-mediated activation of downstream signalling pathways, such as those involving mitogen-activated protein kinase and phosphatidylinositol-3 kinase. Allelic variations at amino acid positions 654 and 655 of isoform a (positions 624 and 625 of isoform b) have been reported, with the most common allele, Ile654/Ile655, shown here. Amplification and/or overexpression of this gene has been reported in numerous cancers, including breast and ovarian...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ERBB2",
+          "aliases": "CD340, HER-2, HER-2/neu, HER2, MLN 19, MLN-19, NEU, NGL, TKR1, VSCN2, c-ERB-2, c-ERB2, p185(erbB2)",
+          "gene_description": "erb-b2 receptor tyrosine kinase 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ESR1 \u2014 estrogen receptor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ESR1\nGene name: estrogen receptor 1\nAliases / synonyms: ER, ESR, ESRA, ESTRR, Era, NR3A1\nOrganism: Homo sapiens\nGene summary: This gene encodes an estrogen receptor and ligand-activated transcription factor. The canonical protein contains an N-terminal ligand-independent transactivation domain, a central DNA binding domain, a hinge domain, and a C-terminal ligand-dependent transactivation domain. The protein localizes to the nucleus where it may form either a homodimer or a heterodimer with estrogen receptor 2. The protein encoded by this gene regulates the transcription of many estrogen-inducible genes that play a role in growth, metabolism, sexual development, gestation, and other reproductive functions and is expressed in many non-reproductive tissues. The receptor encoded by this gene plays a key role in breast cancer, endometrial cancer, and osteoporosis. This gene is reported to have dozens of transcript va...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ESR1",
+          "aliases": "ER, ESR, ESRA, ESTRR, Era, NR3A1",
+          "gene_description": "estrogen receptor 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "APP \u2014 amyloid beta precursor protein",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: APP\nGene name: amyloid beta precursor protein\nAliases / synonyms: AAA, ABETA, ABPP, AD1, APPI, CTFgamma, CVAP, PN-II, PN2, alpha-sAPP, preA4\nOrganism: Homo sapiens\nGene summary: This gene encodes a cell surface receptor and transmembrane precursor protein that is cleaved by secretases to form a number of peptides. Some of these peptides are secreted and can bind to the acetyltransferase complex APBB1/TIP60 to promote transcriptional activation, while others form the protein basis of the amyloid plaques found in the brains of patients with Alzheimer disease. In addition, two of the peptides are antimicrobial peptides, having been shown to have bacteriocidal and antifungal activities. Mutations in this gene have been implicated in autosomal dominant Alzheimer disease and cerebroarterial amyloidosis (cerebral amyloid angiopathy). Multiple transcript variants encoding several different isoforms have been found for this gene. [provided by RefSeq, Aug 2014]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "APP",
+          "aliases": "AAA, ABETA, ABPP, AD1, APPI, CTFgamma, CVAP, PN-II, PN2, alpha-sAPP, preA4",
+          "gene_description": "amyloid beta precursor protein"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::10779108",
+          "title": "Investigating the Differential Circulating microRNA Expression in Adolescent Females with Severe Idiopathic Scoliosis: A Proof-of-Concept Observational Clinical Study",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10779108/",
+          "text": "MSCs play a significant role in the etiology and pathogenesis of AIS; several studies report a possible mechanism leading to low bone mass in AIS can be due to a reduced osteogenic differentiation ability of hMSCs and a decreased bone mineral density [25,53]. This information, together with the evidence that circulating EVs in pathological conditions could alter bone homeostasis [93], led us to investigate the role of circulating AIS-EVs in the osteogenic differentiation. In particular, we chose to treat MSCs with EVs from severe AIS females because of the results of the previous analyses. Indeed, we know EVs contain regulatory molecules, such as ncRNAs and proteins, which they deliver to target cells to influence their activity [94]. We confirmed the expression of miR-30a-3p, miR-30a-5p, miR-30e-3p, and miR-30d in AIS-EVs from severe females and then we demonstrated the expression of miR-30 family members increased in hMSCs treated with circulating AIS-EVs from severe females. Moreover, we observed inhibition of osteogenic differentiation when hMSCs were treated with AIS-EVs; in particular, we found a decreased expression in markers for osteogenic differentiation and a reduced secretion of Col1A1, the most abundant ECM protein highly implicated in disease [95]. The data obtained allowed us to hypothesize the molecules packaged in AIS-EVS could negatively influence the osteogenic differentiation of hMSC, partly also through the specific miRNA content. Conversely, EVs from healthy subjects did not affect osteogenesis. Finally, since EVs contained a large repertoire of regulatory proteins that, together with the ncRNAs component, transmitted specific signals to their target cells, we decided to also investigate the protein component of AIS-EVs from severe females and HC. The proteomic analysis of EVs from plasma samples of severe AIS females revealed a small group of dysregulated proteins. Specifically, we observed elevated levels of amyloid A protein (SAA1) and cofilin 1 (CFL1) in AIS patients compared to HC. SAA1 is a proinflammatory adipokine described in human osteoarthritic (OA) joints, resulting from a local production, and diffusion due to abnormally high plasma concentration. It has been demonstrated the A-SAA expression within the joint cavity of OA patients may play a key role in inflammatory process associated with osteoarthritis [96]. In addition, A-SAA levels in OA plasma and synovial fluid are positively correlated with the Kellgren and Lawrence grade, which measures the severity of the disease [96]. In mice, the high production of hepatic serum amyloid A1 promoted chronic inflammation and caused bone loss [97]. Regarding cofilin-1, a recent pilot study reported adipokines were implicated also in AIS development and progression [98]. Bisphosphonates disrupts actin organization and decreases in vitro cofilin levels, an actin regulatory protein that severs actin filaments [99]. A pharmacological decrease in cofilin caused an inhibition of prostate cancer cells invasion, reducing the risk of bone metastasis. Studies have also shown inhibiting the expression of actin depolymerization factors enhances osteogenesis [99,100,101]. Lastly, it is important to note distinctive cytoskeletal alterations are responsible for osteogenesis imperfecta outcomes [101]. Data provided by the literature, together with our results, are very encouraging as they allow us to hypothesize the existence of new protein markers related to AIS. Collectively, our results demonstrated circulating miRNAs in plasma of severe AIS, as well as circulating vesicular proteins, could potentially discriminate severe AIS patients from healthy controls and could be used as biomarkers, after appropriate future validation studies. Furthermore, our preliminary study suggests these dysregulated circulating miRNAs, free or embedded in EVs, may also be involved in the deregulation of bone homeostasis, which may also contribute to the pathogenesis of AIS.\n4. Materials and Methods\n4.1. Study Design and Population",
+          "cos_sim_score": 0.3034527897834778,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10779108",
+          "title": "Investigating the Differential Circulating microRNA Expression in Adolescent Females with Severe Idiopathic Scoliosis: A Proof-of-Concept Observational Clinical Study",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10779108/",
+          "text": "It should be noted inhibiting histone deacetylase promoted osteoblast maturation and the use of HDAC inhibitors have been recently proposed for the treatment of bone disease [82,83,84,85]. The results of our study aligned with previous research on these three microRNAs, leading us to hypothesize they could be considered a unique microRNA signature of AIS disease.\nHowever, our study revealed a significant portion of the dysregulated circulating miRNAs was overexpressed in the plasma of AIS patients compared to HC. Of all the miRNAs evidenced in AIS patients, a select few had particularly grasped our attention more thoroughly, such as a group of circulating miRNAs (hsa-miR-30a-3p, hsa-miR-30a-5p, hsa-miR-30e-3p, hsa-miR-30d) belonging to the miR-30 family. Numerous studies highlighted the close relationship between the miR-30 family and osteogenesis and may be implicated in the occurrence and development of bone and joint diseases [51]. Their role is described in several orthopedic diseases, such as osteoporosis [86,87], arthritis [88,89], intervertebral disc degeneration [90,91], and bone tumors [92]. Critical factors, such as Smad1 and Runx2, are common target genes of miR-30 family members, which actively regulate signaling pathways of bone homeostasis (Wnt/\u03b2-Catenin, mTOR, PI3K/AKT, etc.) [51]. Even EVs, circulating in blood and acting as vehicles between cells, can modify the phenotype of target cells by packaging and delivering miRNAs belonging to miR-30 family. For example, circulating EVs secreted by neoplastic mast cells deliver miR-30a in osteoblast and inhibit differentiation, by suppressing Runx2 and SMAD1/5 expression. They can induce mineralization decrease and drastically reduce trabecular bone volume and microarchitecture, in mice [55]. Notably, overexpression of miR-30b-5p and miR-30c-5p was observed in a small cohort of patients with severe scoliosis compared to healthy controls, confirming for us the potential importance of this family of miRNAs in severe AIS [23].The importance of miR-30 family in bone led us to carry out further analysis in specific groups of AIS patients (severe female AIS patients vs. female HC; moderate/mild AIS patients vs. HC; male AIS patients vs. male HC). Our results indicated for the first time circulating miR-30 members were significantly overexpressed only in female patients with severe scoliosis. These patients were characterized by high Cobb angles and many of them underwent surgery. Conversely, AIS patients with moderate or mild scoliosis, as well as severe male patients, did not present a significative up-regulation of miR-30 members, when compared to HC. Overall, the data collected indicated circulating miRNAs belonging to the miR-30 family could be promising candidates for discriminating severe AIS patients from HC. Future analyses are needed to examine the expression of miR-30 members in larger cohorts of patients, adequately representing all degrees of disease, from mild to severe.",
+          "cos_sim_score": 0.29050979018211365,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10779108",
+          "title": "Investigating the Differential Circulating microRNA Expression in Adolescent Females with Severe Idiopathic Scoliosis: A Proof-of-Concept Observational Clinical Study",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10779108/",
+          "text": "Moreover, we demonstrated a relevant effect of AIS-EVs on the expression of both COL1A1 RNA and secreted protein, which resulted in strongly down-regulated expression (Figure 9A,B). Alizarin red staining, commonly used to identify and stain calcium deposits, revealed a significant delay in osteoblastic mineralization when hMSCs were treated with AIS-EVs (Figure 9C).\n2.5. Proteomic Analysis of AIS-Derived Extracellular Vesicles\nThe proteome of AIS-EVs (n = 5 females with severe AIS) and HC-EVs (n = 5 females HC) was analyzed using mass spectrometry (MS)-based proteomics, following the methods described in materials and methods. It should be noted AIS-EVs exhibited a few dysregulated proteins, which were found to be associated with osteogenesis imperfecta, inhibition of osteogenesis and activation of adipogenesis. Figure 10A,B display the volcano plot and heat map, respectively, which report the significantly and differentially expressed proteins in both groups of analysis. Please refer to Supplementary Table S4 for complete proteomic analysis.\n3. Discussion\nAIS represent the most common spinal deformity during puberty, occurring in young aged between 10 to 18 years old, characterized by growth spurts and changes due to puberty. It is defined by abnormal skeletal growth, impaired bone density and mineral metabolism [60]. Gender affects it, with a higher percentage in girls as they become older and with higher Cobb angle. Furthermore, genetic factors and age of onset are important determinants in AIS [8]. It is noteworthy adolescents with scoliosis experience both physiological and psychosocial consequences, including deformity, pain, and decreased ventilatory capacity as the thoracic cavity decreases. Consequently, AIS can have a negative impact on health-related quality of life and self-image [61,62]. It is therefore clear, an early analysis can positively influence future orthopedic choices, significantly reducing the possibility of surgery [63,64]. This could also be made possible by means of biomarkers with diagnostic and prognostic significance; the identification of these candidates could improve disease management and also provide insight into the pathogenesis of AIS.\nCirculating miRNAs, whether free or embedded in EVs, are considered promising candidates for biomarkers discovery due to their finely tuned dysregulation during diseases progression, representing a hallmark also in orthopedic disorders [33,65,66,67]. Furthermore, minimally invasive extraction procedures clearly benefit the recovery of circulating miRNAs from blood [68,69]. Several studies have identified a significative correlation between changes in circulating miRNA levels and the risk of osteoporosis and fragility fractures [70,71,72]. A specific signature of circulating miRNAs seems to reflect the presence of osteoporotic vertebral fractures in postmenopausal women, while circulating miRNAs are correlated with the levels of bone turnover markers[72]. Even in intervertebral disc degeneration (IVDD) were identified specific circulating miRNAs, undergoing perturbation during the pathogenesis of disc degeneration [43]. Bioinformatic analyses have confirmed these circulating miRNAs, identified in orthopedic pathologies, were involved in multiple signaling pathways associated with pathogenesis. These miRNAs can functionally participate in the initiation and progression of orthopedic disease, can regulate osteogenic differentiation or bone formation and skeletal muscle [73].\nRecent studies have revealed circulating miRNAs acted as a distinct biomarker signature to diagnose AIS with high sensitivity and specificity [22]. Researchers demonstrated an active role of circulating miRNAs in the epigenetic control of signaling pathways by regulating osteoblast and osteoclast differentiation. Moreover, some of them were already known for their involvement in cell signaling pathways that controlled the pluripotency of stem cells, such as the Wnt/\u03b2-catenin pathway [22]. Other studies compared data from differentially expressed miRNAs on bone tissues with the plasma levels of the selected miRNAs candidates, to develop a composite diagnostic model for AIS [50]. Overexpression of miR-151a-3p in primary osteoblasts from severe AIS patients negatively affected bone homeostasis, and the high plasma expression levels suggested miR-151a-3p as a potential biomarker for severe AIS. Furthermore, the authors did not find any dysregulated miRNAs that could be indicated as potential biomarkers for moderate AIS, hypothesizing dysregulated miRNAs were mainly involved in the progression of unbalanced spinal growth. [23]. Thus, despite the complexity of the disease, the role of miRNAs in the pathogenesis of AIS is emerging.",
+          "cos_sim_score": 0.28663456439971924,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10779108",
+          "title": "Investigating the Differential Circulating microRNA Expression in Adolescent Females with Severe Idiopathic Scoliosis: A Proof-of-Concept Observational Clinical Study",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10779108/",
+          "text": "In this study, to investigate these aspects as well, we performed miRNAs profiling from 20 plasma samples of AIS patients and 10 plasma samples from HC, using microfluidic cards. The results showed a group of miRNAs that were dysregulated in the AIS patients compared to HC. Bioinformatic analysis revealed the differentially expressed miRNAs targeted genes involved in cell signaling pathways that regulated bone homeostasis and also suggested an association with several diseases, including scoliosis, spinal curvature, and other bone characteristics. Furthermore, some miRNAs had already been described for their role in other orthopedic pathologies[51,52,74,75,76]. Three miRNAs were down-regulated in our AIS patients: miR-1294, miR-200a, and miR-548m. Interestingly, it is known miR-1294 targets HOXA9 and has a tumor suppressive role in osteosarcoma where it is down-regulated, correlating with a poor 5 year overall survival [77,78]. MiR-200a activates Nrf2 (NF-E2-related factor: a key antioxidant signaling) in primary human osteoblasts, protecting them from dexamethasone. Oxidative stress is a primary contributor to orthopedic ailments, including osteoarthritis and osteoporosis. The stress interferes with bone remodeling and increases the likelihood of fractures [79,80]. Severe muscle injury and accumulated oxidative stress increased in idiopathic scoliosis compared to HC [81]. Finally, in tumour microenvironments, the down-regulation of miR-548m has been linked with the activation of c-Myc, which subsequently up-regulated HDAC6, resulting in stroma-mediated survival of cancer cell.\nIt should be noted inhibiting histone deacetylase promoted osteoblast maturation and the use of HDAC inhibitors have been recently proposed for the treatment of bone disease [82,83,84,85]. The results of our study aligned with previous research on these three microRNAs, leading us to hypothesize they could be considered a unique microRNA signature of AIS disease.",
+          "cos_sim_score": 0.2742155194282532,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10779108",
+          "title": "Investigating the Differential Circulating microRNA Expression in Adolescent Females with Severe Idiopathic Scoliosis: A Proof-of-Concept Observational Clinical Study",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10779108/",
+          "text": "The etiology of AIS is still debated, and the results shared are still very controversial. Many theories have been proposed, including genes and heredity, environment, hormones, metabolism, biochemistry, neurological factors, and asymmetric growth [13,14]. More recently, single-cell RNA sequencing approaches revealed differences in bone development-related cell differentiation between AIS patients and healthy control (HC). Moreover, a potential immunological pathogenesis of MSC differentiation dysfunction in AIS has been proposed [15], as well as a correlation among the aberrant DNA methylation and the formation of hemivertebra and congenital scoliosis [16,17].\nNon-coding RNAs (ncRNAs) are taking on an emerging role in many orthopedic diseases [18,19,20,21], and among these also in scoliosis. In fact, a number of studies have shown there was a dysregulation of miRNAs in scoliosis and have linked this to the pathogenesis of the disease [22,23,24,25,26,27,28]. Based on their length, they have been classified into short non-coding RNAs (<200 nucleotides: microRNAs) or long non-coding RNAs (>200 nucleotides: lncRNAs and circRNAs). MicroRNAs (miRNAs) are regulatory molecules, affecting the stability and/or translation of target mRNAs. Aberrant regulation of various miRNAs has been reported in bone tissue during osteoporosis [29], in intervertebral disc degeneration pathogenesis [30],and osteoarthritis disease [31]. Interestingly, several miRNAs have been identified to be dysregulated in serum and plasma of patients with orthopedic diseases. Circulating miRNAs have been associated with bone mineral density [32] and proposed as diagnostic and prognostic biomarkers [33]. Overall, circulating miRNAs may provide useful diagnostic and therapeutic information because of their role in orthopedic disorders. They may reflect the disease state and are differentially affected by therapeutic treatment [34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49]. Small-RNA sequencing studies evidenced a series of circulating miRNAs differentially expressed in the AIS patients compared to the HC. Notably, some of these miRNAs targeted genes involved in cell signaling pathways that regulate the pluripotency of stem cells; others in osteoblast/osteoclast differentiation mechanism or in the mineralization of smooth muscle cells [22]. Overall, it has been proposed these miRNAs contributed to the epigenetic control of signaling pathways correlated with bone metabolism in healthy and patients. Dysregulation of circulating miRNAs in AIS may also affect osteocyte function, resulting in low bone mass. In this regard, Zang et al. also showed a significant negative correlation between circulating miR-145 levels and serum sclerostin, osteopontin, and osteoprotegerin in AIS [26]. As shown by Chen et al., the analysis of differentially expressed miRNAs in AIS bone and plasma samples represents a new source of biomarkers and actors in the aetiopathogenesis of AIS; for example, miRNA profiles in bone tissues from AIS and healthy controls identified the upregulation of miR-96-5p, which was further confirmed in plasma samples from AIS girls compared to HC [50].",
+          "cos_sim_score": 0.25306040048599243,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

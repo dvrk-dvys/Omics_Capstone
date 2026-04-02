@@ -1,0 +1,168 @@
+{
+  "rf_rank": 43,
+  "probe_id": "11739069_s_at",
+  "gene_symbol": "PSAP",
+  "score": 0.55,
+  "rf_n_nodes": 5,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.9646,
+  "log_fc": 0.9646,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11739069_s_at",
+  "max_score": 0.55,
+  "mean_abs_fold_change": 0.9646,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T20:25:17",
+  "interpretation": "PSAP, or prosaposin, is a protein that plays a role in the hydrolysis of sphingolipids, which are important components of cell membranes and are involved in various cellular processes, including apoptosis and inflammation. While there is no direct evidence linking PSAP to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in lipid metabolism and cellular signaling suggests a potential indirect role in bone health and response to steroid treatment. The retrieved evidence primarily indicates its association with lysosomal storage diseases rather than SONFH specifically, leading to a low confidence in its direct relevance to this condition. Therefore, while PSAP may have biological implications in cellular processes that could affect bone health, its potential as a biomarker for early detection of SONFH is weak and speculative.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "PSAP's role in lipid metabolism suggests a possible but unproven connection to the mechanisms underlying Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "MTCH1 (Q9NZJ7). https://www.uniprot.org/uniprotkb/Q9NZJ7",
+    "SFTPA1 (Q8IWL2). https://www.uniprot.org/uniprotkb/Q8IWL2",
+    "SFTPA2 (Q8IWL1). https://www.uniprot.org/uniprotkb/Q8IWL1",
+    "PSAP \u2014 PSAP. https://platform.opentargets.org/target/ENSG00000197746",
+    "PSAP \u2194 Gaucher disease due to saposin C deficiency. https://platform.opentargets.org/target/ENSG00000197746/associations",
+    "PSAP \u2194 Krabbe disease due to saposin A deficiency. https://platform.opentargets.org/target/ENSG00000197746/associations",
+    "PSAP \u2194 combined PSAP deficiency. https://platform.opentargets.org/target/ENSG00000197746/associations",
+    "PSAP \u2194 Krabbe disease. https://platform.opentargets.org/target/ENSG00000197746/associations",
+    "PSAP. https://en.wikipedia.org/wiki/PSAP",
+    "PSAP Sigli. https://en.wikipedia.org/wiki/PSAP_Sigli",
+    "Enhanced 911. https://en.wikipedia.org/wiki/Enhanced_911",
+    "Personal sound amplification product. https://en.wikipedia.org/wiki/Personal_sound_amplification_product"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5543,
+    "completion_tokens": 232,
+    "total_tokens": 5775,
+    "estimated_cost_usd": 0.000971
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9NZJ7",
+          "title": "MTCH1 (Q9NZJ7)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9NZJ7",
+          "text": "Protein: Mitochondrial carrier homolog 1\nFunction: Protein insertase that mediates insertion of transmembrane proteins into the mitochondrial outer membrane (PubMed:36264797). Catalyzes insertion of proteins with alpha-helical transmembrane regions, such as signal-anchored, tail-anchored and multi-pass membrane proteins (By similarity). Does not mediate insertion of beta-barrel transmembrane proteins (By similarity). May play a role in apoptosis (PubMed:12377771)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q8IWL2",
+          "title": "SFTPA1 (Q8IWL2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8IWL2",
+          "text": "Protein: Pulmonary surfactant-associated protein A1\nFunction: In presence of calcium ions, it binds to surfactant phospholipids and contributes to lower the surface tension at the air-liquid interface in the alveoli of the mammalian lung and is essential for normal respiration. Enhances the expression of MYO18A/SP-R210 on alveolar macrophages (By similarity) (Microbial infection) Recognition of M.tuberculosis by dendritic cells may occur partially via this molecule (PubMed:17158455, PubMed:21203928). Can recognize, bind, and opsonize pathogens to enhance their elimination by alveolar macrophages (PubMed:21123169) (Microbial infection) Binds M.pneumoniae CARDS toxin, serves as one receptor for this pathogen (PubMed:15845487, PubMed:25139904). When SFTPA1 is down-regulated by siRNA, less toxin binds to human cells and less vacuolization (a symptom of M.pneumoniae infection) is seen (PubMed:25139904)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q8IWL1",
+          "title": "SFTPA2 (Q8IWL1)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8IWL1",
+          "text": "Protein: Pulmonary surfactant-associated protein A2\nFunction: In presence of calcium ions, it binds to surfactant phospholipids and contributes to lower the surface tension at the air-liquid interface in the alveoli of the mammalian lung and is essential for normal respiration",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000197746::function",
+          "title": "PSAP \u2014 PSAP",
+          "url": "https://platform.opentargets.org/target/ENSG00000197746",
+          "text": "Function: Saposin-A and saposin-C stimulate the hydrolysis of glucosylceramide by beta-glucosylceramidase (EC 3.2.1.45) and galactosylceramide by beta-galactosylceramidase (EC 3.2.1.46). Saposin- C apparently acts by combining with the enzyme and acidic lipid to form an activated complex, rather than by solubilizing the substrate.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197746::MONDO_0012517",
+          "title": "PSAP \u2194 Gaucher disease due to saposin C deficiency",
+          "url": "https://platform.opentargets.org/target/ENSG00000197746/associations",
+          "text": "Disease: Gaucher disease due to saposin C deficiency\nDescription: Any Gaucher disease in which the cause of the disease is a mutation in the PSAP gene.\nAssociation score: 0.810",
+          "cos_sim_score": 0.8100495894070405,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197746::MONDO_0012720",
+          "title": "PSAP \u2194 Krabbe disease due to saposin A deficiency",
+          "url": "https://platform.opentargets.org/target/ENSG00000197746/associations",
+          "text": "Disease: Krabbe disease due to saposin A deficiency\nAssociation score: 0.801",
+          "cos_sim_score": 0.8011459675060192,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197746::MONDO_0012719",
+          "title": "PSAP \u2194 combined PSAP deficiency",
+          "url": "https://platform.opentargets.org/target/ENSG00000197746/associations",
+          "text": "Disease: combined PSAP deficiency\nDescription: Encephalopathy due to prosaposin deficiency is a lysosomal storage disease belonging to the group of sphingolipidoses.\nAssociation score: 0.790",
+          "cos_sim_score": 0.7900078152716432,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197746::MONDO_0009499",
+          "title": "PSAP \u2194 Krabbe disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000197746/associations",
+          "text": "Disease: Krabbe disease\nDescription: A lysosomal disorder that affects the white matter of the central and peripheral nervous systems. It includes infantile, late-infantile/juvenile and adult forms.\nAssociation score: 0.627",
+          "cos_sim_score": 0.6269191439822087,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::PSAP",
+          "title": "PSAP",
+          "url": "https://en.wikipedia.org/wiki/PSAP",
+          "text": "PSAP may refer to:\n\nProsaposin, a protein associated with Gaucher disease\nPublic-safety answering point\nProstatic-specific acid phosphatase\nPersonal sound amplification products\nPresentation Service Access Point, see Service Access Point\nPSAP Sigli, an Indonesian football club\nPuget Sound and Pacific Railroad, a railroad in Washington, United States\nPreservation self-assessment program, a collection care tool for heritage institutions",
+          "cos_sim_score": 0.6733360290527344,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::PSAP Sigli",
+          "title": "PSAP Sigli",
+          "url": "https://en.wikipedia.org/wiki/PSAP_Sigli",
+          "text": "Persatuan Sepakbola Aceh Pidie Sigli, commonly known as PSAP Sigli, is an Indonesian football club based in Pidie Regency, Aceh. They play in Liga 4. Their best achievement was to play in Indonesia Super League in 2011\u201312 season.\nTheir home venue is Kuta Asan Stadium, which is located in downtown Sigli.\n\nSeason-by-season records\nReferences\nExternal links\nPSAP Sigli on Instagram\nPSAP Sigli at Liga-Indonesia.co.id",
+          "cos_sim_score": 0.452553927898407,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Enhanced 911",
+          "title": "Enhanced 911",
+          "url": "https://en.wikipedia.org/wiki/Enhanced_911",
+          "text": "In Canada\nIn 2009, the Canadian Radio-television and Telecommunications Commission (CRTC) required implementation of Phase II Stage 1 for wireless carrier by 1 February 2010, in areas that provide landline E911. Many Canadians now have access to Phase II service.\n\nPublic-safety answering point (PSAP)\nThe final destination of an E911 call (where the 911 operator sits) is a public safety answering point (PSAP). There may be multiple PSAPs within the same exchange or one PSAP may cover multiple exchanges. The territories (Emergency Service Zone) covered by a single PSAP is based on the dispatch and response arrangements for the fire, police, and medical services for a particular area. All primary PSAPs have a regional Emergency Service Number (ESN), a number identifying the PSAP.\nThe Caller Location Information (CLI) provided is normally integrated into emergency dispatch center's computer-assisted dispatch (CAD) system. Early CAD systems provided text display of the caller's address, call history and available emergency response resources. In 1994, working in cooperation with the emergency response agencies of Covington, KY, 911 Mapping Systems, Inc. founded in 1992 by Robert Graham Thomas Jr., implemented the first real-time on-screen E911 street map display to highlight the caller's position, nearest available emergency responders and other relevant information such as fire hydrants, hazardous materials and/or other data maintained by the city. Shortly thereafter, integrated mapping became a standard and integral part of all CAD systems and continues to evolve alongside 911 response technology. For Wireline E911, the location is an address. For Wireless E911, the location is a coordinate. Not all PSAPs have the Wireless and Wireline systems integrated.\n\nInterconnection details\nEach telephone company (local exchange carrier, or LEC) has at least two redundant DS0-level (that is, 64 kbit/s, or voice quality) trunks connecting each host office telephone switch to each call center. These trunks are either directly connected to the call center or they are connected to a telephone company central switch that intelligently distributes calls to the PSAPs. These special switches are often known as 911 Selective Routers. Their use is becoming increasingly more common as it simplifies the interconnection between newer ISUP/SS7-based host office switches and the many older PSAP systems.\nIf the PSAP receives calls from the telephone company on older analog trunks, they are usually Pulse driven circuits. These circuits are similar to traditional telephone lines, but are formatted to pass the calling party's number (Automatic Number Identification, ANI). For historical reasons, the PSAP will refer to these as CAMA circuits even though Centralized Automatic Message Accounting (CAMA) is actually a reference to the call log.\nIf the PSAP receives calls on older-style digital trunks, they are specially formatted Multi-Frequency (MF) trunks that pass the calling party's number (ANI) only. Some of the upgraded PSAPs can receive calls on ISUP trunks controlled by the SS7 protocol. In that case, the calling party's number (ANI) is already present in the SS7 setup message. The Charge Number Parameter contains the ANI.",
+          "cos_sim_score": 0.4206666350364685,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Personal sound amplification product",
+          "title": "Personal sound amplification product",
+          "url": "https://en.wikipedia.org/wiki/Personal_sound_amplification_product",
+          "text": "Personal Sound Amplification Products, also known as \"Personal Sound Amplification Devices,\" or by the acronym PSAP, are defined by the U.S. Food and Drug Administration as wearable electronic products that are intended to amplify sounds for people who are not Deaf or Hard of Hearing. They are not hearing aids, which the FDA describes as intended to compensate for hearing loss. According to Dr. Mann of the FDA, choosing a PSAP as a substitute for a hearing aid can lead to more damage to your hearing.\n\nDifferences\nBoth PSAPs and hearing aids are small electronic devices that fit into the ear and amplify sound. PSAPs are mostly off-the-shelf amplifiers for people with normal hearing who need a little boost in volume in certain settings (such as hunting and bird watching). Hearing aids contain a much higher level of technology prescribed to treat a diagnosed hearing loss.  PSAPs are not regulated under the Food, Drug and Cosmetic Act because they are not intended to treat, diagnose or cure hearing impairment and do not alter the structure or function of the body. As a result, there is no regulatory classification, product code or definition for these products. However, the FDA does regulate PSAPs under certain provisions of the Radiation Control for Health and Safety Act of 1968, covering electronic products such as sound amplification equipment that emits sonic vibrations.\n\nPSAPs\nBecause they do not require a medical prescription and professional fitting, PSAPs have been described as the audio version of reading glasses. As such, PSAPs are suggested for use by hunters listening for prey, for bird watching, assistance hearing distant conversations or performances and amplifying the sound of a television in a quiet room, for example. Of note, even reading glasses are regulated under the FDA.\nVarious models of PSAPs from a variety of manufacturers vary in price, performance, weight, user experience and the software algorithms to enhance and tailor hearing.  While some models simply amplify sound, others are more sophisticated designs, providing directional microphones and customizable equalization of the audio signal to clear up ambient or extraneous noise. \nPSAPs have grown in popularity among people with hearing impairment, in part because they are less expensive than custom hearing aids, although apathy, vanity and difficulty scheduling appointments with audiologists also have been cited as reasons for low hearing aid adoption. Because they do not require medical examination and fitting, PSAPs range from as little as 50 to several hundred dollars in price, while custom hearing aids cost about $1400 on average and are not covered by Medicare and many insurance plans.\nAccording to the National Institute of Deafness and Other Communication Diseases, of the 36 million Americans who might benefit from a hearing aid, only about 20 percent actually use one.  However, a 2010 survey indicates that fewer than 18 percent of PSAPs were used as a substitute for custom hearing aids and concludes that the majority of PSAP users would have lived with their hearing loss because of the higher price of hearing aids.\nMany PSAPs are sold direct to the consumer through online stores, at pharmacies and through many drugstore and retail store chains.\n\nPSAP Amplifiers\nPSAP amplifiers are usually small simple devices. They amplify sounds and deliver the result to the ear(s) of the user.\nThe main components are a microphone, amplifier, speaker, volume controller and power source.\nThe microphone captures the sound (pressure) waves and converts them to an electric signal. The amplifier (an electronic circuit) increases the amplitude of the electric signal using a power source (battery). The speaker converts the amplified electric signal back into a sound wave. The volume (gain) control is used to adjust the amount of amplification applied to the electric signal and thus, indirectly, controls the sound volume.\nThe devices vary in size from small boxes (with an earpiece attached) worn around the neck or hung off of a belt - down to - a tiny encapsulated device that fits inside the ear canal. These smaller devices look like hearing aids but are far simpler and do not correct hearing loss.\n\n\n== References ==",
+          "cos_sim_score": 0.4070377051830292,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Enhanced 911",
+          "title": "Enhanced 911",
+          "url": "https://en.wikipedia.org/wiki/Enhanced_911",
+          "text": "Enhanced 911 (E-911 or E911) is a system used in North America to automatically provide the caller's location to 911 dispatchers. 911 is the universal emergency telephone number in the region. In the European Union, a similar system exists known as E112 (where 112 is the emergency access number) and known as eCall when called by a vehicle.\nAn incoming 911 call is routed to a Public Safety Answering Point (PSAP), which is a call center operated by the local government. At the PSAP, the call is answered by a specially trained official known as a 9-1-1 dispatcher. The dispatcher's computer receives information from the telephone company about the physical address (for landlines) or geographic coordinates (for wireless) of the caller. This information is used to dispatch police, fire, medical and other services as needed. The planned replacement service is NG911.\n\nCall routing\nLandline routing\nCalls to 911 over the public switched telephone network (PSTN) are routed to a special router (known as Selective Router, or 9-1-1 Tandem). The router looks for the address associated with the caller's telephone number in a database. The caller's phone number is known as an Automatic number identification (ANI). The database relating ANIs to addresses is known as Automatic Location Identification (ALI). The router then uses the address to search in the Master Street Address Guide (MSAG) for the Emergency Service Number (ESN) of the appropriate Public Safety Answering Point (PSAP) for that area and connects the call to it.\n\nMSAG\nThe Master Street Address Guide (MSAG) is a database of street addresses and corresponding Emergency Service Numbers (ESNs). ESNs represent one or more emergency service agencies (e.g. fire department, law enforcement) designated to serve a specific range of addresses in a geographic area, called an Emergency Service Zone.\n\nWireless routing\nCalls from cellular phones are received via cell towers by mobile switching centers (MSC). The switching center automatically assigns a unique identifier to each cellular 911 call, known as a \"pseudo ANI\". The Selective Router connects the call to a PSAP based on the cell tower's location.\n\nLocation transmission\nCalls made to non-911 emergency numbers (such as the direct line to a police or fire department) might not have automatic location enabled.\nCalls to 911 are answered by an operator at a PSAP. In addition to the voice transmission, the telephone network also transmits a number associated with the current call, the ANI. The 911 operator (or their computer) at the PSAP searches a database (ALI) for the ANI to find the caller's location.\nThe ALI record associated with the query is then returned to the PSAP, where the Customer-premises equipment (CPE) correlates that information with the call taker receiving the call, and displays the information on their computer screen.\nAutomatic location of the emergency is intended to be faster and more reliable than verbal communication of the location, though this is usually requested anyway for confirmation. It also makes it possible for emergency services to respond when callers cannot communicate their location, because they do not know their location, they are a child, or they are too panicked, too distracted by the ongoing emergency, or do not wish to attract the attention of the perpetrator of a crime in progress.\n\nLandline transmission\nFor landline calls the ANI resembles the caller's phone number. The ALI stores a pre-determined address associated with the caller's telephone number. This address is typically the phone's billing address.\n\nWireless transmission\nIn parallel to the actual voice call, the ALI database gets periodically updated with more precise and recent location information. Cellular networks can determine a more precise location of the caller's device by using triangulation from the cell towers (radiolocation). In addition to triangulation, a second source of location information may be the caller's phone itself (or other cellular device).\nMany phones manufactured after 2005 have GPS receivers built in. When the cellular phone detects that the user is placing an emergency call, it begins to transmit its location to a secure server, from which the PSAP can retrieve it. Cellphone manufacturers may program the phone to enable GPS function automatically (in case it has been turned off) when the user places an emergency call.\nFor wireless calls, the ANI (or \"pseudo-ANI\") is a unique number assigned to each individual 911 call, assigned at a mobile switching center.",
+          "cos_sim_score": 0.23512056469917297,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

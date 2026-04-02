@@ -1,0 +1,184 @@
+{
+  "probe_id": "11756160_x_at",
+  "gene_symbol": "CTNNAL1",
+  "rf_importance": 0.0223,
+  "selection_freq": 1.0,
+  "abs_fold_change": 2.398011466666667,
+  "score": 0.5024,
+  "probe_count": 2,
+  "probe_ids": "11756160_x_at | 11720494_a_at",
+  "max_score": 0.5024,
+  "mean_abs_fold_change": 2.6296,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T21:24:44",
+  "interpretation": "CTNNAL1 encodes a protein known as alpha-catulin, which is involved in modulating Rho pathway signaling by acting as a scaffold for guanine nucleotide exchange factors. This pathway is crucial for various cellular processes, including cytoskeletal dynamics and cell adhesion, which are relevant in bone health and integrity. Although there is no direct evidence linking CTNNAL1 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its association with skeletal system abnormalities suggests a potential role in bone-related pathologies. The evidence retrieved is limited and does not provide a strong connection to SONFH specifically, leading to a low confidence in its role as a biomarker. Therefore, while CTNNAL1 may have biological relevance, its potential as a clinical biomarker for early detection of SONFH is weak.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "CTNNAL1 may be implicated in skeletal system abnormalities, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "CTNNAL1 (Q9UBT7). https://www.uniprot.org/uniprotkb/Q9UBT7",
+    "CTNNAL1 (Q9UBT7-2). https://www.uniprot.org/uniprotkb/Q9UBT7-2",
+    "CTNNAL1 (Q9UBT7-3). https://www.uniprot.org/uniprotkb/Q9UBT7-3",
+    "CTNNAL1 \u2014 CTNNAL1. https://platform.opentargets.org/target/ENSG00000119326",
+    "CTNNAL1 \u2194 Abnormality of the skeletal system. https://platform.opentargets.org/target/ENSG00000119326/associations",
+    "CTNNAL1 \u2194 atrial fibrillation. https://platform.opentargets.org/target/ENSG00000119326/associations",
+    "CTNNAL1 \u2194 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000119326/associations",
+    "CTNNAL1 \u2194 Alzheimer disease. https://platform.opentargets.org/target/ENSG00000119326/associations",
+    "CTNNAL1 \u2014 catenin alpha like 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KRAS \u2014 KRAS proto-oncogene, GTPase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CFTR \u2014 CF transmembrane conductance regulator (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "NR3C1 \u2014 nuclear receptor subfamily 3 group C member 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CAV1 \u2014 caveolin 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4725,
+    "completion_tokens": 301,
+    "total_tokens": 5026,
+    "estimated_cost_usd": 0.000889
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9UBT7",
+          "title": "CTNNAL1 (Q9UBT7)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UBT7",
+          "text": "Protein: Alpha-catulin\nFunction: May modulate the Rho pathway signaling by providing a scaffold for the Lbc Rho guanine nucleotide exchange factor (ARHGEF1)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9UBT7-2",
+          "title": "CTNNAL1 (Q9UBT7-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UBT7-2",
+          "text": "Protein: Isoform 2 of Alpha-catulin",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9UBT7-3",
+          "title": "CTNNAL1 (Q9UBT7-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UBT7-3",
+          "text": "Protein: Isoform 3 of Alpha-catulin",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000119326::function",
+          "title": "CTNNAL1 \u2014 CTNNAL1",
+          "url": "https://platform.opentargets.org/target/ENSG00000119326",
+          "text": "Function: May modulate the Rho pathway signaling by providing a scaffold for the Lbc Rho guanine nucleotide exchange factor (ARHGEF1).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000119326::HP_0000924",
+          "title": "CTNNAL1 \u2194 Abnormality of the skeletal system",
+          "url": "https://platform.opentargets.org/target/ENSG00000119326/associations",
+          "text": "Disease: Abnormality of the skeletal system\nDescription: An abnormality of the skeletal system.\nAssociation score: 0.313",
+          "cos_sim_score": 0.31316995706583495,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000119326::EFO_0000275",
+          "title": "CTNNAL1 \u2194 atrial fibrillation",
+          "url": "https://platform.opentargets.org/target/ENSG00000119326/associations",
+          "text": "Disease: atrial fibrillation\nDescription: Abnormal cardiac rhythm that is characterized by rapid, uncoordinated firing of electrical impulses in the upper chambers of the heart (HEART ATRIA). In such case, blood cannot be effectively pumped into the lower chambers of the heart (HEART VENTRICLES). It is caused by abnormal impulse generation.\nAssociation score: 0.171",
+          "cos_sim_score": 0.17098000153985868,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000119326::EFO_0000400",
+          "title": "CTNNAL1 \u2194 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000119326/associations",
+          "text": "Disease: diabetes mellitus\nDescription: A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization.\nAssociation score: 0.164",
+          "cos_sim_score": 0.16367449508792656,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000119326::MONDO_0004975",
+          "title": "CTNNAL1 \u2194 Alzheimer disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000119326/associations",
+          "text": "Disease: Alzheimer disease\nDescription: A progressive, neurodegenerative disease characterized by loss of function and death of nerve cells in several areas of the brain leading to loss of cognitive function such as memory and language.\nAssociation score: 0.144",
+          "cos_sim_score": 0.14432958285804698,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "CTNNAL1 \u2014 catenin alpha like 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CTNNAL1\nGene name: catenin alpha like 1\nAliases / synonyms: ACRP, CLLP, alpha-CATU\nOrganism: Homo sapiens\nGene summary: Predicted to enable actin filament binding activity and cadherin binding activity. Acts upstream of or within Rho protein signal transduction. Located in cytosol. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CTNNAL1",
+          "aliases": "ACRP, CLLP, alpha-CATU",
+          "gene_description": "catenin alpha like 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KRAS \u2014 KRAS proto-oncogene, GTPase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KRAS\nGene name: KRAS proto-oncogene, GTPase\nAliases / synonyms: 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2\nOrganism: Homo sapiens\nGene summary: This gene, a Kirsten ras oncogene homolog from the mammalian ras gene family, encodes a protein that is a member of the small GTPase superfamily. A single amino acid substitution is responsible for an activating mutation. The transforming protein that results is implicated in various malignancies, including lung adenocarcinoma, mucinous adenoma, ductal carcinoma of the pancreas and colorectal carcinoma. Alternative splicing leads to variants encoding two isoforms that differ in the C-terminal region. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KRAS",
+          "aliases": "'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2",
+          "gene_description": "KRAS proto-oncogene, GTPase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CFTR \u2014 CF transmembrane conductance regulator",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CFTR\nGene name: CF transmembrane conductance regulator\nAliases / synonyms: ABC35, ABCC7, CF, CFTR/MRP, MRP7, TNR-CFTR, dJ760C5.1\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the ATP-binding cassette (ABC) transporter superfamily. The encoded protein functions as a chloride channel, making it unique among members of this protein family, and controls ion and water secretion and absorption in epithelial tissues. Channel activation is mediated by cycles of regulatory domain phosphorylation, ATP-binding by the nucleotide-binding domains, and ATP hydrolysis. Mutations in this gene cause cystic fibrosis, the most common lethal genetic disorder in populations of Northern European descent. The most frequently occurring mutation in cystic fibrosis, DeltaF508, results in impaired folding and trafficking of the encoded protein. Multiple pseudogenes have been identified in the human genome. [provided by RefSeq, Aug 2017]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CFTR",
+          "aliases": "ABC35, ABCC7, CF, CFTR/MRP, MRP7, TNR-CFTR, dJ760C5.1",
+          "gene_description": "CF transmembrane conductance regulator"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "NR3C1 \u2014 nuclear receptor subfamily 3 group C member 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: NR3C1\nGene name: nuclear receptor subfamily 3 group C member 1\nAliases / synonyms: GCCR, GCR, GCRST, GR, GRL\nOrganism: Homo sapiens\nGene summary: This gene encodes glucocorticoid receptor, which can function both as a transcription factor that binds to glucocorticoid response elements in the promoters of glucocorticoid responsive genes to activate their transcription, and as a regulator of other transcription factors. This receptor is typically found in the cytoplasm, but upon ligand binding, is transported into the nucleus. It is involved in inflammatory responses, cellular proliferation, and differentiation in target tissues. Mutations in this gene are associated with generalized glucocorticoid resistance. Alternative splicing of this gene results in transcript variants encoding either the same or different isoforms. Additional isoforms resulting from the use of alternate in-frame translation initiation sites have also been descri...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "NR3C1",
+          "aliases": "GCCR, GCR, GCRST, GR, GRL",
+          "gene_description": "nuclear receptor subfamily 3 group C member 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CAV1 \u2014 caveolin 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CAV1\nGene name: caveolin 1\nAliases / synonyms: BSCL3, CGL3, LCCNS, MSTP085, PPH3, VIP21\nOrganism: Homo sapiens\nGene summary: The scaffolding protein encoded by this gene is the main component of the caveolae plasma membranes found in most cell types. The protein links integrin subunits to the tyrosine kinase FYN, an initiating step in coupling integrins to the Ras-ERK pathway and promoting cell cycle progression. The gene is a tumor suppressor gene candidate and a negative regulator of the Ras-p42/44 mitogen-activated kinase cascade. Caveolin 1 and caveolin 2 are located next to each other on chromosome 7 and express colocalizing proteins that form a stable hetero-oligomeric complex. Mutations in this gene have been associated with Berardinelli-Seip congenital lipodystrophy. Alternatively spliced transcripts encode alpha and beta isoforms of caveolin 1.[provided by RefSeq, Mar 2010]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CAV1",
+          "aliases": "BSCL3, CGL3, LCCNS, MSTP085, PPH3, VIP21",
+          "gene_description": "caveolin 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

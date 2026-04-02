@@ -1,0 +1,143 @@
+{
+  "probe_id": "11757569_a_at",
+  "gene_symbol": "NDRG3",
+  "score": 1.0,
+  "SD_TestAUC": 0.0405720412966789,
+  "abs_fold_change": 0.6117,
+  "probe_count": 1,
+  "probe_ids": "11757569_a_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.6117,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:52:19",
+  "interpretation": "NDRG3 is a member of the N-myc downregulated gene family, which is involved in various cellular processes including stress responses and differentiation. While specific evidence linking NDRG3 directly to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) is lacking, its family members, particularly NDRG1, have been implicated in cellular stress responses and bone health, suggesting a potential indirect role for NDRG3 in similar pathways. The retrieved evidence primarily connects NDRG3 to neurodegenerative diseases and cancer, which may not directly relate to SONFH. Therefore, the biological inference is that NDRG3 could be involved in stress response mechanisms that are relevant to the pathophysiology of SONFH, but this connection remains speculative. As such, the clinical relevance of NDRG3 as an early-detection biomarker for SONFH is weak, given the absence of direct evidence linking it to the disease context.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "NDRG3 may play a role in stress response mechanisms relevant to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), but direct evidence is lacking.",
+  "citations": [
+    "NDRG3 (Q9UGV2). https://www.uniprot.org/uniprotkb/Q9UGV2",
+    "NDRG3 (Q9UGV2-3). https://www.uniprot.org/uniprotkb/Q9UGV2-3",
+    "NDRG3 (Q9UGV2-2). https://www.uniprot.org/uniprotkb/Q9UGV2-2",
+    "NDRG3 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000101079/associations",
+    "NDRG3 \u2194 skin cancer. https://platform.opentargets.org/target/ENSG00000101079/associations",
+    "NDRG3 \u2194 skin neoplasm. https://platform.opentargets.org/target/ENSG00000101079/associations",
+    "NDRG3 \u2194 hair color. https://platform.opentargets.org/target/ENSG00000101079/associations",
+    "NDRG3 \u2194 nephrotic syndrome. https://platform.opentargets.org/target/ENSG00000101079/associations",
+    "NDRG1. https://en.wikipedia.org/wiki/NDRG1",
+    "List of human protein-coding genes 5. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_5"
+  ],
+  "token_usage": {
+    "prompt_tokens": 3768,
+    "completion_tokens": 270,
+    "total_tokens": 4038,
+    "estimated_cost_usd": 0.000727
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9UGV2",
+          "title": "NDRG3 (Q9UGV2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UGV2",
+          "text": "Protein: Protein NDRG3",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9UGV2-3",
+          "title": "NDRG3 (Q9UGV2-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UGV2-3",
+          "text": "Protein: Isoform 3 of Protein NDRG3",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9UGV2-2",
+          "title": "NDRG3 (Q9UGV2-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UGV2-2",
+          "text": "Protein: Isoform 2 of Protein NDRG3",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000101079::EFO_0005772",
+          "title": "NDRG3 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000101079/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.481",
+          "cos_sim_score": 0.48111897836638534,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101079::MONDO_0002898",
+          "title": "NDRG3 \u2194 skin cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000101079/associations",
+          "text": "Disease: skin cancer\nDescription: A malignant neoplasm involving the zone of skin\nAssociation score: 0.361",
+          "cos_sim_score": 0.3609547411540863,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101079::EFO_0004198",
+          "title": "NDRG3 \u2194 skin neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000101079/associations",
+          "text": "Disease: skin neoplasm\nDescription: Tumors or cancer of the SKIN.\nAssociation score: 0.343",
+          "cos_sim_score": 0.34270314260472334,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101079::EFO_0003924",
+          "title": "NDRG3 \u2194 hair color",
+          "url": "https://platform.opentargets.org/target/ENSG00000101079/associations",
+          "text": "Disease: hair color\nDescription: Color of hair or fur.\nAssociation score: 0.290",
+          "cos_sim_score": 0.28963884258549333,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101079::EFO_0004255",
+          "title": "NDRG3 \u2194 nephrotic syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000101079/associations",
+          "text": "Disease: nephrotic syndrome\nDescription: A condition characterized by severe PROTEINURIA, greater than 3.5 g/day in an average adult. The substantial loss of protein in the urine results in complications such as HYPOPROTEINEMIA; generalized EDEMA; HYPERTENSION; and HYPERLIPIDEMIAS. Diseases associated with nephrotic syndrome generally cause chronic kidney dysfunction.\nAssociation score: 0.280",
+          "cos_sim_score": 0.28021156500366357,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::NDRG1",
+          "title": "NDRG1",
+          "url": "https://en.wikipedia.org/wiki/NDRG1",
+          "text": "Protein NDRG1 is a protein that in humans is encoded by the NDRG1 gene.\nThis gene is a member of the N-myc downregulated gene family which belongs to the alpha/beta hydrolase superfamily. The protein encoded by this gene is a cytoplasmic protein involved in stress responses, hormone responses, cell growth, and differentiation. Mutations in this gene have been reported to be causative the autosomal-recessive version of Charcot-Marie-Tooth disease known as CMT4D.\nIt has been reported that NDRG1 localizes to the endosomes and is a Rab4a effector involved in vesicular recycling.\nAs reviewed by Fang et al., NDRG1 is involved in embryogenesis and development, cell growth and differentiation, lipid biosynthesis and myelination, stress responses, immunity, DNA repair and cell adhesion among other functions.  NDRG1 is localised in the cytoplasm, nucleus and mitochondrion, at probabilities of 47.8%, 26.1% and 8.7%, respectively.  In response to DNA damage  NDRG1 translocates from the cytoplasm to the nucleus, where it may inhibit cell growth and promote DNA repair mechanisms.  It is suggested that NDRG1 acts as a stress response gene or potentially as a transcription factor.\n\nGene\nIn humans, NDRG1 gene is located on the long arm of chromosome 8 (8q24.22). The gene encodes a 3.0 kilobases (kb) messenger RNA (mRNA) composed of 394 amino acids. NDRG1 belong to the NDRG1 family consisting of four members - NDRG1, NDRG2, NDRG3 and NDRG4 - that share a 53-65 % homology. In contrast to other family members, NDRG1 has a three tandem (GTRSRSHTSE) repeats in the C-terminal part.\nThe expression of NDRG1 is regulated by hypoxia dependent and independent manner. Under hypoxia the oxygen sensor hypoxia-inducible factor (HIF)-1\u03b1 is translocated from cytoplasma to nucleus, where binds to HIF-1\u03b2 to form HIF-1 complex. This complex works as a transcription factor, binds to hypoxia response element (HRE) in the promoter of hypoxia-related genes, one of these genes is the NDRG1. Also heavy metal ions (nickel, cobalt, iron) upregulate NDRG1 by mimicking hypoxia. Opposite effect on NDRG1 expression could have myc oncoproteins, N-myc and c-myc, which transcriptionally repress the expression. These effect is mediated indirectly by decreasing its promoter activity.\n\nRole in cancer\nAs reviewed by Villodre et al., NDRG1 plays a dual role in breast cancer. NDRG1 was first to be known as tumor suppressor, but  ongoing evidence suggested that NDRG1 could promote cancer cell proliferation, invasion, migration, and brain metastasis. As reviewed by Kovacevic et al., NDRG1 is a potent, iron-regulated growth and metastasis suppressor that was found to be negatively correlated with cancer progression in a number of tumors, including prostate, pancreatic, breast, and colon cancers.  NDRG1 has marked anti-oncogenic activity, being associated with decreased cell proliferation, migration, invasion, and angiogenesis.  The molecular functions of NDRG1 affect numerous signaling pathways that regulate cancer cell proliferation, invasion, angiogenesis, and migration.  Specifically, NDRG1 inhibits the oncogenic RAS, c-Src, phosphatidylinositol 3-kinase (PI3K), WNT, ROCK1/pMLC2, and nuclear factor-light chain enhancer of activated B cell (NF-B) pathways, while promoting expression of key tumor-suppressive molecules including phosphatase and tensin homolog, E-cadherin, and mothers against decapentaplegic homolog 4 (SMAD4).  Through its effects on E-cadherin and beta-catenin, which form the adherens junction and promote cell adhesion, NDRG1 also inhibits the epithelial to mesenchymal transition, an initial key step in metastasis.",
+          "cos_sim_score": 0.4114227890968323,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::NDRG1",
+          "title": "NDRG1",
+          "url": "https://en.wikipedia.org/wiki/NDRG1",
+          "text": "Functions in DNA repair and aging\nIn one of its functions at a molecular level, NDRG1 binds and stabilizes methyltransferases, chiefly O-6-methylguanine-DNA methyltransferase (MGMT), a DNA repair protein.  Thus, higher expression of NDRG1 can promote MGMT protein stability and activity.  Dominick et al. showed NDRG1 and MGMT protein expression was increased by 2-fold to 3-fold for each of three strains of mice (Snell, GHKRO, and PAPPA-KO) with increased longevity.  These authors strongly suggest a link between the increase in the MGMT DNA repair pathway and a delay in the aging process in these mouse strains.  This is consistent with the DNA damage theory of aging.\n\nRole in immune system\nThe NDRG1 plays an important role in allergy and anaphylaxis, defence against bacterial pathogens and bacterial clearance, inflammation and wound healing. In mast cells, NDRG1 is upregulated during maturation and helps to rapid degranulation, which leads to enhanced exocytosis in response to various stimuli. Also was shown its role in T-cell clonal anergy downstream of Egr2, where NDRG1 is upregulated in the absence of costimulation to inhibit subsequent re-activation of T cells by TCR and CD28 signaling.\n\nReferences\nFurther reading\nExternal links\nGeneReviews/NCBI/NIH/UW entry on Charcot-Marie-Tooth Neuropathy Type 4",
+          "cos_sim_score": 0.3291846811771393,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of human protein-coding genes 5",
+          "title": "List of human protein-coding genes 5",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_5",
+          "text": "== References ==",
+          "cos_sim_score": 0.09194961190223694,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

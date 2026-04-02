@@ -1,0 +1,169 @@
+{
+  "rf_rank": 59,
+  "probe_id": "11758929_at",
+  "gene_symbol": "TFDP2",
+  "score": 0.51,
+  "rf_n_nodes": 4,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 1.9824,
+  "log_fc": -1.9824,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11758929_at",
+  "max_score": 0.51,
+  "mean_abs_fold_change": 1.9824,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T21:53:26",
+  "interpretation": "TFDP2, or Transcription factor Dp-2, is a protein that plays a crucial role in regulating the cell cycle by forming a complex with E2F transcription factors, which are essential for cell proliferation and apoptosis. The gene's involvement in cell cycle regulation suggests a potential link to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), as disruptions in cellular processes such as proliferation and apoptosis can contribute to bone tissue damage and necrosis. However, the evidence connecting TFDP2 directly to SONFH is limited, with no specific studies identified that link this gene to the disease context. Therefore, while TFDP2 may be biologically relevant due to its role in cell cycle regulation, its potential as a biomarker for early detection of SONFH remains weak and largely speculative. [INFERENCE]",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "TFDP2 is involved in cell cycle regulation, which may relate to the mechanisms underlying Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), but direct evidence is lacking.",
+  "citations": [
+    "TFDP2 (Q14188). https://www.uniprot.org/uniprotkb/Q14188",
+    "TFDP2 (Q14188-5). https://www.uniprot.org/uniprotkb/Q14188-5",
+    "TFDP2 (Q14188-3). https://www.uniprot.org/uniprotkb/Q14188-3",
+    "TFDP2 \u2014 TFDP2. https://platform.opentargets.org/target/ENSG00000114126",
+    "TFDP2 \u2194 chronic kidney disease. https://platform.opentargets.org/target/ENSG00000114126/associations",
+    "TFDP2 \u2194 Testicular Germ Cell Tumor. https://platform.opentargets.org/target/ENSG00000114126/associations",
+    "TFDP2 \u2194 musculoskeletal system disease. https://platform.opentargets.org/target/ENSG00000114126/associations",
+    "TFDP2 \u2194 kidney disease. https://platform.opentargets.org/target/ENSG00000114126/associations",
+    "TFDP. https://en.wikipedia.org/wiki/TFDP",
+    "TFDP2. https://en.wikipedia.org/wiki/TFDP2",
+    "Transcription factor DP. https://en.wikipedia.org/wiki/Transcription_factor_DP",
+    "List of human transcription factors. https://en.wikipedia.org/wiki/List_of_human_transcription_factors",
+    "List of human protein-coding genes 8. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_8"
+  ],
+  "token_usage": {
+    "prompt_tokens": 3154,
+    "completion_tokens": 252,
+    "total_tokens": 3406,
+    "estimated_cost_usd": 0.000624
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q14188",
+          "title": "TFDP2 (Q14188)",
+          "url": "https://www.uniprot.org/uniprotkb/Q14188",
+          "text": "Protein: Transcription factor Dp-2\nFunction: Can stimulate E2F-dependent transcription. Binds DNA cooperatively with E2F family members through the E2 recognition site, 5'-TTTC[CG]CGC-3', found in the promoter region of a number of genes whose products are involved in cell cycle regulation or in DNA replication. The TFDP2:E2F complex functions in the control of cell-cycle progression from G1 to S phase. The E2F1:DP complex appears to mediate both cell proliferation and apoptosis. Blocks adipocyte differentiation by repressing CEBPA binding to its target gene promoters (PubMed:20176812)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q14188-5",
+          "title": "TFDP2 (Q14188-5)",
+          "url": "https://www.uniprot.org/uniprotkb/Q14188-5",
+          "text": "Protein: Isoform Epsilon of Transcription factor Dp-2",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q14188-3",
+          "title": "TFDP2 (Q14188-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q14188-3",
+          "text": "Protein: Isoform Gamma of Transcription factor Dp-2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000114126::function",
+          "title": "TFDP2 \u2014 TFDP2",
+          "url": "https://platform.opentargets.org/target/ENSG00000114126",
+          "text": "Function: Can stimulate E2F-dependent transcription. Binds DNA cooperatively with E2F family members through the E2 recognition site, 5'-TTTC[CG]CGC-3', found in the promoter region of a number of genes whose products are involved in cell cycle regulation or in DNA replication. The TFDP2:E2F complex functions in the control of cell- cycle progression from G1 to S phase. The E2F1:DP complex appears to mediate both cell proliferation and apoptosis. Blocks adipocyte differentiation by repressing CEBPA binding to its target gene promoters (PubMed:20176812). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000114126::EFO_0003884",
+          "title": "TFDP2 \u2194 chronic kidney disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000114126/associations",
+          "text": "Disease: chronic kidney disease\nDescription: The end-stage of CHRONIC RENAL INSUFFICIENCY. It is characterized by the severe irreversible kidney damage (as measured by the level of PROTEINURIA) and the reduction in GLOMERULAR FILTRATION RATE to less than 15 ml per min (Kidney Foundation: Kidney Disease Outcome Quality Initiative, 2002). These patients generally require HEMODIALYSIS or KIDNEY TRANSPLANTATION.\nAssociation score: 0.306",
+          "cos_sim_score": 0.30647932637087916,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000114126::EFO_1000566",
+          "title": "TFDP2 \u2194 Testicular Germ Cell Tumor",
+          "url": "https://platform.opentargets.org/target/ENSG00000114126/associations",
+          "text": "Disease: Testicular Germ Cell Tumor\nDescription: A germ cell tumor arising from the testis. Representative examples include teratoma, seminoma, embryonal carcinoma, and yolk sac tumor.\nAssociation score: 0.290",
+          "cos_sim_score": 0.2897217409294411,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000114126::EFO_0009676",
+          "title": "TFDP2 \u2194 musculoskeletal system disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000114126/associations",
+          "text": "Disease: musculoskeletal system disease\nDescription: A disease involving the musculoskeletal system. [database_cross_reference: MONDO:DesignPattern]\nAssociation score: 0.251",
+          "cos_sim_score": 0.2512765246497761,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000114126::EFO_0003086",
+          "title": "TFDP2 \u2194 kidney disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000114126/associations",
+          "text": "Disease: kidney disease\nDescription: A disease involving the kidney.\nAssociation score: 0.241",
+          "cos_sim_score": 0.24129112885582354,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::TFDP",
+          "title": "TFDP",
+          "url": "https://en.wikipedia.org/wiki/TFDP",
+          "text": "TFDP may refer to:\n\nTask Force Detainees of the Philippines\n\"T.F.D.P.\", a Charlie Brown Jr. track from Abalando a Sua F\u00e1brica, 2001\nTFDP1 (transcription factor Dp-1)\nTFDP2 (transcription factor Dp-2)",
+          "cos_sim_score": 0.620795488357544,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::TFDP2",
+          "title": "TFDP2",
+          "url": "https://en.wikipedia.org/wiki/TFDP2",
+          "text": "Transcription factor Dp-2 is a protein that in humans is encoded by the TFDP2 gene that dimerises with E2F, a key transcriptional activator involved in the regulation of the cell cycle.\n\nReferences\nFurther reading\nExternal links\nOverview of all the structural information available in the PDB for UniProt: Q14188 (Transcription factor Dp-2) at the PDBe-KB.",
+          "cos_sim_score": 0.39160144329071045,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Transcription factor DP",
+          "title": "Transcription factor DP",
+          "url": "https://en.wikipedia.org/wiki/Transcription_factor_DP",
+          "text": "In molecular biology, transcription factor DP (Dimerization Partner) is a family of proteins which function as transcription factors.\nDP forms a heterodimer with E2F and regulates genes involved in cell cycle progression. The transcriptional activity of E2F is inhibited by the retinoblastoma protein which binds to the E2F-DP heterodimer  and negatively regulates the G1-S transition.\n\nSee also\nE2F\nTFDP1\nTFDP2\n\n\n== References ==",
+          "cos_sim_score": 0.3718046545982361,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of human transcription factors",
+          "title": "List of human transcription factors",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_transcription_factors",
+          "text": "This list of manually-curated human transcription factors is taken from Lambert, Jolma, Campitelli, et al.\nMore detailed information can be found in the manuscript and accompanying web site.\n\nList of human transcription factors (1639)\nExternal links\nhttps://humantfs.ccbr.utoronto.ca\n\n\n== References ==",
+          "cos_sim_score": 0.09065762907266617,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of human protein-coding genes 8",
+          "title": "List of human protein-coding genes 8",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_8",
+          "text": "== References ==",
+          "cos_sim_score": 0.054037194699048996,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

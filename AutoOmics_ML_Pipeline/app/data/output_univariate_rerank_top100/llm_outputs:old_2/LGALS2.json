@@ -1,0 +1,210 @@
+{
+  "probe_id": "11731798_a_at",
+  "gene_symbol": "LGALS2",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.1768494279453825,
+  "abs_fold_change": 1.8983,
+  "score": 1.8831,
+  "probe_count": 1,
+  "probe_ids": "11731798_a_at",
+  "max_score": 1.8831,
+  "mean_abs_fold_change": 1.8983,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T19:06:56",
+  "interpretation": "LGALS2, also known as Galectin-2, is a soluble beta-galactoside binding lectin that plays a role in various cellular functions, including cell adhesion and immune response. While specific evidence directly linking LGALS2 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) is limited, its involvement in inflammatory processes and cell signaling pathways suggests a potential role in the pathophysiology of SONFH. The retrieved evidence indicates that LGALS2 is associated with various diseases, including inflammatory conditions, which may relate to the inflammatory response observed in SONFH. However, the lack of direct studies connecting LGALS2 to SONFH limits the strength of this association. Therefore, while LGALS2 may have some relevance as a biomarker, its clinical utility for early detection of SONFH remains uncertain and requires further investigation.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "LGALS2 may be involved in inflammatory processes relevant to the pathogenesis of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "LGALS2 (P05162). https://www.uniprot.org/uniprotkb/P05162",
+    "LGALS2 \u2014 LGALS2. https://platform.opentargets.org/target/ENSG00000100079",
+    "LGALS2 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000100079/associations",
+    "LGALS2 \u2194 placenta praevia. https://platform.opentargets.org/target/ENSG00000100079/associations",
+    "LGALS2 \u2194 neoplasm. https://platform.opentargets.org/target/ENSG00000100079/associations",
+    "LGALS2 \u2194 triple-negative breast cancer. https://platform.opentargets.org/target/ENSG00000100079/associations",
+    "LGALS2 \u2014 galectin 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "LGALS3 \u2014 galectin 3 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "APP \u2014 amyloid beta precursor protein (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CFTR \u2014 CF transmembrane conductance regulator (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "PPARG \u2014 peroxisome proliferator activated receptor gamma (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9005,
+    "completion_tokens": 308,
+    "total_tokens": 9313,
+    "estimated_cost_usd": 0.001536
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P05162",
+          "title": "LGALS2 (P05162)",
+          "url": "https://www.uniprot.org/uniprotkb/P05162",
+          "text": "Protein: Galectin-2\nFunction: This protein binds beta-galactoside. Its physiological function is not yet known",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000100079::function",
+          "title": "LGALS2 \u2014 LGALS2",
+          "url": "https://platform.opentargets.org/target/ENSG00000100079",
+          "text": "Function: This protein binds beta-galactoside. Its physiological function is not yet known.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000100079::EFO_0005772",
+          "title": "LGALS2 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000100079/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.207",
+          "cos_sim_score": 0.2065824084436509,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000100079::EFO_0007442",
+          "title": "LGALS2 \u2194 placenta praevia",
+          "url": "https://platform.opentargets.org/target/ENSG00000100079/associations",
+          "text": "Disease: placenta praevia\nDescription: Abnormal placentation in which the placenta implants in the lower segment of the uterus (the zone of dilation) and may cover part or all of the opening of the cervix. It is often associated with serious antepartum bleeding and premature labor.\nAssociation score: 0.188",
+          "cos_sim_score": 0.1881007932809787,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000100079::EFO_0000616",
+          "title": "LGALS2 \u2194 neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000100079/associations",
+          "text": "Disease: neoplasm\nDescription: A benign or malignant tissue growth resulting from uncontrolled cell proliferation. Benign neoplastic cells resemble normal cells without exhibiting significant cytologic atypia, while malignant cells exhibit overt signs such as dysplastic features, atypical mitotic figures, necrosis, nuclear pleomorphism, and anaplasia. Representative examples of benign neoplasms include papillomas, cystadenomas, and lipomas; malignant neoplasms include carcinomas, sarcomas, lymphomas, and leukemias.\nAssociation score: 0.093",
+          "cos_sim_score": 0.09349118290475684,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000100079::EFO_0005537",
+          "title": "LGALS2 \u2194 triple-negative breast cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000100079/associations",
+          "text": "Disease: triple-negative breast cancer\nDescription: An invasive breast carcinoma which is negative for expression of estrogen receptor (ER), progesterone receptor (PR), and human epidermal growth factor receptor 2 (HER2).\nAssociation score: 0.080",
+          "cos_sim_score": 0.08041684604496824,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "LGALS2 \u2014 galectin 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: LGALS2\nGene name: galectin 2\nAliases / synonyms: HL14\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a soluble beta-galactoside binding lectin. The encoded protein is found as a homodimer and can bind to lymphotoxin-alpha. A single nucleotide polymorphism in an intron of this gene can alter the transcriptional level of the protein, with a resultant increased risk of myocardial infarction. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "LGALS2",
+          "aliases": "HL14",
+          "gene_description": "galectin 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "LGALS3 \u2014 galectin 3",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: LGALS3\nGene name: galectin 3\nAliases / synonyms: CBP35, GAL3, GALBP, GALIG, L31, LGALS2, MAC2\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the galectin family of carbohydrate binding proteins. Members of this protein family have an affinity for beta-galactosides. The encoded protein is characterized by an N-terminal proline-rich tandem repeat domain and a single C-terminal carbohydrate recognition domain. This protein can self-associate through the N-terminal domain allowing it to bind to multivalent saccharide ligands. This protein localizes to the extracellular matrix, the cytoplasm and the nucleus. This protein plays a role in numerous cellular functions including apoptosis, innate immunity, cell adhesion and T-cell regulation. The protein exhibits antimicrobial activity against bacteria and fungi. Alternate splicing results in multiple transcript variants.[provided by RefSeq, Oct 2014]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "LGALS3",
+          "aliases": "CBP35, GAL3, GALBP, GALIG, L31, LGALS2, MAC2",
+          "gene_description": "galectin 3"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "APP \u2014 amyloid beta precursor protein",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: APP\nGene name: amyloid beta precursor protein\nAliases / synonyms: AAA, ABETA, ABPP, AD1, APPI, CTFgamma, CVAP, PN-II, PN2, alpha-sAPP, preA4\nOrganism: Homo sapiens\nGene summary: This gene encodes a cell surface receptor and transmembrane precursor protein that is cleaved by secretases to form a number of peptides. Some of these peptides are secreted and can bind to the acetyltransferase complex APBB1/TIP60 to promote transcriptional activation, while others form the protein basis of the amyloid plaques found in the brains of patients with Alzheimer disease. In addition, two of the peptides are antimicrobial peptides, having been shown to have bacteriocidal and antifungal activities. Mutations in this gene have been implicated in autosomal dominant Alzheimer disease and cerebroarterial amyloidosis (cerebral amyloid angiopathy). Multiple transcript variants encoding several different isoforms have been found for this gene. [provided by RefSeq, Aug 2014]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "APP",
+          "aliases": "AAA, ABETA, ABPP, AD1, APPI, CTFgamma, CVAP, PN-II, PN2, alpha-sAPP, preA4",
+          "gene_description": "amyloid beta precursor protein"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CFTR \u2014 CF transmembrane conductance regulator",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CFTR\nGene name: CF transmembrane conductance regulator\nAliases / synonyms: ABC35, ABCC7, CF, CFTR/MRP, MRP7, TNR-CFTR, dJ760C5.1\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the ATP-binding cassette (ABC) transporter superfamily. The encoded protein functions as a chloride channel, making it unique among members of this protein family, and controls ion and water secretion and absorption in epithelial tissues. Channel activation is mediated by cycles of regulatory domain phosphorylation, ATP-binding by the nucleotide-binding domains, and ATP hydrolysis. Mutations in this gene cause cystic fibrosis, the most common lethal genetic disorder in populations of Northern European descent. The most frequently occurring mutation in cystic fibrosis, DeltaF508, results in impaired folding and trafficking of the encoded protein. Multiple pseudogenes have been identified in the human genome. [provided by RefSeq, Aug 2017]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CFTR",
+          "aliases": "ABC35, ABCC7, CF, CFTR/MRP, MRP7, TNR-CFTR, dJ760C5.1",
+          "gene_description": "CF transmembrane conductance regulator"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "PPARG \u2014 peroxisome proliferator activated receptor gamma",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PPARG\nGene name: peroxisome proliferator activated receptor gamma\nAliases / synonyms: CIMT1, FPLD3, GLM1, NR1C3, PPARG1, PPARG2, PPARG5, PPARgamma\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the peroxisome proliferator-activated receptor (PPAR) subfamily of nuclear receptors. PPARs form heterodimers with retinoid X receptors (RXRs) and these heterodimers regulate transcription of various genes. Three subtypes of PPARs are known: PPAR-alpha, PPAR-delta, and PPAR-gamma. The protein encoded by this gene is PPAR-gamma and is a regulator of adipocyte differentiation. Additionally, PPAR-gamma has been implicated in the pathology of numerous diseases including obesity, diabetes, atherosclerosis and cancer. Alternatively spliced transcript variants that encode different isoforms have been described. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PPARG",
+          "aliases": "CIMT1, FPLD3, GLM1, NR1C3, PPARG1, PPARG2, PPARG5, PPARgamma",
+          "gene_description": "peroxisome proliferator activated receptor gamma"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "1. Introduction\nOsteonecrosis of the femoral head (ONFH) is a common disease mainly characterized by apoptosis of bone cells that leads to collapse of the femoral head and cartilage damage. Notably, the round surface of the head and acetabulum joint flattens and eventually leads to secondary osteoarthritis.[1] Studies have shown that the disease is mainly prevalent in patients with long-term use of hormonal drugs, long-term alcohol abuse, and hip trauma.[2] Steroid-induced ONFH (SONFH) is a common type of femoral head necrosis. SONFH patients are frequently misdiagnosed as hip synovitis or osteoarthritis owing to lack of obvious signs coupled with imaging abnormalities during early stages of disease development.[3] Although transcriptomic analyses have contributed to development of clinical treatment strategies for SONFH, the precise underlying mechanism of SONFH remains unclear.[4,5]\nBioinformatics analyses have significantly improved the search and identification of key genes regulating the occurrence of various diseases, thereby generating new insights to guide development of treatment strategies. SONFH has a complex pathophysiological mechanism. Genotyping of SONFH in adults revealed that gene coding protein polymorphism was associated with SONFH.[6] It has been hypothesized that progression of SONFH to the end stage in adult patients may be due to differential expression of protein-coding genes involved in thrombosis, angiogenesis inhibition, programmed cell death, lipid biosynthesis, and bone homeostasis. In the present study, we aimed to identify differentially expressed genes in peripheral blood of patients with early SONFH and further explored the pathogenesis of this disease using transcriptome data from the Gene Expression Omnibus database.\n2. Materials and Methods\n2.1. Data acquisition\nThe Gene Expression Omnibus database not only stores many gene chips and sequence data but also provides tools for users to query and download gene expression profiles. In the present study, we searched for relevant datasets using \u201csteroid-induced osteonecrosis of femoral head\u201d as the keyword, with focus on SONFH-related datasets. Consequently, we downloaded transcriptome data (GSE123568) belonging to 30 SONFH and 10 non-SONFH (following steroid administration) subjects.\n2.2. Sample correlation analysis\nOverall expression profiles of the transcriptome data were clustered using ClusterProfiler packages implemented in R software (version 4.0.2). Only dimension features containing the vast majority of variances were retained, with those containing zero variances discarded based on a principal component analysis (PCA) plot. Using weighted gene correlation network analysis (WGCNA) package in R language to perform WGCNA on data. WGCNA adds phenotypic weight parameters in the process of constructing gene co-expression network and optimizes classification using scale-free clustering and dynamic tree cut algorithm to achieve accurate and efficient data analysis.\n2.3. Functional annotation of DEGs\nFunctional annotation of key genes was performed using the ClusterProfiler package in R and followed by comprehensive functional correlation of candidate genes. Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analyses were performed to evaluate related functional categories. Significant differentially expressed genes (DEGs) were filtered, and bar charts and bubble charts were drawn according to their functions and pathways, respectively.\n2.4. Construction of protein\u2013protein interaction networks\nProtein\u2013protein interaction (PPI) networks of the DEGs were generated using the STRING online tool and Cytoscape software. Summarily, DEGs were entered into the STRING online tool to screen for interacting proteins with a combined score of\u2005>\u20050.9. The obtained PPI results were imported into Cytoscape software, then prominent modules in PPI were screened to construct the network through molecular complex detection. NetworkX package was then used to visualize the network in Python, with node sizes taken to be proportional to node degree.\n2.5. Quantitative real-time polymerase chain reaction",
+          "cos_sim_score": 0.5251359939575195,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "Figure 3.\nqRT-PCR results showing significant upregulation of ITGAX and LILRB2 and significant downregulation of PPP3CB and MMP8 in SONFH patients., ITGAX = integrin subunit alpha X, LILRB2 = leukocyte immunoglobulin like receptor B2, MMP8 = matrix metallopeptidase 8, PPP3CB = protein phosphatase 3 catalytic subunit beta, qRT-PCR = quantitative real-time polymerase chain reaction, SONFH = steroid-induced osteonecrosis of the femoral head.\n4. Discussion\nMore than 30 years ago, researchers discovered a close relationship between use of glucocorticoids with the occurrence of femoral head necrosis.[7] Results from a retrospective analysis showed that hormone-related nontraumatic ONFH is dominant.[8] Investigating the genetic factors regulating SONFH characteristics is an important strategy, and scholars have employed bioinformatics to explore sequence data. However, these studies also present some defects, such as inability to accurately interpret high-throughput sequence data to ensure that a certain deviation exists between PCR verification data and the data significance.[9,10] In the present study, we explored the signaling pathways regulating development of early SONFH and predicted diagnostic biomarkers in peripheral blood from this group of patients.\nOur results revealed that hundreds of coding genes, including tumor necrosis factor-\u03b1 (TNF-\u03b1), phosphoinositide 3-kinase Akt (PI3K-Akt), hypoxia-inducible factor-1 (HIF-1), adherens junction, and mitogen-activated protein kinase signaling pathways, were significantly upregulated in peripheral blood of patients with early SONFH. Notably, these DEGs participate in regulation of redox, inflammatory response, angiogenesis, and cell metabolism by secreting inflammatory chemokine signaling proteins. We constructed a PPI network of these DEGs and found that PRDX2, HP, MMP8, FPR2, and ITGAX may be associated with the SONFH process. Among them, FPR2 is a low-affinity receptor of N-formyl methionine peptides and a powerful neutrophil chemokine.[11] Family with sequence similarity 19 member A5 is a neural factor or brain-specific chemokine that was shown to remarkably downregulate expression of osteoclast-related genes, such as receptor activator of nuclear factor kappa and TNF receptor-associated factor 6, and mediate upregulation of osteoclast-producing negative regulators, such as musculoaponeurotic fibrosarcoma oncogene homolog B and interferon regulatory factor-8.[12,13] Interestingly, FPR2 antagonist WRW4 or FPR2 deficiency were shown to markedly reverse inhibition of Family with sequence similarity 19 member A5-inducedosteoclastogenesis, indicating that FPR2 plays an important role in regulation of osteoclastogenesis as well as occurrence and development of SONFH disease.[9,14]\nIntegrin alpha-X/beta-2, which is encoded by ITGAX, is a receptor that recognizes the G protein-coupled receptor sequence in fibrinogen, thereby mediating cell\u2013cell interactions during inflammatory responses. Functionally, it plays an important role in monocyte adhesion and chemotaxis.[15,16] In the present study, we found that PRDX2 was a thiol-specific peroxidase in downregulated genes in SONFH relative to non-SONFH group. Functionally, this gene catalyzes reduction of hydrogen peroxide and organic peroxide to produce water and alcohol, thereby causing inactivation of toxic substances.[17] Studies have shown that PRDX2, a hydrogen peroxide-mediated signal transduction sensor that prevents oxidative stress, not only plays a role in cell protection but may also be participating in signal cascade reaction of growth factor and TNF-\u03b1 by regulating the intracellular concentration of hydrogen peroxide.[18,19]\nHP-related diseases, which include haptoglobinemia and Plasmodium falciparum malaria,[20] are regulated by the innate immune system and vesicle-mediated transport. HP accumulates in the kidney and is secreted in the urine due to hemolysis. Moreover, HP reportedly captures and binds to free plasma HP, thereby preventing kidney damage. HP also acts as an antioxidant, presents antibacterial activity, and plays a role in many acute phase regulations.[21] Therefore, the observed downregulation of PRDX2 and HP may suggest that both genes promote development of SONFH disease through the redox pathway.",
+          "cos_sim_score": 0.46688979864120483,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "HP-related diseases, which include haptoglobinemia and Plasmodium falciparum malaria,[20] are regulated by the innate immune system and vesicle-mediated transport. HP accumulates in the kidney and is secreted in the urine due to hemolysis. Moreover, HP reportedly captures and binds to free plasma HP, thereby preventing kidney damage. HP also acts as an antioxidant, presents antibacterial activity, and plays a role in many acute phase regulations.[21] Therefore, the observed downregulation of PRDX2 and HP may suggest that both genes promote development of SONFH disease through the redox pathway.\nMatrix metalloproteinases (MMPs) are considered the key regulator in maintenance of bone homeostasis.[22] Among them, MMP8, which is encoded by the MMP8 gene, also known as neutrophil or PMNL collagenase, is a collagen lyase that generally exists in mammalian connective tissues. The reduction of collagenase is the premise of effective osteoclast fusion. Inhibition of endogenous collagenase expression or activity was associated with a significant increase in osteoclast fusion, while fusion of trap-positive mononuclear osteoclast precursors is essential in the formation of fully functional mature osteoclasts.[23] Moreover, MMP8 deficiency was associated with increased occurrence of arthritis and bone loss in the serum a metastatic arthritis model.[24] Results from in situ hybridization of rat hindlimb tissue sections revealed that profiles of MMP8 expression were upregulated in osteoblast precursor cells, osteoblasts, and chondrocytes during embryonic development of the bone and cartilage.[25] These findings suggest that MMP8 expression may be playing a role in occurrence and progression of SONFH by affecting the structure and function of osteoblasts and osteoclasts.\nThis study had several potential shortcomings. First, only the important abnormal gene groups were randomly selected and verified, due to limited resources. It is possible that the overall results may be some deviation from the actual results. Second, our sample size for qRT-PCR validation was small, as evidenced by only 12 volunteers, which may not provide strong statistical support. Finally, the authors believe that in subsequent studies, clear and effective interventions for SONFH can be used to observe the changes of peripheral blood biomarkers in patients with SONFH, so as to achieve indirect verification and make the research translate to clinical practice. Unfortunately, this study does not refine these works.\n5. Conclusions\nTranscriptomic analysis revealed upregulation of key genes that regulate important signaling pathways during SONFH development, including TNF-\u03b1, PI3K-Akt, HIF-1, adherens junction, and mitogen-activated protein kinase signaling pathways. Overall, these genes promote SONFH occurrence by regulating redox pathways, inflammatory reactions, and structure and function of osteoblasts and osteoclasts, suggesting that they may be important targets for designing approaches for early diagnosis and treatment of SONFH.\nAuthors\u2019 contributions\nWenhui Shao and Honghai Zhou collected and analyzed data. Cong Tian wrote the manuscript. All authors read and approved the final manuscript.",
+          "cos_sim_score": 0.3094445466995239,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "Table 2\nTop 10 genes with significantly different downregulated gene expression in the 2 groups.\nTable 3\nTop 10 genes with significantly different upregulated gene expression in the 2 groups.\nFigure 1.\nIdentification of DEGs. (A, B) Two sets of transcriptome data annotations and PCAs. (C) The cluster dendrogram of the sample. (D) Heatmap showing clustering of the top 14 DEGs. (E) Distribution of statistically significant DEGs between the 2 groups. DEG = differentially expressed gene, PCA = principal components analysis.\n3.2. Functional annotation and pathway enrichment of the DEGs\nGO and KEGG analyses revealed the biological function and enriched pathways associated with the DEGs in pathogenesis of SONFH. GO terms revealed that downregulated genes were mainly involved in red blood cell differentiation, cell protein catabolism, and gas transportation (Fig. 2A), whereas upregulated ones were involved in activation of myeloid leukocytes, phagocytosis, and inflammatory response (Fig. 2B). KEGG pathway analysis indicated that downregulated DEGs mainly regulated mitophagy-animal, human T-cell leukemia virus-1 (HTLV-1) infection, and Forkhead box O(FOXO) signaling pathways (Fig. 2C). On the other hand, upregulated DEGs were mainly involved in phagocytosis, osteoclast differentiation, and cytokine\u2013cytokine receptor interaction pathways (Fig. 2D).\nFigure 2.\nFunction enrichment analysis and construction of a PPI network. (A) Downregulated genes were enriched in red blood cell differentiation, cell protein catabolism, and gas transportation. (B) Upregulated genes were enriched in activation of myeloid leukocytes, phagocytosis, and inflammatory response. (C) Downregulated genes were involved in regulation of mitophagy-animal, HTLV-1 infection, and FOXO signaling pathways. (D) Upregulated genes regulated phagocytosis, osteoclast differentiation, and cytokine\u2013cytokine receptor interaction pathways. (E) The top 2 MCODE components of downregulated PPIs. (F) The top 2 of MCODE components of upregulated PPIs. FOXO = Forkhead Box O, HTLV-1 = human T-cell leukemia virus-1, PPI = protein\u2013protein interaction.\n3.3. PPI network\nWe used the STRING online tool and Cytoscape software to construct a PPI network of the 584 DEGs. Next, we extracted the top 4 MCODE components from the PPIs and fund that the top 2 MCODE components for downregulated PPIs included hexokinase 1, protein phosphatase 3 catalytic subunit beta (PPP3CB), FK506 binding proteins 1B, peroxiredoxin 2 (PRDX2), bisphosphoglycerate mutase, DnaJ heat shock protein family (Hsp40) member A4, haptoglobin (HP), olfactomedin 4, and matrix metallopeptidase 8 (MMP8; Fig. 2E). The top 2 MCODE components for upregulated PPIs included formyl peptide receptor 2 (FPR2), integrin subunit alpha X (ITGAX), signal regulatory protein alpha, leukocyte immunoglobulin-like receptor B2 (LILRB2), and platelet-activating factor receptor (Fig. 2F).\n3.4. qRT-PCR results\nWe randomly selected some genes, including ITGAX, LILRB2, PPP3CB, and MMP8, from the PPI network and validated their levels of expression using qRT-PCR. Results were consistent with profiles observed during differential gene expression analysis. As shown in Fig. 3, particularly, ITGAX and LILRB2 were significantly upregulated, whereas PPP3CB and MMP8 were significantly downregulated in peripheral blood of SONFH patients (P\u2005<\u2005.05; Fig. 3).\nFigure 3.\nqRT-PCR results showing significant upregulation of ITGAX and LILRB2 and significant downregulation of PPP3CB and MMP8 in SONFH patients., ITGAX = integrin subunit alpha X, LILRB2 = leukocyte immunoglobulin like receptor B2, MMP8 = matrix metallopeptidase 8, PPP3CB = protein phosphatase 3 catalytic subunit beta, qRT-PCR = quantitative real-time polymerase chain reaction, SONFH = steroid-induced osteonecrosis of the femoral head.\n4. Discussion",
+          "cos_sim_score": 0.05297517776489258,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "2.4. Construction of protein\u2013protein interaction networks\nProtein\u2013protein interaction (PPI) networks of the DEGs were generated using the STRING online tool and Cytoscape software. Summarily, DEGs were entered into the STRING online tool to screen for interacting proteins with a combined score of\u2005>\u20050.9. The obtained PPI results were imported into Cytoscape software, then prominent modules in PPI were screened to construct the network through molecular complex detection. NetworkX package was then used to visualize the network in Python, with node sizes taken to be proportional to node degree.\n2.5. Quantitative real-time polymerase chain reaction\nPeripheral blood samples were collected from in- or out-patients at the Funan County Hospital of Traditional Chinese Medicine. The study group comprised 4 non-SONFH (following steroid administration for at least 3 months and 1 female and 3 males) and 8 SONFH (5 females and 3 males) patients, with samples collected between January 2020 and July 2021. Efforts were made to explain the study objectives to the subjects, who voluntarily signed a written informed consent provided by the Ethics Committee of Funan County Hospital of Traditional Chinese Medicine before sample collection. RNA was extracted from by mixing 1\u2009mL of TRIzol containing RNase inhibitor with 100 \u03bcL of blood sample. RNA purity was measured and then reverse transcribed to complementary DNA. Primers were designed using the Primer-blast tool targeting some genes randomly selected in the PPI networks for both up- and downregulated genes. The complementary DNA was subjected to quantitative real-time polymerase chain reaction (qRT-PCR) on the Applied Biosystems 7500 RT-PCR System. Relative gene expression was determined using the 2-\u25b3\u25b3Ct method. Primers used in the study were synthesized by Shenzhen Zhicheng Medical Technology Co., Ltd and are outlined in Table 1.\nTable 1\nThe primer sequences used for qRT-PCR validation.\nqRT-PCR = quantitative real-time polymerase chain reaction.\n2.6. Statistical analysis\nStatistical analyses were performed in GraphPad 8.0 software, and data presented as means\u2005\u00b1\u2005standard deviations. Student t test and Mann\u2013Whitney U were applied to compare data conforming to normal and nonnormal distribution, respectively. At least 3 independent experiments were used in the study, and data followed by P\u2005\u2264\u2005.05 were considered statistically significant.\n3. Results\n3.1. DEGs in SONFH\nWe analyzed transcriptome data for 40 samples (30 SONFH alongside 10 non-SONFH subjects) and then performed consistency analysis. Transcriptome data annotations and PCAs are shown in Figure 1A and B. The correlation within non-SONFH and SONFH groups was high, and higher than that between groups. PCA of the total samples under positive ion mode demonstrated that the transcriptome expression profile of the SONFH group changed by >49% compared to that of the non-SONFH group. The difference between transcriptomes in both groups was >9%. These data indicated high consistency between non-SONFH and SONFH groups, although differences were observed between groups. Cluster analysis results of the samples and the eigengene adjacency heatmap for the top 14 DEGs, respectively are shown in Figure 1C and D. Next, we analyzed differences in gene expression between the 2 groups, using a fold change >2 and a P value <.05 as the threshold. Results revealed a total of 584 DEGs, of which 294 and 290 were upregulated and downregulated, respectively. We also generated a volcano plot of these DEGs to show distribution of the genes between the 2 groups (Fig. 1E). The top 10 up- and downregulated genes in non-SONFH and SONFH groups and their functional annotation are listed in Tables 2 and 3, respectively.\nTable 2\nTop 10 genes with significantly different downregulated gene expression in the 2 groups.\nTable 3\nTop 10 genes with significantly different upregulated gene expression in the 2 groups.\nFigure 1.\nIdentification of DEGs. (A, B) Two sets of transcriptome data annotations and PCAs. (C) The cluster dendrogram of the sample. (D) Heatmap showing clustering of the top 14 DEGs. (E) Distribution of statistically significant DEGs between the 2 groups. DEG = differentially expressed gene, PCA = principal components analysis.\n3.2. Functional annotation and pathway enrichment of the DEGs",
+          "cos_sim_score": -0.005553089082241058,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

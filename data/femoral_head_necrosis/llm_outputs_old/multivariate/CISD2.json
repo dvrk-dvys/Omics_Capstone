@@ -1,0 +1,118 @@
+{
+  "rf_rank": 21,
+  "probe_id": "11721655_at",
+  "gene_symbol": "CISD2",
+  "score": 0.71,
+  "rf_n_nodes": 5,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 2.0968,
+  "log_fc": -2.0968,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 2,
+  "probe_ids": "11721655_at | 11721656_s_at",
+  "max_score": 0.71,
+  "mean_abs_fold_change": 2.2553,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T17:18:46",
+  "interpretation": "CISD2, or CDGSH iron-sulfur domain-containing protein 2, is a regulator of autophagy that plays a crucial role in cellular processes by modulating calcium levels in the endoplasmic reticulum and influencing the interaction between BCL2 and BECN1. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the expression of CISD2 was found to be significantly lower in bone tissue from SONFH patients compared to controls, indicating its potential involvement in the disease's pathophysiology. This suggests that CISD2 may be linked to the mechanisms of ferroptosis and inflammation that are critical in SONFH progression. The evidence supporting CISD2's role in SONFH is derived from a study that identified it as a differentially expressed gene associated with immune cell infiltration, thus highlighting its potential as a biomarker for early detection of SONFH. Overall, the evidence is moderate, primarily based on the study's findings, which suggest that CISD2 could serve as a clinically relevant biomarker for SONFH.",
+  "evidence_relation": "direct",
+  "evidence_tier": "Tier 2",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "CISD2 is implicated in the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) through its role in autophagy regulation and immune response.",
+  "citations": [
+    "CISD2 (Q8N5K1). https://www.uniprot.org/uniprotkb/Q8N5K1",
+    "CISD2 \u2014 CISD2. https://platform.opentargets.org/target/ENSG00000145354",
+    "CISD2 \u2194 Wolfram syndrome 2. https://platform.opentargets.org/target/ENSG00000145354/associations",
+    "CISD2 \u2194 Wolfram syndrome. https://platform.opentargets.org/target/ENSG00000145354/associations",
+    "CISD2 \u2194 hearing loss. https://platform.opentargets.org/target/ENSG00000145354/associations",
+    "CISD2 \u2194 atrial fibrillation. https://platform.opentargets.org/target/ENSG00000145354/associations",
+    "Bioinformatics and experimental validation of ferroptosis-related genes in steroid-induced osteonecrosis of the femoral head. (2025). https://pubmed.ncbi.nlm.nih.gov/40421419/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 3258,
+    "completion_tokens": 303,
+    "total_tokens": 3561,
+    "estimated_cost_usd": 0.00067
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q8N5K1",
+          "title": "CISD2 (Q8N5K1)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8N5K1",
+          "text": "Protein: CDGSH iron-sulfur domain-containing protein 2\nFunction: Regulator of autophagy that contributes to antagonize BECN1-mediated cellular autophagy at the endoplasmic reticulum. Participates in the interaction of BCL2 with BECN1 and is required for BCL2-mediated depression of endoplasmic reticulum Ca(2+) stores during autophagy. Contributes to BIK-initiated autophagy, while it is not involved in BIK-dependent activation of caspases. Involved in life span control, probably via its function as regulator of autophagy",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000145354::function",
+          "title": "CISD2 \u2014 CISD2",
+          "url": "https://platform.opentargets.org/target/ENSG00000145354",
+          "text": "Function: Regulator of autophagy that contributes to antagonize BECN1- mediated cellular autophagy at the endoplasmic reticulum. Participates in the interaction of BCL2 with BECN1 and is required for BCL2-mediated depression of endoplasmic reticulum Ca(2+) stores during autophagy. Contributes to BIK-initiated autophagy, while it is not involved in BIK-dependent activation of caspases. Involved in life span control, probably via its function as regulator of autophagy. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000145354::MONDO_0011502",
+          "title": "CISD2 \u2194 Wolfram syndrome 2",
+          "url": "https://platform.opentargets.org/target/ENSG00000145354/associations",
+          "text": "Disease: Wolfram syndrome 2\nDescription: Any Wolfram syndrome in which the cause of the disease is a mutation in the CISD2 gene.\nAssociation score: 0.733",
+          "cos_sim_score": 0.733268694329317,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000145354::MONDO_0018105",
+          "title": "CISD2 \u2194 Wolfram syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000145354/associations",
+          "text": "Disease: Wolfram syndrome\nDescription: Wolfram syndrome (WS) also known as DIDMOAD, is a neurodegenerative disorder characterized by type I diabetes mellitus (DM), diabetes insipidus (DI), sensorineural deafness (D), bilateral optical atrophy (OA) and neurological signs. Other related problems are urinary tract atony, ataxia, peripheral neuropathy, psychiatric disorders and/or seizures. 2 types of WS may be distinguished: type 1 and type 2 (WS1 and WS2).\nAssociation score: 0.527",
+          "cos_sim_score": 0.5269540126751402,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000145354::EFO_0004238",
+          "title": "CISD2 \u2194 hearing loss",
+          "url": "https://platform.opentargets.org/target/ENSG00000145354/associations",
+          "text": "Disease: hearing loss\nDescription: A partial or complete loss of hearing in one or both ears. It is classified as conductive, sensory, or central.\nAssociation score: 0.373",
+          "cos_sim_score": 0.3725544592095599,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000145354::EFO_0000275",
+          "title": "CISD2 \u2194 atrial fibrillation",
+          "url": "https://platform.opentargets.org/target/ENSG00000145354/associations",
+          "text": "Disease: atrial fibrillation\nDescription: Abnormal cardiac rhythm that is characterized by rapid, uncoordinated firing of electrical impulses in the upper chambers of the heart (HEART ATRIA). In such case, blood cannot be effectively pumped into the lower chambers of the heart (HEART VENTRICLES). It is caused by abnormal impulse generation.\nAssociation score: 0.278",
+          "cos_sim_score": 0.2782711829974676,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::40421419",
+          "title": "Bioinformatics and experimental validation of ferroptosis-related genes in steroid-induced osteonecrosis of the femoral head.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40421419/",
+          "year": "2025",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SONFH) is a progressive condition that causes increasing disability. It is thought to result from reduced blood flow and oxygen levels in the femoral head, with reactive oxygen species (ROS) playing a key role in triggering ferroptosis. However, the role of ferroptosis in SONFH progression remains underexplored. This study aimed to identify and validate key genes associated with ferroptosis in SONFH using bioinformatics. The study analyzed the SONFH dataset GSE123568, which includes data from 30 SONFH patients and 10 controls. Weighted gene co-expression network analysis (WGCNA) was used to identify differentially expressed genes (DEGs) between the SONFH and control groups. Core genes were identified by intersecting DEGs with ferroptosis-related genes retrieved from FerrDb V2. The diagnostic performance of the key genes was assessed using the receiver operating characteristic (ROC) curve, and a predictive nomogram model was developed. Interaction analysis of these genes was conducted to explore their link with immune infiltration. The expression of these genes in bone tissue from SONFH patients was validated. Finally, drug-protein interactions were predicted using the DSigDB database. Differential expression analysis identified 384 DEGs, which were significantly involved in inflammatory pathways. WGCNA revealed four key genes after intersecting DEGs with relevant module genes and ferroptosis-related genes. A nomogram model based on these genes demonstrated strong reliability and validity. Immune infiltration analysis showed significant differences between SONFH patients and controls, with notable associations between immune cell infiltration and the expression of the four core genes. Validation through quantitative real-time PCR (qRT-PCR) and Western blot confirmed that the expression of GCLC, GABARAPL2, CISD2, and NCOA4 was significantly lower in SONFH bone tissue compared to controls (<i>P</i> < 0.05). Additionally, potential therapeutic drugs targeting these genes, including Diethyl sulfate, Meloxicam, and NIMUSTINE, were predicted. This study identifies GABARAPL2, CISD2, NCOA4, and GCLC as potential diagnostic biomarkers associated with immune cell infiltration in SONFH, offering new insights for future research and clinical applications.",
+          "cos_sim_score": 0.49060627818107605,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_fetch_by_id",
+      "result": []
+    }
+  ]
+}

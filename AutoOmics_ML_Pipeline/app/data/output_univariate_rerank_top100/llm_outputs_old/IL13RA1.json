@@ -1,0 +1,153 @@
+{
+  "probe_id": "11727905_a_at",
+  "gene_symbol": "IL13RA1",
+  "Median_TestAUC": 0.962962962962963,
+  "SD_TestAUC": 0.0692899516069248,
+  "abs_fold_change": 1.6465,
+  "score": 1.305,
+  "probe_count": 2,
+  "probe_ids": "11727905_a_at | 11727904_s_at",
+  "max_score": 1.305,
+  "mean_abs_fold_change": 1.447,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T02:23:07",
+  "interpretation": "IL13RA1 encodes a subunit of the interleukin-13 receptor, which plays a role in immune response and inflammation by mediating signaling pathways associated with interleukin-13 and interleukin-4. These cytokines are involved in various biological processes, including tissue repair and remodeling, which may be relevant in the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH). While there is no direct evidence linking IL13RA1 to SONFH, its involvement in inflammatory responses and tissue remodeling suggests a potential role in the pathophysiology of this condition. The retrieved evidence primarily supports its general biological functions rather than a specific connection to SONFH, leading to a lower confidence in its direct relevance as a biomarker. Therefore, while IL13RA1 may have some biological plausibility in the context of SONFH, its potential as a clinically actionable biomarker remains weak.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "IL13RA1 may be involved in inflammatory processes relevant to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "IL13RA1 (P78552). https://www.uniprot.org/uniprotkb/P78552",
+    "IL13RA1 (P78552-2). https://www.uniprot.org/uniprotkb/P78552-2",
+    "IL13RA1 \u2014 IL13RA1. https://platform.opentargets.org/target/ENSG00000131724",
+    "IL13RA1 \u2194 type 2 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000131724/associations",
+    "IL13RA1 \u2194 obesity. https://platform.opentargets.org/target/ENSG00000131724/associations",
+    "IL13RA1 \u2194 sleep apnea. https://platform.opentargets.org/target/ENSG00000131724/associations",
+    "IL13RA1 \u2194 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000131724/associations",
+    "Interleukin 13 receptor, alpha 1. https://en.wikipedia.org/wiki/Interleukin_13_receptor,_alpha_1",
+    "Interleukin-13 receptor. https://en.wikipedia.org/wiki/Interleukin-13_receptor",
+    "CCR5. https://en.wikipedia.org/wiki/CCR5",
+    "Prolactin receptor. https://en.wikipedia.org/wiki/Prolactin_receptor"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5365,
+    "completion_tokens": 257,
+    "total_tokens": 5622,
+    "estimated_cost_usd": 0.000959
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P78552",
+          "title": "IL13RA1 (P78552)",
+          "url": "https://www.uniprot.org/uniprotkb/P78552",
+          "text": "Protein: Interleukin-13 receptor subunit alpha-1\nFunction: Binds with low affinity to interleukin-13 (IL13). Together with IL4RA can form a functional receptor for IL13. Also serves as an alternate accessory protein to the common cytokine receptor gamma chain for interleukin-4 (IL4) signaling, but cannot replace the function of IL2RG in allowing enhanced interleukin-2 (IL2) binding activity",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P78552-2",
+          "title": "IL13RA1 (P78552-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P78552-2",
+          "text": "Protein: Isoform 2 of Interleukin-13 receptor subunit alpha-1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000131724::function",
+          "title": "IL13RA1 \u2014 IL13RA1",
+          "url": "https://platform.opentargets.org/target/ENSG00000131724",
+          "text": "Function: Binds with low affinity to interleukin-13 (IL13). Together with IL4RA can form a functional receptor for IL13. Also serves as an alternate accessory protein to the common cytokine receptor gamma chain for interleukin-4 (IL4) signaling, but cannot replace the function of IL2RG in allowing enhanced interleukin-2 (IL2) binding activity.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000131724::MONDO_0005148",
+          "title": "IL13RA1 \u2194 type 2 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000131724/associations",
+          "text": "Disease: type 2 diabetes mellitus\nDescription: A type of diabetes mellitus that is characterized by insulin resistance or desensitization and increased blood glucose levels. This is a chronic disease that can develop gradually over the life of a patient and can be linked to both environmental factors and heredity.\nAssociation score: 0.486",
+          "cos_sim_score": 0.48627783096767857,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000131724::EFO_0001073",
+          "title": "IL13RA1 \u2194 obesity",
+          "url": "https://platform.opentargets.org/target/ENSG00000131724/associations",
+          "text": "Disease: obesity\nDescription: An eating-related disorder in which excess body fat has accumulated to such an extent that health may be negatively affected. It is commonly defined as a body mass index (weight divided by height squared) of 30 kg/m2 or higher.\nAssociation score: 0.441",
+          "cos_sim_score": 0.44074434946741364,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000131724::EFO_0003877",
+          "title": "IL13RA1 \u2194 sleep apnea",
+          "url": "https://platform.opentargets.org/target/ENSG00000131724/associations",
+          "text": "Disease: sleep apnea\nDescription: Disorders characterized by multiple cessations of respirations during sleep that induce partial arousals and interfere with the maintenance of sleep. Sleep apnea syndromes are divided into central (see SLEEP APNEA, CENTRAL), obstructive (see SLEEP APNEA, OBSTRUCTIVE), and mixed central-obstructive types.\nAssociation score: 0.391",
+          "cos_sim_score": 0.39133262698016125,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000131724::EFO_0000400",
+          "title": "IL13RA1 \u2194 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000131724/associations",
+          "text": "Disease: diabetes mellitus\nDescription: A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization.\nAssociation score: 0.306",
+          "cos_sim_score": 0.3055803886465982,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Interleukin 13 receptor, alpha 1",
+          "title": "Interleukin 13 receptor, alpha 1",
+          "url": "https://en.wikipedia.org/wiki/Interleukin_13_receptor,_alpha_1",
+          "text": "Interleukin 13 receptor, alpha 1, also known as IL13RA1 and CD213A1 (cluster of differentiation 213A1), is a human gene.\nThe protein encoded by this gene is a subunit of the interleukin 13 receptor. This subunit forms a receptor complex with IL4 receptor alpha, a subunit shared by IL13 and IL4 receptors. This subunit serves as a primary IL13-binding subunit of the IL13 receptor, and may also be a component of IL4 receptors. This protein has been shown to bind tyrosine kinase TYK2, and thus may mediate the signaling processes that lead to the activation of JAK1, STAT3 and STAT6 induced by IL13 and IL4.\nIL13RA1 expression has been linked to higher survival rates for lung cancer patients.\n\nSee also\nInterleukin-13 receptor\n\nReferences\nFurther reading\nExternal links\nIL13RA1+protein,+human at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.5512146949768066,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Interleukin-13 receptor",
+          "title": "Interleukin-13 receptor",
+          "url": "https://en.wikipedia.org/wiki/Interleukin-13_receptor",
+          "text": "The interleukin-13 receptor is a type I cytokine receptor, binding Interleukin-13. It consists of two subunits, encoded by IL13RA1 and IL4R, respectively. These two genes encode the proteins IL-13R\u03b11 and IL-4R\u03b1. These form a dimer with IL-13 binding to the IL-13R\u03b11 chain and IL-4R\u03b1 stabilises this interaction. This IL-13 receptor can also instigate IL-4 signalling. In both cases this occurs via activation of the Janus kinase (JAK)/Signal Transducer and Activator of Transcription (STAT) pathway, resulting in phosphorylation of STAT6. Phosphorylated STAT6 dimerises and acts as a transcription factor activating many genes, such as eotaxin. \nThere is also another receptor that can bind IL-13:  IL-13R\u03b12 encoded by the IL13RA2 gene. This binds IL-13 with very high affinity (and can therefore sequester it) but does not allow IL-4 binding. It acts as a negative regulator of both IL-13 and IL-4, however the mechanism of this is still undetermined.\n\nFunction\nInterleukin 13 (IL-13) is an effector cytokine partially sharing the signaling pathways with IL-4 due to the utilization of a common receptor system (IL-4 receptor type II). A \u201cprivate\u201d receptor system, binding specifically IL-13 with high affinity, seems to use different signalling pathways and is increasingly being studied for its potential as a novel prognostic factor, biomarker or therapeutic target in different types of cancer.\n\nThe \u201cshared\u201d IL-4 / IL-13 receptor\nIL-13 uses the IL-4 receptor type II (IL-4RII), a complex formed by an IL-4R\u03b1 chain and an IL-13R\u03b11 chain. Initially, the ligand (IL-4 or IL-13) binds to the IL-4R\u03b1 chain and IL-13R\u03b11 respectively; thereafter, a secondary chain (IL-13R\u03b11 and IL-4R\u03b1 respectively) will also bind, forming the complete IL-4RII. The IL-4/IL-4R\u03b1 complex, however, can also bind to a different secondary chain, the IL-2R\u03b3c, forming the IL-4 receptor type I (IL-4RI). In non-hematopoietic cells, IL-2R\u03b3c is poorly expressed; on the other hand, IL-13R\u03b11 is poorly expressed in lymphocytes but abundantly in all non-hematopoietic cells; myeloid cells express both of them to a certain degree. This different distribution of secondary chains accounts for the difference in distribution of completed receptors, with being IL-4RI prevalently expressed in lymphocyte, and IL-4RII prevalently in non-hematopoietic cells. Consequently, only IL-4, through IL-4R1, is able to modulate the function of lymphocytes inducing Th2 polarisation and B cells IgG1/IgE class switching, while IL-13 is mainly acting on myeloid cells and non-hematopoietic cells, having strong effects on mucus production, smooth muscle contraction, epithelium permeabilisation (e.g. allergic asthma).\nAfter the complete assemblage, the conformational changes in IL-4RI or IL-4RII tails leads to the intracellular signaling, starting with the auto and cross-phosphorylation of associated Jak kinases (Jak3 for IL-2R\u03b3c, Jak1 for IL-4R\u03b1, Jak2 and Tyk2 for IL-13R\u03b11), and followed by phosphorylation of intracellular domains of IL-4R\u03b1 in critical Y residues which are therefore activated to form the docking sites for downstream signalling molecules endowed with SH domains. While the docking sites in IL-4R1 (and consequently IL-4) are able to efficiently activate both STAT6 and IRS2 signalling molecules, IL-4RII (and consequently IL-13) only activates effectively STAT6. Activated STAT6 molecules form dimers which translocate to the nucleus to bind responsive elements (e.g. CD23 promoter in B cells, arginase1 enhancer in macrophages )\nThe binding affinity of IL-4 for IL-4R\u03b1 is much higher than IL-13 for the IL-13R\u03b11, hence IL-4 would out-compete IL-13 for receptor availability within IL4R2 at parity of concentration.",
+          "cos_sim_score": 0.4514610171318054,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Interleukin-13 receptor",
+          "title": "Interleukin-13 receptor",
+          "url": "https://en.wikipedia.org/wiki/Interleukin-13_receptor",
+          "text": "The \u201cprivate\u201d IL-13 receptor\nBesides IL-13R\u03b11 chain (which work in conjunction with the IL-4R\u03b1, IL-13 can bind with much higher affinity to IL-13R\u03b12.\nIL-13R\u03b12 presents 35% homology with IL-13R\u03b11 and it is expressed mostly in structural cell (but also has been identified in fibroblasts and, only in mice, in soluble form). It presents an extraordinary affinity to IL-13, but does not form complexes with any secondary chain. \nBecause of the apparent lack of signaling domain and the short tail, it has been initially thought not to have any signaling activity, and regarded as \u201cdecoy\u201d receptor, that is its function would just consist in competing for IL-13 binding and neutralizing his effect.\nIndeed, it has been shown that IL-13R\u03b12 blocks IL-13 driven STAT6 signalling by binding IL-13 with high affinity, however a partial block is also extending to IL-4 driven STAT6 signalling, presumably due to the cytoplasmic domain interfering with the assembling of IL-4/IL-4R\u03b1 with a secondary chain.\nHowever, increasing evidences are accumulating that IL-13R\u03b12 is more than a \u201cdecoy\u201d. IL-13 signalling through IL-13R\u03b12 and AP1-driven TGF-\u03b2 production has been initially reported in monocytes and then confirmed in mouse models. According these studies, IL-13, through the over-expression (TNF-\u03b1 induced) of IL-13R\u03b12 would be able to activate AP-1 signalling and production of TGF-\u03b2, driving pro-fibrotic effects. Some recent works is evidencing how a wide range of signals can be actually activated by this receptor (e.g. WNT/\u03b2-Catenin, MAPK/ERK, AKT/PKB, Src/FAK, PIP3K ) in normal or pathologic environments. How IL-13R\u03b12 might overcome the limitation of a 17 aminoacids short tail lacking any signalling motif, it is not clear yet but it has been shown that, at least in some cases, the association with other receptors or signalling adaptors can do the trick.\n\nReferences\nExternal links\nReceptors,+Interleukin-13 at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.44796276092529297,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::CCR5",
+          "title": "CCR5",
+          "url": "https://en.wikipedia.org/wiki/CCR5",
+          "text": "HIV\nHIV-1 most commonly uses the chemokine receptors CCR5 and/or CXCR4 as co-receptors to enter target immunological cells. These  receptors are located on the surface of host immune cells whereby they provide a method of entry for the HIV-1 virus to infect the cell. The HIV-1 envelope glycoprotein structure is essential in enabling the viral entry of HIV-1 into a target host cell. The envelope glycoprotein structure consists of two protein subunits cleaved from a Gp160 protein precursor encoded for by the HIV-1 env gene: the Gp120 external subunit and the Gp41 transmembrane subunit. This envelope glycoprotein structure is arranged into a spike-like structure located on the surface of the virion and consists of a trimer of Gp120-Gp41 hetero-dimers. The Gp120 envelope protein is a chemokine mimic. Though it lacks the unique structure of a chemokine, it is still capable of binding to the CCR5 and CXCR4 chemokine receptors. During HIV-1 infection, the Gp120 envelope glycoprotein subunit binds to a CD4 glycoprotein and a HIV-1 co-receptor expressed on a target cell, forming a heterotrimeric complex. The formation of this complex stimulates the release of a fusogenic peptide, causing the viral membrane to fuse with the membrane of the target host cell. Because binding to CD4 alone can sometimes result in gp120 shedding, gp120 must next bind to co-receptor CCR5 in order for fusion to proceed. The tyrosine-sulfated amino terminus of this co-receptor is the \"essential determinant\" of binding to the gp120 glycoprotein.  The co-receptor also recognizes the V1-V2 region of gp120 and the bridging sheet (an antiparallel, 4-stranded \u03b2 sheet that connects the inner and outer domains of gp120). The V1-V2 stem can influence \"co-receptor usage through its peptide composition as well as by the degree of N-linked glycosylation.\" Unlike V1-V2 however, the V3 loop is highly variable and thus is the most important determinant of co-receptor specificity. The normal ligands for this receptor, RANTES, MIP-1\u03b2, and MIP-1\u03b1, are able to suppress HIV-1 infection in vitro. In individuals infected with HIV, CCR5-using viruses are the predominant species isolated during the early stages of viral infection, suggesting that these viruses may have a selective advantage during transmission or the acute phase of disease. Moreover, at least half of all infected individuals harbor only CCR5-using viruses throughout the course of infection.\nCCR5 is the primary co-receptor used by gp120 sequentially with CD4.  This bind results in gp41, the other protein product of gp160, released from its metastable conformation and inserted into the membrane of the host cell.  Although it has not been confirmed, binding of gp120-CCR5 involves two crucial steps: 1) The tyrosine-sulfated amino terminus of this co-receptor is an \"essential determinant\" of binding to gp120 (as stated previously) 2) Following step 1., there must be reciprocal action (synergy, intercommunication) between gp120 and the CCR5 transmembrane domains.",
+          "cos_sim_score": 0.22993366420269012,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Prolactin receptor",
+          "title": "Prolactin receptor",
+          "url": "https://en.wikipedia.org/wiki/Prolactin_receptor",
+          "text": "Monoclonal antibodies\nABS-201\nBAY-1158061 (HMI-115)\n\nProlactin receptor dysfunction\nPRLR dysfunction has been seen to positively regulate the proliferation of malignant cells in breast cancer. Defects in prolactin receptor signalling can trigger tumour activity, rather than suppress it. Signal control is monitored by a variety of genes, and the PRLR gene has been identified in the tissue of metastatic primary breast cancer cells. The defect in the gene is thought to have built a resistance to chemotherapy, and has lost the ability to regulate the apoptosis of cells with mutated DNA. This signalling defect then fails to promote cellular differentiation and promotes the upstream survival of the cancerous cells. In breast cancer, the survival of the breast epithelial cells resembles the malignant cells, characteristically known to have an increased proliferative rate.\n\nSee also\nProlactin modulator\nHypothalamic\u2013pituitary\u2013prolactin axis\n\nReferences\nExternal links\nProlactin+receptor at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.20618689060211182,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

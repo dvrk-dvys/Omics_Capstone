@@ -1,0 +1,167 @@
+{
+  "rf_rank": 51,
+  "probe_id": "11717836_a_at",
+  "gene_symbol": "AIF1",
+  "score": 0.49,
+  "rf_n_nodes": 15,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 1.1201,
+  "log_fc": 1.1201,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11717836_a_at",
+  "max_score": 0.49,
+  "mean_abs_fold_change": 1.1201,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T20:34:12",
+  "interpretation": "AIF1, or Allograft Inflammatory Factor 1, is an actin-binding protein that plays a significant role in macrophage activation, inflammation, and vascular processes. It is involved in enhancing the proliferation and migration of immune cells, particularly T-lymphocytes and macrophages, which are critical in inflammatory responses. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), AIF1 may be implicated due to its association with vascular inflammation and tissue remodeling, processes that are likely disrupted in SONFH. However, the evidence directly linking AIF1 to SONFH is limited, primarily suggesting its role in inflammation rather than specific mechanisms of osteonecrosis. Thus, while AIF1 shows potential as a biomarker due to its involvement in immune responses and inflammation, the current evidence does not robustly support its direct relevance to SONFH diagnosis or progression. Therefore, AIF1's clinical utility as an early-detection biomarker for SONFH remains weak and speculative.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "AIF1 is involved in inflammatory processes that may contribute to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), but direct evidence linking it to SONFH is lacking.",
+  "citations": [
+    "AIF1 (P55008). https://www.uniprot.org/uniprotkb/P55008",
+    "AIF1 (P55008-3). https://www.uniprot.org/uniprotkb/P55008-3",
+    "AIF1 (P55008-2). https://www.uniprot.org/uniprotkb/P55008-2",
+    "AIF1 \u2014 AIF1. https://platform.opentargets.org/target/ENSG00000204472",
+    "AIF1 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000204472/associations",
+    "AIF1 \u2194 neoplasm. https://platform.opentargets.org/target/ENSG00000204472/associations",
+    "AIF1 \u2194 experimental autoimmune encephalomyelitis. https://platform.opentargets.org/target/ENSG00000204472/associations",
+    "AIF1 \u2194 Alzheimer disease. https://platform.opentargets.org/target/ENSG00000204472/associations",
+    "Allograft inflammatory factor 1. https://en.wikipedia.org/wiki/Allograft_inflammatory_factor_1",
+    "Apoptosis-inducing factor. https://en.wikipedia.org/wiki/Apoptosis-inducing_factor",
+    "Initiation factor. https://en.wikipedia.org/wiki/Initiation_factor"
+  ],
+  "token_usage": {
+    "prompt_tokens": 6612,
+    "completion_tokens": 290,
+    "total_tokens": 6902,
+    "estimated_cost_usd": 0.001166
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P55008",
+          "title": "AIF1 (P55008)",
+          "url": "https://www.uniprot.org/uniprotkb/P55008",
+          "text": "Protein: Allograft inflammatory factor 1\nFunction: Actin-binding protein that enhances membrane ruffling and RAC activation. Enhances the actin-bundling activity of LCP1. Binds calcium. Plays a role in RAC signaling and in phagocytosis. May play a role in macrophage activation and function. Promotes the proliferation of vascular smooth muscle cells and of T-lymphocytes. Enhances lymphocyte migration. Plays a role in vascular inflammation",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P55008-3",
+          "title": "AIF1 (P55008-3)",
+          "url": "https://www.uniprot.org/uniprotkb/P55008-3",
+          "text": "Protein: Isoform 3 of Allograft inflammatory factor 1",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P55008-2",
+          "title": "AIF1 (P55008-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P55008-2",
+          "text": "Protein: Isoform 2 of Allograft inflammatory factor 1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000204472::function",
+          "title": "AIF1 \u2014 AIF1",
+          "url": "https://platform.opentargets.org/target/ENSG00000204472",
+          "text": "Function: Actin-binding protein that enhances membrane ruffling and RAC activation. Enhances the actin-bundling activity of LCP1. Binds calcium. Plays a role in RAC signaling and in phagocytosis. May play a role in macrophage activation and function. Promotes the proliferation of vascular smooth muscle cells and of T-lymphocytes. Enhances lymphocyte migration. Plays a role in vascular inflammation.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000204472::EFO_0005772",
+          "title": "AIF1 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000204472/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.271",
+          "cos_sim_score": 0.2705687703752824,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000204472::EFO_0000616",
+          "title": "AIF1 \u2194 neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000204472/associations",
+          "text": "Disease: neoplasm\nDescription: A benign or malignant tissue growth resulting from uncontrolled cell proliferation. Benign neoplastic cells resemble normal cells without exhibiting significant cytologic atypia, while malignant cells exhibit overt signs such as dysplastic features, atypical mitotic figures, necrosis, nuclear pleomorphism, and anaplasia. Representative examples of benign neoplasms include papillomas, cystadenomas, and lipomas; malignant neoplasms include carcinomas, sarcomas, lymphomas, and leukemias.\nAssociation score: 0.109",
+          "cos_sim_score": 0.10916036970204113,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000204472::EFO_0001066",
+          "title": "AIF1 \u2194 experimental autoimmune encephalomyelitis",
+          "url": "https://platform.opentargets.org/target/ENSG00000204472/associations",
+          "text": "Disease: experimental autoimmune encephalomyelitis\nDescription: An experimental animal model for central nervous system demyelinating disease. Inoculation with a white matter emulsion combined with FREUND'S ADJUVANT, myelin basic protein, or purified central myelin triggers a T cell-mediated immune response directed towards central myelin. The pathologic features are similar to MULTIPLE SCLEROSIS, including perivascular and periventricular foci of inflammation and demyelination. Subpial demyelination underlying meningeal infiltrations also occurs, which is also a feature of ENCEPHALOMYELITIS, ACUTE DISSEMINATED. Passive immunization with T-cells from an afflicted animal to a normal animal also induces this condition. (From Immunol Res 1998;17(1-2):217-27; Raine CS, Textbook of Neuropathology, 2nd ed, p604-5)\nAssociation score: 0.108",
+          "cos_sim_score": 0.10822621152341266,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000204472::MONDO_0004975",
+          "title": "AIF1 \u2194 Alzheimer disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000204472/associations",
+          "text": "Disease: Alzheimer disease\nDescription: A progressive, neurodegenerative disease characterized by loss of function and death of nerve cells in several areas of the brain leading to loss of cognitive function such as memory and language.\nAssociation score: 0.105",
+          "cos_sim_score": 0.1052854693560769,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Allograft inflammatory factor 1",
+          "title": "Allograft inflammatory factor 1",
+          "url": "https://en.wikipedia.org/wiki/Allograft_inflammatory_factor_1",
+          "text": "Allograft inflammatory factor 1 (AIF-1) also known as ionized calcium-binding adapter molecule 1 (IBA1) is a protein that in humans is encoded by the AIF1 gene.\n\nGene\nThe AIF1 gene is located within a segment of the major histocompatibility complex class III region. It has been shown that this gene is highly expressed in testis, spleen, and brain but weakly expressed in lung, and kidney. Among brain cells, the Iba1 gene is strongly and specifically expressed in microglia. Circulating macrophages also express Iba1.\n\nFunction\nAIF1 is a protein that exists in the cytoplasm, and it is highly evolutionarily conserved. It is also possibly identical to three other proteins, Iba-2, MRF-1 (microglia response factor) and daintain. However complete functional profiles of all three proteins and how they overlap is unknown. IBA1 is a 17-kDa EF hand protein that is specifically expressed in macrophages / microglia and is upregulated during the activation of these cells. Iba1 expression is up-regulated in microglia following nerve injury, central nervous system ischemia, and several other brain diseases.\nAIF1 was originally discovered in atherosclerotic lesions in a rat model of chronic allograft cardiac rejection. It was found to be upregulated in macrophages and neutrophils in response to the cytokine IFN-\u03b3. AIF1 expression has been seen to increase in vascular tissue in response to arterial injury, specifically it is found in activated vascular smooth muscle cells in response to IFN-\u03b3, IL-1\u03b2, and T-cell conditioned media. In vascular smooth muscle cells, activation is responsible for arterial thickening in allografts through over proliferation. AIF1 has been found to enhance growth and promote proliferation in vascular smooth muscle cells through deregulation of the cell cycle. It does this by shortening the cell cycle and altering the expression of cyclins. Though histologically different, AIF1 has also been shown to promote the proliferation and activation of endothelial cells (EC). EC activation, leads to proliferation and migration of cells, which is involved in multiple normal vascular processes, such as atherosclerosis, angiogenesis, and wound healing. It is currently theorized that AIF1 works to control endothelial cell proliferation and migration through action in signal transduction pathways. It has features of a cytoplasmic signaling protein, including several domains that allow for binding to multiprotein complexes, called PDZ domains. In endothelial cells, AIF1 has been specifically shown to regulate vasculogenesis, including the formation of aortic sprouting and tube-like formations. AIF1 been shown to interact with kinase p44/42 and PAK1, two previously known signal transduction molecules, in regulating these processes. AIF1 also shows distinct differences in the pathways by which it regulates endothelial cells, macrophages, and vascular smooth muscle cells. Upregulation of AIF-1 is connected with increased migration of mononuclear peripheral blood cell. In the CD14 positive cells, AIF-1 support secretion of IL-6 and various chemokines. AIF-1 may also play a role in the T-cell response. It has been shown that AIF-1 increases expression of IL-2 and IFN-\u03b3 in T-cells, while the expression of IL-4 and TGF-\u03b2 is decreased. The presence of AIF-1 also inhibits polarization into regulatory T cells.\n\nClinical significance\nAllograft Inflammatory Factor 1 is found in activated macrophages. Activated macrophages are found in tissues with inflammation. AIF1 levels in healthy humans have been found to positively correlate with metabolic indicators, such as body mass index, triglycerides, and fasting plasma glucose levels. The excess of adipose tissue found in obese patients is found to cause chronic inflammation with an increase in the number of activated macrophages. Subsequently, AIF1 may be an accurate indicator of macrophage activation in the body. There is also evidence that AIF1 could be a marker for diabetic nephropathy when detected in serum. Since diabetic nephropathy is a consequence of long-term type 1 and type 2 diabetes, this consistent with evidence that AIF1 may be associated with other aspects of diabetes. It is found in activated macrophages in the pancreatic islets, and has been shown to decrease insulin secretion, while simultaneously impairing glucose elimination.",
+          "cos_sim_score": 0.4870803952217102,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Allograft inflammatory factor 1",
+          "title": "Allograft inflammatory factor 1",
+          "url": "https://en.wikipedia.org/wiki/Allograft_inflammatory_factor_1",
+          "text": "Role in cancer progression\nIn recent years, the possibility of a role for AIF-1 in cancer development has also been considered. Significantly higher levels of AIF-1 expression were found in hepatocarcinoma cell lines and in tissue compared to healthy samples. One option in which AIF-1 may contribute to the development of pathology is involvement in the proliferation and migration of tumor cells. It was also shown that AIF-1 promote cell proliferation in the breast cancer cells line. This effect was dependent on time and level of AIF-1 protein. Upregulation of AIF-1 enhanced activity of NF-\u039aB and increased expression of cyclin D1. Cyclin D1 contribute to cell proliferation and mutation in this gene has been connected with variety of tumors. It has also been shown that AIF-1 expression can contribute to progression of cancer by inhibition of apoptosis in cells.\n\nRole in Rheumatoid arthritis\nThe role of up-regulation of expression of AIF-1 was demonstrated in rheumatoid arthritis. Presence of AIF-1 was confirmed in synovial tissue of patient with this pathology. AIF-1 was strongly expressed in several cell types of synovial tissue, such as fibroblast and synovial cells, but also in infiltrated immune cells. It was also shown that upregulation of AIF-1 contribute to induction of enhances the  production of IL-6 . Another factor by which the expression of AIF-1 affects the course of the disease is increased proliferation of synovial cells.\n\nRole in kidney diseases\nAIF-1 was also considered as a player in the diseases connected with fibrosis. For example, in kidney diseases overexpression of AIF-1 in the macrophages contributes to signaling  through AKT and mTOR. Another way in which AIF-1 contribute to the pathology of kidney is upregulation of enzyme NADPH oxidase 2. This upregulation leads to oxidative stress in the cells and progression of renal injury. Expression of AIF-1 is considered to be linked with calcification in hemodyalisis patients.  Higher presence of AIF-1/NF-\u03baB/MCP-1/CCR-2-pathway was detected in calcifaied vascular smooth muscle cells. AIF-1 was also detected as a potential factor which contribue to apoptosis and inflammation.\n\nRole in retinal diseases\nSince the immune response in the retina is tightly regulated under physiological conditions, microglia may play a role in retinal diseases. Retinitis pigmentosa is an inherited disease in which photoreceptors are gradually degenerated. That condition gradually leads to reduced of dark vision and eventually complete blindness. In an experimental model RCS (The Royal College of Surgeons) rats with progression loss of photoreceptors, level of AIF-1 was elevated in retina in contrast to wild type\n\nReferences\nFurther reading\nExternal links\nHuman AIF1 genome location and AIF1 gene details page  in the UCSC Genome Browser.\nPDBe-KB provides an overview of all the structure information available in the PDB for Human Allograft inflammatory factor 1",
+          "cos_sim_score": 0.40391266345977783,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Apoptosis-inducing factor",
+          "title": "Apoptosis-inducing factor",
+          "url": "https://en.wikipedia.org/wiki/Apoptosis-inducing_factor",
+          "text": "Isozymes\nHuman genes encoding apoptosis inducing factor isozymes include:\n\nAIFM1\nAIFM2\nAIFM3\n\nEvolution\nThe apoptotic function of AIFs has been shown in organisms belonging to different eukaryotic organisms including mentioned above human factors: AIM1, AIM2, and AIM3 (Xie et al., 2005), yeast factors NDI1 and AIF1 as well as AIF of Tetrahymena.  Phylogenetic analysis indicates that the divergence of the AIFM1, AIFM2, AIFM3, and NDI sequences occurred before the divergence of eukaryotes.\n\nRole in cancer\nDespite an involvement in cell death, AIF plays a contributory role to the growth and aggressiveness of a variety of cancer types including colorectal, prostate, and pancreatic cancers through its NADH oxidase activity. AIF enzymatic activity regulates metabolism but can also increase ROS levels promoting oxidative stress activated signaling molecules including the MAPKs. AIF-mediated redox signaling promotes the activation of JNK1, which in turn can trigger the cadherin switch.\n\nSee also\nApoptosis\nParthanatos\n\nReferences\nExternal links\nApoptosis+inducing+factor at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.330456018447876,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Apoptosis-inducing factor",
+          "title": "Apoptosis-inducing factor",
+          "url": "https://en.wikipedia.org/wiki/Apoptosis-inducing_factor",
+          "text": "Apoptosis inducing factor is involved in initiating a caspase-independent pathway of apoptosis (positive intrinsic regulator of apoptosis) by causing DNA fragmentation and chromatin condensation. Apoptosis inducing factor is a flavoprotein. It also acts as an NADH oxidase. Another AIF function is to regulate the permeability of the mitochondrial membrane upon apoptosis. Normally it is found behind the outer membrane of the mitochondrion and is therefore secluded from the nucleus. However, when the mitochondrion is damaged, it moves to the cytosol and to the nucleus. Inactivation of AIF leads to resistance of embryonic stem cells to death following the withdrawal of growth factors indicating that it is involved in apoptosis.\n\nFunction\nApoptosis Inducing Factor (AIF) is a protein that triggers chromatin condensation and DNA fragmentation in a cell in order to induce programmed cell death. The mitochondrial AIF protein was found to be a caspase-independent death effector that can allow independent nuclei to undergo apoptotic changes. The process triggering apoptosis starts when the mitochondrion releases AIF, which exits through the mitochondrial membrane, enters the cytosol, and moves to the nucleus of the cell, where it signals the cell to condense its chromosomes and fragment its DNA molecules in order to prepare for cell death. Recently, researchers have discovered that the activity of AIF depends on the type of cell, the apoptotic insult, and its DNA-binding ability. AIF also plays a significant role in the mitochondrial respiratory chain and metabolic redox reactions.\n\nSynthesis\nThe AIF protein is located across 16 exons on the X chromosome in humans. AIF1 (the most abundant type of AIF) is translated in the cytosol and recruited to the mitochondrial membrane and intermembrane space by its N-terminal mitochondrial localization signal (MLS). Inside the mitochondrion, AIF folds into its functional configuration with the help of the cofactor flavin adenine dinucleotide (FAD).\nA protein called Scythe (BAT3), which is used to regulate organogenesis, can increase the AIF lifetime in the cell. As a result, decreased amounts of Scythe lead to a quicker fragmentation of AIF. The X-linked inhibitor of apoptosis (XIAP) has the power to influence the half-life of AIF along with Scythe. Together, the two do not affect the AIF attached to the inner mitochondrial membrane, however they influence the stability of AIF once it exits the mitochondrion.\n\nRole in mitochondria\nIt was thought that if a recombinant version of AIF lacked the first N-terminal 120 amino acids of the protein, then AIF would function as an NADH and NADPH oxidase. However, it was instead discovered that recombinant AIF that do not have the last 100 N-terminal amino acids have limited NADP and NADPH oxidase activity. Therefore, researchers concluded that the AIF N-terminus may function in interactions with other proteins or control AIF redox reactions and substrate specificity.\nMutations of AIF due to deletions have stimulated the creation of the mouse model of complex I deficiency. Complex I deficiency is the reason behind over thirty percent of human mitochondrial diseases. For example, complex I mitochondriopathies mostly affect infants by causing symptoms such as seizures, blindness, deafness, etc. These AIF-deficient mouse models are important for fixing complex I deficiencies. The identification of AIF-interacting proteins in the inner mitochondrial membrane and intermembrane space will help researchers identify the mechanism of the signalling pathway that monitors the function of AIF in the mitochondria.\n\nIsozymes\nHuman genes encoding apoptosis inducing factor isozymes include:\n\nAIFM1\nAIFM2\nAIFM3\n\nEvolution\nThe apoptotic function of AIFs has been shown in organisms belonging to different eukaryotic organisms including mentioned above human factors: AIM1, AIM2, and AIM3 (Xie et al., 2005), yeast factors NDI1 and AIF1 as well as AIF of Tetrahymena.  Phylogenetic analysis indicates that the divergence of the AIFM1, AIFM2, AIFM3, and NDI sequences occurred before the divergence of eukaryotes.",
+          "cos_sim_score": 0.299194872379303,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Initiation factor",
+          "title": "Initiation factor",
+          "url": "https://en.wikipedia.org/wiki/Initiation_factor",
+          "text": "A eukaryotic initiation factor eIF3 plays an important role in translational initiation. It has a complex structure, composed of 13 subunits. It helps to create the 43S pre-initiation complex, composed of the small 40S subunit attached to other initiation factors. It also helps to create the 48S pre-initiation complex, consisting of the 43S complex with the mRNA. The eIF3 factor can also be used post-translation in order to separate the ribosomal complex and keep the small and large subunits apart. The initiation factor interacts with the eIF1 and eIF5 factors used for scanning and selection of the start codons. This can create changes in the selection of the factors, binding to different codons.\nAnother important eukaryotic initiation factor, eIF2, binds the tRNA containing methionine to the P site of the small ribosome. The P site is where the tRNA carrying an amino acid forms a peptide bond with the incoming amino acids and carries the peptide chain. The factor consists of an alpha, beta, and gamma subunit. The eIF2 gamma subunit is characterized by a GTP-binding domain and beta-barrel folds. It binds to the tRNA through GTP. Once the initiation factor helps the tRNA bind, the GTP hydrolyzes and is released the eIF2. The eIF2 beta subunit is identified by its Zn-finger. The eIF2 alpha subunit is characterized by an OB-fold domain and two beta strands. This subunit helps to regulate translation, as it becomes phosphorylated to inhibit protein synthesis.\nThe eIF4F complex supports the cap-dependent translation initiation process and is composed of the initiation factors eIF4A, eIF4E, and eIF4G. The cap end of the mRNA, being the 5\u2019 end, is brought to the complex where the 43S ribosomal complex can bind and scan the mRNA for the start codon. During this process, the 60S ribosomal subunit binds and the large 80S ribosomal complex is formed. The eIF4G plays a role, as it interacts with the polyA-binding protein, attracting the mRNA. The eIF4E then binds the cap of the mRNA and the small ribosomal subunit binds to the eIF4G to begin the process of creating the 80S ribosomal complex. The eIF4A works to make this process more successful, as it is a DEAD box helicase. It allows for the unwinding of the untranslated regions of the mRNA to allow for ribosomal binding and scanning.\n\nIn cancer\nIn cancerous cells, initiation factors assist in cellular transformation and development of tumors. The survival and growth of cancer is directly related to the modification of initiation factors and is used as a target for pharmaceuticals. Cells need increased energy when cancerous and derive this energy from proteins. Over-expression of initiation factors correlates with cancers, as they increase protein synthesis for proteins needed in cancers. Some initiation factors, such as eIF4E, are important in synthesizing specific proteins needed for the proliferation and survival of cancer. The careful selection of proteins ensures that proteins that are usually limited in translation and only proteins needed for cancer cell growth will be synthesized. This includes proteins involved in growth, malignancy, and angiogenesis. The eIF4E factor, along with eIF4A and eIF4G, also play a role in transitioning benign cancer cells to metastatic.\nThe largest initiation factor, eIF3, is another significant initiation factor in human cancers. Due to its role in creating the 43S pre-initiation complex, it helps to bind the ribosomal subunit to the mRNA. The initiation factor has been linked to cancers through over-expression. For example, one of the thirteen eIF3 proteins, eIF3c, interacts with and represses proteins used in tumor suppression. Limited expression of certain eIF3 proteins, such as eIF3a an eIF3d, has been proven to decrease the vigorous growth of cancer cells. The over-expression of eIF3a has been linked to breast, lung, cervix, esophagus, stomach, and colon cancers. It is prevalent during early stages of oncogenesis and likely selectively translates proteins needed for cell proliferation. When eIF3a is suppressed, it has shown to decrease the malignancy of breast and lung cancer, most likely due to its role in tumor growth.\n\nSee also\nRibosome\nEukaryotic translation\nEukaryotic initiation factor\n\nReferences\nExternal links\nInitiation+Factor at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.26057863235473633,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

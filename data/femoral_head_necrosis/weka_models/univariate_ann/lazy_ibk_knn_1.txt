@@ -1,0 +1,34 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     univariate_ann
+Instances:    40
+Attributes:   101
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          34               85      %
+Incorrectly Classified Instances         6               15      %
+Kappa statistic                          0.5714
+Mean absolute error                      0.1684
+Root mean squared error                  0.3779
+Relative absolute error                 44.1379 %
+Root relative squared error             87.2288 %
+Total Number of Instances               40     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,933    0,400    0,875      0,933    0,903      0,577    0,767     0,867     SONFH
+                 0,600    0,067    0,750      0,600    0,667      0,577    0,767     0,550     control
+Weighted Avg.    0,850    0,317    0,844      0,850    0,844      0,577    0,767     0,788     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 28  2 |  a = SONFH
+  4  6 |  b = control
+

@@ -28,7 +28,7 @@ python3 generate_weka_biomarker_shortlist.py \\
 python3 generate_weka_biomarker_shortlist.py \\
     --rf    data/weka/univariate/randomforest.txt \\
     --j48   data/weka/univariate/j48_tree.txt \\
-    --ranks omics_ml_pipeline/app/data/output/feature_selection/gene_rankings.csv \\
+    --ranks AutoOmics_ML_Pipeline/app/data/output/feature_selection/gene_rankings.csv \\
     --out   data/weka/univariate/weka_biomarker_shortlist.csv
 
 Arguments
@@ -320,10 +320,14 @@ def parse_args():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__,
     )
-    p.add_argument("--rf",    default="data/femoral_head_necrosis/weka_models/multivariate/randomforest.txt",        help="Weka RandomForest output .txt")
-    p.add_argument("--j48",   default="data/femoral_head_necrosis/weka_models/multivariate/j48_tree.txt",            help="Weka J48 output .txt (optional)")
-    p.add_argument("--ranks", default="data/femoral_head_necrosis/feature_selection/multivariate/gene_rankings.csv", help="gene_rankings.csv for annotation (optional)")
-    p.add_argument("--out",   default="data/femoral_head_necrosis/weka_models/multivariate/weka_biomarker_shortlist.csv", help="Output CSV path")
+    # p.add_argument("--rf",    default="data/femoral_head_necrosis/weka_models/multivariate/randomforest.txt",        help="Weka RandomForest output .txt")
+    # p.add_argument("--j48",   default="data/femoral_head_necrosis/weka_models/multivariate/j48_tree.txt",            help="Weka J48 output .txt (optional)")
+    # p.add_argument("--ranks", default="data/femoral_head_necrosis/feature_selection/gene_rankings.csv", help="gene_rankings.csv for annotation (optional)")
+    # p.add_argument("--out",   default="data/femoral_head_necrosis/weka_models/multivariate/weka_biomarker_shortlist.csv", help="Output CSV path")
+    p.add_argument("--rf",    default="data/femoral_head_necrosis/weka_models/univariate_ann/randomforest.txt",        help="Weka RandomForest output .txt")
+    p.add_argument("--j48",   default="data/femoral_head_necrosis/weka_models/univariate_ann/j48_tree.txt",            help="Weka J48 output .txt (optional)")
+    p.add_argument("--ranks", default="data/femoral_head_necrosis/feature_selection/gene_rankings.csv",   help="gene_rankings.csv for annotation (optional)")
+    p.add_argument("--out",   default="data/femoral_head_necrosis/weka_models/univariate_ann/weka_biomarker_shortlist.csv", help="Output CSV path")
     p.add_argument("--min-importance", type=float, default=0.0,
                    help="Minimum RF importance to include (0–1, default 0.0)")
     p.add_argument("--top-n",          type=int,   default=None,

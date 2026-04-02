@@ -1,0 +1,125 @@
+{
+  "rf_rank": 23,
+  "probe_id": "11740096_a_at",
+  "gene_symbol": "TMCC1",
+  "score": 0.63,
+  "rf_n_nodes": 6,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 1.0296,
+  "log_fc": 1.0296,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11740096_a_at",
+  "max_score": 0.63,
+  "mean_abs_fold_change": 1.0296,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T17:37:06",
+  "interpretation": "TMCC1 (Transmembrane and coiled-coil domains protein 1) is an endoplasmic reticulum membrane protein that facilitates the fission of endosomes, which is crucial for cellular recycling and degradation processes. While there is no direct evidence linking TMCC1 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in endosomal dynamics may suggest a potential involvement in cellular stress responses associated with steroid treatment. The retrieved evidence primarily describes TMCC1's biological function without specific connections to SONFH, leading to a low confidence in its relevance as a biomarker. Therefore, while TMCC1 may play a role in cellular processes that could be affected in SONFH, its potential as a clinical biomarker for early detection remains weak and speculative.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "TMCC1's role in endosomal fission may indirectly relate to cellular responses in Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), but lacks direct evidence.",
+  "citations": [
+    "TMCC1 (O94876). https://www.uniprot.org/uniprotkb/O94876",
+    "TMCC1 (O94876-2). https://www.uniprot.org/uniprotkb/O94876-2",
+    "TMCC1 \u2014 TMCC1. https://platform.opentargets.org/target/ENSG00000172765",
+    "TMCC1 \u2194 inherited retinal dystrophy. https://platform.opentargets.org/target/ENSG00000172765/associations",
+    "TMCC1 \u2194 prostate carcinoma. https://platform.opentargets.org/target/ENSG00000172765/associations",
+    "TMCC1 \u2194 Loss of consciousness. https://platform.opentargets.org/target/ENSG00000172765/associations",
+    "TMCC1 \u2194 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000172765/associations",
+    "List of human protein-coding genes 8. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_8"
+  ],
+  "token_usage": {
+    "prompt_tokens": 2730,
+    "completion_tokens": 237,
+    "total_tokens": 2967,
+    "estimated_cost_usd": 0.000552
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O94876",
+          "title": "TMCC1 (O94876)",
+          "url": "https://www.uniprot.org/uniprotkb/O94876",
+          "text": "Protein: Transmembrane and coiled-coil domains protein 1\nFunction: Endoplasmic reticulum membrane protein that promotes endoplasmic reticulum-associated endosome fission (PubMed:30220460). Localizes to contact sites between the endoplasmic reticulum and endosomes and acts by promoting recruitment of the endoplasmic reticulum to endosome tubules for fission (PubMed:30220460). Endosome membrane fission of early and late endosomes is essential to separate regions destined for lysosomal degradation from carriers to be recycled to the plasma membrane (PubMed:30220460)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::O94876-2",
+          "title": "TMCC1 (O94876-2)",
+          "url": "https://www.uniprot.org/uniprotkb/O94876-2",
+          "text": "Protein: Isoform 2 of Transmembrane and coiled-coil domains protein 1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000172765::function",
+          "title": "TMCC1 \u2014 TMCC1",
+          "url": "https://platform.opentargets.org/target/ENSG00000172765",
+          "text": "Function: Endoplasmic reticulum membrane protein that promotes endoplasmic reticulum-associated endosome fission (PubMed:30220460). Localizes to contact sites between the endoplasmic reticulum and endosomes and acts by promoting recruitment of the endoplasmic reticulum to endosome tubules for fission (PubMed:30220460). Endosome membrane fission of early and late endosomes is essential to separate regions destined for lysosomal degradation from carriers to be recycled to the plasma membrane (PubMed:30220460). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172765::MONDO_0019118",
+          "title": "TMCC1 \u2194 inherited retinal dystrophy",
+          "url": "https://platform.opentargets.org/target/ENSG00000172765/associations",
+          "text": "Disease: inherited retinal dystrophy\nDescription: An instance of retinal degeneration that is caused by an inherited modification of the individual's genome.\nAssociation score: 0.337",
+          "cos_sim_score": 0.33733882774391055,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172765::EFO_0001663",
+          "title": "TMCC1 \u2194 prostate carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000172765/associations",
+          "text": "Disease: prostate carcinoma\nDescription: A carcinoma that arises from epithelial cells of the prostate gland.\nAssociation score: 0.290",
+          "cos_sim_score": 0.28998750822339364,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172765::HP_0007185",
+          "title": "TMCC1 \u2194 Loss of consciousness",
+          "url": "https://platform.opentargets.org/target/ENSG00000172765/associations",
+          "text": "Disease: Loss of consciousness\nDescription: Loss of awareness of oneself or one's surroundings, involving (i) a loss of normal motor control is evident as flaccidity or stiffness, either of which can be accompanied by jerking movements, and postural control is lost so that patients fall if they are in an upright position; (ii) normal responsiveness is lost; and (iii) the patient experiences amnesia for the event. Loss of consciousness my be transitory (e.g., syncope) or prolonged.\nAssociation score: 0.238",
+          "cos_sim_score": 0.2380714348487779,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172765::EFO_0000400",
+          "title": "TMCC1 \u2194 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000172765/associations",
+          "text": "Disease: diabetes mellitus\nDescription: A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization.\nAssociation score: 0.225",
+          "cos_sim_score": 0.225187545171874,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::List of human protein-coding genes 8",
+          "title": "List of human protein-coding genes 8",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_8",
+          "text": "== References ==",
+          "cos_sim_score": 0.12424598634243011,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

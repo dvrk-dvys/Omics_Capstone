@@ -1,0 +1,183 @@
+{
+  "probe_id": "11724326_a_at",
+  "gene_symbol": "ARHGAP25",
+  "score": 1.0,
+  "SD_TestAUC": 0.1014301032416973,
+  "abs_fold_change": 1.1993,
+  "probe_count": 3,
+  "probe_ids": "11724326_a_at | 11747623_a_at | 11748747_a_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 1.1165,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T18:28:04",
+  "interpretation": "ARHGAP25 encodes a Rho GTPase-activating protein that plays a crucial role in regulating the activity of Rho-type GTPases, which are involved in various cellular processes including actin remodeling, cell migration, and polarity. These processes are significant in the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), as they can influence bone remodeling and the response of bone cells to steroid treatment. However, the evidence linking ARHGAP25 directly to SONFH is limited, with no specific studies identified that validate its role as a biomarker for this condition. Thus, while the biological functions of ARHGAP25 suggest a potential relevance to SONFH, the lack of direct evidence leads to a lower confidence in its clinical utility as a biomarker for early detection of SONFH. Therefore, the potential for ARHGAP25 as a biomarker is considered weak.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "ARHGAP25 may influence cellular processes relevant to Steroid-Induced Osteonecrosis of the Femoral Head but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "ARHGAP25 (P42331). https://www.uniprot.org/uniprotkb/P42331",
+    "ARHGAP25 (P42331-2). https://www.uniprot.org/uniprotkb/P42331-2",
+    "ARHGAP25 (P42331-5). https://www.uniprot.org/uniprotkb/P42331-5",
+    "ARHGAP25 \u2014 ARHGAP25. https://platform.opentargets.org/target/ENSG00000163219",
+    "ARHGAP25 \u2194 hypertension. https://platform.opentargets.org/target/ENSG00000163219/associations",
+    "ARHGAP25 \u2194 sign or symptom. https://platform.opentargets.org/target/ENSG00000163219/associations",
+    "ARHGAP25 \u2194 colorectal carcinoma. https://platform.opentargets.org/target/ENSG00000163219/associations",
+    "ARHGAP25 \u2194 non-small cell lung carcinoma. https://platform.opentargets.org/target/ENSG00000163219/associations",
+    "ARHGAP25 \u2014 Rho GTPase activating protein 25 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "AKT1 \u2014 AKT serine/threonine kinase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CDKN2A \u2014 cyclin dependent kinase inhibitor 2A (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MTOR \u2014 mechanistic target of rapamycin kinase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4804,
+    "completion_tokens": 315,
+    "total_tokens": 5119,
+    "estimated_cost_usd": 0.00091
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P42331",
+          "title": "ARHGAP25 (P42331)",
+          "url": "https://www.uniprot.org/uniprotkb/P42331",
+          "text": "Protein: Rho GTPase-activating protein 25\nFunction: GTPase activator for the Rho-type GTPases by converting them to an inactive GDP-bound state",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P42331-2",
+          "title": "ARHGAP25 (P42331-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P42331-2",
+          "text": "Protein: Isoform 2 of Rho GTPase-activating protein 25",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P42331-5",
+          "title": "ARHGAP25 (P42331-5)",
+          "url": "https://www.uniprot.org/uniprotkb/P42331-5",
+          "text": "Protein: Isoform 5 of Rho GTPase-activating protein 25",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000163219::function",
+          "title": "ARHGAP25 \u2014 ARHGAP25",
+          "url": "https://platform.opentargets.org/target/ENSG00000163219",
+          "text": "Function: GTPase activator for the Rho-type GTPases by converting them to an inactive GDP-bound state. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000163219::EFO_0000537",
+          "title": "ARHGAP25 \u2194 hypertension",
+          "url": "https://platform.opentargets.org/target/ENSG00000163219/associations",
+          "text": "Disease: hypertension\nDescription: Persistently high systemic arterial blood pressure. Based on multiple readings (blood pressure determination), hypertension is currently defined as when systolic pressure is consistently greater than 140 mm Hg or when diastolic pressure is consistently 90 mm Hg or more.\nAssociation score: 0.304",
+          "cos_sim_score": 0.3037398210452206,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000163219::EFO_0003765",
+          "title": "ARHGAP25 \u2194 sign or symptom",
+          "url": "https://platform.opentargets.org/target/ENSG00000163219/associations",
+          "text": "Disease: sign or symptom\nDescription: Objective evidence of disease perceptible to the examining physician (sign) and subjective evidence of disease perceived by the patient (symptom).\nAssociation score: 0.284",
+          "cos_sim_score": 0.2843150447318146,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000163219::EFO_1001951",
+          "title": "ARHGAP25 \u2194 colorectal carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000163219/associations",
+          "text": "Disease: colorectal carcinoma\nDescription: A malignant epithelial neoplasm that arises from the colon or rectum and invades through the muscularis mucosa into the submucosa. The vast majority are adenocarcinomas.\nAssociation score: 0.082",
+          "cos_sim_score": 0.08156018154142504,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000163219::EFO_0003060",
+          "title": "ARHGAP25 \u2194 non-small cell lung carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000163219/associations",
+          "text": "Disease: non-small cell lung carcinoma\nDescription: A group of at least three distinct histological types of lung cancer, including non-small cell squamous cell carcinoma, adenocarcinoma, and large cell carcinoma. Non-small cell lung carcinomas have a poor response to conventional chemotherapy.\nAssociation score: 0.075",
+          "cos_sim_score": 0.07509657325051648,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "ARHGAP25 \u2014 Rho GTPase activating protein 25",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ARHGAP25\nGene name: Rho GTPase activating protein 25\nAliases / synonyms: HEL-S-308, KAIA0053\nOrganism: Homo sapiens\nGene summary: ARHGAPs, such as ARHGAP25, encode negative regulators of Rho GTPases (see ARHA; MIM 165390), which are implicated in actin remodeling, cell polarity, and cell migration (Katoh and Katoh, 2004 [PubMed 15254788]).[supplied by OMIM, Mar 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ARHGAP25",
+          "aliases": "HEL-S-308, KAIA0053",
+          "gene_description": "Rho GTPase activating protein 25"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "AKT1 \u2014 AKT serine/threonine kinase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AKT1\nGene name: AKT serine/threonine kinase 1\nAliases / synonyms: AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA\nOrganism: Homo sapiens\nGene summary: This gene encodes one of the three members of the human AKT serine-threonine protein kinase family which are often referred to as protein kinase B alpha, beta, and gamma. These highly similar AKT proteins all have an N-terminal pleckstrin homology domain, a serine/threonine-specific kinase domain and a C-terminal regulatory domain. These proteins are phosphorylated by phosphoinositide 3-kinase (PI3K). AKT/PI3K forms a key component of many signalling pathways that involve the binding of membrane-bound ligands such as receptor tyrosine kinases, G-protein coupled receptors, and integrin-linked kinase. These AKT proteins therefore regulate a wide variety of cellular functions including cell proliferation, survival, metabolism, and angiogenesis in both normal and malignant cells. AKT proteins ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AKT1",
+          "aliases": "AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA",
+          "gene_description": "AKT serine/threonine kinase 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CDKN2A \u2014 cyclin dependent kinase inhibitor 2A",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CDKN2A\nGene name: cyclin dependent kinase inhibitor 2A\nAliases / synonyms: ARF, CAI2, CDK4I, CDKN2, CMM2, INK4, INK4A, MLM, MTS-1, MTS1, P14, P14ARF, P16, P16-INK4A, P16INK4, P16INK4A, P19, P19ARF, TP16\nOrganism: Homo sapiens\nGene summary: This gene generates several transcript variants which differ in their first exons. At least three alternatively spliced variants encoding distinct proteins have been reported, two of which encode structurally related isoforms known to function as inhibitors of CDK4 kinase. The remaining transcript includes an alternate first exon located 20 Kb upstream of the remainder of the gene; this transcript contains an alternate open reading frame (ARF) that specifies a protein which is structurally unrelated to the products of the other variants. This ARF product functions as a stabilizer of the tumor suppressor protein p53 as it can interact with, and sequester, the E3 ubiquitin-protein ligase MDM2, a protein responsible for the degradation of p53. In spite of the structural and functional differe...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CDKN2A",
+          "aliases": "ARF, CAI2, CDK4I, CDKN2, CMM2, INK4, INK4A, MLM, MTS-1, MTS1, P14, P14ARF, P16, P16-INK4A, P16INK4, P16INK4A, P19, P19ARF, TP16",
+          "gene_description": "cyclin dependent kinase inhibitor 2A"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MTOR \u2014 mechanistic target of rapamycin kinase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MTOR\nGene name: mechanistic target of rapamycin kinase\nAliases / synonyms: FRAP, FRAP1, FRAP2, RAFT1, RAPT1, SKS\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene belongs to a family of phosphatidylinositol kinase-related kinases. These kinases mediate cellular responses to stresses such as DNA damage and nutrient deprivation. This kinase is a component of two distinct complexes, mTORC1, which controls protein synthesis, cell growth and proliferation, and mTORC2, which is a regulator of the actin cytoskeleton, and promotes cell survival and cell cycle progression. This protein acts as the target for the cell-cycle arrest and immunosuppressive effects of the FKBP12-rapamycin complex. Inhibitors of mTOR are used in organ transplants as immunosuppressants, and are being evaluated for their therapeutic potential in SARS-CoV-2 infections. Mutations in this gene are associated with Smith-Kingsmore syndrome and somatic foca...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MTOR",
+          "aliases": "FRAP, FRAP1, FRAP2, RAFT1, RAPT1, SKS",
+          "gene_description": "mechanistic target of rapamycin kinase"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

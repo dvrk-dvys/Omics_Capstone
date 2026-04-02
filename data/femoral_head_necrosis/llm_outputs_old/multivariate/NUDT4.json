@@ -1,0 +1,151 @@
+{
+  "rf_rank": 38,
+  "probe_id": "11754453_s_at",
+  "gene_symbol": "NUDT4",
+  "score": 0.6,
+  "rf_n_nodes": 5,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 2.4595,
+  "log_fc": -2.4595,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 2,
+  "probe_ids": "11754453_s_at | 11758559_s_at",
+  "max_score": 0.6,
+  "mean_abs_fold_change": 2.4399,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T17:24:12",
+  "interpretation": "NUDT4 encodes an enzyme known as diphosphoinositol polyphosphate phosphohydrolase 2, which is involved in the regulation of intracellular signaling through the turnover of diphosphoinositol polyphosphates. This signaling is crucial for various cellular processes, including those related to bone metabolism and health. Although there is no direct evidence linking NUDT4 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in signal transduction suggests it may influence pathways relevant to bone health and osteonecrosis. The retrieved evidence primarily supports its biological function rather than a specific connection to SONFH, leading to a lower confidence in its potential as a biomarker. Therefore, while NUDT4 may have some relevance in the context of bone health, its utility as an early-detection biomarker for SONFH is weak and speculative.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "NUDT4 may influence cellular signaling pathways relevant to bone metabolism, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "NUDT4 (Q9NZJ9). https://www.uniprot.org/uniprotkb/Q9NZJ9",
+    "NUDT4 (Q9NZJ9-2). https://www.uniprot.org/uniprotkb/Q9NZJ9-2",
+    "NUDT4 (Q9NZJ9-3). https://www.uniprot.org/uniprotkb/Q9NZJ9-3",
+    "NUDT4 \u2014 NUDT4. https://platform.opentargets.org/target/ENSG00000173598",
+    "NUDT4 \u2194 knee fracture. https://platform.opentargets.org/target/ENSG00000173598/associations",
+    "NUDT4 \u2194 clavicle fracture. https://platform.opentargets.org/target/ENSG00000173598/associations",
+    "NUDT4 \u2194 shoulder fracture. https://platform.opentargets.org/target/ENSG00000173598/associations",
+    "NUDT4 \u2194 open-angle glaucoma. https://platform.opentargets.org/target/ENSG00000173598/associations",
+    "List of human protein-coding genes 5. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_5",
+    "NUDT4. https://en.wikipedia.org/wiki/NUDT4",
+    "Chromosome 12. https://en.wikipedia.org/wiki/Chromosome_12"
+  ],
+  "token_usage": {
+    "prompt_tokens": 3537,
+    "completion_tokens": 254,
+    "total_tokens": 3791,
+    "estimated_cost_usd": 0.000683
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9NZJ9",
+          "title": "NUDT4 (Q9NZJ9)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9NZJ9",
+          "text": "Protein: Diphosphoinositol polyphosphate phosphohydrolase 2\nFunction: Cleaves the beta-phosphate from diphosphoinositol polyphosphates such as PP-InsP5 (diphosphoinositol pentakisphosphate), PP-InsP4 (diphosphoinositol tetrakisphosphate) and [PP]2-InsP4 (bisdiphosphoinositol tetrakisphosphate), suggesting that it may play a role in signal transduction (PubMed:10777568). Diadenosine polyphosphates, particularly Ap6A (P(1),P(6)-bis(5a-adenosyl) hexaphosphate) and Ap5A (P(1),P(5)-bis(5'-adenosyl) pentaphosphate) are downstream effectors of a signaling cascade that regulates cardiac KATP channels, can also be substrates, although with lower preference than the diphosphoinositol polyphosphates (PubMed:10777568). Can also catalyze the hydrolysis of 5-phosphoribose 1-diphosphate, generating the glycolytic activator ribose 1,5-bisphosphate (PubMed:12370170). Does not play a role in U8 snoRNA decapping activity (By similarity). Binds U8 snoRNA (By similarity)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9NZJ9-2",
+          "title": "NUDT4 (Q9NZJ9-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9NZJ9-2",
+          "text": "Protein: Isoform 2 of Diphosphoinositol polyphosphate phosphohydrolase 2",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9NZJ9-3",
+          "title": "NUDT4 (Q9NZJ9-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9NZJ9-3",
+          "text": "Protein: Isoform 3 of Diphosphoinositol polyphosphate phosphohydrolase 2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000173598::function",
+          "title": "NUDT4 \u2014 NUDT4",
+          "url": "https://platform.opentargets.org/target/ENSG00000173598",
+          "text": "Function: Cleaves the beta-phosphate from diphosphoinositol polyphosphates such as PP-InsP5 (diphosphoinositol pentakisphosphate), PP-InsP4 (diphosphoinositol tetrakisphosphate) and [PP]2-InsP4 (bisdiphosphoinositol tetrakisphosphate), suggesting that it may play a role in signal transduction (PubMed:10777568). Diadenosine polyphosphates, particularly Ap6A (P(1),P(6)-bis(5a-adenosyl) hexaphosphate) and Ap5A (P(1),P(5)-bis(5'-adenosyl) pentaphosphate) are downstream effectors of a signaling cascade that regulates cardiac KATP channels, can also be substrates, although with lower preference than the diphosphoinositol polyphosphates (PubMed:10777568). Can also catalyze the hydrolysis of 5-phosphoribose 1-diphosphate, generating the glycolytic activator ribose 1,5-bisphosphate (PubMed:12370170). Does not play a role in U8 snoRNA decapping activity (By similarity). Binds U8 snoRNA (By similarity).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000173598::EFO_0009617",
+          "title": "NUDT4 \u2194 knee fracture",
+          "url": "https://platform.opentargets.org/target/ENSG00000173598/associations",
+          "text": "Disease: knee fracture\nDescription: A traumatic break in one or more of the bones that compose the knee joint. [ NCI ]\nAssociation score: 0.295",
+          "cos_sim_score": 0.2945042545938934,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000173598::EFO_0009614",
+          "title": "NUDT4 \u2194 clavicle fracture",
+          "url": "https://platform.opentargets.org/target/ENSG00000173598/associations",
+          "text": "Disease: clavicle fracture\nDescription: A traumatic or pathologic injury to the clavicle in which the continuity of the clavicle is broken. [ NCI ]\nAssociation score: 0.273",
+          "cos_sim_score": 0.2727750364601984,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000173598::EFO_0009621",
+          "title": "NUDT4 \u2194 shoulder fracture",
+          "url": "https://platform.opentargets.org/target/ENSG00000173598/associations",
+          "text": "Disease: shoulder fracture\nDescription: A traumatic break in one or more of the bones that compose the shoulder joint. [ NCI ]\nAssociation score: 0.254",
+          "cos_sim_score": 0.25390135153314913,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000173598::EFO_0004190",
+          "title": "NUDT4 \u2194 open-angle glaucoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000173598/associations",
+          "text": "Disease: open-angle glaucoma\nDescription: Chronic outflow obstruction of the eye's drainage canals that can lead to increased internal eye pressure and optic nerve damage.\nAssociation score: 0.225",
+          "cos_sim_score": 0.22483867703078064,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::List of human protein-coding genes 5",
+          "title": "List of human protein-coding genes 5",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_5",
+          "text": "== References ==",
+          "cos_sim_score": 0.1319482922554016,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::NUDT4",
+          "title": "NUDT4",
+          "url": "https://en.wikipedia.org/wiki/NUDT4",
+          "text": "Diphosphoinositol polyphosphate phosphohydrolase 2 is an enzyme that in humans is encoded by the NUDT4 gene.\nThe protein encoded by this gene regulates the turnover of diphosphoinositol polyphosphates. The turnover of these high-energy diphosphoinositol polyphosphates represents a molecular switching activity with important regulatory consequences. Molecular switching by diphosphoinositol polyphosphates may contribute to regulating intracellular trafficking. Several alternatively spliced transcript variants have been described, but the full-length nature of some variants has not been determined. Isoforms DIPP2alpha and DIPP2beta are distinguishable from each other solely by DIPP2beta possessing one additional amino acid due to intron boundary skidding in alternate splicing.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.05892220139503479,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Chromosome 12",
+          "title": "Chromosome 12",
+          "url": "https://en.wikipedia.org/wiki/Chromosome_12",
+          "text": "Chromosome 12 is one of the 23 pairs of chromosomes in humans. People normally have two copies of this chromosome. Chromosome 12 spans about 133 million base pairs (the building material of DNA) and represents between 4 and 4.5 percent of the total DNA in cells.\nChromosome 12 contains the Homeobox C gene cluster.\n\nGenes\nNumber of genes\nThe following are some of the gene count estimates of human chromosome 12. Because researchers use different approaches to genome annotation their predictions of the number of genes on each chromosome varies (for technical details, see gene prediction). Among various projects, the collaborative consensus coding sequence project (CCDS) takes an extremely conservative strategy. So CCDS's gene number prediction represents a lower bound on the total number of human protein-coding genes.\n\nGene list\nThe following is a partial list of genes on human chromosome 12. For complete list, see the link in the infobox on the right.\n\nDiseases and disorders\nThe following diseases are some of those related to genes on chromosome 12:\n\nCytogenetic band\nReferences\nExternal links\n\nNational Institutes of Health. \"Chromosome 12\". Genetics Home Reference. Archived from the original on 2007-06-12. Retrieved 2017-05-06.\n\"Chromosome 12\". Human Genome Project Information Archive 1990\u20132003. Retrieved 2017-05-06.",
+          "cos_sim_score": 0.020364848896861076,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

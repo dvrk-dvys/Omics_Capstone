@@ -1,0 +1,152 @@
+{
+  "rf_rank": 10,
+  "probe_id": "11732373_a_at",
+  "gene_symbol": "TSEN34",
+  "score": 0.72,
+  "rf_n_nodes": 3,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 1.2016,
+  "log_fc": 1.2016,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11732373_a_at",
+  "max_score": 0.72,
+  "mean_abs_fold_change": 1.2016,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T17:31:09",
+  "interpretation": "TSEN34 encodes a protein that is a catalytic subunit of the tRNA-splicing endonuclease complex, which is essential for the maturation of tRNA by removing introns from precursor tRNA molecules. This process is critical for proper protein synthesis and cellular function. While there is no direct evidence linking TSEN34 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in RNA processing suggests a potential indirect connection, as disruptions in cellular processes can contribute to bone health and disease. The evidence retrieved primarily relates to its function in tRNA splicing and its association with pontocerebellar hypoplasia, which does not directly correlate with SONFH. Therefore, the clinical relevance of TSEN34 as a biomarker for SONFH is weak, as it lacks specific evidence supporting its role in this condition.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "TSEN34's role in tRNA splicing suggests a potential but unproven link to cellular processes that may be disrupted in Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "TSEN34 (Q9BSV6). https://www.uniprot.org/uniprotkb/Q9BSV6",
+    "TSEN34 \u2014 TSEN34. https://platform.opentargets.org/target/ENSG00000170892",
+    "TSEN34 \u2194 pontocerebellar hypoplasia type 2C. https://platform.opentargets.org/target/ENSG00000170892/associations",
+    "TSEN34 \u2194 pontocerebellar hypoplasia. https://platform.opentargets.org/target/ENSG00000170892/associations",
+    "TSEN34 \u2194 pontocerebellar hypoplasia type 2. https://platform.opentargets.org/target/ENSG00000170892/associations",
+    "TSEN34 \u2194 Non-syndromic pontocerebellar hypoplasia. https://platform.opentargets.org/target/ENSG00000170892/associations",
+    "TSEN34. https://en.wikipedia.org/wiki/TSEN34",
+    "TSEN2. https://en.wikipedia.org/wiki/TSEN2",
+    "RNA splicing. https://en.wikipedia.org/wiki/RNA_splicing",
+    "TRNA-intron endonuclease. https://en.wikipedia.org/wiki/TRNA-intron_endonuclease"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5382,
+    "completion_tokens": 252,
+    "total_tokens": 5634,
+    "estimated_cost_usd": 0.000958
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9BSV6",
+          "title": "TSEN34 (Q9BSV6)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BSV6",
+          "text": "Protein: tRNA-splicing endonuclease subunit Sen34\nFunction: Constitutes one of the two catalytic subunit of the tRNA-splicing endonuclease complex, a complex responsible for identification and cleavage of the splice sites in pre-tRNA. It cleaves pre-tRNA at the 5'- and 3'-splice sites to release the intron. The products are an intron and two tRNA half-molecules bearing 2',3'-cyclic phosphate and 5'-OH termini. There are no conserved sequences at the splice sites, but the intron is invariably located at the same site in the gene, placing the splice sites an invariant distance from the constant structural features of the tRNA body. It probably carries the active site for 3'-splice site cleavage. The tRNA splicing endonuclease is also involved in mRNA processing via its association with pre-mRNA 3'-end processing factors, establishing a link between pre-tRNA splicing and pre-mRNA 3'-end formation, suggesting that the endonuclease subunits function in multiple RNA-processing events",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000170892::function",
+          "title": "TSEN34 \u2014 TSEN34",
+          "url": "https://platform.opentargets.org/target/ENSG00000170892",
+          "text": "Function: Constitutes one of the two catalytic subunit of the tRNA- splicing endonuclease complex, a complex responsible for identification and cleavage of the splice sites in pre-tRNA. It cleaves pre-tRNA at the 5'- and 3'-splice sites to release the intron. The products are an intron and two tRNA half-molecules bearing 2',3'-cyclic phosphate and 5'-OH termini. There are no conserved sequences at the splice sites, but the intron is invariably located at the same site in the gene, placing the splice sites an invariant distance from the constant structural features of the tRNA body. It probably carries the active site for 3'-splice site cleavage. The tRNA splicing endonuclease is also involved in mRNA processing via its association with pre-mRNA 3'- end processing factors, establishing a link between pre-tRNA splicing and pre-mRNA 3'-end formation, suggesting that the endonuclease subunits function in multiple RNA-processing events. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000170892::MONDO_0012891",
+          "title": "TSEN34 \u2194 pontocerebellar hypoplasia type 2C",
+          "url": "https://platform.opentargets.org/target/ENSG00000170892/associations",
+          "text": "Disease: pontocerebellar hypoplasia type 2C\nDescription: Any non-syndromic pontocerebellar hypoplasia in which the cause of the disease is a mutation in the TSEN34 gene.\nAssociation score: 0.648",
+          "cos_sim_score": 0.6480757275716514,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000170892::MONDO_0020135",
+          "title": "TSEN34 \u2194 pontocerebellar hypoplasia",
+          "url": "https://platform.opentargets.org/target/ENSG00000170892/associations",
+          "text": "Disease: pontocerebellar hypoplasia\nDescription: Pontocerebellar hypoplasias (PCH) are a rare heterogeneous group of diseases characterized by hypoplasia and atrophy and/or early neurodegeneration of the cerebellum and pons. Eight subtypes named type 1-8 have been described, generally inherited in an autosomal recessive pattern.\nAssociation score: 0.510",
+          "cos_sim_score": 0.510374729434912,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000170892::MONDO_0016759",
+          "title": "TSEN34 \u2194 pontocerebellar hypoplasia type 2",
+          "url": "https://platform.opentargets.org/target/ENSG00000170892/associations",
+          "text": "Disease: pontocerebellar hypoplasia type 2\nDescription: Pontocerebellar hypoplasia type 2 (PCH2) is the most common subtype of pontocerebellar hypoplasia characterized by neonatal onset and a lack of voluntary motor development and later progressive microencephaly, generalized clonus, development of chorea and spasticity. The majority of patients will not reach puberty.\nAssociation score: 0.370",
+          "cos_sim_score": 0.37013422446672883,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000170892::Orphanet_98523",
+          "title": "TSEN34 \u2194 Non-syndromic pontocerebellar hypoplasia",
+          "url": "https://platform.opentargets.org/target/ENSG00000170892/associations",
+          "text": "Disease: Non-syndromic pontocerebellar hypoplasia\nDescription: Nonsyndromic pontocerebellar hypoplasias (PCH) are a rare heterogeneous group of diseases characterized by hypoplasia and atrophy and/or early neurodegeneration of the cerebellum and pons. Eight subtypes named type 1-8 have been described (see these terms), generally inherited in an autosomal recessive pattern.\nAssociation score: 0.191",
+          "cos_sim_score": 0.19145402793755298,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::TSEN34",
+          "title": "TSEN34",
+          "url": "https://en.wikipedia.org/wiki/TSEN34",
+          "text": "tRNA-splicing endonuclease subunit Sen34 is an enzyme that in humans is encoded by the TSEN34 gene.\ntRNA splicing is a fundamental process required for cell growth and division. SEN34 is a subunit of the tRNA splicing endonuclease, which catalyzes the removal of introns, the first step in tRNA splicing (Paushkin et al., 2004).[supplied by OMIM]\n\nInteractions\nTSEN34 has been shown to interact with TSEN2.\n\nReferences\nFurther reading\nExternal links\nGeneReviews/NCBI/NIH/UW entry on Pontocerebellar Hypoplasia Type 2 and Type 4",
+          "cos_sim_score": 0.44376564025878906,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::TSEN2",
+          "title": "TSEN2",
+          "url": "https://en.wikipedia.org/wiki/TSEN2",
+          "text": "tRNA-splicing endonuclease subunit Sen2 is an enzyme that in humans is encoded by the TSEN2 gene.\ntRNA splicing is a fundamental process required for cell growth and division. SEN2 is a subunit of the tRNA splicing endonuclease, which catalyzes the removal of introns, the first step in tRNA splicing (Paushkin et al., 2004).[supplied by OMIM]\n\nInteractions\nTSEN2 has been shown to interact with TSEN34 and TSEN15.\n\nReferences\nExternal links\nGeneReviews/NCBI/NIH/UW entry on Pontocerebellar Hypoplasia Type 2 and Type 4\n\n\n== Further reading ==",
+          "cos_sim_score": 0.37148481607437134,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::RNA splicing",
+          "title": "RNA splicing",
+          "url": "https://en.wikipedia.org/wiki/RNA_splicing",
+          "text": "Formation and activity\nSplicing is catalyzed by the spliceosome, a large RNA-protein complex composed of five small nuclear ribonucleoproteins (snRNPs).  Assembly and activity of the spliceosome occurs during transcription of the pre-mRNA.  The RNA components of snRNPs interact with the intron and are involved in catalysis.  Two types of spliceosomes have been identified (major and minor) which contain different snRNPs.\n\nThe major spliceosome splices introns containing GU at the 5' splice site and AG at the 3' splice site.  It is composed of the U1, U2, U4, U5, and U6 snRNPs and is active in the nucleus. In addition, a number of proteins including U2 small nuclear RNA auxiliary factor 1 (U2AF35), U2AF2 (U2AF65) and SF1 are required for the assembly of the spliceosome.  The spliceosome forms different complexes during the splicing process:\nComplex E\nThe U1 snRNP binds to the GU sequence at the 5' splice site of an intron;\nSplicing factor 1 binds to the intron branch point sequence;\nU2AF1 binds at the 3' splice site of the intron;\nU2AF2 binds to the polypyrimidine tract;\nComplex A (pre-spliceosome)\nThe U2 snRNP displaces SF1 and binds to the branch point sequence and ATP is hydrolyzed;\nComplex B (pre-catalytic spliceosome)\nThe U5/U4/U6 snRNP trimer binds, and the U5 snRNP binds exons at the 5' site, with U6 binding to U2;\nComplex B*\nThe U1 snRNP is released, U5 shifts from exon to intron, and the U6 binds at the 5' splice site;\nComplex C (catalytic spliceosome)\nU4 is released, U6/U2 catalyzes transesterification, making the 5'-end of the intron ligate to the A on intron and form a lariat, U5 binds exon at 3' splice site, and the 5' site is cleaved, resulting in the formation of the lariat;\nComplex C* (post-spliceosomal complex)\nU2/U5/U6 remain bound to the lariat, and the 3' site is cleaved and exons are ligated using ATP hydrolysis.  The spliced RNA is released, the lariat is released and degraded, and the snRNPs are recycled.\nThis type of splicing is termed canonical splicing or termed the lariat pathway, which accounts for more than 99% of splicing. By contrast, when the intronic flanking sequences do not follow the GU-AG rule, noncanonical splicing is said to occur (see \"minor spliceosome\" below).\nThe minor spliceosome is very similar to the major spliceosome, but instead it splices out rare introns with different splice site sequences. While the minor and major spliceosomes contain the same U5 snRNP, the minor spliceosome has different but functionally analogous snRNPs for U1, U2, U4, and U6, which are respectively called U11, U12, U4atac, and U6atac.\n\nRecursive splicing\nIn most cases, splicing removes introns as single units from precursor mRNA transcripts. However, in some cases, especially in mRNAs with very long introns, splicing happens in steps, with part of an intron removed and then the remaining intron is spliced out in a following step. This has been found first in the Ultrabithorax (Ubx) gene of the fruit fly, Drosophila melanogaster, and a few other Drosophila genes, but cases in humans have been reported as well.\n\nTrans-splicing\nTrans-splicing is a form of splicing that removes introns or outrons, and joins two exons that are not within the same RNA transcript. Trans-splicing can occur between two different endogenous pre-mRNAs or between an endogenous and an exogenous (such as from viruses) or artificial RNAs.",
+          "cos_sim_score": 0.1539648026227951,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::TRNA-intron endonuclease",
+          "title": "TRNA-intron endonuclease",
+          "url": "https://en.wikipedia.org/wiki/TRNA-intron_endonuclease",
+          "text": "Function\ntRNA-intron endonucleases identify introns along pre-tRNAs and carry out the proper excision mechanism to remove those introns. All three domains of life, Archaea, Bacteria, and Eukarya, contain tRNA genes with introns. Bacterial pre-tRNAs self-splice their introns, whereas Archaea and Eukarya require tRNA-intron endonucleases.\nThere are two classified groups for Bacterial self-splicing introns, group 1 and group 2. Both groups use an autocatalytic mechanism to remove introns that involves a sequence of transesterification reactions. The only two differences are that group 1 introns use a free external guanosine-5\u2032-triphosphate (GTP) while group 2 doesn't, and the reactions in group 2 introns involve the formation of an intermediate lariat.\nThe pre-tRNA intron excision mechanism in Eukaryotes and Archaea are shared. There are two different sites at which the tRNA-intron endonuclease cleaves the intron, the 5\u2032- and 3\u2032-splice sites. At the 5\u2019 end, cleavage occurs typically at the canonical position which is one nucleotide 3\u2032 to the anticodon. At the 3\u2019 end, cardinal position 2 (CP2) marks the intron\u2013exon boundary. In Eukarya and Archaea the anticodon-intron (A-I) interaction and bulge-helix-bulge (BHB) motif, respectively, are critical determinants for correct 5\u2032 and 3\u2032 splice-site selection. Moreover, when these two critical determinants are combined, it may be applied to the determination of the correct splice-site selection in archaebacteria. Some introns are found in different parts of tRNA genes, especially in archaeal genomes, but these are minor cases. One main difference in function between Eukarya and Archaea is that eukaryal endonucleases typically require the mature domain of the tRNA in order to make accurate cuts in the gene, while archaeal endonucleases do not. After cleavage of the two sites, three fragments result: a 3'-half-tRNA molecule with a 5'-OH end, a 5'-half-tRNA molecule with a 2',3'-cyclic phosphate end, and an intron with a 2',3'-cyclic phosphate and a 5'-hydroxyl terminus.\nThe use of tRNA-intron endonuclease in pre-tRNA intron excision is just one of the steps for tRNA maturation. pre-tRNAs undergo multiple other extensive modifications before the mature tRNA is ready for use in translation.\n\nEvolution\nEukaryotic tRNA-intron endonucleases are considered to have evolved from Archaeal tRNA-intron endonucleases, more specifically the (\u03b1\u03b2)2 type. One way this has been shown is through the conservation of the overall structure of Archaeal endonuclease in Eukaryotic endonuclease; The Eukaryotic endonuclease just has two additional subunits (\ud835\udefe and \u1e9f). Another way this has been shown was done by studying Cyanidioschyzon Merolae, which is a Eukaryote. The eukaryotic organism had tRNA genes with BHB motifs  which are only found in archaea and the eukaryal endonucleases are able to recognize and cleave the BHB motifs in vitro.\nA convergent evolutionary relationship has also been found between the tRNA-intron endonuclease and RNase A families. RNase A is another enzyme that catalyzes the cleavage of the P\u2013O5' bond of RNA specifically after pyrimidine residues, which is similar to how tRNA-intron endonucleases function and react. The N-terminal domain and C-terminal domain of the endonucleases are similar to the catalytic domains of the LAGLIDADG and PD-(D/E)XK DNases, respectively. This supports the notion of convergent evolution between the endonuclease and RNase A families because none of the other RNase families have been found to be somewhat similar.",
+          "cos_sim_score": 0.12438622117042542,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::RNA splicing",
+          "title": "RNA splicing",
+          "url": "https://en.wikipedia.org/wiki/RNA_splicing",
+          "text": "Splicing and genesis of circRNAs\nThe existence of backsplicing was first suggested in 2012. This backsplicing explains the genesis of circular RNAs resulting from the exact junction between the 3' boundary of an exon with the 5' boundary of an exon located upstream. In these exonic circular RNAs, the junction is a classic 3'-5'link.\nThe exclusion of intronic sequences during splicing can also leave traces, in the form of circular RNAs. In some cases, the intronic lariat is not destroyed and the circular part remains as a lariat-derived circRNA.In these lariat-derived circular RNAs, the junction is a 2'-5'link.\n\nSee also\ncDNA\nDBASS3/5\nExon junction complex\nmRNA capping\nPolyadenylation\nPost-transcriptional modification\nRNA editing\nSWAP protein domain, a splicing regulator\n\nReferences\nExternal links\nVirtual Cell Animation Collection: mRNA Splicing\nRNA+Splicing at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.10197511315345764,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}
