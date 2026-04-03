@@ -1,0 +1,227 @@
+============================================================================================================
+LLM OUTPUT ANALYSIS — ALL 6 PIPELINE RUNS
+Filters applied: Tier 1-3  |  evidence_relation = direct OR indirect
+NM100 = Python Multivariate top-100   NM500 = Python Multivariate top-500
+NU100 = Python Univariate top-100     UR100 = Univariate Rerank top-100
+WM    = Weka Multivariate             WU    = Weka Univariate ANN
+Known A = sonfh_known_genes.csv   Known B = jia2023_known_genes.csv
+============================================================================================================
+
+┌── NM100  Python Multivariate top-100
+│   Total: 11  |  T1: 6 (direct=6, indirect=0)  |  T2: 4 (direct=2, indirect=2)  |  T3: 1 (direct=0, indirect=1)
+└──────────────────────────────────────────────────────────────────────────────────────────
+#   Gene       Tier  Relation   Conf       Bio.Pot    Score    FC      KnownA   KnownB
+──────────────────────────────────────────────────────────────────────────────────────────
+1   TSTA3      T1    direct     high       strong     0.7424   1.744   —        —
+2   BPGM       T1    direct     high       strong     0.6801   3.388   T1       —
+3   PIP5K1B    T1    direct     high       strong     0.5613   2.020   —        —
+4   GYPA       T1    direct     high       strong     0.5405   3.306   T1       —
+5   IGF2       T3    indirect   low        moderate   0.5305   3.452   —        —
+6   TMCC2      T2    direct     moderate   moderate   0.5254   2.760   T1       —
+7   HEMGN      T1    direct     high       strong     0.4553   2.944   T2       —
+8   CISD2      T1    direct     moderate   strong     0.4454   2.414   —        —
+9   TCF3       T2    indirect   moderate   moderate   0.4273   1.508   —        —
+10  STOM       T2    direct     moderate   moderate   0.3877   1.627   —        —
+11  ABCG2      T2    indirect   moderate   moderate   0.3245   2.330   —        —
+
+┌── NM500  Python Multivariate top-500
+│   Total: 12  |  T1: 9 (direct=9, indirect=0)  |  T2: 2 (direct=1, indirect=1)  |  T3: 1 (direct=0, indirect=1)
+└──────────────────────────────────────────────────────────────────────────────────────────
+#   Gene       Tier  Relation   Conf       Bio.Pot    Score    FC      KnownA   KnownB
+──────────────────────────────────────────────────────────────────────────────────────────
+1   TSTA3      T1    direct     high       strong     0.7686   1.933   —        —
+2   BPGM       T1    direct     high       strong     0.6646   3.388   T1       —
+3   DNAJC6     T2    indirect   moderate   moderate   0.5619   2.780   —        —
+4   GYPA       T1    direct     high       strong     0.5064   3.306   T1       —
+5   TMCC2      T2    direct     moderate   moderate   0.4922   2.760   T1       —
+6   IGF2       T3    indirect   moderate   moderate   0.4919   3.384   —        —
+7   HEMGN      T1    direct     high       strong     0.4778   2.944   T2       —
+8   PIP5K1B    T1    direct     high       strong     0.4744   2.020   —        —
+9   ELOVL6     T1    direct     high       strong     0.4120   1.492   —        —
+10  MAP4K5     T1    direct     high       strong     0.3971   1.320   —        —
+11  CISD2      T1    direct     high       strong     0.3710   2.097   —        —
+12  ARG2       T1    direct     high       strong     0.3518   1.789   —        —
+
+┌── NU100  Python Univariate top-100
+│   Total: 11  |  T1: 2 (direct=2, indirect=0)  |  T2: 6 (direct=2, indirect=4)  |  T3: 3 (direct=0, indirect=3)
+└──────────────────────────────────────────────────────────────────────────────────────────
+#   Gene       Tier  Relation   Conf       Bio.Pot    Score    FC      KnownA   KnownB
+──────────────────────────────────────────────────────────────────────────────────────────
+1   PIK3CD     T2    indirect   moderate   moderate   1.0000   1.105   —        early
+2   CPPED1     T3    indirect   low        weak       1.0000   1.398   —        —
+3   CBL        T2    direct     moderate   moderate   1.0000   1.015   —        —
+4   DPEP2      T2    indirect   moderate   moderate   1.0000   1.502   —        —
+5   NLRP1      T1    direct     high       strong     1.0000   1.266   T1       —
+6   FCHSD2     T3    indirect   low        moderate   1.0000   0.482   —        —
+7   NOTCH2     T2    indirect   moderate   moderate   1.0000   1.127   —        —
+8   IMPDH1     T3    indirect   low        weak       1.0000   1.032   —        —
+9   LCP1       T1    direct     high       strong     1.0000   0.931   —        —
+10  ARNTL      T2    indirect   moderate   moderate   1.0000   0.944   —        —
+11  SETD1B     T2    direct     moderate   strong     1.0000   0.719   —        —
+
+┌── UR100  Univariate Rerank top-100
+│   Total: 10  |  T1: 2 (direct=2, indirect=0)  |  T2: 8 (direct=1, indirect=7)  |  T3: 0
+└──────────────────────────────────────────────────────────────────────────────────────────
+#   Gene       Tier  Relation   Conf       Bio.Pot    Score    FC      KnownA   KnownB
+──────────────────────────────────────────────────────────────────────────────────────────
+1   CXCR2      T2    indirect   moderate   moderate   1.6665   1.677   —        —
+2   VCAN       T2    indirect   moderate   moderate   1.6259   1.635   —        —
+3   F2RL1      T2    indirect   moderate   moderate   1.4401   1.445   —        —
+4   WLS        T2    indirect   moderate   moderate   1.4109   1.755   —        —
+5   ABCG1      T2    indirect   moderate   moderate   1.4085   1.413   —        —
+6   IL6R       T2    indirect   moderate   moderate   1.3649   1.369   —        —
+7   CCR2       T2    indirect   moderate   moderate   1.3459   1.349   —        —
+8   PTAFR      T2    direct     moderate   moderate   1.3077   1.310   —        —
+9   P2RY13     T1    direct     high       strong     1.2870   1.289   —        —
+10  NLRP1      T1    direct     high       strong     1.2642   1.266   T1       —
+
+┌── WM  Weka Multivariate
+│   Total: 13  |  T1: 6 (direct=6, indirect=0)  |  T2: 7 (direct=2, indirect=5)  |  T3: 0
+└──────────────────────────────────────────────────────────────────────────────────────────
+#   Gene       Tier  Relation   Conf       Bio.Pot    Score    FC      KnownA   KnownB
+──────────────────────────────────────────────────────────────────────────────────────────
+1   GYPA       T1    direct     high       strong     0.7300   2.446   T1       —
+2   RHAG       T2    indirect   moderate   moderate   0.7200   1.694   —        —
+3   CISD2      T1    direct     high       strong     0.7100   2.097   —        —
+4   TSTA3      T1    direct     high       strong     0.7100   1.744   —        —
+5   BNIP3L     T2    indirect   moderate   moderate   0.7000   1.833   T2       —
+6   BPGM       T1    direct     moderate   strong     0.6500   3.388   T1       —
+7   PIP5K1B    T1    direct     high       strong     0.6500   2.020   —        —
+8   TMCC2      T2    direct     moderate   moderate   0.6400   2.760   T1       —
+9   HEMGN      T1    direct     high       strong     0.6100   2.944   T2       —
+10  UBE2H      T2    indirect   moderate   moderate   0.5600   2.258   —        —
+11  TCF3       T2    indirect   moderate   moderate   0.4600   1.508   —        —
+12  STOM       T2    direct     moderate   moderate   0.4300   1.627   —        —
+13  ABCG2      T2    indirect   moderate   moderate   0.0000   2.330   —        —
+
+┌── WU  Weka Univariate ANN
+│   Total: 8  |  T1: 3 (direct=3, indirect=0)  |  T2: 5 (direct=1, indirect=4)  |  T3: 0
+└──────────────────────────────────────────────────────────────────────────────────────────
+#   Gene       Tier  Relation   Conf       Bio.Pot    Score    FC      KnownA   KnownB
+──────────────────────────────────────────────────────────────────────────────────────────
+1   NOTCH1     T2    direct     moderate   moderate   0.8800   1.062   —        —
+2   SIRPA      T2    indirect   moderate   moderate   0.7200   1.336   —        —
+3   GRB2       T2    indirect   moderate   moderate   0.6900   0.818   —        —
+4   NLRP1      T1    direct     high       strong     0.6400   1.266   T1       —
+5   P2RY13     T1    direct     high       strong     0.6000   1.289   —        —
+6   SEMA4D     T2    indirect   moderate   moderate   0.5900   0.964   —        —
+7   NOTCH2     T2    indirect   moderate   moderate   0.5700   0.872   —        —
+8   RUNX2      T1    direct     high       strong     0.5600   1.225   T2       —
+
+============================================================================================================
+TABLE 1 — ALIGNED GENE MATRIX  (d=direct  i=indirect)
+============================================================================================================
+Gene        NM100         NM500         NU100         UR100         WM            WU            FC     Runs  KnownA  KnownB
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+NLRP1       —             —             T1(1.00)d     T1(1.26)d     —             T1(0.64)d     1.266  3     T1      —
+TSTA3       T1(0.74)d     T1(0.77)d     —             —             T1(0.71)d     —             1.933  3     —       —
+GYPA        T1(0.54)d     T1(0.51)d     —             —             T1(0.73)d     —             3.306  3     T1      —
+CISD2       T1(0.45)d     T1(0.37)d     —             —             T1(0.71)d     —             2.414  3     —       —
+BPGM        T1(0.68)d     T1(0.66)d     —             —             T1(0.65)d     —             3.388  3     T1      —
+PIP5K1B     T1(0.56)d     T1(0.47)d     —             —             T1(0.65)d     —             2.020  3     —       —
+HEMGN       T1(0.46)d     T1(0.48)d     —             —             T1(0.61)d     —             2.944  3     T2      —
+TMCC2       T2(0.53)d     T2(0.49)d     —             —             T2(0.64)d     —             2.760  3     T1      —
+P2RY13      —             —             —             T1(1.29)d     —             T1(0.60)d     1.289  2     —       —
+NOTCH2      —             —             T2(1.00)i     —             —             T2(0.57)i     1.127  2     —       —
+TCF3        T2(0.43)i     —             —             —             T2(0.46)i     —             1.508  2     —       —
+STOM        T2(0.39)d     —             —             —             T2(0.43)d     —             1.627  2     —       —
+ABCG2       T2(0.32)i     —             —             —             T2(0.00)i     —             2.330  2     —       —
+IGF2        T3(0.53)i     T3(0.49)i     —             —             —             —             3.452  2     —       —
+LCP1        —             —             T1(1.00)d     —             —             —             0.931  1     —       —
+RUNX2       —             —             —             —             —             T1(0.56)d     1.225  1     T2      —
+ELOVL6      —             T1(0.41)d     —             —             —             —             1.492  1     —       —
+MAP4K5      —             T1(0.40)d     —             —             —             —             1.320  1     —       —
+ARG2        —             T1(0.35)d     —             —             —             —             1.789  1     —       —
+CXCR2       —             —             —             T2(1.67)i     —             —             1.677  1     —       —
+VCAN        —             —             —             T2(1.63)i     —             —             1.635  1     —       —
+F2RL1       —             —             —             T2(1.44)i     —             —             1.445  1     —       —
+WLS         —             —             —             T2(1.41)i     —             —             1.755  1     —       —
+ABCG1       —             —             —             T2(1.41)i     —             —             1.413  1     —       —
+IL6R        —             —             —             T2(1.36)i     —             —             1.369  1     —       —
+CCR2        —             —             —             T2(1.35)i     —             —             1.349  1     —       —
+PTAFR       —             —             —             T2(1.31)d     —             —             1.310  1     —       —
+PIK3CD      —             —             T2(1.00)i     —             —             —             1.105  1     —       early
+CBL         —             —             T2(1.00)d     —             —             —             1.015  1     —       —
+DPEP2       —             —             T2(1.00)i     —             —             —             1.502  1     —       —
+ARNTL       —             —             T2(1.00)i     —             —             —             0.944  1     —       —
+SETD1B      —             —             T2(1.00)d     —             —             —             0.719  1     —       —
+NOTCH1      —             —             —             —             —             T2(0.88)d     1.062  1     —       —
+RHAG        —             —             —             —             T2(0.72)i     —             1.694  1     —       —
+SIRPA       —             —             —             —             —             T2(0.72)i     1.336  1     —       —
+BNIP3L      —             —             —             —             T2(0.70)i     —             1.833  1     T2      —
+GRB2        —             —             —             —             —             T2(0.69)i     0.818  1     —       —
+SEMA4D      —             —             —             —             —             T2(0.59)i     0.964  1     —       —
+DNAJC6      —             T2(0.56)i     —             —             —             —             2.780  1     —       —
+UBE2H       —             —             —             —             T2(0.56)i     —             2.258  1     —       —
+CPPED1      —             —             T3(1.00)i     —             —             —             1.398  1     —       —
+FCHSD2      —             —             T3(1.00)i     —             —             —             0.482  1     —       —
+IMPDH1      —             —             T3(1.00)i     —             —             —             1.032  1     —       —
+
+============================================================================================================
+TABLE 2 — TIER & RELATION COUNTS PER RUN
+============================================================================================================
+Run       T1d  T1i  T2d  T2i  T3d  T3i   Total   KnownA  KnownB
+─────────────────────────────────────────────────────────────────
+NM100       6    0    2    2    0    1      11        4       0
+NM500       9    0    1    1    0    1      12        4       0
+NU100       2    0    2    4    0    3      11        1       1
+UR100       2    0    1    7    0    0      10        1       0
+WM          6    0    2    5    0    0      13        5       0
+WU          3    0    1    4    0    0       8        2       0
+
+============================================================================================================
+TABLE 3 — CROSS-PIPELINE CONVERGENCE (found in 2+ runs)
+============================================================================================================
+Gene        Runs  Pipelines                        Best Tier   Best FC  KnownA  KnownB
+─────────────────────────────────────────────────────────────────────────────────────
+NLRP1          3  NU100  UR100  WU                 T1          1.266    T1      —
+TSTA3          3  NM100  NM500  WM                 T1          1.933    —       —
+GYPA           3  NM100  NM500  WM                 T1          3.306    T1      —
+CISD2          3  NM100  NM500  WM                 T1          2.414    —       —
+BPGM           3  NM100  NM500  WM                 T1          3.388    T1      —
+PIP5K1B        3  NM100  NM500  WM                 T1          2.020    —       —
+HEMGN          3  NM100  NM500  WM                 T1          2.944    T2      —
+TMCC2          3  NM100  NM500  WM                 T2          2.760    T1      —
+P2RY13         2  UR100  WU                        T1          1.289    —       —
+NOTCH2         2  NU100  WU                        T2          1.127    —       —
+TCF3           2  NM100  WM                        T2          1.508    —       —
+STOM           2  NM100  WM                        T2          1.627    —       —
+ABCG2          2  NM100  WM                        T2          2.330    —       —
+IGF2           2  NM100  NM500                     T3          3.452    —       —
+
+============================================================================================================
+TABLE 4 — KNOWN GENE HITS (sonfh_known_genes.csv)
+============================================================================================================
+Gene       KnownT   Category                  Runs                                        Best FC
+────────────────────────────────────────────────────────────────────────────────────────────────
+NLRP1      T1       pyroptosis                NU100:T1(1.00)d  UR100:T1(1.26)d  WU:T1(0.64)d   1.266
+GYPA       T1       erythroid_surface         NM100:T1(0.54)d  NM500:T1(0.51)d  WM:T1(0.73)d   3.306
+BPGM       T1       erythroid_metabolism      NM100:T1(0.68)d  NM500:T1(0.66)d  WM:T1(0.65)d   3.388
+HEMGN      T2       erythroid_TF              NM100:T1(0.46)d  NM500:T1(0.48)d  WM:T1(0.61)d   2.944
+TMCC2      T1       erythroid_metabolism      NM100:T2(0.53)d  NM500:T2(0.49)d  WM:T2(0.64)d   2.760
+RUNX2      T2       osteoblast_TF             WU:T1(0.56)d                                      1.225
+BNIP3L     T2       apoptosis_mitophagy       WM:T2(0.70)i                                      1.833
+
+============================================================================================================
+TABLE 5 — JIA2023 GENE HITS (jia2023_known_genes.csv)
+============================================================================================================
+Gene       Stage    RT-qPCR  Runs                   Best FC
+──────────────────────────────────────────────────────────
+PIK3CD     early    Y        NU100:T2(1.00)i         1.105
+
+============================================================================================================
+SUMMARY
+============================================================================================================
+Total unique genes across all 6 runs: 43
+Matched sonfh_known_genes.csv:   7  → NLRP1, GYPA, BPGM, HEMGN, TMCC2, RUNX2, BNIP3L
+Matched jia2023_known_genes.csv: 1  → PIK3CD
+Novel (neither list):           35
+Cross-pipeline convergence 2+:  14
+
+NM100 :  11 genes  |  T1=6  T2=4  T3=1  |  direct=8  indirect=3
+NM500 :  12 genes  |  T1=9  T2=2  T3=1  |  direct=10 indirect=2
+NU100 :  11 genes  |  T1=2  T2=6  T3=3  |  direct=4  indirect=7
+UR100 :  10 genes  |  T1=2  T2=8  T3=0  |  direct=3  indirect=7
+WM    :  13 genes  |  T1=6  T2=7  T3=0  |  direct=8  indirect=5
+WU    :   8 genes  |  T1=3  T2=5  T3=0  |  direct=4  indirect=4
+============================================================================================================
