@@ -1,0 +1,209 @@
+{
+  "probe_id": "11719025_a_at",
+  "gene_symbol": "ZNF652",
+  "score": 1.0,
+  "SD_TestAUC": 0.0993807989999906,
+  "abs_fold_change": 0.8169,
+  "probe_count": 1,
+  "probe_ids": "11719025_a_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.8169,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T22:28:18",
+  "interpretation": "ZNF652 encodes a zinc finger protein that functions as a DNA-binding transcription repressor, regulating gene expression by interacting with other proteins such as CBFA2T2. While there is no direct evidence linking ZNF652 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in transcriptional regulation suggests it may influence pathways related to bone health and cellular responses to steroid treatment. The retrieved evidence primarily discusses ZNF652's involvement in other diseases, such as asthma and hypertension, rather than SONFH specifically. Therefore, the connection to SONFH remains speculative and requires further investigation. As such, ZNF652's potential as a biomarker for early detection of SONFH is currently weak, given the lack of direct evidence linking it to the disease context.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "ZNF652 may play a role in transcriptional regulation relevant to bone health, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "ZNF652 (Q9Y2D9). https://www.uniprot.org/uniprotkb/Q9Y2D9",
+    "ZNF652 \u2014 ZNF652. https://platform.opentargets.org/target/ENSG00000198740",
+    "ZNF652 \u2194 asthma. https://platform.opentargets.org/target/ENSG00000198740/associations",
+    "ZNF652 \u2194 hypertension. https://platform.opentargets.org/target/ENSG00000198740/associations",
+    "ZNF652 \u2194 coronary artery disease. https://platform.opentargets.org/target/ENSG00000198740/associations",
+    "ZNF652 \u2194 atopic eczema. https://platform.opentargets.org/target/ENSG00000198740/associations",
+    "ZNF652 \u2014 zinc finger protein 652 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ESR1 \u2014 estrogen receptor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "AR \u2014 androgen receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ZNF652-AS1 \u2014 ZNF652 antisense RNA 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ESR2 \u2014 estrogen receptor 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CircPSMC3 alleviates the symptoms of PCOS by sponging miR\u2010296\u20103p and regulating PTEN expression (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC7521274/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8490,
+    "completion_tokens": 299,
+    "total_tokens": 8789,
+    "estimated_cost_usd": 0.001453
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9Y2D9",
+          "title": "ZNF652 (Q9Y2D9)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9Y2D9",
+          "text": "Protein: Zinc finger protein 652\nFunction: DNA-binding transcription repressor that acts together with CBFA2T2 to repress expression of target genes, such as TCF12 (PubMed:16966434, PubMed:18456661, PubMed:21678463). Specifically binds the DNA consensus sequence 5'-CGAAAGGGTTAAT-3' (PubMed:18456661, PubMed:21678463)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000198740::function",
+          "title": "ZNF652 \u2014 ZNF652",
+          "url": "https://platform.opentargets.org/target/ENSG00000198740",
+          "text": "Function: DNA-binding transcription repressor that acts together with CBFA2T2 to repress expression of target genes, such as TCF12 (PubMed:16966434, PubMed:18456661, PubMed:21678463). Specifically binds the DNA consensus sequence 5'-CGAAAGGGTTAAT-3' (PubMed:18456661, PubMed:21678463).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000198740::MONDO_0004979",
+          "title": "ZNF652 \u2194 asthma",
+          "url": "https://platform.opentargets.org/target/ENSG00000198740/associations",
+          "text": "Disease: asthma\nDescription: A bronchial disease that is characterized by chronic inflammation and narrowing of the airways, which is caused by a combination of environmental and genetic factors resulting in recurring periods of wheezing (a whistling sound while breathing), chest tightness, shortness of breath, mucus production and coughing. The symptoms appear due to a variety of triggers such as allergens, irritants, respiratory infections, weather changes, exercise, stress, reflux disease, medications, foods and emotional anxiety.\nAssociation score: 0.505",
+          "cos_sim_score": 0.5045076261905882,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000198740::EFO_0000537",
+          "title": "ZNF652 \u2194 hypertension",
+          "url": "https://platform.opentargets.org/target/ENSG00000198740/associations",
+          "text": "Disease: hypertension\nDescription: Persistently high systemic arterial blood pressure. Based on multiple readings (blood pressure determination), hypertension is currently defined as when systolic pressure is consistently greater than 140 mm Hg or when diastolic pressure is consistently 90 mm Hg or more.\nAssociation score: 0.496",
+          "cos_sim_score": 0.4958555070039575,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000198740::EFO_0001645",
+          "title": "ZNF652 \u2194 coronary artery disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000198740/associations",
+          "text": "Disease: coronary artery disease\nDescription: Thickening and loss of elasticity of the CORONARY ARTERIES, leading to progressive arterial insufficiency (CORONARY DISEASE).\nAssociation score: 0.471",
+          "cos_sim_score": 0.47109874397051,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000198740::EFO_0000274",
+          "title": "ZNF652 \u2194 atopic eczema",
+          "url": "https://platform.opentargets.org/target/ENSG00000198740/associations",
+          "text": "Disease: atopic eczema\nDescription: A common chronic pruritic inflammatory skin disease with a strong genetic component. Onset typically occurs during the first 2 years of life.\nAssociation score: 0.469",
+          "cos_sim_score": 0.4688288528882793,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "ZNF652 \u2014 zinc finger protein 652",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ZNF652\nGene name: zinc finger protein 652\nOrganism: Homo sapiens\nGene summary: Predicted to enable DNA-binding transcription factor activity, RNA polymerase II-specific. Predicted to be involved in regulation of transcription by RNA polymerase II. Predicted to be active in nucleus. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ZNF652",
+          "aliases": "",
+          "gene_description": "zinc finger protein 652"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ESR1 \u2014 estrogen receptor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ESR1\nGene name: estrogen receptor 1\nAliases / synonyms: ER, ESR, ESRA, ESTRR, Era, NR3A1\nOrganism: Homo sapiens\nGene summary: This gene encodes an estrogen receptor and ligand-activated transcription factor. The canonical protein contains an N-terminal ligand-independent transactivation domain, a central DNA binding domain, a hinge domain, and a C-terminal ligand-dependent transactivation domain. The protein localizes to the nucleus where it may form either a homodimer or a heterodimer with estrogen receptor 2. The protein encoded by this gene regulates the transcription of many estrogen-inducible genes that play a role in growth, metabolism, sexual development, gestation, and other reproductive functions and is expressed in many non-reproductive tissues. The receptor encoded by this gene plays a key role in breast cancer, endometrial cancer, and osteoporosis. This gene is reported to have dozens of transcript va...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ESR1",
+          "aliases": "ER, ESR, ESRA, ESTRR, Era, NR3A1",
+          "gene_description": "estrogen receptor 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "AR \u2014 androgen receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AR\nGene name: androgen receptor\nAliases / synonyms: AIS, AR8, DHTR, HUMARA, HYSP1, KD, NR3C4, SBMA, SMAX1, TFM\nOrganism: Homo sapiens\nGene summary: The androgen receptor gene is more than 90 kb long and codes for a protein that has 3 major functional domains: the N-terminal domain, DNA-binding domain, and androgen-binding domain. The protein functions as a steroid-hormone activated transcription factor. Upon binding the hormone ligand, the receptor dissociates from accessory proteins, translocates into the nucleus, dimerizes, and then stimulates transcription of androgen responsive genes. This gene contains 2 polymorphic trinucleotide repeat segments that encode polyglutamine and polyglycine tracts in the N-terminal transactivation domain of its protein. Expansion of the polyglutamine tract from the normal 9-34 repeats to the pathogenic 38-62 repeats causes spinal bulbar muscular atrophy (SBMA, also known as Kennedy's disease). Mutati...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AR",
+          "aliases": "AIS, AR8, DHTR, HUMARA, HYSP1, KD, NR3C4, SBMA, SMAX1, TFM",
+          "gene_description": "androgen receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ZNF652-AS1 \u2014 ZNF652 antisense RNA 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ZNF652-AS1\nGene name: ZNF652 antisense RNA 1\nOrganism: Homo sapiens",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ZNF652-AS1",
+          "aliases": "",
+          "gene_description": "ZNF652 antisense RNA 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ESR2 \u2014 estrogen receptor 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ESR2\nGene name: estrogen receptor 2\nAliases / synonyms: ER-BETA, ESR-BETA, ESRB, ESTRB, Erb, NR3A2, ODG8\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the family of estrogen receptors and superfamily of nuclear receptor transcription factors. The gene product contains an N-terminal DNA binding domain and C-terminal ligand binding domain and is localized to the nucleus, cytoplasm, and mitochondria. Upon binding to 17beta-estradiol or related ligands, the encoded protein forms homo- or hetero-dimers that interact with specific DNA sequences to activate transcription. Some isoforms dominantly inhibit the activity of other estrogen receptor family members. Several alternatively spliced transcript variants of this gene have been described, but the full-length nature of some of these variants has not been fully characterized. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ESR2",
+          "aliases": "ER-BETA, ESR-BETA, ESRB, ESTRB, Erb, NR3A2, ODG8",
+          "gene_description": "estrogen receptor 2"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::7521274",
+          "title": "CircPSMC3 alleviates the symptoms of PCOS by sponging miR\u2010296\u20103p and regulating PTEN expression",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7521274/",
+          "text": "1\nINTRODUCTION\nAs the most common female endocrine diseases, polycystic ovary syndrome (PCOS) affects approximately 5\u221220% of women of reproductive age worldwide.\n1\n The main characteristics of PCOS are chronic oligo\u2010anovulation and hyperandrogenemia, which are usually clinically manifested by irregular menstrual cycle, infertility, hairy and haemorrhoids.\n2\n Not only that, PCOS also increases the risk of other diseases like obesity, hypertension, hyperlipidaemia and type 2 diabetes mellitus.\n3\n Although chronic inflammation and oxidative stress have been linked to the pathogenesis of PCOS, the underlying molecular mechanism of PCOS remains unclear.\n4\n Previous clinical studies showed that granulosa cells (GCs), which were closely related to the process of follicle formation and ovulation, exhibited aberrant cell death and proliferation in the ovaries of PCOS patients in contrast to normal ovaries.\n5\n Recent evidence also indicated that suppressing the pathological changes in GCs can effectively alleviate PCOS symptoms.\n6\n However, GCs are not adequate for the research of PCOS due to the difficulties in obtaining and maintaining the primary characteristics.\n7\n Human granulosa\u2010like tumour cell line KGN, which retains the normal physiological features of GCs and overcomes the above problems, has been successfully employed to explore the precise functions and associated molecular mechanisms of GCs many times.\n8\nCircular RNAs (circRNAs) are a type of non\u2010coding RNAs (ncRNAs) that lack canonical 5' cap and 3' poly A tail attributed to their covalent closed\u2010loop structures.\n9\n As the competitive endogenous RNAs, circRNAs regulate the expression of multiple genes at the transcriptional and post\u2010transcriptional levels by sponging downstream microRNA(miRNA).\n10\n Mounting evidences showed that the differential expressions of circRNAs were present in a variety of\u00a0clinical illnesses such as cancers, CNS diseases, cardiovascular diseases, and some endocrine dysfunctions.\n11\n, \n12\n, \n13\n, \n14\n Recently, some reports aiming to probe into the differential expression profiles of circRNAs in GCs of PCOS patients found that 4 circRNAs were up\u2010regulated whereas 23 were down\u2010regulated.\n15\n These circRNAs, which were abnormally expressed primarily in inflammation, proliferation and VEGF signalling pathways, indicated potential function in the occurrence and development of PCOS.\nAlthough a series of differentially expressed circRNAs have been widely discovered in various diseases, little is known about their biogenesis processes and underlying mechanisms.\n16\n It has been learned that the regulatory function of circRNAs mainly depends on its directly bound downstream miRNAs.\n17\n MicroRNAs (miRNAs) are a type of conservative small regulatory non\u2010coding RNAs that can suppress the expression of target genes.\n18\n As miRNAs are involved in key biological processes relied by cell life such as cell proliferation, apoptosis, development and differentiation, they are considered as vital regulators of gene expression.\n19\n, \n20\n, \n21\n, \n22\n Several reports have shown that miRNAs are mainly regulated by various lncRNAs and circRNAs to further exerting regulatory effects.\n23\n, \n24\n A previous research in mouse ovarian provides evidence that circEGFR could regulate the proliferation of GCs by sponging miR\u2010125a\u20103p to regulate Fyn.\n25\n It also reported that 3 circRNAs in cumulus cells of PCOS patients mediate the post\u2010transcriptional regulation of multiple genes by acting as sponges for miRNAs.\n26\nIn this study, we determined the abnormal reduction in circPSMC3 expression by comparing the ovarian tissue samples of PCOS patients and normal individuals. The symptom relief caused by up\u2010regulation of circPSMC3 in PCOS model mice suggested the potential for further study. In vitro functional experiments confirmed that circPSMC3 can inhibit cell proliferation and promote apoptosis by blocking the cell cycle in human\u2010like granular tumour cell lines. Mechanism study revealed that circPSMC3 may play its role through miR\u2010296\u20103p/PTEN axis. We hope that our work contributes to the valuable insights into the circRNAs in the pathogenesis and treatment of PCOS by exploring the biological functions and molecular mechanisms involved in circPSMC3.\n2\nMATERIALS AND METHODS\n2.1\nStudy approval",
+          "cos_sim_score": 0.24489226937294006,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::7521274",
+          "title": "CircPSMC3 alleviates the symptoms of PCOS by sponging miR\u2010296\u20103p and regulating PTEN expression",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7521274/",
+          "text": "2.4\nSerum insulin assay\nAfter fasting the mice for 12\u00a0hours, 2\u00a0g/kg of glucose was intraperitoneally injected. Then, the orbital venous blood of above mice was extracted at 0, 30, 60, 90 and 120\u00a0minutes, respectively. Finally, the concentration of serum insulin was detected by mouse insulin ELISA kit (Westang, Shanghai,\u00a0China), calculating the area under the curve (AUC) for further evaluation.\n2.5\nH&E staining\nAccording to standard H&E staining protocol, mouse ovarian tissues were stained with haematoxylin and eosin solution (Beyotime, Shanghai,\u00a0China) after fixed in formalin, paraffin\u2010embedded and sliced at 5\u00a0\u00b5m in turn. The images were captured and analysed using a fluorescence microscope (Olympus, Tokyo, Japan).\n2.6\nCell transfection\nCell transfection is necessary to generate knockdown or overexpression model of circPSMC3 or miR\u2010296\u20103p. SiRNA circPSMC3 (si\u2010circ), si\u2010negative control (si\u2010NC), circPSMC3 overexpression vector (circ\u2010PSMC3), blank vector (mock), miR\u2010296\u20103p mimic, anti\u2010miR\u2010296\u20103p, mimic NC and anti\u2010NC were all synthesized and obtained by Sangon Biotech (Shanghai, China). The sequences of si\u2010circ and si\u2010NC were as follows: 5'\u2010TAGGGTCCCTGCCCTTTGA\u20103' and 5'\u2010UUCUCCGAACGUGUCACGUUU\u20103'. The sequences were, respectively, transfected into cells with these siRNAs or plasmids by utilizing Lipofectamine 3000 reagent (Thermo Fisher, Waltham, Massachusetts, USA) according to manufacturer guidelines.\n2.7\nQuantitative reverse\u2010transcription\u2010polymerase chain reaction (qRT\u2010PCR)\nThe expression levels of circPSMC3, miR\u2010296\u20103p and PTEN in the experimental groups were determined by qRT\u2010PCR. In strict accordance with the manufacturer's instructions, total RNAs were extracted by TRIzol reagent (Thermo Fisher Scientific, Massachusetts, USA). For circRNA, cDNA was reverse transcribed by a reverse transcription kit (QuantiTect\u00ae Reverse Transcription kit; Qiagen) and quantification was performed with a SYBR Green PCR Kit (SYBR\u00ae Green Realtime PCR Master Mix; Toyobo). For miRNA, QuantiTect\u00ae Reverse\u00a0Transcription\u00a0kit (Qiagen, German) was employed to reverse the total RNAs and SYBR Green PCR Kit (Toyobo, Japan) was used to examine the expression level of miR\u2010296\u20103p. The qRT\u2010PCR primers were designed and synthesized by Sangon Biotech (Shanghai, China). The sequences of the primers used were listed as bellow: forward, 5\u2032\u2010GTTTAGGGTCCCTGCCCTTTG\u20103\u2032 and reverse 5'\u2010 GTGTTGGGCTGGAAGCCATC\u20103\u2032 for circPSMC3; forward, 5'\u2010TGCCTAATTCAGAGGGTTGG\u20103' and reverse, 5'\u2010CTCCACTCCTGGCACACAG\u20103' for miR\u2010296\u20103p; forward, 5'\u2010GTTTACCGGCAGCATCAAAT\u20103 and reverse 5'\u2010CCCCCACTTTAGTGCACAGT\u20103' for PTEN. Before calculation, we normalized the circRNA and miRNA expression levels by GAPDH or U6, respectively.\n2.8\nWestern blot",
+          "cos_sim_score": 0.15265260636806488,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::7521274",
+          "title": "CircPSMC3 alleviates the symptoms of PCOS by sponging miR\u2010296\u20103p and regulating PTEN expression",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7521274/",
+          "text": "56\n Consistent\u00a0with it, our results showed that up\u2010regulating PTEN by circPSMC3 suppressed the proliferation of KGN cells. Nevertheless, what puzzles us is that miR\u2010200b and miR\u2010200c have been reported to reduce KGN cells proliferation by down\u2010regulating PTEN, which is the exact opposite of our conclusion.\n57\n We speculate that some subtle changes have occurred in the regulatory pathway of PTEN in KGN cells compared with GCs. Clearly, this once again proved the limitations of the KGN cell line for studying the pathological mechanism of PCOS. Since KGN cells cannot fully reflect the true physiological characteristics of GCs, experiments with bovine GCs directly are obviously closer to the truth.\nOur research still remains some limitations and weaknesses. Firstly, we used KGN cells instead of GCs in this study. As mentioned above, compared to the original GCs or SVOG cells, the KGN cell line does not seem to be the best choice for studying PCOS. We will search for the basis of the differences in the circPSMC/miR\u201029\u20103p/PTEN axis in these three cell lines in the follow\u2010up work. Additionally, since the focus of this work is on circRNAs, we have not studied the function and mechanism of miR\u2010296\u20103p and PTEN in detail in vivo experiments. In the future, we plan to explore the potential functions and molecular mechanisms of these two in PCOS.\nIn conclusion, our finding reveals that circPSMC3 helps to alleviate the symptoms in PCOS mice via sponging miR\u2010296\u20103p to up\u2010regulate PTEN expression level. We hope that our work contributes to the valuable insights into the better understanding of circRNAs in the occurrence and development of PCOS by exploring the biological functions and molecular mechanisms involved in circPSMC3.\nCONFLICT OF INTEREST\nNo potential conflict of interest was reported by the authors.\nAUTHORS' CONTRIBUTIONS\nJing Yang, Aifen Zhou and Jun Liu: Study design. Jun Liu, Jinli Ding, Bing Qu and Jiuying Liu: Experiments. Jun Liu, Xiaojie Song and Qingli Suo: Acquiring and collation of the data. Jing Yang, Aifen Zhou, Jun Liu and Jinli Ding: Writing the manuscript. All authors read and approved the final submitted manuscript.\nSupporting information\nFig S1\nClick here for additional data file.",
+          "cos_sim_score": 0.13688108325004578,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::7521274",
+          "title": "CircPSMC3 alleviates the symptoms of PCOS by sponging miR\u2010296\u20103p and regulating PTEN expression",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7521274/",
+          "text": "26\nIn this study, we determined the abnormal reduction in circPSMC3 expression by comparing the ovarian tissue samples of PCOS patients and normal individuals. The symptom relief caused by up\u2010regulation of circPSMC3 in PCOS model mice suggested the potential for further study. In vitro functional experiments confirmed that circPSMC3 can inhibit cell proliferation and promote apoptosis by blocking the cell cycle in human\u2010like granular tumour cell lines. Mechanism study revealed that circPSMC3 may play its role through miR\u2010296\u20103p/PTEN axis. We hope that our work contributes to the valuable insights into the circRNAs in the pathogenesis and treatment of PCOS by exploring the biological functions and molecular mechanisms involved in circPSMC3.\n2\nMATERIALS AND METHODS\n2.1\nStudy approval\nEthical approvals were obtained from the Ethics Committee of the Renmin Hospital of Wuhan University. All collected samples were obtained subsequent to receive full written informed consent from the patients. Relevant animal experiments were conducted complied with the institutional ethical guidelines.\n2.2\nCell lines and patient tissues\nHuman granulosa\u2010like tumour cell lines (KGN, COV434, SVOG) were acquired from the Suer Biological Technology (Shanghai, China). Cells were cultured in Dulbecco's modified Eagle's medium (DMEM, GE Healthcare Life Sciences, Logan, UT, USA) replenished with 10% foetal bovine serum (FBS, HyClone, South Logan, UT, USA) in a humidified incubator containing 5% CO2 at 37\u00b0C.\nAll samples were taken from women of reproductive aged who were 25 to 45\u00a0years old and did not receive any hormonotherapy at least 3\u00a0months prior to tissue sampling. PCOS patients were diagnosed based on the revised Rotterdam criteria provided by the American Society for Reproductive Medicine and the European Society for Human Reproduction and Embryology. Non\u2010PCOS women with regular menstrual cycles and normal ovarian morphology were identified as the control group. As\u00a0described\u00a0before, the human granulosa cells for subsequent RNA analyses were recovered and purified from the follicular fluid.\n27\n2.3\nAnimal experiments\nSixteen 3\u2010week\u2010old female C57BL/6 mice were housed in our animal centre for 1\u00a0week after purchased from Shanghai Animal Centre. The PCOS mouse model was established by subcutaneous injection of 60\u00a0mg/kg dehydroepiandrosterone (DHEA, Aladdin, Shanghai, China) every day for 3\u20106\u00a0weeks. Then, these mice were divided into two groups of 8 each, which received a subcapsular injection into the ovary of 5\u00a0\u00d7\u00a0108 PFU/mL lentivirus carrying mock vector or circ\u2010PSMC3 vector (GeneChem, Shanghai, China). The ovarian tissues required for subsequent experiments were taken from mice killed after 2\u00a0weeks.\n2.4\nSerum insulin assay\nAfter fasting the mice for 12\u00a0hours, 2\u00a0g/kg of glucose was intraperitoneally injected. Then, the orbital venous blood of above mice was extracted at 0, 30, 60, 90 and 120\u00a0minutes, respectively. Finally, the concentration of serum insulin was detected by mouse insulin ELISA kit (Westang, Shanghai,\u00a0China), calculating the area under the curve (AUC) for further evaluation.\n2.5\nH&E staining\nAccording to standard H&E staining protocol, mouse ovarian tissues were stained with haematoxylin and eosin solution (Beyotime, Shanghai,\u00a0China) after fixed in formalin, paraffin\u2010embedded and sliced at 5\u00a0\u00b5m in turn. The images were captured and analysed using a fluorescence microscope (Olympus, Tokyo, Japan).\n2.6\nCell transfection",
+          "cos_sim_score": 0.12399688363075256,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::7521274",
+          "title": "CircPSMC3 alleviates the symptoms of PCOS by sponging miR\u2010296\u20103p and regulating PTEN expression",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7521274/",
+          "text": "38\n Later studies found that circPSMC3 inhibited cell proliferation of nasopharyngeal carcinoma and prostate cancer by down\u2010regulating ROCK1 and DGCR8, respectively.\n39\n, \n40\n Recently, circPSMC3 was reported to suppress the invasion and migration of NSCLC cells by regulating the miR\u2010182\u20105p/NME2 signalling pathway.\n41\n Similar to most circRNAs, the major point of focus in circPSMC3 was also on tumour diseases. The disorder of cell proliferation and apoptosis is not only a patent for cancer, but also widely exists in other diseases, such as PCOS. As far as we know, our work is the only study to explore the role of circPSMC3 in non\u2010tumour diseases, which may provide some meaningful reference for the research of circPSMC3 in a wider range of diseases.\nWhether it is miR\u2010296\u20105p (miRNA\u2010296 from the 5' end) or miR\u2010296\u20103p (miRNA\u2010296 from the 3' end), previous studies principally focused on their expression and role in human cancer. For instance, miR\u2010296\u20103p was proved to increase tumour cell resistance to natural killer cells as an oncogene in prostate cancer, while exerted inhibitory effects on tumour cell migration and invasion in many types of malignancies such as choroidal melanoma, glioblastoma and non\u2013small\u2010cell lung carcinoma.\n42\n, \n43\n, \n44\n, \n45\n Similar\u00a0to its homolog, miR\u2010296\u20105p has also been studied in the occurrence and development of various human cancers including oesophageal cancer, glioma and breast cancer.\n46\n, \n47\n, \n48\n Except for miR\u2010296, many other miRNAs have been studied for their precise function and associated molecular\u00a0mechanism in PCOS. MiR\u20103940\u20105p, miR\u2010140 and miR\u2010155 were found to promote GC proliferation while miR\u2010135a and miR\u201030d\u20105p induced apoptosis in GCs.\n49\n, \n50\n, \n51\n, \n52\n, \n53\n We predicted and confirmed that miR\u2010296\u20103p was involved in regulating the proliferation of KGN cells as a downstream target of circPSMC3. Three human\u2010like tumour cell lines used in this study were tested for miR\u2010296\u20103p levels and found to have the lowest expression in SVOG cells (Figure S1B). Considering that most of the in vitro studies on PCOS used the KGN cells in the past, perhaps the SVOG cell line is a more appropriate choice.\nPTEN, as a well\u2010known negative regulator of the PI3K/AKT pathway, has been studied as a tumour\u2010suppressor gene repeatedly.\n54\n However, increasing evidence suggested that this signalling pathway is equally important for the initiation and progression of PCOS, which may affect insulin resistance and hyperandrogenism.\n55\n Previous studies reported that miR\u201017\u201092 could promote cell proliferation and reduce the ratio of differentiated cells in bovine GCs by down\u2010regulating PTEN, suggesting that up\u2010regulating PTEN might be a strategy to suppress GCs.\n56\n Consistent\u00a0with it, our results showed that up\u2010regulating PTEN by circPSMC3 suppressed the proliferation of KGN cells. Nevertheless, what puzzles us is that miR\u2010200b and miR\u2010200c have been reported to reduce KGN cells proliferation by down\u2010regulating PTEN, which is the exact opposite of our conclusion.\n57\n We speculate that some subtle changes have occurred in the regulatory pathway of PTEN in KGN cells compared with GCs. Clearly, this once again proved the limitations of the KGN cell line for studying the pathological mechanism of PCOS. Since KGN cells cannot fully reflect the true physiological characteristics of GCs, experiments with bovine GCs directly are obviously closer to the truth.",
+          "cos_sim_score": 0.12184242904186249,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

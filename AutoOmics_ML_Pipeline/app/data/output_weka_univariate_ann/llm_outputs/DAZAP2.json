@@ -1,0 +1,190 @@
+{
+  "rf_rank": 1,
+  "probe_id": "11718340_x_at",
+  "gene_symbol": "DAZAP2",
+  "score": 0.92,
+  "rf_n_nodes": 1,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.7752,
+  "log_fc": 0.7752,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11718340_x_at",
+  "max_score": 0.92,
+  "mean_abs_fold_change": 0.7752,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:16:15",
+  "interpretation": "DAZAP2 (DAZ-associated protein 2) is involved in regulating cellular responses to stress, particularly through its interactions with the tumor suppressor protein TP53. It promotes the degradation of HIPK2, a kinase that can influence cell survival pathways, and modulates the expression of TP53 target genes, which are crucial for cell cycle regulation and apoptosis. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the role of DAZAP2 in stress granule formation and its interactions with signaling pathways may suggest a mechanism by which steroid exposure leads to cellular stress and subsequent bone cell death. However, the evidence linking DAZAP2 directly to SONFH is weak, primarily relying on inferred connections rather than direct studies. Therefore, while DAZAP2 may have biological relevance in the context of cellular stress responses, its potential as a biomarker for early detection of SONFH is limited.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "DAZAP2 may play a role in cellular stress responses relevant to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "DAZAP2 (Q15038). https://www.uniprot.org/uniprotkb/Q15038",
+    "DAZAP2 (Q15038-4). https://www.uniprot.org/uniprotkb/Q15038-4",
+    "DAZAP2 (Q15038-5). https://www.uniprot.org/uniprotkb/Q15038-5",
+    "DAZAP2 \u2014 DAZAP2. https://platform.opentargets.org/target/ENSG00000183283",
+    "DAZAP2 \u2194 age-related macular degeneration. https://platform.opentargets.org/target/ENSG00000183283/associations",
+    "DAZAP2 \u2194 X-linked retinal dysplasia. https://platform.opentargets.org/target/ENSG00000183283/associations",
+    "DAZAP2 \u2194 retinitis pigmentosa. https://platform.opentargets.org/target/ENSG00000183283/associations",
+    "DAZAP2 \u2194 cancer. https://platform.opentargets.org/target/ENSG00000183283/associations",
+    "DAZAP2 \u2014 DAZ associated protein 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TP53 \u2014 tumor protein p53 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CTNNB1 \u2014 catenin beta 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "NOTCH1 \u2014 notch receptor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4884,
+    "completion_tokens": 330,
+    "total_tokens": 5214,
+    "estimated_cost_usd": 0.000931
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q15038",
+          "title": "DAZAP2 (Q15038)",
+          "url": "https://www.uniprot.org/uniprotkb/Q15038",
+          "text": "Protein: DAZ-associated protein 2\nFunction: In unstressed cells, promotes SIAH1-mediated polyubiquitination and degradation of the serine/threonine-protein kinase HIPK2, probably by acting as a loading factor that potentiates complex formation between HIPK2 and ubiquitin ligase SIAH1 (PubMed:33591310). In response to DNA damage, localizes to the nucleus following phosphorylation by HIPK2 and modulates the expression of a subset of TP53/p53 target genes by binding to TP53 at target gene promoters (PubMed:33591310). This limits the expression of a number of cell death-mediating TP53 target genes, reducing DNA damage-induced cell death (PubMed:33591310). Enhances the binding of transcription factor TCF7L2/TCF4, a Wnt signaling pathway effector, to the promoters of target genes (By similarity). Plays a role in stress granule formation (PubMed:17984221)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q15038-4",
+          "title": "DAZAP2 (Q15038-4)",
+          "url": "https://www.uniprot.org/uniprotkb/Q15038-4",
+          "text": "Protein: Isoform 4 of DAZ-associated protein 2",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q15038-5",
+          "title": "DAZAP2 (Q15038-5)",
+          "url": "https://www.uniprot.org/uniprotkb/Q15038-5",
+          "text": "Protein: Isoform 5 of DAZ-associated protein 2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000183283::function",
+          "title": "DAZAP2 \u2014 DAZAP2",
+          "url": "https://platform.opentargets.org/target/ENSG00000183283",
+          "text": "Function: In unstressed cells, promotes SIAH1-mediated polyubiquitination and degradation of the serine/threonine-protein kinase HIPK2, probably by acting as a loading factor that potentiates complex formation between HIPK2 and ubiquitin ligase SIAH1 (PubMed:33591310). In response to DNA damage, localizes to the nucleus following phosphorylation by HIPK2 and modulates the expression of a subset of TP53/p53 target genes by binding to TP53 at target gene promoters (PubMed:33591310). This limits the expression of a number of cell death-mediating TP53 target genes, reducing DNA damage-induced cell death (PubMed:33591310). Enhances the binding of transcription factor TCF7L2/TCF4, a Wnt signaling pathway effector, to the promoters of target genes (By similarity). Plays a role in stress granule formation (PubMed:17984221).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000183283::EFO_0001365",
+          "title": "DAZAP2 \u2194 age-related macular degeneration",
+          "url": "https://platform.opentargets.org/target/ENSG00000183283/associations",
+          "text": "Disease: age-related macular degeneration\nDescription: Degenerative changes in the macula lutea of the retina.\nAssociation score: 0.087",
+          "cos_sim_score": 0.08741065853067474,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000183283::MONDO_0010722",
+          "title": "DAZAP2 \u2194 X-linked retinal dysplasia",
+          "url": "https://platform.opentargets.org/target/ENSG00000183283/associations",
+          "text": "Disease: X-linked retinal dysplasia\nAssociation score: 0.085",
+          "cos_sim_score": 0.08450628167293049,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000183283::MONDO_0019200",
+          "title": "DAZAP2 \u2194 retinitis pigmentosa",
+          "url": "https://platform.opentargets.org/target/ENSG00000183283/associations",
+          "text": "Disease: retinitis pigmentosa\nDescription: Retinitis pigmentosa (RP) is an inherited retinal dystrophy leading to progressive loss of the photoreceptors and retinal pigment epithelium and resulting in blindness usually after several decades.\nAssociation score: 0.080",
+          "cos_sim_score": 0.07993826340773667,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000183283::MONDO_0004992",
+          "title": "DAZAP2 \u2194 cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000183283/associations",
+          "text": "Disease: cancer\nDescription: A tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues. Malignant neoplasms often metastasize to distant anatomic sites and may recur after excision. The most common malignant neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), Hodgkin and non-Hodgkin lymphomas, leukemias, melanomas, and sarcomas.\nAssociation score: 0.078",
+          "cos_sim_score": 0.07766063615346236,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "DAZAP2 \u2014 DAZ associated protein 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: DAZAP2\nGene name: DAZ associated protein 2\nAliases / synonyms: PRTB\nOrganism: Homo sapiens\nGene summary: This gene encodes a proline-rich protein which interacts with the deleted in azoospermia (DAZ) and the deleted in azoospermia-like gene through the DAZ-like repeats. This protein also interacts with the transforming growth factor-beta signaling molecule SARA (Smad anchor for receptor activation), eukaryotic initiation factor 4G, and an E3 ubiquitinase that regulates its stability in splicing factor containing nuclear speckles. The encoded protein may function in various biological and pathological processes including spermatogenesis, cell signaling and transcription regulation, formation of stress granules during translation arrest, RNA splicing, and pathogenesis of multiple myeloma. Multiple transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "DAZAP2",
+          "aliases": "PRTB",
+          "gene_description": "DAZ associated protein 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "DAZAP2 \u2014 DAZ associated protein 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: DAZAP2\nGene name: DAZ associated protein 2\nOrganism: Homo sapiens",
+          "source_type": "ncbi_gene",
+          "official_symbol": "DAZAP2",
+          "aliases": "",
+          "gene_description": "DAZ associated protein 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TP53 \u2014 tumor protein p53",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TP53\nGene name: tumor protein p53\nAliases / synonyms: BCC7, BMFS5, LFS1, P53, TRP53\nOrganism: Homo sapiens\nGene summary: This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TP53",
+          "aliases": "BCC7, BMFS5, LFS1, P53, TRP53",
+          "gene_description": "tumor protein p53"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CTNNB1 \u2014 catenin beta 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CTNNB1\nGene name: catenin beta 1\nAliases / synonyms: CTNNB, EVR7, MRD19, NEDSDV, armadillo\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is part of a complex of proteins that constitute adherens junctions (AJs). AJs are necessary for the creation and maintenance of epithelial cell layers by regulating cell growth and adhesion between cells. The encoded protein also anchors the actin cytoskeleton and may be responsible for transmitting the contact inhibition signal that causes cells to stop dividing once the epithelial sheet is complete. Finally, this protein binds to the product of the APC gene, which is mutated in adenomatous polyposis of the colon. Mutations in this gene are a cause of colorectal cancer (CRC), pilomatrixoma (PTR), medulloblastoma (MDB), and ovarian cancer. Alternative splicing results in multiple transcript variants. [provided by RefSeq, Aug 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CTNNB1",
+          "aliases": "CTNNB, EVR7, MRD19, NEDSDV, armadillo",
+          "gene_description": "catenin beta 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "NOTCH1 \u2014 notch receptor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: NOTCH1\nGene name: notch receptor 1\nAliases / synonyms: AOS5, AOVD1, TAN1, hN1\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the NOTCH family of proteins. Members of this Type I transmembrane protein family share structural characteristics including an extracellular domain consisting of multiple epidermal growth factor-like (EGF) repeats, and an intracellular domain consisting of multiple different domain types. Notch signaling is an evolutionarily conserved intercellular signaling pathway that regulates interactions between physically adjacent cells through binding of Notch family receptors to their cognate ligands. The encoded preproprotein is proteolytically processed in the trans-Golgi network to generate two polypeptide chains that heterodimerize to form the mature cell-surface receptor. This receptor plays a role in the development of numerous cell and tissue types. Mutations ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "NOTCH1",
+          "aliases": "AOS5, AOVD1, TAN1, hN1",
+          "gene_description": "notch receptor 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

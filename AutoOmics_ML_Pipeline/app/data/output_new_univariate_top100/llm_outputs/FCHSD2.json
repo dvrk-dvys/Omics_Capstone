@@ -1,0 +1,225 @@
+{
+  "probe_id": "11718185_a_at",
+  "gene_symbol": "FCHSD2",
+  "score": 1.0,
+  "SD_TestAUC": 0.0,
+  "abs_fold_change": 0.4818,
+  "probe_count": 1,
+  "probe_ids": "11718185_a_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.4818,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T22:22:59",
+  "interpretation": "FCHSD2 encodes a protein involved in clathrin-mediated endocytosis, playing a crucial role in the internalization of cell surface receptors, including integrins and growth factor receptors. This function is particularly relevant in the context of steroid-induced osteonecrosis of the femoral head (SONFH), where inflammation and cellular signaling pathways are disrupted. The retrieved evidence indicates that FCHSD2 is implicated in processes that could affect osteoblast function and survival, which are critical in the pathogenesis of SONFH. However, the evidence linking FCHSD2 directly to SONFH is limited, leading to a conclusion that while it may have a role in the disease context, the specific mechanisms remain unclear. Therefore, FCHSD2's potential as a biomarker for early detection of SONFH is moderate, as it may reflect underlying cellular processes affected by steroid treatment and inflammation.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 3",
+  "evidence_confidence": "low",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "FCHSD2 may influence osteoblast function and survival in the context of steroid-induced osteonecrosis of the femoral head (SONFH).",
+  "citations": [
+    "FCHSD2 (O94868). https://www.uniprot.org/uniprotkb/O94868",
+    "FCHSD2 (O94868-3). https://www.uniprot.org/uniprotkb/O94868-3",
+    "FCHSD2 (O94868-2). https://www.uniprot.org/uniprotkb/O94868-2",
+    "FCHSD2 \u2014 FCHSD2. https://platform.opentargets.org/target/ENSG00000137478",
+    "FCHSD2 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000137478/associations",
+    "FCHSD2 \u2194 type 2 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000137478/associations",
+    "FCHSD2 \u2194 cervical carcinoma. https://platform.opentargets.org/target/ENSG00000137478/associations",
+    "FCHSD2 \u2194 cholelithiasis. https://platform.opentargets.org/target/ENSG00000137478/associations",
+    "FCHSD2 \u2014 FCH and double SH3 domains 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MAPK1 \u2014 mitogen-activated protein kinase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MAPK3 \u2014 mitogen-activated protein kinase 3 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HSPA5 \u2014 heat shock protein family A (Hsp70) member 5 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CDC42 \u2014 cell division cycle 42 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Analysis of PANoptosis-related ceRNA network reveals lncRNA MIR17HG involved in osteogenic differentiation inhibition impaired by tumor necrosis factor-\u03b1 (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11327206/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9697,
+    "completion_tokens": 318,
+    "total_tokens": 10015,
+    "estimated_cost_usd": 0.001645
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O94868",
+          "title": "FCHSD2 (O94868)",
+          "url": "https://www.uniprot.org/uniprotkb/O94868",
+          "text": "Protein: F-BAR and double SH3 domains protein 2\nFunction: Adapter protein that plays a role in endocytosis via clathrin-coated pits. Contributes to the internalization of cell surface receptors, such as integrin ITGB1 and transferrin receptor (PubMed:29887380). Promotes endocytosis of EGFR in cancer cells, and thereby contributes to the down-regulation of EGFR signaling (PubMed:30249660). Recruited to clathrin-coated pits during a mid-to-late stage of assembly, where it is required for normal progress from U-shaped intermediate stage pits to terminal, omega-shaped pits (PubMed:29887380). Binds to membranes enriched in phosphatidylinositol 3,4-bisphosphate or phosphatidylinositol 3,4,5-trisphosphate (PubMed:29887380). When bound to membranes, promotes actin polymerization via its interaction with WAS and/or WASL which leads to the activation of the Arp2/3 complex. Does not promote actin polymerisation in the absence of membranes (PubMed:29887380)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::O94868-3",
+          "title": "FCHSD2 (O94868-3)",
+          "url": "https://www.uniprot.org/uniprotkb/O94868-3",
+          "text": "Protein: Isoform 3 of F-BAR and double SH3 domains protein 2",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::O94868-2",
+          "title": "FCHSD2 (O94868-2)",
+          "url": "https://www.uniprot.org/uniprotkb/O94868-2",
+          "text": "Protein: Isoform 2 of F-BAR and double SH3 domains protein 2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000137478::function",
+          "title": "FCHSD2 \u2014 FCHSD2",
+          "url": "https://platform.opentargets.org/target/ENSG00000137478",
+          "text": "Function: Adapter protein that plays a role in endocytosis via clathrin-coated pits. Contributes to the internalization of cell surface receptors, such as integrin ITGB1 and transferrin receptor (PubMed:29887380). Promotes endocytosis of EGFR in cancer cells, and thereby contributes to the down-regulation of EGFR signaling (PubMed:30249660). Recruited to clathrin-coated pits during a mid-to- late stage of assembly, where it is required for normal progress from U-shaped intermediate stage pits to terminal, omega-shaped pits (PubMed:29887380). Binds to membranes enriched in phosphatidylinositol 3,4-bisphosphate or phosphatidylinositol 3,4,5-trisphosphate (PubMed:29887380). When bound to membranes, promotes actin polymerization via its interaction with WAS and/or WASL which leads to the activation of the Arp2/3 complex. Does not promote actin polymerisation in the absence of membranes (PubMed:29887380). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000137478::EFO_0005772",
+          "title": "FCHSD2 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000137478/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.369",
+          "cos_sim_score": 0.36875319828583364,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000137478::MONDO_0005148",
+          "title": "FCHSD2 \u2194 type 2 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000137478/associations",
+          "text": "Disease: type 2 diabetes mellitus\nDescription: A type of diabetes mellitus that is characterized by insulin resistance or desensitization and increased blood glucose levels. This is a chronic disease that can develop gradually over the life of a patient and can be linked to both environmental factors and heredity.\nAssociation score: 0.325",
+          "cos_sim_score": 0.32470272699209823,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000137478::EFO_0001061",
+          "title": "FCHSD2 \u2194 cervical carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000137478/associations",
+          "text": "Disease: cervical carcinoma\nDescription: A carcinoma arising from either the exocervical squamous epithelium or the endocervical glandular epithelium. The major histologic types of cervical carcinoma are: squamous carcinoma, adenocarcinoma, adenosquamous carcinoma, adenoid cystic carcinoma and undifferentiated carcinoma.\nAssociation score: 0.300",
+          "cos_sim_score": 0.2999763979877811,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000137478::EFO_0004799",
+          "title": "FCHSD2 \u2194 cholelithiasis",
+          "url": "https://platform.opentargets.org/target/ENSG00000137478/associations",
+          "text": "Disease: cholelithiasis\nDescription: The presence of crystallized deposits forming in the gallbladder or biliary tree, primarily composed of cholesterol, bilirubin, and bile.\nAssociation score: 0.272",
+          "cos_sim_score": 0.27235829521490434,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "FCHSD2 \u2014 FCH and double SH3 domains 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: FCHSD2\nGene name: FCH and double SH3 domains 2\nAliases / synonyms: NWK, NWK1, SH3MD3\nOrganism: Homo sapiens\nGene summary: Enables phosphatidylinositol-3,4,5-trisphosphate binding activity and phosphatidylinositol-3,4-bisphosphate binding activity. Involved in clathrin-dependent endocytosis and positive regulation of Arp2/3 complex-mediated actin nucleation. Located in clathrin-coated pit and plasma membrane. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "FCHSD2",
+          "aliases": "NWK, NWK1, SH3MD3",
+          "gene_description": "FCH and double SH3 domains 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MAPK1 \u2014 mitogen-activated protein kinase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MAPK1\nGene name: mitogen-activated protein kinase 1\nAliases / synonyms: ERK, ERK-2, ERK2, ERT1, MAPK2, NS13, P42MAPK, PRKM1, PRKM2, p38, p40, p41, p41mapk, p42-MAPK\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the MAP kinase family. MAP kinases, also known as extracellular signal-regulated kinases (ERKs), act as an integration point for multiple biochemical signals, and are involved in a wide variety of cellular processes such as proliferation, differentiation, transcription regulation and development. The activation of this kinase requires its phosphorylation by upstream kinases. Upon activation, this kinase translocates to the nucleus of the stimulated cells, where it phosphorylates nuclear targets. One study also suggests that this protein acts as a transcriptional repressor independent of its kinase activity. The encoded protein has been identified as a moonlighting protein based on its ability to perform mechanistically distinct functions. Two alternatively spl...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MAPK1",
+          "aliases": "ERK, ERK-2, ERK2, ERT1, MAPK2, NS13, P42MAPK, PRKM1, PRKM2, p38, p40, p41, p41mapk, p42-MAPK",
+          "gene_description": "mitogen-activated protein kinase 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MAPK3 \u2014 mitogen-activated protein kinase 3",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MAPK3\nGene name: mitogen-activated protein kinase 3\nAliases / synonyms: ERK-1, ERK1, ERT2, HS44KDAP, HUMKER1A, P44ERK1, P44MAPK, PRKM3, p44-ERK1, p44-MAPK\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the MAP kinase family. MAP kinases, also known as extracellular signal-regulated kinases (ERKs), act in a signaling cascade that regulates various cellular processes such as proliferation, differentiation, and cell cycle progression in response to a variety of extracellular signals. This kinase is activated by upstream kinases, resulting in its translocation to the nucleus where it phosphorylates nuclear targets. Alternatively spliced transcript variants encoding different protein isoforms have been described. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MAPK3",
+          "aliases": "ERK-1, ERK1, ERT2, HS44KDAP, HUMKER1A, P44ERK1, P44MAPK, PRKM3, p44-ERK1, p44-MAPK",
+          "gene_description": "mitogen-activated protein kinase 3"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "HSPA5 \u2014 heat shock protein family A (Hsp70) member 5",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HSPA5\nGene name: heat shock protein family A (Hsp70) member 5\nAliases / synonyms: BIP, GRP78, HEL-S-89n\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the heat shock protein 70 (HSP70) family. This protein localizes to the lumen of the endoplasmic reticulum (ER) where it operates as a typical HSP70 chaperone involved in the folding and assembly of proteins in the ER and is a master regulator of ER homeostasis. During cellular stress, as during viral infection or tumorogenesis, this protein interacts with the transmembrane stress sensor proteins PERK (protein kinase R-like endoplasmic reticulum kinase), IRE1 (inositol-requiring kinase 1), and ATF6 (activating transcription factor 6) where it acts as a repressor of the unfolded protein response (UPR) and also plays a role in cellular apoptosis and senescence. Elevated expression and atypical translocation of this protein to the cell surface h...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HSPA5",
+          "aliases": "BIP, GRP78, HEL-S-89n",
+          "gene_description": "heat shock protein family A (Hsp70) member 5"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CDC42 \u2014 cell division cycle 42",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CDC42\nGene name: cell division cycle 42\nAliases / synonyms: CDC42Hs, G25K, TKS\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a small GTPase of the Rho-subfamily, which regulates signaling pathways that control diverse cellular functions including cell morphology, migration, endocytosis and cell cycle progression. This protein is highly similar to Saccharomyces cerevisiae Cdc 42, and is able to complement the yeast cdc42-1 mutant. The product of oncogene Dbl was reported to specifically catalyze the dissociation of GDP from this protein. This protein could regulate actin polymerization through its direct binding to Neural Wiskott-Aldrich syndrome protein (N-WASP), which subsequently activates Arp2/3 complex. Alternative splicing of this gene results in multiple transcript variants. Pseudogenes of this gene have been identified on chromosomes 3, 4, 5, 7, 8 and 20. [provided by R...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CDC42",
+          "aliases": "CDC42Hs, G25K, TKS",
+          "gene_description": "cell division cycle 42"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::11327206",
+          "title": "Analysis of PANoptosis-related ceRNA network reveals lncRNA MIR17HG involved in osteogenic differentiation inhibition impaired by tumor necrosis factor-\u03b1",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11327206/",
+          "text": "Introduction\nInflammatory cytokines play pivotal roles in the pathogenesis of bone infections. Tumor Necrosis Factor-alpha (TNF-\u03b1) is a key pro-inflammatory cytokine and a catabolic factor in the inflammatory response to disease [1, 2]. Persistent inflammation significantly affects bone regeneration as TNF-\u03b1 binds to different receptors and initiates signal transduction pathways [3, 4], leading to various cellular responses including cell survival, differentiation, and proliferation. Once the signal transduction pathways are elucidated, strategies can be adopted to reduce the inhibitory effects of inflammation on tissue regeneration [5, 6]. Among the various signal transducer and activator of transcription (STATs), STAT3 is particularly important in mediating inflammation and bone formation [7\u20139]. Our previous study showed that under TNF-\u03b1 stimulation, Elongator acetyltransferase complex subunit 2 (ELP2) inhibits osteogenic differentiation through STAT3 activation [10].\nIn an inflammatory environment, the differentiation capacity of osteoblasts is inhibited, and osteoblast death is exacerbated [11, 12]. Osteoblasts often undergo apoptosis in response to inflammation, but other forms of programmed cell death (PCD) mechanisms such as pyroptosis and necroptosis also play crucial roles [13, 14]. Although each of these three PCD pathways has been previously regarded as unique based on the identification of important promoters, effectors, and executors, there is mounting evidence that they interact extensively [15, 16]. Based on these findings, we developed the concept of panoptosis. It is an inflammatory PCD route controlled by the PANoptosome complex, which possesses important characteristics of pyroptosis, apoptosis, and/or necroptosis. These characteristics could not be explained by any of the PCD pathways alone [17\u201319].\nThe miR-17-92 cluster, encoded by the host gene MIR17HG, is involved in various biological activities, including tumor development, neurodevelopment, and immune regulation [20\u201322]. This cluster has a regulatory role in inflammation [23], with studies showing that inhibition of MIR17HG can attenuate neuronal apoptosis and inflammatory responses in Parkinson\u2019s disease (PD) mice [24]. Recent research has linked MIR17HG to osteoarthritis [22], suggesting its involvement in other bone diseases such as osteomyelitis and osteoarthritis, where inflammation is a key factor.\nTo identify new diagnostic and therapeutic approaches for bone infections, this study aims to investigate the relationship between MIR17HG and molecular processes involved in inflammation during bone infections. Using cell sequencing and the Gene Expression Omnibus (GEO) database, we identified distinct Long non-coding RNA (lncRNA) linked to osteogenic differentiation and PANoptosis under TNF-\u03b1 stimulation. We constructed lncRNA-miRNA-mRNA networks and performed bioinformatics analyses to explore their functions further. Furthermore, we investigated the correlation between the expression of lncRNA MIR17HG and mRNAs associated with PANoptosis in osteoblasts in response to TNF-\u03b1 stimulation. This research introduces a novel framework to understand the mechanisms responsible for PANoptosis onset in osteoblasts triggered by TNF-\u03b1 stimulation.\nMethods and materials\nReagents and antibodies\nMinimum essential medium \u03b1 (MEM\u2010\u03b1) and fetal bovine serum (FBS) obtained from Bio-channel (Nanjing, China). Dexamethason, \u03b2\u2010glycerophosphate and ascorbic acid were purchased from Sigma Chemicals (St. Louis, MO, USA). Trypsin was obtained from Gibco. TRIzol\u2122 reagents were purchased from Thermo Fisher Scientific (Waltham, MA, USA). Recombinant Mouse TNF alpha(Cat. No.: CF09), NovoStart\u00aeSYBR qPCR SuperMix Plus and NovoScript\u00aePlus All-in-one 1st Strand cDNA Synthesis SuperMix (gDNA Purge) were obtained from Novorprotein (Suzhou, China). Primary and secondary antibody for Western blot (WB) experience, including STAT3 (D3Z2G), P-Phospho-Stat3(Tyr705) IgG(L27A9), and GAPDH (14C10) antibodies were purchased from Cell Signaling Technology (Boston, MA, USA).\nRNA sequencing analysis\nCell culture",
+          "cos_sim_score": 0.3745598793029785,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11327206",
+          "title": "Analysis of PANoptosis-related ceRNA network reveals lncRNA MIR17HG involved in osteogenic differentiation inhibition impaired by tumor necrosis factor-\u03b1",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11327206/",
+          "text": "Fig.\u00a08\nInhibition of osteoblast differentiation under TNF-\u03b1 stimulation and increased expression of inflammation-related genes. Osteogenic differentiation-related genes (A) and pro-inflammation-related genes (B)\nDiscussion\nOur comprehensive analysis, combining bioinformatics, bibliometric data, and experimental results, revealed a significant association between MIR17HG and osteoblast differentiation and death.\u200b Functional enrichment analysis indicated that MIR17HG-related mRNAs are involved in apoptosis and necroptosis, with key signaling pathways regulating cell death and inflammation. Under TNF-\u03b1 stimulation, both MIR17HG and PANoptosis-related genes showed increased expression, accompanied by STAT3 phosphorylation. These findings suggest that MIR17HG may promote apoptosis in osteoblasts during osteogenic differentiation when stimulated by TNF-a.\nPANoptosis, a newly identified type of PCD that includes apoptosis, pyroptosis, and necroptosis, appears to be enhanced in osteoblasts under inflammatory conditions. However, the interaction between PANoptosis and osteoblast differentiation in inflammatory settings remain underexplored. There is substantial evidence that abnormal lncRNA expression affects osteoblast proliferation, differentiation, and death [30\u201332], but its role in PANoptosis is unclear. Our objective was to establish a connection between PANoptosis, osteogenic differentiation, inflammation, and lncRNAs in order to understand the regulatory roles of PANoptosis-related and inflammation-related lncRNAs in the process of osteogenic differentiation.\nBy integrating cell sequencing data with publicly available transcriptome datasets, we identified MIR17HG as an lncRNA that correlates with PANoptosis-related proteins in osteoblasts under inflammatory conditions. Our ceRNA network and subsequent GO/KEGG analyses suggested that MIR17HG is associated with osteoblast differentiation and death, implicating pathways such as PI3K-Akt, MAPK, JAK-STAT, and TNF. Notably, MIR17HG and the miR-17-92 cluster promoter contain potential STAT3 binding sites [33\u201335]. The miR-17-92 cluster regulates the JAK2-STAT3 signaling pathway, with miR-18a and miR-19a promoting STAT3 activity and phosphorylation, respectively [36\u201338]. The JAK2/STAT3 pathway mediates proliferation and apoptosis in various cells [39, 40] and negatively regulates osteoblast differentiation [41, 42]. This evidence indicates a correlation between MIR17HG and PANoptosome occurrence in osteoblasts, suggesting that MIR17HG may regulate STAT3 phosphorylation and thus PANoptosis during osteogenic differentiation.\nPANoptosis is a newly defined form of cell death relevant to immune response-related diseases. It is regulated by the multimeric protein complex PANoptosome [43], which influences pyroptosis, apoptosis, and necroptosis. Each of these processes has been studied separately by many researchers. Studies on PANoptosis suggest that CASP1, which drives pyroptosis, CASP8, which drives apoptosis, and RIPK1 and RIPK3, which drive necroptosis, can form a PANoptosome with other components [19]. This is consistent with our bibliometric data, where keyword visualization analyses showed high frequencies of CASP1, CASP8, RIPK1, and RIPK3 (Table\u00a03). Our bibliometric analysis also shows that the NLRP3 inflammasome is mentioned in the context of pyroptosis, apoptosis, and necroptosis, acting as a sensor to regulate these cell death modalities. Pyroptosis is mediated by gasdermin family members via inflammasome-mediated caspase-1 cleavage of gasdermin D (GSDMD), caspase-11/4/5- or caspase-8-mediated cleavage of GSDMD, or caspase-3-mediated cleavage of gasdermin E (GSDME) [44\u201347]. Apoptosis is induced by caspase-3 and -7 following\\activation of upstream initiator caspases caspase-8/10 or -9 [48, 49]. Necroptosis is induced by RIPK3-mediated MLKL oligomerization [50\u201352]. Our experimental data show that the expression of NLRP3 and genes associated with these cell death types increased in response to TNF-\u03b1 stimulation. Therefore, we hypothesized that the NLRP3 inflammasome serves as an upstream signal regulating the onset of osteoblast apoptosis.",
+          "cos_sim_score": 0.3420502841472626,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11327206",
+          "title": "Analysis of PANoptosis-related ceRNA network reveals lncRNA MIR17HG involved in osteogenic differentiation inhibition impaired by tumor necrosis factor-\u03b1",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11327206/",
+          "text": "Statistical analysis\nData are represented as the mean\u2009\u00b1\u2009standard deviation. Group differences were examined using Student\u2019s t-tests. Pearson\u2019s correlation coefficient was used to evaluate the relationships between variables. Data analysis was performed using R (version 4.3.1), with P\u2009<\u20090.05 considered statistically significant.\nResults\nIdentification of inflammation-related and PANoptosis-related lncRNA in osteogenic differentiation\nFigure\u00a01 shows our research workflow diagram. We built an osteoblast inflammatory model for high-throughput sequencing, allowing us to obtain expression matrices. Through this sequencing, we identified 3721 differentially expressed genes (|Log2 FC |\u2265\u20090.75, P\u2009<\u20090.0001). We retrieved transcriptome profiles for normal osteogenic differentiation from the GEO database (GSE30393). We identified differentially expressed genes in GSE30393 (|Log2 FC|\u2265\u20090.5, P\u2009<\u20090.05). From literature review, we identified 11 genes associated with PANoptosis: CASP1, CASP3, CASP7, CASP8, CASP9, Gasdermin E(GSDME), Gasdermin D(GSDMD), MLKL, RIPK1, RIPK3, and FADD[25]. We conducted single-gene correlation analysis for these genes using |R|>\u20090.7 and P\u2009<\u20090.05 to identify PANoptosis-associated lncRNAs, based on data from high-throughput sequencing of inflammation models. MIR17HG and 4930447F24Rik were present in all three groups (Fig.\u00a02A) and correlated with most PAN-associated genes. Heat maps showed the expression levels of MIR17HG and 4930447F24Rik in inflammation and osteogenic differentiation samples (Fig.\u00a02B). Expression of MIR17HG and 4930447F24Rik was higher in the inflammation model than in normal osteogenically differentiated cells. The correlation heatmap showed that MIR17HG and 4930447F24Rik were associated with most panoptosis-related mRNAs (Fig.\u00a02C). In correlation analyses, MIR17HG was associated with at least nine mRNAs, whereas 4930447F24Rik was associated with five mRNAs (Table\u00a01).Fig.\u00a01Workflow diagramFig.\u00a02Identification of osteogenesis and PANoptosis-related lncRNAs. A Venn diagram identifying TNF- \u03b1 stimulation related genes, PANoptosis-related lncRNAs and differentially expressed genes for osteogenesis. B Heatmap showing differential expression of 2 candidate lncRNAs (MIR17HG and 4930447F24Rik) and PANoptosis key genes in TNF- \u03b1 stimulation related and osteogenesis. C Correlation heatmap showing the correlation between 2 candidate lncRNAs (MIR17HG and 4930447F24Rik) and PANoptosis-associated mRNAs\nFig.\u00a01\nWorkflow diagram\nFig.\u00a02\nIdentification of osteogenesis and PANoptosis-related lncRNAs. A Venn diagram identifying TNF- \u03b1 stimulation related genes, PANoptosis-related lncRNAs and differentially expressed genes for osteogenesis. B Heatmap showing differential expression of 2 candidate lncRNAs (MIR17HG and 4930447F24Rik) and PANoptosis key genes in TNF- \u03b1 stimulation related and osteogenesis. C Correlation heatmap showing the correlation between 2 candidate lncRNAs (MIR17HG and 4930447F24Rik) and PANoptosis-associated mRNAs\nThe lncRNA-miRNA-mRNA network construction",
+          "cos_sim_score": 0.27104753255844116,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11327206",
+          "title": "Analysis of PANoptosis-related ceRNA network reveals lncRNA MIR17HG involved in osteogenic differentiation inhibition impaired by tumor necrosis factor-\u03b1",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11327206/",
+          "text": "Table\u00a03The occurrences and link strength of PANoptosis-related proteins in keyword visualization analysisLabelTotal link strengthOccurrencesasc423caspase-114513caspase-3564caspase-7564caspase-818819caspases7911gsdmd28834nlrp3 inflammasome27332ripk1757ripk319519zbp1574mlkl14816fadd244\nTable\u00a03\nThe occurrences and link strength of PANoptosis-related proteins in keyword visualization analysis\nBioinformatics evidence alone is insufficient to prove this hypothesis, therefore, we detected the expression of genes related to PANoptosis and the osteogenic differentiation-related gene ELP2 using RT-PCR and WB experiments. The results showed that MIR17HG expression was positively correlated with STAT3, ELP2, and PANoptosis-related genes, indicating that MIR17HG may directly or indirectly affect osteoblast differentiation and PANoptosis. We hypothesized that MIR17HG regulates PANoptosis during osteogenic differentiation. Upon TNF-\u03b1 stimulation, MIR17HG expression increases, promoting miRNA transcription that activates and phosphorylates STAT3. MIR17HG may influence the onset of PANoptosis in osteoblasts during osteogenic differentiation by regulating STAT3 expression (Fig.\u00a09). Furthermore, our study provides new insights into the mechanism of osteoblast apoptosis and innovative ideas for treating inflammation in bone infections and osteomyelitis. In summary, our study offers directions for further exploration of the underlying mechanisms of inflammation in bone infections.Fig.\u00a09Under TNF-\u03b1 stimulation, which activated STAT3 activity and phosphorylation. STAT3 activation promoted MIR17HG expression and transcription into miR-17-92 clusters, while microRNAs produced by processing of miR-17-92 clusters enhanced STAT3 transcriptional activity and promoted STAT3 phosphorylation through different pathways. phosphorylation. Phosphorylated STAT3 regulation promotes NLRP3 expression and the formation of NLRP3 inflammasome vesicles, thus participating in PANoptosis\nFig.\u00a09\nUnder TNF-\u03b1 stimulation, which activated STAT3 activity and phosphorylation. STAT3 activation promoted MIR17HG expression and transcription into miR-17-92 clusters, while microRNAs produced by processing of miR-17-92 clusters enhanced STAT3 transcriptional activity and promoted STAT3 phosphorylation through different pathways. phosphorylation. Phosphorylated STAT3 regulation promotes NLRP3 expression and the formation of NLRP3 inflammasome vesicles, thus participating in PANoptosis\nHowever, our study has limitations. First, while we performed the construction and high-throughput sequencing of the inflammatory model, the sequencing data for normal osteogenic differentiated cells were obtained from the web-based GEO database. Second, we studied only one cell line, MC3T3-E1, which requires further validation in other cell lines. Third, our study only investigated the correlation between MIR17HG and the inhibition of osteogenic differentiation and PANoptosis in osteoblasts without investigating the specific mechanism of action; these mechanisms can be further developed and refined in future studies.\nConclusion\nIn conclusion, our comprehensive bioinformatics, bibliometric, and several experimental validation studies have shown that that lncRNA MIR17HG is interrelated with PANoptosis and acts a pivotal part in osteoblast apoptosis under TNF- \u03b1 stimulation by modulating inflammatory response pathways. These finding positions MIR17HG as a promising candidate for identifying inflammatory biomarkers and developing therapeutic targets in osteoarthritis, bone infections, and other bone-related inflammatory diseases. These results highlight the potential of MIR17HG in advancing our comprehension of the molecular processes involved in osteoblast differentiation and apoptosis in inflammatory environments. Future studies should focus on validating these findings in other cell lines and in vivo models to further elucidate the specific mechanism of MIR17HG\u2019s regulatory role. Additionally, exploring the therapeutic potential of targeting MIR17HG in clinical settings could pave the way for novel treatments for inflammatory bone diseases.\nSupplementary Information\nBelow is the link to the electronic supplementary material.Supplementary file1 (TIF 6889 KB)Supplementary file2 (DOCX 15 KB)Supplementary file3 (XLSX 506 KB)Supplementary file4 (XLSX 30 KB)\nSupplementary file1 (TIF 6889 KB)\nSupplementary file2 (DOCX 15 KB)\nSupplementary file3 (XLSX 506 KB)\nSupplementary file4 (XLSX 30 KB)",
+          "cos_sim_score": 0.2560754418373108,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11327206",
+          "title": "Analysis of PANoptosis-related ceRNA network reveals lncRNA MIR17HG involved in osteogenic differentiation inhibition impaired by tumor necrosis factor-\u03b1",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11327206/",
+          "text": "RNA sequencing analysis\nCell culture\nThe murine pre-osteoblast MC3T3-E1 clonal cell line was purchased from iCell Bioscience (Shanghai, China). Cells were cultured in MEM -\u03b1 with 10% FBS in a humidified environment with 5% CO2 at 37\u00a0\u2103. The medium was supplemented with penicillin, glutamine, streptomycin, and sodium pyruvate. For osteogenic differentiation, 10\u00a0mM glycerophosphate and 50\u00a0\u03bcg/ml ascorbic acid were added at the end of the logarithmic phase.\nRNA isolation and sequencing\nPrior to RNA isolation, MC3T3-E1 cells were cultured in six-well plates for 7\u00a0days as described. They were then divided into two groups of six independently cultured samples each: one treated with TNF-\u03b1 (5\u00a0ng/ml) for 24\u00a0h and the other cultured without treatment for the same duration. RNA was isolated by scraping the cells and using Trizol reagent (ThermoFisher, Shanghai, China). Evaluation of RNA samples included: (1) agarose gel electrophoresis to analyze RNA degradation and contamination; (2) Nanodrop to determine RNA purity (OD260/280 ratio); (3) Qubit for precise RNA concentration quantification; (4) Agilent 2100 for RNA integrity assessment (Novogene, Beijing, China). The RNA samples were then sent to Beijing Novogene Technology Co., LTD for sequencing analysis.\nData collection\nBioinformatics data collection\nData on the differential expression of osteogenic differentiation markers in osteoblasts under inflammatory conditions were obtained using an MC3T3-E1 inflammation model. This model included samples from the inflammation group (TNF-\u03b1\u2009=\u20095\u00a0ng/ml) and the osteogenic differentiation group (TNF-\u03b1\u2009=\u20090\u00a0ng/ml). Genes associated with normal osteogenic differentiation were obtained from the GSE30393 transcriptomic dataset (Genomic characterization of osteoblastic differentiation of MC-3T3E1 cells) in the GEO database https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30393). Differentially expressed genes were identified for both the inflammation model (criterion: |Log2 Fold Change (FC)|\u2265\u20090.75, P\u2009<\u20090.0001) and the GSE30393 dataset (criterion: |Log2 FC|\u2265\u20090.5, P\u2009<\u20090.05) using the limma package (version 3.52.4) in R. Eleven PANoptosis-associated genes, mainly PANoptosome components[25], were extracted based on previous studies. PANoptosis-associated lncRNAs were identified using a Pearson correlation coefficient of |R|>\u20090.7 and significance P\u2009<\u20090.05.\nBibliometric approach\nBibliometric analysis is a convenient and accurate tool for discovering hot spots and trends in specific research areas [26, 27]. We selected Web of Science (https://www.webofscience.com) as the target database and employed three search strategies: (1) TOPIC (Pyropotosis) AND TOPIC (Apoptosis) AND TOPIC (Necropotosis); (2) TOPIC (PANoptosis); (3) TOPIC (PANoptosome). We conducted keyword visualization analysis on the literature data collected from the three search strategies and specifically analyzed the literature data related to PANoptosomes using bibliometric software tools such as EXCEL 2023 and VOSviewer 1.6.19. VOSviewer 1.6.19 investigates trends in specific research directions and noteworthy scientific publications, and we used it to create a keyword co-occurrence map and then cluster all keywords. We used Microsoft Office Excel 2023 to manage the data and investigate publication trends.\nMethods of bioinformatics analysis\nScreening for PANoptosis and inflammation-related lncRNA in osteomyelitis",
+          "cos_sim_score": 0.22904208302497864,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

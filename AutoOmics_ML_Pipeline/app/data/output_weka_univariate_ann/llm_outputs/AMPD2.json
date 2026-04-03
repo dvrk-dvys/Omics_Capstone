@@ -1,0 +1,233 @@
+{
+  "rf_rank": 25,
+  "probe_id": "11724224_a_at",
+  "gene_symbol": "AMPD2",
+  "score": 0.62,
+  "rf_n_nodes": 10,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 1.035,
+  "log_fc": 1.035,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11724224_a_at",
+  "max_score": 0.62,
+  "mean_abs_fold_change": 1.035,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:32:26",
+  "interpretation": "AMPD2 encodes AMP deaminase 2, an enzyme crucial for purine metabolism, converting adenosine monophosphate (AMP) to inosine monophosphate (IMP). This process is vital for energy metabolism and cellular function, particularly in tissues with high energy demands, such as bone. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), altered energy metabolism may contribute to the pathophysiology of bone necrosis following steroid treatment. However, the evidence linking AMPD2 directly to SONFH is limited, primarily suggesting a role in general metabolic processes rather than specific disease mechanisms. Therefore, while AMPD2 may have biological relevance, its potential as a biomarker for early detection of SONFH remains weak due to insufficient direct evidence connecting it to the disease.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "AMPD2 is involved in energy metabolism, which may be disrupted in Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "AMPD2 (Q01433). https://www.uniprot.org/uniprotkb/Q01433",
+    "AMPD2 (Q01433-2). https://www.uniprot.org/uniprotkb/Q01433-2",
+    "AMPD2 (Q01433-4). https://www.uniprot.org/uniprotkb/Q01433-4",
+    "AMPD2 \u2014 AMPD2. https://platform.opentargets.org/target/ENSG00000116337",
+    "AMPD2 \u2194 pontocerebellar hypoplasia type 9. https://platform.opentargets.org/target/ENSG00000116337/associations",
+    "AMPD2 \u2194 pontocerebellar hypoplasia. https://platform.opentargets.org/target/ENSG00000116337/associations",
+    "AMPD2 \u2194 hereditary spastic paraplegia 63. https://platform.opentargets.org/target/ENSG00000116337/associations",
+    "AMPD2 \u2194 hereditary spastic paraplegia. https://platform.opentargets.org/target/ENSG00000116337/associations",
+    "AMPD2 \u2014 adenosine monophosphate deaminase 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "SNCA \u2014 synuclein alpha (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CD44 \u2014 CD44 molecule (IN blood group) (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "PRNP \u2014 prion protein (Kanno blood group) (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "PRKN \u2014 parkin RBR E3 ubiquitin protein ligase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Integration of Transcriptome and Exome Genotyping Identifies Significant Variants with Autism Spectrum Disorder (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8880056/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8597,
+    "completion_tokens": 301,
+    "total_tokens": 8898,
+    "estimated_cost_usd": 0.00147
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q01433",
+          "title": "AMPD2 (Q01433)",
+          "url": "https://www.uniprot.org/uniprotkb/Q01433",
+          "text": "Protein: AMP deaminase 2\nFunction: AMP deaminase plays a critical role in energy metabolism. Catalyzes the deamination of AMP to IMP and plays an important role in the purine nucleotide cycle",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q01433-2",
+          "title": "AMPD2 (Q01433-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q01433-2",
+          "text": "Protein: Isoform Ex1A-2-3 of AMP deaminase 2",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q01433-4",
+          "title": "AMPD2 (Q01433-4)",
+          "url": "https://www.uniprot.org/uniprotkb/Q01433-4",
+          "text": "Protein: Isoform Ex1B-3 of AMP deaminase 2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000116337::function",
+          "title": "AMPD2 \u2014 AMPD2",
+          "url": "https://platform.opentargets.org/target/ENSG00000116337",
+          "text": "Function: AMP deaminase plays a critical role in energy metabolism. Catalyzes the deamination of AMP to IMP and plays an important role in the purine nucleotide cycle. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000116337::MONDO_0014351",
+          "title": "AMPD2 \u2194 pontocerebellar hypoplasia type 9",
+          "url": "https://platform.opentargets.org/target/ENSG00000116337/associations",
+          "text": "Disease: pontocerebellar hypoplasia type 9\nDescription: Any non-syndromic pontocerebellar hypoplasia in which the cause of the disease is a mutation in the AMPD2 gene.\nAssociation score: 0.815",
+          "cos_sim_score": 0.8149450703818453,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000116337::MONDO_0020135",
+          "title": "AMPD2 \u2194 pontocerebellar hypoplasia",
+          "url": "https://platform.opentargets.org/target/ENSG00000116337/associations",
+          "text": "Disease: pontocerebellar hypoplasia\nDescription: Pontocerebellar hypoplasias (PCH) are a rare heterogeneous group of diseases characterized by hypoplasia and atrophy and/or early neurodegeneration of the cerebellum and pons. Eight subtypes named type 1-8 have been described, generally inherited in an autosomal recessive pattern.\nAssociation score: 0.664",
+          "cos_sim_score": 0.6641914624573192,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000116337::MONDO_0014305",
+          "title": "AMPD2 \u2194 hereditary spastic paraplegia 63",
+          "url": "https://platform.opentargets.org/target/ENSG00000116337/associations",
+          "text": "Disease: hereditary spastic paraplegia 63\nDescription: An extremely rare and complex form of hereditary spastic paraplegia characterized by an onset in infancy of spastic paraplegia (presenting with delayed walking and a scissors gait) associated with short stature, and normal cognition. Periventricular deep white matter changes in the corpus callosum are noted on brain imaging. SPG63 is caused by a homozygous mutation in the AMPD2 gene (1p13.3) encoding AMP deaminase 2.\nAssociation score: 0.645",
+          "cos_sim_score": 0.6451549722458255,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000116337::MONDO_0019064",
+          "title": "AMPD2 \u2194 hereditary spastic paraplegia",
+          "url": "https://platform.opentargets.org/target/ENSG00000116337/associations",
+          "text": "Disease: hereditary spastic paraplegia\nDescription: Hereditary spastic paraplegias (HSP) comprise a genetically and clinically heterogeneous group of neurodegenerative disorders characterized by progressive spasticity and hyperreflexia of the lower limbs.\nAssociation score: 0.599",
+          "cos_sim_score": 0.5990246264118126,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "AMPD2 \u2014 adenosine monophosphate deaminase 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AMPD2\nGene name: adenosine monophosphate deaminase 2\nAliases / synonyms: AMPD, PCH9, SPG63\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is important in purine metabolism by converting AMP to IMP. The encoded protein, which acts as a homotetramer, is one of three AMP deaminases found in mammals. Several transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Apr 2012]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AMPD2",
+          "aliases": "AMPD, PCH9, SPG63",
+          "gene_description": "adenosine monophosphate deaminase 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "SNCA \u2014 synuclein alpha",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SNCA\nGene name: synuclein alpha\nAliases / synonyms: NACP, PARK1, PARK4, PD1\nOrganism: Homo sapiens\nGene summary: Alpha-synuclein is a member of the synuclein family, which also includes beta- and gamma-synuclein. Synucleins are abundantly expressed in the brain and alpha- and beta-synuclein inhibit phospholipase D2 selectively. SNCA may serve to integrate presynaptic signaling and membrane trafficking. Defects in SNCA have been implicated in the pathogenesis of Parkinson disease. SNCA peptides are a major component of amyloid plaques in the brains of patients with Alzheimer's disease. Alternatively spliced transcripts encoding different isoforms have been identified for this gene. [provided by RefSeq, Feb 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SNCA",
+          "aliases": "NACP, PARK1, PARK4, PD1",
+          "gene_description": "synuclein alpha"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CD44 \u2014 CD44 molecule (IN blood group)",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CD44\nGene name: CD44 molecule (IN blood group)\nAliases / synonyms: CDW44, CSPG8, ECM-III, ECMR-III, H-CAM, HCELL, HUTCH-1, HUTCH-I, Hermes-1, LHR, MC56, MDU2, MDU3, MIC4, Pgp1\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a cell-surface glycoprotein involved in cell-cell interactions, cell adhesion and migration. It is a receptor for hyaluronic acid (HA) and can also interact with other ligands, such as osteopontin, collagens, and matrix metalloproteinases (MMPs). This protein participates in a wide variety of cellular functions including lymphocyte activation, recirculation and homing, hematopoiesis, and tumor metastasis. Transcripts for this gene undergo complex alternative splicing that results in many functionally distinct isoforms, however, the full length nature of some of these variants has not been determined. Alternative splicing is the basis for the structural and functional diversity of this protein, and may be related to tumor metastasis. [provided by RefSeq, ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CD44",
+          "aliases": "CDW44, CSPG8, ECM-III, ECMR-III, H-CAM, HCELL, HUTCH-1, HUTCH-I, Hermes-1, LHR, MC56, MDU2, MDU3, MIC4, Pgp1",
+          "gene_description": "CD44 molecule (IN blood group)"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "PRNP \u2014 prion protein (Kanno blood group)",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PRNP\nGene name: prion protein (Kanno blood group)\nAliases / synonyms: ASCR, AltPrP, CD230, CJD, GSS, KURU, PRIP, PrP, PrP27-30, PrP33-35C, PrPc, p27-30\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a membrane glycosylphosphatidylinositol-anchored glycoprotein that tends to aggregate into rod-like structures. The encoded protein contains a highly unstable region of five tandem octapeptide repeats. This gene is found on chromosome 20, approximately 20 kbp upstream of a gene which encodes a biochemically and structurally similar protein to the one encoded by this gene. Mutations in the repeat region as well as elsewhere in this gene have been associated with Creutzfeldt-Jakob disease, fatal familial insomnia, Gerstmann-Straussler disease, Huntington disease-like 1, and kuru. An overlapping open reading frame has been found for this gene that encodes a smaller, structurally unrelated protein, AltPrp. Alternative splicing results in multiple transcript ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PRNP",
+          "aliases": "ASCR, AltPrP, CD230, CJD, GSS, KURU, PRIP, PrP, PrP27-30, PrP33-35C, PrPc, p27-30",
+          "gene_description": "prion protein (Kanno blood group)"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "PRKN \u2014 parkin RBR E3 ubiquitin protein ligase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PRKN\nGene name: parkin RBR E3 ubiquitin protein ligase\nAliases / synonyms: AR-JP, LPRS2, PARK2, PDJ\nOrganism: Homo sapiens\nGene summary: The precise function of this gene is unknown; however, the encoded protein is a component of a multiprotein E3 ubiquitin ligase complex that mediates the targeting of substrate proteins for proteasomal degradation. Mutations in this gene are known to cause Parkinson disease and autosomal recessive juvenile Parkinson disease. Alternative splicing of this gene produces multiple transcript variants encoding distinct isoforms. Additional splice variants of this gene have been described but currently lack transcript support. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PRKN",
+          "aliases": "AR-JP, LPRS2, PARK2, PDJ",
+          "gene_description": "parkin RBR E3 ubiquitin protein ligase"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::8880056",
+          "title": "Integration of Transcriptome and Exome Genotyping Identifies Significant Variants with Autism Spectrum Disorder",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8880056/",
+          "text": "SNP rs3130780 was observed in this study, which is located close to the downregulated discoidin domain receptor 1 (DDR1) gene. DDR1 was reported earlier as a susceptibility gene for schizophrenia [46,47] and self-consciousness [48]. DDR1-mediated signaling systems were observed in Drosophila in the mushroom body encoding learning and memory [49,50]. DDR1 plays an important role in myelination and neuropsychiatric diseases [51]. DDR1 expression increases in parallel with neural myelination throughout mouse brain development, according to previous research [52]. The exonic variation of rs1940475 (NP_002415.1:p.Lys87Glu) in the MMP8 gene was found to be a significant coding variant in the genotype association study, and it impacts the expression level of the MMP8 gene. Pathway analysis and genome-wide association in major depressive disorder revealed a significant association with the MMP8 gene [53]. rs1940475 in the MMP8 gene was reported for its association with osteoarthritis [54], femoral head osteonecrosis [55], and bladder cancer in non-smokers [56]. On the other hand, a recent meta-analysis of the K87E (rs1940475) variant showed that this variant is not significantly associated with cancer susceptibility [57]. Overall, the literature on the ITGB3BP, DDR1, and MMP8 genes indicates that the observation regarding the integration of transcriptome and exome genotyping in autism is a notable addition for the understanding of the genetics of autism. Defects in the SH3 and multiple ankyrin repeat domains 3 (Shank3) protein cause numerous synaptopathies, including autism [58,59,60]; upregulation of the RPL36A was reported in the striatal synaptosome of Shank3-overexpressing transgenic mice [58]. This is in line with the present observation on the upregulation of RPL36A in autistic patients and indicates that the upregulation of RPL36A can influence the development of autism through the dysfunction of SHANK3-associated synaptopathies [58,61]. The small number of subjects enrolled in this study was a notable limitation. However, the autistic patients were selected from 1800 patients visiting the neurology clinic. Currently, research guiding medication choice and dosing in patients with ASD is limited. Autism symptoms are usually managed with a variety of medications such as psychotropic (antipsychotics and antidepressants) drugs to manage behaviors such as mood symptoms, resulting in polypharmacy- and drug-related adverse effects. Knowledge of the clinical and genetic predictors of drug response variability and the outcomes of personalized medicine can advance the clinical care of young patients with ASD. Pharmacogenomics is a method that can be used for medication choice that affects a person\u2019s genetic information and clinical presentation to make informed choices, but no studies have specifically examined the outcomes of PGX for patients with ASD. We believe that we can use the result of our study to help in the diagnosis and treatment of patients with autism. Further studies are needed to provide further information on the genetic risk in relation to treatment effectiveness. Analysis of reactive oxygen species (ROS) generation and stress enzymes in the cases and controls may strengthen the observed findings.\n4. Materials and Methods\n4.1. Sample Collection\nThis study was conducted in accordance with the Declaration of Helsinki and was approved by the Institutional Review Board (IRB) of Imam Abdulrahman Bin Faisal University. Cheek swab samples were collected for DNA and blood samples for RNA from children and adolescents up to 18 years of age from the Eastern Province of Saudi Arabia upon receiving signed informed consent from a parent and/or legal guardian for participation in the study. A total of 202 subjects of Arab ancestry (132 controls and 70 cases) provided cheek swab samples for genomic DNA extraction for exome genotyping (Table 6). A total of 1800 patients were evaluated in a pediatric neurology clinic and screened for autism from January 2018 to December 2018. Of these, 70 patients (47 males and 23 females) with an average age of 7.56 \u00b1 3.68 years fulfilled the DSM-5 criteria for autism [9]. The clinical evaluation of the patients revealed an overall positive family history of 8.57% (n = 6). Patients with comorbidities were excluded from this study. Healthy subjects without familial autism were selected as controls.\n4.2. DNA Extraction and Exome Array",
+          "cos_sim_score": 0.09160551428794861,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8880056",
+          "title": "Integration of Transcriptome and Exome Genotyping Identifies Significant Variants with Autism Spectrum Disorder",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8880056/",
+          "text": "Some studies have proposed unusual sensory processing, particularly olfactory processing, in a number of neurodevelopmental disorders, including autism [19,20]. Berko et al. [21] showed that the OR2L13 G-protein, joined by the olfactory receptor, which is involved in resetting the neuronal response to smells, is particularly prevalent in autism in terms of DNA methylation and expression, suggesting a possible rationale for olfactory dysfunction in ASD. The olfactory receptor genes OR12D2 and OR5V1, which are involved in the olfactory signaling pathway, G alpha (s) signaling events, GPCR downstream signaling, and GPCR signaling and signal transduction together regulate the overall olfactory growth, behavior, and impairment associated with autism (Figure 4) [22]. A functional analysis of the genes is presented in Table S2. The significant genes in this study included integrin subunit alpha 11 (ITGA11), which is associated with attention deficit hyperactivity disorder and attention deficit disorder with hyperactivity; MHC class I polypeptide-related sequence A (MICA), associated with symptoms of inflammatory bowel disease, chronic ulcerative colitis, and Crohn\u2019s disease; bromodomain-containing 2 (BRD2), which has been linked to Alzheimer\u2019s disease and myoclonic epilepsy; cell division cycle 14C pseudogene (CDC14C), which is associated with Parkinson\u2019s disease and sleep; methylenetetrahydrofolate dehydrogenase (NADP+ dependent) 1-like (MTHFD1L), which is associated with stroke and Alzheimer\u2019s disease; myosin IXB (MYO9B), associated with symptoms of celiac disease, inflammatory bowel disease, chronic ulcerative colitis, multiple sclerosis, and schizophrenia; and ring finger protein 144A (RNF144A), which has been associated with depressive disorder, schizophrenia, and stroke (Table S2) [23,24,25,26,27,28,29,30,31,32,33,34,35]. For example, SNP rs2727943 is significantly correlated with ASD and has been reported in bipolar cases as an intergenic variant that occurs between the BIG-2 and CNTN6 genes, both of which produce a neuronal membrane protein that forms the axonal connections in the developing nervous system [4].\nUnlike previous results, our study identified a single gene, OR12D2 (including up and downstream; NC_000006.11:g.29360183-g.29369519), with 10 common SNPs and large effects on risk in patients with autism. Most previous results have suggested that no single gene has such large effects on risk (p = 6.71 \u00d7 10\u22129) [4]. A comprehensive review on the genetics of ASD described the role of various genes and their clinical relevance to autism. Here, we describe an additional gene, OR12D2, that should be considered for molecular pathway studies in the future [4]. The enrichment analysis of the genes/nearest upstream/nearest downstream genes of the highly associated SNPs using Enrichr in GWAS Catalogue 2019 revealed significant diseases/drug terms associated with ASD or schizophrenia (p = 0.001107; adjusted p = 0.0321) on eight genes, namely SFTA2, BRD2, HCP5, OR5V1, HLA-DMA, ZKSCAN8, OR12D2, and MICA [36]. Four genes (TMEM185B, MTHFD1L, QPCT, and H2AFV, p = 0.0098) were downregulated relative to their median expression in the ventral juxtacommissural pretectal nucleus among the genes/nearest upstream/nearest downstream genes of highly associated SNPs using Enrichr [36]. Children with systemic lupus erythematosus (SLE) have a high risk of developing autism. In the present study, seven genes (BRD2, OR12D2, CR2, OR5V1, SFTA2, HCP5, and HLA-DMA) were highly significant for SLE (p = 0.000029; Bonferroni = 0.0041) using DAVID [37,38].",
+          "cos_sim_score": 0.08974430710077286,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8880056",
+          "title": "Integration of Transcriptome and Exome Genotyping Identifies Significant Variants with Autism Spectrum Disorder",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8880056/",
+          "text": "The risk haplotype of the OR12D2 gene in autism subjects and the overexpression of OR12D2 in the brain, dysfunction in neurodegenerative processes, olfactory impairment, and the overuse of aroma compounds or essential oils, flowers, aromatic wood, herbs, frankincense, and perfumes among the Arab population provide clues that olfactory sensory deficits and overexpression of OR12D2 should be studied in detail among the Arab population to reveal the underlying etiology of autism [18,19,20,21,39,40].\nEven though the olfactory receptor genes on chromosome 6 are significant after a Bonferroni correction (\u03b1 = 0.05/243345 = 2.05 \u00d7 10\u22127) with high linkage disequilibrium (p = 6.71 \u00d7 10\u22129 on 6p22.1), their significance on the transcriptome sequencing was lacking. Furthermore, the most significantly upregulated gene, RPS12, and the most significant downregulated gene, MPO, were observed with no significant variants in the exome array. This suggests that whole-genome sequencing on these subjects may reveal the significant genes with novel variants which are not covered in the exome array. Differentially expressed genes in autism are essential for the complete understanding of the associated functional and autism development pathways [10,11,12]. Earlier studies have revealed many significantly differentially expressed genes from various populations [10,11,12]. However, there were no studies on the differentially expressed genes in autism in Saudi Arabians. Hence, this study can be considered as a first of its kind study on autistic patients from Saudi Arabia. Additionally, the integrated analysis of exome array and transcriptome sequencing is an initial study on the Arab ancestries with autism. The upregulated integrin subunit Beta 3 binding protein (ITGB3BP) gene with rs6657480 (p = 0.000762) in the present study is in line with the previous studies on the genes predicted to affect risk for ASD [41]. The upregulated ITGB3BP gene in the present study is targeted as an autism-risk gene in human fetal brains [42], and also differential expression was observed in a mouse model [43]. Downregulation of ITGB3BP was observed in GABAergic neural development [44]. SNPs associated with schizophrenia risk were identified in the gene ITGB3BP [45].",
+          "cos_sim_score": 0.06281567364931107,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8880056",
+          "title": "Integration of Transcriptome and Exome Genotyping Identifies Significant Variants with Autism Spectrum Disorder",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8880056/",
+          "text": "4.2. DNA Extraction and Exome Array\nThe Gentra Puregene Buccal Cell Kit (Qiagen, Hilden, Germany) was used to extract DNA from the buccal cell samples. The Human Exome Bead Chip Kit v1.0 and v1.1 Illumina (San Diego, CA, USA), which consists of 243,345 putative functional exonic markers, was utilized with Illumina iScan for the microarray. All DNA samples were processed according to the manufacturer\u2019s protocol, and iScan control software (Illumina) was used to acquire data. DNA extraction and the microarray genotyping and analysis were performed at the genetics research laboratory of the Institute for Research and Medical Consultations, Imam Abdulrahman Bin Faisal University, Dammam, Saudi Arabia. Genotyping was carried out in this lab from 2016 to 2018 using the same chip and procedures.\n4.3. Genotyping and Functional Analysis\nGenomeStudio 2.0 Data Analysis software (Illumina) was used for the initial quality check of the call rate. A total of 21 controls and 2 patients with autism were excluded from the analysis due to a call rate <0.975%, and the results were thus re-clustered. The Hardy\u2013Weinberg equilibrium (HWE) was tested separately among the case and control groups with a 1 degree of freedom (df) genotypic chi-square test. Differences in clinical characteristics between cases and controls were calculated by the two-sample t-test or the \u03c72 test, as appropriate, using IBM SPSS Statistics version 23 software (IBM Co., Armonk, NY, USA). Kaviar [62] and SNP-Nexus [63] were used to confirm variants reported at a base pair position on the respective chromosome as per Genome Reference Consortium Human Build 37 (GRCh37.p13.). Case\u2013control association analyses, odds ratios, and 95% confidence intervals were calculated to evaluate the effects of different alleles and haplotypes using Haploview version 4.2 [64] and gPLINK version 2.050 [65]. Bonferroni corrections or false discovery rate corrections were applied to correct the p-values of the 243,345 single nucleotide polymorphisms (SNPs) (corrected \u03b1 = 0.05/243,345 = 2.05 \u00d7 10\u22127) to control inflation of the type I error rate. A p-value < 0.05 was considered significant. The highly significant (p < 1 \u00d7 10\u22125) genes were annotated for functional implications using DAVID 6.7 [37], STRING 10.5 [66], SNPnexus [63], Expression Atlas [17], Reactome [67], FunRich [68], Toppgene [69], and Enrichr [36].\n4.4. Whole RNA Sequencing and Differentially Expressed Genes",
+          "cos_sim_score": 0.01256899069994688,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8880056",
+          "title": "Integration of Transcriptome and Exome Genotyping Identifies Significant Variants with Autism Spectrum Disorder",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8880056/",
+          "text": "1. Introduction\nAutism spectrum disorder (ASD) is a complex neurodevelopmental disorder that exhibits a wide range of symptoms of varying severity and has a high prevalence in the Gulf region [1]. Recent research suggests that gene variants, altered biological mechanisms, and the environment together influence the development of autism [2]. The most common symptoms of autism are impaired social skills, difficulty with communication, and repetitive movements. Autism can be detected at the age of 3 years, and perhaps as early as 18 months [3]. ASD heritability has been estimated to be 40\u201390%, and a number of common variants contribute to the significant variability in the condition, in addition to epigenetic, environmental, and hormonal factors [4,5,6]. Moreover, the Diagnostic and Statistical Manual of Mental Disorders\u2014Fifth Edition includes atypical sensory processing, which has been reported in more than 70% of patients with ASD as a diagnostic criterion (DSM-5; American Psychiatric Association, 2013) [7,8,9].\nGenes differentially expressed in autism are important for understanding the associated pathways [10,11,12]. This meta-analysis looked at ten Gene Expression Omnibus datasets, which included 364 cases and 248 controls. It discovered 3105 genes that were consistently expressed differently in autism (1680 downregulated genes and 1425 upregulated genes). PNPLA2, LYPLA2, LYPLA2P1, PLA2G4D, PLA2G6, PLA2G7, and PLA2G5 were also discovered to be related to phospholipase A2 (PLA2). The enriched gene ontology terms for molecular functions were involved in structural constituents of ribosomes and transcription regulator activity, while the enriched gene ontology terms for biological processes were involved in translational elongation and the response to cytokine stimuli, according to the study. The ribosome route was the most important pathway in our KEGG study. The meta-analysis discovered genes that were consistently differentially expressed in autism, as well as biological pathways linked to gene expression alterations [10]. Topological analysis of the autistic brain identified proteomic hub gene signatures: CDK2, BAG3, MYC, TP53, HDAC1, CDKN1A, EZH2, GABARAPL1, TRAF1, and VIM [11]. The study also revealed the transcriptional regulating factors, such as YY1, FOXL1, USF2, FOXC1, GATA2, NFIC, E2F1, NFKB1, TFAP2A, and HINFP [11].\nDespite rapid developments in genetic techniques, for diagnostic purposes, common variants of neuropsychiatric disorders are still lacking. An exome microarray provides a potential diagnostic method for many complex genetic diseases such as ASD. Unlike other genetic techniques, the exome microarray is effective for profiling variants in associated genes with >5% allele frequency [13]. In addition, it provides exceptional coverage of the whole exonic region delivered from over 12,000 individual exome sequences [14]. The present study conducted whole RNA sequencing and exome microarray analysis to identify the most prominent variants associated with autism in patients in Saudi Arabia.\n2. Results\nThe study revealed the significant regulatory variants associated with the development of autism in people with Arab ancestries using multiomic analysis (Figure 1).",
+          "cos_sim_score": -0.010071206837892532,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

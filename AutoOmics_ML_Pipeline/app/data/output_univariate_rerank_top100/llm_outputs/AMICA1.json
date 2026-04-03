@@ -1,0 +1,151 @@
+{
+  "probe_id": "11730996_a_at",
+  "gene_symbol": "AMICA1",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0662538659999937,
+  "abs_fold_change": 1.2817,
+  "score": 1.28,
+  "probe_count": 1,
+  "probe_ids": "11730996_a_at",
+  "max_score": 1.28,
+  "mean_abs_fold_change": 1.2817,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T23:24:33",
+  "interpretation": "AMICA1, also known as Junctional Adhesion Molecule-Like (JAML), is a transmembrane protein that plays a crucial role in leukocyte migration and activation through its interaction with the CXADR receptor. This interaction is significant for the activation of gamma-delta T-cells, which are involved in tissue repair and homeostasis. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the inflammatory response and tissue repair mechanisms are critical, as steroids can disrupt normal bone homeostasis and lead to necrosis. However, the evidence linking AMICA1 directly to SONFH is limited, with no specific studies found that validate its role as a biomarker for this condition. Therefore, while AMICA1 may have biological relevance due to its involvement in immune response and tissue repair, its potential as a clinical biomarker for early detection of SONFH is weak and primarily inferred from its general biological functions.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "AMICA1 may play a role in immune response and tissue repair, which are relevant to the pathology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "JAML (Q86YT9). https://www.uniprot.org/uniprotkb/Q86YT9",
+    "JAML (Q86YT9-4). https://www.uniprot.org/uniprotkb/Q86YT9-4",
+    "JAML (Q86YT9-2). https://www.uniprot.org/uniprotkb/Q86YT9-2",
+    "AMICA1 \u2014 JAML. https://platform.opentargets.org/target/ENSG00000160593",
+    "AMICA1 \u2194 lung adenocarcinoma. https://platform.opentargets.org/target/ENSG00000160593/associations",
+    "AMICA1 \u2194 placenta praevia. https://platform.opentargets.org/target/ENSG00000160593/associations",
+    "AMICA1 \u2194 intracranial hemorrhage. https://platform.opentargets.org/target/ENSG00000160593/associations",
+    "AMICA1 \u2194 lung carcinoma. https://platform.opentargets.org/target/ENSG00000160593/associations",
+    "AMICA1 \u2014 adhesion molecule that interacts with CXADR antigen 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "JAML \u2014 junction adhesion molecule like (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4124,
+    "completion_tokens": 338,
+    "total_tokens": 4462,
+    "estimated_cost_usd": 0.000821
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q86YT9",
+          "title": "JAML (Q86YT9)",
+          "url": "https://www.uniprot.org/uniprotkb/Q86YT9",
+          "text": "Protein: Junctional adhesion molecule-like\nFunction: Transmembrane protein of the plasma membrane of leukocytes that control their migration and activation through interaction with CXADR, a plasma membrane receptor found on adjacent epithelial and endothelial cells. The interaction between both receptors mediates the activation of gamma-delta T-cells, a subpopulation of T-cells residing in epithelia and involved in tissue homeostasis and repair. Upon epithelial CXADR-binding, JAML induces downstream cell signaling events in gamma-delta T-cells through PI3-kinase and MAP kinases. It results in proliferation and production of cytokines and growth factors by T-cells that in turn stimulate epithelial tissues repair. It also controls the transmigration of leukocytes within epithelial and endothelial tissues through adhesive interactions with epithelial and endothelial CXADR",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q86YT9-4",
+          "title": "JAML (Q86YT9-4)",
+          "url": "https://www.uniprot.org/uniprotkb/Q86YT9-4",
+          "text": "Protein: Isoform 4 of Junctional adhesion molecule-like",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q86YT9-2",
+          "title": "JAML (Q86YT9-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q86YT9-2",
+          "text": "Protein: Isoform 2 of Junctional adhesion molecule-like",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000160593::function",
+          "title": "AMICA1 \u2014 JAML",
+          "url": "https://platform.opentargets.org/target/ENSG00000160593",
+          "text": "Function: Transmembrane protein of the plasma membrane of leukocytes that control their migration and activation through interaction with CXADR, a plasma membrane receptor found on adjacent epithelial and endothelial cells. The interaction between both receptors mediates the activation of gamma-delta T-cells, a subpopulation of T-cells residing in epithelia and involved in tissue homeostasis and repair. Upon epithelial CXADR-binding, JAML induces downstream cell signaling events in gamma-delta T-cells through PI3-kinase and MAP kinases. It results in proliferation and production of cytokines and growth factors by T- cells that in turn stimulate epithelial tissues repair. It also controls the transmigration of leukocytes within epithelial and endothelial tissues through adhesive interactions with epithelial and endothelial CXADR.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000160593::EFO_0000571",
+          "title": "AMICA1 \u2194 lung adenocarcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000160593/associations",
+          "text": "Disease: lung adenocarcinoma\nDescription: A carcinoma that arises from the lung and is characterized by the presence of malignant glandular epithelial cells. There is a male predilection with a male to female ratio of 2:1. Usually lung adenocarcinoma is asymptomatic and is identified through screening studies or as an incidental radiologic finding. If clinical symptoms are present they include shortness of breath, cough, hemoptysis, chest pain, and fever. Tobacco smoke is a known risk factor.\nAssociation score: 0.269",
+          "cos_sim_score": 0.2691138162730781,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000160593::EFO_0007442",
+          "title": "AMICA1 \u2194 placenta praevia",
+          "url": "https://platform.opentargets.org/target/ENSG00000160593/associations",
+          "text": "Disease: placenta praevia\nDescription: Abnormal placentation in which the placenta implants in the lower segment of the uterus (the zone of dilation) and may cover part or all of the opening of the cervix. It is often associated with serious antepartum bleeding and premature labor.\nAssociation score: 0.212",
+          "cos_sim_score": 0.2123696974654821,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000160593::EFO_0000551",
+          "title": "AMICA1 \u2194 intracranial hemorrhage",
+          "url": "https://platform.opentargets.org/target/ENSG00000160593/associations",
+          "text": "Disease: intracranial hemorrhage\nDescription: Bleeding within the SKULL, including hemorrhages in the brain and the three membranes of MENINGES. The escape of blood often leads to the formation of HEMATOMA in the cranial epidural, subdural, and subarachnoid spaces.\nAssociation score: 0.205",
+          "cos_sim_score": 0.204631662434226,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000160593::EFO_0001071",
+          "title": "AMICA1 \u2194 lung carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000160593/associations",
+          "text": "Disease: lung carcinoma\nDescription: A carcinoma that arises from epithelial cells of the lung\nAssociation score: 0.204",
+          "cos_sim_score": 0.20377792633178313,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "AMICA1 \u2014 adhesion molecule that interacts with CXADR antigen 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AMICA1\nGene name: adhesion molecule that interacts with CXADR antigen 1\nOrganism: Homo sapiens",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AMICA1",
+          "aliases": "",
+          "gene_description": "adhesion molecule that interacts with CXADR antigen 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "JAML \u2014 junction adhesion molecule like",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: JAML\nGene name: junction adhesion molecule like\nAliases / synonyms: AMICA, AMICA1, CREA7-1, CREA7-4, Gm638\nOrganism: Homo sapiens\nGene summary: Enables integrin binding activity and protein homodimerization activity. Involved in heterophilic cell-cell adhesion via plasma membrane cell adhesion molecules and myeloid leukocyte migration. Located in bicellular tight junction; nucleoplasm; and plasma membrane. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "JAML",
+          "aliases": "AMICA, AMICA1, CREA7-1, CREA7-4, Gm638",
+          "gene_description": "junction adhesion molecule like"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

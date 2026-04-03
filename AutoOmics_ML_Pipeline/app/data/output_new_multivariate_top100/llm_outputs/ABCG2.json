@@ -1,0 +1,220 @@
+{
+  "probe_id": "11724538_a_at",
+  "gene_symbol": "ABCG2",
+  "rf_importance": 0.0001,
+  "selection_freq": 0.4,
+  "abs_fold_change": 2.329936766666666,
+  "score": 0.3245,
+  "probe_count": 1,
+  "probe_ids": "11724538_a_at",
+  "max_score": 0.3245,
+  "mean_abs_fold_change": 2.3299,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T22:00:14",
+  "interpretation": "ABCG2 encodes a broad substrate specificity ATP-binding cassette transporter that plays a crucial role in the efflux of various compounds, including steroids and xenobiotics, from cells. Its involvement in steroid metabolism suggests a potential link to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), as corticosteroid use is a significant risk factor for this condition. The retrieved evidence indicates that ABCG2 is implicated in the excretion of steroid conjugates, which may influence the local concentrations of steroids in bone tissue, potentially affecting bone health and contributing to osteonecrosis. However, the evidence connecting ABCG2 directly to SONFH is limited, leading to a moderate confidence in its role as a biomarker. Thus, while ABCG2 may serve as a relevant candidate for further investigation, its clinical utility as an early-detection biomarker for SONFH remains uncertain.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 2",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "ABCG2 is involved in steroid metabolism, linking it to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "ABCG2 (Q9UNQ0). https://www.uniprot.org/uniprotkb/Q9UNQ0",
+    "ABCG2 (Q9UNQ0-2). https://www.uniprot.org/uniprotkb/Q9UNQ0-2",
+    "ABCG2 \u2014 ABCG2. https://platform.opentargets.org/target/ENSG00000118777",
+    "ABCG2 \u2194 gout. https://platform.opentargets.org/target/ENSG00000118777/associations",
+    "ABCG2 \u2194 hyperuricemia. https://platform.opentargets.org/target/ENSG00000118777/associations",
+    "ABCG2 \u2194 joint disease. https://platform.opentargets.org/target/ENSG00000118777/associations",
+    "ABCG2 \u2194 Abnormality of the skeletal system. https://platform.opentargets.org/target/ENSG00000118777/associations",
+    "ABCG2 \u2014 ATP binding cassette subfamily G member 2 (JR blood group) (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ABCB1 \u2014 ATP binding cassette subfamily B member 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "VEGFA \u2014 vascular endothelial growth factor A (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TNF \u2014 tumor necrosis factor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Network-Based Pharmacology and Bioinformatics Study on the Mechanism of Action of Gujiansan in the Treatment of Steroid-Induced Avascular Necrosis of the Femoral Head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9338865/",
+    "Frizzled-related proteins 4 (SFRP4) rs1802073G allele predicts the elevated serum lipid levels during acitretin treatment in psoriatic patients from Hunan, China (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC5900929/",
+    "Adipocyte\u2013Tumor Interactions in the Bone Marrow Niche: Implications for Metastasis and Therapy (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12525404/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 10068,
+    "completion_tokens": 324,
+    "total_tokens": 10392,
+    "estimated_cost_usd": 0.001705
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9UNQ0",
+          "title": "ABCG2 (Q9UNQ0)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UNQ0",
+          "text": "Protein: Broad substrate specificity ATP-binding cassette transporter ABCG2\nFunction: Broad substrate specificity ATP-dependent transporter of the ATP-binding cassette (ABC) family that actively extrudes a wide variety of physiological compounds, dietary toxins and xenobiotics from cells (PubMed:11306452, PubMed:12958161, PubMed:19506252, PubMed:20705604, PubMed:28554189, PubMed:30405239, PubMed:31003562). Involved in porphyrin homeostasis, mediating the export of protoporphyrin IX (PPIX) from both mitochondria to cytosol and cytosol to extracellular space, it also functions in the cellular export of heme (PubMed:20705604, PubMed:23189181). Also mediates the efflux of sphingosine-1-P from cells (PubMed:20110355). Acts as a urate exporter functioning in both renal and extrarenal urate excretion (PubMed:19506252, PubMed:20368174, PubMed:22132962, PubMed:31003562, PubMed:36749388). In kidney, it also functions as a physiological exporter of the uremic toxin indoxyl sulfate (By similarity). Also involved in the excretion of steroids like estrone 3-sulfate/E1S, 3beta-sulfooxy-androst-5-en-17-one/DHEAS, and other sulfate conjugates (PubMed:12682043, PubMed:28554189, PubMed:30405239). Mediates the secretion of the vitamins riboflavin and biotin into milk (By similarity). Involved in the excretion of the riboflavin-derived compound lumichrome into the intestinal lumen and in its secretion into milk (PubMed:39337371). Extrudes pheophorbide a, a phototoxic porphyrin catabolite of chlorophyll, reducing its bioavailability (By similarity). Plays an important role in the exclusion of xenobiotics from the brain (Probable). It confers to cells a resistance to multiple drugs and other xenobiotics including mitoxantrone, pheophorbide, camptothecin, methotrexate, azidothymidine, and the anthracyclines daunorubicin and doxorubicin, through the control of their efflux (PubMed:11306452, PubMed:12477054, PubMed:15670731, PubMed:18056989, PubMed:31254042). In placenta, it limits the penetration of drugs from the maternal plasma into the fetus (By similarity). May play a role in early stem cell self-renewal by blocking differentiation (By similarity). In inflammatory macrophages, exports itaconate from the cytosol to the extracellular compartment and limits the activation of TFEB-dependent lysosome biogenesis involved in antibacterial innate immune response",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9UNQ0-2",
+          "title": "ABCG2 (Q9UNQ0-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UNQ0-2",
+          "text": "Protein: Isoform 2 of Broad substrate specificity ATP-binding cassette transporter ABCG2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000118777::function",
+          "title": "ABCG2 \u2014 ABCG2",
+          "url": "https://platform.opentargets.org/target/ENSG00000118777",
+          "text": "Function: Broad substrate specificity ATP-dependent transporter of the ATP-binding cassette (ABC) family that actively extrudes a wide variety of physiological compounds, dietary toxins and xenobiotics from cells (PubMed:11306452, PubMed:12958161, PubMed:19506252, PubMed:20705604, PubMed:28554189, PubMed:30405239, PubMed:31003562). Involved in porphyrin homeostasis, mediating the export of protoporphyrin IX (PPIX) from both mitochondria to cytosol and cytosol to extracellular space, it also functions in the cellular export of heme (PubMed:20705604, PubMed:23189181). Also mediates the efflux of sphingosine-1-P from cells (PubMed:20110355). Acts as a urate exporter functioning in both renal and extrarenal urate excretion (PubMed:19506252, PubMed:20368174, PubMed:22132962, PubMed:31003562, PubMed:36749388). In kidney, it also functions as a physiological exporter of the uremic toxin indoxyl sulfate (By similarity). Also involved in the excretion of steroids like estrone 3-sulfate/E1S, 3beta-sulfooxy-androst-5-en-17-one/DHEAS, and other sulfate conjugates (PubMed:12682043, PubMed:28554189, PubMed:30405239). Mediates the secretion of the vitamins riboflavin and biotin into milk (By similarity). Involved in the excretion of the riboflavin-derived compound lumichrome into the intestinal lumen and in its secretion into milk (PubMed:39337371). Extrudes pheophorbide a, a phototoxic porphyrin catabolite of chlorophyll, reducing its bioavailability (By similarity). Plays an important role in the exclusion of xenobiotics from the brain (Probable). It confers to cells a resistance to multiple drugs and other xenobiotics including mitoxantrone, pheophorbide, camptothecin, methotrexate, azidothymidine, and the anthracyclines daunorubicin and doxorubicin, through the control of their efflux (PubMed:11306452, PubMed:12477054, PubMed:15670731, PubMed:18056989, PubMed:31254042). In placenta, it limits the penetration of drugs from the maternal plasma into the fetus (By similarity). May play a role in early stem cell self-renewal by blocking differentiation (By similarity). In inflammatory macrophages, exports itaconate from the cytosol to the extracellular compartment and limits the activation of TFEB-dependent lysosome biogenesis involved in antibacterial innate immune response.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000118777::EFO_0004274",
+          "title": "ABCG2 \u2194 gout",
+          "url": "https://platform.opentargets.org/target/ENSG00000118777/associations",
+          "text": "Disease: gout\nDescription: metabolic disorder characterized by recurrent acute arthritis, hyperuricemia and deposition of sodium urate in and around the joints, sometimes with formation of uric acid calculi. Gout is partly genetic.\nAssociation score: 0.716",
+          "cos_sim_score": 0.7158028003520317,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000118777::EFO_0009104",
+          "title": "ABCG2 \u2194 hyperuricemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000118777/associations",
+          "text": "Disease: hyperuricemia\nDescription: An abnormally high level of uric acid.\nAssociation score: 0.572",
+          "cos_sim_score": 0.5716519166998063,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000118777::EFO_1000999",
+          "title": "ABCG2 \u2194 joint disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000118777/associations",
+          "text": "Disease: joint disease\nDescription: Any disorder of the joints.\nAssociation score: 0.557",
+          "cos_sim_score": 0.5569735190085019,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000118777::HP_0000924",
+          "title": "ABCG2 \u2194 Abnormality of the skeletal system",
+          "url": "https://platform.opentargets.org/target/ENSG00000118777/associations",
+          "text": "Disease: Abnormality of the skeletal system\nDescription: An abnormality of the skeletal system.\nAssociation score: 0.498",
+          "cos_sim_score": 0.4982775056089341,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "ABCG2 \u2014 ATP binding cassette subfamily G member 2 (JR blood group)",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ABCG2\nGene name: ATP binding cassette subfamily G member 2 (JR blood group)\nAliases / synonyms: ABC15, ABCP, BCRP, BMDP, CD338, CDw338, CDw388, EST157481, GOUT1, MRX, MXR, MXR-1, MXR1, UAQTL1\nOrganism: Homo sapiens\nGene summary: The membrane-associated protein encoded by this gene is included in the superfamily of ATP-binding cassette (ABC) transporters. ABC proteins transport various molecules across extra- and intra-cellular membranes. ABC genes are divided into seven distinct subfamilies (ABC1, MDR/TAP, MRP, ALD, OABP, GCN20, White). This protein is a member of the White subfamily. Alternatively referred to as a breast cancer resistance protein, this protein functions as a xenobiotic transporter which may play a major role in multi-drug resistance. It likely serves as a cellular defense mechanism in response to mitoxantrone and anthracycline exposure. Significant expression of this protein has been observed in the placenta, which may suggest a potential role for this molecule in placenta tissue. Multiple transc...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ABCG2",
+          "aliases": "ABC15, ABCP, BCRP, BMDP, CD338, CDw338, CDw388, EST157481, GOUT1, MRX, MXR, MXR-1, MXR1, UAQTL1",
+          "gene_description": "ATP binding cassette subfamily G member 2 (JR blood group)"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ABCB1 \u2014 ATP binding cassette subfamily B member 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ABCB1\nGene name: ATP binding cassette subfamily B member 1\nAliases / synonyms: ABC20, CD243, CLCS, ENPAT, GP170, MDR1, P-GP, PGY1, p-170\nOrganism: Homo sapiens\nGene summary: The membrane-associated protein encoded by this gene is a member of the superfamily of ATP-binding cassette (ABC) transporters. ABC proteins transport various molecules across extra- and intra-cellular membranes. ABC genes are divided into seven distinct subfamilies (ABC1, MDR/TAP, MRP, ALD, OABP, GCN20, White). This protein is a member of the MDR/TAP subfamily. Members of the MDR/TAP subfamily are involved in multidrug resistance. The protein encoded by this gene is an ATP-dependent drug efflux pump for xenobiotic compounds with broad substrate specificity. It is responsible for decreased drug accumulation in multidrug-resistant cells and often mediates the development of resistance to anticancer drugs. This protein also functions as a transporter in the blood-brain barrier. Mutations in ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ABCB1",
+          "aliases": "ABC20, CD243, CLCS, ENPAT, GP170, MDR1, P-GP, PGY1, p-170",
+          "gene_description": "ATP binding cassette subfamily B member 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "VEGFA \u2014 vascular endothelial growth factor A",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: VEGFA\nGene name: vascular endothelial growth factor A\nAliases / synonyms: L-VEGF, MVCD1, VEGF, VPF\nOrganism: Homo sapiens\nGene summary: This gene is a member of the PDGF/VEGF growth factor family. It encodes a heparin-binding protein, which exists as a disulfide-linked homodimer. This growth factor induces proliferation and migration of vascular endothelial cells, and is essential for both physiological and pathological angiogenesis. Disruption of this gene in mice resulted in abnormal embryonic blood vessel formation. This gene is upregulated in many known tumors and its expression is correlated with tumor stage and progression. Elevated levels of this protein are found in patients with POEMS syndrome, also known as Crow-Fukase syndrome. Allelic variants of this gene have been associated with microvascular complications of diabetes 1 (MVCD1) and atherosclerosis. Alternatively spliced transcript variants encoding different...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "VEGFA",
+          "aliases": "L-VEGF, MVCD1, VEGF, VPF",
+          "gene_description": "vascular endothelial growth factor A"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TNF \u2014 tumor necrosis factor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TNF\nGene name: tumor necrosis factor\nAliases / synonyms: DIF, IMD127, TNF-alpha, TNFA, TNFSF2, TNLG1F\nOrganism: Homo sapiens\nGene summary: This gene encodes a multifunctional proinflammatory cytokine that belongs to the tumor necrosis factor (TNF) superfamily. This cytokine is mainly secreted by macrophages. It can bind to, and thus functions through its receptors TNFRSF1A/TNFR1 and TNFRSF1B/TNFBR. This cytokine is involved in the regulation of a wide spectrum of biological processes including cell proliferation, differentiation, apoptosis, lipid metabolism, and coagulation. This cytokine has been implicated in a variety of diseases, including autoimmune diseases, insulin resistance, psoriasis, rheumatoid arthritis ankylosing spondylitis, tuberculosis, autosomal dominant polycystic kidney disease, and cancer. Mutations in this gene affect susceptibility to cerebral malaria, septic shock, and Alzheimer disease. Knockout studie...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TNF",
+          "aliases": "DIF, IMD127, TNF-alpha, TNFA, TNFSF2, TNLG1F",
+          "gene_description": "tumor necrosis factor"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::9338865",
+          "title": "Network-Based Pharmacology and Bioinformatics Study on the Mechanism of Action of Gujiansan in the Treatment of Steroid-Induced Avascular Necrosis of the Femoral Head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9338865/",
+          "text": "1. Introduction\nAvascular necrosis of the femoral head (ANFH), also known as osteonecrosis of the femoral head (ONFH), is a disabling disease that occurs in young and middle-aged people. According to statistics, the total number of diagnosed patients worldwide has exceeded 30 million, including more than 8 million in China, and about 75,000 to 150,000 new cases are added every year [1, 2]. The etiology of ONFH includes traumatic and nontraumatic causes. Traumatic ONFH is usually caused by traumatic factors of fractures, dislocations, and contusions. The pathogenesis of nontraumatic ONFH is not well understood, and the main risk factors include corticosteroid use, alcohol abuse, and autoimmune disease. Steroid-induced avascular necrosis of the femoral head (SANFH) is the most common type of nontraumatic ANFH, and 47.4% of nontraumatic ANFH was directly related to steroid hormone abuse as suggested in an epidemiological survey of ANFH in Japan [3]. The main pathogenetic theories are the theory of disorder of lipid metabolism, the theory of reduced osteogenic potential of bone marrow mesenchymal stem cells, the theory of impaired blood supply, the theory of inflammation and apoptosis, the theory of gene polymorphism and noncoding RNA, etc. [4]. SANFH develops rapidly and can progress to femoral head collapse, necrosis, or even severe hip arthritis and loss of hip mobility within a few years, which seriously affects people's quality of life. The clinical treatment of terminal SANFH is mainly surgery, but it cannot delay or reverse the progression of SANFH, and there are difficulties in rehabilitation, secondary revision of the joint prosthesis, and heavy financial burdens [5, 6].\nTraditional Chinese medicine (TCM) has been widely used in the treatment of orthopedic diseases (such as SANFH, osteoporosis, KOA, and gout) in Japan, Korea, China, and other Asian countries and regions. It is gradually accepted in clinical applications and medical institutes worldwide [7\u201310]. Numerous basic and clinical experiments show that compound TCM is economical and has multiplicity and low side effects in treating SANFH [10, 11]. Gujiansan is a formula created by Professor Wei Guikang, a master of TCM, based on the theory of traditional Chinese therapeutics and medication as well as his accumulated experience in the past decades. Gujiansan consists of Radix Panacis Quinquefolii, Heterophylly Falsestarwort Root, Radix Astragali, Cornu Cervi Pantotrichum, Notoginseng, Rhizoma Drynariae, Ganoderma, Radix Salviae Miltiorrhizae, Moghania, Litsea, Endothelium Corneum Gigeriae Galli, Herba Asari, and Saffron. Previous studies by the team indicate that Gujiansan acts as a vascular and bone protector by promoting the levels of HIF-1\u03b1, autophagy-associated factors (including BNIP3, LC3, and Beclin-1), and bone formation markers (including osteocalcin (OC), bone-specific alkaline phosphatase (BAP)) and decreasing the levels of proinflammatory cytokines (including TNF-\u03b1, IL-6, and CRP) [12].\nHowever, due to the complex multicomponent, multitarget, and multipathway intervention of herbal formulas for SANFH treatment, the mechanism of action of Gujiansan on this disease has not been fully elucidated and remains to be further investigated. Currently, emerging network pharmacology and bioinformatics technologies are widely used in pharmacology research [13, 14]. Therefore, based on network pharmacology and molecular docking technology, this study analyzes the molecular mechanism of Gujiansan in the treatment of SANFH from a microscopic perspective and in vitro experiments with the aim of providing a direction and reference for the further study of the basic pharmacology of Gujiansan in the treatment of SANFH (see Figure 1 for the research process).\n2. Data and Methods\n2.1. Components of Gujiansan and Target Mining",
+          "cos_sim_score": 0.567763090133667,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::5900929",
+          "title": "Frizzled-related proteins 4 (SFRP4) rs1802073G allele predicts the elevated serum lipid levels during acitretin treatment in psoriatic patients from Hunan, China",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5900929/",
+          "text": "LRP5/6 play a pivotal role in cholesterol homeostasis and lipid metabolism (Borrell-Pages, Carolina Romero & Badimon, 2015; Foer et al., 2017), and act as co-receptor of the canonical Wnt/\u03b2-catenin pathway (Mi & Johnson, 2005). In addition, pravastatin (a member of the drug class of statins) is used for the treatment of dyslipidemia and the prevention of steroid-induced osteonecrosis of the femoral head (ONFH) by activating Wnt signaling pathway, include increasing the expression of LRP5, \u03b2-catenin and suppressing the expression of PPAR\u03b3 (Jiang et al., 2014; Nozaki et al., 2012). Therefore, it is certainly believed that the Wnt signaling pathway is known to play a major role in adipogenesis and lipid metabolism.\nThe genetic variants in SFRP4 gene may affect the functions of Wnt signaling pathway and showed a relationship with diseases. A previous study compared the genotypes distribution between renal cell carcinoma (RCC) patients and controls showed that SFRP4 rs1802074 polymorphism was related to RCC susceptibility. When compared with the GG/AG genotypes, the AA genotype was found to had a marginal significance to increase renal cancer risk (Hirata et al., 2009). Meanwhile, SFRP4 c1019G9A polymorphism has been reported to be associated with the bone mineral density (BMD), and the AA genotype had a higher level of serum bone alkaline phosphatase and lower lumbar spine BMD when compared with the GG genotype, suggesting a higher risk for osteoporosis at the lumbar spine was found in patients who carriers of AA genotype (Lee et al., 2010).\nIn our previous study, we found SFRP4 rs1802073 polymorphism was associated with the response to acitretin, namely, the psoriatic patients who carries T allele had a better response than that in G allele carriers (Zhou et al., 2017). SFRP4 rs1802073 polymorphism is a missense mutation (G>T), and induce a proline to change into threonine at position 320 in the SFRP4 protein. SFRP4 rs1802073 (Pro320Thr) was judged to be \u201cpossibly damaging\u201d by PolyPhen (a computer program) (Hirata et al., 2009). In this study, we confirmed that it may influence the lipid metabolism during acitretin treatment.\nAs we know, the moderate-to-severe psoriasis patients is required an individualized approach during a long-term treatment with acitretin, because psoriasis patients are more susceptible to vascular diseases (Asefi et al., 2012; Houshang et al., 2014). It is necessary to select a treatment based on the clinical presentation of psoriasis and contraindications. Meanwhile, the genetic marker may provide some useful reference.\nWe investigated the association between the SFRP4 rs1802073 polymorphism and the changes of serum levels of TG, TC, HDL-C and LDL-C for the first time. However, there are several limitations of this study, such as limited samples and single center. We hope our results can provide some useful references for further investigations into the mechanism of elevated serum lipid levels after acitretin treatment.\nConclusions\nSFRP4 rs1802073 GG/GT genotypes were found to be associated with elevated serum lipid levels after acitretin treatment. This may explain dyslipidemia observed in some of the Chinese psoriatic patients from Hunan province treated with acitretin. Our results demonstrated that SFRP4 rs1802073 polymorphism may serve as a genetic marker to predict the elevated serum lipid profile as a side-effect of acitretin, guiding individual patients for safe and precise treatment, and minimizing unnecessary expenditure.\nSupplemental Information\nTable S1\nAssociation of rs1802073 genotypes with the pre-post difference of TG, TC and LDL-C\n(1) Using one-way ANOVA; \u0394 means the between-group difference in lipid profile in psoriatic patients, i.e., the change between pre- and post-therapy.\nClick here for additional data file.\nTable S2\nAssociation of rs1802073 genotypes with the difference of TG, TC and LDL-C via univariate general linear model",
+          "cos_sim_score": 0.37069445848464966,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12525404",
+          "title": "Adipocyte\u2013Tumor Interactions in the Bone Marrow Niche: Implications for Metastasis and Therapy",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12525404/",
+          "text": "Despite emerging evidence that BMAs contribute to the establishment and progression of bone metastasis, therapeutic strategies targeting BMAs remain an area that is relatively underexplored in clinical trials. Most evidence derives from in vitro and animal studies, with limited clinical validation. Many studies that focus on breast, prostate, and ovarian cancer metastasizing to bone are available; however, there is a significant lack of studies that demonstrate the effects exclusive to BMAs and explore the therapeutic potential associated with them in combating bone metastasis in humans [15,25]. Thus, the need for further studies and research aimed at clarifying the mechanisms and therapeutic potential of targeting BMAs in bone metastasis is a field ripe for exploration.\n9. Knowledge Gaps and Future Directions\n9.1. Cellular Heterogeneity\nDespite advances in BMA research, the cellular heterogeneity of BMAs remains poorly resolved. A study presents the first integrative high-resolution atlas of human bone and bone marrow, combining spatial transcriptomics and single-cell RNA-seq from femoral tissue [188]. It lays a foundational blueprint for exploring cellular architecture and molecular coordination in human bone and marrow and sets the stage for precise, spatially informed skeletal research [188]. Another study uncovers distinct MSC subtypes, including those with adipocytic signatures, and detailed micro-niches such as arterio-endosteal and adipocytic hematopoietic stem and progenitor cells niches [189]. Demonstrating how this atlas serves as a reference to explore niche composition, cell\u2013cell neighborhoods, and pathological remodeling, particularly in AML [189]. An earlier, foundational study employed scRNA-seq and spatially resolved transcriptomics, particularly focusing on the human femoral head [190]. Discover key spatial niche features, such as an arterio-endosteal niche and an adipocytic niche for early hematopoietic Stem and Progenitor Cells [190]. Single-cell and spatial multi-omics technologies have yet to be systematically applied across skeletal compartments, leaving fundamental questions about BMA subtypes, developmental trajectories, and niche-specific roles unanswered. Generating comprehensive cellular maps will be essential to distinguish physiologically distinct adipocyte populations and their context-dependent functions.\n9.2. Dynamic Lipidomics\nCurrent knowledge of BMA lipid metabolism is largely derived from static snapshots. Real-time lipid tracing, particularly in patients, is critically lacking. Innovative metabolic flux approaches, such as stable isotope\u2013based tracing combined with advanced lipidomics, could clarify how BMAs contribute to tumor lipid acquisition, systemic lipid pools, and energy balance. Stable-isotope metabolic tracing is a powerful in vivo tool for quantifying metabolic fluxes and dynamic turnover of nutrients in tumors, utilizing non-radioactive isotopes tracked by mass spectrometry or NMR [191]. Stable-isotope tracer methodology provides practical guidance for designing experiments and analyzing lipid metabolic fluxes in vivo, by tracing isotope incorporation into lipid molecules via NMR [192]. Translating these approaches into human studies is an urgent next step.\n9.3. Immunometabolic Interface\nThe intersection of BMAs with immune regulation in the bone marrow microenvironment remains elusive. It is unclear whether BMAs support or impair immune surveillance, and how their metabolic products influence hematopoiesis, myeloid skewing, or antitumor immunity. Human BMAs exhibit a unique inflammatory profile that influences plasma cell function. This profile includes altered cytokine secretion and lipid metabolism, which can affect immune responses and hematopoietic processes. Human BMAs exhibit a unique inflammatory gene expression profile, characterized by increased levels of pro-inflammatory cytokines and ROS [193]. This inflammatory environment can influence the function and survival of plasma cells within the bone marrow niche, potentially impacting immune responses and hematopoiesis [193]. A review of immunometabolism examines how metabolic pathways influence immune cell function. It emphasizes the role of lipids in immune cell signaling and energy metabolism [194]. Applying these insights to BMAs can clarify how lipid metabolism in BMAs influences immune surveillance and hematopoietic stem cell niches [194]. Further studying these mechanisms could have major implications for understanding immunosenescence, bone marrow failure syndromes, and cancer progression.\n9.4. Standardized Biomarkers",
+          "cos_sim_score": 0.34840327501296997,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12525404",
+          "title": "Adipocyte\u2013Tumor Interactions in the Bone Marrow Niche: Implications for Metastasis and Therapy",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12525404/",
+          "text": "3.4. Bone-Remodeling Signaling\nBMA-expressed RANKL and adipocyte cytokines reprogram bone remodeling toward osteoclastogenesis and osteoblast suppression. Most bone metastasis results in osteolytic features in the bone. This is usually a result of promoting osteoclastogenesis [84]. BMAs are involved in this effect. Unlike other adipocytes around the body, BMAs are capable of producing receptor activator for nuclear factor \u03baB ligand (RANKL), which is a major promoter of bone resorption and osteoclast differentiation [85,86]. Studies have shown that BMAs are the major source of Tnfsf11, the gene that encodes for RANKL, in mesenchymal cells [85]. While osteolytic remodeling has been the most intensively studied in the context of tumor-BMA interactions, osteoblastic activity is also profoundly influenced. BMA-secreted factors have been shown to induce changes in osteoblasts, one of which is converting them to a more adipocyte-like phenotype thereby shifting the remodeling balance and contributing to pathological bone turnover [87]. Additionally, the secretion of TNF-\u03b1 and adipokines like adiponectin inhibits osteoblast differentiation and function by reducing acetyl-histone 3 levels and Runx2 transcription [88,89,90,91]. Thus, BMAs play a role in metastasis-associated bone remodeling.\n3.5. Extracellular-Vesicle\u2013Mediated Cargo Transfer\nThe role of EVs in cellular communication, especially in relation to metastasis, has become the center of many studies [92,93]. Adipocytes are considered a major source for EVs [94], leading many studies to explore the role of adipocyte-derived EVs (ADEVs) in influencing metastasis [94,95,96,97,98,99]. Studies on melanoma reveal that ADEVs promote cancer cells\u2019 migration properties and reprogram them to utilize fatty acid oxidation by transferring proteins and enzymes involved in the process to them [98]. In another study focusing on EVs secreted by pre-adipocytes, breast cancer cells had a dose-dependent enhancement to cell migration in-vitro due to the induction of the Wnt/\u03b2-catenin pathway, a signaling pathway associated with tumor growth [97]. Alternatively, EVs secreted by pre-adipocytes have been shown to negatively affect the migration capabilities as well as promote pro-apoptotic signaling molecules in ovarian cancer cells [100]. On the other hand, tumor-derived EVs have been shown to have profound effects on adipocytes, including mediating their transformation into cancer-associated adipocytes through EV miR-126 and miR-144, and promoting lipolysis and beige/brown differentiation of adipocytes by EV miR-155 [101,102]. These effects offer a glimpse into the remarkable depth of EVs as a medium for cellular communication (Figure 1).\n4. Comparative Mechanisms Across Cancer Types and Tumor-Specific Features\nIn this section, we synthesize how BMAs influence bone metastasis across different cancers (cross-tumor synthesis) and also examine tumor-specific features that shape these interactions in unique ways. This dual approach helps identify both shared and distinct mechanisms by which BMAs contribute to the metastatic process. Across breast, prostate, lung cancers, and myeloma, BMAs engage tumors through shared conduits lipid transfer fueling FAO/OXPHOS (CD36/FABP4), adipokine/cytokine signaling (leptin, IL-6, IL-1\u03b2), immune modulation (MDSC/TAM polarization with impaired B/T cell function), RANKL-driven bone remodeling, and EV-mediated cargo exchange that converge on bone colonization, immune evasion, and therapy resistance. Notwithstanding these commonalities, cancer-specific features shape the net phenotype: breast and myeloma typically manifest osteolytic lesions; prostate appears osteoblastic yet retains osteoclast dependence; lung cancer exhibits an S100A8/A9\u2013TLR4\u2013IL-6 axis linking BMAs to angiogenesis and osteolysis. Direct cross-tumor comparisons remain limited by heterogeneous models and endpoints; few studies are designed for head-to-head evaluation across tumor types, a gap we highlight as a priority for future work.\n4.1. Breast Cancer",
+          "cos_sim_score": 0.34393075108528137,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9338865",
+          "title": "Network-Based Pharmacology and Bioinformatics Study on the Mechanism of Action of Gujiansan in the Treatment of Steroid-Induced Avascular Necrosis of the Femoral Head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9338865/",
+          "text": "TNF-mediated MAP3K increases osteoclast survival and the expression of both mRNA and protein. In addition, TNF and RANKL can synergistically induce the differentiation of bone marrow-derived macrophages (BMMs) into osteoclasts [47\u201349]. However, TNF in chondrocytes, osteoblasts, and endothelial cells functioned in inhibiting cell differentiation and proliferation and even promoting apoptosis [50\u201352] (Figure 11). (3) The HIF-1 signaling pathway is the main response mechanism of the systemic and cellular steady-state response to hypoxia. The HIF-1 signal activates the transcription of many genes through oxygen-regulated \u03b1-subunits and constitutively expressed \u03b2-subunits, such as activating HMOX1 to promote heme catabolism, activating VEGF to promote angiogenesis, and activating the BNIP3 autophagy factor to reduce apoptosis. HIF-1\u03b1 expression was decreased in the necrotic bone tissue of SANFH, and HIF-1\u03b1 compensatory expression was upregulated in early bone tissue under hypoxic or anoxic conditions. However, with the progression of the disease, the imbalance of energy metabolism in necrotic bone tissue was aggravated, and the expression levels of HIF-1\u03b1, VEGF, HMOX1, and BNIP3 were decreased, resulting in the decreased differentiation and apoptosis of vascular endothelial cells [53, 54]. (4) For the AGE-RAGE signaling pathway, under the action of GC, advanced glycation end products (AGE) and ROS accumulation occur in bone tissues and blood vessels of necrotic bone regions [55]. In vitro aging-related studies reveal that AGE can induce apoptosis of long bone cells by binding to RAGE and activating ERK1/2, p38, and STAT3 signaling pathways. The AGE-RAGE signal can also induce vascular endothelial cell injury and change vascular permeability by activating ERK and p38 [56, 57]. (5) For the C-type lectin receptor signaling pathway, it is researched that necrotic bone cells of patients with osteonecrosis exhibited highly expressed C-type lectin (Mincle). After binding to the C-type lectin receptor, Mincle triggered osteoclastogenesis by activating the calcium signaling pathway of ITAM, which activates osteoclasts and intensifies bone resorption [58]. The analysis of these signaling pathways also reflected the process of GO enrichment and analysis of cell activity.",
+          "cos_sim_score": 0.3357686400413513,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

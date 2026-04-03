@@ -1,0 +1,168 @@
+{
+  "probe_id": "11722904_a_at",
+  "gene_symbol": "TBC1D9",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.2045437225405047,
+  "abs_fold_change": 1.2556,
+  "score": 1.2545,
+  "probe_count": 1,
+  "probe_ids": "11722904_a_at",
+  "max_score": 1.2545,
+  "mean_abs_fold_change": 1.2556,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T23:26:57",
+  "interpretation": "TBC1D9 encodes a protein that is predicted to act as a GTPase-activating protein for Rab family proteins, which are involved in intracellular transport and signaling pathways. While there is no direct evidence linking TBC1D9 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in cellular processes may suggest a potential involvement in the pathophysiology of osteonecrosis, particularly in the context of steroid treatment. The retrieved evidence primarily indicates its general biological function without specific ties to SONFH, leading to a conclusion of low confidence in its relevance as a biomarker. Therefore, while TBC1D9 may have biological significance, its clinical utility as an early-detection biomarker for SONFH appears weak based on the current evidence.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "TBC1D9 may play a role in cellular processes relevant to osteonecrosis, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "TBC1D9 (Q6ZT07). https://www.uniprot.org/uniprotkb/Q6ZT07",
+    "TBC1D9 \u2014 TBC1D9. https://platform.opentargets.org/target/ENSG00000109436",
+    "TBC1D9 \u2194 Cachexia. https://platform.opentargets.org/target/ENSG00000109436/associations",
+    "TBC1D9 \u2194 COVID-19. https://platform.opentargets.org/target/ENSG00000109436/associations",
+    "TBC1D9 \u2194 bipolar disorder. https://platform.opentargets.org/target/ENSG00000109436/associations",
+    "TBC1D9 \u2194 dermatitis. https://platform.opentargets.org/target/ENSG00000109436/associations",
+    "TBC1D9 \u2014 TBC1 domain family member 9 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KRAS \u2014 KRAS proto-oncogene, GTPase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TBC1D9-AS1 \u2014 TBC1D9 antisense RNA 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TBC1D9-AS2 \u2014 TBC1D9 antisense RNA 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "PLK1 \u2014 polo like kinase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4148,
+    "completion_tokens": 296,
+    "total_tokens": 4444,
+    "estimated_cost_usd": 0.0008
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q6ZT07",
+          "title": "TBC1D9 (Q6ZT07)",
+          "url": "https://www.uniprot.org/uniprotkb/Q6ZT07",
+          "text": "Protein: TBC1 domain family member 9\nFunction: May act as a GTPase-activating protein for Rab family protein(s)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000109436::function",
+          "title": "TBC1D9 \u2014 TBC1D9",
+          "url": "https://platform.opentargets.org/target/ENSG00000109436",
+          "text": "Function: May act as a GTPase-activating protein for Rab family protein(s).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000109436::HP_0004326",
+          "title": "TBC1D9 \u2194 Cachexia",
+          "url": "https://platform.opentargets.org/target/ENSG00000109436/associations",
+          "text": "Disease: Cachexia\nDescription: Severe weight loss, wasting of muscle, loss of appetite, and general debility related to a chronic disease.\nAssociation score: 0.325",
+          "cos_sim_score": 0.3245619203317802,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000109436::MONDO_0100096",
+          "title": "TBC1D9 \u2194 COVID-19",
+          "url": "https://platform.opentargets.org/target/ENSG00000109436/associations",
+          "text": "Disease: COVID-19\nDescription: A disease caused by infection with severe acute respiratory syndrome coronavirus 2.\nAssociation score: 0.275",
+          "cos_sim_score": 0.27547594666992004,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000109436::MONDO_0004985",
+          "title": "TBC1D9 \u2194 bipolar disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000109436/associations",
+          "text": "Disease: bipolar disorder\nDescription: A disorder of the brain that causes unusual shifts in mood, energy, activity levels and the ability to carry out day-to-day tasks. Often these moods range and shift from periods of elation and energized behavior to those of hopelessness and depression.\nAssociation score: 0.268",
+          "cos_sim_score": 0.2683436577757099,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000109436::MONDO_0002406",
+          "title": "TBC1D9 \u2194 dermatitis",
+          "url": "https://platform.opentargets.org/target/ENSG00000109436/associations",
+          "text": "Disease: dermatitis\nDescription: An inflammatory process affecting the skin. Signs include red rash, itching, and blister formation. Representative examples are contact dermatitis, atopic dermatitis, and seborrheic dermatitis.\nAssociation score: 0.165",
+          "cos_sim_score": 0.1645542424240413,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "TBC1D9 \u2014 TBC1 domain family member 9",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TBC1D9\nGene name: TBC1 domain family member 9\nAliases / synonyms: GRAMD9, MDR1\nOrganism: Homo sapiens\nGene summary: Predicted to enable GTPase activator activity. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TBC1D9",
+          "aliases": "GRAMD9, MDR1",
+          "gene_description": "TBC1 domain family member 9"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KRAS \u2014 KRAS proto-oncogene, GTPase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KRAS\nGene name: KRAS proto-oncogene, GTPase\nAliases / synonyms: 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2\nOrganism: Homo sapiens\nGene summary: This gene, a Kirsten ras oncogene homolog from the mammalian ras gene family, encodes a protein that is a member of the small GTPase superfamily. A single amino acid substitution is responsible for an activating mutation. The transforming protein that results is implicated in various malignancies, including lung adenocarcinoma, mucinous adenoma, ductal carcinoma of the pancreas and colorectal carcinoma. Alternative splicing leads to variants encoding two isoforms that differ in the C-terminal region. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KRAS",
+          "aliases": "'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2",
+          "gene_description": "KRAS proto-oncogene, GTPase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TBC1D9-AS1 \u2014 TBC1D9 antisense RNA 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TBC1D9-AS1\nGene name: TBC1D9 antisense RNA 1\nOrganism: Homo sapiens",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TBC1D9-AS1",
+          "aliases": "",
+          "gene_description": "TBC1D9 antisense RNA 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TBC1D9-AS2 \u2014 TBC1D9 antisense RNA 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TBC1D9-AS2\nGene name: TBC1D9 antisense RNA 2\nOrganism: Homo sapiens",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TBC1D9-AS2",
+          "aliases": "",
+          "gene_description": "TBC1D9 antisense RNA 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "PLK1 \u2014 polo like kinase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PLK1\nGene name: polo like kinase 1\nAliases / synonyms: PLK, STPK13\nOrganism: Homo sapiens\nGene summary: The Ser/Thr protein kinase encoded by this gene belongs to the CDC5/Polo subfamily. It is highly expressed during mitosis and elevated levels are found in many different types of cancer. Depletion of this protein in cancer cells dramatically inhibited cell proliferation and induced apoptosis; hence, it is a target for cancer therapy. [provided by RefSeq, Sep 2015]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PLK1",
+          "aliases": "PLK, STPK13",
+          "gene_description": "polo like kinase 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

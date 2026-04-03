@@ -1,0 +1,211 @@
+{
+  "probe_id": "11757288_s_at",
+  "gene_symbol": "CST3",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.1643877112679418,
+  "abs_fold_change": 1.3746,
+  "score": 1.3709,
+  "probe_count": 1,
+  "probe_ids": "11757288_s_at",
+  "max_score": 1.3709,
+  "mean_abs_fold_change": 1.3746,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T23:09:46",
+  "interpretation": "Cystatin C (CST3) is a cysteine protease inhibitor that plays a crucial role in regulating proteolytic activity in various physiological processes. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), CST3 may be implicated in the regulation of bone remodeling and apoptosis of osteocytes, which are critical factors in the pathogenesis of SONFH. While the retrieved evidence does not directly link CST3 to SONFH, its role as a protease inhibitor suggests a potential involvement in the disease's underlying mechanisms, particularly in the context of glucocorticoid-induced changes in bone metabolism. Therefore, while the evidence is limited, CST3 could serve as a candidate biomarker for early detection of SONFH due to its biological functions related to bone health and remodeling.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "CST3 may be involved in the pathological processes of Steroid-Induced Osteonecrosis of the Femoral Head due to its role in regulating proteolytic activity and apoptosis in bone tissue.",
+  "citations": [
+    "CST3 (P01034). https://www.uniprot.org/uniprotkb/P01034",
+    "CST3 \u2014 CST3. https://platform.opentargets.org/target/ENSG00000101439",
+    "CST3 \u2194 Hereditary cerebral hemorrhage with amyloidosis. https://platform.opentargets.org/target/ENSG00000101439/associations",
+    "CST3 \u2194 ACys amyloidosis. https://platform.opentargets.org/target/ENSG00000101439/associations",
+    "CST3 \u2194 Hereditary cerebral hemorrhage with amyloidosis, Icelandic type. https://platform.opentargets.org/target/ENSG00000101439/associations",
+    "CST3 \u2194 age-related macular degeneration. https://platform.opentargets.org/target/ENSG00000101439/associations",
+    "CST3 \u2014 cystatin C (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "APP \u2014 amyloid beta precursor protein (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CRP \u2014 C-reactive protein (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "INS \u2014 insulin (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ALB \u2014 albumin (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Extracellular Vesicles in Osteogenesis: Comparative Analysis of Stem Cell Sources, Conditioning Strategies, and In Vitro Models Toward Advanced Bone Regeneration (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12786284/",
+    "Effects of Extracellular Vesicles from Osteogenic Differentiated Human BMSCs on Osteogenic and Adipogenic Differentiation Capacity of Na\u00efve Human BMSCs (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9406723/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8681,
+    "completion_tokens": 305,
+    "total_tokens": 8986,
+    "estimated_cost_usd": 0.001485
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P01034",
+          "title": "CST3 (P01034)",
+          "url": "https://www.uniprot.org/uniprotkb/P01034",
+          "text": "Protein: Cystatin-C\nFunction: As an inhibitor of cysteine proteinases, this protein is thought to serve an important physiological role as a local regulator of this enzyme activity",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000101439::function",
+          "title": "CST3 \u2014 CST3",
+          "url": "https://platform.opentargets.org/target/ENSG00000101439",
+          "text": "Function: As an inhibitor of cysteine proteinases, this protein is thought to serve an important physiological role as a local regulator of this enzyme activity.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101439::Orphanet_85458",
+          "title": "CST3 \u2194 Hereditary cerebral hemorrhage with amyloidosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000101439/associations",
+          "text": "Disease: Hereditary cerebral hemorrhage with amyloidosis\nDescription: Hereditary cerebral hemorrhage with amyloidosis (HCHWA) describes a group of rare familial central nervous system disorders characterized by amyloid deposition in the cerebral blood vessels leading to hemorrhagic and non-hemorrhagic strokes, focal neurological deficits, and progressive cognitive decline eventually leading to dementia.\nAssociation score: 0.594",
+          "cos_sim_score": 0.5935657159840635,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101439::MONDO_0007098",
+          "title": "CST3 \u2194 ACys amyloidosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000101439/associations",
+          "text": "Disease: ACys amyloidosis\nDescription: Hereditary cerebral hemorrhage with amyloidosis (HCHWA), Icelandic type is a form of HCHWA characterized by an age of onset of 20-30 years, systemic amyloidosis and recurrent lobar intracerebral hemorrhages.\nAssociation score: 0.520",
+          "cos_sim_score": 0.5195615450452662,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101439::Orphanet_100008",
+          "title": "CST3 \u2194 Hereditary cerebral hemorrhage with amyloidosis, Icelandic type",
+          "url": "https://platform.opentargets.org/target/ENSG00000101439/associations",
+          "text": "Disease: Hereditary cerebral hemorrhage with amyloidosis, Icelandic type\nDescription: Hereditary cerebral hemorrhage with amyloidosis (HCHWA), Icelandic type is a form of HCHWA (see this term) characterized by an age of onset of 20-30 years, systemic amyloidosis and recurrent lobar intracerebral hemorrhages.\nAssociation score: 0.519",
+          "cos_sim_score": 0.5188397093915851,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101439::EFO_0001365",
+          "title": "CST3 \u2194 age-related macular degeneration",
+          "url": "https://platform.opentargets.org/target/ENSG00000101439/associations",
+          "text": "Disease: age-related macular degeneration\nDescription: Degenerative changes in the macula lutea of the retina.\nAssociation score: 0.472",
+          "cos_sim_score": 0.47212726442464154,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "CST3 \u2014 cystatin C",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CST3\nGene name: cystatin C\nAliases / synonyms: ADLDWA, ARMD11, HEL-S-2\nOrganism: Homo sapiens\nGene summary: The cystatin superfamily encompasses proteins that contain multiple cystatin-like sequences. Some of the members are active cysteine protease inhibitors, while others have lost or perhaps never acquired this inhibitory activity. There are three inhibitory families in the superfamily, including the type 1 cystatins (stefins), type 2 cystatins and the kininogens. The type 2 cystatin proteins are a class of cysteine proteinase inhibitors found in a variety of human fluids and secretions, where they appear to provide protective functions. The cystatin locus on chromosome 20 contains the majority of the type 2 cystatin genes and pseudogenes. This gene is located in the cystatin locus and encodes the most abundant extracellular inhibitor of cysteine proteases, which is found in high concentratio...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CST3",
+          "aliases": "ADLDWA, ARMD11, HEL-S-2",
+          "gene_description": "cystatin C"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "APP \u2014 amyloid beta precursor protein",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: APP\nGene name: amyloid beta precursor protein\nAliases / synonyms: AAA, ABETA, ABPP, AD1, APPI, CTFgamma, CVAP, PN-II, PN2, alpha-sAPP, preA4\nOrganism: Homo sapiens\nGene summary: This gene encodes a cell surface receptor and transmembrane precursor protein that is cleaved by secretases to form a number of peptides. Some of these peptides are secreted and can bind to the acetyltransferase complex APBB1/TIP60 to promote transcriptional activation, while others form the protein basis of the amyloid plaques found in the brains of patients with Alzheimer disease. In addition, two of the peptides are antimicrobial peptides, having been shown to have bacteriocidal and antifungal activities. Mutations in this gene have been implicated in autosomal dominant Alzheimer disease and cerebroarterial amyloidosis (cerebral amyloid angiopathy). Multiple transcript variants encoding several different isoforms have been found for this gene. [provided by RefSeq, Aug 2014]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "APP",
+          "aliases": "AAA, ABETA, ABPP, AD1, APPI, CTFgamma, CVAP, PN-II, PN2, alpha-sAPP, preA4",
+          "gene_description": "amyloid beta precursor protein"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CRP \u2014 C-reactive protein",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CRP\nGene name: C-reactive protein\nAliases / synonyms: PTX1\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene belongs to the pentraxin family which also includes serum amyloid P component protein and pentraxin 3. Pentraxins are involved in complement activation and amplification via communication with complement initiation pattern recognition molecules, but also complement regulation via recruitment of complement regulators. The encoded protein has a calcium dependent ligand binding domain with a distinctive flattened beta-jellyroll structure. It exists in two forms as either a pentamer in circulation or as a nonsoluble monomer in tissues. It is involved in several host defense related functions based on its ability to recognize foreign pathogens and damaged cells of the host and to initiate their elimination by interacting with humoral and cellular effector system...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CRP",
+          "aliases": "PTX1",
+          "gene_description": "C-reactive protein"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "INS \u2014 insulin",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: INS\nGene name: insulin\nAliases / synonyms: IDDM, IDDM1, IDDM2, ILPR, IRDN, MODY10, PNDM4\nOrganism: Homo sapiens\nGene summary: This gene encodes insulin, a peptide hormone that plays a vital role in the regulation of carbohydrate and lipid metabolism. After removal of the precursor signal peptide, proinsulin is post-translationally cleaved into three peptides: the B chain and A chain peptides, which are covalently linked via two disulfide bonds to form insulin, and C-peptide. Binding of insulin to the insulin receptor (INSR) stimulates glucose uptake. A multitude of mutant alleles with phenotypic effects have been identified, including insulin-dependent diabetes mellitus, permanent neonatal diabetes diabetes mellitus, maturity-onset diabetes of the young type 10 and hyperproinsulinemia. There is a read-through gene, INS-IGF2, which overlaps with this gene at the 5' region and with the IGF2 gene at the 3' region. [...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "INS",
+          "aliases": "IDDM, IDDM1, IDDM2, ILPR, IRDN, MODY10, PNDM4",
+          "gene_description": "insulin"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ALB \u2014 albumin",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ALB\nGene name: albumin\nAliases / synonyms: FDAHT, HSA, PRO0883, PRO0903, PRO1341\nOrganism: Homo sapiens\nGene summary: This gene encodes the most abundant protein in human blood. This protein functions in the regulation of blood plasma colloid osmotic pressure and acts as a carrier protein for a wide range of endogenous molecules including hormones, fatty acids, and metabolites, as well as exogenous drugs. Additionally, this protein exhibits an esterase-like activity with broad substrate specificity. The encoded preproprotein is proteolytically processed to generate the mature protein. A peptide derived from this protein, EPI-X4, is an endogenous inhibitor of the CXCR4 chemokine receptor. [provided by RefSeq, Jul 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ALB",
+          "aliases": "FDAHT, HSA, PRO0883, PRO0903, PRO1341",
+          "gene_description": "albumin"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::12786284",
+          "title": "Extracellular Vesicles in Osteogenesis: Comparative Analysis of Stem Cell Sources, Conditioning Strategies, and In Vitro Models Toward Advanced Bone Regeneration",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12786284/",
+          "text": "6. Clinical Perspectives on Extracellular Vesicles for Bone Regeneration\nThe Regulatory Potential of Extracellular Vesicles in Osteonecrosis\nOsteonecrosis represents a clinical condition in which impaired vascularity compromises bone integrity, and EVs have recently been explored as regulators of osteogenesis and microenvironmental repair. Osteonecrosis (e.g., avascular necrosis of the femoral head) is characterized by osteocyte apoptosis and bone matrix degradation due to impaired blood supply, ultimately leading to structural collapse and functional loss [116]. Recent studies have highlighted the potential of EVs in regulating osteogenesis for osteonecrosis intervention [117,118,119]. In fact, the evidence indicates that intravenous infusion of urine derived stem cells (USC)-EVs during the early phase of glucocorticoids treatment mitigates angiogenic dysfunction, limits apoptosis in trabecular and marrow cells, and preserves bone integrity and microstructural organization in the femoral heads of rats [118]. In vitro experiments further confirmed that USC-EVs alleviate GC-mediated suppression of endothelial angiogenesis and apoptotic signaling [118]. Moreover, administration of BM-MSC-EVs enriched with miR-148a-3p in rats with osteonecrosis of the femoral head enhanced cell proliferation and osteogenic activity, thereby attenuating disease progression [119]. Mechanistically, miR-148a-3p targets Smad ubiquitination regulatory factor 1 (SMURF1), an E3 ubiquitin ligase that promotes the degradation of SMAD7, a key regulator of the TGF-\u03b2 signaling pathway involved in osteogenic differentiation. By inhibiting SMURF1, miR-148a-3p preserves SMAD7 levels and upregulates BCL2, an anti-apoptotic protein that supports bone marrow cell survival [119]. Collectively, the miR-148a-3p/SMURF1/SMAD7/BCL2 axis contributes to maintaining osteoblast viability and bone integrity, thereby alleviating osteonecrosis of the femoral head.\nAs intercellular signaling carriers, EVs transport bioactive molecules to precisely modulate target cell functions and they optimize the osteonecrotic microenvironment by inhibiting the release of inflammatory factors and reducing osteoblast apoptosis. In particular, it has been demonstrated that MSC-EVs can counteract zoledronic acid induced senescence in stem cells, osteoblasts, and fibroblasts, while concurrently reducing the expression of pro-inflammatory cytokines, including IL-6 and IL-8, as well as matrix metalloproteinases MMP-1 and MMP-3 [120]. In addition, EV-AT treatment enhanced the proliferation, migration, and tube formation capacity of HUVECs, which were otherwise suppressed by zoledronic acid [121]. Encouraging results came from HUVECs and BM-MSCs-EVs, that seem to improve the osteonecrosis of femoral head induced by glucocorticoid treatment in murine models [122,123], as well as from adipose tissue stem cells derived EVs overexpressing miR-378 [124]. Considering the impact that osteonecrosis of the femoral head can have on daily living activities and the scarce treatment options, these clinical EVs applications should be better investigated in human models [125]. Overall, EV-based approaches in osteonecrosis show promising translational potential by enhancing osteoblast survival, angiogenesis, and microenvironmental stability. However, the clinical application remains limited by the need for optimized delivery systems, dosing strategies, and safety validation.\n7. Extracellular Vesicles in Osteoporosis: Possible Therapeutic Targets\nBeyond osteonecrosis, EVs have also been explored for osteoporosis-related bone loss. Osteoporosis is characterized by reduced bone mass and impaired remodeling, and EVs are increasingly investigated as modulators of osteoblast\u2013osteoclast balance [126]. Data from clinical studies have displayed that serum EVs miRNAs are differentially expressed in postmenopausal osteoporosis. In particular, miR-3-766p and miR-3-1247p were found to be associated with reduced bone mineral density [127]. Likewise, exosomal circFAM63B suppresses bone regeneration, and may be a target for anti-osteoporosis therapies as with the aforementioned microRNAs [128].",
+          "cos_sim_score": 0.5182090997695923,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9406723",
+          "title": "Effects of Extracellular Vesicles from Osteogenic Differentiated Human BMSCs on Osteogenic and Adipogenic Differentiation Capacity of Na\u00efve Human BMSCs",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9406723/",
+          "text": "1. Introduction\nIt is known that both osteoblasts and bone-marrow adipocytes derive from common precursor cells present in the bone marrow stroma, called mesenchymal stem cells [1,2,3]. Bone-marrow-derived mesenchymal stem cells (BMSCs) are able to differentiate into chondrocytes, adipocytes and osteoblasts and play a crucial role in bone repair after trauma. In addition, the cross-talk between adipose tissue and bone constitutes a homeostatic feedback loop with adipose tissue and bone regulating each other in a complex feedback system [4]. Therefore, any adipogenic or osteogenic differentiation disorder of BMSCs may contribute to bone loss during aging, and some pathological processes are accompanied by increased bone marrow adipogenesis. Accumulating evidence has clearly shown that excessive steroid application can cause a shift in the differentiation balance between osteoblasts and adipocytes, which promotes adipogenic and suppresses osteogenic differentiation of BMSCs [5], often resulting in osteonecrosis. Moreover, increasing age and osteoporotic bone disorders could facilitate adipogenic differentiation and inhibit the osteogenic differentiation of BMSCs. The accumulation of adipose tissue in the medullary cavity, which may lead to damaging the vascular endothelium, eventually results in decrease and interruption of the vascular flow in bone. Catabolic bone structural changes are likely to be the consequence [6,7,8]. Furthermore, a reduced blood supply to the bone can cause BMSCs and bone marrow to be necrotic, thereby directly affecting bone repair and reconstruction.\nExtracellular vesicles (EVs) are small particles, sized 30\u20131000 nm, enclosed by a lipid bilayer and released by a wide range of cell types [9,10]. EVs are enriched with bioactive molecules such as lipids, proteins, mRNAs and miRNAs, and they can function as cell-to-cell communicators, as disease state transmitters, and as drug delivery vehicles in various physiological and pathophysiological processes [9,11]. In addition, the use of EVs as cell-free therapeutic tools may avoid complications such as excess immunogenicity and loss of cell viability or functionality, compared to the direct implantation of cells into the host tissues (e.g., direct implantation of MSCs into cartilage) [12,13].\nDue to the promising therapeutic approach of using EVs for the treatment of non-unions after bone fracture or osteonecrosis of the femoral head, the interest in EV-based therapies in bone regeneration is increasing [14,15,16]. It has been shown that EVs derived from BMSCs can promote bone regeneration [13,14], and that there are changes in the EVs cargo and composition due to the differentiation status of the parent cells (e.g., BMSCs undergoing osteogenic differentiation) [17,18,19,20]. These studies showed that EVs isolated from BMSCs in the early or mid-stage of the osteogenic differentiation process have stronger pro-osteogenic effects than EVs from na\u00efve BMSCs. However, none of those studies investigated the effects of EVs derived from osteogenic differentiated BMSCs on the adipogenic differentiation capacity of BMSCs. Thus, to gain a better inside into the effects of EVs derived from human (h)BMSCs during different stages of osteogenic differentiation on their pro-osteogenic differentiation capacity, our first aim was to determine the role of different EV groups (from na\u00efve or from osteogenic differentiated hBMSCs on metabolism of na\u00efve hBMSCs (target cells) by analyzing apoptosis, viability, and proliferation after EV treatment. Subsequently, we investigated the EV\u2019s cargo and the effects of EVs derived from hBMSCs during different stages of osteogenic differentiation on the osteogenic and adipogenic differentiation capacity of na\u00efve hBMSCs.\n2. Materials and Methods\nA schematic illustration of the experimental design is shown in Figure 1.\n2.1. Ethical Statement\nThis study has been approved by the local ethics committee (MSCs: Ethikkommission, No. 14-101-0189, University of Regensburg, email: ethikkommission@klinik.ukr.de), and patients\u2019 written informed consent has been obtained.\n2.2. Isolation and Culture of Human BMSCs",
+          "cos_sim_score": 0.4789885878562927,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9406723",
+          "title": "Effects of Extracellular Vesicles from Osteogenic Differentiated Human BMSCs on Osteogenic and Adipogenic Differentiation Capacity of Na\u00efve Human BMSCs",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9406723/",
+          "text": "Thus, we speculate that osteogenic EVs could serve as an intercellular communication system between bone and progenitor cells for transporting factors affecting lipid homeostasis, which in turn affect bone marrow adipose tissue formation negatively (Figure 9).\nFinally, bone loss and reduced bone formation is accompanied by increased marrow adiposity in osteoporosis. This is a major clinical sequela for patients with malignant diseases (e.g., lymphoma, leukaemia) undergoing chemotherapy, radiation therapy or recovering from osteoporotic fractures [54]. Therefore, if an agent or drug could alter the cellular lineage allocation early in the pathologic bone marrow to favor osteogenesis and suppress adipogenesis from precursor MSC [55], this could have a major inhibiting effect on osteoporosis morbidity and tremendous cost savings.\n5. Conclusions\nIn conclusion, the present study shows that EVs, both from na\u00efve and osteogenic differentiated hBMSCs, do improve the viability, and reduce the apoptosis, of na\u00efve hBMSCs. EVs derived from hBMSCs in the late stage of osteogenic differentiation promote the osteogenic differentiation potential of na\u00efve hBMSCs to a greater extent than EVs derived from na\u00efve hBMSCs. Both EV groups have distinct protein profiles, with pro-osteogenic and anti-adipogenic proteins encapsulated preferentially in osteogenic EVs. EVs treatment might, therefore, be a promising non-cellular and non-drug-mediated approach to positively influence bone health. Our data speculate that osteogenic EVs exert positive effects on the osteogenic differentiation capacity of precursor cells, and negative effects on the adipogenic differentiation capacity of hBMSCs. We hypothesize that these EVs can serve as an intercellular communication system between bone tissue and progenitor cells for transporting osteogenic hormones/factors, which in turn affect bone marrow adipose tissue formation negatively. This interplay supports the theory of an endocrine circuit within the skeleton functioning as a ductless gland.",
+          "cos_sim_score": 0.44201433658599854,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9406723",
+          "title": "Effects of Extracellular Vesicles from Osteogenic Differentiated Human BMSCs on Osteogenic and Adipogenic Differentiation Capacity of Na\u00efve Human BMSCs",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9406723/",
+          "text": "hBMSCs-derived EVs, harvested at various stages along the osteogenic differentiation pathway of the parent cells can promote the osteogenic differentiation capacity of na\u00efve hBMSCs characterized by increased calcium deposits, enhanced ALP activity and by the induction of expression of the osteogenic marker genes OPN, BGLAP, RUNX2, ALP, and COL1A1. Our proteomic analysis data support those results, showing that several pro-osteogenic proteins such as fibronectin (FN1) and cartilage oligomeric matrix protein (COMP) were highly concentrated both in EVs_D0 and EVs_D28-35, with COMP being more concentrated in the EVs_D28_35. FN 1 is a macromolecular component of the extrafibrillar ECM, which promotes the osteogenic differentiation of stem cells by inducing the gene expression of osteogenic markers [36]. COMP, a critical component of the collagen fibrillar network, can contribute to enhanced osteogenesis by inducing ALP activity, matrix mineralization, and the expression of such genes as BGLAP, RUNX2, and ALP [37]. In particular, EVs derived from hBMSCs from late stages of osteogenic differentiation (EVs_D28, EVs_D35) support the osteogenic capacity of hBMSCs stronger compared to na\u00efve EVs. Our results are consistent with the study of Narayanan et al. [20], showing that EVs from hBMSCs undergoing osteogenic differentiation for 28 days can promote bone regeneration, both in vitro and in vivo, and were more efficient in inducing osteogenesis of the hBMSCs judged by increased matrix mineralization in vivo. A higher mineral content in the EVs from late-stage osteogenic differentiated BMSC might be critical for their higher osteogenic inducing potential.\nIncreased ALP activity is characteristic for committed pre-osteoblasts in an early stage of osteogenic differentiation, whereas in the mature osteoblasts ALP activity is reduced [38]. We suggest that EVs can transmit the differentiation state of the secreting parent cells to the target cells supported by our observation that EVs_D21 exhibited a stronger ability to enhance ALP activity compared to EVs from later differentiation stages [39]. Together with the results of the viability assay, the strongest effects were induced from the EVs_D21 group, suggesting that cell viability might decrease in the late phase of osteogenic differentiation. Our proteomic data support these data revealing that osteogenic differentiation affects EVs\u2019 cargos. Twenty-two pro-osteogenic proteins were more concentrated in osteogenic EVs compared to native EVs (Table 2). In particular, Fibulin-1 (FBLN1), Prolargin (PRELP) and Matrix Gla protein (MGP) concentration is increased from 63.867-fold to 100-fold in EVs_D28_35 compared to naive EVs. FBLN1 was recently described as a new positive modulator of bone repair and regeneration [40]. PRELP as a collagen-binding proteoglycan, which is highly expressed in the developing bone can inhibit osteoclastogenesis and modulate osteoblast differentiation [41]. MGP can promote osteoblast differentiation and mineralization [42]. Furthermore, our GO analysis concerning molecular functions and cell components revealed upregulation of proteins involved in ECM homeostasis, ECM-related protein complexes and binding (fibronectin, a variety of laminins and collagens) [43], and focal adhesion. In bone, the ECM is an intricate dynamic microenvironment that plays an essential role by instructing the differentiation process of BMSCs to osteoblasts and by favoring the absorption of bone by osteoclasts [44]. Focal adhesion plaques are specialized structures formed at the cell\u2013ECM contact points, which critically regulate intracellular signaling after ECM\u2013receptor interaction [45].\nIn addition, KEGG enrichment analysis identified upregulated intracellular signaling pathway components related to bone regeneration in the osteogenic EVs compared to native EVs. Therefore, ECM\u2013receptor interaction and PI3K/Akt signaling pathway components revealed the strongest regulation, and activation of the PI3K/Akt pathway has been shown to play a key role in osteoblast proliferation, differentiation and bone formation [46]. This might be one of the underlying molecular reasons why EVs_D28-35 are more efficient in inducing osteogenesis. Cell surface receptors such as integrin receptors are critical in mediating the transmission of external stimuli into the cell, and ECM substrates can promote osteogenic differentiation of MSCs through ECM\u2013receptor interaction (e.g., via integrin receptors) [45].",
+          "cos_sim_score": 0.43523675203323364,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12786284",
+          "title": "Extracellular Vesicles in Osteogenesis: Comparative Analysis of Stem Cell Sources, Conditioning Strategies, and In Vitro Models Toward Advanced Bone Regeneration",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12786284/",
+          "text": "Moreover, the differentiation strategies adopted to induce osteogenesis in donor cells ranging from chemical induction to mechanical stimulation or hypoxia have been shown to influence the EV cargo composition and, consequently, their biological activity [10]. This opens up useful possibilities for engineering EVs with enhanced osteogenic potential through preconditioning or tailored culture systems.\nHowever, to better assess the function of EVs in promoting osteogenesis, novel in vitro models are also being explored. Three-dimensional systems and, in particular, bone organoids represent a promising tool for studying complex multicellular interactions and spatially organized tissue development [11]. These models provide a more physiologically relevant environment compared to traditional 2D cultures and may serve as platforms for testing EV-mediated effects on bone formation and remodeling.\nIn this review, we aim to provide a comprehensive overview of the current knowledge on EVs in osteogenesis, with a focus on the comparing EVs derived from different stem cell sources, evaluating the impact of various differentiation strategies on EV bioactivity and exploring the potential of bone organoids as next-generation platforms to study EV function in a controlled and biomimetic context (Figure 1).\nFinally, in this review, we extend beyond previous overviews by (1) providing a comparative analysis of EVs derived from multiple stem cell sources and outlining their relative advantages and limitations for bone repair; (2) integrating emerging conditioning and engineering approaches with both in vitro and in vivo evidence; and (3) dedicating a focused discussion on current and potential clinical applications.\n2. Osteogenesis\nIt is well known that bone formation progresses through three interconnected stages: cell proliferation, differentiation, and matrix mineralization (Figure 2) [12]. Osteoblasts, which mainly arise from BM-MSCs with strong osteogenic potential, are central to this process [13]. A key indicator of early bone formation is the bone-specific enzyme alkaline phosphatase (ALP), whose expression closely reflects the level of osteoblast differentiation. As the ALP activity increases, pre-osteoblasts more effectively mature into fully developed osteoblasts, highlighting the enzyme\u2019s role in regulating the transition from immature to mature bone-forming cells [14]. Moreover, osteocalcin (OCN) is a bone-specific protein primarily produced and secreted by osteoblasts, with the majority being incorporated into the bone matrix, making it a well-recognized marker of the late stage of bone formation [14]. Furthermore, both runt-related transcription factor 2 (RUNX2) and Osterix (OSX) serve as key indicators of osteogenic differentiation [15]. Increased expression of OSX facilitates the progression of osteogenic differentiation, whereas its absence leads to a deficiency of osteoblasts, thus underscoring its essential role in bone development [15].\n3. Stem Cell-Derived EVs in Osteogenesis\nThis section presents a comparative overview of the most commonly used stem cell sources for generating EVs with osteogenic activity. We explore the unique properties of EVs derived from BM-MSCs, ADSCs, umbilical cord MSCs (UC-MSCs), iPSCs, and alternative stromal populations, providing a synthesis of the current evidence and highlighting key differences in their regenerative efficacy.",
+          "cos_sim_score": 0.4026601314544678,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

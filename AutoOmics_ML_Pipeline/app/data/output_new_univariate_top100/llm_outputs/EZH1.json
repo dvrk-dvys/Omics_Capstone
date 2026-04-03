@@ -1,0 +1,225 @@
+{
+  "probe_id": "11717324_at",
+  "gene_symbol": "EZH1",
+  "score": 1.0,
+  "SD_TestAUC": 0.0811440825933579,
+  "abs_fold_change": 0.7287,
+  "probe_count": 1,
+  "probe_ids": "11717324_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.7287,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T22:31:26",
+  "interpretation": "EZH1 encodes a histone-lysine N-methyltransferase that is part of the Polycomb repressive complex 2 (PRC2), which plays a crucial role in gene silencing through methylation of histone H3 at lysine 27 (H3K27). This epigenetic modification is essential for maintaining stem cell pluripotency and regulating differentiation processes. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), alterations in histone methylation, particularly involving EZH1 and its counterpart EZH2, may influence the differentiation of mesenchymal stem cells (MSCs) into osteoblasts, which is critical for bone health. However, the evidence linking EZH1 directly to SONFH is weak, as no specific studies were found that directly associate EZH1 with this condition. Therefore, while EZH1 may play a role in the broader context of osteogenic differentiation and bone health, its potential as a biomarker for early detection of SONFH remains uncertain and primarily speculative. [INFERENCE]",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "EZH1 may influence osteogenic differentiation processes relevant to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "EZH1 (Q92800). https://www.uniprot.org/uniprotkb/Q92800",
+    "EZH1 (Q92800-3). https://www.uniprot.org/uniprotkb/Q92800-3",
+    "EZH1 (Q92800-4). https://www.uniprot.org/uniprotkb/Q92800-4",
+    "EZH1 \u2014 EZH1. https://platform.opentargets.org/target/ENSG00000108799",
+    "EZH1 \u2194 Neurodevelopmental disorder. https://platform.opentargets.org/target/ENSG00000108799/associations",
+    "EZH1 \u2194 Intellectual disability. https://platform.opentargets.org/target/ENSG00000108799/associations",
+    "EZH1 \u2194 dermatitis. https://platform.opentargets.org/target/ENSG00000108799/associations",
+    "EZH1 \u2194 Eczematoid dermatitis. https://platform.opentargets.org/target/ENSG00000108799/associations",
+    "EZH1 \u2014 enhancer of zeste 1 polycomb repressive complex 2 subunit (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EZH2 \u2014 enhancer of zeste 2 polycomb repressive complex 2 subunit (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "RUNX1 \u2014 RUNX family transcription factor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MECP2 \u2014 methyl-CpG binding protein 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "LOC128669077 \u2014 EZH1 +46 kb erythroid enhancer (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Role and mechanisms of histone methylation in osteogenic/odontogenic differentiation of dental mesenchymal stem cells (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11937254/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8755,
+    "completion_tokens": 368,
+    "total_tokens": 9123,
+    "estimated_cost_usd": 0.001534
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q92800",
+          "title": "EZH1 (Q92800)",
+          "url": "https://www.uniprot.org/uniprotkb/Q92800",
+          "text": "Protein: Histone-lysine N-methyltransferase EZH1\nFunction: Polycomb group (PcG) protein. Catalytic subunit of the PRC2/EED-EZH1 complex, which methylates 'Lys-27' of histone H3, leading to transcriptional repression of the affected target gene. Able to mono-, di- and trimethylate 'Lys-27' of histone H3 to form H3K27me1, H3K27me2 and H3K27me3, respectively. Required for embryonic stem cell derivation and self-renewal, suggesting that it is involved in safeguarding embryonic stem cell identity. Compared to EZH2-containing complexes, it is less abundant in embryonic stem cells, has weak methyltransferase activity and plays a less critical role in forming H3K27me3, which is required for embryonic stem cell identity and proper differentiation",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q92800-3",
+          "title": "EZH1 (Q92800-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q92800-3",
+          "text": "Protein: Isoform 3 of Histone-lysine N-methyltransferase EZH1",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q92800-4",
+          "title": "EZH1 (Q92800-4)",
+          "url": "https://www.uniprot.org/uniprotkb/Q92800-4",
+          "text": "Protein: Isoform 4 of Histone-lysine N-methyltransferase EZH1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000108799::function",
+          "title": "EZH1 \u2014 EZH1",
+          "url": "https://platform.opentargets.org/target/ENSG00000108799",
+          "text": "Function: Polycomb group (PcG) protein. Catalytic subunit of the PRC2/EED-EZH1 complex, which methylates 'Lys-27' of histone H3, leading to transcriptional repression of the affected target gene. Able to mono-, di- and trimethylate 'Lys-27' of histone H3 to form H3K27me1, H3K27me2 and H3K27me3, respectively. Required for embryonic stem cell derivation and self-renewal, suggesting that it is involved in safeguarding embryonic stem cell identity. Compared to EZH2-containing complexes, it is less abundant in embryonic stem cells, has weak methyltransferase activity and plays a less critical role in forming H3K27me3, which is required for embryonic stem cell identity and proper differentiation. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000108799::EFO_0010642",
+          "title": "EZH1 \u2194 Neurodevelopmental disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000108799/associations",
+          "text": "Disease: Neurodevelopmental disorder\nDescription: A childhood disorder that has a neurological basis and manifests as a developmental disability.\nAssociation score: 0.430",
+          "cos_sim_score": 0.4296526721139111,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000108799::HP_0001249",
+          "title": "EZH1 \u2194 Intellectual disability",
+          "url": "https://platform.opentargets.org/target/ENSG00000108799/associations",
+          "text": "Disease: Intellectual disability\nDescription: The term intellectual disability or intellectual developmental disorder is used to describe significantly sub-average intellectual and adaptive functioning based on clinical assessment and as measured by individually administered, appropriately normed, standardized and validated tests of intellectual functioning and adaptive behavior, with onset during the developmental period from infancy through adolescence.\nAssociation score: 0.370",
+          "cos_sim_score": 0.36994943453938645,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000108799::MONDO_0002406",
+          "title": "EZH1 \u2194 dermatitis",
+          "url": "https://platform.opentargets.org/target/ENSG00000108799/associations",
+          "text": "Disease: dermatitis\nDescription: An inflammatory process affecting the skin. Signs include red rash, itching, and blister formation. Representative examples are contact dermatitis, atopic dermatitis, and seborrheic dermatitis.\nAssociation score: 0.165",
+          "cos_sim_score": 0.16547425493057139,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000108799::HP_0000964",
+          "title": "EZH1 \u2194 Eczematoid dermatitis",
+          "url": "https://platform.opentargets.org/target/ENSG00000108799/associations",
+          "text": "Disease: Eczematoid dermatitis\nDescription: Eczema is a form of dermatitis that is characterized by scaly, pruritic, erythematous lesions located on flexural surfaces.\nAssociation score: 0.161",
+          "cos_sim_score": 0.16060406025185844,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "EZH1 \u2014 enhancer of zeste 1 polycomb repressive complex 2 subunit",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EZH1\nGene name: enhancer of zeste 1 polycomb repressive complex 2 subunit\nAliases / synonyms: KMT6B\nOrganism: Homo sapiens\nGene summary: EZH1 is a component of a noncanonical Polycomb repressive complex-2 (PRC2) that mediates methylation of histone H3 (see MIM 602812) lys27 (H3K27) and functions in the maintenance of embryonic stem cell pluripotency and plasticity (Shen et al., 2008 [PubMed 19026780]).[supplied by OMIM, Mar 2009]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EZH1",
+          "aliases": "KMT6B",
+          "gene_description": "enhancer of zeste 1 polycomb repressive complex 2 subunit"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EZH2 \u2014 enhancer of zeste 2 polycomb repressive complex 2 subunit",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EZH2\nGene name: enhancer of zeste 2 polycomb repressive complex 2 subunit\nAliases / synonyms: ENX-1, ENX1, EZH2b, KMT6, KMT6A, WVS, WVS2\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the Polycomb-group (PcG) family. PcG family members form multimeric protein complexes, which are involved in maintaining the transcriptional repressive state of genes over successive cell generations. This protein associates with the embryonic ectoderm development protein, the VAV1 oncoprotein, and the X-linked nuclear protein. This protein may play a role in the hematopoietic and central nervous systems. Multiple alternatively splcied transcript variants encoding distinct isoforms have been identified for this gene. [provided by RefSeq, Feb 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EZH2",
+          "aliases": "ENX-1, ENX1, EZH2b, KMT6, KMT6A, WVS, WVS2",
+          "gene_description": "enhancer of zeste 2 polycomb repressive complex 2 subunit"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "RUNX1 \u2014 RUNX family transcription factor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RUNX1\nGene name: RUNX family transcription factor 1\nAliases / synonyms: AML1, AML1-EVI-1, AMLCR1, CBF2alpha, CBFA2, EVI-1, PEBP2aB, PEBP2alpha\nOrganism: Homo sapiens\nGene summary: Core binding factor (CBF) is a heterodimeric transcription factor that binds to the core element of many enhancers and promoters. The protein encoded by this gene represents the alpha subunit of CBF and is thought to be involved in the development of normal hematopoiesis. Chromosomal translocations involving this gene are well-documented and have been associated with several types of leukemia. Three transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RUNX1",
+          "aliases": "AML1, AML1-EVI-1, AMLCR1, CBF2alpha, CBFA2, EVI-1, PEBP2aB, PEBP2alpha",
+          "gene_description": "RUNX family transcription factor 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MECP2 \u2014 methyl-CpG binding protein 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MECP2\nGene name: methyl-CpG binding protein 2\nAliases / synonyms: AUTSX3, MRX16, MRX79, MRXS13, MRXSL, PPMX, RS, RTS, RTT\nOrganism: Homo sapiens\nGene summary: DNA methylation is the major modification of eukaryotic genomes and plays an essential role in mammalian development. Human proteins MECP2, MBD1, MBD2, MBD3, and MBD4 comprise a family of nuclear proteins related by the presence in each of a methyl-CpG binding domain (MBD). Each of these proteins, with the exception of MBD3, is capable of binding specifically to methylated DNA. MECP2, MBD1 and MBD2 can also repress transcription from methylated gene promoters. In contrast to other MBD family members, MECP2 is X-linked and subject to X inactivation. MECP2 is dispensible in stem cells, but is essential for embryonic development. MECP2 gene mutations are the cause of most cases of Rett syndrome, a progressive neurologic developmental disorder and one of the most common causes of cognitive dis...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MECP2",
+          "aliases": "AUTSX3, MRX16, MRX79, MRXS13, MRXSL, PPMX, RS, RTS, RTT",
+          "gene_description": "methyl-CpG binding protein 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "LOC128669077 \u2014 EZH1 +46 kb erythroid enhancer",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: LOC128669077\nGene name: EZH1 +46 kb erythroid enhancer\nOrganism: Homo sapiens\nGene summary: This genomic region, which is located approximately 46 kb downstream of the EZH1 (enhancer of zeste 1 polycomb repressive complex 2 subunit) gene transcription start site, has an enhancer signature and is associated with the GATA1 and TAL1 transcription factors in committed erythroid progenitor cells. It was validated as an active enhancer by reporter assays in K562 erythroleukemia cells. It was also validated as an EZH1 positively-acting cis-regulatory element based on CRISPR/Cas9-mediated deletions in K562 cells. [provided by RefSeq, Feb 2023]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "LOC128669077",
+          "aliases": "",
+          "gene_description": "EZH1 +46 kb erythroid enhancer"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::11937254",
+          "title": "Role and mechanisms of histone methylation in osteogenic/odontogenic differentiation of dental mesenchymal stem cells",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11937254/",
+          "text": "EZH2\nNumerous studies have identified that Ezh2 as a key regulator of osteogenic differentiation and skeletal development.110,111 Overexpression of EZH2 facilitates lipogenic differentiation of MSCs.112 Under osteogenic induction conditions, EZH2 expression is downregulated and segregated from the RUNX2 promoter. Chromatin accessibility in osteoblasts may be maintained through the synergistic action of Runx2 and its potential co-regulators, including Sp7 and AP-1, on enhancer modules that regulate osteoblast development.113 The conditional knockdown of Ezh2 in undifferentiated MSCs resulted in defects in skeletal morphology and bone formation.114,115 EZH2 exerts its effects not only by directly regulating signaling modules and specific TFs, but also through targeting of numerous novel genes(including ZBTB16, MX1, and FHL1) that mediate the osteogenic differentiation of MSCs110 As a histone methylation transferase, EZH2 enhances migration and chemotaxis of DMSCs.116 Conversely, evidence indicates that it negatively regulates odontogenic differentiation.117\u2013119 EZH2 has been observed to inhibit osteogenic differentiation and mineralization of hDPCs through the \u03b2-catenin pathway, while simultaneously promoting their proliferation.117\nLong non-coding RNAs (lncRNAs) are defined as transcripts exceeding 200 nucleotides in length, and some lncRNAs interact with PRC2 and direct it to specific sites in chromatin.119 In contrast, EZH2, a catalytic component of PRC2, have been observed to bind to RNA and, via EZH2-mediated trimethylation of H3K27, epigenetically silences KLF transcription, repress the expression of ALP, Osx, and OCN, and stimulate mineralization.120 A recent study has found that the mechanosensitive lncRNA SNHG8 exerts a regulatory effect on EZH2 in PDLSCs, thereby inhibiting osteogenic differentiation.121 Mechanical force has been shown to reduce EZH2 expression, accompanied by a delayed decrease in H3K27me3 expression and a significant decrease in H3K4me3 enrichment within the SNHG8 promoter region and 250\u2009bp upstream of it. The results of ChIP-seq corroborated the mutual regulation of SNHG8 and EZH2 and demonstrated that the reduction in SNHG8 expression after mechanical force stretch was attributed to the diminution in the activation of its promoter. This indicated that the reduction in EZH2 expression was a consequence of decreased promoter activation. This indicates that the reduction of EZH2 is a pivotal epigenetic event in the mechanical response related to the maintenance of superenhancer stability and stem cell function. CARMN is an evolutionarily conserved lncRNA that is specific to smooth muscle cells and promotes the odontogenic differentiation of DPCs by impairing EZH2.122\nKDM6A",
+          "cos_sim_score": 0.5277180671691895,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11937254",
+          "title": "Role and mechanisms of histone methylation in osteogenic/odontogenic differentiation of dental mesenchymal stem cells",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11937254/",
+          "text": "The histone demethylase KDM7A has been shown to exerts a pivotal function in regulating bone homeostasis by modulating the differentiation of osteoblasts and osteoclasts. KDM7A has been observed to upregulate the expression of fibroblast activating protein alpha (FAP) and nuclear factor \u03baB ligand receptor activator (RANKL) in BM-MSCs by removing H3K9me2 and H3K27me2 markers from FAP and RANKL promoters. Inhibition of KDM7A has been observed to result in increased FAP expression and inactivation of canonical Wnt signaling. Concurrently, this inhibition has been shown to promote osteoclast differentiation and bone resorption through enhanced RANKL expression.159\nOsteoarthritis\nKDM6A has been shown to be involved in the process of chondrogenic differentiation of PDLSCs by demethylation of SOX9, Col2a1, and ACAN. The upregulation of KDM6A, or the application of EZH2 inhibitors, has been observed to have the potential to enhance the process of mesenchymal stem cell-mediated cartilage regeneration in cases of inflammatory tissue destruction, a condition that is exemplified by osteoarthritis.126\nIn osteoarthritis, a reduced methylation of lysine 79 on histone H3 (H3K79me) has been identified as a protective epigenetic mechanism. The study found that preservation of H3K79 methylation with KDM7A/B inhibitors, such as daminozide, was targeted to protect bone joints in intra-articular therapy in mice.160\nKDM3A and G9A are a pair of antagonistic histone modification enzymes. KDM3A has been shown to attenuate the ubiquitination of SOX9 by demethylating lysine (K) 68 residues, thereby enhancing the stability of SOX9. In contrast, G9A has been shown to promote the ubiquitination and subsequent degradation of SOX9 by methylating K68 residues. The highly specific G9A inhibitor BIX-01294 has been shown to significantly induce the cartilage differentiation of DPSCs, providing a theoretical basis for enhancing the clinical application of DPSCs in cartilage tissue engineering therapy.161 Consequently, a combination strategy that targets multiple components of epigenetic mechanisms and utilizes a combination of synthetic interactions or immune blocking is expected to enhance the function of DMSCs.\nPotential therapeutic targets related to histone methylation regulation of DMSCs\nVital pulp treatment\nAs previously stated, conventional dentistry is costly, intrusive, and based on a defunct mechanical understanding of dental diseases. In contrast, contemporary biological dentistry utilizes a cellular approach, focusing on the stimulation of cell activity and the promotion of regeneration.162 The development of epigenetic therapy drugs for pulp capping materials currently includes HDAC inhibitors, which have been shown to reduce inflammation and stimulate restorative dentin formation.162,163\nHowever, there is still more that researchers need to learn about how changes to the building blocks of histone methylation affect the regeneration of pulp dentin complex. EZH2 can be used as a potential regulator of pulpitis and regeneration,32,164 and the development of inhibitors or small molecule agents to interfere with its function may be a viable potential therapeutic strategy.\nOrthodontic treatment\nIt has been demonstrated that the accumulation of advanced glycation end products (AGEs) in the periodontal tissue of type 2 diabetes patients contributes to enhanced bone fragility.16 This has been identified as a significant factor hindering orthodontic tooth movement and compromising the efficacy of orthodontic treatment. The targeting of the AGE/RAGE pathway or the enhancement of KDM6B function has been demonstrated to increase the antioxidant capacity of PDLSCs, inhibit cell senescence, and promote osteogenic differentiation. A combination of epigenetic or Wnt pathway modulators with RAGE blockers has the potential to enhance the efficacy of orthodontic treatment in patients with diabetes.165\nMaxillofacial bone defect",
+          "cos_sim_score": 0.4557565152645111,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11937254",
+          "title": "Role and mechanisms of histone methylation in osteogenic/odontogenic differentiation of dental mesenchymal stem cells",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11937254/",
+          "text": "Table 2\nRole of H3K9 histone methylation modifications in Osteo-/Odontogenic differentiation of bone/dental-derived MSCs\nRole of H3K27 Histone methylation in Osteo-/Odontogenic differentiation\nH3K27me3 is associated with gene silencing and predominantly deposited in CpG-rich promoters. H3K27me3-labeled promoters can still be bound by general transcription factors and by suspended Pol II binding, and are therefore considered parthenogenetic heterochromatin, which exhibits a mechanistic profile distinct from that of H3K9me3.\nH3K27 methylation is mediated by the Polycomb Repressive Complex 2 (PRC2), which is composed of four core subunits: EZH2, SUZ12, EED, and RBAP46/48.49,105,106 (Fig. 5a) EZH2, the core component of PRC2, facilitates the addition of a methyl group to histone H3K27, ultimately contributing to the maintenance of gene silencing.107 SUZ12 and EED are essential for the enzymatic activity of EZH2. EZH2 contains a carboxy-terminal catalytic SET structural domain. During embryonic development, EZH2 reduces chromatin accessibility and promotes silencing of HOXA and HOXD cluster genes through H3K27 trimethylation-catalyzed nucleosome compaction.108,109Fig. 5Role of H3K27 histone methylation modification in osteo-/odontogenic differentiation of bone/dental-derived MSCs. a PRC2 protein complex. b EZH2 has been demonstrated to antagonize the function of KDM6A/B and to co-regulate the level of H3K27me3. c PRC2 core subunit EZH2 has been shown to catalyze H3K27 trimethylation and maintain gene silencing, thereby inhibiting the osteogenic differentiation of DMSCs. The specific demethylase KDM6A has been demonstrated to enhance the osteogenic differentiation potential of DMSCs by removing the H3K27me3 mark at the Runx2 and Ocn transcription start sites. KDM6B is required for osteogenic differentiation, with KDM6B binding to BMP2 and HOX genes and co-regulating downstream OSX, BGLAP, and SPP1 transcription\nFig. 5\nRole of H3K27 histone methylation modification in osteo-/odontogenic differentiation of bone/dental-derived MSCs. a PRC2 protein complex. b EZH2 has been demonstrated to antagonize the function of KDM6A/B and to co-regulate the level of H3K27me3. c PRC2 core subunit EZH2 has been shown to catalyze H3K27 trimethylation and maintain gene silencing, thereby inhibiting the osteogenic differentiation of DMSCs. The specific demethylase KDM6A has been demonstrated to enhance the osteogenic differentiation potential of DMSCs by removing the H3K27me3 mark at the Runx2 and Ocn transcription start sites. KDM6B is required for osteogenic differentiation, with KDM6B binding to BMP2 and HOX genes and co-regulating downstream OSX, BGLAP, and SPP1 transcription\nEZH2",
+          "cos_sim_score": 0.42555534839630127,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11937254",
+          "title": "Role and mechanisms of histone methylation in osteogenic/odontogenic differentiation of dental mesenchymal stem cells",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11937254/",
+          "text": "Osterix (OSX/Sp7)\nOSX/Sp7 is an osteoblast-specific TF expressed in dental embryonic mesenchymal cells. Novel variants of the OSX/Sp7 gene have been identified as a cause of recessive osteogenesis imperfecta, a disorder characterized by bone fragility and hearing impairment.33 Sp7/Osx regulates and influences zebrafish larval tooth development and bone mineralization.34 During osteoblast differentiation, the molecular switch OSX/Sp7 plays a crucial role in the formation of active chromatin states.35 Mice lacking Sp7 are unable to express osteoblast-associated genes such as SPARC(secreted protein, acidic and rich in cysteine), Spp1(secreted phosphoprotein 1)/osteopontin, BSP. Additionally, they exhibited a significant reduction in Cola1 expression, a major component of the bone matrix. Sp7 knockout in mice resulted in serious craniofacial malformations, dentin hypoplasia, and root abnormalities. However, initial tooth morphogenesis and dentin formation in the crowns were not impaired. SP7 is involved in bone and tooth formation through a variety of molecular mechanisms, including FGF and TGF-\u03b2/BMP signaling. CHIP-seq data revealed that OSX binds to the BSP promoter, thereby promoting osteoclastic differentiation and mineralization.36 SP7 has been demonstrated to promote dentinogenic cell differentiation by upregulating DSPP, DMP1, nestin, and ALP. Furthermore, Sp7 acts as a cofactor of Dlx5 and physically interacts with Dlx5. The Sp7-Dlx5 complex regulates osteoblast differentiation. Other TFs containing homologous structural domains, including Msx1/2, Satb2, and Alx4, may also interact with Sp7 in the osteogenic genome.34\nDentin salivary phosphoprotein (DSPP)\nDSPP represents the primary non-collagenous protein present in dentin, osteoblasts, and alveolar bone, and is essential for the normal mineralization of dentin and enamel.37 The Runx2 and OSX/Sp7 are essential for the differentiation of osteoblasts and odontoblasts, whereas DSPP exerts a regulatory effect on the latter process.38 The functions of DMP1 and DSPP in tooth formation and maintenance can be considered to be complementary and/or synergistic.39 It is hypothesized that Runx2 may affect the development of the tooth embryo before the bell stage, yet not during the subsequent stage. Osx may be consistently expressed in adult dentin and pulp cells, stimulating the differentiation and expression of DSPP via a non-Runx2-dependent signaling pathway in the later phase of tooth development. The BMP2 signaling pathway plays a critical role in the differentiation and maturation of odontoblasts. BMP2-deficient teeth display morphological features similar to dentinogenesis imperfecta (DGI), which is associated with mutations in the DMP1 and DSPP genes. Upregulation of BMP2-driven Dlx3, Dmp1, DSPP, and Sp7 promotes mesenchymal cell differentiation and biomineralization.40\nThe role of histone methylation regulation in the regulation of osteo-/odontogenic differentiation of DMSCs\nMechanisms of regulation of histone methylation\nThe basic unit of chromatin is the nucleosome, which is formed by the association of histones (H1, H2A, H2B, H3, and H4) with 147\u2009bp of DNA41,42 (Fig. 1). The DNA is densely wrapped in the nucleus of a eukaryotic cell, forming a tightly organized and compact structure that presents a significant challenge to transcription factors attempting to access the genes. The degree of chromatin openness or accessibility is a crucial factor influencing gene expression. This reflects the transcriptional activity of chromatin and represents a pivotal area of investigation in the regulation of gene expression. This field of study holds considerable significance in the context of epigenetic mapping, cell differentiation and development, and the pathogenesis of various diseases.Fig. 1Chromatin and nucleosome structure. Nucleosome is the basic structural unit of chromatin, DNA is wrapped around the nucleosome to form chromatin fibers, and then form chromosomes. Nucleosome consists of a dense octamer composed of histones H1, H2A, H2B, H3, and H4, and connecting region DNA\nFig. 1",
+          "cos_sim_score": 0.4238933324813843,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11937254",
+          "title": "Role and mechanisms of histone methylation in osteogenic/odontogenic differentiation of dental mesenchymal stem cells",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11937254/",
+          "text": "Table 3\nRole of H3K27 histone methylation modification in Osteo-/Odontogenic differentiation of bone/dental-derived MSCs\nEZH2\nKDM6A\nEZH2\nKDM6A/B\nTrimethylation of H3K27 is a repressive epigenetic marker essential for the expression of genes involved in tooth development. The PRC2 core subunit, EZH2, catalyzes H3K27 trimethylation and maintains gene silencing, thereby inhibiting the osteogenic differentiation of DMSCs. The specific demethylase, KDM6A, enhances the osteogenic differentiation potential of DMSCs by removing the H3K27me3 tag at the Runx2 and Ocn transcription start sites. KDM6B is required for osteogenic differentiation, binds to BMP2 and HOX, and regulates the downstream transcription of OSX, BGLAP, and SPP1. Ezh2 and KDM6A are epigenetic switches that function in concert to regulate the level of H3K27me3 in the promoter region of genes, thereby affecting the expression of regulatory genes associated with adipogenesis and osteogenesis137 (Fig. 5c).\nRole of bivalent chromatin in osteo-/odontogenic differentiation of DMSCs\nBivalent chromatin\nBivalent chromatin is an epigenetic state that has been identified as a mechanism for lineage commitment and the regulation of developmental gene expression. It is characterized by the presence of H3K4me3 and H3K27me3. Chromatin immunoprecipitation demonstrated that H3K4me3 and H3K27me3 simultaneously occupy certain promoters in epithelial cells. Bivalent chromatin is indispensable for maintaining stem cell pluripotency. It maintains a balance between promoter accessibility and long-range junctions to regulate the expression of developmental genes, such as the regulation of VEGF-responsive angiogenesis138 and the timing of progenitor cell progression to mature neurons,139 affecting tooth organ development65. These modifications, designated as \u201cbivalent structural domains,\u201d serve to maintain a stable state for the genes in question, which subsequently determines whether they are activated or repressed during the process of differentiation. For example, under osteogenic induction conditions, H3K4me3 levels on the RUNX2 promoter in periodontal progenitor cells increased significantly 7 days after induction and then declined rapidly at 14 days. H3K4me3 and H3K27me3 markers on the OSX promoter exhibited a continued decline during osteogenic induction, and ChIP-seq results showed that the inhibitory histone markers H3K9me3 and H3K27me3 were higher in PDL progenitors. These data suggested that alterations in histone dynamics at the promoter level that repress key mineralizing transcription factors regulate mineralization in DMSCs.\nH3K4 and H3K27",
+          "cos_sim_score": 0.41834017634391785,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

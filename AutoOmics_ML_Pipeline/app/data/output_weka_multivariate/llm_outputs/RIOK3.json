@@ -1,0 +1,225 @@
+{
+  "rf_rank": 12,
+  "probe_id": "11725951_at",
+  "gene_symbol": "RIOK3",
+  "score": 0.81,
+  "rf_n_nodes": 1,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 1.8623,
+  "log_fc": -1.8623,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 4,
+  "probe_ids": "11725951_at | 11725950_s_at | 11747125_a_at | 11749176_a_at",
+  "max_score": 0.81,
+  "mean_abs_fold_change": 1.9494,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T01:43:15",
+  "interpretation": "RIOK3 encodes a serine/threonine kinase involved in ribosome quality control and the regulation of immune responses. Its role in the integrated stress response suggests a potential connection to the cellular stress mechanisms induced by glucocorticoids, which are known to contribute to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH). While the retrieved evidence highlights RIOK3's involvement in cellular processes relevant to stress responses, there is no direct evidence linking RIOK3 specifically to SONFH or its pathophysiology. Therefore, the evidence is considered weak, and the biological inference is that RIOK3 may play a role in the cellular response to glucocorticoid-induced stress, which could be relevant in the context of SONFH. However, its utility as a biomarker for early detection of SONFH remains uncertain due to the lack of direct evidence.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "RIOK3 may be involved in the cellular stress response mechanisms associated with Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "RIOK3 (O14730). https://www.uniprot.org/uniprotkb/O14730",
+    "RIOK3 (O14730-2). https://www.uniprot.org/uniprotkb/O14730-2",
+    "RIOK3 \u2014 RIOK3. https://platform.opentargets.org/target/ENSG00000101782",
+    "RIOK3 \u2194 neuroinflammatory disorder. https://platform.opentargets.org/target/ENSG00000101782/associations",
+    "RIOK3 \u2194 neurodegeneration with ataxia, dystonia, and gaze palsy, childhood-onset. https://platform.opentargets.org/target/ENSG00000101782/associations",
+    "RIOK3 \u2194 COVID-19. https://platform.opentargets.org/target/ENSG00000101782/associations",
+    "RIOK3 \u2194 infection. https://platform.opentargets.org/target/ENSG00000101782/associations",
+    "RIOK3 \u2014 RIO kinase 3 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "AKT1 \u2014 AKT serine/threonine kinase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MYC \u2014 MYC proto-oncogene, bHLH transcription factor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MTOR \u2014 mechanistic target of rapamycin kinase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "UBC \u2014 ubiquitin C (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "NEDD4 regulates VEGF signaling and mTOR to promote angiogenesis and the cell cycle in steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12676940/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9131,
+    "completion_tokens": 319,
+    "total_tokens": 9450,
+    "estimated_cost_usd": 0.001561
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O14730",
+          "title": "RIOK3 (O14730)",
+          "url": "https://www.uniprot.org/uniprotkb/O14730",
+          "text": "Protein: Serine/threonine-protein kinase RIO3\nFunction: Serine/threonine-protein kinase involved in a ribosome quality control that takes place when ribosomes have stalled, leading to 18S non-functional rRNA decay and degradation of the 40S ribosomal subunit (PubMed:39947182, PubMed:39947183, PubMed:40022732). Acts downstream of RNF10: specifically recognizes and binds RPS2/us5 and RPS3/us3 monoubiquitinated by RNF10, promoting degradation of the 40S ribosomal subunit in a kinase-dependent manner (PubMed:39947182, PubMed:39947183, PubMed:40022732). The RNF10-RIOK3 ribosome quality control takes place in response to ribosome subunit imbalance or downstream the EIF2AK4/GCN2-mediated integrated stress response (ISR) (PubMed:39947182, PubMed:39947183, PubMed:40022732). Also involved in regulation of type I interferon (IFN)-dependent immune response, possibly by acting as an adapter protein essential for the recruitment of TBK1 to IRF3 (PubMed:24807708). Phosphorylates IFIH1 on 'Ser-828' interfering with IFIH1 filament assembly on long dsRNA and resulting in attenuated IFIH1-signaling (PubMed:25865883). Can inhibit CASP10 isoform 7-mediated activation of the NF-kappa-B signaling pathway (PubMed:19557502)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::O14730-2",
+          "title": "RIOK3 (O14730-2)",
+          "url": "https://www.uniprot.org/uniprotkb/O14730-2",
+          "text": "Protein: Isoform 2 of Serine/threonine-protein kinase RIO3",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000101782::function",
+          "title": "RIOK3 \u2014 RIOK3",
+          "url": "https://platform.opentargets.org/target/ENSG00000101782",
+          "text": "Function: Serine/threonine-protein kinase involved in a ribosome quality control that takes place when ribosomes have stalled, leading to 18S non-functional rRNA decay and degradation of the 40S ribosomal subunit (PubMed:39947182, PubMed:39947183, PubMed:40022732). Acts downstream of RNF10: specifically recognizes and binds RPS2/us5 and RPS3/us3 monoubiquitinated by RNF10, promoting degradation of the 40S ribosomal subunit in a kinase-dependent manner (PubMed:39947182, PubMed:39947183, PubMed:40022732). The RNF10-RIOK3 ribosome quality control takes place in response to ribosome subunit imbalance or downstream the EIF2AK4/GCN2-mediated integrated stress response (ISR) (PubMed:39947182, PubMed:39947183, PubMed:40022732). Also involved in regulation of type I interferon (IFN)-dependent immune response, possibly by acting as an adapter protein essential for the recruitment of TBK1 to IRF3 (PubMed:24807708). Phosphorylates IFIH1 on 'Ser-828' interfering with IFIH1 filament assembly on long dsRNA and resulting in attenuated IFIH1-signaling (PubMed:25865883). Can inhibit CASP10 isoform 7-mediated activation of the NF-kappa-B signaling pathway (PubMed:19557502).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101782::EFO_0020092",
+          "title": "RIOK3 \u2194 neuroinflammatory disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000101782/associations",
+          "text": "Disease: neuroinflammatory disorder\nDescription: A hypersensitivity reaction type II disease that involves the central nervous system.\nAssociation score: 0.195",
+          "cos_sim_score": 0.19464271984385612,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101782::MONDO_0014940",
+          "title": "RIOK3 \u2194 neurodegeneration with ataxia, dystonia, and gaze palsy, childhood-onset",
+          "url": "https://platform.opentargets.org/target/ENSG00000101782/associations",
+          "text": "Disease: neurodegeneration with ataxia, dystonia, and gaze palsy, childhood-onset\nAssociation score: 0.118",
+          "cos_sim_score": 0.11826555349910459,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101782::MONDO_0100096",
+          "title": "RIOK3 \u2194 COVID-19",
+          "url": "https://platform.opentargets.org/target/ENSG00000101782/associations",
+          "text": "Disease: COVID-19\nDescription: A disease caused by infection with severe acute respiratory syndrome coronavirus 2.\nAssociation score: 0.091",
+          "cos_sim_score": 0.09097550187868747,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101782::EFO_0000544",
+          "title": "RIOK3 \u2194 infection",
+          "url": "https://platform.opentargets.org/target/ENSG00000101782/associations",
+          "text": "Disease: infection\nDescription: The state of being infected such as from the introduction of a foreign agent such as serum, vaccine, antigenic substance or organism.\nAssociation score: 0.086",
+          "cos_sim_score": 0.08605087800040609,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "RIOK3 \u2014 RIO kinase 3",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RIOK3\nGene name: RIO kinase 3\nAliases / synonyms: SUDD\nOrganism: Homo sapiens\nGene summary: This gene was first identified by the similarity of its product to the Aspergillus nidulans SUDD protein. This gene is now recognized as a member of the right open reading frame (RIO) kinase gene family. This gene encodes a serine/threonine kinase that localizes to the cytoplasm and plays a role in the processing of the pre-40 S ribosomal subunit. Alternative splicing results in multiple transcript variants. [provided by RefSeq, Jan 2017]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RIOK3",
+          "aliases": "SUDD",
+          "gene_description": "RIO kinase 3"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "AKT1 \u2014 AKT serine/threonine kinase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AKT1\nGene name: AKT serine/threonine kinase 1\nAliases / synonyms: AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA\nOrganism: Homo sapiens\nGene summary: This gene encodes one of the three members of the human AKT serine-threonine protein kinase family which are often referred to as protein kinase B alpha, beta, and gamma. These highly similar AKT proteins all have an N-terminal pleckstrin homology domain, a serine/threonine-specific kinase domain and a C-terminal regulatory domain. These proteins are phosphorylated by phosphoinositide 3-kinase (PI3K). AKT/PI3K forms a key component of many signalling pathways that involve the binding of membrane-bound ligands such as receptor tyrosine kinases, G-protein coupled receptors, and integrin-linked kinase. These AKT proteins therefore regulate a wide variety of cellular functions including cell proliferation, survival, metabolism, and angiogenesis in both normal and malignant cells. AKT proteins ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AKT1",
+          "aliases": "AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA",
+          "gene_description": "AKT serine/threonine kinase 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MYC \u2014 MYC proto-oncogene, bHLH transcription factor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MYC\nGene name: MYC proto-oncogene, bHLH transcription factor\nAliases / synonyms: MRTL, MYCC, bHLHe39, c-Myc\nOrganism: Homo sapiens\nGene summary: This gene is a proto-oncogene and encodes a nuclear phosphoprotein that plays a role in cell cycle progression, apoptosis and cellular transformation. The encoded protein forms a heterodimer with the related transcription factor MAX. This complex binds to the E box DNA consensus sequence and regulates the transcription of specific target genes. Amplification of this gene is frequently observed in numerous human cancers. Translocations involving this gene are associated with Burkitt lymphoma and multiple myeloma in human patients. There is evidence to show that translation initiates both from an upstream, in-frame non-AUG (CUG) and a downstream AUG start site, resulting in the production of two isoforms with distinct N-termini. [provided by RefSeq, Aug 2017]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MYC",
+          "aliases": "MRTL, MYCC, bHLHe39, c-Myc",
+          "gene_description": "MYC proto-oncogene, bHLH transcription factor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MTOR \u2014 mechanistic target of rapamycin kinase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MTOR\nGene name: mechanistic target of rapamycin kinase\nAliases / synonyms: FRAP, FRAP1, FRAP2, RAFT1, RAPT1, SKS\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene belongs to a family of phosphatidylinositol kinase-related kinases. These kinases mediate cellular responses to stresses such as DNA damage and nutrient deprivation. This kinase is a component of two distinct complexes, mTORC1, which controls protein synthesis, cell growth and proliferation, and mTORC2, which is a regulator of the actin cytoskeleton, and promotes cell survival and cell cycle progression. This protein acts as the target for the cell-cycle arrest and immunosuppressive effects of the FKBP12-rapamycin complex. Inhibitors of mTOR are used in organ transplants as immunosuppressants, and are being evaluated for their therapeutic potential in SARS-CoV-2 infections. Mutations in this gene are associated with Smith-Kingsmore syndrome and somatic foca...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MTOR",
+          "aliases": "FRAP, FRAP1, FRAP2, RAFT1, RAPT1, SKS",
+          "gene_description": "mechanistic target of rapamycin kinase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "UBC \u2014 ubiquitin C",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: UBC\nGene name: ubiquitin C\nAliases / synonyms: HMG20\nOrganism: Homo sapiens\nGene summary: This gene represents a ubiquitin gene, ubiquitin C. The encoded protein is a polyubiquitin precursor. Conjugation of ubiquitin monomers or polymers can lead to various effects within a cell, depending on the residues to which ubiquitin is conjugated. Ubiquitination has been associated with protein degradation, DNA repair, cell cycle regulation, kinase modification, endocytosis, and regulation of other cell signaling pathways. [provided by RefSeq, Aug 2010]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "UBC",
+          "aliases": "HMG20",
+          "gene_description": "ubiquitin C"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::12676940",
+          "title": "NEDD4 regulates VEGF signaling and mTOR to promote angiogenesis and the cell cycle in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12676940/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a degenerative hip joint disease that worsens over time (1). ONFH is characterized by bone cell death due to a lack of blood supply, which can lead to joint collapse and hip dysfunction (1). The causes of ONFH are complex and involve mechanical injury, genetic predisposition and biochemical imbalances (2,3). Among these factors, steroid use is reported in ~51% of ONFH cases (4). Prolonged or high-dose steroid therapy markedly increases the risk of ONFH, leading to steroid-induced ONFH (SONFH) (1). For example, in patients with systemic lupus erythematosus, the corticosteroid dosage is positively associated with the occurrence of ONFH. Daily doses as low as 10 mg have been associated with a 3.6% increase in risk, while doses >40 mg greatly increase the chance of developing ONFH (5). Steroids damage bone and blood vessel health through various mechanisms, including endothelial cell dysfunction and reduced angiogenesis, ultimately impairing blood flow supply (3,6). Endothelial cells serve an important role in angiogenesis, as their growth, migration and tube formation are important for repairing bone tissue (6,7). When angiogenesis is impaired, bone regeneration often fails (8). VEGF, a key factor that promotes angiogenesis, has been shown to enhance bone repair by stimulating angiogenesis, making it a potential treatment for ONFH (9\u201311). Angiogenesis and osteogenesis are closely linked processes that occur throughout bone development, maturation, aging and disease progression (12). Notably, activation of the VEGF-Notch signaling pathway has been reported to restore the proliferation of mesenchymal stem cells in aplastic anemia (13), while the mTOR/AP-1 complex subunit \u00b5-1/VEGF axis regulates endothelial cell growth (14). Additionally, increasing hypoxia-inducible factor (HIF)-1\u03b1/VEGF levels can help to protect against bone loss in models of nasal obstruction (15). Therefore, understanding the molecular mechanisms of angiogenesis and endothelial cell function is important for advancing treatments for ONFH.\nUbiquitination has become an important post-translational modification for regulating protein stability, signal transduction and cellular homeostasis (16\u201319). Neural precursor cell expressed developmentally downregulated protein 4 (NEDD4) is an E3 ubiquitin ligase that facilitates substrate ubiquitination and degradation, thereby influencing multiple biological processes such as cell proliferation, migration, angiogenesis and endothelial cell protection (20\u201322). NEDD4 has been demonstrated to promote endothelial cell proliferation, migration and angiogenesis (23). In addition to its role in endothelial regulation, NEDD4 also affects macrophage autophagy and tumor cell proliferation, highlighting its versatile function in maintaining the cellular balance (21,24).\nNEDD4 subfamily influences osteogenesis and bone cell biology (25). By mediating PTEN degradation, NEDD4 activates the PI3K/AKT pathway, which promotes cell proliferation and survival. This pathway also supports angiogenesis through PTEN inactivation and VEGF upregulation (26\u201329). Additionally, NEDD4 boosts osteocyte proliferation and is associated with improved outcomes in postmenopausal osteoporosis (30,31). Overall, these findings emphasize the potential of NEDD4 as a regulator of both angiogenesis and osteogenesis, making it a promising target in ONFH therapy. The present study was based on the concept that NEDD4 may serve a role in SONFH. To explore this, the present study observed how overexpression of NEDD4 affected the viability, migration and tube formation of bone microvascular endothelial cells (BMECs). The present study also investigated how glucocorticoids influenced NEDD4 expression and promoter methylation, shedding light on how NEDD4 contributes to angiogenesis and repair in SONFH.\nMaterials and methods\nConstruction of the NEDD4 overexpression (OE) vector",
+          "cos_sim_score": 0.5664107799530029,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12676940",
+          "title": "NEDD4 regulates VEGF signaling and mTOR to promote angiogenesis and the cell cycle in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12676940/",
+          "text": "Integrins, as transmembrane receptors, can detect the physical properties of the extracellular matrix and organize the cytoskeleton while transmitting bidirectional cellular signals. They mediate signaling pathways such as the TGF-\u03b2, Hippo, Wnt and Notch pathways, thereby serving important roles in biological processes such as cell adhesion, spreading, migration and mechanotransduction (47,48). The Notch signaling pathway could have therapeutic benefits for bone regeneration and osteoporosis treatment (49). The analysis in the present study showed that NEDD4 expression was positively correlated with ssGSEA scores of the TGF-\u03b2/SMAD and Hippo/yes-associated protein (YAP) pathways but negatively correlated with the Notch signaling pathway. Although NEDD4 expression was positively correlated with ITGA9 and FERMT2 expression in the integrin pathway, the ssGSEA score for this pathway was negative, suggesting that the regulatory role of NEDD4 is complex and this may influence pathways through different mechanisms. As an E3 ubiquitin ligase, NEDD4 may serve a key role in the progression and repair of ONFH. NEDD4 may contribute to bone tissue repair and remodeling by boosting the activity of the TGF-\u03b2/SMAD and Hippo/YAP signaling pathways (25,31). For example, NEDD4 may promote the growth and differentiation of bone cells by stabilizing TGF-\u03b2 receptors or SMAL proteins (31). At the same time, by enhancing the Hippo/YAP pathway, it may help regulate the mechanical adaptability and repair of bone tissue (25). Conversely, the negative correlation between NEDD4 and the Notch signaling pathway genes such as NOTCH2 and MAML2 indicated that NEDD4 may affect the pathological process of SONFH by inhibiting the Notch pathway and influencing osteoblast differentiation (49). The interaction of the integrin signaling pathway with NEDD4 could impact the regulation of these pathways, further affecting the progression and repair of SONFH (47). In summary, the regulatory roles of NEDD4 in the integrin, TGF-\u03b2/SMAD, Hippo/YAP and Notch signaling pathways highlighted its complex function in cell signal transduction. This diverse regulatory mechanism offers important insights for further exploring the functions and mechanisms of NEDD4 in SONFH.\nResearch has shown that ANGPT2 serves an important role in the vascular niche within the bone marrow, helping to maintain the balance and regeneration of hematopoietic stem cells (50). Although VEGFB does not directly contribute to angiogenesis, it indirectly supports vascular growth and cell survival by affecting the actions of VEGFA (51). Bone morphogenetic protein receptor type-1B (BMPR1B) also serves a role, as it can prevent chondrocyte hypertrophy and act as a stabilizer for cartilage during joint development (52). mTOR is involved in tissue regeneration across neurons, muscles, liver and intestines, helping restore tissue homeostasis (53). In the present study, NEDD4 expression was positively associated with the expression of genes involved in angiogenesis, such as ANGPT2, VEGFB, MTOR and BMPR1B. This finding further emphasizes the notable role of NEDD4 in regulating both angiogenesis and bone tissue homeostasis. Notably, the positive correlation between NEDD4 and ANGPT2 supported the role of ANGPT2 in coordinating hematopoietic stem cell homeostasis within the vascular niche (50). Additionally, this correlation suggested that NEDD4 may indirectly affect the function of VEGFA through interactions with VEGFB and mTOR, thereby encouraging vascular growth, and cell proliferation and survival (51,53). The positive correlation between NEDD4 and BMPR1B suggested that NEDD4 may prevent chondrocyte hypertrophy and support cartilage health and stability (52).",
+          "cos_sim_score": 0.3347729444503784,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12676940",
+          "title": "NEDD4 regulates VEGF signaling and mTOR to promote angiogenesis and the cell cycle in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12676940/",
+          "text": "The present study demonstrated that NEDD4 OE promoted the viability, migration and angiogenesis of BMECs, indicating its key role in endothelial cell function, and maintaining angiogenesis and homeostasis. NEDD4 regulates processes such as proliferation and angiogenesis via ubiquitination (23). Glucocorticoid-induced apoptosis of BMECs promotes the onset and progression of ONFH (54). The present research sheds light on the role and mechanism of NEDD4 in ONFH. The present study found that NEDD4 enhanced the cell function of BMECs by activating the VEGF signaling pathway and working with mTOR. When NEDD4 was overexpressed, the mRNA levels of mTOR, VEGF and VEGFR2 were significantly increased, demonstrating that NEDD4 promoted angiogenesis by triggering the VEGF signaling pathway. Notably, overexpression of NEDD4 did not markedly affect the ubiquitination level of mTOR, suggesting that NEDD4 did not directly mediate the ubiquitination of mTOR but instead affected it by activating the mTOR signaling pathway. In the siRNA transfection experiments, a synergistic effect of NEDD4 and mTOR on BMEC proliferation and migration was observed. Additionally, glucocorticoids inhibited the expression of NEDD4 by increasing the methylation level of the NEDD4 promoter region. After adding the methylation inhibitor 5-AZA, the methylation levels of the NEDD4 promoter notably decreased, while glucocorticoid MePr treatment markedly increased the methylation level of the NEDD4 promoter and significantly suppressed NEDD4 mRNA expression. This further supported the important role of NEDD4 in methylation regulation and showed the substantial influence of glucocorticoids on NEDD4 expression.\nIn conclusion, the present study revealed the diverse roles of NEDD4 in SONFH, particularly in angiogenesis, cellular homeostasis, cell cycle regulation and DNA damage repair. NEDD4 enhanced BMEC function by activating the VEGF signaling pathway and working with mTOR, with its expression regulated by methylation. This offers novel insights into NEDD4 as a potential therapeutic target for SONFH. Further research into the functions of NEDD4 in bone pathology and angiogenesis will provide valuable insights for developing novel treatment strategies. These findings not only add to the existing literature but also provide novel perspectives on the multiple roles of NEDD4 in SONFH and angiogenesis, indicating that NEDD4 may affect angiogenesis, bone tissue repair and bone regeneration through various mechanisms.\nNEDD4 may represent a promising therapeutic target for SONFH. By mediating PTEN degradation and activating the PI3K/AKT/mTOR pathway, NEDD4 promoted cell proliferation and survival, while also enhancing VEGF signaling to support angiogenesis and bone repair (26,31). These dual effects on osteogenesis and angiogenesis highlight its translational potential, and future studies on pharmacological or genetic modulation of NEDD4 could lead to novel treatment strategies.\nThe present study had several limitations. Primarily, the bioinformatics analysis was based on a single publicly available dataset without external validation, which may limit the generalizability of the present findings. Secondly, although the present study validated key molecular alterations in vitro, in vivo animal experiments were not performed, which reduced the translational value of the results. Furthermore, the relatively small sample size and limited types of control may weaken the conclusions of the present study. Additionally, the present study did not explore how NEDD4 regulates the mTOR and VEGF pathways at a mechanistic level. Finally, the present study did not include clinical relevance data, and thus, future studies should incorporate patient samples and correlation analyses to increase the translational significance of the present work. Overall, future research with larger cohorts, more comprehensive controls, in vivo validation, more in-depth mechanistic studies and clinical correlation analyses is needed to confirm and extend the findings of the present study.\nSupplementary Material\nSupporting Data\nSupporting Data",
+          "cos_sim_score": 0.1793534755706787,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12676940",
+          "title": "NEDD4 regulates VEGF signaling and mTOR to promote angiogenesis and the cell cycle in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12676940/",
+          "text": "Discussion\nResearch highlights the important role of NEDD4 in ONFH. The p53 signaling pathway is important for regulating the cell cycle and apoptosis by slowing down cell proliferation and killing abnormal cells, while protecting healthy cells (34). P53 is controlled by post-translational modifications such as ubiquitination, phosphorylation, acetylation and methylation (34). The positive link between NEDD4 and the p53 signaling pathway, as well as tumor protein p53, suggests that NEDD4 may impact the cell cycle and apoptosis by affecting p53 activity (34). The DNA damage response (DDR) pathway is important for fixing DNA damage and preserving genome stability. When cellular DNA is harmed, the DDR pathway is activated, triggering cellular responses such as DNA repair (35,36). Important genes such as APEX1, MSH6, CHEK1, ERCC1, PARP1, MSH2, FANC and FEN1 are involved in DNA repair, influencing the cell cycle and apoptosis (37\u201342). The positive link between NEDD4 and key DDR genes suggests that NEDD4 may be involved in DNA repair and cell cycle control through its association with these genes. Additionally, CCNE1 and CCNE2 are regulatory subunits of CDK2 that control promote the re-entry of quiescent (G0-phase) cells into the cell cycle and regulate the G1/S phase transition (43). WEE1 encodes a kinase that negatively regulates the G2/M transition of the cell cycle (44). Upregulation of this protein helps to strengthen the G2/M DNA damage checkpoint (45). CHEK1 serves an important role in maintaining and restoring spermatogonial cells during mitosis (44). In meiosis, CHK1 selectively weakens the DNA damage signal on autosomes at specific stages, ensuring the normal progression of meiosis (46). The positive correlation between NEDD4 and cell cycle regulatory genes such as CCNE1, CCNE2, WEE1 and CHEK1 highlights its important role in the G1/S and G2/M transitions, as well as in mitosis and meiosis. In the present study, the significance of NEDD4 in cell cycle regulation and apoptosis was emphasized through its positive association with multiple key genes and signaling pathways. These results suggested that NEDD4 may serve an important role in the cell cycle and DNA damage repair in ONFH.",
+          "cos_sim_score": 0.1416134536266327,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12676940",
+          "title": "NEDD4 regulates VEGF signaling and mTOR to promote angiogenesis and the cell cycle in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12676940/",
+          "text": "NEDD4 potentially regulates the cell cycle, angiogenesis and cell proliferation in SONFH\nBased on the analyses showing the potential regulatory role of NEDD4 in SONFH, correlation analyses were performed. The results of the present study revealed significant associations between NEDD4 and pathways related to the cell cycle, angiogenesis and cell growth. Specifically, NEDD4 was negatively correlated with key pathways, including the \u2018HIF-1 signaling pathway\u2019 (R=\u22120.37), \u2018integrin signaling pathway\u2019 (R=\u22120.42) and \u2018Notch signaling pathway\u2019 (R=\u22120.49). Additionally, NEDD4 was positively correlated with multiple pathways, including the \u2018p53 signaling pathway\u2019 (R=0.43), \u2018DNA damage response pathway\u2019 (R=0.45) and the \u2018G2/M transition regulation pathway\u2019 (R=0.51; Fig. 4A). Among cell cycle-related genes, NEDD4 showed significant positive correlations with key genes such as WEE1 (R=0.51), CCNE1 (R=0.45), MSH6 (R=0.54), ERCC1 (R=0.60), CDK6 (R=0.54) and CENPF (R=0.57), further supporting the role of NEDD4 in regulating the cell cycle (Figs. 4B and S3). NEDD4 also showed positive correlations with multiple angiogenesis-associated genes, including ANGPT2 (R=0.50), VEGFB (R=0.33) and FERMT2 (R=0.59), suggesting a potential role for NEDD4 in regulating angiogenesis (Figs. 4C and S3). Within cell proliferation-related pathways, NEDD4 displayed significant positive correlations with multiple genes, including EIF4EBP1 (R=0.53), SAV1 (R=0.51), GDF11 (R=0.54) and MTOR (R=0.37), further highlighting the key role of NEDD4 in cell proliferation and metabolic regulation (Figs. 4D and S3). These findings indicated that NEDD4 serves an important role in regulating the cell cycle, angiogenesis and cell proliferation in SONFH.\nOE of NEDD4 promotes proliferation, angiogenesis and wound healing in BMECs\nTo determine the role of NEDD4 in SONFH, a NEDD4 OE vector was created and tested in BMECs. BMECs displayed clear boundaries, no trailing and appeared healthy (Fig. 5A and B), following transfection with si-NEDD4 or si-NC. BMECs also remained in healthy condition, characterized by intact cell morphology, clear cell-cell boundaries and absence of cytoplasmic blebbing, following transient overexpression of NEDD4 (pcDNA3.1-NEDD4-3\u00d7HA) compared with the OE-NC group (Fig. 5C). RT-qPCR demonstrated significantly increased NEDD4 mRNA levels in the OE-NEDD4 group compared with the OE-NC group, indicating successful transfection (Fig. 5D). After 48 h, the optical density (OD)560 values of BMECs in the OE-NEDD4 group were significantly increased compared with those in the control group (Fig. 5E). Western blot analysis supported notable OE of NEDD4 in pcDNA3.1-NEDD4-3\u00d7HA-transfected BMECs compared with controls and effective knockdown of NEDD4 and mTOR in si-NEDD4- and si-mTOR-transfected cells, respectively. (Fig. 5F). The tube formation assay revealed a significant increase in the total tube length and number of junctions and meshes in BMECs in the OE-NEDD4 group compared with the control group (Fig. 5G and I). The wound healing assay indicated a significant decrease in wound area in the OE-NEDD4 compared with the control group at 24 and 48 h (Fig. 5H). Subsequently, the present study evaluated how NEDD4 affected the viability of BMECs using an MTT assay; OE-NEDD4 group exhibited significantly higher OD (560 nm) values compared with the control group, indicating enhanced cell viability (Fig. 5J).\nNEDD4 regulates vascular endothelial cell function by activating the VEGF signaling pathway while functionally interacting with mTOR signaling in BMECs",
+          "cos_sim_score": 0.13040025532245636,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

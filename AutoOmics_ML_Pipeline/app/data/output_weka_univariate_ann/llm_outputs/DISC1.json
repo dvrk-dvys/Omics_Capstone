@@ -1,0 +1,234 @@
+{
+  "rf_rank": 14,
+  "probe_id": "11728961_a_at",
+  "gene_symbol": "DISC1",
+  "score": 0.69,
+  "rf_n_nodes": 2,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.9435,
+  "log_fc": 0.9435,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11728961_a_at",
+  "max_score": 0.69,
+  "mean_abs_fold_change": 0.9435,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:26:18",
+  "interpretation": "The DISC1 gene encodes a protein involved in various cellular processes, including neurogenesis and mitochondrial function. Its role in regulating the AKT-mTOR signaling pathway suggests a potential link to cellular stress responses, which are relevant in conditions like Steroid-Induced Osteonecrosis of the Femoral Head (SONFH). While the retrieved evidence does not directly connect DISC1 to SONFH, its involvement in neurogenesis and cellular signaling pathways may imply a role in the pathophysiology of bone diseases, particularly in the context of steroid-induced damage. The evidence is limited, leading to a conclusion that the potential for DISC1 as a biomarker for SONFH is weak, primarily based on [INFERENCE].",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "DISC1 may be implicated in the cellular mechanisms affected by steroid treatment, which is relevant to the development of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "DISC1 (Q9NRI5-2). https://www.uniprot.org/uniprotkb/Q9NRI5-2",
+    "DISC1 (Q9NRI5). https://www.uniprot.org/uniprotkb/Q9NRI5",
+    "DISC1 (Q9NRI5-4). https://www.uniprot.org/uniprotkb/Q9NRI5-4",
+    "DISC1 \u2014 DISC1. https://platform.opentargets.org/target/ENSG00000162946",
+    "DISC1 \u2194 response to antihypertensive drug. https://platform.opentargets.org/target/ENSG00000162946/associations",
+    "DISC1 \u2194 adolescent idiopathic scoliosis. https://platform.opentargets.org/target/ENSG00000162946/associations",
+    "DISC1 \u2194 endometriosis. https://platform.opentargets.org/target/ENSG00000162946/associations",
+    "DISC1 \u2194 Hypercholesterolemia. https://platform.opentargets.org/target/ENSG00000162946/associations",
+    "DISC1 \u2014 DISC1 scaffold protein (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ZNF365 \u2014 zinc finger protein 365 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TSNAX-DISC1 \u2014 TSNAX-DISC1 readthrough (NMD candidate) (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "BDNF \u2014 brain derived neurotrophic factor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "AKT1 \u2014 AKT serine/threonine kinase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Circ_0005918 Sponges miR-622 to Aggravate Intervertebral Disc Degeneration (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9304550/",
+    "Mitophagy: A New Player in Stem Cell Biology (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC7766552/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9164,
+    "completion_tokens": 287,
+    "total_tokens": 9451,
+    "estimated_cost_usd": 0.001547
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9NRI5-2",
+          "title": "DISC1 (Q9NRI5-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9NRI5-2",
+          "text": "Protein: Isoform 2 of Disrupted in schizophrenia 1 protein",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9NRI5",
+          "title": "DISC1 (Q9NRI5)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9NRI5",
+          "text": "Protein: Disrupted in schizophrenia 1 protein\nFunction: Involved in the regulation of multiple aspects of embryonic and adult neurogenesis (PubMed:19303846, PubMed:19502360). Required for neural progenitor proliferation in the ventrical/subventrical zone during embryonic brain development and in the adult dentate gyrus of the hippocampus (By similarity). Participates in the Wnt-mediated neural progenitor proliferation as a positive regulator by modulating GSK3B activity and CTNNB1 abundance (PubMed:19303846). Plays a role as a modulator of the AKT-mTOR signaling pathway controlling the tempo of the process of newborn neurons integration during adult neurogenesis, including neuron positioning, dendritic development and synapse formation (By similarity). Inhibits the activation of AKT-mTOR signaling upon interaction with CCDC88A (By similarity). Regulates the migration of early-born granule cell precursors toward the dentate gyrus during the hippocampal development (PubMed:19502360). Inhibits ATF4 transcription factor activity in neurons by disrupting ATF4 dimerization and DNA-binding (By similarity). Plays a role, together with PCNT, in the microtubule network formation (PubMed:18955030)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9NRI5-4",
+          "title": "DISC1 (Q9NRI5-4)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9NRI5-4",
+          "text": "Protein: Isoform 4 of Disrupted in schizophrenia 1 protein",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000162946::function",
+          "title": "DISC1 \u2014 DISC1",
+          "url": "https://platform.opentargets.org/target/ENSG00000162946",
+          "text": "Function: Involved in the regulation of multiple aspects of embryonic and adult neurogenesis (PubMed:19303846, PubMed:19502360). Required for neural progenitor proliferation in the ventrical/subventrical zone during embryonic brain development and in the adult dentate gyrus of the hippocampus (By similarity). Participates in the Wnt-mediated neural progenitor proliferation as a positive regulator by modulating GSK3B activity and CTNNB1 abundance (PubMed:19303846). Plays a role as a modulator of the AKT-mTOR signaling pathway controlling the tempo of the process of newborn neurons integration during adult neurogenesis, including neuron positioning, dendritic development and synapse formation (By similarity). Inhibits the activation of AKT-mTOR signaling upon interaction with CCDC88A (By similarity). Regulates the migration of early-born granule cell precursors toward the dentate gyrus during the hippocampal development (PubMed:19502360). Inhibits ATF4 transcription factor activity in neurons by disrupting ATF4 dimerization and DNA-binding (By similarity). Plays a role, together with PCNT, in the microtubule network formation (PubMed:18955030).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000162946::EFO_0005405",
+          "title": "DISC1 \u2194 response to antihypertensive drug",
+          "url": "https://platform.opentargets.org/target/ENSG00000162946/associations",
+          "text": "Disease: response to antihypertensive drug\nDescription: Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an antihypertensive drug.\nAssociation score: 0.313",
+          "cos_sim_score": 0.3128801134730441,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000162946::EFO_0005423",
+          "title": "DISC1 \u2194 adolescent idiopathic scoliosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000162946/associations",
+          "text": "Disease: adolescent idiopathic scoliosis\nDescription: A scoliosis with no known cause arising in adolescent.\nAssociation score: 0.309",
+          "cos_sim_score": 0.3091386612662848,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000162946::EFO_0001065",
+          "title": "DISC1 \u2194 endometriosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000162946/associations",
+          "text": "Disease: endometriosis\nDescription: The growth of functional endometrial tissue in anatomic sites outside the uterine body. It most often occurs in the pelvic organs.\nAssociation score: 0.278",
+          "cos_sim_score": 0.2776109476351647,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000162946::HP_0003124",
+          "title": "DISC1 \u2194 Hypercholesterolemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000162946/associations",
+          "text": "Disease: Hypercholesterolemia\nDescription: An increased concentration of cholesterol in the blood.\nAssociation score: 0.273",
+          "cos_sim_score": 0.27314890714850026,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "DISC1 \u2014 DISC1 scaffold protein",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: DISC1\nGene name: DISC1 scaffold protein\nAliases / synonyms: C1orf136, SCZD9\nOrganism: Homo sapiens\nGene summary: This gene encodes a protein with multiple coiled coil motifs which is located in the nucleus, cytoplasm and mitochondria. The protein is involved in neurite outgrowth and cortical development through its interaction with other proteins. This gene is disrupted in a t(1;11)(q42.1;q14.3) translocation which segregates with schizophrenia and related psychiatric disorders in a large Scottish family. Alternate transcriptional splice variants, encoding different isoforms, have been characterized. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "DISC1",
+          "aliases": "C1orf136, SCZD9",
+          "gene_description": "DISC1 scaffold protein"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ZNF365 \u2014 zinc finger protein 365",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ZNF365\nGene name: zinc finger protein 365\nAliases / synonyms: Su48, UAN, ZNF365D\nOrganism: Homo sapiens\nGene summary: This gene encodes a zinc finger protein that may play a role in the repair of DNA damage and maintenance of genome stability. The N-terminal C2H2 zinc finger motif is required to form a protein complex with PARP1 and MRE11, which are known to be involved in the restart of stalled DNA replication forks. A mutation in this gene may be associated with breast cancer susceptibility. [provided by RefSeq, Mar 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ZNF365",
+          "aliases": "Su48, UAN, ZNF365D",
+          "gene_description": "zinc finger protein 365"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TSNAX-DISC1 \u2014 TSNAX-DISC1 readthrough (NMD candidate)",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TSNAX-DISC1\nGene name: TSNAX-DISC1 readthrough (NMD candidate)\nOrganism: Homo sapiens\nGene summary: This gene represents naturally occurring read-through transcription between the neighboring TSNAX (translin-associated factor X) and DISC1 (disrupted in schizophrenia 1) genes on chromosome 1. Alternative splicing results in multiple transcript variants, all of which are candidates for nonsense-mediated mRNA decay (NMD) and are unlikely to be protein-coding. These alterations in gene processing may be associated with risk for psychiatric illness, most notably, schizophrenia. [provided by RefSeq, Nov 2010]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TSNAX-DISC1",
+          "aliases": "",
+          "gene_description": "TSNAX-DISC1 readthrough (NMD candidate)"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "BDNF \u2014 brain derived neurotrophic factor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: BDNF\nGene name: brain derived neurotrophic factor\nAliases / synonyms: ANON2, BULN2\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the nerve growth factor family of proteins. Alternative splicing results in multiple transcript variants, at least one of which encodes a preproprotein that is proteolytically processed to generate the mature protein. Binding of this protein to its cognate receptor promotes neuronal survival in the adult brain. Expression of this gene is reduced in Alzheimer's, Parkinson's, and Huntington's disease patients. This gene may play a role in the regulation of the stress response and in the biology of mood disorders. [provided by RefSeq, Nov 2015]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "BDNF",
+          "aliases": "ANON2, BULN2",
+          "gene_description": "brain derived neurotrophic factor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "AKT1 \u2014 AKT serine/threonine kinase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AKT1\nGene name: AKT serine/threonine kinase 1\nAliases / synonyms: AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA\nOrganism: Homo sapiens\nGene summary: This gene encodes one of the three members of the human AKT serine-threonine protein kinase family which are often referred to as protein kinase B alpha, beta, and gamma. These highly similar AKT proteins all have an N-terminal pleckstrin homology domain, a serine/threonine-specific kinase domain and a C-terminal regulatory domain. These proteins are phosphorylated by phosphoinositide 3-kinase (PI3K). AKT/PI3K forms a key component of many signalling pathways that involve the binding of membrane-bound ligands such as receptor tyrosine kinases, G-protein coupled receptors, and integrin-linked kinase. These AKT proteins therefore regulate a wide variety of cellular functions including cell proliferation, survival, metabolism, and angiogenesis in both normal and malignant cells. AKT proteins ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AKT1",
+          "aliases": "AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA",
+          "gene_description": "AKT serine/threonine kinase 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::9304550",
+          "title": "Circ_0005918 Sponges miR-622 to Aggravate Intervertebral Disc Degeneration",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9304550/",
+          "text": "Introduction\nIntervertebral disc degeneration (IDD) is a musculoskeletal disease, and is the most common cause of lower back pain, which affects a large portion of the population worldwide (Tan et al., 2018; Zhan et al., 2019; Zhao et al., 2019; Cao S. et al., 2021). IDD affects not only the quality of life but also causes economic and medical burdens to society (Chen W. et al., 2021; Li et al., 2021a; Tan et al., 2021). IDD is usually considered a natural disc aging procedure; however, a lot of patients demonstrate accelerated disc degeneration due to genetic and environmental factors (Chen et al., 2017; Wang et al., 2020; Sun et al., 2021; Zhan et al., 2021). The etiology and molecular mechanism of IDD are complicated and increasingly, evidence has shown that gender, age, inflammation, and behavioral influences are associated with the risk of IDD (Kraus et al., 2019; Jing and Liu, 2021; Tan et al., 2021). The exact molecular mechanism of IDD is still unknown. It is urgent to elucidate the underlying pathogenesis and find novel treatment strategies for IDD.\nCircular RNAs (circRNAs), a new type of non-coding RNA, consist of exon transcripts and exert crucial roles in regulating the downstream gene expression (Liang et al., 2019; Ma et al., 2020; Ding et al., 2021; Yang et al., 2021). Increasing evidence has indicated that circRNAs regulate diverse cell biological procedures such as cell metastasis, growth, metabolism, migration, apoptosis, and invasion (Tian et al., 2019; Liu et al., 2020; Nie et al., 2020; Pu et al., 2020; Zhou et al., 2020). Recent studies have suggested that circRNAs participated in many diseases including congenital diseases, metabolic diseases, infection, and cancer (Li et al., 2019; Li et al., 2020a; Li et al., 2020b; Li et al., 2020c; Zhao et al., 2021). CircRNAs are involved in various orthopedic diseases such as osteoarthritis, femoral head necrosis, scoliosis, osteosarcoma, and also IDD (Guo et al., 2020a; Yan et al., 2020; Zhang et al., 2021a; Hao et al., 2021). For example, Hu et al. (2022) demonstrated that circ_0022382 suppressed IDD progression by modulating TGF-beta3/miR-4726-5p expression. Wang et al. (2021) showed that circARL15 played crucial roles in IDD development by sponging the miR-431-5p/DISC1 axis. Recently Guo et al. (2021) performed microarray hybridization and qRT-PCR assay to study differentially expressed circRNAs and identified that the expression of circ_0005918 was upregulated in the IDD group. However, its function in IDD remains unknown.\nIn our study, we studied the expression of circ_0005918 in IDD tissues and found that IL-1\u03b2 and TNF-\u03b1 induced circ_0005918 expression in the NP cell, and circ_0005918 was overexpressed in the IDD group compared with the control group. The elevated expression of circ_0005918 promoted cell growth and ECM degradation, and induced secretion of inflammatory cytokines including IL-1\u03b2, IL-6, and TNF-\u03b1.\nMaterials and Methods\nTissue Specimens\nOur study was approved by the Clinical Ethics Committee of Shunyi Hospital, Beijing, China, and we followed the rules of the Helsinki Declaration. Participants gave written informed consent. Intervertebral disc specimens were collected from scoliosis patients who were undergoing osteotomy and spinal fusion as controls and intervertebral disc specimens from IDD patients who underwent surgery were collected in our hospital.\nCell Culture and Cell Transfection\nEight NP samples were obtained from IDD that were used for isolating and culturing NP cells. The human NP cells were cultured according to previous references (Gao et al., 2020; Chen Y. et al., 2021). The NP cells were then passaged two times to apply for other experiments. Cell transfection was performed using Lipofectamine 2000 (Invitrogen). pcDNA3.1-circ_0005918, miR-622 mimic, and an empty vector (used as a negative control) were purchased from Invitrogen.\nReal-Time PCR",
+          "cos_sim_score": 0.3622085452079773,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::7766552",
+          "title": "Mitophagy: A New Player in Stem Cell Biology",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7766552/",
+          "text": "Development of schizophrenia may also be affected by impaired mitophagy. Disrupted-in-schizophrenia-1 (DISC1) is a protein that has been studied extensively for its role in numerous physiological disorders [146]. Loss of DISC1 is implicated in impaired neurogenesis and proliferation of embryonic and adult neural progenitor cells through the GSK3\u03b2/\u03b2-catenin pathway [147]. It has also been shown that loss of DISC1 inhibits dendrite development during neuronal maturation from newborn dentate granule neurons [117]. Importantly here, DISC1 has recently been described as a mitophagy receptor as it can localize to the mitochondrial membrane and bind directly to LC3 [119,120]. Thus, modifications to DISC1 demonstrate changes to neuronal development while also showing possible links to mitophagy.\n5.3. Mitophagy in Bone Marrow Mesenchymal Stem Cells and Bone Diseases\nThe upregulation of mitophagy in Bone marrow mesenchymal stem cells (BMSCs) prior to transplantation has been shown to improve the survival rate of BMSCs and subsequently its reparative ability [45]. BMSCs transplantation is considered an effective method for the treatment of bone diseases including osteonecrosis of the femoral head (ONFH) but due to their multi-potential capacities to differentiate into multiple lineages, there remain major limitations to due to the very low survival rate of the transplanted BMSCs [45,148]. Poor engraftment and short term survival of transplanted MSCs have been linked to several factors such as increased ROS levels, stress-induced apoptosis and senescence in the damaged area [45]. Many studies have reported that high levels of ROS can be detrimental for the survival and maintenance of stem cells including MSCs [149,150,151]. Zhang et al. further explored the link between ROS-induced accumulation of damaged mitochondria and the low survival rate of transplanted BMSCs. They revealed ROS-induced apoptosis, an increase of the senescence marker, \u03b2-gal and higher expression of the aging-related markers, P21 and P16. Furthermore, a recent study also showed that mitophagy protected MSCs against senescence during ex vivo expansion for clinical applications [152]. Increase in mitophagy has also been shown to be beneficial for BMSCs by restricting inflammasome activation therefore supporting its protective role [153]. This led to the speculation that mitophagy as a mitochondrial quality control mechanism could clear these dysfunctional and damaged mitochondria and thus protect the transplanted BMSCs. Following transplantation of BMSCs, upregulation of Parkin and downregulation of P53 completely repaired the defected area in the osteonecrotic mice [45] thus suggesting that induction of mitophagy could be an effective treatment for osteonecrosis and other bone diseases.\n5.4. Mitophagy in Ageing",
+          "cos_sim_score": 0.2785055637359619,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9304550",
+          "title": "Circ_0005918 Sponges miR-622 to Aggravate Intervertebral Disc Degeneration",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9304550/",
+          "text": "Growing evidence has shown that circRNAs play important roles in the development of IDD (Guo et al., 2020a; Guo et al., 2020b; Cui and Zhang, 2020). For instance, Huang et al. (2021a) demonstrated that circSPG21 decreased IDD development by regulating the miR-1197/ATP1B3 axis. Zhang et al. 2021b) found that circSNHG5 protected cartilage endplate degradation by modulating the miR-495-3p/CITED2 axis. Wang et al. (2021) showed that circARL15 was decreased in the IDD group and miR-431-5p, directly bound to DISC1 and circARL15. The elevated expression of circARL15 suppressed NP cell apoptosis but induced NP cell growth by regulating the miR-431-5p/DISC1 axis. Zhang et al. (2021c) demonstrated that circular RNA ITCH induced ECM degradation by promoting the Wnt/beta-catenin pathway in the development of IDD. Huang et al. (2021b) found that circPKNOX1 regulated IDD progression by modulating the miR-370-3p/KIAA0355 axis. Recently, Guo et al. (2021) performed microarray hybridization and qRT-PCR assay to study differentially expressed circRNA. They identified that the expression of circ_0005918 was upregulated in the IDD group. However, the function of circ_0005918 remains unknown. Therefore, we chose circ_0005918 to study and showed that circ_0005918 was overexpressed in the IDD group compared with the control group. Moreover, the upregulated expression of circ_0005918 was associated with disc degeneration degree. The elevated expression of circ_0005918 promoted cell growth, ECM degradation, and secretion of inflammatory cytokines including IL-1\u03b2, IL-6, and TNF-\u03b1.\nPrevious studies demonstrated that miRNAs are involved in the development of IDD. For example, Cao J. et al. (2021) showed that miR-200c-3p inhibited IDD development by regulating the RAP2C/ERK pathway. Lei et al. (2021) showed that miR-25 inhibited NP cell apoptosis by regulating SUMO2 in the IDD. Du et al. (2021) demonstrated that IL-1\u03b2 induced miR-133a-5p expression to promote IDD development through regulating FBXO6. Rescuing FBXO6 and inhibiting the expression of miR-133a-5p may be potential strategies for IDD treatment. Recently, studies have shown that circRNAs might play their roles via sponging miRNAs. For instance, Li Y. et al. (2021) demonstrated that circ_0040039 induced IDD progression by modulating the MiR-874-3p/ESR1 pathway axis. Xiang et al. (2020) showed that downregulation of circCOG8 regulated the compression-induced IDD development by sponging the miR-182-5p/FOXO3 axis. In our study, by using Circular RNA Interactome software, we showed that circ_0005918 may sponge miR-622. The luciferase reporter indicated that ectopic expression of miR-622 suppressed the luciferase reporter value of circ_0005918 wild reporter vector but did not change the value of the mutant reporter. In addition, exposure to IL-1\u03b2 and TNF-\u03b1 suppressed miR-622 expression, and miR-622 was downregulated in the IDD group compared with the control group. Furthermore, the downregulated expression of miR-622 was associated with disc degeneration degree. The level of miR-622 was negatively associated with circ_0005918 expression in the IDD group. To conclude, circ_0005918 regulated cell growth, ECM degradation, and inflammatory cytokines secretion by regulating miR-622 expression.\nIn conclusion, our data demonstrated that IL-1\u03b2 and TNF-\u03b1 induced circ_0005918 expression in the NP cell. Circ_0005918 was overexpressed in IDD, and was associated with disc degeneration degree. Circ_0005918 regulated cell growth, ECM degradation, and inflammatory cytokines secretion by regulating miR-622 expression. We suggested that circ_0005918 plays important roles in the development of IDD via sponging miR-622.",
+          "cos_sim_score": 0.2168782651424408,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::7766552",
+          "title": "Mitophagy: A New Player in Stem Cell Biology",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7766552/",
+          "text": "Put together, these recent advances present a set of mitochondrial characteristics that define \u201cmetabolic stemness\u201d, which are summarized in Figure 2. These include, but may not be limited to, low mitochondrial abundance, underdeveloped ultrastructure, low network complexity, restricted rates of OXPHOS with a relative reliance on fatty acid oxidation, reduced membrane potential, and low ROS emission. Beyond low ROS signaling, this specific mitochondrial profile likely contributes to the maintenance of stem cell-specific genetic programs through additional mechanisms, including modulation of important second messengers such as intracellular Ca2+ [54], endogenous fatty acids [67] as well as translational modifications of histones, DNA, and transcription factors which critically depend on the supply of specific mitochondrial-derived metabolites [68].\n3.2. Mitochondrial Phenotype Shifts Associated with Commitment and Differentiation\nIn response to extrinsic or cell-autonomous factors, stem cells can undergo asymmetric division. In this process, one daughter cell commits to the formation of one or more types of fully differentiated cells, while the other exits the cell cycle and returns to the quiescence state, thereby contributing to renew the stem cell pool. There is now a consistent body of evidence showing that moving away from the above-mentioned metabolic stemness properties provokes stem cell commitment [65,68,71,72], and is required for the subsequent process of differentiation which is generally associated with major changes in the ultrastructure and molecular makeup of mitochondria [44,73,74,75].\nAs shown in Figure 2, activation and commitment are associated with an overall increase in cellular metabolic rates which serves in part to meet the energy requirement of proliferation. Several studies have shown that these immediate needs are met through stimulation of glycolysis, and de-repression of pyruvate oxidation in mitochondria [72,76,77,78,79,80,81]. This not only results in a burst in mitochondrial ROS production which promotes proliferation and differentiation [51,52,54,60] but also alters the concentration of multiple mitochondrial metabolites regulating signaling pathways and gene programs involved in fate determination and early differentiation including NAD+/NADH, AMP/ATP, TCA cycle intermediates, Acetyl-CoA and SAM/SAH [65,68,82,83,84,85,86,87,88].\nOnce committed to a specific lineage, progenitor cells undergo further mitochondrial remodeling in order to support the specific needs of terminally differentiated cells. For progenitor cells destined to differentiate into cardiac myocytes, skeletal muscle fibers or neurons, which have high and/or sustained energy requirements, remodeling includes an increase in mitochondrial content and structural complexity, enhanced capacity for OXPHOS, and improved antioxidant capacities to cope with the electron leaks resulting from the increased metabolic activity [44,73,74] (Figure 2). On the other hand, for cells such as HSCs, mitochondrial changes observed during terminal differentiation of progenitor cells varies considerably throughout the blood cell hierarchy. For instance mitochondria are completely eliminated during erythropoiesis to fulfill the O2-transport function of red blood cells [89], while in neutrophils and eosinophils, mitochondria are preserved, but fine-tuned for apoptosis and ROS production rather than for energy production [90], suggesting that highly orchestrated and lineage-specific mitochondrial remodeling programs are required for normal differentiation. Consistent with this notion, several studies have shown that preventing mitochondrial remodeling or inhibiting respiratory function severely impairs differentiation of multiple types of progenitor cells, including cardiac muscle alongside other progenitor cells [44,73,74,75].\n4. Mitophagy in Stem Cells",
+          "cos_sim_score": 0.2089448869228363,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::7766552",
+          "title": "Mitophagy: A New Player in Stem Cell Biology",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7766552/",
+          "text": "5.4. Mitophagy in Ageing\nMitochondria play an important role in ageing, whether through mtDNA mutations, inflammation, redox dysregulation or quality control [154]. The role of mitophagy in stem cells during ageing is a developing topic with a number of different studies suggesting a possible significant role for mitophagy in this process. In muscle, Garc\u00eda-Prat et al. have reported that basal autophagy is required for the maintenance of quiescence satellite cells. Addition of rapamycin to geriatric satellite cells, used to increase autophagy, was able to restore mitochondrial content and diminish ROS levels in these aged stem cells [112], suggesting mitophagy may play a role in this process. Similar processes have also been observed in HSCs with aged stem cells showing a higher proportion of metabolically active mitochondria with larger more fused networks [98]. The old stem cells were more reliant on mitochondria and OXPHOS for metabolism determined by bioenergetic flux analysis (Seahorse Technologies), which the authors demonstrated to also be the case in young autophagy deficient HSCs with Atg12 mutations. The authors suggest that autophagy and in turn mitophagy may be important for the removal of active mitochondria in young stem cells and is hindered in aged HSCs [98]. Similarly, depletion of PINK1 and Parkin in intestinal stem cells (ISCs) from Drosophila results in increased senescence [155]. SiRNA-mediated knockdown or PINK and Parkin resulted in changes within mitochondria ultrastructure, observed by 3D electron tomographic reconstructions, showing mitochondria were ultra-condensed with enlarged intra-cristae space and a reduced matrix. As was observed in aged HSCs, disruption of mitophagy led to a higher reliance on mitochondrial OXPHOS [98,155]. In addition, reduction of PINK1/Parkin in ISCs caused a severe reduction in proliferation and increased expression of senescence markers \u03b2-galactosidase (SA\u2013\u03b2-gal) and HP-1. There was also observed increases in ROS in aged control stem cells which was also observed in young and aged PINK1 and Parkin knockdowns [155]. Given the relevance of senescence in ageing, these observations draw a close relationship between ageing and mitophagy in stem cells. This idea is further strengthened by Zhang et al., where upregulation of Parkin in BMSCs increased mitophagy and promotes the down-regulation of age- and senescence-related markers [45].\nIn the premature ageing disease Werner syndrome, impaired mitophagy and depletion of NAD+ have recently been implicated in disease progression [156]. Repletion of NAD+ in a C. elegans model of Werner syndrome improved the number and proliferative potency of mitotic cells, improving the health and lifespan of the worms, indicating an improvement in stem cell function [156]. This was also observed in an ISC drosophila disease model, where NAD+ supplementation precursors improved the lifespan and proliferative potential of ISCs. Importantly these NAD+ mediated effects were reliant on the NIX homologue pathway DCT-1 [156]. The involvement of mitophagy was then further solidified using the specific mitophagy inducer Urolithin A, which rendered similar effects as NAD+ supplementation and was shown to improve lifespan [156].\n5.5. Therapeutic Interventions\nWhile mitophagy appears to be playing a role in the development of a number of diseases cited in this review, targeting this pathway for clinical interventions has proved a difficult task. The main issue being the lack of pharmacological agents that can specifically target the mitophagy pathway, as opposed to the availability of agents that can be used to manipulate macro-autophagy. For example, as seen in mouse models of muscle ageing induction of macro-autophagy with rapamycin was able to stimulate improvements [112]. As was the case for PS1 M146L mutant mice treated with bexarotene to increase overall autophagy [121]. While this provides a first step in the target of mitophagy there is divergence between the two pathways which are not always linked. There are also some concerns with the alteration of bulk autophagy as seen in rapamycin studies and its role in the development of diabetes/hyperglycemia [157].",
+          "cos_sim_score": 0.20028483867645264,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

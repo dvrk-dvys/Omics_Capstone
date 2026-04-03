@@ -1,0 +1,168 @@
+{
+  "probe_id": "11737774_a_at",
+  "gene_symbol": "RNF182",
+  "rf_importance": 0.001,
+  "selection_freq": 0.2,
+  "abs_fold_change": 2.4195157000000007,
+  "score": 0.3543,
+  "probe_count": 1,
+  "probe_ids": "11737774_a_at",
+  "max_score": 0.3543,
+  "mean_abs_fold_change": 2.4195,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T00:13:46",
+  "interpretation": "RNF182 encodes an E3 ubiquitin-protein ligase that plays a critical role in mediating protein degradation through the ubiquitin-proteasome pathway. It has been shown to inhibit the innate immune response by targeting NF-kappa-B component RELA for degradation, which is significant in inflammatory responses. While there is no direct evidence linking RNF182 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in protein degradation and immune regulation suggests a potential role in the pathophysiology of SONFH, particularly in the context of steroid-induced inflammation. The evidence retrieved is limited and does not provide a direct connection to SONFH, leading to a low confidence in its relevance as a biomarker for early detection of this condition. Therefore, while RNF182 may have biological implications, its clinical utility as a biomarker for SONFH remains weak and speculative.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "RNF182 may be involved in the inflammatory processes associated with Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) due to its role in protein degradation and immune response regulation.",
+  "citations": [
+    "RNF182 (Q8N6D2). https://www.uniprot.org/uniprotkb/Q8N6D2",
+    "RNF182 \u2014 RNF182. https://platform.opentargets.org/target/ENSG00000180537",
+    "RNF182 \u2194 periapical tissue disease. https://platform.opentargets.org/target/ENSG00000180537/associations",
+    "RNF182 \u2194 diabetic ketoacidosis. https://platform.opentargets.org/target/ENSG00000180537/associations",
+    "RNF182 \u2194 Thrombophlebitis. https://platform.opentargets.org/target/ENSG00000180537/associations",
+    "RNF182 \u2194 Phlebitis. https://platform.opentargets.org/target/ENSG00000180537/associations",
+    "RNF182 \u2014 ring finger protein 182 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "RELA \u2014 RELA proto-oncogene, NF-kB subunit (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "UBC \u2014 ubiquitin C (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ELAVL1 \u2014 ELAV like RNA binding protein 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "UBE2D1 \u2014 ubiquitin conjugating enzyme E2 D1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4575,
+    "completion_tokens": 319,
+    "total_tokens": 4894,
+    "estimated_cost_usd": 0.000878
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q8N6D2",
+          "title": "RNF182 (Q8N6D2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8N6D2",
+          "text": "Protein: E3 ubiquitin-protein ligase RNF182\nFunction: E3 ubiquitin-protein ligase that mediates the ubiquitination of ATP6V0C and targets it to degradation via the ubiquitin-proteasome pathway (PubMed:18298843). Also plays a role in the inhibition of TLR-triggered innate immune response by mediating 'Lys'-48-linked ubiquitination and subsequent degradation of NF-kappa-B component RELA (PubMed:31432514)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000180537::function",
+          "title": "RNF182 \u2014 RNF182",
+          "url": "https://platform.opentargets.org/target/ENSG00000180537",
+          "text": "Function: E3 ubiquitin-protein ligase that mediates the ubiquitination of ATP6V0C and targets it to degradation via the ubiquitin-proteasome pathway (PubMed:18298843). Also plays a role in the inhibition of TLR- triggered innate immune response by mediating 'Lys'-48-linked ubiquitination and subsequent degradation of NF-kappa-B component RELA (PubMed:31432514).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000180537::EFO_0010688",
+          "title": "RNF182 \u2194 periapical tissue disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000180537/associations",
+          "text": "Disease: periapical tissue disease\nDescription: Any disease of the periapical tissue.\nAssociation score: 0.305",
+          "cos_sim_score": 0.304701328693288,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000180537::EFO_1000897",
+          "title": "RNF182 \u2194 diabetic ketoacidosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000180537/associations",
+          "text": "Disease: diabetic ketoacidosis\nDescription: The metabolic condition resulted from uncontrolled diabetes mellitus, in which the shift of acid-base status of the body toward the acid side because of loss of base or retention of acids other than carbonic acid is accompanied by the accumulation of ketone bodies in body tissues and fluids.\nAssociation score: 0.293",
+          "cos_sim_score": 0.29322337520183595,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000180537::HP_0004418",
+          "title": "RNF182 \u2194 Thrombophlebitis",
+          "url": "https://platform.opentargets.org/target/ENSG00000180537/associations",
+          "text": "Disease: Thrombophlebitis\nDescription: Inflammation of a vein associated with venous thrombosis (blood clot formation within the vein).\nAssociation score: 0.199",
+          "cos_sim_score": 0.19910693659083464,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000180537::EFO_1001395",
+          "title": "RNF182 \u2194 Phlebitis",
+          "url": "https://platform.opentargets.org/target/ENSG00000180537/associations",
+          "text": "Disease: Phlebitis\nDescription: Inflammation of a vein.\nAssociation score: 0.199",
+          "cos_sim_score": 0.19910693659083464,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "RNF182 \u2014 ring finger protein 182",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RNF182\nGene name: ring finger protein 182\nOrganism: Homo sapiens\nGene summary: Enables ubiquitin-protein transferase activity. Involved in protein ubiquitination. Located in cytoplasm. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RNF182",
+          "aliases": "",
+          "gene_description": "ring finger protein 182"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "RELA \u2014 RELA proto-oncogene, NF-kB subunit",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RELA\nGene name: RELA proto-oncogene, NF-kB subunit\nAliases / synonyms: AIF3BL3, CMCU, NFKB3, p65\nOrganism: Homo sapiens\nGene summary: NF-kappa-B is a ubiquitous transcription factor involved in several biological processes. It is held in the cytoplasm in an inactive state by specific inhibitors. Upon degradation of the inhibitor, NF-kappa-B moves to the nucleus and activates transcription of specific genes. NF-kappa-B is composed of NFKB1 or NFKB2 bound to either REL, RELA, or RELB. The most abundant form of NF-kappa-B is NFKB1 complexed with the product of this gene, RELA. Four transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Sep 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RELA",
+          "aliases": "AIF3BL3, CMCU, NFKB3, p65",
+          "gene_description": "RELA proto-oncogene, NF-kB subunit"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "UBC \u2014 ubiquitin C",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: UBC\nGene name: ubiquitin C\nAliases / synonyms: HMG20\nOrganism: Homo sapiens\nGene summary: This gene represents a ubiquitin gene, ubiquitin C. The encoded protein is a polyubiquitin precursor. Conjugation of ubiquitin monomers or polymers can lead to various effects within a cell, depending on the residues to which ubiquitin is conjugated. Ubiquitination has been associated with protein degradation, DNA repair, cell cycle regulation, kinase modification, endocytosis, and regulation of other cell signaling pathways. [provided by RefSeq, Aug 2010]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "UBC",
+          "aliases": "HMG20",
+          "gene_description": "ubiquitin C"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ELAVL1 \u2014 ELAV like RNA binding protein 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ELAVL1\nGene name: ELAV like RNA binding protein 1\nAliases / synonyms: ELAV1, HUR, Hua, MelG\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the ELAVL family of RNA-binding proteins that contain several RNA recognition motifs, and selectively bind AU-rich elements (AREs) found in the 3' untranslated regions of mRNAs. AREs signal degradation of mRNAs as a means to regulate gene expression, thus by binding AREs, the ELAVL family of proteins play a role in stabilizing ARE-containing mRNAs. This gene has been implicated in a variety of biological processes and has been linked to a number of diseases, including cancer. It is highly expressed in many cancers, and could be potentially useful in cancer diagnosis, prognosis, and therapy. [provided by RefSeq, Sep 2012]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ELAVL1",
+          "aliases": "ELAV1, HUR, Hua, MelG",
+          "gene_description": "ELAV like RNA binding protein 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "UBE2D1 \u2014 ubiquitin conjugating enzyme E2 D1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: UBE2D1\nGene name: ubiquitin conjugating enzyme E2 D1\nAliases / synonyms: E2(17)KB1, SFT, UBC4/5, UBCH5, UBCH5A\nOrganism: Homo sapiens\nGene summary: The modification of proteins with ubiquitin is an important cellular mechanism for targeting abnormal or short-lived proteins for degradation. Ubiquitination involves at least three classes of enzymes: ubiquitin-activating enzymes, or E1s, ubiquitin-conjugating enzymes, or E2s, and ubiquitin-protein ligases, or E3s. This gene encodes a member of the E2 ubiquitin-conjugating enzyme family. This enzyme is closely related to a stimulator of iron transport (SFT), and is up-regulated in hereditary hemochromatosis. It also functions in the ubiquitination of the tumor-suppressor protein p53 and the hypoxia-inducible transcription factor HIF1alpha by interacting with the E1 ubiquitin-activating enzyme and the E3 ubiquitin-protein ligases. Two transcript variants encoding different isoforms have be...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "UBE2D1",
+          "aliases": "E2(17)KB1, SFT, UBC4/5, UBCH5, UBCH5A",
+          "gene_description": "ubiquitin conjugating enzyme E2 D1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "rf_rank": 29,
+  "probe_id": "11757383_a_at",
+  "gene_symbol": "CTSH",
+  "score": 0.59,
+  "rf_n_nodes": 13,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 1.1463,
+  "log_fc": 1.1463,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11757383_a_at",
+  "max_score": 0.59,
+  "mean_abs_fold_change": 1.1463,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:35:16",
+  "interpretation": "CTSH, or cathepsin H, is a lysosomal cysteine proteinase involved in the degradation of proteins within lysosomes. While there is no direct evidence linking CTSH to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in protein degradation suggests a potential involvement in the pathological processes of bone remodeling and cartilage degeneration associated with SONFH. The retrieved evidence primarily highlights its general biological function without specific connections to SONFH, leading to a low confidence in its relevance as a biomarker. However, given the importance of protein degradation in bone health, CTSH may still be considered a candidate for further investigation as a potential early-detection biomarker for SONFH.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "CTSH may play a role in the protein degradation processes relevant to the pathology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "CTSH (P09668). https://www.uniprot.org/uniprotkb/P09668",
+    "CTSH \u2014 CTSH. https://platform.opentargets.org/target/ENSG00000103811",
+    "CTSH \u2194 type 1 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000103811/associations",
+    "CTSH \u2194 skin cancer. https://platform.opentargets.org/target/ENSG00000103811/associations",
+    "CTSH \u2194 basal cell carcinoma. https://platform.opentargets.org/target/ENSG00000103811/associations",
+    "CTSH \u2194 narcolepsy-cataplexy syndrome. https://platform.opentargets.org/target/ENSG00000103811/associations",
+    "CTSH \u2014 cathepsin H (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CST3 \u2014 cystatin C (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HSPD1 \u2014 heat shock protein family D (Hsp60) member 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "BGLAP \u2014 bone gamma-carboxyglutamate protein (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Bioinformatics analysis and identification of genes and molecular pathways in steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8136174/",
+    "Identifying the Potential Differentially Expressed miRNAs and mRNAs in Osteonecrosis of the Femoral Head Based on Integrated Analysis (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC7851582/",
+    "Microstructural and transcriptomic characterization of trabecular bone in idiopathic osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11978847/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8863,
+    "completion_tokens": 274,
+    "total_tokens": 9137,
+    "estimated_cost_usd": 0.001494
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P09668",
+          "title": "CTSH (P09668)",
+          "url": "https://www.uniprot.org/uniprotkb/P09668",
+          "text": "Protein: Pro-cathepsin H\nFunction: Important for the overall degradation of proteins in lysosomes",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000103811::function",
+          "title": "CTSH \u2014 CTSH",
+          "url": "https://platform.opentargets.org/target/ENSG00000103811",
+          "text": "Function: Important for the overall degradation of proteins in lysosomes.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000103811::MONDO_0005147",
+          "title": "CTSH \u2194 type 1 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000103811/associations",
+          "text": "Disease: type 1 diabetes mellitus\nDescription: A chronic condition characterized by minimal or absent production of insulin by the pancreas.\nAssociation score: 0.548",
+          "cos_sim_score": 0.5481319551898879,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000103811::MONDO_0002898",
+          "title": "CTSH \u2194 skin cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000103811/associations",
+          "text": "Disease: skin cancer\nDescription: A malignant neoplasm involving the zone of skin\nAssociation score: 0.493",
+          "cos_sim_score": 0.49342178164822753,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000103811::EFO_0004193",
+          "title": "CTSH \u2194 basal cell carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000103811/associations",
+          "text": "Disease: basal cell carcinoma\nDescription: A carcinoma involving the basal cells.\nAssociation score: 0.493",
+          "cos_sim_score": 0.4925687961281261,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000103811::MONDO_0016158",
+          "title": "CTSH \u2194 narcolepsy-cataplexy syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000103811/associations",
+          "text": "Disease: narcolepsy-cataplexy syndrome\nDescription: A type of narcolepsy characterized by excessive day-time sleepiness associated with uncontrollable sleep urges and cataplexy (loss of muscle tone often triggered by pleasant emotions).\nAssociation score: 0.449",
+          "cos_sim_score": 0.4488539386758845,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "CTSH \u2014 cathepsin H",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CTSH\nGene name: cathepsin H\nAliases / synonyms: ACC-4, ACC-5, ACC4, ACC5, CPSB\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a lysosomal cysteine proteinase important in the overall degradation of lysosomal proteins. It is composed of a dimer of disulfide-linked heavy and light chains, both produced from a single protein precursor. The encoded protein, which belongs to the peptidase C1 protein family, can act both as an aminopeptidase and as an endopeptidase. Increased expression of this gene has been correlated with malignant progression of prostate tumors. Alternate splicing of this gene results in multiple transcript variants encoding different isoforms. [provided by RefSeq, Jan 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CTSH",
+          "aliases": "ACC-4, ACC-5, ACC4, ACC5, CPSB",
+          "gene_description": "cathepsin H"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CST3 \u2014 cystatin C",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CST3\nGene name: cystatin C\nAliases / synonyms: ADLDWA, ARMD11, HEL-S-2\nOrganism: Homo sapiens\nGene summary: The cystatin superfamily encompasses proteins that contain multiple cystatin-like sequences. Some of the members are active cysteine protease inhibitors, while others have lost or perhaps never acquired this inhibitory activity. There are three inhibitory families in the superfamily, including the type 1 cystatins (stefins), type 2 cystatins and the kininogens. The type 2 cystatin proteins are a class of cysteine proteinase inhibitors found in a variety of human fluids and secretions, where they appear to provide protective functions. The cystatin locus on chromosome 20 contains the majority of the type 2 cystatin genes and pseudogenes. This gene is located in the cystatin locus and encodes the most abundant extracellular inhibitor of cysteine proteases, which is found in high concentratio...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CST3",
+          "aliases": "ADLDWA, ARMD11, HEL-S-2",
+          "gene_description": "cystatin C"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "HSPD1 \u2014 heat shock protein family D (Hsp60) member 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HSPD1\nGene name: heat shock protein family D (Hsp60) member 1\nAliases / synonyms: CPN60, GROEL, HLD4, HSP-60, HSP60, HSP65, HuCHA60, SPG13\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the chaperonin family. The encoded mitochondrial protein may function as a signaling molecule in the innate immune system. This protein is essential for the folding and assembly of newly imported proteins in the mitochondria. This gene is adjacent to a related family member and the region between the 2 genes functions as a bidirectional promoter. Several pseudogenes have been associated with this gene. Two transcript variants encoding the same protein have been identified for this gene. Mutations associated with this gene cause autosomal recessive spastic paraplegia 13. [provided by RefSeq, Jun 2010]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HSPD1",
+          "aliases": "CPN60, GROEL, HLD4, HSP-60, HSP60, HSP65, HuCHA60, SPG13",
+          "gene_description": "heat shock protein family D (Hsp60) member 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "BGLAP \u2014 bone gamma-carboxyglutamate protein",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: BGLAP\nGene name: bone gamma-carboxyglutamate protein\nAliases / synonyms: BGP, OC, OCN\nOrganism: Homo sapiens\nGene summary: This gene encodes a highly abundant bone protein secreted by osteoblasts that regulates bone remodeling and energy metabolism. The encoded protein contains a Gla (gamma carboxyglutamate) domain, which functions in binding to calcium and hydroxyapatite, the mineral component of bone. Serum osteocalcin levels may be negatively correlated with metabolic syndrome. Read-through transcription exists between this gene and the neighboring upstream gene, PMF1 (polyamine-modulated factor 1), but the encoded protein only shows sequence identity with the upstream gene product. [provided by RefSeq, Jun 2015]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "BGLAP",
+          "aliases": "BGP, OC, OCN",
+          "gene_description": "bone gamma-carboxyglutamate protein"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::8136174",
+          "title": "Bioinformatics analysis and identification of genes and molecular pathways in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8136174/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a common disease of the hip with a higher incidence in elderly patients, and the most common clinical symptom is severe pain [1]. There are about 150,000\u2013200,000 new cases in China each year [2], and about 20,000 new cases in the USA each year [3]. The pathological features of steroid-induced ONFH include decreased blood supply to the hip joint, the collapse of the femoral head, and accumulation of microfractures without continuous remodeling [4, 5]. Besides, ONFH can cause rapid destruction and dysfunction of the hip joint, and approximately 65\u201370% of patients with advanced ONFH require total hip replacement [6]. The pathogenesis and molecular mechanism of steroid-induced ONFH remain unclear, and there are few effective prevention and early treatment methods.\nStudies have indicated that successful results can be obtained when joint-preserving surgery is used in the pre-collapse stage of steroid-induced ONFH [7]. After the femoral head necrosis collapses, cartilage wrinkles and the hip joint space gradually narrows. Meanwhile, the failure rate of joint-preserving treatment is high. Therefore, searching for new biomarkers in the blood is of great clinical significance for the diagnosis of steroid-induced ONFH, as well as the further early diagnosis and treatment of ONFH. Some genetic factors are considered key factors in the progress of steroid-induced ONFH, such as peroxisome proliferator-activated receptor \u03b3, matrix metallopeptidase 9, and SMAD family member 3 and gremlin 1 [8\u201310]. Currently, microarray analysis using a high-throughput platform is promising and efficient for exploring the molecular mechanisms of diseases and identifying useful biomarkers for diagnosis and prognosis of diseases [11, 12]. However, there is little comprehensive research on steroid-induced ONFH with high-throughput platforms. During the development of steroid-induced ONFH, the cartilage on the surface of the femoral head and the labrum of the acetabulum are significantly damaged. Degeneration of cartilage on the surface of the femoral head and tearing of the labrum enhance the instability of the hip joint and accelerate the development of steroid-induced ONFH [13]. Prevention and early treatment of hip cartilage damage may slow the development of steroid-induced ONFH and relieve hip dysfunction. However, there are few studies on the molecular mechanism of steroid-induced ONFH hip cartilage damage. Therefore, it is hypothesized in this paper that differentially expressed genes co-exist in the peripheral serum and cartilage of ONFH patients; this can be used for early diagnosis and observation of disease progression.\nIn this study, hub genes are screened out from the differences expressed genes (degrees) using bioinformatics methods based on the National Center for Biotechnology Information (NCBI http://www.ncbi.nlm.nih.gov/geography/) from the Gene Expression Dataset GSE123568 (peripheral serum) and GSE74089 (hip articular cartilage) Comprehensive (GEO) database. Quantitative real-time PCR (qRT-PCR) was conducted to validate the gene expression profiling results based on an independent sera sample of eight patients with ONFH and twelve healthy controls. The present study aimed to identify potentially important genes and signaling pathways involved in ONFH and investigate their molecular mechanisms.\nMaterials and methods\nMicroarray data source\nThe gene chip data related to femoral head necrosis (GSE123568, GSE74089) is downloaded in the GEO (gene expression omnibus) database (https://www.ncbi.nlm.nih.gov/geo/). GSE123568 chip data contains 10 normal patient serum samples and 30\u2009steroid-induced femoral head necrosis serum samples. Besides, the GSE74089 chip data is composed of hip cartilage specimens from 4 NFH patients and 4 healthy controls. All the above data sets are based on GPL15207 and GPL13497 platform GEO database downloaded, and the information of the above two data sets are detailed in Table 1.\nTable 1Two datasets used for gene expression profiles analysis in NFHGEO IDAuthorPlatformSamplesTypeYearOmicsGSE123568Zhang YGPL15207NFH to normal = 30:10Peripheral serum2019mRNAGSE74089Ruiyu LGPL13497NFH to normal = 4:4Hip articular cartilage2016mRNA\nTable 1\nTwo datasets used for gene expression profiles analysis in NFH\nDifferentially expressed genes analysis",
+          "cos_sim_score": 0.7043320536613464,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::7851582",
+          "title": "Identifying the Potential Differentially Expressed miRNAs and mRNAs in Osteonecrosis of the Femoral Head Based on Integrated Analysis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7851582/",
+          "text": "Introduction\nOsteonecrosis of the femoral head is a disabling and progressive chronic disease, which leads to femoral head collapse and further total hip arthroplasty.1,2 It is estimated that the age range of about 75% of patients is from 30\u201360 years old.3 Pain is one of the common clinical symptoms of osteonecrosis of the femoral head.4 However, most patients with a lesion less than 30% of the femoral head are initially asymptomatic.5 Malizos6,7 and Zalavras and Lieberman found that osteocytes death and bone marrow cells was the main characteristic of the early stages of osteonecrosis of the femoral head. In the next moment, the repair reaction of necrotic bone is initiated. During this process, the imbalance between bone resorption and bone reformation leads to structural damage of the femoral head, among which there is a significant degeneration and cracking of the hip articular cartilage, which accelerates the development of osteonecrosis of the femoral head.8,9\nThe pathogenic mechanism of osteonecrosis of the femoral head is complex. Kerachian et al10 found that local microvascular thrombosis resulted in decreasing blood flow in the femoral head. It was pointed out that fibroblast growth factor 2 (FGF2), insulin-like growth factor 1 (IGF1), SRY-box transcription factor 9 (SoX9), and collagen type ii \u03b11 affected the pathogenesis of osteonecrosis of the femoral head.11 In addition, several risks, such as the trauma, steroids, smoking, alcoholism, irradiation/chemotherapy, clotting disturbances, hyperlipidemia, hyperviscosity, autoimmune diseases, Legg-Calve-Perthes diseases, and genetic factors are possible causes of osteonecrosis of the femoral head.12\u201322\nThe incidence of osteonecrosis of the femoral head is on the rise, in spite of various research efforts and trials. Therefore, understanding the pathophysiology of the disease and its progression is urgently needed. Interestingly, miRNAs play roles in targeting mRNAs, and regulate diverse biological processes in bones, such as osteoblasts, osteoclasts differentiation, and bone programming.23\u201326 In this study, we performed the differentially expression analysis of miRNA and mRNA in osteonecrosis of the femoral head, which may provide a novel field in understanding the pathological mechanism of osteonecrosis of the femoral head.\nMaterials and Methods\nDatasets\nThe miRNA and mRNA expression profile was downloaded from the Gene Expression Omnibus database (GEO) dataset. The keywords of ((\u201cfemur head\u201d [MeSH Terms] OR femoral head [All Fields]) AND (\u201cnecrosis\u201d [MeSH Terms] OR necrosis [All Fields])) AND \u201cgse\u201d [Filter] was used to retrieve related datasets. According to above screening criteria, one miRNA dataset (GSE89587, involving ten cases and seven normal controls) and one mRNA dataset (GSE74089, involving four cases and four normal controls) were finally selected.\nIdentification of Differentially Expressed miRNAs and mRNAs\nFirstly, the raw data of miRNAs and mRNAs was preprocessed as follows: the probes corresponding to multiple miRNAs/mRNAs were removed; and the miRNAs/mRNAs corresponding to multiple probes were left with only the one with the highest average expression. In this study, the identification method of differentially expressed miRNAs and mRNAs was referred to previous studies.27,28 The screening criteria of differentially expressed miRNAs and mRNAs was, respectively, FDR<0.05, |log2FC|>3, and FDR<0.05, |log2FC|>1.\nCorrelation Analysis Between miRNAs and mRNAs\nIn this study, miRWalk (http://mirwalk.umm.uni-heidelberg.de/) was used to predict targeted mRNAs of miRNAs. The establishment of a miRNA-target regulatory network was visualized using Cytoscape software.\nFunctional Enrichment of mRNAs\nIn order to understand the biological function of the targeted differentially expressed mRNAs of differentially expressed miRNAs, we performed functional analysis via GeneCodis3 software. FDR<0.05 was set as the criterion for selecting significantly enriched functional terms.\nIn vitro Validation of miRNAs and Targeted mRNAs",
+          "cos_sim_score": 0.6635034084320068,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11978847",
+          "title": "Microstructural and transcriptomic characterization of trabecular bone in idiopathic osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978847/",
+          "text": "Fig. 1Preoperative anteroposterior radiograph of a right hip in a 61-year\u00ad-old man with osteoarthritis (OA) and in a 56-\u00adyear\u00ad-old man with osteonecrosis of the femoral head (ONFH). Trabecular bone explants were taken from the femoral head (1) and from the intertrochanteric region (2) in both patient groups.\nFig. 1\nPreoperative anteroposterior radiograph of a right hip in a 61-year\u00ad-old man with osteoarthritis (OA) and in a 56-\u00adyear\u00ad-old man with osteonecrosis of the femoral head (ONFH). Trabecular bone explants were taken from the femoral head (1) and from the intertrochanteric region (2) in both patient groups.\nMicro-computed tomography (\u00b5CT)\nTrabecular bone explants were washed with PBS, fixed in 10% formalin for 24 h at 4 \u00baC and stored in 0.1% formalin until use. The bone samples were scanned with an X-ray microfocus computerized tomography machine (Nikon XT H 160 MedX Alpha, Nikon Metrology NV, Leuven, Belgium) at 123\u2013130 kV and 73\u201385 \u00b5A. For each sample, we obtained 1500 projections that were reconstructed as 16-bit grey scale stacks with a voxel size from 10 to 13 \u03bcm. The reconstructed imaging data of bone explants were visualized using the 3D imaging software VG Studio 3.1 (Volume Graphics GmbH, Heidelberg, Germany) and analysed using the BoneJ plugin for ImageJ software22. Each region was binarised using a flat intensity threshold. A region of interest slightly smaller than the size of the specimen was defined for all cross-sections in order to avoid the inclusion of possible debris formed during sampling. The following morphometric indices were generated: trabecular thickness (Tb.Th); spacing (Tb.Sp) and number (Tb.N); bone volume fraction defined as bone volume versus total volume (BV/TV); connectivity density (Conn.D) and degree of anisotropy (DA). DA, which measures how substructures are oriented within a volume, was calculated using the mean intercept length and expressed as a normalized scalar value ranging from 0 to 1, where 1 represented fully anisotropic substructures.\nHaematoxylin and eosin staining and imaging\nAfter \u00b5CT scanning, the bone explants were decalcified in a commercial solution (Osteodec, Bio-Optica, Milan, Italy) containing EDTA for 24 h at 4 \u00baC. Next, the bone samples were dehydrated through a graded ethanol series, cleared in xylene and finally embedded in paraffin. After dewaxing and rehydration, 5-micron sections of retrieved samples were stained with haematoxylin and eosin and examined under an optical microscope. The percentage of empty lacunae per total lacunae and the number of cells per unit of bone surface were quantified using the ImageJ software.\nMicroarrays analysis of differential gene expression",
+          "cos_sim_score": 0.6326993703842163,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11978847",
+          "title": "Microstructural and transcriptomic characterization of trabecular bone in idiopathic osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978847/",
+          "text": "Introduction\nThe most frequent diagnosis in young adults undergoing total hip arthroplasty (THA) is osteonecrosis of the femoral head (ONFH), an evolving and disabling condition that is increasingly prevalent worldwide1. ONFH is characterized by bone cell death as a result of local ischaemia. Despite efforts to stimulate subchondral bone healing and preserve the native joints, the affected bone does not usually remodel or heal normally2,3. Consequently, the lack of bone regeneration leads to femoral head collapse in a relatively short time and THA is required. The most common risk factors for developing ONFH are previous trauma, massive corticosteroid administration and alcohol abuse. However, a significant number of cases remain idiopathic, with no identifiable risk factors4. The pathological bases of non-traumatic ONFH are still not fully understood, given the difficulties of obtaining bone samples from patients in the early stages and the lack of animal models that faithfully recapitulate the disease. Most hypotheses on the potential ONFH initiation mechanism point towards an alteration in the blood supply to the subchondral bone, as a consequence of intravascular occlusion by fat emboli and thrombi, as well as intraosseous extravascular compression. Initial stages of the disease lead to the formation of a necrotic area in the weight-bearing region, often characterized by accumulation of empty lacunae5. A reparative sclerotic zone containing condensed trabecular bone is developed between the necrotic zone and the adjacent trabecular bone. The collapse of the femoral head is primarily driven by the formation of microfractures at the junction between the reparative zone and the necrotic bone due to bone remodeling imbalance and microstructural deterioration6,7. ONFH is frequently associated with bone marrow edema in the femoral head, which is closely linked with symptomatology and disease progression. Histological studies suggest that trabecular bone in the femoral head could be altered by surrounding medullary necrosis5,8. Providing further evidence on the extent of bone alterations in the femoral head of patients with ONFH may be helpful for surgeons in deciding the appropriate type of hip arthroplasty for this population.\nMost studies on the pathophysiology of non-traumatic ONFH use bone explants from patients with glucocorticoid-induced ONFH undergoing THA9\u201311. However, abnormalities in the trabecular bone of these patients could be expected, given that glucocorticoids are recognized as promoting osteoblast apoptosis, reducing bone formation and prolonging the lifespan of osteoclasts12. Other studies provide limited descriptions of patients\u2019 clinical features or combine different ONFH etiologies, making it difficult to clarify the disease mechanisms5,8,13\u201315. To date, the molecular mechanisms behind trabecular bone alterations in patients with ONFH without an obvious aetiological factor remain largely unexplored. Recent evidence indicates that idiopathic ONFH is associated with altered activity in bone-forming cells in trabecular bone of the femoral head16. In this study, we further investigate the pathophysiology of idiopathic ONFH by comparing the microstructure and histological features of trabecular bone obtained from two distinct zones of the proximal femur\u2014the femoral head and the intertrochanteric region\u2014in each patient. To explore the genes involved in ONFH pathophysiology, we conducted comparative analyses of the transcriptomic profile in the bone samples. For comparative purposes, bone samples from the same anatomical sites in patients with primary osteoarthritis (OA) of the hip were obtained and analysed. Both patient groups were adjusted by age and sex, which are known to affect bone structure and density17,18.\nMethods\nPatients and bone sample collection",
+          "cos_sim_score": 0.6108251810073853,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8136174",
+          "title": "Bioinformatics analysis and identification of genes and molecular pathways in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8136174/",
+          "text": "Table 2\nThe information of the primers\u2019 sequencing\nStatistical analysis\nGraphPad 8.0 was used to perform statistical analysis. The results are presented as mean \u00b1 standard deviation (mean \u00b1 SD). Data conforming to normal distribution were compared using Student t test, while those with non-normally distributed were tested using Mann-Whitney U test. P <\u20090.05 indicates statistical significance. All experiments were performed in triplicate.\nResults\nIdentification of DEGs\nThis study screened out two chip data sets (GSE123568 and GSE74089). Among them, 30\u2009serum samples of patients with steroid hormone-induced osteonecrosis of the femoral head in the chip data set GSE123568 (including 13 males and 17 females, aged 23.07 \u00b1 3.01\u2009years, ARCO stage I-II patients accounted for 10 patients, ARCO III patients accounted for 10 cases, ARCO IV patients accounted for 10 cases) and 10 normal serum samples (including 7 males and 3 females, aged 25.02 \u00b1 2.87\u2009years). Besides, there are 4 hip cartilage samples from patients with femoral head necrosis (including 3 males and 1 female) and 4 healthy adult hip cartilage specimens (including 3 males and 1 female) in the chip dataset GSE74089. The baseline characteristics of the patients are provided in Table 3. According to the adjust P value <\u20090.01, the expression change range is greater than or equal to twice (|log2 FC|\u22651.0) as the criteria for screening differential genes. A total of 750 differentially expressed genes were screened in the GSE123568 data set, including 454 upregulated genes and 296 downregulated genes. A total of 5211 differentially expressed genes were screened in the GSE74089 data set, including 1594 upregulated genes and 3617 downregulated genes. The DEGs in GSE123568 and GSE74089 were selected based on the adjust P value to screen the top 25 most significant upregulated and downregulated differentially expressed genes, so as to draw heat maps (Fig. 1). The -log10 conversion is performed for the adjust P value in the data processed by GEO2R. Then, according to log2 FC, -log10 (adjust P value) was divided into groups of upregulated genome, downregulated genome, and non-statistically different genome. The processed data was imported into GraphPad Prism 7 to draw a volcano map (Fig. 2). Furthermore, a total of 118 intersecting DEGs were obtained between the peripheral blood and cartilage samples, including 40 upregulated genes and 78 downregulated genes (Fig. 3).\nTable 3Characteristics of study subjectsGSE12356Number of subjectsAge (years, mean \u00b1 SD)SexARCO(I\u2013II/III/IV/)MaleFemaleControl1025.02 \u00b1 2.8773Disease3023.07 \u00b1 3.01131710/10/10GSE74089Control446.75 \u00b1 4.0231\u2212Disease445.25 \u00b1 4.0231\u2212Fig. 1Heat map of top 50 DEGs in ONFH. a Heat map of top 50 DEGs in GSE123568. b Heat map of top 50 DEGs in GSE74089 (tissue samples are presented as columns; individual genes are presented as rows. Red represents upregulated genes; green indicates downregulated genes in patients with ONFH. The patients in the top rows in pink indicate the control columns; the patients in the top rows in blue indicate columns were patients with NFH. DEGs, differentially expressed genes; NFH, necrosis of the femoral head)Fig. 2The volcano plot was constructed using fold-change (Log2FC) values and adjust P values. a The volcano plot of a total of 750 DEGs in GSE123568. b The volcano plot of total 5211 DEGs in GSE74089 (the vertical blue lines correspond to upregulated and downregulated Log2FC; the horizontal Orange line represents an adjust P value of 0.01. The red point represents the differentially upregulated genes with statistical significance; the green point suggests the differentially downregulated genes with statistical significance)Fig. 3Venn diagrams showing the overlap of DEGs between peripheral serum samples and hip articular cartilage samples. a Upregulated DEGs. b Downregulated DEGs (Venn diagram was drawn using the online tool (https://bioinfogp.cnb.csic.es/tools/venny/index.html). Numbers represented the number of DEGs. The percentage was represented by the ratio of current DEGs to the total)\nTable 3\nCharacteristics of study subjects",
+          "cos_sim_score": 0.6005900502204895,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

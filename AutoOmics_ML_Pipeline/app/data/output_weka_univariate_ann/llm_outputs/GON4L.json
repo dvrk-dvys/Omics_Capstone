@@ -1,0 +1,191 @@
+{
+  "rf_rank": 3,
+  "probe_id": "11723153_a_at",
+  "gene_symbol": "GON4L",
+  "score": 0.92,
+  "rf_n_nodes": 1,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.4805,
+  "log_fc": 0.4805,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11723153_a_at",
+  "max_score": 0.92,
+  "mean_abs_fold_change": 0.4805,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:16:37",
+  "interpretation": "GON4L, or GON-4-like protein, is a transcription regulator involved in the activation of histone genes, which are crucial for DNA packaging and gene expression regulation. While there is no direct evidence linking GON4L to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in transcription regulation suggests it could influence cellular responses to steroid treatment, potentially affecting bone health and osteonecrosis development. The evidence retrieved primarily discusses its general biological functions and associations with other conditions, but does not provide specific insights into SONFH. Therefore, the connection remains speculative. Given the lack of direct evidence, the potential of GON4L as a biomarker for early detection of SONFH is weak, relying more on inference than on solid data.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "GON4L may play a role in transcription regulation that could indirectly relate to the mechanisms of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "GON4L (Q3T8J9). https://www.uniprot.org/uniprotkb/Q3T8J9",
+    "GON4L (Q3T8J9-2). https://www.uniprot.org/uniprotkb/Q3T8J9-2",
+    "GON4L (Q3T8J9-3). https://www.uniprot.org/uniprotkb/Q3T8J9-3",
+    "GON4L \u2014 GON4L. https://platform.opentargets.org/target/ENSG00000116580",
+    "GON4L \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000116580/associations",
+    "GON4L \u2194 complex neurodevelopmental disorder. https://platform.opentargets.org/target/ENSG00000116580/associations",
+    "GON4L \u2194 Abnormality of the skeletal system. https://platform.opentargets.org/target/ENSG00000116580/associations",
+    "GON4L \u2194 atrial fibrillation. https://platform.opentargets.org/target/ENSG00000116580/associations",
+    "GON4L \u2014 gon-4 like (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ESR1 \u2014 estrogen receptor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KRAS \u2014 KRAS proto-oncogene, GTPase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ESR2 \u2014 estrogen receptor 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HDAC1 \u2014 histone deacetylase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4947,
+    "completion_tokens": 294,
+    "total_tokens": 5241,
+    "estimated_cost_usd": 0.000918
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q3T8J9",
+          "title": "GON4L (Q3T8J9)",
+          "url": "https://www.uniprot.org/uniprotkb/Q3T8J9",
+          "text": "Protein: GON-4-like protein\nFunction: Acts as a key transcription regulator of histones (PubMed:25339177, PubMed:40516528, PubMed:40516529). Activates transcription of the histone H2A, histone H2B, histone H3 and histone H4 genes in conjunction with GON4L and MIZF (PubMed:25339177). Together with CRAMP1, binds to the promoters of H1 genes (H1-2, H1-3, H1-4, H1-5 and H1-10/H1x), driving their transcription (PubMed:40516528, PubMed:40516529). Also acts as a transcription corepressor, as part of a complex with YY1, SIN3A and HDAC1 (By similarity). Required for B-cell lymphopoiesis (By similarity)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q3T8J9-2",
+          "title": "GON4L (Q3T8J9-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q3T8J9-2",
+          "text": "Protein: Isoform 2 of GON-4-like protein",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q3T8J9-3",
+          "title": "GON4L (Q3T8J9-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q3T8J9-3",
+          "text": "Protein: Isoform 3 of GON-4-like protein",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000116580::function",
+          "title": "GON4L \u2014 GON4L",
+          "url": "https://platform.opentargets.org/target/ENSG00000116580",
+          "text": "Function: Acts as a key transcription regulator of histones (PubMed:25339177, PubMed:40516528, PubMed:40516529). Activates transcription of the histone H2A, histone H2B, histone H3 and histone H4 genes in conjunction with GON4L and MIZF (PubMed:25339177). Together with CRAMP1, binds to the promoters of H1 genes (H1-2, H1-3, H1-4, H1-5 and H1-10/H1x), driving their transcription (PubMed:40516528, PubMed:40516529). Also acts as a transcription corepressor, as part of a complex with YY1, SIN3A and HDAC1 (By similarity). Required for B- cell lymphopoiesis (By similarity).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000116580::EFO_0005772",
+          "title": "GON4L \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000116580/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.528",
+          "cos_sim_score": 0.528262292537644,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000116580::MONDO_0100038",
+          "title": "GON4L \u2194 complex neurodevelopmental disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000116580/associations",
+          "text": "Disease: complex neurodevelopmental disorder\nDescription: A disorder that involves more than one phenotype associated with the central nervous system, including but not limited to intellectual disability, autism, and seizures (epilepsy).\nAssociation score: 0.370",
+          "cos_sim_score": 0.3695798546847018,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000116580::HP_0000924",
+          "title": "GON4L \u2194 Abnormality of the skeletal system",
+          "url": "https://platform.opentargets.org/target/ENSG00000116580/associations",
+          "text": "Disease: Abnormality of the skeletal system\nDescription: An abnormality of the skeletal system.\nAssociation score: 0.316",
+          "cos_sim_score": 0.3163176353890354,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000116580::EFO_0000275",
+          "title": "GON4L \u2194 atrial fibrillation",
+          "url": "https://platform.opentargets.org/target/ENSG00000116580/associations",
+          "text": "Disease: atrial fibrillation\nDescription: Abnormal cardiac rhythm that is characterized by rapid, uncoordinated firing of electrical impulses in the upper chambers of the heart (HEART ATRIA). In such case, blood cannot be effectively pumped into the lower chambers of the heart (HEART VENTRICLES). It is caused by abnormal impulse generation.\nAssociation score: 0.304",
+          "cos_sim_score": 0.3039631950724643,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "GON4L \u2014 gon-4 like",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: GON4L\nGene name: gon-4 like\nAliases / synonyms: GON-4, GON4, LTMS, YARP\nOrganism: Homo sapiens\nGene summary: Predicted to enable transcription corepressor activity. Predicted to be involved in negative regulation of DNA-templated transcription. Predicted to act upstream of or within B cell differentiation. Located in nuclear body. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "GON4L",
+          "aliases": "GON-4, GON4, LTMS, YARP",
+          "gene_description": "gon-4 like"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ESR1 \u2014 estrogen receptor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ESR1\nGene name: estrogen receptor 1\nAliases / synonyms: ER, ESR, ESRA, ESTRR, Era, NR3A1\nOrganism: Homo sapiens\nGene summary: This gene encodes an estrogen receptor and ligand-activated transcription factor. The canonical protein contains an N-terminal ligand-independent transactivation domain, a central DNA binding domain, a hinge domain, and a C-terminal ligand-dependent transactivation domain. The protein localizes to the nucleus where it may form either a homodimer or a heterodimer with estrogen receptor 2. The protein encoded by this gene regulates the transcription of many estrogen-inducible genes that play a role in growth, metabolism, sexual development, gestation, and other reproductive functions and is expressed in many non-reproductive tissues. The receptor encoded by this gene plays a key role in breast cancer, endometrial cancer, and osteoporosis. This gene is reported to have dozens of transcript va...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ESR1",
+          "aliases": "ER, ESR, ESRA, ESTRR, Era, NR3A1",
+          "gene_description": "estrogen receptor 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KRAS \u2014 KRAS proto-oncogene, GTPase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KRAS\nGene name: KRAS proto-oncogene, GTPase\nAliases / synonyms: 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2\nOrganism: Homo sapiens\nGene summary: This gene, a Kirsten ras oncogene homolog from the mammalian ras gene family, encodes a protein that is a member of the small GTPase superfamily. A single amino acid substitution is responsible for an activating mutation. The transforming protein that results is implicated in various malignancies, including lung adenocarcinoma, mucinous adenoma, ductal carcinoma of the pancreas and colorectal carcinoma. Alternative splicing leads to variants encoding two isoforms that differ in the C-terminal region. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KRAS",
+          "aliases": "'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2",
+          "gene_description": "KRAS proto-oncogene, GTPase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ESR2 \u2014 estrogen receptor 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ESR2\nGene name: estrogen receptor 2\nAliases / synonyms: ER-BETA, ESR-BETA, ESRB, ESTRB, Erb, NR3A2, ODG8\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the family of estrogen receptors and superfamily of nuclear receptor transcription factors. The gene product contains an N-terminal DNA binding domain and C-terminal ligand binding domain and is localized to the nucleus, cytoplasm, and mitochondria. Upon binding to 17beta-estradiol or related ligands, the encoded protein forms homo- or hetero-dimers that interact with specific DNA sequences to activate transcription. Some isoforms dominantly inhibit the activity of other estrogen receptor family members. Several alternatively spliced transcript variants of this gene have been described, but the full-length nature of some of these variants has not been fully characterized. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ESR2",
+          "aliases": "ER-BETA, ESR-BETA, ESRB, ESTRB, Erb, NR3A2, ODG8",
+          "gene_description": "estrogen receptor 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "HDAC1 \u2014 histone deacetylase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HDAC1\nGene name: histone deacetylase 1\nAliases / synonyms: GON-10, HD1, KDAC1, RPD3, RPD3L1\nOrganism: Homo sapiens\nGene summary: Histone acetylation and deacetylation, catalyzed by multisubunit complexes, play a key role in the regulation of eukaryotic gene expression. The protein encoded by this gene belongs to the histone deacetylase/acuc/apha family and is a component of the histone deacetylase complex. It also interacts with retinoblastoma tumor-suppressor protein and this complex is a key element in the control of cell proliferation and differentiation. Together with metastasis-associated protein-2, it deacetylates p53 and modulates its effect on cell growth and apoptosis. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HDAC1",
+          "aliases": "GON-10, HD1, KDAC1, RPD3, RPD3L1",
+          "gene_description": "histone deacetylase 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

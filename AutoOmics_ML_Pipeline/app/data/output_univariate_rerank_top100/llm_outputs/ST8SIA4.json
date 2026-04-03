@@ -1,0 +1,176 @@
+{
+  "probe_id": "11739521_at",
+  "gene_symbol": "ST8SIA4",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0331269329999968,
+  "abs_fold_change": 1.3266,
+  "score": 1.3239,
+  "probe_count": 1,
+  "probe_ids": "11739521_at",
+  "max_score": 1.3239,
+  "mean_abs_fold_change": 1.3266,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T23:16:23",
+  "interpretation": "ST8SIA4 encodes a sialyltransferase that catalyzes the addition of sialic acid to glycoproteins, influencing cell adhesion and signaling. This function is particularly relevant in the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), where steroid treatment can disrupt normal bone remodeling and lead to osteonecrosis. While the retrieved evidence does not directly link ST8SIA4 to SONFH, its role in glycosylation and cell adhesion suggests a potential involvement in the pathological processes associated with steroid treatment. The evidence is limited, leading to a low confidence in its direct relevance as a biomarker for SONFH. However, the biological role of ST8SIA4 in modulating cell interactions may provide a basis for further investigation into its clinical utility as an early detection biomarker for SONFH.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "ST8SIA4 may influence the pathological processes in Steroid-Induced Osteonecrosis of the Femoral Head through its role in glycoprotein modification and cell adhesion.",
+  "citations": [
+    "ST8SIA4 (Q92187). https://www.uniprot.org/uniprotkb/Q92187",
+    "ST8SIA4 (Q92187-2). https://www.uniprot.org/uniprotkb/Q92187-2",
+    "ST8SIA4 \u2014 ST8SIA4. https://platform.opentargets.org/target/ENSG00000113532",
+    "ST8SIA4 \u2194 systemic lupus erythematosus. https://platform.opentargets.org/target/ENSG00000113532/associations",
+    "ST8SIA4 \u2194 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000113532/associations",
+    "ST8SIA4 \u2194 hypotension. https://platform.opentargets.org/target/ENSG00000113532/associations",
+    "ST8SIA4 \u2194 ovarian dysfunction. https://platform.opentargets.org/target/ENSG00000113532/associations",
+    "ST8SIA4 \u2014 ST8 alpha-N-acetyl-neuraminide alpha-2,8-sialyltransferase 4 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MIR146A \u2014 microRNA 146a (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HLA-C \u2014 major histocompatibility complex, class I, C (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ST8SIA4-DT \u2014 ST8SIA4 divergent transcript (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4990,
+    "completion_tokens": 306,
+    "total_tokens": 5296,
+    "estimated_cost_usd": 0.000932
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q92187",
+          "title": "ST8SIA4 (Q92187)",
+          "url": "https://www.uniprot.org/uniprotkb/Q92187",
+          "text": "Protein: CMP-N-acetylneuraminate-poly-alpha-2,8-sialyltransferase\nFunction: Catalyzes the transfer of a sialic acid from a CMP-linked sialic acid donor onto a terminal alpha-2,3-, alpha-2,6-, or alpha-2,8-linked sialic acid of an N-linked glycan protein acceptor through alpha-2,8-linkages (PubMed:10766765, PubMed:11279095, PubMed:28810663, PubMed:9774483). Therefore, participates in polysialic acid synthesis on various sialylated N-acetyllactosaminyl oligosaccharides, including NCAM1 N-glycans, FETUB N-glycans and AHSG (PubMed:10766765, PubMed:11279095, PubMed:28810663, PubMed:9774483). It is noteworthy that alpha-2,3-linked sialic acid is apparently a better acceptor than alpha-2,6-linked sialic acid (PubMed:9774483)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q92187-2",
+          "title": "ST8SIA4 (Q92187-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q92187-2",
+          "text": "Protein: Isoform 2 of CMP-N-acetylneuraminate-poly-alpha-2,8-sialyltransferase",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000113532::function",
+          "title": "ST8SIA4 \u2014 ST8SIA4",
+          "url": "https://platform.opentargets.org/target/ENSG00000113532",
+          "text": "Function: Catalyzes the transfer of a sialic acid from a CMP-linked sialic acid donor onto a terminal alpha-2,3-, alpha-2,6-, or alpha-2,8- linked sialic acid of an N-linked glycan protein acceptor through alpha-2,8-linkages (PubMed:10766765, PubMed:11279095, PubMed:28810663, PubMed:9774483). Therefore, participates in polysialic acid synthesis on various sialylated N-acetyllactosaminyl oligosaccharides, including NCAM1 N-glycans, FETUB N-glycans and AHSG (PubMed:10766765, PubMed:11279095, PubMed:28810663, PubMed:9774483). It is noteworthy that alpha-2,3-linked sialic acid is apparently a better acceptor than alpha-2,6-linked sialic acid (PubMed:9774483).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000113532::MONDO_0007915",
+          "title": "ST8SIA4 \u2194 systemic lupus erythematosus",
+          "url": "https://platform.opentargets.org/target/ENSG00000113532/associations",
+          "text": "Disease: systemic lupus erythematosus\nDescription: An autoimmune multi-organ disease typically associated with vasculopathy and autoantibody production. Most patients have antinuclear antibodies (ANA). The presence of anti-dsDNA or anti-Smith antibodies are highly-specific.\nAssociation score: 0.438",
+          "cos_sim_score": 0.43832763677821385,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000113532::EFO_0000400",
+          "title": "ST8SIA4 \u2194 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000113532/associations",
+          "text": "Disease: diabetes mellitus\nDescription: A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization.\nAssociation score: 0.373",
+          "cos_sim_score": 0.3727512996695297,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000113532::EFO_0005251",
+          "title": "ST8SIA4 \u2194 hypotension",
+          "url": "https://platform.opentargets.org/target/ENSG00000113532/associations",
+          "text": "Disease: hypotension\nDescription: Blood pressure that is abnormally low.\nAssociation score: 0.331",
+          "cos_sim_score": 0.330962682560535,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000113532::EFO_0009003",
+          "title": "ST8SIA4 \u2194 ovarian dysfunction",
+          "url": "https://platform.opentargets.org/target/ENSG00000113532/associations",
+          "text": "Disease: ovarian dysfunction\nDescription: The inability of the ovaries to function.\nAssociation score: 0.324",
+          "cos_sim_score": 0.32415476431411094,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "ST8SIA4 \u2014 ST8 alpha-N-acetyl-neuraminide alpha-2,8-sialyltransferase 4",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ST8SIA4\nGene name: ST8 alpha-N-acetyl-neuraminide alpha-2,8-sialyltransferase 4\nAliases / synonyms: PST, PST1, SIAT8-D, SIAT8D, ST8SIA-IV, ST8SiaIV\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene catalyzes the polycondensation of alpha-2,8-linked sialic acid required for the synthesis of polysialic acid, a modulator of the adhesive properties of neural cell adhesion molecule (NCAM1). The encoded protein, which is a member of glycosyltransferase family 29, is a type II membrane protein that may be present in the Golgi apparatus. Two transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ST8SIA4",
+          "aliases": "PST, PST1, SIAT8-D, SIAT8D, ST8SIA-IV, ST8SiaIV",
+          "gene_description": "ST8 alpha-N-acetyl-neuraminide alpha-2,8-sialyltransferase 4"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MIR146A \u2014 microRNA 146a",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MIR146A\nGene name: microRNA 146a\nAliases / synonyms: MIRN146, MIRN146A, miR-146a, miRNA146A\nOrganism: Homo sapiens\nGene summary: microRNAs (miRNAs) are short (20-24 nt) non-coding RNAs that are involved in post-transcriptional regulation of gene expression in multicellular organisms by affecting both the stability and translation of mRNAs. miRNAs are transcribed by RNA polymerase II as part of capped and polyadenylated primary transcripts (pri-miRNAs) that can be either protein-coding or non-coding. The primary transcript is cleaved by the Drosha ribonuclease III enzyme to produce an approximately 70-nt stem-loop precursor miRNA (pre-miRNA), which is further cleaved by the cytoplasmic Dicer ribonuclease to generate the mature miRNA and antisense miRNA star (miRNA*) products. The mature miRNA is incorporated into a RNA-induced silencing complex (RISC), which recognizes target mRNAs through imperfect base pairing with...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MIR146A",
+          "aliases": "MIRN146, MIRN146A, miR-146a, miRNA146A",
+          "gene_description": "microRNA 146a"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "HLA-C \u2014 major histocompatibility complex, class I, C",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HLA-C\nGene name: major histocompatibility complex, class I, C\nAliases / synonyms: D6S204, HLA-JY3, HLAC, HLC-C, MHC, PSORS1\nOrganism: Homo sapiens\nGene summary: HLA-C belongs to the HLA class I heavy chain paralogues. This class I molecule is a heterodimer consisting of a heavy chain and a light chain (beta-2 microglobulin). The heavy chain is anchored in the membrane. Class I molecules play a central role in the immune system by presenting peptides derived from endoplasmic reticulum lumen. They are expressed in nearly all cells. The heavy chain is approximately 45 kDa and its gene contains 8 exons. Exon one encodes the leader peptide, exons 2 and 3 encode the alpha1 and alpha2 domain, which both bind the peptide, exon 4 encodes the alpha3 domain, exon 5 encodes the transmembrane region, and exons 6 and 7 encode the cytoplasmic tail. Polymorphisms within exon 2 and exon 3 are responsible for the peptide binding specificity of each class one molecu...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HLA-C",
+          "aliases": "D6S204, HLA-JY3, HLAC, HLC-C, MHC, PSORS1",
+          "gene_description": "major histocompatibility complex, class I, C"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ST8SIA4-DT \u2014 ST8SIA4 divergent transcript",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ST8SIA4-DT\nGene name: ST8SIA4 divergent transcript\nOrganism: Homo sapiens",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ST8SIA4-DT",
+          "aliases": "",
+          "gene_description": "ST8SIA4 divergent transcript"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

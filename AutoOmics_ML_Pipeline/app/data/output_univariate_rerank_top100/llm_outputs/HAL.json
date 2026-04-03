@@ -1,0 +1,228 @@
+{
+  "probe_id": "11735177_at",
+  "gene_symbol": "HAL",
+  "Median_TestAUC": 0.962962962962963,
+  "SD_TestAUC": 0.1092435644722417,
+  "abs_fold_change": 1.7646,
+  "score": 1.4205,
+  "probe_count": 1,
+  "probe_ids": "11735177_at",
+  "max_score": 1.4205,
+  "mean_abs_fold_change": 1.7646,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T23:06:23",
+  "interpretation": "Histidine ammonia-lyase (HAL) is an enzyme involved in the catabolism of histidine, converting it into trans-urocanic acid. While HAL is primarily associated with histidinemia and certain skin neoplasms, there is no direct evidence linking HAL to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH). The retrieved data indicates that HAL's role in metabolic processes could theoretically influence bone health, particularly through its involvement in amino acid metabolism and potential effects on cellular apoptosis. However, the evidence connecting HAL specifically to SONFH is weak, relying on general biological reasoning rather than direct studies. Therefore, HAL's potential as a biomarker for early detection of SONFH is limited and speculative.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "HAL does not have a strong connection to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) based on current evidence.",
+  "citations": [
+    "HAL (P42357). https://www.uniprot.org/uniprotkb/P42357",
+    "HAL (P42357-2). https://www.uniprot.org/uniprotkb/P42357-2",
+    "HAL (P42357-3). https://www.uniprot.org/uniprotkb/P42357-3",
+    "HAL \u2194 histidinemia. https://platform.opentargets.org/target/ENSG00000084110/associations",
+    "HAL \u2194 skin neoplasm. https://platform.opentargets.org/target/ENSG00000084110/associations",
+    "HAL \u2194 cutaneous melanoma. https://platform.opentargets.org/target/ENSG00000084110/associations",
+    "HAL \u2194 skin disease. https://platform.opentargets.org/target/ENSG00000084110/associations",
+    "HAL \u2194 basal cell carcinoma. https://platform.opentargets.org/target/ENSG00000084110/associations",
+    "HAL \u2014 histidine ammonia-lyase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TP53 \u2014 tumor protein p53 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CD274 \u2014 CD274 molecule (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "SOX2 \u2014 SRY-box transcription factor 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "POU5F1 \u2014 POU class 5 homeobox 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+    "World Congress on Osteoporosis, Osteoarthritis and Musculoskeletal Diseases (WCO-IOF-ESCEO 2025) (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12457634/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9064,
+    "completion_tokens": 279,
+    "total_tokens": 9343,
+    "estimated_cost_usd": 0.001527
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P42357",
+          "title": "HAL (P42357)",
+          "url": "https://www.uniprot.org/uniprotkb/P42357",
+          "text": "Protein: Histidine ammonia-lyase",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P42357-2",
+          "title": "HAL (P42357-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P42357-2",
+          "text": "Protein: Isoform 2 of Histidine ammonia-lyase",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P42357-3",
+          "title": "HAL (P42357-3)",
+          "url": "https://www.uniprot.org/uniprotkb/P42357-3",
+          "text": "Protein: Isoform 3 of Histidine ammonia-lyase",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000084110::MONDO_0009345",
+          "title": "HAL \u2194 histidinemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000084110/associations",
+          "text": "Disease: histidinemia\nDescription: Histidinemia is a rare metabolic disorder characterized by elevated histidine levels in blood, urine, and cerebrospinal fluid, generally with no clinical repercussions.\nAssociation score: 0.687",
+          "cos_sim_score": 0.6865922812669484,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000084110::EFO_0004198",
+          "title": "HAL \u2194 skin neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000084110/associations",
+          "text": "Disease: skin neoplasm\nDescription: Tumors or cancer of the SKIN.\nAssociation score: 0.403",
+          "cos_sim_score": 0.4031121218381411,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000084110::EFO_0000389",
+          "title": "HAL \u2194 cutaneous melanoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000084110/associations",
+          "text": "Disease: cutaneous melanoma\nDescription: A primary melanoma arising from atypical melanocytes in the skin. Precursor lesions include acquired and congenital melanocytic nevi, and dysplastic nevi. Several histologic variants have been recognized, including superficial spreading melanoma, acral lentiginous melanoma, nodular melanoma, and lentigo maligna melanoma.\nAssociation score: 0.372",
+          "cos_sim_score": 0.37212288446823333,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000084110::EFO_0000701",
+          "title": "HAL \u2194 skin disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000084110/associations",
+          "text": "Disease: skin disease\nDescription: Any deviation from the normal structure or function of the skin or subcutaneous tissue that is manifested by a characteristic set of symptoms and signs.\nAssociation score: 0.368",
+          "cos_sim_score": 0.367619962636044,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000084110::EFO_0004193",
+          "title": "HAL \u2194 basal cell carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000084110/associations",
+          "text": "Disease: basal cell carcinoma\nDescription: A carcinoma involving the basal cells.\nAssociation score: 0.367",
+          "cos_sim_score": 0.3674889484075245,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "HAL \u2014 histidine ammonia-lyase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HAL\nGene name: histidine ammonia-lyase\nAliases / synonyms: HIS, HSTD\nOrganism: Homo sapiens\nGene summary: Histidine ammonia-lyase is a cytosolic enzyme catalyzing the first reaction in histidine catabolism, the nonoxidative deamination of L-histidine to trans-urocanic acid. Histidine ammonia-lyase defects cause histidinemia which is characterized by increased histidine and histamine and decreased urocanic acid in body fluids. Several transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Apr 2012]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HAL",
+          "aliases": "HIS, HSTD",
+          "gene_description": "histidine ammonia-lyase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TP53 \u2014 tumor protein p53",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TP53\nGene name: tumor protein p53\nAliases / synonyms: BCC7, BMFS5, LFS1, P53, TRP53\nOrganism: Homo sapiens\nGene summary: This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TP53",
+          "aliases": "BCC7, BMFS5, LFS1, P53, TRP53",
+          "gene_description": "tumor protein p53"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CD274 \u2014 CD274 molecule",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CD274\nGene name: CD274 molecule\nAliases / synonyms: ADMIO5, B7-H, B7H1, PD-L1, PDCD1L1, PDCD1LG1, PDL1, hPD-L1\nOrganism: Homo sapiens\nGene summary: This gene encodes an immune inhibitory receptor ligand that is expressed by hematopoietic and non-hematopoietic cells, such as T cells and B cells and various types of tumor cells. The encoded protein is a type I transmembrane protein that has immunoglobulin V-like and C-like domains. Interaction of this ligand with its receptor inhibits T-cell activation and cytokine production. During infection or inflammation of normal tissue, this interaction is important for preventing autoimmunity by maintaining homeostasis of the immune response. In tumor microenvironments, this interaction provides an immune escape for tumor cells through cytotoxic T-cell inactivation. Expression of this gene in tumor cells is considered to be prognostic in many types of human malignancies, including colon cancer a...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CD274",
+          "aliases": "ADMIO5, B7-H, B7H1, PD-L1, PDCD1L1, PDCD1LG1, PDL1, hPD-L1",
+          "gene_description": "CD274 molecule"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "SOX2 \u2014 SRY-box transcription factor 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SOX2\nGene name: SRY-box transcription factor 2\nAliases / synonyms: ANOP3, MCOPS3\nOrganism: Homo sapiens\nGene summary: This intronless gene encodes a member of the SRY-related HMG-box (SOX) family of transcription factors involved in the regulation of embryonic development and in the determination of cell fate. The product of this gene is required for stem-cell maintenance in the central nervous system, and also regulates gene expression in the stomach. Mutations in this gene have been associated with optic nerve hypoplasia and with syndromic microphthalmia, a severe form of structural eye malformation. This gene lies within an intron of another gene called SOX2 overlapping transcript (SOX2OT). [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SOX2",
+          "aliases": "ANOP3, MCOPS3",
+          "gene_description": "SRY-box transcription factor 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "POU5F1 \u2014 POU class 5 homeobox 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: POU5F1\nGene name: POU class 5 homeobox 1\nAliases / synonyms: OCT3, OCT4, OCT4Borf1, OTF-3, OTF3, OTF4, Oct-3, Oct-4, Oct3/4\nOrganism: Homo sapiens\nGene summary: This gene encodes a transcription factor containing a POU homeodomain that plays a key role in embryonic development and stem cell pluripotency. Aberrant expression of this gene in adult tissues is associated with tumorigenesis. This gene can participate in a translocation with the Ewing's sarcoma gene on chromosome 21, which also leads to tumor formation. Alternative splicing, as well as usage of alternative AUG and non-AUG translation initiation codons, results in multiple isoforms. One of the AUG start codons is polymorphic in human populations. Related pseudogenes have been identified on chromosomes 1, 3, 8, 10, and 12. [provided by RefSeq, Oct 2013]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "POU5F1",
+          "aliases": "OCT3, OCT4, OCT4Borf1, OTF-3, OTF3, OTF4, Oct-3, Oct-4, Oct3/4",
+          "gene_description": "POU class 5 homeobox 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "1. Introduction\nOsteonecrosis of the femoral head (ONFH) is a common disease mainly characterized by apoptosis of bone cells that leads to collapse of the femoral head and cartilage damage. Notably, the round surface of the head and acetabulum joint flattens and eventually leads to secondary osteoarthritis.[1] Studies have shown that the disease is mainly prevalent in patients with long-term use of hormonal drugs, long-term alcohol abuse, and hip trauma.[2] Steroid-induced ONFH (SONFH) is a common type of femoral head necrosis. SONFH patients are frequently misdiagnosed as hip synovitis or osteoarthritis owing to lack of obvious signs coupled with imaging abnormalities during early stages of disease development.[3] Although transcriptomic analyses have contributed to development of clinical treatment strategies for SONFH, the precise underlying mechanism of SONFH remains unclear.[4,5]\nBioinformatics analyses have significantly improved the search and identification of key genes regulating the occurrence of various diseases, thereby generating new insights to guide development of treatment strategies. SONFH has a complex pathophysiological mechanism. Genotyping of SONFH in adults revealed that gene coding protein polymorphism was associated with SONFH.[6] It has been hypothesized that progression of SONFH to the end stage in adult patients may be due to differential expression of protein-coding genes involved in thrombosis, angiogenesis inhibition, programmed cell death, lipid biosynthesis, and bone homeostasis. In the present study, we aimed to identify differentially expressed genes in peripheral blood of patients with early SONFH and further explored the pathogenesis of this disease using transcriptome data from the Gene Expression Omnibus database.\n2. Materials and Methods\n2.1. Data acquisition\nThe Gene Expression Omnibus database not only stores many gene chips and sequence data but also provides tools for users to query and download gene expression profiles. In the present study, we searched for relevant datasets using \u201csteroid-induced osteonecrosis of femoral head\u201d as the keyword, with focus on SONFH-related datasets. Consequently, we downloaded transcriptome data (GSE123568) belonging to 30 SONFH and 10 non-SONFH (following steroid administration) subjects.\n2.2. Sample correlation analysis\nOverall expression profiles of the transcriptome data were clustered using ClusterProfiler packages implemented in R software (version 4.0.2). Only dimension features containing the vast majority of variances were retained, with those containing zero variances discarded based on a principal component analysis (PCA) plot. Using weighted gene correlation network analysis (WGCNA) package in R language to perform WGCNA on data. WGCNA adds phenotypic weight parameters in the process of constructing gene co-expression network and optimizes classification using scale-free clustering and dynamic tree cut algorithm to achieve accurate and efficient data analysis.\n2.3. Functional annotation of DEGs\nFunctional annotation of key genes was performed using the ClusterProfiler package in R and followed by comprehensive functional correlation of candidate genes. Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analyses were performed to evaluate related functional categories. Significant differentially expressed genes (DEGs) were filtered, and bar charts and bubble charts were drawn according to their functions and pathways, respectively.\n2.4. Construction of protein\u2013protein interaction networks\nProtein\u2013protein interaction (PPI) networks of the DEGs were generated using the STRING online tool and Cytoscape software. Summarily, DEGs were entered into the STRING online tool to screen for interacting proteins with a combined score of\u2005>\u20050.9. The obtained PPI results were imported into Cytoscape software, then prominent modules in PPI were screened to construct the network through molecular complex detection. NetworkX package was then used to visualize the network in Python, with node sizes taken to be proportional to node degree.\n2.5. Quantitative real-time polymerase chain reaction",
+          "cos_sim_score": 0.58233243227005,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12457634",
+          "title": "World Congress on Osteoporosis, Osteoarthritis and Musculoskeletal Diseases (WCO-IOF-ESCEO 2025)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12457634/",
+          "text": "Conclusions: The bone plays an important role in endocrine metabolism. Further research is needed to determine the exact relationship between bones, secreted hormones, and other endocrine organs. Determining their exact effects may be of great importance for the diagnosis and treatment of osteoporosis and obesity.\nReferences:Albulescu DM, et al. Rom J of Oral Rehab 2023;15:199St\u0103nusi AS, et al. Rom J of Oral Rehab 2024;16:79Tonescu IG, et al. Rom J of Oral Rehab 2021;13:138Preda SA,et al. Rom J Morphol Embryol 2019;60:653Preda SA, et al. Exp Ther Med 2022;23(4):254H\u00e2rza M, et al. Rom J Morphol Embryol 2014;55(1):123Andronesi A G, et al. Rom J Morphol Embryol 2016;57(3):1125Mitroi G, et al. Rom J Morphol Embryol 2015;56(4):1319Mitroi GG, et al. Life 2024;14(3):352.Mitroi GG, et al. Life 2024;14(9):1127Mitroi M, et al. Rom J Morphol Embryol 2011;52(1):186Mitroi M, Rom J Morphol Embryol 2011;52(3):1051Mitroi M, Rom J Morphol Embryol 2017;58(1):145\nAlbulescu DM, et al. Rom J of Oral Rehab 2023;15:199\nSt\u0103nusi AS, et al. Rom J of Oral Rehab 2024;16:79\nTonescu IG, et al. Rom J of Oral Rehab 2021;13:138\nPreda SA,et al. Rom J Morphol Embryol 2019;60:653\nPreda SA, et al. Exp Ther Med 2022;23(4):254\nH\u00e2rza M, et al. Rom J Morphol Embryol 2014;55(1):123\nAndronesi A G, et al. Rom J Morphol Embryol 2016;57(3):1125\nMitroi G, et al. Rom J Morphol Embryol 2015;56(4):1319\nMitroi GG, et al. Life 2024;14(3):352.\nMitroi GG, et al. Life 2024;14(9):1127\nMitroi M, et al. Rom J Morphol Embryol 2011;52(1):186\nMitroi M, Rom J Morphol Embryol 2011;52(3):1051\nMitroi M, Rom J Morphol Embryol 2017;58(1):145\nP1072 BONES AND HORMONES\nD. M. Albulescu1, N. M. Bug\u0103l\u01032, A. Boicea3, G. Mitroi4, G. G. Mitroi5, M. R. Mitroi6, S. A. Preda7\n1University of Medicine and Pharmacy, Department of Anatomy, Craiova, Romania, 2University of Medicine and Pharmacy, Faculty of Medicine and Pharmacy, Craiova, Romania, 3University of Medicine and Pharmacy, Department of Medicine and Professional Diseases, Craiova, Romania, 4University of Medicine and Pharmacy, Department of Urology, Craiova, Romania, 5University of Medicine and Pharmacy Craiova, Department of Dermatology Clinic, Craiova, Romania, 6University of Medicine and Pharmacy, Department of Otorhinolaryngology, Craiova, Romania, 7University of Medicine and Pharmacy, Faculty of Dentistry, Craiova, Romania",
+          "cos_sim_score": 0.5721588730812073,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12457634",
+          "title": "World Congress on Osteoporosis, Osteoarthritis and Musculoskeletal Diseases (WCO-IOF-ESCEO 2025)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12457634/",
+          "text": "1Qilu Hospital of Shandong University, Jinan, China\nObjective: Long-term use of glucocorticoids (GCs) is known to be a predominant cause of osteonecrosis of the femoral head (ONFH). Moreover, GCs can mediate apoptosis of various cell types by exaggerating oxidative stress. The objectives of this research were to elucidate the potential function and underlying mechanisms of CST in the ONFH process.\nMaterial and methods: In this study, we detected that the CST expression levels were diminished in patients with ONFH compared with femoral neck fracture (FNF). In addition, a GC-induced rat ONFH model was established, which impaired bone quality in the femoral head. Then, administration of CST attenuated these ONFH phenotypes. Furthermore, osteoblast and endothelial cells were cultured and stimulated with dexamethasone (Dex) in the presence or absence of recombinant CST.\nResults: Dex induced impaired anabolic metabolism of osteoblasts and suppressed tubeformation endothelial cells, while additional treatment with CST reversed this damage to the cells. Moreover, blocking GHSR1a, a well-accepted receptor of CST, or blocking the AKT signaling pathway largely abolished the protective function of CST in Dex-induced disorder of the cells.\nConclusion: We indicate that CST has the capability to prevent GC-induced apoptosis and metabolic disorder of osteoblasts in the pathogenesis of ONFH via the GHSR1a/AKT signaling pathway.\nP1528 EFFICACY AND SAFETY OF COMBINATION DENOSUMAB WITH ELDECALCITOL FOR POSTMENOPAUSAL OSTEOPOROSIS: AN OPEN-LABEL, RANDOMIZED, PARALLEL-CONTROLLED TRIAL\nY. H. Zeng1, Q. H. Tang1, Q. M. Li1, L. Yang1, B. Zhang1, M. Yang1, M. H. Che1, Y. H. Peng1\n1Honghui Hospital, Xi'an, China\nObjective: This study aims to compare the efficacy and safety of denosumab combined with eldecalcitol in postmenopausal osteoporosis.\nMaterials and methods: This open-label, randomized, positive-controlled trial was conducted at Honghui Hospital, Xi\u2019an Jiaotong University. Eligible patients were postmenopausal women with osteoporosis (BMD T-score\u2009\u2264\u2009\u2212\u20092.5) or low bone mass (T-score between \u2212\u20092.5 and \u2212\u20091.0) with a fragility fracture. Participants were randomly assigned (1:1) to receive denosumab 60\u00a0mg every 6\u00a0months via subcutaneous injection for 12\u00a0months, with either oral eldecalcitol (0.75\u00a0\u03bcg daily) or vitamin D (800\u00a0IU daily) and calcium supplementation (600\u00a0mg daily). The primary outcome was the percentage change from baseline in lumbar spine BMD (L1\u2013L4) at 12\u00a0months. Safety outcomes included adverse events and abnormal laboratory data over 12\u00a0months.\nResults: Between Aug 24, 2023, and Mar 26, 2024, 112 postmenopausal women were assessed for eligibility, and 100 were randomly assigned to the eldecalcitol group (n\u2009=\u200950) or the vitamin D group (n\u2009=\u200950) (Fig.\u00a01). Baseline characteristics were well balanced. At baseline, all randomized participants were non-smokers and non-drinkers, and none had a history of fragility fractures. Both groups had been postmenopausal for over 10\u00a0years (11.3\u2009\u00b1\u20096.7 vs. 11.0\u2009\u00b1\u20097.1\u00a0years). Baseline serum 25(OH)D levels were 15.7\u00a0ng/mL and 16.8\u00a0ng/mL in the eldecalcitol and vitamin D groups, respectively. Serum calcium levels were 2.4\u2009\u00b1\u20090.1\u00a0mmol/L in both groups. Serum phosphorus levels were both 1.2\u2009\u00b1\u20090.1\u00a0mmol/L, serum \u03b2-CTX were both 0.6\u00a0ng/ml, and serum PINP were 64.7\u2009\u00b1\u200918.8\u00a0ng/ml in the eldecalcitol group and 62.9\u2009\u00b1\u200923.1\u00a0ng/ml in the vitamin D group.",
+          "cos_sim_score": 0.5707303285598755,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12457634",
+          "title": "World Congress on Osteoporosis, Osteoarthritis and Musculoskeletal Diseases (WCO-IOF-ESCEO 2025)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12457634/",
+          "text": "Conclusions: This case highlights the possible link between chronic AD and osteoporosis, where systemic inflammation and corticosteroid use may disrupt bone remodeling. Clinicians should monitor bone health in AD patients, especially those with long disease histories or frequent corticosteroid use. Early screening and interventions, such as calcium and vitamin D supplementation and exercise, can help prevent osteoporosis and reduce fracture risks in these patients.\nReferences:Albulescu DM, et al. Rom J of Oral Rehab 2023;15:199St\u0103nusi AS, et al. Rom J of Oral Rehab 2024;16:79Tonescu IG, et al. Rom J of Oral Rehab 2021;13:138Preda SA,et al. Rom J Morphol Embryol 2019;60:653Preda SA, et al. Exp Ther Med 2022;23(4):254H\u00e2rza M, et al. Rom J Morphol Embryol 2014;55(1):123Andronesi A G, et al. Rom J Morphol Embryol 2016;57(3):1125Mitroi G, et al. Rom J Morphol Embryol 2015;56(4):1319Mitroi GG, et al. Life 2024;14(3):352.Mitroi GG, et al. Life 2024;14(9):1127Mitroi M, et al. Rom J Morphol Embryol 2011;52(1):186Mitroi M, Rom J Morphol Embryol 2011;52(3):1051Mitroi M, Rom J Morphol Embryol 2017;58(1):145Preda S A, et al. Rev Chim (Bucharest) 2019;70:2054Constantin C, et al. Rev Chim (Bucharest) 2019;70:2401Neagos A, Journal of Clinical Medicine 2022; 11(18):5347Musat G, et al. Mol Clin Oncol. 2020;12(3):258\nAlbulescu DM, et al. Rom J of Oral Rehab 2023;15:199\nSt\u0103nusi AS, et al. Rom J of Oral Rehab 2024;16:79\nTonescu IG, et al. Rom J of Oral Rehab 2021;13:138\nPreda SA,et al. Rom J Morphol Embryol 2019;60:653\nPreda SA, et al. Exp Ther Med 2022;23(4):254\nH\u00e2rza M, et al. Rom J Morphol Embryol 2014;55(1):123\nAndronesi A G, et al. Rom J Morphol Embryol 2016;57(3):1125\nMitroi G, et al. Rom J Morphol Embryol 2015;56(4):1319\nMitroi GG, et al. Life 2024;14(3):352.\nMitroi GG, et al. Life 2024;14(9):1127\nMitroi M, et al. Rom J Morphol Embryol 2011;52(1):186\nMitroi M, Rom J Morphol Embryol 2011;52(3):1051\nMitroi M, Rom J Morphol Embryol 2017;58(1):145\nPreda S A, et al. Rev Chim (Bucharest) 2019;70:2054\nConstantin C, et al. Rev Chim (Bucharest) 2019;70:2401\nNeagos A, Journal of Clinical Medicine 2022; 11(18):5347\nMusat G, et al. Mol Clin Oncol. 2020;12(3):258\nP1067 EXPLORING THE LINK BETWEEN CHRONIC ATOPIC DERMATITIS AND OSTEOPOROSIS: A CROSS-SECTIONAL STUDY\nG. G. Mitroi1, N. M. Bug\u0103l\u01032, S. A. Preda3, D. M. Albulescu4, A. Boicea5, G. Mitroi6, M. R. Mitroi7",
+          "cos_sim_score": 0.5515433549880981,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12457634",
+          "title": "World Congress on Osteoporosis, Osteoarthritis and Musculoskeletal Diseases (WCO-IOF-ESCEO 2025)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12457634/",
+          "text": "Conclusion: This presentation will cover the currently accepted pathophysiological mechanisms underlying AFF. It will discuss the recommended surgical treatments and identify which interventions may be unnecessary for achieving successful surgical outcomes. The importance of accurate diagnosis and methods to achieve it will also be addressed.\nKeywords: Atypical femur fractures, bisphosphonates, epidemiology, radiology, histology, bone matrix, microcracks, orthopaedics.\nAcknowledgements: To patients, collaborators, authorities and funding agencies making the work possible.\nDisclosure: Nothing to disclose.\nWorld Congress on Osteoporosis, Osteoarthritis and Musculoskeletal Diseases (WCO-IOF-ESCEO 2025): Meet-the-Experts Abstracts\nMTE1 PAGET\u2019S DISEASE OF BONE: MANAGEMENT LESSONS FROM PIVOTAL STUDIES\nE. M. Dennison1\n1MRC Lifecourse Epidemiology Centre University of Southampton, Southampton, United Kingdom\nPaget\u2019s disease of bone is a focal bone disorder characterised by increased bone remodelling and disorganised bone structure. There appears to be a genetic cause in some cases. Recent epidemiological studies highlight a decreasing incidence of the condition, mirrored by an apparent decreasing clinical severity. Pain is the most common presentation, but recent studies have suggested that such pain is commonly due to osteoarthritis at an unaffected site. Bisphosphonates have been shown to be effective in management of the disease, with zoledronate an effective and commonly used therapy. Patients with Paget's disease undergoing joint arthroplasty of an affected joint appear to have a more difficult time medically and surgically in the perioperative period, but implant longevity appears similar. Treatment guidelines have been produced for the condition by international societies and will be briefly reviewed.\nEMD has no conflicts of interest to declare.\nMTE2 INFLUENCES OF PARENTAL HEALTH ON THE NEXT GENERATION BONE\nR. J. Moon1,2, E. M. Curtis1\n1MRC Lifecourse Epidemiology Centre, University of Southampton, Southampton, United Kingdom, 2Paediatric Endocrinology, Southampton Children\u2019s Hospital, University Hospital Southampton NHS Foundation Trust, Southampton, United Kingdom\nThere is increasing evidence that in utero and early life exposures are important to lifelong bone health and fracture risk. Increasing bone mineral accrual during fetal life and childhood might delay the onset of osteoporosis.\nIn this session, we will outline the accrual of bone mineral throughout the life course and how observational and intervention studies have shown that parental health, lifestyle factors and diet, in particular maternal calcium and 25-hydroxyvitamin D [25(OH)D] status are associated with offspring bone mineral density. We will present findings from the MAVIDOS randomised controlled trial of vitamin D supplementation in pregnancy, which has demonstrated a positive effect of pregnancy vitamin D supplementation on offspring bone health into mid childhood.\nPotential mechanisms for the effects of environmental exposures on early life programming of bone health, including epigenetic mechanisms, will also be discussed.\nMTE3 FRACTURE RISK IN CANCER SURVIVORS: BONE FRAGILITY BEYOND METASTASES\nC. Confavreux1\n1Hospices Civils de Lyon-Universit\u00e9 Claude Bernard Lyon 1, Lyon, France\nMajor advances have been obtained in cancer treatment for the last ten years and a significant number of patients are now cured or benefit from prolonged remissions, even in the metastatic setting. The post-cancer phase is a new stage during which patients have to recover from medical treatments\u2014which can be very demanding\u2014and return to their personal, social, emotional and professional lives. Nevertheless, many of them suffer after-effects, remain tired and have limited physical capacity. These patients need to be offered a multi-dimensional medical assessment to identify areas of fragility and offer personalised care. With regard to bone health, in addition to the usual assessment, rheumatologists will reconstruct the patient's oncological history, the various therapies affecting bone that the patient has received and the outlook for the patient's oncological development (age, prognosis, maintenance treatment, hormonal status, weight change, etc.). A summary of all these elements will enable us to propose optimal bone management. Using practical examples, we will look at different oncological situations and treatments that affect bone and propose therapeutic approaches despite the absence of recommendations.\nMTE4 ADVANCES IN THE MANAGEMENT OF OSTEOGENESIS IMPERFECTA\nM. L. Brandi1\n1Firmo Foundation, Florence, Italy",
+          "cos_sim_score": 0.5400558710098267,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

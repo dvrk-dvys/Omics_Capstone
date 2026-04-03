@@ -1,0 +1,135 @@
+{
+  "probe_id": "11722752_a_at",
+  "gene_symbol": "ELMSAN1",
+  "score": 1.0,
+  "SD_TestAUC": 0.0523782800878923,
+  "abs_fold_change": 0.8022,
+  "probe_count": 1,
+  "probe_ids": "11722752_a_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.8022,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T22:25:44",
+  "interpretation": "ELMSAN1, also known as MIDEAS, is involved in transcription regulation and is predicted to play a role in the negative regulation of DNA-templated transcription. While there is no direct evidence linking ELMSAN1 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in metabolic processes and potential roles in various diseases suggest it may influence bone metabolism or response to steroid treatment. The evidence retrieved does not establish a clear connection to SONFH, leading to a conclusion of weak grounding for its role as a biomarker in this context. Therefore, while ELMSAN1 may have biological relevance, its clinical utility as an early-detection biomarker for SONFH is limited.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "ELMSAN1 may have indirect implications in metabolic processes relevant to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "MIDEAS (Q6PJG2). https://www.uniprot.org/uniprotkb/Q6PJG2",
+    "ELMSAN1 \u2194 metabolic disease. https://platform.opentargets.org/target/ENSG00000156030/associations",
+    "ELMSAN1 \u2194 cutaneous lupus erythematosus. https://platform.opentargets.org/target/ENSG00000156030/associations",
+    "ELMSAN1 \u2194 multiple sclerosis. https://platform.opentargets.org/target/ENSG00000156030/associations",
+    "ELMSAN1 \u2194 triple-negative breast cancer. https://platform.opentargets.org/target/ENSG00000156030/associations",
+    "ELMSAN1 \u2194 breast cancer. https://platform.opentargets.org/target/ENSG00000156030/associations",
+    "MIDEAS \u2014 mitotic deacetylase associated SANT domain protein (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "LOC132090872 \u2014 Neanderthal introgressed variant-containing enhancer experimental_36600 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 3964,
+    "completion_tokens": 275,
+    "total_tokens": 4239,
+    "estimated_cost_usd": 0.00076
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q6PJG2",
+          "title": "MIDEAS (Q6PJG2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q6PJG2",
+          "text": "Protein: Mitotic deacetylase-associated SANT domain protein",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000156030::EFO_0000589",
+          "title": "ELMSAN1 \u2194 metabolic disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000156030/associations",
+          "text": "Disease: metabolic disease\nDescription: A congenital disorder (due to inherited enzyme abnormality) or acquired (due to failure of a metabolically important organ) disorder resulting from an abnormal metabolic process.\nAssociation score: 0.132",
+          "cos_sim_score": 0.1320609981579076,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000156030::EFO_0003834",
+          "title": "ELMSAN1 \u2194 cutaneous lupus erythematosus",
+          "url": "https://platform.opentargets.org/target/ENSG00000156030/associations",
+          "text": "Disease: cutaneous lupus erythematosus\nDescription: An autoimmune disorder that manifests as different lupus-specific skin disorders; it can occur with systemic lupus erythematosus, or as a singular disease.\nAssociation score: 0.103",
+          "cos_sim_score": 0.10339285724188639,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000156030::MONDO_0005301",
+          "title": "ELMSAN1 \u2194 multiple sclerosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000156030/associations",
+          "text": "Disease: multiple sclerosis\nDescription: A progressive autoimmune disorder affecting the central nervous system resulting in demyelination. Patients develop physical and cognitive impairments that correspond with the affected nerve fibers.\nAssociation score: 0.102",
+          "cos_sim_score": 0.10183207047881153,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000156030::EFO_0005537",
+          "title": "ELMSAN1 \u2194 triple-negative breast cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000156030/associations",
+          "text": "Disease: triple-negative breast cancer\nDescription: An invasive breast carcinoma which is negative for expression of estrogen receptor (ER), progesterone receptor (PR), and human epidermal growth factor receptor 2 (HER2).\nAssociation score: 0.074",
+          "cos_sim_score": 0.07391597093694036,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000156030::MONDO_0007254",
+          "title": "ELMSAN1 \u2194 breast cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000156030/associations",
+          "text": "Disease: breast cancer\nDescription: A primary or metastatic malignant neoplasm involving the breast. The vast majority of cases are carcinomas arising from the breast parenchyma or the nipple. Malignant breast neoplasms occur more frequently in females than in males.\nAssociation score: 0.055",
+          "cos_sim_score": 0.055436978202705274,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "MIDEAS \u2014 mitotic deacetylase associated SANT domain protein",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MIDEAS\nGene name: mitotic deacetylase associated SANT domain protein\nAliases / synonyms: C14orf117, C14orf43, ELMSAN1, LSR68, c14_5541\nOrganism: Homo sapiens\nGene summary: Predicted to enable transcription corepressor activity. Predicted to be involved in negative regulation of DNA-templated transcription and regulation of transcription by RNA polymerase II. Located in nucleoplasm. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MIDEAS",
+          "aliases": "C14orf117, C14orf43, ELMSAN1, LSR68, c14_5541",
+          "gene_description": "mitotic deacetylase associated SANT domain protein"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "LOC132090872 \u2014 Neanderthal introgressed variant-containing enhancer experimental_36600",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: LOC132090872\nGene name: Neanderthal introgressed variant-containing enhancer experimental_36600\nOrganism: Homo sapiens\nGene summary: This genomic region contains a Neanderthal adaptively introgressed expression-modulating variant (emVar). It was validated as a functional enhancer by massively parallel reporter assays (MPRAs) in K562 erythroleukemia cells, with activity observed for both the introgressed and non-introgressed 14:74209097 or rs11624425 variant alleles, and with lower activity for the introgressed rs11624425 'G' variant. CRISPR/Cas9-mediated deletion of a 22 bp subregion centered on rs11624425 indicates that this region positively regulates expression of the MIDEAS (mitotic deacetylase associated SANT domain protein, also known as ELMSAN1) and DNAL1 (dynein axonemal light chain 1) genes. [provided by RefSeq, Sep 2023]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "LOC132090872",
+          "aliases": "",
+          "gene_description": "Neanderthal introgressed variant-containing enhancer experimental_36600"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

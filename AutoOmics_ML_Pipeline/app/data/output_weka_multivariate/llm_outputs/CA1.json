@@ -1,0 +1,219 @@
+{
+  "rf_rank": 6,
+  "probe_id": "11729583_x_at",
+  "gene_symbol": "CA1",
+  "score": 0.85,
+  "rf_n_nodes": 6,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 3.325,
+  "log_fc": -3.325,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 2,
+  "probe_ids": "11729583_x_at | 11729582_s_at",
+  "max_score": 0.85,
+  "mean_abs_fold_change": 3.447,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T01:41:20",
+  "interpretation": "Carbonic anhydrase 1 (CA1) is an enzyme that catalyzes the reversible hydration of carbon dioxide, playing a crucial role in various physiological processes, including acid-base balance and bone resorption. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), CA1 may be implicated due to its involvement in bone metabolism and the regulation of pH levels in the bone microenvironment. While the retrieved evidence does not directly link CA1 to SONFH, its biological functions suggest a potential role in the disease's pathophysiology, particularly in relation to oxidative stress and bone cell apoptosis induced by steroid use. The evidence is primarily inferred from its known biological functions and associations with related conditions, leading to a low confidence in its direct relevance as a biomarker for SONFH. Therefore, while CA1 may have some biological plausibility as a candidate biomarker, its clinical utility in early detection of SONFH remains weak and requires further investigation.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "CA1 may be involved in the biological processes affecting bone metabolism in Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "CA1 (P00915). https://www.uniprot.org/uniprotkb/P00915",
+    "CA1 \u2014 CA1. https://platform.opentargets.org/target/ENSG00000133742",
+    "CA1 \u2194 altitude sickness. https://platform.opentargets.org/target/ENSG00000133742/associations",
+    "CA1 \u2194 glaucoma. https://platform.opentargets.org/target/ENSG00000133742/associations",
+    "CA1 \u2194 angle-closure glaucoma. https://platform.opentargets.org/target/ENSG00000133742/associations",
+    "CA1 \u2194 Seizure. https://platform.opentargets.org/target/ENSG00000133742/associations",
+    "CA1 \u2014 carbonic anhydrase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "APOE \u2014 apolipoprotein E (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "STAT3 \u2014 signal transducer and activator of transcription 3 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "APP \u2014 amyloid beta precursor protein (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CTNNB1 \u2014 catenin beta 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Integrated proteomics and metabolomics analysis of sclerosis-related proteins and femoral head necrosis following internal fixation of femoral neck fractures (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11162501/",
+    "Early Steroid-Induced Osteonecrosis of Rabbit Femoral Head and Panax notoginseng Saponins: Mechanism and Protective Effects (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC4378605/",
+    "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9039,
+    "completion_tokens": 330,
+    "total_tokens": 9369,
+    "estimated_cost_usd": 0.001554
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P00915",
+          "title": "CA1 (P00915)",
+          "url": "https://www.uniprot.org/uniprotkb/P00915",
+          "text": "Protein: Carbonic anhydrase 1\nFunction: Catalyzes the reversible hydration of carbon dioxide (PubMed:10550681, PubMed:16506782, PubMed:16686544, PubMed:16807956, PubMed:17127057, PubMed:17314045, PubMed:17407288, PubMed:18618712, PubMed:19186056, PubMed:19206230). Can hydrate cyanamide to urea (PubMed:10550681)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000133742::function",
+          "title": "CA1 \u2014 CA1",
+          "url": "https://platform.opentargets.org/target/ENSG00000133742",
+          "text": "Function: Catalyzes the reversible hydration of carbon dioxide (PubMed:10550681, PubMed:16506782, PubMed:16686544, PubMed:16807956, PubMed:17127057, PubMed:17314045, PubMed:17407288, PubMed:18618712, PubMed:19186056, PubMed:19206230). Can hydrate cyanamide to urea (PubMed:10550681).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000133742::EFO_1000782",
+          "title": "CA1 \u2194 altitude sickness",
+          "url": "https://platform.opentargets.org/target/ENSG00000133742/associations",
+          "text": "Disease: altitude sickness\nDescription: Multiple symptoms associated with reduced oxygen at high altitude.\nAssociation score: 0.598",
+          "cos_sim_score": 0.5983925233183186,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000133742::MONDO_0005041",
+          "title": "CA1 \u2194 glaucoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000133742/associations",
+          "text": "Disease: glaucoma\nDescription: Increased pressure in the eyeball due to obstruction of the outflow of aqueous humor.\nAssociation score: 0.598",
+          "cos_sim_score": 0.5981876237880506,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000133742::MONDO_0001744",
+          "title": "CA1 \u2194 angle-closure glaucoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000133742/associations",
+          "text": "Disease: angle-closure glaucoma\nDescription: The sudden increase of intraocular pressure, resulting in pain and an abrupt decrease in visual acuity.\nAssociation score: 0.593",
+          "cos_sim_score": 0.5928576076731663,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000133742::HP_0001250",
+          "title": "CA1 \u2194 Seizure",
+          "url": "https://platform.opentargets.org/target/ENSG00000133742/associations",
+          "text": "Disease: Seizure\nDescription: A seizure is an intermittent abnormality of nervous system physiology characterized by a transient occurrence of signs and/or symptoms due to abnormal excessive or synchronous neuronal activity in the brain.\nAssociation score: 0.589",
+          "cos_sim_score": 0.5889858301017256,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "CA1 \u2014 carbonic anhydrase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CA1\nGene name: carbonic anhydrase 1\nAliases / synonyms: CA-I, CAB, Car1, HEL-S-11\nOrganism: Homo sapiens\nGene summary: Carbonic anhydrases (CAs) are a large family of zinc metalloenzymes that catalyze the reversible hydration of carbon dioxide. They participate in a variety of biological processes, including respiration, calcification, acid-base balance, bone resorption, and the formation of aqueous humor, cerebrospinal fluid, saliva and gastric acid. They show extensive diversity in tissue distribution and in their subcellular localization. This CA1 gene is closely linked to the CA2 and CA3 genes on chromosome 8. It encodes a cytosolic protein that is found at the highest level in erythrocytes. Allelic variants of this gene have been described in some populations. Alternative splicing and the use of alternative promoters results in multiple transcript variants. [provided by RefSeq, Nov 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CA1",
+          "aliases": "CA-I, CAB, Car1, HEL-S-11",
+          "gene_description": "carbonic anhydrase 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "APOE \u2014 apolipoprotein E",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: APOE\nGene name: apolipoprotein E\nAliases / synonyms: AD2, APO-E, ApoE4, LDLCQ5, LPG\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a major apoprotein of the chylomicron. It binds to a specific liver and peripheral cell receptor, and is essential for the normal catabolism of triglyceride-rich lipoprotein constituents. This gene maps to chromosome 19 in a cluster with the related apolipoprotein C1 and C2 genes. Mutations in this gene result in familial dysbetalipoproteinemia, or type III hyperlipoproteinemia (HLP III), in which increased plasma cholesterol and triglycerides are the consequence of impaired clearance of chylomicron and VLDL remnants. [provided by RefSeq, Jun 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "APOE",
+          "aliases": "AD2, APO-E, ApoE4, LDLCQ5, LPG",
+          "gene_description": "apolipoprotein E"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "STAT3 \u2014 signal transducer and activator of transcription 3",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: STAT3\nGene name: signal transducer and activator of transcription 3\nAliases / synonyms: ADMIO, ADMIO1, APRF, HIES\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the STAT protein family. In response to cytokines and growth factors, STAT family members are phosphorylated by the receptor associated kinases, and then form homo- or heterodimers that translocate to the cell nucleus where they act as transcription activators. This protein is activated through phosphorylation in response to various cytokines and growth factors including IFNs, EGF, IL5, IL6, HGF, LIF and BMP2. This protein mediates the expression of a variety of genes in response to cell stimuli, and thus plays a key role in many cellular processes such as cell growth and apoptosis. The small GTPase Rac1 has been shown to bind and regulate the activity of this protein. PIAS3 protein is a specific inhibitor of this protein. This gene also play...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "STAT3",
+          "aliases": "ADMIO, ADMIO1, APRF, HIES",
+          "gene_description": "signal transducer and activator of transcription 3"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "APP \u2014 amyloid beta precursor protein",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: APP\nGene name: amyloid beta precursor protein\nAliases / synonyms: AAA, ABETA, ABPP, AD1, APPI, CTFgamma, CVAP, PN-II, PN2, alpha-sAPP, preA4\nOrganism: Homo sapiens\nGene summary: This gene encodes a cell surface receptor and transmembrane precursor protein that is cleaved by secretases to form a number of peptides. Some of these peptides are secreted and can bind to the acetyltransferase complex APBB1/TIP60 to promote transcriptional activation, while others form the protein basis of the amyloid plaques found in the brains of patients with Alzheimer disease. In addition, two of the peptides are antimicrobial peptides, having been shown to have bacteriocidal and antifungal activities. Mutations in this gene have been implicated in autosomal dominant Alzheimer disease and cerebroarterial amyloidosis (cerebral amyloid angiopathy). Multiple transcript variants encoding several different isoforms have been found for this gene. [provided by RefSeq, Aug 2014]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "APP",
+          "aliases": "AAA, ABETA, ABPP, AD1, APPI, CTFgamma, CVAP, PN-II, PN2, alpha-sAPP, preA4",
+          "gene_description": "amyloid beta precursor protein"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CTNNB1 \u2014 catenin beta 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CTNNB1\nGene name: catenin beta 1\nAliases / synonyms: CTNNB, EVR7, MRD19, NEDSDV, armadillo\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is part of a complex of proteins that constitute adherens junctions (AJs). AJs are necessary for the creation and maintenance of epithelial cell layers by regulating cell growth and adhesion between cells. The encoded protein also anchors the actin cytoskeleton and may be responsible for transmitting the contact inhibition signal that causes cells to stop dividing once the epithelial sheet is complete. Finally, this protein binds to the product of the APC gene, which is mutated in adenomatous polyposis of the colon. Mutations in this gene are a cause of colorectal cancer (CRC), pilomatrixoma (PTR), medulloblastoma (MDB), and ovarian cancer. Alternative splicing results in multiple transcript variants. [provided by RefSeq, Aug 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CTNNB1",
+          "aliases": "CTNNB, EVR7, MRD19, NEDSDV, armadillo",
+          "gene_description": "catenin beta 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::11162501",
+          "title": "Integrated proteomics and metabolomics analysis of sclerosis-related proteins and femoral head necrosis following internal fixation of femoral neck fractures",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11162501/",
+          "text": "Lipid metabolism, notably in the realms of glycerophospholipid and choline, emerges as a pivotal metabolic pathway linked with ovariectomy-induced postmenopausal osteoporosis42. Observations reveal that metabolites within these pathways orchestrate a complex network of interactions, culminating in the suppression of amino acids and glycerophospholipids synthesis. This suppression potentially disrupts the equilibrium between osteoblasts and osteoclasts, consequently impairing bone health43,44. Moreover, an association has been noted between the cellular content of glycerophospholipids and osteoclastogenesis, with an uptick observed during osteoclast differentiation. These findings highlight the crucial role glycerophospholipid metabolism plays in preserving skeletal integrity45. In the context of femoral head osteonecrosis, metabolomic investigations have pinpointed glycerophospholipid metabolism as a significant pathway implicated in the disease process46. Statin medications have shown efficacy in treating steroid-induced ischemic necrosis of the femoral head, potentially by ameliorating dysregulated glycerophospholipid metabolism47,48. However, the significance of choline in bone metabolism warrants attention. Phosphocholine, a specific substrate of PHOSPHO1, is crucial for generating inorganic phosphate essential for bone mineralization49. A reduction in choline kinase activity could diminish the mineralization efficacy of inorganic phosphate, suggesting choline kinase\u2019s dual regulatory impact on osteoclasts and osteoblasts50. Although CDP-choline supplementation did not fully restore bone mass in vivo, it mitigated osteoclast-mediated effects in Flp/Flp mice. Considering the approval of CDP-choline for human use, this discovery opens avenues for investigating the influence of choline on bone microstructure and necessitates further research7. The metabolomics of this study findings indicate that glycerophospholipid and choline metabolism are the most significantly enriched pathways in comparisons between the sclerosis and fracture groups, as well as the necrosis and fracture groups, highlighting their essential roles in bone metabolism and femoral head osteonecrosis. This provides evidence for a potential link between sclerosis around screw paths and FHN, aligning with our prior research51. Nevertheless, additional studies are essential to decode the exact mechanisms through which these metabolic pathways impact bone metabolism and femoral head osteonecrosis and to identify viable therapeutic targets.\nThis study has its not without limitations. First of all, the ages of the participants in the three groups did not match exactly, and a larger sample analysis with age matching is needed in the future to address solve this problem. Obtaining femoral head samples required informed consent from eligible patients undergoing total hip arthroplasty. Owing to the nature of fractures and challenges in sampling, it was not feasible to collect normal hip joint femoral specimens from adults, making precise age matching between the two groups difficult to achieve. Second, the impact of FNF samples on protein expression may have affected the study\u2019s accuracy. To mitigate this potential effect, all control samples were collected from the patients within 24\u00a0h after traumatic fractures. However, to achieve this clinical goal, appropriate in vitro and in vivo experiments, as well as the analysis of sufficient clinical samples, are still required before there is a sufficient biological basis to promote the use of relevant targets and circulating markers in clinical practice.\nConclusion\nIn conclusion, this study represents a comprehensive and extensive comparative analysis of the proteomic and metabolic expression profiles associated with femoral head samples in cases of sclerosis around screws, FNFs, and avascular necrosis of the femoral head. Our investigation has identified pathways involving DEPs and DEMs associated with ONFH and sclerosis around the screw. These findings hold promise to expand and deepen our understanding of novel predictive biomarkers and potentially effective therapeutic strategies for hormone- and stress-induced avascular necrosis of the femoral head. Additionally, by elucidating these pathways, our study adds to the understanding of femoral head diseases, providing the potential for interventions.\nSupplementary Information\nSupplementary Figure S1.Supplementary Figure S2.Supplementary Figure S3.Supplementary Figure S4.Supplementary Figure S5.Supplementary Figure S6.Supplementary Figure S7.Supplementary Figure S8.Supplementary Figure S9.Supplementary Figure S10.Supplementary Figure S11.Supplementary Figure S12.Supplementary Figure S13.Supplementary Figure S14.Supplementary Figure S15.Supplementary Legends.Supplementary Information.Supplementary Tables.\nSupplementary Figure S1.\nSupplementary Figure S2.\nSupplementary Figure S3.\nSupplementary Figure S4.\nSupplementary Figure S5.\nSupplementary Figure S6.\nSupplementary Figure S7.",
+          "cos_sim_score": 0.5553598403930664,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::4378605",
+          "title": "Early Steroid-Induced Osteonecrosis of Rabbit Femoral Head and Panax notoginseng Saponins: Mechanism and Protective Effects",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4378605/",
+          "text": "Our research was designed to observe the dynamic changes of oxidation and antioxidation from both the holistic level and the local level in the femoral head. The first parameter was T-AOC level, which could effectively reveal the oxidative stress from the holistic and local levels. Our results indicated that, in the model group, the overall antioxidant ability decreased, and the antioxidant ability in the femoral head decreased as well. Therefore, we reckoned that steroid decreased the activities of antioxidative enzymes, and their ability to detoxify ROS was correspondingly weakened, which then caused oxidative stress in the whole body and the local bone tissues. These results have not been reported in previous studies, and more needs to be investigated.\nAntioxidant enzymes are essential in the antioxidant defense system, which are able to detoxify ROS and prevent oxidative damage. Of the enzymes, SOD and GSH-PX play important roles.\nOur results showed that, after steroid use, as time passed, both the holistic and the local levels of SOD and GSH-PX reduced significantly in the model group as compared with the control group, and there was statistical difference (P < 0.05). On day 14 after steroid use, the antioxidant indicators in the blood tended to recover, but those in the femoral head remained at a low level. We concluded that, after steroid use, the activities of antioxidant enzymes decreased, their ability to detoxify ROS was weakened, and thus the antioxidant ability reduced, making the whole body and local bone tissues in a state of oxidative stress. Although the overall antioxidative ability recovered somewhat finally, it remained low in the local bone tissues. What is worse, the bone tissues were unable to reverse the process, and then oxidative damage constantly existed and formed a vicious circle and in the end resulted in bone necrosis.\nThe above results indicated that steroid use caused weakened antioxidant ability in the whole body and local tissues. In order to observe whether steroid use could cause bidirectional change and produce excessive ROS, we chose MDA and \u00b7OH as indicators of oxidation. MDA is one of the products present after oxygen free radicals attack polyunsaturated fatty acid in cell membrane. By detecting the content of MDA, we can know the extent of lipid overoxidation and intracellular damage [16, 17]. As one of the major causes for DNA oxidative damage [18], \u00b7OH can directly react with nuclear DNA and change, damage, and exfoliate bases by hydrogen extraction and addition and electron flow. \u00b7OH can damage mitochondrial DNA and affect the normal function of respiratory chain, causing deficiency of cellular energy and cell damage. Besides, \u00b7OH can affect amino acid modification and degeneration; therefore, it is a potential source for protein damage.\nOur results showed that, in the model group, both the holistic and the local levels of MDA were significantly elevated and the ability to inhibit \u00b7OH was reduced. On day 14, MDA and \u00b7OH levels in the blood tended to recover, while they remained at a high level in the femoral head. The results indicated that steroid use could generate excessive ROS, which could not be timely detoxified. As a result, the accumulated ROS broke the oxidation-reduction balance, and the femoral head was constantly damaged by lipid overoxidation, DNA cellular damage, and protein damage. In the end, necrosis occurred. We also speculated that, after steroid use caused oxidative stress and damage, some regulator genes might be initiated, or gene mutation might be triggered, which then led to SANFH.\nAs SANFH is a progressive disease, patients with advanced SANFH have to receive total hip arthroplasty (THA). The most fundamental and desirable approach of therapy is to prevent or stop bone necrosis with medications from the very origin and thus avoid or postpone THA. Referring to known pathogenesis, researches on preserving femoral head with Western medicines and preventing SANFH have achieved progress. However, long-term use of Western medicines needs to dynamically monitor, evaluate, and predict the risk factors. Besides, long-term use of Western medicines may cause certain toxic and side effects. What is worse, these medications impede the treatment of other concurrent diseases or even cause unexpected complications [19, 20]. To find better therapeutic approaches, some Chinese researchers turn their focus to Chinese medicines.",
+          "cos_sim_score": 0.5449140071868896,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "1. Introduction\nOsteonecrosis of the femoral head (ONFH) is a common disease mainly characterized by apoptosis of bone cells that leads to collapse of the femoral head and cartilage damage. Notably, the round surface of the head and acetabulum joint flattens and eventually leads to secondary osteoarthritis.[1] Studies have shown that the disease is mainly prevalent in patients with long-term use of hormonal drugs, long-term alcohol abuse, and hip trauma.[2] Steroid-induced ONFH (SONFH) is a common type of femoral head necrosis. SONFH patients are frequently misdiagnosed as hip synovitis or osteoarthritis owing to lack of obvious signs coupled with imaging abnormalities during early stages of disease development.[3] Although transcriptomic analyses have contributed to development of clinical treatment strategies for SONFH, the precise underlying mechanism of SONFH remains unclear.[4,5]\nBioinformatics analyses have significantly improved the search and identification of key genes regulating the occurrence of various diseases, thereby generating new insights to guide development of treatment strategies. SONFH has a complex pathophysiological mechanism. Genotyping of SONFH in adults revealed that gene coding protein polymorphism was associated with SONFH.[6] It has been hypothesized that progression of SONFH to the end stage in adult patients may be due to differential expression of protein-coding genes involved in thrombosis, angiogenesis inhibition, programmed cell death, lipid biosynthesis, and bone homeostasis. In the present study, we aimed to identify differentially expressed genes in peripheral blood of patients with early SONFH and further explored the pathogenesis of this disease using transcriptome data from the Gene Expression Omnibus database.\n2. Materials and Methods\n2.1. Data acquisition\nThe Gene Expression Omnibus database not only stores many gene chips and sequence data but also provides tools for users to query and download gene expression profiles. In the present study, we searched for relevant datasets using \u201csteroid-induced osteonecrosis of femoral head\u201d as the keyword, with focus on SONFH-related datasets. Consequently, we downloaded transcriptome data (GSE123568) belonging to 30 SONFH and 10 non-SONFH (following steroid administration) subjects.\n2.2. Sample correlation analysis\nOverall expression profiles of the transcriptome data were clustered using ClusterProfiler packages implemented in R software (version 4.0.2). Only dimension features containing the vast majority of variances were retained, with those containing zero variances discarded based on a principal component analysis (PCA) plot. Using weighted gene correlation network analysis (WGCNA) package in R language to perform WGCNA on data. WGCNA adds phenotypic weight parameters in the process of constructing gene co-expression network and optimizes classification using scale-free clustering and dynamic tree cut algorithm to achieve accurate and efficient data analysis.\n2.3. Functional annotation of DEGs\nFunctional annotation of key genes was performed using the ClusterProfiler package in R and followed by comprehensive functional correlation of candidate genes. Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analyses were performed to evaluate related functional categories. Significant differentially expressed genes (DEGs) were filtered, and bar charts and bubble charts were drawn according to their functions and pathways, respectively.\n2.4. Construction of protein\u2013protein interaction networks\nProtein\u2013protein interaction (PPI) networks of the DEGs were generated using the STRING online tool and Cytoscape software. Summarily, DEGs were entered into the STRING online tool to screen for interacting proteins with a combined score of\u2005>\u20050.9. The obtained PPI results were imported into Cytoscape software, then prominent modules in PPI were screened to construct the network through molecular complex detection. NetworkX package was then used to visualize the network in Python, with node sizes taken to be proportional to node degree.\n2.5. Quantitative real-time polymerase chain reaction",
+          "cos_sim_score": 0.5423976182937622,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::4378605",
+          "title": "Early Steroid-Induced Osteonecrosis of Rabbit Femoral Head and Panax notoginseng Saponins: Mechanism and Protective Effects",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4378605/",
+          "text": "\u201310. As was indicated, in the model group, after steroid injection, the SOD activity, GSH-PX activity, inhibition of \u00b7OH, and T-AOC level gradually reduced in a time-dependent manner, while MDA content increased and remained at a high level. There were statistical differences between the control and model group (P < 0.05). In the PNS group, the abovementioned changes were downregulated, with significant difference between the model and PNS group (P < 0.05). These results suggested that the antioxidative activity of body was inhibited after steroid use and the body was in a state of oxidative stress, while PNS could mitigate the oxidation in the femoral head.\n4. Discussion\nIn recent years, wide clinical use of steroid drugs has caused increasing incidence of SANFH. As one of the refractory diseases with high disability rate, SANFH has aroused great interest. Although orthopedists and researchers have actively investigated into the mechanism of SANFH and proposed many different theories [1\u20134], the exact pathogenesis of SANFH remains obscure, which has caused difficulties for the treatment and prevention of the disease.\nFailure to expound the exact pathogenesis of SANFH is involved with the way models are established. Establishing desirable, standard, and repeatable models is essential to understand the pathogenesis of SANFH and select feasible plan of management. Since establishing models has problems of long period, high cost, high death rate, and low success rate, it is a long-term challenge for researchers, who have disputes on whether to combine steroid with equine serum [8, 9]. We supported the approach designed by Matsui et al. [10], which used equine serum twice as an auxiliary agent to trigger the pathological changes of the blood system and vascular system. Models established this way are in more accordance with the actual conditions of onset and treatment of SANFH and are consistent with the epidemiological features of SANFH. This approach has been accepted and adopted by the majority of researchers. It takes shorter time and produces higher success rate; however, the death rate of animals is increased [11]. Based on previous studies and experiences, we adopted a modified way for model establishment: two weeks after the second injection of 6\u2009mL/kg equine serum, 45\u2009mg/kg methylprednisolone was consecutively injected once a day for 3 days [7]. Histological and MRI results proved that this approach had high success rate, fewer complications, and lower death rate. Our way of establishing models is the key to the success of our experiment.\nOxidative stress is defined as an intracellular or extracellular state which can induce the generation of reactive oxygen species (ROS) [12]. In normal biological system, there is a balance between ROS production and detoxification by antioxidants, such as superoxide dismutase (SOD), catalase (CAT), glutathione peroxidase (GSH-PX), and glutathione. If this balance is broken, caused by excessive ROS, weakened detoxification, or dysfunction of antioxidant system, oxidative stress will occur, leading to instant or irreversible cell damage.\nIn normal life activities, the body constantly produces ROS. Meanwhile, its antioxidant defense system constantly detoxifies excessive ROS, maintaining a comparatively stable dynamic balance. When the balance is broken, oxidative stress will occur and oxidative damage will occur, causing functional disturbance and various diseases [13, 14]. Therefore, oxidative stress as a potential cause for SANFH should be considered.\nIchiseki et al. [15] found that, in the early stage of SANFH, GSH significantly decreased while LPO increased; besides, DNA oxidative damage was observed in local tissues. We held that there were blemish and disadvantage of this research: models induced by simple steroid use failed to simulate the clinical pathological process, and the indicators were partial and unable to observe the pathological state of oxidative stress dynamically from multidimensions.\nOur research was designed to observe the dynamic changes of oxidation and antioxidation from both the holistic level and the local level in the femoral head. The first parameter was T-AOC level, which could effectively reveal the oxidative stress from the holistic and local levels. Our results indicated that, in the model group, the overall antioxidant ability decreased, and the antioxidant ability in the femoral head decreased as well. Therefore, we reckoned that steroid decreased the activities of antioxidative enzymes, and their ability to detoxify ROS was correspondingly weakened, which then caused oxidative stress in the whole body and the local bone tissues. These results have not been reported in previous studies, and more needs to be investigated.",
+          "cos_sim_score": 0.536558210849762,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11162501",
+          "title": "Integrated proteomics and metabolomics analysis of sclerosis-related proteins and femoral head necrosis following internal fixation of femoral neck fractures",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11162501/",
+          "text": "Introduction\nThe accelerated pace of development in contemporary industries, construction, and transportation sectors has led to a discernible surge in the prevalence of hip fractures among the younger population, largely attributed to high-energy injuries1. Femoral neck fractures (FNFs) account for approximately 3.58% of all body fractures2. The primary treatment modality for young to middle-aged patients with FNFs is closed reduction and internal fixation using cannulated screws3. The refinement of imaging and internal fixation techniques has facilitated a fracture healing rate exceeding 90% post-internal fixation with cannulated screws in FNFs4. Nonetheless, post-internal fixation incidence of femoral head necrosis (FHN) remains substantial, ranging between 40 and 80% among middle-aged patients5. Furthermore, femoral head collapse has been reported in 70\u201380% of cases within 1\u20133 years following necrosis6.\nOur previous research noted a significant degree of sclerosis surrounding the femoral screw path, as observed on computed tomography scans after prolonged retention of the internal fixation implant post-FNF surgery7. This densely distributed region is referred to as sclerotic cancellous bone (SCB). The severity of osteosclerosis and the propensity for osteonecrotic complications both augment the duration of implant retention, thereby disrupting regular cancellous bone development. While steroid-induced FHN samples also exhibited a sclerotic trabecular bone, the screw paths and adjacent sclerotic regions comprised approximately 50% of the femoral head volumes with aberrant sclerotic structures.\nA prior finite element analysis by our team indicated that the presence of sclerosis poses a risk of femoral head collapse, even in cases of proper FNF healing8. The bone trabeculae surrounding the screw paths experience strains ranging from 1000 to 3000 \u03bc\u03b5, which leaves these sites in a responsive osteogenic phase, leading to sclerotic bone formation. Thus, the mechanism underlying the formation of the sclerotic region can be conceptualized as follows: microdamage surrounding the implants triggers bone reconstruction, and the unstable conditions created by the implant's easy displacement facilitate the progressive thickening and expansion of sclerosis. The lower screw of the typical inverted-triangular internal fixation intensifies the stress concentration. Post-internal fixation and alterations in stress location induce adaptive remodeling of the cancellous bone, transforming the trabeculae surrounding the internal fixation into plate-like trabeculae capable of enduring increased stress. A high-density shadow was evident in this study's CT scans. Despite bone cells' responsiveness to mechanical stimuli, the transduction mechanisms accountable for metabolic changes in bone cells post-mechanical stimulation and the subsequent formation of sclerosis are not fully comprehended. Non-invasive loading of various bones in diverse animal species has been demonstrated to induce strain-related modeling responses; however, the molecular biological mechanisms driving these responses and the development of sclerosis remain largely unexplained.",
+          "cos_sim_score": 0.48325592279434204,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

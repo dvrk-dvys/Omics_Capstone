@@ -1,0 +1,278 @@
+{
+  "probe_id": "11737267_a_at",
+  "gene_symbol": "RHD",
+  "rf_importance": 0.0001,
+  "selection_freq": 1.0,
+  "abs_fold_change": 2.466462766666666,
+  "score": 0.3434,
+  "probe_count": 2,
+  "probe_ids": "11737267_a_at | 11741977_a_at",
+  "max_score": 0.3434,
+  "mean_abs_fold_change": 2.4174,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T21:58:02",
+  "interpretation": "The RHD gene encodes the RhD protein, which is a critical component of the Rh blood group system, primarily involved in the transport functions of erythrocyte membranes. While RHD is primarily known for its role in blood group classification, its expression and function may indirectly relate to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) through mechanisms involving redox balance and inflammation. However, the retrieved evidence does not establish a direct link between RHD and SONFH, indicating that its role in this specific context is speculative. Therefore, while RHD may have biological relevance in erythrocyte function, its potential as a biomarker for early detection of SONFH is weak due to insufficient direct evidence connecting it to the disease.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "RHD may have indirect implications in the context of SONFH through its role in erythrocyte function, but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "RHD (Q02161). https://www.uniprot.org/uniprotkb/Q02161",
+    "RHD (Q02161-2). https://www.uniprot.org/uniprotkb/Q02161-2",
+    "RHD (Q02161-4). https://www.uniprot.org/uniprotkb/Q02161-4",
+    "RHD \u2014 RHD. https://platform.opentargets.org/target/ENSG00000187010",
+    "RHD \u2194 Rh deficiency syndrome. https://platform.opentargets.org/target/ENSG00000187010/associations",
+    "RHD \u2194 Tinnitus. https://platform.opentargets.org/target/ENSG00000187010/associations",
+    "RHD \u2194 rheumatoid arthritis. https://platform.opentargets.org/target/ENSG00000187010/associations",
+    "RHD \u2194 anemia. https://platform.opentargets.org/target/ENSG00000187010/associations",
+    "RHD \u2014 Rh blood group D antigen (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "RHCE \u2014 Rh blood group CcEe antigens (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "NFKB1 \u2014 nuclear factor kappa B subunit 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TNF \u2014 tumor necrosis factor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "RELA \u2014 RELA proto-oncogene, NF-kB subunit (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+    "Abstracts from the 37th Annual Meeting of the Society of General Internal Medicine (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC4429500/",
+    "Altered expression of transfer-RNA-derived small RNAs (tsRNAs) in human with rheumatic heart disease [GSE185581] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE185581",
+    "Profiling system-wide variations between Acute Rheumatic Fever and Rheumatic Heart Disease [GSE209591] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE209591",
+    "Genomic analysis of lncRNA and mRNA profile in circulating exosomes of patients with rheumatic heart disease [GSE130033] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE130033",
+    "R-loops shape the H2A.Z landscape and promote balanced lineage allocation during differentiation [CUT&Run] [GSE299106] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE299106",
+    "FAM134B deficiency in HK-2 cells [GSE273481] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273481"
+  ],
+  "token_usage": {
+    "prompt_tokens": 10390,
+    "completion_tokens": 293,
+    "total_tokens": 10683,
+    "estimated_cost_usd": 0.001734
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q02161",
+          "title": "RHD (Q02161)",
+          "url": "https://www.uniprot.org/uniprotkb/Q02161",
+          "text": "Protein: Blood group Rh(D) polypeptide\nFunction: May be part of an oligomeric complex which is likely to have a transport or channel function in the erythrocyte membrane",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q02161-2",
+          "title": "RHD (Q02161-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q02161-2",
+          "text": "Protein: Isoform 2 of Blood group Rh(D) polypeptide",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q02161-4",
+          "title": "RHD (Q02161-4)",
+          "url": "https://www.uniprot.org/uniprotkb/Q02161-4",
+          "text": "Protein: Isoform 4 of Blood group Rh(D) polypeptide",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000187010::function",
+          "title": "RHD \u2014 RHD",
+          "url": "https://platform.opentargets.org/target/ENSG00000187010",
+          "text": "Function: May be part of an oligomeric complex which is likely to have a transport or channel function in the erythrocyte membrane.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000187010::MONDO_0019107",
+          "title": "RHD \u2194 Rh deficiency syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000187010/associations",
+          "text": "Disease: Rh deficiency syndrome\nDescription: The Rh deficiency syndrome, also known as Rh-null syndrome, is a blood disorder where people have red blood cells (RBCs) lacking all Rh antigens. The Rh antigens maintain the integrity of the RBC membrane and therefore, RBCs which lack Rh antigens have an abnormal shape. There are two types of Rh deficiency syndrome: The regulator type is associated with many different changes (mutations) in the RHAG gene. The amorph type is caused by inactive copies of a gene (silent alleles) at the RH locus. As a result, the RBCs do not express any of the Rh antigens. The absence of the Rh complex alters the RBC shape, increases its tendency to break down (osmotic fragility), and shortens its lifespan, resulting in a hemolytic anemia that is usually mild. These patients are at risk of having adverse transfusion reactions because they may produce antibodies against several of the Rh antigens and can only receive blood from people who have the same condition. Rh deficiency syndrome is inherited in an autosomal recessive manner. Management is individualized according to the severity of hemolytic anemia.\nAssociation score: 0.378",
+          "cos_sim_score": 0.37846202208491025,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000187010::HP_0000360",
+          "title": "RHD \u2194 Tinnitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000187010/associations",
+          "text": "Disease: Tinnitus\nDescription: Tinnitus is an auditory perception that can be described as the experience of sound, in the ear or in the head, in the absence of external acoustic stimulation.\nAssociation score: 0.269",
+          "cos_sim_score": 0.2687978471312952,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000187010::EFO_0000685",
+          "title": "RHD \u2194 rheumatoid arthritis",
+          "url": "https://platform.opentargets.org/target/ENSG00000187010/associations",
+          "text": "Disease: rheumatoid arthritis\nDescription: A chronic, systemic autoimmune disorder characterized by inflammation in the synovial membranes and articular surfaces. It manifests primarily as a symmetric, erosive polyarthritis that spares the axial skeleton and is typically associated with the presence in the serum of rheumatoid factor.\nAssociation score: 0.236",
+          "cos_sim_score": 0.2358087778183798,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000187010::MONDO_0002280",
+          "title": "RHD \u2194 anemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000187010/associations",
+          "text": "Disease: anemia\nDescription: A reduction in the number of red blood cells, the amount of hemoglobin, and/or the volume of packed red blood cells. Clinically, anemia represents a reduction in the oxygen-transporting capacity of a designated volume of blood, resulting from an imbalance between blood loss (through hemorrhage or hemolysis) and blood production. Signs and symptoms of anemia may include pallor of the skin and mucous membranes, shortness of breath, palpitations of the heart, soft systolic murmurs, lethargy, and fatigability.\nAssociation score: 0.208",
+          "cos_sim_score": 0.20773501138929673,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "RHD \u2014 Rh blood group D antigen",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RHD\nGene name: Rh blood group D antigen\nAliases / synonyms: CD240D, DIIIc, HDFNRH, RH, RH30, RHCED, RHDVA(TT), RHDel, RHPII, RHXIII, Rh4, RhDCw, RhII, RhK562-II, RhPI, SLC42A5\nOrganism: Homo sapiens\nGene summary: The Rh blood group system is the second most clinically significant of the blood groups, second only to ABO. It is also the most polymorphic of the blood groups, with variations due to deletions, gene conversions, and missense mutations. The Rh blood group includes this gene, which encodes the RhD protein, and a second gene that encodes both the RhC and RhE antigens on a single polypeptide. The two genes, and a third unrelated gene, are found in a cluster on chromosome 1. The classification of Rh-positive and Rh-negative individuals is determined by the presence or absence of the highly immunogenic RhD protein on the surface of erythrocytes. Multiple transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RHD",
+          "aliases": "CD240D, DIIIc, HDFNRH, RH, RH30, RHCED, RHDVA(TT), RHDel, RHPII, RHXIII, Rh4, RhDCw, RhII, RhK562-II, RhPI, SLC42A5",
+          "gene_description": "Rh blood group D antigen"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "RHCE \u2014 Rh blood group CcEe antigens",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RHCE\nGene name: Rh blood group CcEe antigens\nAliases / synonyms: CD240CE, RH, RH30A, RHC, RHCe(152N), RHE, RHIXB, RHNA, RHPI, Rh4, RhIVb(J), RhVI, RhVIII, SLC42A4\nOrganism: Homo sapiens\nGene summary: The Rh blood group system is the second most clinically significant of the blood groups, second only to ABO. It is also the most polymorphic of the blood groups, with variations due to deletions, gene conversions, and missense mutations. The Rh blood group includes this gene which encodes both the RhC and RhE antigens on a single polypeptide and a second gene which encodes the RhD protein. The classification of Rh-positive and Rh-negative individuals is determined by the presence or absence of the highly immunogenic RhD protein on the surface of erythrocytes. A mutation in this gene results in amorph-type Rh-null disease. Alternative splicing of this gene results in multiple transcript variants encoding several different isoforms. [provided by RefSeq, Aug 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RHCE",
+          "aliases": "CD240CE, RH, RH30A, RHC, RHCe(152N), RHE, RHIXB, RHNA, RHPI, Rh4, RhIVb(J), RhVI, RhVIII, SLC42A4",
+          "gene_description": "Rh blood group CcEe antigens"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "NFKB1 \u2014 nuclear factor kappa B subunit 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: NFKB1\nGene name: nuclear factor kappa B subunit 1\nAliases / synonyms: CVID12, EBP-1, KBF1, NF-kB, NF-kB1, NF-kappa-B1, NF-kappaB, NF-kappabeta, NFKB-p105, NFKB-p50, NFkappaB\nOrganism: Homo sapiens\nGene summary: This gene encodes a 105 kD protein which can undergo cotranslational processing by the 26S proteasome to produce a 50 kD protein. The 105 kD protein is a Rel protein-specific transcription inhibitor and the 50 kD protein is a DNA binding subunit of the NF-kappa-B (NFKB) protein complex. NFKB is a transcription regulator that is activated by various intra- and extra-cellular stimuli such as cytokines, oxidant-free radicals, ultraviolet irradiation, and bacterial or viral products. Activated NFKB translocates into the nucleus and stimulates the expression of genes involved in a wide variety of biological functions. Inappropriate activation of NFKB has been associated with a number of inflammatory diseases while persistent inhibition of NFKB leads to inappropriate immune cell development or d...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "NFKB1",
+          "aliases": "CVID12, EBP-1, KBF1, NF-kB, NF-kB1, NF-kappa-B1, NF-kappaB, NF-kappabeta, NFKB-p105, NFKB-p50, NFkappaB",
+          "gene_description": "nuclear factor kappa B subunit 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TNF \u2014 tumor necrosis factor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TNF\nGene name: tumor necrosis factor\nAliases / synonyms: DIF, IMD127, TNF-alpha, TNFA, TNFSF2, TNLG1F\nOrganism: Homo sapiens\nGene summary: This gene encodes a multifunctional proinflammatory cytokine that belongs to the tumor necrosis factor (TNF) superfamily. This cytokine is mainly secreted by macrophages. It can bind to, and thus functions through its receptors TNFRSF1A/TNFR1 and TNFRSF1B/TNFBR. This cytokine is involved in the regulation of a wide spectrum of biological processes including cell proliferation, differentiation, apoptosis, lipid metabolism, and coagulation. This cytokine has been implicated in a variety of diseases, including autoimmune diseases, insulin resistance, psoriasis, rheumatoid arthritis ankylosing spondylitis, tuberculosis, autosomal dominant polycystic kidney disease, and cancer. Mutations in this gene affect susceptibility to cerebral malaria, septic shock, and Alzheimer disease. Knockout studie...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TNF",
+          "aliases": "DIF, IMD127, TNF-alpha, TNFA, TNFSF2, TNLG1F",
+          "gene_description": "tumor necrosis factor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "RELA \u2014 RELA proto-oncogene, NF-kB subunit",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RELA\nGene name: RELA proto-oncogene, NF-kB subunit\nAliases / synonyms: AIF3BL3, CMCU, NFKB3, p65\nOrganism: Homo sapiens\nGene summary: NF-kappa-B is a ubiquitous transcription factor involved in several biological processes. It is held in the cytoplasm in an inactive state by specific inhibitors. Upon degradation of the inhibitor, NF-kappa-B moves to the nucleus and activates transcription of specific genes. NF-kappa-B is composed of NFKB1 or NFKB2 bound to either REL, RELA, or RELB. The most abundant form of NF-kappa-B is NFKB1 complexed with the product of this gene, RELA. Four transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Sep 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RELA",
+          "aliases": "AIF3BL3, CMCU, NFKB3, p65",
+          "gene_description": "RELA proto-oncogene, NF-kB subunit"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "1. Introduction\nOsteonecrosis of the femoral head (ONFH) is a common disease mainly characterized by apoptosis of bone cells that leads to collapse of the femoral head and cartilage damage. Notably, the round surface of the head and acetabulum joint flattens and eventually leads to secondary osteoarthritis.[1] Studies have shown that the disease is mainly prevalent in patients with long-term use of hormonal drugs, long-term alcohol abuse, and hip trauma.[2] Steroid-induced ONFH (SONFH) is a common type of femoral head necrosis. SONFH patients are frequently misdiagnosed as hip synovitis or osteoarthritis owing to lack of obvious signs coupled with imaging abnormalities during early stages of disease development.[3] Although transcriptomic analyses have contributed to development of clinical treatment strategies for SONFH, the precise underlying mechanism of SONFH remains unclear.[4,5]\nBioinformatics analyses have significantly improved the search and identification of key genes regulating the occurrence of various diseases, thereby generating new insights to guide development of treatment strategies. SONFH has a complex pathophysiological mechanism. Genotyping of SONFH in adults revealed that gene coding protein polymorphism was associated with SONFH.[6] It has been hypothesized that progression of SONFH to the end stage in adult patients may be due to differential expression of protein-coding genes involved in thrombosis, angiogenesis inhibition, programmed cell death, lipid biosynthesis, and bone homeostasis. In the present study, we aimed to identify differentially expressed genes in peripheral blood of patients with early SONFH and further explored the pathogenesis of this disease using transcriptome data from the Gene Expression Omnibus database.\n2. Materials and Methods\n2.1. Data acquisition\nThe Gene Expression Omnibus database not only stores many gene chips and sequence data but also provides tools for users to query and download gene expression profiles. In the present study, we searched for relevant datasets using \u201csteroid-induced osteonecrosis of femoral head\u201d as the keyword, with focus on SONFH-related datasets. Consequently, we downloaded transcriptome data (GSE123568) belonging to 30 SONFH and 10 non-SONFH (following steroid administration) subjects.\n2.2. Sample correlation analysis\nOverall expression profiles of the transcriptome data were clustered using ClusterProfiler packages implemented in R software (version 4.0.2). Only dimension features containing the vast majority of variances were retained, with those containing zero variances discarded based on a principal component analysis (PCA) plot. Using weighted gene correlation network analysis (WGCNA) package in R language to perform WGCNA on data. WGCNA adds phenotypic weight parameters in the process of constructing gene co-expression network and optimizes classification using scale-free clustering and dynamic tree cut algorithm to achieve accurate and efficient data analysis.\n2.3. Functional annotation of DEGs\nFunctional annotation of key genes was performed using the ClusterProfiler package in R and followed by comprehensive functional correlation of candidate genes. Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analyses were performed to evaluate related functional categories. Significant differentially expressed genes (DEGs) were filtered, and bar charts and bubble charts were drawn according to their functions and pathways, respectively.\n2.4. Construction of protein\u2013protein interaction networks\nProtein\u2013protein interaction (PPI) networks of the DEGs were generated using the STRING online tool and Cytoscape software. Summarily, DEGs were entered into the STRING online tool to screen for interacting proteins with a combined score of\u2005>\u20050.9. The obtained PPI results were imported into Cytoscape software, then prominent modules in PPI were screened to construct the network through molecular complex detection. NetworkX package was then used to visualize the network in Python, with node sizes taken to be proportional to node degree.\n2.5. Quantitative real-time polymerase chain reaction",
+          "cos_sim_score": 0.5995866060256958,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "Figure 3.\nqRT-PCR results showing significant upregulation of ITGAX and LILRB2 and significant downregulation of PPP3CB and MMP8 in SONFH patients., ITGAX = integrin subunit alpha X, LILRB2 = leukocyte immunoglobulin like receptor B2, MMP8 = matrix metallopeptidase 8, PPP3CB = protein phosphatase 3 catalytic subunit beta, qRT-PCR = quantitative real-time polymerase chain reaction, SONFH = steroid-induced osteonecrosis of the femoral head.\n4. Discussion\nMore than 30 years ago, researchers discovered a close relationship between use of glucocorticoids with the occurrence of femoral head necrosis.[7] Results from a retrospective analysis showed that hormone-related nontraumatic ONFH is dominant.[8] Investigating the genetic factors regulating SONFH characteristics is an important strategy, and scholars have employed bioinformatics to explore sequence data. However, these studies also present some defects, such as inability to accurately interpret high-throughput sequence data to ensure that a certain deviation exists between PCR verification data and the data significance.[9,10] In the present study, we explored the signaling pathways regulating development of early SONFH and predicted diagnostic biomarkers in peripheral blood from this group of patients.\nOur results revealed that hundreds of coding genes, including tumor necrosis factor-\u03b1 (TNF-\u03b1), phosphoinositide 3-kinase Akt (PI3K-Akt), hypoxia-inducible factor-1 (HIF-1), adherens junction, and mitogen-activated protein kinase signaling pathways, were significantly upregulated in peripheral blood of patients with early SONFH. Notably, these DEGs participate in regulation of redox, inflammatory response, angiogenesis, and cell metabolism by secreting inflammatory chemokine signaling proteins. We constructed a PPI network of these DEGs and found that PRDX2, HP, MMP8, FPR2, and ITGAX may be associated with the SONFH process. Among them, FPR2 is a low-affinity receptor of N-formyl methionine peptides and a powerful neutrophil chemokine.[11] Family with sequence similarity 19 member A5 is a neural factor or brain-specific chemokine that was shown to remarkably downregulate expression of osteoclast-related genes, such as receptor activator of nuclear factor kappa and TNF receptor-associated factor 6, and mediate upregulation of osteoclast-producing negative regulators, such as musculoaponeurotic fibrosarcoma oncogene homolog B and interferon regulatory factor-8.[12,13] Interestingly, FPR2 antagonist WRW4 or FPR2 deficiency were shown to markedly reverse inhibition of Family with sequence similarity 19 member A5-inducedosteoclastogenesis, indicating that FPR2 plays an important role in regulation of osteoclastogenesis as well as occurrence and development of SONFH disease.[9,14]\nIntegrin alpha-X/beta-2, which is encoded by ITGAX, is a receptor that recognizes the G protein-coupled receptor sequence in fibrinogen, thereby mediating cell\u2013cell interactions during inflammatory responses. Functionally, it plays an important role in monocyte adhesion and chemotaxis.[15,16] In the present study, we found that PRDX2 was a thiol-specific peroxidase in downregulated genes in SONFH relative to non-SONFH group. Functionally, this gene catalyzes reduction of hydrogen peroxide and organic peroxide to produce water and alcohol, thereby causing inactivation of toxic substances.[17] Studies have shown that PRDX2, a hydrogen peroxide-mediated signal transduction sensor that prevents oxidative stress, not only plays a role in cell protection but may also be participating in signal cascade reaction of growth factor and TNF-\u03b1 by regulating the intracellular concentration of hydrogen peroxide.[18,19]\nHP-related diseases, which include haptoglobinemia and Plasmodium falciparum malaria,[20] are regulated by the innate immune system and vesicle-mediated transport. HP accumulates in the kidney and is secreted in the urine due to hemolysis. Moreover, HP reportedly captures and binds to free plasma HP, thereby preventing kidney damage. HP also acts as an antioxidant, presents antibacterial activity, and plays a role in many acute phase regulations.[21] Therefore, the observed downregulation of PRDX2 and HP may suggest that both genes promote development of SONFH disease through the redox pathway.",
+          "cos_sim_score": 0.4751926064491272,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::4429500",
+          "title": "Abstracts from the 37th Annual Meeting of the Society of General Internal Medicine",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4429500/",
+          "text": "DISCUSSION: TIO is a rare acquired disorder characterized by osteomalacia and severe hypophosphatemia. In this recently described disease, mesenchymal tumors produce FGF-23, a phosphaturic hormone which inhibits renal phosphate reabsorption and reduces renal 1,25-dihydroxyvitamin D production, resulting in hypophosphatemia, phosphaturia and eventual osteomalacia. The pathways involved and clinical presentations are similar to the inherited forms of vitamin D resistant rickets, which include X-linked hypophosphatemic rickets (XLH) and autosomal dominant hypophosphatemic rickets (ADHR). In all of these conditions, phosphate and calcitriol replacement are the cornerstone of treatment. However, unlike XLH and ADHR, TIO is acquired and can potentially be reversed once the FGF-23 producing tumor is localized and resected. In our case of TIO, the patient\u2019s hypophosphatemia and osteomalacia completely resolved with tumor resection. Interestingly, 20\u00a0years had elapsed between the initial presentation and the discovery of this rare FGF-23 producing mesenchymal tumor.\nTWO IS BETTER THAN ONE: PRESENTING WITH TWO PRIMARY MALIGNANCIESAdam Schwartz. NYP/Cornell, New York, NY. (Tracking ID #1926346)\nLEARNING OBJECTIVE 1: Recognize unusual but treatable presentations of malignancy\nLEARNING OBJECTIVE 2: Correlate anatomy and oncology\nCASE: Patient is a 68\u00a0year-old woman with a significant tobacco history who initially presented to an outside hospital in December of 2012 with bronchitis. During that hospital stay she was found to be anemic. At New York-Presbyterian Hospital, patient underwent a colonoscopy which demonstrated invasive adenocarcinoma in the ascending colon. Subsequent PET CT revealed two lung nodules in the right upper lobe but with sparing of the liver. The lack of liver involvement suggested that the liver nodules may represent a distinct malignancy, indicating that both the colon and lung malignancies would be amenable to separate interventions and possibly carry a superior prognosis compared to that of metastatic colon cancer. Fine needle aspiration biopsy of one of the lung nodules was performed, which revealed squamous cell carcinoma. Patient underwent complex right hemicolectomy and subsequently received radiation therapy for her lung cancer. Patient remains alive at this time and still receives her care at New York-Presbyterian.\nDISCUSSION: Though seemingly counterintuitive, this patient\u2019s prognosis was improved when the pulmonary nodule seen on PET CT was found to be a second primary malignancy. Had the nodule represented widely metastatic colon cancer, her options for surgical cure would have been greatly diminished. Instead, she was found to have two intervenable malignancies. The decision to biopsy the lung\u2014rather than to attribute the nodule to metastatic colon cancer\u2014was driven by the absence of metastatic lesions in the liver. Because blood flow from the colon passes through the liver on the way back to the heart, it would be highly unusual to have colon cancer metastasize to the lungs without also seeding the liver.\nUH OH, THAT\u2019S HIGHRyan Brown. Tulane University Health Sciences Center, New Orleans, LA. (Tracking ID #1924906)\nLEARNING OBJECTIVE 1: Review indications for high-dose versus low-dose methotrexate treatments.\nLEARNING OBJECTIVE 2: Recognize signs, symptoms and treatment of methotrexate toxicity.",
+          "cos_sim_score": 0.4215252995491028,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::4429500",
+          "title": "Abstracts from the 37th Annual Meeting of the Society of General Internal Medicine",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4429500/",
+          "text": "PAINFUL PROGRESSIVE PROXIMAL PARESISEloho Ufomata; Harish Jasti. University of Pittsburgh Medical Center, Pittsburgh, PA. (Tracking ID #1937752)\nLEARNING OBJECTIVE 1: Evaluate a complaint of muscle weakness\nLEARNING OBJECTIVE 2: Differentiate statin induced myopathy from HMG-CoA-antibody associated necrotizing myopathy\nCASE: A 51\u00a0year old male with a history of hypertension, hypothyroidism and hyperlipidemia presented with weakness. Two months prior, he noticed persistent right shoulder pain, which was treated with an 8-day course of prednisone for a presumed shingles prodrome. He then developed weakness described as difficulty lifting both arms above his head, and lifting his legs while sitting, prompting presentation to the hospital. There, his labs were notable for a creatinine kinase of >4,000 and ANA of 1:80. His home medicine, red yeast rice, was discontinued due to possible causation, and he was discharged on prednisone 60\u00a0mg daily, with rheumatology follow up. During the next 4\u00a0weeks his condition worsened and he required assistance with ambulation and ADLs. He endorsed proximal muscle pain and dysphagia but denied fevers, chills, weight loss, rashes, chest pain, or SOB. He was re-admitted to the hospital for further work-up. Physical exam revealed a male in no acute distress, stable vital signs and unremarkable cardiovascular, respiratory, and integumentary exams. Neurological exam revealed normal cranial nerves, reflexes, cerebellar function, and sensation. Motor component was significant for 2/5 strength in the proximal muscles with intact strength in the distal muscles. Musculoskeletal exam revealed normal bulk and tender proximal muscles. Labs were notable for a normal CBC and BMP, with elevated transaminases, CK, LDH and aldolase. ANA and myositis panel (including anti-jo-1, anti-mi-2, and anti-SRP antibodies) were negative. EMG demonstrated a generalized myopathy with muscle inflammation/necrosis. Muscle biopsy revealed a necrotizing myopathy with membrane attack complex (MAC) deposition in the capillaries, and diffuse major histocompatibility complex (MHC) upregulation, suggestive of HMG-CoA-antibody associated necrotizing myopathy. He was treated with rituximab, methotrexate and physical therapy with improvement in his weakness and ability to perform ADLs\nDISCUSSION: The complaint of weakness is nonspecific and can describe muscle weakness, fatigue, exercise intolerance or pain. A thorough history and physical is the key to diagnosis. With true muscle weakness, the neurological and musculoskeletal exams localize the lesion to a CNS, PNS, or myopathic origin. For adult myopathy, the etiology could be metabolic, immunologic, toxic, or infectious. Initial testing includes CMP, CK, aldolase and LDH. If abnormal, TSH, ANA, HIV and myositis panel are helpful in further work-up. EMG characterizes and localizes the abnormal area, which can then be biopsied to elucidate the etiology. Certain populations with myopathy require further investigation. Patients with dermatomyositis or polymyositis warrant age-appropriate malignancy screening and evaluation for interstitial lung disease due to the high prevalence and implications on mortality. Suspected statin myopathy, which progresses despite statin withdrawal, should prompt consideration of HMG-CoA-antibody mediated necrotizing myositis. Though rare, it is strongly associated with high CK levels, and biopsy shows limited inflammation and presence of MAC. The anti-HMGCR test is diagnostic, and treatment involves aggressive immunosuppresion. Weakness is a common complaint that can bode myopathic illness with significant consequences. A cost conscious evaluation can be performed by tailoring diagnostic tests to the illness script provided by the H&P, leading to a timely diagnosis and treatment.\nPAINLESS AORTIC DISSECTIONJennifer Huang; Manuela Calvo. Montefiore Medical Center, Bronx, NY. (Tracking ID #1934199)\nLEARNING OBJECTIVE 1: Identify atypical presentations of aortic dissection.\nLEARNING OBJECTIVE 2: Recognize risk factors for aortic dissection.",
+          "cos_sim_score": 0.42143532633781433,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::4429500",
+          "title": "Abstracts from the 37th Annual Meeting of the Society of General Internal Medicine",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4429500/",
+          "text": "A WOLF IN SHEEP\u2019S CLOTHING: HANSEN\u2019S DISEASE MASQUERADING AS A VASCULITIC PROCESSSumit R. Naig2,1; Eunice Yu1; Susan Rhee3,1. 1Johns Hopkins Bayview Medical Center, Baltimore, MD; 2Johns Hopkins Bayview Medical Center, 21224, MD; 3Johns Hopkins Bayview Medical Center, Baltimore, MD. (Tracking ID #1939034)\nLEARNING OBJECTIVE 1: Recognize that steroid responsiveness does not confirm a primary vasculitic process and can delay diagnosis of an infectious process.\nLEARNING OBJECTIVE 2: Recognize that Hansen\u2019s disease can present with vasculitic complications\nCASE: Mr. S is a 28\u00a0year old man who presented with severe pain from bilateral lower extremity ulcers. The lesions began 1\u00a0year after he moved to the United States from Costa Rica as painless, red plaques below the knees. Oral prednisone led to rapid resolution. Eight months later, the plaques reappeared and were again successfully treated with steroids. The lesions appeared with increasing frequency before progressing to ulcers. Mr. S reported subjective fevers and weight loss of 30 lbs. He had no other medical history. His medications were intermittent steroids and ibuprofen for pain control. He tried a 3\u00a0month course of methotrexate for the lesions without success. Family history was significant for \u2018colitis\u2019 in his mother although he denied such symptoms. Mr. S did not smoke, drink alcohol, or use illicit drugs. Physical exam was pertinent for a thin man in no acute distress, moon faces, and loss of lateral eyebrows and eyelashes. He had a normal neurologic exam except for decreased sensation in a median nerve distribution of the left hand. Below the knees, patient had multiple punched-out ulcers with wavy, violaceous borders that ranged from 4 to 12\u00a0cm in size. Bloodwork showed sedimentation rate of 47\u00a0mm/h and C-reactive protein of 9\u00a0mg/L. Mr. S had negative anti-nuclear antibody and anti-nuclear cytoplasmic antibody, making rheumatologic process unlikely. Hepatitis C and cryoglobulins were also negative. Multiple skin biopsies of the ulcers showed heavy acid-fast bacilli (AFB) positive staining, and a deep wedge biopsy showed heavy AFB+ bacilli within bubbly macrophages and nerves, as well as changes of small vessel vasculitis.\nDISCUSSION: The morphology of the ulcers and a history of response to steroids suggested a vasculitic process. Unfortunately, skin biopsy was never pursued as an outpatient due to presumptive diagnosis of scleroderma vs. pyoderma gangrenosum and inconsistent follow-up, delaying diagnosis. The deep wedge biopsy that demonstrated AFB+ bacilli in nerves was critical to establish the diagnosis of Hansen\u2019s disease. Hansen\u2019s disease is a chronic granulomatous disease caused by Mycobacterium leprae or Mycobacterium lepromatosis that affects the skin and peripheral nerves. A variety of the diffuse lepromatous form is characterized by necrotic ulcerations of the skin of the lower extremities from reactive vasculitis, alopecia of the eyebrows and eyelashes, and is epidemiologically linked to Central America. Following diagnosis, steroids were restarted and the patient was referred to the National Hansen\u2019s Disease Program for further treatment with dapsone, rifampin, and clofazimine.\nA WOMAN AND HER ACUTELY UNSUSPECTING HEARTEugenia Tsai; Jenny Johnson; Darlene LeFrancois. Montefiore Medical Center, Bronx, NY. (Tracking ID #1939371)\nLEARNING OBJECTIVE 1: Recognize clinical manifestations of toxic shock syndrome\nLEARNING OBJECTIVE 2: Diagnose endocarditis based on its risk factors and clinical presentation",
+          "cos_sim_score": 0.41264283657073975,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": [
+        {
+          "id": "geo::200185581",
+          "title": "Altered expression of transfer-RNA-derived small RNAs (tsRNAs) in human with rheumatic heart disease",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE185581",
+          "text": "Title: Altered expression of transfer-RNA-derived small RNAs (tsRNAs) in human with rheumatic heart disease\nAccession: GSE185581\nStudy type: Non-coding RNA profiling by high throughput sequencing\nOrganism: Homo sapiens\nSamples: IntegerElement(6, attributes={})\nSummary: Rheumatic heart disease (RHD) remains a serious public health problem in developing countries. Atrial fibrillation (AF) is a medical complication of RHD. Although the understanding of disease pathogenesis has advanced in recent years, the key questions need to be addressed. Transfer RNA\u2013derived small RNAs (tsRNAs) are a novel type of short non-coding RNAs that have potential regulatory functions in various physiological and pathological processes. The present study used tsRNAs sequencing to investigate the relationship between RHD and atrial fibrillation (AF). Three paired myocardial papilla w...",
+          "cos_sim_score": 0.2589854598045349,
+          "source_type": "geo",
+          "accession": "GSE185581"
+        },
+        {
+          "id": "geo::200209591",
+          "title": "Profiling system-wide variations between Acute Rheumatic Fever and Rheumatic Heart Disease",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE209591",
+          "text": "Title: Profiling system-wide variations between Acute Rheumatic Fever and Rheumatic Heart Disease\nAccession: GSE209591\nStudy type: Expression profiling by high throughput sequencing\nOrganism: Homo sapiens\nSamples: IntegerElement(17, attributes={})\nSummary: Rheumatic heart disease (RHD) continues to affect developing countries with low income, due to the lack of resources and effective diagnostic techniques. Understanding the genetic basis of progression from its prequel disease state, acute rheumatic fever (ARF), would aid in developing predictive biomarkers and improving patient care. To gain system-wide molecular insights into possible causes for progression, we collected blood transcriptomes from ARF (5) and RHD (5) patients. Using an integrated transcriptome and network analysis, we identified a subnetwork comprising the most significantly d...",
+          "cos_sim_score": 0.2223333716392517,
+          "source_type": "geo",
+          "accession": "GSE209591"
+        },
+        {
+          "id": "geo::200130033",
+          "title": "Genomic analysis of lncRNA and mRNA profile in circulating exosomes of patients with rheumatic heart disease",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE130033",
+          "text": "Title: Genomic analysis of lncRNA and mRNA profile in circulating exosomes of patients with rheumatic heart disease\nAccession: GSE130033\nStudy type: Expression profiling by array; Non-coding RNA profiling by array\nOrganism: Homo sapiens\nSamples: IntegerElement(6, attributes={})\nSummary: Rheumatic heart disease (RHD) is still a serious life-threatening heart disease in developing countries. Accumulating evidence suggested that circulating exosomes and its cargoes including mRNA, microRNA and long noncoding RNA (lncRNA) play essential roles in cardiovascular diseases, while their roles in RHD remain unexplored. In the present study, we investigated genomic profiles of circulating exosomes harvested from RHD patients. And we performed gene ontology (GO) and pathway analysis to explore potential roles of differentially expressed mRNAs. Furthermore, we identified 5 lncRNAs and the...",
+          "cos_sim_score": 0.1859634816646576,
+          "source_type": "geo",
+          "accession": "GSE130033"
+        },
+        {
+          "id": "geo::200299106",
+          "title": "R-loops shape the H2A.Z landscape and promote balanced lineage allocation during differentiation [CUT&Run]",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE299106",
+          "text": "Title: R-loops shape the H2A.Z landscape and promote balanced lineage allocation during differentiation [CUT&Run]\nAccession: GSE299106\nStudy type: Genome binding/occupancy profiling by high throughput sequencing\nOrganism: Mus musculus\nSamples: IntegerElement(20, attributes={})\nSummary: R-loops\u2014RNA:DNA hybrids that often form co-transcriptionally\u2014are emerging as key regulators of genome function, yet their roles in shaping chromatin architecture and developmental potential remain incompletely defined. Here, we use inducible Rnaseh1 expression in mouse embryonic stem cells (mESCs) to achieve acute, global R-loop depletion and systematically interrogate their impact on chromatin structure and lineage specification. We find that R-loop loss has minimal effect on steady-state gene expression or self-renewal. Instead, it leads to a striking reduction in H2A.Z occupancy at both act...",
+          "cos_sim_score": 0.1610347330570221,
+          "source_type": "geo",
+          "accession": "GSE299106"
+        },
+        {
+          "id": "geo::200273481",
+          "title": "FAM134B deficiency in HK-2 cells",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273481",
+          "text": "Title: FAM134B deficiency in HK-2 cells\nAccession: GSE273481\nStudy type: Expression profiling by high throughput sequencing\nOrganism: Homo sapiens\nSamples: IntegerElement(6, attributes={})\nSummary: FAM134B, also known as RETREG1 or JK-1, was first identified in esophageal cancer and later identified as an ER autophagy receptor. The protein contains a Reticulon-homology domain(RHD) and an LC3 interaction region (LIR), where RHD is responsible for sensing and inducing ER membrane curvature, while LIR binds to LC3 on the phagocytic membrane, and the ER membrane and its contents are subsequently encapsulated into autophagosomes and transported to lysosomes for degradation. Now FAM134B, as one of the receptors involved in ER autophagy, has received more and more attention.We knocked down FAM1...",
+          "cos_sim_score": 0.06636316329240799,
+          "source_type": "geo",
+          "accession": "GSE273481"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

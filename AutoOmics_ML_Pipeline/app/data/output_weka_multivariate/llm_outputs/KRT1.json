@@ -1,0 +1,269 @@
+{
+  "rf_rank": 57,
+  "probe_id": "11723952_at",
+  "gene_symbol": "KRT1",
+  "score": 0.51,
+  "rf_n_nodes": 5,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 2.4864,
+  "log_fc": -2.4864,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11723952_at",
+  "max_score": 0.51,
+  "mean_abs_fold_change": 2.4864,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:00:57",
+  "interpretation": "KRT1 encodes a type II keratin protein that plays a crucial role in the structural integrity of epithelial tissues, particularly in the skin. Its expression is linked to cellular processes such as proliferation and differentiation, which are vital in maintaining bone health and repair mechanisms. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), KRT1 may be involved in the response to steroid-induced cellular stress and apoptosis, particularly in bone marrow mesenchymal stem cells (BMSCs) that are critical for bone repair. However, the evidence connecting KRT1 directly to SONFH is limited, primarily suggesting its role in keratinization and epithelial integrity rather than a direct involvement in osteonecrosis. Therefore, while KRT1 may have some relevance in the broader context of bone health, its potential as a specific biomarker for early detection of SONFH is weak and primarily inferred from its biological functions rather than strong clinical evidence.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "KRT1 may play a role in cellular responses relevant to bone health but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "KRT1 (P04264). https://www.uniprot.org/uniprotkb/P04264",
+    "KRT1 \u2014 KRT1. https://platform.opentargets.org/target/ENSG00000167768",
+    "KRT1 \u2194 epidermolytic ichthyosis. https://platform.opentargets.org/target/ENSG00000167768/associations",
+    "KRT1 \u2194 diffuse nonepidermolytic palmoplantar keratoderma. https://platform.opentargets.org/target/ENSG00000167768/associations",
+    "KRT1 \u2194 Non-epidermolytic palmoplantar keratoderma. https://platform.opentargets.org/target/ENSG00000167768/associations",
+    "KRT1 \u2194 ichthyosis hystrix of Curth-Macklin. https://platform.opentargets.org/target/ENSG00000167768/associations",
+    "KRT1 \u2014 keratin 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TP53 \u2014 tumor protein p53 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TNF \u2014 tumor necrosis factor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ESR1 \u2014 estrogen receptor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "LncAABR07053481 inhibits bone marrow mesenchymal stem cell apoptosis and promotes repair following steroid-induced avascular necrosis (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC10070412/",
+    "ISEV2025 Abstract Book (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12560119/",
+    "Expression of Keratin-1 Predicts Recurrence and Treatment Response in Advanced Laryngeal Cancer: A Potential Therapeutic Target [GSE293443] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293443",
+    "The transcription factor KLF4, together with PAX6, is essential for the commitment of corneal epithelial cell fate [GSE198977] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE198977",
+    "iPSC-derived keratinocytes to study epidermal defects in atopic dermatitis [bulk RNA-seq] [GSE287810] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE287810",
+    "\u0394Np63-Senataxin circuit controls keratinocyte differentiation by promoting the transcriptional termination of epidermal genes [GSE193205] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE193205",
+    "Isolation and long-term expansion of murine epidermal stem-like cells [GSE167437] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE167437"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9531,
+    "completion_tokens": 339,
+    "total_tokens": 9870,
+    "estimated_cost_usd": 0.001633
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P04264",
+          "title": "KRT1 (P04264)",
+          "url": "https://www.uniprot.org/uniprotkb/P04264",
+          "text": "Protein: Keratin, type II cytoskeletal 1\nFunction: May regulate the activity of kinases such as PKC and SRC via binding to integrin beta-1 (ITB1) and the receptor of activated protein C kinase 1 (RACK1). In complex with C1QBP is a high affinity receptor for kininogen-1/HMWK",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000167768::function",
+          "title": "KRT1 \u2014 KRT1",
+          "url": "https://platform.opentargets.org/target/ENSG00000167768",
+          "text": "Function: May regulate the activity of kinases such as PKC and SRC via binding to integrin beta-1 (ITB1) and the receptor of activated protein C kinase 1 (RACK1). In complex with C1QBP is a high affinity receptor for kininogen-1/HMWK.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000167768::MONDO_0007239",
+          "title": "KRT1 \u2194 epidermolytic ichthyosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000167768/associations",
+          "text": "Disease: epidermolytic ichthyosis\nDescription: A rare keratinopathic ichthyosis (KPI), that is characterized by a blistering phenotype at birth which progressively becomes hyperkeratotic.\nAssociation score: 0.826",
+          "cos_sim_score": 0.8261403477804824,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000167768::MONDO_0010962",
+          "title": "KRT1 \u2194 diffuse nonepidermolytic palmoplantar keratoderma",
+          "url": "https://platform.opentargets.org/target/ENSG00000167768/associations",
+          "text": "Disease: diffuse nonepidermolytic palmoplantar keratoderma\nDescription: A rare, genetic, isolated diffuse palmoplantar keratoderma characterized by diffuse, mild to thick, finely demarcated hyperkeratosis of palms and soles. Additional clinical findings include knuckle pad-like keratoses on fingers, hyperkeratosis of umbilicus and areolae, diffuse dry skin, hyperhidrosis, hangnails and frequent fungal infections. Histological examination of lesions reveals orthokeratotic hyperkeratosis, acanthosis, hypergranulosis, and mild lymphocyte infiltrations in the upper dermis with no evidence of epidermolysis.\nAssociation score: 0.705",
+          "cos_sim_score": 0.705394626778399,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000167768::Orphanet_2337",
+          "title": "KRT1 \u2194 Non-epidermolytic palmoplantar keratoderma",
+          "url": "https://platform.opentargets.org/target/ENSG00000167768/associations",
+          "text": "Disease: Non-epidermolytic palmoplantar keratoderma\nDescription: A palmoplantar keratosis characterized by a well-demarcated, symmetric keratoderma located_in palms and located_in soles.\nAssociation score: 0.691",
+          "cos_sim_score": 0.6911421348478859,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000167768::MONDO_0007808",
+          "title": "KRT1 \u2194 ichthyosis hystrix of Curth-Macklin",
+          "url": "https://platform.opentargets.org/target/ENSG00000167768/associations",
+          "text": "Disease: ichthyosis hystrix of Curth-Macklin\nDescription: Ichthyosis hystrix of Curth-Macklin (IHCM) is a rare type of keratinopathic ichthyosis that is characterized by the presence of severe hyperkeratotic lesions and palmoplantar keratoderma (PPK).\nAssociation score: 0.680",
+          "cos_sim_score": 0.6802764974925866,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "KRT1 \u2014 keratin 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KRT1\nGene name: keratin 1\nAliases / synonyms: AEI2, CK1, EHK, EHK1, EPPK, K1, KRT1A, NEPPK\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the keratin gene family. The type II cytokeratins consist of basic or neutral proteins which are arranged in pairs of heterotypic keratin chains coexpressed during differentiation of simple and stratified epithelial tissues. This type II cytokeratin is specifically expressed in the spinous and granular layers of the epidermis with family member KRT10 and mutations in these genes have been associated with bullous congenital ichthyosiform erythroderma. The type II cytokeratins are clustered in a region of chromosome 12q12-q13. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KRT1",
+          "aliases": "AEI2, CK1, EHK, EHK1, EPPK, K1, KRT1A, NEPPK",
+          "gene_description": "keratin 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TP53 \u2014 tumor protein p53",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TP53\nGene name: tumor protein p53\nAliases / synonyms: BCC7, BMFS5, LFS1, P53, TRP53\nOrganism: Homo sapiens\nGene summary: This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TP53",
+          "aliases": "BCC7, BMFS5, LFS1, P53, TRP53",
+          "gene_description": "tumor protein p53"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TNF \u2014 tumor necrosis factor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TNF\nGene name: tumor necrosis factor\nAliases / synonyms: DIF, IMD127, TNF-alpha, TNFA, TNFSF2, TNLG1F\nOrganism: Homo sapiens\nGene summary: This gene encodes a multifunctional proinflammatory cytokine that belongs to the tumor necrosis factor (TNF) superfamily. This cytokine is mainly secreted by macrophages. It can bind to, and thus functions through its receptors TNFRSF1A/TNFR1 and TNFRSF1B/TNFBR. This cytokine is involved in the regulation of a wide spectrum of biological processes including cell proliferation, differentiation, apoptosis, lipid metabolism, and coagulation. This cytokine has been implicated in a variety of diseases, including autoimmune diseases, insulin resistance, psoriasis, rheumatoid arthritis ankylosing spondylitis, tuberculosis, autosomal dominant polycystic kidney disease, and cancer. Mutations in this gene affect susceptibility to cerebral malaria, septic shock, and Alzheimer disease. Knockout studie...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TNF",
+          "aliases": "DIF, IMD127, TNF-alpha, TNFA, TNFSF2, TNLG1F",
+          "gene_description": "tumor necrosis factor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ESR1 \u2014 estrogen receptor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ESR1\nGene name: estrogen receptor 1\nAliases / synonyms: ER, ESR, ESRA, ESTRR, Era, NR3A1\nOrganism: Homo sapiens\nGene summary: This gene encodes an estrogen receptor and ligand-activated transcription factor. The canonical protein contains an N-terminal ligand-independent transactivation domain, a central DNA binding domain, a hinge domain, and a C-terminal ligand-dependent transactivation domain. The protein localizes to the nucleus where it may form either a homodimer or a heterodimer with estrogen receptor 2. The protein encoded by this gene regulates the transcription of many estrogen-inducible genes that play a role in growth, metabolism, sexual development, gestation, and other reproductive functions and is expressed in many non-reproductive tissues. The receptor encoded by this gene plays a key role in breast cancer, endometrial cancer, and osteoporosis. This gene is reported to have dozens of transcript va...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ESR1",
+          "aliases": "ER, ESR, ESRA, ESTRR, Era, NR3A1",
+          "gene_description": "estrogen receptor 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::10070412",
+          "title": "LncAABR07053481 inhibits bone marrow mesenchymal stem cell apoptosis and promotes repair following steroid-induced avascular necrosis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10070412/",
+          "text": "Introduction\nSteroid-induced avascular necrosis of the femoral head (SANFH) is a common orthopedic complication after high-dose steroid hormone treatments1,2. SANFH ranks first among all types of non-traumatic femoral head necrosis and is one of the main diseases endangering human health worldwide3,4. Furthermore, 80% of untreated patients are prone to collapse of the femoral head structure and subchondral fractures in the late stage, and the disability rate is high5\u20137. Therefore, early prevention and treatment of SANFH are particularly important to reduce hip disability. Preclinical studies have shown that bone marrow mesenchymal stem cell (BMSC) transplantation may become an ideal treatment for early SANFH8\u201311. However, the transplanted BMSCs display high levels of apoptosis in the osteonecrotic area in vivo, which limits the transplantation efficacy12,13. The apoptosis of transplanted BMSCs is mainly related to the local hypoxic microenvironment in the necrotic area of the femoral head14\u201317. There is still a lack of effective intervention methods for hypoxia-induced apoptosis of transplanted BMSCs. How to effectively inhibit hypoxia-induced apoptosis of transplanted BMSCs and improve the efficacy of BMSC transplantation is a challenge for further research to overcome.\nIn the research of diseases related to ischemia-hypoxia, many non-coding RNAs (ncRNAs) have been found to play key roles in regulating hypoxia-induced apoptosis18\u201320. Long non-coding RNA (LncRNAs) belongs to a class of ncRNAs with transcripts that are between 200 nt and 100\u2009kb in length. Many studies have shown that LncRNAs are widely involved in various biological processes, such as chromosome silencing, chromatin modification, transcriptional activation, transcriptional interference, and intranuclear transport21\u201323. LncRNA expression levels are regulated by parameters of the cell growth environment, such as hypoxic conditions. For example, under hypoxic conditions, LncEFNA3 can promote the proliferation of breast cancer cells from blood vessels to surrounding tissues24. Moreover, LncHOTTIP promotes epithelial-mesenchymal transformation under hypoxia25, and LncMALAT1 enhances arsenic-induced glycolysis under hypoxia26. Furthermore, the differential expression of LncRNAs may be closely related to cell function under hypoxic conditions. However, it is unclear whether there are differentially expressed LncRNAs that regulate hypoxia-induced apoptosis of BMSCs transplanted to the necrotic area of the femoral head. Therefore, searching for LncRNAs related to hypoxia-induced apoptosis of BMSCs and understanding their biological functions and regulatory mechanisms will help reveal new anti-apoptotic targets and provide a novel method to reduce hypoxia-induced apoptosis of transplanted BMSCs.\nIn this study, we analyzed the expression profile of LncRNAs in BMSCs using microarray data and found that LncAABR07053481 was associated with hypoxia-induced apoptosis of BMSCs. The role and mechanism of LncAABR07053481 as a competing endogenous RNA (ceRNA) of mir-664-2-5p, and its effect on the Notch1 pathway and the inhibition of hypoxia-induced apoptosis of BMSCs were determined, and the repair efficacy of inhibiting hypoxia-induced apoptosis of BMSCs in early SANFH was evaluated. Our findings provide a novel idea and method for improving the efficacy of BMSC transplantation.\nResults\nLncAABR07053481 is downregulated under hypoxia and associated with apoptosis of BMSCs",
+          "cos_sim_score": 0.6115171909332275,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10070412",
+          "title": "LncAABR07053481 inhibits bone marrow mesenchymal stem cell apoptosis and promotes repair following steroid-induced avascular necrosis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10070412/",
+          "text": "Fig. 6\nLncAABR07053481-overexpressed BMSCs promote the repair of early SANFH.\na At 12 weeks after BMSC transplantation, micro-CT was used to analyze the repair of the necrotic area of the femoral head (n\u2009=\u20096). b\u2013d Quantitative analysis of the number of trabeculae, the trabecular thickness, and the volume fraction of new bone tissue (n\u2009=\u20096). e At 12 weeks after BMSC transplantation, H&E and Masson staining were used to evaluate the repair of the necrotic area of the femoral head (n\u2009=\u20096). f At 12 weeks after BMSC transplantation, immunohistochemistry was used to detect osteogenic markers of runt-related transcription factor 2 (Runx2, Cy3 label, red) and osteopontin (OPN, FITC label, green) (n\u2009=\u20096). g Quantitative analysis of Runx2 expression (n\u2009=\u20096). h Quantitative analysis of OPN expression (n\u2009=\u20096). Data were shown as mean\u2009\u00b1\u2009SD. *P\u2009<\u20090.05; In (b\u2013d, g, h), statistical significance was calculated by one-way ANOVA with Tukey\u2019s post hoc test.\nDiscussion\nBMSC transplantation to repair osteonecrosis or bone defect is a new method in the field of orthopedic research, and it brings new hope to patients with disabilities such as SANFH37\u201339. However, the osteonecrotic area is a hypoxic environment, which brings many challenges to the survival of BMSCs and is also an important obstacle to be solved in BMSC transplantation for osteonecrosis12,27,28,40. It has been found that various LncRNAs are abnormally expressed in cells in hypoxic conditions, and play important roles in the regulation of cell function29,30. In this study, we found that the expression of LncAABR07053481 was significantly downregulated in BMSCs under hypoxia, which was closely associated with the hypoxia-induced apoptosis of BMSCs. Importantly, when we upregulated LncAABR07053481, it was confirmed that LncAABR07053481 inhibited hypoxia-induced apoptosis of BMSCs both in vitro and in vivo. Moreover, the upregulation of LncAABR07053481 led to an elevated expression of Notch1 by competitively binding to miR-664-2-5p. Notch1 is an important signaling pathway, which affects cell fate and plays important roles in regulating biological processes such as apoptosis31\u201334,41,42. Our findings not only suggest an important role of LncAABR07053481 acting as an miRNA sponge during the regulation of hypoxia-induced BMSC apoptosis but also highlight the therapeutic potential of BMSC transplantation with overexpression of LncAABR07053481 in the repair of early SANFH.",
+          "cos_sim_score": 0.47399240732192993,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12560119",
+          "title": "ISEV2025 Abstract Book",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12560119/",
+          "text": "Results: Comparative MV characterisation revealed that lb\u2010MV were significantly smaller than kd\u2010MV (p < 0.0001) with no yield variation observed upon g/tissue of origin. In terms of their intrinsic activity, all MV populations were found to express functional ALP, indicating their pro\u2010mineralising potential, with lb\u2010MV possessing significantly more ALP than kd\u2010MV (p < 0.0001). Finally, lb\u2010MV displayed both anabolic and anti\u2010catabolic potential, eliciting increased mineralisation and decreased osteoclastogenesis in a dose\u2010dependent manner from 0.25 to 2.5\u00a0\u00b5g/mL.\nSummary/Conclusion: MV were successfully obtained and characterized from multiple adult mouse tissues, offering a physiologically relevant model to investigate MV's roles in mature bone beyond in vitro cultures. Importantly, for what we believe to be the first time, lb\u2010MV demonstrated both anabolic and anti\u2010catabolic effects for the first time, highlighting their role in bone physiology and their potency as nanotherapeutics for bone repair.\nFunding: SFI FFP Grant (19/FFP/6533).\nPS1.271\nDeciphering the heterogeneity landscape of mesenchymal stem/stromal cell\u2010derived extracellular vesicles for precise selection in translational medicine\nPresenter: Ye Li\nXi'an Jiaotong University, China (People's Republic)\nIntroduction: Mesenchymal stem/stromal cell\u2010derived extracellular vesicles (MSC\u2010EVs) have been considered promising therapeutics for disease treatments. However, MSC\u2010EVs harvested from different tissues present unique biological features reflective of their origins. The heterogeneity of MSC\u2010EVs constitutes an important barrier to their precise application in clinical translation that may probably lead to uncertain therapeutic effects.\nMethods: To give hints for future clinical translation, five MSCs are employed, whose derived EVs are most intensively utilized, namely bone marrow mesenchymal stem/stromal cells (BMMSCs), umbilical cord stem/stromal cells (UCSCs), adipose\u2010derived stem/stromal cells (ASCs), dermal stem/stromal cells (DSCs), and dental pulp stem/stromal cells (DPSCs) and the heterogeneity landscape of the corresponding MSC\u2010EVs is documented.\nResults: Overall, the basic parameters, stability, and biosafety of different MSC\u2010EVs are indiscriminate. Strikingly, UCSC\u2010EVs exhibit distinguishing productivity. UCSC\u2010EVs as well as DPSC\u2010EVs present better drug loading/delivery capacity. In addition, the heterogeneity of different MSC\u2010EVs in cargo diversity, cellular affinity, organ biodistribution, and therapeutic effects may cue the rational selection in different disease treatments.\nSummary/Conclusion: Through a combined assessment, a rational strategy is combined for selecting MSC\u2010EVs in future clinics. Offering a panoramic view of MSC\u2010EVs harvested from different tissues, the current study may provide guidelines for the precise selection of MSC\u2010EVs in next\u2010generation therapeutics.\nFunding: China Postdoctoral Innovation Science Foundation (BX20200254), China Postdoctoral Science Foundation (2021M692474), Wuhan Knowledge Innovation Special Project (2022020801010500).\nPS1.272\nAnalysis extracellular vesicles in CLL subtypes using direct stochastic optical reconstruction microscopy\nPresenter: Joel J. R. Mccay\nBarts Cancer Institute, UK\nIntroduction: Chronic lymphocytic leukaemia is the most common leukaemia of the western world. Determining which patients will need further treatment and catching earlier relapses remains a clinical challenge. Extracellular vesicles have been demonstrated as biomarkers of disease in other conditions, though limited data exists on newer ways to image and analyse their role in CLL. DSTORM imaging allows for more precise analysis of EV surface and intramural cargo. As well as bulk analysis, single EV analysis can be used to study 3\u2010colour tetraspanin or cargo markers in high resolution (to 20\u00a0nm). We aim to characterise the tetraspanin profiles of EVs across CLL subgroups and patient linear samples. We also aim to study the use of dSTORM in the discarded fractions from SEC, which still contain nanoparticles but are often limited by high protein concentration.\nMethods: Multiple EV extraction methods were used (SEC, UF, UC, kits) across multiple biofluids (serum, plasma and cell culture). EV analysis was performed using dSTORM.",
+          "cos_sim_score": 0.471973180770874,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12560119",
+          "title": "ISEV2025 Abstract Book",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12560119/",
+          "text": "Methods: We generated myeloid\u2010specific Mmp14 conditional knockout mice in either wild\u2010type or Mmp9 null backgrounds. Primary bone marrow\u2010derived macrophages were isolated and differentiated into osteoclasts. Bone resorption was assessed in osteoclast\u2010bone wafers in vitro or in a calvaria organ culture model ex vivo.\nResults: Unexpectedly, whereas deleting either of the proteinases individually leaves bone resorption intact, we find that Mmp9/Mmp14 conditional double\u2010knockout osteoclasts display major defects in bone resorption in vitro. In vivo, Mmp9/Mmp14 conditional double\u2010knockout mice exhibited marked increases in bone density and displayed a highly protected status against either parathyroid hormone\u2010 or ovariectomy\u2010induced pathologic bone loss. Wild\u2010type osteoclasts inefficiently resorbed of Col1ar/r bone ex vivo, while Col1ar/r mice femurs exhibited an increase in trabecular bone density. In an effort to define the signalling mechanisms underlying a combined requirement for MMP9 and MMP14, bioinformatic analysis illustrates that double\u2010knockout osteoclasts\u2014as well as MMP\u2010inhibited human osteoclasts\u2014unexpectedly display major changes in transcriptional programs in tandem with compromised RhoA activation, sealing zone formation and bone resorption. Further study revealed that osteoclast function is dependent on the ability of MMP9 and MMP14 to cooperatively proteolyze the \u03b2\u2010galactoside\u2013binding lectin, galectin\u20103, on the cell surface. Mass spectrometry identified the galectin\u20103 receptor as low\u2010density lipoprotein\u2010related protein\u20101.\nSummary/Conclusion: Together, these studies characterize a previously unsuspected role for dual proteolytic signalling in regulating the turnover of galectin\u20103 lattice to govern osteoclast activation in tandem with the ability of the dual metalloproteases to mediate bone collagenolytic effects, and identify the myeloid\u2010derived dual metalloproteases axis as a potential target for therapeutic interventions for bone\u2010wasting disease states.\nFunding: NSFC grants 82370914 and 81970919.\nPS2.1117\nTransglutaminase 2 is externalised by urinary vesicles and facilitates extracellular vesicles\u2010matrix and cells dynamics\nMaria Pia Savoca1, Timothy S. Johnson2,3, Elisabetta AM Verderio1,4\n1Nottingham Trent University, United Kingdom, 2University of Sheffield, United Kingdom, 3Mestag Therapeutics Limited, United Kingdom, 4University of Bologna, Italy.\nIntroduction: Increased externalization of the crosslinking enzyme transglutaminase 2 (TG2) is linked with fibrosis progression in CKD and occurs via extracellular vesicles (EVs) (Furini, JASN 2018). We have hypothesised a novel role for EVs\u2010TG2 in tuning EVs\u2010dynamics in the extracellular space.\nMethods: Clinical urine samples were obtained by informed consent from the Sheffield and Patras University biorepositories. TG2 was characterised in urinary EVs (uEVs) by enzyme\u2010activity assay, immune electron microscopy and single uEVs quantifications (Exoview R200). Mouse embryonic fibroblasts MEFTG2WT and MEFTG2KO were from a transgenic model.",
+          "cos_sim_score": 0.4590383470058441,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10070412",
+          "title": "LncAABR07053481 inhibits bone marrow mesenchymal stem cell apoptosis and promotes repair following steroid-induced avascular necrosis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10070412/",
+          "text": "and Masson\u2019s staining were consistent with those of the micro-CT examination. In the LncAABR07053481-overexpression group, the osteonecrotic area was completely repaired, and the bone tissue tended to mature (Fig.\u00a06e). Immunohistochemical detection of osteogenic markers showed that, compared with the Normal group, the levels of runt-related transcription factor 2 (Runx2) and osteopontin (OPN) were decreased in the LD group, LD/Vec group, and LD/sh AABR07053481 group. The LncAABR07053481-overexpression group also demonstrated significantly increased levels of Runx2 and OPN in the osteonecrotic area compared with those of the LD group, LD/Vec group, and LD/sh AABR07053481 group (Fig.\u00a06f\u2013h). These results confirm that LncAABR07053481 improves the efficacy of transplanted BMSCs in early SANFH.Fig. 6LncAABR07053481-overexpressed BMSCs promote the repair of early SANFH.a At 12 weeks after BMSC transplantation, micro-CT was used to analyze the repair of the necrotic area of the femoral head (n\u2009=\u20096). b\u2013d Quantitative analysis of the number of trabeculae, the trabecular thickness, and the volume fraction of new bone tissue (n\u2009=\u20096). e At 12 weeks after BMSC transplantation, H&E and Masson staining were used to evaluate the repair of the necrotic area of the femoral head (n\u2009=\u20096). f At 12 weeks after BMSC transplantation, immunohistochemistry was used to detect osteogenic markers of runt-related transcription factor 2 (Runx2, Cy3 label, red) and osteopontin (OPN, FITC label, green) (n\u2009=\u20096). g Quantitative analysis of Runx2 expression (n\u2009=\u20096). h Quantitative analysis of OPN expression (n\u2009=\u20096). Data were shown as mean\u2009\u00b1\u2009SD. *P\u2009<\u20090.05; In (b\u2013d, g, h), statistical significance was calculated by one-way ANOVA with Tukey\u2019s post hoc test.",
+          "cos_sim_score": 0.4187506139278412,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": [
+        {
+          "id": "geo::200293443",
+          "title": "Expression of Keratin-1 Predicts Recurrence and Treatment Response in Advanced Laryngeal Cancer: A Potential Therapeutic Target",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293443",
+          "text": "Title: Expression of Keratin-1 Predicts Recurrence and Treatment Response in Advanced Laryngeal Cancer: A Potential Therapeutic Target\nAccession: GSE293443\nStudy type: Expression profiling by high throughput sequencing\nOrganism: Homo sapiens\nSamples: IntegerElement(32, attributes={})\nSummary: RNA sequencing of 32 FFPE tissue samples, including 11 recurrent and 21 non-recurrent tumor specimens demonstrated higher KRT1 gene expression in the recurrence group than in non-recurrent cases. Patients with KRT1-positive immunostaining exhibited trends of worse overall survival (OS) and recurrence-free survival (RFS). In vitro studies showed that KRT1 knockdown suppressed tumor cell invasion, cell migration, and expression of epithelial-mesenchymal transition (EMT)-related genes in human head and neck squamous cell carcinoma (HNSCC) cell lines. Additionally, KRT1 knockdown enhanced tumor ce...",
+          "cos_sim_score": 0.3690621256828308,
+          "source_type": "geo",
+          "accession": "GSE293443"
+        },
+        {
+          "id": "geo::200198977",
+          "title": "The transcription factor KLF4, together with PAX6, is essential for the commitment of corneal epithelial cell fate",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE198977",
+          "text": "Title: The transcription factor KLF4, together with PAX6, is essential for the commitment of corneal epithelial cell fate\nAccession: GSE198977\nStudy type: Expression profiling by high throughput sequencing\nOrganism: Homo sapiens\nSamples: IntegerElement(6, attributes={})\nSummary: Lineage-specific transcription factors (TFs) play key roles in maintaining the unique properties of cells, but the molecular mechanism that regulates the homeostasis of human corneal epithelial cells (CECs) is still poorly understood. We aimed to modulate KLF4 and PAX6 in human CECs using gene knockout system to clarify the regulatory network of KLF4, and then elucidate how KLF4 regulates the transcriptional genes of human CECs compared with PAX6. We performed a functional analysis of KLF4 via gene knockout using a lentivirus vector that carries both Cas9 and guide RNAs. We designed guide RNAs...",
+          "cos_sim_score": 0.25705450773239136,
+          "source_type": "geo",
+          "accession": "GSE198977"
+        },
+        {
+          "id": "geo::200287810",
+          "title": "iPSC-derived keratinocytes to study epidermal defects in atopic dermatitis [bulk RNA-seq]",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE287810",
+          "text": "Title: iPSC-derived keratinocytes to study epidermal defects in atopic dermatitis [bulk RNA-seq]\nAccession: GSE287810\nStudy type: Expression profiling by high throughput sequencing\nOrganism: Homo sapiens\nSamples: IntegerElement(6, attributes={})\nSummary: Human induced pluripotent stem cells (iPSC) can be derived from patients or be genome-edited to introduce or correct disease-related genetic variants, and subsequently be differentiated into any skin cell type. Yet, the potential of induced keratinocytes (iKC) derived from iPSC has not been explored to model the chronic inflammatory skin disease atopic dermatitis (AD), partially because iKC are often immature and heterogeneous as compared to primary keratinocytes (pKC). We aimed to optimize iPSC to keratinocyte and subsequent epidermal differentiation protocols, and compared the response of iK...",
+          "cos_sim_score": 0.16926684975624084,
+          "source_type": "geo",
+          "accession": "GSE287810"
+        },
+        {
+          "id": "geo::200193205",
+          "title": "\u0394Np63-Senataxin circuit controls keratinocyte differentiation by promoting the transcriptional termination of epidermal genes",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE193205",
+          "text": "Title: \u0394Np63-Senataxin circuit controls keratinocyte differentiation by promoting the transcriptional termination of epidermal genes\nAccession: GSE193205\nStudy type: Expression profiling by high throughput sequencing\nOrganism: Homo sapiens\nSamples: IntegerElement(18, attributes={})\nSummary: \u0394Np63, a master regulator of epithelial biology, is involved in regulating epithelial stem cell function, maintaining the integrity of stratified epithelial cells and committing epidermal cells to the differentiation program. To this end, \u0394Np63 exploits several direct mechanisms. Here, we elucidated a novel mechanism whereby \u0394Np63 efficiently sustains the expression of epidermal differentiation genes. We show that \u0394Np63 interacts with Senataxin (SETX), an RNA/DNA helicase able to resolve the R-loop intermediates over the GC-rich termination sites of coding genes. Notably, we found that SETX an...",
+          "cos_sim_score": 0.16872340440750122,
+          "source_type": "geo",
+          "accession": "GSE193205"
+        },
+        {
+          "id": "geo::200167437",
+          "title": "Isolation and long-term expansion of murine epidermal stem-like cells",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE167437",
+          "text": "Title: Isolation and long-term expansion of murine epidermal stem-like cells\nAccession: GSE167437\nStudy type: Expression profiling by high throughput sequencing\nOrganism: Mus musculus\nSamples: IntegerElement(6, attributes={})\nSummary: Epidermis is the most outer layer of the skin and serves as a physical barrier protecting the internal tissues from mechanical and environmental insults. Its constant renewing and regeneration capacity are sustained by the basal keratinocytes, which, through proliferation and differentiation, supply diverse cell types for homeostasis maintenance and injury repair. A major challenge in epidermal research is the difficulty to culture murine keratinocytes. Here we tested murine keratinocyte culture conditions and developed cell lines using low-Ca2+ (0.06 mM) keratinocyte serum-free medium (KSFM-C...",
+          "cos_sim_score": 0.1416393518447876,
+          "source_type": "geo",
+          "accession": "GSE167437"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

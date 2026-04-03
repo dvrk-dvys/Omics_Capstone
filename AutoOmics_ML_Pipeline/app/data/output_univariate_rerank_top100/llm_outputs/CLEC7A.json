@@ -1,0 +1,227 @@
+{
+  "probe_id": "11752737_a_at",
+  "gene_symbol": "CLEC7A",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0202860206483394,
+  "abs_fold_change": 1.3673,
+  "score": 1.3638,
+  "probe_count": 2,
+  "probe_ids": "11752737_a_at | 11733403_x_at",
+  "max_score": 1.3638,
+  "mean_abs_fold_change": 1.3546,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T23:12:13",
+  "interpretation": "CLEC7A, also known as Dectin-1, is a C-type lectin receptor that plays a crucial role in the innate immune response by recognizing beta-glucans from fungal cell walls. This receptor is involved in the activation of inflammatory pathways, particularly through the TLR2-mediated signaling cascade, which leads to the production of pro-inflammatory cytokines. Given that steroid-induced osteonecrosis of the femoral head (SONFH) is associated with inflammation and bone degeneration due to glucocorticoid administration, the activation of CLEC7A may contribute to the inflammatory processes that exacerbate bone damage. However, while CLEC7A's role in inflammation is well-established, direct evidence linking it specifically to SONFH is lacking, leading to a lower confidence in its potential as a biomarker for early detection of this condition. Therefore, while CLEC7A may be biologically relevant in the context of inflammation and bone health, its clinical utility as a biomarker for SONFH remains uncertain and is inferred rather than directly evidenced.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "CLEC7A is involved in inflammatory responses that may contribute to the pathogenesis of steroid-induced osteonecrosis of the femoral head (SONFH).",
+  "citations": [
+    "CLEC7A (Q9BXN2). https://www.uniprot.org/uniprotkb/Q9BXN2",
+    "CLEC7A (Q9BXN2-6). https://www.uniprot.org/uniprotkb/Q9BXN2-6",
+    "CLEC7A (Q9BXN2-5). https://www.uniprot.org/uniprotkb/Q9BXN2-5",
+    "CLEC7A \u2014 CLEC7A. https://platform.opentargets.org/target/ENSG00000172243",
+    "CLEC7A \u2194 Chronic mucocutaneous candidosis. https://platform.opentargets.org/target/ENSG00000172243/associations",
+    "CLEC7A \u2194 chronic mucocutaneous candidiasis. https://platform.opentargets.org/target/ENSG00000172243/associations",
+    "CLEC7A \u2194 alcohol drinking. https://platform.opentargets.org/target/ENSG00000172243/associations",
+    "CLEC7A \u2194 candidiasis, familial, 4. https://platform.opentargets.org/target/ENSG00000172243/associations",
+    "CLEC7A \u2014 C-type lectin domain containing 7A (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CFTR \u2014 CF transmembrane conductance regulator (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TLR2 \u2014 toll like receptor 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "OPRM1 \u2014 opioid receptor mu 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "SYK \u2014 spleen associated tyrosine kinase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Sulfated polysaccharide prevents senescent adipocyte-driven osteonecrosis by stem cell fate reprogramming (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12859453/",
+    "Medication-Related Osteonecrosis of the Jaw: A Systematic Review and a Bioinformatic Analysis (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC10706386/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8280,
+    "completion_tokens": 356,
+    "total_tokens": 8636,
+    "estimated_cost_usd": 0.001456
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9BXN2",
+          "title": "CLEC7A (Q9BXN2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BXN2",
+          "text": "Protein: C-type lectin domain family 7 member A\nFunction: Lectin that functions as a pattern recognizing receptor (PRR) specific for beta-1,3-linked and beta-1,6-linked glucans, which constitute cell wall constituents from pathogenic bacteria and fungi (PubMed:11567029, PubMed:12423684). Necessary for the TLR2-mediated inflammatory response and activation of NF-kappa-B: upon beta-glucan binding, recruits SYK via its ITAM motif and promotes a signaling cascade that activates some CARD domain-BCL10-MALT1 (CBM) signalosomes, leading to the activation of NF-kappa-B and MAP kinase p38 (MAPK11, MAPK12, MAPK13 and/or MAPK14) pathways which stimulate expression of genes encoding pro-inflammatory cytokines and chemokines (By similarity). Enhances cytokine production in macrophages and dendritic cells (By similarity). Mediates production of reactive oxygen species in the cell (By similarity). Mediates phagocytosis of C.albicans conidia (PubMed:17230442). Binds T-cells in a way that does not involve their surface glycans and plays a role in T-cell activation. Stimulates T-cell proliferation. Induces phosphorylation of SCIMP after binding beta-glucans (By similarity)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9BXN2-6",
+          "title": "CLEC7A (Q9BXN2-6)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BXN2-6",
+          "text": "Protein: Isoform 6 of C-type lectin domain family 7 member A",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9BXN2-5",
+          "title": "CLEC7A (Q9BXN2-5)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BXN2-5",
+          "text": "Protein: Isoform 5 of C-type lectin domain family 7 member A",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000172243::function",
+          "title": "CLEC7A \u2014 CLEC7A",
+          "url": "https://platform.opentargets.org/target/ENSG00000172243",
+          "text": "Function: Lectin that functions as a pattern recognizing receptor (PRR) specific for beta-1,3-linked and beta-1,6-linked glucans, which constitute cell wall constituents from pathogenic bacteria and fungi (PubMed:11567029, PubMed:12423684). Necessary for the TLR2-mediated inflammatory response and activation of NF-kappa-B: upon beta-glucan binding, recruits SYK via its ITAM motif and promotes a signaling cascade that activates some CARD domain-BCL10-MALT1 (CBM) signalosomes, leading to the activation of NF-kappa-B and MAP kinase p38 (MAPK11, MAPK12, MAPK13 and/or MAPK14) pathways which stimulate expression of genes encoding pro-inflammatory cytokines and chemokines (By similarity). Enhances cytokine production in macrophages and dendritic cells (By similarity). Mediates production of reactive oxygen species in the cell (By similarity). Mediates phagocytosis of C.albicans conidia (PubMed:17230442). Binds T-cells in a way that does not involve their surface glycans and plays a role in T-cell activation. Stimulates T-cell proliferation. Induces phosphorylation of SCIMP after binding beta-glucans (By similarity).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172243::Orphanet_1334",
+          "title": "CLEC7A \u2194 Chronic mucocutaneous candidosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000172243/associations",
+          "text": "Disease: Chronic mucocutaneous candidosis\nDescription: .\nAssociation score: 0.418",
+          "cos_sim_score": 0.4176317390582761,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172243::MONDO_0015279",
+          "title": "CLEC7A \u2194 chronic mucocutaneous candidiasis",
+          "url": "https://platform.opentargets.org/target/ENSG00000172243/associations",
+          "text": "Disease: chronic mucocutaneous candidiasis\nAssociation score: 0.373",
+          "cos_sim_score": 0.3725612660910964,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172243::EFO_0004329",
+          "title": "CLEC7A \u2194 alcohol drinking",
+          "url": "https://platform.opentargets.org/target/ENSG00000172243/associations",
+          "text": "Disease: alcohol drinking\nDescription: Behaviors associated with the ingesting of alcoholic beverages, including social drinking.\nAssociation score: 0.299",
+          "cos_sim_score": 0.2990931582253805,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172243::MONDO_0013140",
+          "title": "CLEC7A \u2194 candidiasis, familial, 4",
+          "url": "https://platform.opentargets.org/target/ENSG00000172243/associations",
+          "text": "Disease: candidiasis, familial, 4\nDescription: Any familial chronic mucocutaneous candidiasis in which the cause of the disease is a mutation in the CLEC7A gene.\nAssociation score: 0.195",
+          "cos_sim_score": 0.19467618845516665,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "CLEC7A \u2014 C-type lectin domain containing 7A",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CLEC7A\nGene name: C-type lectin domain containing 7A\nAliases / synonyms: BGR, CANDF4, CD369, CLECSF12, DECTIN1, SCARE2\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the C-type lectin/C-type lectin-like domain (CTL/CTLD) superfamily. The encoded glycoprotein is a small type II membrane receptor with an extracellular C-type lectin-like domain fold and a cytoplasmic domain with an immunoreceptor tyrosine-based activation motif. It functions as a pattern-recognition receptor that recognizes a variety of beta-1,3-linked and beta-1,6-linked glucans from fungi and plants, and in this way plays a role in innate immune response. Alternate transcriptional splice variants, encoding different isoforms, have been characterized. This gene is closely linked to other CTL/CTLD superfamily members on chromosome 12p13 in the natural killer gene complex region. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CLEC7A",
+          "aliases": "BGR, CANDF4, CD369, CLECSF12, DECTIN1, SCARE2",
+          "gene_description": "C-type lectin domain containing 7A"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CFTR \u2014 CF transmembrane conductance regulator",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CFTR\nGene name: CF transmembrane conductance regulator\nAliases / synonyms: ABC35, ABCC7, CF, CFTR/MRP, MRP7, TNR-CFTR, dJ760C5.1\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the ATP-binding cassette (ABC) transporter superfamily. The encoded protein functions as a chloride channel, making it unique among members of this protein family, and controls ion and water secretion and absorption in epithelial tissues. Channel activation is mediated by cycles of regulatory domain phosphorylation, ATP-binding by the nucleotide-binding domains, and ATP hydrolysis. Mutations in this gene cause cystic fibrosis, the most common lethal genetic disorder in populations of Northern European descent. The most frequently occurring mutation in cystic fibrosis, DeltaF508, results in impaired folding and trafficking of the encoded protein. Multiple pseudogenes have been identified in the human genome. [provided by RefSeq, Aug 2017]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CFTR",
+          "aliases": "ABC35, ABCC7, CF, CFTR/MRP, MRP7, TNR-CFTR, dJ760C5.1",
+          "gene_description": "CF transmembrane conductance regulator"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TLR2 \u2014 toll like receptor 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TLR2\nGene name: toll like receptor 2\nAliases / synonyms: CD282, TIL4\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the Toll-like receptor (TLR) family which plays a fundamental role in pathogen recognition and activation of innate immunity. TLRs are highly conserved from Drosophila to humans and share structural and functional similarities. This protein is a cell-surface protein that can form heterodimers with other TLR family members to recognize conserved molecules derived from microorganisms known as pathogen-associated molecular patterns (PAMPs). Activation of TLRs by PAMPs leads to an up-regulation of signaling pathways to modulate the host's inflammatory response. This gene is also thought to promote apoptosis in response to bacterial lipoproteins. This gene has been implicated in the pathogenesis of several autoimmune diseases. Alternative splicing...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TLR2",
+          "aliases": "CD282, TIL4",
+          "gene_description": "toll like receptor 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "OPRM1 \u2014 opioid receptor mu 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: OPRM1\nGene name: opioid receptor mu 1\nAliases / synonyms: LMOR, M-OR-1, MOP, MOR, MOR1, OPRM\nOrganism: Homo sapiens\nGene summary: This gene encodes one of at least three opioid receptors in humans; the mu opioid receptor (MOR). The MOR is the principal target of endogenous opioid peptides and opioid analgesic agents such as beta-endorphin and enkephalins. The MOR also has an important role in dependence to other drugs of abuse, such as nicotine, cocaine, and alcohol via its modulation of the dopamine system. The NM_001008503.2:c.118A>G allele has been associated with opioid and alcohol addiction and variations in pain sensitivity but evidence for it having a causal role is conflicting. Multiple transcript variants encoding different isoforms have been found for this gene. Though the canonical MOR belongs to the superfamily of 7-transmembrane-spanning G-protein-coupled receptors some isoforms of this gene have only 6 ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "OPRM1",
+          "aliases": "LMOR, M-OR-1, MOP, MOR, MOR1, OPRM",
+          "gene_description": "opioid receptor mu 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "SYK \u2014 spleen associated tyrosine kinase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SYK\nGene name: spleen associated tyrosine kinase\nAliases / synonyms: IMD82, p72-Syk\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the family of non-receptor type Tyr protein kinases. This protein is widely expressed in hematopoietic cells and is involved in coupling activated immunoreceptors to downstream signaling events that mediate diverse cellular responses, including proliferation, differentiation, and phagocytosis. It is thought to be a modulator of epithelial cell growth and a potential tumour suppressor in human breast carcinomas. Alternatively spliced transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Mar 2010]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SYK",
+          "aliases": "IMD82, p72-Syk",
+          "gene_description": "spleen associated tyrosine kinase"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::12859453",
+          "title": "Sulfated polysaccharide prevents senescent adipocyte-driven osteonecrosis by stem cell fate reprogramming",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12859453/",
+          "text": "1\nIntroduction\nChronic or excessive administration of glucocorticoid (GC) represents one of the primary risk factors contributing to skeletal degeneration, commonly associated with the development of osteonecrosis [1]. This pathological condition can affect virtually any skeletal site, with a predilection for the hip, followed by the femoral condyles, proximal tibia, vertebrae, and small bones of the hands and feet [[2], [3], [4], [5]]. At the cellular level, GC exert their deleterious effects through activation of intracellular GC receptors, leading to apoptosis of osteoblasts and osteocytes and disruption of bone tissue homeostasis [6]. Concurrently, GC upregulate RANKL expression, thereby promoting osteoclast differentiation and maturation, and accelerating bone resorption in affected areas [7,8]. In the absence of effective interventions, patients typically progress to severe functional impairment within 1\u20134 years, significantly compromising quality of life [9]. For individuals diagnosed at an early stage, conservative treatment is often pursued. Currently, core decompression remains widely adopted intervention. However, this surgical approach is invasive, and the resultant bone defects pose significant challenges for subsequent healing. Postoperatively, the compromised mechanical strength of the lesion site renders the repair zone incapable of withstanding physiological stress induced by repetitive high-frequency loading, ultimately resulting in insufficient biomechanical support [[10], [11], [12]]. Moreover, the early-stage symptoms in patients are often insidious, and the characteristic radiating pain typically does not manifest until the disease has progressed to the middle or late stages, by which point the optimal window for therapeutic intervention has already been missed [[13], [14], [15]]. As a result, prosthetic joint replacement becomes the primary treatment option available at that stage. Nevertheless, the long-term use of artificial prostheses is associated with progressive material wear, releasing micro- and nanoparticles that may elicit chronic local inflammatory responses. This can culminate in osteolysis, thereby markedly increasing the complexity and failure risk of subsequent revision surgeries [16,17]. In recent years, the principle of \u201cprevention over treatment\u201d has increasingly emerged as an important guiding concept within modern life sciences. This concept emphasizes the implementation of proactive strategies aimed at reducing disease incidence and delaying progression, offering superior benefits in preserving patient quality of life. In alignment with this paradigm, there is an urgent need to develop prophylactic interventions capable of halting GC-induced skeletal degeneration, thereby enabling early protection of high-risk populations and delaying the progression of pathological processes.",
+          "cos_sim_score": 0.49112939834594727,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12859453",
+          "title": "Sulfated polysaccharide prevents senescent adipocyte-driven osteonecrosis by stem cell fate reprogramming",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12859453/",
+          "text": "2.8\nThe unique anti-aging profile of SCS in the treatment of osteonecrosis exhibits a sulfation-degree\u2013dependent characteristic of its glycan structure",
+          "cos_sim_score": 0.48838019371032715,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12859453",
+          "title": "Sulfated polysaccharide prevents senescent adipocyte-driven osteonecrosis by stem cell fate reprogramming",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12859453/",
+          "text": "3\nDiscussion\nHigh-dose or long-term administration of glucocorticoids (GC; such as methylprednisolone, dexamethasone, and hydrocortisone) is widely recognized as a major risk factor for skeletal deterioration [52]. Osteonecrosis can occur in nearly all bones of the body under such conditions [[2], [3], [4], [5]]. An increasing body of evidence suggests that GC-induced osteonecrosis is closely associated with cellular senescence. Studies have demonstrated that senescent cells accumulate in affected bone tissues, exhibiting a serpentine band-like distribution with distal protrusions [18]. Moreover, senescent bone marrow adipocyte (BMAd)-lineage cells exhibit a senescence-associated secretory phenotype (SASP), which transmits deleterious signals to the surrounding microenvironment through paracrine mechanisms. This exacerbates degenerative changes in bone tissue and impairs the migration and replacement processes of bone repair-associated cells [27,53]. Therefore, it is imperative to develop novel biomaterial-based therapeutic strategies that can effectively eliminate or reverse primarily senescent cells induced by direct injury, thereby halting the progression of bone deterioration and addressing the current gap in prophylactic interventions for this condition. In this study, we demonstrated that sulfated chitosan (SCS) effectively attenuates the global senescence of bone marrow-derived multipotent cells following MPS treatment, thereby preserving the coupling between osteogenesis and arteriogenic vascularization, and ultimately preventing the onset of subsequent bone deterioration. Notably, GC-induced cellular senescence exhibits a sequential and cascade-amplifying nature. Thus, SCS may exert its anti-senescent effects through two potential mechanisms: (1) by inhibiting the generation of primary senescent cells caused by direct cellular injury, thereby reducing the SASP-mediated induction of secondary senescence in neighboring cells; and (2) by directly eliminating pre-existing senescent bone marrow cells, thereby restoring a regenerative microenvironment and maintaining skeletal homeostasis. Our study shows that SCS does not directly interfere with the prostaglandin/PPAR\u03b3/INK positive feedback loop that drives senescence in the bone marrow adipocyte lineage following MPS exposure. However, SCS reprograms the lineage commitment of leptin receptor+ (LepR+) mesenchymal stem cells (MSCs), redirecting their adipogenic inclination toward osteogenic differentiation. Functioning as a key extracellular matrix modulator, SCS activates the IGF-1/PI3K/Akt/mTOR signaling pathway. This activation reduces the production of senescent adipocytes derived from LepR+ MSCs and suppresses the production of senescence-associated factors. As a result, the progression toward bone deterioration is effectively halted. Importantly, LepR+ MSCs pre-treated with SCS exhibited a restored osteogenic\u2013adipogenic differentiation balance in vitro, and maintained skeletal integrity without signs of senescence-associated bone degeneration upon long-term adoptive transfer in vivo. By specifically targeting the cascade of early-onset cellular senescence, this class of biomaterials effectively halts the onset and progression of bone disorders at its initial stages. As such, it represents a promising prophylactic strategy for the prevention of bone homeostasis disruption.\nExtensive studies have demonstrated the vascular heterogeneity of bone marrow capillaries across the metaphysis and diaphysis. The metaphyseal region is enriched with columnar Type H vessels (CD31hiEmcnhi, exhibiting arterial characteristics) and arterioles (Sca-1hiCD31hi), which are highly coupled with perivascular osteoprogenitor cells expressing the transcription factor Osterix [[46], [47], [48],54]. Moreover, LepR+ MSCs, which represent an upstream and highly heterogeneous population of bone marrow-derived multipotent cells, exhibit lineage commitment regulated by vascular subtypes. Specifically, LepR+ MSC subpopulations residing in perivascular arterial niches tend to differentiate toward the osteogenic lineage (e.g., LepR+Osteolectin+), whereas those located in perisinusoidal regions preferentially undergo adipogenic differentiation [55]. Our study revealed that by week 6 following MPS administration, mice exhibited classical histological features of bone deterioration in the femur, characterized by significantly reduced osteogenic activity and impaired vascularization. However, combined treatment with MPS and SCS markedly increased the proportion of Type H ECs and arterial ECs, thereby preserving the tight coupling between osteogenesis and arteriogenic vascularization. This vascular-osteogenic synergy contributed to the sustained presence of mature osteoblasts and osteoprogenitor cells in the affected bone region.",
+          "cos_sim_score": 0.4828016459941864,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12859453",
+          "title": "Sulfated polysaccharide prevents senescent adipocyte-driven osteonecrosis by stem cell fate reprogramming",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12859453/",
+          "text": "To establish a murine model of glucocorticoid (GC)-induced bone deterioration, mice were intramuscularly injected with a high dose of methylprednisolone (MPS) three times per week for three consecutive weeks. Animals were sacrificed at week 6 to evaluate bone alterations in the epiphysis, metaphysis, and cortical bone of the femur. To investigate the therapeutic efficacy of SCS, intraosseous injections of SCS solution were initiated in parallel with GC administration, delivered once weekly for four weeks. The surgical procedure is illustrated in Fig. S2C. PBS served as the vehicle control (Fig. 1A). To determine the optimal dosage and volume of SCS administration, we applied five gradient concentrations (0.31, 0.63, 1.25, 2.50, and 5.00\u00a0mg/mL) with the same injection volume (4\u00a0\u03bcL). On day 42, bone marrow CD45\u2212Ter119\u2212CD31\u2212LepR+ MSCs were sorted, and the results of Alizarin Red S (ARS) staining for osteogenic differentiation indicated that osteogenic mineralization nodules first increased and then decreased, with the 1.25\u00a0mg/mL concentration showing the strongest osteogenic differentiation capacity (Fig. S3A\u2013C). Flow cytometry results revealed that the proportion of p16-positive senescent cells in bone marrow initially decreased and then increased, with the 1.25\u00a0mg/mL SCS group exhibiting the lowest proportion of senescent cells (Fig. S3D and E). Furthermore, for the same dosage (5\u00a0\u03bcg) with different injection volumes, the ARS results following glucocorticoid treatment showed no difference in osteogenic mineralization ability in LepR+ MSCs between the 2\u00a0\u03bcL, 4\u00a0\u03bcL, 8\u00a0\u03bcL, and 16\u00a0\u03bcL volumes (Fig. S3F\u2013H). Flow cytometry also showed no significant change in the proportion of p16-positive senescent cells across the different volumes (Fig. S3I and J). Considering these factors, the optimal SCS concentration used in this study was 1.25\u00a0mg/mL with a single injection volume of 4\u00a0\u03bcL.Fig. 1Continuous intraosseous administration of SCS prevents glucocorticoid-induced bone degeneration. (A) Schematic illustration of the glucocorticoid (GC; MPS)-induced bone deterioration and intraosseous SCS treatment. (B-D) Representative H&E staining images of the femur at 6 weeks (B). Magnified views of the cortical bone and trabecular bone in the marrow cavity are shown on",
+          "cos_sim_score": 0.47082310914993286,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10706386",
+          "title": "Medication-Related Osteonecrosis of the Jaw: A Systematic Review and a Bioinformatic Analysis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10706386/",
+          "text": "There is increasing evidence that inflammatory osteoimmunology is critical to the development of osteonecrosis [49]. Cytokines that regulate inflammatory responses contribute to the onset and progression of osteonecrosis [17,50,51]. In individuals with osteonecrosis, necrotic cells produce cytokines that attract inflammatory cells, triggering both local and systemic immune responses [17,52,53].\nThe function of immune cells and bone-forming cells, especially osteoblasts and osteoclasts, is regulated by cytokines, inflammatory chemokines, and growth factors [54]. Research confirms the involvement of cytokine networks in osteoclast differentiation and regulation. Cytokines, such as tumor necrosis factor-alpha, interleukins 1, -6, -7, -8, -11, -15, -17, -23, and -34, facilitate the process of osteoclast differentiation. By contrast, anti-osteoclastogenic cytokines, namely interferons alpha, beta, and gamma and interleukins 3, -4, -10, -12, -27, and -33, suppress osteoclasts. [55].\nThe pathogenesis of inflammatory bone disease is significantly influenced by T cells and B cells [56]. There have been intense discussions regarding new roles for B cells and a potential role for peripheral blood \u03b3\u03b4 T cells [57,58]. \u0393\u03b4 T cells are innate lymphocytes with a crucial role in regulating immune homeostasis [59]. Kalyan et al. investigated the potential predictive role of peripheral blood \u03b3\u03b4 T cells in osteonecrosis of the jaw. The authors propose that the loss of \u03b3\u03b4 T cells caused by bisphosphonates may be involved in the development of osteonecrosis [57]. Moreover, the proliferation of macrophages and \u03b3\u03b4 T cells promotes inflammation in zoledronic acid-induced jaw necrosis, as the authors of the study [60] concluded.\nThe understanding of biological systems is facilitated by the objective study of PPIs. An effective approach to characterizing system-wide PPIs is the use of PPI networks. These networks are constructed from pairwise protein interactions and serve as an efficient tool for describing PPI landscapes [61]. To investigate protein functions and biological processes based on predicted PPIs and to gain new insights into diseases, the DEG PPI network was analyzed in this study. For osteonecrosis of the jaw, 17 hub genes with aberrant expression were selected. They included ALB, CD44, CXCL2, CXCL8, CXCR4, EEF2, EGF, IGF1, IL1B, IL6, ITGB1, JUN, MMP9, PTPRC, RHOA, TNF, and VEGFA.\nVarious signaling molecules, such as VEGFA, EGF, MMP9, and TNF, contribute to angiogenesis by stimulating the proliferation and migration of vascular endothelial cells [62]. VEGFA is a highly potent pro-angiogenic factor that plays a critical role in the healing of microvascular wounds associated with bisphosphonate administration [63]. A statistically significant increase in VEGFA gene expression was also demonstrated in response to zoledronic acid [64]. The physiological processes of angiogenesis and vascular remodeling involve the regulation of non-coding RNAs, specifically miRNA-based regulation (as noted by reference [65]). Objective evaluation of these processes is necessary for accurate understanding.\nMicroRNAs are small endogenous RNA molecules (\u223c22 nt) that were recently discovered. Disorders such as cancer or heart disease have demonstrated the diagnostic potential of circulating miRNAs [66,67]. MiRNA-mediated RNA interference, a unique mechanism that binds miRNAs to different direct targets, controls both post-transcriptional gene expression and protein expression [68].\nOur OmicsNet network analysis generated an interactome of input genes including ALB, CD44, CXCL2, CXCL8, CXCR4, EEF2, EGF, IGF1, IL1B, IL6, ITGB1, JUN, MMP9, PTPRC, RHOA, TNF, and VEGFA with input miRNAs comprising hsa-mir-16-1, hsa-mir-21, hsa-mir-23a, hsa-mir-145, hsa-mir-186, hsa-mir-221, and hsa-mir-424. Further analysis focused on miRNA identified the most extensively linked miRNAs targeting IL1B, VEGFA, CXCL8, and CD44 directly (Table 9).",
+          "cos_sim_score": 0.4528162181377411,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

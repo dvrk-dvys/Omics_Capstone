@@ -1,0 +1,183 @@
+{
+  "rf_rank": 48,
+  "probe_id": "11716389_a_at",
+  "gene_symbol": "BAZ1B",
+  "score": 0.5,
+  "rf_n_nodes": 3,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.35,
+  "log_fc": 0.35,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11716389_a_at",
+  "max_score": 0.5,
+  "mean_abs_fold_change": 0.35,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:46:01",
+  "interpretation": "BAZ1B encodes a protein involved in chromatin remodeling and transcription regulation, playing a crucial role in the DNA damage response by phosphorylating histone H2AX, which is essential for DNA repair mechanisms. Although there is no direct evidence linking BAZ1B to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in DNA repair processes may suggest a potential role in cellular responses to steroid-induced stress, which is relevant in the context of SONFH. The evidence retrieved primarily highlights its biological functions without establishing a direct connection to SONFH, leading to a lower confidence in its relevance as a biomarker. Therefore, while BAZ1B may have some biological plausibility in the context of SONFH, its clinical utility as an early-detection biomarker remains weak and speculative.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "BAZ1B may be involved in cellular responses to steroid-induced stress, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "BAZ1B (Q9UIG0). https://www.uniprot.org/uniprotkb/Q9UIG0",
+    "BAZ1B (Q9UIG0-2). https://www.uniprot.org/uniprotkb/Q9UIG0-2",
+    "BAZ1B \u2014 BAZ1B. https://platform.opentargets.org/target/ENSG00000009954",
+    "BAZ1B \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000009954/associations",
+    "BAZ1B \u2194 gout. https://platform.opentargets.org/target/ENSG00000009954/associations",
+    "BAZ1B \u2194 hyperuricemia. https://platform.opentargets.org/target/ENSG00000009954/associations",
+    "BAZ1B \u2194 hyperlipidemia. https://platform.opentargets.org/target/ENSG00000009954/associations",
+    "BAZ1B \u2014 bromodomain adjacent to zinc finger domain 1B (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TP53 \u2014 tumor protein p53 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ESR1 \u2014 estrogen receptor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MYC \u2014 MYC proto-oncogene, bHLH transcription factor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ACE2 \u2014 angiotensin converting enzyme 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5240,
+    "completion_tokens": 305,
+    "total_tokens": 5545,
+    "estimated_cost_usd": 0.000969
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9UIG0",
+          "title": "BAZ1B (Q9UIG0)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UIG0",
+          "text": "Protein: Tyrosine-protein kinase BAZ1B\nFunction: Atypical tyrosine-protein kinase that plays a central role in chromatin remodeling and acts as a transcription regulator (PubMed:19092802). Involved in DNA damage response by phosphorylating 'Tyr-142' of histone H2AX (H2AXY142ph) (PubMed:19092802, PubMed:19234442). H2AXY142ph plays a central role in DNA repair and acts as a mark that distinguishes between apoptotic and repair responses to genotoxic stress (PubMed:19092802, PubMed:19234442). Regulatory subunit of the ATP-dependent WICH-1 and WICH-5 ISWI chromatin remodeling complexes, which form ordered nucleosome arrays on chromatin and facilitate access to DNA during DNA-templated processes such as DNA replication, transcription, and repair (PubMed:11980720, PubMed:28801535). Both complexes regulate the spacing of nucleosomes along the chromatin and have the ability to slide mononucleosomes to the center of a DNA template (PubMed:28801535). The WICH-1 ISWI chromatin remodeling complex has a lower ATP hydrolysis rate than the WICH-5 ISWI chromatin remodeling complex (PubMed:28801535). The WICH-5 ISWI chromatin-remodeling complex regulates the transcription of various genes, has a role in RNA polymerase I transcription (By similarity). Within the B-WICH complex has a role in RNA polymerase III transcription (PubMed:16603771). Mediates the recruitment of the WICH-5 ISWI chromatin remodeling complex to replication foci during DNA replication (PubMed:15543136)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9UIG0-2",
+          "title": "BAZ1B (Q9UIG0-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UIG0-2",
+          "text": "Protein: Isoform 2 of Tyrosine-protein kinase BAZ1B",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000009954::function",
+          "title": "BAZ1B \u2014 BAZ1B",
+          "url": "https://platform.opentargets.org/target/ENSG00000009954",
+          "text": "Function: Atypical tyrosine-protein kinase that plays a central role in chromatin remodeling and acts as a transcription regulator (PubMed:19092802). Involved in DNA damage response by phosphorylating 'Tyr-142' of histone H2AX (H2AXY142ph) (PubMed:19092802, PubMed:19234442). H2AXY142ph plays a central role in DNA repair and acts as a mark that distinguishes between apoptotic and repair responses to genotoxic stress (PubMed:19092802, PubMed:19234442). Regulatory subunit of the ATP-dependent WICH-1 and WICH-5 ISWI chromatin remodeling complexes, which form ordered nucleosome arrays on chromatin and facilitate access to DNA during DNA-templated processes such as DNA replication, transcription, and repair (PubMed:11980720, PubMed:28801535). Both complexes regulate the spacing of nucleosomes along the chromatin and have the ability to slide mononucleosomes to the center of a DNA template (PubMed:28801535). The WICH-1 ISWI chromatin remodeling complex has a lower ATP hydrolysis rate than the WICH-5 ISWI chromatin remodeling complex (PubMed:28801535). The WICH-5 ISWI chromatin-remodeling complex regulates the transcription of various genes, has a role in RNA polymerase I transcription (By similarity). Within the B-WICH complex has a role in RNA polymerase III transcription (PubMed:16603771). Mediates the recruitment of the WICH-5 ISWI chromatin remodeling complex to replication foci during DNA replication (PubMed:15543136).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000009954::EFO_0005772",
+          "title": "BAZ1B \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000009954/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.453",
+          "cos_sim_score": 0.4534862263542063,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000009954::EFO_0004274",
+          "title": "BAZ1B \u2194 gout",
+          "url": "https://platform.opentargets.org/target/ENSG00000009954/associations",
+          "text": "Disease: gout\nDescription: metabolic disorder characterized by recurrent acute arthritis, hyperuricemia and deposition of sodium urate in and around the joints, sometimes with formation of uric acid calculi. Gout is partly genetic.\nAssociation score: 0.396",
+          "cos_sim_score": 0.3955706596863487,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000009954::EFO_0009104",
+          "title": "BAZ1B \u2194 hyperuricemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000009954/associations",
+          "text": "Disease: hyperuricemia\nDescription: An abnormally high level of uric acid.\nAssociation score: 0.335",
+          "cos_sim_score": 0.3348707899616446,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000009954::MONDO_0021187",
+          "title": "BAZ1B \u2194 hyperlipidemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000009954/associations",
+          "text": "Disease: hyperlipidemia\nAssociation score: 0.315",
+          "cos_sim_score": 0.3145280197677303,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "BAZ1B \u2014 bromodomain adjacent to zinc finger domain 1B",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: BAZ1B\nGene name: bromodomain adjacent to zinc finger domain 1B\nAliases / synonyms: WBSCR10, WBSCR9, WSTF\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the bromodomain protein family. The bromodomain is a structural motif characteristic of proteins involved in chromatin-dependent regulation of transcription. This gene is deleted in Williams-Beuren syndrome, a developmental disorder caused by deletion of multiple genes at 7q11.23. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "BAZ1B",
+          "aliases": "WBSCR10, WBSCR9, WSTF",
+          "gene_description": "bromodomain adjacent to zinc finger domain 1B"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TP53 \u2014 tumor protein p53",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TP53\nGene name: tumor protein p53\nAliases / synonyms: BCC7, BMFS5, LFS1, P53, TRP53\nOrganism: Homo sapiens\nGene summary: This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TP53",
+          "aliases": "BCC7, BMFS5, LFS1, P53, TRP53",
+          "gene_description": "tumor protein p53"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ESR1 \u2014 estrogen receptor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ESR1\nGene name: estrogen receptor 1\nAliases / synonyms: ER, ESR, ESRA, ESTRR, Era, NR3A1\nOrganism: Homo sapiens\nGene summary: This gene encodes an estrogen receptor and ligand-activated transcription factor. The canonical protein contains an N-terminal ligand-independent transactivation domain, a central DNA binding domain, a hinge domain, and a C-terminal ligand-dependent transactivation domain. The protein localizes to the nucleus where it may form either a homodimer or a heterodimer with estrogen receptor 2. The protein encoded by this gene regulates the transcription of many estrogen-inducible genes that play a role in growth, metabolism, sexual development, gestation, and other reproductive functions and is expressed in many non-reproductive tissues. The receptor encoded by this gene plays a key role in breast cancer, endometrial cancer, and osteoporosis. This gene is reported to have dozens of transcript va...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ESR1",
+          "aliases": "ER, ESR, ESRA, ESTRR, Era, NR3A1",
+          "gene_description": "estrogen receptor 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MYC \u2014 MYC proto-oncogene, bHLH transcription factor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MYC\nGene name: MYC proto-oncogene, bHLH transcription factor\nAliases / synonyms: MRTL, MYCC, bHLHe39, c-Myc\nOrganism: Homo sapiens\nGene summary: This gene is a proto-oncogene and encodes a nuclear phosphoprotein that plays a role in cell cycle progression, apoptosis and cellular transformation. The encoded protein forms a heterodimer with the related transcription factor MAX. This complex binds to the E box DNA consensus sequence and regulates the transcription of specific target genes. Amplification of this gene is frequently observed in numerous human cancers. Translocations involving this gene are associated with Burkitt lymphoma and multiple myeloma in human patients. There is evidence to show that translation initiates both from an upstream, in-frame non-AUG (CUG) and a downstream AUG start site, resulting in the production of two isoforms with distinct N-termini. [provided by RefSeq, Aug 2017]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MYC",
+          "aliases": "MRTL, MYCC, bHLHe39, c-Myc",
+          "gene_description": "MYC proto-oncogene, bHLH transcription factor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ACE2 \u2014 angiotensin converting enzyme 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ACE2\nGene name: angiotensin converting enzyme 2\nAliases / synonyms: ACEH\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene belongs to the angiotensin-converting enzyme family of dipeptidyl carboxydipeptidases and has considerable homology to human angiotensin 1 converting enzyme. This secreted protein catalyzes the cleavage of angiotensin I into angiotensin 1-9, and angiotensin II into the vasodilator angiotensin 1-7. ACE2 is known to be expressed in various human organs, and its organ- and cell-specific expression suggests that it may play a role in the regulation of cardiovascular and renal function, as well as fertility. In addition, the encoded protein is a functional receptor for the spike glycoprotein of the human coronavirus HCoV-NL63 and the human severe acute respiratory syndrome coronaviruses, SARS-CoV and SARS-CoV-2, the latter is the causative agent of coronavirus d...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ACE2",
+          "aliases": "ACEH",
+          "gene_description": "angiotensin converting enzyme 2"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

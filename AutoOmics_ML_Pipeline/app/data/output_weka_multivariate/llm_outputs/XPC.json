@@ -1,0 +1,233 @@
+{
+  "rf_rank": 24,
+  "probe_id": "11740553_a_at",
+  "gene_symbol": "XPC",
+  "score": 0.7,
+  "rf_n_nodes": 6,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.72,
+  "log_fc": 0.72,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11740553_a_at",
+  "max_score": 0.7,
+  "mean_abs_fold_change": 0.72,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T01:48:45",
+  "interpretation": "XPC encodes a protein that plays a crucial role in the nucleotide excision repair (NER) pathway, which is essential for repairing DNA damage caused by various factors, including oxidative stress and chemical exposure. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the ability of XPC to recognize and repair DNA damage may be particularly relevant, as glucocorticoids (steroids) can induce oxidative stress and DNA damage in bone cells. However, the evidence linking XPC directly to SONFH is limited, with no specific studies found that validate its role as a biomarker for this condition. Thus, while XPC's function in DNA repair suggests a potential relevance to SONFH, the lack of direct evidence leads to a lower confidence in its clinical utility as a biomarker for early detection of this disease.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "XPC's role in DNA repair may connect it to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head, but direct evidence is lacking.",
+  "citations": [
+    "XPC (Q01831). https://www.uniprot.org/uniprotkb/Q01831",
+    "XPC (Q01831-3). https://www.uniprot.org/uniprotkb/Q01831-3",
+    "XPC (Q01831-2). https://www.uniprot.org/uniprotkb/Q01831-2",
+    "XPC \u2014 XPC. https://platform.opentargets.org/target/ENSG00000154767",
+    "XPC \u2194 Xeroderma pigmentosum complementation group C. https://platform.opentargets.org/target/ENSG00000154767/associations",
+    "XPC \u2194 xeroderma pigmentosum group C. https://platform.opentargets.org/target/ENSG00000154767/associations",
+    "XPC \u2194 xeroderma pigmentosum. https://platform.opentargets.org/target/ENSG00000154767/associations",
+    "XPC \u2194 Abnormality of the skeletal system. https://platform.opentargets.org/target/ENSG00000154767/associations",
+    "XPC \u2014 XPC complex subunit, DNA damage recognition and repair factor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TP53 \u2014 tumor protein p53 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "BRCA1 \u2014 BRCA1 DNA repair associated (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "VDR \u2014 vitamin D receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ESR1 \u2014 estrogen receptor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "The NQO1 Pro187Ser polymorphism and breast cancer susceptibility: evidence from an updated meta-analysis (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC4041044/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 10402,
+    "completion_tokens": 321,
+    "total_tokens": 10723,
+    "estimated_cost_usd": 0.001753
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q01831",
+          "title": "XPC (Q01831)",
+          "url": "https://www.uniprot.org/uniprotkb/Q01831",
+          "text": "Protein: DNA repair protein complementing XP-C cells\nFunction: Involved in global genome nucleotide excision repair (GG-NER) by acting as damage sensing and DNA-binding factor component of the XPC complex (PubMed:10734143, PubMed:10873465, PubMed:12509299, PubMed:12547395, PubMed:19609301, PubMed:19941824, PubMed:20028083, PubMed:20649465, PubMed:20798892, PubMed:9734359). Has only a low DNA repair activity by itself which is stimulated by RAD23B and RAD23A. Has a preference to bind DNA containing a short single-stranded segment but not to damaged oligonucleotides (PubMed:10734143, PubMed:19609301, PubMed:20649465). This feature is proposed to be related to a dynamic sensor function: XPC can rapidly screen duplex DNA for non-hydrogen-bonded bases by forming a transient nucleoprotein intermediate complex which matures into a stable recognition complex through an intrinsic single-stranded DNA-binding activity (PubMed:10734143, PubMed:19609301, PubMed:20649465). The XPC complex is proposed to represent the first factor bound at the sites of DNA damage and together with other core recognition factors, XPA, RPA and the TFIIH complex, is part of the pre-incision (or initial recognition) complex (PubMed:10873465, PubMed:12509299, PubMed:12547395, PubMed:19941824, PubMed:20028083, PubMed:20798892, PubMed:9734359). The XPC complex recognizes a wide spectrum of damaged DNA characterized by distortions of the DNA helix such as single-stranded loops, mismatched bubbles or single-stranded overhangs (PubMed:10873465, PubMed:12509299, PubMed:12547395, PubMed:19941824, PubMed:20028083, PubMed:20798892, PubMed:9734359). The orientation of XPC complex binding appears to be crucial for inducing a productive NER (PubMed:10873465, PubMed:12509299, PubMed:12547395, PubMed:19941824, PubMed:20028083, PubMed:20798892, PubMed:9734359). XPC complex is proposed to recognize and to interact with unpaired bases on the undamaged DNA strand which is followed by recruitment of the TFIIH complex and subsequent scanning for lesions in the opposite strand in a 5'-to-3' direction by the NER machinery (PubMed:10873465, PubMed:12509299, PubMed:12547395, PubMed:19941824, PubMed:20028083, PubMed:20798892, PubMed:9734359). Cyclobutane pyrimidine dimers (CPDs) which are formed upon UV-induced DNA damage esacpe detection by the XPC complex due to a low degree of structural perurbation. Instead they are detected by the UV-DDB complex which in turn recruits and cooperates with the XPC complex in the respective DNA repair (PubMed:10873465, PubMed:12509299, PubMed:12547395, PubMed:19941824, PubMed:20028083, PubMed:20798892, PubMed:9734359). In vitro, the XPC:RAD23B dimer is sufficient to initiate NER; it preferentially binds to cisplatin and UV-damaged double-stranded DNA and also binds to a variety of chemically and structurally diverse DNA adducts (PubMed:20028083). XPC:RAD23B contacts DNA both 5' and 3' of a cisplatin lesion with a preference for the 5' side. XPC:RAD23B induces a bend in DNA upon binding. XPC:RAD23B stimulates the activity of DNA glycosylases TDG and SMUG1 (PubMed:20028083) In absence of DNA repair, the XPC complex also acts as a transcription coactivator: XPC interacts with the DNA-binding transcription factor E2F1 at a subset of promoters to recruit KAT2A and histone acetyltransferase complexes (HAT) (PubMed:29973595, PubMed:31527837). KAT2A recruitment specifically promotes acetylation of histone variant H2A.Z.1/H2A.Z, but not H2A.Z.2/H2A.V, thereby promoting expression of target genes (PubMed:31527837)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q01831-3",
+          "title": "XPC (Q01831-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q01831-3",
+          "text": "Protein: Isoform 3 of DNA repair protein complementing XP-C cells",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q01831-2",
+          "title": "XPC (Q01831-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q01831-2",
+          "text": "Protein: Isoform 2 of DNA repair protein complementing XP-C cells",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000154767::function",
+          "title": "XPC \u2014 XPC",
+          "url": "https://platform.opentargets.org/target/ENSG00000154767",
+          "text": "Function: Involved in global genome nucleotide excision repair (GG-NER) by acting as damage sensing and DNA-binding factor component of the XPC complex (PubMed:10734143, PubMed:10873465, PubMed:12509299, PubMed:12547395, PubMed:19609301, PubMed:19941824, PubMed:20028083, PubMed:20649465, PubMed:20798892, PubMed:9734359). Has only a low DNA repair activity by itself which is stimulated by RAD23B and RAD23A. Has a preference to bind DNA containing a short single-stranded segment but not to damaged oligonucleotides (PubMed:10734143, PubMed:19609301, PubMed:20649465). This feature is proposed to be related to a dynamic sensor function: XPC can rapidly screen duplex DNA for non-hydrogen- bonded bases by forming a transient nucleoprotein intermediate complex which matures into a stable recognition complex through an intrinsic single-stranded DNA-binding activity (PubMed:10734143, PubMed:19609301, PubMed:20649465). The XPC complex is proposed to represent the first factor bound at the sites of DNA damage and together with other core recognition factors, XPA, RPA and the TFIIH complex, is part of the pre-incision (or initial recognition) complex (PubMed:10873465, PubMed:12509299, PubMed:12547395, PubMed:19941824, PubMed:20028083, PubMed:20798892, PubMed:9734359). The XPC complex recognizes a wide spectrum of damaged DNA characterized by distortions of the DNA helix such as single-stranded loops, mismatched bubbles or single-stranded overhangs (PubMed:10873465, PubMed:12509299, PubMed:12547395, PubMed:19941824, PubMed:20028083, PubMed:20798892, PubMed:9734359). The orientation of XPC complex binding appears to be crucial for inducing a productive NER (PubMed:10873465, PubMed:12509299, PubMed:12547395, PubMed:19941824, PubMed:20028083, PubMed:20798892, PubMed:9734359). XPC complex is proposed to recognize and to interact with unpaired bases on the undamaged DNA strand which is followed by recruitment of the TFIIH complex and subsequent scanning for lesions in the opposite strand in a 5'-to-3' direction by the NER machinery (PubMed:10873465, PubMed:12509299, PubMed:12547395, PubMed:19941824, PubMed:20028083, PubMed:20798892, PubMed:9734359). Cyclobutane pyrimidine dimers (CPDs) which are formed upon UV-induced DNA damage esacpe detection by the XPC complex due to a low degree of structural perurbation. Instead they are detected by the UV-DDB complex which in turn recruits and cooperates with the XPC complex in the respective DNA repair (PubMed:10873465, PubMed:12509299, PubMed:12547395, PubMed:19941824, PubMed:20028083, PubMed:20798892, PubMed:9734359). In vitro, the XPC:RAD23B dimer is sufficient to initiate NER; it preferentially binds to cisplatin and UV-damaged double-stranded DNA and also binds to a variety of chemically and structurally diverse DNA adducts (PubMed:20028083). XPC:RAD23B contacts DNA both 5' and 3' of a cisplatin lesion with a preference for the 5' side. XPC:RAD23B induces a bend in DNA upon binding. XPC:RAD23B stimulates the activity of DNA glycosylases TDG and SMUG1 (PubMed:20028083).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000154767::Orphanet_276255",
+          "title": "XPC \u2194 Xeroderma pigmentosum complementation group C",
+          "url": "https://platform.opentargets.org/target/ENSG00000154767/associations",
+          "text": "Disease: Xeroderma pigmentosum complementation group C\nDescription: Xeroderma pigmentosum complementation group C (XPC) is the most frequent subtype of xeroderma pigmentosum (XP, a rare photodermatosis predisposing to skin cancers; see this term) in the Caucasian population\nAssociation score: 0.806",
+          "cos_sim_score": 0.8056391472748724,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000154767::MONDO_0010211",
+          "title": "XPC \u2194 xeroderma pigmentosum group C",
+          "url": "https://platform.opentargets.org/target/ENSG00000154767/associations",
+          "text": "Disease: xeroderma pigmentosum group C\nDescription: An autosomal recessive inherited disorder caused by mutations in the XPC gene. This disease is characterized by increased sensitivity to sunlight with the development of carcinomas at an early age and is caused by a defect in nucleotide excision repair.\nAssociation score: 0.777",
+          "cos_sim_score": 0.7770433490293749,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000154767::MONDO_0019600",
+          "title": "XPC \u2194 xeroderma pigmentosum",
+          "url": "https://platform.opentargets.org/target/ENSG00000154767/associations",
+          "text": "Disease: xeroderma pigmentosum\nDescription: Xeroderma pigmentosum (XP) is a rare genodermatosis characterized by extreme sensitivity to ultraviolet (UV)-induced changes in the skin and eyes, and multiple skin cancers. It is subdivided into 8 complementation groups, according to the affected gene: classical XP (XPA to XPG) and XP variant (XPV).\nAssociation score: 0.716",
+          "cos_sim_score": 0.7157619214371781,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000154767::HP_0000924",
+          "title": "XPC \u2194 Abnormality of the skeletal system",
+          "url": "https://platform.opentargets.org/target/ENSG00000154767/associations",
+          "text": "Disease: Abnormality of the skeletal system\nDescription: An abnormality of the skeletal system.\nAssociation score: 0.458",
+          "cos_sim_score": 0.45787727263469546,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "XPC \u2014 XPC complex subunit, DNA damage recognition and repair factor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: XPC\nGene name: XPC complex subunit, DNA damage recognition and repair factor\nAliases / synonyms: RAD4, XP3, XPCC, p125\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a key component of the XPC complex, which plays an important role in the early steps of global genome nucleotide excision repair (NER). The encoded protein is important for damage sensing and DNA binding, and shows a preference for single-stranded DNA. Mutations in this gene or some other NER components can result in Xeroderma pigmentosum, a rare autosomal recessive disorder characterized by increased sensitivity to sunlight with the development of carcinomas at an early age. Alternatively spliced transcript variants have been found for this gene. [provided by RefSeq, Aug 2017]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "XPC",
+          "aliases": "RAD4, XP3, XPCC, p125",
+          "gene_description": "XPC complex subunit, DNA damage recognition and repair factor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TP53 \u2014 tumor protein p53",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TP53\nGene name: tumor protein p53\nAliases / synonyms: BCC7, BMFS5, LFS1, P53, TRP53\nOrganism: Homo sapiens\nGene summary: This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TP53",
+          "aliases": "BCC7, BMFS5, LFS1, P53, TRP53",
+          "gene_description": "tumor protein p53"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "BRCA1 \u2014 BRCA1 DNA repair associated",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: BRCA1\nGene name: BRCA1 DNA repair associated\nAliases / synonyms: BRCAI, BRCC1, BROVCA1, FANCS, IRIS, PNCA4, PPP1R53, PSCP, RNF53\nOrganism: Homo sapiens\nGene summary: This gene encodes a 190 kD nuclear phosphoprotein that plays a role in maintaining genomic stability, and it also acts as a tumor suppressor. The BRCA1 gene contains 22 exons spanning about 110 kb of DNA. The encoded protein combines with other tumor suppressors, DNA damage sensors, and signal transducers to form a large multi-subunit protein complex known as the BRCA1-associated genome surveillance complex (BASC). This gene product associates with RNA polymerase II, and through the C-terminal domain, also interacts with histone deacetylase complexes. This protein thus plays a role in transcription, DNA repair of double-stranded breaks, and recombination. Mutations in this gene are responsible for approximately 40% of inherited breast cancers and more than 80% of inherited breast and ovari...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "BRCA1",
+          "aliases": "BRCAI, BRCC1, BROVCA1, FANCS, IRIS, PNCA4, PPP1R53, PSCP, RNF53",
+          "gene_description": "BRCA1 DNA repair associated"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "VDR \u2014 vitamin D receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: VDR\nGene name: vitamin D receptor\nAliases / synonyms: NR1I1, PPP1R163\nOrganism: Homo sapiens\nGene summary: This gene encodes vitamin D3 receptor, which is a member of the nuclear hormone receptor superfamily of ligand-inducible transcription factors. This receptor also functions as a receptor for the secondary bile acid, lithocholic acid. Downstream targets of vitamin D3 receptor are principally involved in mineral metabolism, though this receptor regulates a variety of other metabolic pathways, such as those involved in immune response and cancer. Mutations in this gene are associated with type II vitamin D-resistant rickets. A single nucleotide polymorphism in the initiation codon results in an alternate translation start site three codons downstream. Alternatively spliced transcript variants encoding different isoforms have been described for this gene. A recent study provided evidence for t...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "VDR",
+          "aliases": "NR1I1, PPP1R163",
+          "gene_description": "vitamin D receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ESR1 \u2014 estrogen receptor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ESR1\nGene name: estrogen receptor 1\nAliases / synonyms: ER, ESR, ESRA, ESTRR, Era, NR3A1\nOrganism: Homo sapiens\nGene summary: This gene encodes an estrogen receptor and ligand-activated transcription factor. The canonical protein contains an N-terminal ligand-independent transactivation domain, a central DNA binding domain, a hinge domain, and a C-terminal ligand-dependent transactivation domain. The protein localizes to the nucleus where it may form either a homodimer or a heterodimer with estrogen receptor 2. The protein encoded by this gene regulates the transcription of many estrogen-inducible genes that play a role in growth, metabolism, sexual development, gestation, and other reproductive functions and is expressed in many non-reproductive tissues. The receptor encoded by this gene plays a key role in breast cancer, endometrial cancer, and osteoporosis. This gene is reported to have dozens of transcript va...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ESR1",
+          "aliases": "ER, ESR, ESRA, ESTRR, Era, NR3A1",
+          "gene_description": "estrogen receptor 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::4041044",
+          "title": "The NQO1 Pro187Ser polymorphism and breast cancer susceptibility: evidence from an updated meta-analysis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4041044/",
+          "text": "Background\nBreast cancer is the most common cancer and the second most common cause of cancer-related death in women. In 2008 there were 182,460 women diagnosed with breast cancer, and 40,480 women died of this disease [1]. In several developing countries, such as China, breast cancer has surpassed cervical cancer and become the leading cause of cancer death among females [2]. Though the exact mechanism of breast carcinogenesis is still unclear, it has been well accepted that oxidative stress resulting from excess reactive oxygen species and deficiency in antioxidant capabilities play important roles in breast cancer etiology [3,4].\nNAD(P)H:quinone oxidoreductase 1 (NQO1), also known as diphtheria toxin diaphorase (DT-diaphorase), is a cytosolic flavoenzyme which is present in human epithelial and endothelial tissues. NQO1 is considered as an anticancer enzyme because it protect cells from oxidative damage by preventing quinones from entering the one-electron reduction which is catalyzed by cytochrom b5 reductase or P450 reductase to generate semiquinone free radicals and reactive oxygen species [5]. On the contrary, with its unique property of transferring two electrons at a time by using either NADH or NADPH as reducing cofactor, NQO1 catalyze quinones and quinine-imines into hydroquinones, which are thought less toxic and easier to excrete when conjugated [6,7]. The NQO1 gene, mapped to chromosome 16q22.1, is 17.2\u00a0kb in length and contains 6 exons and 5 introns [8]. There were at least 270 SNPs in the NQO1 gene according to the dbSNP database (http://www.ncbi.nlm.nih.gov/SNP), including the most commonly occurring C-to-T transition at nucleotide position 609 in exon 6 (rs1800566, 609C\u2009>\u2009T), which results in a proline-to-serine amino-acid substitution at codon 187 (Pro187Ser) in the protein. It was reported that the variant T allele was associated with reduced NQO1 enzymatic activity in both human cell lines and primary human tissues [9,10]. Furthermore, there is a clear allele dosage effect of the NQO1 609\u00a0T genotypes on NQO1 enzymatic activity, with the variant homozygotes (TT) having the lowest, the heterozygotes (CT) having the intermediate, and the wild-type homozygotes (CC) having the highest NQO1 enzyme activity [11-13]. Given that the previous studies have consistently shown that the variant T allele resulted in reduced enzymatic activity, it was biologically reasonable to hypothesize a potential relationship between the NQO1 Pro187Ser polymorphism and cancer susceptibility.\nIn the past two decades, a number of molecular epidemiological studies have evaluated the association between the NQO1 Pro187Ser polymorphism and breast cancer risk, but the results remain inconsistent. Several studies have previously suggested that the NQO1 Pro187Ser polymorphism was associated with an increased risk of breast cancer [14,15]. However, other studies have failed to confirm such an association [3,16]. In addition, a meta-analysis by Yuan et al. [17] found that the NQO1 Pro187Ser polymorphism may contribute to breast cancer development in Caucasians. However, evidence was limited because only 6 studies were available at that time. In addition, only ethnicity was considered in the subgroup analysis and the source of heterogeneity was not explored in this study. As some new studies emerging [16,18,19], to provide the most comprehensive assessment of the associations between the NQO1 Pro187Ser polymorphism and breast cancer risk, we performed an updated meta-analysis of all available studies with extensive exploration of the source of heterogeneity and subgroup analyses.\nMethods\nSearch strategy",
+          "cos_sim_score": 0.15824997425079346,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::4041044",
+          "title": "The NQO1 Pro187Ser polymorphism and breast cancer susceptibility: evidence from an updated meta-analysis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4041044/",
+          "text": "Abbreviations\nHWE: Hardy\u2013Weinberg equilibrium; NQO1: NAD(P)H: quinone oxidoreductase 1; SNP: Single nucleotide polymorphism; OR: Odds ratio; CI: Confidence interval.\nCompeting interest\nThe authors declare that they have no competing interests.\nAuthors' contributions\nQP performed the literature search, data extraction, statistical analysis and drafted the manuscript. YL, XL, ZP, RL, JS, and XQ participated in data extraction. SL supervised the literature search, data extraction, statistical analysis and drafted the manuscript. All authors read and approved the final manuscript.",
+          "cos_sim_score": 0.12852297723293304,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::4041044",
+          "title": "The NQO1 Pro187Ser polymorphism and breast cancer susceptibility: evidence from an updated meta-analysis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4041044/",
+          "text": "In subgroup analysis according to the source of control, statistical significant increased breast cancer risk was found in population-based studies but not in hospital-based studies. The reason may be that the hospital-based studies have inherent selection biases due to the fact that such controls may not be representative of the study population or the general population, particularly when the genotypes under investigation were associated with the disease-related conditions that hospital-based controls may have. Thus, the use of proper and representative population-based control participants is of great importance in reducing biases in such genotype association studies.\nHeterogeneity is a potential problem when interpreting the results of a meta-analysis, and finding the sources of heterogeneity is one of the most important goals of meta-analysis [40,41]. In the present study, statistical significant between-study heterogeneity among studies was observed when all studies were pooled into the meta-analysis (Ser/Ser vs. Pro/Pro: P\nQ\n\u2009=\u20090.004; Ser/Pro vs. Pro/Pro: P\nQ\n\u2009=\u20090.033; Ser/Ser\u2009+\u2009Ser/Pro vs. Pro/Pro: P\nQ\n\u2009=\u20090.023; Ser/Ser vs. Ser/Pro\u2009+\u2009Pro/Pro: P\nQ\n\u2009=\u20090.007; Table\u00a03). To explore the sources of heterogeneity, we performed metaregression and subgroup analyses. Metaregression analysis of data showed that the genotyping methods, ethnicity, source of controls, quality scores, HWE status, and breast cancer ascertainment were not effect modifiers of heterogeneity. Subgroup analyses stratified by ethnicity, menopausal status, quality score, source of control, and HWE status showed that heterogeneity still existed among Caucasians, low quality studies, population-based studies, and studies consistent with HWE (all P\nQ\n values\u2009<\u20090.10). Subsequently, we performed Galbraith plots analysis to further explore the source of heterogeneity. Galbraith plots analysis showed that the study Menzel et al. [15] was the outlier in all genetic models in the overall populations. When excluding the study Menzel et al. [15], the heterogeneity decreased obviously and all P\nQ\n values were greater than 0.10 in all genetic comparison models in overall populations, Caucasians, population-based studies, and studies consistent with HWE. However, the summary ORs in the overall populations, Caucasians, population-based studies, and studies consistent with HWE were not material changed by omitting this study, indicating that our results were robust and reliable. The results indicated that the study Menzel et al. [15] was the major source of the heterogeneity in the meta-analysis.\nHowever, there are still some limitations in this meta-analysis. First, in subgroup analysis by ethnicity, the included studies regarded only Caucasians, Asians, and Arabs for NQO1 Pro187Ser polymorphism. Data concerning other ethnicities such as Africans were not found. Thus, additional studies are warranted to evaluate the effect of this functional polymorphism on breast cancer risk in different ethnicities, especially in Africans. Second, our results were based on unadjusted estimates. We did not perform analysis adjusted for other covariates such as age, obesity, drinking and smoking status, use of contraceptives, environment factors, and so on, because of the unavailable original data of the eligible studies. Third, subgroup analyses were based on studies with relevant information available. Owing to the lack of detailed information in most studies, the subgroup analysis for menopausal status consisted of only two studies for each subgroup, which might not be sufficient to reach a reliable conclusion.\nConclusions\nThis meta-analysis provided a more precise estimation based on larger sample size compared with the individual studies and previous meta-analysis. Our study suggested that NQO1 Pro187Ser polymorphism might contribute to breast cancer risk, especially in Caucasian populations. However, it is necessary to conduct large sample studies using standardized unbiased genotyping methods, homogeneous breast cancer patients, and well-matched controls to further validate the results of our meta-analysis. Moreover, gene-gene and gene-environment interactions should also be considered in the analysis. Such studies taking these factors into account may eventually lead to a better, more comprehensive understanding of the association between NQO1 Pro187Ser polymorphism and breast cancer risk.\nAbbreviations\nHWE: Hardy\u2013Weinberg equilibrium; NQO1: NAD(P)H: quinone oxidoreductase 1; SNP: Single nucleotide polymorphism; OR: Odds ratio; CI: Confidence interval.\nCompeting interest\nThe authors declare that they have no competing interests.\nAuthors' contributions",
+          "cos_sim_score": 0.07228885591030121,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::4041044",
+          "title": "The NQO1 Pro187Ser polymorphism and breast cancer susceptibility: evidence from an updated meta-analysis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4041044/",
+          "text": "Methods\nSearch strategy\nWe conducted a comprehensive literature search in PubMed, EMBASE, Cochrane library, and Chinese Biomedical Literature (CBM) databases form January 1966 to February 2014 using the following search strategy: (\u201cbreast cancer\u201d) and (\u201cNAD(P)H:quinone oxidoreductase 1\u201d, or \u201cNQO1\u201d). There was no restriction on sample size, population, language, or type of report. All eligible studies were retrieved and their references were checked for other relevant studies. The literature retrieval was performed in duplication by two independent reviewers (Qiliu Peng and Yu Lu). When multiple publications reported on the same or overlapping data, we chose the most recent or largest population. When a study reported the results on different subpopulations, we treated it as separate studies in the meta-analysis.\nInclusion and exclusion criteria\nStudies included in the meta-analysis were required to meet the following criteria: (1) case\u2013control or cohort studies which evaluated the association between NQO1 Pro187Ser polymorphism and breast cancer risk; (2) used an unrelated case\u2013control design; (3) had an odds ratio (OR) with 95% confidence interval (CI) or other available data for estimating OR (95% CI); and (4) the control population did not contain malignant tumor patients. Studies were excluded if one of the following existed: (1) no control population; (2) duplicate of previous publication; and (3) insufficient information for data extraction.\nData extraction\nTwo authors (Qiliu Peng and Xue Qin) independently reviewed and extracted data from all eligible studies. Data extracted from eligible studies included the first author, year of publication, ethnicity, country of origin, genotyping method, source of control, matching criteria, breast cancer ascertainment, total numbers of cases and controls and genotype frequencies of cases and controls. Ethnic backgrounds were categorized as Caucasian, Asian, and Arab. When a study did not state the ethnic descendent or if it was impossible to separate participants according to such phenotype, the group reported was termed as \u201cmixed ethnicity\u201d. To ensure the accuracy of the information extracted, the two authors checked the data extraction results and reached consensus on all of the items. If different results generated, they would check the data again and have a discussion to come to an agreement. If these two authors could not reach a consensus, another author (Shan Li) was consulted to resolve the dispute and a final decision was made by the majority of the votes. Menopausal status was divided into premenopausal and postmenopausal and was additionally recorded for stratified analysis.\nQuality score evaluation\nThe quality of eligible studies was evaluated independently by two authors (Qiliu Peng and Yu Lu) according to a set of predefined criteria (Table\u00a01) based on the scale of Thakkinstian et al. [20]. The revised criteria cover the source of controls, representativeness of cases, ascertainment of breast cancer, total sample size, quality control of genotyping methods, and Hardy-Weinberg equilibrium (HWE) in the control population. Discrepancies were resolved by consensus. Scores ranged from 0 (lowest) to 10 (highest). Articles with scores equal to or higher than 7 were considered \u201chigh-quality\u201d studies, whereas those with scores less than 7 were considered \u201clow-quality\u201d studies.\nTable 1\nScale for quality assessment\nStatistical analysis\nThe strength of the association between NQO1 Pro187Ser polymorphism and breast cancer risk was assessed by odds ratios (ORs) with 95% confidence intervals (CIs). The significance of the pooled OR was determined by a Z test and the p value less than 0.05 was considered significant. The association of NQO1 Pro187Ser polymorphism with breast cancer risk was assessed using co-dominant model (Ser/Ser vs. Pro/Pro and Ser/Pro vs. Pro/Pro), recessive model (Ser/Ser vs. Ser/Pro\u2009+\u2009Pro/Pro), and dominant model (Ser/Ser\u2009+\u2009Ser/Pro vs. Pro/Pro).\nThe \u03c72 based Q test was used to assess the heterogeneity among studies [21,22]. If the result of the Q test was P\nQ\n\u2009<\u20090.1, indicating the presence of heterogeneity, a random-effects model (the DerSimonian and Laird method) was used to estimate the summary ORs [21]; otherwise, when the result of the Q test was P\nQ",
+          "cos_sim_score": 0.05830555409193039,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::4041044",
+          "title": "The NQO1 Pro187Ser polymorphism and breast cancer susceptibility: evidence from an updated meta-analysis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4041044/",
+          "text": "Figure 3\nFunnel plots for publication bias of NQO1 Pro187Ser polymorphism and breast cancer risk in the overall populations (dominant model Ser/Ser\u2009+\u2009Ser/Pro vs. Pro/Pro: P\u2009=\u20090.704).\nDiscussion\nPrevious studies investigating the associations between NQO1 Pro187Ser polymorphism and breast cancer presented inconsistent results, and most of those studies involved no more than a few hundred breast cancer cases, which is too few to assess any genetic effects reliably. Meta-analysis has been recognized as an important tool to more precisely define the effect of selected genetic polymorphisms on the risk for disease and to identify potential important sources of between-study heterogeneity [27-29]. Hence, we performed this meta-analysis including all available studies to provide the most comprehensive assessment of the associations between the NQO1 Pro187Ser polymorphism and breast cancer risk. Our results showed that the NQO1 is a candidate gene for breast cancer susceptibility. The NQO1 Pro187Ser polymorphism was associated with an increased breast cancer risk among Caucasians (Ser/Pro vs. Pro/Pro: OR\u2009=\u20091.145, 95% CI\u2009=\u20091.008\u20131.301, P\u2009=\u20090.038; Ser/Ser\u2009+\u2009Ser/Pro vs. Pro/Pro: OR\u2009=\u20091.177, 95% CI\u2009=\u20091.041\u20131.331, P\u2009=\u20090.009). Our result is consistent with the previous meta-analysis performed by Yuan et al. [17].\nGiven the biochemical properties of NQO1 in protecting cells from oxidative damage and tumor development, this result may be biologically plausible. NQO1 is a key enzyme which catalyzes the two-electron reduction of quinoid compounds into hydroquinones, which reduces and detoxifies quinines and thus protects cells against redox cycling and oxidative stress [30,31]. Previous study suggested that some variants, especially those in the promoter regions of genes, may affect either the expression or activity levels of enzymes and therefore may be mechanistically associated with cancer risk [32]. The NQO1 Pro187Ser polymorphism is a C-to-T transition in the NQO1 gene which leads to a proline to serine amino acid substitution at codon 187 in the protein [33,34]. The NQO1 Pro187Ser polymorphism has been found correlated with decreased enzymatic activity of NQO1 and may affect host\u2019s susceptibility to cancer by changing the enzymatic activity of NQO1 [33,34]. More importantly, the NQO1 Pro187Ser polymorphism has been shown associated with increased risk for many different types of cancers, including colorectal cancer [35], lung cancer [36], esophageal cancer [37], and hepatocellular carcinoma [38]. Our results add new evidence that the NQO1 Pro187Ser polymorphism contributes to cancer susceptibility.\nIn subgroup analysis stratified by ethnicity, the NQO1 Pro187Ser polymorphism presented a risk factor for breast cancer in Caucasian populations, but not in Asian and Arab subjects. The inconsistent data among the different ethnicities may indicate different effects of the NQO1 Pro187Ser polymorphism on breast risk in different ethnic genetic and environmental backgrounds. Studies reported that NQO1 enzyme not only detoxify carcinogenic compounds [6] but also bioactivate several kinds of procarcinogen [39]; thus, decreased activity of NQO1 enzyme may have dual effect on carcinogenesis. There may be some alternative ways in the Asian and Arab populations to detoxify carcinogenic compounds which can effectively compensate for the loss of NQO1 enzyme activity. Nevertheless, owing to the limited number of relevant studies among Asian and Arab populations included in the meta-analysis, the observed negative association between NQO1 Pro187Ser polymorphism and breast cancer risk in Asians and Arabs is likely to be caused by chance because study with small sample sizes may have insufficient statistical power to detect a slight effect or may have generated a fluctuated risk estimate. Currently there are only 3 studies in Asian population and 1 in Arab population for NQO1 Pro187Ser polymorphism and breast cancer risk. Therefore, the negative results of the Asain and Arab populations should be interpreted with caution.",
+          "cos_sim_score": 0.045764654874801636,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

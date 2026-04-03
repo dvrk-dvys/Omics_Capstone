@@ -1,0 +1,153 @@
+{
+  "rf_rank": 42,
+  "probe_id": "11725165_a_at",
+  "gene_symbol": "C7orf31",
+  "score": 0.55,
+  "rf_n_nodes": 6,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.7359,
+  "log_fc": 0.7359,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11725165_a_at",
+  "max_score": 0.55,
+  "mean_abs_fold_change": 0.7359,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:43:06",
+  "interpretation": "C7orf31, also known as sperm-associated microtubule inner protein 4 (SPMIP4), is involved in the structural integrity of microtubules, particularly in sperm flagella. While its primary function relates to reproductive biology, there is no direct evidence linking C7orf31 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) or its mechanisms. The retrieved evidence primarily associates C7orf31 with conditions such as obesity and male infertility, but these connections do not provide a clear pathway to SONFH. Therefore, the evidence supporting C7orf31 as a biomarker for SONFH is weak, leading to the conclusion that it is unlikely to serve as a clinically relevant early-detection biomarker for this condition.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "C7orf31 does not have a clear connection to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "SPMIP4 (Q8N865). https://www.uniprot.org/uniprotkb/Q8N865",
+    "C7orf31 \u2014 SPMIP4. https://platform.opentargets.org/target/ENSG00000153790",
+    "C7orf31 \u2194 obesity. https://platform.opentargets.org/target/ENSG00000153790/associations",
+    "C7orf31 \u2194 bile duct disorder. https://platform.opentargets.org/target/ENSG00000153790/associations",
+    "C7orf31 \u2194 stricture. https://platform.opentargets.org/target/ENSG00000153790/associations",
+    "C7orf31 \u2194 male infertility. https://platform.opentargets.org/target/ENSG00000153790/associations",
+    "SPMIP4 \u2014 sperm microtubule inner protein 4 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "VEGFA \u2014 vascular endothelial growth factor A (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "LINGO1 \u2014 leucine rich repeat and Ig domain containing 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4068,
+    "completion_tokens": 281,
+    "total_tokens": 4349,
+    "estimated_cost_usd": 0.000779
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q8N865",
+          "title": "SPMIP4 (Q8N865)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8N865",
+          "text": "Protein: Sperm-associated microtubule inner protein 4\nFunction: Microtubule inner protein (MIP) part of the dynein-decorated doublet microtubules (DMTs) in flagellum axoneme. May serve to reinforce and thus stabilize the microtubule structure in the sperm flagella",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000153790::function",
+          "title": "C7orf31 \u2014 SPMIP4",
+          "url": "https://platform.opentargets.org/target/ENSG00000153790",
+          "text": "Function: Microtubule inner protein (MIP) part of the dynein-decorated doublet microtubules (DMTs) in flagellum axoneme. May serve to reinforce and thus stabilize the microtubule structure in the sperm flagella. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000153790::EFO_0001073",
+          "title": "C7orf31 \u2194 obesity",
+          "url": "https://platform.opentargets.org/target/ENSG00000153790/associations",
+          "text": "Disease: obesity\nDescription: An eating-related disorder in which excess body fat has accumulated to such an extent that health may be negatively affected. It is commonly defined as a body mass index (weight divided by height squared) of 30 kg/m2 or higher.\nAssociation score: 0.295",
+          "cos_sim_score": 0.29505862437592045,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000153790::MONDO_0002887",
+          "title": "C7orf31 \u2194 bile duct disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000153790/associations",
+          "text": "Disease: bile duct disorder\nDescription: A disease involving the bile duct.\nAssociation score: 0.292",
+          "cos_sim_score": 0.29204294657213153,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000153790::EFO_0006818",
+          "title": "C7orf31 \u2194 stricture",
+          "url": "https://platform.opentargets.org/target/ENSG00000153790/associations",
+          "text": "Disease: stricture\nDescription: abnormal narrowing in a blood vessel or other tubular organ or structure\nAssociation score: 0.290",
+          "cos_sim_score": 0.28985906769534225,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000153790::EFO_0004248",
+          "title": "C7orf31 \u2194 male infertility",
+          "url": "https://platform.opentargets.org/target/ENSG00000153790/associations",
+          "text": "Disease: male infertility\nDescription: The inability of the male to effect fertilization of an ovum after a specified period of unprotected intercourse. Male sterility is permanent infertility.\nAssociation score: 0.288",
+          "cos_sim_score": 0.2882015199731367,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "SPMIP4 \u2014 sperm microtubule inner protein 4",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SPMIP4\nGene name: sperm microtubule inner protein 4\nAliases / synonyms: C7orf31\nOrganism: Homo sapiens\nGene summary: Located in centrosome. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SPMIP4",
+          "aliases": "C7orf31",
+          "gene_description": "sperm microtubule inner protein 4"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "VEGFA \u2014 vascular endothelial growth factor A",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: VEGFA\nGene name: vascular endothelial growth factor A\nAliases / synonyms: L-VEGF, MVCD1, VEGF, VPF\nOrganism: Homo sapiens\nGene summary: This gene is a member of the PDGF/VEGF growth factor family. It encodes a heparin-binding protein, which exists as a disulfide-linked homodimer. This growth factor induces proliferation and migration of vascular endothelial cells, and is essential for both physiological and pathological angiogenesis. Disruption of this gene in mice resulted in abnormal embryonic blood vessel formation. This gene is upregulated in many known tumors and its expression is correlated with tumor stage and progression. Elevated levels of this protein are found in patients with POEMS syndrome, also known as Crow-Fukase syndrome. Allelic variants of this gene have been associated with microvascular complications of diabetes 1 (MVCD1) and atherosclerosis. Alternatively spliced transcript variants encoding different...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "VEGFA",
+          "aliases": "L-VEGF, MVCD1, VEGF, VPF",
+          "gene_description": "vascular endothelial growth factor A"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "LINGO1 \u2014 leucine rich repeat and Ig domain containing 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: LINGO1\nGene name: leucine rich repeat and Ig domain containing 1\nAliases / synonyms: LERN1, LRRN6A, MRT64, UNQ201\nOrganism: Homo sapiens\nGene summary: Predicted to enable epidermal growth factor receptor binding activity. Predicted to act upstream of or within negative regulation of oligodendrocyte differentiation; negative regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction; and neuron development. Predicted to be located in plasma membrane. Predicted to be active in several cellular components, including extracellular space; glutamatergic synapse; and presynapse. Implicated in autosomal recessive intellectual developmental disorder 64 and glaucoma. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "LINGO1",
+          "aliases": "LERN1, LRRN6A, MRT64, UNQ201",
+          "gene_description": "leucine rich repeat and Ig domain containing 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

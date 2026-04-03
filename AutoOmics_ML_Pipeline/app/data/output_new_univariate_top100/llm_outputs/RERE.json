@@ -1,0 +1,218 @@
+{
+  "probe_id": "11757808_s_at",
+  "gene_symbol": "RERE",
+  "score": 1.0,
+  "SD_TestAUC": 0.0202860206483394,
+  "abs_fold_change": 1.1675,
+  "probe_count": 1,
+  "probe_ids": "11757808_s_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 1.1675,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T22:45:09",
+  "interpretation": "RERE encodes a protein that functions as a transcriptional repressor and is involved in regulating cell survival. Its overexpression can lead to apoptosis through the recruitment of BAX and activation of caspase-3, which may contribute to bone cell death. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the mechanisms of glucocorticoid-induced apoptosis in bone cells are critical, as glucocorticoids like dexamethasone are known to increase the risk of osteonecrosis. However, the evidence linking RERE directly to SONFH is limited, primarily suggesting a role in apoptosis rather than a direct association with SONFH. Therefore, while RERE may play a role in the cellular processes affected by glucocorticoids, its potential as a biomarker for early detection of SONFH remains weak and speculative.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "RERE may influence bone cell survival mechanisms relevant to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "RERE (Q9P2R6). https://www.uniprot.org/uniprotkb/Q9P2R6",
+    "RERE (Q9P2R6-2). https://www.uniprot.org/uniprotkb/Q9P2R6-2",
+    "RERE \u2014 RERE. https://platform.opentargets.org/target/ENSG00000142599",
+    "RERE \u2194 neurodevelopmental disorder with or without anomalies of the brain, eye, or heart. https://platform.opentargets.org/target/ENSG00000142599/associations",
+    "RERE \u2194 genetic disorder. https://platform.opentargets.org/target/ENSG00000142599/associations",
+    "RERE \u2194 asthma. https://platform.opentargets.org/target/ENSG00000142599/associations",
+    "RERE \u2194 dermatophytosis. https://platform.opentargets.org/target/ENSG00000142599/associations",
+    "RERE \u2014 arginine-glutamic acid dipeptide repeats (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "AR \u2014 androgen receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "RERE-AS1 \u2014 RERE antisense RNA 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EP300 \u2014 EP300 lysine acetyltransferase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HDAC1 \u2014 histone deacetylase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Genetics of pleiotropic effects of dexamethasone (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC5523978/",
+    "From bone marrow mesenchymal stem cells to diseases: the crucial role of m6A methylation in orthopedics (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12057228/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9087,
+    "completion_tokens": 313,
+    "total_tokens": 9400,
+    "estimated_cost_usd": 0.001551
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9P2R6",
+          "title": "RERE (Q9P2R6)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9P2R6",
+          "text": "Protein: Arginine-glutamic acid dipeptide repeats protein\nFunction: Plays a role as a transcriptional repressor during development. May play a role in the control of cell survival. Overexpression of RERE recruits BAX to the nucleus particularly to POD and triggers caspase-3 activation, leading to cell death",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9P2R6-2",
+          "title": "RERE (Q9P2R6-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9P2R6-2",
+          "text": "Protein: Isoform 2 of Arginine-glutamic acid dipeptide repeats protein",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000142599::function",
+          "title": "RERE \u2014 RERE",
+          "url": "https://platform.opentargets.org/target/ENSG00000142599",
+          "text": "Function: Plays a role as a transcriptional repressor during development. May play a role in the control of cell survival. Overexpression of RERE recruits BAX to the nucleus particularly to POD and triggers caspase-3 activation, leading to cell death. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000142599::EFO_0009645",
+          "title": "RERE \u2194 neurodevelopmental disorder with or without anomalies of the brain, eye, or heart",
+          "url": "https://platform.opentargets.org/target/ENSG00000142599/associations",
+          "text": "Disease: neurodevelopmental disorder with or without anomalies of the brain, eye, or heart\nDescription: Neurodevelopmental disorder with or without anomalies of the brain, eye, or heart is an autosomal dominant syndrome characterized by onset in infancy of developmental delay, intellectual disability, and behavioral disorders, such as autism spectrum disorders. About half of patients have additional abnormalities, most commonly involving the eye, heart, and genitourinary system. The phenotype is reminiscent of that observed in patients with 1p36 deletion syndrome (607872); RERE is located in the proximal 1p36 critical region (summary by Fregeau et al., 2016).\nAssociation score: 0.774",
+          "cos_sim_score": 0.7742527042446898,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000142599::EFO_0000508",
+          "title": "RERE \u2194 genetic disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000142599/associations",
+          "text": "Disease: genetic disorder\nDescription: Genetic diseases are diseases in which inherited genes predispose to increased risk. The genetic disorders associated with cancer often result from an alteration or mutation in a single gene. The diseases range from rare dominant cancer family syndrome to familial tendencies in which low-penetrance genes may interact with other genes or environmental factors to induce cancer. Research may involve clinical, epidemiologic, and laboratory studies of persons, families, and populations at high risk of these disorders.\nAssociation score: 0.528",
+          "cos_sim_score": 0.5276485792641867,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000142599::MONDO_0004979",
+          "title": "RERE \u2194 asthma",
+          "url": "https://platform.opentargets.org/target/ENSG00000142599/associations",
+          "text": "Disease: asthma\nDescription: A bronchial disease that is characterized by chronic inflammation and narrowing of the airways, which is caused by a combination of environmental and genetic factors resulting in recurring periods of wheezing (a whistling sound while breathing), chest tightness, shortness of breath, mucus production and coughing. The symptoms appear due to a variety of triggers such as allergens, irritants, respiratory infections, weather changes, exercise, stress, reflux disease, medications, foods and emotional anxiety.\nAssociation score: 0.405",
+          "cos_sim_score": 0.4051150056534913,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000142599::MONDO_0004678",
+          "title": "RERE \u2194 dermatophytosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000142599/associations",
+          "text": "Disease: dermatophytosis\nDescription: A common fungal infection of the stratum corneum of the skin, hair, or nails by a dermatophyte. It is characterized by itching, inflammation, redness of the skin, small papular vesicles, central clearing, fissures, scaling, and/or hair loss in the affected area.\nAssociation score: 0.396",
+          "cos_sim_score": 0.3956758213832583,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "RERE \u2014 arginine-glutamic acid dipeptide repeats",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RERE\nGene name: arginine-glutamic acid dipeptide repeats\nAliases / synonyms: ARG, ARP, ATN1L, DNB1, NEDBEH\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the atrophin family of arginine-glutamic acid (RE) dipeptide repeat-containing proteins. The encoded protein co-localizes with a transcription factor in the nucleus, and its overexpression triggers apoptosis. A similar protein in mouse associates with histone deacetylase and is thought to function as a transcriptional co-repressor during embryonic development. Multiple transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RERE",
+          "aliases": "ARG, ARP, ATN1L, DNB1, NEDBEH",
+          "gene_description": "arginine-glutamic acid dipeptide repeats"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "AR \u2014 androgen receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AR\nGene name: androgen receptor\nAliases / synonyms: AIS, AR8, DHTR, HUMARA, HYSP1, KD, NR3C4, SBMA, SMAX1, TFM\nOrganism: Homo sapiens\nGene summary: The androgen receptor gene is more than 90 kb long and codes for a protein that has 3 major functional domains: the N-terminal domain, DNA-binding domain, and androgen-binding domain. The protein functions as a steroid-hormone activated transcription factor. Upon binding the hormone ligand, the receptor dissociates from accessory proteins, translocates into the nucleus, dimerizes, and then stimulates transcription of androgen responsive genes. This gene contains 2 polymorphic trinucleotide repeat segments that encode polyglutamine and polyglycine tracts in the N-terminal transactivation domain of its protein. Expansion of the polyglutamine tract from the normal 9-34 repeats to the pathogenic 38-62 repeats causes spinal bulbar muscular atrophy (SBMA, also known as Kennedy's disease). Mutati...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AR",
+          "aliases": "AIS, AR8, DHTR, HUMARA, HYSP1, KD, NR3C4, SBMA, SMAX1, TFM",
+          "gene_description": "androgen receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "RERE-AS1 \u2014 RERE antisense RNA 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RERE-AS1\nGene name: RERE antisense RNA 1\nOrganism: Homo sapiens",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RERE-AS1",
+          "aliases": "",
+          "gene_description": "RERE antisense RNA 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EP300 \u2014 EP300 lysine acetyltransferase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EP300\nGene name: EP300 lysine acetyltransferase\nAliases / synonyms: KAT3B, MKHK2, RSTS2, p300\nOrganism: Homo sapiens\nGene summary: This gene encodes the adenovirus E1A-associated cellular p300 transcriptional co-activator protein. It functions as histone acetyltransferase that regulates transcription via chromatin remodeling and is important in the processes of cell proliferation and differentiation. It mediates cAMP-gene regulation by binding specifically to phosphorylated CREB protein. This gene has also been identified as a co-activator of HIF1A (hypoxia-inducible factor 1 alpha), and thus plays a role in the stimulation of hypoxia-induced genes such as VEGF. Defects in this gene are a cause of Rubinstein-Taybi syndrome and may also play a role in epithelial cancer. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EP300",
+          "aliases": "KAT3B, MKHK2, RSTS2, p300",
+          "gene_description": "EP300 lysine acetyltransferase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "HDAC1 \u2014 histone deacetylase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HDAC1\nGene name: histone deacetylase 1\nAliases / synonyms: GON-10, HD1, KDAC1, RPD3, RPD3L1\nOrganism: Homo sapiens\nGene summary: Histone acetylation and deacetylation, catalyzed by multisubunit complexes, play a key role in the regulation of eukaryotic gene expression. The protein encoded by this gene belongs to the histone deacetylase/acuc/apha family and is a component of the histone deacetylase complex. It also interacts with retinoblastoma tumor-suppressor protein and this complex is a key element in the control of cell proliferation and differentiation. Together with metastasis-associated protein-2, it deacetylates p53 and modulates its effect on cell growth and apoptosis. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HDAC1",
+          "aliases": "GON-10, HD1, KDAC1, RPD3, RPD3L1",
+          "gene_description": "histone deacetylase 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::5523978",
+          "title": "Genetics of pleiotropic effects of dexamethasone",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5523978/",
+          "text": "Introduction\nGlucocorticoids have been used for decades in the treatment of many diseases, including acute lymphoblastic leukemia (ALL). Dexamethasone has become the preferred glucocorticoid over prednisone due to its greater antileukemic efficacy [1\u20133]. However, at current doses, more toxicity is observed in ALL patients treated with dexamethasone than prednisone, including infections [3], osteonecrosis [4], myopathy [5, 6], and central nervous system (CNS) toxicity [7].\nOsteonecrosis is one of the most common and serious toxicities associated with ALL therapy, with frequencies ranging from 1 \u2013 25% depending on the clinical trial [4, 8\u201314]. Osteonecrosis is defined as bone death resulting from poor blood supply [15]. Risk of osteonecrosis has been associated with the intensity of the glucocorticoid exposure, type of glucocorticoid (dexamethasone > prednisone) [4], age, sex [16], race [14], asparaginase antibodies [17], and genetic polymorphisms [8, 18\u201321]. Additionally, our group demonstrated that the top single nucleotide polymorphisms (SNPs) associated with osteonecrosis were also associated with other dexamethasone-related phenotypes, including low serum albumin and high cholesterol levels,[8] and lack of allergy to asparaginase [21]. These findings suggest that a comprehensive analysis of genetic predisposition to pleiotropic glucocorticoid-induced adverse effects might improve the power to identify genetic variants associated with glucocorticoid-induced osteonecrosis and other adverse effects. Moreover, association of the same variants with multiple phenotypes, e.g. osteonecrosis in addition to other phenotypes, might suggest common pathways that underlie more than one glucocorticoid-induced phenotype.\nHerein we have implemented a method to use prior pharmacologic knowledge to perform an integrated analysis of SNPs associated with pleiotropic glucocorticoid-induced biological and clinical endpoints [22\u201324], with particular emphasis on the clinically important phenotypes of osteonecrosis and thrombosis, both of which can necessitate substantial clinical interventions [25\u201329]. We compared the results of the pleiotropic analysis with those obtained with a single-phenotype genome-wide association study (GWAS) approach.\nMaterials & Methods\nPatients\nInformed consent was obtained from the parents or the patient, and assent from the patient, where appropriate, and the study was approved by the Institutional Review Board. Children with newly diagnosed ALL (n = 498) were enrolled on a frontline protocol, St. Jude Total XV (ClinicalTrials.gov ID NCT00137111) [29] (Supplemental Digital Content Figure 1). This cohort has been previously reported in single phenotype association studies [8, 30].\nPhenotypes\nPatients were prospectively screened for osteonecrosis by MRI, as described previously [8]. Toxicities were prospectively graded using the National Cancer Institute Common Terminology Criteria for Adverse Events, Version 3.0 (Supplemental Digital Content Text, Supplemental Digital Content Table 1). We evaluated all reported adverse events and identified those that were likely at least partly due to glucocorticoids; these included osteonecrosis, CNS toxicity (not related to high-dose or intrathecal methotrexate), hyperglycemia, hypokalemia, and thrombosis. Because glucocorticoids are known to cause weight gain and decreased growth trajectory, [31\u201334] we used measures of height and weight (at least monthly per patient) to estimate body mass index (BMI) and the decrease in growth trajectory. In addition, each patient had serial blood samples collected on day 1 of week 7 and week 8 (after 7 continuous days of dexamethasone) of the continuation phase, for assessment of plasma dexamethasone pharmacokinetics, serum lipids, albumin and cortisol levels (See Supplemental Digital Content Text for details) [8, 17, 30]. We have previously shown an association of dexamethasone and asparaginase exposure on osteonecrosis [8, 17, 30], and thus we also analyzed the AUC of antibodies against Elspar (asparaginase) during the first 35 weeks of therapy. There were no other pharmacologic measures routinely available for these patients that were related to glucocorticoids or these likely glucocorticoid-induced adverse effects.",
+          "cos_sim_score": 0.4998539686203003,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12057228",
+          "title": "From bone marrow mesenchymal stem cells to diseases: the crucial role of m6A methylation in orthopedics",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12057228/",
+          "text": "Introduction\nBone repair is a complex biological process that involves interactions among multiple cell types, signaling molecules, and matrices [1]. Central to this process are bone marrow-derived mesenchymal stem cells (BMSCs) that play a pivotal role owing to their multidirectional differentiation potential and their ease of amplification and collection, making them a focal point in orthopedic disease research [2, 3]. Enhancement of bone formation and bone mass is achieved by promoting the osteogenic and chondrogenic differentiation of BMSCs, while concurrently inhibiting their adipogenic differentiation [4\u20136]. Studies indicate that in typical microenvironments, BMSCs undergo osteogenic differentiation and complete the bone regeneration process, effectively repairing bone injuries. However, in abnormal bone metabolism microenvironments such as OP, bone tumors, and nonunion, the osteogenic differentiation of BMSCs may be significantly inhibited, complicating the repair of bone injuries [7, 8]. At the molecular level, multiple signaling pathways crucial to the lineage differentiation of BMSCs may be disrupted in the context of disease [9, 10]. Consequently, elucidating the critical molecular mechanisms influencing BMSCs differentiation and their function in pathological microenvironments holds significant potential for advancing the treatment of orthopedic diseases.\nN6-methyladenosine (m6A) methylation\u2014the most prevalent RNA modification in eukaryotes\u2014regulates gene expression via multiple pathways including splicing, nuclear export, stability, transcription, and translation, thereby facilitating vital biological functions [11\u201314]. The dynamics of m6A modification are controlled by a reversible enzymatic network comprising methyltransferases (writers), demethylases (erasers), and m6A-binding proteins (readers) [15]. In recent years, the advancement of high-throughput sequencing technologies has facilitated deeper investigations into the m6A methylation intricacies [16]. Numerous studies have indicated that m6A methylation is crucial for the regulation of osteogenic differentiation of BMSCs. It directly influences mRNA regulation related to BMSC differentiation, such as Runx2 and BMP2, or activates associated signaling pathways, thereby influencing osteogenesis [17\u201319]. Indirectly, it affects non-coding RNAs (ncRNAs), which include microRNAs (miRNAs), long non-coding RNAs (lncRNAs), and circular RNAs (circRNAs), crucial in biological functions [20, 21]. These ncRNAs modulate BMSCs lineage differentiation by targeting transcription factors, signaling molecules, or other ncRNAs [22]. Aberrant m6A methylation is implicated in various orthopedic-related disorders such as OP, nonunion, and bone tumors [23, 24].\nIn this review, the principal enzymes that regulate m6A methylation modification and their significant biological functions identified to date are summarized. The specific molecular mechanisms through which m6A methylation influences BMSCs differentiation and bone repair by targeting mRNAs and ncRNAs are subsequently discussed. Additionally, the molecular biological roles of m6A modification in various orthopedic diseases are outlined (Fig.\u00a01). This review offers a theoretical foundation for the intricate mechanisms of BMSCs in promoting osteogenesis or bone repair and provides a molecular-level focal point for treating various orthopedic diseases.\nFig. 1m6A methylation modification in the regulation of BMSC lineage differentiation, bone repair, heterotopic ossification, degenerative bone disease, RA, and bone tumors\nFig. 1\nm6A methylation modification in the regulation of BMSC lineage differentiation, bone repair, heterotopic ossification, degenerative bone disease, RA, and bone tumors\nEnzymes and functions associated with m6A methylation\nm6A methylation modification predominantly occurs within the 3\u2019 untranslated regions (3\u2019 UTRs), long introns, and near-specific coding region sequences, particularly in the DRACH sequences (D denotes A, G or U; R denotes A or G; and H denotes A, U, or C) [25, 26]. Following the discovery of the first m6A methylation transferase\u2014methyltransferase-like 3 (METTL3)\u2014subsequent research has progressively revealed several associated enzymes including \u201cwriters,\u201d \u201cerasers,\u201d and \u201creaders.\u201d These enzymes work in both temporal and spatial coordination to dynamically and reversibly regulate m6A methylation of RNAs, thereby playing a crucial role in a variety of biological processes [27] (Fig.\u00a02).",
+          "cos_sim_score": 0.4020339250564575,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12057228",
+          "title": "From bone marrow mesenchymal stem cells to diseases: the crucial role of m6A methylation in orthopedics",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12057228/",
+          "text": "In addition to directly regulating the activity of osteoblasts and osteoclasts, m6A methylation affects the progression of OP through alternative pathways. For example, m6A modification can enhance the adipogenic differentiation of BMSCs, potentially inhibiting bone formation [188, 189]. Research has also shown that elevated prednisone levels during pregnancy can increase m6A modification, activate mitochondrial autophagy, and decrease FNDC5/irisin expression in skeletal muscle. This cascade of events may lead to increased bone fragility in adult offspring. S-adenosylhomocysteine (SAH), an inhibitor of m6A activity, has the potential to reduce m6A modification in the transcriptome, thereby mitigating these processes and potentially reversing adverse skeletal development in fetuses [190].\nIntervertebral disc degeneration\nIntervertebral disc degeneration is a multifaceted pathological condition characterized by the degradation of structures such as the NP, annulus fibrosus, and cartilage endplate. Recent advances in high-throughput sequencing and bioinformatics have identified alterations in m6A modification patterns that occur during IVDD progression [191]. These modifications significantly affect the regulation of disc cell proliferation, apoptosis, and ECM disorders. For instance, with respect to the effect on nucleus pulposus cells (NPCs), m6A-mediated methylation by abnormally elevated METTL3 enhances the stability and expression of SIAH1 mRNA, which targets and ubiquitinates XIAP, promoting aging and apoptosis [192]. Similarly, an atypical increase in METTL14 levels enhances the stability of NLRP3 mRNA via an IGF2BP2-mediated mechanism, elevating IL-1\u03b2 and IL-18 levels and hastening the apoptosis of NPCs [193]. METTL14-mediated elevation of DIXDC1 levels also speeds up NPC degeneration and aging by activating the canonical Wnt pathway [194]. Furthermore, oxidative stress escalates apoptosis in NPCs by reducing MAT2A expression via METTL16-dependent m6A modification [195]. ALKBH5 and YTHDF2 increase FIP200 mRNA and DNMT3B mRNA expression through m6A-dependent modification. Research has shown that although ALKBH5 expression was elevated in IVDD, it still exhibited a dual nature. FIP200 promotes autophagic flux, thus reducing apoptosis in compressed NPCs, while DNMT3B accelerates degeneration by inhibiting E4F1 expression [196, 197]. Moreover, m6A modification alters the expression of ncRNAs affecting NPC activity. For instance, TNF-\u03b1 enhances the expression of METTL3, which subsequently enhances miR-143-3p maturation through its methyltransferase activity. MiR-143-3p downregulates SOX5 transcription, accelerating degeneration in NPCs [198]. Similarly, METTL14 works together with DGCR8 to mature miR-34a-5p. This miRNA markedly reduces SIRT1 mRNA translation, diminishing its expression, and accelerating the aging of NPCs [199]. The degradation of lncRNA NORAD, mediated by unusually high levels of WTAP and YTHDF2, reduces the sequestration of PUMILIO proteins, thereby intensifying PUM1/2 activity, which suppresses E2F3 mRNA expression and accelerates aging in NPCs [200]. Additionally, CircGPATCH2L eliminates phosphorylation of TRIM28, which prevents p53 degradation, leading to DNA damage and increased apoptosis in NPCs. Concurrently, the YTHDF2-RPL10-RNase P/MRP complex targets and degrades m6A-methylated circGPATCH2L, slowing IVDD progression [201]. Augmented levels of m6A methylation can contribute to the degeneration of cartilaginous endplates. For example, METTL3 facilitates the methylation of SOX9 mRNA, which destabilizes SOX9 mRNA and diminishes the expression of type II collagen \u03b11 chain, reducing the tensile strength of endplate chondrocytes and accelerating disc degeneration [202]. Moreover, METTL3 aids in the maturation of miR-126-5p through m6A methylation. MiR-126-5p inhibits PIK3R2 expression, disrupting the PI3K/AKT signaling pathway and further promoting degeneration in endplate chondrocytes [154] (Table\u00a05).\nRheumatoid arthritis",
+          "cos_sim_score": 0.37816351652145386,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12057228",
+          "title": "From bone marrow mesenchymal stem cells to diseases: the crucial role of m6A methylation in orthopedics",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12057228/",
+          "text": "Osteoporosis\nOsteoporosis is characterized by reduced bone density, impaired bone microarchitecture, and increased fracture risk. These pathological changes are closely associated with increased activity and differentiation of osteoclasts, as well as decreased activity and differentiation of osteoblasts, regulated by bone metabolism [173]. In this intricate regulatory landscape, m6A methylation modification plays a pivotal role by controlling the expression of critical genes involved in bone metabolism, thereby influencing cellular functionality and the progression of OP. For instance, Runx2, a vital transcription factor in bone development, boosts osteoblast differentiation but is reduced in OP. m6A-related proteases can reverse this process by increasing Runx2 expression [174]. IGF2BP1 enhances the stability and expression of Runx2 mRNA by recognizing m6A sites catalyzed by METTL3 [175, 176]. YTHDF1, enhances the translation of ZNF839 mRNA in an m6A-dependent manner, wherein it interacts with Runx2 and further increases Runx2 transcriptional activity, thereby boosting the osteogenic differentiation of BMSCs [177]. Similarly, FTO reduces m6A methylation on RBM4 mRNA, enhancing RBM4 expression, which promotes the inclusion of Runx2 exon 5 to boost osteogenic differentiation [178]. In addition to Runx2, m6A modification also regulates the expression of other osteogenesis-related mRNAs to influence OP. Especially, METTL3 stabilizes ACLY and SLC25A1 mRNAs through m6A-IGF2BP2/3 interactions, which enhances their expression and fosters osteogenic differentiation [179]. Conversely, disproportionate elevation of METTL3 accelerates OP progression and reduces osteoblast function in diabetes-associated OP by activating the ASK1-p38 pathway [180]. FTO reduces its stability in a YTHDF1-dependent manner by demethylating the m6A sites on the 3\u2019-UTR of PPARG mRNA, thereby enhancing osteogenesis [181]. FTO also enhances the stability of Hspa1a mRNA (encoding Hsp70) and in turn inhibits the NF-\u03baB pathway, protecting osteoblasts from genotoxicity and cell death while maintaining bone mass [182]. In addition, the enhanced effect of osteoclasts also significantly promotes the progression of OP. In postmenopausal OP, follicle-stimulating hormone (FSH)-induced CREB phosphorylation upregulates METTL3, enhancing CTSK mRNA stability and translation and increasing osteoclast migration [183]. Therapeutic agents such as zoledronic acid increase METTL14 levels, which destabilizes NFATc1 mRNA in a YTHDF2-dependent manner and inhibits osteoclast differentiation [184]. METTL14 also activates the Wnt/\u03b2-catenin pathway by upregulating TCF1 and SIRT1 and reducing osteoclast activity, thus slowing OP progression [185, 186]. Moreover, FTO may prevent diabetes-related bone loss by inhibiting TLR4-driven osteoclast differentiation [187] (Table\u00a05).",
+          "cos_sim_score": 0.3718043267726898,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12057228",
+          "title": "From bone marrow mesenchymal stem cells to diseases: the crucial role of m6A methylation in orthopedics",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12057228/",
+          "text": "Indirectly regulating osteogenesis in BMSCs via effect on osteoclast function\nOsteoclasts originate from the monocyte/macrophage lineage of hematopoietic stem cells. Regulating osteoclast activity can alter the equilibrium between bone resorption and formation. For instance, inhibiting excessive osteoclast activity prevents OP by fostering an environment conducive to osteoblast activity and new bone formation. Moreover, osteoclasts indirectly influence the behavior of BMSCs by secreting pro-inflammatory and growth factors such as PDGF-B, that promote their differentiation into osteoblasts [132]. METTL3, aided by YTHDF2, diminishes both the stability and expression of the cell fusion-specific gene Atp6v0d2 mRNA. Concurrently, the methylation activity of METTL3 decreases nuclear retention of Traf6T mRNA and its transcription products, thereby speeding up the activation of the MAPK, NF-kB, and PI3K-AKT signaling pathways. These mechanisms collectively intensify osteoclast differentiation and function, potentially leading to bone homeostasis disorders and impeding osteogenesis [133]. Additionally, low expression of METTL3 enhances the stability of Nos2 mRNA through a YTHDF1-dependent mechanism, exacerbating iNOS/NO-mediated mitochondrial dysfunction that inhibits osteoclast differentiation [134]. METTL3 enhances osteoclast formation by boosting m6A methylation and the post-transcriptional upregulation of CHI3L1 [135]. Both METTL3 and ALKBH5 modulate RNA-protein interactions through m6A-dependent RNA structural remodeling [71]. Research has shown that Circ_0008542 disrupts miR-185-5p\u2019s inhibition of Tnfrsf11a (RANK) mRNA through its sponging action, thereby amplifying osteoclast differentiation. METTL3 can modify the spatial structure of circ_0008542 through the \u201cm6A switch\u201d mechanism to increase its sponging effect, while ALKBH5 counteracts this modification [136]. METTL14, with the support of Hu antigen R (HuR), stabilizes GPX4 mRNA post-transcriptionally through m6A modification, inhibiting RANKL-induced osteoclast differentiation [137].\nIn addition to writers, FTO substantially impeded osteoclast differentiation during bone regeneration, thus improving the efficiency of this process [138]. The demethylase activity of FTO enhances the phosphorylation and nuclear translocation of NF-\u03baB p65 protein, increasing the expression of downstream targets such as c-FOS and NFATc1, which are pivotal in promoting osteoclast differentiation [139]. Furthermore, FTO augments the stability and expression of CCNA2 and CDK2 mRNA, key S-phase proteins in osteoclast precursors, through a YTHDF2-dependent mechanism. This action not only facilitates their proliferation and differentiation but also diminishes apoptosis [140]. Regarding reader proteins, YTHDF1 heightens the activation of ER stress-related pathways such as PERK, IRE1\u03b1, and ATF6 and elevates the stability of Tnfrsf11a mRNA. Consequently, this stability fosters enhanced phosphorylation of crucial proteins in the NF-\u03baB, MAPK, and PI3K-AKT pathways, thereby promoting osteoclast differentiation [141]. In contrast, YTHDF2 obstructs osteoclast formation through the NF-\u03baB and MAPK pathways [142]. Additionally, YTHDC1 collaborates with HuR to increase the stability and transcription of PTPN6 mRNA by identifying m6A sites, which in turn inhibits osteoclast differentiation [143] (Table\u00a03).",
+          "cos_sim_score": 0.36974209547042847,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

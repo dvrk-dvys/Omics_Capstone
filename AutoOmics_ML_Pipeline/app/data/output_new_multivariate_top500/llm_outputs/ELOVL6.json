@@ -1,0 +1,251 @@
+{
+  "probe_id": "11743451_s_at",
+  "gene_symbol": "ELOVL6",
+  "rf_importance": 0.0113,
+  "selection_freq": 1.0,
+  "abs_fold_change": 1.4919190333333336,
+  "score": 0.412,
+  "probe_count": 2,
+  "probe_ids": "11743451_s_at | 11739910_a_at",
+  "max_score": 0.412,
+  "mean_abs_fold_change": 1.5176,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T00:00:55",
+  "interpretation": "ELOVL6 encodes a fatty acid elongase that plays a crucial role in the elongation of long-chain fatty acids, which are essential for various biological processes, including membrane lipid synthesis. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), ELOVL6 has been identified as a candidate biomarker associated with the syndrome of phlegm-stasis obstructing collaterals, showing significantly lower expression levels in SONFH patients compared to non-SONFH controls. This suggests that ELOVL6 may be involved in the pathological processes underlying SONFH, particularly in lipid metabolism and inflammatory responses. The evidence supporting its role as a biomarker is derived from transcriptomic analyses and qPCR studies that demonstrate its differential expression in SONFH patients, indicating its potential utility for early diagnosis. Overall, ELOVL6 shows promise as a clinically relevant biomarker for SONFH, particularly in identifying patients at risk for disease progression.",
+  "evidence_relation": "direct",
+  "evidence_tier": "Tier 1",
+  "evidence_confidence": "high",
+  "biomarker_potential": "strong",
+  "relevance_summary": "ELOVL6 is a candidate biomarker for early detection of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) due to its significant differential expression in affected patients.",
+  "citations": [
+    "ELOVL6 (Q9H5J4). https://www.uniprot.org/uniprotkb/Q9H5J4",
+    "ELOVL6 \u2014 ELOVL6. https://platform.opentargets.org/target/ENSG00000170522",
+    "ELOVL6 \u2194 hypertension. https://platform.opentargets.org/target/ENSG00000170522/associations",
+    "ELOVL6 \u2194 atrial fibrillation. https://platform.opentargets.org/target/ENSG00000170522/associations",
+    "ELOVL6 \u2194 Increased blood pressure. https://platform.opentargets.org/target/ENSG00000170522/associations",
+    "ELOVL6 \u2194 synovium disorder. https://platform.opentargets.org/target/ENSG00000170522/associations",
+    "[Transcriptome data mining combined with clinical and animal experiments for identification of syndrome element marker genes during entire course of steroid-induced osteonecrosis of femoral head]. (2024). https://pubmed.ncbi.nlm.nih.gov/38621982/",
+    "ELOVL6 \u2014 ELOVL fatty acid elongase 6 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HMOX1 \u2014 heme oxygenase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ELOVL6-AS1 \u2014 ELOVL6 antisense RNA 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TRIM25 \u2014 tripartite motif containing 25 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TPX2 \u2014 TPX2 microtubule nucleation factor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Functions of Circular RNAs in Regulating Adipogenesis of Mesenchymal Stem Cells (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC7416283/",
+    "Research advances in intramuscular fat deposition and chicken meat quality: genetics and nutrition (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12265352/",
+    "Genomic Insights into Abdominal and Intramuscular Fat Deposition in Chickens and Their Implications for Productivity Traits: A Systematic Review (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12837823/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 11244,
+    "completion_tokens": 340,
+    "total_tokens": 11584,
+    "estimated_cost_usd": 0.001891
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9H5J4",
+          "title": "ELOVL6 (Q9H5J4)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9H5J4",
+          "text": "Protein: Very long chain fatty acid elongase 6\nFunction: Catalyzes the first and rate-limiting reaction of the four reactions that constitute the long-chain fatty acids elongation cycle. This endoplasmic reticulum-bound enzymatic process allows the addition of 2 carbons to the chain of long- and very long-chain fatty acids (VLCFAs) per cycle. Condensing enzyme that elongates fatty acids with 12, 14 and 16 carbons with higher activity toward C16:0 acyl-CoAs. Catalyzes the synthesis of unsaturated C16 long chain fatty acids and, to a lesser extent, C18:0 and those with low desaturation degree. May participate in the production of saturated and monounsaturated VLCFAs of different chain lengths that are involved in multiple biological processes as precursors of membrane lipids and lipid mediators",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000170522::function",
+          "title": "ELOVL6 \u2014 ELOVL6",
+          "url": "https://platform.opentargets.org/target/ENSG00000170522",
+          "text": "Function: Catalyzes the first and rate-limiting reaction of the four reactions that constitute the long-chain fatty acids elongation cycle. This endoplasmic reticulum-bound enzymatic process allows the addition of 2 carbons to the chain of long- and very long-chain fatty acids (VLCFAs) per cycle. Condensing enzyme that elongates fatty acids with 12, 14 and 16 carbons with higher activity toward C16:0 acyl-CoAs. Catalyzes the synthesis of unsaturated C16 long chain fatty acids and, to a lesser extent, C18:0 and those with low desaturation degree. May participate in the production of saturated and monounsaturated VLCFAs of different chain lengths that are involved in multiple biological processes as precursors of membrane lipids and lipid mediators.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000170522::EFO_0000537",
+          "title": "ELOVL6 \u2194 hypertension",
+          "url": "https://platform.opentargets.org/target/ENSG00000170522/associations",
+          "text": "Disease: hypertension\nDescription: Persistently high systemic arterial blood pressure. Based on multiple readings (blood pressure determination), hypertension is currently defined as when systolic pressure is consistently greater than 140 mm Hg or when diastolic pressure is consistently 90 mm Hg or more.\nAssociation score: 0.493",
+          "cos_sim_score": 0.4932153707418746,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000170522::EFO_0000275",
+          "title": "ELOVL6 \u2194 atrial fibrillation",
+          "url": "https://platform.opentargets.org/target/ENSG00000170522/associations",
+          "text": "Disease: atrial fibrillation\nDescription: Abnormal cardiac rhythm that is characterized by rapid, uncoordinated firing of electrical impulses in the upper chambers of the heart (HEART ATRIA). In such case, blood cannot be effectively pumped into the lower chambers of the heart (HEART VENTRICLES). It is caused by abnormal impulse generation.\nAssociation score: 0.458",
+          "cos_sim_score": 0.4579132175559717,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000170522::HP_0032263",
+          "title": "ELOVL6 \u2194 Increased blood pressure",
+          "url": "https://platform.opentargets.org/target/ENSG00000170522/associations",
+          "text": "Disease: Increased blood pressure\nDescription: Abnormal increase in blood pressure. An individual measurement of increased blood pressure does not necessarily imply hypertension. In practical terms, multiple measurements are recommended to diagnose the presence of hypertension.\nAssociation score: 0.414",
+          "cos_sim_score": 0.41419145358813336,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000170522::MONDO_0056799",
+          "title": "ELOVL6 \u2194 synovium disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000170522/associations",
+          "text": "Disease: synovium disorder\nDescription: A disease or disorder that involves the layer of synovial tissue.\nAssociation score: 0.241",
+          "cos_sim_score": 0.24117761033043536,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::38621982",
+          "title": "[Transcriptome data mining combined with clinical and animal experiments for identification of syndrome element marker genes during entire course of steroid-induced osteonecrosis of femoral head].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38621982/",
+          "year": "2024",
+          "text": "A research strategy combining transcriptome data mining and experimental verification was adopted to identify the marker genes characterizing the syndrome elements of phlegm, stasis, and deficiency in steroid-induced osteonecrosis of the femoral head(SONFH). Firstly, the common differentially expressed gene sets of SONFH with the syndromes of phlegm-stasis obstructing collaterals, vessel obstruction, and liver-kidney deficiency were obtained from the clinical transcriptomic analysis of a previous study. The differential expression trend analysis and functional gene mining were then employed to predict the candidate marker gene sets representing phlegm, stasis, and deficiency. The whole blood samples from SONFH patients, whole blood samples from SONFH rats, and affected femoral head tissue samples were collected for qPCR, which aimed to determine the expression levels of the candidate marker genes mentioned above. Furthermore, the receiver operating characteristic curve(ROC) was established to objectively evaluate the syndrome differentiation effectiveness of the candidate marker genes mentioned above. The transcriptome data analysis results showed that the candidate marker genes for phlegm was ELOVL fatty acid elongase 6(ELOVL6), and those for stasis were ankyrin 1(ANK1), glycophorin A/B(GYPA/B), and Rh-associated glycoprotein(RHAG). The candidate marker genes for deficiency were solute carrier family 2 member 1(SLC2A1) and stomatin(STOM). The qPCR results showed that compared with that in the non-SONFH group, ELOVL6 had the lowest expression level in the peripheral blood of the SONFH patients with the syndrome of phlegm-stasis obstructing collaterals(P&lt;0.05). Compared with that in the normal control group, ELOVL6 had the lowest expression level in the peripheral blood and affected femoral head tissue of SONFH rats modeled for 4 weeks(P&lt;0.01), and it showed better syndrome differentiation effectiveness of rats modeled for 4 weeks(AUC=0.850, P=0.006) than at other modeling time points(8, 12, 16, and 21 weeks, AUC of 0.689, 0.766, 0.588, and 0.662, respectively). Compared with that in the non-SONFH group, the expression levels of ANK1, GYPA, and RHAG were the lowest in the peripheral blood of SONFH patients with the vessel obstruction syndrome(P&lt;0.05). The expression levels of the three genes were the lowest in the peripheral blood and affected femoral head tissue of",
+          "cos_sim_score": 0.44984662532806396,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::38621982",
+          "title": "[Transcriptome data mining combined with clinical and animal experiments for identification of syndrome element marker genes during entire course of steroid-induced osteonecrosis of femoral head].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38621982/",
+          "year": "2024",
+          "text": "than at other modeling time points(8, 12, 16, and 21 weeks, AUC of 0.689, 0.766, 0.588, and 0.662, respectively). Compared with that in the non-SONFH group, the expression levels of ANK1, GYPA, and RHAG were the lowest in the peripheral blood of SONFH patients with the vessel obstruction syndrome(P&lt;0.05). The expression levels of the three genes were the lowest in the peripheral blood and affected femoral head tissue of SONFH rats modeled for 12 weeks(P&lt;0.05, P&lt;0.01), and their syndrome differentiation effectiveness in the rats modeled for 12 weeks(GYPA: AUC=0.861, P=0.012; ANK1: AUC=0.855, P=0.006; RHAG: AUC=0.854, P=0.009) was superior to that for 4, 8, 16, and 21 weeks(GYPA: AUC=0.646, 0.573, 0.691, and 0.617, respectively; ANK: AUC1=0.630, 0.658, 0.657, and 0.585, respectively; RHAG: AUC=0.592, 0.511, 0.515, and 0.536, respectively). Compared with the non-SONFH group, both SLC2A1 and STOM had the lowest expression levels in the peripheral blood of patients with the syndrome of liver and kidney deficiency(P&lt;0.05). Compared with the normal control group, their expression levels were the lowest in the peripheral blood and affected femoral head tissue of SONFH rats modeled for 21 weeks(P&lt;0.05, except STOM in the peripheral blood of rats). Moreover, the syndrome differentiation effectiveness of SLC2A1 in the rats modeled for 21 weeks(AUC=0.806, P=0.009) was superior to that for 4, 8, 12, and 16 weeks(AUC=0.520, 0.580, 0.741, 0.774, respectively), and STOM was meaningless in syndrome differentiation. In summary, the candidate marker gene for phlegm in SONFH is ELOVL6; the candidate marker genes for stasis are GYPA, RHAG, and ANK1; the candidate marker gene for deficiency is SLC2A1. The results help to reveal the biological connotations of phlegm, stasis, and deficiency in SONFH at the genetic level.",
+          "cos_sim_score": 0.13438385725021362,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "ELOVL6 \u2014 ELOVL fatty acid elongase 6",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ELOVL6\nGene name: ELOVL fatty acid elongase 6\nAliases / synonyms: FACE, FAE, LCE, hELO2\nOrganism: Homo sapiens\nGene summary: Fatty acid elongases (EC 6.2.1.3), such as ELOVL6, use malonyl-CoA as a 2-carbon donor in the first and rate-limiting step of fatty acid elongation (Moon et al., 2001 [PubMed 11567032]).[supplied by OMIM, Mar 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ELOVL6",
+          "aliases": "FACE, FAE, LCE, hELO2",
+          "gene_description": "ELOVL fatty acid elongase 6"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "HMOX1 \u2014 heme oxygenase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HMOX1\nGene name: heme oxygenase 1\nAliases / synonyms: HMOX1D, HO-1, HSP32, bK286B10\nOrganism: Homo sapiens\nGene summary: Heme oxygenase, an essential enzyme in heme catabolism, cleaves heme to form biliverdin, which is subsequently converted to bilirubin by biliverdin reductase, and carbon monoxide, a putative neurotransmitter. Heme oxygenase activity is induced by its substrate heme and by various nonheme substances. Heme oxygenase occurs as 2 isozymes, an inducible heme oxygenase-1 and a constitutive heme oxygenase-2. HMOX1 and HMOX2 belong to the heme oxygenase family. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HMOX1",
+          "aliases": "HMOX1D, HO-1, HSP32, bK286B10",
+          "gene_description": "heme oxygenase 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ELOVL6-AS1 \u2014 ELOVL6 antisense RNA 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ELOVL6-AS1\nGene name: ELOVL6 antisense RNA 1\nOrganism: Homo sapiens",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ELOVL6-AS1",
+          "aliases": "",
+          "gene_description": "ELOVL6 antisense RNA 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TRIM25 \u2014 tripartite motif containing 25",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TRIM25\nGene name: tripartite motif containing 25\nAliases / synonyms: EFP, RNF147, Z147, ZNF147\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the tripartite motif (TRIM) family. The TRIM motif includes three zinc-binding domains, a RING, a B-box type 1 and a B-box type 2, and a coiled-coil region. The protein is an RNA binding protein, functions as a ubiquitin E3 ligase and is involved in multiple cellular processes, including regulation of antiviral innate immunity. [provided by RefSeq, Sep 2021]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TRIM25",
+          "aliases": "EFP, RNF147, Z147, ZNF147",
+          "gene_description": "tripartite motif containing 25"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TPX2 \u2014 TPX2 microtubule nucleation factor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TPX2\nGene name: TPX2 microtubule nucleation factor\nAliases / synonyms: C20orf1, C20orf2, DIL-2, DIL2, FLS353, GD:C20orf1, HCA519, HCTP4, REPP86, p100\nOrganism: Homo sapiens\nGene summary: Enables importin-alpha family protein binding activity; molecular adaptor activity; and protein kinase binding activity. Involved in activation of protein kinase activity; microtubule cytoskeleton organization; and negative regulation of microtubule depolymerization. Located in intercellular bridge; nucleoplasm; and spindle. Is active in spindle. [provided by Alliance of Genome Resources, Apr 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TPX2",
+          "aliases": "C20orf1, C20orf2, DIL-2, DIL2, FLS353, GD:C20orf1, HCA519, HCTP4, REPP86, p100",
+          "gene_description": "TPX2 microtubule nucleation factor"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::7416283",
+          "title": "Functions of Circular RNAs in Regulating Adipogenesis of Mesenchymal Stem Cells",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7416283/",
+          "text": "5.4. circRNA 2: 27713879|27755789 and circRNA 2: 240822115|240867796\nEstrogen receptor (ER) \u03b2 is structurally and functionally related to isoforms of ER. Its expression is increased during osteoblast differentiation [98]. It was shown that ER\u03b2 was capable of upregulating the expression levels of osteogenesis-related markers and inducing the osteogenic differentiation of MC3T3-E1 [77]. Recently, the experiment demonstrates that ER\u03b2 may regulate the expression levels of miR-328, miR-23a-5p, and miR-326 via circRNA 2: 27713879|27755789 and circRNA 2: 240822115|240867796 and consequently impact on the balance between osteogenic differentiation and adipogenic differentiation. In their experiment, circRNA 2: 27713879|27755789 and circRNA 2: 240822115|240867796 were identified to target miR-328 [78], while miR-328 can upregulate the expression of C/EBP\u03b1 to inhibit cell proliferation and is involved in the dynamic balance between osteogenesis and adipogenesis [78]. circRNA 2: 27713879|27755789 and circRNA 2: 240822115|240867796 can also target miR-23a-5p and miR-326 as miRNA sponge by regulating the TGF-\u03b2 signaling pathway and serve as an inhibitor of adipogenic differentiation [78, 99, 100]. The above study shows that circRNAs can work together and affect several kinds of miRNA to achieve its regulating potential. This discovery is very helpful for contributing the circRNA regulating network in MSC differentiation.\n5.5. circRNA-11897\u2013miR-27a/miR-27b\u2013PPAR\u03b3\nmiR-27 is an antiadipogenic microRNA partly by targeting prohibitin (PHB) and impairing mitochondrial function. Ectopic expression of miR-27a or miR-27b impaired mitochondrial biogenesis, structural integrity, and complex I activity accompanied by excessive reactive oxygen species production [101]. miR-27a can accelerate the hydrolysis of triglyceride and suppress adipocyte differentiation by repressing the expression of PPAR\u03b3 [102]. Via identification and characterization of circRNAs, researchers find that circRNA-11897 can bind miR-27a and miR-27b [79]. By sponging miR-27a and miR-27b, circRNA-11897 regulates adipogenic differentiation and lipid metabolism of adipocyte in the subcutaneous adipose tissue [79]. Besides, the target genes of circRNA-11897 are also enriched in biological processes, which are related to lipid metabolisms such as fatty acid biosynthetic process, MAPK cascade reaction, extracellular-regulated protein kinase (ERK)1 and ERK2 cascade reaction, and cell proliferation [79]. In the early stage of adipogenic differentiation, the activated ERK signaling pathway can induce the expression of C/EBP and PPAR\u03b3 and induce adipogenic differentiation of 3T3-L1 preadipocytes [103]. In a later stage, ERK1/2 is phosphorylated, and PPAR\u03b3 is inactivated. Thus, preadipocyte differentiation is inhibited [104].\n5.6. circRNA-26852\u2013miR874-PPAR\u03b1 and circRNA-26852\u2013miR486\u2013FOXO1",
+          "cos_sim_score": 0.3052259087562561,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12265352",
+          "title": "Research advances in intramuscular fat deposition and chicken meat quality: genetics and nutrition",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12265352/",
+          "text": "LPL, PLIN1, CIDEC, and PPARG; DHCR24, LSS, MSMO1, NSDHL, and CH25H[39]Jingxing-yellowBreast musclesDe novo lipogenesisSLC16A7[40]Guizhou-yellowBreast musclesFocal adhesion, ECM\u2012receptor interactions, cell adhesion molecules, actin cytoskeleton regulation, and PPARCAPN2, COL1A1, COL1A2, COL6A1, COL6A2, and COL6A3[41]Huangshan BlackThigh musclesLipid, steroid, and fatty acid biosynthetic and metabolic pathwaysFABP4, G0S2, PLIN1, SCD, FABP1, SLC1A6, SLC45A3, ACSBG1, LY86, ST8SIA5, SNAI2, HPGD, EDN2, and THRSP[42]Huangshan BlackThigh musclesPPARG0S2, SCD, and PNPLA2[43]Wuliang Mountain Black-boneBreast muscles\u2014C/EBP\u03b1 and its SNP (g.552G >\u2009A)[44]Gushi-Anka F2Breast muscles\u2014SCT2[45]Tissue variationsBeijing-youBreast muscles vs. leg musclesFocal adhesion, ECM\u2012receptor interactions, and PPAR\u03b3 signaling pathwaysLPL, FABP4, THRSP, FABP3, and CPT2[46]WenchangBreast muscles vs. abdominal adipose tissuesPyruvate and citric acid metabolismGAPDH, LDHA, GPX1, GBE1[47]GushiBreast muscles vs. abdominal adipose tissuesGlycerophospholipids (IMF)Triacylglycerols (AF)TMEM164 (IMF)ZNF488 (AF)[48]Developmental stagesBeijing-youBreast muscles(1 d, 56 d, 98 d, and 140 d)\u2014APOA1, HSPB1[49]Beijing-you and CobbBreast muscles (ED12, ED17, 1\u2009d, and 14 d)Protein processing and PPAR signaling pathwaysRate-limiting enzymes for fatty acid \u03b2-oxidation (ACADL, ACAD9, HADHA and HADHB)[50]Beijing-youBreast muscles (3 to18 weeks)Energy metabolismACOT9, CETP, LPIN1, DGAT2, RBP7, FBP1, and PHKA1[51]Beijing-youThigh muscles (150 d, 300 d, and 450 d)PPAR, MAPK, focal adhesion, and ECM\u2013receptor interactionsAPOC3, APOA1, STMN1, HSPB1, PAK2, TGF-\u03b2, CASP3, COL1A2, COL4A1, LAMB4, and THBS1[52]Jingxing-yellowBreast muscles and AF (ED12 to 180 d)Fatty acid metabolism, PPAR, Cell cycle and cell adhesion moleculesENSGALG00000041996, L3MBTL1, TNIP1, HAT1, BEND6[53]Jingxing-yellowBreast muscles (7,",
+          "cos_sim_score": 0.28877830505371094,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12837823",
+          "title": "Genomic Insights into Abdominal and Intramuscular Fat Deposition in Chickens and Their Implications for Productivity Traits: A Systematic Review",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12837823/",
+          "text": "GPAM is also a direct target of miR-223, a micro ribonucleic acid (miRNA) involved in adipocyte differentiation; levels of miR-223 decline in the breast muscle during the later phases of the laying cycle and show a negative correlation with GPAM expression [31]. Functional enrichment analyses indicate that GPAM contributes to fatty acid homeostasis, triglyceride biosynthesis, and wider aspects of lipid metabolism [43]. Further evidence identifies GPAM as a gene linked to lipid-metabolic signaling, with its upregulation promoting triglyceride synthesis, a core step in fat storage [44].\nGenes from the ELOVL fatty acid elongase family, particularly ELOVL6, extend long-chain fatty acids and thereby influence abdominal fat deposition in chickens [45]. Variation in the expression of ELOVL1, ELOVL2, ELOVL5, and ELOVL6 has been linked to breed-specific differences in lipid accumulation [46]. Genetic variation within these loci shapes distinct phenotypes, including diverse patterns of fat deposition [31,47]. ELOVL6 also interacts with dietary elements such as fatty acid composition, illustrating the role of gene-environment interactions in determining lipid metabolism and fat accretion in chickens [48].\nELOVL5 catalyzes the elongation of docosapentaenoic acid to tetracosapentaenoic acid and contributes to the formation of docosahexaenoic acid from alpha-linolenic acid, a pathway more active in chickens than in many other species [49]. Its expression in adipose tissue depends on the dietary intake of alpha-linolenic acid and supports docosahexaenoic acid accumulation and associated changes in lipid metabolism [50]. The product of ELOVL7 participates in the regulation of \u03b2-oxidation and adipogenesis, processes closely linked to fat accretion [50].Together, these lipogenesis genes and their regulators illustrate the intricacy of adipogenic mechanisms that govern abdominal fat deposition in chickens.\n3.2.2. Lipolysis Genes\nLipolysis is a catabolic pathway in which stored triacylglycerols are hydrolyzed to free fatty acids and glycerol, supplying metabolic energy derived from endogenous lipid reserves [51]. The enzymes involved in this process exert substantial influence over adipose tissue dynamics, as they regulate the release and utilization of fatty acids from lipid stores [51] (Table 1).\nAmong the central genes governing lipolytic activity is lipoprotein lipase (LPL), the enzyme responsible for hydrolyzing triacylglycerols contained in circulating lipoproteins to produce free fatty acids. This reaction is fundamental for the uptake of fatty acids by adipose tissue and skeletal muscle [1]. Increased LPL expression is associated with enhanced lipolytic capacity and reduced abdominal fat deposition, highlighting its key role in avian lipid homeostasis [52]. Notably, the regulation of LPL in chickens diverges from that observed in mammals, as neither fasting nor overfeeding alters LPL activity or transcript abundance in avian adipose tissue, suggesting relatively low nutritional sensitivity of this gene in birds [53].\nAnother major component of the lipolytic network is carnitine palmitoyltransferase 1 (CPT1), the enzyme that facilitates the mitochondrial import and subsequent \u03b2-oxidation of long-chain fatty acids [54]. This pathway is indispensable for the conversion of fatty acids into usable energy and for preventing excessive lipid accumulation. The CPT1A and CPT1B isoforms hold particular relevance in chickens, as they govern lipid flux in tissues characterized by substantial fat deposition, such as abdominal and intramuscular fat [1]. CPT1A expression is elevated in the liver and various adipose depots, indicating broad involvement in lipid turnover [55]. During adipocyte differentiation, increases in lipid droplet formation parallel rising CPT1A expression, whereas inhibition of CPT1A leads to greater lipid accretion. CPT1A does not act as an isolated rate-limiting factor; rather, it operates in coordination with additional transport proteins such as CROT, which transfers acylcarnitines from peroxisomes to mitochondria [56]. Its activity is further modulated by several signaling cascades. For instance, CPT1A promotes adipocyte proliferation and restrains lipid accumulation through MAPK-dependent mechanisms [56]. Elevated CPT1 expression in skeletal muscle and subcutaneous adipose tissue also suggests a role in shaping intramuscular fat content, potentially via regulation by PPARA [57].",
+          "cos_sim_score": 0.2662464380264282,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12265352",
+          "title": "Research advances in intramuscular fat deposition and chicken meat quality: genetics and nutrition",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12265352/",
+          "text": "AMPK signaling\nAMPK is an intracellular kinase that regulates adipogenesis by promoting various biological processes, such as fatty acid oxidation and synthesis [269]. Its activity has been found to be negatively correlated with the IMF content in cattle but positively correlated with the degree of muscle development [270]. AMPK is suggested to regulate the differentiation of MSCs in skeletal muscle, switching MSCs from adipogenesis to myogenesis. For example, activation of AMPK by AICAR increased the expression of myogenic enhancer factor-2 (MEF2), thereby enhancing myogenesis [271]. Its activation also promoted fatty acid oxidation by phosphorylating ACC2, thereby reducing TG synthesis [272]. Such activation has been shown to regulate lipid aggregation in myocytes by modulating the m6A demethylation of mRNA through the FTO gene [273]. It downregulated adipogenic markers, such as PPARG, C/EBP\u03b1, and FABP4, thereby inhibiting adipogenesis [274]. Activation of AMPK by sirtuin 5 (SIRT5) has been reported to inhibit the MAPK pathway, thereby suppressing the differentiation and lipid deposition of bovine preadipocytes [275]. In Sect.\u00a0\"LncRNAs and circRNAs\", which discusses ncRNAs, the regulatory role of AMPK in chicken muscle development has also been confirmed [81, 111]. In Sect.\u00a0\"IMF by nutrigenomics\", it is reported that the supplementation of rutin inhibits the expression of the AMPK\u03b1 gene and increases the IMF content in chickens [208]. This finding further suggests that the AMPK signaling pathway may inhibit the commitment of MSCs to preadipocytes in chickens. AMPK signaling pathway is likely to be another important target for precisely regulating IMF formation in chickens, which needs to be further confirmed at the stem cell level.\nSHH signaling\nA rising number of studies have revealed the effects of SHH signaling in adipogenesis and lipogenesis. For example, the activation of the SHH signaling pathway was discovered to inhibit adipogenesis in the pluripotent mouse embryonic fibroblast cell lines, 3\u2009T3-L1 and C3H10T1/2 [276\u2013279]. The reduction of SHH signaling was suggested to be necessary but not sufficient to trigger adipocyte differentiation [280]. It was thought that SHH signaling promotes stem cell differentiation into either myogenic or osteogenic cells, while the down-regulation of SHH enhances adipogenesis [260]. This signaling pathway has been demonstrated to resist adipogenesis by promoting the expression of GATA family member 2 (GATA2), which directly interacts with C/EBP\u03b1 and PPAR\u03b3, thereby preventing PPAR\u03b3 from exerting its pro-adipogenic effects [281, 282]. The functions of GATA proteins include promoting myogenesis and other cell differentiations by recruiting MEF2 [283]. It was also demonstrated that the SHH signaling negatively regulates adipogenesis through nuclear receptor subfamily member 2 (NR2F2), which binds to the promoter regions of C/EBP\u03b1 and PPARG to inhibit their expression [284]. The role of SHH signaling in the commitment of MSCs to the adipogenic lineage in chicken needs further investigation.\nThese findings have demonstrated that PPAR\u03b3 is regulated by multiple signaling pathways and acts as a key downstream factor in the adipogenic commitment of MSCs. The ncRNAs, such as lncRNA IMFNCR, miR-27b-3p, and miR-128-3p, mentioned in Sect.\u00a0\"LncRNAs and circRNAs\", have been identified as regulators of PPARG function and the adipogenic process in chickens [94\u201396]. This suggests that these ncRNAs may play a central role in the adipogenic commitment of MSCs and the muscle\u2013adipose balance in chickens. Further investigation at the stem cell level is needed to elucidate the adipogenic differentiation fate of chicken MSCs, building on the groundwork laid by these findings.\nExosomes involved in muscle\u2013adipose interactions",
+          "cos_sim_score": 0.213547021150589,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12837823",
+          "title": "Genomic Insights into Abdominal and Intramuscular Fat Deposition in Chickens and Their Implications for Productivity Traits: A Systematic Review",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12837823/",
+          "text": "In the chicken liver, miR-22-3p contributes to lipid accumulation, unsaturated fatty acid biosynthesis, and PPAR-related signaling, with ACSL5, ELOVL6, and PLIN2 identified as key hepatic targets [121,135] (Figure 5). Meanwhile, miR-146b-5p, located in an intergenic region on chromosome 6, shows elevated activity in the breast muscle of fast-growing broilers, linking it to rapid muscle growth and improved feed efficiency [116,136]. MiR-148a, abundantly expressed in hepatocytes, modulates multiple genes involved in lipid metabolism via WNT1 signaling [129,130,137]. Both miR-24-3p and miR-128-3p intersect pathways of muscle development and fat deposition by regulating the proliferation and inhibition of intramuscular preadipocytes [116,122].\nFurther examples include miR-34a-5p, which increases intracellular triglyceride and total cholesterol levels by suppressing translation of its hepatic target ACSL1 [123], and miR-218-5p, which modulates ELOVL5 and FADS1, essential enzymes in the biosynthesis of long-chain polyunsaturated fatty acids [121,124] (Figure 5). Reduced expression of miR-101-2-5p elevates ELOVL5 levels in laying hens\u2019 livers and suppresses ApoB, a critical component of lipoprotein assembly and secretion [124,138]. Additionally, miR-128-3p targets genes involved in glycerophospholipid metabolism and inhibits farnesyl diphosphate synthase (FDPS) [125].\nProfiling of miRNA expression in abdominal fat from chicken lines selected for divergent fat content identified differentially expressed miRNAs, including miR-142-3p, miR-19a-3p, miR-19b-3p, miR-30d, miR-26a, miR-17-5p, miR-103-3p, miR-27b-3p, miR-92-3p, and miR-122-5p, whose targets, such as ACSL1, FADS2, and ABCD3, are central to lipid metabolism and abdominal fat deposition [129,139]. A broader set of miRNAs, including miR-429, miR-200b, miR-451, miR-142-5p, miR-200a, miR-218, miR-454, miR-30a-5p, miR-34, miR-199, miR-8, and miR-146b-5p, further regulate lipid metabolism and orchestrate adipocyte differentiation and proliferation [31,130].\nOther miRNAs, such as miR-21, inhibit preadipocyte proliferation through downregulation of KLF5 [129,130], while miR-223 and miR-18b-3p target GPAM and ACOT13, respectively, suppressing adipocyte differentiation [43,115]. Across developmental stages, specific miRNA-mRNA pairs, including miR-6701-3p-PTEN, miR-1563-WWP1, miR-6701-3p-BMPR1B, miR-29c-3p-PIK3R1, and miR-449c/d-5p-TRAF6, contribute to the dynamic modulation of fat deposition [131].\nTogether, these interconnected miRNAs form a complex regulatory network influencing adipogenesis, adipocyte proliferation and differentiation, hepatic lipid metabolism, intramuscular fat deposition, and abdominal fat accumulation in chickens.\n4.2. Long Non-Coding RNA-Mediated Regulation of Adipogenesis\nLong non-coding RNAs (lncRNAs) are single-stranded RNAs longer than 200 nucleotides, transcribed by RNA polymerases I, II, and III [140]. They may originate from various genomic regions, including enhancers, promoters, introns, or intergenic sequences [141,142,143]. Many lncRNAs are capped, spliced, and polyadenylated, exhibiting structural similarity to mRNAs, whereas others lack these features or derive from precursors containing introns or repetitive elements. Although generally less conserved evolutionarily, lncRNA genes share features with protein-coding genes, such as regulatory elements, multiple exons, chromatin signatures, and transcription factor regulation [144,145,146].",
+          "cos_sim_score": 0.2059035450220108,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::38621982",
+          "title": "[Transcriptome data mining combined with clinical and animal experiments for identification of syndrome element marker genes during entire course of steroid-induced osteonecrosis of femoral head].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38621982/",
+          "year": "2024",
+          "text": "A research strategy combining transcriptome data mining and experimental verification was adopted to identify the marker genes characterizing the syndrome elements of phlegm, stasis, and deficiency in steroid-induced osteonecrosis of the femoral head(SONFH). Firstly, the common differentially expressed gene sets of SONFH with the syndromes of phlegm-stasis obstructing collaterals, vessel obstruction, and liver-kidney deficiency were obtained from the clinical transcriptomic analysis of a previous study. The differential expression trend analysis and functional gene mining were then employed to predict the candidate marker gene sets representing phlegm, stasis, and deficiency. The whole blood samples from SONFH patients, whole blood samples from SONFH rats, and affected femoral head tissue samples were collected for qPCR, which aimed to determine the expression levels of the candidate marker genes mentioned above. Furthermore, the receiver operating characteristic curve(ROC) was established to objectively evaluate the syndrome differentiation effectiveness of the candidate marker genes mentioned above. The transcriptome data analysis results showed that the candidate marker genes for phlegm was ELOVL fatty acid elongase 6(ELOVL6), and those for stasis were ankyrin 1(ANK1), glycophorin A/B(GYPA/B), and Rh-associated glycoprotein(RHAG). The candidate marker genes for deficiency were solute carrier family 2 member 1(SLC2A1) and stomatin(STOM). The qPCR results showed that compared with that in the non-SONFH group, ELOVL6 had the lowest expression level in the peripheral blood of the SONFH patients with the syndrome of phlegm-stasis obstructing collaterals(P&lt;0.05). Compared with that in the normal control group, ELOVL6 had the lowest expression level in the peripheral blood and affected femoral head tissue of SONFH rats modeled for 4 weeks(P&lt;0.01), and it showed better syndrome differentiation effectiveness of rats modeled for 4 weeks(AUC=0.850, P=0.006) than at other modeling time points(8, 12, 16, and 21 weeks, AUC of 0.689, 0.766, 0.588, and 0.662, respectively). Compared with that in the non-SONFH group, the expression levels of ANK1, GYPA, and RHAG were the lowest in the peripheral blood of SONFH patients with the vessel obstruction syndrome(P&lt;0.05). The expression levels of the three genes were the lowest in the peripheral blood and affected femoral head tissue of",
+          "cos_sim_score": 0.44984662532806396,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::38621982",
+          "title": "[Transcriptome data mining combined with clinical and animal experiments for identification of syndrome element marker genes during entire course of steroid-induced osteonecrosis of femoral head].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38621982/",
+          "year": "2024",
+          "text": "than at other modeling time points(8, 12, 16, and 21 weeks, AUC of 0.689, 0.766, 0.588, and 0.662, respectively). Compared with that in the non-SONFH group, the expression levels of ANK1, GYPA, and RHAG were the lowest in the peripheral blood of SONFH patients with the vessel obstruction syndrome(P&lt;0.05). The expression levels of the three genes were the lowest in the peripheral blood and affected femoral head tissue of SONFH rats modeled for 12 weeks(P&lt;0.05, P&lt;0.01), and their syndrome differentiation effectiveness in the rats modeled for 12 weeks(GYPA: AUC=0.861, P=0.012; ANK1: AUC=0.855, P=0.006; RHAG: AUC=0.854, P=0.009) was superior to that for 4, 8, 16, and 21 weeks(GYPA: AUC=0.646, 0.573, 0.691, and 0.617, respectively; ANK: AUC1=0.630, 0.658, 0.657, and 0.585, respectively; RHAG: AUC=0.592, 0.511, 0.515, and 0.536, respectively). Compared with the non-SONFH group, both SLC2A1 and STOM had the lowest expression levels in the peripheral blood of patients with the syndrome of liver and kidney deficiency(P&lt;0.05). Compared with the normal control group, their expression levels were the lowest in the peripheral blood and affected femoral head tissue of SONFH rats modeled for 21 weeks(P&lt;0.05, except STOM in the peripheral blood of rats). Moreover, the syndrome differentiation effectiveness of SLC2A1 in the rats modeled for 21 weeks(AUC=0.806, P=0.009) was superior to that for 4, 8, 12, and 16 weeks(AUC=0.520, 0.580, 0.741, 0.774, respectively), and STOM was meaningless in syndrome differentiation. In summary, the candidate marker gene for phlegm in SONFH is ELOVL6; the candidate marker genes for stasis are GYPA, RHAG, and ANK1; the candidate marker gene for deficiency is SLC2A1. The results help to reveal the biological connotations of phlegm, stasis, and deficiency in SONFH at the genetic level.",
+          "cos_sim_score": 0.13438385725021362,
+          "source_type": "pubmed"
+        }
+      ]
+    }
+  ]
+}

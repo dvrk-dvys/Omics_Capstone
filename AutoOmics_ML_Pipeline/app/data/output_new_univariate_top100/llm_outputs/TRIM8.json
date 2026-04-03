@@ -1,0 +1,209 @@
+{
+  "probe_id": "11726632_at",
+  "gene_symbol": "TRIM8",
+  "score": 1.0,
+  "SD_TestAUC": 0.0662538659999937,
+  "abs_fold_change": 0.9504,
+  "probe_count": 1,
+  "probe_ids": "11726632_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.9504,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T22:50:36",
+  "interpretation": "TRIM8 is an E3 ubiquitin-protein ligase involved in various biological processes, including cell survival, differentiation, and apoptosis. It plays a significant role in the innate immune response and has been shown to modulate signaling pathways such as TNF-alpha and IL-1beta, which are relevant in inflammatory conditions. Although there is no direct evidence linking TRIM8 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in apoptosis and immune regulation suggests a potential role in the pathophysiology of bone diseases, including those influenced by steroid use. The evidence retrieved primarily supports its biological functions but lacks specific connections to SONFH, leading to a lower confidence in its potential as a biomarker for early detection of this condition. Therefore, while TRIM8 may have some relevance in the context of SONFH, its clinical utility as a biomarker remains uncertain.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "TRIM8 may play a role in the biological processes relevant to Steroid-Induced Osteonecrosis of the Femoral Head, but direct evidence linking it to the disease is lacking.",
+  "citations": [
+    "TRIM8 (Q9BZR9). https://www.uniprot.org/uniprotkb/Q9BZR9",
+    "TRIM8 \u2014 TRIM8. https://platform.opentargets.org/target/ENSG00000171206",
+    "TRIM8 \u2194 focal segmental glomerulosclerosis and neurodevelopmental syndrome. https://platform.opentargets.org/target/ENSG00000171206/associations",
+    "TRIM8 \u2194 Seizure. https://platform.opentargets.org/target/ENSG00000171206/associations",
+    "TRIM8 \u2194 epilepsy. https://platform.opentargets.org/target/ENSG00000171206/associations",
+    "TRIM8 \u2194 Global developmental delay. https://platform.opentargets.org/target/ENSG00000171206/associations",
+    "TRIM8 \u2014 tripartite motif containing 8 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TP53 \u2014 tumor protein p53 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "STAT3 \u2014 signal transducer and activator of transcription 3 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ESR1 \u2014 estrogen receptor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "PTEN \u2014 phosphatase and tensin homolog (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Circular RNAs in human diseases (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11374765/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9904,
+    "completion_tokens": 326,
+    "total_tokens": 10230,
+    "estimated_cost_usd": 0.001681
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9BZR9",
+          "title": "TRIM8 (Q9BZR9)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BZR9",
+          "text": "Protein: E3 ubiquitin-protein ligase TRIM8\nFunction: E3 ubiquitin-protein ligase that participates in multiple biological processes including cell survival, differentiation, apoptosis, and in particular, the innate immune response (PubMed:27981609, PubMed:28747347). Participates in the activation of interferon-gamma signaling by promoting proteasomal degradation of the repressor SOCS1 (PubMed:12163497). Plays a positive role in the TNFalpha and IL-1beta signaling pathways. Mechanistically, induces the 'Lys-63'-linked polyubiquitination of MAP3K7/TAK1 component leading to the activation of NF-kappa-B (PubMed:22084099, PubMed:23152791, PubMed:27981609, PubMed:34871740). Also modulates STAT3 activity through negative regulation of PIAS3, either by degradation of PIAS3 through the ubiquitin-proteasome pathway or exclusion of PIAS3 from the nucleus (PubMed:20516148). Negatively regulates TLR3/4-mediated innate immune response by catalyzing 'Lys-6'- and 'Lys-33'-linked polyubiquitination of TICAM1 and thereby disrupting the TICAM1-TBK1 interaction (PubMed:28747347)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000171206::function",
+          "title": "TRIM8 \u2014 TRIM8",
+          "url": "https://platform.opentargets.org/target/ENSG00000171206",
+          "text": "Function: E3 ubiquitin-protein ligase that participates in multiple biological processes including cell survival, differentiation, apoptosis, and in particular, the innate immune response (PubMed:27981609, PubMed:28747347). Participates in the activation of interferon-gamma signaling by promoting proteasomal degradation of the repressor SOCS1 (PubMed:12163497). Plays a positive role in the TNFalpha and IL-1beta signaling pathways. Mechanistically, induces the 'Lys-63'-linked polyubiquitination of MAP3K7/TAK1 component leading to the activation of NF-kappa-B (PubMed:22084099, PubMed:23152791, PubMed:27981609, PubMed:34871740). Also modulates STAT3 activity through negative regulation of PIAS3, either by degradation of PIAS3 through the ubiquitin-proteasome pathway or exclusion of PIAS3 from the nucleus (PubMed:20516148). Negatively regulates TLR3/4-mediated innate immune response by catalyzing 'Lys-6'- and 'Lys-33'-linked polyubiquitination of TICAM1 and thereby disrupting the TICAM1-TBK1 interaction (PubMed:28747347).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000171206::MONDO_0100111",
+          "title": "TRIM8 \u2194 focal segmental glomerulosclerosis and neurodevelopmental syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000171206/associations",
+          "text": "Disease: focal segmental glomerulosclerosis and neurodevelopmental syndrome\nDescription: A Mendelian diseases characterized by global developmental delay and renal dysfunction manifest as proteinuria and nephrotic syndrome apparent from infancy or early childhood. Some patients present with renal disease, whereas others present with developmental delay and develop renal disease later in childhood. Renal biopsy shows focal segmental glomerulosclerosis (FSGS), but the course of the disease is variable: some patients have transient proteinuria and others require renal transplant. Neurodevelopmental features are also variable, with some patients having only mildly impaired intellectual development, and others having a severe developmental disorder associated with early-onset refractory seizures or epileptic encephalopathy. Additional features, including feeding difficulties, poor overall growth, and nonspecific dysmorphic facial features, are commonly observed.\nAssociation score: 0.784",
+          "cos_sim_score": 0.7840747414029047,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000171206::HP_0001250",
+          "title": "TRIM8 \u2194 Seizure",
+          "url": "https://platform.opentargets.org/target/ENSG00000171206/associations",
+          "text": "Disease: Seizure\nDescription: A seizure is an intermittent abnormality of nervous system physiology characterized by a transient occurrence of signs and/or symptoms due to abnormal excessive or synchronous neuronal activity in the brain.\nAssociation score: 0.623",
+          "cos_sim_score": 0.6229528871700625,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000171206::EFO_0000474",
+          "title": "TRIM8 \u2194 epilepsy",
+          "url": "https://platform.opentargets.org/target/ENSG00000171206/associations",
+          "text": "Disease: epilepsy\nDescription: A brain disorder characterized by episodes of abnormally increased neuronal discharge resulting in transient episodes of sensory or motor neurological dysfunction, or psychic dysfunction. These episodes may or may not be associated with loss of consciousness or convulsions.\nAssociation score: 0.465",
+          "cos_sim_score": 0.4647853673469978,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000171206::HP_0001263",
+          "title": "TRIM8 \u2194 Global developmental delay",
+          "url": "https://platform.opentargets.org/target/ENSG00000171206/associations",
+          "text": "Disease: Global developmental delay\nDescription: A delay in the achievement of motor or mental milestones in the domains of development of a child, including motor skills, speech and language, cognitive skills, and social and emotional skills. This term should only be used to describe children younger than five years of age.\nAssociation score: 0.465",
+          "cos_sim_score": 0.4647112460539194,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "TRIM8 \u2014 tripartite motif containing 8",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TRIM8\nGene name: tripartite motif containing 8\nAliases / synonyms: FSGSNEDS, GERP, RNF27\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the tripartite motif (TRIM) protein family. Based on similarities to other proteins, the encoded protein is suspected to be an E3 ubiquitin-protein ligase. Regulation of this gene may be altered in some cancers. Mutations resulting in a truncated protein product have been observed in early-onset epileptic encephalopathy (EOEE). [provided by RefSeq, Sep 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TRIM8",
+          "aliases": "FSGSNEDS, GERP, RNF27",
+          "gene_description": "tripartite motif containing 8"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TP53 \u2014 tumor protein p53",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TP53\nGene name: tumor protein p53\nAliases / synonyms: BCC7, BMFS5, LFS1, P53, TRP53\nOrganism: Homo sapiens\nGene summary: This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TP53",
+          "aliases": "BCC7, BMFS5, LFS1, P53, TRP53",
+          "gene_description": "tumor protein p53"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "STAT3 \u2014 signal transducer and activator of transcription 3",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: STAT3\nGene name: signal transducer and activator of transcription 3\nAliases / synonyms: ADMIO, ADMIO1, APRF, HIES\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the STAT protein family. In response to cytokines and growth factors, STAT family members are phosphorylated by the receptor associated kinases, and then form homo- or heterodimers that translocate to the cell nucleus where they act as transcription activators. This protein is activated through phosphorylation in response to various cytokines and growth factors including IFNs, EGF, IL5, IL6, HGF, LIF and BMP2. This protein mediates the expression of a variety of genes in response to cell stimuli, and thus plays a key role in many cellular processes such as cell growth and apoptosis. The small GTPase Rac1 has been shown to bind and regulate the activity of this protein. PIAS3 protein is a specific inhibitor of this protein. This gene also play...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "STAT3",
+          "aliases": "ADMIO, ADMIO1, APRF, HIES",
+          "gene_description": "signal transducer and activator of transcription 3"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ESR1 \u2014 estrogen receptor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ESR1\nGene name: estrogen receptor 1\nAliases / synonyms: ER, ESR, ESRA, ESTRR, Era, NR3A1\nOrganism: Homo sapiens\nGene summary: This gene encodes an estrogen receptor and ligand-activated transcription factor. The canonical protein contains an N-terminal ligand-independent transactivation domain, a central DNA binding domain, a hinge domain, and a C-terminal ligand-dependent transactivation domain. The protein localizes to the nucleus where it may form either a homodimer or a heterodimer with estrogen receptor 2. The protein encoded by this gene regulates the transcription of many estrogen-inducible genes that play a role in growth, metabolism, sexual development, gestation, and other reproductive functions and is expressed in many non-reproductive tissues. The receptor encoded by this gene plays a key role in breast cancer, endometrial cancer, and osteoporosis. This gene is reported to have dozens of transcript va...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ESR1",
+          "aliases": "ER, ESR, ESRA, ESTRR, Era, NR3A1",
+          "gene_description": "estrogen receptor 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "PTEN \u2014 phosphatase and tensin homolog",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PTEN\nGene name: phosphatase and tensin homolog\nAliases / synonyms: 10q23del, BZS, CWS1, DEC, GLM2, MHAM, MMAC1, PTEN1, PTENbeta, PTENgama, TEP1\nOrganism: Homo sapiens\nGene summary: This gene was identified as a tumor suppressor that is mutated in a large number of cancers at high frequency. The protein encoded by this gene is a phosphatidylinositol-3,4,5-trisphosphate 3-phosphatase. It contains a tensin like domain as well as a catalytic domain similar to that of the dual specificity protein tyrosine phosphatases. Unlike most of the protein tyrosine phosphatases, this protein preferentially dephosphorylates phosphoinositide substrates. It negatively regulates intracellular levels of phosphatidylinositol-3,4,5-trisphosphate in cells and functions as a tumor suppressor by negatively regulating AKT/PKB signaling pathway. The use of a non-canonical (CUG) upstream initiation site produces a longer isoform that initiates translation with a leucine, and is thought to be pre...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PTEN",
+          "aliases": "10q23del, BZS, CWS1, DEC, GLM2, MHAM, MMAC1, PTEN1, PTENbeta, PTENgama, TEP1",
+          "gene_description": "phosphatase and tensin homolog"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::11374765",
+          "title": "Circular RNAs in human diseases",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11374765/",
+          "text": "518\n A total of 387 circRNAs were found to be differentially expressed in osteoporosis compared with healthy controls, with circDNAH14 (hsa_circ_0016624) preventing osteoporosis by regulating BMP2 via miR\u201098 sponging.\n519\n Among women with postmenopausal osteoporosis (PMO), Liu et\u00a0al. identified 250 DEcircRNAs, with 64 showing a decreasing expression trend and 186 showing increased expression. Circ_0007059 might play a crucial role in osteoclastogenesis via the miR\u2010378/BMP\u20102 signaling pathway, suggesting that targeting the circ_0007059/miR\u2010378/BMP2 axis could be a novel therapeutic approach for osteoporosis.\n520\n Qiao et\u00a0al. found that circRNA_0048211 negatively targets miRNA\u201093\u20105p to upregulate BMP2, thus alleviating the progression of PMO.\n521\n Furthermore, using postmenopausal mouse models, Wang et\u00a0al.\n522\n focused on DEcircRNAs in osteoporotic mice. They identified two ceRNA regulatory pathways in this osteoporosis mouse model: novel circRNA 0020/miR\u2010206\u20103p/Nnmt and circRNA 3832/miR\u20103473e/Runx3, validated by real\u2010time PCR.\n522\nSome studies have revealed that hsa_circ_0001275, hsa_circ_0002060, and hsa_circ_0006859 are recognized as potential novel diagnostic biomarkers of osteoporosis.\n523\n, \n524\n, \n525\n CircFOXP1 can promote osteogenic differentiation of ADSCs and bone regeneration via miR\u201033a\u20105p.\n526\n Circ_0007059 can inhibit bone marrow stromal cell differentiation into osteoclasts via the mRNA\u2010378/BMP\u20102 axis.\n520\n By constructing a circRNA\u2013miRNA\u2013TF\u2013mRNA regulatory network using bioinformatics analysis, researchers identified four associated circRNAs in the ceRNA network: hsa_circ_0023417, hsa_circ_0078309, hsa_circ_0063533, and hsa_circ_0036760, suggesting that these circRNAs may be important regulators of osteoporosis development.\n516\n4\nCircRNAs IN CANCER\nIn this section, we examine the pivotal role of circRNAs in cancer biology, focusing on their implications in tumorigenesis, tumor progression, and therapeutic resistance. By exploring their interactions within the tumor microenvironment (TME) and their influence on cancer cell behavior, we highlight circRNAs as potential biomarkers for early diagnosis and as targets for innovative therapeutic strategies. This section aims to elucidate the complex landscape of circRNAs in cancer and their promise for advancing cancer diagnostics and treatments.\n4.1\nMultiple cancer\u2013circRNA signaling pathways\nCarcinogenesis is closely linked to several signaling pathways. The complexity of signals and their functional roles are essential for the emergence and spread of malignancies and other diseases. Various types of human malignancies have been linked to dysregulated signaling pathways.\n527\n, \n528\n, \n529\n, \n530\n Additionally, certain signaling pathways trigger epithelial\u2013mesenchymal transition (EMT), a significant accelerator of cancer progression. During this process, considered an inducer of cancer metastasis, epithelial cells lose their polarity and differentiated state, obtaining a mesenchymal\u2010like phenotype. Although the underlying processes remain unclear, it has been discovered that certain circRNAs function as ceRNAs for miRNAs involved in EMT signaling pathways, contributing to tumor growth.\n531\n In this study, we explore the roles of signaling pathways in malignant carcinomas, focusing on molecular mechanisms and potential avenues for future intervention.\n4.1.1\nThe PI3K/AKT/mTOR signaling pathway and circRNAs\nNumerous malignancies exhibit highly activated PI3K/AKT/mTOR signaling pathways, facilitated by upstream oncoprotein receptor tyrosine kinases, G\u2010protein\u2010coupled receptors, or RAS oncogenes. Carcinogenesis is associated with dysregulation of the PI3K/AKT/mTOR signaling pathway. Consequently, research has increasingly focused on the associations of circRNAs with the PI3K/AKT signaling pathway.\n532\n, \n533",
+          "cos_sim_score": 0.29900115728378296,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11374765",
+          "title": "Circular RNAs in human diseases",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11374765/",
+          "text": "508\n Extraglandular manifestations such as musculoskeletal pain, fatigue, and systemic features also develop in a significant percentage of patients. This exocrinopathy can occur alone (primary SS, pSS) or secondary to another autoimmune disease such as RA, SLE, and systemic sclerosis (SSc).\n509\n Studies have demonstrated significantly different circRNA expression profiles in the minor salivary glands of pSS patients compared with non\u2010pSS individuals by RNA\u2010seq. Researchers identified 13 significantly DEcircRNAs, most of which showed upregulated expression in pSS. circRNA sequencing indicated circ\u2010IQGAP2 (hsa_circ_0129656) and circ\u2010ZC3H6 (hsa_circ_0001062) as noninvasive biomarkers of pSS.\n510\n3.5.4\nCircRNAs in spondyloarthritis\nAnkylosing spondylitis (AS) is a typical inflammatory rheumatic disease characterized by pathological new bone formation, ankylosis, and chronic inflammation in the spine, with osteoclastogenesis playing a critical role in bone formation.\n511\n Previous research has shown that exosomes from MSCs participate in the modulation of osteoclastogenesis in vitro.\n512\n Researchers discovered that the circRNA derived from TNFRSF1B, circ\u20100110634, was significantly upregulated in AS\u2010MSCs and exosomes from AS\u2010MSCs compared with HD\u2010MSCs and HD\u2010MSC exosomes. They found that circ\u20100110634 plays an inhibitory role in osteoclastogenesis, with AS\u2010MSCs delivering exosomal circ\u20100110634 to restrain the osteoclastogenesis of PBMCs. This role is similar to that of hsa_circ_0002715 and hsa_circ_0035197 in patients with new\u2010onset RA.\n513\n Researchers investigated the circRNA profiles of exosomes via high\u2010throughput RNA sequencing and identified 56 DEcircRNAs in the exosomes of patients with AS compared with healthy controls. These circRNAs were mainly involved in the negative regulation of the TF nuclear factor\u2010\u03baB and bone remodeling, which are potentially related to AS. The most highly AS\u2010correlated pathways identified were the \u201cNotch signaling pathway\u201d and those primarily involved with \u201ccholinergic synapse.\u201d\n514\n Another study conducted circRNA and miRNA expression profiling of osteogenically differentiated BMSCs from patients with AS compared with healthy donors using RNA sequencing. The results showed that 418 circRNAs were significantly differentially expressed, with 204 circRNAs upregulated and 214 downregulated. In vitro experiments showed that silencing hsa_circ_0070562 weakened the osteogenesis of AS\u2010BMSCs, indicating that circ_0070562 functions as a pro\u2010osteogenic factor and might serve as a potential biomarker and therapeutic target for AS.\n515\n3.5.5\nCircRNAs in osteoporosis\nOsteoporosis is one of the most common systemic metabolic bone diseases, particularly prevalent in postmenopausal women.\n516\n It occurs due to excessive bone resorption and impaired bone formation.\n517\n Accumulating evidence suggests that dysregulated circRNAs are associated with the occurrence and progression of osteoporosis, regulating osteoblast and osteoclast differentiation, and may serve as potential biomarkers for the disease. For example, studies have identified circARSB, circAKT3, circPTEN, and circTRPM7 as being associated with osteogenic differentiation during glucocorticoid\u2010induced osteoporosis (GIOP) through a circRNA\u2010targeted miRNA\u2013mRNA axis, providing insights into the pathophysiological mechanisms of GIOP.\n518\n A total of 387 circRNAs were found to be differentially expressed in osteoporosis compared with healthy controls, with circDNAH14 (hsa_circ_0016624) preventing osteoporosis by regulating BMP2 via miR\u201098 sponging.\n519\n Among women with postmenopausal osteoporosis (PMO), Liu et\u00a0al. identified 250 DEcircRNAs, with 64 showing a decreasing expression trend and 186 showing increased expression. Circ_0007059 might play a crucial role in osteoclastogenesis via the miR\u2010378/BMP\u20102 signaling pathway, suggesting that targeting the circ_0007059/miR\u2010378/BMP2 axis could be a novel therapeutic approach for osteoporosis.\n520",
+          "cos_sim_score": 0.2871258854866028,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11374765",
+          "title": "Circular RNAs in human diseases",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11374765/",
+          "text": "484\n A key feature of osteoarthritis (OA) is abnormal chondrocytes, which cause joint pain, tenderness, stiffness, joint swelling, movement limitations, and joint deformity.\n485\n A number of mechanisms are involved in OA, including inflammation, proliferation, apoptosis, autophagy, differentiation, oxidative stress, and mechanical stress (Figure\u00a07). CircRNAs play a key role in OA pathogenesis by acting as intracellular miRNA sponges in chondrocytes, endplate chondrocytes, MSCs, synoviocytes, and macrophages.\n486\n In addition, some circRNAs are involved in OA through other mechanisms, including RBP, m6A, or intercellular exosomal mechanisms, including ECM metabolic imbalance, local tissue inflammation, and multidirectional cell differentiation.\n486\nFIGURE 7\nCircRNAs in osteoarthritis. This diagram elucidates the intricate interactions among circRNAs, miRNAs, and diverse cellular processes implicated in the pathogenesis of osteoarthritis. The circRNA\u2013miRNA interplay is represented as a pivotal regulatory mechanism, modulating apoptosis, inflammation, autophagy, oxidative stress, mechanical stress, cellular proliferation, and extracellular matrix formation. Collectively, these processes play a crucial role in either facilitating or impeding the progression of osteoarthritis. The figure also highlights the importance of understanding these molecular interactions for potential therapeutic interventions in managing osteoarthritis.\nMany circRNAs are disorderedly expressed in OA synovial tissues and immune cells, contributing to abnormal chondrocyte proliferation, synovial inflammation, cartilage erosion, bone damage, and abnormal immune responses. A study by Lin et\u00a0al.\n487\n found that circPhf21a was upregulated in an OA mouse model, affecting OA chondrocyte proliferation through its target VEGFA. CircumPhc3 was downregulated in OA and regulated FoxO1 through miR\u20109\u20103p, affecting chondrocyte metabolism.\n488\n Further, circHGF competes with miR\u201025\u20103p to regulate its expression, affecting the proliferation and osteogenic differentiation of bone marrow mesenchymal stem cells (BMSCs).\n489\n Further research indicates that miR\u20109\u20105p/KLF5 targets circStrn3 and regulates cartilage matrix metabolism and subchondral bone remodeling in OA.\n490\n The findings suggest that circ_0008365 might be a potential therapeutic target or diagnostic biomarker for OA, as it acts as a sponge for miR\u2010338\u20103p to regulate SOX9 expression in vitro.\n491\n In another study, knockdown of hsa_circ_0134111 alleviated OA symptoms by sponging miRNA\u2010224\u20105p.\n492\n According to experiments, circVMA21 protected injured chondrocytes via miR\u2010495\u20103p/FBWX7 axis through its role in OA rats.\n493\n In OA, circCTNNA1 was downregulated, and its overexpression suppressed synoviocyte apoptosis by sponging miR\u201029a.\n494\n The overexpression of Hsa_circ_0005567 reduces chondrocyte apoptosis and may inhibit OA progression by promoting the polarization of M2 macrophages through the miR\u2010492/SOCS2 axis.\n495\n CircRHOT1 augments the expression of CCND1 in chondrocytes by functioning as a sponge for miR\u2010142\u20105p. Both the overexpression of CCND1 and the inhibition of miR\u2010142\u20105p counteract the chondrocyte phenotypes resulting from circRHOT1 depletion, thereby playing a role in chondrocyte autophagy and proliferation during OA.\n496\n A circRSU1\u2013miR\u201093\u20105p\u2013MAP3K8 axis modulates OA progression via oxidative stress regulation, serving as a possible therapeutic target.\n497\nIn a comparative analysis of synovial exosomes between OA synovial and control groups, 98 circRNAs were identified to be differentially expressed. Among these, 34 circRNAs were found to be enriched in the PI3K/Akt and autophagy pathways, exhibiting correlations with 7 mRNAs. These circRNAs play crucial roles in the pathological mechanisms underlying OA.\n498\n CircRNAs act as miRNA sponges to inhibit mRNA translation responsible for OA development, with miRNA sponges acting as circRNA sponges.\n499",
+          "cos_sim_score": 0.2032371461391449,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11374765",
+          "title": "Circular RNAs in human diseases",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11374765/",
+          "text": "457\n Finally, the study by Cui et\u00a0al.\n458\n focused on FSGS and found that circZNF609 is upregulated during disease development. It affects podocyte injury and renal fibrosis by regulating the expression of miR\u2010615\u20105p. This study illuminates the molecular mechanisms of FSGS and provides directions for developing new treatment strategies.\n458\nCircRNAs play diverse and complex roles in nephrotic syndrome. By interacting with miRNAs, circRNAs can affect key pathological processes such as podocyte apoptosis and proteinuria, thus playing a central role in the occurrence and development of nephrotic syndrome.\n3.5\nCircRNAs in musculoskeletal and connective tissue diseases\n3.5.1\nCircRNAs in RA\nInflammatory RA causes joint deformities and complete impairment of joint function. There are abnormalities in mast cells, B cells, macrophages, DCs, plasma cells, and T cells involved in RA pathogenesis, as well as the functional behavior of fibroblast\u2010like synoviocytes (FLSs).\n459\nCircRNAs and their sponge effect on miRNAs contribute to the pathogenesis of RA by regulating target genes. Many circRNAs, such as circRNA_092516, circRNA_003524, circRNA_103047, and circRNA_101873, are documented to be aberrantly expressed in RA.\n460\n CircRNAs in exosomes and RNA methylation are closely related to RA pathogenesis.\n461\n Additionally, circulating RNAs play a role in RA's pathological mechanisms in PBMCs and macrophages. Ouyang et\u00a0al.\n462\n identified and validated five circRNAs (092516, 003524, 103047, 104871, 101873) significantly elevated in PBMCs of RA patients. The circ_0008360 gene has emerged as a pivotal regulator of inflammation, with its dysregulation considered highly significant in RA.\n463\n Geng and colleagues\n464\n investigated the functional consequences of circ_0088036 in the advancement of RA and revealed the mechanisms behind it. Circ_0088036 contributes to the activity of RA induced by TNF\u2010\u03b1, partly through the miR\u2010326/FZD4 signaling pathway.\n464\n Additionally, circ_0088036 promotes synovial pathogenesis through the circ_0088036/miR\u2010140\u20103p/SIRT1 axis in RA.\n465\n Circ_0000479 facilitates RA development by interacting with miR\u2010766, leading to increased FKBP5 expression.\n466\n Yang et\u00a0al.\n467\n discovered that circRNA_17725 promotes M2 polarization of macrophages to alleviate arthritis symptoms. Wang et\u00a0al.\n468\n demonstrated that blocking the circPTN/miR\u2010145\u20105p/FZD4 signaling axis could effectively inhibit RA pathology.\nCircRNAs affect the proliferation, migration, and inflammatory reactions of RA\u2010FLSs. These interactions form circRNA\u2013miRNA axes that participate in various biological activities within RA\u2010FLSs. FLSs are mesenchymal\u2010origin cells crucial for the synovium's physiological functions, contributing to synthesizing specific constituents in synovial fluid and articular cartilage. Recent investigations have revealed that circRNAs contribute to various FLS activities, including metastasis, proliferation, and cytokine production.\n469\n Circ_0001947 is involved in RA pathogenesis by enhancing STAT3 expression through sequestering miR\u2010671\u20105p.\n470\n Circ_0002984 regulates RA\u2010FLS activity by interacting with miR\u2010543, leading to upregulated PCSK6 expression.\n471\n CircAFF2 promotes RA initiation and advancement by modulating the miR\u2010650/CNP axis, enhancing proliferation, inflammatory response, migration, and invasion of RA\u2010FLSs.\n472\n CircMAPK9 affects RA\u2010FLS activity by modulating the miR\u2010140\u20103p/PPM1A axis.\n473\n CircSirt1's protective mechanism on FLS involves impeding cell proliferation, fostering apoptosis, and facilitating the miR\u2010132\u2010mediated Sirt1 pathway, thus reducing inflammation.\n474\n Inhibition of circ_0004712 suppresses aggressive phenotypic changes in RA\u2010FLSs by modulating the miR\u2010633/TRAF6 axis and NF\u2010\u03baB signaling.\n475\n Circ_0025908 silencing alleviates dysfunctions in RA\u2010FLSs by targeting the miR\u2010650/SCUBE2 axis.\n476",
+          "cos_sim_score": 0.19446523487567902,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11374765",
+          "title": "Circular RNAs in human diseases",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11374765/",
+          "text": "347\n As recently discovered, many circRNAs are related to MSCs adipogenesis.\n336\n, \n337\n, \n348\n For instance, circFOXP1 sponges miR\u201017\u20103p/miR\u2010127\u20105p and shows indirect regulation of EGFR and noncanonical Wnt pathways, thus maintaining the MSC stemness.\n349\n CircRNA CDR1as silencing can promote osteogenic differentiation of BMSCs and suppress their adipogenic differentiation, whereas CDR1as overexpression has opposite effects. Mechanistically, CDR1as competitively binds miR\u20107\u20105p to WNT5B for enhancing adipogenic differentiation.\n337\n CircRNA\u2013vgll3, through the direct sequestering of cytoplasmic miR\u2010326\u20105p and inhibition of miR\u2010326\u20105p activity, promotes osteogenic differentiation of ADSCs.\n336\n miR\u2010338\u20103p can upregulate circRNA_013422 and circRNA_22566 in osteogenic differentiation of mouse ADSCs.\n338\n miR\u2010338\u20103p targets Fgfr2 and Runx2 to modulate osteogenic differentiation of mouse bone marrow stromal stem cells.\n339\n CircRNA_23525 targets miR\u201030a\u20103p to modulate Runx2 expression, which has been detected as the active regulatory factor for the osteogenic differentiation of ADSCs.\n340\nCircRNAs and liver lipid metabolism\nThe liver exerts an essential effect on various metabolic processes, including lipid digestion, absorption, production, transportation, and decomposition. Drink abuse, obesity, and diabetes can induce the liver lipid metabolic disturbance. Excess liver lipid accumulation produces massive reactive oxygen species, which causes mitochondrial dysfunction and endoplasmic reticulum stress within hepatocytes, ultimately inducing NAFLD.\n350\n, \n351\n, \n352\n Numerous circRNAs are suggested to regulate lipid metabolism and influence lipid disorder occurrence.\n345\n, \n353\nA high\u2010fat diet in the mother can change liver miRNAs expression in her offspring and impair the metabolic health.\n354\n Current research has clarified a novel mechanism underlying the role of maternal obesity in liver lipid metabolism of offspring. Through liver RNA sequencing on offspring of high\u2010fat\u2010diet\u2010fed C57BL/6J mice, Chen et\u00a0al.\n341\n detected 231 DEcircRNAs, including 121 with upregulation whereas 110 with downregulation. circRNA_0000660 expression is significantly related to Igfbp1 expression, while circRNA_0000660 silencing decreases liver lipid accumulation. Maternal obesity induces metabolic disorders in offspring by changing liver circRNA expression. CircHIPK3 modulates lipid metabolism within hepatocytes. It promotes triglyceride level and adipose deposition within HepG2 cells, and induces diabetes\u2010associated metabolic diseases like insulin resistance and hyperglycemia by decreasing miR\u2010192\u20105p and increasing its downstream TF FOXO1.\n233\nCircRNAs are widely suggested with vital effects on regulating hepatic steatosis\n355\n, \n356\n (Figure\u00a05). miR\u201034a can bind to PPAR\u03b1 in rodents, which suppresses lipid metabolism and enhances hepatic steatosis, while circRNA_0046366 and circRNA_0046367 compete against PPAR\u03b1 for binding to miR\u201034a. These circRNAs act as endogenous regulators of miR\u201034a, reducing hepatic steatosis by suppressing the interaction of miR\u201034a with MRE within PPAR\u03b1 mRNA. Aberrant circRNA_0046366 and circRNA_0046367/miR\u201034a/PPAR\u03b1 signaling is the potential novel target for treating hepatic steatosis.\n342\n, \n343\n In high\u2010fat\u2010diet\u2010mediated hepatic steatosis, circRNA_021412 expression significantly decreases.\n344\n circRNA_021412 downregulation suppresses the competitive inhibition on miR\u20101972, therefore repressing Lpin1, the target gene of miR\u20101972. Lpin1 downregulation can downregulate long\u2010chain acyl CoA synthase, causing hepatic steatosis.\nFIGURE 5\nCircRNAs in the regulation of hepatic steatosis. This figure highlights the roles of circRNAs in hepatic steatosis. CircRNA_0046366 and circRNA_0046367 reduce hepatic steatosis by competing with PPAR\u03b1 for miR\u201034a binding. In NAFLD, abnormal circSCD1 expression promotes fatty liver disease through the JAK2/STAT5 pathway.",
+          "cos_sim_score": 0.19192659854888916,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

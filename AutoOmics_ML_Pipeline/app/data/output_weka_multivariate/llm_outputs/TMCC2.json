@@ -1,0 +1,256 @@
+{
+  "rf_rank": 33,
+  "probe_id": "11721930_a_at",
+  "gene_symbol": "TMCC2",
+  "score": 0.64,
+  "rf_n_nodes": 3,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 2.7601,
+  "log_fc": -2.7601,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 3,
+  "probe_ids": "11721930_a_at | 11744965_x_at | 11721931_s_at",
+  "max_score": 0.64,
+  "mean_abs_fold_change": 2.3241,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T01:52:04",
+  "interpretation": "TMCC2 (Transmembrane and coiled-coil domains protein 2) is implicated in the regulation of amyloid precursor protein (APP) processing, which may influence cellular signaling pathways relevant to bone metabolism. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), TMCC2 was identified as a potential biomarker through differential expression analysis in peripheral serum samples from SONFH patients. The study highlighted that TMCC2, along with other genes, is involved in immune-related biological processes, suggesting a role in the inflammatory response associated with SONFH. The evidence supporting TMCC2's relevance as a biomarker is derived from its identification in a study focused on SONFH, indicating a moderate level of confidence in its potential clinical utility for early diagnosis. However, further validation is necessary to establish its definitive role in SONFH pathology.",
+  "evidence_relation": "direct",
+  "evidence_tier": "Tier 2",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "TMCC2 is a candidate biomarker for early detection of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) due to its involvement in immune-related processes and its identification in differential expression analyses of SONFH patients.",
+  "citations": [
+    "TMCC2 (O75069). https://www.uniprot.org/uniprotkb/O75069",
+    "TMCC2 (O75069-3). https://www.uniprot.org/uniprotkb/O75069-3",
+    "TMCC2 (O75069-2). https://www.uniprot.org/uniprotkb/O75069-2",
+    "TMCC2 \u2014 TMCC2. https://platform.opentargets.org/target/ENSG00000133069",
+    "TMCC2 \u2194 hair color. https://platform.opentargets.org/target/ENSG00000133069/associations",
+    "TMCC2 \u2194 cardiovascular disease. https://platform.opentargets.org/target/ENSG00000133069/associations",
+    "TMCC2 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000133069/associations",
+    "TMCC2 \u2194 coronary artery disease. https://platform.opentargets.org/target/ENSG00000133069/associations",
+    "Screening of Potential Biomarkers in the Peripheral Serum for Steroid-Induced Osteonecrosis of the Femoral Head Based on WGCNA and Machine Learning Algorithms. (2022). https://pubmed.ncbi.nlm.nih.gov/35154510/",
+    "TMCC2 \u2014 transmembrane and coiled-coil domain family 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "APP \u2014 amyloid beta precursor protein (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "AKT1 \u2014 AKT serine/threonine kinase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ADRB2 \u2014 adrenoceptor beta 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TMCC2-AS1 \u2014 TMCC2 antisense RNA 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Screening of Potential Biomarkers in the Peripheral Serum for Steroid-Induced Osteonecrosis of the Femoral Head Based on WGCNA and Machine Learning Algorithms (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8832155/",
+    "Advances in the mechanism for steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12902040/",
+    "ALDH5A1 as a key in osteonecrosis of the femoral head: Insights from bioinformatics and experimental validation (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC13040433/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9572,
+    "completion_tokens": 326,
+    "total_tokens": 9898,
+    "estimated_cost_usd": 0.001631
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O75069",
+          "title": "TMCC2 (O75069)",
+          "url": "https://www.uniprot.org/uniprotkb/O75069",
+          "text": "Protein: Transmembrane and coiled-coil domains protein 2\nFunction: May be involved in the regulation of the proteolytic processing of the amyloid precursor protein (APP) possibly also implicating APOE",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::O75069-3",
+          "title": "TMCC2 (O75069-3)",
+          "url": "https://www.uniprot.org/uniprotkb/O75069-3",
+          "text": "Protein: Isoform 3 of Transmembrane and coiled-coil domains protein 2",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::O75069-2",
+          "title": "TMCC2 (O75069-2)",
+          "url": "https://www.uniprot.org/uniprotkb/O75069-2",
+          "text": "Protein: Isoform 2 of Transmembrane and coiled-coil domains protein 2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000133069::function",
+          "title": "TMCC2 \u2014 TMCC2",
+          "url": "https://platform.opentargets.org/target/ENSG00000133069",
+          "text": "Function: May be involved in the regulation of the proteolytic processing of the amyloid precursor protein (APP) possibly also implicating APOE. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000133069::EFO_0003924",
+          "title": "TMCC2 \u2194 hair color",
+          "url": "https://platform.opentargets.org/target/ENSG00000133069/associations",
+          "text": "Disease: hair color\nDescription: Color of hair or fur.\nAssociation score: 0.285",
+          "cos_sim_score": 0.28535230253321514,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000133069::EFO_0000319",
+          "title": "TMCC2 \u2194 cardiovascular disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000133069/associations",
+          "text": "Disease: cardiovascular disease\nDescription: Pathological conditions involving the CARDIOVASCULAR SYSTEM including the HEART; the BLOOD VESSELS; or the PERICARDIUM.\nAssociation score: 0.278",
+          "cos_sim_score": 0.2778669649071093,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000133069::EFO_0005772",
+          "title": "TMCC2 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000133069/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.223",
+          "cos_sim_score": 0.22329059745661062,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000133069::EFO_0001645",
+          "title": "TMCC2 \u2194 coronary artery disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000133069/associations",
+          "text": "Disease: coronary artery disease\nDescription: Thickening and loss of elasticity of the CORONARY ARTERIES, leading to progressive arterial insufficiency (CORONARY DISEASE).\nAssociation score: 0.160",
+          "cos_sim_score": 0.16023160903636344,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::35154510",
+          "title": "Screening of Potential Biomarkers in the Peripheral Serum for Steroid-Induced Osteonecrosis of the Femoral Head Based on WGCNA and Machine Learning Algorithms.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35154510/",
+          "year": "2022",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SONFH) has produced a substantial burden of medical and social experience. However, the current diagnosis is still limited. Thus, this study is aimed at identifying potential biomarkers in the peripheral serum of patients with SONFH. The expression profile data of SONFH (number: GSE123568) was acquired from the Gene Expression Omnibus (GEO) database. Differentially expressed genes (DEGs) in SONFH were identified and used for weighted gene coexpression network analysis (WGCNA). Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analyses were performed to investigate the biological functions. The protein-protein interaction (PPI) network and machine learning algorithms were employed to screen for potential biomarkers. Gene set enrichment analysis (GSEA), transcription factor (TF) enrichment analysis, and competing endogenous RNA (ceRNA) network were used to determine the biological functions and regulatory mechanisms of the potential biomarkers. A total of 562 DEGs, including 318 upregulated and 244 downregulated genes, were identified between SONFH and control samples, and 94 target genes were screened based on WGCNA. Moreover, biological function analysis suggested that target genes were mainly involved in erythrocyte differentiation, homeostasis and development, and myeloid cell homeostasis and development. Furthermore, GYPA, TMCC2, and BPGM were identified as potential biomarkers in the peripheral serum of patients with SONFH based on machine learning algorithms and showed good diagnostic values. GSEA revealed that GYPA, TMCC2, and BPGM were mainly involved in immune-related biological processes (BPs) and signaling pathways. Finally, we found that GYPA might be regulated by hsa-miR-3137 and that BPGM might be regulated by hsa-miR-340-3p. GYPA, TMCC2, and BPGM are potential biomarkers in the peripheral serum of patients with SONFH and might affect SONFH by regulating erythrocytes and immunity.",
+          "cos_sim_score": 0.4649486243724823,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "TMCC2 \u2014 transmembrane and coiled-coil domain family 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TMCC2\nGene name: transmembrane and coiled-coil domain family 2\nAliases / synonyms: HUCEP11\nOrganism: Homo sapiens\nGene summary: Involved in amyloid precursor protein metabolic process. Located in endoplasmic reticulum. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TMCC2",
+          "aliases": "HUCEP11",
+          "gene_description": "transmembrane and coiled-coil domain family 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "APP \u2014 amyloid beta precursor protein",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: APP\nGene name: amyloid beta precursor protein\nAliases / synonyms: AAA, ABETA, ABPP, AD1, APPI, CTFgamma, CVAP, PN-II, PN2, alpha-sAPP, preA4\nOrganism: Homo sapiens\nGene summary: This gene encodes a cell surface receptor and transmembrane precursor protein that is cleaved by secretases to form a number of peptides. Some of these peptides are secreted and can bind to the acetyltransferase complex APBB1/TIP60 to promote transcriptional activation, while others form the protein basis of the amyloid plaques found in the brains of patients with Alzheimer disease. In addition, two of the peptides are antimicrobial peptides, having been shown to have bacteriocidal and antifungal activities. Mutations in this gene have been implicated in autosomal dominant Alzheimer disease and cerebroarterial amyloidosis (cerebral amyloid angiopathy). Multiple transcript variants encoding several different isoforms have been found for this gene. [provided by RefSeq, Aug 2014]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "APP",
+          "aliases": "AAA, ABETA, ABPP, AD1, APPI, CTFgamma, CVAP, PN-II, PN2, alpha-sAPP, preA4",
+          "gene_description": "amyloid beta precursor protein"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "AKT1 \u2014 AKT serine/threonine kinase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AKT1\nGene name: AKT serine/threonine kinase 1\nAliases / synonyms: AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA\nOrganism: Homo sapiens\nGene summary: This gene encodes one of the three members of the human AKT serine-threonine protein kinase family which are often referred to as protein kinase B alpha, beta, and gamma. These highly similar AKT proteins all have an N-terminal pleckstrin homology domain, a serine/threonine-specific kinase domain and a C-terminal regulatory domain. These proteins are phosphorylated by phosphoinositide 3-kinase (PI3K). AKT/PI3K forms a key component of many signalling pathways that involve the binding of membrane-bound ligands such as receptor tyrosine kinases, G-protein coupled receptors, and integrin-linked kinase. These AKT proteins therefore regulate a wide variety of cellular functions including cell proliferation, survival, metabolism, and angiogenesis in both normal and malignant cells. AKT proteins ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AKT1",
+          "aliases": "AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA",
+          "gene_description": "AKT serine/threonine kinase 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ADRB2 \u2014 adrenoceptor beta 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ADRB2\nGene name: adrenoceptor beta 2\nAliases / synonyms: ADRB2R, ADRBR, ARB2, B2AR, BAR, BETA2AR\nOrganism: Homo sapiens\nGene summary: This gene encodes beta-2-adrenergic receptor which is a member of the G protein-coupled receptor superfamily. This receptor is directly associated with one of its ultimate effectors, the class C L-type calcium channel Ca(V)1.2. This receptor-channel complex also contains a G protein, an adenylyl cyclase, cAMP-dependent kinase, and the counterbalancing phosphatase, PP2A. The assembly of the signaling complex provides a mechanism that ensures specific and rapid signaling by this G protein-coupled receptor. This receptor is also a transcription regulator of the alpha-synuclein gene, and together, both genes are believed to be associated with risk of Parkinson's Disease. This gene is intronless. Different polymorphic forms, point mutations, and/or downregulation of this gene are associated wit...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ADRB2",
+          "aliases": "ADRB2R, ADRBR, ARB2, B2AR, BAR, BETA2AR",
+          "gene_description": "adrenoceptor beta 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TMCC2-AS1 \u2014 TMCC2 antisense RNA 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TMCC2-AS1\nGene name: TMCC2 antisense RNA 1\nOrganism: Homo sapiens",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TMCC2-AS1",
+          "aliases": "",
+          "gene_description": "TMCC2 antisense RNA 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::8832155",
+          "title": "Screening of Potential Biomarkers in the Peripheral Serum for Steroid-Induced Osteonecrosis of the Femoral Head Based on WGCNA and Machine Learning Algorithms",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8832155/",
+          "text": "1. Introduction\nSteroid-induced osteonecrosis of the femoral head (SONFH), a chronic and progressive femoral head disease mainly induced by long-term exposure to excessive glucocorticoids, can cause hip joint damage and dysfunction and ultimately affect the quality of life [1]. The worldwide morbidity of SONFH is increasing year by year, and it is estimated that 20,000-30,000 patients are diagnosed with SONFH that does not depend on transmission each year in United States [2]. In particular, it is expected that the incidence of SONFH will rise in the next few years around the world because of the continuing impacts of the novel coronavirus pandemic since 2019 (COVID-19) [3]. Currently, although the diagnosis of SONFH, especially joint imaging techniques, is well established, patients with an early stage of SONFH are difficult to find because of the lack of effective and specific biomarkers [4]. Moreover, the cost and inconvenience of joint imaging techniques severely limit their application, specifically in China [5, 6]. Furthermore, total hip arthroplasty is effective in improving the quality of life, but most patients still endure the mental and financial pressure [7]. Therefore, the development of new biomarkers for SONFH diagnosis and treatment is urgently needed.\nWith the ongoing progression in sequencing technologies, bioinformatics analysis is an emerging and promising tool for screening potential biomarkers in a variety of neoplastic and nonneoplastic diseases [8, 9]. Data remining by using bioinformatics analysis based on public databases has facilitated the screening of new biomarkers for nonneoplastic diseases [10, 11]. In particular, combining weighted gene coexpression network analysis (WGCNA) and machine learning algorithms has greatly improved the accurate identification of disease-related biomarkers [12\u201315]. For example, FADD, CXCL2, and CXCL8 were identified as immune-related biomarkers of rheumatoid arthritis by integrating WGCNA and least absolute shrinkage and selection operator (LASSO) logistic regression and support vector machine recursive feature elimination (SVM-RFE) algorithms [12]. MACROD1 was found to contribute to the early diagnosis of tendinopathy based on the LASSO model, SVM-REF, and Gaussian mixture model (GMMs) algorithms [13]. Moreover, LSP1, GNLY, and MEOX2 are likely to aid in the diagnosis and treatment of rheumatoid arthritis based on WGCNA machine learning strategies. Furthermore, CDK1, TOP2A, ADRA1A, FANCI, XRCC1, TPX2, CCNB2, CDK4, GLYATL1, and CFHR3 were identified to be core hub genes as potential biomarkers and treatment targets for hepatoblastoma by integrating WGCNA and random forest (RF) algorithm [14]. However, most bioinformatics analyses for SONFH have not been performed by integrating WGCNA and machine learning algorithms.\nTherefore, the present study is aimed at identifying potential biomarkers in the peripheral serum for SONFH by integrating WGCNA and machine learning algorithms, including LASSO logistic regression, SVM-RFE, and RF. First, we identified differentially expressed genes (DEGs) between SONFH and control samples in the GSE123568 dataset downloaded from the Gene Expression Omnibus (GEO) database (https://www.ncbi.nlm.nih.gov/geo/) in NCBI. Moreover, WGCNA was performed based on the expression matrix of DEGs to screen target genes, and machine learning algorithms were used to identify potential biomarkers. Finally, we investigated the possible functions and regulatory mechanisms of the potential biomarkers. This study may provide new biomarkers for the diagnosis and treatment of SONFH and contribute to clarifying the pathogenesis of SONFH.\n2. Material and Methods\n2.1. Data Collection and Preprocessing\nThe gene expression matrix of the peripheral serum for 30 SONFH and 10 control samples from China in the GSE123568 dataset, which was sequenced using the GPL15207 platform, was obtained from the GEO database.\n2.2. Identification of DEGs in the Peripheral Serum of Patients with SONFH\n\u201cLimma\u201d R package was used to screen DEGs between SONFH and control samples [16], and genes with P < 0.01 and \u2223log2FC | >1 were regarded as DEGs.\n2.3. Screening of Target Modules and Genes Based on WGCNA",
+          "cos_sim_score": 0.5641499757766724,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12902040",
+          "title": "Advances in the mechanism for steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12902040/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a progressive disease affecting primarily individuals aged 30\u201350, characterized by femoral head ischemia and osteocyte death.1\u20133 ONFH cases have generally increased over the past decade worldwide.4,5 Patients with ONFH often report pain localized to the hip, buttock, or groin, accompanied by restricted hip joint motion, with nearly 80% of patients eventually experiencing femoral head collapse2,6\u20139 Diagnostic imaging plays a crucial role in identifying the disease, with the \u201cdouble-line sign\u201d on magnetic resonance imaging (MRI) and the \u201ccrescent sign\u201d on X-rays serving as characteristic features of ONFH.2,9\u201311 The main types of ONFH are categorized into generally traumatic and non-traumatic ONFH (caused by glucocorticoid use, alcohol abuse, or idiopathic).\nGlucocorticoids (GCs) use is the most common non-traumatic cause of ONFH, which ranges about 40%\u201360% among all non-traumatic ONFH patients.4,5 A novel epidemiology showed a rise to 75% of non-traumatic ONFH related to GCs treatment.4 GCs exert their effects by binding to the glucocorticoid receptor (GR), that expressed in nearly all cells, regulating cell growth, differentiation, and apoptosis.9,12 In its inactive state, GR resides in the cytoplasm, associated with a complex of proteins such as heat shock proteins (HSP90, HSP70) and immunophilins (e.g., FKBP51, FKBP52). Upon GCs binding, the complex disassembles, activating GR, which then translocates to the nucleus, where it interacts with target genes, initiating transcriptional responses that mediate GCs' effects.13\u201315 GC-induced ONFH has been proven to vary from other types of ONFH in many aspects. Patients with SONFH tend to exhibit more rapid disease progression, higher rates of bilateral involvement, and earlier femoral head collapse compared to those with alcohol-induced or idiopathic ONFH.16\u201318 Notably, while both SONFH and alcohol-induced ONFH are characterized by lipid dysregulation, SONFH is marked by GC-induced bone marrow adipogenesis, whereas the alcohol-induced subtype is more closely related to hepatic lipid metabolism and dysfunction.17,19\nAdvances in medical imaging and bioinformatics have enhanced our understanding of SONFH, offering novel insights into its pathophysiology.20\u201322 However, a comprehensive review of the underlying causes of SONFH has yet to be concluded. In this review, we highlight recent findings on the mechanisms of SONFH from multiple perspectives. General pathological changes, such as impaired blood supply and biomechanical alterations, are key contributors to the disease process. Abnormal neuronal transmission has also been identified as a factor for SONFH pathology. At the cellular level, irregular cell differentiation and increased cell death play critical roles in the progression of SONFH. On a molecular scale, altered activity of crucial factors and related signaling cascades, as well as disordered non-coding RNAs (ncRNAs), have been implicated in the pathogenesis of the disease. Finally, the role of genetic variations in SONFH susceptibility is increasingly being recognized (Fig. 1). By summarizing these advancements, we aim to provide a comprehensive understanding of SONFH mechanisms, which may inspire further research and develop novel treatment strategies.Fig. 1Potential mechanism of steroid-induced osteonecrosis of the femoral head\nFig. 1\nPotential mechanism of steroid-induced osteonecrosis of the femoral head\nGeneral pathological alternation",
+          "cos_sim_score": 0.5602645874023438,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12902040",
+          "title": "Advances in the mechanism for steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12902040/",
+          "text": "b (i) Histological analysis of the femoral head revealed a distinct characteristic in the methylprednisolone group: empty bone depressions and necrosis with bone cell adhesion. Remarkably, treatment with miR-224-5p antagomir significantly reduced the occurrence of osteonecrosis of the femoral head from 58.3% to 8.3%. (ii) Micro-CT result showed that MiR-224-5p antagomir could significantly increase the trabecular thickness while decreasing the trabecular separation of the femoral head. Reproduced with permission. Copyright 2021, Elsevier.243\nc DEGs between SONFH patients and control samples. Volcano plot (i) showing the expression levels of DEGs. Heat map (ii) showing the expression levels of the top 100 DEGs. Reproduced with permission. Copyright 2022, Zhang et al.244\nd The mechanism of the regulatory effect of CDR1as in SONFH-BMSCs. Reproduced with permission. Copyright 2020, Chen et al.267\ne The mechanistic illustration shows that in SONFH, CircPVT1 is decreased. Elevating CircPVT1 levels results in decreased expression of TGF\u03b2/Smad2/3 and enhances Smad7 activation through targeting miR-21-5p, consequently reducing SONFN. Reproduced with permission. Copyright 2021, Hao et al.168\nFig. 9\nNon-coding RNAs regulating the process of SONFH. a MiR-224-5p regulates the nuclear retention of TAZ. (i) shows a schematic diagram of the TAZ mechanism. The Smad4-TAZ axis was supposed to play a pivotal role in adipogenesis and osteogenesis because TAZ in the nucleus could interact with both Runx2 and PPAR\u03b3. (ii) shows the immunofluorescence examination of the nuclear retention of TAZ. Reproduced with permission. Copyright 2021, Elsevier.243\nb (i) Histological analysis of the femoral head revealed a distinct characteristic in the methylprednisolone group: empty bone depressions and necrosis with bone cell adhesion. Remarkably, treatment with miR-224-5p antagomir significantly reduced the occurrence of osteonecrosis of the femoral head from 58.3% to 8.3%. (ii) Micro-CT result showed that MiR-224-5p antagomir could significantly increase the trabecular thickness while decreasing the trabecular separation of the femoral head. Reproduced with permission. Copyright 2021, Elsevier.243\nc DEGs between SONFH patients and control samples. Volcano plot (i) showing the expression levels of DEGs. Heat map (ii) showing the expression levels of the top 100 DEGs. Reproduced with permission. Copyright 2022, Zhang et al.244\nd The mechanism of the regulatory effect of CDR1as in SONFH-BMSCs. Reproduced with permission. Copyright 2020, Chen et al.267\ne The mechanistic illustration shows that in SONFH, CircPVT1 is decreased. Elevating CircPVT1 levels results in decreased expression of TGF\u03b2/Smad2/3 and enhances Smad7 activation through targeting miR-21-5p, consequently reducing SONFN. Reproduced with permission. Copyright 2021, Hao et al.168",
+          "cos_sim_score": 0.5515152215957642,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12902040",
+          "title": "Advances in the mechanism for steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12902040/",
+          "text": "e A diagram showing hypoxia affects the differentiation of BMSCs into osteoblasts by regulating HIF-1\u03b1 expression. Reproduced with permission. Copyright 2022, Chen et al.145\nf Immunohistochemical examination of S100A9 in femoral head tissue revealed robust staining in various components. Injured vessels (i), marrow adipose (ii), fibrotic tissue (iii), and osteocytes in cortical bone, as well as inflammatory cells (iv), exhibited intense S100A9 immunostaining. Moreover, there were notable elevations in S100A9-immunostained vessels, adipocytes, fibroblasts, and osteocytes. Reproduced with permission. Copyright 2019, Wu et al.28\nFig. 6\nMolecular factors dysregulation in SONFH. a Micro-CT examination revealed the contour of the femoral head. In group i (gradually treated with 2\u2009mL of 50\u2009mg/mL VEGFR2 antibody) and group ii (gradually treated with 2\u2009mL of 25\u2009mg/mL VEGFR2 antibody), findings included subchondral cysts, sparse trabecular changes, and deformation of the femoral head. Additionally, group iii (gradually treated with 2\u2009mL of 12.5\u2009mg/mL VEGFR2 antibody) exhibited slight trabecular changes. Conversely, group iv (saline group) displayed tightly packed trabeculae and an intact femoral head. Reproduced with permission. Copyright 2013, Elsevier.138\nb Representative image of the proximal epiphysis of the femur on the 7th day of the experiment. At \u00d740 magnification, (i) greater VEGF immunostaining was observed in the sildenafil group (black arrows). A similar result was shown for OPN, especially in the regions around the trabeculae (ii). Goldner\u2019s trichrome staining (iii) showed the greater formation of osteoid tissue (the corresponding area is highlighted in red and indicated by black arrowheads, indicative of newly formed and noncalcified bone tissue). Immunohistochemistry (iv) with PAS staining is suggestive of higher production of carbohydrates and suggests higher metabolic activity in the treated group. Reproduced with permission. Copyright 2020, Orthopaedic Research Society.139\nc A figure showing that HIF-1\u03b1 could couple angiogenesis and osteogenesis. Reproduced with permission. Copyright 2022, Chen et al.145\nd A suggested mechanism of elevated IL-6 levels in the synovial fluid and initiation of synovitis in the hip joint due to HIF-1\u03b1 following the induction of SONFH. Reproduced with permission. Copyright 2016, The Journal of Bone and Joint Surgery.151\ne A diagram showing hypoxia affects the differentiation of BMSCs into osteoblasts by regulating HIF-1\u03b1 expression. Reproduced with permission. Copyright 2022, Chen et al.145\nf Immunohistochemical examination of S100A9 in femoral head tissue revealed robust staining in various components. Injured vessels (i), marrow adipose (ii), fibrotic tissue (iii), and osteocytes in cortical bone, as well as inflammatory cells (iv), exhibited intense S100A9 immunostaining. Moreover, there were notable elevations in S100A9-immunostained vessels, adipocytes, fibroblasts, and osteocytes. Reproduced with permission. Copyright 2019, Wu et al.28\nHIF-1\u03b1",
+          "cos_sim_score": 0.5324261784553528,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::13040433",
+          "title": "ALDH5A1 as a key in osteonecrosis of the femoral head: Insights from bioinformatics and experimental validation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13040433/",
+          "text": "Introduction\nOsteonecrosis of the Femoral Head (ONFH) is a prevalent clinical condition characterized by the degeneration of subchondral bone, leading to severe hip pain and substantial functional impairment (1,2). The disease is multifactorial, with the primary cause being disruption of blood supply to the femoral head, resulting in the death of bone cells, subsequent collapse of the femoral head, and degenerative changes in the hip joint. While corticosteroid use, alcohol consumption, sickle cell disease, and trauma are well-established risk factors for ONFH, the precise mechanisms underlying its pathogenesis remain unclear (3,4). Treatment options for early-stage ONFH range from surgical procedures aimed at preserving hip function to pharmacological therapies (5,6). However, most patients ultimately require total hip arthroplasty, which remains the most effective treatment (7,8). Moreover, many young patients face the need for revision surgeries, exacerbating the socioeconomic burden. Consequently, there is an urgent need to identify novel biomarkers and therapeutic targets, which are crucial for early diagnosis and the development of new treatment strategies for ONFH.\nRecent research has increasingly focused on the role of biomolecules in ONFH pathogenesis. For instance, Yu et al demonstrated the significant influence of immune cell infiltration on ONFH onset and progression, highlighting a close correlation with specific immune cell subpopulations (9). Fang et al identified that immune and m6A regulatory factors play pivotal roles in mediating the inflammatory response in ONFH, particularly involving Th2-dominated immune cells and inflammatory mediators (10). However, the detailed pathological processes remain incompletely understood. Additionally, gene chips and high-throughput sequencing technologies have proven valuable for identifying pathogenic genes, providing reliable and actionable insights (11). Thus, investigating novel molecular markers and immune cell infiltration in ONFH is critical for elucidating its underlying pathogenic mechanisms.\nThis study integrated microarray datasets from the Gene Expression Omnibus (GEO) database with cartilage samples from patients with ONFH and supplemented these with our own microarray data derived from subchondral bone samples of ONFH individuals. Using machine learning techniques, this study identified key genes, validated them via ROC analysis, and compared immune cell infiltration across 22 immune cell subtypes in ONFH and healthy controls using the CIBERSORT algorithm. This study further identified key molecular pathways and functional networks within ONFH tissues, employing bioinformatics analysis to elucidate the roles of differentially expressed mRNAs. Ultimately, critical feature genes were identified as molecular markers for both ONFH diagnosis and immune infiltration.\nMaterials and methods\nObtaining and handling data\nThe GEO database (http://www.ncbi.nlm.nih.gov/geo/) was utilized to download experimental group files for GSE74089 and GSE123568. The dataset, consisting of 14 normal synovial tissue samples (labeled as \u2018normal\u2019) and 34 ONFH synovial tissue samples (labeled as \u2018ONFH\u2019), was processed using the limma package in R software (version 3.58.1) for data correction and normalization. The samples were divided into two groups: the ONFH group (designated as \u2018Treatment\u2019) and the normal group (designated as \u2018Control\u2019). Additionally, GSE178557, which included four samples each of ONFH and normal synovial tissue, was used as an independent validation dataset for external verification.\nIdentification of DEGs and characteristic genes\nTo identify differentially expressed genes (DEGs), a multi-step approach was employed. The limma package in R (version 3.58.1) was used to filter DEGs from all datasets, applying the criteria of logFC >1 and an adjusted P-value <0.05. Following DEG screening, feature genes were selected using Lasso regression, with the glmnet (version 4.1-7) and e1071 (version 1.7-14) packages. Additionally, the Support Vector Machine (SVM) algorithm, implemented via the e1071 package (version 1.7-14), was applied to DEGs to identify another set of feature genes. Finally, Random Forest (RF) analysis was conducted on the DEGs using ggplot2 software, and genes with a gene importance score greater than 2 (rfGenes >2) were selected. By intersecting the characteristic genes identified by these three methods, a final subset of significant genes was obtained. One of these genes was chosen for further investigation as a potential marker gene.\nEvaluate the accuracy of characteristic genes",
+          "cos_sim_score": 0.5320950746536255,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::35154510",
+          "title": "Screening of Potential Biomarkers in the Peripheral Serum for Steroid-Induced Osteonecrosis of the Femoral Head Based on WGCNA and Machine Learning Algorithms.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35154510/",
+          "year": "2022",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SONFH) has produced a substantial burden of medical and social experience. However, the current diagnosis is still limited. Thus, this study is aimed at identifying potential biomarkers in the peripheral serum of patients with SONFH. The expression profile data of SONFH (number: GSE123568) was acquired from the Gene Expression Omnibus (GEO) database. Differentially expressed genes (DEGs) in SONFH were identified and used for weighted gene coexpression network analysis (WGCNA). Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analyses were performed to investigate the biological functions. The protein-protein interaction (PPI) network and machine learning algorithms were employed to screen for potential biomarkers. Gene set enrichment analysis (GSEA), transcription factor (TF) enrichment analysis, and competing endogenous RNA (ceRNA) network were used to determine the biological functions and regulatory mechanisms of the potential biomarkers. A total of 562 DEGs, including 318 upregulated and 244 downregulated genes, were identified between SONFH and control samples, and 94 target genes were screened based on WGCNA. Moreover, biological function analysis suggested that target genes were mainly involved in erythrocyte differentiation, homeostasis and development, and myeloid cell homeostasis and development. Furthermore, GYPA, TMCC2, and BPGM were identified as potential biomarkers in the peripheral serum of patients with SONFH based on machine learning algorithms and showed good diagnostic values. GSEA revealed that GYPA, TMCC2, and BPGM were mainly involved in immune-related biological processes (BPs) and signaling pathways. Finally, we found that GYPA might be regulated by hsa-miR-3137 and that BPGM might be regulated by hsa-miR-340-3p. GYPA, TMCC2, and BPGM are potential biomarkers in the peripheral serum of patients with SONFH and might affect SONFH by regulating erythrocytes and immunity.",
+          "cos_sim_score": 0.4649486243724823,
+          "source_type": "pubmed"
+        }
+      ]
+    }
+  ]
+}

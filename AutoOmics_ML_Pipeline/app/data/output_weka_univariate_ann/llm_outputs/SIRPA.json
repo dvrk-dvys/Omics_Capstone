@@ -1,0 +1,234 @@
+{
+  "rf_rank": 11,
+  "probe_id": "11719728_s_at",
+  "gene_symbol": "SIRPA",
+  "score": 0.72,
+  "rf_n_nodes": 1,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 1.3363,
+  "log_fc": 1.3363,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11719728_s_at",
+  "max_score": 0.72,
+  "mean_abs_fold_change": 1.3363,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:23:10",
+  "interpretation": "SIRPA (Signal Regulatory Protein Alpha) is an immunoglobulin-like receptor that plays a significant role in cellular signaling, particularly in the regulation of immune responses and cell adhesion. Its interaction with CD47 inhibits phagocytosis and modulates inflammatory responses, which are critical in the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH). The retrieved evidence indicates that SIRPA is involved in pathways related to inflammation and bone homeostasis, which are disrupted in SONFH. However, the direct link between SIRPA and SONFH is not strongly established in the literature, leading to a moderate confidence in its relevance as a biomarker. Thus, while SIRPA may have potential as a biomarker for SONFH, further studies are needed to validate its clinical utility in early detection.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 2",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "SIRPA may influence inflammatory processes and bone homeostasis relevant to the pathogenesis of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "SIRPA (P78324). https://www.uniprot.org/uniprotkb/P78324",
+    "SIRPA (P78324-4). https://www.uniprot.org/uniprotkb/P78324-4",
+    "SIRPA (P78324-2). https://www.uniprot.org/uniprotkb/P78324-2",
+    "SIRPA \u2014 SIRPA. https://platform.opentargets.org/target/ENSG00000198053",
+    "SIRPA \u2194 type 2 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000198053/associations",
+    "SIRPA \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000198053/associations",
+    "SIRPA \u2194 tooth disease. https://platform.opentargets.org/target/ENSG00000198053/associations",
+    "SIRPA \u2194 hemorrhagic disease. https://platform.opentargets.org/target/ENSG00000198053/associations",
+    "SIRPA \u2014 signal regulatory protein alpha (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KRAS \u2014 KRAS proto-oncogene, GTPase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "AKT1 \u2014 AKT serine/threonine kinase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "JAK2 \u2014 Janus kinase 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CDH1 \u2014 cadherin 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+    "Analysis of PANoptosis-related ceRNA network reveals lncRNA MIR17HG involved in osteogenic differentiation inhibition impaired by tumor necrosis factor-\u03b1 (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11327206/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9545,
+    "completion_tokens": 309,
+    "total_tokens": 9854,
+    "estimated_cost_usd": 0.001617
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P78324",
+          "title": "SIRPA (P78324)",
+          "url": "https://www.uniprot.org/uniprotkb/P78324",
+          "text": "Protein: Tyrosine-protein phosphatase non-receptor type substrate 1\nFunction: Immunoglobulin-like cell surface receptor for CD47. Acts as docking protein and induces translocation of PTPN6, PTPN11 and other binding partners from the cytosol to the plasma membrane. Supports adhesion of cerebellar neurons, neurite outgrowth and glial cell attachment. May play a key role in intracellular signaling during synaptogenesis and in synaptic function (By similarity). Involved in the negative regulation of receptor tyrosine kinase-coupled cellular responses induced by cell adhesion, growth factors or insulin. Mediates negative regulation of phagocytosis, mast cell activation and dendritic cell activation. CD47 binding prevents maturation of immature dendritic cells and inhibits cytokine production by mature dendritic cells. Plays a role in antiviral immunity and limits new world arenavirus infection by decreasing virus internalization (By similarity). Receptor for THBS1 (PubMed:24511121). Interaction with THBS1 stimulates phosphorylation of SIRPA (By similarity). In response to THBS1, involved in ROS signaling in non-phagocytic cells, stimulating NADPH oxidase-derived ROS production (PubMed:24511121)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P78324-4",
+          "title": "SIRPA (P78324-4)",
+          "url": "https://www.uniprot.org/uniprotkb/P78324-4",
+          "text": "Protein: Isoform 4 of Tyrosine-protein phosphatase non-receptor type substrate 1",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P78324-2",
+          "title": "SIRPA (P78324-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P78324-2",
+          "text": "Protein: Isoform 2 of Tyrosine-protein phosphatase non-receptor type substrate 1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000198053::function",
+          "title": "SIRPA \u2014 SIRPA",
+          "url": "https://platform.opentargets.org/target/ENSG00000198053",
+          "text": "Function: Immunoglobulin-like cell surface receptor for CD47. Acts as docking protein and induces translocation of PTPN6, PTPN11 and other binding partners from the cytosol to the plasma membrane. Supports adhesion of cerebellar neurons, neurite outgrowth and glial cell attachment. May play a key role in intracellular signaling during synaptogenesis and in synaptic function (By similarity). Involved in the negative regulation of receptor tyrosine kinase-coupled cellular responses induced by cell adhesion, growth factors or insulin. Mediates negative regulation of phagocytosis, mast cell activation and dendritic cell activation. CD47 binding prevents maturation of immature dendritic cells and inhibits cytokine production by mature dendritic cells. Plays a role in antiviral immunity and limits new world arenavirus infection by decreasing virus internalization (By similarity). Receptor for THBS1 (PubMed:24511121). Interaction with THBS1 stimulates phosphorylation of SIRPA (By similarity). In response to THBS1, involved in ROS signaling in non-phagocytic cells, stimulating NADPH oxidase-derived ROS production (PubMed:24511121).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000198053::MONDO_0005148",
+          "title": "SIRPA \u2194 type 2 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000198053/associations",
+          "text": "Disease: type 2 diabetes mellitus\nDescription: A type of diabetes mellitus that is characterized by insulin resistance or desensitization and increased blood glucose levels. This is a chronic disease that can develop gradually over the life of a patient and can be linked to both environmental factors and heredity.\nAssociation score: 0.434",
+          "cos_sim_score": 0.43421206294995224,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000198053::EFO_0005772",
+          "title": "SIRPA \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000198053/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.361",
+          "cos_sim_score": 0.36068620989965594,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000198053::EFO_1001216",
+          "title": "SIRPA \u2194 tooth disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000198053/associations",
+          "text": "Disease: tooth disease\nDescription: A disease involving the calcareous tooth.\nAssociation score: 0.360",
+          "cos_sim_score": 0.36046394249399105,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000198053::MONDO_0002243",
+          "title": "SIRPA \u2194 hemorrhagic disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000198053/associations",
+          "text": "Disease: hemorrhagic disease\nDescription: Spontaneous or near spontaneous bleeding caused by a defect in clotting mechanisms (blood coagulation disorders) or another abnormality causing a structural flaw in the blood vessels (hemostatic disorders).\nAssociation score: 0.359",
+          "cos_sim_score": 0.35936911729904636,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "SIRPA \u2014 signal regulatory protein alpha",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SIRPA\nGene name: signal regulatory protein alpha\nAliases / synonyms: BIT, CD172A, MFR, MYD-1, MYD1, P84, PTPNS1, SHPS1, SIRP\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the signal-regulatory-protein (SIRP) family, and also belongs to the immunoglobulin superfamily. SIRP family members are receptor-type transmembrane glycoproteins known to be involved in the negative regulation of receptor tyrosine kinase-coupled signaling processes. This protein can be phosphorylated by tyrosine kinases. The phospho-tyrosine residues of this PTP have been shown to recruit SH2 domain containing tyrosine phosphatases (PTP), and serve as substrates of PTPs. This protein was found to participate in signal transduction mediated by various growth factor receptors. CD47 has been demonstrated to be a ligand for this receptor protein. This gene and its product share very high similarity with several other members of the SIRP family. ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SIRPA",
+          "aliases": "BIT, CD172A, MFR, MYD-1, MYD1, P84, PTPNS1, SHPS1, SIRP",
+          "gene_description": "signal regulatory protein alpha"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KRAS \u2014 KRAS proto-oncogene, GTPase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KRAS\nGene name: KRAS proto-oncogene, GTPase\nAliases / synonyms: 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2\nOrganism: Homo sapiens\nGene summary: This gene, a Kirsten ras oncogene homolog from the mammalian ras gene family, encodes a protein that is a member of the small GTPase superfamily. A single amino acid substitution is responsible for an activating mutation. The transforming protein that results is implicated in various malignancies, including lung adenocarcinoma, mucinous adenoma, ductal carcinoma of the pancreas and colorectal carcinoma. Alternative splicing leads to variants encoding two isoforms that differ in the C-terminal region. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KRAS",
+          "aliases": "'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2",
+          "gene_description": "KRAS proto-oncogene, GTPase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "AKT1 \u2014 AKT serine/threonine kinase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AKT1\nGene name: AKT serine/threonine kinase 1\nAliases / synonyms: AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA\nOrganism: Homo sapiens\nGene summary: This gene encodes one of the three members of the human AKT serine-threonine protein kinase family which are often referred to as protein kinase B alpha, beta, and gamma. These highly similar AKT proteins all have an N-terminal pleckstrin homology domain, a serine/threonine-specific kinase domain and a C-terminal regulatory domain. These proteins are phosphorylated by phosphoinositide 3-kinase (PI3K). AKT/PI3K forms a key component of many signalling pathways that involve the binding of membrane-bound ligands such as receptor tyrosine kinases, G-protein coupled receptors, and integrin-linked kinase. These AKT proteins therefore regulate a wide variety of cellular functions including cell proliferation, survival, metabolism, and angiogenesis in both normal and malignant cells. AKT proteins ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AKT1",
+          "aliases": "AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA",
+          "gene_description": "AKT serine/threonine kinase 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "JAK2 \u2014 Janus kinase 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: JAK2\nGene name: Janus kinase 2\nAliases / synonyms: JTK10\nOrganism: Homo sapiens\nGene summary: This gene encodes a non-receptor tyrosine kinase that plays a central role in cytokine and growth factor signalling. The primary isoform of this protein has an N-terminal FERM domain that is required for erythropoietin receptor association, an SH2 domain that binds STAT transcription factors, a pseudokinase domain and a C-terminal tyrosine kinase domain. Cytokine binding induces autophosphorylation and activation of this kinase. This kinase then recruits and phosphorylates signal transducer and activator of transcription (STAT) proteins. Growth factors like TGF-beta 1 also induce phosphorylation and activation of this kinase and translocation of downstream STAT proteins to the nucleus where they influence gene transcription. Mutations in this gene are associated with numerous inflammatory ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "JAK2",
+          "aliases": "JTK10",
+          "gene_description": "Janus kinase 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CDH1 \u2014 cadherin 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CDH1\nGene name: cadherin 1\nAliases / synonyms: Arc-1, BCDS1, CD324, CDHE, ECAD, LCAM, UVO\nOrganism: Homo sapiens\nGene summary: This gene encodes a classical cadherin of the cadherin superfamily. Alternative splicing results in multiple transcript variants, at least one of which encodes a preproprotein that is proteolytically processed to generate the mature glycoprotein. This calcium-dependent cell-cell adhesion protein is comprised of five extracellular cadherin repeats, a transmembrane region and a highly conserved cytoplasmic tail. Mutations in this gene are correlated with gastric, breast, colorectal, thyroid and ovarian cancer. Loss of function of this gene is thought to contribute to cancer progression by increasing proliferation, invasion, and/or metastasis. The ectodomain of this protein mediates bacterial adhesion to mammalian cells and the cytoplasmic domain is required for internalization. This gene is ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CDH1",
+          "aliases": "Arc-1, BCDS1, CD324, CDHE, ECAD, LCAM, UVO",
+          "gene_description": "cadherin 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "1. Introduction\nOsteonecrosis of the femoral head (ONFH) is a common disease mainly characterized by apoptosis of bone cells that leads to collapse of the femoral head and cartilage damage. Notably, the round surface of the head and acetabulum joint flattens and eventually leads to secondary osteoarthritis.[1] Studies have shown that the disease is mainly prevalent in patients with long-term use of hormonal drugs, long-term alcohol abuse, and hip trauma.[2] Steroid-induced ONFH (SONFH) is a common type of femoral head necrosis. SONFH patients are frequently misdiagnosed as hip synovitis or osteoarthritis owing to lack of obvious signs coupled with imaging abnormalities during early stages of disease development.[3] Although transcriptomic analyses have contributed to development of clinical treatment strategies for SONFH, the precise underlying mechanism of SONFH remains unclear.[4,5]\nBioinformatics analyses have significantly improved the search and identification of key genes regulating the occurrence of various diseases, thereby generating new insights to guide development of treatment strategies. SONFH has a complex pathophysiological mechanism. Genotyping of SONFH in adults revealed that gene coding protein polymorphism was associated with SONFH.[6] It has been hypothesized that progression of SONFH to the end stage in adult patients may be due to differential expression of protein-coding genes involved in thrombosis, angiogenesis inhibition, programmed cell death, lipid biosynthesis, and bone homeostasis. In the present study, we aimed to identify differentially expressed genes in peripheral blood of patients with early SONFH and further explored the pathogenesis of this disease using transcriptome data from the Gene Expression Omnibus database.\n2. Materials and Methods\n2.1. Data acquisition\nThe Gene Expression Omnibus database not only stores many gene chips and sequence data but also provides tools for users to query and download gene expression profiles. In the present study, we searched for relevant datasets using \u201csteroid-induced osteonecrosis of femoral head\u201d as the keyword, with focus on SONFH-related datasets. Consequently, we downloaded transcriptome data (GSE123568) belonging to 30 SONFH and 10 non-SONFH (following steroid administration) subjects.\n2.2. Sample correlation analysis\nOverall expression profiles of the transcriptome data were clustered using ClusterProfiler packages implemented in R software (version 4.0.2). Only dimension features containing the vast majority of variances were retained, with those containing zero variances discarded based on a principal component analysis (PCA) plot. Using weighted gene correlation network analysis (WGCNA) package in R language to perform WGCNA on data. WGCNA adds phenotypic weight parameters in the process of constructing gene co-expression network and optimizes classification using scale-free clustering and dynamic tree cut algorithm to achieve accurate and efficient data analysis.\n2.3. Functional annotation of DEGs\nFunctional annotation of key genes was performed using the ClusterProfiler package in R and followed by comprehensive functional correlation of candidate genes. Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analyses were performed to evaluate related functional categories. Significant differentially expressed genes (DEGs) were filtered, and bar charts and bubble charts were drawn according to their functions and pathways, respectively.\n2.4. Construction of protein\u2013protein interaction networks\nProtein\u2013protein interaction (PPI) networks of the DEGs were generated using the STRING online tool and Cytoscape software. Summarily, DEGs were entered into the STRING online tool to screen for interacting proteins with a combined score of\u2005>\u20050.9. The obtained PPI results were imported into Cytoscape software, then prominent modules in PPI were screened to construct the network through molecular complex detection. NetworkX package was then used to visualize the network in Python, with node sizes taken to be proportional to node degree.\n2.5. Quantitative real-time polymerase chain reaction",
+          "cos_sim_score": 0.5651585459709167,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "Figure 3.\nqRT-PCR results showing significant upregulation of ITGAX and LILRB2 and significant downregulation of PPP3CB and MMP8 in SONFH patients., ITGAX = integrin subunit alpha X, LILRB2 = leukocyte immunoglobulin like receptor B2, MMP8 = matrix metallopeptidase 8, PPP3CB = protein phosphatase 3 catalytic subunit beta, qRT-PCR = quantitative real-time polymerase chain reaction, SONFH = steroid-induced osteonecrosis of the femoral head.\n4. Discussion\nMore than 30 years ago, researchers discovered a close relationship between use of glucocorticoids with the occurrence of femoral head necrosis.[7] Results from a retrospective analysis showed that hormone-related nontraumatic ONFH is dominant.[8] Investigating the genetic factors regulating SONFH characteristics is an important strategy, and scholars have employed bioinformatics to explore sequence data. However, these studies also present some defects, such as inability to accurately interpret high-throughput sequence data to ensure that a certain deviation exists between PCR verification data and the data significance.[9,10] In the present study, we explored the signaling pathways regulating development of early SONFH and predicted diagnostic biomarkers in peripheral blood from this group of patients.\nOur results revealed that hundreds of coding genes, including tumor necrosis factor-\u03b1 (TNF-\u03b1), phosphoinositide 3-kinase Akt (PI3K-Akt), hypoxia-inducible factor-1 (HIF-1), adherens junction, and mitogen-activated protein kinase signaling pathways, were significantly upregulated in peripheral blood of patients with early SONFH. Notably, these DEGs participate in regulation of redox, inflammatory response, angiogenesis, and cell metabolism by secreting inflammatory chemokine signaling proteins. We constructed a PPI network of these DEGs and found that PRDX2, HP, MMP8, FPR2, and ITGAX may be associated with the SONFH process. Among them, FPR2 is a low-affinity receptor of N-formyl methionine peptides and a powerful neutrophil chemokine.[11] Family with sequence similarity 19 member A5 is a neural factor or brain-specific chemokine that was shown to remarkably downregulate expression of osteoclast-related genes, such as receptor activator of nuclear factor kappa and TNF receptor-associated factor 6, and mediate upregulation of osteoclast-producing negative regulators, such as musculoaponeurotic fibrosarcoma oncogene homolog B and interferon regulatory factor-8.[12,13] Interestingly, FPR2 antagonist WRW4 or FPR2 deficiency were shown to markedly reverse inhibition of Family with sequence similarity 19 member A5-inducedosteoclastogenesis, indicating that FPR2 plays an important role in regulation of osteoclastogenesis as well as occurrence and development of SONFH disease.[9,14]\nIntegrin alpha-X/beta-2, which is encoded by ITGAX, is a receptor that recognizes the G protein-coupled receptor sequence in fibrinogen, thereby mediating cell\u2013cell interactions during inflammatory responses. Functionally, it plays an important role in monocyte adhesion and chemotaxis.[15,16] In the present study, we found that PRDX2 was a thiol-specific peroxidase in downregulated genes in SONFH relative to non-SONFH group. Functionally, this gene catalyzes reduction of hydrogen peroxide and organic peroxide to produce water and alcohol, thereby causing inactivation of toxic substances.[17] Studies have shown that PRDX2, a hydrogen peroxide-mediated signal transduction sensor that prevents oxidative stress, not only plays a role in cell protection but may also be participating in signal cascade reaction of growth factor and TNF-\u03b1 by regulating the intracellular concentration of hydrogen peroxide.[18,19]\nHP-related diseases, which include haptoglobinemia and Plasmodium falciparum malaria,[20] are regulated by the innate immune system and vesicle-mediated transport. HP accumulates in the kidney and is secreted in the urine due to hemolysis. Moreover, HP reportedly captures and binds to free plasma HP, thereby preventing kidney damage. HP also acts as an antioxidant, presents antibacterial activity, and plays a role in many acute phase regulations.[21] Therefore, the observed downregulation of PRDX2 and HP may suggest that both genes promote development of SONFH disease through the redox pathway.",
+          "cos_sim_score": 0.499739408493042,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11327206",
+          "title": "Analysis of PANoptosis-related ceRNA network reveals lncRNA MIR17HG involved in osteogenic differentiation inhibition impaired by tumor necrosis factor-\u03b1",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11327206/",
+          "text": "Introduction\nInflammatory cytokines play pivotal roles in the pathogenesis of bone infections. Tumor Necrosis Factor-alpha (TNF-\u03b1) is a key pro-inflammatory cytokine and a catabolic factor in the inflammatory response to disease [1, 2]. Persistent inflammation significantly affects bone regeneration as TNF-\u03b1 binds to different receptors and initiates signal transduction pathways [3, 4], leading to various cellular responses including cell survival, differentiation, and proliferation. Once the signal transduction pathways are elucidated, strategies can be adopted to reduce the inhibitory effects of inflammation on tissue regeneration [5, 6]. Among the various signal transducer and activator of transcription (STATs), STAT3 is particularly important in mediating inflammation and bone formation [7\u20139]. Our previous study showed that under TNF-\u03b1 stimulation, Elongator acetyltransferase complex subunit 2 (ELP2) inhibits osteogenic differentiation through STAT3 activation [10].\nIn an inflammatory environment, the differentiation capacity of osteoblasts is inhibited, and osteoblast death is exacerbated [11, 12]. Osteoblasts often undergo apoptosis in response to inflammation, but other forms of programmed cell death (PCD) mechanisms such as pyroptosis and necroptosis also play crucial roles [13, 14]. Although each of these three PCD pathways has been previously regarded as unique based on the identification of important promoters, effectors, and executors, there is mounting evidence that they interact extensively [15, 16]. Based on these findings, we developed the concept of panoptosis. It is an inflammatory PCD route controlled by the PANoptosome complex, which possesses important characteristics of pyroptosis, apoptosis, and/or necroptosis. These characteristics could not be explained by any of the PCD pathways alone [17\u201319].\nThe miR-17-92 cluster, encoded by the host gene MIR17HG, is involved in various biological activities, including tumor development, neurodevelopment, and immune regulation [20\u201322]. This cluster has a regulatory role in inflammation [23], with studies showing that inhibition of MIR17HG can attenuate neuronal apoptosis and inflammatory responses in Parkinson\u2019s disease (PD) mice [24]. Recent research has linked MIR17HG to osteoarthritis [22], suggesting its involvement in other bone diseases such as osteomyelitis and osteoarthritis, where inflammation is a key factor.\nTo identify new diagnostic and therapeutic approaches for bone infections, this study aims to investigate the relationship between MIR17HG and molecular processes involved in inflammation during bone infections. Using cell sequencing and the Gene Expression Omnibus (GEO) database, we identified distinct Long non-coding RNA (lncRNA) linked to osteogenic differentiation and PANoptosis under TNF-\u03b1 stimulation. We constructed lncRNA-miRNA-mRNA networks and performed bioinformatics analyses to explore their functions further. Furthermore, we investigated the correlation between the expression of lncRNA MIR17HG and mRNAs associated with PANoptosis in osteoblasts in response to TNF-\u03b1 stimulation. This research introduces a novel framework to understand the mechanisms responsible for PANoptosis onset in osteoblasts triggered by TNF-\u03b1 stimulation.\nMethods and materials\nReagents and antibodies\nMinimum essential medium \u03b1 (MEM\u2010\u03b1) and fetal bovine serum (FBS) obtained from Bio-channel (Nanjing, China). Dexamethason, \u03b2\u2010glycerophosphate and ascorbic acid were purchased from Sigma Chemicals (St. Louis, MO, USA). Trypsin was obtained from Gibco. TRIzol\u2122 reagents were purchased from Thermo Fisher Scientific (Waltham, MA, USA). Recombinant Mouse TNF alpha(Cat. No.: CF09), NovoStart\u00aeSYBR qPCR SuperMix Plus and NovoScript\u00aePlus All-in-one 1st Strand cDNA Synthesis SuperMix (gDNA Purge) were obtained from Novorprotein (Suzhou, China). Primary and secondary antibody for Western blot (WB) experience, including STAT3 (D3Z2G), P-Phospho-Stat3(Tyr705) IgG(L27A9), and GAPDH (14C10) antibodies were purchased from Cell Signaling Technology (Boston, MA, USA).\nRNA sequencing analysis\nCell culture",
+          "cos_sim_score": 0.3364923596382141,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "HP-related diseases, which include haptoglobinemia and Plasmodium falciparum malaria,[20] are regulated by the innate immune system and vesicle-mediated transport. HP accumulates in the kidney and is secreted in the urine due to hemolysis. Moreover, HP reportedly captures and binds to free plasma HP, thereby preventing kidney damage. HP also acts as an antioxidant, presents antibacterial activity, and plays a role in many acute phase regulations.[21] Therefore, the observed downregulation of PRDX2 and HP may suggest that both genes promote development of SONFH disease through the redox pathway.\nMatrix metalloproteinases (MMPs) are considered the key regulator in maintenance of bone homeostasis.[22] Among them, MMP8, which is encoded by the MMP8 gene, also known as neutrophil or PMNL collagenase, is a collagen lyase that generally exists in mammalian connective tissues. The reduction of collagenase is the premise of effective osteoclast fusion. Inhibition of endogenous collagenase expression or activity was associated with a significant increase in osteoclast fusion, while fusion of trap-positive mononuclear osteoclast precursors is essential in the formation of fully functional mature osteoclasts.[23] Moreover, MMP8 deficiency was associated with increased occurrence of arthritis and bone loss in the serum a metastatic arthritis model.[24] Results from in situ hybridization of rat hindlimb tissue sections revealed that profiles of MMP8 expression were upregulated in osteoblast precursor cells, osteoblasts, and chondrocytes during embryonic development of the bone and cartilage.[25] These findings suggest that MMP8 expression may be playing a role in occurrence and progression of SONFH by affecting the structure and function of osteoblasts and osteoclasts.\nThis study had several potential shortcomings. First, only the important abnormal gene groups were randomly selected and verified, due to limited resources. It is possible that the overall results may be some deviation from the actual results. Second, our sample size for qRT-PCR validation was small, as evidenced by only 12 volunteers, which may not provide strong statistical support. Finally, the authors believe that in subsequent studies, clear and effective interventions for SONFH can be used to observe the changes of peripheral blood biomarkers in patients with SONFH, so as to achieve indirect verification and make the research translate to clinical practice. Unfortunately, this study does not refine these works.\n5. Conclusions\nTranscriptomic analysis revealed upregulation of key genes that regulate important signaling pathways during SONFH development, including TNF-\u03b1, PI3K-Akt, HIF-1, adherens junction, and mitogen-activated protein kinase signaling pathways. Overall, these genes promote SONFH occurrence by regulating redox pathways, inflammatory reactions, and structure and function of osteoblasts and osteoclasts, suggesting that they may be important targets for designing approaches for early diagnosis and treatment of SONFH.\nAuthors\u2019 contributions\nWenhui Shao and Honghai Zhou collected and analyzed data. Cong Tian wrote the manuscript. All authors read and approved the final manuscript.",
+          "cos_sim_score": 0.31810107827186584,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11327206",
+          "title": "Analysis of PANoptosis-related ceRNA network reveals lncRNA MIR17HG involved in osteogenic differentiation inhibition impaired by tumor necrosis factor-\u03b1",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11327206/",
+          "text": "Fig.\u00a08\nInhibition of osteoblast differentiation under TNF-\u03b1 stimulation and increased expression of inflammation-related genes. Osteogenic differentiation-related genes (A) and pro-inflammation-related genes (B)\nDiscussion\nOur comprehensive analysis, combining bioinformatics, bibliometric data, and experimental results, revealed a significant association between MIR17HG and osteoblast differentiation and death.\u200b Functional enrichment analysis indicated that MIR17HG-related mRNAs are involved in apoptosis and necroptosis, with key signaling pathways regulating cell death and inflammation. Under TNF-\u03b1 stimulation, both MIR17HG and PANoptosis-related genes showed increased expression, accompanied by STAT3 phosphorylation. These findings suggest that MIR17HG may promote apoptosis in osteoblasts during osteogenic differentiation when stimulated by TNF-a.\nPANoptosis, a newly identified type of PCD that includes apoptosis, pyroptosis, and necroptosis, appears to be enhanced in osteoblasts under inflammatory conditions. However, the interaction between PANoptosis and osteoblast differentiation in inflammatory settings remain underexplored. There is substantial evidence that abnormal lncRNA expression affects osteoblast proliferation, differentiation, and death [30\u201332], but its role in PANoptosis is unclear. Our objective was to establish a connection between PANoptosis, osteogenic differentiation, inflammation, and lncRNAs in order to understand the regulatory roles of PANoptosis-related and inflammation-related lncRNAs in the process of osteogenic differentiation.\nBy integrating cell sequencing data with publicly available transcriptome datasets, we identified MIR17HG as an lncRNA that correlates with PANoptosis-related proteins in osteoblasts under inflammatory conditions. Our ceRNA network and subsequent GO/KEGG analyses suggested that MIR17HG is associated with osteoblast differentiation and death, implicating pathways such as PI3K-Akt, MAPK, JAK-STAT, and TNF. Notably, MIR17HG and the miR-17-92 cluster promoter contain potential STAT3 binding sites [33\u201335]. The miR-17-92 cluster regulates the JAK2-STAT3 signaling pathway, with miR-18a and miR-19a promoting STAT3 activity and phosphorylation, respectively [36\u201338]. The JAK2/STAT3 pathway mediates proliferation and apoptosis in various cells [39, 40] and negatively regulates osteoblast differentiation [41, 42]. This evidence indicates a correlation between MIR17HG and PANoptosome occurrence in osteoblasts, suggesting that MIR17HG may regulate STAT3 phosphorylation and thus PANoptosis during osteogenic differentiation.\nPANoptosis is a newly defined form of cell death relevant to immune response-related diseases. It is regulated by the multimeric protein complex PANoptosome [43], which influences pyroptosis, apoptosis, and necroptosis. Each of these processes has been studied separately by many researchers. Studies on PANoptosis suggest that CASP1, which drives pyroptosis, CASP8, which drives apoptosis, and RIPK1 and RIPK3, which drive necroptosis, can form a PANoptosome with other components [19]. This is consistent with our bibliometric data, where keyword visualization analyses showed high frequencies of CASP1, CASP8, RIPK1, and RIPK3 (Table\u00a03). Our bibliometric analysis also shows that the NLRP3 inflammasome is mentioned in the context of pyroptosis, apoptosis, and necroptosis, acting as a sensor to regulate these cell death modalities. Pyroptosis is mediated by gasdermin family members via inflammasome-mediated caspase-1 cleavage of gasdermin D (GSDMD), caspase-11/4/5- or caspase-8-mediated cleavage of GSDMD, or caspase-3-mediated cleavage of gasdermin E (GSDME) [44\u201347]. Apoptosis is induced by caspase-3 and -7 following\\activation of upstream initiator caspases caspase-8/10 or -9 [48, 49]. Necroptosis is induced by RIPK3-mediated MLKL oligomerization [50\u201352]. Our experimental data show that the expression of NLRP3 and genes associated with these cell death types increased in response to TNF-\u03b1 stimulation. Therefore, we hypothesized that the NLRP3 inflammasome serves as an upstream signal regulating the onset of osteoblast apoptosis.",
+          "cos_sim_score": 0.2765199542045593,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

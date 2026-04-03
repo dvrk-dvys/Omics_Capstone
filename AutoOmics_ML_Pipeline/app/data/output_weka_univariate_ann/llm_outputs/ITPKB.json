@@ -1,0 +1,183 @@
+{
+  "rf_rank": 17,
+  "probe_id": "11720739_s_at",
+  "gene_symbol": "ITPKB",
+  "score": 0.67,
+  "rf_n_nodes": 12,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.6937,
+  "log_fc": 0.6937,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11720739_s_at",
+  "max_score": 0.67,
+  "mean_abs_fold_change": 0.6937,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:28:18",
+  "interpretation": "ITPKB encodes the enzyme inositol-trisphosphate 3-kinase B, which plays a crucial role in cellular signaling by regulating inositol phosphate metabolism and calcium homeostasis. This regulation is particularly relevant in the context of steroid-induced osteonecrosis of the femoral head (SONFH), as calcium signaling is vital for bone health and remodeling. However, the evidence linking ITPKB directly to SONFH is limited, with no specific studies found that validate its role as a biomarker for this condition. Therefore, while ITPKB's biological functions suggest a potential involvement in SONFH, the lack of direct evidence leads to a lower confidence in its clinical relevance as a biomarker for early detection of this disease.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "ITPKB may influence calcium signaling pathways relevant to steroid-induced osteonecrosis of the femoral head, but lacks direct evidence as a biomarker for this condition.",
+  "citations": [
+    "ITPKB (P27987). https://www.uniprot.org/uniprotkb/P27987",
+    "ITPKB (P27987-2). https://www.uniprot.org/uniprotkb/P27987-2",
+    "ITPKB \u2014 ITPKB. https://platform.opentargets.org/target/ENSG00000143772",
+    "ITPKB \u2194 Parkinson disease. https://platform.opentargets.org/target/ENSG00000143772/associations",
+    "ITPKB \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000143772/associations",
+    "ITPKB \u2194 respiratory system disease. https://platform.opentargets.org/target/ENSG00000143772/associations",
+    "ITPKB \u2194 asthma. https://platform.opentargets.org/target/ENSG00000143772/associations",
+    "ITPKB \u2014 inositol-trisphosphate 3-kinase B (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "AKT1 \u2014 AKT serine/threonine kinase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "SNCA \u2014 synuclein alpha (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "NR3C1 \u2014 nuclear receptor subfamily 3 group C member 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ESR2 \u2014 estrogen receptor 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4815,
+    "completion_tokens": 283,
+    "total_tokens": 5098,
+    "estimated_cost_usd": 0.000892
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P27987",
+          "title": "ITPKB (P27987)",
+          "url": "https://www.uniprot.org/uniprotkb/P27987",
+          "text": "Protein: Inositol-trisphosphate 3-kinase B\nFunction: Catalyzes the phosphorylation of 1D-myo-inositol 1,4,5-trisphosphate (InsP3) into 1D-myo-inositol 1,3,4,5-tetrakisphosphate and participates to the regulation of calcium homeostasis",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P27987-2",
+          "title": "ITPKB (P27987-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P27987-2",
+          "text": "Protein: Isoform 2 of Inositol-trisphosphate 3-kinase B",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000143772::function",
+          "title": "ITPKB \u2014 ITPKB",
+          "url": "https://platform.opentargets.org/target/ENSG00000143772",
+          "text": "Function: Catalyzes the phosphorylation of 1D-myo-inositol 1,4,5- trisphosphate (InsP3) into 1D-myo-inositol 1,3,4,5-tetrakisphosphate and participates to the regulation of calcium homeostasis.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000143772::MONDO_0005180",
+          "title": "ITPKB \u2194 Parkinson disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000143772/associations",
+          "text": "Disease: Parkinson disease\nDescription: A progressive degenerative disorder of the central nervous system characterized by loss of dopamine producing neurons in the substantia nigra and the presence of Lewy bodies in the substantia nigra and locus coeruleus. Signs and symptoms include tremor which is most pronounced during rest, muscle rigidity, slowing of the voluntary movements, a tendency to fall back, and a mask-like facial expression.\nAssociation score: 0.592",
+          "cos_sim_score": 0.5920037011076414,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000143772::EFO_0005772",
+          "title": "ITPKB \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000143772/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.541",
+          "cos_sim_score": 0.5408538045856536,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000143772::EFO_0000684",
+          "title": "ITPKB \u2194 respiratory system disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000143772/associations",
+          "text": "Disease: respiratory system disease\nDescription: A non-neoplastic or neoplastic disorder that affects the respiratory system. Representative examples include pneumonia, chronic obstructive pulmonary disease, pulmonary failure, lung adenoma, lung carcinoma, and tracheal carcinoma.\nAssociation score: 0.458",
+          "cos_sim_score": 0.45830100152719055,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000143772::MONDO_0004979",
+          "title": "ITPKB \u2194 asthma",
+          "url": "https://platform.opentargets.org/target/ENSG00000143772/associations",
+          "text": "Disease: asthma\nDescription: A bronchial disease that is characterized by chronic inflammation and narrowing of the airways, which is caused by a combination of environmental and genetic factors resulting in recurring periods of wheezing (a whistling sound while breathing), chest tightness, shortness of breath, mucus production and coughing. The symptoms appear due to a variety of triggers such as allergens, irritants, respiratory infections, weather changes, exercise, stress, reflux disease, medications, foods and emotional anxiety.\nAssociation score: 0.448",
+          "cos_sim_score": 0.44807067773837866,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "ITPKB \u2014 inositol-trisphosphate 3-kinase B",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ITPKB\nGene name: inositol-trisphosphate 3-kinase B\nAliases / synonyms: IP3-3KB, IP3K, IP3K-B, IP3KB, PIG37\nOrganism: Homo sapiens\nGene summary: The protein encoded by this protein regulates inositol phosphate metabolism by phosphorylation of second messenger inositol 1,4,5-trisphosphate to Ins(1,3,4,5)P4. The activity of this encoded protein is responsible for regulating the levels of a large number of inositol polyphosphates that are important in cellular signaling. Both calcium/calmodulin and protein phosphorylation mechanisms control its activity. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ITPKB",
+          "aliases": "IP3-3KB, IP3K, IP3K-B, IP3KB, PIG37",
+          "gene_description": "inositol-trisphosphate 3-kinase B"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "AKT1 \u2014 AKT serine/threonine kinase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AKT1\nGene name: AKT serine/threonine kinase 1\nAliases / synonyms: AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA\nOrganism: Homo sapiens\nGene summary: This gene encodes one of the three members of the human AKT serine-threonine protein kinase family which are often referred to as protein kinase B alpha, beta, and gamma. These highly similar AKT proteins all have an N-terminal pleckstrin homology domain, a serine/threonine-specific kinase domain and a C-terminal regulatory domain. These proteins are phosphorylated by phosphoinositide 3-kinase (PI3K). AKT/PI3K forms a key component of many signalling pathways that involve the binding of membrane-bound ligands such as receptor tyrosine kinases, G-protein coupled receptors, and integrin-linked kinase. These AKT proteins therefore regulate a wide variety of cellular functions including cell proliferation, survival, metabolism, and angiogenesis in both normal and malignant cells. AKT proteins ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AKT1",
+          "aliases": "AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA",
+          "gene_description": "AKT serine/threonine kinase 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "SNCA \u2014 synuclein alpha",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SNCA\nGene name: synuclein alpha\nAliases / synonyms: NACP, PARK1, PARK4, PD1\nOrganism: Homo sapiens\nGene summary: Alpha-synuclein is a member of the synuclein family, which also includes beta- and gamma-synuclein. Synucleins are abundantly expressed in the brain and alpha- and beta-synuclein inhibit phospholipase D2 selectively. SNCA may serve to integrate presynaptic signaling and membrane trafficking. Defects in SNCA have been implicated in the pathogenesis of Parkinson disease. SNCA peptides are a major component of amyloid plaques in the brains of patients with Alzheimer's disease. Alternatively spliced transcripts encoding different isoforms have been identified for this gene. [provided by RefSeq, Feb 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SNCA",
+          "aliases": "NACP, PARK1, PARK4, PD1",
+          "gene_description": "synuclein alpha"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "NR3C1 \u2014 nuclear receptor subfamily 3 group C member 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: NR3C1\nGene name: nuclear receptor subfamily 3 group C member 1\nAliases / synonyms: GCCR, GCR, GCRST, GR, GRL\nOrganism: Homo sapiens\nGene summary: This gene encodes glucocorticoid receptor, which can function both as a transcription factor that binds to glucocorticoid response elements in the promoters of glucocorticoid responsive genes to activate their transcription, and as a regulator of other transcription factors. This receptor is typically found in the cytoplasm, but upon ligand binding, is transported into the nucleus. It is involved in inflammatory responses, cellular proliferation, and differentiation in target tissues. Mutations in this gene are associated with generalized glucocorticoid resistance. Alternative splicing of this gene results in transcript variants encoding either the same or different isoforms. Additional isoforms resulting from the use of alternate in-frame translation initiation sites have also been descri...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "NR3C1",
+          "aliases": "GCCR, GCR, GCRST, GR, GRL",
+          "gene_description": "nuclear receptor subfamily 3 group C member 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ESR2 \u2014 estrogen receptor 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ESR2\nGene name: estrogen receptor 2\nAliases / synonyms: ER-BETA, ESR-BETA, ESRB, ESTRB, Erb, NR3A2, ODG8\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the family of estrogen receptors and superfamily of nuclear receptor transcription factors. The gene product contains an N-terminal DNA binding domain and C-terminal ligand binding domain and is localized to the nucleus, cytoplasm, and mitochondria. Upon binding to 17beta-estradiol or related ligands, the encoded protein forms homo- or hetero-dimers that interact with specific DNA sequences to activate transcription. Some isoforms dominantly inhibit the activity of other estrogen receptor family members. Several alternatively spliced transcript variants of this gene have been described, but the full-length nature of some of these variants has not been fully characterized. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ESR2",
+          "aliases": "ER-BETA, ESR-BETA, ESRB, ESTRB, Erb, NR3A2, ODG8",
+          "gene_description": "estrogen receptor 2"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

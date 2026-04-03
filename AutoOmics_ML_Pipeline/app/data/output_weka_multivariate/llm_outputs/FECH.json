@@ -1,0 +1,226 @@
+{
+  "rf_rank": 2,
+  "probe_id": "11727807_at",
+  "gene_symbol": "FECH",
+  "score": 0.96,
+  "rf_n_nodes": 2,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 2.8395,
+  "log_fc": -2.8395,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 3,
+  "probe_ids": "11727807_at | 11727808_s_at | 11746263_a_at",
+  "max_score": 0.96,
+  "mean_abs_fold_change": 2.641,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T01:38:34",
+  "interpretation": "FECH encodes the enzyme ferrochelatase, which is crucial for heme biosynthesis by catalyzing the insertion of iron into protoporphyrin IX. While there is no direct evidence linking FECH to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in heme metabolism may be indirectly relevant, as disturbances in heme synthesis and iron metabolism can influence bone health and osteoblast function. The retrieved evidence primarily discusses FECH's involvement in erythropoietic protoporphyria and neurodegenerative diseases, with no specific studies on SONFH. Therefore, while FECH may play a role in broader metabolic pathways that could affect bone health, its potential as a biomarker for SONFH remains weak and speculative. Further research is needed to clarify its relevance in this specific context.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "FECH's role in heme biosynthesis may have indirect implications for bone health, but it lacks direct evidence linking it to SONFH.",
+  "citations": [
+    "FECH (P22830). https://www.uniprot.org/uniprotkb/P22830",
+    "FECH (P22830-2). https://www.uniprot.org/uniprotkb/P22830-2",
+    "FECH \u2014 FECH. https://platform.opentargets.org/target/ENSG00000066926",
+    "FECH \u2194 autosomal erythropoietic protoporphyria. https://platform.opentargets.org/target/ENSG00000066926/associations",
+    "FECH \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000066926/associations",
+    "FECH \u2194 erythropoietic protoporphyria. https://platform.opentargets.org/target/ENSG00000066926/associations",
+    "FECH \u2194 Alzheimer disease. https://platform.opentargets.org/target/ENSG00000066926/associations",
+    "FECH \u2014 ferrochelatase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ATM \u2014 ATM serine/threonine kinase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "NR3C1 \u2014 nuclear receptor subfamily 3 group C member 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ESR2 \u2014 estrogen receptor 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Comprehensive analysis of pivotal biomarkers, immune cell infiltration and therapeutic drugs for steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8815624/",
+    "Screening of Potential Biomarkers in the Peripheral Serum for Steroid-Induced Osteonecrosis of the Femoral Head Based on WGCNA and Machine Learning Algorithms (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8832155/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8519,
+    "completion_tokens": 298,
+    "total_tokens": 8817,
+    "estimated_cost_usd": 0.001457
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P22830",
+          "title": "FECH (P22830)",
+          "url": "https://www.uniprot.org/uniprotkb/P22830",
+          "text": "Protein: Ferrochelatase, mitochondrial\nFunction: Catalyzes the ferrous insertion into protoporphyrin IX and participates in the terminal step in the heme biosynthetic pathway",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P22830-2",
+          "title": "FECH (P22830-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P22830-2",
+          "text": "Protein: Isoform 2 of Ferrochelatase, mitochondrial",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000066926::function",
+          "title": "FECH \u2014 FECH",
+          "url": "https://platform.opentargets.org/target/ENSG00000066926",
+          "text": "Function: Catalyzes the ferrous insertion into protoporphyrin IX and participates in the terminal step in the heme biosynthetic pathway. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000066926::MONDO_0019263",
+          "title": "FECH \u2194 autosomal erythropoietic protoporphyria",
+          "url": "https://platform.opentargets.org/target/ENSG00000066926/associations",
+          "text": "Disease: autosomal erythropoietic protoporphyria\nDescription: Erythropoietic protoporphyria (EPP) is an inherited disorder of the heme metabolic pathway characterized by accumulation of protoporphyrin in blood, erythrocytes and tissues, and cutaneous manifestations of photosensitivity.\nAssociation score: 0.842",
+          "cos_sim_score": 0.8424032706667833,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000066926::EFO_0005772",
+          "title": "FECH \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000066926/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.547",
+          "cos_sim_score": 0.5471385088244659,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000066926::MONDO_0001676",
+          "title": "FECH \u2194 erythropoietic protoporphyria",
+          "url": "https://platform.opentargets.org/target/ENSG00000066926/associations",
+          "text": "Disease: erythropoietic protoporphyria\nDescription: A rare congenital metabolic disorder characterized by an inborn error of porphyrin-heme biosynthesis. Signs and symptoms include painful cutaneous photosensitivity leading to blistering and scarring of the exposed skin areas, erythrodontia, red discoloration of urine, hemolytic anemia, and splenomegaly.\nAssociation score: 0.468",
+          "cos_sim_score": 0.46847057847687856,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000066926::MONDO_0004975",
+          "title": "FECH \u2194 Alzheimer disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000066926/associations",
+          "text": "Disease: Alzheimer disease\nDescription: A progressive, neurodegenerative disease characterized by loss of function and death of nerve cells in several areas of the brain leading to loss of cognitive function such as memory and language.\nAssociation score: 0.337",
+          "cos_sim_score": 0.3365518567454565,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "FECH \u2014 ferrochelatase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: FECH\nGene name: ferrochelatase\nAliases / synonyms: EPP, EPP1, FCE\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is localized to the mitochondrion, where it catalyzes the insertion of the ferrous form of iron into protoporphyrin IX in the heme synthesis pathway. Mutations in this gene are associated with erythropoietic protoporphyria. Two transcript variants encoding different isoforms have been found for this gene. A pseudogene of this gene is found on chromosome 3.[provided by RefSeq, May 2010]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "FECH",
+          "aliases": "EPP, EPP1, FCE",
+          "gene_description": "ferrochelatase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ATM \u2014 ATM serine/threonine kinase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ATM\nGene name: ATM serine/threonine kinase\nAliases / synonyms: AT1, ATA, ATC, ATD, ATDC, ATE, TEL1, TELO1\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene belongs to the PI3/PI4-kinase family. This protein is an important cell cycle checkpoint kinase that phosphorylates; thus, it functions as a regulator of a wide variety of downstream proteins, including tumor suppressor proteins p53 and BRCA1, checkpoint kinase CHK2, checkpoint proteins RAD17 and RAD9, and DNA repair protein NBS1. This protein and the closely related kinase ATR are thought to be master controllers of cell cycle checkpoint signaling pathways that are required for cell response to DNA damage and for genome stability. Mutations in this gene are associated with ataxia telangiectasia, an autosomal recessive disorder. [provided by RefSeq, Aug 2010]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ATM",
+          "aliases": "AT1, ATA, ATC, ATD, ATDC, ATE, TEL1, TELO1",
+          "gene_description": "ATM serine/threonine kinase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "NR3C1 \u2014 nuclear receptor subfamily 3 group C member 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: NR3C1\nGene name: nuclear receptor subfamily 3 group C member 1\nAliases / synonyms: GCCR, GCR, GCRST, GR, GRL\nOrganism: Homo sapiens\nGene summary: This gene encodes glucocorticoid receptor, which can function both as a transcription factor that binds to glucocorticoid response elements in the promoters of glucocorticoid responsive genes to activate their transcription, and as a regulator of other transcription factors. This receptor is typically found in the cytoplasm, but upon ligand binding, is transported into the nucleus. It is involved in inflammatory responses, cellular proliferation, and differentiation in target tissues. Mutations in this gene are associated with generalized glucocorticoid resistance. Alternative splicing of this gene results in transcript variants encoding either the same or different isoforms. Additional isoforms resulting from the use of alternate in-frame translation initiation sites have also been descri...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "NR3C1",
+          "aliases": "GCCR, GCR, GCRST, GR, GRL",
+          "gene_description": "nuclear receptor subfamily 3 group C member 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ESR2 \u2014 estrogen receptor 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ESR2\nGene name: estrogen receptor 2\nAliases / synonyms: ER-BETA, ESR-BETA, ESRB, ESTRB, Erb, NR3A2, ODG8\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the family of estrogen receptors and superfamily of nuclear receptor transcription factors. The gene product contains an N-terminal DNA binding domain and C-terminal ligand binding domain and is localized to the nucleus, cytoplasm, and mitochondria. Upon binding to 17beta-estradiol or related ligands, the encoded protein forms homo- or hetero-dimers that interact with specific DNA sequences to activate transcription. Some isoforms dominantly inhibit the activity of other estrogen receptor family members. Several alternatively spliced transcript variants of this gene have been described, but the full-length nature of some of these variants has not been fully characterized. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ESR2",
+          "aliases": "ER-BETA, ESR-BETA, ESRB, ESTRB, Erb, NR3A2, ODG8",
+          "gene_description": "estrogen receptor 2"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::8815624",
+          "title": "Comprehensive analysis of pivotal biomarkers, immune cell infiltration and therapeutic drugs for steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8815624/",
+          "text": "Introduction\nGlucocorticoids are widely used to treat connective tissue and inflammatory disorders, such as systemic lupus erythematosus, Sjogren\u2019s syndrome, rheumatoid arthritis, and severe acute respiratory syndrome [1,2]. However, one of the most common complications following administration of steroids is steroid-induced osteonecrosis of the femoral head (SONFH) [3]. Recent studies have shown that glucocorticoids are the primary risk factor for nontraumatic ONFH in both China and Japan [4,5]. SONFH is a progressive disease, and when untreated, it can spark the devastation and dysfunction of hip joints and eventually impair quality of life. As a consequence of this disease, more than half of the patients require artificial joint replacement. Regretfully, the pathogenesis of this disease is unclear. Therefore, exploring the molecular etiological factors and discovering novel biomarkers for early diagnosis and individualized therapy are urgently needed.\nApoptosis, necrosis, pyrolysis of osteoblasts and osteocytes, intravascular fat embolism, elevated intraosseous pressure, circulatory impairment, coagulation disorders, and genetic polymorphisms have been confirmed to play crucial roles in the pathogenesis of SONFH [6\u201310]. Several studies have focused on the role of inflammatory reaction in the development of ONFH [11,12]. It has been found that abnormal immune cell infiltration, inflammatory pathway activation, and cytokine release might be associated with the pathophysiology of ONFH [13,14]. However, few studies have investigated immune cell infiltration of SONFH. Thus, exploring the distribution of immune cells infiltrating the femoral head in SONFH may contribute to the clarification of the pathogenesis of SONFH.\nBioinformatics is an emerging interdisciplinary field involving molecular biology and information science [15]. A large number of researchers have performed chip sequencing or high-throughput sequencing experiments and uploaded the results to openly accessed repositories, such as the ArrayExpress and Gene Expression Omnibus (GEO) database [16,17]. In our study, we downloaded the primitive microarray dataset GSE123568 from the GEO database and analyzed it using bioinformatics tools. Moreover, immune cell infiltration in SONFH samples was evaluated using the ImmuCellAI method, which is applied to evaluate the abundance of 24 immune cell types. Moreover, the expression levels of key genes were examined using qRT-PCR. Additionally, drugs with potential therapeutic effects on SONFH were predicted based on the differentially expressed genes (DEGs) identified. Ultimately, the effects of aspirin were validated in SONFH treatment using a glucocorticoid-mediated mouse model of ONFH.\nThus, the aim of our research was to identify crucial biomarkers of DEGs and immune infiltration in SONFH, and explore drugs with potential therapeutic effects on SONFH. Eventually, novel diagnostic and therapeutic measures should be established for SONFH.\nMaterials and methods\nMicroarray data and identification of DEGs\nThe microarray data of the GSE123568 dataset were downloaded from the GEO database (GPL15207 platform, Affymetrix Human Gene Expression Array). GES123568 comprises 40 samples of 30 peripheral serum samples obtained from SONFH patients and 10 peripheral serum samples from healthy patients.\nNetworkAnalyst (https://www.networkanalyst.ca/), an online tool [18], was used to explore the DEGs by comparing the expression values between SONFH patient samples and normal control samples. In the present study, an adjusted p value less than 0.01 and log FC value greater than 1.0, were selected as the cutoff criteria to identify DEGs. Additionally, we generated a volcano map based on adjusted p and log FC values. Moreover, we applied a hierarchical clustering analysis method to evaluate the DEGs (50 genes are shown) between SONFH samples and control samples, and the results were visualized using NetworkAnalyst.\nFunction enrichment analysis and PPI network construction",
+          "cos_sim_score": 0.592877209186554,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8832155",
+          "title": "Screening of Potential Biomarkers in the Peripheral Serum for Steroid-Induced Osteonecrosis of the Femoral Head Based on WGCNA and Machine Learning Algorithms",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8832155/",
+          "text": "1. Introduction\nSteroid-induced osteonecrosis of the femoral head (SONFH), a chronic and progressive femoral head disease mainly induced by long-term exposure to excessive glucocorticoids, can cause hip joint damage and dysfunction and ultimately affect the quality of life [1]. The worldwide morbidity of SONFH is increasing year by year, and it is estimated that 20,000-30,000 patients are diagnosed with SONFH that does not depend on transmission each year in United States [2]. In particular, it is expected that the incidence of SONFH will rise in the next few years around the world because of the continuing impacts of the novel coronavirus pandemic since 2019 (COVID-19) [3]. Currently, although the diagnosis of SONFH, especially joint imaging techniques, is well established, patients with an early stage of SONFH are difficult to find because of the lack of effective and specific biomarkers [4]. Moreover, the cost and inconvenience of joint imaging techniques severely limit their application, specifically in China [5, 6]. Furthermore, total hip arthroplasty is effective in improving the quality of life, but most patients still endure the mental and financial pressure [7]. Therefore, the development of new biomarkers for SONFH diagnosis and treatment is urgently needed.\nWith the ongoing progression in sequencing technologies, bioinformatics analysis is an emerging and promising tool for screening potential biomarkers in a variety of neoplastic and nonneoplastic diseases [8, 9]. Data remining by using bioinformatics analysis based on public databases has facilitated the screening of new biomarkers for nonneoplastic diseases [10, 11]. In particular, combining weighted gene coexpression network analysis (WGCNA) and machine learning algorithms has greatly improved the accurate identification of disease-related biomarkers [12\u201315]. For example, FADD, CXCL2, and CXCL8 were identified as immune-related biomarkers of rheumatoid arthritis by integrating WGCNA and least absolute shrinkage and selection operator (LASSO) logistic regression and support vector machine recursive feature elimination (SVM-RFE) algorithms [12]. MACROD1 was found to contribute to the early diagnosis of tendinopathy based on the LASSO model, SVM-REF, and Gaussian mixture model (GMMs) algorithms [13]. Moreover, LSP1, GNLY, and MEOX2 are likely to aid in the diagnosis and treatment of rheumatoid arthritis based on WGCNA machine learning strategies. Furthermore, CDK1, TOP2A, ADRA1A, FANCI, XRCC1, TPX2, CCNB2, CDK4, GLYATL1, and CFHR3 were identified to be core hub genes as potential biomarkers and treatment targets for hepatoblastoma by integrating WGCNA and random forest (RF) algorithm [14]. However, most bioinformatics analyses for SONFH have not been performed by integrating WGCNA and machine learning algorithms.\nTherefore, the present study is aimed at identifying potential biomarkers in the peripheral serum for SONFH by integrating WGCNA and machine learning algorithms, including LASSO logistic regression, SVM-RFE, and RF. First, we identified differentially expressed genes (DEGs) between SONFH and control samples in the GSE123568 dataset downloaded from the Gene Expression Omnibus (GEO) database (https://www.ncbi.nlm.nih.gov/geo/) in NCBI. Moreover, WGCNA was performed based on the expression matrix of DEGs to screen target genes, and machine learning algorithms were used to identify potential biomarkers. Finally, we investigated the possible functions and regulatory mechanisms of the potential biomarkers. This study may provide new biomarkers for the diagnosis and treatment of SONFH and contribute to clarifying the pathogenesis of SONFH.\n2. Material and Methods\n2.1. Data Collection and Preprocessing\nThe gene expression matrix of the peripheral serum for 30 SONFH and 10 control samples from China in the GSE123568 dataset, which was sequenced using the GPL15207 platform, was obtained from the GEO database.\n2.2. Identification of DEGs in the Peripheral Serum of Patients with SONFH\n\u201cLimma\u201d R package was used to screen DEGs between SONFH and control samples [16], and genes with P < 0.01 and \u2223log2FC | >1 were regarded as DEGs.\n2.3. Screening of Target Modules and Genes Based on WGCNA",
+          "cos_sim_score": 0.5885363817214966,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8815624",
+          "title": "Comprehensive analysis of pivotal biomarkers, immune cell infiltration and therapeutic drugs for steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8815624/",
+          "text": "In the past few decades, conservative treatment of SONFH has mainly focused on preventing collapse of the femoral head. Administration of bisphosphonate was reported to prevent collapse in early stage ONFH in a small group of patients [46]. However, the prolonged anti-collapse effects of bisphosphonates have not been elucidated. Once the femoral head progresses and collapses, surgery is needed, including hip-preserving and hip replacement surgeries. However, surgical treatment often results in greater trauma and higher costs. Therefore, it is necessary to identify novel agents and targets for the early treatment of SONFH. In this study, we screened 10 potential drugs for the treatment of SONFH. Most of them have been proven to be associated with the maintenance of normal bone metabolism and have potential therapeutic effects in SONFH. Considering the target genes of these compounds, aspirin, which targets PTGS2, attracted our attention. Because of its safety, aspirin is often used clinically as an antipyretic, analgesic, and anti-inflammatory drug. Previous studies have demonstrated its potential effects on postmenopausal osteoporosis [47]. Aspirin can inhibit osteoclast formation and improve osteogenesis by affecting a variety of biological pathways, such as inhibiting the activities of COX2, COX1, and PGE2 [48]. Furthermore, some studies have shown that aspirin may be a simple and effective treatment option to delay the progression of early ONFH in patients [49]. In this study, a mouse model of Dex-induced ONFH was developed to further explore the role of aspirin in SONFH treatment, and the results revealed that aspirin could protect against GC-induced SONFH, indicating the therapeutic effect of aspirin in SONFH. However, our results demonstrated that aspirin did not ameliorate SONFH by inhibiting osteoclastogenesis.\nAlthough several critical hub genes, types of infiltrating immune cells, and potential therapeutic agents for SONFH were identified in our study, there are some limitations to our study. First, the sample size was relatively small, which may have led to low statistical power for examining gene expression differences between the two groups. With the establishment of the steroid-induced femoral head necrosis specimen library, we will collect more specimens for testing related indicators in the future to reduce the error caused by the small sample size. Second, although we confirmed in a mouse model that aspirin could inhibit the occurrence of SONFH, follow-up clinical trials are still needed to confirm its clinical efficacy. Finally, further studies on the molecular mechanism by which aspirin inhibits SONFH are needed.\nConclusion\nIn summary, 429 DEGs were identified between the SONFH and the control groups. Analysis of the biological functions and pathways of these DEGs contributed to a better understanding of the molecular mechanism of SONFH. Ten pivotal hub genes in SONFH were identified, and the difference in infiltrating immune cells between SONFH and normal control samples was explored. In addition, considering the DEGs identified, we successfully predicted that 10 potential drugs might have therapeutic effects on SONFH. Finally, the role of aspirin in SONFH treatment was verified using a mouse model of DEX-induced ONFH. Overall, our findings might provide novel clues for investigating the pathogenesis and treatment of SONFH.\nSupplementary Material\nSupplemental Material\nClick here for additional data file.",
+          "cos_sim_score": 0.5102454423904419,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8815624",
+          "title": "Comprehensive analysis of pivotal biomarkers, immune cell infiltration and therapeutic drugs for steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8815624/",
+          "text": "Table 2.\nThe top 10 compounds with activity against SONFH as predicted via connectivity map\nA mouse model of glucocorticoid (GC)-induced ONFH was generated to further explore the role of aspirin in the treatment of SONFH (Figure 5a). Compared with mice in the GC treatment group, GC+ aspirin treatment ameliorated GC-induced ONFH in mice by increasing bone volume/total volume (BV/TV) and reducing the empty lacunae rate (Figure 5b-f). However, aspirin treatment did not inhibit osteoclastogenesis in GC-induced ONFH in mice. As shown in Figure 5g-I, compared with that in the GC treatment group, the number of osteoclasts in the femoral head tissue in the GC+ aspirin treatment group was not significantly reduced by TRAP staining. Furthermore, relative Runx2 mRNA expression in the femoral head tissue was significantly increased by aspirin treatment (Figure 5j). Relative RANKL mRNA expression in the femoral head tissue was significantly decreased by aspirin treatment, compared with the GC treatment group (Figure 5k). Since PTGS2 was predicted to be the target gene of aspirin, PTGS2 mRNA expression was detected by qRT-PCR in different groups of mice. The results revealed that aspirin treatment reversed GC treatment-induced increase in PTGS2 expression (Figure 5l). Taken together, these results indicate that aspirin may be a drug for the treatment of SONFH.Figure 5.Identification of the therapeutic effect of aspirin in GC-induced ONFH. (a) Schematic diagram of the treatment of different groups of mice. H&E staining of representative femoral heads in each group. (b) Bone volume/total volume ration (BV/TV) in each group. (c) Empty lacunae rate in each group. (d-f) H&E staining of representative femoral heads in each group (scale bar\u00a0=\u00a0100\u00a0\u03bcm). (g-i) TRAP staining of representative femoral heads in each group (scale bar\u00a0=\u00a0100\u00a0\u03bcm). (j-l) Relative Runx2, RANKL and PTGS2 mRNA expression in femoral heads in each group. All experiments were performed in triplicate, and the results are presented as the means \u00b1 SD. (*p <\u00a00.05 versus the control; #p <\u00a00.05 versus the GC)\nFigure 5.\nIdentification of the therapeutic effect of aspirin in GC-induced ONFH. (a) Schematic diagram of the treatment of different groups of mice. H&E staining of representative femoral heads in each group. (b) Bone volume/total volume ration (BV/TV) in each group. (c) Empty lacunae rate in each group. (d-f) H&E staining of representative femoral heads in each group (scale bar\u00a0=\u00a0100\u00a0\u03bcm). (g-i) TRAP staining of representative femoral heads in each group (scale bar\u00a0=\u00a0100\u00a0\u03bcm). (j-l) Relative Runx2, RANKL and PTGS2 mRNA expression in femoral heads in each group. All experiments were performed in triplicate, and the results are presented as the means \u00b1 SD. (*p <\u00a00.05 versus the control; #p <\u00a00.05 versus the GC)\nDiscussion",
+          "cos_sim_score": 0.48228806257247925,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8815624",
+          "title": "Comprehensive analysis of pivotal biomarkers, immune cell infiltration and therapeutic drugs for steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8815624/",
+          "text": "Discussion\nThe medical history of glucocorticoid use and related clinical manifestations, such as pain in the hip joint, and imaging examinations, including those on plain film, bone scintillation, and magnetic resonance imaging, are often used for the diagnosis of SONFH [26]. However, symptoms may not appear in the early stages of the disease, but rather in the middle and late stages. Because the disease cannot be diagnosed early, the hip preservation treatment is delayed. Although magnetic resonance imaging is often used as a method for the early diagnosis of this disease, it is not suitable for screening all patients receiving GC therapy because of the high cost and time commitment required for obtaining scans. Thus, identifying key circulating markers is essential for the early diagnosis of SONFH. In recent years, some pivotal biomarkers for SONFH have been explored, such as type I collagen cross-linked C-telopeptide and amino terminal telopeptide of procollagen type I [27]. However, both two genes were found to be associated with the development of osteoporosis, which limited their diagnostic value [28]. Therefore, it is necessary to identify promising biomarkers for SONFH to improve its diagnosis and treatment. In our study, we attempted to identify potentially crucial genes related to SONFH. A bioinformatics assessment of GO and KEGG enrichment analyses was performed, and pivotal hub genes were identified in our study. Moreover, we adopted the ImmuCellAI tool to identify immune cell infiltration in SONFH. The results showed a remarkable difference in immune cell infiltration between the SONFH and control samples.\nIn the present study, we discovered that the DEGs were mostly enriched in myeloid leukocyte activation, positive regulation of cytokine production, myeloid cell differentiation, and cytokine receptor activity. Previous studies have verified that the cytokines IL-10, IL-12, and TNF-\u03b1 are related to the development of ONFH [29]. In addition, osteoprotegerin, receptor activator of nuclear factor-\u03baB and receptor activator of nuclear factor-\u03baB ligand (RANKL), a cytokine/cytokine receptor signal axis, have been confirmed to regulate the balance between osteogenesis and osteoclastogenesis, which has also been found to be associated with the pathophysiology of ONFH [30]. Additionally, the outcomes of KEGG pathway analysis revealed that DEGs were notably enriched in osteoclast differentiation, chemokine signaling pathways, and cytokine-cytokine receptor interactions. Moreover, six of the most significant MCODE components extracted from the PPI network were also enriched in the MyD88-dependent Toll-like receptor signaling pathway and in cell proliferation and osteoblast differentiation regulatory pathways. Two studies demonstrated that the immune response associated with the Toll-like receptor 4 signaling pathway can lead to SONFH [31,32]. In addition, abnormal osteoclast differentiation of marrow mesenchymal stem cells (MSCs) has been confirmed to be significantly associated with the development of SONFH [33\u201335]. Thus, we hypothesize that the immune response associated with cytokine and chemokine signaling pathways and osteoclast and osteoblast differentiation may underlie the potential pathophysiology of SONFH.",
+          "cos_sim_score": 0.3536621034145355,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

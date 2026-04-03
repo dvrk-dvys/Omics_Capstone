@@ -1,0 +1,191 @@
+{
+  "rf_rank": 52,
+  "probe_id": "11747992_a_at",
+  "gene_symbol": "WDR20",
+  "score": 0.48,
+  "rf_n_nodes": 1,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.333,
+  "log_fc": 0.333,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11747992_a_at",
+  "max_score": 0.48,
+  "mean_abs_fold_change": 0.333,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:48:24",
+  "interpretation": "WDR20 encodes a protein that is a regulator of deubiquitinating complexes, specifically enhancing the activity of the USP12 deubiquitinase. This function is crucial for maintaining protein homeostasis and cellular signaling pathways, which can be disrupted in various diseases, including those affecting bone health. Although there is no direct evidence linking WDR20 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in regulating protein degradation pathways may suggest a potential involvement in the cellular responses to steroid treatment, which is a known risk factor for SONFH. The evidence retrieved primarily supports its general biological functions rather than a specific connection to SONFH, leading to a low confidence in its direct relevance as a biomarker for early detection of this condition. Therefore, while WDR20 may play a role in cellular processes that could be relevant to SONFH, the lack of direct evidence limits its potential as a clinically actionable biomarker.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "WDR20 may be involved in cellular processes relevant to Steroid-Induced Osteonecrosis of the Femoral Head, but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "WDR20 (Q8TBZ3). https://www.uniprot.org/uniprotkb/Q8TBZ3",
+    "WDR20 (Q8TBZ3-6). https://www.uniprot.org/uniprotkb/Q8TBZ3-6",
+    "WDR20 (Q8TBZ3-8). https://www.uniprot.org/uniprotkb/Q8TBZ3-8",
+    "WDR20 \u2014 WDR20. https://platform.opentargets.org/target/ENSG00000140153",
+    "WDR20 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000140153/associations",
+    "WDR20 \u2194 gout. https://platform.opentargets.org/target/ENSG00000140153/associations",
+    "WDR20 \u2194 alcohol drinking. https://platform.opentargets.org/target/ENSG00000140153/associations",
+    "WDR20 \u2194 crush injury. https://platform.opentargets.org/target/ENSG00000140153/associations",
+    "WDR20 \u2014 WD repeat domain 20 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ESR1 \u2014 estrogen receptor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KRAS \u2014 KRAS proto-oncogene, GTPase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "AR \u2014 androgen receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MYC \u2014 MYC proto-oncogene, bHLH transcription factor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4765,
+    "completion_tokens": 324,
+    "total_tokens": 5089,
+    "estimated_cost_usd": 0.000909
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q8TBZ3",
+          "title": "WDR20 (Q8TBZ3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8TBZ3",
+          "text": "Protein: WD repeat-containing protein 20\nFunction: Regulator of deubiquitinating complexes. Activates deubiquitinating activity of complexes containing USP12 (PubMed:20147737, PubMed:27373336). Anchors at the base of the ubiquitin-contacting loop of USP12 and remotely modulates the catalytic center of the enzyme (PubMed:27373336). Regulates shuttling of the USP12 deubiquitinase complex between the plasma membrane, cytoplasm and nucleus (PubMed:30466959)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q8TBZ3-6",
+          "title": "WDR20 (Q8TBZ3-6)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8TBZ3-6",
+          "text": "Protein: Isoform 6 of WD repeat-containing protein 20",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q8TBZ3-8",
+          "title": "WDR20 (Q8TBZ3-8)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8TBZ3-8",
+          "text": "Protein: Isoform 8 of WD repeat-containing protein 20",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000140153::function",
+          "title": "WDR20 \u2014 WDR20",
+          "url": "https://platform.opentargets.org/target/ENSG00000140153",
+          "text": "Function: Regulator of deubiquitinating complexes. Activates deubiquitinating activity of complexes containing USP12 (PubMed:20147737, PubMed:27373336). Anchors at the base of the ubiquitin-contacting loop of USP12 and remotely modulates the catalytic center of the enzyme (PubMed:27373336). Regulates shuttling of the USP12 deubiquitinase complex between the plasma membrane, cytoplasm and nucleus (PubMed:30466959).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000140153::EFO_0005772",
+          "title": "WDR20 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000140153/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.506",
+          "cos_sim_score": 0.5057867008023308,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000140153::EFO_0004274",
+          "title": "WDR20 \u2194 gout",
+          "url": "https://platform.opentargets.org/target/ENSG00000140153/associations",
+          "text": "Disease: gout\nDescription: metabolic disorder characterized by recurrent acute arthritis, hyperuricemia and deposition of sodium urate in and around the joints, sometimes with formation of uric acid calculi. Gout is partly genetic.\nAssociation score: 0.339",
+          "cos_sim_score": 0.33906961171765776,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000140153::EFO_0004329",
+          "title": "WDR20 \u2194 alcohol drinking",
+          "url": "https://platform.opentargets.org/target/ENSG00000140153/associations",
+          "text": "Disease: alcohol drinking\nDescription: Behaviors associated with the ingesting of alcoholic beverages, including social drinking.\nAssociation score: 0.278",
+          "cos_sim_score": 0.27844694070641546,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000140153::EFO_0009504",
+          "title": "WDR20 \u2194 crush injury",
+          "url": "https://platform.opentargets.org/target/ENSG00000140153/associations",
+          "text": "Disease: crush injury\nDescription: Traumatic compression of the body or a part of the body. [ NCI ]\nAssociation score: 0.273",
+          "cos_sim_score": 0.2727337106641075,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "WDR20 \u2014 WD repeat domain 20",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: WDR20\nGene name: WD repeat domain 20\nAliases / synonyms: Bun107, DMR\nOrganism: Homo sapiens\nGene summary: This gene encodes a WD repeat-containing protein that functions to preserve and regulate the activity of the USP12-UAF1 deubiquitinating enzyme complex. Multiple alternatively spliced transcript variants have been found for this gene. [provided by RefSeq, Jun 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "WDR20",
+          "aliases": "Bun107, DMR",
+          "gene_description": "WD repeat domain 20"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ESR1 \u2014 estrogen receptor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ESR1\nGene name: estrogen receptor 1\nAliases / synonyms: ER, ESR, ESRA, ESTRR, Era, NR3A1\nOrganism: Homo sapiens\nGene summary: This gene encodes an estrogen receptor and ligand-activated transcription factor. The canonical protein contains an N-terminal ligand-independent transactivation domain, a central DNA binding domain, a hinge domain, and a C-terminal ligand-dependent transactivation domain. The protein localizes to the nucleus where it may form either a homodimer or a heterodimer with estrogen receptor 2. The protein encoded by this gene regulates the transcription of many estrogen-inducible genes that play a role in growth, metabolism, sexual development, gestation, and other reproductive functions and is expressed in many non-reproductive tissues. The receptor encoded by this gene plays a key role in breast cancer, endometrial cancer, and osteoporosis. This gene is reported to have dozens of transcript va...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ESR1",
+          "aliases": "ER, ESR, ESRA, ESTRR, Era, NR3A1",
+          "gene_description": "estrogen receptor 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KRAS \u2014 KRAS proto-oncogene, GTPase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KRAS\nGene name: KRAS proto-oncogene, GTPase\nAliases / synonyms: 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2\nOrganism: Homo sapiens\nGene summary: This gene, a Kirsten ras oncogene homolog from the mammalian ras gene family, encodes a protein that is a member of the small GTPase superfamily. A single amino acid substitution is responsible for an activating mutation. The transforming protein that results is implicated in various malignancies, including lung adenocarcinoma, mucinous adenoma, ductal carcinoma of the pancreas and colorectal carcinoma. Alternative splicing leads to variants encoding two isoforms that differ in the C-terminal region. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KRAS",
+          "aliases": "'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2",
+          "gene_description": "KRAS proto-oncogene, GTPase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "AR \u2014 androgen receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AR\nGene name: androgen receptor\nAliases / synonyms: AIS, AR8, DHTR, HUMARA, HYSP1, KD, NR3C4, SBMA, SMAX1, TFM\nOrganism: Homo sapiens\nGene summary: The androgen receptor gene is more than 90 kb long and codes for a protein that has 3 major functional domains: the N-terminal domain, DNA-binding domain, and androgen-binding domain. The protein functions as a steroid-hormone activated transcription factor. Upon binding the hormone ligand, the receptor dissociates from accessory proteins, translocates into the nucleus, dimerizes, and then stimulates transcription of androgen responsive genes. This gene contains 2 polymorphic trinucleotide repeat segments that encode polyglutamine and polyglycine tracts in the N-terminal transactivation domain of its protein. Expansion of the polyglutamine tract from the normal 9-34 repeats to the pathogenic 38-62 repeats causes spinal bulbar muscular atrophy (SBMA, also known as Kennedy's disease). Mutati...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AR",
+          "aliases": "AIS, AR8, DHTR, HUMARA, HYSP1, KD, NR3C4, SBMA, SMAX1, TFM",
+          "gene_description": "androgen receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MYC \u2014 MYC proto-oncogene, bHLH transcription factor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MYC\nGene name: MYC proto-oncogene, bHLH transcription factor\nAliases / synonyms: MRTL, MYCC, bHLHe39, c-Myc\nOrganism: Homo sapiens\nGene summary: This gene is a proto-oncogene and encodes a nuclear phosphoprotein that plays a role in cell cycle progression, apoptosis and cellular transformation. The encoded protein forms a heterodimer with the related transcription factor MAX. This complex binds to the E box DNA consensus sequence and regulates the transcription of specific target genes. Amplification of this gene is frequently observed in numerous human cancers. Translocations involving this gene are associated with Burkitt lymphoma and multiple myeloma in human patients. There is evidence to show that translation initiates both from an upstream, in-frame non-AUG (CUG) and a downstream AUG start site, resulting in the production of two isoforms with distinct N-termini. [provided by RefSeq, Aug 2017]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MYC",
+          "aliases": "MRTL, MYCC, bHLHe39, c-Myc",
+          "gene_description": "MYC proto-oncogene, bHLH transcription factor"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

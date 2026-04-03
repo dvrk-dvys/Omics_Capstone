@@ -1,0 +1,184 @@
+{
+  "probe_id": "11719307_a_at",
+  "gene_symbol": "RASSF4",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.1513541980866855,
+  "abs_fold_change": 1.3708,
+  "score": 1.3672,
+  "probe_count": 1,
+  "probe_ids": "11719307_a_at",
+  "max_score": 1.3672,
+  "mean_abs_fold_change": 1.3708,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T23:10:18",
+  "interpretation": "RASSF4 (Ras association domain family member 4) is a protein that may function as a tumor suppressor and is involved in promoting apoptosis and cell cycle arrest. Although there is no direct evidence linking RASSF4 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in apoptosis could be relevant in the context of bone cell survival and death, particularly under the stress of steroid treatment. The retrieved evidence primarily indicates its potential involvement in tumor suppression and cellular processes, but lacks specific connections to SONFH. Therefore, while RASSF4 may have biological relevance due to its apoptotic functions, the evidence for its role as a biomarker for SONFH is weak, leading to an inference that it could be involved in the disease process but not validated as a direct biomarker. Thus, its potential as a clinical biomarker for early detection of SONFH is considered weak.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "RASSF4 may play a role in apoptosis, which could be relevant to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "RIN2 (Q8WYP3). https://www.uniprot.org/uniprotkb/Q8WYP3",
+    "RASSF4 (Q9H2L5). https://www.uniprot.org/uniprotkb/Q9H2L5",
+    "RIN2 (Q8WYP3-2). https://www.uniprot.org/uniprotkb/Q8WYP3-2",
+    "RASSF4 \u2014 RASSF4. https://platform.opentargets.org/target/ENSG00000107551",
+    "RASSF4 \u2194 prostate carcinoma. https://platform.opentargets.org/target/ENSG00000107551/associations",
+    "RASSF4 \u2194 Abruptio Placentae. https://platform.opentargets.org/target/ENSG00000107551/associations",
+    "RASSF4 \u2194 psoriatic arthritis. https://platform.opentargets.org/target/ENSG00000107551/associations",
+    "RASSF4 \u2194 hepatocellular carcinoma. https://platform.opentargets.org/target/ENSG00000107551/associations",
+    "RASSF4 \u2014 Ras association domain family member 4 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "RIN2 \u2014 Ras and Rab interactor 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "AKT1 \u2014 AKT serine/threonine kinase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HMGB1 \u2014 high mobility group box 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "STIM1 \u2014 stromal interaction molecule 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4808,
+    "completion_tokens": 330,
+    "total_tokens": 5138,
+    "estimated_cost_usd": 0.000919
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q8WYP3",
+          "title": "RIN2 (Q8WYP3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8WYP3",
+          "text": "Protein: Ras and Rab interactor 2\nFunction: Ras effector protein. May function as an upstream activator and/or downstream effector for RAB5B in endocytic pathway. May function as a guanine nucleotide exchange (GEF) of RAB5B, required for activating the RAB5 proteins by exchanging bound GDP for free GTP",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9H2L5",
+          "title": "RASSF4 (Q9H2L5)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9H2L5",
+          "text": "Protein: Ras association domain-containing protein 4\nFunction: Potential tumor suppressor. May act as a KRAS effector protein. May promote apoptosis and cell cycle arrest",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q8WYP3-2",
+          "title": "RIN2 (Q8WYP3-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8WYP3-2",
+          "text": "Protein: Isoform 2 of Ras and Rab interactor 2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000107551::function",
+          "title": "RASSF4 \u2014 RASSF4",
+          "url": "https://platform.opentargets.org/target/ENSG00000107551",
+          "text": "Function: Potential tumor suppressor. May act as a KRAS effector protein. May promote apoptosis and cell cycle arrest. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000107551::EFO_0001663",
+          "title": "RASSF4 \u2194 prostate carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000107551/associations",
+          "text": "Disease: prostate carcinoma\nDescription: A carcinoma that arises from epithelial cells of the prostate gland.\nAssociation score: 0.290",
+          "cos_sim_score": 0.29048988499035555,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000107551::EFO_1001754",
+          "title": "RASSF4 \u2194 Abruptio Placentae",
+          "url": "https://platform.opentargets.org/target/ENSG00000107551/associations",
+          "text": "Disease: Abruptio Placentae\nDescription: Vaginal bleeding preceding the 20th week of gestation.\nAssociation score: 0.278",
+          "cos_sim_score": 0.27788629025148665,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000107551::EFO_0003778",
+          "title": "RASSF4 \u2194 psoriatic arthritis",
+          "url": "https://platform.opentargets.org/target/ENSG00000107551/associations",
+          "text": "Disease: psoriatic arthritis\nDescription: Joint inflammation associated with psoriasis.\nAssociation score: 0.273",
+          "cos_sim_score": 0.27270423629568025,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000107551::EFO_0000182",
+          "title": "RASSF4 \u2194 hepatocellular carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000107551/associations",
+          "text": "Disease: hepatocellular carcinoma\nDescription: A malignant tumor that arises from hepatocytes. Hepatocellular carcinoma is relatively rare in the United States but very common in all African countries south of the Sahara and in Southeast Asia. Most cases are seen in patients over the age of 50 years, but this tumor can also occur in younger individuals and even in children. Hepatocellular carcinoma is more common in males than females and is associated with hepatitis B, hepatitis C, chronic alcohol abuse and cirrhosis. Serum elevation of alpha-fetoprotein occurs in a large percentage of patients with hepatocellular carcinoma. Grossly, hepatocellular carcinoma may present as a single mass, as multiple nodules, or as diffuse liver involvement. Microscopically, there is a wide range of differentiation from tumor to tumor (well differentiated to poorly differentiated tumors). Hepatocellular carcinomas quickly metastasize to regional lymph nodes and lung. The overall median survival of untreated liver cell carcinoma is about 4 months. The most effective treatment of hepatocellular carcinoma is complete resection of the tumor. Lately, an increasing number of tumors have been treated with liver transplantation.\nAssociation score: 0.076",
+          "cos_sim_score": 0.07625796211325774,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "RASSF4 \u2014 Ras association domain family member 4",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RASSF4\nGene name: Ras association domain family member 4\nAliases / synonyms: AD037\nOrganism: Homo sapiens\nGene summary: The function of this gene has not yet been determined but may involve a role in tumor suppression. Alternative splicing of this gene results in several transcript variants; however, most of the variants have not been fully described. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RASSF4",
+          "aliases": "AD037",
+          "gene_description": "Ras association domain family member 4"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "RIN2 \u2014 Ras and Rab interactor 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RIN2\nGene name: Ras and Rab interactor 2\nAliases / synonyms: MACS, RASSF4\nOrganism: Homo sapiens\nGene summary: The RAB5 protein is a small GTPase involved in membrane trafficking in the early endocytic pathway. The protein encoded by this gene binds the GTP-bound form of the RAB5 protein preferentially over the GDP-bound form, and functions as a guanine nucleotide exchange factor for RAB5. The encoded protein is found primarily as a tetramer in the cytoplasm and does not bind other members of the RAB family. Mutations in this gene cause macrocephaly alopecia cutis laxa and scoliosis (MACS) syndrome, an elastic tissue disorder, as well as the related connective tissue disorder, RIN2 syndrome. Alternative splicing results in multiple transcript variants. [provided by RefSeq, Jun 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RIN2",
+          "aliases": "MACS, RASSF4",
+          "gene_description": "Ras and Rab interactor 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "AKT1 \u2014 AKT serine/threonine kinase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AKT1\nGene name: AKT serine/threonine kinase 1\nAliases / synonyms: AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA\nOrganism: Homo sapiens\nGene summary: This gene encodes one of the three members of the human AKT serine-threonine protein kinase family which are often referred to as protein kinase B alpha, beta, and gamma. These highly similar AKT proteins all have an N-terminal pleckstrin homology domain, a serine/threonine-specific kinase domain and a C-terminal regulatory domain. These proteins are phosphorylated by phosphoinositide 3-kinase (PI3K). AKT/PI3K forms a key component of many signalling pathways that involve the binding of membrane-bound ligands such as receptor tyrosine kinases, G-protein coupled receptors, and integrin-linked kinase. These AKT proteins therefore regulate a wide variety of cellular functions including cell proliferation, survival, metabolism, and angiogenesis in both normal and malignant cells. AKT proteins ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AKT1",
+          "aliases": "AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA",
+          "gene_description": "AKT serine/threonine kinase 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "HMGB1 \u2014 high mobility group box 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HMGB1\nGene name: high mobility group box 1\nAliases / synonyms: HMG-1, HMG1, HMG3, SBP-1\nOrganism: Homo sapiens\nGene summary: This gene encodes a protein that belongs to the High Mobility Group-box superfamily. The encoded non-histone, nuclear DNA-binding protein regulates transcription, and is involved in organization of DNA. This protein plays a role in several cellular processes, including inflammation, cell differentiation and tumor cell migration. Multiple pseudogenes of this gene have been identified. Alternative splicing results in multiple transcript variants that encode the same protein. [provided by RefSeq, Sep 2015]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HMGB1",
+          "aliases": "HMG-1, HMG1, HMG3, SBP-1",
+          "gene_description": "high mobility group box 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "STIM1 \u2014 stromal interaction molecule 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: STIM1\nGene name: stromal interaction molecule 1\nAliases / synonyms: D11S4896E, GOK, IMD10, STRMK, TAM, TAM1\nOrganism: Homo sapiens\nGene summary: This gene encodes a type 1 transmembrane protein that mediates Ca2+ influx after depletion of intracellular Ca2+ stores by gating of store-operated Ca2+ influx channels (SOCs). It is one of several genes located in the imprinted gene domain of 11p15.5, an important tumor-suppressor gene region. Alterations in this region have been associated with the Beckwith-Wiedemann syndrome, Wilms tumor, rhabdomyosarcoma, adrenocrotical carcinoma, and lung, ovarian, and breast cancer. This gene may play a role in malignancies and disease that involve this region, as well as early hematopoiesis, by mediating attachment to stromal cells. Mutations in this gene are associated with fatal classic Kaposi sarcoma, immunodeficiency due to defects in store-operated calcium entry (SOCE) in fibroblasts, ectoderma...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "STIM1",
+          "aliases": "D11S4896E, GOK, IMD10, STRMK, TAM, TAM1",
+          "gene_description": "stromal interaction molecule 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

@@ -46,16 +46,19 @@ paths:
   #llm_outputs_dir: app/data/output_univariate_rerank_top100/llm_outputs
   # Run 3: multivariate top100
   #biomarker_shortlist: app/data/output_new_multivariate_top100/biomarker_shortlist.csv
-  llm_outputs_dir: app/data/output_new_multivariate_top100/llm_outputs
+ #llm_outputs_dir: app/data/output_new_multivariate_top100/llm_outputs
   # Run 4: multivariate top500
   #biomarker_shortlist: app/data/output_new_multivariate_top500/biomarker_shortlist.csv
   #llm_outputs_dir: app/data/output_new_multivariate_top500/llm_outputs
-  # Run 5: femoral_head_necrosis (absolute paths, legacy location)
-  #biomarker_shortlist: app/data/output_new_univariate_top100/biomarker_shortlist.csv
-  #llm_outputs_dir: /Users/jordanharris/Code/Omics_Capstone/data/femoral_head_necrosis/llm_outputs
+  # Run 5: weka muli
+  #biomarker_shortlist: /Users/jordanharris/Code/Omics_Capstone/data/femoral_head_necrosis/weka_models/multivariate/weka_biomarker_shortlist.csv
+  #llm_outputs_dir: app/data/output_weka_multivariate/llm_outputs
+  # Run 6: weka uni
+  #biomarker_shortlist: /Users/jordanharris/Code/Omics_Capstone/data/femoral_head_necrosis/weka_models/univariate_ann/weka_biomarker_shortlist.csv
+  #llm_outputs_dir: app/data/output_weka_univariate_ann/llm_outputs
   # ────────────────────────────────────────────────────────────────────────────
   # Previous runs (archived)
-  #llm_outputs_dir: app/data/jia2023_paper_gene_candidates/llm_outputs
+  llm_outputs_dir: app/data/jia2023_paper_gene_candidates/llm_outputs
   #llm_outputs_dir: app/data/output/llm_outputs  # DEFAULT
 
   # Univariate ANN outputs (professor-faithful single-probe workflow)

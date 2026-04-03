@@ -1,0 +1,286 @@
+{
+  "rf_rank": 19,
+  "probe_id": "11729757_a_at",
+  "gene_symbol": "RHAG",
+  "score": 0.72,
+  "rf_n_nodes": 4,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 1.6936,
+  "log_fc": -1.6936,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11729757_a_at",
+  "max_score": 0.72,
+  "mean_abs_fold_change": 1.6936,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T01:45:57",
+  "interpretation": "RHAG encodes the Rh-associated glycoprotein, which is involved in the transport of ammonium and carbon dioxide across erythrocyte membranes. This protein is part of the ankyrin-1 complex, crucial for maintaining erythrocyte membrane stability. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), RHAG has been identified as a candidate biomarker through differential expression analysis in peripheral blood samples from SONFH patients. Although it is part of a gene module significantly correlated with SONFH, the evidence for RHAG as a direct biomarker is less robust compared to other identified genes like HEMGN and SLC2A1, which showed stronger downregulation in SONFH patients. Therefore, while RHAG is implicated in the disease context, its potential as a diagnostic biomarker is moderate, primarily due to its association with the inflammatory response and erythrocyte function rather than direct involvement in the pathophysiology of SONFH.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 2",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "RHAG is associated with the inflammatory response in SONFH and is part of a gene module identified as relevant to the disease.",
+  "citations": [
+    "RHAG (Q02094). https://www.uniprot.org/uniprotkb/Q02094",
+    "RHAG (Q02094-2). https://www.uniprot.org/uniprotkb/Q02094-2",
+    "RHAG \u2014 RHAG. https://platform.opentargets.org/target/ENSG00000112077",
+    "RHAG \u2194 Rh deficiency syndrome. https://platform.opentargets.org/target/ENSG00000112077/associations",
+    "RHAG \u2194 overhydrated hereditary stomatocytosis. https://platform.opentargets.org/target/ENSG00000112077/associations",
+    "RHAG \u2194 placental retention. https://platform.opentargets.org/target/ENSG00000112077/associations",
+    "RHAG \u2194 non-small cell lung carcinoma. https://platform.opentargets.org/target/ENSG00000112077/associations",
+    "HEMGN and SLC2A1 might be potential diagnostic biomarkers of steroid-induced osteonecrosis of femoral head: study based on WGCNA and DEGs screening. (2021). https://pubmed.ncbi.nlm.nih.gov/33451334/",
+    "[Transcriptome data mining combined with clinical and animal experiments for identification of syndrome element marker genes during entire course of steroid-induced osteonecrosis of femoral head]. (2024). https://pubmed.ncbi.nlm.nih.gov/38621982/",
+    "RHAG \u2014 Rh associated glycoprotein (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TP53 \u2014 tumor protein p53 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "LMNA \u2014 lamin A/C (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "SLC4A1 \u2014 solute carrier family 4 member 1 (Diego blood group) (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CD47 \u2014 CD47 molecule (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HEMGN and SLC2A1 might be potential diagnostic biomarkers of steroid-induced osteonecrosis of femoral head: study based on WGCNA and DEGs screening (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC7811219/",
+    "Accumulation of Fat Not Responsible for Femoral Head Necrosis, Revealed by Single-Cell RNA Sequencing: A Preliminary Study (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9856115/",
+    "ARG2, MAP4K5 and TSTA3 as Diagnostic Markers of Steroid-Induced Osteonecrosis of the Femoral Head and Their Correlation With Immune Infiltration (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8350574/",
+    "Comprehensive Analyses of Bone and Cartilage Transcriptomes Evince Ion Transport, Inflammation and Cartilage Development-Related Genes Involved in Chickens\u2019 Femoral Head Separation (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8944783/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 13523,
+    "completion_tokens": 338,
+    "total_tokens": 13861,
+    "estimated_cost_usd": 0.002231
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q02094",
+          "title": "RHAG (Q02094)",
+          "url": "https://www.uniprot.org/uniprotkb/Q02094",
+          "text": "Protein: Ammonium transporter Rh type A\nFunction: Component of the ankyrin-1 complex, a multiprotein complex involved in the stability and shape of the erythrocyte membrane (PubMed:35835865). Heterotrimer with RHCE (RHAG)2(RHCE), that transports ammonium and its related derivative methylammonium, in both neutral and ionic forms, across the erythrocyte membrane (PubMed:11062476, PubMed:11861637, PubMed:15572441, PubMed:15856280, PubMed:19273840, PubMed:21849667, PubMed:22012326, PubMed:24077989, PubMed:26354748). The transport of NH4(+) is electrogenic and masks the NH3 transport (PubMed:26354748). Also, may act as a CO2 channel (PubMed:17712059, PubMed:19273840, PubMed:24077989). In vitro, leaks monovalent cations (PubMed:18931342, PubMed:21849667). Moreover in erythrocyte, regulates RHD membrane expression (PubMed:12130520) and is associated with rhesus blood group antigen expression (PubMed:12130520, PubMed:19744193)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q02094-2",
+          "title": "RHAG (Q02094-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q02094-2",
+          "text": "Protein: Isoform 2 of Ammonium transporter Rh type A",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000112077::function",
+          "title": "RHAG \u2014 RHAG",
+          "url": "https://platform.opentargets.org/target/ENSG00000112077",
+          "text": "Function: Component of the ankyrin-1 complex, a multiprotein complex involved in the stability and shape of the erythrocyte membrane (PubMed:35835865). Heterotrimer with RHCE (RHAG)2(RHCE), that transports ammonium and its related derivative methylammonium, in both neutral and ionic forms, across the erythrocyte membrane (PubMed:11062476, PubMed:11861637, PubMed:15572441, PubMed:15856280, PubMed:19273840, PubMed:21849667, PubMed:22012326, PubMed:24077989, PubMed:26354748). The transport of NH4(+) is electrogenic and masks the NH3 transport (PubMed:26354748). Also, may act as a CO2 channel (PubMed:17712059, PubMed:19273840, PubMed:24077989). In vitro, leaks monovalent cations (PubMed:18931342, PubMed:21849667). Moreover in erythrocyte, regulates RHD membrane expression (PubMed:12130520) and is associated with rhesus blood group antigen expression (PubMed:12130520, PubMed:19744193).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000112077::MONDO_0019107",
+          "title": "RHAG \u2194 Rh deficiency syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000112077/associations",
+          "text": "Disease: Rh deficiency syndrome\nDescription: The Rh deficiency syndrome, also known as Rh-null syndrome, is a blood disorder where people have red blood cells (RBCs) lacking all Rh antigens. The Rh antigens maintain the integrity of the RBC membrane and therefore, RBCs which lack Rh antigens have an abnormal shape. There are two types of Rh deficiency syndrome: The regulator type is associated with many different changes (mutations) in the RHAG gene. The amorph type is caused by inactive copies of a gene (silent alleles) at the RH locus. As a result, the RBCs do not express any of the Rh antigens. The absence of the Rh complex alters the RBC shape, increases its tendency to break down (osmotic fragility), and shortens its lifespan, resulting in a hemolytic anemia that is usually mild. These patients are at risk of having adverse transfusion reactions because they may produce antibodies against several of the Rh antigens and can only receive blood from people who have the same condition. Rh deficiency syndrome is inherited in an autosomal recessive manner. Management is individualized according to the severity of hemolytic anemia.\nAssociation score: 0.764",
+          "cos_sim_score": 0.764209214915708,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000112077::MONDO_0008493",
+          "title": "RHAG \u2194 overhydrated hereditary stomatocytosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000112077/associations",
+          "text": "Disease: overhydrated hereditary stomatocytosis\nDescription: Overhydrated hereditary stomatocytosis (OHSt) is a disorder of red cell membrane permeability to monovalent cations and is characterized clinically by hemolytic anemia.\nAssociation score: 0.717",
+          "cos_sim_score": 0.7173889801904081,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000112077::EFO_0009578",
+          "title": "RHAG \u2194 placental retention",
+          "url": "https://platform.opentargets.org/target/ENSG00000112077/associations",
+          "text": "Disease: placental retention\nDescription: After delivery of neonate, placental retention that requires clinical intervention such as manual extraction, curettage or uterotonic medications. [ NCI ]\nAssociation score: 0.236",
+          "cos_sim_score": 0.23563620877934635,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000112077::EFO_0003060",
+          "title": "RHAG \u2194 non-small cell lung carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000112077/associations",
+          "text": "Disease: non-small cell lung carcinoma\nDescription: A group of at least three distinct histological types of lung cancer, including non-small cell squamous cell carcinoma, adenocarcinoma, and large cell carcinoma. Non-small cell lung carcinomas have a poor response to conventional chemotherapy.\nAssociation score: 0.083",
+          "cos_sim_score": 0.08335875030243332,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::33451334",
+          "title": "HEMGN and SLC2A1 might be potential diagnostic biomarkers of steroid-induced osteonecrosis of femoral head: study based on WGCNA and DEGs screening.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33451334/",
+          "year": "2021",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SONFH) is a chronic and crippling bone disease. This study aims to reveal novel diagnostic biomarkers of SONFH. The GSE123568 dataset based on peripheral blood samples from 10 healthy individuals and 30 SONFH patients was used for weighted gene co-expression network analysis (WGCNA) and differentially expressed genes (DEGs) screening. The genes in the module related to SONFH and the DEGs were extracted for Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analysis. Genes with |gene significance|\u2009>\u20090.7 and |module membership| >\u20090.8 were selected as hub genes in modules. The DEGs with the degree of connectivity \u22655 were chosen as hub genes in DEGs. Subsequently, the overlapping genes of hub genes in modules and hub genes in DEGs were selected as key genes for SONFH. And then, the key genes were verified in another dataset, and the diagnostic value of key genes was evaluated by receiver operating characteristic (ROC) curve. Nine gene co-expression modules were constructed via WGCNA. The brown module with 1258 genes was most significantly correlated with SONFH and was identified as the key module for SONFH. The results of functional enrichment analysis showed that the genes in the key module were mainly enriched in the inflammatory response, apoptotic process and osteoclast differentiation. A total of 91 genes were identified as hub genes in the key module. Besides, 145 DEGs were identified by DEGs screening and 26 genes were identified as hub genes of DEGs. Overlapping genes of hub genes in the key module and hub genes in DEGs, including RHAG, RNF14, HEMGN, and SLC2A1, were further selected as key genes for SONFH. The diagnostic value of these key genes for SONFH was confirmed by ROC curve. The validation results of these key genes in GSE26316 dataset showed that only HEMGN and SLC2A1 were downregulated in the SONFH group, suggesting that they were more likely to be diagnostic biomarkers of SOFNH than RHAG and RNF14. Our study identified that two key genes, HEMGN and SLC2A1, might be potential diagnostic biomarkers of SONFH.",
+          "cos_sim_score": 0.43652909994125366,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::38621982",
+          "title": "[Transcriptome data mining combined with clinical and animal experiments for identification of syndrome element marker genes during entire course of steroid-induced osteonecrosis of femoral head].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38621982/",
+          "year": "2024",
+          "text": "A research strategy combining transcriptome data mining and experimental verification was adopted to identify the marker genes characterizing the syndrome elements of phlegm, stasis, and deficiency in steroid-induced osteonecrosis of the femoral head(SONFH). Firstly, the common differentially expressed gene sets of SONFH with the syndromes of phlegm-stasis obstructing collaterals, vessel obstruction, and liver-kidney deficiency were obtained from the clinical transcriptomic analysis of a previous study. The differential expression trend analysis and functional gene mining were then employed to predict the candidate marker gene sets representing phlegm, stasis, and deficiency. The whole blood samples from SONFH patients, whole blood samples from SONFH rats, and affected femoral head tissue samples were collected for qPCR, which aimed to determine the expression levels of the candidate marker genes mentioned above. Furthermore, the receiver operating characteristic curve(ROC) was established to objectively evaluate the syndrome differentiation effectiveness of the candidate marker genes mentioned above. The transcriptome data analysis results showed that the candidate marker genes for phlegm was ELOVL fatty acid elongase 6(ELOVL6), and those for stasis were ankyrin 1(ANK1), glycophorin A/B(GYPA/B), and Rh-associated glycoprotein(RHAG). The candidate marker genes for deficiency were solute carrier family 2 member 1(SLC2A1) and stomatin(STOM). The qPCR results showed that compared with that in the non-SONFH group, ELOVL6 had the lowest expression level in the peripheral blood of the SONFH patients with the syndrome of phlegm-stasis obstructing collaterals(P&lt;0.05). Compared with that in the normal control group, ELOVL6 had the lowest expression level in the peripheral blood and affected femoral head tissue of SONFH rats modeled for 4 weeks(P&lt;0.01), and it showed better syndrome differentiation effectiveness of rats modeled for 4 weeks(AUC=0.850, P=0.006) than at other modeling time points(8, 12, 16, and 21 weeks, AUC of 0.689, 0.766, 0.588, and 0.662, respectively). Compared with that in the non-SONFH group, the expression levels of ANK1, GYPA, and RHAG were the lowest in the peripheral blood of SONFH patients with the vessel obstruction syndrome(P&lt;0.05). The expression levels of the three genes were the lowest in the peripheral blood and affected femoral head tissue of",
+          "cos_sim_score": 0.4338493347167969,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::38621982",
+          "title": "[Transcriptome data mining combined with clinical and animal experiments for identification of syndrome element marker genes during entire course of steroid-induced osteonecrosis of femoral head].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38621982/",
+          "year": "2024",
+          "text": "than at other modeling time points(8, 12, 16, and 21 weeks, AUC of 0.689, 0.766, 0.588, and 0.662, respectively). Compared with that in the non-SONFH group, the expression levels of ANK1, GYPA, and RHAG were the lowest in the peripheral blood of SONFH patients with the vessel obstruction syndrome(P&lt;0.05). The expression levels of the three genes were the lowest in the peripheral blood and affected femoral head tissue of SONFH rats modeled for 12 weeks(P&lt;0.05, P&lt;0.01), and their syndrome differentiation effectiveness in the rats modeled for 12 weeks(GYPA: AUC=0.861, P=0.012; ANK1: AUC=0.855, P=0.006; RHAG: AUC=0.854, P=0.009) was superior to that for 4, 8, 16, and 21 weeks(GYPA: AUC=0.646, 0.573, 0.691, and 0.617, respectively; ANK: AUC1=0.630, 0.658, 0.657, and 0.585, respectively; RHAG: AUC=0.592, 0.511, 0.515, and 0.536, respectively). Compared with the non-SONFH group, both SLC2A1 and STOM had the lowest expression levels in the peripheral blood of patients with the syndrome of liver and kidney deficiency(P&lt;0.05). Compared with the normal control group, their expression levels were the lowest in the peripheral blood and affected femoral head tissue of SONFH rats modeled for 21 weeks(P&lt;0.05, except STOM in the peripheral blood of rats). Moreover, the syndrome differentiation effectiveness of SLC2A1 in the rats modeled for 21 weeks(AUC=0.806, P=0.009) was superior to that for 4, 8, 12, and 16 weeks(AUC=0.520, 0.580, 0.741, 0.774, respectively), and STOM was meaningless in syndrome differentiation. In summary, the candidate marker gene for phlegm in SONFH is ELOVL6; the candidate marker genes for stasis are GYPA, RHAG, and ANK1; the candidate marker gene for deficiency is SLC2A1. The results help to reveal the biological connotations of phlegm, stasis, and deficiency in SONFH at the genetic level.",
+          "cos_sim_score": 0.18761037290096283,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "RHAG \u2014 Rh associated glycoprotein",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RHAG\nGene name: Rh associated glycoprotein\nAliases / synonyms: CD241, OHS, OHST, RH2, RH50A, RHNR, Rh50, Rh50GP, SLC42A1\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is erythrocyte-specific and is thought to be part of a membrane channel that transports ammonium and carbon dioxide across the blood cell membrane. The encoded protein appears to interact with Rh blood group antigens and Rh30 polypeptides. Defects in this gene are a cause of regulator type Rh-null hemolytic anemia (RHN), or Rh-deficiency syndrome.[provided by RefSeq, Mar 2009]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RHAG",
+          "aliases": "CD241, OHS, OHST, RH2, RH50A, RHNR, Rh50, Rh50GP, SLC42A1",
+          "gene_description": "Rh associated glycoprotein"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TP53 \u2014 tumor protein p53",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TP53\nGene name: tumor protein p53\nAliases / synonyms: BCC7, BMFS5, LFS1, P53, TRP53\nOrganism: Homo sapiens\nGene summary: This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TP53",
+          "aliases": "BCC7, BMFS5, LFS1, P53, TRP53",
+          "gene_description": "tumor protein p53"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "LMNA \u2014 lamin A/C",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: LMNA\nGene name: lamin A/C\nAliases / synonyms: CDCD1, CDDC, CMD1A, CMT2B1, EMD2, FPL, FPLD, FPLD2, HGPS, IDC, LDP1, LFP, LGMD1B, LMN1, LMNC, LMNL1, MADA, PRO1\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is part of the nuclear lamina, a two-dimensional matrix of proteins located next to the inner nuclear membrane. The lamin family of proteins make up the matrix and are highly conserved in evolution. During mitosis, the lamina matrix is reversibly disassembled as the lamin proteins are phosphorylated. Lamin proteins are thought to be involved in nuclear stability, chromatin structure and gene expression. Vertebrate lamins consist of two types, A and B. Alternative splicing results in multiple transcript variants. Mutations in this gene lead to several diseases: Emery-Dreifuss muscular dystrophy, familial partial lipodystrophy, limb girdle muscular dystrophy, dilated cardiomyopathy, Charcot-Marie-Tooth disease, and Hutchinson-Gilford progeria syndrome. [provi...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "LMNA",
+          "aliases": "CDCD1, CDDC, CMD1A, CMT2B1, EMD2, FPL, FPLD, FPLD2, HGPS, IDC, LDP1, LFP, LGMD1B, LMN1, LMNC, LMNL1, MADA, PRO1",
+          "gene_description": "lamin A/C"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "SLC4A1 \u2014 solute carrier family 4 member 1 (Diego blood group)",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SLC4A1\nGene name: solute carrier family 4 member 1 (Diego blood group)\nAliases / synonyms: AE1, BND3, CD233, CHC, DI, EMPB3, EPB3, FR, RTA1A, SAO, SPH4, SW, WD, WD1, WR\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is part of the anion exchanger (AE) family and is expressed in the erythrocyte plasma membrane, where it functions as a chloride/bicarbonate exchanger involved in carbon dioxide transport from tissues to lungs. The protein comprises two domains that are structurally and functionally distinct. The N-terminal 40kDa domain is located in the cytoplasm and acts as an attachment site for the red cell skeleton by binding ankyrin. The glycosylated C-terminal membrane-associated domain contains 12-14 membrane spanning segments and carries out the stilbene disulphonate-sensitive exchange transport of anions. The cytoplasmic tail at the extreme C-terminus of the membrane domain binds carbonic anhydrase II. The encoded protein associates with the red cell membrane prot...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SLC4A1",
+          "aliases": "AE1, BND3, CD233, CHC, DI, EMPB3, EPB3, FR, RTA1A, SAO, SPH4, SW, WD, WD1, WR",
+          "gene_description": "solute carrier family 4 member 1 (Diego blood group)"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CD47 \u2014 CD47 molecule",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CD47\nGene name: CD47 molecule\nAliases / synonyms: IAP, MER6, OA3\nOrganism: Homo sapiens\nGene summary: This gene encodes a membrane protein, which is involved in the increase in intracellular calcium concentration that occurs upon cell adhesion to extracellular matrix. The encoded protein is also a receptor for the C-terminal cell binding domain of thrombospondin, and it may play a role in membrane transport and signal transduction. This gene has broad tissue distribution, and is reduced in expression on Rh erythrocytes. Alternatively spliced transcript variants have been found for this gene. [provided by RefSeq, Jul 2010]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CD47",
+          "aliases": "IAP, MER6, OA3",
+          "gene_description": "CD47 molecule"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::7811219",
+          "title": "HEMGN and SLC2A1 might be potential diagnostic biomarkers of steroid-induced osteonecrosis of femoral head: study based on WGCNA and DEGs screening",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7811219/",
+          "text": "Background\nSteroid-induced osteonecrosis of the femoral head (SONFH) is a chronic and crippling disease of the femoral head, due to the disruption of the blood supply of the femoral head and the subsequent death of bone cells after chronic exposure to excessive glucocorticoids, which ultimately results in the collapse of the femoral head and dysfunction of the hip joint [1]. There are approximately 10,000 to 20,000 new non-traumatic osteonecrosis of the femoral head (NONFH) cases reported each year in the United States alone, while the estimated NONFH cases in China were 8.12 million in the population aged 15\u2009years and over, among which SONFH counted for 47.4% of the total NONFH cases [2\u20134]. Although the diagnostic criteria for SONFH have been established, SONFH patients are often diagnosed at the advanced stage (ARCO stage III-IV), due to the non-specific clinical symptoms at the early stage and the absence of specific biomarkers for the early diagnosis, which often leads to total hip arthroplasty of the patients [5]. Therefore, it is exceptionally urgent to establish novel early diagnostic molecular markers for SONFH.\nMany studies have identified the biomarkers of diseases by screening differentially expressed genes (DEGs). It is worth noting that few studies have explored clusters of highly correlated genes, which may play key a role in clinical features of interests. Weighted gene co-expression network analysis (WGCNA), a particularly useful systems biology method in this context, helps to construct free-scale gene co-expression networks and detect gene modules [6]. By analyzing the connectivity between modules and clinical features, we can determine which modules are associated with which features. Notably, WGCNA has been widely used to identify the hub genes related to clinical features in different diseases, such as osteoarthritis [7], acute myocardial infarction [8], bladder cancer [9] and pancreatic cancer [10].\nIn the present study, we proposed to identify novel diagnostic biomarkers of SONFH based on WGCNA and DEGs screening on the basis of GSE123568 dataset. The flowchart used in the present study was presented in Fig.\u00a01. The key module with the highest level of significant correlation with SONFH was identified, and the genes with |gene significance|\u2009>\u20090.7 and |module membership| >\u20090.8 were then selected as hub genes in the key module. DEGs were integrated into a protein-protein interaction network analysis using the STRING database and Cytoscape software to identify hub genes (degree\u22655). The overlapped genes between hub genes in the key module and hub genes in DEGs were defined as key genes (RHAG, RNF14, HEMGN and SLC2A1), and then the key genes were validated in GSE26316 dataset. This study may provide novel insight into the underlying mechanisms of SONFH and contribute to identifying potential diagnostic biomarkers of SONFH.\nFig. 1Flowchart used in the present study. GEO, Gene Expression Omnibus; MAD, median absolute deviation; WGCNA, weighted gene co-expression network analysis; DEGs, differentially expressed genes; PPI, protein-protein interaction; abs, absolute value; GS, gene significance; MM, module membership; ROC, receiver operating characteristic\nFig. 1\nFlowchart used in the present study. GEO, Gene Expression Omnibus; MAD, median absolute deviation; WGCNA, weighted gene co-expression network analysis; DEGs, differentially expressed genes; PPI, protein-protein interaction; abs, absolute value; GS, gene significance; MM, module membership; ROC, receiver operating characteristic\nMethods\nData collection and preprocessing",
+          "cos_sim_score": 0.6943588256835938,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9856115",
+          "title": "Accumulation of Fat Not Responsible for Femoral Head Necrosis, Revealed by Single-Cell RNA Sequencing: A Preliminary Study",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9856115/",
+          "text": "1. Introduction\nOsteonecrosis of the femoral head (ONFH) is a debilitating disease that mainly affects younger and active populations. It has been estimated that 100,000 to 200,000 patients are newly diagnosed each year in China [1]. Our previous epidemiological study found that the age (mean \u00b1 SD) of patients with ONFH was 46.45 \u00b1 13.80 years, with a male predominance (70.1% of all ONFH cases). Of all patients with ONFH, 24.1% are steroid induced, among whom 18.53% are diagnosed with systemic lupus erythematosus (SLE), based on our previous study [2]. SLE is a systemic autoimmune disease that is clinically characterized by multi-system and multi-organ involvement [3]. The prevalence of SLE is estimated to be 30\u201350/100,000 worldwide [4,5,6], and 30\u201370/100,000 in the Chinese mainland [7,8]. Additionally, the prevalence of SLE has been gradually increasing, and increased from 64.99/100,000 in 1999 to 97.04/100,000 in 2012 in the United Kingdom [3]. However, SLE mortality has declined from 50% in the pre-corticosteroid era (circa 1948) to a 15-year survival of 85\u201395% in the modern era [4]. Glucocorticoids are commonly used in the treatment of SLE to induce remission and have been recommended by many international guidelines to control the disease [9,10,11,12]. It is worth noting that there is a close relationship between SLE and ONFH, and the incidence of ONFH is higher in patients with SLE than that in patients without SLE [13,14]. Additionally, it has been reported that the systemic use of glucocorticoids is an independent risk factor in ONFH, and the incidence of ONFH has been shown to be 6.7% with glucocorticoids treatment > 2.0 g [15,16,17]. Although hip arthroplasty has been shown to be successful in curing end-stage ONFH, it will bring a heavy economic burden to patients and society. Accordingly, it is of great clinical significance to investigate the underlying mechanism of glucocorticoid-induced ONFH to facilitate the development of earlier and less invasive therapy to prevent and even reverse the process of ONFH and further hip arthroplasty.\nMost recent studies concerning glucocorticoid-induced ONFH focus on the osteogenesis and angiogenesis and adipogenesis potential and apoptosis of osteogenic cells [18,19,20], and few researchers have systematically studied the alternations of other cell types in the microenvironment surrounding osteogenic cells in response to glucocorticoid therapy. Our previous study showed that a high dosage of glucocorticoids promoted adipogenic differentiation and cell apoptosis, and inhibited the osteogenic differentiation and cell proliferation of hBMSCs [21], which has also been demonstrated by other research groups [22,23]. To further illustrate the underlying molecular mechanism, our team found that long non-coding RNA (lncRNA) RP11-154D6 promoted osteogenic differentiation while inhibiting adipogenic differentiation of hBMSCs [24]. Recently, the changes of cell types and biological functions in the context of SLE have attracted increasing attention based on the results of single-cell RNA sequencing analysis (scRNA-seq). Previous studies have reported a high interferon-stimulated gene expression signature derived from a small number of transcriptionally defined subpopulations within major cell types in peripheral blood mononuclear cells, including monocytes, CD4+ and CD8+ T cells, natural killer cells, conventional and plasmacytoid dendritic cells, B cells, and especially plasma cells [25]. Compared to other immune cell subsets, low-density granulocytes display the highest expression of interferon-inducible genes. Additionally, low-density granulocytes in peripheral blood of SLE patients increase and may promote immune dysregulation and prominent vascular damage characteristic of the disease [26]. Studies have shown that long-term use of glucocorticoids may lead to the following changes, including but not limited to abnormal lipid metabolism [27,28], vascular endothelial cell damage [27,29], micro-thrombosis [27,30], and high intraosseous pressure of the femoral head [31], all of which eventually cause ONFH. Interestingly, the relationship among these changes needs to be further clarified, and the corresponding cell types with changed biological functions in bone marrow microenvironment remain unclear.",
+          "cos_sim_score": 0.5607266426086426,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9856115",
+          "title": "Accumulation of Fat Not Responsible for Femoral Head Necrosis, Revealed by Single-Cell RNA Sequencing: A Preliminary Study",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9856115/",
+          "text": "In this study, bone marrow samples from the proximal femur were extracted from two patients with ONFH for SLE and two with femoral neck fracture during hip arthroplasty. We compared the overall differences in cell types and biological functions and their relationships in bone marrow using scRNA-seq analysis. To the best of our knowledge, this is the first study to systematically explore the changes in cell types and biological functions of bone marrow in glucocorticoid-induced ONFH and their relationships. Our results may provide targets, such as specific cell types or genes, for early treatment for glucocorticoid-induced ONFH in SLE patients to prevent possible invasive operations.\n2. Materials and Methods\n2.1. Obtaining Bone Marrow Samples of Femoral Head Necrosis\nBone marrow of the proximal femur was extracted from two male participants (39 and 71 years old) diagnosed with femoral neck fracture and two female participants (19 and 32 years old) diagnosed with ONFH after glucocorticoid therapy for SLE during hip arthroplasty. The two SLE patients were diagnosed with ONFH by magnetic resonance imaging 1 year and 5 years, respectively, after methylprednisolone therapy, and the cumulative dosage of methylprednisolone was more than 4 g and 15 g, respectively. The total amount of extracted bone marrow from each participant was at least 10 mL.\nThis study was approved by the Ethics Committee of Peking Union Medical College Hospital (No. JS-2447) and was conducted in accordance with the International Conference on Harmonization Good Clinical Practice guideline, the Declaration of Helsinki, and applicable regulatory requirements. All patients provided written informed consent prior to participation in the study.\n2.2. scRNA-seq Data Alignment and Sample Aggregation\nRaw sequencing data (bel files) were converted to fastq files using Ilumina bcl2fasta. version 2.19.1 and were aligned to the human genome reference sequence (http://cf.10xgenomics.com/supp/cell-exp/refdata-cellranger-GRCh38-1.2.0.tar.gz (accessed on 8 March 2022)).\nThe CellRanger (10X Genomics) analysis pipeline was used to generate a digital gene expression matrix from the data. The raw digital gene expression matrix (UMI counts per gene per cell) was filtered, integrated, normalized, and clustered using the R package Seurat v3 (https://satijalab.org/ (accessed on 8 March 2022)) as follows: cells with a very small library size (<500 UMI counts and <500 genes detected) and a very high (>0.2) mitochondrial genome transcript ratio were removed. Genes that were detected (UMI count > 0) in less than three cells were removed. As an unusually high number of genes can result from a \u201cdoublet\u201d event, in which two different cell types are captured together with the same barcoded bead, cells with >6000 genes were also removed. The filtered gene expression matrix of all four samples was integrated with the Seurat v3. In brief, we identified 2000 features with high cell-to-cell variation, as described above. Next, we identified \u201canchors\u201d between individual datasets with the FindIntegrationAnchors function and inputted these anchors into the IntegrateData function to create a \u201cbatch-corrected\u201d expression matrix of all cells, which allowed cells from different datasets to be integrated and analyzed together.\n2.3. Dimensionality Reduction and Clustering Analysis\nThe gene expression values were then subjected to library size normalization, in which raw gene counts from each cell were normalized relative to the total number of read counts present in that cell. The resulting expression values were then multiplied by 10,000 and log-transformed. Subsequent analyses were conducted using only the most highly variable genes in the dataset. Principal component analysis (PCA) was used for dimensionality reduction, followed by clustering in the PCA space using a graph-based clustering approach. T-distributed stochastic neighbor embedding (t-SNE) was then used for two-dimensional visualization of the resulting clusters.\n2.4. Cell Type Annotation and Cluster Marker Identification\nThe FindAllMarkers function in Seurat was used to identify markers for each of the identified clusters. Clusters were then classified and annotated based on the expression of canonical markers of cell types. Clusters that expressed two or more canonical cell type markers were classified as doublet cells, and clusters that expressed no canonical cell type markers were classified as low-quality cells. Doublet cell clusters and low-quality cell clusters were excluded from further analyses.\n2.5. Gene Functional Annotation",
+          "cos_sim_score": 0.4734187722206116,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8350574",
+          "title": "ARG2, MAP4K5 and TSTA3 as Diagnostic Markers of Steroid-Induced Osteonecrosis of the Femoral Head and Their Correlation With Immune Infiltration",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8350574/",
+          "text": "As suggested from the relationship of diagnosis-related markers and infiltration-based immune cells, ARG2 displayed a significant association with activated mast cells, activated dendritic cells, T cells follicular helper, and neutrophils. MAP4K5 was significantly associated with activated dendritic cells, T cells follicular helper, B cells memory, and neutrophils. Moreover, TSTA3 was significantly correlated with activated dendritic cells, B cell memory, as well as T cells follicular helper. As indicated by existing research, polymorphonuclear neutrophils and mast cells could produce or activate destructive enzymes, thereby causing cartilage destruction and even bone necrosis (Mohr, 1996). The absence of dendritic cells could lead to osteonecrosis following dental extraction in experimental animals (Elsayed et al., 2020). Existing studies have demonstrated that glucocorticoid contributed to local ischemia of the femoral head by inducing activation of platelets (Lang et al., 2015), thereby causing neutrophil extracellular traps (Nonokawa et al., 2020). Given all the information acquired by the authors, this study initially reported the prediction of the correlations of immune infiltration in SONFH, and the complex interactions require further research and clarification.\nIn this study, novel scientific approaches were adopted to identify SONFH diagnostic markers (e.g., RF algorithms, WGCNA, LASSO logistic regression, and SVM-RFE). Moreover, this study initially used CIBERSORT for assessing the infiltration of immune cells between normal tissues and SONFH tissues. However, this study had certain limitations and deficiencies. First, though the analysis results achieved were compatible with some previous research results, the sample size was insufficient to validate the study. The results thus should be validated by a large sample study. Second, CIBERSORT investigation complied with the genetic information of a limited amount but this data is not likely to show the deviation from phenotypic plasticity, disease-induced disorders, or the heterotypic interactions of cells. Third, our study performed the second mining and investigation of existing datasets. Additionally, age was usually treated as a categorical variable in all clinical studies, but information relating to age could not be extracted. There might also be limitations in terms of biased results and conclusions, therefore further relevant studies are warranted.\nConclusion\nThe present study reported that ARG2, MAP4K5, and TSTA3 were potential diagnosis-related genes in SONFH. In addition, neutrophil activated dendritic cells and memory B cells may be related to SONFH occurrence and progress. Moreover, ARG2 displayed a noticeable association with activated mast cells, activated dendritic cells, T cells follicular helper, as well as neutrophils. MAP4K5 was significantly associated with T cells follicular helper, activated dendritic cells, B cells memory, and neutrophils. TSTA3 was significantly associated with T cell follicular helper, B cell memory, and activated dendritic cells. These immune cells may serve an important role in the development of SONFH. These immune cells may facilitate in-depth exploration of targeted immunotherapeutic methods and optimize immunomodulation therapies for cases of SONFH.\nData Availability Statement\nTable 1 showed the baseline characteristics of the study population. The original contributions presented in the study are included in the article/Supplementary Material, further inquiries can be directed to the corresponding author/s.\nTABLE 1\nBaseline characteristics of the study population.\nEthics Statement\nThe study was approved by the Clinical Research Ethics Committee of Fuzhou Second Hospital Affiliated to Xiamen University. Each patient provided written signed informed consent (Project identification code: 2021001). The patients/participants provided their written informed consent to participate in this study.\nAuthor Contributions\nYYZ and RY: conception and design of the study and funding acquisition. RY, JZ, and YGZ: data acquisition, bioinformatics analysis, and drafting and critical revision of the manuscript. RY, XH, ST, JY, and NL: visualization and validation. All authors approved the final manuscript.\nConflict of Interest\nThe authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.\nPublisher\u2019s Note\nAll claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.",
+          "cos_sim_score": 0.4713304042816162,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8944783",
+          "title": "Comprehensive Analyses of Bone and Cartilage Transcriptomes Evince Ion Transport, Inflammation and Cartilage Development-Related Genes Involved in Chickens\u2019 Femoral Head Separation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8944783/",
+          "text": "2.3. Integrated Analysis\nTo identify the main molecular mechanisms involved in FHS, the common and exclusive DE genes in the AC and GP datasets were obtained, and the David [24] database was used to find BP involved with FHS based on the gene ontology database. The REVIGO tool [28] was used to reduce and highlight the most abundant BP in our data. Furthermore, gene networks with the common DE genes between the two tissues and those obtained with DE genes only detected in AC or GP were constructed using the STRING database [29].\nFurthermore, we used the Gene Expression Omnibus (GEO) database (https://www.ncbi.nlm.nih.gov/gds, accessed on 9 November 2020) to search datasets with the terms \u201cfemoral head necrosis\u201d and \u201cepiphysiolysis\u201d to better understand the role of the main DE genes involved with FHS across different species. This search returned two main datasets: identification of potential biomarkers for improving the precision of early detection of steroid-induced osteonecrosis of the femoral head (GSE123568) and gene expression profile of hip cartilage with necrosis of femoral head (GSE74089). The first one evaluated the gene expression on blood from 40 patients (10 normal and 30 affected with femoral head necrosis) and the second one, the hip cartilage in 24 patients (12 normal and 12 affected with femoral head necrosis). DE genes were obtained using the GEOR tool from the GEO dataset (https://www.ncbi.nlm.nih.gov/geo/info/geo2r.html, accessed on 9 November 2020). The list of DE genes from the two datasets obtained in the GEO database and the DE genes found in the GP and AC from our study were submitted to the InteractiVenn (http://www.interactivenn.net/, accessed on 10 November 2020) [30] to find common DE genes among the experiments.\n2.4. Polymorphism Identification Using the RNA-Seq Data\nThe Genome Analysis Tool kit 3.6 (GATK) [31] was used for polymorphism identification. We followed the best practices guidelines standard parameters for transcriptome variant analysis available on the GATK website (https://gatk.broadinstitute.org/, accessed on 1 February 2021). The Picard tools 2.5 (https://broadinstitute.github.io/picard/index.html, accessed on 17 May 2017) was used to generate the genome index, to assign read groups and mark duplicates. In the GATK, the CIGAR strings determination (SplitNCigarReads), qualities reassigning mapping, base recalibration, variants calling, and filtering were performed. To minimize the false positive variants, the following filters were used in GATK to filter and select variants: FS > 30.0, MQRankSum < \u221212.5, SNPcluster considering 3 variants in a 35 bp window, QD < 5.0, MQ < 50.0, GQ < 5.0, QUAL \u2265 30.0, ReadPosRankSum < \u22128.0 and DP \u2265 100.0. Furthermore, variants with less than 10 reads per sample were removed from the downstream analysis. Once the polymorphisms were identified in the GP and AC datasets, a filter was performed to obtain the variants that differed between normal and FHS-affected groups. The Variant Effect Predictor (VEP) tool [32] was used for variant annotation, effect and consequence predictions using the Gallus gallus genome (GRCg6a) with the Ensembl 103 annotation database version. Furthermore, the Stringdb [29] and EnrichR [33,34] databases were used to verify the interactions between DE genes and variants identified in genes.\n3. Results\n3.1. RNA-Sequencing, Mapping and Characterization\nThe RNA sequencing generated about 345 million paired end reads for all samples (N = 16), and after the quality control, approximately 306 million reads (88.78%) remained for further analyses (Supplementary File S1: Table S1), with an average of 16,355,490 reads for GP and 26,819,697 for AC. A clear separation between the samples from the two tissues, as well as between the normal and affected groups can be verified in the heatmap (Supplementary File S2: Figure S1). As expected, most of the genes were characterized as protein coding (95%), and the remaining 5% were classified in IncRNA, pseudogenes, miRNAs and other noncoding RNAs (Table 2).\n3.2. Differentially Expressed Genes in AC and GP Transcriptomes",
+          "cos_sim_score": 0.44546306133270264,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::33451334",
+          "title": "HEMGN and SLC2A1 might be potential diagnostic biomarkers of steroid-induced osteonecrosis of femoral head: study based on WGCNA and DEGs screening.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33451334/",
+          "year": "2021",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SONFH) is a chronic and crippling bone disease. This study aims to reveal novel diagnostic biomarkers of SONFH. The GSE123568 dataset based on peripheral blood samples from 10 healthy individuals and 30 SONFH patients was used for weighted gene co-expression network analysis (WGCNA) and differentially expressed genes (DEGs) screening. The genes in the module related to SONFH and the DEGs were extracted for Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analysis. Genes with |gene significance|\u2009>\u20090.7 and |module membership| >\u20090.8 were selected as hub genes in modules. The DEGs with the degree of connectivity \u22655 were chosen as hub genes in DEGs. Subsequently, the overlapping genes of hub genes in modules and hub genes in DEGs were selected as key genes for SONFH. And then, the key genes were verified in another dataset, and the diagnostic value of key genes was evaluated by receiver operating characteristic (ROC) curve. Nine gene co-expression modules were constructed via WGCNA. The brown module with 1258 genes was most significantly correlated with SONFH and was identified as the key module for SONFH. The results of functional enrichment analysis showed that the genes in the key module were mainly enriched in the inflammatory response, apoptotic process and osteoclast differentiation. A total of 91 genes were identified as hub genes in the key module. Besides, 145 DEGs were identified by DEGs screening and 26 genes were identified as hub genes of DEGs. Overlapping genes of hub genes in the key module and hub genes in DEGs, including RHAG, RNF14, HEMGN, and SLC2A1, were further selected as key genes for SONFH. The diagnostic value of these key genes for SONFH was confirmed by ROC curve. The validation results of these key genes in GSE26316 dataset showed that only HEMGN and SLC2A1 were downregulated in the SONFH group, suggesting that they were more likely to be diagnostic biomarkers of SOFNH than RHAG and RNF14. Our study identified that two key genes, HEMGN and SLC2A1, might be potential diagnostic biomarkers of SONFH.",
+          "cos_sim_score": 0.43652909994125366,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::38621982",
+          "title": "[Transcriptome data mining combined with clinical and animal experiments for identification of syndrome element marker genes during entire course of steroid-induced osteonecrosis of femoral head].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38621982/",
+          "year": "2024",
+          "text": "A research strategy combining transcriptome data mining and experimental verification was adopted to identify the marker genes characterizing the syndrome elements of phlegm, stasis, and deficiency in steroid-induced osteonecrosis of the femoral head(SONFH). Firstly, the common differentially expressed gene sets of SONFH with the syndromes of phlegm-stasis obstructing collaterals, vessel obstruction, and liver-kidney deficiency were obtained from the clinical transcriptomic analysis of a previous study. The differential expression trend analysis and functional gene mining were then employed to predict the candidate marker gene sets representing phlegm, stasis, and deficiency. The whole blood samples from SONFH patients, whole blood samples from SONFH rats, and affected femoral head tissue samples were collected for qPCR, which aimed to determine the expression levels of the candidate marker genes mentioned above. Furthermore, the receiver operating characteristic curve(ROC) was established to objectively evaluate the syndrome differentiation effectiveness of the candidate marker genes mentioned above. The transcriptome data analysis results showed that the candidate marker genes for phlegm was ELOVL fatty acid elongase 6(ELOVL6), and those for stasis were ankyrin 1(ANK1), glycophorin A/B(GYPA/B), and Rh-associated glycoprotein(RHAG). The candidate marker genes for deficiency were solute carrier family 2 member 1(SLC2A1) and stomatin(STOM). The qPCR results showed that compared with that in the non-SONFH group, ELOVL6 had the lowest expression level in the peripheral blood of the SONFH patients with the syndrome of phlegm-stasis obstructing collaterals(P&lt;0.05). Compared with that in the normal control group, ELOVL6 had the lowest expression level in the peripheral blood and affected femoral head tissue of SONFH rats modeled for 4 weeks(P&lt;0.01), and it showed better syndrome differentiation effectiveness of rats modeled for 4 weeks(AUC=0.850, P=0.006) than at other modeling time points(8, 12, 16, and 21 weeks, AUC of 0.689, 0.766, 0.588, and 0.662, respectively). Compared with that in the non-SONFH group, the expression levels of ANK1, GYPA, and RHAG were the lowest in the peripheral blood of SONFH patients with the vessel obstruction syndrome(P&lt;0.05). The expression levels of the three genes were the lowest in the peripheral blood and affected femoral head tissue of",
+          "cos_sim_score": 0.4338493347167969,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::38621982",
+          "title": "[Transcriptome data mining combined with clinical and animal experiments for identification of syndrome element marker genes during entire course of steroid-induced osteonecrosis of femoral head].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38621982/",
+          "year": "2024",
+          "text": "than at other modeling time points(8, 12, 16, and 21 weeks, AUC of 0.689, 0.766, 0.588, and 0.662, respectively). Compared with that in the non-SONFH group, the expression levels of ANK1, GYPA, and RHAG were the lowest in the peripheral blood of SONFH patients with the vessel obstruction syndrome(P&lt;0.05). The expression levels of the three genes were the lowest in the peripheral blood and affected femoral head tissue of SONFH rats modeled for 12 weeks(P&lt;0.05, P&lt;0.01), and their syndrome differentiation effectiveness in the rats modeled for 12 weeks(GYPA: AUC=0.861, P=0.012; ANK1: AUC=0.855, P=0.006; RHAG: AUC=0.854, P=0.009) was superior to that for 4, 8, 16, and 21 weeks(GYPA: AUC=0.646, 0.573, 0.691, and 0.617, respectively; ANK: AUC1=0.630, 0.658, 0.657, and 0.585, respectively; RHAG: AUC=0.592, 0.511, 0.515, and 0.536, respectively). Compared with the non-SONFH group, both SLC2A1 and STOM had the lowest expression levels in the peripheral blood of patients with the syndrome of liver and kidney deficiency(P&lt;0.05). Compared with the normal control group, their expression levels were the lowest in the peripheral blood and affected femoral head tissue of SONFH rats modeled for 21 weeks(P&lt;0.05, except STOM in the peripheral blood of rats). Moreover, the syndrome differentiation effectiveness of SLC2A1 in the rats modeled for 21 weeks(AUC=0.806, P=0.009) was superior to that for 4, 8, 12, and 16 weeks(AUC=0.520, 0.580, 0.741, 0.774, respectively), and STOM was meaningless in syndrome differentiation. In summary, the candidate marker gene for phlegm in SONFH is ELOVL6; the candidate marker genes for stasis are GYPA, RHAG, and ANK1; the candidate marker gene for deficiency is SLC2A1. The results help to reveal the biological connotations of phlegm, stasis, and deficiency in SONFH at the genetic level.",
+          "cos_sim_score": 0.18761037290096283,
+          "source_type": "pubmed"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "rf_rank": 43,
+  "probe_id": "11739069_s_at",
+  "gene_symbol": "PSAP",
+  "score": 0.55,
+  "rf_n_nodes": 5,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.9646,
+  "log_fc": 0.9646,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11739069_s_at",
+  "max_score": 0.55,
+  "mean_abs_fold_change": 0.9646,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:43:59",
+  "interpretation": "The PSAP gene encodes prosaposin, a precursor protein that is processed into saposins, which are involved in the metabolism of glycosphingolipids within lysosomes. While direct evidence linking PSAP to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) is limited, its role in lysosomal function and lipid metabolism suggests a potential connection to the pathophysiology of SONFH, particularly given the disease's association with lipid accumulation and metabolic dysregulation. The retrieved evidence primarily indicates PSAP's involvement in lysosomal storage diseases rather than SONFH specifically, leading to a lower confidence in its direct relevance as a biomarker. However, the biological functions of PSAP in lipid metabolism and cellular stress responses may still render it a candidate for further investigation in the context of SONFH. Thus, while the evidence is not robust, PSAP may have moderate potential as a biomarker for SONFH due to its biological functions related to lipid metabolism and cellular health.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "PSAP may be involved in lipid metabolism processes that are relevant to the pathogenesis of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "MTCH1 (Q9NZJ7). https://www.uniprot.org/uniprotkb/Q9NZJ7",
+    "SFTPA1 (Q8IWL2). https://www.uniprot.org/uniprotkb/Q8IWL2",
+    "SFTPA2 (Q8IWL1). https://www.uniprot.org/uniprotkb/Q8IWL1",
+    "PSAP \u2014 PSAP. https://platform.opentargets.org/target/ENSG00000197746",
+    "PSAP \u2194 Gaucher disease due to saposin C deficiency. https://platform.opentargets.org/target/ENSG00000197746/associations",
+    "PSAP \u2194 Krabbe disease due to saposin A deficiency. https://platform.opentargets.org/target/ENSG00000197746/associations",
+    "PSAP \u2194 combined PSAP deficiency. https://platform.opentargets.org/target/ENSG00000197746/associations",
+    "PSAP \u2194 Krabbe disease. https://platform.opentargets.org/target/ENSG00000197746/associations",
+    "PSAP \u2014 prosaposin (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "SFTPA2 \u2014 surfactant protein A2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MTCH1 \u2014 mitochondrial carrier 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "SFTPA1B \u2014 surfactant protein A1B (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "BRCA1 \u2014 BRCA1 DNA repair associated (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Bioinformatics analysis and identification of genes and molecular pathways in steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8136174/",
+    "Integrated multi-omics analysis identifies lipid metabolism biomarkers in ONFH and reveals therapeutic potential of retinoic acid (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12371116/",
+    "Identification of hub genes and therapeutic drugs in osteonecrosis of the femoral head through integrated bioinformatics analysis and literature mining (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC10366127/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9130,
+    "completion_tokens": 335,
+    "total_tokens": 9465,
+    "estimated_cost_usd": 0.00157
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9NZJ7",
+          "title": "MTCH1 (Q9NZJ7)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9NZJ7",
+          "text": "Protein: Mitochondrial carrier homolog 1\nFunction: Protein insertase that mediates insertion of transmembrane proteins into the mitochondrial outer membrane (PubMed:36264797). Catalyzes insertion of proteins with alpha-helical transmembrane regions, such as signal-anchored, tail-anchored and multi-pass membrane proteins (By similarity). Does not mediate insertion of beta-barrel transmembrane proteins (By similarity). May play a role in apoptosis (PubMed:12377771)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q8IWL2",
+          "title": "SFTPA1 (Q8IWL2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8IWL2",
+          "text": "Protein: Pulmonary surfactant-associated protein A1\nFunction: In presence of calcium ions, it binds to surfactant phospholipids and contributes to lower the surface tension at the air-liquid interface in the alveoli of the mammalian lung and is essential for normal respiration. Enhances the expression of MYO18A/SP-R210 on alveolar macrophages (By similarity) (Microbial infection) Recognition of M.tuberculosis by dendritic cells may occur partially via this molecule (PubMed:17158455, PubMed:21203928). Can recognize, bind, and opsonize pathogens to enhance their elimination by alveolar macrophages (PubMed:21123169) (Microbial infection) Binds M.pneumoniae CARDS toxin, serves as one receptor for this pathogen (PubMed:15845487, PubMed:25139904). When SFTPA1 is down-regulated by siRNA, less toxin binds to human cells and less vacuolization (a symptom of M.pneumoniae infection) is seen (PubMed:25139904)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q8IWL1",
+          "title": "SFTPA2 (Q8IWL1)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8IWL1",
+          "text": "Protein: Pulmonary surfactant-associated protein A2\nFunction: In presence of calcium ions, it binds to surfactant phospholipids and contributes to lower the surface tension at the air-liquid interface in the alveoli of the mammalian lung and is essential for normal respiration",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000197746::function",
+          "title": "PSAP \u2014 PSAP",
+          "url": "https://platform.opentargets.org/target/ENSG00000197746",
+          "text": "Function: Saposin-A and saposin-C stimulate the hydrolysis of glucosylceramide by beta-glucosylceramidase (EC 3.2.1.45) and galactosylceramide by beta-galactosylceramidase (EC 3.2.1.46). Saposin- C apparently acts by combining with the enzyme and acidic lipid to form an activated complex, rather than by solubilizing the substrate.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197746::MONDO_0012517",
+          "title": "PSAP \u2194 Gaucher disease due to saposin C deficiency",
+          "url": "https://platform.opentargets.org/target/ENSG00000197746/associations",
+          "text": "Disease: Gaucher disease due to saposin C deficiency\nDescription: Any Gaucher disease in which the cause of the disease is a mutation in the PSAP gene.\nAssociation score: 0.810",
+          "cos_sim_score": 0.8100495894070405,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197746::MONDO_0012720",
+          "title": "PSAP \u2194 Krabbe disease due to saposin A deficiency",
+          "url": "https://platform.opentargets.org/target/ENSG00000197746/associations",
+          "text": "Disease: Krabbe disease due to saposin A deficiency\nAssociation score: 0.801",
+          "cos_sim_score": 0.8011459675060192,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197746::MONDO_0012719",
+          "title": "PSAP \u2194 combined PSAP deficiency",
+          "url": "https://platform.opentargets.org/target/ENSG00000197746/associations",
+          "text": "Disease: combined PSAP deficiency\nDescription: Encephalopathy due to prosaposin deficiency is a lysosomal storage disease belonging to the group of sphingolipidoses.\nAssociation score: 0.790",
+          "cos_sim_score": 0.7900078152716432,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197746::MONDO_0009499",
+          "title": "PSAP \u2194 Krabbe disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000197746/associations",
+          "text": "Disease: Krabbe disease\nDescription: A lysosomal disorder that affects the white matter of the central and peripheral nervous systems. It includes infantile, late-infantile/juvenile and adult forms.\nAssociation score: 0.627",
+          "cos_sim_score": 0.6269191439822087,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "PSAP \u2014 prosaposin",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PSAP\nGene name: prosaposin\nAliases / synonyms: GLBA, PARK24, PSAPD, SAP1, SAP2\nOrganism: Homo sapiens\nGene summary: This gene encodes a highly conserved preproprotein that is proteolytically processed to generate four main cleavage products including saposins A, B, C, and D. Each domain of the precursor protein is approximately 80 amino acid residues long with nearly identical placement of cysteine residues and glycosylation sites. Saposins A-D localize primarily to the lysosomal compartment where they facilitate the catabolism of glycosphingolipids with short oligosaccharide groups. The precursor protein exists both as a secretory protein and as an integral membrane protein and has neurotrophic activities. Mutations in this gene have been associated with Gaucher disease and metachromatic leukodystrophy. Alternative splicing results in multiple transcript variants, at least one of which encodes an isofo...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PSAP",
+          "aliases": "GLBA, PARK24, PSAPD, SAP1, SAP2",
+          "gene_description": "prosaposin"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "SFTPA2 \u2014 surfactant protein A2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SFTPA2\nGene name: surfactant protein A2\nAliases / synonyms: COLEC5, ILD2, PSAP, PSP-A, PSPA, SFTP1, SFTPA2B, SP-2A, SP-A, SPA2, SPAII\nOrganism: Homo sapiens\nGene summary: This gene is one of several genes encoding pulmonary-surfactant associated proteins (SFTPA) located on chromosome 10. Mutations in this gene and a highly similar gene located nearby, which affect the highly conserved carbohydrate recognition domain, are associated with idiopathic pulmonary fibrosis. The current version of the assembly displays only a single centromeric SFTPA gene pair rather than the two gene pairs shown in the previous assembly which were thought to have resulted from a duplication. [provided by RefSeq, Sep 2009]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SFTPA2",
+          "aliases": "COLEC5, ILD2, PSAP, PSP-A, PSPA, SFTP1, SFTPA2B, SP-2A, SP-A, SPA2, SPAII",
+          "gene_description": "surfactant protein A2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MTCH1 \u2014 mitochondrial carrier 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MTCH1\nGene name: mitochondrial carrier 1\nAliases / synonyms: CGI-64, PIG60, PSAP, SLC25A49\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the mitochondrial carrier family. The encoded protein is localized to the mitochondrion inner membrane and induces apoptosis independent of the proapoptotic proteins Bax and Bak. Pseudogenes on chromosomes 6 and 11 have been identified for this gene. Alternatively spliced transcript variants encoding multiple isoforms have been observed. [provided by RefSeq, Oct 2012]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MTCH1",
+          "aliases": "CGI-64, PIG60, PSAP, SLC25A49",
+          "gene_description": "mitochondrial carrier 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "SFTPA1B \u2014 surfactant protein A1B",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SFTPA1B\nGene name: surfactant protein A1B\nAliases / synonyms: AC068139.6, PSAP, PSPA, SFTP1, SFTPA1\nOrganism: Homo sapiens",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SFTPA1B",
+          "aliases": "AC068139.6, PSAP, PSPA, SFTP1, SFTPA1",
+          "gene_description": "surfactant protein A1B"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "BRCA1 \u2014 BRCA1 DNA repair associated",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: BRCA1\nGene name: BRCA1 DNA repair associated\nAliases / synonyms: BRCAI, BRCC1, BROVCA1, FANCS, IRIS, PNCA4, PPP1R53, PSCP, RNF53\nOrganism: Homo sapiens\nGene summary: This gene encodes a 190 kD nuclear phosphoprotein that plays a role in maintaining genomic stability, and it also acts as a tumor suppressor. The BRCA1 gene contains 22 exons spanning about 110 kb of DNA. The encoded protein combines with other tumor suppressors, DNA damage sensors, and signal transducers to form a large multi-subunit protein complex known as the BRCA1-associated genome surveillance complex (BASC). This gene product associates with RNA polymerase II, and through the C-terminal domain, also interacts with histone deacetylase complexes. This protein thus plays a role in transcription, DNA repair of double-stranded breaks, and recombination. Mutations in this gene are responsible for approximately 40% of inherited breast cancers and more than 80% of inherited breast and ovari...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "BRCA1",
+          "aliases": "BRCAI, BRCC1, BROVCA1, FANCS, IRIS, PNCA4, PPP1R53, PSCP, RNF53",
+          "gene_description": "BRCA1 DNA repair associated"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::8136174",
+          "title": "Bioinformatics analysis and identification of genes and molecular pathways in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8136174/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a common disease of the hip with a higher incidence in elderly patients, and the most common clinical symptom is severe pain [1]. There are about 150,000\u2013200,000 new cases in China each year [2], and about 20,000 new cases in the USA each year [3]. The pathological features of steroid-induced ONFH include decreased blood supply to the hip joint, the collapse of the femoral head, and accumulation of microfractures without continuous remodeling [4, 5]. Besides, ONFH can cause rapid destruction and dysfunction of the hip joint, and approximately 65\u201370% of patients with advanced ONFH require total hip replacement [6]. The pathogenesis and molecular mechanism of steroid-induced ONFH remain unclear, and there are few effective prevention and early treatment methods.\nStudies have indicated that successful results can be obtained when joint-preserving surgery is used in the pre-collapse stage of steroid-induced ONFH [7]. After the femoral head necrosis collapses, cartilage wrinkles and the hip joint space gradually narrows. Meanwhile, the failure rate of joint-preserving treatment is high. Therefore, searching for new biomarkers in the blood is of great clinical significance for the diagnosis of steroid-induced ONFH, as well as the further early diagnosis and treatment of ONFH. Some genetic factors are considered key factors in the progress of steroid-induced ONFH, such as peroxisome proliferator-activated receptor \u03b3, matrix metallopeptidase 9, and SMAD family member 3 and gremlin 1 [8\u201310]. Currently, microarray analysis using a high-throughput platform is promising and efficient for exploring the molecular mechanisms of diseases and identifying useful biomarkers for diagnosis and prognosis of diseases [11, 12]. However, there is little comprehensive research on steroid-induced ONFH with high-throughput platforms. During the development of steroid-induced ONFH, the cartilage on the surface of the femoral head and the labrum of the acetabulum are significantly damaged. Degeneration of cartilage on the surface of the femoral head and tearing of the labrum enhance the instability of the hip joint and accelerate the development of steroid-induced ONFH [13]. Prevention and early treatment of hip cartilage damage may slow the development of steroid-induced ONFH and relieve hip dysfunction. However, there are few studies on the molecular mechanism of steroid-induced ONFH hip cartilage damage. Therefore, it is hypothesized in this paper that differentially expressed genes co-exist in the peripheral serum and cartilage of ONFH patients; this can be used for early diagnosis and observation of disease progression.\nIn this study, hub genes are screened out from the differences expressed genes (degrees) using bioinformatics methods based on the National Center for Biotechnology Information (NCBI http://www.ncbi.nlm.nih.gov/geography/) from the Gene Expression Dataset GSE123568 (peripheral serum) and GSE74089 (hip articular cartilage) Comprehensive (GEO) database. Quantitative real-time PCR (qRT-PCR) was conducted to validate the gene expression profiling results based on an independent sera sample of eight patients with ONFH and twelve healthy controls. The present study aimed to identify potentially important genes and signaling pathways involved in ONFH and investigate their molecular mechanisms.\nMaterials and methods\nMicroarray data source\nThe gene chip data related to femoral head necrosis (GSE123568, GSE74089) is downloaded in the GEO (gene expression omnibus) database (https://www.ncbi.nlm.nih.gov/geo/). GSE123568 chip data contains 10 normal patient serum samples and 30\u2009steroid-induced femoral head necrosis serum samples. Besides, the GSE74089 chip data is composed of hip cartilage specimens from 4 NFH patients and 4 healthy controls. All the above data sets are based on GPL15207 and GPL13497 platform GEO database downloaded, and the information of the above two data sets are detailed in Table 1.\nTable 1Two datasets used for gene expression profiles analysis in NFHGEO IDAuthorPlatformSamplesTypeYearOmicsGSE123568Zhang YGPL15207NFH to normal = 30:10Peripheral serum2019mRNAGSE74089Ruiyu LGPL13497NFH to normal = 4:4Hip articular cartilage2016mRNA\nTable 1\nTwo datasets used for gene expression profiles analysis in NFH\nDifferentially expressed genes analysis",
+          "cos_sim_score": 0.6461950540542603,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8136174",
+          "title": "Bioinformatics analysis and identification of genes and molecular pathways in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8136174/",
+          "text": "Table 2\nThe information of the primers\u2019 sequencing\nStatistical analysis\nGraphPad 8.0 was used to perform statistical analysis. The results are presented as mean \u00b1 standard deviation (mean \u00b1 SD). Data conforming to normal distribution were compared using Student t test, while those with non-normally distributed were tested using Mann-Whitney U test. P <\u20090.05 indicates statistical significance. All experiments were performed in triplicate.\nResults\nIdentification of DEGs\nThis study screened out two chip data sets (GSE123568 and GSE74089). Among them, 30\u2009serum samples of patients with steroid hormone-induced osteonecrosis of the femoral head in the chip data set GSE123568 (including 13 males and 17 females, aged 23.07 \u00b1 3.01\u2009years, ARCO stage I-II patients accounted for 10 patients, ARCO III patients accounted for 10 cases, ARCO IV patients accounted for 10 cases) and 10 normal serum samples (including 7 males and 3 females, aged 25.02 \u00b1 2.87\u2009years). Besides, there are 4 hip cartilage samples from patients with femoral head necrosis (including 3 males and 1 female) and 4 healthy adult hip cartilage specimens (including 3 males and 1 female) in the chip dataset GSE74089. The baseline characteristics of the patients are provided in Table 3. According to the adjust P value <\u20090.01, the expression change range is greater than or equal to twice (|log2 FC|\u22651.0) as the criteria for screening differential genes. A total of 750 differentially expressed genes were screened in the GSE123568 data set, including 454 upregulated genes and 296 downregulated genes. A total of 5211 differentially expressed genes were screened in the GSE74089 data set, including 1594 upregulated genes and 3617 downregulated genes. The DEGs in GSE123568 and GSE74089 were selected based on the adjust P value to screen the top 25 most significant upregulated and downregulated differentially expressed genes, so as to draw heat maps (Fig. 1). The -log10 conversion is performed for the adjust P value in the data processed by GEO2R. Then, according to log2 FC, -log10 (adjust P value) was divided into groups of upregulated genome, downregulated genome, and non-statistically different genome. The processed data was imported into GraphPad Prism 7 to draw a volcano map (Fig. 2). Furthermore, a total of 118 intersecting DEGs were obtained between the peripheral blood and cartilage samples, including 40 upregulated genes and 78 downregulated genes (Fig. 3).\nTable 3Characteristics of study subjectsGSE12356Number of subjectsAge (years, mean \u00b1 SD)SexARCO(I\u2013II/III/IV/)MaleFemaleControl1025.02 \u00b1 2.8773Disease3023.07 \u00b1 3.01131710/10/10GSE74089Control446.75 \u00b1 4.0231\u2212Disease445.25 \u00b1 4.0231\u2212Fig. 1Heat map of top 50 DEGs in ONFH. a Heat map of top 50 DEGs in GSE123568. b Heat map of top 50 DEGs in GSE74089 (tissue samples are presented as columns; individual genes are presented as rows. Red represents upregulated genes; green indicates downregulated genes in patients with ONFH. The patients in the top rows in pink indicate the control columns; the patients in the top rows in blue indicate columns were patients with NFH. DEGs, differentially expressed genes; NFH, necrosis of the femoral head)Fig. 2The volcano plot was constructed using fold-change (Log2FC) values and adjust P values. a The volcano plot of a total of 750 DEGs in GSE123568. b The volcano plot of total 5211 DEGs in GSE74089 (the vertical blue lines correspond to upregulated and downregulated Log2FC; the horizontal Orange line represents an adjust P value of 0.01. The red point represents the differentially upregulated genes with statistical significance; the green point suggests the differentially downregulated genes with statistical significance)Fig. 3Venn diagrams showing the overlap of DEGs between peripheral serum samples and hip articular cartilage samples. a Upregulated DEGs. b Downregulated DEGs (Venn diagram was drawn using the online tool (https://bioinfogp.cnb.csic.es/tools/venny/index.html). Numbers represented the number of DEGs. The percentage was represented by the ratio of current DEGs to the total)\nTable 3\nCharacteristics of study subjects",
+          "cos_sim_score": 0.6001533269882202,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8136174",
+          "title": "Bioinformatics analysis and identification of genes and molecular pathways in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8136174/",
+          "text": "Fig. 9\nExpression of hub genes in ONFH patients. a\u2013c CXCR1, FPR1, and TYROBP were upregulated in peripheral blood of steroid-induced ONFH patients(P <\u20090.05). d MAPK1 was downregulated in peripheral blood of steroid-induced ONFH patients (P <\u20090.05); e\u2013g there was no significant difference in the expression of CXCR2, FPR2, and FOXO3 in peripheral serum samples between the two groups (P >\u20090.05)\nDiscussion\nSteroid-induced ONFH is a devastating and difficult joint disease and primarily caused by the interruption of blood supply and the dysfunction of the coagulation system, resulting in the death of bone cells, the decrease of the elastic modulus of the femoral head, and the collapse of the femoral head [21]. Various molecular and genetic studies have explored the etiology and pathogenesis [22, 23]. However, the exact pathogenesis remains unclear. In this paper, the genome-wide method was used to study the differential expression of genes in the peripheral blood serum and hip joint cartilage specimens of steroid-induced ONFH patients and healthy controls. Through bioinformatics analysis of GSE123568 and GSE74089, potentially important genes in ONFH were identified. In addition, the role of the identified genes in ONFH and their interaction were analyzed. A total of 118 intersecting DEGs were obtained in peripheral blood and cartilage samples, of which 40 were upregulated genes and 78 were downregulated genes. These DEGs may be important biomarkers related to the pathogenesis and progression of ONFH. Finally, qRT-PCR verified the expression patterns of several genes such as CXCR1, FPR1, MAPK1, FOXO3, FPR2, CXCR2, and TYROBP in vitro. However, due to different inclusion criteria and a small number of patients in the validation set, some results are inconsistent with microarray analysis.\nThe DEGs screened in this study contribute to the identification of new molecules or new pathways related to steroid-induced ONFH. These new molecules or pathways may be essential targets for disease diagnosis and treatment. The upregulated DEGs were generally involved in inflammation, immune response, and signal transduction. Molecular functions were manifested in immune regulation process, IL-8 receptor activity, superoxide-producing NADPH oxidase activity, and MAP kinase activity. The upregulated DEGs were enriched in pathways engaged in staphylococcus aureus infection, leishmaniasis, antigen processing and presentation, asthma, and graft-versus-host disease. Particularly, the background of this femoral head necrosis can be understood using corticosteroids to treat related acute or chronic graft-versus-host disease (aGVHD, cGVHD) [24]. Socie et al. [25] retrospectively analyzed the risk factors of osteonecrosis after allogeneic hematopoietic stem cell transplantation. The study revealed that the odds ratios of aGVHD and cGVHD were 3.73 and 3.52, respectively. The severity of graft-versus-host disease was associated with a higher frequency of osteonecrosis. Additionally, GO analysis of downregulated genes demonstrated that BP focused on cell cycle regulation, apoptosis process, translation process regulation, autophagy, and cell response to hypoxia. MF was manifested in protein binding, transcription factor binding, and DNA binding. The downregulated genes were concentrated in the FoxO signaling pathway, AMPK signaling pathway, signaling pathway regulating stem cell pluripotency, and mTOR signaling pathway. Moreover, AMPK was an essential energy state sensor responding to energy supply and demand through coordinated metabolic pathways [26]. Studies have indicated that AMPK can promote cell survival under various stress conditions [27]. The forced activation of AMPK is a good strategy to protect osteoblasts from Dex [28, 29]. The mTOR pathway may be a vital mediator of bone homeostasis [30]. Furthermore, the impaired differentiation of the osteogenic/adipogenic lineage of bone marrow mesenchymal stem cells (BMSCs) was caused by the activation of the mTOR signaling pathway [31]. Meanwhile, blocking the mTOR pathway can prevent the development of phenotypes related to aging and enhance the proliferation ability of BMSCs [32]. Therefore, regulating the mTOR signaling pathway may be one of the crucial methods to treat steroid-induced ONFH.",
+          "cos_sim_score": 0.5234871506690979,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12371116",
+          "title": "Integrated multi-omics analysis identifies lipid metabolism biomarkers in ONFH and reveals therapeutic potential of retinoic acid",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12371116/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a localized bone metabolic disorder caused by abnormal blood supply to the femoral head1. With complete collapse of the femoral head in 80% of untreated patients, ONFH has become one of the most serious challenges faced by orthopedic surgeons2. Globally, there are over 30 million individuals with ONFH, with approximately 22,000 new cases annually in the United States3. The incidence of ONFH in adults in China is relatively high, predominantly affecting middle-aged and young individuals. The majority of patients present at a stage where the bone necrosis has advanced to the mid-to-late stages, with collapse of the femoral head. Despite numerous studies on the pathogenesis of ONFH, a consensus has not yet been reached4. Joint replacement surgery may offer the best therapeutic outcome. However, artificial prostheses have a finite lifespan, and young patients who undergo joint replacement may require one or more revisions later in life. Exploring early non-surgical treatment methods to delay or avoid joint replacement is currently a research direction for ONFH. Therefore, the development of diagnostic biomarkers for ONFH is crucial.\nThe effective regulation and maintenance of lipid homeostasis is crucial for the normal function of cells and tissues. Patients with ONFH often have severe lipid metabolism disorders and fat accumulation in the damaged bone marrow cavity5. Therefore, lipid metabolism disorders are often recognized as a key factor in the pathogenesis of ONFH6. In addition, dysregulation of lipid metabolism may lead to ischemia by increasing intraosseous pressure and reducing blood flow, ultimately resulting in non-traumatic ONFH (NONFH)7. Decreased levels of adiponectin (APN) have been detected in patients with ONFH, and lower APN levels may reflect the severity of NONFH8. In animal experimental models of ONFH, the first change observed is an increase in blood lipid levels9. Long-term and high-dose use of glucocorticoids can lead to lipid metabolism disorders. These disorders can result in the appearance of small fat droplets in the blood, which are prone to form thrombi within the small vessels in the femoral head area, thereby affecting the microvascular circulation of the femoral head. Concurrently, hormones also have a proliferative effect on adipose tissue in the body, which leads to significant proliferation and hypertrophy of intramedullary fat cells, and causes an increase in intramedullary pressureand ultimately ONFH.\u00a0Given the critical role of lipid metabolism in ONFH, investigating its potential as a biomarker of ONFH is essential for the development of innovative therapeutic strategies.\nBuilding on previous findings and leveraging data from multiple public databases, this study aims to utilize transcriptomic data in conjunction with advanced machine learning techniques to identify biomarkers associated with lipid metabolism in ONFH. The characteristics of these biomarkers at the cellular level were further analyzed by single-cell RNA sequencing (scRNA-seq). Subsequently, we will experimentally validate the key genes that regulate lipid metabolism and further elucidate the critical molecular pathways involved in the pathogenesis of ONFH. The flowchart of this study visualizing multiple analytical methods was shown as Fig.\u00a01. This comprehensive approach will aid in a better understanding of the disease and provide more nuanced perspective for the clinical diagnosis of ONFH.Fig. 1The flowchart of this study.\nFig. 1\nThe flowchart of this study.\nMaterials and methods\nData collection",
+          "cos_sim_score": 0.500141978263855,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10366127",
+          "title": "Identification of hub genes and therapeutic drugs in osteonecrosis of the femoral head through integrated bioinformatics analysis and literature mining",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10366127/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a multifactorial disease with an unknown etiology, characterized by loss of integrity of the subchondral bone1. It mainly affects men aged 30\u201350 years and involves more and more youngers1,2. Despite the identification of corticosteroid use, alcohol, sickle-cell disease, and trauma as the major risk factors for ONFH, its pathogenesis remains incompletely understood2,3. Surgery is the only effective way to treat ONFH at present4. In the USA, approximately 10% of hip replacements are due to ONFH, and in the UK, ONFH is the third most common indication for total hip replacements in people under 50, which causes a heavy socioeconomic burden1,4. Effective drug therapies have not been established5. Therefore, identifying novel biomarkers and therapeutic drugs involved in the ONFH is of great significance in exploring efficient treatment strategies.\nOver the past two decades, few researchers have focused on exploring the mechanism of ONFH at the gene level6. Abnormalities in some genes, such as plasminogen-activating inhibitor-1 and nitric oxide synthase 3, have been proven to weaken the osteogenic differentiation capacity of bone marrow mesenchymal stem cells or disrupt angiogenesis, leading to the collapse of the femoral head surface7,8. However, the specific molecular mechanism of ONFH has not yet been clarified, and drug discovery has had little success. Recently, gene chips and high-throughput sequencing technologies have been widely used in the screening of disease-causing genes and have achieved practical and reliable results9. A new drug prediction method, drug-gene-disease triangulation based on literature mining, has been confirmed to be robust and reliable for identifying new drug candidates10.\nIn this study, we analyzed two gene expression profiles (Table 1) extracted from the National Center for Biotechnology Information Gene Expression Omnibus (GEO) database, which is a free global database of sequencing results. DEGs were identified by using the online tool GEO2R. Subsequently, the function of DEGs was determined by the Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analysis. With the help of Cytoscape, ten hub genes were selected and then validated by ROC analysis. Finally, the targeted drugs for ONFH were identified through the Drug-Gene Interaction Database (DGIdb) and cross-validated by integrated literature mining. Our study figured out the drug-gene-disease correlation to generate new insights into the prevention and treatment of ONFH.Table 1Detailed information on the GEO microarray profiles.ProfileOrganismSample sourceTechnology typeCasesControlsPlatformGSE123568Homo sapiensPeripheral serumIn situ oligonucleotide3010GPL15207GSE74089Homo sapiensHip cartilageIn situ oligonucleotide44GPL13497\nTable 1\nDetailed information on the GEO microarray profiles.\nResults\nIdentification of DEGs in ONFH",
+          "cos_sim_score": 0.4945833086967468,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

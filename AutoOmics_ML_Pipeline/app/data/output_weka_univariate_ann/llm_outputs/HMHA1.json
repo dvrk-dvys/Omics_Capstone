@@ -1,0 +1,161 @@
+{
+  "rf_rank": 33,
+  "probe_id": "11747020_x_at",
+  "gene_symbol": "HMHA1",
+  "score": 0.59,
+  "rf_n_nodes": 1,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.756,
+  "log_fc": 0.756,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11747020_x_at",
+  "max_score": 0.59,
+  "mean_abs_fold_change": 0.756,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:37:35",
+  "interpretation": "HMHA1, also known as ARHGAP45, encodes a protein that acts as a GTPase-activating protein for Rho-type GTPases, which are crucial in regulating the actin cytoskeleton and cell spreading. This regulation is significant in bone health, particularly in the context of steroid-induced osteonecrosis of the femoral head (SONFH), where the disruption of the cytoskeleton can lead to compromised bone integrity and vascular supply. However, the evidence linking HMHA1 directly to SONFH is limited, with no specific studies found that validate its role as a biomarker for this condition. Therefore, while HMHA1 may play a biological role in cellular processes relevant to bone health, its potential as a clinical biomarker for early detection of SONFH remains weak and speculative. [INFERENCE]",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "HMHA1 is involved in cellular processes that may impact bone health, but lacks direct evidence linking it to steroid-induced osteonecrosis of the femoral head (SONFH).",
+  "citations": [
+    "ARHGAP45 (Q92619). https://www.uniprot.org/uniprotkb/Q92619",
+    "ARHGAP45 (Q92619-2). https://www.uniprot.org/uniprotkb/Q92619-2",
+    "HMHA1 \u2014 ARHGAP45. https://platform.opentargets.org/target/ENSG00000180448",
+    "HMHA1 \u2194 inflammatory bowel disease. https://platform.opentargets.org/target/ENSG00000180448/associations",
+    "HMHA1 \u2194 dementia. https://platform.opentargets.org/target/ENSG00000180448/associations",
+    "HMHA1 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000180448/associations",
+    "HMHA1 \u2194 Alzheimer disease. https://platform.opentargets.org/target/ENSG00000180448/associations",
+    "ARHGAP45 \u2014 Rho GTPase activating protein 45 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "BCL2A1 \u2014 BCL2 related protein A1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ARHGAP1 \u2014 Rho GTPase activating protein 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4482,
+    "completion_tokens": 334,
+    "total_tokens": 4816,
+    "estimated_cost_usd": 0.000873
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q92619",
+          "title": "ARHGAP45 (Q92619)",
+          "url": "https://www.uniprot.org/uniprotkb/Q92619",
+          "text": "Protein: Rho GTPase-activating protein 45\nFunction: Contains a GTPase activator for the Rho-type GTPases (RhoGAP) domain that would be able to negatively regulate the actin cytoskeleton as well as cell spreading. However, also contains N-terminally a BAR-domin which is able to play an autoinhibitory effect on this RhoGAP activity Precursor of the histocompatibility antigen HA-1. More generally, minor histocompatibility antigens (mHags) refer to immunogenic peptide which, when complexed with MHC, can generate an immune response after recognition by specific T-cells. The peptides are derived from polymorphic intracellular proteins, which are cleaved by normal pathways of antigen processing. The binding of these peptides to MHC class I or class II molecules and its expression on the cell surface can stimulate T-cell responses and thereby trigger graft rejection or graft-versus-host disease (GVHD) after hematopoietic stem cell transplantation from HLA-identical sibling donor. GVHD is a frequent complication after bone marrow transplantation (BMT), due to mismatch of minor histocompatibility antigen in HLA-matched sibling marrow transplants. Specifically, mismatching for mHag HA-1 which is recognized as immunodominant, is shown to be associated with the development of severe GVHD after HLA-identical BMT. HA-1 is presented to the cell surface by MHC class I HLA-A*0201, but also by other HLA-A alleles. This complex specifically elicits donor-cytotoxic T-lymphocyte (CTL) reactivity against hematologic malignancies after treatment by HLA-identical allogenic BMT. It induces cell recognition and lysis by CTL",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q92619-2",
+          "title": "ARHGAP45 (Q92619-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q92619-2",
+          "text": "Protein: Isoform 2 of Rho GTPase-activating protein 45",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000180448::function",
+          "title": "HMHA1 \u2014 ARHGAP45",
+          "url": "https://platform.opentargets.org/target/ENSG00000180448",
+          "text": "Function: Contains a GTPase activator for the Rho-type GTPases (RhoGAP) domain that would be able to negatively regulate the actin cytoskeleton as well as cell spreading. However, also contains N-terminally a BAR- domin which is able to play an autoinhibitory effect on this RhoGAP activity. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000180448::EFO_0003767",
+          "title": "HMHA1 \u2194 inflammatory bowel disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000180448/associations",
+          "text": "Disease: inflammatory bowel disease\nDescription: A spectrum of small and large bowel inflammatory diseases of unknown etiology. It includes Crohn's disease, ulcerative colitis, and colitis of indeterminate type.\nAssociation score: 0.276",
+          "cos_sim_score": 0.27613388085505536,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000180448::MONDO_0001627",
+          "title": "HMHA1 \u2194 dementia",
+          "url": "https://platform.opentargets.org/target/ENSG00000180448/associations",
+          "text": "Disease: dementia\nDescription: Loss of intellectual abilities interfering with an individual's social and occupational functions. Causes include Alzheimer's disease, brain injuries, brain tumors, and vascular disorders.\nAssociation score: 0.247",
+          "cos_sim_score": 0.24691659399683707,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000180448::EFO_0005772",
+          "title": "HMHA1 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000180448/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.207",
+          "cos_sim_score": 0.20747234831327835,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000180448::MONDO_0004975",
+          "title": "HMHA1 \u2194 Alzheimer disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000180448/associations",
+          "text": "Disease: Alzheimer disease\nDescription: A progressive, neurodegenerative disease characterized by loss of function and death of nerve cells in several areas of the brain leading to loss of cognitive function such as memory and language.\nAssociation score: 0.150",
+          "cos_sim_score": 0.15036174918596223,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "ARHGAP45 \u2014 Rho GTPase activating protein 45",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ARHGAP45\nGene name: Rho GTPase activating protein 45\nAliases / synonyms: HA-1, HLA-HA1, HMHA1\nOrganism: Homo sapiens\nGene summary: Predicted to enable GTPase activator activity. Predicted to be involved in negative regulation of small GTPase mediated signal transduction. Located in cytosol and plasma membrane. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ARHGAP45",
+          "aliases": "HA-1, HLA-HA1, HMHA1",
+          "gene_description": "Rho GTPase activating protein 45"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "BCL2A1 \u2014 BCL2 related protein A1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: BCL2A1\nGene name: BCL2 related protein A1\nAliases / synonyms: ACC-1, ACC-2, ACC1, ACC2, BCL2L5, BFL1, GRS, HBPA1\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the BCL-2 protein family. The proteins of this family form hetero- or homodimers and act as anti- and pro-apoptotic regulators that are involved in a wide variety of cellular activities such as embryonic development, homeostasis and tumorigenesis. The protein encoded by this gene is able to reduce the release of pro-apoptotic cytochrome c from mitochondria and block caspase activation. This gene is a direct transcription target of NF-kappa B in response to inflammatory mediators, and is up-regulated by different extracellular signals, such as granulocyte-macrophage colony-stimulating factor (GM-CSF), CD40, phorbol ester and inflammatory cytokine TNF and IL-1, which suggests a cytoprotective function that is essential for lymphocyte activation as well as cell s...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "BCL2A1",
+          "aliases": "ACC-1, ACC-2, ACC1, ACC2, BCL2L5, BFL1, GRS, HBPA1",
+          "gene_description": "BCL2 related protein A1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ARHGAP1 \u2014 Rho GTPase activating protein 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ARHGAP1\nGene name: Rho GTPase activating protein 1\nAliases / synonyms: CDC42GAP, RHOGAP, RHOGAP1, p50rhoGAP\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of a large family of proteins that activate Rho-type guanosine triphosphate (GTP) metabolizing enzymes. The encoded protein contains a SRC homology 3 domain and interacts with Bcl-2-associated protein family members. [provided by RefSeq, Aug 2012]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ARHGAP1",
+          "aliases": "CDC42GAP, RHOGAP, RHOGAP1, p50rhoGAP",
+          "gene_description": "Rho GTPase activating protein 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

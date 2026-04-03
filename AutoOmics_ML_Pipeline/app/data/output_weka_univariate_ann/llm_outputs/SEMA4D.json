@@ -1,0 +1,227 @@
+{
+  "rf_rank": 30,
+  "probe_id": "11730005_a_at",
+  "gene_symbol": "SEMA4D",
+  "score": 0.59,
+  "rf_n_nodes": 11,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.9636,
+  "log_fc": 0.9636,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11730005_a_at",
+  "max_score": 0.59,
+  "mean_abs_fold_change": 0.9636,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:36:03",
+  "interpretation": "SEMA4D (Semaphorin-4D) is a cell surface protein that plays a crucial role in cell signaling and has been implicated in various biological processes, including immune response and bone metabolism. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), SEMA4D has been shown to inhibit osteoblastogenesis, which is critical for bone formation. Evidence indicates that SEMA4D interacts with osteoclasts and osteoblasts, where it can suppress factors that promote bone formation, thereby contributing to the pathophysiology of SONFH. The retrieved evidence suggests a mechanistic link between SEMA4D and bone health, particularly in the context of steroid-induced changes in bone metabolism. However, the evidence is primarily indirect, with no direct studies linking SEMA4D to SONFH specifically, leading to a moderate confidence in its potential as a biomarker for early detection of this condition.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 2",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "SEMA4D may serve as a biomarker for Steroid-Induced Osteonecrosis of the Femoral Head due to its role in inhibiting bone formation and its interaction with osteoclasts and osteoblasts.",
+  "citations": [
+    "SEMA4D (Q92854). https://www.uniprot.org/uniprotkb/Q92854",
+    "SEMA4D (Q92854-2). https://www.uniprot.org/uniprotkb/Q92854-2",
+    "SEMA4D \u2014 SEMA4D. https://platform.opentargets.org/target/ENSG00000187764",
+    "SEMA4D \u2194 skin aging. https://platform.opentargets.org/target/ENSG00000187764/associations",
+    "SEMA4D \u2194 sclerosing cholangitis. https://platform.opentargets.org/target/ENSG00000187764/associations",
+    "SEMA4D \u2194 intelligence. https://platform.opentargets.org/target/ENSG00000187764/associations",
+    "SEMA4D \u2194 Abruptio Placentae. https://platform.opentargets.org/target/ENSG00000187764/associations",
+    "SEMA4D \u2014 semaphorin 4D (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "VEGFA \u2014 vascular endothelial growth factor A (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HIF1A \u2014 hypoxia inducible factor 1 subunit alpha (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ERBB2 \u2014 erb-b2 receptor tyrosine kinase 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KRAS \u2014 KRAS proto-oncogene, GTPase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Impact of Different Cell Types on the Osteogenic Differentiation Process of Mesenchymal Stem Cells (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11842143/",
+    "A microfluidic organ-on-a-chip: into the next decade of bone tissue engineering applied in dentistry (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC10518836/",
+    "Small non-coding RNAs-based bone regulation and targeting therapeutic strategies (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC7116989/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8063,
+    "completion_tokens": 355,
+    "total_tokens": 8418,
+    "estimated_cost_usd": 0.001422
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q92854",
+          "title": "SEMA4D (Q92854)",
+          "url": "https://www.uniprot.org/uniprotkb/Q92854",
+          "text": "Protein: Semaphorin-4D\nFunction: Cell surface receptor for PLXNB1 and PLXNB2 that plays an important role in cell-cell signaling (PubMed:20877282). Regulates GABAergic synapse development (By similarity). Promotes the development of inhibitory synapses in a PLXNB1-dependent manner (By similarity). Modulates the complexity and arborization of developing neurites in hippocampal neurons by activating PLXNB1 and interaction with PLXNB1 mediates activation of RHOA (PubMed:19788569). Promotes the migration of cerebellar granule cells (PubMed:16055703). Plays a role in the immune system; induces B-cells to aggregate and improves their viability (in vitro) (PubMed:8876214). Induces endothelial cell migration through the activation of PTK2B/PYK2, SRC, and the phosphatidylinositol 3-kinase-AKT pathway (PubMed:16055703)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q92854-2",
+          "title": "SEMA4D (Q92854-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q92854-2",
+          "text": "Protein: Isoform 2 of Semaphorin-4D",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000187764::function",
+          "title": "SEMA4D \u2014 SEMA4D",
+          "url": "https://platform.opentargets.org/target/ENSG00000187764",
+          "text": "Function: Cell surface receptor for PLXNB1 and PLXNB2 that plays an important role in cell-cell signaling (PubMed:20877282). Regulates GABAergic synapse development (By similarity). Promotes the development of inhibitory synapses in a PLXNB1-dependent manner (By similarity). Modulates the complexity and arborization of developing neurites in hippocampal neurons by activating PLXNB1 and interaction with PLXNB1 mediates activation of RHOA (PubMed:19788569). Promotes the migration of cerebellar granule cells (PubMed:16055703). Plays a role in the immune system; induces B-cells to aggregate and improves their viability (in vitro) (PubMed:8876214). Induces endothelial cell migration through the activation of PTK2B/PYK2, SRC, and the phosphatidylinositol 3-kinase-AKT pathway (PubMed:16055703).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000187764::EFO_0005422",
+          "title": "SEMA4D \u2194 skin aging",
+          "url": "https://platform.opentargets.org/target/ENSG00000187764/associations",
+          "text": "Disease: skin aging\nDescription: The gradual irreversible changes in structure of skin that occur as a result of the passage of time.. In humans, skin aging can be precipitated as a result of weather and sun exposure, and expresses through the appearance of wrinkles and localised changes in skin pigmentation\nAssociation score: 0.426",
+          "cos_sim_score": 0.4259843235238637,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000187764::EFO_0004268",
+          "title": "SEMA4D \u2194 sclerosing cholangitis",
+          "url": "https://platform.opentargets.org/target/ENSG00000187764/associations",
+          "text": "Disease: sclerosing cholangitis\nDescription: A chronic, autoimmune inflammatory liver disorder characterized by narrowing and scarring of the lumen of the bile ducts. It is often seen in patients with ulcerative colitis. Signs and symptoms include jaundice, fatigue, and malabsorption. It may lead to cirrhosis and liver failure.\nAssociation score: 0.372",
+          "cos_sim_score": 0.37156634640363206,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000187764::EFO_0004337",
+          "title": "SEMA4D \u2194 intelligence",
+          "url": "https://platform.opentargets.org/target/ENSG00000187764/associations",
+          "text": "Disease: intelligence\nDescription: The ability to learn and to deal with new situations and to deal effectively with tasks involving abstractions.\nAssociation score: 0.316",
+          "cos_sim_score": 0.3162568183053274,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000187764::EFO_1001754",
+          "title": "SEMA4D \u2194 Abruptio Placentae",
+          "url": "https://platform.opentargets.org/target/ENSG00000187764/associations",
+          "text": "Disease: Abruptio Placentae\nDescription: Vaginal bleeding preceding the 20th week of gestation.\nAssociation score: 0.262",
+          "cos_sim_score": 0.2615877513479676,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "SEMA4D \u2014 semaphorin 4D",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SEMA4D\nGene name: semaphorin 4D\nAliases / synonyms: A8, BB18, C9orf164, CD100, COLL4, GR3, M-sema-G, SEMAJ, coll-4\nOrganism: Homo sapiens\nGene summary: Enables identical protein binding activity; semaphorin receptor binding activity; and transmembrane signaling receptor activity. Involved in several processes, including positive regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction; regulation of neuron projection development; and regulation of primary metabolic process. Located in microtubule organizing center; nucleoplasm; and plasma membrane. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SEMA4D",
+          "aliases": "A8, BB18, C9orf164, CD100, COLL4, GR3, M-sema-G, SEMAJ, coll-4",
+          "gene_description": "semaphorin 4D"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "VEGFA \u2014 vascular endothelial growth factor A",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: VEGFA\nGene name: vascular endothelial growth factor A\nAliases / synonyms: L-VEGF, MVCD1, VEGF, VPF\nOrganism: Homo sapiens\nGene summary: This gene is a member of the PDGF/VEGF growth factor family. It encodes a heparin-binding protein, which exists as a disulfide-linked homodimer. This growth factor induces proliferation and migration of vascular endothelial cells, and is essential for both physiological and pathological angiogenesis. Disruption of this gene in mice resulted in abnormal embryonic blood vessel formation. This gene is upregulated in many known tumors and its expression is correlated with tumor stage and progression. Elevated levels of this protein are found in patients with POEMS syndrome, also known as Crow-Fukase syndrome. Allelic variants of this gene have been associated with microvascular complications of diabetes 1 (MVCD1) and atherosclerosis. Alternatively spliced transcript variants encoding different...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "VEGFA",
+          "aliases": "L-VEGF, MVCD1, VEGF, VPF",
+          "gene_description": "vascular endothelial growth factor A"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "HIF1A \u2014 hypoxia inducible factor 1 subunit alpha",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HIF1A\nGene name: hypoxia inducible factor 1 subunit alpha\nAliases / synonyms: HIF-1-alpha, HIF-1A, HIF-1alpha, HIF1, HIF1-ALPHA, MOP1, PASD8, bHLHe78\nOrganism: Homo sapiens\nGene summary: This gene encodes the alpha subunit of transcription factor hypoxia-inducible factor-1 (HIF-1), which is a heterodimer composed of an alpha and a beta subunit. HIF-1 functions as a master regulator of cellular and systemic homeostatic response to hypoxia by activating transcription of many genes, including those involved in energy metabolism, angiogenesis, apoptosis, and other genes whose protein products increase oxygen delivery or facilitate metabolic adaptation to hypoxia. HIF-1 thus plays an essential role in embryonic vascularization, tumor angiogenesis and pathophysiology of ischemic disease. Alternatively spliced transcript variants encoding different isoforms have been identified for this gene. [provided by RefSeq, Jul 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HIF1A",
+          "aliases": "HIF-1-alpha, HIF-1A, HIF-1alpha, HIF1, HIF1-ALPHA, MOP1, PASD8, bHLHe78",
+          "gene_description": "hypoxia inducible factor 1 subunit alpha"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ERBB2 \u2014 erb-b2 receptor tyrosine kinase 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ERBB2\nGene name: erb-b2 receptor tyrosine kinase 2\nAliases / synonyms: CD340, HER-2, HER-2/neu, HER2, MLN 19, MLN-19, NEU, NGL, TKR1, VSCN2, c-ERB-2, c-ERB2, p185(erbB2)\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the epidermal growth factor (EGF) receptor family of receptor tyrosine kinases. This protein has no ligand binding domain of its own and therefore cannot bind growth factors. However, it does bind tightly to other ligand-bound EGF receptor family members to form a heterodimer, stabilizing ligand binding and enhancing kinase-mediated activation of downstream signalling pathways, such as those involving mitogen-activated protein kinase and phosphatidylinositol-3 kinase. Allelic variations at amino acid positions 654 and 655 of isoform a (positions 624 and 625 of isoform b) have been reported, with the most common allele, Ile654/Ile655, shown here. Amplification and/or overexpression of this gene has been reported in numerous cancers, including breast and ovarian...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ERBB2",
+          "aliases": "CD340, HER-2, HER-2/neu, HER2, MLN 19, MLN-19, NEU, NGL, TKR1, VSCN2, c-ERB-2, c-ERB2, p185(erbB2)",
+          "gene_description": "erb-b2 receptor tyrosine kinase 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KRAS \u2014 KRAS proto-oncogene, GTPase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KRAS\nGene name: KRAS proto-oncogene, GTPase\nAliases / synonyms: 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2\nOrganism: Homo sapiens\nGene summary: This gene, a Kirsten ras oncogene homolog from the mammalian ras gene family, encodes a protein that is a member of the small GTPase superfamily. A single amino acid substitution is responsible for an activating mutation. The transforming protein that results is implicated in various malignancies, including lung adenocarcinoma, mucinous adenoma, ductal carcinoma of the pancreas and colorectal carcinoma. Alternative splicing leads to variants encoding two isoforms that differ in the C-terminal region. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KRAS",
+          "aliases": "'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2",
+          "gene_description": "KRAS proto-oncogene, GTPase"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::11842143",
+          "title": "Impact of Different Cell Types on the Osteogenic Differentiation Process of Mesenchymal Stem Cells",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11842143/",
+          "text": "The expression of Sema4D in OCs inhibits bone formation in osteoblasts, being present in OCs but lacking in osteoblasts. Sema4D exists in two forms in vivo: as a type I membrane protein and as soluble Sema4D (sSema4D). The latter is cleaved from the OC membrane and released in response to RANKL stimulation, and it exhibits functional activity in inhibiting osteoblastogenesis [145]. When the Sema4D gene expression is deficient in OCs in mice, there is a significant increase in bone volume and bone mass in these mice. In in vitro osteogenic differentiation experiments, coculturing Sema4D-deficient OCs with osteoblasts results in higher expression of osteogenic-related genes such as Col1a1 in osteoblasts compared to the control group, and more bone nodules are formed. At the same time, the deficiency of the Sema4D gene does not affect the quantity of OCs and osteoblasts. The research also indicates that Sema4D suppresses factors produced by OCs that promote bone formation. Sema4D primarily binds to the receptor Plexin-B1 on osteoblasts, inhibiting bone formation by suppressing IGF-1 signaling and modulating osteoblast movement. IGF-1, in turn, induces the osteogenic differentiation of MSCs through the IRS-PI3K-Akt-mTOR pathway. The absence of Plexin-B1 also favors bone formation. Additionally, the effects of Sema4D are partially mediated by other receptors, such as Plexin-B2 [146, 147] (Figure 2). Sema4D may regulate bone formation through additional mechanisms [148]. A. Deb Roy and colleagues discovered that OCs can induce contact repulsion in osteoblasts (where OCs and osteoblasts briefly interact and then separate). They developed the first optogenetic tool capable of precisely controlling the activation of Plexin-B1 by light in both location and timing, confirming that this effect is coordinated through the RhoA-ROCK-mediated redistribution of \u03b2-Pix via Plexin-B1 [149]. Additionally, Sema4D-mediated bone resorption may be linked to ovarian function. In a study by Dacquin et al. [150], female mice with Sema4D deficiency exhibited increased bone mass phenotype after sexual maturity, which was eliminated by ovariectomy. Moreover, Sema4D-deficient mice showed reproductive impairment, suggesting that Sema4D is a factor that links bone remodeling and ovarian function [150]. The inhibitory effect of LIF on OCs",
+          "cos_sim_score": 0.635355532169342,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11842143",
+          "title": "Impact of Different Cell Types on the Osteogenic Differentiation Process of Mesenchymal Stem Cells",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11842143/",
+          "text": "of \u03b2-Pix via Plexin-B1 [149]. Additionally, Sema4D-mediated bone resorption may be linked to ovarian function. In a study by Dacquin et al. [150], female mice with Sema4D deficiency exhibited increased bone mass phenotype after sexual maturity, which was eliminated by ovariectomy. Moreover, Sema4D-deficient mice showed reproductive impairment, suggesting that Sema4D is a factor that links bone remodeling and ovarian function [150]. The inhibitory effect of LIF on OCs may involve its stimulation of prostaglandin synthesis by osteoblasts. Furthermore, osteoprotegerin competitively inhibits the coreceptor LRP5 in the Wnt signaling pathway, thereby suppressing the pathway and influencing bone formation. Additionally, it is noteworthy that ABs derived from OCs have a positive effect on the osteogenesis of MSCs. These ABs can be derived from both pOC and mOC. pOC-ABs are rich in PDGF-BB, which is particularly conducive to promoting angiogenesis. Conversely, MOC-ABs are rich in RANK, promoting osteogenesis through the reverse signal of receptor activator of RANKL [151\u2013153]. Macrophages and OCs play crucial roles in maintaining bone homeostasis, and the cytokines they secrete serve as guidance cues for MSCs homing, proliferation, and differentiation. Despite their pivotal role, there is a paucity of direct coculture experiments studying their specific effects on the osteogenic differentiation of MSCs. The challenges in culturing and differentiating OCs in vitro, coupled with potential impacts of osteogenic induction medium on cells, present significant obstacles in the exploration of cell coculture dynamics. Overcoming these challenges is essential for a comprehensive understanding of the intricate interplay between macrophages, OCs, and MSCs in the context of bone tissue homeostasis. Further research and optimization of coculture methodologies are needed to unveil the full spectrum of interactions among these key players in bone health.",
+          "cos_sim_score": 0.5638434290885925,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10518836",
+          "title": "A microfluidic organ-on-a-chip: into the next decade of bone tissue engineering applied in dentistry",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10518836/",
+          "text": "Bone is a dynamic tissue that is constantly capable of self-repair in order to maintain functionality throughout life through modeling during childhood and adolescence, balancing the formation-resorption process, and bone remodeling. Bone contains four types of cells, including osteoblast, osteoclast, bone lining cells and osteocyte. Bone cells are responsible for several vital functions such as supporting body and soft tissue structure, performing as the central region of hematopoiesis in adult humans, and being involved in mineral homeostasis [1\u20133]. However, this tissue may undergo damages caused by either congenital, age-related, or acquired in situations such as trauma, inflammation, infections, or surgical intervention that led to bone loss [4\u20137].\nNowadays, the most common bone-related issues are osteoporosis, osteosarcoma and bone metastases. As a systemic disease, osteoporosis has become a serious public health issue because of its high risk and prevalence, with approximately 200\u00a0million people affected worldwide [8\u201310]. Apart from osteoporosis, osteosarcoma is still the most common bone malignancy found. In these regards, bone is also reported as the third most frequent site of metastases after the lung and liver [11\u201313]. With respect to bone-related issue in dentistry, periodontitis is the second most common oral problem found in world populations after caries. Periodontitis is a multifactorial chronic inflammatory disease associated with biofilm dysbiosis. It is characterized by the progressive destruction of periodontal tissue, including the alveolar bone, leading to tooth loss. In view of the periodontal tissue, the alveolar bone is a part of the maxilla and mandible that forms and supports the tooth's socket [14]. It grows simultaneously with the process of tooth eruption and gradually disappears after tooth loss [3]. Numerous cases of periodontitis have been reported, in which according to the Global Burden of Disease Study (GBD) in 2019, periodontitis affected 1.1\u00a0billion people worldwide and the numbers still increase from time to time [15\u201318]. Bone also stated as one of the most frequently used tissues for transplantation. In the fields of orthopedic surgery, plastic surgery, maxillofacial surgery, and neurosurgery, more than a million people are treated for skeletal issues each year [19]. These bone-related issues are problematic for many scientists and clinicians and are, therefore, of interest to researchers.\nStudying the physiological and pathological processes associated with bone and its response to different therapeutic strategies is a complicated task requiring knowledge of the cellular microenvironment that affects the behavior of cells in tissues or organs [20]. Especially when tissue engineering [21,22] is used as an approach to regenerate by creating functioning substitutes for damaged or defective tissues and organs, the underlying principle of cellular behavior in its microenvironment toward regeneration mechanism is important to increase the success rate of the therapy.\nBone tissue engineering (BTE) is a promising approach to enhance bone repair and regeneration via synergistic integration of biomaterials or scaffolds, cells\u00a0and therapeutic factors [1,23,24]. In the context of maxillofacial applications, there is an extensive selection of sources and materials that can be utilized for the reconstruction of maxillofacial bones in the form of synthetic bone extracellular matrices which are generally known as scaffolds. These include autogenous, allogenic, xenogeneic, alloplastic, and engineered personalized grafts [25]. Within this context, the scaffold can provide interim mechanical integrity at the defect site until the bone tissue is repaired or regenerated and the process of tissue regeneration involved appropriate cell adhesion, proliferation\u00a0and function [24\u201326]. Therefore, cell-based assay is the fundamental way to study and give clear information about this phenomenon.",
+          "cos_sim_score": 0.487775057554245,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::7116989",
+          "title": "Small non-coding RNAs-based bone regulation and targeting therapeutic strategies",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116989/",
+          "text": "A number of bone-related diseases, such as bone defects, osteoporosis, osteolysis, osteonecrosis, osteoarthritis and bone cancer, lead to a serious burden on the quality of life worldwide. Bone destruction begins to exceed bone formation after the age of 40 years old, leading to a local or systemic reduction of bone mass, which is well known as osteoporosis. For individuals with osteoporosis, bone fractures represent a life-threatening event, and the risk of fracture doubles for every 10% of bone that is lost (Rodan and Martin, 2000), while bone metastasis occurs in approximately 70% of patients with advanced prostate or breast cancer (Suva et\u00a0al., 2011). Bone metastases leading to excess bone loss are generally classified as osteolytic (bone destruction), and those leading to bone deposition are regarded as osteoblastic (bone formation). Both bone degradation and deposition have been verified to occur in the early metastatic process, and they are always incurable once tumours metastasize to bones (Suva et\u00a0al., 2011). Our increasing molecular understanding of disease-causing or disease-promoting genes of bone pathology has led to the discovery of numerous new molecular targets for the prevention and treatment of various of bone-related disorders. As a flourishing scientific field, the molecular mechanisms and therapeutic applications of the small non-coding RNAs (miRNAs and siRNAs) involved in bone-related diseases have been widely investigated in numerous studies. However, to date, no miRNA or siRNA targeting therapy-based clinical trials for musculoskeletal disorders have been initiated. This current review will focus on the roles of miRNAs in the regulation of bone formation and metabolism with an emphasis on the potential therapeutic strategies meidiated by miRNAs and siRNAs for the treatment of bone-related diseases.\n2\nParticipation of miRNAs in bone formation\n2.1\nOsteogenesis-related miRNAs and target transcription factors\nBone mesenchymal stem cells (BMSCs), originating from the bone marrow possess multiple differentiation potentials. They can differentiate into osteoblasts, adipocytes and chondrocytes (Tencerova and Kassem, 2016). Osteoblasts are the major cell types in bone development and tissue engineering (Noronha-Matos et\u00a0al., 2014). Multiple transcription factors participate in osteogenic differentiation, and the production and mineralization of extracellular matrix (ECM) synthesized by osteoblasts are finely regulated by different miRNAs. Among them, Runx2 and its downstream molecule Osterix are the most pivotal osteoblast-specific transcription factors that activate the relevant genes involved in the differentiation of preosteoblasts into mature osteoblasts and osteocytes, and the molecular mechanisms of the two bone -specific factors in the regulation of osteoblastogenesis were extensively described in our previous review (Fang et\u00a0al., 2015).\nMany miRNAs are expressed during the osteogenic process induced in BMSCs, including cell proliferation, growth, matrix maturation and mineralization during the new bone formation (Fig.\u00a02",
+          "cos_sim_score": 0.46395355463027954,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11842143",
+          "title": "Impact of Different Cell Types on the Osteogenic Differentiation Process of Mesenchymal Stem Cells",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11842143/",
+          "text": "mechanism wherein bone tissue secretes neurotrophic factors. This feedback mechanism serves to modulate the number and type of nerves required for optimal bone homeostasis and regeneration. Neurotrophic factors play a crucial role in guiding bone innervation by binding to functional receptors known as transmembrane tyrosine kinases (RTKs). This interaction leads to the upregulation of osteoblast activity, promoting both osteogenesis and vascularization [168]. The intricate connection between the nervous system and bone physiology is further highlighted by neural guidance molecules that regulate axon growth and participate in processes such as angiogenesis and bone regeneration through various signaling pathways. A significant member of this family of molecules is Sema3A, a protein that acts on both osteoblasts and OCs. Sema3A exhibits the ability to inhibit axon growth and cell migration in an autocrine manner, playing a crucial role in regulating the development of sensory nerves. Indirectly, Sema3A promotes the differentiation of osteoblasts, inhibits the differentiation of OCs, and contributes to the regulation of bone remodeling. The loss of Sema3A has been associated with severe bone formation disorders and disarrangements, emphasizing its essential role in maintaining bone homeostasis [169]. Currently, research involving nerve cells related to osteogenic differentiation is limited, and various cell lines are employed to study sympathetic and sensory nerve interactions in this context. Sympathetic nerve-related cell lines include the rat pheochromocytoma cell line PC12 [170], superior cervical ganglion (SCG) cells [171], and human neuroblastoma cells (SH-SY5Y) [172]. On the other hand, sensory nerve cells commonly studied include dorsal root ganglion neurons (DRGs) and trigeminal ganglion (TG) cells from mixed nerves. Schwann cells (SCs) have emerged as valuable contributors in studies exploring the relationship between nerve cells and osteogenic differentiation. Serving as neurotrophic cells, SCs play a crucial role in providing nutritional support for axon regeneration and nerve cell growth. As glial cells in peripheral nerves, SCs are capable of secreting various neurotrophic factors, including nerve growth factor (NGF) and brain-derived neurotrophic factor (BDNF), and also release VEGF. These factors contribute to the intricate signaling network involved in bone physiology. Research involving SCs and their EVs has shown promising results. SCs and EVs have been",
+          "cos_sim_score": 0.4622235894203186,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

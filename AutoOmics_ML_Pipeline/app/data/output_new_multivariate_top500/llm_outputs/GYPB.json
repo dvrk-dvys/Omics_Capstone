@@ -1,0 +1,219 @@
+{
+  "probe_id": "11745557_x_at",
+  "gene_symbol": "GYPB",
+  "rf_importance": 0.0,
+  "selection_freq": 0.0,
+  "abs_fold_change": 2.9866562666666656,
+  "score": 0.415,
+  "probe_count": 5,
+  "probe_ids": "11745557_x_at | 11745299_x_at | 11753827_x_at | 11753662_x_at | 11763093_x_at",
+  "max_score": 0.415,
+  "mean_abs_fold_change": 2.6207,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T23:59:41",
+  "interpretation": "Glycophorin-B (GYPB) is a sialoglycoprotein that plays a crucial role in maintaining the stability and shape of erythrocyte membranes. While there is no direct evidence linking GYPB to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in the skeletal system and potential association with inflammatory responses suggests a plausible connection. The retrieved evidence indicates that GYPB is part of the ankyrin-1 complex, which is important for cellular integrity, and abnormalities in erythrocyte function could contribute to the ischemic conditions seen in SONFH. However, the evidence is weak, and further studies are needed to establish GYPB as a biomarker for SONFH. Thus, while GYPB may have some relevance, its potential as a clinical biomarker for early detection of SONFH remains uncertain.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "GYPB may be involved in erythrocyte membrane stability, which could relate to ischemic processes in SONFH, but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "GYPB (P06028). https://www.uniprot.org/uniprotkb/P06028",
+    "GYPB (P06028-2). https://www.uniprot.org/uniprotkb/P06028-2",
+    "GYPB \u2014 GYPB. https://platform.opentargets.org/target/ENSG00000250361",
+    "GYPB \u2194 chronic obstructive pulmonary disease. https://platform.opentargets.org/target/ENSG00000250361/associations",
+    "GYPB \u2194 malaria. https://platform.opentargets.org/target/ENSG00000250361/associations",
+    "GYPB \u2194 thyroid cancer. https://platform.opentargets.org/target/ENSG00000250361/associations",
+    "GYPB \u2194 Abnormality of the skeletal system. https://platform.opentargets.org/target/ENSG00000250361/associations",
+    "GYPB \u2014 glycophorin B (MNS blood group) (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "SNCA \u2014 synuclein alpha (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ATR \u2014 ATR checkpoint kinase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "DNM2 \u2014 dynamin 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ESRRA \u2014 estrogen related receptor alpha (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Identification of key genes and pathways associated with gender difference in osteonecrosis of the femoral head based on bioinformatics analysis (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9976184/",
+    "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8745,
+    "completion_tokens": 329,
+    "total_tokens": 9074,
+    "estimated_cost_usd": 0.001509
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P06028",
+          "title": "GYPB (P06028)",
+          "url": "https://www.uniprot.org/uniprotkb/P06028",
+          "text": "Protein: Glycophorin-B\nFunction: Component of the ankyrin-1 complex, a multiprotein complex involved in the stability and shape of the erythrocyte membrane",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P06028-2",
+          "title": "GYPB (P06028-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P06028-2",
+          "text": "Protein: Isoform 2 of Glycophorin-B",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000250361::function",
+          "title": "GYPB \u2014 GYPB",
+          "url": "https://platform.opentargets.org/target/ENSG00000250361",
+          "text": "Function: Component of the ankyrin-1 complex, a multiprotein complex involved in the stability and shape of the erythrocyte membrane. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000250361::EFO_0000341",
+          "title": "GYPB \u2194 chronic obstructive pulmonary disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000250361/associations",
+          "text": "Disease: chronic obstructive pulmonary disease\nDescription: A group of disorders affecting the bronchi and the lung parenchyma. It is characterized by chronic and irreversible obstruction of the airflow. It includes chronic bronchitis and pulmonary emphysema.\nAssociation score: 0.380",
+          "cos_sim_score": 0.38043612139480076,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000250361::EFO_0001068",
+          "title": "GYPB \u2194 malaria",
+          "url": "https://platform.opentargets.org/target/ENSG00000250361/associations",
+          "text": "Disease: malaria\nDescription: Malaria is a serious and sometimes fatal disease caused by a parasite that commonly infects a certain type of mosquito which feeds on humans. Infection with malaria parasites may result in a wide variety of symptoms, ranging from absent or very mild symptoms to severe disease and even death. People who get malaria are typically very sick with high fevers, shaking chills, and flu-like illness. In general, malaria is a curable disease if diagnosed and treated promptly and correctly.Treatment depends on many factors including disease severity, the species of malaria parasite causing the infection and the part of the world in which the infection was acquired.\nAssociation score: 0.375",
+          "cos_sim_score": 0.37530594713779186,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000250361::MONDO_0002108",
+          "title": "GYPB \u2194 thyroid cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000250361/associations",
+          "text": "Disease: thyroid cancer\nDescription: A malignant neoplasm involving the thyroid gland\nAssociation score: 0.325",
+          "cos_sim_score": 0.32450843082951547,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000250361::HP_0000924",
+          "title": "GYPB \u2194 Abnormality of the skeletal system",
+          "url": "https://platform.opentargets.org/target/ENSG00000250361/associations",
+          "text": "Disease: Abnormality of the skeletal system\nDescription: An abnormality of the skeletal system.\nAssociation score: 0.281",
+          "cos_sim_score": 0.2810434918027672,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "GYPB \u2014 glycophorin B (MNS blood group)",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: GYPB\nGene name: glycophorin B (MNS blood group)\nAliases / synonyms: CD235b, GPB, GYP, MNS, PAS-3, SS\nOrganism: Homo sapiens\nGene summary: Glycophorins A (GYPA) and B (GYPB) are major sialoglycoproteins of the human erythrocyte membrane which bear the antigenic determinants for the MN and Ss blood groups. GYPB gene consists of 5 exons and has 97% sequence homology with GYPA from the 5' UTR to the coding sequence encoding the first 45 amino acids. In addition to the M or N and S or s antigens, that commonly occur in all populations, about 40 related variant phenotypes have been identified. These variants include all the variants of the Miltenberger complex and several isoforms of Sta; also, Dantu, Sat, He, Mg, and deletion variants Ena, S-s-U- and Mk. Most of the variants are the result of gene recombinations between GYPA and GYPB. Alternate splicing results in multiple transcript variants. [provided by RefSeq, Jan 2015]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "GYPB",
+          "aliases": "CD235b, GPB, GYP, MNS, PAS-3, SS",
+          "gene_description": "glycophorin B (MNS blood group)"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "SNCA \u2014 synuclein alpha",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SNCA\nGene name: synuclein alpha\nAliases / synonyms: NACP, PARK1, PARK4, PD1\nOrganism: Homo sapiens\nGene summary: Alpha-synuclein is a member of the synuclein family, which also includes beta- and gamma-synuclein. Synucleins are abundantly expressed in the brain and alpha- and beta-synuclein inhibit phospholipase D2 selectively. SNCA may serve to integrate presynaptic signaling and membrane trafficking. Defects in SNCA have been implicated in the pathogenesis of Parkinson disease. SNCA peptides are a major component of amyloid plaques in the brains of patients with Alzheimer's disease. Alternatively spliced transcripts encoding different isoforms have been identified for this gene. [provided by RefSeq, Feb 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SNCA",
+          "aliases": "NACP, PARK1, PARK4, PD1",
+          "gene_description": "synuclein alpha"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ATR \u2014 ATR checkpoint kinase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ATR\nGene name: ATR checkpoint kinase\nAliases / synonyms: FCTCS, FRP1, MEC1, SCKL, SCKL1\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a serine/threonine kinase and DNA damage sensor, activating cell cycle checkpoint signaling upon DNA stress. The encoded protein can phosphorylate and activate several proteins involved in the inhibition of DNA replication and mitosis, and can promote DNA repair, recombination, and apoptosis. This protein is also important for fragile site stability and centrosome duplication. Defects in this gene are a cause of Seckel syndrome 1. [provided by RefSeq, Aug 2017]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ATR",
+          "aliases": "FCTCS, FRP1, MEC1, SCKL, SCKL1",
+          "gene_description": "ATR checkpoint kinase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "DNM2 \u2014 dynamin 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: DNM2\nGene name: dynamin 2\nAliases / synonyms: CMT2M, CMTDI1, CMTDIB, DI-CMTB, DYN2, DYNII, LCCS5\nOrganism: Homo sapiens\nGene summary: Dynamins represent one of the subfamilies of GTP-binding proteins. These proteins share considerable sequence similarity over the N-terminal portion of the molecule, which contains the GTPase domain. Dynamins are associated with microtubules. They have been implicated in cell processes such as endocytosis and cell motility, and in alterations of the membrane that accompany certain activities such as bone resorption by osteoclasts. Dynamins bind many proteins that bind actin and other cytoskeletal proteins. Dynamins can also self-assemble, a process that stimulates GTPase activity. Five alternatively spliced transcripts encoding different proteins have been described. Additional alternatively spliced transcripts may exist, but their full-length nature has not been determined. [provided by R...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "DNM2",
+          "aliases": "CMT2M, CMTDI1, CMTDIB, DI-CMTB, DYN2, DYNII, LCCS5",
+          "gene_description": "dynamin 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ESRRA \u2014 estrogen related receptor alpha",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ESRRA\nGene name: estrogen related receptor alpha\nAliases / synonyms: ERR1, ERRa, ERRalpha, ESRL1, NR3B1\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a nuclear receptor that is most closely related to the estrogen receptor. This protein acts as a site-specific transcription factor and interacts with members of the PGC-1 family of transcription cofactors to regulate the expression of most genes involved in cellular energy production as well as in the process of mitochondrial biogenesis. A processed pseudogene of ESRRA is located on chromosome 13q12.1. [provided by RefSeq, Jun 2019]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ESRRA",
+          "aliases": "ERR1, ERRa, ERRalpha, ESRL1, NR3B1",
+          "gene_description": "estrogen related receptor alpha"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::9976184",
+          "title": "Identification of key genes and pathways associated with gender difference in osteonecrosis of the femoral head based on bioinformatics analysis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9976184/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a common hip disease with a high incidence in elderly patients, with the most common clinical symptom of severe pain[1]. ONFH can cause rapid hip destruction and dysfunction, and approximately 65-70% of patients with advanced ONFH require total hip arthroplasty[2]. There are various pathological mechanisms of ONFH, including abnormal lipid metabolism, microcirculation ischemia, apoptosis, etc. It is widely accepted that reduced blood perfusion leads to attenuation of normal repair function of cells and ultimately irreversible tissue destruction[3]. Most studies focused on bone tissues. However, cartilage is also an important factor in the development of this disease. In the early stage of the disease, radiographic changes, including rough cartilage surface, can be seen[4]. The cartilage degradation will be gradually worsened. And the mechanical stress changes resulting from cartilage degeneration may also further aggravate the progression of this disease.\nIn the Chinese National Representative Survey, the estimated number of nontraumatic osteonecrosis of the femoral head (NONFH) cases among Chinese people aged 15 years old and older was 8.12 million. The prevalence of NONFH was significantly higher in males than that in females, which was approximately 2 times in female patients[5]. Gender difference in their prevalence suggests its important role for gender hormones in the pathogenesis of ONFH, which has led to the hypothesis that androgens play a role in the development of ONFH. A study on the effect of gonadal glands and testosterone on the incidence of femoral head lesions in spontaneously hypertensive rats (SHR) found a difference in the incidence of femoral head lesions between the two genders because of the effects of testosterone on femoral head growth plates[6].\nRecently, microarray techniques based on high-throughput platforms have been widely used in gene expression profiling. Extensive effort has been spent in identifying or evaluating specific genes and pathways for ONFH progression. However, most studies have focused on gene expression data of patients compared with healthy subjects, and there is less literature focusing on gene expression data of patients compared with gender difference.\nTo this end, a comprehensive bioinformatics analysis identified DEGs in males and females with ONFH. Gene expression profiles of males and females with ONFH were obtained from the gene expression Omnibus (GEO) database, and then the hub genes of DEGs were identified through protein interaction analysis. This study helps to further understand the gender-specific mechanisms of ONFH and provides potential biomarkers and therapeutic targets for the treatment of ONFH.\nMaterials and Methods\nData source\nIn this study, the dataset GSE123568 of ONFH was selected in the GEO database, by searching with \u201cfemur head\u201d [MeSH Terms] or \u201cfemoral head\u201d [All Fields], \u201cnecrosis\u201d [MeSH Terms] or necrosis [All Fields], and \u201cHomo sapiens\u201d [porgn] as keywords, including non-steroid-administered peripheral blood samples from 3 females and 7 males with ONFH. Differential genes were screened according to the samples from female ONFH patient group and male ONFH patient group.\nData preprocessing and identification of DEGs\nDifferentially expressed genes (DEGs) between the female ONFH patient group and the male ONFH patient group were compared with R software (Version 4.1.1) and related R packages in GSE123568. The datasets were first background-adjusted and normalized by log2 transformation. Background correction, quantile normalization and probe summarization of raw microarray data were performed by RMA algorithm[7] in the linear models of microarray data (limma) package[8]. P values were adjusted for comparison with the false discovery rate (FDR) of Benjamini and Hochberg (BH) test[9] in the limma package[8]. DEGs were selected with P<0.05 and |log2 fold change (FC) | > 2 as the commonly used thresholds[10,11]. Volcano maps and heatmaps of DEGs were generated with the ggplot2 software package in the R software.\nGSEA\nTo better understand the biological mechanisms associated with ONFH, candidate molecular pathways were explored with GSEA software (Version 4.1.0) for DEGs. The gene sets, Hallmark and Canonical Pathways, were downloaded from the molecular features database (http://www.gsea-msigdb.org/gsea/msigdb/index.jsp).\nGO and KEGG pathway enrichment analysis",
+          "cos_sim_score": 0.6096699237823486,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "1. Introduction\nOsteonecrosis of the femoral head (ONFH) is a common disease mainly characterized by apoptosis of bone cells that leads to collapse of the femoral head and cartilage damage. Notably, the round surface of the head and acetabulum joint flattens and eventually leads to secondary osteoarthritis.[1] Studies have shown that the disease is mainly prevalent in patients with long-term use of hormonal drugs, long-term alcohol abuse, and hip trauma.[2] Steroid-induced ONFH (SONFH) is a common type of femoral head necrosis. SONFH patients are frequently misdiagnosed as hip synovitis or osteoarthritis owing to lack of obvious signs coupled with imaging abnormalities during early stages of disease development.[3] Although transcriptomic analyses have contributed to development of clinical treatment strategies for SONFH, the precise underlying mechanism of SONFH remains unclear.[4,5]\nBioinformatics analyses have significantly improved the search and identification of key genes regulating the occurrence of various diseases, thereby generating new insights to guide development of treatment strategies. SONFH has a complex pathophysiological mechanism. Genotyping of SONFH in adults revealed that gene coding protein polymorphism was associated with SONFH.[6] It has been hypothesized that progression of SONFH to the end stage in adult patients may be due to differential expression of protein-coding genes involved in thrombosis, angiogenesis inhibition, programmed cell death, lipid biosynthesis, and bone homeostasis. In the present study, we aimed to identify differentially expressed genes in peripheral blood of patients with early SONFH and further explored the pathogenesis of this disease using transcriptome data from the Gene Expression Omnibus database.\n2. Materials and Methods\n2.1. Data acquisition\nThe Gene Expression Omnibus database not only stores many gene chips and sequence data but also provides tools for users to query and download gene expression profiles. In the present study, we searched for relevant datasets using \u201csteroid-induced osteonecrosis of femoral head\u201d as the keyword, with focus on SONFH-related datasets. Consequently, we downloaded transcriptome data (GSE123568) belonging to 30 SONFH and 10 non-SONFH (following steroid administration) subjects.\n2.2. Sample correlation analysis\nOverall expression profiles of the transcriptome data were clustered using ClusterProfiler packages implemented in R software (version 4.0.2). Only dimension features containing the vast majority of variances were retained, with those containing zero variances discarded based on a principal component analysis (PCA) plot. Using weighted gene correlation network analysis (WGCNA) package in R language to perform WGCNA on data. WGCNA adds phenotypic weight parameters in the process of constructing gene co-expression network and optimizes classification using scale-free clustering and dynamic tree cut algorithm to achieve accurate and efficient data analysis.\n2.3. Functional annotation of DEGs\nFunctional annotation of key genes was performed using the ClusterProfiler package in R and followed by comprehensive functional correlation of candidate genes. Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analyses were performed to evaluate related functional categories. Significant differentially expressed genes (DEGs) were filtered, and bar charts and bubble charts were drawn according to their functions and pathways, respectively.\n2.4. Construction of protein\u2013protein interaction networks\nProtein\u2013protein interaction (PPI) networks of the DEGs were generated using the STRING online tool and Cytoscape software. Summarily, DEGs were entered into the STRING online tool to screen for interacting proteins with a combined score of\u2005>\u20050.9. The obtained PPI results were imported into Cytoscape software, then prominent modules in PPI were screened to construct the network through molecular complex detection. NetworkX package was then used to visualize the network in Python, with node sizes taken to be proportional to node degree.\n2.5. Quantitative real-time polymerase chain reaction",
+          "cos_sim_score": 0.5458183288574219,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "Figure 3.\nqRT-PCR results showing significant upregulation of ITGAX and LILRB2 and significant downregulation of PPP3CB and MMP8 in SONFH patients., ITGAX = integrin subunit alpha X, LILRB2 = leukocyte immunoglobulin like receptor B2, MMP8 = matrix metallopeptidase 8, PPP3CB = protein phosphatase 3 catalytic subunit beta, qRT-PCR = quantitative real-time polymerase chain reaction, SONFH = steroid-induced osteonecrosis of the femoral head.\n4. Discussion\nMore than 30 years ago, researchers discovered a close relationship between use of glucocorticoids with the occurrence of femoral head necrosis.[7] Results from a retrospective analysis showed that hormone-related nontraumatic ONFH is dominant.[8] Investigating the genetic factors regulating SONFH characteristics is an important strategy, and scholars have employed bioinformatics to explore sequence data. However, these studies also present some defects, such as inability to accurately interpret high-throughput sequence data to ensure that a certain deviation exists between PCR verification data and the data significance.[9,10] In the present study, we explored the signaling pathways regulating development of early SONFH and predicted diagnostic biomarkers in peripheral blood from this group of patients.\nOur results revealed that hundreds of coding genes, including tumor necrosis factor-\u03b1 (TNF-\u03b1), phosphoinositide 3-kinase Akt (PI3K-Akt), hypoxia-inducible factor-1 (HIF-1), adherens junction, and mitogen-activated protein kinase signaling pathways, were significantly upregulated in peripheral blood of patients with early SONFH. Notably, these DEGs participate in regulation of redox, inflammatory response, angiogenesis, and cell metabolism by secreting inflammatory chemokine signaling proteins. We constructed a PPI network of these DEGs and found that PRDX2, HP, MMP8, FPR2, and ITGAX may be associated with the SONFH process. Among them, FPR2 is a low-affinity receptor of N-formyl methionine peptides and a powerful neutrophil chemokine.[11] Family with sequence similarity 19 member A5 is a neural factor or brain-specific chemokine that was shown to remarkably downregulate expression of osteoclast-related genes, such as receptor activator of nuclear factor kappa and TNF receptor-associated factor 6, and mediate upregulation of osteoclast-producing negative regulators, such as musculoaponeurotic fibrosarcoma oncogene homolog B and interferon regulatory factor-8.[12,13] Interestingly, FPR2 antagonist WRW4 or FPR2 deficiency were shown to markedly reverse inhibition of Family with sequence similarity 19 member A5-inducedosteoclastogenesis, indicating that FPR2 plays an important role in regulation of osteoclastogenesis as well as occurrence and development of SONFH disease.[9,14]\nIntegrin alpha-X/beta-2, which is encoded by ITGAX, is a receptor that recognizes the G protein-coupled receptor sequence in fibrinogen, thereby mediating cell\u2013cell interactions during inflammatory responses. Functionally, it plays an important role in monocyte adhesion and chemotaxis.[15,16] In the present study, we found that PRDX2 was a thiol-specific peroxidase in downregulated genes in SONFH relative to non-SONFH group. Functionally, this gene catalyzes reduction of hydrogen peroxide and organic peroxide to produce water and alcohol, thereby causing inactivation of toxic substances.[17] Studies have shown that PRDX2, a hydrogen peroxide-mediated signal transduction sensor that prevents oxidative stress, not only plays a role in cell protection but may also be participating in signal cascade reaction of growth factor and TNF-\u03b1 by regulating the intracellular concentration of hydrogen peroxide.[18,19]\nHP-related diseases, which include haptoglobinemia and Plasmodium falciparum malaria,[20] are regulated by the innate immune system and vesicle-mediated transport. HP accumulates in the kidney and is secreted in the urine due to hemolysis. Moreover, HP reportedly captures and binds to free plasma HP, thereby preventing kidney damage. HP also acts as an antioxidant, presents antibacterial activity, and plays a role in many acute phase regulations.[21] Therefore, the observed downregulation of PRDX2 and HP may suggest that both genes promote development of SONFH disease through the redox pathway.",
+          "cos_sim_score": 0.5064617395401001,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9976184",
+          "title": "Identification of key genes and pathways associated with gender difference in osteonecrosis of the femoral head based on bioinformatics analysis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9976184/",
+          "text": "GSEA and KEGG pathways showed that Hub genes were mainly enriched in cGMP-PKG signaling pathway, Fatty acid degradation, Non-alcoholic fatty liver disease, Systemic lupus erythematosus and Hematopoietic cell lineage. NO-cGMP-PKG signaling plays a key role in skeletal homeostasis, and NO is required for bone remodeling, and partially mediates the mechanical stimulation and the anabolic effects of estrogen[17]. Short-chain fatty acid (SCFA) is the modulator of osteoclast metabolism and bone mass in the body. Treating mice with SCFA and feeding them with a high-fiber diet significantly increased bone mass and prevented bone loss caused by menopause and inflammation. The protective effect of SCFA on bone mass is associated with the inhibition of osteoclast differentiation and bone resorption in vitro and in vivo, while bone formation is not affected. Mechanistically, propionate (C3) and butyrate (C4) induce metabolic reprogramming of osteoclasts, leading to enhanced glycolysis at the cost of oxidative phosphorylation, resulting in the down-regulation of basic osteoclast genes, such as TRAF6 and NFATc1[29]. Non-alcoholic fatty liver disease (NAFLD) is non-autoimmune hepatitis associated with the presence of steatosis, oxidative stress and inflammatory mediators (such as TNF-\u03b1 and IL-6) and altered nuclear factors in NAFLD (e.g., CAR, PXR, PPAR-\u03b1)[30], which is also a risk factor for ONFH, with one case report indicating increasing corticosteroid doses. Higher levels of liver enzymes started up and ONFH occurred successively, which indicates that the liver enzymes may be involved in the steroid induction of ONFH[20]. Systemic lupus erythematosus (SLE) is a common autoimmune disease. Current studies show that clinical factors associated with SLE, including disease activity, genetic polymorphisms, vasculitis, Raynaud\u2019s phenomenon, hypertriglyceridemia, antiphospholipid syndrome (APS) and autoimmune antibodies, are also associated with the risk of osteonecrosis[31-35]. NOD-like receptor contains a family pyrin domain of 3 (NLRP3) that assembles protein complexes called NLRP3 inflammasome when certain pathogen products or sterile danger signals are detected. NLRP3 inflammasome was shown to be involved in the absorption and dissolution mechanisms of bone[36,37].\nConclusions\nIn conclusion, the results of this study suggest that cGMP-PKG signaling pathway, Fatty acid degradation, Non-alcoholic fatty liver disease, Systemic lupus erythematosus, Hematopoietic cell lineage and NO-cGMP-PKG signaling may play an important role in the occurrence and development of gender-differential ONFH between males and females. SLC4A1, GYPA, CXCL8, GBP5 and AHSP may be key genes associated with the progression of gender-differential ONFH and may be ideal targets for ONFH. In addition, the roles of IFIT1, IFI44, IFI44L, IFIT3 and KEL in inflammation, immune response, oxidative stress and apoptosis of ONFH are also valuable and may be associated with the treatment of ONFH.\nAuthors\u2019 contributions\nZY designed the study and drafted the manuscript. JX and GW were responsible for the collection and analysis of the experimental data. YZ, XL and FZ revised the manuscript critically for important intellectual content. All authors read and approved the final manuscript.",
+          "cos_sim_score": 0.3844298720359802,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9976184",
+          "title": "Identification of key genes and pathways associated with gender difference in osteonecrosis of the femoral head based on bioinformatics analysis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9976184/",
+          "text": "Discussion\nONFH is a common disease on hip with a gender specificity in the prevalence and incidence. Male patients develop ONFH 3.4 years earlier than female patients. Male patients outnumber female patients, with an overall gender ratio of 7:3. Autoimmune diseases, alcohol consumption, glucocorticoids, etc., are risk factors for inducing ONFH. Studies have shown that male patients with ONFH have a greater incidence than female patients with ONFH even if steroid hormones are also used[15]. In addition, another study showed that females are less prone to ONFH compared with males even with greater alcohol consumption and longer duration[16]. This proves that the underlying mechanism of gender difference leading to ONFH is unclear. It is of great importance to investigate the molecular mechanisms responsible for gender differences in ONFH.\nIn this study, a comprehensive bioinformatics analysis was performed with two GEO Data gene expression profile datasets to identify the biological mechanisms involved in the pathogenesis of gender difference in ONFH. A total of 64 differential genes were identified in postmenopausal ONFH females and ONFH males, including 10 up-regulated genes and 54 down-regulated genes. Among them, SLC4A1, GYPA, CXCL8, IFIT1, GBP5, IFI44, IFI44L, IFIT3, KEL and AHSP were Hub genes. GO enrichment analysis on DEGs revealed that DEGs were mainly enriched in immunoglobulin production involved in immunoglobulin-mediated immune response, peptide antigen assembly with MHC class II protein complex, defense response to virus, and immune response integral component of membrane, plasma membrane, protein heterodimerization activity, peptide antigen binding, MHC class II protein complex binding, protein homodimerization activity, and protein binding. These functional enrichment analyses indicated that DEGs play a role in autoimmunity, assembly and binding of peptide antigens in complexes with MHC class II proteins, demonstrating that autoimmunity plays an important role in the pathogenesis of ONFH. Furthermore, GSEA and KEGG pathways with overlapping DEGs showed that these genes were mainly enriched in cGMP-PKG signaling pathway, Fatty acid degradation, Non-alcoholic fatty liver disease, Systemic lupus erythematosus and Hematopoietic cell lineage. According to the previous studies on ONFH, cGMP-PKG signaling pathway[17], Fatty acid degradation[18,19], Non-alcoholic fatty liver disease[20], Systemic lupus erythematosus[21,22] and Hematopoietic cell lineage[23] are involved in the pathogenesis of ONFH.",
+          "cos_sim_score": 0.31290745735168457,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

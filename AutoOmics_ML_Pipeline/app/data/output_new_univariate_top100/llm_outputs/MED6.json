@@ -1,0 +1,183 @@
+{
+  "probe_id": "11731437_at",
+  "gene_symbol": "MED6",
+  "score": 1.0,
+  "SD_TestAUC": 0.0331269329999968,
+  "abs_fold_change": 0.6541,
+  "probe_count": 1,
+  "probe_ids": "11731437_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.6541,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T22:43:15",
+  "interpretation": "MED6 encodes a subunit of the Mediator complex, which is crucial for the transcription of RNA polymerase II-dependent genes. This complex acts as a bridge between gene-specific regulatory proteins and the transcription machinery, influencing the expression of genes involved in various biological processes. Although there is no direct evidence linking MED6 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in transcription regulation suggests it may influence pathways related to bone metabolism and response to steroid treatment. The evidence retrieved primarily supports its general biological function rather than a specific connection to SONFH, leading to a low confidence in its role as a biomarker for early detection of this condition. Therefore, while MED6 may have some relevance in the context of transcriptional regulation in bone health, its potential as a clinical biomarker for SONFH is weak.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "MED6 may play a role in transcriptional regulation relevant to bone metabolism, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "MED6 (O75586). https://www.uniprot.org/uniprotkb/O75586",
+    "MED6 (O75586-2). https://www.uniprot.org/uniprotkb/O75586-2",
+    "MED6 (O75586-3). https://www.uniprot.org/uniprotkb/O75586-3",
+    "MED6 \u2014 MED6. https://platform.opentargets.org/target/ENSG00000133997",
+    "MED6 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000133997/associations",
+    "MED6 \u2194 prostate carcinoma. https://platform.opentargets.org/target/ENSG00000133997/associations",
+    "MED6 \u2194 Hypercholesterolemia. https://platform.opentargets.org/target/ENSG00000133997/associations",
+    "MED6 \u2194 neoplasm. https://platform.opentargets.org/target/ENSG00000133997/associations",
+    "MED6 \u2014 mediator complex subunit 6 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ESR1 \u2014 estrogen receptor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KRAS \u2014 KRAS proto-oncogene, GTPase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "VDR \u2014 vitamin D receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "AR \u2014 androgen receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4778,
+    "completion_tokens": 308,
+    "total_tokens": 5086,
+    "estimated_cost_usd": 0.000901
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O75586",
+          "title": "MED6 (O75586)",
+          "url": "https://www.uniprot.org/uniprotkb/O75586",
+          "text": "Protein: Mediator of RNA polymerase II transcription subunit 6\nFunction: Component of the Mediator complex, a coactivator involved in the regulated transcription of nearly all RNA polymerase II-dependent genes. Mediator functions as a bridge to convey information from gene-specific regulatory proteins to the basal RNA polymerase II transcription machinery. Mediator is recruited to promoters by direct interactions with regulatory proteins and serves as a scaffold for the assembly of a functional preinitiation complex with RNA polymerase II and the general transcription factors",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::O75586-2",
+          "title": "MED6 (O75586-2)",
+          "url": "https://www.uniprot.org/uniprotkb/O75586-2",
+          "text": "Protein: Isoform 2 of Mediator of RNA polymerase II transcription subunit 6",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::O75586-3",
+          "title": "MED6 (O75586-3)",
+          "url": "https://www.uniprot.org/uniprotkb/O75586-3",
+          "text": "Protein: Isoform 3 of Mediator of RNA polymerase II transcription subunit 6",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000133997::function",
+          "title": "MED6 \u2014 MED6",
+          "url": "https://platform.opentargets.org/target/ENSG00000133997",
+          "text": "Function: Component of the Mediator complex, a coactivator involved in the regulated transcription of nearly all RNA polymerase II-dependent genes. Mediator functions as a bridge to convey information from gene- specific regulatory proteins to the basal RNA polymerase II transcription machinery. Mediator is recruited to promoters by direct interactions with regulatory proteins and serves as a scaffold for the assembly of a functional preinitiation complex with RNA polymerase II and the general transcription factors. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000133997::EFO_0005772",
+          "title": "MED6 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000133997/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.513",
+          "cos_sim_score": 0.5128950599462041,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000133997::EFO_0001663",
+          "title": "MED6 \u2194 prostate carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000133997/associations",
+          "text": "Disease: prostate carcinoma\nDescription: A carcinoma that arises from epithelial cells of the prostate gland.\nAssociation score: 0.199",
+          "cos_sim_score": 0.19908325148082975,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000133997::HP_0003124",
+          "title": "MED6 \u2194 Hypercholesterolemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000133997/associations",
+          "text": "Disease: Hypercholesterolemia\nDescription: An increased concentration of cholesterol in the blood.\nAssociation score: 0.153",
+          "cos_sim_score": 0.1533196727588739,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000133997::EFO_0000616",
+          "title": "MED6 \u2194 neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000133997/associations",
+          "text": "Disease: neoplasm\nDescription: A benign or malignant tissue growth resulting from uncontrolled cell proliferation. Benign neoplastic cells resemble normal cells without exhibiting significant cytologic atypia, while malignant cells exhibit overt signs such as dysplastic features, atypical mitotic figures, necrosis, nuclear pleomorphism, and anaplasia. Representative examples of benign neoplasms include papillomas, cystadenomas, and lipomas; malignant neoplasms include carcinomas, sarcomas, lymphomas, and leukemias.\nAssociation score: 0.075",
+          "cos_sim_score": 0.0750041782868453,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "MED6 \u2014 mediator complex subunit 6",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MED6\nGene name: mediator complex subunit 6\nAliases / synonyms: ARC33, NY-REN-28\nOrganism: Homo sapiens\nGene summary: Enables transcription coactivator activity and transcription coactivator binding activity. Acts upstream of or within positive regulation of transcription by RNA polymerase II. Located in nucleoplasm. Part of core mediator complex and mediator complex. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MED6",
+          "aliases": "ARC33, NY-REN-28",
+          "gene_description": "mediator complex subunit 6"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ESR1 \u2014 estrogen receptor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ESR1\nGene name: estrogen receptor 1\nAliases / synonyms: ER, ESR, ESRA, ESTRR, Era, NR3A1\nOrganism: Homo sapiens\nGene summary: This gene encodes an estrogen receptor and ligand-activated transcription factor. The canonical protein contains an N-terminal ligand-independent transactivation domain, a central DNA binding domain, a hinge domain, and a C-terminal ligand-dependent transactivation domain. The protein localizes to the nucleus where it may form either a homodimer or a heterodimer with estrogen receptor 2. The protein encoded by this gene regulates the transcription of many estrogen-inducible genes that play a role in growth, metabolism, sexual development, gestation, and other reproductive functions and is expressed in many non-reproductive tissues. The receptor encoded by this gene plays a key role in breast cancer, endometrial cancer, and osteoporosis. This gene is reported to have dozens of transcript va...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ESR1",
+          "aliases": "ER, ESR, ESRA, ESTRR, Era, NR3A1",
+          "gene_description": "estrogen receptor 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KRAS \u2014 KRAS proto-oncogene, GTPase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KRAS\nGene name: KRAS proto-oncogene, GTPase\nAliases / synonyms: 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2\nOrganism: Homo sapiens\nGene summary: This gene, a Kirsten ras oncogene homolog from the mammalian ras gene family, encodes a protein that is a member of the small GTPase superfamily. A single amino acid substitution is responsible for an activating mutation. The transforming protein that results is implicated in various malignancies, including lung adenocarcinoma, mucinous adenoma, ductal carcinoma of the pancreas and colorectal carcinoma. Alternative splicing leads to variants encoding two isoforms that differ in the C-terminal region. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KRAS",
+          "aliases": "'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2",
+          "gene_description": "KRAS proto-oncogene, GTPase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "VDR \u2014 vitamin D receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: VDR\nGene name: vitamin D receptor\nAliases / synonyms: NR1I1, PPP1R163\nOrganism: Homo sapiens\nGene summary: This gene encodes vitamin D3 receptor, which is a member of the nuclear hormone receptor superfamily of ligand-inducible transcription factors. This receptor also functions as a receptor for the secondary bile acid, lithocholic acid. Downstream targets of vitamin D3 receptor are principally involved in mineral metabolism, though this receptor regulates a variety of other metabolic pathways, such as those involved in immune response and cancer. Mutations in this gene are associated with type II vitamin D-resistant rickets. A single nucleotide polymorphism in the initiation codon results in an alternate translation start site three codons downstream. Alternatively spliced transcript variants encoding different isoforms have been described for this gene. A recent study provided evidence for t...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "VDR",
+          "aliases": "NR1I1, PPP1R163",
+          "gene_description": "vitamin D receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "AR \u2014 androgen receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AR\nGene name: androgen receptor\nAliases / synonyms: AIS, AR8, DHTR, HUMARA, HYSP1, KD, NR3C4, SBMA, SMAX1, TFM\nOrganism: Homo sapiens\nGene summary: The androgen receptor gene is more than 90 kb long and codes for a protein that has 3 major functional domains: the N-terminal domain, DNA-binding domain, and androgen-binding domain. The protein functions as a steroid-hormone activated transcription factor. Upon binding the hormone ligand, the receptor dissociates from accessory proteins, translocates into the nucleus, dimerizes, and then stimulates transcription of androgen responsive genes. This gene contains 2 polymorphic trinucleotide repeat segments that encode polyglutamine and polyglycine tracts in the N-terminal transactivation domain of its protein. Expansion of the polyglutamine tract from the normal 9-34 repeats to the pathogenic 38-62 repeats causes spinal bulbar muscular atrophy (SBMA, also known as Kennedy's disease). Mutati...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AR",
+          "aliases": "AIS, AR8, DHTR, HUMARA, HYSP1, KD, NR3C4, SBMA, SMAX1, TFM",
+          "gene_description": "androgen receptor"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

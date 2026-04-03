@@ -1,0 +1,292 @@
+{
+  "rf_rank": 28,
+  "probe_id": "11719581_a_at",
+  "gene_symbol": "BPGM",
+  "score": 0.65,
+  "rf_n_nodes": 12,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 3.388,
+  "log_fc": -3.388,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 2,
+  "probe_ids": "11719581_a_at | 11736395_a_at",
+  "max_score": 0.65,
+  "mean_abs_fold_change": 3.3572,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T01:49:28",
+  "interpretation": "BPGM (bisphosphoglycerate mutase) is an enzyme that regulates hemoglobin's oxygen affinity by modulating levels of 2,3-bisphosphoglycerate (2,3-BPG). This regulation is crucial for maintaining proper oxygen delivery to tissues, which is particularly relevant in conditions like Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), where blood supply to the femoral head is compromised. The retrieved evidence indicates that BPGM is differentially expressed in the serum of SONFH patients, suggesting its potential role as a biomarker for early diagnosis. Specifically, BPGM was identified among the differentially expressed genes (DEGs) in a study that utilized machine learning algorithms to assess biomarkers in SONFH. This evidence supports its clinical relevance as a biomarker for SONFH, particularly in the context of erythrocyte function and immune response regulation. Overall, BPGM shows promise as a biomarker for SONFH, with moderate confidence based on the available evidence.",
+  "evidence_relation": "direct",
+  "evidence_tier": "Tier 1",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "strong",
+  "relevance_summary": "BPGM is a potential biomarker for early detection of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) due to its role in regulating oxygen delivery and its differential expression in affected patients.",
+  "citations": [
+    "BPGM (P07738). https://www.uniprot.org/uniprotkb/P07738",
+    "BPGM \u2014 BPGM. https://platform.opentargets.org/target/ENSG00000172331",
+    "BPGM \u2194 hemolytic anemia due to diphosphoglycerate mutase deficiency. https://platform.opentargets.org/target/ENSG00000172331/associations",
+    "BPGM \u2194 autosomal recessive secondary polycythemia not associated with VHL gene. https://platform.opentargets.org/target/ENSG00000172331/associations",
+    "BPGM \u2194 placenta praevia. https://platform.opentargets.org/target/ENSG00000172331/associations",
+    "BPGM \u2194 vertebral column disorder. https://platform.opentargets.org/target/ENSG00000172331/associations",
+    "Screening of Potential Biomarkers in the Peripheral Serum for Steroid-Induced Osteonecrosis of the Femoral Head Based on WGCNA and Machine Learning Algorithms. (2022). https://pubmed.ncbi.nlm.nih.gov/35154510/",
+    "BPGM \u2014 bisphosphoglycerate mutase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "AKT1 \u2014 AKT serine/threonine kinase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "GRB2 \u2014 growth factor receptor bound protein 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "GAPDH \u2014 glyceraldehyde-3-phosphate dehydrogenase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ATF6 \u2014 activating transcription factor 6 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Bioinformatics analysis and identification of genes and molecular pathways in steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8136174/",
+    "Advances in the mechanism for steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12902040/",
+    "Pathological mechanisms and related markers of steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11559024/",
+    "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+    "MEF cells, siBPGM control 5 [GSM6037560] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6037560",
+    "MEF cells, siBPGM control 2 [GSM6037557] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6037557",
+    "MEF cells, siBPGM control 4 [GSM6037559] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6037559",
+    "MEF cells, siBPGM control 3 [GSM6037558] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6037558",
+    "A renal function for 2,3-bisphosphoglycerate mutase (BPGM) [GSE200544] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE200544"
+  ],
+  "token_usage": {
+    "prompt_tokens": 10494,
+    "completion_tokens": 355,
+    "total_tokens": 10849,
+    "estimated_cost_usd": 0.001787
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P07738",
+          "title": "BPGM (P07738)",
+          "url": "https://www.uniprot.org/uniprotkb/P07738",
+          "text": "Protein: Bisphosphoglycerate mutase\nFunction: Plays a major role in regulating hemoglobin oxygen affinity by controlling the levels of its allosteric effector 2,3-bisphosphoglycerate (2,3-BPG). Also exhibits mutase (EC 5.4.2.11) activity",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000172331::function",
+          "title": "BPGM \u2014 BPGM",
+          "url": "https://platform.opentargets.org/target/ENSG00000172331",
+          "text": "Function: Plays a major role in regulating hemoglobin oxygen affinity by controlling the levels of its allosteric effector 2,3- bisphosphoglycerate (2,3-BPG). Also exhibits mutase (EC 5.4.2.11) activity. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172331::MONDO_0009113",
+          "title": "BPGM \u2194 hemolytic anemia due to diphosphoglycerate mutase deficiency",
+          "url": "https://platform.opentargets.org/target/ENSG00000172331/associations",
+          "text": "Disease: hemolytic anemia due to diphosphoglycerate mutase deficiency\nDescription: A rare, autosomal recessive, inherited disorder caused by mutation of the BPGM gene. It is characterized by hemolytic anemia and splenomegaly.\nAssociation score: 0.680",
+          "cos_sim_score": 0.6802433631082225,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172331::MONDO_0016598",
+          "title": "BPGM \u2194 autosomal recessive secondary polycythemia not associated with VHL gene",
+          "url": "https://platform.opentargets.org/target/ENSG00000172331/associations",
+          "text": "Disease: autosomal recessive secondary polycythemia not associated with VHL gene\nAssociation score: 0.370",
+          "cos_sim_score": 0.3695798546847018,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172331::EFO_0007442",
+          "title": "BPGM \u2194 placenta praevia",
+          "url": "https://platform.opentargets.org/target/ENSG00000172331/associations",
+          "text": "Disease: placenta praevia\nDescription: Abnormal placentation in which the placenta implants in the lower segment of the uterus (the zone of dilation) and may cover part or all of the opening of the cervix. It is often associated with serious antepartum bleeding and premature labor.\nAssociation score: 0.325",
+          "cos_sim_score": 0.3251134522916561,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172331::MONDO_0000812",
+          "title": "BPGM \u2194 vertebral column disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000172331/associations",
+          "text": "Disease: vertebral column disorder\nDescription: A disease involving the vertebral column.\nAssociation score: 0.102",
+          "cos_sim_score": 0.10220726288767065,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::35154510",
+          "title": "Screening of Potential Biomarkers in the Peripheral Serum for Steroid-Induced Osteonecrosis of the Femoral Head Based on WGCNA and Machine Learning Algorithms.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35154510/",
+          "year": "2022",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SONFH) has produced a substantial burden of medical and social experience. However, the current diagnosis is still limited. Thus, this study is aimed at identifying potential biomarkers in the peripheral serum of patients with SONFH. The expression profile data of SONFH (number: GSE123568) was acquired from the Gene Expression Omnibus (GEO) database. Differentially expressed genes (DEGs) in SONFH were identified and used for weighted gene coexpression network analysis (WGCNA). Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analyses were performed to investigate the biological functions. The protein-protein interaction (PPI) network and machine learning algorithms were employed to screen for potential biomarkers. Gene set enrichment analysis (GSEA), transcription factor (TF) enrichment analysis, and competing endogenous RNA (ceRNA) network were used to determine the biological functions and regulatory mechanisms of the potential biomarkers. A total of 562 DEGs, including 318 upregulated and 244 downregulated genes, were identified between SONFH and control samples, and 94 target genes were screened based on WGCNA. Moreover, biological function analysis suggested that target genes were mainly involved in erythrocyte differentiation, homeostasis and development, and myeloid cell homeostasis and development. Furthermore, GYPA, TMCC2, and BPGM were identified as potential biomarkers in the peripheral serum of patients with SONFH based on machine learning algorithms and showed good diagnostic values. GSEA revealed that GYPA, TMCC2, and BPGM were mainly involved in immune-related biological processes (BPs) and signaling pathways. Finally, we found that GYPA might be regulated by hsa-miR-3137 and that BPGM might be regulated by hsa-miR-340-3p. GYPA, TMCC2, and BPGM are potential biomarkers in the peripheral serum of patients with SONFH and might affect SONFH by regulating erythrocytes and immunity.",
+          "cos_sim_score": 0.483070433139801,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "BPGM \u2014 bisphosphoglycerate mutase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: BPGM\nGene name: bisphosphoglycerate mutase\nAliases / synonyms: DPGM, ECYT8\nOrganism: Homo sapiens\nGene summary: 2,3-diphosphoglycerate (2,3-DPG) is a small molecule found at high concentrations in red blood cells where it binds to and decreases the oxygen affinity of hemoglobin. This gene encodes a multifunctional enzyme that catalyzes 2,3-DPG synthesis via its synthetase activity, and 2,3-DPG degradation via its phosphatase activity. The enzyme also has phosphoglycerate phosphomutase activity. Deficiency of this enzyme increases the affinity of cells for oxygen. Mutations in this gene result in hemolytic anemia. Multiple alternatively spliced variants, encoding the same protein, have been identified. [provided by RefSeq, Sep 2009]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "BPGM",
+          "aliases": "DPGM, ECYT8",
+          "gene_description": "bisphosphoglycerate mutase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "AKT1 \u2014 AKT serine/threonine kinase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AKT1\nGene name: AKT serine/threonine kinase 1\nAliases / synonyms: AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA\nOrganism: Homo sapiens\nGene summary: This gene encodes one of the three members of the human AKT serine-threonine protein kinase family which are often referred to as protein kinase B alpha, beta, and gamma. These highly similar AKT proteins all have an N-terminal pleckstrin homology domain, a serine/threonine-specific kinase domain and a C-terminal regulatory domain. These proteins are phosphorylated by phosphoinositide 3-kinase (PI3K). AKT/PI3K forms a key component of many signalling pathways that involve the binding of membrane-bound ligands such as receptor tyrosine kinases, G-protein coupled receptors, and integrin-linked kinase. These AKT proteins therefore regulate a wide variety of cellular functions including cell proliferation, survival, metabolism, and angiogenesis in both normal and malignant cells. AKT proteins ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AKT1",
+          "aliases": "AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA",
+          "gene_description": "AKT serine/threonine kinase 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "GRB2 \u2014 growth factor receptor bound protein 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: GRB2\nGene name: growth factor receptor bound protein 2\nAliases / synonyms: ASH, EGFRBP-GRB2, Grb3-3, MST084, MSTP084, NCKAP2\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene binds the epidermal growth factor receptor and contains one SH2 domain and two SH3 domains. Its two SH3 domains direct complex formation with proline-rich regions of other proteins, and its SH2 domain binds tyrosine phosphorylated sequences. This gene is similar to the Sem5 gene of C.elegans, which is involved in the signal transduction pathway. Two alternatively spliced transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "GRB2",
+          "aliases": "ASH, EGFRBP-GRB2, Grb3-3, MST084, MSTP084, NCKAP2",
+          "gene_description": "growth factor receptor bound protein 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "GAPDH \u2014 glyceraldehyde-3-phosphate dehydrogenase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: GAPDH\nGene name: glyceraldehyde-3-phosphate dehydrogenase\nAliases / synonyms: G3PD, GAPD, HEL-S-162eP\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the glyceraldehyde-3-phosphate dehydrogenase protein family. The encoded protein has been identified as a moonlighting protein based on its ability to perform mechanistically distinct functions. The product of this gene catalyzes an important energy-yielding step in carbohydrate metabolism, the reversible oxidative phosphorylation of glyceraldehyde-3-phosphate in the presence of inorganic phosphate and nicotinamide adenine dinucleotide (NAD). The encoded protein has additionally been identified to have uracil DNA glycosylase activity in the nucleus. Also, this protein contains a peptide that has antimicrobial activity against E. coli, P. aeruginosa, and C. albicans. Studies of a similar protein in mouse have assigned a variety of additional functions including...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "GAPDH",
+          "aliases": "G3PD, GAPD, HEL-S-162eP",
+          "gene_description": "glyceraldehyde-3-phosphate dehydrogenase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ATF6 \u2014 activating transcription factor 6",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ATF6\nGene name: activating transcription factor 6\nAliases / synonyms: ACHM7, ATF6A, ATP6alpha\nOrganism: Homo sapiens\nGene summary: This gene encodes a transcription factor that activates target genes for the unfolded protein response (UPR) during endoplasmic reticulum (ER) stress. Although it is a transcription factor, this protein is unusual in that it is synthesized as a transmembrane protein that is embedded in the ER. It functions as an ER stress sensor/transducer, and following ER stress-induced proteolysis, it functions as a nuclear transcription factor via a cis-acting ER stress response element (ERSE) that is present in the promoters of genes encoding ER chaperones. This protein has been identified as a survival factor for quiescent but not proliferative squamous carcinoma cells. There have been conflicting reports about the association of polymorphisms in this gene with diabetes in different populations, but ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ATF6",
+          "aliases": "ACHM7, ATF6A, ATP6alpha",
+          "gene_description": "activating transcription factor 6"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::8136174",
+          "title": "Bioinformatics analysis and identification of genes and molecular pathways in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8136174/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a common disease of the hip with a higher incidence in elderly patients, and the most common clinical symptom is severe pain [1]. There are about 150,000\u2013200,000 new cases in China each year [2], and about 20,000 new cases in the USA each year [3]. The pathological features of steroid-induced ONFH include decreased blood supply to the hip joint, the collapse of the femoral head, and accumulation of microfractures without continuous remodeling [4, 5]. Besides, ONFH can cause rapid destruction and dysfunction of the hip joint, and approximately 65\u201370% of patients with advanced ONFH require total hip replacement [6]. The pathogenesis and molecular mechanism of steroid-induced ONFH remain unclear, and there are few effective prevention and early treatment methods.\nStudies have indicated that successful results can be obtained when joint-preserving surgery is used in the pre-collapse stage of steroid-induced ONFH [7]. After the femoral head necrosis collapses, cartilage wrinkles and the hip joint space gradually narrows. Meanwhile, the failure rate of joint-preserving treatment is high. Therefore, searching for new biomarkers in the blood is of great clinical significance for the diagnosis of steroid-induced ONFH, as well as the further early diagnosis and treatment of ONFH. Some genetic factors are considered key factors in the progress of steroid-induced ONFH, such as peroxisome proliferator-activated receptor \u03b3, matrix metallopeptidase 9, and SMAD family member 3 and gremlin 1 [8\u201310]. Currently, microarray analysis using a high-throughput platform is promising and efficient for exploring the molecular mechanisms of diseases and identifying useful biomarkers for diagnosis and prognosis of diseases [11, 12]. However, there is little comprehensive research on steroid-induced ONFH with high-throughput platforms. During the development of steroid-induced ONFH, the cartilage on the surface of the femoral head and the labrum of the acetabulum are significantly damaged. Degeneration of cartilage on the surface of the femoral head and tearing of the labrum enhance the instability of the hip joint and accelerate the development of steroid-induced ONFH [13]. Prevention and early treatment of hip cartilage damage may slow the development of steroid-induced ONFH and relieve hip dysfunction. However, there are few studies on the molecular mechanism of steroid-induced ONFH hip cartilage damage. Therefore, it is hypothesized in this paper that differentially expressed genes co-exist in the peripheral serum and cartilage of ONFH patients; this can be used for early diagnosis and observation of disease progression.\nIn this study, hub genes are screened out from the differences expressed genes (degrees) using bioinformatics methods based on the National Center for Biotechnology Information (NCBI http://www.ncbi.nlm.nih.gov/geography/) from the Gene Expression Dataset GSE123568 (peripheral serum) and GSE74089 (hip articular cartilage) Comprehensive (GEO) database. Quantitative real-time PCR (qRT-PCR) was conducted to validate the gene expression profiling results based on an independent sera sample of eight patients with ONFH and twelve healthy controls. The present study aimed to identify potentially important genes and signaling pathways involved in ONFH and investigate their molecular mechanisms.\nMaterials and methods\nMicroarray data source\nThe gene chip data related to femoral head necrosis (GSE123568, GSE74089) is downloaded in the GEO (gene expression omnibus) database (https://www.ncbi.nlm.nih.gov/geo/). GSE123568 chip data contains 10 normal patient serum samples and 30\u2009steroid-induced femoral head necrosis serum samples. Besides, the GSE74089 chip data is composed of hip cartilage specimens from 4 NFH patients and 4 healthy controls. All the above data sets are based on GPL15207 and GPL13497 platform GEO database downloaded, and the information of the above two data sets are detailed in Table 1.\nTable 1Two datasets used for gene expression profiles analysis in NFHGEO IDAuthorPlatformSamplesTypeYearOmicsGSE123568Zhang YGPL15207NFH to normal = 30:10Peripheral serum2019mRNAGSE74089Ruiyu LGPL13497NFH to normal = 4:4Hip articular cartilage2016mRNA\nTable 1\nTwo datasets used for gene expression profiles analysis in NFH\nDifferentially expressed genes analysis",
+          "cos_sim_score": 0.6721029877662659,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8136174",
+          "title": "Bioinformatics analysis and identification of genes and molecular pathways in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8136174/",
+          "text": "Table 2\nThe information of the primers\u2019 sequencing\nStatistical analysis\nGraphPad 8.0 was used to perform statistical analysis. The results are presented as mean \u00b1 standard deviation (mean \u00b1 SD). Data conforming to normal distribution were compared using Student t test, while those with non-normally distributed were tested using Mann-Whitney U test. P <\u20090.05 indicates statistical significance. All experiments were performed in triplicate.\nResults\nIdentification of DEGs\nThis study screened out two chip data sets (GSE123568 and GSE74089). Among them, 30\u2009serum samples of patients with steroid hormone-induced osteonecrosis of the femoral head in the chip data set GSE123568 (including 13 males and 17 females, aged 23.07 \u00b1 3.01\u2009years, ARCO stage I-II patients accounted for 10 patients, ARCO III patients accounted for 10 cases, ARCO IV patients accounted for 10 cases) and 10 normal serum samples (including 7 males and 3 females, aged 25.02 \u00b1 2.87\u2009years). Besides, there are 4 hip cartilage samples from patients with femoral head necrosis (including 3 males and 1 female) and 4 healthy adult hip cartilage specimens (including 3 males and 1 female) in the chip dataset GSE74089. The baseline characteristics of the patients are provided in Table 3. According to the adjust P value <\u20090.01, the expression change range is greater than or equal to twice (|log2 FC|\u22651.0) as the criteria for screening differential genes. A total of 750 differentially expressed genes were screened in the GSE123568 data set, including 454 upregulated genes and 296 downregulated genes. A total of 5211 differentially expressed genes were screened in the GSE74089 data set, including 1594 upregulated genes and 3617 downregulated genes. The DEGs in GSE123568 and GSE74089 were selected based on the adjust P value to screen the top 25 most significant upregulated and downregulated differentially expressed genes, so as to draw heat maps (Fig. 1). The -log10 conversion is performed for the adjust P value in the data processed by GEO2R. Then, according to log2 FC, -log10 (adjust P value) was divided into groups of upregulated genome, downregulated genome, and non-statistically different genome. The processed data was imported into GraphPad Prism 7 to draw a volcano map (Fig. 2). Furthermore, a total of 118 intersecting DEGs were obtained between the peripheral blood and cartilage samples, including 40 upregulated genes and 78 downregulated genes (Fig. 3).\nTable 3Characteristics of study subjectsGSE12356Number of subjectsAge (years, mean \u00b1 SD)SexARCO(I\u2013II/III/IV/)MaleFemaleControl1025.02 \u00b1 2.8773Disease3023.07 \u00b1 3.01131710/10/10GSE74089Control446.75 \u00b1 4.0231\u2212Disease445.25 \u00b1 4.0231\u2212Fig. 1Heat map of top 50 DEGs in ONFH. a Heat map of top 50 DEGs in GSE123568. b Heat map of top 50 DEGs in GSE74089 (tissue samples are presented as columns; individual genes are presented as rows. Red represents upregulated genes; green indicates downregulated genes in patients with ONFH. The patients in the top rows in pink indicate the control columns; the patients in the top rows in blue indicate columns were patients with NFH. DEGs, differentially expressed genes; NFH, necrosis of the femoral head)Fig. 2The volcano plot was constructed using fold-change (Log2FC) values and adjust P values. a The volcano plot of a total of 750 DEGs in GSE123568. b The volcano plot of total 5211 DEGs in GSE74089 (the vertical blue lines correspond to upregulated and downregulated Log2FC; the horizontal Orange line represents an adjust P value of 0.01. The red point represents the differentially upregulated genes with statistical significance; the green point suggests the differentially downregulated genes with statistical significance)Fig. 3Venn diagrams showing the overlap of DEGs between peripheral serum samples and hip articular cartilage samples. a Upregulated DEGs. b Downregulated DEGs (Venn diagram was drawn using the online tool (https://bioinfogp.cnb.csic.es/tools/venny/index.html). Numbers represented the number of DEGs. The percentage was represented by the ratio of current DEGs to the total)\nTable 3\nCharacteristics of study subjects",
+          "cos_sim_score": 0.6145077347755432,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12902040",
+          "title": "Advances in the mechanism for steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12902040/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a progressive disease affecting primarily individuals aged 30\u201350, characterized by femoral head ischemia and osteocyte death.1\u20133 ONFH cases have generally increased over the past decade worldwide.4,5 Patients with ONFH often report pain localized to the hip, buttock, or groin, accompanied by restricted hip joint motion, with nearly 80% of patients eventually experiencing femoral head collapse2,6\u20139 Diagnostic imaging plays a crucial role in identifying the disease, with the \u201cdouble-line sign\u201d on magnetic resonance imaging (MRI) and the \u201ccrescent sign\u201d on X-rays serving as characteristic features of ONFH.2,9\u201311 The main types of ONFH are categorized into generally traumatic and non-traumatic ONFH (caused by glucocorticoid use, alcohol abuse, or idiopathic).\nGlucocorticoids (GCs) use is the most common non-traumatic cause of ONFH, which ranges about 40%\u201360% among all non-traumatic ONFH patients.4,5 A novel epidemiology showed a rise to 75% of non-traumatic ONFH related to GCs treatment.4 GCs exert their effects by binding to the glucocorticoid receptor (GR), that expressed in nearly all cells, regulating cell growth, differentiation, and apoptosis.9,12 In its inactive state, GR resides in the cytoplasm, associated with a complex of proteins such as heat shock proteins (HSP90, HSP70) and immunophilins (e.g., FKBP51, FKBP52). Upon GCs binding, the complex disassembles, activating GR, which then translocates to the nucleus, where it interacts with target genes, initiating transcriptional responses that mediate GCs' effects.13\u201315 GC-induced ONFH has been proven to vary from other types of ONFH in many aspects. Patients with SONFH tend to exhibit more rapid disease progression, higher rates of bilateral involvement, and earlier femoral head collapse compared to those with alcohol-induced or idiopathic ONFH.16\u201318 Notably, while both SONFH and alcohol-induced ONFH are characterized by lipid dysregulation, SONFH is marked by GC-induced bone marrow adipogenesis, whereas the alcohol-induced subtype is more closely related to hepatic lipid metabolism and dysfunction.17,19\nAdvances in medical imaging and bioinformatics have enhanced our understanding of SONFH, offering novel insights into its pathophysiology.20\u201322 However, a comprehensive review of the underlying causes of SONFH has yet to be concluded. In this review, we highlight recent findings on the mechanisms of SONFH from multiple perspectives. General pathological changes, such as impaired blood supply and biomechanical alterations, are key contributors to the disease process. Abnormal neuronal transmission has also been identified as a factor for SONFH pathology. At the cellular level, irregular cell differentiation and increased cell death play critical roles in the progression of SONFH. On a molecular scale, altered activity of crucial factors and related signaling cascades, as well as disordered non-coding RNAs (ncRNAs), have been implicated in the pathogenesis of the disease. Finally, the role of genetic variations in SONFH susceptibility is increasingly being recognized (Fig. 1). By summarizing these advancements, we aim to provide a comprehensive understanding of SONFH mechanisms, which may inspire further research and develop novel treatment strategies.Fig. 1Potential mechanism of steroid-induced osteonecrosis of the femoral head\nFig. 1\nPotential mechanism of steroid-induced osteonecrosis of the femoral head\nGeneral pathological alternation",
+          "cos_sim_score": 0.5830315351486206,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11559024",
+          "title": "Pathological mechanisms and related markers of steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11559024/",
+          "text": "Mesenchymal stem cell and exosomes\nMSCs, which are located in the mesoderm and ectoderm during the early phase of cell differentiation, are core members of the stem cell family [125,126]. MSCs can self-renew and differentiate into various cell types, including BMSCs, adipose-derived mesenchymal stem cells (AMSCs), multilineage-differentiating stress-enduring (Muse) cells and so on [23,127,128].\nNotably, previous studies have indicated that SONFH is coupled with MSCs [126]. It has been well established that Steroids exert an important regulatory role during the differentiation and proliferation of MSCs, resulting in osteonecrosis under certain conditions [129,130]. The microenvironment of ischemia and hypoxia in the area of steroid-induced osteonecrosis may lead to reduced number and weakened activity of MSCs in the proximal femur, which in turn leads to decreased osteogenic capacity, failed restoration of the necrotic bone, and collapse of the femoral head [131\u2013133]. Taking BMSCs as an example, the imbalance between osteogenic and adipogenic differentiation is closely related to SONFH [134]. Steroids stimulate the expression of PPAR\u03b3 in BMSCs of both humans and animals, and its elevated expression is associated with the occurrence of SONFH [126,135]. Overexpression of PPAR\u03b3 increased adipogenic differentiation and decreased osteogenic differentiation [136]. In addition, osteogenic differentiation of BMSCs can be promoted by Runx2 and collagen type I (Col I) [126].\nHowever, there are a number of potential limitations to the clinical applications of MSCs, such as chromosomal variation and immunological rejection, etc [137\u2013139]. Hence, it is urgent to explore a novel strategy that exerts the therapeutic effects of MSCs and avoids the risk of using them directly at the same time. Recently, exosomes (Exos) have received increasing attention for their use in a variety of diseases. Exos, which originate from multivesicular bodies, are 40-150\u2009nm-sized nanoparticles and have important paracrine functions in intercellular communication via proteins, genes, and small noncoding RNAs [134,137,140]. It has been documented that Exos exhibit similar characteristics and functional properties to the cells from which they are derived. In addition, no obvious adverse reactions, including vascular obstructive risks, immunogenicity, and tumorigenicity, have been reported during the course of Exos treatment [137,141\u2013143].\nFor instance, considering the self-renewal ability and multi-differential potentialities of synovial-derived mesenchymal stem cells (SMSCs), exosomes released from SMSC-Exos are perceived to exert protective effects against SONFH. SMSC-Exos can markedly decrease trabecular bone loss, BM necrosis, and steroid-induced fat accumulation. In contrast, SMSC-Exos can be internalized into BMSCs, enhance the proliferation of BMSCs, and resist serum deprivation-induced apoptosis. These results suggest that SMSC-Exos may facilitate tissue regeneration and prevent the initiation and progression of SONFH by enhancing the proliferation and anti-apoptotic responses of BM cells [137]. Additionally, Zhang et\u00a0al. showed that embryonic MSC-Exos can promote cartilage repair and osteochondral regeneration [144]. BMSC-Exos are also known as a kind of crucial medium for cartilage repair for the reason that they can inhibit the inflammatory response and promote cartilage regeneration [145].\nCurrently, increasing attention is being paid to the release of Exos by MSCs. Although it is difficult to directly detect MSCs in the serum, the detection of Exos is feasible. There is no doubt that Exos can be considered as viable biomarkers to be monitored in the serum of patients with SONFH, and the detection of Exos in different kinds of MSCs will be the focus of future studies.\nProteomics",
+          "cos_sim_score": 0.5697267055511475,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "1. Introduction\nOsteonecrosis of the femoral head (ONFH) is a common disease mainly characterized by apoptosis of bone cells that leads to collapse of the femoral head and cartilage damage. Notably, the round surface of the head and acetabulum joint flattens and eventually leads to secondary osteoarthritis.[1] Studies have shown that the disease is mainly prevalent in patients with long-term use of hormonal drugs, long-term alcohol abuse, and hip trauma.[2] Steroid-induced ONFH (SONFH) is a common type of femoral head necrosis. SONFH patients are frequently misdiagnosed as hip synovitis or osteoarthritis owing to lack of obvious signs coupled with imaging abnormalities during early stages of disease development.[3] Although transcriptomic analyses have contributed to development of clinical treatment strategies for SONFH, the precise underlying mechanism of SONFH remains unclear.[4,5]\nBioinformatics analyses have significantly improved the search and identification of key genes regulating the occurrence of various diseases, thereby generating new insights to guide development of treatment strategies. SONFH has a complex pathophysiological mechanism. Genotyping of SONFH in adults revealed that gene coding protein polymorphism was associated with SONFH.[6] It has been hypothesized that progression of SONFH to the end stage in adult patients may be due to differential expression of protein-coding genes involved in thrombosis, angiogenesis inhibition, programmed cell death, lipid biosynthesis, and bone homeostasis. In the present study, we aimed to identify differentially expressed genes in peripheral blood of patients with early SONFH and further explored the pathogenesis of this disease using transcriptome data from the Gene Expression Omnibus database.\n2. Materials and Methods\n2.1. Data acquisition\nThe Gene Expression Omnibus database not only stores many gene chips and sequence data but also provides tools for users to query and download gene expression profiles. In the present study, we searched for relevant datasets using \u201csteroid-induced osteonecrosis of femoral head\u201d as the keyword, with focus on SONFH-related datasets. Consequently, we downloaded transcriptome data (GSE123568) belonging to 30 SONFH and 10 non-SONFH (following steroid administration) subjects.\n2.2. Sample correlation analysis\nOverall expression profiles of the transcriptome data were clustered using ClusterProfiler packages implemented in R software (version 4.0.2). Only dimension features containing the vast majority of variances were retained, with those containing zero variances discarded based on a principal component analysis (PCA) plot. Using weighted gene correlation network analysis (WGCNA) package in R language to perform WGCNA on data. WGCNA adds phenotypic weight parameters in the process of constructing gene co-expression network and optimizes classification using scale-free clustering and dynamic tree cut algorithm to achieve accurate and efficient data analysis.\n2.3. Functional annotation of DEGs\nFunctional annotation of key genes was performed using the ClusterProfiler package in R and followed by comprehensive functional correlation of candidate genes. Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analyses were performed to evaluate related functional categories. Significant differentially expressed genes (DEGs) were filtered, and bar charts and bubble charts were drawn according to their functions and pathways, respectively.\n2.4. Construction of protein\u2013protein interaction networks\nProtein\u2013protein interaction (PPI) networks of the DEGs were generated using the STRING online tool and Cytoscape software. Summarily, DEGs were entered into the STRING online tool to screen for interacting proteins with a combined score of\u2005>\u20050.9. The obtained PPI results were imported into Cytoscape software, then prominent modules in PPI were screened to construct the network through molecular complex detection. NetworkX package was then used to visualize the network in Python, with node sizes taken to be proportional to node degree.\n2.5. Quantitative real-time polymerase chain reaction",
+          "cos_sim_score": 0.5610679388046265,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": [
+        {
+          "id": "geo::306037560",
+          "title": "MEF cells, siBPGM control 5",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6037560",
+          "text": "Title: MEF cells, siBPGM control 5\nAccession: GSM6037560\nOrganism: Mus musculus\nSamples: IntegerElement(0, attributes={})\nSummary: MEF",
+          "cos_sim_score": 0.17857232689857483,
+          "source_type": "geo",
+          "accession": "GSM6037560"
+        },
+        {
+          "id": "geo::306037557",
+          "title": "MEF cells, siBPGM control 2",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6037557",
+          "text": "Title: MEF cells, siBPGM control 2\nAccession: GSM6037557\nOrganism: Mus musculus\nSamples: IntegerElement(0, attributes={})\nSummary: MEF",
+          "cos_sim_score": 0.17820864915847778,
+          "source_type": "geo",
+          "accession": "GSM6037557"
+        },
+        {
+          "id": "geo::306037559",
+          "title": "MEF cells, siBPGM control 4",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6037559",
+          "text": "Title: MEF cells, siBPGM control 4\nAccession: GSM6037559\nOrganism: Mus musculus\nSamples: IntegerElement(0, attributes={})\nSummary: MEF",
+          "cos_sim_score": 0.17728474736213684,
+          "source_type": "geo",
+          "accession": "GSM6037559"
+        },
+        {
+          "id": "geo::306037558",
+          "title": "MEF cells, siBPGM control 3",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6037558",
+          "text": "Title: MEF cells, siBPGM control 3\nAccession: GSM6037558\nOrganism: Mus musculus\nSamples: IntegerElement(0, attributes={})\nSummary: MEF",
+          "cos_sim_score": 0.17456063628196716,
+          "source_type": "geo",
+          "accession": "GSM6037558"
+        },
+        {
+          "id": "geo::200200544",
+          "title": "A renal function for 2,3-bisphosphoglycerate mutase (BPGM)",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE200544",
+          "text": "Title: A renal function for 2,3-bisphosphoglycerate mutase (BPGM)\nAccession: GSE200544\nStudy type: Expression profiling by high throughput sequencing\nOrganism: Mus musculus\nSamples: IntegerElement(20, attributes={})\nSummary: The enzyme 2,3 bisphosphoglycerate mutase (BPGM) catalyzes the production of 2,3-bisphosphoglycerate (2,3-BPG). The main role of 2,3-BPG is to shift the equilibrium of hemoglobin toward the deoxy-state, accounting for the notion that 2,3-BPG production would appear to be solely useful in cells which contain hemoglobin. 2,3-BPG level determines the baseline O2-Hb affinity at rest, which shows a broad diversity among human population. The kidney is the site of oxygen sensing and erythropoietin synthesis through the action of the hypoxia-inducible factor (HIF) transcription factors, especially HI...",
+          "cos_sim_score": 0.16775204241275787,
+          "source_type": "geo",
+          "accession": "GSE200544"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::35154510",
+          "title": "Screening of Potential Biomarkers in the Peripheral Serum for Steroid-Induced Osteonecrosis of the Femoral Head Based on WGCNA and Machine Learning Algorithms.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35154510/",
+          "year": "2022",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SONFH) has produced a substantial burden of medical and social experience. However, the current diagnosis is still limited. Thus, this study is aimed at identifying potential biomarkers in the peripheral serum of patients with SONFH. The expression profile data of SONFH (number: GSE123568) was acquired from the Gene Expression Omnibus (GEO) database. Differentially expressed genes (DEGs) in SONFH were identified and used for weighted gene coexpression network analysis (WGCNA). Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analyses were performed to investigate the biological functions. The protein-protein interaction (PPI) network and machine learning algorithms were employed to screen for potential biomarkers. Gene set enrichment analysis (GSEA), transcription factor (TF) enrichment analysis, and competing endogenous RNA (ceRNA) network were used to determine the biological functions and regulatory mechanisms of the potential biomarkers. A total of 562 DEGs, including 318 upregulated and 244 downregulated genes, were identified between SONFH and control samples, and 94 target genes were screened based on WGCNA. Moreover, biological function analysis suggested that target genes were mainly involved in erythrocyte differentiation, homeostasis and development, and myeloid cell homeostasis and development. Furthermore, GYPA, TMCC2, and BPGM were identified as potential biomarkers in the peripheral serum of patients with SONFH based on machine learning algorithms and showed good diagnostic values. GSEA revealed that GYPA, TMCC2, and BPGM were mainly involved in immune-related biological processes (BPs) and signaling pathways. Finally, we found that GYPA might be regulated by hsa-miR-3137 and that BPGM might be regulated by hsa-miR-340-3p. GYPA, TMCC2, and BPGM are potential biomarkers in the peripheral serum of patients with SONFH and might affect SONFH by regulating erythrocytes and immunity.",
+          "cos_sim_score": 0.483070433139801,
+          "source_type": "pubmed"
+        }
+      ]
+    }
+  ]
+}
