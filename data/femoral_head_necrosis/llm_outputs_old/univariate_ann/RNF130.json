@@ -1,0 +1,158 @@
+{
+  "rf_rank": 39,
+  "probe_id": "11715617_a_at",
+  "gene_symbol": "RNF130",
+  "score": 0.56,
+  "rf_n_nodes": 1,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 1.0181,
+  "log_fc": 1.0181,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11715617_a_at",
+  "max_score": 0.56,
+  "mean_abs_fold_change": 1.0181,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T20:23:18",
+  "interpretation": "RNF130 encodes an E3 ubiquitin-protein ligase, which is involved in the ubiquitination process that targets proteins for degradation. This function is crucial in regulating various cellular processes, including apoptosis and immune responses. Although there is no direct evidence linking RNF130 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in bone remodeling diseases and its association with apoptosis suggest a potential indirect connection to the mechanisms underlying SONFH. The retrieved evidence primarily supports its involvement in bone remodeling and related diseases, but lacks specific ties to SONFH, leading to a lower confidence in its relevance as a biomarker. Therefore, while RNF130 may play a role in the broader context of bone health, its potential as a specific early-detection biomarker for SONFH is weak and speculative.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "RNF130 may be involved in bone remodeling processes, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "RNF130 (Q86XS8). https://www.uniprot.org/uniprotkb/Q86XS8",
+    "RNF130 (Q86XS8-2). https://www.uniprot.org/uniprotkb/Q86XS8-2",
+    "RNF130 \u2014 RNF130. https://platform.opentargets.org/target/ENSG00000113269",
+    "RNF130 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000113269/associations",
+    "RNF130 \u2194 osteoarthritis, hip. https://platform.opentargets.org/target/ENSG00000113269/associations",
+    "RNF130 \u2194 bone remodeling disease. https://platform.opentargets.org/target/ENSG00000113269/associations",
+    "RNF130 \u2194 insomnia. https://platform.opentargets.org/target/ENSG00000113269/associations",
+    "RNF128. https://en.wikipedia.org/wiki/RNF128",
+    "RING finger domain. https://en.wikipedia.org/wiki/RING_finger_domain"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5851,
+    "completion_tokens": 240,
+    "total_tokens": 6091,
+    "estimated_cost_usd": 0.001022
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q86XS8",
+          "title": "RNF130 (Q86XS8)",
+          "url": "https://www.uniprot.org/uniprotkb/Q86XS8",
+          "text": "Protein: E3 ubiquitin-protein ligase RNF130\nFunction: May have a role during the programmed cell death of hematopoietic cells (By similarity). Acts as an E3 ubiquitin-protein ligase",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q86XS8-2",
+          "title": "RNF130 (Q86XS8-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q86XS8-2",
+          "text": "Protein: Isoform 2 of E3 ubiquitin-protein ligase RNF130",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000113269::function",
+          "title": "RNF130 \u2014 RNF130",
+          "url": "https://platform.opentargets.org/target/ENSG00000113269",
+          "text": "Function: May have a role during the programmed cell death of hematopoietic cells (By similarity). Acts as an E3 ubiquitin-protein ligase. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000113269::EFO_0005772",
+          "title": "RNF130 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000113269/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.366",
+          "cos_sim_score": 0.3663277776834114,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000113269::EFO_1000786",
+          "title": "RNF130 \u2194 osteoarthritis, hip",
+          "url": "https://platform.opentargets.org/target/ENSG00000113269/associations",
+          "text": "Disease: osteoarthritis, hip\nDescription: Noninflammatory degenerative disease of the hip joint which usually appears in late middle or old age. It is characterized by growth or maturational disturbances in the femoral neck and head, as well as acetabular dysplasia. A dominant symptom is pain on weight-bearing or motion.\nAssociation score: 0.284",
+          "cos_sim_score": 0.28408885428711256,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000113269::MONDO_0000833",
+          "title": "RNF130 \u2194 bone remodeling disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000113269/associations",
+          "text": "Disease: bone remodeling disease\nDescription: A bone disease that results in formation or resorption abnormalities located in bone.\nAssociation score: 0.254",
+          "cos_sim_score": 0.25376616154881565,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000113269::EFO_0004698",
+          "title": "RNF130 \u2194 insomnia",
+          "url": "https://platform.opentargets.org/target/ENSG00000113269/associations",
+          "text": "Disease: insomnia\nDescription: Disorders characterized by impairment of the ability to initiate or maintain sleep. This may occur as a primary disorder or in association with another medical or psychiatric condition\nAssociation score: 0.253",
+          "cos_sim_score": 0.2531384103701368,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::RNF128",
+          "title": "RNF128",
+          "url": "https://en.wikipedia.org/wiki/RNF128",
+          "text": "Transcription Binding sites\nThere are many transcription factors that have a high affinity for binding RNF128's 5' UTR. Some important ones to mention are NFAT, a nuclear factor of activated T cells, EGRF, a Wilms tumor suppressor, and HNF6, a liver enriched cut-homeodomain transcription factor.\n\nExpression\nRNF128's expression in human tissues is very specific to the gut. There is very high expression in the liver and fetal liver especially. There is also high expression in the kidneys, adrenal glands, thyroid, small intestines and stomach.\n\nTranscript Level Regulation\nThere are over 10 stem loops in the 5' untranslated region on RNF128. There are also several areas of the 5' untranslated region that are highly conserved.\n\nProtein Level Regulation\nThe RNF128 protein contains a signal peptide. This peptide is cleaved at the RGA site 37 amino acids into the protein. Myristoylation sites are predicted when the first 5 amino acids are removed from the sequence. RNF128 also has three palmitoylation sites. Myristoylation and palmitoylation adds a myristoyl and palmitoyl group to the protein which contrasts with N glycosylation because you are adding a hydrophobic tail. There are 6 predicted O glycosylation sites within this protein. Out of the 6, only one of these O glycosylation sites are likely to be present as RNF128 is secreted. At O glycosylation sites, serines and threonines can be both phosphorylated and glycosylated and under different conditions, can be turned on or off. There are many phosphorylation sites for this protein, most of these being serines and a few threonine and tyrosine. Phosphorylation is on the inside of the cell and can often turn certain signals on or off and can even lead to conformational changes in proteins. There are three significant sites for N glycosylation in this protein. This could possibly protect the protein because of the large sugar complex and attract lectins that bind other proteins. Sugars from this N glycosylation also can change the shape of the protein which also helps it bind to other factors. The RNF128 protein has  three different sumoylation sites. These sites are similar to ubiquination in that they help target proteins for degradation under the right conditions. This helps the protein get rid of unwanted or needed regions. Research found that one third of the time this protein is found in the endoplasmic reticulum, one third in the plasma membrane, and the other third in the golgi. This protein is considered to be localized in the endocytic pathway.\n\nHomology & Evolution\nParalogs\nBelow is a table of RNF128 paralogs. Although there are many other paralogs than just these nine, these paralogs are the most closely related to RNF128. \n\nTable 1: This table gives a list of nine RNF128 paralogs. Percent identity and percent similarity were found using EMBOSS Needle. The relatedness column gives insight into how closely related, moderately related, or distantly related that paralog is to RNF128.\n\nOrthologs\nRNF128 has 234 orthologs and is conserved in animals such as a dog, cow, mouse, rat, chicken, and a zebrafish. The most closely related orthologs reside in mammals with similarities between 75 and 100 percent. Moderately related orthologs resided in reptiles and birds with similarities between 67 and 75 percent. Then finally the most distantly related orthologs are amphibians and bony fish with similarity values around 60 percent. Many multiple sequence alignments were run using EMBOSS Global to look at the conservation of amino acids over time. The multiple sequence alignments compared distantly related and closely related homologs of RNF128. Many regions of RNF128 are conserved in the all species from mammals to bony fish, including the protease associated domain, transmembrane region, and the ring-H2 region. The signal peptide is not conserved in any of the more distant homologs, but is conserved in the strict orthologs. The ring-H2 region is the most highly conserved region in these alignments and is conserved in mammals, birds, amphibians, reptiles, and bony fish. Table 2 shows the phylogenetic tree of RNF128's orthologs.",
+          "cos_sim_score": 0.3795573115348816,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::RNF128",
+          "title": "RNF128",
+          "url": "https://en.wikipedia.org/wiki/RNF128",
+          "text": "Evolution\nRNF128 goes back approximately 433 m.y. The oldest life forms I found the gene to appear in are bony fish like zebrafish. This gene was not found in any invertebrates, fungus, bacteria, etc. The size of the gene family is 2. There are two isoforms produced by alternative splicing for RNF128 and I only found one splice isoform for the most distantly related organism. Figure 1 below shows the divergence of RNF128 over time and how slowly or quickly it diverged between organisms. When comparing my gene to cytochrome c and fibrinogen alpha, it can be determined that RNF128 diverges moderately slow. I used the slope of each line to find that a 1% change takes 27.7 million years for cytochrome c, 6.9 million years for RNF128, and 2.7 million years for fibrinogen alpha.\n\nInteractions\nRNF128 has been shown to interact with CD154 and OTUB1. RNF128 interacts with many other different proteins including CD81, TP53, USP8, USP7, TBK1, and CD151. The NSP7+NSP8 hexadecamer super complex is a SARS-Coronavirus RNA polymerase that interacts with RNF128. The NSP7+NSP8 super complex is heavily involved viral replication.\n\nClinical significance\nIn multiple studies, RNF128 is associated with p53, a tumor suppressing gene. RNF128 is seen to act negatively on P53. Downregulation of RNF128 in certain studies leads to metastasis and a high mitotic rate in bladder and urothelial tissue. Overexpression of RNF128 can inhibit p53-induced apoptosis by degradation of p53 and thus can be linked to a regulatory mechanism for the control of p53 under stressful circumstances. RNF128 plays a role in CD4 and CD83 expression. It is able to down regulate the expression of CD83 on CD4 T cells.  RNF128 expression also limits IL2 and IL4 production by T lymphocytes.\n\nReferences\nFurther reading\nExternal links\nOverview of all the structural information available in the PDB for UniProt: Q8TEB7 (E3 ubiquitin-protein ligase RNF128) at the PDBe-KB.",
+          "cos_sim_score": 0.3422646224498749,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::RING finger domain",
+          "title": "RING finger domain",
+          "url": "https://en.wikipedia.org/wiki/RING_finger_domain",
+          "text": "RNFT1, SH3MD4, SH3RF1, SH3RF2, SYVN1, TIF1, TMEM118, TOPORS, TRAF2, TRAF3, TRAF4, TRAF5, TRAF6, TRAF7, TRAIP, TRIM2, TRIM3, TRIM4, TRIM5, TRIM6, TRIM7, TRIM8, TRIM9, TRIM10, TRIM11, TRIM13, TRIM15, TRIM17, TRIM21, TRIM22, TRIM23, TRIM24, TRIM25, TRIM26, TRIM27, TRIM28, TRIM31, TRIM32, TRIM33, TRIM34, TRIM35, TRIM36, TRIM38, TRIM39, TRIM40, TRIM41, TRIM42, TRIM43, TRIM45, TRIM46, TRIM47, TRIM48, TRIM49, TRIM50, TRIM52, TRIM54, TRIM55, TRIM56, TRIM58, TRIM59, TRIM60, TRIM61, TRIM62, TRIM63, TRIM65, TRIM67, TRIM68, TRIM69, TRIM71, TRIM72, TRIM73, TRIM74, TRIML1, TTC3, UHRF1, UHRF2, VPS11, VPS8, ZNF179, ZNF294, ZNF313, ZNF364, ZNF451, ZNF650, ZNFB7, ZNRF1, ZNRF2, ZNRF3, ZNRF4, and ZSWIM2.",
+          "cos_sim_score": 0.29838594794273376,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::RING finger domain",
+          "title": "RING finger domain",
+          "url": "https://en.wikipedia.org/wiki/RING_finger_domain",
+          "text": "In molecular biology, a RING (short for Really Interesting New Gene) finger domain is a protein structural domain of zinc finger type which contains a C3HC4 amino acid motif which binds two zinc cations (seven cysteines and one histidine arranged non-consecutively).  This protein domain contains 40 to 60 amino acids. Many proteins containing a RING finger play a key role in the ubiquitination pathway. Conversely, proteins with RING finger domains are the largest type of ubiquitin ligases in the human genome.\n\nZinc fingers\nZinc finger (Znf) domains are relatively small protein motifs that bind one or more zinc atoms, and which usually contain multiple finger-like protrusions that make tandem contacts with their target molecule. They bind DNA, RNA, protein and/or lipid substrates. Their binding properties depend on the amino acid sequence of the finger domains and of the linker between fingers, as well as on the higher-order structures and the number of fingers. Znf domains are often found in clusters, where fingers can have different binding specificities. There are many superfamilies of Znf motifs, varying in both sequence and structure.\nThey display considerable versatility in binding modes, even between members of the same class (e.g. some bind DNA, others protein), suggesting that Znf motifs are stable scaffolds that have evolved specialised functions. For example, Znf-containing proteins function in gene transcription, translation, mRNA trafficking, cytoskeleton organisation, epithelial development, cell adhesion, protein folding, chromatin remodelling and zinc sensing. Zinc-binding motifs are stable structures, and they rarely undergo conformational changes upon binding their target.\nSome Zn finger domains have diverged such that they still maintain their core structure, but have lost their ability to bind zinc, using other means such as salt bridges or binding to other metals to stabilise the finger-like folds.\n\nFunction\nMany RING finger domains simultaneously bind ubiquitination enzymes and their substrates and hence function as ligases. Ubiquitination in turn targets the substrate protein for degradation.\n\nMeiotic recombination\nDuring meiosis, crossing over between homologous chromosomes (homologs) promotes accurate chromosome segregation.  In mammals, the ring-domain proteins RNF212, HEI10 and RNF212B facilitate crossing over between each pair of homologs during meiosis.  Studies in the mouse showed that these pro-crossover ring-domain proteins have distinct, but interdependent functions, in facilitating the homologous recombination and DNA repair processes that produce crossovers.\n\nStructure\nThe RING finger domain has the consensus sequence C-X2-C-X[9-39]-C-X[1-3]-H-X[2-3]-C-X2-C-X[4-48]-C-X2-C.\nwhere:\n\nC is a conserved cysteine residue involved zinc coordination,\nH is a conserved histidine involved in zinc coordination,\nZn is zinc atom, and\nX is any amino acid residue.\nThe following is a schematic representation of the structure of the RING finger domain:",
+          "cos_sim_score": 0.19881275296211243,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::RNF128",
+          "title": "RNF128",
+          "url": "https://en.wikipedia.org/wiki/RNF128",
+          "text": "E3 ubiquitin-protein ligase RNF128 is an enzyme that in humans is encoded by the RNF128 gene.\nThe protein encoded by this gene is a type I transmembrane protein that localizes to the endocytic pathway. This protein contains a RING zinc-finger motif and has been shown to possess E3 ubiquitin ligase activity. Expression of this gene in retrovirally transduced T cell hybridoma significantly inhibits activation-induced IL2 and IL4 cytokine production. Induced expression of this gene was observed in anergic CD4+ T cells, which suggested a role in the induction of anergic phenotype. Alternatively spliced transcript variants encoding distinct isoforms have been reported. E3 ubiquitin-protein ligase RNF128 is highly expressed in the liver, adrenal glands, and intestines and also has notable expression in the kidneys, stomach, bladder, and thyroid. This protein lies in the endocytic pathway and contains a signal peptide, a RING zinc-finger motif, a protease associated domain, and a transmembrane domain.\n\nGene\nRNF128 goes by other aliases including Gene Related to Anergy in Lymphocytes protein (GRAIL), E3 ubiquitin-protein ligase RNF128, FLJ23516, and RING finger protein 128. The human RNF128 gene is located at Xq22.3 on the plus strand of the X chromosome and contains 8 exons and 7 introns. This gene also has 234 orthologs in a span of organisms and is conserved in animals up to bony fish. Paralogs for this gene include RNF133, RNF150, RNF148, RNF149, RNF130, RNF13, RNF167, RNF215, and ZNRF4.\n\nTranscript (mRNA)\nIsoforms\nRNF128 has two reported alternatively spliced transcript variants encoding isoforms. Isoform 1 contains 428 amino acids and isoform 2 contains 422 amino acids. Isoform 1 has a longer transcript. Isoform 2 has an alternative 5' UTR and a different exon one compared to isoform 1. This results in a much shorter N-terminus in isoform 2. Isoform 1 is used more often when analyzing the protein. Isoform 1 includes a signal peptide, protease associated domain, transmembrane domain, and a RING zinc finger domain. Isoform 2 does not contain the same signal peptide or protease associated domain, but does include a similar transmembrane domain and RING zinc finger domain.\n\nProtein\nGeneral properties\nThe RNF128 gene encodes and type I transmembrane protein. This protein functions as an E3 ubiquitin protein ligase that catalyzes Lys-43 and Lys-63 linked polyubiquitin chains and acts as an inhibitor of cytokine gene transcription when expressed in retrovirally transduced T cells. This protein contains 428 amino acids and has two known isoforms.\n\nStructure\nRNF128 contains a N-terminal PA domain (residues 75\u2013183) and a C-terminal RING finger domain (residues 277\u2013318). A crystallographic structure of the PA domain has been determined.\n\nGene Level Regulation\nPromoter\nThere are two total promoters, but the main promoter (GXP_14319) for RNF128 is 1076 nucleotides long. The transcription start site for RNF128 resides at the very end of the promoter sequence in the last 40 amino acids.\n\nTranscription Binding sites\nThere are many transcription factors that have a high affinity for binding RNF128's 5' UTR. Some important ones to mention are NFAT, a nuclear factor of activated T cells, EGRF, a Wilms tumor suppressor, and HNF6, a liver enriched cut-homeodomain transcription factor.\n\nExpression\nRNF128's expression in human tissues is very specific to the gut. There is very high expression in the liver and fetal liver especially. There is also high expression in the kidneys, adrenal glands, thyroid, small intestines and stomach.\n\nTranscript Level Regulation\nThere are over 10 stem loops in the 5' untranslated region on RNF128. There are also several areas of the 5' untranslated region that are highly conserved.",
+          "cos_sim_score": 0.1777953803539276,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

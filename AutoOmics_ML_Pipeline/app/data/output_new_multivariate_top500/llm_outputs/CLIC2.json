@@ -1,0 +1,168 @@
+{
+  "probe_id": "11734784_a_at",
+  "gene_symbol": "CLIC2",
+  "rf_importance": 0.0068,
+  "selection_freq": 0.6,
+  "abs_fold_change": 1.8547557666666656,
+  "score": 0.3809,
+  "probe_count": 2,
+  "probe_ids": "11734784_a_at | 11734783_at",
+  "max_score": 0.3809,
+  "mean_abs_fold_change": 1.6259,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T00:07:18",
+  "interpretation": "CLIC2 (Chloride intracellular channel protein 2) is involved in various cellular processes, including the regulation of chloride ion channels and modulation of calcium influx through ryanodine receptors. While there is no direct evidence linking CLIC2 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in calcium signaling and cellular stress responses may suggest a potential involvement in the pathophysiology of osteonecrosis, particularly under conditions of steroid exposure. The evidence retrieved primarily discusses its general biological functions and associations with other diseases, but lacks specific connections to SONFH. Therefore, the clinical relevance of CLIC2 as a biomarker for early detection of SONFH remains weak and speculative, relying on inferred biological mechanisms rather than direct evidence.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "CLIC2 may play a role in cellular processes relevant to Steroid-Induced Osteonecrosis of the Femoral Head, but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "CLIC2 (O15247). https://www.uniprot.org/uniprotkb/O15247",
+    "CLIC2 \u2014 CLIC2. https://platform.opentargets.org/target/ENSG00000155962",
+    "CLIC2 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000155962/associations",
+    "CLIC2 \u2194 X-linked intellectual disability-cardiomegaly-congestive heart failure syndrome. https://platform.opentargets.org/target/ENSG00000155962/associations",
+    "CLIC2 \u2194 X-linked intellectual disability - cardiomegaly - congestive heart failure. https://platform.opentargets.org/target/ENSG00000155962/associations",
+    "CLIC2 \u2194 cancer. https://platform.opentargets.org/target/ENSG00000155962/associations",
+    "CLIC2 \u2014 chloride intracellular channel 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "FN1 \u2014 fibronectin 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "RYR2 \u2014 ryanodine receptor 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "NEDD4 \u2014 NEDD4 E3 ubiquitin protein ligase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "NEDD4L \u2014 NEDD4 like E3 ubiquitin protein ligase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4698,
+    "completion_tokens": 288,
+    "total_tokens": 4986,
+    "estimated_cost_usd": 0.000877
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O15247",
+          "title": "CLIC2 (O15247)",
+          "url": "https://www.uniprot.org/uniprotkb/O15247",
+          "text": "Protein: Chloride intracellular channel protein 2\nFunction: In the soluble state, catalyzes glutaredoxin-like thiol disulfide exchange reactions with reduced glutathione as electron donor. Displays weak glutathione peroxidase activity (Probable) (PubMed:25581026). Can insert into membranes and form chloride ion channels. Membrane insertion seems to be redox-regulated and may occur only under oxidizing conditions. Modulates the activity of RYR2 and inhibits calcium influx",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000155962::function",
+          "title": "CLIC2 \u2014 CLIC2",
+          "url": "https://platform.opentargets.org/target/ENSG00000155962",
+          "text": "Function: In the soluble state, catalyzes glutaredoxin-like thiol disulfide exchange reactions with reduced glutathione as electron donor. Displays weak glutathione peroxidase activity (Probable) (PubMed:25581026). Can insert into membranes and form chloride ion channels. Membrane insertion seems to be redox-regulated and may occur only under oxidizing conditions. Modulates the activity of RYR2 and inhibits calcium influx.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000155962::EFO_0005772",
+          "title": "CLIC2 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000155962/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.473",
+          "cos_sim_score": 0.47298055353356755,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000155962::MONDO_0010473",
+          "title": "CLIC2 \u2194 X-linked intellectual disability-cardiomegaly-congestive heart failure syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000155962/associations",
+          "text": "Disease: X-linked intellectual disability-cardiomegaly-congestive heart failure syndrome\nDescription: A syndromic X-linked intellectual disability characterized by intellectual disability, delayed psychomotor development, seizures, large joint contractures, cardiac abnormalities, and abnormal positioning of the thumbs that has material basis in mutation in the CLIC2 gene on chromosome Xq28.\nAssociation score: 0.413",
+          "cos_sim_score": 0.41321850933195164,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000155962::Orphanet_324410",
+          "title": "CLIC2 \u2194 X-linked intellectual disability - cardiomegaly - congestive heart failure",
+          "url": "https://platform.opentargets.org/target/ENSG00000155962/associations",
+          "text": "Disease: X-linked intellectual disability - cardiomegaly - congestive heart failure\nAssociation score: 0.370",
+          "cos_sim_score": 0.3695798546847018,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000155962::MONDO_0004992",
+          "title": "CLIC2 \u2194 cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000155962/associations",
+          "text": "Disease: cancer\nDescription: A tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues. Malignant neoplasms often metastasize to distant anatomic sites and may recur after excision. The most common malignant neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), Hodgkin and non-Hodgkin lymphomas, leukemias, melanomas, and sarcomas.\nAssociation score: 0.085",
+          "cos_sim_score": 0.08534539287028388,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "CLIC2 \u2014 chloride intracellular channel 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CLIC2\nGene name: chloride intracellular channel 2\nAliases / synonyms: CLCNL2, CLIC2b, MRXS32, XAP121\nOrganism: Homo sapiens\nGene summary: This gene encodes a chloride intracellular channel protein. Chloride channels are a diverse group of proteins that regulate fundamental cellular processes including stabilization of cell membrane potential, transepithelial transport, maintenance of intracellular pH, and regulation of cell volume. This protein plays a role in inhibiting the function of ryanodine receptor 2. A mutation in this gene is the cause of an X-linked form of cognitive disability. [provided by RefSeq, Jul 2017]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CLIC2",
+          "aliases": "CLCNL2, CLIC2b, MRXS32, XAP121",
+          "gene_description": "chloride intracellular channel 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "FN1 \u2014 fibronectin 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: FN1\nGene name: fibronectin 1\nAliases / synonyms: CIG, ED-B, FINC, FN, FNZ, GFND, GFND2, LETS, MSF, SMDCF\nOrganism: Homo sapiens\nGene summary: This gene encodes fibronectin, a glycoprotein present in a soluble dimeric form in plasma, and in a dimeric or multimeric form at the cell surface and in extracellular matrix. The encoded preproprotein is proteolytically processed to generate the mature protein. Fibronectin is involved in cell adhesion and migration processes including embryogenesis, wound healing, blood coagulation, host defense, and metastasis. The gene has three regions subject to alternative splicing, with the potential to produce 20 different transcript variants, at least one of which encodes an isoform that undergoes proteolytic processing. The full-length nature of some variants has not been determined. [provided by RefSeq, Jan 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "FN1",
+          "aliases": "CIG, ED-B, FINC, FN, FNZ, GFND, GFND2, LETS, MSF, SMDCF",
+          "gene_description": "fibronectin 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "RYR2 \u2014 ryanodine receptor 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RYR2\nGene name: ryanodine receptor 2\nAliases / synonyms: ARVC2, ARVD2, RYR-2, RyR, VACRDS, VTSIP\nOrganism: Homo sapiens\nGene summary: This gene encodes a ryanodine receptor found in cardiac muscle sarcoplasmic reticulum. The encoded protein is one of the components of a calcium channel, composed of a tetramer of the ryanodine receptor proteins and a tetramer of FK506 binding protein 1B proteins, that supplies calcium to cardiac muscle. Mutations in this gene are associated with stress-induced polymorphic ventricular tachycardia and arrhythmogenic right ventricular dysplasia. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RYR2",
+          "aliases": "ARVC2, ARVD2, RYR-2, RyR, VACRDS, VTSIP",
+          "gene_description": "ryanodine receptor 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "NEDD4 \u2014 NEDD4 E3 ubiquitin protein ligase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: NEDD4\nGene name: NEDD4 E3 ubiquitin protein ligase\nAliases / synonyms: NEDD4-1, RPF1\nOrganism: Homo sapiens\nGene summary: This gene is the founding member of the NEDD4 family of HECT ubiquitin ligases that function in the ubiquitin proteasome system of protein degradation. The encoded protein contains an N-terminal calcium and phospholipid binding C2 domain followed by multiple tryptophan-rich WW domains and, a C-terminal HECT ubiquitin ligase catalytic domain. It plays critical role in the regulation of a number of membrane receptors, endocytic machinery components and the tumor suppressor PTEN. [provided by RefSeq, Jul 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "NEDD4",
+          "aliases": "NEDD4-1, RPF1",
+          "gene_description": "NEDD4 E3 ubiquitin protein ligase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "NEDD4L \u2014 NEDD4 like E3 ubiquitin protein ligase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: NEDD4L\nGene name: NEDD4 like E3 ubiquitin protein ligase\nAliases / synonyms: NEDD4-2, NEDD4.2, PVNH7, RSP5, hNEDD4-2\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the Nedd4 family of HECT domain E3 ubiquitin ligases. HECT domain E3 ubiquitin ligases transfer ubiquitin from E2 ubiquitin-conjugating enzymes to protein substrates, thus targeting specific proteins for lysosomal degradation. The encoded protein mediates the ubiquitination of multiple target substrates and plays a critical role in epithelial sodium transport by regulating the cell surface expression of the epithelial sodium channel, ENaC. Single nucleotide polymorphisms in this gene may be associated with essential hypertension. Alternatively spliced transcript variants encoding multiple isoforms have been observed for this gene. [provided by RefSeq, Mar 2012]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "NEDD4L",
+          "aliases": "NEDD4-2, NEDD4.2, PVNH7, RSP5, hNEDD4-2",
+          "gene_description": "NEDD4 like E3 ubiquitin protein ligase"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

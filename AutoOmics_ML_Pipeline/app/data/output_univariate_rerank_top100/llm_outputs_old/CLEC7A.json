@@ -1,0 +1,162 @@
+{
+  "probe_id": "11752737_a_at",
+  "gene_symbol": "CLEC7A",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0202860206483394,
+  "abs_fold_change": 1.3673,
+  "score": 1.3638,
+  "probe_count": 2,
+  "probe_ids": "11752737_a_at | 11733403_x_at",
+  "max_score": 1.3638,
+  "mean_abs_fold_change": 1.3546,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T02:18:51",
+  "interpretation": "CLEC7A, also known as Dectin-1, is a C-type lectin receptor that plays a crucial role in the immune response by recognizing beta-glucans from fungal cell walls, leading to the activation of inflammatory pathways. This gene is involved in the TLR2-mediated inflammatory response and the activation of NF-kappa-B, which are critical in regulating cytokine production and immune cell activation. Although there is no direct evidence linking CLEC7A to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in inflammation and immune response suggests a potential indirect connection, as inflammation is a known factor in the pathogenesis of osteonecrosis. The evidence regarding CLEC7A's involvement in SONFH is limited, leading to a low confidence in its direct relevance as a biomarker for early detection of this condition. Therefore, while CLEC7A may have some biological relevance, its potential as a clinical biomarker for SONFH is weak and requires further investigation.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "CLEC7A may play a role in the inflammatory processes associated with Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), but direct evidence linking it to this condition is lacking.",
+  "citations": [
+    "CLEC7A (Q9BXN2). https://www.uniprot.org/uniprotkb/Q9BXN2",
+    "CLEC7A (Q9BXN2-6). https://www.uniprot.org/uniprotkb/Q9BXN2-6",
+    "CLEC7A (Q9BXN2-5). https://www.uniprot.org/uniprotkb/Q9BXN2-5",
+    "CLEC7A \u2014 CLEC7A. https://platform.opentargets.org/target/ENSG00000172243",
+    "CLEC7A \u2194 Chronic mucocutaneous candidosis. https://platform.opentargets.org/target/ENSG00000172243/associations",
+    "CLEC7A \u2194 chronic mucocutaneous candidiasis. https://platform.opentargets.org/target/ENSG00000172243/associations",
+    "CLEC7A \u2194 alcohol drinking. https://platform.opentargets.org/target/ENSG00000172243/associations",
+    "CLEC7A \u2194 candidiasis, familial, 4. https://platform.opentargets.org/target/ENSG00000172243/associations",
+    "C-type lectin. https://en.wikipedia.org/wiki/C-type_lectin",
+    "CLEC7A. https://en.wikipedia.org/wiki/CLEC7A",
+    "List of human clusters of differentiation. https://en.wikipedia.org/wiki/List_of_human_clusters_of_differentiation",
+    "Zymosan. https://en.wikipedia.org/wiki/Zymosan",
+    "Chronic mucocutaneous candidiasis. https://en.wikipedia.org/wiki/Chronic_mucocutaneous_candidiasis"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5538,
+    "completion_tokens": 284,
+    "total_tokens": 5822,
+    "estimated_cost_usd": 0.001001
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9BXN2",
+          "title": "CLEC7A (Q9BXN2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BXN2",
+          "text": "Protein: C-type lectin domain family 7 member A\nFunction: Lectin that functions as a pattern recognizing receptor (PRR) specific for beta-1,3-linked and beta-1,6-linked glucans, which constitute cell wall constituents from pathogenic bacteria and fungi (PubMed:11567029, PubMed:12423684). Necessary for the TLR2-mediated inflammatory response and activation of NF-kappa-B: upon beta-glucan binding, recruits SYK via its ITAM motif and promotes a signaling cascade that activates some CARD domain-BCL10-MALT1 (CBM) signalosomes, leading to the activation of NF-kappa-B and MAP kinase p38 (MAPK11, MAPK12, MAPK13 and/or MAPK14) pathways which stimulate expression of genes encoding pro-inflammatory cytokines and chemokines (By similarity). Enhances cytokine production in macrophages and dendritic cells (By similarity). Mediates production of reactive oxygen species in the cell (By similarity). Mediates phagocytosis of C.albicans conidia (PubMed:17230442). Binds T-cells in a way that does not involve their surface glycans and plays a role in T-cell activation. Stimulates T-cell proliferation. Induces phosphorylation of SCIMP after binding beta-glucans (By similarity)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9BXN2-6",
+          "title": "CLEC7A (Q9BXN2-6)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BXN2-6",
+          "text": "Protein: Isoform 6 of C-type lectin domain family 7 member A",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9BXN2-5",
+          "title": "CLEC7A (Q9BXN2-5)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BXN2-5",
+          "text": "Protein: Isoform 5 of C-type lectin domain family 7 member A",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000172243::function",
+          "title": "CLEC7A \u2014 CLEC7A",
+          "url": "https://platform.opentargets.org/target/ENSG00000172243",
+          "text": "Function: Lectin that functions as a pattern recognizing receptor (PRR) specific for beta-1,3-linked and beta-1,6-linked glucans, which constitute cell wall constituents from pathogenic bacteria and fungi (PubMed:11567029, PubMed:12423684). Necessary for the TLR2-mediated inflammatory response and activation of NF-kappa-B: upon beta-glucan binding, recruits SYK via its ITAM motif and promotes a signaling cascade that activates some CARD domain-BCL10-MALT1 (CBM) signalosomes, leading to the activation of NF-kappa-B and MAP kinase p38 (MAPK11, MAPK12, MAPK13 and/or MAPK14) pathways which stimulate expression of genes encoding pro-inflammatory cytokines and chemokines (By similarity). Enhances cytokine production in macrophages and dendritic cells (By similarity). Mediates production of reactive oxygen species in the cell (By similarity). Mediates phagocytosis of C.albicans conidia (PubMed:17230442). Binds T-cells in a way that does not involve their surface glycans and plays a role in T-cell activation. Stimulates T-cell proliferation. Induces phosphorylation of SCIMP after binding beta-glucans (By similarity).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172243::Orphanet_1334",
+          "title": "CLEC7A \u2194 Chronic mucocutaneous candidosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000172243/associations",
+          "text": "Disease: Chronic mucocutaneous candidosis\nDescription: .\nAssociation score: 0.418",
+          "cos_sim_score": 0.4176317390582761,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172243::MONDO_0015279",
+          "title": "CLEC7A \u2194 chronic mucocutaneous candidiasis",
+          "url": "https://platform.opentargets.org/target/ENSG00000172243/associations",
+          "text": "Disease: chronic mucocutaneous candidiasis\nAssociation score: 0.373",
+          "cos_sim_score": 0.3725612660910964,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172243::EFO_0004329",
+          "title": "CLEC7A \u2194 alcohol drinking",
+          "url": "https://platform.opentargets.org/target/ENSG00000172243/associations",
+          "text": "Disease: alcohol drinking\nDescription: Behaviors associated with the ingesting of alcoholic beverages, including social drinking.\nAssociation score: 0.299",
+          "cos_sim_score": 0.2990931582253805,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172243::MONDO_0013140",
+          "title": "CLEC7A \u2194 candidiasis, familial, 4",
+          "url": "https://platform.opentargets.org/target/ENSG00000172243/associations",
+          "text": "Disease: candidiasis, familial, 4\nDescription: Any familial chronic mucocutaneous candidiasis in which the cause of the disease is a mutation in the CLEC7A gene.\nAssociation score: 0.195",
+          "cos_sim_score": 0.19467618845516665,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::C-type lectin",
+          "title": "C-type lectin",
+          "url": "https://en.wikipedia.org/wiki/C-type_lectin",
+          "text": "A C-type lectin (CLEC) is a type of carbohydrate-binding protein known as a lectin. The C-type designation is from their requirement for calcium for binding. Proteins that contain C-type lectin domains have a diverse range of functions including cell-cell adhesion, immune response to pathogens and apoptosis.\n\nClassification\nDrickamer et al. classified C-type lectins into seven subgroups (I to VII) based on the order of the various protein domains in each protein. This classification was subsequently updated in 2002, leading to seven additional groups (VIII to XIV). Most recently, three further subgroups were added (XV to XVII).\n\nCLECs include:\n\nCLEC1A, CLEC1B\nCLEC2A, CLEC2B, CD69 (CLEC2C), CLEC2D, CLEC2L\nCLEC3A, CLEC3B\nCLEC4A, CLEC4C, CLEC4D, CLEC4E, CLEC4F, CLEC4G, ASGR1 (CLEC4H1), ASGR2 (CLEC4H2), FCER2 (CLEC4J), CD207 (CLEC4K), CD209 (CLEC4L), CLEC4M\nCLEC5A\nCLEC6A\nCLEC7A\nOLR1 (CLEC8A)\nCLEC9A\nCLEC10A\nCLEC11A\nCLEC12A, CLEC12B\nCD302 (CLEC13A), LY75 (CLEC13B), PLA2R1 (CLEC13C), MRC1 (CLEC13D), MRC2 (CLEC13E)\nCLEC14A\nCLEC16A\nCLEC17A\nThe \"NK Cell lectin-like receptors\" are a very closely related group:\n\nKLRA1\nKLRB1 (CLEC5B)\nKLRC1, KLRC2, KLRC3, KLRC4\nKLRD1\nKLRF1 (CLEC5C)\nKLRG1 (CLEC15A), KLRG2 (CLEC15B)\nKLRK1\nAdditional proteins containing this domain include:\n\nAGC1; ATRNL1\nBCAN\nCD248; CD72; CD93; CHODL; CL-K1-Ia; CL-K1-Ib; CL-K1-Ic; CLECSF5; COLEC10; COLEC11; COLEC12; CSPG3\nFCER2; FREM1; HBXBP;\nLAYN; LOC348174; LOC728276\nMAFA; MBL2; MGC34761; MICL; MRC1L1\nOLR1\nPAP; PKD1; PKD1L2; PLA2R1; PRG2; PRG3\nREG1A; REG1B; REG3A; REG3G; REG4\nSELE; SELL; SELP; SFTPA1; SFTPA2; SFTPA2B; SFTPD; SRCL\nTHBD\nVCAN\n\nReferences\nExternal links\nFunctional Glycomics Gateway, a collaboration between the Consortium for Functional Glycomics and Nature Publishing Group",
+          "cos_sim_score": 0.41447436809539795,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::CLEC7A",
+          "title": "CLEC7A",
+          "url": "https://en.wikipedia.org/wiki/CLEC7A",
+          "text": "C-type lectin domain family 7 member A or Dectin-1 is a protein that in humans is encoded by the CLEC7A gene. CLEC7A is a member of the C-type lectin/C-type lectin-like domain (CTL/CTLD) superfamily. The encoded glycoprotein is a small type II membrane receptor with an extracellular C-type lectin-like domain fold and a cytoplasmic domain with a partial immunoreceptor tyrosine-based activation motif. It functions as a pattern-recognition receptor for a variety of \u03b2-1,3-linked and \u03b2-1,6-linked glucans from fungi and plants, and in this way plays a role in innate immune response. Expression is found on myeloid dendritic cells, monocytes, macrophages and B cells. Alternate transcriptional splice variants, encoding different isoforms, have been characterized. This gene is closely linked to other CTL/CTLD superfamily members on chromosome 12p13 in the natural killer gene complex region.\n\nStructure\nDectin-1 is a transmembrane protein containing an immunoreceptor tyrosine-based activation (ITAM)-like motif in its intracellular tail (which is involved in cellular activation) and one C-type lectin-like domain (carbohydrate-recognition domain, CRD) in the extracellular region (which recognizes \u03b2-glucans and endogenous ligands on T cells). The CRD is separated from the membrane by a stalk region. CLEC7A contains putative sites of N-linked glycosylation in the stalk region.\nCLEC7A is expressed by macrophages, neutrophils and dendritic cells. Expression has also been studied on other immune cells including eosinophils and B cells.\n\nFunction\nThe C-type lectin receptors are class of signalling pattern recognition receptors which are involved in antifungal immunity, but also play important roles in immune responses to other pathogens such as bacteria, viruses and nematodes. As a member of this receptor family, dectin-1 recognizes \u03b2-glucans and carbohydrates found in fungal cell walls, some bacteria and plants, but may also recognize other unidentified molecules (endogenous ligand on T-cells and ligand on mycobacteria). Ligand binding induces intracellular signalling via the ITAM-like motif. CLEC7A can induce both Syk dependent or Syk independent pathways. Dimerization of dectin-1 upon ligand binding leads to tyrosine phosphorylation by Src family kinases and recruitment of Syk. Upon Syk recruitment is PKC-\u03b4 activated, which subsequently phosphorylates CARD9 that triggers recruitment of BCL10 and MALT1, leading to a CARD-CC/BCL10/MALT1 (CBM) signaling complex. This signaling complex in turn triggers downstream recruitment of TRAF6 and NF-\u03baB activation. This transcription factor is responsible for the production of numerous inflammatory cytokines and chemokines such as TNF, IL-23, IL-6, IL-2. Other responses include: respiratory burst, production of arachidonic acid metabolites, dendritic cell maturation, and phagocytosis of the ligand.\n\nAntifungal immunity\nCLEC7A has been shown to recognize species of several fungal genera, including Saccharomyces, Candida, Pneumocystis, Coccidioides, Penicillium and others. Recognition of these organisms triggers many protective pathways, such as fungal uptake by phagocytosis and killing via hypochlorite generation. Activation of dectin-1 also triggers expression of many protecting antifungal cytokines and chemokines (TNF, CXCL2, IL-1\u03b2, IL-1\u03b1, CCL3, GM-CSF, G-CSF and IL-6) and the development of Th17.\nHistoplasma capsulatum can evade recognition of \u03b2-glucan via CLEC7A on phagocytic cells by secreting an enzyme that removes exposed \u03b2-glucans or by masking the \u03b2-glucan with \u03b1-glucan.\n\nCo-stimulatory molecule\nAlso operating as a co-stimulatory molecule via recognition of an endogenous ligand on T-cells, which leads to cellular activation and proliferation, CLEC7A can bind both CD4+ and CD8+ T cells.\n\nReferences\nExternal links\nHuman CLEC7A genome location and CLEC7A gene details page  in the UCSC Genome Browser.\n\n\n== Further reading ==",
+          "cos_sim_score": 0.3054553270339966,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of human clusters of differentiation",
+          "title": "List of human clusters of differentiation",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_clusters_of_differentiation",
+          "text": "The following is a list of human clusters of differentiation (or CD) molecules.\n\n* = group; \n** = not listed on hcdm\n\nReferences\nExternal links\nAbCam antigen poster\nCD Marker Poster, Beckman Coulter",
+          "cos_sim_score": 0.15446162223815918,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Zymosan",
+          "title": "Zymosan",
+          "url": "https://en.wikipedia.org/wiki/Zymosan",
+          "text": "Zymosan is a beta-glucan with repeating glucose units connected by \u03b2-1,3-glycosidic linkages. It binds to TLR 2 and Dectin-1 (CLEC7A). Zymosan is a ligand found on the surface of fungi, like yeast.  \nZymosan is prepared from yeast cell walls and consists of protein-carbohydrate complexes. It is used to induce experimental sterile inflammation. In macrophages, zymosan-induced responses include the induction of proinflammatory cytokines, arachidonate mobilization, protein phosphorylation, and inositol phosphate formation. Zymosan A also raises cyclin D2 levels, suggesting a role for the latter in macrophage activation besides proliferation. It potentiates acute liver damage after galactosamine injection, suggesting that certain types of nonparenchymal cells other than Kupffer cells are involved in zymosan action.\n\nReferences\nExternal links\nZymosan at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.07190252095460892,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Chronic mucocutaneous candidiasis",
+          "title": "Chronic mucocutaneous candidiasis",
+          "url": "https://en.wikipedia.org/wiki/Chronic_mucocutaneous_candidiasis",
+          "text": "Chronic mucocutaneous candidiasis is an immune disorder of T cells. It is characterized by chronic infections with Candida that are limited to mucosal surfaces, skin, and nails. It can also be associated with other types of infections, such as human papilloma virus. An association with chromosome 2 has been identified.\n\nTypes\nSigns and symptoms\nThe signs and symptoms of this condition are thickened skin, skin ulcer, dyspareunia, endocardium abnormality, vision problems, hepatitis, seizures, bloody urine, and meningitis.\n\nAssociated diseases or conditions\nThere are a number of disorders associated with chronic mucocutaneous candidiasis including endocrine dysfunctions, vitiligo, malabsorption syndromes, neoplasms, and others. In most patients, chronic mucocutaneous candidiasis is correlated to abnormalities in cell-mediated immunity (T-lymphocyte mediated response). The T-lymphocytes fail to produce the necessary cytokines that are required for immunity against Candida. Current effective treatments include anti-fungal drugs and, for long-term remissions, restoration of cellular immunity.\nPatients with autosomal-dominant mucocutaneous candidiasis may be at risk for epidermoid esophageal cancer due to the nitrosamine compounds produced by chronic candida infections.\n\nCause\nChronic mucocutaneous candidiasis can be inherited either autosomal dominant or autosomal recessive. There are 9 types of this condition with the first CANDF1 being located at 2p22.3-p21 (cytogenetically).\n\nMechanism\nThe mechanism the human immune system has is normally to fight an infection (like Candida). Initially, Th17 cells are made by the immune system, which in turn produces interleukin-17 (IL-17). This induces inflammation and white blood cells confront infection.\nChronic mucocutaneous candidiasis mutations affect IL-17 by inhibiting its pathway. This in turn affects the human immune system's ability to fight infection, in total there are 9 possible types of this condition.\n\nDiagnosis\nChronic mucocutaneous candidiasis can be diagnosed in an affected individual via the following methods/tests:\n\nTreatment\nManagement for an individual with chronic mucocutaneous candidiasis consists of the following (relapse occurs once treatment is ceased, in many cases):\n\nSystemic anti-fungal therapy (e.g., Fluconazole)\nTransfer factor\nCombination therapy\nScreening (annually)\n\nSee also\nCandidiasis\nList of cutaneous conditions\n\nNotes\n^  Indicates 9 references to specific, numbered pages in the Online Mendelian Inheritance in Man database.\n\nReferences\nFurther reading\nKauffman, Carol A.; Pappas, Peter G.; Sobel, Jack D.; Dismukes, William E. (2011). Essentials of Clinical Mycology. Springer Science & Business Media. ISBN 9781441966407. Retrieved 9 June 2017.\nOstler, H. Bruce (2004). Diseases of the Eye and Skin: A Color Atlas. Lippincott Williams & Wilkins. ISBN 9780781749992. Retrieved 9 June 2017.\n\n\n== External links ==",
+          "cos_sim_score": 0.039756983518600464,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

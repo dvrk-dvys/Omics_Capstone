@@ -1,0 +1,168 @@
+{
+  "probe_id": "11742686_a_at",
+  "gene_symbol": "FCGRT",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0482903881866862,
+  "abs_fold_change": 1.2707,
+  "score": 1.2693,
+  "probe_count": 1,
+  "probe_ids": "11742686_a_at",
+  "max_score": 1.2693,
+  "mean_abs_fold_change": 1.2707,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T23:25:30",
+  "interpretation": "FCGRT encodes the Fc gamma receptor and transporter, which plays a crucial role in the immune system by binding immunoglobulin G (IgG) and facilitating its transport and recycling. This function is vital for maintaining humoral immunity, particularly in the context of inflammatory responses. In the case of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the immune response may be altered due to steroid administration, potentially impacting bone health and the progression of osteonecrosis. However, the evidence linking FCGRT directly to SONFH is limited, with no specific studies found that connect this gene to the disease context. Therefore, while FCGRT may have a role in immune modulation, its potential as a biomarker for early detection of SONFH remains weak and speculative. [INFERENCE]",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "FCGRT may influence immune responses that are relevant to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "FCGRT (P55899). https://www.uniprot.org/uniprotkb/P55899",
+    "FCGRT \u2014 FCGRT. https://platform.opentargets.org/target/ENSG00000104870",
+    "FCGRT \u2194 Myasthenia gravis. https://platform.opentargets.org/target/ENSG00000104870/associations",
+    "FCGRT \u2194 chronic inflammatory demyelinating polyradiculoneuropathy. https://platform.opentargets.org/target/ENSG00000104870/associations",
+    "FCGRT \u2194 autoimmune thrombocytopenic purpura. https://platform.opentargets.org/target/ENSG00000104870/associations",
+    "FCGRT \u2194 Graves ophthalmopathy. https://platform.opentargets.org/target/ENSG00000104870/associations",
+    "FCGRT \u2014 Fc gamma receptor and transporter (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HLA-B \u2014 major histocompatibility complex, class I, B (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HFE \u2014 homeostatic iron regulator (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "SP1 \u2014 Sp1 transcription factor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5016,
+    "completion_tokens": 308,
+    "total_tokens": 5324,
+    "estimated_cost_usd": 0.000937
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P55899",
+          "title": "FCGRT (P55899)",
+          "url": "https://www.uniprot.org/uniprotkb/P55899",
+          "text": "Protein: IgG receptor FcRn large subunit p51\nFunction: Cell surface receptor that transfers passive humoral immunity from the mother to the newborn. Binds to the Fc region of monomeric immunoglobulin gamma and mediates its selective uptake from milk (PubMed:10933786, PubMed:7964511). IgG in the milk is bound at the apical surface of the intestinal epithelium. The resultant FcRn-IgG complexes are transcytosed across the intestinal epithelium and IgG is released from FcRn into blood or tissue fluids. Throughout life, contributes to effective humoral immunity by recycling IgG and extending its half-life in the circulation. Mechanistically, monomeric IgG binding to FcRn in acidic endosomes of endothelial and hematopoietic cells recycles IgG to the cell surface where it is released into the circulation (PubMed:10998088). In addition of IgG, regulates homeostasis of the other most abundant circulating protein albumin/ALB (PubMed:24469444, PubMed:28330995) (Microbial infection) Acts as an uncoating receptor for a panel of echoviruses including Echovirus 5, 6, 7, 9, 11, 13, 25 and 29",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000104870::function",
+          "title": "FCGRT \u2014 FCGRT",
+          "url": "https://platform.opentargets.org/target/ENSG00000104870",
+          "text": "Function: Cell surface receptor that transfers passive humoral immunity from the mother to the newborn. Binds to the Fc region of monomeric immunoglobulin gamma and mediates its selective uptake from milk (PubMed:10933786, PubMed:7964511). IgG in the milk is bound at the apical surface of the intestinal epithelium. The resultant FcRn-IgG complexes are transcytosed across the intestinal epithelium and IgG is released from FcRn into blood or tissue fluids. Throughout life, contributes to effective humoral immunity by recycling IgG and extending its half-life in the circulation. Mechanistically, monomeric IgG binding to FcRn in acidic endosomes of endothelial and hematopoietic cells recycles IgG to the cell surface where it is released into the circulation (PubMed:10998088). In addition of IgG, regulates homeostasis of the other most abundant circulating protein albumin/ALB (PubMed:24469444, PubMed:28330995).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000104870::EFO_0004991",
+          "title": "FCGRT \u2194 Myasthenia gravis",
+          "url": "https://platform.opentargets.org/target/ENSG00000104870/associations",
+          "text": "Disease: Myasthenia gravis\nDescription: Myasthenia gravis (MG) is a rare, clinically heterogeneous, autoimmune disorder of the neuromuscular junction characterized by fatigable weakness of voluntary muscles.\nAssociation score: 0.593",
+          "cos_sim_score": 0.5932721106551206,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000104870::EFO_1000868",
+          "title": "FCGRT \u2194 chronic inflammatory demyelinating polyradiculoneuropathy",
+          "url": "https://platform.opentargets.org/target/ENSG00000104870/associations",
+          "text": "Disease: chronic inflammatory demyelinating polyradiculoneuropathy\nDescription: A slowly progressive autoimmune demyelinating disease of peripheral nerves and nerve roots. Clinical manifestations include weakness and sensory loss in the extremities and enlargement of peripheral nerves. The course may be relapsing-remitting or demonstrate a step-wise progression. Protein is usually elevated in the spinal fluid and cranial nerves are typically spared. GUILLAIN-BARRE SYNDROME features a relatively rapid progression of disease which distinguishes it from this condition. (Adams et al., Principles of Neurology, 6th ed, p1337)\nAssociation score: 0.433",
+          "cos_sim_score": 0.4334237479707765,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000104870::EFO_0007160",
+          "title": "FCGRT \u2194 autoimmune thrombocytopenic purpura",
+          "url": "https://platform.opentargets.org/target/ENSG00000104870/associations",
+          "text": "Disease: autoimmune thrombocytopenic purpura\nDescription: An autoimmune disorder in which the number of circulating platelets is reduced due to their antibody-mediated destruction. ITP is a diagnosis of exclusion and is heterogeneous in origin.\nAssociation score: 0.398",
+          "cos_sim_score": 0.39830707370790674,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000104870::EFO_1001466",
+          "title": "FCGRT \u2194 Graves ophthalmopathy",
+          "url": "https://platform.opentargets.org/target/ENSG00000104870/associations",
+          "text": "Disease: Graves ophthalmopathy\nDescription: An autoimmune disorder of the EYE, occurring in patients with Graves disease. Subtypes include congestive (inflammation of the orbital connective tissue), myopathic (swelling and dysfunction of the extraocular muscles), and mixed congestive-myopathic ophthalmopathy.\nAssociation score: 0.381",
+          "cos_sim_score": 0.3806980486464665,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "FCGRT \u2014 Fc gamma receptor and transporter",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: FCGRT\nGene name: Fc gamma receptor and transporter\nAliases / synonyms: FCRN, FcgammaRn, alpha-chain\nOrganism: Homo sapiens\nGene summary: This gene encodes a receptor that binds the Fc region of monomeric immunoglobulin G. The encoded protein transfers immunoglobulin G antibodies from mother to fetus across the placenta. This protein also binds immunoglobulin G to protect the antibody from degradation. Alternative splicing results in multiple transcript variants. [provided by RefSeq, Apr 2009]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "FCGRT",
+          "aliases": "FCRN, FcgammaRn, alpha-chain",
+          "gene_description": "Fc gamma receptor and transporter"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "HLA-B \u2014 major histocompatibility complex, class I, B",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HLA-B\nGene name: major histocompatibility complex, class I, B\nAliases / synonyms: AS, B-4901, HLAB\nOrganism: Homo sapiens\nGene summary: HLA-B belongs to the HLA class I heavy chain paralogues. This class I molecule is a heterodimer consisting of a heavy chain and a light chain (beta-2 microglobulin). The heavy chain is anchored in the membrane. Class I molecules play a central role in the immune system by presenting peptides derived from the endoplasmic reticulum lumen. They are expressed in nearly all cells. The heavy chain is approximately 45 kDa and its gene contains 8 exons. Exon 1 encodes the leader peptide, exon 2 and 3 encode the alpha1 and alpha2 domains, which both bind the peptide, exon 4 encodes the alpha3 domain, exon 5 encodes the transmembrane region and exons 6 and 7 encode the cytoplasmic tail. Polymorphisms within exon 2 and exon 3 are responsible for the peptide binding specificity of each class one molec...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HLA-B",
+          "aliases": "AS, B-4901, HLAB",
+          "gene_description": "major histocompatibility complex, class I, B"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "HFE \u2014 homeostatic iron regulator",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HFE\nGene name: homeostatic iron regulator\nAliases / synonyms: HFE1, HH, HLA-H, MVCD7, TFQTL2\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a membrane protein that is similar to MHC class I-type proteins and associates with beta2-microglobulin (beta2M). It is thought that this protein functions to regulate iron absorption by regulating the interaction of the transferrin receptor with transferrin. The iron storage disorder, hereditary haemochromatosis, is a recessive genetic disorder that results from defects in this gene. [provided by RefSeq, May 2022]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HFE",
+          "aliases": "HFE1, HH, HLA-H, MVCD7, TFQTL2",
+          "gene_description": "homeostatic iron regulator"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "SP1 \u2014 Sp1 transcription factor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SP1\nGene name: Sp1 transcription factor\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a zinc finger transcription factor that binds to GC-rich motifs of many promoters. The encoded protein is involved in many cellular processes, including cell differentiation, cell growth, apoptosis, immune responses, response to DNA damage, and chromatin remodeling. Post-translational modifications such as phosphorylation, acetylation, glycosylation, and proteolytic processing significantly affect the activity of this protein, which can be an activator or a repressor. Three transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Nov 2014]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SP1",
+          "aliases": "",
+          "gene_description": "Sp1 transcription factor"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

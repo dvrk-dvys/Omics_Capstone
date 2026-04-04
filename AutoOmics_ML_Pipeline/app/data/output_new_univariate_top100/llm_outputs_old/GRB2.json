@@ -1,0 +1,151 @@
+{
+  "probe_id": "11741435_s_at",
+  "gene_symbol": "GRB2",
+  "score": 1.0,
+  "SD_TestAUC": 0.0802943829210325,
+  "abs_fold_change": 0.8176,
+  "probe_count": 1,
+  "probe_ids": "11741435_s_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.8176,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:37:05",
+  "interpretation": "GRB2 (Growth factor receptor-bound protein 2) is a non-enzymatic adapter protein that plays a crucial role in signal transduction pathways, linking cell surface receptors to intracellular signaling cascades. It is involved in various biological processes, including immune regulation, autophagy, and DNA repair, which are relevant to bone health and osteonecrosis. Although there is no direct evidence linking GRB2 specifically to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in signaling pathways that affect cell proliferation and apoptosis suggests a potential involvement in the pathophysiology of SONFH. The retrieved evidence indicates that GRB2 is associated with bone development diseases, which may imply a connection to osteonecrosis. However, the evidence is not strong enough to definitively classify GRB2 as a biomarker for SONFH, leading to a moderate confidence in its relevance as a potential early-detection biomarker.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 2",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "GRB2 is implicated in signaling pathways that may influence the development of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) through its role in bone health and cellular responses.",
+  "citations": [
+    "GRB2 (P62993). https://www.uniprot.org/uniprotkb/P62993",
+    "GRB2 (P62993-2). https://www.uniprot.org/uniprotkb/P62993-2",
+    "GRB2 \u2014 GRB2. https://platform.opentargets.org/target/ENSG00000177885",
+    "GRB2 \u2194 cancer. https://platform.opentargets.org/target/ENSG00000177885/associations",
+    "GRB2 \u2194 bone development disease. https://platform.opentargets.org/target/ENSG00000177885/associations",
+    "GRB2 \u2194 chronic myelogenous leukemia. https://platform.opentargets.org/target/ENSG00000177885/associations",
+    "GRB2 \u2194 listeriosis. https://platform.opentargets.org/target/ENSG00000177885/associations",
+    "GRB2-associated-binding protein 1. https://en.wikipedia.org/wiki/GRB2-associated-binding_protein_1",
+    "GAB2. https://en.wikipedia.org/wiki/GAB2",
+    "GRB2. https://en.wikipedia.org/wiki/GRB2"
+  ],
+  "token_usage": {
+    "prompt_tokens": 7081,
+    "completion_tokens": 273,
+    "total_tokens": 7354,
+    "estimated_cost_usd": 0.001226
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P62993",
+          "title": "GRB2 (P62993)",
+          "url": "https://www.uniprot.org/uniprotkb/P62993",
+          "text": "Protein: Growth factor receptor-bound protein 2\nFunction: Non-enzymatic adapter protein that plays a pivotal role in precisely regulated signaling cascades from cell surface receptors to cellular responses, including signaling transduction and gene expression (PubMed:11726515, PubMed:37626338). Thus, participates in many biological processes including regulation of innate and adaptive immunity, autophagy, DNA repair or necroptosis (PubMed:35831301, PubMed:37626338, PubMed:38182563). Controls signaling complexes at the T-cell antigen receptor to facilitate the activation, differentiation, and function of T-cells (PubMed:36864087, PubMed:9489702). Mechanistically, engagement of the TCR leads to phosphorylation of the adapter protein LAT, which serves as docking site for GRB2 (PubMed:9489702). In turn, GRB2 establishes a a connection with SOS1 that acts as a guanine nucleotide exchange factor and serves as a critical regulator of KRAS/RAF1 leading to MAPKs translocation to the nucleus and activation (PubMed:12171928, PubMed:25870599). Functions also a role in B-cell activation by amplifying Ca(2+) mobilization and activation of the ERK MAP kinase pathway upon recruitment to the phosphorylated B-cell antigen receptor (BCR) (PubMed:25413232, PubMed:29523808). Plays a role in switching between autophagy and programmed necrosis upstream of EGFR by interacting with components of necrosomes including RIPK1 and with autophagy regulators SQSTM1 and BECN1 (PubMed:35831301, PubMed:38182563). Regulates miRNA biogenesis by forming a functional ternary complex with AGO2 and DICER1 (PubMed:37328606). Functions in the replication stress response by protecting DNA at stalled replication forks from MRE11-mediated degradation. Mechanistically, inhibits RAD51 ATPase activity to stabilize RAD51 on stalled replication forks (PubMed:38459011). Additionally, directly recruits and later releases MRE11 at DNA damage sites during the homology-directed repair (HDR) process (PubMed:34348893) Does not bind to phosphorylated epidermal growth factor receptor (EGFR) but inhibits EGF-induced transactivation of a RAS-responsive element. Acts as a dominant negative protein over GRB2 and by suppressing proliferative signals, may trigger active programmed cell death. Mechanistically, inhibits RAS-ERK signaling and downstream cell proliferation by competing with GRB2 for SOS1 binding and thus by regulating SOS1 membrane recruitment (PubMed:36171279)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P62993-2",
+          "title": "GRB2 (P62993-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P62993-2",
+          "text": "Protein: Isoform 2 of Growth factor receptor-bound protein 2\nFunction: Does not bind to phosphorylated epidermal growth factor receptor (EGFR) but inhibits EGF-induced transactivation of a RAS-responsive element. Acts as a dominant negative protein over GRB2 and by suppressing proliferative signals, may trigger active programmed cell death. Mechanistically, inhibits RAS-ERK signaling and downstream cell proliferation by competing with GRB2 for SOS1 binding and thus by regulating SOS1 membrane recruitment (PubMed:36171279)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000177885::function",
+          "title": "GRB2 \u2014 GRB2",
+          "url": "https://platform.opentargets.org/target/ENSG00000177885",
+          "text": "Function: Non-enzymatic adapter protein that plays a pivotal role in precisely regulated signaling cascades from cell surface receptors to cellular responses, including signaling transduction and gene expression (PubMed:11726515, PubMed:37626338). Thus, participates in many biological processes including regulation of innate and adaptive immunity, autophagy, DNA repair or necroptosis (PubMed:35831301, PubMed:37626338, PubMed:38182563). Controls signaling complexes at the T-cell antigen receptor to facilitate the activation, differentiation, and function of T-cells (PubMed:36864087, PubMed:9489702). Mechanistically, engagement of the TCR leads to phosphorylation of the adapter protein LAT, which serves as docking site for GRB2 (PubMed:9489702). In turn, GRB2 establishes a a connection with SOS1 that acts as a guanine nucleotide exchange factor and serves as a critical regulator of KRAS/RAF1 leading to MAPKs translocation to the nucleus and activation (PubMed:12171928, PubMed:25870599). Functions also a role in B-cell activation by amplifying Ca(2+) mobilization and activation of the ERK MAP kinase pathway upon recruitment to the phosphorylated B-cell antigen receptor (BCR) (PubMed:25413232, PubMed:29523808). Plays a role in switching between autophagy and programmed necrosis upstream of EGFR by interacting with components of necrosomes including RIPK1 and with autophagy regulators SQSTM1 and BECN1 (PubMed:35831301, PubMed:38182563). Regulates miRNA biogenesis by forming a functional ternary complex with AGO2 and DICER1 (PubMed:37328606). Functions in the replication stress response by protecting DNA at stalled replication forks from MRE11-mediated degradation. Mechanistically, inhibits RAD51 ATPase activity to stabilize RAD51 on stalled replication forks (PubMed:38459011). Additionally, directly recruits and later releases MRE11 at DNA damage sites during the homology-directed repair (HDR) process (PubMed:34348893).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000177885::MONDO_0004992",
+          "title": "GRB2 \u2194 cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000177885/associations",
+          "text": "Disease: cancer\nDescription: A tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues. Malignant neoplasms often metastasize to distant anatomic sites and may recur after excision. The most common malignant neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), Hodgkin and non-Hodgkin lymphomas, leukemias, melanomas, and sarcomas.\nAssociation score: 0.613",
+          "cos_sim_score": 0.6128603853679294,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000177885::EFO_0005541",
+          "title": "GRB2 \u2194 bone development disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000177885/associations",
+          "text": "Disease: bone development disease\nDescription: A disease involving the bone development.\nAssociation score: 0.578",
+          "cos_sim_score": 0.5783838386125503,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000177885::EFO_0000339",
+          "title": "GRB2 \u2194 chronic myelogenous leukemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000177885/associations",
+          "text": "Disease: chronic myelogenous leukemia\nDescription: A chronic myeloproliferative neoplasm characterized by the expression of the BCR-ABL1 fusion gene. It presents with neutrophilic leukocytosis. It can appear at any age, but it mostly affects middle aged and older individuals. Patients usually present with fatigue, weight loss, anemia, night sweats, and splenomegaly. If untreated, it follows a biphasic or triphasic natural course; an initial indolent chronic phase which is followed by an accelerated phase, a blast phase, or both. Allogeneic stem cell transplantation and tyrosine kinase inhibitors delay disease progression and prolong overall survival.\nAssociation score: 0.548",
+          "cos_sim_score": 0.5483212695512553,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000177885::EFO_0007347",
+          "title": "GRB2 \u2194 listeriosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000177885/associations",
+          "text": "Disease: listeriosis\nDescription: A primary bacterial infectious disease that results_in infection, has_material_basis_in Listeria monocytogenes, which is transmitted_by ingestion of contaminated food or raw milk or transmitted_by congenital method. Ingestion of Listeria by pregnant women has_symptom nausea, has_symptom vomiting, has_symptom diarrhea, has_symptom fever, has_symptom malaise, has_symptom back pain, and has_symptom headache. Maternal infection with Listeria can result in chorioamnionitis, premature labor, spontaneous abortion, or stillbirth.\nAssociation score: 0.541",
+          "cos_sim_score": 0.5409211817593593,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::GRB2-associated-binding protein 1",
+          "title": "GRB2-associated-binding protein 1",
+          "url": "https://en.wikipedia.org/wiki/GRB2-associated-binding_protein_1",
+          "text": "GRB2-associated-binding protein 1 is a protein that in humans is encoded by the GAB1 gene.\n\nFunction\nThe protein encoded by this gene is a member of the IRS1-like multisubstrate docking protein family. The encoded protein is an important mediator of branching tubulogenesis and plays a central role in cellular growth response, transformation and apoptosis. Two transcript variants encoding different isoforms have been found for this gene. GAB1 is involved also in the tonic pAKT activity in malignant B cells, and induces PI3K activation irrespectively of BCR stimulation by antigen in chronic lymphocytic leukemia.\n\nInteractions\nGAB1 has been shown to interact with:\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.46563541889190674,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::GAB2",
+          "title": "GAB2",
+          "url": "https://en.wikipedia.org/wiki/GAB2",
+          "text": "GRB2-associated-binding protein 2 also known as GAB2 is a protein that in humans is encoded by the GAB2 gene.\nGAB2 is a docking protein with a conserved, folded PH domain attached to the membrane and a large disordered region, which hosts interactions with signaling molecules. It is a member of the GAB/DOS family localized on the internal membrane of the cell. It mediates the interaction between receptor tyrosine kinases (RTKs) and non-RTK receptors serving as the gateway into the cell for activation of SHP2, Phosphatidylinositol 3-kinase (PI3K), Grb2, ERK, and AKT and acting as one of the first steps in these signaling pathways. GAB2 has been shown to be important in physiological functions such as growth in bone marrow and cardiac function. GAB2 has also been associated with many diseases including leukemia and Alzheimer's disease.\n\nDiscovery\nGAB proteins were one of the first docking proteins identified in the mammalian signal transduction pathway. GAB2 along with many other adaptor, scaffold, and docking proteins, was discovered in the mid-1990s during the isolation and cloning of protein tyrosine kinase substrates and association partners. GAB2 was initially discovered as a binding protein and substrate of protein tyrosine phosphatase Shp2/PTPN11. Two other groups later cloned GAB2 by searching DNA database for protein with sequence homology to GAB1.\n\nStructure\nGAB2 is a large multi-site docking protein (LMD) of about 100kD that has a folded N-terminal domain attached to an extended, disordered C-terminal tail rich in short linear motifs. LMDs are docking proteins that function as platforms mediating interaction between different signaling pathways and assisting with signal integration. The N-terminal is characterized by a Pleckstrin Homology (PH) domain that is the most highly conserved region between all members of the GAB family of proteins. (GAB1, GAB2, GAB3 and GAB4) GAB2 is an Intrinsically disordered protein, meaning that beyond the folded N-terminal region, the C-terminal region extends out into the cytoplasm with little or no secondary structure. The disordered region of the protein however may not be as disordered as was initially expected, as sequencing has revealed significant similarity between the \"disordered\" regions of GAB orthologs in different species.\nThe PH domain of GAB2 recognizes phosphatidylinositol 3,4,5-triphosphate(PIP3) in the membrane and is responsible for localizing the GAB protein on the intracellular surface of the membrane and in regions where the cell contacts another cell. Some evidence also suggests that the PH domain plays a role in some signal regulation as well.\nAdjacent to the PH domain is a central, proline-rich domain that contains many PXXP motifs for binding to the SH3 domains of signaling molecules such as Grb2 (from which the name \"Grb2-associated binding\" protein, GAB, comes). It is hypothesized that binding sites in this region may be used in indirect mechanisms pairing the GAB2 protein to receptor tyrosine kinases. It is on the C-terminal tail that the various conserved protein binding motifs and phosphorylation sites of GAB2 are found. GAB2 binds to the SH2 domains of such signaling molecules as SHP2 and PI3K. By binding to the p85 subunit of PI3K, and continuing this signaling pathway GAB provides positive feedback for the creation of PIP3, produced as a result of the PI3K pathway, which binds to GAB2 in the membrane and promotes activation of more PI3Ks. Discovery of multiple binding sites in GAB proteins has led to the N-terminal folding nucleation (NFN) hypothesis for the structure of the disordered region. This theory suggests that the disordered domain is looped back to connect to the N-terminal, structured region several times to make the protein more compact. This would assist in promoting interactions between molecules bound to GAB and resisting degradation.",
+          "cos_sim_score": 0.4305141568183899,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::GRB2",
+          "title": "GRB2",
+          "url": "https://en.wikipedia.org/wiki/GRB2",
+          "text": "Growth factor receptor-bound protein 2, also known as Grb2, is an adaptor protein involved in signal transduction/cell communication.  In humans, the GRB2 protein is encoded by the GRB2 gene.\nThe protein encoded by this gene binds receptors such as the epidermal growth factor receptor and contains one SH2 domain and two SH3 domains. Its two SH3 domains direct complex formation with proline-rich regions of other proteins, and its SH2 domain binds tyrosine phosphorylated sequences. This gene is similar to the sem-5 gene of Caenorhabditis elegans, which is involved in the signal transduction pathway. Two alternatively spliced transcript variants encoding different isoforms have been found for this gene.\n\nFunction and expression\nGrb2 is widely expressed and is essential for multiple cellular functions. Inhibition of Grb2 function impairs developmental processes in various organisms and blocks transformation and proliferation of various cell types. It is thus not surprising that targeted gene disruption of Grb2 in mice is lethal at an early embryonic stage. Grb2 is best known for its ability to link the epidermal growth factor receptor tyrosine kinase to the activation of Ras and its downstream kinases, ERK1,2.  Grb2 is composed of an SH2 domain flanked on each side by an SH3 domain. Grb2 has two closely related proteins with similar domain organizations, Gads and Grap.  Gads and Grap are expressed specifically in hematopoietic cells and function in the coordination of tyrosine kinase mediated signal transduction.\n\nDomains\nThe SH2 domain of Grb2 binds to phosphorylated tyrosine-containing peptides on receptors or scaffold proteins with a preference for pY-X-N-X, where X is generally a hydrophobic residue such as valine (see [1]).\nThe N-terminal SH3 domain binds to proline-rich peptides and can bind to the Ras-guanine exchange factor SOS.\nThe C-terminal SH3 domain binds to peptides conforming to a P-X-I/L/V/-D/N-R-X-X-K-P motif that allows it to specifically bind to proteins such as Gab-1.\n\nInteractions\nGrb2 has been shown to interact with:\n\nSee also\nMAPK/ERK pathway\n\nReferences\nFurther reading\nExternal links\nGRB2+Adaptor+Protein at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nThe Grb2 protein page on The SH2 Website\nGeneCards entry for Grb2\nHuman Protein Resource Database entry for Grb2 Archived August 13, 2006, at the Wayback Machine\nGrb2 information on iHOP (Information Hyperlinked over Proteins)\nGRB2 Info with links in the Cell Migration Gateway Archived December 11, 2014, at the Wayback Machine",
+          "cos_sim_score": 0.38800838589668274,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::GAB2",
+          "title": "GAB2",
+          "url": "https://en.wikipedia.org/wiki/GAB2",
+          "text": "Function\nGAB2 mediates the interactions between receptor tyrosine kinases (RTK) or non-RTK receptors, such as G protein coupled receptors, cytokine receptors, multichain immune recognition receptors and integrins, and the molecules of the intracellular signaling pathways. By providing a platform to host a wide array of interactions from extracellular inputs to intracellular pathways, GAB proteins can act as a gatekeeper to the cell, modulating and integrating signals as they pass them along, to control the functional state within the cell.\nMutagenesis and Binding assays have helped to identify which molecules and what pathways are downstream of GAB2. The two main pathways of GAB proteins are SHP2 and PI3K. GAB protein binding to SHP2 molecules acts as an activator whose main effect is the activation of the ERK/MAPK pathway. There are also, however, other pathways that are activated by this interaction such as the pathways c-Kit-induced Rac activation and \u03b21-integrin. PI3K activation by GAB2 promotes cell growth.\n The effects of all the pathways activated by GAB proteins are not known, but it is easy to see that amplification of signal can progress quickly and these proteins can have large effects on the state of the cell.  While not lethal, GAB2 deficient knockout mice do exhibit phenotypic side-effects. These include weak allergic reactions, reduced mast cell growth in bone marrow and osteopetrosis. Knockout mice have also been used to show the importance of GAB2 in maintenance of cardiac function. A paracrine factor, NRG1 \u03b2, utilizes GAB2 to activate the ERK and AKT pathways in the heart to produce angiopoietin 1.\n\nInteractions\nThe C-terminal tail of GAB2 acts as a site for multiple phosphorylation of tyrosine kinases.  It acts as a docking station for the Src homology 2(SH2) domain that is contained in the adaptor protein families Crk, Grb2, and Nck.  These adaptor proteins then couple to enzymes to amplify different cellular signals.   GAB2 may also bind directly to SH2-containing enzymes, such as PI3K, to produce such signals.\nGAB2 has been shown to interact with:\n\nAKT1\nThrough the PI3K signaling pathway, PI3K activates the serine/threonine protein kinase (AKT), which in turn through phosphorylation inactivates GSK3.  This in turn causes the phosphorylation of tau and amyloid production.\n\nCRKL\nCT10 regulator of kinase (Crk) is also known as the breast cancer anti-oestrogen resistance protein. It plays a role in both fibroblast formation and breast cancer.  The YXXP binding motif is required for the association of CRKL and GAB2.  This leads to the activation of c-Jun N-terminal kinase(JNK) as part of the JNK signaling pathway.\n\nGrb2\nUpon stimulation by growth hormone, insulin, epidermal growth factor (EFG), etc., the GAB2 protein can be recruited from the cytoplasm to the cell membrane, where it forms a complex with Grb2 and SHC.   The interaction between GAB2 and Grb2 requires a PX3RX2KP motif in order to produce a regulatory signal.  The activated GAB2 can now recruit SH2 domain-containing molecules, such as SHP2 or PI3K to activate signaling pathways.\n\nPI3K\nThe p85 subunit of PI3K (or PIK3) possessed the SH2 domain required to be activated by GAB2.  The activation of the PI3K signaling pathway produces increased amyloid production and microglia-mediated inflammation. The immunoglobulin receptor FceRI requires GAB2 as a necessity for mast cells to activate PI3K receptor to create an allergic response.  In a study of knockout mice lacking the GAB2 gene, subjects experienced impaired allergic reactions, including passive cutaneous and systemic anaphylaxis. PI3K is found to be mutated in most breast cancer subtypes.  Sufficient GAB2 expression by these cancerous subtypes proves necessary in order to sustain a cancerous phenotype.",
+          "cos_sim_score": 0.33167529106140137,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::GAB2",
+          "title": "GAB2",
+          "url": "https://en.wikipedia.org/wiki/GAB2",
+          "text": "PI3K\nThe p85 subunit of PI3K (or PIK3) possessed the SH2 domain required to be activated by GAB2.  The activation of the PI3K signaling pathway produces increased amyloid production and microglia-mediated inflammation. The immunoglobulin receptor FceRI requires GAB2 as a necessity for mast cells to activate PI3K receptor to create an allergic response.  In a study of knockout mice lacking the GAB2 gene, subjects experienced impaired allergic reactions, including passive cutaneous and systemic anaphylaxis. PI3K is found to be mutated in most breast cancer subtypes.  Sufficient GAB2 expression by these cancerous subtypes proves necessary in order to sustain a cancerous phenotype.\n\nPLCG2\nThe erythropoietin hormone (Epo) is responsible for the regulation and proliferation of erythrocytes.  Epo is able to self phosphorylate, which causes recruitment of SH2 proteins.  An activated complex of GAB2, SHC, and SHP2 is required for binding of Phospholipase C gamma 2 (PLCG2) through its SH2 domain, which activates PIP3.\n\nPTPN11\nProtein tyrosine phosphatase non-receptor 11 (PTPN11) interaction with GAB2 is part of the Ras pathway.  Mutations found in PTPN11 cause disruption in the binding to GAB2, which in turn impairs correct cellular growth.  Thirty-five percent of patients diagnosed with JMML show activating mutations in PTPN11.\n\nRICS\nGC-GAP is part of the Rho GTP-ase activating protein family (RICS). It contains a highly proline-rich motifs that allow favorable interactions with GAB2.  GC-GAP is responsible for the proliferation of astroglioma cells.\n\nSHC1\nThe interaction between GAB2 and Grb2 at the cell membrane recruits another adaptor protein, the Src homology domain-containing transforming protein 1 (SHC1), before being able to recruit SH2 domain-containing molecules.\n\nClinical Implications\nAlzheimer's disease\nTen SNPs of GAB2 have been associated with late-onset Alzheimer's disease (LOAD). However, this association is found only in APOE \u03b54 carriers. In LOAD brains, GAB2 is overexpressed in neurons, tangle-bearing neurons, and dystrophic neuritis.\nGAB2 has been indicated in playing a role in the pathogenesis of Alzheimer's disease via its interaction with tau and amyloid precursor proteins. GAB2 may prevent neuronal tangle formation characteristic of LOAD by reducing phosphorylation of tau protein via the activation of the PI3K signaling pathway, which activates Akt. Akt inactivates Gsk3, which is responsible for tau phosphorylation. Mutations in GAB2 could affect Gsk3-dependent phosphorylation of tau and the formation of neurofibrillary tangles. Interactions between GAB2-Grb2 and APP are enhanced in AD brains, suggesting an involvement of this coupling in the neuropathogenesis of AD.\n\nCancer\nGAB2 has been linked to the oncogenesis of many cancers including colon, gastric, breast, and ovarian cancer. Studies suggest that GAB2 is used to amplify the signal of many RTKs implicated in breast cancer development and progression.\nGAB2 has been particularly characterized for its role in leukemia. In chronic myelogenous leukemia (CML), GAB2 interacts with the Bcr-Abl complex and is instrumental in maintaining the oncogenic properties of the complex. The Grb2/GAB2 complex is recruited to phosphorylated Y177 of the Bcr-Abl complex leading to Bcr-Abl-mediated transformation and leukemogenesis. GAB2 also plays a role in juvenile myelomonocytic leukemia (JMML). Studies have shown the protein's involvement in the disease via the Ras pathway. In addition, GAB2 appears to play an important role in PTPN11 mutations associated with JMML.\n\nReferences\nFurther reading\nExternal links\nScientists find new dementia gene \u2013 BBC News, 9 June 2007.",
+          "cos_sim_score": 0.22846907377243042,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

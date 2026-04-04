@@ -1,0 +1,160 @@
+{
+  "probe_id": "11756827_a_at",
+  "gene_symbol": "RTN1",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0331269329999968,
+  "abs_fold_change": 1.2435,
+  "score": 1.2427,
+  "probe_count": 1,
+  "probe_ids": "11756827_a_at",
+  "max_score": 1.2427,
+  "mean_abs_fold_change": 1.2435,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T02:28:24",
+  "interpretation": "RTN1, or Reticulon-1, is a protein primarily associated with the endoplasmic reticulum and is involved in processes such as membrane trafficking and neuroendocrine secretion. While there is no direct evidence linking RTN1 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in cellular stress responses and potential involvement in neurodegenerative diseases suggest it may play a part in the pathological processes associated with steroid treatment. The retrieved evidence indicates that RTN1 inhibits amyloid precursor protein processing, which could relate to cellular stress mechanisms that are relevant in SONFH. However, the lack of specific studies directly connecting RTN1 to SONFH limits the strength of this association. Therefore, while RTN1 may have some biological relevance, its potential as a clinical biomarker for early detection of SONFH is weak due to insufficient direct evidence.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "RTN1 may be involved in cellular stress responses that could relate to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "RTN1 (Q16799). https://www.uniprot.org/uniprotkb/Q16799",
+    "RTN1 (Q16799-3). https://www.uniprot.org/uniprotkb/Q16799-3",
+    "RTN1 (Q16799-2). https://www.uniprot.org/uniprotkb/Q16799-2",
+    "RTN1 \u2014 RTN1. https://platform.opentargets.org/target/ENSG00000139970",
+    "RTN1 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000139970/associations",
+    "RTN1 \u2194 atrial fibrillation. https://platform.opentargets.org/target/ENSG00000139970/associations",
+    "RTN1 \u2194 schizophrenia. https://platform.opentargets.org/target/ENSG00000139970/associations",
+    "RTN1 \u2194 celiac disease. https://platform.opentargets.org/target/ENSG00000139970/associations",
+    "RTN3. https://en.wikipedia.org/wiki/RTN3",
+    "RTN1. https://en.wikipedia.org/wiki/RTN1",
+    "Reticulon. https://en.wikipedia.org/wiki/Reticulon"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4947,
+    "completion_tokens": 252,
+    "total_tokens": 5199,
+    "estimated_cost_usd": 0.000893
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q16799",
+          "title": "RTN1 (Q16799)",
+          "url": "https://www.uniprot.org/uniprotkb/Q16799",
+          "text": "Protein: Reticulon-1\nFunction: Inhibits amyloid precursor protein processing, probably by blocking BACE1 activity",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q16799-3",
+          "title": "RTN1 (Q16799-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q16799-3",
+          "text": "Protein: Isoform RTN1-C of Reticulon-1",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q16799-2",
+          "title": "RTN1 (Q16799-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q16799-2",
+          "text": "Protein: Isoform RTN1-B of Reticulon-1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000139970::function",
+          "title": "RTN1 \u2014 RTN1",
+          "url": "https://platform.opentargets.org/target/ENSG00000139970",
+          "text": "Function: Inhibits amyloid precursor protein processing, probably by blocking BACE1 activity. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000139970::EFO_0005772",
+          "title": "RTN1 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000139970/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.463",
+          "cos_sim_score": 0.46251156354218165,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000139970::EFO_0000275",
+          "title": "RTN1 \u2194 atrial fibrillation",
+          "url": "https://platform.opentargets.org/target/ENSG00000139970/associations",
+          "text": "Disease: atrial fibrillation\nDescription: Abnormal cardiac rhythm that is characterized by rapid, uncoordinated firing of electrical impulses in the upper chambers of the heart (HEART ATRIA). In such case, blood cannot be effectively pumped into the lower chambers of the heart (HEART VENTRICLES). It is caused by abnormal impulse generation.\nAssociation score: 0.309",
+          "cos_sim_score": 0.3092647451466956,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000139970::MONDO_0005090",
+          "title": "RTN1 \u2194 schizophrenia",
+          "url": "https://platform.opentargets.org/target/ENSG00000139970/associations",
+          "text": "Disease: schizophrenia\nDescription: A major psychotic disorder characterized by abnormalities in the perception or expression of reality. It affects the cognitive and psychomotor functions. Common clinical signs and symptoms include delusions, hallucinations, disorganized thinking, and retreat from reality.\nAssociation score: 0.276",
+          "cos_sim_score": 0.2760721930511438,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000139970::EFO_0001060",
+          "title": "RTN1 \u2194 celiac disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000139970/associations",
+          "text": "Disease: celiac disease\nDescription: An autoimmune genetic disorder with an unknown pattern of inheritance that primarily affects the digestive tract. It is caused by intolerance to dietary gluten. Consumption of gluten protein triggers an immune response which damages small intestinal villi and prevents adequate absorption of nutrients. Clinical signs include abdominal cramping, diarrhea or constipation and weight loss. If untreated, the clinical course may progress to malnutrition, anemia, osteoporosis and an increased risk of intestinal malignancies. However, the prognosis is favorable with successful avoidance of gluten in the diet.\nAssociation score: 0.274",
+          "cos_sim_score": 0.2742448337772427,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::RTN3",
+          "title": "RTN3",
+          "url": "https://en.wikipedia.org/wiki/RTN3",
+          "text": "Reticulon-3 is a protein that in humans is encoded by the RTN3 gene.\nThe reticulons are a group of highly conserved genes with preferential expression in neuroendocrine tissues (see, e.g., RTN1; MIM 600865).[supplied by OMIM]\n\nReferences\nFurther reading\nExternal links\nRTN3 human gene location in the UCSC Genome Browser.\nRTN3 human gene details in the UCSC Genome Browser.",
+          "cos_sim_score": 0.6045604348182678,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::RTN1",
+          "title": "RTN1",
+          "url": "https://en.wikipedia.org/wiki/RTN1",
+          "text": "Reticulon-1 also known as neuroendocrine-specific protein (NSP) is a protein that in humans is encoded by the RTN1 gene.\nThis gene belongs to the family of reticulon-encoding genes. Reticulons are associated with the endoplasmic reticulum, and are involved in neuroendocrine secretion or in membrane trafficking in neuroendocrine cells. Alternatively spliced transcript variants encoding different isoforms have been identified. Multiple promoters rather than alternative splicing of internal exons seem to be involved in this diversity.\n\nInteractions\nRTN1 has been shown to interact with BCL2-like 1 and UGCG.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.5870574116706848,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Reticulon",
+          "title": "Reticulon",
+          "url": "https://en.wikipedia.org/wiki/Reticulon",
+          "text": "Reticulon protein structure\nThe reticulon family contain a carboxy-terminal reticulon homology domain (RHD) that has two hydrophobic regions of 28-36 amino acids. Those regions are supposedly embedded in the membrane. Those regions are separated by the 60-70 amino acids of the hydrophilic loop. Following the loop is a carboxy-terminal tail which has a length of about 50 amino acids. The amino-terminal domains are not similar to reticulons within the family. However, the three-dimensional structure has been preserved from yeasts to plants to humans. The hydrophobic region of the structure is abnormally long compared to other transmembrane domains. The structure of the reticulon may be related to the function of this protein.\n\nLocalization in ER, N- and C-terminal ends\nReticulons are typically in the ER of cells; however, they have additionally been found on cell surfaces in mammals and on the surface of oligodendrocytes where they inhibit axon growth. The N-terminal, loop region and C-terminal are all on the cytosol side of the ER membrane and they are able to interact with other cytosolic proteins. N-terminal regions in reticulon proteins are diversified in interacting with other substrates.\nOverall, three models have been identified of RHD topology. One finding suggests that the amino-acid terminus and the 66-loop extend into the extracellular space. This would indicate that the hydrophobic region double-backs on itself in the membrane. Other data suggests that the amino-terminal is intracellular. Lastly, a third model explains the 66-loop and amino-terminal domain are cytoplasmic. All of these models suggest that reticulons may have different topologies at different regions such as the ER and plasma membrane. This would allow them to not only look different at each location, but be able to carry different roles in the cell and in different cell types.\nThe first reticulon protein RTN1 was characterized as an antigen for neuroendocrine cells from a cDNA in neural tissue. It was later renamed when it was proved to be associated with the ER from several different methods. Reticulons do not have an ER localization sequence, but the RHD hydrophobic region is able to target protein-RTN to the ER by green fluorescence. Without the RHD, there is no association with the ER. Reticulons have localized to the ER in the following organisms: yeast, Arabidopsis, Xenopus, Drosophila and mammals.",
+          "cos_sim_score": 0.5777292251586914,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Reticulon",
+          "title": "Reticulon",
+          "url": "https://en.wikipedia.org/wiki/Reticulon",
+          "text": "Reticulons in plants\nKnowledge of the reticulon is more advanced in yeasts and animals than plants. Most of what we know for plants can be derived from research from the latter, with little research on plants alone. The localization of some RTNs has been recognized in the tubules of plant cells forming the ER. However, research shows that the reticulons are restricted to the edges of the ER cisternae. Scientists have inferred that reticulons have a role in assembling the nuclear envelope during cell division. Current research includes the search for Nogo-66 protein homologs in plants. There is also hope to determine the RHD domain receptor in plants.\n\nReticulon-like proteins: Arabidopsis\nDue to the lack of information of reticulons, scientists often study reticulon-like proteins. The genome Arabidopsis thaliana has at least 19 reticulon like proteins, and 15 of them have been explicitly identified. One study on Arabadopsis looks at transport between organelles and specific receptors. The regulation of receptor transport to the plasma membrane is important for the recognition of pathogens. Membrane associated proteins travel from the ER to the Golgi bodies, and eventually the plasma membrane. Immune receptors that are related to the plasma membrane are called pattern recognition receptors (PRRs).  Through Arabidopsis protein microarrays the FLAGELIN-SENSITIVE2 (FLS2) receptor, a PRR, was tagged to identify reticulon-like protein RTNLB1 and its homolog RTNLB2. When manipulating the expression levels of RTNLB1 and RTNLB2, signaling of the FLS2 receptor was interrupted. A serine cluster at the N-terminal of the protein is important for the FLS2 interaction. Although there is not a direct interference, RTNLB1 and RTNLB2 interact with newly created FLS2 to facilitate transport to the plasma membrane. Through the RTNLB1 and RTNLB2 reticulon domain, their function is part of a larger protein system that moderates FLS2 secretion. Receptor trafficking is looked at through plant studies as an important process of receptor activity. The role of human reticulons which are involved in intracellular protein trafficking indicate the relationship between reticulons and plant RTNLBs.\nOne way those proteins can be compared to reticulons is in looking at reticulon-depleted yeast cells. Fluorescence was detected in modified ER structures of those yeast cells and the localization of the FLS2 was defected.\nIn another study, members of the RTN family of the Arabidopsis thaliana (RTNLB13) were cloned. Those members were expressed in tobacco leaf epidermal cells with an attached yellow fluorescent protein (YFP). The RTNLB13 was localized in the ER of those cells. Additionally, an ER luminal marker was tagged to further show that when RTNLB13 was added, morphological changes existed in the lumen of the ER. Fluorescence recovery after photobleaching (FRAP) analysis has shown that increased expression of RTNLB13 decreases the likeliness of proteins to be soluble in the ER lumen. To further examine that location of RTNS are the ER, the increased expression of RTNLB13 did not have an effect on the Golgi shape and secretion of a reporter protein.\n\nReferences\nExternal links\nThe structure and membrane topology of reticulons",
+          "cos_sim_score": 0.5499119758605957,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Reticulon",
+          "title": "Reticulon",
+          "url": "https://en.wikipedia.org/wiki/Reticulon",
+          "text": "Reticulons (RTNs in vertebrates and reticulon-like proteins or RNTls in other eukaryotes) are a group of evolutionary conservative proteins residing predominantly in endoplasmic reticulum, primarily playing a role in promoting membrane curvature. In addition, reticulons may play a role in nuclear pore complex formation, vesicle formation, and other processes yet to be defined. They have also been linked to oligodendrocyte roles in inhibition of neurite outgrowth. Some studies link RTNs with Alzheimer's disease and amyotrophic lateral sclerosis.\nAll eukaryotes studied so far carry RTN genes in their genomes. The reticulons are absent only in archaea and bacteria. Mammals have four reticulon genes, RTN1, RTN2, RTN3, RTN4. Plants possess a greater number of reticulon isoforms, with 21 having been identified in the commonly used model organism Arabidopsis thaliana.\nThe genes possess a number of exons and introns and are accordingly spliced into many isoforms. C-terminal region of RTNs contains a highly conservative reticulon homology domain (RHD) while other parts of the protein may vary even within a single organism.\nA peculiar feature of RTN4's isoform RTN4A (Nogo-A) is its ability to inhibit axonal growth. This reticulon subform is absent in fish, a taxon known for the heightened ability of its CNS to regenerate after injury.\nTransmembrane 33 (TMEM33) exogenously suppresses reticulon 4C function and therefore may play a role in dictating membrane curvature through inhibition of reticulon function.\n\nStructure\nEvolutionary history\nReticulon proteins, which range from 200-1,200 amino acids, have been tracked in all eukaryotic organisms that have been examined. The family of vertebrate proteins are called reticulons, and all other located eukaryotes are called reticulon-like proteins. Some examples of explored reticulon genomes of eukaryotes are in Homo sapiens, Mus musculus, Danio rerio, Drosophila melanogaster, Arabidopsis thaliana, and Saccharomyces cerevisiae. These genomes are not found in either archaea or bacteria. Because of their absence from prokaryotes and close association with the endoplasmic reticulum (ER), it is proposed that reticulons have evolved with the eukaryotic endomembrane system. In mammals, there are four reticulon genes: RTN1-4. RTN 3 and 4 have sequence identity more closely related at 73% than between 2 and 4 with only a 52% sequence identity. There is a divergence in sequence between reticulons as their splice isoforms can be variable, even in the same organism. This is consistent with the evolution of species and cell-specific roles for reticulons. The longest isoform, Nogo-A, has shown through studies that it can inhibit neurite outgrowth and regeneration. However, this isoform is absent in fish where regeneration of central nervous system is extensive. Reticulons can vary in function between species.\n\nReticulon protein structure\nThe reticulon family contain a carboxy-terminal reticulon homology domain (RHD) that has two hydrophobic regions of 28-36 amino acids. Those regions are supposedly embedded in the membrane. Those regions are separated by the 60-70 amino acids of the hydrophilic loop. Following the loop is a carboxy-terminal tail which has a length of about 50 amino acids. The amino-terminal domains are not similar to reticulons within the family. However, the three-dimensional structure has been preserved from yeasts to plants to humans. The hydrophobic region of the structure is abnormally long compared to other transmembrane domains. The structure of the reticulon may be related to the function of this protein.",
+          "cos_sim_score": 0.5416827201843262,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

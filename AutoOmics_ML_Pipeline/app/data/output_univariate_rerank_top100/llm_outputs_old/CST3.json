@@ -1,0 +1,144 @@
+{
+  "probe_id": "11757288_s_at",
+  "gene_symbol": "CST3",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.1643877112679418,
+  "abs_fold_change": 1.3746,
+  "score": 1.3709,
+  "probe_count": 1,
+  "probe_ids": "11757288_s_at",
+  "max_score": 1.3709,
+  "mean_abs_fold_change": 1.3746,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T02:17:16",
+  "interpretation": "Cystatin C (CST3) is a protein that functions as an inhibitor of cysteine proteinases, playing a crucial role in regulating enzyme activity in various physiological processes. While there is no direct evidence linking CST3 specifically to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in kidney function and potential involvement in inflammatory processes may suggest a broader relevance to conditions that affect bone health. Elevated levels of cystatin C are associated with renal impairment and cardiovascular diseases, which could indirectly relate to the pathophysiology of SONFH, particularly in patients undergoing steroid treatment. However, the evidence remains weak, and the connection to SONFH is primarily inferred rather than directly supported by specific studies. Therefore, while CST3 may have some biological relevance, its potential as a biomarker for early detection of SONFH is limited.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "CST3 may have indirect relevance to Steroid-Induced Osteonecrosis of the Femoral Head due to its role in regulating protease activity and its association with kidney function.",
+  "citations": [
+    "CST3 (P01034). https://www.uniprot.org/uniprotkb/P01034",
+    "CST3 \u2014 CST3. https://platform.opentargets.org/target/ENSG00000101439",
+    "CST3 \u2194 Hereditary cerebral hemorrhage with amyloidosis. https://platform.opentargets.org/target/ENSG00000101439/associations",
+    "CST3 \u2194 ACys amyloidosis. https://platform.opentargets.org/target/ENSG00000101439/associations",
+    "CST3 \u2194 Hereditary cerebral hemorrhage with amyloidosis, Icelandic type. https://platform.opentargets.org/target/ENSG00000101439/associations",
+    "CST3 \u2194 age-related macular degeneration. https://platform.opentargets.org/target/ENSG00000101439/associations",
+    "Cystatin C. https://en.wikipedia.org/wiki/Cystatin_C",
+    "Anders Grubb. https://en.wikipedia.org/wiki/Anders_Grubb",
+    "Cystatin. https://en.wikipedia.org/wiki/Cystatin"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5708,
+    "completion_tokens": 248,
+    "total_tokens": 5956,
+    "estimated_cost_usd": 0.001005
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P01034",
+          "title": "CST3 (P01034)",
+          "url": "https://www.uniprot.org/uniprotkb/P01034",
+          "text": "Protein: Cystatin-C\nFunction: As an inhibitor of cysteine proteinases, this protein is thought to serve an important physiological role as a local regulator of this enzyme activity",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000101439::function",
+          "title": "CST3 \u2014 CST3",
+          "url": "https://platform.opentargets.org/target/ENSG00000101439",
+          "text": "Function: As an inhibitor of cysteine proteinases, this protein is thought to serve an important physiological role as a local regulator of this enzyme activity.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101439::Orphanet_85458",
+          "title": "CST3 \u2194 Hereditary cerebral hemorrhage with amyloidosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000101439/associations",
+          "text": "Disease: Hereditary cerebral hemorrhage with amyloidosis\nDescription: Hereditary cerebral hemorrhage with amyloidosis (HCHWA) describes a group of rare familial central nervous system disorders characterized by amyloid deposition in the cerebral blood vessels leading to hemorrhagic and non-hemorrhagic strokes, focal neurological deficits, and progressive cognitive decline eventually leading to dementia.\nAssociation score: 0.594",
+          "cos_sim_score": 0.5935657159840635,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101439::MONDO_0007098",
+          "title": "CST3 \u2194 ACys amyloidosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000101439/associations",
+          "text": "Disease: ACys amyloidosis\nDescription: Hereditary cerebral hemorrhage with amyloidosis (HCHWA), Icelandic type is a form of HCHWA characterized by an age of onset of 20-30 years, systemic amyloidosis and recurrent lobar intracerebral hemorrhages.\nAssociation score: 0.520",
+          "cos_sim_score": 0.5195615450452662,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101439::Orphanet_100008",
+          "title": "CST3 \u2194 Hereditary cerebral hemorrhage with amyloidosis, Icelandic type",
+          "url": "https://platform.opentargets.org/target/ENSG00000101439/associations",
+          "text": "Disease: Hereditary cerebral hemorrhage with amyloidosis, Icelandic type\nDescription: Hereditary cerebral hemorrhage with amyloidosis (HCHWA), Icelandic type is a form of HCHWA (see this term) characterized by an age of onset of 20-30 years, systemic amyloidosis and recurrent lobar intracerebral hemorrhages.\nAssociation score: 0.519",
+          "cos_sim_score": 0.5188397093915851,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101439::EFO_0001365",
+          "title": "CST3 \u2194 age-related macular degeneration",
+          "url": "https://platform.opentargets.org/target/ENSG00000101439/associations",
+          "text": "Disease: age-related macular degeneration\nDescription: Degenerative changes in the macula lutea of the retina.\nAssociation score: 0.472",
+          "cos_sim_score": 0.47212726442464154,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Cystatin C",
+          "title": "Cystatin C",
+          "url": "https://en.wikipedia.org/wiki/Cystatin_C",
+          "text": "Cystatin C or cystatin 3 (formerly gamma trace, post-gamma-globulin, or neuroendocrine basic polypeptide), is a protein encoded by the CST3 gene. \nIn humans most nucleated cells produce cystatin C as a polypeptide of 120 amino acids. It is found in virtually all tissues and body fluids. Functionally, it is a potent inhibitor of lysosomal proteinases and an important extracellular inhibitor of cysteine proteases. Cystatin C belongs to the type 2 cystatin gene family.\nIn medicine Cystatin C is most commonly known as a biomarker of kidney function. Additionally it has a role in predicting cardiovascular disease, and may play a role in brain disorders involving amyloid such as Alzheimer's disease.\n\nRole in medicine\nKidney function\nGlomerular filtration rate (GFR), a marker of kidney health, is most accurately measured by injecting compounds such as inulin, radioisotopes such as 51chromium-EDTA, 125I-iothalamate, 99mTc-DTPA or radiocontrast agents such as iohexol, but these techniques are complicated, costly, time-consuming and have potential side-effects.\nCreatinine is the most widely used biomarker of kidney function. It is inaccurate at detecting mild renal impairment, and levels can vary with muscle mass but not with protein intake. Urea levels might change with protein intake.\nFormulas such as the Cockcroft and Gault formula and the MDRD formula (see Renal function) try to adjust for these variables.\nCystatin C has a low molecular weight (approximately 13.3 kilodaltons), and it is removed from the bloodstream by glomerular filtration in the kidneys. If kidney function and glomerular filtration rate decline, the blood levels of cystatin C rise. Cross-sectional studies (based on a single point in time) suggest that serum levels of cystatin C are a more precise test of kidney function (as represented by the glomerular filtration rate, GFR) than serum creatinine levels. Longitudinal studies (following cystatin C over time) are sparse, but some show promising results. Although studies are somewhat divergent, most studies find that cystatin C levels are less dependent on age, gender, ethnicity, diet, and muscle mass compared to creatinine, and that cystatin C is equal or superior to the other available biomarkers in a range of different patient populations, including diabetic patients, in chronic kidney disease (CKD), and after kidney transplant. It has been suggested that cystatin C might predict the risk of developing CKD, thereby signaling a state of 'preclinical' kidney dysfunction. Additionally, the age-related rise in serum cystatin C is a powerful predictor of adverse age-related health outcomes, including all-cause mortality, death from cardiovascular disease, multimorbidity, and declining physical and cognitive function. The UK's National Institute for Health and Care Excellence (NICE) guideline for the assessment and management of CKD in adults concluded that using serum cystatin C to estimate GFR is more specific for important disease outcomes than use of serum creatinine, and may reduce overdiagnosis in patients with a borderline diagnosis, reducing unnecessary appointments, patient worries, and the overall burden of CKD in the population.\nStudies have also investigated cystatin C as a marker of kidney function in the adjustment of medication dosages.\nCystatin C levels have been reported to be altered in patients with cancer, (even subtle) thyroid dysfunction and glucocorticoid therapy in some but not all situations. Other reports have found that levels are influenced by cigarette smoking and levels of C-reactive protein. However, inflammation does not cause an increase in the production of cystatin C, since elective surgical procedures, producing a strong inflammatory response in patients, do not change the plasma concentration of cystatin C. Levels seem to be increased in HIV infection, which might or might not reflect actual renal dysfunction. The role of cystatin C to monitor GFR during pregnancy remains controversial. Like creatinine, the elimination of cystatin C via routes other than the kidney increases with worsening GFR.",
+          "cos_sim_score": 0.5849419832229614,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Cystatin C",
+          "title": "Cystatin C",
+          "url": "https://en.wikipedia.org/wiki/Cystatin_C",
+          "text": "Other roles\nCystatin C levels are decreased in atherosclerotic (so-called 'hardening' of the arteries) and aneurysmal (saccular bulging) lesions of the aorta.\nGenetic and prognostic studies also suggest a role for cystatin C.\nBreakdown of parts of the vessel wall in these conditions is thought to result from an imbalance between proteinases (cysteine proteases and matrix metalloproteinases, increased) and their inhibitors (such as cystatin C, decreased).\nA few studies have looked at the role of cystatin C or the CST3 gene in age-related macular degeneration. Cystatin C has also been investigated as a prognostic marker in several forms of cancer. Its role in pre-eclampsia remains to be confirmed.\n\nLaboratory measurement\nCystatin C can be measured in a random sample of serum (the fluid in blood from which the red blood cells and clotting factors have been removed) using immunoassays such as nephelometry or particle-enhanced turbidimetry. It is a more expensive test than serum creatinine (around $2 or $3, compared to $0.02 to $0.15), which can be measured with a Jaffe reaction.\nReference values differ in many populations and with sex and age. Across different studies, the mean reference interval (as defined by the 5th and 95th percentile) was between 0.52 and 0.98 mg/L. For women, the average reference interval is 0.52 to 0.90 mg/L with a mean of 0.71 mg/L. For men, the average reference interval is 0.56 to 0.98 mg/L with a mean of 0.77 mg/L.\nThe normal values decrease until the first year of life, remaining relatively stable before they increase again, especially beyond age 50. Creatinine levels increase until puberty and differ according to gender from then on, making their interpretation problematic for pediatric patients.\nIn a large study from the United States National Health and Nutrition Examination Survey, the reference interval (as defined by the 1st and 99th percentile) was between 0.57 and 1.12 mg/L. This interval was 0.55 - 1.18 for women and 0.60 - 1.11 for men. Non-Hispanic blacks and Mexican Americans had lower normal cystatin C levels. Other studies have found that in patients with an impaired renal function, women have lower and blacks have higher cystatin C levels for the same GFR. For example, the cut-off values of cystatin C for  CKD for a 60-year-old white women would be 1.12 mg/L and 1.27 mg/L in a black man (a 13% increase). For serum creatinine values adjusted with the MDRD equation, these values would be 0.95 mg/dL to 1.46 mg/dL (a 54% increase).\nBased on a threshold level of 1.09 mg/L (the 99th percentile in a population of 20- to 39-year-olds without hypertension, diabetes, microalbuminuria or macroalbuminuria or higher than stage 3 chronic kidney disease), the prevalence of increased levels of cystatin C in the United States was 9.6% in subjects of normal weight, increasing in overweight and obese individuals. In Americans aged 60 and 80 and older, serum cystatin is increased in 41% and more than 50%.",
+          "cos_sim_score": 0.5583773851394653,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Anders Grubb",
+          "title": "Anders Grubb",
+          "url": "https://en.wikipedia.org/wiki/Anders_Grubb",
+          "text": "Awards and honors\n1984 - Poul Astrup\u00b4s Award for Distinguished Research in Clinical Chemistry\n1987 - Eric K. Fernstr\u00f6m's Award for Distinguished Biomedical Research\n1989 - The Kone Award for Distinguished Research in Clinical Chemistry, British Association of Clinical Biochemistry\n1991 - The jubilee-award for distinguished scientific work, Swedish Society of Medical Sciences\n2007 - The Falcon Order of Iceland for successful cooperation/education with/of Icelandic scientists\n2010, 2016 - Lorentz Eldjarn\u00b4s award\n\nBibliography\nBooks\nCystatin C as a multifaceted biomarker in kidney disease and its role in defining \"Shrunken Pore Syndrome\". (2017) In Biomarkers of kidney disease ISBN 978-0-12-803014-1. Editor: C. L. Edelstein. Elsevier. pp. 225\u2013240.\nLaurells Klinisk kemi i praktisk medicin (2018) ISBN 978-91-44-11974-8\n\n\n== References ==",
+          "cos_sim_score": 0.5556157827377319,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Cystatin",
+          "title": "Cystatin",
+          "url": "https://en.wikipedia.org/wiki/Cystatin",
+          "text": "The cystatins are a family of cysteine protease inhibitors which share a sequence homology and a common tertiary structure of an alpha helix lying on top of an anti-parallel beta sheet. The family is subdivided as described below.\nCystatins show similarity to fetuins, kininogens, histidine-rich glycoproteins and cystatin-related proteins. \nCystatins mainly inhibit peptidase enzymes (another term for proteases) belonging to peptidase families C1 (papain family) and C13 (legumain family). They are known to mis-fold to form amyloid deposits and are implicated in several diseases.\n\nTypes\nThe cystatin family includes:\n\nThe Type 1 cystatins, which are intracellular and are present in the cytosol of many cell types, but can also appear in body fluids at significant concentrations. They are single-chain polypeptides of about 100 residues, which have neither disulfide bonds nor carbohydrate side-chains. Type 1 cystatins are also known as Stefins (after the Stefan Institute where they were first discovered )\nThe Type 2 cystatins, which are mainly extracellular secreted polypeptides are largely acidic, contain four conserved cysteine residues known to form two disulfide bonds, may be glycosylated and/or phosphorylated. They are synthesised with a 19- to 28-residue signal peptide. They are broadly distributed and found in most body fluids.\nThe Type 3 cystatins, which are multidomain proteins. The mammalian representatives of this group are the kininogens. There are three different kininogens in mammals: H- (high-molecular-mass, InterPro: IPR002395) and L- (low-molecular-mass) kininogen, which are found in a number of species, and T-kininogen, which is found only in rats.\nUnclassified cystatins. These are cystatin-like proteins found in a range of organisms: plant phytocystatins, fetuin in mammals, insect cystatins, and a puff adder venom cystatin, which inhibits metalloproteases of the MEROPS peptidase family M12 (astacin/adamalysin). Also, a number of the cystatin-like proteins have been shown to be devoid of inhibitory activity.\n\nHuman cystatins\nCST1, CST2, CST3 (cystatin C, a marker of kidney function), CST4, CST5, CST6, CST7, CST8, CST9, CST11, CSTA (cystatin A), CSTB (cystatin B)\n\nPlant cystatins\nPlant cystatins have special characteristics which permit them to be classified in a special class called Phytocystatin. One is the presence of a N-terminal alpha-helix, present only in plant cystatins. Phytocystatins are involved in several process, including plant germination and defense. van Wyk et al. found some 19 different cystatins similar to oryzacystatin-I in the soybean along with related cysteine proteases.",
+          "cos_sim_score": 0.5495721101760864,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Cystatin C",
+          "title": "Cystatin C",
+          "url": "https://en.wikipedia.org/wiki/Cystatin_C",
+          "text": "Molecular biology\nThe cystatin superfamily encompasses proteins that contain multiple cystatin-like sequences. Some of the members are active cysteine protease inhibitors, while others have lost or perhaps never acquired this inhibitory activity. There are three inhibitory families in the superfamily, including the type 1 cystatins (stefins), type 2 cystatins and the kininogens. The type 2 cystatin proteins are a class of cysteine proteinase inhibitors found in a variety of human fluids and secretions, where they appear to provide protective functions. The cystatin locus on the short arm of chromosome 20 contains the majority of the type 2 cystatin genes and pseudogenes.\nThe CST3 gene is located in the cystatin locus and comprises 3 exons (coding regions, as opposed to introns, non-coding regions within a gene), spanning 4.3 kilo-base pairs. It encodes the most abundant extracellular inhibitor of cysteine proteases. It is found in high concentrations in biological fluids and is expressed in virtually all organs of the body (CST3 is a housekeeping gene). The highest levels are found in semen, followed by breastmilk, tears and saliva. The hydrophobic leader sequence indicates that the protein is normally secreted. There are three polymorphisms in the promoter region of the gene, resulting in two common variants. Several single nucleotide polymorphisms have been associated with altered cystatin C levels.\nCystatin C is a non-glycosylated, basic protein (isoelectric point at pH 9.3). The crystal structure of cystatin C is characterized by a short alpha helix and a long alpha helix which lies across a large antiparallel, five-stranded beta sheet. Like other type 2 cystatins, it has two disulfide bonds. Around 50% of the molecules carry a hydroxylated proline. Cystatin C forms dimers (molecule pairs) by exchanging subdomains; in the paired state, each half is made up of the long alpha helix and one beta strand of one partner, and four beta strands of the other partner.\n\nHistory\nCystatin C was first described as 'gamma-trace' in 1961 as a trace protein together with other ones (such as beta-trace) in the cerebrospinal fluid and in the urine of people with kidney failure. Grubb and L\u00f6fberg first reported its amino acid sequence. They noticed it was increased in patients with advanced kidney failure. It was first proposed as a measure of glomerular filtration rate by Grubb and coworkers in 1985.\nUse of serum creatinine and cystatin C was found very effective in accurately reflecting the GFR in a study reported in the July 5, 2012, issue of the New England Journal of Medicine.\n\nReferences\nExternal links\nThe MEROPS online database for peptidases and their inhibitors: I25.004 Archived 2016-01-20 at the Wayback Machine\nOverview of all the structural information available in the PDB for UniProt: P01034 (Cystatin-C) at the PDBe-KB.",
+          "cos_sim_score": 0.5414834022521973,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

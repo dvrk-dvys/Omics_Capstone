@@ -1,0 +1,162 @@
+{
+  "probe_id": "11715757_a_at",
+  "gene_symbol": "RGS2",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.1129477828294585,
+  "abs_fold_change": 1.4678,
+  "score": 1.4621,
+  "probe_count": 1,
+  "probe_ids": "11715757_a_at",
+  "max_score": 1.4621,
+  "mean_abs_fold_change": 1.4678,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T02:13:35",
+  "interpretation": "RGS2 (Regulator of G-protein signaling 2) is a protein that modulates G protein-coupled receptor signaling by enhancing the GTPase activity of G protein alpha subunits, thus promoting their inactivation. This function is crucial in various physiological processes, including vascular regulation and cardiac function. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), RGS2's role in regulating signaling pathways may influence the cellular responses to steroid treatment, which is known to contribute to osteonecrosis. However, the evidence linking RGS2 directly to SONFH is limited, primarily relying on its general biological functions rather than specific studies in this disease context. Therefore, while RGS2 may have potential as a biomarker due to its involvement in signaling pathways relevant to bone health, the current evidence does not strongly support its direct clinical relevance as an early-detection biomarker for SONFH.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "RGS2 may influence signaling pathways related to steroid treatment, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "RGS2 (P41220). https://www.uniprot.org/uniprotkb/P41220",
+    "RGS2 (P41220-2). https://www.uniprot.org/uniprotkb/P41220-2",
+    "RGS2 (P41220-4). https://www.uniprot.org/uniprotkb/P41220-4",
+    "RGS2 \u2014 RGS2. https://platform.opentargets.org/target/ENSG00000116741",
+    "RGS2 \u2194 cataract. https://platform.opentargets.org/target/ENSG00000116741/associations",
+    "RGS2 \u2194 spondylolisthesis. https://platform.opentargets.org/target/ENSG00000116741/associations",
+    "RGS2 \u2194 trauma complication. https://platform.opentargets.org/target/ENSG00000116741/associations",
+    "RGS2 \u2194 neoplasm. https://platform.opentargets.org/target/ENSG00000116741/associations",
+    "Regulator of G protein signaling. https://en.wikipedia.org/wiki/Regulator_of_G_protein_signaling",
+    "RGS2. https://en.wikipedia.org/wiki/RGS2",
+    "GTPase-activating protein. https://en.wikipedia.org/wiki/GTPase-activating_protein",
+    "G protein-coupled receptor. https://en.wikipedia.org/wiki/G_protein-coupled_receptor",
+    "G protein. https://en.wikipedia.org/wiki/G_protein"
+  ],
+  "token_usage": {
+    "prompt_tokens": 6778,
+    "completion_tokens": 261,
+    "total_tokens": 7039,
+    "estimated_cost_usd": 0.001173
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P41220",
+          "title": "RGS2 (P41220)",
+          "url": "https://www.uniprot.org/uniprotkb/P41220",
+          "text": "Protein: Regulator of G-protein signaling 2\nFunction: Regulates G protein-coupled receptor signaling cascades. Inhibits signal transduction by increasing the GTPase activity of G protein alpha subunits, thereby driving them into their inactive GDP-bound form (PubMed:11063746, PubMed:19478087). It is involved in the negative regulation of the angiotensin-activated signaling pathway (PubMed:28784619). Plays a role in the regulation of blood pressure in response to signaling via G protein-coupled receptors and GNAQ. Plays a role in regulating the constriction and relaxation of vascular smooth muscle (By similarity). Binds EIF2B5 and blocks its activity, thereby inhibiting the translation of mRNA into protein (PubMed:19736320)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P41220-2",
+          "title": "RGS2 (P41220-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P41220-2",
+          "text": "Protein: Isoform 2 of Regulator of G-protein signaling 2",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P41220-4",
+          "title": "RGS2 (P41220-4)",
+          "url": "https://www.uniprot.org/uniprotkb/P41220-4",
+          "text": "Protein: Isoform 4 of Regulator of G-protein signaling 2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000116741::function",
+          "title": "RGS2 \u2014 RGS2",
+          "url": "https://platform.opentargets.org/target/ENSG00000116741",
+          "text": "Function: Regulates G protein-coupled receptor signaling cascades. Inhibits signal transduction by increasing the GTPase activity of G protein alpha subunits, thereby driving them into their inactive GDP- bound form (PubMed:11063746, PubMed:19478087). It is involved in the negative regulation of the angiotensin-activated signaling pathway (PubMed:28784619). Plays a role in the regulation of blood pressure in response to signaling via G protein-coupled receptors and GNAQ. Plays a role in regulating the constriction and relaxation of vascular smooth muscle (By similarity). Binds EIF2B5 and blocks its activity, thereby inhibiting the translation of mRNA into protein (PubMed:19736320).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000116741::MONDO_0005129",
+          "title": "RGS2 \u2194 cataract",
+          "url": "https://platform.opentargets.org/target/ENSG00000116741/associations",
+          "text": "Disease: cataract\nDescription: Partial or complete opacity of the crystalline lens of one or both eyes that decreases visual acuity and eventually results in blindness. Some cataracts appear in infancy or in childhood, but most develop in older individuals. (Sternberg Diagnostic Surgical Pathology, 3rd ed.)\nAssociation score: 0.273",
+          "cos_sim_score": 0.2726758193036988,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000116741::EFO_0007493",
+          "title": "RGS2 \u2194 spondylolisthesis",
+          "url": "https://platform.opentargets.org/target/ENSG00000116741/associations",
+          "text": "Disease: spondylolisthesis\nDescription: A condition in which there is forward displacement of a vertebral bone over the on below it.\nAssociation score: 0.261",
+          "cos_sim_score": 0.2614306648597352,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000116741::EFO_0009888",
+          "title": "RGS2 \u2194 trauma complication",
+          "url": "https://platform.opentargets.org/target/ENSG00000116741/associations",
+          "text": "Disease: trauma complication\nDescription: Any problem that occurs because of a trauma or injury, other than the trauma or injury itself.\nAssociation score: 0.261",
+          "cos_sim_score": 0.2614306648597352,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000116741::EFO_0000616",
+          "title": "RGS2 \u2194 neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000116741/associations",
+          "text": "Disease: neoplasm\nDescription: A benign or malignant tissue growth resulting from uncontrolled cell proliferation. Benign neoplastic cells resemble normal cells without exhibiting significant cytologic atypia, while malignant cells exhibit overt signs such as dysplastic features, atypical mitotic figures, necrosis, nuclear pleomorphism, and anaplasia. Representative examples of benign neoplasms include papillomas, cystadenomas, and lipomas; malignant neoplasms include carcinomas, sarcomas, lymphomas, and leukemias.\nAssociation score: 0.104",
+          "cos_sim_score": 0.10367926986497743,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Regulator of G protein signaling",
+          "title": "Regulator of G protein signaling",
+          "url": "https://en.wikipedia.org/wiki/Regulator_of_G_protein_signaling",
+          "text": "Regulators of G protein signaling (RGS) are protein structural domains or the proteins that contain these domains, that function to activate the GTPase activity of heterotrimeric G-protein \u03b1-subunits.\nRGS proteins are multi-functional, GTPase-accelerating proteins that promote GTP hydrolysis by the \u03b1-subunit of heterotrimeric G proteins, thereby inactivating the G protein and rapidly switching off G protein-coupled receptor signaling pathways. Upon activation by receptors, G proteins exchange GDP for GTP, are released from the receptor, and dissociate into a free, active GTP-bound \u03b1-subunit and \u03b2\u03b3-dimer, both of which activate downstream effectors. The response is terminated upon GTP hydrolysis by the \u03b1-subunit (InterPro: IPR001019), which can then re-bind the \u03b2\u03b3-dimer (InterPro: IPR001632 InterPro: IPR001770) and the receptor. RGS proteins markedly reduce the lifespan of GTP-bound \u03b1-subunits by stabilising the G protein transition state. Whereas receptors stimulate GTP binding, RGS proteins stimulate GTP hydrolysis.\nRGS proteins have been conserved in evolution. The first to be identified was Sst2 (\"SuperSensiTivity to pheromone\") in yeast (Saccharomyces cerevisiae). All RGS proteins contain an RGS-box (or RGS domain), which is required for activity. Some small RGS proteins such as RGS1 and RGS4 are little more than an RGS domain, while others also contain additional domains that confer further functionality.\nRGS domains in the G protein-coupled receptor kinases are able to bind to Gq family \u03b1-subunits, but do not accelerate their GTP hydrolysis. Instead, GRKs appear to reduce Gq signaling by sequestering the active \u03b1-subunits away from effectors such as phospholipase C-\u03b2.\nPlants have RGS proteins but do not have canonical G protein-coupled receptors. Thus G proteins and GTPase accelerating proteins appear to have evolved before any known G protein activator.\nRGS domains can be found within the same protein in combination with a variety of other domains, including: DEP for membrane targeting (InterPro: IPR000591), PDZ for binding to GPCRs (InterPro: IPR001478), PTB for phosphotyrosine-binding (InterPro: IPR006020), RBD for Ras-binding (InterPro: IPR003116), GoLoco for guanine nucleotide inhibitor activity (InterPro: IPR003109), PX for phosphoinositide-binding (InterPro: IPR001683), PXA that is associated with PX (InterPro: IPR003114), PH for phosphatidylinositol-binding (InterPro: IPR001849), and GGL (G protein gamma subunit-like) for binding G protein beta subunits (InterPro: IPR001770 Those RGS proteins that contain GGL domains can interact with G protein beta subunits to form novel dimers that prevent G protein gamma subunit binding and G protein alpha subunit association, thereby preventing heterotrimer formation.\n\nExamples\nHuman proteins containing this domain include:\n\nAXIN1, AXIN2\nGRK1, GRK2, GRK3, GRK4, GRK5, GRK6, GRK7\nRGS1, RGS2, RGS3, RGS4, RGS5, RGS6, RGS7, RGS8, RGS9, RGS10, RGS11, RGS12, RGS13, RGS14, RGS16, RGS17, RGS18, RGS19, RGS20, RGS21\nSNX13\n\nSee also\nGTP-binding protein regulators:\n\nGEF\nGAP\n\nReferences\nFurther reading\nExternal links\n[1] in PROSITE",
+          "cos_sim_score": 0.6574764847755432,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::RGS2",
+          "title": "RGS2",
+          "url": "https://en.wikipedia.org/wiki/RGS2",
+          "text": "Regulator of G-protein signaling 2 is a protein that in humans is encoded by the RGS2 gene. It is part of a larger family of RGS proteins that control signalling through G-protein coupled receptors (GPCR).\n\nFunction\nRGS2 is thought to have protective effects against myocardial hypertrophy as well as atrial arrhythmias. Increased stimulation of Gs coupled \u03b21-adrenergic receptors and Gq coupled \u03b11-adrenergic receptors in the heart can result in cardiac hypertrophy. In the case of Gq protein coupled receptor (GqPCR) mediated hypertrophy, G\u03b1q will activate the intracellular affectors phospholipase C\u03b2 and rho guanine nucleotide exchange factor to stimulate cell processes which lead to cardiomyocyte hypertrophy. RGS2 functions as a GTPase Activating Protein (GAP) which acts to increase the natural GTPase activity of the G\u03b1 subunit.  By increasing the GTPase activity of the G\u03b1 subunit, RGS2 promotes GTP hydrolysis back to GDP, thus converting the G\u03b1 subunit back to its inactive state and reducing its signalling ability. Both GsPCR and GqPCR activation can contribute to cardiac hypertrophy via activation of MAP Kinases as well. RGS2 has been shown to decrease phosphorylation of those MAP kinases and therefore decrease their activation in response to G\u03b1s signalling.\nIn the case of GsPCR mediated hypertrophy, the main mechanism by which signalling contributes to hypertrophy is through the G\u03b2\u03b3 subunit; G\u03b1s signalling by itself is not sufficient.  Nevertheless, RGS2 has been shown to inhibit Gs mediated hypertrophy. The mechanism of how RGS2 regulates increased G\u03b2\u03b3 signalling is not well understood, apart from the fact that it is unrelated to RGS2's GAP function. A deficiency in RGS2 has been linked with increased cardiac hypertrophy in mice. RGS2 deficient hearts appear normal until confronted with an increased workload, to which they respond readily with increased G\u03b1q signalling and hypertrophy.\nG\u03b1s subunits increase adenyl cyclase activity, which in turn leads to cAMP accumulation in the myocyte nucleus to trigger hypertrophy. RGS2 regulates the effects of increased G\u03b1s signalling through its GAP function. Stimulation of GsPCRs  not only leads to hypertrophy but it has also been shown to selectively induce higher expression levels of RGS2 which in turn, protects against hypertrophy, providing a mechanism for maintaining homeostatic conditions.\nThere has also been some evidence of a role of RGS2 in atrial arrhythmias where RGS2 deficient mice exhibited prolonged and greater susceptibility to electrically induced atrial fibrillation. This was attributed to a decrease in RGS2's inhibitory effects on Gq coupled M3 muscarinic receptor signalling, resulting in increased G\u03b1q activity. The M3 muscarinic receptor normally activates delayed rectifier potassium channels in the atria, thus increased G\u03b1q activity is thought to result in an altered potassium flux, a decreased refractory period, increased chance of current re-entry and inappropriate contraction.\n\nInteractions\nRGS2 has been shown to interact with PRKG1 and ADCY5.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.6538320183753967,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::GTPase-activating protein",
+          "title": "GTPase-activating protein",
+          "url": "https://en.wikipedia.org/wiki/GTPase-activating_protein",
+          "text": "GTPase-activating proteins or GTPase-accelerating proteins (GAPs) are a family of regulatory proteins whose members can bind to activated G proteins and stimulate their GTPase activity, with the result of terminating the signaling event.  GAPs are also known as RGS protein, or RGS proteins, and these proteins are crucial in controlling the activity of G proteins.  Regulation of G proteins is important because these proteins are involved in a variety of important cellular processes.  The large G proteins, for example, are involved in transduction of signaling from the G protein-coupled receptor for a variety of signaling processes like hormonal signaling, and small G proteins are involved in processes like cellular trafficking and cell cycling.  GAP's role in this function is to turn the G protein's activity off.  In this sense, GAPs function is opposite to that of guanine nucleotide exchange factors (GEFs), which serve to enhance G protein signaling.\n\nMechanism\nGAP are heavily linked to the G-protein linked receptor family. The activity of G proteins comes from their ability to bind guanosine triphosphate (GTP).   Binding of GTP inherently changes the activity of the G proteins and increases their activity, through the loss of inhibitory subunits.  In this more active state, G proteins can bind other proteins and turn on downstream signalling targets. This whole process is regulated by GAPs, which can down regulate the activity of G proteins.\n\nG proteins can weakly hydrolyse GTP, breaking a phosphate bond to make GDP.  In the GDP-bound state, the G proteins are subsequently inactivated and can no longer bind their targets.  This hydrolysis reaction, however, occurs very slowly, meaning G proteins have a built-in timer for their activity.  G proteins have a window of activity followed by slow hydrolysis, which turns them off.  GAP accelerates this G protein timer by increasing the hydrolytic GTPase activity of the G proteins, hence the name GTPase-activating protein. \nIt is thought that GAPs serve to make GTP on the G protein a better substrate for nucleophilic attack and lower the transition state energy for the hydrolysis reaction.  For example, many GAPs of the small G proteins have a conserved finger-like domain, usually an arginine finger, which changes the conformation of the GTP-bound G protein to orient the GTP for better nucleophilic attack by water.  This makes the GTP a better substrate for the reaction.  Similarly, GAPs seem to induce a GDP-like charge distribution in the bound GTP.  Because the change in charge distribution makes the GTP substrate more like the products of the reaction, GDP and monophosphate, this, along with opening the molecule for nucleophilic attack, lowers the transition state energy barrier of the reaction and allows GTP to be hydrolyzed more readily.  GAPs, then, work to enhance the GTP hydrolysis reaction of the G proteins.  By doing so, they accelerate the G protein's built-in timer, which inactivates the G proteins more quickly, and along with the inactivation of GEFs, this keeps the G protein signal off.  GAPs, then, are critical in the regulation of G proteins.\n\nSpecificity to G proteins\nIn general, GAPs tend to be pretty specific for their target G proteins.  The exact mechanism of target specificity is not fully known, but it is likely that this specificity comes from a variety of factors.  At the most basic level, GAP-to-G protein specificity may come simply from the timing and location of protein expression.  RGS9-1, for example, is specifically expressed in the rod and cone photoreceptors in the eye retina, and is the only one to interact with G proteins involved in phototransduction in this area.  A certain GAP and a certain G protein happen to be expressed in the same time and place, and that is how the cell ensures specificity.  Meanwhile, scaffold proteins can also sequester the proper GAP to its G protein and enhance the proper binding interactions.  These binding interactions may be specific for a particular GAP and G protein.  Also, GAPs may have particular amino acid domains that recognize only a particular G protein.  Binding to other G proteins may not have the same favorable interactions, and they therefore do not interact.  GAPs can, therefore, regulate specific G proteins.",
+          "cos_sim_score": 0.5997601747512817,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::G protein-coupled receptor",
+          "title": "G protein-coupled receptor",
+          "url": "https://en.wikipedia.org/wiki/G_protein-coupled_receptor",
+          "text": "G-protein activation/deactivation cycle\nWhen the receptor is inactive, the GEF domain may be bound to an also inactive \u03b1-subunit of a heterotrimeric G-protein. These \"G-proteins\" are a trimer of \u03b1, \u03b2, and \u03b3 subunits (known as G\u03b1, G\u03b2, and G\u03b3, respectively) that is rendered inactive when reversibly bound to Guanosine diphosphate (GDP) (or, alternatively, no guanine nucleotide) but active when bound to guanosine triphosphate (GTP). Upon receptor activation, the GEF domain, in turn, allosterically activates the G-protein by facilitating the exchange of a molecule of GDP for GTP at the G-protein's \u03b1-subunit. The cell maintains a 10:1 ratio of cytosolic GTP:GDP so exchange for GTP is ensured. At this point, the subunits of the G-protein dissociate from the receptor, as well as each other, to yield a G\u03b1-GTP monomer and a tightly interacting G\u03b2\u03b3 dimer, which are now free to modulate the activity of other intracellular proteins. The extent to which they may diffuse, however, is limited due to the palmitoylation of G\u03b1 and the presence of an isoprenoid moiety that has been covalently added to the C-termini of G\u03b3.\nBecause G\u03b1 also has slow GTP\u2192GDP hydrolysis capability, the inactive form of the \u03b1-subunit (G\u03b1-GDP) is eventually regenerated, thus allowing reassociation with a G\u03b2\u03b3 dimer to form the \"resting\" G-protein, which can again bind to a GPCR and await activation. The rate of GTP hydrolysis is often accelerated due to the actions of another family of allosteric modulating proteins called regulators of G-protein signaling, or RGS proteins, which are a type of GTPase-activating protein, or GAP. In fact, many of the primary effector proteins (e.g., adenylate cyclases) that become activated/inactivated upon interaction with G\u03b1-GTP also have GAP activity. Thus, even at this early stage in the process, GPCR-initiated signaling has the capacity for self-termination.\n\nCrosstalk\nGPCRs downstream signals have been shown to possibly interact with integrin signals, such as FAK. Integrin signaling will phosphorylate FAK, which can then decrease GPCR G\u03b1s activity.\n\nSignaling\nIf a receptor in an active state encounters a G protein, it may activate it. Some evidence suggests that receptors and G proteins are actually pre-coupled. For example, binding of G proteins to receptors affects the receptor's affinity for ligands. Activated G proteins are bound to GTP.\nFurther signal transduction depends on the type of G protein. The enzyme adenylate cyclase is an example of a cellular protein that can be regulated by a G protein, in this case the G protein Gs. Adenylate cyclase activity is activated when it binds to a subunit of the activated G protein. Activation of adenylate cyclase ends when the G protein returns to the GDP-bound state.\nAdenylate cyclases (of which 9 membrane-bound and one cytosolic forms are known in humans) may also be activated or inhibited in other ways (e.g., Ca2+/calmodulin binding), which can modify the activity of these enzymes in an additive or synergistic fashion along with the G proteins.\nThe signaling pathways activated through a GPCR are limited by the primary sequence and tertiary structure of the GPCR itself but ultimately determined by the particular conformation stabilized by a particular ligand, as well as the availability of transducer molecules. Currently, GPCRs are considered to utilize two primary types of transducers: G-proteins and \u03b2-arrestins. Because \u03b2-arr's have high affinity only to the phosphorylated form of most GPCRs (see above or below), the majority of signaling is ultimately dependent upon G-protein activation. However, the possibility for interaction does allow for G-protein-independent signaling to occur.",
+          "cos_sim_score": 0.5761945843696594,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::G protein",
+          "title": "G protein",
+          "url": "https://en.wikipedia.org/wiki/G_protein",
+          "text": "G proteins, also known as guanine nucleotide-binding proteins, are a family of proteins that act as molecular switches inside cells, and are involved in transmitting signals from a variety of stimuli outside a cell to its interior.  Their activity is regulated by factors that control their ability to bind to and hydrolyze guanosine triphosphate (GTP) to guanosine diphosphate (GDP). When they are bound to GTP, they are 'on', and, when they are bound to GDP, they are 'off'. G proteins belong to the larger group of enzymes called GTPases.\nThere are two classes of G proteins. The first function as monomeric small GTPases (small G-proteins), while the second function as heterotrimeric G protein complexes. The latter class of complexes is made up of alpha (G\u03b1), beta (G\u03b2) and gamma (G\u03b3) subunits. In addition, the beta and gamma subunits can form a stable dimeric complex referred to as the beta-gamma complex\n.\nHeterotrimeric G proteins located within the cell are activated by G protein-coupled receptors (GPCRs) that span the cell membrane. Signaling molecules bind to a domain of the GPCR located outside the cell, and an intracellular GPCR domain then in turn activates a particular G protein. Some active-state GPCRs have also been shown to be \"pre-coupled\" with G proteins, whereas in other cases a collision coupling mechanism is thought to occur. The G protein triggers a cascade of further signaling events that finally results in a change in cell function. G protein-coupled receptors and G proteins working together transmit signals from many hormones, neurotransmitters, and other signaling factors. G proteins regulate metabolic enzymes, ion channels, transporter proteins, and other parts of the cell machinery, controlling transcription, motility, contractility, and secretion, which in turn regulate diverse systemic functions such as embryonic development, learning and memory, and homeostasis.\n\nHistory\nG proteins were discovered in 1980 when Alfred G. Gilman and Martin Rodbell investigated stimulation of cells by adrenaline. They found that when adrenaline binds to a receptor, the receptor does not stimulate enzymes (inside the cell) directly. Instead, the receptor stimulates a G protein, which then stimulates an enzyme. An example is adenylate cyclase, which produces the second messenger cyclic AMP. For this discovery, they won the 1994 Nobel Prize in Physiology or Medicine.\nNobel prizes have been awarded for many aspects of signaling by G proteins and GPCRs. These include receptor antagonists, neurotransmitters, neurotransmitter reuptake, G protein-coupled receptors, G proteins, second messengers, the enzymes that trigger protein phosphorylation in response to cAMP, and consequent metabolic processes such as glycogenolysis.\nProminent examples include (in chronological order of awarding):",
+          "cos_sim_score": 0.5687141418457031,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

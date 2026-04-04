@@ -1,0 +1,167 @@
+{
+  "rf_rank": 1,
+  "probe_id": "11718340_x_at",
+  "gene_symbol": "DAZAP2",
+  "score": 0.92,
+  "rf_n_nodes": 1,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.7752,
+  "log_fc": 0.7752,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11718340_x_at",
+  "max_score": 0.92,
+  "mean_abs_fold_change": 0.7752,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T17:26:33",
+  "interpretation": "DAZAP2 (DAZ-associated protein 2) is involved in regulating protein degradation and gene expression, particularly in response to cellular stress. It promotes the degradation of HIPK2, a kinase that can influence cell survival and apoptosis, and modulates the expression of TP53 target genes, which are crucial for cell cycle regulation and apoptosis. Although there is no direct evidence linking DAZAP2 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in cellular stress responses and apoptosis may be relevant in the context of steroid-induced damage to bone cells. The evidence gathered is primarily indirect, suggesting that while DAZAP2 may not be a direct biomarker for SONFH, its involvement in stress response pathways could imply a potential role in the disease's progression. Therefore, the clinical relevance of DAZAP2 as an early-detection biomarker for SONFH remains weak and speculative.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "DAZAP2 may play a role in cellular stress responses that could be relevant to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "DAZAP2 (Q15038). https://www.uniprot.org/uniprotkb/Q15038",
+    "DAZAP2 (Q15038-4). https://www.uniprot.org/uniprotkb/Q15038-4",
+    "DAZAP2 (Q15038-5). https://www.uniprot.org/uniprotkb/Q15038-5",
+    "DAZAP2 \u2014 DAZAP2. https://platform.opentargets.org/target/ENSG00000183283",
+    "DAZAP2 \u2194 age-related macular degeneration. https://platform.opentargets.org/target/ENSG00000183283/associations",
+    "DAZAP2 \u2194 X-linked retinal dysplasia. https://platform.opentargets.org/target/ENSG00000183283/associations",
+    "DAZAP2 \u2194 retinitis pigmentosa. https://platform.opentargets.org/target/ENSG00000183283/associations",
+    "DAZAP2 \u2194 cancer. https://platform.opentargets.org/target/ENSG00000183283/associations",
+    "DAZAP2. https://en.wikipedia.org/wiki/DAZAP2",
+    "Protein FAM46B. https://en.wikipedia.org/wiki/Protein_FAM46B",
+    "FAM46C. https://en.wikipedia.org/wiki/FAM46C"
+  ],
+  "token_usage": {
+    "prompt_tokens": 6402,
+    "completion_tokens": 262,
+    "total_tokens": 6664,
+    "estimated_cost_usd": 0.001117
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q15038",
+          "title": "DAZAP2 (Q15038)",
+          "url": "https://www.uniprot.org/uniprotkb/Q15038",
+          "text": "Protein: DAZ-associated protein 2\nFunction: In unstressed cells, promotes SIAH1-mediated polyubiquitination and degradation of the serine/threonine-protein kinase HIPK2, probably by acting as a loading factor that potentiates complex formation between HIPK2 and ubiquitin ligase SIAH1 (PubMed:33591310). In response to DNA damage, localizes to the nucleus following phosphorylation by HIPK2 and modulates the expression of a subset of TP53/p53 target genes by binding to TP53 at target gene promoters (PubMed:33591310). This limits the expression of a number of cell death-mediating TP53 target genes, reducing DNA damage-induced cell death (PubMed:33591310). Enhances the binding of transcription factor TCF7L2/TCF4, a Wnt signaling pathway effector, to the promoters of target genes (By similarity). Plays a role in stress granule formation (PubMed:17984221)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q15038-4",
+          "title": "DAZAP2 (Q15038-4)",
+          "url": "https://www.uniprot.org/uniprotkb/Q15038-4",
+          "text": "Protein: Isoform 4 of DAZ-associated protein 2",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q15038-5",
+          "title": "DAZAP2 (Q15038-5)",
+          "url": "https://www.uniprot.org/uniprotkb/Q15038-5",
+          "text": "Protein: Isoform 5 of DAZ-associated protein 2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000183283::function",
+          "title": "DAZAP2 \u2014 DAZAP2",
+          "url": "https://platform.opentargets.org/target/ENSG00000183283",
+          "text": "Function: In unstressed cells, promotes SIAH1-mediated polyubiquitination and degradation of the serine/threonine-protein kinase HIPK2, probably by acting as a loading factor that potentiates complex formation between HIPK2 and ubiquitin ligase SIAH1 (PubMed:33591310). In response to DNA damage, localizes to the nucleus following phosphorylation by HIPK2 and modulates the expression of a subset of TP53/p53 target genes by binding to TP53 at target gene promoters (PubMed:33591310). This limits the expression of a number of cell death-mediating TP53 target genes, reducing DNA damage-induced cell death (PubMed:33591310). Enhances the binding of transcription factor TCF7L2/TCF4, a Wnt signaling pathway effector, to the promoters of target genes (By similarity). Plays a role in stress granule formation (PubMed:17984221).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000183283::EFO_0001365",
+          "title": "DAZAP2 \u2194 age-related macular degeneration",
+          "url": "https://platform.opentargets.org/target/ENSG00000183283/associations",
+          "text": "Disease: age-related macular degeneration\nDescription: Degenerative changes in the macula lutea of the retina.\nAssociation score: 0.087",
+          "cos_sim_score": 0.08741065853067474,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000183283::MONDO_0010722",
+          "title": "DAZAP2 \u2194 X-linked retinal dysplasia",
+          "url": "https://platform.opentargets.org/target/ENSG00000183283/associations",
+          "text": "Disease: X-linked retinal dysplasia\nAssociation score: 0.085",
+          "cos_sim_score": 0.08450628167293049,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000183283::MONDO_0019200",
+          "title": "DAZAP2 \u2194 retinitis pigmentosa",
+          "url": "https://platform.opentargets.org/target/ENSG00000183283/associations",
+          "text": "Disease: retinitis pigmentosa\nDescription: Retinitis pigmentosa (RP) is an inherited retinal dystrophy leading to progressive loss of the photoreceptors and retinal pigment epithelium and resulting in blindness usually after several decades.\nAssociation score: 0.080",
+          "cos_sim_score": 0.07993826340773667,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000183283::MONDO_0004992",
+          "title": "DAZAP2 \u2194 cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000183283/associations",
+          "text": "Disease: cancer\nDescription: A tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues. Malignant neoplasms often metastasize to distant anatomic sites and may recur after excision. The most common malignant neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), Hodgkin and non-Hodgkin lymphomas, leukemias, melanomas, and sarcomas.\nAssociation score: 0.078",
+          "cos_sim_score": 0.07766063615346236,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::DAZAP2",
+          "title": "DAZAP2",
+          "url": "https://en.wikipedia.org/wiki/DAZAP2",
+          "text": "DAZ-associated protein 2 is a protein that in humans is encoded by the DAZAP2 gene.\n\nFunction\nIn mammals, the Y chromosome directs the development of the testes and plays an important role in spermatogenesis. A high percentage of infertile men have deletions that map to regions of the Y chromosome. The DAZ (deleted in azoospermia) gene cluster maps to the AZFc region and is deleted in many azoospermic and severely oligospermic men. It is thought that the Y chromosomal DAZ gene cluster arose from the transposition, amplification, and pruning of the ancestral autosomal gene DAZL. This gene encodes a RNA-binding protein with two RNP motifs that was originally identified by its interaction with the infertility factors DAZ and DAZL.\n\nInteractions\nDAZAP2 has been shown to interact with DAZ1.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.4245303273200989,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Protein FAM46B",
+          "title": "Protein FAM46B",
+          "url": "https://en.wikipedia.org/wiki/Protein_FAM46B",
+          "text": "Protein FAM46B also known as family with sequence similarity 46 member B is a protein that in humans is encoded by the FAM46B gene. FAM46B contains one protein domain of unknown function, DUF1693. Yeast two-hybrid screening has identified three proteins that physically interact with FAM46B. These are ATX1, PEPP2 (encoded by RHOXF2) and DAZAP2.\n\nGene\nOverview\nFAM46B is the most common name used for the gene encoding FAM46B. The aliases MGC16491 and RP11-344H11 have also been used to describe the same gene.\nFAM46B a 7,283 base pair gene located on the antisense strand of DNA on the short arm of chromosome 1 at the specific locus 1p36.11. Because it is on the antisense strand, the direction FAM46B is transcribed in is opposite to the standard numbering of nucleotides along the chromosome. FAM46B starts at base 27,339,333 and ends at 27,331,522.\nThe El Dorado program through Genomatix predicts the promoter region to be 1028 bases long, spanning bases 27,339,962 to 27,338, 935.\n\nExon structure and splice variants\nThe FAM46B gene contains two exons, both of which are found in FAM46B protein. There is one main protein isoform indicating no alternative splicing of FAM46B mRNA.\n\nHomology\nParalogs\nFAM46B has three paralogs in Homo sapiens: FAM46A, FAM46C, and FAM46D. Multiple sequence alignments of the four members of the FAM46 show high levels of conservation particularly toward the C-terminus. Amino acids conserved in all four paralogs indicate residues which make up the core of the FAM46 family.\n\nOrthologs\nFAM46B is present in the common ancestor to animals and is only found in eukaryotes. Although strict orthologs of FAM46B are only found in a relatively small range of animals such as insects and vertebrates, orthologs of FAM46 paralogs have been identified in a broader range of species. Within vertebrates, FAM46B is highly conserved in fish, amphibians and mammals. Common model organisms that FAM46B has been identified in are Danio rerio, Xenopus tropicalis, and Mus musculus. A strict ortholog of FAM46B is not found in reptiles or birds; however both the FAM46A and the FAM46C paralogs are found in the Anolis carolinensis, and the FAM46C paralog is found in birds such as Gallus gallus.\n\nDistant homologs\nDistant homologs of FAM46B are present in Drosophila and nematodes such as Caenorhabditis elegans.  There are no orthologs of FAM46B in plants, protists, or fungi.\n\nPhylogeny\nThe phylogenetic tree of FAM46B mirrors a standard phylogenetic tree. As should be expected, the mammals are grouped together with the primates clustered most tightly. The more distant homologs such as Drosophila and Caenorhabditis are on the left, representing greater divergence between the gene sequences.\n\nProtein\nThe function of FAM46B has not yet been determined. The information below is based on bioinformatic analyses and predictions.\n\nProperties/characteristics\nThe human form of FAM46B contains 425 amino acid residues, has an isoelectric point of 8.093, and a molecular mass of 46,888 daltons. FAM46B is a soluble protein predicted to be located in the cytosol.\n\nDomains and motifs\nFAM46B contains only one identified domain: Domain of Unknown Function 1693 (DUF1693). DUF1693 has been identified as part of the nucleotidyltransferase superfamily and contains four nematode prion-like proteins, but the exact function remains unknown. A SAPS protein analysis does not predict any unusual protein characteristics based on amino acid composition, internal repeats, charge clusters, or periodicities.",
+          "cos_sim_score": 0.2033410370349884,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::FAM46C",
+          "title": "FAM46C",
+          "url": "https://en.wikipedia.org/wiki/FAM46C",
+          "text": "Protein FAM46C also known as family with sequence similarity 46, member C is a protein that, in humans, is encoded by the FAM46C gene at locus 1p12 spanning base pairs from 118,148,556 to 118,171,011.\n\nSummary\nFAM46C is a protein of unknown function consisting of 391 amino acid residues that are translated from a messenger ribonucleic acid (mRNA) consisting of 5720 base pairs. FAM46C was initially sequenced as part of the Full-length long Japan genomic sequencing project. FAM46C is found on chromosome 1 at the locus 1p12 FAM46C contains one domain of unknown function, DUF1693, and as such has been placed in the DUF1693 protein family. This family has been established as a part of the Nucleotidyltransferase superfamily and contains 4 nematode prion-like proteins. FAM46C was placed into group XXV of the nucleotidyltransferase superfamily along with 3 other Homo sapiens FAM46 proteins (A, B, D).\nIt has been suggested that FAM46C may be functionally involved with the Type 1 interferon response. Deletion and/ or mutation of FAM46C has been associated with impaired overall survival in Myeloma patients.\n\nGene\nHomo sapiens FAM46C spans 22,456 bases on chromosome 1. Microarray data suggests that human FAM46C displays elevated expression levels in bone marrow, CD71+ early erythroid, various B cells, T cells, lymphocytes, and all tissues associated with testicles.\n\nEvolution and homology\nHomo sapiens FAM46C is highly conserved in close orthologs with only small changes in protein AA sequence when comparing to other mammals.\nFAM46C and specifically the DUF1693 is traceable throughout the known metazoans, with a distant homolog found in Trichoplax adhaerens, a member of the basal multicellular organismal group Placozoa.\n\nParalogs\nHomo sapiens FAM46C is paralogous to 3 separate known FAM46 proteins, all of which contain DUF1693.\n\nOrthologs\nThere are numerous FAM46C orthologs present throughout the current catalog of multicellular organisms, all of which exhibit impressive conservation of domain of unknown function 1693. The most notable ortholog is taken to be TRIADDRAFT14293, a gene of the species Trichoplax adhaerens. This ortholog provides evidence that FAM46C is a member of a group of proteins containing highly conserved amino acid residues, and as such it is thought to provide some highly important function, as would be expected when considering its possible nucleotidyltransferase activity.\n\nHomologous domains\nTo determine possible conserved structures, a predictive approach was used regarding comparing FAM46C with the most distant homolog available, that of Trichoplax adhearens. Phyre2 was used to predict protein secondary structure of human FAM46C and trichoplax TRIADDRAFT-14293. We are able to visualize possible structures predicted with high confidence in both the human gene, and the placozoan gene. This preliminary prediction offers some insight into important structures, most probably of catalytic and/or binding function.\n\nPhylogeny\nBased on multiple sequence alignments generated by ClustalW an unrooted phylogenetic tree was generated for select FAM46C orthologs to demonstrate the diverse occurrences of FAM46C-like genes throughout the current evolutionary catalog. For posterity, many orthologs were omitted (see ortholog table above; many were omitted from this table also).\n\nProtein structure\n\"Homo sapiens\" FAM46C encodes a 391 amino acid protein with no known isoforms. \"Homo sapiens\" FAM46C has not been crystallized and its secondary structure has not yet been determined as of May 2013. FAM46C has a predicted isoelectric point of 5.338. The protein contains one domain of unknown function, DUF1693 (Pfam: PF07984)\nA Leucine zipper pattern was found beginning at Lys113 and ending at Lys134. This could help distinguish nuclear proteins from non-nuclear proteins, however all other subsets of analyses using PSORTII have predicted that FAM46C is strictly a cytosolic protein.\nNo other significant protein structural motifs have been predicted.\n\nProtein-protein interactions\nFAM46C has been experimentally shown to interact physically with at least 4 separate proteins, with other interactions that have been predicted\n\nReferences\nExternal links\nOfficial website, Full-length long Japan human genomic sequencing project",
+          "cos_sim_score": 0.12293335795402527,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Protein FAM46B",
+          "title": "Protein FAM46B",
+          "url": "https://en.wikipedia.org/wiki/Protein_FAM46B",
+          "text": "Protein\nThe function of FAM46B has not yet been determined. The information below is based on bioinformatic analyses and predictions.\n\nProperties/characteristics\nThe human form of FAM46B contains 425 amino acid residues, has an isoelectric point of 8.093, and a molecular mass of 46,888 daltons. FAM46B is a soluble protein predicted to be located in the cytosol.\n\nDomains and motifs\nFAM46B contains only one identified domain: Domain of Unknown Function 1693 (DUF1693). DUF1693 has been identified as part of the nucleotidyltransferase superfamily and contains four nematode prion-like proteins, but the exact function remains unknown. A SAPS protein analysis does not predict any unusual protein characteristics based on amino acid composition, internal repeats, charge clusters, or periodicities.\n\nPost-translational modifications\nFAM46B is not predicted to contain a signal peptide cleavage site, Glycophosphatidylinositol (GPI) anchors, or transmembrane regions. The absence of a signal peptide supports the prediction that FAM46B is located in the cytosol.\nTools at ExPASy were used to predict phosphorylation sites, O-linked glycosylation sites, and N-linked glycosylation sites. Although two sites in FAM46B are predicted as potential sites of N-linked glycosylation, FAM46B lacks a signal peptide and thus, does not enter the lumen of the endoplasmic reticulum where N-linked glycosylation occurs. Five sites were identified as possible O-linked glycosylation sites. These are marked in the Conceptual Translation section below.\nThe most common post-translational modification predicted in FAM46B is phosphorylation. The program, NetPhos 2.0 predicts 23 phosphorylation sites. The majority of predicted phosphorylation are predicted on serine residues (14), but there are 6 predicted on threonine and 3 on tyrosines. These tend to be clustered together within the protein sequence. A comparison of predicted phosphorylation sites in human, mouse and zebrafish shows that all three species have approximately the same number and distribution of phosphorylation sites (on serines vs. threonines vs. tryrosines).\n\nSecondary structure\nThe exact structure of FAM46B has not been characterized. Predictive programs available though Biology Workbench  such GOR4, PELE, CHOFAS were used to predict secondary structure. The results obtained through programs at Biology Workbench were compared to the results obtained using Phyre2.  Since these  programs are predictive and rely on different algorithms, each provides slightly different output. Consensus between programs suggests that FAM46B contains mainly alpha helix and random coils. Although present, FAM46B appears to contain only a few small sections pre predicted to form beta sheets. Annotated results of both PELE and PHYRE2 secondary structure predictions are outlined in the figure below.\n\nConceptual translation\nExpression\nExpression can be assessed in a variety of ways. Both expressed sequence tags and GEO profiles show the number of transcripts of a gene present in a certain tissue type and relative to the total gene transcripts. Microarrays are also useful in quantifying gene expression. Protein in-situ hybridization is a more accurate measure of expression than mRNA or cDNA based methods, as probes can be fused directly to the protein.\n\nAccording to some available microarray data, FAM46B is highly expressed in the tongue (levels 10x above mean gene expression for the tissue). Outside of the tongue, FAM46B seems to be uniformly expressed across most tissues. In addition to gene expression in healthy tissues, EST data also highlights gene expression by health state. It appears FAM46B expression is elevated in cases of skin cancer and gliomas.\n\nInteracting proteins\nTranscription factors that bind to regulatory sequences\nThe El Dorado program through Genomatix was used to predict this list of transcription factors that are likely to bind to the promoter region of FAM46B. Numerous E2F sites are predicted, in addition to numerous Zinc Finger transcription factor sites, several E-box binding factors and TWIST homologs. The binding sites are not evenly distributed within promoter region. The largest clustering of binding sites was located around base 177 of the promoter, which is about 600 base pairs upstream from the start of transcription for FAM46B. The image below shows selected transcription factor binding sites for the top twenty matches identified by El Dorado that are on the antisense strand.",
+          "cos_sim_score": 0.11153896152973175,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Protein FAM46B",
+          "title": "Protein FAM46B",
+          "url": "https://en.wikipedia.org/wiki/Protein_FAM46B",
+          "text": "Interacting proteins\nTranscription factors that bind to regulatory sequences\nThe El Dorado program through Genomatix was used to predict this list of transcription factors that are likely to bind to the promoter region of FAM46B. Numerous E2F sites are predicted, in addition to numerous Zinc Finger transcription factor sites, several E-box binding factors and TWIST homologs. The binding sites are not evenly distributed within promoter region. The largest clustering of binding sites was located around base 177 of the promoter, which is about 600 base pairs upstream from the start of transcription for FAM46B. The image below shows selected transcription factor binding sites for the top twenty matches identified by El Dorado that are on the antisense strand.\n\nConfirmed protein-protein interactions and possible clinical significance\nYeast two hybrid screening indicates FAM46B physically interacts with the ataxin-1 protein, which is encoded by ATXN1.  The exact function of ATXN1 is not known, but it is thought to be involved in regulating aspects of protein production, particularly transcription. Since FAM46B physically interacts with ATXN1, it is possible that FAM46B also plays a role in the regulation of protein production and regulation of transcription.\nA second protein shown to physically interact with FAM46B is DAZAP2, is a proline-rich brain expressed protein. In combination with the information about ATXN1 above, it appears that FAM46B interacts with brain-specific proteins. A third protein identified by yeast two-hybrid screening as a physical interactant of FAM46B is PEPP2, a paired-like homeobox protein. If this interaction is significant, the interaction between FAM46B and PEPP2 may play a role in development and morphogenesis.\nHowever, the protein interactome is not yet well understood. Not every program identified interacting proteins in the same ways. As an example, STRING identified ATXN-1 as a strong interaction partner with FAM46B, but did not identify PEPP2 nor DAZAP2. The prediction network from STRING is shown in the adjacent image.\n\n\n== References ==",
+          "cos_sim_score": 0.08555583655834198,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

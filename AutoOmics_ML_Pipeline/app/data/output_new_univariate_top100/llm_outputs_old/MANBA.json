@@ -1,0 +1,145 @@
+{
+  "probe_id": "11758386_s_at",
+  "gene_symbol": "MANBA",
+  "score": 1.0,
+  "SD_TestAUC": 0.0331269329999968,
+  "abs_fold_change": 1.0443,
+  "probe_count": 1,
+  "probe_ids": "11758386_s_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 1.0443,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:32:59",
+  "interpretation": "The MANBA gene encodes the enzyme beta-mannosidase, which is involved in the hydrolysis of mannose residues from glycoproteins. This enzyme plays a crucial role in the lysosomal degradation pathway of N-linked glycoproteins, which are essential for various cellular functions, including cell signaling and structural integrity. Although there is no direct evidence linking MANBA to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in glycoprotein metabolism suggests a potential indirect connection, as glycoproteins can influence bone health and remodeling processes. The evidence regarding MANBA's involvement in SONFH is limited, leading to a low confidence in its direct relevance as a biomarker. Therefore, while MANBA may have some biological relevance, its potential as a clinically actionable biomarker for early detection of SONFH is weak.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "MANBA may be indirectly related to the mechanisms of Steroid-Induced Osteonecrosis of the Femoral Head due to its role in glycoprotein metabolism.",
+  "citations": [
+    "MANBA (O00462). https://www.uniprot.org/uniprotkb/O00462",
+    "MANBA \u2014 MANBA. https://platform.opentargets.org/target/ENSG00000109323",
+    "MANBA \u2194 beta-mannosidosis. https://platform.opentargets.org/target/ENSG00000109323/associations",
+    "MANBA \u2194 primary biliary cirrhosis. https://platform.opentargets.org/target/ENSG00000109323/associations",
+    "MANBA \u2194 Hypercholesterolemia. https://platform.opentargets.org/target/ENSG00000109323/associations",
+    "MANBA \u2194 obesity. https://platform.opentargets.org/target/ENSG00000109323/associations",
+    "Mannosidase. https://en.wikipedia.org/wiki/Mannosidase",
+    "Mannan endo-1,4-\u03b2-mannosidase. https://en.wikipedia.org/wiki/Mannan_endo-1,4-%CE%B2-mannosidase",
+    "Mannosylglycoprotein endo-beta-mannosidase. https://en.wikipedia.org/wiki/Mannosylglycoprotein_endo-beta-mannosidase",
+    "Beta-mannosidosis. https://en.wikipedia.org/wiki/Beta-mannosidosis",
+    "\u0392-Mannosidase. https://en.wikipedia.org/wiki/%CE%92-Mannosidase"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4106,
+    "completion_tokens": 248,
+    "total_tokens": 4354,
+    "estimated_cost_usd": 0.000765
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O00462",
+          "title": "MANBA (O00462)",
+          "url": "https://www.uniprot.org/uniprotkb/O00462",
+          "text": "Protein: Beta-mannosidase\nFunction: Exoglycosidase that cleaves the single beta-linked mannose residue from the non-reducing end of all N-linked glycoprotein oligosaccharides",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000109323::function",
+          "title": "MANBA \u2014 MANBA",
+          "url": "https://platform.opentargets.org/target/ENSG00000109323",
+          "text": "Function: Exoglycosidase that cleaves the single beta-linked mannose residue from the non-reducing end of all N-linked glycoprotein oligosaccharides.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000109323::MONDO_0009562",
+          "title": "MANBA \u2194 beta-mannosidosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000109323/associations",
+          "text": "Disease: beta-mannosidosis\nDescription: Beta-mannosidosis is a very rare lysosomal storage disease characterized by developmental delay of varying severity and hearing loss, but that can manifest a wide phenotypic heterogeneity.\nAssociation score: 0.829",
+          "cos_sim_score": 0.8294410981804171,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000109323::EFO_1001486",
+          "title": "MANBA \u2194 primary biliary cirrhosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000109323/associations",
+          "text": "Disease: primary biliary cirrhosis\nDescription: Primary biliary cholangitis (PBC) is a chronic and slowly progressive cholestatic liver disease of autoimmune etiology characterized by injury of the intrahepatic bile ducts that may eventually lead to liver failure.\nAssociation score: 0.409",
+          "cos_sim_score": 0.4090599460988812,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000109323::HP_0003124",
+          "title": "MANBA \u2194 Hypercholesterolemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000109323/associations",
+          "text": "Disease: Hypercholesterolemia\nDescription: An increased concentration of cholesterol in the blood.\nAssociation score: 0.355",
+          "cos_sim_score": 0.3551228091431745,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000109323::EFO_0001073",
+          "title": "MANBA \u2194 obesity",
+          "url": "https://platform.opentargets.org/target/ENSG00000109323/associations",
+          "text": "Disease: obesity\nDescription: An eating-related disorder in which excess body fat has accumulated to such an extent that health may be negatively affected. It is commonly defined as a body mass index (weight divided by height squared) of 30 kg/m2 or higher.\nAssociation score: 0.309",
+          "cos_sim_score": 0.3087913304475902,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Mannosidase",
+          "title": "Mannosidase",
+          "url": "https://en.wikipedia.org/wiki/Mannosidase",
+          "text": "Mannosidase is an enzyme which hydrolyses mannose.\nThere are two types:\n\nalpha-Mannosidase\nbeta-Mannosidase\nA deficiency is associated with mannosidosis.\nA family of mannosidases are also responsible for processing newly formed glycoproteins in the endoplasmic reticulum into mature glycoproteins containing highly heterogeneous complex-type glycans.\n\n\n== References ==",
+          "cos_sim_score": 0.7121330499649048,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Mannan endo-1,4-\u03b2-mannosidase",
+          "title": "Mannan endo-1,4-\u03b2-mannosidase",
+          "url": "https://en.wikipedia.org/wiki/Mannan_endo-1,4-%CE%B2-mannosidase",
+          "text": "Mannan endo-1,4-\u03b2-mannosidase (EC 3.2.1.78, endo-1,4-\u03b2-mannanase, endo-\u03b2-1,4-mannase, \u03b2-mannanase B, \u03b2-1, 4-mannan 4-mannanohydrolase, endo-\u03b2-mannanase, \u03b2-D-mannanase, 1,4-\u03b2-D-mannan  mannanohydrolase) is an enzyme with systematic name 4-\u03b2-D-mannan mannanohydrolase. It catalyses the hydrolysis of (1\u21924)-\u03b2-D-mannosidic linkages in mannans, galactomannans and glucomannans. The cleavage occurs at random internal sites within the chain, as denoted by the prefix \"endo\".\n\nReferences\nExternal links\nMannan+endo-1,4-beta-mannosidase at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.65833580493927,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Mannosylglycoprotein endo-beta-mannosidase",
+          "title": "Mannosylglycoprotein endo-beta-mannosidase",
+          "url": "https://en.wikipedia.org/wiki/Mannosylglycoprotein_endo-beta-mannosidase",
+          "text": "Mannosylglycoprotein endo-beta-mannosidase (EC 3.2.1.152, endo-beta-mannosidase) is an enzyme. This enzyme catalyses the following chemical reaction:\n\nHydrolysis of the alpha-D-mannosyl-(1->6)-beta-D-mannosyl-(1->4)-N-acetyl-beta-D-glucosaminyl-(1->4)-N-acetyl-beta-D-glucosaminyl sequence of glycoprotein to alpha-D-mannosyl-(1->6)-D-mannose and N-acetyl-beta-D-glucosaminyl-(1->4)-N-acetyl-beta-D-glucosaminyl sequences\nThe substrate group is a substituent on N-4 of an asparagine residue in the glycoprotein.\n\nReferences\nExternal links\nMannosylglycoprotein+endo-beta-mannosidase at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.6358225345611572,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Beta-mannosidosis",
+          "title": "Beta-mannosidosis",
+          "url": "https://en.wikipedia.org/wiki/Beta-mannosidosis",
+          "text": "Beta-mannosidosis, also called lysosomal beta-mannosidase deficiency, is a disorder of oligosaccharide metabolism caused by decreased activity of the enzyme beta-mannosidase.  This enzyme is coded for by the gene MANBA, located at 4q22-25. Beta-mannosidosis is inherited in an autosomal recessive manner.  Affected individuals appear normal at birth, and can have a variable clinical presentation.  Infantile onset forms show severe neurodegeneration, while some children have intellectual disability.  Hearing loss and angiokeratomas are common features of the disease.\n\nSymptoms and signs\nThe initial affected individual described in 1986 had a complex phenotype, and was later found to have both beta-mannosidosis and Sanfilippo syndrome.  People have been described with a wide spectrum of clinical presentations, from infants and children with intellectual disability to adults who present with isolated skin findings (angiokeratomas).\nMost cases are identified in the first year of life with respiratory infections, hearing loss and intellectual disability. Because of its rarity, and non-specific clinical findings, beta-mannosidosis can go undiagnosed until adulthood, where it can present with intellectual disability and behavioral problems, including aggression.\n\nCause\nIn terms of causation, several mutations in the MANBA gene are the cause of beta-mannosidosis. The cytogenetic location of the gene is 4q24; furthermore, the condition is inherited in an autosomal recessive manner.\n\nMechanism\nBeta-mannosidase function is consistent with it being a lysosomal enzyme catalyzing and thus involved in degradation route for N-linked oligosaccharide moieties (glycoproteins).\n\nDiagnosis\nA diagnosis of beta-mannosidosis is suspected based on the person's clinical presentation.  Urine testing to identify abnormal oligosaccharides is a useful screening test, and enzymatic analysis or molecular testing can be used for confirmation.\n\nDifferential diagnosis\nDiagnostic techniques for this condition can be done to offer a differential diagnosis, via lectin histochemistry, to distinguish between alpha-mannosidosis and beta-mannosidosis.\n\nTreatment\nThere is currently no treatment available; individuals exhibiting muscle weakness or seizures are treated based on symptoms.\n\nSee also\nBeta-mannosidase\nThe Lost Enzyme Project\n\nReferences\nFurther reading\nMolho-Pessach, Vered; Bargal, Ruth; Abramowitz, Yigal; Doviner, Victoria; Ingber, Arieh; Raas-Rothschild, Annick; Ne'eman, Zvi; Zeigler, Marsha; Zlotogorski, Abraham (2007). \"Angiokeratoma corporis diffusum in human beta-mannosidosis: Report of a new case and a novel mutation\". Journal of the American Academy of Dermatology. 57 (3): 407\u2013412. doi:10.1016/j.jaad.2007.01.037. ISSN 1097-6787. PMID 17420068.\nHuynh, T; Khan, JM; Ranganathan, S (30 November 2011). \"A comparative structural bioinformatics analysis of inherited mutations in \u03b2-D-Mannosidase across multiple species reveals a genotype\u2013phenotype correlation\". BMC Genomics. 12 (Suppl 3): S22. doi:10.1186/1471-2164-12-S3-S22. ISSN 1471-2164. PMC 3333182. PMID 22369051.\n\n\n== External links ==",
+          "cos_sim_score": 0.5929237604141235,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::\u0392-Mannosidase",
+          "title": "\u0392-Mannosidase",
+          "url": "https://en.wikipedia.org/wiki/%CE%92-Mannosidase",
+          "text": "\u03b2-Mannosidase (EC 3.2.1.25}, mannanase, mannase, \u03b2-D-mannosidase, \u03b2-mannoside mannohydrolase, exo-\u03b2-D-mannanase, lysosomal \u03b2 A mannosidase) is an enzyme  with systematic name \u03b2-D-mannoside mannohydrolase, which is in humans encoded by the MANBA gene. This enzyme catalyses the following chemical reaction\n\nHydrolysis of terminal, non-reducing \u03b2-D-mannose residues in \u03b2-D-mannosides\nThis gene encodes a member of the glycosyl hydrolase 2 family. The encoded protein localizes to the lysosome where it is the final exoglycosidase in the pathway for N-linked glycoprotein oligosaccharide catabolism. Mutations in this gene are associated with \u03b2-mannosidosis, a lysosomal storage disease that has a wide spectrum of neurological involvement.\n\nReferences\nFurther reading\nExternal links\nHuman MANBA genome location and MANBA gene details page  in the UCSC Genome Browser.\nOverview of all the structural information available in the PDB for UniProt: Q8K2I4 (Mouse Beta-mannosidase) at the PDBe-KB.",
+          "cos_sim_score": 0.5794579982757568,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "probe_id": "11732181_x_at",
+  "gene_symbol": "PTAFR",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.1325077319999875,
+  "abs_fold_change": 1.31,
+  "score": 1.3077,
+  "probe_count": 1,
+  "probe_ids": "11732181_x_at",
+  "max_score": 1.3077,
+  "mean_abs_fold_change": 1.31,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T02:22:44",
+  "interpretation": "The PTAFR gene encodes the platelet-activating factor receptor, which is a G-protein coupled receptor that mediates various biological responses, including inflammation and smooth muscle contraction. Given its role in inflammatory processes, PTAFR may be implicated in the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), where inflammation and vascular compromise are critical factors in disease progression. However, the retrieved evidence does not directly link PTAFR to SONFH, indicating a lack of specific studies connecting this receptor to the disease context. Therefore, while PTAFR's involvement in inflammatory pathways suggests a potential role in SONFH, the evidence is primarily inferred rather than directly supported by specific studies. As such, its clinical relevance as a biomarker for early detection of SONFH remains weak and speculative.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "PTAFR may be involved in inflammatory processes relevant to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "PTAFR (P25105). https://www.uniprot.org/uniprotkb/P25105",
+    "PTAFR \u2014 PTAFR. https://platform.opentargets.org/target/ENSG00000169403",
+    "PTAFR \u2194 allergic disease. https://platform.opentargets.org/target/ENSG00000169403/associations",
+    "PTAFR \u2194 urticaria. https://platform.opentargets.org/target/ENSG00000169403/associations",
+    "PTAFR \u2194 rheumatoid arthritis. https://platform.opentargets.org/target/ENSG00000169403/associations",
+    "PTAFR \u2194 Mastocytosis. https://platform.opentargets.org/target/ENSG00000169403/associations",
+    "Platelet-activating factor receptor. https://en.wikipedia.org/wiki/Platelet-activating_factor_receptor",
+    "Rhodopsin-like receptors. https://en.wikipedia.org/wiki/Rhodopsin-like_receptors"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5762,
+    "completion_tokens": 241,
+    "total_tokens": 6003,
+    "estimated_cost_usd": 0.001009
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P25105",
+          "title": "PTAFR (P25105)",
+          "url": "https://www.uniprot.org/uniprotkb/P25105",
+          "text": "Protein: Platelet-activating factor receptor\nFunction: Receptor for platelet activating factor, a chemotactic phospholipid mediator that possesses potent inflammatory, smooth-muscle contractile and hypotensive activity. Seems to mediate its action via a G protein that activates a phosphatidylinositol-calcium second messenger system",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000169403::function",
+          "title": "PTAFR \u2014 PTAFR",
+          "url": "https://platform.opentargets.org/target/ENSG00000169403",
+          "text": "Function: Receptor for platelet activating factor, a chemotactic phospholipid mediator that possesses potent inflammatory, smooth-muscle contractile and hypotensive activity. Seems to mediate its action via a G protein that activates a phosphatidylinositol-calcium second messenger system.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000169403::MONDO_0005271",
+          "title": "PTAFR \u2194 allergic disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000169403/associations",
+          "text": "Disease: allergic disease\nDescription: An immune response that occurs following re-exposure to an innocuous antigen, and that requires the presence of existing antibodies against that antigen. This response involves the binding of IgE to mast cells, and may worsen with repeated exposures.\nAssociation score: 0.462",
+          "cos_sim_score": 0.4623443982105619,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000169403::EFO_0005531",
+          "title": "PTAFR \u2194 urticaria",
+          "url": "https://platform.opentargets.org/target/ENSG00000169403/associations",
+          "text": "Disease: urticaria\nDescription: A vascular reaction of the skin characterized by erythema and wheal formation due to localized increase of vascular permeability. The causative mechanism may be allergy, infection, or stress.\nAssociation score: 0.332",
+          "cos_sim_score": 0.33159525850877414,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000169403::EFO_0000685",
+          "title": "PTAFR \u2194 rheumatoid arthritis",
+          "url": "https://platform.opentargets.org/target/ENSG00000169403/associations",
+          "text": "Disease: rheumatoid arthritis\nDescription: A chronic, systemic autoimmune disorder characterized by inflammation in the synovial membranes and articular surfaces. It manifests primarily as a symmetric, erosive polyarthritis that spares the axial skeleton and is typically associated with the presence in the serum of rheumatoid factor.\nAssociation score: 0.259",
+          "cos_sim_score": 0.2592602680613183,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000169403::EFO_0009001",
+          "title": "PTAFR \u2194 Mastocytosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000169403/associations",
+          "text": "Disease: Mastocytosis\nDescription: A clonal myeloproliferative neoplasm characterized by the proliferation and accumulation of neoplastic mast cells in one or multiple organs or organ systems. It is a heterogeneous group of neoplasms, ranging from cutaneous proliferations which may regress spontaneously, to aggressive neoplasms associated with organ failure and short survival.\nAssociation score: 0.185",
+          "cos_sim_score": 0.1847899273423509,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Platelet-activating factor receptor",
+          "title": "Platelet-activating factor receptor",
+          "url": "https://en.wikipedia.org/wiki/Platelet-activating_factor_receptor",
+          "text": "The platelet-activating factor receptor (PAF-R) is a G-protein coupled receptor which binds platelet-activating factor. It is encoded in the human by the PTAFR gene.\nThe PAF receptor shows structural characteristics of the rhodopsin (MIM 180380) gene family and binds platelet-activating factor (PAF). PAF is a phospholipid (1-0-alkyl-2-acetyl-sn-glycero-3-phosphorylcholine) that has been implicated as a mediator in diverse pathologic processes, such as allergy, asthma, septic shock, arterial thrombosis, and inflammatory processes.[supplied by OMIM] Its pathogenetic role in chronic kidney failure has also been reported recently.\n\nLigands\nAgonists\n\nPlatelet activating factor\nAntagonists\n\nApafant (WEB-2086)\nIsrapafant (Y-24180)\nLexipafant\nRupatadine\n\nReferences\nFurther reading\nExternal links\n\"Platelet-Activating Factor Receptor\". IUPHAR Database of Receptors and Ion Channels. International Union of Basic and Clinical Pharmacology. Archived from the original on 2016-03-03. Retrieved 2007-10-25.\nplatelet+activating+factor+receptor at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.24260860681533813,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Rhodopsin-like receptors",
+          "title": "Rhodopsin-like receptors",
+          "url": "https://en.wikipedia.org/wiki/Rhodopsin-like_receptors",
+          "text": "Subfamily A12\nP2 purinoceptor InterPro: IPR002286\nPurinergic receptor P2Y12 (P2RY12)\nPurinergic receptor P2Y13 (P2RY13, GPR86) InterPro: IPR008109\nPurinergic receptor P2Y14 (P2RY14, UDP-glucose receptor, KI01) InterPro: IPR005466\nGPR34 (GPR34)\nGPR87 (GPR87)\nGPR171  (GPR171, H963)\nPlatelet-activating factor receptor (PTAFR, PAFR) InterPro: IPR002282\n\nSubfamily A13\nCannabinoid receptor InterPro: IPR002230\nCannabinoid receptor 1 (brain) (CNR1, CB1R)\nCannabinoid receptor 2 (macrophage) (CNR2, CB2R)\nLysophosphatidic acid receptor InterPro: IPR004065\nLysophosphatidic acid receptor 1 (LPAR1)\nLysophosphatidic acid receptor 2 (LPAR2)\nLysophosphatidic acid receptor 3 (LPAR3)\nSphingosine 1-phosphate receptor InterPro: IPR004061\nSphingosine 1-phosphate receptor 1 (S1PR1)\nSphingosine 1-phosphate receptor 2 (S1PR2)\nSphingosine 1-phosphate receptor 3 (S1PR3)\nSphingosine 1-phosphate receptor 4 (S1PR4)\nSphingosine 1-phosphate receptor 5 (S1PR5)\nMelanocortin/ACTH receptor InterPro: IPR001671\nMelanocortin 1 receptor (MC1R, MSHR)\nMelanocortin 3 receptor (MC3R)\nMelanocortin 4 receptor (MC4R)\nMelanocortin 5 receptor (MC5R)\nACTH receptor (MC2R), ACTR)\nGPR3 (GPR3)\nGPR6 (GPR6)\nGPR12  (GPR12, GPRC)\n\nSubfamily A14\nEicosanoid receptor InterPro: IPR008365\nProstaglandin D2 receptor (PTGDR, PD2R)\nProstaglandin E1 receptor (PTGER1, PE21)\nProstaglandin E2 receptor (PTGER2, PE22)\nProstaglandin E3 receptor (PTGER3, PE23)\nProstaglandin E4 receptor (PTGER4, PE24)\nProstaglandin F receptor (PTGFR, PF2R)\nProstaglandin I2 (prostacyclin) receptor (PTGIR, PI2R)\nThromboxane A2 receptor (TBXA2R, TA2R)",
+          "cos_sim_score": 0.23482036590576172,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Rhodopsin-like receptors",
+          "title": "Rhodopsin-like receptors",
+          "url": "https://en.wikipedia.org/wiki/Rhodopsin-like_receptors",
+          "text": "Subfamily A14\nEicosanoid receptor InterPro: IPR008365\nProstaglandin D2 receptor (PTGDR, PD2R)\nProstaglandin E1 receptor (PTGER1, PE21)\nProstaglandin E2 receptor (PTGER2, PE22)\nProstaglandin E3 receptor (PTGER3, PE23)\nProstaglandin E4 receptor (PTGER4, PE24)\nProstaglandin F receptor (PTGFR, PF2R)\nProstaglandin I2 (prostacyclin) receptor (PTGIR, PI2R)\nThromboxane A2 receptor (TBXA2R, TA2R)\n\nSubfamily A15\nLysophosphatidic acid receptor InterPro: IPR004065\nLysophosphatidic acid receptor 4 (LPAR4)\nLysophosphatidic acid receptor 5 (LPAR5)\nLysophosphatidic acid receptor 6 (LPAR6) InterPro: IPR002188\nP2 purinoceptor InterPro: IPR002286\nPurinergic receptor P2Y10 (P2RY10, P2Y10)\nProtease-activated receptor InterPro: IPR003912\nCoagulation factor II (thrombin) receptor-like 1 (F2RL1, PAR2)\nCoagulation factor II (thrombin) receptor-like 2 (F2RL2, PAR3)\nCoagulation factor II (thrombin) receptor-like 3 (F2RL3, PAR4)\nEpstein-Barr virus induced gene 2 (lymphocyte-specific G protein-coupled receptor) (GPR183)\nProton-sensing G protein-coupled receptors\nGPR4 (GPR4) InterPro: IPR002276\nGPR65 (GPR65) InterPro: IPR005464\nGPR68 (GPR68) InterPro: IPR005389\nGPR132 (GPR132, G2A) InterPro: IPR005388\nGPR17 (GPR17, GPRH)\nGPR18 (GPR18, GPRI)\nGPR20 (GPR20, GPRK)\nGPR35 (GPR35)\nGPR55 (GPR55)\nCoagulation factor II receptor  (F2R, THRR)\n\nSubfamily A16\nOpsins InterPro: IPR001760\nRhodopsin (RHO, OPSD)\nOpsin 1 (cone pigments), short-wave-sensitive (color blindness, tritan) (OPN1SW, OPSB) (blue-sensitive opsin)\nOpsin 1 (cone pigments), medium-wave-sensitive (color blindness, deutan) (OPN1MW, OPSG) (green-sensitive opsin)\nOpsin 1 (cone pigments), long-wave-sensitive (color blindness, protan) (OPN1LW, OPSR) (red-sensitive opsin)\nOpsin 3, Panopsin (OPN3)\nOpsin 4, Melanopsin (OPN4)\nOpsin 5 (OPN5, GPR136)\nRetinal G protein coupled receptor (RGR)\nRetinal pigment epithelium-derived rhodopsin homolog (RRH, OPSX) (visual pigment-like receptor opsin) InterPro: IPR001793",
+          "cos_sim_score": 0.2328556478023529,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Rhodopsin-like receptors",
+          "title": "Rhodopsin-like receptors",
+          "url": "https://en.wikipedia.org/wiki/Rhodopsin-like_receptors",
+          "text": "Subfamily A3\nAngiotensin II receptor InterPro: IPR000248\nAngiotensin II receptor, type 1 (AGTR1, AG2S)\nAngiotensin II receptor, type 2 (AGTR2, AG22)\nApelin receptor (AGTRL1, APJ) InterPro: IPR003904\nBradykinin receptor InterPro: IPR000496\nBradykinin receptor B1 (BDKRB1, BRB1)\nBradykinin receptor B2 (BDKRB2, BRB2)\nGPR15 (GPR15, GPRF)\nGPR25 (GPR25)\n\nSubfamily A4\nOpioid receptor InterPro: IPR001418\ndelta Opioid receptor (OPRD1, OPRD)\nkappa Opioid receptor (OPRK1, OPRK)\nmu Opioid receptor (OPRM1, OPRM)\nNociceptin receptor (OPRL1, OPRX)\nSomatostatin receptor InterPro: IPR000586\nSomatostatin receptor 1 (SSTR1, SSR1)\nSomatostatin receptor 2 (SSTR2, SSR2)\nSomatostatin receptor 3 (SSTR3, SSR3)\nSomatostatin receptor 4 (SSTR4, SSR4)\nSomatostatin receptor 5 (SSTR5, SSR5)\nGPCR neuropeptide receptor InterPro: IPR009150\nNeuropeptides B/W receptor 1 (NPBWR1, GPR7)\nNeuropeptides B/W receptor 2 (NPBWR2, GPR8)\nChemerin-like receptor 2 (CMKLR2) InterPro: IPR002275\n\nSubfamily A5\nGalanin receptor InterPro: IPR000405\nGalanin receptor 1 (GALR1, GALR)\nGalanin receptor 2 (GALR2, GALS)\nGalanin receptor 3 (GALR3, GALT)\nCysteinyl leukotriene receptor InterPro: IPR004071\nCysteinyl leukotriene receptor 1 (CYSLTR1)\nCysteinyl leukotriene receptor 2 (CYSLTR2)\nLeukotriene B4 receptor InterPro: IPR003981\nLeukotriene B4 receptor (LTB4R, P2Y7)\nLeukotriene B4 receptor 2 (LTB4R2)\nRelaxin receptor InterPro: IPR008112\nRelaxin/insulin-like family peptide receptor 1 (RXFP1, LGR7)\nRelaxin/insulin-like family peptide receptor 2 (RXFP2, GPR106)\nRelaxin/insulin-like family peptide receptor 3 (RXFP3, SALPR)\nRelaxin/insulin-like family peptide receptor 4 (RXFP4, GPR100/GPR142)\nKiSS1-derived peptide receptor (GPR54) (KISS1R) InterPro: IPR008103\nMelanin-concentrating hormone receptor 1 (MCHR1, GPRO) InterPro: IPR008361\nUrotensin-II receptor (UTS2R, UR2R) InterPro: IPR000670",
+          "cos_sim_score": 0.12359906733036041,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Rhodopsin-like receptors",
+          "title": "Rhodopsin-like receptors",
+          "url": "https://en.wikipedia.org/wiki/Rhodopsin-like_receptors",
+          "text": "Subfamily A6\nCholecystokinin receptor InterPro: IPR009126\nCholecystokinin A receptor (CCKAR, CCKR)\nCholecystokinin B receptor (CCKBR, GASR)\nNeuropeptide FF receptor InterPro: IPR005395\nNeuropeptide FF receptor 1 (NPFFR1, FF1R)\nNeuropeptide FF receptor 2 (NPFFR2, FF2R)\nOrexin receptor InterPro: IPR000204\nHypocretin (orexin) receptor 1 (HCRTR1, OX1R)\nHypocretin (orexin) receptor 2 (HCRTR2, OX2R)\nVasopressin receptor InterPro: IPR001817\nArginine vasopressin receptor 1A (AVPR1A, V1AR)\nArginine vasopressin receptor 1B (AVPR1B, V1BR)\nArginine vasopressin receptor 2 (AVPR2, V2R)\nOxytocin receptor (OXTR)\nGonadotropin releasing hormone receptor (GNRHR, GRHR) InterPro: IPR001658\nPyroglutamylated RFamide peptide receptor (QRFPR, GPR103)\nGPR22 (GPR22, GPRM)\nGPR176 (GPR176, GPR)\n\nSubfamily A7\nBombesin receptor InterPro: IPR001556\nBombesin-like receptor 3 (BRS3)\nNeuromedin B receptor (NMBR)\nGastrin-releasing peptide receptor (GRPR)\nEndothelin receptor InterPro: IPR000499\nEndothelin receptor type A (EDNRA, ET1R)\nEndothelin receptor type B (EDNRB, ETBR)\nGPR37 (GPR37, ETBR-LP2) InterPro: IPR003909\nNeuromedin U receptor InterPro: IPR005390\nNeuromedin U receptor 1 (NMUR1)\nNeuromedin U receptor 2 (NMUR2)\nNeurotensin receptor InterPro: IPR003984\nNeurotensin receptor 1 (NTSR1, NTR1)\nNeurotensin receptor 2 (NTSR2, NTR2)\nThyrotropin-releasing hormone receptor (TRHR, TRFR) InterPro: IPR009144\nGrowth hormone secretagogue receptor (GHSR) InterPro: IPR003905\nGPR39 (GPR39)\nMotilin receptor (MLNR, GPR38)\n\nSubfamily A8\nAnaphylatoxin receptors InterPro: IPR002234\nC3a receptor (C3AR1, C3AR)\nC5a receptor (C5AR1, C5AR)\nChemokine-like receptor 1 (CMKLR1, CML1) InterPro: IPR002258\nFormyl peptide receptor InterPro: IPR000826\nFormyl peptide receptor 1 (FPR1, FMLR)\nFormyl peptide receptor-like 1 (FPRL1, FML2)\nFormyl peptide receptor-like 2 (FPRL2, FML1)\nMAS1 oncogene InterPro: IPR000820\nMAS1 (MAS1, MAS)\nMAS1L (MAS1L, MRG)\nCMKLR2 (GPR1)\nGPR32 (GPR32, GPRW)\nGPR44 (GPR44)\nGPR77 (GPR77, C5L2)",
+          "cos_sim_score": 0.12261281162500381,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

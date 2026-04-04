@@ -1,0 +1,132 @@
+{
+  "probe_id": "11742418_a_at",
+  "gene_symbol": "SETD1B",
+  "score": 1.0,
+  "SD_TestAUC": 0.0482903881866862,
+  "abs_fold_change": 0.7192,
+  "probe_count": 1,
+  "probe_ids": "11742418_a_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.7192,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:32:37",
+  "interpretation": "SETD1B encodes a histone-lysine N-methyltransferase that plays a crucial role in chromatin remodeling by adding methyl groups to histone H3, specifically at lysine 4 (H3K4). This modification is associated with active transcription and DNA repair processes, which are vital for maintaining cellular health and function. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), SETD1B has been identified as a key ferroptosis-related gene, indicating its involvement in the pathological processes leading to osteonecrosis. The evidence suggests that SETD1B is linked to osteoclast differentiation and immune cell interactions, which are critical in the progression of SONFH. The retrieved evidence indicates a moderate level of confidence in its relevance to SONFH, as it is part of a network of genes implicated in the disease. Therefore, SETD1B holds potential as a biomarker for early detection and monitoring of SONFH progression.",
+  "evidence_relation": "direct",
+  "evidence_tier": "Tier 2",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "SETD1B is implicated in the progression of Steroid-Induced Osteonecrosis of the Femoral Head through its role in ferroptosis and osteoclast differentiation.",
+  "citations": [
+    "SETD1B (Q9UPS6). https://www.uniprot.org/uniprotkb/Q9UPS6",
+    "SETD1B (Q9UPS6-2). https://www.uniprot.org/uniprotkb/Q9UPS6-2",
+    "SETD1B \u2014 SETD1B. https://platform.opentargets.org/target/ENSG00000139718",
+    "SETD1B \u2194 intellectual developmental disorder with seizures and language delay. https://platform.opentargets.org/target/ENSG00000139718/associations",
+    "SETD1B \u2194 genetic disorder. https://platform.opentargets.org/target/ENSG00000139718/associations",
+    "SETD1B \u2194 Neurodevelopmental disorder. https://platform.opentargets.org/target/ENSG00000139718/associations",
+    "SETD1B \u2194 Abnormality of the skeletal system. https://platform.opentargets.org/target/ENSG00000139718/associations",
+    "Identification of key ferroptosis-related biomarkers in steroid-induced osteonecrosis of the femoral head based on machine learning. (2023). https://pubmed.ncbi.nlm.nih.gov/37120553/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 3694,
+    "completion_tokens": 277,
+    "total_tokens": 3971,
+    "estimated_cost_usd": 0.00072
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9UPS6",
+          "title": "SETD1B (Q9UPS6)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UPS6",
+          "text": "Protein: Histone-lysine N-methyltransferase SETD1B\nFunction: Histone methyltransferase that catalyzes methyl group transfer from S-adenosyl-L-methionine to the epsilon-amino group of 'Lys-4' of histone H3 (H3K4) via a non-processive mechanism (PubMed:17355966, PubMed:25561738). Part of chromatin remodeling machinery, forms H3K4me1, H3K4me2 and H3K4me3 methylation marks at active chromatin sites where transcription and DNA repair take place (PubMed:17355966, PubMed:25561738). Plays an essential role in regulating the transcriptional programming of multipotent hematopoietic progenitor cells and lymphoid lineage specification during hematopoiesis (By similarity)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9UPS6-2",
+          "title": "SETD1B (Q9UPS6-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UPS6-2",
+          "text": "Protein: Isoform 2 of Histone-lysine N-methyltransferase SETD1B",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000139718::function",
+          "title": "SETD1B \u2014 SETD1B",
+          "url": "https://platform.opentargets.org/target/ENSG00000139718",
+          "text": "Function: Histone methyltransferase that catalyzes methyl group transfer from S-adenosyl-L-methionine to the epsilon-amino group of 'Lys-4' of histone H3 (H3K4) via a non-processive mechanism (PubMed:17355966, PubMed:25561738). Part of chromatin remodeling machinery, forms H3K4me1, H3K4me2 and H3K4me3 methylation marks at active chromatin sites where transcription and DNA repair take place (PubMed:17355966, PubMed:25561738). Plays an essential role in regulating the transcriptional programming of multipotent hematopoietic progenitor cells and lymphoid lineage specification during hematopoiesis (By similarity).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000139718::MONDO_0033559",
+          "title": "SETD1B \u2194 intellectual developmental disorder with seizures and language delay",
+          "url": "https://platform.opentargets.org/target/ENSG00000139718/associations",
+          "text": "Disease: intellectual developmental disorder with seizures and language delay\nAssociation score: 0.787",
+          "cos_sim_score": 0.7870911799566842,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000139718::EFO_0000508",
+          "title": "SETD1B \u2194 genetic disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000139718/associations",
+          "text": "Disease: genetic disorder\nDescription: Genetic diseases are diseases in which inherited genes predispose to increased risk. The genetic disorders associated with cancer often result from an alteration or mutation in a single gene. The diseases range from rare dominant cancer family syndrome to familial tendencies in which low-penetrance genes may interact with other genes or environmental factors to induce cancer. Research may involve clinical, epidemiologic, and laboratory studies of persons, families, and populations at high risk of these disorders.\nAssociation score: 0.516",
+          "cos_sim_score": 0.5155027799444574,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000139718::EFO_0010642",
+          "title": "SETD1B \u2194 Neurodevelopmental disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000139718/associations",
+          "text": "Disease: Neurodevelopmental disorder\nDescription: A childhood disorder that has a neurological basis and manifests as a developmental disability.\nAssociation score: 0.447",
+          "cos_sim_score": 0.4465443268234407,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000139718::HP_0000924",
+          "title": "SETD1B \u2194 Abnormality of the skeletal system",
+          "url": "https://platform.opentargets.org/target/ENSG00000139718/associations",
+          "text": "Disease: Abnormality of the skeletal system\nDescription: An abnormality of the skeletal system.\nAssociation score: 0.393",
+          "cos_sim_score": 0.3927850491790464,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::37120553",
+          "title": "Identification of key ferroptosis-related biomarkers in steroid-induced osteonecrosis of the femoral head based on machine learning.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37120553/",
+          "year": "2023",
+          "text": "This study was aimed to identify key ferroptosis-related biomarkers in steroid-induced osteonecrosis of the femoral head (SONFH) based on machine learning algorithm. The SONFH dataset GSE123568 (including 30 SONFH patients and 10 controls) was used in this study. The differentially expressed genes (DEGs) were selected between SONFH and control groups, which were subjected to WGCNA. Ferroptosis-related genes were downloaded from FerrDb V2, which were then compared with DEGs and module genes. Two machine learning algorithms were utilized to identify key ferroptosis-related genes, and the underlying mechanisms were analyzed by GSEA. Correlation analysis between key ferroptosis-related genes and immune cells was analyzed by Spearman method. The drug-gene relationships were predicted in CTD. Total 2030 DEGs were obtained. WGCNA identified two key modules and obtained 1561 module genes. Finally, 43 intersection genes were identified as disease-related ferroptosis-related genes. After LASSO regression and RFE-SVM algorithms, 4 intersection genes (AKT1S1, BACH1, MGST1 and SETD1B) were considered as key ferroptosis-related gene. The 4 genes were correlated with osteoclast differentiation pathway. Twenty immune cells with significant differences were obtained between the groups, and the 4 key ferroptosis-related genes were correlated with most immune cells. In CTD, 41 drug-gene relationship pairs were finally obtained. The 4 key ferroptosis-related genes, AKT1S1, BACH1, MGST1 and SETD1B, were identified to play a critical role in SONFH progression through osteoclast differentiation and immunologic mechanisms. Additionally, all the 4 genes had good disease prediction effect and could act as biomarkers for the diagnosis and treatment of SONFH.",
+          "cos_sim_score": 0.5157519578933716,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_fetch_by_id",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::37120553",
+          "title": "Identification of key ferroptosis-related biomarkers in steroid-induced osteonecrosis of the femoral head based on machine learning.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37120553/",
+          "year": "2023",
+          "text": "This study was aimed to identify key ferroptosis-related biomarkers in steroid-induced osteonecrosis of the femoral head (SONFH) based on machine learning algorithm. The SONFH dataset GSE123568 (including 30 SONFH patients and 10 controls) was used in this study. The differentially expressed genes (DEGs) were selected between SONFH and control groups, which were subjected to WGCNA. Ferroptosis-related genes were downloaded from FerrDb V2, which were then compared with DEGs and module genes. Two machine learning algorithms were utilized to identify key ferroptosis-related genes, and the underlying mechanisms were analyzed by GSEA. Correlation analysis between key ferroptosis-related genes and immune cells was analyzed by Spearman method. The drug-gene relationships were predicted in CTD. Total 2030 DEGs were obtained. WGCNA identified two key modules and obtained 1561 module genes. Finally, 43 intersection genes were identified as disease-related ferroptosis-related genes. After LASSO regression and RFE-SVM algorithms, 4 intersection genes (AKT1S1, BACH1, MGST1 and SETD1B) were considered as key ferroptosis-related gene. The 4 genes were correlated with osteoclast differentiation pathway. Twenty immune cells with significant differences were obtained between the groups, and the 4 key ferroptosis-related genes were correlated with most immune cells. In CTD, 41 drug-gene relationship pairs were finally obtained. The 4 key ferroptosis-related genes, AKT1S1, BACH1, MGST1 and SETD1B, were identified to play a critical role in SONFH progression through osteoclast differentiation and immunologic mechanisms. Additionally, all the 4 genes had good disease prediction effect and could act as biomarkers for the diagnosis and treatment of SONFH.",
+          "cos_sim_score": 0.5157519578933716,
+          "source_type": "pubmed"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "probe_id": "11720644_a_at",
+  "gene_symbol": "PECAM1",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0482903881866862,
+  "abs_fold_change": 1.3317,
+  "score": 1.3289,
+  "probe_count": 1,
+  "probe_ids": "11720644_a_at",
+  "max_score": 1.3289,
+  "mean_abs_fold_change": 1.3317,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T02:20:37",
+  "interpretation": "PECAM1, or Platelet Endothelial Cell Adhesion Molecule, is a crucial cell adhesion molecule involved in leukocyte transendothelial migration and angiogenesis. Its role in inflammatory processes suggests that it may be implicated in the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), where inflammation and vascular compromise are key factors. Although there is no direct evidence linking PECAM1 to SONFH specifically, its involvement in leukocyte migration and endothelial function indicates a potential indirect connection to the disease mechanisms. The retrieved evidence primarily supports its general biological functions rather than a specific role in SONFH, leading to a lower confidence in its direct relevance as a biomarker. Therefore, while PECAM1 may have some biological plausibility as a candidate biomarker for SONFH, the evidence is not strong enough to classify it as clinically actionable at this time.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "PECAM1 is involved in leukocyte migration and endothelial function, which may relate to the inflammatory processes in Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "PECAM1 (P16284). https://www.uniprot.org/uniprotkb/P16284",
+    "PECAM1 (P16284-6). https://www.uniprot.org/uniprotkb/P16284-6",
+    "PECAM1 (P16284-2). https://www.uniprot.org/uniprotkb/P16284-2",
+    "PECAM1 \u2014 PECAM1. https://platform.opentargets.org/target/ENSG00000261371",
+    "PECAM1 \u2194 coronary artery disease. https://platform.opentargets.org/target/ENSG00000261371/associations",
+    "PECAM1 \u2194 hypertension. https://platform.opentargets.org/target/ENSG00000261371/associations",
+    "PECAM1 \u2194 Alzheimer disease. https://platform.opentargets.org/target/ENSG00000261371/associations",
+    "PECAM1 \u2194 myocardial infarction. https://platform.opentargets.org/target/ENSG00000261371/associations",
+    "CD31. https://en.wikipedia.org/wiki/CD31",
+    "List of human protein-coding genes 6. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_6",
+    "Pharmacoepigenetics. https://en.wikipedia.org/wiki/Pharmacoepigenetics",
+    "Immunoglobulin domain. https://en.wikipedia.org/wiki/Immunoglobulin_domain"
+  ],
+  "token_usage": {
+    "prompt_tokens": 6017,
+    "completion_tokens": 258,
+    "total_tokens": 6275,
+    "estimated_cost_usd": 0.001057
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P16284",
+          "title": "PECAM1 (P16284)",
+          "url": "https://www.uniprot.org/uniprotkb/P16284",
+          "text": "Protein: Platelet endothelial cell adhesion molecule\nFunction: Cell adhesion molecule which is required for leukocyte transendothelial migration (TEM) under most inflammatory conditions (PubMed:17580308, PubMed:19342684). Tyr-690 plays a critical role in TEM and is required for efficient trafficking of PECAM1 to and from the lateral border recycling compartment (LBRC) and is also essential for the LBRC membrane to be targeted around migrating leukocytes (PubMed:19342684). Trans-homophilic interaction may play a role in endothelial cell-cell adhesion via cell junctions (PubMed:27958302). Heterophilic interaction with CD177 plays a role in transendothelial migration of neutrophils (PubMed:17580308). Homophilic ligation of PECAM1 prevents macrophage-mediated phagocytosis of neighboring viable leukocytes by transmitting a detachment signal (PubMed:12110892). Promotes macrophage-mediated phagocytosis of apoptotic leukocytes by tethering them to the phagocytic cells; PECAM1-mediated detachment signal appears to be disabled in apoptotic leukocytes (PubMed:12110892). Modulates bradykinin receptor BDKRB2 activation (PubMed:18672896). Regulates bradykinin- and hyperosmotic shock-induced ERK1/2 activation in endothelial cells (PubMed:18672896). Induces susceptibility to atherosclerosis (By similarity) Does not protect against apoptosis",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P16284-6",
+          "title": "PECAM1 (P16284-6)",
+          "url": "https://www.uniprot.org/uniprotkb/P16284-6",
+          "text": "Protein: Isoform Delta15 of Platelet endothelial cell adhesion molecule\nFunction: Does not protect against apoptosis",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P16284-2",
+          "title": "PECAM1 (P16284-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P16284-2",
+          "text": "Protein: Isoform Delta12 of Platelet endothelial cell adhesion molecule",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000261371::function",
+          "title": "PECAM1 \u2014 PECAM1",
+          "url": "https://platform.opentargets.org/target/ENSG00000261371",
+          "text": "Function: Cell adhesion molecule which is required for leukocyte transendothelial migration (TEM) under most inflammatory conditions (PubMed:17580308, PubMed:19342684). Tyr-690 plays a critical role in TEM and is required for efficient trafficking of PECAM1 to and from the lateral border recycling compartment (LBRC) and is also essential for the LBRC membrane to be targeted around migrating leukocytes (PubMed:19342684). Trans-homophilic interaction may play a role in endothelial cell-cell adhesion via cell junctions (PubMed:27958302). Heterophilic interaction with CD177 plays a role in transendothelial migration of neutrophils (PubMed:17580308). Homophilic ligation of PECAM1 prevents macrophage-mediated phagocytosis of neighboring viable leukocytes by transmitting a detachment signal (PubMed:12110892). Promotes macrophage-mediated phagocytosis of apoptotic leukocytes by tethering them to the phagocytic cells; PECAM1-mediated detachment signal appears to be disabled in apoptotic leukocytes (PubMed:12110892). Modulates bradykinin receptor BDKRB2 activation (PubMed:18672896). Regulates bradykinin- and hyperosmotic shock-induced ERK1/2 activation in endothelial cells (PubMed:18672896). Induces susceptibility to atherosclerosis (By similarity).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000261371::EFO_0001645",
+          "title": "PECAM1 \u2194 coronary artery disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000261371/associations",
+          "text": "Disease: coronary artery disease\nDescription: Thickening and loss of elasticity of the CORONARY ARTERIES, leading to progressive arterial insufficiency (CORONARY DISEASE).\nAssociation score: 0.455",
+          "cos_sim_score": 0.45462480670907457,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000261371::EFO_0000537",
+          "title": "PECAM1 \u2194 hypertension",
+          "url": "https://platform.opentargets.org/target/ENSG00000261371/associations",
+          "text": "Disease: hypertension\nDescription: Persistently high systemic arterial blood pressure. Based on multiple readings (blood pressure determination), hypertension is currently defined as when systolic pressure is consistently greater than 140 mm Hg or when diastolic pressure is consistently 90 mm Hg or more.\nAssociation score: 0.392",
+          "cos_sim_score": 0.3923929197129399,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000261371::MONDO_0004975",
+          "title": "PECAM1 \u2194 Alzheimer disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000261371/associations",
+          "text": "Disease: Alzheimer disease\nDescription: A progressive, neurodegenerative disease characterized by loss of function and death of nerve cells in several areas of the brain leading to loss of cognitive function such as memory and language.\nAssociation score: 0.389",
+          "cos_sim_score": 0.3891678356965384,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000261371::EFO_0000612",
+          "title": "PECAM1 \u2194 myocardial infarction",
+          "url": "https://platform.opentargets.org/target/ENSG00000261371/associations",
+          "text": "Disease: myocardial infarction\nDescription: NECROSIS of the MYOCARDIUM caused by an obstruction of the blood supply to the heart (CORONARY CIRCULATION).\nAssociation score: 0.387",
+          "cos_sim_score": 0.3871575073880674,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::CD31",
+          "title": "CD31",
+          "url": "https://en.wikipedia.org/wiki/CD31",
+          "text": "Platelet endothelial cell adhesion molecule (PECAM-1) also known as cluster of differentiation 31 (CD31)  is a protein that in humans is encoded by the PECAM1 gene found on chromosome17q23.3. PECAM-1 plays a key role in removing aged neutrophils from the body.\n\nStructure\nPECAM-1 is a highly glycosylated protein with a mass of approximately 130 kDa. The structure of this protein was determined by molecular cloning in 1990, when it was found out that PECAM-1 has an N-terminal domain with 574 amino acids, a transmembrane domain with 19 amino acids and a C-terminal cytoplasmic domain with 118 amino acids. The N-terminal domain consists of six extracellular Ig-like domains.\n\nInteractions\nPECAM-1 is a cell-cell adhesion protein which interacts with other PECAM-1 molecules through homophilic interactions or with non-PECAM-1 molecules through heterophilic interactions. Homophilic interactions between PECAM-1 molecules are mediated by antiparallel interactions between extracellular Ig-like domain 1 and Ig-like domain 2. These interactions are regulated by the level of PECAM-1 expression. Homophilic interactions occur, only when the surface expression of PECAM-1 is high. Otherwise, when expression is low, heterophilic interactions occur.\n\nTissue distribution\nCD31 is normally found on endothelial cells, platelets, macrophages and Kupffer cells, granulocytes, lymphocytes (T cells, B cells, and NK cells), megakaryocytes, osteoclasts, and brown adipocytes.\n\nImmunohistochemistry\nIn immunohistochemistry, CD31 is used primarily to demonstrate the presence of endothelial cells in histological tissue sections. This can help to evaluate the degree of tumor angiogenesis, which can imply a rapidly growing tumor. Malignant endothelial cells also commonly retain the antigen, so that CD31 immunohistochemistry can also be used to demonstrate both angiomas and angiosarcomas. It can also be demonstrated in small lymphocytic and lymphoblastic lymphomas, although more specific markers are available for these conditions.\n\nFunction\nPECAM-1 is found on the surface of platelets, monocytes, neutrophils, and some types of T-cells, and makes up a large portion of endothelial cell intercellular junctions. The encoded protein is a member of the immunoglobulin superfamily and is likely involved in leukocyte transmigration, angiogenesis, and integrin activation. CD31 on endothelial cells binds to the CD38 receptor on natural killer cells for those cells to attach to the endothelium.\n\nRole in signaling\nPECAM-1 plays a role in cell signaling. In the cytoplasmic domain of PECAM-1 are serine and tyrosine residues which are suitable for phosphorylation. After the tyrosine is phosphorylated, PECAM-1 recruits Src homology 2 (SH2) domain\u2013containing signaling proteins. These proteins can then initiate signaling pathways. Of all these proteins, the protein most widely reported as interacting with the PECAM-1 cytoplasmic domain is SH2 domain\u2013containing protein-tyrosine phosphatase SHP-2. Signaling through PECAM-1 leads to the activation of neutrophils, monocytes and leukocytes.\n\nLeukocyte transmigration\nPECAM-1 is involved in migration of monocytes and neutrophils, natural killer cells, V\u03b41+ \u03b3\u03b4 T lymphocytes and CD34+ hematopoietic progenitor cells through the endothelial cells. Moreover, PECAM-1 is involved in transendothelial migration of recent thymic emigrants to the secondary lymphoid organs. Mechanism of leukocyte transmigration can be explained by creating a homophilic interaction. In this interaction migrating leukocytes express PECAM-1 on the surface and then they react with PECAM-1 on the surface of endothelial cell.\n\nAngiogenesis\nPECAM-1 is also important for angiogenesis because it enables the formation of new blood vessels through the cell-cell adhesion.",
+          "cos_sim_score": 0.47429805994033813,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::CD31",
+          "title": "CD31",
+          "url": "https://en.wikipedia.org/wiki/CD31",
+          "text": "Leukocyte transmigration\nPECAM-1 is involved in migration of monocytes and neutrophils, natural killer cells, V\u03b41+ \u03b3\u03b4 T lymphocytes and CD34+ hematopoietic progenitor cells through the endothelial cells. Moreover, PECAM-1 is involved in transendothelial migration of recent thymic emigrants to the secondary lymphoid organs. Mechanism of leukocyte transmigration can be explained by creating a homophilic interaction. In this interaction migrating leukocytes express PECAM-1 on the surface and then they react with PECAM-1 on the surface of endothelial cell.\n\nAngiogenesis\nPECAM-1 is also important for angiogenesis because it enables the formation of new blood vessels through the cell-cell adhesion.\n\nRole of CD31 in diseases\nCancer\nPECAM-1 is expressed by many solid tumor cell lines such as hemangioma, angiosarcoma, Kaposi\u2019s sarcoma, breast carcinoma, glioblastoma, colon carcinoma, skin carcinoma and other tumor cell lines. On the surface of these tumor cells PECAM-1 mediates the adhesion to endothelial cells. PECAM-1 modulates tumor growth by the formation of new endothelial cell tubes. In mice, this process can be inhibited using an anti-PECAM-1 antibody. \nRecently, it was found out that elderly patients with gastric cancer have high concentration of PECAM-1 in the serum. That suggests that the use of a serum PECAM-1 level can be a good prognostic marker.\n\nAtherosclerosis\nInhibition of PECAM-1 leads to a reduction of atherosclerotic lesions in mice. That means that PECAM-1 is involved in atherosclerosis. The exact mechanism, how PECAM-1 contributes to atherosclerosis is not known, but there are some theories. PECAM-1 can act as a mechanoresponsive molecule. Or the pathogenesis can be caused by the infiltration of leukocytes mediated by PECAM-1. Finally, polymorphisms in the PECAM-1 gene can lead to the progression of atherosclerosis.\n\nDisseminated intravascular coagulation\nExtensive microvascular thrombosis and increased microvascular permeability are main characteristics of disseminated intravascular coagulation, a fatal complication of sepsis. Patients with this devastating condition have high levels of PECAM-1 in the serum indicating PECAM-1 as a good diagnostic marker. Moreover, PECAM-1 can protect from the development of disseminated intravascular coagulation by inhibiting macrophage pyroptosis.\n\nNeuroinflammation\nPECAM-1 contributes to at least two of the nervous system diseases, multiple sclerosis and cerebral ischaemia. First signs of multiple sclerosis are defects in the blood brain barrier and leukocyte migration mediated by adhesion molecules such as PECAM-1. Moreover, monocytes in patients with multiple sclerosis express high level of PECAM-1. Cerebral ischaemia is caused by the accumulation of leukocytes, which then infiltrate brain parenchyma and release toxic compounds such as oxygen radicals. Interactions between leukocyte and endothelium are mediated by PECAM-1. High levels of soluble PECAM-1 can be used to diagnose both diseases. Increased PECAM-1 levels indicate damage in the blood brain barrier in patients with multiple sclerosis and high PECAM-1 levels can be used as a short-term prediction of a stroke in patients with cerebral ischaemia.\n\nReferences\nFurther reading\nExternal links\nHuman CD Antigen Chart (eBioscience)\nMouse CD Antigen Chart (eBioscience)\nHuman PECAM1 genome location and PECAM1 gene details page  in the UCSC Genome Browser.\nOverview of all the structural information available in the PDB for UniProt: P16284 (Platelet endothelial cell adhesion molecule) at the PDBe-KB.",
+          "cos_sim_score": 0.3224453926086426,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of human protein-coding genes 6",
+          "title": "List of human protein-coding genes 6",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_6",
+          "text": "== References ==",
+          "cos_sim_score": 0.11996331810951233,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Pharmacoepigenetics",
+          "title": "Pharmacoepigenetics",
+          "url": "https://en.wikipedia.org/wiki/Pharmacoepigenetics",
+          "text": "Pharmacoepigenetics is an emerging field that studies the underlying epigenetic marking patterns that lead to variation in an individual's response to medical treatment.\n\nBackground\nDue to genetic heterogeneity, environmental factors, and pathophysiological causes, individuals that exhibit similar disease expression may respond differently to identical drug treatments. Selecting treatments based on factors such as age, body-surface area, weight, gender, or disease stage has been shown to incompletely address this problem, so medical professionals are shifting toward using patient genomic data to select optimal treatments. Now, an increasing amount of evidence shows that epigenetics also plays an important role in determining the safety and efficacy of drug treatment in patients. Epigenetics is a bridge that connects individual genetics and environmental factors to explain some aspects of gene expression. Specifically, environmental factors have the potential to alter one's epigenetic mechanisms in order to influence the expression of genes. For example, smoking cigarettes can alter the DNA methylation state of genes and thereby expression of genes through different mechanisms.\nEpigenetic changes in genes caused by factors such as environment can result in abnormal gene expression and the initiation of diseases. The progression of diseases further alters the epigenetic patterns of the whole genome. While epigenetic changes are generally long lasting, and in some cases permanent, there is still the potential to change the epigenetic state of a gene. Thus, drugs have been developed to target aberrant epigenetic patterns in cells to either activate or suppress the epigenetically modified gene expression gene expression. This is known as epigenetic therapy. Besides being drug targets, epigenetic changes are also used as diagnostic and prognostic indicators to predict disease risk and progression, and this could be beneficial for the improvement of personalized medicine.\nThe development of the Human Epigenome Project and advances in epigenomics has given rise to a burgeoning field known as pharmacoepigenetics. Pharmacoepigenetics was initially developed to study how epigenetic patterns of drug transporters, drug-metabolizing enzymes, and nuclear receptors affect individuals\u2019 response to the drug. Now, pharmacoepigenetics has an additional focus: the development of therapeutic epidrugs that can make changes to the epigenome in order to lessen the cause or symptoms of a disease in an individual. Even though a large gap still remains between the knowledge of epigenetic modifications on drug metabolism mechanisms and clinical applications,  \npharmacoepigenetics has become a rapidly growing field that has the potential to play an important role in personalized medicine.\nIn order to develop effective epigenetic therapies, it is important to understand the underlying epigenetic mechanisms and the proteins that are involved. Various mechanisms and modifications play a role in epigenetic remodeling and signaling, including DNA methylation, histone modification, covalent modifications, RNA transcripts, microRNAs, mRNA, siRNA, and nucleosome positioning. In particular, scientists have extensively studied the associations of DNA methylation, histone modifications, regulatory microRNA with the development of diseases.\nDNA methylation is the most widely studied epigenetic mechanism. Most of them occur at CpG sites. DNA methyltransferase is recruited to the site and adds methyl groups to the cytosine of the CpG dinucleotides. This allows the methyl-CpG binding proteins to bind to the methylated site and cause downregulation of genes. Histone modification is mainly achieved by modifying the N-terminal tails of histones. The mechanisms include acetylation, methylation, phosphorylation, unbiquitination, etc. They affect the compaction of chromatin structure, the accessibility of the DNA, and therefore the transcriptional level of specific genes.\nAdditionally, microRNA is a type of noncoding RNA that is responsible for altering gene expression by targeting and marking mRNA transcripts for degradation. Since this process is a posttranscriptional modification, it does not involve changes in DNA sequence. The expression of microRNA is also regulated by other epigenetic mechanisms. Aberrant expression of microRNA facilitates disease development, making them good targets for epigenetic therapies. Epigenetic proteins involved in the regulation of gene transcription fall into three categories-writers, erasers, and readers.  Both writers and erasers have enzymatic activity that allows them to covalently modify DNA or histone proteins. Readers have the ability to recognize and bind to specific sites on chromatin to alter epigenetic signatures.\nOnce the underlying epigenetic mechanisms are understood, it becomes possible to develop new ways to alter epigenetic marks such as \"epidrugs\", or epigenome editing, which is the overwriting of epigenetic patterns using man-made signals to direct epigenetic proteins to target loci. Furthermore, based on patients' unique epigenetic patterns, medical professionals can more accurately assign a safe and effective treatment including appropriate epigenetic drugs tailored to the patient.",
+          "cos_sim_score": 0.10512078553438187,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Immunoglobulin domain",
+          "title": "Immunoglobulin domain",
+          "url": "https://en.wikipedia.org/wiki/Immunoglobulin_domain",
+          "text": "The immunoglobulin domain, also known as the immunoglobulin fold, is a type of protein domain that consists of a 2-layer sandwich of 7-9 antiparallel \u03b2-strands arranged in two \u03b2-sheets with a Greek key topology, consisting of about 125 amino acids.\nThe backbone switches repeatedly between the two \u03b2-sheets.  Typically, the pattern is (N-terminal \u03b2-hairpin in sheet 1)-(\u03b2-hairpin in sheet 2)-(\u03b2-strand in sheet 1)-(C-terminal \u03b2-hairpin in sheet 2).  The cross-overs between sheets form an \"X\", so that the N- and C-terminal hairpins are facing each other.\nMembers of the immunoglobulin superfamily are found in hundreds of proteins of different functions. Examples include antibodies, the giant muscle kinase titin, and receptor tyrosine kinases. Immunoglobulin-like domains may be involved in protein\u2013protein and protein\u2013ligand interactions.\n\nExamples\nHuman genes encoding proteins containing the immunoglobulin domain include:\n\nSee also\nImmunoglobulin superfamily\n\nReferences\nExternal links\nSCOP listing of immunoglobulin domains of known structure",
+          "cos_sim_score": 0.10047488659620285,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "probe_id": "11736696_a_at",
+  "gene_symbol": "HEMGN",
+  "rf_importance": 0.0038,
+  "selection_freq": 0.4,
+  "abs_fold_change": 2.943764233333332,
+  "score": 0.4778,
+  "probe_count": 1,
+  "probe_ids": "11736696_a_at",
+  "max_score": 0.4778,
+  "mean_abs_fold_change": 2.9438,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T23:50:05",
+  "interpretation": "HEMGN, or Hemogen, is involved in the regulation of hematopoietic cell proliferation and differentiation, and it may also play a role in preventing apoptosis through the activation of the nuclear factor-kappa B (NF-kB) pathway. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), HEMGN was identified as a potential diagnostic biomarker through weighted gene co-expression network analysis (WGCNA) and differential expression analysis in a study utilizing peripheral blood samples from SONFH patients. The evidence suggests that HEMGN is downregulated in SONFH patients, indicating its potential as an early detection biomarker for this condition. The strength of the evidence is supported by its identification as a hub gene in a significant module correlated with SONFH, thus providing a moderate level of confidence in its relevance as a biomarker.",
+  "evidence_relation": "direct",
+  "evidence_tier": "Tier 1",
+  "evidence_confidence": "high",
+  "biomarker_potential": "strong",
+  "relevance_summary": "HEMGN is identified as a potential diagnostic biomarker for Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) due to its downregulation in affected patients.",
+  "citations": [
+    "HEMGN (Q9BXL5). https://www.uniprot.org/uniprotkb/Q9BXL5",
+    "HEMGN \u2014 HEMGN. https://platform.opentargets.org/target/ENSG00000136929",
+    "HEMGN \u2194 hypothyroidism. https://platform.opentargets.org/target/ENSG00000136929/associations",
+    "HEMGN \u2194 thrombocytopenia 4. https://platform.opentargets.org/target/ENSG00000136929/associations",
+    "HEMGN \u2194 hemorrhagic disease. https://platform.opentargets.org/target/ENSG00000136929/associations",
+    "HEMGN \u2194 Blackfan-Diamond anemia. https://platform.opentargets.org/target/ENSG00000136929/associations",
+    "HEMGN and SLC2A1 might be potential diagnostic biomarkers of steroid-induced osteonecrosis of femoral head: study based on WGCNA and DEGs screening. (2021). https://pubmed.ncbi.nlm.nih.gov/33451334/",
+    "HEMGN \u2014 hemogen (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KRAS \u2014 KRAS proto-oncogene, GTPase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CDH1 \u2014 cadherin 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TLR2 \u2014 toll like receptor 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HEMGN and SLC2A1 might be potential diagnostic biomarkers of steroid-induced osteonecrosis of femoral head: study based on WGCNA and DEGs screening (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC7811219/",
+    "Identification of Inflammation-Related Genes and Exploration of Regulatory Mechanisms in Patients with Osteonecrosis of the Femoral Head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9526608/",
+    "Screening of Potential Biomarkers in the Peripheral Serum for Steroid-Induced Osteonecrosis of the Femoral Head Based on WGCNA and Machine Learning Algorithms (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8832155/",
+    "Pathological mechanisms and related markers of steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11559024/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9736,
+    "completion_tokens": 320,
+    "total_tokens": 10056,
+    "estimated_cost_usd": 0.001652
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9BXL5",
+          "title": "HEMGN (Q9BXL5)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BXL5",
+          "text": "Protein: Hemogen\nFunction: Regulates the proliferation and differentiation of hematopoietic cells. Overexpression block the TPA-induced megakaryocytic differentiation in the K562 cell model. May also prevent cell apoptosis through the activation of the nuclear factor-kappa B (NF-kB)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000136929::function",
+          "title": "HEMGN \u2014 HEMGN",
+          "url": "https://platform.opentargets.org/target/ENSG00000136929",
+          "text": "Function: Regulates the proliferation and differentiation of hematopoietic cells. Overexpression block the TPA-induced megakaryocytic differentiation in the K562 cell model. May also prevent cell apoptosis through the activation of the nuclear factor-kappa B (NF-kB).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000136929::EFO_0004705",
+          "title": "HEMGN \u2194 hypothyroidism",
+          "url": "https://platform.opentargets.org/target/ENSG00000136929/associations",
+          "text": "Disease: hypothyroidism\nDescription: Abnormally low levels of thyroid hormone.\nAssociation score: 0.158",
+          "cos_sim_score": 0.1582165437817256,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000136929::MONDO_0012775",
+          "title": "HEMGN \u2194 thrombocytopenia 4",
+          "url": "https://platform.opentargets.org/target/ENSG00000136929/associations",
+          "text": "Disease: thrombocytopenia 4\nDescription: Any thrombocytopenia in which the cause of the disease is a mutation in the CYCS gene.\nAssociation score: 0.138",
+          "cos_sim_score": 0.1383441823287546,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000136929::MONDO_0002243",
+          "title": "HEMGN \u2194 hemorrhagic disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000136929/associations",
+          "text": "Disease: hemorrhagic disease\nDescription: Spontaneous or near spontaneous bleeding caused by a defect in clotting mechanisms (blood coagulation disorders) or another abnormality causing a structural flaw in the blood vessels (hemostatic disorders).\nAssociation score: 0.138",
+          "cos_sim_score": 0.1383441823287546,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000136929::Orphanet_124",
+          "title": "HEMGN \u2194 Blackfan-Diamond anemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000136929/associations",
+          "text": "Disease: Blackfan-Diamond anemia\nAssociation score: 0.086",
+          "cos_sim_score": 0.08633077422222395,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::33451334",
+          "title": "HEMGN and SLC2A1 might be potential diagnostic biomarkers of steroid-induced osteonecrosis of femoral head: study based on WGCNA and DEGs screening.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33451334/",
+          "year": "2021",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SONFH) is a chronic and crippling bone disease. This study aims to reveal novel diagnostic biomarkers of SONFH. The GSE123568 dataset based on peripheral blood samples from 10 healthy individuals and 30 SONFH patients was used for weighted gene co-expression network analysis (WGCNA) and differentially expressed genes (DEGs) screening. The genes in the module related to SONFH and the DEGs were extracted for Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analysis. Genes with |gene significance|\u2009>\u20090.7 and |module membership| >\u20090.8 were selected as hub genes in modules. The DEGs with the degree of connectivity \u22655 were chosen as hub genes in DEGs. Subsequently, the overlapping genes of hub genes in modules and hub genes in DEGs were selected as key genes for SONFH. And then, the key genes were verified in another dataset, and the diagnostic value of key genes was evaluated by receiver operating characteristic (ROC) curve. Nine gene co-expression modules were constructed via WGCNA. The brown module with 1258 genes was most significantly correlated with SONFH and was identified as the key module for SONFH. The results of functional enrichment analysis showed that the genes in the key module were mainly enriched in the inflammatory response, apoptotic process and osteoclast differentiation. A total of 91 genes were identified as hub genes in the key module. Besides, 145 DEGs were identified by DEGs screening and 26 genes were identified as hub genes of DEGs. Overlapping genes of hub genes in the key module and hub genes in DEGs, including RHAG, RNF14, HEMGN, and SLC2A1, were further selected as key genes for SONFH. The diagnostic value of these key genes for SONFH was confirmed by ROC curve. The validation results of these key genes in GSE26316 dataset showed that only HEMGN and SLC2A1 were downregulated in the SONFH group, suggesting that they were more likely to be diagnostic biomarkers of SOFNH than RHAG and RNF14. Our study identified that two key genes, HEMGN and SLC2A1, might be potential diagnostic biomarkers of SONFH.",
+          "cos_sim_score": 0.45014917850494385,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "HEMGN \u2014 hemogen",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HEMGN\nGene name: hemogen\nAliases / synonyms: CT155, EDAG, EDAG-1, NDR\nOrganism: Homo sapiens\nGene summary: Predicted to be involved in regulation of osteoblast differentiation. Located in nucleoplasm. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HEMGN",
+          "aliases": "CT155, EDAG, EDAG-1, NDR",
+          "gene_description": "hemogen"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KRAS \u2014 KRAS proto-oncogene, GTPase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KRAS\nGene name: KRAS proto-oncogene, GTPase\nAliases / synonyms: 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2\nOrganism: Homo sapiens\nGene summary: This gene, a Kirsten ras oncogene homolog from the mammalian ras gene family, encodes a protein that is a member of the small GTPase superfamily. A single amino acid substitution is responsible for an activating mutation. The transforming protein that results is implicated in various malignancies, including lung adenocarcinoma, mucinous adenoma, ductal carcinoma of the pancreas and colorectal carcinoma. Alternative splicing leads to variants encoding two isoforms that differ in the C-terminal region. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KRAS",
+          "aliases": "'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2",
+          "gene_description": "KRAS proto-oncogene, GTPase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CDH1 \u2014 cadherin 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CDH1\nGene name: cadherin 1\nAliases / synonyms: Arc-1, BCDS1, CD324, CDHE, ECAD, LCAM, UVO\nOrganism: Homo sapiens\nGene summary: This gene encodes a classical cadherin of the cadherin superfamily. Alternative splicing results in multiple transcript variants, at least one of which encodes a preproprotein that is proteolytically processed to generate the mature glycoprotein. This calcium-dependent cell-cell adhesion protein is comprised of five extracellular cadherin repeats, a transmembrane region and a highly conserved cytoplasmic tail. Mutations in this gene are correlated with gastric, breast, colorectal, thyroid and ovarian cancer. Loss of function of this gene is thought to contribute to cancer progression by increasing proliferation, invasion, and/or metastasis. The ectodomain of this protein mediates bacterial adhesion to mammalian cells and the cytoplasmic domain is required for internalization. This gene is ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CDH1",
+          "aliases": "Arc-1, BCDS1, CD324, CDHE, ECAD, LCAM, UVO",
+          "gene_description": "cadherin 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TLR2 \u2014 toll like receptor 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TLR2\nGene name: toll like receptor 2\nAliases / synonyms: CD282, TIL4\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the Toll-like receptor (TLR) family which plays a fundamental role in pathogen recognition and activation of innate immunity. TLRs are highly conserved from Drosophila to humans and share structural and functional similarities. This protein is a cell-surface protein that can form heterodimers with other TLR family members to recognize conserved molecules derived from microorganisms known as pathogen-associated molecular patterns (PAMPs). Activation of TLRs by PAMPs leads to an up-regulation of signaling pathways to modulate the host's inflammatory response. This gene is also thought to promote apoptosis in response to bacterial lipoproteins. This gene has been implicated in the pathogenesis of several autoimmune diseases. Alternative splicing...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TLR2",
+          "aliases": "CD282, TIL4",
+          "gene_description": "toll like receptor 2"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::7811219",
+          "title": "HEMGN and SLC2A1 might be potential diagnostic biomarkers of steroid-induced osteonecrosis of femoral head: study based on WGCNA and DEGs screening",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7811219/",
+          "text": "Background\nSteroid-induced osteonecrosis of the femoral head (SONFH) is a chronic and crippling disease of the femoral head, due to the disruption of the blood supply of the femoral head and the subsequent death of bone cells after chronic exposure to excessive glucocorticoids, which ultimately results in the collapse of the femoral head and dysfunction of the hip joint [1]. There are approximately 10,000 to 20,000 new non-traumatic osteonecrosis of the femoral head (NONFH) cases reported each year in the United States alone, while the estimated NONFH cases in China were 8.12 million in the population aged 15\u2009years and over, among which SONFH counted for 47.4% of the total NONFH cases [2\u20134]. Although the diagnostic criteria for SONFH have been established, SONFH patients are often diagnosed at the advanced stage (ARCO stage III-IV), due to the non-specific clinical symptoms at the early stage and the absence of specific biomarkers for the early diagnosis, which often leads to total hip arthroplasty of the patients [5]. Therefore, it is exceptionally urgent to establish novel early diagnostic molecular markers for SONFH.\nMany studies have identified the biomarkers of diseases by screening differentially expressed genes (DEGs). It is worth noting that few studies have explored clusters of highly correlated genes, which may play key a role in clinical features of interests. Weighted gene co-expression network analysis (WGCNA), a particularly useful systems biology method in this context, helps to construct free-scale gene co-expression networks and detect gene modules [6]. By analyzing the connectivity between modules and clinical features, we can determine which modules are associated with which features. Notably, WGCNA has been widely used to identify the hub genes related to clinical features in different diseases, such as osteoarthritis [7], acute myocardial infarction [8], bladder cancer [9] and pancreatic cancer [10].\nIn the present study, we proposed to identify novel diagnostic biomarkers of SONFH based on WGCNA and DEGs screening on the basis of GSE123568 dataset. The flowchart used in the present study was presented in Fig.\u00a01. The key module with the highest level of significant correlation with SONFH was identified, and the genes with |gene significance|\u2009>\u20090.7 and |module membership| >\u20090.8 were then selected as hub genes in the key module. DEGs were integrated into a protein-protein interaction network analysis using the STRING database and Cytoscape software to identify hub genes (degree\u22655). The overlapped genes between hub genes in the key module and hub genes in DEGs were defined as key genes (RHAG, RNF14, HEMGN and SLC2A1), and then the key genes were validated in GSE26316 dataset. This study may provide novel insight into the underlying mechanisms of SONFH and contribute to identifying potential diagnostic biomarkers of SONFH.\nFig. 1Flowchart used in the present study. GEO, Gene Expression Omnibus; MAD, median absolute deviation; WGCNA, weighted gene co-expression network analysis; DEGs, differentially expressed genes; PPI, protein-protein interaction; abs, absolute value; GS, gene significance; MM, module membership; ROC, receiver operating characteristic\nFig. 1\nFlowchart used in the present study. GEO, Gene Expression Omnibus; MAD, median absolute deviation; WGCNA, weighted gene co-expression network analysis; DEGs, differentially expressed genes; PPI, protein-protein interaction; abs, absolute value; GS, gene significance; MM, module membership; ROC, receiver operating characteristic\nMethods\nData collection and preprocessing",
+          "cos_sim_score": 0.7017116546630859,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9526608",
+          "title": "Identification of Inflammation-Related Genes and Exploration of Regulatory Mechanisms in Patients with Osteonecrosis of the Femoral Head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9526608/",
+          "text": "1. Background\nOsteonecrosis of the femoral head (ONFH) is characterized by the death of bone due to the circulatory disruption of the femoral head with traumatic or nontraumatic factors [1]. As a large range of diseases requires steroid usage, steroid-induced osteonecrosis of the femoral head (SONFH) accounts for a large proportion of ONFH [2]. There are approximately 8.12 million nontraumatic ONFH cases in the population aged 15 years and over in China, among which SONFH counts for 47.4% [3]. Association Research Circulation Osseous (ARCO) classification system [4] was developed for accurate staging, which is essential for successful treatment. As the early symptoms of ONFH are not obvious, patients are often diagnosed at the advanced stage (ARCO stage III-IV). Therefore, novel diagnostic biomarkers and therapeutic targets are urgently needed to provide for intervention and treatment of SONFH patients.\nIn previous studies, inflammation has been shown to play an indispensable role in the development and progression of SONFH. Li et al. identified 8 candidate serum biomarkers of SONFH and found they were significantly involved in immune regulation and inflammation [5]. Real-time imaging probes showed the accumulation of elevated neutrophils and macrophages in the tissue of osteonecrosis in a mouse model [6]. Necrotic bone stimulated macrophage-inflammatory response through activation of a pattern recognition receptor (PRR) Toll-like receptor 4 (TLR4) and upregulation of the downstream transcription factors, including Nuclear factor-kappa B (NF-\u03baB) and monocyte chemotactic protein 1 (MCP-1), for inflammatory proteins [7, 8]. In other studies, the levels of pro-inflammatory cytokines interleukin (IL)-9, IL-17, IL-23, and IL-33 produced by T cells have been reported to be associated with ONFH [9\u201312]. In addition, the activation of specific B cells and elevated levels of serum Tumor necrosis factor \u03b1 (TNF-\u03b1) were associated with the development of ONFH [13]. Moreover, neutrophil granulocyte levels and percentage of neutrophil granulocytes were related to ONFH [14].\nBioinformatics has been used to identify hub genes, interaction networks, and pathways of SONFH to improve diagnosis and treatment. Early studies identified biomarkers of SONFH based on weighted gene co-expression network analysis (WCGNA) and differentially expressed genes (DEGs) screening and further revealed their correlation with immune infiltration [15, 16]. Competitive endogenous RNA (ceRNA) networks can reveal potential mechanisms of disease in transcriptional regulatory networks, while no study has been conducted to analyze it in osteonecrosis.\nIn the present study, we proposed to identify novel inflammation-related biomarkers and evaluate its diagnostic value in SONFH on the basis of GSE123568 dataset. The DEGs screening, WCGNA, and inflammation-related gene (IRG) expression were used to identify the gene network signature and IRGs associated with SONFH (IRGs-SONFH). Then, the IRGs-SONFH was analyzed by Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) analysis, and the protein-protein interaction (PPI) was constructed. Subsequently, 4 hub genes were screened out and verified by quantitative reverse transcription polymerase chain reaction (qRT-PCR). Finally, we constructed a ceRNA network to get a deep understanding of the pathogenesis of ONFH on the basis of the predicted results of microRNAs (miRNAs) and long non-coding RNAs (lncRNAs). The research process of this study is shown in Figure 1.\n2. Methods\n2.1. Data Source",
+          "cos_sim_score": 0.6094280481338501,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8832155",
+          "title": "Screening of Potential Biomarkers in the Peripheral Serum for Steroid-Induced Osteonecrosis of the Femoral Head Based on WGCNA and Machine Learning Algorithms",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8832155/",
+          "text": "1. Introduction\nSteroid-induced osteonecrosis of the femoral head (SONFH), a chronic and progressive femoral head disease mainly induced by long-term exposure to excessive glucocorticoids, can cause hip joint damage and dysfunction and ultimately affect the quality of life [1]. The worldwide morbidity of SONFH is increasing year by year, and it is estimated that 20,000-30,000 patients are diagnosed with SONFH that does not depend on transmission each year in United States [2]. In particular, it is expected that the incidence of SONFH will rise in the next few years around the world because of the continuing impacts of the novel coronavirus pandemic since 2019 (COVID-19) [3]. Currently, although the diagnosis of SONFH, especially joint imaging techniques, is well established, patients with an early stage of SONFH are difficult to find because of the lack of effective and specific biomarkers [4]. Moreover, the cost and inconvenience of joint imaging techniques severely limit their application, specifically in China [5, 6]. Furthermore, total hip arthroplasty is effective in improving the quality of life, but most patients still endure the mental and financial pressure [7]. Therefore, the development of new biomarkers for SONFH diagnosis and treatment is urgently needed.\nWith the ongoing progression in sequencing technologies, bioinformatics analysis is an emerging and promising tool for screening potential biomarkers in a variety of neoplastic and nonneoplastic diseases [8, 9]. Data remining by using bioinformatics analysis based on public databases has facilitated the screening of new biomarkers for nonneoplastic diseases [10, 11]. In particular, combining weighted gene coexpression network analysis (WGCNA) and machine learning algorithms has greatly improved the accurate identification of disease-related biomarkers [12\u201315]. For example, FADD, CXCL2, and CXCL8 were identified as immune-related biomarkers of rheumatoid arthritis by integrating WGCNA and least absolute shrinkage and selection operator (LASSO) logistic regression and support vector machine recursive feature elimination (SVM-RFE) algorithms [12]. MACROD1 was found to contribute to the early diagnosis of tendinopathy based on the LASSO model, SVM-REF, and Gaussian mixture model (GMMs) algorithms [13]. Moreover, LSP1, GNLY, and MEOX2 are likely to aid in the diagnosis and treatment of rheumatoid arthritis based on WGCNA machine learning strategies. Furthermore, CDK1, TOP2A, ADRA1A, FANCI, XRCC1, TPX2, CCNB2, CDK4, GLYATL1, and CFHR3 were identified to be core hub genes as potential biomarkers and treatment targets for hepatoblastoma by integrating WGCNA and random forest (RF) algorithm [14]. However, most bioinformatics analyses for SONFH have not been performed by integrating WGCNA and machine learning algorithms.\nTherefore, the present study is aimed at identifying potential biomarkers in the peripheral serum for SONFH by integrating WGCNA and machine learning algorithms, including LASSO logistic regression, SVM-RFE, and RF. First, we identified differentially expressed genes (DEGs) between SONFH and control samples in the GSE123568 dataset downloaded from the Gene Expression Omnibus (GEO) database (https://www.ncbi.nlm.nih.gov/geo/) in NCBI. Moreover, WGCNA was performed based on the expression matrix of DEGs to screen target genes, and machine learning algorithms were used to identify potential biomarkers. Finally, we investigated the possible functions and regulatory mechanisms of the potential biomarkers. This study may provide new biomarkers for the diagnosis and treatment of SONFH and contribute to clarifying the pathogenesis of SONFH.\n2. Material and Methods\n2.1. Data Collection and Preprocessing\nThe gene expression matrix of the peripheral serum for 30 SONFH and 10 control samples from China in the GSE123568 dataset, which was sequenced using the GPL15207 platform, was obtained from the GEO database.\n2.2. Identification of DEGs in the Peripheral Serum of Patients with SONFH\n\u201cLimma\u201d R package was used to screen DEGs between SONFH and control samples [16], and genes with P < 0.01 and \u2223log2FC | >1 were regarded as DEGs.\n2.3. Screening of Target Modules and Genes Based on WGCNA",
+          "cos_sim_score": 0.5599686503410339,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11559024",
+          "title": "Pathological mechanisms and related markers of steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11559024/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH), also known as avascular necrosis of the femoral head, is a common and refractory orthopedic disease with a high disability rate. It involves the weight-bearing dome of the femoral head and leads to collapse and secondary arthritis of the hip with disease progression [1]. According to an epidemiological survey, approximately 300,000 to 600,000 people suffer from ONFH in the United States, and 10,000 to 20,000 new patients are diagnosed annually [2]. In Japan, approximately 2,500\u20133,300 new cases are reported each year, and the annual incidence rate is 1.91 per 100,000 [3,4]. China is one of the countries with a large number of patients with ONFH, and it is estimated that more than 8 million patients need to be treated [5,6]. ONFH results in huge health concerns, economic burdens, and social problems worldwide.\nONFH can generally be divided into two major categories: traumatic and non-traumatic necrosis [7]. Generally, non-traumatic ONFH is an extremely complicated disease in orthopedic clinics because its exact pathogenesis has not been fully elucidated and remains to be investigated [8]. It has been confirmed that non-traumatic ONFH is closely associated with a series of risk factors, such as long-term use of steroids, excessive consumption of alcohol, dysbaric disorders, and sickle cell disease and so on [5,9\u201311], among these, steroid-induced osteonecrosis of the femoral head (SONFH) accounts for a large proportion. Fukushima et\u00a0al. reported that more than half of the patients with non-traumatic ONFH have a history of steroid usage [12]. It should be noted that the mechanisms of ONFH with different etiologies vary greatly although sometimes the patients have similar clinical manifestations and prognosis. For example, previous research has demonstrated that the integrity of trabecular bone is destroyed in necrotic area of both SONFH and alcohol-induced osteonecrosis of the femoral head (AONFH). The SONFH is manifested as the increase of bone resorption, while the AONFH is characterized as the decrease of bone formation [13].\nThe hypotheses for the pathogenesis of SONFH are complex and varied, including lipid metabolism disorder, impaired blood flow, intraosseous hypertension, and osteoporosis, which make it difficult to achieve uniform standards [14,15]. The molecular pathogenesis of SONFH remains obscure; however, it has been confirmed that several transcription factors and pathways play critical roles in different aspects. For example, Song et\u00a0al. showed that peroxisome proliferator-activated receptor \u03b3 (PPAR\u03b3) and Runt-related transcription factor 2 (Runx2) affect the imbalance between adipogenesis and osteogenesis during the development of SONFH [16]. PPAR\u03b3 is a member of the nuclear receptor superfamily of ligand-activated transcription factors and has various functions, including regulation of glucose and lipid metabolism, oxidative stress inhibition and anti-inflammatory [17]. Runx2 is a specific transcription factor in bone tissue and plays a role in bone homeostasis by regulating osteoblast differentiation and promoting chondrocyte maturation [18]. In addition, the osteoprotegerin (OPG)/receptor activator of nuclear factor-kappa B (NF-\u03baB) (RANK)/RANK ligand (RANKL) system and Wnt/\u03b2-catenin signaling pathway are classical pathways in bone formation and remodeling [19]. Sun et\u00a0al. demonstrated that dysregulation of the OPG/RANK/RANKL signaling pathway is a key step in the occurrence of SONFH [20].",
+          "cos_sim_score": 0.5461508631706238,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11559024",
+          "title": "Pathological mechanisms and related markers of steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11559024/",
+          "text": "Mesenchymal stem cell and exosomes\nMSCs, which are located in the mesoderm and ectoderm during the early phase of cell differentiation, are core members of the stem cell family [125,126]. MSCs can self-renew and differentiate into various cell types, including BMSCs, adipose-derived mesenchymal stem cells (AMSCs), multilineage-differentiating stress-enduring (Muse) cells and so on [23,127,128].\nNotably, previous studies have indicated that SONFH is coupled with MSCs [126]. It has been well established that Steroids exert an important regulatory role during the differentiation and proliferation of MSCs, resulting in osteonecrosis under certain conditions [129,130]. The microenvironment of ischemia and hypoxia in the area of steroid-induced osteonecrosis may lead to reduced number and weakened activity of MSCs in the proximal femur, which in turn leads to decreased osteogenic capacity, failed restoration of the necrotic bone, and collapse of the femoral head [131\u2013133]. Taking BMSCs as an example, the imbalance between osteogenic and adipogenic differentiation is closely related to SONFH [134]. Steroids stimulate the expression of PPAR\u03b3 in BMSCs of both humans and animals, and its elevated expression is associated with the occurrence of SONFH [126,135]. Overexpression of PPAR\u03b3 increased adipogenic differentiation and decreased osteogenic differentiation [136]. In addition, osteogenic differentiation of BMSCs can be promoted by Runx2 and collagen type I (Col I) [126].\nHowever, there are a number of potential limitations to the clinical applications of MSCs, such as chromosomal variation and immunological rejection, etc [137\u2013139]. Hence, it is urgent to explore a novel strategy that exerts the therapeutic effects of MSCs and avoids the risk of using them directly at the same time. Recently, exosomes (Exos) have received increasing attention for their use in a variety of diseases. Exos, which originate from multivesicular bodies, are 40-150\u2009nm-sized nanoparticles and have important paracrine functions in intercellular communication via proteins, genes, and small noncoding RNAs [134,137,140]. It has been documented that Exos exhibit similar characteristics and functional properties to the cells from which they are derived. In addition, no obvious adverse reactions, including vascular obstructive risks, immunogenicity, and tumorigenicity, have been reported during the course of Exos treatment [137,141\u2013143].\nFor instance, considering the self-renewal ability and multi-differential potentialities of synovial-derived mesenchymal stem cells (SMSCs), exosomes released from SMSC-Exos are perceived to exert protective effects against SONFH. SMSC-Exos can markedly decrease trabecular bone loss, BM necrosis, and steroid-induced fat accumulation. In contrast, SMSC-Exos can be internalized into BMSCs, enhance the proliferation of BMSCs, and resist serum deprivation-induced apoptosis. These results suggest that SMSC-Exos may facilitate tissue regeneration and prevent the initiation and progression of SONFH by enhancing the proliferation and anti-apoptotic responses of BM cells [137]. Additionally, Zhang et\u00a0al. showed that embryonic MSC-Exos can promote cartilage repair and osteochondral regeneration [144]. BMSC-Exos are also known as a kind of crucial medium for cartilage repair for the reason that they can inhibit the inflammatory response and promote cartilage regeneration [145].\nCurrently, increasing attention is being paid to the release of Exos by MSCs. Although it is difficult to directly detect MSCs in the serum, the detection of Exos is feasible. There is no doubt that Exos can be considered as viable biomarkers to be monitored in the serum of patients with SONFH, and the detection of Exos in different kinds of MSCs will be the focus of future studies.\nProteomics",
+          "cos_sim_score": 0.530166506767273,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::33451334",
+          "title": "HEMGN and SLC2A1 might be potential diagnostic biomarkers of steroid-induced osteonecrosis of femoral head: study based on WGCNA and DEGs screening.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33451334/",
+          "year": "2021",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SONFH) is a chronic and crippling bone disease. This study aims to reveal novel diagnostic biomarkers of SONFH. The GSE123568 dataset based on peripheral blood samples from 10 healthy individuals and 30 SONFH patients was used for weighted gene co-expression network analysis (WGCNA) and differentially expressed genes (DEGs) screening. The genes in the module related to SONFH and the DEGs were extracted for Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analysis. Genes with |gene significance|\u2009>\u20090.7 and |module membership| >\u20090.8 were selected as hub genes in modules. The DEGs with the degree of connectivity \u22655 were chosen as hub genes in DEGs. Subsequently, the overlapping genes of hub genes in modules and hub genes in DEGs were selected as key genes for SONFH. And then, the key genes were verified in another dataset, and the diagnostic value of key genes was evaluated by receiver operating characteristic (ROC) curve. Nine gene co-expression modules were constructed via WGCNA. The brown module with 1258 genes was most significantly correlated with SONFH and was identified as the key module for SONFH. The results of functional enrichment analysis showed that the genes in the key module were mainly enriched in the inflammatory response, apoptotic process and osteoclast differentiation. A total of 91 genes were identified as hub genes in the key module. Besides, 145 DEGs were identified by DEGs screening and 26 genes were identified as hub genes of DEGs. Overlapping genes of hub genes in the key module and hub genes in DEGs, including RHAG, RNF14, HEMGN, and SLC2A1, were further selected as key genes for SONFH. The diagnostic value of these key genes for SONFH was confirmed by ROC curve. The validation results of these key genes in GSE26316 dataset showed that only HEMGN and SLC2A1 were downregulated in the SONFH group, suggesting that they were more likely to be diagnostic biomarkers of SOFNH than RHAG and RNF14. Our study identified that two key genes, HEMGN and SLC2A1, might be potential diagnostic biomarkers of SONFH.",
+          "cos_sim_score": 0.45014917850494385,
+          "source_type": "pubmed"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "probe_id": "11755281_a_at",
+  "gene_symbol": "TGFBI",
+  "Median_TestAUC": 0.962962962962963,
+  "SD_TestAUC": 0.2104929220501158,
+  "abs_fold_change": 1.811,
+  "score": 1.4659,
+  "probe_count": 1,
+  "probe_ids": "11755281_a_at",
+  "max_score": 1.4659,
+  "mean_abs_fold_change": 1.811,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T02:13:06",
+  "interpretation": "The TGFBI gene encodes the transforming growth factor-beta-induced protein, which is involved in cell adhesion and interactions with collagen. This protein plays a significant role in the extracellular matrix, which is crucial for maintaining bone integrity and health. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), alterations in cell-collagen interactions may contribute to the pathological processes leading to bone necrosis following steroid treatment. While the retrieved evidence primarily discusses TGFBI's role in corneal dystrophies, its function in cell adhesion and potential involvement in bone formation suggests a plausible link to SONFH. However, the specific connection to SONFH remains weakly supported by direct evidence, leading to a moderate confidence in its relevance as a biomarker for early detection of this condition.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "TGFBI may be involved in the pathological processes of Steroid-Induced Osteonecrosis of the Femoral Head due to its role in cell adhesion and collagen interactions.",
+  "citations": [
+    "TGFBI (Q15582). https://www.uniprot.org/uniprotkb/Q15582",
+    "TGFBI \u2014 TGFBI. https://platform.opentargets.org/target/ENSG00000120708",
+    "TGFBI \u2194 lattice corneal dystrophy type I. https://platform.opentargets.org/target/ENSG00000120708/associations",
+    "TGFBI \u2194 Reis-Bucklers corneal dystrophy. https://platform.opentargets.org/target/ENSG00000120708/associations",
+    "TGFBI \u2194 Reis-B\u00fccklers corneal dystrophy. https://platform.opentargets.org/target/ENSG00000120708/associations",
+    "TGFBI \u2194 granular corneal dystrophy type I. https://platform.opentargets.org/target/ENSG00000120708/associations",
+    "TGFBI. https://en.wikipedia.org/wiki/TGFBI",
+    "Corneal dystrophy. https://en.wikipedia.org/wiki/Corneal_dystrophy",
+    "Corneal opacity. https://en.wikipedia.org/wiki/Corneal_opacity",
+    "Epithelial basement membrane dystrophy. https://en.wikipedia.org/wiki/Epithelial_basement_membrane_dystrophy"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5377,
+    "completion_tokens": 235,
+    "total_tokens": 5612,
+    "estimated_cost_usd": 0.000948
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q15582",
+          "title": "TGFBI (Q15582)",
+          "url": "https://www.uniprot.org/uniprotkb/Q15582",
+          "text": "Protein: Transforming growth factor-beta-induced protein ig-h3\nFunction: Plays a role in cell adhesion (PubMed:8024701). May play a role in cell-collagen interactions (By similarity)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000120708::function",
+          "title": "TGFBI \u2014 TGFBI",
+          "url": "https://platform.opentargets.org/target/ENSG00000120708",
+          "text": "Function: Plays a role in cell adhesion (PubMed:8024701). May play a role in cell-collagen interactions (By similarity). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000120708::MONDO_0007380",
+          "title": "TGFBI \u2194 lattice corneal dystrophy type I",
+          "url": "https://platform.opentargets.org/target/ENSG00000120708/associations",
+          "text": "Disease: lattice corneal dystrophy type I\nDescription: Type I lattice corneal dystrophy (LCDI) is a frequent form of stromal corneal dystrophy characterized by a network of delicate interdigitating branching filamentous opacities within the cornea with progressive visual impairment and no systemic manifestations.\nAssociation score: 0.824",
+          "cos_sim_score": 0.8242841141270143,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000120708::MONDO_0012043",
+          "title": "TGFBI \u2194 Reis-Bucklers corneal dystrophy",
+          "url": "https://platform.opentargets.org/target/ENSG00000120708/associations",
+          "text": "Disease: Reis-Bucklers corneal dystrophy\nDescription: Reis-B\u00fccklers corneal dystrophy (RBCD), also known as granular corneal dystrophy type III, is a rare form of superficial corneal dystrophy characterized by bilateral symmetrical reticular opacities in the superficial central cornea, with progressive visual impairment.\nAssociation score: 0.727",
+          "cos_sim_score": 0.7270606799745896,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000120708::Orphanet_98961",
+          "title": "TGFBI \u2194 Reis-B\u00fccklers corneal dystrophy",
+          "url": "https://platform.opentargets.org/target/ENSG00000120708/associations",
+          "text": "Disease: Reis-B\u00fccklers corneal dystrophy\nDescription: Reis-B\u00fccklers corneal dystrophy (RBCD), also known as granular corneal dystrophy type III, is a rare form of superficial corneal dystrophy characterized by bilateral symmetrical reticular opacities in the superficial central cornea, with progressive visual impairment.\nAssociation score: 0.727",
+          "cos_sim_score": 0.7268332698585136,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000120708::MONDO_0007377",
+          "title": "TGFBI \u2194 granular corneal dystrophy type I",
+          "url": "https://platform.opentargets.org/target/ENSG00000120708/associations",
+          "text": "Disease: granular corneal dystrophy type I\nDescription: Type I granular corneal dystrophy (GCDI) is a rare form of stromal corneal dystrophy characterized by multiple small deposits in the superficial central corneal stroma, and progressive visual impairment, which may sometimes be severe.\nAssociation score: 0.722",
+          "cos_sim_score": 0.7222893680214679,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::TGFBI",
+          "title": "TGFBI",
+          "url": "https://en.wikipedia.org/wiki/TGFBI",
+          "text": "Transforming growth factor, beta-induced, 68kDa, also known as TGFBI (initially called BIGH3, BIG-H3), is a protein which in humans is encoded by the TGFBI gene, locus 5q31.\n\nFunction\nThis gene encodes an RGD-containing protein that binds to type I, II and IV collagens. The RGD motif is found in many extracellular matrix proteins modulating cell adhesion and serves as a ligand recognition sequence for several integrins. This protein plays a role in cell-collagen interactions and may be involved in endochondrial bone formation in cartilage. The protein is induced by transforming growth factor-beta and acts to inhibit cell adhesion.\n\nClinical significance\nMutations of the gene cause several forms of corneal dystrophies.\n\nReferences\nFurther reading\n\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.43661418557167053,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Corneal dystrophy",
+          "title": "Corneal dystrophy",
+          "url": "https://en.wikipedia.org/wiki/Corneal_dystrophy",
+          "text": "Genetics\nDifferent corneal dystrophies are caused by mutations in the CHST6, KRT3, KRT12, PIP5K3, SLC4A11, TACSTD2, TGFBI, and UBIAD1 genes. Mutations in TGFBI which encodes transforming growth factor beta induced cause several forms of corneal dystrophies including granular corneal dystrophy, lattice corneal dystrophy, epithelial basement membrane dystrophy, Reis-Bucklers corneal dystrophy, and Thiel\u2013Behnke dystrophy.\nCorneal dystrophies may have a simple autosomal dominant, autosomal recessive or rarely X-linked recessive Mendelian mode of inheritance:\n\nPathophysiology\nA corneal dystrophy can be caused by an accumulation of extraneous material in the cornea, including lipids and cholesterol crystals.\n\nDiagnosis\nDiagnosis can be established on clinical grounds and this may be enhanced with studies on surgically excised corneal tissue and in some cases with molecular genetic analyses. As clinical manifestations widely vary with the different entities, corneal dystrophies should be suspected when corneal transparency is lost or corneal opacities occur spontaneously, particularly in both corneas, and especially in the presence of a positive family history or in the offspring of consanguineous parents.\nSuperficial corneal dystrophies \u2013 Meesmann dystrophy is characterized by distinct tiny bubble-like, punctate opacities that form in the central corneal epithelium and to a lesser extent in the peripheral cornea of both eyes during infancy that persists throughout life. Symmetrical reticular opacities form in the superficial central cornea of both eyes at about 4\u20135 years of age in Reis-B\u00fccklers corneal dystrophy. Patient remains asymptomatic until epithelial erosions precipitate acute episodes of ocular hyperemia, pain, and photophobia. Visual acuity eventually becomes reduced during the second and third decades of life following a progressive superficial haze and an irregular corneal surface. In Thiel\u2013Behnke dystrophy, sub-epithelial corneal opacities form a honeycomb-shaped pattern in the superficial cornea. Multiple prominent gelatinous mulberry-shaped nodules form beneath the corneal epithelium during the first decade of life in gelatinous drop-like corneal dystrophy which cause photophobia, tearing, corneal foreign body sensation and severe progressive loss of vision. Lisch epithelial corneal dystrophy is characterized by feather shaped opacities and microcysts in the corneal epithelium that are arranged in a band-shaped and sometimes whorled pattern. Painless blurred vision sometimes begins after sixty years of life.\nCorneal stromal dystrophies \u2013 Macular corneal dystrophy is manifested by a progressive dense cloudiness of the entire corneal stroma that usually first appears during adolescence and eventually causing severe visual impairment. In granular corneal dystrophy multiple small white discrete irregular spots that resemble bread crumbs or snowflakes become apparent beneath Bowman zone in the superficial central corneal stroma. They initially appear within the first decade of life. Visual acuity is more or less normal. Lattice dystrophy starts as fine branching linear opacities in Bowman's layer in the central area and spreads to the periphery. Recurrent corneal erosions may occur. The hallmark of Schnyder corneal dystrophy is the accumulation of crystals within the corneal stroma which cause corneal clouding typically in a ring-shaped fashion.\nPosterior corneal dystrophies \u2013 Fuchs corneal dystrophy presents during the fifth or sixth decade of life. The characteristic clinical findings are excrescences on a thickened Descemet membrane (cornea guttae), generalized corneal edema and decreased visual acuity. In advanced cases, abnormalities are found in all the layers of the cornea. In posterior polymorphous corneal dystrophy small vesicles appear at the level of Descemet membrane. Most patients remain asymptomatic and corneal edema is usually absent. Congenital hereditary endothelial corneal dystrophy is characterized by a diffuse ground-glass appearance of both corneas and markedly thickened (2\u20133 times thicker than normal) corneas from birth or infancy.",
+          "cos_sim_score": 0.185169979929924,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Corneal opacity",
+          "title": "Corneal opacity",
+          "url": "https://en.wikipedia.org/wiki/Corneal_opacity",
+          "text": "Sclerocornea: Sclerocornea is a congenital disorder in which the cornea is opaque and resembles the sclera, making the limbus indistinct. The central cornea is clearer than the periphery.\nCystinosis: Cystinosis is a rare autosomal recessive metabolic disease characterized by elevated levels of cystine within the cell.  Early deposition of cystine crystals in the cornea cause tinsel-like corneal opacities.\nIchthyosis: X-linked ichthyosis is a genetic skin disorder caused by the hereditary deficiency of the steroid sulfatase enzyme. Ocular manifestations of XLI include superficial or deep corneal opacities.\nTrisomy 8 mosaicism (T8M): It is a rare chromosome disorder caused by the presence of an extra chromosome 8 in some cells of the body. Dense corneal opacities may occur in trisomy 8 mosaicism.\nFarber's disease: Nodular corneal opacity may be seen in association with this rare autosomal recessive disease.",
+          "cos_sim_score": 0.17886409163475037,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Epithelial basement membrane dystrophy",
+          "title": "Epithelial basement membrane dystrophy",
+          "url": "https://en.wikipedia.org/wiki/Epithelial_basement_membrane_dystrophy",
+          "text": "Epithelial basement membrane dystrophy (EBMD) is a disorder of the eye that can cause pain and dryness. EBMD, also known as map-dot-fingerprint dystrophy and Cogan microcystic epithelial dystrophy, is a corneal epithelial disease that may result in recurrent corneal erosions, irregular corneal astigmatism, and decreased vision.\nIt is sometimes included in the group of corneal dystrophies. It diverges from the formal definition of corneal dystrophy since it is non-familial in most cases. It also has a fluctuating course, while for a typical corneal dystrophy the course is progressive.  When it is considered part of this group, it is the most common type of corneal dystrophy.\n\nSigns and symptoms\nPatients may complain of severe problems with dry eyes, or with visual obscurations.  It can also be asymptomatic, and only discovered because of subtle lines and marks seen during an eye exam.\nEBMD is a bilateral anterior corneal dystrophy characterized by grayish epithelial fingerprint lines, geographic map-like lines, and dots (or microcysts) on slit-lamp examination. Findings are variable and can change with time. While the disorder is usually asymptomatic, up to 10% of patients may have recurrent corneal erosions, usually beginning after age 30; conversely, 50% of patients presenting with idiopathic recurrent erosions have evidence of this dystrophy.\n\nPathophysiology\nAccording to research published in 2006, in some families autosomal dominant inheritance and point mutations in the transforming growth factor, beta-induced (TGFBI) gene encoding keratoepithelin have been identified, but according to the International Committee for Classification of Corneal Diseases (IC3D) the available data still does not merit a confident inclusion of EBMD in the group of corneal dystrophies. In view of this, the more accurate designation of the disease is possibly not dystrophy but corneal degeneration.\nThe main pathological feature of the disease is thickened, multilaminar and disfigured basement membrane of corneal epithelium. The change in the structure affects the epithelium, some cells of which may become entrapped in the rugged membrane and fail to migrate to the surface where they should undergo desquamation.\nFor patients with granular corneal dystrophy type 2 (GCD2) who have the TGFBI p.(R124H) mutation, complications have been observed following LASIK surgery.\n\nTreatment\nPhototherapeutic keratectomy (PTK) done by an ophthalmologist can restore and preserve useful visual function for a significant period of time in patients with anterior corneal dystrophies including EBMD.\n\nSee also\nCorneal dystrophy\n\n\n== References ==",
+          "cos_sim_score": 0.13348792493343353,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Corneal opacity",
+          "title": "Corneal opacity",
+          "url": "https://en.wikipedia.org/wiki/Corneal_opacity",
+          "text": "Congenital hereditary endothelial dystrophy (CHED):  There are 2 forms of congenital hereditary endothelial dystrophy (CHED). Commonest is an autosomal recessive form, which is present at birth, but nonprogressive. Nystagmus is seen in association with this form. Another is an autosomal dominant form that occurs within the first few years of life. This form is progressive, but nystagmus is not seen.  Deafness and CHED are seen in Harboyan syndrome. The histologic findings are very similar to those seen in pseudophakic/ aphakic bullous keratopathy. The appearance of the cornea is similar to that in congenital glaucoma but without increased corneal diameter and elevated intraocular pressure.\nPosterior polymorphous corneal dystrophy (PPMD, PPCD): PPCD, also known as Schlichting dystrophy, is an autosomal dominant disorder of the corneal endothelium and Descemet's membrane.  It is usually present in the second or third decade of life. It has the same entity as the first form of CHED. Most cases of PPMD are asymptomatic, and these cases generally do not require treatment. PPMD patients with bilateral, corneal opacities that can affect vision, descemet's membrane endothelial keratoplasty or penetrating keratoplasty are the treatments of choice to improve vision and to avoid amblyopia.\nCongenital hereditary stromal dystrophy (CHSD): CHSD is also known as Congenital stromal corneal dystrophy or Congenital stromal dystrophy of the cornea. It is a rare autosomal dominant disease caused by mutations in the DCN gene. In this bilateral Snowflake, whitish opacities appear throughout the cornea. The stromal lamellae are abnormal and may be separated by amorphous deposits. Moderate to severe vision loss may occur due to corneal opacity. In case of severe vision loss, treatment of choice is penetrating keratoplasty.\nPeters anomaly: Peters anomaly, also known as iridocorneal adhesions or keratolenticular adhesions, is a posterior corneal defect with an overlying stromal opacity, often accompanied by adherent iris strands (Peters anomaly type 1). The size and density of the opacity can range from a mild to dense central leukoma.\nCongenital anterior staphyloma: Congenital anterior staphyloma is a rare form of anterior segment dysgenesis that shares similarities with Peters anomaly. It is characterized by an ectatic protrusion of a central opacified cornea lined by uveal tissue. The protrusion extends beyond the plane of the eyelid margins and it can be unilateral or bilateral.\nLattice corneal dystrophy: Lattice corneal dystrophy is an autosomal-dominant characterized by amyloid deposition in the corneal stroma. Due to deposits, lattice-like corneal opacities may occur in stroma. Three types of dystrophies are there, type 1, type 2 and type 3. Type 1 is also known as  Biber-Haab-Dimmer corneal dystrophy, TGFBI type Lattice Dystrophy, or Classic Lattice Dystrophy. LCD type II is not included in corneal dystrophies.\nGranular corneal dystrophy: Two types, Type 1 and Type 2 are there.  Both have autosomal dominant inheritance. In Type 1, Discrete crumb-like opacities are seen in the central anterior stroma. Visual symptoms such as glare and photophobia may occur early in life. In Type 2, deposits begin to appear in early childhood or adolescence as tiny whitish dots in the anterior stroma. Larger stellate, ring, or snowflake opacities may occur in later stages. Decrease in vision starts earlier in type2 than type1.\nSclerocornea: Sclerocornea is a congenital disorder in which the cornea is opaque and resembles the sclera, making the limbus indistinct. The central cornea is clearer than the periphery.\nCystinosis: Cystinosis is a rare autosomal recessive metabolic disease characterized by elevated levels of cystine within the cell.  Early deposition of cystine crystals in the cornea cause tinsel-like corneal opacities.",
+          "cos_sim_score": 0.12491714954376221,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

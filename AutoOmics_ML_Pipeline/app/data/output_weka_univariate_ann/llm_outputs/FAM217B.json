@@ -1,0 +1,176 @@
+{
+  "rf_rank": 46,
+  "probe_id": "11759407_at",
+  "gene_symbol": "FAM217B",
+  "score": 0.53,
+  "rf_n_nodes": 4,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.6401,
+  "log_fc": 0.6401,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11759407_at",
+  "max_score": 0.53,
+  "mean_abs_fold_change": 0.6401,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:45:04",
+  "interpretation": "FAM217B is a gene that encodes a protein involved in various biological processes, although its specific functions remain largely uncharacterized. The retrieved evidence does not directly link FAM217B to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) or provide a clear mechanistic pathway connecting it to the disease. The associations found with other conditions, such as neurodegenerative diseases and rheumatoid arthritis, suggest potential roles in inflammation and tissue degeneration, which could be relevant to SONFH. However, the lack of direct evidence linking FAM217B to SONFH limits its clinical relevance as a biomarker for early detection of this condition. Therefore, the interpretation relies heavily on inference rather than strong evidence.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "FAM217B has not been directly linked to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), limiting its potential as a biomarker for this condition.",
+  "citations": [
+    "FAM217B (Q9NTX9). https://www.uniprot.org/uniprotkb/Q9NTX9",
+    "FAM217B \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000196227/associations",
+    "FAM217B \u2194 Abnormality of refraction. https://platform.opentargets.org/target/ENSG00000196227/associations",
+    "FAM217B \u2194 alcohol drinking. https://platform.opentargets.org/target/ENSG00000196227/associations",
+    "FAM217B \u2194 rheumatoid arthritis. https://platform.opentargets.org/target/ENSG00000196227/associations",
+    "FAM217B \u2194 adolescent idiopathic scoliosis. https://platform.opentargets.org/target/ENSG00000196227/associations",
+    "FAM217B \u2014 family with sequence similarity 217 member B (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ELAVL1 \u2014 ELAV like RNA binding protein 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CD209 \u2014 CD209 molecule (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "H4C1 \u2014 H4 clustered histone 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "NCK1 \u2014 NCK adaptor protein 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4393,
+    "completion_tokens": 286,
+    "total_tokens": 4679,
+    "estimated_cost_usd": 0.000831
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9NTX9",
+          "title": "FAM217B (Q9NTX9)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9NTX9",
+          "text": "Protein: Protein FAM217B",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000196227::EFO_0005772",
+          "title": "FAM217B \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000196227/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.276",
+          "cos_sim_score": 0.27643460533472697,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000196227::HP_0000539",
+          "title": "FAM217B \u2194 Abnormality of refraction",
+          "url": "https://platform.opentargets.org/target/ENSG00000196227/associations",
+          "text": "Disease: Abnormality of refraction\nDescription: An abnormality in the process of focusing of light by the eye in order to produce a sharp image on the retina.\nAssociation score: 0.130",
+          "cos_sim_score": 0.13039785515200958,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000196227::EFO_0004329",
+          "title": "FAM217B \u2194 alcohol drinking",
+          "url": "https://platform.opentargets.org/target/ENSG00000196227/associations",
+          "text": "Disease: alcohol drinking\nDescription: Behaviors associated with the ingesting of alcoholic beverages, including social drinking.\nAssociation score: 0.122",
+          "cos_sim_score": 0.12221754807027564,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000196227::EFO_0000685",
+          "title": "FAM217B \u2194 rheumatoid arthritis",
+          "url": "https://platform.opentargets.org/target/ENSG00000196227/associations",
+          "text": "Disease: rheumatoid arthritis\nDescription: A chronic, systemic autoimmune disorder characterized by inflammation in the synovial membranes and articular surfaces. It manifests primarily as a symmetric, erosive polyarthritis that spares the axial skeleton and is typically associated with the presence in the serum of rheumatoid factor.\nAssociation score: 0.121",
+          "cos_sim_score": 0.12124693388803798,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000196227::EFO_0005423",
+          "title": "FAM217B \u2194 adolescent idiopathic scoliosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000196227/associations",
+          "text": "Disease: adolescent idiopathic scoliosis\nDescription: A scoliosis with no known cause arising in adolescent.\nAssociation score: 0.114",
+          "cos_sim_score": 0.1138382275623035,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "FAM217B \u2014 family with sequence similarity 217 member B",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: FAM217B\nGene name: family with sequence similarity 217 member B\nAliases / synonyms: C20orf177, dJ551D2.5\nOrganism: Homo sapiens\nGene summary: Located in cytosol and nucleoplasm. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "FAM217B",
+          "aliases": "C20orf177, dJ551D2.5",
+          "gene_description": "family with sequence similarity 217 member B"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ELAVL1 \u2014 ELAV like RNA binding protein 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ELAVL1\nGene name: ELAV like RNA binding protein 1\nAliases / synonyms: ELAV1, HUR, Hua, MelG\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the ELAVL family of RNA-binding proteins that contain several RNA recognition motifs, and selectively bind AU-rich elements (AREs) found in the 3' untranslated regions of mRNAs. AREs signal degradation of mRNAs as a means to regulate gene expression, thus by binding AREs, the ELAVL family of proteins play a role in stabilizing ARE-containing mRNAs. This gene has been implicated in a variety of biological processes and has been linked to a number of diseases, including cancer. It is highly expressed in many cancers, and could be potentially useful in cancer diagnosis, prognosis, and therapy. [provided by RefSeq, Sep 2012]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ELAVL1",
+          "aliases": "ELAV1, HUR, Hua, MelG",
+          "gene_description": "ELAV like RNA binding protein 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CD209 \u2014 CD209 molecule",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CD209\nGene name: CD209 molecule\nAliases / synonyms: CDSIGN, CLEC4L, DC-SIGN, DC-SIGN1, hDC-SIGN\nOrganism: Homo sapiens\nGene summary: This gene encodes a C-type lectin that functions in cell adhesion and pathogen recognition. This receptor recognizes a wide range of evolutionarily divergent pathogens with a large impact on public health, including leprosy and tuberculosis mycobacteria, the Ebola, hepatitis C, HIV-1 and Dengue viruses, and the SARS-CoV acute respiratory syndrome coronavirus. The protein is organized into four distinct domains: a C-terminal carbohydrate recognition domain, a flexible tandem-repeat neck domain, a transmembrane region and an N-terminal cytoplasmic domain involved in internalization. This gene is closely related in terms of both sequence and function to a neighboring gene, CLEC4M (Gene ID: 10332), also known as L-SIGN. The two genes differ in viral recognition and expression patterns, with th...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CD209",
+          "aliases": "CDSIGN, CLEC4L, DC-SIGN, DC-SIGN1, hDC-SIGN",
+          "gene_description": "CD209 molecule"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "H4C1 \u2014 H4 clustered histone 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: H4C1\nGene name: H4 clustered histone 1\nAliases / synonyms: H4FA, HIST1H4A\nOrganism: Homo sapiens\nGene summary: Histones are basic nuclear proteins that are responsible for the nucleosome structure of the chromosomal fiber in eukaryotes. Two molecules of each of the four core histones (H2A, H2B, H3, and H4) form an octamer, around which approximately 146 bp of DNA is wrapped in repeating units, called nucleosomes. The linker histone, H1, interacts with linker DNA between nucleosomes and functions in the compaction of chromatin into higher order structures. This gene is intronless and encodes a replication-dependent histone that is a member of the histone H4 family. Transcripts from this gene lack polyA tails but instead contain a palindromic termination element. This gene is found in the large histone gene cluster on chromosome 6. [provided by RefSeq, Aug 2015]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "H4C1",
+          "aliases": "H4FA, HIST1H4A",
+          "gene_description": "H4 clustered histone 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "NCK1 \u2014 NCK adaptor protein 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: NCK1\nGene name: NCK adaptor protein 1\nAliases / synonyms: NCK, NCKalpha, nck-1\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is one of the signaling and transforming proteins containing Src homology 2 and 3 (SH2 and SH3) domains. It is located in the cytoplasm and is an adaptor protein involved in transducing signals from receptor tyrosine kinases to downstream signal recipients such as RAS. Alternatively spliced transcript variants encoding different isoforms have been found. [provided by RefSeq, Jun 2010]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "NCK1",
+          "aliases": "NCK, NCKalpha, nck-1",
+          "gene_description": "NCK adaptor protein 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

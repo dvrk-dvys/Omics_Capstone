@@ -1,0 +1,211 @@
+{
+  "probe_id": "11728828_at",
+  "gene_symbol": "F2RL1",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.152707615763617,
+  "abs_fold_change": 1.4454,
+  "score": 1.4401,
+  "probe_count": 1,
+  "probe_ids": "11728828_at",
+  "max_score": 1.4401,
+  "mean_abs_fold_change": 1.4454,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T23:03:57",
+  "interpretation": "F2RL1, also known as the proteinase-activated receptor 2 (PAR2), plays a significant role in inflammatory responses and is activated by proteolytic cleavage. This receptor is involved in various signaling pathways that regulate inflammation, vascular integrity, and immune responses. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), F2RL1 has been implicated in mechanisms related to vascular injury and thrombosis, which are critical factors in the pathogenesis of SONFH following glucocorticoid treatment. Evidence suggests that genetic variants in F2RL1 are associated with increased risk of osteonecrosis, indicating its potential as a biomarker for early detection. However, the evidence is primarily indirect, linking F2RL1 to inflammatory and vascular processes rather than providing direct clinical validation as a biomarker for SONFH. Thus, while F2RL1 shows promise, its clinical utility as a biomarker for SONFH remains to be fully established.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 2",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "F2RL1 is linked to inflammatory and vascular mechanisms that contribute to the development of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "F2RL1 (P55085). https://www.uniprot.org/uniprotkb/P55085",
+    "F2RL1 \u2014 F2RL1. https://platform.opentargets.org/target/ENSG00000164251",
+    "F2RL1 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000164251/associations",
+    "F2RL1 \u2194 alcohol drinking. https://platform.opentargets.org/target/ENSG00000164251/associations",
+    "F2RL1 \u2194 venous thromboembolism. https://platform.opentargets.org/target/ENSG00000164251/associations",
+    "F2RL1 \u2194 hepatocellular carcinoma. https://platform.opentargets.org/target/ENSG00000164251/associations",
+    "F2RL1 \u2014 F2R like trypsin receptor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CXCR4 \u2014 C-X-C motif chemokine receptor 4 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "BIRC5 \u2014 baculoviral IAP repeat containing 5 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "F2 \u2014 coagulation factor II, thrombin (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "SRC \u2014 SRC proto-oncogene, non-receptor tyrosine kinase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Implementation of Pharmacogenetics to Individualize Treatment Regimens for Children with Acute Lymphoblastic Leukemia (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC7429230/",
+    "Genetics of pleiotropic effects of dexamethasone (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC5523978/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 10439,
+    "completion_tokens": 345,
+    "total_tokens": 10784,
+    "estimated_cost_usd": 0.001773
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P55085",
+          "title": "F2RL1 (P55085)",
+          "url": "https://www.uniprot.org/uniprotkb/P55085",
+          "text": "Protein: Proteinase-activated receptor 2\nFunction: Receptor for trypsin and trypsin-like enzymes coupled to G proteins (PubMed:28445455). Its function is mediated through the activation of several signaling pathways including phospholipase C (PLC), intracellular calcium, mitogen-activated protein kinase (MAPK), I-kappaB kinase/NF-kappaB and Rho (PubMed:28445455). Can also be transactivated by cleaved F2R/PAR1. Involved in modulation of inflammatory responses and regulation of innate and adaptive immunity, and acts as a sensor for proteolytic enzymes generated during infection. Generally is promoting inflammation. Can signal synergistically with TLR4 and probably TLR2 in inflammatory responses and modulates TLR3 signaling. Has a protective role in establishing the endothelial barrier; the activity involves coagulation factor X. Regulates endothelial cell barrier integrity during neutrophil extravasation, probably following proteolytic cleavage by PRTN3 (PubMed:23202369). Proposed to have a bronchoprotective role in airway epithelium, but also shown to compromise the airway epithelial barrier by interrupting E-cadherin adhesion (PubMed:10086357). Involved in the regulation of vascular tone; activation results in hypotension presumably mediated by vasodilation. Associates with a subset of G proteins alpha subunits such as GNAQ, GNA11, GNA14, GNA12 and GNA13, but probably not with G(o)-alpha, G(i) subunit alpha-1 and G(i) subunit alpha-2. However, according to PubMed:21627585 can signal through G(i) subunit alpha. Believed to be a class B receptor which internalizes as a complex with arrestin and traffic with it to endosomal vesicles, presumably as desensitized receptor, for extended periods of time. Mediates inhibition of TNF stimulated JNK phosphorylation via coupling to GNAQ and GNA11; the function involves dissociation of RIPK1 and TRADD from TNFR1. Mediates phosphorylation of nuclear factor NF-kappa-B RELA subunit at 'Ser-536'; the function involves IKBKB and is predominantly independent of G proteins. Involved in cellular migration. Involved in cytoskeletal rearrangement and chemotaxis through beta-arrestin-promoted scaffolds; the function is independent of GNAQ and GNA11 and involves promotion of cofilin dephosphorylation and actin filament severing. Induces redistribution of COPS5 from the plasma membrane to the cytosol and activation of the JNK cascade is mediated by COPS5. Involved in the recruitment of leukocytes to the sites of inflammation and is the major PAR receptor capable of modulating eosinophil function such as pro-inflammatory cytokine secretion, superoxide production and degranulation. During inflammation promotes dendritic cell maturation, trafficking to the lymph nodes and subsequent T-cell activation. Involved in antimicrobial response of innate immune cells; activation enhances phagocytosis of Gram-positive and killing of Gram-negative bacteria. Acts synergistically with interferon-gamma in enhancing antiviral responses. Implicated in a number of acute and chronic inflammatory diseases such as of the joints, lungs, brain, gastrointestinal tract, periodontium, skin, and vascular systems, and in autoimmune disorders. Probably mediates activation of pro-inflammatory and pro-fibrotic responses in fibroblasts, triggered by coagulation factor Xa (F10) (By similarity). Mediates activation of barrier protective signaling responses in endothelial cells, triggered by coagulation factor Xa (F10) (PubMed:22409427)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000164251::function",
+          "title": "F2RL1 \u2014 F2RL1",
+          "url": "https://platform.opentargets.org/target/ENSG00000164251",
+          "text": "Function: Receptor for trypsin and trypsin-like enzymes coupled to G proteins (PubMed:28445455). Its function is mediated through the activation of several signaling pathways including phospholipase C (PLC), intracellular calcium, mitogen-activated protein kinase (MAPK), I-kappaB kinase/NF-kappaB and Rho (PubMed:28445455). Can also be transactivated by cleaved F2R/PAR1. Involved in modulation of inflammatory responses and regulation of innate and adaptive immunity, and acts as a sensor for proteolytic enzymes generated during infection. Generally is promoting inflammation. Can signal synergistically with TLR4 and probably TLR2 in inflammatory responses and modulates TLR3 signaling. Has a protective role in establishing the endothelial barrier; the activity involves coagulation factor X. Regulates endothelial cell barrier integrity during neutrophil extravasation, probably following proteolytic cleavage by PRTN3 (PubMed:23202369). Proposed to have a bronchoprotective role in airway epithelium, but also shown to compromise the airway epithelial barrier by interrupting E-cadherin adhesion (PubMed:10086357). Involved in the regulation of vascular tone; activation results in hypotension presumably mediated by vasodilation. Associates with a subset of G proteins alpha subunits such as GNAQ, GNA11, GNA14, GNA12 and GNA13, but probably not with G(o)-alpha, G(i) subunit alpha-1 and G(i) subunit alpha-2. However, according to PubMed:21627585 can signal through G(i) subunit alpha. Believed to be a class B receptor which internalizes as a complex with arrestin and traffic with it to endosomal vesicles, presumably as desensitized receptor, for extended periods of time. Mediates inhibition of TNF stimulated JNK phosphorylation via coupling to GNAQ and GNA11; the function involves dissociation of RIPK1 and TRADD from TNFR1. Mediates phosphorylation of nuclear factor NF-kappa-B RELA subunit at 'Ser-536'; the function involves IKBKB and is predominantly independent of G proteins. Involved in cellular migration. Involved in cytoskeletal rearrangement and chemotaxis through beta-arrestin-promoted scaffolds; the function is independent of GNAQ and GNA11 and involves promotion of cofilin dephosphorylation and actin filament severing. Induces redistribution of COPS5 from the plasma membrane to the cytosol and activation of the JNK cascade is mediated by COPS5. Involved in the recruitment of leukocytes to the sites of inflammation and is the major PAR receptor capable of modulating eosinophil function such as pro-inflammatory cytokine secretion, superoxide production and degranulation. During inflammation promotes dendritic cell maturation, trafficking to the lymph nodes and subsequent T-cell activation. Involved in antimicrobial response of innate immune cells; activation enhances phagocytosis of Gram-positive and killing of Gram-negative bacteria. Acts synergistically with interferon-gamma in enhancing antiviral responses. Implicated in a number of acute and chronic inflammatory diseases such as of the joints, lungs, brain, gastrointestinal tract, periodontium, skin, and vascular systems, and in autoimmune disorders. Probably mediates activation of pro-inflammatory and pro-fibrotic responses in fibroblasts, triggered by coagulation factor Xa (F10) (By similarity). Mediates activation of barrier protective signaling responses in endothelial cells, triggered by coagulation factor Xa (F10) (PubMed:22409427).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000164251::EFO_0005772",
+          "title": "F2RL1 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000164251/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.460",
+          "cos_sim_score": 0.46036264504159685,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000164251::EFO_0004329",
+          "title": "F2RL1 \u2194 alcohol drinking",
+          "url": "https://platform.opentargets.org/target/ENSG00000164251/associations",
+          "text": "Disease: alcohol drinking\nDescription: Behaviors associated with the ingesting of alcoholic beverages, including social drinking.\nAssociation score: 0.356",
+          "cos_sim_score": 0.3564945458092068,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000164251::EFO_0004286",
+          "title": "F2RL1 \u2194 venous thromboembolism",
+          "url": "https://platform.opentargets.org/target/ENSG00000164251/associations",
+          "text": "Disease: venous thromboembolism\nDescription: Occlusion of the lumen of a vein by a thrombus that has migrated from a distal site via the blood stream.\nAssociation score: 0.242",
+          "cos_sim_score": 0.2416516281378209,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000164251::EFO_0000182",
+          "title": "F2RL1 \u2194 hepatocellular carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000164251/associations",
+          "text": "Disease: hepatocellular carcinoma\nDescription: A malignant tumor that arises from hepatocytes. Hepatocellular carcinoma is relatively rare in the United States but very common in all African countries south of the Sahara and in Southeast Asia. Most cases are seen in patients over the age of 50 years, but this tumor can also occur in younger individuals and even in children. Hepatocellular carcinoma is more common in males than females and is associated with hepatitis B, hepatitis C, chronic alcohol abuse and cirrhosis. Serum elevation of alpha-fetoprotein occurs in a large percentage of patients with hepatocellular carcinoma. Grossly, hepatocellular carcinoma may present as a single mass, as multiple nodules, or as diffuse liver involvement. Microscopically, there is a wide range of differentiation from tumor to tumor (well differentiated to poorly differentiated tumors). Hepatocellular carcinomas quickly metastasize to regional lymph nodes and lung. The overall median survival of untreated liver cell carcinoma is about 4 months. The most effective treatment of hepatocellular carcinoma is complete resection of the tumor. Lately, an increasing number of tumors have been treated with liver transplantation.\nAssociation score: 0.122",
+          "cos_sim_score": 0.12216239576848195,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "F2RL1 \u2014 F2R like trypsin receptor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: F2RL1\nGene name: F2R like trypsin receptor 1\nAliases / synonyms: GPR11, PAR2\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the G-protein coupled receptor 1 family of proteins. The encoded cell surface receptor is activated through proteolytic cleavage of its extracellular amino terminus, resulting in a new amino terminus that acts as a tethered ligand that binds to an extracellular loop domain. Activation of the receptor has been shown to stimulate vascular smooth muscle relaxation, dilate blood vessels, increase blood flow, and lower blood pressure. This protein is also important in the inflammatory response, as well as innate and adaptive immunity. [provided by RefSeq, Jun 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "F2RL1",
+          "aliases": "GPR11, PAR2",
+          "gene_description": "F2R like trypsin receptor 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CXCR4 \u2014 C-X-C motif chemokine receptor 4",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CXCR4\nGene name: C-X-C motif chemokine receptor 4\nAliases / synonyms: CD184, D2S201E, FB22, HM89, HSY3RR, LAP-3, LCR1, LESTR, NPY3R, NPYR, NPYRL, NPYY3R, WHIM, WHIMS, WHIMS1\nOrganism: Homo sapiens\nGene summary: This gene encodes a CXC chemokine receptor specific for stromal cell-derived factor-1. The protein has 7 transmembrane regions and is located on the cell surface. It acts with the CD4 protein to support HIV entry into cells and is also highly expressed in breast cancer cells. Mutations in this gene have been associated with WHIM (warts, hypogammaglobulinemia, infections, and myelokathexis) syndrome. Alternate transcriptional splice variants, encoding different isoforms, have been characterized. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CXCR4",
+          "aliases": "CD184, D2S201E, FB22, HM89, HSY3RR, LAP-3, LCR1, LESTR, NPY3R, NPYR, NPYRL, NPYY3R, WHIM, WHIMS, WHIMS1",
+          "gene_description": "C-X-C motif chemokine receptor 4"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "BIRC5 \u2014 baculoviral IAP repeat containing 5",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: BIRC5\nGene name: baculoviral IAP repeat containing 5\nAliases / synonyms: API4, EPR-1\nOrganism: Homo sapiens\nGene summary: This gene is a member of the inhibitor of apoptosis (IAP) gene family, which encode negative regulatory proteins that prevent apoptotic cell death. IAP family members usually contain multiple baculovirus IAP repeat (BIR) domains, but this gene encodes proteins with only a single BIR domain. The encoded proteins also lack a C-terminus RING finger domain. Gene expression is high during fetal development and in most tumors, yet low in adult tissues. Alternatively spliced transcript variants encoding distinct isoforms have been found for this gene. [provided by RefSeq, Jun 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "BIRC5",
+          "aliases": "API4, EPR-1",
+          "gene_description": "baculoviral IAP repeat containing 5"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "F2 \u2014 coagulation factor II, thrombin",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: F2\nGene name: coagulation factor II, thrombin\nAliases / synonyms: PT, RPRGL2, THPH1\nOrganism: Homo sapiens\nGene summary: This gene encodes the prothrombin protein (also known as coagulation factor II). This protein is proteolytically cleaved in multiple steps to form the activated serine protease thrombin. The activated thrombin enzyme plays an important role in thrombosis and hemostasis by converting fibrinogen to fibrin during blood clot formation, by stimulating platelet aggregation, and by activating additional coagulation factors. Thrombin also plays a role in cell proliferation, tissue repair, and angiogenesis as well as maintaining vascular integrity during development and postnatal life. Peptides derived from the C-terminus of this protein have antimicrobial activity against E. coli and P. aeruginosa. Mutations in this gene lead to various forms of thrombosis and dysprothrombinemia. Rapid increases i...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "F2",
+          "aliases": "PT, RPRGL2, THPH1",
+          "gene_description": "coagulation factor II, thrombin"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "SRC \u2014 SRC proto-oncogene, non-receptor tyrosine kinase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SRC\nGene name: SRC proto-oncogene, non-receptor tyrosine kinase\nAliases / synonyms: ASV, SRC1, THC6, c-SRC, p60-Src\nOrganism: Homo sapiens\nGene summary: This gene is highly similar to the v-src gene of Rous sarcoma virus. This proto-oncogene may play a role in the regulation of embryonic development and cell growth. The protein encoded by this gene is a tyrosine-protein kinase whose activity can be inhibited by phosphorylation by c-SRC kinase. Mutations in this gene could be involved in the malignant progression of colon cancer. Two transcript variants encoding the same protein have been found for this gene. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SRC",
+          "aliases": "ASV, SRC1, THC6, c-SRC, p60-Src",
+          "gene_description": "SRC proto-oncogene, non-receptor tyrosine kinase"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::7429230",
+          "title": "Implementation of Pharmacogenetics to Individualize Treatment Regimens for Children with Acute Lymphoblastic Leukemia",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7429230/",
+          "text": "Osteonecrosis\nOsteonecrosis is a pathologic process that affects osteocytes and causes cellular death. It is a progressive condition that destroys joints within months to a year, ultimately leading to mechanical failure of the affected bone.82 Osteonecrosis can be caused by traumatic or atraumatic conditions, with the most common cause of non-traumatic osteonecrosis being glucocorticoid administration.82 Many studies have tried to identify genetic polymorphisms that can predict a higher risk of osteonecrosis in children receiving ALL chemotherapy. Because, in murine models receiving only corticosteroids, disruption of bone vasculature appeared to be an inciting event that preceded steroid-induced osteonecrosis,83 DEXA is frequently perceived as the culprit of osteonecrosis in children with ALL; however, variants in enzymes involved in MTX\u2019s mechanism of action have also been linked to this toxicity.\nIn 2008, a candidate SNP approach conducted on 291 children of mixed race showed the variant rs6092 in plasminogen activator inhibitor-1 (PAI1 or SERPINE1), a gene linked with inhibition of fibrinolysis and thrombus formation, to be associated with a significantly higher risk of osteonecrosis, whereby 27% of children with the GA/AA had osteonecrosis as compared to only 11.7% of children with the GG variant.84 Following this study, a GWAS was performed in 2011 on 364 children with ALL who received the St. Jude protocol Total XV and revealed a significantly increased risk for osteonecrosis with a variant in acid phosphatase 1 (ACP1) (rs12714403), a regulator for osteoblast differentiation, and another in SH3 domain-containing YSC84-like protein 1 (SH3YL1) (rs4241316).85 More recently in 2015, a much larger GWAS that entailed 2285 patients of mixed origins with two validation cohorts, one from the COG and another from St. Jude, revealed highly significant associations with two relatively common variants in glutamate NMDA receptor subunit 3A (GRIN3A) (rs10989692) and glutamate ionotropic receptor kainate type subunit 1 (GRIK1) (rs2154490).86 Notably, compelling evidence showed the GRIN3A variant to be involved in various vascular phenotypes, including cerebral ischemia, arterial embolism and thrombosis.86 In 2016, a GWAS was performed to assess the risk of osteonecrosis in children less than 10 years of age with ALL. The GWAS was conducted on a discovery cohort of 369 children and validated on 817 children below 10 years of age and of mixed ethnic backgrounds. The study identified 10 polymorphisms linked to osteonecrosis: rs79085477 and rs75161997 in bone morphogenic protein 7 (BMP7), rs1891059, rs115602884, rs74533616, rs80223967, rs17021408 and rs61818937 in prospero homeobox 1 antisense RNA (PROX1-AS1), rs141059755 in long intergenic non-protein coding RNA 251 (LINC00251), and rs117532069 in docking protein 5 (DOK5).87 BMP7 has been shown to decrease osteoclast formation and hence bone resorption.88 Furthermore, BMP7 has been demonstrated to induce apoptosis in vascular smooth muscle cells,89 which could explain the mechanism of vascular injury as a cause of osteonecrosis as described previously by Janke et al.83 Another GWAS performed on 391 children supported further the vascular injury mechanism of osteonecrosis by identifying 2 polymorphisms (rs2243057 and rs6453253) in coagulation factor II thrombin receptor-like trypsin receptor 1 (F2RL1).90 Studies have shown that the interaction between F2RL1 and its receptor F2R, play a role in clot formation, angiogenesis and arteriopathy.90",
+          "cos_sim_score": 0.5328077077865601,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::5523978",
+          "title": "Genetics of pleiotropic effects of dexamethasone",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5523978/",
+          "text": "Introduction\nGlucocorticoids have been used for decades in the treatment of many diseases, including acute lymphoblastic leukemia (ALL). Dexamethasone has become the preferred glucocorticoid over prednisone due to its greater antileukemic efficacy [1\u20133]. However, at current doses, more toxicity is observed in ALL patients treated with dexamethasone than prednisone, including infections [3], osteonecrosis [4], myopathy [5, 6], and central nervous system (CNS) toxicity [7].\nOsteonecrosis is one of the most common and serious toxicities associated with ALL therapy, with frequencies ranging from 1 \u2013 25% depending on the clinical trial [4, 8\u201314]. Osteonecrosis is defined as bone death resulting from poor blood supply [15]. Risk of osteonecrosis has been associated with the intensity of the glucocorticoid exposure, type of glucocorticoid (dexamethasone > prednisone) [4], age, sex [16], race [14], asparaginase antibodies [17], and genetic polymorphisms [8, 18\u201321]. Additionally, our group demonstrated that the top single nucleotide polymorphisms (SNPs) associated with osteonecrosis were also associated with other dexamethasone-related phenotypes, including low serum albumin and high cholesterol levels,[8] and lack of allergy to asparaginase [21]. These findings suggest that a comprehensive analysis of genetic predisposition to pleiotropic glucocorticoid-induced adverse effects might improve the power to identify genetic variants associated with glucocorticoid-induced osteonecrosis and other adverse effects. Moreover, association of the same variants with multiple phenotypes, e.g. osteonecrosis in addition to other phenotypes, might suggest common pathways that underlie more than one glucocorticoid-induced phenotype.\nHerein we have implemented a method to use prior pharmacologic knowledge to perform an integrated analysis of SNPs associated with pleiotropic glucocorticoid-induced biological and clinical endpoints [22\u201324], with particular emphasis on the clinically important phenotypes of osteonecrosis and thrombosis, both of which can necessitate substantial clinical interventions [25\u201329]. We compared the results of the pleiotropic analysis with those obtained with a single-phenotype genome-wide association study (GWAS) approach.\nMaterials & Methods\nPatients\nInformed consent was obtained from the parents or the patient, and assent from the patient, where appropriate, and the study was approved by the Institutional Review Board. Children with newly diagnosed ALL (n = 498) were enrolled on a frontline protocol, St. Jude Total XV (ClinicalTrials.gov ID NCT00137111) [29] (Supplemental Digital Content Figure 1). This cohort has been previously reported in single phenotype association studies [8, 30].\nPhenotypes\nPatients were prospectively screened for osteonecrosis by MRI, as described previously [8]. Toxicities were prospectively graded using the National Cancer Institute Common Terminology Criteria for Adverse Events, Version 3.0 (Supplemental Digital Content Text, Supplemental Digital Content Table 1). We evaluated all reported adverse events and identified those that were likely at least partly due to glucocorticoids; these included osteonecrosis, CNS toxicity (not related to high-dose or intrathecal methotrexate), hyperglycemia, hypokalemia, and thrombosis. Because glucocorticoids are known to cause weight gain and decreased growth trajectory, [31\u201334] we used measures of height and weight (at least monthly per patient) to estimate body mass index (BMI) and the decrease in growth trajectory. In addition, each patient had serial blood samples collected on day 1 of week 7 and week 8 (after 7 continuous days of dexamethasone) of the continuation phase, for assessment of plasma dexamethasone pharmacokinetics, serum lipids, albumin and cortisol levels (See Supplemental Digital Content Text for details) [8, 17, 30]. We have previously shown an association of dexamethasone and asparaginase exposure on osteonecrosis [8, 17, 30], and thus we also analyzed the AUC of antibodies against Elspar (asparaginase) during the first 35 weeks of therapy. There were no other pharmacologic measures routinely available for these patients that were related to glucocorticoids or these likely glucocorticoid-induced adverse effects.",
+          "cos_sim_score": 0.461600124835968,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::7429230",
+          "title": "Implementation of Pharmacogenetics to Individualize Treatment Regimens for Children with Acute Lymphoblastic Leukemia",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7429230/",
+          "text": "Interestingly, other studies have described an increased risk of osteonecrosis with polymorphisms affecting antimetabolite pathways. For instance, a candidate gene study on 64 children of mixed origins with ALL identified the rs45445694 2R/2R low enzyme activity polymorphism in thymidylate synthase (TYMS) to be linked with osteonecrosis.91 Previous studies have shown that this polymorphism is associated with lower levels of thymidylate synthase in the cell which could explain increased toxicity from antimetabolites such as MTX.91 In addition, the allele variant of a polymorphism in vitamin D receptor (VDR) was also identified (rs10735810 that is now merged with rs2228570); this gene was included in the candidate gene approach as previous studies have linked genetic variants in VDR to low bone mineral density.91\nNephrotoxicity\nWorsening kidney function is an important complication of cancer treatment including in children with ALL,92 and patients carrying certain genetic polymorphisms in efflux pumps and transporters, of which MTX is a common substrate, were shown to be at an increased risk of chemotherapy-induced nephrotoxicity. As a matter of fact, a candidate gene approach by Lopez-Lopez et al53 described the presence of 5 genetic polymorphisms that predispose to nephrotoxicity in a cohort of 151 Spanish children receiving ALL treatment. As such, variant alleles of polymorphisms rs3740065 in ABCC2, rs2619312, and rs1678392 in ABCC4, rs2622621 in ABCG2, with the wild type allele of rs4149035 in SLCO1B1 were associated with nephrotoxicity and significantly increased creatinine levels.\nPancreatitis\nTo determine PGx risk factors for treatment-induced pancreatitis in pediatric ALL patients, a GWAS was performed in a cohort of more than 5000 children and young adults with ALL. A rare nonsense variant in Carboxypeptidase 2 (CPA2) (rs199695765) had the strongest association with the risk of treatment-induced pancreatitis, after adjusting for clinical features.93 The CPA2 gene encodes a pancreatic carboxypeptidase proenzyme,94 and the previously-described high-risk SNP (rs199695765) resulted in early termination in the pro-peptide region.93 Also, 15 other variants in CPA2 were associated with pancreatitis. Hence, this largest of its kind study regarding risk of pancreatitis in childhood ALL patients suggests that carriers of CPA2 variants might benefit from a modified treatment regimen that does not heavily rely on LASPA being the most commonly known drug responsible for pancreatitis during pediatric ALL therapy.93 More recently in their whole exome sequencing study, Abaji et al95 filtered through a multi-step selection process their top-ranking signals related to ASP toxicity in a discovery cohort of 302 children with ALL from Quebec. Three SNPs were shown to be associated with treatment-induced pancreatitis: rs72755233 in ADAMTS17, rs3809849 in MYBBP1A, and rs9908032 in SPECC1. Two other SNPs that predicted thrombosis in the same patient cohort were also found to correlate with the risk of pancreatitis: variant allele carriers of the rs11556218 in IL16 and variant allele carriers of the rs34708521 in SPEF2. Of those findings, the only variants that retained significance in a replication cohort of 282 children treated for ALL at the Dana-Farber Cancer Institute were rs3809849 in MYBBP1A, rs11556218 in IL16, and rs34708521 in SPEF2. The association of the latter two genes was seen to be more prominent when combining both discovery and replication cohorts.95 Interestingly, the rs3809849 in the MYBBP1A gene was not commonly studied before. This gene encodes for the MYB Binding Protein 1A which plays an important role in various cellular processes including mitosis and cell cycle control, and it was most recently discovered to act as a co-repressor of nuclear factor kappaB (NF-kB) transcription factor.96 Notably, NF-kB was shown lately to play a key role in the development of acute pancreatitis.97\nHypersensitivity Reactions",
+          "cos_sim_score": 0.35619720816612244,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::5523978",
+          "title": "Genetics of pleiotropic effects of dexamethasone",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5523978/",
+          "text": "Discussion\nPleiotropy, the effect of one variant on multiple traits, is commonly observed in complex diseases [47]. Cancer clinical trials, in which multiple related toxicity phenotypes are measured prospectively and genome-wide genetic analysis is performed, provide an excellent opportunity to discover pleiotropic SNPs. Among several available methods for assessing pleiotropy [22, 23, 43, 48\u201352], we selected the PROMISE technique, which incorporates prior biological knowledge, to identify SNPs associated with pleiotropic adverse effects of dexamethasone.\nUsing PROMISE, we were able to discover a larger number of pleiotropic SNPs for glucocorticoid effects that were in regulatory regions than we could using traditional single-phenotype GWAS. PROMISE leveraged information from multiple phenotypes that may be related to many proposed mechanisms of osteonecrosis, including intravascular thrombotic occlusion, marrow fat hypertrophy [53\u201355], osteocyte and/or endothelial cell apoptosis, hypercoagulability, arteriolar occlusion via arteriopathy [56], and vasoconstriction of specific arteries and arterioles supplying bone [57]. Dexamethasone may contribute to osteonecrosis via its effects on lipids, coagulation, fibrinolysis, and direct toxic effects on vasculature and bone [58, 59]. It should be noted that correlations between some of these putatively related phenotypes have been observed previously [60, 61]. By accounting for pleiotropic effects, we have enhanced the probability of selecting for variants that exert their effect via common mechanisms, such as via glucocorticoid-responsive transcriptional machinery or via systemic pharmacokinetics of dexamethasone, and might be expected to impact on multiple downstream clinical phenotypes. In contrast, we acknowledge that not all adverse effects of glucocorticoids are expected to occur via common mechanisms, and the PROMISE approach may be less able to detect such non-pleiotropic adverse drug effects than do single-phenotype GWAS approaches. The fact that single-phenotype GWAS for CNS toxicity resulted in many SNPs that had genome-wide significance, with no overlap with PR14 PROMISE SNPs, suggest that common mechanisms are less likely to underlie CNS toxicity and other dexamethasone-related adverse effects. We weighted the phenotypes in the PR14 PROMISE analysis in order to prioritize our biological question of interest (i.e. to find genetic variants that underlie the risk of glucocorticoid adverse effects). Our choice of weights influenced the SNPs identified, as expected, but there was high concordance between the weighted (PR14) and unweighted (EW14) analysis (Supplemental Digital Content Figure 3 and Supplemental Digital Content Table 2). Thus, our primary reported results (PR14) are relatively robust against modifications (PR13, EW13, and EW14) of the PROMISE analysis\nUse of the PROMISE technique enabled us to discover variants more likely to have biological function than SNPs identified by single phenotype GWASs (Figure 3). It has been demonstrated that GWAS hits for biomedical phenotypes are enriched within regulatory regions [62, 63]. Lower RegulomeDB scores indicate that a SNP is in a regulatory region, such as a DNAse hypersensitivity site, transcription factor binding site, promoter region, or is an expression quantitative trait locus (eQTL) [37]. SNPs associated with complex traits and pharmacologic phenotypes are more likely to be eQTLs than allele frequency-matched SNPs [64].",
+          "cos_sim_score": 0.33158743381500244,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::5523978",
+          "title": "Genetics of pleiotropic effects of dexamethasone",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5523978/",
+          "text": "Another SNP highly ranked in the PR14 PROMISE analysis was rs10869729 in the 3\u2032 UTR of PCSK5. This non-synonymous variant was associated with ON (p=0.003), lower albumin (p=0.003), decreased growth trajectory (p=0.0002), and hyperglycemia (p=0.02). Variants in this gene have previously been associated with many traits, including levels of LDL, cholesterol, and triglycerides [39], glucose tolerance in diabetics [40] and height [41\u201343].\nAn intriguing PR14 PROMISE variant (Supplemental Digital Content Table 3) associated with dexamethasone pharmacokinetics but not osteonecrosis was rs709063, near ZNF467 and SSPO. The T allele was associated with six phenotypes with p<0.05: increased dexamethasone AUC (p=3.77\u00d710\u22124), lower albumin (p=0.008), lower asparaginase antibody AUC (p=0.02), thrombosis (p=0.02), CNS toxicity (p=0.03), and hyperglycemia (p=0.03). The ZNF467 gene encodes a cofactor that promotes adipocyte differentiation and suppresses osteoblast differentiation [44], while the SSPO gene encodes a glycoprotein of the thrombospondin family secreted in the cerebrospinal fluid that interacts with LDL during brain development [45].\nUsing a single-phenotype GWAS with osteonecrosis as the primary phenotype, 645 SNPs were selected at the Ip threshold of p<6.4\u00d710\u22124, 49 (7.6%) of which were also selected in the PR14 PROMISE analysis (Supplemental Digital Content Table 4). A single-phenotype GWAS for thrombosis revealed 794 SNPs that were selected at the Ip threshold of p<5.6\u00d710\u22124, 11 (1.4%) of which were also selected in the PR14 PROMISE analysis (Supplemental Digital Content Table 5). There were 22 SNPs that reached the conventional GWAS p-value threshold of p<5\u00d710\u22128. In a single-phenotype GWAS for CNS toxicity, there were 1146 SNPs selected with the information profile threshold p<5.5\u00d710\u22124, none of which were selected in the PR14 PROMISE analysis (Supplemental Digital Content Table 6). This absence of overlap may be attributable to the fact that the PR14 PROMISE analysis is driven by multiple phenotypes that show relatively weak association of CNS toxicity (Figure 1). There were 38 SNPs that reached the conventional GWAS p-value threshold of p<5\u00d710\u22128 for CNS toxicity. The top two SNPs were located in an intron of the RERE gene, which encodes a nuclear receptor expressed in the brain; deficiency of this gene in a mouse model leads to abnormal brain development [46].\nDiscussion\nPleiotropy, the effect of one variant on multiple traits, is commonly observed in complex diseases [47]. Cancer clinical trials, in which multiple related toxicity phenotypes are measured prospectively and genome-wide genetic analysis is performed, provide an excellent opportunity to discover pleiotropic SNPs. Among several available methods for assessing pleiotropy [22, 23, 43, 48\u201352], we selected the PROMISE technique, which incorporates prior biological knowledge, to identify SNPs associated with pleiotropic adverse effects of dexamethasone.",
+          "cos_sim_score": 0.2807241678237915,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

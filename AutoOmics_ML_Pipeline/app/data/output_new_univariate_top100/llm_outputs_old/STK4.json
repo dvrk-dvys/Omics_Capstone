@@ -1,0 +1,152 @@
+{
+  "probe_id": "11723401_x_at",
+  "gene_symbol": "STK4",
+  "score": 1.0,
+  "SD_TestAUC": 0.0922214785036202,
+  "abs_fold_change": 0.9563,
+  "probe_count": 2,
+  "probe_ids": "11723401_x_at | 11723400_a_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.9697,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:45:01",
+  "interpretation": "STK4, or Serine/threonine-protein kinase 4, is a pro-apoptotic kinase that plays a crucial role in the Hippo signaling pathway, which regulates cell proliferation and apoptosis. This pathway is significant in various cellular processes, including organ size control and tumor suppression. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), STK4's role in promoting apoptosis could be relevant, as steroid treatment is known to induce cellular stress and apoptosis in bone cells, potentially contributing to osteonecrosis. However, the evidence linking STK4 directly to SONFH is limited, primarily suggesting its involvement in apoptosis and cellular stress responses rather than a direct association with the disease. Therefore, while STK4 may have biological relevance in the context of steroid-induced cellular effects, its potential as a biomarker for early detection of SONFH remains weak due to insufficient direct evidence.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "STK4 may be involved in the apoptotic processes affected by steroid treatment, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "STK4 (Q13043). https://www.uniprot.org/uniprotkb/Q13043",
+    "STK4 (Q13043-2). https://www.uniprot.org/uniprotkb/Q13043-2",
+    "STK4 \u2014 STK4. https://platform.opentargets.org/target/ENSG00000101109",
+    "STK4 \u2194 combined immunodeficiency due to STK4 deficiency. https://platform.opentargets.org/target/ENSG00000101109/associations",
+    "STK4 \u2194 combined immunodeficiency due to DOCK8 deficiency. https://platform.opentargets.org/target/ENSG00000101109/associations",
+    "STK4 \u2194 combined immunodeficiency. https://platform.opentargets.org/target/ENSG00000101109/associations",
+    "STK4 \u2194 immunodeficiency disease. https://platform.opentargets.org/target/ENSG00000101109/associations",
+    "STK4. https://en.wikipedia.org/wiki/STK4",
+    "BRAF (gene). https://en.wikipedia.org/wiki/BRAF_(gene)",
+    "Titin. https://en.wikipedia.org/wiki/Titin",
+    "AKT1. https://en.wikipedia.org/wiki/AKT1"
+  ],
+  "token_usage": {
+    "prompt_tokens": 6687,
+    "completion_tokens": 262,
+    "total_tokens": 6949,
+    "estimated_cost_usd": 0.00116
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q13043",
+          "title": "STK4 (Q13043)",
+          "url": "https://www.uniprot.org/uniprotkb/Q13043",
+          "text": "Protein: Serine/threonine-protein kinase 4\nFunction: Stress-activated, pro-apoptotic kinase which, following caspase-cleavage, enters the nucleus and induces chromatin condensation followed by internucleosomal DNA fragmentation. Key component of the Hippo signaling pathway which plays a pivotal role in organ size control and tumor suppression by restricting proliferation and promoting apoptosis. The core of this pathway is composed of a kinase cascade wherein STK3/MST2 and STK4/MST1, in complex with its regulatory protein SAV1, phosphorylates and activates LATS1/2 in complex with its regulatory protein MOB1, which in turn phosphorylates and inactivates YAP1 oncoprotein and WWTR1/TAZ. Phosphorylation of YAP1 by LATS2 inhibits its translocation into the nucleus to regulate cellular genes important for cell proliferation, cell death, and cell migration. STK3/MST2 and STK4/MST1 are required to repress proliferation of mature hepatocytes, to prevent activation of facultative adult liver stem cells (oval cells), and to inhibit tumor formation (By similarity). Phosphorylates 'Ser-14' of histone H2B (H2BS14ph) during apoptosis. Phosphorylates FOXO3 upon oxidative stress, which results in its nuclear translocation and cell death initiation. Phosphorylates MOBKL1A, MOBKL1B and RASSF2. Phosphorylates TNNI3 (cardiac Tn-I) and alters its binding affinity to TNNC1 (cardiac Tn-C) and TNNT2 (cardiac Tn-T). Phosphorylates FOXO1 on 'Ser-212' and regulates its activation and stimulates transcription of PMAIP1 in a FOXO1-dependent manner. Phosphorylates SIRT1 and inhibits SIRT1-mediated p53/TP53 deacetylation, thereby promoting p53/TP53 dependent transcription and apoptosis upon DNA damage. Acts as an inhibitor of PKB/AKT1. Phosphorylates AR on 'Ser-650' and suppresses its activity by intersecting with PKB/AKT1 signaling and antagonizing formation of AR-chromatin complexes",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q13043-2",
+          "title": "STK4 (Q13043-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q13043-2",
+          "text": "Protein: Isoform 2 of Serine/threonine-protein kinase 4",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000101109::function",
+          "title": "STK4 \u2014 STK4",
+          "url": "https://platform.opentargets.org/target/ENSG00000101109",
+          "text": "Function: Stress-activated, pro-apoptotic kinase which, following caspase-cleavage, enters the nucleus and induces chromatin condensation followed by internucleosomal DNA fragmentation. Key component of the Hippo signaling pathway which plays a pivotal role in organ size control and tumor suppression by restricting proliferation and promoting apoptosis. The core of this pathway is composed of a kinase cascade wherein STK3/MST2 and STK4/MST1, in complex with its regulatory protein SAV1, phosphorylates and activates LATS1/2 in complex with its regulatory protein MOB1, which in turn phosphorylates and inactivates YAP1 oncoprotein and WWTR1/TAZ. Phosphorylation of YAP1 by LATS2 inhibits its translocation into the nucleus to regulate cellular genes important for cell proliferation, cell death, and cell migration. STK3/MST2 and STK4/MST1 are required to repress proliferation of mature hepatocytes, to prevent activation of facultative adult liver stem cells (oval cells), and to inhibit tumor formation (By similarity). Phosphorylates 'Ser-14' of histone H2B (H2BS14ph) during apoptosis. Phosphorylates FOXO3 upon oxidative stress, which results in its nuclear translocation and cell death initiation. Phosphorylates MOBKL1A, MOBKL1B and RASSF2. Phosphorylates TNNI3 (cardiac Tn-I) and alters its binding affinity to TNNC1 (cardiac Tn-C) and TNNT2 (cardiac Tn-T). Phosphorylates FOXO1 on 'Ser-212' and regulates its activation and stimulates transcription of PMAIP1 in a FOXO1-dependent manner. Phosphorylates SIRT1 and inhibits SIRT1-mediated p53/TP53 deacetylation, thereby promoting p53/TP53 dependent transcription and apoptosis upon DNA damage. Acts as an inhibitor of PKB/AKT1. Phosphorylates AR on 'Ser-650' and suppresses its activity by intersecting with PKB/AKT1 signaling and antagonizing formation of AR- chromatin complexes.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101109::MONDO_0013934",
+          "title": "STK4 \u2194 combined immunodeficiency due to STK4 deficiency",
+          "url": "https://platform.opentargets.org/target/ENSG00000101109/associations",
+          "text": "Disease: combined immunodeficiency due to STK4 deficiency\nDescription: A rare, genetic combined T and B cell immunodeficiency characterized by T- and B-cell lymphopenia, hypergammaglobulinemia and intermittent neutropenia. It presents with recurrent opportunistic viral, bacterial and fungal infections involving skin (cutaneous papillomatosis, molluscum contagiosum, skin abscesses, mucocutaneous candidiasis), upper and lower respiratory tract or septicemia. Other clinical features include autoimmune manifestations (autoimmune hemolytic anemia) and congenital heart defects (atrial septal defects, patent foramen ovale, mitral, triscupid and pulmonary valve insufficiency).\nAssociation score: 0.761",
+          "cos_sim_score": 0.7613382040802787,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101109::MONDO_0009478",
+          "title": "STK4 \u2194 combined immunodeficiency due to DOCK8 deficiency",
+          "url": "https://platform.opentargets.org/target/ENSG00000101109/associations",
+          "text": "Disease: combined immunodeficiency due to DOCK8 deficiency\nDescription: Combined immunodeficiency due to dedicator of cytokinesis 8 protein (DOCK8) deficiency is a form of T and B cell immunodeficiency characterized by recurrent cutaneous viral infections, susceptibility to cancer and elevated serum levels of immunoglobulin E (IgE).\nAssociation score: 0.473",
+          "cos_sim_score": 0.47348492095521394,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101109::MONDO_0015131",
+          "title": "STK4 \u2194 combined immunodeficiency",
+          "url": "https://platform.opentargets.org/target/ENSG00000101109/associations",
+          "text": "Disease: combined immunodeficiency\nDescription: A broad classification of inherited disorders presenting at birth that affect both the cell-mediated and humoral aspects of the immune response. Circulating numbers of B lymphocytes, T lymphocytes and NK cells are variable but where present do not function properly. Susceptibility to infection is the primary concern.\nAssociation score: 0.463",
+          "cos_sim_score": 0.4633896419023598,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101109::MONDO_0021094",
+          "title": "STK4 \u2194 immunodeficiency disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000101109/associations",
+          "text": "Disease: immunodeficiency disease\nDescription: Disease in which there is a deficiency or defect in the mechanisms of immunity, either cellular or humoral.\nAssociation score: 0.340",
+          "cos_sim_score": 0.3400134663099256,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::STK4",
+          "title": "STK4",
+          "url": "https://en.wikipedia.org/wiki/STK4",
+          "text": "Serine/threonine-protein kinase 4 is an enzyme that in humans is encoded by the STK4 gene.\n\nFunction\nThe protein encoded by this gene is a cytoplasmic kinase that is structurally similar to the yeast Ste20p (sterile 20 protein) kinase, which acts upstream of the stress-induced mitogen-activated protein kinase (MAPK) cascade. The encoded protein can phosphorylate myelin basic protein and undergoes autophosphorylation. A caspase-cleaved fragment of the encoded protein has been shown to be capable of phosphorylating histone H2B. The particular phosphorylation catalyzed by this protein has been correlated with apoptosis, and it's possible that this protein induces the chromatin condensation observed in this process.\n\nInteractions\nSTK4 has been shown to interact with PRKRIR.\nSTK4 has also been shown to prevent, through Yap1 coactivator modulation, haematological tumor cell apoptosis.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.33274030685424805,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::BRAF (gene)",
+          "title": "BRAF (gene)",
+          "url": "https://en.wikipedia.org/wiki/BRAF_(gene)",
+          "text": "Inhibitors\nSince constitutively active B-Raf mutants commonly cause cancer (see Clinical Significance) by excessively signaling cells to grow, inhibitors of B-Raf have been developed for both the inactive and active conformations of the kinase domain as cancer therapeutic candidates.\n\nSorafenib\nBAY43-9006 (Sorafenib, Nexavar) is a V600E mutant B-Raf and C-Raf inhibitor approved by the FDA for the treatment of primary liver and kidney cancer.  Bay43-9006 disables the B-Raf kinase domain by locking the enzyme in its inactive form.  The inhibitor accomplishes this by blocking the ATP binding pocket through high-affinity for the kinase domain.  It then binds key activation loop and DFG motif residues to stop the movement of the activation loop and DFG motif to the active conformation.  Finally, a trifluoromethyl phenyl moiety sterically blocks the DFG motif and activation loop active conformation site, making it impossible for the kinase domain to shift conformation to become active.\nThe distal pyridyl ring of BAY43-9006 anchors in the hydrophobic nucleotide-binding pocket of the kinase N-lobe, interacting with W531, F583, and F595.  The hydrophobic interactions with catalytic loop F583 and DFG motif F595 stabilize the inactive conformation of these structures, decreasing the likelihood of enzyme activation.  Further hydrophobic interaction of K483, L514, and T529 with the center phenyl ring increase the affinity of the kinase domain for the inhibitor.  Hydrophobic interaction of F595 with the center ring as well decreases the energetic favorability of a DFG conformation switch further.  Finally, polar interactions of BAY43-9006 with the kinase domain continue this trend of increasing enzyme affinity for the inhibitor and stabilizing DFG residues in the inactive conformation.  E501 and C532 hydrogen bond the urea and pyridyl groups of the inhibitor respectively while the urea carbonyl accepts a hydrogen bond from D594's backbone amide nitrogen to lock the DFG motif in place.\nThe trifluoromethyl phenyl moiety cements the thermodynamic favorability of the inactive conformation when the kinase domain is bound to BAY43-9006 by sterically blocking the hydrophobic pocket between the \u03b1C and \u03b1E helices that the DFG motif and activation loop would inhabit upon shifting to their locations in the active conformation of the protein.",
+          "cos_sim_score": 0.14695943892002106,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Titin",
+          "title": "Titin",
+          "url": "https://en.wikipedia.org/wiki/Titin",
+          "text": "Drosophila titin, also known as Kettin or sallimus (sls), is kinase-free. It has roles in the elasticity of both muscle and chromosomes. It is homologous to vertebrate titin I-band and contains Ig PEVK domains, the many repeats being a hot target for splicing. There also exists a titin homologue, ttn-1, in C. elegans. It has a kinase domain, some Ig/Fn3 repeats, and PEVT repeats that are similarly elastic.\n\nFunction\nTitin is a large abundant protein of striated muscle. Titin's primary functions are to stabilize the thick filament, center it between the thin filaments, prevent overstretching of the sarcomere, and to recoil the sarcomere like a spring after it is stretched. An N-terminal Z-disc region and a C-terminal M-line region bind to the Z-line and M-line of the sarcomere, respectively, so that a single titin molecule spans half the length of a sarcomere. Titin also contains binding sites for muscle-associated proteins so it serves as an adhesion template for the assembly of contractile machinery in muscle cells. It has also been identified as a structural protein for chromosomes. Considerable variability exists in the I-band, the M-line and the Z-disc regions of titin. Variability in the I-band region contributes to the differences in elasticity of different titin isoforms and, therefore, to the differences in elasticity of different muscle types. Of the many titin variants identified, five are described with complete transcript information available.\nDominant mutation in TTN causes predisposition to hernias.\nTitin interacts with many sarcomeric proteins including:\n\nZ line region: telethonin and alpha-actinin\nI band region: calpain-3 and obscurin\nM line region: myosin-binding protein C, calmodulin 1, CAPN3, and MURF1\n\nClinical relevance\nMutations anywhere within the unusually long sequence of this gene can cause premature stop codons or other defects.  Titin mutations are associated with hereditary myopathy with early respiratory failure, early-onset myopathy with fatal cardiomyopathy, core myopathy with heart disease, centronuclear myopathy, limb-girdle muscular dystrophy type 2J, familial dilated cardiomyopathy 9, hypertrophic cardiomyopathy and tibial muscular dystrophy. Further research also suggests that no genetically linked form of any dystrophy or myopathy can be safely excluded from being caused by a mutation on the TTN gene.  Truncating mutations in dilated cardiomyopathy patients are most commonly found in the A region; although truncations in the upstream I region might be expected to prevent translation of the A region entirely, alternative splicing creates some transcripts that do not encounter the premature stop codon, ameliorating its effect. mRNA splicing factors such as RBM20 and SLM2 (KHDRBS3) were shown to mediated alternative mRNA splicing of titin mRNA contributing to the development of heart failure due to cardiomyopathies.\nAutoantibodies to titin are produced in patients with the autoimmune disease Myasthenia gravis.\n\nInteractions\nTitin has been shown to interact with:\n\nLinguistic significance\nThe name titin is derived from the Greek Titan (a giant deity, anything of great size).\nTitin also has the longest IUPAC name of a protein. The full chemical name of the human canonical form of titin, expressed as a of amino acids, which starts methionyl... and ends ...isoleucine, contains 189,819 letters and is sometimes stated to be the longest word in the English language, or of any language. However, lexicographers regard formal names of chemical compounds as verbal formulae rather than English words.\n\nSee also\nPKZILLA-1 - new largest known protein with 45,212 amino acids\n\nReferences\nFurther reading\nExternal links\n\nGeneReviews/NIH/NCBI/UW entry on Familial Hypertrophic Cardiomyopathy Overview\nGeneReviews/NCBI/NIH/UW entry on Udd Distal Myopathy, Tibial Muscular Dystrophy, Udd Myopathy\nGeneReviews/NIH/NCBI/UW entry on Salih Myopathy or Early-Onset Myopathy with Fatal Cardiomyopathy\nInterPro domain organization of titin\n\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.11777450144290924,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::AKT1",
+          "title": "AKT1",
+          "url": "https://en.wikipedia.org/wiki/AKT1",
+          "text": "RAC(Rho family)-alpha serine/threonine-protein kinase is an enzyme that in humans is encoded by the AKT1 gene. This enzyme belongs to the AKT subfamily of serine/threonine kinases that contain SH2 (Src homology 2-like) protein domains. It is commonly referred to as PKB, or by both names as \"Akt/PKB\".\n\nFunction\nThe serine-threonine protein kinase AKT1 is catalytically inactive in serum-starved primary and immortalized fibroblasts. AKT1 and the related AKT2 are activated by platelet-derived growth factor. The activation is rapid and specific, and it is abrogated by mutations in the pleckstrin homology domain of AKT1. It was shown that the activation occurs through phosphatidylinositol 3-kinase. In the developing nervous system AKT is a critical mediator of growth factor-induced neuronal survival. Survival factors can suppress apoptosis in a transcription-independent manner by activating the serine/threonine kinase AKT1, which then phosphorylates and inactivates components of the apoptotic machinery.  Mice lacking Akt1 display a 25% reduction in body mass, indicating that Akt1 is critical for transmitting growth-promoting signals, most likely via the IGF1 receptor. Mice lacking Akt1 are also resistant to cancer: They experience considerable delay in tumor growth initiated by the large T antigen or the Neu oncogene. A single-nucleotide polymorphism in this gene causes Proteus syndrome.\n\nHistory\nAKT (now also called AKT1) was originally identified as the oncogene in the transforming retrovirus, AKT8. AKT8 was isolated from a spontaneous thymoma cell line derived from AKR mice by cocultivation with an indicator mink cell line. The transforming cellular sequences, v-akt, were cloned from a transformed mink cell clone and these sequences were used to identify Akt1 and Akt2 in a human clone library. AKT8 was isolated by Stephen Staal in the laboratory of Wallace P. Rowe; he subsequently cloned v-akt and human AKT1 and AKT2 while on staff at the Johns Hopkins Oncology Center.\nIn 2011, a mutation in AKT1 was strongly associated with Proteus syndrome, the disease that probably affected the Elephant Man.\nThe name Akt stands for Ak strain transforming. The origins of the Akt name date back to 1928, when J. Furth performed experimental studies on mice that developed spontaneous thymic lymphomas. Mice from three different stocks were studied, and the stocks were designated A, R, and S. Stock A was noted to yield many cancers, and inbred families were subsequently designated by a second small letter (Aa, Ab, Ac, etc.), and thus came the Ak strain of mice. Further inbreeding was undertaken with Ak mice at the Rockefeller Institute in 1936, leading to the designation of the AKR mouse strain. In 1977, a transforming retrovirus was isolated from the AKR mouse. This virus was named Akt-8, the \"t\" representing its transforming capabilities.\n\nInteractions\nAKT1 has been shown to interact with:\n\nSee also\nAKT \u2013 the AKT family of proteins\nAKT2 \u2013 the gene for the second member of the AKT family\nAKT3 \u2013 the gene for the third member of the AKT family\nProteus syndrome\n\nReferences\nFurther reading\nExternal links\nAKT1 Standards - Learn more about AKT1 Reference Controls\nHuman AKT1 genome location and AKT1 gene details page  in the UCSC Genome Browser.",
+          "cos_sim_score": 0.11335809528827667,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::BRAF (gene)",
+          "title": "BRAF (gene)",
+          "url": "https://en.wikipedia.org/wiki/BRAF_(gene)",
+          "text": "Nucleotide-binding pocket\nV471, C532, W531, T529, L514, and A481 form a hydrophobic pocket within which the adenine of ATP is anchored through Van der Waals attractions upon ATP binding.\n\nCatalytic loop\nResidues 574\u2013581 compose a section of the kinase domain responsible for supporting the transfer of the \u03b3-phosphate of ATP to B-Raf's protein substrate.  In particular, D576 acts as a proton acceptor to activate the nucleophilic hydroxyl oxygen on substrate serine or threonine residues, allowing the phosphate transfer reaction to occur mediated by base-catalysis.\n\nDFG motif\nD594, F595, and G596 compose a motif central to B-Raf's function in both its inactive and active state.  In the inactive state, F595 occupies the nucleotide-binding pocket, prohibiting ATP from entering and decreasing the likelihood of enzyme catalysis.  In the active state, D594 chelates the divalent magnesium cation that stabilizes the \u03b2- and \u03b3-phosphate groups of ATP, orienting the \u03b3-phosphate for transfer.\n\nActivation loop\nResidues 596\u2013600 form strong hydrophobic interactions with the P-loop in the inactive conformation of the kinase, locking the kinase in its inactive state until the activation loop is phosphorylated, destabilizing these interactions with the presence of negative charge.  This triggers the shift to the active state of the kinase.  Specifically, L597 and V600 of the activation loop interact with G466, F468, and V471 of the P-loop to keep the kinase domain inactive until it is phosphorylated.\n\nEnzymology\nB-Raf is a serine/threonine-specific protein kinase.  As such, it catalyzes the phosphorylation of serine and threonine residues in a consensus sequence on target proteins by ATP, yielding ADP and a phosphorylated protein as products.  Since it is a highly regulated signal transduction kinase, B-Raf must first bind Ras-GTP before becoming active as an enzyme.  Once B-Raf is activated, a conserved protein kinase catalytic core phosphorylates protein substrates by promoting the nucleophilic attack of the activated substrate serine or threonine hydroxyl oxygen atom on the \u03b3-phosphate group of ATP through bimolecular nucleophilic substitution.\n\nActivation\nRelieving CR1 autoinhibition\nThe kinase (CR3) domain of human Raf kinases is inhibited by two mechanisms: autoinhibition by its own regulatory Ras-GTP-binding CR1 domain and a lack of post-translational phosphorylation of key serine and tyrosine residues (S338 and Y341 for c-Raf) in the CR2 hinge region.  During B-Raf activation, the protein's autoinhibitory CR1 domain first binds Ras-GTP's effector domain to the CR1 Ras-binding domain (RBD) to release the kinase CR3 domain like other members of the human  Raf kinase family.  The CR1-Ras interaction is later strengthened through the binding of the cysteine-rich subdomain (CRD) of CR1 to Ras and membrane phospholipids.  Unlike A-Raf and C-Raf, which must be phosphorylated on hydroxyl-containing CR2 residues before fully releasing CR1 to become active, B-Raf is constituitively phosphorylated on CR2 S445.  This allows the negatively charged phosphoserine to immediately repel CR1 through steric and electrostatic interactions once the regulatory domain is unbound, freeing the CR3 kinase domain to interact with substrate proteins.",
+          "cos_sim_score": 0.10896911472082138,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

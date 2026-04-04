@@ -1,0 +1,211 @@
+{
+  "probe_id": "11737280_at",
+  "gene_symbol": "IFIT1B",
+  "rf_importance": 0.0055,
+  "selection_freq": 0.8,
+  "abs_fold_change": 2.997013800000002,
+  "score": 0.4581,
+  "probe_count": 1,
+  "probe_ids": "11737280_at",
+  "max_score": 0.4581,
+  "mean_abs_fold_change": 2.997,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T21:27:37",
+  "interpretation": "IFIT1B, a member of the interferon-induced protein family, is predicted to play a role in the cellular response to viral infections. However, it is considered likely non-functional in this capacity, lacking the critical antiviral activity of its homolog IFIT1. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the gene's expression profile has not been directly linked to the disease mechanisms or identified as a biomarker in the retrieved literature. The evidence regarding IFIT1B's role in SONFH is weak, primarily relying on general biological reasoning rather than specific disease-related studies. Therefore, while it may have some relevance to immune responses, its potential as a clinical biomarker for early detection of SONFH is low.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "IFIT1B has not been directly linked to the pathogenesis of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "IFIT1B (Q5T764). https://www.uniprot.org/uniprotkb/Q5T764",
+    "IFIT1B \u2014 IFIT1B. https://platform.opentargets.org/target/ENSG00000204010",
+    "IFIT1B \u2194 Pancreatic pseudocyst. https://platform.opentargets.org/target/ENSG00000204010/associations",
+    "IFIT1B \u2194 pathological myopia. https://platform.opentargets.org/target/ENSG00000204010/associations",
+    "IFIT1B \u2194 myopia. https://platform.opentargets.org/target/ENSG00000204010/associations",
+    "IFIT1B \u2194 varicella, severe recurrent. https://platform.opentargets.org/target/ENSG00000204010/associations",
+    "IFIT1B \u2014 interferon induced protein with tetratricopeptide repeats 1B (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "IFIT1 \u2014 interferon induced protein with tetratricopeptide repeats 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "IFIT3 \u2014 interferon induced protein with tetratricopeptide repeats 3 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MAP1A \u2014 microtubule associated protein 1A (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HERC1 \u2014 HECT and RLD domain containing E3 ubiquitin protein ligase family member 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+    "Screening of Potential Biomarkers in the Peripheral Serum for Steroid-Induced Osteonecrosis of the Femoral Head Based on WGCNA and Machine Learning Algorithms (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8832155/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8609,
+    "completion_tokens": 290,
+    "total_tokens": 8899,
+    "estimated_cost_usd": 0.001465
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q5T764",
+          "title": "IFIT1B (Q5T764)",
+          "url": "https://www.uniprot.org/uniprotkb/Q5T764",
+          "text": "Protein: Protein IFIT1 homolog B\nFunction: IFIT1B is likely non-functional, lacking the critical antiviral role of IFIT1. Unlike IFIT1, which is essential in the innate immune response as part of an interferon-dependent multiprotein complex, IFIT1B does not prevent the translation of viral RNAs that lack host-specific 2'-O-methylation at their 5' cap. Consequently, it probably cannot inhibit their translation by competing with the host translation machinery",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000204010::function",
+          "title": "IFIT1B \u2014 IFIT1B",
+          "url": "https://platform.opentargets.org/target/ENSG00000204010",
+          "text": "Function: IFIT1B is likely non-functional, lacking the critical antiviral role of IFIT1. Unlike IFIT1, which is essential in the innate immune response as part of an interferon-dependent multiprotein complex, IFIT1B does not prevent the translation of viral RNAs that lack host-specific 2'-O-methylation at their 5' cap. Consequently, it probably cannot inhibit their translation by competing with the host translation machinery. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000204010::HP_0005206",
+          "title": "IFIT1B \u2194 Pancreatic pseudocyst",
+          "url": "https://platform.opentargets.org/target/ENSG00000204010/associations",
+          "text": "Disease: Pancreatic pseudocyst\nDescription: Cyst-like space not lined by epithelium and contained within the pancreas. Pancreatic pseudocysts are often associated with pancreatitis.\nAssociation score: 0.325",
+          "cos_sim_score": 0.3247169581531489,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000204010::EFO_0004207",
+          "title": "IFIT1B \u2194 pathological myopia",
+          "url": "https://platform.opentargets.org/target/ENSG00000204010/associations",
+          "text": "Disease: pathological myopia\nDescription: Excessive axial myopia associated with complications (especially posterior staphyloma and CHOROIDAL NEOVASCULARIZATION) that can lead to BLINDNESS.\nAssociation score: 0.111",
+          "cos_sim_score": 0.11087395640541053,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000204010::MONDO_0001384",
+          "title": "IFIT1B \u2194 myopia",
+          "url": "https://platform.opentargets.org/target/ENSG00000204010/associations",
+          "text": "Disease: myopia\nAssociation score: 0.111",
+          "cos_sim_score": 0.11087395640541053,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000204010::MONDO_0010919",
+          "title": "IFIT1B \u2194 varicella, severe recurrent",
+          "url": "https://platform.opentargets.org/target/ENSG00000204010/associations",
+          "text": "Disease: varicella, severe recurrent\nAssociation score: 0.062",
+          "cos_sim_score": 0.061535045805002846,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "IFIT1B \u2014 interferon induced protein with tetratricopeptide repeats 1B",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: IFIT1B\nGene name: interferon induced protein with tetratricopeptide repeats 1B\nAliases / synonyms: IFIT1L, bA149I23.6\nOrganism: Homo sapiens\nGene summary: Predicted to enable RNA binding activity. Predicted to be involved in defense response to virus. Predicted to act upstream of or within cellular response to interferon-alpha; cellular response to interferon-beta; and response to bacterium. Predicted to be located in cytoplasm. Predicted to be active in cytosol. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "IFIT1B",
+          "aliases": "IFIT1L, bA149I23.6",
+          "gene_description": "interferon induced protein with tetratricopeptide repeats 1B"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "IFIT1 \u2014 interferon induced protein with tetratricopeptide repeats 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: IFIT1\nGene name: interferon induced protein with tetratricopeptide repeats 1\nAliases / synonyms: C56, G10P1, IFI-56, IFI-56K, IFI56, IFIT-1, IFNAI1, ISG56, P56, RNM561\nOrganism: Homo sapiens\nGene summary: This gene encodes a protein containing tetratricopeptide repeats that was originally identified as induced upon treatment with interferon. The encoded protein may inhibit viral replication and translational initiation. This gene is located in a cluster on chromosome 10 with five other closely related genes. There is a pseudogene for this gene on chromosome 13. Alternatively spliced transcript variants encoding multiple isoforms have been observed. [provided by RefSeq, Aug 2012]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "IFIT1",
+          "aliases": "C56, G10P1, IFI-56, IFI-56K, IFI56, IFIT-1, IFNAI1, ISG56, P56, RNM561",
+          "gene_description": "interferon induced protein with tetratricopeptide repeats 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "IFIT3 \u2014 interferon induced protein with tetratricopeptide repeats 3",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: IFIT3\nGene name: interferon induced protein with tetratricopeptide repeats 3\nAliases / synonyms: CIG-49, GARG-49, IFI60, IFIT4, IRG2, ISG60, P60, RIG-G, cig41\nOrganism: Homo sapiens\nGene summary: Enables identical protein binding activity. Involved in antiviral innate immune response; negative regulation of apoptotic process; and negative regulation of cell population proliferation. Located in cytosol and mitochondrion. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "IFIT3",
+          "aliases": "CIG-49, GARG-49, IFI60, IFIT4, IRG2, ISG60, P60, RIG-G, cig41",
+          "gene_description": "interferon induced protein with tetratricopeptide repeats 3"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MAP1A \u2014 microtubule associated protein 1A",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MAP1A\nGene name: microtubule associated protein 1A\nAliases / synonyms: MAP1L, MTAP1A\nOrganism: Homo sapiens\nGene summary: This gene encodes a protein that belongs to the microtubule-associated protein family. The proteins of this family are thought to be involved in microtubule assembly, which is an essential step in neurogenesis. The product of this gene is a precursor polypeptide that presumably undergoes proteolytic processing to generate the final MAP1A heavy chain and LC2 light chain. Expression of this gene is almost exclusively in the brain. Studies of the rat microtubule-associated protein 1A gene suggested a role in early events of spinal cord development. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MAP1A",
+          "aliases": "MAP1L, MTAP1A",
+          "gene_description": "microtubule associated protein 1A"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "HERC1 \u2014 HECT and RLD domain containing E3 ubiquitin protein ligase family member 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HERC1\nGene name: HECT and RLD domain containing E3 ubiquitin protein ligase family member 1\nAliases / synonyms: MDFPMR, p532, p619\nOrganism: Homo sapiens\nGene summary: This gen encodes a member of the HERC protein family. This protein stimulates guanine nucleotide exchange on ARF1 and Rab proteins. This protein may be involved in membrane transport processes. [provided by RefSeq, Mar 2012]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HERC1",
+          "aliases": "MDFPMR, p532, p619",
+          "gene_description": "HECT and RLD domain containing E3 ubiquitin protein ligase family member 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "1. Introduction\nOsteonecrosis of the femoral head (ONFH) is a common disease mainly characterized by apoptosis of bone cells that leads to collapse of the femoral head and cartilage damage. Notably, the round surface of the head and acetabulum joint flattens and eventually leads to secondary osteoarthritis.[1] Studies have shown that the disease is mainly prevalent in patients with long-term use of hormonal drugs, long-term alcohol abuse, and hip trauma.[2] Steroid-induced ONFH (SONFH) is a common type of femoral head necrosis. SONFH patients are frequently misdiagnosed as hip synovitis or osteoarthritis owing to lack of obvious signs coupled with imaging abnormalities during early stages of disease development.[3] Although transcriptomic analyses have contributed to development of clinical treatment strategies for SONFH, the precise underlying mechanism of SONFH remains unclear.[4,5]\nBioinformatics analyses have significantly improved the search and identification of key genes regulating the occurrence of various diseases, thereby generating new insights to guide development of treatment strategies. SONFH has a complex pathophysiological mechanism. Genotyping of SONFH in adults revealed that gene coding protein polymorphism was associated with SONFH.[6] It has been hypothesized that progression of SONFH to the end stage in adult patients may be due to differential expression of protein-coding genes involved in thrombosis, angiogenesis inhibition, programmed cell death, lipid biosynthesis, and bone homeostasis. In the present study, we aimed to identify differentially expressed genes in peripheral blood of patients with early SONFH and further explored the pathogenesis of this disease using transcriptome data from the Gene Expression Omnibus database.\n2. Materials and Methods\n2.1. Data acquisition\nThe Gene Expression Omnibus database not only stores many gene chips and sequence data but also provides tools for users to query and download gene expression profiles. In the present study, we searched for relevant datasets using \u201csteroid-induced osteonecrosis of femoral head\u201d as the keyword, with focus on SONFH-related datasets. Consequently, we downloaded transcriptome data (GSE123568) belonging to 30 SONFH and 10 non-SONFH (following steroid administration) subjects.\n2.2. Sample correlation analysis\nOverall expression profiles of the transcriptome data were clustered using ClusterProfiler packages implemented in R software (version 4.0.2). Only dimension features containing the vast majority of variances were retained, with those containing zero variances discarded based on a principal component analysis (PCA) plot. Using weighted gene correlation network analysis (WGCNA) package in R language to perform WGCNA on data. WGCNA adds phenotypic weight parameters in the process of constructing gene co-expression network and optimizes classification using scale-free clustering and dynamic tree cut algorithm to achieve accurate and efficient data analysis.\n2.3. Functional annotation of DEGs\nFunctional annotation of key genes was performed using the ClusterProfiler package in R and followed by comprehensive functional correlation of candidate genes. Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analyses were performed to evaluate related functional categories. Significant differentially expressed genes (DEGs) were filtered, and bar charts and bubble charts were drawn according to their functions and pathways, respectively.\n2.4. Construction of protein\u2013protein interaction networks\nProtein\u2013protein interaction (PPI) networks of the DEGs were generated using the STRING online tool and Cytoscape software. Summarily, DEGs were entered into the STRING online tool to screen for interacting proteins with a combined score of\u2005>\u20050.9. The obtained PPI results were imported into Cytoscape software, then prominent modules in PPI were screened to construct the network through molecular complex detection. NetworkX package was then used to visualize the network in Python, with node sizes taken to be proportional to node degree.\n2.5. Quantitative real-time polymerase chain reaction",
+          "cos_sim_score": 0.6069154739379883,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8832155",
+          "title": "Screening of Potential Biomarkers in the Peripheral Serum for Steroid-Induced Osteonecrosis of the Femoral Head Based on WGCNA and Machine Learning Algorithms",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8832155/",
+          "text": "1. Introduction\nSteroid-induced osteonecrosis of the femoral head (SONFH), a chronic and progressive femoral head disease mainly induced by long-term exposure to excessive glucocorticoids, can cause hip joint damage and dysfunction and ultimately affect the quality of life [1]. The worldwide morbidity of SONFH is increasing year by year, and it is estimated that 20,000-30,000 patients are diagnosed with SONFH that does not depend on transmission each year in United States [2]. In particular, it is expected that the incidence of SONFH will rise in the next few years around the world because of the continuing impacts of the novel coronavirus pandemic since 2019 (COVID-19) [3]. Currently, although the diagnosis of SONFH, especially joint imaging techniques, is well established, patients with an early stage of SONFH are difficult to find because of the lack of effective and specific biomarkers [4]. Moreover, the cost and inconvenience of joint imaging techniques severely limit their application, specifically in China [5, 6]. Furthermore, total hip arthroplasty is effective in improving the quality of life, but most patients still endure the mental and financial pressure [7]. Therefore, the development of new biomarkers for SONFH diagnosis and treatment is urgently needed.\nWith the ongoing progression in sequencing technologies, bioinformatics analysis is an emerging and promising tool for screening potential biomarkers in a variety of neoplastic and nonneoplastic diseases [8, 9]. Data remining by using bioinformatics analysis based on public databases has facilitated the screening of new biomarkers for nonneoplastic diseases [10, 11]. In particular, combining weighted gene coexpression network analysis (WGCNA) and machine learning algorithms has greatly improved the accurate identification of disease-related biomarkers [12\u201315]. For example, FADD, CXCL2, and CXCL8 were identified as immune-related biomarkers of rheumatoid arthritis by integrating WGCNA and least absolute shrinkage and selection operator (LASSO) logistic regression and support vector machine recursive feature elimination (SVM-RFE) algorithms [12]. MACROD1 was found to contribute to the early diagnosis of tendinopathy based on the LASSO model, SVM-REF, and Gaussian mixture model (GMMs) algorithms [13]. Moreover, LSP1, GNLY, and MEOX2 are likely to aid in the diagnosis and treatment of rheumatoid arthritis based on WGCNA machine learning strategies. Furthermore, CDK1, TOP2A, ADRA1A, FANCI, XRCC1, TPX2, CCNB2, CDK4, GLYATL1, and CFHR3 were identified to be core hub genes as potential biomarkers and treatment targets for hepatoblastoma by integrating WGCNA and random forest (RF) algorithm [14]. However, most bioinformatics analyses for SONFH have not been performed by integrating WGCNA and machine learning algorithms.\nTherefore, the present study is aimed at identifying potential biomarkers in the peripheral serum for SONFH by integrating WGCNA and machine learning algorithms, including LASSO logistic regression, SVM-RFE, and RF. First, we identified differentially expressed genes (DEGs) between SONFH and control samples in the GSE123568 dataset downloaded from the Gene Expression Omnibus (GEO) database (https://www.ncbi.nlm.nih.gov/geo/) in NCBI. Moreover, WGCNA was performed based on the expression matrix of DEGs to screen target genes, and machine learning algorithms were used to identify potential biomarkers. Finally, we investigated the possible functions and regulatory mechanisms of the potential biomarkers. This study may provide new biomarkers for the diagnosis and treatment of SONFH and contribute to clarifying the pathogenesis of SONFH.\n2. Material and Methods\n2.1. Data Collection and Preprocessing\nThe gene expression matrix of the peripheral serum for 30 SONFH and 10 control samples from China in the GSE123568 dataset, which was sequenced using the GPL15207 platform, was obtained from the GEO database.\n2.2. Identification of DEGs in the Peripheral Serum of Patients with SONFH\n\u201cLimma\u201d R package was used to screen DEGs between SONFH and control samples [16], and genes with P < 0.01 and \u2223log2FC | >1 were regarded as DEGs.\n2.3. Screening of Target Modules and Genes Based on WGCNA",
+          "cos_sim_score": 0.5456406474113464,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "Figure 3.\nqRT-PCR results showing significant upregulation of ITGAX and LILRB2 and significant downregulation of PPP3CB and MMP8 in SONFH patients., ITGAX = integrin subunit alpha X, LILRB2 = leukocyte immunoglobulin like receptor B2, MMP8 = matrix metallopeptidase 8, PPP3CB = protein phosphatase 3 catalytic subunit beta, qRT-PCR = quantitative real-time polymerase chain reaction, SONFH = steroid-induced osteonecrosis of the femoral head.\n4. Discussion\nMore than 30 years ago, researchers discovered a close relationship between use of glucocorticoids with the occurrence of femoral head necrosis.[7] Results from a retrospective analysis showed that hormone-related nontraumatic ONFH is dominant.[8] Investigating the genetic factors regulating SONFH characteristics is an important strategy, and scholars have employed bioinformatics to explore sequence data. However, these studies also present some defects, such as inability to accurately interpret high-throughput sequence data to ensure that a certain deviation exists between PCR verification data and the data significance.[9,10] In the present study, we explored the signaling pathways regulating development of early SONFH and predicted diagnostic biomarkers in peripheral blood from this group of patients.\nOur results revealed that hundreds of coding genes, including tumor necrosis factor-\u03b1 (TNF-\u03b1), phosphoinositide 3-kinase Akt (PI3K-Akt), hypoxia-inducible factor-1 (HIF-1), adherens junction, and mitogen-activated protein kinase signaling pathways, were significantly upregulated in peripheral blood of patients with early SONFH. Notably, these DEGs participate in regulation of redox, inflammatory response, angiogenesis, and cell metabolism by secreting inflammatory chemokine signaling proteins. We constructed a PPI network of these DEGs and found that PRDX2, HP, MMP8, FPR2, and ITGAX may be associated with the SONFH process. Among them, FPR2 is a low-affinity receptor of N-formyl methionine peptides and a powerful neutrophil chemokine.[11] Family with sequence similarity 19 member A5 is a neural factor or brain-specific chemokine that was shown to remarkably downregulate expression of osteoclast-related genes, such as receptor activator of nuclear factor kappa and TNF receptor-associated factor 6, and mediate upregulation of osteoclast-producing negative regulators, such as musculoaponeurotic fibrosarcoma oncogene homolog B and interferon regulatory factor-8.[12,13] Interestingly, FPR2 antagonist WRW4 or FPR2 deficiency were shown to markedly reverse inhibition of Family with sequence similarity 19 member A5-inducedosteoclastogenesis, indicating that FPR2 plays an important role in regulation of osteoclastogenesis as well as occurrence and development of SONFH disease.[9,14]\nIntegrin alpha-X/beta-2, which is encoded by ITGAX, is a receptor that recognizes the G protein-coupled receptor sequence in fibrinogen, thereby mediating cell\u2013cell interactions during inflammatory responses. Functionally, it plays an important role in monocyte adhesion and chemotaxis.[15,16] In the present study, we found that PRDX2 was a thiol-specific peroxidase in downregulated genes in SONFH relative to non-SONFH group. Functionally, this gene catalyzes reduction of hydrogen peroxide and organic peroxide to produce water and alcohol, thereby causing inactivation of toxic substances.[17] Studies have shown that PRDX2, a hydrogen peroxide-mediated signal transduction sensor that prevents oxidative stress, not only plays a role in cell protection but may also be participating in signal cascade reaction of growth factor and TNF-\u03b1 by regulating the intracellular concentration of hydrogen peroxide.[18,19]\nHP-related diseases, which include haptoglobinemia and Plasmodium falciparum malaria,[20] are regulated by the innate immune system and vesicle-mediated transport. HP accumulates in the kidney and is secreted in the urine due to hemolysis. Moreover, HP reportedly captures and binds to free plasma HP, thereby preventing kidney damage. HP also acts as an antioxidant, presents antibacterial activity, and plays a role in many acute phase regulations.[21] Therefore, the observed downregulation of PRDX2 and HP may suggest that both genes promote development of SONFH disease through the redox pathway.",
+          "cos_sim_score": 0.5083401799201965,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "HP-related diseases, which include haptoglobinemia and Plasmodium falciparum malaria,[20] are regulated by the innate immune system and vesicle-mediated transport. HP accumulates in the kidney and is secreted in the urine due to hemolysis. Moreover, HP reportedly captures and binds to free plasma HP, thereby preventing kidney damage. HP also acts as an antioxidant, presents antibacterial activity, and plays a role in many acute phase regulations.[21] Therefore, the observed downregulation of PRDX2 and HP may suggest that both genes promote development of SONFH disease through the redox pathway.\nMatrix metalloproteinases (MMPs) are considered the key regulator in maintenance of bone homeostasis.[22] Among them, MMP8, which is encoded by the MMP8 gene, also known as neutrophil or PMNL collagenase, is a collagen lyase that generally exists in mammalian connective tissues. The reduction of collagenase is the premise of effective osteoclast fusion. Inhibition of endogenous collagenase expression or activity was associated with a significant increase in osteoclast fusion, while fusion of trap-positive mononuclear osteoclast precursors is essential in the formation of fully functional mature osteoclasts.[23] Moreover, MMP8 deficiency was associated with increased occurrence of arthritis and bone loss in the serum a metastatic arthritis model.[24] Results from in situ hybridization of rat hindlimb tissue sections revealed that profiles of MMP8 expression were upregulated in osteoblast precursor cells, osteoblasts, and chondrocytes during embryonic development of the bone and cartilage.[25] These findings suggest that MMP8 expression may be playing a role in occurrence and progression of SONFH by affecting the structure and function of osteoblasts and osteoclasts.\nThis study had several potential shortcomings. First, only the important abnormal gene groups were randomly selected and verified, due to limited resources. It is possible that the overall results may be some deviation from the actual results. Second, our sample size for qRT-PCR validation was small, as evidenced by only 12 volunteers, which may not provide strong statistical support. Finally, the authors believe that in subsequent studies, clear and effective interventions for SONFH can be used to observe the changes of peripheral blood biomarkers in patients with SONFH, so as to achieve indirect verification and make the research translate to clinical practice. Unfortunately, this study does not refine these works.\n5. Conclusions\nTranscriptomic analysis revealed upregulation of key genes that regulate important signaling pathways during SONFH development, including TNF-\u03b1, PI3K-Akt, HIF-1, adherens junction, and mitogen-activated protein kinase signaling pathways. Overall, these genes promote SONFH occurrence by regulating redox pathways, inflammatory reactions, and structure and function of osteoblasts and osteoclasts, suggesting that they may be important targets for designing approaches for early diagnosis and treatment of SONFH.\nAuthors\u2019 contributions\nWenhui Shao and Honghai Zhou collected and analyzed data. Cong Tian wrote the manuscript. All authors read and approved the final manuscript.",
+          "cos_sim_score": 0.3207170367240906,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8832155",
+          "title": "Screening of Potential Biomarkers in the Peripheral Serum for Steroid-Induced Osteonecrosis of the Femoral Head Based on WGCNA and Machine Learning Algorithms",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8832155/",
+          "text": "Additionally, we further investigated the protein interactions among 94 target genes and screened 52 genes by constructing a PPI network. Finally, we identified GYPA, TMCC2, and BPGM as potential biomarkers using LASSO logistic regression, SVM-RFE, and RF algorithms. GYPA (Glycophorin A), a major sialoglycoprotein of the human erythrocyte membrane, has been found to be related to blood immunity by regulating the proliferation and differentiation of hematopoietic and immunocompetent cells in human marrow [39]. Thus, GYPA may play a critical role in SONFH by regulating blood immunity and red blood cells. TMCC2 (Transmembrane and Coiled-Coil Domain Family 2) has been revealed to be related to human erythroid differentiation [40]. Moreover, TMCC2 can affect A\u03b2PP metabolism [41] and nitrogen metabolism and excretion [42]. Hence, TMCC2 may play a key role in SONFH by affecting erythroid differentiation and metabolism. BPGM (Bisphosphoglycerate Mutase), a small molecule found at high concentrations in red blood cells where it binds to and decreases the oxygen affinity of hemoglobin, is associated with erythrocyte metabolic reprogramming in chronic kidney disease [43]. More importantly, BPGM is related to erythrocytosis [44, 45] and neutrophilia [46]. Therefore, BPGM may play a decisive role in SONFH by affecting erythroid proliferation and immunity. Notably, no studies have reported the role of GYPA, TMCC2, and BPGM in SONFH. Thus, further investigations are necessary.\nFinally, we also investigated the biological functions and regulatory mechanisms of GYPA, TMCC2, and BPGM. Interestingly, GSEA revealed that GYPA, TMCC2, and BPGM were mainly involved in immune-related BPs and signaling pathways, such as T- and B-cell receptor signaling pathways. Currently, an increasing number of studies have shown that the immune response has a significant impact on the occurrence and development of SONFH. For example, it has been suggested that macrophages and CD4+ T cells are associated with SONFH [47, 48]. Therefore, GYPA, TMCC2, and BPGM may play key roles in SONFH by regulating the immunity. Moreover, we also explored the regulatory mechanisms of GYPA, TMCC2, and BPGM and found that GYPA might be regulated by hsa-miR-3137, and BPGM might be regulated by hsa-miR-340-3p. However, to the best of our knowledge, their regulatory mechanisms are rarely studied. Thus, further studies are required in the future.\n5. Conclusion\nIn summary, 562 DEGs were screened between the peripheral serum of SONFH patients and control samples. Moreover, GYPA, TMCC2, and BPGM were identified as potential biomarkers in the peripheral serum of SONFH patients based on WGCNA and machine learning algorithms. Furthermore, we found that GYPA might be regulated by hsa-miR-3137 and that BPGM might be regulated by hsa-miR-340-3p. Therefore, our study may contribute to the understanding of SONFH and may help in improving the diagnosis of SONFH. However, further studies are needed to investigate the roles of GYPA, TMCC2, and BPGM.",
+          "cos_sim_score": 0.12841634452342987,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

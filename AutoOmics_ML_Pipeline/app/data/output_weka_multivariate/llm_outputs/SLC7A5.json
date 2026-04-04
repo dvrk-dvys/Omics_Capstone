@@ -1,0 +1,218 @@
+{
+  "rf_rank": 67,
+  "probe_id": "11739061_at",
+  "gene_symbol": "SLC7A5",
+  "score": 0.44,
+  "rf_n_nodes": 2,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 2.0134,
+  "log_fc": -2.0134,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11739061_at",
+  "max_score": 0.44,
+  "mean_abs_fold_change": 2.0134,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:04:41",
+  "interpretation": "SLC7A5 encodes a protein that functions as a transporter for large neutral amino acids, playing a crucial role in cellular uptake of these essential nutrients. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), SLC7A5 may influence bone metabolism and the response of bone cells to glucocorticoids, which are known to induce osteonecrosis. Evidence suggests that SLC7A5 is involved in the mTORC1 signaling pathway, which is critical for osteoblast and osteoclast function, potentially linking it to the pathophysiology of SONFH. However, the direct evidence connecting SLC7A5 to SONFH is limited, leading to a lower confidence in its role as a biomarker. Thus, while SLC7A5 shows potential relevance, its clinical utility as an early-detection biomarker for SONFH remains uncertain and requires further investigation.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "SLC7A5 may be involved in the metabolic processes affected by glucocorticoids in SONFH, but direct evidence linking it to the disease is lacking.",
+  "citations": [
+    "SLC7A5 (Q01650). https://www.uniprot.org/uniprotkb/Q01650",
+    "SLC7A5 \u2014 SLC7A5. https://platform.opentargets.org/target/ENSG00000103257",
+    "SLC7A5 \u2194 vertebral joint disease. https://platform.opentargets.org/target/ENSG00000103257/associations",
+    "SLC7A5 \u2194 musculoskeletal system disease. https://platform.opentargets.org/target/ENSG00000103257/associations",
+    "SLC7A5 \u2194 childhood onset asthma. https://platform.opentargets.org/target/ENSG00000103257/associations",
+    "SLC7A5 \u2194 type 2 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000103257/associations",
+    "SLC7A5 \u2014 solute carrier family 7 member 5 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TP53 \u2014 tumor protein p53 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ESR1 \u2014 estrogen receptor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KRAS \u2014 KRAS proto-oncogene, GTPase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Identification and Validation of Potential Ferroptosis-Related Genes in Glucocorticoid-Induced Osteonecrosis of the Femoral Head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9962586/",
+    "Screening and identification of potential key biomarkers for glucocorticoid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9832261/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9618,
+    "completion_tokens": 327,
+    "total_tokens": 9945,
+    "estimated_cost_usd": 0.001639
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q01650",
+          "title": "SLC7A5 (Q01650)",
+          "url": "https://www.uniprot.org/uniprotkb/Q01650",
+          "text": "Protein: Large neutral amino acids transporter small subunit 1\nFunction: The heterodimer with SLC3A2 functions as a sodium-independent, high-affinity transporter that mediates uptake of large neutral amino acids such as phenylalanine, tyrosine, leucine, histidine, methionine, tryptophan, valine, isoleucine and alanine (PubMed:10049700, PubMed:10574970, PubMed:11557028, PubMed:11564694, PubMed:12117417, PubMed:12225859, PubMed:15769744, PubMed:18262359, PubMed:25998567, PubMed:30867591, PubMed:9751058). The heterodimer with SLC3A2 mediates the uptake of L-DOPA (By similarity). Functions as an amino acid exchanger (PubMed:11557028, PubMed:12117417, PubMed:12225859, PubMed:30867591). May play a role in the transport of L-DOPA across the blood-brain barrier (By similarity). May act as the major transporter of tyrosine in fibroblasts (Probable). May mediate blood-to-retina L-leucine transport across the inner blood-retinal barrier (By similarity). Can mediate the transport of thyroid hormones diiodothyronine (T2), triiodothyronine (T3) and thyroxine (T4) across the cell membrane (PubMed:11564694). When associated with LAPTM4B, the heterodimer formed by SLC3A2 and SLC7A5 is recruited to lysosomes to promote leucine uptake into these organelles, and thereby mediates mTORC1 activation (PubMed:25998567). Involved in the uptake of toxic methylmercury (MeHg) when administered as the L-cysteine or D,L-homocysteine complexes (PubMed:12117417). Involved in the cellular activity of small molecular weight nitrosothiols, via the stereoselective transport of L-nitrosocysteine (L-CNSO) across the membrane (PubMed:15769744) (Microbial infection) In case of hepatitis C virus/HCV infection, the complex formed by SLC3A2 and SLC7A5/LAT1 plays a role in HCV propagation by facilitating viral entry into host cell and increasing L-leucine uptake-mediated mTORC1 signaling activation, thereby contributing to HCV-mediated pathogenesis",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000103257::function",
+          "title": "SLC7A5 \u2014 SLC7A5",
+          "url": "https://platform.opentargets.org/target/ENSG00000103257",
+          "text": "Function: The heterodimer with SLC3A2 functions as a sodium- independent, high-affinity transporter that mediates uptake of large neutral amino acids such as phenylalanine, tyrosine, leucine, histidine, methionine, tryptophan, valine, isoleucine and alanine (PubMed:10049700, PubMed:10574970, PubMed:11557028, PubMed:11564694, PubMed:12117417, PubMed:12225859, PubMed:15769744, PubMed:18262359, PubMed:25998567, PubMed:30867591, PubMed:9751058). The heterodimer with SLC3A2 mediates the uptake of L-DOPA (By similarity). Functions as an amino acid exchanger (PubMed:11557028, PubMed:12117417, PubMed:12225859, PubMed:30867591). May play a role in the transport of L-DOPA across the blood-brain barrier (By similarity). May act as the major transporter of tyrosine in fibroblasts (Probable). May mediate blood-to-retina L-leucine transport across the inner blood-retinal barrier (By similarity). Can mediate the transport of thyroid hormones diiodothyronine (T2), triiodothyronine (T3) and thyroxine (T4) across the cell membrane (PubMed:11564694). When associated with LAPTM4B, the heterodimer formed by SLC3A2 and SLC7A5 is recruited to lysosomes to promote leucine uptake into these organelles, and thereby mediates mTORC1 activation (PubMed:25998567). Involved in the uptake of toxic methylmercury (MeHg) when administered as the L-cysteine or D,L- homocysteine complexes (PubMed:12117417). Involved in the cellular activity of small molecular weight nitrosothiols, via the stereoselective transport of L-nitrosocysteine (L-CNSO) across the membrane (PubMed:15769744).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000103257::EFO_0009477",
+          "title": "SLC7A5 \u2194 vertebral joint disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000103257/associations",
+          "text": "Disease: vertebral joint disease\nDescription: A disease that involves the intervertebral joint.\nAssociation score: 0.322",
+          "cos_sim_score": 0.3220106031400678,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000103257::EFO_0009676",
+          "title": "SLC7A5 \u2194 musculoskeletal system disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000103257/associations",
+          "text": "Disease: musculoskeletal system disease\nDescription: A disease involving the musculoskeletal system. [database_cross_reference: MONDO:DesignPattern]\nAssociation score: 0.316",
+          "cos_sim_score": 0.31647195517347315,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000103257::MONDO_0005405",
+          "title": "SLC7A5 \u2194 childhood onset asthma",
+          "url": "https://platform.opentargets.org/target/ENSG00000103257/associations",
+          "text": "Disease: childhood onset asthma\nDescription: Asthma that starts in childhood.\nAssociation score: 0.314",
+          "cos_sim_score": 0.3135787969882969,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000103257::MONDO_0005148",
+          "title": "SLC7A5 \u2194 type 2 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000103257/associations",
+          "text": "Disease: type 2 diabetes mellitus\nDescription: A type of diabetes mellitus that is characterized by insulin resistance or desensitization and increased blood glucose levels. This is a chronic disease that can develop gradually over the life of a patient and can be linked to both environmental factors and heredity.\nAssociation score: 0.308",
+          "cos_sim_score": 0.30750250831191045,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "SLC7A5 \u2014 solute carrier family 7 member 5",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SLC7A5\nGene name: solute carrier family 7 member 5\nAliases / synonyms: 4F2LC, CD98, D16S469E, E16, LAT1, MPE16\nOrganism: Homo sapiens\nGene summary: Enables L-amino acid transmembrane transporter activity and secondary active transmembrane transporter activity. Involved in carboxylic acid transport; thyroid hormone transport; and xenobiotic transport. Located in several cellular components, including apical plasma membrane; cytosol; and microvillus membrane. Part of amino acid transport complex. Implicated in cholangiocarcinoma; colon cancer; hepatocellular carcinoma; and lung squamous cell carcinoma. Biomarker of esophagitis; gastrointestinal system cancer (multiple); malignant astrocytoma (multiple); and respiratory system cancer (multiple). [provided by Alliance of Genome Resources, Apr 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SLC7A5",
+          "aliases": "4F2LC, CD98, D16S469E, E16, LAT1, MPE16",
+          "gene_description": "solute carrier family 7 member 5"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TP53 \u2014 tumor protein p53",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TP53\nGene name: tumor protein p53\nAliases / synonyms: BCC7, BMFS5, LFS1, P53, TRP53\nOrganism: Homo sapiens\nGene summary: This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TP53",
+          "aliases": "BCC7, BMFS5, LFS1, P53, TRP53",
+          "gene_description": "tumor protein p53"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ESR1 \u2014 estrogen receptor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ESR1\nGene name: estrogen receptor 1\nAliases / synonyms: ER, ESR, ESRA, ESTRR, Era, NR3A1\nOrganism: Homo sapiens\nGene summary: This gene encodes an estrogen receptor and ligand-activated transcription factor. The canonical protein contains an N-terminal ligand-independent transactivation domain, a central DNA binding domain, a hinge domain, and a C-terminal ligand-dependent transactivation domain. The protein localizes to the nucleus where it may form either a homodimer or a heterodimer with estrogen receptor 2. The protein encoded by this gene regulates the transcription of many estrogen-inducible genes that play a role in growth, metabolism, sexual development, gestation, and other reproductive functions and is expressed in many non-reproductive tissues. The receptor encoded by this gene plays a key role in breast cancer, endometrial cancer, and osteoporosis. This gene is reported to have dozens of transcript va...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ESR1",
+          "aliases": "ER, ESR, ESRA, ESTRR, Era, NR3A1",
+          "gene_description": "estrogen receptor 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KRAS \u2014 KRAS proto-oncogene, GTPase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KRAS\nGene name: KRAS proto-oncogene, GTPase\nAliases / synonyms: 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2\nOrganism: Homo sapiens\nGene summary: This gene, a Kirsten ras oncogene homolog from the mammalian ras gene family, encodes a protein that is a member of the small GTPase superfamily. A single amino acid substitution is responsible for an activating mutation. The transforming protein that results is implicated in various malignancies, including lung adenocarcinoma, mucinous adenoma, ductal carcinoma of the pancreas and colorectal carcinoma. Alternative splicing leads to variants encoding two isoforms that differ in the C-terminal region. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KRAS",
+          "aliases": "'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2",
+          "gene_description": "KRAS proto-oncogene, GTPase"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::9962586",
+          "title": "Identification and Validation of Potential Ferroptosis-Related Genes in Glucocorticoid-Induced Osteonecrosis of the Femoral Head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9962586/",
+          "text": "1. Introduction\nGlucocorticoid-induced osteonecrosis of the femoral head (GIONFH) is a pathologic process of bone cell death that commonly affects young and middle-aged adults [1]. GIONFHprimarily manifests clinically as hip pain in the early stages, followed by the collapse of the femoral head, eventually leading to dysfunction of the hip joint [2]. The occurrence of GIONFH has been rising over the past decades due to the extensive application of glucocorticoids for viral infections, spinal trauma, and autoimmune and hematopoietic diseases [3]. Moreover, glucocorticoid therapy is now recommended for a large number of patients with severe COVID-19 [4]. It has been reported that osteonecrosis develops in 9\u201340% of patients receiving long-term glucocorticoid therapy [5]. The occurrence and development of GIONFH is a complex processwith multiple steps and genes. It is a widespread consensus that the repair process of osteonecrosis requires precisely coordinated bone resorptive functions of osteoclasts and bone-forming functions of osteoblasts [6]. The precise pathogenesis and molecular mechanisms underlying GIONFHhave not yet been fully elucidated, and there is currently a lack of effective clinical treatments. Therefore, it is important to investigate the molecular mechanism underlying GIONFH.\nFerroptosis is emerging as a novel type of programmed cell death discovered in recent years [7]. Ferroptosis is characterized by reactive oxygen species (ROS) accumulation, iron overload, and lipid peroxidation, ultimately leading to oxidative cell death [8].Iron overload, an initiator of ferroptosis, could increase bone resorption and decrease bone formation [9]. Moreover, iron overload could increase the number of osteoclasts [10]. The morphological characteristics of ferroptosis are decreased mitochondrial size, increased mitochondrial membrane density, and reduced mitochondrial crista and mitochondrial outer-membrane rupture [11]. Major efforts in terms of ferroptosis have been focused on the field of cancer. Although the role of iron in osteonecrosis has not yet been reported until now, recent evidence indicates that ferroptosis is closely related to the pathogenesis of GIONFH. An iron overload could promote osteoclast differentiation and bone resorption by producing ROS [12] and inhibiting osteogenic differentiation of mesenchymal stem cells [13]. Meanwhile, dexamethasone (Dex), an artificially synthetic glucocorticoid, could induce ferroptosis via P53/SLC7A11/GPX4 pathway in GIONFH [14].However, manyferroptosis-related genes involved in GIONFH have not yetbeen found, so further studies of ferroptosis-related genesinvolved in GIONFH need to be explored.\nTo date, there have been no bioinformatics-based studies on the pathogenesis of ferroptosis-related GIONFH. In the present study, we analyzed the expression of ferroptosis-related differentially expressed genes (DEGs) between the serum samples of GIONFH patients and controls based on the microarray dataset. Then, the Gene Ontology (GO) and Kyoto Encyclopediaof Genes and Genomes (KEGG) databases were usedfor the enrichment analysis of ferroptosis-related DEGs to establish the pathogenesis of GIONFH. Moreover, we constructed a protein\u2013protein interaction(PPI) network to identify hub genes based on ferroptosis-related DEGs. This study may improve the understanding of ferroptosis-related mechanisms underlying GIONFH.\n2. Materials and Methods\n2.1. Data Information\nThe mRNA expression profile dataset of GSE123568 was downloaded from the Gene Expression Omnibus (GEO) database (https://www.ncbi.nlm.nih.gov/geo/, accessed on 1 October 2022), which was based on the platform of GPL15207 Affymetrix Human Gene Expression Array. This dataset contains 30 serum samples from GIONFH patients and 10 serum samples from non-GIONFH controls. Among them, GIONFH patients were aged (23.07 \u00b1 3.01) years, while non-GIONFH controls were aged (25.02 \u00b1 2.87) years.\n2.2. Ferroptosis-Related Genes Detection",
+          "cos_sim_score": 0.5761061906814575,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9832261",
+          "title": "Screening and identification of potential key biomarkers for glucocorticoid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9832261/",
+          "text": "Through the induction of hormone and endotoxin, rabbit femoral head necrosis was caused. In the experiment later, we fully proved the success of animal model establishment through the diagnostic criteria of magnetic resonance and pathological examination. In the experimental group, we took four New Zealand white rabbits at different time points of the second, fourth and eighth weeks after hormone use for MRI examination, and dissect their femoral head specimens for pathological examination and gene detection. Through the experiment, we were pleased to find that the quantitative expression of the four core genes, compared with the blank control group, in the animal samples of steroid-induced necrosis of the femoral head, the expression of ASXL1 and BNP3L is reduced, while the expression of FCGR2A and TYROBP is increased and hypolipidemic drugs can play a certain role in prevention and treatment of steroid-induced necrosis of femoral head in model animals. This result not only confirms that the core genes screened in the earlier stage do have an important relationship with the research purpose, and it is very important for early diagnosis with steroid-induced necrosis of femoral head.\nThe prevalence of GIONFH is increasing, and people are diagnosed with it at a much earlier age. With the loss of function of the hip joint, it has brought great harm to the physical and mental health of patients [57, 58]. We hope to find the key biomarkers of pathogenicity through bioinformatics analysis and microarray technology at genome level, so as to detect the biomarkers for early diagnosis of GIONFH or to find therapeutic targets for early prevention or effective treatment to avoid further harm.\nIn this study, we aimed to screen and identify DEGs that might be involved the GIONFH, 679 differential genes were screened using the public gene expression comprehensive dataset. These 18 genes might be associated with the occurrence of GIONFH. The animal model was successfully established, the expression of genes preliminarily confirmed the results of gene microarray analysis. We speculated that the expression of ASXL1, BNIP3L, FCGR2A and TYROBP were significantly associated with GIONFH, which was expected to become a new perspective for the study of the pathogenesis of GIONFH.",
+          "cos_sim_score": 0.5367642641067505,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9832261",
+          "title": "Screening and identification of potential key biomarkers for glucocorticoid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9832261/",
+          "text": "Pathological examination\nAfter the femoral heads were fixed with 4% paraformaldehyde for 24\u00a0h, they were washed with 0.2\u00a0M PBS (pH 7.4) again and then decalcified in 10% ethylene diamine tetraacetic acid (EDTA) and neutralized with sodium sulphate buffer for approximately 30\u00a0days. After decalcification, the tissues were embedded in paraffin, cut into thick sections of 5\u00a0mm, and stained with hematoxylin and eosin. The osteonecrosis of the femoral head in H&E staining specimens was observed under a microscope, and the microphotos were taken. Leica Co. W550CW signal acquisition and analysis system (Weztlar, Germany) was used for observation, analysis and evaluation.\nReal-time PCR\nTotal RNA was extracted using rnaiso plus (Takara bio, Japan) according to the manufacturer's instructions. The RNA concentration was evaluated by A260/A280 measurement, then reverse transcription was performed, and the reverse transcription product was amplified by qPCR Expression of BNIP3L, ASXL1, FCGR2A and TYROBP were analyzed using SYBR premix Ex TaqTM II (Takara bio, Japan) on ABI 7500 rapid real-time PCR system (applied biological systems, USA). Obtain the cycle threshold (CT) value and use 2-\u0394\u0394 the relative expression of each target gene was calculated by CT method, and the data were normalized to GAPDH expression. The primer sequence is shown in Table 1.Table 1Primer sequence informationGenePrimerSequence (5\u2032\u20133\u2032)BNIP3LForwardATGTGGAAATGCACACGAGCReverseGGAAGTGGAACTCCTTGGGTASXL1ForwardGAGGCTAAGACTGACTCCGCReverseCCACAGTCTCCTGAGGCAAGFCGR2AForwardCAATTCTGCTGCTGTTGGCTTReverseGTCAGGGTCACCGAGTCGTCTYROBPForwardACGGTGGTGTCCAGTCGTATReverseGATGAGCAGGGTCAACACCAG\nTable 1\nPrimer sequence information\nStatistical analysis\nQuantitative data are presented as mean\u2009\u00b1\u2009standard deviation (SD). Hardy\u2013Weinberg genetic balance method to test population representativeness, the phenotypic differences between groups were analyzed by paired t-test to estimate the relationship between each genotype and the risk of GIONFH the odds ratio (OR), 95% confidence interval (CI) and P value were calculated. Data were analyzed using SPSS 23.0 software (SPSS, USA). A level of P\u2009<\u20090.05 was considered to be significant.\nResults\nAnalysis of gene arrays\nThrough GEO2R analysis, 679 DEGs were selected including 276 up-regulated genes and 403 down-regulated genes; the volcano plot (Fig.\u00a01A) shows the relationship between fold change and P value in this set of microarray groups. The 10 genes with the highest weights were all down-regulated genes by Cytoscape analysis, which were CD86, FCGR3A, FCGR2B, CYBB, TLR2, TLR4, ITGAX, TLR8, FCGR2A, and TLR1 (Fig.\u00a01B); 9 groups were found by MCODE, and there was a hub gene in each group, of which the up-regulated genes were ASXL1, BNIP3L, C10orf10, EPB41, KLF1, and SLC7A5, and the down-regulated genes were FCGR2A, MS4A6A, and TYROBP (Fig.\u00a02A).\nFig. 1A Volcano diagram, the relationship between fold change and p value, blue represents down-regulation, red represents up-regulation. B Among the 679 differential genes, the top ten genes with the highest weightFig. 2A There were 9 important network modules (down-regulated genes were marked in blue and up-regulated genes were marked in red), and each module had a core gene (yellow). B The co-expression gene network (18 gene) also showed the correlation between the 9 core gene\nFig. 1\nA Volcano diagram, the relationship between fold change and p value, blue represents down-regulation, red represents up-regulation. B Among the 679 differential genes, the top ten genes with the highest weight\nFig. 2",
+          "cos_sim_score": 0.4969967007637024,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9962586",
+          "title": "Identification and Validation of Potential Ferroptosis-Related Genes in Glucocorticoid-Induced Osteonecrosis of the Femoral Head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9962586/",
+          "text": "3.4. Validation of the Hub Genes\nTo validate the reliability of the dataset GSE123568, the expression levels of hub genes were further identified in the dataset GSE10311. Consistent with the results in the dataset GSE123568, the expression levels of TLR4, TXNIP and MAP3K5 were significantly increased in the dataset GSE10311. The expression level of CYBB was increased but without significance. The expression levels of SNCA, MAPK1 and SLC2A1 were all decreased but without significance (Figure 5).\n4. Discussion\nGIONFH is a metabolic disease caused by the high-dose administration of glucocorticoids, leading tonecrosis ofbone cells and the bone marrow. It is a challenging disorder characterized by femoral head collapse and subsequent dysfunction of the hip joint, which severely decreases the quality of life. It is estimated that 20,000 to 30,000 new patientsare diagnosed with osteonecrosis in the United States [15], and 100,000 new cases annuallyinSouth Korea [16]. The incidence of NONFH is high in young and middle-aged adults. Its morbidity has been rising partly due to the increasing prevalence of many associated diseases and/or risk factors, as well as the raised awareness of this condition. Total hip arthroplasty (THA)is currently the most widely used surgical procedure for ONFH treatment [17]; however, in young patients with indications for THA, the possibility of frequent revisions at short intervals and future revisions could be challenging [18]. GIONFH is one of the world\u2019s public health problems that have attracted the widespread attention of society. In spite of many pathophysiological mechanisms for GIONFH being proposed, such as vascular insufficiency, osteocyte apoptosis, bone fragility, and fat embolism, the exact pathogenic mechanism remains unknown. The term iron ptosis, created in 2012, describes a form of regulatory cell death induced by small molecules of erastin, which inhibits the cysteine-glutamate reverse transporter and leads to the consumption of glutathione. In recent years, ferroptosis has gained a great deal of attention as iron-related regulated cell death. Accumulating evidence indicates that ferroptosis plays an important role in the pathogenesis of GIONFH. Experimental data on the cell model of GIONFH demonstrated that Dex could induce ferroptosis [14]. The involvement of iron metabolism in bone growth and lipid peroxidation in femoral head osteonecrosis suggests that ferroptosis is involved in this pathogenesis of GIONFH [19]. However, the exact mechanism of ferroptosis in bone homeostasis regulation remains largely unknown, and it is yet unclear whether ferroptosis is a driver or a passenger event in bone homeostasis. Understanding the underlying mechanisms of ferroptosis in GIONFH may give detailed insights into the pathogenesis of GIONFH.\nMicroarray analysis using high-throughput platforms is a promising and efficient tool for the investigation of the molecular mechanisms of disease. To the best of our knowledge, the present study, for the first time, exploredferroptosis-related genes and pathways in GIONFH via bioinformatics analysis. In this study, we identified 27 ferroptosis-related DEGs associated with GIONFH based on the intersection of DEGs from the serumexpression profile dataset of GIONFH compared with controls. Of these 27 genes, 12 were up-regulated, and 15 were down-regulated. Someof these genes involved in GIONFH have been previously studied. For example, Lin et al. [20] demonstrated that MAPK1 was down-regulated in blood samples of GIONFH patientscompared with healthy controls. Li et al. [21] found that TLR4 was elevated in serum samples of GIONFH patientscompared with non-GIONFHs. Chen et al. [22] indicated that the level of PTGS2 was increasingly up-regulated with the progression of this disease. The above literature reports support the evidence that these candidate genes identified here may be associated with the onset and progression of GIONFH.",
+          "cos_sim_score": 0.48146748542785645,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9832261",
+          "title": "Screening and identification of potential key biomarkers for glucocorticoid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9832261/",
+          "text": "We compared and analyzed the correlation between the related proteins expressed by the 18 genes and steroid-induced femoral head necrosis one by one. TYROBP and FCGR2A were associated with osteonecrosis at different sites in the same pathway, among which the mutation of TYROBP-DAP12 encodes membrane receptor component cells in natural killer cells and myeloid cells, which has been confirmed by Juha Paloneva et al. [46], meaning TYROBP-mediated signaling pathway played an vital role in human bone tissue. Another study by Juha Paloneva and her team [47] also demonstrated an important role for the DAP12-TREM2 signaling complex in the differentiation and function of osteoclasts. This undoubtedly highlights the importance of the high expression of TYROBP in the rabbit GIONFH model tissue. FCGR2A acts as an Fc region-binding receptor of immunoglobulin \u03b3 and has been found to be associated with many inflammatory diseases [48]. FcgammaRIIa (Fc\u03b3RII) is a multivalent IgG receptor expressed primarily by myeloid cells, and its binding to lipid rafts (microdomains rich in cholesterol and sphingolipids) is critical for efficient signaling of the pathway [49]. Yang et al. [50] found in the study of myeloma that hepatocytes increase the secretion of CRP (C-reactive protein) in response to myeloma-derived cytokines, and the binding of CRP to FCGR2 on the surface of myeloma cells activates myeloma cells to promote osteoclastogenesis and bone destruction in vivo. It has also been shown that aggregation of FcgammaR on human bone marrow cells leads to tyrosine phosphorylation of inositol polyphosphate containing SHIP-2 (SRC homology 2 domain), which reveals a new regulatory role of the expression and function of inositol phosphatase SHIP-2 on FcgammaR mediated activation of human bone marrow cells [51]. These studies suggested that the FCGR2A we screened out might be highly associated with GIONFH and thus needs further study and validation. By consulting the literature, we could not find that the BNIP3L and ASXL1 were directly related to the occurrence of osteonecrosis. However, the protein encoded by BNIP3L/NIX (NIX named Bcl-2/E1B19 kDa-interacting protein 3-like, which is based on 56% homology with BNIP3) is itself a pro-apoptotic protein. BNIP3L/NIX can not be detected in normal tissues, and they were found in a variety of organelle cultures in hypoxia-induced experiments [52, 53]. The Bcl-2 gene family of hypoxia-induced NIX is expressed during erythropoiesis, and the researchers found that NIX is highly regulated during erythroid end-stage maturation [54]. This shows that NIX associated with BNIP3L can cause erythropenia under hypoxic conditions, which coincides with the ischemia and hypoxia that cause osteonecrosis of the femoral head. ASXL1 belongs to an oncogene with unstable genome and recent studies have shown that mutations in ASXL1 are found in hematopoietic cells of various myeloid tumors such as myelodysplastic syndrome and chronic myelomonocytic leukemia [55, 56]. Our bold guess here is: are patients with mutations in ASXL1 more likely to develop GIONFH? While more evidence is needed. Therefore, we selected these four core genes with the highest correlation to GIONFH as research targets.",
+          "cos_sim_score": 0.4631767272949219,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

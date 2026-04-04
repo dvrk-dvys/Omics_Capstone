@@ -1,0 +1,191 @@
+{
+  "rf_rank": 5,
+  "probe_id": "11741035_a_at",
+  "gene_symbol": "RPS6KA1",
+  "score": 0.86,
+  "rf_n_nodes": 7,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.7602,
+  "log_fc": 0.7602,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11741035_a_at",
+  "max_score": 0.86,
+  "mean_abs_fold_change": 0.7602,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:18:28",
+  "interpretation": "RPS6KA1 encodes a serine/threonine protein kinase that plays a critical role in cell signaling pathways, particularly those involving the mitogen-activated protein kinase (MAPK) pathway. This kinase is involved in regulating cellular processes such as proliferation, survival, and differentiation, which are crucial in the context of bone health and osteonecrosis. Although direct evidence linking RPS6KA1 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) is lacking, its involvement in cellular stress responses and apoptosis regulation suggests a potential role in the pathophysiology of SONFH. The retrieved evidence primarily supports its general biological functions rather than a specific association with SONFH, leading to a lower confidence in its potential as a biomarker. Therefore, while RPS6KA1 may have relevance in the broader context of bone disease, its utility as an early-detection biomarker for SONFH remains uncertain.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "RPS6KA1 is implicated in cellular processes that may contribute to the mechanisms underlying Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "RPS6KA1 (Q15418). https://www.uniprot.org/uniprotkb/Q15418",
+    "RPS6KA1 (Q15418-3). https://www.uniprot.org/uniprotkb/Q15418-3",
+    "RPS6KA1 (Q15418-2). https://www.uniprot.org/uniprotkb/Q15418-2",
+    "RPS6KA1 \u2014 RPS6KA1. https://platform.opentargets.org/target/ENSG00000117676",
+    "RPS6KA1 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000117676/associations",
+    "RPS6KA1 \u2194 type 2 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000117676/associations",
+    "RPS6KA1 \u2194 response to statin. https://platform.opentargets.org/target/ENSG00000117676/associations",
+    "RPS6KA1 \u2194 bone disease. https://platform.opentargets.org/target/ENSG00000117676/associations",
+    "RPS6KA1 \u2014 ribosomal protein S6 kinase A1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TP53 \u2014 tumor protein p53 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ESR1 \u2014 estrogen receptor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "STAT3 \u2014 signal transducer and activator of transcription 3 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 6326,
+    "completion_tokens": 326,
+    "total_tokens": 6652,
+    "estimated_cost_usd": 0.001144
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q15418",
+          "title": "RPS6KA1 (Q15418)",
+          "url": "https://www.uniprot.org/uniprotkb/Q15418",
+          "text": "Protein: Ribosomal protein S6 kinase alpha-1\nFunction: Serine/threonine-protein kinase that acts downstream of ERK (MAPK1/ERK2 and MAPK3/ERK1) signaling and mediates mitogenic and stress-induced activation of the transcription factors CREB1, ETV1/ER81 and NR4A1/NUR77, regulates translation through RPS6 and EIF4B phosphorylation, and mediates cellular proliferation, survival, and differentiation by modulating mTOR signaling and repressing pro-apoptotic function of BAD and DAPK1 (PubMed:10679322, PubMed:12213813, PubMed:15117958, PubMed:16223362, PubMed:17360704, PubMed:18722121, PubMed:26158630, PubMed:35772404, PubMed:9430688). In fibroblast, is required for EGF-stimulated phosphorylation of CREB1, which results in the subsequent transcriptional activation of several immediate-early genes (PubMed:18508509, PubMed:18813292). In response to mitogenic stimulation (EGF and PMA), phosphorylates and activates NR4A1/NUR77 and ETV1/ER81 transcription factors and the cofactor CREBBP (PubMed:12213813, PubMed:16223362). Upon insulin-derived signal, acts indirectly on the transcription regulation of several genes by phosphorylating GSK3B at 'Ser-9' and inhibiting its activity (PubMed:18508509, PubMed:18813292). Phosphorylates RPS6 in response to serum or EGF via an mTOR-independent mechanism and promotes translation initiation by facilitating assembly of the pre-initiation complex (PubMed:17360704). In response to insulin, phosphorylates EIF4B, enhancing EIF4B affinity for the EIF3 complex and stimulating cap-dependent translation (PubMed:16763566). Is involved in the mTOR nutrient-sensing pathway by directly phosphorylating TSC2 at 'Ser-1798', which potently inhibits TSC2 ability to suppress mTOR signaling, and mediates phosphorylation of RPTOR, which regulates mTORC1 activity and may promote rapamycin-sensitive signaling independently of the PI3K/AKT pathway (PubMed:15342917). Also involved in feedback regulation of mTORC1 and mTORC2 by phosphorylating DEPTOR (PubMed:22017876). Mediates cell survival by phosphorylating the pro-apoptotic proteins BAD and DAPK1 and suppressing their pro-apoptotic function (PubMed:10679322, PubMed:16213824). Promotes the survival of hepatic stellate cells by phosphorylating CEBPB in response to the hepatotoxin carbon tetrachloride (CCl4) (PubMed:11684016). Mediates induction of hepatocyte prolifration by TGFA through phosphorylation of CEBPB (PubMed:18508509, PubMed:18813292). Is involved in cell cycle regulation by phosphorylating the CDK inhibitor CDKN1B, which promotes CDKN1B association with 14-3-3 proteins and prevents its translocation to the nucleus and inhibition of G1 progression (PubMed:18508509, PubMed:18813292). Phosphorylates EPHA2 at 'Ser-897', the RPS6KA-EPHA2 signaling pathway controls cell migration (PubMed:26158630). In response to mTORC1 activation, phosphorylates EIF4B at 'Ser-406' and 'Ser-422' which stimulates bicarbonate cotransporter SLC4A7 mRNA translation, increasing SLC4A7 protein abundance and function (PubMed:35772404) (Microbial infection) Promotes the late transcription and translation of viral lytic genes during Kaposi's sarcoma-associated herpesvirus/HHV-8 infection, when constitutively activated",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q15418-3",
+          "title": "RPS6KA1 (Q15418-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q15418-3",
+          "text": "Protein: Isoform 3 of Ribosomal protein S6 kinase alpha-1",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q15418-2",
+          "title": "RPS6KA1 (Q15418-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q15418-2",
+          "text": "Protein: Isoform 2 of Ribosomal protein S6 kinase alpha-1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000117676::function",
+          "title": "RPS6KA1 \u2014 RPS6KA1",
+          "url": "https://platform.opentargets.org/target/ENSG00000117676",
+          "text": "Function: Serine/threonine-protein kinase that acts downstream of ERK (MAPK1/ERK2 and MAPK3/ERK1) signaling and mediates mitogenic and stress-induced activation of the transcription factors CREB1, ETV1/ER81 and NR4A1/NUR77, regulates translation through RPS6 and EIF4B phosphorylation, and mediates cellular proliferation, survival, and differentiation by modulating mTOR signaling and repressing pro- apoptotic function of BAD and DAPK1 (PubMed:10679322, PubMed:12213813, PubMed:15117958, PubMed:16223362, PubMed:17360704, PubMed:18722121, PubMed:26158630, PubMed:35772404, PubMed:9430688). In fibroblast, is required for EGF-stimulated phosphorylation of CREB1, which results in the subsequent transcriptional activation of several immediate-early genes (PubMed:18508509, PubMed:18813292). In response to mitogenic stimulation (EGF and PMA), phosphorylates and activates NR4A1/NUR77 and ETV1/ER81 transcription factors and the cofactor CREBBP (PubMed:12213813, PubMed:16223362). Upon insulin-derived signal, acts indirectly on the transcription regulation of several genes by phosphorylating GSK3B at 'Ser-9' and inhibiting its activity (PubMed:18508509, PubMed:18813292). Phosphorylates RPS6 in response to serum or EGF via an mTOR-independent mechanism and promotes translation initiation by facilitating assembly of the pre-initiation complex (PubMed:17360704). In response to insulin, phosphorylates EIF4B, enhancing EIF4B affinity for the EIF3 complex and stimulating cap- dependent translation (PubMed:16763566). Is involved in the mTOR nutrient-sensing pathway by directly phosphorylating TSC2 at 'Ser- 1798', which potently inhibits TSC2 ability to suppress mTOR signaling, and mediates phosphorylation of RPTOR, which regulates mTORC1 activity and may promote rapamycin-sensitive signaling independently of the PI3K/AKT pathway (PubMed:15342917). Also involved in feedback regulation of mTORC1 and mTORC2 by phosphorylating DEPTOR (PubMed:22017876). Mediates cell survival by phosphorylating the pro- apoptotic proteins BAD and DAPK1 and suppressing their pro-apoptotic function (PubMed:10679322, PubMed:16213824). Promotes the survival of hepatic stellate cells by phosphorylating CEBPB in response to the hepatotoxin carbon tetrachloride (CCl4) (PubMed:11684016). Mediates induction of hepatocyte prolifration by TGFA through phosphorylation of CEBPB (PubMed:18508509, PubMed:18813292). Is involved in cell cycle regulation by phosphorylating the CDK inhibitor CDKN1B, which promotes CDKN1B association with 14-3-3 proteins and prevents its translocation to the nucleus and inhibition of G1 progression (PubMed:18508509, PubMed:18813292). Phosphorylates EPHA2 at 'Ser-897', the RPS6KA-EPHA2 signaling pathway controls cell migration (PubMed:26158630). In response to mTORC1 activation, phosphorylates EIF4B at 'Ser-406' and 'Ser-422' which stimulates bicarbonate cotransporter SLC4A7 mRNA translation, increasing SLC4A7 protein abundance and function (PubMed:35772404).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000117676::EFO_0005772",
+          "title": "RPS6KA1 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000117676/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.490",
+          "cos_sim_score": 0.48990940598712673,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000117676::MONDO_0005148",
+          "title": "RPS6KA1 \u2194 type 2 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000117676/associations",
+          "text": "Disease: type 2 diabetes mellitus\nDescription: A type of diabetes mellitus that is characterized by insulin resistance or desensitization and increased blood glucose levels. This is a chronic disease that can develop gradually over the life of a patient and can be linked to both environmental factors and heredity.\nAssociation score: 0.256",
+          "cos_sim_score": 0.25567786448346363,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000117676::GO_0036273",
+          "title": "RPS6KA1 \u2194 response to statin",
+          "url": "https://platform.opentargets.org/target/ENSG00000117676/associations",
+          "text": "Disease: response to statin\nDescription: Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a statin stimulus. Statins are organooxygen compounds whose structure is related to compactin (mevastatin) and which may be used as an anticholesteremic drug due its EC:1.1.1.34/EC:1.1.1.88 (hydroxymethylglutaryl-CoA reductase) inhibitory properties.\nAssociation score: 0.250",
+          "cos_sim_score": 0.24970480064908981,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000117676::EFO_0004260",
+          "title": "RPS6KA1 \u2194 bone disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000117676/associations",
+          "text": "Disease: bone disease\nDescription: Diseases of bones.\nAssociation score: 0.243",
+          "cos_sim_score": 0.24340680219366334,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "RPS6KA1 \u2014 ribosomal protein S6 kinase A1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RPS6KA1\nGene name: ribosomal protein S6 kinase A1\nAliases / synonyms: HU-1, MAPKAPK1, MAPKAPK1A, RSK, RSK1, p90Rsk\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the RSK (ribosomal S6 kinase) family of serine/threonine kinases. This kinase contains 2 nonidentical kinase catalytic domains and phosphorylates various substrates, including members of the mitogen-activated kinase (MAPK) signalling pathway. The activity of this protein has been implicated in controlling cell growth and differentiation. Alternate transcriptional splice variants, encoding different isoforms, have been characterized. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RPS6KA1",
+          "aliases": "HU-1, MAPKAPK1, MAPKAPK1A, RSK, RSK1, p90Rsk",
+          "gene_description": "ribosomal protein S6 kinase A1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TP53 \u2014 tumor protein p53",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TP53\nGene name: tumor protein p53\nAliases / synonyms: BCC7, BMFS5, LFS1, P53, TRP53\nOrganism: Homo sapiens\nGene summary: This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TP53",
+          "aliases": "BCC7, BMFS5, LFS1, P53, TRP53",
+          "gene_description": "tumor protein p53"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ESR1 \u2014 estrogen receptor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ESR1\nGene name: estrogen receptor 1\nAliases / synonyms: ER, ESR, ESRA, ESTRR, Era, NR3A1\nOrganism: Homo sapiens\nGene summary: This gene encodes an estrogen receptor and ligand-activated transcription factor. The canonical protein contains an N-terminal ligand-independent transactivation domain, a central DNA binding domain, a hinge domain, and a C-terminal ligand-dependent transactivation domain. The protein localizes to the nucleus where it may form either a homodimer or a heterodimer with estrogen receptor 2. The protein encoded by this gene regulates the transcription of many estrogen-inducible genes that play a role in growth, metabolism, sexual development, gestation, and other reproductive functions and is expressed in many non-reproductive tissues. The receptor encoded by this gene plays a key role in breast cancer, endometrial cancer, and osteoporosis. This gene is reported to have dozens of transcript va...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ESR1",
+          "aliases": "ER, ESR, ESRA, ESTRR, Era, NR3A1",
+          "gene_description": "estrogen receptor 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "STAT3 \u2014 signal transducer and activator of transcription 3",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: STAT3\nGene name: signal transducer and activator of transcription 3\nAliases / synonyms: ADMIO, ADMIO1, APRF, HIES\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the STAT protein family. In response to cytokines and growth factors, STAT family members are phosphorylated by the receptor associated kinases, and then form homo- or heterodimers that translocate to the cell nucleus where they act as transcription activators. This protein is activated through phosphorylation in response to various cytokines and growth factors including IFNs, EGF, IL5, IL6, HGF, LIF and BMP2. This protein mediates the expression of a variety of genes in response to cell stimuli, and thus plays a key role in many cellular processes such as cell growth and apoptosis. The small GTPase Rac1 has been shown to bind and regulate the activity of this protein. PIAS3 protein is a specific inhibitor of this protein. This gene also play...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "STAT3",
+          "aliases": "ADMIO, ADMIO1, APRF, HIES",
+          "gene_description": "signal transducer and activator of transcription 3"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

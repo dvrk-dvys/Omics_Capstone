@@ -1,0 +1,217 @@
+{
+  "probe_id": "11717208_at",
+  "gene_symbol": "RXRB",
+  "score": 1.0,
+  "SD_TestAUC": 0.0202860206483394,
+  "abs_fold_change": 0.5354,
+  "probe_count": 1,
+  "probe_ids": "11717208_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.5354,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T18:41:48",
+  "interpretation": "RXRB encodes the retinoic acid receptor RXR-beta, which is involved in regulating gene expression in response to retinoic acid. This receptor forms heterodimers with other nuclear receptors, influencing various biological processes, including those related to bone metabolism and inflammation. Although there is no direct evidence linking RXRB to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in mediating the effects of retinoic acid suggests a potential involvement in the pathophysiology of SONFH, particularly in the context of steroid-induced changes in bone health. The evidence retrieved is limited and does not establish a direct connection to SONFH, leading to a lower confidence in its relevance as a biomarker. Therefore, while RXRB may have biological implications in bone metabolism, its potential as a clinical biomarker for early detection of SONFH is weak.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "RXRB may play a role in the biological processes relevant to Steroid-Induced Osteonecrosis of the Femoral Head, but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "RXRB (P28702). https://www.uniprot.org/uniprotkb/P28702",
+    "RXRB (P28702-3). https://www.uniprot.org/uniprotkb/P28702-3",
+    "RXRB \u2014 RXRB. https://platform.opentargets.org/target/ENSG00000204231",
+    "RXRB \u2194 psoriasis. https://platform.opentargets.org/target/ENSG00000204231/associations",
+    "RXRB \u2194 Cutaneous T-cell lymphoma. https://platform.opentargets.org/target/ENSG00000204231/associations",
+    "RXRB \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000204231/associations",
+    "RXRB \u2194 Eczematoid dermatitis. https://platform.opentargets.org/target/ENSG00000204231/associations",
+    "RXRB \u2014 retinoid X receptor beta (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "VDR \u2014 vitamin D receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "PPARG \u2014 peroxisome proliferator activated receptor gamma (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "NR3C1 \u2014 nuclear receptor subfamily 3 group C member 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "PPARA \u2014 peroxisome proliferator activated receptor alpha (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "In silico Methods for Identification of Potential Therapeutic Targets (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8616973/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 7450,
+    "completion_tokens": 319,
+    "total_tokens": 7769,
+    "estimated_cost_usd": 0.001309
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P28702",
+          "title": "RXRB (P28702)",
+          "url": "https://www.uniprot.org/uniprotkb/P28702",
+          "text": "Protein: Retinoic acid receptor RXR-beta\nFunction: Receptor for retinoic acid. Retinoic acid receptors bind as heterodimers to their target response elements in response to their ligands, all-trans or 9-cis retinoic acid, and regulate gene expression in various biological processes. The RAR/RXR heterodimers bind to the retinoic acid response elements (RARE)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P28702-3",
+          "title": "RXRB (P28702-3)",
+          "url": "https://www.uniprot.org/uniprotkb/P28702-3",
+          "text": "Protein: Isoform 2 of Retinoic acid receptor RXR-beta",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000204231::function",
+          "title": "RXRB \u2014 RXRB",
+          "url": "https://platform.opentargets.org/target/ENSG00000204231",
+          "text": "Function: Receptor for retinoic acid. Retinoic acid receptors bind as heterodimers to their target response elements in response to their ligands, all-trans or 9-cis retinoic acid, and regulate gene expression in various biological processes. The RAR/RXR heterodimers bind to the retinoic acid response elements (RARE). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000204231::EFO_0000676",
+          "title": "RXRB \u2194 psoriasis",
+          "url": "https://platform.opentargets.org/target/ENSG00000204231/associations",
+          "text": "Disease: psoriasis\nDescription: An autoimmune condition characterized by red, well-delineated plaques with silvery scales that are usually on the extensor surfaces and scalp. They can occasionally present with these manifestations: pustules; erythema and scaling in intertriginous areas, and erythroderma, that are often distributed on extensor surfaces and scalp.\nAssociation score: 0.590",
+          "cos_sim_score": 0.5895136551916702,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000204231::EFO_0002913",
+          "title": "RXRB \u2194 Cutaneous T-cell lymphoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000204231/associations",
+          "text": "Disease: Cutaneous T-cell lymphoma\nDescription: A T-cell non-Hodgkin lymphoma arising from the skin. Representative examples include mycosis fungoides and primary cutaneous anaplastic large cell lymphoma.\nAssociation score: 0.529",
+          "cos_sim_score": 0.5293820774075371,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000204231::EFO_0005772",
+          "title": "RXRB \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000204231/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.526",
+          "cos_sim_score": 0.5261379875719714,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000204231::HP_0000964",
+          "title": "RXRB \u2194 Eczematoid dermatitis",
+          "url": "https://platform.opentargets.org/target/ENSG00000204231/associations",
+          "text": "Disease: Eczematoid dermatitis\nDescription: Eczema is a form of dermatitis that is characterized by scaly, pruritic, erythematous lesions located on flexural surfaces.\nAssociation score: 0.497",
+          "cos_sim_score": 0.4967050585891646,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "RXRB \u2014 retinoid X receptor beta",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RXRB\nGene name: retinoid X receptor beta\nAliases / synonyms: DAUDI6, H-2RIIBP, NR2B2, RCoR-1, RXR-beta, RXRbeta\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the retinoid X receptor (RXR) family of nuclear receptors which are involved in mediating the effects of retinoic acid (RA). The encoded protein forms homodimers with the retinoic acid, thyroid hormone, and vitamin D receptors, increasing both DNA binding and transcriptional function on their respective response elements. This gene lies within the major histocompatibility complex (MHC) class II region on chromosome 6. Alternatively spliced transcript variants encoding multiple isoforms have been observed for this gene. [provided by RefSeq, Jul 2012]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RXRB",
+          "aliases": "DAUDI6, H-2RIIBP, NR2B2, RCoR-1, RXR-beta, RXRbeta",
+          "gene_description": "retinoid X receptor beta"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "VDR \u2014 vitamin D receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: VDR\nGene name: vitamin D receptor\nAliases / synonyms: NR1I1, PPP1R163\nOrganism: Homo sapiens\nGene summary: This gene encodes vitamin D3 receptor, which is a member of the nuclear hormone receptor superfamily of ligand-inducible transcription factors. This receptor also functions as a receptor for the secondary bile acid, lithocholic acid. Downstream targets of vitamin D3 receptor are principally involved in mineral metabolism, though this receptor regulates a variety of other metabolic pathways, such as those involved in immune response and cancer. Mutations in this gene are associated with type II vitamin D-resistant rickets. A single nucleotide polymorphism in the initiation codon results in an alternate translation start site three codons downstream. Alternatively spliced transcript variants encoding different isoforms have been described for this gene. A recent study provided evidence for t...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "VDR",
+          "aliases": "NR1I1, PPP1R163",
+          "gene_description": "vitamin D receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "PPARG \u2014 peroxisome proliferator activated receptor gamma",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PPARG\nGene name: peroxisome proliferator activated receptor gamma\nAliases / synonyms: CIMT1, FPLD3, GLM1, NR1C3, PPARG1, PPARG2, PPARG5, PPARgamma\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the peroxisome proliferator-activated receptor (PPAR) subfamily of nuclear receptors. PPARs form heterodimers with retinoid X receptors (RXRs) and these heterodimers regulate transcription of various genes. Three subtypes of PPARs are known: PPAR-alpha, PPAR-delta, and PPAR-gamma. The protein encoded by this gene is PPAR-gamma and is a regulator of adipocyte differentiation. Additionally, PPAR-gamma has been implicated in the pathology of numerous diseases including obesity, diabetes, atherosclerosis and cancer. Alternatively spliced transcript variants that encode different isoforms have been described. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PPARG",
+          "aliases": "CIMT1, FPLD3, GLM1, NR1C3, PPARG1, PPARG2, PPARG5, PPARgamma",
+          "gene_description": "peroxisome proliferator activated receptor gamma"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "NR3C1 \u2014 nuclear receptor subfamily 3 group C member 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: NR3C1\nGene name: nuclear receptor subfamily 3 group C member 1\nAliases / synonyms: GCCR, GCR, GCRST, GR, GRL\nOrganism: Homo sapiens\nGene summary: This gene encodes glucocorticoid receptor, which can function both as a transcription factor that binds to glucocorticoid response elements in the promoters of glucocorticoid responsive genes to activate their transcription, and as a regulator of other transcription factors. This receptor is typically found in the cytoplasm, but upon ligand binding, is transported into the nucleus. It is involved in inflammatory responses, cellular proliferation, and differentiation in target tissues. Mutations in this gene are associated with generalized glucocorticoid resistance. Alternative splicing of this gene results in transcript variants encoding either the same or different isoforms. Additional isoforms resulting from the use of alternate in-frame translation initiation sites have also been descri...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "NR3C1",
+          "aliases": "GCCR, GCR, GCRST, GR, GRL",
+          "gene_description": "nuclear receptor subfamily 3 group C member 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "PPARA \u2014 peroxisome proliferator activated receptor alpha",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PPARA\nGene name: peroxisome proliferator activated receptor alpha\nAliases / synonyms: NR1C1, PPAR, PPAR-alpha, PPARalpha, hPPAR\nOrganism: Homo sapiens\nGene summary: Peroxisome proliferators include hypolipidemic drugs, herbicides, leukotriene antagonists, and plasticizers; this term arises because they induce an increase in the size and number of peroxisomes. Peroxisomes are subcellular organelles found in plants and animals that contain enzymes for respiration and for cholesterol and lipid metabolism. The action of peroxisome proliferators is thought to be mediated via specific receptors, called PPARs, which belong to the steroid hormone receptor superfamily. PPARs affect the expression of target genes involved in cell proliferation, cell differentiation and in immune and inflammation responses. Three closely related subtypes (alpha, beta/delta, and gamma) have been identified. This gene encodes the subtype PPAR-alpha, which is a nuclear transcriptio...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PPARA",
+          "aliases": "NR1C1, PPAR, PPAR-alpha, PPARalpha, hPPAR",
+          "gene_description": "peroxisome proliferator activated receptor alpha"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::8616973",
+          "title": "In silico Methods for Identification of Potential Therapeutic Targets",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8616973/",
+          "text": "PRKACA, miR-214-3p, miR-587, miR-4472, miR-4422[134]GEO, DAVID, STRINGCytoscapePPINSteroid-induced osteonecrosis of the femoral headCXCR1, FPR1, TYROBP, MAPK1[135]GEO, DAVID, STRINGCytoscapePPINPulmonary arterial hypertensionCCL5, CXCL12, VCAM1, CXCR1, SPP1[136]GEO, STRINGCytoscapePPINOral squamous cell carcinomaAPP, EHMT1, ACACB, PCNA, PLAU, FST, HMGA2, LAMC2, SPP1[137]PATRIC, ARDB, CARD, NDARO, STRINGCytoscapeGINPseudomonas aeruginosa PA01oprJ, oprM, oprN, ampC, gyrA, mexA, oprD, mexB, nfxB[31]NCBI genome, PATRIC, ARDB, CARD, NDARO, STRING, DAVID, TTDCytoscapeGINProteus mirabilisrpoB, tufB, rpsl, fusA, rpoC, rpoA[138]ARDB, STRINGCytoscapeGINEnterococcus faecalis V583MraY, PbpC, MurE, MurG, MurD[139]ARDB, STRINGCytoscapeGINSalmonella enterica serovar Typhimurium CT18tolC, macB, acrA, acrB, mdfA[140]STRINGCytoscapeGINKlebsiella pneumoniaegyrA, parC, gyrB, parE, recA[141]TCGA, miRCancer, miR2Disease, HMDD, GeneCards, HPAD\\MMINTumorigenesisASPG, AQP2, CNOT8, CTPS1, IFNAR2, MOCS2, PRSS37, VCP[32]PPIN protein\u2013protein interaction network, GIN gene interaction network, MMIN miRNA\u2013mRNA interaction network",
+          "cos_sim_score": 0.43147557973861694,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8616973",
+          "title": "In silico Methods for Identification of Potential Therapeutic Targets",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8616973/",
+          "text": "FGB, F13A1, CASR[30]GEO, STRING, GEO, DAVIDGephiPPINJapanese encephalitis virusSTAT1[121]STRING, KEGG, GOCytoscapePPINWound healingRela, Nfkb1, Tnfrsf1a[122]CellMiner, GEO, HPRD, miRTarBase, TarBase, starBase, SM2miRCFinder, CytoscapePPINOvarian cancermiR-24-3p, miR-192-5p, miR-139-5p, miR-155-5p[123]HPRD, BioGRID, MINT, IntAct, STRING, GEO, CRGCytoscapePPINRheumatoid arthritisJUN, SYK, LCK[124]Google Scholar, PubMed\\PPINSystemic sclerosisCTGF, HCK, LYN, PDGFRB[125]GEO, STRING, JASPAR, TarBase, miRTarBaseCytoscape, NetworkAnalystPPINAlzheimer\u2019s diseasePPARG[126]DIP, KEGG, DEG, DrugBankCytoscape, GephiPPINStreptococcus suisGlnQ3, GlnQ4, GlnQ1, GlnQ5, PstB1, SSU05_1769[127]STRING, UniProt, Pfam\\PPINSARS-CoV-2MIB1, TBK1, VPS11, AP3B1, GORASP1, GOLGA2[128]STRINGCytoscapePPINSchizophreniaMAPK1, MAP2K1, CDC42, HSPA1, HSPA8, HRAS, CLTB, SNAP91[129]VirusMINT, IntAct, VirusMenthaCytoscapePPINInfluenza A virusLNX2, MEOX2, TFCP2, PRKRA, DVL2, POLR3F, SNAPC4, GLYR1, ATP6V1G1, PCBP1, EEF1D, DVL3, CREB3[130]GEO, STRING\\PPINPancreatic ductal adenocarcinomaITGAV, ITGA2[131]TCMSP, TCM, BATMAN-TCM, DRUGBANK, UniProt, GeneCards, OMIM, STRING, KEGGCytoscapePPINColorectal cancerAKT1, JUN, CDKN1A, BCL2L1, NCOA1[132]HuRI, HINT, STRINGCytoscapePPINColon adenocarcinoma, glioblastoma multiforme, small cell lung cancerFANCD2, NCOA4, IKBKB, RHOA[133]GEO, miRWalk3, DAVID, STRINGCytoscapePPINBreast cancerMAPK1, PRKACA, miR-214-3p, miR-587, miR-4472, miR-4422[134]GEO, DAVID, STRINGCytoscapePPINSteroid-induced osteonecrosis of the femoral headCXCR1, FPR1, TYROBP, MAPK1[135]GEO, DAVID, STRINGCytoscapePPINPulmonary arterial hypertensionCCL5, CXCL12, VCAM1, CXCR1, SPP1[136]GEO, STRINGCytoscapePPINOral squamous cell carcinomaAPP, EHMT1, ACACB, PCNA, PLAU, FST,",
+          "cos_sim_score": 0.1695820391178131,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8616973",
+          "title": "In silico Methods for Identification of Potential Therapeutic Targets",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8616973/",
+          "text": "standardized ontology for human diseases providing descriptions of human disease terms, phenotype characteristics, and related medical vocabulary disease concepts\u2009>\u200910,500 disease terms and\u2009>\u20097,500 disease terms definedFree2021http://www.disease-ontology.org/[70]TTDA database to provide information about the known and explored therapeutic protein and nucleic acid targets, the targeted disease, pathway information, and the corresponding drugs directed at each of these targets37,316 drugs and 3,419 targetsFree2020http://db.idrblab.net/ttd/[71]GeneCardsProvides comprehensive, user-friendly information on all annotated and predicted human genes42,087 HUGO Gene Nomenclature Committee (HGNC)-approved, 20,916 protein-coding, 219,587 RNA genesFree2020https://www.genecards.org/[72]DEGA database hosting records of currently available essential genomic elements53,885 essential genes and 786 essential non-coding sequencesFree2017http://tubic.tju.edu.cn/deg/[44]NDAROA database of antimicrobial resistance data\u2009>\u2009300,000 pathogen isolatesFree2020https://www.ncbi.nlm.nih.gov/pathogens/antimicrobial-resistance/\\PATRICProvides integrated data and analysis tools to support biomedical research on bacterial infectious diseasesGenome metadata from\u2009>\u200960 fields, three types of protein familiesFree2020https://www.patricbrc.org/[31]",
+          "cos_sim_score": 0.07854637503623962,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8616973",
+          "title": "In silico Methods for Identification of Potential Therapeutic Targets",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8616973/",
+          "text": "Different types of biological networks can be used to predict potential therapeutic targets by network-based methods, such as PPI networks, gene interaction networks and miRNA\u2013mRNA interaction networks. Table 7 lists almost all applications since 2015 of network-based methods to predict potential therapeutic targets, including the databases, software and tools, network types, related pathogens/diseases/processes, and the identified targets. Some of the targets in Table 7 have been verified or used for drug design. Here, we select several examples of previous studies that have used different network types for further description.Table 7Applications of network-based methods for potential therapeutic target identificationDatabasesSoftware and toolsNetwork typesRelated pathogens/diseases/processesPredicted targetsReferencesSTRING, MIIP\\PPINPlasmodium falciparumPF10_0232, PFI1475w, PF13_0228[115]UniProt, STRING, MINTCytoscapePPINSperm\u2013egg interaction defectFN1, EGFR, ITGAV, ITGB3, COL1A1, ITGB5[116]UniProt, STRINGCytoscapePPINCancerSAGE1, SPO11, MAGEC2, FTHL17, DDX53, BAGE2[117]GEO, STITCH, STRING, HPRD, KEGG, SignaLink, OMIM, GAD, FunDO, NHGRI GWAS CatalogPathwayLinker, Cytoscape, KOBASPPINHyperlipidemiaCOTL1, VASP, HHAT[118]HPRD, GEO, GAD, DO, OMIM, DrugBank, GO, KEGG\\PPINPolycystic ovary syndromeESR1, RXRA, NCOA1, NRIP1, ESR2, THRB, RARA, NR0B2, NCOA3, HNF4A, PPARA, PPARG, PPARGC1A, MED1, NR2F1, PNRC2, PGR, ESRRA, ESRRG, RXRB, RARG, VDR[119]GO, Swiss-Prot, STRING, BioGRID, DIP, IntAct, BIND, MINTCytoscapePPINClostridium difficileCD2787, CD0237, CD1214, CD2629, CD2643[120]STITCH, STRING, GEOCytoscapePPINCoronary heart diseaseFGG, SLC9A3, MAPK14, FGF1, FGB, F13A1, CASR[30]GEO, STRING, GEO, DAVIDGephiPPINJapanese encephalitis virusSTAT1[121]STRING, KEGG, GOCytoscapePPINWound healingRela, Nfkb1, Tnfrsf1a[122]CellMiner, GEO, HPRD, miRTarBase, TarBase, starBase, SM2miRCFinder, CytoscapePPINOvarian cancermiR-24-3p, miR-192-5p, miR-139-5p, miR-155-5p[123]HPRD, BioGRID, MINT, IntAct, STRING, GEO,",
+          "cos_sim_score": 0.05058038607239723,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8616973",
+          "title": "In silico Methods for Identification of Potential Therapeutic Targets",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8616973/",
+          "text": "Comparative genomics can be used to understand the molecular mechanism of disease and predict targets for new drug design. For example, Zumla et al. [106] discovered that the sequence homology of the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) genome with SARS-CoV and Middle East respiratory syndrome coronavirus (MERS-CoV) was about 82%, and the homology of structural proteins was over 90%. The high sequence homology revealed their common pathogenic mechanism. Therefore, the authors of the study designed and developed direct-acting antiviral drugs that target highly conserved enzymes in SARS-CoV-2, such as the main protease (MPRO) or 3C-like protease (3CLpro), the papain-like protease (PLpro), non-structural protein 12 (Nsp12), and RNA-dependent RNA polymerase (RdRP). Among them, ganciclovir and maraviroc, the drugs against MPRO, were considered effective for the treatment of coronavirus disease 2019 (COVID-19) [107].\nComparative genomics is used to find potential therapeutic targets for the development of human drugs and animal drugs. Damte et al. [108] selected five unique pathways of Mycoplasma hyopneumoniae strains in KEGG. They then used BLASTp in NCBI to compare the only two protein sequences in the unique pathways with the porcine protein sequences. It was found that the two protein sequences in the unique pathways were not homologous to the porcine protein sequences. Therefore, those essential proteins, which exist in M. hyopneumoniae but not in the host (pig), may be useful in drug design and vaccine production against M. hyopneumoniae. For more examples of comparative genomics used to identify potential targets, readers can refer to the list of references provided in Table 6.\nNetwork-Based Methods",
+          "cos_sim_score": 0.0482405424118042,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

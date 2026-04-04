@@ -1,0 +1,221 @@
+{
+  "probe_id": "11756532_a_at",
+  "gene_symbol": "PIK3CD",
+  "rf_importance": 0.0,
+  "selection_freq": 0.0,
+  "abs_fold_change": 1.1048530333333328,
+  "score": 0.1535,
+  "Median_TestAUC": NaN,
+  "SD_TestAUC": NaN,
+  "probe_count": 1,
+  "probe_ids": "11756532_a_at",
+  "max_score": 0.1535,
+  "mean_abs_fold_change": 1.1049,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T03:03:25",
+  "interpretation": "PIK3CD encodes a catalytic subunit of phosphoinositide 3-kinase (PI3K), which is crucial for various cellular processes including growth, survival, and immune responses. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the PI3K pathway is implicated in the regulation of bone metabolism and the response to steroid treatment, which can lead to osteonecrosis. The retrieved evidence indicates that PIK3CD is differentially expressed in patients with SONFH, suggesting its potential role as a biomarker for early detection of the disease. However, the evidence primarily supports a mechanistic link rather than direct clinical validation as a biomarker, leading to a moderate confidence in its relevance. Thus, while PIK3CD shows promise as a candidate biomarker, further validation in clinical settings is necessary to establish its utility in early diagnosis of SONFH.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 2",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "PIK3CD is implicated in the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head through its role in cellular signaling pathways affected by steroid treatment.",
+  "citations": [
+    "PIK3CD (O00329). https://www.uniprot.org/uniprotkb/O00329",
+    "PIK3CD (O00329-2). https://www.uniprot.org/uniprotkb/O00329-2",
+    "PIK3CD \u2014 PIK3CD. https://platform.opentargets.org/target/ENSG00000171608",
+    "PIK3CD \u2194 activated PI3K-delta syndrome. https://platform.opentargets.org/target/ENSG00000171608/associations",
+    "PIK3CD \u2194 immunodeficiency 14b, autosomal recessive. https://platform.opentargets.org/target/ENSG00000171608/associations",
+    "PIK3CD \u2194 Combined immunodeficiency with facio-oculo-skeletal anomalies. https://platform.opentargets.org/target/ENSG00000171608/associations",
+    "PIK3CD \u2194 combined immunodeficiency with faciooculoskeletal anomalies. https://platform.opentargets.org/target/ENSG00000171608/associations",
+    "PIK3CD \u2014 phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit delta (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TP53 \u2014 tumor protein p53 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KRAS \u2014 KRAS proto-oncogene, GTPase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "AKT1 \u2014 AKT serine/threonine kinase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "SNCA \u2014 synuclein alpha (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Identification and assessment of novel dynamic biomarkers for monitoring non\u2010traumatic osteonecrosis of the femoral head staging (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC10265435/",
+    "Proceedings of the 31st European Paediatric Rheumatology Congress: part 2 (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11384717/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9783,
+    "completion_tokens": 332,
+    "total_tokens": 10115,
+    "estimated_cost_usd": 0.001667
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O00329",
+          "title": "PIK3CD (O00329)",
+          "url": "https://www.uniprot.org/uniprotkb/O00329",
+          "text": "Protein: Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit delta isoform\nFunction: Phosphoinositide-3-kinase (PI3K) phosphorylates phosphatidylinositol (PI) and its phosphorylated derivatives at position 3 of the inositol ring to produce 3-phosphoinositides (PubMed:9235916). Uses ATP and PtdIns(4,5)P2 (phosphatidylinositol 4,5-bisphosphate) to generate phosphatidylinositol 3,4,5-trisphosphate (PIP3) (PubMed:15135396). PIP3 plays a key role by recruiting PH domain-containing proteins to the membrane, including AKT1 and PDPK1, activating signaling cascades involved in cell growth, survival, proliferation, motility and morphology. Mediates immune responses. Plays a role in B-cell development, proliferation, migration, and function. Required for B-cell receptor (BCR) signaling. Mediates B-cell proliferation response to anti-IgM, anti-CD40 and IL4 stimulation. Promotes cytokine production in response to TLR4 and TLR9. Required for antibody class switch mediated by TLR9. Involved in the antigen presentation function of B-cells. Involved in B-cell chemotaxis in response to CXCL13 and sphingosine 1-phosphate (S1P). Required for proliferation, signaling and cytokine production of naive, effector and memory T-cells. Required for T-cell receptor (TCR) signaling. Mediates TCR signaling events at the immune synapse. Activation by TCR leads to antigen-dependent memory T-cell migration and retention to antigenic tissues. Together with PIK3CG participates in T-cell development. Contributes to T-helper cell expansion and differentiation. Required for T-cell migration mediated by homing receptors SELL/CD62L, CCR7 and S1PR1 and antigen dependent recruitment of T-cells. Together with PIK3CG is involved in natural killer (NK) cell development and migration towards the sites of inflammation. Participates in NK cell receptor activation. Plays a role in NK cell maturation and cytokine production. Together with PIK3CG is involved in neutrophil chemotaxis and extravasation. Together with PIK3CG participates in neutrophil respiratory burst. Plays important roles in mast-cell development and mast cell mediated allergic response. Involved in stem cell factor (SCF)-mediated proliferation, adhesion and migration. Required for allergen-IgE-induced degranulation and cytokine release. The lipid kinase activity is required for its biological function. Isoform 2 may be involved in stabilizing total RAS levels, resulting in increased ERK phosphorylation and increased PI3K activity",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::O00329-2",
+          "title": "PIK3CD (O00329-2)",
+          "url": "https://www.uniprot.org/uniprotkb/O00329-2",
+          "text": "Protein: Isoform 2 of Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit delta isoform",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000171608::function",
+          "title": "PIK3CD \u2014 PIK3CD",
+          "url": "https://platform.opentargets.org/target/ENSG00000171608",
+          "text": "Function: Phosphoinositide-3-kinase (PI3K) phosphorylates phosphatidylinositol (PI) and its phosphorylated derivatives at position 3 of the inositol ring to produce 3-phosphoinositides (PubMed:9235916). Uses ATP and PtdIns(4,5)P2 (phosphatidylinositol 4,5- bisphosphate) to generate phosphatidylinositol 3,4,5-trisphosphate (PIP3) (PubMed:15135396). PIP3 plays a key role by recruiting PH domain-containing proteins to the membrane, including AKT1 and PDPK1, activating signaling cascades involved in cell growth, survival, proliferation, motility and morphology. Mediates immune responses. Plays a role in B-cell development, proliferation, migration, and function. Required for B-cell receptor (BCR) signaling. Mediates B-cell proliferation response to anti-IgM, anti-CD40 and IL4 stimulation. Promotes cytokine production in response to TLR4 and TLR9. Required for antibody class switch mediated by TLR9. Involved in the antigen presentation function of B-cells. Involved in B-cell chemotaxis in response to CXCL13 and sphingosine 1-phosphate (S1P). Required for proliferation, signaling and cytokine production of naive, effector and memory T-cells. Required for T-cell receptor (TCR) signaling. Mediates TCR signaling events at the immune synapse. Activation by TCR leads to antigen-dependent memory T-cell migration and retention to antigenic tissues. Together with PIK3CG participates in T-cell development. Contributes to T-helper cell expansion and differentiation. Required for T-cell migration mediated by homing receptors SELL/CD62L, CCR7 and S1PR1 and antigen dependent recruitment of T-cells. Together with PIK3CG is involved in natural killer (NK) cell development and migration towards the sites of inflammation. Participates in NK cell receptor activation. Plays a role in NK cell maturation and cytokine production. Together with PIK3CG is involved in neutrophil chemotaxis and extravasation. Together with PIK3CG participates in neutrophil respiratory burst. Plays important roles in mast-cell development and mast cell mediated allergic response. Involved in stem cell factor (SCF)-mediated proliferation, adhesion and migration. Required for allergen-IgE-induced degranulation and cytokine release. The lipid kinase activity is required for its biological function. Isoform 2 may be involved in stabilizing total RAS levels, resulting in increased ERK phosphorylation and increased PI3K activity.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000171608::MONDO_0018338",
+          "title": "PIK3CD \u2194 activated PI3K-delta syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000171608/associations",
+          "text": "Disease: activated PI3K-delta syndrome\nAssociation score: 0.760",
+          "cos_sim_score": 0.7600353745343374,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000171608::MONDO_0023655",
+          "title": "PIK3CD \u2194 immunodeficiency 14b, autosomal recessive",
+          "url": "https://platform.opentargets.org/target/ENSG00000171608/associations",
+          "text": "Disease: immunodeficiency 14b, autosomal recessive\nAssociation score: 0.689",
+          "cos_sim_score": 0.6889387554828373,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000171608::Orphanet_221139",
+          "title": "PIK3CD \u2194 Combined immunodeficiency with facio-oculo-skeletal anomalies",
+          "url": "https://platform.opentargets.org/target/ENSG00000171608/associations",
+          "text": "Disease: Combined immunodeficiency with facio-oculo-skeletal anomalies\nAssociation score: 0.615",
+          "cos_sim_score": 0.6154348557232595,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000171608::MONDO_0013226",
+          "title": "PIK3CD \u2194 combined immunodeficiency with faciooculoskeletal anomalies",
+          "url": "https://platform.opentargets.org/target/ENSG00000171608/associations",
+          "text": "Disease: combined immunodeficiency with faciooculoskeletal anomalies\nDescription: Combined immunodeficiency with faciooculoskeletal anomalies is an extremely rare combined immunodeficiency disorder characterized by primary immunodeficiency manifesting with repeated bacterial, viral and fungal infections, in association with neurological manifestations (hypotonia, cerebellar ataxia, myoclonic seizures), developmental delay, optic atrophy, facial dysmorphism (high forehead, hypoplastic supraorbital ridges, palpebral edema, hypertelorism, flat nasal bridge, broad nasal root and tip, anteverted nares, thin lower lip overlapped by upper lip, square chin) and skeletal anomalies (short metacarpals/metatarsals with cone-shaped epiphyses, osteopenia).\nAssociation score: 0.615",
+          "cos_sim_score": 0.6154348557232595,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "PIK3CD \u2014 phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit delta",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PIK3CD\nGene name: phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit delta\nAliases / synonyms: APDS, IMD14, IMD14A, IMD14B, P110DELTA, PI3K, PI3Kdelta, ROCHIS, p110D\nOrganism: Homo sapiens\nGene summary: Phosphoinositide 3-kinases (PI3Ks) phosphorylate inositol lipids and are involved in the immune response. The protein encoded by this gene is a class I PI3K found primarily in leukocytes. Like other class I PI3Ks (p110-alpha p110-beta, and p110-gamma), the encoded protein binds p85 adapter proteins and GTP-bound RAS. However, unlike the other class I PI3Ks, this protein phosphorylates itself, not p85 protein.[provided by RefSeq, Jul 2010]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PIK3CD",
+          "aliases": "APDS, IMD14, IMD14A, IMD14B, P110DELTA, PI3K, PI3Kdelta, ROCHIS, p110D",
+          "gene_description": "phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit delta"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TP53 \u2014 tumor protein p53",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TP53\nGene name: tumor protein p53\nAliases / synonyms: BCC7, BMFS5, LFS1, P53, TRP53\nOrganism: Homo sapiens\nGene summary: This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TP53",
+          "aliases": "BCC7, BMFS5, LFS1, P53, TRP53",
+          "gene_description": "tumor protein p53"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KRAS \u2014 KRAS proto-oncogene, GTPase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KRAS\nGene name: KRAS proto-oncogene, GTPase\nAliases / synonyms: 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2\nOrganism: Homo sapiens\nGene summary: This gene, a Kirsten ras oncogene homolog from the mammalian ras gene family, encodes a protein that is a member of the small GTPase superfamily. A single amino acid substitution is responsible for an activating mutation. The transforming protein that results is implicated in various malignancies, including lung adenocarcinoma, mucinous adenoma, ductal carcinoma of the pancreas and colorectal carcinoma. Alternative splicing leads to variants encoding two isoforms that differ in the C-terminal region. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KRAS",
+          "aliases": "'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2",
+          "gene_description": "KRAS proto-oncogene, GTPase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "AKT1 \u2014 AKT serine/threonine kinase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AKT1\nGene name: AKT serine/threonine kinase 1\nAliases / synonyms: AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA\nOrganism: Homo sapiens\nGene summary: This gene encodes one of the three members of the human AKT serine-threonine protein kinase family which are often referred to as protein kinase B alpha, beta, and gamma. These highly similar AKT proteins all have an N-terminal pleckstrin homology domain, a serine/threonine-specific kinase domain and a C-terminal regulatory domain. These proteins are phosphorylated by phosphoinositide 3-kinase (PI3K). AKT/PI3K forms a key component of many signalling pathways that involve the binding of membrane-bound ligands such as receptor tyrosine kinases, G-protein coupled receptors, and integrin-linked kinase. These AKT proteins therefore regulate a wide variety of cellular functions including cell proliferation, survival, metabolism, and angiogenesis in both normal and malignant cells. AKT proteins ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AKT1",
+          "aliases": "AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA",
+          "gene_description": "AKT serine/threonine kinase 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "SNCA \u2014 synuclein alpha",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SNCA\nGene name: synuclein alpha\nAliases / synonyms: NACP, PARK1, PARK4, PD1\nOrganism: Homo sapiens\nGene summary: Alpha-synuclein is a member of the synuclein family, which also includes beta- and gamma-synuclein. Synucleins are abundantly expressed in the brain and alpha- and beta-synuclein inhibit phospholipase D2 selectively. SNCA may serve to integrate presynaptic signaling and membrane trafficking. Defects in SNCA have been implicated in the pathogenesis of Parkinson disease. SNCA peptides are a major component of amyloid plaques in the brains of patients with Alzheimer's disease. Alternatively spliced transcripts encoding different isoforms have been identified for this gene. [provided by RefSeq, Feb 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SNCA",
+          "aliases": "NACP, PARK1, PARK4, PD1",
+          "gene_description": "synuclein alpha"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::10265435",
+          "title": "Identification and assessment of novel dynamic biomarkers for monitoring non\u2010traumatic osteonecrosis of the femoral head staging",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10265435/",
+          "text": "Dear Editor,\nHow to differentially diagnose non\u2010traumatic osteonecrosis of the femoral head (NONFH) patients during the transition from early to late stage accurately and identify the core regulators governing such a critical transition may be one of the clinical problems that urgently needed to be solved. Studies have revealed that the initiation and development of NONFH are intricately regulated by a transcriptional regulatory network.\n1\n, \n2\n To explore dynamic biomarkers to monitor NONFH staging, we herein divided NONFH patients into three stages according to radiological staging system, extensively collected their clinical symptoms, and formed a network fusion\u2010based analysis by combing the NONFH\u2010related expression profiling, clinical phenomics data and real\u2010time quantitative polymerase chain reaction (RT\u2010qPCR) validation (Figure\u00a01).\nFIGURE 1\nSchematic diagram of the systematic strategies to identify candidate biomarkers of non\u2010traumatic osteonecrosis of the femoral head (NONFH) at different stages.\nA total of 84 steroid\u2010induced NONFH patients, who were staged into early\u2010, mid\u2010, and late\u2010stage groups based on the imaging system,\n3\n, \n4\n and 20 non\u2010NONFH patients were enrolled from January 2014 to August 2022, were randomly divided into a discovery cohort (10 per group) and a validation cohort (non\u2010NONFH control group\u00a0=\u00a010, early\u2010stage NONFH group\u00a0=\u00a022, mid\u2010stage NONFH group\u00a0=\u00a018, late\u2010stage NONFH group\u00a0=\u00a014) with strict primary disease of steroid inclusion criteria (Table S1). Differentially expressed genes (DEGs) obtained from peripheral blood samples of the discovery cohort (GEO accession: GSE123568) were identified by comparing gene expression profiling between each NONFH stage group and control group in our previous studies.\n1\n, \n2\n The hub DEGs of each NONFH stage group should be screened out through interaction network by using the public database Search Tool for the Retrieval of Interacting Genes (STRING, version 11.5, https://cn.string\u2010db.org) and Cytoscape v3.8.2 software to calculate the degree, betweenness centrality and closeness centrality. The typical clinical symptoms corresponding to different NONFH stages\n5\n, \n6\n, \n7\n and the related genes were collected from Human Phenotype Ontology (HPO, released on June 12, 2022, https://hpo.jax.org/app), Disease\u2010Gene Association Network (DisGeNET, version 7.0, https://www.disgenet.org) and SoFDA database (http://www.tcmip.cn/Syndrome/front/#/).\n8",
+          "cos_sim_score": 0.5302889943122864,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10265435",
+          "title": "Identification and assessment of novel dynamic biomarkers for monitoring non\u2010traumatic osteonecrosis of the femoral head staging",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10265435/",
+          "text": "FIGURE 2\nDisease\u2010related hubs participation rate and functional enrichment analysis of different non\u2010traumatic osteonecrosis of the femoral head (NONFH) stages. (A, D and G): The percentage of disease\u2010related hubs in symptom\u2010related genes of early\u2010stage, mid\u2010stage and late\u2010stage respectively. (B, E and H): The main 21 pathways of KEGG enrichment analysis related to NONFH at early\u2010stage, mid\u2010stage and late\u2010stage, respectively. (C, F and I): Top 20 function terms of GO analysis of early\u2010stage, mid\u2010stage and late\u2010stage, respectively; BP, biological process; CC, cellular component; MF, molecular function.\nThe non\u2010overlapping hub genes of NONFH at each stage were selected for further analysis (Figure\u00a03A\u2013G). The corresponding fold change (FC), p\u2010value, and expression patterns were collected, and their network distance to the corresponding symptom\u2010related genes was evaluated by the average shortest path length. The correlation analysis was also carried out to evaluate the expression relevance among the hub genes. To identify candidate biomarkers of different NONFH stages, four screening criteria were further set as follows: 1) average shortest path length\u00a0<\u00a0median; 2) co\u2010expression correlation p\u2010value\u00a0<\u00a00.05; 3) log2 FC\u00a0>\u00a0median; 4) differentially expressed p\u2010value\u00a0<\u00a0median. Any three out of four criteria were sufficient (Tables S6\u20138). As a result (Figure\u00a03H and Figure S1), we identified correlative 6 genes for early\u2010stage (PAK2, CD28, CD4, PIK3CD, PLCG1 and PRKCA), 13 genes for mid\u2010stage (VCL, IQGAP1, ACTN4, RAC1, XIAP, PIK3CB, TRAF6, PSEN1, TUBA1A, YWHAZ, HDAC4, CSNK1D and STK11) and six genes for late\u2010stage (STAT2, STAT1, ERBB2, CXCR4, AGT and LPAR1).\nFIGURE 3\nThe disease\u2010related hubs interaction networks of different non\u2010traumatic osteonecrosis of the femoral head (NONFH) stage. (A) Venn diagram of NONFH stage\u2010related hubs consisting of symptom\u2010related genes and differentially expressed genes (DEGs). The non\u2010overlapping DEGs between three NONFH stage\u2010related hubs were 12, 36 and 15, respectively. (B) The network comparison of the early\u2010stage. Median (average shortest path length)\u00a0=\u00a03.299; median (fold change)\u00a0=\u00a01.604; median (p\u2010value)\u00a0=\u00a00.001. (C) The co\u2010expression correlation analysis of the early\u2010stage. *p <\u00a00.05. (D) The network comparison of the mid\u2010stage. Median (average shortest path length)\u00a0=\u00a03.109; median (fold change)\u00a0=\u00a01.605; median (p\u2010value)\u00a0=\u00a00.003. (E) The co\u2010expression correlation analysis of the mid\u2010stage. (F) The network comparison of the late\u2010stage. Median (average shortest path length)\u00a0=\u00a03.545; median (fold change)\u00a0=\u00a01.733; median (p\u2010value)\u00a0=\u00a00.005. (G) The co\u2010expression correlation analysis of the late\u2010stage. (H) Candidate biomarkers were associated with clinical stage through typical symptoms and symptom\u2010related genes respectively. The clinical symptom with a large area indicated participation was higher.",
+          "cos_sim_score": 0.5175912380218506,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11384717",
+          "title": "Proceedings of the 31st European Paediatric Rheumatology Congress: part 2",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11384717/",
+          "text": "Patient Consent\nYes, I received consent\nDisclosure of Interest\nNone Declared\nTreatment\nP460 Zoledronic acid: an effective treatment in chronic non-bacterial osteomyelitis\nKyveli Chiotopoulou1, Katerina Kourtesi2, Spyridon Proutzos3, Eftuxia Kostoula1, Elli Athanasopoulou1, Erato Atsali2, Olympia Papakonstantinou3, Lampros Fotis2\n1Department of Pediatrics;\u00a02Department of Pediatrics, Division of Pediatric Rheumatology;\u00a03Department of Radiology, ATTIKON General Hospital, National and Kapodistrian University of Athens, Athens, Greece\nCorrespondence: Lampros Fotis\nPediatric Rheumatology 2024, 22(2): PReS24-ABS-1268\nIntroduction: The treatment goal in chronic non-bacterial osteomyelitis (CNO) is to relieve pain and prevent disease progression, aiming to mitigate permanent damage in the affected bones. First-line treatment often consists of non-steroidal anti-inflammatory drugs (NSAIDs), either alone or in combination with steroid therapy. According to consensus treatment plans, second and third-line medications include disease-modifying antirheumatic drugs (DMARDs), bisphosphonates, and biologic DMARDs. Zoledronic Acid (ZA) is a third-generation bisphosphonate and is considered an acceptable treatment option.\nObjectives: To delineate the clinical profile and prognostic outcomes of pediatric patients diagnosed with CNO, particularly those exhibiting partial or inadequate response to other therapies, and subsequently managed with ZA.\nMethods: The medical records of children with CNO from May 2017 to March 2024 were retrospectively reviewed. The diagnosis of CNO for all children was based on the 'Bristol criteria.' Descriptive statistics were utilized to describe the population and assess the treatment effects of ZA. The dosing regimen for ZA was 0.0125-0.025-0.05 mg/kg at 0-3-6 months, respectively, followed by 0.05 mg/kg thereafter.\nResults: Forty-three children (22 females and 21 males) with a mean age of 10.5 years (6-16 years) participated in the study. Whole-body MRI (WBMRI) at the time of diagnosis revealed multiple bone lesions in all but 5 patients (mean number: 8 lesions). Six children presented with pauci-focal disease (2-4 lesions), while 32 patients (74.4%) had multifocal bone involvement. Thirty-eight patients received treatment for CNO, while 5 were lost to follow-up. Nine patients underwent treatment with ZA.\nThree patients received ZA, as 2nd line treatment following NSAIDs, while for 6 it was selected as a third-line treatment. The average treatment period of ZA was 13.6 months (median: 6) with an average of 2.2 infusions (median: 2) of ZA. At diagnosis, 8 out of 9 patients reported bone pain. At the final visit, 2 patients reported no pain, and 6 reported a significant reduction in pain. Following treatment with ZA, etanercept was administered concomitantly in 2 cases, and adalimumab in 1 case, as patients had vertebral fractures, while 1 patient continued therapy with Ustekinumab to treat concomitant psoriasis. All 9 patients received a 3-day course of methylprednisolone following the infusion to minimize flu-like symptoms. The treatment response was also noteworthy. In most cases, follow-up WB-MRI one year post-diagnosis is pending.\nConclusion: In this study, patients exhibited a positive response to treatment with ZA, as evidenced by the reduction in pain reported at their last visit. Thus, the use of ZA appears to enhance the quality of life for these patients, representing a significant advancement in the treatment of CNO, with minimal adverse events.\nTrial registration identifying number:\nPatient Consent\nYes, I received consent\nDisclosure of Interest\nNone Declared\nReferences",
+          "cos_sim_score": 0.43016260862350464,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11384717",
+          "title": "Proceedings of the 31st European Paediatric Rheumatology Congress: part 2",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11384717/",
+          "text": "Patient Consent\nYes, I received consent\nDisclosure of Interest\nNone Declared\nReferences\nPulsatelli L, Manferdini C, Gabusi E, et al. Mesenchymal stromal cells from a progressive pseudorheumatoid dysplasia patient show altered osteogenic differentiation. Eur J Med Res. 2022;27(1):57.Riaz M, Khoso Z, Rai VR, et al. A Rare Skeletal Dysplasia-Close Mimicker Of Juvenile Idiopathic Arthritis-Progressive Pseudorheumatoid Dysplasia. J Ayub Med Coll Abbottabad. 2022;34(Suppl 1)(4):S1050-S1052.\nPulsatelli L, Manferdini C, Gabusi E, et al. Mesenchymal stromal cells from a progressive pseudorheumatoid dysplasia patient show altered osteogenic differentiation. Eur J Med Res. 2022;27(1):57.\nRiaz M, Khoso Z, Rai VR, et al. A Rare Skeletal Dysplasia-Close Mimicker Of Juvenile Idiopathic Arthritis-Progressive Pseudorheumatoid Dysplasia. J Ayub Med Coll Abbottabad. 2022;34(Suppl 1)(4):S1050-S1052.\nMiscellaneous rheumatic diseases\nP300 Tafro syndrome: the first report of two pediatric cases successfully treated with interleukin-1 inhibition\nSerena Palmeri1, 2, Riccardo Papa1, Silvia Rosina1, Stefano Volpi1, 2, Valentina Natoli1, 2, Caterina Matucci-cerinic1, 2, Marco Gattorno1, Roberta Caorsi1, 2\n1IRCCS Istituto Giannina Gaslini, Paediatric Rheumatology and Autoinflammatory Diseases Unit; 2Universit\u00e0 degli Studi di Genova, Dipartimento di Neuroscienze, Riabilitazione, Oftalmologia, Genetica e Scienze Materno-Infantili (DiNOGMI), Genova, Italy\nCorrespondence: Serena Palmeri\nPediatric Rheumatology 2024, 22(2): PReS24-ABS-1454\nIntroduction: TAFRO syndrome (Thrombocytopenia, anasarca, fever, reticulin fibrosis, renal insufficiency, and organomegaly) is a potentially life-threatening inflammatory condition with sudden onset, that can occur in the context of idiopathic multicentric Castleman disease (iMCD), infectious diseases, neoplasms, and connective tissue disorders. By now, most cases have been treated with interleukin-6 (IL-6) inhibitors. Here, we present two paediatric cases of TAFRO successfully treated with anakinra.\nObjectives: To report two pediatric cases of TAFRO syndrome successfully treated with interleukin-1 (IL-1) inhibitor anakinra.\nMethods: We described the initial presentation, clinical course, laboratory and imaging results, treatment and outcome of two pediatric patients with TAFRO syndrome presentation, followed at our tertiary referral center.",
+          "cos_sim_score": 0.3983270227909088,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11384717",
+          "title": "Proceedings of the 31st European Paediatric Rheumatology Congress: part 2",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11384717/",
+          "text": "Knut L. Radiosynovectomy in the therapeutic management of arthritis. World J Nucl Med. 2015; Jan-Apr;14(1):10-5. doi: 10.4103/1450-1147.150509.\nCourtney P, Doherty M. Joint Aspiration and Injection. Best Practice & Research Clinical Rheumatology. 2005;19(3):345\u2013369. doi: 10.1016/j.berh.2005.01.009.\nBessant R, Steuer A, Rigby S, Gumpel M. Osmic acid revisited: factors that predict a favourable response. Rheumatology. 2003;42:1036\u20131043.\nSlobodin G, Rosner I, Boulman N, Rozenbaum M. Osmic acid synovectomy in the era of biologics. Rheumatol Int. 2008;28:303\u2013304.\nJIA (oligo, poly, psoriatic)\nP208 JIA T cells dispose mechanism to keep ferroptosis in check\nChristopher Neullens1, Sudheendra Hebbar Subramanyam1;Jorg van Loosdregt2, Bas Vastert2, Kim K. Ohl1, Klaus Tenbrock1 and Translational Pediatric Rheumatology and Immunology, RWTH Aachen University Hospital, Aachen, Germany\n1Translational Pediatric Rheumatology and Immunology, Uniklinik RWTH Aachen, Aachen, Germany; 2Pediatric Rheumatology, UMC Utrecht, Utrecht, Netherlands\nCorrespondence: Klaus Tenbrock\nPediatric Rheumatology 2024, 22(2): PReS24-ABS-1173\nIntroduction: Ferroptosis has recently been identified as a novel type of regulated cell death that is driven by lipid peroxidation. Cells have evolved various defense mechanisms to detoxify these toxic lipid peroxides. Especially T cells established a fine-tuned redox-balance as reactive oxygen species are required to activate T cells, while too high amounts are deleterious for their function. We hypothesized that T cells in inflamed tissue have significantly increased needs in antioxidant defense and therefore are much more dependent on mechanism to counteract ferroptosis.\nObjectives: The central role of inflammatory T cells in Juvenile idiopathic arthritis (JIA) is undoubtable. We therefore analyzed this mechanism in CD4+ T cells from peripheral blood and from inflamed joints of these patients.\nMethods: Ferroptosis and ferroptosis-relevant proteins were analyzed in peripheral blood mononuclear cells (PBMC) and synovial fluid mononuclear cells (SFMC) by flow cytometry. In vitro T cell stimulation assays were performed for metabolic and functional studies.\nResults: We could prove that Ferroptosis in CD4+ T cells is regulated by the canonical SLC7A11/Cysteine/Glutathione pathway. Sulfasalazine (SAS), which is currently used for treatment of inflammatory bowel disease and enthesitis-associated arthritis, is a SCL7A11 and Cysteine uptake inhibitor. Despite of its long-lasting therapeutic use, the immune-modulating effects are not clear. Interestingly, inhibition of SLC7A11 by SAS not only induced ferroptosis in CD4+ T cells but also dampened their proinflammatory function (IFN-g and IL-17 production), while regulatory T cell expression was enhanced. Moreover, JIA CD4+ T cells reveal a higher SLC7A11 expression and higher cystine uptake compared to peripheral blood T cells.\nConclusion: Our data thereby suggest that JIA T cells dispose mechanism to keep ferroptosis in check, which uncovers a new Achilles heel to treat exaggerated CD4+ T cell responses in JIA.\nPatient Consent\nNot applicable (there are no patient data)\nDisclosure of Interest\nNone Declared\nJIA (oligo, poly, psoriatic)\nP209 Paediatric rheumatology vaccination rates at the children\u2019s hospital in Z\u00fcrich \u2013 where can we improve?\nSeraina Palmer Sarott1, Tatjana Welzel2, Elvira Cannizzaro1\n1Department of Paediatric Rheumatology, University Children's Hospital Z\u00fcrich, Z\u00fcrich; 2Department of Paediatric Rheumatology, University Children's Hospital Basel, Basel, Switzerland\nCorrespondence: Seraina Palmer Sarott",
+          "cos_sim_score": 0.3789600729942322,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

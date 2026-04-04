@@ -1,0 +1,118 @@
+{
+  "rf_rank": 22,
+  "probe_id": "11716876_a_at",
+  "gene_symbol": "TSTA3",
+  "score": 0.71,
+  "rf_n_nodes": 22,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 1.7444,
+  "log_fc": -1.7444,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 4,
+  "probe_ids": "11716876_a_at | 11761538_x_at | 11749318_a_at | 11756301_x_at",
+  "max_score": 0.71,
+  "mean_abs_fold_change": 1.8877,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T17:19:24",
+  "interpretation": "TSTA3 encodes a protein involved in the synthesis of GDP-fucose, which is important for glycosylation processes that can affect cell signaling and immune responses. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), TSTA3 has been identified as a potential diagnostic marker, showing significant differential expression in patients with SONFH compared to non-affected individuals. The study indicates that TSTA3, along with other markers, correlates with immune cell infiltration, which may play a critical role in the pathogenesis of SONFH. The evidence supporting TSTA3 as a biomarker is strong, as it is directly linked to the disease through its identification in a study focused on SONFH diagnostics. Clinically, TSTA3 shows promise as an early-detection biomarker, with a high area under the curve (AUC) value indicating its potential utility in distinguishing SONFH patients from non-affected individuals.",
+  "evidence_relation": "direct",
+  "evidence_tier": "Tier 1",
+  "evidence_confidence": "high",
+  "biomarker_potential": "strong",
+  "relevance_summary": "TSTA3 is a promising biomarker for the early detection of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), linked to immune cell infiltration and differential expression in affected patients.",
+  "citations": [
+    "GFUS (Q13630). https://www.uniprot.org/uniprotkb/Q13630",
+    "TSTA3 \u2014 GFUS. https://platform.opentargets.org/target/ENSG00000104522",
+    "TSTA3 \u2194 neoplasm. https://platform.opentargets.org/target/ENSG00000104522/associations",
+    "TSTA3 \u2194 esophageal squamous cell carcinoma. https://platform.opentargets.org/target/ENSG00000104522/associations",
+    "TSTA3 \u2194 lung cancer. https://platform.opentargets.org/target/ENSG00000104522/associations",
+    "TSTA3 \u2194 glioblastoma multiforme. https://platform.opentargets.org/target/ENSG00000104522/associations",
+    "ARG2, MAP4K5 and TSTA3 as Diagnostic Markers of Steroid-Induced Osteonecrosis of the Femoral Head and Their Correlation With Immune Infiltration. (2021). https://pubmed.ncbi.nlm.nih.gov/34381494/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 3065,
+    "completion_tokens": 272,
+    "total_tokens": 3337,
+    "estimated_cost_usd": 0.000623
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q13630",
+          "title": "GFUS (Q13630)",
+          "url": "https://www.uniprot.org/uniprotkb/Q13630",
+          "text": "Protein: GDP-L-fucose synthase\nFunction: Catalyzes the two-step NADP-dependent conversion of GDP-4-dehydro-6-deoxy-D-mannose to GDP-fucose, involving an epimerase and a reductase reaction",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000104522::function",
+          "title": "TSTA3 \u2014 GFUS",
+          "url": "https://platform.opentargets.org/target/ENSG00000104522",
+          "text": "Function: Catalyzes the two-step NADP-dependent conversion of GDP-4- dehydro-6-deoxy-D-mannose to GDP-fucose, involving an epimerase and a reductase reaction. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000104522::EFO_0000616",
+          "title": "TSTA3 \u2194 neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000104522/associations",
+          "text": "Disease: neoplasm\nDescription: A benign or malignant tissue growth resulting from uncontrolled cell proliferation. Benign neoplastic cells resemble normal cells without exhibiting significant cytologic atypia, while malignant cells exhibit overt signs such as dysplastic features, atypical mitotic figures, necrosis, nuclear pleomorphism, and anaplasia. Representative examples of benign neoplasms include papillomas, cystadenomas, and lipomas; malignant neoplasms include carcinomas, sarcomas, lymphomas, and leukemias.\nAssociation score: 0.098",
+          "cos_sim_score": 0.0979530573797184,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000104522::EFO_0005922",
+          "title": "TSTA3 \u2194 esophageal squamous cell carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000104522/associations",
+          "text": "Disease: esophageal squamous cell carcinoma\nDescription: Esophageal squamous cell carcinoma (ESCC) is a type of esophageal carcinoma (EC) that can affect any part of the esophagus, but is usually located in the upper or middle third.\nAssociation score: 0.087",
+          "cos_sim_score": 0.0866923465133905,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000104522::MONDO_0008903",
+          "title": "TSTA3 \u2194 lung cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000104522/associations",
+          "text": "Disease: lung cancer\nDescription: A malignant neoplasm involving the lung.\nAssociation score: 0.079",
+          "cos_sim_score": 0.0786956233990347,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000104522::EFO_0000519",
+          "title": "TSTA3 \u2194 glioblastoma multiforme",
+          "url": "https://platform.opentargets.org/target/ENSG00000104522/associations",
+          "text": "Disease: glioblastoma multiforme\nDescription: The most malignant astrocytic tumor (WHO grade IV). It is composed of poorly differentiated neoplastic astrocytes and it is characterized by the presence of cellular polymorphism, nuclear atypia, brisk mitotic activity, vascular thrombosis, microvascular proliferation and necrosis. It typically affects adults and is preferentially located in the cerebral hemispheres. It may develop from diffuse astrocytoma WHO grade II or anaplastic astrocytoma (secondary glioblastoma, IDH-mutant), but more frequently, it manifests after a short clinical history de novo, without evidence of a less malignant precursor lesion (primary glioblastoma, IDH- wildtype). (Adapted from WHO)\nAssociation score: 0.076",
+          "cos_sim_score": 0.07611948815942716,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::34381494",
+          "title": "ARG2, MAP4K5 and TSTA3 as Diagnostic Markers of Steroid-Induced Osteonecrosis of the Femoral Head and Their Correlation With Immune Infiltration.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34381494/",
+          "year": "2021",
+          "text": "The diagnosis for steroid-induced osteonecrosis of the femoral head (SONFH) is hard to achieve at the early stage, which results in patients receiving ineffective treatment options and a poor prognosis for most cases. The present study aimed to find potential diagnostic markers of SONFH and analyze the effect exerted by infiltration of immune cells in this pathology. R software was adopted for identifying differentially expressed genes (DEGs) and conducting functional investigation based on the microarray dataset. Then we combined SVM-RFE, WGCNA, LASSO logistic regression, and random forest (RF) algorithms for screening the diagnostic markers of SONFH and further verification by qRT-PCR. The diagnostic values were assessed through receiver operating characteristic (ROC) curves. CIBERSORT was then adopted for assessing the infiltration of immune cells and the relationship of infiltration-related immune cells and diagnostic markers. We identified 383 DEGs overall. This study found ARG2, MAP4K5, and TSTA3 (AUC = 0.980) to be diagnostic markers of SONFH. The results of qRT-PCR showed a statistically significant difference in all markers. Analysis of infiltration of immune cells indicated that neutrophils, activated dendritic cells and memory B cells were likely to show the relationship with SONFH occurrence and progress. Additionally, all diagnostic markers had different degrees of correlation with T cell follicular helper, neutrophils, memory B cells, and activated dendritic cells. ARG2, MAP4K5, and TSTA3 are potential diagnostic genes for SONFH, and infiltration of immune cells may critically impact SONFH occurrence and progression.",
+          "cos_sim_score": 0.4754224717617035,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_fetch_by_id",
+      "result": []
+    }
+  ]
+}

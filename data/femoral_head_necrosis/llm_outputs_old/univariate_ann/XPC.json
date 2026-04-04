@@ -1,0 +1,168 @@
+{
+  "rf_rank": 26,
+  "probe_id": "11740553_a_at",
+  "gene_symbol": "XPC",
+  "score": 0.6,
+  "rf_n_nodes": 24,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.72,
+  "log_fc": 0.72,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11740553_a_at",
+  "max_score": 0.6,
+  "mean_abs_fold_change": 0.72,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T20:18:01",
+  "interpretation": "XPC (Xeroderma pigmentosum complementation group C) is a crucial protein involved in the nucleotide excision repair (NER) pathway, which is responsible for repairing DNA damage caused by various environmental factors, including oxidative stress and chemical exposure. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the role of XPC in DNA repair may be particularly relevant, as glucocorticoids (steroids) can induce oxidative stress and DNA damage in bone cells, potentially contributing to the pathogenesis of SONFH. The retrieved evidence indicates that XPC is essential for recognizing and repairing DNA lesions, which aligns with the need for effective DNA repair mechanisms in preventing cellular damage in SONFH. However, the direct connection between XPC and SONFH is not explicitly established in the literature, leading to a reliance on inferred biological reasoning. Therefore, while XPC may serve as a potential biomarker for early detection of SONFH due to its role in DNA repair, the evidence supporting its specific involvement in this condition is limited.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "XPC is involved in DNA repair processes that may be disrupted in Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), but direct evidence linking XPC to SONFH is lacking.",
+  "citations": [
+    "XPC (Q01831). https://www.uniprot.org/uniprotkb/Q01831",
+    "XPC (Q01831-3). https://www.uniprot.org/uniprotkb/Q01831-3",
+    "XPC (Q01831-2). https://www.uniprot.org/uniprotkb/Q01831-2",
+    "XPC \u2014 XPC. https://platform.opentargets.org/target/ENSG00000154767",
+    "XPC \u2194 Xeroderma pigmentosum complementation group C. https://platform.opentargets.org/target/ENSG00000154767/associations",
+    "XPC \u2194 xeroderma pigmentosum group C. https://platform.opentargets.org/target/ENSG00000154767/associations",
+    "XPC \u2194 xeroderma pigmentosum. https://platform.opentargets.org/target/ENSG00000154767/associations",
+    "XPC \u2194 Abnormality of the skeletal system. https://platform.opentargets.org/target/ENSG00000154767/associations",
+    "XPC. https://en.wikipedia.org/wiki/XPC",
+    "XPC (gene). https://en.wikipedia.org/wiki/XPC_(gene)",
+    "Nucleotide excision repair. https://en.wikipedia.org/wiki/Nucleotide_excision_repair",
+    "Genome editing. https://en.wikipedia.org/wiki/Genome_editing"
+  ],
+  "token_usage": {
+    "prompt_tokens": 7666,
+    "completion_tokens": 296,
+    "total_tokens": 7962,
+    "estimated_cost_usd": 0.001327
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q01831",
+          "title": "XPC (Q01831)",
+          "url": "https://www.uniprot.org/uniprotkb/Q01831",
+          "text": "Protein: DNA repair protein complementing XP-C cells\nFunction: Involved in global genome nucleotide excision repair (GG-NER) by acting as damage sensing and DNA-binding factor component of the XPC complex (PubMed:10734143, PubMed:10873465, PubMed:12509299, PubMed:12547395, PubMed:19609301, PubMed:19941824, PubMed:20028083, PubMed:20649465, PubMed:20798892, PubMed:9734359). Has only a low DNA repair activity by itself which is stimulated by RAD23B and RAD23A. Has a preference to bind DNA containing a short single-stranded segment but not to damaged oligonucleotides (PubMed:10734143, PubMed:19609301, PubMed:20649465). This feature is proposed to be related to a dynamic sensor function: XPC can rapidly screen duplex DNA for non-hydrogen-bonded bases by forming a transient nucleoprotein intermediate complex which matures into a stable recognition complex through an intrinsic single-stranded DNA-binding activity (PubMed:10734143, PubMed:19609301, PubMed:20649465). The XPC complex is proposed to represent the first factor bound at the sites of DNA damage and together with other core recognition factors, XPA, RPA and the TFIIH complex, is part of the pre-incision (or initial recognition) complex (PubMed:10873465, PubMed:12509299, PubMed:12547395, PubMed:19941824, PubMed:20028083, PubMed:20798892, PubMed:9734359). The XPC complex recognizes a wide spectrum of damaged DNA characterized by distortions of the DNA helix such as single-stranded loops, mismatched bubbles or single-stranded overhangs (PubMed:10873465, PubMed:12509299, PubMed:12547395, PubMed:19941824, PubMed:20028083, PubMed:20798892, PubMed:9734359). The orientation of XPC complex binding appears to be crucial for inducing a productive NER (PubMed:10873465, PubMed:12509299, PubMed:12547395, PubMed:19941824, PubMed:20028083, PubMed:20798892, PubMed:9734359). XPC complex is proposed to recognize and to interact with unpaired bases on the undamaged DNA strand which is followed by recruitment of the TFIIH complex and subsequent scanning for lesions in the opposite strand in a 5'-to-3' direction by the NER machinery (PubMed:10873465, PubMed:12509299, PubMed:12547395, PubMed:19941824, PubMed:20028083, PubMed:20798892, PubMed:9734359). Cyclobutane pyrimidine dimers (CPDs) which are formed upon UV-induced DNA damage esacpe detection by the XPC complex due to a low degree of structural perurbation. Instead they are detected by the UV-DDB complex which in turn recruits and cooperates with the XPC complex in the respective DNA repair (PubMed:10873465, PubMed:12509299, PubMed:12547395, PubMed:19941824, PubMed:20028083, PubMed:20798892, PubMed:9734359). In vitro, the XPC:RAD23B dimer is sufficient to initiate NER; it preferentially binds to cisplatin and UV-damaged double-stranded DNA and also binds to a variety of chemically and structurally diverse DNA adducts (PubMed:20028083). XPC:RAD23B contacts DNA both 5' and 3' of a cisplatin lesion with a preference for the 5' side. XPC:RAD23B induces a bend in DNA upon binding. XPC:RAD23B stimulates the activity of DNA glycosylases TDG and SMUG1 (PubMed:20028083) In absence of DNA repair, the XPC complex also acts as a transcription coactivator: XPC interacts with the DNA-binding transcription factor E2F1 at a subset of promoters to recruit KAT2A and histone acetyltransferase complexes (HAT) (PubMed:29973595, PubMed:31527837). KAT2A recruitment specifically promotes acetylation of histone variant H2A.Z.1/H2A.Z, but not H2A.Z.2/H2A.V, thereby promoting expression of target genes (PubMed:31527837)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q01831-3",
+          "title": "XPC (Q01831-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q01831-3",
+          "text": "Protein: Isoform 3 of DNA repair protein complementing XP-C cells",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q01831-2",
+          "title": "XPC (Q01831-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q01831-2",
+          "text": "Protein: Isoform 2 of DNA repair protein complementing XP-C cells",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000154767::function",
+          "title": "XPC \u2014 XPC",
+          "url": "https://platform.opentargets.org/target/ENSG00000154767",
+          "text": "Function: Involved in global genome nucleotide excision repair (GG-NER) by acting as damage sensing and DNA-binding factor component of the XPC complex (PubMed:10734143, PubMed:10873465, PubMed:12509299, PubMed:12547395, PubMed:19609301, PubMed:19941824, PubMed:20028083, PubMed:20649465, PubMed:20798892, PubMed:9734359). Has only a low DNA repair activity by itself which is stimulated by RAD23B and RAD23A. Has a preference to bind DNA containing a short single-stranded segment but not to damaged oligonucleotides (PubMed:10734143, PubMed:19609301, PubMed:20649465). This feature is proposed to be related to a dynamic sensor function: XPC can rapidly screen duplex DNA for non-hydrogen- bonded bases by forming a transient nucleoprotein intermediate complex which matures into a stable recognition complex through an intrinsic single-stranded DNA-binding activity (PubMed:10734143, PubMed:19609301, PubMed:20649465). The XPC complex is proposed to represent the first factor bound at the sites of DNA damage and together with other core recognition factors, XPA, RPA and the TFIIH complex, is part of the pre-incision (or initial recognition) complex (PubMed:10873465, PubMed:12509299, PubMed:12547395, PubMed:19941824, PubMed:20028083, PubMed:20798892, PubMed:9734359). The XPC complex recognizes a wide spectrum of damaged DNA characterized by distortions of the DNA helix such as single-stranded loops, mismatched bubbles or single-stranded overhangs (PubMed:10873465, PubMed:12509299, PubMed:12547395, PubMed:19941824, PubMed:20028083, PubMed:20798892, PubMed:9734359). The orientation of XPC complex binding appears to be crucial for inducing a productive NER (PubMed:10873465, PubMed:12509299, PubMed:12547395, PubMed:19941824, PubMed:20028083, PubMed:20798892, PubMed:9734359). XPC complex is proposed to recognize and to interact with unpaired bases on the undamaged DNA strand which is followed by recruitment of the TFIIH complex and subsequent scanning for lesions in the opposite strand in a 5'-to-3' direction by the NER machinery (PubMed:10873465, PubMed:12509299, PubMed:12547395, PubMed:19941824, PubMed:20028083, PubMed:20798892, PubMed:9734359). Cyclobutane pyrimidine dimers (CPDs) which are formed upon UV-induced DNA damage esacpe detection by the XPC complex due to a low degree of structural perurbation. Instead they are detected by the UV-DDB complex which in turn recruits and cooperates with the XPC complex in the respective DNA repair (PubMed:10873465, PubMed:12509299, PubMed:12547395, PubMed:19941824, PubMed:20028083, PubMed:20798892, PubMed:9734359). In vitro, the XPC:RAD23B dimer is sufficient to initiate NER; it preferentially binds to cisplatin and UV-damaged double-stranded DNA and also binds to a variety of chemically and structurally diverse DNA adducts (PubMed:20028083). XPC:RAD23B contacts DNA both 5' and 3' of a cisplatin lesion with a preference for the 5' side. XPC:RAD23B induces a bend in DNA upon binding. XPC:RAD23B stimulates the activity of DNA glycosylases TDG and SMUG1 (PubMed:20028083).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000154767::Orphanet_276255",
+          "title": "XPC \u2194 Xeroderma pigmentosum complementation group C",
+          "url": "https://platform.opentargets.org/target/ENSG00000154767/associations",
+          "text": "Disease: Xeroderma pigmentosum complementation group C\nDescription: Xeroderma pigmentosum complementation group C (XPC) is the most frequent subtype of xeroderma pigmentosum (XP, a rare photodermatosis predisposing to skin cancers; see this term) in the Caucasian population\nAssociation score: 0.806",
+          "cos_sim_score": 0.8056391472748724,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000154767::MONDO_0010211",
+          "title": "XPC \u2194 xeroderma pigmentosum group C",
+          "url": "https://platform.opentargets.org/target/ENSG00000154767/associations",
+          "text": "Disease: xeroderma pigmentosum group C\nDescription: An autosomal recessive inherited disorder caused by mutations in the XPC gene. This disease is characterized by increased sensitivity to sunlight with the development of carcinomas at an early age and is caused by a defect in nucleotide excision repair.\nAssociation score: 0.777",
+          "cos_sim_score": 0.7770433490293749,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000154767::MONDO_0019600",
+          "title": "XPC \u2194 xeroderma pigmentosum",
+          "url": "https://platform.opentargets.org/target/ENSG00000154767/associations",
+          "text": "Disease: xeroderma pigmentosum\nDescription: Xeroderma pigmentosum (XP) is a rare genodermatosis characterized by extreme sensitivity to ultraviolet (UV)-induced changes in the skin and eyes, and multiple skin cancers. It is subdivided into 8 complementation groups, according to the affected gene: classical XP (XPA to XPG) and XP variant (XPV).\nAssociation score: 0.716",
+          "cos_sim_score": 0.7157619214371781,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000154767::HP_0000924",
+          "title": "XPC \u2194 Abnormality of the skeletal system",
+          "url": "https://platform.opentargets.org/target/ENSG00000154767/associations",
+          "text": "Disease: Abnormality of the skeletal system\nDescription: An abnormality of the skeletal system.\nAssociation score: 0.458",
+          "cos_sim_score": 0.45787727263469546,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::XPC",
+          "title": "XPC",
+          "url": "https://en.wikipedia.org/wiki/XPC",
+          "text": "XPC or xpc may refer to:\n\nPecheneg language, ISO 639-3 code 'xpc'\nShuttle XPC, popular line of barebones computers and cases.\nSPEC XPC, the X Performance Characterization group working under the SPEC GPC group.\nXeroderma pigmentosum, complementation group C, a human gene\nxPC Target, a product from MathWorks\nXPC Golf Clubs, a proprietary brand from Golfsmith",
+          "cos_sim_score": 0.7187374830245972,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::XPC (gene)",
+          "title": "XPC (gene)",
+          "url": "https://en.wikipedia.org/wiki/XPC_(gene)",
+          "text": "Xeroderma pigmentosum, complementation group C, also known as XPC, is a protein which in humans is encoded by the XPC gene. XPC is involved in the recognition of bulky DNA adducts in nucleotide excision repair. It is located on chromosome 3.\n\nFunction\nThis gene encodes a component of the nucleotide excision repair (NER) pathway. There are multiple components involved in the NER pathway, including Xeroderma pigmentosum (XP) A-G and V, Cockayne syndrome (CS) A and B, and trichothiodystrophy (TTD) group A, etc. This component, XPC, plays an important role in the early steps of global genome NER, especially in damage recognition, open complex formation, and repair protein complex formation.\nThe complex of XPC-RAD23B is the initial damage recognition factor in global genomic nucleotide excision repair (GG-NER).  XPC-RAD23B recognizes a wide variety of lesions that thermodynamically destabilize DNA duplexes, including UV-induced photoproducts (cyclopyrimidine dimers and 6-4 photoproducts ), adducts formed by environmental mutagens such as benzo[a]pyrene or various aromatic amines, certain oxidative endogenous lesions such as cyclopurines and adducts formed by cancer chemotherapeutic drugs such as cisplatin. The presence of XPC-RAD23B is required for assembly of the other core NER factors and progression through the NER pathway both in vitro and in vivo. Although most studies have been performed with XPC-RAD23B, it is part of a trimeric complex with centrin-2, a calcium-binding protein of the calmodulin family.\n\nClinical significance\nMutations in this gene or some other NER components result in Xeroderma pigmentosum, a rare autosomal recessive disorder characterized by increased sensitivity to sunlight with the development of carcinomas at an early age.\n\nCancer\nDNA damage appears to be the primary underlying cause of cancer, and deficiencies in DNA repair genes likely underlie many forms of cancer.  If DNA repair is deficient, DNA damage tends to accumulate. Such excess DNA damage may increase mutations due to error-prone translesion synthesis. Excess DNA damage may also increase epigenetic alterations due to errors during DNA repair. Such mutations and epigenetic alterations may give rise to cancer.\nReductions in expression of DNA repair genes (usually caused by epigenetic alterations such as promoter hypermethylation) are very common in cancers, and are ordinarily much more frequent than mutational defects in DNA repair genes in cancers.  The table below shows that XPC expression was frequently epigenetically reduced in bladder cancer and also in non-small cell lung cancer, and also shows that XPC was more frequently reduced in the more advanced stages of these cancers.\n\nWhile epigenetic hypermethylation of the promoter region of the XPC gene was shown to be associated with low expression of XPC, another mode of epigenetic repression of XPC may also occur by over-expression of the microRNA miR-890.\n\nInteractions\nXPC (gene) has been shown to interact with ABCA1, CETN2 and XPB.\n\nReferences\nFurther reading\nExternal links\nGeneReviews/NIH/NCBI/UW entry on Xeroderma Pigmentosum",
+          "cos_sim_score": 0.6289732456207275,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Nucleotide excision repair",
+          "title": "Nucleotide excision repair",
+          "url": "https://en.wikipedia.org/wiki/Nucleotide_excision_repair",
+          "text": "Impact on cancer prognosis\nThe study of a hereditary cancer, xeroderma pigmentosum has helped identify several genes which encode proteins in the NER pathway, two of which are XPC and XPD.  XP is caused by a homozygous deficiency in UV DNA damage repair (GG-NER) which increases the patients' risk of skin cancer by 1000-fold. In heterozygous patients, the risk of cancer is sporadic but can be predicted based on analytical assessment of polymorphisms in XP related DNA repair genes purified from lymphocytes. In a study relapse rates of high-risk stage II and III colorectal cancers, XPD (ERCC2) polymorphism 2251A>C was significantly correlated with early relapse after chemotherapeutic treatment. Studies have indicated that the effects of polymorphic NER genes is additive, with greater frequency of variants, greater cancer risk presents.\n\nAging\nIn humans and mice, germline mutation in genes employed in NER cause features of premature aging. These genes and their corresponding proteins include ERCC1(ERCC1), ERCC2(XPD), ERCC3(XPB), ERCC4(XPF), ERCC5 (XPG), ERCC6(CSB) and ERCC8(CSA).\nDNA repair-deficient ERCC1 mutant mice show features of accelerated aging, and have a limited lifespan. Accelerated aging in the mutant involves numerous organs.\nMutations in the ERCC2(XPD) gene can lead to various syndromes, either xeroderma pigmentosum (XP), trichothiodystrophy (TTD) or a combination of XP and TTD (XPTTD), or a combination of XP and Cockayne syndrome (XPCS). TTD and CS both display features of premature aging.  These features may include sensorineural deafness, retinal degeneration, white matter hypomethylation, central nervous system calcification, reduced stature, and cachexia (loss of subcutaneous fat tissue). XPCS and TTD fibroblasts from ERCC2(XPD) mutant human and mouse show evidence of defective repair of oxidative DNA damages that may underlie the segmental progeroid (premature aging) symptoms (see DNA damage theory of aging).\nMutations in the ERCC3(XPB) gene can lead, in humans, to xeroderma pigmentosum (XP) or XP combined with Cockayne syndrome (XPCS).\nDeficiency of ERCC4(XPF) in humans results in a variety of conditions including accelerated aging.\nIn humans, mutational defects in the ERCC5(XPG) gene can cause either the cancer-prone condition xeroderma pigmentosum (XP) alone, or in combination with the severe neurodevelopmental disorder Cockayne syndrome (CS) or the infantile lethal cerebro-oculo-facio-skeletal syndrome. An ERCC5(XPG) mutant mouse model presents features of premature aging including cachexia and osteoporosis with pronounced degenerative phenotypes in both liver and brain. These mutant mice develop a multi-system premature aging degenerative phenotype that appears to strengthen the link between DNA damage and aging.(see DNA damage theory of aging).\nCockayne syndrome (CS) arises from germline mutations in either of two genes ERCC8(CSA) or ERCC6(CSB). ERCC8(CSA) mutations generally give rise to a more moderate form of CS than ERCC6(CSB) mutations. Mutations in the CSA gene account for about 20% of CS cases. Individuals with CSA and CSB are characterised by severe postnatal growth and intellectual disability and accelerated aging leading to premature death at the age of 12 to 16 years.\n\nDecline in NER with aging\nAs reviewed by Gorbunova et al., studies of NER in different cells and tissues from young and old individuals frequently have shown a decrease in NER capacity with increasing age.  This decline may be due to reduced constitutive levels of proteins employed in the NER pathway.\n\nNER associated genes\nSee also\nBase excision repair (BER)\nMismatch repair (MMR)\n\nReferences\nFurther reading\nExternal links\n Media related to Nucleotide excision repair at Wikimedia Commons",
+          "cos_sim_score": 0.46096599102020264,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Nucleotide excision repair",
+          "title": "Nucleotide excision repair",
+          "url": "https://en.wikipedia.org/wiki/Nucleotide_excision_repair",
+          "text": "GG-NER associated diseases\nMutations in GG-NER machinery are responsible for multiple genetic disorders including:\n\nXeroderma pigmentosum (XP): severe photosensitivity, high cancer rates in areas of the body exposed to the sun (e.g. skin)\n\nTranscription coupled repair (TC-NER)\nAt any given time, most of the genome in an organism is not undergoing transcription; there is a difference in NER efficiency between transcriptionally silent and transcriptionally active regions of the genome. For many types of lesions, NER repairs the transcribed strands of transcriptionally active genes faster than it repairs nontranscribed strands and transcriptionally silent DNA.\nTC-NER and GG-NER differ only in the initial steps of DNA damage recognition. The principal difference between TC-NER and GG-NER is that TC-NER does not require XPC or DDB proteins for distortion recognition in mammalian cells. Instead TC-NER initiates when RNA polymerase stalls at a lesion in DNA: the blocked RNA polymerase serves as a damage recognition signal, which replaces the need for the distortion recognition properties of the XPC-RAD23B and DDB complexes. CS proteins (CSA and CSB) bind some types of DNA damage instead of XPC-Rad23B.\nOther repair mechanisms are possible but less accurate and efficient.\n\nTC-NER associated diseases\nTC-NER initiates when RNA polymerase stalls at a lesion in DNA, whereupon protein complexes help move the polymerase backwards. Mutations in TC-NER machinery are responsible for multiple genetic disorders including:\n\nTrichothiodystrophy (TTD): some individuals are photosensitive, ichthyosis, mental/physical retardation\nCockayne syndrome (CS): photosensitivity, intellectual disability, progeria-like features, microcephaly\n\nDual incision\nTranscription factor II H (TFIIH) is the key enzyme involved in dual excision. TFIIH and XPG are first recruited to the site of DNA damage (XPG stabilizes TFIIH). The TFIIH subunits of XPD and XPB act as a 5'-3' and 3'-5' helicase, respectively \u2014 they help unwind DNA and generate a junction between the double-stranded and single-stranded DNA around the transcription bubble. In addition to stabilizing TFIIH, XPG also has endonuclease activity; it cuts DNA damage on the 3' side while the XPF\u2013ERCC1 heterodimeric protein cuts on the 5' side. The dual incision leads to the removal of a ssDNA with a single strand gap of 25~30 nucleotides. The small, excised, damage-containing DNA (sedDNA) oligonucleotides are initially released from the duplex in complex with TFIIH but then dissociate in an ATP-dependent manner and become bound to replication protein A (RPA). Inhibition of gap filling DNA synthesis and ligation results in an accumulation of RPA-bound sedDNAs in the cell.\nReplication protein A (RPA) and XPA are the last two proteins associated with the main NER repair complex. These two proteins are present prior to TFIIH binding since they are involved with verifying DNA damage. They may also protect single-stranded DNA. After verification, the 5' side incision is made and DNA repair begins before the 3' side incision. This helps reduce exposed single stranded DNA during the repair process.\n\nRepair and ligation\nReplication factor C (RFC) loads the Proliferating Cell Nuclear Antigen (PCNA) onto the DNA strand. This allows DNA polymerases implicated in repair (\u03b4, \u03b5 and/or \u03ba) to copy the undamaged strand via translocation. DNA ligase I and Flap endonuclease 1 or the Ligase-III-XRCC1 complex seal the nicks to complete NER.",
+          "cos_sim_score": 0.3743157684803009,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Genome editing",
+          "title": "Genome editing",
+          "url": "https://en.wikipedia.org/wiki/Genome_editing",
+          "text": "Multiplex Automated Genomic Engineering (MAGE)\nThe methods for scientists and researchers wanting to study genomic diversity and all possible associated phenotypes were very slow, expensive, and inefficient. Prior to this new revolution, researchers would have to do single-gene manipulations and tweak the genome one little section at a time, observe the phenotype, and start the process over with a different single-gene manipulation. Therefore, researchers at the Wyss Institute at Harvard University designed the MAGE, a powerful technology that improves the process of in vivo genome editing. It allows for quick and efficient manipulations of a genome, all happening in a machine small enough to put on top of a small kitchen table. Those mutations combine with the variation that naturally occurs during cell mitosis creating billions of cellular mutations.\nChemically combined, synthetic single-stranded DNA (ssDNA) and a pool of oligonucleotides are introduced at targeted areas of the cell, thereby creating genetic modifications. The cyclical process involves transformation of ssDNA (by electroporation) followed by outgrowth, during which bacteriophage homologous recombination proteins mediate annealing of ssDNAs to their genomic targets. Experiments targeting selective phenotypic markers are screened and identified by plating the cells on differential medias. Each cycle ultimately takes 2.5 hours to process, with additional time required to grow isogenic cultures and characterize mutations. By iteratively introducing libraries of mutagenic ssDNAs targeting multiple sites, MAGE can generate combinatorial genetic diversity in a cell population. There can be up to 50 genome edits, from single nucleotide base pairs to whole genome or gene networks simultaneously with results in a matter of days.\nMAGE experiments can be divided into three classes, characterized by varying degrees of scale and complexity: (i) many target sites, single genetic mutations; (ii) single target site, many genetic mutations; and (iii) many target sites, many genetic mutations. An example of class three was reflected in 2009, where Church and colleagues were able to program Escherichia coli to produce five times the normal amount of lycopene, an antioxidant normally found in tomato seeds and linked to anti-cancer properties. They applied MAGE to optimize the 1-deoxy-D-xylulose 5-phosphate (DXP) metabolic pathway in Escherichia coli to overproduce isoprenoid lycopene. It took them about 3 days and just over $1,000 in materials. The ease, speed, and cost efficiency in which MAGE can alter genomes can transform how industries approach the manufacturing and production of important compounds in the bioengineering, bioenergy, biomedical engineering, synthetic biology, pharmaceutical, agricultural, and chemical industries.\n\nApplications\nAs of 2012, efficient genome editing had been developed for a wide range of experimental systems ranging from plants to animals, often beyond clinical interest, and was becoming a standard experimental strategy in research labs. The recent generation of rat, zebrafish, maize and tobacco ZFN-mediated mutants and the improvements in TALEN-based approaches testify to the significance of the methods, and the list is expanding rapidly. Genome editing with engineered nucleases will likely contribute to many fields of life sciences from studying gene functions in plants and animals to gene therapy in humans. For instance, the field of synthetic biology which aims to engineer cells and organisms to perform novel functions, is likely to benefit from the ability of engineered nuclease to add or remove genomic elements and therefore create complex systems. In addition, gene functions can be studied using stem cells with engineered nucleases.\nListed below are some specific tasks this method can carry out:\n\nTargeted gene mutation\nGene therapy\nCreating chromosome rearrangement\nStudy gene function with stem cells\nTransgenic animals\nEndogenous gene labeling\nTargeted transgene addition",
+          "cos_sim_score": 0.33689484000205994,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

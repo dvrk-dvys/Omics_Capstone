@@ -1,0 +1,160 @@
+{
+  "rf_rank": 8,
+  "probe_id": "11732415_s_at",
+  "gene_symbol": "TIAM1",
+  "score": 0.76,
+  "rf_n_nodes": 5,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 1.1607,
+  "log_fc": 1.1607,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11732415_s_at",
+  "max_score": 0.76,
+  "mean_abs_fold_change": 1.1607,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T17:30:17",
+  "interpretation": "TIAM1 encodes a guanine nucleotide exchange factor that activates RHO-like proteins, particularly RAC1 and CDC42, which are crucial for regulating cytoskeletal dynamics, cell adhesion, and migration. These processes are vital in bone remodeling and repair, which are disrupted in conditions like Steroid-Induced Osteonecrosis of the Femoral Head (SONFH). While the retrieved evidence does not directly link TIAM1 to SONFH, its role in cytoskeletal regulation suggests a potential involvement in the pathophysiology of the disease, particularly in the context of steroid-induced cellular changes. Therefore, the evidence is categorized as indirect, with moderate confidence due to the biological relevance of TIAM1 in cellular processes that could impact bone health. As such, TIAM1 may serve as a moderate potential biomarker for early detection of SONFH, warranting further investigation.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 3",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "TIAM1 is implicated in cytoskeletal regulation, which may influence the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "TIAM1 (Q13009). https://www.uniprot.org/uniprotkb/Q13009",
+    "TIAM1 (Q13009-2). https://www.uniprot.org/uniprotkb/Q13009-2",
+    "TIAM1 \u2014 TIAM1. https://platform.opentargets.org/target/ENSG00000156299",
+    "TIAM1 \u2194 neurodevelopmental disorder with language delay and seizures. https://platform.opentargets.org/target/ENSG00000156299/associations",
+    "TIAM1 \u2194 alcohol drinking. https://platform.opentargets.org/target/ENSG00000156299/associations",
+    "TIAM1 \u2194 complex neurodevelopmental disorder. https://platform.opentargets.org/target/ENSG00000156299/associations",
+    "TIAM1 \u2194 nerve plexus disease. https://platform.opentargets.org/target/ENSG00000156299/associations",
+    "T-cell lymphoma invasion and metastasis-inducing protein 1. https://en.wikipedia.org/wiki/T-cell_lymphoma_invasion_and_metastasis-inducing_protein_1",
+    "Myc. https://en.wikipedia.org/wiki/Myc",
+    "Synaptic stabilization. https://en.wikipedia.org/wiki/Synaptic_stabilization",
+    "Chromosome 21. https://en.wikipedia.org/wiki/Chromosome_21"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5683,
+    "completion_tokens": 250,
+    "total_tokens": 5933,
+    "estimated_cost_usd": 0.001002
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q13009",
+          "title": "TIAM1 (Q13009)",
+          "url": "https://www.uniprot.org/uniprotkb/Q13009",
+          "text": "Protein: Rho guanine nucleotide exchange factor TIAM1\nFunction: Guanyl-nucleotide exchange factor that activates RHO-like proteins and connects extracellular signals to cytoskeletal activities. Activates RAC1, CDC42, and to a lesser extent RHOA and their downstream signaling to regulate processes like cell adhesion and cell migration",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q13009-2",
+          "title": "TIAM1 (Q13009-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q13009-2",
+          "text": "Protein: Isoform 2 of Rho guanine nucleotide exchange factor TIAM1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000156299::function",
+          "title": "TIAM1 \u2014 TIAM1",
+          "url": "https://platform.opentargets.org/target/ENSG00000156299",
+          "text": "Function: Guanyl-nucleotide exchange factor that activates RHO-like proteins and connects extracellular signals to cytoskeletal activities. Activates RAC1, CDC42, and to a lesser extent RHOA and their downstream signaling to regulate processes like cell adhesion and cell migration. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000156299::MONDO_0859256",
+          "title": "TIAM1 \u2194 neurodevelopmental disorder with language delay and seizures",
+          "url": "https://platform.opentargets.org/target/ENSG00000156299/associations",
+          "text": "Disease: neurodevelopmental disorder with language delay and seizures\nAssociation score: 0.624",
+          "cos_sim_score": 0.6239819350488075,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000156299::EFO_0004329",
+          "title": "TIAM1 \u2194 alcohol drinking",
+          "url": "https://platform.opentargets.org/target/ENSG00000156299/associations",
+          "text": "Disease: alcohol drinking\nDescription: Behaviors associated with the ingesting of alcoholic beverages, including social drinking.\nAssociation score: 0.405",
+          "cos_sim_score": 0.4051744336309519,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000156299::MONDO_0100038",
+          "title": "TIAM1 \u2194 complex neurodevelopmental disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000156299/associations",
+          "text": "Disease: complex neurodevelopmental disorder\nDescription: A disorder that involves more than one phenotype associated with the central nervous system, including but not limited to intellectual disability, autism, and seizures (epilepsy).\nAssociation score: 0.370",
+          "cos_sim_score": 0.3695798546847018,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000156299::EFO_0009559",
+          "title": "TIAM1 \u2194 nerve plexus disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000156299/associations",
+          "text": "Disease: nerve plexus disease\nDescription: A disease that involves the nerve plexus.\nAssociation score: 0.314",
+          "cos_sim_score": 0.3138811405657741,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::T-cell lymphoma invasion and metastasis-inducing protein 1",
+          "title": "T-cell lymphoma invasion and metastasis-inducing protein 1",
+          "url": "https://en.wikipedia.org/wiki/T-cell_lymphoma_invasion_and_metastasis-inducing_protein_1",
+          "text": "Rho guanine nucleotide exchange factor TIAM1 is a protein that in humans is encoded by the TIAM1 gene.\n\nStructure\nTIAM1 is tightly associate with BAIAP2 as a subunit.  It contains one DH (DBL-homology) domain, one PDZ domain, two PH domains and one Ras-binding RBD domain.\n\nFunction\nTIAM1 modulates the activity of Rho GTP-binding proteins and connects extracellular signals to cytoskeletal activities. In addition, TIAM1 activates Rac1, CDC42, and to a lesser extent RhoA.\n\nClinical significance\nTIAM1 is found in virtually all tumor cell lines examined including B- and T-lymphomas, neuroblastomas, melanomas and carcinomas.\n\nInteractions\nT-cell lymphoma invasion and metastasis-inducing protein 1 has been shown to interact with ANK1, Myc, RAC1 and PPP1R9B.\nTiam1 interacts also with para-cingulin, that plays a role in recruiting Tiam1 to junctions and thus activate Rac1 at epithelial junctions.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.4303930103778839,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Myc",
+          "title": "Myc",
+          "url": "https://en.wikipedia.org/wiki/Myc",
+          "text": "Clinical significance\nA large body of evidence shows that Myc genes and proteins are highly relevant for treating tumors. Except for early response genes, Myc universally upregulates gene expression.  Furthermore, the upregulation is nonlinear.  Genes for which expression is already significantly upregulated in the absence of Myc are strongly boosted in the presence of Myc, whereas genes for which expression is low in the absence Myc get only a small boost when Myc is present.\nInactivation of SUMO-activating enzyme (SAE1 / SAE2) in the presence of Myc hyperactivation results in mitotic catastrophe and cell death in cancer cells.  Hence inhibitors of SUMOylation may be a possible treatment for cancer.\nAmplification of the MYC gene was found in a significant number of epithelial ovarian cancer cases. In TCGA datasets, the amplification of Myc occurs in several cancer types, including breast, colorectal, pancreatic, gastric, and uterine cancers.\nIn the experimental transformation process of normal cells into cancer cells, the MYC gene can cooperate with the RAS gene.\nExpression of Myc is highly dependent on BRD4 function in some cancers. BET inhibitors have been used to successfully block Myc function in pre-clinical cancer models and are currently being evaluated in clinical trials.\nMYC expression is controlled by a wide variety of noncoding RNAs, including miRNA, lncRNA, and circRNA. Some of these RNAs have been shown to be specific for certain types of human tissues and tumors. Changes in the expression of such RNAs can potentially be used to develop targeted tumor therapy.\n\nMYC rearrangements\nMYC chromosomal rearrangements (MYC-R) occur in 10% to 15% of diffuse large B-cell lymphoma (DLBCLs), an aggressive Non-Hodgkin Lymphoma (NHL). Patients with MYC-R have inferior outcomes and can be classified as single-hit, when they only have MYC-R; as double hit when the rearrangement is accompanied by a translocation of BCL2 or BCL6; and as triple hit when MYC-R includes both BCL2 and BCL6. Double and triple hit lymphoma have been recently classified as high-grade B-cell lymphoma (HGBCL) and it is associated with a poor prognosis.\nMYC-R in DLBCL/HGBCL is believed to arise through the aberrant activity of activation-induced cytidine deaminase (AICDA), which facilitates somatic hypermutation (SHM) and class-switch recombination (CSR). Although AICDA primarily targets IG loci for SHM and CSR, its off-target mutagenic effects can impact lymphoma-associated oncogenes like MYC, potentially leading to oncogenic rearrangements. The breakpoints in MYC rearrangements show considerable variability within the MYC region. These breakpoints may occur within the so-called \"genic cluster,\" a region spanning approximately 1.5 kb upstream of the transcription start site, as well as the first exon and intron of MYC. \nFluorescence in situ hybridization (FISH) has become a routine practice in many clinical laboratories for lymphoma characterization. A break-apart (BAP) FISH probe is commonly utilized for the detection of MYC-R due to the variability of breakpoints in the MYC locus and the diversity of rearrangement partners, including immunoglobulin (IG) and non-IG partners (i.e. BCL2/BCL6). The MYC BAP probe includes a red and a green probe which hybridize 5' and 3' to the MYC gen, respectively. In an intact MYC locus, these probes yield a fusion signal. When MYC-R occur, two types of signals can be observed:\n\nBalanced patterns: These patterns present separate red and green signals.\nUnbalanced patterns: When isolated red or green signals in the absence of the corresponding green or red signal is observed. Unbalanced MYC-R are frequently associated with increased MYC expression.\nThere is a large variability in the interpretation of unbalanced MYC BAP results among the scientists, which can impact diagnostic classification and therapeutic management of the patients.",
+          "cos_sim_score": 0.24291011691093445,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Synaptic stabilization",
+          "title": "Synaptic stabilization",
+          "url": "https://en.wikipedia.org/wiki/Synaptic_stabilization",
+          "text": "Synaptic stabilization is crucial in the developing and adult nervous systems and is considered a result of the late phase of long-term potentiation (LTP). The mechanism involves strengthening and maintaining active synapses through increased expression of cytoskeletal and extracellular matrix elements and postsynaptic scaffold proteins, while pruning less active ones. For example, cell adhesion molecules (CAMs) play a large role in synaptic maintenance and stabilization. Gerald Edelman discovered CAMs and studied their function during development, which showed CAMs are required for cell migration and the formation of the entire nervous system. In the adult nervous system, CAMs play an integral role in synaptic plasticity relating to learning and memory.\n\nTypes of CAMs\nSynCAMs\nSynaptic cell adhesion molecules (CAMs) play a crucial role in axon pathfinding and synaptic establishment between neurons during neurodevelopment and are integral members in many synaptic processes including the correct alignment of pre- and post-synaptic signal transduction pathways, vesicular recycling in regards to endocytosis and exocytosis, integration of postsynaptic receptors and  anchoring to the cytoskeleton to ensure stability of synaptic components.\nSynCAM's (also known as Cadm or nectin-like molecules) are a specific type of synaptic CAM found in vertebrates that promotes growth and stabilization of excitatory (not inhibitory) synapses. SynCAM's are localized primarily in the brain at both pre- and postsynaptic sites and their structures consist of intracellular FERM and PDZ binding domains, a single transmembrane domain, and three extracellular Ig-domains. During neurodevelopment, SynCAMs such as SynCAM1 act as \"contact sensors\" of axonal growth cones accumulating rapidly when axo-dendritic connections are made and helping to form a stable adhesion complex.\nsynCAM1 along with neuroligin are the two CAM's known to be sufficient to initiate the formation of presynaptic terminals, as addition of synCAM1 to media of co-cultured neuronal and non-neuronal cells lead to the establishment of presynaptic terminals. Homophillic binding of two synCAM1 molecules on the filopodia of axonal growth cone and dendritic spine allow for initial contact between pre- and postsynaptic cell to be made.\nsynCAMs belong to the Ig superfamily of proteins. The cytosolic PDZ domains of synCAMs imbedded in the post-synaptic membrane interact with post-synaptic scaffold protein PSD-95 which helps anchor the complex to the underlying cytoskeleton.\n\nCadherin-catenin\nCadherins are calcium- dependent, homophilic cell adhesion molecules that form complexes with cytosolic partners known as catenins. Components of this complex bind to a number of different scaffolding proteins, phosphatases, kinases, and receptors. Classical cadherins have five extracellular repeating structures which bind calcium, a single transmembrane domain, and an intracellular tail with a distal cytosolic domain that binds a catenin partner. Recent work has implicated the cadherin-catenin complex in a number of different central nervous system processes such as synaptic stabilization and plasticity.\nMany cadherins in the central nervous system exhibit distinct spatial and temporal expression patterns. For example, N-cadherin is widely expressed at the developing synapse and later remains near the mature active zone implicating that this complex may be well-suited to provide a link between structural changes and synaptic stability. In fact, local synaptic activity changes impact the expression of the cadherin-catenin complexes. An increase in activity at a particular spine leads to the dimerization of N-cadherin which is then cleaved leading the repression of CBP/CREB transcription. This repression has many developmental and plasticity related implications.\nIn the case of dendritic spine formation and pruning, a competition hypothesis has been proposed and corroborated. This hypothesis suggests that relative levels of cadherin-catenin complexes, which are distributed amongst spines in a local area in an activity-dependent manner, determines the fate of individual spines. That is, the inter-spine competition for \u03b2-catenin determines whether a spine will be matured (increased number of complexes) or pruned (decreased number of complexes). This is a critical mechanism during the refinement of cortical circuitry that occurs throughout development.",
+          "cos_sim_score": 0.17195069789886475,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Myc",
+          "title": "Myc",
+          "url": "https://en.wikipedia.org/wiki/Myc",
+          "text": "Interactions\nMyc has been shown to interact with:\n\nSee also\nMyc-tag\nC-myc mRNA\n\nReferences\nFurther reading\nExternal links\nInterPro signatures for protein family: IPR002418, IPR011598, IPR003327\nThe Myc Protein\nNCBI Human Myc protein\nMyc cancer gene\nmyc+Proto-Oncogene+Proteins at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nGenerating iPS Cells from MEFS through Forced Expression of Sox-2, Oct-4, c-Myc, and Klf4 Archived 2008-04-09 at the Wayback Machine\nDrosophila Myc - The Interactive Fly\nFactorBook C-Myc\nPDBe-KB provides an overview of all the structure information available in the PDB for Human Myc proto-oncogene protein",
+          "cos_sim_score": 0.14851371943950653,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Chromosome 21",
+          "title": "Chromosome 21",
+          "url": "https://en.wikipedia.org/wiki/Chromosome_21",
+          "text": "Cytogenetic band\nReferences\nAntonarakis SE, Lyle R, Dermitzakis ET, Reymond A, Deutsch S (2004). \"Chromosome 21 and down syndrome: from genomics to pathophysiology\". Nat Rev Genet. 5 (10): 725\u201338. doi:10.1038/nrg1448. PMID 15510164. S2CID 5487794.\nAntonarakis SE, Lyle R, Deutsch S, Reymond A (2002). \"Chromosome 21: a small land of fascinating disorders with unknown pathophysiology\". Int J Dev Biol. 46 (1): 89\u201396. PMID 11902692.\nAntonarakis SE (2001). \"Chromosome 21: from sequence to applications\". Curr Opin Genet Dev. 11 (3): 241\u20136. doi:10.1016/S0959-437X(00)00185-4. PMID 11377958.\nGilbert F (1997). \"Disease genes and chromosomes: disease maps of the human genome. Chromosome 21\". Genet Test. 1 (4): 301\u20136. doi:10.1089/gte.1997.1.301. PMID 10464663.\nHattori M, Fujiyama A, Taylor TD, Watanabe H, Yada T, Park HS, Toyoda A, Ishii K, Totoki Y, Choi DK, Groner Y, Soeda E, Ohki M, Takagi T, Sakaki Y, Taudien S, Blechschmidt K, Polley A, Menzel U, Delabar J, Kumpf K, Lehmann R, Patterson D, Reichwald K, Rump A, Schillhabel M, Schudy A, Zimmermann W, Rosenthal A, Kudoh J, Schibuya K, Kawasaki K, Asakawa S, Shintani A, Sasaki T, Nagamine K, Mitsuyama S, Antonarakis SE, Minoshima S, Shimizu N, Nordsiek G, Hornischer K, Brant P, Scharfe M, Schon O, Desario A, Reichelt J, Kauer G, Blocker H, Ramser J, Beck A, Klages S, Hennig S, Riesselmann L, Dagand E, Haaf T, Wehrmeyer S, Borzym K, Gardiner K, Nizetic D, Francis F, Lehrach H, Reinhardt R, Yaspo ML (2000). \"The DNA sequence of human chromosome 21\". Nature. 405 (6784): 311\u20139. Bibcode:2000Natur.405..311H. doi:10.1038/35012518. PMID 10830953.\nSawinska M, Ladon D (2004). \"Mechanism, detection and clinical significance of the reciprocal translocation t(12;21)(p12;q22) in the children suffering from acute lymphoblastic leukaemia\". Leuk Res. 28 (1): 35\u201342. doi:10.1016/S0145-2126(03)00160-7. PMID 14630078.\nRauch, Anita; Thiel, Christian T.; Schindler, Detlev; Wick, Ursula; Crow, Yanick J.; Ekici, Arif B.; van Essen, Anthonie J.; Goecke, Timm O.; Al-Gazali, Lihadh; Chrzanowska, Krystyna H.; Zweier, Christiane; Brunner, Han G.; Becker, Kristin; Curry, Cynthia J.; Dallapiccola, Bruno; Koenraad Devriendt; Arnd D\u00f6rfler; Esther Kinning; Andr\u00e9 Megarbane; Peter Meinecke; Robert K. Semple; Stephanie Spranger; Annick Toutain; Richard C. Trembath; Egbert Voss; Louise Wilson; Raoul Hennekam; Francis de Zegher; Helmut-G\u00fcnther D\u00f6rr; Andr\u00e9 Reis (2008). \"Mutations in the Pericentrin (PCNT) Gene Cause Primordial Dwarfism\". Science. 319 (5864): 816\u20139. Bibcode:2008Sci...319..816R. doi:10.1126/science.1151174. PMID 18174396. S2CID 23055733.\n\nExternal links",
+          "cos_sim_score": 0.140022873878479,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

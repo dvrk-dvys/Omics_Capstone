@@ -1,0 +1,151 @@
+{
+  "rf_rank": 27,
+  "probe_id": "11726384_at",
+  "gene_symbol": "FRY",
+  "score": 0.6,
+  "rf_n_nodes": 8,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 1.5816,
+  "log_fc": 1.5816,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11726384_at",
+  "max_score": 0.6,
+  "mean_abs_fold_change": 1.5816,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T20:18:25",
+  "interpretation": "The FRY gene encodes the protein furry homolog, which is essential for maintaining the structural integrity of mitotic centrosomes and spindle bipolarity during cell division. This function is critical in processes such as cell proliferation and tissue regeneration, which may be relevant in the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), where bone tissue integrity is compromised. However, the retrieved evidence does not directly link FRY to SONFH, indicating a lack of specific studies connecting this gene to the disease. Therefore, while FRY may play a role in cellular processes that could impact bone health, its direct relevance as a biomarker for SONFH is weak. The evidence primarily supports its biological function without strong disease-specific grounding, leading to a conclusion that its potential as a clinical biomarker for early detection of SONFH is limited.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "FRY is involved in cellular processes that may indirectly relate to bone health but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "FRY (Q5TBA9). https://www.uniprot.org/uniprotkb/Q5TBA9",
+    "FRY \u2014 FRY. https://platform.opentargets.org/target/ENSG00000073910",
+    "FRY \u2194 schizophrenia. https://platform.opentargets.org/target/ENSG00000073910/associations",
+    "FRY \u2194 smoking initiation. https://platform.opentargets.org/target/ENSG00000073910/associations",
+    "FRY \u2194 hypothyroidism. https://platform.opentargets.org/target/ENSG00000073910/associations",
+    "FRY \u2194 liver disease. https://platform.opentargets.org/target/ENSG00000073910/associations",
+    "Gene & Jude's. https://en.wikipedia.org/wiki/Gene_%26_Jude%27s",
+    "Fried chicken stereotype. https://en.wikipedia.org/wiki/Fried_chicken_stereotype",
+    "Adam Rutherford. https://en.wikipedia.org/wiki/Adam_Rutherford"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5568,
+    "completion_tokens": 244,
+    "total_tokens": 5812,
+    "estimated_cost_usd": 0.000982
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q5TBA9",
+          "title": "FRY (Q5TBA9)",
+          "url": "https://www.uniprot.org/uniprotkb/Q5TBA9",
+          "text": "Protein: Protein furry homolog\nFunction: Plays a crucial role in the structural integrity of mitotic centrosomes and in the maintenance of spindle bipolarity by promoting PLK1 activity at the spindle poles in early mitosis. May function as a scaffold promoting the interaction between AURKA and PLK1, thereby enhancing AURKA-mediated PLK1 phosphorylation",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000073910::function",
+          "title": "FRY \u2014 FRY",
+          "url": "https://platform.opentargets.org/target/ENSG00000073910",
+          "text": "Function: Plays a crucial role in the structural integrity of mitotic centrosomes and in the maintenance of spindle bipolarity by promoting PLK1 activity at the spindle poles in early mitosis. May function as a scaffold promoting the interaction between AURKA and PLK1, thereby enhancing AURKA-mediated PLK1 phosphorylation. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000073910::MONDO_0005090",
+          "title": "FRY \u2194 schizophrenia",
+          "url": "https://platform.opentargets.org/target/ENSG00000073910/associations",
+          "text": "Disease: schizophrenia\nDescription: A major psychotic disorder characterized by abnormalities in the perception or expression of reality. It affects the cognitive and psychomotor functions. Common clinical signs and symptoms include delusions, hallucinations, disorganized thinking, and retreat from reality.\nAssociation score: 0.410",
+          "cos_sim_score": 0.41006692178866166,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000073910::EFO_0005670",
+          "title": "FRY \u2194 smoking initiation",
+          "url": "https://platform.opentargets.org/target/ENSG00000073910/associations",
+          "text": "Disease: smoking initiation\nDescription: initation of the habit of smoking, the inhaling and exhaling of tobacco smoke.\nAssociation score: 0.331",
+          "cos_sim_score": 0.33112476955820913,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000073910::EFO_0004705",
+          "title": "FRY \u2194 hypothyroidism",
+          "url": "https://platform.opentargets.org/target/ENSG00000073910/associations",
+          "text": "Disease: hypothyroidism\nDescription: Abnormally low levels of thyroid hormone.\nAssociation score: 0.290",
+          "cos_sim_score": 0.28972446942572117,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000073910::EFO_0001421",
+          "title": "FRY \u2194 liver disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000073910/associations",
+          "text": "Disease: liver disease\nDescription: Pathological processes of the LIVER.\nAssociation score: 0.287",
+          "cos_sim_score": 0.28672565237907466,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Gene & Jude's",
+          "title": "Gene & Jude's",
+          "url": "https://en.wikipedia.org/wiki/Gene_%26_Jude%27s",
+          "text": "Gene & Jude's is a popular and iconic hot dog stand in River Grove, Illinois, founded in 1946 by Chicago city worker Gene Mormino. The stand is famous for its limited approach to the Chicago-style hot dog, its toppings departing from tradition by including only mustard, onions, relish, sport peppers and fresh cut French fries placed on top, known as a Depression Dog. The menu is limited to hot dogs, double dogs, tamales and fries, and notably lacks ketchup.\n\nHistory\nIn 1946 city worker Gene Mormino was at a Cubs game at Wrigley Field when Mormino decided if he added French fries to his hot dog it would give it a gratifying dose of saltiness and crunchiness.  Based on that idea, he started a hot dog stand at Polk & Western Streets in Chicago. The restaurant quickly gained popularity, but three years later Mormino lost the entire stand in a card game in 1949.\nIn 1950 Mormino gathered enough money and moved operations to the current location in River Grove, Illinois also taking in friend and co-worker Jude DeSantis. During the 50s, Gene and Jude's was a frame building and was not actually called Gene & Jude's - the sign of the stand simply said \"Vienna Red Hots.\" Customers referred to it as \"River Road Hot Dogs\" or \"Vienna's.\" During the 1950s, Gene & Jude's had a takeout window, and its drinks were sold in bottles.\nGene and Jude's is still family owned and operated.\nIn 2006, Gene's & Jude's was inducted into the Vienna Beef Hot Dog Hall of Fame.  In 2011, in a competition of 64 hot dog stands across the country, it was chosen by the magazine \"Every Day with Rachael Ray\" and the food blog Serious Eats as the best hot dog in America.\n\nReferences\nExternal links\n\nOfficial website\nGene's & Jude's\nGene's & Jude's Roadfood review Archived 2008-10-08 at the Wayback Machine\nGene's & Jude's Tripadvisor review",
+          "cos_sim_score": 0.421416699886322,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Fried chicken stereotype",
+          "title": "Fried chicken stereotype",
+          "url": "https://en.wikipedia.org/wiki/Fried_chicken_stereotype",
+          "text": "The fried chicken stereotype is an anti-African American racist trope that has its roots in the American Civil War and traditional slave foods. The popularity of fried chicken in the Southern United States and its portrayal in films like The Birth of a Nation contributed to the development of this stereotype, and restaurant brands such as Coon Chicken Inn further commercialized it. Though fried chicken is now also celebrated as soul food, its association with African American culture is sometimes considered a sensitive issue. Public figures like Tiger Woods have been targeted with fried chicken-related remarks, and organizations have been criticized for serving it during Black History Month or making racially insensitive references.\n\nHistory\nSince the American Civil War, traditional slave foods like Southern fried chicken, watermelon, and chitterlings have suffered a strong association with stereotypes of African Americans and blackface minstrelsy. The reasons for this are various. Chicken dishes were popular among enslaved people before the American Civil War, as chickens were generally the only animals enslaved people were allowed to own, as well as being cheap and easy to raise.\nThe notion of African Americans having a special affinity for fried chicken has its origins in both the popularity of chicken in the cuisine of the Southern United States as well as the 1915 silent film The Birth of a Nation, in which a rowdy African American man is seen eating fried chicken in a legislative hall. The stereotype was commercialized in the 20th century by restaurants such as Coon Chicken Inn, which selected exaggerated depictions of Black people as mascots, implying quality by their association with the stereotype.\nAlthough also being acknowledged positively as \"soul food\" today, the affinity that African American culture has for fried chicken has been considered by some to be a delicate, often pejorative issue. Melissa Thompson, a British food columnist, has expressed her reluctance to admit her love of fried chicken as a Black British, due to the stereotype associated with fried chicken in American culture.\n\nUses\nOn two occasions, the golfer Tiger Woods has been the target of remarks regarding fried chicken. After Woods became the youngest Masters Tournament champion in 1997, golfer Fuzzy Zoeller said Woods should avoid serving fried chicken \"or collard greens or whatever the hell they serve\" at the Champions' Dinner the following year. Similarly, golfer Sergio Garc\u00eda joked in 2013, \"we'll have [Woods] 'round for dinner every night. We will serve fried chicken\" when asked if he would invite Woods to his house. Woods said Garcia's remark was \"wrong, hurtful and clearly inappropriate\". Both Zoeller and Garc\u00eda later apologized to Woods.\nVarious groups and organizations have been criticized for serving fried chicken during Black History Month, making references to \"Obama Fried Chicken\" and other racial stereotypes associated with the food.\n\nSee also\nCoon card\nCoon Chicken Inn\nGrape drink\nStereotypes of African Americans\nWatermelon stereotype\n\nReferences\nFurther reading\nWilliams-Forson, Psyche A. (2001). \"Suckin' the Chicken Bone Dry: African American Women, Fried Chicken, and the Power of a National Narrative\". In Inness, Sherrie A. (ed.). Cooking Lessons: The Politics of Gender and Food. Lanham, Md.: Rowman and Littlefield. pp. 169\u2013192. ISBN 978-0-7425-7535-6.",
+          "cos_sim_score": 0.34174683690071106,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Adam Rutherford",
+          "title": "Adam Rutherford",
+          "url": "https://en.wikipedia.org/wiki/Adam_Rutherford",
+          "text": "Adam David Rutherford (born January 1975) is an English geneticist and science communicator. He was an audio-visual content editor for the journal Nature for a decade, and is a frequent contributor to the newspaper The Guardian. He formerly hosted the BBC Radio 4 programmes Inside Science and (with Hannah Fry) The Curious Cases of Rutherford and Fry; has produced several science documentaries; and has published books related to genetics and the origin of life.\nHe is an honorary senior research associate in the division of biosciences at University College London.\nRutherford became President of Humanists UK in June 2022, succeeding Alice Roberts.\n\nEarly life and education\nRutherford, who is half-Guyanese Indian, was born in Ipswich in the East of England and was privately educated at Ipswich School.\nHe was admitted to the medical school at University College London, but transferred to a degree in evolutionary genetics, including a project under Steve Jones studying stalk-eyed flies. He was awarded a PhD in genetics in 2002 by University College London for research completed at the UCL Institute of Child Health at Great Ormond Street Hospital supervised by Jane Sowden. His PhD investigated the role of the gene CHX10 on eye development, with focus on the effect of mutations in this gene on the development of eye disorders.\nRutherford's other academic research was also on genetic causes of eye disorders, including the relation of retinoschisin to retinoschisis, the role of mutations of the gene CRX in retinal dystrophy, and the role of the gene CHX10 in microphthalmia in humans and mice.\n\nCareer\nRutherford published a book on the topic of the creation of life. The United Kingdom printing has been called \"two books in one\", since Creation: The Origin of Life and Creation: The Future of Life are printed back-to-back so that one can read the book from either end. Among its topics, the first part of the book argues in support of the theory, first proposed by Thomas Gold, that life emerged not in primordial warm ponds, but in extremophile conditions in the deep ocean, while the second part discusses synthetic biology \u2013 the use of genetic modification to create new organisms. In the U.S., this book is published in a more conventional format with the title Creation: How Science Is Reinventing Life Itself.  He was also one of the authors whose works are included in the compilation The Atheist's Guide to Christmas.\nRutherford was the Podcast Editor and the audio-video editor for the journal Nature until 2013, being responsible for all the publication's published audio, video, and podcasts. He also published audio interviews with notable personalities, including Paul Bettany on his role playing Charles Darwin in the movie Creation, and David Attenborough in his documentary Charles Darwin and the Tree of Life. He wrote editorials on diverse other topics, ranging from the overlap of art and science to reviews of science-themed movies.\nRutherford is a frequent contributor to The Guardian, writing primarily on science topics. He wrote a blog series covering his thoughts and analysis while re-reading Charles Darwin's On the Origin of Species, and has written articles supporting the teaching of evolution in schools, and criticizing the teaching of creationism as science.\nHe also writes on religion, notably a 10-part series on his experience participating in the Alpha course, and on New Age themes and alternative medicine, including a review critical of Rupert Sheldrake's A New Science of Life, and criticism of the lack of controls on advertising claims for homeopathy.\nAs a guest writer, he published an article in Wired on the possibility of using DNA for information storage.\nRutherford has returned to University College London, where he is an honorary senior research associate in the division of biosciences and teaches courses on genetics and communications.",
+          "cos_sim_score": 0.28209733963012695,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Adam Rutherford",
+          "title": "Adam Rutherford",
+          "url": "https://en.wikipedia.org/wiki/Adam_Rutherford",
+          "text": "Personal life\nRutherford is a founding member of the Celeriac XI Cricket club.\n\nBibliography\nCreation: The Origin of Life / The Future of Life, Penguin Books (2014), ISBN 9780670920440\nA Brief History of Everyone Who Ever Lived: The Stories in Our Genes, Weidenfeld & Nicolson (2016), ISBN 978-0297609377 \u2013 UK edition\nA Brief History of Everyone Who Ever Lived: The Human Story Retold Through Our Genes, The Experiment (2017), ISBN 978-1615194049 \u2013 updated US edition\nGenetics (illus. Ruth Palmer), Ladybird Books (2018), ISBN 978-0718188276\nThe Book of Humans: The Story of How We Became Us, Weidenfeld & Nicolson (2018), ISBN 978-0297609407\nHumanimal: How Homo sapiens Became Nature\u2019s Most Paradoxical Creature\u2014A New Evolutionary History, The Experiment (2019), ISBN 9781615195312\nHow to Argue with a Racist: History, Science, Race and Reality (2020) ISBN 9781474611244\nRutherford and Fry's Complete Guide to Absolutely Everything (with Hannah Fry) (illus. Alice Roberts) (2021) ISBN 9781787632639\nControl: The Dark History and Troubling Present of Eugenics (2022) ISBN 9781474622387\nWhere Are You Really From? (2023) ISBN 9781526364258\n\nAwards and honours\n2014 Wellcome Book Prize shortlist for Creation: The Origin of Life\n2017 Wellcome Book Prize longlist for A Brief History of Everyone Who Ever Lived\n2021 David Attenborough Award and Lecture, Royal Society\n2024 Royal Society Young People's Book Prize shortlist for Where Are You Really From?\n\n\n== References ==",
+          "cos_sim_score": 0.2644302248954773,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Adam Rutherford",
+          "title": "Adam Rutherford",
+          "url": "https://en.wikipedia.org/wiki/Adam_Rutherford",
+          "text": "Broadcasting\nRutherford frequently appears on BBC science programmes, on both radio and television. Since 2013, he has been the host of the programme Inside Science on BBC Radio 4. In 2012 he was featured on the series Horizon on BBC Two television in the documentary Playing God, which covered synthetic biology using the example of the \"Spider Goat\", a goat genetically modified to produce spider silk in its milk.\nIn 2011 he presented, on BBC Four, The Gene Code, a two-part series on the implications of the decoding of the human genome, and his documentary, Science Betrayed, detailed the story of the discredited link between the MMR vaccine and autism. In 2010, The Cell, his three-part series on the discovery of cells and the development of cell biology, presented on BBC Four, was included in The Daily Telegraph's list of \"10 classic science programmes\". In 2006, Discovery Science produced the six-episode TV series Men in White, in which three scientists, Rutherford, Basil Singer and Jem Stansfield, applied science to the solution of everyday problems.\nHe also appeared in BBC Radio 4's The Infinite Monkey Cage, with physicist Brian Cox, physician and science writer Ben Goldacre, author Simon Singh, musician Tim Minchin, and comedians Helen Arney and Robin Ince, and with The Infinite Monkey Cage Tour, the live show based on the programme.\nRutherford is a frequent guest on the Little Atoms radio chat show, and he has also acted as a science advisor on programmes such as The Cat in the Hat Knows a Lot About That!, and the film World War Z.\nIn 2011 he conceived and directed Space Shuttles United, a video and musical tribute to all the Space Shuttle missions.\nHe co-presented The Curious Cases of Rutherford & Fry with mathematician Hannah Fry. In 2023 the programme aired its 21st series on BBC Radio 4. In October 2024 the series returned as Curious Cases, still with Fry but Dara O'Briain replacing Rutherford as co-presenter.\nIn late 2022, he presented the series Bad Blood: The Story of Eugenics, on BBC Radio 4. The series is based on his book, Control: The Dark History and Troubling Present of Eugenics.\nHe is also a regular presenter on BBC Radio 4's Start the Week.\n\nPublic speaking and outreach\nRutherford is a frequent speaker at scientific and academic events and a guest at local science and sceptical events, such as Skeptics in the Pub.\nIn 2013, he was an invited speaker at the QED conference in Manchester, and at the 2013 North East Postgraduate Conference, and delivered the 11th Douglas Adams Memorial Lecture at the Royal Geographical Society in London for Save the Rhino International. In 2012, he delivered the annual Darwin Day Lecture for Humanists UK. In 2019, he delivered the Humanists UK Voltaire Lecture; the lecture formed the basis of his future book How to Argue With a Racist.\nRutherford was a judge and host of the award ceremonies for the 2012 and 2013 Google Science Fairs. In June 2017, he participated in a public discussion with Alan Alda at the University of Dundee, on the occasion of Alda's receiving an honorary degree from that institution. In November 2017, he participated in a debate with Robert Winston on the subject of superhumans at the University of Southampton. He is also critical of 23andMe, describing it as an \"empty promise\" to find out where you \"came from\"\n\nPersonal life\nRutherford is a founding member of the Celeriac XI Cricket club.",
+          "cos_sim_score": 0.20632871985435486,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

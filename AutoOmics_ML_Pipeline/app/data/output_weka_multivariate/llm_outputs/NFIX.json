@@ -1,0 +1,234 @@
+{
+  "rf_rank": 52,
+  "probe_id": "11727161_a_at",
+  "gene_symbol": "NFIX",
+  "score": 0.54,
+  "rf_n_nodes": 2,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 2.259,
+  "log_fc": -2.259,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11727161_a_at",
+  "max_score": 0.54,
+  "mean_abs_fold_change": 2.259,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T01:58:05",
+  "interpretation": "NFIX (Nuclear factor 1 X-type) is a transcription factor that binds specific DNA sequences to regulate gene expression. While there is no direct evidence linking NFIX to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in transcriptional regulation suggests it could influence pathways related to bone metabolism and homeostasis. Given that SONFH is associated with steroid-induced changes in bone remodeling, NFIX may play an indirect role in the disease process by affecting the balance between osteoblast and osteoclast activity. However, the evidence supporting NFIX as a biomarker for SONFH is weak, primarily relying on general biological reasoning rather than specific studies. Therefore, its potential as a clinical biomarker for early detection of SONFH is currently low.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "NFIX may influence bone metabolism, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "NFIX (Q14938). https://www.uniprot.org/uniprotkb/Q14938",
+    "NFIX (Q14938-5). https://www.uniprot.org/uniprotkb/Q14938-5",
+    "NFIX (Q14938-4). https://www.uniprot.org/uniprotkb/Q14938-4",
+    "NFIX \u2014 NFIX. https://platform.opentargets.org/target/ENSG00000008441",
+    "NFIX \u2194 Malan overgrowth syndrome. https://platform.opentargets.org/target/ENSG00000008441/associations",
+    "NFIX \u2194 Marshall-Smith syndrome. https://platform.opentargets.org/target/ENSG00000008441/associations",
+    "NFIX \u2194 Sotos syndrome. https://platform.opentargets.org/target/ENSG00000008441/associations",
+    "NFIX \u2194 genetic disorder. https://platform.opentargets.org/target/ENSG00000008441/associations",
+    "NFIX \u2014 nuclear factor I X (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "NFIXL4 \u2014 nuclear factor I/X-like 4 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "BRCA1 \u2014 BRCA1 DNA repair associated (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "AR \u2014 androgen receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "SIRT1 \u2014 sirtuin 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "The Growing Significance of microRNAs in Osteoporosis (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12691002/",
+    "Effects of miRNAs, lncRNAs and circRNAs on osteoporosis as regulatory factors of bone homeostasis (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8441966/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 7677,
+    "completion_tokens": 288,
+    "total_tokens": 7965,
+    "estimated_cost_usd": 0.001324
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q14938",
+          "title": "NFIX (Q14938)",
+          "url": "https://www.uniprot.org/uniprotkb/Q14938",
+          "text": "Protein: Nuclear factor 1 X-type\nFunction: Recognizes and binds the palindromic sequence 5'-TTGGCNNNNNGCCAA-3' present in viral and cellular promoters and in the origin of replication of adenovirus type 2. These proteins are individually capable of activating transcription and replication",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q14938-5",
+          "title": "NFIX (Q14938-5)",
+          "url": "https://www.uniprot.org/uniprotkb/Q14938-5",
+          "text": "Protein: Isoform 5 of Nuclear factor 1 X-type",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q14938-4",
+          "title": "NFIX (Q14938-4)",
+          "url": "https://www.uniprot.org/uniprotkb/Q14938-4",
+          "text": "Protein: Isoform 4 of Nuclear factor 1 X-type",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000008441::function",
+          "title": "NFIX \u2014 NFIX",
+          "url": "https://platform.opentargets.org/target/ENSG00000008441",
+          "text": "Function: Recognizes and binds the palindromic sequence 5'- TTGGCNNNNNGCCAA-3' present in viral and cellular promoters and in the origin of replication of adenovirus type 2. These proteins are individually capable of activating transcription and replication.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000008441::MONDO_0013885",
+          "title": "NFIX \u2194 Malan overgrowth syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000008441/associations",
+          "text": "Disease: Malan overgrowth syndrome\nDescription: A rare multisystemic genetic disorder characterized by a characteristic facial features with macrocephaly, overgrowth in infancy, intellectual disability and behavioral problems including anxieties and aggressiveness.\nAssociation score: 0.816",
+          "cos_sim_score": 0.8156080181042044,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000008441::MONDO_0011244",
+          "title": "NFIX \u2194 Marshall-Smith syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000008441/associations",
+          "text": "Disease: Marshall-Smith syndrome\nDescription: Marshall-Smith syndrome is a rare genetic disease characterized by tall stature and advanced bone age at birth.\nAssociation score: 0.796",
+          "cos_sim_score": 0.795738082185076,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000008441::MONDO_0019349",
+          "title": "NFIX \u2194 Sotos syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000008441/associations",
+          "text": "Disease: Sotos syndrome\nDescription: Sotos syndrome is a rare multisystemic genetic disorder characterized by a typical facial appearance, overgrowth of the body in early life with macrocephaly, and mild to severe intellectual disability.\nAssociation score: 0.574",
+          "cos_sim_score": 0.574285780339277,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000008441::EFO_0000508",
+          "title": "NFIX \u2194 genetic disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000008441/associations",
+          "text": "Disease: genetic disorder\nDescription: Genetic diseases are diseases in which inherited genes predispose to increased risk. The genetic disorders associated with cancer often result from an alteration or mutation in a single gene. The diseases range from rare dominant cancer family syndrome to familial tendencies in which low-penetrance genes may interact with other genes or environmental factors to induce cancer. Research may involve clinical, epidemiologic, and laboratory studies of persons, families, and populations at high risk of these disorders.\nAssociation score: 0.523",
+          "cos_sim_score": 0.5225896966934567,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "NFIX \u2014 nuclear factor I X",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: NFIX\nGene name: nuclear factor I X\nAliases / synonyms: CTF, MALNS, MRSHSS, NF-I/X, NF1-X, NF1A, SOTOS2\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transcription factor that binds the palindromic sequence 5'-TTGGCNNNNNGCCAA-3 in viral and cellular promoters. The encoded protein can also stimulate adenovirus replication in vitro. Three transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Aug 2012]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "NFIX",
+          "aliases": "CTF, MALNS, MRSHSS, NF-I/X, NF1-X, NF1A, SOTOS2",
+          "gene_description": "nuclear factor I X"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "NFIXL4 \u2014 nuclear factor I/X-like 4",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: NFIXL4\nGene name: nuclear factor I/X-like 4\nAliases / synonyms: NFIX\nOrganism: Homo sapiens",
+          "source_type": "ncbi_gene",
+          "official_symbol": "NFIXL4",
+          "aliases": "NFIX",
+          "gene_description": "nuclear factor I/X-like 4"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "BRCA1 \u2014 BRCA1 DNA repair associated",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: BRCA1\nGene name: BRCA1 DNA repair associated\nAliases / synonyms: BRCAI, BRCC1, BROVCA1, FANCS, IRIS, PNCA4, PPP1R53, PSCP, RNF53\nOrganism: Homo sapiens\nGene summary: This gene encodes a 190 kD nuclear phosphoprotein that plays a role in maintaining genomic stability, and it also acts as a tumor suppressor. The BRCA1 gene contains 22 exons spanning about 110 kb of DNA. The encoded protein combines with other tumor suppressors, DNA damage sensors, and signal transducers to form a large multi-subunit protein complex known as the BRCA1-associated genome surveillance complex (BASC). This gene product associates with RNA polymerase II, and through the C-terminal domain, also interacts with histone deacetylase complexes. This protein thus plays a role in transcription, DNA repair of double-stranded breaks, and recombination. Mutations in this gene are responsible for approximately 40% of inherited breast cancers and more than 80% of inherited breast and ovari...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "BRCA1",
+          "aliases": "BRCAI, BRCC1, BROVCA1, FANCS, IRIS, PNCA4, PPP1R53, PSCP, RNF53",
+          "gene_description": "BRCA1 DNA repair associated"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "AR \u2014 androgen receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AR\nGene name: androgen receptor\nAliases / synonyms: AIS, AR8, DHTR, HUMARA, HYSP1, KD, NR3C4, SBMA, SMAX1, TFM\nOrganism: Homo sapiens\nGene summary: The androgen receptor gene is more than 90 kb long and codes for a protein that has 3 major functional domains: the N-terminal domain, DNA-binding domain, and androgen-binding domain. The protein functions as a steroid-hormone activated transcription factor. Upon binding the hormone ligand, the receptor dissociates from accessory proteins, translocates into the nucleus, dimerizes, and then stimulates transcription of androgen responsive genes. This gene contains 2 polymorphic trinucleotide repeat segments that encode polyglutamine and polyglycine tracts in the N-terminal transactivation domain of its protein. Expansion of the polyglutamine tract from the normal 9-34 repeats to the pathogenic 38-62 repeats causes spinal bulbar muscular atrophy (SBMA, also known as Kennedy's disease). Mutati...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AR",
+          "aliases": "AIS, AR8, DHTR, HUMARA, HYSP1, KD, NR3C4, SBMA, SMAX1, TFM",
+          "gene_description": "androgen receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "SIRT1 \u2014 sirtuin 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SIRT1\nGene name: sirtuin 1\nAliases / synonyms: SIR2, SIR2L1, SIR2alpha\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the sirtuin family of proteins, homologs to the yeast Sir2 protein. Members of the sirtuin family are characterized by a sirtuin core domain and grouped into four classes. The functions of human sirtuins have not yet been determined; however, yeast sirtuin proteins are known to regulate epigenetic gene silencing and suppress recombination of rDNA. Studies suggest that the human sirtuins may function as intracellular regulatory proteins with mono-ADP-ribosyltransferase activity. The protein encoded by this gene is included in class I of the sirtuin family. Alternative splicing results in multiple transcript variants. [provided by RefSeq, Dec 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SIRT1",
+          "aliases": "SIR2, SIR2L1, SIR2alpha",
+          "gene_description": "sirtuin 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::12691002",
+          "title": "The Growing Significance of microRNAs in Osteoporosis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12691002/",
+          "text": "Osteoporosis is skeletal disorder characterized by the progressive loss of bone mineral density (BMD), deteriorated microarchitecture of the bone, and increased bone fragility. This causes pain, spinal deformity, and an increased risk of non-traumatic fractures of the hip, pelvis, spine, proximal humerus, and wrist, often requiring hospitalization [7,13,14]. Osteoporosis manifests at the cellular level as elevated bone resorption driven by excessive osteoclast formation and resorption activity, without sufficient compensatory osteoblast-mediated bone formation [12,15]. Osteoporosis is a major global public health concern that affects individuals of both sexes and all ethnicities, though it primarily affects elderly people and postmenopausal women [15]. The prevalence of osteoporosis is estimated at 18.3% worldwide with higher incidence in women (23.1%) than in men (11.7%), and the highest prevalence is observed in Africa (39.5%) [8,9,14,16]. Despite the large range of available treatments, osteoporosis remains substantially undertreated [12,16,17]. Drug treatments for osteoporosis are categorized as either anti-resorptive or anabolic. Anti-resorption drugs prevent bone loss by slowing down the pace at which osteoclasts reabsorb bone, but do not lead to an increase in bone mass. In contrast, anabolic drugs (anabolics) enhance bone formation by promoting osteoblastogenesis [12,17]. The most effective treatments have been found to be anti-resorptive medications such as bisphosphonates (e.g., alendronate, risedronate, ibandronate, zoledronic acid) [18,19], selective estrogen receptor modulators (SERMS; e.g., raloxifene), calcitonin (e.g., miacalcin and calcimar), and monoclonal antibodies (e.g., denosumab) [12,19,20]. Use of these medications has generated an abundance of evidence on their efficacy and safety, which has established risks and limitations for each. For example, bisphosphonates can cause uncommon, but severe complications such as atypical femur fractures and jaw osteonecrosis, and denosumab must be administered continuously to prevent rebound effects [19]. In recent decades, parathyroid hormone-related analogues (e.g., teriparatide and abaloparatide) [19,21] and anti-sclerostin agents (e.g., romosozumab) [20] have also been tested as anabolic therapies for osteoporosis, especially in individuals who are at high risk of fragility fractures [17]. Compared to anti-resorptive medicines, anabolic agents have demonstrated higher efficacy in increasing BMD and reducing the risk of fracture. However, their use is often limited by high costs, the need for daily injections, and the potential for causing adverse effects such as osteosarcoma [22]. In conclusion, current drugs for osteoporosis are limited by the risks of potential side effects and the requirement for frequent dosing in long-term treatments. Thus, there is an unmet need to develop novel therapeutic targets and strategies for restoring bone homeostasis in patients with osteoporosis while minimizing potential untoward side effects.",
+          "cos_sim_score": 0.4735521078109741,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8441966",
+          "title": "Effects of miRNAs, lncRNAs and circRNAs on osteoporosis as regulatory factors of bone homeostasis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8441966/",
+          "text": "1.\nIntroduction\nOsteoporosis is a highly prevalent skeletal disorder associated with the ageing of the global population that imposes a considerable burden on health care and society, and is characterized by the deterioration of bone tissue and increased bone fragility due to the loss of bone mass and microstructure attributed to various factors, including menopause, ageing and related adverse reactions to medications (1). Bone and fat mass imbalance constitute a typical feature of the pathogenesis of osteoporosis (2). In Europe, an estimated 22 million women and 5.5 million men suffer from osteoporosis (3), and an estimated 10 million individuals over the age of 50 have osteoporosis in the USA (4). As the population of the world rapidly ages, an increasing number of individuals will suffer from osteoporosis.\nBone homeostasis is maintained mainly by intricate mechanisms synchronizing osteoblast (OB) activation with osteoclast (OC) activation, thus coupling bone formation with bone resorption (5). OBs, the cells responsible for bone formation, are believed to originate from bone marrow stromal cells (BMSCs). Osteoclasts are derived from mononuclear haematopoietic myeloid lineage cells that influence bone resorption. In addition to OBs and OCs, BMSCs, adipocytes and chondrocytes present in the microenvironment also participate in bone homeostasis (6). BMSCs, which are a key cause of osteoporosis, play an important role in maintaining the balance between bone formation and resorption. Previous findings have shown that BMSCs can normally differentiate into OBs, chondrocytes and adipocytes, but in the elderly, the differentiation of BMSCs into OBs decreases. Such changes lead to a decrease in bone formation, which, in turn, leads to osteoporosis, and the underlying mechanism remains to be elucidated (7).\nNon-coding (nc)RNAs, including microRNAs (miRNAs/miRs), long ncRNAs (lncRNAs) and circular RNAs (circRNAs), play an important role as regulators in cellular processes, such as cell proliferation, differentiation, apoptosis and autophagy. miRNAs constitute a class of ncRNAs that are ~22 nucleotides in length, can recognize the 3\u2032-untranslated regions (UTRs) of target mRNAs by means of complementary base pairing and degrade or repress the gene expression of target mRNAs at the post-transcriptional level (8). lncRNAs are a type of ncRNA with a length >200 nucleotides that can bind substrates through their own nucleotide sequence or folded secondary structure and regulate gene expression through multiple mechanisms at the transcriptional and post-transcriptional levels (9). circRNAs, which are formed mainly by reverse splicing, are endogenous covalent closed circRNA molecules that can act as miRNA sponges to regulate miRNA-related cellular processes (9).",
+          "cos_sim_score": 0.4355933666229248,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12691002",
+          "title": "The Growing Significance of microRNAs in Osteoporosis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12691002/",
+          "text": "1. Introduction\nBone is a complex and dynamic structure that functions as both a tissue and an organ system within higher vertebrates [1,2,3]. It is a highly specialized supporting framework of the body, characterized by its hardness, stiffness and ability to regenerate and repair itself [3]. In addition to protecting vital organs, bone tissue houses the bone marrow, which maintains hematopoietic stem cell homeostasis. It also serves as a reservoir of minerals that regulate calcium and phosphate levels in check, releases growth factors and cytokines, and contributes to the body\u2019s acid\u2013base balance [4]. The skeleton system is metabolically active and undergoes continuous turnover throughout life [5]. Once the skeleton has grown to maturity, it undergoes remodeling to continuously regenerate through periodic replacement of old bone with new bone at the same location. Bone remodeling involves the elimination of mineralized bone by osteoclasts (bone resorption) followed by the formation of bone matrix through osteoblasts (bone formation) becoming mineralized [6]. The process of bone remodeling is both systemic and local, and leads to complete regeneration of the adult skeleton every 10 years [7]. It is now widely accepted that bone remodeling aids in adjusting bone architecture to meet changing mechanical needs, repair fatigue damage in bone matrix, maintain plasma calcium homeostasis, and combat the effects of aging [5]. In bone remodeling, bone formation is tightly coupled to bone resorption, and occurs in a basic multicellular unit (BMU) of cells in the uninjured adult skeleton [8]. In BMUs, osteoclasts and osteoblasts maintain a well-orchestrated spatial and sequential association. Osteoclasts adhere to bone and subsequently eliminate it by acidification and proteolytic digestion. Osteoblasts then move in to cover the excavated area and initiate the process of new bone formation by secreting osteoid, which is finally mineralized into new bone [7,9]. A subset of osteoblasts further differentiate into osteocytes embedded in the bone matrix. Osteocytes sense mechanical stimuli and convert them into biochemical signals that regulate bone homeostasis [10,11]. The coordinated actions of bone resorption and bone formation contribute to maintain healthy bone in the adult population [7,9]. Any imbalance between these processes disrupts bone remodeling, resulting in the development of various bone diseases, including osteoporosis [4,9,12].",
+          "cos_sim_score": 0.41359803080558777,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8441966",
+          "title": "Effects of miRNAs, lncRNAs and circRNAs on osteoporosis as regulatory factors of bone homeostasis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8441966/",
+          "text": "Pan et al (62) reported that the expression of lncRNA ROA, which promotes hnRNP A1 to target the PTX3 promoter, thereby activating the ERK1/2 signalling pathway and regulating BMSC adipogenic differentiation, was significantly decreased during the process of BMSC adipogenesis. The lncRNA Plnc1, which is derived from the PPAR-\u03b32 gene, was upregulated during the adipogenic differentiation of ST2 cells and BMSCs, and further investigation showed that Plnc1 decreased methylation of the CpG region in the PPAR-\u03b32 promoter, thereby promoting PPAR-\u03b32 transcription, indicating that Plnc1 plays an important role in promoting adipogenic differentiation (63). In addition, Zhang et al (53) showed that LOXL1-AS1 could also promote adipocytic differentiation.\nThe lncRNA NORAD iss decreased in steroid-induced osteonecrosis in femoral head tissues, and findings of a mechanistic study indicated that NORAD could target miR-26a-5p to promote the DEX-induced inhibition of proliferation in hBMSCs (64). However, numerous studies have concluded that NORAD also plays a crucial role in cellular processes involved in carcinogenesis, including cell proliferation, invasion and metastasis (65), indicating that the function of NORAD is complex and that further studies are needed. In another study, the inhibition of the lncRNA LINC01535 decreased the proliferation of hBMSCs, and the regulatory effect of LINC01535 on BMSCs was found to be mediated mainly by targeting miR-3619-5p (66). Gan et al (67) reported that the expression of the lncRNA H19 was significantly decreased in postmenopausal patients with osteoporosis and that the overexpression of H19 obviously inhibited BMSC proliferation by targeting miR-19b-3p, demonstrating the crucial role of H19/miR-19b-3p in osteoporosis for the first time and providing a novel target for osteoporosis. Recent evidence has indicated that autophagy has a critical effect on the pathogenesis of acute pancreatitis and that the overexpression of H19 in MSCs significantly inhibits autophagy via the FAK/PDK1/AKT/mTOR axis in rats with acute pancreatitis (68).\nLi et al (69) identified that downregulated expression of the lncRNA LNC_000052 inhibited BMSC apoptosis through the PI3K/Akt pathway, and further investigations showed that LNC_000052 regulates BMSC apoptosis mainly by binding PIK3R1, which is also a target of miR-96-5p. In addition to the regulation of apoptosis, it was found that LNC_000052 plays a crucial role in BMSC proliferation and migration via the miR-96-5p-PIK3R1 axis (69). Knockdown of the lncRNA SNHG5 promoted apoptosis in hBMSCs, and further results demonstrated that SNHG5 inhibited apoptosis through the miR-582-5p/RUNX3 pathway (56). Similarly, SNHG5 has been reported to play an important role in human chronic myelogenous leukaemia by inhibiting cell apoptosis (70). Another study also reported that LINC01535 could inhibit hBMSC apoptosis by regulating miR-3619-5p (66) (Table II).\nEffects of circRNAs on BMSC regulation",
+          "cos_sim_score": 0.40297073125839233,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12691002",
+          "title": "The Growing Significance of microRNAs in Osteoporosis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12691002/",
+          "text": "3.2. Osteoclast-Regulating miRNAs\nThe bone marrow monocytes (BMMs) give rise to multinucleated, bone-resorbing cells called osteoclasts [155]. Maintaining balance between osteoclastogenesis and osteogenesis is essential for bone integrity, and its disruption can lead to bone fragility. The involvement of miRNAs specifically in osteoclasts has recently gained significant attention, driven by therapeutic target to attenuate excessive bone resorption in pathological conditions such as age, estrogen deficiency, cancer metastases, or glucocorticoid use [109]. miR-182, miR-31, miR-25-3p, miR-21-5p, miR-214-3p, miR-125a-5p, miR-125a-3p, miR-155, and miR-221-5p play crucial roles in regulating osteoclast differentiation and activity, making them key players in developing osteoporosis (Table 3; Figure 2). For instance, deletion of miR-182 in myeloid cells protects against excessive osteoclastogenesis and bone resorption in a mouse model of ovariectomy (OVX)-induced osteoporosis. This protective effect is mediated via its regulation of dsRNA-dependent protein kinase (PKR), which controls the autocrine feedback loop that is mediated by IFN-\u03b2. These findings demonstrated the miR-182-PKR-IFN-\u03b2 axis as a novel inhibitory pathway of osteoclastogenesis [78]. Additionally, high-throughput miRNA sequencing has identified miR-182 as a central regulator of TNF-\u03b1-induced inflammatory osteoclastogenesis, a process normally restrained by the Notch pathway mediator RBP-J. In RBP J deficient cells, suppression of miR-182 markedly reduces TNF\u03b1-driven osteoclast formation. Moreover, miR-182 directly targets forkhead box, class O (FoxO) 3 and mastermind-like 1 (Maml1), both of which inhibit osteoclast development. Thus, targeting of RBP-J-miR-182-FoxO3/Maml 1 signaling axis could be a promising therapeutic approach to decrease inflammatory osteoclastogenesis and bone resorption [156]. miR-31 has been reported as a crucial regulator of osteoclastogenesis and cytoskeleton organization. miR-31 targets Ras homolog family member A (RhoA), a molecular switch that controls cytoskeletal organization. Its inhibition reduced osteoclast development, bone resorption, and actin ring formation [157].",
+          "cos_sim_score": 0.3915298581123352,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

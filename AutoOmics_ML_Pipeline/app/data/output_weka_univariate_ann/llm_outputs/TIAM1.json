@@ -1,0 +1,225 @@
+{
+  "rf_rank": 8,
+  "probe_id": "11732415_s_at",
+  "gene_symbol": "TIAM1",
+  "score": 0.76,
+  "rf_n_nodes": 5,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 1.1607,
+  "log_fc": 1.1607,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11732415_s_at",
+  "max_score": 0.76,
+  "mean_abs_fold_change": 1.1607,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:21:23",
+  "interpretation": "TIAM1 encodes a guanine nucleotide exchange factor that activates RHO-like proteins, particularly RAC1 and CDC42, which are crucial for regulating cytoskeletal dynamics, cell adhesion, and migration. These processes are vital in the context of bone health and osteogenesis, as they influence the behavior of osteoblasts and osteoclasts, which are essential for bone remodeling. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), TIAM1's role in cell signaling and cytoskeletal organization may be implicated in the pathological mechanisms leading to bone necrosis and structural failure. However, the evidence linking TIAM1 directly to SONFH is limited, primarily suggesting a potential indirect role in the disease's progression. Therefore, while TIAM1 may have biological relevance, its clinical utility as a biomarker for early detection of SONFH remains uncertain and requires further investigation.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "TIAM1 may influence cellular processes relevant to the pathogenesis of Steroid-Induced Osteonecrosis of the Femoral Head, but direct evidence linking it as a biomarker is lacking.",
+  "citations": [
+    "TIAM1 (Q13009). https://www.uniprot.org/uniprotkb/Q13009",
+    "TIAM1 (Q13009-2). https://www.uniprot.org/uniprotkb/Q13009-2",
+    "TIAM1 \u2014 TIAM1. https://platform.opentargets.org/target/ENSG00000156299",
+    "TIAM1 \u2194 neurodevelopmental disorder with language delay and seizures. https://platform.opentargets.org/target/ENSG00000156299/associations",
+    "TIAM1 \u2194 alcohol drinking. https://platform.opentargets.org/target/ENSG00000156299/associations",
+    "TIAM1 \u2194 complex neurodevelopmental disorder. https://platform.opentargets.org/target/ENSG00000156299/associations",
+    "TIAM1 \u2194 nerve plexus disease. https://platform.opentargets.org/target/ENSG00000156299/associations",
+    "TIAM1 \u2014 TIAM Rac1 associated GEF 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TIAM2 \u2014 TIAM Rac1 associated GEF 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TGFB1 \u2014 transforming growth factor beta 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "RAC1 \u2014 Rac family small GTPase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "AKT1 \u2014 AKT serine/threonine kinase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Identifying the Potential Differentially Expressed miRNAs and mRNAs in Osteonecrosis of the Femoral Head Based on Integrated Analysis (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC7851582/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8128,
+    "completion_tokens": 334,
+    "total_tokens": 8462,
+    "estimated_cost_usd": 0.00142
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q13009",
+          "title": "TIAM1 (Q13009)",
+          "url": "https://www.uniprot.org/uniprotkb/Q13009",
+          "text": "Protein: Rho guanine nucleotide exchange factor TIAM1\nFunction: Guanyl-nucleotide exchange factor that activates RHO-like proteins and connects extracellular signals to cytoskeletal activities. Activates RAC1, CDC42, and to a lesser extent RHOA and their downstream signaling to regulate processes like cell adhesion and cell migration",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q13009-2",
+          "title": "TIAM1 (Q13009-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q13009-2",
+          "text": "Protein: Isoform 2 of Rho guanine nucleotide exchange factor TIAM1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000156299::function",
+          "title": "TIAM1 \u2014 TIAM1",
+          "url": "https://platform.opentargets.org/target/ENSG00000156299",
+          "text": "Function: Guanyl-nucleotide exchange factor that activates RHO-like proteins and connects extracellular signals to cytoskeletal activities. Activates RAC1, CDC42, and to a lesser extent RHOA and their downstream signaling to regulate processes like cell adhesion and cell migration. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000156299::MONDO_0859256",
+          "title": "TIAM1 \u2194 neurodevelopmental disorder with language delay and seizures",
+          "url": "https://platform.opentargets.org/target/ENSG00000156299/associations",
+          "text": "Disease: neurodevelopmental disorder with language delay and seizures\nAssociation score: 0.624",
+          "cos_sim_score": 0.6239819350488075,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000156299::EFO_0004329",
+          "title": "TIAM1 \u2194 alcohol drinking",
+          "url": "https://platform.opentargets.org/target/ENSG00000156299/associations",
+          "text": "Disease: alcohol drinking\nDescription: Behaviors associated with the ingesting of alcoholic beverages, including social drinking.\nAssociation score: 0.405",
+          "cos_sim_score": 0.4051744336309519,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000156299::MONDO_0100038",
+          "title": "TIAM1 \u2194 complex neurodevelopmental disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000156299/associations",
+          "text": "Disease: complex neurodevelopmental disorder\nDescription: A disorder that involves more than one phenotype associated with the central nervous system, including but not limited to intellectual disability, autism, and seizures (epilepsy).\nAssociation score: 0.370",
+          "cos_sim_score": 0.3695798546847018,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000156299::EFO_0009559",
+          "title": "TIAM1 \u2194 nerve plexus disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000156299/associations",
+          "text": "Disease: nerve plexus disease\nDescription: A disease that involves the nerve plexus.\nAssociation score: 0.314",
+          "cos_sim_score": 0.3138811405657741,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "TIAM1 \u2014 TIAM Rac1 associated GEF 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TIAM1\nGene name: TIAM Rac1 associated GEF 1\nAliases / synonyms: NEDLDS, TIAM-1\nOrganism: Homo sapiens\nGene summary: This gene encodes a RAC1-specific guanine nucleotide exchange factor (GEF). GEFs mediate the exchange of guanosine diphosphate (GDP) for guanosine triphosphate (GTP). The binding of GTP induces a conformational change in RAC1 that allows downstream effectors to bind and transduce a signal. This gene thus regulates RAC1 signaling pathways that affect cell shape, migration, adhesion, growth, survival, and polarity, as well as influencing actin cytoskeletal formation, endocytosis, and membrane trafficking. This gene thus plays an important role in cell invasion, metastasis, and carcinogenesis. In addition to RAC1, the encoded protein activates additional Rho-like GTPases such as CDC42, RAC2, RAC3 and RHOA. This gene encodes multiple protein isoforms that experience a diverse array of intramol...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TIAM1",
+          "aliases": "NEDLDS, TIAM-1",
+          "gene_description": "TIAM Rac1 associated GEF 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TIAM2 \u2014 TIAM Rac1 associated GEF 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TIAM2\nGene name: TIAM Rac1 associated GEF 2\nAliases / synonyms: STEF, TIAM-2\nOrganism: Homo sapiens\nGene summary: This gene encodes a guanine nucleotide exchange factor. A highly similar mouse protein specifically activates ras-related C3 botulinum substrate 1, converting this Rho-like guanosine triphosphatase (GTPase) from a guanosine diphosphate-bound inactive state to a guanosine triphosphate-bound active state. The encoded protein may play a role in neural cell development. Alternatively spliced transcript variants encoding different isoforms have been described. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TIAM2",
+          "aliases": "STEF, TIAM-2",
+          "gene_description": "TIAM Rac1 associated GEF 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TGFB1 \u2014 transforming growth factor beta 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TGFB1\nGene name: transforming growth factor beta 1\nAliases / synonyms: CAEND1, CED, DPD1, IBDIMDE, LAP, TGF-beta1, TGFB, TGFbeta\nOrganism: Homo sapiens\nGene summary: This gene encodes a secreted ligand of the TGF-beta (transforming growth factor-beta) superfamily of proteins. Ligands of this family bind various TGF-beta receptors leading to recruitment and activation of SMAD family transcription factors that regulate gene expression. The encoded preproprotein is proteolytically processed to generate a latency-associated peptide (LAP) and a mature peptide, and is found in either a latent form composed of a mature peptide homodimer, a LAP homodimer, and a latent TGF-beta binding protein, or in an active form consisting solely of the mature peptide homodimer. The mature peptide may also form heterodimers with other TGFB family members. This encoded protein regulates cell proliferation, differentiation and growth, and can modulate expression and activation...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TGFB1",
+          "aliases": "CAEND1, CED, DPD1, IBDIMDE, LAP, TGF-beta1, TGFB, TGFbeta",
+          "gene_description": "transforming growth factor beta 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "RAC1 \u2014 Rac family small GTPase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RAC1\nGene name: Rac family small GTPase 1\nAliases / synonyms: MIG5, MRD48, Rac-1, TC-25, p21-Rac1\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a GTPase which belongs to the RAS superfamily of small GTP-binding proteins. Members of this superfamily appear to regulate a diverse array of cellular events, including the control of cell growth, cytoskeletal reorganization, and the activation of protein kinases. Two transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Mar 2009]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RAC1",
+          "aliases": "MIG5, MRD48, Rac-1, TC-25, p21-Rac1",
+          "gene_description": "Rac family small GTPase 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "AKT1 \u2014 AKT serine/threonine kinase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AKT1\nGene name: AKT serine/threonine kinase 1\nAliases / synonyms: AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA\nOrganism: Homo sapiens\nGene summary: This gene encodes one of the three members of the human AKT serine-threonine protein kinase family which are often referred to as protein kinase B alpha, beta, and gamma. These highly similar AKT proteins all have an N-terminal pleckstrin homology domain, a serine/threonine-specific kinase domain and a C-terminal regulatory domain. These proteins are phosphorylated by phosphoinositide 3-kinase (PI3K). AKT/PI3K forms a key component of many signalling pathways that involve the binding of membrane-bound ligands such as receptor tyrosine kinases, G-protein coupled receptors, and integrin-linked kinase. These AKT proteins therefore regulate a wide variety of cellular functions including cell proliferation, survival, metabolism, and angiogenesis in both normal and malignant cells. AKT proteins ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AKT1",
+          "aliases": "AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA",
+          "gene_description": "AKT serine/threonine kinase 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::7851582",
+          "title": "Identifying the Potential Differentially Expressed miRNAs and mRNAs in Osteonecrosis of the Femoral Head Based on Integrated Analysis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7851582/",
+          "text": "Introduction\nOsteonecrosis of the femoral head is a disabling and progressive chronic disease, which leads to femoral head collapse and further total hip arthroplasty.1,2 It is estimated that the age range of about 75% of patients is from 30\u201360 years old.3 Pain is one of the common clinical symptoms of osteonecrosis of the femoral head.4 However, most patients with a lesion less than 30% of the femoral head are initially asymptomatic.5 Malizos6,7 and Zalavras and Lieberman found that osteocytes death and bone marrow cells was the main characteristic of the early stages of osteonecrosis of the femoral head. In the next moment, the repair reaction of necrotic bone is initiated. During this process, the imbalance between bone resorption and bone reformation leads to structural damage of the femoral head, among which there is a significant degeneration and cracking of the hip articular cartilage, which accelerates the development of osteonecrosis of the femoral head.8,9\nThe pathogenic mechanism of osteonecrosis of the femoral head is complex. Kerachian et al10 found that local microvascular thrombosis resulted in decreasing blood flow in the femoral head. It was pointed out that fibroblast growth factor 2 (FGF2), insulin-like growth factor 1 (IGF1), SRY-box transcription factor 9 (SoX9), and collagen type ii \u03b11 affected the pathogenesis of osteonecrosis of the femoral head.11 In addition, several risks, such as the trauma, steroids, smoking, alcoholism, irradiation/chemotherapy, clotting disturbances, hyperlipidemia, hyperviscosity, autoimmune diseases, Legg-Calve-Perthes diseases, and genetic factors are possible causes of osteonecrosis of the femoral head.12\u201322\nThe incidence of osteonecrosis of the femoral head is on the rise, in spite of various research efforts and trials. Therefore, understanding the pathophysiology of the disease and its progression is urgently needed. Interestingly, miRNAs play roles in targeting mRNAs, and regulate diverse biological processes in bones, such as osteoblasts, osteoclasts differentiation, and bone programming.23\u201326 In this study, we performed the differentially expression analysis of miRNA and mRNA in osteonecrosis of the femoral head, which may provide a novel field in understanding the pathological mechanism of osteonecrosis of the femoral head.\nMaterials and Methods\nDatasets\nThe miRNA and mRNA expression profile was downloaded from the Gene Expression Omnibus database (GEO) dataset. The keywords of ((\u201cfemur head\u201d [MeSH Terms] OR femoral head [All Fields]) AND (\u201cnecrosis\u201d [MeSH Terms] OR necrosis [All Fields])) AND \u201cgse\u201d [Filter] was used to retrieve related datasets. According to above screening criteria, one miRNA dataset (GSE89587, involving ten cases and seven normal controls) and one mRNA dataset (GSE74089, involving four cases and four normal controls) were finally selected.\nIdentification of Differentially Expressed miRNAs and mRNAs\nFirstly, the raw data of miRNAs and mRNAs was preprocessed as follows: the probes corresponding to multiple miRNAs/mRNAs were removed; and the miRNAs/mRNAs corresponding to multiple probes were left with only the one with the highest average expression. In this study, the identification method of differentially expressed miRNAs and mRNAs was referred to previous studies.27,28 The screening criteria of differentially expressed miRNAs and mRNAs was, respectively, FDR<0.05, |log2FC|>3, and FDR<0.05, |log2FC|>1.\nCorrelation Analysis Between miRNAs and mRNAs\nIn this study, miRWalk (http://mirwalk.umm.uni-heidelberg.de/) was used to predict targeted mRNAs of miRNAs. The establishment of a miRNA-target regulatory network was visualized using Cytoscape software.\nFunctional Enrichment of mRNAs\nIn order to understand the biological function of the targeted differentially expressed mRNAs of differentially expressed miRNAs, we performed functional analysis via GeneCodis3 software. FDR<0.05 was set as the criterion for selecting significantly enriched functional terms.\nIn vitro Validation of miRNAs and Targeted mRNAs",
+          "cos_sim_score": 0.5858741402626038,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::7851582",
+          "title": "Identifying the Potential Differentially Expressed miRNAs and mRNAs in Osteonecrosis of the Femoral Head Based on Integrated Analysis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7851582/",
+          "text": "Hsa-let-7a-5p is down-regulated in osteogenic differentiation, while up-regulated during osteoclastogenesis, which indicates the role of hsa-let-7a-5p in the bone imbalance.38\u201340 Under mechanical tension, hsa-let-7a-5p is remarkably increased in cartilage endplate chondrocytes.41 In this study, we found that hsa-let-7a-5p was up-regulated in osteonecrosis of the femoral head. Furthermore, a regulator of calcineurin 2 (RCAN2) and interleukin 9 receptor (IL9R) were down-regulated and targeted by hsa-let-7a-5p. It is worth mentioning that RCAN2 and IL9R could be considered as diagnostic biomarkers for osteonecrosis of the femoral head. RCAN2, an angiogenesis related gene, is transcribed activation by vascular endothelial growth factor (VEGF).42\u201345 The expression of RCAN2 is negatively correlated with cartilage proliferation and differentiation.46 It is reported that disruption of RCAN2 could lead to reducing bone mass, which is related to increased osteoclast function and reduced osteoblast function.47 IL9R is associated with hematopoietic cell lineage.48 Our result indicated that hsa-let-7a-5p and its target (RCAN2 and IL9R) could be involved in osteonecrosis of the femoral head.\nDeregulation of hsa-miR-28-5p is related to rheumatic diseases, such as axial spondyloarthritis and rheumatoid arthritis.49,50 Herein, we first found that hsa-miR-28-5p was up-regulated in osteonecrosis of the femoral head. In addition, the down-regulated RELA proto-oncogene, NF-kB subunit (RELA, also called p65) was one of the targets of hsa-miR-28-5p. It is reported that RELA is the most potent transcriptional factor of hypoxic induction factor 2 (HIF2) that regulates chondrocyte differentiation and cartilage degradation.51 Lacking or deletion of RELA inhibits the expression of cartilage catabolic factors such as matrix metalloproteinases 9 (MMP9), SRY-box transcription factor 9 (SOX9), nitric oxide synthase 2 (NOS2), and cyclooxygenase 2 (COX2) in chondrocytes, which results in reduced bone loss and accelerated cartilage degeneration.52\u201357 In addition, RELA is regarded as an angiogenesis modulating agent.58 It is suggested that RELA may be involved in cartilage degeneration of osteonecrosis of the femoral head under that regulation of hsa-miR-28-5p.\nPrevious studies on hsa-miR-3200-5p in orthopedic disease are very rare, and only a recent report showed significantly higher expression of hsa-miR-3200-5p in the osteosarcoma.59 In our study, we found that the expression level of hsa-miR-3200-5p was increased in osteonecrosis of the femoral head. Moreover, down-regulated reelin (RELN) was targeted by hsa-miR-3200-5p. It is noted that RELN had a diagnostic value for osteonecrosis of the femoral head. RELN, expressed in osteoblast lineage cells, is considered as a stromal cell-specific and hematopoietic cell-lineage marker.60 Clinically, RELN is a potential molecular target candidate for diagnosis and therapy of rheumatoid arthritis.61 Our result indicated that hsa-miR-3200-5p and RELN may play a critical role in osteonecrosis of the femoral head.",
+          "cos_sim_score": 0.5152003765106201,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::7851582",
+          "title": "Identifying the Potential Differentially Expressed miRNAs and mRNAs in Osteonecrosis of the Femoral Head Based on Integrated Analysis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7851582/",
+          "text": "Correlation Analysis Between miRNAs and mRNAs\nIn this study, miRWalk (http://mirwalk.umm.uni-heidelberg.de/) was used to predict targeted mRNAs of miRNAs. The establishment of a miRNA-target regulatory network was visualized using Cytoscape software.\nFunctional Enrichment of mRNAs\nIn order to understand the biological function of the targeted differentially expressed mRNAs of differentially expressed miRNAs, we performed functional analysis via GeneCodis3 software. FDR<0.05 was set as the criterion for selecting significantly enriched functional terms.\nIn vitro Validation of miRNAs and Targeted mRNAs\nIn total, six patients with osteonecrosis of the femoral head and seven normal controls were enrolled. All patients had not taken corticosteroids or medications for nearly a month. In addition, patients older than 80 years or without incomplete clinical information were excluded. Normal controls were matched by gender and age of the case group. Healthy individuals with a history of osteonecrosis of the femoral head and suffering from bone metabolic disorders (such as osteoporosis) were excluded. Ethical approval was obtained from the ethics committee of Honghui Hospital Xian Jiao Tong University Health Science Center (No.201904006). Those included provided informed written consent. This study was carried out in accordance with the Declaration of Helsinki.\nTotal RNA of the blood samples was extracted and synthesized cDNA by FastQuant Reverse Transcriptase (TIANGEN). Then real-time PCR was performed in an ABI 7300 Real-time PCR system with SYBR\u00ae Green PCR Master Mix (Applied Biosystems). Has-U6 was used for the internal reference of miRNA. ACTB and GAPDH were used for the internal reference of mRNA.\nElectronic Validation and Diagnostic Analysis of Targeted mRNAs in GSE123568 Dataset\nThe GSE123568 dataset (peripheral blood sample) involved 30 patients with osteonecrosis of the femoral head and 10 normal controls, and was used for electronic validation and ROC analysis of targeted mRNAs. The expression result of these mRNAs was shown by box plots.\nResults\nExpression Pattern of miRNA and mRNA",
+          "cos_sim_score": 0.4646041691303253,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::7851582",
+          "title": "Identifying the Potential Differentially Expressed miRNAs and mRNAs in Osteonecrosis of the Femoral Head Based on Integrated Analysis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7851582/",
+          "text": "Table 2Top 20 Differentially Expressed mRNAs in Osteonecrosis of the Femoral HeadSymbolLogFCP-valueFDRUp/DownC10orf1053.037379.90E-122.15E-07UpARL4C2.5336962.73E-112.55E-07UpEGR22.5514823.52E-112.55E-07UpLRRC152.3606165.31E-112.68E-07UpAMTN3.2035846.15E-112.68E-07UpIL112.2571767.78E-112.82E-07UpFAP2.5169772.84E-108.71E-07UpVEGFC1.987413.44E-108.71E-07UpFZD102.1280763.60E-108.71E-07UpMMP132.6703975.32E-101.16E-06UpMSMP\u22123.017571.28E-091.74E-06DownVIT\u22121.353373.11E-093.06E-06DownHLA-DRB4\u22121.493273.17E-093.06E-06DownRNASE1\u22121.557813.23E-093.06E-06DownRCAN2\u22121.700344.41E-093.75E-06DownDACT1\u22121.656555.18E-093.75E-06DownAPOD\u22121.677085.18E-093.75E-06DownTYROBP\u22121.279198.36E-094.92E-06DownCTSH\u22121.555281.03E-085.16E-06DownHLA-DRA\u22121.924251.35E-085.44E-06DownAbbreviations: FC, fold change; FDR, false discovery rate.\nFigure 1The volcano plot and heat map of all differentially expressed miRNAs in osteonecrosis of the femoral head. (A) The volcano plot of all differentially expressed miRNAs. The X and Y axis represents Log2 Fold Change and \u2013log10 FDR, respectively. Blue and red represents up-regulated and down-regulated miRNAs, respectively. (B) The heat map of all differentially expressed miRNAs.Abbreviation: ONFH, osteonecrosis of the femoral head.Figure 2The volcano plot and heat map of the top 100 differentially expressed mRNAs in osteonecrosis of the femoral head. (A) The volcano plot of the top 100 differentially expressed mRNAs. The X- and Y-axes represent Log2 Fold Change and \u2013log10 FDR, respectively. Blue and red represent up-regulated and down-regulated mRNAs, respectively. (B) The heat map of the top 100 differentially expressed mRNAs.Abbreviation: ONFH, osteonecrosis of the femoral head.\nTable 1\nAll Differentially Expressed miRNAs in Osteonecrosis of the Femoral Head\nAbbreviations: FC, fold change; FDR, false discovery rate.\nTable 2\nTop 20 Differentially Expressed mRNAs in Osteonecrosis of the Femoral Head\nAbbreviations: FC, fold change; FDR, false discovery rate.\nFigure 1\nThe volcano plot and heat map of all differentially expressed miRNAs in osteonecrosis of the femoral head. (A) The volcano plot of all differentially expressed miRNAs. The X and Y axis represents Log2 Fold Change and \u2013log10 FDR, respectively. Blue and red represents up-regulated and down-regulated miRNAs, respectively. (B) The heat map of all differentially expressed miRNAs.\nFigure 2\nThe volcano plot and heat map of the top 100 differentially expressed mRNAs in osteonecrosis of the femoral head. (A) The volcano plot of the top 100 differentially expressed mRNAs. The X- and Y-axes represent Log2 Fold Change and \u2013log10 FDR, respectively. Blue and red represent up-regulated and down-regulated mRNAs, respectively. (B) The heat map of the top 100 differentially expressed mRNAs.\nNetwork of miRNAs\u2013mRNAs",
+          "cos_sim_score": 0.44261085987091064,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::7851582",
+          "title": "Identifying the Potential Differentially Expressed miRNAs and mRNAs in Osteonecrosis of the Femoral Head Based on Integrated Analysis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7851582/",
+          "text": "In conclusion, the epigenetic modifications of hsa-miR-378c-WNT3A/DACT1/CSF1, hsa-let-7a-5p-RCAN2/IL9R, hsa-miR-28-5p-RELA, hsa-miR-3200-5p-RELN, and hsa-miR-532-5p-CLDN18/CLDN10, and seven signaling pathways (Wnt signaling pathway, chemokine signaling pathway, focal adhesion, cell adhesion molecules (CAMs), ECM-receptor interaction, cytokine-cytokine receptor interaction, and hematopoietic cell lineage) may be involved in osteonecrosis of the femoral head. In addition, CLDN10, CLDN18, CSF1, DACT1, IL9R, RCAN2, RELN, and WNT3A had a diagnostic value for osteonecrosis of the femoral head. However, there are limitations of our study. Firstly, the deeper mechanism study of identified differentially expressed miRNAs, mRNAs, and relevant downstream molecules in the disease is further needed in animal models. Secondly, the regulatory relationship between identified miRNAs and targeted mRNAs is not investigated. Further in vitro experiment, such as luciferase reporter gene assay is needed in the further study.",
+          "cos_sim_score": 0.4295070767402649,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

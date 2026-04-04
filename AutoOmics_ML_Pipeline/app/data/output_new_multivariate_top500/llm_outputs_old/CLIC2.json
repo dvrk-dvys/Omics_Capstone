@@ -1,0 +1,145 @@
+{
+  "probe_id": "11734784_a_at",
+  "gene_symbol": "CLIC2",
+  "rf_importance": 0.0068,
+  "selection_freq": 0.6,
+  "abs_fold_change": 1.8547557666666656,
+  "score": 0.3809,
+  "probe_count": 2,
+  "probe_ids": "11734784_a_at | 11734783_at",
+  "max_score": 0.3809,
+  "mean_abs_fold_change": 1.6259,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T21:01:22",
+  "interpretation": "CLIC2 (Chloride intracellular channel protein 2) is involved in regulating chloride ion transport and cellular redox states, which are critical for maintaining cellular homeostasis. Its role in modulating calcium influx through the ryanodine receptor (RYR2) suggests a potential link to bone metabolism, as calcium signaling is vital for osteoblast and osteoclast function. However, there is no direct evidence connecting CLIC2 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) specifically, indicating a gap in the literature regarding its role in this condition. The evidence retrieved primarily discusses its general biological functions and associations with other diseases, but lacks specific ties to SONFH. Therefore, while CLIC2 may have biological relevance due to its cellular functions, its potential as a biomarker for early detection of SONFH is weak and primarily inferred from its general biological activity rather than direct evidence.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "CLIC2's role in chloride transport and calcium modulation suggests a potential but unproven link to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "CLIC2 (O15247). https://www.uniprot.org/uniprotkb/O15247",
+    "CLIC2 \u2014 CLIC2. https://platform.opentargets.org/target/ENSG00000155962",
+    "CLIC2 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000155962/associations",
+    "CLIC2 \u2194 X-linked intellectual disability-cardiomegaly-congestive heart failure syndrome. https://platform.opentargets.org/target/ENSG00000155962/associations",
+    "CLIC2 \u2194 X-linked intellectual disability - cardiomegaly - congestive heart failure. https://platform.opentargets.org/target/ENSG00000155962/associations",
+    "CLIC2 \u2194 cancer. https://platform.opentargets.org/target/ENSG00000155962/associations",
+    "CLIC. https://en.wikipedia.org/wiki/CLIC",
+    "CLIC2. https://en.wikipedia.org/wiki/CLIC2",
+    "CLIC1. https://en.wikipedia.org/wiki/CLIC1",
+    "Chloride channel. https://en.wikipedia.org/wiki/Chloride_channel"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5114,
+    "completion_tokens": 264,
+    "total_tokens": 5378,
+    "estimated_cost_usd": 0.000925
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O15247",
+          "title": "CLIC2 (O15247)",
+          "url": "https://www.uniprot.org/uniprotkb/O15247",
+          "text": "Protein: Chloride intracellular channel protein 2\nFunction: In the soluble state, catalyzes glutaredoxin-like thiol disulfide exchange reactions with reduced glutathione as electron donor. Displays weak glutathione peroxidase activity (Probable) (PubMed:25581026). Can insert into membranes and form chloride ion channels. Membrane insertion seems to be redox-regulated and may occur only under oxidizing conditions. Modulates the activity of RYR2 and inhibits calcium influx",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000155962::function",
+          "title": "CLIC2 \u2014 CLIC2",
+          "url": "https://platform.opentargets.org/target/ENSG00000155962",
+          "text": "Function: In the soluble state, catalyzes glutaredoxin-like thiol disulfide exchange reactions with reduced glutathione as electron donor. Displays weak glutathione peroxidase activity (Probable) (PubMed:25581026). Can insert into membranes and form chloride ion channels. Membrane insertion seems to be redox-regulated and may occur only under oxidizing conditions. Modulates the activity of RYR2 and inhibits calcium influx.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000155962::EFO_0005772",
+          "title": "CLIC2 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000155962/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.473",
+          "cos_sim_score": 0.47298055353356755,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000155962::MONDO_0010473",
+          "title": "CLIC2 \u2194 X-linked intellectual disability-cardiomegaly-congestive heart failure syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000155962/associations",
+          "text": "Disease: X-linked intellectual disability-cardiomegaly-congestive heart failure syndrome\nDescription: A syndromic X-linked intellectual disability characterized by intellectual disability, delayed psychomotor development, seizures, large joint contractures, cardiac abnormalities, and abnormal positioning of the thumbs that has material basis in mutation in the CLIC2 gene on chromosome Xq28.\nAssociation score: 0.413",
+          "cos_sim_score": 0.41321850933195164,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000155962::Orphanet_324410",
+          "title": "CLIC2 \u2194 X-linked intellectual disability - cardiomegaly - congestive heart failure",
+          "url": "https://platform.opentargets.org/target/ENSG00000155962/associations",
+          "text": "Disease: X-linked intellectual disability - cardiomegaly - congestive heart failure\nAssociation score: 0.370",
+          "cos_sim_score": 0.3695798546847018,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000155962::MONDO_0004992",
+          "title": "CLIC2 \u2194 cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000155962/associations",
+          "text": "Disease: cancer\nDescription: A tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues. Malignant neoplasms often metastasize to distant anatomic sites and may recur after excision. The most common malignant neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), Hodgkin and non-Hodgkin lymphomas, leukemias, melanomas, and sarcomas.\nAssociation score: 0.085",
+          "cos_sim_score": 0.08534539287028388,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::CLIC",
+          "title": "CLIC",
+          "url": "https://en.wikipedia.org/wiki/CLIC",
+          "text": "CLIC or Clic can refer to:\n\nScience and Technology\nChloride intracellular channel (a type of chloride channel, consists of six conserved proteins in humans (CLIC1, CLIC2, CLIC3, CLIC4, CLIC5, CLIC6)\nClathrin-independent carrier (a subtype of endocytic membrane)\nCompact Linear Collider, a proposed particle accelerator at CERN\n\nAirlines\nClic Air, formerly branded EasyFly, is a Colombian regional airline\nClickair, former airline of Spain, merged with Vueling\n\nMusic\nClic (album) a 1974 album by Italian experimental musician Franco Battiatio\n\nOther\nS4C Clic, a video on demand service from Welsh broadcaster S4C\nCLIC Sargent (now Young Lives vs Cancer), a cancer charity in the United Kingdom\nCluster LInux pour le Calcul, is a special version of Mandrakelinux for computer clusters\nCLiC (Colectivo de Livecoders), a livecoding collective from Argentina\nCommunity Leadership Independence Coalition, a party formed by Peter Lewis in the 2002 South Australian legislative election\nCompany Level Intelligence Cell, a group of infantry Marines who form a small intelligence unit\nCooperating Libraries in Consortium, a non-profit consortium of the libraries of eight private colleges and universities in Minneapolis\u2013Saint Paul\nPrograms organized by the Cumbria County Council:\nCumbria Learning and Improvement Collaborative, an information resource for health and social workers\nCumbria Libraries Interactive Catalogue, a county-wide public library catalogue system",
+          "cos_sim_score": 0.6082912683486938,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::CLIC2",
+          "title": "CLIC2",
+          "url": "https://en.wikipedia.org/wiki/CLIC2",
+          "text": "Chloride intracellular channel protein 2 is a protein that in humans is encoded by the CLIC2 gene.\nChloride channels are a diverse group of proteins that regulate fundamental cellular processes including stabilization of cell membrane potential, transepithelial transport, maintenance of intracellular pH, and regulation of cell volume. Chloride intracellular channel 2 is a member of the p64 family; the protein is detected in fetal liver and adult skeletal muscle tissue. This gene maps to the candidate region on chromosome X for incontinentia pigmenti.\n\nSee also\nChloride channel\n\nReferences\nFurther reading\nExternal links\nCLIC2+protein,+human at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nHuman CLIC2 genome location and CLIC2 gene details page  in the UCSC Genome Browser.\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.5315444469451904,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::CLIC1",
+          "title": "CLIC1",
+          "url": "https://en.wikipedia.org/wiki/CLIC1",
+          "text": "Chloride intracellular channel protein 1 is a protein that in humans is encoded by the CLIC1 gene.\nChloride channels are a diverse group of proteins that regulate fundamental cellular processes including stabilization of cell membrane potential, transepithelial transport, maintenance of intracellular pH, and regulation of cell volume. Chloride intracellular channel 1 is a member of the p64 family; the protein localizes principally to the cell nucleus and exhibits both nuclear and plasma membrane chloride ion channel activity.\nCLIC1 is highly expressed in murine and human microglia, the innate immune cells of the central nervous system. It regulates the motility and ramification of microglial processes, which are essential for continuous surveillance of the brain parenchyma. CLIC1 is also important for the inflammatory potential of microglia by controlling the NLRP3-dependent release of interleukin-1\u03b2. Contrary to its name, these functions are not mediated by CLIC1's ion channel activity but depend on its scaffold and enzymatic properties.\n\nInteractions\nCLIC1 has been shown to interact with TRAPPC2.\n\nSee also\nChloride channel\n\nReferences\nFurther reading\nExternal links\nCLIC1+protein,+human at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nHuman CLIC1 genome location and CLIC1 gene details page  in the UCSC Genome Browser.\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.4793013334274292,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Chloride channel",
+          "title": "Chloride channel",
+          "url": "https://en.wikipedia.org/wiki/Chloride_channel",
+          "text": "Genes\nCLCA1, CLCA2, CLCA3, CLCA4\n\nCLIC family\nThe Chloride Intracellular Ion Channel (CLIC) Family (TC# 1.A.12) consists of six conserved proteins in humans (CLIC1, CLIC2, CLIC3, CLIC4, CLIC5, CLIC6). Members exist as both monomeric soluble proteins and integral membrane proteins where they function as chloride-selective ion channels. These proteins are thought to function in the regulation of the membrane potential and in transepithelial ion absorption and secretion in the kidney. They are a member of the glutathione S-transferase (GST) superfamily.\n\nStructure\nThey possess one or two putative transmembrane \u03b1-helical segments (TMSs). The bovine p64 protein is 437 amino acyl residues in length and has the two putative TMSs at positions 223-239 and 367-385. The N- and C-termini are cytoplasmic, and the large central luminal loop may be glycosylated. The human nuclear protein (CLIC1 or NCC27) is much smaller (241 residues) and has only one putative TMS at positions 30-36. It is homologous to the second half of p64.\nStructural studies showed that in the soluble form, CLIC proteins adopt a GST fold with an active site exhibiting a conserved glutaredoxin monothiol motif, similar to the omega class GSTs. Al Khamici et al. demonstrated that CLIC proteins have glutaredoxin-like glutathione-dependent oxidoreductase enzymatic activity. CLICs 1, 2 and 4 demonstrate typical glutaredoxin-like activity using 2-hydroxyethyl disulfide as a substrate. This activity may regulate CLIC ion channel function.\n\nTransport reaction\nThe generalized transport reaction believed to be catalyzed chloride channels is:\n\nCl\u2212 (cytoplasm) \u2192  Cl\u2212 (intraorganellar space)\n\nCFTR\nCFTR is a chloride channel belonging to the superfamily of ABC transporters. Each channel has two transmembrane domains and two nucleotide binding domains. ATP binding to both nucleotide binding domains causes changes these domains to associate, further causing changes that open up the ion pore. When ATP is hydrolyzed, the nucleotide binding domains dissociate again and the pore closes.\n\nPathology\nCystic fibrosis is caused by mutations in the CFTR gene on chromosome 7, the most common mutation being deltaF508 (a deletion of a codon coding for phenylalanine, which occupies the 508th amino acid position in the normal CFTR polypeptide). Any of these mutations can prevent the proper folding of the protein and induce its subsequent degradation, resulting in decreased numbers of chloride channels in the body. This causes the buildup of mucus in the body and chronic infections.\n\nOther chloride channels and families\nGABAA\nGlycine Receptor\nCalcium-activated chloride channel\nAnion-conducting channelrhodopsin\n\nReferences\nFurther reading\nExternal links\nChloride+channels at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nUMich Orientation of Proteins in Membranes families/superfamily-10 - CLC chloride channels\n\nAs of this edit, this article uses content from \"1.A.13 The Epithelial Chloride Channel (E-ClC) Family\", which is licensed in a way that permits reuse under the Creative Commons Attribution-ShareAlike 3.0 Unported License, but not under the GFDL. All relevant terms must be followed.\nAs of this edit, this article uses content from \"1.A.12 The Intracellular Chloride Channel (CLIC) Family\", which is licensed in a way that permits reuse under the Creative Commons Attribution-ShareAlike 3.0 Unported License, but not under the GFDL. All relevant terms must be followed.",
+          "cos_sim_score": 0.3973938226699829,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Chloride channel",
+          "title": "Chloride channel",
+          "url": "https://en.wikipedia.org/wiki/Chloride_channel",
+          "text": "Structure and mechanism\nThe CLC channel structure has not yet been resolved, however the structure of the CLC exchangers has been resolved by x-ray crystallography. Because the primary structure of the channels and exchangers are so similar, most assumptions about the structure of the channels are based on the structure established for the bacterial exchangers.\n\nEach channel or exchanger is composed of two similar subunits\u2014a dimer\u2014each subunit containing one pore. The proteins are formed from two copies of the same protein\u2014a homodimer\u2014though scientists have artificially combined subunits from different channels to form heterodimers. Each subunit binds ions independently of the other, meaning conduction or exchange occur independently in each subunit.\n\nEach subunit consists of two related halves oriented in opposite directions, forming an 'antiparallel' structure. These halves come together to form the anion pore. The pore has a filter through which chloride and other anions can pass, but lets little else through. These water-filled pores filter anions via three binding sites\u2014Sint, Scen, and Sext\u2014which bind chloride and other anions. The names of these binding sites correspond to their positions within the membrane. Sint is exposed to intracellular fluid, Scen lies inside the membrane or in the center of the filter, and Sext is exposed to extracellular fluid.[4] Each binding site binds different chloride anions simultaneously. In the exchangers, these chloride ions do not interact strongly with one another, due to compensating interactions with the protein. In the channels, the protein does not shield chloride ions at one binding site from the neighboring negatively charged chlorides. Each negative charge exerts a repulsive force on the negative charges next to it. Researchers have suggested that this mutual repulsion contributes to the high rate of conduction through the pore.\nCLC transporters shuttle H+ across the membrane. The H+ pathway in CLC transporters utilizes two glutamate residues\u2014one on the extracellular side, Gluex, and one on the intracellular side, Gluin. Gluex also serves to regulate chloride exchange between the protein and extracellular solution. This means that the chloride and the proton share a common pathway on the extracellular side, but diverge on the intracellular side.\nCLC channels also have dependence on H+, but for gating rather than Cl\u2212 exchange. Instead of utilizing gradients to exchange two Cl\u2212 for one H+, the CLC channels transport one H+ while simultaneously transporting millions of anions. This corresponds with one cycle of the slow gate.\nEukaryotic CLC channels also contain cytoplasmic domains. These domains have a pair of CBS motifs, whose function is not fully characterized yet. Though the precise function of these domains is not fully characterized, their importance is illustrated by the pathologies resulting from their mutation. Thomsen's disease, Dent's disease, infantile malignant osteopetrosis, and Bartter's syndrome are all genetic disorders due to such mutations.\nAt least one role of the cytoplasmic CBS domains regards regulation via adenosine nucleotides. Particular CLC transporters and proteins have modulated activity when bound with ATP, ADP, AMP, or adenosine at the CBS domains. The specific effect is unique to each protein, but the implication is that certain CLC transporters and proteins are sensitive to the metabolic state of the cell.\n\nSelectivity\nThe Scen acts as the primary selectivity filter for most CLC proteins, allowing the following anions to pass through, from most selected to least: SCN\u2212, Cl\u2212, Br\u2212, NO\u22123, I\u2212. Altering a serine residue at the selectivity filter, labeled Sercen, to a different amino acid alters the selectivity.",
+          "cos_sim_score": 0.32768484950065613,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

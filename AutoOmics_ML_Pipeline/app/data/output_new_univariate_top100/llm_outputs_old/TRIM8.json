@@ -1,0 +1,142 @@
+{
+  "probe_id": "11726632_at",
+  "gene_symbol": "TRIM8",
+  "score": 1.0,
+  "SD_TestAUC": 0.0662538659999937,
+  "abs_fold_change": 0.9504,
+  "probe_count": 1,
+  "probe_ids": "11726632_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.9504,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:53:24",
+  "interpretation": "TRIM8 is an E3 ubiquitin-protein ligase involved in various biological processes, including cell survival, differentiation, and apoptosis. It plays a significant role in the innate immune response and is known to activate signaling pathways such as TNF-alpha and IL-1beta, which are crucial in inflammatory responses. Although there is no direct evidence linking TRIM8 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in inflammation and cell survival may suggest a potential role in the pathophysiology of SONFH, particularly in the context of steroid-induced damage to bone tissue. The evidence retrieved primarily supports its general biological functions rather than a specific connection to SONFH, leading to a lower confidence in its relevance as a biomarker. Therefore, while TRIM8 may have some biological plausibility in the context of SONFH, its potential as a clinically actionable biomarker remains weak.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "TRIM8 may be involved in inflammatory processes relevant to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "TRIM8 (Q9BZR9). https://www.uniprot.org/uniprotkb/Q9BZR9",
+    "TRIM8 \u2014 TRIM8. https://platform.opentargets.org/target/ENSG00000171206",
+    "TRIM8 \u2194 focal segmental glomerulosclerosis and neurodevelopmental syndrome. https://platform.opentargets.org/target/ENSG00000171206/associations",
+    "TRIM8 \u2194 Seizure. https://platform.opentargets.org/target/ENSG00000171206/associations",
+    "TRIM8 \u2194 epilepsy. https://platform.opentargets.org/target/ENSG00000171206/associations",
+    "TRIM8 \u2194 Global developmental delay. https://platform.opentargets.org/target/ENSG00000171206/associations",
+    "RING finger domain. https://en.wikipedia.org/wiki/RING_finger_domain",
+    "Tripartite motif family. https://en.wikipedia.org/wiki/Tripartite_motif_family"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5371,
+    "completion_tokens": 268,
+    "total_tokens": 5639,
+    "estimated_cost_usd": 0.000966
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9BZR9",
+          "title": "TRIM8 (Q9BZR9)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BZR9",
+          "text": "Protein: E3 ubiquitin-protein ligase TRIM8\nFunction: E3 ubiquitin-protein ligase that participates in multiple biological processes including cell survival, differentiation, apoptosis, and in particular, the innate immune response (PubMed:27981609, PubMed:28747347). Participates in the activation of interferon-gamma signaling by promoting proteasomal degradation of the repressor SOCS1 (PubMed:12163497). Plays a positive role in the TNFalpha and IL-1beta signaling pathways. Mechanistically, induces the 'Lys-63'-linked polyubiquitination of MAP3K7/TAK1 component leading to the activation of NF-kappa-B (PubMed:22084099, PubMed:23152791, PubMed:27981609, PubMed:34871740). Also modulates STAT3 activity through negative regulation of PIAS3, either by degradation of PIAS3 through the ubiquitin-proteasome pathway or exclusion of PIAS3 from the nucleus (PubMed:20516148). Negatively regulates TLR3/4-mediated innate immune response by catalyzing 'Lys-6'- and 'Lys-33'-linked polyubiquitination of TICAM1 and thereby disrupting the TICAM1-TBK1 interaction (PubMed:28747347)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000171206::function",
+          "title": "TRIM8 \u2014 TRIM8",
+          "url": "https://platform.opentargets.org/target/ENSG00000171206",
+          "text": "Function: E3 ubiquitin-protein ligase that participates in multiple biological processes including cell survival, differentiation, apoptosis, and in particular, the innate immune response (PubMed:27981609, PubMed:28747347). Participates in the activation of interferon-gamma signaling by promoting proteasomal degradation of the repressor SOCS1 (PubMed:12163497). Plays a positive role in the TNFalpha and IL-1beta signaling pathways. Mechanistically, induces the 'Lys-63'-linked polyubiquitination of MAP3K7/TAK1 component leading to the activation of NF-kappa-B (PubMed:22084099, PubMed:23152791, PubMed:27981609, PubMed:34871740). Also modulates STAT3 activity through negative regulation of PIAS3, either by degradation of PIAS3 through the ubiquitin-proteasome pathway or exclusion of PIAS3 from the nucleus (PubMed:20516148). Negatively regulates TLR3/4-mediated innate immune response by catalyzing 'Lys-6'- and 'Lys-33'-linked polyubiquitination of TICAM1 and thereby disrupting the TICAM1-TBK1 interaction (PubMed:28747347).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000171206::MONDO_0100111",
+          "title": "TRIM8 \u2194 focal segmental glomerulosclerosis and neurodevelopmental syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000171206/associations",
+          "text": "Disease: focal segmental glomerulosclerosis and neurodevelopmental syndrome\nDescription: A Mendelian diseases characterized by global developmental delay and renal dysfunction manifest as proteinuria and nephrotic syndrome apparent from infancy or early childhood. Some patients present with renal disease, whereas others present with developmental delay and develop renal disease later in childhood. Renal biopsy shows focal segmental glomerulosclerosis (FSGS), but the course of the disease is variable: some patients have transient proteinuria and others require renal transplant. Neurodevelopmental features are also variable, with some patients having only mildly impaired intellectual development, and others having a severe developmental disorder associated with early-onset refractory seizures or epileptic encephalopathy. Additional features, including feeding difficulties, poor overall growth, and nonspecific dysmorphic facial features, are commonly observed.\nAssociation score: 0.784",
+          "cos_sim_score": 0.7840747414029047,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000171206::HP_0001250",
+          "title": "TRIM8 \u2194 Seizure",
+          "url": "https://platform.opentargets.org/target/ENSG00000171206/associations",
+          "text": "Disease: Seizure\nDescription: A seizure is an intermittent abnormality of nervous system physiology characterized by a transient occurrence of signs and/or symptoms due to abnormal excessive or synchronous neuronal activity in the brain.\nAssociation score: 0.623",
+          "cos_sim_score": 0.6229528871700625,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000171206::EFO_0000474",
+          "title": "TRIM8 \u2194 epilepsy",
+          "url": "https://platform.opentargets.org/target/ENSG00000171206/associations",
+          "text": "Disease: epilepsy\nDescription: A brain disorder characterized by episodes of abnormally increased neuronal discharge resulting in transient episodes of sensory or motor neurological dysfunction, or psychic dysfunction. These episodes may or may not be associated with loss of consciousness or convulsions.\nAssociation score: 0.465",
+          "cos_sim_score": 0.4647853673469978,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000171206::HP_0001263",
+          "title": "TRIM8 \u2194 Global developmental delay",
+          "url": "https://platform.opentargets.org/target/ENSG00000171206/associations",
+          "text": "Disease: Global developmental delay\nDescription: A delay in the achievement of motor or mental milestones in the domains of development of a child, including motor skills, speech and language, cognitive skills, and social and emotional skills. This term should only be used to describe children younger than five years of age.\nAssociation score: 0.465",
+          "cos_sim_score": 0.4647112460539194,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::RING finger domain",
+          "title": "RING finger domain",
+          "url": "https://en.wikipedia.org/wiki/RING_finger_domain",
+          "text": "RNFT1, SH3MD4, SH3RF1, SH3RF2, SYVN1, TIF1, TMEM118, TOPORS, TRAF2, TRAF3, TRAF4, TRAF5, TRAF6, TRAF7, TRAIP, TRIM2, TRIM3, TRIM4, TRIM5, TRIM6, TRIM7, TRIM8, TRIM9, TRIM10, TRIM11, TRIM13, TRIM15, TRIM17, TRIM21, TRIM22, TRIM23, TRIM24, TRIM25, TRIM26, TRIM27, TRIM28, TRIM31, TRIM32, TRIM33, TRIM34, TRIM35, TRIM36, TRIM38, TRIM39, TRIM40, TRIM41, TRIM42, TRIM43, TRIM45, TRIM46, TRIM47, TRIM48, TRIM49, TRIM50, TRIM52, TRIM54, TRIM55, TRIM56, TRIM58, TRIM59, TRIM60, TRIM61, TRIM62, TRIM63, TRIM65, TRIM67, TRIM68, TRIM69, TRIM71, TRIM72, TRIM73, TRIM74, TRIML1, TTC3, UHRF1, UHRF2, VPS11, VPS8, ZNF179, ZNF294, ZNF313, ZNF364, ZNF451, ZNF650, ZNFB7, ZNRF1, ZNRF2, ZNRF3, ZNRF4, and ZSWIM2.",
+          "cos_sim_score": 0.3808525800704956,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Tripartite motif family",
+          "title": "Tripartite motif family",
+          "url": "https://en.wikipedia.org/wiki/Tripartite_motif_family",
+          "text": "The tripartite motif family (TRIM) is a protein family.\n\nFunction\nMany TRIM proteins are induced by interferons, which are important component of resistance to pathogens and  several TRIM proteins are known to be required for the restriction of infection by lentiviruses. TRIM proteins are involved in pathogen-recognition and by regulation of transcriptional pathways in host defence.\n\nStructure\nThe tripartite motif is always present at the N-terminus of the TRIM proteins. The TRIM motif includes the following three domains:\n\n(1) a RING finger domain\n(2) one or two B-box zinc finger domains\nwhen only one B-box is present, it is always a type-2 B-box\nwhen two B-boxes are present the type-1 B-Box always precedes the type-2 B-Box\n(3) coiled coil region\nThe C-terminus of TRIM proteins contain either:\n\nGroup 1 proteins: a C-terminal domain selected from the following list:\nNHL and IGFLMN domains, either in association or alone\nPHD domain associated with a bromodomain\nMATH domain (in e.g., TRIM37)\nARF domain (in e.g., TRIM23)\nEXOIII domain (in e.g., TRIM19) or\nGroup 2 proteins: a SPRY C-terminal domain\ne.g. TRIM21\n\nFamily members\nThe TRIM family is split into two groups that differ in domain structure and genomic organization:\n\nGroup 1 members possess a variety of C-terminal domains, and are represented in both vertebrate  and invertebrates\nGroup 2 is absent in invertebrates, possess a C-terminal SPRY domain\nMembers of the family include:\n\nGroup 1\nPHD-BROMO domain containing: TRIM24 (TIF1\u03b1), TRIM28 (TIF1\u03b2), TRIM33 (TIF1\u03b3)\u2013  act as corepressors\n1-10:   TRIM1, TRIM2, TRIM3,  TRIM8, TRIM9\n11-20: TRIM12, TRIM13, TRIM14, TRIM16, TRIM18, TRIM19\n21-30: TRIM23, TRIM25,  TRIM29, TRIM30\n31-40:  TRIM32, TRIM36, TRIM37\n41-50:  TRIM42, TRIM44, TRIM45, TRIM46, TRIM47\n51-60: TRIM51, TRIM53, TRIM54, TRIM55, TRIM56, TRIM57, TRIM59\n61-70:  TRIM62, TRIM63, TRIM65, TRIM66, TRIM67, TRIM69, TRIM70\n71-75: TRIM71\nGroup 2\n1-10: TRIM4, TRIM5, TRIM6, TRIM7, TRIM10\n11-20: TRIM11, TRIM12, TRIM15, TRIM17, TRIM20\n21-30: TRIM21, TRIM22, TRIM26, TRIM27, TRIM30\n31-40: TRIM31, TRIM34, TRIM35, TRIM38, TRIM39, TRIM40\n41-50: TRIM41, TRIM43, TRIM48, TRIM49, TRIM50\n51-60: TRIM51, TRIM52, TRIM53, TRIM57, TRIM58, TRIM60\n61-70: TRIM61, TRIM64, TRIM68, TRIM69, TRIM70\n71-75: TRIM72, TRIM73, TRIM74, TRIM75\n\n\n== References ==",
+          "cos_sim_score": 0.3632786273956299,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::RING finger domain",
+          "title": "RING finger domain",
+          "url": "https://en.wikipedia.org/wiki/RING_finger_domain",
+          "text": "Structure\nThe RING finger domain has the consensus sequence C-X2-C-X[9-39]-C-X[1-3]-H-X[2-3]-C-X2-C-X[4-48]-C-X2-C.\nwhere:\n\nC is a conserved cysteine residue involved zinc coordination,\nH is a conserved histidine involved in zinc coordination,\nZn is zinc atom, and\nX is any amino acid residue.\nThe following is a schematic representation of the structure of the RING finger domain:\n\n                              x x x     x x x\n                             x      x x      x\n                            x       x x       x\n                           x        x x        x\n                          C        C   C        C\n                         x  \\    / x   x \\    /  x\n                         x    Zn   x   x   Zn    x\n                          C /    \\ H   C /    \\ C\n                          x         x x         x\n                 x x x x x x         x         x x x x x x",
+          "cos_sim_score": 0.12461124360561371,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::RING finger domain",
+          "title": "RING finger domain",
+          "url": "https://en.wikipedia.org/wiki/RING_finger_domain",
+          "text": "AMFR, BARD1, BBAP, BFAR, BIRC2, BIRC3, BIRC7, BIRC8, BMI1, BRAP, BRCA1, CBL, CBLB, CBLC, CBLL1, CHFR, CNOT4, COMMD3, DTX1, DTX2, DTX3, DTX3L, DTX4, DZIP3, HCGV, HLTF, HOIL-1, IRF2BP2, LNX1, LNX2, LONRF1, LONRF2, LONRF3, MARCH1, MARCH2, MARCH3, MARCH4, MARCH5, MARCH6, MARCH7, MARCH8, MARCH9, MARCH10, MDM2, MEX3A, MEX3B, MEX3C, MEX3D, MGRN1, MIB1, MID1, MID2, MKRN1, MKRN2, MKRN3, MKRN4, MNAT1, MYLIP, NFX1, NFX2, PCGF1, PCGF2, PCGF3, PCGF4, PCGF5, PCGF6, PDZRN3, PDZRN4, PEX10, PHRF1, PJA1, PJA2, PML, PML-RAR, PXMP3, RAD18, RAG1, RAPSN, RBCK1, RBX1, RC3H1, RC3H2, RCHY1, RFP2, RFPL1, RFPL2, RFPL3, RFPL4B, RFWD2, RFWD3, RING1, RNF2, RNF4, RNF5, RNF6, RNF7, RNF8, RNF10, RNF11, RNF12, RNF13, RNF14, RNF19A, RNF20, RNF24, RNF25, RNF26, RNF32, RNF38, RNF39, RNF40, RNF41, RNF43, RNF44, RNF55, RNF71, RNF103, RNF111, RNF113A, RNF113B, RNF121, RNF122, RNF123, RNF125, RNF126, RNF128, RNF130, RNF133, RNF135, RNF138, RNF139, RNF141, RNF144A, RNF145, RNF146, RNF148, RNF149, RNF150, RNF151, RNF152, RNF157, RNF165, RNF166, RNF167, RNF168, RNF169, RNF170, RNF175, RNF180, RNF181, RNF182, RNF185, RNF207, RNF213, RNF215, RNFT1, SH3MD4, SH3RF1, SH3RF2, SYVN1, TIF1, TMEM118, TOPORS, TRAF2, TRAF3, TRAF4, TRAF5, TRAF6, TRAF7, TRAIP, TRIM2, TRIM3, TRIM4, TRIM5, TRIM6, TRIM7, TRIM8, TRIM9, TRIM10, TRIM11, TRIM13, TRIM15, TRIM17, TRIM21, TRIM22, TRIM23, TRIM24, TRIM25, TRIM26, TRIM27, TRIM28, TRIM31, TRIM32,",
+          "cos_sim_score": 0.09058666229248047,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::RING finger domain",
+          "title": "RING finger domain",
+          "url": "https://en.wikipedia.org/wiki/RING_finger_domain",
+          "text": "Examples\nExamples of human genes which encode proteins containing a RING finger domain include:",
+          "cos_sim_score": 0.06975414603948593,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "probe_id": "11715893_s_at",
+  "gene_symbol": "IFI27",
+  "rf_importance": 0.0014,
+  "selection_freq": 0.6,
+  "abs_fold_change": 2.482422666666669,
+  "score": 0.3703,
+  "probe_count": 2,
+  "probe_ids": "11715893_s_at | 11757480_x_at",
+  "max_score": 0.3703,
+  "mean_abs_fold_change": 2.4239,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T21:02:19",
+  "interpretation": "IFI27, or Interferon alpha-inducible protein 27, is involved in apoptosis signaling pathways, particularly those activated by type-I interferons. This protein plays a role in the release of cytochrome C from mitochondria, which is crucial for the apoptotic process. Given that steroid-induced osteonecrosis of the femoral head (SONFH) is associated with bone cell death due to disrupted blood supply, the apoptotic functions of IFI27 may be relevant in the context of SONFH. However, while IFI27 is implicated in various cancers and immune responses, direct evidence linking it specifically to SONFH is lacking, leading to a reliance on inferred connections. Thus, while IFI27 may have potential as a biomarker, the evidence is currently weak and primarily speculative.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "IFI27 may be involved in the apoptotic processes relevant to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "IFI27 (P40305). https://www.uniprot.org/uniprotkb/P40305",
+    "IFI27 (P40305-1). https://www.uniprot.org/uniprotkb/P40305-1",
+    "IFI27 (P40305-3). https://www.uniprot.org/uniprotkb/P40305-3",
+    "IFI27 \u2014 IFI27. https://platform.opentargets.org/target/ENSG00000165949",
+    "IFI27 \u2194 neoplasm. https://platform.opentargets.org/target/ENSG00000165949/associations",
+    "IFI27 \u2194 breast cancer. https://platform.opentargets.org/target/ENSG00000165949/associations",
+    "IFI27 \u2194 cancer. https://platform.opentargets.org/target/ENSG00000165949/associations",
+    "IFI27 \u2194 hepatocellular carcinoma. https://platform.opentargets.org/target/ENSG00000165949/associations",
+    "Avascular necrosis. https://en.wikipedia.org/wiki/Avascular_necrosis",
+    "Osteoporosis. https://en.wikipedia.org/wiki/Osteoporosis",
+    "Trabecular oedema. https://en.wikipedia.org/wiki/Trabecular_oedema"
+  ],
+  "token_usage": {
+    "prompt_tokens": 7629,
+    "completion_tokens": 234,
+    "total_tokens": 7863,
+    "estimated_cost_usd": 0.001285
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P40305",
+          "title": "IFI27 (P40305)",
+          "url": "https://www.uniprot.org/uniprotkb/P40305",
+          "text": "Protein: Interferon alpha-inducible protein 27, mitochondrial\nFunction: Probable adapter protein involved in different biological processes (PubMed:22427340, PubMed:27194766). Part of the signaling pathways that lead to apoptosis (PubMed:18330707, PubMed:24970806, PubMed:27673746). Involved in type-I interferon-induced apoptosis characterized by a rapid and robust release of cytochrome C from the mitochondria and activation of BAX and caspases 2, 3, 6, 8 and 9 (PubMed:18330707, PubMed:27673746). Also functions in TNFSF10-induced apoptosis (PubMed:24970806). May also have a function in the nucleus, where it may be involved in the interferon-induced negative regulation of the transcriptional activity of NR4A1, NR4A2 and NR4A3 through the enhancement of XPO1-mediated nuclear export of these nuclear receptors (PubMed:22427340). May thereby play a role in the vascular response to injury (By similarity). In the innate immune response, has an antiviral activity towards hepatitis C virus/HCV (PubMed:27194766, PubMed:27777077). May prevent the replication of the virus by recruiting both the hepatitis C virus non-structural protein 5A/NS5A and the ubiquitination machinery via SKP2, promoting the ubiquitin-mediated proteasomal degradation of NS5A (PubMed:27194766, PubMed:27777077). Also promotes virus-induced pyroptosis by activating CASP3 in the mitochondria after 'Lys-6'-linked ubiquitination by TRIM21 (PubMed:36426955)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P40305-1",
+          "title": "IFI27 (P40305-1)",
+          "url": "https://www.uniprot.org/uniprotkb/P40305-1",
+          "text": "Protein: Isoform 2 of Interferon alpha-inducible protein 27, mitochondrial",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P40305-3",
+          "title": "IFI27 (P40305-3)",
+          "url": "https://www.uniprot.org/uniprotkb/P40305-3",
+          "text": "Protein: Isoform 3 of Interferon alpha-inducible protein 27, mitochondrial",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000165949::function",
+          "title": "IFI27 \u2014 IFI27",
+          "url": "https://platform.opentargets.org/target/ENSG00000165949",
+          "text": "Function: Probable adapter protein involved in different biological processes (PubMed:22427340, PubMed:27194766). Part of the signaling pathways that lead to apoptosis (PubMed:18330707, PubMed:24970806, PubMed:27673746). Involved in type-I interferon-induced apoptosis characterized by a rapid and robust release of cytochrome C from the mitochondria and activation of BAX and caspases 2, 3, 6, 8 and 9 (PubMed:18330707, PubMed:27673746). Also functions in TNFSF10-induced apoptosis (PubMed:24970806). May also have a function in the nucleus, where it may be involved in the interferon-induced negative regulation of the transcriptional activity of NR4A1, NR4A2 and NR4A3 through the enhancement of XPO1-mediated nuclear export of these nuclear receptors (PubMed:22427340). May thereby play a role in the vascular response to injury (By similarity). In the innate immune response, has an antiviral activity towards hepatitis C virus/HCV (PubMed:27194766, PubMed:27777077). May prevent the replication of the virus by recruiting both the hepatitis C virus non-structural protein 5A/NS5A and the ubiquitination machinery via SKP2, promoting the ubiquitin- mediated proteasomal degradation of NS5A (PubMed:27194766, PubMed:27777077). Also promotes virus-induced pyroptosis by activating CASP3 in the mitochondria after 'Lys-6'-linked ubiquitination by TRIM21 (PubMed:36426955).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000165949::EFO_0000616",
+          "title": "IFI27 \u2194 neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000165949/associations",
+          "text": "Disease: neoplasm\nDescription: A benign or malignant tissue growth resulting from uncontrolled cell proliferation. Benign neoplastic cells resemble normal cells without exhibiting significant cytologic atypia, while malignant cells exhibit overt signs such as dysplastic features, atypical mitotic figures, necrosis, nuclear pleomorphism, and anaplasia. Representative examples of benign neoplasms include papillomas, cystadenomas, and lipomas; malignant neoplasms include carcinomas, sarcomas, lymphomas, and leukemias.\nAssociation score: 0.116",
+          "cos_sim_score": 0.1161900015197162,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000165949::MONDO_0007254",
+          "title": "IFI27 \u2194 breast cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000165949/associations",
+          "text": "Disease: breast cancer\nDescription: A primary or metastatic malignant neoplasm involving the breast. The vast majority of cases are carcinomas arising from the breast parenchyma or the nipple. Malignant breast neoplasms occur more frequently in females than in males.\nAssociation score: 0.115",
+          "cos_sim_score": 0.11488697698480328,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000165949::MONDO_0004992",
+          "title": "IFI27 \u2194 cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000165949/associations",
+          "text": "Disease: cancer\nDescription: A tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues. Malignant neoplasms often metastasize to distant anatomic sites and may recur after excision. The most common malignant neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), Hodgkin and non-Hodgkin lymphomas, leukemias, melanomas, and sarcomas.\nAssociation score: 0.110",
+          "cos_sim_score": 0.10996530681661429,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000165949::EFO_0000182",
+          "title": "IFI27 \u2194 hepatocellular carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000165949/associations",
+          "text": "Disease: hepatocellular carcinoma\nDescription: A malignant tumor that arises from hepatocytes. Hepatocellular carcinoma is relatively rare in the United States but very common in all African countries south of the Sahara and in Southeast Asia. Most cases are seen in patients over the age of 50 years, but this tumor can also occur in younger individuals and even in children. Hepatocellular carcinoma is more common in males than females and is associated with hepatitis B, hepatitis C, chronic alcohol abuse and cirrhosis. Serum elevation of alpha-fetoprotein occurs in a large percentage of patients with hepatocellular carcinoma. Grossly, hepatocellular carcinoma may present as a single mass, as multiple nodules, or as diffuse liver involvement. Microscopically, there is a wide range of differentiation from tumor to tumor (well differentiated to poorly differentiated tumors). Hepatocellular carcinomas quickly metastasize to regional lymph nodes and lung. The overall median survival of untreated liver cell carcinoma is about 4 months. The most effective treatment of hepatocellular carcinoma is complete resection of the tumor. Lately, an increasing number of tumors have been treated with liver transplantation.\nAssociation score: 0.109",
+          "cos_sim_score": 0.10910834451563677,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Avascular necrosis",
+          "title": "Avascular necrosis",
+          "url": "https://en.wikipedia.org/wiki/Avascular_necrosis",
+          "text": "Avascular necrosis (AVN), also called osteonecrosis or bone infarction, is death of bone tissue due to interruption of the blood supply. Early on, there may be no symptoms. Gradually joint pain may develop, which may limit the person's ability to move. Complications may include collapse of the bone or nearby joint surface.\nRisk factors include bone fractures, joint dislocations, alcoholism, and the use of high-dose steroids. The condition may also occur without any clear reason. The most commonly affected bone is the femur (thigh bone). Other relatively common sites include the upper arm bone, knee, shoulder, and ankle. Diagnosis is typically by medical imaging such as X-ray, CT scan, or MRI. Rarely biopsy may be used.\nTreatments may include medication, not walking on the affected leg, stretching, and surgery. Most of the time surgery is eventually required and may include core decompression, osteotomy, bone grafts, or joint replacement.\nAbout 15,000 cases occur per year in the United States. People 30 to 50 years old are most commonly affected. Males are more commonly affected than females.\n\nSigns and symptoms\nIn many cases, there is pain and discomfort in a joint which increases over time. It can affect any bone, and in about half of affected people, multiple sites are damaged.\nAvascular necrosis most commonly affects the ends of long bones, such as the femur. Other common sites include the humerus (upper arm), knees, shoulders, ankles and the jaw.\n\nCauses\nThe main risk factors are bone fractures, joint dislocations, alcoholism, and the use of high-dose steroids. Other risk factors include radiation therapy, chemotherapy, and organ transplantation. Osteonecrosis is also associated with cancer, lupus, sickle cell disease, HIV infection, Gaucher's disease, and Caisson disease (dysbaric osteonecrosis). Bisphosphonates are associated with osteonecrosis of the mandible (jawbone). The condition may also occur without any clear reason.\nProlonged, repeated exposure to high pressures (as experienced by commercial and military divers) has been linked to AVN, though the relationship is not well understood.\nIn children, avascular osteonecrosis can have several causes. It can occur in the hip as part of Legg\u2013Calv\u00e9\u2013Perthes syndrome, and it can also occur as a result after malignancy treatment such as acute lymphoblastic leukemia and allotransplantation.\n\nPathophysiology\nThe hematopoietic cells are most sensitive to low oxygen and are the first to die after reduction or removal of the blood supply, usually within 12 hours. Experimental evidence suggests that bone cells (osteocytes, osteoclasts, osteoblasts etc.) die within 12\u201348 hours, and that bone marrow fat cells die within 5 days.\nUpon reperfusion, repair of bone occurs in two phases. First, there is angiogenesis and movement of undifferentiated mesenchymal cells from adjacent living bone tissue grow into the dead marrow spaces, as well as entry of macrophages that degrade dead cellular and fat debris. Second, there is cellular differentiation of mesenchymal cells into osteoblasts or fibroblasts. Under favorable conditions, the remaining inorganic mineral volume forms a framework for establishment of new, fully functional bone tissue.\n\nDiagnosis\nIn the early stages, bone scintigraphy and MRI are the preferred diagnostic tools.\nX-ray images of avascular necrosis in the early stages usually appear normal. In later stages it appears relatively more radio-opaque due to the nearby living bone becoming resorbed secondary to reactive hyperemia. The necrotic bone itself does not show increased radiographic opacity, as dead bone cannot undergo bone resorption which is carried out by living osteoclasts. Late radiographic signs also include a radiolucency area following the collapse of subchondral bone (crescent sign) and ringed regions of radiodensity resulting from saponification and calcification of marrow fat following medullary infarcts.\n\nTypes\nWhen AVN affects the scaphoid bone, it is known as Preiser disease. Another named form of AVN is K\u00f6hler disease, which affects the navicular bone of the foot, primarily in children. Yet another form of AVN is Kienb\u00f6ck's disease, which affects the lunate bone in the wrist.",
+          "cos_sim_score": 0.5609941482543945,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Osteoporosis",
+          "title": "Osteoporosis",
+          "url": "https://en.wikipedia.org/wiki/Osteoporosis",
+          "text": "Medication\nCertain medications have been associated with an increase in osteoporosis risk; only glucocorticosteroids and anticonvulsants are classically associated, but evidence is emerging concerning other drugs.\n\nSteroid-induced osteoporosis (SIOP) arises due to use of glucocorticoids \u2013 analogous to Cushing's syndrome and involving mainly the axial skeleton. The synthetic glucocorticoid prescription drug prednisone is a main candidate after prolonged intake. Some professional guidelines recommend prophylaxis in patients who take the equivalent of more than 30 mg hydrocortisone (7.5 mg of prednisolone), especially when this is more than three months. It is recommended to use calcium or Vitamin D as prevention. Alternate day use may not prevent this complication.\nBarbiturates, phenytoin and some other enzyme-inducing antiepileptics \u2013 these probably accelerate the metabolism of vitamin D.\nL-Thyroxine over-replacement may contribute to osteoporosis, similar to how thyrotoxicosis does.  This can be relevant in subclinical hypothyroidism.\nSeveral drugs induce hypogonadism, for example aromatase inhibitors used in breast cancer, methotrexate and other antimetabolite drugs, depot progesterone and gonadotropin-releasing hormone agonists.\nAnticoagulants \u2013 long-term use of heparin is associated with a decrease in bone density.\nProton pump inhibitors \u2013 these drugs inhibit the production of stomach acid; this is thought to interfere with calcium absorption. Chronic phosphate binding may also occur with aluminium-containing antacids.\nThiazolidinediones (used for diabetes) \u2013 rosiglitazone and possibly pioglitazone, inhibitors of PPAR\u03b3, have been linked with an increased risk of osteoporosis and fracture.\nChronic lithium therapy has been associated with osteoporosis.\n\nPregnancy-associated osteoporosis\nOsteoporosis due to pregnancy and lactation is a rare condition of unknown cause.\n\nEvolutionary\nAge-related bone loss is common among humans due to exhibiting less dense bones than other primate species. Because of the more porous bones of humans, frequency of severe osteoporosis and osteoporosis related fractures is higher. The human vulnerability to osteoporosis is an obvious cost, but it can be justified by the advantage of bipedalism, inferring that this vulnerability is the byproduct of such. It has been suggested that porous bones help to absorb the increased stress that we have on two surfaces compared to our primate counterparts, who have four surfaces to disperse the force. In addition, the porosity allows for more flexibility and a lighter skeleton that is easier to support. One other consideration may be that diets today have much lower amounts of calcium than the diets of other primates or the tetrapedal ancestors to humans, which may lead to a higher likelihood of showing signs of osteoporosis.\n\nFracture risk assessment\nIn the absence of risk factors other than sex and age, a BMD measurement using dual-energy X-ray absorptiometry (DXA) is recommended for women at age 65. For women with risk factors, a clinical FRAX is advised at age 50.",
+          "cos_sim_score": 0.5183731317520142,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Trabecular oedema",
+          "title": "Trabecular oedema",
+          "url": "https://en.wikipedia.org/wiki/Trabecular_oedema",
+          "text": "Inflammatory lesions\nThere exist three types of inflammatory lesions: seropositive inflammatory arthropathy, seronegative arthritis, and enthesitis. Bone marrow lesions tend to be present in inflammatory arthropathy due to increased vascularisation, and are often present in sites of arthritis and enthesitis as well.\n\nIschaemic lesions\nAvascular necrosis of bone is directly related to bone marrow lesions; the severity of bone marrow lesions is correlated with the intensity of avascular osteonecrosis.\n\nInfectious lesions\nBacterial infections and bone marrow lesion development are closely related, as infection directly leads to inflammation. For example, infections of the foot in diabetic patients that spread to the bone are associated with bone marrow lesions.\n\nMetabolic/Endocrine lesions\nHormonal imbalances such as severe hyperthyroidism and hyperparathyroidism, which lead to impairment of bone metabolism, could cause bone marrow edema. Changes in connective tissue deposition such as uric acid composition in gout could cause bone marrow edema.\n\nIatrogenic lesions\nDamage could be done to bone marrow during surgery or radiotherapy, leading to inflammation and hence bone marrow edema as in other lesions. Patients who have undergone hormone therapy are also susceptible to bone marrow edema due to insufficient bone metabolism and high bone turnover.\nOsteonecrosis risk may also be increased by common immunosuppressants like cyclosporine and tacrolimus, due to the induced vasoconstriction. Drugs such as sirolimus may potentiate this effect by similar action or influencing the lipid profile.\n\nRisk factors\nBone marrow edema is usually caused by or associated with pre-existing conditions. Numerous epidemiological studies in patients with bone marrow edema have found certain patterns of characteristics among the participants; for example, certain medical conditions such as osteoporosis are substantial risk factors for developing bone marrow edema. Several common risk factors are listed as follows: \n\nSex; women in particular have a higher rate of contracting bone marrow edema\nAge; being at least 50 years old is also a major risk factor\nOccupation/Poor posture\nHistory of physical trauma\nOverweightness/Obesity\nPrevious damage to bone marrow due to surgery or radiation therapy\nImmunosuppressive or hormonal treatments\nRelevant medical conditions\nArthritis\nBone cancer\nBone infection\nOsteoporosis\nPost-renal transplantation syndrome\n\nDiagnosis\nMagnetic resonance imaging (MRI)\nDiagnosis of trabecular edema is primarily done via magnetic resonance imaging (MRI). The presence of edema within the bone marrow yields a visible signal on the MRI, due to displacement of the normally fatty tissue within the marrow by interstitial fluid with higher water content; this change in composition is then reflected by the MRI due to differences in the T1-weighted and T2-weighted images.\nA healthy bone is rich in fat and has lower water content, therefore it appears as bright signals on T1-weighted images and dark on T2-weighted images. Conversely, regions with trabecular edema has lower fat and higher water content. Hence, they have a comparatively lower intensity than normal bone tissues on a T1-weighted image, and a higher intensity on a T2-weighted image.\n\nUltrasound Scan\nBeing less sensitive compared to MRI scans, ultrasound scans are able to detect some abnormalities like joint effusion and capsular thickening, which are common in BME patients.\n\nComputed Tomography (CT) Scan\nComputed tomography (CT) scans cannot directly diagnose bone marrow edema, but it is sometimes used to supplement MRI scans for differential diagnosis. It is due to its ability to show any lesions or fractures in trabecular, subchondral or chondral structures, which aids physicians to understand if there are any underlying bone pathologies leading to the observed symptoms.\n\nTreatment\nCore decompression\nAs edema is by definition accumulation of excess fluid within body tissue, one method of treating edema is draining said excess fluid. Core decompression, otherwise often used to treat avascular necrosis, is a surgical procedure that involves drilling a hole into dead bone tissue, leading to the reduction of pressure within the bone and increase of blood flow; thus, the excess fluid can be drained and the edema treated. A combination of core decompression with injection of hydroxyapatite cement into the tissue affected with bone marrow edema has been reported to significantly reduce pain levels.",
+          "cos_sim_score": 0.47815728187561035,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Osteoporosis",
+          "title": "Osteoporosis",
+          "url": "https://en.wikipedia.org/wiki/Osteoporosis",
+          "text": "Osteoporosis is a systemic skeletal disorder characterized by low bone mass (osteopenia), micro-architectural deterioration of bone tissue leading to more porous bone, and consequent increase in fracture risk. Bones undergo continuous remodeling: osteoclasts resorb old bone, and osteoblasts synthesize new bone. With advancing age, the rate of resorption exceeds that of bone formation, causing bones to lose density and become more susceptible to fractures.\nIt is the most common reason for a broken bone among the elderly. Bones that commonly break include the vertebrae in the spine, the bones of the forearm, the wrist, and the hip.\nUntil a broken bone occurs, there are typically no symptoms. Bones may weaken to such a degree that a break may occur with minor stress or spontaneously. After the broken bone heals, some people may have chronic pain and a decreased ability to carry out normal activities.\nOsteoporosis may be due to lower-than-normal maximum bone mass and greater-than-normal bone loss. Bone loss increases after menopause in women due to lower levels of estrogen, and after andropause in older men due to lower levels of testosterone. Osteoporosis may also occur due to several diseases or treatments, including alcoholism, anorexia or underweight, hyperparathyroidism, hyperthyroidism, kidney disease, and after oophorectomy (surgical removal of the ovaries). Certain medications increase the rate of bone loss, including some antiseizure medications, chemotherapy, proton pump inhibitors, selective serotonin reuptake inhibitors, glucocorticosteroids, and overzealous levothyroxine suppression therapy. Smoking and sedentary lifestyle are also recognized as major risk factors. Osteoporosis is defined as a bone density of 2.5 standard deviations below that of a young adult. This is typically measured by dual-energy X-ray absorptiometry (DXA or DEXA).\nPrevention of osteoporosis includes a proper diet during childhood, hormone replacement therapy for menopausal women, and efforts to avoid medications that increase the rate of bone loss. Efforts to prevent broken bones in those with osteoporosis include a good diet, exercise, and fall prevention. Lifestyle changes such as stopping smoking and not drinking alcohol may help. Bisphosphonate medications are useful to decrease future broken bones in those with previous broken bones due to osteoporosis. In those with osteoporosis but no previous broken bones, they have been shown to be less effective. They do not appear to affect the risk of death.\nOsteoporosis becomes more common with age. About 15% of Caucasians in their 50s and 70% of those over 80 are affected. It is more common in women than men. In the developed world, depending on the method of diagnosis, 2% to 8% of males and 9% to 38% of females are affected. Rates of disease in the developing world are unclear. About 22 million women and 5.5 million men in the European Union had osteoporosis in 2010. In the United States in 2010, about 8 million women and between 1 and 2 million men had osteoporosis. White and Asian people are at greater risk for low bone mineral density due to their lower serum vitamin D levels and less vitamin D synthesis at certain latitudes. The word \"osteoporosis\" is from the Greek terms for \"porous bones\".\n\nSigns and symptoms\nOsteoporosis has no symptoms, and the person usually does not know that they have osteoporosis until a bone is broken. Osteoporotic fractures occur in situations where healthy people would not normally break a bone; they are therefore regarded as fragility fractures. Typical fragility fractures occur in the vertebral column, rib, hip and wrist. Examples of situations where people would not normally break a bone include a fall from standing height, normal day-to-day activities such as lifting, bending, or coughing.",
+          "cos_sim_score": 0.4779713749885559,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Osteoporosis",
+          "title": "Osteoporosis",
+          "url": "https://en.wikipedia.org/wiki/Osteoporosis",
+          "text": "Medical disorders\nMany diseases and disorders have been associated with osteoporosis. For some, the underlying mechanism influencing the bone metabolism is straightforward, whereas for others the causes are multiple or unknown.\n\nIn general, immobilization causes bone loss. For example, localized osteoporosis can occur after prolonged immobilization of a fractured limb in a cast. This is also more common in active people with a high bone turnover (for example, athletes). Other examples include bone loss during space flight or in people who are bedridden or use wheelchairs for various reasons.\nHypogonadal states can cause secondary osteoporosis. These include Turner syndrome, Klinefelter syndrome, Kallmann syndrome, anorexia nervosa, andropause, hypothalamic amenorrhea or hyperprolactinemia. In females, the effect of hypogonadism is mediated by estrogen deficiency. It can appear as early menopause (<45 years) or from prolonged premenopausal amenorrhea (>1 year). Bilateral oophorectomy (surgical removal of the ovaries) and premature ovarian failure cause deficient estrogen production. In males, testosterone deficiency is the cause (for example, andropause or after surgical removal of the testes).\nEndocrine disorders that can induce bone loss include Cushing's syndrome, hyperparathyroidism, hyperthyroidism, hypothyroidism, diabetes mellitus type 1 and 2, acromegaly, and adrenal insufficiency.\nMalnutrition, parenteral nutrition and malabsorption can lead to osteoporosis. Nutritional and gastrointestinal disorders that can predispose to osteoporosis include undiagnosed and untreated coeliac disease (both symptomatic and asymptomatic people), Crohn's disease, ulcerative colitis, cystic fibrosis, surgery (after gastrectomy, intestinal bypass surgery or bowel resection) and severe liver disease (especially primary biliary cirrhosis). People with lactose intolerance or milk allergy may develop osteoporosis due to restrictions of calcium-containing foods. Individuals with bulimia can also develop osteoporosis. Those with an otherwise adequate calcium intake can develop osteoporosis due to the inability to absorb calcium and/or vitamin D. Other micronutrients such as vitamin K or vitamin B12 deficiency may also contribute.\nPeople with rheumatologic disorders such as rheumatoid arthritis, ankylosing spondylitis, systemic lupus erythematosus and polyarticular juvenile idiopathic arthritis are at increased risk of osteoporosis, either as part of their disease or because of other risk factors (notably corticosteroid therapy). Systemic diseases such as amyloidosis and sarcoidosis can also lead to osteoporosis.\nChronic kidney disease can lead to renal osteodystrophy.\nHematologic disorders linked to osteoporosis are multiple myeloma and other monoclonal gammopathies, lymphoma, leukemia, mastocytosis, hemophilia, sickle-cell disease and thalassemia.\nImmune disorders: Osteoporosis can be a symptom of mast cell activation syndrome.\nSeveral inherited or genetic disorders have been linked to osteoporosis. These include osteogenesis imperfecta, Multicentric carpotarsal osteolysis syndrome, Multicentric Osteolysis, Nodulosis, and Arthropathy, Marfan syndrome, hemochromatosis, hypophosphatasia (for which it is often misdiagnosed), glycogen storage diseases, homocystinuria, Ehlers\u2013Danlos syndrome, porphyria, Menkes' syndrome, epidermolysis bullosa and Gaucher's disease.\nPeople with scoliosis of unknown cause also have a higher risk of osteoporosis. Bone loss can be a feature of complex regional pain syndrome. It is also more frequent in people with Parkinson's disease and chronic obstructive pulmonary disease.\nPeople with Parkinson's disease have a higher risk of broken bones. This is related to poor balance and poor bone density. In Parkinson's disease there may be a link between the loss of dopaminergic neurons and altered calcium metabolism (and iron metabolism) causing a stiffening of the skeleton and kyphosis.\n\nMedication\nCertain medications have been associated with an increase in osteoporosis risk; only glucocorticosteroids and anticonvulsants are classically associated, but evidence is emerging concerning other drugs.",
+          "cos_sim_score": 0.46111083030700684,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

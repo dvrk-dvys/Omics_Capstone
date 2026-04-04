@@ -1,0 +1,211 @@
+{
+  "probe_id": "11732181_x_at",
+  "gene_symbol": "PTAFR",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.1325077319999875,
+  "abs_fold_change": 1.31,
+  "score": 1.3077,
+  "probe_count": 1,
+  "probe_ids": "11732181_x_at",
+  "max_score": 1.3077,
+  "mean_abs_fold_change": 1.31,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T23:18:31",
+  "interpretation": "PTAFR, or platelet-activating factor receptor, is a G-protein-coupled receptor that mediates inflammatory responses and is involved in various signaling pathways, including those related to bone metabolism. Evidence suggests that PTAFR is highly expressed in osteoclasts, where it enhances their responsiveness to inflammatory cytokines, thereby prolonging their lifespan and increasing bone resorption activity. This mechanism is particularly relevant in the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), where inflammation and osteoclast activity contribute to bone loss and necrosis. The retrieved evidence indicates a direct link between PTAFR and inflammatory processes in bone metabolism, supporting its potential as a biomarker for early detection of SONFH. However, the overall evidence is moderate, as it primarily stems from studies on related inflammatory conditions rather than direct human studies on SONFH.",
+  "evidence_relation": "direct",
+  "evidence_tier": "Tier 2",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "PTAFR is implicated in the inflammatory processes that contribute to the pathogenesis of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "PTAFR (P25105). https://www.uniprot.org/uniprotkb/P25105",
+    "PTAFR \u2014 PTAFR. https://platform.opentargets.org/target/ENSG00000169403",
+    "PTAFR \u2194 allergic disease. https://platform.opentargets.org/target/ENSG00000169403/associations",
+    "PTAFR \u2194 urticaria. https://platform.opentargets.org/target/ENSG00000169403/associations",
+    "PTAFR \u2194 rheumatoid arthritis. https://platform.opentargets.org/target/ENSG00000169403/associations",
+    "PTAFR \u2194 Mastocytosis. https://platform.opentargets.org/target/ENSG00000169403/associations",
+    "PTAFR \u2014 platelet activating factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "JAK2 \u2014 Janus kinase 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "PRNP \u2014 prion protein (Kanno blood group) (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "PTK2 \u2014 protein tyrosine kinase 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CALM1 \u2014 calmodulin 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Immunomodulatory Mechanisms of Rehmanniae Radix Praeparata\u2013Achyranthes Root\u2013Chinese Angelica Root Combination in Nontraumatic Osteonecrosis of the Femoral Head: A Comprehensive Network Pharmacology and Molecular Docking Study Focusing on Immunological Pathways (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12767418/",
+    "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8988,
+    "completion_tokens": 317,
+    "total_tokens": 9305,
+    "estimated_cost_usd": 0.001538
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P25105",
+          "title": "PTAFR (P25105)",
+          "url": "https://www.uniprot.org/uniprotkb/P25105",
+          "text": "Protein: Platelet-activating factor receptor\nFunction: Receptor for platelet activating factor, a chemotactic phospholipid mediator that possesses potent inflammatory, smooth-muscle contractile and hypotensive activity. Seems to mediate its action via a G protein that activates a phosphatidylinositol-calcium second messenger system",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000169403::function",
+          "title": "PTAFR \u2014 PTAFR",
+          "url": "https://platform.opentargets.org/target/ENSG00000169403",
+          "text": "Function: Receptor for platelet activating factor, a chemotactic phospholipid mediator that possesses potent inflammatory, smooth-muscle contractile and hypotensive activity. Seems to mediate its action via a G protein that activates a phosphatidylinositol-calcium second messenger system.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000169403::MONDO_0005271",
+          "title": "PTAFR \u2194 allergic disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000169403/associations",
+          "text": "Disease: allergic disease\nDescription: An immune response that occurs following re-exposure to an innocuous antigen, and that requires the presence of existing antibodies against that antigen. This response involves the binding of IgE to mast cells, and may worsen with repeated exposures.\nAssociation score: 0.462",
+          "cos_sim_score": 0.4623443982105619,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000169403::EFO_0005531",
+          "title": "PTAFR \u2194 urticaria",
+          "url": "https://platform.opentargets.org/target/ENSG00000169403/associations",
+          "text": "Disease: urticaria\nDescription: A vascular reaction of the skin characterized by erythema and wheal formation due to localized increase of vascular permeability. The causative mechanism may be allergy, infection, or stress.\nAssociation score: 0.332",
+          "cos_sim_score": 0.33159525850877414,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000169403::EFO_0000685",
+          "title": "PTAFR \u2194 rheumatoid arthritis",
+          "url": "https://platform.opentargets.org/target/ENSG00000169403/associations",
+          "text": "Disease: rheumatoid arthritis\nDescription: A chronic, systemic autoimmune disorder characterized by inflammation in the synovial membranes and articular surfaces. It manifests primarily as a symmetric, erosive polyarthritis that spares the axial skeleton and is typically associated with the presence in the serum of rheumatoid factor.\nAssociation score: 0.259",
+          "cos_sim_score": 0.2592602680613183,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000169403::EFO_0009001",
+          "title": "PTAFR \u2194 Mastocytosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000169403/associations",
+          "text": "Disease: Mastocytosis\nDescription: A clonal myeloproliferative neoplasm characterized by the proliferation and accumulation of neoplastic mast cells in one or multiple organs or organ systems. It is a heterogeneous group of neoplasms, ranging from cutaneous proliferations which may regress spontaneously, to aggressive neoplasms associated with organ failure and short survival.\nAssociation score: 0.185",
+          "cos_sim_score": 0.1847899273423509,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "PTAFR \u2014 platelet activating factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PTAFR\nGene name: platelet activating factor receptor\nAliases / synonyms: PAFR\nOrganism: Homo sapiens\nGene summary: This gene encodes a seven-transmembrane G-protein-coupled receptor for platelet-activating factor (PAF) that localizes to lipid rafts and/or caveolae in the cell membrane. PAF (1-0-alkyl-2-acetyl-sn-glycero-3-phosphorylcholine) is a phospholipid that plays a significant role in oncogenic transformation, tumor growth, angiogenesis, metastasis, and pro-inflammatory processes. Binding of PAF to the PAF-receptor (PAFR) stimulates numerous signal transduction pathways including phospholipase C, D, A2, mitogen-activated protein kinases (MAPKs), and the phosphatidylinositol-calcium second messenger system. Following PAFR activation, cells become rapidly desensitized and this refractory state is dependent on PAFR phosphorylation, internalization, and down-regulation. Alternative splicing results i...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PTAFR",
+          "aliases": "PAFR",
+          "gene_description": "platelet activating factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "JAK2 \u2014 Janus kinase 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: JAK2\nGene name: Janus kinase 2\nAliases / synonyms: JTK10\nOrganism: Homo sapiens\nGene summary: This gene encodes a non-receptor tyrosine kinase that plays a central role in cytokine and growth factor signalling. The primary isoform of this protein has an N-terminal FERM domain that is required for erythropoietin receptor association, an SH2 domain that binds STAT transcription factors, a pseudokinase domain and a C-terminal tyrosine kinase domain. Cytokine binding induces autophosphorylation and activation of this kinase. This kinase then recruits and phosphorylates signal transducer and activator of transcription (STAT) proteins. Growth factors like TGF-beta 1 also induce phosphorylation and activation of this kinase and translocation of downstream STAT proteins to the nucleus where they influence gene transcription. Mutations in this gene are associated with numerous inflammatory ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "JAK2",
+          "aliases": "JTK10",
+          "gene_description": "Janus kinase 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "PRNP \u2014 prion protein (Kanno blood group)",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PRNP\nGene name: prion protein (Kanno blood group)\nAliases / synonyms: ASCR, AltPrP, CD230, CJD, GSS, KURU, PRIP, PrP, PrP27-30, PrP33-35C, PrPc, p27-30\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a membrane glycosylphosphatidylinositol-anchored glycoprotein that tends to aggregate into rod-like structures. The encoded protein contains a highly unstable region of five tandem octapeptide repeats. This gene is found on chromosome 20, approximately 20 kbp upstream of a gene which encodes a biochemically and structurally similar protein to the one encoded by this gene. Mutations in the repeat region as well as elsewhere in this gene have been associated with Creutzfeldt-Jakob disease, fatal familial insomnia, Gerstmann-Straussler disease, Huntington disease-like 1, and kuru. An overlapping open reading frame has been found for this gene that encodes a smaller, structurally unrelated protein, AltPrp. Alternative splicing results in multiple transcript ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PRNP",
+          "aliases": "ASCR, AltPrP, CD230, CJD, GSS, KURU, PRIP, PrP, PrP27-30, PrP33-35C, PrPc, p27-30",
+          "gene_description": "prion protein (Kanno blood group)"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "PTK2 \u2014 protein tyrosine kinase 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PTK2\nGene name: protein tyrosine kinase 2\nAliases / synonyms: FADK, FADK 1, FAK, FAK1, FRNK, PPP1R71, p125FAK, pp125FAK\nOrganism: Homo sapiens\nGene summary: This gene encodes a cytoplasmic protein tyrosine kinase which is found concentrated in the focal adhesions that form between cells growing in the presence of extracellular matrix constituents. The encoded protein is a member of the FAK subfamily of protein tyrosine kinases but lacks significant sequence similarity to kinases from other subfamilies. Activation of this gene may be an important early step in cell growth and intracellular signal transduction pathways triggered in response to certain neural peptides or to cell interactions with the extracellular matrix. Several transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Jun 2017]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PTK2",
+          "aliases": "FADK, FADK 1, FAK, FAK1, FRNK, PPP1R71, p125FAK, pp125FAK",
+          "gene_description": "protein tyrosine kinase 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CALM1 \u2014 calmodulin 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CALM1\nGene name: calmodulin 1\nAliases / synonyms: CALML2, CAM2, CAM3, CAMB, CAMC, CAMI, CAMIII, CPVT4, DD132, LQT14, PHKD, PHKD1, caM\nOrganism: Homo sapiens\nGene summary: This gene encodes one of three calmodulin proteins which are members of the EF-hand calcium-binding protein family. Calcium-induced activation of calmodulin regulates and modulates the function of cardiac ion channels. Two pseudogenes have been identified on chromosome 7 and X. Multiple transcript variants encoding different isoforms have been found for this gene.A missense mutation in the CALM1 gene has been associated with ventricular tachycardia.[provided by RefSeq, May 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CALM1",
+          "aliases": "CALML2, CAM2, CAM3, CAMB, CAMC, CAMI, CAMIII, CPVT4, DD132, LQT14, PHKD, PHKD1, caM",
+          "gene_description": "calmodulin 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::12767418",
+          "title": "Immunomodulatory Mechanisms of Rehmanniae Radix Praeparata\u2013Achyranthes Root\u2013Chinese Angelica Root Combination in Nontraumatic Osteonecrosis of the Femoral Head: A Comprehensive Network Pharmacology and Molecular Docking Study Focusing on Immunological Pathways",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12767418/",
+          "text": "1. Introduction\nOsteonecrosis of the femoral head (ONFH) is a common, progressive and highly disabling refractory disease in the field of orthopaedics. It primarily results from hypoxia and ischaemia within the femoral head, leading to cartilage destruction, local collapse and ultimately progressing to joint space narrowing and restricted joint mobility, resulting in hip dysfunction [1, 2]. Epidemiological data indicate that approximately 200,000\u2013300,000 new cases are diagnosed globally each year, with a rising trend observed annually [3]. In terms of geographical distribution, regions in Asia, such as China, Japan and South Korea, exhibit relatively higher incidence rates, particularly among patients undergoing long\u2010term steroid therapy [4\u20136]. In Europe and the Americas, due to the widespread consumption of alcohol and the use of steroids, the incidence is also relatively high [7]. From a demographic perspective, male patients significantly outnumber females, with a male\u2010to\u2010female ratio of approximately 3:1. In terms of age distribution, the disease predominantly affects individuals aged between 30 and 50 years [8, 9]; however, the specific age of onset may vary depending on the aetiology. Notably, nontraumatic ONFH (NONFH) accounts for over 70% of all ONFH cases [10]. NONFH is primarily associated with a series of risk factors, including long\u2010term use of steroids, hormonal medications, autoimmune diseases and excessive alcohol consumption [3, 11]. Due to the complexity of the aetiological mechanisms underlying NONFH, there are currently no effective approved drugs available for the treatment of ONFH. Surgical interventions, including hip replacement, remain the mainstream approach in modern medicine. However, the efficacy of surgical treatments varies and is heavily dependent on the surgeon\u2019s experience, while also posing risks such as economic burden, revision surgery and various complications [2, 12, 13].\nEmerging evidence highlights the crucial role of immune inflammation in the pathogenesis of NONFH [14, 15]. Exposure to steroids and alcohol can trigger neutrophil activation and the release of pro\u2010inflammatory mediators, which can cause vascular endothelial injury, intraosseous coagulation and eventually osteonecrosis [16, 17]. Recent research particularly underscores the role of neutrophil extracellular traps (NETs) in contributing to vascular dysfunction in ONFH [18, 19].\nIn recent years, traditional Chinese medicine (TCM) has been widely used as an alternative therapy for ONFH due to its proven efficacy and safety [20\u201323]. Mechanistic studies have shown that TCM can alleviate the progression of ONFH by regulating bone metabolism, oxidative stress and lipid metabolism [23\u201325]. However, current research in this area primarily focuses on the herbal components or formulae with proven efficacy, lacking in\u2010depth exploration of formulation principles and mechanisms of action [26]. In addition, due to the high variability and complexity of clinical TCM practice, there is a need to continuously optimise drug treatment regimens and systematically investigate the formulation principles and mechanisms of action of TCM formulae.\nData mining techniques can analyse large clinical prescription datasets using algorithms to identify core drugs and uncover, hidden valuable information [27, 28]. Ultrahigh performance liquid chromatography\u2010quadrupole time\u2010of\u2010flight mass spectrometry (UHPLC\u2010Q\u2010TOF\u2010MSE) is a high\u2010resolution, highly sensitive analytical tool with structural characterisation capabilities, enabling comprehensive identification of components in drug combinations obtained through data mining, which helps elucidate their pharmacological basis [29]. Network pharmacology employs systems biology, bioinformatics and network science methods to construct visual \u2018drug\u2010target\u2010disease\u2019 networks, revealing the complex mechanisms of TCM in treating diseases [30, 31]. However, traditional network pharmacology has low result accuracy, and integrating UHPLC\u2010Q\u2010TOF\u2010MSE identified components as candidates with network pharmacology and bioinformatics methods can effectively reduce false positive rates. Molecular docking (MD) uses computational simulations based on the lock\u2010and\u2010key principle between drug molecules and proteins to analyse their interactions. In contrast, molecular dynamics simulations (MDS) can provide further insight into these interactions at the molecular level [32, 33].",
+          "cos_sim_score": 0.6805399656295776,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12767418",
+          "title": "Immunomodulatory Mechanisms of Rehmanniae Radix Praeparata\u2013Achyranthes Root\u2013Chinese Angelica Root Combination in Nontraumatic Osteonecrosis of the Femoral Head: A Comprehensive Network Pharmacology and Molecular Docking Study Focusing on Immunological Pathways",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12767418/",
+          "text": "and cancer [82\u201384]. Most researchers agree that the pathogenesis of glucocorticoid\u2010induced bone disease involves increased apoptosis of osteoblasts and osteocytes, as well as prolonged osteoclast lifespan. Excessive glucocorticoid use not only increases ROS levels but also alters the sensitivity of vascular cells to vasoactive substances, leading to endothelial cell apoptosis [85]. In a study by Hikiji and colleagues, it was found that PTAFR is highly expressed in osteoclasts and is activated through autocrine and paracrine mechanisms, thereby enhancing their responsiveness to inflammatory cytokines such as TNF\u2010\u03b1 and IL\u20101\u03b2. This activation prolongs the lifespan of osteoclasts and increases their calcium resorption activity, thereby accelerating bone loss. Oestrogen deficiency further upregulates inflammatory cytokines, amplifying PTAFR\u2010mediated signalling and exacerbating bone resorption. In contrast, PTAFR deficiency or the use of PTAFR antagonists significantly reduces bone loss in ovariectomised mice, suggesting that PTAFR acts as a bridge connecting inflammation and bone metabolic disorders [86]. ACP1 encodes a low molecular weight protein tyrosine phosphatase that regulates protein tyrosine phosphorylation states and participates in bone cell signalling. It plays a significant role in maintaining bone and lipid metabolic homeostasis [87, 88]. Research has shown that certain polymorphisms in the ACP1 gene are associated with an increased risk of bone necrosis in children undergoing treatment for acute lymphoblastic leukaemia, indicating a potential role for ACP1 in the pathogenesis of bone necrosis [89, 90]. ACP1 exerts its effects through its phosphatase activity, regulating multiple signalling pathways that influence bone cell function and bone tissue stability. Genetic variations in ACP1 may serve as potential biomarkers for predicting the risk of hormone\u2010related bone necrosis [91\u201393]. CXCR2 is a G protein\u2010coupled receptor that primarily mediates neutrophil chemotaxis and inflammatory responses. Recent studies have highlighted its important roles in bone metabolism and tissue necrosis [94\u201396]. In bone metabolism, CXCR2 promotes endothelial cell migration and angiogenesis by activating the Src\u2010MAP4K4\u2010p38 MAPK signalling pathway, thereby supporting osteoblast function and bone tissue remodelling [97]. In addition, it collaborates with CXCR4 to regulate the mobilisation of neutrophils from the bone marrow to peripheral tissues, maintaining the stability of",
+          "cos_sim_score": 0.61115562915802,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "1. Introduction\nOsteonecrosis of the femoral head (ONFH) is a common disease mainly characterized by apoptosis of bone cells that leads to collapse of the femoral head and cartilage damage. Notably, the round surface of the head and acetabulum joint flattens and eventually leads to secondary osteoarthritis.[1] Studies have shown that the disease is mainly prevalent in patients with long-term use of hormonal drugs, long-term alcohol abuse, and hip trauma.[2] Steroid-induced ONFH (SONFH) is a common type of femoral head necrosis. SONFH patients are frequently misdiagnosed as hip synovitis or osteoarthritis owing to lack of obvious signs coupled with imaging abnormalities during early stages of disease development.[3] Although transcriptomic analyses have contributed to development of clinical treatment strategies for SONFH, the precise underlying mechanism of SONFH remains unclear.[4,5]\nBioinformatics analyses have significantly improved the search and identification of key genes regulating the occurrence of various diseases, thereby generating new insights to guide development of treatment strategies. SONFH has a complex pathophysiological mechanism. Genotyping of SONFH in adults revealed that gene coding protein polymorphism was associated with SONFH.[6] It has been hypothesized that progression of SONFH to the end stage in adult patients may be due to differential expression of protein-coding genes involved in thrombosis, angiogenesis inhibition, programmed cell death, lipid biosynthesis, and bone homeostasis. In the present study, we aimed to identify differentially expressed genes in peripheral blood of patients with early SONFH and further explored the pathogenesis of this disease using transcriptome data from the Gene Expression Omnibus database.\n2. Materials and Methods\n2.1. Data acquisition\nThe Gene Expression Omnibus database not only stores many gene chips and sequence data but also provides tools for users to query and download gene expression profiles. In the present study, we searched for relevant datasets using \u201csteroid-induced osteonecrosis of femoral head\u201d as the keyword, with focus on SONFH-related datasets. Consequently, we downloaded transcriptome data (GSE123568) belonging to 30 SONFH and 10 non-SONFH (following steroid administration) subjects.\n2.2. Sample correlation analysis\nOverall expression profiles of the transcriptome data were clustered using ClusterProfiler packages implemented in R software (version 4.0.2). Only dimension features containing the vast majority of variances were retained, with those containing zero variances discarded based on a principal component analysis (PCA) plot. Using weighted gene correlation network analysis (WGCNA) package in R language to perform WGCNA on data. WGCNA adds phenotypic weight parameters in the process of constructing gene co-expression network and optimizes classification using scale-free clustering and dynamic tree cut algorithm to achieve accurate and efficient data analysis.\n2.3. Functional annotation of DEGs\nFunctional annotation of key genes was performed using the ClusterProfiler package in R and followed by comprehensive functional correlation of candidate genes. Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analyses were performed to evaluate related functional categories. Significant differentially expressed genes (DEGs) were filtered, and bar charts and bubble charts were drawn according to their functions and pathways, respectively.\n2.4. Construction of protein\u2013protein interaction networks\nProtein\u2013protein interaction (PPI) networks of the DEGs were generated using the STRING online tool and Cytoscape software. Summarily, DEGs were entered into the STRING online tool to screen for interacting proteins with a combined score of\u2005>\u20050.9. The obtained PPI results were imported into Cytoscape software, then prominent modules in PPI were screened to construct the network through molecular complex detection. NetworkX package was then used to visualize the network in Python, with node sizes taken to be proportional to node degree.\n2.5. Quantitative real-time polymerase chain reaction",
+          "cos_sim_score": 0.5994250178337097,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12767418",
+          "title": "Immunomodulatory Mechanisms of Rehmanniae Radix Praeparata\u2013Achyranthes Root\u2013Chinese Angelica Root Combination in Nontraumatic Osteonecrosis of the Femoral Head: A Comprehensive Network Pharmacology and Molecular Docking Study Focusing on Immunological Pathways",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12767418/",
+          "text": "4. Discussion\nNONFH is a chronic, destructive disease closely related to alcoholism, glucocorticoid medication and other factors, which involves progressive osteonecrosis and may lead to collapse of the femoral head and loss of hip function, which seriously affects patients\u2019 quality of life [46, 47]. Although the pathophysiological mechanism of NONFH has not been elucidated yet, most scholars believe that the disease is closely related to abnormal lipid metabolism, vascular injury, inflammation, altered bone cell physiology, insufficient blood supply and oxidative stress [11, 48, 49]. TCM has a long history of treating bone diseases, and studies have shown that the use of TCM in treating patients with NONFH can effectively alleviate their pain and other symptoms, and at the same time improve their quality of life, with safe and effective results [50, 51]. The use of TCM in treating patients with NONFH has also been shown to be effective in improving the quality of life of patients with NONFH.\nIn this study, the literature on TCM treatment of NONFH was collected from the databases of CNKI, Wanfang and PubMed using TCMISS V2.5 software. Through this process, it was found that \u2018SND\u2019 was the drug pairing with the highest confidence level. Achyranthes bidentata Blume, a plant of the Amaranthaceae family, is a commonly used CHM for TCM. Current studies have shown that more than 270 active compounds have been identified in A. bidentata Blume, which can be classified as flavonoids, saponins, ecdysteroids, ketosteroids and so on, and have a wide range of pharmacological effects, such as inhibition of apoptosis of chondrocytes, modulation of bone and mineral metabolism, and other effects [51\u201353]. In the study of Yan et al. [54], it was found that AB50. A fructooligosaccharide from A. bidentata Blume could regulate bone metabolism\u2010related indexes, such as up\u2010regulating PINP and OCN, and down\u2010regulating TRAP and CTX; and increase the bone mineral density (BMD) of the femur in OVX rats, and so on, playing a role in stimulating bone formation [54]. In a study by Jiang et al. [52], A. bidentata extract increased BMD and promoted angiogenesis in steroid\u2010induced ONFH rats by improving the microarchitecture of cancellous bone; in addition, it inhibited osteoclast differentiation and activated bone formation markers, which acted as an osteoprotective agent in NONFH [52, 54]. Previous studies have demonstrated the importance of osteocyte physiology in the pathogenesis of NONFH, with osteoblasts, osteoclast apoptosis and abnormal osteoclast activity being among the leading causes of NONFH [48]. In our study, radix rehmanniae preparata was found to be a commonly used TCM, but no separate study of it on NONFH was found at this time. Radix rehmanniae preparata is a concocted and processed product of Rehmannia glutinosa Libosch (Rehmannia glutinosa Libosch), a plant of the Genusaceae family, which is a commonly used tonic herb in TCM. More than 100 active compounds have been identified, which can be classified as glycosides, polysaccharides, flavonoids, steroids and so on. They have a wide range of pharmacological effects, such as analgesic, sedative, anti\u2010inflammatory, antioxidant, anti\u2010tumour and immunomodulatory and are commonly used in the treatment of bone metabolism disorders, such as osteoporosis, osteoarthritis, and so forth [54\u201356]. Thus, we found that Radix Rehmanniae Preparata was able to promote bone formation by inhibiting the biosynthesis of steroid hormones and by regulating the expression levels of RUNX2 and OPN proteins through the perspective of the physiological role of osteoblasts [57].",
+          "cos_sim_score": 0.5157480835914612,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "Figure 3.\nqRT-PCR results showing significant upregulation of ITGAX and LILRB2 and significant downregulation of PPP3CB and MMP8 in SONFH patients., ITGAX = integrin subunit alpha X, LILRB2 = leukocyte immunoglobulin like receptor B2, MMP8 = matrix metallopeptidase 8, PPP3CB = protein phosphatase 3 catalytic subunit beta, qRT-PCR = quantitative real-time polymerase chain reaction, SONFH = steroid-induced osteonecrosis of the femoral head.\n4. Discussion\nMore than 30 years ago, researchers discovered a close relationship between use of glucocorticoids with the occurrence of femoral head necrosis.[7] Results from a retrospective analysis showed that hormone-related nontraumatic ONFH is dominant.[8] Investigating the genetic factors regulating SONFH characteristics is an important strategy, and scholars have employed bioinformatics to explore sequence data. However, these studies also present some defects, such as inability to accurately interpret high-throughput sequence data to ensure that a certain deviation exists between PCR verification data and the data significance.[9,10] In the present study, we explored the signaling pathways regulating development of early SONFH and predicted diagnostic biomarkers in peripheral blood from this group of patients.\nOur results revealed that hundreds of coding genes, including tumor necrosis factor-\u03b1 (TNF-\u03b1), phosphoinositide 3-kinase Akt (PI3K-Akt), hypoxia-inducible factor-1 (HIF-1), adherens junction, and mitogen-activated protein kinase signaling pathways, were significantly upregulated in peripheral blood of patients with early SONFH. Notably, these DEGs participate in regulation of redox, inflammatory response, angiogenesis, and cell metabolism by secreting inflammatory chemokine signaling proteins. We constructed a PPI network of these DEGs and found that PRDX2, HP, MMP8, FPR2, and ITGAX may be associated with the SONFH process. Among them, FPR2 is a low-affinity receptor of N-formyl methionine peptides and a powerful neutrophil chemokine.[11] Family with sequence similarity 19 member A5 is a neural factor or brain-specific chemokine that was shown to remarkably downregulate expression of osteoclast-related genes, such as receptor activator of nuclear factor kappa and TNF receptor-associated factor 6, and mediate upregulation of osteoclast-producing negative regulators, such as musculoaponeurotic fibrosarcoma oncogene homolog B and interferon regulatory factor-8.[12,13] Interestingly, FPR2 antagonist WRW4 or FPR2 deficiency were shown to markedly reverse inhibition of Family with sequence similarity 19 member A5-inducedosteoclastogenesis, indicating that FPR2 plays an important role in regulation of osteoclastogenesis as well as occurrence and development of SONFH disease.[9,14]\nIntegrin alpha-X/beta-2, which is encoded by ITGAX, is a receptor that recognizes the G protein-coupled receptor sequence in fibrinogen, thereby mediating cell\u2013cell interactions during inflammatory responses. Functionally, it plays an important role in monocyte adhesion and chemotaxis.[15,16] In the present study, we found that PRDX2 was a thiol-specific peroxidase in downregulated genes in SONFH relative to non-SONFH group. Functionally, this gene catalyzes reduction of hydrogen peroxide and organic peroxide to produce water and alcohol, thereby causing inactivation of toxic substances.[17] Studies have shown that PRDX2, a hydrogen peroxide-mediated signal transduction sensor that prevents oxidative stress, not only plays a role in cell protection but may also be participating in signal cascade reaction of growth factor and TNF-\u03b1 by regulating the intracellular concentration of hydrogen peroxide.[18,19]\nHP-related diseases, which include haptoglobinemia and Plasmodium falciparum malaria,[20] are regulated by the innate immune system and vesicle-mediated transport. HP accumulates in the kidney and is secreted in the urine due to hemolysis. Moreover, HP reportedly captures and binds to free plasma HP, thereby preventing kidney damage. HP also acts as an antioxidant, presents antibacterial activity, and plays a role in many acute phase regulations.[21] Therefore, the observed downregulation of PRDX2 and HP may suggest that both genes promote development of SONFH disease through the redox pathway.",
+          "cos_sim_score": 0.5149651765823364,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "rf_rank": 4,
+  "probe_id": "11718260_at",
+  "gene_symbol": "NOTCH1",
+  "score": 0.88,
+  "rf_n_nodes": 4,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 1.0624,
+  "log_fc": 1.0624,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11718260_at",
+  "max_score": 0.88,
+  "mean_abs_fold_change": 1.0624,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T17:28:09",
+  "interpretation": "NOTCH1 is a receptor that plays a crucial role in cell-fate determination, differentiation, and angiogenesis. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), NOTCH1 is implicated in the VEGF-Notch-Noggin signaling pathway, which has been shown to promote angiogenesis and osteogenesis coupling, essential for bone health and repair. The retrieved evidence indicates that NOTCH1 expression is upregulated in response to treatments that aim to mitigate SONFH, suggesting its involvement in the disease's pathology. However, the evidence primarily stems from animal studies, leading to a lower confidence in its direct applicability to human SONFH cases. Therefore, while NOTCH1 shows potential as a biomarker for SONFH, its clinical relevance as an early-detection tool remains moderate due to the need for further validation in human studies.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "NOTCH1 is involved in the signaling pathways that regulate angiogenesis and osteogenesis, linking it to the pathology of Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "NOTCH1 (P46531). https://www.uniprot.org/uniprotkb/P46531",
+    "NOTCH1 \u2014 NOTCH1. https://platform.opentargets.org/target/ENSG00000148400",
+    "NOTCH1 \u2194 Adams-Oliver syndrome. https://platform.opentargets.org/target/ENSG00000148400/associations",
+    "NOTCH1 \u2194 chronic lymphocytic leukemia. https://platform.opentargets.org/target/ENSG00000148400/associations",
+    "NOTCH1 \u2194 aortic stenosis. https://platform.opentargets.org/target/ENSG00000148400/associations",
+    "NOTCH1 \u2194 cancer. https://platform.opentargets.org/target/ENSG00000148400/associations",
+    "[Mechanism of Jianpi Huogu Formula in promoting angiogenesis-osteogenesis coupling to treat steroid-induced osteonecrosis of femoral head in rats via VEGF-Notch-Noggin signaling pathway]. (2026). https://pubmed.ncbi.nlm.nih.gov/41814723/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4188,
+    "completion_tokens": 253,
+    "total_tokens": 4441,
+    "estimated_cost_usd": 0.00078
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P46531",
+          "title": "NOTCH1 (P46531)",
+          "url": "https://www.uniprot.org/uniprotkb/P46531",
+          "text": "Protein: Neurogenic locus notch homolog protein 1\nFunction: Functions as a receptor for membrane-bound ligands Jagged-1 (JAG1), Jagged-2 (JAG2) and Delta-1 (DLL1) to regulate cell-fate determination. Upon ligand activation through the released notch intracellular domain (NICD) it forms a transcriptional activator complex with RBPJ/RBPSUH and activates genes of the enhancer of split locus. Affects the implementation of differentiation, proliferation and apoptotic programs. Involved in angiogenesis; negatively regulates endothelial cell proliferation and migration and angiogenic sprouting. Involved in the maturation of both CD4(+) and CD8(+) cells in the thymus. Important for follicular differentiation and possibly cell fate selection within the follicle. During cerebellar development, functions as a receptor for neuronal DNER and is involved in the differentiation of Bergmann glia. Represses neuronal and myogenic differentiation. May play an essential role in postimplantation development, probably in some aspect of cell specification and/or differentiation. May be involved in mesoderm development, somite formation and neurogenesis. May enhance HIF1A function by sequestering HIF1AN away from HIF1A. Required for the THBS4 function in regulating protective astrogenesis from the subventricular zone (SVZ) niche after injury. Involved in determination of left/right symmetry by modulating the balance between motile and immotile (sensory) cilia at the left-right organiser (LRO)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000148400::function",
+          "title": "NOTCH1 \u2014 NOTCH1",
+          "url": "https://platform.opentargets.org/target/ENSG00000148400",
+          "text": "Function: Functions as a receptor for membrane-bound ligands Jagged-1 (JAG1), Jagged-2 (JAG2) and Delta-1 (DLL1) to regulate cell-fate determination. Upon ligand activation through the released notch intracellular domain (NICD) it forms a transcriptional activator complex with RBPJ/RBPSUH and activates genes of the enhancer of split locus. Affects the implementation of differentiation, proliferation and apoptotic programs. Involved in angiogenesis; negatively regulates endothelial cell proliferation and migration and angiogenic sprouting. Involved in the maturation of both CD4(+) and CD8(+) cells in the thymus. Important for follicular differentiation and possibly cell fate selection within the follicle. During cerebellar development, functions as a receptor for neuronal DNER and is involved in the differentiation of Bergmann glia. Represses neuronal and myogenic differentiation. May play an essential role in postimplantation development, probably in some aspect of cell specification and/or differentiation. May be involved in mesoderm development, somite formation and neurogenesis. May enhance HIF1A function by sequestering HIF1AN away from HIF1A. Required for the THBS4 function in regulating protective astrogenesis from the subventricular zone (SVZ) niche after injury. Involved in determination of left/right symmetry by modulating the balance between motile and immotile (sensory) cilia at the left-right organiser (LRO). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000148400::MONDO_0007034",
+          "title": "NOTCH1 \u2194 Adams-Oliver syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000148400/associations",
+          "text": "Disease: Adams-Oliver syndrome\nDescription: Adams-Oliver Syndrome (AOS) is a rare disorder characterized by the combination of congenital limb abnormalities and scalp defects, often accompanied by skull ossification defects.\nAssociation score: 0.820",
+          "cos_sim_score": 0.8199672000988557,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000148400::EFO_0000095",
+          "title": "NOTCH1 \u2194 chronic lymphocytic leukemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000148400/associations",
+          "text": "Disease: chronic lymphocytic leukemia\nDescription: B-cell chronic lymphocytic leukemia (B-CLL) is a type of B-cell non-Hodgkin lymphoma, and the most common form of leukemia in Western countries, affecting elderly adults (mean age of 67 and 72 years) with a slight male predominance (1.7:1), and characterized by a highly variable clinical presentation that can include asymptomatic disease or non-specific B-symptoms such as unintentional weight loss, severe fatigue, fever (without evidence of infection), and night sweats as well as cervical lymphadenopathy, splenomegaly and frequent infections. Some patients can also develop autoimmune complications such as autoimmune hemolytic anemia or immune thrombocytopenia. The clinical course is extremely heterogeneous with survival ranging from a few months to several decades.\nAssociation score: 0.733",
+          "cos_sim_score": 0.7334479359860145,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000148400::EFO_0000266",
+          "title": "NOTCH1 \u2194 aortic stenosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000148400/associations",
+          "text": "Disease: aortic stenosis\nDescription: Aortic valve stenosis is a aortic valve disease caused by the incomplete opening of the aortic valve. The aortic valve controls the direction of blood flow from the left ventricle to the aorta. When in good working order, the aortic valve does not impede the flow of blood between these two spaces. Under some circumstances, the aortic valve becomes narrower than normal, impeding the flow of blood. This is known as aortic valve stenosis, or aortic stenosis, often abbreviated as AS.\nAssociation score: 0.726",
+          "cos_sim_score": 0.7257538224782628,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000148400::MONDO_0004992",
+          "title": "NOTCH1 \u2194 cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000148400/associations",
+          "text": "Disease: cancer\nDescription: A tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues. Malignant neoplasms often metastasize to distant anatomic sites and may recur after excision. The most common malignant neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), Hodgkin and non-Hodgkin lymphomas, leukemias, melanomas, and sarcomas.\nAssociation score: 0.678",
+          "cos_sim_score": 0.6783782241885714,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::41814723",
+          "title": "[Mechanism of Jianpi Huogu Formula in promoting angiogenesis-osteogenesis coupling to treat steroid-induced osteonecrosis of femoral head in rats via VEGF-Notch-Noggin signaling pathway].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41814723/",
+          "year": "2026",
+          "text": "This study aimed to observe the promoting effect of Jianpi Huogu Formula(JPHGF) on angiogenesis-osteogenesis coupling in rats with steroid-induced osteonecrosis of the femoral head(SONFH), and to explore its mechanism of action through the vascular endothelial growth factor(VEGF)-Notch-Noggin signaling pathway. A total of 120 Sprague-Dawley rats were randomly divided into a normal group, a model group, low-, medium-, and high-dose JPHGF groups(2.5, 5, and 10 g\u00b7kg~(-1)), and a Jiangusheng Pills group(1.53 g\u00b7kg~(-1)). Except for the normal group, all rats were injected with lipopolysaccharide(20 \u03bcg\u00b7kg~(-1)) via the tail vein once daily on days 1 and 2, followed by intramuscular injection of methylprednisolone sodium succinate(40 mg\u00b7kg~(-1), gluteal muscle) once daily from days 3 to 5. The normal group received an equivalent volume of normal saline. Four weeks after model establishment, the rats were administered the corresponding drugs by gavage. The therapeutic effects of JPHGF on SONFH rats were evaluated by measuring mechanical pain threshold, cold pain sensitivity, hemorheological parameters, four coagulation indices, and by pathological and imaging analyses of the femoral head. The microvascular distribution of the femoral head was observed by ink perfusion and Microfil angiography. Immunofluorescence was used to detect the expression of platelet endothelial cell adhesion molecule-1(CD31), endothelial mucin(Emcn), and the osteoblast-specific transcription factor Osterix, as well as the co-expression of CD31 and Noggin proteins in the femoral head. Immunohistochemistry was employed to detect the expression of type \u2160 collagen(collagen \u2160) and Notch-1 proteins, while Western blot was used to measure the expression levels of VEGF and Noggin proteins in the femoral head. The results showed that JPHGF significantly increased the mechanical pain threshold and reduced the number of foot lifts in response to cold stimulation in SONFH rats. It markedly increased trabecular bone area, reduced the number of adipocytes and the percentage of empty lacunae, improved imaging manifestations of femoral head necrosis, and increased the vascular area in ink perfusion and the vessel volume in Microfil perfusion within the medullary cavity of the femoral head. JPHGF also improved hemorheological parameters and coagulation function, upregulated the expression of",
+          "cos_sim_score": 0.4901253879070282,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::41814723",
+          "title": "[Mechanism of Jianpi Huogu Formula in promoting angiogenesis-osteogenesis coupling to treat steroid-induced osteonecrosis of femoral head in rats via VEGF-Notch-Noggin signaling pathway].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41814723/",
+          "year": "2026",
+          "text": "and reduced the number of foot lifts in response to cold stimulation in SONFH rats. It markedly increased trabecular bone area, reduced the number of adipocytes and the percentage of empty lacunae, improved imaging manifestations of femoral head necrosis, and increased the vascular area in ink perfusion and the vessel volume in Microfil perfusion within the medullary cavity of the femoral head. JPHGF also improved hemorheological parameters and coagulation function, upregulated the expression of CD31, Emcn, and Osterix proteins, enhanced the co-expression of CD31 and Noggin proteins, and promoted the expression of collagen \u2160, Notch-1, VEGF, and Noggin proteins. These findings indicate that JPHGF promotes angiogenesis-osteogenesis coupling by activating the VEGF-Notch-Noggin signaling pathway, thereby effectively treating SONFH in rats. This study elucidates the pharmacological connotation of JPHGF from the perspective of &quot;angiogenesis-osteogenesis coupling&quot; and provides an experimental basis for its clinical application.",
+          "cos_sim_score": 0.3713966906070709,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_fetch_by_id",
+      "result": []
+    }
+  ]
+}

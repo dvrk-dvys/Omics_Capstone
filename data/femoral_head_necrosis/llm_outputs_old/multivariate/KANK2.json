@@ -1,0 +1,168 @@
+{
+  "rf_rank": 56,
+  "probe_id": "11717871_s_at",
+  "gene_symbol": "KANK2",
+  "score": 0.51,
+  "rf_n_nodes": 12,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 2.3181,
+  "log_fc": -2.3181,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11717871_s_at",
+  "max_score": 0.51,
+  "mean_abs_fold_change": 2.3181,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T21:52:37",
+  "interpretation": "KANK2 (KN motif and ankyrin repeat domain-containing protein 2) is involved in various cellular processes, including transcription regulation and apoptosis. It sequesters nuclear receptor coactivators and regulates pro-apoptotic factors, which may influence cell survival and death pathways. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), KANK2's role in apoptosis and cellular signaling could be relevant, as steroid treatment is known to induce cellular stress and apoptosis in bone tissue. However, the evidence linking KANK2 directly to SONFH is limited, primarily suggesting its involvement in related biological processes rather than a direct association with the disease. Therefore, while KANK2 may have potential as a biomarker due to its biological functions, the current evidence does not strongly support its clinical utility for early detection of SONFH.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "KANK2 may play a role in cellular processes relevant to Steroid-Induced Osteonecrosis of the Femoral Head, but direct evidence linking it to the disease is lacking.",
+  "citations": [
+    "KANK2 (Q63ZY3). https://www.uniprot.org/uniprotkb/Q63ZY3",
+    "KANK2 (Q63ZY3-2). https://www.uniprot.org/uniprotkb/Q63ZY3-2",
+    "KANK2 (Q63ZY3-3). https://www.uniprot.org/uniprotkb/Q63ZY3-3",
+    "KANK2 \u2014 KANK2. https://platform.opentargets.org/target/ENSG00000197256",
+    "KANK2 \u2194 nephrotic syndrome 16. https://platform.opentargets.org/target/ENSG00000197256/associations",
+    "KANK2 \u2194 wooly hair-palmoplantar keratoderma syndrome. https://platform.opentargets.org/target/ENSG00000197256/associations",
+    "KANK2 \u2194 hypertension. https://platform.opentargets.org/target/ENSG00000197256/associations",
+    "KANK2 \u2194 familial idiopathic steroid-resistant nephrotic syndrome. https://platform.opentargets.org/target/ENSG00000197256/associations",
+    "ANKRD25. https://en.wikipedia.org/wiki/ANKRD25",
+    "List of human protein-coding genes 4. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_4",
+    "Stress granule. https://en.wikipedia.org/wiki/Stress_granule",
+    "Salish Wool Dog. https://en.wikipedia.org/wiki/Salish_Wool_Dog"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5296,
+    "completion_tokens": 249,
+    "total_tokens": 5545,
+    "estimated_cost_usd": 0.000944
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q63ZY3",
+          "title": "KANK2 (Q63ZY3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q63ZY3",
+          "text": "Protein: KN motif and ankyrin repeat domain-containing protein 2\nFunction: Involved in transcription regulation by sequestering in the cytoplasm nuclear receptor coactivators such as NCOA1, NCOA2 and NCOA3 (PubMed:17476305). Involved in regulation of caspase-independent apoptosis by sequestering the proapoptotic factor AIFM1 in mitochondria (PubMed:22371500). Pro-apoptotic stimuli can induce its proteasomal degradation allowing the translocation of AIFM1 to the nucleus to induce apoptosis (PubMed:22371500). Involved in the negative control of vitamin D receptor signaling pathway (PubMed:24671081). Involved in actin stress fibers formation through its interaction with ARHGDIA and the regulation of the Rho signaling pathway (PubMed:17996375, PubMed:25961457). May thereby play a role in cell adhesion and migration, regulating for instance podocytes migration during development of the kidney (PubMed:25961457). Through the Rho signaling pathway may also regulate cell proliferation (By similarity)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q63ZY3-2",
+          "title": "KANK2 (Q63ZY3-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q63ZY3-2",
+          "text": "Protein: Isoform 2 of KN motif and ankyrin repeat domain-containing protein 2",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q63ZY3-3",
+          "title": "KANK2 (Q63ZY3-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q63ZY3-3",
+          "text": "Protein: Isoform 3 of KN motif and ankyrin repeat domain-containing protein 2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000197256::function",
+          "title": "KANK2 \u2014 KANK2",
+          "url": "https://platform.opentargets.org/target/ENSG00000197256",
+          "text": "Function: Involved in transcription regulation by sequestering in the cytoplasm nuclear receptor coactivators such as NCOA1, NCOA2 and NCOA3 (PubMed:17476305). Involved in regulation of caspase-independent apoptosis by sequestering the proapoptotic factor AIFM1 in mitochondria (PubMed:22371500). Pro-apoptotic stimuli can induce its proteasomal degradation allowing the translocation of AIFM1 to the nucleus to induce apoptosis (PubMed:22371500). Involved in the negative control of vitamin D receptor signaling pathway (PubMed:24671081). Involved in actin stress fibers formation through its interaction with ARHGDIA and the regulation of the Rho signaling pathway (PubMed:17996375, PubMed:25961457). May thereby play a role in cell adhesion and migration, regulating for instance podocytes migration during development of the kidney (PubMed:25961457). Through the Rho signaling pathway may also regulate cell proliferation (By similarity).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197256::MONDO_0033280",
+          "title": "KANK2 \u2194 nephrotic syndrome 16",
+          "url": "https://platform.opentargets.org/target/ENSG00000197256/associations",
+          "text": "Disease: nephrotic syndrome 16\nAssociation score: 0.614",
+          "cos_sim_score": 0.6137496503103731,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197256::MONDO_0014492",
+          "title": "KANK2 \u2194 wooly hair-palmoplantar keratoderma syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000197256/associations",
+          "text": "Disease: wooly hair-palmoplantar keratoderma syndrome\nDescription: Woolly hair-palmoplantar keratoderma syndrome is a very rare, hereditary epidermal disorder characterized by hypotrichosis/wooly scalp hair, sparse body hair, eyelashes and eyebrows, leukonychia, and striate palmoplantar keratoderma (more severe on the soles than the palms), which progressively worsens with age. Pseudo ainhum of the fifth toes was also reported. Although wooly hair-palmoplantar keratoderma syndrome shares clinical similarities with both Naxos disease and Carvajal syndrome, cardiomyopathy is notably absent.\nAssociation score: 0.565",
+          "cos_sim_score": 0.5648744829744942,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197256::EFO_0000537",
+          "title": "KANK2 \u2194 hypertension",
+          "url": "https://platform.opentargets.org/target/ENSG00000197256/associations",
+          "text": "Disease: hypertension\nDescription: Persistently high systemic arterial blood pressure. Based on multiple readings (blood pressure determination), hypertension is currently defined as when systolic pressure is consistently greater than 140 mm Hg or when diastolic pressure is consistently 90 mm Hg or more.\nAssociation score: 0.380",
+          "cos_sim_score": 0.37987513418859753,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197256::MONDO_0019006",
+          "title": "KANK2 \u2194 familial idiopathic steroid-resistant nephrotic syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000197256/associations",
+          "text": "Disease: familial idiopathic steroid-resistant nephrotic syndrome\nDescription: Familial idiopathic steroid-resistant nephrotic syndrome is characterized by a nephrotic syndrome with often early onset.\nAssociation score: 0.370",
+          "cos_sim_score": 0.3695798546847018,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::ANKRD25",
+          "title": "ANKRD25",
+          "url": "https://en.wikipedia.org/wiki/ANKRD25",
+          "text": "KN motif and ankyrin repeat domain-containing protein 2 is a protein that in humans is encoded by the KANK2 gene.\n\nReferences\nExternal links\nHuman KANK2 genome location and KANK2 gene details page  in the UCSC Genome Browser.\n\n\n== Further reading ==",
+          "cos_sim_score": 0.5154006481170654,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of human protein-coding genes 4",
+          "title": "List of human protein-coding genes 4",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_4",
+          "text": "== References ==",
+          "cos_sim_score": 0.1308504045009613,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Stress granule",
+          "title": "Stress granule",
+          "url": "https://en.wikipedia.org/wiki/Stress_granule",
+          "text": "Connection with processing bodies\nStress granules and P-bodies (processing bodies) share RNA and protein components, both appear under stress, and can physically associate with one another. As of 2018, of the ~660 proteins identified as localizing to stress granules, ~11% also have been identified as processing body-localized proteins (see below). The protein G3BP1 is necessary for the proper docking of processing bodies and stress granules to each other, which may be important for the preservation of polyadenylated mRNA.\nAlthough some protein components are shared between stress granules and processing bodies, the majority of proteins in either structure are uniquely localized to either structure. While both stress granules and P-bodies are associated with mRNA, processing bodies have been long proposed to be sites of mRNA degradation because they contain enzymes such as DCP1/2 and XRN1 that are known to degrade mRNA. However, others have demonstrated that mRNA associated with processing bodies are largely translationally repressed but not degraded. It has also been proposed that mRNA selected for degradation are passed from stress granules to processing bodies, though there is also data suggesting that processing bodies precede and promote stress granule formation.\n\nProtein composition of stress granules\nThe complete proteome of stress granules is still unknown, but efforts have been made to catalog all of the proteins that have been experimentally demonstrated to transit into stress granules. Importantly, different stressors can result in stress granules with different protein components. Many stress granule-associated proteins have been identified by transiently stressing cultured cells and utilizing microscopy to detect the localization of a protein of interest either by expressing that protein fused to a fluorescent protein (i.e. green fluorescent protein (GFP)) and/or by fixing cells and using antibodies to detect the protein of interest along with known protein markers of stress granules (immunocytochemistry).\nIn 2016, stress granule \"cores\" were experimentally identified and then biochemically purified for the first time. Proteins in the cores were identified in an unbiased manner using mass spectrometry. This technical advance lead to the identification of hundreds of new stress granule-localized proteins.\nThe proteome of stress granules has also been experimentally determined by using two slightly different proximity labeling approaches. One of these proximity labeling approaches is the ascorbate peroxidase (APEX) method, in which cells are engineered to express a known stress granule protein, such as G3BP1, fused to a modified ascorbate peroxidase enzyme called APEX. Upon incubating the cells in biotin and treating the cells with hydrogen peroxide, the APEX enzyme will be briefly activated to biotinylate all proteins in close proximity to the protein of interest, in this case G3BP1 within stress granules. Proteins that are biotinylated can then be isolated via streptavidin and identified using mass spectrometry. The APEX technique was used to identify ~260 stress granule-associated proteins in several cell types, including neurons, and with various stressors. Of the 260 proteins identified in this study, ~143 had not previously been demonstrated to be stress granule-associated.\nAnother proximity labeling method used to determine the proteome of stress granules is BioID. BioID is similar to the APEX approach, in that a biotinylating protein (BirA* instead of APEX) was expressed in cells as a fusion protein with several known stress granule-associated proteins. Proteins in close proximity to BirA* will be biotinylated and are then identified by mass spectrometry. Youn et al. used this method to identify/predict 138 proteins as stress granule-associated and 42 as processing body-associated.\nA curated database of stress granule-associated proteins can be found here [1].\nThe following is a list of proteins that have been demonstrated to localize to stress granules (compiled from ):\n\nReferences\nFurther reading\nExternal links\nLaboratories:\n\nAnderson lab, post-transcriptional control & inflammatory response\nZhou lab, neurodegenerative disease\nMorimoto lab, transcriptional regulation & heat shock\nBoccaccio lab, Staufen & stress granules",
+          "cos_sim_score": 0.05784335732460022,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Stress granule",
+          "title": "Stress granule",
+          "url": "https://en.wikipedia.org/wiki/Stress_granule",
+          "text": "In cellular biology, stress granules are biomolecular condensates in the cytosol composed of proteins and RNA that assemble into 0.1\u20132\u2009\u03bcm membraneless organelles when the cell is under stress. The mRNA molecules found in stress granules are stalled translation pre-initiation complexes associated with 40S ribosomal subunits, translation initiation factors, poly(A)+ mRNA and RNA-binding proteins (RBPs). While they are membraneless organelles, stress granules have been proposed to be associated with the endoplasmatic reticulum. There are also nuclear stress granules. This article is about the cytosolic variety.\n\nProposed functions\nThe function of stress granules remains largely unknown. Stress granules have long been proposed to have a function to protect RNA from harmful conditions, thus their appearance under stress. The accumulation of RNA into dense globules could keep them from reacting with harmful chemicals and safeguard the information coded in their RNA sequence.\nStress granules might also function as a decision point for untranslated mRNA. Molecules can go down one of three paths: further storage, degradation, or re-initiation of translation. Conversely, it has also been argued that stress granules are not important sites for mRNA storage nor do they serve as an intermediate location for mRNA in transit between a state of storage and a state of degradation.\nEfforts to identify all RNA within stress granules (the stress granule transcriptome) in an unbiased way by sequencing RNA from biochemically purified stress granule \"cores\" have shown that RNA are not recruited to stress granules in a sequence-specific manner, but rather generically, with longer and/or less-optimally translated transcripts being enriched. These data imply that the stress granule transcriptome is influenced by the valency of RNA (for proteins or other RNA) and by the rates of RNA run-off from polysomes. The latter is further supported by recent single molecule imaging studies. Furthermore, it was estimated that only about 15% of the total mRNA in the cell is localized to stress granules, suggesting that stress granules only influence a minority of mRNA in the cell and may not be as important for mRNA processing as previously thought. That said, these studies represent only a snapshot in time, and it is likely that a larger fraction of mRNA are at one point stored in stress granules due to those RNA transiting in and out.\nThe stress proteins that are the main component of stress granules in plant cells are molecular chaperones that sequester, protect, and possibly repair proteins that unfold during heat and other types of stress. Therefore, any association of mRNA with stress granules may simply be a side effect of the association of partially unfolded RNA-binding proteins with stress granules, similar to the association of mRNA with proteasomes.\n\nRNA damage\nDHX9 is a distinct stress granule that has helicase activity capable of acting on double-stranded RNA, but not on DNA, to promote cell survival.  DHX9 acts as a non-membrane bound cytoplasmic compartment to safeguard daughter cells from parental RNA damage. Assembly of DHX9 stress granules appears to be a dedicated mechanism in mammalian cells for protecting against RNA crosslinking damage.",
+          "cos_sim_score": 0.03732285276055336,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Salish Wool Dog",
+          "title": "Salish Wool Dog",
+          "url": "https://en.wikipedia.org/wiki/Salish_Wool_Dog",
+          "text": "Osteometry\nSkull total length: 162.0 mm (6.38 in)\nCondylobasal skull length: 154.6 mm (6.09 in)\nFemur GL: 154.3 mm (6.07 in)\nTibia GL: 150.0 mm (5.91 in)\nHumerus GL: 143.5 mm (5.65 in)\nRadius GL: 136.0 mm (5.35 in)\nUlna GL: 157.5 mm (6.20 in)\nShoulder height of standing dog: 44 cm (17 in)\n\nCultural significance of textiles to Coast Salish peoples\nBeyond their practical uses, woolen blankets, such as those that were made from fur of the Coast Salish Dog while it was alive, are of significant social, cultural, economic, and spiritual significance to the Salish peoples. Traditionally, women were in charge of making the blankets. Young girls were trained by their grandmothers as early as ten years of age, with more intense training at puberty. Weaving blankets required serious commitment and could take long periods of time to complete. Additionally, they were often associated with spiritual tasks or rituals such as abstinence. According to the Salish origin story, women were taught how to weave by the dogs themselves. The blankets represented an individual's wealth and were often given away to members of the community or even other villages to show prosperity, such as during the potlatch ceremony and public gathering, and were also used as a currency for which other goods could be purchased or bartered.\nTraditionally, but as well as contemporaneously, certain kinds of ceremonial blankets can identify the wearer as being a civic and religious leader in the community. Honored individuals can be adorned with a blanket to distinguish them, or they would sit or stand upon their blankets so as to raise them in accordance of their honored status.\n\nGallery\nReferences\nExternal links\n\nWoolly Dogs at All Fiber Arts\nNative Dog Types in North America\nSolazzo, C., S. Heald, M.W. Ballard, D.A. Ashford, P.T. DePriest, R.J. Koestler, and M. Collins. 2011. Proteomics and Coast Salish blankets: A tale of shaggy dogs? Antiquity 85: 1418-1432\nBarsh, Russel L., Joan Megan Jones, and Wayne Suttles, 2002. \u201cHistory, Ethnography, and Archaeology of the Coast Salish Woolly-Dog.\u201d In Snyder, L.M. and E.A. Moore, eds., Dogs and People in Social, Working, Economic or Symbolic Interaction. Proceedings of the 9th Conference of the International Council of Archaeozoolog y 1\u201311. Oxbow Books, Durham, UK\nTraci Watson, Native American Blankets Made With Dog Hair by Science, 23 Nov. 2011",
+          "cos_sim_score": -0.003724772483110428,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

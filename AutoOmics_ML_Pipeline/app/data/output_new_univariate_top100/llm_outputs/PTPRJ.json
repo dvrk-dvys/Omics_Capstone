@@ -1,0 +1,183 @@
+{
+  "probe_id": "11728972_a_at",
+  "gene_symbol": "PTPRJ",
+  "score": 1.0,
+  "SD_TestAUC": 0.0662538659999937,
+  "abs_fold_change": 1.1557,
+  "probe_count": 1,
+  "probe_ids": "11728972_a_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 1.1557,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T22:41:13",
+  "interpretation": "PTPRJ encodes a receptor-type protein tyrosine phosphatase that plays a critical role in various cellular processes, including cell adhesion, migration, and proliferation. It has been shown to negatively regulate signaling pathways such as the epidermal growth factor receptor (EGFR) and platelet-derived growth factor receptor (PDGFR), which are involved in bone remodeling and vascular development. Although there is no direct evidence linking PTPRJ to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in cell signaling and migration suggests a potential role in the pathological processes underlying SONFH. The evidence retrieved primarily supports its biological functions but lacks direct association with SONFH, leading to a lower confidence in its role as a biomarker. Therefore, while PTPRJ may have some relevance in the context of SONFH, its potential as a clinical biomarker for early detection remains weak.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "PTPRJ may influence cellular processes relevant to the pathology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) through its regulatory roles in signaling pathways.",
+  "citations": [
+    "PTPRJ (Q12913). https://www.uniprot.org/uniprotkb/Q12913",
+    "PTPRJ (Q12913-2). https://www.uniprot.org/uniprotkb/Q12913-2",
+    "PTPRJ (Q12913-3). https://www.uniprot.org/uniprotkb/Q12913-3",
+    "PTPRJ \u2014 PTPRJ. https://platform.opentargets.org/target/ENSG00000149177",
+    "PTPRJ \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000149177/associations",
+    "PTPRJ \u2194 hypertension. https://platform.opentargets.org/target/ENSG00000149177/associations",
+    "PTPRJ \u2194 glaucoma. https://platform.opentargets.org/target/ENSG00000149177/associations",
+    "PTPRJ \u2194 colon carcinoma. https://platform.opentargets.org/target/ENSG00000149177/associations",
+    "PTPRJ \u2014 protein tyrosine phosphatase receptor type J (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CTNNB1 \u2014 catenin beta 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KRAS \u2014 KRAS proto-oncogene, GTPase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "AKT1 \u2014 AKT serine/threonine kinase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5749,
+    "completion_tokens": 328,
+    "total_tokens": 6077,
+    "estimated_cost_usd": 0.001059
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q12913",
+          "title": "PTPRJ (Q12913)",
+          "url": "https://www.uniprot.org/uniprotkb/Q12913",
+          "text": "Protein: Receptor-type tyrosine-protein phosphatase eta\nFunction: Tyrosine phosphatase which dephosphorylates or contributes to the dephosphorylation of CTNND1, FLT3, PDGFRB, MET, KDR, LYN, SRC, MAPK1, MAPK3, EGFR, TJP1, OCLN, PIK3R1 and PIK3R2 (PubMed:10821867, PubMed:12062403, PubMed:12370829, PubMed:12475979, PubMed:18348712, PubMed:19494114, PubMed:19922411, PubMed:21262971). Plays a role in cell adhesion, migration, proliferation and differentiation (PubMed:12370829, PubMed:14709717, PubMed:16682945, PubMed:19836242). Has a role in megakaryocytes and platelet formation (PubMed:30591527). Involved in vascular development (By similarity). Regulator of macrophage adhesion and spreading (By similarity). Positively affects cell-matrix adhesion (By similarity). Positive regulator of platelet activation and thrombosis. Negative regulator of cell proliferation (PubMed:16682945). Negative regulator of PDGF-stimulated cell migration; through dephosphorylation of PDGFR (PubMed:21091576). Positive regulator of endothelial cell survival, as well as of VEGF-induced SRC and AKT activation; through KDR dephosphorylation (PubMed:18936167). Negative regulator of EGFR signaling pathway; through EGFR dephosphorylation (PubMed:19836242). Enhances the barrier function of epithelial junctions during reassembly (PubMed:19332538). Negatively regulates T-cell receptor (TCR) signaling (PubMed:11259588, PubMed:9531590, PubMed:9780142). Upon T-cell TCR activation, it is up-regulated and excluded from the immunological synapses, while upon T-cell-antigen presenting cells (APC) disengagement, it is no longer excluded and can dephosphorylate PLCG1 and LAT to down-regulate prolongation of signaling (PubMed:11259588, PubMed:12913111) Activates angiogenesis and cell migration (PubMed:28052032). Downregulates the expression of the endothelial adhesion molecules ICAM1 and VCAM1 (PubMed:28052032)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q12913-2",
+          "title": "PTPRJ (Q12913-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q12913-2",
+          "text": "Protein: Isoform 2 of Receptor-type tyrosine-protein phosphatase eta\nFunction: Activates angiogenesis and cell migration (PubMed:28052032). Downregulates the expression of the endothelial adhesion molecules ICAM1 and VCAM1 (PubMed:28052032)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q12913-3",
+          "title": "PTPRJ (Q12913-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q12913-3",
+          "text": "Protein: Isoform 3 of Receptor-type tyrosine-protein phosphatase eta",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000149177::function",
+          "title": "PTPRJ \u2014 PTPRJ",
+          "url": "https://platform.opentargets.org/target/ENSG00000149177",
+          "text": "Function: Tyrosine phosphatase which dephosphorylates or contributes to the dephosphorylation of CTNND1, FLT3, PDGFRB, MET, KDR, LYN, SRC, MAPK1, MAPK3, EGFR, TJP1, OCLN, PIK3R1 and PIK3R2 (PubMed:10821867, PubMed:12062403, PubMed:12370829, PubMed:12475979, PubMed:18348712, PubMed:19494114, PubMed:19922411, PubMed:21262971). Plays a role in cell adhesion, migration, proliferation and differentiation (PubMed:12370829, PubMed:14709717, PubMed:16682945, PubMed:19836242). Has a role in megakaryocytes and platelet formation (PubMed:30591527). Involved in vascular development (By similarity). Regulator of macrophage adhesion and spreading (By similarity). Positively affects cell-matrix adhesion (By similarity). Positive regulator of platelet activation and thrombosis. Negative regulator of cell proliferation (PubMed:16682945). Negative regulator of PDGF-stimulated cell migration; through dephosphorylation of PDGFR (PubMed:21091576). Positive regulator of endothelial cell survival, as well as of VEGF- induced SRC and AKT activation; through KDR dephosphorylation (PubMed:18936167). Negative regulator of EGFR signaling pathway; through EGFR dephosphorylation (PubMed:19836242). Enhances the barrier function of epithelial junctions during reassembly (PubMed:19332538). Negatively regulates T-cell receptor (TCR) signaling (PubMed:11259588, PubMed:9531590, PubMed:9780142). Upon T-cell TCR activation, it is up- regulated and excluded from the immunological synapses, while upon T- cell-antigen presenting cells (APC) disengagement, it is no longer excluded and can dephosphorylate PLCG1 and LAT to down-regulate prolongation of signaling (PubMed:11259588, PubMed:12913111).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000149177::EFO_0005772",
+          "title": "PTPRJ \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000149177/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.547",
+          "cos_sim_score": 0.54699134609967,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000149177::EFO_0000537",
+          "title": "PTPRJ \u2194 hypertension",
+          "url": "https://platform.opentargets.org/target/ENSG00000149177/associations",
+          "text": "Disease: hypertension\nDescription: Persistently high systemic arterial blood pressure. Based on multiple readings (blood pressure determination), hypertension is currently defined as when systolic pressure is consistently greater than 140 mm Hg or when diastolic pressure is consistently 90 mm Hg or more.\nAssociation score: 0.481",
+          "cos_sim_score": 0.48064276239598347,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000149177::MONDO_0005041",
+          "title": "PTPRJ \u2194 glaucoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000149177/associations",
+          "text": "Disease: glaucoma\nDescription: Increased pressure in the eyeball due to obstruction of the outflow of aqueous humor.\nAssociation score: 0.433",
+          "cos_sim_score": 0.4325542489859292,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000149177::EFO_1001950",
+          "title": "PTPRJ \u2194 colon carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000149177/associations",
+          "text": "Disease: colon carcinoma\nDescription: A carcinoma that arises from epithelial cells of the colon\nAssociation score: 0.419",
+          "cos_sim_score": 0.41859538291226034,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "PTPRJ \u2014 protein tyrosine phosphatase receptor type J",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PTPRJ\nGene name: protein tyrosine phosphatase receptor type J\nAliases / synonyms: CD148, DEP1, HPTP eta, HPTPeta, R-PTP-ETA, R-PTP-J, SCC1, THC10\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the protein tyrosine phosphatase (PTP) family. PTPs are known to be signaling molecules that regulate a variety of cellular processes, including cell growth, differentiation, mitotic cycle, and oncogenic transformation. This PTP possesses an extracellular region containing five fibronectin type III repeats, a single transmembrane region, and a single intracytoplasmic catalytic domain, and thus represents a receptor-type PTP. This protein is present in all hematopoietic lineages, and was shown to negatively regulate T cell receptor signaling possibly through interfering with the phosphorylation of Phospholipase C Gamma 1 and Linker for Activation of T Cells. This protein can also dephosphorylate the PDGF beta receptor, and may be involved in U...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PTPRJ",
+          "aliases": "CD148, DEP1, HPTP eta, HPTPeta, R-PTP-ETA, R-PTP-J, SCC1, THC10",
+          "gene_description": "protein tyrosine phosphatase receptor type J"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CTNNB1 \u2014 catenin beta 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CTNNB1\nGene name: catenin beta 1\nAliases / synonyms: CTNNB, EVR7, MRD19, NEDSDV, armadillo\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is part of a complex of proteins that constitute adherens junctions (AJs). AJs are necessary for the creation and maintenance of epithelial cell layers by regulating cell growth and adhesion between cells. The encoded protein also anchors the actin cytoskeleton and may be responsible for transmitting the contact inhibition signal that causes cells to stop dividing once the epithelial sheet is complete. Finally, this protein binds to the product of the APC gene, which is mutated in adenomatous polyposis of the colon. Mutations in this gene are a cause of colorectal cancer (CRC), pilomatrixoma (PTR), medulloblastoma (MDB), and ovarian cancer. Alternative splicing results in multiple transcript variants. [provided by RefSeq, Aug 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CTNNB1",
+          "aliases": "CTNNB, EVR7, MRD19, NEDSDV, armadillo",
+          "gene_description": "catenin beta 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KRAS \u2014 KRAS proto-oncogene, GTPase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KRAS\nGene name: KRAS proto-oncogene, GTPase\nAliases / synonyms: 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2\nOrganism: Homo sapiens\nGene summary: This gene, a Kirsten ras oncogene homolog from the mammalian ras gene family, encodes a protein that is a member of the small GTPase superfamily. A single amino acid substitution is responsible for an activating mutation. The transforming protein that results is implicated in various malignancies, including lung adenocarcinoma, mucinous adenoma, ductal carcinoma of the pancreas and colorectal carcinoma. Alternative splicing leads to variants encoding two isoforms that differ in the C-terminal region. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KRAS",
+          "aliases": "'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2",
+          "gene_description": "KRAS proto-oncogene, GTPase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "AKT1 \u2014 AKT serine/threonine kinase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AKT1\nGene name: AKT serine/threonine kinase 1\nAliases / synonyms: AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA\nOrganism: Homo sapiens\nGene summary: This gene encodes one of the three members of the human AKT serine-threonine protein kinase family which are often referred to as protein kinase B alpha, beta, and gamma. These highly similar AKT proteins all have an N-terminal pleckstrin homology domain, a serine/threonine-specific kinase domain and a C-terminal regulatory domain. These proteins are phosphorylated by phosphoinositide 3-kinase (PI3K). AKT/PI3K forms a key component of many signalling pathways that involve the binding of membrane-bound ligands such as receptor tyrosine kinases, G-protein coupled receptors, and integrin-linked kinase. These AKT proteins therefore regulate a wide variety of cellular functions including cell proliferation, survival, metabolism, and angiogenesis in both normal and malignant cells. AKT proteins ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AKT1",
+          "aliases": "AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA",
+          "gene_description": "AKT serine/threonine kinase 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

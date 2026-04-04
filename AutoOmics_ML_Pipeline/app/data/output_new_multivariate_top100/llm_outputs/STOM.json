@@ -1,0 +1,258 @@
+{
+  "probe_id": "11715792_a_at",
+  "gene_symbol": "STOM",
+  "rf_importance": 0.0213,
+  "selection_freq": 1.0,
+  "abs_fold_change": 1.6270079666666657,
+  "score": 0.3877,
+  "probe_count": 1,
+  "probe_ids": "11715792_a_at",
+  "max_score": 0.3877,
+  "mean_abs_fold_change": 1.627,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T21:50:07",
+  "interpretation": "Stomatin (STOM) is a membrane protein that regulates ion channel activity and transmembrane ion transport, particularly influencing the activity of acid-sensing ion channels (ASIC2 and ASIC3). In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), STOM has been identified as a candidate biomarker associated with the syndrome of liver and kidney deficiency, showing significantly lower expression levels in SONFH patients compared to non-SONFH controls. This suggests a potential role in the pathophysiology of SONFH, particularly in relation to the vascular and metabolic disturbances caused by steroid use. The evidence supporting STOM's relevance as a biomarker is moderate, primarily derived from transcriptomic analyses that link its expression to the disease context. However, its specific utility as an early-detection biomarker remains uncertain, as it did not demonstrate strong syndrome differentiation effectiveness in the studies reviewed.",
+  "evidence_relation": "direct",
+  "evidence_tier": "Tier 2",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "STOM is implicated in the pathophysiology of SONFH through its association with metabolic disturbances linked to steroid use.",
+  "citations": [
+    "STOM (P27105). https://www.uniprot.org/uniprotkb/P27105",
+    "STOM (P27105-2). https://www.uniprot.org/uniprotkb/P27105-2",
+    "STOM \u2014 STOM. https://platform.opentargets.org/target/ENSG00000148175",
+    "STOM \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000148175/associations",
+    "STOM \u2194 amyloidosis. https://platform.opentargets.org/target/ENSG00000148175/associations",
+    "STOM \u2194 corneal dystrophy. https://platform.opentargets.org/target/ENSG00000148175/associations",
+    "STOM \u2194 corneal disease. https://platform.opentargets.org/target/ENSG00000148175/associations",
+    "[Transcriptome data mining combined with clinical and animal experiments for identification of syndrome element marker genes during entire course of steroid-induced osteonecrosis of femoral head]. (2024). https://pubmed.ncbi.nlm.nih.gov/38621982/",
+    "STOM \u2014 stomatin (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TNF \u2014 tumor necrosis factor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ESR1 \u2014 estrogen receptor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KRAS \u2014 KRAS proto-oncogene, GTPase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "NEDD4 regulates VEGF signaling and mTOR to promote angiogenesis and the cell cycle in steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12676940/",
+    "Differentially expressed genes in the femur cartilage transcriptome clarify the understanding of femoral head separation in chickens (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8429632/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 11418,
+    "completion_tokens": 307,
+    "total_tokens": 11725,
+    "estimated_cost_usd": 0.001897
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P27105",
+          "title": "STOM (P27105)",
+          "url": "https://www.uniprot.org/uniprotkb/P27105",
+          "text": "Protein: Stomatin\nFunction: Regulates ion channel activity and transmembrane ion transport. Regulates ASIC2 and ASIC3 channel activity",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P27105-2",
+          "title": "STOM (P27105-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P27105-2",
+          "text": "Protein: Isoform 2 of Stomatin",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000148175::function",
+          "title": "STOM \u2014 STOM",
+          "url": "https://platform.opentargets.org/target/ENSG00000148175",
+          "text": "Function: Regulates ion channel activity and transmembrane ion transport. Regulates ASIC2 and ASIC3 channel activity.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000148175::EFO_0005772",
+          "title": "STOM \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000148175/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.332",
+          "cos_sim_score": 0.331546356717496,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000148175::EFO_1001875",
+          "title": "STOM \u2194 amyloidosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000148175/associations",
+          "text": "Disease: amyloidosis\nDescription: A disorder characterized by the localized or diffuse accumulation of amyloid protein in various anatomic sites. It may be primary, due to clonal plasma cell proliferations; secondary, due to long standing infections, chronic inflammatory disorders, or malignancies; or familial. It may affect the nerves, skin, tongue, joints, heart, liver, spleen, kidneys and adrenal glands.\nAssociation score: 0.266",
+          "cos_sim_score": 0.26583040825079995,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000148175::MONDO_0018102",
+          "title": "STOM \u2194 corneal dystrophy",
+          "url": "https://platform.opentargets.org/target/ENSG00000148175/associations",
+          "text": "Disease: corneal dystrophy\nDescription: The term corneal dystrophy embraces a heterogeneous group of bilateral genetically determined non-inflammatory corneal diseases that are usually restricted to the cornea. The designation is imprecise but remains in vogue because of its clinical value.\nAssociation score: 0.262",
+          "cos_sim_score": 0.26152038765689833,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000148175::EFO_0009464",
+          "title": "STOM \u2194 corneal disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000148175/associations",
+          "text": "Disease: corneal disease\nDescription: A non-neoplastic or neoplastic disorder that affects the cornea. Representative examples include keratitis, bullous keratopathy, and squamous cell carcinoma. [ NCIT ]\nAssociation score: 0.259",
+          "cos_sim_score": 0.25899085682570505,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::38621982",
+          "title": "[Transcriptome data mining combined with clinical and animal experiments for identification of syndrome element marker genes during entire course of steroid-induced osteonecrosis of femoral head].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38621982/",
+          "year": "2024",
+          "text": "A research strategy combining transcriptome data mining and experimental verification was adopted to identify the marker genes characterizing the syndrome elements of phlegm, stasis, and deficiency in steroid-induced osteonecrosis of the femoral head(SONFH). Firstly, the common differentially expressed gene sets of SONFH with the syndromes of phlegm-stasis obstructing collaterals, vessel obstruction, and liver-kidney deficiency were obtained from the clinical transcriptomic analysis of a previous study. The differential expression trend analysis and functional gene mining were then employed to predict the candidate marker gene sets representing phlegm, stasis, and deficiency. The whole blood samples from SONFH patients, whole blood samples from SONFH rats, and affected femoral head tissue samples were collected for qPCR, which aimed to determine the expression levels of the candidate marker genes mentioned above. Furthermore, the receiver operating characteristic curve(ROC) was established to objectively evaluate the syndrome differentiation effectiveness of the candidate marker genes mentioned above. The transcriptome data analysis results showed that the candidate marker genes for phlegm was ELOVL fatty acid elongase 6(ELOVL6), and those for stasis were ankyrin 1(ANK1), glycophorin A/B(GYPA/B), and Rh-associated glycoprotein(RHAG). The candidate marker genes for deficiency were solute carrier family 2 member 1(SLC2A1) and stomatin(STOM). The qPCR results showed that compared with that in the non-SONFH group, ELOVL6 had the lowest expression level in the peripheral blood of the SONFH patients with the syndrome of phlegm-stasis obstructing collaterals(P&lt;0.05). Compared with that in the normal control group, ELOVL6 had the lowest expression level in the peripheral blood and affected femoral head tissue of SONFH rats modeled for 4 weeks(P&lt;0.01), and it showed better syndrome differentiation effectiveness of rats modeled for 4 weeks(AUC=0.850, P=0.006) than at other modeling time points(8, 12, 16, and 21 weeks, AUC of 0.689, 0.766, 0.588, and 0.662, respectively). Compared with that in the non-SONFH group, the expression levels of ANK1, GYPA, and RHAG were the lowest in the peripheral blood of SONFH patients with the vessel obstruction syndrome(P&lt;0.05). The expression levels of the three genes were the lowest in the peripheral blood and affected femoral head tissue of",
+          "cos_sim_score": 0.4391409158706665,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::38621982",
+          "title": "[Transcriptome data mining combined with clinical and animal experiments for identification of syndrome element marker genes during entire course of steroid-induced osteonecrosis of femoral head].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38621982/",
+          "year": "2024",
+          "text": "than at other modeling time points(8, 12, 16, and 21 weeks, AUC of 0.689, 0.766, 0.588, and 0.662, respectively). Compared with that in the non-SONFH group, the expression levels of ANK1, GYPA, and RHAG were the lowest in the peripheral blood of SONFH patients with the vessel obstruction syndrome(P&lt;0.05). The expression levels of the three genes were the lowest in the peripheral blood and affected femoral head tissue of SONFH rats modeled for 12 weeks(P&lt;0.05, P&lt;0.01), and their syndrome differentiation effectiveness in the rats modeled for 12 weeks(GYPA: AUC=0.861, P=0.012; ANK1: AUC=0.855, P=0.006; RHAG: AUC=0.854, P=0.009) was superior to that for 4, 8, 16, and 21 weeks(GYPA: AUC=0.646, 0.573, 0.691, and 0.617, respectively; ANK: AUC1=0.630, 0.658, 0.657, and 0.585, respectively; RHAG: AUC=0.592, 0.511, 0.515, and 0.536, respectively). Compared with the non-SONFH group, both SLC2A1 and STOM had the lowest expression levels in the peripheral blood of patients with the syndrome of liver and kidney deficiency(P&lt;0.05). Compared with the normal control group, their expression levels were the lowest in the peripheral blood and affected femoral head tissue of SONFH rats modeled for 21 weeks(P&lt;0.05, except STOM in the peripheral blood of rats). Moreover, the syndrome differentiation effectiveness of SLC2A1 in the rats modeled for 21 weeks(AUC=0.806, P=0.009) was superior to that for 4, 8, 12, and 16 weeks(AUC=0.520, 0.580, 0.741, 0.774, respectively), and STOM was meaningless in syndrome differentiation. In summary, the candidate marker gene for phlegm in SONFH is ELOVL6; the candidate marker genes for stasis are GYPA, RHAG, and ANK1; the candidate marker gene for deficiency is SLC2A1. The results help to reveal the biological connotations of phlegm, stasis, and deficiency in SONFH at the genetic level.",
+          "cos_sim_score": 0.1288900077342987,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "STOM \u2014 stomatin",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: STOM\nGene name: stomatin\nAliases / synonyms: BND7, EPB7, EPB72\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of a highly conserved family of integral membrane proteins. The encoded protein localizes to the cell membrane of red blood cells and other cell types, where it may regulate ion channels and transporters. Loss of localization of the encoded protein is associated with hereditary stomatocytosis, a form of hemolytic anemia. There is a pseudogene for this gene on chromosome 6. Alternative splicing results in multiple transcript variants. [provided by RefSeq, Jul 2012]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "STOM",
+          "aliases": "BND7, EPB7, EPB72",
+          "gene_description": "stomatin"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TNF \u2014 tumor necrosis factor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TNF\nGene name: tumor necrosis factor\nAliases / synonyms: DIF, IMD127, TNF-alpha, TNFA, TNFSF2, TNLG1F\nOrganism: Homo sapiens\nGene summary: This gene encodes a multifunctional proinflammatory cytokine that belongs to the tumor necrosis factor (TNF) superfamily. This cytokine is mainly secreted by macrophages. It can bind to, and thus functions through its receptors TNFRSF1A/TNFR1 and TNFRSF1B/TNFBR. This cytokine is involved in the regulation of a wide spectrum of biological processes including cell proliferation, differentiation, apoptosis, lipid metabolism, and coagulation. This cytokine has been implicated in a variety of diseases, including autoimmune diseases, insulin resistance, psoriasis, rheumatoid arthritis ankylosing spondylitis, tuberculosis, autosomal dominant polycystic kidney disease, and cancer. Mutations in this gene affect susceptibility to cerebral malaria, septic shock, and Alzheimer disease. Knockout studie...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TNF",
+          "aliases": "DIF, IMD127, TNF-alpha, TNFA, TNFSF2, TNLG1F",
+          "gene_description": "tumor necrosis factor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ESR1 \u2014 estrogen receptor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ESR1\nGene name: estrogen receptor 1\nAliases / synonyms: ER, ESR, ESRA, ESTRR, Era, NR3A1\nOrganism: Homo sapiens\nGene summary: This gene encodes an estrogen receptor and ligand-activated transcription factor. The canonical protein contains an N-terminal ligand-independent transactivation domain, a central DNA binding domain, a hinge domain, and a C-terminal ligand-dependent transactivation domain. The protein localizes to the nucleus where it may form either a homodimer or a heterodimer with estrogen receptor 2. The protein encoded by this gene regulates the transcription of many estrogen-inducible genes that play a role in growth, metabolism, sexual development, gestation, and other reproductive functions and is expressed in many non-reproductive tissues. The receptor encoded by this gene plays a key role in breast cancer, endometrial cancer, and osteoporosis. This gene is reported to have dozens of transcript va...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ESR1",
+          "aliases": "ER, ESR, ESRA, ESTRR, Era, NR3A1",
+          "gene_description": "estrogen receptor 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KRAS \u2014 KRAS proto-oncogene, GTPase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KRAS\nGene name: KRAS proto-oncogene, GTPase\nAliases / synonyms: 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2\nOrganism: Homo sapiens\nGene summary: This gene, a Kirsten ras oncogene homolog from the mammalian ras gene family, encodes a protein that is a member of the small GTPase superfamily. A single amino acid substitution is responsible for an activating mutation. The transforming protein that results is implicated in various malignancies, including lung adenocarcinoma, mucinous adenoma, ductal carcinoma of the pancreas and colorectal carcinoma. Alternative splicing leads to variants encoding two isoforms that differ in the C-terminal region. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KRAS",
+          "aliases": "'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2",
+          "gene_description": "KRAS proto-oncogene, GTPase"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::12676940",
+          "title": "NEDD4 regulates VEGF signaling and mTOR to promote angiogenesis and the cell cycle in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12676940/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a degenerative hip joint disease that worsens over time (1). ONFH is characterized by bone cell death due to a lack of blood supply, which can lead to joint collapse and hip dysfunction (1). The causes of ONFH are complex and involve mechanical injury, genetic predisposition and biochemical imbalances (2,3). Among these factors, steroid use is reported in ~51% of ONFH cases (4). Prolonged or high-dose steroid therapy markedly increases the risk of ONFH, leading to steroid-induced ONFH (SONFH) (1). For example, in patients with systemic lupus erythematosus, the corticosteroid dosage is positively associated with the occurrence of ONFH. Daily doses as low as 10 mg have been associated with a 3.6% increase in risk, while doses >40 mg greatly increase the chance of developing ONFH (5). Steroids damage bone and blood vessel health through various mechanisms, including endothelial cell dysfunction and reduced angiogenesis, ultimately impairing blood flow supply (3,6). Endothelial cells serve an important role in angiogenesis, as their growth, migration and tube formation are important for repairing bone tissue (6,7). When angiogenesis is impaired, bone regeneration often fails (8). VEGF, a key factor that promotes angiogenesis, has been shown to enhance bone repair by stimulating angiogenesis, making it a potential treatment for ONFH (9\u201311). Angiogenesis and osteogenesis are closely linked processes that occur throughout bone development, maturation, aging and disease progression (12). Notably, activation of the VEGF-Notch signaling pathway has been reported to restore the proliferation of mesenchymal stem cells in aplastic anemia (13), while the mTOR/AP-1 complex subunit \u00b5-1/VEGF axis regulates endothelial cell growth (14). Additionally, increasing hypoxia-inducible factor (HIF)-1\u03b1/VEGF levels can help to protect against bone loss in models of nasal obstruction (15). Therefore, understanding the molecular mechanisms of angiogenesis and endothelial cell function is important for advancing treatments for ONFH.\nUbiquitination has become an important post-translational modification for regulating protein stability, signal transduction and cellular homeostasis (16\u201319). Neural precursor cell expressed developmentally downregulated protein 4 (NEDD4) is an E3 ubiquitin ligase that facilitates substrate ubiquitination and degradation, thereby influencing multiple biological processes such as cell proliferation, migration, angiogenesis and endothelial cell protection (20\u201322). NEDD4 has been demonstrated to promote endothelial cell proliferation, migration and angiogenesis (23). In addition to its role in endothelial regulation, NEDD4 also affects macrophage autophagy and tumor cell proliferation, highlighting its versatile function in maintaining the cellular balance (21,24).\nNEDD4 subfamily influences osteogenesis and bone cell biology (25). By mediating PTEN degradation, NEDD4 activates the PI3K/AKT pathway, which promotes cell proliferation and survival. This pathway also supports angiogenesis through PTEN inactivation and VEGF upregulation (26\u201329). Additionally, NEDD4 boosts osteocyte proliferation and is associated with improved outcomes in postmenopausal osteoporosis (30,31). Overall, these findings emphasize the potential of NEDD4 as a regulator of both angiogenesis and osteogenesis, making it a promising target in ONFH therapy. The present study was based on the concept that NEDD4 may serve a role in SONFH. To explore this, the present study observed how overexpression of NEDD4 affected the viability, migration and tube formation of bone microvascular endothelial cells (BMECs). The present study also investigated how glucocorticoids influenced NEDD4 expression and promoter methylation, shedding light on how NEDD4 contributes to angiogenesis and repair in SONFH.\nMaterials and methods\nConstruction of the NEDD4 overexpression (OE) vector",
+          "cos_sim_score": 0.6704762578010559,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8429632",
+          "title": "Differentially expressed genes in the femur cartilage transcriptome clarify the understanding of femoral head separation in chickens",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8429632/",
+          "text": "Introduction\nIn the last decades, an intense selection has been performed for greater feed efficiency and faster growth of broiler chickens1. However, a significant increase in locomotor problems has been detected, causing a negative impact on welfare, feed efficiency, performance and other characteristics2,3, and consequently, economic losses2. These losses are due to increase in mortality, reduction in feed conversion and weight gain caused directly or indirectly by skeletal problems4. Currently, bone disorders are still considered one of the main concerns for the poultry industry5. Among the locomotor problems, bacterial chondronecrosis with osteomyelitis (BCO) is the most common cause of claudication, affecting approximately 1.5% of chickens slaughtered at 42\u00a0days of age in the United States, as well as an important cause of mortality in broilers6. This condition, also known as femoral head necrosis (FHN)7, is one of the most important disturbances in the locomotor system in commercial chickens worldwide8. Besides its importance in poultry production, there are few studies on this pathology, especially related to its genetics and molecular mechanisms5,7,9\u201312.\nThe separation of the articular cartilage (AC) from the growth plate (GP), known as proximal femoral head separation (FHS) is a risk factor for infection that may cause BCO in broilers13,14. This can occur because the BCO pathogenesis seems to be initiated by damage of the poorly mineralized chondrocyte (cartilage cells) columns in the epiphyseal and physeal growth plates of the leg bones, followed by colonization of the osteochondral clefts by opportunistic bacteria6,7.\nGenetics play a considerable role in the skeleton development, where genetic selection and gene mutations influence the development of the skeletal system2. DNA mutations in different genes are involved with different skeletal clinical phenotypes15. There is a controversy in the literature regarding BCO and FHN terminology. Some authors consider BCO and FHN as the same pathology16,17, while others consider them different pathologies9,18,19. Usually, when there is separation of the AC and necrosis, this condition is called FHN, while when there is evidence of bacterial infection, it is referred to as BCO17. Previous studies evaluating the chicken femoral growth plate found that the genes RUNX2, SPARC11, ADIPOQ, PRRX1, ANGPTL5, ANGPTL7, GFRA2, SFRP5, COL14A1, ABI3BP, COL8A1, SLC30A1020, bFGF5, LEPR21, LRP1B, COL28A1, PTHrP, PERP1, FAM180A and CHST112 were associated with the FHN. According to the Chicken Quantitative Trait Loci (QTL) Database (Chicken QTLdb) (https://www.animalgenome.org/cgi-bin/QTLdb/GG/summary), some QTL for morphometric traits, mineral composition, and tibia and femur resistance were mapped to several chicken chromosomes, indicating important regions related to bone development22.\nRecently, differences in the cartilage morphology and metabolism were observed when normal and FHN-affected broilers were compared (Liu et al. 2021). However, there are no studies investigating the molecular and genetic pathways involved with FHS in broilers articular cartilage, and its etiology is still unknown in chickens22,23. The functional analysis of genes is important to elucidate their contribution to the development of locomotor problems in chickens. Therefore, this study aimed to identify differentially expressed (DE) genes in the femoral head articular cartilage between healthy and FHS-affected broilers using RNA-Seq analysis.\nResults\nRNA sequencing and differential expression analysis\nThe sequencing of the femoral head articular cartilage samples generated around 190 million (2\u2009\u00d7\u2009100\u00a0bp) reads. An average of 26.82 million paired-end reads was obtained per sample, remaining about 23.7 million after the QC. Approximately, 94.6% of the reads were mapped against the chicken reference genome (GRCg6a) available at Ensembl 95. The percentage of reads mapped per sample ranged from 93.45 to 95.2% and were similar between the normal and FHS-affected group (Supplementary File 1: Table S1). The MDS plot showed the separation between the affected and control samples evaluated in the current study (Supplementary File 2: Fig S1).",
+          "cos_sim_score": 0.40432485938072205,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12676940",
+          "title": "NEDD4 regulates VEGF signaling and mTOR to promote angiogenesis and the cell cycle in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12676940/",
+          "text": "Integrins, as transmembrane receptors, can detect the physical properties of the extracellular matrix and organize the cytoskeleton while transmitting bidirectional cellular signals. They mediate signaling pathways such as the TGF-\u03b2, Hippo, Wnt and Notch pathways, thereby serving important roles in biological processes such as cell adhesion, spreading, migration and mechanotransduction (47,48). The Notch signaling pathway could have therapeutic benefits for bone regeneration and osteoporosis treatment (49). The analysis in the present study showed that NEDD4 expression was positively correlated with ssGSEA scores of the TGF-\u03b2/SMAD and Hippo/yes-associated protein (YAP) pathways but negatively correlated with the Notch signaling pathway. Although NEDD4 expression was positively correlated with ITGA9 and FERMT2 expression in the integrin pathway, the ssGSEA score for this pathway was negative, suggesting that the regulatory role of NEDD4 is complex and this may influence pathways through different mechanisms. As an E3 ubiquitin ligase, NEDD4 may serve a key role in the progression and repair of ONFH. NEDD4 may contribute to bone tissue repair and remodeling by boosting the activity of the TGF-\u03b2/SMAD and Hippo/YAP signaling pathways (25,31). For example, NEDD4 may promote the growth and differentiation of bone cells by stabilizing TGF-\u03b2 receptors or SMAL proteins (31). At the same time, by enhancing the Hippo/YAP pathway, it may help regulate the mechanical adaptability and repair of bone tissue (25). Conversely, the negative correlation between NEDD4 and the Notch signaling pathway genes such as NOTCH2 and MAML2 indicated that NEDD4 may affect the pathological process of SONFH by inhibiting the Notch pathway and influencing osteoblast differentiation (49). The interaction of the integrin signaling pathway with NEDD4 could impact the regulation of these pathways, further affecting the progression and repair of SONFH (47). In summary, the regulatory roles of NEDD4 in the integrin, TGF-\u03b2/SMAD, Hippo/YAP and Notch signaling pathways highlighted its complex function in cell signal transduction. This diverse regulatory mechanism offers important insights for further exploring the functions and mechanisms of NEDD4 in SONFH.\nResearch has shown that ANGPT2 serves an important role in the vascular niche within the bone marrow, helping to maintain the balance and regeneration of hematopoietic stem cells (50). Although VEGFB does not directly contribute to angiogenesis, it indirectly supports vascular growth and cell survival by affecting the actions of VEGFA (51). Bone morphogenetic protein receptor type-1B (BMPR1B) also serves a role, as it can prevent chondrocyte hypertrophy and act as a stabilizer for cartilage during joint development (52). mTOR is involved in tissue regeneration across neurons, muscles, liver and intestines, helping restore tissue homeostasis (53). In the present study, NEDD4 expression was positively associated with the expression of genes involved in angiogenesis, such as ANGPT2, VEGFB, MTOR and BMPR1B. This finding further emphasizes the notable role of NEDD4 in regulating both angiogenesis and bone tissue homeostasis. Notably, the positive correlation between NEDD4 and ANGPT2 supported the role of ANGPT2 in coordinating hematopoietic stem cell homeostasis within the vascular niche (50). Additionally, this correlation suggested that NEDD4 may indirectly affect the function of VEGFA through interactions with VEGFB and mTOR, thereby encouraging vascular growth, and cell proliferation and survival (51,53). The positive correlation between NEDD4 and BMPR1B suggested that NEDD4 may prevent chondrocyte hypertrophy and support cartilage health and stability (52).",
+          "cos_sim_score": 0.31109941005706787,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8429632",
+          "title": "Differentially expressed genes in the femur cartilage transcriptome clarify the understanding of femoral head separation in chickens",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8429632/",
+          "text": "Discussion\nStudies related to bone integrity problems, such as FHS and FHN or BCO are scarce in chicken models7,11,12,24,25. Most of the bone tissue studies reported to date are in humans and rodents22,26\u201328. Furthermore, there are no studies evaluating the transcriptional profile of femoral articular cartilage from chickens and its impacts in bone-related problems. Therefore, in the present study, a global gene expression profile of the femoral head articular cartilage of normal and FHS-affected broilers at 35\u00a0days of age was reported for the first time.\nIn the cartilage transcriptome, approximately 91.5% of the DE genes were upregulated while 8.5% were downregulated in the FHS-affected compared to the normal group (Supplementary File 1: Table S2). The expression profile of the AC tissue differed from the femoral growth plate reported in a previous study, in which approximately 49% of the genes were upregulated and 51% downregulated in the FHS-affected group12. In the femoral growth plate, several biological processes identified were related to angiogenesis, blood coagulation, cell adhesion, bone development and lipid metabolism, with several genes downregulated in the FHS-affected group12. Here, in the AC tissue, 79 BP were found (Supplementary File 1: Table S3) and, after REVIGO clusterization, the genes that draw the most attention due to their function were those related to response to biotic stimulus, immune response, cytolysis, striated muscle development, carbohydrate derivative catabolism and cell activation processes. Several BP were similar between the growth plate12 and the AC. However, in the AC transcriptome, a higher proportion of the genes had an increased level of expression in the affected animals than in the GP transcriptome. In our study, 107 genes were identified as DE in the AC and 28 of those were also found by Peixoto et al.12 in the bone GP. Moreover, some genes previously described as potentially involved with FHS, such as interferon alfa-6 inducible protein (IFI6), adenosine deaminase (ADA), cathelicidin-3 (CATH3), avian beta defensin 1 (AvBD1), avian beta defensin 2 (AvBD2), ankirine 1 (ANK 1), leukocyte cell-derived chemotaxin 2 (LECT2) and collagen type XII alpha chain 1 (COL13A1)5,11,12,14,20 were also DE in the current study. Among the DE genes, some of them (AvBD1, AvBD2, ANK1, RHAG, ADA and EPX) were confirmed by qPCR, which demonstrates the reliability of the results found with the RNA-Seq approach (Table 3).\nHere, only 9 DE genes were downregulated in the cartilage of broilers with FHS, in which the COL13A1 can be highlighted. This gene shows a wide tissue distribution and occurs at the cellular junctions and cell\u2013matrix interaction sites in epithelial, mesenchymal, and neural tissues. It is a component of focal adhesion in cultured fibroblasts29 interacting with the collagen-binding integrin \u03b11\u03b21, suggesting its involvement in multiple cell\u2013matrix interactions30,31. Therefore, the downregulation of COL13A1 and possibly other collagen genes could reduce the synthesis of the extracellular matrix, facilitating the separation of the cartilage and bone tissues, favoring the occurrence of proximal FHS. Considering all downregulated DE genes, the BP involved were mainly related to muscle development processes (muscle cell differentiation, contraction, development, striated muscle cell development and tissue development) (Supplementary File 1: Table S3) and could be associated to the cytoskeleton, since the lower expression of these genes can lead to malformation in the femur cartilage structure, which could contribute to the separation of the articular cartilage from the growth plate.",
+          "cos_sim_score": 0.2992326617240906,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8429632",
+          "title": "Differentially expressed genes in the femur cartilage transcriptome clarify the understanding of femoral head separation in chickens",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8429632/",
+          "text": "The EPX gene is activated during an immune response, releasing proteins and other components in the area of injury or inflammation that have a toxic effect on severely damaged cells or infecting pathogens. One of these proteins is called eosinophil peroxidase, that are extremely cytotoxic to bacteria54,55, parasites56,57, eukaryotic cells58 and neoplastic cells59,60. The upregulation of the EPX may be a consequence of FHS, since a possible infection could pressure the bone structure, impairing the blood supply to the affected area, developing necrosis. Furthermore, EPX could regulate the inflammatory process to control the infection.\nChemokines are a group of chemoattractant cytokines released by tissues in the beginning of infection. They are usually produced by different cell types in response to bacterial products and other pathogens. Besides the promotion of immune cells chemotaxis to the site of infection, they regulate a variety of biological processes related to cellular activation, differentiation and survival61, such as those found in our study (Supplementary File 1: Table S3). In mice, it has been shown that in the presence of bacterial infection, there is an increase of inflammatory cytokines, which can lead to osteocyte apoptosis and consequently osteonecrosis62. In our study, two chemokines (CCL26 and CCR5) were DE in the chicken articular cartilage. The CCL26 has a bactericidal activity verified against pathogens Streptococcus pneumoniae, Staphylococcus aureus, Nontypeable Haemophilus influenzae, and Pseudomonas aeruginosa63, while CCR5 has already been identified as biomarker for osteonecrosis of the femoral head in human plasma64.\nOur results showed several biological processes and genes related to immune response, indicating that the overexpression of these genes is activating the immune system to fight against the progression of FHS, evidencing the presence of an inflammatory process, even at the early stages of FHS.\nBone-related bioprocesses\nThe results of the NetworkAnalyst platform indicates associations between DE genes and Wnt signaling pathway, GnRH signaling pathway, Adrenergic signaling in cardiomyocytes, VEGF signaling pathway, Bacterial infection, Focal adhesion, Gap junction, Toll-like receptor signaling pathway, AGE-RAGE signaling pathway in diabetic complications and NOD-like receptor signaling pathway (Fig.\u00a02). The Wnt signaling is an ancient and evolutionarily conserved pathway responsible for the regulation of crucial aspects of cell fate determination, cell migration, cell polarity, neural patterning and organogenesis during embryonic development65, which are important for bone development. Most of the genes enriched in this BP also appeared in focal adhesion and Toll-like receptors. Some of these processes have already been described by Peixoto et al.12 and could be intrinsically correlated with FHS.\nDurairaj et al.66 suggested that FHS could be a metabolic problem, related to fat metabolism disorders, facilitating an unbalanced growth in the articular-epiphyseal complex that leads to its separation under shear stress. They observed that the blood parameters such as cholesterol, triglycerides, and low-density lipoproteins were slightly increased in FHS-affected chickens. Despite the physiological differences between humans and chickens, the appearance of the GnRH signaling pathway, AGE-RAGE signaling pathway in diabetic complication and adrenergic signaling in cardiomyocytes, indicates that chickens may have a similar physiology, needing more studies to better elucidate these pathways.\nThe genes MAPK12 and RAC2 were connected to the VEGF signaling pathway. This pathway is crucial to the vascular development stages and processes, like vasculogenesis, angiogenesis and lymphangiogenesis, which are essential for specification, morphogenesis, differentiation, and homeostasis of vessels during development and in the adulthood67. The involvement of VEGF signaling pathway in the FHN and BCO in chickens has already been observed11,12,20,24 and could affect the cells regeneration and maintenance68. Furthermore, the MAPK12 gene is located in a QTL for bone mineral density in humans69, while the activity of RAC2 gene has been observed in the osteocalastogenesis70,71, involved in the development of tibial dyschondroplasia in chickens72 and osteoarthritis in humans73.",
+          "cos_sim_score": 0.25975146889686584,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::38621982",
+          "title": "[Transcriptome data mining combined with clinical and animal experiments for identification of syndrome element marker genes during entire course of steroid-induced osteonecrosis of femoral head].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38621982/",
+          "year": "2024",
+          "text": "A research strategy combining transcriptome data mining and experimental verification was adopted to identify the marker genes characterizing the syndrome elements of phlegm, stasis, and deficiency in steroid-induced osteonecrosis of the femoral head(SONFH). Firstly, the common differentially expressed gene sets of SONFH with the syndromes of phlegm-stasis obstructing collaterals, vessel obstruction, and liver-kidney deficiency were obtained from the clinical transcriptomic analysis of a previous study. The differential expression trend analysis and functional gene mining were then employed to predict the candidate marker gene sets representing phlegm, stasis, and deficiency. The whole blood samples from SONFH patients, whole blood samples from SONFH rats, and affected femoral head tissue samples were collected for qPCR, which aimed to determine the expression levels of the candidate marker genes mentioned above. Furthermore, the receiver operating characteristic curve(ROC) was established to objectively evaluate the syndrome differentiation effectiveness of the candidate marker genes mentioned above. The transcriptome data analysis results showed that the candidate marker genes for phlegm was ELOVL fatty acid elongase 6(ELOVL6), and those for stasis were ankyrin 1(ANK1), glycophorin A/B(GYPA/B), and Rh-associated glycoprotein(RHAG). The candidate marker genes for deficiency were solute carrier family 2 member 1(SLC2A1) and stomatin(STOM). The qPCR results showed that compared with that in the non-SONFH group, ELOVL6 had the lowest expression level in the peripheral blood of the SONFH patients with the syndrome of phlegm-stasis obstructing collaterals(P&lt;0.05). Compared with that in the normal control group, ELOVL6 had the lowest expression level in the peripheral blood and affected femoral head tissue of SONFH rats modeled for 4 weeks(P&lt;0.01), and it showed better syndrome differentiation effectiveness of rats modeled for 4 weeks(AUC=0.850, P=0.006) than at other modeling time points(8, 12, 16, and 21 weeks, AUC of 0.689, 0.766, 0.588, and 0.662, respectively). Compared with that in the non-SONFH group, the expression levels of ANK1, GYPA, and RHAG were the lowest in the peripheral blood of SONFH patients with the vessel obstruction syndrome(P&lt;0.05). The expression levels of the three genes were the lowest in the peripheral blood and affected femoral head tissue of",
+          "cos_sim_score": 0.4391409158706665,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::38621982",
+          "title": "[Transcriptome data mining combined with clinical and animal experiments for identification of syndrome element marker genes during entire course of steroid-induced osteonecrosis of femoral head].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38621982/",
+          "year": "2024",
+          "text": "than at other modeling time points(8, 12, 16, and 21 weeks, AUC of 0.689, 0.766, 0.588, and 0.662, respectively). Compared with that in the non-SONFH group, the expression levels of ANK1, GYPA, and RHAG were the lowest in the peripheral blood of SONFH patients with the vessel obstruction syndrome(P&lt;0.05). The expression levels of the three genes were the lowest in the peripheral blood and affected femoral head tissue of SONFH rats modeled for 12 weeks(P&lt;0.05, P&lt;0.01), and their syndrome differentiation effectiveness in the rats modeled for 12 weeks(GYPA: AUC=0.861, P=0.012; ANK1: AUC=0.855, P=0.006; RHAG: AUC=0.854, P=0.009) was superior to that for 4, 8, 16, and 21 weeks(GYPA: AUC=0.646, 0.573, 0.691, and 0.617, respectively; ANK: AUC1=0.630, 0.658, 0.657, and 0.585, respectively; RHAG: AUC=0.592, 0.511, 0.515, and 0.536, respectively). Compared with the non-SONFH group, both SLC2A1 and STOM had the lowest expression levels in the peripheral blood of patients with the syndrome of liver and kidney deficiency(P&lt;0.05). Compared with the normal control group, their expression levels were the lowest in the peripheral blood and affected femoral head tissue of SONFH rats modeled for 21 weeks(P&lt;0.05, except STOM in the peripheral blood of rats). Moreover, the syndrome differentiation effectiveness of SLC2A1 in the rats modeled for 21 weeks(AUC=0.806, P=0.009) was superior to that for 4, 8, 12, and 16 weeks(AUC=0.520, 0.580, 0.741, 0.774, respectively), and STOM was meaningless in syndrome differentiation. In summary, the candidate marker gene for phlegm in SONFH is ELOVL6; the candidate marker genes for stasis are GYPA, RHAG, and ANK1; the candidate marker gene for deficiency is SLC2A1. The results help to reveal the biological connotations of phlegm, stasis, and deficiency in SONFH at the genetic level.",
+          "cos_sim_score": 0.1288900077342987,
+          "source_type": "pubmed"
+        }
+      ]
+    }
+  ]
+}

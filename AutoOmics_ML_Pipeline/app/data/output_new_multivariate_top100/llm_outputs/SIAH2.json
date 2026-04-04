@@ -1,0 +1,212 @@
+{
+  "probe_id": "11743067_at",
+  "gene_symbol": "SIAH2",
+  "rf_importance": 0.0077,
+  "selection_freq": 1.0,
+  "abs_fold_change": 2.097893933333334,
+  "score": 0.3499,
+  "probe_count": 2,
+  "probe_ids": "11743067_at | 11743068_at",
+  "max_score": 0.3499,
+  "mean_abs_fold_change": 1.9528,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T21:54:18",
+  "interpretation": "SIAH2 encodes an E3 ubiquitin-protein ligase that plays a crucial role in mediating the ubiquitination and degradation of various target proteins, which is essential for regulating cellular processes such as apoptosis, cell cycle, and response to hypoxia. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the dysregulation of ubiquitin-mediated degradation pathways may contribute to the pathological processes associated with steroid exposure, including impaired angiogenesis and increased apoptosis of bone cells. However, the evidence linking SIAH2 directly to SONFH is limited, primarily suggesting a potential role in the broader context of bone health and cellular stress responses. Therefore, while SIAH2 may have biological relevance, its specific utility as a biomarker for early detection of SONFH remains uncertain and requires further investigation.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "SIAH2 may be involved in the cellular mechanisms affected by steroid treatment in SONFH, but direct evidence linking it to the disease is lacking.",
+  "citations": [
+    "SIAH2 (O43255). https://www.uniprot.org/uniprotkb/O43255",
+    "SIAH2 \u2014 SIAH2. https://platform.opentargets.org/target/ENSG00000181788",
+    "SIAH2 \u2194 breast carcinoma. https://platform.opentargets.org/target/ENSG00000181788/associations",
+    "SIAH2 \u2194 breast cancer. https://platform.opentargets.org/target/ENSG00000181788/associations",
+    "SIAH2 \u2194 estrogen-receptor positive breast cancer. https://platform.opentargets.org/target/ENSG00000181788/associations",
+    "SIAH2 \u2194 prostate carcinoma. https://platform.opentargets.org/target/ENSG00000181788/associations",
+    "SIAH2 \u2014 siah E3 ubiquitin protein ligase 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TP53 \u2014 tumor protein p53 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "FGFR2 \u2014 fibroblast growth factor receptor 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "AR \u2014 androgen receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HIF1A \u2014 hypoxia inducible factor 1 subunit alpha (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Bioinformatics analysis and identification of genes and molecular pathways in steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8136174/",
+    "NEDD4 regulates VEGF signaling and mTOR to promote angiogenesis and the cell cycle in steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12676940/",
+    "Identification and Validation of Potential Ferroptosis-Related Genes in Glucocorticoid-Induced Osteonecrosis of the Femoral Head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9962586/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 10338,
+    "completion_tokens": 301,
+    "total_tokens": 10639,
+    "estimated_cost_usd": 0.001731
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O43255",
+          "title": "SIAH2 (O43255)",
+          "url": "https://www.uniprot.org/uniprotkb/O43255",
+          "text": "Protein: E3 ubiquitin-protein ligase SIAH2\nFunction: E3 ubiquitin-protein ligase that mediates ubiquitination and subsequent proteasomal degradation of target proteins (PubMed:11483518, PubMed:19224863, PubMed:9334332). E3 ubiquitin ligases accept ubiquitin from an E2 ubiquitin-conjugating enzyme in the form of a thioester and then directly transfers the ubiquitin to targeted substrates (PubMed:11483518, PubMed:19224863, PubMed:9334332). Mediates E3 ubiquitin ligase activity either through direct binding to substrates or by functioning as the essential RING domain subunit of larger E3 complexes (PubMed:11483518, PubMed:19224863, PubMed:9334332). Triggers the ubiquitin-mediated degradation of many substrates, including proteins involved in transcription regulation (GPS2, POU2AF1, PML, NCOR1), a cell surface receptor (DCC), an antiapoptotic protein (BAG1), and a protein involved in synaptic vesicle function in neurons (SYP) (PubMed:11483518, PubMed:19224863, PubMed:9334332). Mediates ubiquitination and proteasomal degradation of DYRK2 in response to hypoxia (PubMed:22878263). It is thereby involved in apoptosis, tumor suppression, cell cycle, transcription and signaling processes (PubMed:11483518, PubMed:19224863, PubMed:22878263, PubMed:9334332). Has some overlapping function with SIAH1 (PubMed:11483518, PubMed:19224863, PubMed:9334332). Triggers the ubiquitin-mediated degradation of TRAF2, whereas SIAH1 does not (PubMed:12411493). Promotes monoubiquitination of SNCA (PubMed:19224863). Regulates cellular clock function via ubiquitination of the circadian transcriptional repressors NR1D1 and NR1D2 leading to their proteasomal degradation (PubMed:26392558). Plays an important role in mediating the rhythmic degradation/clearance of NR1D1 and NR1D2 contributing to their circadian profile of protein abundance (PubMed:26392558). Mediates ubiquitination and degradation of EGLN2 and EGLN3 in response to the unfolded protein response (UPR), leading to their degradation and subsequent stabilization of ATF4 (By similarity). Also part of the Wnt signaling pathway in which it mediates the Wnt-induced ubiquitin-mediated proteasomal degradation of AXIN1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000181788::function",
+          "title": "SIAH2 \u2014 SIAH2",
+          "url": "https://platform.opentargets.org/target/ENSG00000181788",
+          "text": "Function: E3 ubiquitin-protein ligase that mediates ubiquitination and subsequent proteasomal degradation of target proteins (PubMed:11483518, PubMed:19224863, PubMed:9334332). E3 ubiquitin ligases accept ubiquitin from an E2 ubiquitin-conjugating enzyme in the form of a thioester and then directly transfers the ubiquitin to targeted substrates (PubMed:11483518, PubMed:19224863, PubMed:9334332). Mediates E3 ubiquitin ligase activity either through direct binding to substrates or by functioning as the essential RING domain subunit of larger E3 complexes (PubMed:11483518, PubMed:19224863, PubMed:9334332). Triggers the ubiquitin-mediated degradation of many substrates, including proteins involved in transcription regulation (GPS2, POU2AF1, PML, NCOR1), a cell surface receptor (DCC), an antiapoptotic protein (BAG1), and a protein involved in synaptic vesicle function in neurons (SYP) (PubMed:11483518, PubMed:19224863, PubMed:9334332). Mediates ubiquitination and proteasomal degradation of DYRK2 in response to hypoxia (PubMed:22878263). It is thereby involved in apoptosis, tumor suppression, cell cycle, transcription and signaling processes (PubMed:11483518, PubMed:19224863, PubMed:22878263, PubMed:9334332). Has some overlapping function with SIAH1 (PubMed:11483518, PubMed:19224863, PubMed:9334332). Triggers the ubiquitin-mediated degradation of TRAF2, whereas SIAH1 does not (PubMed:12411493). Promotes monoubiquitination of SNCA (PubMed:19224863). Regulates cellular clock function via ubiquitination of the circadian transcriptional repressors NR1D1 and NR1D2 leading to their proteasomal degradation (PubMed:26392558). Plays an important role in mediating the rhythmic degradation/clearance of NR1D1 and NR1D2 contributing to their circadian profile of protein abundance (PubMed:26392558). Mediates ubiquitination and degradation of EGLN2 and EGLN3 in response to the unfolded protein response (UPR), leading to their degradation and subsequent stabilization of ATF4 (By similarity). Also part of the Wnt signaling pathway in which it mediates the Wnt-induced ubiquitin- mediated proteasomal degradation of AXIN1.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000181788::EFO_0000305",
+          "title": "SIAH2 \u2194 breast carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000181788/associations",
+          "text": "Disease: breast carcinoma\nDescription: A carcinoma that arises from epithelial cells of the breast\nAssociation score: 0.476",
+          "cos_sim_score": 0.47562749534867493,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000181788::MONDO_0007254",
+          "title": "SIAH2 \u2194 breast cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000181788/associations",
+          "text": "Disease: breast cancer\nDescription: A primary or metastatic malignant neoplasm involving the breast. The vast majority of cases are carcinomas arising from the breast parenchyma or the nipple. Malignant breast neoplasms occur more frequently in females than in males.\nAssociation score: 0.433",
+          "cos_sim_score": 0.4334910643377074,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000181788::EFO_1000649",
+          "title": "SIAH2 \u2194 estrogen-receptor positive breast cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000181788/associations",
+          "text": "Disease: estrogen-receptor positive breast cancer\nDescription: A subtype of breast cancer that is estrogen-receptor positive\nAssociation score: 0.406",
+          "cos_sim_score": 0.4064828072582314,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000181788::EFO_0001663",
+          "title": "SIAH2 \u2194 prostate carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000181788/associations",
+          "text": "Disease: prostate carcinoma\nDescription: A carcinoma that arises from epithelial cells of the prostate gland.\nAssociation score: 0.312",
+          "cos_sim_score": 0.3115917443311621,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "SIAH2 \u2014 siah E3 ubiquitin protein ligase 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SIAH2\nGene name: siah E3 ubiquitin protein ligase 2\nAliases / synonyms: hSiah2\nOrganism: Homo sapiens\nGene summary: This gene encodes a protein that is a member of the seven in absentia homolog (SIAH) family. The protein is an E3 ligase and is involved in ubiquitination and proteasome-mediated degradation of specific proteins. The activity of this ubiquitin ligase has been implicated in regulating cellular response to hypoxia. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SIAH2",
+          "aliases": "hSiah2",
+          "gene_description": "siah E3 ubiquitin protein ligase 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TP53 \u2014 tumor protein p53",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TP53\nGene name: tumor protein p53\nAliases / synonyms: BCC7, BMFS5, LFS1, P53, TRP53\nOrganism: Homo sapiens\nGene summary: This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TP53",
+          "aliases": "BCC7, BMFS5, LFS1, P53, TRP53",
+          "gene_description": "tumor protein p53"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "FGFR2 \u2014 fibroblast growth factor receptor 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: FGFR2\nGene name: fibroblast growth factor receptor 2\nAliases / synonyms: BBDS, BEK, BFR-1, CD332, CEK3, CFD1, ECT1, JWS, K-SAM, KGFR, TK14, TK25\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the fibroblast growth factor receptor family, where amino acid sequence is highly conserved between members and throughout evolution. FGFR family members differ from one another in their ligand affinities and tissue distribution. A full-length representative protein consists of an extracellular region, composed of three immunoglobulin-like domains, a single hydrophobic membrane-spanning segment and a cytoplasmic tyrosine kinase domain. The extracellular portion of the protein interacts with fibroblast growth factors, setting in motion a cascade of downstream signals, ultimately influencing mitogenesis and differentiation. This particular family member is a high-affinity receptor for acidic, basic and/or keratinocyte growth factor, depending o...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "FGFR2",
+          "aliases": "BBDS, BEK, BFR-1, CD332, CEK3, CFD1, ECT1, JWS, K-SAM, KGFR, TK14, TK25",
+          "gene_description": "fibroblast growth factor receptor 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "AR \u2014 androgen receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AR\nGene name: androgen receptor\nAliases / synonyms: AIS, AR8, DHTR, HUMARA, HYSP1, KD, NR3C4, SBMA, SMAX1, TFM\nOrganism: Homo sapiens\nGene summary: The androgen receptor gene is more than 90 kb long and codes for a protein that has 3 major functional domains: the N-terminal domain, DNA-binding domain, and androgen-binding domain. The protein functions as a steroid-hormone activated transcription factor. Upon binding the hormone ligand, the receptor dissociates from accessory proteins, translocates into the nucleus, dimerizes, and then stimulates transcription of androgen responsive genes. This gene contains 2 polymorphic trinucleotide repeat segments that encode polyglutamine and polyglycine tracts in the N-terminal transactivation domain of its protein. Expansion of the polyglutamine tract from the normal 9-34 repeats to the pathogenic 38-62 repeats causes spinal bulbar muscular atrophy (SBMA, also known as Kennedy's disease). Mutati...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AR",
+          "aliases": "AIS, AR8, DHTR, HUMARA, HYSP1, KD, NR3C4, SBMA, SMAX1, TFM",
+          "gene_description": "androgen receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "HIF1A \u2014 hypoxia inducible factor 1 subunit alpha",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HIF1A\nGene name: hypoxia inducible factor 1 subunit alpha\nAliases / synonyms: HIF-1-alpha, HIF-1A, HIF-1alpha, HIF1, HIF1-ALPHA, MOP1, PASD8, bHLHe78\nOrganism: Homo sapiens\nGene summary: This gene encodes the alpha subunit of transcription factor hypoxia-inducible factor-1 (HIF-1), which is a heterodimer composed of an alpha and a beta subunit. HIF-1 functions as a master regulator of cellular and systemic homeostatic response to hypoxia by activating transcription of many genes, including those involved in energy metabolism, angiogenesis, apoptosis, and other genes whose protein products increase oxygen delivery or facilitate metabolic adaptation to hypoxia. HIF-1 thus plays an essential role in embryonic vascularization, tumor angiogenesis and pathophysiology of ischemic disease. Alternatively spliced transcript variants encoding different isoforms have been identified for this gene. [provided by RefSeq, Jul 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HIF1A",
+          "aliases": "HIF-1-alpha, HIF-1A, HIF-1alpha, HIF1, HIF1-ALPHA, MOP1, PASD8, bHLHe78",
+          "gene_description": "hypoxia inducible factor 1 subunit alpha"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::8136174",
+          "title": "Bioinformatics analysis and identification of genes and molecular pathways in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8136174/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a common disease of the hip with a higher incidence in elderly patients, and the most common clinical symptom is severe pain [1]. There are about 150,000\u2013200,000 new cases in China each year [2], and about 20,000 new cases in the USA each year [3]. The pathological features of steroid-induced ONFH include decreased blood supply to the hip joint, the collapse of the femoral head, and accumulation of microfractures without continuous remodeling [4, 5]. Besides, ONFH can cause rapid destruction and dysfunction of the hip joint, and approximately 65\u201370% of patients with advanced ONFH require total hip replacement [6]. The pathogenesis and molecular mechanism of steroid-induced ONFH remain unclear, and there are few effective prevention and early treatment methods.\nStudies have indicated that successful results can be obtained when joint-preserving surgery is used in the pre-collapse stage of steroid-induced ONFH [7]. After the femoral head necrosis collapses, cartilage wrinkles and the hip joint space gradually narrows. Meanwhile, the failure rate of joint-preserving treatment is high. Therefore, searching for new biomarkers in the blood is of great clinical significance for the diagnosis of steroid-induced ONFH, as well as the further early diagnosis and treatment of ONFH. Some genetic factors are considered key factors in the progress of steroid-induced ONFH, such as peroxisome proliferator-activated receptor \u03b3, matrix metallopeptidase 9, and SMAD family member 3 and gremlin 1 [8\u201310]. Currently, microarray analysis using a high-throughput platform is promising and efficient for exploring the molecular mechanisms of diseases and identifying useful biomarkers for diagnosis and prognosis of diseases [11, 12]. However, there is little comprehensive research on steroid-induced ONFH with high-throughput platforms. During the development of steroid-induced ONFH, the cartilage on the surface of the femoral head and the labrum of the acetabulum are significantly damaged. Degeneration of cartilage on the surface of the femoral head and tearing of the labrum enhance the instability of the hip joint and accelerate the development of steroid-induced ONFH [13]. Prevention and early treatment of hip cartilage damage may slow the development of steroid-induced ONFH and relieve hip dysfunction. However, there are few studies on the molecular mechanism of steroid-induced ONFH hip cartilage damage. Therefore, it is hypothesized in this paper that differentially expressed genes co-exist in the peripheral serum and cartilage of ONFH patients; this can be used for early diagnosis and observation of disease progression.\nIn this study, hub genes are screened out from the differences expressed genes (degrees) using bioinformatics methods based on the National Center for Biotechnology Information (NCBI http://www.ncbi.nlm.nih.gov/geography/) from the Gene Expression Dataset GSE123568 (peripheral serum) and GSE74089 (hip articular cartilage) Comprehensive (GEO) database. Quantitative real-time PCR (qRT-PCR) was conducted to validate the gene expression profiling results based on an independent sera sample of eight patients with ONFH and twelve healthy controls. The present study aimed to identify potentially important genes and signaling pathways involved in ONFH and investigate their molecular mechanisms.\nMaterials and methods\nMicroarray data source\nThe gene chip data related to femoral head necrosis (GSE123568, GSE74089) is downloaded in the GEO (gene expression omnibus) database (https://www.ncbi.nlm.nih.gov/geo/). GSE123568 chip data contains 10 normal patient serum samples and 30\u2009steroid-induced femoral head necrosis serum samples. Besides, the GSE74089 chip data is composed of hip cartilage specimens from 4 NFH patients and 4 healthy controls. All the above data sets are based on GPL15207 and GPL13497 platform GEO database downloaded, and the information of the above two data sets are detailed in Table 1.\nTable 1Two datasets used for gene expression profiles analysis in NFHGEO IDAuthorPlatformSamplesTypeYearOmicsGSE123568Zhang YGPL15207NFH to normal = 30:10Peripheral serum2019mRNAGSE74089Ruiyu LGPL13497NFH to normal = 4:4Hip articular cartilage2016mRNA\nTable 1\nTwo datasets used for gene expression profiles analysis in NFH\nDifferentially expressed genes analysis",
+          "cos_sim_score": 0.6840166449546814,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12676940",
+          "title": "NEDD4 regulates VEGF signaling and mTOR to promote angiogenesis and the cell cycle in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12676940/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a degenerative hip joint disease that worsens over time (1). ONFH is characterized by bone cell death due to a lack of blood supply, which can lead to joint collapse and hip dysfunction (1). The causes of ONFH are complex and involve mechanical injury, genetic predisposition and biochemical imbalances (2,3). Among these factors, steroid use is reported in ~51% of ONFH cases (4). Prolonged or high-dose steroid therapy markedly increases the risk of ONFH, leading to steroid-induced ONFH (SONFH) (1). For example, in patients with systemic lupus erythematosus, the corticosteroid dosage is positively associated with the occurrence of ONFH. Daily doses as low as 10 mg have been associated with a 3.6% increase in risk, while doses >40 mg greatly increase the chance of developing ONFH (5). Steroids damage bone and blood vessel health through various mechanisms, including endothelial cell dysfunction and reduced angiogenesis, ultimately impairing blood flow supply (3,6). Endothelial cells serve an important role in angiogenesis, as their growth, migration and tube formation are important for repairing bone tissue (6,7). When angiogenesis is impaired, bone regeneration often fails (8). VEGF, a key factor that promotes angiogenesis, has been shown to enhance bone repair by stimulating angiogenesis, making it a potential treatment for ONFH (9\u201311). Angiogenesis and osteogenesis are closely linked processes that occur throughout bone development, maturation, aging and disease progression (12). Notably, activation of the VEGF-Notch signaling pathway has been reported to restore the proliferation of mesenchymal stem cells in aplastic anemia (13), while the mTOR/AP-1 complex subunit \u00b5-1/VEGF axis regulates endothelial cell growth (14). Additionally, increasing hypoxia-inducible factor (HIF)-1\u03b1/VEGF levels can help to protect against bone loss in models of nasal obstruction (15). Therefore, understanding the molecular mechanisms of angiogenesis and endothelial cell function is important for advancing treatments for ONFH.\nUbiquitination has become an important post-translational modification for regulating protein stability, signal transduction and cellular homeostasis (16\u201319). Neural precursor cell expressed developmentally downregulated protein 4 (NEDD4) is an E3 ubiquitin ligase that facilitates substrate ubiquitination and degradation, thereby influencing multiple biological processes such as cell proliferation, migration, angiogenesis and endothelial cell protection (20\u201322). NEDD4 has been demonstrated to promote endothelial cell proliferation, migration and angiogenesis (23). In addition to its role in endothelial regulation, NEDD4 also affects macrophage autophagy and tumor cell proliferation, highlighting its versatile function in maintaining the cellular balance (21,24).\nNEDD4 subfamily influences osteogenesis and bone cell biology (25). By mediating PTEN degradation, NEDD4 activates the PI3K/AKT pathway, which promotes cell proliferation and survival. This pathway also supports angiogenesis through PTEN inactivation and VEGF upregulation (26\u201329). Additionally, NEDD4 boosts osteocyte proliferation and is associated with improved outcomes in postmenopausal osteoporosis (30,31). Overall, these findings emphasize the potential of NEDD4 as a regulator of both angiogenesis and osteogenesis, making it a promising target in ONFH therapy. The present study was based on the concept that NEDD4 may serve a role in SONFH. To explore this, the present study observed how overexpression of NEDD4 affected the viability, migration and tube formation of bone microvascular endothelial cells (BMECs). The present study also investigated how glucocorticoids influenced NEDD4 expression and promoter methylation, shedding light on how NEDD4 contributes to angiogenesis and repair in SONFH.\nMaterials and methods\nConstruction of the NEDD4 overexpression (OE) vector",
+          "cos_sim_score": 0.6224528551101685,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8136174",
+          "title": "Bioinformatics analysis and identification of genes and molecular pathways in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8136174/",
+          "text": "Table 2\nThe information of the primers\u2019 sequencing\nStatistical analysis\nGraphPad 8.0 was used to perform statistical analysis. The results are presented as mean \u00b1 standard deviation (mean \u00b1 SD). Data conforming to normal distribution were compared using Student t test, while those with non-normally distributed were tested using Mann-Whitney U test. P <\u20090.05 indicates statistical significance. All experiments were performed in triplicate.\nResults\nIdentification of DEGs\nThis study screened out two chip data sets (GSE123568 and GSE74089). Among them, 30\u2009serum samples of patients with steroid hormone-induced osteonecrosis of the femoral head in the chip data set GSE123568 (including 13 males and 17 females, aged 23.07 \u00b1 3.01\u2009years, ARCO stage I-II patients accounted for 10 patients, ARCO III patients accounted for 10 cases, ARCO IV patients accounted for 10 cases) and 10 normal serum samples (including 7 males and 3 females, aged 25.02 \u00b1 2.87\u2009years). Besides, there are 4 hip cartilage samples from patients with femoral head necrosis (including 3 males and 1 female) and 4 healthy adult hip cartilage specimens (including 3 males and 1 female) in the chip dataset GSE74089. The baseline characteristics of the patients are provided in Table 3. According to the adjust P value <\u20090.01, the expression change range is greater than or equal to twice (|log2 FC|\u22651.0) as the criteria for screening differential genes. A total of 750 differentially expressed genes were screened in the GSE123568 data set, including 454 upregulated genes and 296 downregulated genes. A total of 5211 differentially expressed genes were screened in the GSE74089 data set, including 1594 upregulated genes and 3617 downregulated genes. The DEGs in GSE123568 and GSE74089 were selected based on the adjust P value to screen the top 25 most significant upregulated and downregulated differentially expressed genes, so as to draw heat maps (Fig. 1). The -log10 conversion is performed for the adjust P value in the data processed by GEO2R. Then, according to log2 FC, -log10 (adjust P value) was divided into groups of upregulated genome, downregulated genome, and non-statistically different genome. The processed data was imported into GraphPad Prism 7 to draw a volcano map (Fig. 2). Furthermore, a total of 118 intersecting DEGs were obtained between the peripheral blood and cartilage samples, including 40 upregulated genes and 78 downregulated genes (Fig. 3).\nTable 3Characteristics of study subjectsGSE12356Number of subjectsAge (years, mean \u00b1 SD)SexARCO(I\u2013II/III/IV/)MaleFemaleControl1025.02 \u00b1 2.8773Disease3023.07 \u00b1 3.01131710/10/10GSE74089Control446.75 \u00b1 4.0231\u2212Disease445.25 \u00b1 4.0231\u2212Fig. 1Heat map of top 50 DEGs in ONFH. a Heat map of top 50 DEGs in GSE123568. b Heat map of top 50 DEGs in GSE74089 (tissue samples are presented as columns; individual genes are presented as rows. Red represents upregulated genes; green indicates downregulated genes in patients with ONFH. The patients in the top rows in pink indicate the control columns; the patients in the top rows in blue indicate columns were patients with NFH. DEGs, differentially expressed genes; NFH, necrosis of the femoral head)Fig. 2The volcano plot was constructed using fold-change (Log2FC) values and adjust P values. a The volcano plot of a total of 750 DEGs in GSE123568. b The volcano plot of total 5211 DEGs in GSE74089 (the vertical blue lines correspond to upregulated and downregulated Log2FC; the horizontal Orange line represents an adjust P value of 0.01. The red point represents the differentially upregulated genes with statistical significance; the green point suggests the differentially downregulated genes with statistical significance)Fig. 3Venn diagrams showing the overlap of DEGs between peripheral serum samples and hip articular cartilage samples. a Upregulated DEGs. b Downregulated DEGs (Venn diagram was drawn using the online tool (https://bioinfogp.cnb.csic.es/tools/venny/index.html). Numbers represented the number of DEGs. The percentage was represented by the ratio of current DEGs to the total)\nTable 3\nCharacteristics of study subjects",
+          "cos_sim_score": 0.5988079309463501,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8136174",
+          "title": "Bioinformatics analysis and identification of genes and molecular pathways in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8136174/",
+          "text": "Fig. 9\nExpression of hub genes in ONFH patients. a\u2013c CXCR1, FPR1, and TYROBP were upregulated in peripheral blood of steroid-induced ONFH patients(P <\u20090.05). d MAPK1 was downregulated in peripheral blood of steroid-induced ONFH patients (P <\u20090.05); e\u2013g there was no significant difference in the expression of CXCR2, FPR2, and FOXO3 in peripheral serum samples between the two groups (P >\u20090.05)\nDiscussion\nSteroid-induced ONFH is a devastating and difficult joint disease and primarily caused by the interruption of blood supply and the dysfunction of the coagulation system, resulting in the death of bone cells, the decrease of the elastic modulus of the femoral head, and the collapse of the femoral head [21]. Various molecular and genetic studies have explored the etiology and pathogenesis [22, 23]. However, the exact pathogenesis remains unclear. In this paper, the genome-wide method was used to study the differential expression of genes in the peripheral blood serum and hip joint cartilage specimens of steroid-induced ONFH patients and healthy controls. Through bioinformatics analysis of GSE123568 and GSE74089, potentially important genes in ONFH were identified. In addition, the role of the identified genes in ONFH and their interaction were analyzed. A total of 118 intersecting DEGs were obtained in peripheral blood and cartilage samples, of which 40 were upregulated genes and 78 were downregulated genes. These DEGs may be important biomarkers related to the pathogenesis and progression of ONFH. Finally, qRT-PCR verified the expression patterns of several genes such as CXCR1, FPR1, MAPK1, FOXO3, FPR2, CXCR2, and TYROBP in vitro. However, due to different inclusion criteria and a small number of patients in the validation set, some results are inconsistent with microarray analysis.\nThe DEGs screened in this study contribute to the identification of new molecules or new pathways related to steroid-induced ONFH. These new molecules or pathways may be essential targets for disease diagnosis and treatment. The upregulated DEGs were generally involved in inflammation, immune response, and signal transduction. Molecular functions were manifested in immune regulation process, IL-8 receptor activity, superoxide-producing NADPH oxidase activity, and MAP kinase activity. The upregulated DEGs were enriched in pathways engaged in staphylococcus aureus infection, leishmaniasis, antigen processing and presentation, asthma, and graft-versus-host disease. Particularly, the background of this femoral head necrosis can be understood using corticosteroids to treat related acute or chronic graft-versus-host disease (aGVHD, cGVHD) [24]. Socie et al. [25] retrospectively analyzed the risk factors of osteonecrosis after allogeneic hematopoietic stem cell transplantation. The study revealed that the odds ratios of aGVHD and cGVHD were 3.73 and 3.52, respectively. The severity of graft-versus-host disease was associated with a higher frequency of osteonecrosis. Additionally, GO analysis of downregulated genes demonstrated that BP focused on cell cycle regulation, apoptosis process, translation process regulation, autophagy, and cell response to hypoxia. MF was manifested in protein binding, transcription factor binding, and DNA binding. The downregulated genes were concentrated in the FoxO signaling pathway, AMPK signaling pathway, signaling pathway regulating stem cell pluripotency, and mTOR signaling pathway. Moreover, AMPK was an essential energy state sensor responding to energy supply and demand through coordinated metabolic pathways [26]. Studies have indicated that AMPK can promote cell survival under various stress conditions [27]. The forced activation of AMPK is a good strategy to protect osteoblasts from Dex [28, 29]. The mTOR pathway may be a vital mediator of bone homeostasis [30]. Furthermore, the impaired differentiation of the osteogenic/adipogenic lineage of bone marrow mesenchymal stem cells (BMSCs) was caused by the activation of the mTOR signaling pathway [31]. Meanwhile, blocking the mTOR pathway can prevent the development of phenotypes related to aging and enhance the proliferation ability of BMSCs [32]. Therefore, regulating the mTOR signaling pathway may be one of the crucial methods to treat steroid-induced ONFH.",
+          "cos_sim_score": 0.5249647498130798,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9962586",
+          "title": "Identification and Validation of Potential Ferroptosis-Related Genes in Glucocorticoid-Induced Osteonecrosis of the Femoral Head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9962586/",
+          "text": "1. Introduction\nGlucocorticoid-induced osteonecrosis of the femoral head (GIONFH) is a pathologic process of bone cell death that commonly affects young and middle-aged adults [1]. GIONFHprimarily manifests clinically as hip pain in the early stages, followed by the collapse of the femoral head, eventually leading to dysfunction of the hip joint [2]. The occurrence of GIONFH has been rising over the past decades due to the extensive application of glucocorticoids for viral infections, spinal trauma, and autoimmune and hematopoietic diseases [3]. Moreover, glucocorticoid therapy is now recommended for a large number of patients with severe COVID-19 [4]. It has been reported that osteonecrosis develops in 9\u201340% of patients receiving long-term glucocorticoid therapy [5]. The occurrence and development of GIONFH is a complex processwith multiple steps and genes. It is a widespread consensus that the repair process of osteonecrosis requires precisely coordinated bone resorptive functions of osteoclasts and bone-forming functions of osteoblasts [6]. The precise pathogenesis and molecular mechanisms underlying GIONFHhave not yet been fully elucidated, and there is currently a lack of effective clinical treatments. Therefore, it is important to investigate the molecular mechanism underlying GIONFH.\nFerroptosis is emerging as a novel type of programmed cell death discovered in recent years [7]. Ferroptosis is characterized by reactive oxygen species (ROS) accumulation, iron overload, and lipid peroxidation, ultimately leading to oxidative cell death [8].Iron overload, an initiator of ferroptosis, could increase bone resorption and decrease bone formation [9]. Moreover, iron overload could increase the number of osteoclasts [10]. The morphological characteristics of ferroptosis are decreased mitochondrial size, increased mitochondrial membrane density, and reduced mitochondrial crista and mitochondrial outer-membrane rupture [11]. Major efforts in terms of ferroptosis have been focused on the field of cancer. Although the role of iron in osteonecrosis has not yet been reported until now, recent evidence indicates that ferroptosis is closely related to the pathogenesis of GIONFH. An iron overload could promote osteoclast differentiation and bone resorption by producing ROS [12] and inhibiting osteogenic differentiation of mesenchymal stem cells [13]. Meanwhile, dexamethasone (Dex), an artificially synthetic glucocorticoid, could induce ferroptosis via P53/SLC7A11/GPX4 pathway in GIONFH [14].However, manyferroptosis-related genes involved in GIONFH have not yetbeen found, so further studies of ferroptosis-related genesinvolved in GIONFH need to be explored.\nTo date, there have been no bioinformatics-based studies on the pathogenesis of ferroptosis-related GIONFH. In the present study, we analyzed the expression of ferroptosis-related differentially expressed genes (DEGs) between the serum samples of GIONFH patients and controls based on the microarray dataset. Then, the Gene Ontology (GO) and Kyoto Encyclopediaof Genes and Genomes (KEGG) databases were usedfor the enrichment analysis of ferroptosis-related DEGs to establish the pathogenesis of GIONFH. Moreover, we constructed a protein\u2013protein interaction(PPI) network to identify hub genes based on ferroptosis-related DEGs. This study may improve the understanding of ferroptosis-related mechanisms underlying GIONFH.\n2. Materials and Methods\n2.1. Data Information\nThe mRNA expression profile dataset of GSE123568 was downloaded from the Gene Expression Omnibus (GEO) database (https://www.ncbi.nlm.nih.gov/geo/, accessed on 1 October 2022), which was based on the platform of GPL15207 Affymetrix Human Gene Expression Array. This dataset contains 30 serum samples from GIONFH patients and 10 serum samples from non-GIONFH controls. Among them, GIONFH patients were aged (23.07 \u00b1 3.01) years, while non-GIONFH controls were aged (25.02 \u00b1 2.87) years.\n2.2. Ferroptosis-Related Genes Detection",
+          "cos_sim_score": 0.5225056409835815,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

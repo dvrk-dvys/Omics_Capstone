@@ -1,0 +1,210 @@
+{
+  "probe_id": "11717762_a_at",
+  "gene_symbol": "CPVL",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0165634664999984,
+  "abs_fold_change": 1.607,
+  "score": 1.5982,
+  "probe_count": 1,
+  "probe_ids": "11717762_a_at",
+  "max_score": 1.5982,
+  "mean_abs_fold_change": 1.607,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T22:59:57",
+  "interpretation": "The CPVL gene encodes a probable serine carboxypeptidase involved in the digestion of phagocytosed particles and may participate in inflammatory processes. While there is no direct evidence linking CPVL to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in inflammation and proteolytic activity suggests a potential involvement in the pathological processes associated with SONFH, particularly given that inflammation is a known factor in osteonecrosis. The evidence retrieved primarily discusses CPVL's general biological functions without specific ties to SONFH, leading to a conclusion based on inference rather than direct evidence. Thus, while CPVL may have some relevance as a biomarker, its clinical utility for early detection of SONFH remains uncertain.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "CPVL may play a role in inflammatory processes relevant to the pathogenesis of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "CPVL (Q9H3G5). https://www.uniprot.org/uniprotkb/Q9H3G5",
+    "CPVL \u2014 CPVL. https://platform.opentargets.org/target/ENSG00000106066",
+    "CPVL \u2194 basal cell carcinoma. https://platform.opentargets.org/target/ENSG00000106066/associations",
+    "CPVL \u2194 skin neoplasm. https://platform.opentargets.org/target/ENSG00000106066/associations",
+    "CPVL \u2194 skin cancer. https://platform.opentargets.org/target/ENSG00000106066/associations",
+    "CPVL \u2194 non-melanoma skin carcinoma. https://platform.opentargets.org/target/ENSG00000106066/associations",
+    "CPVL \u2014 carboxypeptidase vitellogenic like (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HVLP \u2014 serine carboxypeptidase vitellogenic-like (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "IL6 \u2014 interleukin 6 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "BRAF \u2014 B-Raf proto-oncogene, serine/threonine kinase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Identification of hub genes of Parkinson's disease through bioinformatics analysis (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9683342/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8783,
+    "completion_tokens": 294,
+    "total_tokens": 9077,
+    "estimated_cost_usd": 0.001494
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9H3G5",
+          "title": "CPVL (Q9H3G5)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9H3G5",
+          "text": "Protein: Probable serine carboxypeptidase CPVL\nFunction: May be involved in the digestion of phagocytosed particles in the lysosome, participation in an inflammatory protease cascade, and trimming of peptides for antigen presentation",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000106066::function",
+          "title": "CPVL \u2014 CPVL",
+          "url": "https://platform.opentargets.org/target/ENSG00000106066",
+          "text": "Function: May be involved in the digestion of phagocytosed particles in the lysosome, participation in an inflammatory protease cascade, and trimming of peptides for antigen presentation.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000106066::EFO_0004193",
+          "title": "CPVL \u2194 basal cell carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000106066/associations",
+          "text": "Disease: basal cell carcinoma\nDescription: A carcinoma involving the basal cells.\nAssociation score: 0.542",
+          "cos_sim_score": 0.5424238909024452,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000106066::EFO_0004198",
+          "title": "CPVL \u2194 skin neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000106066/associations",
+          "text": "Disease: skin neoplasm\nDescription: Tumors or cancer of the SKIN.\nAssociation score: 0.530",
+          "cos_sim_score": 0.5299717026986468,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000106066::MONDO_0002898",
+          "title": "CPVL \u2194 skin cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000106066/associations",
+          "text": "Disease: skin cancer\nDescription: A malignant neoplasm involving the zone of skin\nAssociation score: 0.523",
+          "cos_sim_score": 0.5231251031780751,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000106066::EFO_0009260",
+          "title": "CPVL \u2194 non-melanoma skin carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000106066/associations",
+          "text": "Disease: non-melanoma skin carcinoma\nDescription: Any skin carcinoma that is not melanoma, with the most common types being basal cell carcinoma and squamous cell carcinoma\nAssociation score: 0.482",
+          "cos_sim_score": 0.48184289852037876,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "CPVL \u2014 carboxypeptidase vitellogenic like",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CPVL\nGene name: carboxypeptidase vitellogenic like\nAliases / synonyms: HVLP\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a carboxypeptidase and bears strong sequence similarity to serine carboxypeptidases. Carboxypeptidases are a large class of proteases that act to cleave a single amino acid from the carboxy termini of proteins or peptides. The exact function of this protein, however, has not been determined. [provided by RefSeq, Jan 2017]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CPVL",
+          "aliases": "HVLP",
+          "gene_description": "carboxypeptidase vitellogenic like"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "HVLP \u2014 serine carboxypeptidase vitellogenic-like",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HVLP\nGene name: serine carboxypeptidase vitellogenic-like\nAliases / synonyms: CPVL\nOrganism: Homo sapiens",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HVLP",
+          "aliases": "CPVL",
+          "gene_description": "serine carboxypeptidase vitellogenic-like"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "IL6 \u2014 interleukin 6",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: IL6\nGene name: interleukin 6\nAliases / synonyms: BSF-2, BSF2, CDF, HGF, HSF, IFN-beta-2, IFNB2, IL-6\nOrganism: Homo sapiens\nGene summary: This gene encodes a cytokine that functions in inflammation and the maturation of B cells. In addition, the encoded protein has been shown to be an endogenous pyrogen capable of inducing fever in people with autoimmune diseases or infections. The protein is primarily produced at sites of acute and chronic inflammation, where it is secreted into the serum and induces a transcriptional inflammatory response through interleukin 6 receptor, alpha. The functioning of this gene is implicated in a wide variety of inflammation-associated disease states, including suspectibility to diabetes mellitus and systemic juvenile rheumatoid arthritis. Elevated levels of the encoded protein have been found in virus infections, including COVID-19 (disease caused by SARS-CoV-2). [provided by RefSeq, Aug 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "IL6",
+          "aliases": "BSF-2, BSF2, CDF, HGF, HSF, IFN-beta-2, IFNB2, IL-6",
+          "gene_description": "interleukin 6"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "BRAF \u2014 B-Raf proto-oncogene, serine/threonine kinase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: BRAF\nGene name: B-Raf proto-oncogene, serine/threonine kinase\nAliases / synonyms: B-RAF1, B-raf, BRAF-1, BRAF1, NS7, RAFB1\nOrganism: Homo sapiens\nGene summary: This gene encodes a protein belonging to the RAF family of serine/threonine protein kinases. This protein plays a role in regulating the MAP kinase/ERK signaling pathway, which affects cell division, differentiation, and secretion. Mutations in this gene, most commonly the V600E mutation, are the most frequently identified cancer-causing mutations in melanoma, and have been identified in various other cancers as well, including non-Hodgkin lymphoma, colorectal cancer, thyroid carcinoma, non-small cell lung carcinoma, hairy cell leukemia and adenocarcinoma of lung. Mutations in this gene are also associated with cardiofaciocutaneous, Noonan, and Costello syndromes, which exhibit overlapping phenotypes. A pseudogene of this gene has been identified on the X chromosome. [provided by RefSeq, A...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "BRAF",
+          "aliases": "B-RAF1, B-raf, BRAF-1, BRAF1, NS7, RAFB1",
+          "gene_description": "B-Raf proto-oncogene, serine/threonine kinase"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::9683342",
+          "title": "Identification of hub genes of Parkinson's disease through bioinformatics analysis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9683342/",
+          "text": "We investigated the biological functions of RPL3L, PLEK2, PYCRL, CD99P1, LOC100133130, MELK, LINC01101, and DLG3-AS1. Interestingly, GSEA revealed that RPL3L, PLEK2, PYCRL, CD99P1, LOC100133130, MELK, LINC01101, and DLG3-AS1 were mainly involved in nicotine addiction, diabetes, protein export, taste transduction, fatty acid degradation, propanoate metabolism, endocrine and other factor-regulated calcium reabsorption, GABAergic synapse, steroid biosynthesis, synaptic vesicle cycle, carbohydrate digestion and absorption, proteasome, and asthma. Currently, an increasing number of studies have shown that the above factors significantly impact the occurrence and development of PD. For example, it has been suggested that nicotine addiction and diabetes are associated with PD (Cheong et al., 2020; Carvajal-Oliveros et al., 2021). However, their regulatory mechanisms are rarely studied to the best of our knowledge. Thus, further studies are required to explore this in the future.\nConclusion\nIn all, 117 DEGs were screened between the substantia nigra of PD and healthy samples. Of these, RPL3L, PLEK2, PYCRL, CD99P1, LOC100133130, MELK, LINC01101, and DLG3-AS1 were identified as hub genes of patients with PD based on WGCNA and machine learning algorithms. Therefore, our study contributes to the understanding of PD and helps in improving the diagnosis and treatment of PD. However, further studies are needed to investigate the roles of hub genes.\nData availability statement\nThe original contributions presented in the study are included in the article/supplementary material, further inquiries can be directed to the corresponding author.\nEthics statement\nEthical review and approval was not required for the study on human participants in accordance with the local legislation and institutional requirements. Written informed consent from the patients/participants or patients/participants' legal guardian/next of kin was not required to participate in this study in accordance with the national legislation and the institutional requirements.\nAuthor contributions\nYY conceived of the presented idea. XH developed the theory, performed the computations, and supervised the findings of this work. CW and YW verified the analytical methods. XX and CL contributed in the revision of the article. All authors discussed the results and contributed to the final manuscript.\nFunding\nThis work was funded by Research Project Supported by Shanxi Scholarship Council of China (2020-169), Fund Program for the Scientific Activities of Selected Returned Overseas Professionals in Shanxi Province (20210023), and Fundamental Research Program of Shanxi Province (202203021211017).\nConflict of interest\nThe authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.\nPublisher's note\nAll claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.",
+          "cos_sim_score": 0.09416747838258743,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9683342",
+          "title": "Identification of hub genes of Parkinson's disease through bioinformatics analysis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9683342/",
+          "text": "Introduction\nParkinson's disease (PD) is one of the common neurodegenerative diseases, second only to Alzheimer's disease (Di Stefano and Marinelli, 2021; Pan et al., 2021). The global prevalence of PD is rising, affecting nearly 2% of people over the age of 65 and 5% of people over the age of 85 (Bloem et al., 2021; Dorszewska et al., 2021). The pathological features of PD are mainly the loss of dopaminergic neurons in the substantia nigra and the formation of Lewy bodies, which is determined by genetic and environmental factors, and related to age, immune-inflammatory mechanisms, mitochondrial dysfunction, oxidative stress, apoptosis, lysosomal dysfunction, etc (Pan-Montojo and Reichmann, 2014; Su and Federoff, 2014; Kalia and Lang, 2015; Mullin and Schapira, 2015; Vivekanantham et al., 2015; Hu and Wang, 2016; Collier et al., 2017; Vascellari and Manzin, 2021). The role of genetic factors in PD is receiving more attention, and dozens of genes have been found to be related to the incidence of PD, including SNCA, LRRK2, and so on (Manto and Marmolino, 2009; Deng et al., 2018; Poujois and Woimant, 2018). Neurologists' assessments of clinical manifestations, movement disorders, and some routine laboratory tests are the most important diagnostic methods for PD. However, these methods have disadvantages and limitations, such as low sensitivity, selectivity, and high cost (Bindas et al., 2021; Mobed et al., 2021).\nThe treatment of PD is constantly developing, including drug therapy, surgical treatment, gene therapy, rehabilitation, etc. However, drug therapy is still the preferred treatment of Parkinson's disease in the clinic and is the main treatment method. However, drug therapy can only improve symptoms and cannot control the progression of the disease. With the prolongation of the medication duration and the dose increase, there will be a decrease in the efficacy of the drug and complications. Some researchers are developing new gene promoters to control gene expression in different subsets of neurons, stimulating the growth and development of specific neurons (such as dopaminergic neurons), thereby promoting the recovery of Parkinson's disease. Another emerging form of gene therapy is using novel drugs that directly deliver key proteins involved in dopamine metabolism to the basal ganglia region. Using gene therapies to clear disease-causing proteins is another beneficial exploration (Brundin et al., 1987; Lindvall et al., 1988; Ropper and Samuels, 1997). Although many genes are associated with PD, the specific pathogenesis is not clear, and there is still a lack of understanding of the genes that can be used for the diagnosis and treatment of PD. It is important to find new genes related to PD, which can be used for new targets for treatment.\nRecently, bioinformatics analysis has been widely used as a new technique to screen for underlying biomarkers for both tumor and non-tumor diseases (Zhang et al., 2022). In this study, we downloaded a microarray dataset and analyzed gene expression to obtain differentially expressed genes from persons with PD and healthy individuals. We combined the data with WGCNA and machine learning algorithms, screened out a total of eight core genes, verified the prediction accuracy by area size (AUC) under the ROC curve, and performed GSEA analysis on each hub gene. We aimed to identify candidate genes that may be used as PD biomarkers.\nMaterials and methods\nData collection and preprocessing\nThe raw data of the substantia nigra tissue from 16 PD and nine American normal samples in the GSE7621 (Lesnick et al., 2007) dataset, which was sequenced using the GPL570 platform, was obtained from the GEO database.\nIdentification of DEGs in the substantia nigra of patients with PD\nThe \u201cLimma\u201d R package was used to screen DEGs between PD and normal samples, and genes with P < 0.05 and |log2FC| >1 were regarded as DEGs (Liu et al., 2021).\nScreening of key modules and target genes based on WGCNA",
+          "cos_sim_score": 0.05721764266490936,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9683342",
+          "title": "Identification of hub genes of Parkinson's disease through bioinformatics analysis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9683342/",
+          "text": "Figure 5\n(A) Nomogram predicting PD probability. (B,C) ROC curve for the GSE7621 dataset and GSE20141 dataset.\nEstablishment of diagnostic nomogram for PD\nA diagnostic nomogram was successfully constructed based on the eight genes for predicting the incidence of PD (Figure 5A). The area under the curve (AUC) of the GSE7621 dataset was 1.000 (Figure 5B), and that of the GSE20141 dataset was 0.900 (Figure 5C).\nEvaluation of the expression levels and diagnostic implications for the hub genes\nTo further investigate the role of hub genes in PD, we first observed their expression levels in PD patients. Interestingly, we found that the expression of PYCRL, LOC100133130, MELK, LINC01101, and DLG3-AS1 was downregulated, and the expression of RPL3L, PLEK2, and CD99P1 was upregulated in PD patients compared with the healthy samples (Figure 6A). Moreover, ROC analyses suggested RPL3L, PLEK2, PYCRL, CD99P1, LOC100133130, MELK, LINC01101, and DLG3-AS1 might be used as hub genes of PD patients (Figure 6B).\nFigure 6\nThe expression levels and diagnostic implications of the hub genes. (A) The expression levels of hub genes in PD patients and normal samples of the dataset (number: GSE7621); (B) ROC curves of hub genes of the dataset (number: GSE7621).\nBiological functions of hub genes\nTo further investigate the biological functions of RPL3L, PLEK2, PYCRL, CD99P1, LOC100133130, MELK, LINC01101, and DLG3-AS1, GSEA was performed based on their ordered gene expression matrix. As shown in Figure 7, GSEA analyses revealed that RPL3L, PLEK2, PYCRL, CD99P1, LOC100133130, MELK, LINC01101, and DLG3-AS1 were mainly involved in glycosaminoglycan biosynthesis \u2013 heparan sulfate/heparin, histidine metabolism, nicotine addiction, diabetes, protein export, taste transduction, fatty acid degradation, propanoate metabolism, endocrine, and other factor\u2013regulated calcium reabsorption, GABAergic synapse, steroid biosynthesis, synaptic vesicle cycle, carbohydrate digestion and absorption, proteasome, and asthma (Figure 7).\nFigure 7\nGSEA of hub genes: (A) GSEA results for CD99P1; (B) GSEA results for DLG3-AS1; (C) GSEA results for LINC01101; (D) GSEA results for LOC100133130; (E) GSEA results for MELK; (F) GSEA results for PLEAK2; (G) GSEA results for PYCRL; (H) GSEA results for RPL3L.\nDiscussion\nParkinson's disease is the second most prevalent neurodegenerative disease and has significantly increased over the past 20 years (Cabreira and Massano, 2019). It is caused by a combination of environmental and genetic factors related to age, sex, etc (Cabreira and Massano, 2019; Cerri et al., 2019). Due to the lack of early diagnostic techniques, PD is usually not detected until later stages of complete neuronal degeneration, which often leads to delayed treatment of patients and affects the prognosis (Lotankar et al., 2017). Therefore, to improve prognosis, biomarkers are needed to detect the onset of the disease in the early stages.\nIn the present study, we first obtained 117 DEGs from the substantia nigra of PD, and WGCNA screened a total of 13,564 key genes for two key modules. Ninety-one target genes were screened out by intersecting DEGs with key genes. Interestingly, these 91 target genes were mostly related to the regulation of synapse structure or activity, dopamine biosynthetic process, locomotory behavior, and response to nicotine metabolism-related BPs (Figures 3A,B). Thus, we speculated that these genes might play key roles in PD by regulating the synapse structure or activity, dopamine biosynthetic process, locomotory behavior, and response to nicotine.",
+          "cos_sim_score": 0.04627107083797455,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9683342",
+          "title": "Identification of hub genes of Parkinson's disease through bioinformatics analysis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9683342/",
+          "text": "In the present study, we first obtained 117 DEGs from the substantia nigra of PD, and WGCNA screened a total of 13,564 key genes for two key modules. Ninety-one target genes were screened out by intersecting DEGs with key genes. Interestingly, these 91 target genes were mostly related to the regulation of synapse structure or activity, dopamine biosynthetic process, locomotory behavior, and response to nicotine metabolism-related BPs (Figures 3A,B). Thus, we speculated that these genes might play key roles in PD by regulating the synapse structure or activity, dopamine biosynthetic process, locomotory behavior, and response to nicotine.\nOver the past few decades, more and more studies have shown that the biosynthesis of dopamine and the regulation of synaptic activity and structure play an important role in the pathogenesis of PD (Latif et al., 2021; Nachman and Verstreken, 2022). In addition, increasing evidence has revealed that nicotine has protective effects on PD (Jin Jung et al., 2021; Wang et al., 2022). Furthermore, motor symptoms are one of the most important clinical manifestations of PD (Opara et al., 2017). However, we found that 91 target genes were enriched only in the calcium signaling pathway (Figures 3E,F). Calcium signaling pathways play an important role in PD (Cal\u00ec et al., 2014; Bohush et al., 2021). Therefore, our study may contribute to understanding the molecular mechanisms underlying PD.\nFinally, we identified RPL3L, PLEK2, PYCRL, CD99P1, LOC100133130, MELK, LINC01101, and DLG3-AS1 as hub genes using LASSO logistic regression, SVM-RFE, and RF algorithms. RPL3L (ribosomal protein L3-like) is one of the four non-canonical riboprotein genes, and it encodes the 60S ribosomal protein L3-like protein that is highly expressed only in cardiac and skeletal muscles (Ganapathi et al., 2020). Recent research indicates that RPl3l overexpression impairs the growth and myogenic fusion of myotubes, and RPL3L can be used as a potential genetic marker to control neurodegeneration (Chaillou, 2019). Thus, RPL3L may play a critical role in PD by regulating function of skeletal muscle. CD99P1 (CD99 molecule pseudogene 1) is a long noncoding RNA (lncRNA) and has been revealed to be related to myofibroblast differentiation (Huang et al., 2015; Yildirim et al., 2021). Hence, CD99P1 may play a key role in PD by affecting myofibroblast differentiation. PYCRL (pyrroline-5-carboxylate reductase-like) is a pyrroline-5-carboxylate reductase linked to the conversion of ornithine to proline (De Ingeniis et al., 2012). Therefore, PYCRL may play a decisive role in PD by affecting proline biosynthesis. MELK (maternal embryonic leucine zipper kinase) is an AMP-activated protein kinase (AMPK)-related kinase (Seong and Ha, 2019). More and more studies have found that MELK is involved in the occurrence of cancer and cell metabolism by regulating the cell division cycle (Wang et al., 2018; Seong and Ha, 2019). Therefore, MELK may play a key role in PD by affecting the cell division cycle. PLEK2 (Pleckstrin-2) is a crucial mediator of cytoskeletal reorganization (Wang et al., 2021). Studies show that PLEK2 may regulate actin organization and cell spreading (Hu et al., 1999; Hamaguchi et al., 2007). Therefore, PLEK2 may play a key role in PD by regulating actin organization and cell spreading. LINC01101 is a long noncoding RNA (lncRNA) associated with progression and high-risk HPV infection (Iancu et al., 2017). But there is still no description of its pathogenesis. Notably, no studies have reported the role of RPL3L, PLEK2, PYCRL, CD99P1, LOC100133130, MELK, LINC01101, and DLG3-AS1 in PD. LOC100133130 and DLG3-AS1, as newly discovered genes, have no relevant report. Thus, further investigations are necessary.",
+          "cos_sim_score": 0.0076690372079610825,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9683342",
+          "title": "Identification of hub genes of Parkinson's disease through bioinformatics analysis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9683342/",
+          "text": "Figure 2\nWeighted gene co-expression network analysis (WGCNA). (A) Soft threshold analysis suggested gene associations were maximally consistent with the scale-free distribution when \u03b2 = 26. (B) The cluster dendrogram of co-expression genes in PD. (C) Module-trait relationships in PD. Each cell contains the corresponding correlation and P-value. (D) A Venn diagram was made to obtain the intersection of the target genes screened by the two methods.\nGene Ontology, Disease Ontology, and Kyoto Encyclopedia of Genes and Genomes enrichment analyses\nThe GO analyses associated the most enriched biological process (BP) terms with dopamine biosynthetic process, synapse organization regulation, and synapse structure or activity. The most enriched terms for cellular components (CC) were mainly associated with terminal bouton. The most enriched molecular function (MF) terms were associated with G protein-coupled peptide receptor activity and peptide receptor activity (Figures 3A,B). In the DO analysis, the target genes were enriched in neurodegenerative diseases, such as PD, and tumors of the nervous system (Figures 3C,D). In the KEGG analysis, the target genes were enriched in cocaine addiction and the calcium signaling pathway (Figures 3E,F).\nFigure 3\nGO, DO, and KEGG analyses of target genes. (A,B) GO analyses of target genes. (C,D) DO analysis of target genes. (E,F) KEGG analysis of target genes. BP, biological process; CC, cellular component; MF, molecular function.\nIdentification of hub genes of PD based on machine learning algorithms\nMachine learning algorithms were selected and executed to further identify the hub genes of PD from 91 target genes. First, while constructing the LASSO model based on PD and normal samples, \u03bb analysis suggested that the model could accurately predict PD with \u03bb = 11 (Figure 4A). Thus, RPL3L, PLEK2, PYCRL, ABCA11P, DACH2, CD99P1, SNORD114-3, LOC100133130, MELK, LINC01101, and DLG3-AS1 were identified to build the LASSO module. We acquired the LASSO coefficient spectrum of the potential genes according to \u03bb = 11(Figure 4A). However, SVM-RFE analysis revealed that the SVM model based on one characteristic gene showed an optimum error rate (0.00, Figure 4B). The first 20 genes were identified as potential genes. At the same time, the RF algorithm identified the top 10 genes from 52 potential genes (Figure 5C). Finally, eight common potential genes, namely, RPL3L, PLEK2, PYCRL, CD99P1, LOC100133130, MELK, LINC01101, and DLG3-AS1, were regarded as the hub genes of PD patients using the above three algorithms (Figure 4D).\nFigure 4\nIdentification of hub genes for PD based on machine learning algorithms included (A) the Log (Lambda) value of the three genes in the LASSO model and the most proper log (Lambda) value in the LASSO model, (B) the optimum error rate of the SVM model based on one characteristic gene, (C) the RF module based on the top 20 genes, and (D) the Venn diagram showing the overlapping genes in LASSO, SVM, and RF modules.\nFigure 5\n(A) Nomogram predicting PD probability. (B,C) ROC curve for the GSE7621 dataset and GSE20141 dataset.\nEstablishment of diagnostic nomogram for PD\nA diagnostic nomogram was successfully constructed based on the eight genes for predicting the incidence of PD (Figure 5A). The area under the curve (AUC) of the GSE7621 dataset was 1.000 (Figure 5B), and that of the GSE20141 dataset was 0.900 (Figure 5C).\nEvaluation of the expression levels and diagnostic implications for the hub genes",
+          "cos_sim_score": -0.024921931326389313,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

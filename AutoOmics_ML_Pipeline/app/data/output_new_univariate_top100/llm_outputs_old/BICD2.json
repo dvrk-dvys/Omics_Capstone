@@ -1,0 +1,152 @@
+{
+  "probe_id": "11757525_s_at",
+  "gene_symbol": "BICD2",
+  "score": 1.0,
+  "SD_TestAUC": 0.0496903994999953,
+  "abs_fold_change": 0.8562,
+  "probe_count": 1,
+  "probe_ids": "11757525_s_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.8562,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:38:24",
+  "interpretation": "BICD2 encodes a protein that acts as an adapter linking the dynein motor complex to various cellular cargos, enhancing dynein's ability to transport these cargos along microtubules. This function is crucial for cellular processes such as mitosis and intracellular transport, which may be disrupted in conditions like Steroid-Induced Osteonecrosis of the Femoral Head (SONFH). While there is no direct evidence linking BICD2 to SONFH, its role in cellular transport and positioning suggests it could be involved in the pathological processes associated with steroid treatment and bone health. The evidence is primarily inferred from its biological functions and associations with other diseases, leading to a low confidence in its direct relevance to SONFH. Therefore, while BICD2 may have potential as a biomarker, its clinical utility in early detection of SONFH remains weak and speculative.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "BICD2 may play a role in the cellular processes affected by steroid treatment, but its direct connection to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) is not established.",
+  "citations": [
+    "BICD2 (Q8TD16). https://www.uniprot.org/uniprotkb/Q8TD16",
+    "BICD2 (Q8TD16-2). https://www.uniprot.org/uniprotkb/Q8TD16-2",
+    "BICD2 \u2014 BICD2. https://platform.opentargets.org/target/ENSG00000185963",
+    "BICD2 \u2194 autosomal dominant childhood-onset proximal spinal muscular atrophy with contractures. https://platform.opentargets.org/target/ENSG00000185963/associations",
+    "BICD2 \u2194 spinal muscular atrophy, lower extremity-predominant, 2B, prenatal onset, autosomal dominant. https://platform.opentargets.org/target/ENSG00000185963/associations",
+    "BICD2 \u2194 autosomal dominant childhood-onset proximal spinal muscular atrophy. https://platform.opentargets.org/target/ENSG00000185963/associations",
+    "BICD2 \u2194 genetic disorder. https://platform.opentargets.org/target/ENSG00000185963/associations",
+    "BICD2. https://en.wikipedia.org/wiki/BICD2",
+    "Dynein. https://en.wikipedia.org/wiki/Dynein",
+    "Sex-determining region Y protein. https://en.wikipedia.org/wiki/Sex-determining_region_Y_protein",
+    "Receptor (biochemistry). https://en.wikipedia.org/wiki/Receptor_(biochemistry)"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5276,
+    "completion_tokens": 257,
+    "total_tokens": 5533,
+    "estimated_cost_usd": 0.000946
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q8TD16",
+          "title": "BICD2 (Q8TD16)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8TD16",
+          "text": "Protein: Protein bicaudal D homolog 2\nFunction: Acts as an adapter protein linking the dynein motor complex to various cargos and converts dynein from a non-processive to a highly processive motor in the presence of dynactin. Facilitates and stabilizes the interaction between dynein and dynactin and activates dynein processivity (the ability to move along a microtubule for a long distance without falling off the track) (PubMed:25814576). Facilitates the binding of RAB6A to the Golgi by stabilizing its GTP-bound form. Regulates coat complex coatomer protein I (COPI)-independent Golgi-endoplasmic reticulum transport via its interaction with RAB6A and recruitment of the dynein-dynactin motor complex (PubMed:25962623). Contributes to nuclear and centrosomal positioning prior to mitotic entry through regulation of both dynein and kinesin-1. During G2 phase of the cell cycle, associates with RANBP2 at the nuclear pores and recruits dynein and dynactin to the nuclear envelope to ensure proper positioning of the nucleus relative to centrosomes prior to the onset of mitosis (By similarity)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q8TD16-2",
+          "title": "BICD2 (Q8TD16-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8TD16-2",
+          "text": "Protein: Isoform 2 of Protein bicaudal D homolog 2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000185963::function",
+          "title": "BICD2 \u2014 BICD2",
+          "url": "https://platform.opentargets.org/target/ENSG00000185963",
+          "text": "Function: Acts as an adapter protein linking the dynein motor complex to various cargos and converts dynein from a non-processive to a highly processive motor in the presence of dynactin. Facilitates and stabilizes the interaction between dynein and dynactin and activates dynein processivity (the ability to move along a microtubule for a long distance without falling off the track) (PubMed:25814576). Facilitates the binding of RAB6A to the Golgi by stabilizing its GTP-bound form. Regulates coat complex coatomer protein I (COPI)-independent Golgi- endoplasmic reticulum transport via its interaction with RAB6A and recruitment of the dynein-dynactin motor complex (PubMed:25962623). Contributes to nuclear and centrosomal positioning prior to mitotic entry through regulation of both dynein and kinesin-1. During G2 phase of the cell cycle, associates with RANBP2 at the nuclear pores and recruits dynein and dynactin to the nuclear envelope to ensure proper positioning of the nucleus relative to centrosomes prior to the onset of mitosis (By similarity).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000185963::MONDO_0014121",
+          "title": "BICD2 \u2194 autosomal dominant childhood-onset proximal spinal muscular atrophy with contractures",
+          "url": "https://platform.opentargets.org/target/ENSG00000185963/associations",
+          "text": "Disease: autosomal dominant childhood-onset proximal spinal muscular atrophy with contractures\nAssociation score: 0.807",
+          "cos_sim_score": 0.8072433385790271,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000185963::EFO_0010264",
+          "title": "BICD2 \u2194 spinal muscular atrophy, lower extremity-predominant, 2B, prenatal onset, autosomal dominant",
+          "url": "https://platform.opentargets.org/target/ENSG00000185963/associations",
+          "text": "Disease: spinal muscular atrophy, lower extremity-predominant, 2B, prenatal onset, autosomal dominant\nDescription: An autosomal dominant neuromuscular disorder characterized by decreased fetal movements, fractures in utero, severe congenital joint contractures, arthrogryposis multiplex congenita, severe hypotonia, muscle atrophy, and respiratory insufficiency and failure due to muscle weakness. Some patients may have dysmorphic facial features and/or abnormalities on brain imaging. Death in early childhood may occur.\nAssociation score: 0.738",
+          "cos_sim_score": 0.7375931478319577,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000185963::MONDO_0018190",
+          "title": "BICD2 \u2194 autosomal dominant childhood-onset proximal spinal muscular atrophy",
+          "url": "https://platform.opentargets.org/target/ENSG00000185963/associations",
+          "text": "Disease: autosomal dominant childhood-onset proximal spinal muscular atrophy\nAssociation score: 0.558",
+          "cos_sim_score": 0.5580428912985096,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000185963::EFO_0000508",
+          "title": "BICD2 \u2194 genetic disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000185963/associations",
+          "text": "Disease: genetic disorder\nDescription: Genetic diseases are diseases in which inherited genes predispose to increased risk. The genetic disorders associated with cancer often result from an alteration or mutation in a single gene. The diseases range from rare dominant cancer family syndrome to familial tendencies in which low-penetrance genes may interact with other genes or environmental factors to induce cancer. Research may involve clinical, epidemiologic, and laboratory studies of persons, families, and populations at high risk of these disorders.\nAssociation score: 0.478",
+          "cos_sim_score": 0.4778499334813605,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::BICD2",
+          "title": "BICD2",
+          "url": "https://en.wikipedia.org/wiki/BICD2",
+          "text": "Bicaudal D cargo adaptor 2 is a protein that in humans is encoded by the BICD2 gene.\nThis gene is one of two human homologs of Drosophila bicaudal-D and a member of the Bicoid family. It has been implicated in dynein-mediated, minus end-directed motility along microtubules. It has also been reported to be a phosphorylation target of NIMA related kinase 8. Two alternative splice variants have been described.\nMutations in BICD2 are associated with spinal muscular atrophy with lower extremity predominance type 2A and type 2B.\n\nReferences\nFurther reading\nExternal links\nHuman BICD2 genome location and BICD2 gene details page  in the UCSC Genome Browser.",
+          "cos_sim_score": 0.40034738183021545,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Dynein",
+          "title": "Dynein",
+          "url": "https://en.wikipedia.org/wiki/Dynein",
+          "text": "Yeast dynein can walk along microtubules without detaching, however in metazoans, cytoplasmic dynein must be activated by the binding of dynactin, another multisubunit protein that is essential for mitosis, and a cargo adaptor. The tri-complex, which includes dynein, dynactin and a cargo adaptor, is ultra-processive and can walk long distances without detaching in order to reach the cargo's intracellular destination. Cargo adaptors identified thus far include BicD2, Hook3, FIP3 and Spindly. The light intermediate chain, which is a member of the Ras superfamily, mediates the attachment of several cargo adaptors to the dynein motor. The other tail subunits may also help facilitate this interaction as evidenced in a low resolution structure of dynein-dynactin-BicD2.\nOne major form of motor regulation within cells for dynein is dynactin. It may be required for almost all cytoplasmic dynein functions. Currently, it is the best studied dynein partner. Dynactin is a protein that aids in intracellular transport throughout the cell by linking to cytoplasmic dynein. Dynactin can function as a scaffold for other proteins to bind to. It also functions as a recruiting factor that localizes dynein to where it should be. There is also some evidence suggesting that it may regulate kinesin-2. The dynactin complex is composed of more than 20 subunits, of which p150(Glued) is the largest. There is no definitive evidence that dynactin by itself affects the velocity of the motor. It does, however, affect the processivity of the motor. The binding regulation is likely allosteric: experiments have shown that the enhancements provided in the processivity of the dynein motor do not depend on the p150 subunit binding domain to the microtubules.",
+          "cos_sim_score": 0.15707498788833618,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Sex-determining region Y protein",
+          "title": "Sex-determining region Y protein",
+          "url": "https://en.wikipedia.org/wiki/Sex-determining_region_Y_protein",
+          "text": "See also\nSex-determination system\nSexual differentiation in humans\n\nReferences\nFurther reading\nExternal links\n\nGenes,+sry at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nSex-Determining+Region+Y+Protein at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nOMIM entries on 46,XX Testicular Disorder of Sex Development\nPDBe-KB provides an overview of all the structure information available in the PDB for Human Sex-determining region Y protein",
+          "cos_sim_score": 0.14275825023651123,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Receptor (biochemistry)",
+          "title": "Receptor (biochemistry)",
+          "url": "https://en.wikipedia.org/wiki/Receptor_(biochemistry)",
+          "text": "Structure\nThe structures of receptors are very diverse and include the following major categories, among others: \n\nType 1: Ligand-gated ion channels (ionotropic receptors) \u2013 These receptors are typically the targets of fast neurotransmitters such as acetylcholine (nicotinic) and GABA; activation of these receptors results in changes in ion movement across a membrane. They have a heteromeric structure in that each subunit consists of the extracellular ligand-binding domain and a transmembrane domain which includes four transmembrane alpha helices. The ligand-binding cavities are located at the interface between the subunits.\nType 2: G protein-coupled receptors (metabotropic receptors) \u2013 This is the largest family of receptors and includes the receptors for several hormones and slow transmitters e.g. dopamine, metabotropic glutamate. They are composed of seven transmembrane alpha helices. The loops connecting the alpha helices form extracellular and intracellular domains. The binding-site for larger peptide ligands is usually located in the extracellular domain whereas the binding site for smaller non-peptide ligands is often located between the seven alpha helices and one extracellular loop. The aforementioned receptors are coupled to different intracellular effector systems via G proteins. G proteins are heterotrimers made up of 3 subunits: \u03b1 (alpha), \u03b2 (beta), and \u03b3 (gamma). In the inactive state, the three subunits associate together and the \u03b1-subunit binds GDP. G protein activation causes a conformational change, which leads to the exchange of GDP for GTP. GTP-binding to the \u03b1-subunit causes dissociation of the \u03b2- and \u03b3-subunits. Furthermore, the three subunits, \u03b1, \u03b2, and \u03b3 have additional four main classes based on their primary sequence. These include Gs, Gi, Gq and G12.\nType 3: Kinase-linked and related receptors (see \"Receptor tyrosine kinase\" and \"Enzyme-linked receptor\") \u2013 They are composed of an extracellular domain containing the ligand binding site and an intracellular domain, often with enzymatic-function, linked by a single transmembrane alpha helix. The insulin receptor is an example.\nType 4: Nuclear receptors \u2013 While they are called nuclear receptors, they are actually located in the cytoplasm and migrate to the nucleus after binding with their ligands. They are composed of a C-terminal ligand-binding region, a core DNA-binding domain (DBD) and an N-terminal domain that contains the AF1(activation function 1) region. The core region has two zinc fingers that are responsible for recognizing the DNA sequences specific to this receptor. The N terminus interacts with other cellular transcription factors in a ligand-independent manner; and, depending on these interactions, it can modify the binding/activity of the receptor. Steroid and thyroid-hormone receptors are examples of such receptors.\nMembrane receptors may be isolated from cell membranes by complex extraction procedures using solvents, detergents, and/or affinity purification.\nThe structures and actions of receptors may be studied by using biophysical methods such as X-ray crystallography, NMR, circular dichroism, and dual polarisation interferometry. Computer simulations of the dynamic behavior of receptors have been used to gain understanding of their mechanisms of action.\n\nBinding and activation\nLigand binding is an equilibrium process. Ligands bind to receptors and dissociate from them according to the law of mass action in the following equation, for a ligand L and receptor, R. The brackets around chemical species denote their concentrations.",
+          "cos_sim_score": 0.11859891563653946,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Dynein",
+          "title": "Dynein",
+          "url": "https://en.wikipedia.org/wiki/Dynein",
+          "text": "Cytoplasmic dynein\nCytoplasmic dynein, which has a molecular mass of about 1.5 megadaltons (MDa), is a dimer of dimers, containing approximately twelve polypeptide subunits: two identical \"heavy chains\", 520 kDa in mass, which contain the ATPase activity and are thus responsible for generating movement along the microtubule; two 74 kDa intermediate chains which are believed to anchor the dynein to its cargo; two 53\u201359 kDa light intermediate chains; and several light chains.\nThe force-generating ATPase activity of each dynein heavy chain is located in its large doughnut-shaped \"head\", which is related to other AAA proteins, while two projections from the head connect it to other cytoplasmic structures. One projection, the coiled-coil stalk, binds to and \"walks\" along the surface of the microtubule via a repeated cycle of detachment and reattachment.  The other projection, the extended tail, binds to the light intermediate, intermediate and light chain subunits which attach dynein to its cargo. The alternating activity of the paired heavy chains in the complete cytoplasmic dynein motor enables a single dynein molecule to transport its cargo by \"walking\" a considerable distance along a microtubule without becoming completely detached.\nIn the apo-state of dynein, the motor is nucleotide free, the AAA domain ring exists in an open conformation, and the MTBD exists in a high affinity state. Much about the AAA domains remains unknown, but AAA1 is well established as the primary site of ATP hydrolysis in dynein. When ATP binds to AAA1, it initiates a conformational change of the AAA domain ring into the \"closed\" configuration, movement of the buttress, and a conformational change in the linker. The linker becomes bent and shifts from AAA5 to AAA2 while remaining bound to AAA1. One attached alpha-helix from the stalk is pulled by the buttress, sliding the helix half a heptad repeat relative to its coilled-coil partner, and kinking the stalk. As a result, the MTBD of dynein enters a low-affinity state, allowing the motor to move to new binding sites. Following hydrolysis of ATP, the stalk rotates, moving dynein further along the MT. Upon the release of the phosphate, the MTBD returns to a high affinity state and rebinds the MT, triggering the power stroke. The linker returns to a straight conformation and swings back to AAA5 from AAA2 and creates a lever-action, producing the greatest displacement of dynein achieved by the power stroke The cycle concludes with the release of ADP, which returns the AAA domain ring back to the \"open\" configuration.\nYeast dynein can walk along microtubules without detaching, however in metazoans, cytoplasmic dynein must be activated by the binding of dynactin, another multisubunit protein that is essential for mitosis, and a cargo adaptor. The tri-complex, which includes dynein, dynactin and a cargo adaptor, is ultra-processive and can walk long distances without detaching in order to reach the cargo's intracellular destination. Cargo adaptors identified thus far include BicD2, Hook3, FIP3 and Spindly. The light intermediate chain, which is a member of the Ras superfamily, mediates the attachment of several cargo adaptors to the dynein motor. The other tail subunits may also help facilitate this interaction as evidenced in a low resolution structure of dynein-dynactin-BicD2.",
+          "cos_sim_score": 0.11282437294721603,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

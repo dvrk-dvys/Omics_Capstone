@@ -1,0 +1,145 @@
+{
+  "probe_id": "11757904_s_at",
+  "gene_symbol": "MAST3",
+  "score": 1.0,
+  "SD_TestAUC": 0.0662538659999937,
+  "abs_fold_change": 0.8118,
+  "probe_count": 2,
+  "probe_ids": "11757904_s_at | 11725813_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.9128,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:33:26",
+  "interpretation": "MAST3 encodes a microtubule-associated serine/threonine kinase that plays a role in various cellular processes, including cell signaling and cytoskeletal organization. While there is no direct evidence linking MAST3 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in cellular signaling pathways could suggest a potential role in the pathophysiology of bone health and osteonecrosis. The retrieved evidence primarily indicates associations with developmental disorders and genetic conditions, which do not directly correlate with SONFH. Therefore, the connection to SONFH remains speculative and relies on general biological reasoning rather than specific evidence. As such, MAST3's potential as a biomarker for early detection of SONFH is weak, given the lack of direct evidence linking it to the disease context.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "MAST3 may be involved in cellular processes relevant to bone health, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "MAST3 (O60307). https://www.uniprot.org/uniprotkb/O60307",
+    "MAST3 \u2194 developmental and epileptic encephalopathy 108. https://platform.opentargets.org/target/ENSG00000099308/associations",
+    "MAST3 \u2194 genetic disorder. https://platform.opentargets.org/target/ENSG00000099308/associations",
+    "MAST3 \u2194 Rare pervasive developmental disorder. https://platform.opentargets.org/target/ENSG00000099308/associations",
+    "MAST3 \u2194 pervasive developmental disorder. https://platform.opentargets.org/target/ENSG00000099308/associations",
+    "MAST3 \u2194 intelligence. https://platform.opentargets.org/target/ENSG00000099308/associations",
+    "Microtubule associated serine/threonine kinase 3. https://en.wikipedia.org/wiki/Microtubule_associated_serine/threonine_kinase_3",
+    "Miami-Dade County Public Schools. https://en.wikipedia.org/wiki/Miami-Dade_County_Public_Schools",
+    "Devil facial tumour disease. https://en.wikipedia.org/wiki/Devil_facial_tumour_disease",
+    "European Multidisciplinary Seafloor and water column Observatory. https://en.wikipedia.org/wiki/European_Multidisciplinary_Seafloor_and_water_column_Observatory"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4679,
+    "completion_tokens": 237,
+    "total_tokens": 4916,
+    "estimated_cost_usd": 0.000844
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O60307",
+          "title": "MAST3 (O60307)",
+          "url": "https://www.uniprot.org/uniprotkb/O60307",
+          "text": "Protein: Microtubule-associated serine/threonine-protein kinase 3",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000099308::MONDO_0859314",
+          "title": "MAST3 \u2194 developmental and epileptic encephalopathy 108",
+          "url": "https://platform.opentargets.org/target/ENSG00000099308/associations",
+          "text": "Disease: developmental and epileptic encephalopathy 108\nAssociation score: 0.573",
+          "cos_sim_score": 0.5734044074680792,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000099308::EFO_0000508",
+          "title": "MAST3 \u2194 genetic disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000099308/associations",
+          "text": "Disease: genetic disorder\nDescription: Genetic diseases are diseases in which inherited genes predispose to increased risk. The genetic disorders associated with cancer often result from an alteration or mutation in a single gene. The diseases range from rare dominant cancer family syndrome to familial tendencies in which low-penetrance genes may interact with other genes or environmental factors to induce cancer. Research may involve clinical, epidemiologic, and laboratory studies of persons, families, and populations at high risk of these disorders.\nAssociation score: 0.378",
+          "cos_sim_score": 0.37829297104577586,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000099308::Orphanet_168778",
+          "title": "MAST3 \u2194 Rare pervasive developmental disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000099308/associations",
+          "text": "Disease: Rare pervasive developmental disorder\nAssociation score: 0.340",
+          "cos_sim_score": 0.3400134663099256,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000099308::MONDO_0000594",
+          "title": "MAST3 \u2194 pervasive developmental disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000099308/associations",
+          "text": "Disease: pervasive developmental disorder\nDescription: A category of developmental disorders characterized by impaired communication and socialization skills. The impairments are incongruent with the individual's developmental level or mental age. These disorders can be associated with general medical or genetic conditions.\nAssociation score: 0.340",
+          "cos_sim_score": 0.3400134663099256,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000099308::EFO_0004337",
+          "title": "MAST3 \u2194 intelligence",
+          "url": "https://platform.opentargets.org/target/ENSG00000099308/associations",
+          "text": "Disease: intelligence\nDescription: The ability to learn and to deal with new situations and to deal effectively with tasks involving abstractions.\nAssociation score: 0.250",
+          "cos_sim_score": 0.24959575870311443,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Microtubule associated serine/threonine kinase 3",
+          "title": "Microtubule associated serine/threonine kinase 3",
+          "url": "https://en.wikipedia.org/wiki/Microtubule_associated_serine/threonine_kinase_3",
+          "text": "Microtubule associated serine/threonine kinase 3 is a protein that in humans is encoded by the MAST3 gene.\n\nReferences\nExternal links\nPDBe-KB provides an overview of all the structure information available in the PDB for Human Microtubule-associated serine/threonine-protein kinase 3\n\n\n== Further reading ==",
+          "cos_sim_score": 0.36503398418426514,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Miami-Dade County Public Schools",
+          "title": "Miami-Dade County Public Schools",
+          "url": "https://en.wikipedia.org/wiki/Miami-Dade_County_Public_Schools",
+          "text": "Schools\nAs of 2006 most newly named schools received names after people working for or involved with M-DCPS, and district rules allow schools to be named after people who are still alive. Relatively few schools were named after highly famous people.\n\nList\nSchool rankings\nU.S. News & World Report\nThe following MDCPS high schools were ranked in U.S. News & World Report's annual \"America's Best High Schools\" rankings:\n\nNewsweek\nIn 2011, Newsweek's rankings of the 500 Best High Schools in America, eight MDCPS schools were ranked:\n\nBroadcasting\nMDCPS owns and operates WLRN-TV (Channel 17), a PBS member television station, and WLRN-FM (91.3 FM), an NPR member radio station.\n\nNotable employees\nTombi Bell (1979\u2013), played for the Florida Gators, 1997\u20132001; drafted by the Minnesota Lynx in the 2001 WNBA draft physical education teacher at Jos\u00e9 Mart\u00ed MAST 6-12 Academy as of 2013\nJay W. Jensen (1931\u20132007), taught drama at Miami Beach Senior High School for 32 years. His students included movie stars Mickey Rourke and Andy Garcia. actor who appeared in 27 films, 1958\u20132006\nLizbet Martinez (1982-), as of 2013, teaches music and language arts at the M.A. Milam K-8 Center became famous after playing \"The Star-Spangled Banner\" on her violin when the U.S. Coast Guard picked her and her family out of a raft in 1994\nBertha Vazquez (1990-): teaches science at G. W. Carver Middle School and directs the Teacher Institute for Evolutionary Science\n\nSee also\nEducation in Florida\nBroward County Public Schools\n\nReferences\nExternal links\n\nMiami-Dade County Public Schools",
+          "cos_sim_score": 0.10071692615747452,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Devil facial tumour disease",
+          "title": "Devil facial tumour disease",
+          "url": "https://en.wikipedia.org/wiki/Devil_facial_tumour_disease",
+          "text": "Devil facial tumour disease (DFTD) is an aggressive non-viral clonally transmissible cancer which affects Tasmanian devils, a marsupial native to the Australian island of Tasmania. The cancer manifests itself as lumps of soft and ulcerating tissue around the mouth, which may invade surrounding organs and metastasise to other parts of the body. Severe genetic abnormalities exist in cancer cells\u2014for example, DFT2 cells are tetraploid, containing twice as much genetic material as normal cells. DFTD is most often spread by bites, when teeth come into contact with cancer cells; less important pathways of transmission are ingesting of infected carcasses and sharing of food. Adult Tasmanian devils who are otherwise the fittest are most susceptible to the disease.\nDFTD is estimated to have first developed in 1986. There are two currently existing strains, both appearing to be derived from Schwann cells. DFT1 is the main and older strain that infects most of the devil population. It was first described in 1996 in an animal from Mount William National Park in northeastern Tasmania. DFT2 appeared around 2011 and was first detected in 2014; all cases are limited to the area of southern Tasmania near the D'Entrecasteaux Channel. There still remain disease-free pockets in the relatively isolated south-west of the island.\nThe disease poses a direct threat to the survival of Tasmanian devils as a species as the disease is almost universally fatal. In the two decades since the disease was first spotted, population of Devils (Sarcophilus harrisii) declined by 80% (locally exceeding 90%), as the condition spread through virtually all of Tasmania. The Tasmanian Government, Australian universities and zoos are engaged in efforts to curb the disease. Culling infected individuals, the policy used by state officials until 2010, brought little success. Thus the main prevention method became taking hundreds of devils into captivity and then releasing some of them into the wild. There is no cure for the cancer so far. Vaccination offers some promise in the fight against the pathogen, but researchers have not found a suitable candidate yet. A 2017 vaccine trial found that only 1 in 5 devils could resist DFTD; a DFT1 oral vaccine candidate is being tested in the captive devil population.\n\nClinical signs\nThere is often more than one primary tumour. Visible signs of DFTD begin with lumps of soft tissue around the mouth, which ulcerate. Tumours are locally aggressive, destroying the underlying bone of the jaw which interferes with feeding. Tumours may also cover the eyes. Devils usually die within six months from organ failure, secondary infection, or metabolic starvation.\nDFTD is rare in juveniles. It affects males and females equally.\n\nTransmission\nThe most plausible route of transmission is through biting, particularly when canine teeth come into direct contact with the diseased cells. Other modes of transmission may include the ingestion of infected carcasses and the sharing of food, both of which involve an allogeneic transfer of cells between unrelated individuals. The animals most likely to become infected are the fittest devil individuals.\n\nPathology\nDFTD tumours are large soft tissue masses which become centrally ulcerated. The tumours are composed of lobules of nodules of round to spindle-shaped cells, often within a pseudocapsule. Tumours metastasise to regional lymph nodes involvement and systemically to the lungs, spleen and heart.",
+          "cos_sim_score": 0.0920722633600235,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Devil facial tumour disease",
+          "title": "Devil facial tumour disease",
+          "url": "https://en.wikipedia.org/wiki/Devil_facial_tumour_disease",
+          "text": "Society and culture\nIn 2008, a devil\u2014given the name Cedric by those who treated and worked with him\u2014was thought to have a natural immunity to the disease, but developed two facial tumours in late 2008. The tumours were removed, and officials thought Cedric was recovering well, but in September 2010, the cancer was discovered to have spread to the lungs, leading to his euthanasia.\n\nResearch directions\nVaccination with irradiated cancer cells has not proven successful.\nIn 2013, a study using mice as a model for Tasmanian devils suggested that a DFTD vaccine could be beneficial. In 2015, a study which mixed dead DFTD cells with an inflammatory substance stimulated an immune response in five out of six devils injected with the mixture, engendering for a vaccine against DFTD. Field testing of the potential vaccines has been undertaken as a collaborative project between the Menzies Institute for Medical Research and the Save the Tasmanian Devil Program. Strong immune responses were induced by the vaccine, but the vaccine did not protect all devils from developing DFTD. An oral bait vaccine for DFTD is in the early stages of development as of 2020.\nResearch by Professor Greg Woods from the University of Tasmania's Menzies Institute for Medical Research has shown encouraging evidence for the potential development of a vaccine using dead devil facial tumour disease cells to trigger an immune response in healthy devils. Field testing of the vaccine is being undertaken as a collaborative project between the Menzies Institute for Medical Research and the Save the Tasmanian Devil Program under the Wild Devil Recovery program, and aims to test the immunisation protocol as a tool in ensuring the devil's long-term survival in the wild.\nIn March 2017, scientists at the University of Tasmania presented an apparent first report of having successfully treated Tasmanian devils with the disease. Live cancer cells that were treated with IFN-\u03b3 to restore MHC-I expression, were injected into the infected devils to stimulate their immune system to recognise and fight the disease. In 2019, researchers from University of Sydney reported constricted diversity of the T cell repertoire in devils with DFTD, suggesting that DFTD may impact the host immune system directly. Several studies of immune checkpoint molecules, such as PD-1 and PD-L1, have been undertaken in devils and suggest that potential immune evasion pathways used by human cancers could also be active in DFTD.\nThere is some evidence suggesting that the DFTD tumour is evolving to be less fatal to the Tasmanian devils.\n2023 study investigated whether Tasmanian devil cathelicidins, a group of seven antimicrobial peptides, exhibit cytotoxic activity against Devil Facial Tumour Disease type 1 (DFTD1) cells. The researchers tested all seven peptides in vitro and evaluated changes in gene expression using RNA sequencing to identify potential mechanisms of action. Several cathelicidins showed significant anticancer effects on DFTD1 cells, including alterations in pathways related to cell cycle regulation and tumour survival. The findings suggest that some Tasmanian devil cathelicidins may serve as candidates for further research into the development of novel therapeutic approaches for DFTD.\n\nReferences\nBibliography\nExternal links\n\nThe Aussie Devil Ark Conservation Project",
+          "cos_sim_score": 0.08751967549324036,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::European Multidisciplinary Seafloor and water column Observatory",
+          "title": "European Multidisciplinary Seafloor and water column Observatory",
+          "url": "https://en.wikipedia.org/wiki/European_Multidisciplinary_Seafloor_and_water_column_Observatory",
+          "text": "EMSO ERIC\nThe Preparatory Phase of EMSO was funded by the European Seventh Framework Programme (FP7), involving 12 countries of the European area (Italy, France, Germany, Ireland, Spain, Sweden, Greece, UK, Norway, Portugal, Turkey, the Netherlands), and Romania (through GeoEcoMar), that has been involved as external interested country from 2010. The Preparatory Phase prepared the foundation for the adoption of the ERIC (European Research Infrastructure Consortium), that is the legal entity in charge of coordinating and facilitating access to these nodes of open ocean fixed point observatory distributed infrastructure.\nEMSO ERIC is the central point of contact for observatory initiatives in other parts of the world to set up and promote cooperation in this field. EMSO ERIC integrates research, training, and information dissemination activities for ocean observatory nodes in Europe and enables scientists and other stakeholders to make efficient use of the EMSO distributed infrastructure around Europe.\n\nEMSO Partners\nHCMR \nINGV \nUIT \nIfremer \nCNRS \nIMI \nUTM-CSIC \nUGOT \nFFCUL \nITU-EMCOL \nNIOZ \nGeoEcoMar \nKDM \nNOCS\n\nList of projects\nReferences\nExternal links\nEMSO Website\nWhat are Research Infrastructures? - European Commission\nCoopeus",
+          "cos_sim_score": 0.0797058492898941,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

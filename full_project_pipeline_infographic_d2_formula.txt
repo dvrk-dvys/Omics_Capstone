@@ -1,0 +1,140 @@
+direction: down
+
+# ─────────────────────────────
+# DATA INGESTION
+# ─────────────────────────────
+
+Data: "Raw GEO Data\n(GSE123568)"
+Preprocess: "Shared Preprocessing\nParse + Filter"
+Data -> Preprocess
+
+# ─────────────────────────────
+# EDA
+# ─────────────────────────────
+
+EDA: "EDA + QC\nPCA · Volcano · Heatmap\nCorrelation Matrix"
+Preprocess -> EDA
+
+# ─────────────────────────────
+# FEATURE SELECTION
+# ─────────────────────────────
+
+FS: {
+  label: "Feature Selection"
+  direction: right
+
+  Multivariate: {
+    label: "Multivariate FS\nHybrid Score"
+    Formula: |||latex
+      \begin{aligned}
+      \text{Hybrid Score} &= \\
+      &Z(|FC|) + Z(|t|)
+      \end{aligned}
+    |||
+  }
+
+  Univariate: {
+    label: "Univariate FS\nANN Wrapper"
+    Formula: |||latex
+      \begin{aligned}
+      \text{Score}_{\text{probe}} &= \\
+      &\text{median}\!\left(AUC_{\text{test}}^{(i)}\right) \\
+      &,\; i = 1,\ldots,N
+      \end{aligned}
+    |||
+    ReRank: |||latex
+      \begin{aligned}
+      \text{Univariate (Reranker) Score} &= \\
+      &0.7 \cdot Z(AUC) + 0.3 \cdot Z(|FC|)
+      \end{aligned}
+    |||
+  }
+
+  MV_Out: "top100 / top500 features\ntop100_features.arff\ngene_rankings.csv"
+  UV_Out: "top100_univariate.arff\nann_probe_ranking.csv"
+
+  Multivariate -> MV_Out
+  Univariate -> UV_Out
+}
+
+EDA -> FS.Multivariate
+EDA -> FS.Univariate
+
+# ─────────────────────────────
+# MODELING
+# ─────────────────────────────
+
+Models: {
+  label: "Modeling"
+  direction: down
+
+  Weka_Row: {
+    label: "WEKA"
+    direction: right
+    Weka_Multi: "Multivariate\nNB · SMO · MLP\nIBk · J48 · RF\n10-fold CV"
+    Weka_Uni: "Univariate\nNB · SMO · MLP\nIBk · J48 · RF\n10-fold CV"
+  }
+
+  Python_Row: {
+    label: "Python"
+    direction: right
+    Py_Multi: "Multivariate\nLR · RF · SVC · XGB\nRepCV + Hyperopt"
+    Py_Uni: "Univariate\nLR · RF · SVC · XGB\nRepCV + Hyperopt"
+  }
+}
+
+FS.MV_Out -> Models.Weka_Row.Weka_Multi
+FS.MV_Out -> Models.Python_Row.Py_Multi
+FS.UV_Out -> Models.Weka_Row.Weka_Uni
+FS.UV_Out -> Models.Python_Row.Py_Uni
+
+# ─────────────────────────────
+# EVALUATION + SHORTLISTING
+# ─────────────────────────────
+
+Post: {
+  label: "Evaluation + Biomarker Shortlisting"
+  direction: down
+
+  Weka_Post: {
+    label: "WEKA Outputs"
+    direction: right
+    Weka_Multi_Eval: "Eval\nAcc · AUC · F1"
+    Weka_Uni_Eval: "Eval\nAcc · AUC · F1"
+    Weka_Multi_Select: "Feature Imp.\nRF · J48 splits"
+    Weka_Uni_Select: "Feature Imp.\nRF · J48 splits"
+    Weka_Multi_Out: "weka_multi_\nshortlist.csv"
+    Weka_Uni_Out: "weka_uni_\nshortlist.csv"
+    Weka_Multi_Eval -> Weka_Multi_Select -> Weka_Multi_Out
+    Weka_Uni_Eval -> Weka_Uni_Select -> Weka_Uni_Out
+  }
+
+  Py_Post: {
+    label: "Python Outputs"
+    direction: right
+    Py_Multi_Eval: "Eval\nBal.Acc · AUC · F1"
+    Py_Uni_Eval: "Eval\nBal.Acc · AUC · F1"
+    Py_Multi_Select: "Feature Imp.\nRF / XGB"
+    Py_Uni_Select: "ANN ranking\nuni. score"
+    Py_Multi_Out: "python_multi_\nshortlist.csv"
+    Py_Uni_Out: "python_uni_\nshortlist.csv"
+    Py_Multi_Eval -> Py_Multi_Select -> Py_Multi_Out
+    Py_Uni_Eval -> Py_Uni_Select -> Py_Uni_Out
+  }
+}
+
+Models.Weka_Row.Weka_Multi -> Post.Weka_Post.Weka_Multi_Eval
+Models.Weka_Row.Weka_Uni -> Post.Weka_Post.Weka_Uni_Eval
+Models.Python_Row.Py_Multi -> Post.Py_Post.Py_Multi_Eval
+Models.Python_Row.Py_Uni -> Post.Py_Post.Py_Uni_Eval
+
+# ─────────────────────────────
+# LLM EVIDENCE LAYER
+# ─────────────────────────────
+
+LLM: "LLM Evidence Layer\nRAG + GPT-4o-mini\nTier 1/2/3 · Direct vs Indirect"
+
+Post.Weka_Post.Weka_Multi_Out -> LLM
+Post.Weka_Post.Weka_Uni_Out -> LLM
+Post.Py_Post.Py_Multi_Out -> LLM
+Post.Py_Post.Py_Uni_Out -> LLM

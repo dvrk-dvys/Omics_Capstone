@@ -1,0 +1,100 @@
+{
+  "probe_id": "11722752_a_at",
+  "gene_symbol": "ELMSAN1",
+  "score": 1.0,
+  "SD_TestAUC": 0.0523782800878923,
+  "abs_fold_change": 0.8022,
+  "probe_count": 1,
+  "probe_ids": "11722752_a_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.8022,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:34:15",
+  "interpretation": "ELMSAN1 encodes a protein involved in cellular processes such as mitotic regulation and deacetylation. While there is no direct evidence linking ELMSAN1 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its association with metabolic diseases and autoimmune disorders suggests a potential role in the pathological processes that could contribute to bone health and integrity. The retrieved evidence indicates that ELMSAN1 is implicated in various diseases, but it lacks specific connections to SONFH, leading to a low confidence in its relevance as a biomarker. Therefore, while ELMSAN1 may have biological significance, its clinical utility as an early-detection biomarker for SONFH appears weak and speculative.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "ELMSAN1 has limited direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), suggesting it may not serve as a reliable biomarker for early detection.",
+  "citations": [
+    "MIDEAS (Q6PJG2). https://www.uniprot.org/uniprotkb/Q6PJG2",
+    "ELMSAN1 \u2194 metabolic disease. https://platform.opentargets.org/target/ENSG00000156030/associations",
+    "ELMSAN1 \u2194 cutaneous lupus erythematosus. https://platform.opentargets.org/target/ENSG00000156030/associations",
+    "ELMSAN1 \u2194 multiple sclerosis. https://platform.opentargets.org/target/ENSG00000156030/associations",
+    "ELMSAN1 \u2194 triple-negative breast cancer. https://platform.opentargets.org/target/ENSG00000156030/associations",
+    "ELMSAN1 \u2194 breast cancer. https://platform.opentargets.org/target/ENSG00000156030/associations"
+  ],
+  "token_usage": {
+    "prompt_tokens": 2523,
+    "completion_tokens": 224,
+    "total_tokens": 2747,
+    "estimated_cost_usd": 0.000513
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q6PJG2",
+          "title": "MIDEAS (Q6PJG2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q6PJG2",
+          "text": "Protein: Mitotic deacetylase-associated SANT domain protein",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000156030::EFO_0000589",
+          "title": "ELMSAN1 \u2194 metabolic disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000156030/associations",
+          "text": "Disease: metabolic disease\nDescription: A congenital disorder (due to inherited enzyme abnormality) or acquired (due to failure of a metabolically important organ) disorder resulting from an abnormal metabolic process.\nAssociation score: 0.132",
+          "cos_sim_score": 0.1320609981579076,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000156030::EFO_0003834",
+          "title": "ELMSAN1 \u2194 cutaneous lupus erythematosus",
+          "url": "https://platform.opentargets.org/target/ENSG00000156030/associations",
+          "text": "Disease: cutaneous lupus erythematosus\nDescription: An autoimmune disorder that manifests as different lupus-specific skin disorders; it can occur with systemic lupus erythematosus, or as a singular disease.\nAssociation score: 0.103",
+          "cos_sim_score": 0.10339285724188639,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000156030::MONDO_0005301",
+          "title": "ELMSAN1 \u2194 multiple sclerosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000156030/associations",
+          "text": "Disease: multiple sclerosis\nDescription: A progressive autoimmune disorder affecting the central nervous system resulting in demyelination. Patients develop physical and cognitive impairments that correspond with the affected nerve fibers.\nAssociation score: 0.102",
+          "cos_sim_score": 0.10183207047881153,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000156030::EFO_0005537",
+          "title": "ELMSAN1 \u2194 triple-negative breast cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000156030/associations",
+          "text": "Disease: triple-negative breast cancer\nDescription: An invasive breast carcinoma which is negative for expression of estrogen receptor (ER), progesterone receptor (PR), and human epidermal growth factor receptor 2 (HER2).\nAssociation score: 0.074",
+          "cos_sim_score": 0.07391597093694036,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000156030::MONDO_0007254",
+          "title": "ELMSAN1 \u2194 breast cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000156030/associations",
+          "text": "Disease: breast cancer\nDescription: A primary or metastatic malignant neoplasm involving the breast. The vast majority of cases are carcinomas arising from the breast parenchyma or the nipple. Malignant breast neoplasms occur more frequently in females than in males.\nAssociation score: 0.055",
+          "cos_sim_score": 0.055436978202705274,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": []
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "rf_rank": 47,
+  "probe_id": "11746639_a_at",
+  "gene_symbol": "RASSF2",
+  "score": 0.52,
+  "rf_n_nodes": 8,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 1.1938,
+  "log_fc": 1.1938,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11746639_a_at",
+  "max_score": 0.52,
+  "mean_abs_fold_change": 1.1938,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:45:37",
+  "interpretation": "RASSF2 encodes a protein that functions as a potential tumor suppressor, involved in promoting apoptosis and cell cycle arrest. While there is no direct evidence linking RASSF2 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in cellular stress responses and apoptosis may suggest a connection to the pathophysiology of SONFH, particularly in the context of steroid-induced cellular damage. The retrieved evidence primarily highlights its involvement in cancer biology rather than specific mechanisms related to SONFH. Therefore, the evidence supporting RASSF2 as a biomarker for SONFH is weak, relying more on inferred biological reasoning rather than direct studies. As such, RASSF2 may have limited clinical relevance as an early-detection biomarker for SONFH.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "RASSF2 may be involved in cellular stress responses relevant to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "RASSF2 (P50749). https://www.uniprot.org/uniprotkb/P50749",
+    "RASSF2 (P50749-2). https://www.uniprot.org/uniprotkb/P50749-2",
+    "RASSF2 \u2014 RASSF2. https://platform.opentargets.org/target/ENSG00000101265",
+    "RASSF2 \u2194 DNA methylation. https://platform.opentargets.org/target/ENSG00000101265/associations",
+    "RASSF2 \u2194 Abnormality of refraction. https://platform.opentargets.org/target/ENSG00000101265/associations",
+    "RASSF2 \u2194 acute myeloid leukemia. https://platform.opentargets.org/target/ENSG00000101265/associations",
+    "RASSF2 \u2194 Alkalosis. https://platform.opentargets.org/target/ENSG00000101265/associations",
+    "RASSF2 \u2014 Ras association domain family member 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KRAS \u2014 KRAS proto-oncogene, GTPase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "PTEN \u2014 phosphatase and tensin homolog (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "JAK2 \u2014 Janus kinase 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "The Impact of Aging on Ocular Diseases: Unveiling Complex Interactions (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12339180/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9228,
+    "completion_tokens": 293,
+    "total_tokens": 9521,
+    "estimated_cost_usd": 0.00156
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P50749",
+          "title": "RASSF2 (P50749)",
+          "url": "https://www.uniprot.org/uniprotkb/P50749",
+          "text": "Protein: Ras association domain-containing protein 2\nFunction: Potential tumor suppressor. Acts as a KRAS-specific effector protein. May promote apoptosis and cell cycle arrest. Stabilizes STK3/MST2 by protecting it from proteasomal degradation",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P50749-2",
+          "title": "RASSF2 (P50749-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P50749-2",
+          "text": "Protein: Isoform 2 of Ras association domain-containing protein 2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000101265::function",
+          "title": "RASSF2 \u2014 RASSF2",
+          "url": "https://platform.opentargets.org/target/ENSG00000101265",
+          "text": "Function: Potential tumor suppressor. Acts as a KRAS-specific effector protein. May promote apoptosis and cell cycle arrest. Stabilizes STK3/MST2 by protecting it from proteasomal degradation.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101265::EFO_0022599",
+          "title": "RASSF2 \u2194 DNA methylation",
+          "url": "https://platform.opentargets.org/target/ENSG00000101265/associations",
+          "text": "Disease: DNA methylation\nDescription: The covalent transfer of a methyl group to either N-6 of adenine or C-5 or N-4 of cytosine.\nAssociation score: 0.317",
+          "cos_sim_score": 0.31650825843144637,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101265::HP_0000539",
+          "title": "RASSF2 \u2194 Abnormality of refraction",
+          "url": "https://platform.opentargets.org/target/ENSG00000101265/associations",
+          "text": "Disease: Abnormality of refraction\nDescription: An abnormality in the process of focusing of light by the eye in order to produce a sharp image on the retina.\nAssociation score: 0.083",
+          "cos_sim_score": 0.08279747158108275,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101265::EFO_0000222",
+          "title": "RASSF2 \u2194 acute myeloid leukemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000101265/associations",
+          "text": "Disease: acute myeloid leukemia\nDescription: Acute myeloid leukemia (AML) is a group of neoplasms arising from precursor cells committed to the myeloid cell-line differentiation. All of them are characterized by clonal expansion of myeloid blasts. AML manifests by fever, pallor, anemia, hemorrhages and recurrent infections.\nAssociation score: 0.075",
+          "cos_sim_score": 0.0750041782868453,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101265::HP_0001948",
+          "title": "RASSF2 \u2194 Alkalosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000101265/associations",
+          "text": "Disease: Alkalosis\nDescription: Depletion of acid or accumulation base in the body fluids.\nAssociation score: 0.064",
+          "cos_sim_score": 0.06356623370744505,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "RASSF2 \u2014 Ras association domain family member 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RASSF2\nGene name: Ras association domain family member 2\nAliases / synonyms: CENP-34, RASFADIN\nOrganism: Homo sapiens\nGene summary: This gene encodes a protein that contains a Ras association domain. Similar to its cattle and sheep counterparts, this gene is located near the prion gene. Two alternatively spliced transcripts encoding the same isoform have been reported. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RASSF2",
+          "aliases": "CENP-34, RASFADIN",
+          "gene_description": "Ras association domain family member 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KRAS \u2014 KRAS proto-oncogene, GTPase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KRAS\nGene name: KRAS proto-oncogene, GTPase\nAliases / synonyms: 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2\nOrganism: Homo sapiens\nGene summary: This gene, a Kirsten ras oncogene homolog from the mammalian ras gene family, encodes a protein that is a member of the small GTPase superfamily. A single amino acid substitution is responsible for an activating mutation. The transforming protein that results is implicated in various malignancies, including lung adenocarcinoma, mucinous adenoma, ductal carcinoma of the pancreas and colorectal carcinoma. Alternative splicing leads to variants encoding two isoforms that differ in the C-terminal region. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KRAS",
+          "aliases": "'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2",
+          "gene_description": "KRAS proto-oncogene, GTPase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "PTEN \u2014 phosphatase and tensin homolog",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PTEN\nGene name: phosphatase and tensin homolog\nAliases / synonyms: 10q23del, BZS, CWS1, DEC, GLM2, MHAM, MMAC1, PTEN1, PTENbeta, PTENgama, TEP1\nOrganism: Homo sapiens\nGene summary: This gene was identified as a tumor suppressor that is mutated in a large number of cancers at high frequency. The protein encoded by this gene is a phosphatidylinositol-3,4,5-trisphosphate 3-phosphatase. It contains a tensin like domain as well as a catalytic domain similar to that of the dual specificity protein tyrosine phosphatases. Unlike most of the protein tyrosine phosphatases, this protein preferentially dephosphorylates phosphoinositide substrates. It negatively regulates intracellular levels of phosphatidylinositol-3,4,5-trisphosphate in cells and functions as a tumor suppressor by negatively regulating AKT/PKB signaling pathway. The use of a non-canonical (CUG) upstream initiation site produces a longer isoform that initiates translation with a leucine, and is thought to be pre...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PTEN",
+          "aliases": "10q23del, BZS, CWS1, DEC, GLM2, MHAM, MMAC1, PTEN1, PTENbeta, PTENgama, TEP1",
+          "gene_description": "phosphatase and tensin homolog"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "JAK2 \u2014 Janus kinase 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: JAK2\nGene name: Janus kinase 2\nAliases / synonyms: JTK10\nOrganism: Homo sapiens\nGene summary: This gene encodes a non-receptor tyrosine kinase that plays a central role in cytokine and growth factor signalling. The primary isoform of this protein has an N-terminal FERM domain that is required for erythropoietin receptor association, an SH2 domain that binds STAT transcription factors, a pseudokinase domain and a C-terminal tyrosine kinase domain. Cytokine binding induces autophosphorylation and activation of this kinase. This kinase then recruits and phosphorylates signal transducer and activator of transcription (STAT) proteins. Growth factors like TGF-beta 1 also induce phosphorylation and activation of this kinase and translocation of downstream STAT proteins to the nucleus where they influence gene transcription. Mutations in this gene are associated with numerous inflammatory ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "JAK2",
+          "aliases": "JTK10",
+          "gene_description": "Janus kinase 2"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::12339180",
+          "title": "The Impact of Aging on Ocular Diseases: Unveiling Complex Interactions",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12339180/",
+          "text": "The downregulation of autophagy, coupled with mtDNA damage and elevated ROS production, triggers RPE apoptosis or inflammatory apoptosis. This process releases inflammatory and angiogenic factors, thereby fostering neovascularization [111]. These events collectively precipitate RPE atrophy and localized inflammatory reactions within the retina.\nMetabolic aging\nMetabolic processes associated with aging may indirectly impact longevity. Metabolic stress can precipitate a cascade of detrimental effects, including inflammation, oxidative stress, mitochondrial dysfunction, endoplasmic reticulum stress, and impaired autophagy [112]. Furthermore, these metabolic stress-related phenomena are intricately linked to retinal aging and the pathogenesis of AMD [113].\nPGC-1\u03b1 (peroxisome proliferator-activated receptor gamma coactivator 1-\u03b1), a pivotal transcriptional coactivator, regulates genes involved in energy metabolism and mitochondrial biogenesis.\nMacular pigment is a yellow deposit under the retina that is made up of lipids and proteins and is a hallmark of AMD. PGC-1\u03b1 inhibition combined with a high-fat diet induces a severe phenotype similar to AMD in mice. Specifically, PGC-1\u03b1 inhibition alone results in RPE and retinal degeneration, accompanied by grape-like deposition. Furthermore, Inhibition of PGC-1\u03b1 in RPE cells leads to an accumulation of lipid droplets and increased lipid peroxidation. These observations underscore the critical role of PGC-1\u03b1 in the regulation of lipid metabolism [114].\nPGC-1\u03b1 enhances mitochondrial function by upregulating antioxidant enzymes and modulating DNA damage responses, while also exerting a protective effect against cellular senescence and oxidative stress-induced degeneration in the aging RPE. Additionally, PGC-1\u03b1 plays a critical role in the pathogenesis of AMD through its regulation of VEGF [115].\n4.4.\nDiabetic retinopathy\nWith global aging trends, the prevalence of diabetes is projected to rise sharply. Estimates indicate that the number of adults living with diabetes worldwide has increased from approximately 415 million in 2014 to an anticipated 642 million by 2050 [116, 117]. DR, a prominent microvascular complication of diabetes mellitus, is a leading cause of vision impairment and blindness among diabetic patients. The early stages of DR are characterized by the development of microaneurysms and intraretinal hemorrhages [117].\nNumerous studies have shown that aging and hyperglycemia are the main risk factors for DR because diabetes and aging are closely related. Diabetes-related diseases, such as cardiovascular disease and visual impairment, are similar to aging, and the molecular mechanisms of both conditions, such as cellular senescence and abnormalities in protein homeostasis, are highly similar and parallel to those of aging [118, 119].\nChronic hyperglycemia can inflict direct damage to the retina through protein glycosylation. In this state, glucose molecules interact with proteins, forming aldimines that undergo structural rearrangement to yield stable ketamine compounds. Over time, these compounds aggregate and cross-link, evolving into complex AGEs.\nAs AGEs cross-link with ECM components, they accumulate, compromising cellular elasticity. This accumulation leads to the deterioration of retinal vascular endothelial cells and basement membranes, ultimately inducing microangiopathy and retinal tissue ischemia [120].\nReceptors for advanced glycation end-products (RAGE) are prevalent on retinal peripapillary and endothelial cells, and their expression is amplified under diabetic conditions. This heightened RAGE expression triggers an oxidative cascade and accelerates the secretion of inflammatory factors, notably VEGF. Elevated VEGF secretion, in turn, exacerbates damage to the retinal microvasculature and the blood\u2013retinal barrier [120-122]. Therefore, RAGE inhibition could serve as a potential therapeutic strategy for DR.\nMetabolic abnormalities caused by hyperglycemia\nThe normal structure and function of retinal cells are impacted by hyperglycemia because hyperglycemia affects their metabolic pathways, particularly the glucose metabolic pathway. The balance between oxidative phosphorylation and glycolysis is necessary to maintain normoglycemia. Dysregulated glycolysis results in the production of many intermediate metabolites, which can be transferred to various damage pathways, such as the polyol pathway, the hexosamine pathway, and the diacylglycerol-dependent protein kinase C-activated pathway [123].",
+          "cos_sim_score": 0.2628825008869171,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12339180",
+          "title": "The Impact of Aging on Ocular Diseases: Unveiling Complex Interactions",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12339180/",
+          "text": "Figure 2.\nMechanisms associated with aging. Senescence is associated with many mechanisms, including telomere damage and shortening, DNA damage response, cellular senescence, oxidative stress, mitochondrial dysfunction, and activation of signaling pathways. Collectively, these processes contribute to senescence by inducing cell cycle arrest. Accumulation of DNA damage triggers activation of the p53 gene, which in turn induces the expression of the downstream effector p21. This process inhibits cell cycle progression and contributes to cellular senescence. Concurrently, the rise of ROS and the reduction of mitochondrial SIRT3 activate the p38MAPK pathway, which subsequently enhances p53 activity, causing cellular senescence. Additionally, DDR activates GATA4, which subsequently upregulates NF-\u03baB. This activation of NF-\u03baB directly drives cellular senescence. The elevated NF-\u03baB levels increase the transcription of SASP genes during DDR. Both cellular senescence and tissue aging are accelerated by the following increase in SASP factors' translation and release. In senescent cells, the expression of the p16 gene gradually increases, along with changes in the activity of Rb proteins, and this change affects cell cycle progression and leads to cellular senescence. Abbreviation: DDR (DNA damage response); ROS (reactive oxygen species); SASP (senescence-associated secretory phenotype).\n3.1.\nLens aging\nThe lens, one of two transparent tissues in the body, plays a vital role in focusing light onto the retina. As individuals age, the thickness and weight of the lens increases [8]. The \u03b1-, \u03b2-, and \u03b3-lens proteins, the key proteins in the lens, undergo age-related changes such as oxidation, deamination, truncation, glycation, and methylation [9, 10].\nThe outermost layer of the lens is a thin film capsule dominated by glycoproteins and collagen. New laminin fibres continue to form under the lens capsule epithelium, with these fibres primarily deposited in the horizontal direction of the lens. The aging lens gradually accumulates more layers of fibres, but the growth rate decreases [11]. As a result, the anterior and posterior diameters of the lens increase by approximately 50%, leading to increased light scattering rather than focalization on the retina. This condition results in a loss of the eye's ability to adapt and difficulty in seeing nearby objects, leading to the development of presbyopia [12].\nFurthermore, the lens nucleus undergoes compression and hardening, with the lens proteins taking on a yellow to brown hue [13]. This process causes the lens to gradually lose its transparency, becoming opaque over time. The resulting cataracts are the leading cause of blindness worldwide [14, 15].\n3.2.\nRetinal aging\nThe retina is a transparent membrane in the inner layer of the eye wall, consisting of the pigment epithelium and the sensory layer of the retina. As individuals age, various degenerative changes, including typical retinal peripheral capsular degeneration (TPCD) and paving stone (cobblestone) degeneration, occur in the peripheral retina [16]. The diffuse thickening of the inner retinal limiting membrane, coupled with a decrease in peripheral retinal nerve cells and glioblast proliferation, may be associated with choroidal vascular insufficiency.\nAfter the age of 30, there is a progressive loss of optic rod cells in the macula. This results in shortening of the outer segments of the optic rods, which detach from the microvilli of the pigment epithelium. As a result, there is a reduction in retinal purplish matter and a decrease in the eye's sensitivity to low light compared with good light conditions [16].\nCompared with adolescence, aging also affects the retinal vasculature, leading to a widespread loss of peripheral capillaries and a decrease in the number of capillaries surrounding the central fossa in older adults. Ocular blood flow and its regulation also change with aging, with older retinas showing an average 20% reduction in macular blood flow. When lesions occur in the macula, AMD becomes more likely [16, 17].\n3.3.\nCorneal aging\nThe cornea is the main refractive component of the human visual system and provides focusing ability [18]. It is often considered a viscoelastic material, exhibiting both sticky and elastic properties. Structurally, the normal cornea consists of five layers, progressing from the outer surface to the inner surface: the multilayered epithelium, Bowman's layer, interspersed mesenchyme with keratocytes, Descemet's membrane, and the unilayered endothelium.",
+          "cos_sim_score": 0.22699563205242157,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12339180",
+          "title": "The Impact of Aging on Ocular Diseases: Unveiling Complex Interactions",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12339180/",
+          "text": "DNA damage response\nNumerous investigations have revealed that the development of AMD is significantly influenced by the DNA damage response. Ineffective DNA repair mechanisms can lead to prolonged damage to both the nucleus and mtDNA, potentially contributing to their longevity. The process of aging, a significant risk factor for AMD, may be associated with the progressive accumulation of mtDNA damage [98].\nThe RPE emerges as a primary site of mtDNA damage due to senescence, with damage severity increasing with age. Comparative studies between AMD patients and non-AMD individuals have revealed significantly elevated mtDNA heterogeneity in the RPE of AMD patients [99]. Moreover, mtDNA damage in mitochondria from AMD donors is approximately eightfold greater than that in nuclear DNA [100]. This accumulation of mtDNA lesions underscores its pivotal role in AMD pathogenesis\nThe incidence of the mt4917A>G mutation in the NADH dehydrogenase gene and the mtA11812A>G mutation in the NADH-ubiquinone oxidoreductase gene was found to be significantly greater in AMD-affected eyes than in normal eyes by Kaarniranta et al [101]. Additionally, a strong correlation was observed between these mutations and the level of ROS in RPE cells. The burden of mtDNA damage is exacerbated by age-related reductions in key mtDNA repair enzymes such as PARP1, mutY isoforms, and nucleic acid endonucleases, which are primarily responsible for mitigating oxidized DNA damage within the nucleus [102].\nDry AMD is characterized by CC degeneration, which is characterized by RPE hypoxia and atrophy. Recent investigations have revealed a correlation between reduced mitochondrial content and depletion of respiratory chain-associated subunits within RPEs, which is concurrent with pathological features such as depigmentation and increased subretinal deposits. These findings suggest that mtDNA damage and subsequent dysfunction precipitate metabolic disturbances, disrupt intracellular calcium homeostasis, and perturb mitochondria-to-nucleus signaling pathways. Together, these disruptions significantly compromise functionality [103].\nMitochondrial autophagy damage\nAutophagy, a crucial cellular metabolic process, underpins cellular homeostasis, differentiation, developmental processes, and survival. Accumulating evidence indicates that autophagic activity diminishes across various organisms with advancing age [104-106].\nInvestigations involving Caenorhabditis elegans, rodent models, and human cell lines revealed a decline in lysosomal protein degradation over time, leading to impaired autophagic flux. This impairment exacerbates cellular damage and contributes to the onset of age-associated diseases [107]. Research in mice has demonstrated that the age-related decline in the expression of autophagy-related genes, including ATG5, ATG7, and BECN1, is associated with the emergence of an AMD-like phenotype in RPEs. This phenotype is characterized by alterations in RPE structure, including thickening, hypertrophy or atrophy, pigmentation irregularities and the accumulation of oxidized proteins [108].\nAutophagy is decreased when lipofuscin accumulates in the RPE, which is a characteristic of AMD senescence. High mobility group Box 1, a senescence marker raised in iPSC-RPEs in response to the processing of lipofuscin components, is elevated in response to endoplasmic reticulum stress or mitochondrial injury [109, 110].\nThe downregulation of autophagy, coupled with mtDNA damage and elevated ROS production, triggers RPE apoptosis or inflammatory apoptosis. This process releases inflammatory and angiogenic factors, thereby fostering neovascularization [111]. These events collectively precipitate RPE atrophy and localized inflammatory reactions within the retina.\nMetabolic aging\nMetabolic processes associated with aging may indirectly impact longevity. Metabolic stress can precipitate a cascade of detrimental effects, including inflammation, oxidative stress, mitochondrial dysfunction, endoplasmic reticulum stress, and impaired autophagy [112]. Furthermore, these metabolic stress-related phenomena are intricately linked to retinal aging and the pathogenesis of AMD [113].\nPGC-1\u03b1 (peroxisome proliferator-activated receptor gamma coactivator 1-\u03b1), a pivotal transcriptional coactivator, regulates genes involved in energy metabolism and mitochondrial biogenesis.",
+          "cos_sim_score": 0.2215920388698578,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12339180",
+          "title": "The Impact of Aging on Ocular Diseases: Unveiling Complex Interactions",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12339180/",
+          "text": "These findings suggest a close association between RGC aging and death with the pathogenesis of glaucoma. Furthermore, modulating the expression of age-related proteins appears to be crucial for mitigating glaucoma progression.\nMitochondrial dysfunction\nOptimal neuronal function crucially depends on mitochondria. Aging processes typically lead to a progressive decline in mitochondrial efficacy. In the context of glaucoma, patients often exhibit compromised mitochondrial function in RGCs, which is attributed to a diminished oxygen supply [66].\nCellular OS initiates a cascade in which dysfunctional mitochondria exacerbate endoplasmic reticulum (ER) stress, leading to increased ROS levels within cells [77]. Elevated ROS levels induce mitochondrial damage and disrupt normal autophagic processes, culminating in exacerbated mitochondrial dysfunction, cellular impairment, and ultimately, apoptosis, underlying the pathogenesis of glaucoma [78, 79].\nAbnormal autophagic activity is typically linked to P53 overexpression, the inhibition of mitochondrial transport, and the activation of E3 ubiquitin ligases. These events ultimately prevent damaged mitochondria from being cleared from the cell, which results in cellular failure [80].\nIn a range of animal models of neurodegenerative disorders, mitochondrial uncoupling protein 2 (UCP2) has been shown to reduce oxidative stress and neurological damage [81]. Hass et al. established an elevated IOP model in UCP2 knockout animals by introducing microbeads into the anterior chambers. They reported that specific deletion of RGC-associated UCP2 reduced ROS-induced protein alterations and prevented RGC death. The absence of UCP2 promoted mitochondrial autophagy, safeguarding RGCs by eliminating dysfunctional mitochondria before they could compromise cellular integrity. The identification of UCP2 in glaucoma suggests that UCP2 is a promising therapeutic target for enhancing mitochondrial autophagy, potentially mitigating RGC loss under conditions of elevated IOP. RGC destruction is the fundamental cause of irreversible loss of visual function [82].\nIn a rat model of chronic hypertension glaucoma, the overexpression of Parkin was found to increase lysosome-associated membrane protein 2 levels concurrently with increased IOP, triggering mitochondrial autophagy and reducing RGC mortality [73].\nAccording to Hu et al., RGC death is decreased by the overexpression of Parkin and optic nerve atrophy protein 1, indicating that RGCs are protected from damage by the clearance of damaged mitochondria [83]. In summary, Parkin promotes mitochondrial autophagy by targeting damaged mitochondrial degradation, thereby maintaining the health and function of RGCs, making it one of the potential targets for therapeutic intervention in glaucoma.\n4.3.\nAMD\nAMD is a multifaceted ocular condition characterized by photoreceptor death, and degeneration of the retinal pigment epithelium (RPE) and choriocapillaris (CC), primarily affecting the macular region of the retina. This pathology results in visual distortion, central vision loss, and diminished visual acuity.\nAMD is the leading cause of blindness, with a 25% and 8% risk of early and late-stage disease, respectively, among individuals over 75 years of age. Projections suggest a global AMD incidence of 288 million individuals by 2040 [84]. While the precise aetiology remains elusive, known risk factors include smoking, advanced age, genetic predisposition, and hypertension [85].\nSASP\nNumerous inflammatory cytokines, chemokines, proteases, growth factors, and matrix modelling factors are secreted by senescent cells. This collective secretion, termed the senescence-associated secretory phenotype (SASP), profoundly alters local tissue micro-environments, contributing to chronic inflammation and carcinogenesis [86].\nIn the context of AMD, senescence-associated pathways such as the SASP may exert a pivotal influence. Senescent endothelial cells (ECs), for example, can release IL-1\u03b2, stimulating the p21/p53 pathway and augmenting the SASP [87]. Additionally, members of the TGF-\u03b2 family, vascular endothelial growth factor (VEGF), and chemokines such as CCL2 and CCL20 facilitate paracrine senescence, impacting adjacent normal cells. Proteolytic enzymes including matrix metalloproteinases (MMPs) are also integral components of the SASP, and potentially contribute to AMD pathophysiology [88].\nAging impairs the MMP pathway, which decreases the pool of active MMPs available for matrix disintegration. This leads to the buildup of denatured collagen in different cellular structures [89].",
+          "cos_sim_score": 0.21914732456207275,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12339180",
+          "title": "The Impact of Aging on Ocular Diseases: Unveiling Complex Interactions",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12339180/",
+          "text": "Metabolic abnormalities caused by hyperglycemia\nThe normal structure and function of retinal cells are impacted by hyperglycemia because hyperglycemia affects their metabolic pathways, particularly the glucose metabolic pathway. The balance between oxidative phosphorylation and glycolysis is necessary to maintain normoglycemia. Dysregulated glycolysis results in the production of many intermediate metabolites, which can be transferred to various damage pathways, such as the polyol pathway, the hexosamine pathway, and the diacylglycerol-dependent protein kinase C-activated pathway [123].\nInsulin-independent tissues, including the nerves, retina, crystalline lens, and kidneys, metabolize glucose into sorbitol via aldose reductase, which is subsequently converted to fructose [124]. This polyol pathway becomes hyperactive in diabetes, leading to the accumulation of sorbitol and fructose, which increases the intracellular osmotic pressure, causing osmotic damage due to water influx [125]. The activation of this pathway also depletes NADPH and NAD+, which are crucial for glutathione regeneration, thus weakening antioxidant defenses and promoting ROS overproduction, resulting in oxidative stress [126]. Evidence from animal studies suggests that aldose reductase inhibitors, such as ranestat, can mitigate this damage by inhibiting the polyol pathway. Notably, ranestat has been shown to be neuroprotective when used early in DR by preventing the upregulation of aldose reductase activity [127].\nIn the hexosamine biosynthetic pathway, glucose undergoes phosphorylation to become glucose-6-phosphate, which then participates in a series of enzymatic conversions to ultimately yield hexosamine [128]. Elevated blood glucose levels trigger increased activity within the hexosamine pathway, resulting in increased concentrations of uridine diphosphate N-acetylglucosamine (UDP-GlcNAc), a crucial substrate for protein glycosylation. This upregulation promotes the expression of glucosamine-6-phosphate N-acetyl-transferase (GNPNAT1), the rate-limiting enzyme in the hexosamine pathway, thereby further amplifying its metabolic flux [129].\nHowever, this overactivation has deleterious effects. It impedes the neuroprotective action of the insulin/Akt signaling pathway and intensifies retinal neuronal cell death [130]. Moreover, it triggers O-GlcNAcylation and activates the NF-\u03baB p65 subunit, thereby exacerbating retinal ganglion cell death in diabetic mice [129, 131]. Furthermore, this pathway mediates the glycosylation of p53 in retinal pericytes, promoting pericyte apoptosis and early vascular dysfunction in DR [123].\nDiacylglycerol production increases during hyperglycemia, and the combined action of calcium ions and phospholipids activates protein kinase C (PKC). Activated PKC increases neovascularization, stimulates the production of multiple cytokines, such as platelet-derived growth factor and VEGF, and increases inducible NO, which damages endothelial cells, inhibits nitric oxide synthase, and reduces the ability of nitric oxide to dilate blood vessels. Additionally, it promotes endothelial cell dysfunction and inhibits Na+/K+-ATPase activity, which results in retinal vascular dysfunction [132, 133].\nOxidative stress and the inflammatory response\nChronic hyperglycemia exacerbates oxidative stress and the inflammatory response in retinal tissues, resulting in intra- and extracellular environmental perturbations. This accelerates retinal cell aging and apoptosis.\nIn a study examining oxidative stress markers in rats, diabetic subjects presented elevated levels of markers in retinal tissues compared with normal subjects and reduced antioxidant levels [134]. Prolonged hyperglycemia triggers an increase in electron transport chain flux, reducing mitochondrial superoxide levels and adenosine triphosphate production in the retina. This is primarily due to excess glucose absorption leading to pyruvate production. Concurrently, this aberrant metabolism incites ROS overproduction in the retina, causing mitochondrial structural and functional disorders, and inducing endothelial and pericyte cell apoptosis [135, 136].\nIn contrast, aging retinas also display diminished electron transport chain functionality alongside increased ROS levels, suggesting that aging may amplify oxidative stress, thereby facilitating DR progression [137].",
+          "cos_sim_score": 0.21488146483898163,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

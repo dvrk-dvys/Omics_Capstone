@@ -1,0 +1,219 @@
+{
+  "probe_id": "11724907_a_at",
+  "gene_symbol": "MAP4K5",
+  "rf_importance": 0.0118,
+  "selection_freq": 1.0,
+  "abs_fold_change": 1.3195956000000004,
+  "score": 0.3971,
+  "probe_count": 2,
+  "probe_ids": "11724907_a_at | 11724905_a_at",
+  "max_score": 0.3971,
+  "mean_abs_fold_change": 1.2684,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T00:03:47",
+  "interpretation": "MAP4K5 encodes a protein involved in the mitogen-activated protein kinase (MAPK) signaling pathway, which plays a crucial role in cellular responses to stress and inflammation. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), MAP4K5 has been identified as a potential diagnostic biomarker, showing significant differential expression in patients with SONFH compared to non-affected individuals. The retrieved evidence indicates that MAP4K5 is associated with immune cell infiltration, particularly with activated dendritic cells and memory B cells, which are implicated in the inflammatory processes contributing to SONFH. This connection suggests that MAP4K5 may not only serve as a biomarker for early detection but also reflects the underlying immune mechanisms involved in the disease progression. The evidence supporting MAP4K5 as a biomarker is robust, as it is directly linked to SONFH through human studies, making it a clinically relevant target for early diagnosis.",
+  "evidence_relation": "direct",
+  "evidence_tier": "Tier 1",
+  "evidence_confidence": "high",
+  "biomarker_potential": "strong",
+  "relevance_summary": "MAP4K5 is a potential early-detection biomarker for Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) due to its significant association with immune cell infiltration and differential expression in affected patients.",
+  "citations": [
+    "MAP4K5 (Q9Y4K4). https://www.uniprot.org/uniprotkb/Q9Y4K4",
+    "MAP4K5 \u2014 MAP4K5. https://platform.opentargets.org/target/ENSG00000012983",
+    "MAP4K5 \u2194 Abnormality of the skeletal system. https://platform.opentargets.org/target/ENSG00000012983/associations",
+    "MAP4K5 \u2194 Dupuytren Contracture. https://platform.opentargets.org/target/ENSG00000012983/associations",
+    "MAP4K5 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000012983/associations",
+    "MAP4K5 \u2194 breast disease. https://platform.opentargets.org/target/ENSG00000012983/associations",
+    "ARG2, MAP4K5 and TSTA3 as Diagnostic Markers of Steroid-Induced Osteonecrosis of the Femoral Head and Their Correlation With Immune Infiltration. (2021). https://pubmed.ncbi.nlm.nih.gov/34381494/",
+    "MAP4K5 \u2014 mitogen-activated protein kinase kinase kinase kinase 5 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KRAS \u2014 KRAS proto-oncogene, GTPase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MYC \u2014 MYC proto-oncogene, bHLH transcription factor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CAV1 \u2014 caveolin 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Exploring the pathogenesis of steroid-induced osteonecrosis of the femoral head co-regulated by mesenchymal stem cells and pyroptosis-related genes with the use of transcriptome (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12532964/",
+    "Polarization Behavior of Bone Macrophage as Well as Associated Osteoimmunity in Glucocorticoid-Induced Osteonecrosis of the Femoral Head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9986469/",
+    "ARG2, MAP4K5 and TSTA3 as Diagnostic Markers of Steroid-Induced Osteonecrosis of the Femoral Head and Their Correlation With Immune Infiltration (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8350574/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9386,
+    "completion_tokens": 339,
+    "total_tokens": 9725,
+    "estimated_cost_usd": 0.001611
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9Y4K4",
+          "title": "MAP4K5 (Q9Y4K4)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9Y4K4",
+          "text": "Protein: Mitogen-activated protein kinase kinase kinase kinase 5\nFunction: May play a role in the response to environmental stress. Appears to act upstream of the JUN N-terminal pathway",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000012983::function",
+          "title": "MAP4K5 \u2014 MAP4K5",
+          "url": "https://platform.opentargets.org/target/ENSG00000012983",
+          "text": "Function: May play a role in the response to environmental stress. Appears to act upstream of the JUN N-terminal pathway. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000012983::HP_0000924",
+          "title": "MAP4K5 \u2194 Abnormality of the skeletal system",
+          "url": "https://platform.opentargets.org/target/ENSG00000012983/associations",
+          "text": "Disease: Abnormality of the skeletal system\nDescription: An abnormality of the skeletal system.\nAssociation score: 0.452",
+          "cos_sim_score": 0.4519515047552899,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000012983::EFO_0004229",
+          "title": "MAP4K5 \u2194 Dupuytren Contracture",
+          "url": "https://platform.opentargets.org/target/ENSG00000012983/associations",
+          "text": "Disease: Dupuytren Contracture\nDescription: A fibromatosis of the palmar fascia characterized by thickening and contracture of the fibrous bands on the palmar surfaces of the hand and fingers. It arises most commonly in men between the ages of 30 and 50.\nAssociation score: 0.440",
+          "cos_sim_score": 0.44031631174494423,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000012983::EFO_0005772",
+          "title": "MAP4K5 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000012983/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.331",
+          "cos_sim_score": 0.3310043606954003,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000012983::EFO_0009483",
+          "title": "MAP4K5 \u2194 breast disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000012983/associations",
+          "text": "Disease: breast disease\nDescription: A disease involving the breast.\nAssociation score: 0.228",
+          "cos_sim_score": 0.22843153205030356,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::34381494",
+          "title": "ARG2, MAP4K5 and TSTA3 as Diagnostic Markers of Steroid-Induced Osteonecrosis of the Femoral Head and Their Correlation With Immune Infiltration.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34381494/",
+          "year": "2021",
+          "text": "The diagnosis for steroid-induced osteonecrosis of the femoral head (SONFH) is hard to achieve at the early stage, which results in patients receiving ineffective treatment options and a poor prognosis for most cases. The present study aimed to find potential diagnostic markers of SONFH and analyze the effect exerted by infiltration of immune cells in this pathology. R software was adopted for identifying differentially expressed genes (DEGs) and conducting functional investigation based on the microarray dataset. Then we combined SVM-RFE, WGCNA, LASSO logistic regression, and random forest (RF) algorithms for screening the diagnostic markers of SONFH and further verification by qRT-PCR. The diagnostic values were assessed through receiver operating characteristic (ROC) curves. CIBERSORT was then adopted for assessing the infiltration of immune cells and the relationship of infiltration-related immune cells and diagnostic markers. We identified 383 DEGs overall. This study found ARG2, MAP4K5, and TSTA3 (AUC = 0.980) to be diagnostic markers of SONFH. The results of qRT-PCR showed a statistically significant difference in all markers. Analysis of infiltration of immune cells indicated that neutrophils, activated dendritic cells and memory B cells were likely to show the relationship with SONFH occurrence and progress. Additionally, all diagnostic markers had different degrees of correlation with T cell follicular helper, neutrophils, memory B cells, and activated dendritic cells. ARG2, MAP4K5, and TSTA3 are potential diagnostic genes for SONFH, and infiltration of immune cells may critically impact SONFH occurrence and progression.",
+          "cos_sim_score": 0.5019755363464355,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "MAP4K5 \u2014 mitogen-activated protein kinase kinase kinase kinase 5",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MAP4K5\nGene name: mitogen-activated protein kinase kinase kinase kinase 5\nAliases / synonyms: GCKR, KHS, KHS1, MAPKKKK5\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the serine/threonine protein kinase family, that is highly similar to yeast SPS1/STE20 kinase. Yeast SPS1/STE20 functions near the beginning of the MAP kinase signal cascades that is essential for yeast pheromone response. This kinase was shown to activate Jun kinase in mammalian cells, which suggested a role in stress response. Two alternatively spliced transcript variants encoding the same protein have been described for this gene. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MAP4K5",
+          "aliases": "GCKR, KHS, KHS1, MAPKKKK5",
+          "gene_description": "mitogen-activated protein kinase kinase kinase kinase 5"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KRAS \u2014 KRAS proto-oncogene, GTPase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KRAS\nGene name: KRAS proto-oncogene, GTPase\nAliases / synonyms: 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2\nOrganism: Homo sapiens\nGene summary: This gene, a Kirsten ras oncogene homolog from the mammalian ras gene family, encodes a protein that is a member of the small GTPase superfamily. A single amino acid substitution is responsible for an activating mutation. The transforming protein that results is implicated in various malignancies, including lung adenocarcinoma, mucinous adenoma, ductal carcinoma of the pancreas and colorectal carcinoma. Alternative splicing leads to variants encoding two isoforms that differ in the C-terminal region. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KRAS",
+          "aliases": "'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2",
+          "gene_description": "KRAS proto-oncogene, GTPase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MYC \u2014 MYC proto-oncogene, bHLH transcription factor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MYC\nGene name: MYC proto-oncogene, bHLH transcription factor\nAliases / synonyms: MRTL, MYCC, bHLHe39, c-Myc\nOrganism: Homo sapiens\nGene summary: This gene is a proto-oncogene and encodes a nuclear phosphoprotein that plays a role in cell cycle progression, apoptosis and cellular transformation. The encoded protein forms a heterodimer with the related transcription factor MAX. This complex binds to the E box DNA consensus sequence and regulates the transcription of specific target genes. Amplification of this gene is frequently observed in numerous human cancers. Translocations involving this gene are associated with Burkitt lymphoma and multiple myeloma in human patients. There is evidence to show that translation initiates both from an upstream, in-frame non-AUG (CUG) and a downstream AUG start site, resulting in the production of two isoforms with distinct N-termini. [provided by RefSeq, Aug 2017]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MYC",
+          "aliases": "MRTL, MYCC, bHLHe39, c-Myc",
+          "gene_description": "MYC proto-oncogene, bHLH transcription factor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CAV1 \u2014 caveolin 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CAV1\nGene name: caveolin 1\nAliases / synonyms: BSCL3, CGL3, LCCNS, MSTP085, PPH3, VIP21\nOrganism: Homo sapiens\nGene summary: The scaffolding protein encoded by this gene is the main component of the caveolae plasma membranes found in most cell types. The protein links integrin subunits to the tyrosine kinase FYN, an initiating step in coupling integrins to the Ras-ERK pathway and promoting cell cycle progression. The gene is a tumor suppressor gene candidate and a negative regulator of the Ras-p42/44 mitogen-activated kinase cascade. Caveolin 1 and caveolin 2 are located next to each other on chromosome 7 and express colocalizing proteins that form a stable hetero-oligomeric complex. Mutations in this gene have been associated with Berardinelli-Seip congenital lipodystrophy. Alternatively spliced transcripts encode alpha and beta isoforms of caveolin 1.[provided by RefSeq, Mar 2010]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CAV1",
+          "aliases": "BSCL3, CGL3, LCCNS, MSTP085, PPH3, VIP21",
+          "gene_description": "caveolin 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::12532964",
+          "title": "Exploring the pathogenesis of steroid-induced osteonecrosis of the femoral head co-regulated by mesenchymal stem cells and pyroptosis-related genes with the use of transcriptome",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12532964/",
+          "text": "Introduction\nSteroid induced osteonecrosis of the femoral head (SONFH) is a severe skeletal disorder, and is usually attributed to prolonged and/or high-dose use of steroid drugs [1, 2]. Steroids are a class of drugs that have been extensively used for many diseases, including but not limited to rheumatoid arthritis, autoimmune diseases and transplant rejection [3, 4]. SONFH poses a serious threat to human health, particularly to the individuals aged 30\u201350\u00a0years. In the absence of timely and effective therapy, up to 80% of the patients diagnosed with SONFH will undergo the collapse of the femoral within 1\u20134\u00a0years, for which artificial joint replacement is required [5, 6]. SONFH usually presents as hip pain, which may spread to the thighs and knees as the disease progresses, resulting in symptoms, such as limited movement, abnormal gait, and muscle atrophy [7]. It has been identified that the majority of SONFH patients have a history of the use of hormones, including glucocorticoids [8], which may affect the vascular homeostasis and bone cell function of the femoral head in various ways. Regarding vascular homeostasis, it is recognized as a critical element in the pathogenesis of SONFH. Specifically, the use of hormones has been found to trigger vasoconstriction and microcirculation disorders, resulting in insufficient blood supply to the femoral head; moreover, the use of hormones causes the formation of blood clots, further aggravating the blood supply. All such vascular disturbances cause ischemia and hypoxia of the femoral head, ultimately resulting in osteonecrosis [3]. While, for the bone cell function, it may be directed affected by the use of hormones, and studies have shown that the use of hormones caused increased osteocyte apoptosis, leading to the destruction of bone tissue and osteonecrosis [9, 10]. Furthermore, hormones may inhibit the osteogenic function of osteocytes, leading to osteoporosis and damaged structure of the femoral head [11]. Other than the use of hormones, the development of SONFH may also related to genetic factors, such as vascular endothelial growth factor and nitric oxide, as well as behaviors, such as alcoholism and smoking and physical conditions like obesity [12, 13]. The treatment of SONFH includes both operative and nonoperative treatments. Nonoperative treatments include activity restriction, physical therapy, and medication, while operative treatment includes bone reconstruction, such as femoral head replacement surgery [14]. Although SONFH is a serious disease, its early diagnosis and treatment are conducive to the significant improvement of improve patient outcomes. Thus, it is of great value to identify the biomarkers in the early stage of SONFH.\nMesenchymal stem cells (MSCs) are multipotent stem cells that able to self-renew and present multilineage differentiation. Under normal circumstances, MSCs are involved in bone repair and regeneration [15]. However, some studies have shown that dysplasia of adipogenesis and osteogenic differentiation of MSCs is a contributing factor to SONFH [16]. Pyroptosis is an inflammatory cell death caused by severe cell injury, ischemia and/or hypoxia [9]. Pyroptosis-related genes are associated with cell death by regulating apoptosis signaling pathway, inflammatory response and cell cycle, etc. It has been indicated an important part of pyroptosis in the formation and development of necrotic bone tissue during the occurrence of SONFH, and for which 10 pyroptosis-related genes have been identified as potential key genes of SONFH and thus are of great value for diagnosis [5]. Although studies have demonstrated that pyroptosis and MSCs work together in bone degenerative diseases, Huang Guanrui et al. protected the function of MSCs of intervertebral disc by inhibiting the pyroptosis of intervertebral disc cells, thereby improving the therapeutic effect of intervertebral disc degeneration [17]. However, there are no reports on the genes related to both MSCs and pyroptosis in SONFH. Therefore, understanding the association between SONFH and MSC-related genes (MSC-RGs) and pyroptosis-related genes (PRGs) has important clinical and biological significance.",
+          "cos_sim_score": 0.606525182723999,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9986469",
+          "title": "Polarization Behavior of Bone Macrophage as Well as Associated Osteoimmunity in Glucocorticoid-Induced Osteonecrosis of the Femoral Head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9986469/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a debilitating disease characterized by the disrupted blood supply to a specific region of the femoral head which creates a hypoxic environment and leads to progressive deterioration of the hip joint.1 ONFH usually violates young and middle-aged subjects, leading to a high financial burden for individuals and health-care systems.2 Currently, the prevalence of non-traumatic ONFH is expected to keep rising because of heightened awareness and increased adjuvant therapy.1,2 Synthetic glucocorticoids (eg, dexamethasone, beclomethasone and prednisolone) have been widely used in the treatment of inflammatory, allergic and autoimmune diseases but also rank as the leading reason for non-traumatic ONFH in China, accounting for 26.35% of male cases and 55.75% of female cases.3 Glucocorticoid-induced ONFH (GIONFH) develops in 9\u201340% of patients receiving long-term therapy and it may also occur with short-term exposure to high doses or after intra-articular injection.4\nA variety of hypotheses for the pathogenesis of GIONFH have been proposed, such as dysregulation of intraosseous hypertension, lipid metabolism disorder, intravascular coagulation, and arterial vasculitis, but the exact mechanism is yet to be confirmed.1 The primary histopathological character of ONFH is osteocyte apoptosis, which persists due to the anatomical unavailability of phagocytosis.4 Glucocorticoid excess results in bone marrow mesenchymal stem cells (BMSCs) and osteoblasts toward a higher rate of adipogenesis, retards osteocyte replacement and decreases bone remodeling.2 Meanwhile, glucocorticoids could damage the intraosseous microvasculature and improve the formation of osteoclasts.5 The cumulative and unrepairable bone defect uniquely breaks the mechanosensory function of the osteocyte-lacunar-canalicular system.4 Another distinctive feature of GIONFH is abnormal chronic inflammation.6 Acute inflammation is the first step in bone regeneration, but if the adverse stimuli persist and disrupt bone homeostasis, chronic inflammation occurs.7 In the context of chronic inflammation, the necrotic bone continuously undergoes fibrosis repair, which hinders the reconstruction of normal bone structure and function.8\nComplex interactions existed between bone and immune cells (eg, macrophages, Th17 cells, and neutrophils).9 Immune cells and their products could influence the activities of osteoclasts, osteoblasts, bone mesenchymal stem cells (BMSCs) and osteocytes, therefore coupling immune and skeletal systems.6 The concept of \u201costeoimmunology\u201d was first coined to underline the regulation of osteoclast activation by T lymphocytes, hinting that bone regeneration is not a straightforward process that simply involves bone formation and resorption.9 To prolong the lifetime of orthopedic implants and to accelerate fracture healing are the two clinical challenges to which immunomodulatory strategies were applied in orthopedics.10 Moreover, cell-based immunomodulation, biomaterials and immunomodulator delivery have been employed for osteolytic bone diseases, such as rheumatoid arthritis, osteoporosis and periodontitis.10 Among various immune cells, the macrophage is the main effector cell and sentinel of innate immunity, and the vital modulator of chronic inflammation.11 Macrophages are responsible for removing apoptotic or necroptotic cell debris but are also causally linked to GIONFH.11\nAs a cell population with plasticity and pluripotency, macrophages participate in a great deal of pathological and physiological processes such as maintaining osteogenesis-adipogenesis balance, tissue regeneration and inflammatory response.12 The phenotype and function of macrophages vary with the release of growth factors and cytokines in the local tissue microenvironment.13 During these processes, macrophages undergo reprogramming, allowing them to readily and rapidly adapt to the changing conditions within tissues. The role that macrophage plays in the progression of GIONFH has only been reported sporadically.12 A better understanding of the molecular and cellular mechanisms underlying bone macrophage activation could offer potential avenues to dealing with GIONFH.\nPolarization of Bone Macrophages",
+          "cos_sim_score": 0.5337605476379395,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8350574",
+          "title": "ARG2, MAP4K5 and TSTA3 as Diagnostic Markers of Steroid-Induced Osteonecrosis of the Femoral Head and Their Correlation With Immune Infiltration",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8350574/",
+          "text": "As suggested from the relationship of diagnosis-related markers and infiltration-based immune cells, ARG2 displayed a significant association with activated mast cells, activated dendritic cells, T cells follicular helper, and neutrophils. MAP4K5 was significantly associated with activated dendritic cells, T cells follicular helper, B cells memory, and neutrophils. Moreover, TSTA3 was significantly correlated with activated dendritic cells, B cell memory, as well as T cells follicular helper. As indicated by existing research, polymorphonuclear neutrophils and mast cells could produce or activate destructive enzymes, thereby causing cartilage destruction and even bone necrosis (Mohr, 1996). The absence of dendritic cells could lead to osteonecrosis following dental extraction in experimental animals (Elsayed et al., 2020). Existing studies have demonstrated that glucocorticoid contributed to local ischemia of the femoral head by inducing activation of platelets (Lang et al., 2015), thereby causing neutrophil extracellular traps (Nonokawa et al., 2020). Given all the information acquired by the authors, this study initially reported the prediction of the correlations of immune infiltration in SONFH, and the complex interactions require further research and clarification.\nIn this study, novel scientific approaches were adopted to identify SONFH diagnostic markers (e.g., RF algorithms, WGCNA, LASSO logistic regression, and SVM-RFE). Moreover, this study initially used CIBERSORT for assessing the infiltration of immune cells between normal tissues and SONFH tissues. However, this study had certain limitations and deficiencies. First, though the analysis results achieved were compatible with some previous research results, the sample size was insufficient to validate the study. The results thus should be validated by a large sample study. Second, CIBERSORT investigation complied with the genetic information of a limited amount but this data is not likely to show the deviation from phenotypic plasticity, disease-induced disorders, or the heterotypic interactions of cells. Third, our study performed the second mining and investigation of existing datasets. Additionally, age was usually treated as a categorical variable in all clinical studies, but information relating to age could not be extracted. There might also be limitations in terms of biased results and conclusions, therefore further relevant studies are warranted.\nConclusion\nThe present study reported that ARG2, MAP4K5, and TSTA3 were potential diagnosis-related genes in SONFH. In addition, neutrophil activated dendritic cells and memory B cells may be related to SONFH occurrence and progress. Moreover, ARG2 displayed a noticeable association with activated mast cells, activated dendritic cells, T cells follicular helper, as well as neutrophils. MAP4K5 was significantly associated with T cells follicular helper, activated dendritic cells, B cells memory, and neutrophils. TSTA3 was significantly associated with T cell follicular helper, B cell memory, and activated dendritic cells. These immune cells may serve an important role in the development of SONFH. These immune cells may facilitate in-depth exploration of targeted immunotherapeutic methods and optimize immunomodulation therapies for cases of SONFH.\nData Availability Statement\nTable 1 showed the baseline characteristics of the study population. The original contributions presented in the study are included in the article/Supplementary Material, further inquiries can be directed to the corresponding author/s.\nTABLE 1\nBaseline characteristics of the study population.\nEthics Statement\nThe study was approved by the Clinical Research Ethics Committee of Fuzhou Second Hospital Affiliated to Xiamen University. Each patient provided written signed informed consent (Project identification code: 2021001). The patients/participants provided their written informed consent to participate in this study.\nAuthor Contributions\nYYZ and RY: conception and design of the study and funding acquisition. RY, JZ, and YGZ: data acquisition, bioinformatics analysis, and drafting and critical revision of the manuscript. RY, XH, ST, JY, and NL: visualization and validation. All authors approved the final manuscript.\nConflict of Interest\nThe authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.\nPublisher\u2019s Note\nAll claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.",
+          "cos_sim_score": 0.47631052136421204,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9986469",
+          "title": "Polarization Behavior of Bone Macrophage as Well as Associated Osteoimmunity in Glucocorticoid-Induced Osteonecrosis of the Femoral Head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9986469/",
+          "text": "There is evidence that polarized macrophages could serve as candidates for the osteoclast progenitor.41 The polarization state of macrophages affects their ability to differentiate into osteoclasts, and produce pro-inflammatory cytokines and mediators. Cytokines secreted by M2 macrophages, such as IL-10 and IL-4, inhibit the expression of NFATc1, therefore suppressing the formation of osteoclasts.34 At the same time, the polarization of macrophages to the M1 phenotype leads to the release of multiple cytokines (eg, TNF-\u03b1, IL-6, IL-1, and IL-12) and chemokines (eg, CXCL2, CXCL8, and CXCL10), which will aid osteoclastogenesis.42,43\nMacrophage Polarization and Osteogenesis\nIncreased osteocyte apoptosis and compromised osteogenesis is a crucial characteristic of GIONFH. The fibrovascular tissue form in the repair region that does not provide mechanical support comparable to cancellous bone, leading to mechanical fragility of the femoral head and the development of flattening and collapse. Both macrophages and BMSCs are essential sources of cytokines and chemokines, sharing complex interactions of signaling pathways.44 Traditionally, the M1 phenotype is well known for eliciting pro-inflammatory effects, which may cause bone resorption.45 However, in recent years, loads of studies have reported that the M0, M1 and M2 phenotypes are all beneficial for osteogenesis by activating the OSM signaling pathway, and the M1-type macrophages had the maximum effect on bone formation (Figure 2).46 OSM produced by macrophages could stimulate the mineralization activity and differentiation of osteoblasts by initiating STAT3 phosphorylation with the help of prostaglandin E2 (PGE2) and COX2.47,48 Xue et al49 unveiled that graphene oxide intervention enhanced the M1 polarization of RAW 264.7 cells, and the expression levels of OSM and BMP2, promoting the establishment of an immune microenvironment favorable for the osteogenic differentiation of BMSCs. In addition, M1 macrophages could secrete VEGF, TNF-\u03b1, and basic fibroblast growth factor, to initiate angiogenesis.50 Adding M2 anti-inflammatory macrophages to BMSCs could increase alkaline phosphatase (ALP) activity.44 M1 macrophages contribute to the early and middle osteogenesis of MSCs, while M2 macrophage co-culture can lead to increasing the matrix mineralization.14\nFigure 2Association between osteogenesis and macrophage polarization in the development of GIONFH. The M0, M1 and M2 phenotypes are all beneficial for osteogenesis by activating the OSM signaling pathway, and the M1-type macrophages had the greatest effect on bone formation. BMSCs secrete CCL-2 and CCL-4, the main chemoattractants for monocytes and macrophages. Meanwhile, Bone macrophages also interact with osteoblasts, which derive from BMSCs (\u201cCreated with BioRender.com\u201d).\nFigure 2\nAssociation between osteogenesis and macrophage polarization in the development of GIONFH. The M0, M1 and M2 phenotypes are all beneficial for osteogenesis by activating the OSM signaling pathway, and the M1-type macrophages had the greatest effect on bone formation. BMSCs secrete CCL-2 and CCL-4, the main chemoattractants for monocytes and macrophages. Meanwhile, Bone macrophages also interact with osteoblasts, which derive from BMSCs (\u201cCreated with BioRender.com\u201d).",
+          "cos_sim_score": 0.4367232918739319,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12532964",
+          "title": "Exploring the pathogenesis of steroid-induced osteonecrosis of the femoral head co-regulated by mesenchymal stem cells and pyroptosis-related genes with the use of transcriptome",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12532964/",
+          "text": "Oxidative phosphorylation occurs in the pathological mechanism of SONFH, where macrophage-induced c-type lectin (Mincle) is activated by damage-associated molecular patterns (DAMPs) released by dead bone cells, and promotes the generation of osteoclasts through ITAM-based oxidative phosphorylation and calcium signaling, thus causing necrosis of bone cells in the femoral head [63]. It may also be related to glycolytic reprogramming and mitochondrial dysfunction, as the transition from oxidative phosphorylation to glycolysis can result in improper activation and function of cells, leading to the dysfunction of cell metabolism. It is mainly reflected in the impaired immune regulation of macrophages (Mj) and MSCs and the impaired bone regeneration in the case of inflammation [64].\nIn this study, the CTD database was employed for predicting the target therapeutic drugs for the three identified biomarkers. Among the predicted drugs, Bisphenol-A-diglycidyl ether (BADGE) bisphenol-diglycidyl ether is an antagonist of PPAR-c (peroxisome proliferator-activated receptor). It can binds well with the biomarkers FKBP8 and ANK1 to reverse bone marrow adipogenesis and adipocyte hypertrophy, to enhance osteoblast proliferation, and to inhibit the generation of osteoclasts, thus can be employed for the prevention and treatment of SONFH at early stage [65]. CGP52608 is a retinoic acid receptor-related orphan receptor \u03b1 (ROR \u03b1) activator that binds well with the biomarkers PTGS2 and ANK1 to enhance the activity of ROR \u03b1 1 and EPO luciferase reporter genes. It can enhance the expression of erythropoietin (EPO) mRNA and protein, as well as the levels of circulating EPO in vitro and in vivo, can promote the differentiation of endothelial progenitor cells (EPCs) and neovascular formation via the ROR \u03b1-EPO\u2013AMPK axis, enhancing tissue repair, which may affect MSCs in SONFH repair mechanism and thus promote femoral head bone repair-related [66]. The following drugs and compounds may have negative and negative effects on the treatment of SONFH. It has been shown that, at the cellular level, NRF 2 (nuclear factor erythroid-derived 2-like 2) plays a crucial part in resisting to oxidative stress. Nuclear import of NRF 2, which can binds well with biomarkers FKBP8 and PTGS2, leads to self-renewal of early passage MSCs and loss of osteogenic potential [67], which may be also related to the decreased osteogenic differentiation ability of osteoblasts in SONFH. Aflatoxin B1 (Aflatoxin B1 AFB1), which is a mycotoxin that can lead to serious damage of liver function and can binds with the biomarkers PTGS2, ANK1, can induce oxidative stress and destroy cell pathway to reduce the bone volume and tissue volume of animal femoral cortical bone, and can destroy vitamin D receptor and calcium\u2013phosphorus homeostasis to damage bone mineralization, thus having a negative impact on bone health [68]. In addition, it severely inhibits the human and animal immune systems to induce oxidative stress of macrophages by influencing the respiratory chain, which results in the activation of inflammatory response-related signaling pathways, so as to enhance the formation of ROS, thus leading to oxidative damage [69]. These characteristics are in relation to the occurrence and development of SONFH due to oxidative stress. Benzo [a] pyrene is a polycyclic aromatic hydrocarbon that generally exposed as a hazardous component from cigarettes and it can binds well to the biomarkers PTGS2 and ANK1. As an agonist of aryl hydrocarbon receptor (AhR), it can regulate the BMP/Smad pathway of bone morphogen receptor 2 (BMPRII) and Hey1 through armorphogen receptor (AhR), thus inhibiting bone osteogenic protein 2 (Bmp 2) [70].",
+          "cos_sim_score": 0.42004066705703735,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    }
+  ]
+}

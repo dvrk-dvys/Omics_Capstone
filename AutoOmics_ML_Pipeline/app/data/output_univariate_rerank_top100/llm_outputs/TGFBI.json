@@ -1,0 +1,213 @@
+{
+  "probe_id": "11755281_a_at",
+  "gene_symbol": "TGFBI",
+  "Median_TestAUC": 0.962962962962963,
+  "SD_TestAUC": 0.2104929220501158,
+  "abs_fold_change": 1.811,
+  "score": 1.4659,
+  "probe_count": 1,
+  "probe_ids": "11755281_a_at",
+  "max_score": 1.4659,
+  "mean_abs_fold_change": 1.811,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T23:02:37",
+  "interpretation": "TGFBI (Transforming Growth Factor Beta Induced) is a protein that plays a crucial role in cell adhesion and collagen interactions, which are vital for maintaining bone integrity and health. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), TGFBI may influence the differentiation and function of osteoblasts and chondrocytes, as TGF-\u03b2 signaling is known to regulate these processes. However, the evidence linking TGFBI directly to SONFH is limited, with no specific studies confirming its role as a biomarker in this condition. Therefore, while TGFBI is biologically relevant due to its involvement in bone metabolism, its potential as a clinical biomarker for early detection of SONFH remains weak and speculative. [INFERENCE]",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "TGFBI is involved in cellular processes that may impact bone health, but its direct connection to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) is not well established.",
+  "citations": [
+    "TGFBI (Q15582). https://www.uniprot.org/uniprotkb/Q15582",
+    "TGFBI \u2014 TGFBI. https://platform.opentargets.org/target/ENSG00000120708",
+    "TGFBI \u2194 lattice corneal dystrophy type I. https://platform.opentargets.org/target/ENSG00000120708/associations",
+    "TGFBI \u2194 Reis-Bucklers corneal dystrophy. https://platform.opentargets.org/target/ENSG00000120708/associations",
+    "TGFBI \u2194 Reis-B\u00fccklers corneal dystrophy. https://platform.opentargets.org/target/ENSG00000120708/associations",
+    "TGFBI \u2194 granular corneal dystrophy type I. https://platform.opentargets.org/target/ENSG00000120708/associations",
+    "TGFBI \u2014 transforming growth factor beta induced (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TGFB1 \u2014 transforming growth factor beta 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "VEGFA \u2014 vascular endothelial growth factor A (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MMP9 \u2014 matrix metallopeptidase 9 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CFTR \u2014 CF transmembrane conductance regulator (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Clinical utility of mesenchymal stem/stromal cells in regenerative medicine and cellular therapy (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC10334654/",
+    "Post-Transcriptional Regulatory Crosstalk between MicroRNAs and Canonical TGF-\u03b2/BMP Signalling Cascades on Osteoblast Lineage: A Comprehensive Review (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC10094338/",
+    "Analysis of the Potential Angiogenic Mechanisms of BuShenHuoXue Decoction against Osteonecrosis of the Femoral Head Based on Network Pharmacology and Experimental Validation (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC10925519/",
+    "Identification of hub genes and therapeutic drugs in osteonecrosis of the femoral head through integrated bioinformatics analysis and literature mining (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC10366127/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8601,
+    "completion_tokens": 311,
+    "total_tokens": 8912,
+    "estimated_cost_usd": 0.001477
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q15582",
+          "title": "TGFBI (Q15582)",
+          "url": "https://www.uniprot.org/uniprotkb/Q15582",
+          "text": "Protein: Transforming growth factor-beta-induced protein ig-h3\nFunction: Plays a role in cell adhesion (PubMed:8024701). May play a role in cell-collagen interactions (By similarity)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000120708::function",
+          "title": "TGFBI \u2014 TGFBI",
+          "url": "https://platform.opentargets.org/target/ENSG00000120708",
+          "text": "Function: Plays a role in cell adhesion (PubMed:8024701). May play a role in cell-collagen interactions (By similarity). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000120708::MONDO_0007380",
+          "title": "TGFBI \u2194 lattice corneal dystrophy type I",
+          "url": "https://platform.opentargets.org/target/ENSG00000120708/associations",
+          "text": "Disease: lattice corneal dystrophy type I\nDescription: Type I lattice corneal dystrophy (LCDI) is a frequent form of stromal corneal dystrophy characterized by a network of delicate interdigitating branching filamentous opacities within the cornea with progressive visual impairment and no systemic manifestations.\nAssociation score: 0.824",
+          "cos_sim_score": 0.8242841141270143,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000120708::MONDO_0012043",
+          "title": "TGFBI \u2194 Reis-Bucklers corneal dystrophy",
+          "url": "https://platform.opentargets.org/target/ENSG00000120708/associations",
+          "text": "Disease: Reis-Bucklers corneal dystrophy\nDescription: Reis-B\u00fccklers corneal dystrophy (RBCD), also known as granular corneal dystrophy type III, is a rare form of superficial corneal dystrophy characterized by bilateral symmetrical reticular opacities in the superficial central cornea, with progressive visual impairment.\nAssociation score: 0.727",
+          "cos_sim_score": 0.7270606799745896,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000120708::Orphanet_98961",
+          "title": "TGFBI \u2194 Reis-B\u00fccklers corneal dystrophy",
+          "url": "https://platform.opentargets.org/target/ENSG00000120708/associations",
+          "text": "Disease: Reis-B\u00fccklers corneal dystrophy\nDescription: Reis-B\u00fccklers corneal dystrophy (RBCD), also known as granular corneal dystrophy type III, is a rare form of superficial corneal dystrophy characterized by bilateral symmetrical reticular opacities in the superficial central cornea, with progressive visual impairment.\nAssociation score: 0.727",
+          "cos_sim_score": 0.7268332698585136,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000120708::MONDO_0007377",
+          "title": "TGFBI \u2194 granular corneal dystrophy type I",
+          "url": "https://platform.opentargets.org/target/ENSG00000120708/associations",
+          "text": "Disease: granular corneal dystrophy type I\nDescription: Type I granular corneal dystrophy (GCDI) is a rare form of stromal corneal dystrophy characterized by multiple small deposits in the superficial central corneal stroma, and progressive visual impairment, which may sometimes be severe.\nAssociation score: 0.722",
+          "cos_sim_score": 0.7222893680214679,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "TGFBI \u2014 transforming growth factor beta induced",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TGFBI\nGene name: transforming growth factor beta induced\nAliases / synonyms: BIGH3, CDB1, CDG2, CDGG1, CSD, CSD1, CSD2, CSD3, EBMD, LCD1\nOrganism: Homo sapiens\nGene summary: This gene encodes an RGD-containing protein that binds to type I, II and IV collagens. The RGD motif is found in many extracellular matrix proteins modulating cell adhesion and serves as a ligand recognition sequence for several integrins. This protein plays a role in cell-collagen interactions and may be involved in endochondrial bone formation in cartilage. The protein is induced by transforming growth factor-beta and acts to inhibit cell adhesion. Mutations in this gene are associated with multiple types of corneal dystrophy. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TGFBI",
+          "aliases": "BIGH3, CDB1, CDG2, CDGG1, CSD, CSD1, CSD2, CSD3, EBMD, LCD1",
+          "gene_description": "transforming growth factor beta induced"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TGFB1 \u2014 transforming growth factor beta 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TGFB1\nGene name: transforming growth factor beta 1\nAliases / synonyms: CAEND1, CED, DPD1, IBDIMDE, LAP, TGF-beta1, TGFB, TGFbeta\nOrganism: Homo sapiens\nGene summary: This gene encodes a secreted ligand of the TGF-beta (transforming growth factor-beta) superfamily of proteins. Ligands of this family bind various TGF-beta receptors leading to recruitment and activation of SMAD family transcription factors that regulate gene expression. The encoded preproprotein is proteolytically processed to generate a latency-associated peptide (LAP) and a mature peptide, and is found in either a latent form composed of a mature peptide homodimer, a LAP homodimer, and a latent TGF-beta binding protein, or in an active form consisting solely of the mature peptide homodimer. The mature peptide may also form heterodimers with other TGFB family members. This encoded protein regulates cell proliferation, differentiation and growth, and can modulate expression and activation...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TGFB1",
+          "aliases": "CAEND1, CED, DPD1, IBDIMDE, LAP, TGF-beta1, TGFB, TGFbeta",
+          "gene_description": "transforming growth factor beta 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "VEGFA \u2014 vascular endothelial growth factor A",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: VEGFA\nGene name: vascular endothelial growth factor A\nAliases / synonyms: L-VEGF, MVCD1, VEGF, VPF\nOrganism: Homo sapiens\nGene summary: This gene is a member of the PDGF/VEGF growth factor family. It encodes a heparin-binding protein, which exists as a disulfide-linked homodimer. This growth factor induces proliferation and migration of vascular endothelial cells, and is essential for both physiological and pathological angiogenesis. Disruption of this gene in mice resulted in abnormal embryonic blood vessel formation. This gene is upregulated in many known tumors and its expression is correlated with tumor stage and progression. Elevated levels of this protein are found in patients with POEMS syndrome, also known as Crow-Fukase syndrome. Allelic variants of this gene have been associated with microvascular complications of diabetes 1 (MVCD1) and atherosclerosis. Alternatively spliced transcript variants encoding different...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "VEGFA",
+          "aliases": "L-VEGF, MVCD1, VEGF, VPF",
+          "gene_description": "vascular endothelial growth factor A"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MMP9 \u2014 matrix metallopeptidase 9",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MMP9\nGene name: matrix metallopeptidase 9\nAliases / synonyms: CLG4B, GELB, MANDP2, MMP-9\nOrganism: Homo sapiens\nGene summary: Proteins of the matrix metalloproteinase (MMP) family are involved in the breakdown of extracellular matrix in normal physiological processes, such as embryonic development, reproduction, and tissue remodeling, as well as in disease processes, such as arthritis and metastasis. Most MMP's are secreted as inactive proproteins which are activated when cleaved by extracellular proteinases. The enzyme encoded by this gene degrades type IV and V collagens. Studies in rhesus monkeys suggest that the enzyme is involved in IL-8-induced mobilization of hematopoietic progenitor cells from bone marrow, and murine studies suggest a role in tumor-associated tissue remodeling. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MMP9",
+          "aliases": "CLG4B, GELB, MANDP2, MMP-9",
+          "gene_description": "matrix metallopeptidase 9"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CFTR \u2014 CF transmembrane conductance regulator",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CFTR\nGene name: CF transmembrane conductance regulator\nAliases / synonyms: ABC35, ABCC7, CF, CFTR/MRP, MRP7, TNR-CFTR, dJ760C5.1\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the ATP-binding cassette (ABC) transporter superfamily. The encoded protein functions as a chloride channel, making it unique among members of this protein family, and controls ion and water secretion and absorption in epithelial tissues. Channel activation is mediated by cycles of regulatory domain phosphorylation, ATP-binding by the nucleotide-binding domains, and ATP hydrolysis. Mutations in this gene cause cystic fibrosis, the most common lethal genetic disorder in populations of Northern European descent. The most frequently occurring mutation in cystic fibrosis, DeltaF508, results in impaired folding and trafficking of the encoded protein. Multiple pseudogenes have been identified in the human genome. [provided by RefSeq, Aug 2017]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CFTR",
+          "aliases": "ABC35, ABCC7, CF, CFTR/MRP, MRP7, TNR-CFTR, dJ760C5.1",
+          "gene_description": "CF transmembrane conductance regulator"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::10334654",
+          "title": "Clinical utility of mesenchymal stem/stromal cells in regenerative medicine and cellular therapy",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10334654/",
+          "text": "Osteonecrosis\nOsteonecrosis, also known as aseptic necrosis, avascular necrosis, or ischemic bone necrosis, is one of the common bone degenerative diseases in the U.S., with about 10,000\u201320,000 new cases every year [23]. In osteonecrosis, the deficiency of blood flow to the bone is followed by cell death at the site, resulting in severe pain [24]. Although the most common type of osteonecrosis is the osteonecrosis of the femoral head, it can happen in other bones like the bones of the shoulders, ankle, and knee [25].\nSurgical and non-surgical interventions are available for the treatment of osteonecrosis. However, researchers are searching for better alternatives, and MSCs have continued to remain as promising candidates for treatment of musculoskeletal disorders. Intravenous injection of induced pluripotent stem cells (iPSC)-derived MSCs showed a significant reduction of bone loss and an increase in microvessel density at the femoral head in a mouse model with steroid-induced osteonecrosis which was attributed to the induction of angiogenesis [26]. Likewise, BM-MSCs implantation on a femoral head with early-stage osteonecrosis reduced the total hip replacement arthroplasty conversion rate [27]. Similarly, exosomes isolated from BM-MSCs harvested from healthy rats when incubated with MSCs from rats with steroid-induced necrosis of the femoral head suppressed adipogenesis and upregulated SOX9 in the later rats. This might be because MSC\u2019s exosomes induce osteogenesis in patients with osteonecrosis [113]. Next, a composite implant containing BM-MSCs, carboxymethyl chitosan, endothelial progenitor cells, and alginate facilitated the repair of the bone through angiogenesis and osteogenesis induction and reduced adipogenesis on steroid-induced osteonecrosis of the femoral head rabbit model [28]. Finally, intravenous administration of methylprednisolone stimulated rabbit-derived MSCs labeled with a green fluorescent protein showed the expression of the green fluorescent protein only on the femur, suggesting that MSCs can be utilized in preventing osteonecrosis [29].\nCranial defects\nCranial and craniofacial defects are conditions characterized by the inappropriate migration, formation, and differentiation of the neural crest-derived cells, causing malformed, small, or missing craniofacial bones. These conditions are common, with approximately one-third of all birth defects consisting of craniofacial abnormalities [30].\nThe effectiveness of MSC treatment for cranial defects is under investigation, with numerous successful outcomes in animal studies. The rats with cranial defects, when treated with BM-MSCs, had a greater bone mineral density, higher expression of osteocytes and osteoclasts, and accelerated cranial bone healing [31]. A comparative study on the osteogenic differentiation capacity between Ad-MSCs and human UC-MSCs in vitro and in vivo using rats with cranial defects showed that Ad-MSCs have higher osteogenic differentiation and a higher rate of bone formation in the cranial bone of the treated rats [32]. Likewise, the rats with cranial defects seeded with human UC-MSCs and human BM-MSCs had a greater expression of Runx2, collagen I, alkaline phosphate, and osteocalcin. They also had higher quantities of new bone and blood vessels than the control group [114]. More recent comparison studies, between dental pulp MSCs (DP-MSCs) and BM-MSCs, have shown that DP-MSCs implanted in rabbit calvarial defects model exhibit similar bone regeneration efficacy as BM-MSCs. Furthermore, DP-MSCs are easier to collect and more accessible than BM-MSCs. The results showed that in-vivo treatment of DP-MSCs had similar bone mineral density, new bone formation, and osteogenic protein expression [115]. Finally, the comparison of the therapeutic potential of ecto-MSCs (MSCs derived from human embryonic stem cells) and BM-MSCs in a calvarial defect rat model proved that the ecto-MSC treated group had higher cellularity and a higher number of proliferative cells. However, both cells (implanted on a scaffold) promoted regeneration of the bone [33].\nNon-union bone fractures",
+          "cos_sim_score": 0.6263210773468018,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10094338",
+          "title": "Post-Transcriptional Regulatory Crosstalk between MicroRNAs and Canonical TGF-\u03b2/BMP Signalling Cascades on Osteoblast Lineage: A Comprehensive Review",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10094338/",
+          "text": "5. MicroRNAs Regulating the Transforming Growth Factor-\u03b2 (TGF-\u03b2) Signalling Pathway\n5.1. MicroRNAs and Transforming Growth Factor-\u03b2 (TGF-\u03b2) Ligands\nTransforming Growth Factor-\u03b2 (TGF-\u03b2) signalling has been proved to established pleiotropic involvement in osteoblast differentiation [92,93]. Moreover, TGF-\u03b2/Smad signalling is responsible for the regulation of mesenchymal lineage commitment and osteoblastic differentiation via a stage-specific manner. TGF-\u03b2 signalling promoting the recruitment, enhancing proliferation, and providing competence for early-stage differentiation of osteoprogenitor cells [92,94]. However, TGF-\u03b2 signalling inhibits terminal-stage osteoblast differentiation and matrix mineralization [92,94]. TGF-\u03b2 has three isoforms in mammals: TGF-\u03b21, TGF-\u03b22, and TGF-\u03b23 [77,95]. TGF-\u03b21 deficient mice showed a remarkable reduction in bone growth and mineralization [96]. A gain-of-function mutant of TGF-\u03b21 resulted in Camurati-Engelmann disease (CED, OMIM#13100) in humans, a form of skeletal condition characterized by abnormally thick bones (hyperostosis) primarily affecting the long bones of the arms, legs, and skull [97]. Additionally, TGF-\u03b22 and TGF-\u03b23 double knockout mice had severe malformations in rib and sternum development, failure of anterior body wall fusion, and experienced early embryonic lethality [98].\nIt was demonstrated that the TGF-\u03b2 produced by osteoblasts could be stored in a latent form in the bone matrix [99]. TGF-\u03b2 has been shown to stimulate collagen synthesis, and it is an effective chemokine that increases the extracellular matrix and regulates bone and cartilage formation, which could thereby serve as a crucial local and systemic regulatory molecule involved in fracture healing [99,100,101,102]. There are indications from studies in bone fracture healing that miR-185 is a key regulator of TGF-\u03b21. Zhao, Pengfei et al. found an inverse relationship between TGF-\u03b21 and miR-185 expression in the bone tissue, blood, and cerebrospinal fluid of patients with spinal cord injuries induced by thoracolumbar spine compression fractures. Expression levels of TGF-\u03b21 mRNA and protein were significantly increased in patients who underwent surgery 8\u201314 days following fracture compared to those that who underwent surgery 1\u20137 days following a fracture. In addition, miR-185 expression was significantly decreased following the time of injury. These findings suggest that miR-185 target TGF-\u03b21, and that both molecules could serve as important diagnostic tools in monitoring the status of skeletal repair and regeneration [103]. Sun, Deping et al. also observed that TGF-\u03b21 expression was gradually elevated in the bone and blood tissues within two weeks post ankle fracture, accompanied by downregulation of miR-185 expression. The same study found that upregulation of miR-185 could reduce the proliferative activity of hFOB1.19 cells via influencing TGF-\u03b21 gene transcription and translation [104].\nOsteonecrosis of the femoral head (ONFH) is an orthopaedic disease caused by compromised blood supply of the femoral head, leading to local death of the osteocytes and the component of bone marrow [105,106]. Subsequently, this condition led progressively to advanced structural deterioration and collapse of the femoral head, and ultimately caused pain, dysfunction of the hip joint and severe arthritis [105,106]. Tian, Lei et al. reported increased expression of miR-141 and decreased expression of TGF-\u03b22 in femoral head tissues of ONFH patients. Suppression of miR-141 resulted in an elevated level of TGF-\u03b22, by which TGF-\u03b22 is a direct target of miR-141. Furthermore, the suppression of miR-141 or elevation of TGF-\u03b22 inhibited apoptosis of bone cells derived from ONFH rats, elevated osteoprotegerin (OPG), B-cell lymphoma 2 (Bcl-2), BMP-2, and RUNX2 expression for stimulating osteoblast activity, with concomitant decreases in osteoprotegerin ligand (OPGL), Bcl-2-associated X protein (Bax), and receptor activator of nuclear factor kappa-\u03b2 (RANK) expression for inhibiting osteoclast activity in the femoral head tissues of rats with ONFH [107].",
+          "cos_sim_score": 0.5831514596939087,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10925519",
+          "title": "Analysis of the Potential Angiogenic Mechanisms of BuShenHuoXue Decoction against Osteonecrosis of the Femoral Head Based on Network Pharmacology and Experimental Validation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10925519/",
+          "text": "13\n, \n14\n, \n15\n Nevertheless, given the complexity of the active components in TCM compounds and the diversity of potential regulatory targets in humans, the potential angiogenic mechanism of BSHX for the treatment of ONFH remains to be systematically investigated.\nThe aim of this study was to elucidate the angiogenic mechanism underlying the prevention and treatment of ONFH by BSHX through promoting the angiogenic capacity of steroid\u2010induced osteonecrosis of the femoral head (SONFH) rat model and BMSCs. Meanwhile, the systemic network pharmacological study of BSHX could contribute to the clarification of potential angiogenesis\u2010related targets or pathways of BSHX, thus further confirming the potential angiogenic role of BSHX. Consequently, in this study, we hypothesized that: (i) BSHX could upregulate the expression of angiogenic factors in femoral head samples from SONFH rats; (ii) BSHX\u2010containing serum could ameliorate the inhibitory effect of high concentrations of Dex on the expression of angiogenic factors; and (iii) BMSCs induced by BSHX\u2010containing serum could promote the migratory\u2010proliferative activity and angiogenic\u2010differentiation capacity of RAOECs. The experimental flow was shown in Figure\u00a01.\nFIGURE 1\nExperimental procedure. In vivo experiments, the rat steroid\u2010induced osteonecrosis of the femoral head (SONFH) model was established and different interventions were given. After 12 weeks, the expression of angiogenic factors in the femoral head of rats was detected. In vitro experiments, BuShenHuoXue decoction (BSHX)\u2010containing serum was extracted, and rat bone marrow mesenchymal stem cells (BMSCs) were isolated and given different interventions. After 48h of intervention,\u00a0the effect of BSHX\u2010containing serum on the angiogenic capacity of BMSCs was detected.\nMaterials and Methods\nAnimals and Drugs\nSixty healthy SPF\u2010grade male Sprague Dawley (SD) rats at 8\u2009weeks of age weighing 200\u2009\u00b1\u200920 g were used for in vivo experiments; 10 male SD rats (4\u2010week\u2010old) weighing approximately 175\u2009\u00b1\u200925 g were used to extract bone marrow mesenchymal stem cells; and 40 male SD rats (8\u2010week\u2010old) weighing 275\u2009\u00b1\u200925 g were used to extract serum containing BSHX. Experimental animal license number: SYXK (Lu) 2018\u20100015. All experimental operations and animal disposal procedures were approved by the Animal Research Ethics Committee of the Affiliated Hospital of Shandong University of Traditional Chinese Medicine (AWE\u20102019\u2010107), and the relevant provisions of Health Guidelines for the Care and Use of Laboratory Animals\n16\n and the Guidelines for Reporting Animal Research: In vivo Experiments\n17\n were strictly implemented.",
+          "cos_sim_score": 0.5501339435577393,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10366127",
+          "title": "Identification of hub genes and therapeutic drugs in osteonecrosis of the femoral head through integrated bioinformatics analysis and literature mining",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10366127/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a multifactorial disease with an unknown etiology, characterized by loss of integrity of the subchondral bone1. It mainly affects men aged 30\u201350 years and involves more and more youngers1,2. Despite the identification of corticosteroid use, alcohol, sickle-cell disease, and trauma as the major risk factors for ONFH, its pathogenesis remains incompletely understood2,3. Surgery is the only effective way to treat ONFH at present4. In the USA, approximately 10% of hip replacements are due to ONFH, and in the UK, ONFH is the third most common indication for total hip replacements in people under 50, which causes a heavy socioeconomic burden1,4. Effective drug therapies have not been established5. Therefore, identifying novel biomarkers and therapeutic drugs involved in the ONFH is of great significance in exploring efficient treatment strategies.\nOver the past two decades, few researchers have focused on exploring the mechanism of ONFH at the gene level6. Abnormalities in some genes, such as plasminogen-activating inhibitor-1 and nitric oxide synthase 3, have been proven to weaken the osteogenic differentiation capacity of bone marrow mesenchymal stem cells or disrupt angiogenesis, leading to the collapse of the femoral head surface7,8. However, the specific molecular mechanism of ONFH has not yet been clarified, and drug discovery has had little success. Recently, gene chips and high-throughput sequencing technologies have been widely used in the screening of disease-causing genes and have achieved practical and reliable results9. A new drug prediction method, drug-gene-disease triangulation based on literature mining, has been confirmed to be robust and reliable for identifying new drug candidates10.\nIn this study, we analyzed two gene expression profiles (Table 1) extracted from the National Center for Biotechnology Information Gene Expression Omnibus (GEO) database, which is a free global database of sequencing results. DEGs were identified by using the online tool GEO2R. Subsequently, the function of DEGs was determined by the Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analysis. With the help of Cytoscape, ten hub genes were selected and then validated by ROC analysis. Finally, the targeted drugs for ONFH were identified through the Drug-Gene Interaction Database (DGIdb) and cross-validated by integrated literature mining. Our study figured out the drug-gene-disease correlation to generate new insights into the prevention and treatment of ONFH.Table 1Detailed information on the GEO microarray profiles.ProfileOrganismSample sourceTechnology typeCasesControlsPlatformGSE123568Homo sapiensPeripheral serumIn situ oligonucleotide3010GPL15207GSE74089Homo sapiensHip cartilageIn situ oligonucleotide44GPL13497\nTable 1\nDetailed information on the GEO microarray profiles.\nResults\nIdentification of DEGs in ONFH",
+          "cos_sim_score": 0.5437827110290527,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10094338",
+          "title": "Post-Transcriptional Regulatory Crosstalk between MicroRNAs and Canonical TGF-\u03b2/BMP Signalling Cascades on Osteoblast Lineage: A Comprehensive Review",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10094338/",
+          "text": "Ankylosing spondylitis (AS, OMIM#106300) is a long-term inflammatory spinal arthritis which causes small bones in vertebrae to fuse with increased fracture susceptibility in the spinal column [149]. MiR-214 was found to impact fibroblast osteogenesis by targeting BMP-2 and inactivating the BMP/TGF-\u03b2 axis, presenting a potential treatment target for stimulating new bone formation in ankylosing spondylitis therapeutic [150].\nMiR-93-5p was reported by Zhang, Ying et al. to facilitate proliferation while suppressing osteogenic differentiation of human BMSCs, which was accompanied by significantly reduced ALP activity and calcium nodule formation as well as the expression of BMP-2, RUNX2, and Osx [151]. Trauma-induced osteonecrosis of the femoral head (TIONFH) is a major complication that arises from femoral neck fractures, dislocation of the hip, and other hip trauma [152]. Increased miR-93-5p expression in TIONFH patients inhibited osteoblastic differentiation by reducing BMP-2 mRNA and protein expression via 3\u2032-UTR targeting, which was accompanied by significant TIONFH bone necrosis with hip collapse and dysfunction. Hence, miR-93-5p may be a potential therapeutic target for the prevention of TIONFH.\nMC3T3-E1, a mouse pre-osteogenic cell line that differentiates to osteoblast under the stimulation of BMP-2, is a well-known model for studying osteoblast differentiation [153]. The expression of miR-543 was significantly reduced during osteogenic differentiation in this model. It was also found that overexpression of miR-543 inhibited the proliferation and osteogenic differentiation of MC3T3-E1 cells via direct inhibition of BMP-2 [154]. Upregulation of another miRNA, miR-142, was found to repress cell viability while promoting apoptosis in MC3T3-E1 cells, thereby inhibiting osteoblasts differentiation. BMP-2 was also confirmed as a target gene of miR-142. In addition, miR-142 was found to substantially reduce the p-Smad1/5/Smad1 and p-Smad1/5/Smad5 ratios, suggesting a suppressive role [155]. Li, Xuesen et al. identified for the first time that miR-342-5p was downregulated during osteoblast differentiation of MC3T3-E1 cells. It was found that aberrant expression of miR-342-5p inhibited proliferation, induced apoptosis, suppressed cell migration, and inhibited osteogenic differentiation of MC3T3-E1 or human MSCs, by functionally targeting both collagen type IV alpha 6 chain (COL4A6) and BMP-2. Silencing of miR-342-5p promoted cell proliferation, migration, and osteoblast differentiation via upregulating BMP-7, along with activation of the mitogen-activated protein kinase/ERK kinase (MEK)/extracellular-signal-regulated kinase (ERK) cascade [156].",
+          "cos_sim_score": 0.5408021807670593,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "rf_rank": 28,
+  "probe_id": "11731728_at",
+  "gene_symbol": "P2RY13",
+  "score": 0.6,
+  "rf_n_nodes": 2,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 1.2888,
+  "log_fc": 1.2888,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11731728_at",
+  "max_score": 0.6,
+  "mean_abs_fold_change": 1.2888,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T20:18:52",
+  "interpretation": "P2RY13 encodes the P2Y purinoceptor 13, a receptor for adenosine diphosphate (ADP) that is coupled to G(i)-proteins and is implicated in hematopoiesis and immune responses. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), P2RY13 has been identified as a potential diagnostic marker, suggesting its involvement in the immune mechanisms associated with the disease. The retrieved evidence indicates that P2RY13 is linked to immune cell infiltration, particularly with memory B cells and activated dendritic cells, which may play a role in the pathophysiology of SONFH. This connection is supported by a study that highlights P2RY13 among other genes as key markers for SONFH, indicating its relevance in early detection. Overall, the evidence suggests a moderate confidence in P2RY13's role as a biomarker for SONFH, with potential clinical implications for early diagnosis and monitoring of the disease.",
+  "evidence_relation": "direct",
+  "evidence_tier": "Tier 2",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "P2RY13 is implicated in immune mechanisms relevant to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) and may serve as a diagnostic biomarker.",
+  "citations": [
+    "P2RY13 (Q9BPV8). https://www.uniprot.org/uniprotkb/Q9BPV8",
+    "P2RY13 (Q9BPV8-2). https://www.uniprot.org/uniprotkb/Q9BPV8-2",
+    "P2RY13 \u2014 P2RY13. https://platform.opentargets.org/target/ENSG00000181631",
+    "P2RY13 \u2194 diverticular disease. https://platform.opentargets.org/target/ENSG00000181631/associations",
+    "P2RY13 \u2194 lung adenocarcinoma. https://platform.opentargets.org/target/ENSG00000181631/associations",
+    "P2RY13 \u2194 ulcerative colitis. https://platform.opentargets.org/target/ENSG00000181631/associations",
+    "P2RY13 \u2194 abdominal abscess. https://platform.opentargets.org/target/ENSG00000181631/associations",
+    "Identification of key biomarkers in steroid-induced osteonecrosis of the femoral head and their correlation with immune infiltration by bioinformatics analysis. (2022). https://pubmed.ncbi.nlm.nih.gov/35042504/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 2948,
+    "completion_tokens": 287,
+    "total_tokens": 3235,
+    "estimated_cost_usd": 0.000614
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9BPV8",
+          "title": "P2RY13 (Q9BPV8)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BPV8",
+          "text": "Protein: P2Y purinoceptor 13\nFunction: Receptor for ADP. Coupled to G(i)-proteins. May play a role in hematopoiesis and the immune system",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9BPV8-2",
+          "title": "P2RY13 (Q9BPV8-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BPV8-2",
+          "text": "Protein: Isoform 2 of P2Y purinoceptor 13",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000181631::function",
+          "title": "P2RY13 \u2014 P2RY13",
+          "url": "https://platform.opentargets.org/target/ENSG00000181631",
+          "text": "Function: Receptor for ADP. Coupled to G(i)-proteins. May play a role in hematopoiesis and the immune system. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000181631::EFO_0009959",
+          "title": "P2RY13 \u2194 diverticular disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000181631/associations",
+          "text": "Disease: diverticular disease\nDescription: A complex disorder characterised by mucosal outpouchings (diverticulae) of the colonic wall which can become infected and inflamed leading to diverticulitis, perforation and bleeding.\nAssociation score: 0.120",
+          "cos_sim_score": 0.12037376803861462,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000181631::EFO_0000571",
+          "title": "P2RY13 \u2194 lung adenocarcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000181631/associations",
+          "text": "Disease: lung adenocarcinoma\nDescription: A carcinoma that arises from the lung and is characterized by the presence of malignant glandular epithelial cells. There is a male predilection with a male to female ratio of 2:1. Usually lung adenocarcinoma is asymptomatic and is identified through screening studies or as an incidental radiologic finding. If clinical symptoms are present they include shortness of breath, cough, hemoptysis, chest pain, and fever. Tobacco smoke is a known risk factor.\nAssociation score: 0.083",
+          "cos_sim_score": 0.08264984895989172,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000181631::EFO_0000729",
+          "title": "P2RY13 \u2194 ulcerative colitis",
+          "url": "https://platform.opentargets.org/target/ENSG00000181631/associations",
+          "text": "Disease: ulcerative colitis\nDescription: An inflammatory bowel disease involving the mucosal surface of the large intestine and rectum. It may present with an acute or slow onset and follows an intermittent or continuous course. Signs and symptoms include abdominal pain, diarrhea, fever, weight loss, and intestinal hemorrhage.\nAssociation score: 0.076",
+          "cos_sim_score": 0.07632715889665039,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000181631::EFO_1001753",
+          "title": "P2RY13 \u2194 abdominal abscess",
+          "url": "https://platform.opentargets.org/target/ENSG00000181631/associations",
+          "text": "Disease: abdominal abscess\nDescription: An abscess located in the abdominal cavity, i.e., the cavity between the diaphragm above and the pelvis below. (From Dorland, 27th ed)\nAssociation score: 0.064",
+          "cos_sim_score": 0.06406986981862658,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::35042504",
+          "title": "Identification of key biomarkers in steroid-induced osteonecrosis of the femoral head and their correlation with immune infiltration by bioinformatics analysis.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35042504/",
+          "year": "2022",
+          "text": "This study aimed to identify key diagnostic markers and immune infiltration of (SONFH) by bioinformatics analysis. Related SONFH datasets were downloaded from the Gene Expression Omnibus (GEO) database. First, we identified the differentially expressed genes (DEGs) and performed the functional enrichment analysis. Then weighted correlation network analysis (WGCNA) and the MCODE plug-in in Cytoscape were used to identify the diagnostic markers of SONFH. Finally, CIBERSORT was used to analyze the immune infiltration between SONFH and healthy controls, and the correlation between infiltrating immune cells and diagnostic markers was analyzed. TYROBP, TLR2, P2RY13, TLR8, HCK, MNDA, and NCF2 may be key diagnostic markers of SONFH. Immune cell infiltration analysis revealed that Memory B cells and activated dendritic cells may be related to the SONFH process. Moreover, HCK was negatively correlated with CD8 T cells, and neutrophils were positively correlated with those key diagnostic markers. TYROBP, TLR2, P2RY13, TLR8, HCK, MNDA, and NCF2 may be used as diagnostic markers of SONFH, and immune-related mechanism of SONFH and the potential immunotherapy are worthy of further study.",
+          "cos_sim_score": 0.009625162929296494,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_fetch_by_id",
+      "result": []
+    }
+  ]
+}

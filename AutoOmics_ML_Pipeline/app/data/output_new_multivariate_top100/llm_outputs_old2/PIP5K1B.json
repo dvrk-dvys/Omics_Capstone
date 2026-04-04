@@ -1,0 +1,247 @@
+{
+  "probe_id": "11721029_a_at",
+  "gene_symbol": "PIP5K1B",
+  "rf_importance": 0.037,
+  "selection_freq": 1.0,
+  "abs_fold_change": 2.0196019666666665,
+  "score": 0.5613,
+  "probe_count": 3,
+  "probe_ids": "11721029_a_at | 11721030_a_at | 11747546_a_at",
+  "max_score": 0.5613,
+  "mean_abs_fold_change": 2.0101,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T20:15:39",
+  "interpretation": "PIP5K1B encodes a kinase that catalyzes the conversion of phosphatidylinositol 4-phosphate to phosphatidylinositol 4,5-bisphosphate, a critical lipid second messenger involved in various cellular processes such as signal transduction and cytoskeletal dynamics. This gene has been identified as a candidate biomarker for steroid-induced osteonecrosis of the femoral head (SONFH) due to its significant association with lipid metabolism, which is disrupted in SONFH. The retrieved evidence indicates that PIP5K1B is part of a set of six lipid metabolism-related genes that show altered expression in SONFH patients, suggesting its role in the disease's pathogenesis. The evidence is strong enough to classify PIP5K1B as a potential early-detection biomarker for SONFH, as it is linked to the lipid accumulation and inflammatory processes that contribute to the disease.",
+  "evidence_relation": "direct",
+  "evidence_tier": "Tier 1",
+  "evidence_confidence": "high",
+  "biomarker_potential": "strong",
+  "relevance_summary": "PIP5K1B is implicated in the lipid metabolism dysregulation associated with steroid-induced osteonecrosis of the femoral head (SONFH).",
+  "citations": [
+    "PIP5K1B (O14986). https://www.uniprot.org/uniprotkb/O14986",
+    "PIP5K1B (O14986-2). https://www.uniprot.org/uniprotkb/O14986-2",
+    "PIP5K1B (O14986-3). https://www.uniprot.org/uniprotkb/O14986-3",
+    "PIP5K1B \u2014 PIP5K1B. https://platform.opentargets.org/target/ENSG00000107242",
+    "PIP5K1B \u2194 ovarian dysfunction. https://platform.opentargets.org/target/ENSG00000107242/associations",
+    "PIP5K1B \u2194 Abnormal pupillary function. https://platform.opentargets.org/target/ENSG00000107242/associations",
+    "PIP5K1B \u2194 neuroinflammatory disorder. https://platform.opentargets.org/target/ENSG00000107242/associations",
+    "PIP5K1B \u2194 chronic kidney disease. https://platform.opentargets.org/target/ENSG00000107242/associations",
+    "Discovery of lipid metabolism-related diagnostic biomarkers and construction of diagnostic model in steroid-induced osteonecrosis of femoral head. (2025). https://pubmed.ncbi.nlm.nih.gov/40823179/",
+    "PIP5K1B \u2014 phosphatidylinositol-4-phosphate 5-kinase type 1 beta (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "SNCA \u2014 synuclein alpha (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "SNAI1 \u2014 snail family transcriptional repressor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "SYK \u2014 spleen associated tyrosine kinase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "BTK \u2014 Bruton tyrosine kinase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Discovery of lipid metabolism-related diagnostic biomarkers and construction of diagnostic model in steroid-induced osteonecrosis of femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12355359/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9426,
+    "completion_tokens": 323,
+    "total_tokens": 9749,
+    "estimated_cost_usd": 0.001608
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O14986",
+          "title": "PIP5K1B (O14986)",
+          "url": "https://www.uniprot.org/uniprotkb/O14986",
+          "text": "Protein: Phosphatidylinositol 4-phosphate 5-kinase type-1 beta\nFunction: Catalyzes the phosphorylation of phosphatidylinositol 4-phosphate (PtdIns(4)P/PI4P) to form phosphatidylinositol 4,5-bisphosphate (PtdIns(4,5)P2/PIP2), a lipid second messenger that regulates several cellular processes such as signal transduction, vesicle trafficking, actin cytoskeleton dynamics, cell adhesion, and cell motility (By similarity). PtdIns(4,5)P2 can directly act as a second messenger or can be utilized as a precursor to generate other second messengers: inositol 1,4,5-trisphosphate (IP3), diacylglycerol (DAG) or phosphatidylinositol-3,4,5-trisphosphate (PtdIns(3,4,5)P3/PIP3) (By similarity). Mediates RAC1-dependent reorganization of actin filaments. Contributes to the activation of phospholipase PLD2. Together with PIP5K1A, is required, after stimulation by G-protein coupled receptors, for the synthesis of IP3 that will induce stable platelet adhesion (By similarity)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::O14986-2",
+          "title": "PIP5K1B (O14986-2)",
+          "url": "https://www.uniprot.org/uniprotkb/O14986-2",
+          "text": "Protein: Isoform 2 of Phosphatidylinositol 4-phosphate 5-kinase type-1 beta",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::O14986-3",
+          "title": "PIP5K1B (O14986-3)",
+          "url": "https://www.uniprot.org/uniprotkb/O14986-3",
+          "text": "Protein: Isoform 3 of Phosphatidylinositol 4-phosphate 5-kinase type-1 beta",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000107242::function",
+          "title": "PIP5K1B \u2014 PIP5K1B",
+          "url": "https://platform.opentargets.org/target/ENSG00000107242",
+          "text": "Function: Catalyzes the phosphorylation of phosphatidylinositol 4- phosphate (PtdIns(4)P/PI4P) to form phosphatidylinositol 4,5- bisphosphate (PtdIns(4,5)P2/PIP2), a lipid second messenger that regulates several cellular processes such as signal transduction, vesicle trafficking, actin cytoskeleton dynamics, cell adhesion, and cell motility (By similarity). PtdIns(4,5)P2 can directly act as a second messenger or can be utilized as a precursor to generate other second messengers: inositol 1,4,5-trisphosphate (IP3), diacylglycerol (DAG) or phosphatidylinositol-3,4,5-trisphosphate (PtdIns(3,4,5)P3/PIP3) (By similarity). Mediates RAC1-dependent reorganization of actin filaments. Contributes to the activation of phospholipase PLD2. Together with PIP5K1A, is required, after stimulation by G-protein coupled receptors, for the synthesis of IP3 that will induce stable platelet adhesion (By similarity). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000107242::EFO_0009003",
+          "title": "PIP5K1B \u2194 ovarian dysfunction",
+          "url": "https://platform.opentargets.org/target/ENSG00000107242/associations",
+          "text": "Disease: ovarian dysfunction\nDescription: The inability of the ovaries to function.\nAssociation score: 0.318",
+          "cos_sim_score": 0.31764053237551393,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000107242::HP_0007686",
+          "title": "PIP5K1B \u2194 Abnormal pupillary function",
+          "url": "https://platform.opentargets.org/target/ENSG00000107242/associations",
+          "text": "Disease: Abnormal pupillary function\nDescription: A functional abnormality of the pupil.\nAssociation score: 0.314",
+          "cos_sim_score": 0.31422613165989943,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000107242::EFO_0020092",
+          "title": "PIP5K1B \u2194 neuroinflammatory disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000107242/associations",
+          "text": "Disease: neuroinflammatory disorder\nDescription: A hypersensitivity reaction type II disease that involves the central nervous system.\nAssociation score: 0.314",
+          "cos_sim_score": 0.3138709988989848,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000107242::EFO_0003884",
+          "title": "PIP5K1B \u2194 chronic kidney disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000107242/associations",
+          "text": "Disease: chronic kidney disease\nDescription: The end-stage of CHRONIC RENAL INSUFFICIENCY. It is characterized by the severe irreversible kidney damage (as measured by the level of PROTEINURIA) and the reduction in GLOMERULAR FILTRATION RATE to less than 15 ml per min (Kidney Foundation: Kidney Disease Outcome Quality Initiative, 2002). These patients generally require HEMODIALYSIS or KIDNEY TRANSPLANTATION.\nAssociation score: 0.275",
+          "cos_sim_score": 0.27506395411448237,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::40823179",
+          "title": "Discovery of lipid metabolism-related diagnostic biomarkers and construction of diagnostic model in steroid-induced osteonecrosis of femoral head.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40823179/",
+          "year": "2025",
+          "text": "This study aimed to identify candidate diagnostic biomarkers for steroid-induced osteonecrosis of the femoral head (SONFH). Two datasets were downloaded from the Gene Expression Omnibus for analyses of differentially expressed genes (DEGs) and lipid scores in SONFH and control groups and a weighted gene co-expression network analysis. Overlap between genes in the disease-related module, DEGs, and lipid metabolism-related genes was evaluated to obtain lipid metabolism-related DEGs. A diagnostic model was constructed and evaluated using a nomogram analysis and calibration curves. Correlations between immune cells and lipid metabolism-related DEGs in the model were evaluated. In total, 1,724 DEGs were screened between the SONFH and control groups. Seven SONFH-related modules and 18 lipid metabolism-related DEGs were identified. A total of six optimized genes, <i>CDK8</i>, <i>CHPT1</i>, <i>DPEP3</i>, <i>ORMDL3</i>, <i>PIP5K1B</i>, and <i>PPT2</i>, were obtained. A model based on these genes had good diagnostic performance for SONFH in GSE123568 and GSE74089. The six genes were significantly related to two immune cell subsets, myeloid dendritic cell activated and neutrophil. These six genes may be novel biomarkers for SONFH and the combination is a potential diagnostic signature.",
+          "cos_sim_score": 0.514923095703125,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "PIP5K1B \u2014 phosphatidylinositol-4-phosphate 5-kinase type 1 beta",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PIP5K1B\nGene name: phosphatidylinositol-4-phosphate 5-kinase type 1 beta\nAliases / synonyms: MSS4, STM7\nOrganism: Homo sapiens\nGene summary: Predicted to enable 1-phosphatidylinositol-4-phosphate 5-kinase activity. Predicted to be involved in phosphatidylinositol phosphate biosynthetic process. Predicted to act upstream of or within phosphatidylinositol biosynthetic process. Located in uropod. [provided by Alliance of Genome Resources, Apr 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PIP5K1B",
+          "aliases": "MSS4, STM7",
+          "gene_description": "phosphatidylinositol-4-phosphate 5-kinase type 1 beta"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "SNCA \u2014 synuclein alpha",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SNCA\nGene name: synuclein alpha\nAliases / synonyms: NACP, PARK1, PARK4, PD1\nOrganism: Homo sapiens\nGene summary: Alpha-synuclein is a member of the synuclein family, which also includes beta- and gamma-synuclein. Synucleins are abundantly expressed in the brain and alpha- and beta-synuclein inhibit phospholipase D2 selectively. SNCA may serve to integrate presynaptic signaling and membrane trafficking. Defects in SNCA have been implicated in the pathogenesis of Parkinson disease. SNCA peptides are a major component of amyloid plaques in the brains of patients with Alzheimer's disease. Alternatively spliced transcripts encoding different isoforms have been identified for this gene. [provided by RefSeq, Feb 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SNCA",
+          "aliases": "NACP, PARK1, PARK4, PD1",
+          "gene_description": "synuclein alpha"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "SNAI1 \u2014 snail family transcriptional repressor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SNAI1\nGene name: snail family transcriptional repressor 1\nAliases / synonyms: SLUGH2, SNA, SNAH, SNAIL, SNAIL1, dJ710H13.1\nOrganism: Homo sapiens\nGene summary: The Drosophila embryonic protein snail is a zinc finger transcriptional repressor which downregulates the expression of ectodermal genes within the mesoderm. The nuclear protein encoded by this gene is structurally similar to the Drosophila snail protein, and is also thought to be critical for mesoderm formation in the developing embryo. At least two variants of a similar processed pseudogene have been found on chromosome 2. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SNAI1",
+          "aliases": "SLUGH2, SNA, SNAH, SNAIL, SNAIL1, dJ710H13.1",
+          "gene_description": "snail family transcriptional repressor 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "SYK \u2014 spleen associated tyrosine kinase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SYK\nGene name: spleen associated tyrosine kinase\nAliases / synonyms: IMD82, p72-Syk\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the family of non-receptor type Tyr protein kinases. This protein is widely expressed in hematopoietic cells and is involved in coupling activated immunoreceptors to downstream signaling events that mediate diverse cellular responses, including proliferation, differentiation, and phagocytosis. It is thought to be a modulator of epithelial cell growth and a potential tumour suppressor in human breast carcinomas. Alternatively spliced transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Mar 2010]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SYK",
+          "aliases": "IMD82, p72-Syk",
+          "gene_description": "spleen associated tyrosine kinase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "BTK \u2014 Bruton tyrosine kinase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: BTK\nGene name: Bruton tyrosine kinase\nAliases / synonyms: AGMX1, AT, ATK, BPK, IGHD3, IMD1, PSCTK1, XLA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene plays a crucial role in B-cell development. Mutations in this gene cause X-linked agammaglobulinemia type 1, which is an immunodeficiency characterized by the failure to produce mature B lymphocytes, and associated with a failure of Ig heavy chain rearrangement. Alternative splicing results in multiple transcript variants encoding different isoforms. [provided by RefSeq, Dec 2013]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "BTK",
+          "aliases": "AGMX1, AT, ATK, BPK, IGHD3, IMD1, PSCTK1, XLA",
+          "gene_description": "Bruton tyrosine kinase"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::12355359",
+          "title": "Discovery of lipid metabolism-related diagnostic biomarkers and construction of diagnostic model in steroid-induced osteonecrosis of femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12355359/",
+          "text": "1\nIntroduction\nNontraumatic osteonecrosis of the femoral head (NONFH) is a common debilitating orthopedic disease with high disability rate [1]. A large-scale epidemiological study conducted in China estimated that the cumulative number of patients with NONFH has reached 8.12 million [2]. The pain and restricted hip joint mobility resulting from femoral head necrosis can significantly impair the quality of life of affected individuals [3]. Steroid hormones are the primary cause of NONFH [4]. Hormones can lead to an increase in adipocytes in the femoral head and accumulation in the medullary cavity, which increases the pressure in the medullary cavity and compresses the surrounding blood vessels, eventually leading to steroid-induced ONFH (SONFH) [5]. SONFH is a debilitating orthopedic condition characterized by the progressive deterioration of the hip joint in individuals aged 20\u201350 years [6,7]. As the disease advances, the range of joint motion decreases gradually. When necrotic lesions exceed 30% in volume, the collapse rate of the femoral head can reach 80%, severely impacting quality of life [8]. However, SONFH is challenging to diagnose in its early stages and difficult to reverse in its advanced stages. Therefore, early diagnosis utilizing effective biomarkers and interventions are of great clinical significance.\nAbnormal lipid metabolism is a primary pathological process in osteonecrosis [9]. Hormone drugs increase blood lipids, and the abnormal distribution of lipids can cause fat emboli in microvessels, leading to ischemic necrosis of the femoral head. In cases of SONFH, lipid accumulation within osteocytes causes these cells to enlarge, compressing the nucleus and compromising the integrity of the cell membrane, ultimately resulting in cell death and necrosis [10]. Ren et al. confirmed that glucocorticoid-induced ONFH is closely associated with lipid metabolism disorders induced by high-dose steroid administration in vivo [11,12]. Jiang et al. [13] found that the occurrence of SONFH could be inhibited by reducing the content of blood lipids, which could promote the growth of osteoblasts and inhibit adipocyte gene expression. Nozaki et al. [14] found that pravastatin can decrease the content of adipocytes within the femoral head of rats by regulating lipid metabolism, which in turn inhibits the occurrence of ONFH. Yeh et al. [15] confirmed that the expression of genes related to bone formation can be inhibited by hormones and increase the expression of lipid-related genes. However, the particular molecular mechanism by which lipid metabolism contributes to SONFH needs to be investigated.\nIn this study, the relationship between SONFH and lipid metabolism-related genes were studied. Genes that are significantly related to lipid metabolism and differentially expressed in SONFH were screened, and a diagnostic model based on these genes was constructed. The results provide a basis for diagnosis as well as potential therapeutic targets for SONFH.\n2\nMethods\n2.1\nDataset and samples\nGSE123568 and GSE74089 were downloaded on November 6, 2023 from the National Center for Biotechnology Information (NCBI) Gene Expression Omnibus (GEO) database [16] (http://www.ncbi.nlm.nih.gov/geo/). GSE123568 [17], used as a training dataset, contained 40 human blood serum samples from 30 patients with SONFH and 10 normal controls. The detection platform for GSE123568 was GPL15207 ([PrimeView] Affymetrix Human Gene Expression Array). GSE74089, used as the validation dataset, contained eight human synovial tissue samples from four patients with NFH and four normal controls (CTRL). The platform for GSE74089 was GPL13497 (Agilent-026652 Whole Human Genome Microarray 4x44K v2).\n2.2\nScreening of significantly differentially expressed genes (DEGs)",
+          "cos_sim_score": 0.6187241077423096,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12355359",
+          "title": "Discovery of lipid metabolism-related diagnostic biomarkers and construction of diagnostic model in steroid-induced osteonecrosis of femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12355359/",
+          "text": "The study had several limitations. First, the diagnostic efficiency and prognostic value of the critical genes were analyzed and validated solely within the GEO dataset. Second, most of the conclusions were derived from bioinformatics analyses. Therefore, additional experiments are necessary to validate these findings using tumor samples and clinical data. Additionally, in vivo and in vitro experiments could further elucidate the functions of the critical genes in SONFH.\n5\nConclusion\nIn conclusion, this study showed that CDK8, CHPT1, DPEP3, ORMDL3, PIP5K1B, and PPT2 may play important roles in the pathogenesis of SONFH and may be novel biomarkers. A model based on the six genes had relatively high auxiliary diagnostic value for SONFH.\nAbbreviations\nDEGsdifferentially expressed genesGOgene ontologyGSEAGene Set Enrichment AnalysisKEGGKyoto Encyclopedia of Genes and GenomesNONFHnontraumatic osteonecrosis of the femoral headROCreceiver operating characteristicSONFHsteroid-induced osteonecrosis of femoral headSVMsupport vector machineWGCNAweighed gene co-expression network analysis\ndifferentially expressed genes\ngene ontology\nGene Set Enrichment Analysis\nKyoto Encyclopedia of Genes and Genomes\nnontraumatic osteonecrosis of the femoral head\nreceiver operating characteristic\nsteroid-induced osteonecrosis of femoral head\nsupport vector machine\nweighed gene co-expression network analysis",
+          "cos_sim_score": 0.3577738106250763,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12355359",
+          "title": "Discovery of lipid metabolism-related diagnostic biomarkers and construction of diagnostic model in steroid-induced osteonecrosis of femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12355359/",
+          "text": "A total of 18 overlapping lipid metabolism-related, SONFH-related genes were identified. We identified six optimized lipid metabolism-related DEGs among the overlapping DEGs, namely CDK8, CHPT1, DPEP3, ORMDL3, PIP5K1B, and PPT2. Previous studies have indicated that immune cell infiltration and inflammatory pathway activation significantly impact the occurrence and development of femoral head necrosis [15,34,35]. The correlations between immune cells and SONFH have been investigated extensively [35,36]. A previous study has indicated that circRNA-CDK8 is involved in osteogenic differentiation via influencing autophagy and apoptosis in a hypoxic microenvironment [37]. CDK8 regulates de novo lipogenesis and lipid accumulation [38] and is related to lipid production, accumulation, and metabolism [38\u201340]. In addition, CDK8 is closely related to immune cells, including NK cells [41] and activated dendritic cells [42]. Dorighello et al. revealed that CHPT1 contributes to de novo phosphatidylcholine synthesis [43]. It may participate in lipid metabolism disorders by regulating glycerophospholipid metabolism in silicosis [44]. DPEP3, a member of the DPEP family, is associated with immune responses and cholesterol clearance in vascular tissues [45,46]. The substrate of DPEP2 is a pro-inflammatory lipid mediator [47]. Lai et al. have shown that DPEP3 expression is positively related to the levels of IL-1\u03b1, IL-1\u03b2, and IL-17A and may be involved in inflammation [48]. ORMDL3 plays important role in metabolic diseases [49]. Members of the ORMDL family are involved in de novo sphingolipid synthesis [50], and ORMDL3 contributes to autoimmune/inflammatory diseases [51]. PIP5Ks and PIP4Ks are two lipid kinases families [52]. PIP5K1B encodes PIP5K\u03b2 and is associated with CD28 stimulation; it participates in T cell activation and lipid raft accumulation [53]. PPT2, a lipase, may play a special role in lysosomal lipid metabolism [54]. These results indicated that the candidate genes may contribute to the development of SONFH via lipid metabolism and immune responses. In addition, the six-gene combination has relatively high reference value for the diagnosis of SONFH.\nThe study results should be validated in larger clinical samples using bioinformatics approaches. Furthermore, the clinical diagnostic value of the six-gene model should be evaluated in additional in vitro and in vivo studies.\nSeveral studies have developed prognostic models for SONFH based on DEGs. For instance, a partial least squares model exhibited high predictive accuracy (81.34\u201391.20%) and AUC (0.804\u20130.901) when used to distinguish patients with SONFH from controls in a large clinical cohort, suggesting its potential contribution to the diagnosis and prevention of femoral head collapse [55]. Wu et al. conducted an ROC curve analysis based on ten endoplasmic reticulum stress-related genes, finding that all hub genes had AUC values greater than 0.6, confirming the diagnostic potential of these genes for SONFH [56]. Similarly, Liang et al. found 11 hub genes with high diagnostic value in a comparison between SONFH and non-SONFH samples (AUC >\u2009 0.9) [57]. In this study, the diagnostic value of six optimized lipid metabolism-related DEGs in SONFH was assessed using the SVM model. An ROC analysis demonstrated good diagnostic performance for SONFH (AUC values for GSE123568 and GSE74089 of 0.957 and 0.912, respectively). These results indicate that the six optimized lipid metabolism-related DEGs possess good diagnostic ability for SONFH.\nThe study had several limitations. First, the diagnostic efficiency and prognostic value of the critical genes were analyzed and validated solely within the GEO dataset. Second, most of the conclusions were derived from bioinformatics analyses. Therefore, additional experiments are necessary to validate these findings using tumor samples and clinical data. Additionally, in vivo and in vitro experiments could further elucidate the functions of the critical genes in SONFH.\n5\nConclusion\nIn conclusion, this study showed that CDK8, CHPT1, DPEP3, ORMDL3, PIP5K1B, and PPT2 may play important roles in the pathogenesis of SONFH and may be novel biomarkers. A model based on the six genes had relatively high auxiliary diagnostic value for SONFH.\nAbbreviations",
+          "cos_sim_score": 0.35376298427581787,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12355359",
+          "title": "Discovery of lipid metabolism-related diagnostic biomarkers and construction of diagnostic model in steroid-induced osteonecrosis of femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12355359/",
+          "text": "3.4\nDiagnostic model based on lipid metabolism-related DEGs\nUnivariate logistic regression analyses of the 18 lipid metabolism-related DEGs revealed significant associations with the disease state (p < 0.05) (Figure 5a). A LASSO analysis was performed to further screen these genes, resulting in the identification of six optimized lipid metabolism-related DEGs: CDK8, CHPT1, DPEP3, ORMDL3, PIP5K1B, and PPT2 (Figure 5b).\nFigure 5\nUnivariate logistic regression analyses of lipid metabolism-related DEGs. (a) Screening of optimized genes associated with prognosis in GSE123568 by LASSO regression (b).\nWe further visualized the expression levels of these six optimized lipid metabolism-related DEGs in the GSE123568 and GSE74089 datasets. Compared with levels in the CTRL group, the expression levels of CDK8, CHPT1, ORMDL3, PIP5K1B, and PPT2 were significantly lower in the SONFH group, while the expression level of DPEP3 was significantly higher (p < 0.05, Figure 6a and d). The diagnostic value of the optimized lipid metabolism-related DEGs in SONFH was examined utilizing SVM, decision tree, and random forest models. The SVM model achieved AUC values of 0.957 for the GSE123568 dataset and 0.912 for the GSE74089 dataset (Figure 6b and e). The random forest model yielded AUC values of 0.947 for the GSE123568 dataset and 0.873 for the GSE74089 dataset (Figure A1). Similarly, the decision tree model recorded AUC values of 0.943 for the GSE123568 dataset and 0.863 for the GSE74089 dataset (Figure A2). These results indicate that all three models, developed based on the expression levels of six optimized lipid metabolism-related DEGs, demonstrate significant discriminatory ability between the SONFH and CTRL groups. Furthermore, the nomogram model and calibration curves for six genes across two databases are illustrated in Figure 6c and f. The concordance index (C-index) of the nomogram reached 0.9967 in GSE123568 and 0.9669 in GSE74089, indicating a high capacity for distinguishing between the SONFH and CTRL groups.\nFigure 6\nIn GSE123568, the expression of six genes in the two groups (a), ROC curves and area under the curve for the candidate genes (b), and nomogram and calibration of the combination of six optimized genes (CDK8, CHPT1, DPEP3, ORMDL3, PIP5K1B, and PPT2) (c). In GSE74089, the expression of six genes in the two groups (d), ROC curves and area under the curve for the candidate genes (e), and nomogram and calibration of combination of six optimized genes (CDK8, CHPT1, DPEP3, ORMDL3, PIP5K1B, and PPT2) (f).\n3.5\nValidation of six optimized lipid metabolism-related DEGs\nIn vitro experiments were conducted to assess the expression of the six optimized DEGs related to lipid metabolism. The MC3T3-E1 cell line was treated with DEX to simulate SONFH. To determine the optimal DEX concentration for induction, cell viability was evaluated using CCK-8 assays after treatment with various DEX concentrations. After 24\u2009h of treatment with 300\u2009\u03bcM DEX, cell viability decreased by over 50% (Figure 7a). Consequently, 200\u2009\u03bcM DEX was selected for further experiments. Following DEX treatment, mRNA expression analyses revealed that the osteogenesis-related genes COL1, OCN, and RUNX2 were downregulated, indicating impaired osteogenic differentiation (p < 0.05, Figure 7b). Subsequently, qRT-PCR was used to analyze the mRNA expression levels of the six optimized lipid metabolism-related DEGs in both control and DEX-treated groups. The DEX group exhibited significantly lower levels of CDK8, CHPT1, ORMDL3, PIP5K1B, and PPT2 than those in the control group, while DPEP3 expression was significantly increased (p < 0.05, Figure 7c).\nFigure 7",
+          "cos_sim_score": 0.09839659929275513,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12355359",
+          "title": "Discovery of lipid metabolism-related diagnostic biomarkers and construction of diagnostic model in steroid-induced osteonecrosis of femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12355359/",
+          "text": "Figure 7\nValidation of the six optimized genes. (a) CCK-8 assay was used to detect the viability of MC3T3-E1 cells and DXM-treated MC3T3-E1 cells. *p < 0.05, compared with the control. (b) qRT-PCR was used to detect the expression levels of COL1, OCN, and RUNX2. *p < 0.05, compared with the control. (c) qRT-PCR was used to detect the expression levels of CDK8, CHPT1, DPEP3, ORMDL3, PIP5K1B, and PPT2. *p < 0.05, compared with the control.\n3.6\nRelationships between candidate genes and differential immune cells\nFinally, the immune cell distributions in the GSE123568 samples were evaluated using CIBERSORT, as shown in Figure 8a. As determined using the Kruskal\u2013Wallis test, two immune cell types, myeloid dendritic cell activated and neutrophil, differed significantly between the two groups (Figure 8b); the frequency of myeloid dendritic cell activated was significantly higher in CRTL than in SONFH (p < 0.05), while that of neutrophil showed the opposite pattern (p < 0.001). Immune cell frequencies were positively correlated with the expression levels of CDK8, CHPT1, ORMDL3 PIP5K1B, and PPT2 and DPEP3 expression was negatively correlated with myeloid dendritic cell activated (Figure 9a). The directions of the correlations between genes and neutrophil and myeloid dendritic cell activated frequencies were opposite (Figure 9b). Additionally, the six genes were significantly correlated with the lipid score (Figure 9c).\nFigure 8\n(a) Distribution of immune cells in two samples. (b) Two distinctly distributed immune cells (myeloid dendritic cell activated and neutrophil).\nFigure 9\nCorrelations between expression levels of six genes and myeloid dendritic cell activated (a), neutrophil (b), and lipid score (c).\n4\nDiscussion\nOwing to the high disability rate and difficulty in osteonecrotic tissue repair, SONFH has attracted increasing attention [33]. There is recent evidence for the role of abnormal lipid metabolism in SONFH [5,34]. In this study, we performed a multi-step integrative bioinformatics analysis of microarray data to identify lipid metabolism-related DEGs as diagnostic biomarkers of SONFH. Using gene expression profiles in the GSE123568 dataset, a total of 1,724 DEGs (948 downregulated and 776 upregulated) were identified. Additionally, 738 lipid metabolic pathway-related genes were obtained from the MSigDB of GSEA. A module analysis and optimized gene identification revealed six lipid metabolism-related DEGs. The SVM model was used to predict the potential application of biomarkers in SONFH diagnosis, with high AUC values (i.e., 0.957 for the GSE123568 dataset and 0.912 for the GSE74089 dataset), suggesting that this risk classifier has good discriminatory ability between SONFH and CTRL groups. Our results demonstrated that these six optimized lipid metabolism-related DEGs can be used as potential biomarkers for the diagnosis of SONFH.",
+          "cos_sim_score": 0.045233577489852905,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::40823179",
+          "title": "Discovery of lipid metabolism-related diagnostic biomarkers and construction of diagnostic model in steroid-induced osteonecrosis of femoral head.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40823179/",
+          "year": "2025",
+          "text": "This study aimed to identify candidate diagnostic biomarkers for steroid-induced osteonecrosis of the femoral head (SONFH). Two datasets were downloaded from the Gene Expression Omnibus for analyses of differentially expressed genes (DEGs) and lipid scores in SONFH and control groups and a weighted gene co-expression network analysis. Overlap between genes in the disease-related module, DEGs, and lipid metabolism-related genes was evaluated to obtain lipid metabolism-related DEGs. A diagnostic model was constructed and evaluated using a nomogram analysis and calibration curves. Correlations between immune cells and lipid metabolism-related DEGs in the model were evaluated. In total, 1,724 DEGs were screened between the SONFH and control groups. Seven SONFH-related modules and 18 lipid metabolism-related DEGs were identified. A total of six optimized genes, <i>CDK8</i>, <i>CHPT1</i>, <i>DPEP3</i>, <i>ORMDL3</i>, <i>PIP5K1B</i>, and <i>PPT2</i>, were obtained. A model based on these genes had good diagnostic performance for SONFH in GSE123568 and GSE74089. The six genes were significantly related to two immune cell subsets, myeloid dendritic cell activated and neutrophil. These six genes may be novel biomarkers for SONFH and the combination is a potential diagnostic signature.",
+          "cos_sim_score": 0.514923095703125,
+          "source_type": "pubmed"
+        }
+      ]
+    }
+  ]
+}

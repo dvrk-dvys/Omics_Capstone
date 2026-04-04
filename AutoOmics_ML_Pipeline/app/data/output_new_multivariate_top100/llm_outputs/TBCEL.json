@@ -1,0 +1,210 @@
+{
+  "probe_id": "11733941_a_at",
+  "gene_symbol": "TBCEL",
+  "rf_importance": 0.0057,
+  "selection_freq": 1.0,
+  "abs_fold_change": 2.0214829999999995,
+  "score": 0.3241,
+  "probe_count": 1,
+  "probe_ids": "11733941_a_at",
+  "max_score": 0.3241,
+  "mean_abs_fold_change": 2.0215,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T22:00:54",
+  "interpretation": "TBCEL (tubulin-specific chaperone cofactor E-like protein) is involved in the regulation of tubulin stability and microtubule organization, which are critical for maintaining cellular structure and function. Although there is no direct evidence linking TBCEL to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in cytoskeletal dynamics could be relevant in the context of bone cell function and response to glucocorticoids, which are known to induce ONFH. The retrieved evidence primarily describes TBCEL's general biological functions without specific connections to SONFH, leading to a low confidence in its role as a biomarker for this condition. Therefore, while TBCEL may have potential implications in the pathology of SONFH through its involvement in cellular processes, the lack of direct evidence limits its current clinical relevance as a biomarker for early detection of SONFH.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "TBCEL may play a role in cellular processes relevant to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "TBCEL (Q5QJ74). https://www.uniprot.org/uniprotkb/Q5QJ74",
+    "TBCEL \u2014 TBCEL. https://platform.opentargets.org/target/ENSG00000154114",
+    "TBCEL \u2194 Sensorineural hearing impairment. https://platform.opentargets.org/target/ENSG00000154114/associations",
+    "TBCEL \u2194 inborn disorder of amino acid metabolism. https://platform.opentargets.org/target/ENSG00000154114/associations",
+    "TBCEL \u2194 allergic urticaria. https://platform.opentargets.org/target/ENSG00000154114/associations",
+    "TBCEL \u2194 hyperaldosteronism. https://platform.opentargets.org/target/ENSG00000154114/associations",
+    "TBCEL \u2014 tubulin folding cofactor E like (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TBCEL-TECTA \u2014 TBCEL-TECTA readthrough (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "PRKN \u2014 parkin RBR E3 ubiquitin protein ligase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "APEX1 \u2014 apurinic/apyrimidinic endodeoxyribonuclease 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "AGO2 \u2014 argonaute RISC catalytic component 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ALDH5A1 as a key in osteonecrosis of the femoral head: Insights from bioinformatics and experimental validation (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC13040433/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8161,
+    "completion_tokens": 331,
+    "total_tokens": 8492,
+    "estimated_cost_usd": 0.001423
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q5QJ74",
+          "title": "TBCEL (Q5QJ74)",
+          "url": "https://www.uniprot.org/uniprotkb/Q5QJ74",
+          "text": "Protein: Tubulin-specific chaperone cofactor E-like protein\nFunction: Acts as a regulator of tubulin stability",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000154114::function",
+          "title": "TBCEL \u2014 TBCEL",
+          "url": "https://platform.opentargets.org/target/ENSG00000154114",
+          "text": "Function: Acts as a regulator of tubulin stability. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000154114::HP_0000407",
+          "title": "TBCEL \u2194 Sensorineural hearing impairment",
+          "url": "https://platform.opentargets.org/target/ENSG00000154114/associations",
+          "text": "Disease: Sensorineural hearing impairment\nDescription: A type of hearing impairment in one or both ears related to an abnormal functionality of the cochlear nerve.\nAssociation score: 0.338",
+          "cos_sim_score": 0.33838191308620685,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000154114::MONDO_0004736",
+          "title": "TBCEL \u2194 inborn disorder of amino acid metabolism",
+          "url": "https://platform.opentargets.org/target/ENSG00000154114/associations",
+          "text": "Disease: inborn disorder of amino acid metabolism\nDescription: An inherited disorder that affects the metabolism of the amino acids. Representative examples include alkaptonuria, homocystinuria, tyrosinemia, and phenylketonuria.\nAssociation score: 0.172",
+          "cos_sim_score": 0.17204347457472788,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000154114::EFO_1000669",
+          "title": "TBCEL \u2194 allergic urticaria",
+          "url": "https://platform.opentargets.org/target/ENSG00000154114/associations",
+          "text": "Disease: allergic urticaria\nDescription: commonly referred to as hives, is a kind of skin rash notable for pale red, raised, itchy bumps. Hives may cause a burning or stinging sensation. Histamine and other proinflammatory substances are released from mast cells in the skin and tissues in response to the binding of allergen-bound IgE antibodies to high-affinity cell surface receptors. Basophils and other inflammatory cells are also seen to release histamine and other mediators, and are thought to play an important role, especially in chronic urticarial diseases.\nAssociation score: 0.136",
+          "cos_sim_score": 0.13603537883062658,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000154114::EFO_0009452",
+          "title": "TBCEL \u2194 hyperaldosteronism",
+          "url": "https://platform.opentargets.org/target/ENSG00000154114/associations",
+          "text": "Disease: hyperaldosteronism\nDescription: Overproduction of aldosterone by the adrenal glands, which may lead to hypokalemia and/or hypernatremia. [ NCIt:P378 ]\nAssociation score: 0.113",
+          "cos_sim_score": 0.11323653630727894,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "TBCEL \u2014 tubulin folding cofactor E like",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TBCEL\nGene name: tubulin folding cofactor E like\nAliases / synonyms: El, LRRC35\nOrganism: Homo sapiens\nGene summary: Predicted to enable alpha-tubulin binding activity. Predicted to be involved in microtubule cytoskeleton organization; post-chaperonin tubulin folding pathway; and tubulin complex assembly. Predicted to be located in cytoskeleton. Predicted to be active in cytoplasm. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TBCEL",
+          "aliases": "El, LRRC35",
+          "gene_description": "tubulin folding cofactor E like"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TBCEL-TECTA \u2014 TBCEL-TECTA readthrough",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TBCEL-TECTA\nGene name: TBCEL-TECTA readthrough\nOrganism: Homo sapiens\nGene summary: Predicted to be involved in cell-matrix adhesion. Predicted to be located in extracellular region; plasma membrane; and side of membrane. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TBCEL-TECTA",
+          "aliases": "",
+          "gene_description": "TBCEL-TECTA readthrough"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "PRKN \u2014 parkin RBR E3 ubiquitin protein ligase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PRKN\nGene name: parkin RBR E3 ubiquitin protein ligase\nAliases / synonyms: AR-JP, LPRS2, PARK2, PDJ\nOrganism: Homo sapiens\nGene summary: The precise function of this gene is unknown; however, the encoded protein is a component of a multiprotein E3 ubiquitin ligase complex that mediates the targeting of substrate proteins for proteasomal degradation. Mutations in this gene are known to cause Parkinson disease and autosomal recessive juvenile Parkinson disease. Alternative splicing of this gene produces multiple transcript variants encoding distinct isoforms. Additional splice variants of this gene have been described but currently lack transcript support. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PRKN",
+          "aliases": "AR-JP, LPRS2, PARK2, PDJ",
+          "gene_description": "parkin RBR E3 ubiquitin protein ligase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "APEX1 \u2014 apurinic/apyrimidinic endodeoxyribonuclease 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: APEX1\nGene name: apurinic/apyrimidinic endodeoxyribonuclease 1\nAliases / synonyms: APE, APE1, APEN, APEX, APX, HAP1, REF1\nOrganism: Homo sapiens\nGene summary: The APEX gene encodes the major AP endonuclease in human cells. It encodes the APEX endonuclease, a DNA repair enzyme with apurinic/apyrimidinic (AP) activity. Such AP activity sites occur frequently in DNA molecules by spontaneous hydrolysis, by DNA damaging agents or by DNA glycosylases that remove specific abnormal bases. The AP sites are the most frequent pre-mutagenic lesions that can prevent normal DNA replication. Splice variants have been found for this gene; all encode the same protein. Disruptions in the biological functions related to APEX are associated with many various malignancies and neurodegenerative diseases.[provided by RefSeq, Dec 2019]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "APEX1",
+          "aliases": "APE, APE1, APEN, APEX, APX, HAP1, REF1",
+          "gene_description": "apurinic/apyrimidinic endodeoxyribonuclease 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "AGO2 \u2014 argonaute RISC catalytic component 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AGO2\nGene name: argonaute RISC catalytic component 2\nAliases / synonyms: CASC7, EIF2C2, LESKRES, LINC00980, PPD, Q10\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the Argonaute family of proteins which play a role in RNA interference. The encoded protein is highly basic, and contains a PAZ domain and a PIWI domain. It may interact with dicer1 and play a role in short-interfering-RNA-mediated gene silencing. Multiple transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Sep 2009]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AGO2",
+          "aliases": "CASC7, EIF2C2, LESKRES, LINC00980, PPD, Q10",
+          "gene_description": "argonaute RISC catalytic component 2"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::13040433",
+          "title": "ALDH5A1 as a key in osteonecrosis of the femoral head: Insights from bioinformatics and experimental validation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13040433/",
+          "text": "Introduction\nOsteonecrosis of the Femoral Head (ONFH) is a prevalent clinical condition characterized by the degeneration of subchondral bone, leading to severe hip pain and substantial functional impairment (1,2). The disease is multifactorial, with the primary cause being disruption of blood supply to the femoral head, resulting in the death of bone cells, subsequent collapse of the femoral head, and degenerative changes in the hip joint. While corticosteroid use, alcohol consumption, sickle cell disease, and trauma are well-established risk factors for ONFH, the precise mechanisms underlying its pathogenesis remain unclear (3,4). Treatment options for early-stage ONFH range from surgical procedures aimed at preserving hip function to pharmacological therapies (5,6). However, most patients ultimately require total hip arthroplasty, which remains the most effective treatment (7,8). Moreover, many young patients face the need for revision surgeries, exacerbating the socioeconomic burden. Consequently, there is an urgent need to identify novel biomarkers and therapeutic targets, which are crucial for early diagnosis and the development of new treatment strategies for ONFH.\nRecent research has increasingly focused on the role of biomolecules in ONFH pathogenesis. For instance, Yu et al demonstrated the significant influence of immune cell infiltration on ONFH onset and progression, highlighting a close correlation with specific immune cell subpopulations (9). Fang et al identified that immune and m6A regulatory factors play pivotal roles in mediating the inflammatory response in ONFH, particularly involving Th2-dominated immune cells and inflammatory mediators (10). However, the detailed pathological processes remain incompletely understood. Additionally, gene chips and high-throughput sequencing technologies have proven valuable for identifying pathogenic genes, providing reliable and actionable insights (11). Thus, investigating novel molecular markers and immune cell infiltration in ONFH is critical for elucidating its underlying pathogenic mechanisms.\nThis study integrated microarray datasets from the Gene Expression Omnibus (GEO) database with cartilage samples from patients with ONFH and supplemented these with our own microarray data derived from subchondral bone samples of ONFH individuals. Using machine learning techniques, this study identified key genes, validated them via ROC analysis, and compared immune cell infiltration across 22 immune cell subtypes in ONFH and healthy controls using the CIBERSORT algorithm. This study further identified key molecular pathways and functional networks within ONFH tissues, employing bioinformatics analysis to elucidate the roles of differentially expressed mRNAs. Ultimately, critical feature genes were identified as molecular markers for both ONFH diagnosis and immune infiltration.\nMaterials and methods\nObtaining and handling data\nThe GEO database (http://www.ncbi.nlm.nih.gov/geo/) was utilized to download experimental group files for GSE74089 and GSE123568. The dataset, consisting of 14 normal synovial tissue samples (labeled as \u2018normal\u2019) and 34 ONFH synovial tissue samples (labeled as \u2018ONFH\u2019), was processed using the limma package in R software (version 3.58.1) for data correction and normalization. The samples were divided into two groups: the ONFH group (designated as \u2018Treatment\u2019) and the normal group (designated as \u2018Control\u2019). Additionally, GSE178557, which included four samples each of ONFH and normal synovial tissue, was used as an independent validation dataset for external verification.\nIdentification of DEGs and characteristic genes\nTo identify differentially expressed genes (DEGs), a multi-step approach was employed. The limma package in R (version 3.58.1) was used to filter DEGs from all datasets, applying the criteria of logFC >1 and an adjusted P-value <0.05. Following DEG screening, feature genes were selected using Lasso regression, with the glmnet (version 4.1-7) and e1071 (version 1.7-14) packages. Additionally, the Support Vector Machine (SVM) algorithm, implemented via the e1071 package (version 1.7-14), was applied to DEGs to identify another set of feature genes. Finally, Random Forest (RF) analysis was conducted on the DEGs using ggplot2 software, and genes with a gene importance score greater than 2 (rfGenes >2) were selected. By intersecting the characteristic genes identified by these three methods, a final subset of significant genes was obtained. One of these genes was chosen for further investigation as a potential marker gene.\nEvaluate the accuracy of characteristic genes",
+          "cos_sim_score": 0.5158812999725342,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::13040433",
+          "title": "ALDH5A1 as a key in osteonecrosis of the femoral head: Insights from bioinformatics and experimental validation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13040433/",
+          "text": "Isolation and cultivation of chondrocytes\nSynovial cartilage samples were collected from patients diagnosed with traumatic femoral neck fractures and severe femoral head necrosis who underwent joint replacement surgery at the First Affiliated Hospital of Guangxi Medical University between January 2021 and December 2023. The study included a control group of 6 patients with femoral neck fractures (5 males and 1 female) and an experimental group of 6 patients with severe femoral head necrosis (4 males and 2 females). All procedures were approved by the Medical Ethics Committee of the First Affiliated Hospital of Guangxi Medical University (Ethical approval no. 2021-E67-01).\nImmediately after surgery, femoral head cartilage samples were stored at -80\u02daC for subsequent processing. Approximately 100 g of femoral head cartilage was excised from each patient, cut into small pieces, and subjected to enzymatic digestion using trypsin and type I collagenase. The released chondrocytes were harvested and cultured in high-glucose Dulbecco's Modified Eagle Medium (DMEM) supplemented with 10% fetal bovine serum and antibiotics. The cells were maintained at 37\u02daC in a humidified incubator with 5% CO2. Chondrocytes from passage 3 were used for all subsequent experiments.\nRNA extraction, cDNA synthesis, and quantitative PCR\nSynovial cartilage samples were obtained from patients with ONFH and normal femoral head cartilage. Total RNA was extracted from approximately 50 g of cartilage tissue using the RNAeasy\u2122 Plus Animal RNA Isolation Kit (Beyotime Biotechnology), following the manufacturer's instructions. A total of 1 \u00b5g of RNA was reverse-transcribed into complementary DNA (cDNA) using the PrimeScript\u2122 RT Reagent Kit with gDNA Eraser (Takara).\nQuantitative real-time PCR (qRT-PCR) was performed to assess ALDH5A1 mRNA expression levels in both ONFH and normal femoral head cartilage. Gene-specific primers were designed based on GenBank sequences. The qRT-PCR reaction consisted of 0.5 \u00b5l of each primer, 1.5 \u00b5l of distilled water, 2.5 \u00b5l of cDNA, and 5 \u00b5l of SYBR Premix Ex Taq mix (Thermo Fisher Scientific, Inc.), making up a final volume of 10 \u00b5l. GAPDH was used as the internal control, and relative expression levels of ALDH5A1 were calculated using the 2-\u0394\u0394Ct method. All experiments were conducted in triplicate.\nPrimer sequences were as follows: ALDH5A1, forward, 5'-ATCACCCCGTGGAATTTCCC-3'; reverse, 5'-TTCACCACGACAGTACAGCC-3'. GAPDH, forward, 5'-CACCCACTCCTCCACCTTTGAC-3'; reverse, 5'-GTCCACCACCCTGTTGCTGTAG-3'.\nProtein extraction and western blotting\nTotal protein was extracted from femoral head cartilage using RIPA buffer containing PMSF (BOSTER), phosphatase inhibitors (CWBIO), and protease inhibitors (MCE). Protein concentration was determined using the BCA assay (Beyotime Biotechnology) following the manufacturer's instructions.\nProtein samples were mixed with loading buffer and heated at 100\u02daC for 10 min. Proteins were separated by SDS-PAGE (10% polyacrylamide gel) and transferred to PVDF membranes. Membranes were blocked with 5% skim milk for 2 h at room temperature, followed by overnight incubation at -4\u02daC with primary antibodies against ALDH5A1 and GAPDH (Proteintech) at a 1:5,000 dilution. After washing with PBST, membranes were incubated for 1 h at room temperature with a rabbit anti-rat IgG secondary antibody. Protein signals were detected using an Odyssey infrared imaging system, and chemiluminescence was visualized using enhanced chemiluminescence (Beyotime Biotechnology).\nImmunofluorescence staining",
+          "cos_sim_score": 0.39581674337387085,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::13040433",
+          "title": "ALDH5A1 as a key in osteonecrosis of the femoral head: Insights from bioinformatics and experimental validation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13040433/",
+          "text": "However, this study has several limitations. Firstly, a key limitation is the mismatch in tissue types between our discovery and validation cohorts. Our bioinformatics analysis was based on publicly available synovial tissue datasets, while experimental validation was conducted on articular cartilage. These tissues are histologically distinct. Our rationale is based on the premise that ONFH evolves into a \u2018whole-joint\u2019 disease, where secondary synovitis and cartilage degradation are linked by a shared microenvironment. While our data supports this hypothesis, this constitutes indirect validation. Future studies should confirm these findings in matched synovial, cartilage, and subchondral bone samples from the same patient cohort. Secondly, the sample size for our in vitro experimental validation was relatively small (n=6 per group), limiting the statistical power and reliability of our conclusions. Larger patient cohorts will be necessary to confirm our findings. Thirdly, the validated molecules have not yet been confirmed in vivo. Additional research is needed to validate the role of these molecules in ONFH in vivo.\nIn conclusion, this study used machine learning methods to identify ALDH5A1 as a key gene associated with ONFH, suggesting its potential as a prognostic marker. This finding was validated through ROC curves and in vitro experiments. Furthermore, significant correlations between key genes and immune cells were observed, and the ceRNA network relationships between miRNAs, lncRNAs, and hub genes were predicted. Our findings contribute to a deeper understanding of ONFH pathogenesis and provide potential molecular markers for the prognosis and treatment of the disease.\nSupplementary Material\nROC curve analysis of key genes for diagnostic performance. (A) ROC curve of ALDH5A1, showing its ability to distinguish cases from controls (AUC and 95% CI are indicated). (B) ROC curve of TBCEL, showing its ability to distinguish cases from controls (AUC and 95% CI are indicated). (C) ROC curve of KAT2B, showing its ability to distinguish cases from controls (AUC and 95% CI are indicated).",
+          "cos_sim_score": 0.24946272373199463,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::13040433",
+          "title": "ALDH5A1 as a key in osteonecrosis of the femoral head: Insights from bioinformatics and experimental validation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13040433/",
+          "text": "Discussion\nONFH is a complex, progressive disease primarily characterized by microcirculatory disorders and necrosis of bone marrow mesenchymal stem cells. Despite extensive research, the mechanisms underlying ONFH remain unclear, and the absence of reliable diagnostic markers often results in delayed treatment, eventually necessitating joint replacement (17). This study explores mRNA expression profiles in the peripheral blood serum of patients with ONFH and healthy controls, incorporating data from hip joint cartilage. Differential analysis and machine learning algorithms were employed to identify potential biomarkers, while the CIBERSORT algorithm was used to investigate correlations between immune cell populations and ONFH. Additionally, mRNA-miRNA-lncRNA relationships linked to key genes were predicted. The expression of hub genes was validated through qRT-PCR and Western blot, with results consistent with our bioinformatics analysis.\nA bioinformatic analysis identified DEGs associated with ONFH. A total of 51 relevant genes were screened, including 18 upregulated and 33 downregulated genes, which may serve as significant biomarkers for the pathogenesis and progression of ONFH. Through methods such as LASSO regression, the SVM algorithm, and RF analysis, ALDH5A1, TBCEL, and KAT2B were identified as key genes. ALDH5A1 encodes succinate semialdehyde dehydrogenase, an enzyme involved in mitochondrial glutamate metabolism, regulating energy metabolism and maintaining mitochondrial integrity. Depletion of ALDH5A1 can result in mitochondrial dysfunction, impaired \u03b3-aminobutyric acid (GABA) metabolism (18), and is associated with reduced ATP production, increased oxidative stress, and compromised mitochondrial dynamics, leading to cell apoptosis and inflammation (19). Following ischemic necrosis of the femoral head, an oxidative stress microenvironment develops in the necrotic bone area, driven by excessive reactive oxygen species (ROS) and apoptosis-inducing factors released from damaged mitochondria (20). While low levels of ROS participate in essential cellular signaling, excessive ROS production induces oxidative stress, disrupting cellular homeostasis and impairing function (21-23). ROS are also critical in activating autophagy and osteoblast apoptosis (24,25). Moreover, glucocorticoids, a major cause of non-traumatic ONFH, promote ROS production in osteoblasts, activating the JNK/c-Jun signaling pathway, which triggers autophagy and apoptosis (26). ROS inhibitors can reduce ROS levels, inhibit the JNK/c-Jun pathway, and reverse glucocorticoid-induced osteoblast apoptosis and autophagy (27). Furthermore, glucocorticoids impair cell angiogenesis, disrupt mitochondrial function, and hinder the blood supply to the femoral head, ultimately leading to bone necrosis (28).",
+          "cos_sim_score": 0.18829864263534546,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::13040433",
+          "title": "ALDH5A1 as a key in osteonecrosis of the femoral head: Insights from bioinformatics and experimental validation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13040433/",
+          "text": "Differential analysis of ALDH5A1 gene expression between the two groups revealed that its expression was significantly lower in the ONFH group compared to the normal group, further supporting our hypothesis. This suggests that ALDH5A1 may play a pivotal role in ONFH. To explore its potential function, the samples were divided into high and low ALDH5A1 expression groups, and enrichment analysis was performed on the DEGs. The GO results showed that the enriched genes were primarily involved in cellular autophagy, anion transmembrane transport, and proteasome-mediated ubiquitin-dependent protein catabolism. GSVA indicated that upregulated genes were enriched in pathways such as nitric oxide receptor signaling, Leishmania infection, TOLL-like receptor signaling, RIG-like receptor signaling, and vesicle transport-related interactions. These findings strongly implicate ALDH5A1-related DEGs in pathways like autophagy and lysosomal function, forming the basis for our mechanistic hypothesis. Although direct experimental validation of ALDH5A1's role in these specific pathways was not conducted in this study, the functional parallels with other members of the ALDH family provide substantial support for our hypothesis. For instance, ALDH2, a well-characterized member of the family, protects against bone loss by regulating mitochondrial ROS and mitophagy, and modulates cell death pathways, including autophagy and ferroptosis, through detoxification of lipid peroxidation products. Additionally, other ALDH family members, such as ALDH1a3, sensitize cells to ferroptosis via autophagy-dependent ferritinophagy, while ALDH7A1 and ALDH3A1 act as inhibitors of ferroptosis (29,30). Although research on ALDH5A1 in these contexts is limited, the functional conservation observed across the ALDH family strengthens the plausibility of our findings. It is hypothesized that the downregulation of ALDH5A1 contributes to ONFH pathogenesis through mechanisms akin to its family members, such as impaired mitochondrial integrity, failure to detoxify ROS, and subsequent dysregulation of protective autophagy and ferroptosis pathways (31,32). This positions ALDH5A1 not only as a potential biomarker but also as a novel mechanistic component in ONFH pathology.\nOur analysis also highlighted significant differences in immune cell functions, including HLA and T cell co-inhibition, between the high and low ALDH5A1 expression groups (9). Notably, ALDH5A1 expression was significantly negatively correlated with activated CD4+ memory T cells (33), suggesting a potential link between ALDH5A1's metabolic role and the immune microenvironment in ONFH, which warrants further investigation (34). Finally, a predictive mRNA-miRNA-lncRNA ceRNA network was constructed, revealing complex upstream regulatory mechanisms for ALDH5A1 (Fig. 10). While this network is purely predictive, it provides a foundation for future studies on the regulation of ALDH5A1 in ONFH.\nThe identification of ALDH5A1 as a robust biomarker paves the way for several potential clinical applications. In diagnostic settings, ALDH5A1 expression, possibly measured in synovial fluid aspirates or synovial biopsies, could serve as an objective molecular marker, complementing standard imaging techniques. This could be particularly useful for diagnosing early-stage ONFH, even before significant radiographic changes are evident. Additionally, ALDH5A1 may prove valuable as a prognostic tool. It is hypothesized that its expression level at diagnosis could correlate with disease severity or progression. Specifically, markedly low ALDH5A1 levels may indicate a higher risk or faster progression to femoral head collapse, aiding in patient stratification for either joint-preserving procedures or total hip arthroplasty. While our study focused on tissue samples, future research should explore whether the ALDH5A1 protein or its downstream metabolites can be detected as a non-invasive blood biomarker, representing a significant advancement in ONFH management.",
+          "cos_sim_score": 0.1326061189174652,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

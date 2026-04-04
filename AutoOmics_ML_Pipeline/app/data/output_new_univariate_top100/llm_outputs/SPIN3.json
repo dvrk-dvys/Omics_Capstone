@@ -1,0 +1,206 @@
+{
+  "probe_id": "11756894_a_at",
+  "gene_symbol": "SPIN3",
+  "score": 1.0,
+  "SD_TestAUC": 0.0331269329999968,
+  "abs_fold_change": 0.8296,
+  "probe_count": 1,
+  "probe_ids": "11756894_a_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.8296,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T22:37:34",
+  "interpretation": "SPIN3, or Spindlin-3, is a protein that binds to trimethylated histone H3 at lysine 4 (H3K4me3), which is a marker of active transcription. This binding suggests a role in regulating gene expression, particularly in processes related to cell proliferation and differentiation. Although there is no direct evidence linking SPIN3 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in transcriptional regulation could imply a role in the cellular responses to steroid treatment, which is a known risk factor for SONFH. The evidence retrieved is limited and does not establish a direct connection to SONFH, leading to a low confidence in its relevance as a biomarker. Therefore, while SPIN3 may have biological implications in the context of steroid treatment, its potential as a clinical biomarker for early detection of SONFH is weak.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "SPIN3 may play a role in transcriptional regulation related to steroid treatment, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "SPIN3 (Q5JUX0). https://www.uniprot.org/uniprotkb/Q5JUX0",
+    "SPIN3 (Q5JUX0-2). https://www.uniprot.org/uniprotkb/Q5JUX0-2",
+    "SPIN3 \u2014 SPIN3. https://platform.opentargets.org/target/ENSG00000204271",
+    "SPIN3 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000204271/associations",
+    "SPIN3 \u2194 type 2 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000204271/associations",
+    "SPIN3 \u2194 systemic lupus erythematosus. https://platform.opentargets.org/target/ENSG00000204271/associations",
+    "SPIN3 \u2194 depressive disorder. https://platform.opentargets.org/target/ENSG00000204271/associations",
+    "SPIN3 \u2014 spindlin family member 3 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MECP2 \u2014 methyl-CpG binding protein 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "VIM \u2014 vimentin (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ELAVL1 \u2014 ELAV like RNA binding protein 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ATRX \u2014 ATRX chromatin remodeler (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "GC_5-spin3 [GSM351977] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM351977",
+    "Mycoplasma pneumoniae expression profiling [GSE14015] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE14015",
+    "Transcriptome/Expression analysis in Mycoplasma pneumoniae [GSE14019] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE14019"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4881,
+    "completion_tokens": 328,
+    "total_tokens": 5209,
+    "estimated_cost_usd": 0.000929
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q5JUX0",
+          "title": "SPIN3 (Q5JUX0)",
+          "url": "https://www.uniprot.org/uniprotkb/Q5JUX0",
+          "text": "Protein: Spindlin-3\nFunction: Exhibits H3K4me3-binding activity",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q5JUX0-2",
+          "title": "SPIN3 (Q5JUX0-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q5JUX0-2",
+          "text": "Protein: Isoform 2 of Spindlin-3",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000204271::function",
+          "title": "SPIN3 \u2014 SPIN3",
+          "url": "https://platform.opentargets.org/target/ENSG00000204271",
+          "text": "Function: Exhibits H3K4me3-binding activity. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000204271::EFO_0005772",
+          "title": "SPIN3 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000204271/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.321",
+          "cos_sim_score": 0.3208836192611726,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000204271::MONDO_0005148",
+          "title": "SPIN3 \u2194 type 2 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000204271/associations",
+          "text": "Disease: type 2 diabetes mellitus\nDescription: A type of diabetes mellitus that is characterized by insulin resistance or desensitization and increased blood glucose levels. This is a chronic disease that can develop gradually over the life of a patient and can be linked to both environmental factors and heredity.\nAssociation score: 0.273",
+          "cos_sim_score": 0.2725814209200642,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000204271::MONDO_0007915",
+          "title": "SPIN3 \u2194 systemic lupus erythematosus",
+          "url": "https://platform.opentargets.org/target/ENSG00000204271/associations",
+          "text": "Disease: systemic lupus erythematosus\nDescription: An autoimmune multi-organ disease typically associated with vasculopathy and autoantibody production. Most patients have antinuclear antibodies (ANA). The presence of anti-dsDNA or anti-Smith antibodies are highly-specific.\nAssociation score: 0.259",
+          "cos_sim_score": 0.2591592440247022,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000204271::MONDO_0002050",
+          "title": "SPIN3 \u2194 depressive disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000204271/associations",
+          "text": "Disease: depressive disorder\nDescription: A melancholy feeling of sadness and despair.\nAssociation score: 0.135",
+          "cos_sim_score": 0.1345177572580848,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "SPIN3 \u2014 spindlin family member 3",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SPIN3\nGene name: spindlin family member 3\nAliases / synonyms: SPIN-3, TDRD27, bA445O16.1\nOrganism: Homo sapiens\nGene summary: Enables methylated histone binding activity. Predicted to be involved in regulation of DNA-templated transcription. Predicted to be located in membrane. Predicted to be active in cytosol and nucleoplasm. [provided by Alliance of Genome Resources, Apr 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SPIN3",
+          "aliases": "SPIN-3, TDRD27, bA445O16.1",
+          "gene_description": "spindlin family member 3"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MECP2 \u2014 methyl-CpG binding protein 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MECP2\nGene name: methyl-CpG binding protein 2\nAliases / synonyms: AUTSX3, MRX16, MRX79, MRXS13, MRXSL, PPMX, RS, RTS, RTT\nOrganism: Homo sapiens\nGene summary: DNA methylation is the major modification of eukaryotic genomes and plays an essential role in mammalian development. Human proteins MECP2, MBD1, MBD2, MBD3, and MBD4 comprise a family of nuclear proteins related by the presence in each of a methyl-CpG binding domain (MBD). Each of these proteins, with the exception of MBD3, is capable of binding specifically to methylated DNA. MECP2, MBD1 and MBD2 can also repress transcription from methylated gene promoters. In contrast to other MBD family members, MECP2 is X-linked and subject to X inactivation. MECP2 is dispensible in stem cells, but is essential for embryonic development. MECP2 gene mutations are the cause of most cases of Rett syndrome, a progressive neurologic developmental disorder and one of the most common causes of cognitive dis...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MECP2",
+          "aliases": "AUTSX3, MRX16, MRX79, MRXS13, MRXSL, PPMX, RS, RTS, RTT",
+          "gene_description": "methyl-CpG binding protein 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "VIM \u2014 vimentin",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: VIM\nGene name: vimentin\nOrganism: Homo sapiens\nGene summary: This gene encodes a type III intermediate filament protein. Intermediate filaments, along with microtubules and actin microfilaments, make up the cytoskeleton. The encoded protein is responsible for maintaining cell shape and integrity of the cytoplasm, and stabilizing cytoskeletal interactions. This protein is involved in neuritogenesis and cholesterol transport and functions as an organizer of a number of other critical proteins involved in cell attachment, migration, and signaling. Bacterial and viral pathogens have been shown to attach to this protein on the host cell surface. Mutations in this gene are associated with congenital cataracts in human patients. [provided by RefSeq, Aug 2017]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "VIM",
+          "aliases": "",
+          "gene_description": "vimentin"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ELAVL1 \u2014 ELAV like RNA binding protein 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ELAVL1\nGene name: ELAV like RNA binding protein 1\nAliases / synonyms: ELAV1, HUR, Hua, MelG\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the ELAVL family of RNA-binding proteins that contain several RNA recognition motifs, and selectively bind AU-rich elements (AREs) found in the 3' untranslated regions of mRNAs. AREs signal degradation of mRNAs as a means to regulate gene expression, thus by binding AREs, the ELAVL family of proteins play a role in stabilizing ARE-containing mRNAs. This gene has been implicated in a variety of biological processes and has been linked to a number of diseases, including cancer. It is highly expressed in many cancers, and could be potentially useful in cancer diagnosis, prognosis, and therapy. [provided by RefSeq, Sep 2012]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ELAVL1",
+          "aliases": "ELAV1, HUR, Hua, MelG",
+          "gene_description": "ELAV like RNA binding protein 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ATRX \u2014 ATRX chromatin remodeler",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ATRX\nGene name: ATRX chromatin remodeler\nAliases / synonyms: JMS, MRX52, RAD54, RAD54L, XH2, XNP, ZNF-HX\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene contains an ATPase/helicase domain, and thus it belongs to the SWI/SNF family of chromatin remodeling proteins. This protein is found to undergo cell cycle-dependent phosphorylation, which regulates its nuclear matrix and chromatin association, and suggests its involvement in the gene regulation at interphase and chromosomal segregation in mitosis. Mutations in this gene are associated with X-linked syndromes exhibiting cognitive disabilities as well as alpha-thalassemia (ATRX) syndrome. These mutations have been shown to cause diverse changes in the pattern of DNA methylation, which may provide a link between chromatin remodeling, DNA methylation, and gene expression in developmental processes. Multiple alternatively spliced transcript variants encoding di...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ATRX",
+          "aliases": "JMS, MRX52, RAD54, RAD54L, XH2, XNP, ZNF-HX",
+          "gene_description": "ATRX chromatin remodeler"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": [
+        {
+          "id": "geo::300351977",
+          "title": "GC_5-spin3",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM351977",
+          "text": "Title: GC_5-spin3\nAccession: GSM351977\nOrganism: Mycoplasmoides pneumoniae M129\nSamples: IntegerElement(0, attributes={})\nSummary: M129 cells were grown in rich medium with constant shaking and samples were taken after 3 days in culture.",
+          "cos_sim_score": 0.2607872486114502,
+          "source_type": "geo",
+          "accession": "GSM351977"
+        },
+        {
+          "id": "geo::200014015",
+          "title": "Mycoplasma pneumoniae expression profiling",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE14015",
+          "text": "Title: Mycoplasma pneumoniae expression profiling\nAccession: GSE14015\nStudy type: Expression profiling by array\nOrganism: Mycoplasmoides pneumoniae M129\nSamples: IntegerElement(252, attributes={})\nSummary: Two main articles have used this data. The small bacterium Mycoplasma pneumoniae with its annotated 689 protein-coding genes and 44 RNAs constitutes an ideal system for global and conditional transcription analysis in bacteria. We have combined spotted arrays under more than 120 conditions with several strand-specific, high resolution tiling arrays to obtain an unprecedented level of detail of bacterial gene expression. We have found 68 new non-annotated transcripts, of which the vast majority are potential regulatory RNAs, 53 of them in antisense to known genes. Integration of all data confir...",
+          "cos_sim_score": -0.02137589268386364,
+          "source_type": "geo",
+          "accession": "GSE14015"
+        },
+        {
+          "id": "geo::200014019",
+          "title": "Transcriptome/Expression analysis in Mycoplasma pneumoniae",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE14019",
+          "text": "Title: Transcriptome/Expression analysis in Mycoplasma pneumoniae\nAccession: GSE14019\nStudy type: Expression profiling by array; Expression profiling by genome tiling array; Non-coding RNA profiling by genome tiling array\nOrganism: Mycoplasmoides pneumoniae M129\nSamples: IntegerElement(295, attributes={})\nSummary: This SuperSeries is composed of the SubSeries listed below.",
+          "cos_sim_score": -0.050782132893800735,
+          "source_type": "geo",
+          "accession": "GSE14019"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

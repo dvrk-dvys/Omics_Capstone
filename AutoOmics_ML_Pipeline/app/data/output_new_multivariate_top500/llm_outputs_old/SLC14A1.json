@@ -1,0 +1,153 @@
+{
+  "probe_id": "11733360_x_at",
+  "gene_symbol": "SLC14A1",
+  "rf_importance": 0.0008,
+  "selection_freq": 1.0,
+  "abs_fold_change": 2.661250633333334,
+  "score": 0.3842,
+  "probe_count": 3,
+  "probe_ids": "11733360_x_at | 11727970_a_at | 11727969_a_at",
+  "max_score": 0.3842,
+  "mean_abs_fold_change": 2.5393,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T20:59:41",
+  "interpretation": "SLC14A1 encodes the urea transporter 1 (UT-B), which is involved in the transport of urea across cell membranes, particularly in erythrocytes and the kidneys. While its primary function relates to urea transport and renal function, there is no direct evidence linking SLC14A1 to the mechanisms of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH). The retrieved evidence primarily discusses its role in urea transport and associations with other diseases, such as urinary bladder cancer, but lacks specific connections to SONFH. Therefore, the biological inference is that while SLC14A1 may play a role in cellular transport processes, its relevance as a biomarker for SONFH is weak and speculative. Thus, it is unlikely to serve as a clinically actionable biomarker for early detection of SONFH.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "SLC14A1 does not have a clear connection to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "SLC14A1 (Q13336). https://www.uniprot.org/uniprotkb/Q13336",
+    "SLC14A1 (Q13336-2). https://www.uniprot.org/uniprotkb/Q13336-2",
+    "SLC14A1 \u2014 SLC14A1. https://platform.opentargets.org/target/ENSG00000141469",
+    "SLC14A1 \u2194 urinary bladder cancer. https://platform.opentargets.org/target/ENSG00000141469/associations",
+    "SLC14A1 \u2194 urinary bladder carcinoma. https://platform.opentargets.org/target/ENSG00000141469/associations",
+    "SLC14A1 \u2194 Increased total eosinophil count. https://platform.opentargets.org/target/ENSG00000141469/associations",
+    "SLC14A1 \u2194 Back pain. https://platform.opentargets.org/target/ENSG00000141469/associations",
+    "Urea transporter 1. https://en.wikipedia.org/wiki/Urea_transporter_1",
+    "Cystine/glutamate transporter. https://en.wikipedia.org/wiki/Cystine/glutamate_transporter",
+    "Urea transporter. https://en.wikipedia.org/wiki/Urea_transporter",
+    "Dopamine transporter. https://en.wikipedia.org/wiki/Dopamine_transporter"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5797,
+    "completion_tokens": 242,
+    "total_tokens": 6039,
+    "estimated_cost_usd": 0.001015
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q13336",
+          "title": "SLC14A1 (Q13336)",
+          "url": "https://www.uniprot.org/uniprotkb/Q13336",
+          "text": "Protein: Urea transporter 1\nFunction: Mediates the transport of urea driven by a concentration gradient across the cell membrane of erythrocytes (PubMed:10514515, PubMed:7797558, PubMed:7989337, PubMed:8997401). Also mediates the transport of urea across the cell membrane of the renal inner medullary collecting duct which is critical to the urinary concentrating mechanism (By similarity). Facilitates water transport in erythrocytes (By similarity)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q13336-2",
+          "title": "SLC14A1 (Q13336-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q13336-2",
+          "text": "Protein: Isoform 2 of Urea transporter 1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000141469::function",
+          "title": "SLC14A1 \u2014 SLC14A1",
+          "url": "https://platform.opentargets.org/target/ENSG00000141469",
+          "text": "Function: Mediates the transport of urea driven by a concentration gradient across the cell membrane of erythrocytes (PubMed:10514515, PubMed:7797558, PubMed:7989337, PubMed:8997401). Also mediates the transport of urea across the cell membrane of the renal inner medullary collecting duct which is critical to the urinary concentrating mechanism (By similarity). Facilitates water transport in erythrocytes (By similarity).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000141469::MONDO_0001187",
+          "title": "SLC14A1 \u2194 urinary bladder cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000141469/associations",
+          "text": "Disease: urinary bladder cancer\nDescription: A primary or metastatic malignant neoplasm involving the bladder.\nAssociation score: 0.490",
+          "cos_sim_score": 0.48981250023607875,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000141469::MONDO_0004986",
+          "title": "SLC14A1 \u2194 urinary bladder carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000141469/associations",
+          "text": "Disease: urinary bladder carcinoma\nDescription: A carcinoma that arises from epithelial cells of the urinary bladder\nAssociation score: 0.408",
+          "cos_sim_score": 0.40844612979451406,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000141469::HP_0001880",
+          "title": "SLC14A1 \u2194 Increased total eosinophil count",
+          "url": "https://platform.opentargets.org/target/ENSG00000141469/associations",
+          "text": "Disease: Increased total eosinophil count\nDescription: Increased count of eosinophils in the blood.\nAssociation score: 0.313",
+          "cos_sim_score": 0.3128801134730441,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000141469::HP_0003418",
+          "title": "SLC14A1 \u2194 Back pain",
+          "url": "https://platform.opentargets.org/target/ENSG00000141469/associations",
+          "text": "Disease: Back pain\nDescription: An unpleasant sensation characterized by physical discomfort (such as pricking, throbbing, or aching) localized to the back.\nAssociation score: 0.306",
+          "cos_sim_score": 0.30637116841667617,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Urea transporter 1",
+          "title": "Urea transporter 1",
+          "url": "https://en.wikipedia.org/wiki/Urea_transporter_1",
+          "text": "Urea transporter 1 is a protein that in humans is encoded by the SLC14A1 gene.\n\nFunction\nThe SLC14A1 codes for a urea transporter (UTB) that is expressed in erythrocytes and kidney. SLC14A2 and SLC14A1 constitute solute carrier family 14. UTB proteins constitute the Kidd antigen system.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.3963766396045685,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Cystine/glutamate transporter",
+          "title": "Cystine/glutamate transporter",
+          "url": "https://en.wikipedia.org/wiki/Cystine/glutamate_transporter",
+          "text": "Cystine/glutamate transporter is an antiporter that in humans is encoded by the SLC7A11 gene.\nThe SLC7A11 gene encodes a sodium-independent cystine-glutamate antiporter that is chloride dependent, also known as xCT. Along with a heavy chain subunit from SLC3A2, the SLC7A11 light chain comprises system Xc-, which is the functional cystine-glutamate antiporter. While the SLC3A2 heavy chain is a chaperone for many other light chains that participate in amino acid transport, the SLC7A11 light chain is specific for system Xc-, and the terms xCT/SLC7A11 and system Xc- are used interchangeably in much of the literature.\nSLC7A11 plays an important role in glutathione production throughout nervous and non-nervous tissues. In the nervous system, SLC7A11 regulates synaptic activity by stimulating extrasynaptic receptors and performs nonvesicular glutamate release. This gene is highly expressed by astrocytes and couples the uptake of one molecule of cystine with the release of one molecule of glutamate. The expression of Xc- was detected throughout the brain with higher expression found in the basolateral amygdala, the retina and the prefrontal cortex. The inhibition of system Xc- has been found to alter a number of behaviors, which suggests that it plays a key role in excitatory signaling.\n\nStructure\nSLC7A11 is a member of a heterodimeric Na+-independent anionic amino acid transport system highly specific for cystine and glutamate. This antiporter imports cystine and exports glutamate, which are both amino acids. An antiporter functions with a one-to-one counter-transport, which is when one substance is transported across the membrane at the same time another substance is transported across the membrane in the opposite direction. The antiporter is a heterodimeric amino acid transporter, requiring both the SLC7A11 light chain and SLC3A2 heavy chain linked by a disulfide bridge. The SLC7A11 light chain has 12 transmembrane domains consisting of 501 amino acids, and the SLC3A2 heavy chain appears to be highly conserved among transporters. The human SLC7A11 has an 89% similarity of amino acids to the homologous mouse xCT protein. The complementary DNA, cDNA, has a total of 9648 base pairs. The SLC7A11 gene has been found not only in the brain, but has also been found to be expressed in the spinal cord, pancreas, and in glioma cells.\n\nRegulation\nThere are many mechanisms that exist to regulate the expression of system Xc-, although it is not the sole determinant of extracellular glutamate or intracellular glutathione. An example is amino acid deprivation, which triggers up regulation of the transporter. A key regulator is extracellular glutamate; when it becomes excessive, it goes from an excitatory transmitter to an excitotoxin. The inhibition of uptake of extracellular cystine into cells leads to decreased levels of intracellular glutathione which leads to ferroptosis. This regulation may be done through Excitatory Amino Acid Transporters (EAATs), which decrease extracellular glutamate and increase intracellular glutamate in astrocytes. When looking at its structure, xCT seems to be the main determinant for the system's activity. Glutamate and cystine can be transported in both directions, but, generally, more cystine is imported and more glutamate is exported. Extracellular glutamate acts as a competitive inhibitor for cystine uptake via system Xc-.\n\nGlutamate\nThere is a high amount of glutamate in mammalian cells. Glutamate is necessary for excitatory signaling between neurons. The release must be highly organized, due to the large amounts of glutamate at the synaptic cleft, and the fact that it is released at high speeds. This mechanism of release at the synaptic cleft is partially controlled through the active transport of glutamate out of astrocytes by system Xc-. This release also has a physiological role in the regulation of glutamatergic metabotropic receptors and control of other neurotransmitters.\nIt has been demonstrated that, in the embryonic retina, Xc- exchanger is responsible for 50% of total glutamate uptake, representing a Sodium-Independent system within this tissue. The high activity of Xc- in the retina is correlated to a neuroprotective role, once it can take up excessive extracellular glutamate and provide precursors for the synthesis of Glutathione.",
+          "cos_sim_score": 0.2661570608615875,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Urea transporter",
+          "title": "Urea transporter",
+          "url": "https://en.wikipedia.org/wiki/Urea_transporter",
+          "text": "A urea transporter is a membrane transport protein, transporting urea. Humans and other mammals have two types of urea transport proteins, UT-A and UT-B. The UT-A proteins are important for renal urea handling and are produced by alternative splicing of the SLC14A2 gene.  Urea transport in the kidney is regulated by vasopressin.\nThe structure of a urea transport family protein from Desulfovibrio vulgaris was determined by x-ray crystallography. The structure has a pathway through the membrane that is similar to that of ion channel proteins, accounting for the ability of urea transport proteins to move up to one million urea molecules per second across the membrane.\nUrea transporters can be inhibited by the action of urea analogues like thiourea and glycosides like phloretin. Their inhibition results in increased diuresis due to urea induced osmosis in the collecting ducts of the kidney.\n\nTypes\nIn mammals, there are two urea transporter genes: UT-A (SLC14A2) and UT-B (SLC14A1). Multiple protein isoforms derived from each gene are produced by alternative splicing and alternative promoters.\n\nUT-A1\nUrea transporter A1 transports urea across the apical membrane into the intracellular space of luminal cells in the inner medullary collecting duct of the kidneys.  UT-1 is activated by ADH, but is a passive transporter.  It reabsorbs up to 70% of the original filtered load of urea.\n\nUT-A2\nUrea Transporter 2 transports urea across the apical membrane into the luminal space of cells in the thin descending loop of Henle of the kidneys.\n\nUT-A3\nUrea transporter 3 transports urea into the interstitium of the Inner Medullary Collecting Duct.\n\nUT-A4\nUrea transporter 4 has been detected in rat but not mouse kidney medulla.\n\nUT-A5\nUrea transporter 5 is not expressed in the kidney but in the testis.\n\nUT-B\nUT-B is widely expressed and has been studied in erythrocytes, kidney, intestine, and at the blood\u2013brain barrier. The SLC14A1 gene codes for the UT-B protein. UT-B is expressed at the basolateral and apical regions of the descending Vasa recta.\n\n\n== References ==",
+          "cos_sim_score": 0.20271068811416626,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Dopamine transporter",
+          "title": "Dopamine transporter",
+          "url": "https://en.wikipedia.org/wiki/Dopamine_transporter",
+          "text": "The dopamine transporter (DAT, also sodium-dependent dopamine transporter) is a membrane-spanning protein coded for in humans by the SLC6A3 gene (also known as DAT1), that pumps the neurotransmitter dopamine out of the synaptic cleft back into cytosol. In the cytosol, other transporters sequester the dopamine into vesicles for storage and later release. Dopamine reuptake via DAT provides the primary mechanism through which dopamine is cleared from synapses, although there may be an exception in the prefrontal cortex, where evidence points to a possibly larger role of the norepinephrine transporter.\nDAT is implicated in a number of dopamine-related disorders, including attention deficit hyperactivity disorder, bipolar disorder, clinical depression, eating disorders, and substance use disorders. The gene that encodes the DAT protein is located on chromosome 5, consists of 15 coding exons, and is roughly 64 kbp long. Evidence for the associations between DAT and dopamine related disorders has come from a type of genetic polymorphism, known as a variable number tandem repeat, in the SLC6A3 gene, which influences the amount of protein expressed.\n\nFunction\nDAT is an integral membrane protein that removes dopamine from the synaptic cleft and deposits it into surrounding cells, thus terminating the signal of the neurotransmitter. Dopamine underlies several aspects of cognition, including reward, and DAT facilitates regulation of that signal.\n\nMechanism\nDAT is a symporter that moves dopamine across the cell membrane by coupling the movement to the energetically favorable movement of sodium ions moving from high to low concentration into the cell. DAT function requires the sequential binding and co-transport of two Na+ ions and one Cl\u2212 ion with the dopamine substrate. The driving force for DAT-mediated dopamine reuptake is the ion concentration gradient generated by the plasma membrane Na+/K+ ATPase.\nIn the most widely accepted model for monoamine transporter function, sodium ions must bind to the extracellular domain of the transporter before dopamine can bind. Once dopamine binds, the protein undergoes a conformational change, which allows both sodium and dopamine to unbind on the intracellular side of the membrane.\nStudies using electrophysiology and radioactive-labeled dopamine have confirmed that the dopamine transporter is similar to other monoamine transporters in that one molecule of neurotransmitter can be transported across the membrane with one or two sodium ions. Chloride ions are also needed to prevent a buildup of positive charge. These studies have also shown that transport rate and direction is totally dependent on the sodium gradient.\nBecause of the tight coupling of the membrane potential and the sodium gradient, activity-induced changes in membrane polarity can dramatically influence transport rates. In addition, the transporter may contribute to dopamine release when the neuron depolarizes.\n\nDAT\u2013Cav coupling\nPreliminary evidence suggests that the dopamine transporter couples to L-type voltage-gated calcium channels (particularly Cav1.2 and Cav1.3), which are expressed in virtually all dopamine neurons. As a result of DAT\u2013Cav coupling, DAT substrates that produce depolarizing currents through the transporter are able to open calcium channels that are coupled to the transporter, resulting in a calcium influx in dopamine neurons. This calcium influx is believed to induce CAMKII-mediated phosphorylation of the dopamine transporter as a downstream effect; since DAT phosphorylation by CAMKII results in dopamine efflux in vivo, activation of transporter-coupled calcium channels is a potential mechanism by which certain drugs (e.g., amphetamine) trigger neurotransmitter release.\n\nProtein structure\nThe initial determination of the membrane topology of DAT was based upon hydrophobic sequence analysis and sequence similarities with the GABA transporter. These methods predicted twelve transmembrane domains (TMD) with a large extracellular loop between the third and fourth TMDs. Further characterization of this protein used proteases, which digest proteins into smaller fragments, and glycosylation, which occurs only on extracellular loops, and largely verified the initial predictions of membrane topology. The exact structure of the Drosophila melanogaster dopamine transporter (dDAT) was elucidated in 2013 by X-ray crystallography.",
+          "cos_sim_score": 0.15153245627880096,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Dopamine transporter",
+          "title": "Dopamine transporter",
+          "url": "https://en.wikipedia.org/wiki/Dopamine_transporter",
+          "text": "Biological role and disorders\nThe rate at which DAT removes dopamine from the synapse can have a profound effect on the amount of dopamine in the cell. This is best evidenced by the severe cognitive deficits, motor abnormalities, and hyperactivity of mice with no dopamine transporters. These characteristics have striking similarities to the symptoms of ADHD.\nDifferences in the functional VNTR have been identified as risk factors for bipolar disorder and ADHD. Data has emerged that suggests there is also an association with stronger withdrawal symptoms from alcoholism, although this is a point of controversy. An allele of the DAT gene with normal protein levels is associated with non-smoking behavior and ease of quitting. Additionally, male adolescents particularly those in high-risk families (ones marked by a disengaged mother and absence of maternal affection) who carry the 10-allele VNTR repeat show a statistically significant affinity for antisocial peers.\nIncreased activity of DAT is associated with several different disorders, including clinical depression.\nMutations in DAT have been shown to cause dopamine transporter deficiency syndrome, an autosomal recessive movement disorder characterized by progressively worsening dystonia and parkinsonism.\n\nPharmacology\nThe dopamine transporter is the target of substrates, dopamine releasers, transport inhibitors and allosteric modulators.\nCocaine blocks DAT by binding directly to the transporter and reducing the rate of transport. In contrast, amphetamine enters the presynaptic neuron directly through the neuronal membrane or through DAT, competing for reuptake with dopamine. Once inside, it binds to TAAR1 or enters synaptic vesicles through VMAT2. When amphetamine binds to TAAR1, it reduces the firing rate of the postsynaptic neuron and triggers protein kinase A and protein kinase C signaling, resulting in DAT phosphorylation. Phosphorylated DAT then either operates in reverse or withdraws into the presynaptic neuron and ceases transport. When amphetamine enters the synaptic vesicles through VMAT2, dopamine is released into the cytosol. Amphetamine also produces dopamine efflux through a second TAAR1-independent mechanism involving CAMKII\u03b1-mediated phosphorylation of the transporter, which putatively arises from the activation of DAT-coupled L-type calcium channels by amphetamine.\nThe dopaminergic mechanisms of each drug are believed to underlie the pleasurable feelings elicited by these substances.\n\nInteractions\nDopamine transporter has been shown to interact with:\n\nApart from these innate protein-protein interactions, recent studies demonstrated that viral proteins such as HIV-1 Tat protein interacts with the DAT and this binding may alter the dopamine homeostasis in HIV positive individuals which is a contributing factor for the HIV-associated neurocognitive disorders.\n\nLigands and modulators\nSubstrates\nDopamine reuptake inhibitors (DRIs)\nTypical or classical cocaine-like blockers\nThese agents may actually act as dopamine releasing agent-esque DAT negative allosteric modulators or \"inverse agonists\".\n\nAtypical non-psychostimulant blockers\nThese agents may actually act as simple competitive DAT blockers without releaser-like \"inverse agonist\" activity.\n\nUnsorted blockers\nIndatraline\nPRX-14040\n\nDopamine releasing agents (DRAs)\nThese agents are also known as substrate-type dopamine releasing agents and as DAT reversers.\n\nAllosteric modulators\nPositive allosteric modulators\nNegative allosteric modulators\nSee also\nReferences\nExternal links\nDopamine transporter-related Associations, Experiments, Publications and Clinical Trials\nDopamine+Transporter at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nOverview of all the structural information available in the PDB for UniProt: Q7K4Y6 (Drosophila melanogaster Sodium-dependent dopamine transporter) at the PDBe-KB.",
+          "cos_sim_score": 0.13481245934963226,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

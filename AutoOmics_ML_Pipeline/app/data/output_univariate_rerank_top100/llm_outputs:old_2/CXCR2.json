@@ -1,0 +1,233 @@
+{
+  "probe_id": "11731426_s_at",
+  "gene_symbol": "CXCR2",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.1622881651867158,
+  "abs_fold_change": 1.6768,
+  "score": 1.6665,
+  "probe_count": 3,
+  "probe_ids": "11731426_s_at | 11731424_x_at | 11731425_at",
+  "max_score": 1.6665,
+  "mean_abs_fold_change": 1.6084,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T19:10:52",
+  "interpretation": "CXCR2, a receptor for interleukin-8 (IL-8), plays a crucial role in mediating neutrophil chemotaxis to sites of inflammation. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the activation of neutrophils and the subsequent inflammatory response are significant contributors to the disease's pathology, particularly due to the vascular and cellular damage caused by steroids. Evidence from the retrieved studies indicates that CXCR2 is involved in the immune response mechanisms that may exacerbate the condition, although its expression levels in peripheral blood did not show significant differences between SONFH patients and controls. This suggests that while CXCR2 is biologically relevant to the inflammatory processes in SONFH, its utility as a direct biomarker for early detection may be limited. Therefore, while CXCR2 is implicated in the disease's inflammatory pathways, its potential as a clinical biomarker for SONFH remains moderate due to the lack of strong differential expression evidence.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 2",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "CXCR2 is involved in the inflammatory response associated with Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "CXCR2 (P25025). https://www.uniprot.org/uniprotkb/P25025",
+    "CXCR2 \u2014 CXCR2. https://platform.opentargets.org/target/ENSG00000180871",
+    "CXCR2 \u2194 WHIM syndrome 2. https://platform.opentargets.org/target/ENSG00000180871/associations",
+    "CXCR2 \u2194 ulcerative colitis. https://platform.opentargets.org/target/ENSG00000180871/associations",
+    "CXCR2 \u2194 type 1 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000180871/associations",
+    "CXCR2 \u2194 psoriasis. https://platform.opentargets.org/target/ENSG00000180871/associations",
+    "Bioinformatics analysis and identification of genes and molecular pathways in steroid-induced osteonecrosis of the femoral head. (2021). https://pubmed.ncbi.nlm.nih.gov/34016144/",
+    "CXCR2 \u2014 C-X-C motif chemokine receptor 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TP53 \u2014 tumor protein p53 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CXCL8 \u2014 C-X-C motif chemokine ligand 8 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TNF \u2014 tumor necrosis factor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Bioinformatics analysis and identification of genes and molecular pathways in steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8136174/",
+    "Immunomodulatory Mechanisms of Rehmanniae Radix Praeparata\u2013Achyranthes Root\u2013Chinese Angelica Root Combination in Nontraumatic Osteonecrosis of the Femoral Head: A Comprehensive Network Pharmacology and Molecular Docking Study Focusing on Immunological Pathways (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12767418/",
+    "Cotransplantation of mesenchymal stem cells and endothelial progenitor cells for treating steroid\u2010induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8046137/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 10790,
+    "completion_tokens": 337,
+    "total_tokens": 11127,
+    "estimated_cost_usd": 0.001821
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P25025",
+          "title": "CXCR2 (P25025)",
+          "url": "https://www.uniprot.org/uniprotkb/P25025",
+          "text": "Protein: C-X-C chemokine receptor type 2\nFunction: Receptor for interleukin-8 which is a powerful neutrophil chemotactic factor (PubMed:1891716). Binding of IL-8 to the receptor causes activation of neutrophils. This response is mediated via a G-protein that activates a phosphatidylinositol-calcium second messenger system (PubMed:8662698). Binds to IL-8 with high affinity. Also binds with high affinity to CXCL3, GRO/MGSA and NAP-2 (PubMed:1891716). Involved in the homeostatic wound healing response to tissue injury, a multistep cascade that guides neutrophil migration to necrotic sites while avoiding collateral damage of healthy tissues. Signals intravascular neutrophil chemotaxis to the injury site",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000180871::function",
+          "title": "CXCR2 \u2014 CXCR2",
+          "url": "https://platform.opentargets.org/target/ENSG00000180871",
+          "text": "Function: Receptor for interleukin-8 which is a powerful neutrophil chemotactic factor (PubMed:1891716). Binding of IL-8 to the receptor causes activation of neutrophils. This response is mediated via a G- protein that activates a phosphatidylinositol-calcium second messenger system (PubMed:8662698). Binds to IL-8 with high affinity. Also binds with high affinity to CXCL3, GRO/MGSA and NAP-2 (PubMed:1891716). Involved in the homeostatic wound healing response to tissue injury, a multistep cascade that guides neutrophil migration to necrotic sites while avoiding collateral damage of healthy tissues. Signals intravascular neutrophil chemotaxis to the injury site.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000180871::MONDO_0030374",
+          "title": "CXCR2 \u2194 WHIM syndrome 2",
+          "url": "https://platform.opentargets.org/target/ENSG00000180871/associations",
+          "text": "Disease: WHIM syndrome 2\nAssociation score: 0.496",
+          "cos_sim_score": 0.4956521666475962,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000180871::EFO_0000729",
+          "title": "CXCR2 \u2194 ulcerative colitis",
+          "url": "https://platform.opentargets.org/target/ENSG00000180871/associations",
+          "text": "Disease: ulcerative colitis\nDescription: An inflammatory bowel disease involving the mucosal surface of the large intestine and rectum. It may present with an acute or slow onset and follows an intermittent or continuous course. Signs and symptoms include abdominal pain, diarrhea, fever, weight loss, and intestinal hemorrhage.\nAssociation score: 0.418",
+          "cos_sim_score": 0.41815085286119347,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000180871::MONDO_0005147",
+          "title": "CXCR2 \u2194 type 1 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000180871/associations",
+          "text": "Disease: type 1 diabetes mellitus\nDescription: A chronic condition characterized by minimal or absent production of insulin by the pancreas.\nAssociation score: 0.301",
+          "cos_sim_score": 0.3006123174265209,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000180871::EFO_0000676",
+          "title": "CXCR2 \u2194 psoriasis",
+          "url": "https://platform.opentargets.org/target/ENSG00000180871/associations",
+          "text": "Disease: psoriasis\nDescription: An autoimmune condition characterized by red, well-delineated plaques with silvery scales that are usually on the extensor surfaces and scalp. They can occasionally present with these manifestations: pustules; erythema and scaling in intertriginous areas, and erythroderma, that are often distributed on extensor surfaces and scalp.\nAssociation score: 0.285",
+          "cos_sim_score": 0.2850610515722565,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::34016144",
+          "title": "Bioinformatics analysis and identification of genes and molecular pathways in steroid-induced osteonecrosis of the femoral head.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34016144/",
+          "year": "2021",
+          "text": "Steroid-induced osteonecrosis of the femoral head (ONFH) is a common hip joint disease and is difficult to be diagnosed early. At present, the pathogenesis of steroid-induced ONFH remains unclear, and recognized and effective diagnostic biomarkers are deficient. The present study aimed to identify potentially important genes and signaling pathways involved in steroid-induced ONFH and investigate their molecular mechanisms. Microarray data sets GSE123568 (peripheral blood) and GSE74089 (cartilage) were obtained from the Gene Expression Omnibus database, including 34 ONFH samples and 14 control samples. Morpheus software and Venn diagram were used to identify DEGs and co-expressed DEGs, respectively. Besides, we conducted Kyoto Encyclopedia of Genome (KEGG) and gene ontology (GO) pathway enrichment analysis. We construct a protein-protein interaction (PPI) network through GEO2R and used cytoHubba to divide the PPI network into multiple sub-networks. Additionally, quantitative real-time polymerase chain reaction (qRT-PCR) was performed to verify the bioinformatics analysis results. A total of 118 intersecting DEGs were obtained between the peripheral blood and cartilage samples, including 40 upregulated genes and 78 downregulated genes. Then, GO and KEGG pathway enrichment analysis revealed that upregulated DEGs focused on the signaling pathways related to staphylococcus aureus infection, leishmaniasis, antigen processing, and presentation, as well as asthma and graft-versus-host disease. Downregulated genes were concentrated in the FoxO signaling pathway, AMPK signaling pathway, signaling pathway regulating stem cell pluripotency, and mTOR signaling pathway. Some hub genes with high interactions such as CXCR1, FPR1, MAPK1, FOXO3, FPR2, CXCR2, and TYROBP were identified in the PPI network. The results of qRT-PCR demonstrated that CXCR1, FPR1, and TYROBP were upregulated while MAPK1 was downregulated in peripheral blood of steroid-induced ONFH patients. This was consistent with the bioinformatics analysis. The present study would provide novel insight into the genes and associated pathways involved in steroid-induced ONFH. CXCR1, FPR1, TYROBP, and MAPK1 may be used as potential drug targets and biomarkers for the diagnosis and prognosis of steroid-induced ONFH.",
+          "cos_sim_score": 0.4523560404777527,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "CXCR2 \u2014 C-X-C motif chemokine receptor 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CXCR2\nGene name: C-X-C motif chemokine receptor 2\nAliases / synonyms: CD182, CDw128b, CMKAR2, IL8R2, IL8RA, IL8RB, WHIMS2\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the G-protein-coupled receptor family. This protein is a receptor for interleukin 8 (IL8). It binds to IL8 with high affinity, and transduces the signal through a G-protein activated second messenger system. This receptor also binds to chemokine (C-X-C motif) ligand 1 (CXCL1/MGSA), a protein with melanoma growth stimulating activity, and has been shown to be a major component required for serum-dependent melanoma cell growth. This receptor mediates neutrophil migration to sites of inflammation. The angiogenic effects of IL8 in intestinal microvascular endothelial cells are found to be mediated by this receptor. Knockout studies in mice suggested that this receptor controls the positioning of oligodendrocyte precursors in developing spinal cor...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CXCR2",
+          "aliases": "CD182, CDw128b, CMKAR2, IL8R2, IL8RA, IL8RB, WHIMS2",
+          "gene_description": "C-X-C motif chemokine receptor 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TP53 \u2014 tumor protein p53",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TP53\nGene name: tumor protein p53\nAliases / synonyms: BCC7, BMFS5, LFS1, P53, TRP53\nOrganism: Homo sapiens\nGene summary: This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TP53",
+          "aliases": "BCC7, BMFS5, LFS1, P53, TRP53",
+          "gene_description": "tumor protein p53"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CXCL8 \u2014 C-X-C motif chemokine ligand 8",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CXCL8\nGene name: C-X-C motif chemokine ligand 8\nAliases / synonyms: GCP-1, GCP1, IL8, LECT, LUCT, LYNAP, MDNCF, MONAP, NAF, NAP-1, NAP1, SCYB8\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the CXC chemokine family and is a major mediator of the inflammatory response. The encoded protein is commonly referred to as interleukin-8 (IL-8). IL-8 is secreted by mononuclear macrophages, neutrophils, eosinophils, T lymphocytes, epithelial cells, and fibroblasts. It functions as a chemotactic factor by guiding the neutrophils to the site of infection. Bacterial and viral products rapidly induce IL-8 expression. IL-8 also participates with other cytokines in the proinflammatory signaling cascade and plays a role in systemic inflammatory response syndrome (SIRS). This gene is believed to play a role in the pathogenesis of the lower respiratory tract infection bronchiolitis, a common respiratory tract disease caused by the respiratory syncy...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CXCL8",
+          "aliases": "GCP-1, GCP1, IL8, LECT, LUCT, LYNAP, MDNCF, MONAP, NAF, NAP-1, NAP1, SCYB8",
+          "gene_description": "C-X-C motif chemokine ligand 8"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TNF \u2014 tumor necrosis factor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TNF\nGene name: tumor necrosis factor\nAliases / synonyms: DIF, IMD127, TNF-alpha, TNFA, TNFSF2, TNLG1F\nOrganism: Homo sapiens\nGene summary: This gene encodes a multifunctional proinflammatory cytokine that belongs to the tumor necrosis factor (TNF) superfamily. This cytokine is mainly secreted by macrophages. It can bind to, and thus functions through its receptors TNFRSF1A/TNFR1 and TNFRSF1B/TNFBR. This cytokine is involved in the regulation of a wide spectrum of biological processes including cell proliferation, differentiation, apoptosis, lipid metabolism, and coagulation. This cytokine has been implicated in a variety of diseases, including autoimmune diseases, insulin resistance, psoriasis, rheumatoid arthritis ankylosing spondylitis, tuberculosis, autosomal dominant polycystic kidney disease, and cancer. Mutations in this gene affect susceptibility to cerebral malaria, septic shock, and Alzheimer disease. Knockout studie...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TNF",
+          "aliases": "DIF, IMD127, TNF-alpha, TNFA, TNFSF2, TNLG1F",
+          "gene_description": "tumor necrosis factor"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::8136174",
+          "title": "Bioinformatics analysis and identification of genes and molecular pathways in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8136174/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a common disease of the hip with a higher incidence in elderly patients, and the most common clinical symptom is severe pain [1]. There are about 150,000\u2013200,000 new cases in China each year [2], and about 20,000 new cases in the USA each year [3]. The pathological features of steroid-induced ONFH include decreased blood supply to the hip joint, the collapse of the femoral head, and accumulation of microfractures without continuous remodeling [4, 5]. Besides, ONFH can cause rapid destruction and dysfunction of the hip joint, and approximately 65\u201370% of patients with advanced ONFH require total hip replacement [6]. The pathogenesis and molecular mechanism of steroid-induced ONFH remain unclear, and there are few effective prevention and early treatment methods.\nStudies have indicated that successful results can be obtained when joint-preserving surgery is used in the pre-collapse stage of steroid-induced ONFH [7]. After the femoral head necrosis collapses, cartilage wrinkles and the hip joint space gradually narrows. Meanwhile, the failure rate of joint-preserving treatment is high. Therefore, searching for new biomarkers in the blood is of great clinical significance for the diagnosis of steroid-induced ONFH, as well as the further early diagnosis and treatment of ONFH. Some genetic factors are considered key factors in the progress of steroid-induced ONFH, such as peroxisome proliferator-activated receptor \u03b3, matrix metallopeptidase 9, and SMAD family member 3 and gremlin 1 [8\u201310]. Currently, microarray analysis using a high-throughput platform is promising and efficient for exploring the molecular mechanisms of diseases and identifying useful biomarkers for diagnosis and prognosis of diseases [11, 12]. However, there is little comprehensive research on steroid-induced ONFH with high-throughput platforms. During the development of steroid-induced ONFH, the cartilage on the surface of the femoral head and the labrum of the acetabulum are significantly damaged. Degeneration of cartilage on the surface of the femoral head and tearing of the labrum enhance the instability of the hip joint and accelerate the development of steroid-induced ONFH [13]. Prevention and early treatment of hip cartilage damage may slow the development of steroid-induced ONFH and relieve hip dysfunction. However, there are few studies on the molecular mechanism of steroid-induced ONFH hip cartilage damage. Therefore, it is hypothesized in this paper that differentially expressed genes co-exist in the peripheral serum and cartilage of ONFH patients; this can be used for early diagnosis and observation of disease progression.\nIn this study, hub genes are screened out from the differences expressed genes (degrees) using bioinformatics methods based on the National Center for Biotechnology Information (NCBI http://www.ncbi.nlm.nih.gov/geography/) from the Gene Expression Dataset GSE123568 (peripheral serum) and GSE74089 (hip articular cartilage) Comprehensive (GEO) database. Quantitative real-time PCR (qRT-PCR) was conducted to validate the gene expression profiling results based on an independent sera sample of eight patients with ONFH and twelve healthy controls. The present study aimed to identify potentially important genes and signaling pathways involved in ONFH and investigate their molecular mechanisms.\nMaterials and methods\nMicroarray data source\nThe gene chip data related to femoral head necrosis (GSE123568, GSE74089) is downloaded in the GEO (gene expression omnibus) database (https://www.ncbi.nlm.nih.gov/geo/). GSE123568 chip data contains 10 normal patient serum samples and 30\u2009steroid-induced femoral head necrosis serum samples. Besides, the GSE74089 chip data is composed of hip cartilage specimens from 4 NFH patients and 4 healthy controls. All the above data sets are based on GPL15207 and GPL13497 platform GEO database downloaded, and the information of the above two data sets are detailed in Table 1.\nTable 1Two datasets used for gene expression profiles analysis in NFHGEO IDAuthorPlatformSamplesTypeYearOmicsGSE123568Zhang YGPL15207NFH to normal = 30:10Peripheral serum2019mRNAGSE74089Ruiyu LGPL13497NFH to normal = 4:4Hip articular cartilage2016mRNA\nTable 1\nTwo datasets used for gene expression profiles analysis in NFH\nDifferentially expressed genes analysis",
+          "cos_sim_score": 0.6313735246658325,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12767418",
+          "title": "Immunomodulatory Mechanisms of Rehmanniae Radix Praeparata\u2013Achyranthes Root\u2013Chinese Angelica Root Combination in Nontraumatic Osteonecrosis of the Femoral Head: A Comprehensive Network Pharmacology and Molecular Docking Study Focusing on Immunological Pathways",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12767418/",
+          "text": "1. Introduction\nOsteonecrosis of the femoral head (ONFH) is a common, progressive and highly disabling refractory disease in the field of orthopaedics. It primarily results from hypoxia and ischaemia within the femoral head, leading to cartilage destruction, local collapse and ultimately progressing to joint space narrowing and restricted joint mobility, resulting in hip dysfunction [1, 2]. Epidemiological data indicate that approximately 200,000\u2013300,000 new cases are diagnosed globally each year, with a rising trend observed annually [3]. In terms of geographical distribution, regions in Asia, such as China, Japan and South Korea, exhibit relatively higher incidence rates, particularly among patients undergoing long\u2010term steroid therapy [4\u20136]. In Europe and the Americas, due to the widespread consumption of alcohol and the use of steroids, the incidence is also relatively high [7]. From a demographic perspective, male patients significantly outnumber females, with a male\u2010to\u2010female ratio of approximately 3:1. In terms of age distribution, the disease predominantly affects individuals aged between 30 and 50 years [8, 9]; however, the specific age of onset may vary depending on the aetiology. Notably, nontraumatic ONFH (NONFH) accounts for over 70% of all ONFH cases [10]. NONFH is primarily associated with a series of risk factors, including long\u2010term use of steroids, hormonal medications, autoimmune diseases and excessive alcohol consumption [3, 11]. Due to the complexity of the aetiological mechanisms underlying NONFH, there are currently no effective approved drugs available for the treatment of ONFH. Surgical interventions, including hip replacement, remain the mainstream approach in modern medicine. However, the efficacy of surgical treatments varies and is heavily dependent on the surgeon\u2019s experience, while also posing risks such as economic burden, revision surgery and various complications [2, 12, 13].\nEmerging evidence highlights the crucial role of immune inflammation in the pathogenesis of NONFH [14, 15]. Exposure to steroids and alcohol can trigger neutrophil activation and the release of pro\u2010inflammatory mediators, which can cause vascular endothelial injury, intraosseous coagulation and eventually osteonecrosis [16, 17]. Recent research particularly underscores the role of neutrophil extracellular traps (NETs) in contributing to vascular dysfunction in ONFH [18, 19].\nIn recent years, traditional Chinese medicine (TCM) has been widely used as an alternative therapy for ONFH due to its proven efficacy and safety [20\u201323]. Mechanistic studies have shown that TCM can alleviate the progression of ONFH by regulating bone metabolism, oxidative stress and lipid metabolism [23\u201325]. However, current research in this area primarily focuses on the herbal components or formulae with proven efficacy, lacking in\u2010depth exploration of formulation principles and mechanisms of action [26]. In addition, due to the high variability and complexity of clinical TCM practice, there is a need to continuously optimise drug treatment regimens and systematically investigate the formulation principles and mechanisms of action of TCM formulae.\nData mining techniques can analyse large clinical prescription datasets using algorithms to identify core drugs and uncover, hidden valuable information [27, 28]. Ultrahigh performance liquid chromatography\u2010quadrupole time\u2010of\u2010flight mass spectrometry (UHPLC\u2010Q\u2010TOF\u2010MSE) is a high\u2010resolution, highly sensitive analytical tool with structural characterisation capabilities, enabling comprehensive identification of components in drug combinations obtained through data mining, which helps elucidate their pharmacological basis [29]. Network pharmacology employs systems biology, bioinformatics and network science methods to construct visual \u2018drug\u2010target\u2010disease\u2019 networks, revealing the complex mechanisms of TCM in treating diseases [30, 31]. However, traditional network pharmacology has low result accuracy, and integrating UHPLC\u2010Q\u2010TOF\u2010MSE identified components as candidates with network pharmacology and bioinformatics methods can effectively reduce false positive rates. Molecular docking (MD) uses computational simulations based on the lock\u2010and\u2010key principle between drug molecules and proteins to analyse their interactions. In contrast, molecular dynamics simulations (MDS) can provide further insight into these interactions at the molecular level [32, 33].",
+          "cos_sim_score": 0.6255808472633362,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8046137",
+          "title": "Cotransplantation of mesenchymal stem cells and endothelial progenitor cells for treating steroid\u2010induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8046137/",
+          "text": "Significance statementCell\u2010based therapy for skeletal diseases is limited by insufficient osteogenesis and angiogenesis. Cotransplantation of bone marrow derived mesenchymal stem cells (BMSCs) and endothelial progenitor cells (EPCs) can obviously promote bone regeneration and blood vessel formation in bone defect models. However, whether cotransplantation of BMSCs and EPCs can benefit the osteonecrosis repair is poorly investigated. Using a rabbit model, the present study evaluated the treatment effect of BMSCs/EPCs transplantation on steroid\u2010induced osteonecrosis of the femoral head (ONFH). When seeded in carboxymethyl chitosan/alginate (CMC/ALG) scaffolds and then transplanted into the necrotic area of the femoral head, BMSCs/EPCs significantly promoted the repair of steroid\u2010induced ONFH. The treatment effect was induced by enhanced osteogenesis and angiogenesis and reduced adipogenesis.\nSignificance statement\nCell\u2010based therapy for skeletal diseases is limited by insufficient osteogenesis and angiogenesis. Cotransplantation of bone marrow derived mesenchymal stem cells (BMSCs) and endothelial progenitor cells (EPCs) can obviously promote bone regeneration and blood vessel formation in bone defect models. However, whether cotransplantation of BMSCs and EPCs can benefit the osteonecrosis repair is poorly investigated. Using a rabbit model, the present study evaluated the treatment effect of BMSCs/EPCs transplantation on steroid\u2010induced osteonecrosis of the femoral head (ONFH). When seeded in carboxymethyl chitosan/alginate (CMC/ALG) scaffolds and then transplanted into the necrotic area of the femoral head, BMSCs/EPCs significantly promoted the repair of steroid\u2010induced ONFH. The treatment effect was induced by enhanced osteogenesis and angiogenesis and reduced adipogenesis.\n1\nINTRODUCTION\nOsteonecrosis of the femoral head (ONFH) is a serious disease that causes the femoral head to collapse, and is accompanied by secondary osteoarthritis.\n1\n, \n2\n Due to high morbidity and disability rates in young adults, ONFH has been a key research area in the orthopedic arena. Previous epidemiological studies have indicated that high\u2010dose steroids are one of the main causes of ONFH.\n3\n, \n4\n While disease pathogenesis remains unclear, several mechanisms have been shown to contribute to the disease state, that is, elevated intramedullary pressure, imbalanced osteogenic and adipogenic differentiation of bone marrow mesenchymal stem cells (BMSCs), and impaired angiogenesis.\n5\n, \n6\nSeveral hip\u2010preserving surgical methods may be applied to treat early ONFH, that is, core decompression, bone graft and osteotomy\n2\n, \n7\n, \n8\n; however, these treatment modalities are ineffective, as >80% of patients with ONFH will ultimately require total hip arthroplasty (THA).\n9\n While THA procedures significantly improve patient quality of life, there is an increased risk of revision due to dislocation, periprosthetic fracture, infection, and prosthesis loosening after THA.\n10\n, \n11\n Therefore, THA cannot be considered the best therapeutic approach for ONFH, especially in relatively young patients.\nBone tissue engineering is a significant research area for treating ONFH; researchers have used specific cell groups to seed and promote bone regeneration, for example, BMSCs with their multidifferentiation capabilities.\n12\n However, inadequate osteogenic and angiogenic BMSC differentiation has restricted their application in treating ONFH. While several studies have enhanced BMSC osteogenic and angiogenic functions using gene transfection and the sustained release of growth factors from biomaterials,\n13\n, \n14\n, \n15\n, \n16\n methods for preventing potential hazards of gene\u2010editing technologies and measures to achieve effective growth factor release must be investigated by further studies.\n17\n, \n18\n With their innate ability to repair damaged blood vessels, endothelial progenitor cells (EPCs) have also been used to treat ONFH; EPC injection into the femoral head promoted early vascularization and bone regeneration in steroid\u2010induced ONFH, thereby promoting EPCs as a valid seeding source in treating ONFH.\n19\n However, EPCs cannot directly participate in bone regeneration, as they cannot differentiate into osteoblasts.",
+          "cos_sim_score": 0.593170702457428,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8136174",
+          "title": "Bioinformatics analysis and identification of genes and molecular pathways in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8136174/",
+          "text": "Fig. 9\nExpression of hub genes in ONFH patients. a\u2013c CXCR1, FPR1, and TYROBP were upregulated in peripheral blood of steroid-induced ONFH patients(P <\u20090.05). d MAPK1 was downregulated in peripheral blood of steroid-induced ONFH patients (P <\u20090.05); e\u2013g there was no significant difference in the expression of CXCR2, FPR2, and FOXO3 in peripheral serum samples between the two groups (P >\u20090.05)\nDiscussion\nSteroid-induced ONFH is a devastating and difficult joint disease and primarily caused by the interruption of blood supply and the dysfunction of the coagulation system, resulting in the death of bone cells, the decrease of the elastic modulus of the femoral head, and the collapse of the femoral head [21]. Various molecular and genetic studies have explored the etiology and pathogenesis [22, 23]. However, the exact pathogenesis remains unclear. In this paper, the genome-wide method was used to study the differential expression of genes in the peripheral blood serum and hip joint cartilage specimens of steroid-induced ONFH patients and healthy controls. Through bioinformatics analysis of GSE123568 and GSE74089, potentially important genes in ONFH were identified. In addition, the role of the identified genes in ONFH and their interaction were analyzed. A total of 118 intersecting DEGs were obtained in peripheral blood and cartilage samples, of which 40 were upregulated genes and 78 were downregulated genes. These DEGs may be important biomarkers related to the pathogenesis and progression of ONFH. Finally, qRT-PCR verified the expression patterns of several genes such as CXCR1, FPR1, MAPK1, FOXO3, FPR2, CXCR2, and TYROBP in vitro. However, due to different inclusion criteria and a small number of patients in the validation set, some results are inconsistent with microarray analysis.\nThe DEGs screened in this study contribute to the identification of new molecules or new pathways related to steroid-induced ONFH. These new molecules or pathways may be essential targets for disease diagnosis and treatment. The upregulated DEGs were generally involved in inflammation, immune response, and signal transduction. Molecular functions were manifested in immune regulation process, IL-8 receptor activity, superoxide-producing NADPH oxidase activity, and MAP kinase activity. The upregulated DEGs were enriched in pathways engaged in staphylococcus aureus infection, leishmaniasis, antigen processing and presentation, asthma, and graft-versus-host disease. Particularly, the background of this femoral head necrosis can be understood using corticosteroids to treat related acute or chronic graft-versus-host disease (aGVHD, cGVHD) [24]. Socie et al. [25] retrospectively analyzed the risk factors of osteonecrosis after allogeneic hematopoietic stem cell transplantation. The study revealed that the odds ratios of aGVHD and cGVHD were 3.73 and 3.52, respectively. The severity of graft-versus-host disease was associated with a higher frequency of osteonecrosis. Additionally, GO analysis of downregulated genes demonstrated that BP focused on cell cycle regulation, apoptosis process, translation process regulation, autophagy, and cell response to hypoxia. MF was manifested in protein binding, transcription factor binding, and DNA binding. The downregulated genes were concentrated in the FoxO signaling pathway, AMPK signaling pathway, signaling pathway regulating stem cell pluripotency, and mTOR signaling pathway. Moreover, AMPK was an essential energy state sensor responding to energy supply and demand through coordinated metabolic pathways [26]. Studies have indicated that AMPK can promote cell survival under various stress conditions [27]. The forced activation of AMPK is a good strategy to protect osteoblasts from Dex [28, 29]. The mTOR pathway may be a vital mediator of bone homeostasis [30]. Furthermore, the impaired differentiation of the osteogenic/adipogenic lineage of bone marrow mesenchymal stem cells (BMSCs) was caused by the activation of the mTOR signaling pathway [31]. Meanwhile, blocking the mTOR pathway can prevent the development of phenotypes related to aging and enhance the proliferation ability of BMSCs [32]. Therefore, regulating the mTOR signaling pathway may be one of the crucial methods to treat steroid-induced ONFH.",
+          "cos_sim_score": 0.5683912634849548,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8136174",
+          "title": "Bioinformatics analysis and identification of genes and molecular pathways in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8136174/",
+          "text": "Table 2\nThe information of the primers\u2019 sequencing\nStatistical analysis\nGraphPad 8.0 was used to perform statistical analysis. The results are presented as mean \u00b1 standard deviation (mean \u00b1 SD). Data conforming to normal distribution were compared using Student t test, while those with non-normally distributed were tested using Mann-Whitney U test. P <\u20090.05 indicates statistical significance. All experiments were performed in triplicate.\nResults\nIdentification of DEGs\nThis study screened out two chip data sets (GSE123568 and GSE74089). Among them, 30\u2009serum samples of patients with steroid hormone-induced osteonecrosis of the femoral head in the chip data set GSE123568 (including 13 males and 17 females, aged 23.07 \u00b1 3.01\u2009years, ARCO stage I-II patients accounted for 10 patients, ARCO III patients accounted for 10 cases, ARCO IV patients accounted for 10 cases) and 10 normal serum samples (including 7 males and 3 females, aged 25.02 \u00b1 2.87\u2009years). Besides, there are 4 hip cartilage samples from patients with femoral head necrosis (including 3 males and 1 female) and 4 healthy adult hip cartilage specimens (including 3 males and 1 female) in the chip dataset GSE74089. The baseline characteristics of the patients are provided in Table 3. According to the adjust P value <\u20090.01, the expression change range is greater than or equal to twice (|log2 FC|\u22651.0) as the criteria for screening differential genes. A total of 750 differentially expressed genes were screened in the GSE123568 data set, including 454 upregulated genes and 296 downregulated genes. A total of 5211 differentially expressed genes were screened in the GSE74089 data set, including 1594 upregulated genes and 3617 downregulated genes. The DEGs in GSE123568 and GSE74089 were selected based on the adjust P value to screen the top 25 most significant upregulated and downregulated differentially expressed genes, so as to draw heat maps (Fig. 1). The -log10 conversion is performed for the adjust P value in the data processed by GEO2R. Then, according to log2 FC, -log10 (adjust P value) was divided into groups of upregulated genome, downregulated genome, and non-statistically different genome. The processed data was imported into GraphPad Prism 7 to draw a volcano map (Fig. 2). Furthermore, a total of 118 intersecting DEGs were obtained between the peripheral blood and cartilage samples, including 40 upregulated genes and 78 downregulated genes (Fig. 3).\nTable 3Characteristics of study subjectsGSE12356Number of subjectsAge (years, mean \u00b1 SD)SexARCO(I\u2013II/III/IV/)MaleFemaleControl1025.02 \u00b1 2.8773Disease3023.07 \u00b1 3.01131710/10/10GSE74089Control446.75 \u00b1 4.0231\u2212Disease445.25 \u00b1 4.0231\u2212Fig. 1Heat map of top 50 DEGs in ONFH. a Heat map of top 50 DEGs in GSE123568. b Heat map of top 50 DEGs in GSE74089 (tissue samples are presented as columns; individual genes are presented as rows. Red represents upregulated genes; green indicates downregulated genes in patients with ONFH. The patients in the top rows in pink indicate the control columns; the patients in the top rows in blue indicate columns were patients with NFH. DEGs, differentially expressed genes; NFH, necrosis of the femoral head)Fig. 2The volcano plot was constructed using fold-change (Log2FC) values and adjust P values. a The volcano plot of a total of 750 DEGs in GSE123568. b The volcano plot of total 5211 DEGs in GSE74089 (the vertical blue lines correspond to upregulated and downregulated Log2FC; the horizontal Orange line represents an adjust P value of 0.01. The red point represents the differentially upregulated genes with statistical significance; the green point suggests the differentially downregulated genes with statistical significance)Fig. 3Venn diagrams showing the overlap of DEGs between peripheral serum samples and hip articular cartilage samples. a Upregulated DEGs. b Downregulated DEGs (Venn diagram was drawn using the online tool (https://bioinfogp.cnb.csic.es/tools/venny/index.html). Numbers represented the number of DEGs. The percentage was represented by the ratio of current DEGs to the total)\nTable 3\nCharacteristics of study subjects",
+          "cos_sim_score": 0.5448909997940063,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::34016144",
+          "title": "Bioinformatics analysis and identification of genes and molecular pathways in steroid-induced osteonecrosis of the femoral head.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34016144/",
+          "year": "2021",
+          "text": "Steroid-induced osteonecrosis of the femoral head (ONFH) is a common hip joint disease and is difficult to be diagnosed early. At present, the pathogenesis of steroid-induced ONFH remains unclear, and recognized and effective diagnostic biomarkers are deficient. The present study aimed to identify potentially important genes and signaling pathways involved in steroid-induced ONFH and investigate their molecular mechanisms. Microarray data sets GSE123568 (peripheral blood) and GSE74089 (cartilage) were obtained from the Gene Expression Omnibus database, including 34 ONFH samples and 14 control samples. Morpheus software and Venn diagram were used to identify DEGs and co-expressed DEGs, respectively. Besides, we conducted Kyoto Encyclopedia of Genome (KEGG) and gene ontology (GO) pathway enrichment analysis. We construct a protein-protein interaction (PPI) network through GEO2R and used cytoHubba to divide the PPI network into multiple sub-networks. Additionally, quantitative real-time polymerase chain reaction (qRT-PCR) was performed to verify the bioinformatics analysis results. A total of 118 intersecting DEGs were obtained between the peripheral blood and cartilage samples, including 40 upregulated genes and 78 downregulated genes. Then, GO and KEGG pathway enrichment analysis revealed that upregulated DEGs focused on the signaling pathways related to staphylococcus aureus infection, leishmaniasis, antigen processing, and presentation, as well as asthma and graft-versus-host disease. Downregulated genes were concentrated in the FoxO signaling pathway, AMPK signaling pathway, signaling pathway regulating stem cell pluripotency, and mTOR signaling pathway. Some hub genes with high interactions such as CXCR1, FPR1, MAPK1, FOXO3, FPR2, CXCR2, and TYROBP were identified in the PPI network. The results of qRT-PCR demonstrated that CXCR1, FPR1, and TYROBP were upregulated while MAPK1 was downregulated in peripheral blood of steroid-induced ONFH patients. This was consistent with the bioinformatics analysis. The present study would provide novel insight into the genes and associated pathways involved in steroid-induced ONFH. CXCR1, FPR1, TYROBP, and MAPK1 may be used as potential drug targets and biomarkers for the diagnosis and prognosis of steroid-induced ONFH.",
+          "cos_sim_score": 0.4523560404777527,
+          "source_type": "pubmed"
+        }
+      ]
+    }
+  ]
+}

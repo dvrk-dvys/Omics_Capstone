@@ -1,0 +1,227 @@
+{
+  "probe_id": "11756827_a_at",
+  "gene_symbol": "RTN1",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0331269329999968,
+  "abs_fold_change": 1.2435,
+  "score": 1.2427,
+  "probe_count": 1,
+  "probe_ids": "11756827_a_at",
+  "max_score": 1.2427,
+  "mean_abs_fold_change": 1.2435,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T23:28:25",
+  "interpretation": "RTN1, or Reticulon-1, is a protein involved in the regulation of endoplasmic reticulum functions and has been implicated in various neurodegenerative diseases. While there is no direct evidence linking RTN1 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in cellular stress responses and apoptosis may suggest a potential involvement in the pathophysiology of SONFH, particularly given the disease's association with corticosteroid use and ischemic conditions. The evidence retrieved primarily indicates RTN1's involvement in neurodegenerative contexts rather than directly in SONFH, leading to a low confidence in its relevance as a biomarker for early detection of this condition. Thus, while RTN1 may play a role in cellular mechanisms that could be relevant to SONFH, the lack of specific evidence connecting it to this disease limits its potential as a clinically actionable biomarker.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "RTN1 may be involved in cellular stress responses relevant to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "RTN1 (Q16799). https://www.uniprot.org/uniprotkb/Q16799",
+    "RTN1 (Q16799-3). https://www.uniprot.org/uniprotkb/Q16799-3",
+    "RTN1 (Q16799-2). https://www.uniprot.org/uniprotkb/Q16799-2",
+    "RTN1 \u2014 RTN1. https://platform.opentargets.org/target/ENSG00000139970",
+    "RTN1 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000139970/associations",
+    "RTN1 \u2194 atrial fibrillation. https://platform.opentargets.org/target/ENSG00000139970/associations",
+    "RTN1 \u2194 schizophrenia. https://platform.opentargets.org/target/ENSG00000139970/associations",
+    "RTN1 \u2194 celiac disease. https://platform.opentargets.org/target/ENSG00000139970/associations",
+    "RTN1 \u2014 reticulon 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MAPT \u2014 microtubule associated protein tau (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "DRD2 \u2014 dopamine receptor D2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "NR3C1 \u2014 nuclear receptor subfamily 3 group C member 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ADRB2 \u2014 adrenoceptor beta 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Integrated Analysis of miRNA-mRNA Regulatory Networks Associated with Osteonecrosis of the Femoral Head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8376457/",
+    "The dual role of mesenchymal stem cells in apoptosis regulation (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC10998921/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 7720,
+    "completion_tokens": 319,
+    "total_tokens": 8039,
+    "estimated_cost_usd": 0.001349
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q16799",
+          "title": "RTN1 (Q16799)",
+          "url": "https://www.uniprot.org/uniprotkb/Q16799",
+          "text": "Protein: Reticulon-1\nFunction: Inhibits amyloid precursor protein processing, probably by blocking BACE1 activity",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q16799-3",
+          "title": "RTN1 (Q16799-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q16799-3",
+          "text": "Protein: Isoform RTN1-C of Reticulon-1",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q16799-2",
+          "title": "RTN1 (Q16799-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q16799-2",
+          "text": "Protein: Isoform RTN1-B of Reticulon-1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000139970::function",
+          "title": "RTN1 \u2014 RTN1",
+          "url": "https://platform.opentargets.org/target/ENSG00000139970",
+          "text": "Function: Inhibits amyloid precursor protein processing, probably by blocking BACE1 activity. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000139970::EFO_0005772",
+          "title": "RTN1 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000139970/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.463",
+          "cos_sim_score": 0.46251156354218165,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000139970::EFO_0000275",
+          "title": "RTN1 \u2194 atrial fibrillation",
+          "url": "https://platform.opentargets.org/target/ENSG00000139970/associations",
+          "text": "Disease: atrial fibrillation\nDescription: Abnormal cardiac rhythm that is characterized by rapid, uncoordinated firing of electrical impulses in the upper chambers of the heart (HEART ATRIA). In such case, blood cannot be effectively pumped into the lower chambers of the heart (HEART VENTRICLES). It is caused by abnormal impulse generation.\nAssociation score: 0.309",
+          "cos_sim_score": 0.3092647451466956,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000139970::MONDO_0005090",
+          "title": "RTN1 \u2194 schizophrenia",
+          "url": "https://platform.opentargets.org/target/ENSG00000139970/associations",
+          "text": "Disease: schizophrenia\nDescription: A major psychotic disorder characterized by abnormalities in the perception or expression of reality. It affects the cognitive and psychomotor functions. Common clinical signs and symptoms include delusions, hallucinations, disorganized thinking, and retreat from reality.\nAssociation score: 0.276",
+          "cos_sim_score": 0.2760721930511438,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000139970::EFO_0001060",
+          "title": "RTN1 \u2194 celiac disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000139970/associations",
+          "text": "Disease: celiac disease\nDescription: An autoimmune genetic disorder with an unknown pattern of inheritance that primarily affects the digestive tract. It is caused by intolerance to dietary gluten. Consumption of gluten protein triggers an immune response which damages small intestinal villi and prevents adequate absorption of nutrients. Clinical signs include abdominal cramping, diarrhea or constipation and weight loss. If untreated, the clinical course may progress to malnutrition, anemia, osteoporosis and an increased risk of intestinal malignancies. However, the prognosis is favorable with successful avoidance of gluten in the diet.\nAssociation score: 0.274",
+          "cos_sim_score": 0.2742448337772427,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "RTN1 \u2014 reticulon 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RTN1\nGene name: reticulon 1\nAliases / synonyms: NSP\nOrganism: Homo sapiens\nGene summary: This gene belongs to the family of reticulon encoding genes. Reticulons are associated with the endoplasmic reticulum, and are involved in neuroendocrine secretion or in membrane trafficking in neuroendocrine cells. This gene is considered to be a specific marker for neurological diseases and cancer, and is a potential molecular target for therapy. Alternative splicing results in multiple transcript variants. [provided by RefSeq, Jul 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RTN1",
+          "aliases": "NSP",
+          "gene_description": "reticulon 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MAPT \u2014 microtubule associated protein tau",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MAPT\nGene name: microtubule associated protein tau\nAliases / synonyms: DDPAC, FTD1, FTDP-17, MAPTL, MSTD, MTBT1, MTBT2, PPND, PPP1R103, TAU, Tau-PHF6, tau-40\nOrganism: Homo sapiens\nGene summary: This gene encodes the microtubule-associated protein tau (MAPT) whose transcript undergoes complex, regulated alternative splicing, giving rise to several mRNA species. MAPT transcripts are differentially expressed in the nervous system, depending on stage of neuronal maturation and neuron type. MAPT gene mutations have been associated with several neurodegenerative disorders such as Alzheimer's disease, Pick's disease, frontotemporal dementia, cortico-basal degeneration and progressive supranuclear palsy. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MAPT",
+          "aliases": "DDPAC, FTD1, FTDP-17, MAPTL, MSTD, MTBT1, MTBT2, PPND, PPP1R103, TAU, Tau-PHF6, tau-40",
+          "gene_description": "microtubule associated protein tau"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "DRD2 \u2014 dopamine receptor D2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: DRD2\nGene name: dopamine receptor D2\nAliases / synonyms: D2DR, D2R\nOrganism: Homo sapiens\nGene summary: This gene encodes the D2 subtype of the dopamine receptor. This G-protein coupled receptor inhibits adenylyl cyclase activity. A missense mutation in this gene causes myoclonus dystonia; other mutations have been associated with schizophrenia. Alternative splicing of this gene results in two transcript variants encoding different isoforms. A third variant has been described, but it has not been determined whether this form is normal or due to aberrant splicing. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "DRD2",
+          "aliases": "D2DR, D2R",
+          "gene_description": "dopamine receptor D2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "NR3C1 \u2014 nuclear receptor subfamily 3 group C member 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: NR3C1\nGene name: nuclear receptor subfamily 3 group C member 1\nAliases / synonyms: GCCR, GCR, GCRST, GR, GRL\nOrganism: Homo sapiens\nGene summary: This gene encodes glucocorticoid receptor, which can function both as a transcription factor that binds to glucocorticoid response elements in the promoters of glucocorticoid responsive genes to activate their transcription, and as a regulator of other transcription factors. This receptor is typically found in the cytoplasm, but upon ligand binding, is transported into the nucleus. It is involved in inflammatory responses, cellular proliferation, and differentiation in target tissues. Mutations in this gene are associated with generalized glucocorticoid resistance. Alternative splicing of this gene results in transcript variants encoding either the same or different isoforms. Additional isoforms resulting from the use of alternate in-frame translation initiation sites have also been descri...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "NR3C1",
+          "aliases": "GCCR, GCR, GCRST, GR, GRL",
+          "gene_description": "nuclear receptor subfamily 3 group C member 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ADRB2 \u2014 adrenoceptor beta 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ADRB2\nGene name: adrenoceptor beta 2\nAliases / synonyms: ADRB2R, ADRBR, ARB2, B2AR, BAR, BETA2AR\nOrganism: Homo sapiens\nGene summary: This gene encodes beta-2-adrenergic receptor which is a member of the G protein-coupled receptor superfamily. This receptor is directly associated with one of its ultimate effectors, the class C L-type calcium channel Ca(V)1.2. This receptor-channel complex also contains a G protein, an adenylyl cyclase, cAMP-dependent kinase, and the counterbalancing phosphatase, PP2A. The assembly of the signaling complex provides a mechanism that ensures specific and rapid signaling by this G protein-coupled receptor. This receptor is also a transcription regulator of the alpha-synuclein gene, and together, both genes are believed to be associated with risk of Parkinson's Disease. This gene is intronless. Different polymorphic forms, point mutations, and/or downregulation of this gene are associated wit...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ADRB2",
+          "aliases": "ADRB2R, ADRBR, ARB2, B2AR, BAR, BETA2AR",
+          "gene_description": "adrenoceptor beta 2"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::8376457",
+          "title": "Integrated Analysis of miRNA-mRNA Regulatory Networks Associated with Osteonecrosis of the Femoral Head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8376457/",
+          "text": "1. Introduction\nOsteonecrosis of the femoral head (ONFH), also known as avascular necrosis or aseptic necrosis, is a common but complex disease related to ischemia of the femoral head, which finally destroys the structural integrity of the femoral head [1]. In essence, ONFH refers to death of bone cells caused by the damage of microvascular circulation [2]. Although the occurrence of ONFH in the general population have rarely been reported on epidemiological studies in China, a nationally representative survey estimated that 8.12 million people aged 15 years and over in China were associated with ONFH during 2012-2013 [3]. More evidence have manifested that young adults and middle-aged people, especially male, are prone to suffer from ONFH [4]. Although tons of studies have been performed on the etiology, epidemiology, diagnosis, and treatment of ONFH, the exact origin still remains unclear. Some studies have indicated that the trauma [5] and nontraumatic factors involving corticosteroid use [6], habitual drinking [7], and cigarette smoking [8] were strongly contributed to the prevalence of ONFH.\nWith the progress of molecular technology, the amount of research studies have observed the genetic factors, such as glutamate receptor gene [9], single nucleotide polymorphisms and transient receptor potential vanilloid 4 gene [10], and nitric oxide synthase 3 gene [11], have been accepted to influence the etiology of ONFH. In recent years, an increasing number of studies have manifested that microRNAs have been directly in the regulation of bone development and regeneration in orthopedic diseases, such as osteosarcoma [12], knee osteoarthritis [13], and lumbar disc herniation [14]. miRNAs are thought to be small noncoding RNAs (18\u201325 nucleotides), which regulate the stability or translation efficiency of their target mRNAs in a negative way to modulate posttranscriptional gene expression [15]. The crucial roles of miRNAs have been widely confirmed in ONFH. For example, miR-155-5p was found to be significantly downregulated in ONFH samples [16]. miR-148a-3p [17], miR-23b-3p [18], and miR-26a [19] were all reported to play a protective role against ONFH. Recent advancement of genome-wide profiling approaches, such as gene microarray and RNA-sequencing technology, enhances the understanding of miRNA and gene expression profiles in the context of ONFH, providing opportunity to identify novel biomarkers and therapeutic targets for ONFH [20, 21]. However, previous miRNA and gene expression profiles studies in ONFH are limited and focused one or several of the differentially expressed miRNAs (DEmiRs) or differential expressed genes (DEGs); none of them focused on the cooperative miRNA-mRNA regulatory mechanism for the pathogenesis of ONFH. In order to deeply understand the diverse biological processes in bones and figure out the regulation in the pathological mechanism of ONFH, in this study, the differentially expression analysis of miRNA and mRNA in ONFH patients compared to non-ONFH was performed, and explore the construction of potential miRNA-mRNA regulatory networks in ONFH by bioinformatics analysis.\n2. Materials and Methods\n2.1. Acquisition of Expression Profiles and Differential Expression Analysis\nA gene expression profile GSE123568 and a miRNA expression profile GSE89587 were downloaded from the GEO database. GSE123568 was generated on the GPL15207 platform and included serum samples from 30 steroid-induced osteonecrosis of the femoral head (SONFH) patients and 10 non-SONFH patients. GSE89587 was generated on the GPL21439 platform and encompassed serum samples from 10 trauma-induced osteonecrosis of the femoral head (TIONFH) and 10 healing patients. After background correction, quartile normalization and probe summarization with the limma R package, DEGs, and DEmiRs between serum samples of ONFH and non-ONFH patients stood out by analyzing GSE123568 and GSE89587 microarray data with log2 |fold change (FC)|\u2009\u2265\u20091, and an adjusted p value less than 0.05 was the cutoff value.\n2.2. Identification of the DEmiR-DEG Regulatory Network",
+          "cos_sim_score": 0.5063262581825256,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8376457",
+          "title": "Integrated Analysis of miRNA-mRNA Regulatory Networks Associated with Osteonecrosis of the Femoral Head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8376457/",
+          "text": "3.5. Construction of the PPI Network\nThe DEGs were mapped into the STRING database to construct the PPI network. In the PPI network, there were 68 nodes, including 43 downregulated DEGs, 25 upregulated DEGs, and 78 interactions (Figure 6). The hub nodes were C5AR1, CDC27, CDC34, KAT2B, CPPED1, TFDP1, and MX2. C5AR1, CPPED1, and MX2 were upregulated DEGs, and CDC27, CDC34, KAT2B, and TFDP1 were downregulated DEGs between ONFH and non-ONFH.\n4. Discussion\nONFH is a multifactorial orthopedic disease characterized by decreased blood flow leading to bone cell death [22]. The prevalence of ONFH arises from environmental factors, involving serious trauma, corticosteroid medications, and alcohol intake [2], and genetic elements [10]. However, the original pathogenesis of ONFH remains to be explored. Thus, the investigation of the molecular mechanism involved in ONFH is helpful to develop more effective diagnosis and treatment strategies. In this study, the GSE89587 and GSE123568 datasets were used to indicate regulation of miRNAs and mRNAs in the gene expression of ONFH. In brief, according to the GSE89587 dataset, a total of 47 DEmiRs, consisting of 24 upregulated miRNAs and 23 downregulated miRNAs, were identified in 10 TIONFH and 10 healing patients. In addition, 529 DEGs, involving 218 upregulated genes and 311 downregulated genes, were identified in 30 SONFH patients and 10 non-SONFH patients based on the GSE123568 dataset.",
+          "cos_sim_score": 0.34785667061805725,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10998921",
+          "title": "The dual role of mesenchymal stem cells in apoptosis regulation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10998921/",
+          "text": "frizzled-related protein 2 pathway[171]Melatonin/ AstaxanthinVia NRF2 signaling pathway[172, 173]FucoxanthinThrough the PI3K/AKT/ NRF2 pathway[174]DexamethasoneBaicalinActive the hedgehog signaling pathway[140]Eicosapentaenoic acidVia GPR120-meditated induction of adaptive autophagy[175]MetforminFacilitate osteogenesis and inhibit adipogenesis[141]LNC_000052Upregulation of miR-96-5pVia the PI3K/AKT signaling pathway[145]GlutamateRepress prostate apoptosis response-4 gene expression[176]TNF-\u03b1Silence RUNX2Inhibit caspase-3 activity and Bax expression[177]CoCl2 and SIN-1Transfection of miR-302dInhibit CCL-5 expression[178]Diabetic serumBlockade of the C5a/C5aR pathwayDown-regulation of FADD and the Bax/ Bcl-2 ratio[179]High glucose stressAURKATranscriptional regulation for FOXO3a[180]RopivacaineSufentanilRegulate miR- 182-5p/BCL10/CYCS[181]Ionizing radiationRedd1 overexpressionAttenuate mitochondrial ROS generation and promote cell autophagy[182]MethylprednisoloneParkinson disease protein 7Via NRF2 signaling pathway[183]MSCs mesenchymal stem cells, miR micro RNA, BIRC5 baculoviral IAP repeat-containing protein 5, NRF2 Nuclear factor-erythroid 2 related factor 2, ERK extracellular regulated protein kinases, MAPK mitogen-activated protein kinase, BNIP3 Bcl-2/adenovirus E1B 19\u2009kDa protein-interacting protein 3, H2O2 hydrogen peroxide, PGE1 prostaglandin E2, HIF hypoxia-inducible factor, NMNAT3 nicotinamide mononucleotide adenylyl transferase 3, SDF-1 Stromal cell-derived factor 1, NAD+ nicotinamide adenine dinucleotide, SIRT3 Sirtuin 3, PI3K Phosphatidylinositol 3-kinase, GPR120 G protein coupled receptor 120, TNF-\u03b1 tumor necrosis factor-alpha, RUNX2 Runt-related transcription factor 2, CoCl2 cobalt chloride, SIN-1 3-morpholinosydnonimine hydrochloride, CCL-5 C-C motif chemokine ligand 5, C5a/C5aR complement C5a/C5a receptor, FADD Fas-associated protein with death domain, Fas-L Fas ligand, BCL10 B-cell lymphoma/leukemia10, CYCS cytochrome c, somatic.",
+          "cos_sim_score": 0.20300735533237457,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10998921",
+          "title": "The dual role of mesenchymal stem cells in apoptosis regulation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10998921/",
+          "text": "MSCs regulate the apoptosis of the cells through multiple molecules and pathways (Fig. 1). Many studies have found that MSCT significantly reduce the apoptosis of diseases-related tissue cells (Table 1), which is achieved by the activation of a variety of signaling pathways [13\u201315]. More interestingly, MSCs also alleviate diseases by promoting apoptosis in some cells, such as autoimmune diseases and tumors [16\u201318]. These evidences suggest that MSCs exert therapeutic effects by regulating the apoptotic process of various cells. In this review, we summarize the current understanding of the role of MSCs in the regulation of apoptosis, and provide a new perspective on the relationship between MSCs and apoptosis.Fig. 1Mesenchymal stem cells (MSCs) exhibit varying apoptotic regulatory effects for different cell.The influence of MSCs on apoptosis varies depending on the target cells. MSCs typically demonstrate significant antiapoptotic effects on cells that have been damaged by disease or trauma. However, MSCs can also promote the apoptosis of immune cells and tumor cells. These findings highlight the crucial role of MSCs in the intricate regulatory network of apoptosis.Table 1Mechanism of MSCs resistance to apoptosis.PathwaysMoleculesMechanismsRefsMitochondrial pathwayIL-6Via the activation of the JAK-STAT3-Ref-1 and JAK-Stat3-Bcl-2/Bax-Caspase-3 pathways; Upregulate the mRNA expression of Cyclin D and Bcl-xl[28, 37]PGE2Via ERK1/2 and GSK3beta phosphorylation to increase Bcl-2 and decrease Bax expression[29]TGF-\u03b2Through TGF-\u03b2/Bax singling pathway[30]miR-29a-3pRegulate Bcl-2 and Bcl-xl genes[31]miR-125b-5pRepress the protein expression of p53, leading to the modulation of Bcl-2 and Bax to inhibit apoptosis[32]miR-93Through targeting the HDAC4/Bcl-2 axis[33]miR-150-5pVia targeting Bax[34]lncRNA-UCA1Target miR-873 via sponging, reducing the latter\u2019s suppressive effects on its target XIAP, and this translated into AMPK phosphorylation and increased level of the antiapoptotic protein Bcl-2[35]Enhance translocation of Bcl-2 to the nucleus[36]CXCL12Reduce caspase-3 activation and modulate the expression of the antiapoptotic protein Bcl-xl[38]Upregulate p-AKT and p-Bad by PI3K-AKT-Bad pathway[39]Death receptor pathwaySuppress the protein expression levels of",
+          "cos_sim_score": 0.1914294958114624,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10998921",
+          "title": "The dual role of mesenchymal stem cells in apoptosis regulation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10998921/",
+          "text": "Table 2\nMSCs enhance apoptosis of target cells.\nMSCs mesenchymal stem cells, TRIM14 tripartite motif containing 14, PI3K phosphatidylinositol 3-kinase, TRAIL TNF-related apoptosis inducing ligand, MDA MDA-MB-231 cells, Fas-L Fas ligand, MM multiple myeloma, EMT Epithelial-mesenchymal transition, MMP7 matrilysin; matrix metalloproteinase 7, TGF-\u03b2 transforming growth factor-beta, BATF2 basic leucine zipper transcriptional factor ATF like 2, JAK Janus kinase, STAT signal transducer and activator of transcription, TLR4 Toll-like receptor 4.\nMSCs promote apoptosis of immune cells and other cells\nMSCs also alleviate various autoimmune diseases by promoting apoptosis of immune cells. The pro-apoptotic effect of MSCs on immune cells is usually regarded as part of the immunosuppressive ability of MSCs. And emerging evidences suggest that MSCs significantly inhibit T cells to exert immunosuppressive activity, which is involved in a variety of immune molecules, including indoleamine (2,3)-dioxygenase, programmed cell death 1 ligand 1, and Fas-L [18, 131\u2013133]. These immune molecules help MSCs effectively alleviate graft-versus-host disease, systemic sclerosis, and DSS-induced ulcerative colitis. In addition, in vitro experiments also find that MSCs promote hepatic stellate cells apoptosis and help to alleviate the process of liver fibrosis [134, 135]. Many ncRNAs are also involved in the remission of autoimmune diseases. MSCs-derived exosomes suppress miR-5189-3p to facilitate the apoptosis of fibroblast-like synoviocytes via the basic leucine zipper ATF-like transcription factor 2/JAK2/STAT3 signaling pathway, which facilitate relieve ankylosing spondylitis (AS) [136]. The MSCs-secreted miR-26a inhibit the proliferation of high glucose-induced human skin fibroblasts cells and promote cell apoptosis, which may be related to the TLR4/NF-\u03baB signaling pathway [137]. These above evidences indicate that the pro-apoptotic effect of MSCs on immune cells is also an integral part of the efficacy of MSCs.\nSelf-regulation of apoptosis by MSCs",
+          "cos_sim_score": 0.1799822449684143,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

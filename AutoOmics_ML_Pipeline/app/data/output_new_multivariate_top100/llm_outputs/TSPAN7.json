@@ -1,0 +1,168 @@
+{
+  "probe_id": "11715752_at",
+  "gene_symbol": "TSPAN7",
+  "rf_importance": 0.0099,
+  "selection_freq": 1.0,
+  "abs_fold_change": 2.4349415999999984,
+  "score": 0.4134,
+  "probe_count": 1,
+  "probe_ids": "11715752_at",
+  "max_score": 0.4134,
+  "mean_abs_fold_change": 2.4349,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T21:47:37",
+  "interpretation": "TSPAN7, or Tetraspanin-7, is a member of the tetraspanin family of proteins, which are known to play roles in cell proliferation and motility. While there is no direct evidence linking TSPAN7 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in cell signaling and motility suggests a potential role in bone remodeling processes that could be disrupted in SONFH. The retrieved evidence primarily indicates its general biological functions without specific ties to SONFH, leading to a low confidence in its direct relevance as a biomarker. Therefore, while TSPAN7 may have some biological plausibility in the context of SONFH, its clinical utility as an early-detection biomarker remains weak and unsubstantiated by direct evidence.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "TSPAN7 may be involved in cellular processes relevant to bone health, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "TSPAN7 (P41732). https://www.uniprot.org/uniprotkb/P41732",
+    "TSPAN7 \u2014 TSPAN7. https://platform.opentargets.org/target/ENSG00000156298",
+    "TSPAN7 \u2194 intellectual disability, X-linked 58. https://platform.opentargets.org/target/ENSG00000156298/associations",
+    "TSPAN7 \u2194 X-linked non-syndromic intellectual disability. https://platform.opentargets.org/target/ENSG00000156298/associations",
+    "TSPAN7 \u2194 non-syndromic X-linked intellectual disability. https://platform.opentargets.org/target/ENSG00000156298/associations",
+    "TSPAN7 \u2194 severe acute respiratory syndrome. https://platform.opentargets.org/target/ENSG00000156298/associations",
+    "TSPAN7 \u2014 tetraspanin 7 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "DRD2 \u2014 dopamine receptor D2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ADRB2 \u2014 adrenoceptor beta 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ITGB1 \u2014 integrin subunit beta 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "LMNA \u2014 lamin A/C (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4725,
+    "completion_tokens": 294,
+    "total_tokens": 5019,
+    "estimated_cost_usd": 0.000885
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P41732",
+          "title": "TSPAN7 (P41732)",
+          "url": "https://www.uniprot.org/uniprotkb/P41732",
+          "text": "Protein: Tetraspanin-7\nFunction: May be involved in cell proliferation and cell motility",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000156298::function",
+          "title": "TSPAN7 \u2014 TSPAN7",
+          "url": "https://platform.opentargets.org/target/ENSG00000156298",
+          "text": "Function: May be involved in cell proliferation and cell motility.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000156298::MONDO_0010266",
+          "title": "TSPAN7 \u2194 intellectual disability, X-linked 58",
+          "url": "https://platform.opentargets.org/target/ENSG00000156298/associations",
+          "text": "Disease: intellectual disability, X-linked 58\nDescription: Any non-syndromic X-linked intellectual disability in which the cause of the disease is a mutation in the TSPAN7 gene.\nAssociation score: 0.725",
+          "cos_sim_score": 0.7245530529401253,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000156298::Orphanet_777",
+          "title": "TSPAN7 \u2194 X-linked non-syndromic intellectual disability",
+          "url": "https://platform.opentargets.org/target/ENSG00000156298/associations",
+          "text": "Disease: X-linked non-syndromic intellectual disability\nAssociation score: 0.669",
+          "cos_sim_score": 0.6687403901863939,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000156298::MONDO_0019181",
+          "title": "TSPAN7 \u2194 non-syndromic X-linked intellectual disability",
+          "url": "https://platform.opentargets.org/target/ENSG00000156298/associations",
+          "text": "Disease: non-syndromic X-linked intellectual disability\nDescription: Nonspecific X-linked intellectual deficiencies (MRX) belong to the family of sex-linked intellectual deficiencies (XLMR). In contrast to syndromic or specific X-linked intellectual deficiencies (MRXS), which also present with associated physical, neurological and/or psychiatric manifestations, intellectual deficiency is the only symptom of MRX.\nAssociation score: 0.416",
+          "cos_sim_score": 0.4157773365202895,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000156298::EFO_0000694",
+          "title": "TSPAN7 \u2194 severe acute respiratory syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000156298/associations",
+          "text": "Disease: severe acute respiratory syndrome\nDescription: Severe acute respiratory syndrome is a respiratory tract infection described as a severe respiratory illness that is transmitted especially by contact with infectious material (as respiratory droplets or body fluids), is caused by a single-stranded RNA virus of the genus Coronavirus (SARS-CoV), is characterized by fever, headache, body aches, a dry cough, and hypoxia and usually by pneumonia.\nAssociation score: 0.305",
+          "cos_sim_score": 0.30457697681752416,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "TSPAN7 \u2014 tetraspanin 7",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TSPAN7\nGene name: tetraspanin 7\nAliases / synonyms: A15, CCG-B7, CD231, DXS1692E, MRX58, MXS1, TALLA-1, TM4SF2, TM4SF2b, XLID58\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the transmembrane 4 superfamily, also known as the tetraspanin family. Most of these members are cell-surface proteins that are characterized by the presence of four hydrophobic domains. The proteins mediate signal transduction events that play a role in the regulation of cell development, activation, growth and motility. This encoded protein is a cell surface glycoprotein and may have a role in the control of neurite outgrowth. It is known to complex with integrins. This gene is associated with X-linked cognitive disability and neuropsychiatric diseases such as Huntington's chorea, fragile X syndrome and myotonic dystrophy. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TSPAN7",
+          "aliases": "A15, CCG-B7, CD231, DXS1692E, MRX58, MXS1, TALLA-1, TM4SF2, TM4SF2b, XLID58",
+          "gene_description": "tetraspanin 7"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "DRD2 \u2014 dopamine receptor D2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: DRD2\nGene name: dopamine receptor D2\nAliases / synonyms: D2DR, D2R\nOrganism: Homo sapiens\nGene summary: This gene encodes the D2 subtype of the dopamine receptor. This G-protein coupled receptor inhibits adenylyl cyclase activity. A missense mutation in this gene causes myoclonus dystonia; other mutations have been associated with schizophrenia. Alternative splicing of this gene results in two transcript variants encoding different isoforms. A third variant has been described, but it has not been determined whether this form is normal or due to aberrant splicing. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "DRD2",
+          "aliases": "D2DR, D2R",
+          "gene_description": "dopamine receptor D2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ADRB2 \u2014 adrenoceptor beta 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ADRB2\nGene name: adrenoceptor beta 2\nAliases / synonyms: ADRB2R, ADRBR, ARB2, B2AR, BAR, BETA2AR\nOrganism: Homo sapiens\nGene summary: This gene encodes beta-2-adrenergic receptor which is a member of the G protein-coupled receptor superfamily. This receptor is directly associated with one of its ultimate effectors, the class C L-type calcium channel Ca(V)1.2. This receptor-channel complex also contains a G protein, an adenylyl cyclase, cAMP-dependent kinase, and the counterbalancing phosphatase, PP2A. The assembly of the signaling complex provides a mechanism that ensures specific and rapid signaling by this G protein-coupled receptor. This receptor is also a transcription regulator of the alpha-synuclein gene, and together, both genes are believed to be associated with risk of Parkinson's Disease. This gene is intronless. Different polymorphic forms, point mutations, and/or downregulation of this gene are associated wit...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ADRB2",
+          "aliases": "ADRB2R, ADRBR, ARB2, B2AR, BAR, BETA2AR",
+          "gene_description": "adrenoceptor beta 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ITGB1 \u2014 integrin subunit beta 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ITGB1\nGene name: integrin subunit beta 1\nAliases / synonyms: CD29, FNRB, GPIIA, MDF2, MSK12, VLA-BETA, VLAB\nOrganism: Homo sapiens\nGene summary: Integrins are heterodimeric proteins made up of alpha and beta subunits. At least 18 alpha and 8 beta subunits have been described in mammals. Integrin family members are membrane receptors involved in cell adhesion and recognition in a variety of processes including embryogenesis, hemostasis, tissue repair, immune response and metastatic diffusion of tumor cells. This gene encodes a beta subunit. Multiple alternatively spliced transcript variants which encode different protein isoforms have been found for this gene. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ITGB1",
+          "aliases": "CD29, FNRB, GPIIA, MDF2, MSK12, VLA-BETA, VLAB",
+          "gene_description": "integrin subunit beta 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "LMNA \u2014 lamin A/C",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: LMNA\nGene name: lamin A/C\nAliases / synonyms: CDCD1, CDDC, CMD1A, CMT2B1, EMD2, FPL, FPLD, FPLD2, HGPS, IDC, LDP1, LFP, LGMD1B, LMN1, LMNC, LMNL1, MADA, PRO1\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is part of the nuclear lamina, a two-dimensional matrix of proteins located next to the inner nuclear membrane. The lamin family of proteins make up the matrix and are highly conserved in evolution. During mitosis, the lamina matrix is reversibly disassembled as the lamin proteins are phosphorylated. Lamin proteins are thought to be involved in nuclear stability, chromatin structure and gene expression. Vertebrate lamins consist of two types, A and B. Alternative splicing results in multiple transcript variants. Mutations in this gene lead to several diseases: Emery-Dreifuss muscular dystrophy, familial partial lipodystrophy, limb girdle muscular dystrophy, dilated cardiomyopathy, Charcot-Marie-Tooth disease, and Hutchinson-Gilford progeria syndrome. [provi...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "LMNA",
+          "aliases": "CDCD1, CDDC, CMD1A, CMT2B1, EMD2, FPL, FPLD, FPLD2, HGPS, IDC, LDP1, LFP, LGMD1B, LMN1, LMNC, LMNL1, MADA, PRO1",
+          "gene_description": "lamin A/C"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

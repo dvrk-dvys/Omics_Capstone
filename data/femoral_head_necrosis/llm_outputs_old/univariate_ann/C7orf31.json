@@ -1,0 +1,126 @@
+{
+  "rf_rank": 42,
+  "probe_id": "11725165_a_at",
+  "gene_symbol": "C7orf31",
+  "score": 0.55,
+  "rf_n_nodes": 6,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.7359,
+  "log_fc": 0.7359,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11725165_a_at",
+  "max_score": 0.55,
+  "mean_abs_fold_change": 0.7359,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T20:24:54",
+  "interpretation": "C7orf31 encodes a protein known as Sperm-associated microtubule inner protein 4, which is involved in stabilizing microtubule structures, particularly in sperm flagella. While there is no direct evidence linking C7orf31 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its expression in various tissues and potential role in cellular stability may suggest a broader involvement in cellular processes that could be disrupted in osteonecrosis. The evidence retrieved primarily discusses its functions in microtubule dynamics and associations with other proteins, but lacks specific connections to SONFH mechanisms. Therefore, while C7orf31 may have biological relevance, its potential as a biomarker for early detection of SONFH is weak due to insufficient disease-specific evidence.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "C7orf31 may play a role in cellular stability, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "SPMIP4 (Q8N865). https://www.uniprot.org/uniprotkb/Q8N865",
+    "C7orf31 \u2014 SPMIP4. https://platform.opentargets.org/target/ENSG00000153790",
+    "C7orf31 \u2194 obesity. https://platform.opentargets.org/target/ENSG00000153790/associations",
+    "C7orf31 \u2194 bile duct disorder. https://platform.opentargets.org/target/ENSG00000153790/associations",
+    "C7orf31 \u2194 stricture. https://platform.opentargets.org/target/ENSG00000153790/associations",
+    "C7orf31 \u2194 male infertility. https://platform.opentargets.org/target/ENSG00000153790/associations",
+    "C7orf31. https://en.wikipedia.org/wiki/C7orf31",
+    "Chromosome 7. https://en.wikipedia.org/wiki/Chromosome_7"
+  ],
+  "token_usage": {
+    "prompt_tokens": 3703,
+    "completion_tokens": 229,
+    "total_tokens": 3932,
+    "estimated_cost_usd": 0.000693
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q8N865",
+          "title": "SPMIP4 (Q8N865)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8N865",
+          "text": "Protein: Sperm-associated microtubule inner protein 4\nFunction: Microtubule inner protein (MIP) part of the dynein-decorated doublet microtubules (DMTs) in flagellum axoneme. May serve to reinforce and thus stabilize the microtubule structure in the sperm flagella",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000153790::function",
+          "title": "C7orf31 \u2014 SPMIP4",
+          "url": "https://platform.opentargets.org/target/ENSG00000153790",
+          "text": "Function: Microtubule inner protein (MIP) part of the dynein-decorated doublet microtubules (DMTs) in flagellum axoneme. May serve to reinforce and thus stabilize the microtubule structure in the sperm flagella. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000153790::EFO_0001073",
+          "title": "C7orf31 \u2194 obesity",
+          "url": "https://platform.opentargets.org/target/ENSG00000153790/associations",
+          "text": "Disease: obesity\nDescription: An eating-related disorder in which excess body fat has accumulated to such an extent that health may be negatively affected. It is commonly defined as a body mass index (weight divided by height squared) of 30 kg/m2 or higher.\nAssociation score: 0.295",
+          "cos_sim_score": 0.29505862437592045,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000153790::MONDO_0002887",
+          "title": "C7orf31 \u2194 bile duct disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000153790/associations",
+          "text": "Disease: bile duct disorder\nDescription: A disease involving the bile duct.\nAssociation score: 0.292",
+          "cos_sim_score": 0.29204294657213153,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000153790::EFO_0006818",
+          "title": "C7orf31 \u2194 stricture",
+          "url": "https://platform.opentargets.org/target/ENSG00000153790/associations",
+          "text": "Disease: stricture\nDescription: abnormal narrowing in a blood vessel or other tubular organ or structure\nAssociation score: 0.290",
+          "cos_sim_score": 0.28985906769534225,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000153790::EFO_0004248",
+          "title": "C7orf31 \u2194 male infertility",
+          "url": "https://platform.opentargets.org/target/ENSG00000153790/associations",
+          "text": "Disease: male infertility\nDescription: The inability of the male to effect fertilization of an ovum after a specified period of unprotected intercourse. Male sterility is permanent infertility.\nAssociation score: 0.288",
+          "cos_sim_score": 0.2882015199731367,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::C7orf31",
+          "title": "C7orf31",
+          "url": "https://en.wikipedia.org/wiki/C7orf31",
+          "text": "Chromosome Seven Open Reading Frame 31 (C7orf31) is a protein that in humans is encoded by the C7orf31 gene on chromosome seven.\n\nGene/Locus\nIn humans, the C7orf31 gene is located at the locus 7p15.3   and stretches between position 25174316 and 25219817 (span 45502 bp).  It codes for at least 4 unique human isoforms: the primary isoform (590 aa; also denoted X1, X2, and CRA_c), isoform X4 (346 aa), isoform CRA_a (580 aa), and isoform CRA_b (380 aa).\n\nTranscript\nIn humans, C7orf31 codes for an mRNA strand that is 3609 base pairs long.  The human mRNA is composed of a 5' untranslated region that is 561 bases and a 3' untranslated region that is 1275 bases long.\n\nProtein\nThe primary protein encoded by C7orf31 in humans is 590 amino acids long with molecular weight 38334 Da.  The protein is part of a functionally uncharacterized family of proteins (pfam15093) with a domain of unknown function (DUF4555).\n\nProtein Orthology\nThe C7orf31 protein is well-conserved in mammals and birds, but is less conserved in more distant organisms.\nC7orf31 does not have any paralogs in humans.\n\nExpression\nIn humans, C7orf31 is predicted to be localized in the cytosol, nucleus, mitochondrion, and peroxisome, and it is expressed in almost all tissues.  It is highly expressed especially in the testes.\n\nInteraction\nTwo-hybrid studies have found interactions between the proteins encoded by A8K5H9 and C7orf31, and another study has found the protein to interact with KBTBD5.\nA study in 2014 found C7orf31 to be a candidate as a centrosome-associated protein, using mass spectrometry on mammalian sperm cells\u2019 centrioles.  The protein appears in the study alongside seven other centrosome-associated protein candidates.  Along with 2241 other proteins, C7orf31 also exhibited significant binding in a microarray experiment to \u03b2-amyloids, a group of proteins associated with Alzheimer's disease.  Finally, in a protein-protein interaction network study, C7orf31 was found to associate with KLHL40, whose exact function is also not known.\n\nReferences\nExternal links\nHuman C7orf31 genome location and C7orf31 gene details page  in the UCSC Genome Browser.",
+          "cos_sim_score": 0.5713645219802856,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Chromosome 7",
+          "title": "Chromosome 7",
+          "url": "https://en.wikipedia.org/wiki/Chromosome_7",
+          "text": "Chromosome 7 is one of the 23 pairs of chromosomes in humans, who normally have two copies of this chromosome. Chromosome 7 spans about 160 million base pairs (the building material of DNA) and represents between 5 and 5.5 percent of the total DNA in cells.\n\nGenes\nNumber of genes\nThe following are some of the gene count estimates of human chromosome 7. Because researchers use different approaches to genome annotation their predictions of the number of genes on each chromosome varies (for technical details, see gene prediction). Among various projects, the collaborative consensus coding sequence project (CCDS) takes an extremely conservative strategy. So CCDS's gene number prediction represents a lower bound on the total number of human protein-coding genes.\n\nPartial gene list\nThe following is a partial list of genes on human chromosome 7. For complete list, see the link in the infobox on the right.\n\nDiseases and disorders\nThe following diseases are some of those related to genes on chromosome 7:\n\nChromosomal disorders\nThe following conditions are caused by changes in the structure or number of copies of chromosome 7:\n\nWilliams syndrome is caused by the deletion of genetic material from a portion of the long (q) arm of chromosome 7. The deleted region, which is located at position 11.23 (written as 7q11.23), is designated as the Williams syndrome critical region. This region includes more than 20 genes, and researchers believe that the characteristic features of Williams syndrome are probably related to the loss of multiple genes in this region.\nWhile a few of the specific genes related to Williams syndrome have been identified, the relationship between most of the genes in the deleted region and the signs and symptoms of Williams syndrome is unknown.\n\nOther changes in the number or structure of chromosome 7 can cause delayed growth and development, mental disorder, characteristic facial features, skeletal abnormalities, delayed speech, and other medical problems. These changes include an extra copy of part of chromosome 7 in each cell (partial trisomy 7) or a missing segment of the chromosome in each cell (partial monosomy 7). In some cases, several DNA building blocks (nucleotides) are deleted or duplicated in part of chromosome 7. A circular structure called ring chromosome 7 is also possible. A ring chromosome occurs when both ends of a broken chromosome are reunited.\n\nCytogenetic band\nIn popular culture\nNovels\nIn the novel Performance Anomalies, researchers at Stanford University identify mutations in the long (q) arm of chromosome 7 as underlying the accelerated nervous system of the spy protagonist Cono, who receives the moniker Cono 7Q\n\nReferences\nFurther reading\nExternal links\n\nNational Institutes of Health. \"Chromosome 7\". Genetics Home Reference. Archived from the original on August 3, 2004. Retrieved 2017-05-06.\n\"Chromosome 7\". Human Genome Project Information Archive 1990\u20132003. Retrieved 2017-05-06.",
+          "cos_sim_score": 0.226037859916687,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

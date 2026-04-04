@@ -1,0 +1,166 @@
+{
+  "rf_rank": 34,
+  "probe_id": "11717267_x_at",
+  "gene_symbol": "CAMK2G",
+  "score": 0.59,
+  "rf_n_nodes": 17,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.8295,
+  "log_fc": 0.8295,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11717267_x_at",
+  "max_score": 0.59,
+  "mean_abs_fold_change": 0.8295,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T20:21:30",
+  "interpretation": "CAMK2G encodes the gamma subunit of calcium/calmodulin-dependent protein kinase II (CaMKII), which is crucial for calcium signaling and synaptic plasticity. This protein plays a significant role in processes such as long-term potentiation (LTP), which is essential for memory and learning. Although there is no direct evidence linking CAMK2G to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in calcium homeostasis and signaling pathways suggests a potential role in bone health and response to steroid treatment. The retrieved evidence primarily supports its general biological functions rather than a specific connection to SONFH, leading to a moderate confidence in its relevance as a biomarker. Therefore, while CAMK2G may not be a direct biomarker for SONFH, its biological functions could imply a role in the disease context, warranting further investigation.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "CAMK2G may influence calcium signaling pathways relevant to bone health, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "CAMK2G (Q13555). https://www.uniprot.org/uniprotkb/Q13555",
+    "CAMK2G (Q13555-5). https://www.uniprot.org/uniprotkb/Q13555-5",
+    "CAMK2G (Q13555-10). https://www.uniprot.org/uniprotkb/Q13555-10",
+    "CAMK2G \u2014 CAMK2G. https://platform.opentargets.org/target/ENSG00000148660",
+    "CAMK2G \u2194 intellectual developmental disorder 59. https://platform.opentargets.org/target/ENSG00000148660/associations",
+    "CAMK2G \u2194 psoriasis. https://platform.opentargets.org/target/ENSG00000148660/associations",
+    "CAMK2G \u2194 Severe intellectual disability. https://platform.opentargets.org/target/ENSG00000148660/associations",
+    "CAMK2G \u2194 dengue disease. https://platform.opentargets.org/target/ENSG00000148660/associations",
+    "Ca2+/calmodulin-dependent protein kinase II. https://en.wikipedia.org/wiki/Ca2%2B/calmodulin-dependent_protein_kinase_II",
+    "CAMK2G. https://en.wikipedia.org/wiki/CAMK2G"
+  ],
+  "token_usage": {
+    "prompt_tokens": 6335,
+    "completion_tokens": 252,
+    "total_tokens": 6587,
+    "estimated_cost_usd": 0.001101
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q13555",
+          "title": "CAMK2G (Q13555)",
+          "url": "https://www.uniprot.org/uniprotkb/Q13555",
+          "text": "Protein: Calcium/calmodulin-dependent protein kinase type II subunit gamma\nFunction: Calcium/calmodulin-dependent protein kinase that functions autonomously after Ca(2+)/calmodulin-binding and autophosphorylation, and is involved in sarcoplasmic reticulum Ca(2+) transport in skeletal muscle and may function in dendritic spine and synapse formation and neuronal plasticity (PubMed:16690701). In slow-twitch muscles, is involved in regulation of sarcoplasmic reticulum (SR) Ca(2+) transport and in fast-twitch muscle participates in the control of Ca(2+) release from the SR through phosphorylation of the ryanodine receptor-coupling factor triadin (PubMed:16690701). In the central nervous system, it is involved in the regulation of neurite formation and arborization (PubMed:30184290). It may participate in the promotion of dendritic spine and synapse formation and maintenance of synaptic plasticity which enables long-term potentiation (LTP) and hippocampus-dependent learning. In response to interferon-gamma (IFN-gamma) stimulation, catalyzes phosphorylation of STAT1, stimulating the JAK-STAT signaling pathway (By similarity)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q13555-5",
+          "title": "CAMK2G (Q13555-5)",
+          "url": "https://www.uniprot.org/uniprotkb/Q13555-5",
+          "text": "Protein: Isoform 5 of Calcium/calmodulin-dependent protein kinase type II subunit gamma",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q13555-10",
+          "title": "CAMK2G (Q13555-10)",
+          "url": "https://www.uniprot.org/uniprotkb/Q13555-10",
+          "text": "Protein: Isoform 10 of Calcium/calmodulin-dependent protein kinase type II subunit gamma",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000148660::function",
+          "title": "CAMK2G \u2014 CAMK2G",
+          "url": "https://platform.opentargets.org/target/ENSG00000148660",
+          "text": "Function: Calcium/calmodulin-dependent protein kinase that functions autonomously after Ca(2+)/calmodulin-binding and autophosphorylation, and is involved in sarcoplasmic reticulum Ca(2+) transport in skeletal muscle and may function in dendritic spine and synapse formation and neuronal plasticity (PubMed:16690701). In slow-twitch muscles, is involved in regulation of sarcoplasmic reticulum (SR) Ca(2+) transport and in fast-twitch muscle participates in the control of Ca(2+) release from the SR through phosphorylation of the ryanodine receptor-coupling factor triadin (PubMed:16690701). In the central nervous system, it is involved in the regulation of neurite formation and arborization (PubMed:30184290). It may participate in the promotion of dendritic spine and synapse formation and maintenance of synaptic plasticity which enables long-term potentiation (LTP) and hippocampus-dependent learning. In response to interferon-gamma (IFN-gamma) stimulation, catalyzes phosphorylation of STAT1, stimulating the JAK-STAT signaling pathway (By similarity).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000148660::MONDO_0032795",
+          "title": "CAMK2G \u2194 intellectual developmental disorder 59",
+          "url": "https://platform.opentargets.org/target/ENSG00000148660/associations",
+          "text": "Disease: intellectual developmental disorder 59\nAssociation score: 0.635",
+          "cos_sim_score": 0.6354497016986491,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000148660::EFO_0000676",
+          "title": "CAMK2G \u2194 psoriasis",
+          "url": "https://platform.opentargets.org/target/ENSG00000148660/associations",
+          "text": "Disease: psoriasis\nDescription: An autoimmune condition characterized by red, well-delineated plaques with silvery scales that are usually on the extensor surfaces and scalp. They can occasionally present with these manifestations: pustules; erythema and scaling in intertriginous areas, and erythroderma, that are often distributed on extensor surfaces and scalp.\nAssociation score: 0.430",
+          "cos_sim_score": 0.43034195253001123,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000148660::HP_0010864",
+          "title": "CAMK2G \u2194 Severe intellectual disability",
+          "url": "https://platform.opentargets.org/target/ENSG00000148660/associations",
+          "text": "Disease: Severe intellectual disability\nDescription: Severe intellectual disability (ID) is defined as a type of ID characterized by severely sub-average adaptive functioning and intellectual functioning, with an intelligence quotient (IQ) the range of 20-34.\nAssociation score: 0.399",
+          "cos_sim_score": 0.399146243059478,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000148660::EFO_0005547",
+          "title": "CAMK2G \u2194 dengue disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000148660/associations",
+          "text": "Disease: dengue disease\nDescription: Dengue fever (DF), caused by dengue virus, is an arboviral disease characterized by an initial non-specific febrile illness that can sometimes progress to more severe forms manifesting capillary leakage and hemorrhage (dengue hemorrhagic fever, or DHF) and shock (dengue shock syndrome, or DSS).\nAssociation score: 0.370",
+          "cos_sim_score": 0.3695798546847018,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Ca2+/calmodulin-dependent protein kinase II",
+          "title": "Ca2+/calmodulin-dependent protein kinase II",
+          "url": "https://en.wikipedia.org/wiki/Ca2%2B/calmodulin-dependent_protein_kinase_II",
+          "text": "Addiction\nDrug-induced changes in CaMKII function have been implicated in addiction.\n\nDifferent forms\nCaMK2A\nCaMKIIA is one of the major forms of CamKII. It has been found to play a critical role in sustaining activation of CamKII at the postsynaptic density. Studies have found that knockout mice without CaMKIIA demonstrate a low frequency of LTP. Additionally, these mice do not form persistent, stable place cells in the hippocampus.\n\nCaMK2B\nCaMK2B has an autophosphorylation site at Thr287. It functions as a targeting or docking module. Reverse transcription-polymerase chain reaction and sequencing analysis identified at least five alternative splicing variants of beta CaMKII (beta, beta6, betae, beta'e, and beta7) in brain and two of them (beta6 and beta7) were first detected in any species.\n\nCaMK2D\nCaMK2D appears in both neuronal and non-neuronal cell types. It is characterized particularly in many tumor cells, such as a variety of pancreatic, leukemic, breast and other tumor cells. found that CaMK2D is downregulated in human tumor cells.\n\nCaMK2G\nCaMK2G has been shown to be a crucial extracellular signal-regulated kinase in differentiated smooth muscle cells.\n\nGenes\nCaMK II \u2014 CAMK2A, CAMK2B, CAMK2D, CAMK2G\n\nSee also\nActin\n\nReferences\nExternal links\nCalcium-Calmodulin+Dependent+Protein+Kinases at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nTo learn more about the CaMKII ...",
+          "cos_sim_score": 0.38835009932518005,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Ca2+/calmodulin-dependent protein kinase II",
+          "title": "Ca2+/calmodulin-dependent protein kinase II",
+          "url": "https://en.wikipedia.org/wiki/Ca2%2B/calmodulin-dependent_protein_kinase_II",
+          "text": "Ca2+/calmodulin-dependent protein kinase II (CaM kinase II or CaMKII) is a serine/threonine-specific protein kinase that is regulated by the Ca2+/calmodulin complex. CaMKII is involved in many signaling cascades and is thought to be an important mediator of learning and memory. \nCaMKII is also necessary for Ca2+ homeostasis and reuptake in cardiomyocytes, \nchloride transport in epithelia, \npositive T-cell selection, \nand CD8 T-cell activation.\nMisregulation of CaMKII is linked to Alzheimer's disease, Angelman syndrome, and heart arrhythmia.\n\nTypes\nThere are two types of CaM kinases:\n\nSpecialized CaM kinases, such as the myosin light chain kinase that phosphorylates myosin, causing smooth muscles to contract.\nMultifunctional CaM kinases, also collectively called CaM kinase II, which play a role in neurotransmitter secretion, transcription factor regulation, and glycogen metabolism.\n\nStructure, function, and autoregulation\nCaMKII accounts for 1\u20132% of all proteins in the brain, and has 28 different isoforms. The isoforms derive from the alpha, beta, gamma, and delta genes.\n\nStructural domain\nAll of the isoforms of CaMKII have: a catalytic domain, an autoinhibitory domain, a variable segment, and a self-association domain.\nThe catalytic domain has several binding sites for ATP and other substrate anchor proteins. It is responsible for the transfer of phosphate from ATP to Ser or Thr residues in substrates. The autoinhibitory domain features a pseudosubstrate site, which binds to the catalytic domain and blocks its ability to phosphorylate proteins.\nThe structural feature that governs this autoinhibition is the Threonine 286 residue. Phosphorylation of this site will permanently activate the CaMKII enzyme. Once the Threonine 286 residue has been phosphorylated, the inhibitory domain is blocked from the pseudosubstrate site. This effectively blocks autoinhibition, allowing for permanent activation of the CaMKII enzyme. This enables CamKII to be active, even in the absence of calcium and calmodulin.\nThe other two domains in CaMKII are the variable and self-association domains. Differences in these domains contribute to the various CaMKII isoforms.\nThe self-association domain (CaMKII AD) is found at the C terminus, the function of this domain is the assembly of the single proteins into large (8 to 14 subunits) multimers\n\nCalcium and calmodulin dependence\nThe sensitivity of the CaMKII enzyme to calcium and calmodulin is governed by the variable and self-associative domains. This sensitivity level of CaMKII will also modulate the different states of activation for the enzyme. Initially, the enzyme is activated; however, autophosphorylation does not occur because there is not enough calcium or calmodulin present to bind to neighboring subunits. As greater amounts of calcium and calmodulin accumulate, autophosphorylation occurs leading to persistent activation of the CaMKII enzyme for a short period of time. However, the Threonine 286 residue eventually becomes dephosphorylated, leading to inactivation of CaMKII.\n\nAutophosphorylation\nAutophosphorylation is the process in which a kinase attaches a phosphate group to itself. When CaMKII autophosphorylates, it becomes persistently active. Phosphorylation of the Threonine 286 site allows for the activation of the catalytic domain. Autophosphorylation is enhanced by the structure of the holoenzyme because it is present in two stacked rings. The close proximity of these adjacent rings increases the probability of phosphorylation of neighboring CaMKII enzymes, furthering autophosphorylation. A mechanism that promotes autophosphorylation features inhibition of the PP1 (protein phosphatase I). This enables CaMKII to be constantly active by increasing the likelihood of autophosphorylation.",
+          "cos_sim_score": 0.34376755356788635,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::CAMK2G",
+          "title": "CAMK2G",
+          "url": "https://en.wikipedia.org/wiki/CAMK2G",
+          "text": "Calcium/calmodulin-dependent protein kinase type II gamma chain is an enzyme that in humans is encoded by the CAMK2G gene.\n\nFunction\nThe product of this gene belongs to the Serine/Threonine protein kinase family, and to the Ca(2+)/calmodulin-dependent protein kinase subfamily. Calcium signaling is crucial for several aspects of plasticity at glutamatergic synapses. In mammalian cells the enzyme is composed of four different chains: alpha, beta, gamma, and delta. The product of this gene is a gamma chain. Six alternatively spliced variants that encode six different isoforms have been characterized to date. Additional alternative splice variants that encode different isoforms have been described, but their full-length nature has not been determined.\n\nInteractions\nCAMK2G has been shown to interact with RRAD.\n\nSee also\nCa2+/calmodulin-dependent protein kinase\n\nReferences\nFurther reading\nExternal links\nHuman CAMK2G genome location and CAMK2G gene details page  in the UCSC Genome Browser.\nOverview of all the structural information available in the PDB for UniProt: Q13555 (Calcium/calmodulin-dependent protein kinase type II subunit gamma) at the PDBe-KB.\n\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.2821112275123596,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Ca2+/calmodulin-dependent protein kinase II",
+          "title": "Ca2+/calmodulin-dependent protein kinase II",
+          "url": "https://en.wikipedia.org/wiki/Ca2%2B/calmodulin-dependent_protein_kinase_II",
+          "text": "Independent induction of LTP\nLTP can be induced by artificially injecting CaMKII. When CaMKII is infused in postsynaptically in the hippocampal slices and intracellular perfusion or viral expression, there is a two- to threefold increase in the response of the synapse to glutamate and other chemical signals.\n\nMechanistic role in LTP\nThere is strong evidence that after activation of CaMKII, CaMKII plays a role in the trafficking of AMPA receptors into the membrane and then the PSD of the dendrite. Movement of AMPA receptors increases postsynaptic response to presynaptic depolarization through strengthening the synapses. This produces LTP.\nMechanistically, CaMKII phosphorylates AMPA receptors at the P2 serine 831 site. This increases channel conductance of GluA1 subunits of AMPA receptors, which allows AMPA receptors to be more sensitive than normal during LTP. Increased AMPA receptor sensitivity leads to increased synaptic strength.\nIn addition to increasing the channel conductance of GluA1 subunits, CaMKII has also been shown to aid in the process of AMPA receptor exocytosis. Reserve AMPA receptors are embedded in endosomes within the cell. CaMKII can stimulate the endosomes to move to the outer membrane and activate the embedded AMPA receptors. Exocytosis of endosomes enlarges and increases the number of AMPA receptors in the synapse. The greater number of AMPA receptors increases the sensitivity of the synapse to presynaptic depolarization, and generates LTP.\n\nMaintenance of LTP\nAlong with helping to establish LTP, CaMKII has been shown to be crucial in maintaining LTP. Its ability to autophosphorylate is thought to play an important role in this maintenance. Administration of certain CaMKII blockers has been shown not only to block LTP but also to reverse it in a time-dependent manner.\n\nBehavioral memory\nAs LTP is thought to underlie the processes of learning and memory, CaMKII is also crucial to memory formation. Behavioral studies involving genetically engineered mice have demonstrated the importance of CaMKII.\n\nPreventing autophosphorylation\nDeficit in spatial learning\nIn 1998, Giese and colleagues studied knockout mice that have been genetically engineered to prevent CaMKII autophosphorylation. They observed that mice had trouble finding the hidden platform in the Morris water maze task. The Morris water maze task is often used to represent hippocampus-dependent spatial learning. The mice's inability to find the hidden platform implies deficits in spatial learning.\nHowever, these results were not entirely conclusive because memory formation deficit could also be associated with sensory motor impairment resulting from genetic alteration.\n\nDeficit in fear memories\nIrvine and colleagues in 2006 showed that preventing autophosphorylation of CaMKII cause mice to have impaired initial learning of fear conditioning. However, after repeated trials, the impaired mice exhibited similar fear memory formation as the control mice. CaMKII may play a role in rapid fear memory, but does not completely prevent fear memory in the long run.\nIn 2004, Rodrigues and colleagues found that fear conditioning increased phosphorylated CaMKII in lateral amygdala synapses and dendritic spines, indicating that fear conditioning could be responsible for regulating and activating the kinase. They also discovered a drug, KN-62, that inhibited CaMKII and prevented acquisition of fear conditioning and LTP.\n\nDeficit in consolidation of memory traces\n\u03b1-CaMKII heterozygous mice express half the normal protein level as the wild-type level. These mice showed normal memory storage in the hippocampus, but deficits in consolidation of memory in the cortex.\n\nOverexpression\nMayford and colleagues engineered transgenic mice that express CaMKII with a point mutation of Thr-286 to aspartate, which mimics autophosphorylation and increases kinase activity. These mice failed to show LTP response to weak stimuli, and failed to perform hippocampus-dependent spatial learning that depended on visual or olfactory cues.\nResearchers speculate these results could be due to lack of stable hippocampal place cells in these animals.\nHowever, because genetic modifications might cause unintentional developmental changes, viral vector delivery allows the mice's genetic material to be modified at specific stages of development. It is possible with viral vector delivery to inject a specific gene of choice into a particular region of the brain in an already developed animal. This, in fact, has been done by Tonegawa group in early 1990s and by Poulsen and colleagues in 2007. Both groups used this method to inject CaMKII into the hippocampus. They found that overexpression of CaMKII resulted in slight enhancement of acquisition of new memories.",
+          "cos_sim_score": 0.26562803983688354,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Ca2+/calmodulin-dependent protein kinase II",
+          "title": "Ca2+/calmodulin-dependent protein kinase II",
+          "url": "https://en.wikipedia.org/wiki/Ca2%2B/calmodulin-dependent_protein_kinase_II",
+          "text": "Autophosphorylation\nAutophosphorylation is the process in which a kinase attaches a phosphate group to itself. When CaMKII autophosphorylates, it becomes persistently active. Phosphorylation of the Threonine 286 site allows for the activation of the catalytic domain. Autophosphorylation is enhanced by the structure of the holoenzyme because it is present in two stacked rings. The close proximity of these adjacent rings increases the probability of phosphorylation of neighboring CaMKII enzymes, furthering autophosphorylation. A mechanism that promotes autophosphorylation features inhibition of the PP1 (protein phosphatase I). This enables CaMKII to be constantly active by increasing the likelihood of autophosphorylation.\n\nLong-term potentiation\nCalcium/ calmodulin dependent protein kinase II is also heavily implicated in long-term potentiation (LTP) \u2013 the molecular process of strengthening active synapses that is thought to underlie the processes of memory. It is involved in many aspects of this process.\nLTP is initiated when the NMDA receptors are in a local environment with a voltage potential high enough to displace the positively-charged Mg2+ ion from the channel pore. As a result of the channel being unblocked, Ca2+ ions are able to enter into the postsynaptic neuron through the NMDA receptor channel. This Ca2+ influx activates CaMKII. It has been shown that there is an increase in CaMKII activity directly in the post synaptic density of dendrites after LTP induction, suggesting that activation is a direct result of stimulation.\n\nIn LTP\nWhen alpha-CaMKII is knocked out in mice, LTP is reduced by 50%. This can be explained by the fact that beta-CaMKII is responsible for approximately 65% of CaMKII activity. LTP can be completely blocked if CaMKII is modified so that it cannot remain active.\nAfter LTP induction, CaMKII moves to the postsynaptic density (PSD). However, if the stimulation does not induce LTP, the translocation is quickly reversible. Binding to the PSD changes CaMKII so that it is less likely to become dephosphorylated. CaMKII transforms from a substrate for Protein Phosphatase 2A (PP2A), which is responsible for dephosphorylating CaMKII, to that of Protein Phosphatase 1. Strack, S. (1997) demonstrated this phenomenon by chemically stimulating hippocampal slices. This experiment illustrates that CaMKII contributes to the enhancement of synaptic strength.\nSanhueza et al. found that persistent activation of CaMKII is necessary for the maintenance of LTP. She induced LTP in hippocampal slices and experimentally applied an antagonist (CaMKIINtide) to prevent CaMKII from remaining active. The slices that were applied with CaMKIINtide showed a decrease in Normalized EPSP slope after the drug infusion, meaning that the induced LTP reversed itself. The Normalized EPSP slope remained constant in the control; CaMKII continues to be involved in the LTP maintenance process even after LTP establishment.\nCaMKII is activated by calcium/calmodulin, but it is maintained by autophosphorylation. CaMKII is activated by the NMDA-receptor-mediated Calcium elevation that occurs during LTP induction. Activation is accompanied by phosphorylation of both the alpha and beta-subunits and Thr286/287.\n\nIndependent induction of LTP\nLTP can be induced by artificially injecting CaMKII. When CaMKII is infused in postsynaptically in the hippocampal slices and intracellular perfusion or viral expression, there is a two- to threefold increase in the response of the synapse to glutamate and other chemical signals.",
+          "cos_sim_score": 0.23881827294826508,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "probe_id": "11725827_s_at",
+  "gene_symbol": "CD1D",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0,
+  "abs_fold_change": 1.403,
+  "score": 1.3987,
+  "probe_count": 1,
+  "probe_ids": "11725827_s_at",
+  "max_score": 1.3987,
+  "mean_abs_fold_change": 1.403,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T02:16:47",
+  "interpretation": "CD1D encodes a glycoprotein that plays a crucial role in the immune system by presenting lipid antigens to natural killer T (NKT) cells, which can produce various cytokines that modulate immune responses. While there is no direct evidence linking CD1D to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in lipid metabolism and immune regulation suggests a potential role in the pathophysiology of SONFH, particularly in the context of steroid-induced changes in bone and fat metabolism. The retrieved evidence primarily describes CD1D's function in immune responses and its association with metabolic processes, but lacks specific connections to SONFH. Therefore, while CD1D may be biologically relevant, its clinical utility as a biomarker for early detection of SONFH remains uncertain. Overall, the evidence is weak, and the interpretation relies on inferred connections rather than direct findings.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "CD1D may be implicated in the immune and metabolic processes relevant to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "CD1D (P15813). https://www.uniprot.org/uniprotkb/P15813",
+    "CD1D \u2014 CD1D. https://platform.opentargets.org/target/ENSG00000158473",
+    "CD1D \u2194 inherited hemoglobinopathy. https://platform.opentargets.org/target/ENSG00000158473/associations",
+    "CD1D \u2194 Phenotypic abnormality. https://platform.opentargets.org/target/ENSG00000158473/associations",
+    "CD1D \u2194 neoplasm. https://platform.opentargets.org/target/ENSG00000158473/associations",
+    "CD1D \u2194 infection. https://platform.opentargets.org/target/ENSG00000158473/associations",
+    "CD1D. https://en.wikipedia.org/wiki/CD1D",
+    "CD1. https://en.wikipedia.org/wiki/CD1"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5730,
+    "completion_tokens": 264,
+    "total_tokens": 5994,
+    "estimated_cost_usd": 0.001018
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P15813",
+          "title": "CD1D (P15813)",
+          "url": "https://www.uniprot.org/uniprotkb/P15813",
+          "text": "Protein: Antigen-presenting glycoprotein CD1d\nFunction: Antigen-presenting protein that binds self and non-self glycolipids and presents them to T-cell receptors on natural killer T-cells",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000158473::function",
+          "title": "CD1D \u2014 CD1D",
+          "url": "https://platform.opentargets.org/target/ENSG00000158473",
+          "text": "Function: Antigen-presenting protein that binds self and non-self glycolipids and presents them to T-cell receptors on natural killer T- cells. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000158473::MONDO_0019050",
+          "title": "CD1D \u2194 inherited hemoglobinopathy",
+          "url": "https://platform.opentargets.org/target/ENSG00000158473/associations",
+          "text": "Disease: inherited hemoglobinopathy\nDescription: An inherited disorder characterized by structural alterations of a globin chain within the hemoglobin molecule.\nAssociation score: 0.319",
+          "cos_sim_score": 0.3189193851293836,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000158473::HP_0000118",
+          "title": "CD1D \u2194 Phenotypic abnormality",
+          "url": "https://platform.opentargets.org/target/ENSG00000158473/associations",
+          "text": "Disease: Phenotypic abnormality\nDescription: A phenotypic abnormality.\nAssociation score: 0.232",
+          "cos_sim_score": 0.23174081192426263,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000158473::EFO_0000616",
+          "title": "CD1D \u2194 neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000158473/associations",
+          "text": "Disease: neoplasm\nDescription: A benign or malignant tissue growth resulting from uncontrolled cell proliferation. Benign neoplastic cells resemble normal cells without exhibiting significant cytologic atypia, while malignant cells exhibit overt signs such as dysplastic features, atypical mitotic figures, necrosis, nuclear pleomorphism, and anaplasia. Representative examples of benign neoplasms include papillomas, cystadenomas, and lipomas; malignant neoplasms include carcinomas, sarcomas, lymphomas, and leukemias.\nAssociation score: 0.117",
+          "cos_sim_score": 0.11708187575863818,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000158473::EFO_0000544",
+          "title": "CD1D \u2194 infection",
+          "url": "https://platform.opentargets.org/target/ENSG00000158473/associations",
+          "text": "Disease: infection\nDescription: The state of being infected such as from the introduction of a foreign agent such as serum, vaccine, antigenic substance or organism.\nAssociation score: 0.098",
+          "cos_sim_score": 0.09778412524641449,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::CD1D",
+          "title": "CD1D",
+          "url": "https://en.wikipedia.org/wiki/CD1D",
+          "text": "CD1D is the human gene that encodes the protein CD1d, a member of the CD1 (cluster of differentiation 1) family of glycoproteins expressed on the surface of various human antigen-presenting cells. They are non-classical MHC proteins, related to the class I MHC proteins, and are involved in the presentation of lipid antigens to T cells. CD1d is the only member of the group 2 CD1 molecules.\n\nBiological significance\nCD1d-presented lipid antigens activate a special class of T cells, known as natural killer T (NKT) cells, through the interaction with the T-cell receptor present on NKT membranes. When activated, NKT cells rapidly produce Th1 and Th2 cytokines, typically represented by interferon-gamma and interleukin 4 production.\nCD1d also regulates lipid transport to macrophages which express CD36 on their surfaces.\n\nNomenclature\nCD1d is also known as R3G1\n\nLigands\nSome of the known ligands for CD1d are:\n\n\u03b1-galactosylceramide (\u03b1-GalCer), a compound originally derived from the marine sponge Agelas mauritanius  with no physiological role but great research utility.\n\u03b1-glucuronyl- and \u03b1-galacturonyl- ceramides, a family of compounds of microbial origin which can be found, for example, on the cell wall of Sphingomonas, a ubiquitous Gram-negative  bacterium. The related \u03b2-D-glucopyranosylceramide is accumulated in antigen-presenting cells after infection, where it serves to activate invariant NKTs (iNKTs), a special kind of NKT.\niGb3, a self antigen which has been implied in iNKT selection.\nHS44, a synthetic amino cyclitolic ceramide analogue which has less contact with the TCR, activating iNKTs in a more constrained way than \u03b1-GalCer (specially in relation to Th2 cytokines production) and thus being more interesting for therapeutic use.\n\nTetramers\nCD1d tetramers are protein constructs composed of four CD1d molecules joined together and usually fluorescently labelled, used to identify NKT cells or other CD1d-reactive cells. In particular, type I NKT cells and some type II NKT cells are stained by them. A differentiation of these two types can be obtained in human by using an antibody against the TCR V\u03b124 chain, which is specific of type I NKT cells.\nAlthough they are the most widely used of CD1d oligomers, sometimes CD1d dimers (two units) or pentamers (five units) are used instead.\n\nIn obesity and type 2 diabetes\nIn obesity, NKT cells exhibit both an inflammatory and anti-inflammatory function. On the one hand, they release IFN-\u03b3, but on the other hand, they reduce inflammation via the production of IL-4 and -10.\nDespite the anti-inflammatory cytokines released by NKT cells, the overall effect of CD1d and NKT cells is that of mediating the inflammation caused by diet-induced obesity. Adipocyte-specific CD1d knock-out mice, when fed a high-fat diet, are protected from obesity and exhibit reduced adipose tissue inflammation.\nObesity itself also decreases the expression of CD1d, and mice fed a high-fat diet showed reduced levels of CD1d expression in adipocytes after 16 weeks. These data suggest that differentiated adipocytes could act as antigen-presenting cells for adipose iNKT cells and that reduced expression of CD1d might be associated with iNKT cells that have been dysregulated following diet-induced obesity.\nResearch from 2004 showed that iNKT cell counts may be reduced in diabetes type II. Transgenic non-obese mice in which CD1d molecules were overexpressed under the control of the insulin promoter within the pancreatic islets exhibited restored function of NKT cells as immunoregulatory. Diabetes was prevented in these transgenic mice.\nCD1d has been shown to play an important role in metabolic biological processes, such as retinol metabolism and steroid hormone biosynthesis process activation. There is research that suggests a connection between the impaired activity of CD1d and MASLD. One study showed that feeding CD1d knock-out mice a high-fat diet impaired lipid metabolism in the liver.",
+          "cos_sim_score": 0.45048683881759644,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::CD1",
+          "title": "CD1",
+          "url": "https://en.wikipedia.org/wiki/CD1",
+          "text": "CD1 (cluster of differentiation 1) is a family of glycoproteins expressed on the surface of various human antigen-presenting cells.  CD1 glycoproteins are structurally related to the class I MHC molecules, however, in contrast to MHC class 1 proteins, they present lipids, glycolipids and small molecules antigens, from both endogenous and pathogenic proteins, to T cells and activate an immune response.\nT cells recognise CD1 using TCR \u03b1\u03b2, \u03b3\u03b4, or CD36 family members. T cells that are activated by CD1-antigen complexes are called CD1-restricted T cells. 10% of all \u03b1\u03b2 T lymphocytes in human peripheral blood are Cd1-restricted, out of which, the most abundant are the T cells specific for CD1c.\nThe human CD1 gene cluster is located on chromosome 1. Genes of the CD1 family were first cloned in 1986, by Franco Calabi and C. Milstein, whereas the first known lipid antigen for CD1 was discovered in 1994, during studies of Mycobacterium tuberculosis. The first antigen that was discovered to be able to bind CD1 and then be recognised by TCR is C80 mycolic acid. Even though their precise function is unknown, The CD1 system of lipid antigen recognition by TCR offers the prospect of discovering new approaches to therapy and developing immunomodulatory agents.\n\nTypes\nCD1 glycoproteins can be classified primarily into two groups of CD1 isoforms which differ in their lipid anchoring, as well as their expression patterns of the CD1 genes (CD1d is constitutively expressed, whereas the group 1 CD1 genes are inducible and coordinately regulated by myeloid cells).\n\nCD1a, CD1b and CD1c (group 1 CD1 molecules) are expressed on cells specialized for antigen presentation.\nCD1e is also considered a group 1 CD1 molecule, even though it does not function in antigen presentation, contrasting the other isoforms.\nCD1d (group 2 CD1) is expressed in a wider variety of cells.\nCD1e is an intermediate form, a soluble lipid transfer protein that is expressed intracellularly. It does not present lipid antigens to T cells, rather plays a role in the processing of lipid antigens and loading them onto other CD1 molecules.\n\nIn humans\nGroup 1\nGroup 1 CD1 molecules have been shown to present foreign lipid antigens to CD1-specific T cells. Human CD1 cells can recognise and bind a large number of lipids, from monoacylated lipids or lipopeptides to tetra-acylated lipids. However, not all of the lipid ligands can be considered antigens for T-cells. Free fatty acids sphingolipids, phospholipids, sulfolipids, lysophospholipids, amphipathic small molecules and some oils function as natural antigens for T cells.\n\nGroup 2\nThe natural antigens of group 2 CD1 are not well characterized, but a synthetic glycolipid, alpha-galactosylceramide (\u03b1-GalCer), originally isolated from a compound found in a marine sponge, has strong biologic activity.\nGroup 2 CD1 molecules activate a group of T cells, known as natural killer T cells because of their expression of NK surface markers such as CD161. Natural Killer T (NKT) cells are activated by CD1d-presented antigens, and rapidly produce Th1 and Th2 cytokines, typically represented by interferon-gamma and IL-4 production. The group 2 (CD1d) ligand \u03b1-GalCer is currently in phase I clinical trials for the treatment of advanced non-hematologic cancers.\nNKT cells that respond to \u03b1-GalCer are termed \"type 1 NKTs\". There exists another group of \"type 2 NKTs\" that do not respond to \u03b1-GalCer-CD1D. Instead, they respond to a diverse set of antigens such as sulfatide-CD1d and mycobacterial lipid-CD1d.",
+          "cos_sim_score": 0.3837929666042328,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::CD1D",
+          "title": "CD1D",
+          "url": "https://en.wikipedia.org/wiki/CD1D",
+          "text": "References\nFurther reading\nExternal links\nCD1d+antigen at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nHuman CD1A genome location and CD1A gene details page  in the UCSC Genome Browser.\nHuman CD1D genome location and CD1D gene details page  in the UCSC Genome Browser.",
+          "cos_sim_score": 0.37561845779418945,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::CD1",
+          "title": "CD1",
+          "url": "https://en.wikipedia.org/wiki/CD1",
+          "text": "Diagnostic relevance\nCD1 antigens are expressed on cortical thymocytes, but not on mature T cells. This often remains true in neoplastic cells from these populations, so that the presence of CD1 antigens can be used in diagnostic immunohistochemistry to identify some thymomas and malignancies arising from T cell precursors. CD1a, in particular, is a specific marker for Langerhans cells, and can therefore also be used in the diagnosis of Langerhans cell histiocytosis. Other conditions that may show CD1 positivity include myeloid leukaemia and some B cell lymphomas.\n\nStructure\nCD1 proteins consist of a heavy chain with \u03b11, \u03b12, and \u03b13 domains and a transmembrane domain which anchors it to the cell membrane. Much like the MHC molecules, the CD1 heavy chain associates with \u03b22-microglobulin and its binding groove consists of two antiparallel \u03b1-helices, placed atop a \u03b2-sheet platform. The antigen-binding cleft architecture of CD1 proteins consists of A', C', F' and T' binding pockets and C' and D'/E' accessory portals, which act to accommodate the aliphatic hydrocarbon chains present in lipid, glycolipid, phospholipid, or lipopeptide antigens. CD1 antigen binding clefts are defined by locations of named portals where antigens protrude.\nThe main difference in structure between MHC and CD1 proteins is that in MHC proteins, the contact region for TCR show lateral symmetry, whereas human CD1 proteins show left-right asymmetry. Another difference between MHC and CD1 proteins is that the antigen display platform of CD1 molecules is smaller than the antigen display groove of MHC molecules.\n\nCD1-lipid TCR interactions\nThree models of CD1 recognition by TCR have been described: \"head group recognition\" model, \"absence of interference\" model and \"altered CD1\" model. The \"head group recognition\" model is considered to be a classical mode of CD1-antigen recognition, whereas the other two models posit that TCR contacts CD1 and not lipid. They are believed to occur in different TCR-antigen-CD1 pairings. The two former models are proven by protein crystallography.\n\nThe \"Head group recognition\" model, also called \"headgroup discrimination\" model, is attributed to CD1b and CD1d, and it refers to the fact that TCR do not only react to peptidic antigens, but can also recognise and bind to the structure of carbohydrate and other non-peptidic head groups of antigens that are carried by CD1. It is also called \"corecognition\" and is most similar to the recognition between TCR and traditional peptide-MHC.\nThe \"absence of interference\" model emerged as a result of the identification of tissue-derived CD1a-presented autoantigens and the first CD1a-lipid-TCR structure, between an autoreactive TCR which bound the CD1a without contacting the lipid that CD1a was carrying. In accordance to the left-right asymmetry of CD1, the small hydrophobic lipid ligand emerges from the F' binding pocket (the right side of the CD1 binding cleft) and TCR binds to the A' binding pocket (the left side of CD1a). Sulfatide and sphingomyelin can be considered antagonists for CD1 autoreactive cells, as they have a large polar head group and can block the CD1a A' binding pocket.\nThe \"altered CD1\" model is attributed to CD1c. CD1c has A' pole, F' roof and G' portal, which serve as points of access to the binding cleft. When it is loaded with fatty acids and lipids, CD1c alters its 3D surface in order to act as a TCR recognition surface.\nThe TCR3d database includes all examples of a CD1-family protein interacting with an TCR in the Protein Data Bank, updated periodically.\n\nCD36 interactions\nAlthough it is known that CD1 binds to CD36, there is currently (as of January 2026) no structural characterization of the nature of the interaction.",
+          "cos_sim_score": 0.36339688301086426,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::CD1",
+          "title": "CD1",
+          "url": "https://en.wikipedia.org/wiki/CD1",
+          "text": "CD36 interactions\nAlthough it is known that CD1 binds to CD36, there is currently (as of January 2026) no structural characterization of the nature of the interaction.\n\nIn other animals\nRodents\nMice lack the group 1 CD1 molecules, and instead have 2 copies of CD1d. Thus, mice have been used extensively to characterize the role of CD1d and CD1d-dependent NKT cells in a variety of disease models. Rats also lack group 1 CD1 molecules.\nGuinea pigs have both groups of CD1 and are commonly used as the alternative model animal for CD1 research. Specifically, they express four orthologs of the group 1 CD1b protein and three orthologs of CD1c, as well as one ortholog of CD1d.\n\nRuminants\nCows have one copy each of CD1a and CD1e, several copies of CD1b, and no copies of CD1c. Ruminants including cows were previously thought to have no functional copies of CD1d (only pseudogenes) due to lack of reaction to \u03b1GalCer when tested using mouse iNKT cells, but later research has shown CD1d to be expressed and the genes for the NKT machinery to be present. It turns out bovine CD1d has an altered binding pocket causing a different binding \"pose\". The change also incurs a limit on the length of the glycosphingolipid antigen.\nBecause cows are a natural host of Mycobacterium bovis, a pathogen in humans as well, it is hoped that studying cows will yield insights into the group 1 CD1 antigen-presenting system. M. bovis is also very similar to M. tuberculosis genetically. Cows are a valuable model organism for studying immune responses to tuberculosis with many similarities to humans. Nevertheless, they have their own special features such as the aforementioned CD1 repertoire and a special division of labor among \u03b4\u03b3 T cells by expression of WC1, a protein not found in primates.\n\nReferences\nExternal links\nCD1+Antigen at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nMouse CD Antigen Chart\nHuman CD Antigen Chart\nThe Human Protein Atlas - Additional Info\nCD1a\nCD1b\nCD1c\nCD1d\nCD1e",
+          "cos_sim_score": 0.3241944909095764,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

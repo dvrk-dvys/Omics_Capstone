@@ -1,0 +1,144 @@
+{
+  "probe_id": "11719025_a_at",
+  "gene_symbol": "ZNF652",
+  "score": 1.0,
+  "SD_TestAUC": 0.0993807989999906,
+  "abs_fold_change": 0.8169,
+  "probe_count": 1,
+  "probe_ids": "11719025_a_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.8169,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:36:19",
+  "interpretation": "ZNF652 encodes a zinc finger protein that functions as a DNA-binding transcription repressor, interacting with other proteins like CBFA2T2 to regulate gene expression. While there is no direct evidence linking ZNF652 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in transcriptional regulation suggests it may influence pathways related to bone metabolism and response to steroid treatment. The evidence retrieved primarily discusses its general biological functions and associations with other diseases, indicating a lack of specific studies on SONFH. Therefore, the connection to SONFH remains speculative and relies on inferred biological reasoning. Given the absence of strong disease-specific evidence, ZNF652's potential as a biomarker for SONFH is weak.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "ZNF652 may play a role in transcriptional regulation relevant to bone metabolism, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "ZNF652 (Q9Y2D9). https://www.uniprot.org/uniprotkb/Q9Y2D9",
+    "ZNF652 \u2014 ZNF652. https://platform.opentargets.org/target/ENSG00000198740",
+    "ZNF652 \u2194 asthma. https://platform.opentargets.org/target/ENSG00000198740/associations",
+    "ZNF652 \u2194 hypertension. https://platform.opentargets.org/target/ENSG00000198740/associations",
+    "ZNF652 \u2194 coronary artery disease. https://platform.opentargets.org/target/ENSG00000198740/associations",
+    "ZNF652 \u2194 atopic eczema. https://platform.opentargets.org/target/ENSG00000198740/associations",
+    "CBFA2T3. https://en.wikipedia.org/wiki/CBFA2T3",
+    "CBFA2T2. https://en.wikipedia.org/wiki/CBFA2T2",
+    "KLHL28. https://en.wikipedia.org/wiki/KLHL28",
+    "List of human transcription factors. https://en.wikipedia.org/wiki/List_of_human_transcription_factors"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5046,
+    "completion_tokens": 223,
+    "total_tokens": 5269,
+    "estimated_cost_usd": 0.000891
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9Y2D9",
+          "title": "ZNF652 (Q9Y2D9)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9Y2D9",
+          "text": "Protein: Zinc finger protein 652\nFunction: DNA-binding transcription repressor that acts together with CBFA2T2 to repress expression of target genes, such as TCF12 (PubMed:16966434, PubMed:18456661, PubMed:21678463). Specifically binds the DNA consensus sequence 5'-CGAAAGGGTTAAT-3' (PubMed:18456661, PubMed:21678463)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000198740::function",
+          "title": "ZNF652 \u2014 ZNF652",
+          "url": "https://platform.opentargets.org/target/ENSG00000198740",
+          "text": "Function: DNA-binding transcription repressor that acts together with CBFA2T2 to repress expression of target genes, such as TCF12 (PubMed:16966434, PubMed:18456661, PubMed:21678463). Specifically binds the DNA consensus sequence 5'-CGAAAGGGTTAAT-3' (PubMed:18456661, PubMed:21678463).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000198740::MONDO_0004979",
+          "title": "ZNF652 \u2194 asthma",
+          "url": "https://platform.opentargets.org/target/ENSG00000198740/associations",
+          "text": "Disease: asthma\nDescription: A bronchial disease that is characterized by chronic inflammation and narrowing of the airways, which is caused by a combination of environmental and genetic factors resulting in recurring periods of wheezing (a whistling sound while breathing), chest tightness, shortness of breath, mucus production and coughing. The symptoms appear due to a variety of triggers such as allergens, irritants, respiratory infections, weather changes, exercise, stress, reflux disease, medications, foods and emotional anxiety.\nAssociation score: 0.505",
+          "cos_sim_score": 0.5045076261905882,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000198740::EFO_0000537",
+          "title": "ZNF652 \u2194 hypertension",
+          "url": "https://platform.opentargets.org/target/ENSG00000198740/associations",
+          "text": "Disease: hypertension\nDescription: Persistently high systemic arterial blood pressure. Based on multiple readings (blood pressure determination), hypertension is currently defined as when systolic pressure is consistently greater than 140 mm Hg or when diastolic pressure is consistently 90 mm Hg or more.\nAssociation score: 0.496",
+          "cos_sim_score": 0.4958555070039575,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000198740::EFO_0001645",
+          "title": "ZNF652 \u2194 coronary artery disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000198740/associations",
+          "text": "Disease: coronary artery disease\nDescription: Thickening and loss of elasticity of the CORONARY ARTERIES, leading to progressive arterial insufficiency (CORONARY DISEASE).\nAssociation score: 0.471",
+          "cos_sim_score": 0.47109874397051,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000198740::EFO_0000274",
+          "title": "ZNF652 \u2194 atopic eczema",
+          "url": "https://platform.opentargets.org/target/ENSG00000198740/associations",
+          "text": "Disease: atopic eczema\nDescription: A common chronic pruritic inflammatory skin disease with a strong genetic component. Onset typically occurs during the first 2 years of life.\nAssociation score: 0.469",
+          "cos_sim_score": 0.4688288528882793,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::CBFA2T3",
+          "title": "CBFA2T3",
+          "url": "https://en.wikipedia.org/wiki/CBFA2T3",
+          "text": "Protein CBFA2T3 (core-binding factor, runt domain, alpha subunit 2; translocated to, 3) is a protein that in humans is encoded by the CBFA2T3 gene.\n\nFunction\nThe t(16;21)(q24;q22) translocation is a rare but recurrent chromosomal abnormality associated with therapy-related myeloid malignancies. The translocation produces a chimeric gene made up of the 5\u2032-region of the AML1 gene fused to the 3'-region of this gene. In addition, this gene is a putative breast tumor suppressor. Two transcript variants encoding different isoforms have been found for this gene, and a brefeldin A-sensitive association of RII-alpha protein with one of the isoforms has been demonstrated in the Golgi apparatus.\n\nInteractions\nCBFA2T3 has been shown to interact with:\n\nReferences\nFurther reading\nExternal links\nCBFA2T3+protein,+human at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nHuman CBFA2T3 genome location and CBFA2T3 gene details page  in the UCSC Genome Browser.\n\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.1711089015007019,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::CBFA2T2",
+          "title": "CBFA2T2",
+          "url": "https://en.wikipedia.org/wiki/CBFA2T2",
+          "text": "Protein CBFA2T2 is a protein that in humans is encoded by the CBFA2T2 gene.\n\nFunction\nIn acute myeloid leukemia, especially in the M2 subtype, the t(8;21)(q22;q22) translocation is one of the most frequent karyotypic abnormalities. The translocation produces a chimeric gene made up of the 5\u2032-region of the RUNX1 (AML1) gene fused to the 3'-region of the CBFA2T1 (MTG8) gene. The chimeric protein is thought to associate with the nuclear corepressor/histone deacetylase complex to block hematopoietic differentiation. The protein encoded by this gene binds to the AML1-MTG8 complex and may be important in promoting leukemogenesis. Several transcript variants are thought to exist for this gene, but the full-length natures of only three have been described.\n\nInteractions\nCBFA2T2 has been shown to interact with RUNX1T1.\n\nReferences\nFurther reading\nExternal links\nCBFA2T2+protein,+human at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nHuman CBFA2T2 genome location and CBFA2T2 gene details page  in the UCSC Genome Browser.\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.16671423614025116,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::KLHL28",
+          "title": "KLHL28",
+          "url": "https://en.wikipedia.org/wiki/KLHL28",
+          "text": "Kelch-like Homolog 28 (KLHL28) is a protein that is encoded by the KLHL28 gene in humans. It is a member of the Kelch-like gene family, which comprises 42 different genes. Aberrant activation of KLHL28 results in increased likelihood of hypertension, hyperkalemia, and cancer. The KLHL28 gene, also known as BTBD5, has orthologs in vertebrates and some marine invertebrates, and has been well-conserved over evolutionary timescales.\n\nGene\nThe KLHL28 gene is located on the negative strand of human Chromosome 14 (14q21.2) and spans 7019 base pairs in its complete isoform (isoform 1).\n\nTranscription factors\nHundreds of transcription factors are predicted to bind to the promoter region. Many of the highly scored transcription factors from the JASPAR database via the University of California, Santa Cruz Genome Browser are listed in the table below.\n\nExpression\nKLHL28 is ubiquitously expressed under normal physiological conditions in humans and has been found not to be monallelically expressed. DNA microarray data also suggests that gene expression of KLHL28 is elevated in the brain and heart.\nUnder hypoxic conditions, DNA microarray data illustrated increased expression of KLHL28. Further, in a DNA microarray study of small-cell lung cancer, KLHL28 was expressed at significantly higher levels than the control. These data indicate that the gene's transcription is impacted by the tumor microenvironment, which is typically not well-vascularized and often hypoxic.\n\nMutations\nMissense single nucleotide polymorphisms (SNPs) have been identified in both the coding and noncoding regions of the gene. The SNPs with the potential for most clinical significance are those affecting the composition of the KLHL28 protein, specifically within Kelch motif 1 (rs117295933, C>A / C>G / C>T) and motif 3 (rs35352691, T>G).\n\nmRNA and transcriptional variants\nThere are a total of seven transcriptional variants: two isoforms and five spliced transcript variants, all of which are based on the longest transcript, isoform 1. Isoform 1 contains five exons, and all transcriptional variants contain at least exon 2. The six conserved Kelch motifs in the KLHL28 protein are found through the end of exon 2 through exon 5.\n\n5' Untranslated region\nThe 5' untranslated region (5' UTR) of KLHL28 is well-conserved amongst orthologs, similar to the protein sequence. Demonstrating this conservation, the transcription factor ZNF263 was conserved after a five-member mammalian multiple sequence alignment (MSA) using the orthologs golden snub-nosed monkey, green monkey, southern pig-tailed macaque, and thirteen-lined ground squirrel.\n\n3' Untranslated region\nA four-member MSA was run for the 3' UTR and found that, like the 5' UTR, it was strongly conserved across primates, with the same orthologs as in the 5' UTR section, minus the thirteen-lined ground squirrel.\n\nRNA binding protein interactions\nAn analysis of the miRNA binding capacity of the KLHL28 isoform 1 transcript returned with only one miRNA target that was found on the 3' UTR and conserved through mammals. The miRNA, hsa-miR-182-5p, has been associated with tumorigenesis, specifically in lung tissue.\nRNA binding protein binding capacity for the 3' UTR of human KLHL28 was assessed and returned with 12 repeats of ELAVL2, 2 of SNRPA, 3 of ZFP36, and 1 of pum. Based on these highly probable predicted RNA binding proteins, KLHL28 expression at the RNA level is predicted to be connected to neural development during embryogenesis and differentiation.\n\nProtein\nAmino acid composition\nThe KLHL28 gene encodes the KLHL28 protein which is 585 amino acids long and has a molecular weight of 65.8kDa. The theoretical isoelectric point (Ip) was predicted to be 5.90 based on the amino acid composition.",
+          "cos_sim_score": 0.1494341492652893,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::List of human transcription factors",
+          "title": "List of human transcription factors",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_transcription_factors",
+          "text": "This list of manually-curated human transcription factors is taken from Lambert, Jolma, Campitelli, et al.\nMore detailed information can be found in the manuscript and accompanying web site.\n\nList of human transcription factors (1639)\nExternal links\nhttps://humantfs.ccbr.utoronto.ca\n\n\n== References ==",
+          "cos_sim_score": 0.09251725673675537,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::KLHL28",
+          "title": "KLHL28",
+          "url": "https://en.wikipedia.org/wiki/KLHL28",
+          "text": "Protein\nAmino acid composition\nThe KLHL28 gene encodes the KLHL28 protein which is 585 amino acids long and has a molecular weight of 65.8kDa. The theoretical isoelectric point (Ip) was predicted to be 5.90 based on the amino acid composition.\n\nAn analysis of the whole protein indicated that it is tyrosine-rich (5.3%); however, amino acids at the domain level were expressed differently. The broad-complex, tramtrack, and bric-\u00e1-brac (BTB) and BACK (BTB and C-terminal Kelch) domains were extremely glycine-poor (2.4%) and also histidine-rich (4.7%). On the other hand, the Kelch domains were rich in both valine (9.7%) and tyrosine (5.6%).\n\nProtein domains\nThe protein can be broken down into eight domains: the Broad-complex, Tramtrack, and Bric-\u00e1-brac (BTB) domain (amino acids 31-148); the BACK domain (amino acids 151-253); and Kelch domains 1 (amino acids 298-345), 2 (amino acids 346-400), 3 (amino acids 401-444), 4 (amino acids 445-493), 5 (amino acids 494-541), 6 (amino acids 542-585). The high predicted isoelectric point of Kelch domain 3 indicates it may have an important role in forming the Cullin3-RING E3 ubiquitin ligase complex.\n\nPost-translational modifications\nPredicted post-translational modifications (PTMs) of the protein include a number of phosphorylation sites, visualized in the linear protein schematic to the right.\n\nTertiary structure\nThe BTB and BACK domains are predicted with high confidence to mostly fold into alpha helices. Meanwhile, the Kelch domains in the protein form into beta sheets, which are then expected to complex into a beta barrel. No hydrophobic regions were identified on the protein, indicating that it is most likely not cell or organelle membrane-localized.\n\nProtein localization\nKLHL28 protein is soluble, localized in the cytoplasm, and is predicted to contain a nuclear localization signal.\n\nFunction\nBased on the protein-protein interaction (PPI) network below, the KLHL28 protein is predicted to play a critical role in the formation and function of the E3 ubiquitin ligase complex involved in protein degradation and recycling. Additionally, the component domains of the protein suggest it may also be involved in orienting the substrate protein entering the Cullin3-based E3 ligase complex.\n\nProtein-protein interaction network\nThe majority of identified proteins found to interact with the KLHL28 protein in humans are involved in the E3 ubiquitin ligase structure. The table below illustrates proteins interacting with human KLHL28 protein and their detection methods based on a consensus of high-throughput screening data reported from STRING, BioGRID, MINT, and IntAct databases.\n\nEvolution\nBased on the ortholog data in the table below, the KLHL28 gene first appeared in some marine invertebrates nearly 700 million years ago. The gene is found in some mollusks, cnidarians, and echinoderms, but not in arthropods nor cephalopods. Other members of the gene family (paralogs of KLHL28, such as KLHL20) have been identified in plants, bacteria, and archaea, indicating that the Kelch-like homologs are highly conserved across evolutionary time and likely serve an important role.\n\nOrthologs\nParalogs\nClinical significance\nBased on the function of its encoded protein in protein breakdown and recycling, the KLHL28 gene has a strong clinical significance. Furthermore, the expression data in hypoxic and cancerous conditions suggests the Cullin3-RING E3 ubiquitin ligase complex is involved in protein homeostasis, which can be sabotaged in cancerous cells. Consequently, the KLHL28 gene and its interaction network represent novel targets for gene therapy cancer treatments. \n\n\n== References ==",
+          "cos_sim_score": 0.04911234974861145,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

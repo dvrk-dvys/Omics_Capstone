@@ -1,0 +1,209 @@
+{
+  "probe_id": "11758386_s_at",
+  "gene_symbol": "MANBA",
+  "score": 1.0,
+  "SD_TestAUC": 0.0331269329999968,
+  "abs_fold_change": 1.0443,
+  "probe_count": 1,
+  "probe_ids": "11758386_s_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 1.0443,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T18:24:05",
+  "interpretation": "The MANBA gene encodes beta-mannosidase, an enzyme involved in the catabolism of N-linked glycoproteins. While there is no direct evidence linking MANBA to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in glycoprotein metabolism suggests a potential involvement in bone health and cellular responses to steroid treatment. The retrieved evidence primarily discusses its enzymatic function and associations with other diseases, but does not establish a clear connection to SONFH. Therefore, the interpretation relies on the inference that alterations in glycoprotein metabolism could influence bone integrity and response to corticosteroids, which are known to contribute to SONFH. Given the lack of direct evidence, the clinical relevance of MANBA as a biomarker for SONFH is considered weak.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "MANBA may play a role in glycoprotein metabolism, which could indirectly relate to the mechanisms underlying Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "MANBA (O00462). https://www.uniprot.org/uniprotkb/O00462",
+    "MANBA \u2014 MANBA. https://platform.opentargets.org/target/ENSG00000109323",
+    "MANBA \u2194 beta-mannosidosis. https://platform.opentargets.org/target/ENSG00000109323/associations",
+    "MANBA \u2194 primary biliary cirrhosis. https://platform.opentargets.org/target/ENSG00000109323/associations",
+    "MANBA \u2194 Hypercholesterolemia. https://platform.opentargets.org/target/ENSG00000109323/associations",
+    "MANBA \u2194 obesity. https://platform.opentargets.org/target/ENSG00000109323/associations",
+    "MANBA \u2014 mannosidase beta (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "NFKB1 \u2014 nuclear factor kappa B subunit 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CFH \u2014 complement factor H (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "COL1A1 \u2014 collagen type I alpha 1 chain (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "APEX1 \u2014 apurinic/apyrimidinic endodeoxyribonuclease 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Differential Connectivity of Gene Regulatory Networks Distinguishes Corticosteroid Response in Asthma (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC5775928/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8981,
+    "completion_tokens": 300,
+    "total_tokens": 9281,
+    "estimated_cost_usd": 0.001527
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O00462",
+          "title": "MANBA (O00462)",
+          "url": "https://www.uniprot.org/uniprotkb/O00462",
+          "text": "Protein: Beta-mannosidase\nFunction: Exoglycosidase that cleaves the single beta-linked mannose residue from the non-reducing end of all N-linked glycoprotein oligosaccharides",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000109323::function",
+          "title": "MANBA \u2014 MANBA",
+          "url": "https://platform.opentargets.org/target/ENSG00000109323",
+          "text": "Function: Exoglycosidase that cleaves the single beta-linked mannose residue from the non-reducing end of all N-linked glycoprotein oligosaccharides.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000109323::MONDO_0009562",
+          "title": "MANBA \u2194 beta-mannosidosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000109323/associations",
+          "text": "Disease: beta-mannosidosis\nDescription: Beta-mannosidosis is a very rare lysosomal storage disease characterized by developmental delay of varying severity and hearing loss, but that can manifest a wide phenotypic heterogeneity.\nAssociation score: 0.829",
+          "cos_sim_score": 0.8294410981804171,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000109323::EFO_1001486",
+          "title": "MANBA \u2194 primary biliary cirrhosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000109323/associations",
+          "text": "Disease: primary biliary cirrhosis\nDescription: Primary biliary cholangitis (PBC) is a chronic and slowly progressive cholestatic liver disease of autoimmune etiology characterized by injury of the intrahepatic bile ducts that may eventually lead to liver failure.\nAssociation score: 0.409",
+          "cos_sim_score": 0.4090599460988812,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000109323::HP_0003124",
+          "title": "MANBA \u2194 Hypercholesterolemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000109323/associations",
+          "text": "Disease: Hypercholesterolemia\nDescription: An increased concentration of cholesterol in the blood.\nAssociation score: 0.355",
+          "cos_sim_score": 0.3551228091431745,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000109323::EFO_0001073",
+          "title": "MANBA \u2194 obesity",
+          "url": "https://platform.opentargets.org/target/ENSG00000109323/associations",
+          "text": "Disease: obesity\nDescription: An eating-related disorder in which excess body fat has accumulated to such an extent that health may be negatively affected. It is commonly defined as a body mass index (weight divided by height squared) of 30 kg/m2 or higher.\nAssociation score: 0.309",
+          "cos_sim_score": 0.3087913304475902,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "MANBA \u2014 mannosidase beta",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MANBA\nGene name: mannosidase beta\nAliases / synonyms: MANB1\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the glycosyl hydrolase 2 family. The encoded protein localizes to the lysosome where it is the final exoglycosidase in the pathway for N-linked glycoprotein oligosaccharide catabolism. Mutations in this gene are associated with beta-mannosidosis, a lysosomal storage disease that has a wide spectrum of neurological involvement. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MANBA",
+          "aliases": "MANB1",
+          "gene_description": "mannosidase beta"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "NFKB1 \u2014 nuclear factor kappa B subunit 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: NFKB1\nGene name: nuclear factor kappa B subunit 1\nAliases / synonyms: CVID12, EBP-1, KBF1, NF-kB, NF-kB1, NF-kappa-B1, NF-kappaB, NF-kappabeta, NFKB-p105, NFKB-p50, NFkappaB\nOrganism: Homo sapiens\nGene summary: This gene encodes a 105 kD protein which can undergo cotranslational processing by the 26S proteasome to produce a 50 kD protein. The 105 kD protein is a Rel protein-specific transcription inhibitor and the 50 kD protein is a DNA binding subunit of the NF-kappa-B (NFKB) protein complex. NFKB is a transcription regulator that is activated by various intra- and extra-cellular stimuli such as cytokines, oxidant-free radicals, ultraviolet irradiation, and bacterial or viral products. Activated NFKB translocates into the nucleus and stimulates the expression of genes involved in a wide variety of biological functions. Inappropriate activation of NFKB has been associated with a number of inflammatory diseases while persistent inhibition of NFKB leads to inappropriate immune cell development or d...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "NFKB1",
+          "aliases": "CVID12, EBP-1, KBF1, NF-kB, NF-kB1, NF-kappa-B1, NF-kappaB, NF-kappabeta, NFKB-p105, NFKB-p50, NFkappaB",
+          "gene_description": "nuclear factor kappa B subunit 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CFH \u2014 complement factor H",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CFH\nGene name: complement factor H\nAliases / synonyms: AHUS1, AMBP1, ARMD4, ARMS1, CFHL3, FH, FHL1, HF, HF1, HF2, HUS\nOrganism: Homo sapiens\nGene summary: This gene is a member of the Regulator of Complement Activation (RCA) gene cluster and encodes a protein with twenty short consensus repeat (SCR) domains. This protein is secreted into the bloodstream and has an essential role in the regulation of complement activation, restricting this innate defense mechanism to microbial infections. Mutations in this gene have been associated with hemolytic-uremic syndrome (HUS) and chronic hypocomplementemic nephropathy. Alternate transcriptional splice variants, encoding different isoforms, have been characterized. [provided by RefSeq, Oct 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CFH",
+          "aliases": "AHUS1, AMBP1, ARMD4, ARMS1, CFHL3, FH, FHL1, HF, HF1, HF2, HUS",
+          "gene_description": "complement factor H"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "COL1A1 \u2014 collagen type I alpha 1 chain",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: COL1A1\nGene name: collagen type I alpha 1 chain\nAliases / synonyms: CAFYD, EDSARTH1, EDSC, OI1, OI2, OI3, OI4\nOrganism: Homo sapiens\nGene summary: This gene encodes the pro-alpha1 chains of type I collagen whose triple helix comprises two alpha1 chains and one alpha2 chain. Type I is a fibril-forming collagen found in most connective tissues and is abundant in bone, cornea, dermis and tendon. Mutations in this gene are associated with osteogenesis imperfecta types I-IV, Ehlers-Danlos syndrome type VIIA, Ehlers-Danlos syndrome Classical type, Caffey Disease and idiopathic osteoporosis. Reciprocal translocations between chromosomes 17 and 22, where this gene and the gene for platelet-derived growth factor beta are located, are associated with a particular type of skin tumor called dermatofibrosarcoma protuberans, resulting from unregulated expression of the growth factor. Two transcripts, resulting from the use of alternate polyadenyla...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "COL1A1",
+          "aliases": "CAFYD, EDSARTH1, EDSC, OI1, OI2, OI3, OI4",
+          "gene_description": "collagen type I alpha 1 chain"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "APEX1 \u2014 apurinic/apyrimidinic endodeoxyribonuclease 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: APEX1\nGene name: apurinic/apyrimidinic endodeoxyribonuclease 1\nAliases / synonyms: APE, APE1, APEN, APEX, APX, HAP1, REF1\nOrganism: Homo sapiens\nGene summary: The APEX gene encodes the major AP endonuclease in human cells. It encodes the APEX endonuclease, a DNA repair enzyme with apurinic/apyrimidinic (AP) activity. Such AP activity sites occur frequently in DNA molecules by spontaneous hydrolysis, by DNA damaging agents or by DNA glycosylases that remove specific abnormal bases. The AP sites are the most frequent pre-mutagenic lesions that can prevent normal DNA replication. Splice variants have been found for this gene; all encode the same protein. Disruptions in the biological functions related to APEX are associated with many various malignancies and neurodegenerative diseases.[provided by RefSeq, Dec 2019]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "APEX1",
+          "aliases": "APE, APE1, APEN, APEX, APX, HAP1, REF1",
+          "gene_description": "apurinic/apyrimidinic endodeoxyribonuclease 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::5775928",
+          "title": "Differential Connectivity of Gene Regulatory Networks Distinguishes Corticosteroid Response in Asthma",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5775928/",
+          "text": "Given this background, we chose to validate key TFs with a different ratio of edges in good vs. poor responders using both a downstream targeting approaches and a cellular apoptosis assay. In this functional validation analysis, we knocked-out two key TFs (NFKB1 and JUN) from our network analysis using siRNA. NFKB1 (nuclear factor of kappa light polypeptide gene enhancer in B-cells 1) encodes a 105 kD protein which can undergo cotranslational processing by the 26S proteasome to produce a 50 kD protein. Inappropriate activation of NFKB1 has been associated with a number of inflammatory diseases while persistent inhibition of NFKB1 leads to inappropriate immune cell development or delayed cell growth. JUN (jun proto-oncogene) encodes a protein that is highly similar to the viral protein, and which interacts directly with specific target DNA sequences to regulate gene expression. Molecular network analysis of endometriosis reveals a role for c-Jun-regulated macrophage activation(47). In the functional validation analysis, we identified one downstream target (CEBPD) of NFKB1 and one downstream targets (TMEM53) of JUN that are statistically differentially expressed following dexamethasone treatment in good vs. poor responders, supporting differential connectivity of the transcription factors leading to different downstream gene targeting, as exemplified by differential expression, between good and poor ICS responders. We also observed that without knocking-out the NFKB1 paralog (RELA) or JUN, the cell viability of good responders is statistically greater from that of poor responders. Importantly, such differences were largely abrogated after depletion of RelA or JUN by siRNA. Overall, this functional data suggest that RelA and JUN are playing important roles that determine differential cellular response to dexamethasone in these two groups of LCLs and, through generalization, to the differences in clinical response underlying the two groups. Thus, a malfunction of NFKB1 or JUN may explain the poor-responsiveness of ICS treatment and that modulation of the connectivity related to these genes may be of therapeutic benefit. Further investigation is warranted.\nOur study has a couple of limitations. One limitation of the present study is that the permutation p-values in Table 2 are modest. We obtained Benjamini-Hochberg (BH) corrected p-values for the 31 TFs that we identified as targeted in the top/bottom edges to control for multiple testing (Supplemental Table 6). Although no TFs are significant at a BH-pvalue<0.05, the same six TFs we noted as nominally significant previously (including FEV, GATA3, JUN, NFATC2, NFKB1, and SPI1) were identified at a BH-pvalue<0.15.\nAdditionally, when we investigated the siRNA mediated changes in expression, we identified only one gene for each of the two TFs (NFKB1 and JUN). While only one downstream gene for each TF was validated, there are plausible biologic and experimental reasons for this. From an experimental perspective, we note that the network was built upon >200 LCL cell lines and we only choose 7 cell lines for validation due to feasibility reasons. Therefore, it is likely the sum total of target genes as inferred by the network analysis as derived from many samples may not be co-regulated by the specific TF in exactly the same fashion as a single cell line under the same condition. Biologically, we also note that while there is usually a one-to-many relationship between a given TF and its downstream targets, there is often also a co-regulation of gene expression by multiple TFs. Therefore it is entirely possible that siRNA knockdown of a TF may not significantly alter the expression of such a gene. Both of these points suggest that the regulation of gene expression remains complex and that functional validation of networks remains imperfect.\nTo assess if the results of the network analysis is robust to the choice of the number of top edges used to define the networks, we calculated log2 ratio of the number of edges that a TF has in good-/poor- responder network for different numbers of top edges used (Supplemental Table 7). We note that the ratios and especially the direction of enrichment are largely stable across different numbers of edges, especially as the number of selected edges increases (leading to more robust estimates). In addition, the higher thresholds (more edges) are likely more reliable in a sense since there is more overall information with greater numbers of edges (even if these edges are not the highest weight edges).",
+          "cos_sim_score": 0.10309843719005585,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::5775928",
+          "title": "Differential Connectivity of Gene Regulatory Networks Distinguishes Corticosteroid Response in Asthma",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5775928/",
+          "text": "Results\nTable 1 shows the population characteristics for the 145 subjects, the 48 poor-responders, and the 47 good-responders, separately. There are no significant differences between good-responders and poor-responders for age, gender, or baseline FEV1 as a percent of predicted (FEV1%). The two groups have significant difference between DFEV1 (the change in FEV1% between baseline and 2-month follow-up) based on the definition of the two groups.\nThe networks of (TF, gene) for dexamethasone-treated LCLs and for sham-treated LCLs are shown in Figures 1A and 1B, respectively. The complete set of TFs and their targeted genes are shown in Supplemental Table 1. The differential connectivity between the two networks indicates the effect of dexamethasone treatment on the transcription factor regulation of genes.\nWe next evaluate the differential connectivity between the network of good-responders and that of poor responders. It would be difficult to visualize differential connectivity if we used all top 10000 (TF, gene) pairs. Hence, we first illustrate the differential connectivity by using only the top 50 pairs of (TF, gene) that had the largest absolute differences of edge weights between the 2 networks (Figure 2). In Figure 2, the red edges are from the network of good-responders and the blue edges are from the network of poor-responders. Figure 2 indicates that the 2 networks demonstrate extensive difference in connectivity. Interestingly, seven out of the nine hot spots in Supplemental Figure 1 (networks of dexamethasone treatments) are also in Figure 2 (networks of responsiveness), suggesting that key regulators of overall corticosteroid response are also important in regulating the clinical extremes of response. The target genes in good responders are listed in Supplemental Table 3 and the targets in poor responders are listed in Supplemental Table 4.\nThe set Sg (for good responders) contains 32 TFs and the set Sp (for poor responders) contains 35 TFs. There are 31 TFs appearing in both Sg and Sp, including JUN and NFKB1 (Table 2). NFKB1 has the highest ratio (nEdge(g)/nEdge(p)=20, p=0.039 by permutation analysis) and JUN has the lowest ratio (nEdge(g)/nEdge(p)=0.29, p=0.019 by permutation analysis). Among the 31 unique TFs, 6 TFs have permutation p-value < 0.05. For each of the 105 TFs in this study, we performed two-sample t-test to test if a TF is differentially expressed between dexamethasone-treated LCLs and sham-treated LCLs. Fifty-one of the 105 TFs have two-sample t-test p-value < 0.05 (Supplemental Table 5). Sixteen of the 31 common TFs are differentially expressed between dexamethasone-treated LCLs and sham-treated LCLs (Table 2). Of note, neither JUN nor NFKB1 were differentially expressed between dexamethasone-treated LCLs and sham-treated LCLs. We obtained the QQplot of \u2013log10 (t-test p-value) between non-differentially connected TFs and differentially connected TFs (Supplemental Figure 3), which showed no significant difference between the 2 sets of TFs in terms two-sample t-test p-values. We also performed Fisher's exact test to assess if the differential expression of TFs (TFs with two-sample t-test p-value<0.05 versus TFs with p-value\u22650.05) is associated with differential connection (TFs that are in both good-responder network and poor-responder network versus TFs that are not in both networks). Sixteen TFs are both differentially expressed (DE) and differentially connected (DC); 39 are neither DE nor DC; 35 TFs are DE, but not DC; and 15 TFs are DC, but not DE. The p-value for the Fisher's exact test is 0.8308. Both parallel boxplots and Fisher's exact test showed no association between differential expression and differential connectivity of TFs in two networks of good responders and poor responders.",
+          "cos_sim_score": 0.0861259251832962,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::5775928",
+          "title": "Differential Connectivity of Gene Regulatory Networks Distinguishes Corticosteroid Response in Asthma",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5775928/",
+          "text": "In the analysis of corticosteroid response alone, we identified nine key \u201chub\u201d TFs, each with at least nine differentially connected edges between treated and untreated (sham) cells. This suggests that these TFs may be transcriptional regulatory \u201chot spots\u201d. A literature search indicated that there is biologic plausibility for a role in glucocorticoid signaling for at least seven of the nine TFs (Supplemental Figure 1)(34-41). For example, ETS1 is a regulator of human glucocorticoid receptor 1A promoter(42).\nThe differential connectivity between the network of (TF, gene) we obtained for ICS-good responders and that for ICS-poor responders revealed multiple TFs that may help to explain why some asthmatic children do not respond well to ICS treatment. From a mechanistic perspective, it is assuring that many of these TFs also play a role in the differential connectivity between the network of dexamethasone-treated cells and that of sham-treated cells. Indeed, seven of the nine key \u201chub\u201d TFs in differentially connected in dexamethasone vs. sham were also present in the analysis of clinical responders (c.f. Supplemental Figure 1). These include GATA2, ETS1, YY1, and NFIC1, which all have well documented roles in corticosteroid biology(35, 36, 38-40). These findings support the notion that factors innately involved in the global response to corticosteroids may also modulate treatment response differences between subjects. Further studies of these TFs might help find a way to improve the efficiency of current ICS treatment.\nA key feature of PANDA is the emphasis on differential connectivity as compared to differential expression of the transcription factors. Therefore, it is not surprising that the same sets of TFs regulated different sets of downstream genes between the good responders and poor responders. Hence, the two networks had different ontologies. For the good responders, these included regulation of the immune response and metabolic processes (Figure 3). However, the most striking of the ontologic differences was that the network within the good clinical responders supported \u201cpro-apoptosis\u201d pathways, whereas the network derived from the poor responders indicated the presence of \u201canti-apoptosis\u201d pathway regulation. Corticosteroid induced apoptosis is a known key mechanism related to resolution of asthmatic inflammation and helps to differentiate severe vs. non-severe asthma(43-46). Our findings add to this literature by eliciting the differential interactions between key transcription factors and their downstream targets as they modulate corticosteroid induced apoptosis in good and poor responders.",
+          "cos_sim_score": 0.08393973112106323,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::5775928",
+          "title": "Differential Connectivity of Gene Regulatory Networks Distinguishes Corticosteroid Response in Asthma",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5775928/",
+          "text": "Gene silencing of TFs and dexamethasone treatment in LCLs\nThe TFs having most differential regulation may determine if a patient is a good-responder of ICS treatment or not. We chose to validate two key TFs (NFKB1 and JUN) with a different ratio of edges in good vs. poor responders using a knock down experiment. These 2 TFs were at polar ends of the ratio of the numbers of edges that a TF has in good-responder network to those in poor-responder network.\nWe hypothesized that knocking down the NFKB1 paralog (RELA) or JUN would result in modulation of the difference between poor-responders and good-responders. To validate this hypothesis, we cultured LCLs from 7 good responders and 7 poor responders in RPMI 1640 medium (Life Technologies) supplemented with 15% fetal bovine serum (FBS). One siRNA with best knock down efficiency in three individual siRNAs (Life Technologies) targeting JUN or RELA was chosen for the gene silencing experiment. Gene targeting siRNA and negative contol siRNA were transfected into LCL cell lines using 4D-Nucleofector X kit (Lonza) with Nucleofector Program (EC-117). Optimal amount of siRNA (20-100 pmol siRNA / 106 cells) were trasnsfection in each reaction. Twenty-four hours after transfection, cells were seeded into serum free RPMI 1640 medium to starve for 24 hours followed by dexamethasone or vehicle control treatment (1 \u03bcM) for 2 hours. Total RNA was extracted from 7 good responder cell lines and 7 poor responder cell lines with or without dexamethasone treatment. By RT-PCR, we measured expression levels of 4 down-stream genes (CEBPD, MANBA, PPT2, and TCP1) for NFKB1 silencing, 5 down-stream genes (ACOT8, ACSL3, MTA2, PDGFR8, and TMEM53) of JUN, and one house-keeping gene (GAPDH). RELA and JUN were measured for detecting the knock down efficiency. We also measured expression of NR3C1 gene that encodes the glucocorticoid receptor to determine whether there is endogenous expression difference of NR3C1 among good and poor responders. We generated histograms of the knock-down efficiencies of RELA and JUN across subjects. We also performed western blotting to confirm TFs knockdown efficiency in LCL lines. The gene expression level of a gene in PCR analysis is inversely proportional to CT level, where CT stands for cycles to reach to threshold. For a given gene, let delta CT = CT.gene \u2013 CT.GAPDH, where CT.gene is the CT level of the gene and CT.GAPDH is the CT level of GAPDH. For each down-stream gene, we performed general linear model analysis to test if delta CT levels for good-responders are different from those for poor-responders after dexamethasone treatment, adjusted for knock-down status (with TFs siRNA knock-down versus control siRNA knock-down).\nNoting the key difference in apoptosis in the ontology analysis (Figure 3 and Supplemental Table 2), that is, pro-apoptosis enriched in network of good responders and anti-apoptosis enriched in network of poor responders, we also measured cell viability in LCL lines after dexamethasone treatment. The cells were transfected by two different JUN siRNA (JUN siRNA-1 and JUN siRNA-2), RELA siRNA and control siRNA. After starving for 24 hours, each siRNA transfected cells were split into 8 wells and each 4 wells were treated with 0 \u03bcM (ethanol, solution vehicle) or 50 \u03bcM dexamethasone for 24 hours. The cell viability was detected by alamarBlue assay kit (ThermoFisher DAL1100). The results were normalized to relative ethanol treated cells.\nResults\nTable 1 shows the population characteristics for the 145 subjects, the 48 poor-responders, and the 47 good-responders, separately. There are no significant differences between good-responders and poor-responders for age, gender, or baseline FEV1 as a percent of predicted (FEV1%). The two groups have significant difference between DFEV1 (the change in FEV1% between baseline and 2-month follow-up) based on the definition of the two groups.",
+          "cos_sim_score": 0.056684721261262894,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::5775928",
+          "title": "Differential Connectivity of Gene Regulatory Networks Distinguishes Corticosteroid Response in Asthma",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5775928/",
+          "text": "Introduction\nAsthma is the most common chronic airway disease among children and young adults(1) characterized by airflow obstruction in the small airways of affected individuals. The prevalence of asthma and its mortality have almost doubled in the last 20 years, imposing an increasing financial burden to medical care system. Despite availability of many standard treatments, including \u03b22-agonists, corticosteroids, and leukotriene antagonists(2-4), to control asthmatic symptoms, almost half of asthmatic patients do not see improvement in symptoms. Such variation in drug response are attributed to many factors (5, 6), including genetics (7-10). Pharmacogenomics studies assess how genetic and genomic variation affects an individual's response to drug treatment(11-15).\nCorticosteroids are the backbone of asthma therapies. They reduce inflammation through both gene activation and suppression. The molecular mechanisms of action of corticosteroids have been clearly described(16). Failure of any of the steps along the route where corticosteroids pass from the cell membrane to their target genes may result in non-responsiveness. For example, abnormalities in glucocorticoid receptor number, glucocorticoid receptor binding, or abnormalities in glucocorticoid-glucocorticoid receptor complex binding to DNA may result in poor response to corticosteroid therapy(17-20). Despite these insights, the molecular mechanisms underlying a given asthma patient's poor-responsiveness to corticosteroid medications remain unclear.\nGene differential expression, single nucleotide polymorphism, and expression quantitative trait loci (eQTL) analyses have identified multiple genes associated with asthma drug responsiveness(21-24). However, these analyses typically focus on one gene at a time. Gene expression itself is regulated by several mechanisms, such as transcription factors, microRNAs, and DNA methylation. For complex diseases such as asthma, genes and their regulators are believed to work together; network approaches investigating asthmatic drug response should include consideration of both the genes and their upstream regulators.\nIt is well known that (1) Transcription factors (TFs) play key roles in regulating gene expression; (2) TFs usually work together to co-regulate gene expression; and (3) genes with similar functions tend to co-express. Using this information, we have previously developed a message-passing model, called PANDA (Passing Attributes between Networks for Data Assimilations)(25), which assimilates information from multiple, complementary data-types in order to reverse engineer a regulatory network. In this study, we apply PANDA to a set of immortalized B-cells, which were derived from inhaled corticosteroid treated asthmatics who were part of a large clinical trial. We hypothesize that assessing the regulatory networks of poor- and good clinical responders using PANDA could uncover the molecular mechanisms by which drug response to inhaled corticosteroids (ICS) of each patient is determined.\nMethods\nAsthma Cohort\nCAMP (Childhood Asthma Management Program) was a multicenter, randomized, double-masked clinical trial designed to determine the long-term effects of three inhaled treatments for mild to moderate childhood asthma: budesonide (a glucocorticoid used daily) and albuterol (a short-acting beta-agonist bronchodilator used as needed); nedocromil (a non-steroid anti-inflammatory agent used daily) and albuterol; and placebo and albuterol(26). The primary outcome measure was post-bronchodilator forced expiratory volume in one-second percent of predicted (FEV1%), observed over 4-to 6-year period. For this project, we selected 47 good-responders and 48 poor-responders from the 145 Caucasian CAMP subjects with available immortalized B-cells (LCLs) gene expression(15). The definitions of good-responders and poor-responders were based on the change in FEV1% between baseline and 2-month follow-up. We used the first tertile (Q1=1.10%) and the third tertile (Q3=9.78%) of FEV1 change calculated based on the 145 subjects to partition the 145 subjects to 3 groups. The 48 subjects with FEV1 change <Q1 were defined as poor-responders; the 47 subjects with FEV1 change > Q3 were defined as good-responders.\nLCL Microarray Experiment",
+          "cos_sim_score": 0.03488764539361,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

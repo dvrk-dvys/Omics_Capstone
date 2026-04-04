@@ -1,0 +1,208 @@
+{
+  "probe_id": "11715948_at",
+  "gene_symbol": "KCTD12",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.2318885309999782,
+  "abs_fold_change": 1.6836,
+  "score": 1.6731,
+  "probe_count": 1,
+  "probe_ids": "11715948_at",
+  "max_score": 1.6731,
+  "mean_abs_fold_change": 1.6836,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T19:09:51",
+  "interpretation": "KCTD12 encodes a protein that acts as an auxiliary subunit of GABA-B receptors, influencing their pharmacology and signaling. While there is no direct evidence linking KCTD12 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in G protein-coupled receptor signaling suggests a potential involvement in the complex pathways that govern bone metabolism and vascular health, both of which are critical in the context of SONFH. The retrieved evidence primarily describes KCTD12's general biological functions without specific connections to SONFH, leading to a low confidence in its direct relevance as a biomarker. However, its involvement in signaling pathways could imply a role in the disease's progression, warranting further investigation. Thus, while KCTD12 may not currently serve as a reliable early-detection biomarker for SONFH, its biological functions suggest it could be explored in future studies.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "KCTD12 may play a role in signaling pathways relevant to the mechanisms underlying Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "KCTD12 (Q96CX2). https://www.uniprot.org/uniprotkb/Q96CX2",
+    "KCTD12 \u2014 KCTD12. https://platform.opentargets.org/target/ENSG00000178695",
+    "KCTD12 \u2194 adolescent idiopathic scoliosis. https://platform.opentargets.org/target/ENSG00000178695/associations",
+    "KCTD12 \u2194 ovarian dysfunction. https://platform.opentargets.org/target/ENSG00000178695/associations",
+    "KCTD12 \u2194 ovarian neoplasm. https://platform.opentargets.org/target/ENSG00000178695/associations",
+    "KCTD12 \u2194 inflammatory bowel disease. https://platform.opentargets.org/target/ENSG00000178695/associations",
+    "KCTD12 \u2014 potassium channel tetramerization domain containing 12 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KCTD12 \u2014 potassium channel tetramerisation domain containing 12 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KRAS \u2014 KRAS proto-oncogene, GTPase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CD274 \u2014 CD274 molecule (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CDK1 \u2014 cyclin dependent kinase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Exploring molecular disparities of H-type vasculature endothelial cells in osteonecrosis of the femoral head through single-cell analysis (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11800532/",
+    "CD41-deficient exosomes from non-traumatic femoral head necrosis tissues impair osteogenic differentiation and migration of mesenchymal stem cells (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC7184624/",
+    "Identification of hub genes and therapeutic drugs in osteonecrosis of the femoral head through integrated bioinformatics analysis and literature mining (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC10366127/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8392,
+    "completion_tokens": 318,
+    "total_tokens": 8710,
+    "estimated_cost_usd": 0.00145
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q96CX2",
+          "title": "KCTD12 (Q96CX2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q96CX2",
+          "text": "Protein: BTB/POZ domain-containing protein KCTD12\nFunction: Auxiliary subunit of GABA-B receptors that determine the pharmacology and kinetics of the receptor response. Increases agonist potency and markedly alter the G-protein signaling of the receptors by accelerating onset and promoting desensitization (By similarity)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000178695::function",
+          "title": "KCTD12 \u2014 KCTD12",
+          "url": "https://platform.opentargets.org/target/ENSG00000178695",
+          "text": "Function: Auxiliary subunit of GABA-B receptors that determine the pharmacology and kinetics of the receptor response. Increases agonist potency and markedly alter the G-protein signaling of the receptors by accelerating onset and promoting desensitization (By similarity). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000178695::EFO_0005423",
+          "title": "KCTD12 \u2194 adolescent idiopathic scoliosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000178695/associations",
+          "text": "Disease: adolescent idiopathic scoliosis\nDescription: A scoliosis with no known cause arising in adolescent.\nAssociation score: 0.323",
+          "cos_sim_score": 0.322721226197688,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000178695::EFO_0009003",
+          "title": "KCTD12 \u2194 ovarian dysfunction",
+          "url": "https://platform.opentargets.org/target/ENSG00000178695/associations",
+          "text": "Disease: ovarian dysfunction\nDescription: The inability of the ovaries to function.\nAssociation score: 0.243",
+          "cos_sim_score": 0.2427006950146139,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000178695::EFO_0003893",
+          "title": "KCTD12 \u2194 ovarian neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000178695/associations",
+          "text": "Disease: ovarian neoplasm\nDescription: Neoplasms located in the ovary that can be benign or malignant. They are classified according to the tissue of origin, such as the surface EPITHELIUM, the stromal endocrine cells, and the totipotent GERM CELLS.\nAssociation score: 0.130",
+          "cos_sim_score": 0.1303699338052371,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000178695::EFO_0003767",
+          "title": "KCTD12 \u2194 inflammatory bowel disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000178695/associations",
+          "text": "Disease: inflammatory bowel disease\nDescription: A spectrum of small and large bowel inflammatory diseases of unknown etiology. It includes Crohn's disease, ulcerative colitis, and colitis of indeterminate type.\nAssociation score: 0.128",
+          "cos_sim_score": 0.1281544437784529,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "KCTD12 \u2014 potassium channel tetramerization domain containing 12",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KCTD12\nGene name: potassium channel tetramerization domain containing 12\nAliases / synonyms: C13orf2, PFET1, PFETIN\nOrganism: Homo sapiens\nGene summary: Enables identical protein binding activity. Predicted to be involved in regulation of G protein-coupled receptor signaling pathway. Predicted to be located in cell projection; plasma membrane; and synapse. Predicted to be part of receptor complex. Predicted to be active in GABA-ergic synapse; postsynaptic membrane; and presynaptic active zone membrane. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KCTD12",
+          "aliases": "C13orf2, PFET1, PFETIN",
+          "gene_description": "potassium channel tetramerization domain containing 12"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KCTD12 \u2014 potassium channel tetramerisation domain containing 12",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KCTD12\nGene name: potassium channel tetramerisation domain containing 12\nAliases / synonyms: C13orf2, KIAA1778\nOrganism: Homo sapiens",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KCTD12",
+          "aliases": "C13orf2, KIAA1778",
+          "gene_description": "potassium channel tetramerisation domain containing 12"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KRAS \u2014 KRAS proto-oncogene, GTPase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KRAS\nGene name: KRAS proto-oncogene, GTPase\nAliases / synonyms: 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2\nOrganism: Homo sapiens\nGene summary: This gene, a Kirsten ras oncogene homolog from the mammalian ras gene family, encodes a protein that is a member of the small GTPase superfamily. A single amino acid substitution is responsible for an activating mutation. The transforming protein that results is implicated in various malignancies, including lung adenocarcinoma, mucinous adenoma, ductal carcinoma of the pancreas and colorectal carcinoma. Alternative splicing leads to variants encoding two isoforms that differ in the C-terminal region. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KRAS",
+          "aliases": "'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2",
+          "gene_description": "KRAS proto-oncogene, GTPase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CD274 \u2014 CD274 molecule",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CD274\nGene name: CD274 molecule\nAliases / synonyms: ADMIO5, B7-H, B7H1, PD-L1, PDCD1L1, PDCD1LG1, PDL1, hPD-L1\nOrganism: Homo sapiens\nGene summary: This gene encodes an immune inhibitory receptor ligand that is expressed by hematopoietic and non-hematopoietic cells, such as T cells and B cells and various types of tumor cells. The encoded protein is a type I transmembrane protein that has immunoglobulin V-like and C-like domains. Interaction of this ligand with its receptor inhibits T-cell activation and cytokine production. During infection or inflammation of normal tissue, this interaction is important for preventing autoimmunity by maintaining homeostasis of the immune response. In tumor microenvironments, this interaction provides an immune escape for tumor cells through cytotoxic T-cell inactivation. Expression of this gene in tumor cells is considered to be prognostic in many types of human malignancies, including colon cancer a...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CD274",
+          "aliases": "ADMIO5, B7-H, B7H1, PD-L1, PDCD1L1, PDCD1LG1, PDL1, hPD-L1",
+          "gene_description": "CD274 molecule"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CDK1 \u2014 cyclin dependent kinase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CDK1\nGene name: cyclin dependent kinase 1\nAliases / synonyms: CDC2, CDC28A, P34CDC2\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the Ser/Thr protein kinase family. This protein is a catalytic subunit of the highly conserved protein kinase complex known as M-phase promoting factor (MPF), which is essential for G2/M phase transitions of eukaryotic cell cycle. Mitotic cyclins stably associate with this protein and function as regulatory subunits. The kinase activity of this protein is controlled by cyclin accumulation and destruction through the cell cycle. The phosphorylation and dephosphorylation of this protein also play important regulatory roles in cell cycle control. Alternatively spliced transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, May 2023]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CDK1",
+          "aliases": "CDC2, CDC28A, P34CDC2",
+          "gene_description": "cyclin dependent kinase 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::11800532",
+          "title": "Exploring molecular disparities of H-type vasculature endothelial cells in osteonecrosis of the femoral head through single-cell analysis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11800532/",
+          "text": "Introduce\nOsteonecrosis of the femoral head (ONFH) is a debilitating orthopedic disorder that predominantly affects individuals in the age range of 20 to 50 years. Risk factors for nontraumatic osteonecrosis include hormonal imbalances, alcohol consumption, sickle cell anemia, and other conditions. The underlying pathological mechanisms involve vascular injury, mechanical stress, elevated intraosseous pressure, dysfunctional adipocytes, impaired apoptotic processes, and coagulation dysfunction, among others. The prevailing consensus suggests that these multifarious factors converge upon the femoral head, ultimately leading to vascular disturbances and impaired bone regenerative capacity, culminating in femoral head collapse [1\u20133].\nThere are three main subtypes of capillaries found in bone tissue: H, L and E [4, 5]. H-type vascular system is a subtype of the bone vascular system, first proposed by Kusumbe et al. in 20146. Within the capillaries of the epiphysis and bone marrow cavity, two vascular subtypes exist, namely H-type vasculature and L-type vasculature. H-type vasculature is predominantly localized in the epiphyseal end and beneath the periosteum, exhibiting strong positive staining for the endothelial cell proteins CD31 and EMCN [6]. H-type vasculature forms connections through distal vascular loops or arches, resembling straight columns, while the L-type vasculature found primarily in the diaphysis demonstrates a highly branched pattern, akin to the sinusoidal vascular system of the bone marrow. These two vascular types are closely linked at the junction of the epiphysis and diaphysis. E-type blood vessel is a subtype of blood vessel found in newborn long bone in 20174. In addition, S-type ECs recently discovered in the epiphysis are characterized by promoting bone strength through the secretion of type I collagen [7]. H-type vessels express high levels of CD31 and EMCN. L-type vessels express low levels of CD31 and EMCN. E type vessels expressed higher CD31 but lower EMCN. Surrounding H-type vasculature, bone progenitor cells are densely arranged, predominantly expressing Osterix, a transcription factor that can differentiate into osteoblasts. This suggests that H-type vasculature might effectively promote bone regeneration [8\u201310]. The pre-osteoclastic cells secrete PDGF-BB, which plays a crucial regulatory role in angiogenesis and osteogenesis. This discovery provides evidence for crosstalk between pre-osteoclastic cells and H-type vasculature [5]. The coordinated interplay of angiogenesis, pre-osteoclastic cells, and osteoblasts constitutes the triad theory of bone metabolism, holding significant relevance in bone remodeling processes. Encouraging the growth of H-type vasculature could potentially serve as an effective strategy for treating diseases associated with bone loss [11, 12]. H-type vasculature is closely associated with femoral head necrosis. Experiments have shown that reduced H-type angiogenesis, thinning of trabeculae, and microfractures play an important role in the development of ONFH [13]. The role of H-type vasculature in ONFH necessitates further investigation.",
+          "cos_sim_score": 0.612485408782959,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::7184624",
+          "title": "CD41-deficient exosomes from non-traumatic femoral head necrosis tissues impair osteogenic differentiation and migration of mesenchymal stem cells",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7184624/",
+          "text": "Introduction\nNon-traumatic osteonecrosis of the femoral head (ONFH) is a common disease characterized by rapid procession, high disability rate and severe influence on life quality1,2. In the US, 10,000\u201320,000 patients are newly found to be affected with the disease per year3 and in China, 100,000\u2013200,000 new cases were reported per year4. Various medical treatments have been introduced, but no pharmacological prevention or treatment of osteonecrosis is recommendable5. Mesenchymal stem cells (MSCs) transplantation has been used to treat the ONFH in early stage, but the failure rate is about 30%. Most of the patients have to undergo a total hip arthroplasty (THA)6. Therefore, ONFH affects the patients physically and psychologically and brings a huge financial burden on family and society. The difficulties in diagnosis and treatment for this disease mainly result from the unclear underlying mechanism.\nMSCs with pluripotency of differentiation play a critical role in ONFH7,8. The impaired osteogenic differentiation and migration of MSCs is considered as the major factor leading to ONFH9. However, MSCs implantation remains a high rate of failure10. On one hand, the osteogenic differentiation and migration of implanted MSCs is decreased, which seem to be assimilated by the pathological tissue. That might be one of the main causes for the failure of cytotherapy. On the other hand, it is noticeable that the progress of ONFH is unlikely to be halted by blocking the exposure to the risk factors. Therefore, we suppose that ONFH bone tissue might deliver some signals to affect the normal tissues and drive the disease progress via an undetected approach. Exploring the delivery approach in ONFH is important to find out the target for early diagnosis and treatment.\nAs we know, intercellular signaling delivery is mainly mediated by soluble cytokines, chemokines, and other soluble factors; however, extracellular vesicles (EV) have become recognized as new mediators in this process11. Exosome is a member of EV, with the size of 40\u2013150\u2009nm. It packages the proteins and genetic materials from host cells into lipid bilayer and delivers this cargo to the recipient cells12,13. This communicational approach can increase the spreading scope and duration time of the signals. Recently, these nanoparticles were reported to induce some diseases, like chronic obstructive pulmonary disease and coronary heart disease14,15. However, the role of exosomes in ONFH is still confusing and the feasibility of exosomes in treating this disease remains unclear. Due to all the cells in tissues surrounded by exosomes, cells co-cultured with exosomes from the bone tissue of ONFH (ONFH-exos) approximate those in original environment. Whereas, it is difficult to obtain the bone tissues from ONFH patients, study on ONFH-exos has never been reported before. Thus, it is necessary to study the effect of ONFH-exos.\nOur study disclosed that the injection of ONFH-exos could induce incidence of GC-induced ONFH-like damage in vivo and suppress the osteogenic differentiation and migration of MSCs. To explore the change of osteogenic and migratory factors, we analyzed the proteome of ONFH-exos and demonstrated the importance of CD41 (integrin \u03b12b) in osteogenic differentiation and migration of MSCs. Furthermore, we showed the reduction of CD41 in ONFH-exos and found out the potential molecular mechanism in ONFH induced by exosomes. These results demonstrated that ONFH tissue facilitated the disease progress through spreading the signaling included in exosomes to impair the osteoblast differentiation and migration of MSCs, and that CD41 played an important role in this process.\nResults\nDemographic characteristics of patients and characteristics of exosomes from all samples",
+          "cos_sim_score": 0.5457215309143066,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10366127",
+          "title": "Identification of hub genes and therapeutic drugs in osteonecrosis of the femoral head through integrated bioinformatics analysis and literature mining",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10366127/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a multifactorial disease with an unknown etiology, characterized by loss of integrity of the subchondral bone1. It mainly affects men aged 30\u201350 years and involves more and more youngers1,2. Despite the identification of corticosteroid use, alcohol, sickle-cell disease, and trauma as the major risk factors for ONFH, its pathogenesis remains incompletely understood2,3. Surgery is the only effective way to treat ONFH at present4. In the USA, approximately 10% of hip replacements are due to ONFH, and in the UK, ONFH is the third most common indication for total hip replacements in people under 50, which causes a heavy socioeconomic burden1,4. Effective drug therapies have not been established5. Therefore, identifying novel biomarkers and therapeutic drugs involved in the ONFH is of great significance in exploring efficient treatment strategies.\nOver the past two decades, few researchers have focused on exploring the mechanism of ONFH at the gene level6. Abnormalities in some genes, such as plasminogen-activating inhibitor-1 and nitric oxide synthase 3, have been proven to weaken the osteogenic differentiation capacity of bone marrow mesenchymal stem cells or disrupt angiogenesis, leading to the collapse of the femoral head surface7,8. However, the specific molecular mechanism of ONFH has not yet been clarified, and drug discovery has had little success. Recently, gene chips and high-throughput sequencing technologies have been widely used in the screening of disease-causing genes and have achieved practical and reliable results9. A new drug prediction method, drug-gene-disease triangulation based on literature mining, has been confirmed to be robust and reliable for identifying new drug candidates10.\nIn this study, we analyzed two gene expression profiles (Table 1) extracted from the National Center for Biotechnology Information Gene Expression Omnibus (GEO) database, which is a free global database of sequencing results. DEGs were identified by using the online tool GEO2R. Subsequently, the function of DEGs was determined by the Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analysis. With the help of Cytoscape, ten hub genes were selected and then validated by ROC analysis. Finally, the targeted drugs for ONFH were identified through the Drug-Gene Interaction Database (DGIdb) and cross-validated by integrated literature mining. Our study figured out the drug-gene-disease correlation to generate new insights into the prevention and treatment of ONFH.Table 1Detailed information on the GEO microarray profiles.ProfileOrganismSample sourceTechnology typeCasesControlsPlatformGSE123568Homo sapiensPeripheral serumIn situ oligonucleotide3010GPL15207GSE74089Homo sapiensHip cartilageIn situ oligonucleotide44GPL13497\nTable 1\nDetailed information on the GEO microarray profiles.\nResults\nIdentification of DEGs in ONFH",
+          "cos_sim_score": 0.5230916142463684,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::7184624",
+          "title": "CD41-deficient exosomes from non-traumatic femoral head necrosis tissues impair osteogenic differentiation and migration of mesenchymal stem cells",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7184624/",
+          "text": "Fig. 4\nEffect of ONFH-exos on osteogenic differentiation in C3H10T1/2 cells and HMSCs.\nOsteogenesis of C3H10T1/2 cells and HMSCs was induced by osteogenic differentiation medium. a The expression of osteogenic biomarkers, including: ALP, BGLAP, OPN, and COL1 were measured using western blotting analysis. The results showed that the osteogenic biomarkers in ONFH-exos were increased, compared to NOR-exos. b Statistical analysis was performed to measure the results in (a). c Alizarin red S staining presented the formation of calcium mineral deposits. The results showed the remarkable decrease in ONFH-exos, compared to NOR-exos. d Statistical analysis was performed to measure the results in (c). *P\u2009<\u20090.05, versus PBS group; #P\u2009<\u20090.05, versus NOR-exos group. All data were expressed as mean\u2009\u00b1\u2009SEM.\nEffect of ONFH-exos on migration\nMost of the MSCs exist in the femoral neck20, which migrate to the femoral head and differentiate to osteoblasts for remedying the damaged bone tissue. Consequently, we asked whether ONFH-exos affected MSCs migration. Next, we measured the migration of MSCs in ONFH-exos group employing a wound healing assay and observed the migration of C3H10T1/2 cells and HMSCs every 4\u2009h. The photos reported at 0\u2009h and terminal points (60\u2009h in C3H10T1/2 cells and 24\u2009h in HMSCs) were displayed in Fig. 5a, b. The quantitative data of Fig. 5a, b was displayed in Fig. 5c. The results showed that migratory distance of HMSCs and C3H10T1/2 cells in ONFH-exos group was decreased, compared with NOR-exos. These data indicated that ONFH-exos influenced osteogenic differentiation and migration in MSCs.Fig. 5Effect of NOR-exos and ONFH-exos on migration in C3H10T1/2 cells and HMSCs.The migration ability of C3H10T1/2 cells and HMSCs in PBS, DEX, NOR-exos, ONFH-exos was evaluated by wound healing test. a The migration of C3H10T1/2 cells was examined at 0\u2009h and 60\u2009hour. b The migration of HMSCs were recorded at 0\u2009h and 24\u2009h. a and b displayed the decline of cell migration in ONFH-exos group, with comparison of NOR-exos. c Quantitative analysis was used to evaluate the results of (a) and (b). *P\u2009<\u20090.05, versus PBS group; #P\u2009<\u20090.05, versus NOR-exos group. N.S, no significance. All data were expressed as mean\u2009\u00b1\u2009SEM.\nFig. 5\nEffect of NOR-exos and ONFH-exos on migration in C3H10T1/2 cells and HMSCs.\nThe migration ability of C3H10T1/2 cells and HMSCs in PBS, DEX, NOR-exos, ONFH-exos was evaluated by wound healing test. a The migration of C3H10T1/2 cells was examined at 0\u2009h and 60\u2009hour. b The migration of HMSCs were recorded at 0\u2009h and 24\u2009h. a and b displayed the decline of cell migration in ONFH-exos group, with comparison of NOR-exos. c Quantitative analysis was used to evaluate the results of (a) and (b). *P\u2009<\u20090.05, versus PBS group; #P\u2009<\u20090.05, versus NOR-exos group. N.S, no significance. All data were expressed as mean\u2009\u00b1\u2009SEM.\nThe damaged self-repair capacity in ONFH might be associated with the changed number and the feeble viability of MSCs in femoral neck22. Therefore, we next examined the effect of ONFH-exos on proliferative activity and apoptosis in C3H10T1/2 cells and HMSCs (Fig. S3). The data illustrated that ONFH-exos were a potent stimuli for the augment of MSCs number by fortifying proliferation and reducing apoptosis.\nProteomic analysis of ONFH-exos based on iTRAQ",
+          "cos_sim_score": 0.4663476049900055,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::7184624",
+          "title": "CD41-deficient exosomes from non-traumatic femoral head necrosis tissues impair osteogenic differentiation and migration of mesenchymal stem cells",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7184624/",
+          "text": "Fig. 3\nThe effect of ONFH-exos in S-D rats.\na COR, TRA, SAG, MPR, and 3-DR images of rat femoral heads were obtained using Micro-CT scanning. In ONFH-exos group, the Micro-CT scanning image showed cartilage deficiency, subchondral bone lesion and malformation of femoral head, compared to NOR-exos group. b Quantitative analysis of osteogenic parameters presented that BV/TV and Tb.N were decreased, Tb.Sp was increased and Tb.Th was unchanged in ONFH-exos group compared to NOR-exos. c HE staining of the femoral heads displayed that ONFH-exos could induce ONFH in rats. The images of ONFH-exos group showed the loss of cartilage deficiency, subchondral bone lesion and sparser trabecular. *P\u2009<\u20090.05, versus PBS group; N.S, no significance versus PBS group. BV/TV, bone volume per tissue volume; Tb.N, trabecular number; Tb.Sp, trabecular separation; Tb.Th, Trabecular thickness. COR, coronal; TRA, transverse; SAG, sagittal; MPR, multiplanar reconstruction; 3-DR, three-dimensional reconstruction. All data were expressed as mean\u2009\u00b1\u2009SEM.\nEffect of ONFH-exos on osteoblastic differentiation in vitro\nAccording to previous studies, ONFH was associated with MSCs, and the osteoblast differentiation of MSCs was declined in this disease19,20. Consequently, we assumed that ONFH-exos might drive the ONFH progress through influencing the osteogenic differentiation. To validate our hypothesis, we examined the osteogenic markers, including ALP, BGLAP, OPN and COL1, in MSCs pretreated with PBS, DEX, NOR-exos and ONFH-exos for 48\u2009h (Fig. 4). The western blotting results showed that compared with NOR-exos group, ONFH-exos suppressed the expression of ALP, BGLAP, OPN and COL1 in C3H10T1/2 cells and HMSCs (Fig. 4a, b). In addition, alizarin red S staining were performed after 14-day culture in ODM; the results also exhibited the decline of calcium deposit in ONFH-exos group (Fig. 4c, d). Collectively, these data suggested that ONFH-exos could impair osteogenic differentiation of MSCs. Both osteogenesis and adipogenesis are closely correlated to each other in MSCs differentiation, and DEX was reported be an inducer of MSCs adipogenic differentiation21. So, we next investigated the effect of ONFH-exos on adipogenic differentiation of C3H10T1/2 cells (Fig. S2), and the results showed that the adipogenesis of MSCs was facilitated in ONFH-exos group.Fig. 4Effect of ONFH-exos on osteogenic differentiation in C3H10T1/2 cells and HMSCs.Osteogenesis of C3H10T1/2 cells and HMSCs was induced by osteogenic differentiation medium. a The expression of osteogenic biomarkers, including: ALP, BGLAP, OPN, and COL1 were measured using western blotting analysis. The results showed that the osteogenic biomarkers in ONFH-exos were increased, compared to NOR-exos. b Statistical analysis was performed to measure the results in (a). c Alizarin red S staining presented the formation of calcium mineral deposits. The results showed the remarkable decrease in ONFH-exos, compared to NOR-exos. d Statistical analysis was performed to measure the results in (c). *P\u2009<\u20090.05, versus PBS group; #P\u2009<\u20090.05, versus NOR-exos group. All data were expressed as mean\u2009\u00b1\u2009SEM.\nFig. 4\nEffect of ONFH-exos on osteogenic differentiation in C3H10T1/2 cells and HMSCs.",
+          "cos_sim_score": 0.4592573344707489,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

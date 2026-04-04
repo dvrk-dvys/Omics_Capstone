@@ -1,0 +1,159 @@
+{
+  "probe_id": "11721719_at",
+  "gene_symbol": "NAAA",
+  "score": 1.0,
+  "SD_TestAUC": 0.0331269329999968,
+  "abs_fold_change": 0.9878,
+  "probe_count": 1,
+  "probe_ids": "11721719_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.9878,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:33:56",
+  "interpretation": "The NAAA gene encodes an enzyme known as N-acylethanolamine-hydrolyzing acid amidase, which is involved in the degradation of bioactive fatty acid amides, particularly those related to pain and inflammation. This function is relevant to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), as inflammation plays a critical role in the pathophysiology of osteonecrosis, especially following steroid administration. While the retrieved evidence does not directly link NAAA to SONFH, its role in modulating inflammatory responses suggests a potential indirect connection. The enzyme's activity in degrading fatty acid amides may influence pain signaling and inflammatory processes that contribute to the development of SONFH. Therefore, while the evidence is limited, NAAA could serve as a moderate biomarker candidate for early detection of SONFH due to its involvement in inflammation-related pathways.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "NAAA may influence inflammatory processes relevant to the development of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "NAAA (Q02083). https://www.uniprot.org/uniprotkb/Q02083",
+    "NAAA (Q02083-3). https://www.uniprot.org/uniprotkb/Q02083-3",
+    "NAAA (Q02083-2). https://www.uniprot.org/uniprotkb/Q02083-2",
+    "NAAA \u2014 NAAA. https://platform.opentargets.org/target/ENSG00000138744",
+    "NAAA \u2194 cellulitis. https://platform.opentargets.org/target/ENSG00000138744/associations",
+    "NAAA \u2194 abscess. https://platform.opentargets.org/target/ENSG00000138744/associations",
+    "NAAA \u2194 Tietze syndrome. https://platform.opentargets.org/target/ENSG00000138744/associations",
+    "NAAA \u2194 familial hemolytic anemia. https://platform.opentargets.org/target/ENSG00000138744/associations",
+    "N-acylethanolamine acid amide hydrolase. https://en.wikipedia.org/wiki/N-acylethanolamine_acid_amide_hydrolase",
+    "ASAHL. https://en.wikipedia.org/wiki/ASAHL",
+    "N-Acylethanolamine. https://en.wikipedia.org/wiki/N-Acylethanolamine"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5680,
+    "completion_tokens": 243,
+    "total_tokens": 5923,
+    "estimated_cost_usd": 0.000998
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q02083",
+          "title": "NAAA (Q02083)",
+          "url": "https://www.uniprot.org/uniprotkb/Q02083",
+          "text": "Protein: N-acylethanolamine-hydrolyzing acid amidase\nFunction: Degrades bioactive fatty acid amides to their corresponding acids, with the following preference: N-palmitoylethanolamine > N-myristoylethanolamine > N-lauroylethanolamine = N-stearoylethanolamine > N-arachidonoylethanolamine > N-oleoylethanolamine (PubMed:15655246, PubMed:17980170, PubMed:18793752, PubMed:22825852, PubMed:30301806). Also exhibits weak hydrolytic activity against the ceramides N-lauroylsphingosine and N-palmitoylsphingosine (PubMed:15655246)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q02083-3",
+          "title": "NAAA (Q02083-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q02083-3",
+          "text": "Protein: Isoform 3 of N-acylethanolamine-hydrolyzing acid amidase",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q02083-2",
+          "title": "NAAA (Q02083-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q02083-2",
+          "text": "Protein: Isoform 2 of N-acylethanolamine-hydrolyzing acid amidase",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000138744::function",
+          "title": "NAAA \u2014 NAAA",
+          "url": "https://platform.opentargets.org/target/ENSG00000138744",
+          "text": "Function: Degrades bioactive fatty acid amides to their corresponding acids, with the following preference: N-palmitoylethanolamine > N- myristoylethanolamine > N-lauroylethanolamine = N-stearoylethanolamine > N-arachidonoylethanolamine > N-oleoylethanolamine (PubMed:15655246, PubMed:17980170, PubMed:18793752, PubMed:22825852, PubMed:30301806). Also exhibits weak hydrolytic activity against the ceramides N- lauroylsphingosine and N-palmitoylsphingosine (PubMed:15655246).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000138744::EFO_0003035",
+          "title": "NAAA \u2194 cellulitis",
+          "url": "https://platform.opentargets.org/target/ENSG00000138744/associations",
+          "text": "Disease: cellulitis\nDescription: Inflammation of the dermis and subcutaneous tissues caused by a bacterial infection. Symptoms include erythema, edema, and pain to the affected area.\nAssociation score: 0.273",
+          "cos_sim_score": 0.2726858643799341,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000138744::EFO_0003030",
+          "title": "NAAA \u2194 abscess",
+          "url": "https://platform.opentargets.org/target/ENSG00000138744/associations",
+          "text": "Disease: abscess\nDescription: An inflammatory process characterized by the accumulation of pus within a newly formed tissue cavity which is the result of a bacterial, fungal, or parasitic infection or the presence of a foreign body.\nAssociation score: 0.273",
+          "cos_sim_score": 0.2726858643799341,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000138744::MONDO_0001858",
+          "title": "NAAA \u2194 Tietze syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000138744/associations",
+          "text": "Disease: Tietze syndrome\nDescription: Idiopathic painful nonsuppurative swellings of one or more costal cartilages, especially of the second rib. The anterior chest pain may mimic that of coronary artery disease.\nAssociation score: 0.269",
+          "cos_sim_score": 0.26871704594789364,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000138744::MONDO_0003689",
+          "title": "NAAA \u2194 familial hemolytic anemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000138744/associations",
+          "text": "Disease: familial hemolytic anemia\nDescription: A congenital hemolytic anemia caused by defects of the erythrocyte membrane, enzyme deficiencies, or hemoglobinopathies.\nAssociation score: 0.196",
+          "cos_sim_score": 0.1961206191350463,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::N-acylethanolamine acid amide hydrolase",
+          "title": "N-acylethanolamine acid amide hydrolase",
+          "url": "https://en.wikipedia.org/wiki/N-acylethanolamine_acid_amide_hydrolase",
+          "text": "External links\nN-acylethanolamine acid amidase (gene name: NAAA ((ASAHL)) - Human Protein Atlas",
+          "cos_sim_score": 0.7497096657752991,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::N-acylethanolamine acid amide hydrolase",
+          "title": "N-acylethanolamine acid amide hydrolase",
+          "url": "https://en.wikipedia.org/wiki/N-acylethanolamine_acid_amide_hydrolase",
+          "text": "See also\nReferences\nKazuhito Tsuboi, Naoko Takezaki & Natsuo Ueda (August 2007). \"The N-acylethanolamine-hydrolyzing acid amidase (NAAA)\". Chemistry & Biodiversity. 4 (8): 1914\u20131925. doi:10.1002/cbdv.200790159. PMID 17712833. S2CID 32163665.\nYong-Xin Sun, Kazuhito Tsuboi, Li-Ying Zhao, Yasuo Okamoto, Didier M. Lambert & Natsuo Ueda (October 2005). \"Involvement of N-acylethanolamine-hydrolyzing acid amidase in the degradation of anandamide and other N-acylethanolamines in macrophages\". Biochimica et Biophysica Acta (BBA) - Molecular and Cell Biology of Lipids. 1736 (3): 211\u2013220. CiteSeerX 10.1.1.321.2849. doi:10.1016/j.bbalip.2005.08.010. PMID 16154384.{{cite journal}}:  CS1 maint: multiple names: authors list (link)\nKazuhito Tsuboi, Yong-Xin Sun, Yasuo Okamoto, Nobukazu Araki, Takeharu Tonai & Natsuo Ueda (March 2005). \"Molecular characterization of N-acylethanolamine-hydrolyzing acid amidase, a novel member of the choloylglycine hydrolase family with structural and functional similarity to acid ceramidase\". The Journal of Biological Chemistry. 280 (12): 11082\u201311092. doi:10.1074/jbc.M413473200. PMID 15655246.{{cite journal}}:  CS1 maint: multiple names: authors list (link)\nMartin Kaczocha, Sherrye T. Glaser, Janiper Chae, Deborah A. Brown & Dale G. Deutsch (January 2010). \"Lipid droplets are novel sites of N-acylethanolamine inactivation by fatty acid amide hydrolase-2\". The Journal of Biological Chemistry. 285 (4): 2796\u20132806. doi:10.1074/jbc.M109.058461. PMC 2807334. PMID 19926788.{{cite journal}}:  CS1 maint: multiple names: authors list (link)\nValerio Chiurchiu, Luca Battistini & Mauro Maccarrone (January 2015). \"Endocannabinoid signaling in innate and adaptive immunity\". Immunology. 144 (3): 352\u2013364. doi:10.1111/imm.12441. PMC 4557672. PMID 25585882.\nYi Zhang, Gabriele E. Sonnenberg, Tesfaye Mersha Baye, Jack Littrell, Jennifer Gunnell, Ann DeLaForest, Erin MacKinney, Cecilia J. Hillard, Ahmed H. Kissebah, Michael Olivier & Russell A. Wilke (December 2009). \"Obesity-related dyslipidemia associated with FAAH, independent of insulin response, in multigenerational families of Northern European descent\". Pharmacogenomics. 10 (12): 1929\u20131939. doi:10.2217/pgs.09.122. PMC 3003434. PMID 19958092.{{cite journal}}:  CS1 maint: multiple names: authors list (link)\nDidier M. Lambert & Giulio G. Muccioli (November 2007). \"Endocannabinoids and related N-acylethanolamines in the control of appetite and energy metabolism: emergence of new molecular players\". Current Opinion in Clinical Nutrition and Metabolic Care. 10 (6): 735\u2013744. doi:10.1097/MCO.0b013e3282f00061. PMID 18089956. S2CID 17639044.",
+          "cos_sim_score": 0.7258145809173584,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::ASAHL",
+          "title": "ASAHL",
+          "url": "https://en.wikipedia.org/wiki/ASAHL",
+          "text": "N-acylethanolamine-hydrolyzing acid amidase is an enzyme that in humans is encoded by the NAAA gene.\n\nFunction\nThis gene encodes an N-acylethanolamine-hydrolyzing enzyme which is highly similar to acid ceramidase. Multiple transcript variants encoding different isoforms have been found for this gene.\n\nReferences\nExternal links\nHuman NAAA genome location and NAAA gene details page  in the UCSC Genome Browser.\n\n\n== Further reading ==",
+          "cos_sim_score": 0.6795967817306519,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::N-acylethanolamine acid amide hydrolase",
+          "title": "N-acylethanolamine acid amide hydrolase",
+          "url": "https://en.wikipedia.org/wiki/N-acylethanolamine_acid_amide_hydrolase",
+          "text": "N-acylethanolamine acid amide hydrolase (NAAA) EC 3.5.1.- is a member of the choloylglycine hydrolase family, a subset of the N-terminal nucleophile hydrolase superfamily. NAAA has a molecular weight of 31 kDa. The activation and inhibition of its catalytic site is of medical interest as a potential treatment for obesity and chronic pain. While it was discovered within the last decade, its structural similarity to the more familiar acid ceramidase (AC) and functional similarity to fatty acid amide hydrolase (FAAH) allow it to be studied extensively.\n\nMechanism\nThe overall enzyme mechanism involves cleavage into two chains, one of which contains the catalytic nucleophile, believed to be a cysteine residue. Unlike FAAH, which operates in basic conditions, this enzyme must operate under acidic conditions (pH ~4.5), and is completely inactivated at a pH of 8. Selective inhibitors of NAAA are ester and amide compounds, such as N-cyclohexanecarbonylpentadecylamine. NAAA is cleaved proteolytically at residue Cys-126. NAAA cleaves C-N non-peptide bonds in linear amides, particularly ethanolamides. Its mechanism is quite similar to that of AC, which is further supported by AC's ability to cleave N-acylethanolamines (NAEs), albeit at far lower rates and with different specificities. While mechanistic details are not very well known, catalytic activity of NAAA is thought to be activated by Cys-126 and Asp-145.\n\nStructure\nCurrently, there is little information about NAAA's tertiary structure, due to its low homology to any of the other enzymes in the choloylglycine hydrolase family for which there is significant 3-dimensional structural information. In humans, this enzyme contains 359 residues. NAAA's primary structure is nearly identical to that of acid ceramidase (AC), whose only difference is the substitution of Leu at the 334th residue, for phenylalanine. The enzyme must be N-glycosylated at six sites in order for the enzyme to operate at its maximum activity level, all of which have the peptide sequence, Asn-Xxx-Ser/Thr. Unlike AC, NAAA does not form a heterodimer through disulfide bonds, but rather remains active as two separate cleaved peptides following hydrolysis.\n\nBiological function\nFatty acid ethanolamines (FAEs) perform several physiological functions, most notably serving as messengers for pain and inflammation. NAAA's are found primarily in the lysosomal compartment of macrophages, in line with most inflammation-related proteins. The gene that codes for the protein is 4q21.1. There, they perform FAE hydrolysis, the final step in the signaling cascade for pain and inflammation, yielding an ethanolamine and a fatty acid. While it processes the cleavage of many different substrates, NAAA is most active with the substrate N-palmitoylethanolamine, suggesting that this is one of the key messengers of pain. NAAA activity in rats is highest in the lungs, while in humans it is highest in the liver, so there is cross-species variability in the enzyme's selective activity.\n\nDisease relevance\nRecent studies suggest that NAAA has significance in two widespread human conditions: chronic pain and obesity. Current research focuses on inhibiting the NAAA hydrolytic active site in order to control inflammation. It is still ambiguous as to whether reduced inflammation is correlated to reduced pain. ARN077, a \u03b2-lactone, has been one of the most intensely tested NAAA inhibitors, with the strongest promise of inhibition, as it blocks the catalytic cysteine via a thioester bond. The lack of homology between NAAA and FAAH makes NAAA-specific targeting drugs far more feasible. However, because the fatty acid concentration circulating throughout one's bloodstream is positively correlated with obesity, decreased NAAA activity is thought to be correlated with obesity.\n\nIndustrial relevance\nWhile no drugs targeting NAAA have entered the market yet, there is currently substantial research being done on the activation, and specific targeting and inhibition of NAAA. Activation of NAAA is spurred by the addition of phospholipids, and targeted inhibition by different buffers. Findings in these areas may be able to develop drugs to combat chronic pain and obesity.",
+          "cos_sim_score": 0.6489836573600769,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::N-Acylethanolamine",
+          "title": "N-Acylethanolamine",
+          "url": "https://en.wikipedia.org/wiki/N-Acylethanolamine",
+          "text": "N-Linoleoyl ethanolamide (MEA: C20H37NO2; 18:2, \u03c9-6) or Anandamide (18:2, n-6) is the ethanolamide of linoleic acid (LA: C18H32O2; 18:2, \u03c9-6) and its metabolized incorporated ethanolamine (MEA: C2H7NO), is the first natural inhibitor of fatty acid amide hydrolase (FAAH) discovered, also derives from hydroperoxides of NAE 20:4 (AEA) or its linoleoyl analogues by lipoxygenase action.\nN-Docosahexaenoyl ethanolamine (DHEA: C24H37NO2; 22:6, \u03c9-3), or Anandamide (22:6, n-3) \"synaptamide\", is the non-oxidative produced amide of the mainly fish oil derived, docosahexaenoic acid (DHA: C22H32O2; 22:6, \u03c9-3), that is the most abundant polyunsaturated fatty acid (PUFA) in the brain and the retina, and ethanolamine (MEA: C2H7NO). It can act at CB1 and CB2 receptors, and have anti-proliferative effects on prostate cancer cell lines and promotes synaptogenesis, neurogenesis and neuritogenesis, and as an endogenous metabolite of DHA, it promotes brain development and function.\nN-Docosatetraenoylethanolamine (DEA: C24H41NO2; 22:4,\u03c9-6) act on the CB1 receptor, and possible CB2.\nN-Eicosapentaenoylethanolamide (EPEA: C22H35NO2; 20:5, \u03c9-3) or Anandamide (20:5, n-3). It is the amide of eicosapentaenoic acid (EPA: C20H30O2; 20:5, n-3), that can act on CB1 and CB2 receptors in combination with PPAR-gamma to decrease LPS induced adipocyte IL-6 and MCP-1 levels.\nN-homo-gamma-linolenoylethanolamine, or Anandamide (20:3,n-6) (HGLEA: C22H39NO2; 20:3,\u03c9-6).\nThese bioactive lipid amides are generated by the membrane enzyme NAPE-PLD, and natural bile acids regulate this essential process. An in vivo active NAPE-PLD inhibitor called LEI-401 was found to be CNS-active and modulated NAE biosynthesis. It had similar effects as a cannabinoid CB1 receptor antagonist, which could be reversed by co-treatment with a FAAH inhibitor.\nAt least two pathways distinct from NAPE-PLD have been proposed as metabolic pathways for NAE 20:4 (AEA) formation. One pathway involves the double-O-deacylation of NAPEs by \u03b1,\u03b2-hydrolase (ABHD4) to form glycerophospho-N-acylethanolamines (GP-NAEs), followed by conversion of these intermediates to NAEs by glycerophosphodiesterase-1 (GDE1). Another pathway uses a phospholipase C (PLC) to produce phopho-N-arachidonoylethanolamine (pAEA) from NAPE, widely found in phospholipids, followed by conversion of pAEA into NAE 20:4 (AEA) by phosphatases such as PTPN22 and SHIP1.\nThe effects of NAE 20:4 (AEA) and another endocannabinoid 2-Arachidonoylglycerol (2-AG: C23H38O4; 20:4, \u03c9-6), with tissue levels of 2-AG usually several tens to several hundreds of times those of AEA, is found to be enhanced by \"entourage compounds\", NAEs that inhibit their hydrolysis via substrate competition, and thereby prolong their action. These compounds include N-palmitylethanolamide (PEA, NAE 16:0), N-oleoylethanolamide (SEA, NAE 18:0), and cis-9-octadecenoamide (OEA, oleamide, NAE 18:1).",
+          "cos_sim_score": 0.5454320311546326,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

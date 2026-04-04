@@ -1,0 +1,217 @@
+{
+  "probe_id": "11739379_a_at",
+  "gene_symbol": "FAM198B",
+  "rf_importance": 0.0139,
+  "selection_freq": 0.8,
+  "abs_fold_change": 1.6821461666666655,
+  "score": 0.4855,
+  "probe_count": 3,
+  "probe_ids": "11739379_a_at | 11757534_s_at | 11741223_s_at",
+  "max_score": 0.4855,
+  "mean_abs_fold_change": 1.7736,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T23:49:05",
+  "interpretation": "FAM198B, also known as Golgi-associated kinase 1B, is involved in cellular processes related to the Golgi apparatus, which plays a crucial role in protein processing and trafficking. While direct evidence linking FAM198B to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) is limited, it has been associated with bone remodeling diseases, suggesting a potential role in the pathophysiology of SONFH. The retrieved evidence indicates that FAM198B may be implicated in inflammatory processes and complications arising from steroid use, which are critical in the development of SONFH. However, the evidence is weak, and the connection remains largely speculative. Therefore, while FAM198B could be considered for further investigation as a potential biomarker for SONFH, its current clinical relevance as an early-detection biomarker is low.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "FAM198B may be involved in the inflammatory processes associated with Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "GASK1B (Q6UWH4). https://www.uniprot.org/uniprotkb/Q6UWH4",
+    "GASK1B (Q6UWH4-2). https://www.uniprot.org/uniprotkb/Q6UWH4-2",
+    "GASK1B (Q6UWH4-3). https://www.uniprot.org/uniprotkb/Q6UWH4-3",
+    "FAM198B \u2194 protozoa infectious disease. https://platform.opentargets.org/target/ENSG00000164125/associations",
+    "FAM198B \u2194 complication. https://platform.opentargets.org/target/ENSG00000164125/associations",
+    "FAM198B \u2194 Increased total eosinophil count. https://platform.opentargets.org/target/ENSG00000164125/associations",
+    "FAM198B \u2194 pericarditis. https://platform.opentargets.org/target/ENSG00000164125/associations",
+    "FAM198B \u2194 bone remodeling disease. https://platform.opentargets.org/target/ENSG00000164125/associations",
+    "GASK1B \u2014 golgi associated kinase 1B (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MMP1 \u2014 matrix metallopeptidase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "FAM198B-AS1 \u2014 FAM198B antisense RNA 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "GASK1B-AS1 \u2014 GASK1B antisense RNA 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+    "Identification of hub genes and therapeutic drugs in osteonecrosis of the femoral head through integrated bioinformatics analysis and literature mining (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC10366127/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8150,
+    "completion_tokens": 341,
+    "total_tokens": 8491,
+    "estimated_cost_usd": 0.001427
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q6UWH4",
+          "title": "GASK1B (Q6UWH4)",
+          "url": "https://www.uniprot.org/uniprotkb/Q6UWH4",
+          "text": "Protein: Golgi-associated kinase 1B",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q6UWH4-2",
+          "title": "GASK1B (Q6UWH4-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q6UWH4-2",
+          "text": "Protein: Isoform 2 of Golgi-associated kinase 1B",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q6UWH4-3",
+          "title": "GASK1B (Q6UWH4-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q6UWH4-3",
+          "text": "Protein: Isoform 3 of Golgi-associated kinase 1B",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000164125::MONDO_0002428",
+          "title": "FAM198B \u2194 protozoa infectious disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000164125/associations",
+          "text": "Disease: protozoa infectious disease\nDescription: An infection that is caused by protozoans.\nAssociation score: 0.221",
+          "cos_sim_score": 0.22122645880509365,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000164125::EFO_0009518",
+          "title": "FAM198B \u2194 complication",
+          "url": "https://platform.opentargets.org/target/ENSG00000164125/associations",
+          "text": "Disease: complication\nDescription: Any disease or disorder that occurs during the course of, or because of, another disease, treatment, or procedure. [ NCI ]\nAssociation score: 0.135",
+          "cos_sim_score": 0.1345109614115528,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000164125::HP_0001880",
+          "title": "FAM198B \u2194 Increased total eosinophil count",
+          "url": "https://platform.opentargets.org/target/ENSG00000164125/associations",
+          "text": "Disease: Increased total eosinophil count\nDescription: Increased count of eosinophils in the blood.\nAssociation score: 0.130",
+          "cos_sim_score": 0.13044331132484194,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000164125::EFO_0007427",
+          "title": "FAM198B \u2194 pericarditis",
+          "url": "https://platform.opentargets.org/target/ENSG00000164125/associations",
+          "text": "Disease: pericarditis\nDescription: An inflammatory process affecting the pericardium.\nAssociation score: 0.130",
+          "cos_sim_score": 0.13044331132484194,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000164125::MONDO_0000833",
+          "title": "FAM198B \u2194 bone remodeling disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000164125/associations",
+          "text": "Disease: bone remodeling disease\nDescription: A bone disease that results in formation or resorption abnormalities located in bone.\nAssociation score: 0.127",
+          "cos_sim_score": 0.12703019928677076,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "GASK1B \u2014 golgi associated kinase 1B",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: GASK1B\nGene name: golgi associated kinase 1B\nAliases / synonyms: AD021, AD036, C4orf18, ENED, FAM198B\nOrganism: Homo sapiens\nGene summary: Located in Golgi apparatus. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "GASK1B",
+          "aliases": "AD021, AD036, C4orf18, ENED, FAM198B",
+          "gene_description": "golgi associated kinase 1B"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MMP1 \u2014 matrix metallopeptidase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MMP1\nGene name: matrix metallopeptidase 1\nAliases / synonyms: CLG\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the peptidase M10 family of matrix metalloproteinases (MMPs). Proteins in this family are involved in the breakdown of extracellular matrix in normal physiological processes, such as embryonic development, reproduction, and tissue remodeling, as well as in disease processes, such as arthritis and metastasis. The encoded preproprotein is proteolytically processed to generate the mature protease. This secreted protease breaks down the interstitial collagens, including types I, II, and III. The gene is part of a cluster of MMP genes on chromosome 11. Mutations in this gene are associated with chronic obstructive pulmonary disease (COPD). Alternative splicing results in multiple transcript variants, at least one of which encodes an isoform that is proteolytically ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MMP1",
+          "aliases": "CLG",
+          "gene_description": "matrix metallopeptidase 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "FAM198B-AS1 \u2014 FAM198B antisense RNA 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: FAM198B-AS1\nGene name: FAM198B antisense RNA 1\nOrganism: Homo sapiens",
+          "source_type": "ncbi_gene",
+          "official_symbol": "FAM198B-AS1",
+          "aliases": "",
+          "gene_description": "FAM198B antisense RNA 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "GASK1B-AS1 \u2014 GASK1B antisense RNA 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: GASK1B-AS1\nGene name: GASK1B antisense RNA 1\nAliases / synonyms: FAM198B-AS1\nOrganism: Homo sapiens",
+          "source_type": "ncbi_gene",
+          "official_symbol": "GASK1B-AS1",
+          "aliases": "FAM198B-AS1",
+          "gene_description": "GASK1B antisense RNA 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "1. Introduction\nOsteonecrosis of the femoral head (ONFH) is a common disease mainly characterized by apoptosis of bone cells that leads to collapse of the femoral head and cartilage damage. Notably, the round surface of the head and acetabulum joint flattens and eventually leads to secondary osteoarthritis.[1] Studies have shown that the disease is mainly prevalent in patients with long-term use of hormonal drugs, long-term alcohol abuse, and hip trauma.[2] Steroid-induced ONFH (SONFH) is a common type of femoral head necrosis. SONFH patients are frequently misdiagnosed as hip synovitis or osteoarthritis owing to lack of obvious signs coupled with imaging abnormalities during early stages of disease development.[3] Although transcriptomic analyses have contributed to development of clinical treatment strategies for SONFH, the precise underlying mechanism of SONFH remains unclear.[4,5]\nBioinformatics analyses have significantly improved the search and identification of key genes regulating the occurrence of various diseases, thereby generating new insights to guide development of treatment strategies. SONFH has a complex pathophysiological mechanism. Genotyping of SONFH in adults revealed that gene coding protein polymorphism was associated with SONFH.[6] It has been hypothesized that progression of SONFH to the end stage in adult patients may be due to differential expression of protein-coding genes involved in thrombosis, angiogenesis inhibition, programmed cell death, lipid biosynthesis, and bone homeostasis. In the present study, we aimed to identify differentially expressed genes in peripheral blood of patients with early SONFH and further explored the pathogenesis of this disease using transcriptome data from the Gene Expression Omnibus database.\n2. Materials and Methods\n2.1. Data acquisition\nThe Gene Expression Omnibus database not only stores many gene chips and sequence data but also provides tools for users to query and download gene expression profiles. In the present study, we searched for relevant datasets using \u201csteroid-induced osteonecrosis of femoral head\u201d as the keyword, with focus on SONFH-related datasets. Consequently, we downloaded transcriptome data (GSE123568) belonging to 30 SONFH and 10 non-SONFH (following steroid administration) subjects.\n2.2. Sample correlation analysis\nOverall expression profiles of the transcriptome data were clustered using ClusterProfiler packages implemented in R software (version 4.0.2). Only dimension features containing the vast majority of variances were retained, with those containing zero variances discarded based on a principal component analysis (PCA) plot. Using weighted gene correlation network analysis (WGCNA) package in R language to perform WGCNA on data. WGCNA adds phenotypic weight parameters in the process of constructing gene co-expression network and optimizes classification using scale-free clustering and dynamic tree cut algorithm to achieve accurate and efficient data analysis.\n2.3. Functional annotation of DEGs\nFunctional annotation of key genes was performed using the ClusterProfiler package in R and followed by comprehensive functional correlation of candidate genes. Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analyses were performed to evaluate related functional categories. Significant differentially expressed genes (DEGs) were filtered, and bar charts and bubble charts were drawn according to their functions and pathways, respectively.\n2.4. Construction of protein\u2013protein interaction networks\nProtein\u2013protein interaction (PPI) networks of the DEGs were generated using the STRING online tool and Cytoscape software. Summarily, DEGs were entered into the STRING online tool to screen for interacting proteins with a combined score of\u2005>\u20050.9. The obtained PPI results were imported into Cytoscape software, then prominent modules in PPI were screened to construct the network through molecular complex detection. NetworkX package was then used to visualize the network in Python, with node sizes taken to be proportional to node degree.\n2.5. Quantitative real-time polymerase chain reaction",
+          "cos_sim_score": 0.5949594974517822,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10366127",
+          "title": "Identification of hub genes and therapeutic drugs in osteonecrosis of the femoral head through integrated bioinformatics analysis and literature mining",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10366127/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a multifactorial disease with an unknown etiology, characterized by loss of integrity of the subchondral bone1. It mainly affects men aged 30\u201350 years and involves more and more youngers1,2. Despite the identification of corticosteroid use, alcohol, sickle-cell disease, and trauma as the major risk factors for ONFH, its pathogenesis remains incompletely understood2,3. Surgery is the only effective way to treat ONFH at present4. In the USA, approximately 10% of hip replacements are due to ONFH, and in the UK, ONFH is the third most common indication for total hip replacements in people under 50, which causes a heavy socioeconomic burden1,4. Effective drug therapies have not been established5. Therefore, identifying novel biomarkers and therapeutic drugs involved in the ONFH is of great significance in exploring efficient treatment strategies.\nOver the past two decades, few researchers have focused on exploring the mechanism of ONFH at the gene level6. Abnormalities in some genes, such as plasminogen-activating inhibitor-1 and nitric oxide synthase 3, have been proven to weaken the osteogenic differentiation capacity of bone marrow mesenchymal stem cells or disrupt angiogenesis, leading to the collapse of the femoral head surface7,8. However, the specific molecular mechanism of ONFH has not yet been clarified, and drug discovery has had little success. Recently, gene chips and high-throughput sequencing technologies have been widely used in the screening of disease-causing genes and have achieved practical and reliable results9. A new drug prediction method, drug-gene-disease triangulation based on literature mining, has been confirmed to be robust and reliable for identifying new drug candidates10.\nIn this study, we analyzed two gene expression profiles (Table 1) extracted from the National Center for Biotechnology Information Gene Expression Omnibus (GEO) database, which is a free global database of sequencing results. DEGs were identified by using the online tool GEO2R. Subsequently, the function of DEGs was determined by the Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analysis. With the help of Cytoscape, ten hub genes were selected and then validated by ROC analysis. Finally, the targeted drugs for ONFH were identified through the Drug-Gene Interaction Database (DGIdb) and cross-validated by integrated literature mining. Our study figured out the drug-gene-disease correlation to generate new insights into the prevention and treatment of ONFH.Table 1Detailed information on the GEO microarray profiles.ProfileOrganismSample sourceTechnology typeCasesControlsPlatformGSE123568Homo sapiensPeripheral serumIn situ oligonucleotide3010GPL15207GSE74089Homo sapiensHip cartilageIn situ oligonucleotide44GPL13497\nTable 1\nDetailed information on the GEO microarray profiles.\nResults\nIdentification of DEGs in ONFH",
+          "cos_sim_score": 0.5666934251785278,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "Figure 3.\nqRT-PCR results showing significant upregulation of ITGAX and LILRB2 and significant downregulation of PPP3CB and MMP8 in SONFH patients., ITGAX = integrin subunit alpha X, LILRB2 = leukocyte immunoglobulin like receptor B2, MMP8 = matrix metallopeptidase 8, PPP3CB = protein phosphatase 3 catalytic subunit beta, qRT-PCR = quantitative real-time polymerase chain reaction, SONFH = steroid-induced osteonecrosis of the femoral head.\n4. Discussion\nMore than 30 years ago, researchers discovered a close relationship between use of glucocorticoids with the occurrence of femoral head necrosis.[7] Results from a retrospective analysis showed that hormone-related nontraumatic ONFH is dominant.[8] Investigating the genetic factors regulating SONFH characteristics is an important strategy, and scholars have employed bioinformatics to explore sequence data. However, these studies also present some defects, such as inability to accurately interpret high-throughput sequence data to ensure that a certain deviation exists between PCR verification data and the data significance.[9,10] In the present study, we explored the signaling pathways regulating development of early SONFH and predicted diagnostic biomarkers in peripheral blood from this group of patients.\nOur results revealed that hundreds of coding genes, including tumor necrosis factor-\u03b1 (TNF-\u03b1), phosphoinositide 3-kinase Akt (PI3K-Akt), hypoxia-inducible factor-1 (HIF-1), adherens junction, and mitogen-activated protein kinase signaling pathways, were significantly upregulated in peripheral blood of patients with early SONFH. Notably, these DEGs participate in regulation of redox, inflammatory response, angiogenesis, and cell metabolism by secreting inflammatory chemokine signaling proteins. We constructed a PPI network of these DEGs and found that PRDX2, HP, MMP8, FPR2, and ITGAX may be associated with the SONFH process. Among them, FPR2 is a low-affinity receptor of N-formyl methionine peptides and a powerful neutrophil chemokine.[11] Family with sequence similarity 19 member A5 is a neural factor or brain-specific chemokine that was shown to remarkably downregulate expression of osteoclast-related genes, such as receptor activator of nuclear factor kappa and TNF receptor-associated factor 6, and mediate upregulation of osteoclast-producing negative regulators, such as musculoaponeurotic fibrosarcoma oncogene homolog B and interferon regulatory factor-8.[12,13] Interestingly, FPR2 antagonist WRW4 or FPR2 deficiency were shown to markedly reverse inhibition of Family with sequence similarity 19 member A5-inducedosteoclastogenesis, indicating that FPR2 plays an important role in regulation of osteoclastogenesis as well as occurrence and development of SONFH disease.[9,14]\nIntegrin alpha-X/beta-2, which is encoded by ITGAX, is a receptor that recognizes the G protein-coupled receptor sequence in fibrinogen, thereby mediating cell\u2013cell interactions during inflammatory responses. Functionally, it plays an important role in monocyte adhesion and chemotaxis.[15,16] In the present study, we found that PRDX2 was a thiol-specific peroxidase in downregulated genes in SONFH relative to non-SONFH group. Functionally, this gene catalyzes reduction of hydrogen peroxide and organic peroxide to produce water and alcohol, thereby causing inactivation of toxic substances.[17] Studies have shown that PRDX2, a hydrogen peroxide-mediated signal transduction sensor that prevents oxidative stress, not only plays a role in cell protection but may also be participating in signal cascade reaction of growth factor and TNF-\u03b1 by regulating the intracellular concentration of hydrogen peroxide.[18,19]\nHP-related diseases, which include haptoglobinemia and Plasmodium falciparum malaria,[20] are regulated by the innate immune system and vesicle-mediated transport. HP accumulates in the kidney and is secreted in the urine due to hemolysis. Moreover, HP reportedly captures and binds to free plasma HP, thereby preventing kidney damage. HP also acts as an antioxidant, presents antibacterial activity, and plays a role in many acute phase regulations.[21] Therefore, the observed downregulation of PRDX2 and HP may suggest that both genes promote development of SONFH disease through the redox pathway.",
+          "cos_sim_score": 0.5071988105773926,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10366127",
+          "title": "Identification of hub genes and therapeutic drugs in osteonecrosis of the femoral head through integrated bioinformatics analysis and literature mining",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10366127/",
+          "text": "In addition to the pharmaceuticals identified in this study, those mentioned in the most recent expert consensus also warrant consideration, including bisphosphonates, anticoagulants, vasodilators, and lipid lowering agents4. Briefly, bisphosphonates and anticoagulants are considered to be helpful for early ONFH, and clinicians can consider using them as appropriate. The evidence to support the use of statins or vasodilators in the treatment of ONFH is very low and their use cannot be recommended4,72\u201374.\nBisphosphonates not only cause osteoclast apoptosis but also prevent osteocyte and osteoblast apoptosis75\u201377. We found that three hub genes (PTGS2, MCL-1, and RUNX2) may play a mediating role. Risedronate was reported to enhance bone formation via the up-regulation of COX-2 expression78. Zoledronic acid induces apoptosis in osteoclast precursors and mature osteoclast-like cells by triggering Mcl-1 down-regulation79. RANKL increases the level of Mcl-1 in osteoclasts and significantly attenuates the ability of both clodronate and alendronate to induce osteoclast apoptosis80. Various bisphosphonates have been shown to promote osteogenic differentiation by up-regulating the expression of RUNX281\u201384. The use of bisphosphonates for treating ONFH is highly anticipated. Nevertheless, the clinical efficacy of bisphosphonates remains a topic of debate. While numerous reports indicate that bisphosphonates alleviate pain, enhance ambulation, and delay joint collapse in patients with ONFH73,85\u201393, there is also a substantial amount of negative evidence, particularly from high-quality meta-analyses of randomized control trials94\u201398. Serious side effects of bisphosphonates, such as atypical femoral fractures99,100 and osteonecrosis of the jaw100\u2013103, are also of great concern. We recommend that caution be taken with the use of bisphosphonates to treat ONFH, as mentioned in guidelines, more high-quality random clinical trials are needed to prove its efficacy3,4.\nThe main mechanism of anticoagulant treatment for ONFH is the alleviation of hypercoagulability104. Hypercoagulability has been demonstrated to not only induce primary ONFH3,104,105, but also ONFH that is secondary to certain diseases, such as thrombophilia106,107 and antiphospholipid syndrome23,108. Anticoagulants have been proven to have significant protective effects on ONFH caused by different causes105,109\u2013114. The results of literature mining suggest that anticoagulants may also possess other potential mechanisms for protecting against ONFH. Specifically, anticoagulant treatment has been found to have pro-osteogenic and pro-angiogenic effects, with the hub gene RUNX2 potentially playing a role in mediating this process115,116. These findings are conducive to further reveal the molecular mechanism of anticoagulant treatment of ONFH.\nWe do have some weak findings. CD68 is a macrophages-specific immunomarker that regulates osteoclast activity and is engaged in macrophage response and antigen presentation but does not participate in inflammation117. CD68 was previously found to be significantly elevated in synovial tissue near the necrotic femoral head118,119. For the first time, we discovered that CD68 is down-regulated in cartilage and peripheral blood.\u00a0This unusual finding deserves more attention in future studies. LRRK2 is a functional protein kinase and guanosine diphosphatase/guanosine triphosphate-binding protein that is widely expressed in multiple tissues. Our analysis shows that LRRK2 ranks second among 10 hub genes and participates in almost all functional enrichment terms. However, a previous study demonstrated that the specific inhibition of LRRK2 does not result in changes in bone mass120. The precise role of LRRK2 in ONFH warrants additional investigation. TIMP2 is a kind of endogenous tissue inhibitor of matrix metalloproteases (MMPs). Although TIMP2 expression is associated with MMPs in bone remodeling, its effect on bone metabolism appears to be non-essential121. More studies are required to elucidate the mechanism.",
+          "cos_sim_score": 0.43990975618362427,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10366127",
+          "title": "Identification of hub genes and therapeutic drugs in osteonecrosis of the femoral head through integrated bioinformatics analysis and literature mining",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10366127/",
+          "text": "The third hub gene, ANXA5, is a kind of calcium-binding protein associated with osteoblasts differentiation and bone formation19,20. Genetos et al.20 reported a significant reduction in proliferation in pre-osteoblasts with ANXA5-knockdown, providing evidence that ANXA5 impact bone formation by regulating osteoprogenitor proliferation, differentiation, and cytokine responsiveness. On the other hand, ANXA5 functions as an anticoagulant protein that indirectly inhibits the thromboplastin-specific complex and plays a role in the blood coagulation cascade. Interestingly, we found that ANAX5 was significantly down-regulated in ONFH patients, and hydroxychloroquine, a potential therapeutic drug for ONFH, was strongly associated with ANXA5. Previous studies have elucidated that hydroxychloroquine could inhibit thrombosis by protecting the ANXA5 anticoagulant shield from disruption by antiphospholipid antibodies (aPLs)21,22. Our investigation revealed a close association between aPLs and the incidence of ONFH23\u201327, and a large amount of clinical evidence supports the protective effect of hydroxychloroquine against ONFH27\u201331. Long et al.27conducted an 11-year cohort study comprising 1158 patients to identify possible risk factors in Chinese systemic lupus erythematosus (SLE) patients. They found that the presence of aPLs was a risk factor for multiple joint necrosis (OR\u2009=\u20096.28, 95% CI 1.573\u201325.120; p\u2009=\u20090.009), and the administration of hydroxychloroquine was a protective factor for ONFH (OR\u2009=\u20090.547, 95% CI 0.320\u20130.937; p\u2009=\u20090.028). Hamza et al.28 conducted a cross-sectional case\u2013control study to assess the risk factors for advanced ONFH. They found that a higher proportion of patients without symptomatic ONFH received hydroxychloroquine than patients with symptomatic ONFH (83.3% vs. 60%, p\u2009=\u20090.045). The authors concluded that the use of hydroxychloroquine had a protective effect on the development of ONFH, which was consistent with many other reports29\u201331. Although the hydroxychloroquine was initially discovered through the interaction with PTGS2 in this study, the subsequent literature mining results suggest a plausible drug-gene-disease correlation between ANXA5, hydroxychloroquine, and ONFH, which could help repurpose hydroxychloroquine.\nIGF1R is a typical osteogenesis-related protein and plays a fundamental role in bone formation and angiogenesis. Several studies utilizing mouse or rabbit models have demonstrated that elevated local and/or systemic concentrations of IGF-1 confer advantageous outcomes in steroid-induced ONFH32\u201337. Xie et al.38 have reported that IGF-I and IGF-IR stimulate cell proliferation and impede cell apoptosis, which significantly suppress the development of ONFH. In this research, IGF1R is ranked fourth among all hub genes and is found to be primarily involved in signal transduction, negative regulation of apoptotic process, and protein binding function enrichment. Among the nine drugs found to interact with IGF1R, raloxifene has been verified to have a positive effect on the up-regulation of IGF1R expression and bone maintenance39. Mecasermin and mecasermin rinfabate have also been proven effective as IGF1R ligands in bone growth and maintenance40\u201342. We suppose that IGF1R is expected to be a valuable therapeutic target for ONFH.",
+          "cos_sim_score": 0.39335983991622925,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

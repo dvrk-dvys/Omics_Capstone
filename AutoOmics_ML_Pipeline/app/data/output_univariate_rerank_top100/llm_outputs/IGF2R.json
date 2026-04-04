@@ -1,0 +1,262 @@
+{
+  "probe_id": "11716129_at",
+  "gene_symbol": "IGF2R",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.1129477828294585,
+  "abs_fold_change": 1.2976,
+  "score": 1.2956,
+  "probe_count": 2,
+  "probe_ids": "11716129_at | 11716128_at",
+  "max_score": 1.2956,
+  "mean_abs_fold_change": 1.2362,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T23:22:07",
+  "interpretation": "The IGF2R gene encodes the insulin-like growth factor 2 receptor, which plays a crucial role in the transport of lysosomal enzymes and the regulation of various cellular processes, including apoptosis and inflammation. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the receptor's involvement in cellular signaling pathways may influence bone metabolism and the response to glucocorticoids, which are known to contribute to osteonecrosis through mechanisms such as increased apoptosis of osteoblasts and osteocytes. However, the evidence linking IGF2R directly to SONFH is limited, primarily suggesting its role in related inflammatory and metabolic pathways rather than a direct association with the disease. Therefore, while IGF2R may have potential as a biomarker due to its biological functions, the current evidence does not strongly support its use as a specific early-detection biomarker for SONFH.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "IGF2R may influence pathways related to bone metabolism and inflammation, which are relevant to the pathogenesis of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "IGF2R (P11717). https://www.uniprot.org/uniprotkb/P11717",
+    "IGF2R \u2014 IGF2R. https://platform.opentargets.org/target/ENSG00000197081",
+    "IGF2R \u2194 coronary artery disease. https://platform.opentargets.org/target/ENSG00000197081/associations",
+    "IGF2R \u2194 hepatocellular carcinoma. https://platform.opentargets.org/target/ENSG00000197081/associations",
+    "IGF2R \u2194 Hypercholesterolemia. https://platform.opentargets.org/target/ENSG00000197081/associations",
+    "IGF2R \u2194 heart disease. https://platform.opentargets.org/target/ENSG00000197081/associations",
+    "IGF2R \u2014 insulin like growth factor 2 receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TP53 \u2014 tumor protein p53 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KRAS \u2014 KRAS proto-oncogene, GTPase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "AKT1 \u2014 AKT serine/threonine kinase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Immunomodulatory Mechanisms of Rehmanniae Radix Praeparata\u2013Achyranthes Root\u2013Chinese Angelica Root Combination in Nontraumatic Osteonecrosis of the Femoral Head: A Comprehensive Network Pharmacology and Molecular Docking Study Focusing on Immunological Pathways (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12767418/",
+    "Analysis of PANoptosis-related ceRNA network reveals lncRNA MIR17HG involved in osteogenic differentiation inhibition impaired by tumor necrosis factor-\u03b1 (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11327206/",
+    "Role of IGF2R in beta cells [GSE252585] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE252585",
+    "Comparison of de novo refilled to original lung interstitial macrophages by bulk RNA-sequencing [GSE194020] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE194020",
+    "Nitidine chloride inhibits mTORC1 signaling through ATF4-mediated Sestrin2 induction and targets IGF2R for autophagic degradation [GSE263534] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE263534",
+    "Spontaneous and ART-induced large offspring syndrome: similarities and differences in DNA methylome [GSE199084] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE199084",
+    "Allele-specific aberration of imprinted domain chromosome architecture associates with large offspring syndrome [GSE197130] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE197130"
+  ],
+  "token_usage": {
+    "prompt_tokens": 10175,
+    "completion_tokens": 333,
+    "total_tokens": 10508,
+    "estimated_cost_usd": 0.001726
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P11717",
+          "title": "IGF2R (P11717)",
+          "url": "https://www.uniprot.org/uniprotkb/P11717",
+          "text": "Protein: Cation-independent mannose-6-phosphate receptor\nFunction: Mediates the transport of phosphorylated lysosomal enzymes from the Golgi complex and the cell surface to lysosomes (PubMed:18817523, PubMed:2963003). Lysosomal enzymes bearing phosphomannosyl residues bind specifically to mannose-6-phosphate receptors in the Golgi apparatus and the resulting receptor-ligand complex is transported to an acidic prelysosomal compartment where the low pH mediates the dissociation of the complex (PubMed:18817523, PubMed:2963003). The receptor is then recycled back to the Golgi for another round of trafficking through its binding to the retromer (PubMed:18817523). This receptor also binds IGF2 (PubMed:18046459). Acts as a positive regulator of T-cell coactivation by binding DPP4 (PubMed:10900005)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000197081::function",
+          "title": "IGF2R \u2014 IGF2R",
+          "url": "https://platform.opentargets.org/target/ENSG00000197081",
+          "text": "Function: Mediates the transport of phosphorylated lysosomal enzymes from the Golgi complex and the cell surface to lysosomes (PubMed:18817523, PubMed:2963003). Lysosomal enzymes bearing phosphomannosyl residues bind specifically to mannose-6-phosphate receptors in the Golgi apparatus and the resulting receptor-ligand complex is transported to an acidic prelysosomal compartment where the low pH mediates the dissociation of the complex (PubMed:18817523, PubMed:2963003). The receptor is then recycled back to the Golgi for another round of trafficking through its binding to the retromer (PubMed:18817523). This receptor also binds IGF2 (PubMed:18046459). Acts as a positive regulator of T-cell coactivation by binding DPP4 (PubMed:10900005).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197081::EFO_0001645",
+          "title": "IGF2R \u2194 coronary artery disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000197081/associations",
+          "text": "Disease: coronary artery disease\nDescription: Thickening and loss of elasticity of the CORONARY ARTERIES, leading to progressive arterial insufficiency (CORONARY DISEASE).\nAssociation score: 0.511",
+          "cos_sim_score": 0.511249370339317,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197081::EFO_0000182",
+          "title": "IGF2R \u2194 hepatocellular carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000197081/associations",
+          "text": "Disease: hepatocellular carcinoma\nDescription: A malignant tumor that arises from hepatocytes. Hepatocellular carcinoma is relatively rare in the United States but very common in all African countries south of the Sahara and in Southeast Asia. Most cases are seen in patients over the age of 50 years, but this tumor can also occur in younger individuals and even in children. Hepatocellular carcinoma is more common in males than females and is associated with hepatitis B, hepatitis C, chronic alcohol abuse and cirrhosis. Serum elevation of alpha-fetoprotein occurs in a large percentage of patients with hepatocellular carcinoma. Grossly, hepatocellular carcinoma may present as a single mass, as multiple nodules, or as diffuse liver involvement. Microscopically, there is a wide range of differentiation from tumor to tumor (well differentiated to poorly differentiated tumors). Hepatocellular carcinomas quickly metastasize to regional lymph nodes and lung. The overall median survival of untreated liver cell carcinoma is about 4 months. The most effective treatment of hepatocellular carcinoma is complete resection of the tumor. Lately, an increasing number of tumors have been treated with liver transplantation.\nAssociation score: 0.498",
+          "cos_sim_score": 0.4976242296901386,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197081::HP_0003124",
+          "title": "IGF2R \u2194 Hypercholesterolemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000197081/associations",
+          "text": "Disease: Hypercholesterolemia\nDescription: An increased concentration of cholesterol in the blood.\nAssociation score: 0.448",
+          "cos_sim_score": 0.44791963066009366,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197081::EFO_0003777",
+          "title": "IGF2R \u2194 heart disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000197081/associations",
+          "text": "Disease: heart disease\nDescription: Pathological conditions involving the HEART including its structural and functional abnormalities.\nAssociation score: 0.395",
+          "cos_sim_score": 0.3952455779094724,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "IGF2R \u2014 insulin like growth factor 2 receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: IGF2R\nGene name: insulin like growth factor 2 receptor\nAliases / synonyms: CD222, CI-M6PR, CIMPR, M6P-R, M6P/IGF2R, MPR 300, MPR1, MPR300, MPRI\nOrganism: Homo sapiens\nGene summary: This gene encodes a receptor for both insulin-like growth factor 2 and mannose 6-phosphate. The binding sites for each ligand are located on different segments of the protein. This receptor has various functions, including in the intracellular trafficking of lysosomal enzymes, the activation of transforming growth factor beta, and the degradation of insulin-like growth factor 2. Mutation or loss of heterozygosity of this gene has been association with risk of hepatocellular carcinoma. The orthologous mouse gene is imprinted and shows exclusive expression from the maternal allele; however, imprinting of the human gene may be polymorphic, as only a minority of individuals showed biased expression from the maternal allele (PMID:8267611). [provided by RefSeq, Nov 2015]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "IGF2R",
+          "aliases": "CD222, CI-M6PR, CIMPR, M6P-R, M6P/IGF2R, MPR 300, MPR1, MPR300, MPRI",
+          "gene_description": "insulin like growth factor 2 receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TP53 \u2014 tumor protein p53",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TP53\nGene name: tumor protein p53\nAliases / synonyms: BCC7, BMFS5, LFS1, P53, TRP53\nOrganism: Homo sapiens\nGene summary: This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TP53",
+          "aliases": "BCC7, BMFS5, LFS1, P53, TRP53",
+          "gene_description": "tumor protein p53"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KRAS \u2014 KRAS proto-oncogene, GTPase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KRAS\nGene name: KRAS proto-oncogene, GTPase\nAliases / synonyms: 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2\nOrganism: Homo sapiens\nGene summary: This gene, a Kirsten ras oncogene homolog from the mammalian ras gene family, encodes a protein that is a member of the small GTPase superfamily. A single amino acid substitution is responsible for an activating mutation. The transforming protein that results is implicated in various malignancies, including lung adenocarcinoma, mucinous adenoma, ductal carcinoma of the pancreas and colorectal carcinoma. Alternative splicing leads to variants encoding two isoforms that differ in the C-terminal region. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KRAS",
+          "aliases": "'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2",
+          "gene_description": "KRAS proto-oncogene, GTPase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "AKT1 \u2014 AKT serine/threonine kinase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AKT1\nGene name: AKT serine/threonine kinase 1\nAliases / synonyms: AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA\nOrganism: Homo sapiens\nGene summary: This gene encodes one of the three members of the human AKT serine-threonine protein kinase family which are often referred to as protein kinase B alpha, beta, and gamma. These highly similar AKT proteins all have an N-terminal pleckstrin homology domain, a serine/threonine-specific kinase domain and a C-terminal regulatory domain. These proteins are phosphorylated by phosphoinositide 3-kinase (PI3K). AKT/PI3K forms a key component of many signalling pathways that involve the binding of membrane-bound ligands such as receptor tyrosine kinases, G-protein coupled receptors, and integrin-linked kinase. These AKT proteins therefore regulate a wide variety of cellular functions including cell proliferation, survival, metabolism, and angiogenesis in both normal and malignant cells. AKT proteins ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AKT1",
+          "aliases": "AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA",
+          "gene_description": "AKT serine/threonine kinase 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::12767418",
+          "title": "Immunomodulatory Mechanisms of Rehmanniae Radix Praeparata\u2013Achyranthes Root\u2013Chinese Angelica Root Combination in Nontraumatic Osteonecrosis of the Femoral Head: A Comprehensive Network Pharmacology and Molecular Docking Study Focusing on Immunological Pathways",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12767418/",
+          "text": "1. Introduction\nOsteonecrosis of the femoral head (ONFH) is a common, progressive and highly disabling refractory disease in the field of orthopaedics. It primarily results from hypoxia and ischaemia within the femoral head, leading to cartilage destruction, local collapse and ultimately progressing to joint space narrowing and restricted joint mobility, resulting in hip dysfunction [1, 2]. Epidemiological data indicate that approximately 200,000\u2013300,000 new cases are diagnosed globally each year, with a rising trend observed annually [3]. In terms of geographical distribution, regions in Asia, such as China, Japan and South Korea, exhibit relatively higher incidence rates, particularly among patients undergoing long\u2010term steroid therapy [4\u20136]. In Europe and the Americas, due to the widespread consumption of alcohol and the use of steroids, the incidence is also relatively high [7]. From a demographic perspective, male patients significantly outnumber females, with a male\u2010to\u2010female ratio of approximately 3:1. In terms of age distribution, the disease predominantly affects individuals aged between 30 and 50 years [8, 9]; however, the specific age of onset may vary depending on the aetiology. Notably, nontraumatic ONFH (NONFH) accounts for over 70% of all ONFH cases [10]. NONFH is primarily associated with a series of risk factors, including long\u2010term use of steroids, hormonal medications, autoimmune diseases and excessive alcohol consumption [3, 11]. Due to the complexity of the aetiological mechanisms underlying NONFH, there are currently no effective approved drugs available for the treatment of ONFH. Surgical interventions, including hip replacement, remain the mainstream approach in modern medicine. However, the efficacy of surgical treatments varies and is heavily dependent on the surgeon\u2019s experience, while also posing risks such as economic burden, revision surgery and various complications [2, 12, 13].\nEmerging evidence highlights the crucial role of immune inflammation in the pathogenesis of NONFH [14, 15]. Exposure to steroids and alcohol can trigger neutrophil activation and the release of pro\u2010inflammatory mediators, which can cause vascular endothelial injury, intraosseous coagulation and eventually osteonecrosis [16, 17]. Recent research particularly underscores the role of neutrophil extracellular traps (NETs) in contributing to vascular dysfunction in ONFH [18, 19].\nIn recent years, traditional Chinese medicine (TCM) has been widely used as an alternative therapy for ONFH due to its proven efficacy and safety [20\u201323]. Mechanistic studies have shown that TCM can alleviate the progression of ONFH by regulating bone metabolism, oxidative stress and lipid metabolism [23\u201325]. However, current research in this area primarily focuses on the herbal components or formulae with proven efficacy, lacking in\u2010depth exploration of formulation principles and mechanisms of action [26]. In addition, due to the high variability and complexity of clinical TCM practice, there is a need to continuously optimise drug treatment regimens and systematically investigate the formulation principles and mechanisms of action of TCM formulae.\nData mining techniques can analyse large clinical prescription datasets using algorithms to identify core drugs and uncover, hidden valuable information [27, 28]. Ultrahigh performance liquid chromatography\u2010quadrupole time\u2010of\u2010flight mass spectrometry (UHPLC\u2010Q\u2010TOF\u2010MSE) is a high\u2010resolution, highly sensitive analytical tool with structural characterisation capabilities, enabling comprehensive identification of components in drug combinations obtained through data mining, which helps elucidate their pharmacological basis [29]. Network pharmacology employs systems biology, bioinformatics and network science methods to construct visual \u2018drug\u2010target\u2010disease\u2019 networks, revealing the complex mechanisms of TCM in treating diseases [30, 31]. However, traditional network pharmacology has low result accuracy, and integrating UHPLC\u2010Q\u2010TOF\u2010MSE identified components as candidates with network pharmacology and bioinformatics methods can effectively reduce false positive rates. Molecular docking (MD) uses computational simulations based on the lock\u2010and\u2010key principle between drug molecules and proteins to analyse their interactions. In contrast, molecular dynamics simulations (MDS) can provide further insight into these interactions at the molecular level [32, 33].",
+          "cos_sim_score": 0.6420074701309204,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12767418",
+          "title": "Immunomodulatory Mechanisms of Rehmanniae Radix Praeparata\u2013Achyranthes Root\u2013Chinese Angelica Root Combination in Nontraumatic Osteonecrosis of the Femoral Head: A Comprehensive Network Pharmacology and Molecular Docking Study Focusing on Immunological Pathways",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12767418/",
+          "text": "and cancer [82\u201384]. Most researchers agree that the pathogenesis of glucocorticoid\u2010induced bone disease involves increased apoptosis of osteoblasts and osteocytes, as well as prolonged osteoclast lifespan. Excessive glucocorticoid use not only increases ROS levels but also alters the sensitivity of vascular cells to vasoactive substances, leading to endothelial cell apoptosis [85]. In a study by Hikiji and colleagues, it was found that PTAFR is highly expressed in osteoclasts and is activated through autocrine and paracrine mechanisms, thereby enhancing their responsiveness to inflammatory cytokines such as TNF\u2010\u03b1 and IL\u20101\u03b2. This activation prolongs the lifespan of osteoclasts and increases their calcium resorption activity, thereby accelerating bone loss. Oestrogen deficiency further upregulates inflammatory cytokines, amplifying PTAFR\u2010mediated signalling and exacerbating bone resorption. In contrast, PTAFR deficiency or the use of PTAFR antagonists significantly reduces bone loss in ovariectomised mice, suggesting that PTAFR acts as a bridge connecting inflammation and bone metabolic disorders [86]. ACP1 encodes a low molecular weight protein tyrosine phosphatase that regulates protein tyrosine phosphorylation states and participates in bone cell signalling. It plays a significant role in maintaining bone and lipid metabolic homeostasis [87, 88]. Research has shown that certain polymorphisms in the ACP1 gene are associated with an increased risk of bone necrosis in children undergoing treatment for acute lymphoblastic leukaemia, indicating a potential role for ACP1 in the pathogenesis of bone necrosis [89, 90]. ACP1 exerts its effects through its phosphatase activity, regulating multiple signalling pathways that influence bone cell function and bone tissue stability. Genetic variations in ACP1 may serve as potential biomarkers for predicting the risk of hormone\u2010related bone necrosis [91\u201393]. CXCR2 is a G protein\u2010coupled receptor that primarily mediates neutrophil chemotaxis and inflammatory responses. Recent studies have highlighted its important roles in bone metabolism and tissue necrosis [94\u201396]. In bone metabolism, CXCR2 promotes endothelial cell migration and angiogenesis by activating the Src\u2010MAP4K4\u2010p38 MAPK signalling pathway, thereby supporting osteoblast function and bone tissue remodelling [97]. In addition, it collaborates with CXCR4 to regulate the mobilisation of neutrophils from the bone marrow to peripheral tissues, maintaining the stability of",
+          "cos_sim_score": 0.46592995524406433,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12767418",
+          "title": "Immunomodulatory Mechanisms of Rehmanniae Radix Praeparata\u2013Achyranthes Root\u2013Chinese Angelica Root Combination in Nontraumatic Osteonecrosis of the Femoral Head: A Comprehensive Network Pharmacology and Molecular Docking Study Focusing on Immunological Pathways",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12767418/",
+          "text": "4. Discussion\nNONFH is a chronic, destructive disease closely related to alcoholism, glucocorticoid medication and other factors, which involves progressive osteonecrosis and may lead to collapse of the femoral head and loss of hip function, which seriously affects patients\u2019 quality of life [46, 47]. Although the pathophysiological mechanism of NONFH has not been elucidated yet, most scholars believe that the disease is closely related to abnormal lipid metabolism, vascular injury, inflammation, altered bone cell physiology, insufficient blood supply and oxidative stress [11, 48, 49]. TCM has a long history of treating bone diseases, and studies have shown that the use of TCM in treating patients with NONFH can effectively alleviate their pain and other symptoms, and at the same time improve their quality of life, with safe and effective results [50, 51]. The use of TCM in treating patients with NONFH has also been shown to be effective in improving the quality of life of patients with NONFH.\nIn this study, the literature on TCM treatment of NONFH was collected from the databases of CNKI, Wanfang and PubMed using TCMISS V2.5 software. Through this process, it was found that \u2018SND\u2019 was the drug pairing with the highest confidence level. Achyranthes bidentata Blume, a plant of the Amaranthaceae family, is a commonly used CHM for TCM. Current studies have shown that more than 270 active compounds have been identified in A. bidentata Blume, which can be classified as flavonoids, saponins, ecdysteroids, ketosteroids and so on, and have a wide range of pharmacological effects, such as inhibition of apoptosis of chondrocytes, modulation of bone and mineral metabolism, and other effects [51\u201353]. In the study of Yan et al. [54], it was found that AB50. A fructooligosaccharide from A. bidentata Blume could regulate bone metabolism\u2010related indexes, such as up\u2010regulating PINP and OCN, and down\u2010regulating TRAP and CTX; and increase the bone mineral density (BMD) of the femur in OVX rats, and so on, playing a role in stimulating bone formation [54]. In a study by Jiang et al. [52], A. bidentata extract increased BMD and promoted angiogenesis in steroid\u2010induced ONFH rats by improving the microarchitecture of cancellous bone; in addition, it inhibited osteoclast differentiation and activated bone formation markers, which acted as an osteoprotective agent in NONFH [52, 54]. Previous studies have demonstrated the importance of osteocyte physiology in the pathogenesis of NONFH, with osteoblasts, osteoclast apoptosis and abnormal osteoclast activity being among the leading causes of NONFH [48]. In our study, radix rehmanniae preparata was found to be a commonly used TCM, but no separate study of it on NONFH was found at this time. Radix rehmanniae preparata is a concocted and processed product of Rehmannia glutinosa Libosch (Rehmannia glutinosa Libosch), a plant of the Genusaceae family, which is a commonly used tonic herb in TCM. More than 100 active compounds have been identified, which can be classified as glycosides, polysaccharides, flavonoids, steroids and so on. They have a wide range of pharmacological effects, such as analgesic, sedative, anti\u2010inflammatory, antioxidant, anti\u2010tumour and immunomodulatory and are commonly used in the treatment of bone metabolism disorders, such as osteoporosis, osteoarthritis, and so forth [54\u201356]. Thus, we found that Radix Rehmanniae Preparata was able to promote bone formation by inhibiting the biosynthesis of steroid hormones and by regulating the expression levels of RUNX2 and OPN proteins through the perspective of the physiological role of osteoblasts [57].",
+          "cos_sim_score": 0.4133712947368622,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11327206",
+          "title": "Analysis of PANoptosis-related ceRNA network reveals lncRNA MIR17HG involved in osteogenic differentiation inhibition impaired by tumor necrosis factor-\u03b1",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11327206/",
+          "text": "Introduction\nInflammatory cytokines play pivotal roles in the pathogenesis of bone infections. Tumor Necrosis Factor-alpha (TNF-\u03b1) is a key pro-inflammatory cytokine and a catabolic factor in the inflammatory response to disease [1, 2]. Persistent inflammation significantly affects bone regeneration as TNF-\u03b1 binds to different receptors and initiates signal transduction pathways [3, 4], leading to various cellular responses including cell survival, differentiation, and proliferation. Once the signal transduction pathways are elucidated, strategies can be adopted to reduce the inhibitory effects of inflammation on tissue regeneration [5, 6]. Among the various signal transducer and activator of transcription (STATs), STAT3 is particularly important in mediating inflammation and bone formation [7\u20139]. Our previous study showed that under TNF-\u03b1 stimulation, Elongator acetyltransferase complex subunit 2 (ELP2) inhibits osteogenic differentiation through STAT3 activation [10].\nIn an inflammatory environment, the differentiation capacity of osteoblasts is inhibited, and osteoblast death is exacerbated [11, 12]. Osteoblasts often undergo apoptosis in response to inflammation, but other forms of programmed cell death (PCD) mechanisms such as pyroptosis and necroptosis also play crucial roles [13, 14]. Although each of these three PCD pathways has been previously regarded as unique based on the identification of important promoters, effectors, and executors, there is mounting evidence that they interact extensively [15, 16]. Based on these findings, we developed the concept of panoptosis. It is an inflammatory PCD route controlled by the PANoptosome complex, which possesses important characteristics of pyroptosis, apoptosis, and/or necroptosis. These characteristics could not be explained by any of the PCD pathways alone [17\u201319].\nThe miR-17-92 cluster, encoded by the host gene MIR17HG, is involved in various biological activities, including tumor development, neurodevelopment, and immune regulation [20\u201322]. This cluster has a regulatory role in inflammation [23], with studies showing that inhibition of MIR17HG can attenuate neuronal apoptosis and inflammatory responses in Parkinson\u2019s disease (PD) mice [24]. Recent research has linked MIR17HG to osteoarthritis [22], suggesting its involvement in other bone diseases such as osteomyelitis and osteoarthritis, where inflammation is a key factor.\nTo identify new diagnostic and therapeutic approaches for bone infections, this study aims to investigate the relationship between MIR17HG and molecular processes involved in inflammation during bone infections. Using cell sequencing and the Gene Expression Omnibus (GEO) database, we identified distinct Long non-coding RNA (lncRNA) linked to osteogenic differentiation and PANoptosis under TNF-\u03b1 stimulation. We constructed lncRNA-miRNA-mRNA networks and performed bioinformatics analyses to explore their functions further. Furthermore, we investigated the correlation between the expression of lncRNA MIR17HG and mRNAs associated with PANoptosis in osteoblasts in response to TNF-\u03b1 stimulation. This research introduces a novel framework to understand the mechanisms responsible for PANoptosis onset in osteoblasts triggered by TNF-\u03b1 stimulation.\nMethods and materials\nReagents and antibodies\nMinimum essential medium \u03b1 (MEM\u2010\u03b1) and fetal bovine serum (FBS) obtained from Bio-channel (Nanjing, China). Dexamethason, \u03b2\u2010glycerophosphate and ascorbic acid were purchased from Sigma Chemicals (St. Louis, MO, USA). Trypsin was obtained from Gibco. TRIzol\u2122 reagents were purchased from Thermo Fisher Scientific (Waltham, MA, USA). Recombinant Mouse TNF alpha(Cat. No.: CF09), NovoStart\u00aeSYBR qPCR SuperMix Plus and NovoScript\u00aePlus All-in-one 1st Strand cDNA Synthesis SuperMix (gDNA Purge) were obtained from Novorprotein (Suzhou, China). Primary and secondary antibody for Western blot (WB) experience, including STAT3 (D3Z2G), P-Phospho-Stat3(Tyr705) IgG(L27A9), and GAPDH (14C10) antibodies were purchased from Cell Signaling Technology (Boston, MA, USA).\nRNA sequencing analysis\nCell culture",
+          "cos_sim_score": 0.4000234007835388,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12767418",
+          "title": "Immunomodulatory Mechanisms of Rehmanniae Radix Praeparata\u2013Achyranthes Root\u2013Chinese Angelica Root Combination in Nontraumatic Osteonecrosis of the Femoral Head: A Comprehensive Network Pharmacology and Molecular Docking Study Focusing on Immunological Pathways",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12767418/",
+          "text": "In addition, in Luo et al.\u2019s [58] study, Radix Rehmanniae Preparata was found to promote the increase of MiR\u201029a\u20133p levels in serum\u2010derived exosomes, which in turn inhibited Nuclear Factor I/A to enhance bone formation. Therefore, we hypothesise that Radix Rehmanniae Preparata may synergise with anti\u2010osteonecrosis effects by promoting bone formation as well as antioxidant effects. Radix Angelicae Sinensis is the dried root of Angelica sinensis (Oliv.) Diels, a family of Umbelliferae, which has significant medicinal value as an important blood tonic in TCM. A. sinensis contains a variety of active constituents, mainly including volatile oils, flavonoids, polysaccharides and other components [59]. These constituents confer a variety of pharmacological effects such as antioxidant, anti\u2010inflammatory, regulation of lipid metabolism and promotion of blood circulation, especially in the promotion of osteogenesis and angiogenesis [59\u201361]. In Li et al.\u2019s study, it was found that calycosin, the active ingredient in Radix Angelicae Sinensis, could alleviate bone loss through the MAPK signalling pathway and promote bone formation by regulating the expression of OPG, RANKL mRNA and decreasing the level of serum osteoblastic marker TRAP in de\u2010ovulated rats [60]. Ferulic acid is also an active ingredient in Radix Angelicae Sinensis and was found to play a role in inhibiting glucocorticoid\u2010induced bone loss by increasing the expression level of SIRT1 and decreasing the expression level of NF\u2010\u03baB in a study by Hou et al. [60]. On the other hand, ferulic acid was found to induce bone loss by upregulating the mRNA expression levels of cyclin D1 and vascular endothelial growth factor (VEGF), and thus inducing bone formation by upregulating the mRNA expression levels of VEGF and SIRT1 in a study by Wang et al. [62]. In a study by Lim et al. [63], A. sinensis Diels extract was found to inhibit bone loss due to bone turnover by suppressing bone turnover markers such as serum ALP, CTx and OC levels without affecting oestrogen levels and without any toxicity. Although the aforementioned positive effects of TCM on bone metabolism regulation as well as angiogenesis, the potential pharmacological mechanisms of SND drugs for the treatment of NONFH remain unclear and need to be further explored.\nWe used UHPLC\u2010Q\u2010TOF\u2010MSE technology combined with UNIFI platform to identify the whole components of SND, and obtained a total of 127 chemical components, while the cleavage patterns of flavonoids, phenols and other compounds were summarised. Based on the CHM similarity theory, 47 active ingredients of SND were screened in the SwissADME platform, and their related targets were predicted in Swiss Target Prediction and other databases to construct a SND target dataset; at the same time, a NONFH target set was obtained and established based on the GSE123568 dataset, and 46 candidate targets were obtained by taking the intersection of the two. KEGG enrichment analysis showed that the candidate targets were mainly involved in NETs formation, HIF\u20101 signalling pathway, chemokine signalling pathway, NOD\u2010like receptor signalling pathway and other signalling pathways. Signalling pathway, chemokine signalling pathway, NOD\u2010like receptor signalling pathway and other signalling pathways, most of which are related to the innate or reactive immune system, confirming the key role of the immune system in NONFH.",
+          "cos_sim_score": 0.34544599056243896,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": [
+        {
+          "id": "geo::200252585",
+          "title": "Role of IGF2R in beta cells",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE252585",
+          "text": "Title: Role of IGF2R in beta cells\nAccession: GSE252585\nStudy type: Expression profiling by high throughput sequencing\nOrganism: Mus musculus\nSamples: IntegerElement(6, attributes={})\nSummary: RNA-seq data of isolated pancreatic islets of one-year-old wild type and IGF2 receptor knock out mice.",
+          "cos_sim_score": 0.5890069007873535,
+          "source_type": "geo",
+          "accession": "GSE252585"
+        },
+        {
+          "id": "geo::200194020",
+          "title": "Comparison of de novo refilled to original lung interstitial macrophages by bulk RNA-sequencing",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE194020",
+          "text": "Title: Comparison of de novo refilled to original lung interstitial macrophages by bulk RNA-sequencing\nAccession: GSE194020\nStudy type: Expression profiling by high throughput sequencing\nOrganism: Mus musculus\nSamples: IntegerElement(18, attributes={})\nSummary: Lung interstitium macrophages (IMs) are non-alveolar resident tissue macrophages which contribute to the lung homeostasis. These cells were reported to be heterogeneous by our group and other teams, which contains two main distinct subpopulations: CD206+ IMs and CD206- IMs. However, the exact origin of IMs and the transcriptional programs that regulate IM differentiation remains unclear. In recent report, we analyzed the refilled IMs in the course of time after induced IM depletion with single-cell RNA sequencing (10X Genomics Chromium) and bulk RNA sequencing. In this study, the de novo refil...",
+          "cos_sim_score": 0.2677420377731323,
+          "source_type": "geo",
+          "accession": "GSE194020"
+        },
+        {
+          "id": "geo::200263534",
+          "title": "Nitidine chloride inhibits mTORC1 signaling through ATF4-mediated Sestrin2 induction and targets IGF2R for autophagic degradation",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE263534",
+          "text": "Title: Nitidine chloride inhibits mTORC1 signaling through ATF4-mediated Sestrin2 induction and targets IGF2R for autophagic degradation\nAccession: GSE263534\nStudy type: Expression profiling by high throughput sequencing\nOrganism: Homo sapiens\nSamples: IntegerElement(6, attributes={})\nSummary: Nitidine chloride (NC), a natural phytochemical alkaloid derived from Zanthoxylum nitidum (Roxb.) DC, exhibits multiple bioactivities in cancer, infection disease, and other therapeutic areas. However, the primary targets of NC and the mechanism of action (MOA) have not been defined explicitly. Here, we report that NC inhibit mTORC1 activity by targeting amino acid sensing signaling through activating transcription factor 4 (ATF4)-mediated Sestrin2 induction, and it efficiently induces autophagy in cells and tumor xenograft. NC displays potent cytotoxicity against various cancer cells and inhi...",
+          "cos_sim_score": 0.2525942027568817,
+          "source_type": "geo",
+          "accession": "GSE263534"
+        },
+        {
+          "id": "geo::200199084",
+          "title": "Spontaneous and ART-induced large offspring syndrome: similarities and differences in DNA methylome",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE199084",
+          "text": "Title: Spontaneous and ART-induced large offspring syndrome: similarities and differences in DNA methylome\nAccession: GSE199084\nStudy type: Methylation profiling by high throughput sequencing\nOrganism: Bos taurus\nSamples: IntegerElement(38, attributes={})\nSummary: Large/abnormal offspring syndrome (LOS/AOS) is a congenital overgrowth syndrome reported in ruminants produced by assisted reproduction (ART-LOS) which exhibit global disruption of the epigenome and transcriptome. LOS/AOS shares phenotypes and epigenotypes with the human congenital overgrowth condition Beckwith-Wiedemann syndrome. We have reported that LOS occurs spontaneously (SLOS), however, to date, no study has been conducted to determine if SLOS has the same methylome epimutations as ART-LOS. In this study, we performed whole genome bisulfite sequencing to examine global DNA methylation i...",
+          "cos_sim_score": 0.2276737540960312,
+          "source_type": "geo",
+          "accession": "GSE199084"
+        },
+        {
+          "id": "geo::200197130",
+          "title": "Allele-specific aberration of imprinted domain chromosome architecture associates with large offspring syndrome",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE197130",
+          "text": "Title: Allele-specific aberration of imprinted domain chromosome architecture associates with large offspring syndrome\nAccession: GSE197130\nStudy type: Other; Genome variation profiling by high throughput sequencing; Methylation profiling by high throughput sequencing\nOrganism: Bos indicus x Bos taurus; Bos indicus\nSamples: IntegerElement(50, attributes={})\nSummary: This SuperSeries is composed of the SubSeries listed below.",
+          "cos_sim_score": 0.22596749663352966,
+          "source_type": "geo",
+          "accession": "GSE197130"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

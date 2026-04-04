@@ -1,0 +1,233 @@
+{
+  "rf_rank": 40,
+  "probe_id": "11725180_a_at",
+  "gene_symbol": "RUNX2",
+  "score": 0.56,
+  "rf_n_nodes": 7,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 1.2249,
+  "log_fc": 1.2249,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11725180_a_at",
+  "max_score": 0.56,
+  "mean_abs_fold_change": 1.2249,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T20:23:59",
+  "interpretation": "RUNX2, or Runt-related transcription factor 2, is a critical transcription factor that regulates osteoblastic differentiation and skeletal morphogenesis. It plays a vital role in the maturation of osteoblasts, which are essential for bone formation. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), RUNX2 expression is often disrupted due to glucocorticoid treatment, leading to impaired osteogenic differentiation and increased adipogenic differentiation in bone marrow mesenchymal stem cells. Evidence from studies indicates that RUNX2 levels are significantly decreased in SONFH, correlating with the disease's progression and severity. This suggests that RUNX2 could serve as a potential biomarker for early detection of SONFH, as its expression levels may reflect the osteogenic capacity of bone cells affected by steroid treatment. Overall, the evidence supports RUNX2's strong relevance to SONFH, making it a promising candidate for clinical monitoring and intervention.",
+  "evidence_relation": "direct",
+  "evidence_tier": "Tier 2",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "strong",
+  "relevance_summary": "RUNX2 is crucial for osteoblast differentiation and is significantly affected in Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), indicating its potential as a biomarker for early detection.",
+  "citations": [
+    "RUNX2 (Q13950). https://www.uniprot.org/uniprotkb/Q13950",
+    "RUNX2 (Q13950-3). https://www.uniprot.org/uniprotkb/Q13950-3",
+    "RUNX2 (Q13950-2). https://www.uniprot.org/uniprotkb/Q13950-2",
+    "RUNX2 \u2014 RUNX2. https://platform.opentargets.org/target/ENSG00000124813",
+    "RUNX2 \u2194 cleidocranial dysplasia 1. https://platform.opentargets.org/target/ENSG00000124813/associations",
+    "RUNX2 \u2194 metaphyseal dysplasia-maxillary hypoplasia-brachydacty syndrome. https://platform.opentargets.org/target/ENSG00000124813/associations",
+    "RUNX2 \u2194 Metaphyseal dysplasia - maxillary hypoplasia - brachydacty. https://platform.opentargets.org/target/ENSG00000124813/associations",
+    "RUNX2 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000124813/associations",
+    "Atorvastatin exerts a preventive effect against steroid-induced necrosis of the femoral head by modulating Wnt5a release. (2024). https://pubmed.ncbi.nlm.nih.gov/38971901/",
+    "The effect of endostatin on angiogenesis and osteogenesis of steroid-induced osteonecrosis of the femoral head in a rabbit model. (2023). https://pubmed.ncbi.nlm.nih.gov/35703505/",
+    "The potential effect of BMSCs with miR-27a in improving steroid-induced osteonecrosis of the femoral head. (2022). https://pubmed.ncbi.nlm.nih.gov/36473889/",
+    "Study on the mechanism of Shuanghe decoction against steroid-induced osteonecrosis of the femoral head: insights from network pharmacology, metabolomics, and gut microbiota. (2025). https://pubmed.ncbi.nlm.nih.gov/40001178/",
+    "Functional analysis of novel RUNX2 mutations in cleidocranial dysplasia. (2018). https://pubmed.ncbi.nlm.nih.gov/28505335/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8011,
+    "completion_tokens": 276,
+    "total_tokens": 8287,
+    "estimated_cost_usd": 0.001367
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q13950",
+          "title": "RUNX2 (Q13950)",
+          "url": "https://www.uniprot.org/uniprotkb/Q13950",
+          "text": "Protein: Runt-related transcription factor 2\nFunction: Transcription factor involved in osteoblastic differentiation and skeletal morphogenesis (PubMed:28505335, PubMed:28703881, PubMed:28738062). Essential for the maturation of osteoblasts and both intramembranous and endochondral ossification. CBF binds to the core site, 5'-PYGPYGGT-3', of a number of enhancers and promoters, including murine leukemia virus, polyomavirus enhancer, T-cell receptor enhancers, osteocalcin, osteopontin, bone sialoprotein, alpha 1(I) collagen, LCK, IL-3 and GM-CSF promoters. In osteoblasts, supports transcription activation: synergizes with SPEN/MINT to enhance FGFR2-mediated activation of the osteocalcin FGF-responsive element (OCFRE) (By similarity). Inhibits KAT6B-dependent transcriptional activation",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q13950-3",
+          "title": "RUNX2 (Q13950-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q13950-3",
+          "text": "Protein: Isoform 3 of Runt-related transcription factor 2",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q13950-2",
+          "title": "RUNX2 (Q13950-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q13950-2",
+          "text": "Protein: Isoform 2 of Runt-related transcription factor 2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000124813::function",
+          "title": "RUNX2 \u2014 RUNX2",
+          "url": "https://platform.opentargets.org/target/ENSG00000124813",
+          "text": "Function: Transcription factor involved in osteoblastic differentiation and skeletal morphogenesis (PubMed:28505335, PubMed:28703881, PubMed:28738062). Essential for the maturation of osteoblasts and both intramembranous and endochondral ossification. CBF binds to the core site, 5'-PYGPYGGT-3', of a number of enhancers and promoters, including murine leukemia virus, polyomavirus enhancer, T-cell receptor enhancers, osteocalcin, osteopontin, bone sialoprotein, alpha 1(I) collagen, LCK, IL-3 and GM-CSF promoters. In osteoblasts, supports transcription activation: synergizes with SPEN/MINT to enhance FGFR2- mediated activation of the osteocalcin FGF-responsive element (OCFRE) (By similarity). Inhibits KAT6B-dependent transcriptional activation.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000124813::MONDO_0007340",
+          "title": "RUNX2 \u2194 cleidocranial dysplasia 1",
+          "url": "https://platform.opentargets.org/target/ENSG00000124813/associations",
+          "text": "Disease: cleidocranial dysplasia 1\nDescription: A condition that primarily affects the development of the bones and teeth. Characteristic features include underdeveloped or absent collarbones (clavicles); dental abnormalities; and delayed closing of the spaces between the skull bones (fontanels). Other features may include decreased bone density (osteopenia), osteoporosis, hearing loss, bone abnormalities of the hands, and recurrent sinus and ear infections. CCD is caused by changes (mutations) in the RUNX2 gene and inheritance is autosomal dominant. It may be inherited from an affected parent or occur due to a new mutation in the RUNX2 gene. Management may include dental procedures, treatment of sinus and ear infections, use of helmets for high-risk activities, and/or surgery for skeletal problems.\nAssociation score: 0.849",
+          "cos_sim_score": 0.849488197964991,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000124813::MONDO_0007984",
+          "title": "RUNX2 \u2194 metaphyseal dysplasia-maxillary hypoplasia-brachydacty syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000124813/associations",
+          "text": "Disease: metaphyseal dysplasia-maxillary hypoplasia-brachydacty syndrome\nDescription: Metaphyseal dysplasia-maxillary hypoplasia-brachydacty syndrome is characterized by metaphyseal dysplasia associated with short stature and facial dysmorphism (a beaked nose, short philtrum, thin lips, maxillary hypoplasia, dystrophic yellowish teeth) and acral anomalies (short fifth metacarpals and/or short middle phalanges of fingers two and five). It has been described in several members spanning four generations of a French-Canadian family. The syndrome is likely to be transmitted as an autosomal dominant trait.\nAssociation score: 0.731",
+          "cos_sim_score": 0.7308857685174348,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000124813::Orphanet_2504",
+          "title": "RUNX2 \u2194 Metaphyseal dysplasia - maxillary hypoplasia - brachydacty",
+          "url": "https://platform.opentargets.org/target/ENSG00000124813/associations",
+          "text": "Disease: Metaphyseal dysplasia - maxillary hypoplasia - brachydacty\nAssociation score: 0.731",
+          "cos_sim_score": 0.7308857685174348,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000124813::EFO_0005772",
+          "title": "RUNX2 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000124813/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.485",
+          "cos_sim_score": 0.4849437548122238,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::38971901",
+          "title": "Atorvastatin exerts a preventive effect against steroid-induced necrosis of the femoral head by modulating Wnt5a release.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38971901/",
+          "year": "2024",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SONFH) is a prevalent form of osteonecrosis in young individuals. More efficacious clinical strategies must be used to prevent and treat this condition. One of the mechanisms through which SONFH operates is the disruption of normal differentiation in bone marrow adipocytes and osteoblasts due to prolonged and extensive use of glucocorticoids (GCs). In vitro, it was observed that atorvastatin (ATO) effectively suppressed the impact of dexamethasone (DEX) on bone marrow mesenchymal stem cells (BMSCs), specifically by augmenting their lipogenic differentiation while impeding their osteogenic differentiation. To investigate the underlying mechanisms further, we conducted transcriptome sequencing of BMSCs subjected to different treatments, leading to the identification of Wnt5a as a crucial gene regulated by ATO. The analyses showed that ATO exhibited the ability to enhance the expression of Wnt5a and modulate the MAPK pathway while regulating the Wnt canonical signaling pathway via the WNT5A/LRP5 pathway. Our experimental findings provide further evidence that the combined treatment of ATO and DEX effectively mitigates the effects of DEX, resulting in the upregulation of osteogenic genes (Runx2, Alpl, Tnfrsf11b, Ctnnb1, Col1a) and the downregulation of adipogenic genes (Pparg, Cebpb, Lpl), meanwhile leading to the upregulation of Wnt5a expression. So, this study offers valuable insights into the potential mechanism by which ATO can be utilized in the prevention of SONFH, thereby holding significant implications for the prevention and treatment of SONFH in clinical settings.",
+          "cos_sim_score": 0.6233857870101929,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::35703505",
+          "title": "The effect of endostatin on angiogenesis and osteogenesis of steroid-induced osteonecrosis of the femoral head in a rabbit model.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35703505/",
+          "year": "2023",
+          "text": "This study aimed to investigate whether endostatin, a crucial anti-angiogenic factor, plays a negative role in angiogenesis and osteogenesis and aggravates the progression of osteonecrosis of the femoral head induced by steroid use in a rabbit model. 66 New Zealand white rabbits were randomly divided into four groups: glucocorticoid model (GC) group (GC group, n = 18), glucocorticoid model and endostatin group (GC;ES group, n = 18), ES group (ES group, n = 18), and blank control group (CON group, n = 12). In the GC group, 10 \u03bcg/ kg lipopolysaccharide (LPS) was intravenously injected into the ear margin, and 24h after LPS injection, 20 mg/kg GC methylprednisolone (MPS) was injected into the gluteus muscle three times, each time at an interval of 24h. The animals of the GC;ES group were given as same treatment as the GC group, except for the addition of ES. MPS was not used in the ES group and CON group. ES group was only given ES, while the CON group was only given the same amount of normal saline. All animals successfully established models of femoral head necrosis, and then the difference among the Immunohistochemistry, Quantitative polymerase chain reaction (qPCR) analysis, Enzyme-linked immunosorbent assay, Biomechanical test, etracyclline-calcein double labeling, and Van Gieson staining indices were compared among the four groups. The combination of MPS and LPS was successful in establishing the femoral head necrosis model in New Zealand white rabbits. The incidence of osteonecrosis after MPS and LPS intervention was 70% (7/10), while that plus ES was 100% (10/10). At the same time, after MPS and LPS intervention, while the empty bone lacuna rate of the femoral head was significantly increased, the number of osteo- blasts was decreased. Also, the expressions of CD31 positive cells, Runx2, Osterix, COL1A1, and VEGF mRNA in the femoral head were decreased, and the levels of osteogenesis-related protein b-ALP, OCN, and angiogenic factor VEGF in the femoral head were decreased. The percentage of the trabecular bone area (%Tb.Ar), trabecular thickness (Tb.Th), trabecular number (Tb.N), labeled perimeter percent (%L.Pm), mineral apposition rate (MAR), and bone formation rate (BFR/BS) in the femoral head after",
+          "cos_sim_score": 0.5842657685279846,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::36473889",
+          "title": "The potential effect of BMSCs with miR-27a in improving steroid-induced osteonecrosis of the femoral head.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36473889/",
+          "year": "2022",
+          "text": "Steroid induced osteonecrosis of the femoral head (ONFH) frequently leads to femoral head collapse and subsequent hip arthritis. This study aimed to investigate the potential therapeutic mechanism of miR-27a on steroid-induced ONFH. Levels of IL-6, TNF-\u03b1, miR-27a, Runx2, PPAR-\u03b3 and ApoA5 were first examined in bone marrow tissues from steroid-induced ONFH and controls. Subsequently, we overexpressed or knocked down miR-27a in bone marrow mesenchymal stem cells (BMSCs) and detected cell proliferation, osteogenic differentiation, adipogenic differentiation. In addition, miR-27a mimics and BMSCs were injected into the established steroid-induced ONFH rats, and the osteoprotective effects of both were evaluated. Dual luciferase reporter was used to test the targeting effect of miR-27a-3p and PPARG. miR-27a and Runx2 were lowly expressed in steroid-induced ONFH, PPAR-\u03b3 and ApoA5 were highly expressed. Overexpression of miR-27a in BMSCs promoted cell proliferation and osteogenic differentiation, inhibited adipogenic differentiation. Furthermore, increasing miR-27a and BMSCs obviously reduced bone loss in steroid induced ONFH rats. The expressions of Runx2 in BMSCs and steroid-induced ONFH rats was significantly up-regulated, while IL-6, TNF-\u03b1, PPAR-\u03b3 and ApoA5 were down-regulated with miR-27a overexpression. Additionally, PPARG was the target of miR-27a-3p. The results of the present study reveal a role for miR-27a in promoting osteogenesis and may have a synergistic effect with BMSCs.",
+          "cos_sim_score": 0.5632869005203247,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::35703505",
+          "title": "The effect of endostatin on angiogenesis and osteogenesis of steroid-induced osteonecrosis of the femoral head in a rabbit model.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35703505/",
+          "year": "2023",
+          "text": "Osterix, COL1A1, and VEGF mRNA in the femoral head were decreased, and the levels of osteogenesis-related protein b-ALP, OCN, and angiogenic factor VEGF in the femoral head were decreased. The percentage of the trabecular bone area (%Tb.Ar), trabecular thickness (Tb.Th), trabecular number (Tb.N), labeled perimeter percent (%L.Pm), mineral apposition rate (MAR), and bone formation rate (BFR/BS) in the femoral head after MPs and LPS intervention detected by tetracycline calcein double labeling and Van Gieson staining decreased significantly, except trabecular separation (Tb.Sp) increased significantly. The compressive strength (CS), elastic modulus (EM), and strain energy (SE) of the femoral head examed by biomechanical measurement decreased significantly. All the above changes were more obvious after adding ES intervention. ES mRNA in the femoral head was undifferentiated and increased in the GC, ES, and GC;ES group compared with group CON. This study has revealed that ES can inhibit angiogenesis and osteogenesis in the femoral head and aggravate the occurrence and development of femoral head necrosis. Thus, antiangiogenic factors may play an important role in the pathogenesis of ONFH.",
+          "cos_sim_score": 0.5468863248825073,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::40001178",
+          "title": "Study on the mechanism of Shuanghe decoction against steroid-induced osteonecrosis of the femoral head: insights from network pharmacology, metabolomics, and gut microbiota.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40001178/",
+          "year": "2025",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SONFH) is a challenging and debilitating orthopedic condition with a rising incidence in recent years. Shuanghe Decoction (SHD), a traditional Chinese medicine formula, has shown significant efficacy in treating SONFH, though its underlying mechanisms remain unclear. This study aims to elucidate the therapeutic effects and potential mechanisms of SHD on SONFH through in vivo experiments, combined with network pharmacology, metabolomics, and gut microbiota analysis. Forty male Sprague-Dawley rats (300\u2009\u00b1\u200920\u00a0g) were randomly assigned to four groups: Control, Model, SHD-L, and SHD-H, with 10 rats each. SONFH was induced in all groups except the Control group using lipopolysaccharide and methylprednisolone. The SHD-L and SHD-H groups were treated with Shuanghe decoction at doses of 4.86\u00a0g/kg/day and 9.72\u00a0g/kg/day, respectively, for eight weeks. Bone morphology, pathological changes, and osteogenic factors were evaluated using Micro-CT, histological staining, and immunohistochemistry. Network pharmacology, metabolomics, and gut microbiota analyses were conducted to explore SHD's mechanisms. SHD improved bone morphology and increased osteogenic factor expression (RUNX2, OCN, COL-I). Network pharmacology indicated that metabolic pathways play a key role in SHD's therapeutic effects. Metabolomic analysis identified 14 differential metabolites, including 21-hydroxypregnenolone and tyramine, which were restored to normal levels by SHD. Gut microbiota analysis revealed that SHD modulated bacterial abundance, particularly Verrucomicrobia, Allobaculum, and Burkholderiales. A comprehensive network identified two key metabolites (tyramine, 21-hydroxypregnenolone), seven targets (CYP19A1, CYP1A2, CYP1B1, CYP2C9, CYP3A4, MIF, and HSD11B1), two metabolic pathways (tyrosine metabolism, steroid hormone biosynthesis), and four bacterial taxa (Jeotgalicoccus, Clostridium, Corynebacterium, rc4-4) as central to SHD against SONFH. SHD alleviates SONFH by reshaping gut microbiota, reversing metabolic imbalances, and enhancing osteogenesis. Our findings provide novel insights into the pharmacological mechanisms of SHD, laying a foundation for its clinical application in treating SONFH.",
+          "cos_sim_score": 0.5437130331993103,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_fetch_by_id",
+      "result": [
+        {
+          "id": "pubmed::28505335",
+          "title": "Functional analysis of novel RUNX2 mutations in cleidocranial dysplasia.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28505335/",
+          "year": "2018",
+          "text": "Cleidocranial dysplasia (CCD) is a rare autosomal dominant skeletal disorder caused by mutation of runt-related transcription factor 2 (RUNX2) gene. The purpose of this study was to explore novel RUNX2 mutations in seven individuals with CCD and investigate the function of the mutant RUNX2 proteins. DNA samples were prepared from the peripheral blood of the CCD individuals, and then subjected to DNA sequencing. Conservation and secondary structure analysis were performed based on RUNX2 sequencing results. pEGFP-C1 plasmids containing GFP-tagged wild-type RUNX2 and three novel RUNX2 mutations expression cassettes were constructed, and then transfected into HEK293T cells. Cell fluorescence, luciferase assay and western blotting were used to analyse the subcellular distribution and function of the mutant RUNX2 proteins. Three novel mutations (R193G, 258fs, Y400X) were found in the seven CCD patients. Conservation and structure analysis show one novel mutation (R193G) in Runt domain and two novel mutations (258fs and Y400X) in PST domain of RUNX2. Western blotting confirmed that the 258fs and Y400X mutations produced truncated proteins. Fluorescence detection showed that the three novel mutants localised exclusively in the nucleus. However, luciferase assay indicated all mutants severely impaired the transactivation activities of RUNX2 on osteocalcin promoter. Our results broaden the spectrum of RUNX2 mutations in CCD individuals and demonstrated that loss of function in RUNX2 is responsible for CCD.",
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::38971901",
+          "title": "Atorvastatin exerts a preventive effect against steroid-induced necrosis of the femoral head by modulating Wnt5a release.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38971901/",
+          "year": "2024",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SONFH) is a prevalent form of osteonecrosis in young individuals. More efficacious clinical strategies must be used to prevent and treat this condition. One of the mechanisms through which SONFH operates is the disruption of normal differentiation in bone marrow adipocytes and osteoblasts due to prolonged and extensive use of glucocorticoids (GCs). In vitro, it was observed that atorvastatin (ATO) effectively suppressed the impact of dexamethasone (DEX) on bone marrow mesenchymal stem cells (BMSCs), specifically by augmenting their lipogenic differentiation while impeding their osteogenic differentiation. To investigate the underlying mechanisms further, we conducted transcriptome sequencing of BMSCs subjected to different treatments, leading to the identification of Wnt5a as a crucial gene regulated by ATO. The analyses showed that ATO exhibited the ability to enhance the expression of Wnt5a and modulate the MAPK pathway while regulating the Wnt canonical signaling pathway via the WNT5A/LRP5 pathway. Our experimental findings provide further evidence that the combined treatment of ATO and DEX effectively mitigates the effects of DEX, resulting in the upregulation of osteogenic genes (Runx2, Alpl, Tnfrsf11b, Ctnnb1, Col1a) and the downregulation of adipogenic genes (Pparg, Cebpb, Lpl), meanwhile leading to the upregulation of Wnt5a expression. So, this study offers valuable insights into the potential mechanism by which ATO can be utilized in the prevention of SONFH, thereby holding significant implications for the prevention and treatment of SONFH in clinical settings.",
+          "cos_sim_score": 0.6233857870101929,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::35703505",
+          "title": "The effect of endostatin on angiogenesis and osteogenesis of steroid-induced osteonecrosis of the femoral head in a rabbit model.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35703505/",
+          "year": "2023",
+          "text": "This study aimed to investigate whether endostatin, a crucial anti-angiogenic factor, plays a negative role in angiogenesis and osteogenesis and aggravates the progression of osteonecrosis of the femoral head induced by steroid use in a rabbit model. 66 New Zealand white rabbits were randomly divided into four groups: glucocorticoid model (GC) group (GC group, n = 18), glucocorticoid model and endostatin group (GC;ES group, n = 18), ES group (ES group, n = 18), and blank control group (CON group, n = 12). In the GC group, 10 \u03bcg/ kg lipopolysaccharide (LPS) was intravenously injected into the ear margin, and 24h after LPS injection, 20 mg/kg GC methylprednisolone (MPS) was injected into the gluteus muscle three times, each time at an interval of 24h. The animals of the GC;ES group were given as same treatment as the GC group, except for the addition of ES. MPS was not used in the ES group and CON group. ES group was only given ES, while the CON group was only given the same amount of normal saline. All animals successfully established models of femoral head necrosis, and then the difference among the Immunohistochemistry, Quantitative polymerase chain reaction (qPCR) analysis, Enzyme-linked immunosorbent assay, Biomechanical test, etracyclline-calcein double labeling, and Van Gieson staining indices were compared among the four groups. The combination of MPS and LPS was successful in establishing the femoral head necrosis model in New Zealand white rabbits. The incidence of osteonecrosis after MPS and LPS intervention was 70% (7/10), while that plus ES was 100% (10/10). At the same time, after MPS and LPS intervention, while the empty bone lacuna rate of the femoral head was significantly increased, the number of osteo- blasts was decreased. Also, the expressions of CD31 positive cells, Runx2, Osterix, COL1A1, and VEGF mRNA in the femoral head were decreased, and the levels of osteogenesis-related protein b-ALP, OCN, and angiogenic factor VEGF in the femoral head were decreased. The percentage of the trabecular bone area (%Tb.Ar), trabecular thickness (Tb.Th), trabecular number (Tb.N), labeled perimeter percent (%L.Pm), mineral apposition rate (MAR), and bone formation rate (BFR/BS) in the femoral head after",
+          "cos_sim_score": 0.5842657685279846,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::36473889",
+          "title": "The potential effect of BMSCs with miR-27a in improving steroid-induced osteonecrosis of the femoral head.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36473889/",
+          "year": "2022",
+          "text": "Steroid induced osteonecrosis of the femoral head (ONFH) frequently leads to femoral head collapse and subsequent hip arthritis. This study aimed to investigate the potential therapeutic mechanism of miR-27a on steroid-induced ONFH. Levels of IL-6, TNF-\u03b1, miR-27a, Runx2, PPAR-\u03b3 and ApoA5 were first examined in bone marrow tissues from steroid-induced ONFH and controls. Subsequently, we overexpressed or knocked down miR-27a in bone marrow mesenchymal stem cells (BMSCs) and detected cell proliferation, osteogenic differentiation, adipogenic differentiation. In addition, miR-27a mimics and BMSCs were injected into the established steroid-induced ONFH rats, and the osteoprotective effects of both were evaluated. Dual luciferase reporter was used to test the targeting effect of miR-27a-3p and PPARG. miR-27a and Runx2 were lowly expressed in steroid-induced ONFH, PPAR-\u03b3 and ApoA5 were highly expressed. Overexpression of miR-27a in BMSCs promoted cell proliferation and osteogenic differentiation, inhibited adipogenic differentiation. Furthermore, increasing miR-27a and BMSCs obviously reduced bone loss in steroid induced ONFH rats. The expressions of Runx2 in BMSCs and steroid-induced ONFH rats was significantly up-regulated, while IL-6, TNF-\u03b1, PPAR-\u03b3 and ApoA5 were down-regulated with miR-27a overexpression. Additionally, PPARG was the target of miR-27a-3p. The results of the present study reveal a role for miR-27a in promoting osteogenesis and may have a synergistic effect with BMSCs.",
+          "cos_sim_score": 0.5632869005203247,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::35703505",
+          "title": "The effect of endostatin on angiogenesis and osteogenesis of steroid-induced osteonecrosis of the femoral head in a rabbit model.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35703505/",
+          "year": "2023",
+          "text": "Osterix, COL1A1, and VEGF mRNA in the femoral head were decreased, and the levels of osteogenesis-related protein b-ALP, OCN, and angiogenic factor VEGF in the femoral head were decreased. The percentage of the trabecular bone area (%Tb.Ar), trabecular thickness (Tb.Th), trabecular number (Tb.N), labeled perimeter percent (%L.Pm), mineral apposition rate (MAR), and bone formation rate (BFR/BS) in the femoral head after MPs and LPS intervention detected by tetracycline calcein double labeling and Van Gieson staining decreased significantly, except trabecular separation (Tb.Sp) increased significantly. The compressive strength (CS), elastic modulus (EM), and strain energy (SE) of the femoral head examed by biomechanical measurement decreased significantly. All the above changes were more obvious after adding ES intervention. ES mRNA in the femoral head was undifferentiated and increased in the GC, ES, and GC;ES group compared with group CON. This study has revealed that ES can inhibit angiogenesis and osteogenesis in the femoral head and aggravate the occurrence and development of femoral head necrosis. Thus, antiangiogenic factors may play an important role in the pathogenesis of ONFH.",
+          "cos_sim_score": 0.5468863248825073,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::40001178",
+          "title": "Study on the mechanism of Shuanghe decoction against steroid-induced osteonecrosis of the femoral head: insights from network pharmacology, metabolomics, and gut microbiota.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40001178/",
+          "year": "2025",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SONFH) is a challenging and debilitating orthopedic condition with a rising incidence in recent years. Shuanghe Decoction (SHD), a traditional Chinese medicine formula, has shown significant efficacy in treating SONFH, though its underlying mechanisms remain unclear. This study aims to elucidate the therapeutic effects and potential mechanisms of SHD on SONFH through in vivo experiments, combined with network pharmacology, metabolomics, and gut microbiota analysis. Forty male Sprague-Dawley rats (300\u2009\u00b1\u200920\u00a0g) were randomly assigned to four groups: Control, Model, SHD-L, and SHD-H, with 10 rats each. SONFH was induced in all groups except the Control group using lipopolysaccharide and methylprednisolone. The SHD-L and SHD-H groups were treated with Shuanghe decoction at doses of 4.86\u00a0g/kg/day and 9.72\u00a0g/kg/day, respectively, for eight weeks. Bone morphology, pathological changes, and osteogenic factors were evaluated using Micro-CT, histological staining, and immunohistochemistry. Network pharmacology, metabolomics, and gut microbiota analyses were conducted to explore SHD's mechanisms. SHD improved bone morphology and increased osteogenic factor expression (RUNX2, OCN, COL-I). Network pharmacology indicated that metabolic pathways play a key role in SHD's therapeutic effects. Metabolomic analysis identified 14 differential metabolites, including 21-hydroxypregnenolone and tyramine, which were restored to normal levels by SHD. Gut microbiota analysis revealed that SHD modulated bacterial abundance, particularly Verrucomicrobia, Allobaculum, and Burkholderiales. A comprehensive network identified two key metabolites (tyramine, 21-hydroxypregnenolone), seven targets (CYP19A1, CYP1A2, CYP1B1, CYP2C9, CYP3A4, MIF, and HSD11B1), two metabolic pathways (tyrosine metabolism, steroid hormone biosynthesis), and four bacterial taxa (Jeotgalicoccus, Clostridium, Corynebacterium, rc4-4) as central to SHD against SONFH. SHD alleviates SONFH by reshaping gut microbiota, reversing metabolic imbalances, and enhancing osteogenesis. Our findings provide novel insights into the pharmacological mechanisms of SHD, laying a foundation for its clinical application in treating SONFH.",
+          "cos_sim_score": 0.5437130331993103,
+          "source_type": "pubmed"
+        }
+      ]
+    }
+  ]
+}

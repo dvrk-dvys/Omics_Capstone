@@ -1,0 +1,167 @@
+{
+  "rf_rank": 7,
+  "probe_id": "11733611_a_at",
+  "gene_symbol": "DOCK8",
+  "score": 0.79,
+  "rf_n_nodes": 4,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 1.0238,
+  "log_fc": 1.0238,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11733611_a_at",
+  "max_score": 0.79,
+  "mean_abs_fold_change": 1.0238,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T17:29:46",
+  "interpretation": "DOCK8 (Dedicator of cytokinesis protein 8) is a guanine nucleotide exchange factor that activates the small GTPase CDC42, which plays a crucial role in cell signaling and immune responses. Its involvement in immune cell migration and function suggests a potential link to the inflammatory processes associated with Steroid-Induced Osteonecrosis of the Femoral Head (SONFH). Although there is no direct evidence connecting DOCK8 to SONFH, its role in immune regulation and the pathophysiology of bone health implies that alterations in DOCK8 expression could influence the disease's progression. The evidence retrieved primarily discusses DOCK8's role in immunodeficiency and its association with recurrent infections, which may indirectly relate to the complications seen in SONFH patients. Therefore, while the evidence is limited, it suggests that DOCK8 could serve as a biomarker for early detection of SONFH, particularly in the context of immune response and inflammation.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 3",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "DOCK8 may be relevant to Steroid-Induced Osteonecrosis of the Femoral Head due to its role in immune regulation and potential influence on inflammatory processes.",
+  "citations": [
+    "DOCK8 (Q8NF50). https://www.uniprot.org/uniprotkb/Q8NF50",
+    "DOCK8 (Q8NF50-2). https://www.uniprot.org/uniprotkb/Q8NF50-2",
+    "DOCK8 (Q8NF50-3). https://www.uniprot.org/uniprotkb/Q8NF50-3",
+    "DOCK8 \u2014 DOCK8. https://platform.opentargets.org/target/ENSG00000107099",
+    "DOCK8 \u2194 combined immunodeficiency due to DOCK8 deficiency. https://platform.opentargets.org/target/ENSG00000107099/associations",
+    "DOCK8 \u2194 Autosomal recessive hyper-IgE syndrome. https://platform.opentargets.org/target/ENSG00000107099/associations",
+    "DOCK8 \u2194 hyper-IgE syndrome. https://platform.opentargets.org/target/ENSG00000107099/associations",
+    "DOCK8 \u2194 intellectual disability, autosomal dominant 2. https://platform.opentargets.org/target/ENSG00000107099/associations",
+    "Dedicator of cytokinesis protein 8. https://en.wikipedia.org/wiki/Dedicator_of_cytokinesis_protein_8",
+    "DOCK8 deficiency. https://en.wikipedia.org/wiki/DOCK8_deficiency",
+    "Sung-Yun Pai. https://en.wikipedia.org/wiki/Sung-Yun_Pai"
+  ],
+  "token_usage": {
+    "prompt_tokens": 6330,
+    "completion_tokens": 265,
+    "total_tokens": 6595,
+    "estimated_cost_usd": 0.001108
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q8NF50",
+          "title": "DOCK8 (Q8NF50)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8NF50",
+          "text": "Protein: Dedicator of cytokinesis protein 8\nFunction: Guanine nucleotide exchange factor (GEF) which specifically activates small GTPase CDC42 by exchanging bound GDP for free GTP (PubMed:22461490, PubMed:28028151). During immune responses, required for interstitial dendritic cell (DC) migration by locally activating CDC42 at the leading edge membrane of DC (By similarity). Required for CD4(+) T-cell migration in response to chemokine stimulation by promoting CDC42 activation at T cell leading edge membrane (PubMed:28028151). Is involved in NK cell cytotoxicity by controlling polarization of microtubule-organizing center (MTOC), and possibly regulating CCDC88B-mediated lytic granule transport to MTOC during cell killing (PubMed:25762780)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q8NF50-2",
+          "title": "DOCK8 (Q8NF50-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8NF50-2",
+          "text": "Protein: Isoform 2 of Dedicator of cytokinesis protein 8",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q8NF50-3",
+          "title": "DOCK8 (Q8NF50-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8NF50-3",
+          "text": "Protein: Isoform 3 of Dedicator of cytokinesis protein 8",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000107099::function",
+          "title": "DOCK8 \u2014 DOCK8",
+          "url": "https://platform.opentargets.org/target/ENSG00000107099",
+          "text": "Function: Guanine nucleotide exchange factor (GEF) which specifically activates small GTPase CDC42 by exchanging bound GDP for free GTP (PubMed:22461490, PubMed:28028151). During immune responses, required for interstitial dendritic cell (DC) migration by locally activating CDC42 at the leading edge membrane of DC (By similarity). Required for CD4(+) T-cell migration in response to chemokine stimulation by promoting CDC42 activation at T cell leading edge membrane (PubMed:28028151). Is involved in NK cell cytotoxicity by controlling polarization of microtubule-organizing center (MTOC), and possibly regulating CCDC88B-mediated lytic granule transport to MTOC during cell killing (PubMed:25762780).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000107099::MONDO_0009478",
+          "title": "DOCK8 \u2194 combined immunodeficiency due to DOCK8 deficiency",
+          "url": "https://platform.opentargets.org/target/ENSG00000107099/associations",
+          "text": "Disease: combined immunodeficiency due to DOCK8 deficiency\nDescription: Combined immunodeficiency due to dedicator of cytokinesis 8 protein (DOCK8) deficiency is a form of T and B cell immunodeficiency characterized by recurrent cutaneous viral infections, susceptibility to cancer and elevated serum levels of immunoglobulin E (IgE).\nAssociation score: 0.806",
+          "cos_sim_score": 0.8059148942715584,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000107099::Orphanet_169446",
+          "title": "DOCK8 \u2194 Autosomal recessive hyper-IgE syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000107099/associations",
+          "text": "Disease: Autosomal recessive hyper-IgE syndrome\nDescription: Autosomal recessive hyper IgE syndrome (AR-HIES) is a very rare severe primary immunodeficiency disorder characterized by the clinical triad of highly elevated serum IgE levels, recurring staphylococcal skin abscesses, and recurrent pneumonia. The clinical triad is shared with the more frequent autosomal dominant HIES syndrome (AD-HIES; see this term), but other features such as persistent cutaneous viral infections are unique to AR-HIES.\nAssociation score: 0.716",
+          "cos_sim_score": 0.7158922499272269,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000107099::MONDO_0018037",
+          "title": "DOCK8 \u2194 hyper-IgE syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000107099/associations",
+          "text": "Disease: hyper-IgE syndrome\nDescription: A condition that is characterized by elevated serum IgE, dermatitis, and respiratory infections.\nAssociation score: 0.654",
+          "cos_sim_score": 0.6535468815032699,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000107099::MONDO_0013581",
+          "title": "DOCK8 \u2194 intellectual disability, autosomal dominant 2",
+          "url": "https://platform.opentargets.org/target/ENSG00000107099/associations",
+          "text": "Disease: intellectual disability, autosomal dominant 2\nDescription: Any autosomal dominant non-syndromic intellectual disability in which the cause of the disease is a mutation in the DOCK8 gene.\nAssociation score: 0.525",
+          "cos_sim_score": 0.5248162262861197,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Dedicator of cytokinesis protein 8",
+          "title": "Dedicator of cytokinesis protein 8",
+          "url": "https://en.wikipedia.org/wiki/Dedicator_of_cytokinesis_protein_8",
+          "text": "Dedicator of cytokinesis protein 8 (Dock8) is a large (~190 kDa) protein encoded in the human by the DOCK8 gene, involved in intracellular signalling networks. It is a member of the DOCK-C subfamily of the DOCK family of guanine nucleotide exchange factors (GEFs) which function as activators of small G-proteins.\n\nDiscovery\nDock8 was identified during a yeast two hybrid (YTH) screen for proteins that interact with the Rho family small G protein Cdc42. Subsequent northern blot analysis revealed high levels of Dock8 expression in the placenta, lung, kidney and pancreas as well as lower levels in the heart, brain and skeletal muscle.\n\nFunction\nDock8 shares the same core domain arrangement as all other DOCK proteins, with a DHR2 domain which, in other proteins, contains GEF activity and a DHR1 domain known, in other proteins, to interact with phospholipids. In the YTH system Dock8 was reported to interact with both Rac1 and Cdc42. However, no stable interaction between Dock8 and these small G proteins was observed in a GST-pulldown assay. This may be due to the fact many DOCK-G protein interactions require the presence of adaptor proteins to stabilise the complex and thus facilitate nucleotide exchange.\n\nClinical significance\nA mutation in the DOCK8 gene is associated with the autosomal recessive form of Job's syndrome or hyper-IgE Syndrome. It is manifested in infancy and the patient survives till late childhood or adolescence. The disease is characterized by eczema, recurrent cold staphylococcal abscesses, recurrent lung infections, coarse facial features, primary teeth remnants (2 rows of teeth present), high IgE levels and eosinophilia.\n\nSomatic mutations\nDespite the fact that little is known about the cellular role of Dock8 its importance has been highlighted in several studies which have identified disruption of the DOCK8 gene in disease. Deletion and reduced expression of Dock8 have been reported in a human lung cancer cell line and Dock8 was also identified as a putative candidate gene associated with progression of gliomas.",
+          "cos_sim_score": 0.4625108242034912,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Dedicator of cytokinesis protein 8",
+          "title": "Dedicator of cytokinesis protein 8",
+          "url": "https://en.wikipedia.org/wiki/Dedicator_of_cytokinesis_protein_8",
+          "text": "Clinical significance\nA mutation in the DOCK8 gene is associated with the autosomal recessive form of Job's syndrome or hyper-IgE Syndrome. It is manifested in infancy and the patient survives till late childhood or adolescence. The disease is characterized by eczema, recurrent cold staphylococcal abscesses, recurrent lung infections, coarse facial features, primary teeth remnants (2 rows of teeth present), high IgE levels and eosinophilia.\n\nSomatic mutations\nDespite the fact that little is known about the cellular role of Dock8 its importance has been highlighted in several studies which have identified disruption of the DOCK8 gene in disease. Deletion and reduced expression of Dock8 have been reported in a human lung cancer cell line and Dock8 was also identified as a putative candidate gene associated with progression of gliomas.\n\nClinical significance of germline mutations\nAutosomal recessive DOCK8 deficiency is associated with a variant of combined immunodeficiency. This variant of Hyperimmunoglobulin E syndrome (HIES) was first described in 2004  and this clinical entity is known to be due to having biallelic germline mutations in the DOCK8 gene.  HIES due to DOCK8-deficiency has a distinct clinical presentation compared to other forms of HIES and in inherited in an autosomal recessive manner.\nThe clinical manifestations of DOCK8 immunodefiency include recurrent infections, allergies, and malignancies. Nearly all patients have recurrent or chronic upper and lower respiratory tract infections, with many requiring sinus surgery and myringotomy tube placement.  Recurrent lung infections may lead to bronchiectasis or damage to the airways leaving them widened and scarred.  The cutaneous or skin infections are distinctive and include severe and difficult to treat viral infections, such as herpes simplex virus, human papilloma virus, and molluscum contagiosum; bacteria such as Staphylococcus aureus; as well as fungal infections of the mouth or skin with Candida.  Eczema is common, and can be quite severe and further complicated by bacterial infection.  Together, these skin infections can become disfiguring.\nDOCK8 immunodefiency patients frequently have allergies to many food and environmental allergens, as well as asthma. Autoimmunity has been seen in some patients, such as autoimmune hemolytic anemia, as well as vasculitis and vasculopathy.  Patients are also at increased risk for developing squamous cell carcinomas and lymphoid malignancies. Some but not all lymphomas are associated with poor control of the cancer-causing virus, Epstein\u2013Barr.  These cancer risks are significant and patients should be monitored closely for signs of malignancy.\nThis disorder is considered a combined immunodeficiency because it includes both decreased lymphocyte numbers and defective lymphocyte function. It can also be classified as a type of autosomal recessive hyperimmunoglobulinemia E syndrome. Laboratory manifestations include progressive lymphopenia that primarily affects CD4 and CD8 T cell subsets, reduced B cell and/or NK cell counts in some patients, eosinophilia, and immunoglobulin abnormalities. Antibody responses to vaccines are frequently poor.  Loss of Dock8 protein expression can be demonstrated by diagnostic intracellular flow cytometry testing.\nOnce a diagnosis is made, treatment is based on an individual's clinical condition and may include medication and other strategies for managing infections, allergies, and asthma. Supportive care includes prophylactic antimicrobials, and consideration of immune globulin replacement.  Interferon alpha has been used for control of serious viral infections, such as widespread warts or herpes simplex virus. Hematopoietic stem cell transplant is curative in many primary immunodeficiencies and has successfully been used for patients with DOCK8 immunodefiency.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.39769914746284485,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::DOCK8 deficiency",
+          "title": "DOCK8 deficiency",
+          "url": "https://en.wikipedia.org/wiki/DOCK8_deficiency",
+          "text": "DOCK8 deficiency, also called DOCK8 immunodeficiency syndrome, is the autosomal recessive form of hyperimmunoglobulin E syndrome, a genetic disorder characterized by elevated immunoglobulin E levels, eosinophilia, and recurrent infections with staphylococcus and viruses. It is caused by a mutation in the DOCK8 gene.\n\nSigns and symptoms\nThe signs and symptoms of DOCK8 deficiency are similar to the autosomal dominant form, STAT3 deficiency. However, in DOCK8 deficiency, there is no skeletal or connective tissue involvement, and affected individuals do not have the characteristic facial features of those with autosomal dominant hyper-IgE syndrome. DOCK8 deficient children often have eczema, respiratory and skin staphylococcus infections.\nBeyond these, many other recurrent infections have been observed, including recurrent fungal infections and recurrent viral infections (including molluscum contagiosum, herpes simplex, and herpes zoster), recurrent upper respiratory infection (including Streptococcus pneumoniae, Haemophilus influenzae, respiratory syncytial virus, and adenovirus), recurrent sinusitis, recurrent otitis media, mastoiditis, pneumonia, bronchitis with bronchiectasis, osteomyelitis, candidiasis, meningitis (caused by cryptococcus or H. influenzae), pericarditis, salmonella enteritis, and giardiasis. Other dermatologic problems include squamous-cell carcinoma/dysplasia (vulvar, anal, and facial). Immune problems are also common, including autoimmune hemolytic anemia, severe allergies (both food and environmental), asthma, and reactive airway disease. The nervous system may also be affected; observed conditions in DOCK8 deficient people include hemiplegia, ischemic stroke, subarachnoid hemorrhage, and facial paralysis. Vascular complications are common, including aortic aneurysm, cerebral aneurysm, vessel occlusion and underperfusion, and leukocytoclastic vasculitis.\n\nPathophysiology\nDOCK8, or \"dedicator of cytokinesis 8\", is a protein involved in regulating the actin skeleton of the cell. It may also be a tumor suppressor, since DOCK8 is lost in many cancers and people with DOCK8 deficiency are prone to developing malignancies. When it is mutated, an incorrect protein is produced, so there is, at most, a trace level of functional DOCK8 protein in the cell. There are a variety of loss-of-function mutations in DOCK8 that can cause deficiency and hyperimmunoglobulin E, including frameshift mutations, nonsense mutations, microdeletions, and, most commonly, large deletions. The low number of T cells (T cell lymphopenia) and other lymphocytes appears to be responsible for the susceptibility to infections, and the poor humoral immunity is responsible for low response to vaccines. However, how DOCK8 is involved in the loss of T cells is not known.\n\nDiagnosis\nA diagnosis can only be definitively made after genetic testing to look for a mutation in the DOCK8 gene. However, it can be suspected with a high IgE level and eosinophilia. Other suggestive laboratory findings include decreased numbers of B cells, T cells, and NK cells; and hypergammaglobulinemia. It can be distinguished from autosomal dominant hyper-IgE (STAT3 deficiency) because people with DOCK8 deficiency have low levels of IgM and an impaired secondary immune response. IgG and IgA levels are usually normal to high. It can be distinguished from the similar X-linked Wiskott\u2013Aldrich syndrome by the presence of thrombocytopenia and the consequent bloody diarrhea, as well as its pattern of inheritance. WHIM syndrome, caused by a mutation in CXCR4, is associated with similar chronic cutaneous viral infections.",
+          "cos_sim_score": 0.38415077328681946,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::DOCK8 deficiency",
+          "title": "DOCK8 deficiency",
+          "url": "https://en.wikipedia.org/wiki/DOCK8_deficiency",
+          "text": "Diagnosis\nA diagnosis can only be definitively made after genetic testing to look for a mutation in the DOCK8 gene. However, it can be suspected with a high IgE level and eosinophilia. Other suggestive laboratory findings include decreased numbers of B cells, T cells, and NK cells; and hypergammaglobulinemia. It can be distinguished from autosomal dominant hyper-IgE (STAT3 deficiency) because people with DOCK8 deficiency have low levels of IgM and an impaired secondary immune response. IgG and IgA levels are usually normal to high. It can be distinguished from the similar X-linked Wiskott\u2013Aldrich syndrome by the presence of thrombocytopenia and the consequent bloody diarrhea, as well as its pattern of inheritance. WHIM syndrome, caused by a mutation in CXCR4, is associated with similar chronic cutaneous viral infections.\n\nTreatment\nTreatment in DOCK8 deficiency focuses on preventing and treating infections. Broad-spectrum antibiotics are a common mode of treatment when infection is present, though some infections (like lung abscesses) require surgical treatment. Pneumatocele may be treated with surgery, but the benefit is unclear.\nSurgical treatment is also recommended for skin abscesses, along with topical and systemic antibiotics and antifungals.\nLong-term treatment with systemic antibiotics, including trimethoprim/sulfamethoxazole, penicillins, and cephalosporins, is effective in preventing skin and lung infections.  Other treatments used in DOCK8 deficiency include sodium cromoglycate, which improves white blood cell function, and isotretinoin, which improves skin condition.\nSometimes, Intravenous immunoglobulin is used as a treatment, but its benefits have not been proven. Levamisole is also ineffective. Mixed clinical outcomes have been found with interferon gamma and omalizumab. Two patients have been cured by bone marrow transplantation. Cyclosporine A is a current topic of research; preliminary results have shown it to be effective. Though early research on hematopoietic stem cell transplantation was equivocal, later research has shown it to improve immune function.\nPatients with Combined Immunodeficiency (CID) generally experience a survival advantage when receiving hematopoietic stem cell transplantation (HSCT) prior to experiencing end-organ damage from significant infectious and inflammatory complications. This is particularly important for DOCK8 Immunodeficiency considering that some patients (30% in the study) did not fully recover their lung function due to pre-existing lung damage (typically from chronic respiratory infections) before treatment.\nFortunately, modern HSCT treatments have reported good HSCT outcomes among young adults. Furthermore, most patients had their eczema and molluscum contagiosum infections resolved or improved post HSCT treatment.\n\nPrognosis\nChildren with DOCK8 deficiency do not tend to live long; sepsis is a common cause of death at a young age. CNS and vascular complications are other common causes of death.\n\nEpidemiology\nDOCK8 deficiency is very rare, estimated to be found in less than one person per million; there have been 32 patients diagnosed as of 2012.\n\nHistory\nDOCK8 deficiency was first described in 2004. The mutation was discovered in 2009.\n\nReferences\n\n\n== External links ==",
+          "cos_sim_score": 0.25777095556259155,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Sung-Yun Pai",
+          "title": "Sung-Yun Pai",
+          "url": "https://en.wikipedia.org/wiki/Sung-Yun_Pai",
+          "text": "Sung-Yun Pai is an American physician-scientist and pediatric hematologist-oncologist serving as chief of the Immune Deficiency Cellular Therapy Program at the National Cancer Institute since 2020. Her research focuses on cellular and gene therapies for inborn errors of immunity, including severe combined immunodeficiency, Wiskott\u2013Aldrich syndrome, and DOCK8 deficiency.\n\nEarly life and education\nPai was raised in the Northeastern United States. Her mother graduated from medical school in Seoul, Korea in 1964 as one of six women in her class. Pai attended Miss Porter's School. She earned an undergraduate degree in East Asian Languages and Civilizations. She received her M.D. from Harvard Medical School.\nDuring medical school, Pai took a year off and worked in the laboratory of Barbara Bierer at Brigham and Women's Hospital, where she conducted calcineurin phosphatase assays and investigated the effects of cyclosporine A in transplant patients. This experience introduced her to the field of transplant and immunology. At Harvard, her research focused on the cellular biology of calcineurin and the mechanisms of action of cyclosporine, tacrolimus, and sirolimus.\nPai completed a residency in pediatrics at Boston Children's Hospital and a fellowship in pediatric hematology-oncology at  Boston Children's Hospital and the Dana\u2013Farber Cancer Institute. She performed postdoctoral research in the laboratories of Jeffrey Leiden, I-Cheng Ho, and Laurie Glimcher on the roles of the transcription factor GATA3 in thymocyte development, T helper 2 cell function, CD8 T cells, invariant NK-T cells, and in breast cancer and keratinocyte biology.\n\nCareer\nAs a faculty member at Harvard Medical School, Pai specialized in hematopoietic stem cell transplantation for pediatric patients with inborn errors of immunity. She also led a research program on the development and implementation of clinical trials in transplantation and gene therapy for these conditions. She was appointed associate professor in 2016 and served as associate director and then co-director of the gene therapy program at Boston Children's Hospital\nIn 2020, Pai joined the National Cancer Institute (NCI) and the National Institute of Allergy and Infectious Diseases as chief of the Immune Deficiency Cellular Therapy Program. She is also a senior investigator at the Center for Cancer Research at the NCI. Her work focuses on cellular and gene therapies for inborn errors of immunity, including severe combined immunodeficiency (SCID), Wiskott\u2013Aldrich syndrome (WAS), and DOCK8 deficiency.\nAs of 2025, Pai leads two multi-institutional trials in SCID. One is the Conditioning SCID Infants Diagnosed Early (CSIDE) trial, which compares low- and moderate-dose busulfan conditioning before allogeneic hematopoietic stem cell transplantation in SCID patients with IL2RG, JAK3, RAG1, or RAG2 mutations. Her group also analyzes outcomes of a gene therapy trial for X-linked SCID.\nIn the context of WAS and DOCK8 deficiency, her laboratory studies cytoskeletal regulation in immune cells and is developing gene therapy strategies based on their shared expression patterns to achieve regulated expression in immune cells.\n\nPersonal life\nPai has children with her husband who is a retired colonel in the U.S. Army.\n\n\n== References ==",
+          "cos_sim_score": 0.130179762840271,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

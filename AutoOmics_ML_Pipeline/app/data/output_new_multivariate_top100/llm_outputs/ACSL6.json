@@ -1,0 +1,227 @@
+{
+  "probe_id": "11722470_x_at",
+  "gene_symbol": "ACSL6",
+  "rf_importance": 0.0002,
+  "selection_freq": 0.6,
+  "abs_fold_change": 2.4637315999999982,
+  "score": 0.3438,
+  "probe_count": 1,
+  "probe_ids": "11722470_x_at",
+  "max_score": 0.3438,
+  "mean_abs_fold_change": 2.4637,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T21:56:35",
+  "interpretation": "ACSL6 encodes a protein that catalyzes the conversion of long-chain fatty acids into acyl-CoA, which is crucial for lipid metabolism. This gene plays a significant role in fatty acid metabolism, particularly in the brain, and its dysregulation may contribute to metabolic disturbances associated with steroid-induced osteonecrosis of the femoral head (SONFH). Although there is no direct evidence linking ACSL6 to SONFH, the gene's involvement in lipid metabolism suggests a potential pathway through which glucocorticoids could influence bone health by altering fat storage and metabolism, which are known to be affected in SONFH. The evidence supporting this connection is weak, primarily relying on biological inference rather than direct studies linking ACSL6 to SONFH. Therefore, while ACSL6 may have some relevance as a biomarker, its clinical utility in early detection of SONFH remains uncertain.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "ACSL6 may be involved in lipid metabolism alterations that contribute to the pathophysiology of steroid-induced osteonecrosis of the femoral head (SONFH).",
+  "citations": [
+    "ACSL6 (Q9UKU0). https://www.uniprot.org/uniprotkb/Q9UKU0",
+    "ACSL6 (Q9UKU0-7). https://www.uniprot.org/uniprotkb/Q9UKU0-7",
+    "ACSL6 (Q9UKU0-9). https://www.uniprot.org/uniprotkb/Q9UKU0-9",
+    "ACSL6 \u2014 ACSL6. https://platform.opentargets.org/target/ENSG00000164398",
+    "ACSL6 \u2194 asthma. https://platform.opentargets.org/target/ENSG00000164398/associations",
+    "ACSL6 \u2194 placenta praevia. https://platform.opentargets.org/target/ENSG00000164398/associations",
+    "ACSL6 \u2194 hypertension. https://platform.opentargets.org/target/ENSG00000164398/associations",
+    "ACSL6 \u2194 atopic eczema. https://platform.opentargets.org/target/ENSG00000164398/associations",
+    "ACSL6 \u2014 acyl-CoA synthetase long chain family member 6 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "IL18 \u2014 interleukin 18 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ACSL6-AS1 \u2014 ACSL6 antisense RNA 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "PRNP \u2014 prion protein (Kanno blood group) (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ACSL6-AS2 \u2014 ACSL6 antisense RNA 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Accumulation of Fat Not Responsible for Femoral Head Necrosis, Revealed by Single-Cell RNA Sequencing: A Preliminary Study (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9856115/",
+    "Sulfated polysaccharide prevents senescent adipocyte-driven osteonecrosis by stem cell fate reprogramming (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12859453/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 7902,
+    "completion_tokens": 329,
+    "total_tokens": 8231,
+    "estimated_cost_usd": 0.001383
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9UKU0",
+          "title": "ACSL6 (Q9UKU0)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UKU0",
+          "text": "Protein: Long-chain-fatty-acid--CoA ligase 6\nFunction: Catalyzes the conversion of long-chain fatty acids to their active form acyl-CoA for both synthesis of cellular lipids, and degradation via beta-oxidation (PubMed:22633490, PubMed:24269233). Plays an important role in fatty acid metabolism in brain and the acyl-CoAs produced may be utilized exclusively for the synthesis of the brain lipid",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9UKU0-7",
+          "title": "ACSL6 (Q9UKU0-7)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UKU0-7",
+          "text": "Protein: Isoform 7 of Long-chain-fatty-acid--CoA ligase 6",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9UKU0-9",
+          "title": "ACSL6 (Q9UKU0-9)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UKU0-9",
+          "text": "Protein: Isoform 9 of Long-chain-fatty-acid--CoA ligase 6",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000164398::function",
+          "title": "ACSL6 \u2014 ACSL6",
+          "url": "https://platform.opentargets.org/target/ENSG00000164398",
+          "text": "Function: Catalyzes the conversion of long-chain fatty acids to their active form acyl-CoA for both synthesis of cellular lipids, and degradation via beta-oxidation (PubMed:22633490, PubMed:24269233). Plays an important role in fatty acid metabolism in brain and the acyl- CoAs produced may be utilized exclusively for the synthesis of the brain lipid.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000164398::MONDO_0004979",
+          "title": "ACSL6 \u2194 asthma",
+          "url": "https://platform.opentargets.org/target/ENSG00000164398/associations",
+          "text": "Disease: asthma\nDescription: A bronchial disease that is characterized by chronic inflammation and narrowing of the airways, which is caused by a combination of environmental and genetic factors resulting in recurring periods of wheezing (a whistling sound while breathing), chest tightness, shortness of breath, mucus production and coughing. The symptoms appear due to a variety of triggers such as allergens, irritants, respiratory infections, weather changes, exercise, stress, reflux disease, medications, foods and emotional anxiety.\nAssociation score: 0.343",
+          "cos_sim_score": 0.34253299441263063,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000164398::EFO_0007442",
+          "title": "ACSL6 \u2194 placenta praevia",
+          "url": "https://platform.opentargets.org/target/ENSG00000164398/associations",
+          "text": "Disease: placenta praevia\nDescription: Abnormal placentation in which the placenta implants in the lower segment of the uterus (the zone of dilation) and may cover part or all of the opening of the cervix. It is often associated with serious antepartum bleeding and premature labor.\nAssociation score: 0.316",
+          "cos_sim_score": 0.31563764110036774,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000164398::EFO_0000537",
+          "title": "ACSL6 \u2194 hypertension",
+          "url": "https://platform.opentargets.org/target/ENSG00000164398/associations",
+          "text": "Disease: hypertension\nDescription: Persistently high systemic arterial blood pressure. Based on multiple readings (blood pressure determination), hypertension is currently defined as when systolic pressure is consistently greater than 140 mm Hg or when diastolic pressure is consistently 90 mm Hg or more.\nAssociation score: 0.294",
+          "cos_sim_score": 0.2935372618055133,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000164398::EFO_0000274",
+          "title": "ACSL6 \u2194 atopic eczema",
+          "url": "https://platform.opentargets.org/target/ENSG00000164398/associations",
+          "text": "Disease: atopic eczema\nDescription: A common chronic pruritic inflammatory skin disease with a strong genetic component. Onset typically occurs during the first 2 years of life.\nAssociation score: 0.290",
+          "cos_sim_score": 0.28986783021311086,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "ACSL6 \u2014 acyl-CoA synthetase long chain family member 6",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ACSL6\nGene name: acyl-CoA synthetase long chain family member 6\nAliases / synonyms: ACS2, FACL6, LACS 6, LACS2, LACS5\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene catalyzes the formation of acyl-CoA from fatty acids, ATP, and CoA, using magnesium as a cofactor. The encoded protein plays a major role in fatty acid metabolism in the brain. Translocations with the ETV6 gene are causes of myelodysplastic syndrome with basophilia, acute myelogenous leukemia with eosinophilia, and acute eosinophilic leukemia. Several transcript variants encoding different isoforms have been found for this gene.[provided by RefSeq, Apr 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ACSL6",
+          "aliases": "ACS2, FACL6, LACS 6, LACS2, LACS5",
+          "gene_description": "acyl-CoA synthetase long chain family member 6"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "IL18 \u2014 interleukin 18",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: IL18\nGene name: interleukin 18\nAliases / synonyms: IGIF, IL-18, IL-1g, IL1F4\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a proinflammatory cytokine of the IL-1 family that is constitutively found as a precursor within the cytoplasm of a variety of cells including macrophages and keratinocytes. The inactive IL-18 precursor is processed to its active form by caspase-1, and is capable of stimulating interferon gamma production, and of regulating both T helper (Th) 1 and Th2 responses. This cytokine has been implicated in the injury of different organs, and in potentially fatal conditions characterized by a cytokine storm. In humans, IL-18 gene is located on chromosome 11. Alternatively spliced transcript variants encoding different isoforms have been found for this gene.[provided by RefSeq, Aug 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "IL18",
+          "aliases": "IGIF, IL-18, IL-1g, IL1F4",
+          "gene_description": "interleukin 18"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ACSL6-AS1 \u2014 ACSL6 antisense RNA 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ACSL6-AS1\nGene name: ACSL6 antisense RNA 1\nOrganism: Homo sapiens",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ACSL6-AS1",
+          "aliases": "",
+          "gene_description": "ACSL6 antisense RNA 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "PRNP \u2014 prion protein (Kanno blood group)",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PRNP\nGene name: prion protein (Kanno blood group)\nAliases / synonyms: ASCR, AltPrP, CD230, CJD, GSS, KURU, PRIP, PrP, PrP27-30, PrP33-35C, PrPc, p27-30\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a membrane glycosylphosphatidylinositol-anchored glycoprotein that tends to aggregate into rod-like structures. The encoded protein contains a highly unstable region of five tandem octapeptide repeats. This gene is found on chromosome 20, approximately 20 kbp upstream of a gene which encodes a biochemically and structurally similar protein to the one encoded by this gene. Mutations in the repeat region as well as elsewhere in this gene have been associated with Creutzfeldt-Jakob disease, fatal familial insomnia, Gerstmann-Straussler disease, Huntington disease-like 1, and kuru. An overlapping open reading frame has been found for this gene that encodes a smaller, structurally unrelated protein, AltPrp. Alternative splicing results in multiple transcript ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PRNP",
+          "aliases": "ASCR, AltPrP, CD230, CJD, GSS, KURU, PRIP, PrP, PrP27-30, PrP33-35C, PrPc, p27-30",
+          "gene_description": "prion protein (Kanno blood group)"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ACSL6-AS2 \u2014 ACSL6 antisense RNA 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ACSL6-AS2\nGene name: ACSL6 antisense RNA 2\nOrganism: Homo sapiens",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ACSL6-AS2",
+          "aliases": "",
+          "gene_description": "ACSL6 antisense RNA 2"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::9856115",
+          "title": "Accumulation of Fat Not Responsible for Femoral Head Necrosis, Revealed by Single-Cell RNA Sequencing: A Preliminary Study",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9856115/",
+          "text": "1. Introduction\nOsteonecrosis of the femoral head (ONFH) is a debilitating disease that mainly affects younger and active populations. It has been estimated that 100,000 to 200,000 patients are newly diagnosed each year in China [1]. Our previous epidemiological study found that the age (mean \u00b1 SD) of patients with ONFH was 46.45 \u00b1 13.80 years, with a male predominance (70.1% of all ONFH cases). Of all patients with ONFH, 24.1% are steroid induced, among whom 18.53% are diagnosed with systemic lupus erythematosus (SLE), based on our previous study [2]. SLE is a systemic autoimmune disease that is clinically characterized by multi-system and multi-organ involvement [3]. The prevalence of SLE is estimated to be 30\u201350/100,000 worldwide [4,5,6], and 30\u201370/100,000 in the Chinese mainland [7,8]. Additionally, the prevalence of SLE has been gradually increasing, and increased from 64.99/100,000 in 1999 to 97.04/100,000 in 2012 in the United Kingdom [3]. However, SLE mortality has declined from 50% in the pre-corticosteroid era (circa 1948) to a 15-year survival of 85\u201395% in the modern era [4]. Glucocorticoids are commonly used in the treatment of SLE to induce remission and have been recommended by many international guidelines to control the disease [9,10,11,12]. It is worth noting that there is a close relationship between SLE and ONFH, and the incidence of ONFH is higher in patients with SLE than that in patients without SLE [13,14]. Additionally, it has been reported that the systemic use of glucocorticoids is an independent risk factor in ONFH, and the incidence of ONFH has been shown to be 6.7% with glucocorticoids treatment > 2.0 g [15,16,17]. Although hip arthroplasty has been shown to be successful in curing end-stage ONFH, it will bring a heavy economic burden to patients and society. Accordingly, it is of great clinical significance to investigate the underlying mechanism of glucocorticoid-induced ONFH to facilitate the development of earlier and less invasive therapy to prevent and even reverse the process of ONFH and further hip arthroplasty.\nMost recent studies concerning glucocorticoid-induced ONFH focus on the osteogenesis and angiogenesis and adipogenesis potential and apoptosis of osteogenic cells [18,19,20], and few researchers have systematically studied the alternations of other cell types in the microenvironment surrounding osteogenic cells in response to glucocorticoid therapy. Our previous study showed that a high dosage of glucocorticoids promoted adipogenic differentiation and cell apoptosis, and inhibited the osteogenic differentiation and cell proliferation of hBMSCs [21], which has also been demonstrated by other research groups [22,23]. To further illustrate the underlying molecular mechanism, our team found that long non-coding RNA (lncRNA) RP11-154D6 promoted osteogenic differentiation while inhibiting adipogenic differentiation of hBMSCs [24]. Recently, the changes of cell types and biological functions in the context of SLE have attracted increasing attention based on the results of single-cell RNA sequencing analysis (scRNA-seq). Previous studies have reported a high interferon-stimulated gene expression signature derived from a small number of transcriptionally defined subpopulations within major cell types in peripheral blood mononuclear cells, including monocytes, CD4+ and CD8+ T cells, natural killer cells, conventional and plasmacytoid dendritic cells, B cells, and especially plasma cells [25]. Compared to other immune cell subsets, low-density granulocytes display the highest expression of interferon-inducible genes. Additionally, low-density granulocytes in peripheral blood of SLE patients increase and may promote immune dysregulation and prominent vascular damage characteristic of the disease [26]. Studies have shown that long-term use of glucocorticoids may lead to the following changes, including but not limited to abnormal lipid metabolism [27,28], vascular endothelial cell damage [27,29], micro-thrombosis [27,30], and high intraosseous pressure of the femoral head [31], all of which eventually cause ONFH. Interestingly, the relationship among these changes needs to be further clarified, and the corresponding cell types with changed biological functions in bone marrow microenvironment remain unclear.",
+          "cos_sim_score": 0.5331620573997498,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12859453",
+          "title": "Sulfated polysaccharide prevents senescent adipocyte-driven osteonecrosis by stem cell fate reprogramming",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12859453/",
+          "text": "2.8\nThe unique anti-aging profile of SCS in the treatment of osteonecrosis exhibits a sulfation-degree\u2013dependent characteristic of its glycan structure",
+          "cos_sim_score": 0.48832064867019653,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12859453",
+          "title": "Sulfated polysaccharide prevents senescent adipocyte-driven osteonecrosis by stem cell fate reprogramming",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12859453/",
+          "text": "(Q) ELISA quantification of the osteogenic factor osteocalcin in peripheral serum at week 6. n\u00a0=\u00a06 biological replicates. Data are presented as mean\u00a0\u00b1\u00a0SD. \u2217p\u00a0<\u00a00.05, \u2217\u2217p\u00a0<\u00a00.01, \u2217\u2217\u2217p\u00a0<\u00a00.001, \u2217\u2217\u2217\u2217p\u00a0<\u00a00.0001; ns, not significant. Statistical significance was determined using one-way ANOVA with Tukey's post hoc test (C, D, F, G, H, J, L, N, O, P and Q).\nGiven that osteonecrosis is characterized by drug-induced osteocyte death and subsequent formation of necrotic bone matrix, hematoxylin and eosin (H&E) staining was employed for histological assessment of osteocyte alterations within bone lacunae. In the MPS group, marked nuclear pyknosis, cytoplasmic clearing, and widespread empty osteocyte lacunae were observed in the trabecular matrix of the bone marrow cavity at both the epiphyseal and metaphyseal regions by week 6 (Fig. 1B). Similarly, the cortical bone at the periosteal surface exhibited a high percentage of empty lacunae, reaching up to 80\u00a0%, consistent with typical histopathological features of osteonecrosis. In contrast, mice receiving SCS treatment exhibited significantly less structural damage and reduced bone marrow cell injury across all three regions at the same time point. Magnified views revealed preserved morphology of bone marrow cells and a markedly reduced proportion of empty lacunae (\u223c19\u00a0%), indicating the absence of classic osteonecrotic features (Fig. 1C and D). To investigate the effects of SCS treatment on osteogenesis and angiogenesis coupling, arterial endothelial cells (CD45\u2212Ter119\u2212CD31+) were isolated by magnetic bead sorting on day 42. The endothelial cell tube formation ability was assessed using a 2D capillary tube formation assay. After pre-incubating CD31+ endothelial cells (ECs) with LepR+ MSCs in a Transwell co-culture system, the cumulative tube formation length and the number of complete tubular structures were significantly higher compared to endothelial cells cultured alone (Fig. S4A\u2013C). When LepR+ MSCs were pre-incubated with CD31+ ECs in a Transwell co-culture system, ARS staining showed a significant increase in the area of mineralized nodules compared to the same group of SCS-treated monocultured LepR+ MSCs (Fig. S4D and E). These results indicate that osteogenesis and angiogenesis are coupled persistently. To evaluate the local retention of SCS in vivo, FITC-labeled SCS was injected intramedullarily, and fluorescence co-staining with lectin-positive interconnected blood vessels was performed at different time points. The results showed that on day 3 post-injection, the bone marrow cavity was filled with a high-density green fluorescence signal from SCS, which was uniformly distributed without local aggregation (Fig. S5A). Over time, the fluorescence signal of SCS gradually diminished, but residual SCS was still visible in the bone marrow cavity on day 14, disappearing by day 21 (Fig. S5C). Notably, SCS exhibited clear co-localization with lectin-positive interconnected blood vessels, and the vascular network remained intact, with no attenuation observed due to glucocorticoid administration (Fig. S5B).",
+          "cos_sim_score": 0.45238810777664185,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12859453",
+          "title": "Sulfated polysaccharide prevents senescent adipocyte-driven osteonecrosis by stem cell fate reprogramming",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12859453/",
+          "text": "3\nDiscussion\nHigh-dose or long-term administration of glucocorticoids (GC; such as methylprednisolone, dexamethasone, and hydrocortisone) is widely recognized as a major risk factor for skeletal deterioration [52]. Osteonecrosis can occur in nearly all bones of the body under such conditions [[2], [3], [4], [5]]. An increasing body of evidence suggests that GC-induced osteonecrosis is closely associated with cellular senescence. Studies have demonstrated that senescent cells accumulate in affected bone tissues, exhibiting a serpentine band-like distribution with distal protrusions [18]. Moreover, senescent bone marrow adipocyte (BMAd)-lineage cells exhibit a senescence-associated secretory phenotype (SASP), which transmits deleterious signals to the surrounding microenvironment through paracrine mechanisms. This exacerbates degenerative changes in bone tissue and impairs the migration and replacement processes of bone repair-associated cells [27,53]. Therefore, it is imperative to develop novel biomaterial-based therapeutic strategies that can effectively eliminate or reverse primarily senescent cells induced by direct injury, thereby halting the progression of bone deterioration and addressing the current gap in prophylactic interventions for this condition. In this study, we demonstrated that sulfated chitosan (SCS) effectively attenuates the global senescence of bone marrow-derived multipotent cells following MPS treatment, thereby preserving the coupling between osteogenesis and arteriogenic vascularization, and ultimately preventing the onset of subsequent bone deterioration. Notably, GC-induced cellular senescence exhibits a sequential and cascade-amplifying nature. Thus, SCS may exert its anti-senescent effects through two potential mechanisms: (1) by inhibiting the generation of primary senescent cells caused by direct cellular injury, thereby reducing the SASP-mediated induction of secondary senescence in neighboring cells; and (2) by directly eliminating pre-existing senescent bone marrow cells, thereby restoring a regenerative microenvironment and maintaining skeletal homeostasis. Our study shows that SCS does not directly interfere with the prostaglandin/PPAR\u03b3/INK positive feedback loop that drives senescence in the bone marrow adipocyte lineage following MPS exposure. However, SCS reprograms the lineage commitment of leptin receptor+ (LepR+) mesenchymal stem cells (MSCs), redirecting their adipogenic inclination toward osteogenic differentiation. Functioning as a key extracellular matrix modulator, SCS activates the IGF-1/PI3K/Akt/mTOR signaling pathway. This activation reduces the production of senescent adipocytes derived from LepR+ MSCs and suppresses the production of senescence-associated factors. As a result, the progression toward bone deterioration is effectively halted. Importantly, LepR+ MSCs pre-treated with SCS exhibited a restored osteogenic\u2013adipogenic differentiation balance in vitro, and maintained skeletal integrity without signs of senescence-associated bone degeneration upon long-term adoptive transfer in vivo. By specifically targeting the cascade of early-onset cellular senescence, this class of biomaterials effectively halts the onset and progression of bone disorders at its initial stages. As such, it represents a promising prophylactic strategy for the prevention of bone homeostasis disruption.\nExtensive studies have demonstrated the vascular heterogeneity of bone marrow capillaries across the metaphysis and diaphysis. The metaphyseal region is enriched with columnar Type H vessels (CD31hiEmcnhi, exhibiting arterial characteristics) and arterioles (Sca-1hiCD31hi), which are highly coupled with perivascular osteoprogenitor cells expressing the transcription factor Osterix [[46], [47], [48],54]. Moreover, LepR+ MSCs, which represent an upstream and highly heterogeneous population of bone marrow-derived multipotent cells, exhibit lineage commitment regulated by vascular subtypes. Specifically, LepR+ MSC subpopulations residing in perivascular arterial niches tend to differentiate toward the osteogenic lineage (e.g., LepR+Osteolectin+), whereas those located in perisinusoidal regions preferentially undergo adipogenic differentiation [55]. Our study revealed that by week 6 following MPS administration, mice exhibited classical histological features of bone deterioration in the femur, characterized by significantly reduced osteogenic activity and impaired vascularization. However, combined treatment with MPS and SCS markedly increased the proportion of Type H ECs and arterial ECs, thereby preserving the tight coupling between osteogenesis and arteriogenic vascularization. This vascular-osteogenic synergy contributed to the sustained presence of mature osteoblasts and osteoprogenitor cells in the affected bone region.",
+          "cos_sim_score": 0.45050984621047974,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12859453",
+          "title": "Sulfated polysaccharide prevents senescent adipocyte-driven osteonecrosis by stem cell fate reprogramming",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12859453/",
+          "text": "1\nIntroduction\nChronic or excessive administration of glucocorticoid (GC) represents one of the primary risk factors contributing to skeletal degeneration, commonly associated with the development of osteonecrosis [1]. This pathological condition can affect virtually any skeletal site, with a predilection for the hip, followed by the femoral condyles, proximal tibia, vertebrae, and small bones of the hands and feet [[2], [3], [4], [5]]. At the cellular level, GC exert their deleterious effects through activation of intracellular GC receptors, leading to apoptosis of osteoblasts and osteocytes and disruption of bone tissue homeostasis [6]. Concurrently, GC upregulate RANKL expression, thereby promoting osteoclast differentiation and maturation, and accelerating bone resorption in affected areas [7,8]. In the absence of effective interventions, patients typically progress to severe functional impairment within 1\u20134 years, significantly compromising quality of life [9]. For individuals diagnosed at an early stage, conservative treatment is often pursued. Currently, core decompression remains widely adopted intervention. However, this surgical approach is invasive, and the resultant bone defects pose significant challenges for subsequent healing. Postoperatively, the compromised mechanical strength of the lesion site renders the repair zone incapable of withstanding physiological stress induced by repetitive high-frequency loading, ultimately resulting in insufficient biomechanical support [[10], [11], [12]]. Moreover, the early-stage symptoms in patients are often insidious, and the characteristic radiating pain typically does not manifest until the disease has progressed to the middle or late stages, by which point the optimal window for therapeutic intervention has already been missed [[13], [14], [15]]. As a result, prosthetic joint replacement becomes the primary treatment option available at that stage. Nevertheless, the long-term use of artificial prostheses is associated with progressive material wear, releasing micro- and nanoparticles that may elicit chronic local inflammatory responses. This can culminate in osteolysis, thereby markedly increasing the complexity and failure risk of subsequent revision surgeries [16,17]. In recent years, the principle of \u201cprevention over treatment\u201d has increasingly emerged as an important guiding concept within modern life sciences. This concept emphasizes the implementation of proactive strategies aimed at reducing disease incidence and delaying progression, offering superior benefits in preserving patient quality of life. In alignment with this paradigm, there is an urgent need to develop prophylactic interventions capable of halting GC-induced skeletal degeneration, thereby enabling early protection of high-risk populations and delaying the progression of pathological processes.",
+          "cos_sim_score": 0.4485333263874054,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

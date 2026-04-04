@@ -1,0 +1,160 @@
+{
+  "probe_id": "11716904_s_at",
+  "gene_symbol": "TGOLN2",
+  "score": 1.0,
+  "SD_TestAUC": 0.0811440825933579,
+  "abs_fold_change": 0.8256,
+  "probe_count": 2,
+  "probe_ids": "11716904_s_at | 11716903_a_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.8848,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:38:52",
+  "interpretation": "TGOLN2 encodes a protein involved in regulating membrane traffic within the trans-Golgi network, which is crucial for protein sorting and transport. While there is no direct evidence linking TGOLN2 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), it has been associated with osteoporosis, a condition that shares some pathophysiological features with SONFH, such as bone density loss and fragility. The retrieved evidence indicates a potential indirect connection through its role in bone metabolism and cellular trafficking, which may influence osteoblast and osteoclast function. However, the evidence is limited, and the specific role of TGOLN2 in SONFH remains unclear, leading to a low confidence in its utility as a biomarker. Thus, while TGOLN2 may have some relevance in the context of bone health, its potential as an early-detection biomarker for SONFH is weak and requires further investigation.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "TGOLN2 may be indirectly related to Steroid-Induced Osteonecrosis of the Femoral Head through its association with osteoporosis and bone metabolism.",
+  "citations": [
+    "TGOLN2 (O43493). https://www.uniprot.org/uniprotkb/O43493",
+    "TGOLN2 (O43493-5). https://www.uniprot.org/uniprotkb/O43493-5",
+    "TGOLN2 (O43493-3). https://www.uniprot.org/uniprotkb/O43493-3",
+    "TGOLN2 \u2014 TGOLN2. https://platform.opentargets.org/target/ENSG00000152291",
+    "TGOLN2 \u2194 postmenopausal osteoporosis. https://platform.opentargets.org/target/ENSG00000152291/associations",
+    "TGOLN2 \u2194 osteoporosis. https://platform.opentargets.org/target/ENSG00000152291/associations",
+    "TGOLN2 \u2194 peripheral vascular disease. https://platform.opentargets.org/target/ENSG00000152291/associations",
+    "TGOLN2 \u2194 12q14 microdeletion syndrome. https://platform.opentargets.org/target/ENSG00000152291/associations",
+    "TGOLN2. https://en.wikipedia.org/wiki/TGOLN2",
+    "LCHN. https://en.wikipedia.org/wiki/LCHN",
+    "NBPF26. https://en.wikipedia.org/wiki/NBPF26",
+    "Chromosome 2. https://en.wikipedia.org/wiki/Chromosome_2"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5963,
+    "completion_tokens": 259,
+    "total_tokens": 6222,
+    "estimated_cost_usd": 0.00105
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O43493",
+          "title": "TGOLN2 (O43493)",
+          "url": "https://www.uniprot.org/uniprotkb/O43493",
+          "text": "Protein: Trans-Golgi network integral membrane protein 2\nFunction: May be involved in regulating membrane traffic to and from trans-Golgi network",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::O43493-5",
+          "title": "TGOLN2 (O43493-5)",
+          "url": "https://www.uniprot.org/uniprotkb/O43493-5",
+          "text": "Protein: Isoform 5 of Trans-Golgi network integral membrane protein 2",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::O43493-3",
+          "title": "TGOLN2 (O43493-3)",
+          "url": "https://www.uniprot.org/uniprotkb/O43493-3",
+          "text": "Protein: Isoform TGN48 of Trans-Golgi network integral membrane protein 2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000152291::function",
+          "title": "TGOLN2 \u2014 TGOLN2",
+          "url": "https://platform.opentargets.org/target/ENSG00000152291",
+          "text": "Function: May be involved in regulating membrane traffic to and from trans-Golgi network.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000152291::EFO_0003854",
+          "title": "TGOLN2 \u2194 postmenopausal osteoporosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000152291/associations",
+          "text": "Disease: postmenopausal osteoporosis\nDescription: Metabolic disorder associated with fractures of the femoral neck, vertebrae, and distal forearm. It occurs commonly in women within 15-20 years after menopause, and is caused by factors associated with menopause including estrogen deficiency.\nAssociation score: 0.055",
+          "cos_sim_score": 0.05491956640614669,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000152291::EFO_0003882",
+          "title": "TGOLN2 \u2194 osteoporosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000152291/associations",
+          "text": "Disease: osteoporosis\nDescription: A condition of reduced bone mass, with decreased cortical thickness and a decrease in the number and size of the trabeculae of cancellous bone (but normal chemical composition), resulting in increased fracture incidence. Osteoporosis is classified as primary (Type 1, postmenopausal osteoporosis; Type 2, age-associated osteoporosis; and idiopathic, which can affect juveniles, premenopausal women, and middle-aged men) and secondary osteoporosis (which results from an identifiable cause of bone mass loss).\nAssociation score: 0.055",
+          "cos_sim_score": 0.05491956640614669,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000152291::EFO_0003875",
+          "title": "TGOLN2 \u2194 peripheral vascular disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000152291/associations",
+          "text": "Disease: peripheral vascular disease\nDescription: Pathological processes involving any one of the BLOOD VESSELS in the vasculature outside the HEART.\nAssociation score: 0.046",
+          "cos_sim_score": 0.04622418032313512,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000152291::MONDO_0019784",
+          "title": "TGOLN2 \u2194 12q14 microdeletion syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000152291/associations",
+          "text": "Disease: 12q14 microdeletion syndrome\nDescription: 12q14 microdeletion syndrome is characterized by mild intellectual deficit, failure to thrive, short stature and osteopoikilosis. It has been described in four unrelated patients. The syndrome appears to be caused by a heterozygous deletion at chromosome region 12q14, which was detected in three of the four patients. The deleted region contains the LEMD3 gene: mutations in this gene have already been implicated in osteopoikilosis.\nAssociation score: 0.044",
+          "cos_sim_score": 0.04406870187260384,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::TGOLN2",
+          "title": "TGOLN2",
+          "url": "https://en.wikipedia.org/wiki/TGOLN2",
+          "text": "Trans-Golgi network integral membrane protein 2 is a protein that in humans is encoded by the TGOLN2 gene.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.5221914052963257,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::LCHN",
+          "title": "LCHN",
+          "url": "https://en.wikipedia.org/wiki/LCHN",
+          "text": "TGOLN2\nIn affinity chromatography studies, LCHN has been reported to have a physical association with TGOLN2, a surface protein of the Golgi apparatus. This likely explains immunohistochemical finding of strong LCHN localization near the Golgi apparatus  despite being a predicted cytoplasmic protein.\n\nKallikreins\nAffinity chromatography studies have also reported a physical association between LCHN and kallikreins KLK5 and KLK11, serine proteases. It is possible that cleavage by these proteases may be relevant to LCHN's function.\n\nEFNB3\nLCHN has been reported to be capable of a physical association with EFNB3, an ephrin receptor ligand with reported importance in neuronal development. This, coupled with the high expression of LCHN in the developing central nervous system, suggests that binding of LCHN to EFNB3 may modulate neuronal development.\n\nPredicted function\nNeuronal insult\nLCHN expression has been reported to be unregulated following ischemic stroke, chronic alcoholism, and cell culture responses of immature and mature dendrites to prolonged hypoxia. Additionally, decreased expression as a result of CpG methylation has been implicated to be pathogenic in patients with FTD-ALS. Within the predicted promoter of KIAA1147, there are predicted binding sites for hypoxia response elements that would accompany ischemic stroke,  heat shock proteins, factors related to the glucocorticoid mediated stress response, and cAMP responsive factors related to the ER stress response. Due to the reported evidence of LCHN upregulation following ischemic stroke, which often results in neuronal damage or death, as well presence of several binding sites for factors induced by rapid trauma to the brain, it is likely that KIAA1147 plays a role in the brain\u2019s response to sudden stress and injury.\n\nNeuronal development\nThe presence of the SPA domain within LCHN suggests that it may play a role in cell division. LCHN has been shown to physically associate with EFNB3, a protein with reported importance in neuronal development. A second reported association with SETBP1 may open up the possibility for LCHN to play a role in cell cycle regulation from within the nucleus. The predicted KIAA1147 promoter contains binding sites for cell-division related factors and factors known to have specific expression during neuronal development. RNA in situ hybridization has shown KIAA1147 to be located at high levels in the developing brain. Together, these data suggest that LCHN plays a role in regulating cellular division during development of the brain.\n\nClinical significance\nLCHN has been shown to be upregulated following a number of insults to the brain including the response to chronic alcoholism, immature and mature dendritic response to hypoxia, and ischemic stroke. Recent studies have implicated abnormal CpG methylation of LCHN in FTD-ALS. No disease causing SNPs in LCHN have been reported with high frequency.\n\nHomology\n\nThere are no reported paralogs of LCHN in humans. LCHN homologs exist in animals dating back to the earliest sponges, with a notable lack of reported expression in Drosophila and C. elegans. There are also a number of LCHN homologs in protists including choanoflagellates, amoeba, and algae, as well as other unicellular eukaryotes including fungi. \n\n\n== References ==",
+          "cos_sim_score": 0.26197612285614014,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::NBPF26",
+          "title": "NBPF26",
+          "url": "https://en.wikipedia.org/wiki/NBPF26",
+          "text": "NBPF26, or Neuroblastoma breakpoint family member 26, is a protein encoded by the NBPF26 gene in Homo sapiens. The alias for NBPF26 is notch 2 N-terminal like R (NOTCH2NLR). NBPF26 encodes 13 Olduvai domains, which are thought to contribute to the rapid expansion of the neocortex in humans.\n\nGene\nLocus\nThe NBPF26 gene is located on the plus strand of chromosome 1 (1p11.2) from 120,723,945 to 120,842,229, spanning 118,285 base pairs. NOTCH2NLR is an alias of NBPF26 and overlaps with beginning of NBPF26's coding sequence.\n\nGenomic neighborhood\nWithin the genomic neighborhood of human NBPF26, phosphodiesterase 4D interacting protein-like pseudogene 2 (PDE4DIPP2), NOTCH2NLR, Rosellinia necatrix victorivirus 1-19 (RnVV1-19), and tRNA-Asn (anticodon GTT) 7-1 (TRN-GTT7-1) can be found.\n\nmRNA\nNBPF26 encodes three isoform variants shown in the table below. Isoform one is the longest variant and spans 6,891 base pairs.\n\nProtein\nComposition\nNBPF26 isoform one has a predicted molecular weight of 190 kDa and an isoelectric point of 4.6. Relative to other proteins, NBPF26 is rich in glutamic acid, glutamine, and cysteine, and poor in isoleucine. Two positive charge clusters, spanning 22 amino acids, are located at positions 1,241-1,262 and 1,560-1,581.\n\nMotifs\nFive EGF-like domains and one calcium-binding EGF-like domain are encoded in NBPF26.\nNBPF26 also encodes 13 Olduvai domains. Positions and sequences of Conserved 1-3 (Con1-3) and Human lineage-specific 1-3 (HLS1-3) Olduvai clades are shown in the table below.\n\nPost-translational modifications\nNBPF26 is phosphorylated at amino acids 46, 48, 97, and 228. In addition, NBPF26 is predicted to undergo sulfonation, C-mannosylation, N-glycosylation, and O-glycosylation. Three furin cleavage sites are found at amino acid positions 379, 1252, and 1571.\n\nProtein interactions\nNBPF26 is predicted to interact with Estrogen receptor 1 (ESR1), APEX nuclease (multifunctional DNA repair enzyme) 1 (APEX1), lysine (K)-specific demethylase 1A (KDM1A), trans-golgi network protein 2 (TGOLN2), and tripartite motif containing 25 (TRIM25).\n\nHomology\nOrthologs\nDistant orthologs for human NBPF26 can be found in primates, birds, reptiles, amphibians, fish, and some invertebrates. Select orthologs are shown in the table below.\n\nParalogs\nHuman NBPF26 has multiple paralogs. The top 10 are shown in the table below.\n\nExpression\nNBPF26 RNA expression is ubiquitous throughout human tissue.\n\nClinical Significance\nIn lung cancer, mutations in NBPF26 were associated with local disease recurrence. NBPF26 expression in monocytes was increased in pregnant patients with rheumatoid arthritis compared to pregnancies without rheumatoid arthritis.\n\nConceptual translation\nA conceptual translation of human NBPF26 is shown below. \n\n\n== References ==",
+          "cos_sim_score": 0.20410867035388947,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Chromosome 2",
+          "title": "Chromosome 2",
+          "url": "https://en.wikipedia.org/wiki/Chromosome_2",
+          "text": "Chromosome 2 is one of the twenty-three pairs of chromosomes in humans. People normally have two copies of this chromosome. Chromosome 2 is the second-largest human chromosome, spanning more than 242 million base pairs and representing almost eight percent of the total DNA in human cells.\nChromosome 2 contains the HOXD homeobox gene cluster.\n\nFusion\nHumans have only twenty-three pairs of chromosomes, while all other extant members of Hominidae have twenty-four pairs. Sequencing supports the idea that Neanderthals and Denisovans also had twenty-three pairs.\nHuman chromosome 2 is a result of an end-to-end fusion of two ancestral chromosomes. The evidence for this includes:\n\nThe correspondence of chromosome 2 to two ape chromosomes. The closest human relative, the chimpanzee, has nearly identical DNA sequences to human chromosome 2, but they are found in two separate chromosomes. The same is true of the more distant gorilla and orangutan.\nThe presence of a vestigial centromere. Normally a chromosome has just one centromere, but in chromosome 2 there are remnants of a second centromere in the q21.3\u2013q22.1 region.\nThe presence of vestigial telomeres. These are normally found only at the ends of a chromosome, but in chromosome 2 there are additional telomere sequences in the q13 band, far from either end of the chromosome.\nWe conclude that the locus cloned in cosmids c8.1 and c29B is the relic of an ancient telomere-telomere fusion and marks the point at which two ancestral ape chromosomes fused to give rise to human chromosome 2.\nThe timing of the fusion has been differently estimated by different researchers.\nThe telomere-to-telomere genome assembly and improved genome assembly techniques have enabled a closer look at the repeat-rich fusion site and the two ancestral centromere sites. The chimp and bonobo chromosome 2A and 2B respectively had an end region similar to chromosome 9 (p end) and chromosome 22 (q end). This likely happened in their common ancestor and was fueled by a pericentromeric inversion in each of their ends (the 2A inversion was only seen in these two species; the 2B inversion also in gorillas). The tips of these two end regions were themselves copies of a common ancestor and they were accidentally misaligned together in a human ancestor and lost. The residual segments similar to 9p24.3 and 22q13.33 around the fusion site support this idea. What appears as the modern vestigial telomere was already vestigial at the time of the fusion, as it was actually from the two ancient inversion events.\n\nGenes\nNumber of genes\nThe following are some of the gene count estimates of human chromosome 2. Because researchers use different approaches to genome annotation, their predictions of the number of genes on each chromosome vary. Among various projects, the collaborative consensus coding sequence project (CCDS) takes an extremely conservative strategy. So CCDS's gene number prediction represents a lower bound on the total number of human protein-coding genes.\n\nList of genes\nThe following is a partial list of genes on human chromosome 2. For complete list, see the link in the infobox on the right.\n\np-arm\nPartial list of the genes located on p-arm (short arm) of human chromosome 2:\n\nq-arm\nPartial list of the genes located on q-arm (long arm) of human chromosome 2:\n\nRelated disorders and traits\nThe following diseases and traits are related to genes located on chromosome 2:\n\nCytogenetic band\nReferences\nExternal links\n\nNational Institutes of Health. \"Chromosome 2\". Genetics Home Reference. Archived from the original on 9 March 2016. Retrieved 6 May 2017.\n\"Chromosome 2\". Human Genome Project Information Archive 1990\u20132003. Retrieved 6 May 2017.",
+          "cos_sim_score": 0.15146958827972412,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::LCHN",
+          "title": "LCHN",
+          "url": "https://en.wikipedia.org/wiki/LCHN",
+          "text": "LCHN is a protein that in humans is encoded by the KIAA1147 gene (NCBI Gene ID 57189) located on chromosome 7. It is likely part of the tripartite DENN domain family of proteins that often function as Rab-GEFs to regulate vesicular trafficking. Both the mRNA and protein have been shown to be upregulated following ischemic stroke, and to be produced at altered levels in patients with FTD-ALS, however the gene's contribution to these states is not well understood.\n\nGene\nKIAA1147 is located on the 7th chromosome in humans from bases 141652381-141702188 on the negative strand. Additional names for KIAA1147 include PRO25611, AI841796 in the mouse  and RGD1563986 in the rat.  Only one mRNA transcript of KIAA1147 has been reported in NCBI, and is composed of 9 exons.\n\nProtein\nHuman LCHN is a cytoplasmic protein composed of 455 amino acids predicted to be 51.4 kD before modifications with isoelectric point of 5.06. The majority of its 455 amino acids make up the tripartite DENN domains which are commonly found in proteins that act as Rab-GEFs and regulate vesicular trafficking. LCHN has several predicted phosphorylation sites and contains many motifs for kinase binding. The uDENN and cDENN domains of LCHN are predicted to be primarily coil, while the dDENN domain is predicted to be a combination of alpha helix and beta sheet. The cDENN domain is the most highly conserved domain within DENN family proteins, and is also primarily coil in protein DENND1B, which has been crystallized and confirmed to interact with the guanine nucleotide exchange domain of Rab-35.  LCHN also contains a Stability of Polarity Axis (SPA) region. that may allow it to play a role in cell division.\n\nExpression\nTissues\nThe Human Protein Atlas reports high levels of  KIAA1147 transcription in several brain regions including cerebral cortex, cerebellum, and retina, as well as non-brain regions including spleen, thymus, stomach, prostate, lung,  and ascending colon. Immunohistochemistry has shown LCHN to be localized to the cytoplasmic face of the Golgi apparatus in cell culture, and the brain in mouse fetal development. In the adult mouse and human brain, LCHN is expressed relatively ubiquitously.  Expression of LCHN has been shown to increase in response to chronic alcoholism, immature and mature dendritic response to hypoxia, and ischemic stroke.\n\nTranscriptional regulation\nThere are binding sites for two main groups of transcription factors in the predicted promoter of KIAA1147. The first group consists of elements related to the cell cycle and neuronal development and includes AP-2, NRF1, BRAC, E2F, NEUR, and NRSF. The second consists of elements related to brain insult, including HIFF (hypoxia inducible factor), CREB (cAMP responsive factor linked to ER stress response), GREF (glucocorticoid responsible factor), HEAT (heat shock responsive factor), and HDBP (Huntington's disease regulatory binding protein). In patients with FTD-ALS, there has been reported abnormal upstream CpG methylation of KIAA1147\n\nInteracting proteins\nSETBP1\nYeast two-hybrid assays have shown LCHN to physically interact with SETBP1, a protein that contains 3 nuclear localization signals. Despite the lack of a predicted nuclear localization signal in its own sequence, this interaction suggests that LCHN may be able to enter and have functional importance in the nucleus.\n\nTGOLN2\nIn affinity chromatography studies, LCHN has been reported to have a physical association with TGOLN2, a surface protein of the Golgi apparatus. This likely explains immunohistochemical finding of strong LCHN localization near the Golgi apparatus  despite being a predicted cytoplasmic protein.\n\nKallikreins\nAffinity chromatography studies have also reported a physical association between LCHN and kallikreins KLK5 and KLK11, serine proteases. It is possible that cleavage by these proteases may be relevant to LCHN's function.",
+          "cos_sim_score": 0.10393751412630081,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

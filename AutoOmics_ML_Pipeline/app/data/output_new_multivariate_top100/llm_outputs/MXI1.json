@@ -1,0 +1,184 @@
+{
+  "probe_id": "11730499_a_at",
+  "gene_symbol": "MXI1",
+  "rf_importance": 0.0,
+  "selection_freq": 1.0,
+  "abs_fold_change": 2.279355233333334,
+  "score": 0.3167,
+  "probe_count": 1,
+  "probe_ids": "11730499_a_at",
+  "max_score": 0.3167,
+  "mean_abs_fold_change": 2.2794,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T22:01:23",
+  "interpretation": "MXI1 encodes a transcriptional repressor that interacts with MAX to inhibit MYC activity, which is crucial for regulating cell growth and proliferation. While there is no direct evidence linking MXI1 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in modulating MYC activity suggests a potential involvement in bone metabolism and response to steroid treatment. The retrieved evidence primarily highlights MXI1's function in cancer biology, particularly its tumor suppressor role, but does not establish a clear connection to SONFH. Therefore, the clinical relevance of MXI1 as a biomarker for early detection of SONFH remains weak and speculative, relying on inferred biological mechanisms rather than direct evidence.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "MXI1 may play a role in bone metabolism through its interaction with MYC, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "MXI1 (P50539). https://www.uniprot.org/uniprotkb/P50539",
+    "MXI1 (P50539-3). https://www.uniprot.org/uniprotkb/P50539-3",
+    "MXI1 (P50539-4). https://www.uniprot.org/uniprotkb/P50539-4",
+    "MXI1 \u2014 MXI1. https://platform.opentargets.org/target/ENSG00000119950",
+    "MXI1 \u2194 prostate cancer. https://platform.opentargets.org/target/ENSG00000119950/associations",
+    "MXI1 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000119950/associations",
+    "MXI1 \u2194 Familial prostate cancer. https://platform.opentargets.org/target/ENSG00000119950/associations",
+    "MXI1 \u2194 ovarian cancer. https://platform.opentargets.org/target/ENSG00000119950/associations",
+    "MXI1 \u2014 MAX interactor 1, dimerization protein (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "VEGFA \u2014 vascular endothelial growth factor A (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MYC \u2014 MYC proto-oncogene, bHLH transcription factor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HIF1A \u2014 hypoxia inducible factor 1 subunit alpha (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "APP \u2014 amyloid beta precursor protein (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4807,
+    "completion_tokens": 283,
+    "total_tokens": 5090,
+    "estimated_cost_usd": 0.000891
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P50539",
+          "title": "MXI1 (P50539)",
+          "url": "https://www.uniprot.org/uniprotkb/P50539",
+          "text": "Protein: Max-interacting protein 1\nFunction: Transcriptional repressor. MXI1 binds with MAX to form a sequence-specific DNA-binding protein complex which recognizes the core sequence 5'-CAC[GA]TG-3'. MXI1 thus antagonizes MYC transcriptional activity by competing for MAX",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P50539-3",
+          "title": "MXI1 (P50539-3)",
+          "url": "https://www.uniprot.org/uniprotkb/P50539-3",
+          "text": "Protein: Isoform 3 of Max-interacting protein 1",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P50539-4",
+          "title": "MXI1 (P50539-4)",
+          "url": "https://www.uniprot.org/uniprotkb/P50539-4",
+          "text": "Protein: Isoform 4 of Max-interacting protein 1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000119950::function",
+          "title": "MXI1 \u2014 MXI1",
+          "url": "https://platform.opentargets.org/target/ENSG00000119950",
+          "text": "Function: Transcriptional repressor. MXI1 binds with MAX to form a sequence-specific DNA-binding protein complex which recognizes the core sequence 5'-CAC[GA]TG-3'. MXI1 thus antagonizes MYC transcriptional activity by competing for MAX.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000119950::MONDO_0008315",
+          "title": "MXI1 \u2194 prostate cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000119950/associations",
+          "text": "Disease: prostate cancer\nDescription: A primary or metastatic malignant tumor involving the prostate gland. The vast majority are carcinomas.\nAssociation score: 0.549",
+          "cos_sim_score": 0.5486689849370141,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000119950::EFO_0005772",
+          "title": "MXI1 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000119950/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.540",
+          "cos_sim_score": 0.5401883347247824,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000119950::Orphanet_1331",
+          "title": "MXI1 \u2194 Familial prostate cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000119950/associations",
+          "text": "Disease: Familial prostate cancer\nDescription: Prostate carcinoma that has developed in relatives of patients with a history of prostate carcinoma.\nAssociation score: 0.453",
+          "cos_sim_score": 0.4527353219887597,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000119950::MONDO_0008170",
+          "title": "MXI1 \u2194 ovarian cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000119950/associations",
+          "text": "Disease: ovarian cancer\nDescription: A primary or metastatic malignant neoplasm involving the ovary. Most primary malignant ovarian neoplasms are either carcinomas (serous, mucinous, or endometrioid adenocarcinomas) or malignant germ cell tumors. Metastatic malignant neoplasms to the ovary include carcinomas, lymphomas, and melanomas.\nAssociation score: 0.349",
+          "cos_sim_score": 0.3490289293125708,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "MXI1 \u2014 MAX interactor 1, dimerization protein",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MXI1\nGene name: MAX interactor 1, dimerization protein\nAliases / synonyms: MAD2, MXD2, MXI, bHLHc11\nOrganism: Homo sapiens\nGene summary: Expression of the c-myc gene, which produces an oncogenic transcription factor, is tightly regulated in normal cells but is frequently deregulated in human cancers. The protein encoded by this gene is a transcriptional repressor thought to negatively regulate MYC function, and is therefore a potential tumor suppressor. This protein inhibits the transcriptional activity of MYC by competing for MAX, another basic helix-loop-helix protein that binds to MYC and is required for its function. Defects in this gene are frequently found in patients with prostate tumors. Three alternatively spliced transcripts encoding different isoforms have been described. Additional alternatively spliced transcripts may exist but the products of these transcripts have not been verified experimentally. [provided b...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MXI1",
+          "aliases": "MAD2, MXD2, MXI, bHLHc11",
+          "gene_description": "MAX interactor 1, dimerization protein"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "VEGFA \u2014 vascular endothelial growth factor A",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: VEGFA\nGene name: vascular endothelial growth factor A\nAliases / synonyms: L-VEGF, MVCD1, VEGF, VPF\nOrganism: Homo sapiens\nGene summary: This gene is a member of the PDGF/VEGF growth factor family. It encodes a heparin-binding protein, which exists as a disulfide-linked homodimer. This growth factor induces proliferation and migration of vascular endothelial cells, and is essential for both physiological and pathological angiogenesis. Disruption of this gene in mice resulted in abnormal embryonic blood vessel formation. This gene is upregulated in many known tumors and its expression is correlated with tumor stage and progression. Elevated levels of this protein are found in patients with POEMS syndrome, also known as Crow-Fukase syndrome. Allelic variants of this gene have been associated with microvascular complications of diabetes 1 (MVCD1) and atherosclerosis. Alternatively spliced transcript variants encoding different...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "VEGFA",
+          "aliases": "L-VEGF, MVCD1, VEGF, VPF",
+          "gene_description": "vascular endothelial growth factor A"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MYC \u2014 MYC proto-oncogene, bHLH transcription factor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MYC\nGene name: MYC proto-oncogene, bHLH transcription factor\nAliases / synonyms: MRTL, MYCC, bHLHe39, c-Myc\nOrganism: Homo sapiens\nGene summary: This gene is a proto-oncogene and encodes a nuclear phosphoprotein that plays a role in cell cycle progression, apoptosis and cellular transformation. The encoded protein forms a heterodimer with the related transcription factor MAX. This complex binds to the E box DNA consensus sequence and regulates the transcription of specific target genes. Amplification of this gene is frequently observed in numerous human cancers. Translocations involving this gene are associated with Burkitt lymphoma and multiple myeloma in human patients. There is evidence to show that translation initiates both from an upstream, in-frame non-AUG (CUG) and a downstream AUG start site, resulting in the production of two isoforms with distinct N-termini. [provided by RefSeq, Aug 2017]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MYC",
+          "aliases": "MRTL, MYCC, bHLHe39, c-Myc",
+          "gene_description": "MYC proto-oncogene, bHLH transcription factor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "HIF1A \u2014 hypoxia inducible factor 1 subunit alpha",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HIF1A\nGene name: hypoxia inducible factor 1 subunit alpha\nAliases / synonyms: HIF-1-alpha, HIF-1A, HIF-1alpha, HIF1, HIF1-ALPHA, MOP1, PASD8, bHLHe78\nOrganism: Homo sapiens\nGene summary: This gene encodes the alpha subunit of transcription factor hypoxia-inducible factor-1 (HIF-1), which is a heterodimer composed of an alpha and a beta subunit. HIF-1 functions as a master regulator of cellular and systemic homeostatic response to hypoxia by activating transcription of many genes, including those involved in energy metabolism, angiogenesis, apoptosis, and other genes whose protein products increase oxygen delivery or facilitate metabolic adaptation to hypoxia. HIF-1 thus plays an essential role in embryonic vascularization, tumor angiogenesis and pathophysiology of ischemic disease. Alternatively spliced transcript variants encoding different isoforms have been identified for this gene. [provided by RefSeq, Jul 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HIF1A",
+          "aliases": "HIF-1-alpha, HIF-1A, HIF-1alpha, HIF1, HIF1-ALPHA, MOP1, PASD8, bHLHe78",
+          "gene_description": "hypoxia inducible factor 1 subunit alpha"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "APP \u2014 amyloid beta precursor protein",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: APP\nGene name: amyloid beta precursor protein\nAliases / synonyms: AAA, ABETA, ABPP, AD1, APPI, CTFgamma, CVAP, PN-II, PN2, alpha-sAPP, preA4\nOrganism: Homo sapiens\nGene summary: This gene encodes a cell surface receptor and transmembrane precursor protein that is cleaved by secretases to form a number of peptides. Some of these peptides are secreted and can bind to the acetyltransferase complex APBB1/TIP60 to promote transcriptional activation, while others form the protein basis of the amyloid plaques found in the brains of patients with Alzheimer disease. In addition, two of the peptides are antimicrobial peptides, having been shown to have bacteriocidal and antifungal activities. Mutations in this gene have been implicated in autosomal dominant Alzheimer disease and cerebroarterial amyloidosis (cerebral amyloid angiopathy). Multiple transcript variants encoding several different isoforms have been found for this gene. [provided by RefSeq, Aug 2014]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "APP",
+          "aliases": "AAA, ABETA, ABPP, AD1, APPI, CTFgamma, CVAP, PN-II, PN2, alpha-sAPP, preA4",
+          "gene_description": "amyloid beta precursor protein"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

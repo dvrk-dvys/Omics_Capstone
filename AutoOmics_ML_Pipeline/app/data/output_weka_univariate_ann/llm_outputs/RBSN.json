@@ -1,0 +1,183 @@
+{
+  "rf_rank": 21,
+  "probe_id": "11718387_s_at",
+  "gene_symbol": "RBSN",
+  "score": 0.65,
+  "rf_n_nodes": 3,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.5649,
+  "log_fc": 0.5649,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11718387_s_at",
+  "max_score": 0.65,
+  "mean_abs_fold_change": 0.5649,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:30:03",
+  "interpretation": "Rabenosyn-5 (RBSN) is a protein that functions as an effector for Rab4 and Rab5, which are small GTPases involved in membrane trafficking and endocytic processes. It plays a crucial role in the fusion of early endosomes and the recycling of receptors, such as the transferrin receptor, which is important for iron homeostasis and cellular metabolism. Although RBSN's specific connection to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) is not directly established in the literature, its involvement in endosomal trafficking could suggest a role in cellular responses to steroid treatment, which is known to affect bone metabolism and contribute to osteonecrosis. The evidence retrieved does not provide a direct link to SONFH, leading to a lower confidence in its potential as a biomarker for early detection of this condition. Therefore, while RBSN may have biological relevance due to its cellular functions, its clinical utility as a biomarker for SONFH remains uncertain.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "RBSN is involved in endosomal trafficking, which may indirectly relate to the cellular effects of steroids in SONFH, but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "RBSN (Q9H1K0). https://www.uniprot.org/uniprotkb/Q9H1K0",
+    "RBSN (Q9H1K0-2). https://www.uniprot.org/uniprotkb/Q9H1K0-2",
+    "RBSN \u2014 RBSN. https://platform.opentargets.org/target/ENSG00000131381",
+    "RBSN \u2194 Kariminejad neurodevelopmental syndrome. https://platform.opentargets.org/target/ENSG00000131381/associations",
+    "RBSN \u2194 myelofibrosis, congenital, with anemia, neutropenia, developmental delay, and ocular abnormalities. https://platform.opentargets.org/target/ENSG00000131381/associations",
+    "RBSN \u2194 insomnia. https://platform.opentargets.org/target/ENSG00000131381/associations",
+    "RBSN \u2194 benign chondrogenic neoplasm. https://platform.opentargets.org/target/ENSG00000131381/associations",
+    "RBSN \u2014 rabenosyn, RAB effector (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TP53 \u2014 tumor protein p53 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "SNCA \u2014 synuclein alpha (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MAPK14 \u2014 mitogen-activated protein kinase 14 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4836,
+    "completion_tokens": 351,
+    "total_tokens": 5187,
+    "estimated_cost_usd": 0.000936
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9H1K0",
+          "title": "RBSN (Q9H1K0)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9H1K0",
+          "text": "Protein: Rabenosyn-5\nFunction: Rab4/Rab5 effector protein acting in early endocytic membrane fusion and membrane trafficking of recycling endosomes. Required for endosome fusion either homotypically or with clathrin coated vesicles. Plays a role in the lysosomal trafficking of CTSD/cathepsin D from the Golgi to lysosomes. Also promotes the recycling of transferrin directly from early endosomes to the plasma membrane. Binds phospholipid vesicles containing phosphatidylinositol 3-phosphate (PtdInsP3) (PubMed:11062261, PubMed:11788822, PubMed:15020713). Plays a role in the recycling of transferrin receptor to the plasma membrane (PubMed:22308388)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9H1K0-2",
+          "title": "RBSN (Q9H1K0-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9H1K0-2",
+          "text": "Protein: Isoform 2 of Rabenosyn-5",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000131381::function",
+          "title": "RBSN \u2014 RBSN",
+          "url": "https://platform.opentargets.org/target/ENSG00000131381",
+          "text": "Function: Rab4/Rab5 effector protein acting in early endocytic membrane fusion and membrane trafficking of recycling endosomes. Required for endosome fusion either homotypically or with clathrin coated vesicles. Plays a role in the lysosomal trafficking of CTSD/cathepsin D from the Golgi to lysosomes. Also promotes the recycling of transferrin directly from early endosomes to the plasma membrane. Binds phospholipid vesicles containing phosphatidylinositol 3-phosphate (PtdInsP3) (PubMed:11062261, PubMed:11788822, PubMed:15020713). Plays a role in the recycling of transferrin receptor to the plasma membrane (PubMed:22308388).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000131381::MONDO_0975795",
+          "title": "RBSN \u2194 Kariminejad neurodevelopmental syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000131381/associations",
+          "text": "Disease: Kariminejad neurodevelopmental syndrome\nAssociation score: 0.521",
+          "cos_sim_score": 0.521312917246921,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000131381::MONDO_0975797",
+          "title": "RBSN \u2194 myelofibrosis, congenital, with anemia, neutropenia, developmental delay, and ocular abnormalities",
+          "url": "https://platform.opentargets.org/target/ENSG00000131381/associations",
+          "text": "Disease: myelofibrosis, congenital, with anemia, neutropenia, developmental delay, and ocular abnormalities\nAssociation score: 0.453",
+          "cos_sim_score": 0.45273532198875965,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000131381::EFO_0004698",
+          "title": "RBSN \u2194 insomnia",
+          "url": "https://platform.opentargets.org/target/ENSG00000131381/associations",
+          "text": "Disease: insomnia\nDescription: Disorders characterized by impairment of the ability to initiate or maintain sleep. This may occur as a primary disorder or in association with another medical or psychiatric condition\nAssociation score: 0.236",
+          "cos_sim_score": 0.2364743558420678,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000131381::MONDO_0024470",
+          "title": "RBSN \u2194 benign chondrogenic neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000131381/associations",
+          "text": "Disease: benign chondrogenic neoplasm\nDescription: A non-metastasizing cartilaginous matrix-producing neoplasm characterized by the presence of neoplastic chondrocytes. Representative examples include osteochondroma and chondroma.\nAssociation score: 0.234",
+          "cos_sim_score": 0.2338677907310612,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "RBSN \u2014 rabenosyn, RAB effector",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RBSN\nGene name: rabenosyn, RAB effector\nAliases / synonyms: KAREVS, MFANDO, Rabenosyn-5, ZFYVE20\nOrganism: Homo sapiens\nGene summary: This gene encodes a protein that belongs to the FYVE zinc finger family of proteins. The encoded protein interacts with Ras-related proteins that regulate membrane trafficking. A missense mutation in this gene is associated with a defect in the early endocytic pathway. Alternative splicing results in multiple transcript variants. [provided by RefSeq, Oct 2014]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RBSN",
+          "aliases": "KAREVS, MFANDO, Rabenosyn-5, ZFYVE20",
+          "gene_description": "rabenosyn, RAB effector"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TP53 \u2014 tumor protein p53",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TP53\nGene name: tumor protein p53\nAliases / synonyms: BCC7, BMFS5, LFS1, P53, TRP53\nOrganism: Homo sapiens\nGene summary: This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TP53",
+          "aliases": "BCC7, BMFS5, LFS1, P53, TRP53",
+          "gene_description": "tumor protein p53"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "SNCA \u2014 synuclein alpha",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SNCA\nGene name: synuclein alpha\nAliases / synonyms: NACP, PARK1, PARK4, PD1\nOrganism: Homo sapiens\nGene summary: Alpha-synuclein is a member of the synuclein family, which also includes beta- and gamma-synuclein. Synucleins are abundantly expressed in the brain and alpha- and beta-synuclein inhibit phospholipase D2 selectively. SNCA may serve to integrate presynaptic signaling and membrane trafficking. Defects in SNCA have been implicated in the pathogenesis of Parkinson disease. SNCA peptides are a major component of amyloid plaques in the brains of patients with Alzheimer's disease. Alternatively spliced transcripts encoding different isoforms have been identified for this gene. [provided by RefSeq, Feb 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SNCA",
+          "aliases": "NACP, PARK1, PARK4, PD1",
+          "gene_description": "synuclein alpha"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MAPK14 \u2014 mitogen-activated protein kinase 14",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MAPK14\nGene name: mitogen-activated protein kinase 14\nAliases / synonyms: CSBP, CSBP1, CSBP2, CSPB1, EXIP, Mxi2, PRKM14, PRKM15, RK, SAPK2A, p38, p38ALPHA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the MAP kinase family. MAP kinases act as an integration point for multiple biochemical signals, and are involved in a wide variety of cellular processes such as proliferation, differentiation, transcription regulation and development. This kinase is activated by various environmental stresses and proinflammatory cytokines. The activation requires its phosphorylation by MAP kinase kinases (MKKs), or its autophosphorylation triggered by the interaction of MAP3K7IP1/TAB1 protein with this kinase. The substrates of this kinase include transcription regulator ATF2, MEF2C, and MAX, cell cycle regulator CDC25B, and tumor suppressor p53, which suggest the roles of this kinase in stress related transcription and cell cycle regulation, as well as in g...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MAPK14",
+          "aliases": "CSBP, CSBP1, CSBP2, CSPB1, EXIP, Mxi2, PRKM14, PRKM15, RK, SAPK2A, p38, p38ALPHA",
+          "gene_description": "mitogen-activated protein kinase 14"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

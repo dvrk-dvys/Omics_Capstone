@@ -1,0 +1,159 @@
+{
+  "rf_rank": 17,
+  "probe_id": "11720739_s_at",
+  "gene_symbol": "ITPKB",
+  "score": 0.67,
+  "rf_n_nodes": 12,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.6937,
+  "log_fc": 0.6937,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11720739_s_at",
+  "max_score": 0.67,
+  "mean_abs_fold_change": 0.6937,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T17:34:18",
+  "interpretation": "ITPKB (Inositol-trisphosphate 3-kinase B) is an enzyme that plays a crucial role in calcium signaling by phosphorylating inositol 1,4,5-trisphosphate (IP3) to produce inositol 1,3,4,5-tetrakisphosphate (IP4), which does not activate calcium channels. This regulation of calcium homeostasis is vital for various cellular functions, including those in bone cells. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), altered calcium signaling may contribute to the pathophysiology of bone necrosis following steroid treatment. However, the evidence linking ITPKB directly to SONFH is limited, primarily suggesting its involvement in broader calcium signaling pathways rather than specific mechanisms of SONFH. Therefore, while ITPKB has a biological role that could be relevant to bone health, the current evidence does not strongly support its use as a specific biomarker for early detection of SONFH.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "ITPKB is involved in calcium signaling, which may be disrupted in Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), but direct evidence linking it to SONFH is lacking.",
+  "citations": [
+    "ITPKB (P27987). https://www.uniprot.org/uniprotkb/P27987",
+    "ITPKB (P27987-2). https://www.uniprot.org/uniprotkb/P27987-2",
+    "ITPKB \u2014 ITPKB. https://platform.opentargets.org/target/ENSG00000143772",
+    "ITPKB \u2194 Parkinson disease. https://platform.opentargets.org/target/ENSG00000143772/associations",
+    "ITPKB \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000143772/associations",
+    "ITPKB \u2194 respiratory system disease. https://platform.opentargets.org/target/ENSG00000143772/associations",
+    "ITPKB \u2194 asthma. https://platform.opentargets.org/target/ENSG00000143772/associations",
+    "Inositol-trisphosphate 3-kinase. https://en.wikipedia.org/wiki/Inositol-trisphosphate_3-kinase",
+    "ITPKB. https://en.wikipedia.org/wiki/ITPKB",
+    "ITPKC. https://en.wikipedia.org/wiki/ITPKC"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5790,
+    "completion_tokens": 289,
+    "total_tokens": 6079,
+    "estimated_cost_usd": 0.001042
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P27987",
+          "title": "ITPKB (P27987)",
+          "url": "https://www.uniprot.org/uniprotkb/P27987",
+          "text": "Protein: Inositol-trisphosphate 3-kinase B\nFunction: Catalyzes the phosphorylation of 1D-myo-inositol 1,4,5-trisphosphate (InsP3) into 1D-myo-inositol 1,3,4,5-tetrakisphosphate and participates to the regulation of calcium homeostasis",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P27987-2",
+          "title": "ITPKB (P27987-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P27987-2",
+          "text": "Protein: Isoform 2 of Inositol-trisphosphate 3-kinase B",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000143772::function",
+          "title": "ITPKB \u2014 ITPKB",
+          "url": "https://platform.opentargets.org/target/ENSG00000143772",
+          "text": "Function: Catalyzes the phosphorylation of 1D-myo-inositol 1,4,5- trisphosphate (InsP3) into 1D-myo-inositol 1,3,4,5-tetrakisphosphate and participates to the regulation of calcium homeostasis.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000143772::MONDO_0005180",
+          "title": "ITPKB \u2194 Parkinson disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000143772/associations",
+          "text": "Disease: Parkinson disease\nDescription: A progressive degenerative disorder of the central nervous system characterized by loss of dopamine producing neurons in the substantia nigra and the presence of Lewy bodies in the substantia nigra and locus coeruleus. Signs and symptoms include tremor which is most pronounced during rest, muscle rigidity, slowing of the voluntary movements, a tendency to fall back, and a mask-like facial expression.\nAssociation score: 0.592",
+          "cos_sim_score": 0.5920037011076414,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000143772::EFO_0005772",
+          "title": "ITPKB \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000143772/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.541",
+          "cos_sim_score": 0.5408538045856536,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000143772::EFO_0000684",
+          "title": "ITPKB \u2194 respiratory system disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000143772/associations",
+          "text": "Disease: respiratory system disease\nDescription: A non-neoplastic or neoplastic disorder that affects the respiratory system. Representative examples include pneumonia, chronic obstructive pulmonary disease, pulmonary failure, lung adenoma, lung carcinoma, and tracheal carcinoma.\nAssociation score: 0.458",
+          "cos_sim_score": 0.45830100152719055,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000143772::MONDO_0004979",
+          "title": "ITPKB \u2194 asthma",
+          "url": "https://platform.opentargets.org/target/ENSG00000143772/associations",
+          "text": "Disease: asthma\nDescription: A bronchial disease that is characterized by chronic inflammation and narrowing of the airways, which is caused by a combination of environmental and genetic factors resulting in recurring periods of wheezing (a whistling sound while breathing), chest tightness, shortness of breath, mucus production and coughing. The symptoms appear due to a variety of triggers such as allergens, irritants, respiratory infections, weather changes, exercise, stress, reflux disease, medications, foods and emotional anxiety.\nAssociation score: 0.448",
+          "cos_sim_score": 0.44807067773837866,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Inositol-trisphosphate 3-kinase",
+          "title": "Inositol-trisphosphate 3-kinase",
+          "url": "https://en.wikipedia.org/wiki/Inositol-trisphosphate_3-kinase",
+          "text": "Isoforms\nThere are three ITP3Ks which are encoded by the human genome:  ITPKA, ITPKB, and ITPKC. All share a conserved C-terminal catalytic domain, but differ in mechanisms of regulation as well as tissue expression. ITPKA is predominant in neurons and in the testes. It is localized to dendritic spines by an association with filamentous actin which is consistent with its probable role in memory functions. ITPKB is expressed more widely, but it is often enriched in immune tissues, and it has different intracellular localizations that depend on tissue, interaction with actin filaments, and proteolysis at the N-terminal regions. ITPKC is also expressed in many different tissues and it is more enriched in the nucleus compared to the other isoforms.\n\nFunctions in Calcium Signaling\nITP3K plays a role in regulating or cooperating with intracellular calcium signals that occur following the liberation of inositol trisphosphate.  In this pathway, either a G-protein coupled receptor (GPCR) or receptor tyrosine kinase (RTK) is activated by an extracellular ligand-binding event. Initiation of the pathway leads to an activated G-alpha subunit of a heterotrimeric G protein (in the case of GPCR-mediated signal transduction) or autophoshorylation of RTK cytoplasmic domains (in the case of RTK-mediated signal transduction). These intracellular events eventually lead to activation of phospholipase C (PLC), which cleaves the phospholipid PIP2 into diacylglycerol (DAG) and inositol 1,4,5-trisphosphate (IP3). DAG remains associated with the plasma membrane, while IP3 is released into the cytoplasm. IP3 then diffuses through the cytosol and binds to IP3 receptors on the endoplasmic reticulum or sarcoplasmic reticulum, resulting in the opening of a membrane channel and an influx of calcium ions into the cytoplasm. Calcium serves as a second messenger for various downstream cellular events including glycogen metabolism, muscle contraction, neurotransmitter release, and transcriptional regulation. Therefore, calcium homeostasis is essential for proper cell function and response to extracellular signals.\nIn order to prepare the cell for a future signaling event, the calcium pathway must be tightly regulated. ITP3K seems to play an important role in termination of the signal. As mentioned, ITP3K catalyzes the phosphorylation of IP3 to make IP4. Unlike IP3, IP4 does not cause opening of calcium channels on the endoplasmic reticulum or sarcoplasmic reticulum. By decreasing the concentration of IP3 in the cytoplasm, ITP3K terminates propagation of the calcium signaling pathway.\n\nAdditional roles\nITP3K is not the only enzyme responsible for clearing IP3 from the cytoplasm. A second enzyme called inositol 5-phosphatase catalyzes the dephosphorylation of IP3 to create IP2. Typically, nature does not favor the evolution of a second enzyme to perform an already-existing, identical function. A closer inspection of the evolutionary history of inositol 5-phosphatase and ITP3K gives rise to several interesting hypotheses about the roles of these enzymes in the cell.\nInositol 5-phosphatase existed before ITP3K evolved in the mammalian cell. Like other phosphatases, inositol 5-phosphatase is an energy-independent enzyme that cleaves a phosphate group off of a substrate. In contrast, ITP3K (like all kinases) is energy-dependent, meaning that it requires an ATP molecule to perform the phosphoryl transfer chemistry. If nature already had an energy-independent mechanism for termination of the calcium signaling pathway, why was the evolution of ITP3K advantageous? This apparent redundancy of function, or \"waste\" of energy by the cell, suggests that ITP3K may have a more important function in the cell than simply clearing the IP3 second messenger from the cytoplasm. Current hypotheses about additional roles for ITPK are explained in the following two subsections.",
+          "cos_sim_score": 0.4487001299858093,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::ITPKB",
+          "title": "ITPKB",
+          "url": "https://en.wikipedia.org/wiki/ITPKB",
+          "text": "Inositol-trisphosphate 3-kinase B is an enzyme that in humans is encoded by the ITPKB gene.\n\nFunction\nThe protein encoded by the ITPKB gene is one of 3 isoforms of Inositol-trisphosphate 3-kinase expressed in humans. ITPKB protein regulates inositol phosphate metabolism by phosphorylation of second messenger inositol 1,4,5-trisphosphate, which releases calcium from intracellular store in the endoplasmic reticulum by gating the inositol trisphosphate receptor. ITPKB produces Ins(1,3,4,5)P4, which does not gate the inositol trisphosphate receptor. The enzyme specifically phosphorylates the 1,4,5 isomer of IP3. The activity of this encoded protein is responsible for regulating the levels of a large number of inositol polyphosphates that are important in cellular signaling. Both calcium/calmodulin and protein phosphorylation mechanisms control its activity.  Itpkb regulates immune cell function and is required for T and B cell development.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.39720839262008667,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Inositol-trisphosphate 3-kinase",
+          "title": "Inositol-trisphosphate 3-kinase",
+          "url": "https://en.wikipedia.org/wiki/Inositol-trisphosphate_3-kinase",
+          "text": "Catalytic domain\nEvidence for this exquisite specificity and for the catalytic mechanism was found when the apo-enzyme, substrate-bound complex, and product-bound complex X-ray crystal structures of ITPKA were determined. The figure to the right depicts the catalytic mechanism, whereby the 3'OH of IP3 attacks the gamma-phosphate of ATP, and amino acid residues of ITPK important for stabilizing the substrates and products in the active site. \nThe structure of the catalytic domain of the human ITP3KA has been shown to be divided into three subdomains. These subdomains are displayed as the N lobe, which is a N-terminal domain, the C lobe, which is a C-terminal subdomain and a third alpha-only subdomain. The ITP3K catalytic domain varies somewhat from the protein kinase superfamily, and it has a novel four-helix substrate binding domain. In this kinase, the two domains are in an open conformation, which indicates that the two domains are both accessible at the same time. This suggests that substrate recognition and catalysis by ITP3K involves a dynamic conformational cycle. Additionally, this unique helical domain of ITPK blocks access to the active site by membrane-bound phosphoinositides, explaining the structural basis for soluble inositol polyphosphate specificity. Another feature of the catalytic core is the ATP binding site. Here, one molecule of ADP is bound in the cleft of the major domain, which indicates the active site of the kinase.\nIn further detail, the larger domain of the protein structure has an \u03b1/\u03b2-class structure. The domain has an N-terminal and a C-terminal lobe with a cleft in between and each of these lobes is built around an antiparallel \u03b2-sheet. In the N-terminal, the sheet has three strands, whereas in the C-terminal there is a five-stranded sheet. The second domain, is \u03b1-helical and consists of four \u03b1 helices linked by long loops. The helices are loosely packed against each other and the entire domain is highly mobile as compared to the large \u03b1/\u03b2 domain. The helical domain is juxtaposed against one end of the cleft in the large domain.\n\nRegulation\nITP3K is regulated by various post-translational mechanisms.  ITP3Ks are stimulated directly by calcium/calmodulin (Ca2+/CaM) binding.  Generally, mammalian ITP3Ks are activated by calcium and calmodulin to varying degrees. The method in which this works is calmodulin recognizes sequences which contain amphiphilic alpha-helices with clusters of positively charged and hydrophobic amino acids. Certain sequences are required for CaM binding and enzyme activation and this level of stimulation appears to be specific to cell, tissue, or isoform. ITP3Ks from nematodes and Arabidopsis thaliana lack the CaM-binding sites and therefore are insensitive to calcium and calmodulin.  Another major post-translational modification that is important for ITP3K regulation is phosphorylation.  ITP3K activity is indirectly stimulated by phosphorylation by calcium/calmodulin-dependent kinase II (CaMKII). In addition, there is evidence that ITP3Ks may be activated upon phosphorylation by protein kinase C (PKC) and inhibited upon phosphorylation by protein kinase A (PKA).\n\nIsoforms\nThere are three ITP3Ks which are encoded by the human genome:  ITPKA, ITPKB, and ITPKC. All share a conserved C-terminal catalytic domain, but differ in mechanisms of regulation as well as tissue expression. ITPKA is predominant in neurons and in the testes. It is localized to dendritic spines by an association with filamentous actin which is consistent with its probable role in memory functions. ITPKB is expressed more widely, but it is often enriched in immune tissues, and it has different intracellular localizations that depend on tissue, interaction with actin filaments, and proteolysis at the N-terminal regions. ITPKC is also expressed in many different tissues and it is more enriched in the nucleus compared to the other isoforms.",
+          "cos_sim_score": 0.3407406806945801,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::ITPKC",
+          "title": "ITPKC",
+          "url": "https://en.wikipedia.org/wiki/ITPKC",
+          "text": "ITPKC is one of 3 human genes that encode for an Inositol-trisphosphate 3-kinase.  This gene that has been associated with Kawasaki disease. Kawasaki disease is an acute febrile illness that involves the inflammation of blood vessels throughout the body. The majority of cases that have been diagnosed involve children under the age of 5. In untreated cases involving children, 15 to 25 percent of these cases developed coronary artery aneurysms. The overproduction of T cells may be correlated with the immune hyperactivity in Kawasaki disease.\nThis gene is located at chromosome 19q13.1, it codes for one of three isoenzymes. The other two enzymes being ITPKA and ITPKB. ITPKC is involved in the Ca(2+)/NFAT pathway, negatively regulating T cell activation.\nA mutation in this gene occurs through a single-nucleotide polymorphism. When a mutation occurs the gene does not produce a functioning enzyme, meaning it will no longer be effective in negatively regulating T cells. When there is this reduced expression of the enzyme, ITPKC, there is a higher amount of IP3 which leads to the calcium channels being opened, and a higher amount of calcium being released. Leading to overly active T cells, and having this mutation in ITPKC is correlated to the increased risk of developing symptoms.\n\nSee also\nITPR1\nInositol triphosphate\n\n\n== References ==",
+          "cos_sim_score": 0.33454659581184387,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Inositol-trisphosphate 3-kinase",
+          "title": "Inositol-trisphosphate 3-kinase",
+          "url": "https://en.wikipedia.org/wiki/Inositol-trisphosphate_3-kinase",
+          "text": "Inositol (1,4,5) trisphosphate 3-kinase (EC 2.7.1.127), abbreviated here as ITP3K, is an enzyme that facilitates a phospho-group transfer from adenosine triphosphate to 1D-myo-inositol 1,4,5-trisphosphate. This enzyme belongs to the family of transferases, specifically those transferring phosphorus-containing groups (phosphotransferases) with an alcohol group as acceptor.  The systematic name of this enzyme class is ATP:1D-myo-inositol-1,4,5-trisphosphate 3-phosphotransferase. ITP3K catalyzes the transfer of the gamma-phosphate from ATP to the 3-position of inositol 1,4,5-trisphosphate to form inositol 1,3,4,5-tetrakisphosphate. ITP3K is highly specific for the 1,4,5-isomer of IP3, and it exclusively phosphorylates the 3-OH position, producing Ins(1,3,4,5)P4, also known as inositol tetrakisphosphate or IP4.\nIn biology, the enzyme ITP3K is abbreviated a number of different ways, including 1D-myo-inositol-trisphosphate 3-kinase, ITP3K, ITPK, IP3-kinase, IP3-3-kinase, Ins(1,4,5)P3 3-kinase.  In addition the enzyme may be named as the product of one of 3 genes in humans ITPKA, ITPKB, and ITPKC, or one of two in fruit flies, IP3K1 and IP3K2\u2014a mutant known to geneticists as wavy. The nematode genome has one form of the enzyme, coded by the LFE-2 gene. ITP3K enzymes are expressed only in metazoans; they are not expressed in yeast or plants.\nAll ITP3Ks belong to a larger structural family, the inositol polyphosphate kinases, or IPKs. Note however, that the human genome also contains a gene for a different kinase known as ITPK1, which is an  inositol 1, 3, 4-trisphosphate 5/6-kinase and is not a member of the IPK family.\nThe ITP3K enzyme family is sometimes confused with a different enzyme family that has a similar name, that is, the phosphatidyl inositol 3-kinases or phosphoinositide 3-kinase (PI3-K), whose substrates are inositol lipids, not the soluble second messenger inositol trisphosphate.\n\nDiscovery and characterization\nScientific interest in the inositol phosphates intensified in the years following the 1983 discovery that inositol trisphosphate was an intracellular messenger that releases calcium from intracellular stores in the endoplasmic reticulum.  By the end of the decade, a large number of inositol phosphate kinases and phosphatases had been discovered, including ITP3K in 1986.\nBiochemical and molecular studies in the 1990s led to the purification of the enzyme from rat brain and it molecular cloning, and these studies revealed various feedback mechanisms by which the enzyme is regulated by calcium and protein kinases.  In 1999, ITP3K was identified as being a member of a larger family of Inositol polyphosphate kinases, which share a similar structure and catalytic mechanism.  ITP3K enzymes share  common structural features including a conserved catalytic core which binds ATP located near the C-terminus, and various regulatory domains nearer to the N-terminus.",
+          "cos_sim_score": 0.29870104789733887,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

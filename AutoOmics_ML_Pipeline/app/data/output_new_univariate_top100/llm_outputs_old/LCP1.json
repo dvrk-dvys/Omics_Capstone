@@ -1,0 +1,150 @@
+{
+  "probe_id": "11747785_s_at",
+  "gene_symbol": "LCP1",
+  "score": 1.0,
+  "SD_TestAUC": 0.0165634664999984,
+  "abs_fold_change": 0.9313,
+  "probe_count": 1,
+  "probe_ids": "11747785_s_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.9313,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:51:00",
+  "interpretation": "LCP1, also known as Plastin-2, is an actin-binding protein that plays a crucial role in T-cell activation and modulates immune responses. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), LCP1 has been identified as a candidate biomarker through differential expression analysis in peripheral blood samples from SONFH patients compared to healthy controls. The evidence indicates that LCP1 is involved in immune cell infiltration patterns, which are significant in the pathogenesis of SONFH. The retrieved studies demonstrate that LCP1 shows excellent diagnostic efficiency, with an area under the curve (AUC) ranging from 0.923 to 0.970, suggesting its potential as an early detection biomarker for SONFH. Overall, the evidence is robust, linking LCP1 directly to SONFH through its role in immune modulation and diagnostic relevance.",
+  "evidence_relation": "direct",
+  "evidence_tier": "Tier 1",
+  "evidence_confidence": "high",
+  "biomarker_potential": "strong",
+  "relevance_summary": "LCP1 is a promising biomarker for the early detection of Steroid-Induced Osteonecrosis of the Femoral Head due to its significant role in immune response and diagnostic efficiency.",
+  "citations": [
+    "LCP1 (P13796). https://www.uniprot.org/uniprotkb/P13796",
+    "LCP1 (P13796-2). https://www.uniprot.org/uniprotkb/P13796-2",
+    "LCP1 \u2014 LCP1. https://platform.opentargets.org/target/ENSG00000136167",
+    "LCP1 \u2194 hereditary breast ovarian cancer syndrome. https://platform.opentargets.org/target/ENSG00000136167/associations",
+    "LCP1 \u2194 Hereditary breast and ovarian cancer syndrome. https://platform.opentargets.org/target/ENSG00000136167/associations",
+    "LCP1 \u2194 autoimmune disease. https://platform.opentargets.org/target/ENSG00000136167/associations",
+    "LCP1 \u2194 ovarian neoplasm. https://platform.opentargets.org/target/ENSG00000136167/associations",
+    "Integrated bioinformatics analysis and experimental validation of exosome-related gene signature in steroid-induced osteonecrosis of the femoral head. (2025). https://pubmed.ncbi.nlm.nih.gov/39789578/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4276,
+    "completion_tokens": 256,
+    "total_tokens": 4532,
+    "estimated_cost_usd": 0.000795
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P13796",
+          "title": "LCP1 (P13796)",
+          "url": "https://www.uniprot.org/uniprotkb/P13796",
+          "text": "Protein: Plastin-2\nFunction: Actin-binding protein (PubMed:16636079, PubMed:17294403, PubMed:28493397). Plays a role in the activation of T-cells in response to costimulation through TCR/CD3 and CD2 or CD28 (PubMed:17294403). Modulates the cell surface expression of IL2RA/CD25 and CD69 (PubMed:17294403)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P13796-2",
+          "title": "LCP1 (P13796-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P13796-2",
+          "text": "Protein: Isoform 2 of Plastin-2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000136167::function",
+          "title": "LCP1 \u2014 LCP1",
+          "url": "https://platform.opentargets.org/target/ENSG00000136167",
+          "text": "Function: Actin-binding protein (PubMed:16636079, PubMed:17294403, PubMed:28493397). Plays a role in the activation of T-cells in response to costimulation through TCR/CD3 and CD2 or CD28 (PubMed:17294403). Modulates the cell surface expression of IL2RA/CD25 and CD69 (PubMed:17294403).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000136167::MONDO_0003582",
+          "title": "LCP1 \u2194 hereditary breast ovarian cancer syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000136167/associations",
+          "text": "Disease: hereditary breast ovarian cancer syndrome\nDescription: An autosomal dominant inherited syndrome caused by mutations in the BRCA1 or BRCA2 genes. Patients are at high risk of developing breast cancer, particularly before the age of fifty, high risk of developing a second primary breast cancer, and high risk of developing both breast and ovarian cancer.\nAssociation score: 0.340",
+          "cos_sim_score": 0.3400134663099256,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000136167::Orphanet_145",
+          "title": "LCP1 \u2194 Hereditary breast and ovarian cancer syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000136167/associations",
+          "text": "Disease: Hereditary breast and ovarian cancer syndrome\nDescription: An autosomal dominant inherited syndrome caused by mutations in the BRCA1 or BRCA2 genes. Patients are at high risk of developing breast cancer, particularly before the age of fifty, high risk of developing a second primary breast cancer, and high risk of developing both breast and ovarian cancer.\nAssociation score: 0.340",
+          "cos_sim_score": 0.3400134663099256,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000136167::EFO_0005140",
+          "title": "LCP1 \u2194 autoimmune disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000136167/associations",
+          "text": "Disease: autoimmune disease\nDescription: Autoimmune disease or disorder is a disease characterized by an immune response of an organism against parts of itself causing pathology e.g. Graves' disease.\nAssociation score: 0.310",
+          "cos_sim_score": 0.30953086166466237,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000136167::EFO_0003893",
+          "title": "LCP1 \u2194 ovarian neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000136167/associations",
+          "text": "Disease: ovarian neoplasm\nDescription: Neoplasms located in the ovary that can be benign or malignant. They are classified according to the tissue of origin, such as the surface EPITHELIUM, the stromal endocrine cells, and the totipotent GERM CELLS.\nAssociation score: 0.301",
+          "cos_sim_score": 0.30100812471326643,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::39789578",
+          "title": "Integrated bioinformatics analysis and experimental validation of exosome-related gene signature in steroid-induced osteonecrosis of the femoral head.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39789578/",
+          "year": "2025",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SIONFH) is a universal hip articular disease and is very hard to perceive at an early stage. The understanding of the pathogenesis of SIONFH is still limited, and the identification of efficient diagnostic biomarkers is insufficient. This research aims to recognize and validate the latent exosome-related molecular signature in SIONFH diagnosis by employing bioinformatics to investigate exosome-related mechanisms in SIONFH. The GSE123568 and GSE74089 datasets were employed to conduct differentially expressed genes (DEGs) analysis, and the GSE123568 dataset was subjected to perform weighted genes co-expression network analysis (WGCNA). The exosome-related genes (ERGs) were retrieved from the GeneCards database. We identified differentially expressed exosome-related genes (DEERGs) between healthy controls (HC) and SIONFH patients, and a consensus clustering analysis was then implemented to group the SIONFH patients. The CIBERSORT was implemented to calculate the immune cell infiltration. Gene Set Variation Analysis (GSVA), Gene Ontology (GO), and Kyoto Encyclopedia of Genes and Genomes (KEGG) were conducted to investigate latent enriched pathways. In addition, machine-learning algorithms were applied to refine the DEERGs. Ultimately, we verified the diagnostic significance and expression of the hub genes using the SIONFH datasets and performing quantitative reverse transcription polymerase chain reaction (qRT-PCR) analysis. This study identified twenty DEERGs from the peripheral serum and hip articular cartilage samples of SIONFH patients and HC. Two SIONFH subtypes related to ERGs were identified, and distinctions in pathways and immune cell infiltration patterns were compared. SIONFH's high-risk subpopulation exhibited enriched immune-related pathways and high immune cell infiltration, such as M0 macrophages, resting mast cells, and neutrophils. Three machine-learning algorithms then determined LCP1, PNP, UBE2V1, and ZFP36 as four exosome-related hub genes (ERHGs). Compared to HC samples, these ERHGs showed excellent diagnostic efficiency (overall AUC for ERHGs is in the range of 0.923 to 0.970 in GSE123568) in SIONFH samples. LCP1, PNP, UBE2V1, and ZFP36 expressions were validated in the GSE123568 and GSE74089 datasets and finally detected in peripheral serum samples with accordant expression by RT-qPCR. Twenty potential exosome-related genes involved",
+          "cos_sim_score": 0.3412713408470154,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::39789578",
+          "title": "Integrated bioinformatics analysis and experimental validation of exosome-related gene signature in steroid-induced osteonecrosis of the femoral head.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39789578/",
+          "year": "2025",
+          "text": "exosome-related hub genes (ERHGs). Compared to HC samples, these ERHGs showed excellent diagnostic efficiency (overall AUC for ERHGs is in the range of 0.923 to 0.970 in GSE123568) in SIONFH samples. LCP1, PNP, UBE2V1, and ZFP36 expressions were validated in the GSE123568 and GSE74089 datasets and finally detected in peripheral serum samples with accordant expression by RT-qPCR. Twenty potential exosome-related genes involved in SIONFH were identified through bioinformatics analysis. LCP1, PNP, UBE2V1, and ZFP36 might become candidate biomarkers and therapeutic targets because they have an intimate relationship with exosomes. These findings shed light on the exosome-related acquaintance of SIONFH and might contribute to the diagnosis and prognosis of SIONFH.",
+          "cos_sim_score": -0.005482302512973547,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_fetch_by_id",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::39789578",
+          "title": "Integrated bioinformatics analysis and experimental validation of exosome-related gene signature in steroid-induced osteonecrosis of the femoral head.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39789578/",
+          "year": "2025",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SIONFH) is a universal hip articular disease and is very hard to perceive at an early stage. The understanding of the pathogenesis of SIONFH is still limited, and the identification of efficient diagnostic biomarkers is insufficient. This research aims to recognize and validate the latent exosome-related molecular signature in SIONFH diagnosis by employing bioinformatics to investigate exosome-related mechanisms in SIONFH. The GSE123568 and GSE74089 datasets were employed to conduct differentially expressed genes (DEGs) analysis, and the GSE123568 dataset was subjected to perform weighted genes co-expression network analysis (WGCNA). The exosome-related genes (ERGs) were retrieved from the GeneCards database. We identified differentially expressed exosome-related genes (DEERGs) between healthy controls (HC) and SIONFH patients, and a consensus clustering analysis was then implemented to group the SIONFH patients. The CIBERSORT was implemented to calculate the immune cell infiltration. Gene Set Variation Analysis (GSVA), Gene Ontology (GO), and Kyoto Encyclopedia of Genes and Genomes (KEGG) were conducted to investigate latent enriched pathways. In addition, machine-learning algorithms were applied to refine the DEERGs. Ultimately, we verified the diagnostic significance and expression of the hub genes using the SIONFH datasets and performing quantitative reverse transcription polymerase chain reaction (qRT-PCR) analysis. This study identified twenty DEERGs from the peripheral serum and hip articular cartilage samples of SIONFH patients and HC. Two SIONFH subtypes related to ERGs were identified, and distinctions in pathways and immune cell infiltration patterns were compared. SIONFH's high-risk subpopulation exhibited enriched immune-related pathways and high immune cell infiltration, such as M0 macrophages, resting mast cells, and neutrophils. Three machine-learning algorithms then determined LCP1, PNP, UBE2V1, and ZFP36 as four exosome-related hub genes (ERHGs). Compared to HC samples, these ERHGs showed excellent diagnostic efficiency (overall AUC for ERHGs is in the range of 0.923 to 0.970 in GSE123568) in SIONFH samples. LCP1, PNP, UBE2V1, and ZFP36 expressions were validated in the GSE123568 and GSE74089 datasets and finally detected in peripheral serum samples with accordant expression by RT-qPCR. Twenty potential exosome-related genes involved",
+          "cos_sim_score": 0.3412713408470154,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::39789578",
+          "title": "Integrated bioinformatics analysis and experimental validation of exosome-related gene signature in steroid-induced osteonecrosis of the femoral head.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39789578/",
+          "year": "2025",
+          "text": "exosome-related hub genes (ERHGs). Compared to HC samples, these ERHGs showed excellent diagnostic efficiency (overall AUC for ERHGs is in the range of 0.923 to 0.970 in GSE123568) in SIONFH samples. LCP1, PNP, UBE2V1, and ZFP36 expressions were validated in the GSE123568 and GSE74089 datasets and finally detected in peripheral serum samples with accordant expression by RT-qPCR. Twenty potential exosome-related genes involved in SIONFH were identified through bioinformatics analysis. LCP1, PNP, UBE2V1, and ZFP36 might become candidate biomarkers and therapeutic targets because they have an intimate relationship with exosomes. These findings shed light on the exosome-related acquaintance of SIONFH and might contribute to the diagnosis and prognosis of SIONFH.",
+          "cos_sim_score": -0.005482302512973547,
+          "source_type": "pubmed"
+        }
+      ]
+    }
+  ]
+}

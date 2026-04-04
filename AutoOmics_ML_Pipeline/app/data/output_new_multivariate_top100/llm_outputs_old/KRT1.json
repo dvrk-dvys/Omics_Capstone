@@ -1,0 +1,145 @@
+{
+  "probe_id": "11723952_at",
+  "gene_symbol": "KRT1",
+  "rf_importance": 0.0112,
+  "selection_freq": 1.0,
+  "abs_fold_change": 2.4863892666666665,
+  "score": 0.4304,
+  "probe_count": 1,
+  "probe_ids": "11723952_at",
+  "max_score": 0.4304,
+  "mean_abs_fold_change": 2.4864,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T00:01:42",
+  "interpretation": "KRT1 encodes Keratin 1, a type II cytoskeletal protein that plays a crucial role in maintaining the structural integrity of epithelial cells. It is involved in regulating kinase activities, which can influence cellular signaling pathways relevant to bone health and repair. Although there is no direct evidence linking KRT1 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in keratinocyte function and potential involvement in cellular stress responses may suggest a connection to the pathophysiology of SONFH, particularly in the context of steroid-induced cellular damage. The evidence retrieved primarily supports its general biological functions rather than a specific link to SONFH, leading to a low confidence in its direct relevance as a biomarker. Therefore, while KRT1 may have some biological plausibility in the context of SONFH, its clinical utility as an early-detection biomarker remains weak.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "KRT1 may be involved in cellular responses relevant to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "KRT1 (P04264). https://www.uniprot.org/uniprotkb/P04264",
+    "KRT1 \u2014 KRT1. https://platform.opentargets.org/target/ENSG00000167768",
+    "KRT1 \u2194 epidermolytic ichthyosis. https://platform.opentargets.org/target/ENSG00000167768/associations",
+    "KRT1 \u2194 diffuse nonepidermolytic palmoplantar keratoderma. https://platform.opentargets.org/target/ENSG00000167768/associations",
+    "KRT1 \u2194 Non-epidermolytic palmoplantar keratoderma. https://platform.opentargets.org/target/ENSG00000167768/associations",
+    "KRT1 \u2194 ichthyosis hystrix of Curth-Macklin. https://platform.opentargets.org/target/ENSG00000167768/associations",
+    "Keratin 1. https://en.wikipedia.org/wiki/Keratin_1",
+    "Keratin. https://en.wikipedia.org/wiki/Keratin",
+    "Keratin disease. https://en.wikipedia.org/wiki/Keratin_disease",
+    "Palmoplantar keratoderma. https://en.wikipedia.org/wiki/Palmoplantar_keratoderma"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4238,
+    "completion_tokens": 264,
+    "total_tokens": 4502,
+    "estimated_cost_usd": 0.000794
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P04264",
+          "title": "KRT1 (P04264)",
+          "url": "https://www.uniprot.org/uniprotkb/P04264",
+          "text": "Protein: Keratin, type II cytoskeletal 1\nFunction: May regulate the activity of kinases such as PKC and SRC via binding to integrin beta-1 (ITB1) and the receptor of activated protein C kinase 1 (RACK1). In complex with C1QBP is a high affinity receptor for kininogen-1/HMWK",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000167768::function",
+          "title": "KRT1 \u2014 KRT1",
+          "url": "https://platform.opentargets.org/target/ENSG00000167768",
+          "text": "Function: May regulate the activity of kinases such as PKC and SRC via binding to integrin beta-1 (ITB1) and the receptor of activated protein C kinase 1 (RACK1). In complex with C1QBP is a high affinity receptor for kininogen-1/HMWK.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000167768::MONDO_0007239",
+          "title": "KRT1 \u2194 epidermolytic ichthyosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000167768/associations",
+          "text": "Disease: epidermolytic ichthyosis\nDescription: A rare keratinopathic ichthyosis (KPI), that is characterized by a blistering phenotype at birth which progressively becomes hyperkeratotic.\nAssociation score: 0.826",
+          "cos_sim_score": 0.8261403477804824,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000167768::MONDO_0010962",
+          "title": "KRT1 \u2194 diffuse nonepidermolytic palmoplantar keratoderma",
+          "url": "https://platform.opentargets.org/target/ENSG00000167768/associations",
+          "text": "Disease: diffuse nonepidermolytic palmoplantar keratoderma\nDescription: A rare, genetic, isolated diffuse palmoplantar keratoderma characterized by diffuse, mild to thick, finely demarcated hyperkeratosis of palms and soles. Additional clinical findings include knuckle pad-like keratoses on fingers, hyperkeratosis of umbilicus and areolae, diffuse dry skin, hyperhidrosis, hangnails and frequent fungal infections. Histological examination of lesions reveals orthokeratotic hyperkeratosis, acanthosis, hypergranulosis, and mild lymphocyte infiltrations in the upper dermis with no evidence of epidermolysis.\nAssociation score: 0.705",
+          "cos_sim_score": 0.705394626778399,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000167768::Orphanet_2337",
+          "title": "KRT1 \u2194 Non-epidermolytic palmoplantar keratoderma",
+          "url": "https://platform.opentargets.org/target/ENSG00000167768/associations",
+          "text": "Disease: Non-epidermolytic palmoplantar keratoderma\nDescription: A palmoplantar keratosis characterized by a well-demarcated, symmetric keratoderma located_in palms and located_in soles.\nAssociation score: 0.691",
+          "cos_sim_score": 0.6911421348478859,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000167768::MONDO_0007808",
+          "title": "KRT1 \u2194 ichthyosis hystrix of Curth-Macklin",
+          "url": "https://platform.opentargets.org/target/ENSG00000167768/associations",
+          "text": "Disease: ichthyosis hystrix of Curth-Macklin\nDescription: Ichthyosis hystrix of Curth-Macklin (IHCM) is a rare type of keratinopathic ichthyosis that is characterized by the presence of severe hyperkeratotic lesions and palmoplantar keratoderma (PPK).\nAssociation score: 0.680",
+          "cos_sim_score": 0.6802764974925866,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Keratin 1",
+          "title": "Keratin 1",
+          "url": "https://en.wikipedia.org/wiki/Keratin_1",
+          "text": "Keratin 1 is a Type II intermediate filament (IFs) of the intracytoplasmatic cytoskeleton. Is co-expressed with and binds to Keratin 10, a Type I keratin, to form a coiled coil heterotypic keratin chain. Keratin 1 and Keratin 10 are specifically expressed in the spinous and granular layers of the epidermis. In contrast, basal layer keratinocytes express little to no Keratin 1. Mutations in KRT1, the gene encoding Keratin 1, have been associated with variants of the disease bullous congenital ichthyosiform erythroderma in which the palms and soles of the feet are affected. Mutations in KRT10 have also been associated with bullous congenital ichthyosiform erythroderma; however, in patients with KRT10 mutations the palms and soles are spared. This difference is likely due to Keratin 9, rather than Keratin 10, being the major binding partner of Keratin 1 in acral (palm and sole) keratinocytes.\nType II cytokeratins are clustered in a region of chromosome 12q12-q13.\n\nInteractions\nKeratin 1 has been shown to interact with desmoplakin and PRKCE.\n\nSee also\n34\u03b2E12\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.2585901916027069,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Keratin",
+          "title": "Keratin",
+          "url": "https://en.wikipedia.org/wiki/Keratin",
+          "text": "Diagnostic use\nKeratin expression is helpful in determining epithelial origin in anaplastic cancers. Tumors that express keratin include carcinomas, thymomas, sarcomas and trophoblastic neoplasms. Furthermore, the precise expression-pattern of keratin subtypes allows prediction of the origin of the primary tumor when assessing metastases. For example, hepatocellular carcinomas typically express CK8 and CK18, and cholangiocarcinomas express CK7, CK8 and CK18, while metastases of colorectal carcinomas express CK20, but not CK7.\n\nSee also\nKeratin-associated proteins (KRTAPs)\nList of cutaneous conditions caused by mutations in keratins\nList of keratins expressed in the human integumentary system\nList of keratins\nKeratinase\n\nReferences\nExternal links\n\nHair-Science.com's entry on the microscopic elements of hair\nProteopedia page on keratins",
+          "cos_sim_score": 0.18979313969612122,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Keratin disease",
+          "title": "Keratin disease",
+          "url": "https://en.wikipedia.org/wiki/Keratin_disease",
+          "text": "A keratin disease is a genetic disorder of one of the keratin genes. An example is monilethrix. The first to be identified was epidermolysis bullosa simplex.\n\nPathology\nExamples of keratin disease include:\n\nSee also\nList of cutaneous conditions caused by mutations in keratins\n\n\n== References ==",
+          "cos_sim_score": 0.1730341911315918,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Palmoplantar keratoderma",
+          "title": "Palmoplantar keratoderma",
+          "url": "https://en.wikipedia.org/wiki/Palmoplantar_keratoderma",
+          "text": "Genetics\nEpidermolytic palmoplantar keratoderma has been associated with keratin 9 and keratin 16.\nNonepidermolytic palmoplantar keratoderma has been associated with keratin 1 and keratin 16.\n\nSee also\nKeratoderma\nList of cutaneous conditions\n\nReferences\n\n\n== External links ==",
+          "cos_sim_score": 0.1422179937362671,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Keratin",
+          "title": "Keratin",
+          "url": "https://en.wikipedia.org/wiki/Keratin",
+          "text": "Protein structure\nThe first sequences of keratins were determined by Israel Hanukoglu and Elaine Fuchs (1982, 1983). These sequences revealed that there are two distinct but homologous keratin families, which were named type I and type II keratins. By analysis of the primary structures of these keratins and other intermediate filament proteins, Hanukoglu and Fuchs suggested a model in which keratins and intermediate filament proteins contain a central ~310 residue domain with four segments in \u03b1-helical conformation that are separated by three short linker segments predicted to be in beta-turn conformation. This model has been confirmed by the determination of the crystal structure of a helical domain of keratins.\n\nType I and II keratins\nThe human genome has 54 functional annotated keratin genes, of which 28 are type I keratins and 26 are type II keratins. \n\nFibrous keratin molecules supercoil to form a very stable, left-handed superhelical motif to multimerise, forming filaments consisting of multiple copies of the keratin monomer.\nThe major force that keeps the coiled-coil structure is hydrophobic interactions between apolar residues along the keratin's helical segments.\nLimited interior space is the reason why the triple helix of the (unrelated) structural protein collagen, found in skin, cartilage and bone, likewise has a high percentage of glycine. The connective tissue protein elastin also has a high percentage of both glycine and alanine. A preponderance of amino acids with small, nonreactive side groups is characteristic of structural proteins, for which H-bonded close packing is more important than chemical specificity.\n\nDisulfide bridges\nIn addition to intra- and intermolecular hydrogen bonds, the distinguishing feature of keratins is the presence of large amounts of the sulfur-containing amino acid cysteine, required for the disulfide bridges that confer additional strength and rigidity by permanent, thermally stable crosslinking\u2014in much the same way that non-protein sulfur bridges stabilize vulcanized rubber. Human hair is approximately 14% cysteine. The pungent smells of burning hair and skin are due to the volatile sulfur compounds formed. Extensive disulfide bonding contributes to the insolubility of keratins, except in a small number of solvents such as dissociating or reducing agents.\n\nThe more flexible and elastic keratins of hair have fewer interchain disulfide bridges than the keratins in mammalian fingernails, hooves and claws (homologous structures), which are harder and more like their analogs in other vertebrate classes. Hair and other \u03b1-keratins consist of \u03b1-helically coiled single protein strands (with regular intra-chain H-bonding), which are then further twisted into superhelical ropes that may be further coiled. The \u03b2-keratins of reptiles and birds have \u03b2-pleated sheets twisted together, then stabilized and hardened by disulfide bridges.\nThiolated polymers (thiomers) can form disulfide bridges with cysteine substructures of keratins getting covalently attached to these proteins. Thiomers therefore exhibit high binding properties to keratins found in hair, on skin and on the surface of many cell types.\n\nFilament formation\nIt has been proposed that keratins can be divided into 'hard' and 'soft' forms, or 'cytokeratins' and 'other keratins'. That model is now understood to be correct. A new nuclear addition in 2006 to describe keratins takes this into account.\nKeratin filaments are intermediate filaments. Like all intermediate filaments, keratin proteins form filamentous polymers in a series of assembly steps beginning with dimerization; dimers assemble into tetramers and octamers and eventually, if the current hypothesis holds, into unit-length-filaments (ULF) capable of annealing end-to-end into long filaments.\n\nPairing\nCornification\nCornification is the process of forming an epidermal barrier in\nstratified squamous epithelial tissue. At the cellular level,\ncornification is characterised by:",
+          "cos_sim_score": 0.13525985181331635,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

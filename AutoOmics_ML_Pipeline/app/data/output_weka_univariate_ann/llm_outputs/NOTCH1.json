@@ -1,0 +1,257 @@
+{
+  "rf_rank": 4,
+  "probe_id": "11718260_at",
+  "gene_symbol": "NOTCH1",
+  "score": 0.88,
+  "rf_n_nodes": 4,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 1.0624,
+  "log_fc": 1.0624,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11718260_at",
+  "max_score": 0.88,
+  "mean_abs_fold_change": 1.0624,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:18:01",
+  "interpretation": "NOTCH1 encodes a receptor involved in cell signaling that regulates various biological processes, including cell differentiation, proliferation, and apoptosis. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), NOTCH1 is implicated in the VEGF-Notch-Noggin signaling pathway, which plays a crucial role in angiogenesis and osteogenesis. Evidence from studies indicates that activation of this pathway can promote bone healing and vascularization in conditions like SONFH, suggesting that NOTCH1 may be a key player in the disease's progression and treatment. The retrieved evidence supports a direct connection between NOTCH1 and SONFH, particularly through its role in angiogenesis and osteogenesis coupling. Therefore, NOTCH1 has potential as a biomarker for early detection and therapeutic targeting in SONFH.",
+  "evidence_relation": "direct",
+  "evidence_tier": "Tier 2",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "NOTCH1 is involved in the signaling pathways that regulate angiogenesis and osteogenesis, which are critical in the pathology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "NOTCH1 (P46531). https://www.uniprot.org/uniprotkb/P46531",
+    "NOTCH1 \u2014 NOTCH1. https://platform.opentargets.org/target/ENSG00000148400",
+    "NOTCH1 \u2194 Adams-Oliver syndrome. https://platform.opentargets.org/target/ENSG00000148400/associations",
+    "NOTCH1 \u2194 chronic lymphocytic leukemia. https://platform.opentargets.org/target/ENSG00000148400/associations",
+    "NOTCH1 \u2194 aortic stenosis. https://platform.opentargets.org/target/ENSG00000148400/associations",
+    "NOTCH1 \u2194 cancer. https://platform.opentargets.org/target/ENSG00000148400/associations",
+    "[Mechanism of Jianpi Huogu Formula in promoting angiogenesis-osteogenesis coupling to treat steroid-induced osteonecrosis of femoral head in rats via VEGF-Notch-Noggin signaling pathway]. (2026). https://pubmed.ncbi.nlm.nih.gov/41814723/",
+    "NOTCH1 \u2014 notch receptor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TP53 \u2014 tumor protein p53 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HIF1A \u2014 hypoxia inducible factor 1 subunit alpha (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "AKT1 \u2014 AKT serine/threonine kinase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Targeting type H vessels with bioactive metabolites from traditional Chinese botanical drugs: a therapeutic strategy for skeletal disorders (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12592143/",
+    "Advances in the mechanism for steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12902040/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 11411,
+    "completion_tokens": 321,
+    "total_tokens": 11732,
+    "estimated_cost_usd": 0.001904
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P46531",
+          "title": "NOTCH1 (P46531)",
+          "url": "https://www.uniprot.org/uniprotkb/P46531",
+          "text": "Protein: Neurogenic locus notch homolog protein 1\nFunction: Functions as a receptor for membrane-bound ligands Jagged-1 (JAG1), Jagged-2 (JAG2) and Delta-1 (DLL1) to regulate cell-fate determination. Upon ligand activation through the released notch intracellular domain (NICD) it forms a transcriptional activator complex with RBPJ/RBPSUH and activates genes of the enhancer of split locus. Affects the implementation of differentiation, proliferation and apoptotic programs. Involved in angiogenesis; negatively regulates endothelial cell proliferation and migration and angiogenic sprouting. Involved in the maturation of both CD4(+) and CD8(+) cells in the thymus. Important for follicular differentiation and possibly cell fate selection within the follicle. During cerebellar development, functions as a receptor for neuronal DNER and is involved in the differentiation of Bergmann glia. Represses neuronal and myogenic differentiation. May play an essential role in postimplantation development, probably in some aspect of cell specification and/or differentiation. May be involved in mesoderm development, somite formation and neurogenesis. May enhance HIF1A function by sequestering HIF1AN away from HIF1A. Required for the THBS4 function in regulating protective astrogenesis from the subventricular zone (SVZ) niche after injury. Involved in determination of left/right symmetry by modulating the balance between motile and immotile (sensory) cilia at the left-right organiser (LRO)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000148400::function",
+          "title": "NOTCH1 \u2014 NOTCH1",
+          "url": "https://platform.opentargets.org/target/ENSG00000148400",
+          "text": "Function: Functions as a receptor for membrane-bound ligands Jagged-1 (JAG1), Jagged-2 (JAG2) and Delta-1 (DLL1) to regulate cell-fate determination. Upon ligand activation through the released notch intracellular domain (NICD) it forms a transcriptional activator complex with RBPJ/RBPSUH and activates genes of the enhancer of split locus. Affects the implementation of differentiation, proliferation and apoptotic programs. Involved in angiogenesis; negatively regulates endothelial cell proliferation and migration and angiogenic sprouting. Involved in the maturation of both CD4(+) and CD8(+) cells in the thymus. Important for follicular differentiation and possibly cell fate selection within the follicle. During cerebellar development, functions as a receptor for neuronal DNER and is involved in the differentiation of Bergmann glia. Represses neuronal and myogenic differentiation. May play an essential role in postimplantation development, probably in some aspect of cell specification and/or differentiation. May be involved in mesoderm development, somite formation and neurogenesis. May enhance HIF1A function by sequestering HIF1AN away from HIF1A. Required for the THBS4 function in regulating protective astrogenesis from the subventricular zone (SVZ) niche after injury. Involved in determination of left/right symmetry by modulating the balance between motile and immotile (sensory) cilia at the left-right organiser (LRO). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000148400::MONDO_0007034",
+          "title": "NOTCH1 \u2194 Adams-Oliver syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000148400/associations",
+          "text": "Disease: Adams-Oliver syndrome\nDescription: Adams-Oliver Syndrome (AOS) is a rare disorder characterized by the combination of congenital limb abnormalities and scalp defects, often accompanied by skull ossification defects.\nAssociation score: 0.820",
+          "cos_sim_score": 0.8199672000988557,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000148400::EFO_0000095",
+          "title": "NOTCH1 \u2194 chronic lymphocytic leukemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000148400/associations",
+          "text": "Disease: chronic lymphocytic leukemia\nDescription: B-cell chronic lymphocytic leukemia (B-CLL) is a type of B-cell non-Hodgkin lymphoma, and the most common form of leukemia in Western countries, affecting elderly adults (mean age of 67 and 72 years) with a slight male predominance (1.7:1), and characterized by a highly variable clinical presentation that can include asymptomatic disease or non-specific B-symptoms such as unintentional weight loss, severe fatigue, fever (without evidence of infection), and night sweats as well as cervical lymphadenopathy, splenomegaly and frequent infections. Some patients can also develop autoimmune complications such as autoimmune hemolytic anemia or immune thrombocytopenia. The clinical course is extremely heterogeneous with survival ranging from a few months to several decades.\nAssociation score: 0.733",
+          "cos_sim_score": 0.7334479359860145,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000148400::EFO_0000266",
+          "title": "NOTCH1 \u2194 aortic stenosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000148400/associations",
+          "text": "Disease: aortic stenosis\nDescription: Aortic valve stenosis is a aortic valve disease caused by the incomplete opening of the aortic valve. The aortic valve controls the direction of blood flow from the left ventricle to the aorta. When in good working order, the aortic valve does not impede the flow of blood between these two spaces. Under some circumstances, the aortic valve becomes narrower than normal, impeding the flow of blood. This is known as aortic valve stenosis, or aortic stenosis, often abbreviated as AS.\nAssociation score: 0.726",
+          "cos_sim_score": 0.7257538224782628,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000148400::MONDO_0004992",
+          "title": "NOTCH1 \u2194 cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000148400/associations",
+          "text": "Disease: cancer\nDescription: A tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues. Malignant neoplasms often metastasize to distant anatomic sites and may recur after excision. The most common malignant neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), Hodgkin and non-Hodgkin lymphomas, leukemias, melanomas, and sarcomas.\nAssociation score: 0.678",
+          "cos_sim_score": 0.6783782241885714,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::41814723",
+          "title": "[Mechanism of Jianpi Huogu Formula in promoting angiogenesis-osteogenesis coupling to treat steroid-induced osteonecrosis of femoral head in rats via VEGF-Notch-Noggin signaling pathway].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41814723/",
+          "year": "2026",
+          "text": "This study aimed to observe the promoting effect of Jianpi Huogu Formula(JPHGF) on angiogenesis-osteogenesis coupling in rats with steroid-induced osteonecrosis of the femoral head(SONFH), and to explore its mechanism of action through the vascular endothelial growth factor(VEGF)-Notch-Noggin signaling pathway. A total of 120 Sprague-Dawley rats were randomly divided into a normal group, a model group, low-, medium-, and high-dose JPHGF groups(2.5, 5, and 10 g\u00b7kg~(-1)), and a Jiangusheng Pills group(1.53 g\u00b7kg~(-1)). Except for the normal group, all rats were injected with lipopolysaccharide(20 \u03bcg\u00b7kg~(-1)) via the tail vein once daily on days 1 and 2, followed by intramuscular injection of methylprednisolone sodium succinate(40 mg\u00b7kg~(-1), gluteal muscle) once daily from days 3 to 5. The normal group received an equivalent volume of normal saline. Four weeks after model establishment, the rats were administered the corresponding drugs by gavage. The therapeutic effects of JPHGF on SONFH rats were evaluated by measuring mechanical pain threshold, cold pain sensitivity, hemorheological parameters, four coagulation indices, and by pathological and imaging analyses of the femoral head. The microvascular distribution of the femoral head was observed by ink perfusion and Microfil angiography. Immunofluorescence was used to detect the expression of platelet endothelial cell adhesion molecule-1(CD31), endothelial mucin(Emcn), and the osteoblast-specific transcription factor Osterix, as well as the co-expression of CD31 and Noggin proteins in the femoral head. Immunohistochemistry was employed to detect the expression of type \u2160 collagen(collagen \u2160) and Notch-1 proteins, while Western blot was used to measure the expression levels of VEGF and Noggin proteins in the femoral head. The results showed that JPHGF significantly increased the mechanical pain threshold and reduced the number of foot lifts in response to cold stimulation in SONFH rats. It markedly increased trabecular bone area, reduced the number of adipocytes and the percentage of empty lacunae, improved imaging manifestations of femoral head necrosis, and increased the vascular area in ink perfusion and the vessel volume in Microfil perfusion within the medullary cavity of the femoral head. JPHGF also improved hemorheological parameters and coagulation function, upregulated the expression of",
+          "cos_sim_score": 0.4901253879070282,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::41814723",
+          "title": "[Mechanism of Jianpi Huogu Formula in promoting angiogenesis-osteogenesis coupling to treat steroid-induced osteonecrosis of femoral head in rats via VEGF-Notch-Noggin signaling pathway].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41814723/",
+          "year": "2026",
+          "text": "and reduced the number of foot lifts in response to cold stimulation in SONFH rats. It markedly increased trabecular bone area, reduced the number of adipocytes and the percentage of empty lacunae, improved imaging manifestations of femoral head necrosis, and increased the vascular area in ink perfusion and the vessel volume in Microfil perfusion within the medullary cavity of the femoral head. JPHGF also improved hemorheological parameters and coagulation function, upregulated the expression of CD31, Emcn, and Osterix proteins, enhanced the co-expression of CD31 and Noggin proteins, and promoted the expression of collagen \u2160, Notch-1, VEGF, and Noggin proteins. These findings indicate that JPHGF promotes angiogenesis-osteogenesis coupling by activating the VEGF-Notch-Noggin signaling pathway, thereby effectively treating SONFH in rats. This study elucidates the pharmacological connotation of JPHGF from the perspective of &quot;angiogenesis-osteogenesis coupling&quot; and provides an experimental basis for its clinical application.",
+          "cos_sim_score": 0.3713966906070709,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "NOTCH1 \u2014 notch receptor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: NOTCH1\nGene name: notch receptor 1\nAliases / synonyms: AOS5, AOVD1, TAN1, hN1\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the NOTCH family of proteins. Members of this Type I transmembrane protein family share structural characteristics including an extracellular domain consisting of multiple epidermal growth factor-like (EGF) repeats, and an intracellular domain consisting of multiple different domain types. Notch signaling is an evolutionarily conserved intercellular signaling pathway that regulates interactions between physically adjacent cells through binding of Notch family receptors to their cognate ligands. The encoded preproprotein is proteolytically processed in the trans-Golgi network to generate two polypeptide chains that heterodimerize to form the mature cell-surface receptor. This receptor plays a role in the development of numerous cell and tissue types. Mutations ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "NOTCH1",
+          "aliases": "AOS5, AOVD1, TAN1, hN1",
+          "gene_description": "notch receptor 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TP53 \u2014 tumor protein p53",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TP53\nGene name: tumor protein p53\nAliases / synonyms: BCC7, BMFS5, LFS1, P53, TRP53\nOrganism: Homo sapiens\nGene summary: This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TP53",
+          "aliases": "BCC7, BMFS5, LFS1, P53, TRP53",
+          "gene_description": "tumor protein p53"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "HIF1A \u2014 hypoxia inducible factor 1 subunit alpha",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HIF1A\nGene name: hypoxia inducible factor 1 subunit alpha\nAliases / synonyms: HIF-1-alpha, HIF-1A, HIF-1alpha, HIF1, HIF1-ALPHA, MOP1, PASD8, bHLHe78\nOrganism: Homo sapiens\nGene summary: This gene encodes the alpha subunit of transcription factor hypoxia-inducible factor-1 (HIF-1), which is a heterodimer composed of an alpha and a beta subunit. HIF-1 functions as a master regulator of cellular and systemic homeostatic response to hypoxia by activating transcription of many genes, including those involved in energy metabolism, angiogenesis, apoptosis, and other genes whose protein products increase oxygen delivery or facilitate metabolic adaptation to hypoxia. HIF-1 thus plays an essential role in embryonic vascularization, tumor angiogenesis and pathophysiology of ischemic disease. Alternatively spliced transcript variants encoding different isoforms have been identified for this gene. [provided by RefSeq, Jul 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HIF1A",
+          "aliases": "HIF-1-alpha, HIF-1A, HIF-1alpha, HIF1, HIF1-ALPHA, MOP1, PASD8, bHLHe78",
+          "gene_description": "hypoxia inducible factor 1 subunit alpha"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "AKT1 \u2014 AKT serine/threonine kinase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AKT1\nGene name: AKT serine/threonine kinase 1\nAliases / synonyms: AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA\nOrganism: Homo sapiens\nGene summary: This gene encodes one of the three members of the human AKT serine-threonine protein kinase family which are often referred to as protein kinase B alpha, beta, and gamma. These highly similar AKT proteins all have an N-terminal pleckstrin homology domain, a serine/threonine-specific kinase domain and a C-terminal regulatory domain. These proteins are phosphorylated by phosphoinositide 3-kinase (PI3K). AKT/PI3K forms a key component of many signalling pathways that involve the binding of membrane-bound ligands such as receptor tyrosine kinases, G-protein coupled receptors, and integrin-linked kinase. These AKT proteins therefore regulate a wide variety of cellular functions including cell proliferation, survival, metabolism, and angiogenesis in both normal and malignant cells. AKT proteins ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AKT1",
+          "aliases": "AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA",
+          "gene_description": "AKT serine/threonine kinase 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::12592143",
+          "title": "Targeting type H vessels with bioactive metabolites from traditional Chinese botanical drugs: a therapeutic strategy for skeletal disorders",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12592143/",
+          "text": "The mechanisms by which bioactive metabolites regulate type H vessels for osteonecrosis of the femoral head treatment are summarized in Table 5.\nTABLE 5\nTherapeutic mechanisms of bioactive metabolites targeting type H vessels in osteonecrosis of the femoral head treatment.\n4 Therapeutic potential of bioactive metabolites in other skeletal disorders via type H vessels\nAs discussed in previous sections, bioactive metabolites show promising therapeutic effects in major skeletal disorders through regulation of type H vessels. Importantly, this therapeutic potential extends to other skeletal conditions where type H vessel dysfunction plays a critical role. Recent studies indicate that excessive prenatal exposure to glucocorticoids can inhibit type H vessel formation, impair osteogenesis, and ultimately lead to steroid-related skeletal diseases, including fetal bone dysplasia (Shangguan et al., 2021; Su et al., 2025). Moreover, a characteristic reduction in type H vessel abundance has been observed in osteopenia of the subchondral bone of the mandibular condyle induced by botulinum toxin, demonstrating the universal regulatory role of type H vasculature in bone homeostasis across different skeletal sites (Li H. et al., 2021). However, current therapeutic strategies for these conditions lack research on targeted modulation of type H vessels using bioactive metabolites, which represents a promising new research direction.\nBeyond direct hormonal exposure, prenatal dexamethasone exposure (PDE) has been shown to impair offspring skeletal development. Shangguan et al. revealed that PDE activates the GR/CEBP\u03b1/miR-34c axis to suppress PDGFR\u03b2/FAK pathway activity, resulting in type H vessel deficiency and skeletal dysplasia (Shangguan et al., 2021). Similarly, Chai et al. found that prenatal corticosteroid treatment in mice downregulates Ezh2 expression in osteoclast precursors, reducing PDGF-BB secretion and subsequent type H vessel formation, ultimately leading to inadequate bone mineralization (Chai et al., 2020). These studies collectively demonstrate that glucocorticoids disrupt fetal bone metabolism through type H vessel inhibition. Given the established capacity of bioactive metabolites to modulate PDGF-BB secretion from OPCs and promote type H vessel formation, targeting these pathways with bioactive metabolites represents a promising therapeutic approach for hormone-induced vascular-related bone disorders.\nFrom a perspective of skeletal development, both the mandibular condyle and long bones undergo endochondral ossification, suggesting shared vascular regulatory mechanisms. Type H vessels play crucial roles not only in long bone metabolism but also in the maintenance of mandibular bone homeostasis. Li et al. provided the first definitive evidence of type H vessels in murine mandibular bone, demonstrating their similar age-dependent decline (Li H. et al., 2021). Using a botulinum toxin-induced mandibular osteopenia model, the team observed that a significant reduction in type H vessel density correlated with pronounced bone loss. Further studies have revealed that deferoxamine mesylate effectively reverses bone loss by promoting type H endothelial cell proliferation through activation of the HIF-1\u03b1 signaling pathway. This discovery not only identifies novel therapeutic targets for mandibular bone formation and repair but also, more importantly, reveals that bone disorders at different anatomical sites may share common vascular regulatory mechanisms from a vascular biology perspective. These findings provide a theoretical basis for developing bioactive metabolites targeting type H vessels to treat other potential skeletal disorders.\n5 Summary and perspectives\nSince their first description 11 years ago, type H vessels have been identified as a distinct vascular subtype within bone and are already recognized as a key indicator of bone formation and bone mass (Kusumbe et al., 2014; Wang L. et al., 2017). Extensive studies have since investigated the role of type H vessels in skeletal disorders and explored various strategies to modulate their abundance (Peng et al., 2020; Liu X. et al., 2023). Current evidence indicates that type H vessels exert beneficial effects in osteoporosis, bone defects, fractures, and osteonecrosis of the femoral head, where increased vessel abundance enhances osteogenesis and accelerates tissue repair. In contrast, excessive formation of type H vessels in the subchondral bone contributes to osteophyte growth and cartilage degeneration in osteoarthritis, acting as a pathogenic factor that requires suppression.",
+          "cos_sim_score": 0.5958659648895264,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12902040",
+          "title": "Advances in the mechanism for steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12902040/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a progressive disease affecting primarily individuals aged 30\u201350, characterized by femoral head ischemia and osteocyte death.1\u20133 ONFH cases have generally increased over the past decade worldwide.4,5 Patients with ONFH often report pain localized to the hip, buttock, or groin, accompanied by restricted hip joint motion, with nearly 80% of patients eventually experiencing femoral head collapse2,6\u20139 Diagnostic imaging plays a crucial role in identifying the disease, with the \u201cdouble-line sign\u201d on magnetic resonance imaging (MRI) and the \u201ccrescent sign\u201d on X-rays serving as characteristic features of ONFH.2,9\u201311 The main types of ONFH are categorized into generally traumatic and non-traumatic ONFH (caused by glucocorticoid use, alcohol abuse, or idiopathic).\nGlucocorticoids (GCs) use is the most common non-traumatic cause of ONFH, which ranges about 40%\u201360% among all non-traumatic ONFH patients.4,5 A novel epidemiology showed a rise to 75% of non-traumatic ONFH related to GCs treatment.4 GCs exert their effects by binding to the glucocorticoid receptor (GR), that expressed in nearly all cells, regulating cell growth, differentiation, and apoptosis.9,12 In its inactive state, GR resides in the cytoplasm, associated with a complex of proteins such as heat shock proteins (HSP90, HSP70) and immunophilins (e.g., FKBP51, FKBP52). Upon GCs binding, the complex disassembles, activating GR, which then translocates to the nucleus, where it interacts with target genes, initiating transcriptional responses that mediate GCs' effects.13\u201315 GC-induced ONFH has been proven to vary from other types of ONFH in many aspects. Patients with SONFH tend to exhibit more rapid disease progression, higher rates of bilateral involvement, and earlier femoral head collapse compared to those with alcohol-induced or idiopathic ONFH.16\u201318 Notably, while both SONFH and alcohol-induced ONFH are characterized by lipid dysregulation, SONFH is marked by GC-induced bone marrow adipogenesis, whereas the alcohol-induced subtype is more closely related to hepatic lipid metabolism and dysfunction.17,19\nAdvances in medical imaging and bioinformatics have enhanced our understanding of SONFH, offering novel insights into its pathophysiology.20\u201322 However, a comprehensive review of the underlying causes of SONFH has yet to be concluded. In this review, we highlight recent findings on the mechanisms of SONFH from multiple perspectives. General pathological changes, such as impaired blood supply and biomechanical alterations, are key contributors to the disease process. Abnormal neuronal transmission has also been identified as a factor for SONFH pathology. At the cellular level, irregular cell differentiation and increased cell death play critical roles in the progression of SONFH. On a molecular scale, altered activity of crucial factors and related signaling cascades, as well as disordered non-coding RNAs (ncRNAs), have been implicated in the pathogenesis of the disease. Finally, the role of genetic variations in SONFH susceptibility is increasingly being recognized (Fig. 1). By summarizing these advancements, we aim to provide a comprehensive understanding of SONFH mechanisms, which may inspire further research and develop novel treatment strategies.Fig. 1Potential mechanism of steroid-induced osteonecrosis of the femoral head\nFig. 1\nPotential mechanism of steroid-induced osteonecrosis of the femoral head\nGeneral pathological alternation",
+          "cos_sim_score": 0.5774682760238647,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12902040",
+          "title": "Advances in the mechanism for steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12902040/",
+          "text": "b (i) Histological analysis of the femoral head revealed a distinct characteristic in the methylprednisolone group: empty bone depressions and necrosis with bone cell adhesion. Remarkably, treatment with miR-224-5p antagomir significantly reduced the occurrence of osteonecrosis of the femoral head from 58.3% to 8.3%. (ii) Micro-CT result showed that MiR-224-5p antagomir could significantly increase the trabecular thickness while decreasing the trabecular separation of the femoral head. Reproduced with permission. Copyright 2021, Elsevier.243\nc DEGs between SONFH patients and control samples. Volcano plot (i) showing the expression levels of DEGs. Heat map (ii) showing the expression levels of the top 100 DEGs. Reproduced with permission. Copyright 2022, Zhang et al.244\nd The mechanism of the regulatory effect of CDR1as in SONFH-BMSCs. Reproduced with permission. Copyright 2020, Chen et al.267\ne The mechanistic illustration shows that in SONFH, CircPVT1 is decreased. Elevating CircPVT1 levels results in decreased expression of TGF\u03b2/Smad2/3 and enhances Smad7 activation through targeting miR-21-5p, consequently reducing SONFN. Reproduced with permission. Copyright 2021, Hao et al.168\nFig. 9\nNon-coding RNAs regulating the process of SONFH. a MiR-224-5p regulates the nuclear retention of TAZ. (i) shows a schematic diagram of the TAZ mechanism. The Smad4-TAZ axis was supposed to play a pivotal role in adipogenesis and osteogenesis because TAZ in the nucleus could interact with both Runx2 and PPAR\u03b3. (ii) shows the immunofluorescence examination of the nuclear retention of TAZ. Reproduced with permission. Copyright 2021, Elsevier.243\nb (i) Histological analysis of the femoral head revealed a distinct characteristic in the methylprednisolone group: empty bone depressions and necrosis with bone cell adhesion. Remarkably, treatment with miR-224-5p antagomir significantly reduced the occurrence of osteonecrosis of the femoral head from 58.3% to 8.3%. (ii) Micro-CT result showed that MiR-224-5p antagomir could significantly increase the trabecular thickness while decreasing the trabecular separation of the femoral head. Reproduced with permission. Copyright 2021, Elsevier.243\nc DEGs between SONFH patients and control samples. Volcano plot (i) showing the expression levels of DEGs. Heat map (ii) showing the expression levels of the top 100 DEGs. Reproduced with permission. Copyright 2022, Zhang et al.244\nd The mechanism of the regulatory effect of CDR1as in SONFH-BMSCs. Reproduced with permission. Copyright 2020, Chen et al.267\ne The mechanistic illustration shows that in SONFH, CircPVT1 is decreased. Elevating CircPVT1 levels results in decreased expression of TGF\u03b2/Smad2/3 and enhances Smad7 activation through targeting miR-21-5p, consequently reducing SONFN. Reproduced with permission. Copyright 2021, Hao et al.168",
+          "cos_sim_score": 0.5549002885818481,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12902040",
+          "title": "Advances in the mechanism for steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12902040/",
+          "text": "e A diagram showing hypoxia affects the differentiation of BMSCs into osteoblasts by regulating HIF-1\u03b1 expression. Reproduced with permission. Copyright 2022, Chen et al.145\nf Immunohistochemical examination of S100A9 in femoral head tissue revealed robust staining in various components. Injured vessels (i), marrow adipose (ii), fibrotic tissue (iii), and osteocytes in cortical bone, as well as inflammatory cells (iv), exhibited intense S100A9 immunostaining. Moreover, there were notable elevations in S100A9-immunostained vessels, adipocytes, fibroblasts, and osteocytes. Reproduced with permission. Copyright 2019, Wu et al.28\nFig. 6\nMolecular factors dysregulation in SONFH. a Micro-CT examination revealed the contour of the femoral head. In group i (gradually treated with 2\u2009mL of 50\u2009mg/mL VEGFR2 antibody) and group ii (gradually treated with 2\u2009mL of 25\u2009mg/mL VEGFR2 antibody), findings included subchondral cysts, sparse trabecular changes, and deformation of the femoral head. Additionally, group iii (gradually treated with 2\u2009mL of 12.5\u2009mg/mL VEGFR2 antibody) exhibited slight trabecular changes. Conversely, group iv (saline group) displayed tightly packed trabeculae and an intact femoral head. Reproduced with permission. Copyright 2013, Elsevier.138\nb Representative image of the proximal epiphysis of the femur on the 7th day of the experiment. At \u00d740 magnification, (i) greater VEGF immunostaining was observed in the sildenafil group (black arrows). A similar result was shown for OPN, especially in the regions around the trabeculae (ii). Goldner\u2019s trichrome staining (iii) showed the greater formation of osteoid tissue (the corresponding area is highlighted in red and indicated by black arrowheads, indicative of newly formed and noncalcified bone tissue). Immunohistochemistry (iv) with PAS staining is suggestive of higher production of carbohydrates and suggests higher metabolic activity in the treated group. Reproduced with permission. Copyright 2020, Orthopaedic Research Society.139\nc A figure showing that HIF-1\u03b1 could couple angiogenesis and osteogenesis. Reproduced with permission. Copyright 2022, Chen et al.145\nd A suggested mechanism of elevated IL-6 levels in the synovial fluid and initiation of synovitis in the hip joint due to HIF-1\u03b1 following the induction of SONFH. Reproduced with permission. Copyright 2016, The Journal of Bone and Joint Surgery.151\ne A diagram showing hypoxia affects the differentiation of BMSCs into osteoblasts by regulating HIF-1\u03b1 expression. Reproduced with permission. Copyright 2022, Chen et al.145\nf Immunohistochemical examination of S100A9 in femoral head tissue revealed robust staining in various components. Injured vessels (i), marrow adipose (ii), fibrotic tissue (iii), and osteocytes in cortical bone, as well as inflammatory cells (iv), exhibited intense S100A9 immunostaining. Moreover, there were notable elevations in S100A9-immunostained vessels, adipocytes, fibroblasts, and osteocytes. Reproduced with permission. Copyright 2019, Wu et al.28\nHIF-1\u03b1",
+          "cos_sim_score": 0.5218061208724976,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12902040",
+          "title": "Advances in the mechanism for steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12902040/",
+          "text": "Table 1\nStudies investigating the general pathological changes in SONFH\nMicrocirculation disorder\nThe main nutrient source of the femoral head is the medial femoral circumflex artery (MFCA).23 Occlusion of its lateral epiphyseal branches, particularly the superior retinacular artery, is critical for femoral head necrosis and collapse, whereas medial branches are less involved.24 This occlusion is always attributed to venous stasis, arterial ischemia, or arterial occlusion (Fig. 2a). In addition, occlusion of the artery of the ligamentum teres, a branch of the obturator artery, is reported to be another common risk factor associated with ONFH.25Fig. 2General pathological alternations in SONFH. a Results of the pathological sections of osteonecrotic femoral heads focusing on various blood supply changes in the lateral weight-bearing area. (A1, B1, and C1) Detailed results are shown in A2, B2, and C2. A3,4, B3,4, C3,4 showed the HE staining conditions. Reproduced with permission. Copyright 2022, The Journal of Bone and Joint Surgery.24\nb T2WI lipid suppression image demonstrating necrosis and edema of the left femoral head. (i) Different Regions of interest (ROIs) selected by Tissue 4D processing software (ROI-1, red circle, healthy femoral heads; ROI-2, green circle, necrotic area; ROI-3, yellow circle, boundary area; ROI-4, blue circle, edema area). (ii) Reproduced with permission. Copyright 2023, Li et al.26\nc Macroscopic appearance, specimen radiograph, von Mises equivalent stress, octahedral shear stress, octahedral shear strain, and fracture analysis at the normal area(i), Type1 (ii), 2 (iii), and 3 (iv) ONFH. Reproduced with permission. Copyright 2015, Elsevier.31\nd The functional network connectivity (FNC) of the brain differed in patients with ONFH compared to healthy controls, specifically in the sub-brain network. Reproduced with permission. Copyright 2022, Pain Physician.22\ne\nT-test statistical difference maps between the ONFH patients and healthy controls. Areas with different activity were highlighted which mainly included right middle occipital gyrus (MOG), right inferior parietal lobule, left angular gyri, right insula, right superior temporal gyrus, right lingual gyrus, left median cingulate and paracingulate gyri, left precuneus, left cuneus, right parahippocampal gyrus (PHG) right middle temporal gyrus, the left calcarine fissure, both sides of the precentral gyrus (PreCG), the bilateral postcentral gyrus (PoCG), the right triangular part of the inferior frontal gyrus (IFGtri), the right middle frontal gyrus, and the right paracingulate gyri. Reproduced with permission. Copyright 2022, Feng et al.20\nFig. 2\nGeneral pathological alternations in SONFH. a Results of the pathological sections of osteonecrotic femoral heads focusing on various blood supply changes in the lateral weight-bearing area. (A1, B1, and C1) Detailed results are shown in A2, B2, and C2. A3,4, B3,4, C3,4 showed the HE staining conditions. Reproduced with permission. Copyright 2022, The Journal of Bone and Joint Surgery.24\nb T2WI lipid suppression image demonstrating necrosis and edema of the left femoral head. (i) Different Regions of interest (ROIs) selected by Tissue 4D processing software (ROI-1, red circle, healthy femoral heads; ROI-2, green circle, necrotic area; ROI-3, yellow circle, boundary area; ROI-4, blue circle, edema area). (ii) Reproduced with permission. Copyright 2023, Li et al.26\nc Macroscopic appearance, specimen radiograph, von Mises equivalent stress, octahedral shear stress, octahedral shear strain, and fracture analysis at the normal area(i), Type1 (ii), 2 (iii), and 3 (iv) ONFH. Reproduced with permission. Copyright 2015, Elsevier.31\nd The functional network connectivity (FNC) of the brain differed in patients with ONFH compared to healthy controls, specifically in the sub-brain network. Reproduced with permission. Copyright 2022, Pain Physician.22\ne",
+          "cos_sim_score": 0.5105041265487671,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::41814723",
+          "title": "[Mechanism of Jianpi Huogu Formula in promoting angiogenesis-osteogenesis coupling to treat steroid-induced osteonecrosis of femoral head in rats via VEGF-Notch-Noggin signaling pathway].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41814723/",
+          "year": "2026",
+          "text": "This study aimed to observe the promoting effect of Jianpi Huogu Formula(JPHGF) on angiogenesis-osteogenesis coupling in rats with steroid-induced osteonecrosis of the femoral head(SONFH), and to explore its mechanism of action through the vascular endothelial growth factor(VEGF)-Notch-Noggin signaling pathway. A total of 120 Sprague-Dawley rats were randomly divided into a normal group, a model group, low-, medium-, and high-dose JPHGF groups(2.5, 5, and 10 g\u00b7kg~(-1)), and a Jiangusheng Pills group(1.53 g\u00b7kg~(-1)). Except for the normal group, all rats were injected with lipopolysaccharide(20 \u03bcg\u00b7kg~(-1)) via the tail vein once daily on days 1 and 2, followed by intramuscular injection of methylprednisolone sodium succinate(40 mg\u00b7kg~(-1), gluteal muscle) once daily from days 3 to 5. The normal group received an equivalent volume of normal saline. Four weeks after model establishment, the rats were administered the corresponding drugs by gavage. The therapeutic effects of JPHGF on SONFH rats were evaluated by measuring mechanical pain threshold, cold pain sensitivity, hemorheological parameters, four coagulation indices, and by pathological and imaging analyses of the femoral head. The microvascular distribution of the femoral head was observed by ink perfusion and Microfil angiography. Immunofluorescence was used to detect the expression of platelet endothelial cell adhesion molecule-1(CD31), endothelial mucin(Emcn), and the osteoblast-specific transcription factor Osterix, as well as the co-expression of CD31 and Noggin proteins in the femoral head. Immunohistochemistry was employed to detect the expression of type \u2160 collagen(collagen \u2160) and Notch-1 proteins, while Western blot was used to measure the expression levels of VEGF and Noggin proteins in the femoral head. The results showed that JPHGF significantly increased the mechanical pain threshold and reduced the number of foot lifts in response to cold stimulation in SONFH rats. It markedly increased trabecular bone area, reduced the number of adipocytes and the percentage of empty lacunae, improved imaging manifestations of femoral head necrosis, and increased the vascular area in ink perfusion and the vessel volume in Microfil perfusion within the medullary cavity of the femoral head. JPHGF also improved hemorheological parameters and coagulation function, upregulated the expression of",
+          "cos_sim_score": 0.4901253879070282,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::41814723",
+          "title": "[Mechanism of Jianpi Huogu Formula in promoting angiogenesis-osteogenesis coupling to treat steroid-induced osteonecrosis of femoral head in rats via VEGF-Notch-Noggin signaling pathway].",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41814723/",
+          "year": "2026",
+          "text": "and reduced the number of foot lifts in response to cold stimulation in SONFH rats. It markedly increased trabecular bone area, reduced the number of adipocytes and the percentage of empty lacunae, improved imaging manifestations of femoral head necrosis, and increased the vascular area in ink perfusion and the vessel volume in Microfil perfusion within the medullary cavity of the femoral head. JPHGF also improved hemorheological parameters and coagulation function, upregulated the expression of CD31, Emcn, and Osterix proteins, enhanced the co-expression of CD31 and Noggin proteins, and promoted the expression of collagen \u2160, Notch-1, VEGF, and Noggin proteins. These findings indicate that JPHGF promotes angiogenesis-osteogenesis coupling by activating the VEGF-Notch-Noggin signaling pathway, thereby effectively treating SONFH in rats. This study elucidates the pharmacological connotation of JPHGF from the perspective of &quot;angiogenesis-osteogenesis coupling&quot; and provides an experimental basis for its clinical application.",
+          "cos_sim_score": 0.3713966906070709,
+          "source_type": "pubmed"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "probe_id": "11725950_s_at",
+  "gene_symbol": "RIOK3",
+  "rf_importance": 0.0167,
+  "selection_freq": 1.0,
+  "abs_fold_change": 1.7679326,
+  "score": 0.3723,
+  "probe_count": 4,
+  "probe_ids": "11725950_s_at | 11749176_a_at | 11747125_a_at | 11725951_at",
+  "max_score": 0.3723,
+  "mean_abs_fold_change": 1.9494,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T00:06:43",
+  "interpretation": "RIOK3 encodes a serine/threonine-protein kinase involved in ribosome quality control, particularly in the degradation of non-functional ribosomal subunits. This process is crucial for maintaining cellular homeostasis, especially under stress conditions, which may be relevant in the context of steroid-induced osteonecrosis of the femoral head (SONFH). While there is no direct evidence linking RIOK3 to SONFH, its role in regulating stress responses and immune signaling could imply a potential involvement in the pathophysiology of SONFH, particularly in how steroid treatment may affect bone health. The evidence retrieved primarily supports its general biological functions rather than a specific connection to SONFH, leading to a lower confidence in its direct relevance as a biomarker. Therefore, while RIOK3 may have some biological plausibility in the context of SONFH, its potential as a clinically actionable biomarker remains weak.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "RIOK3 may play a role in cellular stress responses that could be relevant to the mechanisms underlying Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "RIOK3 (O14730). https://www.uniprot.org/uniprotkb/O14730",
+    "RIOK3 (O14730-2). https://www.uniprot.org/uniprotkb/O14730-2",
+    "RIOK3 \u2014 RIOK3. https://platform.opentargets.org/target/ENSG00000101782",
+    "RIOK3 \u2194 neuroinflammatory disorder. https://platform.opentargets.org/target/ENSG00000101782/associations",
+    "RIOK3 \u2194 neurodegeneration with ataxia, dystonia, and gaze palsy, childhood-onset. https://platform.opentargets.org/target/ENSG00000101782/associations",
+    "RIOK3 \u2194 COVID-19. https://platform.opentargets.org/target/ENSG00000101782/associations",
+    "RIOK3 \u2194 infection. https://platform.opentargets.org/target/ENSG00000101782/associations",
+    "Protein kinase domain. https://en.wikipedia.org/wiki/Protein_kinase_domain",
+    "AMPA receptor. https://en.wikipedia.org/wiki/AMPA_receptor"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5740,
+    "completion_tokens": 254,
+    "total_tokens": 5994,
+    "estimated_cost_usd": 0.001013
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O14730",
+          "title": "RIOK3 (O14730)",
+          "url": "https://www.uniprot.org/uniprotkb/O14730",
+          "text": "Protein: Serine/threonine-protein kinase RIO3\nFunction: Serine/threonine-protein kinase involved in a ribosome quality control that takes place when ribosomes have stalled, leading to 18S non-functional rRNA decay and degradation of the 40S ribosomal subunit (PubMed:39947182, PubMed:39947183, PubMed:40022732). Acts downstream of RNF10: specifically recognizes and binds RPS2/us5 and RPS3/us3 monoubiquitinated by RNF10, promoting degradation of the 40S ribosomal subunit in a kinase-dependent manner (PubMed:39947182, PubMed:39947183, PubMed:40022732). The RNF10-RIOK3 ribosome quality control takes place in response to ribosome subunit imbalance or downstream the EIF2AK4/GCN2-mediated integrated stress response (ISR) (PubMed:39947182, PubMed:39947183, PubMed:40022732). Also involved in regulation of type I interferon (IFN)-dependent immune response, possibly by acting as an adapter protein essential for the recruitment of TBK1 to IRF3 (PubMed:24807708). Phosphorylates IFIH1 on 'Ser-828' interfering with IFIH1 filament assembly on long dsRNA and resulting in attenuated IFIH1-signaling (PubMed:25865883). Can inhibit CASP10 isoform 7-mediated activation of the NF-kappa-B signaling pathway (PubMed:19557502)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::O14730-2",
+          "title": "RIOK3 (O14730-2)",
+          "url": "https://www.uniprot.org/uniprotkb/O14730-2",
+          "text": "Protein: Isoform 2 of Serine/threonine-protein kinase RIO3",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000101782::function",
+          "title": "RIOK3 \u2014 RIOK3",
+          "url": "https://platform.opentargets.org/target/ENSG00000101782",
+          "text": "Function: Serine/threonine-protein kinase involved in a ribosome quality control that takes place when ribosomes have stalled, leading to 18S non-functional rRNA decay and degradation of the 40S ribosomal subunit (PubMed:39947182, PubMed:39947183, PubMed:40022732). Acts downstream of RNF10: specifically recognizes and binds RPS2/us5 and RPS3/us3 monoubiquitinated by RNF10, promoting degradation of the 40S ribosomal subunit in a kinase-dependent manner (PubMed:39947182, PubMed:39947183, PubMed:40022732). The RNF10-RIOK3 ribosome quality control takes place in response to ribosome subunit imbalance or downstream the EIF2AK4/GCN2-mediated integrated stress response (ISR) (PubMed:39947182, PubMed:39947183, PubMed:40022732). Also involved in regulation of type I interferon (IFN)-dependent immune response, possibly by acting as an adapter protein essential for the recruitment of TBK1 to IRF3 (PubMed:24807708). Phosphorylates IFIH1 on 'Ser-828' interfering with IFIH1 filament assembly on long dsRNA and resulting in attenuated IFIH1-signaling (PubMed:25865883). Can inhibit CASP10 isoform 7-mediated activation of the NF-kappa-B signaling pathway (PubMed:19557502).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101782::EFO_0020092",
+          "title": "RIOK3 \u2194 neuroinflammatory disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000101782/associations",
+          "text": "Disease: neuroinflammatory disorder\nDescription: A hypersensitivity reaction type II disease that involves the central nervous system.\nAssociation score: 0.195",
+          "cos_sim_score": 0.19464271984385612,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101782::MONDO_0014940",
+          "title": "RIOK3 \u2194 neurodegeneration with ataxia, dystonia, and gaze palsy, childhood-onset",
+          "url": "https://platform.opentargets.org/target/ENSG00000101782/associations",
+          "text": "Disease: neurodegeneration with ataxia, dystonia, and gaze palsy, childhood-onset\nAssociation score: 0.118",
+          "cos_sim_score": 0.11826555349910459,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101782::MONDO_0100096",
+          "title": "RIOK3 \u2194 COVID-19",
+          "url": "https://platform.opentargets.org/target/ENSG00000101782/associations",
+          "text": "Disease: COVID-19\nDescription: A disease caused by infection with severe acute respiratory syndrome coronavirus 2.\nAssociation score: 0.091",
+          "cos_sim_score": 0.09097550187868747,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000101782::EFO_0000544",
+          "title": "RIOK3 \u2194 infection",
+          "url": "https://platform.opentargets.org/target/ENSG00000101782/associations",
+          "text": "Disease: infection\nDescription: The state of being infected such as from the introduction of a foreign agent such as serum, vaccine, antigenic substance or organism.\nAssociation score: 0.086",
+          "cos_sim_score": 0.08605087800040609,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Protein kinase domain",
+          "title": "Protein kinase domain",
+          "url": "https://en.wikipedia.org/wiki/Protein_kinase_domain",
+          "text": "; EPHA7 ; EPHA8 ; EPHB1 ; EPHB2 ; EPHB3 ; EPHB4 ; EPHB6 ; ERBB2 ; ERBB3 ; ERBB4 ; ERN1 ; ERN2 ; FER ; FES ; FGFR1 ; FGFR2 ; FGFR3 ; FGFR4 ; FGR ; FLT1 ; FLT3 ; FLT4 ; FRK ; FYN ; GAK ; GRK1 ; GRK2 ; GRK3 ; GRK4 ; GRK5 ; GRK6 ; GRK7 ; GSG2 ; GSK3A ; GSK3B ; GUCY2C ; GUCY2D ; GUCY2F ; HCK ; HIPK1 ; HIPK2 ; HIPK3 ; HIPK4 ; HUNK ; ICK ; IGF1R ; IKBKB ; IKBKE ; ILK ; INSR ; INSRR ; IRAK1 ; IRAK2 ; IRAK3 ; IRAK4 ; ITK ; JAK1 ; JAK2 ; JAK3 ; KALRN ; KDR ; KIT ; KSR1 ; KSR2 ; LATS1 ; LATS2 ; LCK ; LIMK1 ; LIMK2 ; LMTK2 ; LMTK3 ; LRRK1 ; LRRK2 ; LTK ; LYN ; MAK ; MAP2K1 ; MAP2K2 ; MAP2K3 ; MAP2K4 ; MAP2K5 ; MAP2K6 ; MAP2K7 ; MAP3K1 ; MAP3K10 ; MAP3K11 ; MAP3K12 ; MAP3K13 ; MAP3K14 ; MAP3K15 ; MAP3K19 ; MAP3K2 ; MAP3K20 ; MAP3K21 ; MAP3K3 ; MAP3K4 ; MAP3K5 ; MAP3K6 ; MAP3K7 ; MAP3K8 ; MAP3K9 ; MAP4K1 ; MAP4K2 ; MAP4K3 ; MAP4K4 ; MAP4K5 ; MAPK1 ; MAPK10 ; MAPK11 ; MAPK12 ; MAPK13 ; MAPK14 ; MAPK15 ; MAPK3 ; MAPK4 ; MAPK6 ; MAPK7 ; MAPK8 ; MAPK9 ; MAPKAPK2 ; MAPKAPK3 ; MAPKAPK5 ; MARK1 ; MARK2 ; MARK3 ; MARK4 ; MAST1 ; MAST2 ; MAST3 ; MAST4 ; MASTL ; MATK ; MELK ; MERTK ; MET ; MINK1 ; MKNK1 ; MKNK2 ; MLKL ; MOK ; MOS ; MST1R ; MUSK ; MYLK ; MYLK2 ; MYLK3 ; MYLK4 ; MYO3A ; MYO3B ; NEK1 ; NEK10 ; NEK11 ; NEK2 ; NEK3 ; NEK4 ; NEK5 ; NEK6 ; NEK7 ; NEK8 ; NEK9",
+          "cos_sim_score": 0.34630733728408813,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Protein kinase domain",
+          "title": "Protein kinase domain",
+          "url": "https://en.wikipedia.org/wiki/Protein_kinase_domain",
+          "text": "AAK1 ; AATK ; ABL1 ; ABL2 ; ACVR1 ; ACVR1B ; ACVR1C ; ACVR2A ; ACVR2B ; ACVRL1 ; AKT1 ; AKT2 ; AKT3 ; ALK ; AMHR2 ; ANKK1 ; ARAF ; AURKA ; AURKB ; AURKC ; AXL ; BLK ; BMP2K ; BMPR1A ; BMPR1B ; BMPR2 ; BMX ; BRAF ; BRSK1 ; BRSK2 ; BTK ; BUB1 ; BUB1B ; CAMK1 ; CAMK1D ; CAMK1G ; CAMK2A ; CAMK2B ; CAMK2D ; CAMK2G ; CAMK4 ; CAMKK1 ; CAMKK2 ; CAMKV ; CASK ; CDC42BPA ; CDC42BPB ; CDC42BPG ; CDC7 ; CDK1 ; CDK10 ; CDK11A ; CDK11B ; CDK12 ; CDK13 ; CDK14 ; CDK15 ; CDK16 ; CDK17 ; CDK18 ; CDK19 ; CDK2 ; CDK20 ; CDK3 ; CDK4 ; CDK5 ; CDK6 ; CDK7 ; CDK8 ; CDK9 ; CDKL1 ; CDKL2 ; CDKL3 ; CDKL4 ; CDKL5 ; CHEK1 ; CHEK2 ; CHUK ; CIT ; CLK1 ; CLK2 ; CLK3 ; CLK4 ; CSF1R ; CSK ; CSNK1A1 ; CSNK1A1L ; CSNK1D ; CSNK1E ; CSNK1G1 ; CSNK1G2 ; CSNK1G3 ; CSNK2A1 ; CSNK2A2 ; CSNK2A3 ; DAPK1 ; DAPK2 ; DAPK3 ; DCLK1 ; DCLK2 ; DCLK3 ; DDR1 ; DDR2 ; DMPK ; DSTYK ; DYRK1A ; DYRK1B ; DYRK2 ; DYRK3 ; DYRK4 ; EGFR ; EIF2AK1 ; EIF2AK2 ; EIF2AK3 ; EIF2AK4 ; EPHA1 ; EPHA10 ; EPHA2 ; EPHA3 ; EPHA4 ; EPHA5 ; EPHA6 ; EPHA7 ; EPHA8 ; EPHB1 ; EPHB2 ; EPHB3 ; EPHB4 ; EPHB6 ; ERBB2 ; ERBB3 ; ERBB4 ; ERN1 ; ERN2 ; FER ; FES ; FGFR1 ; FGFR2 ; FGFR3 ; FGFR4 ; FGR ; FLT1 ; FLT3 ; FLT4 ; FRK ; FYN ; GAK ; GRK1 ; GRK2 ; GRK3 ; GRK4 ; GRK5 ; GRK6 ; GRK7 ; GSG2 ; GSK3A ;",
+          "cos_sim_score": 0.3375401198863983,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Protein kinase domain",
+          "title": "Protein kinase domain",
+          "url": "https://en.wikipedia.org/wiki/Protein_kinase_domain",
+          "text": "; MAST2 ; MAST3 ; MAST4 ; MASTL ; MATK ; MELK ; MERTK ; MET ; MINK1 ; MKNK1 ; MKNK2 ; MLKL ; MOK ; MOS ; MST1R ; MUSK ; MYLK ; MYLK2 ; MYLK3 ; MYLK4 ; MYO3A ; MYO3B ; NEK1 ; NEK10 ; NEK11 ; NEK2 ; NEK3 ; NEK4 ; NEK5 ; NEK6 ; NEK7 ; NEK8 ; NEK9 ; NIM1K ; NLK ; NPR1 ; NPR2 ; NRBP1 ; NRBP2 ; NRK ; NTRK1 ; NTRK2 ; NTRK3 ; NUAK1 ; NUAK2 ; OBSCN ; OXSR1 ; PAK1 ; PAK2 ; PAK3 ; PAK4 ; PAK5 ; PAK6 ; PAN3 ; PASK ; PBK ; PDGFRA ; PDGFRB ; PDIK1L ; PDPK1 ; PDPK2P ; PEAK1 ; PEAK3 ; PHKG1 ; PHKG2 ; PIK3R4 ; PIM1 ; PIM2 ; PIM3 ; PINK1 ; PKDCC ; PKMYT1 ; PKN1 ; PKN2 ; PKN3 ; PLK1 ; PLK2 ; PLK3 ; PLK4 ; PLK5 ; PNCK ; POMK ; PRKAA1 ; PRKAA2 ; PRKACA ; PRKACB ; PRKACG ; PRKCA ; PRKCB ; PRKCD ; PRKCE ; PRKCG ; PRKCH ; PRKCI ; PRKCQ ; PRKCZ ; PRKD1 ; PRKD2 ; PRKD3 ; PRKG1 ; PRKG2 ; PRKX ; PRKY ; PRPF4B ; PSKH1 ; PSKH2 ; PTK2 ; PTK2B ; PTK6 ; PTK7 ; PXK ; RAF1 ; RET ; RIOK1 ; RIOK2 ; RIOK3 ; RIPK1 ; RIPK2 ; RIPK3 ; RIPK4 ; RNASEL ; ROCK1 ; ROCK2 ; ROR1 ; ROR2 ; ROS1 ; RPS6KA1 ; RPS6KA2 ; RPS6KA3 ; RPS6KA4 ; RPS6KA5 ; RPS6KA6 ; RPS6KB1 ; RPS6KB2 ; RPS6KC1 ; RPS6KL1 ; RSKR ; RYK ; SBK1 ; SBK2 ; SBK3 ; SCYL1 ; SCYL2 ; SCYL3 ; SGK1 ; SGK2 ; SGK223 ; SGK3 ; SIK1 ; SIK1B ; SIK2 ; SIK3 ; SLK ; SNRK ; SPEG ; SRC ; SRMS ; SRPK1 ; SRPK2 ; SRPK3 ;",
+          "cos_sim_score": 0.32018792629241943,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Protein kinase domain",
+          "title": "Protein kinase domain",
+          "url": "https://en.wikipedia.org/wiki/Protein_kinase_domain",
+          "text": "; RPS6KA4 ; RPS6KA5 ; RPS6KA6 ; RPS6KB1 ; RPS6KB2 ; RPS6KC1 ; RPS6KL1 ; RSKR ; RYK ; SBK1 ; SBK2 ; SBK3 ; SCYL1 ; SCYL2 ; SCYL3 ; SGK1 ; SGK2 ; SGK223 ; SGK3 ; SIK1 ; SIK1B ; SIK2 ; SIK3 ; SLK ; SNRK ; SPEG ; SRC ; SRMS ; SRPK1 ; SRPK2 ; SRPK3 ; STK10 ; STK11 ; STK16 ; STK17A ; STK17B ; STK24 ; STK25 ; STK26 ; STK3 ; STK31 ; STK32A ; STK32B ; STK32C ; STK33 ; STK35 ; STK36 ; STK38 ; STK38L ; STK39 ; STK4 ; STK40 ; STKLD1 ; STRADA ; STRADB ; STYK1 ; SYK ; TAOK1 ; TAOK2 ; TAOK3 ; TBCK ; TBK1 ; TEC ; TEK ; TESK1 ; TESK2 ; TEX14 ; TGFBR1 ; TGFBR2 ; TIE1 ; TLK1 ; TLK2 ; TNIK ; TNK1 ; TNK2 ; TNNI3K ; TP53RK ; TRIB1 ; TRIB2 ; TRIB3 ; TRIO ; TSSK1B ; TSSK2 ; TSSK3 ; TSSK4 ; TSSK6 ; TTBK1 ; TTBK2 ; TTK ; TTN ; TXK ; TYK2 ; TYRO3 ; UHMK1 ; ULK1 ; ULK2 ; ULK3 ; ULK4 ; VRK1 ; VRK2 ; VRK3 ; WEE1 ; WEE2 ; WNK1 ; WNK2 ; WNK3 ; WNK4 ; YES1 ; ZAP70",
+          "cos_sim_score": 0.2958250045776367,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::AMPA receptor",
+          "title": "AMPA receptor",
+          "url": "https://en.wikipedia.org/wiki/AMPA_receptor",
+          "text": "The \u03b1-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid receptor (AMPA receptor, AMPAR, or quisqualate receptor) is an ionotropic glutamate receptor (iGluR) and predominantly sodium ion channel that mediates fast excitatory neurotransmission in the central nervous system (CNS).  Its activation by the neurotransmitter glutamate facilitates rapid neuronal communication, essential for various brain functions, including learning and memory. Its name is derived from the ability to be activated by the artificial glutamate analog AMPA. The receptor was initially named the \"quisqualate receptor\" by Watkins and colleagues after the naturally occurring agonist quisqualate. Later, the receptor was designated as the \"AMPA receptor\" following the development of the selective agonist AMPA by Tage Honore and colleagues at the Royal Danish School of Pharmacy in Copenhagen. The GRIA2-encoded AMPA receptor ligand binding core (GluA2 LBD) was the first glutamate receptor ion channel domain to be crystallized.",
+          "cos_sim_score": 0.2262037843465805,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

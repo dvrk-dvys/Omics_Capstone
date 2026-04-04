@@ -1,0 +1,177 @@
+{
+  "probe_id": "11726205_at",
+  "gene_symbol": "CCNJL",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.1141558148697958,
+  "abs_fold_change": 1.307,
+  "score": 1.3048,
+  "probe_count": 1,
+  "probe_ids": "11726205_at",
+  "max_score": 1.3048,
+  "mean_abs_fold_change": 1.307,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T19:33:08",
+  "interpretation": "CCNJL, or cyclin J-like protein, is predicted to play a role in regulating the cell cycle, particularly during the G1/S transition. While there is no direct evidence linking CCNJL to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in cell cycle regulation suggests a potential role in the cellular responses to steroid treatment, which is known to impact bone health. The retrieved evidence primarily indicates associations with other diseases, such as liver disease and connective tissue disorders, but does not provide strong support for its role in SONFH. Therefore, while CCNJL may have biological relevance due to its cellular functions, its potential as a biomarker for early detection of SONFH is weak and lacks specific evidence.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "CCNJL may be involved in cellular processes relevant to SONFH, but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "CCNJL (Q8IV13). https://www.uniprot.org/uniprotkb/Q8IV13",
+    "CCNJL (Q8IV13-2). https://www.uniprot.org/uniprotkb/Q8IV13-2",
+    "CCNJL \u2194 liver disease. https://platform.opentargets.org/target/ENSG00000135083/associations",
+    "CCNJL \u2194 tooth disease. https://platform.opentargets.org/target/ENSG00000135083/associations",
+    "CCNJL \u2194 connective tissue disease. https://platform.opentargets.org/target/ENSG00000135083/associations",
+    "CCNJL \u2194 Alzheimer disease. https://platform.opentargets.org/target/ENSG00000135083/associations",
+    "CCNJL \u2194 placenta praevia. https://platform.opentargets.org/target/ENSG00000135083/associations",
+    "CCNJL \u2014 cyclin J like (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HSPA5 \u2014 heat shock protein family A (Hsp70) member 5 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CDK1 \u2014 cyclin dependent kinase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CDK2 \u2014 cyclin dependent kinase 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TRAF2 \u2014 TNF receptor associated factor 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4503,
+    "completion_tokens": 272,
+    "total_tokens": 4775,
+    "estimated_cost_usd": 0.000839
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q8IV13",
+          "title": "CCNJL (Q8IV13)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8IV13",
+          "text": "Protein: Cyclin-J-like protein",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q8IV13-2",
+          "title": "CCNJL (Q8IV13-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8IV13-2",
+          "text": "Protein: Isoform 2 of Cyclin-J-like protein",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000135083::EFO_0001421",
+          "title": "CCNJL \u2194 liver disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000135083/associations",
+          "text": "Disease: liver disease\nDescription: Pathological processes of the LIVER.\nAssociation score: 0.324",
+          "cos_sim_score": 0.3239965984207568,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000135083::EFO_1001216",
+          "title": "CCNJL \u2194 tooth disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000135083/associations",
+          "text": "Disease: tooth disease\nDescription: A disease involving the calcareous tooth.\nAssociation score: 0.320",
+          "cos_sim_score": 0.3203557208876528,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000135083::EFO_1001986",
+          "title": "CCNJL \u2194 connective tissue disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000135083/associations",
+          "text": "Disease: connective tissue disease\nDescription: A disorder characterized by abnormalities in one or more of the elements of the connective tissues, typically associated with genetic defects.\nAssociation score: 0.242",
+          "cos_sim_score": 0.2415784220894297,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000135083::MONDO_0004975",
+          "title": "CCNJL \u2194 Alzheimer disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000135083/associations",
+          "text": "Disease: Alzheimer disease\nDescription: A progressive, neurodegenerative disease characterized by loss of function and death of nerve cells in several areas of the brain leading to loss of cognitive function such as memory and language.\nAssociation score: 0.214",
+          "cos_sim_score": 0.21355600775166633,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000135083::EFO_0007442",
+          "title": "CCNJL \u2194 placenta praevia",
+          "url": "https://platform.opentargets.org/target/ENSG00000135083/associations",
+          "text": "Disease: placenta praevia\nDescription: Abnormal placentation in which the placenta implants in the lower segment of the uterus (the zone of dilation) and may cover part or all of the opening of the cervix. It is often associated with serious antepartum bleeding and premature labor.\nAssociation score: 0.065",
+          "cos_sim_score": 0.06537298165189125,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "CCNJL \u2014 cyclin J like",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CCNJL\nGene name: cyclin J like\nOrganism: Homo sapiens\nGene summary: Predicted to enable cyclin-dependent protein serine/threonine kinase regulator activity. Predicted to be involved in G1/S transition of mitotic cell cycle. Predicted to be part of cyclin-dependent protein kinase holoenzyme complex. Predicted to be active in cytoplasm; microtubule organizing center; and nucleus. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CCNJL",
+          "aliases": "",
+          "gene_description": "cyclin J like"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "HSPA5 \u2014 heat shock protein family A (Hsp70) member 5",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HSPA5\nGene name: heat shock protein family A (Hsp70) member 5\nAliases / synonyms: BIP, GRP78, HEL-S-89n\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the heat shock protein 70 (HSP70) family. This protein localizes to the lumen of the endoplasmic reticulum (ER) where it operates as a typical HSP70 chaperone involved in the folding and assembly of proteins in the ER and is a master regulator of ER homeostasis. During cellular stress, as during viral infection or tumorogenesis, this protein interacts with the transmembrane stress sensor proteins PERK (protein kinase R-like endoplasmic reticulum kinase), IRE1 (inositol-requiring kinase 1), and ATF6 (activating transcription factor 6) where it acts as a repressor of the unfolded protein response (UPR) and also plays a role in cellular apoptosis and senescence. Elevated expression and atypical translocation of this protein to the cell surface h...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HSPA5",
+          "aliases": "BIP, GRP78, HEL-S-89n",
+          "gene_description": "heat shock protein family A (Hsp70) member 5"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CDK1 \u2014 cyclin dependent kinase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CDK1\nGene name: cyclin dependent kinase 1\nAliases / synonyms: CDC2, CDC28A, P34CDC2\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the Ser/Thr protein kinase family. This protein is a catalytic subunit of the highly conserved protein kinase complex known as M-phase promoting factor (MPF), which is essential for G2/M phase transitions of eukaryotic cell cycle. Mitotic cyclins stably associate with this protein and function as regulatory subunits. The kinase activity of this protein is controlled by cyclin accumulation and destruction through the cell cycle. The phosphorylation and dephosphorylation of this protein also play important regulatory roles in cell cycle control. Alternatively spliced transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, May 2023]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CDK1",
+          "aliases": "CDC2, CDC28A, P34CDC2",
+          "gene_description": "cyclin dependent kinase 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CDK2 \u2014 cyclin dependent kinase 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CDK2\nGene name: cyclin dependent kinase 2\nAliases / synonyms: CDKN2, p33(CDK2)\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of a family of serine/threonine protein kinases that participate in cell cycle regulation. The encoded protein is the catalytic subunit of the cyclin-dependent protein kinase complex, which regulates progression through the cell cycle. Activity of this protein is especially critical during the G1 to S phase transition. This protein associates with and regulated by other subunits of the complex including cyclin A or E, CDK inhibitor p21Cip1 (CDKN1A), and p27Kip1 (CDKN1B). Alternative splicing results in multiple transcript variants. [provided by RefSeq, Mar 2014]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CDK2",
+          "aliases": "CDKN2, p33(CDK2)",
+          "gene_description": "cyclin dependent kinase 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TRAF2 \u2014 TNF receptor associated factor 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TRAF2\nGene name: TNF receptor associated factor 2\nAliases / synonyms: MGC:45012, RNF117, TRAP, TRAP3\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the TNF receptor associated factor (TRAF) protein family. TRAF proteins associate with, and mediate the signal transduction from members of the TNF receptor superfamily. This protein directly interacts with TNF receptors, and forms a heterodimeric complex with TRAF1. This protein is required for TNF-alpha-mediated activation of MAPK8/JNK and NF-kappaB. The protein complex formed by this protein and TRAF1 interacts with the inhibitor-of-apoptosis proteins (IAPs), and functions as a mediator of the anti-apoptotic signals from TNF receptors. The interaction of this protein with TRADD, a TNF receptor associated apoptotic signal transducer, ensures the recruitment of IAPs for the direct inhibition of caspase activation. BIRC2/c-IAP1, an apoptosis ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TRAF2",
+          "aliases": "MGC:45012, RNF117, TRAP, TRAP3",
+          "gene_description": "TNF receptor associated factor 2"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

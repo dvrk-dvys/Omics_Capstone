@@ -1,0 +1,179 @@
+{
+  "probe_id": "11717752_s_at",
+  "gene_symbol": "SEC14L1",
+  "score": 1.0,
+  "SD_TestAUC": 0.0202860206483394,
+  "abs_fold_change": 0.8329,
+  "probe_count": 1,
+  "probe_ids": "11717752_s_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.8329,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T22:39:48",
+  "interpretation": "SEC14L1 encodes a protein that may play a role in innate immunity by inhibiting the antiviral RIG-I signaling pathway, which is crucial for the body's response to viral infections. However, its direct connection to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) is not well established in the literature. The retrieved evidence primarily discusses its role in immune regulation and does not provide specific insights into its involvement in SONFH or related bone pathologies. Therefore, while SEC14L1 may have biological relevance due to its general cellular functions, the evidence linking it to SONFH is weak, leading to the conclusion that it is unlikely to serve as a clinically actionable biomarker for early detection of this condition.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "SEC14L1's role in immune regulation does not directly connect it to the mechanisms of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "SEC14L1 (Q92503). https://www.uniprot.org/uniprotkb/Q92503",
+    "SEC14L1 (Q92503-3). https://www.uniprot.org/uniprotkb/Q92503-3",
+    "SEC14L1 (Q92503-2). https://www.uniprot.org/uniprotkb/Q92503-2",
+    "SEC14L1 \u2014 SEC14L1. https://platform.opentargets.org/target/ENSG00000129657",
+    "SEC14L1 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000129657/associations",
+    "SEC14L1 \u2194 nervous system disease. https://platform.opentargets.org/target/ENSG00000129657/associations",
+    "SEC14L1 \u2194 complication. https://platform.opentargets.org/target/ENSG00000129657/associations",
+    "SEC14L1 \u2194 Herpes Zoster. https://platform.opentargets.org/target/ENSG00000129657/associations",
+    "SEC14L1 \u2014 SEC14 like lipid binding 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "RIGI \u2014 RNA sensor RIG-I (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CDH13 \u2014 cadherin 13 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EPB41 \u2014 erythrocyte membrane protein band 4.1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HNRNPH1 \u2014 heterogeneous nuclear ribonucleoprotein H1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4695,
+    "completion_tokens": 276,
+    "total_tokens": 4971,
+    "estimated_cost_usd": 0.00087
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q92503",
+          "title": "SEC14L1 (Q92503)",
+          "url": "https://www.uniprot.org/uniprotkb/Q92503",
+          "text": "Protein: SEC14-like protein 1\nFunction: May play a role in innate immunity by inhibiting the antiviral RIG-I signaling pathway. In this pathway, functions as a negative regulator of RIGI, the cytoplasmic sensor of viral nucleic acids. Prevents the interaction of RIGI with MAVS/IPS1, an important step in signal propagation (PubMed:23843640). May also regulate the SLC18A3 and SLC5A7 cholinergic transporters (PubMed:17092608)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q92503-3",
+          "title": "SEC14L1 (Q92503-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q92503-3",
+          "text": "Protein: Isoform 3 of SEC14-like protein 1",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q92503-2",
+          "title": "SEC14L1 (Q92503-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q92503-2",
+          "text": "Protein: Isoform 2 of SEC14-like protein 1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000129657::function",
+          "title": "SEC14L1 \u2014 SEC14L1",
+          "url": "https://platform.opentargets.org/target/ENSG00000129657",
+          "text": "Function: May play a role in innate immunity by inhibiting the antiviral RIG-I signaling pathway. In this pathway, functions as a negative regulator of RIGI, the cytoplasmic sensor of viral nucleic acids. Prevents the interaction of RIGI with MAVS/IPS1, an important step in signal propagation (PubMed:23843640). May also regulate the SLC18A3 and SLC5A7 cholinergic transporters (PubMed:17092608). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000129657::EFO_0005772",
+          "title": "SEC14L1 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000129657/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.536",
+          "cos_sim_score": 0.5358769322306931,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000129657::EFO_0000618",
+          "title": "SEC14L1 \u2194 nervous system disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000129657/associations",
+          "text": "Disease: nervous system disease\nDescription: a general class of medical conditions affecting the nervous system.\nAssociation score: 0.325",
+          "cos_sim_score": 0.32511691555197497,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000129657::EFO_0009518",
+          "title": "SEC14L1 \u2194 complication",
+          "url": "https://platform.opentargets.org/target/ENSG00000129657/associations",
+          "text": "Disease: complication\nDescription: Any disease or disorder that occurs during the course of, or because of, another disease, treatment, or procedure. [ NCI ]\nAssociation score: 0.317",
+          "cos_sim_score": 0.3174901866621237,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000129657::EFO_0006510",
+          "title": "SEC14L1 \u2194 Herpes Zoster",
+          "url": "https://platform.opentargets.org/target/ENSG00000129657/associations",
+          "text": "Disease: Herpes Zoster\nDescription: A common dermal and neurologic disorder caused by reactivation of the varicella-zoster virus that has remained dormant within dorsal root ganglia, often for decades, after the patient's initial exposure to the virus in the form of varicella (chickenpox). It is characterized by severe neuralgic pain along the distribution of the affected nerve and crops of clustered vesicles over the area.\nAssociation score: 0.317",
+          "cos_sim_score": 0.3174901866621237,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "SEC14L1 \u2014 SEC14 like lipid binding 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SEC14L1\nGene name: SEC14 like lipid binding 1\nAliases / synonyms: PRELID4A, SEC14L\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene belongs to the SEC14 cytosolic factor family. It has similarity to yeast SEC14 and to Japanese flying squid RALBP which suggests a possible role of the gene product in an intracellular transport system. Multiple alternatively spliced transcript variants have been found for this gene; some variants represent read-through transcripts that include exons from the upstream gene C17orf86. [provided by RefSeq, Feb 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SEC14L1",
+          "aliases": "PRELID4A, SEC14L",
+          "gene_description": "SEC14 like lipid binding 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "RIGI \u2014 RNA sensor RIG-I",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RIGI\nGene name: RNA sensor RIG-I\nAliases / synonyms: DDX58, RIG-I, RIG1, RLR-1, SGMRT2\nOrganism: Homo sapiens\nGene summary: DEAD box proteins, characterized by the conserved motif Asp-Glu-Ala-Asp (DEAD), are putative RNA helicases which are implicated in a number of cellular processes involving RNA binding and alteration of RNA secondary structure. This gene encodes a protein containing RNA helicase-DEAD box protein motifs and a caspase recruitment domain (CARD). It is involved in viral double-stranded (ds) RNA recognition and the regulation of the antiviral innate immune response. Mutations in this gene are associated with Singleton-Merten syndrome 2. [provided by RefSeq, Aug 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RIGI",
+          "aliases": "DDX58, RIG-I, RIG1, RLR-1, SGMRT2",
+          "gene_description": "RNA sensor RIG-I"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CDH13 \u2014 cadherin 13",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CDH13\nGene name: cadherin 13\nAliases / synonyms: CDHH, P105\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the cadherin superfamily. The encoded protein is localized to the surface of the cell membrane and is anchored by a GPI moiety, rather than by a transmembrane domain. The protein lacks the cytoplasmic domain characteristic of other cadherins, and so is not thought to be a cell-cell adhesion glycoprotein. This protein acts as a negative regulator of axon growth during neural differentiation. It also protects vascular endothelial cells from apoptosis due to oxidative stress, and is associated with resistance to atherosclerosis. The gene is hypermethylated in many types of cancer. Alternative splicing results in multiple transcript variants encoding different isoforms. [provided by RefSeq, May 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CDH13",
+          "aliases": "CDHH, P105",
+          "gene_description": "cadherin 13"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EPB41 \u2014 erythrocyte membrane protein band 4.1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EPB41\nGene name: erythrocyte membrane protein band 4.1\nAliases / synonyms: 4.1R, EL1, HE\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene, together with spectrin and actin, constitute the red cell membrane cytoskeletal network. This complex plays a critical role in erythrocyte shape and deformability. Mutations in this gene are associated with type 1 elliptocytosis (EL1). Alternatively spliced transcript variants encoding different isoforms have been described for this gene.[provided by RefSeq, Oct 2009]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EPB41",
+          "aliases": "4.1R, EL1, HE",
+          "gene_description": "erythrocyte membrane protein band 4.1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "HNRNPH1 \u2014 heterogeneous nuclear ribonucleoprotein H1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HNRNPH1\nGene name: heterogeneous nuclear ribonucleoprotein H1\nAliases / synonyms: HNRPH, HNRPH1, NEDCDS, hnRNPH\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of a subfamily of ubiquitously expressed heterogeneous nuclear ribonucleoproteins (hnRNPs). The hnRNPs are RNA binding proteins that complex with heterogeneous nuclear RNA. These proteins are associated with pre-mRNAs in the nucleus and appear to influence pre-mRNA processing and other aspects of mRNA metabolism and transport. While all of the hnRNPs are present in the nucleus, some may shuttle between the nucleus and the cytoplasm. The hnRNP proteins have distinct nucleic acid binding properties. The protein encoded by this gene has three repeats of quasi-RRM domains that bind to RNA and is very similar to the family member HNRPF. This gene may be associated with hereditary lymphedema type I. Alternatively spliced transcript variants have been described [provide...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HNRNPH1",
+          "aliases": "HNRPH, HNRPH1, NEDCDS, hnRNPH",
+          "gene_description": "heterogeneous nuclear ribonucleoprotein H1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

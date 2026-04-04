@@ -1,0 +1,159 @@
+{
+  "probe_id": "11732135_a_at",
+  "gene_symbol": "ADCK3",
+  "score": 1.0,
+  "SD_TestAUC": 0.0165634664999983,
+  "abs_fold_change": 0.5548,
+  "probe_count": 1,
+  "probe_ids": "11732135_a_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.5548,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:41:07",
+  "interpretation": "ADCK3 encodes a mitochondrial atypical kinase involved in the biosynthesis of coenzyme Q (ubiquinone), which is crucial for aerobic cellular respiration. Given that steroid-induced osteonecrosis of the femoral head (SONFH) is associated with compromised blood supply and cellular metabolism, the role of ADCK3 in mitochondrial function and energy production may be relevant. However, the evidence linking ADCK3 directly to SONFH is limited, with no specific studies identified that connect this gene to the disease context. Thus, while its biological function suggests a potential role in metabolic processes affected in SONFH, the lack of direct evidence means that its clinical relevance as a biomarker for early detection remains uncertain. Overall, the interpretation relies on inferred connections rather than strong, direct evidence.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "ADCK3 may be involved in mitochondrial function, which is critical in the context of steroid-induced osteonecrosis of the femoral head (SONFH), but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "COQ8A (Q8NI60). https://www.uniprot.org/uniprotkb/Q8NI60",
+    "COQ8A (Q8NI60-3). https://www.uniprot.org/uniprotkb/Q8NI60-3",
+    "COQ8A (Q8NI60-2). https://www.uniprot.org/uniprotkb/Q8NI60-2",
+    "ADCK3 \u2014 COQ8A. https://platform.opentargets.org/target/ENSG00000163050",
+    "ADCK3 \u2194 autosomal recessive ataxia due to ubiquinone deficiency. https://platform.opentargets.org/target/ENSG00000163050/associations",
+    "ADCK3 \u2194 coenzyme Q10 deficiency. https://platform.opentargets.org/target/ENSG00000163050/associations",
+    "ADCK3 \u2194 coenzyme Q10 deficiency, primary, 1. https://platform.opentargets.org/target/ENSG00000163050/associations",
+    "ADCK3 \u2194 cataract. https://platform.opentargets.org/target/ENSG00000163050/associations",
+    "ADCK3. https://en.wikipedia.org/wiki/ADCK3",
+    "Mitochondrial myopathy. https://en.wikipedia.org/wiki/Mitochondrial_myopathy",
+    "Coenzyme Q10. https://en.wikipedia.org/wiki/Coenzyme_Q10"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5806,
+    "completion_tokens": 238,
+    "total_tokens": 6044,
+    "estimated_cost_usd": 0.001014
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q8NI60",
+          "title": "COQ8A (Q8NI60)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8NI60",
+          "text": "Protein: Atypical kinase COQ8A, mitochondrial\nFunction: Atypical kinase involved in the biosynthesis of coenzyme Q, also named ubiquinone, an essential lipid-soluble electron transporter for aerobic cellular respiration (PubMed:21296186, PubMed:25498144, PubMed:25540914, PubMed:27499294, PubMed:36302899, PubMed:38425362). Its substrate specificity is still unclear: may act as a protein kinase that mediates phosphorylation of COQ3 (By similarity). According to other reports, acts as a small molecule kinase, possibly a lipid kinase that phosphorylates a prenyl lipid in the ubiquinone biosynthesis pathway, as suggested by its ability to bind coenzyme Q lipid intermediates (PubMed:25498144, PubMed:27499294). However, the small molecule kinase activity was not confirmed by another publication (By similarity). Shows an unusual selectivity for binding ADP over ATP (PubMed:25498144)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q8NI60-3",
+          "title": "COQ8A (Q8NI60-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8NI60-3",
+          "text": "Protein: Isoform 3 of Atypical kinase COQ8A, mitochondrial",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q8NI60-2",
+          "title": "COQ8A (Q8NI60-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8NI60-2",
+          "text": "Protein: Isoform 2 of Atypical kinase COQ8A, mitochondrial",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000163050::function",
+          "title": "ADCK3 \u2014 COQ8A",
+          "url": "https://platform.opentargets.org/target/ENSG00000163050",
+          "text": "Function: Atypical kinase involved in the biosynthesis of coenzyme Q, also named ubiquinone, an essential lipid-soluble electron transporter for aerobic cellular respiration (PubMed:21296186, PubMed:25498144, PubMed:25540914, PubMed:27499294, PubMed:36302899, PubMed:38425362). Its substrate specificity is still unclear: may act as a protein kinase that mediates phosphorylation of COQ3 (By similarity). According to other reports, acts as a small molecule kinase, possibly a lipid kinase that phosphorylates a prenyl lipid in the ubiquinone biosynthesis pathway, as suggested by its ability to bind coenzyme Q lipid intermediates (PubMed:25498144, PubMed:27499294). However, the small molecule kinase activity was not confirmed by another publication (By similarity). Shows an unusual selectivity for binding ADP over ATP (PubMed:25498144).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000163050::MONDO_0012784",
+          "title": "ADCK3 \u2194 autosomal recessive ataxia due to ubiquinone deficiency",
+          "url": "https://platform.opentargets.org/target/ENSG00000163050/associations",
+          "text": "Disease: autosomal recessive ataxia due to ubiquinone deficiency\nDescription: This syndrome is characterized by childhood-onset progressive ataxia and cerebellar atrophy.\nAssociation score: 0.841",
+          "cos_sim_score": 0.8406647642110768,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000163050::MONDO_0018151",
+          "title": "ADCK3 \u2194 coenzyme Q10 deficiency",
+          "url": "https://platform.opentargets.org/target/ENSG00000163050/associations",
+          "text": "Disease: coenzyme Q10 deficiency\nDescription: A genetically heterogeneous condition, typically inherited in an autosomal recessive fashion, characterized by coenzyme Q10 deficiency.\nAssociation score: 0.749",
+          "cos_sim_score": 0.7485834389046134,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000163050::MONDO_0011829",
+          "title": "ADCK3 \u2194 coenzyme Q10 deficiency, primary, 1",
+          "url": "https://platform.opentargets.org/target/ENSG00000163050/associations",
+          "text": "Disease: coenzyme Q10 deficiency, primary, 1\nDescription: Any coenzyme Q10 deficiency in which the cause of the disease is a mutation in the COQ2 gene.\nAssociation score: 0.457",
+          "cos_sim_score": 0.4570855848616109,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000163050::MONDO_0005129",
+          "title": "ADCK3 \u2194 cataract",
+          "url": "https://platform.opentargets.org/target/ENSG00000163050/associations",
+          "text": "Disease: cataract\nDescription: Partial or complete opacity of the crystalline lens of one or both eyes that decreases visual acuity and eventually results in blindness. Some cataracts appear in infancy or in childhood, but most develop in older individuals. (Sternberg Diagnostic Surgical Pathology, 3rd ed.)\nAssociation score: 0.443",
+          "cos_sim_score": 0.44321882226918446,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::ADCK3",
+          "title": "ADCK3",
+          "url": "https://en.wikipedia.org/wiki/ADCK3",
+          "text": "aarF domain containing kinase 3 is a protein that in humans is encoded by the ADCK3 gene.\nThis gene encodes a mitochondrial protein similar to yeast ABC1, which functions in an electron-transferring membrane protein complex in the respiratory chain. It is not related to the family of ABC transporter proteins. Expression of this gene is induced by the tumor suppressor p53 and in response to DNA damage, and inhibiting its expression partially suppresses p53-induced apoptosis. Alternatively spliced transcript variants have been found; however, their full-length nature has not been determined.\n\nReferences\nExternal links\nHuman ADCK3 genome location and ADCK3 gene details page  in the UCSC Genome Browser.\n\n\n== Further reading ==",
+          "cos_sim_score": 0.4798509180545807,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Mitochondrial myopathy",
+          "title": "Mitochondrial myopathy",
+          "url": "https://en.wikipedia.org/wiki/Mitochondrial_myopathy",
+          "text": "Pompe disease (glycogen storage disease type II), another type of metabolic myopathy, has secondary mitochondrial dysfunction present in both the earlier onset forms (infantile and juvenile) and the late-onset form in adults. \nMyopathies involving the DMD gene, such as Duchenne and Becker muscular dystrophy, have secondary mitochondrial dysfunction impairing oxidative phosphorylation. The mechanisms leading to this mitochondrial dysfunction are many and it has yet to be elucidated which mitochondrial changes are directly due to the disease and which are compensatory. Three unrelated young boys, with a mutation in the DMD gene, exhibited a pseudometabolic presentation with symptoms of exercise intolerance manifesting as exercise-induced myalgia, muscle stiffness, myoglobinuria and rhabdomyolysis.\nA few Limb\u2013girdle muscular dystrophies are known to have secondary mitochondrial dysfunction, including: LGMDR1 calpain3-related (formerly LGMD 2A), LGMDR2 dysferlin-related (LGMD 2B), LGMDR3 \u03b1-sarcoglycan-related (LGMD 2D), LGMDR5 \u03b3-sarcoglycan-related (LGMD 2C), and LGMDR6 \u03b4-sarcoglycan-related (LGMD 2F). As well as Myofibrillar myopathy 8 (MFM8) PYROXD1-related, which has an adult-onset, slowly progressive, Limb\u2013girdle phenotype.\nMICU1-related myopathy with extrapyramidal signs has disrupted calcium uptake causing secondary mitochondrial dysfunction. It has variable myopathic features as well as eye and neurological symptoms.",
+          "cos_sim_score": 0.06553685665130615,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Mitochondrial myopathy",
+          "title": "Mitochondrial myopathy",
+          "url": "https://en.wikipedia.org/wiki/Mitochondrial_myopathy",
+          "text": "Disease list\nDiagnosis\nMuscle biopsy: usually ragged red fibres in G\u00f6m\u00f6ri trichrome stain, normal or excessive glycogen or lipid accumulation within these ragged red fibres, histochemical staining showing impairment of respiratory chain such as COX-negative fibres. Some mitochondrial myopathies are limited to disease expression only in skeletal muscle, with fibroblasts (from skin biopsy) appearing normal.\nBlood tests: lactate/pyruvate ratio may be elevated or normal, creatine kinase (CK) may be elevated or normal. Electrolyte panel, anion gap, glucose, vitamin D, TSH, anti-HMGCR and AChR autoantibodies to rule-out pseudometabolic myopathies.\nExercise stress test: exaggerated cardiorespiratory response to exercise (inappropriate rapid heart rate response to exercise with breathlessness [tachycardia and dyspnea]).\nDNA tests: whole exome sequencing (WES) neuromuscular panels (that only test exons), or whole genome sequencing (WGS) for more complex cases (that test exons, introns, and mitochondrial DNA). Introns were initially thought to be \"junk DNA,\" however, some introns regulate the expression of exons. For example, in the mitochondrial myopathy of hereditary myopathy with lactic acidosis (HML), the most common pathogenic mutation is the intronic IVS5+382 G>C (rs767000507). \nThere are two groups of DNA that affect the mitochondria: mitochondrial genome (mtDNA) and nuclear DNA. For mitochondrial myopathies that involve a single mtDNA deletion, it would only be found on muscle-derived mtDNA, making a biopsy of affected muscle necessary for DNA analysis rather than saliva or blood. Even among siblings with the same inherited mutation, different muscle groups were affected, with unaffected tissues having near normal levels of mtDNA. \nEMG: may be normal, myopathic, or rarely neurogenic.\nThe symptoms of exercise intolerance, abnormal muscle fatigue, myalgia (muscle pain), arrhythmia, possible fixed proximal muscle weakness, lipid deposits, possible episodes of rhabdomyolysis, with symptoms becoming evident or worsening while fasting, during a fever, during low-intensity aerobic activity or after prolonged activity\u2013all these overlap with the symptoms of another metabolic myopathy, that of fatty acid metabolism disorders.\nDNA testing is helpful for determining between the similar presenting, but different in bioenergetic system origin, metabolic myopathies. When DNA testing is inconclusive, a muscle biopsy is necessary.",
+          "cos_sim_score": 0.045396409928798676,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Coenzyme Q10",
+          "title": "Coenzyme Q10",
+          "url": "https://en.wikipedia.org/wiki/Coenzyme_Q10",
+          "text": "Bioavailability\nIn contrast to the intake of CoQ10 as a constituent of food, such as nuts or meat, from which CoQ10 is normally absorbed, there is a concern about CoQ10 bioavailability when it is taken as a dietary supplement. Bioavailability of CoQ10 supplements may be reduced due to the lipophilic nature of its molecule and large molecular weight.\n\nReduction of particle size\nNanoparticles have been explored as a delivery system for various drugs, such as improving the oral bioavailability of drugs with poor absorption characteristics. However, this has not proved successful with CoQ10, although reports have differed widely. The use of aqueous suspension of finely powdered CoQ10 in pure water also reveals only a minor effect.\n\nWater-solubility\nFacilitating drug absorption by increasing its solubility in water is a common pharmaceutical strategy and also is successful for CoQ10. Various approaches have been developed to achieve this goal, with many of them producing significantly better results over oil-based soft gel capsules despite the many attempts to optimize their composition. Examples of such approaches are use of the aqueous dispersion of solid CoQ10 with the polymer tyloxapol, formulations based on various solubilising agents, such as hydrogenated lecithin, and complexation with cyclodextrins; among the latter, the complex with \u03b2-cyclodextrin has been found to have highly increased bioavailability and also is used in pharmaceutical and food industries for CoQ10-fortification.\n\nAdverse effects and precautions\nGenerally, oral CoQ10 supplementation is well tolerated. The most common side effects are gastrointestinal symptoms (nausea, vomiting, appetite suppression, and abdominal pain), rashes, and headaches. Some adverse effects, largely gastrointestinal, are reported with intakes. Doses of 100\u2013300 mg per day may induce insomnia or elevate liver enzymes. The observed safe level risk assessment method indicated that the evidence of safety is acceptable at intakes up to 1200 mg per day.\nCaution should be observed in the use of CoQ10 supplementation in people with bile duct obstruction and during pregnancy or breastfeeding.\n\nPotential drug interactions\nCoQ10 taken as a pharmacological substance has potential to inhibit the effects of theophylline as well as the anticoagulant warfarin; CoQ10 may interfere with warfarin's actions by interacting with cytochrome p450 enzymes thereby reducing the INR, a measure of blood clotting. The structure of CoQ10 is similar to that of vitamin K, which competes with and counteracts warfarin's anticoagulation effects. CoQ10 is not recommended in people taking warfarin due to the increased risk of clotting.\n\nDietary concentrations\nDetailed reviews on occurrence of CoQ10 and dietary intake were published in 2010. Besides the endogenous synthesis within organisms, CoQ10 also is supplied by various foods. CoQ10 concentrations in various foods are:\n\nVegetable oils, meat, and fish are rich in CoQ10. Dairy products are much poorer sources of CoQ10 than animal tissues. Among vegetables, broccoli and cauliflower are good sources of CoQ10. Most fruits and berries are poor sources of CoQ10, except avocados, which have relatively high oil and CoQ10 content.\n\nIntake\nIn the developed world, the estimated daily intake of CoQ10 has been determined at 3\u20136 mg per day, derived primarily from meat.\nSouth Koreans have an estimated average daily CoQ (Q9 + Q10) intake of 11.6 mg/d, derived primarily from kimchi.\n\nEffect of heat and processing\nCooking by frying reduces CoQ10 content by 14\u201332%.\n\nHistory\nIn 1950, a small amount of CoQ10 was isolated from the lining of a horse's gut, a compound initially called substance SA, but later deemed to be quinone found in many animal tissues. In 1957, the same compound was isolated from mitochondrial membranes of beef heart, with research showing that it transported electrons within mitochondria. It was called Q-275 as a quinone. The Q-275/substance SA was later renamed ubiquinone as it was a ubiquitous quinone found in all animal tissues. In 1958, its full chemical structure was reported. Ubiquinone was later called either mitoquinone or coenzyme Q due to its participation to the mitochondrial electron transport chain. In 1966, a study reported that reduced CoQ6 was an effective antioxidant in cells.\n\nSee also\nIdebenone \u2013 synthetic analog with reduced oxidant-generating properties\nMitoquinone mesylate \u2013 synthetic analog with improved mitochondrial permeability\n\n\n== References ==",
+          "cos_sim_score": 0.015648264437913895,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Mitochondrial myopathy",
+          "title": "Mitochondrial myopathy",
+          "url": "https://en.wikipedia.org/wiki/Mitochondrial_myopathy",
+          "text": "Mitochondrial myopathies are types of myopathies associated with mitochondrial disease. Adenosine triphosphate (ATP), the chemical used to provide energy for the cell, cannot be produced sufficiently by oxidative phosphorylation when the mitochondrion is either damaged or missing necessary enzymes or transport proteins. With ATP production deficient in mitochondria, there is an over-reliance on anaerobic glycolysis which leads to lactic acidosis either at rest or exercise-induced.\nPrimary mitochondrial myopathies are inherited, while secondary mitochondrial myopathies may be inherited (e.g. Duchenne's muscular dystrophy) or environmental (e.g. alcoholic myopathy). When it is an inherited primary disease, it is one of the metabolic myopathies.\nOn biopsy, the muscle tissue of patients with these diseases usually demonstrate \"ragged red\" muscle fibers on Gomori trichrome staining. The ragged-red appearance is due to a buildup of abnormal mitochondria underneath the plasma membrane. These ragged-red fibres may contain normal or abnormally increased accumulations of glycogen and neutral lipids, with histochemical staining showing abnormal respiratory chain involvement, such as decreased succinate dehydrogenase or cytochrome c oxidase. Inheritance was believed to be maternal (non-Mendelian extranuclear). It is now known that certain nuclear DNA deletions can also cause mitochondrial myopathy such as the OPA1 gene deletion.\n\nSigns and symptoms\nProximal muscle weakness, exercise intolerance, lactic acidosis, high serum lactate/pyruvate ratio, normal to elevated serum CK, dyspnea, exaggerated cardiorespiratory response to exercise are common symptoms. It may be isolated to the muscle (pure myopathy) or may be systemic including not only myopathy, but also eye abnormalities, peripheral neuropathy, and neurological abnormalities. Muscle biopsy typically shows ragged-red fibres, histochemical staining shows abnormality of respiratory chain or decreased cytochrome c oxidase (COX).\nThe five most common are MELAS, MERF, KSS, CPEO, and MNGIE which are listed below:\n\nMitochondrial encephalomyopathy, lactic acidosis, and stroke-like syndrome (MELAS)\nVarying degrees of cognitive impairment and dementia\nLactic acidosis\nStrokes\nTransient ischemic attacks\nHearing loss\nWeight loss\nMyoclonic epilepsy and ragged-red fibers (MERRF)\nProgressive myoclonic epilepsy\nClumps of diseased mitochondria accumulate in muscle fibers and appear as \"ragged-red fibers\" when muscle is stained with modified G\u00f6m\u00f6ri trichrome stain\nShort stature\nKearns\u2013Sayre syndrome (KSS)\nExternal ophthalmoplegia\nCardiac conduction defects\nSensorineural hearing loss\nChronic progressive external ophthalmoplegia (CPEO)\nProgressive ophthalmoparesis\nSymptomatic overlap with other mitochondrial myopathies\nMitochondrial neurogastrointestinal encephalopathy (MNGIE)\nMuscle weakness and atrophy, more prominent distally\nHyporeflexic or areflexic\nPtosis and ophthalmoparesis common\nGastrointestinal dysmotility (such as bloating, stomach cramps, diarrhea)\n\nCause\nMitochondrial myopathy literally means mitochondrial muscle disease, muscle disease caused by mitochondrial dysfunction. The mitochondrion is the primary producer of energy in nearly all cells throughout the body. The exception is mature erythrocytes (red blood cells), so that they do not use up the oxygen that they carry. In the eye, the lens and outer segment of the retina contain almost no mitochondria. Muscle cells have many mitochondria, particularly type I muscle fibres, and if the mitochondria have problems by which they do not produce enough energy for the cell to function, problems occur. \nThe cause may be genetic, with many having mitochondrial inheritance (involving the mitochondrial DNA which is only passed on from the mother), although nuclear DNA mutations with Mendelian inheritance that are either autosomal dominant, recessive, or X-linked recessive also exist. A nuclear DNA example is a mutation within the POLG (polymerase gamma) gene, which causes mitochondrial DNA (mtDNA) to become damaged and lose function.",
+          "cos_sim_score": -0.005399705842137337,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

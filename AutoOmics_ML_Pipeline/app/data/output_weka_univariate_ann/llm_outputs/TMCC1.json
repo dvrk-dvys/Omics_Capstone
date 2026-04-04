@@ -1,0 +1,225 @@
+{
+  "rf_rank": 23,
+  "probe_id": "11740096_a_at",
+  "gene_symbol": "TMCC1",
+  "score": 0.63,
+  "rf_n_nodes": 6,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 1.0296,
+  "log_fc": 1.0296,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11740096_a_at",
+  "max_score": 0.63,
+  "mean_abs_fold_change": 1.0296,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:31:28",
+  "interpretation": "TMCC1 (Transmembrane and coiled-coil domains protein 1) is an endoplasmic reticulum membrane protein that facilitates endosome fission, a critical process for cellular trafficking and degradation. While there is no direct evidence linking TMCC1 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in cellular processes such as membrane dynamics and potential involvement in osteogenic differentiation could suggest a mechanistic relevance. The retrieved evidence primarily describes TMCC1's biological functions without specific connections to SONFH, leading to a low confidence in its direct relevance as a biomarker. However, its involvement in cellular processes related to bone health may warrant further investigation as a potential early-detection biomarker for SONFH.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "TMCC1 may play a role in cellular processes relevant to bone health, but lacks direct evidence linking it to SONFH.",
+  "citations": [
+    "TMCC1 (O94876). https://www.uniprot.org/uniprotkb/O94876",
+    "TMCC1 (O94876-2). https://www.uniprot.org/uniprotkb/O94876-2",
+    "TMCC1 \u2014 TMCC1. https://platform.opentargets.org/target/ENSG00000172765",
+    "TMCC1 \u2194 inherited retinal dystrophy. https://platform.opentargets.org/target/ENSG00000172765/associations",
+    "TMCC1 \u2194 prostate carcinoma. https://platform.opentargets.org/target/ENSG00000172765/associations",
+    "TMCC1 \u2194 Loss of consciousness. https://platform.opentargets.org/target/ENSG00000172765/associations",
+    "TMCC1 \u2194 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000172765/associations",
+    "TMCC1 \u2014 transmembrane and coiled-coil domain family 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ESR1 \u2014 estrogen receptor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "APP \u2014 amyloid beta precursor protein (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "RELA \u2014 RELA proto-oncogene, NF-kB subunit (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ESR2 \u2014 estrogen receptor 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Identification of hub genes and therapeutic drugs in osteonecrosis of the femoral head through integrated bioinformatics analysis and literature mining (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC10366127/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8748,
+    "completion_tokens": 273,
+    "total_tokens": 9021,
+    "estimated_cost_usd": 0.001476
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O94876",
+          "title": "TMCC1 (O94876)",
+          "url": "https://www.uniprot.org/uniprotkb/O94876",
+          "text": "Protein: Transmembrane and coiled-coil domains protein 1\nFunction: Endoplasmic reticulum membrane protein that promotes endoplasmic reticulum-associated endosome fission (PubMed:30220460). Localizes to contact sites between the endoplasmic reticulum and endosomes and acts by promoting recruitment of the endoplasmic reticulum to endosome tubules for fission (PubMed:30220460). Endosome membrane fission of early and late endosomes is essential to separate regions destined for lysosomal degradation from carriers to be recycled to the plasma membrane (PubMed:30220460)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::O94876-2",
+          "title": "TMCC1 (O94876-2)",
+          "url": "https://www.uniprot.org/uniprotkb/O94876-2",
+          "text": "Protein: Isoform 2 of Transmembrane and coiled-coil domains protein 1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000172765::function",
+          "title": "TMCC1 \u2014 TMCC1",
+          "url": "https://platform.opentargets.org/target/ENSG00000172765",
+          "text": "Function: Endoplasmic reticulum membrane protein that promotes endoplasmic reticulum-associated endosome fission (PubMed:30220460). Localizes to contact sites between the endoplasmic reticulum and endosomes and acts by promoting recruitment of the endoplasmic reticulum to endosome tubules for fission (PubMed:30220460). Endosome membrane fission of early and late endosomes is essential to separate regions destined for lysosomal degradation from carriers to be recycled to the plasma membrane (PubMed:30220460). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172765::MONDO_0019118",
+          "title": "TMCC1 \u2194 inherited retinal dystrophy",
+          "url": "https://platform.opentargets.org/target/ENSG00000172765/associations",
+          "text": "Disease: inherited retinal dystrophy\nDescription: An instance of retinal degeneration that is caused by an inherited modification of the individual's genome.\nAssociation score: 0.337",
+          "cos_sim_score": 0.33733882774391055,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172765::EFO_0001663",
+          "title": "TMCC1 \u2194 prostate carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000172765/associations",
+          "text": "Disease: prostate carcinoma\nDescription: A carcinoma that arises from epithelial cells of the prostate gland.\nAssociation score: 0.290",
+          "cos_sim_score": 0.28998750822339364,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172765::HP_0007185",
+          "title": "TMCC1 \u2194 Loss of consciousness",
+          "url": "https://platform.opentargets.org/target/ENSG00000172765/associations",
+          "text": "Disease: Loss of consciousness\nDescription: Loss of awareness of oneself or one's surroundings, involving (i) a loss of normal motor control is evident as flaccidity or stiffness, either of which can be accompanied by jerking movements, and postural control is lost so that patients fall if they are in an upright position; (ii) normal responsiveness is lost; and (iii) the patient experiences amnesia for the event. Loss of consciousness my be transitory (e.g., syncope) or prolonged.\nAssociation score: 0.238",
+          "cos_sim_score": 0.2380714348487779,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000172765::EFO_0000400",
+          "title": "TMCC1 \u2194 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000172765/associations",
+          "text": "Disease: diabetes mellitus\nDescription: A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization.\nAssociation score: 0.225",
+          "cos_sim_score": 0.225187545171874,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "TMCC1 \u2014 transmembrane and coiled-coil domain family 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TMCC1\nGene name: transmembrane and coiled-coil domain family 1\nOrganism: Homo sapiens\nGene summary: Enables identical protein binding activity. Involved in several processes, including endosome fission; endosome membrane tubulation; and membrane fission. Located in cytosol; endoplasmic reticulum-endosome membrane contact site; and rough endoplasmic reticulum. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TMCC1",
+          "aliases": "",
+          "gene_description": "transmembrane and coiled-coil domain family 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ESR1 \u2014 estrogen receptor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ESR1\nGene name: estrogen receptor 1\nAliases / synonyms: ER, ESR, ESRA, ESTRR, Era, NR3A1\nOrganism: Homo sapiens\nGene summary: This gene encodes an estrogen receptor and ligand-activated transcription factor. The canonical protein contains an N-terminal ligand-independent transactivation domain, a central DNA binding domain, a hinge domain, and a C-terminal ligand-dependent transactivation domain. The protein localizes to the nucleus where it may form either a homodimer or a heterodimer with estrogen receptor 2. The protein encoded by this gene regulates the transcription of many estrogen-inducible genes that play a role in growth, metabolism, sexual development, gestation, and other reproductive functions and is expressed in many non-reproductive tissues. The receptor encoded by this gene plays a key role in breast cancer, endometrial cancer, and osteoporosis. This gene is reported to have dozens of transcript va...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ESR1",
+          "aliases": "ER, ESR, ESRA, ESTRR, Era, NR3A1",
+          "gene_description": "estrogen receptor 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "APP \u2014 amyloid beta precursor protein",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: APP\nGene name: amyloid beta precursor protein\nAliases / synonyms: AAA, ABETA, ABPP, AD1, APPI, CTFgamma, CVAP, PN-II, PN2, alpha-sAPP, preA4\nOrganism: Homo sapiens\nGene summary: This gene encodes a cell surface receptor and transmembrane precursor protein that is cleaved by secretases to form a number of peptides. Some of these peptides are secreted and can bind to the acetyltransferase complex APBB1/TIP60 to promote transcriptional activation, while others form the protein basis of the amyloid plaques found in the brains of patients with Alzheimer disease. In addition, two of the peptides are antimicrobial peptides, having been shown to have bacteriocidal and antifungal activities. Mutations in this gene have been implicated in autosomal dominant Alzheimer disease and cerebroarterial amyloidosis (cerebral amyloid angiopathy). Multiple transcript variants encoding several different isoforms have been found for this gene. [provided by RefSeq, Aug 2014]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "APP",
+          "aliases": "AAA, ABETA, ABPP, AD1, APPI, CTFgamma, CVAP, PN-II, PN2, alpha-sAPP, preA4",
+          "gene_description": "amyloid beta precursor protein"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "RELA \u2014 RELA proto-oncogene, NF-kB subunit",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RELA\nGene name: RELA proto-oncogene, NF-kB subunit\nAliases / synonyms: AIF3BL3, CMCU, NFKB3, p65\nOrganism: Homo sapiens\nGene summary: NF-kappa-B is a ubiquitous transcription factor involved in several biological processes. It is held in the cytoplasm in an inactive state by specific inhibitors. Upon degradation of the inhibitor, NF-kappa-B moves to the nucleus and activates transcription of specific genes. NF-kappa-B is composed of NFKB1 or NFKB2 bound to either REL, RELA, or RELB. The most abundant form of NF-kappa-B is NFKB1 complexed with the product of this gene, RELA. Four transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Sep 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RELA",
+          "aliases": "AIF3BL3, CMCU, NFKB3, p65",
+          "gene_description": "RELA proto-oncogene, NF-kB subunit"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ESR2 \u2014 estrogen receptor 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ESR2\nGene name: estrogen receptor 2\nAliases / synonyms: ER-BETA, ESR-BETA, ESRB, ESTRB, Erb, NR3A2, ODG8\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the family of estrogen receptors and superfamily of nuclear receptor transcription factors. The gene product contains an N-terminal DNA binding domain and C-terminal ligand binding domain and is localized to the nucleus, cytoplasm, and mitochondria. Upon binding to 17beta-estradiol or related ligands, the encoded protein forms homo- or hetero-dimers that interact with specific DNA sequences to activate transcription. Some isoforms dominantly inhibit the activity of other estrogen receptor family members. Several alternatively spliced transcript variants of this gene have been described, but the full-length nature of some of these variants has not been fully characterized. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ESR2",
+          "aliases": "ER-BETA, ESR-BETA, ESRB, ESTRB, Erb, NR3A2, ODG8",
+          "gene_description": "estrogen receptor 2"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::10366127",
+          "title": "Identification of hub genes and therapeutic drugs in osteonecrosis of the femoral head through integrated bioinformatics analysis and literature mining",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10366127/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a multifactorial disease with an unknown etiology, characterized by loss of integrity of the subchondral bone1. It mainly affects men aged 30\u201350 years and involves more and more youngers1,2. Despite the identification of corticosteroid use, alcohol, sickle-cell disease, and trauma as the major risk factors for ONFH, its pathogenesis remains incompletely understood2,3. Surgery is the only effective way to treat ONFH at present4. In the USA, approximately 10% of hip replacements are due to ONFH, and in the UK, ONFH is the third most common indication for total hip replacements in people under 50, which causes a heavy socioeconomic burden1,4. Effective drug therapies have not been established5. Therefore, identifying novel biomarkers and therapeutic drugs involved in the ONFH is of great significance in exploring efficient treatment strategies.\nOver the past two decades, few researchers have focused on exploring the mechanism of ONFH at the gene level6. Abnormalities in some genes, such as plasminogen-activating inhibitor-1 and nitric oxide synthase 3, have been proven to weaken the osteogenic differentiation capacity of bone marrow mesenchymal stem cells or disrupt angiogenesis, leading to the collapse of the femoral head surface7,8. However, the specific molecular mechanism of ONFH has not yet been clarified, and drug discovery has had little success. Recently, gene chips and high-throughput sequencing technologies have been widely used in the screening of disease-causing genes and have achieved practical and reliable results9. A new drug prediction method, drug-gene-disease triangulation based on literature mining, has been confirmed to be robust and reliable for identifying new drug candidates10.\nIn this study, we analyzed two gene expression profiles (Table 1) extracted from the National Center for Biotechnology Information Gene Expression Omnibus (GEO) database, which is a free global database of sequencing results. DEGs were identified by using the online tool GEO2R. Subsequently, the function of DEGs was determined by the Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analysis. With the help of Cytoscape, ten hub genes were selected and then validated by ROC analysis. Finally, the targeted drugs for ONFH were identified through the Drug-Gene Interaction Database (DGIdb) and cross-validated by integrated literature mining. Our study figured out the drug-gene-disease correlation to generate new insights into the prevention and treatment of ONFH.Table 1Detailed information on the GEO microarray profiles.ProfileOrganismSample sourceTechnology typeCasesControlsPlatformGSE123568Homo sapiensPeripheral serumIn situ oligonucleotide3010GPL15207GSE74089Homo sapiensHip cartilageIn situ oligonucleotide44GPL13497\nTable 1\nDetailed information on the GEO microarray profiles.\nResults\nIdentification of DEGs in ONFH",
+          "cos_sim_score": 0.516423225402832,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10366127",
+          "title": "Identification of hub genes and therapeutic drugs in osteonecrosis of the femoral head through integrated bioinformatics analysis and literature mining",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10366127/",
+          "text": "In addition to the pharmaceuticals identified in this study, those mentioned in the most recent expert consensus also warrant consideration, including bisphosphonates, anticoagulants, vasodilators, and lipid lowering agents4. Briefly, bisphosphonates and anticoagulants are considered to be helpful for early ONFH, and clinicians can consider using them as appropriate. The evidence to support the use of statins or vasodilators in the treatment of ONFH is very low and their use cannot be recommended4,72\u201374.\nBisphosphonates not only cause osteoclast apoptosis but also prevent osteocyte and osteoblast apoptosis75\u201377. We found that three hub genes (PTGS2, MCL-1, and RUNX2) may play a mediating role. Risedronate was reported to enhance bone formation via the up-regulation of COX-2 expression78. Zoledronic acid induces apoptosis in osteoclast precursors and mature osteoclast-like cells by triggering Mcl-1 down-regulation79. RANKL increases the level of Mcl-1 in osteoclasts and significantly attenuates the ability of both clodronate and alendronate to induce osteoclast apoptosis80. Various bisphosphonates have been shown to promote osteogenic differentiation by up-regulating the expression of RUNX281\u201384. The use of bisphosphonates for treating ONFH is highly anticipated. Nevertheless, the clinical efficacy of bisphosphonates remains a topic of debate. While numerous reports indicate that bisphosphonates alleviate pain, enhance ambulation, and delay joint collapse in patients with ONFH73,85\u201393, there is also a substantial amount of negative evidence, particularly from high-quality meta-analyses of randomized control trials94\u201398. Serious side effects of bisphosphonates, such as atypical femoral fractures99,100 and osteonecrosis of the jaw100\u2013103, are also of great concern. We recommend that caution be taken with the use of bisphosphonates to treat ONFH, as mentioned in guidelines, more high-quality random clinical trials are needed to prove its efficacy3,4.\nThe main mechanism of anticoagulant treatment for ONFH is the alleviation of hypercoagulability104. Hypercoagulability has been demonstrated to not only induce primary ONFH3,104,105, but also ONFH that is secondary to certain diseases, such as thrombophilia106,107 and antiphospholipid syndrome23,108. Anticoagulants have been proven to have significant protective effects on ONFH caused by different causes105,109\u2013114. The results of literature mining suggest that anticoagulants may also possess other potential mechanisms for protecting against ONFH. Specifically, anticoagulant treatment has been found to have pro-osteogenic and pro-angiogenic effects, with the hub gene RUNX2 potentially playing a role in mediating this process115,116. These findings are conducive to further reveal the molecular mechanism of anticoagulant treatment of ONFH.\nWe do have some weak findings. CD68 is a macrophages-specific immunomarker that regulates osteoclast activity and is engaged in macrophage response and antigen presentation but does not participate in inflammation117. CD68 was previously found to be significantly elevated in synovial tissue near the necrotic femoral head118,119. For the first time, we discovered that CD68 is down-regulated in cartilage and peripheral blood.\u00a0This unusual finding deserves more attention in future studies. LRRK2 is a functional protein kinase and guanosine diphosphatase/guanosine triphosphate-binding protein that is widely expressed in multiple tissues. Our analysis shows that LRRK2 ranks second among 10 hub genes and participates in almost all functional enrichment terms. However, a previous study demonstrated that the specific inhibition of LRRK2 does not result in changes in bone mass120. The precise role of LRRK2 in ONFH warrants additional investigation. TIMP2 is a kind of endogenous tissue inhibitor of matrix metalloproteases (MMPs). Although TIMP2 expression is associated with MMPs in bone remodeling, its effect on bone metabolism appears to be non-essential121. More studies are required to elucidate the mechanism.",
+          "cos_sim_score": 0.45877981185913086,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10366127",
+          "title": "Identification of hub genes and therapeutic drugs in osteonecrosis of the femoral head through integrated bioinformatics analysis and literature mining",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10366127/",
+          "text": "The third hub gene, ANXA5, is a kind of calcium-binding protein associated with osteoblasts differentiation and bone formation19,20. Genetos et al.20 reported a significant reduction in proliferation in pre-osteoblasts with ANXA5-knockdown, providing evidence that ANXA5 impact bone formation by regulating osteoprogenitor proliferation, differentiation, and cytokine responsiveness. On the other hand, ANXA5 functions as an anticoagulant protein that indirectly inhibits the thromboplastin-specific complex and plays a role in the blood coagulation cascade. Interestingly, we found that ANAX5 was significantly down-regulated in ONFH patients, and hydroxychloroquine, a potential therapeutic drug for ONFH, was strongly associated with ANXA5. Previous studies have elucidated that hydroxychloroquine could inhibit thrombosis by protecting the ANXA5 anticoagulant shield from disruption by antiphospholipid antibodies (aPLs)21,22. Our investigation revealed a close association between aPLs and the incidence of ONFH23\u201327, and a large amount of clinical evidence supports the protective effect of hydroxychloroquine against ONFH27\u201331. Long et al.27conducted an 11-year cohort study comprising 1158 patients to identify possible risk factors in Chinese systemic lupus erythematosus (SLE) patients. They found that the presence of aPLs was a risk factor for multiple joint necrosis (OR\u2009=\u20096.28, 95% CI 1.573\u201325.120; p\u2009=\u20090.009), and the administration of hydroxychloroquine was a protective factor for ONFH (OR\u2009=\u20090.547, 95% CI 0.320\u20130.937; p\u2009=\u20090.028). Hamza et al.28 conducted a cross-sectional case\u2013control study to assess the risk factors for advanced ONFH. They found that a higher proportion of patients without symptomatic ONFH received hydroxychloroquine than patients with symptomatic ONFH (83.3% vs. 60%, p\u2009=\u20090.045). The authors concluded that the use of hydroxychloroquine had a protective effect on the development of ONFH, which was consistent with many other reports29\u201331. Although the hydroxychloroquine was initially discovered through the interaction with PTGS2 in this study, the subsequent literature mining results suggest a plausible drug-gene-disease correlation between ANXA5, hydroxychloroquine, and ONFH, which could help repurpose hydroxychloroquine.\nIGF1R is a typical osteogenesis-related protein and plays a fundamental role in bone formation and angiogenesis. Several studies utilizing mouse or rabbit models have demonstrated that elevated local and/or systemic concentrations of IGF-1 confer advantageous outcomes in steroid-induced ONFH32\u201337. Xie et al.38 have reported that IGF-I and IGF-IR stimulate cell proliferation and impede cell apoptosis, which significantly suppress the development of ONFH. In this research, IGF1R is ranked fourth among all hub genes and is found to be primarily involved in signal transduction, negative regulation of apoptotic process, and protein binding function enrichment. Among the nine drugs found to interact with IGF1R, raloxifene has been verified to have a positive effect on the up-regulation of IGF1R expression and bone maintenance39. Mecasermin and mecasermin rinfabate have also been proven effective as IGF1R ligands in bone growth and maintenance40\u201342. We suppose that IGF1R is expected to be a valuable therapeutic target for ONFH.",
+          "cos_sim_score": 0.41045624017715454,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10366127",
+          "title": "Identification of hub genes and therapeutic drugs in osteonecrosis of the femoral head through integrated bioinformatics analysis and literature mining",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10366127/",
+          "text": "Table 5\nFDA-approved drugs interacting with hub genes.\nN.A: not available in the database.\nFigure 5\nThe drug-gene interactions network Constructed in Cytoscape. Yellow points represented genes and green points represented drugs. The thicker the connective line, the more the evidence.\nDiscussion\nThe pathogenesis of ONFH is still obscure. There are five mainstream hypotheses attempting to illustrate how the ONFH occurs, including the lipid metabolism disorder theory, the decreased osteogenesis potential of bone marrow mesenchymal stem cells (BMMSCs) theory, the insufficient blood supply theory, the inflammation and cell apoptosis theory, and the gene polymorphism and non-coding RNA theory6. In the past few years, growing attention has been paid to the regulatory mechanism of ONFH at the gene level. However, different gene expressions between blood and local tissues have not been noted in previous studies11\u201314. Our study is the first to describe this finding.\nOur study has identified 10 hub genes. The first gene, PTGS2, also known as cyclooxygenase-2 (COX-2), is a key enzyme in the initiation of prostaglandin synthesis and inflammatory responses. The inflammation and cell apoptosis theory proposed that the main pathological process in ONFH was an increase in osteoblast and osteocyte apoptosis caused by inflammation6. But we have some unusual findings. Our analysis showed that PTGS2 is down-regulated in ONFH patients, as are some other typical inflammatory genes such as AKT, MAPK, and STAT. We found none of the inflammation-related signaling pathways, such as the TNF-\u03b1 and the NF-\u03baB signaling pathways, were significantly enriched when an adjusted P-value\u2009<\u20090.05 was considered statistically significant. Moreover, our investigation revealed that certain non-selective non-steroidal anti-inflammatory drugs (NSAIDs) had been reported to be associated with the development of ONFH, such as diclofenac15 and indomethacin16. These unexpected findings suggest that non-selective NSAIDs, commonly prescribed to alleviate pain in patients with ONFH, may pose medication risks that have not been given due attention by orthopedic surgeons4. Zheng et al.17 figured out that COX-2 enhanced osteogenic activity in rats. Zhang et al.18 reported that glucocorticoid induced ONFH via the COX-2-PGE-2 (prostaglandin E2)-HIF-1\u03b1 (hypoxia-inducible factor-1\u03b1) axis. They found that dexamethasone repressed COX-2 expression, thereby reducing HIF-1\u03b1 expression in femoral heads. The implantation of BMMSCs overexpressing HIF-1\u03b1 into femoral heads of ONFH mice significantly reduced osteonecrotic areas and enhanced bone repair, thus largely preserving the structural integrity of femoral heads. Our study suggests that COX-2 may play an important role in the decreased osteogenesis potential of BMMSCs theory and serve as a protective factor in the process of ONFH. We recommend that orthopedic surgeons carefully use non-selective NSAIDs for analgesia in ONFH patients.",
+          "cos_sim_score": 0.28981131315231323,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10366127",
+          "title": "Identification of hub genes and therapeutic drugs in osteonecrosis of the femoral head through integrated bioinformatics analysis and literature mining",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10366127/",
+          "text": "There are some limitations in our research. Due to the limited data sources, we are unable to select expression profiling data from the same GPL platform, which may bring bias as a consequence of batch effects and biological differences. We have to set a threshold for GEO2R analysis as the adjusted P-value\u2009<\u20090.05 to meet the upper limit of the analysis tool. The strict inclusion criteria may lead to the loss of some DEGs. We will conduct more in-depth research in the future.\nConclusions\nIn summary, a total of 159 DEGs and 85 interacting drugs were screened through integrated bioinformatics analysis and literature mining. PTGS2, LRRK2, ANXA5, IGF1R, MCL1, TIMP2, LYN, CD68, CBL, and RUNX2 were identified as 10 hub genes, which has considerable implications for future genetic research and related research fields of ONFH, especially genomics-driven drug development. We revealed that most drugs that showed a positive influence on ONFH had the effect of promoting osteogenesis and angiogenesis or inhibiting microcirculation embolism rather than being anti-inflammatory. Our findings help further understand the pathogenesis of ONFH, and guide drug development, and of more importance, provide new insights into the prevention and treatment of ONFH.\nMaterials and methods\nData obtaining and preprocessing\nTwo microarray datasets\u00a0(GSE123568 and\u00a0GSE74089) were downloaded from the GEO database. The inclusion criteria were set as follows: (1) the samples were obtained from humans; (2) the data meet gene expression profiling by array; (3) there are at least 3 samples in each group.\nThe GSE123568 datasets consisted of 30 cases and 10 controls and were based on the GPL15207 platform (Affymetrix Human Gene Expression Array). The GSE74089 datasets consisted of 4 cases and 4 controls and were based on the GPL13497 platform (Agilent-026652 Whole Human Genome Microarray 4\u2009\u00d7\u200944K v2). Details were listed in Table 1. After filtering out the duplicate probes or probes without corresponding gene symbols, the rest of the probes were transformed into the homologous gene symbol according to the platform\u2019s annotation information.\nIdentification of DEGs\nGEO2R is an interactive web tool that can compare and analyze the GEO series122. Included datasets were analyzed by GEO2R to identify DEGs, and then the results were downloaded in tsv format. DEGs were evaluated according to the cutoff criteria of an adjusted P-value\u2009<\u20090.05 and |log2FC (fold change)|>\u20091.0. Subsequently, the FunRich tool (version 3.1.3) was used to examine the intersection of DEGs and construct the Venn diagram123. A visual hierarchical cluster analysis was conducted through the limma package in software R (version 4.1.1) to present the volcano plot. Additionally, an integrative toolkit, TBtools, was used to draw the heatmap of DEGs124.\nGO and KEGG enrichment analysis of DEGs\nGO functional analysis and KEGG pathway analysis were carried out by the Database for Annotation, Visualization, and Integrated Discovery (DAVID) to identify enriched biological themes and discover enriched functional-related gene groups125\u2013127. The top 10 or all (if less than 10) significant items of the biological process (BP), cellular component (CC), molecular function (MF) categories, and KEGG pathways were picked up for further validation and presented in the form of bubble maps. These bubble plots were drawn by the statistical software R (version 4.1.1), using the ggplot2 R package. And a P-value\u2009<\u20090.05 were considered statistically significant.\nPPI network construction and visualization\nA protein\u2013protein interaction (PPI) network of the identified DEGs with an interaction score\u2009>\u20090.4 was constructed by the Search Tool for the Retrieval of Interacting Genes/Proteins (STRING). The DEGs and their related genes were presented with at least 2 interactions. Subsequently, the functional modules of the PPI network were screened and visualized using the Cytoscape software (version 3.8.2)128. The parameters of Cytoscape plugin Molecular Complex Detection (MCODE) were as follows: degree cutoff\u2009=\u20092, node score cutoff\u2009=\u20090.2, k-score\u2009=\u20092, and max.depth\u2009=\u2009100129. GO functional analysis and KEGG pathway analysis were performed for every module by DAVID.",
+          "cos_sim_score": 0.18960505723953247,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

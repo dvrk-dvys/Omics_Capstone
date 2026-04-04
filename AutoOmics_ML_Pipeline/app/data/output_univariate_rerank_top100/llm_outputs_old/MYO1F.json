@@ -1,0 +1,144 @@
+{
+  "probe_id": "11726122_at",
+  "gene_symbol": "MYO1F",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0,
+  "abs_fold_change": 1.3474,
+  "score": 1.3443,
+  "probe_count": 2,
+  "probe_ids": "11726122_at | 11751544_a_at",
+  "max_score": 1.3443,
+  "mean_abs_fold_change": 1.2952,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T02:20:07",
+  "interpretation": "MYO1F encodes an unconventional myosin protein that plays a crucial role in intracellular movement and cell motility through its actin-based motor activity. While there is no direct evidence linking MYO1F to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in cellular processes such as adhesion and motility may suggest a potential role in the pathophysiology of bone tissue response to steroid treatment. The retrieved evidence primarily indicates its general biological functions and associations with other diseases, leading to a low confidence in its specific relevance to SONFH. Therefore, while MYO1F may have biological implications in cellular dynamics, its potential as a biomarker for early detection of SONFH remains weak and speculative.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "MYO1F may be involved in cellular processes relevant to bone health, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "MYO1F (O00160). https://www.uniprot.org/uniprotkb/O00160",
+    "MYO1F \u2014 MYO1F. https://platform.opentargets.org/target/ENSG00000142347",
+    "MYO1F \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000142347/associations",
+    "MYO1F \u2194 smoking behavior. https://platform.opentargets.org/target/ENSG00000142347/associations",
+    "MYO1F \u2194 metabolic syndrome. https://platform.opentargets.org/target/ENSG00000142347/associations",
+    "MYO1F \u2194 cervical carcinoma. https://platform.opentargets.org/target/ENSG00000142347/associations",
+    "MYO1F. https://en.wikipedia.org/wiki/MYO1F",
+    "Actin filament. https://en.wikipedia.org/wiki/Actin_filament",
+    "Tubulin beta-2A chain. https://en.wikipedia.org/wiki/Tubulin_beta-2A_chain"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4513,
+    "completion_tokens": 224,
+    "total_tokens": 4737,
+    "estimated_cost_usd": 0.000811
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O00160",
+          "title": "MYO1F (O00160)",
+          "url": "https://www.uniprot.org/uniprotkb/O00160",
+          "text": "Protein: Unconventional myosin-If\nFunction: Myosins are actin-based motor molecules with ATPase activity. Unconventional myosins serve in intracellular movements. Their highly divergent tails are presumed to bind to membranous compartments, which would be moved relative to actin filaments (By similarity)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000142347::function",
+          "title": "MYO1F \u2014 MYO1F",
+          "url": "https://platform.opentargets.org/target/ENSG00000142347",
+          "text": "Function: Myosins are actin-based motor molecules with ATPase activity. Unconventional myosins serve in intracellular movements. Their highly divergent tails are presumed to bind to membranous compartments, which would be moved relative to actin filaments (By similarity). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000142347::EFO_0005772",
+          "title": "MYO1F \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000142347/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.449",
+          "cos_sim_score": 0.44914775431715115,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000142347::EFO_0004318",
+          "title": "MYO1F \u2194 smoking behavior",
+          "url": "https://platform.opentargets.org/target/ENSG00000142347/associations",
+          "text": "Disease: smoking behavior\nDescription: Inhaling and exhaling the smoke of tobacco or something similar to tobacco.\nAssociation score: 0.319",
+          "cos_sim_score": 0.318810915928983,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000142347::EFO_0000195",
+          "title": "MYO1F \u2194 metabolic syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000142347/associations",
+          "text": "Disease: metabolic syndrome\nDescription: A cluster of metabolic risk factors for CARDIOVASCULAR DISEASES and TYPE 2 DIABETES MELLITUS. The major components of metabolic syndrome X include excess ABDOMINAL FAT; atherogenic DYSLIPIDEMIA; HYPERTENSION; HYPERGLYCEMIA; INSULIN RESISTANCE; a proinflammatory state; and a prothrombotic (THROMBOSIS) state. (from AHA/NHLBI/ADA Conference Proceedings, Circulation 2004; 109:551-556)\nAssociation score: 0.294",
+          "cos_sim_score": 0.29389281415180896,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000142347::EFO_0001061",
+          "title": "MYO1F \u2194 cervical carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000142347/associations",
+          "text": "Disease: cervical carcinoma\nDescription: A carcinoma arising from either the exocervical squamous epithelium or the endocervical glandular epithelium. The major histologic types of cervical carcinoma are: squamous carcinoma, adenocarcinoma, adenosquamous carcinoma, adenoid cystic carcinoma and undifferentiated carcinoma.\nAssociation score: 0.111",
+          "cos_sim_score": 0.11089769670948683,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::MYO1F",
+          "title": "MYO1F",
+          "url": "https://en.wikipedia.org/wiki/MYO1F",
+          "text": "Myosin-If is a protein that in humans is encoded by the MYO1F gene.\nIt is expressed mainly in the immune system and might be involved in cell adhesion and motility. It is a candidate gene for (among other things) nonsyndromic deafness.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.3404236435890198,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Actin filament",
+          "title": "Actin filament",
+          "url": "https://en.wikipedia.org/wiki/Actin_filament",
+          "text": "Actin filaments (also known as microfilaments) are protein filaments in the cytoplasm of eukaryotic cells that form part of the cytoskeleton. They are primarily composed of polymers of actin, but are modified by and interact with numerous other proteins in the cell. Actin filaments are usually about 7 nm in diameter and made up of two strands of actin. Microfilament functions include cytokinesis, amoeboid movement, cell motility, changes in cell shape, endocytosis and exocytosis, cell contractility, and mechanical stability.  In inducing cell motility, one end of the actin filament elongates while the other end contracts, presumably by myosin II molecular motors. Additionally, they function as part of actomyosin-driven contractile molecular motors, wherein the thin filaments serve as tensile platforms for myosin's ATP-dependent pulling action in muscle contraction and pseudopod advancement. Microfilaments have a tough, flexible framework which helps the cell in movement.\nActin was first discovered in rabbit skeletal muscle in the mid 1940s by F.B. Straub. Almost 20 years later, H.E. Huxley demonstrated that actin is essential for muscle contraction. The mechanism in which actin creates long filaments was first described in the mid 1980s. Later studies showed that actin has an important role in cell shape, motility, and cytokinesis.\n\nOrganization\nActin filaments are assembled in two general types of structures: bundles and networks.  Bundles can be composed of polar filament arrays, in which all barbed ends point to the same end of the bundle, or non-polar arrays, where the barbed ends point towards both ends. A class of actin-binding proteins, called cross-linking proteins, dictate the formation of these structures.  Cross-linking proteins determine filament orientation and spacing in the bundles and networks.  These structures are regulated by many other classes of actin-binding proteins, including motor proteins, branching proteins, severing proteins, polymerization promoters, and capping proteins.",
+          "cos_sim_score": 0.13151882588863373,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Tubulin beta-2A chain",
+          "title": "Tubulin beta-2A chain",
+          "url": "https://en.wikipedia.org/wiki/Tubulin_beta-2A_chain",
+          "text": "Tubulin beta-2A chain is a protein that in humans is encoded by the TUBB2A gene.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.10011077672243118,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Actin filament",
+          "title": "Actin filament",
+          "url": "https://en.wikipedia.org/wiki/Actin_filament",
+          "text": "Steps involved\nThe following steps describe one force-generating cycle of an actoclampin molecular motor:\n\nThe polymerization cofactor profilin and the ATP\u00b7actin combine to form a profilin-ATP-actin complex that then binds to the end-tracking unit\nThe cofactor and monomer are transferred to the barbed-end of an actin already clamped filament\nThe tracking unit and cofactor dissociate from the adjacent protofilament, in a step that can be facilitated by ATP hydrolysis energy to modulate the affinity of the cofactor and/or the tracking unit for the filament; and this mechanoenzymatic cycle is then repeated, starting this time on the other sub-filament growth site.\nWhen operating with the benefit of ATP hydrolysis, AC motors generate per-filament forces of 8\u20139 pN, which is far greater than the per-filament limit of 1\u20132 pN for motors operating without ATP hydrolysis.  The term actoclampin is generic and applies to all actin filament end-tracking molecular motors, irrespective of whether they are driven actively by an ATP-activated mechanism or passively.\nSome actoclampins (e.g., those involving Ena/VASP proteins, WASP, and N-WASP) apparently require Arp2/3-mediated filament initiation to form the actin polymerization nucleus that is then \"loaded\" onto the end-tracker before processive motility can commence. To generate a new filament, Arp2/3 requires a \"mother\" filament, monomeric ATP-actin, and an activating domain from Listeria ActA or the VCA region of N-WASP. The Arp2/3 complex binds to the side of the mother filament, forming a Y-shaped branch having a 70-degree angle with respect to the longitudinal axis of the mother filament. Then upon activation by ActA or VCA, the Arp complex is believed to undergo a major conformational change, bringing its two actin-related protein subunits near enough to each other to generate a new filament gate. Whether ATP hydrolysis may be required for nucleation and/or Y-branch release is a matter under active investigation.\n\nReferences\nExternal links\n\nMicrofilaments at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nMicrofilament+proteins at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\n\"Microfilament\" at Dorland's Medical Dictionary",
+          "cos_sim_score": 0.09662111848592758,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Actin filament",
+          "title": "Actin filament",
+          "url": "https://en.wikipedia.org/wiki/Actin_filament",
+          "text": "Organization\nActin filaments are assembled in two general types of structures: bundles and networks.  Bundles can be composed of polar filament arrays, in which all barbed ends point to the same end of the bundle, or non-polar arrays, where the barbed ends point towards both ends. A class of actin-binding proteins, called cross-linking proteins, dictate the formation of these structures.  Cross-linking proteins determine filament orientation and spacing in the bundles and networks.  These structures are regulated by many other classes of actin-binding proteins, including motor proteins, branching proteins, severing proteins, polymerization promoters, and capping proteins.\n\nIn vitro self-assembly\nMeasuring approximately 7 nm in diameter, microfilaments are the thinnest fibers of the cytoskeleton. They are polymers of actin subunits (globular actin, or G-actin), which as part of the fiber are referred to as filamentous actin, or F-actin. Each microfilament is made up of two helical, interlaced strands of subunits. Much like microtubules, actin filaments are polarized. Electron micrographs have provided evidence of their fast-growing barbed-ends and their slow-growing pointed-end. This polarity has been determined by the pattern created by the binding of myosin S1 fragments: they themselves are subunits of the larger myosin II protein complex. The pointed end is commonly referred to as the minus (\u2212) end and the barbed end is referred to as the plus (+) end.\nIn vitro actin polymerization, starts with the self-association of three G-actin monomers to form a trimer. ATP-bound actin then itself binds the barbed end, and the ATP is subsequently hydrolyzed. ATP hydrolysis occurs with a half time of about 2 seconds, while the half time for the dissociation of the inorganic phosphate is about 6 minutes. This autocatalyzed event reduces the binding strength between neighboring subunits, and thus generally destabilizes the filament. In vivo actin polymerization is catalyzed by a class of filament end-tracking molecular motors known as actoclampins. Evidence suggests that the rate of ATP hydrolysis and the rate of monomer incorporation are strongly coupled.\nSubsequently, ADP-actin dissociates slowly from the pointed end, a process significantly accelerated by the actin-binding protein, cofilin. ADP bound cofilin severs ADP-rich regions nearest the (\u2212)-ends. Upon release, the free actin monomer slowly dissociates from ADP, which in turn rapidly binds to the free ATP diffusing in the cytosol, thereby forming the ATP-actin monomeric units needed for further barbed-end filament elongation. This rapid turnover is important for the cell's movement. End-capping proteins such as CapZ prevent the addition or loss of monomers at the filament end where actin turnover is unfavorable, such as in the muscle apparatus.\nActin polymerization together with capping proteins were recently used to control the 3-dimensional growth of protein filament so as to perform 3D topologies useful in technology and the making of electrical interconnect. Electrical conductivity is obtained by metallisation of the protein 3D structure.\n\nMechanism of force generation\nAs a result of ATP hydrolysis, filaments elongate approximately 10 times faster at their barbed ends than their pointed ends. At steady-state, the polymerization rate at the barbed end matches the depolymerization rate at the pointed end, and microfilaments are said to be treadmilling. Treadmilling results in elongation in the barbed end and shortening in the pointed-end, so that the filament in total moves. Since both processes are energetically favorable, this means force is generated, the energy ultimately coming from ATP.",
+          "cos_sim_score": 0.07664930820465088,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "probe_id": "11732135_a_at",
+  "gene_symbol": "ADCK3",
+  "score": 1.0,
+  "SD_TestAUC": 0.0165634664999983,
+  "abs_fold_change": 0.5548,
+  "probe_count": 1,
+  "probe_ids": "11732135_a_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.5548,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T22:35:21",
+  "interpretation": "ADCK3, also known as COQ8A, encodes a mitochondrial atypical kinase involved in the biosynthesis of coenzyme Q (ubiquinone), which is crucial for aerobic cellular respiration. This gene's function is particularly relevant in the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), as mitochondrial dysfunction and oxidative stress are implicated in the pathogenesis of osteonecrosis. However, the evidence linking ADCK3 directly to SONFH is limited, with no specific studies found that validate its role as a biomarker for this condition. Therefore, while ADCK3 is biologically plausible due to its involvement in mitochondrial processes, its clinical relevance as an early-detection biomarker for SONFH remains weak and speculative. [INFERENCE]",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "ADCK3 is involved in mitochondrial function, which may be relevant to the mechanisms underlying Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "COQ8A (Q8NI60). https://www.uniprot.org/uniprotkb/Q8NI60",
+    "COQ8A (Q8NI60-3). https://www.uniprot.org/uniprotkb/Q8NI60-3",
+    "COQ8A (Q8NI60-2). https://www.uniprot.org/uniprotkb/Q8NI60-2",
+    "ADCK3 \u2014 COQ8A. https://platform.opentargets.org/target/ENSG00000163050",
+    "ADCK3 \u2194 autosomal recessive ataxia due to ubiquinone deficiency. https://platform.opentargets.org/target/ENSG00000163050/associations",
+    "ADCK3 \u2194 coenzyme Q10 deficiency. https://platform.opentargets.org/target/ENSG00000163050/associations",
+    "ADCK3 \u2194 coenzyme Q10 deficiency, primary, 1. https://platform.opentargets.org/target/ENSG00000163050/associations",
+    "ADCK3 \u2194 cataract. https://platform.opentargets.org/target/ENSG00000163050/associations",
+    "COQ8A \u2014 coenzyme Q8A (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "COQ2 \u2014 coenzyme Q2, polyprenyltransferase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "COQ8B \u2014 coenzyme Q8B (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4520,
+    "completion_tokens": 300,
+    "total_tokens": 4820,
+    "estimated_cost_usd": 0.000858
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q8NI60",
+          "title": "COQ8A (Q8NI60)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8NI60",
+          "text": "Protein: Atypical kinase COQ8A, mitochondrial\nFunction: Atypical kinase involved in the biosynthesis of coenzyme Q, also named ubiquinone, an essential lipid-soluble electron transporter for aerobic cellular respiration (PubMed:21296186, PubMed:25498144, PubMed:25540914, PubMed:27499294, PubMed:36302899, PubMed:38425362). Its substrate specificity is still unclear: may act as a protein kinase that mediates phosphorylation of COQ3 (By similarity). According to other reports, acts as a small molecule kinase, possibly a lipid kinase that phosphorylates a prenyl lipid in the ubiquinone biosynthesis pathway, as suggested by its ability to bind coenzyme Q lipid intermediates (PubMed:25498144, PubMed:27499294). However, the small molecule kinase activity was not confirmed by another publication (By similarity). Shows an unusual selectivity for binding ADP over ATP (PubMed:25498144)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q8NI60-3",
+          "title": "COQ8A (Q8NI60-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8NI60-3",
+          "text": "Protein: Isoform 3 of Atypical kinase COQ8A, mitochondrial",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q8NI60-2",
+          "title": "COQ8A (Q8NI60-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8NI60-2",
+          "text": "Protein: Isoform 2 of Atypical kinase COQ8A, mitochondrial",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000163050::function",
+          "title": "ADCK3 \u2014 COQ8A",
+          "url": "https://platform.opentargets.org/target/ENSG00000163050",
+          "text": "Function: Atypical kinase involved in the biosynthesis of coenzyme Q, also named ubiquinone, an essential lipid-soluble electron transporter for aerobic cellular respiration (PubMed:21296186, PubMed:25498144, PubMed:25540914, PubMed:27499294, PubMed:36302899, PubMed:38425362). Its substrate specificity is still unclear: may act as a protein kinase that mediates phosphorylation of COQ3 (By similarity). According to other reports, acts as a small molecule kinase, possibly a lipid kinase that phosphorylates a prenyl lipid in the ubiquinone biosynthesis pathway, as suggested by its ability to bind coenzyme Q lipid intermediates (PubMed:25498144, PubMed:27499294). However, the small molecule kinase activity was not confirmed by another publication (By similarity). Shows an unusual selectivity for binding ADP over ATP (PubMed:25498144).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000163050::MONDO_0012784",
+          "title": "ADCK3 \u2194 autosomal recessive ataxia due to ubiquinone deficiency",
+          "url": "https://platform.opentargets.org/target/ENSG00000163050/associations",
+          "text": "Disease: autosomal recessive ataxia due to ubiquinone deficiency\nDescription: This syndrome is characterized by childhood-onset progressive ataxia and cerebellar atrophy.\nAssociation score: 0.841",
+          "cos_sim_score": 0.8406647642110768,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000163050::MONDO_0018151",
+          "title": "ADCK3 \u2194 coenzyme Q10 deficiency",
+          "url": "https://platform.opentargets.org/target/ENSG00000163050/associations",
+          "text": "Disease: coenzyme Q10 deficiency\nDescription: A genetically heterogeneous condition, typically inherited in an autosomal recessive fashion, characterized by coenzyme Q10 deficiency.\nAssociation score: 0.749",
+          "cos_sim_score": 0.7485834389046134,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000163050::MONDO_0011829",
+          "title": "ADCK3 \u2194 coenzyme Q10 deficiency, primary, 1",
+          "url": "https://platform.opentargets.org/target/ENSG00000163050/associations",
+          "text": "Disease: coenzyme Q10 deficiency, primary, 1\nDescription: Any coenzyme Q10 deficiency in which the cause of the disease is a mutation in the COQ2 gene.\nAssociation score: 0.457",
+          "cos_sim_score": 0.4570855848616109,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000163050::MONDO_0005129",
+          "title": "ADCK3 \u2194 cataract",
+          "url": "https://platform.opentargets.org/target/ENSG00000163050/associations",
+          "text": "Disease: cataract\nDescription: Partial or complete opacity of the crystalline lens of one or both eyes that decreases visual acuity and eventually results in blindness. Some cataracts appear in infancy or in childhood, but most develop in older individuals. (Sternberg Diagnostic Surgical Pathology, 3rd ed.)\nAssociation score: 0.443",
+          "cos_sim_score": 0.44321882226918446,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "COQ8A \u2014 coenzyme Q8A",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: COQ8A\nGene name: coenzyme Q8A\nAliases / synonyms: ADCK3, ARCA2, CABC1, COQ10D4, COQ8, SCAR9\nOrganism: Homo sapiens\nGene summary: This gene encodes a mitochondrial protein similar to yeast ABC1, which functions in an electron-transferring membrane protein complex in the respiratory chain. It is not related to the family of ABC transporter proteins. Expression of this gene is induced by the tumor suppressor p53 and in response to DNA damage, and inhibiting its expression partially suppresses p53-induced apoptosis. Alternatively spliced transcript variants have been found; however, their full-length nature has not been determined. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "COQ8A",
+          "aliases": "ADCK3, ARCA2, CABC1, COQ10D4, COQ8, SCAR9",
+          "gene_description": "coenzyme Q8A"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "COQ2 \u2014 coenzyme Q2, polyprenyltransferase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: COQ2\nGene name: coenzyme Q2, polyprenyltransferase\nAliases / synonyms: CL640, COQ10D1, MSA1, PHB:PPT\nOrganism: Homo sapiens\nGene summary: This gene encodes an enzyme that functions in the final steps in the biosynthesis of CoQ (ubiquinone), a redox carrier in the mitochondrial respiratory chain and a lipid-soluble antioxidant. This enzyme, which is part of the coenzyme Q10 pathway, catalyzes the prenylation of parahydroxybenzoate with an all-trans polyprenyl group. Mutations in this gene cause coenzyme Q10 deficiency, a mitochondrial encephalomyopathy, and also COQ2 nephropathy, an inherited form of mitochondriopathy with primary renal involvement. [provided by RefSeq, Oct 2009]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "COQ2",
+          "aliases": "CL640, COQ10D1, MSA1, PHB:PPT",
+          "gene_description": "coenzyme Q2, polyprenyltransferase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "COQ8B \u2014 coenzyme Q8B",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: COQ8B\nGene name: coenzyme Q8B\nAliases / synonyms: ADCK4, NPHS9\nOrganism: Homo sapiens\nGene summary: This gene encodes a protein with two copies of a domain found in protein kinases. The encoded protein has a complete protein kinase catalytic domain, and a truncated domain that contains only the active and binding sites of the protein kinase domain, however, it is not known whether the protein has any kinase activity. Multiple transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Sep 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "COQ8B",
+          "aliases": "ADCK4, NPHS9",
+          "gene_description": "coenzyme Q8B"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

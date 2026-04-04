@@ -1,0 +1,126 @@
+{
+  "probe_id": "11751164_a_at",
+  "gene_symbol": "CPPED1",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0662538659999937,
+  "abs_fold_change": 1.5201,
+  "score": 1.5132,
+  "probe_count": 4,
+  "probe_ids": "11751164_a_at | 11733803_x_at | 11733802_a_at | 11733801_s_at",
+  "max_score": 1.5132,
+  "mean_abs_fold_change": 1.4528,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T02:11:48",
+  "interpretation": "CPPED1 encodes a serine/threonine protein phosphatase that specifically dephosphorylates AKT at 'Ser-473', which is crucial for regulating cell cycle progression and apoptosis. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the dysregulation of cell survival and apoptosis pathways can contribute to bone cell death and subsequent osteonecrosis. However, the evidence linking CPPED1 directly to SONFH is limited, with no specific studies found that connect this gene to the disease. Therefore, while its biological function suggests a potential role in bone health, the lack of direct evidence means that its clinical relevance as a biomarker for early detection of SONFH remains uncertain. Overall, the evidence is weak, and the interpretation relies heavily on inferred biological reasoning.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "CPPED1 may influence pathways relevant to bone cell survival, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "CPPED1 (Q9BRF8). https://www.uniprot.org/uniprotkb/Q9BRF8",
+    "CPPED1 (Q9BRF8-2). https://www.uniprot.org/uniprotkb/Q9BRF8-2",
+    "CPPED1 (Q9BRF8-3). https://www.uniprot.org/uniprotkb/Q9BRF8-3",
+    "CPPED1 \u2014 CPPED1. https://platform.opentargets.org/target/ENSG00000103381",
+    "CPPED1 \u2194 alcohol drinking. https://platform.opentargets.org/target/ENSG00000103381/associations",
+    "CPPED1 \u2194 placenta praevia. https://platform.opentargets.org/target/ENSG00000103381/associations",
+    "CPPED1 \u2194 gastritis. https://platform.opentargets.org/target/ENSG00000103381/associations",
+    "CPPED1 \u2194 alopecia areata. https://platform.opentargets.org/target/ENSG00000103381/associations",
+    "List of human protein-coding genes 2. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_2"
+  ],
+  "token_usage": {
+    "prompt_tokens": 2579,
+    "completion_tokens": 237,
+    "total_tokens": 2816,
+    "estimated_cost_usd": 0.000529
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9BRF8",
+          "title": "CPPED1 (Q9BRF8)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BRF8",
+          "text": "Protein: Serine/threonine-protein phosphatase CPPED1\nFunction: Protein phosphatase that dephosphorylates AKT family kinase specifically at 'Ser-473', blocking cell cycle progression and promoting cell apoptosis. May play an inhibitory role in glucose uptake by adipocytes",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9BRF8-2",
+          "title": "CPPED1 (Q9BRF8-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BRF8-2",
+          "text": "Protein: Isoform 2 of Serine/threonine-protein phosphatase CPPED1",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9BRF8-3",
+          "title": "CPPED1 (Q9BRF8-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BRF8-3",
+          "text": "Protein: Isoform 3 of Serine/threonine-protein phosphatase CPPED1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000103381::function",
+          "title": "CPPED1 \u2014 CPPED1",
+          "url": "https://platform.opentargets.org/target/ENSG00000103381",
+          "text": "Function: Protein phosphatase that dephosphorylates AKT family kinase specifically at 'Ser-473', blocking cell cycle progression and promoting cell apoptosis. May play an inhibitory role in glucose uptake by adipocytes.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000103381::EFO_0004329",
+          "title": "CPPED1 \u2194 alcohol drinking",
+          "url": "https://platform.opentargets.org/target/ENSG00000103381/associations",
+          "text": "Disease: alcohol drinking\nDescription: Behaviors associated with the ingesting of alcoholic beverages, including social drinking.\nAssociation score: 0.372",
+          "cos_sim_score": 0.37185428968128403,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000103381::EFO_0007442",
+          "title": "CPPED1 \u2194 placenta praevia",
+          "url": "https://platform.opentargets.org/target/ENSG00000103381/associations",
+          "text": "Disease: placenta praevia\nDescription: Abnormal placentation in which the placenta implants in the lower segment of the uterus (the zone of dilation) and may cover part or all of the opening of the cervix. It is often associated with serious antepartum bleeding and premature labor.\nAssociation score: 0.306",
+          "cos_sim_score": 0.30600725468990586,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000103381::EFO_0000217",
+          "title": "CPPED1 \u2194 gastritis",
+          "url": "https://platform.opentargets.org/target/ENSG00000103381/associations",
+          "text": "Disease: gastritis\nDescription: Inflammation of the stomach.\nAssociation score: 0.292",
+          "cos_sim_score": 0.292139344058109,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000103381::EFO_0004192",
+          "title": "CPPED1 \u2194 alopecia areata",
+          "url": "https://platform.opentargets.org/target/ENSG00000103381/associations",
+          "text": "Disease: alopecia areata\nDescription: Loss of scalp and body hair involving microscopically inflammatory patchy areas.\nAssociation score: 0.270",
+          "cos_sim_score": 0.2696590582177411,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::List of human protein-coding genes 2",
+          "title": "List of human protein-coding genes 2",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_2",
+          "text": "== References ==",
+          "cos_sim_score": 0.15681564807891846,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

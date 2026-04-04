@@ -1,0 +1,191 @@
+{
+  "rf_rank": 24,
+  "probe_id": "11754832_a_at",
+  "gene_symbol": "PPP1R12C",
+  "score": 0.63,
+  "rf_n_nodes": 7,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.3819,
+  "log_fc": 0.3819,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11754832_a_at",
+  "max_score": 0.63,
+  "mean_abs_fold_change": 0.3819,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:31:50",
+  "interpretation": "PPP1R12C encodes a regulatory subunit of myosin phosphatase, which is involved in the regulation of actin cytoskeleton dynamics and muscle contraction. While there is no direct evidence linking PPP1R12C to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in cellular signaling and cytoskeletal organization suggests a potential involvement in bone health and remodeling processes. The retrieved evidence primarily indicates its function in myosin phosphatase regulation, but lacks specific connections to SONFH or related conditions. Therefore, the clinical relevance of PPP1R12C as a biomarker for early detection of SONFH remains weak and speculative. [INFERENCE] suggests that alterations in myosin phosphatase activity could impact bone cell function, which may be relevant in the context of steroid-induced bone damage.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "PPP1R12C may have a role in cellular processes relevant to bone health, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "PPP1R12C (Q9BZL4). https://www.uniprot.org/uniprotkb/Q9BZL4",
+    "PPP1R12C (Q9BZL4-2). https://www.uniprot.org/uniprotkb/Q9BZL4-2",
+    "PPP1R12C (Q9BZL4-3). https://www.uniprot.org/uniprotkb/Q9BZL4-3",
+    "PPP1R12C \u2014 PPP1R12C. https://platform.opentargets.org/target/ENSG00000125503",
+    "PPP1R12C \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000125503/associations",
+    "PPP1R12C \u2194 scarlet fever. https://platform.opentargets.org/target/ENSG00000125503/associations",
+    "PPP1R12C \u2194 spondylolisthesis. https://platform.opentargets.org/target/ENSG00000125503/associations",
+    "PPP1R12C \u2194 alcohol drinking. https://platform.opentargets.org/target/ENSG00000125503/associations",
+    "PPP1R12C \u2014 protein phosphatase 1 regulatory subunit 12C (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TNF \u2014 tumor necrosis factor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ESR1 \u2014 estrogen receptor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ESR2 \u2014 estrogen receptor 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "NOD2 \u2014 nucleotide binding oligomerization domain containing 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4701,
+    "completion_tokens": 303,
+    "total_tokens": 5004,
+    "estimated_cost_usd": 0.000887
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9BZL4",
+          "title": "PPP1R12C (Q9BZL4)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BZL4",
+          "text": "Protein: Protein phosphatase 1 regulatory subunit 12C\nFunction: Regulates myosin phosphatase activity",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9BZL4-2",
+          "title": "PPP1R12C (Q9BZL4-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BZL4-2",
+          "text": "Protein: Isoform 2 of Protein phosphatase 1 regulatory subunit 12C",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9BZL4-3",
+          "title": "PPP1R12C (Q9BZL4-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BZL4-3",
+          "text": "Protein: Isoform 3 of Protein phosphatase 1 regulatory subunit 12C",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000125503::function",
+          "title": "PPP1R12C \u2014 PPP1R12C",
+          "url": "https://platform.opentargets.org/target/ENSG00000125503",
+          "text": "Function: Regulates myosin phosphatase activity. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000125503::EFO_0005772",
+          "title": "PPP1R12C \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000125503/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.352",
+          "cos_sim_score": 0.3523269931535489,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000125503::EFO_0007477",
+          "title": "PPP1R12C \u2194 scarlet fever",
+          "url": "https://platform.opentargets.org/target/ENSG00000125503/associations",
+          "text": "Disease: scarlet fever\nDescription: An upper respiratory tract disease described as an acute contagious disease caused by Group A bacteria of the genus Streptococcus (especially various strains of S. pyogenes) and characterized by inflammation of the nose, throat, and mouth, generalized toxemia, and a red rash.\nAssociation score: 0.138",
+          "cos_sim_score": 0.13817225952726672,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000125503::EFO_0007493",
+          "title": "PPP1R12C \u2194 spondylolisthesis",
+          "url": "https://platform.opentargets.org/target/ENSG00000125503/associations",
+          "text": "Disease: spondylolisthesis\nDescription: A condition in which there is forward displacement of a vertebral bone over the on below it.\nAssociation score: 0.107",
+          "cos_sim_score": 0.10668112175898474,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000125503::EFO_0004329",
+          "title": "PPP1R12C \u2194 alcohol drinking",
+          "url": "https://platform.opentargets.org/target/ENSG00000125503/associations",
+          "text": "Disease: alcohol drinking\nDescription: Behaviors associated with the ingesting of alcoholic beverages, including social drinking.\nAssociation score: 0.096",
+          "cos_sim_score": 0.09624100527778282,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "PPP1R12C \u2014 protein phosphatase 1 regulatory subunit 12C",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PPP1R12C\nGene name: protein phosphatase 1 regulatory subunit 12C\nAliases / synonyms: AAVS1, LENG3, MBS85, p84, p85\nOrganism: Homo sapiens\nGene summary: The gene encodes a subunit of myosin phosphatase. The encoded protein regulates the catalytic activity of protein phosphatase 1 delta and assembly of the actin cytoskeleton. Alternatively spliced transcript variants encoding multiple isoforms have been observed for this gene. [provided by RefSeq, Oct 2012]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PPP1R12C",
+          "aliases": "AAVS1, LENG3, MBS85, p84, p85",
+          "gene_description": "protein phosphatase 1 regulatory subunit 12C"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TNF \u2014 tumor necrosis factor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TNF\nGene name: tumor necrosis factor\nAliases / synonyms: DIF, IMD127, TNF-alpha, TNFA, TNFSF2, TNLG1F\nOrganism: Homo sapiens\nGene summary: This gene encodes a multifunctional proinflammatory cytokine that belongs to the tumor necrosis factor (TNF) superfamily. This cytokine is mainly secreted by macrophages. It can bind to, and thus functions through its receptors TNFRSF1A/TNFR1 and TNFRSF1B/TNFBR. This cytokine is involved in the regulation of a wide spectrum of biological processes including cell proliferation, differentiation, apoptosis, lipid metabolism, and coagulation. This cytokine has been implicated in a variety of diseases, including autoimmune diseases, insulin resistance, psoriasis, rheumatoid arthritis ankylosing spondylitis, tuberculosis, autosomal dominant polycystic kidney disease, and cancer. Mutations in this gene affect susceptibility to cerebral malaria, septic shock, and Alzheimer disease. Knockout studie...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TNF",
+          "aliases": "DIF, IMD127, TNF-alpha, TNFA, TNFSF2, TNLG1F",
+          "gene_description": "tumor necrosis factor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ESR1 \u2014 estrogen receptor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ESR1\nGene name: estrogen receptor 1\nAliases / synonyms: ER, ESR, ESRA, ESTRR, Era, NR3A1\nOrganism: Homo sapiens\nGene summary: This gene encodes an estrogen receptor and ligand-activated transcription factor. The canonical protein contains an N-terminal ligand-independent transactivation domain, a central DNA binding domain, a hinge domain, and a C-terminal ligand-dependent transactivation domain. The protein localizes to the nucleus where it may form either a homodimer or a heterodimer with estrogen receptor 2. The protein encoded by this gene regulates the transcription of many estrogen-inducible genes that play a role in growth, metabolism, sexual development, gestation, and other reproductive functions and is expressed in many non-reproductive tissues. The receptor encoded by this gene plays a key role in breast cancer, endometrial cancer, and osteoporosis. This gene is reported to have dozens of transcript va...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ESR1",
+          "aliases": "ER, ESR, ESRA, ESTRR, Era, NR3A1",
+          "gene_description": "estrogen receptor 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ESR2 \u2014 estrogen receptor 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ESR2\nGene name: estrogen receptor 2\nAliases / synonyms: ER-BETA, ESR-BETA, ESRB, ESTRB, Erb, NR3A2, ODG8\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the family of estrogen receptors and superfamily of nuclear receptor transcription factors. The gene product contains an N-terminal DNA binding domain and C-terminal ligand binding domain and is localized to the nucleus, cytoplasm, and mitochondria. Upon binding to 17beta-estradiol or related ligands, the encoded protein forms homo- or hetero-dimers that interact with specific DNA sequences to activate transcription. Some isoforms dominantly inhibit the activity of other estrogen receptor family members. Several alternatively spliced transcript variants of this gene have been described, but the full-length nature of some of these variants has not been fully characterized. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ESR2",
+          "aliases": "ER-BETA, ESR-BETA, ESRB, ESTRB, Erb, NR3A2, ODG8",
+          "gene_description": "estrogen receptor 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "NOD2 \u2014 nucleotide binding oligomerization domain containing 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: NOD2\nGene name: nucleotide binding oligomerization domain containing 2\nAliases / synonyms: ACUG, BLAU, BLAUS, CARD15, CD, CLR16.3, IBD1, NLRC2, NOD2B, PSORAS1, YAOS\nOrganism: Homo sapiens\nGene summary: This gene is a member of the Nod1/Apaf-1 family and encodes a protein with two caspase recruitment (CARD) domains and six leucine-rich repeats (LRRs). The protein is primarily expressed in the peripheral blood leukocytes. It plays a role in the immune response to intracellular bacterial lipopolysaccharides (LPS) by recognizing the muramyl dipeptide (MDP) derived from them and activating the NFKB protein. Mutations in this gene have been associated with Crohn disease and Blau syndrome. Alternatively spliced transcript variants encoding distinct isoforms have been found for this gene. [provided by RefSeq, Jun 2014]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "NOD2",
+          "aliases": "ACUG, BLAU, BLAUS, CARD15, CD, CLR16.3, IBD1, NLRC2, NOD2B, PSORAS1, YAOS",
+          "gene_description": "nucleotide binding oligomerization domain containing 2"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "probe_id": "11731452_s_at",
+  "gene_symbol": "SEC62",
+  "rf_importance": 0.0448,
+  "selection_freq": 1.0,
+  "abs_fold_change": 2.0619120666666673,
+  "score": 0.6264,
+  "probe_count": 3,
+  "probe_ids": "11731452_s_at | 11731454_a_at | 11731451_at",
+  "max_score": 0.6264,
+  "mean_abs_fold_change": 1.6161,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T21:18:20",
+  "interpretation": "SEC62 is a translocation protein that plays a crucial role in the post-translational transport of precursor polypeptides across the endoplasmic reticulum (ER). This function is vital for the proper folding and maturation of proteins, which is essential for maintaining cellular homeostasis and function. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), the disruption of protein transport and processing may contribute to the pathophysiology of the disease, particularly in osteoblasts and other bone-related cells. However, the evidence linking SEC62 directly to SONFH is limited, primarily suggesting its involvement in broader cellular processes rather than specific mechanisms in SONFH. Therefore, while SEC62 may have biological relevance in osteogenesis and cellular stress responses, its potential as a biomarker for early detection of SONFH remains weak and speculative. [INFERENCE]",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "SEC62 may be involved in cellular processes relevant to bone health, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "SEC62 (Q99442). https://www.uniprot.org/uniprotkb/Q99442",
+    "SEC62 \u2014 SEC62. https://platform.opentargets.org/target/ENSG00000008952",
+    "SEC62 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000008952/associations",
+    "SEC62 \u2194 hepatocellular carcinoma. https://platform.opentargets.org/target/ENSG00000008952/associations",
+    "SEC62 \u2194 colorectal carcinoma. https://platform.opentargets.org/target/ENSG00000008952/associations",
+    "SEC62 \u2194 head and neck squamous cell carcinoma. https://platform.opentargets.org/target/ENSG00000008952/associations",
+    "SEC62 \u2014 SEC62 preprotein translocation factor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "APP \u2014 amyloid beta precursor protein (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CTNNB1 \u2014 catenin beta 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CXCR4 \u2014 C-X-C motif chemokine receptor 4 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HLA-A \u2014 major histocompatibility complex, class I, A (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Total Flavonoids of Rhizoma Drynariae Promotes Differentiation of Osteoblasts and Growth of Bone Graft in Induced Membrane Partly by Activating Wnt/\u03b2-Catenin Signaling Pathway (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8188237/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9711,
+    "completion_tokens": 316,
+    "total_tokens": 10027,
+    "estimated_cost_usd": 0.001646
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q99442",
+          "title": "SEC62 (Q99442)",
+          "url": "https://www.uniprot.org/uniprotkb/Q99442",
+          "text": "Protein: Translocation protein SEC62\nFunction: Mediates post-translational transport of precursor polypeptides across endoplasmic reticulum (ER). Proposed to act as a targeting receptor for small presecretory proteins containing short and apolar signal peptides. Targets and properly positions newly synthesized presecretory proteins into the SEC61 channel-forming translocon complex, triggering channel opening for polypeptide translocation to the ER lumen",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000008952::function",
+          "title": "SEC62 \u2014 SEC62",
+          "url": "https://platform.opentargets.org/target/ENSG00000008952",
+          "text": "Function: Mediates post-translational transport of precursor polypeptides across endoplasmic reticulum (ER). Proposed to act as a targeting receptor for small presecretory proteins containing short and apolar signal peptides. Targets and properly positions newly synthesized presecretory proteins into the SEC61 channel-forming translocon complex, triggering channel opening for polypeptide translocation to the ER lumen.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000008952::EFO_0005772",
+          "title": "SEC62 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000008952/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.542",
+          "cos_sim_score": 0.5420299213234134,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000008952::EFO_0000182",
+          "title": "SEC62 \u2194 hepatocellular carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000008952/associations",
+          "text": "Disease: hepatocellular carcinoma\nDescription: A malignant tumor that arises from hepatocytes. Hepatocellular carcinoma is relatively rare in the United States but very common in all African countries south of the Sahara and in Southeast Asia. Most cases are seen in patients over the age of 50 years, but this tumor can also occur in younger individuals and even in children. Hepatocellular carcinoma is more common in males than females and is associated with hepatitis B, hepatitis C, chronic alcohol abuse and cirrhosis. Serum elevation of alpha-fetoprotein occurs in a large percentage of patients with hepatocellular carcinoma. Grossly, hepatocellular carcinoma may present as a single mass, as multiple nodules, or as diffuse liver involvement. Microscopically, there is a wide range of differentiation from tumor to tumor (well differentiated to poorly differentiated tumors). Hepatocellular carcinomas quickly metastasize to regional lymph nodes and lung. The overall median survival of untreated liver cell carcinoma is about 4 months. The most effective treatment of hepatocellular carcinoma is complete resection of the tumor. Lately, an increasing number of tumors have been treated with liver transplantation.\nAssociation score: 0.095",
+          "cos_sim_score": 0.09503651175761368,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000008952::EFO_1001951",
+          "title": "SEC62 \u2194 colorectal carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000008952/associations",
+          "text": "Disease: colorectal carcinoma\nDescription: A malignant epithelial neoplasm that arises from the colon or rectum and invades through the muscularis mucosa into the submucosa. The vast majority are adenocarcinomas.\nAssociation score: 0.094",
+          "cos_sim_score": 0.09353754099365327,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000008952::EFO_0000181",
+          "title": "SEC62 \u2194 head and neck squamous cell carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000008952/associations",
+          "text": "Disease: head and neck squamous cell carcinoma\nDescription: A squamous cell carcinoma that arises from any of the following anatomic sites: lip and oral cavity, nasal cavity, paranasal sinuses, pharynx, larynx, and salivary glands.\nAssociation score: 0.090",
+          "cos_sim_score": 0.09041007413445472,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "SEC62 \u2014 SEC62 preprotein translocation factor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SEC62\nGene name: SEC62 preprotein translocation factor\nAliases / synonyms: Dtrp1, HTP1, TLOC1, TP-1\nOrganism: Homo sapiens\nGene summary: The Sec61 complex is the central component of the protein translocation apparatus of the endoplasmic reticulum (ER) membrane. The protein encoded by this gene and SEC63 protein are found to be associated with ribosome-free SEC61 complex. It is speculated that Sec61-Sec62-Sec63 may perform post-translational protein translocation into the ER. The Sec61-Sec62-Sec63 complex might also perform the backward transport of ER proteins that are subject to the ubiquitin-proteasome-dependent degradation pathway. The encoded protein is an integral membrane protein located in the rough ER. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SEC62",
+          "aliases": "Dtrp1, HTP1, TLOC1, TP-1",
+          "gene_description": "SEC62 preprotein translocation factor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "APP \u2014 amyloid beta precursor protein",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: APP\nGene name: amyloid beta precursor protein\nAliases / synonyms: AAA, ABETA, ABPP, AD1, APPI, CTFgamma, CVAP, PN-II, PN2, alpha-sAPP, preA4\nOrganism: Homo sapiens\nGene summary: This gene encodes a cell surface receptor and transmembrane precursor protein that is cleaved by secretases to form a number of peptides. Some of these peptides are secreted and can bind to the acetyltransferase complex APBB1/TIP60 to promote transcriptional activation, while others form the protein basis of the amyloid plaques found in the brains of patients with Alzheimer disease. In addition, two of the peptides are antimicrobial peptides, having been shown to have bacteriocidal and antifungal activities. Mutations in this gene have been implicated in autosomal dominant Alzheimer disease and cerebroarterial amyloidosis (cerebral amyloid angiopathy). Multiple transcript variants encoding several different isoforms have been found for this gene. [provided by RefSeq, Aug 2014]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "APP",
+          "aliases": "AAA, ABETA, ABPP, AD1, APPI, CTFgamma, CVAP, PN-II, PN2, alpha-sAPP, preA4",
+          "gene_description": "amyloid beta precursor protein"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CTNNB1 \u2014 catenin beta 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CTNNB1\nGene name: catenin beta 1\nAliases / synonyms: CTNNB, EVR7, MRD19, NEDSDV, armadillo\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is part of a complex of proteins that constitute adherens junctions (AJs). AJs are necessary for the creation and maintenance of epithelial cell layers by regulating cell growth and adhesion between cells. The encoded protein also anchors the actin cytoskeleton and may be responsible for transmitting the contact inhibition signal that causes cells to stop dividing once the epithelial sheet is complete. Finally, this protein binds to the product of the APC gene, which is mutated in adenomatous polyposis of the colon. Mutations in this gene are a cause of colorectal cancer (CRC), pilomatrixoma (PTR), medulloblastoma (MDB), and ovarian cancer. Alternative splicing results in multiple transcript variants. [provided by RefSeq, Aug 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CTNNB1",
+          "aliases": "CTNNB, EVR7, MRD19, NEDSDV, armadillo",
+          "gene_description": "catenin beta 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CXCR4 \u2014 C-X-C motif chemokine receptor 4",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CXCR4\nGene name: C-X-C motif chemokine receptor 4\nAliases / synonyms: CD184, D2S201E, FB22, HM89, HSY3RR, LAP-3, LCR1, LESTR, NPY3R, NPYR, NPYRL, NPYY3R, WHIM, WHIMS, WHIMS1\nOrganism: Homo sapiens\nGene summary: This gene encodes a CXC chemokine receptor specific for stromal cell-derived factor-1. The protein has 7 transmembrane regions and is located on the cell surface. It acts with the CD4 protein to support HIV entry into cells and is also highly expressed in breast cancer cells. Mutations in this gene have been associated with WHIM (warts, hypogammaglobulinemia, infections, and myelokathexis) syndrome. Alternate transcriptional splice variants, encoding different isoforms, have been characterized. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CXCR4",
+          "aliases": "CD184, D2S201E, FB22, HM89, HSY3RR, LAP-3, LCR1, LESTR, NPY3R, NPYR, NPYRL, NPYY3R, WHIM, WHIMS, WHIMS1",
+          "gene_description": "C-X-C motif chemokine receptor 4"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "HLA-A \u2014 major histocompatibility complex, class I, A",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HLA-A\nGene name: major histocompatibility complex, class I, A\nAliases / synonyms: HLAA\nOrganism: Homo sapiens\nGene summary: HLA-A belongs to the HLA class I heavy chain paralogues. This class I molecule is a heterodimer consisting of a heavy chain and a light chain (beta-2 microglobulin). The heavy chain is anchored in the membrane. Class I molecules play a central role in the immune system by presenting peptides derived from the endoplasmic reticulum lumen so that they can be recognized by cytotoxic T cells. They are expressed in nearly all cells. The heavy chain is approximately 45 kDa and its gene contains 8 exons. Exon 1 encodes the leader peptide, exons 2 and 3 encode the alpha1 and alpha2 domains, which both bind the peptide, exon 4 encodes the alpha3 domain, exon 5 encodes the transmembrane region, and exons 6 and 7 encode the cytoplasmic tail. Polymorphisms within exon 2 and exon 3 are responsible for t...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HLA-A",
+          "aliases": "HLAA",
+          "gene_description": "major histocompatibility complex, class I, A"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::8188237",
+          "title": "Total Flavonoids of Rhizoma Drynariae Promotes Differentiation of Osteoblasts and Growth of Bone Graft in Induced Membrane Partly by Activating Wnt/\u03b2-Catenin Signaling Pathway",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8188237/",
+          "text": "Studies have shown that bone formation is related to the activation of osteogenesis-related signaling pathways in BMSCs and osteoblasts, including Wnt/\u03b2-catenin signaling pathway, MAPK signaling pathway, Smad signaling pathway and so on (Heo et al., 2018). Among these signaling pathways, the most important pathway is Wnt/\u03b2-catenin signaling pathway (Huang et al., 2014). With the activation of Wnt/\u03b2-catenin signaling pathway on osteoblasts, osteoblasts enter the mitotic phase. At this stage, the differentiation and proliferation of osteoblasts is accelerated, the synthesis of ALP is increased, and calcification is initiated, thus promoting bone formation. The content of ALP in cells represents the degree and state of cell differentiation and is an early specific marker of extracellular matrix maturation (Nguyen et al., 2003). The local use of \u03b2-catenin enhancer can promote the proliferation and differentiation of osteoblasts, and then promotes new bone formation (Liu et al., 2010). In a experiment of transgenic mice, it was found that the expression level of \u03b2-catenin was directly related to bone formation, and the loss of \u03b2-catenin expression directly led to the decrease of osteoblast differentiation and the disturbance of bone formation (Huang et al., 2014). In the Wnt/\u03b2-catenin signaling pathway, Dkk1 is one of the vital antagonists, which can specifically inhibit the classical Wnt signaling pathway (Kawano and Kypta, 2003). In vitro experiments have confirmed that TFRD can induce the proliferation and differentiation of BMSCs and osteoblasts and inhibit the early apoptosis of osteoblasts (Zhang et al., 2009; Guo et al., 2012). In order to further confirm the specific mechanism of TFRD on osteoblasts, we cultured osteoblasts in vitro. The results suggested that TFRD could promote the proliferation and ALP activity of osteoblasts in a dose-dependent manner. After the intervention of the best dose of TFRD (100\u00a0ug/ml), the proliferation rate, the activity of ALP and the number of mineralized nodules of osteoblasts in the TFRD group were significantly higher than those in the control group, indicating that TFRD could significantly promote the proliferation and mineralization of osteoblasts. However, this promoting effect of TFRD can be specifically blocked by Dkk1, implicating that the reason that TFRD promotes osteoblasts\u2019 proliferation and mineralization should be related to the up-regulation of Wnt/\u03b2-catenin signaling pathway. In addition, the osteoblasts\u2019 increment rate and the expression of pathway protein in the TFRD + Dkk1 group were still higher than those in the Dkk1 group, suggesting that TFRD could reverse the inhibitory effect of Dkk1 on Wnt/\u03b2-catenin signaling pathway to some extent.\nMoreover, we also explored expression of osteogenic-related proteins, including COL1A1, BMP-2 and OPN, induced by TFRD. COL1A1 is responsible for the synthesis of type 1 collagen, thus ensuring that bones and cartilage are resistant to tension, shear and compression (Palomo et al., 2017). Abnormal collagen production can lead to bone-related diseases, such as Paget disease and osteoporosis (Li et al., 2019). BMP-2 is highly involved in inducing mesenchymal cells to differentiate into osteoblasts and promoting osteoblasts to produce bone matrix (Susperregui et al., 2008). OPN can stimulate osteoblasts\u2019 adhesion, proliferation and calcification, and mediate the changes of bone metabolism caused by mechanical stress (Chatakun et al., 2014). Our experimental results in vitro and in vivo presented that the expression of these proteins in TFRD group was increased significantly with the increase of TFRD dose. After the intervention of Dkk1, the expression of three proteins decreased, which further confirmed that TFRD promoted the expression of osteogenic-related proteins on osteoblasts by activating Wnt/\u03b2-catenin signaling pathway.",
+          "cos_sim_score": 0.4240078926086426,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8188237",
+          "title": "Total Flavonoids of Rhizoma Drynariae Promotes Differentiation of Osteoblasts and Growth of Bone Graft in Induced Membrane Partly by Activating Wnt/\u03b2-Catenin Signaling Pathway",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8188237/",
+          "text": "According to the results of HE and Masson trichromatic staining of bone tissues 12\u00a0weeks after bone graft in the femur of rats, the cartilage and osteogenic area could be clearly seen in four groups, which showed a typical process of endochondral ossification. Among them, the osteogenic area in H-TFRD and M-TFRD groups were larger than that in L-TFRD and control groups, and the cortical bone was more fully molded. The L-TFRD and control groups were still dominated by cartilage at this stage. The results suggested that the TFRD could promote the process of intrachondral bone formation in the induced membrane, and the formation of bone at H-TFRD and M-TFRD groups was faster and the effect was better (Figure 1F).\nTFRD Promotes Expression of Wnt/\u03b2-Catenin and Osteogenesis-Related Proteins in Bone Graft\nWnt/\u03b2-catenin signaling pathway plays an crucial role in promoting osteoblasts\u2019 differentiation and bone shape (Krishnan, 2006; Luyten et al., 2009; Milat and Ng, 2009). We found that TFRD could significantly promotes the expression of \u03b2-catenin and c-myc in bone tissues in a dose-dependent manner (Figure 2). Furthermore, there are many proteins related to bone formation in the process of osteoblast differentiation, such as bone morphogenetic protein 2 (BMP-2), collagen type I alpha 1 (COL1A1) and osteopontin (OPN). According to results of Western blot of bone tissues, the average protein level of BMP-2, COL1A1 and OPN in the H-TFRD and M-TFRD groups was higher than that in the L-TFRD group and control groups (p < 0.001 or p < 0.01) (Figure 2). The result of immunohistochemical staining also showed that the positive expression level of BMP-2, COL1A1 and OPN in the H-TFRD and M-TFRD groups were also significantly higher than those in the L-TFRD group and control groups (Figure 2G),which was consistent with the result of Western Blot. Therefore, we speculated that TFRD may promote osteoblasts\u2019 differentiation and expression of osteogenesis-related proteins partly by activating Wnt/\u03b2-catenin signaling pathway, then promote bone healing in induced membrane.\nFIGURE 2\nTFRD promotes expression of Wnt/\u03b2-catenin and osteogenesis-related proteins in the bone graft. (A) is the Western Blot band of \u03b2-catenin, c-myc, BMP-2, COL1A1 and OPN respectively. (B\u2013F) is the gray value of \u03b2-catenin, c-myc, BMP-2, COL1A1 and OPN. Each value was presented as the mean \u00b1 SD. ***\np < 0.001, **\np < 0.01, *\np < 0.05 vs. the control group; ###\np < 0.001, ##\np < 0.01, #\np < 0.05 vs. the L-TFRD group. (G) Immunohistostaining was performed to evaluate the protein level of BMP-2, COL1A1 and OPN in bone graft area (magnification, \u00d7 200). The intensity and area of three osteogenesis-related proteins in the H-TFRD and M-TFRD groups were higher than those in the L-TFRD and control groups.\nTFRD Increases the Number of Osteoblasts and the Activity of ALP in a Dose-dependent Manner\nIn order to determine the effect of the concentration of TFRD on the proliferation of osteoblasts, we used different concentrations of TFRD to culture osteoblasts in vitro. The in vitro results confirmed that the proliferation rate and activity of ALP from osteoblasts were significantly enhanced in a dose-dependent manner after TFRD treatment, and the proliferative rate and activity of ALP were the highest when the dose of TFRD was 100\u00a0\u03bcg/ml (Figures 3A,B). Thus, the optimal concentration of TFRD was 100\u00a0\u03bcg/ml. The follow-up experiments were carried out with the culture medium containing TFRD of 100\u00a0\u03bcg/ml.\nFIGURE 3",
+          "cos_sim_score": 0.3943719267845154,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8188237",
+          "title": "Total Flavonoids of Rhizoma Drynariae Promotes Differentiation of Osteoblasts and Growth of Bone Graft in Induced Membrane Partly by Activating Wnt/\u03b2-Catenin Signaling Pathway",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8188237/",
+          "text": "TABLE 1\nPrime sequences for RT-PCR.\nStatistical Analysis\nAll the data were analyzed by Stata 12.0 software, and the metrological data such as \u03b2-catenin, TCF and LEF protein content were expressed as means \u00b1 standard deviation (SD). After satisfying the normal distribution, the mean among the four groups were compared by one-way ANOVA, p < 0.05 was considered statistically significant.\nResults\nTFRD Accelerates the Growing Rate of Bone Graft\nAfter 12\u00a0weeks of bone graft, new bone could be seen in the femoral bone defect area of different doses of TFRD. In the H-TFRD and M-TFRD groups, the continuous callus filled with defects, the volume of callus was larger, and the cortical bone was basically molded. In the L-TFRD and control groups, the volume of callus in the area of bone defect was small, only partially passed through the area of bone defect, and the cortical bone had not been completely molded. The above results showed that TFRD could promote the growth and mineralization of bone graft in the induced membrane, especially in the H-TFRD and M-TFRD groups (Figure 1C).\nTFRD Enhances Mineralization of Bone Graft\nThe parameters of Micro-CT showed that the Bone Volume Fraction (BV/TV), Trabecular Number (Tb.N), Trabecular Thickness (Tb.Th), Connectivity Density (Conn.D.) in the H-TFRD and M-TFRD groups were significantly higher than those in the L-TFRD and control groups (p < 0.05). The Bone Surface Fraction (BS/BV), Structural Model Index (SMI), Trabecular Separation/Spacing (Tb.Sp) were smaller than those in L-TFRD and control groups, and the difference was statistically significant (p < 0.05). The above result suggested that TFRD could promote the formation of bone trabeculae of the right femur of rats 12\u00a0weeks after bone grafting (Table 2). Images of cross-sectional scan and three-dimensional reconstruction of micro-CT indicated that H-TFRD and M-TFRD groups had more bone mass and better effects of mineralization, and bone defects in L-TFRD and control groups had not been completely healed (Figures 1D,E).\nTABLE 2\nComparison of the parameters of bone structure in the area of bone graft in each group. Each value was presented as the mean \u00b1 SD. *p < 0.05 Vs. the control group; #\np < 0.05 Vs. the L-TFRD.\nHistological and Structural Characteristics of Bone Graft\nAccording to the results of HE and Masson trichromatic staining of bone tissues 12\u00a0weeks after bone graft in the femur of rats, the cartilage and osteogenic area could be clearly seen in four groups, which showed a typical process of endochondral ossification. Among them, the osteogenic area in H-TFRD and M-TFRD groups were larger than that in L-TFRD and control groups, and the cortical bone was more fully molded. The L-TFRD and control groups were still dominated by cartilage at this stage. The results suggested that the TFRD could promote the process of intrachondral bone formation in the induced membrane, and the formation of bone at H-TFRD and M-TFRD groups was faster and the effect was better (Figure 1F).\nTFRD Promotes Expression of Wnt/\u03b2-Catenin and Osteogenesis-Related Proteins in Bone Graft",
+          "cos_sim_score": 0.35471785068511963,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8188237",
+          "title": "Total Flavonoids of Rhizoma Drynariae Promotes Differentiation of Osteoblasts and Growth of Bone Graft in Induced Membrane Partly by Activating Wnt/\u03b2-Catenin Signaling Pathway",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8188237/",
+          "text": "TFRD Promotes the Maturation of Osteoblasts\nThe formation of mineralized nodules is one of the important signs in the process of osteoblasts\u2019 maturation. According to the results of ARS staining of osteoblasts, deep red mineralized nodules were observed in all groups of osteoblasts after 21 days of cell culture, and there were significant differences in the number of mineralized nodules of different groups. Among them, the number of mineralized nodules in the TFRD group was the most, followed by the control and TFRD + Dkk1 group, and the number of mineralized nodules in the Dkk1 group was the least (Figures 3F,G). The results showed that TFRD could promote the maturation of osteoblasts by activating Wnt/\u03b2-catenin signaling pathway.\nTFRD Upregulates Wnt/\u03b2-catenin Signaling Pathway on Osteoblasts\nAccording to the results of Western blot, there were significant differences in the expression of \u03b2-catenin, TCF, LEF, cyclin D, c-myc and Runx2 of different groups after 6\u00a0days of cells culture. The average expression of signaling pathway-related proteins in the TFRD group was higher than that in the control and TFRD + Dkk1 group, indicating that TFRD could promote the activation of Wnt/\u03b2-catenin signaling pathway in osteoblasts, but the effect of up-regulation can be contained by Dkk1. At the same time, the control group was higher than the Dkk1 group (Figure 4), demonstrating that Dkk1 had a definite blocking effect on Wnt/\u03b2-catenin signaling pathway. In addition, RT-PCR results showed that there were significant differences in the relative mRNA expressions of \u03b2-catenin, TCF, LEF, cyclinD, c-myc and Runx2 among different groups. The relative expression of mRNA related to Wnt/\u03b2-catenin signaling pathway on osteoblasts was generally consistent with the results of Western blot (Figure 5).\nFIGURE 4\nEffect of TFRD on proteins related to Wnt/\u03b2-catenin signaling pathway in osteoblasts. (A) The relative protein expression levels of \u03b2-catenin, TCF, LEF, cyclinD, c-myc and Runx2 were detected by Western blot. (B\u2013G) Semi quantitative analysis of protein expression. N = 3/group. Each value was presented as the mean \u00b1 SD. ***p < 0.001, **p < 0.01, *p < 0.05 vs. the control group; ###\np < 0.001, #\np < 0.05 vs. the TFRD group.\nFIGURE 5\nEffect of TFRD on mRNA related to Wnt/\u03b2-catenin signaling pathway in osteoblasts. (A\u2013F) The relative mRNA levels of \u03b2-catenin, TCF, LEF, cyclinD, c-myc and Runx2 were detected by RT-PCR. N = 3/group. Each value was presented as the mean \u00b1 SD. ***p < 0.001, **p < 0.01,*p < 0.05 vs. the control group; ###\np < 0.001, ##\np < 0.01 vs. the TFRD group.\nTFRD Upregulates Wnt/\u03b2-Catenin Signaling Pathway during Different Periods\nIn order to dynamically observe the regulatory effect of TFRD on Wnt/\u03b2-catenin signaling pathway, the expression of \u03b2-catenin protein in different periods was detected by immunofluorescence. The \u03b2-catenin was observed in all groups after 3, 6, and 9 days of osteoblasts culture, and was positive in cell membrane, cytoplasm and nucleus, showing high-intensity green fluorescence. The expression region of \u03b2-catenin gradually increased with the extension of time. Generally speaking, the fluorescence intensity of \u03b2-catenin was more obvious on the 9th day, and was weaker on the 3rd day and 6th day. From the comparison among the groups, the most positive areas of fluorescence signal were found in the TFRD group, followed by the control group. The expression of \u03b2-catenin in TFRD + Dkk1 group and Dkk1 group was the least at different stages (Figures 6A\u2013C). These results suggested that TFRD could continuously upregulate Wnt/\u03b2-catenin signaling pathway.\nFIGURE 6",
+          "cos_sim_score": 0.3471347689628601,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::8188237",
+          "title": "Total Flavonoids of Rhizoma Drynariae Promotes Differentiation of Osteoblasts and Growth of Bone Graft in Induced Membrane Partly by Activating Wnt/\u03b2-Catenin Signaling Pathway",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8188237/",
+          "text": "Introduction\nCritical-sized defects (CSDs) refers to a bone defect that cannot be healed naturally or treated with a standard cancellous bone graft (Lasanianos et al., 2010). Generally, length of bone loss is more than 2 to 2.5 times the diameter of the affected bone (Wiese and Pape, 2010). It is usually caused by trauma, osteomyelitis and bone tumor resection. Most of the traditional treatments are Papineau bone grafting (Masquelet and B\u00e9gu\u00e9, 2010), vascularized free fibula graft (Osterman and Bora, 1984) and Ilizarov technique (Aronson et al., 1989). Induced membrane technique, also known as masquelet technique, is a new technique for the reconstruction of large bone defects (Masquelet et al., 2000), which mainly includes two steps. In the first step, the bone segments involved by inflammation are thoroughly removed and a fibrous membrane is induced around the bone defect by implanting a Polymethyl methacrylate (PMMA) spacer. In the second step, the induced membrane was opened after 6\u20138 weeks, the spacer was removed, and autogenous bone was implanted into the induced membrane. Because of its advantages of simple operation, easy fixation and a wide range of indications, it has been continuously concerned by scholars all over the world. Although the successful rate of induced membrane technique is high, it also has the problem of long healing time. Studies have shown that the postoperative bone healing time of induced membrane technique is from 3 to 94 months (Pelissier et al., 2004).\nBone formation is a series of complex physiological and pathological processes, including intramembranous ossification and endochondral ossification. Previous studies have shown that the bone formation function of osteoblasts and the bone resorption function of osteoclasts play a key role in the process of bone formation and remodeling (Raggatt and Partridge, 2010; Chen et al., 2018a). Osteoblasts originate from bone mesenchymal stem cells (BMSCs) and differentiate from BMSCs under the action of osteoblast differentiation factor. Osteoblasts are not only the main effector cells of mechanical stress in bone tissue, but also the main functional cells of bone formation responsible for the synthesis, secretion and mineralization of bone matrix. Its differentiation and proliferation mainly determines the bone mass. Therefore, the regulation of osteoblasts has become an vital target to promote bone formation.\nWnt/\u03b2-catenin signaling pathway is an important regulatory mechanism involved in osteoblasts\u2019 differentiation (Krishnan, 2006; Luyten et al., 2009; Milat and Ng, 2009), which is essential for bone development, bone mass maintenance and bone remodeling. When Wnt protein binds to specific frizzled transmembrane receptors and the Low-density lipoprotein receptor related protein (LRP, Lrp5/6) co-receptor on cell surface, \u03b2-catenin is released in the cytoplasm and no protein degradation occurs. The accumulated \u03b2-catenin is transferred to the nucleus, where it binds to T-cell factor 4 (TCF-4) or lymphoid enhancer factor 1 (LEF-1) to activate downstream target genes such as c-myc, cyclinD, Runx2 transcription (Canalis, 2013). CyclinD 1, \u03b2-catenin and c-myc are the main functional molecules in Wnt/\u03b2-catenin. Dickkopfs (Dkks) bind and sequester the Lrp5/6 and Krm1/2 membrane complex to inhibit Wnt activity (Monroe et al., 2012). Dkk1 is a secretory Wnt inhibitor with good specificity and is active in many tissues (Pinzone et al., 2009). Data from different animal models have confirmed that Dkk1 can inhibit Wnt signaling pathway and thus inhibit bone formation. Anti-Dkk-1 neutralizing antibodies against the epitopes necessary for LRP-5 and LRP-6 binding to Dkk-1 increased bone mass in normal mice (Glantschnig et al., 2020). The experimental model of multiple myeloma showed that anti-Dkk-1 antibody treatment reversed the inhibitory effect of Dkk-1 on osteoblasts\u2019 differentiation and bone formation, thus reducing bone loss (Fulciniti et al., 2009).",
+          "cos_sim_score": 0.34177273511886597,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

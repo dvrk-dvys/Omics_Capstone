@@ -1,0 +1,175 @@
+{
+  "rf_rank": 74,
+  "probe_id": "11739230_a_at",
+  "gene_symbol": "ARL4A",
+  "score": 0.19,
+  "rf_n_nodes": 1,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 2.3464,
+  "log_fc": -2.3464,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11739230_a_at",
+  "max_score": 0.19,
+  "mean_abs_fold_change": 2.3464,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:08:02",
+  "interpretation": "ARL4A (ADP-ribosylation factor-like protein 4A) is a small GTP-binding protein that plays a role in cellular signaling by cycling between active and inactive states. While there is no direct evidence linking ARL4A to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its involvement in cellular processes such as cytoskeletal organization and cell signaling could suggest a potential role in bone health and osteonecrosis mechanisms. The retrieved evidence primarily describes ARL4A's general biological functions and associations with other conditions, but lacks specific connections to SONFH. Therefore, the evidence is weak, leading to the inference that ARL4A may not be a clinically relevant biomarker for early detection of SONFH.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "ARL4A may be involved in cellular processes relevant to bone health, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "ARL4A (P40617). https://www.uniprot.org/uniprotkb/P40617",
+    "ARL4A \u2014 ARL4A. https://platform.opentargets.org/target/ENSG00000122644",
+    "ARL4A \u2194 hypertension. https://platform.opentargets.org/target/ENSG00000122644/associations",
+    "ARL4A \u2194 hair morphology. https://platform.opentargets.org/target/ENSG00000122644/associations",
+    "ARL4A \u2194 renal dialysis. https://platform.opentargets.org/target/ENSG00000122644/associations",
+    "ARL4A \u2194 Abruptio Placentae. https://platform.opentargets.org/target/ENSG00000122644/associations",
+    "ARL4A \u2014 ARF like GTPase 4A (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KRAS \u2014 KRAS proto-oncogene, GTPase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "RAC1 \u2014 Rac family small GTPase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CDC42 \u2014 cell division cycle 42 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KPNA2 \u2014 karyopherin subunit alpha 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4809,
+    "completion_tokens": 294,
+    "total_tokens": 5103,
+    "estimated_cost_usd": 0.000898
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P40617",
+          "title": "ARL4A (P40617)",
+          "url": "https://www.uniprot.org/uniprotkb/P40617",
+          "text": "Protein: ADP-ribosylation factor-like protein 4A\nFunction: Small GTP-binding protein which cycles between an inactive GDP-bound and an active GTP-bound form, and the rate of cycling is regulated by guanine nucleotide exchange factors (GEF) and GTPase-activating proteins (GAP). GTP-binding protein that does not act as an allosteric activator of the cholera toxin catalytic subunit. Recruits CYTH1, CYTH2, CYTH3 and CYTH4 to the plasma membrane in GDP-bound form",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000122644::function",
+          "title": "ARL4A \u2014 ARL4A",
+          "url": "https://platform.opentargets.org/target/ENSG00000122644",
+          "text": "Function: Small GTP-binding protein which cycles between an inactive GDP-bound and an active GTP-bound form, and the rate of cycling is regulated by guanine nucleotide exchange factors (GEF) and GTPase- activating proteins (GAP). GTP-binding protein that does not act as an allosteric activator of the cholera toxin catalytic subunit. Recruits CYTH1, CYTH2, CYTH3 and CYTH4 to the plasma membrane in GDP-bound form. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000122644::EFO_0000537",
+          "title": "ARL4A \u2194 hypertension",
+          "url": "https://platform.opentargets.org/target/ENSG00000122644/associations",
+          "text": "Disease: hypertension\nDescription: Persistently high systemic arterial blood pressure. Based on multiple readings (blood pressure determination), hypertension is currently defined as when systolic pressure is consistently greater than 140 mm Hg or when diastolic pressure is consistently 90 mm Hg or more.\nAssociation score: 0.249",
+          "cos_sim_score": 0.24852960933709362,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000122644::EFO_0005038",
+          "title": "ARL4A \u2194 hair morphology",
+          "url": "https://platform.opentargets.org/target/ENSG00000122644/associations",
+          "text": "Disease: hair morphology\nDescription: Any measurable or observable characteristic related to the shape, structure, color, or pattern of the fine, keratinized filamentous growths arising from the epidermis of mammals.\nAssociation score: 0.212",
+          "cos_sim_score": 0.21169984948705392,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000122644::EFO_0010690",
+          "title": "ARL4A \u2194 renal dialysis",
+          "url": "https://platform.opentargets.org/target/ENSG00000122644/associations",
+          "text": "Disease: renal dialysis\nDescription: Dialysis is a procedure whereby excess fluid and waste products are removed from the blood to artificially replace the function of the kidneys. There are two types of dialysis:\u00a0peritoneal dialysis which uses the peritoneal membrane as\u00a0the\u00a0filter, or hemodialysis which uses an artifical machine to filter the blood.\nAssociation score: 0.201",
+          "cos_sim_score": 0.20124794766421628,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000122644::EFO_1001754",
+          "title": "ARL4A \u2194 Abruptio Placentae",
+          "url": "https://platform.opentargets.org/target/ENSG00000122644/associations",
+          "text": "Disease: Abruptio Placentae\nDescription: Vaginal bleeding preceding the 20th week of gestation.\nAssociation score: 0.199",
+          "cos_sim_score": 0.19927889243533642,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "ARL4A \u2014 ARF like GTPase 4A",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ARL4A\nGene name: ARF like GTPase 4A\nAliases / synonyms: ARL4\nOrganism: Homo sapiens\nGene summary: ADP-ribosylation factor-like 4A is a member of the ADP-ribosylation factor family of GTP-binding proteins. ARL4A is similar to ARL4C and ARL4D and each has a nuclear localization signal and an unusually high guaninine nucleotide exchange rate. ARL4A is located in both the nuclear and extranuclear cell compartments. Multiple transcript variants encoding the same protein have been found for this gene. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ARL4A",
+          "aliases": "ARL4",
+          "gene_description": "ARF like GTPase 4A"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KRAS \u2014 KRAS proto-oncogene, GTPase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KRAS\nGene name: KRAS proto-oncogene, GTPase\nAliases / synonyms: 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2\nOrganism: Homo sapiens\nGene summary: This gene, a Kirsten ras oncogene homolog from the mammalian ras gene family, encodes a protein that is a member of the small GTPase superfamily. A single amino acid substitution is responsible for an activating mutation. The transforming protein that results is implicated in various malignancies, including lung adenocarcinoma, mucinous adenoma, ductal carcinoma of the pancreas and colorectal carcinoma. Alternative splicing leads to variants encoding two isoforms that differ in the C-terminal region. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KRAS",
+          "aliases": "'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2",
+          "gene_description": "KRAS proto-oncogene, GTPase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "RAC1 \u2014 Rac family small GTPase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RAC1\nGene name: Rac family small GTPase 1\nAliases / synonyms: MIG5, MRD48, Rac-1, TC-25, p21-Rac1\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a GTPase which belongs to the RAS superfamily of small GTP-binding proteins. Members of this superfamily appear to regulate a diverse array of cellular events, including the control of cell growth, cytoskeletal reorganization, and the activation of protein kinases. Two transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Mar 2009]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RAC1",
+          "aliases": "MIG5, MRD48, Rac-1, TC-25, p21-Rac1",
+          "gene_description": "Rac family small GTPase 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CDC42 \u2014 cell division cycle 42",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CDC42\nGene name: cell division cycle 42\nAliases / synonyms: CDC42Hs, G25K, TKS\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a small GTPase of the Rho-subfamily, which regulates signaling pathways that control diverse cellular functions including cell morphology, migration, endocytosis and cell cycle progression. This protein is highly similar to Saccharomyces cerevisiae Cdc 42, and is able to complement the yeast cdc42-1 mutant. The product of oncogene Dbl was reported to specifically catalyze the dissociation of GDP from this protein. This protein could regulate actin polymerization through its direct binding to Neural Wiskott-Aldrich syndrome protein (N-WASP), which subsequently activates Arp2/3 complex. Alternative splicing of this gene results in multiple transcript variants. Pseudogenes of this gene have been identified on chromosomes 3, 4, 5, 7, 8 and 20. [provided by R...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CDC42",
+          "aliases": "CDC42Hs, G25K, TKS",
+          "gene_description": "cell division cycle 42"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KPNA2 \u2014 karyopherin subunit alpha 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KPNA2\nGene name: karyopherin subunit alpha 2\nAliases / synonyms: IPOA1, PTAC58, QIP2, RCH1, SRP1-alpha, SRP1alpha\nOrganism: Homo sapiens\nGene summary: The import of proteins into the nucleus is a process that involves at least 2 steps. The first is an energy-independent docking of the protein to the nuclear envelope and the second is an energy-dependent translocation through the nuclear pore complex. Imported proteins require a nuclear localization sequence (NLS) which generally consists of a short region of basic amino acids or 2 such regions spaced about 10 amino acids apart. Proteins involved in the first step of nuclear import have been identified in different systems. These include the Xenopus protein importin and its yeast homolog, SRP1 (a suppressor of certain temperature-sensitive mutations of RNA polymerase I in Saccharomyces cerevisiae), which bind to the NLS. KPNA2 protein interacts with the NLSs of DNA helicase Q1 and SV40 T ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KPNA2",
+          "aliases": "IPOA1, PTAC58, QIP2, RCH1, SRP1-alpha, SRP1alpha",
+          "gene_description": "karyopherin subunit alpha 2"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

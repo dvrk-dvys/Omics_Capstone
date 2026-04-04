@@ -1,0 +1,268 @@
+{
+  "rf_rank": 8,
+  "probe_id": "11739338_at",
+  "gene_symbol": "FAM46C",
+  "score": 0.84,
+  "rf_n_nodes": 2,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 2.5064,
+  "log_fc": -2.5064,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 3,
+  "probe_ids": "11739338_at | 11739340_at | 11739339_s_at",
+  "max_score": 0.84,
+  "mean_abs_fold_change": 2.4691,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T01:42:40",
+  "interpretation": "FAM46C, also known as terminal nucleotidyltransferase 5C, plays a crucial role in mRNA polyadenylation, enhancing mRNA stability and gene expression. This gene is implicated in various biological processes, including the regulation of cell differentiation and immune responses. Although direct evidence linking FAM46C to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) is limited, its involvement in pathways related to lipid metabolism and immune cell activation suggests a potential role in the disease's progression. The retrieved evidence primarily indicates its association with multiple myeloma and diabetes, which are conditions that can influence bone health and metabolism. Therefore, while the evidence is not robustly direct, FAM46C may serve as a moderate biomarker candidate for SONFH, particularly in understanding the underlying mechanisms of steroid-induced bone damage.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "FAM46C may be involved in the biological processes relevant to Steroid-Induced Osteonecrosis of the Femoral Head due to its role in mRNA regulation and potential links to lipid metabolism.",
+  "citations": [
+    "TENT5C (Q5VWP2). https://www.uniprot.org/uniprotkb/Q5VWP2",
+    "FAM46C \u2014 TENT5C. https://platform.opentargets.org/target/ENSG00000183508",
+    "FAM46C \u2194 multiple myeloma. https://platform.opentargets.org/target/ENSG00000183508/associations",
+    "FAM46C \u2194 type 2 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000183508/associations",
+    "FAM46C \u2194 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000183508/associations",
+    "FAM46C \u2194 Thromboembolism. https://platform.opentargets.org/target/ENSG00000183508/associations",
+    "TENT5C \u2014 terminal nucleotidyltransferase 5C (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "SQSTM1 \u2014 sequestosome 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MIR10B \u2014 microRNA 10b (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "PLK4 \u2014 polo like kinase 4 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "FNDC3B \u2014 fibronectin type III domain containing 3B (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Predicting steroid-induced osteonecrosis of the femoral head: role of lipid metabolism biomarkers and radiomics in young and middle-aged adults (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11558989/",
+    "The non-canonical RNA polyadenylation polymerase FAM46C is essential for fastening sperm head and flagellum in mice [GSE124233] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE124233",
+    "The non-canonical poly(A) polymerase FAM46C promotes erythropoiesis [GSE245697] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE245697",
+    "FAM46C controls antibody production by the polyadenylation of Ig mRNAs and inhibits cell migration in multiple myeloma [GSE114984] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE114984",
+    "The non-canonical poly(A) polymerase FAM46C promotes erythropoiesis [RIP] [GSE245696] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE245696",
+    "The non-canonical poly(A) polymerase FAM46C promotes erythropoiesis [Capture-C] [GSE245693] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE245693"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9360,
+    "completion_tokens": 326,
+    "total_tokens": 9686,
+    "estimated_cost_usd": 0.0016
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q5VWP2",
+          "title": "TENT5C (Q5VWP2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q5VWP2",
+          "text": "Protein: Terminal nucleotidyltransferase 5C\nFunction: Catalyzes the transfer of one adenosine molecule from an ATP to an mRNA poly(A) tail bearing a 3'-OH terminal group and enhances mRNA stability and gene expression (PubMed:28931820, PubMed:32009146, PubMed:34048638). Can also elongate RNA oligos ending with uridine molecule, provided that the sequence is adenosine-rich (PubMed:34048638). Mainly targets mRNAs encoding endoplasmic reticulum-targeted protein (PubMed:28931820) (Microbial infection) Seems to enhance replication of some viruses, including yellow fever virus, in response to type I interferon",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000183508::function",
+          "title": "FAM46C \u2014 TENT5C",
+          "url": "https://platform.opentargets.org/target/ENSG00000183508",
+          "text": "Function: Catalyzes the transfer of one adenosine molecule from an ATP to an mRNA poly(A) tail bearing a 3'-OH terminal group and enhances mRNA stability and gene expression (PubMed:28931820, PubMed:32009146, PubMed:34048638). Can also elongate RNA oligos ending with uridine molecule, provided that the sequence is adenosine-rich (PubMed:34048638). Mainly targets mRNAs encoding endoplasmic reticulum- targeted protein (PubMed:28931820).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000183508::EFO_0001378",
+          "title": "FAM46C \u2194 multiple myeloma",
+          "url": "https://platform.opentargets.org/target/ENSG00000183508/associations",
+          "text": "Disease: multiple myeloma\nDescription: A bone marrow-based plasma cell neoplasm characterized by a serum monoclonal protein and skeletal destruction with osteolytic lesions, pathological fractures, bone pain, hypercalcemia, and anemia. Clinical variants include non-secretory myeloma, smoldering myeloma, indolent myeloma, and plasma cell leukemia. (WHO, 2001)\nAssociation score: 0.538",
+          "cos_sim_score": 0.5382095589220899,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000183508::MONDO_0005148",
+          "title": "FAM46C \u2194 type 2 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000183508/associations",
+          "text": "Disease: type 2 diabetes mellitus\nDescription: A type of diabetes mellitus that is characterized by insulin resistance or desensitization and increased blood glucose levels. This is a chronic disease that can develop gradually over the life of a patient and can be linked to both environmental factors and heredity.\nAssociation score: 0.515",
+          "cos_sim_score": 0.5146248614059772,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000183508::EFO_0000400",
+          "title": "FAM46C \u2194 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000183508/associations",
+          "text": "Disease: diabetes mellitus\nDescription: A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization.\nAssociation score: 0.484",
+          "cos_sim_score": 0.4844536273570946,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000183508::HP_0001907",
+          "title": "FAM46C \u2194 Thromboembolism",
+          "url": "https://platform.opentargets.org/target/ENSG00000183508/associations",
+          "text": "Disease: Thromboembolism\nDescription: The formation of a blood clot inside a blood vessel that subsequently travels through the blood stream from the site where it formed to another location in the body, generally leading to vascular occlusion at the distant site.\nAssociation score: 0.420",
+          "cos_sim_score": 0.42013208083354797,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "TENT5C \u2014 terminal nucleotidyltransferase 5C",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TENT5C\nGene name: terminal nucleotidyltransferase 5C\nAliases / synonyms: FAM46C\nOrganism: Homo sapiens\nGene summary: Enables poly(A) RNA polymerase activity. Involved in mRNA stabilization and negative regulation of cell differentiation. Located in centrosome; cytoplasm; and nucleoplasm. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TENT5C",
+          "aliases": "FAM46C",
+          "gene_description": "terminal nucleotidyltransferase 5C"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "SQSTM1 \u2014 sequestosome 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SQSTM1\nGene name: sequestosome 1\nAliases / synonyms: A170, DMRV, EBIAP, FTDALS3, NADGP, OSIL, PDB3, ZIP3, p60, p62, p62B\nOrganism: Homo sapiens\nGene summary: This gene encodes a multifunctional protein that binds ubiquitin and regulates activation of the nuclear factor kappa-B (NF-kB) signaling pathway. The protein functions as a scaffolding/adaptor protein in concert with TNF receptor-associated factor 6 to mediate activation of NF-kB in response to upstream signals. Alternatively spliced transcript variants encoding either the same or different isoforms have been identified for this gene. Mutations in this gene result in sporadic and familial Paget disease of bone. [provided by RefSeq, Mar 2009]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SQSTM1",
+          "aliases": "A170, DMRV, EBIAP, FTDALS3, NADGP, OSIL, PDB3, ZIP3, p60, p62, p62B",
+          "gene_description": "sequestosome 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MIR10B \u2014 microRNA 10b",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MIR10B\nGene name: microRNA 10b\nAliases / synonyms: MIRN10B, hsa-mir-10b, miRNA10B, mir-10b\nOrganism: Homo sapiens\nGene summary: microRNAs (miRNAs) are short (20-24 nt) non-coding RNAs that are involved in post-transcriptional regulation of gene expression in multicellular organisms by affecting both the stability and translation of mRNAs. miRNAs are transcribed by RNA polymerase II as part of capped and polyadenylated primary transcripts (pri-miRNAs) that can be either protein-coding or non-coding. The primary transcript is cleaved by the Drosha ribonuclease III enzyme to produce an approximately 70-nt stem-loop precursor miRNA (pre-miRNA), which is further cleaved by the cytoplasmic Dicer ribonuclease to generate the mature miRNA and antisense miRNA star (miRNA*) products. The mature miRNA is incorporated into a RNA-induced silencing complex (RISC), which recognizes target mRNAs through imperfect base pairing with...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MIR10B",
+          "aliases": "MIRN10B, hsa-mir-10b, miRNA10B, mir-10b",
+          "gene_description": "microRNA 10b"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "PLK4 \u2014 polo like kinase 4",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PLK4\nGene name: polo like kinase 4\nAliases / synonyms: MCCRP2, SAK, STK18\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the polo family of serine/threonine protein kinases. The protein localizes to centrioles, complex microtubule-based structures found in centrosomes, and regulates centriole duplication during the cell cycle. Three alternatively spliced transcript variants that encode different protein isoforms have been found for this gene. [provided by RefSeq, Jun 2010]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PLK4",
+          "aliases": "MCCRP2, SAK, STK18",
+          "gene_description": "polo like kinase 4"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "FNDC3B \u2014 fibronectin type III domain containing 3B",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: FNDC3B\nGene name: fibronectin type III domain containing 3B\nAliases / synonyms: FAD104, PRO4979, YVTM2421\nOrganism: Homo sapiens\nGene summary: Enables RNA binding activity. Predicted to act upstream of or within several processes, including negative regulation of osteoblast differentiation; substrate adhesion-dependent cell spreading; and type II pneumocyte differentiation. Predicted to be located in endoplasmic reticulum. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "FNDC3B",
+          "aliases": "FAD104, PRO4979, YVTM2421",
+          "gene_description": "fibronectin type III domain containing 3B"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::11558989",
+          "title": "Predicting steroid-induced osteonecrosis of the femoral head: role of lipid metabolism biomarkers and radiomics in young and middle-aged adults",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11558989/",
+          "text": "Background\nSteroid-induced osteonecrosis of the femoral head (SONFH) is a progressive degenerative ailment of the hip [1\u20133]. It manifests through femoral head collapse, acetabular degeneration, and secondary arthritis [4, 5]. Nontraumatic necrosis of the femoral head is often caused by alcohol and steroids, but its cause remains uncertain in some patients. The clinical manifestation of this condition emerges as hip discomfort accompanied by movement restrictions [6, 7]. In recent decades, the annual number of confirmed new cases has ranged from 150,000 to 200,000 in China and from 20,000 to 30,000 in the United States [8]. Frequently, in individuals under 50 years of age, necrosis of the femoral head is more common in males than females [9, 10]. Typically, initiated bilaterally, this disorder manifests as extensive necrosis, swift progression, and marked disability [11], greatly impairing patients\u2019 quality of life. Diagnostic techniques include X-rays, computed tomography (CT), and magnetic resonance imaging (MRI). Successful treatment is determined by precise staging [12]. Moreover, early prevention and diagnosis prove advantageous in preventing disease progression. Thus, early disease prediction emerges as paramount.\nImaging histology stands as an emerging domain within the medical realm. Its essence lies in the augmentation of medical imaging precision through quantitative assessment of data, accomplished via automated or semiautomated software [13]. In the realm of visualizing ailments, CT scanning plays a pivotal role. It aptly reveals lesion extent, spatial orientation, and recovery aspects. Furthermore, it discerns stages II and III, although its capacity for diagnosing stage I SONFH remains limited [14]. The integration of imaging histology with CT images is highly important for predicting necrotic femoral head afflictions in high-risk individuals. In the present study, the control cohort included patients with nontraumatic femoral head osteonecrosis. The experimental assemblage comprised patients marked by high-risk attributes (as delineated in Table\u00a01) and diagnosed with nontraumatic femoral head osteonecrosis two years later. Extracted CT images were subjected to imaging histology analysis, paving the way for an osteonecrosis prediction model tailored to high-risk clusters. Effectively predicting the incidence of femoral head necrosis can reduce the need for femoral head surgery.",
+          "cos_sim_score": 0.7409194707870483,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11558989",
+          "title": "Predicting steroid-induced osteonecrosis of the femoral head: role of lipid metabolism biomarkers and radiomics in young and middle-aged adults",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11558989/",
+          "text": "Transcriptome analysis of steroid-induced osteonecrosis of the femoral head differential genes and differential gene enrichment pathway analysis revealed that steroid-induced osteonecrosis of the femoral head, the sphingolipid signaling pathway, the adipocytokine signaling pathway, and other pathways are directly related to lipid metabolism. In addition, these differential genes are significantly correlated with M2 macrophages and mast cell activation, and a review of the literature reveals that these three immune cell statuses affect the level of lipid metabolism [34, 35]. The above results further validate the results of imaging histology, suggesting that there is a strong correlation between the causative factors of steroid-induced osteonecrosis of the femoral head, including lipid metabolism, HDL, and TG, which provides theoretical evidence for the consistency of the results of CT imaging histology.\nA potential limitation of this study lies in the exclusive focus on imaging and clinical data without incorporating molecular-level biomarkers, such as genetic or proteomic indicators, which may provide deeper insights into the underlying mechanisms of SONFH. Incorporating these biomarkers in future studies could enhance the model\u2019s precision and reliability. Additionally, this study predominantly utilizes CT imaging for feature extraction, while alternative imaging modalities like MRI, which may reveal different characteristics of early-stage femoral head necrosis, were not included. Expanding the range of imaging techniques may provide a more comprehensive diagnostic and prognostic assessment of SONFH.\nHowever, there are certain constraints within this investigation. First, the study used a retrospective approach, recruiting a limited number of patients at a single center for analysis. Thus, it becomes imperative to validate these findings through subsequent endeavors encompassing multiple centers and a more extensive sample size, lending itself to a prospective design. Second, the absence of an appropriate algorithm for the automated demarcation of necrotic regions in the SONFH led to the adoption of an interactive technique for the manual segmentation of 3D images. This methodology not only demands a substantial allocation of resources but also exhibits a degree of instability. The potential integration of a deep learning network presents an avenue for increasing operational efficiency and mitigating human error. Finally, the scope of this study revolves around the construction of a predictive model for femoral head necrosis, albeit without delving significantly into prognosis-associated questions. The model clearly necessitates supplementation and refinement in subsequent phases, thereby optimizing its utility in facilitating clinical decision-making.\nConclusions\nIn summary, the utilization of CT imaging combined with clinical data in crafting a predictive model emerges as a potent, quantitatively visual, and efficacious approach to predicting femoral head necrosis. This approach holds considerable practical importance, offering a novel framework for devising treatment strategies moving forward.\nElectronic supplementary material\nBelow is the link to the electronic supplementary material.\nSupplementary Material 1\nSupplementary Material 1",
+          "cos_sim_score": 0.6124088168144226,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11558989",
+          "title": "Predicting steroid-induced osteonecrosis of the femoral head: role of lipid metabolism biomarkers and radiomics in young and middle-aged adults",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11558989/",
+          "text": "Methods\nPatients\nThe initial CT data of patients with steroid-induced osteonecrosis of the femoral head necrosis from January 2019 to December 2022 were collected in this retrospective study. A total of 288 ONFH patients from Center 5 were randomly divided into a training group and an internal validation group at a ratio of 3:1 to develop and preliminarily validate the model within the same data source. To further assess the model\u2019s generalizability and robustness, an external validation group of 42 ONFH patients from Center 11 was introduced. The inclusion of this independent dataset aimed to evaluate the model\u2019s performance across different populations, ensuring its reliability for broader clinical application.\nThe inclusion and grouping criteria were as follows: (1) patients who were diagnosed with nontraumatic femoral head necrosis at the initial diagnosis served as the control group and (2) patients with high-risk factors and no clinical symptoms at the time of initial diagnosis (Table\u00a01) but who were diagnosed with nontraumatic femoral head necrosis two years later comprised the test group. Notably, we compared the initial CT data of the two groups. The exclusion criteria were as follows: (1) patients with hip tuberculosis; (2) patients with hip disease due to infection; (3) patients with congenital hip dysplasia; (4) patients with hemophilic arthritis; (5) patients with large osteochondromatosis; and (6) patients aged\u2009<\u200918 years. The flowchart depicting patient inclusion is illustrated in Fig.\u00a01.\nFig. 1Patient cohort diagram and study methodology. SONFH, Steroid-induced osteonecrosis of the femoral head. The training cohort was used to construct the prediction model, and the validation cohort (the green box) was used to check the accuracy of the model\nFig. 1\nPatient cohort diagram and study methodology. SONFH, Steroid-induced osteonecrosis of the femoral head. The training cohort was used to construct the prediction model, and the validation cohort (the green box) was used to check the accuracy of the model\nData collection\nIn our study, all preoperative CT scans conformed to the guidelines specified in the Chinese clinical recommendations for the diagnosis and management of adult osteonecrosis of the femoral head [15]. Initially, two radiologists systematically gathered images for the primary assessment of femoral head necrosis using the principal imaging traits endorsed by Chen et al. [16] and Card\u00edn-Pereda A. et al. [17].\nWe subsequently meticulously extracted data from medical records to identify risk factors contributing to femoral head necrosis. The parameters examined included average age, sex distribution, triglyceride (TG) level, low-density lipoprotein (LDL) level, high-density lipoprotein (HDL) level, alkaline phosphatase (ALP) level, red blood cell count, hemoglobin level, albumin level, and creatinine level.\nUpon completion, the two coauthors of this investigation independently reviewed all potential patients against the aforementioned criteria. Any disagreements between the two coauthors were harmonized through consensus, with a third coauthor being consulted when necessary.\nSegmenting ROIs and extracting radiomic features\nBefore the segmentation of regions of interest (ROIs) was initiated, a unanimous consensus was achieved among the three collaborating authors regarding the assessment of identical visuals (inclusive of images depicting the target lesion). These regions of interest were subsequently delineated for each specific target lesion by two skilled radiologists, employing open-source software known as 3D Slicer V4.10.2 (accessible at https://www.slicer.org/), which is renowned for its proficient utilization in semiautomatic segmentation procedures. The scope of the designated ROI in this investigation encompassed the entirety of the femoral head section (depicted in Fig.\u00a02). Radiographic attributes were subsequently extracted from every distinct ROI via 3D slicer software, leveraging an enhanced add-on referred to as the \u201cPyRadiomics package\u201d (accessible at https://www.radiomics.io/PyRadiomics.html). This add-on additionally performed the automated extraction of 874 distinct radiographic features from each individual ROI.",
+          "cos_sim_score": 0.46995118260383606,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11558989",
+          "title": "Predicting steroid-induced osteonecrosis of the femoral head: role of lipid metabolism biomarkers and radiomics in young and middle-aged adults",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11558989/",
+          "text": "Fig. 6Functional analysis of differentially expressed genes associated with hormone-type femoral head necrosis. (A) Difference matrix diagram; (B) volcano map; (C) GO enrichment analysis; (D) KEGG enrichment analysis\nFig. 6\nFunctional analysis of differentially expressed genes associated with hormone-type femoral head necrosis. (A) Difference matrix diagram; (B) volcano map; (C) GO enrichment analysis; (D) KEGG enrichment analysis\nFig. 7Immunoanalysis of hormone-type femoral head necrosis in the control group. (A) Immunoinfiltration map; (B) Violin diagram. The red font represents significantly enriched pathways\nFig. 7\nImmunoanalysis of hormone-type femoral head necrosis in the control group. (A) Immunoinfiltration map; (B) Violin diagram. The red font represents significantly enriched pathways\nDiscussion\nSONFH is a prevalent and challenging condition within the field of orthopedics and is characterized by its progressive and incapacitating nature. Early and precise diagnosis of SONFH is highly important and is a prerequisite for optimizing joint-preserving measures [25]. Moreover, this diagnostic accuracy also has pivotal implications in terms of conserving medical resources and alleviating the burdens imposed on patients [16, 26]. Importantly, SONFH encompasses an array of pathological transformations stemming from the impediment of the blood supply to the femoral head. This multifaceted etiology underscores the parallelism between SONFH variants induced by diverse factors. The pathological perturbations observed in SONFH patients, stemming from various causal factors, mirror those observed in conventional SONFH patients. The International Society of Bone Circulation (ARCO) and the American Academy of Orthopedic Surgeons (AAOS) jointly delineate SONFH as a condition marked by an interruption or compromise in the femoral head\u2019s vascular supply [27, 28]. This, in turn, precipitates the demise of bone marrow constituents and bone cells, subsequently ushering in structural alterations within the femoral head. This cascade of events culminates, in part, in the collapse of the femoral head and the ensuing impairment of joint functionality. The advent of magnetic resonance imaging (MRI) has facilitated the early detection of SONFH. The availability of MRI has revolutionized the early detection of SONFH, yet the diagnostic landscape remains beset by the challenge of distinguishing SONFH from other hip disorders with similar features. This proclivity toward diagnostic broadening and misattribution primarily stems from a lack of comprehensive familiarity with the unique attributes and diagnostic benchmarks of the SONFH. This finding underscores the pivotal clinical significance of prognosticating femoral head necrosis at an early time point.\nIn this study, a comprehensive model of SONFH was developed and validated. The model combines three distinct clinical parameters\u2014age, triglyceride levels (TG) level, and high-density lipoprotein (HDL) level\u2014alongside Rad-scores. This composite model was developed to predict the probability of femoral head necrosis. The analysis drew upon retrospective data collected from a cohort of 330 patients across multiple medical centers. Our approach involves the incorporation of markers for SONFH and pre-SONFH. These markers were devised by assimilating diverse radiologic attributes during the course of the study. Their integration played a pivotal role in our SONFH model\u2019s application, enabling more accurate disease likelihood predictions. To initiate the modeling process, we meticulously selected two distinct patient groups. The first group included individuals who were initially diagnosed with necrosis of the femoral head. This group served as the control cohort. In contrast, the experimental group consisted of patients who presented high-risk factors yet remained symptom-free during the initial diagnosis. The subsequent diagnosis of osteonecrosis of the femoral head occurred two years later in this experimental subset. By juxtaposing the initial CT data from both groups, we synthesized a predictive model. Model construction involved scrutinizing the risk factors that strongly correlated with disease onset.",
+          "cos_sim_score": 0.41001152992248535,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11558989",
+          "title": "Predicting steroid-induced osteonecrosis of the femoral head: role of lipid metabolism biomarkers and radiomics in young and middle-aged adults",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11558989/",
+          "text": "Gene ontology (GO) and KEGG pathway enrichment\nIn this investigation, we utilized the GO (Gene Ontology) repository to classify the roles of genes into three primary groups: biological processes (BP), cellular components (CC), and molecular functions (MF). These three principal classifications were employed. Simultaneously, we employed the KEGG (Kyoto Encyclopedia of Genes and Genomes) database for in-depth annotation of the differentially expressed genes. These assessments were executed in the R 4.2.1 environment via the clusterProfiler toolkit for enrichment analysis and the org.Hs.eg.db toolkit for ID conversion. Additionally, we visually depicted the outcomes of the GO and KEGG enrichment analyses via the \u201cXiantao\u201d platform (www.xiantao.love).\nImmune penetration\nWe accessed the GSE123568 dataset on hormonal femoral head osteonecrosis from the GEO database, comprising 10 normal instances and 30 individuals diagnosed with hormonal femoral head osteonecrosis. Employing the R package \u201creshape2,\u201d we processed and analyzed the data to compute the prevalence of immune cell penetration in both the normal and steroid-induced osteonecrosis of the femoral head cohorts. A chart illustrating the differences in immune cell penetration between the two groups was generated via the R package \u201cggplot2.\u201d Spearman\u2019s method was used to assess the connection between immune cells, revealing noteworthy distinctions in penetration prevalence between the two groups.\nStatistical analysis\nWe conducted a statistical analysis via IBM SPSS software (version 25.0) and the R statistical tool (version 3.3.3, available at https://www.r-project.org). To ascertain variances in clinical factors across the two groups, we employed univariate analysis, utilizing either the chi-square test or Fisher\u2019s exact test for categorical variables. To compare radiomic feature values, we adopted one-way ANOVA. By employing the \u201cglmnet\u201d package, we executed LASSO regression model analysis. The generation of ROC curves involved the utilization of the \u201cpROC\u201d package. The nomogram was constructed through the application of the \u201crms\u201d package. To assess disparities in AUC values among these models, we employed the Delong test. The Decision Curve Analysis(DCA), however, was executed via the \u201cdca.R.\u201d package. Statistical significance was established at a threshold of P\u2009<\u20090.05.\nResults\nClinical characteristics of the patients\nA total of 288 ONFH patients from Center 5 were randomly divided into a training set (216 patients) and an internal validation group (72 patients) at a ratio of 3:1. The training group, comprising 216 patients from Center 5, was used for initial model development and training. An internal validation group, also from Center 5, included 72 patients to preliminarily validate the model\u2019s performance within the same data source. Additionally, 42 ONFH patients from Center 11 were selected as an external validation group to assess the model\u2019s generalizability and robustness on data from a different source (Fig.\u00a01). As shown in Table\u00a01, within the training group, the median age was 44 years, while 80 patients were male. Employing the t test and chi-square test, the training and validation cohorts were assessed, revealing marked disparities in TG levels between these two cohorts. A comparative analysis of the training and internal validation cohorts revealed distinctive discrepancies across four clinical attributes: age, sex, ALP, and hemoglobin. Conversely, the HDL and RBC indices differed between the training and external validation cohorts. Notably, Supplementary Table 1 shows that the remaining clinical attributes did not significantly differ between the training and validation cohorts.\nRadiomic analysis\nBy using 3D slicer software, a total of 874 distinct imaging features were extracted from the regions of interest (ROIs) found within 288 CT images. Through a meticulous process of eliminating highly correlated attributes, 268 features were effectively preserved out of the initial pool of 874. The application of the LASSO algorithm subsequently facilitated dimensionality reduction, pinpointing the most essential attributes (as illustrated in Fig.\u00a03A\u2013B). These findings paved the way for the identification of 11 enhanced imaging characteristics distinguishing between SONFH and pre-SONFH patients, as demonstrated in the supplementary data (Supplementary Table 2, Radiology of SONFH patients and pre-SONFH of the femoral head).",
+          "cos_sim_score": 0.3582710325717926,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": [
+        {
+          "id": "geo::200124233",
+          "title": "The non-canonical RNA polyadenylation polymerase FAM46C is essential for fastening sperm head and flagellum in mice",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE124233",
+          "text": "Title: The non-canonical RNA polyadenylation polymerase FAM46C is essential for fastening sperm head and flagellum in mice\nAccession: GSE124233\nStudy type: Expression profiling by high throughput sequencing\nOrganism: Mus musculus\nSamples: IntegerElement(4, attributes={})\nSummary: FAM46C has been proved to be a RNA polyadenylation polymerase. Fam46c KO resulted in male infertility caused by the production of acephalic sperm. we performed RNA sequencing to identify genes regulated by FAM46C",
+          "cos_sim_score": 0.28855034708976746,
+          "source_type": "geo",
+          "accession": "GSE124233"
+        },
+        {
+          "id": "geo::200245697",
+          "title": "The non-canonical poly(A) polymerase FAM46C promotes erythropoiesis",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE245697",
+          "text": "Title: The non-canonical poly(A) polymerase FAM46C promotes erythropoiesis\nAccession: GSE245697\nStudy type: Expression profiling by high throughput sequencing; Genome binding/occupancy profiling by high throughput sequencing; Other\nOrganism: Homo sapiens\nSamples: IntegerElement(45, attributes={})\nSummary: This SuperSeries is composed of the SubSeries listed below.",
+          "cos_sim_score": 0.2585245370864868,
+          "source_type": "geo",
+          "accession": "GSE245697"
+        },
+        {
+          "id": "geo::200114984",
+          "title": "FAM46C controls antibody production by the polyadenylation of Ig mRNAs and inhibits cell migration in multiple myeloma",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE114984",
+          "text": "Title: FAM46C controls antibody production by the polyadenylation of Ig mRNAs and inhibits cell migration in multiple myeloma\nAccession: GSE114984\nStudy type: Expression profiling by array\nOrganism: Homo sapiens\nSamples: IntegerElement(6, attributes={})\nSummary: FAM46C, which is frequently mutated in multiple myeloma (MM), has recently been shown to encode a non-canonical poly(A) polymerase (ncPAP). However, its target mRNAs and its role in MM pathogenesis remain largely unknown. Using CRISPR-Cas9 technology and gene expression analysis we found that inactivation of FAM46C in MM downregulates immunoglobulins (Igs) and several mRNAs encoding ER-resident proteins, including some involved in unfolded protein responses (UPRs), such as PDIA6, ERP44 and EDEM2, and others that affect glycosylation, such as SSR4, AGA and DDOST. We show that FAM46C expression ...",
+          "cos_sim_score": 0.21211034059524536,
+          "source_type": "geo",
+          "accession": "GSE114984"
+        },
+        {
+          "id": "geo::200245696",
+          "title": "The non-canonical poly(A) polymerase FAM46C promotes erythropoiesis [RIP]",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE245696",
+          "text": "Title: The non-canonical poly(A) polymerase FAM46C promotes erythropoiesis [RIP]\nAccession: GSE245696\nStudy type: Other\nOrganism: Homo sapiens\nSamples: IntegerElement(6, attributes={})\nSummary: Posttranscriptional regulation of mRNA is a crucial component of gene expression. The disruption of this process can have detrimental effects on normal development and give rise to various diseases. The search for novel posttranscriptional regulators and the exploration of their roles are essential for understanding development and disease. Through a multimodal analysis of red blood cell trait GWASs and transcriptomes of erythropoiesis, we identified FAM46C, a non-canonical RNA poly(A) polymerase, as a necessary factor for proper red blood cell development. FAM46C is highly expressed in late s...",
+          "cos_sim_score": 0.16179706156253815,
+          "source_type": "geo",
+          "accession": "GSE245696"
+        },
+        {
+          "id": "geo::200245693",
+          "title": "The non-canonical poly(A) polymerase FAM46C promotes erythropoiesis [Capture-C]",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE245693",
+          "text": "Title: The non-canonical poly(A) polymerase FAM46C promotes erythropoiesis [Capture-C]\nAccession: GSE245693\nStudy type: Other\nOrganism: Homo sapiens\nSamples: IntegerElement(1, attributes={})\nSummary: Posttranscriptional regulation of mRNA is a crucial component of gene expression. The disruption of this process can have detrimental effects on normal development and give rise to various diseases. The search for novel posttranscriptional regulators and the exploration of their roles are essential for understanding development and disease. Through a multimodal analysis of red blood cell trait GWASs and transcriptomes of erythropoiesis, we identified FAM46C, a non-canonical RNA poly(A) polymerase, as a necessary factor for proper red blood cell development. FAM46C is highly expressed in late s...",
+          "cos_sim_score": 0.14605581760406494,
+          "source_type": "geo",
+          "accession": "GSE245693"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

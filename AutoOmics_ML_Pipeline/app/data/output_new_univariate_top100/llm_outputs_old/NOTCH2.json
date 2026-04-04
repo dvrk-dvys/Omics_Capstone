@@ -1,0 +1,144 @@
+{
+  "probe_id": "11732189_at",
+  "gene_symbol": "NOTCH2",
+  "score": 1.0,
+  "SD_TestAUC": 0.0,
+  "abs_fold_change": 1.1274,
+  "probe_count": 1,
+  "probe_ids": "11732189_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 1.1274,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:41:34",
+  "interpretation": "NOTCH2 encodes a receptor involved in the Notch signaling pathway, which plays a critical role in cell fate determination, differentiation, and bone remodeling. This pathway is essential for maintaining bone homeostasis and regulating osteoclast differentiation, which is particularly relevant in the context of steroid-induced osteonecrosis of the femoral head (SONFH). While direct evidence linking NOTCH2 to SONFH is lacking, its involvement in bone remodeling suggests a potential role in the disease's pathophysiology. The retrieved evidence indicates that NOTCH2 is implicated in osteoclast differentiation, which could contribute to the bone degeneration seen in SONFH. Therefore, while the evidence is not directly tied to SONFH, the biological functions of NOTCH2 support its consideration as a candidate biomarker for early detection of this condition.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 3",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "NOTCH2 is involved in bone remodeling processes that may be disrupted in steroid-induced osteonecrosis of the femoral head.",
+  "citations": [
+    "NOTCH2 (Q04721). https://www.uniprot.org/uniprotkb/Q04721",
+    "NOTCH2 \u2014 NOTCH2. https://platform.opentargets.org/target/ENSG00000134250",
+    "NOTCH2 \u2194 acroosteolysis dominant type. https://platform.opentargets.org/target/ENSG00000134250/associations",
+    "NOTCH2 \u2194 Alagille syndrome due to a NOTCH2 point mutation. https://platform.opentargets.org/target/ENSG00000134250/associations",
+    "NOTCH2 \u2194 Alagille syndrome. https://platform.opentargets.org/target/ENSG00000134250/associations",
+    "NOTCH2 \u2194 diffuse large B-cell lymphoma. https://platform.opentargets.org/target/ENSG00000134250/associations",
+    "Notch 2. https://en.wikipedia.org/wiki/Notch_2",
+    "JAG1. https://en.wikipedia.org/wiki/JAG1",
+    "Delta-like 1. https://en.wikipedia.org/wiki/Delta-like_1",
+    "Alagille syndrome. https://en.wikipedia.org/wiki/Alagille_syndrome"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5677,
+    "completion_tokens": 230,
+    "total_tokens": 5907,
+    "estimated_cost_usd": 0.00099
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q04721",
+          "title": "NOTCH2 (Q04721)",
+          "url": "https://www.uniprot.org/uniprotkb/Q04721",
+          "text": "Protein: Neurogenic locus notch homolog protein 2\nFunction: Functions as a receptor for membrane-bound ligands Jagged-1 (JAG1), Jagged-2 (JAG2) and Delta-1 (DLL1) to regulate cell-fate determination. Upon ligand activation through the released notch intracellular domain (NICD) it forms a transcriptional activator complex with RBPJ/RBPSUH and activates genes of the enhancer of split locus (PubMed:21378985, PubMed:21378989). Affects the implementation of differentiation, proliferation and apoptotic programs (By similarity). Involved in bone remodeling and homeostasis. In collaboration with RELA/p65 enhances NFATc1 promoter activity and positively regulates RANKL-induced osteoclast differentiation (PubMed:29149593). Positively regulates self-renewal of liver cancer cells (PubMed:25985737)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000134250::function",
+          "title": "NOTCH2 \u2014 NOTCH2",
+          "url": "https://platform.opentargets.org/target/ENSG00000134250",
+          "text": "Function: Functions as a receptor for membrane-bound ligands Jagged-1 (JAG1), Jagged-2 (JAG2) and Delta-1 (DLL1) to regulate cell-fate determination. Upon ligand activation through the released notch intracellular domain (NICD) it forms a transcriptional activator complex with RBPJ/RBPSUH and activates genes of the enhancer of split locus (PubMed:21378985, PubMed:21378989). Affects the implementation of differentiation, proliferation and apoptotic programs (By similarity). Involved in bone remodeling and homeostasis. In collaboration with RELA/p65 enhances NFATc1 promoter activity and positively regulates RANKL-induced osteoclast differentiation (PubMed:29149593). Positively regulates self-renewal of liver cancer cells (PubMed:25985737).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000134250::MONDO_0007057",
+          "title": "NOTCH2 \u2194 acroosteolysis dominant type",
+          "url": "https://platform.opentargets.org/target/ENSG00000134250/associations",
+          "text": "Disease: acroosteolysis dominant type\nDescription: A rare genetic osteolysis syndrome resulting from protein-truncating variants in exon 34 of the NOTCH2 gene. These variants disrupt only the PEST domain, escape nonsense-mediated decay, and are postulated to function through a gain-of-function mechanism. This condition is characterized by acroosteolysis of distal phalanges and generalized osteoporosis, associated with additional ossification anomalies, craniofacial dysmorphism, dental anomalies and a wide range of other characteristics. Hearing loss, renal cysts, and cardiovascular anomalies are variably present.\nAssociation score: 0.827",
+          "cos_sim_score": 0.8269418008042602,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000134250::MONDO_0012439",
+          "title": "NOTCH2 \u2194 Alagille syndrome due to a NOTCH2 point mutation",
+          "url": "https://platform.opentargets.org/target/ENSG00000134250/associations",
+          "text": "Disease: Alagille syndrome due to a NOTCH2 point mutation\nDescription: A genetic condition caused by pathogenic variants in the NOTCH2 gene upstream of those implicated with Hajdu-Cheney syndrome. The mechanism of pathogenicity for Alagille syndrome appears to be haploinsufficiency. Key features include bile duct paucity, cholestasis, congenital heart defects, butterfly vertebrae, posterior embryotoxon, and distinctive facial characteristics. Renal abnormalities may also be present.\nAssociation score: 0.777",
+          "cos_sim_score": 0.7769385946865731,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000134250::MONDO_0007318",
+          "title": "NOTCH2 \u2194 Alagille syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000134250/associations",
+          "text": "Disease: Alagille syndrome\nDescription: Alagille (AGS) syndrome is variably characterized by chronic cholestasis due to paucity of intrahepatic bile ducts, peripheral pulmonary artery stenosis, vertebrae segmentation anomalies, characteristic facies, posterior embryotoxon/anterior segment abnormalities, pigmentary retinopathy, and dysplastic kidneys.\nAssociation score: 0.680",
+          "cos_sim_score": 0.6799146137776275,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000134250::EFO_0000403",
+          "title": "NOTCH2 \u2194 diffuse large B-cell lymphoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000134250/associations",
+          "text": "Disease: diffuse large B-cell lymphoma\nDescription: Diffuse large B-cell lymphoma is the most common subtype of non-Hodgkin lymphoma (NHL) in adults characterized by a median age of presentation in the sixth decade of life (but also rarely occurring in adolescents and children) with the initial presentation being single or multiple rapidly growing masses (that may or may not be painful) in nodal or extranodal sites (such as thyroid, skin, breast, gastrointestinal tract, testes, bone, or brain) and that can be accompanied by symptoms of fever, night sweats and weight loss. DLBCL has an aggressive disease course, with the elderly having a poorer prognosis than younger patients, and with relapses being common.\nAssociation score: 0.550",
+          "cos_sim_score": 0.550058712494815,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Notch 2",
+          "title": "Notch 2",
+          "url": "https://en.wikipedia.org/wiki/Notch_2",
+          "text": "Neurogenic locus notch homolog protein 2 (Notch 2) is a protein that in humans is encoded by the NOTCH2 gene.\nNOTCH2 is associated with Alagille syndrome and Hajdu\u2013Cheney syndrome.\n\nFunction\nNotch 2 is a member of the notch family. Members of this type 1 transmembrane protein family share structural characteristics including an extracellular domain consisting of multiple epidermal growth factor-like (EGF) repeats, and an intracellular domain consisting of multiple, different domain types. Notch family members play a role in a variety of developmental processes by controlling cell fate decisions. The Notch signaling network is an evolutionarily conserved intercellular signaling pathway that regulates interactions between physically adjacent cells. In Drosophila, notch interaction with its cell-bound ligands (delta, serrate) establishes an intercellular signaling pathway that plays a key role in development. Homologues of the notch-ligands have also been identified in human, but precise interactions between these ligands and the human notch homologues remain to be determined. This protein is cleaved in the trans-Golgi network, and presented on the cell surface as a heterodimer. This protein functions as a receptor for membrane bound ligands, and may play a role in vascular, renal and hepatic development.\nMutations within the last coding exon of Notch2 that remove  the PEST domain and escape the nonsense-mediated mRNA decay have been shown to be the main cause of the Hajdu\u2013Cheney syndrome.\n\nInteractions\nNOTCH2 has been shown to interact with:\n\nDelta-like 1\nGSK3B,\nJAG1,  and\nJAG2.\n\nReferences\nFurther reading\nExternal links\nGeneReviews/NCBI/UW/NIH entry on Alagille syndrome\nOMIM entries on Alagille syndrome\nOverview of all the structural information available in the PDB for UniProt: Q04721 (Neurogenic locus notch homolog protein 2) at the PDBe-KB.",
+          "cos_sim_score": 0.5517616271972656,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::JAG1",
+          "title": "JAG1",
+          "url": "https://en.wikipedia.org/wiki/JAG1",
+          "text": "Jagged1 (JAG1) is one of five cell surface proteins (ligands) that interact with four receptors in the mammalian Notch signaling pathway. The Notch signaling pathway is a highly conserved pathway that functions to establish and regulate cell fate decisions in many organ systems. Once the JAG1-NOTCH (receptor-ligand) interactions take place, a cascade of proteolytic cleavages is triggered resulting in activation of the transcription for downstream target genes. Located on human chromosome 20, the JAG1 gene is expressed in multiple organ systems in the body and causes the autosomal dominant disorder Alagille syndrome (ALGS) resulting from loss of function mutations within the gene. JAG1 has also been designated as CD339 (cluster of differentiation 339).\n\nStructure and function\nJAG1 was first identified as a ligand that was able to activate notch receptors when the rat gene Jagged encoding a protein homolog was cloned in 1995. The structure of the JAG1 protein includes a small intracellular component, a transmembrane motif, proceeded by an extracellular region containing a cystine-rich region, 16 EGF-like repeats, a DSL domain, and finally a signal peptide totaling 1218 amino acids in length over 26 coding exons.\nThe JAG1 protein encoded by JAG1 is the human homolog of the Drosophila jagged protein.  Human JAG1 is one of five ligands for receptors in the NOTCH signaling pathway which helps to determine cellular fate and is active during many developmental stages. The extracellular component of the JAG1 protein physically interacts with its respective Notch receptor. This interaction kicks off a cascade of proteolytic cleavages leading to the original NOTCH intracellular domain being trafficked into the nucleus of the cell leading to the activation of different target genes.\n\nExpression profile and mouse studies\nIn situ hybridization and conditional gene knockout studies have helped to demonstrate the role JAG1 plays in development and its effects on different organ systems. In humans, JAG1 has broad expression in many tissue types including the pancreas, heart, placenta, prostate, lung, kidney, thymus, testis, and leucocytes in the adult. In a developing embryo JAG1 expression is concentrated around the pulmonary artery, mesocardium, distal cardic outflow tract, major arteries, metanephros, branchial arches, pancreas, the portal vein, and otocyst. Generally, JAG1 expression patterns correlate with organ systems affected in ALGS, although not all tissues where JAG1 is expressed are affected in ALGS. More recently JAG1 expression has been found to be altered in breast cancer and adrenocortical carcinoma patients.\nMouse models where the Jag1 gene is turned off in certain tissues (conditional knockout mouse models) have been used to study the role of Jag1 in many tissue specific areas. While homozygous deletions of Jag1 have been shown to be embryonic lethal in mice, and heterozygous deletions may show only a limited phenotype (involving the eye), mice haploinsufficient for both Jag1 and Notch2 present with the ALGS phenotype. Conditional gene knockout mouse models with Jag1 mutations targeted to the portal vein mesenchyme, endothelium, and cranial neural crest all exhibit features classic to those in individuals with ALGS, highlighting the role of this tissue type in disease origins",
+          "cos_sim_score": 0.4679655134677887,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Delta-like 1",
+          "title": "Delta-like 1",
+          "url": "https://en.wikipedia.org/wiki/Delta-like_1",
+          "text": "Delta-like protein 1 is a protein that in humans is encoded by the DLL1 gene.\n\nFunction\nDLL1 is a human homolog of the Notch Delta ligand and is a member of the delta/serrate/jagged family.  It plays a role in mediating cell fate decisions during hematopoiesis. It may play a role in cell-to-cell communication.\n\nInteractions\nDelta-like 1 has been shown to interact with NOTCH2.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.43778088688850403,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Alagille syndrome",
+          "title": "Alagille syndrome",
+          "url": "https://en.wikipedia.org/wiki/Alagille_syndrome",
+          "text": "Genetics\nALGS is most commonly caused by a loss of function mutations in JAG1 (Jagged1), and less commonly in NOTCH2 (Notch homolog 2). The  JAG1 mutation is either intragenic and found on chromosome 20p12, or it is a deletion of the entire JAG1 gene. Mutations in NOTCH2 are much less likely to cause Alagille syndrome, but the primary type of ALGS-causing mutation in NOTCH2 is a missense mutation. A missense mutation is a point mutation that changes one nucleotide, which results in a codon that codes for the wrong amino acid. Alagille syndrome is inherited in an autosomal dominant pattern, which means one copy of the altered gene is sufficient to cause the disorder. The \"autosomal\" aspect of the disease means that the gene mutation occurs in an autosome, which is one of the 44 chromosomes in the human body that is not a sex chromosome (chromosome X or Y). Although the majority of cases are due to the autosomal dominant gene, there have been reports of a rare, autosomal recessive version of the disease. In the autosomal recessive case, the ALGS patient must inherit two mutated genes: one from each parent. Although about 40% of the mutations are inherited from affected parents, most cases result from new, acquired mutations. These are caused by environmental factors that mutate one copy of the gene. Environmental factors that can result in gene mutations may include radiation such as ultraviolet rays from the sun, or chemicals such as benzene, which is found in cigarette smoke.\n\nPathophysiology\nJAG1 and NOTCH2 encode for proteins that are crucial to the notch gene\u2013signaling cascade. Specifically, JAG1 encodes for a surface-binding ligand that regulates the notch signaling pathway. It plays a crucial role in cell signaling during embryonic development. If the pathway is disrupted due to mutations, an infant will not develop properly. Alagille syndrome causes bile duct paucity, which is characterized by narrow and malformed bile ducts. Bile duct paucity causes bile to build up in the liver, resulting in scarring of the liver which hinders the liver's normal functions, like blood filtration and drug metabolism.\n\nDiagnosis\nAlagille syndrome can be extremely difficult to diagnose. While people are born with ALGS, it is almost always diagnosed later during childhood. The diagnosis can be difficult because the severity of the disease varies widely among patients. Some common clinical tests that are run in order to diagnose the disease include vertebral x-rays, heart exams to detect any defects such as a heart murmur, and a liver biopsy to detect liver disease or any precursors. If a patient presents with multiple symptoms such as jaundice, heart murmur, and the characteristic facial features discussed above (deep set eyes, broad brow, etc.), they are likely to be diagnosed with Alagille syndrome. A more calculated and specific diagnosis can be done with genetic testing. Next-generation sequencing can be utilized to detect single nucleotide polymorphisms (SNPs) in the affected gene(s). Multiplex ligation-dependent probe amplification (MLPA) can detect large deletions and/or insertions and microarray comparative genomic hybridization is used to improve the accuracy of MLPA. \nIt is important to distinguish Alagille syndrome from biliary atresia because the latter benefits from a Kasai procedure in the early postnatal period, whereas this operation would make Alagille syndrome worse.. Indirect features on ultrasound of biliary atresia include abnormal and diminutive gallbladder shape, the triangular cord sign, and hepatic artery enlargement, though these can overlap with Alagille syndrome.\n\nTreatment\nEarly treatment is possible once the disease is diagnosed. Treatments of Alagille syndrome typically involve medications, therapies, and/or surgical procedures. All treatments aim to improve bile excretion from the liver, reduce pain caused by the disease, and help improve nutritional deficiencies. Diet can also be a crucial factor in improving quality of life when living with ALGS.",
+          "cos_sim_score": 0.3354778289794922,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::JAG1",
+          "title": "JAG1",
+          "url": "https://en.wikipedia.org/wiki/JAG1",
+          "text": "Disease phenotype\nALGS is an autosomal dominant multi-system disorder affecting several body systems including the liver, heart, skeleton, eye, facial structure, kidneys and vascular system. The most clinically significant concerns stem from liver, heart, vascular or renal problems. Mutations in JAG1 were first discovered to be responsible for ALGS by researchers at The Children's Hospital of Philadelphia and the National Institutes of Health in 1997. Patients who are clinically consistent with the disorder usually have a mutation in JAG1 (94%), while a smaller 2% have a mutation in NOTCH2. Over half of individuals with mutations in the gene did not inherit it from either parent, and thus have a de novo mutation. JAG1 mutation types include protein truncating (splice site, frameshift, and nonsense), missense, and whole gene deletions accounting for 80%, 7%, and 12% respectively. Since all mutation types lead to a patient phenotype, it is thought that haploinsufficiency for JAG1 is the likely disease mechanism of action.  Although individuals can have a range of mutation types in JAG1, all of the known mutations lead to loss of the function of one copy, and, there is no correlation between mutation type or location and disease severity. Though individuals with ALGS have several body systems affected, there is a subset of individuals with JAG1 mutations who present with tetralogy of fallot/pulmonary stenosis that do not show the other clinical signs of the syndrome. Given the variable expressivity of the disease, there may be other genetic or environmental modifiers present beyond the original JAG1 mutation.\nMore recently, JAG1 expression changes have been implicated in many types of cancer. Specifically, up regulation of JAG1 has been correlated with both poor overall breast cancer survival rates and an enhancement of tumor proliferation in adrenocortical carcinoma patients.\n\nSee also\nNotch signaling\nAlagille syndrome\nAutosomal dominant\nHaploinsufficiency\nTetralogy of fallot\nIn situ hybridization\nConditional gene knockout\nCluster of differentiation\n\nNotes\nReferences\nFurther reading\nExternal links\nGeneReviews/NCBI/UW/NIH entry on Alagille syndrome\nOMIM entries on Alagille syndrome\nJAG1+protein,+human at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nAlagille syndrome\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.2816791534423828,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

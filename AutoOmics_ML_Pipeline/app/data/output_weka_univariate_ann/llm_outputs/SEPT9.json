@@ -1,0 +1,233 @@
+{
+  "rf_rank": 44,
+  "probe_id": "11750585_a_at",
+  "gene_symbol": "SEPT9",
+  "score": 0.54,
+  "rf_n_nodes": 3,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.8228,
+  "log_fc": 0.8228,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11750585_a_at",
+  "max_score": 0.54,
+  "mean_abs_fold_change": 0.8228,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:44:41",
+  "interpretation": "SEPT9 encodes a protein that is part of the septin family, which is involved in cytoskeletal organization and cell division. While there is no direct evidence linking SEPT9 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in cellular processes such as cytokinesis may suggest a potential involvement in bone health and regeneration. The retrieved evidence primarily discusses SEPT9's association with other conditions, such as neuralgic amyotrophy, but does not provide a clear connection to SONFH. Therefore, the evidence is weak, and the interpretation relies on biological inference regarding the gene's general functions. As such, SEPT9 may not serve as a reliable early-detection biomarker for SONFH due to the lack of specific evidence linking it to the disease context.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "SEPT9's role in cytoskeletal dynamics may indirectly relate to bone health, but it lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "SEPTIN9 (Q9UHD8). https://www.uniprot.org/uniprotkb/Q9UHD8",
+    "SEPTIN9 (Q9UHD8-5). https://www.uniprot.org/uniprotkb/Q9UHD8-5",
+    "SEPTIN9 (Q9UHD8-7). https://www.uniprot.org/uniprotkb/Q9UHD8-7",
+    "SEPT9 \u2014 SEPTIN9. https://platform.opentargets.org/target/ENSG00000184640",
+    "SEPT9 \u2194 neuralgic amyotrophy. https://platform.opentargets.org/target/ENSG00000184640/associations",
+    "SEPT9 \u2194 hypertension. https://platform.opentargets.org/target/ENSG00000184640/associations",
+    "SEPT9 \u2194 essential hypertension. https://platform.opentargets.org/target/ENSG00000184640/associations",
+    "SEPT9 \u2194 alcohol drinking. https://platform.opentargets.org/target/ENSG00000184640/associations",
+    "SEPTIN9 \u2014 septin 9 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HIF1A \u2014 hypoxia inducible factor 1 subunit alpha (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KRAS \u2014 KRAS proto-oncogene, GTPase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KMT2A \u2014 lysine methyltransferase 2A (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "A systematic review of steroid use in peripheral nerve pathologies and treatment (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11402678/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8553,
+    "completion_tokens": 312,
+    "total_tokens": 8865,
+    "estimated_cost_usd": 0.00147
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9UHD8",
+          "title": "SEPTIN9 (Q9UHD8)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UHD8",
+          "text": "Protein: Septin-9\nFunction: Filament-forming cytoskeletal GTPase (By similarity). May play a role in cytokinesis (Potential). May play a role in the internalization of 2 intracellular microbial pathogens, Listeria monocytogenes and Shigella flexneri",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9UHD8-5",
+          "title": "SEPTIN9 (Q9UHD8-5)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UHD8-5",
+          "text": "Protein: Isoform 5 of Septin-9",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9UHD8-7",
+          "title": "SEPTIN9 (Q9UHD8-7)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UHD8-7",
+          "text": "Protein: Isoform 7 of Septin-9",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000184640::function",
+          "title": "SEPT9 \u2014 SEPTIN9",
+          "url": "https://platform.opentargets.org/target/ENSG00000184640",
+          "text": "Function: Filament-forming cytoskeletal GTPase (By similarity). May play a role in cytokinesis (Potential). May play a role in the internalization of 2 intracellular microbial pathogens, Listeria monocytogenes and Shigella flexneri. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000184640::MONDO_0017362",
+          "title": "SEPT9 \u2194 neuralgic amyotrophy",
+          "url": "https://platform.opentargets.org/target/ENSG00000184640/associations",
+          "text": "Disease: neuralgic amyotrophy\nDescription: Neuralgic amyotrophy (NA) is an uncommon disorder of the peripheral nervous system characterized by the sudden onset of extreme pain in the upper extremity followed by rapid multifocal motor weakness and atrophy and a slow recovery in months to years. NA includes both an idiopathic (INA, also known as Parsonage-Turner syndrome) and hereditary (HNA) form.\nAssociation score: 0.564",
+          "cos_sim_score": 0.5638185740578462,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000184640::EFO_0000537",
+          "title": "SEPT9 \u2194 hypertension",
+          "url": "https://platform.opentargets.org/target/ENSG00000184640/associations",
+          "text": "Disease: hypertension\nDescription: Persistently high systemic arterial blood pressure. Based on multiple readings (blood pressure determination), hypertension is currently defined as when systolic pressure is consistently greater than 140 mm Hg or when diastolic pressure is consistently 90 mm Hg or more.\nAssociation score: 0.546",
+          "cos_sim_score": 0.5458824049136834,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000184640::MONDO_0001134",
+          "title": "SEPT9 \u2194 essential hypertension",
+          "url": "https://platform.opentargets.org/target/ENSG00000184640/associations",
+          "text": "Disease: essential hypertension\nDescription: Hypertension that presents without an identifiable cause.\nAssociation score: 0.489",
+          "cos_sim_score": 0.48855454686357364,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000184640::EFO_0004329",
+          "title": "SEPT9 \u2194 alcohol drinking",
+          "url": "https://platform.opentargets.org/target/ENSG00000184640/associations",
+          "text": "Disease: alcohol drinking\nDescription: Behaviors associated with the ingesting of alcoholic beverages, including social drinking.\nAssociation score: 0.438",
+          "cos_sim_score": 0.43813037041552183,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "SEPTIN9 \u2014 septin 9",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SEPTIN9\nGene name: septin 9\nAliases / synonyms: AF17q25, MSF, MSF1, PNUTL4, SEPT9, SINT1, SeptD1\nOrganism: Homo sapiens\nGene summary: This gene is a member of the septin family involved in cytokinesis and cell cycle control. This gene is a candidate for the ovarian tumor suppressor gene. Mutations in this gene cause hereditary neuralgic amyotrophy, also known as neuritis with brachial predilection. A chromosomal translocation involving this gene on chromosome 17 and the MLL gene on chromosome 11 results in acute myelomonocytic leukemia. Multiple alternatively spliced transcript variants encoding different isoforms have been described.[provided by RefSeq, Mar 2009]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SEPTIN9",
+          "aliases": "AF17q25, MSF, MSF1, PNUTL4, SEPT9, SINT1, SeptD1",
+          "gene_description": "septin 9"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "HIF1A \u2014 hypoxia inducible factor 1 subunit alpha",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HIF1A\nGene name: hypoxia inducible factor 1 subunit alpha\nAliases / synonyms: HIF-1-alpha, HIF-1A, HIF-1alpha, HIF1, HIF1-ALPHA, MOP1, PASD8, bHLHe78\nOrganism: Homo sapiens\nGene summary: This gene encodes the alpha subunit of transcription factor hypoxia-inducible factor-1 (HIF-1), which is a heterodimer composed of an alpha and a beta subunit. HIF-1 functions as a master regulator of cellular and systemic homeostatic response to hypoxia by activating transcription of many genes, including those involved in energy metabolism, angiogenesis, apoptosis, and other genes whose protein products increase oxygen delivery or facilitate metabolic adaptation to hypoxia. HIF-1 thus plays an essential role in embryonic vascularization, tumor angiogenesis and pathophysiology of ischemic disease. Alternatively spliced transcript variants encoding different isoforms have been identified for this gene. [provided by RefSeq, Jul 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HIF1A",
+          "aliases": "HIF-1-alpha, HIF-1A, HIF-1alpha, HIF1, HIF1-ALPHA, MOP1, PASD8, bHLHe78",
+          "gene_description": "hypoxia inducible factor 1 subunit alpha"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KRAS \u2014 KRAS proto-oncogene, GTPase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KRAS\nGene name: KRAS proto-oncogene, GTPase\nAliases / synonyms: 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2\nOrganism: Homo sapiens\nGene summary: This gene, a Kirsten ras oncogene homolog from the mammalian ras gene family, encodes a protein that is a member of the small GTPase superfamily. A single amino acid substitution is responsible for an activating mutation. The transforming protein that results is implicated in various malignancies, including lung adenocarcinoma, mucinous adenoma, ductal carcinoma of the pancreas and colorectal carcinoma. Alternative splicing leads to variants encoding two isoforms that differ in the C-terminal region. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KRAS",
+          "aliases": "'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2",
+          "gene_description": "KRAS proto-oncogene, GTPase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KMT2A \u2014 lysine methyltransferase 2A",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KMT2A\nGene name: lysine methyltransferase 2A\nAliases / synonyms: ALL-1, ALL1, CXXC7, GAS7, HRX, HTRX, HTRX1, MLL, MLL1, MLL1A, TRX1, WDSTS\nOrganism: Homo sapiens\nGene summary: This gene encodes a transcriptional coactivator that plays an essential role in regulating gene expression during early development and hematopoiesis. The encoded protein contains multiple conserved functional domains. One of these domains, the SET domain, is responsible for its histone H3 lysine 4 (H3K4) methyltransferase activity which mediates chromatin modifications associated with epigenetic transcriptional activation. This protein is processed by the enzyme Taspase 1 into two fragments, MLL-C and MLL-N. These fragments reassociate and further assemble into different multiprotein complexes that regulate the transcription of specific target genes, including many of the HOX genes. Multiple chromosomal translocations involving this gene are the cause of certain acute lymphoid leukemias a...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KMT2A",
+          "aliases": "ALL-1, ALL1, CXXC7, GAS7, HRX, HTRX, HTRX1, MLL, MLL1, MLL1A, TRX1, WDSTS",
+          "gene_description": "lysine methyltransferase 2A"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::11402678",
+          "title": "A systematic review of steroid use in peripheral nerve pathologies and treatment",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11402678/",
+          "text": "1\nIntroduction\nCorticosteroids, such as hydrocortisone, dexamethasone and prednisone, are among the most widely prescribed drug classes worldwide (1). They are used for numerous conditions including inflammatory disorders, allergic and autoimmune reactions, neurological disorders, prevention of graft rejection, and shock. Steroids are also considered the non-operative standard of care for carpal tunnel syndrome (CTS) (2\u20135), but there is a lack of agreement regarding the use of steroids in other peripheral nerve disorders.\nUnder normal physiological conditions, production of proteins within the neuron is partially regulated by corticosteroids. Within the cell body, steroid receptors are activated, dimerized, and eventually influence gene expression leading to protein production modulation. One such receptor is present within Schwann cells, and the binding of glucocorticoid steroids activates myelin associated protein synthesis, specifically glycoprotein Po and peripheral myelin protein 22 (6\u201312). Synthesis of these myelin proteins has also shown to have regenerative effects on damaged peripheral nerves. Therefore, steroids could be a beneficial means of tissue regeneration by enhanced Schwann cell myelin sheath protein synthesis (13, 14).\nFollowing nerve injury, the primary barriers for axonal nerve regeneration are excessive inflammation and a lack of remyelination by Schwann cells (15, 16). Glucocorticoid steroid treatment can potentially address both aforementioned barriers. Nerve damage from either trauma, surgery, or neuropathies can result in neuropathic pain, which has been linked to pro-inflammatory states, mediated by bradykinin, interleukins 1,6, and 8, along with tumor necrosis factor (TNF) and C-reactive protein (17). Corticosteroids are effective at this level of pain attenuation due to their anti-inflammatory properties (18, 19). The mechanism of attenuation involves peripheral inhibition of phospholipase, which has a down-stream effect of reduced cyclooxygenase and lipoxygenase pain-aggravating products (20).\nDespite evidence that steroids increase myelination and attenuate inflammation in damaged nerves, there is not a widely accepted treatment algorithm for use of steroids in various peripheral nerve conditions. This review illustrates a lack of cohesive literature examining the use of these therapeutic strategies in peripheral nerve pathologies and highlights that, in certain cases, steroids can serve as a valuable adjunct in multi-modal pain treatment.\n2\nMethods\n2.1\nSearch terms and strategy",
+          "cos_sim_score": 0.38909247517585754,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11402678",
+          "title": "A systematic review of steroid use in peripheral nerve pathologies and treatment",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11402678/",
+          "text": "Despite evidence that steroids increase myelination and attenuate inflammation in damaged nerves, there is not a widely accepted treatment algorithm for use of steroids in various peripheral nerve conditions. This review illustrates a lack of cohesive literature examining the use of these therapeutic strategies in peripheral nerve pathologies and highlights that, in certain cases, steroids can serve as a valuable adjunct in multi-modal pain treatment.\n2\nMethods\n2.1\nSearch terms and strategy\nA PRISMA review of the following databases was conducted: PubMed, MEDLINE, EMBASE, Scopus, Cochrane, and Web of Science, using keywords: ((((((((((((((((((\u201cperipheral nerve\u201d or \u201cperipheral neuropathy\u201d) AND (\u201cinjury\u201d or \u201cregeneration\u201d or \u201cmyelination\u201d)) OR (steroids peripheral myelin protein)) OR (steroid nerve block)) OR ((\u201cneuropathic pain\u201d or \u201cperipheral neuropathy\u201d or \u201cnerve pain\u201d or \u201cperipheral nervous system\u201d or \u201cperipheral nerve damage\u201d) AND (\u201ccorticosteroid\u201d or \u201csteroid\u201d))) OR ((\u201ccorticosteroid treatment\u201d or \u201csteroid treatment\u201d or \u201cdexamethasone\u201d or \u201cmethylprednisolone\u201d or \u201cprednisolone\u201d) AND (\u201cperipheral nerve\u201d) AND (\u201csafety\u201d or \u201cadverse effects\u201d or \u201cside effects\u201d or \u201ccomplications\u201d))) OR ((\u201ccorticosteroid treatment\u201d or \u201csteroid treatment\u201d or \u201cdexamethasone\u201d or \u201cmethylprednisolone\u201d or \u201cprednisolone\u201d) AND \u201cperipheral nerve\u201d)) OR ((\u201cmedian nerve entrapment\u201d or \u201ccarpal tunnel syndrome\u201d or \u201cpronator syndrome\u201d) AND (\u201ctreatment\u201d or \u201csteroid injections\u201d or \u201coral steroid\u201d or \u201cdexamethasone\u201d or \u201cmethylprednisolone\u201d or \u201cprednisolone\u201d))) OR ((\u201culnar neuropathy\u201d or \u201culnar neuritis\u201d or \u201culnar nerve entrapment\u201d or \u201ccubital tunnel\u201d) AND (\u201ctreatment\u201d or \u201csteroid\u201d))) OR ((\u201cbrachial neuritis\u201d or \u201cparsonage-turner syndrome\u201d) AND (\u201ctreatment\u201d or \u201csteroid\u201d))) OR ((\u201culnar neuropathy\u201d or \u201culnar neuritis\u201d or \u201culnar nerve entrapment\u201d or \u201ccubital tunnel\u201d) AND (\u201ctreatment\u201d or \u201csteroid\u201d))) OR ((\u201cnerve compression syndrome\u201d or \u201cnerve entrapment\u201d) AND (\u201ctreatment\u201d or \u201csteroid\u201d))) OR ((\u201cradial neuropathy\u201d or \u201cradial nerve entrapment\u201d or \u201cradial tunnel\u201d) AND (\u201ctreatment\u201d or \u201csteroid\u201d))) OR ((\u201cmeralgia paresthetica\u201d or \u201cfemoral neuropathy\u201d) AND (\u201ctreatment\u201d or \u201csteroid\u201d))) OR (\u201cperipheral diabetic neuropathy\u201d AND (\u201ctreatment\u201d or \u201csteroid\u201d))) OR (\u201cchemotherapy-induced peripheral neuropathy\u201d AND (\u201ctreatment\u201d or \u201csteroid\u201d))) OR (\u201calcoholic peripheral neuropathy\u201d AND (\u201ctreatment\u201d or \u201csteroid\u201d))) OR (\u201cchronic inflammatory demyelinating polyradiculoneuropathy\u201d AND (\u201ctreatment\u201d or \u201csteroid\u201d))) OR (\u201cleprous neuropathy\u201d AND (\u201ctreatment\u201d or \u201csteroid\u201d)).",
+          "cos_sim_score": 0.3705296516418457,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11402678",
+          "title": "A systematic review of steroid use in peripheral nerve pathologies and treatment",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11402678/",
+          "text": "Two randomized, controlled trials, one of 40 and the other of 35 patients, reported significant improvement in the corticosteroid-treated group (1\u2009mg/kg) over the control group (149, 150). Yet, steroids appear to be highly effective in some patients while ineffective in others. Determining which patient characteristics are most likely to respond to corticosteroids could increase success rates in the chosen cohorts. Two studies notably observed a significant association between a favorable response to corticosteroid treatment (0.5\u20130.75\u2009mg/kg/day of prednisone) with shorter disease duration prior to treatment onset, lesser axonal damage or impaired nerve conduction velocity, being female, and being of a younger age (140, 151). These disease-related characteristics should be considered when choosing a therapy regimen.\nAlthough steroids have documented efficacy in treatment of CIDP, it is important to consider if it is truly the best treatment. Many studies have attempted to clarify a treatment of choice for CIDP by comparing the outcomes of patients treated with IVIg and corticosteroids. However, results have done little to differentiate between the two and often complicate the decision. One study reported favorably for steroids stating that steroid response rate was significantly higher than IVIg in patients with normal or moderately enlarged cross sectional area of the nerve; nevertheless, this difference was not found in patients with enlarged cross-sectional area (152). Of note, multiple studies have found no significant difference in patient outcomes or short-term efficacy between the two therapies (133, 153\u2013155), yet other studies have suggested that IVIg is more effective in the short-term while corticosteroids are more effective in the long-term for remission (138, 139). Further confounding the decision, a study of 45 patients found that more patients had to stop intravenous methylprednisolone than IVIg due to adverse effects while more patients on IVIg experienced worsening symptoms after therapy discontinuation than those treated with methylprednisolone (which was dosed at 0.5\u2009g in 250\u2009mL sodium chloride solution for 4 consecutive days) (156). A combination therapy of IVIg and corticosteroids may possibly deliver the preferable results of each: short-term efficacy from IVIg and long-term remission from corticosteroids. Adrichem et al. explored this hypothesis by treating 20 CIDP patients with IVIg and intravenous methylprednisolone (with a cumulative dose of 7\u2009mg) and found the treatment to be well tolerated yielding remission in nearly 60% of patients (157). The results of this study are suggestive of a potential treatment of choice for CIDP, but more extensive investigation is needed.\nUltimately, the choice of treatment should be made with careful analysis of risk to benefit. The complexity and progressive nature of CIDP combined with sustained immunosuppressive therapeutics makes prognosis difficult, and the detrimental effects of each therapy cumulate to increase long-term morbidity (158). Additionally, multiple studies have reported issues with long-term steroid use in CIDP leading to discontinuation of the therapy, notably steroid-induced osteoporosis in the elderly population (145, 146, 156, 159).",
+          "cos_sim_score": 0.36785992980003357,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11402678",
+          "title": "A systematic review of steroid use in peripheral nerve pathologies and treatment",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11402678/",
+          "text": "4.3\nNerve regeneration\nThe use of local steroid injection for peripheral nerve regeneration therapy in humans is limited to small distances, and molecular nerve regeneration therapy is still primitive. Specifically, human axonal regeneration occurs at a rate of about 1\u20132\u2009mm per day, and the majority of steroid nerve regeneration research exists in animal studies (39). Current literature shows no established adjuvants that accelerate peripheral nerve regeneration (40).\nDecreased muscle innervation from peripheral nerve injuries may result in atrophy and loss of function. This element of peripheral nerve injury pathophysiology could potentially be addressed by steroid treatment. Two rat-model studies recorded hypertrophy of previously atrophied muscle from sciatic nerve injury after treatment with steroids (dosed at 1\u20132\u2009mg/Kg for 1\u201328\u2009days postoperatively) (41, 42). These effects were attributed to nerve regeneration with resulting increased innervation.\nSimilar studies found that following crush injury of the sciatic nerve, function in the rats\u2019 hindlimbs were improved after treatment dexamethasone, methylprednisolone, or betamethasone. The functional improvement was associated with more pronounced remyelination, decreased inflammatory cell infiltrate in surrounding tissues (43\u201346), and Schwann cell proliferation (47\u201349). The health of the myelin sheath corresponded with the strength of the muscle innervation which directly resulted in increased functionality and size of the previously damaged myotomes. Additionally, facial and median nerve function studies found significantly improved myelin sheath thickening and functional recovery after glucocorticoid treatment (at a 5\u2009mg/mL dosage) compared to controls (50, 51). While most studies utilized local steroid injection, topical dexamethasone (dosage of 0.1\u2009mg/kg) has also shown nerve health promotion in rat models after crush injuries (52\u201354).\nThe rat model\u2019s greatest limitation is the short length of the sciatic nerve, making large-gap regeneration difficult to assess. Nevertheless, these studies still provide a foundation for additional research. The first case report for successful post-traumatic use of corticosteroids in humans was published in 2020, in which three local peri-neural injections of 40\u2009mg methylprednisolone returned the patient to a normal ulnar nerve function (55). Following 8\u2009years of complete sensory and motor loss of the right ulnar nerve, this patient regained function in both categories following local injection (55). This case report demonstrates promising recovery of nerve function following non-surgical, local steroid injection-based treatment. Additionally, a retrospective study investigating the use of \u201cpulsed\u201d intravenous methylprednisolone treatment (at a dose of 1\u2009g/day) on neuritis indicated that this form of non-oral steroid treatment was also an effective modality in preserving nerve function (56).\n4.4\nCompression neuropathies\nNeuritis of the upper extremity commonly manifests as CTS along the median nerve, and cubital tunnel syndrome (CuTS) along the ulnar nerve. Although CTS and CuTS are the most prevalent compression neuropathies, any nerve may be compressed at any point along its course. Other common entrapments include the ulnar nerve in Guyon canal syndrome, pronator teres can entrapment of the median nerve or anterior interosseous nerve by the pronator teres muscle in the proximal forearm (57\u201359), posterior interosseous nerve compression by the supinator muscle, and the superficial radial nerve compression in Wartenberg\u2019s syndrome (59, 60).\nCompression syndromes are often the result of external mechanical pressure (e.g., medical equipment), anatomical factors (e.g., cysts), or local inflammatory processes (e.g., arthritis) (61). Upper extremity entrapment neuropathies have traditionally been treated by surgical means; however, nonsurgical treatment modalities including ultrasound guided steroid injection have revealed a possible alternative for standard of care (60, 62, 63). While there have been prospective trials revealing propitious results for conservative steroid treatment (6\u2009mg/mL of celestone) for nerve entrapment, there are still a lack of prospective randomized controlled studies to evaluate these claims (64\u201366).\n4.4.1\nCarpal tunnel syndrome",
+          "cos_sim_score": 0.3491804003715515,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11402678",
+          "title": "A systematic review of steroid use in peripheral nerve pathologies and treatment",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11402678/",
+          "text": "4.5.4\nIdiopathic neuropathies\nBrachial neuritis, also known as Parsonage-Turner syndrome, is a rare disease of idiopathic origin presenting as acute proximal upper extremity pain followed by weakness (174). Less commonly, there is a hereditary form, hereditary neuralgic amyotrophy, caused by an autosomal dominant mutation in the septin 9 gene of chromosome 17 responsible for cytoskeleton formation (175). The ill-understood etiology of this disease is likely the cause of insufficient research examining treatment options. Nevertheless, corticosteroids have been indicated as a possible treatment modality. A review from 1960 to 2009 identified no randomized controlled trials of treatment for brachial neuritis but did recommend early initiation oral prednisone therapy (within the first month after symptom presentation) to increase recovery speed (176). A subsequent study in 2016 recommended a similar treatment of an immediate \u201cshort trial of high-dose oral corticosteroids\u201d (prednisolone) in agonized patients as part of a multimodal recovery plan (177). A 2018 case study of a 6-month-old child suffering from brachial neuritis following an upper respiratory tract infection reported a full recovery by 16\u2009months after treatment with prednisolone and physical therapy (178). The studies above suggest that corticosteroid therapy may be effective for brachial neuritis when early treatment is provided. Although steroids have been used to treat brachial neuritis, there still lacks controlled studies to assess the efficacy of this therapy (176, 177).\n4.6\nSafety and adverse effects\nThe broad therapeutic spectrum of steroids makes them efficient treatment for acute and chronic inflammatory diseases (5). Unfortunately, this broad spectrum carries over into side effects of physiologic signaling disruption. It is notable, however, that locally injected steroids pose less risk of adverse effects than oral steroids (179), and the research cited below regards long-term use of high dose oral steroids.\nIn the perioperative setting, side effects include sodium and water retention, increased risk of peptic ulceration, hypokalemia, increased infection rates, and adrenal crisis (132, 180). The mechanisms involved in long-term side effects are poorly understood, but conditions include osteoporosis leading to fractures, wound repair inhibition, osteonecrosis, development of cushingoid features, hypothalamic\u2013pituitary\u2013adrenal (HPA) axis suppression, hyperglycemia, dermatologic, ophthalmologic, and cardiovascular effects (1, 181\u2013184). Systematic reviews have concluded that these adverse effects are dose and duration dependent (1, 182). For example, one study of 1,066 patients found an elevated occurrence of adverse effects beyond certain thresholds. Specifically, prednisone dosages greater than 7.5\u2009mg per day could cause glaucoma and hypertension while dosages greater than 5\u2009mg per day could cause weight gain (185).\nSteroid induced osteoporosis may additionally result from such treatment as 6\u2009mg of prednisone per day for only 6\u2009months has been noted to lead to bone loss and fractures (186). This statement is supported by another study which examined glucocorticoid-induced osteopenia and found that 53% of patients receiving a cumulative prednisone dose of greater than 30\u2009mg had fractures (187).\nAlthough most dermatologic effects are benign, impaired wound healing is consequential. However, steroid-inhibited wound repair is uncertain and should be further examined (188). While some studies have associated steroid use for rheumatoid arthritis with increased risks of infection (189, 190), a meta-analysis of 38 studies concluded that there was no difference in postoperative infection rates between surgical patients treated with dexamethasone as compared to no treatment or placebo (188).\nAs for peptic ulcer disease, a retrospective study of 1,415 patients found a two-fold increased risk for peptic ulcer disease in patients taking corticosteroids and relative risk of 4.4 in patients simultaneously taking NSAIDs and corticosteroids (191). Corticosteroid effects on the HPA axis are clearer; corticosteroids suppress hypothalamic corticotropin-releasing hormone, anterior pituitary adrenocorticotropic hormone, and adrenal cortex cortisol (184). One study found 5\u2009mg of prednisolone per day for 1\u2009month duration increases risk of HPA axis suppression while another study reported that 100% of patients undergoing long-term glucocorticoid use experience adrenal insufficiency (132, 192).",
+          "cos_sim_score": 0.3453707695007324,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

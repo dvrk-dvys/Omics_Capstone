@@ -1,0 +1,219 @@
+{
+  "probe_id": "11719359_a_at",
+  "gene_symbol": "ALDH5A1",
+  "rf_importance": 0.0052,
+  "selection_freq": 1.0,
+  "abs_fold_change": 2.0644096666666663,
+  "score": 0.381,
+  "probe_count": 2,
+  "probe_ids": "11719359_a_at | 11736619_a_at",
+  "max_score": 0.381,
+  "mean_abs_fold_change": 1.8141,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T00:06:56",
+  "interpretation": "ALDH5A1 encodes a mitochondrial enzyme involved in the metabolism of gamma-aminobutyric acid (GABA), which plays a crucial role in neurotransmitter degradation. While the direct connection between ALDH5A1 and Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) is not explicitly established in the retrieved evidence, the gene's involvement in metabolic pathways may suggest a link to the lipid metabolism alterations observed in SONFH. The study indicates that lipid metabolism is significantly correlated with the disease, and since ALDH5A1 is implicated in metabolic processes, it may contribute to the pathophysiology of SONFH. However, the evidence remains weak, primarily relying on inferred connections rather than direct validation as a biomarker for SONFH. Thus, while ALDH5A1 shows potential as a biomarker, its clinical relevance for early detection in SONFH is currently limited.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "ALDH5A1 may be involved in metabolic processes relevant to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), but direct evidence linking it to the disease is lacking.",
+  "citations": [
+    "ALDH5A1 (P51649). https://www.uniprot.org/uniprotkb/P51649",
+    "ALDH5A1 (P51649-2). https://www.uniprot.org/uniprotkb/P51649-2",
+    "ALDH5A1 \u2014 ALDH5A1. https://platform.opentargets.org/target/ENSG00000112294",
+    "ALDH5A1 \u2194 succinic semialdehyde dehydrogenase deficiency. https://platform.opentargets.org/target/ENSG00000112294/associations",
+    "ALDH5A1 \u2194 epilepsy. https://platform.opentargets.org/target/ENSG00000112294/associations",
+    "ALDH5A1 \u2194 bipolar disorder. https://platform.opentargets.org/target/ENSG00000112294/associations",
+    "ALDH5A1 \u2194 Seizure. https://platform.opentargets.org/target/ENSG00000112294/associations",
+    "ALDH5A1 \u2014 aldehyde dehydrogenase 5 family member A1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "BRCA1 \u2014 BRCA1 DNA repair associated (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "PRNP \u2014 prion protein (Kanno blood group) (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "SOD2 \u2014 superoxide dismutase 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "PRKN \u2014 parkin RBR E3 ubiquitin protein ligase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Predicting steroid-induced osteonecrosis of the femoral head: role of lipid metabolism biomarkers and radiomics in young and middle-aged adults (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11558989/",
+    "ALDH5A1 as a key in osteonecrosis of the femoral head: Insights from bioinformatics and experimental validation (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC13040433/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8625,
+    "completion_tokens": 332,
+    "total_tokens": 8957,
+    "estimated_cost_usd": 0.001493
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P51649",
+          "title": "ALDH5A1 (P51649)",
+          "url": "https://www.uniprot.org/uniprotkb/P51649",
+          "text": "Protein: Succinate-semialdehyde dehydrogenase, mitochondrial\nFunction: Catalyzes one step in the degradation of the inhibitory neurotransmitter gamma-aminobutyric acid (GABA)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P51649-2",
+          "title": "ALDH5A1 (P51649-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P51649-2",
+          "text": "Protein: Isoform 2 of Succinate-semialdehyde dehydrogenase, mitochondrial",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000112294::function",
+          "title": "ALDH5A1 \u2014 ALDH5A1",
+          "url": "https://platform.opentargets.org/target/ENSG00000112294",
+          "text": "Function: Catalyzes one step in the degradation of the inhibitory neurotransmitter gamma-aminobutyric acid (GABA). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000112294::MONDO_0010083",
+          "title": "ALDH5A1 \u2194 succinic semialdehyde dehydrogenase deficiency",
+          "url": "https://platform.opentargets.org/target/ENSG00000112294/associations",
+          "text": "Disease: succinic semialdehyde dehydrogenase deficiency\nDescription: Succinic semialdehyde dehydrogenase (SSADH) deficiency is a rare neurometabolic disorder of gamma-aminobutyric acid (GABA) metabolism with a nonspecific clinical presentation (ranging from mild to severe) with the most frequent symptoms being cognitive impairment with prominent deficit in expressive language, hypotonia, ataxia, epilepsy, and behavioral dysregulation.\nAssociation score: 0.844",
+          "cos_sim_score": 0.8435061416819137,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000112294::EFO_0000474",
+          "title": "ALDH5A1 \u2194 epilepsy",
+          "url": "https://platform.opentargets.org/target/ENSG00000112294/associations",
+          "text": "Disease: epilepsy\nDescription: A brain disorder characterized by episodes of abnormally increased neuronal discharge resulting in transient episodes of sensory or motor neurological dysfunction, or psychic dysfunction. These episodes may or may not be associated with loss of consciousness or convulsions.\nAssociation score: 0.608",
+          "cos_sim_score": 0.6080948746747509,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000112294::MONDO_0004985",
+          "title": "ALDH5A1 \u2194 bipolar disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000112294/associations",
+          "text": "Disease: bipolar disorder\nDescription: A disorder of the brain that causes unusual shifts in mood, energy, activity levels and the ability to carry out day-to-day tasks. Often these moods range and shift from periods of elation and energized behavior to those of hopelessness and depression.\nAssociation score: 0.606",
+          "cos_sim_score": 0.6058393009697971,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000112294::HP_0001250",
+          "title": "ALDH5A1 \u2194 Seizure",
+          "url": "https://platform.opentargets.org/target/ENSG00000112294/associations",
+          "text": "Disease: Seizure\nDescription: A seizure is an intermittent abnormality of nervous system physiology characterized by a transient occurrence of signs and/or symptoms due to abnormal excessive or synchronous neuronal activity in the brain.\nAssociation score: 0.582",
+          "cos_sim_score": 0.5821310174756064,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "ALDH5A1 \u2014 aldehyde dehydrogenase 5 family member A1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ALDH5A1\nGene name: aldehyde dehydrogenase 5 family member A1\nAliases / synonyms: SSADH, SSDH\nOrganism: Homo sapiens\nGene summary: This protein belongs to the aldehyde dehydrogenase family of proteins. This gene encodes a mitochondrial NAD(+)-dependent succinic semialdehyde dehydrogenase. A deficiency of this enzyme, known as 4-hydroxybutyricaciduria, is a rare inborn error in the metabolism of the neurotransmitter 4-aminobutyric acid (GABA). In response to the defect, physiologic fluids from patients accumulate GHB, a compound with numerous neuromodulatory properties. Two transcript variants encoding distinct isoforms have been identified for this gene. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ALDH5A1",
+          "aliases": "SSADH, SSDH",
+          "gene_description": "aldehyde dehydrogenase 5 family member A1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "BRCA1 \u2014 BRCA1 DNA repair associated",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: BRCA1\nGene name: BRCA1 DNA repair associated\nAliases / synonyms: BRCAI, BRCC1, BROVCA1, FANCS, IRIS, PNCA4, PPP1R53, PSCP, RNF53\nOrganism: Homo sapiens\nGene summary: This gene encodes a 190 kD nuclear phosphoprotein that plays a role in maintaining genomic stability, and it also acts as a tumor suppressor. The BRCA1 gene contains 22 exons spanning about 110 kb of DNA. The encoded protein combines with other tumor suppressors, DNA damage sensors, and signal transducers to form a large multi-subunit protein complex known as the BRCA1-associated genome surveillance complex (BASC). This gene product associates with RNA polymerase II, and through the C-terminal domain, also interacts with histone deacetylase complexes. This protein thus plays a role in transcription, DNA repair of double-stranded breaks, and recombination. Mutations in this gene are responsible for approximately 40% of inherited breast cancers and more than 80% of inherited breast and ovari...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "BRCA1",
+          "aliases": "BRCAI, BRCC1, BROVCA1, FANCS, IRIS, PNCA4, PPP1R53, PSCP, RNF53",
+          "gene_description": "BRCA1 DNA repair associated"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "PRNP \u2014 prion protein (Kanno blood group)",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PRNP\nGene name: prion protein (Kanno blood group)\nAliases / synonyms: ASCR, AltPrP, CD230, CJD, GSS, KURU, PRIP, PrP, PrP27-30, PrP33-35C, PrPc, p27-30\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a membrane glycosylphosphatidylinositol-anchored glycoprotein that tends to aggregate into rod-like structures. The encoded protein contains a highly unstable region of five tandem octapeptide repeats. This gene is found on chromosome 20, approximately 20 kbp upstream of a gene which encodes a biochemically and structurally similar protein to the one encoded by this gene. Mutations in the repeat region as well as elsewhere in this gene have been associated with Creutzfeldt-Jakob disease, fatal familial insomnia, Gerstmann-Straussler disease, Huntington disease-like 1, and kuru. An overlapping open reading frame has been found for this gene that encodes a smaller, structurally unrelated protein, AltPrp. Alternative splicing results in multiple transcript ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PRNP",
+          "aliases": "ASCR, AltPrP, CD230, CJD, GSS, KURU, PRIP, PrP, PrP27-30, PrP33-35C, PrPc, p27-30",
+          "gene_description": "prion protein (Kanno blood group)"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "SOD2 \u2014 superoxide dismutase 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SOD2\nGene name: superoxide dismutase 2\nAliases / synonyms: GC1, GClnc1, IPO-B, IPOB, MNSOD, MVCD6, Mn-SOD, lncRNA-GC1\nOrganism: Homo sapiens\nGene summary: This gene is a member of the iron/manganese superoxide dismutase family. It encodes a mitochondrial protein that forms a homotetramer and binds one manganese ion per subunit. This protein binds to the superoxide byproducts of oxidative phosphorylation and converts them to hydrogen peroxide and diatomic oxygen. Mutations in this gene have been associated with idiopathic cardiomyopathy (IDC), premature aging, sporadic motor neuron disease, and cancer. Alternative splicing of this gene results in multiple transcript variants. A related pseudogene has been identified on chromosome 1. [provided by RefSeq, Apr 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SOD2",
+          "aliases": "GC1, GClnc1, IPO-B, IPOB, MNSOD, MVCD6, Mn-SOD, lncRNA-GC1",
+          "gene_description": "superoxide dismutase 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "PRKN \u2014 parkin RBR E3 ubiquitin protein ligase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PRKN\nGene name: parkin RBR E3 ubiquitin protein ligase\nAliases / synonyms: AR-JP, LPRS2, PARK2, PDJ\nOrganism: Homo sapiens\nGene summary: The precise function of this gene is unknown; however, the encoded protein is a component of a multiprotein E3 ubiquitin ligase complex that mediates the targeting of substrate proteins for proteasomal degradation. Mutations in this gene are known to cause Parkinson disease and autosomal recessive juvenile Parkinson disease. Alternative splicing of this gene produces multiple transcript variants encoding distinct isoforms. Additional splice variants of this gene have been described but currently lack transcript support. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PRKN",
+          "aliases": "AR-JP, LPRS2, PARK2, PDJ",
+          "gene_description": "parkin RBR E3 ubiquitin protein ligase"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::11558989",
+          "title": "Predicting steroid-induced osteonecrosis of the femoral head: role of lipid metabolism biomarkers and radiomics in young and middle-aged adults",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11558989/",
+          "text": "Background\nSteroid-induced osteonecrosis of the femoral head (SONFH) is a progressive degenerative ailment of the hip [1\u20133]. It manifests through femoral head collapse, acetabular degeneration, and secondary arthritis [4, 5]. Nontraumatic necrosis of the femoral head is often caused by alcohol and steroids, but its cause remains uncertain in some patients. The clinical manifestation of this condition emerges as hip discomfort accompanied by movement restrictions [6, 7]. In recent decades, the annual number of confirmed new cases has ranged from 150,000 to 200,000 in China and from 20,000 to 30,000 in the United States [8]. Frequently, in individuals under 50 years of age, necrosis of the femoral head is more common in males than females [9, 10]. Typically, initiated bilaterally, this disorder manifests as extensive necrosis, swift progression, and marked disability [11], greatly impairing patients\u2019 quality of life. Diagnostic techniques include X-rays, computed tomography (CT), and magnetic resonance imaging (MRI). Successful treatment is determined by precise staging [12]. Moreover, early prevention and diagnosis prove advantageous in preventing disease progression. Thus, early disease prediction emerges as paramount.\nImaging histology stands as an emerging domain within the medical realm. Its essence lies in the augmentation of medical imaging precision through quantitative assessment of data, accomplished via automated or semiautomated software [13]. In the realm of visualizing ailments, CT scanning plays a pivotal role. It aptly reveals lesion extent, spatial orientation, and recovery aspects. Furthermore, it discerns stages II and III, although its capacity for diagnosing stage I SONFH remains limited [14]. The integration of imaging histology with CT images is highly important for predicting necrotic femoral head afflictions in high-risk individuals. In the present study, the control cohort included patients with nontraumatic femoral head osteonecrosis. The experimental assemblage comprised patients marked by high-risk attributes (as delineated in Table\u00a01) and diagnosed with nontraumatic femoral head osteonecrosis two years later. Extracted CT images were subjected to imaging histology analysis, paving the way for an osteonecrosis prediction model tailored to high-risk clusters. Effectively predicting the incidence of femoral head necrosis can reduce the need for femoral head surgery.",
+          "cos_sim_score": 0.7173110246658325,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11558989",
+          "title": "Predicting steroid-induced osteonecrosis of the femoral head: role of lipid metabolism biomarkers and radiomics in young and middle-aged adults",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11558989/",
+          "text": "Transcriptome analysis of steroid-induced osteonecrosis of the femoral head differential genes and differential gene enrichment pathway analysis revealed that steroid-induced osteonecrosis of the femoral head, the sphingolipid signaling pathway, the adipocytokine signaling pathway, and other pathways are directly related to lipid metabolism. In addition, these differential genes are significantly correlated with M2 macrophages and mast cell activation, and a review of the literature reveals that these three immune cell statuses affect the level of lipid metabolism [34, 35]. The above results further validate the results of imaging histology, suggesting that there is a strong correlation between the causative factors of steroid-induced osteonecrosis of the femoral head, including lipid metabolism, HDL, and TG, which provides theoretical evidence for the consistency of the results of CT imaging histology.\nA potential limitation of this study lies in the exclusive focus on imaging and clinical data without incorporating molecular-level biomarkers, such as genetic or proteomic indicators, which may provide deeper insights into the underlying mechanisms of SONFH. Incorporating these biomarkers in future studies could enhance the model\u2019s precision and reliability. Additionally, this study predominantly utilizes CT imaging for feature extraction, while alternative imaging modalities like MRI, which may reveal different characteristics of early-stage femoral head necrosis, were not included. Expanding the range of imaging techniques may provide a more comprehensive diagnostic and prognostic assessment of SONFH.\nHowever, there are certain constraints within this investigation. First, the study used a retrospective approach, recruiting a limited number of patients at a single center for analysis. Thus, it becomes imperative to validate these findings through subsequent endeavors encompassing multiple centers and a more extensive sample size, lending itself to a prospective design. Second, the absence of an appropriate algorithm for the automated demarcation of necrotic regions in the SONFH led to the adoption of an interactive technique for the manual segmentation of 3D images. This methodology not only demands a substantial allocation of resources but also exhibits a degree of instability. The potential integration of a deep learning network presents an avenue for increasing operational efficiency and mitigating human error. Finally, the scope of this study revolves around the construction of a predictive model for femoral head necrosis, albeit without delving significantly into prognosis-associated questions. The model clearly necessitates supplementation and refinement in subsequent phases, thereby optimizing its utility in facilitating clinical decision-making.\nConclusions\nIn summary, the utilization of CT imaging combined with clinical data in crafting a predictive model emerges as a potent, quantitatively visual, and efficacious approach to predicting femoral head necrosis. This approach holds considerable practical importance, offering a novel framework for devising treatment strategies moving forward.\nElectronic supplementary material\nBelow is the link to the electronic supplementary material.\nSupplementary Material 1\nSupplementary Material 1",
+          "cos_sim_score": 0.6097622513771057,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::13040433",
+          "title": "ALDH5A1 as a key in osteonecrosis of the femoral head: Insights from bioinformatics and experimental validation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13040433/",
+          "text": "Introduction\nOsteonecrosis of the Femoral Head (ONFH) is a prevalent clinical condition characterized by the degeneration of subchondral bone, leading to severe hip pain and substantial functional impairment (1,2). The disease is multifactorial, with the primary cause being disruption of blood supply to the femoral head, resulting in the death of bone cells, subsequent collapse of the femoral head, and degenerative changes in the hip joint. While corticosteroid use, alcohol consumption, sickle cell disease, and trauma are well-established risk factors for ONFH, the precise mechanisms underlying its pathogenesis remain unclear (3,4). Treatment options for early-stage ONFH range from surgical procedures aimed at preserving hip function to pharmacological therapies (5,6). However, most patients ultimately require total hip arthroplasty, which remains the most effective treatment (7,8). Moreover, many young patients face the need for revision surgeries, exacerbating the socioeconomic burden. Consequently, there is an urgent need to identify novel biomarkers and therapeutic targets, which are crucial for early diagnosis and the development of new treatment strategies for ONFH.\nRecent research has increasingly focused on the role of biomolecules in ONFH pathogenesis. For instance, Yu et al demonstrated the significant influence of immune cell infiltration on ONFH onset and progression, highlighting a close correlation with specific immune cell subpopulations (9). Fang et al identified that immune and m6A regulatory factors play pivotal roles in mediating the inflammatory response in ONFH, particularly involving Th2-dominated immune cells and inflammatory mediators (10). However, the detailed pathological processes remain incompletely understood. Additionally, gene chips and high-throughput sequencing technologies have proven valuable for identifying pathogenic genes, providing reliable and actionable insights (11). Thus, investigating novel molecular markers and immune cell infiltration in ONFH is critical for elucidating its underlying pathogenic mechanisms.\nThis study integrated microarray datasets from the Gene Expression Omnibus (GEO) database with cartilage samples from patients with ONFH and supplemented these with our own microarray data derived from subchondral bone samples of ONFH individuals. Using machine learning techniques, this study identified key genes, validated them via ROC analysis, and compared immune cell infiltration across 22 immune cell subtypes in ONFH and healthy controls using the CIBERSORT algorithm. This study further identified key molecular pathways and functional networks within ONFH tissues, employing bioinformatics analysis to elucidate the roles of differentially expressed mRNAs. Ultimately, critical feature genes were identified as molecular markers for both ONFH diagnosis and immune infiltration.\nMaterials and methods\nObtaining and handling data\nThe GEO database (http://www.ncbi.nlm.nih.gov/geo/) was utilized to download experimental group files for GSE74089 and GSE123568. The dataset, consisting of 14 normal synovial tissue samples (labeled as \u2018normal\u2019) and 34 ONFH synovial tissue samples (labeled as \u2018ONFH\u2019), was processed using the limma package in R software (version 3.58.1) for data correction and normalization. The samples were divided into two groups: the ONFH group (designated as \u2018Treatment\u2019) and the normal group (designated as \u2018Control\u2019). Additionally, GSE178557, which included four samples each of ONFH and normal synovial tissue, was used as an independent validation dataset for external verification.\nIdentification of DEGs and characteristic genes\nTo identify differentially expressed genes (DEGs), a multi-step approach was employed. The limma package in R (version 3.58.1) was used to filter DEGs from all datasets, applying the criteria of logFC >1 and an adjusted P-value <0.05. Following DEG screening, feature genes were selected using Lasso regression, with the glmnet (version 4.1-7) and e1071 (version 1.7-14) packages. Additionally, the Support Vector Machine (SVM) algorithm, implemented via the e1071 package (version 1.7-14), was applied to DEGs to identify another set of feature genes. Finally, Random Forest (RF) analysis was conducted on the DEGs using ggplot2 software, and genes with a gene importance score greater than 2 (rfGenes >2) were selected. By intersecting the characteristic genes identified by these three methods, a final subset of significant genes was obtained. One of these genes was chosen for further investigation as a potential marker gene.\nEvaluate the accuracy of characteristic genes",
+          "cos_sim_score": 0.5971877574920654,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11558989",
+          "title": "Predicting steroid-induced osteonecrosis of the femoral head: role of lipid metabolism biomarkers and radiomics in young and middle-aged adults",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11558989/",
+          "text": "Methods\nPatients\nThe initial CT data of patients with steroid-induced osteonecrosis of the femoral head necrosis from January 2019 to December 2022 were collected in this retrospective study. A total of 288 ONFH patients from Center 5 were randomly divided into a training group and an internal validation group at a ratio of 3:1 to develop and preliminarily validate the model within the same data source. To further assess the model\u2019s generalizability and robustness, an external validation group of 42 ONFH patients from Center 11 was introduced. The inclusion of this independent dataset aimed to evaluate the model\u2019s performance across different populations, ensuring its reliability for broader clinical application.\nThe inclusion and grouping criteria were as follows: (1) patients who were diagnosed with nontraumatic femoral head necrosis at the initial diagnosis served as the control group and (2) patients with high-risk factors and no clinical symptoms at the time of initial diagnosis (Table\u00a01) but who were diagnosed with nontraumatic femoral head necrosis two years later comprised the test group. Notably, we compared the initial CT data of the two groups. The exclusion criteria were as follows: (1) patients with hip tuberculosis; (2) patients with hip disease due to infection; (3) patients with congenital hip dysplasia; (4) patients with hemophilic arthritis; (5) patients with large osteochondromatosis; and (6) patients aged\u2009<\u200918 years. The flowchart depicting patient inclusion is illustrated in Fig.\u00a01.\nFig. 1Patient cohort diagram and study methodology. SONFH, Steroid-induced osteonecrosis of the femoral head. The training cohort was used to construct the prediction model, and the validation cohort (the green box) was used to check the accuracy of the model\nFig. 1\nPatient cohort diagram and study methodology. SONFH, Steroid-induced osteonecrosis of the femoral head. The training cohort was used to construct the prediction model, and the validation cohort (the green box) was used to check the accuracy of the model\nData collection\nIn our study, all preoperative CT scans conformed to the guidelines specified in the Chinese clinical recommendations for the diagnosis and management of adult osteonecrosis of the femoral head [15]. Initially, two radiologists systematically gathered images for the primary assessment of femoral head necrosis using the principal imaging traits endorsed by Chen et al. [16] and Card\u00edn-Pereda A. et al. [17].\nWe subsequently meticulously extracted data from medical records to identify risk factors contributing to femoral head necrosis. The parameters examined included average age, sex distribution, triglyceride (TG) level, low-density lipoprotein (LDL) level, high-density lipoprotein (HDL) level, alkaline phosphatase (ALP) level, red blood cell count, hemoglobin level, albumin level, and creatinine level.\nUpon completion, the two coauthors of this investigation independently reviewed all potential patients against the aforementioned criteria. Any disagreements between the two coauthors were harmonized through consensus, with a third coauthor being consulted when necessary.\nSegmenting ROIs and extracting radiomic features\nBefore the segmentation of regions of interest (ROIs) was initiated, a unanimous consensus was achieved among the three collaborating authors regarding the assessment of identical visuals (inclusive of images depicting the target lesion). These regions of interest were subsequently delineated for each specific target lesion by two skilled radiologists, employing open-source software known as 3D Slicer V4.10.2 (accessible at https://www.slicer.org/), which is renowned for its proficient utilization in semiautomatic segmentation procedures. The scope of the designated ROI in this investigation encompassed the entirety of the femoral head section (depicted in Fig.\u00a02). Radiographic attributes were subsequently extracted from every distinct ROI via 3D slicer software, leveraging an enhanced add-on referred to as the \u201cPyRadiomics package\u201d (accessible at https://www.radiomics.io/PyRadiomics.html). This add-on additionally performed the automated extraction of 874 distinct radiographic features from each individual ROI.",
+          "cos_sim_score": 0.4264182150363922,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11558989",
+          "title": "Predicting steroid-induced osteonecrosis of the femoral head: role of lipid metabolism biomarkers and radiomics in young and middle-aged adults",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11558989/",
+          "text": "Fig. 6Functional analysis of differentially expressed genes associated with hormone-type femoral head necrosis. (A) Difference matrix diagram; (B) volcano map; (C) GO enrichment analysis; (D) KEGG enrichment analysis\nFig. 6\nFunctional analysis of differentially expressed genes associated with hormone-type femoral head necrosis. (A) Difference matrix diagram; (B) volcano map; (C) GO enrichment analysis; (D) KEGG enrichment analysis\nFig. 7Immunoanalysis of hormone-type femoral head necrosis in the control group. (A) Immunoinfiltration map; (B) Violin diagram. The red font represents significantly enriched pathways\nFig. 7\nImmunoanalysis of hormone-type femoral head necrosis in the control group. (A) Immunoinfiltration map; (B) Violin diagram. The red font represents significantly enriched pathways\nDiscussion\nSONFH is a prevalent and challenging condition within the field of orthopedics and is characterized by its progressive and incapacitating nature. Early and precise diagnosis of SONFH is highly important and is a prerequisite for optimizing joint-preserving measures [25]. Moreover, this diagnostic accuracy also has pivotal implications in terms of conserving medical resources and alleviating the burdens imposed on patients [16, 26]. Importantly, SONFH encompasses an array of pathological transformations stemming from the impediment of the blood supply to the femoral head. This multifaceted etiology underscores the parallelism between SONFH variants induced by diverse factors. The pathological perturbations observed in SONFH patients, stemming from various causal factors, mirror those observed in conventional SONFH patients. The International Society of Bone Circulation (ARCO) and the American Academy of Orthopedic Surgeons (AAOS) jointly delineate SONFH as a condition marked by an interruption or compromise in the femoral head\u2019s vascular supply [27, 28]. This, in turn, precipitates the demise of bone marrow constituents and bone cells, subsequently ushering in structural alterations within the femoral head. This cascade of events culminates, in part, in the collapse of the femoral head and the ensuing impairment of joint functionality. The advent of magnetic resonance imaging (MRI) has facilitated the early detection of SONFH. The availability of MRI has revolutionized the early detection of SONFH, yet the diagnostic landscape remains beset by the challenge of distinguishing SONFH from other hip disorders with similar features. This proclivity toward diagnostic broadening and misattribution primarily stems from a lack of comprehensive familiarity with the unique attributes and diagnostic benchmarks of the SONFH. This finding underscores the pivotal clinical significance of prognosticating femoral head necrosis at an early time point.\nIn this study, a comprehensive model of SONFH was developed and validated. The model combines three distinct clinical parameters\u2014age, triglyceride levels (TG) level, and high-density lipoprotein (HDL) level\u2014alongside Rad-scores. This composite model was developed to predict the probability of femoral head necrosis. The analysis drew upon retrospective data collected from a cohort of 330 patients across multiple medical centers. Our approach involves the incorporation of markers for SONFH and pre-SONFH. These markers were devised by assimilating diverse radiologic attributes during the course of the study. Their integration played a pivotal role in our SONFH model\u2019s application, enabling more accurate disease likelihood predictions. To initiate the modeling process, we meticulously selected two distinct patient groups. The first group included individuals who were initially diagnosed with necrosis of the femoral head. This group served as the control cohort. In contrast, the experimental group consisted of patients who presented high-risk factors yet remained symptom-free during the initial diagnosis. The subsequent diagnosis of osteonecrosis of the femoral head occurred two years later in this experimental subset. By juxtaposing the initial CT data from both groups, we synthesized a predictive model. Model construction involved scrutinizing the risk factors that strongly correlated with disease onset.",
+          "cos_sim_score": 0.4042012095451355,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

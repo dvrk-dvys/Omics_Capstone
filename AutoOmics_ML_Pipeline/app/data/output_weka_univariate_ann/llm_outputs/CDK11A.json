@@ -1,0 +1,191 @@
+{
+  "rf_rank": 16,
+  "probe_id": "11755644_s_at",
+  "gene_symbol": "CDK11A",
+  "score": 0.67,
+  "rf_n_nodes": 3,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.5785,
+  "log_fc": 0.5785,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11755644_s_at",
+  "max_score": 0.67,
+  "mean_abs_fold_change": 0.5785,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:27:55",
+  "interpretation": "CDK11A encodes a cyclin-dependent kinase that plays a crucial role in regulating transcription and pre-mRNA splicing. It is involved in phosphorylating RNA polymerase II, which is essential for gene expression during the cell cycle. Although there is no direct evidence linking CDK11A to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in cellular processes such as apoptosis and cell cycle regulation suggests it may influence bone health indirectly. The retrieved evidence primarily highlights its functions in transcription regulation and splicing, but lacks specific connections to SONFH. Therefore, while CDK11A may have biological relevance, its potential as a biomarker for early detection of SONFH is weak due to insufficient direct evidence.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "CDK11A may influence cellular processes relevant to bone health, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "CDK11A (Q9UQ88). https://www.uniprot.org/uniprotkb/Q9UQ88",
+    "CDK11A (Q9UQ88-10). https://www.uniprot.org/uniprotkb/Q9UQ88-10",
+    "CDK11A (Q9UQ88-3). https://www.uniprot.org/uniprotkb/Q9UQ88-3",
+    "CDK11A \u2014 CDK11A. https://platform.opentargets.org/target/ENSG00000008128",
+    "CDK11A \u2194 hypertension. https://platform.opentargets.org/target/ENSG00000008128/associations",
+    "CDK11A \u2194 type 2 diabetes mellitus. https://platform.opentargets.org/target/ENSG00000008128/associations",
+    "CDK11A \u2194 breast cancer. https://platform.opentargets.org/target/ENSG00000008128/associations",
+    "CDK11A \u2194 prostate cancer. https://platform.opentargets.org/target/ENSG00000008128/associations",
+    "CDK11A \u2014 cyclin dependent kinase 11A (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TP53 \u2014 tumor protein p53 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ESR1 \u2014 estrogen receptor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CDKN2A \u2014 cyclin dependent kinase inhibitor 2A (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MYC \u2014 MYC proto-oncogene, bHLH transcription factor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5578,
+    "completion_tokens": 292,
+    "total_tokens": 5870,
+    "estimated_cost_usd": 0.001012
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9UQ88",
+          "title": "CDK11A (Q9UQ88)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UQ88",
+          "text": "Protein: Cyclin-dependent kinase 11A\nFunction: Cyclin-dependent protein kinase that acts as a regulator of transcription and pre-mRNA splicing (PubMed:12501247, PubMed:32367068, PubMed:36104565, PubMed:40858114). Acts as a key regulator of pre-mRNA splicing by mediating phosphorylation of SF3B1, enabling the association between SF3B1 and U5 and U6 snRNAs in the activated spliceosome, thereby promoting spliceosome assembly (PubMed:36104565, PubMed:38059508). Also acts as a regulator of transcription by phosphorylating 'Ser-2' of the CTD (C-terminal domain) of the large subunit of RNA polymerase II (RNAP II) POLR2A (PubMed:32367068, PubMed:40858114). Involved in replication-dependent transcription of histone genes: binds to histone genes and phosphorylates POLR2A at 'Ser-2' of the CTD to specifically control transcriptional elongation of histones and recruitment of 3'-end processing factors (PubMed:32367068). Part of a transcription checkpoint upstream of CDK9, which regulates promoter-proximal pausing by RNA polymerase II, a transcription halt following transcription initiation, but prior to elongation (PubMed:40858114). Probably regulates promoter-proximal pausing by mediating phosphorylation of POLR2A at 'Ser-2' of the CTD (PubMed:40858114) Isoform expressed in a non-cell cycle-dependent manner Isoform specifically expressed during the G2-M phases of the cell cycle (PubMed:12082095). Phosphorylates 'Ser-2' of the CTD (C-terminal domain) of the large subunit of RNA polymerase II (RNAP II) POLR2A (PubMed:38019613). Promotes centromeric transcription to maintain centromeric cohesion during mitosis (PubMed:24436071, PubMed:38019613)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9UQ88-10",
+          "title": "CDK11A (Q9UQ88-10)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UQ88-10",
+          "text": "Protein: Isoform 4 of Cyclin-dependent kinase 11A\nFunction: Isoform specifically expressed during the G2-M phases of the cell cycle (PubMed:12082095). Phosphorylates 'Ser-2' of the CTD (C-terminal domain) of the large subunit of RNA polymerase II (RNAP II) POLR2A (PubMed:38019613). Promotes centromeric transcription to maintain centromeric cohesion during mitosis (PubMed:24436071, PubMed:38019613)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9UQ88-3",
+          "title": "CDK11A (Q9UQ88-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9UQ88-3",
+          "text": "Protein: Isoform SV2 of Cyclin-dependent kinase 11A",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000008128::function",
+          "title": "CDK11A \u2014 CDK11A",
+          "url": "https://platform.opentargets.org/target/ENSG00000008128",
+          "text": "Function: Cyclin-dependent protein kinase that acts as a regulator of transcription and pre-mRNA splicing (PubMed:12501247, PubMed:32367068, PubMed:36104565, PubMed:40858114). Acts as a key regulator of pre-mRNA splicing by mediating phosphorylation of SF3B1, enabling the association between SF3B1 and U5 and U6 snRNAs in the activated spliceosome, thereby promoting spliceosome assembly (PubMed:36104565, PubMed:38059508). Also acts as a regulator of transcription by phosphorylating 'Ser-2' of the CTD (C-terminal domain) of the large subunit of RNA polymerase II (RNAP II) POLR2A (PubMed:32367068, PubMed:40858114). Involved in replication-dependent transcription of histone genes: binds to histone genes and phosphorylates POLR2A at 'Ser-2' of the CTD to specifically control transcriptional elongation of histones and recruitment of 3'-end processing factors (PubMed:32367068). Part of a transcription checkpoint upstream of CDK9, which regulates promoter-proximal pausing by RNA polymerase II, a transcription halt following transcription initiation, but prior to elongation (PubMed:40858114). Probably regulates promoter-proximal pausing by mediating phosphorylation of POLR2A at 'Ser-2' of the CTD (PubMed:40858114).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000008128::EFO_0000537",
+          "title": "CDK11A \u2194 hypertension",
+          "url": "https://platform.opentargets.org/target/ENSG00000008128/associations",
+          "text": "Disease: hypertension\nDescription: Persistently high systemic arterial blood pressure. Based on multiple readings (blood pressure determination), hypertension is currently defined as when systolic pressure is consistently greater than 140 mm Hg or when diastolic pressure is consistently 90 mm Hg or more.\nAssociation score: 0.146",
+          "cos_sim_score": 0.1455417699545167,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000008128::MONDO_0005148",
+          "title": "CDK11A \u2194 type 2 diabetes mellitus",
+          "url": "https://platform.opentargets.org/target/ENSG00000008128/associations",
+          "text": "Disease: type 2 diabetes mellitus\nDescription: A type of diabetes mellitus that is characterized by insulin resistance or desensitization and increased blood glucose levels. This is a chronic disease that can develop gradually over the life of a patient and can be linked to both environmental factors and heredity.\nAssociation score: 0.139",
+          "cos_sim_score": 0.13907925933143725,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000008128::MONDO_0007254",
+          "title": "CDK11A \u2194 breast cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000008128/associations",
+          "text": "Disease: breast cancer\nDescription: A primary or metastatic malignant neoplasm involving the breast. The vast majority of cases are carcinomas arising from the breast parenchyma or the nipple. Malignant breast neoplasms occur more frequently in females than in males.\nAssociation score: 0.101",
+          "cos_sim_score": 0.10067975537958464,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000008128::MONDO_0008315",
+          "title": "CDK11A \u2194 prostate cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000008128/associations",
+          "text": "Disease: prostate cancer\nDescription: A primary or metastatic malignant tumor involving the prostate gland. The vast majority are carcinomas.\nAssociation score: 0.087",
+          "cos_sim_score": 0.087441567007693,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "CDK11A \u2014 cyclin dependent kinase 11A",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CDK11A\nGene name: cyclin dependent kinase 11A\nAliases / synonyms: CDC2L2, CDC2L3, CDK11-p110, CDK11-p46, CDK11-p58, PITSLRE, p58GTA\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the serine/threonine protein kinase family. Members of this kinase family are known to be essential for eukaryotic cell cycle control. Due to a segmental duplication, this gene shares very high sequence identity with a neighboring gene. These two genes are frequently deleted or altered in neuroblastoma. The protein kinase encoded by this gene can be cleaved by caspases and may play a role in cell apoptosis. Alternative splicing results in multiple transcript variants. [provided by RefSeq, Sep 2015]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CDK11A",
+          "aliases": "CDC2L2, CDC2L3, CDK11-p110, CDK11-p46, CDK11-p58, PITSLRE, p58GTA",
+          "gene_description": "cyclin dependent kinase 11A"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TP53 \u2014 tumor protein p53",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TP53\nGene name: tumor protein p53\nAliases / synonyms: BCC7, BMFS5, LFS1, P53, TRP53\nOrganism: Homo sapiens\nGene summary: This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TP53",
+          "aliases": "BCC7, BMFS5, LFS1, P53, TRP53",
+          "gene_description": "tumor protein p53"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ESR1 \u2014 estrogen receptor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ESR1\nGene name: estrogen receptor 1\nAliases / synonyms: ER, ESR, ESRA, ESTRR, Era, NR3A1\nOrganism: Homo sapiens\nGene summary: This gene encodes an estrogen receptor and ligand-activated transcription factor. The canonical protein contains an N-terminal ligand-independent transactivation domain, a central DNA binding domain, a hinge domain, and a C-terminal ligand-dependent transactivation domain. The protein localizes to the nucleus where it may form either a homodimer or a heterodimer with estrogen receptor 2. The protein encoded by this gene regulates the transcription of many estrogen-inducible genes that play a role in growth, metabolism, sexual development, gestation, and other reproductive functions and is expressed in many non-reproductive tissues. The receptor encoded by this gene plays a key role in breast cancer, endometrial cancer, and osteoporosis. This gene is reported to have dozens of transcript va...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ESR1",
+          "aliases": "ER, ESR, ESRA, ESTRR, Era, NR3A1",
+          "gene_description": "estrogen receptor 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CDKN2A \u2014 cyclin dependent kinase inhibitor 2A",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CDKN2A\nGene name: cyclin dependent kinase inhibitor 2A\nAliases / synonyms: ARF, CAI2, CDK4I, CDKN2, CMM2, INK4, INK4A, MLM, MTS-1, MTS1, P14, P14ARF, P16, P16-INK4A, P16INK4, P16INK4A, P19, P19ARF, TP16\nOrganism: Homo sapiens\nGene summary: This gene generates several transcript variants which differ in their first exons. At least three alternatively spliced variants encoding distinct proteins have been reported, two of which encode structurally related isoforms known to function as inhibitors of CDK4 kinase. The remaining transcript includes an alternate first exon located 20 Kb upstream of the remainder of the gene; this transcript contains an alternate open reading frame (ARF) that specifies a protein which is structurally unrelated to the products of the other variants. This ARF product functions as a stabilizer of the tumor suppressor protein p53 as it can interact with, and sequester, the E3 ubiquitin-protein ligase MDM2, a protein responsible for the degradation of p53. In spite of the structural and functional differe...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CDKN2A",
+          "aliases": "ARF, CAI2, CDK4I, CDKN2, CMM2, INK4, INK4A, MLM, MTS-1, MTS1, P14, P14ARF, P16, P16-INK4A, P16INK4, P16INK4A, P19, P19ARF, TP16",
+          "gene_description": "cyclin dependent kinase inhibitor 2A"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MYC \u2014 MYC proto-oncogene, bHLH transcription factor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MYC\nGene name: MYC proto-oncogene, bHLH transcription factor\nAliases / synonyms: MRTL, MYCC, bHLHe39, c-Myc\nOrganism: Homo sapiens\nGene summary: This gene is a proto-oncogene and encodes a nuclear phosphoprotein that plays a role in cell cycle progression, apoptosis and cellular transformation. The encoded protein forms a heterodimer with the related transcription factor MAX. This complex binds to the E box DNA consensus sequence and regulates the transcription of specific target genes. Amplification of this gene is frequently observed in numerous human cancers. Translocations involving this gene are associated with Burkitt lymphoma and multiple myeloma in human patients. There is evidence to show that translation initiates both from an upstream, in-frame non-AUG (CUG) and a downstream AUG start site, resulting in the production of two isoforms with distinct N-termini. [provided by RefSeq, Aug 2017]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MYC",
+          "aliases": "MRTL, MYCC, bHLHe39, c-Myc",
+          "gene_description": "MYC proto-oncogene, bHLH transcription factor"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

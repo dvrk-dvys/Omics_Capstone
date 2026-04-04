@@ -1,0 +1,218 @@
+{
+  "rf_rank": 49,
+  "probe_id": "11726636_s_at",
+  "gene_symbol": "KAT6A",
+  "score": 0.5,
+  "rf_n_nodes": 1,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.7369,
+  "log_fc": 0.7369,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11726636_s_at",
+  "max_score": 0.5,
+  "mean_abs_fold_change": 0.7369,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:46:43",
+  "interpretation": "KAT6A encodes a histone acetyltransferase that plays a crucial role in modifying chromatin structure and regulating gene expression through acetylation of histones. This gene is involved in the transcriptional regulation of key factors such as RUNX2, which is essential for osteoblast differentiation and bone formation. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), KAT6A may influence the balance between adipogenesis and osteogenesis in bone marrow stem cells, particularly under conditions of oxidative stress induced by glucocorticoids. Although direct evidence linking KAT6A to SONFH is limited, its role in regulating osteogenic differentiation and its association with oxidative stress pathways suggest it could serve as a potential biomarker for early detection of SONFH. The evidence is primarily inferred from its biological functions and related studies, leading to a moderate confidence in its relevance as a biomarker.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "KAT6A may influence the differentiation of bone marrow stem cells in the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "KAT6A (Q92794). https://www.uniprot.org/uniprotkb/Q92794",
+    "KAT6A \u2014 KAT6A. https://platform.opentargets.org/target/ENSG00000083168",
+    "KAT6A \u2194 autosomal dominant intellectual disability-craniofacial anomalies-cardiac defects syndrome. https://platform.opentargets.org/target/ENSG00000083168/associations",
+    "KAT6A \u2194 Intellectual disability. https://platform.opentargets.org/target/ENSG00000083168/associations",
+    "KAT6A \u2194 autosomal dominant non-syndromic intellectual disability. https://platform.opentargets.org/target/ENSG00000083168/associations",
+    "KAT6A \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000083168/associations",
+    "KAT6A \u2014 lysine acetyltransferase 6A (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TP53 \u2014 tumor protein p53 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ESR1 \u2014 estrogen receptor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "AKT1 \u2014 AKT serine/threonine kinase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "SIRT1 \u2014 sirtuin 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Oxidative stress and bone marrow adipocytes: Molecular mechanisms and possible implications (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12988503/",
+    "Epigenetics: Novel crucial approach for osteogenesis of mesenchymal stem cells (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC10278427/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9611,
+    "completion_tokens": 332,
+    "total_tokens": 9943,
+    "estimated_cost_usd": 0.001641
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q92794",
+          "title": "KAT6A (Q92794)",
+          "url": "https://www.uniprot.org/uniprotkb/Q92794",
+          "text": "Protein: Histone acetyltransferase KAT6A\nFunction: Histone acetyltransferase that acetylates lysine residues in histone H3 and histone H4 (in vitro) (PubMed:11742995, PubMed:11965546). Component of the MOZ/MORF complex which has a histone H3 acetyltransferase activity (PubMed:11965546). May act as a transcriptional coactivator for RUNX1 and RUNX2 (PubMed:12771199). Acetylates p53/TP53 at 'Lys-120' and 'Lys-382' and controls its transcriptional activity via association with PML (PubMed:23431171). May play a role in leukemogenic gene transcription (PubMed:39794553)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000083168::function",
+          "title": "KAT6A \u2014 KAT6A",
+          "url": "https://platform.opentargets.org/target/ENSG00000083168",
+          "text": "Function: Histone acetyltransferase that acetylates lysine residues in histone H3 and histone H4 (in vitro) (PubMed:11742995, PubMed:11965546). Component of the MOZ/MORF complex which has a histone H3 acetyltransferase activity (PubMed:11965546). May act as a transcriptional coactivator for RUNX1 and RUNX2 (PubMed:12771199). Acetylates p53/TP53 at 'Lys-120' and 'Lys-382' and controls its transcriptional activity via association with PML (PubMed:23431171). May play a role in leukemogenic gene transcription (PubMed:39794553).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000083168::MONDO_0014558",
+          "title": "KAT6A \u2194 autosomal dominant intellectual disability-craniofacial anomalies-cardiac defects syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000083168/associations",
+          "text": "Disease: autosomal dominant intellectual disability-craniofacial anomalies-cardiac defects syndrome\nDescription: A rare genetic neurodevelopmental disorder characterized by global developmental delay (DD) and variable degrees of intellectual disability (ID) with delayed or limited/absent speech development associated with neonatal hypotonia, feeding difficulties, cardiac anomalies and dysmorphic facial features, predominantly broad nasal tip and thin, tented upper lip. Microcephaly, frequent infections, gastrointestinal and/or ocular anomalies have also been described.\nAssociation score: 0.791",
+          "cos_sim_score": 0.7908994336990406,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000083168::HP_0001249",
+          "title": "KAT6A \u2194 Intellectual disability",
+          "url": "https://platform.opentargets.org/target/ENSG00000083168/associations",
+          "text": "Disease: Intellectual disability\nDescription: The term intellectual disability or intellectual developmental disorder is used to describe significantly sub-average intellectual and adaptive functioning based on clinical assessment and as measured by individually administered, appropriately normed, standardized and validated tests of intellectual functioning and adaptive behavior, with onset during the developmental period from infancy through adolescence.\nAssociation score: 0.576",
+          "cos_sim_score": 0.575995566021211,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000083168::MONDO_0015802",
+          "title": "KAT6A \u2194 autosomal dominant non-syndromic intellectual disability",
+          "url": "https://platform.opentargets.org/target/ENSG00000083168/associations",
+          "text": "Disease: autosomal dominant non-syndromic intellectual disability\nDescription: Autosomal dominant form of non-syndromic intellectual disability.\nAssociation score: 0.572",
+          "cos_sim_score": 0.5717561501238687,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000083168::EFO_0005772",
+          "title": "KAT6A \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000083168/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.560",
+          "cos_sim_score": 0.5598449030818289,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "KAT6A \u2014 lysine acetyltransferase 6A",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KAT6A\nGene name: lysine acetyltransferase 6A\nAliases / synonyms: ARTHS, MOZ, MRD32, MYST-3, MYST3, RUNXBP2, ZC2HC6A, ZNF220\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the MOZ, YBFR2, SAS2, TIP60 family of histone acetyltransferases. The protein is composed of a nuclear localization domain, a double C2H2 zinc finger domain that binds to acetylated histone tails, a histone acetyl-transferase domain, a glutamate/aspartate-rich region, and a serine- and methionine-rich transactivation domain. It is part of a complex that acetylates lysine-9 residues in histone 3, and in addition, it acts as a co-activator for several transcription factors. Allelic variants of this gene are associated with an autosomal dominant form of cognitive disability. Chromosomal translocations of this gene are associated with acute myeloid leukemia. Alternative splicing results in multiple transcript variants. [provided by RefSeq, Jul 2017]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KAT6A",
+          "aliases": "ARTHS, MOZ, MRD32, MYST-3, MYST3, RUNXBP2, ZC2HC6A, ZNF220",
+          "gene_description": "lysine acetyltransferase 6A"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TP53 \u2014 tumor protein p53",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TP53\nGene name: tumor protein p53\nAliases / synonyms: BCC7, BMFS5, LFS1, P53, TRP53\nOrganism: Homo sapiens\nGene summary: This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TP53",
+          "aliases": "BCC7, BMFS5, LFS1, P53, TRP53",
+          "gene_description": "tumor protein p53"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ESR1 \u2014 estrogen receptor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ESR1\nGene name: estrogen receptor 1\nAliases / synonyms: ER, ESR, ESRA, ESTRR, Era, NR3A1\nOrganism: Homo sapiens\nGene summary: This gene encodes an estrogen receptor and ligand-activated transcription factor. The canonical protein contains an N-terminal ligand-independent transactivation domain, a central DNA binding domain, a hinge domain, and a C-terminal ligand-dependent transactivation domain. The protein localizes to the nucleus where it may form either a homodimer or a heterodimer with estrogen receptor 2. The protein encoded by this gene regulates the transcription of many estrogen-inducible genes that play a role in growth, metabolism, sexual development, gestation, and other reproductive functions and is expressed in many non-reproductive tissues. The receptor encoded by this gene plays a key role in breast cancer, endometrial cancer, and osteoporosis. This gene is reported to have dozens of transcript va...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ESR1",
+          "aliases": "ER, ESR, ESRA, ESTRR, Era, NR3A1",
+          "gene_description": "estrogen receptor 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "AKT1 \u2014 AKT serine/threonine kinase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AKT1\nGene name: AKT serine/threonine kinase 1\nAliases / synonyms: AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA\nOrganism: Homo sapiens\nGene summary: This gene encodes one of the three members of the human AKT serine-threonine protein kinase family which are often referred to as protein kinase B alpha, beta, and gamma. These highly similar AKT proteins all have an N-terminal pleckstrin homology domain, a serine/threonine-specific kinase domain and a C-terminal regulatory domain. These proteins are phosphorylated by phosphoinositide 3-kinase (PI3K). AKT/PI3K forms a key component of many signalling pathways that involve the binding of membrane-bound ligands such as receptor tyrosine kinases, G-protein coupled receptors, and integrin-linked kinase. These AKT proteins therefore regulate a wide variety of cellular functions including cell proliferation, survival, metabolism, and angiogenesis in both normal and malignant cells. AKT proteins ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AKT1",
+          "aliases": "AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA",
+          "gene_description": "AKT serine/threonine kinase 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "SIRT1 \u2014 sirtuin 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SIRT1\nGene name: sirtuin 1\nAliases / synonyms: SIR2, SIR2L1, SIR2alpha\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the sirtuin family of proteins, homologs to the yeast Sir2 protein. Members of the sirtuin family are characterized by a sirtuin core domain and grouped into four classes. The functions of human sirtuins have not yet been determined; however, yeast sirtuin proteins are known to regulate epigenetic gene silencing and suppress recombination of rDNA. Studies suggest that the human sirtuins may function as intracellular regulatory proteins with mono-ADP-ribosyltransferase activity. The protein encoded by this gene is included in class I of the sirtuin family. Alternative splicing results in multiple transcript variants. [provided by RefSeq, Dec 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SIRT1",
+          "aliases": "SIR2, SIR2L1, SIR2alpha",
+          "gene_description": "sirtuin 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::12988503",
+          "title": "Oxidative stress and bone marrow adipocytes: Molecular mechanisms and possible implications",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12988503/",
+          "text": "The differentiation of BMSCs into osteoblasts or BMAs is significantly influenced by endocrine molecules, particularly estrogen. The decrease in estrogen levels after menopause is believed to be the trigger for oxidative stress [95]. Redox imbalance in animals that underwent OVX and postmenopausal women is characterized by increased levels of lipid peroxidation markers, alongside a decrease in antioxidant enzyme activity [96]. Estrogen aids bone formation by stimulating the growth hormone/insulin-like growth factor-1 (GH/IGF-1) axis, directly affecting osteoblasts [97]. Research indicates that low estrogen levels lead to increased BMAT expansion, which can be reversed and reduced with estrogen therapy [98]. Osteoporosis mice exhibit higher ROS levels in BMSCs, resulting in enhanced adipocyte differentiation and reduced osteoblast differentiation [99]. 17-Estradiol, a steroid hormone, is crucial in regulating cell proliferation, viability, and intracellular redox status [100,101]. It helps protect the body from estrogen-related effects on bone marrow growth and development. It was observed that 17\u03b2-Estradiol protects BMSCs against the harmful effects of ROS overproduction and decreases lipid peroxidation [102]. Additionally, subsequent research indicated that 17\u03b2-Estradiol facilitates the differentiation of human and mouse BMSCs into osteoblasts while inhibiting their commitment to the adipocyte lineage and formation through Estrogen Receptor 1 (ESR1) [103,104]. Estrogen receptor alpha (ER\u03b1) is a key player, as its inhibition was found to trigger oxidative stress and mitochondrial imbalance in BMSCs, potentially leading to BMAs proliferation [11,105]. In vitro experiments have demonstrated that estrogen plays a dual role, enhancing osteoblast differentiation and suppressing BMAs differentiation [106,107]. It is hypothesized that estrogen promotes the reduction of BMAT accumulation postmenopause, with oxidative stress modulation likely playing an important role in this process.\nChanges in the hormonal environment of aerobic cells can affect the oxidative-reductive balance in living systems [108]. Reduced estrogen levels increase follicle-stimulating hormone (FSH) concentrations, which are influenced by endocrine feedback from the gonadal\u2013pituitary axis. Research indicates that inhibiting the binding of FSH ligands to their receptors prevents the rise in BMAT post-OVX [109]. FSH receptors are expressed in both BMAs and BMSCs. Studies in FSH receptor-deficient mice suggest that elevated postmenopausal FSH levels may promote lipogenic differentiation of skeletal stem cells.\nGlucocorticoids are important in regulating the stress response of the body and are commonly used as anti-inflammatory and immunosuppressive agents in clinical settings [110]. However, long-term exposure to high glucocorticoid levels can cause oxidative stress damage and persistent stress [111]. Although physiological levels of glucocorticoids are necessary for normal bone development, extended glucocorticoid therapy can lead to secondary osteoporosis and an increased fracture risk [112]. Glucocorticoids directly affect bone marrow cells and influence the expression of various genes involved in adipogenesis and osteogenesis. It significantly increased the expression of KLF15, PPAR\u03b3, and CAAT enhancer-binding protein alpha (C/EBP\u03b1), key regulators of adipogenesis. Additionally, it upregulated FOXO3a pathway protein expression while inhibiting the typical Wnt signaling pathway essential for osteogenesis [113]. Treatment with glucocorticoids can promote fat accumulation in bone marrow, leading to decreased bone trabeculae. In mouse models, glucocorticoid-induced osteoporosis is associated with increased adipogenesis and osteoblast inhibition [114]. Lack of 11\u03b2-hydroxysteroid dehydrogenase 1, a key enzyme in glucocorticoid metabolism, prevents bone marrow adipogenesis [115]. Furthermore, dexamethasone, a glucocorticoid, can influence BMAs function by affecting lipid metabolism and hormone secretion [116].",
+          "cos_sim_score": 0.4389181435108185,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10278427",
+          "title": "Epigenetics: Novel crucial approach for osteogenesis of mesenchymal stem cells",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10278427/",
+          "text": "136\n Another study showed that with the aging of MSCs, the accumulation of reactive oxygen species (ROS) increased, leading to the reduction of osteogenic ability. The Nrf2/ARE signaling pathway is responsible for ROS scavenging. KAT6A, an acetyltransferase, could regulate the Nrf2/ARE signaling pathway and improve the acetylation level, thus inhibiting ROS accumulation and promoting osteogenic differentiation.\n137\n Acetylation of critical factors in specific signaling pathways is also required for osteogenesis. After SMAD signaling is activated, an H3K9 acetyltransferase, PCAF, acetylates histone H3K9 at promoters of BMP pathway genes (e.g. BMP2, BMP4, and BMPR1B) and activates BMP signaling in MSCs.\n138\n Other studies also substantiated that the significantly increased level of H3K9ac recruited onto the RUNX2 promoter could promote ADSCs osteogenic differentiation through BMP signaling.139,140 Wnt/\u03b2-catenin signaling is activated during osteogenesis of BMSCs but inhibited during osteoporosis. The expression of Wnt genes (e.g. Wnt1, Wnt6, Wnt10a, and Wnt10b) and their acetylation levels are decreased in osteoporosis BMSCs. The histone acetyltransferase GCN5 has been identified as one of the key factors. Downregulation of GCN5 decreases its recruitment onto Wnt promoter regions and impairs H3K9 acetylation, ultimately inhibiting \u03b2-catenin activation and osteogenesis in BMSCs.\n141\nClassified into four groups, the HDAC family encompasses a minimum of 18 genes, including class I (HDAC1, HDAC2, HDAC3, and HDAC8) and class II (HDAC4, HDAC5, HDAC6, HDAC7, HDAC9, and HDAC10). HDAC6 is significantly increased in BMSCs of aged mice. HDAC6 can directly target the transcription factor binding site (\u2212\u2009327 bp/\u2212\u20091 bp) of RUNX2, thus causing hypoacetylation of H3K9/K14 and H4K12 to inhibit its expression.\n142\n Similarly, another study indicated that HDAC9 levels were also increased in aged BMSCs. Further results showed that HDAC9 enhanced autophagy in BMSCs by upregulating H3K9ac of autophagy-associated genes (ATG7, BECN1, LC3a, and LC3b), thereby improving bone mass loss.\n143\n It is well accepted that dexamethasone, a potent synthetic form of the steroid glucocorticoid, is usually included in the in-vitro osteogenic culture system. Low GC concentration promotes MSCs commitment and enhances differentiation, which may be closely related to acetylation modification. The main downstream effector of steroid glucocorticoid is the glucocorticoid receptor which positively regulates RUNX2 and OCN transcription through direct binding. However, a study by Rimando et al. suggested that long-term use of high concentrations of dexamethasone yielded different effects on the osteogenic induction of MSCs. The early osteogenic marker RUNX2 was highly responsive to dexamethasone. With time, RUNX2 became unresponsive to the treatment, and inhibition of OCN occurred in all concentrations of dexamethasone. A high concentration of dexamethasone caused a delay or blockade of cytoplasm-nucleus trafficking of the GR-ligand complex. Then HDAC6 could translocate to the nucleus and combine with GR. GR-HDAC6 complex negatively regulated OCN promoters to inhibit osteogenesis.\n144\n Meanwhile, another study first provided evidence that HDAC2 could bind with GR in the cytoplasm. The ChIP assay confirmed that GR was recruited to the nGRE element in the OCN promoter and inhibited its expression.\n145\n It has been established that HDAC1 expression is reduced during osteogenesis, and inhibiting HDAC1 activity results in transcription activation. In this respect, under the stimulation of cyclic mechanical stretch, the expression of HDAC1 protein is further downregulated, activating the Notch signaling pathway. Besides, this mechanical stimulation promotes the mRNA and protein expression of the ligand for the Notch receptor JAG1 and its histone H3 acetylation level, thus promoting osteogenesis.\n146",
+          "cos_sim_score": 0.42564913630485535,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12988503",
+          "title": "Oxidative stress and bone marrow adipocytes: Molecular mechanisms and possible implications",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12988503/",
+          "text": "Parathyroid hormone (PTH) plays a critical role in regulating calcium homeostasis [117]. Previous research has demonstrated that intermittent pulses of PTH stimulate bone formation and encourage differentiation of BMSCs into osteoblasts [118]. In the laboratory, PTH decreases the generation of ROS in osteoblast, suppresses lipoxygenase Alox15 expression, and increases glutathione levels [119]. According to rodent studies, BMAs decrease following PTH treatment. Additionally, evidence suggests that PTH may exert osteoanabolic effects by inhibiting adipogenesis [120]. Studies have indicated that PTH suppresses the transformation of skeletal stem cells into adipocytes. In animal studies, deactivating PTH receptors led to the expansion of BMAT [121]. Intermittent PTH administration decreased the quantity and size of adipocytes, reduced intracellular lipid droplets, and enhanced lipolytic enzyme expression in lipogenesis assays [122]. In Fig. 2, we show the main factors mediating BMSCs bias towards BMAs differentiation. In addition to the previously mentioned essential hormones involved in bone homeostasis, numerous drugs commonly used in clinical practice can alter marrow adipose tissue expansion.Fig. 2Under both natural and pathological conditions, such as aging, estrogen deficiency, and the administration of chemotherapeutic drugs, BMSCs have a tendency to differentiate into adipocytes. This is primarily due to a significant increase in ROS in the bone microenvironment. However, certain natural plant polyphenols and antioxidant compounds have been found to inhibit ROS production, enhance the antioxidant defense system, and ultimately promote osteogenesis and inhibit BMAT in the body.Fig. 2\nFig. 2\nUnder both natural and pathological conditions, such as aging, estrogen deficiency, and the administration of chemotherapeutic drugs, BMSCs have a tendency to differentiate into adipocytes. This is primarily due to a significant increase in ROS in the bone microenvironment. However, certain natural plant polyphenols and antioxidant compounds have been found to inhibit ROS production, enhance the antioxidant defense system, and ultimately promote osteogenesis and inhibit BMAT in the body.\nCells produce high levels of ROS during adipogenic differentiation [123]. However, in vitro cellular experiments on the role of partial ROS in adipocyte differentiation yield inconsistent results. Utilizing NADPH as a significant source of ROS, Kanda et al. discovered that NOX4 increases intracellular ROS levels in MSCs, which in turn mediate adipocyte differentiation via CREB [124]. Fullerol, a water-soluble fullerene derivative known for its free radical scavenging properties, has been demonstrated to hinder adipogenesis while promoting osteogenesis, possibly by reducing cellular ROS levels [125]. Melatonin, an endogenous indoleamine produced by the mammalian pineal gland, is crucial for scavenging free radicals and stimulating antioxidant enzymes [126]. Research indicates that melatonin with a concentration gradient inhibits iron overload-induced adipogenic cytogenesis, suggesting a beneficial effect of endogenous iron and ROS on adipocyte differentiation [126]. Gautam et al. discovered that EGb 761, a concentrated extract of Ginkgo biloba, can increase intracellular ROS expression to inhibit PPAR signaling and suppress adipocyte differentiation [127]. Capsaicin induces cell cycle arrest and enhances apoptosis by boosting ROS and reactive nitrogen species (RNS) production, ultimately hindering adipogenic differentiation and adipocyte maturation [128]. Moreover, elevated glucose levels have been shown to compromise the function of mature human BMAs by raising ROS levels [129]. ROS exerts a double-edged effect on adipocyte differentiation, with low levels being supportive and high levels being detrimental, causing functional impairment and apoptosis.",
+          "cos_sim_score": 0.4229474365711212,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12988503",
+          "title": "Oxidative stress and bone marrow adipocytes: Molecular mechanisms and possible implications",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12988503/",
+          "text": "Fig. 4\nOxidative stress mediates crosstalk between adipocytes and oateoclastic and osteoblastic differentiation. An escalation in oxidative stress promotes a favorable differentiation of BMSCs into adipocytes. Throughout this process, signaling molecules like Sirt1 and PGC-1\u03b1 participate in antioxidant defense mechanisms to counteract the excessive production of ROS. Additionally, an abundance of adipocytes can release Extracellular Vesicles (EVs) and Free Fatty Acids (FFAs) to inhibit osteoblast differentiation. Conversely, adipocytes can also secrete inflammatory factors and RANKL, a pivotal regulator of osteoclastic differentiation, to encourage precursor cells to differentiate into osteoclasts.\n3\nThe implications of clinical research\nBasic research in orthopedics delves deeply into the molecular mechanisms of bone metabolism, providing revolutionary targets for clinical diagnosis and treatment. For instance, the discovery of the key factor RANKL for osteoclast differentiation directly led to the development of denosumab, which significantly reduced the risk of vertebral fractures in clinical trials [236]. The research on the NRF2-KEAP1 pathway's role in regulating bone homeostasis revealed not only the molecular logic of antioxidants in preventing osteoporosis but also guided the design of clinical trials for various natural compounds [237,238]. These translational achievements confirm that only by validating the pathological mechanisms in cell/animal models can precise intervention strategies be developed.\nAt present, there is still a lack of direct clinical evidence for targeting the differentiation of bone marrow adipocytes to regulate bone metabolism. Here, we focus on many commonly used drugs in clinical practice. The impact of these drugs on femoral adipocyte differentiation, the specific regulatory mechanisms involved, and evidence suggesting their potential role in mediating intramedullary oxidative stress are summarized in Table 3. Based on the relevant information in the table, we found that many clinical drugs can specifically inhibit the oxidative stress level in the bone marrow microenvironment, thereby suppressing adipocyte differentiation and demonstrating positive bone protection effects. However, some drugs that tend to induce oxidative stress in the bone marrow are more likely to promote the differentiation of BMAs.Table 3Effects of clinically relevant drugs on BMAs and possible mechanisms of action.Table 3DrugsIndicationsEffects on BMAsPossible mechanisms regulating adipocyte differentiationPossible role in modulating oxidative stressRef.MethotrexateVarious types of acute leukemia and other malignant neoplastic diseasesInduction of bone marrow adipogenesisRegulation of Wnt/\u03b2-Catenin signalingPromotes tissue MDA and MPO activity[79,239]RosiglitazoneType 2 diabetesInduction of bone marrow adipogenesisRegulation of PPAR\u03b3 signalsInduced oxidative stress[80,240]PaclitaxelWidely used in the treatment of breast, ovarian, some head and neck, and lung cancersInduction of bone marrow adipogenesisPromotion of PPAR\u03b3 expressionRegulation of mitochondrial ROS production[241,242]Risedronic acidPostmenopausal osteoporosisInhibition of bone marrow adipogenesisInhibits secretion of pro-inflammatory factorsReduces MDA and NO levels[243,244]Strontium ranelatePostmenopausal osteoporosisInhibition of bone marrow adipogenesisRegulation of nuclear factor of activated T-cells/Maf and Wnt signalingInhibition of NOX production and promotion of antioxidant protein expression[245,246]PravastatinPrimary hypercholesterolemiaSuppression of bone marrow adipose tissue areaInhibits PPAR\u03b3 expression and increases the expression of Wnt3a, LRP5, \u03b2-catenin and RUNX2Inhibition of NOX and ROS production[[247], [248], [249]]\nTable 3\nEffects of clinically relevant drugs on BMAs and possible mechanisms of action.\nDespite the promising therapeutic potential of targeting BMAT for bone-related diseases, it is crucial to acknowledge a significant gap between preclinical findings and clinical application. As of now, direct clinical evidence, such as interventional trials demonstrating that pharmacological inhibition of BMAT leads to improved bone mass or reduced fracture risk in humans, remains scarce. This gap primarily stems from the nascent stage of the field, where specific and safe pharmacological agents for human BMAT are still under development. The current ambiguity in translational relevance can be attributed to several challenges: (i) the lack of highly specific agents that can target bone marrow adipocytes without affecting other metabolic tissues; (ii) the technical difficulties in non-invasively quantifying BMAT and its response to treatment in human patients for use as a biomarker. Therefore, the field must move beyond simply observing BMAT expansion to precisely understanding the functional heterogeneity of different BMAT depots and their secretory profile in disease states.\n4\nConclusions and perspectives",
+          "cos_sim_score": 0.4064488410949707,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12988503",
+          "title": "Oxidative stress and bone marrow adipocytes: Molecular mechanisms and possible implications",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12988503/",
+          "text": "Competitive spectral distribution occurs between adipogenesis and osteogenesis in BMSCs, leading to increased bone marrow adiposity and subsequent impairment of osteoblastic bone formation. PPAR\u03b3, a key regulator of BMAs formation, is a common target of various pro-adipogenic signaling pathways. Previous studies have investigated the effect of the PPAR\u03b3 pathway on adipogenesis regulation under oxidative stress conditions. The canonical Wnt/\u03b2-catenin and BMP signaling pathways are critical for regulating osteogenesis in BMSCs, with Wnt signaling activation playing a role in inhibiting bone marrow adipogenesis. Elevated oxidative stress in BMSCs, induced by high glucose levels and estrogen deficiency, adversely affects osteogenic differentiation by influencing Wnt/\u03b2-catenin and BMP signaling pathways through increased ROS production [216,217]. Changes in these signaling pathways in BMSCs inevitably affects the differentiation of BMAs.\nThe Wnt/\u03b2-catenin signaling pathway, activated by glycogen synthase kinase 3\u03b2 (GSK3B), plays a bi-directional regulatory role in bone formation and anti-adipogenesis. This pathway primarily functions through the activation of Wnt ligands, which bind to frizzled receptors on the cell surface and stabilize \u03b2-catenin. Subsequently, \u03b2-catenin translocates to the nucleus and stimulates specific gene targets [218]. However, various secretory antagonists, such as Dickkopf-1 (DKK1) synthesized by BMSCs, preadipocytes, osteoblasts, and related cells, as well as sclerostin secreted by osteoblasts, negatively regulate this pathway. DKK1 and sclerostin are influenced by oxidative stress signaling within the bone marrow, further implicating the role of oxidative stress-mediated Wnt/\u03b2-catenin signaling in the complex process of BMAs differentiation [219]. Additionally, PGC-1\u03b1, a transcriptional co-activator that regulates genes involved in energy metabolism, is also implicated in this process. Knockdown of PGC-1\u03b1 in vitro leads to increased ROS generation, upregulation of PPAR\u03b3, inhibition of \u03b2-catenin signaling, and adipogenic differentiation of BMSCs [180].\nSignaling cells release hedgehog signaling molecules, which play a role in BMAs differentiation. Research suggests that oxidative stress may contribute to age-related osteoporosis, and the hedgehog pathway potentially regulates degenerative bone disease by inhibiting oxidative stress and cellular senescence [220]. The inhibition of Gli-activated hedgehog signaling by oxidative stress has been linked to osteoblast differentiation [221]. Interestingly, the cytokine hedgehog promotes the transition of mouse MSCs to the osteoblast lineage rather than adipogenesis [222]. This anti-adipogenic effect is observed specifically during the maturation stage of human BMSCs. Studies indicate that various signaling pathways, including TGF-\u03b2/BMP, FGF2, and Notch signaling pathways, are involved in regulating bone marrow MSC differentiation [223,224]. Additional research is required to determine whether these pathways have bi-directional regulatory roles in osteogenic and adipogenic differentiation.\nExogenous antioxidants are primarily sourced from dietary nutrients, including various plant-derived antioxidants, vitamins, and minerals [225]. These antioxidants can regulate Wnt/\u03b2-catenin and PPAR\u03b3 pathways in BMSCs, thus contributing to bone lipid homeostasis. Resveratrol, a plant-derived antioxidant mediating sirtuin signalling, was revealed to be involved in the inhibition of bone marrow adipocyte differentiation by inhibiting ROS and increasing the expression of the antioxidant enzymes HO-1 and SOD3 [84]. Isopsoralen, a naturally occurring tricyclic aromatic hydrocarbon compound, exhibits anti-inflammatory and antioxidant properties. In vivo studies have demonstrated that isopsoralen can effectively reduce oxidative stress, increase Wnt/\u03b2-catenin protein expression, and decrease PPAR\u03b3 protein expression in postmenopausal osteoporotic mice, ultimately preventing osteoporosis [226]. Additionally, Danshenol, a water polyphenol derived from Salvia miltiorrhiza, has been found to upregulate Wnt/\u03b2-catenin protein expression and downregulate PPAR\u03b3 protein expression, thereby inhibiting glucocorticoid-induced myelopoiesis and mitigating bone damage [113]. Furthermore, phytochemicals, including sangusorba officinalis L. extracts, 3,5-dicaffeoyl-epi-quinic acid, and other compounds can protect bone homeostasis by modulating Wnt/\u03b2-catenin and PPAR\u03b3 signaling pathways in BMSCs [227,228].\n2.7",
+          "cos_sim_score": 0.4054131507873535,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

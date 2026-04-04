@@ -1,0 +1,228 @@
+{
+  "probe_id": "11733513_a_at",
+  "gene_symbol": "WLS",
+  "Median_TestAUC": 0.962962962962963,
+  "SD_TestAUC": 0.0422287194481162,
+  "abs_fold_change": 1.7548,
+  "score": 1.4109,
+  "probe_count": 1,
+  "probe_ids": "11733513_a_at",
+  "max_score": 1.4109,
+  "mean_abs_fold_change": 1.7548,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T23:07:26",
+  "interpretation": "The WLS gene encodes the Wnt ligand secretion mediator, which is crucial for the sorting and secretion of Wnt proteins, integral to various cellular processes including bone development and homeostasis. In the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), WLS may play a role in the impaired osteogenic differentiation and angiogenesis observed in this condition, as steroid treatment is known to disrupt these processes. While direct evidence linking WLS specifically to SONFH is limited, its involvement in bone diseases and the regulation of Wnt signaling pathways suggests a potential role in the pathophysiology of SONFH. Therefore, WLS could serve as a candidate biomarker for early detection of SONFH, although further studies are needed to establish its clinical relevance. The evidence supporting this interpretation is moderate, primarily based on its biological functions and associations with related bone conditions.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 2",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "WLS is implicated in bone homeostasis and may contribute to the mechanisms underlying Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "WLS (Q5T9L3). https://www.uniprot.org/uniprotkb/Q5T9L3",
+    "WLS (Q5T9L3-3). https://www.uniprot.org/uniprotkb/Q5T9L3-3",
+    "WLS (Q5T9L3-2). https://www.uniprot.org/uniprotkb/Q5T9L3-2",
+    "WLS \u2014 WLS. https://platform.opentargets.org/target/ENSG00000116729",
+    "WLS \u2194 Zaki syndrome. https://platform.opentargets.org/target/ENSG00000116729/associations",
+    "WLS \u2194 osteoporosis. https://platform.opentargets.org/target/ENSG00000116729/associations",
+    "WLS \u2194 bone disease. https://platform.opentargets.org/target/ENSG00000116729/associations",
+    "WLS \u2194 open-angle glaucoma. https://platform.opentargets.org/target/ENSG00000116729/associations",
+    "WLS \u2014 Wnt ligand secretion mediator (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ERBB2 \u2014 erb-b2 receptor tyrosine kinase 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ESR1 \u2014 estrogen receptor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KRAS \u2014 KRAS proto-oncogene, GTPase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "DRD2 \u2014 dopamine receptor D2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "PTH[1-34] improves the effects of core decompression in early-stage steroid-associated osteonecrosis model by enhancing bone repair and revascularization (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC5451136/",
+    "Identification of hub genes and therapeutic drugs in osteonecrosis of the femoral head through integrated bioinformatics analysis and literature mining (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC10366127/",
+    "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8814,
+    "completion_tokens": 317,
+    "total_tokens": 9131,
+    "estimated_cost_usd": 0.001512
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q5T9L3",
+          "title": "WLS (Q5T9L3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q5T9L3",
+          "text": "Protein: Protein wntless homolog\nFunction: Regulates Wnt proteins sorting and secretion in a feedback regulatory mechanism. This reciprocal interaction plays a key role in the regulation of expression, subcellular location, binding and organelle-specific association of Wnt proteins (PubMed:34587386). Plays also an important role in establishment of the anterior-posterior body axis formation during development (By similarity)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q5T9L3-3",
+          "title": "WLS (Q5T9L3-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q5T9L3-3",
+          "text": "Protein: Isoform 3 of Protein wntless homolog",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q5T9L3-2",
+          "title": "WLS (Q5T9L3-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q5T9L3-2",
+          "text": "Protein: Isoform 2 of Protein wntless homolog",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000116729::function",
+          "title": "WLS \u2014 WLS",
+          "url": "https://platform.opentargets.org/target/ENSG00000116729",
+          "text": "Function: Regulates Wnt proteins sorting and secretion in a feedback regulatory mechanism. This reciprocal interaction plays a key role in the regulation of expression, subcellular location, binding and organelle-specific association of Wnt proteins (PubMed:34587386). Plays also an important role in establishment of the anterior-posterior body axis formation during development (By similarity).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000116729::MONDO_0859209",
+          "title": "WLS \u2194 Zaki syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000116729/associations",
+          "text": "Disease: Zaki syndrome\nAssociation score: 0.731",
+          "cos_sim_score": 0.7310721959948989,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000116729::EFO_0003882",
+          "title": "WLS \u2194 osteoporosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000116729/associations",
+          "text": "Disease: osteoporosis\nDescription: A condition of reduced bone mass, with decreased cortical thickness and a decrease in the number and size of the trabeculae of cancellous bone (but normal chemical composition), resulting in increased fracture incidence. Osteoporosis is classified as primary (Type 1, postmenopausal osteoporosis; Type 2, age-associated osteoporosis; and idiopathic, which can affect juveniles, premenopausal women, and middle-aged men) and secondary osteoporosis (which results from an identifiable cause of bone mass loss).\nAssociation score: 0.472",
+          "cos_sim_score": 0.4717982523203908,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000116729::EFO_0004260",
+          "title": "WLS \u2194 bone disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000116729/associations",
+          "text": "Disease: bone disease\nDescription: Diseases of bones.\nAssociation score: 0.443",
+          "cos_sim_score": 0.442861660151456,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000116729::EFO_0004190",
+          "title": "WLS \u2194 open-angle glaucoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000116729/associations",
+          "text": "Disease: open-angle glaucoma\nDescription: Chronic outflow obstruction of the eye's drainage canals that can lead to increased internal eye pressure and optic nerve damage.\nAssociation score: 0.350",
+          "cos_sim_score": 0.3503640370645461,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "WLS \u2014 Wnt ligand secretion mediator",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: WLS\nGene name: Wnt ligand secretion mediator\nAliases / synonyms: C1orf139, EVI, GPR177, MRP, ZKS, mig-14\nOrganism: Homo sapiens\nGene summary: Enables Wnt-protein binding activity and identical protein binding activity. Involved in positive regulation of cell communication and protein transport. Located in several cellular components, including Golgi apparatus; early endosome; and endoplasmic reticulum membrane. Implicated in Zaki syndrome. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "WLS",
+          "aliases": "C1orf139, EVI, GPR177, MRP, ZKS, mig-14",
+          "gene_description": "Wnt ligand secretion mediator"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ERBB2 \u2014 erb-b2 receptor tyrosine kinase 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ERBB2\nGene name: erb-b2 receptor tyrosine kinase 2\nAliases / synonyms: CD340, HER-2, HER-2/neu, HER2, MLN 19, MLN-19, NEU, NGL, TKR1, VSCN2, c-ERB-2, c-ERB2, p185(erbB2)\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the epidermal growth factor (EGF) receptor family of receptor tyrosine kinases. This protein has no ligand binding domain of its own and therefore cannot bind growth factors. However, it does bind tightly to other ligand-bound EGF receptor family members to form a heterodimer, stabilizing ligand binding and enhancing kinase-mediated activation of downstream signalling pathways, such as those involving mitogen-activated protein kinase and phosphatidylinositol-3 kinase. Allelic variations at amino acid positions 654 and 655 of isoform a (positions 624 and 625 of isoform b) have been reported, with the most common allele, Ile654/Ile655, shown here. Amplification and/or overexpression of this gene has been reported in numerous cancers, including breast and ovarian...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ERBB2",
+          "aliases": "CD340, HER-2, HER-2/neu, HER2, MLN 19, MLN-19, NEU, NGL, TKR1, VSCN2, c-ERB-2, c-ERB2, p185(erbB2)",
+          "gene_description": "erb-b2 receptor tyrosine kinase 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ESR1 \u2014 estrogen receptor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ESR1\nGene name: estrogen receptor 1\nAliases / synonyms: ER, ESR, ESRA, ESTRR, Era, NR3A1\nOrganism: Homo sapiens\nGene summary: This gene encodes an estrogen receptor and ligand-activated transcription factor. The canonical protein contains an N-terminal ligand-independent transactivation domain, a central DNA binding domain, a hinge domain, and a C-terminal ligand-dependent transactivation domain. The protein localizes to the nucleus where it may form either a homodimer or a heterodimer with estrogen receptor 2. The protein encoded by this gene regulates the transcription of many estrogen-inducible genes that play a role in growth, metabolism, sexual development, gestation, and other reproductive functions and is expressed in many non-reproductive tissues. The receptor encoded by this gene plays a key role in breast cancer, endometrial cancer, and osteoporosis. This gene is reported to have dozens of transcript va...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ESR1",
+          "aliases": "ER, ESR, ESRA, ESTRR, Era, NR3A1",
+          "gene_description": "estrogen receptor 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KRAS \u2014 KRAS proto-oncogene, GTPase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KRAS\nGene name: KRAS proto-oncogene, GTPase\nAliases / synonyms: 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2\nOrganism: Homo sapiens\nGene summary: This gene, a Kirsten ras oncogene homolog from the mammalian ras gene family, encodes a protein that is a member of the small GTPase superfamily. A single amino acid substitution is responsible for an activating mutation. The transforming protein that results is implicated in various malignancies, including lung adenocarcinoma, mucinous adenoma, ductal carcinoma of the pancreas and colorectal carcinoma. Alternative splicing leads to variants encoding two isoforms that differ in the C-terminal region. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KRAS",
+          "aliases": "'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2",
+          "gene_description": "KRAS proto-oncogene, GTPase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "DRD2 \u2014 dopamine receptor D2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: DRD2\nGene name: dopamine receptor D2\nAliases / synonyms: D2DR, D2R\nOrganism: Homo sapiens\nGene summary: This gene encodes the D2 subtype of the dopamine receptor. This G-protein coupled receptor inhibits adenylyl cyclase activity. A missense mutation in this gene causes myoclonus dystonia; other mutations have been associated with schizophrenia. Alternative splicing of this gene results in two transcript variants encoding different isoforms. A third variant has been described, but it has not been determined whether this form is normal or due to aberrant splicing. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "DRD2",
+          "aliases": "D2DR, D2R",
+          "gene_description": "dopamine receptor D2"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::5451136",
+          "title": "PTH[1-34] improves the effects of core decompression in early-stage steroid-associated osteonecrosis model by enhancing bone repair and revascularization",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5451136/",
+          "text": "Introduction\nSteroid-associated osteonecrosis (SAON), the most common form of non-traumatic ON, often occurs following steroid treatment for many non-orthopaedic medical conditions [1\u20133], with a morbidity rate of 9% to 40% [4]. Patients with SAON often require total hip arthroplasty (THA) after collapse of femoral heads, which accounts for more than 10% of THA performed. Moreover, some patients, especially those with younger age, need revision surgery due to dislocation, infection or osteolysis. Therefore, an effective treatment modality is needed for patients with early-stage SAON to slow OA progression.\nCore decompression (CD) is one of the least invasive surgical procedures for early-stage osteonecrosis, aimed at removing necrotic bone, and facilitating bone healing, revascularization of subchondral bone and preventing subsequent joint collapse[5, 6]. CD could also reduce intraosseous pressure, decrease venous congestion and improve capillary blood flow [7, 8]. However, the prognosis is rather poor because of incomplete bone reconstruction and weakening of the trabecular bone within and around the necrotic region, which could lead to failure in preventing progressive collapse [9, 10]. Many adjunctive therapies with CD surgery have been attempted for SAON [11\u201313], but none of these resulted in any significant improvement.\nParathyroid hormone (PTH) exerts a potent anabolic effect on bone through the PTH receptor (PTH1R) [14, 15]. Recombinant human PTH [1\u201334] has been approved by the US food and drug administration (FDA) for treating osteoporosis in postmenopausal women and men who have high risk of bone fracture. Intermittent administration of PTH greatly stimulates bone formation, leading to a net gain in bone mass and/or strength [16, 17]. Meanwhile, another study found that PTH could stimulate the release of vascular endothelial growth factor (VEGF) in vitro [18], which is regarded as an essential mediator of angiogenesis.\nBased on these known clinical effects of PTH [1\u201334], we hypothesize that the combination of CD with PTH [1\u201334] administration will enhance bone repair and revascularization, thereby improving the prognosis of SAON. To test this hypothesis, this study will establish an SAON model to investigate (1) the effects of PTH on improving of the efficacy of CD on SAON; (2) the effects of PTH on the newly formed bone and biomechanical properties of the bone tunnel, as well as osteogenesis around the tunnel and beneath the articular cartilage; (3) the effects of PTH on neovascularization within the tunnel and in the bone marrow; (4) the effects of PTH on the expression of local and systemic osteogenic and angiogenic markers.\nMaterials and methods\nAnimals\nThe experimental protocol was approved by the Institutional Animal Care and Use Committee of the Second Affiliated Hospital, School of Medicine, Zhejiang University (Register ID No.: 2015\u2013391; Date: 7 May 2015). The whole experiment was performed according to the Guide for the Care and Use of Laboratory promulgated by the United States National Institutes of Health. Animals were held in a facility under a temperature range from 18\u00b0C to 25\u00b0C and regular day/night cycle, being allowed free access to food and water. Rabbits were monitored daily to evaluate the signs of pain, distress, or moribundity visually and their weights were measured three times a week. Animals, exhibiting the signs above or 10% acute weight reduction, were to be humanely euthanized prior the experimental endpoint. All animals were euthanized by an overdose of pentobarbital (90 mg/kg, Sigma Chemical Co., St. Louis, MO, USA) at the endpoint. All efforts were made to minimize suffering during the whole experiment.\nSAON model establishment",
+          "cos_sim_score": 0.6470651626586914,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::5451136",
+          "title": "PTH[1-34] improves the effects of core decompression in early-stage steroid-associated osteonecrosis model by enhancing bone repair and revascularization",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5451136/",
+          "text": "(A) PTH enhanced bone formation, increased the number of osteoblasts (green arrows), reduced necrosis foci (red arrows), and decreased the number of mononuclear cells and empty lacunas (yellow arrows) in the distal femurs with steroid-induced osteonecrosis after CD. (B) in the coronal plane of distal femur with a bone tunnel (yellow dotted circles). (C) The percentage of the area of necrosis foci and the percentage of empty osteocyte lacuna were measured, n = 6 in the SAON-CD-PTH group, n = 6 in the SAON-CD group, and n = 4 in the sham-CD group, Data are presented as mean \u00b1 SD, and error bars in the figure denote SD, *p<0.05, **p<0.01 (H&E, 50x and 200x).\nThe bone formation out of the tunnels in the marrow is shown in Fig 6A as well. No abnormal changes were observed in the Sham-CD group. However, in the SAON-CD group, a disordered architecture of marrow tissue was observed with osteonecrosis foci, massive empty lacunae and mononuclear cells being present in the bone, with few osteoblasts lining the trabecular bone. Compared with the SAON-CD group, PTH could markedly enhance bone formation with more osteoblasts. No osteonecrosis foci, and fewer empty lacunae were found in the bone tissue. The quantitative data are shown including decreasing necrosis foci and empty osteocyte lacunae (P<0.01, respectively). Moreover, in the fluorescent analysis (Fig 7A\u20137C), specimens from the SAON-CD group exhibited a lower mineral apposition rate (MAR) and mineralizing surface/bone surface (MS/BS), compared with the sham-CD group, even though no statistically significant differences were found in MS/BS. Administration of PTH exerted a strong effect on bone mineralization, as evidenced by improved MAR and MS/BS.\nFig 7\nPTH upregulates bone formation in SAON after CD surgery.\nBone was labeled during regeneration and remodeling by calcein (green) and andalizarin red (red) (A). (B-C) The MS/BS and the MAR were measured and presented. Data are presented as mean \u00b1 SD, and error bars in the figure denote SD, *p<0.05, **p<0.01.\nPTH enhances neovascularization in the CD tunnel and bone marrow\nThe \u03b1-smooth muscle actin (\u03b1-SMA) staining was used to evaluate the effects of PTH on neovascularization within the CD tunnel. The vessels in the SAON-CD group displayed flattened shape (Fig 8A) with smaller diameter (decreased by 39.6%) and number (decreased by 19.0%) compared with the Sham-CD group (P<0.05, respectively) (Fig 8C). More vessels were found (P<0.01) within the CD tunnel in the PTH treatment group (11.46\u00b14.98/mm2) compared with the SAON-CD group (5.50\u00b13.19/mm2), while there was no significant difference in the mean diameters of vessels (3.12\u00b12.36 vs.3.30\u00b11.69/mm2, P>0.05) between the two groups (Fig 8D).\nFig 8\nPTH improves revascularization both in the tunnel and in the bone marrow.\nVessels (red arrows) from each group (n = 6 in the SAON-CD-PTH group, n = 6 in the SAON-CD group, and n = 4 in the sham-CD group) were visualized with \u03b1-SMA staining (200x) within the tunnel (A) and in the marrow (B). (C) The number per area of tissue and (D) the diameter of blood vessels were measured. Data are presented as mean \u00b1 SD, and error bars in the figure denote SD, *p<0.05, **p<0.01.",
+          "cos_sim_score": 0.5382131934165955,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10366127",
+          "title": "Identification of hub genes and therapeutic drugs in osteonecrosis of the femoral head through integrated bioinformatics analysis and literature mining",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10366127/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a multifactorial disease with an unknown etiology, characterized by loss of integrity of the subchondral bone1. It mainly affects men aged 30\u201350 years and involves more and more youngers1,2. Despite the identification of corticosteroid use, alcohol, sickle-cell disease, and trauma as the major risk factors for ONFH, its pathogenesis remains incompletely understood2,3. Surgery is the only effective way to treat ONFH at present4. In the USA, approximately 10% of hip replacements are due to ONFH, and in the UK, ONFH is the third most common indication for total hip replacements in people under 50, which causes a heavy socioeconomic burden1,4. Effective drug therapies have not been established5. Therefore, identifying novel biomarkers and therapeutic drugs involved in the ONFH is of great significance in exploring efficient treatment strategies.\nOver the past two decades, few researchers have focused on exploring the mechanism of ONFH at the gene level6. Abnormalities in some genes, such as plasminogen-activating inhibitor-1 and nitric oxide synthase 3, have been proven to weaken the osteogenic differentiation capacity of bone marrow mesenchymal stem cells or disrupt angiogenesis, leading to the collapse of the femoral head surface7,8. However, the specific molecular mechanism of ONFH has not yet been clarified, and drug discovery has had little success. Recently, gene chips and high-throughput sequencing technologies have been widely used in the screening of disease-causing genes and have achieved practical and reliable results9. A new drug prediction method, drug-gene-disease triangulation based on literature mining, has been confirmed to be robust and reliable for identifying new drug candidates10.\nIn this study, we analyzed two gene expression profiles (Table 1) extracted from the National Center for Biotechnology Information Gene Expression Omnibus (GEO) database, which is a free global database of sequencing results. DEGs were identified by using the online tool GEO2R. Subsequently, the function of DEGs was determined by the Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analysis. With the help of Cytoscape, ten hub genes were selected and then validated by ROC analysis. Finally, the targeted drugs for ONFH were identified through the Drug-Gene Interaction Database (DGIdb) and cross-validated by integrated literature mining. Our study figured out the drug-gene-disease correlation to generate new insights into the prevention and treatment of ONFH.Table 1Detailed information on the GEO microarray profiles.ProfileOrganismSample sourceTechnology typeCasesControlsPlatformGSE123568Homo sapiensPeripheral serumIn situ oligonucleotide3010GPL15207GSE74089Homo sapiensHip cartilageIn situ oligonucleotide44GPL13497\nTable 1\nDetailed information on the GEO microarray profiles.\nResults\nIdentification of DEGs in ONFH",
+          "cos_sim_score": 0.5346429347991943,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::5451136",
+          "title": "PTH[1-34] improves the effects of core decompression in early-stage steroid-associated osteonecrosis model by enhancing bone repair and revascularization",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5451136/",
+          "text": "MRI is commonly regarded as the most sensitive method for the detection and evaluation of early stage osteonecrosis [36, 37]. Homogeneous intermediate or high signal intensity in T1-weight images and low signal intensity in T2-weight images were observed. However, osteonecrosis, which damages normal bone morphology, induces edema and inflammation, and increases bone marrow pressure, manifests focal inhomogeneous high signal intensity areas in T1W images, and mixed low signal-intensity area and high signal intensity areas in T2W images[23]. Our data showed homogeneous high signal intensity areas in T1W images and lower intensity signal in T2-weight images, thus demonstrating the positive efficacy of PTH on osteonecrosis.\nImpaired and delayed bone healing were observed in a SAON model with CD, exhibiting osteonecrosis foci, empty lacunae, poor mechanical properties, as well as less trabecular bone, osteoblasts, reduction of osteogenesis and mineralization [10]. However, the exact mechanisms of SAON are still unclear. Abnormalities of MSCs, osteocytes and osteoblast homeostasis are generally accepted as one of the common pathways resulting in osteonecrosis [38]. Moreover, steroids could induce adipogenic differentiation of MSCs and inhibit their osteogenic differentiation [39]. Prolonged treatment with steroids could simultaneously lead to the apoptosis of osteoblasts and osteocytes [40]. PTH [1\u201334] exerts anabolic effects on bone and enhances bone strength by inducing new bone formation at inactive bone surfaces and by further stimulating mineral apposition. Micro-CT evaluation showed that intermittent administration of PTH[1\u201334] could enhance the osteogenic effect, resulting in improvement of biomechanical strength. Histological analysis revealed more osteoblasts, and fewer empty lacunae and osteonecrosis foci within and around the tunnel, as well as the increase of mineralization and osteogenesis in bone. This validated that PTH could enhance bone repair and decrease the occurrence of osteonecrosis, which might reduce the incidence of fracture after CD. Abundant fibrosis could be observed after steroid induction in our study, and much fibrosis still remains at 6 weeks after CD, which is consistent with other studies[10, 19]. Our study showed that intermittent treatment with PTH could inhibit fibrosis formation after steroid induction, consistent with similar results in a previous study [41, 42]. However, continuous PTH administration elicited an opposite effect on fibrosis. Previous studies found that PTH could increase activity, prolong the lifespan, decrease apoptosis of osteoblasts and reduce fibrosis, as well as enhance the osteogenic differentiation of MSCs [43, 44], thus providing mechanistic explanations for our findings.\nAnother final pathway leading to SAON is the interruption of microcirculation [45], in which steroids have been found to decrease VEGF expression and impede the process of revascularization [46]. Another study confirmed the correlation between SAON and regional endothelial dysfunction [47]. PTH has been proven to be a potent stimulator of VEGF in vitro [48], and acts as a mitogen for endothelial cells and promoter of angiogenesis. Additionally, PTH might improve neovascularization by exerting an anti-apoptotic effect. CD could also promote revascularization by increasing capillary blood flow in necrotic bone. Our findings that PTH[1\u201334] could partially restore vessel histomorphology to normal, might be due to the synergistic effects of CD with PTH treatment, resulting in decreased marrow pressure and improved revascularization. This can also explain our observation of increased number of vessels with PTH treatment in the tunnel, as compared to the SAON-CD group. Larger diameter of vessels in the marrow was observed, but unexpectedly, we found no significant difference in the number of vessels between the SAON-CD group and the SAON-CD-PTH group in the marrow, even though PTH could increase the proliferation of endothelial cells. PTH can inhibit adipocyte differentiation [49] and thus decrease the diameter of fat cells, as well as enhance angiogenesis, and that might possibly explain the effect on enlarging vessel diameter in the marrow.",
+          "cos_sim_score": 0.5297394394874573,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::9478254",
+          "title": "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+          "text": "1. Introduction\nOsteonecrosis of the femoral head (ONFH) is a common disease mainly characterized by apoptosis of bone cells that leads to collapse of the femoral head and cartilage damage. Notably, the round surface of the head and acetabulum joint flattens and eventually leads to secondary osteoarthritis.[1] Studies have shown that the disease is mainly prevalent in patients with long-term use of hormonal drugs, long-term alcohol abuse, and hip trauma.[2] Steroid-induced ONFH (SONFH) is a common type of femoral head necrosis. SONFH patients are frequently misdiagnosed as hip synovitis or osteoarthritis owing to lack of obvious signs coupled with imaging abnormalities during early stages of disease development.[3] Although transcriptomic analyses have contributed to development of clinical treatment strategies for SONFH, the precise underlying mechanism of SONFH remains unclear.[4,5]\nBioinformatics analyses have significantly improved the search and identification of key genes regulating the occurrence of various diseases, thereby generating new insights to guide development of treatment strategies. SONFH has a complex pathophysiological mechanism. Genotyping of SONFH in adults revealed that gene coding protein polymorphism was associated with SONFH.[6] It has been hypothesized that progression of SONFH to the end stage in adult patients may be due to differential expression of protein-coding genes involved in thrombosis, angiogenesis inhibition, programmed cell death, lipid biosynthesis, and bone homeostasis. In the present study, we aimed to identify differentially expressed genes in peripheral blood of patients with early SONFH and further explored the pathogenesis of this disease using transcriptome data from the Gene Expression Omnibus database.\n2. Materials and Methods\n2.1. Data acquisition\nThe Gene Expression Omnibus database not only stores many gene chips and sequence data but also provides tools for users to query and download gene expression profiles. In the present study, we searched for relevant datasets using \u201csteroid-induced osteonecrosis of femoral head\u201d as the keyword, with focus on SONFH-related datasets. Consequently, we downloaded transcriptome data (GSE123568) belonging to 30 SONFH and 10 non-SONFH (following steroid administration) subjects.\n2.2. Sample correlation analysis\nOverall expression profiles of the transcriptome data were clustered using ClusterProfiler packages implemented in R software (version 4.0.2). Only dimension features containing the vast majority of variances were retained, with those containing zero variances discarded based on a principal component analysis (PCA) plot. Using weighted gene correlation network analysis (WGCNA) package in R language to perform WGCNA on data. WGCNA adds phenotypic weight parameters in the process of constructing gene co-expression network and optimizes classification using scale-free clustering and dynamic tree cut algorithm to achieve accurate and efficient data analysis.\n2.3. Functional annotation of DEGs\nFunctional annotation of key genes was performed using the ClusterProfiler package in R and followed by comprehensive functional correlation of candidate genes. Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analyses were performed to evaluate related functional categories. Significant differentially expressed genes (DEGs) were filtered, and bar charts and bubble charts were drawn according to their functions and pathways, respectively.\n2.4. Construction of protein\u2013protein interaction networks\nProtein\u2013protein interaction (PPI) networks of the DEGs were generated using the STRING online tool and Cytoscape software. Summarily, DEGs were entered into the STRING online tool to screen for interacting proteins with a combined score of\u2005>\u20050.9. The obtained PPI results were imported into Cytoscape software, then prominent modules in PPI were screened to construct the network through molecular complex detection. NetworkX package was then used to visualize the network in Python, with node sizes taken to be proportional to node degree.\n2.5. Quantitative real-time polymerase chain reaction",
+          "cos_sim_score": 0.5224063396453857,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

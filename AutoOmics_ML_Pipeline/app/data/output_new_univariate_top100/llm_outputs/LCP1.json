@@ -1,0 +1,257 @@
+{
+  "probe_id": "11747785_s_at",
+  "gene_symbol": "LCP1",
+  "score": 1.0,
+  "SD_TestAUC": 0.0165634664999984,
+  "abs_fold_change": 0.9313,
+  "probe_count": 1,
+  "probe_ids": "11747785_s_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.9313,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T22:47:55",
+  "interpretation": "LCP1, also known as lymphocyte cytosolic protein 1 or Plastin-2, is an actin-binding protein that plays a crucial role in T-cell activation and immune response modulation. Its expression is significantly altered in patients with Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), as evidenced by its identification as a hub gene in a study analyzing exosome-related gene signatures in SONFH. The retrieved evidence indicates that LCP1 is involved in immune cell infiltration patterns, which are critical in the inflammatory processes associated with SONFH. This gene's expression levels were validated in peripheral serum samples, suggesting its potential as a diagnostic biomarker for early detection of SONFH. Overall, the evidence supports LCP1's relevance in the pathophysiology of SONFH, particularly in relation to immune response and inflammation.",
+  "evidence_relation": "direct",
+  "evidence_tier": "Tier 1",
+  "evidence_confidence": "high",
+  "biomarker_potential": "strong",
+  "relevance_summary": "LCP1 is implicated in the immune response and inflammation associated with Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), making it a promising biomarker for early diagnosis.",
+  "citations": [
+    "LCP1 (P13796). https://www.uniprot.org/uniprotkb/P13796",
+    "LCP1 (P13796-2). https://www.uniprot.org/uniprotkb/P13796-2",
+    "LCP1 \u2014 LCP1. https://platform.opentargets.org/target/ENSG00000136167",
+    "LCP1 \u2194 hereditary breast ovarian cancer syndrome. https://platform.opentargets.org/target/ENSG00000136167/associations",
+    "LCP1 \u2194 Hereditary breast and ovarian cancer syndrome. https://platform.opentargets.org/target/ENSG00000136167/associations",
+    "LCP1 \u2194 autoimmune disease. https://platform.opentargets.org/target/ENSG00000136167/associations",
+    "LCP1 \u2194 ovarian neoplasm. https://platform.opentargets.org/target/ENSG00000136167/associations",
+    "Integrated bioinformatics analysis and experimental validation of exosome-related gene signature in steroid-induced osteonecrosis of the femoral head. (2025). https://pubmed.ncbi.nlm.nih.gov/39789578/",
+    "LCP1 \u2014 lymphocyte cytosolic protein 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TOX4 \u2014 TOX high mobility group box family member 4 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HIF1A \u2014 hypoxia inducible factor 1 subunit alpha (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KRAS \u2014 KRAS proto-oncogene, GTPase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CFTR \u2014 CF transmembrane conductance regulator (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Integrated bioinformatics analysis and experimental validation of exosome-related gene signature in steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11720909/",
+    "Microstructural and transcriptomic characterization of trabecular bone in idiopathic osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11978847/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 10517,
+    "completion_tokens": 315,
+    "total_tokens": 10832,
+    "estimated_cost_usd": 0.001767
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P13796",
+          "title": "LCP1 (P13796)",
+          "url": "https://www.uniprot.org/uniprotkb/P13796",
+          "text": "Protein: Plastin-2\nFunction: Actin-binding protein (PubMed:16636079, PubMed:17294403, PubMed:28493397). Plays a role in the activation of T-cells in response to costimulation through TCR/CD3 and CD2 or CD28 (PubMed:17294403). Modulates the cell surface expression of IL2RA/CD25 and CD69 (PubMed:17294403)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P13796-2",
+          "title": "LCP1 (P13796-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P13796-2",
+          "text": "Protein: Isoform 2 of Plastin-2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000136167::function",
+          "title": "LCP1 \u2014 LCP1",
+          "url": "https://platform.opentargets.org/target/ENSG00000136167",
+          "text": "Function: Actin-binding protein (PubMed:16636079, PubMed:17294403, PubMed:28493397). Plays a role in the activation of T-cells in response to costimulation through TCR/CD3 and CD2 or CD28 (PubMed:17294403). Modulates the cell surface expression of IL2RA/CD25 and CD69 (PubMed:17294403).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000136167::MONDO_0003582",
+          "title": "LCP1 \u2194 hereditary breast ovarian cancer syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000136167/associations",
+          "text": "Disease: hereditary breast ovarian cancer syndrome\nDescription: An autosomal dominant inherited syndrome caused by mutations in the BRCA1 or BRCA2 genes. Patients are at high risk of developing breast cancer, particularly before the age of fifty, high risk of developing a second primary breast cancer, and high risk of developing both breast and ovarian cancer.\nAssociation score: 0.340",
+          "cos_sim_score": 0.3400134663099256,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000136167::Orphanet_145",
+          "title": "LCP1 \u2194 Hereditary breast and ovarian cancer syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000136167/associations",
+          "text": "Disease: Hereditary breast and ovarian cancer syndrome\nDescription: An autosomal dominant inherited syndrome caused by mutations in the BRCA1 or BRCA2 genes. Patients are at high risk of developing breast cancer, particularly before the age of fifty, high risk of developing a second primary breast cancer, and high risk of developing both breast and ovarian cancer.\nAssociation score: 0.340",
+          "cos_sim_score": 0.3400134663099256,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000136167::EFO_0005140",
+          "title": "LCP1 \u2194 autoimmune disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000136167/associations",
+          "text": "Disease: autoimmune disease\nDescription: Autoimmune disease or disorder is a disease characterized by an immune response of an organism against parts of itself causing pathology e.g. Graves' disease.\nAssociation score: 0.310",
+          "cos_sim_score": 0.30953086166466237,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000136167::EFO_0003893",
+          "title": "LCP1 \u2194 ovarian neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000136167/associations",
+          "text": "Disease: ovarian neoplasm\nDescription: Neoplasms located in the ovary that can be benign or malignant. They are classified according to the tissue of origin, such as the surface EPITHELIUM, the stromal endocrine cells, and the totipotent GERM CELLS.\nAssociation score: 0.301",
+          "cos_sim_score": 0.30100812471326643,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::39789578",
+          "title": "Integrated bioinformatics analysis and experimental validation of exosome-related gene signature in steroid-induced osteonecrosis of the femoral head.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39789578/",
+          "year": "2025",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SIONFH) is a universal hip articular disease and is very hard to perceive at an early stage. The understanding of the pathogenesis of SIONFH is still limited, and the identification of efficient diagnostic biomarkers is insufficient. This research aims to recognize and validate the latent exosome-related molecular signature in SIONFH diagnosis by employing bioinformatics to investigate exosome-related mechanisms in SIONFH. The GSE123568 and GSE74089 datasets were employed to conduct differentially expressed genes (DEGs) analysis, and the GSE123568 dataset was subjected to perform weighted genes co-expression network analysis (WGCNA). The exosome-related genes (ERGs) were retrieved from the GeneCards database. We identified differentially expressed exosome-related genes (DEERGs) between healthy controls (HC) and SIONFH patients, and a consensus clustering analysis was then implemented to group the SIONFH patients. The CIBERSORT was implemented to calculate the immune cell infiltration. Gene Set Variation Analysis (GSVA), Gene Ontology (GO), and Kyoto Encyclopedia of Genes and Genomes (KEGG) were conducted to investigate latent enriched pathways. In addition, machine-learning algorithms were applied to refine the DEERGs. Ultimately, we verified the diagnostic significance and expression of the hub genes using the SIONFH datasets and performing quantitative reverse transcription polymerase chain reaction (qRT-PCR) analysis. This study identified twenty DEERGs from the peripheral serum and hip articular cartilage samples of SIONFH patients and HC. Two SIONFH subtypes related to ERGs were identified, and distinctions in pathways and immune cell infiltration patterns were compared. SIONFH's high-risk subpopulation exhibited enriched immune-related pathways and high immune cell infiltration, such as M0 macrophages, resting mast cells, and neutrophils. Three machine-learning algorithms then determined LCP1, PNP, UBE2V1, and ZFP36 as four exosome-related hub genes (ERHGs). Compared to HC samples, these ERHGs showed excellent diagnostic efficiency (overall AUC for ERHGs is in the range of 0.923 to 0.970 in GSE123568) in SIONFH samples. LCP1, PNP, UBE2V1, and ZFP36 expressions were validated in the GSE123568 and GSE74089 datasets and finally detected in peripheral serum samples with accordant expression by RT-qPCR. Twenty potential exosome-related genes involved",
+          "cos_sim_score": 0.3412713408470154,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::39789578",
+          "title": "Integrated bioinformatics analysis and experimental validation of exosome-related gene signature in steroid-induced osteonecrosis of the femoral head.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39789578/",
+          "year": "2025",
+          "text": "exosome-related hub genes (ERHGs). Compared to HC samples, these ERHGs showed excellent diagnostic efficiency (overall AUC for ERHGs is in the range of 0.923 to 0.970 in GSE123568) in SIONFH samples. LCP1, PNP, UBE2V1, and ZFP36 expressions were validated in the GSE123568 and GSE74089 datasets and finally detected in peripheral serum samples with accordant expression by RT-qPCR. Twenty potential exosome-related genes involved in SIONFH were identified through bioinformatics analysis. LCP1, PNP, UBE2V1, and ZFP36 might become candidate biomarkers and therapeutic targets because they have an intimate relationship with exosomes. These findings shed light on the exosome-related acquaintance of SIONFH and might contribute to the diagnosis and prognosis of SIONFH.",
+          "cos_sim_score": -0.005482302512973547,
+          "source_type": "pubmed"
+        }
+      ]
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "LCP1 \u2014 lymphocyte cytosolic protein 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: LCP1\nGene name: lymphocyte cytosolic protein 1\nAliases / synonyms: CP64, HEL-S-37, L-PLASTIN, LC64P, PLS2\nOrganism: Homo sapiens\nGene summary: Plastins are a family of actin-binding proteins that are conserved throughout eukaryote evolution and expressed in most tissues of higher eukaryotes. In humans, two ubiquitous plastin isoforms (L and T) have been identified. Plastin 1 (otherwise known as Fimbrin) is a third distinct plastin isoform which is specifically expressed at high levels in the small intestine. The L isoform is expressed only in hemopoietic cell lineages, while the T isoform has been found in all other normal cells of solid tissues that have replicative potential (fibroblasts, endothelial cells, epithelial cells, melanocytes, etc.). However, L-plastin has been found in many types of malignant human cells of non-hemopoietic origin suggesting that its expression is induced accompanying tumorigenesis in solid tissues. ...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "LCP1",
+          "aliases": "CP64, HEL-S-37, L-PLASTIN, LC64P, PLS2",
+          "gene_description": "lymphocyte cytosolic protein 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TOX4 \u2014 TOX high mobility group box family member 4",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TOX4\nGene name: TOX high mobility group box family member 4\nAliases / synonyms: C14orf92, KIAA0737, LCP1, MIG7\nOrganism: Homo sapiens\nGene summary: Predicted to enable chromatin DNA binding activity. Predicted to be involved in regulation of transcription by RNA polymerase II. Located in chromatin and chromosome, telomeric region. Part of PTW/PP1 phosphatase complex. [provided by Alliance of Genome Resources, Apr 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TOX4",
+          "aliases": "C14orf92, KIAA0737, LCP1, MIG7",
+          "gene_description": "TOX high mobility group box family member 4"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "HIF1A \u2014 hypoxia inducible factor 1 subunit alpha",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HIF1A\nGene name: hypoxia inducible factor 1 subunit alpha\nAliases / synonyms: HIF-1-alpha, HIF-1A, HIF-1alpha, HIF1, HIF1-ALPHA, MOP1, PASD8, bHLHe78\nOrganism: Homo sapiens\nGene summary: This gene encodes the alpha subunit of transcription factor hypoxia-inducible factor-1 (HIF-1), which is a heterodimer composed of an alpha and a beta subunit. HIF-1 functions as a master regulator of cellular and systemic homeostatic response to hypoxia by activating transcription of many genes, including those involved in energy metabolism, angiogenesis, apoptosis, and other genes whose protein products increase oxygen delivery or facilitate metabolic adaptation to hypoxia. HIF-1 thus plays an essential role in embryonic vascularization, tumor angiogenesis and pathophysiology of ischemic disease. Alternatively spliced transcript variants encoding different isoforms have been identified for this gene. [provided by RefSeq, Jul 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HIF1A",
+          "aliases": "HIF-1-alpha, HIF-1A, HIF-1alpha, HIF1, HIF1-ALPHA, MOP1, PASD8, bHLHe78",
+          "gene_description": "hypoxia inducible factor 1 subunit alpha"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KRAS \u2014 KRAS proto-oncogene, GTPase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KRAS\nGene name: KRAS proto-oncogene, GTPase\nAliases / synonyms: 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2\nOrganism: Homo sapiens\nGene summary: This gene, a Kirsten ras oncogene homolog from the mammalian ras gene family, encodes a protein that is a member of the small GTPase superfamily. A single amino acid substitution is responsible for an activating mutation. The transforming protein that results is implicated in various malignancies, including lung adenocarcinoma, mucinous adenoma, ductal carcinoma of the pancreas and colorectal carcinoma. Alternative splicing leads to variants encoding two isoforms that differ in the C-terminal region. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KRAS",
+          "aliases": "'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2",
+          "gene_description": "KRAS proto-oncogene, GTPase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CFTR \u2014 CF transmembrane conductance regulator",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CFTR\nGene name: CF transmembrane conductance regulator\nAliases / synonyms: ABC35, ABCC7, CF, CFTR/MRP, MRP7, TNR-CFTR, dJ760C5.1\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the ATP-binding cassette (ABC) transporter superfamily. The encoded protein functions as a chloride channel, making it unique among members of this protein family, and controls ion and water secretion and absorption in epithelial tissues. Channel activation is mediated by cycles of regulatory domain phosphorylation, ATP-binding by the nucleotide-binding domains, and ATP hydrolysis. Mutations in this gene cause cystic fibrosis, the most common lethal genetic disorder in populations of Northern European descent. The most frequently occurring mutation in cystic fibrosis, DeltaF508, results in impaired folding and trafficking of the encoded protein. Multiple pseudogenes have been identified in the human genome. [provided by RefSeq, Aug 2017]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CFTR",
+          "aliases": "ABC35, ABCC7, CF, CFTR/MRP, MRP7, TNR-CFTR, dJ760C5.1",
+          "gene_description": "CF transmembrane conductance regulator"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::11720909",
+          "title": "Integrated bioinformatics analysis and experimental validation of exosome-related gene signature in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11720909/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a chronic intractable bone disorder that has become increasingly prevalent across the world and presents an extremely high rate of disability [1, 2]. ONFH is featured by the damage of bone trabecular structure in the weight-bearing area, i.e., microfracture, with ongoing damage-repair, results in femoral head collapse, inflammation, and dysfunction, and this progression is affected by major risk factors, including steroid use [3]. Presently, the surgical treatment including core decompression (CD), total hip arthroplasty (THA), and various osteotomies (eg. valgus-flexion intertrochanteric osteotomy) are widely applied in clinics and have become effective therapies for ONFH patients at different stages [4\u20137]. Of note, CD combined with bone marrow-derived cell therapies (BMCTs) exhibited a better prognosis than isolated CD [8]. Despite this, disposing of steroid-induced osteonecrosis of the femoral head (SIONFH) is still intractable, many scholars have put forward a fresh and valid therapeutic schedule against this disease [9], finding reliable early diagnostic biomarkers is of great significance in managing SIONFH. Therefore, exploring pathogenesis and the molecular mechanisms underlying the onset and progression of SIONFH is essential.\nExosomes are small, single-membrane organelles with diameters ranging from roughly 40\u2013160 nm [10]. Exosomes function as delivering kinds of substances, for instance, proteins, lipids, nucleic acids, and glycoconjugates [11]. By transporting these chemicals, exosomes can reshape the extracellular matrix and transmit information and small compounds from cell to cell [12]. It is noteworthy that numerous studies have exhibited the broad application prospect of exosomes as a sufficient treatment in orthopedic diseases, such as osteoporosis [13]. Studies have shown that exosomes of distinct origins exert protective roles toward osteoblasts, and they can also suppress the apoptosis of bone cells, and even contribute to the induction of osteogenic differentiation, which suggests some certain significance for the prevention and treatment of ONFH [14]. However, the role of exosomes in SIONFH and its applications in clinical therapy has not been fully elucidated.\nThis study was initiated by implementing bioinformatics analysis to screen and identify hub genes connected with exosomes, which we designated differentially expressed exosome-related genes (DEERGs). Following, the diagnostic efficacy of DEERGs was elaborately validated by employing the Receiver Operating Characteristic (ROC) curve. Subsequently, we identified two distinct subtypes of SIONFH based on DEERGs, and immune cell infiltration patterns were compared. To further enhance the precision of the DEERGs selection, three machine learning algorithms were applied, resulting in the identification of four exosome-related hub genes (ERHGs). These four ERHGs may serve as promising therapeutic targets for SIONFH.\nMethod\nMicroarray data selection and pro-processing\nGene expression profiling data associated with femoral head necrosis was collected from the Gene Expression Omnibus (GEO) database (https://www.ncbi.nlm.nih.gov/geo/). The datasets with accession numbers GSE123568 and GSE74089 were filtered, and clinical information was exhibited in Table\u00a01. Meanwhile, 849 exosome-related genes (ERGs) were included from the GeneCards website (https://www.genecards.org/) with the following steps: (1) input the keyword \u201cexosome\u201d; (2) the gene category selected \u201cProtein Coding\u201d; (3) The relevance score\u2009>\u20092. The information on 849 ERGs is accessible in Supplementary Table\u00a01.Table\u00a01Characteristics of study subjectsDatasetNumber of subjectsAge (years, mean\u2009\u00b1\u2009SD)SexARCO grade (I/II/III/IV)SourceMaleFemaleGSE123568Control1025.02\u2009\u00b1\u20092.8773\u2013Peripheral serumDisease3023.07\u2009\u00b1\u20093.01131710/10/10Peripheral serumGSE74089Control446.75\u2009\u00b1\u20094.0231\u2013Hip articular cartilageDisease445.25\u2009\u00b1\u20094.0231\u2013Hip articular cartilage\nTable\u00a01\nCharacteristics of study subjects\nDifferentially expression genes analysis",
+          "cos_sim_score": 0.660953164100647,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11978847",
+          "title": "Microstructural and transcriptomic characterization of trabecular bone in idiopathic osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978847/",
+          "text": "Introduction\nThe most frequent diagnosis in young adults undergoing total hip arthroplasty (THA) is osteonecrosis of the femoral head (ONFH), an evolving and disabling condition that is increasingly prevalent worldwide1. ONFH is characterized by bone cell death as a result of local ischaemia. Despite efforts to stimulate subchondral bone healing and preserve the native joints, the affected bone does not usually remodel or heal normally2,3. Consequently, the lack of bone regeneration leads to femoral head collapse in a relatively short time and THA is required. The most common risk factors for developing ONFH are previous trauma, massive corticosteroid administration and alcohol abuse. However, a significant number of cases remain idiopathic, with no identifiable risk factors4. The pathological bases of non-traumatic ONFH are still not fully understood, given the difficulties of obtaining bone samples from patients in the early stages and the lack of animal models that faithfully recapitulate the disease. Most hypotheses on the potential ONFH initiation mechanism point towards an alteration in the blood supply to the subchondral bone, as a consequence of intravascular occlusion by fat emboli and thrombi, as well as intraosseous extravascular compression. Initial stages of the disease lead to the formation of a necrotic area in the weight-bearing region, often characterized by accumulation of empty lacunae5. A reparative sclerotic zone containing condensed trabecular bone is developed between the necrotic zone and the adjacent trabecular bone. The collapse of the femoral head is primarily driven by the formation of microfractures at the junction between the reparative zone and the necrotic bone due to bone remodeling imbalance and microstructural deterioration6,7. ONFH is frequently associated with bone marrow edema in the femoral head, which is closely linked with symptomatology and disease progression. Histological studies suggest that trabecular bone in the femoral head could be altered by surrounding medullary necrosis5,8. Providing further evidence on the extent of bone alterations in the femoral head of patients with ONFH may be helpful for surgeons in deciding the appropriate type of hip arthroplasty for this population.\nMost studies on the pathophysiology of non-traumatic ONFH use bone explants from patients with glucocorticoid-induced ONFH undergoing THA9\u201311. However, abnormalities in the trabecular bone of these patients could be expected, given that glucocorticoids are recognized as promoting osteoblast apoptosis, reducing bone formation and prolonging the lifespan of osteoclasts12. Other studies provide limited descriptions of patients\u2019 clinical features or combine different ONFH etiologies, making it difficult to clarify the disease mechanisms5,8,13\u201315. To date, the molecular mechanisms behind trabecular bone alterations in patients with ONFH without an obvious aetiological factor remain largely unexplored. Recent evidence indicates that idiopathic ONFH is associated with altered activity in bone-forming cells in trabecular bone of the femoral head16. In this study, we further investigate the pathophysiology of idiopathic ONFH by comparing the microstructure and histological features of trabecular bone obtained from two distinct zones of the proximal femur\u2014the femoral head and the intertrochanteric region\u2014in each patient. To explore the genes involved in ONFH pathophysiology, we conducted comparative analyses of the transcriptomic profile in the bone samples. For comparative purposes, bone samples from the same anatomical sites in patients with primary osteoarthritis (OA) of the hip were obtained and analysed. Both patient groups were adjusted by age and sex, which are known to affect bone structure and density17,18.\nMethods\nPatients and bone sample collection",
+          "cos_sim_score": 0.5544053912162781,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11978847",
+          "title": "Microstructural and transcriptomic characterization of trabecular bone in idiopathic osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978847/",
+          "text": "Fig. 1Preoperative anteroposterior radiograph of a right hip in a 61-year\u00ad-old man with osteoarthritis (OA) and in a 56-\u00adyear\u00ad-old man with osteonecrosis of the femoral head (ONFH). Trabecular bone explants were taken from the femoral head (1) and from the intertrochanteric region (2) in both patient groups.\nFig. 1\nPreoperative anteroposterior radiograph of a right hip in a 61-year\u00ad-old man with osteoarthritis (OA) and in a 56-\u00adyear\u00ad-old man with osteonecrosis of the femoral head (ONFH). Trabecular bone explants were taken from the femoral head (1) and from the intertrochanteric region (2) in both patient groups.\nMicro-computed tomography (\u00b5CT)\nTrabecular bone explants were washed with PBS, fixed in 10% formalin for 24 h at 4 \u00baC and stored in 0.1% formalin until use. The bone samples were scanned with an X-ray microfocus computerized tomography machine (Nikon XT H 160 MedX Alpha, Nikon Metrology NV, Leuven, Belgium) at 123\u2013130 kV and 73\u201385 \u00b5A. For each sample, we obtained 1500 projections that were reconstructed as 16-bit grey scale stacks with a voxel size from 10 to 13 \u03bcm. The reconstructed imaging data of bone explants were visualized using the 3D imaging software VG Studio 3.1 (Volume Graphics GmbH, Heidelberg, Germany) and analysed using the BoneJ plugin for ImageJ software22. Each region was binarised using a flat intensity threshold. A region of interest slightly smaller than the size of the specimen was defined for all cross-sections in order to avoid the inclusion of possible debris formed during sampling. The following morphometric indices were generated: trabecular thickness (Tb.Th); spacing (Tb.Sp) and number (Tb.N); bone volume fraction defined as bone volume versus total volume (BV/TV); connectivity density (Conn.D) and degree of anisotropy (DA). DA, which measures how substructures are oriented within a volume, was calculated using the mean intercept length and expressed as a normalized scalar value ranging from 0 to 1, where 1 represented fully anisotropic substructures.\nHaematoxylin and eosin staining and imaging\nAfter \u00b5CT scanning, the bone explants were decalcified in a commercial solution (Osteodec, Bio-Optica, Milan, Italy) containing EDTA for 24 h at 4 \u00baC. Next, the bone samples were dehydrated through a graded ethanol series, cleared in xylene and finally embedded in paraffin. After dewaxing and rehydration, 5-micron sections of retrieved samples were stained with haematoxylin and eosin and examined under an optical microscope. The percentage of empty lacunae per total lacunae and the number of cells per unit of bone surface were quantified using the ImageJ software.\nMicroarrays analysis of differential gene expression",
+          "cos_sim_score": 0.5417798757553101,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11978847",
+          "title": "Microstructural and transcriptomic characterization of trabecular bone in idiopathic osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978847/",
+          "text": "Trabecular bone in the femoral head and the intertrochanteric region exhibited different transcriptome profiles. Genes regulated in the femoral head of both ONFH and OA patients were involved in cell division, migration and osteoblast differentiation, processes tightly regulated by mechanical forces42. Importantly, a substantial number of genes were exclusively upregulated in the femoral head of ONFH patients, many of which encoded proteins related to cell division and immune response. Previous data showed that glucocorticoid-induced ONFH is associated with chronic inflammation and reactive oxygen species (ROS) generation43. Analysis of genes regulated in subchondral bone of ONFH patients compared to individuals with freshly incurred femoral neck fractures suggest a relationship between ONFH and an imbalance in levels of innate immune cells13. In our study, overexpressed genes in trabecular bone of the femoral head were associated with strong inflammatory processes, indicating that inflammation is a likely mechanism in the maintenance of the disease. This inflammatory signature coincided with the upregulation of genes involved in ROS generation and oxygen transport, probably because of persistent hypoxia-induced tissue damage. While protein levels were not quantified in the present study, a recent proteomic analysis identified differentially expressed proteins related to immune response, inflammatory reaction, and oxidative stress in the femoral heads of ONFH patients with bone marrow edema44. ONFH has been associated with endothelial dysfunction in the subchondral bone due to chronic inflammation and elevated ROS production following ischaemic injury45. Our findings suggest that bone vasculature damage is extensive in the femoral head, as a large number of genes related to angiogenesis, cell adhesion and migration were downregulated in the trabecular region. An insufficient vascular niche led to an inadequate oxygen and nutrient supply to affected areas, as well as impaired tissue repair.\nAn integrated analysis using available transcriptomic and proteomic datasets in hip cartilage and bone tissue, respectively, of ONFH patients showed elevated hypoxia and osteoclast differentiation as major pathways associated with the disease46. While our analyses did not detect genes related to altered bone resorption in the femoral heads of ONFH patients, we found downregulated genes associated with biological processes crucial for bone formation and response to mechanical stimuli, including COL1A1. A previous analysis of common differentially expressed genes in the subchondral bone and cartilage of ONFH patients identified altered COL1A1 expression levels, suggesting that collagen metabolism is likely affected by ONFH progression47. Complementing these genetic insights, metabolomic data indicated that ONFH pathophysiology is marked by inflammatory processes and osteoblast dysregulation, as evidenced by altered linoleic acid metabolism, yielding potential diagnostic biomarkers48. Our data show that genes involved in the bone mineralization process included IBSP, whose transcript levels were also reduced in osteoblasts isolated from the femoral head of patients with idiopathic ONFH16. IBSP expression in osteoblasts increases after stimulation with BMP2, which, together with BMP4 and BMP6, induces osteogenic differentiation of mesenchymal precursors49,50. The present study revealed that transcript levels of these growth factors decreased in the trabecular bone around the necrotic lesion. Altogether, these data suggest that reduced expression levels of genes involved in bone formation may account for the altered trabecular bone microstructure in the femoral head of patients with idiopathic ONFH. A recent proteomic study suggests that impaired bone formation may be associated with reduced protein levels involved in glucose metabolic processes, including glucose transporter member 1 51. Notably, while ONFH primarily affects the femoral head, accumulating evidence suggests it may also influence systemic bone metabolism. For example, studies have demonstrated that patients with ONFH exhibit decreased lumbar spine BMD52 and increased urinary deoxypyridinoline/creatinine ratios53 compared with healthy subjects, indicating altered systemic bone metabolism. Furthermore, compared to OA, patients with ONFH have shown higher serum levels of adiponectin, an adipocyte-derived hormone inversely related to BMD52,53. Future studies will integrate protein-level data to complement our current gene expression findings.",
+          "cos_sim_score": 0.4956623315811157,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11720909",
+          "title": "Integrated bioinformatics analysis and experimental validation of exosome-related gene signature in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11720909/",
+          "text": "Fig.\u00a011\nThe immune cell infiltration linkage to hub genes. A The bar plot exhibited the content of 22 immune cells in each sample. B The violin plot demonstrated the distinctions in infiltration levels of immune cells between SIONFH patients and healthy controls. C\u2013F Lollipop plots of the correlation between four hub ERGs and immune cells\nThe linkage between the four hub ERGs and immune cells was further investigated. The results uncovered that PNP and UBE2V1 were positively correlated with activated dendritic cells and CD8 T cells. In contrast, LCP1 and ZFP36 were negatively connected with activated dendritic cells and CD8 T cells. Interestingly, all four hub ERGs were significantly correlated with neutrophils; the difference is that PNP and UBE2V1 were negatively related, while LCP1 and ZFP36 were positively related (Fig.\u00a011C\u2013F).\nDiscussion\nIt is presently known to us that the main etiology of non-traumatic osteonecrosis of the femoral head is alcohol and glucocorticoids [26]. However, the exact pathophysiological mechanism underlying SIONFH remains to be elucidated. Further investigation of the pathogenesis in SIONFH will contribute to the development of a brand-new and effective therapy method. Herein, we refined four-gene biomarkers connected with exosomes from the GEO database. To build its reliability, multifaceted methods were implemented including consensus clustering analysis of SIONFH samples from the dataset, extraction through three machine learning algorithms, as well as validation in clinical samples we collected. Based on these discoveries, we are committed to unraveling the biological mechanism of exosomes in SIONFH, laying a solid foundation for future research in this field.\nAlthough glucocorticoid has been determined as one of the pathophysiological causes of SIONFH, due to the multiple effects of glucocorticoid in multi-system pathways, the study of the pathogenesis of SIONFH is still full of great challenges [27]. These pathways, which contain the influence of glucocorticoids on osteoblast differentiation, osteoblast and osteoclast apoptosis, lipid metabolism, clotting pathways, and calcium metabolism, are interconnected, making their pathogenesis more difficult to understand [28]. Many scholars believe that endothelial cells are essential for maintaining bone microvascular endothelial cells (BMECs) homeostasis, and their damage can lead to abnormal coagulation and thrombosis [29]. Glucocorticoids have multiple effects on endothelial cells. Hypertension induced by glucocorticoids may be caused by increased peripheral resistance caused by changes in endothelial cell function and survival. This mechanism is accomplished through induction by vasoactive substances, a decrease in the number of functional microvessels, direct injury to endothelial cells, and enhancement of hypercoagulability [30]. Additionally, blood vessel formation and repair are recognized as critical processes of recovery mechanism after bone death. In this progression, vascular endothelial growth factors (VEGFs) exert critical function in inducing angiogenesis [31]. Li et al. discovered that increased VEGF levels could promote angiogenesis and accelerate bone repair in the study of glucocorticoid-induced early ONFH models in rabbits [32]. More interestingly, Li et al. first demonstrated that the apoptosis of BMECs and microcirculation dysfunction occurs early in SIONFH. Subsequently, they screened a fresh long noncoding RNA named FAR691 in BMECs, which was proved to be closely associated with the pathogenesis and progression of SIONFH [33]. Exosomes extensively participate in the physiological processes in bone, and they have shown functions in the regulation of vascularization and biomarkers for early diagnosis [34\u201337]. Consequently, this research primarily concentrated on the alternation of expression levels of exosome-related genes in SIONFH, and the achievement of tone results will contribute to enriching the theoretical and practical knowledge for the pathophysiological mechanisms, early diagnosis, and even therapy of SIONFH.",
+          "cos_sim_score": 0.4464470148086548,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": [
+        {
+          "id": "pubmed::39789578",
+          "title": "Integrated bioinformatics analysis and experimental validation of exosome-related gene signature in steroid-induced osteonecrosis of the femoral head.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39789578/",
+          "year": "2025",
+          "text": "Steroid-induced osteonecrosis of the femoral head (SIONFH) is a universal hip articular disease and is very hard to perceive at an early stage. The understanding of the pathogenesis of SIONFH is still limited, and the identification of efficient diagnostic biomarkers is insufficient. This research aims to recognize and validate the latent exosome-related molecular signature in SIONFH diagnosis by employing bioinformatics to investigate exosome-related mechanisms in SIONFH. The GSE123568 and GSE74089 datasets were employed to conduct differentially expressed genes (DEGs) analysis, and the GSE123568 dataset was subjected to perform weighted genes co-expression network analysis (WGCNA). The exosome-related genes (ERGs) were retrieved from the GeneCards database. We identified differentially expressed exosome-related genes (DEERGs) between healthy controls (HC) and SIONFH patients, and a consensus clustering analysis was then implemented to group the SIONFH patients. The CIBERSORT was implemented to calculate the immune cell infiltration. Gene Set Variation Analysis (GSVA), Gene Ontology (GO), and Kyoto Encyclopedia of Genes and Genomes (KEGG) were conducted to investigate latent enriched pathways. In addition, machine-learning algorithms were applied to refine the DEERGs. Ultimately, we verified the diagnostic significance and expression of the hub genes using the SIONFH datasets and performing quantitative reverse transcription polymerase chain reaction (qRT-PCR) analysis. This study identified twenty DEERGs from the peripheral serum and hip articular cartilage samples of SIONFH patients and HC. Two SIONFH subtypes related to ERGs were identified, and distinctions in pathways and immune cell infiltration patterns were compared. SIONFH's high-risk subpopulation exhibited enriched immune-related pathways and high immune cell infiltration, such as M0 macrophages, resting mast cells, and neutrophils. Three machine-learning algorithms then determined LCP1, PNP, UBE2V1, and ZFP36 as four exosome-related hub genes (ERHGs). Compared to HC samples, these ERHGs showed excellent diagnostic efficiency (overall AUC for ERHGs is in the range of 0.923 to 0.970 in GSE123568) in SIONFH samples. LCP1, PNP, UBE2V1, and ZFP36 expressions were validated in the GSE123568 and GSE74089 datasets and finally detected in peripheral serum samples with accordant expression by RT-qPCR. Twenty potential exosome-related genes involved",
+          "cos_sim_score": 0.3412713408470154,
+          "source_type": "pubmed"
+        },
+        {
+          "id": "pubmed::39789578",
+          "title": "Integrated bioinformatics analysis and experimental validation of exosome-related gene signature in steroid-induced osteonecrosis of the femoral head.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39789578/",
+          "year": "2025",
+          "text": "exosome-related hub genes (ERHGs). Compared to HC samples, these ERHGs showed excellent diagnostic efficiency (overall AUC for ERHGs is in the range of 0.923 to 0.970 in GSE123568) in SIONFH samples. LCP1, PNP, UBE2V1, and ZFP36 expressions were validated in the GSE123568 and GSE74089 datasets and finally detected in peripheral serum samples with accordant expression by RT-qPCR. Twenty potential exosome-related genes involved in SIONFH were identified through bioinformatics analysis. LCP1, PNP, UBE2V1, and ZFP36 might become candidate biomarkers and therapeutic targets because they have an intimate relationship with exosomes. These findings shed light on the exosome-related acquaintance of SIONFH and might contribute to the diagnosis and prognosis of SIONFH.",
+          "cos_sim_score": -0.005482302512973547,
+          "source_type": "pubmed"
+        }
+      ]
+    }
+  ]
+}

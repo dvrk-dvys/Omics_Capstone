@@ -1,0 +1,233 @@
+{
+  "rf_rank": 59,
+  "probe_id": "11758929_at",
+  "gene_symbol": "TFDP2",
+  "score": 0.51,
+  "rf_n_nodes": 4,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 1.9824,
+  "log_fc": -1.9824,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11758929_at",
+  "max_score": 0.51,
+  "mean_abs_fold_change": 1.9824,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:01:41",
+  "interpretation": "TFDP2, or transcription factor Dp-2, is involved in regulating cell cycle progression and apoptosis through its interaction with E2F transcription factors. This gene's role in cell proliferation and differentiation is particularly relevant in the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), where glucocorticoids are known to induce osteoblast apoptosis and impair bone formation. Although direct evidence linking TFDP2 to SONFH is limited, its involvement in cell cycle regulation suggests a potential mechanism by which steroid treatment could exacerbate bone cell death and contribute to the disease's progression. The evidence retrieved primarily supports its biological functions rather than a direct association with SONFH, leading to a lower confidence in its potential as a biomarker. Therefore, while TFDP2 may play a role in the underlying mechanisms of SONFH, its clinical relevance as an early-detection biomarker remains uncertain.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "TFDP2 is implicated in cell cycle regulation, which may contribute to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "TFDP2 (Q14188). https://www.uniprot.org/uniprotkb/Q14188",
+    "TFDP2 (Q14188-5). https://www.uniprot.org/uniprotkb/Q14188-5",
+    "TFDP2 (Q14188-3). https://www.uniprot.org/uniprotkb/Q14188-3",
+    "TFDP2 \u2014 TFDP2. https://platform.opentargets.org/target/ENSG00000114126",
+    "TFDP2 \u2194 chronic kidney disease. https://platform.opentargets.org/target/ENSG00000114126/associations",
+    "TFDP2 \u2194 Testicular Germ Cell Tumor. https://platform.opentargets.org/target/ENSG00000114126/associations",
+    "TFDP2 \u2194 musculoskeletal system disease. https://platform.opentargets.org/target/ENSG00000114126/associations",
+    "TFDP2 \u2194 kidney disease. https://platform.opentargets.org/target/ENSG00000114126/associations",
+    "TFDP2 \u2014 transcription factor Dp-2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CDKN1A \u2014 cyclin dependent kinase inhibitor 1A (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "RB1 \u2014 RB transcriptional corepressor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CFH \u2014 complement factor H (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "E2F1 \u2014 E2F transcription factor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Microstructural and transcriptomic characterization of trabecular bone in idiopathic osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11978847/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8700,
+    "completion_tokens": 335,
+    "total_tokens": 9035,
+    "estimated_cost_usd": 0.001506
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q14188",
+          "title": "TFDP2 (Q14188)",
+          "url": "https://www.uniprot.org/uniprotkb/Q14188",
+          "text": "Protein: Transcription factor Dp-2\nFunction: Can stimulate E2F-dependent transcription. Binds DNA cooperatively with E2F family members through the E2 recognition site, 5'-TTTC[CG]CGC-3', found in the promoter region of a number of genes whose products are involved in cell cycle regulation or in DNA replication. The TFDP2:E2F complex functions in the control of cell-cycle progression from G1 to S phase. The E2F1:DP complex appears to mediate both cell proliferation and apoptosis. Blocks adipocyte differentiation by repressing CEBPA binding to its target gene promoters (PubMed:20176812)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q14188-5",
+          "title": "TFDP2 (Q14188-5)",
+          "url": "https://www.uniprot.org/uniprotkb/Q14188-5",
+          "text": "Protein: Isoform Epsilon of Transcription factor Dp-2",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q14188-3",
+          "title": "TFDP2 (Q14188-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q14188-3",
+          "text": "Protein: Isoform Gamma of Transcription factor Dp-2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000114126::function",
+          "title": "TFDP2 \u2014 TFDP2",
+          "url": "https://platform.opentargets.org/target/ENSG00000114126",
+          "text": "Function: Can stimulate E2F-dependent transcription. Binds DNA cooperatively with E2F family members through the E2 recognition site, 5'-TTTC[CG]CGC-3', found in the promoter region of a number of genes whose products are involved in cell cycle regulation or in DNA replication. The TFDP2:E2F complex functions in the control of cell- cycle progression from G1 to S phase. The E2F1:DP complex appears to mediate both cell proliferation and apoptosis. Blocks adipocyte differentiation by repressing CEBPA binding to its target gene promoters (PubMed:20176812). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000114126::EFO_0003884",
+          "title": "TFDP2 \u2194 chronic kidney disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000114126/associations",
+          "text": "Disease: chronic kidney disease\nDescription: The end-stage of CHRONIC RENAL INSUFFICIENCY. It is characterized by the severe irreversible kidney damage (as measured by the level of PROTEINURIA) and the reduction in GLOMERULAR FILTRATION RATE to less than 15 ml per min (Kidney Foundation: Kidney Disease Outcome Quality Initiative, 2002). These patients generally require HEMODIALYSIS or KIDNEY TRANSPLANTATION.\nAssociation score: 0.306",
+          "cos_sim_score": 0.30647932637087916,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000114126::EFO_1000566",
+          "title": "TFDP2 \u2194 Testicular Germ Cell Tumor",
+          "url": "https://platform.opentargets.org/target/ENSG00000114126/associations",
+          "text": "Disease: Testicular Germ Cell Tumor\nDescription: A germ cell tumor arising from the testis. Representative examples include teratoma, seminoma, embryonal carcinoma, and yolk sac tumor.\nAssociation score: 0.290",
+          "cos_sim_score": 0.2897217409294411,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000114126::EFO_0009676",
+          "title": "TFDP2 \u2194 musculoskeletal system disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000114126/associations",
+          "text": "Disease: musculoskeletal system disease\nDescription: A disease involving the musculoskeletal system. [database_cross_reference: MONDO:DesignPattern]\nAssociation score: 0.251",
+          "cos_sim_score": 0.2512765246497761,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000114126::EFO_0003086",
+          "title": "TFDP2 \u2194 kidney disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000114126/associations",
+          "text": "Disease: kidney disease\nDescription: A disease involving the kidney.\nAssociation score: 0.241",
+          "cos_sim_score": 0.24129112885582354,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "TFDP2 \u2014 transcription factor Dp-2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TFDP2\nGene name: transcription factor Dp-2\nAliases / synonyms: DP2\nOrganism: Homo sapiens\nGene summary: The gene is a member of the transcription factor DP family. The encoded protein forms heterodimers with the E2F transcription factors resulting in transcriptional activation of cell cycle regulated genes. Alternative splicing results in multiple transcript variants. [provided by RefSeq, May 2010]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TFDP2",
+          "aliases": "DP2",
+          "gene_description": "transcription factor Dp-2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CDKN1A \u2014 cyclin dependent kinase inhibitor 1A",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CDKN1A\nGene name: cyclin dependent kinase inhibitor 1A\nAliases / synonyms: CAP20, CDKN1, CIP1, MDA-6, P21, SDI1, WAF1, p21CIP1\nOrganism: Homo sapiens\nGene summary: This gene encodes a potent cyclin-dependent kinase inhibitor. The encoded protein binds to and inhibits the activity of cyclin-cyclin-dependent kinase2 or -cyclin-dependent kinase4 complexes, and thus functions as a regulator of cell cycle progression at G1. The expression of this gene is tightly controlled by the tumor suppressor protein p53, through which this protein mediates the p53-dependent cell cycle G1 phase arrest in response to a variety of stress stimuli. This protein can interact with proliferating cell nuclear antigen, a DNA polymerase accessory factor, and plays a regulatory role in S phase DNA replication and DNA damage repair. This protein was reported to be specifically cleaved by CASP3-like caspases, which thus leads to a dramatic activation of cyclin-dependent kinase2, a...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CDKN1A",
+          "aliases": "CAP20, CDKN1, CIP1, MDA-6, P21, SDI1, WAF1, p21CIP1",
+          "gene_description": "cyclin dependent kinase inhibitor 1A"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "RB1 \u2014 RB transcriptional corepressor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RB1\nGene name: RB transcriptional corepressor 1\nAliases / synonyms: OSRC, PPP1R130, RB, p105-Rb, p110-RB1, pRb, pp110\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a negative regulator of the cell cycle and was the first tumor suppressor gene found. The encoded protein also stabilizes constitutive heterochromatin to maintain the overall chromatin structure. The active, hypophosphorylated form of the protein binds transcription factor E2F1. Defects in this gene are a cause of childhood cancer retinoblastoma (RB), bladder cancer, and osteogenic sarcoma. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RB1",
+          "aliases": "OSRC, PPP1R130, RB, p105-Rb, p110-RB1, pRb, pp110",
+          "gene_description": "RB transcriptional corepressor 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CFH \u2014 complement factor H",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CFH\nGene name: complement factor H\nAliases / synonyms: AHUS1, AMBP1, ARMD4, ARMS1, CFHL3, FH, FHL1, HF, HF1, HF2, HUS\nOrganism: Homo sapiens\nGene summary: This gene is a member of the Regulator of Complement Activation (RCA) gene cluster and encodes a protein with twenty short consensus repeat (SCR) domains. This protein is secreted into the bloodstream and has an essential role in the regulation of complement activation, restricting this innate defense mechanism to microbial infections. Mutations in this gene have been associated with hemolytic-uremic syndrome (HUS) and chronic hypocomplementemic nephropathy. Alternate transcriptional splice variants, encoding different isoforms, have been characterized. [provided by RefSeq, Oct 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CFH",
+          "aliases": "AHUS1, AMBP1, ARMD4, ARMS1, CFHL3, FH, FHL1, HF, HF1, HF2, HUS",
+          "gene_description": "complement factor H"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "E2F1 \u2014 E2F transcription factor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: E2F1\nGene name: E2F transcription factor 1\nAliases / synonyms: E2F-1, RBAP1, RBBP3, RBP3\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the E2F family of transcription factors. The E2F family plays a crucial role in the control of cell cycle and action of tumor suppressor proteins and is also a target of the transforming proteins of small DNA tumor viruses. The E2F proteins contain several evolutionally conserved domains found in most members of the family. These domains include a DNA binding domain, a dimerization domain which determines interaction with the differentiation regulated transcription factor proteins (DP), a transactivation domain enriched in acidic amino acids, and a tumor suppressor protein association domain which is embedded within the transactivation domain.  This protein and another 2 members, E2F2 and E2F3, have an additional cyclin binding domain. This p...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "E2F1",
+          "aliases": "E2F-1, RBAP1, RBBP3, RBP3",
+          "gene_description": "E2F transcription factor 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::11978847",
+          "title": "Microstructural and transcriptomic characterization of trabecular bone in idiopathic osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978847/",
+          "text": "Introduction\nThe most frequent diagnosis in young adults undergoing total hip arthroplasty (THA) is osteonecrosis of the femoral head (ONFH), an evolving and disabling condition that is increasingly prevalent worldwide1. ONFH is characterized by bone cell death as a result of local ischaemia. Despite efforts to stimulate subchondral bone healing and preserve the native joints, the affected bone does not usually remodel or heal normally2,3. Consequently, the lack of bone regeneration leads to femoral head collapse in a relatively short time and THA is required. The most common risk factors for developing ONFH are previous trauma, massive corticosteroid administration and alcohol abuse. However, a significant number of cases remain idiopathic, with no identifiable risk factors4. The pathological bases of non-traumatic ONFH are still not fully understood, given the difficulties of obtaining bone samples from patients in the early stages and the lack of animal models that faithfully recapitulate the disease. Most hypotheses on the potential ONFH initiation mechanism point towards an alteration in the blood supply to the subchondral bone, as a consequence of intravascular occlusion by fat emboli and thrombi, as well as intraosseous extravascular compression. Initial stages of the disease lead to the formation of a necrotic area in the weight-bearing region, often characterized by accumulation of empty lacunae5. A reparative sclerotic zone containing condensed trabecular bone is developed between the necrotic zone and the adjacent trabecular bone. The collapse of the femoral head is primarily driven by the formation of microfractures at the junction between the reparative zone and the necrotic bone due to bone remodeling imbalance and microstructural deterioration6,7. ONFH is frequently associated with bone marrow edema in the femoral head, which is closely linked with symptomatology and disease progression. Histological studies suggest that trabecular bone in the femoral head could be altered by surrounding medullary necrosis5,8. Providing further evidence on the extent of bone alterations in the femoral head of patients with ONFH may be helpful for surgeons in deciding the appropriate type of hip arthroplasty for this population.\nMost studies on the pathophysiology of non-traumatic ONFH use bone explants from patients with glucocorticoid-induced ONFH undergoing THA9\u201311. However, abnormalities in the trabecular bone of these patients could be expected, given that glucocorticoids are recognized as promoting osteoblast apoptosis, reducing bone formation and prolonging the lifespan of osteoclasts12. Other studies provide limited descriptions of patients\u2019 clinical features or combine different ONFH etiologies, making it difficult to clarify the disease mechanisms5,8,13\u201315. To date, the molecular mechanisms behind trabecular bone alterations in patients with ONFH without an obvious aetiological factor remain largely unexplored. Recent evidence indicates that idiopathic ONFH is associated with altered activity in bone-forming cells in trabecular bone of the femoral head16. In this study, we further investigate the pathophysiology of idiopathic ONFH by comparing the microstructure and histological features of trabecular bone obtained from two distinct zones of the proximal femur\u2014the femoral head and the intertrochanteric region\u2014in each patient. To explore the genes involved in ONFH pathophysiology, we conducted comparative analyses of the transcriptomic profile in the bone samples. For comparative purposes, bone samples from the same anatomical sites in patients with primary osteoarthritis (OA) of the hip were obtained and analysed. Both patient groups were adjusted by age and sex, which are known to affect bone structure and density17,18.\nMethods\nPatients and bone sample collection",
+          "cos_sim_score": 0.6117545366287231,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11978847",
+          "title": "Microstructural and transcriptomic characterization of trabecular bone in idiopathic osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978847/",
+          "text": "Fig. 1Preoperative anteroposterior radiograph of a right hip in a 61-year\u00ad-old man with osteoarthritis (OA) and in a 56-\u00adyear\u00ad-old man with osteonecrosis of the femoral head (ONFH). Trabecular bone explants were taken from the femoral head (1) and from the intertrochanteric region (2) in both patient groups.\nFig. 1\nPreoperative anteroposterior radiograph of a right hip in a 61-year\u00ad-old man with osteoarthritis (OA) and in a 56-\u00adyear\u00ad-old man with osteonecrosis of the femoral head (ONFH). Trabecular bone explants were taken from the femoral head (1) and from the intertrochanteric region (2) in both patient groups.\nMicro-computed tomography (\u00b5CT)\nTrabecular bone explants were washed with PBS, fixed in 10% formalin for 24 h at 4 \u00baC and stored in 0.1% formalin until use. The bone samples were scanned with an X-ray microfocus computerized tomography machine (Nikon XT H 160 MedX Alpha, Nikon Metrology NV, Leuven, Belgium) at 123\u2013130 kV and 73\u201385 \u00b5A. For each sample, we obtained 1500 projections that were reconstructed as 16-bit grey scale stacks with a voxel size from 10 to 13 \u03bcm. The reconstructed imaging data of bone explants were visualized using the 3D imaging software VG Studio 3.1 (Volume Graphics GmbH, Heidelberg, Germany) and analysed using the BoneJ plugin for ImageJ software22. Each region was binarised using a flat intensity threshold. A region of interest slightly smaller than the size of the specimen was defined for all cross-sections in order to avoid the inclusion of possible debris formed during sampling. The following morphometric indices were generated: trabecular thickness (Tb.Th); spacing (Tb.Sp) and number (Tb.N); bone volume fraction defined as bone volume versus total volume (BV/TV); connectivity density (Conn.D) and degree of anisotropy (DA). DA, which measures how substructures are oriented within a volume, was calculated using the mean intercept length and expressed as a normalized scalar value ranging from 0 to 1, where 1 represented fully anisotropic substructures.\nHaematoxylin and eosin staining and imaging\nAfter \u00b5CT scanning, the bone explants were decalcified in a commercial solution (Osteodec, Bio-Optica, Milan, Italy) containing EDTA for 24 h at 4 \u00baC. Next, the bone samples were dehydrated through a graded ethanol series, cleared in xylene and finally embedded in paraffin. After dewaxing and rehydration, 5-micron sections of retrieved samples were stained with haematoxylin and eosin and examined under an optical microscope. The percentage of empty lacunae per total lacunae and the number of cells per unit of bone surface were quantified using the ImageJ software.\nMicroarrays analysis of differential gene expression",
+          "cos_sim_score": 0.5763430595397949,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11978847",
+          "title": "Microstructural and transcriptomic characterization of trabecular bone in idiopathic osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978847/",
+          "text": "Trabecular bone in the femoral head and the intertrochanteric region exhibited different transcriptome profiles. Genes regulated in the femoral head of both ONFH and OA patients were involved in cell division, migration and osteoblast differentiation, processes tightly regulated by mechanical forces42. Importantly, a substantial number of genes were exclusively upregulated in the femoral head of ONFH patients, many of which encoded proteins related to cell division and immune response. Previous data showed that glucocorticoid-induced ONFH is associated with chronic inflammation and reactive oxygen species (ROS) generation43. Analysis of genes regulated in subchondral bone of ONFH patients compared to individuals with freshly incurred femoral neck fractures suggest a relationship between ONFH and an imbalance in levels of innate immune cells13. In our study, overexpressed genes in trabecular bone of the femoral head were associated with strong inflammatory processes, indicating that inflammation is a likely mechanism in the maintenance of the disease. This inflammatory signature coincided with the upregulation of genes involved in ROS generation and oxygen transport, probably because of persistent hypoxia-induced tissue damage. While protein levels were not quantified in the present study, a recent proteomic analysis identified differentially expressed proteins related to immune response, inflammatory reaction, and oxidative stress in the femoral heads of ONFH patients with bone marrow edema44. ONFH has been associated with endothelial dysfunction in the subchondral bone due to chronic inflammation and elevated ROS production following ischaemic injury45. Our findings suggest that bone vasculature damage is extensive in the femoral head, as a large number of genes related to angiogenesis, cell adhesion and migration were downregulated in the trabecular region. An insufficient vascular niche led to an inadequate oxygen and nutrient supply to affected areas, as well as impaired tissue repair.\nAn integrated analysis using available transcriptomic and proteomic datasets in hip cartilage and bone tissue, respectively, of ONFH patients showed elevated hypoxia and osteoclast differentiation as major pathways associated with the disease46. While our analyses did not detect genes related to altered bone resorption in the femoral heads of ONFH patients, we found downregulated genes associated with biological processes crucial for bone formation and response to mechanical stimuli, including COL1A1. A previous analysis of common differentially expressed genes in the subchondral bone and cartilage of ONFH patients identified altered COL1A1 expression levels, suggesting that collagen metabolism is likely affected by ONFH progression47. Complementing these genetic insights, metabolomic data indicated that ONFH pathophysiology is marked by inflammatory processes and osteoblast dysregulation, as evidenced by altered linoleic acid metabolism, yielding potential diagnostic biomarkers48. Our data show that genes involved in the bone mineralization process included IBSP, whose transcript levels were also reduced in osteoblasts isolated from the femoral head of patients with idiopathic ONFH16. IBSP expression in osteoblasts increases after stimulation with BMP2, which, together with BMP4 and BMP6, induces osteogenic differentiation of mesenchymal precursors49,50. The present study revealed that transcript levels of these growth factors decreased in the trabecular bone around the necrotic lesion. Altogether, these data suggest that reduced expression levels of genes involved in bone formation may account for the altered trabecular bone microstructure in the femoral head of patients with idiopathic ONFH. A recent proteomic study suggests that impaired bone formation may be associated with reduced protein levels involved in glucose metabolic processes, including glucose transporter member 1 51. Notably, while ONFH primarily affects the femoral head, accumulating evidence suggests it may also influence systemic bone metabolism. For example, studies have demonstrated that patients with ONFH exhibit decreased lumbar spine BMD52 and increased urinary deoxypyridinoline/creatinine ratios53 compared with healthy subjects, indicating altered systemic bone metabolism. Furthermore, compared to OA, patients with ONFH have shown higher serum levels of adiponectin, an adipocyte-derived hormone inversely related to BMD52,53. Future studies will integrate protein-level data to complement our current gene expression findings.",
+          "cos_sim_score": 0.5464564561843872,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11978847",
+          "title": "Microstructural and transcriptomic characterization of trabecular bone in idiopathic osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978847/",
+          "text": "Table 2\nSummary of overlapping differentially expressed genes in trabecular bone (identified in the present study) and in subchondral bone (identified by Duan et al.13) from the femoral head of ONFH patients.\nONFH: Osteonecrosis of the femoral head; OA: Osteoarthritis; FH: Femoral head; IT: Intertrochanteric region.\nDiscussion\nThis study included ONFH and OA patients with comparable demographic and clinical characteristics, including age and sex, which are known to influence bone quality30,31. The similarity in these characteristics, as well as comparable CTI values between the groups, enabled a more accurate comparison of the effects of ONFH on bone features relative to OA, thereby minimizing potential confounding factors. Bone microarchitecture varies between anatomical locations due to different mechanical loading environments and remodelling rates32. This study showed that trabeculae in the femoral head of ONFH and OA patients were thinner and more widely separated than in the intertrochanteric region, which correlated with lower bone volume fraction, connectivity density and degree of anisotropy. These differences may be expected, given that the femoral head has to withstand continuous high compressive forces, whereas the intertrochanteric region is also subjected to significant tensile forces33,34. More importantly, trabecular bone in the femoral head of ONFH patients exhibited some bone loss, as its trabeculae were thinner than those in the same sampling area in OA patients. Trabecular thinning was associated with a reduction in bone volume fraction and microstructural anisotropy, which are determinants of trabecular bone stiffness35. Previous data indicate that the affected subchondral bone area in the femoral head of ONFH patients shows signs of impaired mineralization15. The positive correlation between bone volume fraction determined by \u00b5CT and mineral content measured by dual-energy X-ray absorptiometry suggests that reduced trabecular bone volume in the femoral head of ONFH patients results from a lower mineralization capacity in bone-forming cells, as supported previous in vitro studies16,36,37.\nAn increase in osteocyte apoptosis has been linked to the pathogenesis of ONFH induced by corticosteroids or ethanol abuse38,39. The mechanism that initiates osteocyte death is not well understood, but involves microdamage formation in the bone matrix, which positively correlates with decreased bone stiffness40,41. The presence of empty lacunae is widely accepted as an indicator of osteocytic cell death. In our study, we observed a significant increase in the number of empty lacunae in the femoral head of ONFH and OA patients compared to the intertrochanteric region, probably as a result of differential bone adaptation to mechanical loading between the two anatomical sites. The significantly higher number of empty lacunae in trabecular bone of the femoral head of ONFH patients compared to OA patients might be a consequence of surrounding medullary necrosis, while the increased number of bone cells in this anatomical site likely reflects an active repair process in response to osteocyte dysfunction or death.",
+          "cos_sim_score": 0.49398505687713623,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11978847",
+          "title": "Microstructural and transcriptomic characterization of trabecular bone in idiopathic osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11978847/",
+          "text": "p\u2009< 0.05.\nFig. 3\nHistological examination. Upper panel: Representative images of haematoxylin and eosin staining of trabecular bone from the femoral head (FH) and the intertrochanteric region (IT) of OA and ONFH patients. Arrows indicate empty lacunae while asterisks denote cells on bone surface. Lower panel: Box plots showing the percentage of empty lacunae per total lacunae and the number of bone cells (Cell.N) per bone perimeter in trabecular bone in each group. Data are presented as medians and interquartile ranges. *\np\u2009< 0.05.\nTranscriptomic analysis\nThe gene expression profile in trabecular bone from the femoral head, compared to the intertrochanteric region, was notably different between ONFH and OA patients, with a higher number of differentially expressed genes in the ONFH group (Fig.\u00a04A). Pairwise comparisons of bone samples obtained from ONFH patients revealed 2362 protein-coding genes whose transcript levels changed by at least 1.5-fold (in either direction) (Supplementary Table S4). The changes detected in OA samples were more modest, with only 460 genes significantly affected (Supplementary Table S5). In addition, the magnitude of changes in genes regulated in the femoral head of OA patients was generally lower than in the ONFH group (Fig.\u00a04A). The gene signature in the femoral head of ONFH and OA patients partially overlapped, with 261 genes regulated in the same direction in both groups (Fig.\u00a04B) (Supplementary Table S6). The 30 genes whose expression changed the most in either direction in the femoral head of ONFH and OA patients are shown in Fig.\u00a04C. One third of these genes, including ATF3, NR4A1 and CYR61, which encode proteins involved in bone maintenance and repair, were common to both patient groups and shared the same direction of change24\u201326. A range of common biological processes was enriched in genes differentially regulated in the femoral head of ONFH and OA patients (Fig.\u00a04D) (Supplementary Table S7). The most commonly overexpressed genes in the femoral head of both groups were related to inflammation and cell division, while the most downregulated transcripts were involved in angiogenesis, cell migration and adhesion, and osteoblast differentiation (Fig.\u00a04E). Interestingly, the number of genes associated with these biological processes was higher in the ONFH than in the OA group (Fig.\u00a04D) (Supplementary Table S7).\nFig. 4Genes regulated in trabecular bone from the femoral head of ONFH and OA patients compared to the intertrochanteric region of the same patients. (A) Volcano plots showing the Log2 of the fold change (Log2 FC) values of protein-coding genes between trabecular bone from the femoral head (FH) and the intertrochanteric region (IT) of OA and ONFH patients plotted against their associated \u2212\u2009Log10 of the p-values. Dots representing individual genes were divided in three different groups: p-value \u2265\u20090.05 (not significant), p-value <\u20090.05 and FC \u2265\u20091.5 (upregulated) and p-value <\u20090.05 and FC \u2264 \u2212 1.5 (downregulated). The top 20 differentially expressed genes are labelled. (B) Venn diagram of differentially expressed genes in the femoral head of ONFH and OA patients. (C) Heatmaps for the 30 genes with the highest fold change showing the z-score value calculated for each gene and sample. Asterisks denote genes regulated in the same direction in both patient groups. (D) Gene ontology analysis showing the most common enriched categories in biological processes in the FH of both patient groups. (E) Network representation showing 25 selected genes with the highest fold change (in either direction) annotated to the categories shown in D and commonly regulated in the FH of both groups. Genes represented in red and blue were upregulated and downregulated, respectively.\nFig. 4",
+          "cos_sim_score": 0.4624079465866089,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

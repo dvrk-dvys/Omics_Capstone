@@ -1,0 +1,154 @@
+{
+  "probe_id": "11736509_x_at",
+  "gene_symbol": "IL6R",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0,
+  "abs_fold_change": 1.3685,
+  "score": 1.3649,
+  "probe_count": 1,
+  "probe_ids": "11736509_x_at",
+  "max_score": 1.3649,
+  "mean_abs_fold_change": 1.3685,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T02:18:24",
+  "interpretation": "IL6R encodes the interleukin-6 receptor, which is crucial for mediating the effects of interleukin-6 (IL-6), a cytokine involved in inflammation and immune responses. The IL6R protein can exist in both membrane-bound and soluble forms, with the soluble form (sIL6R) enhancing IL-6 signaling through a process known as trans-signaling. This mechanism is particularly relevant in chronic inflammatory conditions, which may contribute to the pathogenesis of steroid-induced osteonecrosis of the femoral head (SONFH). While the retrieved evidence does not directly link IL6R to SONFH, its role in inflammation and tissue regeneration suggests a potential involvement in the disease process. Therefore, IL6R may serve as a biomarker for early detection of SONFH, although the strength of the evidence is moderate and primarily inferred from its biological functions rather than direct disease association.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "IL6R is implicated in inflammatory processes that may contribute to the development of steroid-induced osteonecrosis of the femoral head.",
+  "citations": [
+    "IL6R (P08887). https://www.uniprot.org/uniprotkb/P08887",
+    "IL6R (P08887-2). https://www.uniprot.org/uniprotkb/P08887-2",
+    "IL6R \u2014 IL6R. https://platform.opentargets.org/target/ENSG00000160712",
+    "IL6R \u2194 rheumatoid arthritis. https://platform.opentargets.org/target/ENSG00000160712/associations",
+    "IL6R \u2194 Eczematoid dermatitis. https://platform.opentargets.org/target/ENSG00000160712/associations",
+    "IL6R \u2194 juvenile idiopathic arthritis. https://platform.opentargets.org/target/ENSG00000160712/associations",
+    "IL6R \u2194 neuromyelitis optica. https://platform.opentargets.org/target/ENSG00000160712/associations",
+    "Interleukin-6 receptor. https://en.wikipedia.org/wiki/Interleukin-6_receptor",
+    "LMT-28. https://en.wikipedia.org/wiki/LMT-28",
+    "Glycoprotein 130. https://en.wikipedia.org/wiki/Glycoprotein_130",
+    "Vobarilizumab. https://en.wikipedia.org/wiki/Vobarilizumab",
+    "Monoclonal antibody therapy. https://en.wikipedia.org/wiki/Monoclonal_antibody_therapy"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5480,
+    "completion_tokens": 249,
+    "total_tokens": 5729,
+    "estimated_cost_usd": 0.000971
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P08887",
+          "title": "IL6R (P08887)",
+          "url": "https://www.uniprot.org/uniprotkb/P08887",
+          "text": "Protein: Interleukin-6 receptor subunit alpha\nFunction: Part of the receptor for interleukin 6. Binds to IL6 with low affinity, but does not transduce a signal (PubMed:28265003). Signal activation necessitate an association with IL6ST. Activation leads to the regulation of the immune response, acute-phase reactions and hematopoiesis (PubMed:30995492, PubMed:31235509). The interaction with membrane-bound IL6R and IL6ST stimulates 'classic signaling', the restricted expression of the IL6R limits classic IL6 signaling to only a few tissues such as the liver and some cells of the immune system. Whereas the binding of IL6 and soluble IL6R to IL6ST stimulates 'trans-signaling'. Alternatively, 'cluster signaling' occurs when membrane-bound IL6:IL6R complexes on transmitter cells activate IL6ST receptors on neighboring receiver cells (Probable) Signaling via the membrane-bound IL6R is mostly regenerative and anti-inflammatory (Probable). Drives naive CD4(+) T cells to the Th17 lineage, through 'cluster signaling' by dendritic cells (By similarity) Soluble form of IL6 receptor (sIL6R) that acts as an agonist of IL6 activity (PubMed:21990364). The IL6:sIL6R complex (hyper-IL6) binds to IL6ST/gp130 on cell surfaces and induces signaling also on cells that do not express membrane-bound IL6R in a process called IL6 'trans-signaling'. sIL6R is causative for the pro-inflammatory properties of IL6 and an important player in the development of chronic inflammatory diseases (PubMed:21990364). In complex with IL6, is required for induction of VEGF production (PubMed:12794819). Plays a protective role during liver injury, being required for maintenance of tissue regeneration (By similarity). 'Trans-signaling' in central nervous system regulates energy and glucose homeostasis (By similarity) Soluble form of IL6 receptor (sIL6R) that acts as an agonist of IL6 activity (PubMed:21990364). The IL6:sIL6R complex (hyper-IL6) binds to IL6ST/gp130 on cell surfaces and induces signaling also on cells that do not express membrane-bound IL6R in a process called IL6 'trans-signaling'. sIL6R is causative for the pro-inflammatory properties of IL6 and an important player in the development of chronic inflammatory diseases (PubMed:21990364). In complex with IL6, is required for induction of VEGF production (PubMed:12794819). Plays a protective role during liver injury, being required for maintenance of tissue regeneration (By similarity). 'Trans-signaling' in central nervous system regulates energy and glucose homeostasis (By similarity)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P08887-2",
+          "title": "IL6R (P08887-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P08887-2",
+          "text": "Protein: Isoform 2 of Interleukin-6 receptor subunit alpha\nFunction: Soluble form of IL6 receptor (sIL6R) that acts as an agonist of IL6 activity (PubMed:21990364). The IL6:sIL6R complex (hyper-IL6) binds to IL6ST/gp130 on cell surfaces and induces signaling also on cells that do not express membrane-bound IL6R in a process called IL6 'trans-signaling'. sIL6R is causative for the pro-inflammatory properties of IL6 and an important player in the development of chronic inflammatory diseases (PubMed:21990364). In complex with IL6, is required for induction of VEGF production (PubMed:12794819). Plays a protective role during liver injury, being required for maintenance of tissue regeneration (By similarity). 'Trans-signaling' in central nervous system regulates energy and glucose homeostasis (By similarity)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000160712::function",
+          "title": "IL6R \u2014 IL6R",
+          "url": "https://platform.opentargets.org/target/ENSG00000160712",
+          "text": "Function: Part of the receptor for interleukin 6. Binds to IL6 with low affinity, but does not transduce a signal (PubMed:28265003). Signal activation necessitate an association with IL6ST. Activation leads to the regulation of the immune response, acute-phase reactions and hematopoiesis (PubMed:30995492, PubMed:31235509). The interaction with membrane-bound IL6R and IL6ST stimulates 'classic signaling', the restricted expression of the IL6R limits classic IL6 signaling to only a few tissues such as the liver and some cells of the immune system. Whereas the binding of IL6 and soluble IL6R to IL6ST stimulates 'trans- signaling'. Alternatively, 'cluster signaling' occurs when membrane- bound IL6:IL6R complexes on transmitter cells activate IL6ST receptors on neighboring receiver cells (Probable).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000160712::EFO_0000685",
+          "title": "IL6R \u2194 rheumatoid arthritis",
+          "url": "https://platform.opentargets.org/target/ENSG00000160712/associations",
+          "text": "Disease: rheumatoid arthritis\nDescription: A chronic, systemic autoimmune disorder characterized by inflammation in the synovial membranes and articular surfaces. It manifests primarily as a symmetric, erosive polyarthritis that spares the axial skeleton and is typically associated with the presence in the serum of rheumatoid factor.\nAssociation score: 0.727",
+          "cos_sim_score": 0.7269057706798291,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000160712::HP_0000964",
+          "title": "IL6R \u2194 Eczematoid dermatitis",
+          "url": "https://platform.opentargets.org/target/ENSG00000160712/associations",
+          "text": "Disease: Eczematoid dermatitis\nDescription: Eczema is a form of dermatitis that is characterized by scaly, pruritic, erythematous lesions located on flexural surfaces.\nAssociation score: 0.609",
+          "cos_sim_score": 0.6094085560296126,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000160712::EFO_0002609",
+          "title": "IL6R \u2194 juvenile idiopathic arthritis",
+          "url": "https://platform.opentargets.org/target/ENSG00000160712/associations",
+          "text": "Disease: juvenile idiopathic arthritis\nDescription: Juvenile idiopathic arthritis (JIA), also known as juvenile rheumatoid arthritis (JRA), is the most common form of arthritis in children and adolescents. (Juvenile in this context refers to an onset before age 16, idiopathic refers to a condition with no defined cause, and arthritis is the inflammation of the synovium of a joint.) JIA is an autoimmune, non-infective, inflammatory joint disease of more than 6 weeks duration in children less than 16 years of age. The disease commonly occurs in children from the ages of 7 to 12, but it may occur in adolescents as old as 15 years of age, as well as in infants. It is a subset of arthritis seen in childhood, which may be transient and self-limited or chronic. It differs significantly from arthritis commonly seen in adults (osteoarthritis, rheumatoid arthritis), and other types of arthritis that can present in childhood which are chronic conditions (e.g. psoriatic arthritis and ankylosing spondylitis). Aetiopathology is similar to rheumatoid arthritis but with less marked cartilage erosion, and joint instability and absent rheumatoid factor. JIA affects approximately 1 in 1,000 children in any given year, with about 1 in 10,000 having a more severe form.\nAssociation score: 0.597",
+          "cos_sim_score": 0.5973660920123812,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000160712::EFO_0004256",
+          "title": "IL6R \u2194 neuromyelitis optica",
+          "url": "https://platform.opentargets.org/target/ENSG00000160712/associations",
+          "text": "Disease: neuromyelitis optica\nDescription: A syndrome characterized by acute OPTIC NEURITIS in combination with acute MYELITIS, TRANSVERSE. Demyelinating and/or necrotizing lesions form in one or both optic nerves and in the spinal cord. The onset of optic neuritis and myelitis may be simultaneous or separated by several months. (J Neurol Neurosurg Psychiatry 1996 Apr;60(4):382-387).\nAssociation score: 0.582",
+          "cos_sim_score": 0.5818119868116388,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Interleukin-6 receptor",
+          "title": "Interleukin-6 receptor",
+          "url": "https://en.wikipedia.org/wiki/Interleukin-6_receptor",
+          "text": "Interleukin 6 receptor (IL6R) also known as CD126 (Cluster of Differentiation 126) is a type I cytokine receptor.\n\nFunction\nInterleukin 6 (IL6) is a potent pleiotropic cytokine that regulates cell growth and differentiation and plays an important role in immune response. Dysregulated production of IL6 and this receptor are implicated in the pathogenesis of many diseases, such as multiple myeloma, autoimmune diseases and prostate cancer.\nIn melanocytes IL6R gene expression may be regulated by MITF.\n\nStructure\nThe IL6 receptor is a protein complex consisting of an IL-6 receptor subunit (IL6R) and interleukin 6 signal transducer Glycoprotein 130. IL6R also denotes the human gene encoding this subunit. Alternatively spliced transcript variants encoding distinct isoforms have been reported. IL6R subunit is also shared by many other cytokines.\n\nInteractions\nInterleukin-6 receptor has been shown to interact with Interleukin 6 and ciliary neurotrophic factor.\n\nSee also\nCluster of differentiation\nAnti-IL-6\nTocilizumab, a monoclonal antibody against IL6R\nSarilumab, a monoclonal antibody against IL6R\nLMT-28, a small molecule antagonist of IL6R\n\nReferences\nFurther reading\nExternal links\nIL6R+protein,+human at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.49472829699516296,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::LMT-28",
+          "title": "LMT-28",
+          "url": "https://en.wikipedia.org/wiki/LMT-28",
+          "text": "LMT-28 is an experimental drug which was the first molecule discovered that acts as an antagonist of IL6R, the receptor for Interleukin-6, and so blocks its activity in the body. Interleukin-6 is a cytokine signalling molecule which plays a key role in inflammation, so blocking IL6R is useful for alleviating a number of disease processes in which inflammation plays a part. Previously it has only been possible to block cytokine activity using biologics such as targeted antibodies which have various disadvantages, so the development of small molecule inhibitors is a considerable advance. LMT-28 is of relatively low potency and is unlikely to be developed as a medicine, but is useful for pharmaceutical research into the processes mediated by IL6R, and as a successful proof of concept it makes it likely that more potent small molecule antagonists for IL6R and other interleukin receptors will be developed in future.\n\nSee also\nIL-4-inhibitor-1\nSarilumab\nTocilizumab\n\n\n== References ==",
+          "cos_sim_score": 0.31692859530448914,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Glycoprotein 130",
+          "title": "Glycoprotein 130",
+          "url": "https://en.wikipedia.org/wiki/Glycoprotein_130",
+          "text": "Glycoprotein 130 (also known as gp130, IL6ST, IL6R-beta or CD130) is a transmembrane protein which is the founding member of the class of tall cytokine receptors. It forms one subunit of the type I cytokine receptor within the IL-6 receptor family.  It is often referred to as the common gp130 subunit, and is important for signal transduction following cytokine engagement. As with other type I cytokine receptors, gp130 possesses a WSXWS amino acid motif that ensures correct protein folding and ligand binding.  It interacts with Janus kinases to elicit an intracellular signal following receptor interaction with its ligand.  Structurally, gp130 is composed of five fibronectin type-III domains and one immunoglobulin-like C2-type (immunoglobulin-like) domain in its extracellular portion.\n\nCharacteristics\nThe members of the IL-6 receptor family are all complex with gp130 for signal transduction. For example, IL-6 binds to the IL-6 Receptor. The complex of these two proteins then associates with gp130. This complex of 3 proteins then homodimerizes to form a hexameric complex which can produce downstream signals. There are many other proteins which associate with gp130, such as cardiotrophin 1 (CT-1), leukemia inhibitory factor (LIF), ciliary neurotrophic factor (CNTF), oncostatin M (OSM), and IL-11. There are also several other proteins which have structural similarity to gp130 and contain the WSXWS motif and preserved cysteine residues. Members of this group include LIF-R, OSM-R, and G-CSF-R.\n\nInhibition of gp130\ngp130 is an important part of many different types of signaling complexes. Inactivation of gp130 during development is lethal to mice. Homozygous mice who are born show a number of defects including impaired development of the ventricular myocardium. Haematopoietic effects included reduced numbers of stem cells in the spleen and liver. Loss of gp130 in the adult mouse, either globally or in a tissue-specific manner, is however increasingly linked with beneficial effects in a number of mouse models of disease. Of note, soluble gp130 (sgp130), which was thought a specific inhibitor of IL6 trans signalling, was instead found to inhibit not only IL6 signalling but also multiple other IL6-family cytokines (e.g. OSM, IL11 and CNTF). Thus the widespread benefits of sgp130 in  mouse models, and in human trials, may represent the benefits of global (or near global) inhibition of gp130. This suggests gp130 itself as a therapeutic target for human diseases including sepsis, systemic sclerosis, inflammatory bowel disease, among others.\n\nSignal transduction\ngp130 has no intrinsic tyrosine kinase activity. Instead, it is phosphorylated on tyrosine residues after complexing with other proteins. The phosphorylation leads to association with JAK/Tyk tyrosine kinases and STAT protein transcription factors. In particular, STAT-3 is activated which leads to the activation of many downstream genes. Other pathways activated include RAS and MAPK signaling.\n\nInteractions\nGlycoprotein 130 has been shown to interact with:\n\nGrb2,\nHER2/neu,\nJanus kinase 1\nLeukemia inhibitory factor receptor,\nPTPN11,\nSHC1,\nSOCS3,  and\nTLE1.\n\nReferences\nFurther reading\nExternal links\nCytokine+Receptor+gp130 at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.27178120613098145,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Vobarilizumab",
+          "title": "Vobarilizumab",
+          "url": "https://en.wikipedia.org/wiki/Vobarilizumab",
+          "text": "Vobarilizumab (INN; development code ALX0061) is a humanized bispecific nanobody (Llama-derived heavy-chain only (Vhh) antibody) designed for the treatment of inflammatory autoimmune diseases.\n\nOrigin\nThis drug was developed by Ablynx NV to block interleukin-6 receptor. Vobarilizumab has been evaluated in patients with rheumatoid arthritis as well as in lupus.\n\n\n== References ==",
+          "cos_sim_score": 0.2193576693534851,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Monoclonal antibody therapy",
+          "title": "Monoclonal antibody therapy",
+          "url": "https://en.wikipedia.org/wiki/Monoclonal_antibody_therapy",
+          "text": "Tositumomab \u2013 Bexxar \u2013 2003 \u2013 CD20\nMogamulizumab \u2013 Poteligeo \u2013 August 2018 \u2013 CCR4\nMoxetumomab pasudotox \u2013 Lumoxiti \u2013 September 2018 \u2013 CD22\nCemiplimab \u2013 Libtayo \u2013 September 2018 \u2013 PD-1\nPolatuzumab vedotin \u2013 Polivy \u2013 June 2019 \u2013 CD79B\nThe bispecific antibodies have arrived in the clinic. In 2009, the bispecific antibody catumaxomab was approved in the European Union and was later withdrawn for commercial reasons. Others include amivantamab, blinatumomab, teclistamab, and emicizumab.\n\nEconomics\nSince 2000, the therapeutic market for monoclonal antibodies has grown exponentially. In 2006, the \"big 5\" therapeutic antibodies on the market were bevacizumab, trastuzumab (both oncology), adalimumab, infliximab (both autoimmune and inflammatory disorders, 'AIID') and rituximab (oncology and AIID) accounted for 80% of revenues in 2006. In 2007, eight of the 20 best-selling biotechnology drugs in the U.S. are therapeutic monoclonal antibodies. This rapid growth in demand for monoclonal antibody production has been well accommodated by the industrialization of mAb manufacturing.\n\nReferences\nExternal links\nCancer Management Handbook: Principles of Oncologic Pharmacotherapy(registration required) Archived 2009-05-15 at the Wayback Machine",
+          "cos_sim_score": 0.18745581805706024,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

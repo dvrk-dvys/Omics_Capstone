@@ -1,0 +1,168 @@
+{
+  "probe_id": "11757904_s_at",
+  "gene_symbol": "MAST3",
+  "score": 1.0,
+  "SD_TestAUC": 0.0662538659999937,
+  "abs_fold_change": 0.8118,
+  "probe_count": 2,
+  "probe_ids": "11757904_s_at | 11725813_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.9128,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T18:24:30",
+  "interpretation": "MAST3 encodes a microtubule-associated serine/threonine kinase that is involved in cytoskeleton organization and intracellular signaling. While there is no direct evidence linking MAST3 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in cellular signaling pathways could suggest a potential involvement in the cellular responses to steroid treatment, which is a known risk factor for SONFH. The evidence retrieved primarily indicates associations with developmental disorders rather than specific mechanisms related to SONFH. Therefore, the connection to SONFH remains speculative and is based on the general biological functions of MAST3 rather than direct evidence. As such, MAST3's potential as a biomarker for early detection of SONFH is weak, given the lack of specific evidence linking it to the disease context.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "MAST3 may play a role in cellular signaling pathways that could be affected by steroid treatment, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "MAST3 (O60307). https://www.uniprot.org/uniprotkb/O60307",
+    "MAST3 \u2194 developmental and epileptic encephalopathy 108. https://platform.opentargets.org/target/ENSG00000099308/associations",
+    "MAST3 \u2194 genetic disorder. https://platform.opentargets.org/target/ENSG00000099308/associations",
+    "MAST3 \u2194 Rare pervasive developmental disorder. https://platform.opentargets.org/target/ENSG00000099308/associations",
+    "MAST3 \u2194 pervasive developmental disorder. https://platform.opentargets.org/target/ENSG00000099308/associations",
+    "MAST3 \u2194 intelligence. https://platform.opentargets.org/target/ENSG00000099308/associations",
+    "MAST3 \u2014 microtubule associated serine/threonine kinase 3 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "PTEN \u2014 phosphatase and tensin homolog (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "PARP1 \u2014 poly(ADP-ribose) polymerase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "RELA \u2014 RELA proto-oncogene, NF-kB subunit (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "LMNA \u2014 lamin A/C (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4617,
+    "completion_tokens": 300,
+    "total_tokens": 4917,
+    "estimated_cost_usd": 0.000873
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O60307",
+          "title": "MAST3 (O60307)",
+          "url": "https://www.uniprot.org/uniprotkb/O60307",
+          "text": "Protein: Microtubule-associated serine/threonine-protein kinase 3",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000099308::MONDO_0859314",
+          "title": "MAST3 \u2194 developmental and epileptic encephalopathy 108",
+          "url": "https://platform.opentargets.org/target/ENSG00000099308/associations",
+          "text": "Disease: developmental and epileptic encephalopathy 108\nAssociation score: 0.573",
+          "cos_sim_score": 0.5734044074680792,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000099308::EFO_0000508",
+          "title": "MAST3 \u2194 genetic disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000099308/associations",
+          "text": "Disease: genetic disorder\nDescription: Genetic diseases are diseases in which inherited genes predispose to increased risk. The genetic disorders associated with cancer often result from an alteration or mutation in a single gene. The diseases range from rare dominant cancer family syndrome to familial tendencies in which low-penetrance genes may interact with other genes or environmental factors to induce cancer. Research may involve clinical, epidemiologic, and laboratory studies of persons, families, and populations at high risk of these disorders.\nAssociation score: 0.378",
+          "cos_sim_score": 0.37829297104577586,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000099308::Orphanet_168778",
+          "title": "MAST3 \u2194 Rare pervasive developmental disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000099308/associations",
+          "text": "Disease: Rare pervasive developmental disorder\nAssociation score: 0.340",
+          "cos_sim_score": 0.3400134663099256,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000099308::MONDO_0000594",
+          "title": "MAST3 \u2194 pervasive developmental disorder",
+          "url": "https://platform.opentargets.org/target/ENSG00000099308/associations",
+          "text": "Disease: pervasive developmental disorder\nDescription: A category of developmental disorders characterized by impaired communication and socialization skills. The impairments are incongruent with the individual's developmental level or mental age. These disorders can be associated with general medical or genetic conditions.\nAssociation score: 0.340",
+          "cos_sim_score": 0.3400134663099256,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000099308::EFO_0004337",
+          "title": "MAST3 \u2194 intelligence",
+          "url": "https://platform.opentargets.org/target/ENSG00000099308/associations",
+          "text": "Disease: intelligence\nDescription: The ability to learn and to deal with new situations and to deal effectively with tasks involving abstractions.\nAssociation score: 0.250",
+          "cos_sim_score": 0.24959575870311443,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "MAST3 \u2014 microtubule associated serine/threonine kinase 3",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MAST3\nGene name: microtubule associated serine/threonine kinase 3\nAliases / synonyms: DEE108\nOrganism: Homo sapiens\nGene summary: Predicted to enable protein serine/threonine kinase activity. Predicted to be involved in cytoskeleton organization and intracellular signal transduction. Predicted to be located in cytoplasm. Implicated in developmental and epileptic encephalopathy 108. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MAST3",
+          "aliases": "DEE108",
+          "gene_description": "microtubule associated serine/threonine kinase 3"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "PTEN \u2014 phosphatase and tensin homolog",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PTEN\nGene name: phosphatase and tensin homolog\nAliases / synonyms: 10q23del, BZS, CWS1, DEC, GLM2, MHAM, MMAC1, PTEN1, PTENbeta, PTENgama, TEP1\nOrganism: Homo sapiens\nGene summary: This gene was identified as a tumor suppressor that is mutated in a large number of cancers at high frequency. The protein encoded by this gene is a phosphatidylinositol-3,4,5-trisphosphate 3-phosphatase. It contains a tensin like domain as well as a catalytic domain similar to that of the dual specificity protein tyrosine phosphatases. Unlike most of the protein tyrosine phosphatases, this protein preferentially dephosphorylates phosphoinositide substrates. It negatively regulates intracellular levels of phosphatidylinositol-3,4,5-trisphosphate in cells and functions as a tumor suppressor by negatively regulating AKT/PKB signaling pathway. The use of a non-canonical (CUG) upstream initiation site produces a longer isoform that initiates translation with a leucine, and is thought to be pre...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PTEN",
+          "aliases": "10q23del, BZS, CWS1, DEC, GLM2, MHAM, MMAC1, PTEN1, PTENbeta, PTENgama, TEP1",
+          "gene_description": "phosphatase and tensin homolog"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "PARP1 \u2014 poly(ADP-ribose) polymerase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PARP1\nGene name: poly(ADP-ribose) polymerase 1\nAliases / synonyms: ADPRT, ADPRT 1, ADPRT1, ARTD1, PARP, PARP-1, PARS, PPOL, Poly-PARP, pADPRT-1\nOrganism: Homo sapiens\nGene summary: This gene encodes a chromatin-associated enzyme, poly(ADP-ribosyl)transferase, which modifies various nuclear proteins by poly(ADP-ribosyl)ation. The modification is dependent on DNA and is involved in the regulation of various important cellular processes such as differentiation, proliferation, and tumor transformation and also in the regulation of the molecular events involved in the recovery of cell from DNA damage. In addition, this enzyme may be the site of mutation in Fanconi anemia, and may participate in the pathophysiology of type I diabetes. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PARP1",
+          "aliases": "ADPRT, ADPRT 1, ADPRT1, ARTD1, PARP, PARP-1, PARS, PPOL, Poly-PARP, pADPRT-1",
+          "gene_description": "poly(ADP-ribose) polymerase 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "RELA \u2014 RELA proto-oncogene, NF-kB subunit",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RELA\nGene name: RELA proto-oncogene, NF-kB subunit\nAliases / synonyms: AIF3BL3, CMCU, NFKB3, p65\nOrganism: Homo sapiens\nGene summary: NF-kappa-B is a ubiquitous transcription factor involved in several biological processes. It is held in the cytoplasm in an inactive state by specific inhibitors. Upon degradation of the inhibitor, NF-kappa-B moves to the nucleus and activates transcription of specific genes. NF-kappa-B is composed of NFKB1 or NFKB2 bound to either REL, RELA, or RELB. The most abundant form of NF-kappa-B is NFKB1 complexed with the product of this gene, RELA. Four transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Sep 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RELA",
+          "aliases": "AIF3BL3, CMCU, NFKB3, p65",
+          "gene_description": "RELA proto-oncogene, NF-kB subunit"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "LMNA \u2014 lamin A/C",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: LMNA\nGene name: lamin A/C\nAliases / synonyms: CDCD1, CDDC, CMD1A, CMT2B1, EMD2, FPL, FPLD, FPLD2, HGPS, IDC, LDP1, LFP, LGMD1B, LMN1, LMNC, LMNL1, MADA, PRO1\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is part of the nuclear lamina, a two-dimensional matrix of proteins located next to the inner nuclear membrane. The lamin family of proteins make up the matrix and are highly conserved in evolution. During mitosis, the lamina matrix is reversibly disassembled as the lamin proteins are phosphorylated. Lamin proteins are thought to be involved in nuclear stability, chromatin structure and gene expression. Vertebrate lamins consist of two types, A and B. Alternative splicing results in multiple transcript variants. Mutations in this gene lead to several diseases: Emery-Dreifuss muscular dystrophy, familial partial lipodystrophy, limb girdle muscular dystrophy, dilated cardiomyopathy, Charcot-Marie-Tooth disease, and Hutchinson-Gilford progeria syndrome. [provi...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "LMNA",
+          "aliases": "CDCD1, CDDC, CMD1A, CMT2B1, EMD2, FPL, FPLD, FPLD2, HGPS, IDC, LDP1, LFP, LGMD1B, LMN1, LMNC, LMNL1, MADA, PRO1",
+          "gene_description": "lamin A/C"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

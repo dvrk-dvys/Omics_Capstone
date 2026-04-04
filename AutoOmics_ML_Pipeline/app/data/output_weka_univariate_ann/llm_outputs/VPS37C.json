@@ -1,0 +1,175 @@
+{
+  "rf_rank": 32,
+  "probe_id": "11754863_s_at",
+  "gene_symbol": "VPS37C",
+  "score": 0.59,
+  "rf_n_nodes": 14,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 0.6724,
+  "log_fc": 0.6724,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 1,
+  "probe_ids": "11754863_s_at",
+  "max_score": 0.59,
+  "mean_abs_fold_change": 0.6724,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T02:37:02",
+  "interpretation": "VPS37C encodes a protein that is a component of the ESCRT-I complex, which is crucial for the sorting of ubiquitinated proteins into multivesicular bodies, a process important for cellular trafficking and degradation. Although there is no direct evidence linking VPS37C to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in cellular processes such as growth and differentiation may suggest a potential involvement in bone metabolism and response to steroid treatment. The evidence retrieved does not explicitly connect VPS37C to SONFH, leading to a conclusion of low confidence in its relevance as a biomarker. Therefore, while VPS37C may have biological implications in cellular processes that could relate to SONFH, its clinical utility as an early-detection biomarker remains weak and speculative.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "VPS37C may play a role in cellular processes relevant to bone health, but lacks direct evidence linking it to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "VPS37C (A5D8V6). https://www.uniprot.org/uniprotkb/A5D8V6",
+    "VPS37C \u2014 VPS37C. https://platform.opentargets.org/target/ENSG00000167987",
+    "VPS37C \u2194 HIV infection. https://platform.opentargets.org/target/ENSG00000167987/associations",
+    "VPS37C \u2194 viral disease. https://platform.opentargets.org/target/ENSG00000167987/associations",
+    "VPS37C \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000167987/associations",
+    "VPS37C \u2194 hypothyroidism. https://platform.opentargets.org/target/ENSG00000167987/associations",
+    "VPS37C \u2014 VPS37C subunit of ESCRT-I (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "APP \u2014 amyloid beta precursor protein (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "RUNX1 \u2014 RUNX family transcription factor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MECP2 \u2014 methyl-CpG binding protein 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "UBC \u2014 ubiquitin C (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4521,
+    "completion_tokens": 294,
+    "total_tokens": 4815,
+    "estimated_cost_usd": 0.000855
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::A5D8V6",
+          "title": "VPS37C (A5D8V6)",
+          "url": "https://www.uniprot.org/uniprotkb/A5D8V6",
+          "text": "Protein: Vacuolar protein sorting-associated protein 37C\nFunction: Component of the ESCRT-I complex, a regulator of vesicular trafficking process. Required for the sorting of endocytic ubiquitinated cargos into multivesicular bodies. May be involved in cell growth and differentiation",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000167987::function",
+          "title": "VPS37C \u2014 VPS37C",
+          "url": "https://platform.opentargets.org/target/ENSG00000167987",
+          "text": "Function: Component of the ESCRT-I complex, a regulator of vesicular trafficking process. Required for the sorting of endocytic ubiquitinated cargos into multivesicular bodies. May be involved in cell growth and differentiation. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000167987::EFO_0000764",
+          "title": "VPS37C \u2194 HIV infection",
+          "url": "https://platform.opentargets.org/target/ENSG00000167987/associations",
+          "text": "Disease: HIV infection\nDescription: Includes the spectrum of human immunodeficiency virus infections that range from asymptomatic seropositivity, thru AIDS-related complex (ARC), to acquired immunodeficiency syndrome (AIDS).\nAssociation score: 0.526",
+          "cos_sim_score": 0.5261379875719714,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000167987::EFO_0000763",
+          "title": "VPS37C \u2194 viral disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000167987/associations",
+          "text": "Disease: viral disease\nDescription: Any disease caused by a virus.\nAssociation score: 0.462",
+          "cos_sim_score": 0.4619748183558772,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000167987::EFO_0005772",
+          "title": "VPS37C \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000167987/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.255",
+          "cos_sim_score": 0.2549931569532762,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000167987::EFO_0004705",
+          "title": "VPS37C \u2194 hypothyroidism",
+          "url": "https://platform.opentargets.org/target/ENSG00000167987/associations",
+          "text": "Disease: hypothyroidism\nDescription: Abnormally low levels of thyroid hormone.\nAssociation score: 0.255",
+          "cos_sim_score": 0.25463473246943996,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "VPS37C \u2014 VPS37C subunit of ESCRT-I",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: VPS37C\nGene name: VPS37C subunit of ESCRT-I\nOrganism: Homo sapiens\nGene summary: VPS37C is a subunit of ESCRT-I (endosomal sorting complex required for transport I), a complex in the class E vacuolar protein sorting (VPS) pathway required for sorting ubiquitinated transmembrane proteins into internal vesicles of multivesicular bodies (Eastman et al., 2005 [PubMed 15509564]).[supplied by OMIM, Mar 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "VPS37C",
+          "aliases": "",
+          "gene_description": "VPS37C subunit of ESCRT-I"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "APP \u2014 amyloid beta precursor protein",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: APP\nGene name: amyloid beta precursor protein\nAliases / synonyms: AAA, ABETA, ABPP, AD1, APPI, CTFgamma, CVAP, PN-II, PN2, alpha-sAPP, preA4\nOrganism: Homo sapiens\nGene summary: This gene encodes a cell surface receptor and transmembrane precursor protein that is cleaved by secretases to form a number of peptides. Some of these peptides are secreted and can bind to the acetyltransferase complex APBB1/TIP60 to promote transcriptional activation, while others form the protein basis of the amyloid plaques found in the brains of patients with Alzheimer disease. In addition, two of the peptides are antimicrobial peptides, having been shown to have bacteriocidal and antifungal activities. Mutations in this gene have been implicated in autosomal dominant Alzheimer disease and cerebroarterial amyloidosis (cerebral amyloid angiopathy). Multiple transcript variants encoding several different isoforms have been found for this gene. [provided by RefSeq, Aug 2014]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "APP",
+          "aliases": "AAA, ABETA, ABPP, AD1, APPI, CTFgamma, CVAP, PN-II, PN2, alpha-sAPP, preA4",
+          "gene_description": "amyloid beta precursor protein"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "RUNX1 \u2014 RUNX family transcription factor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RUNX1\nGene name: RUNX family transcription factor 1\nAliases / synonyms: AML1, AML1-EVI-1, AMLCR1, CBF2alpha, CBFA2, EVI-1, PEBP2aB, PEBP2alpha\nOrganism: Homo sapiens\nGene summary: Core binding factor (CBF) is a heterodimeric transcription factor that binds to the core element of many enhancers and promoters. The protein encoded by this gene represents the alpha subunit of CBF and is thought to be involved in the development of normal hematopoiesis. Chromosomal translocations involving this gene are well-documented and have been associated with several types of leukemia. Three transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RUNX1",
+          "aliases": "AML1, AML1-EVI-1, AMLCR1, CBF2alpha, CBFA2, EVI-1, PEBP2aB, PEBP2alpha",
+          "gene_description": "RUNX family transcription factor 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MECP2 \u2014 methyl-CpG binding protein 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MECP2\nGene name: methyl-CpG binding protein 2\nAliases / synonyms: AUTSX3, MRX16, MRX79, MRXS13, MRXSL, PPMX, RS, RTS, RTT\nOrganism: Homo sapiens\nGene summary: DNA methylation is the major modification of eukaryotic genomes and plays an essential role in mammalian development. Human proteins MECP2, MBD1, MBD2, MBD3, and MBD4 comprise a family of nuclear proteins related by the presence in each of a methyl-CpG binding domain (MBD). Each of these proteins, with the exception of MBD3, is capable of binding specifically to methylated DNA. MECP2, MBD1 and MBD2 can also repress transcription from methylated gene promoters. In contrast to other MBD family members, MECP2 is X-linked and subject to X inactivation. MECP2 is dispensible in stem cells, but is essential for embryonic development. MECP2 gene mutations are the cause of most cases of Rett syndrome, a progressive neurologic developmental disorder and one of the most common causes of cognitive dis...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MECP2",
+          "aliases": "AUTSX3, MRX16, MRX79, MRXS13, MRXSL, PPMX, RS, RTS, RTT",
+          "gene_description": "methyl-CpG binding protein 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "UBC \u2014 ubiquitin C",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: UBC\nGene name: ubiquitin C\nAliases / synonyms: HMG20\nOrganism: Homo sapiens\nGene summary: This gene represents a ubiquitin gene, ubiquitin C. The encoded protein is a polyubiquitin precursor. Conjugation of ubiquitin monomers or polymers can lead to various effects within a cell, depending on the residues to which ubiquitin is conjugated. Ubiquitination has been associated with protein degradation, DNA repair, cell cycle regulation, kinase modification, endocytosis, and regulation of other cell signaling pathways. [provided by RefSeq, Aug 2010]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "UBC",
+          "aliases": "HMG20",
+          "gene_description": "ubiquitin C"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

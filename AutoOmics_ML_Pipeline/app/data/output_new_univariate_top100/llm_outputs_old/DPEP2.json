@@ -1,0 +1,161 @@
+{
+  "probe_id": "11724979_a_at",
+  "gene_symbol": "DPEP2",
+  "score": 1.0,
+  "SD_TestAUC": 0.0202860206483394,
+  "abs_fold_change": 1.5019,
+  "probe_count": 1,
+  "probe_ids": "11724979_a_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 1.5019,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-01T22:43:08",
+  "interpretation": "Dipeptidase 2 (DPEP2) is an enzyme that hydrolyzes dipeptides, including leukotriene D4, which is involved in inflammatory responses. It also modulates macrophage activity through the NF-kappaB signaling pathway, which is crucial in inflammation and bone metabolism. Given that steroid-induced osteonecrosis of the femoral head (SONFH) is associated with inflammation and bone degeneration, DPEP2's role in regulating inflammatory responses may link it to the pathophysiology of SONFH. However, the evidence directly connecting DPEP2 to SONFH is limited, primarily relying on its known biological functions rather than specific studies on SONFH. Therefore, while DPEP2 shows potential as a biomarker due to its involvement in inflammation, the lack of direct evidence in the context of SONFH suggests a moderate biomarker potential.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "DPEP2 may be relevant to steroid-induced osteonecrosis of the femoral head due to its role in modulating inflammatory responses, which are implicated in the disease's progression.",
+  "citations": [
+    "DPEP2 (Q9H4A9). https://www.uniprot.org/uniprotkb/Q9H4A9",
+    "DPEP2 (Q9H4A9-2). https://www.uniprot.org/uniprotkb/Q9H4A9-2",
+    "DPEP2 (Q9H4A9-3). https://www.uniprot.org/uniprotkb/Q9H4A9-3",
+    "DPEP2 \u2014 DPEP2. https://platform.opentargets.org/target/ENSG00000167261",
+    "DPEP2 \u2194 alcohol drinking. https://platform.opentargets.org/target/ENSG00000167261/associations",
+    "DPEP2 \u2194 primary biliary cirrhosis. https://platform.opentargets.org/target/ENSG00000167261/associations",
+    "DPEP2 \u2194 Chronic Obstructive Asthma. https://platform.opentargets.org/target/ENSG00000167261/associations",
+    "DPEP2 \u2194 androgenetic alopecia. https://platform.opentargets.org/target/ENSG00000167261/associations",
+    "Dipeptidase 2. https://en.wikipedia.org/wiki/Dipeptidase_2",
+    "Cytosol nonspecific dipeptidase. https://en.wikipedia.org/wiki/Cytosol_nonspecific_dipeptidase",
+    "D-Ala-D-Ala dipeptidase. https://en.wikipedia.org/wiki/D-Ala-D-Ala_dipeptidase",
+    "Membrane dipeptidase. https://en.wikipedia.org/wiki/Membrane_dipeptidase",
+    "Angiotensin-converting enzyme. https://en.wikipedia.org/wiki/Angiotensin-converting_enzyme"
+  ],
+  "token_usage": {
+    "prompt_tokens": 3800,
+    "completion_tokens": 257,
+    "total_tokens": 4057,
+    "estimated_cost_usd": 0.000724
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9H4A9",
+          "title": "DPEP2 (Q9H4A9)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9H4A9",
+          "text": "Protein: Dipeptidase 2\nFunction: Dipeptidase that hydrolyzes leukotriene D4 (LTD4) into leukotriene E4 (LTE4) (PubMed:32325220). Hydrolyzes cystinyl-bis-glycine (PubMed:32325220) Independently of its dipeptidase activity can also modulate macrophage inflammatory response by acting as a regulator of NF-kappaB inflammatory signaling pathway",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9H4A9-2",
+          "title": "DPEP2 (Q9H4A9-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9H4A9-2",
+          "text": "Protein: Isoform 2 of Dipeptidase 2",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9H4A9-3",
+          "title": "DPEP2 (Q9H4A9-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9H4A9-3",
+          "text": "Protein: Isoform 3 of Dipeptidase 2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000167261::function",
+          "title": "DPEP2 \u2014 DPEP2",
+          "url": "https://platform.opentargets.org/target/ENSG00000167261",
+          "text": "Function: Dipeptidase that hydrolyzes leukotriene D4 (LTD4) into leukotriene E4 (LTE4) (PubMed:32325220). Hydrolyzes cystinyl-bis- glycine (PubMed:32325220). .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000167261::EFO_0004329",
+          "title": "DPEP2 \u2194 alcohol drinking",
+          "url": "https://platform.opentargets.org/target/ENSG00000167261/associations",
+          "text": "Disease: alcohol drinking\nDescription: Behaviors associated with the ingesting of alcoholic beverages, including social drinking.\nAssociation score: 0.342",
+          "cos_sim_score": 0.3418563254222907,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000167261::EFO_1001486",
+          "title": "DPEP2 \u2194 primary biliary cirrhosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000167261/associations",
+          "text": "Disease: primary biliary cirrhosis\nDescription: Primary biliary cholangitis (PBC) is a chronic and slowly progressive cholestatic liver disease of autoimmune etiology characterized by injury of the intrahepatic bile ducts that may eventually lead to liver failure.\nAssociation score: 0.308",
+          "cos_sim_score": 0.3080004175510335,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000167261::EFO_0009759",
+          "title": "DPEP2 \u2194 Chronic Obstructive Asthma",
+          "url": "https://platform.opentargets.org/target/ENSG00000167261/associations",
+          "text": "Disease: Chronic Obstructive Asthma\nDescription: Chronic airway obstruction caused by asthma.\nAssociation score: 0.213",
+          "cos_sim_score": 0.21277053125315237,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000167261::EFO_0004191",
+          "title": "DPEP2 \u2194 androgenetic alopecia",
+          "url": "https://platform.opentargets.org/target/ENSG00000167261/associations",
+          "text": "Disease: androgenetic alopecia\nAssociation score: 0.175",
+          "cos_sim_score": 0.17478294144135323,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Dipeptidase 2",
+          "title": "Dipeptidase 2",
+          "url": "https://en.wikipedia.org/wiki/Dipeptidase_2",
+          "text": "Dipeptidase 2 (DPEP2) is a protein which in humans is encoded by the DPEP2 gene.\nDPEP2 belongs to the membrane-bound dipeptidase (EC 3.4.13.19) family. These enzymes hydrolyze a variety of dipeptides, including leukotriene D4, the beta-lactam ring of some antibiotics, and cystinyl-bis-glycine (cys-bis-gly) formed during glutathione degradation.\n\nReferences\n\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.6567519307136536,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Cytosol nonspecific dipeptidase",
+          "title": "Cytosol nonspecific dipeptidase",
+          "url": "https://en.wikipedia.org/wiki/Cytosol_nonspecific_dipeptidase",
+          "text": "Cytosolic non-specific dipeptidase (EC 3.4.13.18) also known as carnosine dipeptidase 2 is an enzyme that in humans is encoded by the CNDP2 gene. This enzyme catalyses the hydrolysis of dipeptides, preferentially those containing hydrophobic amino acids.  The human enzyme uses manganese ions as a cofactor.  In addition to its function as a peptidase, the enzyme also functions to generate N-lactoyl amino acids, such as N-lactoyl-phenylalanine, via the process of \"reverse proteolysis\". A similar pathway conjugates amino acids to Beta-hydroxybutyric acid.\n\nSee also\nN-lactoyl-phenylalanine, a chemical compound produced by this enzyme\n\nReferences\nExternal links\nCytosol+non-specific+dipeptidase at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.5983612537384033,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::D-Ala-D-Ala dipeptidase",
+          "title": "D-Ala-D-Ala dipeptidase",
+          "url": "https://en.wikipedia.org/wiki/D-Ala-D-Ala_dipeptidase",
+          "text": "D-Ala-D-Ala dipeptidase (EC 3.4.13.22, D-alanyl-D-alanine dipeptidase, vanX D-Ala-D-Ala dipeptidase, VanX) is an enzyme. This enzyme catalyses the hydrolysis of the D-alanine dipeptide.\n\nD-Ala-D-Ala + H2O  \n  \n    \n      \n        \u21cc\n      \n    \n    {\\displaystyle \\rightleftharpoons }\n  \n 2 D-Ala\nThis enzyme is Zn2+-dependent.\n\nReferences\nExternal links\nD-Ala-D-Ala+dipeptidase at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.5975981950759888,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Membrane dipeptidase",
+          "title": "Membrane dipeptidase",
+          "url": "https://en.wikipedia.org/wiki/Membrane_dipeptidase",
+          "text": "Membrane dipeptidase (EC 3.4.13.19, renal dipeptidase, dehydropeptidase I (DPH I), dipeptidase, aminodipeptidase, dipeptide hydrolase, dipeptidyl hydrolase, nonspecific dipeptidase, glycosyl-phosphatidylinositol-anchored renal dipeptidase, MBD, MDP, leukotriene D4 hydrolase) is an enzyme. This enzyme catalyses the following chemical reaction\n\nHydrolysis of dipeptides (e.g., leukotriene D4, cystinyl-bis-glycine, some \u03b2-lactam antibiotics (e.g., carbapenem))\nThis membrane-bound, zinc enzyme has broad specificity.\nInhibitors include bestatin and cilastatin.\n\nGenes\nDipeptidase 1 (DPEP1)\nDipeptidase 2 (DPEP2)\nDipeptidase 3 (DPEP3)\n\nReferences\nExternal links\nMembrane+dipeptidase at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.5602638125419617,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Angiotensin-converting enzyme",
+          "title": "Angiotensin-converting enzyme",
+          "url": "https://en.wikipedia.org/wiki/Angiotensin-converting_enzyme",
+          "text": "History\nThe enzyme was reported by Leonard T. Skeggs Jr. in 1956. The crystal structure of human testis ACE was solved in the year 2002 by Ramanathan Natesh in the lab of K. Ravi Acharya in collaboration with Sylva Schwager and Edward Sturrock who purified the protein. It is located mainly in the capillaries of the lungs but can also be found in endothelial and kidney epithelial cells.\n\nNomenclature\nACE is also known by the following names:\n\ndipeptidyl carboxypeptidase I\npeptidase P\ndipeptide hydrolase\npeptidyl dipeptidase\nangiotensin converting enzyme\nkininase II\nangiotensin I-converting enzyme\ncarboxycathepsin\ndipeptidyl carboxypeptidase\n\"hypertensin converting enzyme\" peptidyl dipeptidase I\npeptidyl-dipeptide hydrolase\npeptidyldipeptide hydrolase\nendothelial cell peptidyl dipeptidase\npeptidyl dipeptidase-4\nPDH\npeptidyl dipeptide hydrolase\nDCP\nCD143\n\nSee also\nACE inhibitors\nAngiotensin-converting enzyme 2 (ACE2)\nHypotensive transfusion reaction\nRenin\u2013angiotensin system\n\nReferences\nFurther reading\nExternal links\nProteopedia Angiotensin-converting_enzyme \u2013 the Angiotensin-Converting Enzyme Structure in Interactive 3D\nAngiotensin+Converting+Enzyme at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nHuman ACE genome location and ACE gene details page  in the UCSC Genome Browser.",
+          "cos_sim_score": 0.46676504611968994,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "probe_id": "11716467_x_at",
+  "gene_symbol": "ISCA1",
+  "rf_importance": 0.0049,
+  "selection_freq": 0.8,
+  "abs_fold_change": 2.3439887000000006,
+  "score": 0.3629,
+  "probe_count": 2,
+  "probe_ids": "11716467_x_at | 11716466_s_at",
+  "max_score": 0.3629,
+  "mean_abs_fold_change": 2.3329,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T21:52:14",
+  "interpretation": "ISCA1 encodes a mitochondrial protein involved in the assembly of iron-sulfur clusters, which are critical for various cellular processes, including energy metabolism and oxidative stress response. While there is no direct evidence linking ISCA1 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in mitochondrial function and iron metabolism suggests a potential connection to the pathophysiology of SONFH, particularly in the context of steroid-induced cellular stress and bone health. The retrieved evidence primarily discusses ISCA1's involvement in mitochondrial dysfunction and related diseases, but does not establish a direct link to SONFH. Therefore, the evidence is considered weak, leading to an inference that ISCA1 may play a role in the disease context through its biological functions. As such, its potential as a biomarker for early detection of SONFH is low, given the lack of specific evidence linking it to the disease.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "ISCA1 may be involved in mitochondrial dysfunction, which could relate to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "ISCA1 (Q9BUE6). https://www.uniprot.org/uniprotkb/Q9BUE6",
+    "ISCA1 (Q9BUE6-2). https://www.uniprot.org/uniprotkb/Q9BUE6-2",
+    "ISCA1 \u2014 ISCA1. https://platform.opentargets.org/target/ENSG00000135070",
+    "ISCA1 \u2194 Fatal multiple mitochondrial dysfunction syndrome. https://platform.opentargets.org/target/ENSG00000135070/associations",
+    "ISCA1 \u2194 neurodegenerative disease. https://platform.opentargets.org/target/ENSG00000135070/associations",
+    "ISCA1 \u2194 fatal multiple mitochondrial dysfunctions syndrome. https://platform.opentargets.org/target/ENSG00000135070/associations",
+    "ISCA1 \u2194 Fatal multiple mitochondrial dysfunction syndrome type 2. https://platform.opentargets.org/target/ENSG00000135070/associations",
+    "ISCA1 \u2014 iron-sulfur cluster assembly 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "KRAS \u2014 KRAS proto-oncogene, GTPase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "PKM \u2014 pyruvate kinase M1/2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ELAVL1 \u2014 ELAV like RNA binding protein 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Ferroptosis-autophagy crosstalk in bladder cancer: mechanisms and therapeutic implications (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC13037127/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8551,
+    "completion_tokens": 336,
+    "total_tokens": 8887,
+    "estimated_cost_usd": 0.001484
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9BUE6",
+          "title": "ISCA1 (Q9BUE6)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BUE6",
+          "text": "Protein: Iron-sulfur cluster assembly 1 homolog, mitochondrial\nFunction: Involved in the maturation of mitochondrial 4Fe-4S proteins functioning late in the iron-sulfur cluster assembly pathway. Probably involved in the binding of an intermediate of Fe/S cluster assembly",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9BUE6-2",
+          "title": "ISCA1 (Q9BUE6-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9BUE6-2",
+          "text": "Protein: Isoform 2 of Iron-sulfur cluster assembly 1 homolog, mitochondrial",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000135070::function",
+          "title": "ISCA1 \u2014 ISCA1",
+          "url": "https://platform.opentargets.org/target/ENSG00000135070",
+          "text": "Function: Involved in the maturation of mitochondrial 4Fe-4S proteins functioning late in the iron-sulfur cluster assembly pathway. Probably involved in the binding of an intermediate of Fe/S cluster assembly. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000135070::Orphanet_289573",
+          "title": "ISCA1 \u2194 Fatal multiple mitochondrial dysfunction syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000135070/associations",
+          "text": "Disease: Fatal multiple mitochondrial dysfunction syndrome\nAssociation score: 0.715",
+          "cos_sim_score": 0.7148258929168214,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000135070::EFO_0005772",
+          "title": "ISCA1 \u2194 neurodegenerative disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000135070/associations",
+          "text": "Disease: neurodegenerative disease\nDescription: A disorder of the central nervous system characterized by gradual and progressive loss of neural tissue and neurologic function.\nAssociation score: 0.513",
+          "cos_sim_score": 0.5126460039885855,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000135070::MONDO_0017338",
+          "title": "ISCA1 \u2194 fatal multiple mitochondrial dysfunctions syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000135070/associations",
+          "text": "Disease: fatal multiple mitochondrial dysfunctions syndrome\nDescription: Multiple mitochondrial dysfunctions syndrome describes a group of rare inborn errors of energy metabolism due to defects in mitochondrial [4Fe-4S] protein assembly. Patients present with a neonatal/infancy onset of metabolic lactic acidosis (that may be associated with hyperglycinemia and other abnormal metabolic testing results), muscular hypotonia, absence of psychomotor development or developmental regression, as well as abnormal neuroimaging findings (including leukodystrophy, brain developmental defects, white matter abnormalities, cerebral atrophy), and other variable clinical features (e.g., optic atrophy, cardiomyopathy, pulmonary hypertension, seizures, and dysmorphic features). Early fatal outcome is usual.\nAssociation score: 0.335",
+          "cos_sim_score": 0.33506330347017166,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000135070::Orphanet_401874",
+          "title": "ISCA1 \u2194 Fatal multiple mitochondrial dysfunction syndrome type 2",
+          "url": "https://platform.opentargets.org/target/ENSG00000135070/associations",
+          "text": "Disease: Fatal multiple mitochondrial dysfunction syndrome type 2\nAssociation score: 0.333",
+          "cos_sim_score": 0.3326218692162316,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "ISCA1 \u2014 iron-sulfur cluster assembly 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ISCA1\nGene name: iron-sulfur cluster assembly 1\nAliases / synonyms: HBLD2, ISA1, MMDS5, hIscA, hIscA1\nOrganism: Homo sapiens\nGene summary: ISCA1 is a mitochondrial protein involved in the biogenesis and assembly of iron-sulfur clusters, which play a role in electron-transfer reactions (Cozar-Castellano et al., 2004 [PubMed 15262227]).[supplied by OMIM, Mar 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ISCA1",
+          "aliases": "HBLD2, ISA1, MMDS5, hIscA, hIscA1",
+          "gene_description": "iron-sulfur cluster assembly 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "KRAS \u2014 KRAS proto-oncogene, GTPase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: KRAS\nGene name: KRAS proto-oncogene, GTPase\nAliases / synonyms: 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2\nOrganism: Homo sapiens\nGene summary: This gene, a Kirsten ras oncogene homolog from the mammalian ras gene family, encodes a protein that is a member of the small GTPase superfamily. A single amino acid substitution is responsible for an activating mutation. The transforming protein that results is implicated in various malignancies, including lung adenocarcinoma, mucinous adenoma, ductal carcinoma of the pancreas and colorectal carcinoma. Alternative splicing leads to variants encoding two isoforms that differ in the C-terminal region. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "KRAS",
+          "aliases": "'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2",
+          "gene_description": "KRAS proto-oncogene, GTPase"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "PKM \u2014 pyruvate kinase M1/2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PKM\nGene name: pyruvate kinase M1/2\nAliases / synonyms: CTHBP, HEL-S-30, OIP3, PK3, PKM2, TCB, THBP1, p58\nOrganism: Homo sapiens\nGene summary: This gene encodes a protein involved in glycolysis. The encoded protein is a pyruvate kinase that catalyzes the transfer of a phosphoryl group from phosphoenolpyruvate to ADP, generating ATP and pyruvate. This protein has been shown to interact with thyroid hormone and may mediate cellular metabolic effects induced by thyroid hormones. This protein has been found to bind Opa protein, a bacterial outer membrane protein involved in gonococcal adherence to and invasion of human cells, suggesting a role of this protein in bacterial pathogenesis. Several alternatively spliced transcript variants encoding a few distinct isoforms have been reported. [provided by RefSeq, May 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PKM",
+          "aliases": "CTHBP, HEL-S-30, OIP3, PK3, PKM2, TCB, THBP1, p58",
+          "gene_description": "pyruvate kinase M1/2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ELAVL1 \u2014 ELAV like RNA binding protein 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ELAVL1\nGene name: ELAV like RNA binding protein 1\nAliases / synonyms: ELAV1, HUR, Hua, MelG\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the ELAVL family of RNA-binding proteins that contain several RNA recognition motifs, and selectively bind AU-rich elements (AREs) found in the 3' untranslated regions of mRNAs. AREs signal degradation of mRNAs as a means to regulate gene expression, thus by binding AREs, the ELAVL family of proteins play a role in stabilizing ARE-containing mRNAs. This gene has been implicated in a variety of biological processes and has been linked to a number of diseases, including cancer. It is highly expressed in many cancers, and could be potentially useful in cancer diagnosis, prognosis, and therapy. [provided by RefSeq, Sep 2012]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ELAVL1",
+          "aliases": "ELAV1, HUR, Hua, MelG",
+          "gene_description": "ELAV like RNA binding protein 1"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::13037127",
+          "title": "Ferroptosis-autophagy crosstalk in bladder cancer: mechanisms and therapeutic implications",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13037127/",
+          "text": "concentration, and induce nonsuppressible necrotic death at higher concentrations)Unknown[205, 206]DGU:Fe/DoxIncreased ROS level, downregulation of GPX4 and ACSL4NIR triggered Dox release and iron loading[207, 208]Dihydroartemisinin (DHA)Increased overall ROS level and mitochondrial ROS level, lipid peroxidation, GSH depletion, decreased GPX4 and ATP level, inhibited by DFO, Fer-1, GSH or NACEndogenous Fe2\u2009+\u2009causes the cleavage of endoperoxide bridge in DHA, Ferroptosis\u2009+\u2009apoptosis[209, 210]DPI2Lipid peroxidation, inhibited by BHTGSH depletion[211]DPI7 (ML162)Lipid peroxidationInhibit GPX4 covalently[212]DPI10 (ML210)Lipid peroxidationInhibit GPX4 covalently[213]ErastinROS accumulation, Lipid peroxidation, GSH depletion, SLC7A11 upregulation, promoted by INF\u03b3, inhibited by CPX, DFO, Ebs, Fer-1, U0126, or TroloxInhibit system Xc\u2009\u2212\u2009and prevent cystine import[214]Ferric ammonium citrateROS accumulation, lipid peroxidation, inhibited by Fer-1 or Lip-1. Lipid peroxidation, cell death can be inhibited by Fer-1 and Lip-1Iron loading[215]Ferrous ammonium sulfateROS accumulation, inhibited by Fer-1, NDGA or ZileutonIron loading[216]Ferrous chlorideROS accumulation, lipid peroxidation, upregulated PTGS2, inhibited by Fer-1Iron loading[217]FerroptocideROS accumulation, lipid peroxidation, inhibited by Trolox, Fer-1 or DFOInhibit antioxidant thioredoxin and modulate immune system positively[218]HaeminROS accumulation, lipid peroxidation, increased HMOX1 expression, increased lactate dehydrogenase level, inhibited by DFO or Fer-1Iron loading[219]HemoglobinLipid peroxidation, inhibited by Fer-1Iron loading[220]LDL-DHALipid peroxidation, reduced GPX4 expression inhibiited by defiprone, Fer-1, NAC, Na2Se, or EbsGSH depletion[221]MON-p53Increased ROS level, lipid peroxidation, decreased GSH level, downregulation of SLC7A11 and GPX4, cell death can be inhibited by Fer-1, DFO, VE, cystine, GSH and partially inhibited by Ac-DEVD-CHOIron loading, inhibit system Xc\u2009\u2212\u2009Ferroptosis\u2009+\u2009Apoptosis[222]Nonthermal plasmaLipid peroxidation, inhibited by DFOReduce Fe3\u2009+\u2009in ferritin to generate Fe2\u2009+\u2009[223]Piperazine erastinLipid peroxidation, GSH depletion,",
+          "cos_sim_score": 0.31144481897354126,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::13037127",
+          "title": "Ferroptosis-autophagy crosstalk in bladder cancer: mechanisms and therapeutic implications",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13037127/",
+          "text": "The antioxidant enzyme GPX4 inhibits iron-mediated peroxidation, protecting cell membranes [88]. Fin56 induces ferroptosis and autophagy in BC cells by promoting GPX4 degradation [89]. Proteasome non-ATPase regulatory subunit 14 (PSMD14), highly expressed in BC tissues, influences GPX4 expression [90]. In BC, bupivacaine enhances Fe2\u2009+\u2009and ROS levels while suppressing xCT and GPX4. Glutathione transferase zeta1 (GSTZ1) overexpression decreases GPX4 and GSH, activating ferroptosis in BC cells [91]. Evodiamine (EVO) inhibits BC cell growth by reducing GPX4 levels. Staphylococcal nuclease domain containing 1 (SND1) stabilizes GPX4 mRNA, and APS inhibits BC progression by reducing GPX4 expression.\nThe intricate network of molecular mechanisms, including GSH synthesis, cystine transport, and GPX4 regulation, underscores the dynamic interplay between ferroptosis and BC progression [92].\nLipid metabolism in BC\nPhospholipids within cellular membranes, which contain polyunsaturated fatty acids (PUFA), are highly prone to lipid peroxidation, a crucial process in ferroptosis [93, 94]. The content of PUFA in cell membranes serves as a significant determinant of ferroptosis susceptibility [95, 96]. In contrast, competitive inhibition of PUFA-associated ferroptosis can be accomplished by modulating cell membrane components [97\u201399].\nFibronectin leucine-rich transmembrane protein 2 (FLRT2) has been associated with the modulation of multiple tumor processes, where it upregulates ACSL4 expression, thereby increasing lipid peroxidation and sensitizing human BC cells to ferroptosis [100\u2013102]. Conversely, fibroblast growth factor receptor 3 (FGFR3) activates stearoyl-CoA desaturase-1 (SCD1), contributing to the progression of bladder tumors [103\u2013105]. Additionally, the long non-coding RNA RP11-89 promotes tumorigenesis and confers resistance to ferroptosis in BC by acting as a sponge for microRNA-129-5p (miR-129-5p), which in turn alleviates miR-129-5p\u2013mediated suppression of key ferroptosis regulators such as ACSL4 and prominin-2 (PROM2). By modulating these targets, miR-129-5p plays a pivotal role in controlling ferroptotic cell death [106\u2013108].\nThe combination of Fin56 and Torin 2, a highly effective mTOR inhibitor that induces autophagy, demonstrates synergistic cytotoxicity against BC cells, thereby enhancing the potential for therapeutic intervention [109\u2013111]. Bupivacaine suppresses the growth of BC, induces apoptosis and ferroptosis, and inhibits the PI3K/AKT signaling pathway in xenografted tumors [112, 113]. The intricate interplay of these molecular mechanisms emphasizes the multifaceted strategies for modulating ferroptosis in BC [114].\nPredicted targets associated with ferroptosis\nBeyond protein-coding genes, increasing evidence suggests that RNA-mediated regulation represents an important layer of control over ferroptosis-related pathways in BC [115]. In addition to lncRNAs, multiple classes of RNA molecules, including miRNAs, circular RNAs (circRNAs), and messenger RNAs (mRNAs), have been implicated in the regulation of redox homeostasis, lipid peroxidation, and iron metabolism, which are central processes governing ferroptotic cell death [116\u2013118].",
+          "cos_sim_score": 0.26603949069976807,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::13037127",
+          "title": "Ferroptosis-autophagy crosstalk in bladder cancer: mechanisms and therapeutic implications",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13037127/",
+          "text": "In BC cells, internalized transferrin is localized throughout the cytoplasm and extended cellular processes, differing significantly from its distribution in non-malignant cells [67]. This distinct spatial pattern suggests that malignant cells have evolved to meet elevated iron demands [68]. Crucially, the V-ATPase-mediated release of iron from endosomal compartments plays a vital role in this process [69]. Moreover, the protein six-transmembrane epithelial antigen of the prostate 1 (STEAP1), which participates in iron uptake. Targeting STEAP1 has demonstrated efficacy in T cell-based immunotherapy for BC [70].\nFerroportin (FPN) functions as the principal transporter for cellular iron export [71]. However, in BC, the expression of FPN is down-regulated [72]. Regulating intracellular iron levels via the modulation of FPN expression can inhibit the proliferation of BC cells [73]. Hepcidin, which regulates the activity of FPN, shows increased levels in BC [74]. It is hypothesized that hepcidin may act through autocrine mechanisms to reduce iron excretion rates. Maf bZIP transcription factor G (MAFG), has been associated with the suppression of ferroptosis in BC cells [75]. Baicalin and talaroconvolutin-A can induce ferroptosis in BC. The former acts by targeting ferritin heavy chain 1 (FTH1). Abietic acid selectively induces ferroptosis in BC cells, and it demonstrates chemotherapeutic agents and inhibits tumor growth in vivo [76].\nGlutathione metabolism in BC\nThe liver synthesizes glutathione (GSH), a principal antioxidant that consists of cysteine, glutamate, and glycine. A reduction in GSH levels leads to a decline in GPX4 activity, thereby accelerating ferroptosis [77]. Cancer cells, including those in BC, experience heightened oxidative stress induced by reactive oxygen species (ROS) [78]. These cells depend on the antioxidant properties of GSH for their proliferation and growth. In studies where cysteine was depleted using cysteinase in mice with BC xenografts, a significant inhibition of tumor growth was observed [79]. Cysteine, a critical precursor for GSH production, is primarily obtained via the system xc-, a transporter that facilitates cystine import in exchange for glutamate export [80]. This transport system consists of two subunits: solute carrier family 3 member 2 (SLC3A2) and solute carrier family 7 member 11 (SLC7A11), where SLC7A11 directly mediates the reciprocal transport of cystine and glutamate across the cell membrane [81, 82].\nPhosphoglycerate dehydrogenase (PHGDH), frequently overexpressed in BC patients, modulates the expression of SLC7A11. MAFG, known to inhibit ferroptosis in BC cells, binds to Poly(rC)-binding protein 2 (PCBP2) to enhance the stability of SLC7A11 mRNA [83]. Downregulation of epithelial membrane protein 1 (EMP1) promotes tumor metastasis by increasing peroxisome proliferator-activated receptor gamma (PPARG) levels, activating phosphorylated FAK at tyrosine 397 (pFAK Y397), and upregulating SLC7A11 [84]. Additionally, heat-shock protein family A member 5 (HSPA5) suppresses ferroptosis through the p53/SLC7A11/GPX4 signaling axis [85]. P53 activates arachidonate 15-lipoxygenase (ALOX15B), thereby inducing ferroptosis in BC cells [86]. In cisplatin-resistant BC cells, miRNA\u201427a targets SLC7A11, which contributes to resistance [87].",
+          "cos_sim_score": 0.2474912405014038,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::13037127",
+          "title": "Ferroptosis-autophagy crosstalk in bladder cancer: mechanisms and therapeutic implications",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13037127/",
+          "text": "ROS level, lipid peroxidation, decreased GSH level, downregulation of SLC7A11 and GPX4, cell death can be inhibited by Fer-1, DFO, VE, cystine, GSH and partially inhibited by Ac-DEVD-CHOIron loading, inhibit system Xc\u2009\u2212\u2009Ferroptosis\u2009+\u2009Apoptosis[222]Nonthermal plasmaLipid peroxidation, inhibited by DFOReduce Fe3\u2009+\u2009in ferritin to generate Fe2\u2009+\u2009[223]Piperazine erastinLipid peroxidation, GSH depletion, PTGS2 upregulation, inhibited by VEInhibit system Xc\u2009\u2212\u2009and prevent cystine import[224]PSAF NCsIncreased ROS level, lipid peroxidation, inhibited by Vc, \u03b1-Toc, Fer-1, or Ac-DEVD-CHOSingle-atom Fe catalyzed, photo thermal augmented Fenton reaction, Ferroptosis\u2009+\u2009Apoptosis[225]Salinomycin, (ironomycin)Lipid peroxidation, inhibited by DFO, Fer-1 or NACBlock iron translocation and deplete ferritin[226]ZVI NPsIncreased overall ROS level and mitochondrial ROS level, lipid peroxidation, increased MDA level, decreased GPX4 level, inhibited by VC, VE, TEMPOL, Trolox, tiron, NAC, Fer-1, or Lip-1Iron loading[227]This table is not meant to be complete, as there are many compounds and genetic methods that regulate ferroptosis, and new ones are being discovered routinelyTable\u00a02Autophagy-related genes and compounds in BCCompounds and genetic methodsEffectRefPI3K/AKT/mTOR signaling pathway3-methyladenineA PtdIns3K inhibitor that effectively blocks an early stage of autophagy by inhibiting the class III PtdIns3K, but not a specifific autophagy inhibitor. 3-MA also inhibits the class I PI3K and can thus, at suboptimal concentrations in long-term experiments, promote autophagy in some systems, as well as affect cell survival through AKT and other kinases. 3-MA does not inhibit BECN1-independent autophagy[228]10-NCP10-(40-N-diethylamino)butyl)\u22122-chlorophenoxazine; an AKT inhibitor that induces autophagy in neurons[229]Akti-1/2An allosteric inhibitor of AKT1 and AKT2 that promotes autophagy in B-cell lymphoma[230]AZD8055A catalytic MTOR inhibitor that acts as a potent autophagy inducer[231]ClonidineActivates the imidazoline receptor, which decrease cAMP in cells. An MTOR-independent inducer of autophagy[232]Eriocalyxin BAn autophagy inducer that exerts",
+          "cos_sim_score": 0.21152052283287048,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::13037127",
+          "title": "Ferroptosis-autophagy crosstalk in bladder cancer: mechanisms and therapeutic implications",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13037127/",
+          "text": "PI3K/AKT/mTOR, ferroptosis, and autophagy\nThe impact of three metabolic pathways on ferroptosis in BC is visually presented in Fig.\u00a01. A comprehensive analysis of these pathways and their targets indicates that the regulation of autophagy within the PI3K/AKT/mTOR pathway involves multiple targets that influence metabolism during ferroptosis (Fig.\u00a03). Inhibition of PHGDH suppresses the invasion and migration of pancreatic ductal adenocarcinoma (PDAC) cells and affects PDAC autophagy via the AMPK-Beclin 1 pathway [158, 159]. Arginylation and subsequent ubiquitination of HSPA5 lead to the degradation of AKT through autophagy flux [160]. Endogenous HMGB1 interacts with Beclin 1, displacing Bcl-2 and regulating autophagy. Knockout of HMGB1 reduces the expression of microtubule-associated protein 1 light chain 3-II (LC3-II) and Beclin 1 in BC, suggesting decreased autophagy [161]. TGF-\u03b21 mediates its atrophic effect on denervated skeletal muscle through the HMGB1/autophagy pathway. The activator MUL1 promotes the lysosomal degradation of AKT via R-HSPA5-induced autophagy. Bupivacaine upregulates the expression of microtubule-associated protein 1 light chain 3B-II (LC3B-II)/microtubule-associated protein 1 light chain 3B-I (LC3B-I) and Beclin-1, downregulates sequestosome 1 (p62), and attenuates the phosphorylation of AKT and mammalian target of mTOR in non-small cell lung cancer (NSCLC) cells [162].Fig.\u00a03Overlapping targets between autophagy and metabolic pathways implicated in ferroptosis in BC. In the formation of autolysosome, an endless stream of mechanisms are involved. The key regulators, such as PI3K-AKT-mTOR, AMPK, lncRNA, miRNA, GPX4, HO1, DFO and other signaling pathways, which rolling in the progress of metabolic pathways of ferroptosis in BC\nFig.\u00a03\nOverlapping targets between autophagy and metabolic pathways implicated in ferroptosis in BC. In the formation of autolysosome, an endless stream of mechanisms are involved. The key regulators, such as PI3K-AKT-mTOR, AMPK, lncRNA, miRNA, GPX4, HO1, DFO and other signaling pathways, which rolling in the progress of metabolic pathways of ferroptosis in BC\nIn glioblastoma (GBM) cells, silencing E-twenty-six-specific sequence variant 4 (ETV4) leads to inhibition of the PI3K/AKT/mTOR signaling cascade, which in turn enhances autophagy and apoptosis by decreasing transcriptional activation of EMP1 [163]. Conversely, miR-129-5p attenuates autophagy and apoptosis in H2O2-treated H9c2 cells by activating the PI3K/AKT/mTOR pathway and downregulating ATG14 expression. In gallbladder cancer, the inhibition of exportin 1 (XPO1) using KPT-330 activates the p53/mTOR pathway, leading to autophagy-dependent apoptosis. Extracellular vesicles derived from rheumatoid arthritis (RA)-associated fibroblast-like synoviocytes target the p53/mTOR signaling pathway in vascular endothelial cells via miRNA-1972 to promote angiogenesis [164]. The downregulation of functional p53 attenuates non-alcoholic fatty liver disease (NAFLD) by promoting HMGB1-mediated autophagy induction. AMPK regulates autophagy and exerts an impact on mTOR, playing a crucial role in autophagy regulation. Betulinic acid induces apoptosis through autophagy in human BC cells via the Bmi-1/ROS/AMPK-mTOR-ULK1 pathway [165]. Vitamin K2 enhances glycolysis, resulting in AMPK-dependent cell death through autophagy in BC cells. Sodium butyrate inhibits migration and induces autophagy that is dependent on the AMPK-mTOR pathway, accompanied by ROS-mediated apoptosis regulated by the miR-139-5p/Bmi-1 axis in human BC cells [166].\nOther pathways that regulate autophagy and ferroptosis",
+          "cos_sim_score": 0.2055850774049759,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

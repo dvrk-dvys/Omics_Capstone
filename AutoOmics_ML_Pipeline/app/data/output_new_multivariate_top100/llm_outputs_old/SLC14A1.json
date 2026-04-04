@@ -1,0 +1,153 @@
+{
+  "probe_id": "11727970_a_at",
+  "gene_symbol": "SLC14A1",
+  "rf_importance": 0.0078,
+  "selection_freq": 1.0,
+  "abs_fold_change": 2.5004742333333345,
+  "score": 0.4066,
+  "probe_count": 3,
+  "probe_ids": "11727970_a_at | 11733360_x_at | 11727969_a_at",
+  "max_score": 0.4066,
+  "mean_abs_fold_change": 2.5393,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T00:04:24",
+  "interpretation": "SLC14A1 encodes the urea transporter 1 (UT-B), which is involved in the transport of urea across cell membranes, particularly in erythrocytes and the kidneys. While there is no direct evidence linking SLC14A1 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in urea transport may suggest a potential involvement in metabolic processes that could influence bone health and response to steroid treatment. The retrieved evidence primarily highlights its function in urea transport and associations with other conditions, but does not establish a clear connection to SONFH. Therefore, the biological relevance of SLC14A1 as a biomarker for SONFH remains speculative and weakly supported by the available data. Further research is needed to clarify its potential role in this specific disease context.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "SLC14A1 may have indirect implications for metabolic processes related to Steroid-Induced Osteonecrosis of the Femoral Head, but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "SLC14A1 (Q13336). https://www.uniprot.org/uniprotkb/Q13336",
+    "SLC14A1 (Q13336-2). https://www.uniprot.org/uniprotkb/Q13336-2",
+    "SLC14A1 \u2014 SLC14A1. https://platform.opentargets.org/target/ENSG00000141469",
+    "SLC14A1 \u2194 urinary bladder cancer. https://platform.opentargets.org/target/ENSG00000141469/associations",
+    "SLC14A1 \u2194 urinary bladder carcinoma. https://platform.opentargets.org/target/ENSG00000141469/associations",
+    "SLC14A1 \u2194 Increased total eosinophil count. https://platform.opentargets.org/target/ENSG00000141469/associations",
+    "SLC14A1 \u2194 Back pain. https://platform.opentargets.org/target/ENSG00000141469/associations",
+    "Urea transporter 1. https://en.wikipedia.org/wiki/Urea_transporter_1",
+    "Urea transporter. https://en.wikipedia.org/wiki/Urea_transporter",
+    "GLUT2. https://en.wikipedia.org/wiki/GLUT2",
+    "Dopamine transporter. https://en.wikipedia.org/wiki/Dopamine_transporter"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5585,
+    "completion_tokens": 243,
+    "total_tokens": 5828,
+    "estimated_cost_usd": 0.000984
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q13336",
+          "title": "SLC14A1 (Q13336)",
+          "url": "https://www.uniprot.org/uniprotkb/Q13336",
+          "text": "Protein: Urea transporter 1\nFunction: Mediates the transport of urea driven by a concentration gradient across the cell membrane of erythrocytes (PubMed:10514515, PubMed:7797558, PubMed:7989337, PubMed:8997401). Also mediates the transport of urea across the cell membrane of the renal inner medullary collecting duct which is critical to the urinary concentrating mechanism (By similarity). Facilitates water transport in erythrocytes (By similarity)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q13336-2",
+          "title": "SLC14A1 (Q13336-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q13336-2",
+          "text": "Protein: Isoform 2 of Urea transporter 1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000141469::function",
+          "title": "SLC14A1 \u2014 SLC14A1",
+          "url": "https://platform.opentargets.org/target/ENSG00000141469",
+          "text": "Function: Mediates the transport of urea driven by a concentration gradient across the cell membrane of erythrocytes (PubMed:10514515, PubMed:7797558, PubMed:7989337, PubMed:8997401). Also mediates the transport of urea across the cell membrane of the renal inner medullary collecting duct which is critical to the urinary concentrating mechanism (By similarity). Facilitates water transport in erythrocytes (By similarity).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000141469::MONDO_0001187",
+          "title": "SLC14A1 \u2194 urinary bladder cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000141469/associations",
+          "text": "Disease: urinary bladder cancer\nDescription: A primary or metastatic malignant neoplasm involving the bladder.\nAssociation score: 0.490",
+          "cos_sim_score": 0.48981250023607875,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000141469::MONDO_0004986",
+          "title": "SLC14A1 \u2194 urinary bladder carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000141469/associations",
+          "text": "Disease: urinary bladder carcinoma\nDescription: A carcinoma that arises from epithelial cells of the urinary bladder\nAssociation score: 0.408",
+          "cos_sim_score": 0.40844612979451406,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000141469::HP_0001880",
+          "title": "SLC14A1 \u2194 Increased total eosinophil count",
+          "url": "https://platform.opentargets.org/target/ENSG00000141469/associations",
+          "text": "Disease: Increased total eosinophil count\nDescription: Increased count of eosinophils in the blood.\nAssociation score: 0.313",
+          "cos_sim_score": 0.3128801134730441,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000141469::HP_0003418",
+          "title": "SLC14A1 \u2194 Back pain",
+          "url": "https://platform.opentargets.org/target/ENSG00000141469/associations",
+          "text": "Disease: Back pain\nDescription: An unpleasant sensation characterized by physical discomfort (such as pricking, throbbing, or aching) localized to the back.\nAssociation score: 0.306",
+          "cos_sim_score": 0.30637116841667617,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::Urea transporter 1",
+          "title": "Urea transporter 1",
+          "url": "https://en.wikipedia.org/wiki/Urea_transporter_1",
+          "text": "Urea transporter 1 is a protein that in humans is encoded by the SLC14A1 gene.\n\nFunction\nThe SLC14A1 codes for a urea transporter (UTB) that is expressed in erythrocytes and kidney. SLC14A2 and SLC14A1 constitute solute carrier family 14. UTB proteins constitute the Kidd antigen system.\n\nReferences\n\n\n== Further reading ==",
+          "cos_sim_score": 0.3963766396045685,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Urea transporter",
+          "title": "Urea transporter",
+          "url": "https://en.wikipedia.org/wiki/Urea_transporter",
+          "text": "A urea transporter is a membrane transport protein, transporting urea. Humans and other mammals have two types of urea transport proteins, UT-A and UT-B. The UT-A proteins are important for renal urea handling and are produced by alternative splicing of the SLC14A2 gene.  Urea transport in the kidney is regulated by vasopressin.\nThe structure of a urea transport family protein from Desulfovibrio vulgaris was determined by x-ray crystallography. The structure has a pathway through the membrane that is similar to that of ion channel proteins, accounting for the ability of urea transport proteins to move up to one million urea molecules per second across the membrane.\nUrea transporters can be inhibited by the action of urea analogues like thiourea and glycosides like phloretin. Their inhibition results in increased diuresis due to urea induced osmosis in the collecting ducts of the kidney.\n\nTypes\nIn mammals, there are two urea transporter genes: UT-A (SLC14A2) and UT-B (SLC14A1). Multiple protein isoforms derived from each gene are produced by alternative splicing and alternative promoters.\n\nUT-A1\nUrea transporter A1 transports urea across the apical membrane into the intracellular space of luminal cells in the inner medullary collecting duct of the kidneys.  UT-1 is activated by ADH, but is a passive transporter.  It reabsorbs up to 70% of the original filtered load of urea.\n\nUT-A2\nUrea Transporter 2 transports urea across the apical membrane into the luminal space of cells in the thin descending loop of Henle of the kidneys.\n\nUT-A3\nUrea transporter 3 transports urea into the interstitium of the Inner Medullary Collecting Duct.\n\nUT-A4\nUrea transporter 4 has been detected in rat but not mouse kidney medulla.\n\nUT-A5\nUrea transporter 5 is not expressed in the kidney but in the testis.\n\nUT-B\nUT-B is widely expressed and has been studied in erythrocytes, kidney, intestine, and at the blood\u2013brain barrier. The SLC14A1 gene codes for the UT-B protein. UT-B is expressed at the basolateral and apical regions of the descending Vasa recta.\n\n\n== References ==",
+          "cos_sim_score": 0.20271068811416626,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::GLUT2",
+          "title": "GLUT2",
+          "url": "https://en.wikipedia.org/wiki/GLUT2",
+          "text": "Glucose transporter 2 (GLUT2) also known as solute carrier family 2 (facilitated glucose transporter), member 2 (SLC2A2) is a transmembrane carrier protein that enables protein facilitated glucose movement across cell membranes. It is the principal transporter for transfer of glucose between liver and blood Unlike GLUT4, it does not rely on insulin for facilitated diffusion.\nIn humans, this protein is encoded by the SLC2A2 gene.\n\nTissue distribution\nGLUT2 is found in cellular membranes of:\n\nliver (Primary)\npancreatic \u03b2 cell (Primary in mice, tertiary in humans after GLUT1 and GLUT3)\nhypothalamus (Not overly significant)\nbasolateral membrane of small intestine and apical GLUT2 is also suggested.\nbasolateral membrane of renal tubular cells\n\nFunction\nGLUT2 has high capacity for glucose but low affinity (high KM, ca. 15\u201320 mM) and thus functions as part of the \"glucose sensor\" in the pancreatic \u03b2-cells of rodents, though in human \u03b2-cells the role of GLUT2 seems to be a minor one. It is a very efficient carrier for glucose. Similarly, a recent study showed that lack of GLUT2 in \u03b2-cells doesn't impair glucose homeostasis or glucose-stimulated insulin secretion in mice.\nGLUT2 also carries glucosamine and fructose.\nWhen the glucose concentration in the lumen of the small intestine goes above 30 mM, such as occurs in the fed-state, GLUT2 is up-regulated at the brush border membrane, enhancing the capacity of glucose transport. Basolateral GLUT2 in enterocytes also aids in the transport of fructose into the bloodstream through glucose-dependent cotransport.\nRecent studies show that renal GLUT2 contributes to systemic glucose homeostasis by regulating glucose reabsorption. Lack of renal Glut2 reversed features of diabetes and obesity in mice. In addition, renal Glut2 deficiency caused knockdown of renal Sglt2 through the transcription factor Hnf1\u03b1.\n\nClinical significance\nDefects in the SLC2A2 gene are associated with a particular type of glycogen storage disease called Fanconi-Bickel syndrome.\nIn drug-treated diabetic pregnancies in which glucose levels in the woman are uncontrolled, neural tube and cardiac defects in the early-developing brain, spine, and heart depend upon functional GLUT2 carriers, and defects in the GLUT2 gene have been shown to be protective against such defects in rats.  However, whilst a lack of GLUT2 adaptability is negative, it is important to remember the fact that the main result of untreated gestational diabetes appears to cause babies to be of above-average size, which may well be an advantage that is managed very well with a healthy GLUT2 status.\nMaintaining a regulated osmotic balance of sugar concentration between the blood circulation and the interstitial spaces is critical in some cases of edema including cerebral edema.\nGLUT2 appears to be particularly important to osmoregulation, and preventing edema-induced stroke, transient ischemic attack or coma, especially when blood glucose concentration is above average. GLUT2 could reasonably be referred to as the \"diabetic glucose transporter\" or a \"stress hyperglycemia glucose transporter.\"\nSLC2A2 was associated with clinical stages and independently associated with overall survival in patients with Hepatocellular carcinoma, and could be considered a new prognostic factor for HCC.\n\nInteractive pathway map\nClick on genes, proteins and metabolites below to link to respective articles.\n\nSee also\nGlucose transporter\n\nReferences\nExternal links\nGlucose+Transporter+Type+2 at the U.S. National Library of Medicine Medical Subject Headings (MeSH)",
+          "cos_sim_score": 0.16827590763568878,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Dopamine transporter",
+          "title": "Dopamine transporter",
+          "url": "https://en.wikipedia.org/wiki/Dopamine_transporter",
+          "text": "The dopamine transporter (DAT, also sodium-dependent dopamine transporter) is a membrane-spanning protein coded for in humans by the SLC6A3 gene (also known as DAT1), that pumps the neurotransmitter dopamine out of the synaptic cleft back into cytosol. In the cytosol, other transporters sequester the dopamine into vesicles for storage and later release. Dopamine reuptake via DAT provides the primary mechanism through which dopamine is cleared from synapses, although there may be an exception in the prefrontal cortex, where evidence points to a possibly larger role of the norepinephrine transporter.\nDAT is implicated in a number of dopamine-related disorders, including attention deficit hyperactivity disorder, bipolar disorder, clinical depression, eating disorders, and substance use disorders. The gene that encodes the DAT protein is located on chromosome 5, consists of 15 coding exons, and is roughly 64 kbp long. Evidence for the associations between DAT and dopamine related disorders has come from a type of genetic polymorphism, known as a variable number tandem repeat, in the SLC6A3 gene, which influences the amount of protein expressed.\n\nFunction\nDAT is an integral membrane protein that removes dopamine from the synaptic cleft and deposits it into surrounding cells, thus terminating the signal of the neurotransmitter. Dopamine underlies several aspects of cognition, including reward, and DAT facilitates regulation of that signal.\n\nMechanism\nDAT is a symporter that moves dopamine across the cell membrane by coupling the movement to the energetically favorable movement of sodium ions moving from high to low concentration into the cell. DAT function requires the sequential binding and co-transport of two Na+ ions and one Cl\u2212 ion with the dopamine substrate. The driving force for DAT-mediated dopamine reuptake is the ion concentration gradient generated by the plasma membrane Na+/K+ ATPase.\nIn the most widely accepted model for monoamine transporter function, sodium ions must bind to the extracellular domain of the transporter before dopamine can bind. Once dopamine binds, the protein undergoes a conformational change, which allows both sodium and dopamine to unbind on the intracellular side of the membrane.\nStudies using electrophysiology and radioactive-labeled dopamine have confirmed that the dopamine transporter is similar to other monoamine transporters in that one molecule of neurotransmitter can be transported across the membrane with one or two sodium ions. Chloride ions are also needed to prevent a buildup of positive charge. These studies have also shown that transport rate and direction is totally dependent on the sodium gradient.\nBecause of the tight coupling of the membrane potential and the sodium gradient, activity-induced changes in membrane polarity can dramatically influence transport rates. In addition, the transporter may contribute to dopamine release when the neuron depolarizes.\n\nDAT\u2013Cav coupling\nPreliminary evidence suggests that the dopamine transporter couples to L-type voltage-gated calcium channels (particularly Cav1.2 and Cav1.3), which are expressed in virtually all dopamine neurons. As a result of DAT\u2013Cav coupling, DAT substrates that produce depolarizing currents through the transporter are able to open calcium channels that are coupled to the transporter, resulting in a calcium influx in dopamine neurons. This calcium influx is believed to induce CAMKII-mediated phosphorylation of the dopamine transporter as a downstream effect; since DAT phosphorylation by CAMKII results in dopamine efflux in vivo, activation of transporter-coupled calcium channels is a potential mechanism by which certain drugs (e.g., amphetamine) trigger neurotransmitter release.\n\nProtein structure\nThe initial determination of the membrane topology of DAT was based upon hydrophobic sequence analysis and sequence similarities with the GABA transporter. These methods predicted twelve transmembrane domains (TMD) with a large extracellular loop between the third and fourth TMDs. Further characterization of this protein used proteases, which digest proteins into smaller fragments, and glycosylation, which occurs only on extracellular loops, and largely verified the initial predictions of membrane topology. The exact structure of the Drosophila melanogaster dopamine transporter (dDAT) was elucidated in 2013 by X-ray crystallography.",
+          "cos_sim_score": 0.15153245627880096,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Dopamine transporter",
+          "title": "Dopamine transporter",
+          "url": "https://en.wikipedia.org/wiki/Dopamine_transporter",
+          "text": "Biological role and disorders\nThe rate at which DAT removes dopamine from the synapse can have a profound effect on the amount of dopamine in the cell. This is best evidenced by the severe cognitive deficits, motor abnormalities, and hyperactivity of mice with no dopamine transporters. These characteristics have striking similarities to the symptoms of ADHD.\nDifferences in the functional VNTR have been identified as risk factors for bipolar disorder and ADHD. Data has emerged that suggests there is also an association with stronger withdrawal symptoms from alcoholism, although this is a point of controversy. An allele of the DAT gene with normal protein levels is associated with non-smoking behavior and ease of quitting. Additionally, male adolescents particularly those in high-risk families (ones marked by a disengaged mother and absence of maternal affection) who carry the 10-allele VNTR repeat show a statistically significant affinity for antisocial peers.\nIncreased activity of DAT is associated with several different disorders, including clinical depression.\nMutations in DAT have been shown to cause dopamine transporter deficiency syndrome, an autosomal recessive movement disorder characterized by progressively worsening dystonia and parkinsonism.\n\nPharmacology\nThe dopamine transporter is the target of substrates, dopamine releasers, transport inhibitors and allosteric modulators.\nCocaine blocks DAT by binding directly to the transporter and reducing the rate of transport. In contrast, amphetamine enters the presynaptic neuron directly through the neuronal membrane or through DAT, competing for reuptake with dopamine. Once inside, it binds to TAAR1 or enters synaptic vesicles through VMAT2. When amphetamine binds to TAAR1, it reduces the firing rate of the postsynaptic neuron and triggers protein kinase A and protein kinase C signaling, resulting in DAT phosphorylation. Phosphorylated DAT then either operates in reverse or withdraws into the presynaptic neuron and ceases transport. When amphetamine enters the synaptic vesicles through VMAT2, dopamine is released into the cytosol. Amphetamine also produces dopamine efflux through a second TAAR1-independent mechanism involving CAMKII\u03b1-mediated phosphorylation of the transporter, which putatively arises from the activation of DAT-coupled L-type calcium channels by amphetamine.\nThe dopaminergic mechanisms of each drug are believed to underlie the pleasurable feelings elicited by these substances.\n\nInteractions\nDopamine transporter has been shown to interact with:\n\nApart from these innate protein-protein interactions, recent studies demonstrated that viral proteins such as HIV-1 Tat protein interacts with the DAT and this binding may alter the dopamine homeostasis in HIV positive individuals which is a contributing factor for the HIV-associated neurocognitive disorders.\n\nLigands and modulators\nSubstrates\nDopamine reuptake inhibitors (DRIs)\nTypical or classical cocaine-like blockers\nThese agents may actually act as dopamine releasing agent-esque DAT negative allosteric modulators or \"inverse agonists\".\n\nAtypical non-psychostimulant blockers\nThese agents may actually act as simple competitive DAT blockers without releaser-like \"inverse agonist\" activity.\n\nUnsorted blockers\nIndatraline\nPRX-14040\n\nDopamine releasing agents (DRAs)\nThese agents are also known as substrate-type dopamine releasing agents and as DAT reversers.\n\nAllosteric modulators\nPositive allosteric modulators\nNegative allosteric modulators\nSee also\nReferences\nExternal links\nDopamine transporter-related Associations, Experiments, Publications and Clinical Trials\nDopamine+Transporter at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\nOverview of all the structural information available in the PDB for UniProt: Q7K4Y6 (Drosophila melanogaster Sodium-dependent dopamine transporter) at the PDBe-KB.",
+          "cos_sim_score": 0.13481245934963226,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

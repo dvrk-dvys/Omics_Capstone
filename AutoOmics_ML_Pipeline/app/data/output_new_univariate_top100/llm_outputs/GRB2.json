@@ -1,0 +1,220 @@
+{
+  "probe_id": "11741435_s_at",
+  "gene_symbol": "GRB2",
+  "score": 1.0,
+  "SD_TestAUC": 0.0802943829210325,
+  "abs_fold_change": 0.8176,
+  "probe_count": 1,
+  "probe_ids": "11741435_s_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.8176,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T22:29:35",
+  "interpretation": "GRB2 (Growth factor receptor-bound protein 2) is a non-enzymatic adapter protein that plays a crucial role in signaling pathways related to cell growth, differentiation, and survival. It is involved in various biological processes, including the regulation of immune responses and apoptosis, which are relevant in the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH). The retrieved evidence indicates that GRB2 is implicated in pathways that may influence bone health and development, particularly through its interactions with signaling molecules that regulate osteogenesis and angiogenesis. However, the evidence linking GRB2 directly to SONFH is limited, leading to a lower confidence in its role as a biomarker for early detection of this condition. Thus, while GRB2 may have potential relevance in the context of SONFH, its clinical utility as a biomarker remains uncertain and would require further validation.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "GRB2 may play a role in the signaling pathways relevant to the pathogenesis of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "GRB2 (P62993). https://www.uniprot.org/uniprotkb/P62993",
+    "GRB2 (P62993-2). https://www.uniprot.org/uniprotkb/P62993-2",
+    "GRB2 \u2014 GRB2. https://platform.opentargets.org/target/ENSG00000177885",
+    "GRB2 \u2194 cancer. https://platform.opentargets.org/target/ENSG00000177885/associations",
+    "GRB2 \u2194 bone development disease. https://platform.opentargets.org/target/ENSG00000177885/associations",
+    "GRB2 \u2194 chronic myelogenous leukemia. https://platform.opentargets.org/target/ENSG00000177885/associations",
+    "GRB2 \u2194 listeriosis. https://platform.opentargets.org/target/ENSG00000177885/associations",
+    "GRB2 \u2014 growth factor receptor bound protein 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "GAB1 \u2014 GRB2 associated binding protein 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "GAB2 \u2014 GRB2 associated binding protein 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "GRAP2 \u2014 GRB2 related adaptor protein 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "A Network Pharmacology and Molecular Docking Strategy to Explore Potential Targets and Mechanisms Underlying the Effect of Curcumin on Osteonecrosis of the Femoral Head in Systemic Lupus Erythematosus (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8455200/",
+    "Exosomal SPRY4 from adipogenic BMSCs impairs angiogenesis via the PTPRB/TIE2/PI3K axis in Steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12261795/",
+    "Bone Regeneration, Reconstruction and Use of Osteogenic Cells; from Basic Knowledge, Animal Models to Clinical Trials (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC7019836/",
+    "Rapid Discovery of Potential Drugs for Osteonecrosis of Femoral Head Based on Gene Expression Omnibus Database and Connectivity Map (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC6904644/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 10422,
+    "completion_tokens": 324,
+    "total_tokens": 10746,
+    "estimated_cost_usd": 0.001758
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::P62993",
+          "title": "GRB2 (P62993)",
+          "url": "https://www.uniprot.org/uniprotkb/P62993",
+          "text": "Protein: Growth factor receptor-bound protein 2\nFunction: Non-enzymatic adapter protein that plays a pivotal role in precisely regulated signaling cascades from cell surface receptors to cellular responses, including signaling transduction and gene expression (PubMed:11726515, PubMed:37626338). Thus, participates in many biological processes including regulation of innate and adaptive immunity, autophagy, DNA repair or necroptosis (PubMed:35831301, PubMed:37626338, PubMed:38182563). Controls signaling complexes at the T-cell antigen receptor to facilitate the activation, differentiation, and function of T-cells (PubMed:36864087, PubMed:9489702). Mechanistically, engagement of the TCR leads to phosphorylation of the adapter protein LAT, which serves as docking site for GRB2 (PubMed:9489702). In turn, GRB2 establishes a a connection with SOS1 that acts as a guanine nucleotide exchange factor and serves as a critical regulator of KRAS/RAF1 leading to MAPKs translocation to the nucleus and activation (PubMed:12171928, PubMed:25870599). Functions also a role in B-cell activation by amplifying Ca(2+) mobilization and activation of the ERK MAP kinase pathway upon recruitment to the phosphorylated B-cell antigen receptor (BCR) (PubMed:25413232, PubMed:29523808). Plays a role in switching between autophagy and programmed necrosis upstream of EGFR by interacting with components of necrosomes including RIPK1 and with autophagy regulators SQSTM1 and BECN1 (PubMed:35831301, PubMed:38182563). Regulates miRNA biogenesis by forming a functional ternary complex with AGO2 and DICER1 (PubMed:37328606). Functions in the replication stress response by protecting DNA at stalled replication forks from MRE11-mediated degradation. Mechanistically, inhibits RAD51 ATPase activity to stabilize RAD51 on stalled replication forks (PubMed:38459011). Additionally, directly recruits and later releases MRE11 at DNA damage sites during the homology-directed repair (HDR) process (PubMed:34348893) Does not bind to phosphorylated epidermal growth factor receptor (EGFR) but inhibits EGF-induced transactivation of a RAS-responsive element. Acts as a dominant negative protein over GRB2 and by suppressing proliferative signals, may trigger active programmed cell death. Mechanistically, inhibits RAS-ERK signaling and downstream cell proliferation by competing with GRB2 for SOS1 binding and thus by regulating SOS1 membrane recruitment (PubMed:36171279)",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::P62993-2",
+          "title": "GRB2 (P62993-2)",
+          "url": "https://www.uniprot.org/uniprotkb/P62993-2",
+          "text": "Protein: Isoform 2 of Growth factor receptor-bound protein 2\nFunction: Does not bind to phosphorylated epidermal growth factor receptor (EGFR) but inhibits EGF-induced transactivation of a RAS-responsive element. Acts as a dominant negative protein over GRB2 and by suppressing proliferative signals, may trigger active programmed cell death. Mechanistically, inhibits RAS-ERK signaling and downstream cell proliferation by competing with GRB2 for SOS1 binding and thus by regulating SOS1 membrane recruitment (PubMed:36171279)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000177885::function",
+          "title": "GRB2 \u2014 GRB2",
+          "url": "https://platform.opentargets.org/target/ENSG00000177885",
+          "text": "Function: Non-enzymatic adapter protein that plays a pivotal role in precisely regulated signaling cascades from cell surface receptors to cellular responses, including signaling transduction and gene expression (PubMed:11726515, PubMed:37626338). Thus, participates in many biological processes including regulation of innate and adaptive immunity, autophagy, DNA repair or necroptosis (PubMed:35831301, PubMed:37626338, PubMed:38182563). Controls signaling complexes at the T-cell antigen receptor to facilitate the activation, differentiation, and function of T-cells (PubMed:36864087, PubMed:9489702). Mechanistically, engagement of the TCR leads to phosphorylation of the adapter protein LAT, which serves as docking site for GRB2 (PubMed:9489702). In turn, GRB2 establishes a a connection with SOS1 that acts as a guanine nucleotide exchange factor and serves as a critical regulator of KRAS/RAF1 leading to MAPKs translocation to the nucleus and activation (PubMed:12171928, PubMed:25870599). Functions also a role in B-cell activation by amplifying Ca(2+) mobilization and activation of the ERK MAP kinase pathway upon recruitment to the phosphorylated B-cell antigen receptor (BCR) (PubMed:25413232, PubMed:29523808). Plays a role in switching between autophagy and programmed necrosis upstream of EGFR by interacting with components of necrosomes including RIPK1 and with autophagy regulators SQSTM1 and BECN1 (PubMed:35831301, PubMed:38182563). Regulates miRNA biogenesis by forming a functional ternary complex with AGO2 and DICER1 (PubMed:37328606). Functions in the replication stress response by protecting DNA at stalled replication forks from MRE11-mediated degradation. Mechanistically, inhibits RAD51 ATPase activity to stabilize RAD51 on stalled replication forks (PubMed:38459011). Additionally, directly recruits and later releases MRE11 at DNA damage sites during the homology-directed repair (HDR) process (PubMed:34348893).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000177885::MONDO_0004992",
+          "title": "GRB2 \u2194 cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000177885/associations",
+          "text": "Disease: cancer\nDescription: A tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues. Malignant neoplasms often metastasize to distant anatomic sites and may recur after excision. The most common malignant neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), Hodgkin and non-Hodgkin lymphomas, leukemias, melanomas, and sarcomas.\nAssociation score: 0.613",
+          "cos_sim_score": 0.6128603853679294,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000177885::EFO_0005541",
+          "title": "GRB2 \u2194 bone development disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000177885/associations",
+          "text": "Disease: bone development disease\nDescription: A disease involving the bone development.\nAssociation score: 0.578",
+          "cos_sim_score": 0.5783838386125503,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000177885::EFO_0000339",
+          "title": "GRB2 \u2194 chronic myelogenous leukemia",
+          "url": "https://platform.opentargets.org/target/ENSG00000177885/associations",
+          "text": "Disease: chronic myelogenous leukemia\nDescription: A chronic myeloproliferative neoplasm characterized by the expression of the BCR-ABL1 fusion gene. It presents with neutrophilic leukocytosis. It can appear at any age, but it mostly affects middle aged and older individuals. Patients usually present with fatigue, weight loss, anemia, night sweats, and splenomegaly. If untreated, it follows a biphasic or triphasic natural course; an initial indolent chronic phase which is followed by an accelerated phase, a blast phase, or both. Allogeneic stem cell transplantation and tyrosine kinase inhibitors delay disease progression and prolong overall survival.\nAssociation score: 0.548",
+          "cos_sim_score": 0.5483212695512553,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000177885::EFO_0007347",
+          "title": "GRB2 \u2194 listeriosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000177885/associations",
+          "text": "Disease: listeriosis\nDescription: A primary bacterial infectious disease that results_in infection, has_material_basis_in Listeria monocytogenes, which is transmitted_by ingestion of contaminated food or raw milk or transmitted_by congenital method. Ingestion of Listeria by pregnant women has_symptom nausea, has_symptom vomiting, has_symptom diarrhea, has_symptom fever, has_symptom malaise, has_symptom back pain, and has_symptom headache. Maternal infection with Listeria can result in chorioamnionitis, premature labor, spontaneous abortion, or stillbirth.\nAssociation score: 0.541",
+          "cos_sim_score": 0.5409211817593593,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "GRB2 \u2014 growth factor receptor bound protein 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: GRB2\nGene name: growth factor receptor bound protein 2\nAliases / synonyms: ASH, EGFRBP-GRB2, Grb3-3, MST084, MSTP084, NCKAP2\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene binds the epidermal growth factor receptor and contains one SH2 domain and two SH3 domains. Its two SH3 domains direct complex formation with proline-rich regions of other proteins, and its SH2 domain binds tyrosine phosphorylated sequences. This gene is similar to the Sem5 gene of C.elegans, which is involved in the signal transduction pathway. Two alternatively spliced transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "GRB2",
+          "aliases": "ASH, EGFRBP-GRB2, Grb3-3, MST084, MSTP084, NCKAP2",
+          "gene_description": "growth factor receptor bound protein 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "GAB1 \u2014 GRB2 associated binding protein 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: GAB1\nGene name: GRB2 associated binding protein 1\nAliases / synonyms: DFNB26\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the IRS1-like multisubstrate docking protein family. It is an important mediator of branching tubulogenesis and plays a central role in cellular growth response, transformation and apoptosis. Two transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Aug 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "GAB1",
+          "aliases": "DFNB26",
+          "gene_description": "GRB2 associated binding protein 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "GAB2 \u2014 GRB2 associated binding protein 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: GAB2\nGene name: GRB2 associated binding protein 2\nOrganism: Homo sapiens\nGene summary: This gene is a member of the GRB2-associated binding protein (GAB) gene family. These proteins contain pleckstrin homology (PH) domain, and bind SHP2 tyrosine phosphatase and GRB2 adapter protein. They act as adapters for transmitting various signals in response to stimuli through cytokine and growth factor receptors, and T- and B-cell antigen receptors. The protein encoded by this gene is the principal activator of phosphatidylinositol-3 kinase in response to activation of the high affinity IgE receptor. Two alternatively spliced transcripts encoding different isoforms have been described for this gene. [provided by RefSeq, Nov 2009]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "GAB2",
+          "aliases": "",
+          "gene_description": "GRB2 associated binding protein 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "GRAP2 \u2014 GRB2 related adaptor protein 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: GRAP2\nGene name: GRB2 related adaptor protein 2\nAliases / synonyms: GADS, GRAP-2, GRB2L, GRBLG, GRID, GRPL, GrbX, Grf40, Mona, P38\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the GRB2/Sem5/Drk family. This member is an adaptor-like protein involved in leukocyte-specific protein-tyrosine kinase signaling. Like its related family member, GRB2-related adaptor protein (GRAP), this protein contains an SH2 domain flanked by two SH3 domains. This protein interacts with other proteins, such as GRB2-associated binding protein 1 (GAB1) and the SLP-76 leukocyte protein (LCP2), through its SH3 domains. Multiple alternatively spliced transcript variants encoding distinct isoforms have been found for this gene. [provided by RefSeq, Apr 2014]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "GRAP2",
+          "aliases": "GADS, GRAP-2, GRB2L, GRBLG, GRID, GRPL, GrbX, Grf40, Mona, P38",
+          "gene_description": "GRB2 related adaptor protein 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::8455200",
+          "title": "A Network Pharmacology and Molecular Docking Strategy to Explore Potential Targets and Mechanisms Underlying the Effect of Curcumin on Osteonecrosis of the Femoral Head in Systemic Lupus Erythematosus",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8455200/",
+          "text": "1. Introduction\nSystemic lupus erythematosus (SLE) is a chronic autoimmune disease, which prevalence ranges from 20 to 150 cases per 100,000 population and appears to be increasing as the disease is recognized more readily and survival increases [1]. SLE can cause multiple organ dysfunction such as the lung, kidney, blood vessel, and joint; the diverse clinical manifestations of SLE present a challenge to the clinician [2]. Osteonecrosis (ON) remains a serious complication in SLE with prevalence ranging from 10% to 50%, and the femoral head is the most common site [3\u20139]. The pathogenesis of SLE-ONFH has not yet been fully elucidated. Except for joint arthroplasty in the late inactive phase, the active phase usually requires effective drugs or other measures for SLE itself, which is more complicated. To date, the drug for SLE is mainly glucocorticoids with immunosuppressive effect, which have achieved good therapeutic effects. However, some side effects have resulted because of their extensive use. A large number of studies have reported that the use of glucocorticoids can cause femoral head necrosis (ONFH) [10\u201312] and long-term high-dose cyclophosphamide can induce infection, reproductive toxicity, and other adverse reactions [13, 14]. Obviously, none of these seems to be an ideal treatment for SLE-ONFH in the future. Traditional Chinese medicine (TCM) has the characteristics of multitarget, multicomponent, multifunction, and generally low toxicity or side effects [15\u201318]. It has been widely used in the treatment of various diseases including immune diseases [19, 20] and has attracted more and more attention in recent years. The Chinese medicine arsenic being found to be effective in treating leukemia is one of the best examples [21]. Curcumin, an effective monomeric component mainly extracted from the traditional Chinese medicine turmeric, has been reported to have protective effects on SLE and ONFH [22\u201325]. However, its potential targets and mechanisms for the treatment of SLE-ONFH are not still very clear, and there is no systematic and comprehensive understanding of the relationship between therapeutic targets and pathways. With the improvement of bioinformatics and related databases, network pharmacology and molecular docking strategies are widely used in drug research, which revealed the interrelationship between drug-target-pathway-disease. In this study, we constructed an interaction network between SLE and ONFH, as well as their interaction network with curcumin's targets. And molecular docking technology was used to verify the potential targets of curcumin in the treatment of SLE-ONFH. In addition, relevant signal pathways are obtained by bioinformatics analysis to reveal the underlying mechanisms. The entire research workflow is shown in Figure 1.\n2. Materials and Methods\n2.1. Data Preparation\n2.1.1. Chemical Structures\nThe 2D chemical structure of curcumin (Figure 2) was obtained from PubChem (http://pubchem.ncbi.nlm.nih.gov), which is an open chemical database that provides information on compound structures and descriptive data.\n2.1.2. Prediction of Curcumin Targets\nThe Swiss target prediction database (http://www.swisstargetprediction.ch/) is a web-based tool, on-line since 2014, to perform ligand-based target prediction for any bioactive small molecule [26]. To get curcumin relevant target genes, the \u201cSMILES\u201d format of curcumin was obtained and inputted into the Swiss target prediction database by searching curcumin in the PubChem database. In addition, the HERB database (http://herb.ac.cn/) was used to get curcumin targets for a comprehensive collection of drug targets, which is a high-throughput experiment- and reference-guided database of traditional Chinese medicine [27]. The targets are mainly from TCMID (http://www.megabionet.org/tcmid/) and TCMSP (https://tcmspw.com/tcmsp.php) databases [28, 29]. Finally, each of the predicted targets was inputted into the UniProt database (https://www.uniprot.org/) for screening. In order to increase credibility, we only need human targets which have been annotated and reviewed, and the potential targets of curcumin were identified by eliminating duplicate and nonstandard targets.\n2.1.3. Predict Targets of Curcumin against SLE-ONFH",
+          "cos_sim_score": 0.5477830767631531,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12261795",
+          "title": "Exosomal SPRY4 from adipogenic BMSCs impairs angiogenesis via the PTPRB/TIE2/PI3K axis in Steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12261795/",
+          "text": "Patients and bone tissues\nThis study was conducted in accordance with the guidelines outlined in the Declaration of Helsinki. All experimental protocols were reviewed and approved by the Institutional Review Board of the First Affiliated Hospital of Chongqing Medical University. The research included 15 patients diagnosed with non-traumatic osteonecrosis of the femoral head (SONFH, Acro stages III and IV) and 15 patients with femoral neck fractures (FNF) who underwent hip arthroplasty at the hospital between October 2021 and July 2022. Patients with femoral neck fractures served as the control group. Demographic information for both cohorts is summarized in Table\u00a01. Immediately following resection, each femoral head specimen was bisected using an osteotome. One half of each specimen was promptly immersed in liquid nitrogen for subsequent experimental procedures, while the other half was fixed in 4% paraformaldehyde for histological examination.\nTable 1Demographics data of the study groupsGroupGender (male/female)Side (right/left)Age (years)BMI (kg/m2)Acro stageFNF9/68/772.4\u2009\u00b1\u20096.866.9\u2009\u00b1\u20096.4SONFH8/710/1245.3\u2009\u00b1\u20099.2 ****71.7\u2009\u00b1\u20098.4Stage III n\u2009=\u20095stage IV n\u2009=\u200910Note: Data are presented as mean\u2009\u00b1\u2009SD, ****P\u2009<\u20090.0001. SONFH denotes steroid-induced osteonecrosis of the femoral head group. FNF represents the femoral neck fracture group. BMI refers to body mass index\nTable 1\nDemographics data of the study groups\nNote: Data are presented as mean\u2009\u00b1\u2009SD, ****P\u2009<\u20090.0001. SONFH denotes steroid-induced osteonecrosis of the femoral head group. FNF represents the femoral neck fracture group. BMI refers to body mass index\nIsolation of exosomes from cell culture supernatant\nExosomes were isolated from the supernatants of BMSCs and adipogenic BMSCs using previously described methods. The isolation and purification were conducted through multi-step ultracentrifugation [24]. Specifically, the supernatant was sequentially centrifuged at 300\u00a0g for 10\u00a0min, 1500\u00a0g for 10\u00a0min, and 3200\u00a0g for 20\u00a0min, followed by centrifugation at 20,000\u00a0g for 30\u00a0min. Finally, the supernatant was subjected to 2 rounds of ultracentrifugation at 100,000\u00a0g for 70\u00a0min each, all performed at 4\u00a0\u00b0C. After each centrifugation step, the supernatant was transferred to a new centrifuge tube. Exosomes were subsequently washed with PBS and filtered through a 0.22\u00a0\u03bcm filter before being stored in 100 \u00b5L of PBS at -80\u00a0\u00b0C. For protein extraction, a portion of the exosome particles was lysed using RIPA buffer supplemented with PMSF (RIPA: PMSF\u2009=\u2009100:1). The total exosome protein concentration was determined, and the extracted proteins were stored at -80\u00a0\u00b0C for Western blot analysis.\nCharacterization of exosomes\nThe particle size distribution of exosomes derived from BMSCs and adipogenic BMSCs was characterized using nanoparticle tracking analysis (NTA) with a Malvern Zetasizer Nano ZS90. NTA data were analyzed using Zeta View software. The morphology of exosomes from both cell types was examined using a FEI Tecnai F20 transmission electron microscope. Exosome-specific markers CD63 and TSG101 were detected by Western blotting.\nCell culture and transfection",
+          "cos_sim_score": 0.5279221534729004,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12261795",
+          "title": "Exosomal SPRY4 from adipogenic BMSCs impairs angiogenesis via the PTPRB/TIE2/PI3K axis in Steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12261795/",
+          "text": "Introduction\nSteroid-induced osteonecrosis of the femoral head (SONFH) accounts for 40\u201350% of non-traumatic osteonecrosis cases, predominantly affecting young and middle-aged individuals around 30\u201350 years old with a disability rate of 80% [1]. SONFH progresses rapidly, disrupting femoral head vascularization and triggering osteocyte apoptosis, ultimately leading to irreversible joint collapse [2]. Current early-stage interventions, such as core decompression combined with mesenchymal stem cell transplantation, exhibit limited therapeutic efficacy, failing to significantly restore hip function [3]. Over 85% of untreated patients eventually require total hip arthroplasty (THA), yet younger individuals face substantial risks of prosthesis failure, osteolysis, and deep infections, underscoring the critical need to delay disease progression and postpone primary THA [1, 4, 5]. Therefore, elucidating SONFH-specific regulatory networks and molecular targets is critical to developing early targeted therapies capable of halting pathological advancement and improving clinical outcomes [3, 6].\nThe pathological progression of SONFH is primarily driven by adipogenic differentiation of BMSCs [7]. Glucocorticoids promote BMSCs adipogenesis via suppression of the Wnt/\u03b2-catenin signaling pathway, which simultaneously inhibits its osteogenic differentiation and compromises bone marrow hematopoiesis through post-chemoradiotherapy adipocyte accumulation [7, 8]. While the angiogenic-osteogenic coupling forms the cornerstone of SONFH repair, current therapeutic strategies targeting single or dual pro-angiogenic/osteogenic factors show limited efficacy, suggesting the presence of inhibitory regulators disrupting this coupling [9, 10]. Although localized adipocyte accumulation is observed in SONFH tissues, its role of angiogenesis suppression remains undefined [11, 12]. This highlights the need to investigate whether dysregulated adipogenesis of BMSCs suppresses angiogenesis of vascular endothelial cells through specific molecular pathways and whether such intercellular crosstalk constitutes a critical mechanism in SONFH progression, thereby identifying novel therapeutic targets to mitigate SONFH advancement [3, 13, 14].\nExosomes, a type of extracellular vesicles around 40\u2013150\u00a0nm, mediate intercellular communication by transferring bioactive molecules including RNAs, proteins, and non-coding RNAs, playing critical roles in physiological regulation and disease progression [15, 16]. In bone microenvironment, BMSCs-derived exosomes enhance osteogenesis-angiogenesis coupling under physiological conditions, BMSCs-secreted exosomes promote osteogenesis, while endothelial cell-derived counterparts reciprocally support vascularized bone formation through angiogenic feedback [17\u201319]. However, exosomes from ONFH lesions exhibit pathological suppression of this coupling. Exosomes from SONFH tissue inhibit osteogenic/vascular differentiation via miR-100-5p/BMPR2 signaling and impair BMSCs function through CD41 deficiency, driving SD rats with SONFH model Progress [20, 21]. Notably, whether adipogenic BMSCs-derived exosomes directly suppress endothelial angiogenesis to exacerbate SONFH progression remains unclear [8, 22, 23]. Identifying specific exosomal components disrupting angiogenic-osteogenic coupling could reveal novel therapeutic targets against SONFH pathology.\nThis study identifies exosomal SPRY4 from adipogenic BMSCs as a novel inhibitor of angiogenesis, linking it to PTPRB-dependent suppression of TIE2/PI3K/AKT signaling. By integrating multi-omics and preclinical models, we establish the SPRY4-PTPRB-TIE2 axis as a therapeutic target to restore vascular-bone crosstalk and halt SONFH progression.\nMaterials and methods\nThe work has been reported in line with the ARRIVE guidelines 2.0.\nPatients and bone tissues\nThis study was conducted in accordance with the guidelines outlined in the Declaration of Helsinki. All experimental protocols were reviewed and approved by the Institutional Review Board of the First Affiliated Hospital of Chongqing Medical University. The research included 15 patients diagnosed with non-traumatic osteonecrosis of the femoral head (SONFH, Acro stages III and IV) and 15 patients with femoral neck fractures (FNF) who underwent hip arthroplasty at the hospital between October 2021 and July 2022. Patients with femoral neck fractures served as the control group. Demographic information for both cohorts is summarized in Table\u00a01. Immediately following resection, each femoral head specimen was bisected using an osteotome. One half of each specimen was promptly immersed in liquid nitrogen for subsequent experimental procedures, while the other half was fixed in 4% paraformaldehyde for histological examination.",
+          "cos_sim_score": 0.5002400279045105,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::7019836",
+          "title": "Bone Regeneration, Reconstruction and Use of Osteogenic Cells; from Basic Knowledge, Animal Models to Clinical Trials",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7019836/",
+          "text": "Moreover, Osx plays an important role in bone homeostasis, influencing the formation of bones and the expression of osteoblast genes in adults. A lack of Osx expression led to the absence of endochondral ossification and errors in cartilage matrix ossification and matrix vesicle formation [39]. In fact, synergistically with Runx2, Osx was observed to have a few binding sites on ectonucleotide pyrophosphatase/phosphodiesterase 1 (ENPP1). ENPP1 is responsible for bone mineralization and was described to be upregulated by Osx through p38-mitogen-activated protein kinase [40]. Another activity of Osx that restrains bone mineralization is the activation of sclerostin, which is a Wnt pathway antagonist, inhibiting bone formation [41].\nDlx5 is yet another transcription factor involved in osteogenesis, with studies of Dlx5-null mice showing a range of defects [42,43]. Dlx5-null mouse embryos showed lowered bone volume, as well as lowered osteoblast proliferation and differentiation, due to a lower expression of Runx2, Osx, Osteocalcin and bone sialoprotein. Moreover, the absence of Dlx5 leads to an increase in osteoclast number, suggesting that Dlx5 may regulate osteoblast differentiation to osteoclast, as osteoclasts do not express this transcription factor. Dlx5 was also shown to be an activator of Runx2, with Dlx5 responsive elements identified in the bone-specific P1 promotor of Runx2 [44,45]. However, Dlx5 promotes the expression of ALP and osteocalcin in Runx2-null mice [44], meaning that it can also work in a Runx2-independent manner [46], which can similarly lead to the activation of Osx [47]. In particular, Dlx5 is already expressed at very early stages of bone development and has been proposed to play a central role in the control of osteogenesis. [48] It was proven that DlX5 acts at other stages of osteogenesis, controlling the expression of Osteocalcin and BSP, which are expressed in the differentiated osteoblast, as they are both downregulated in Dlx5-null mice. The absence of Dlx5 in mice caused the impairment of bone homeostasis and osteoblast/osteoclast coupling. Moreover, Dlx5 is upregulated by BMP2 [49], mediating BMP2-induced Runx2 expression [50]. A graphical representation of the osteoblast differentiation pathway is presented in Figure 1.\nTranscription factors from the AP1 family were described to promote osteogenesis, being observed during proliferation and absent during differentiation [51]. C-Fos, for example, was observed to have no effect on bone formation but its overexpression resulted in the osteosarcoma phenotype [52]. Moreover, gain-of-function studies of Fra and \u0394FosB, the overexpression of which led to osteosclerosis, showed enhanced osteoblast formation [53,54]\nOsteoclast formation not only depends on the interaction of many transcription factors and pathways, but also, as proved by in vitro studies, on the communication between precursor cells and already differentiated osteoblasts [55]. M-CSF is an essential osteoclast survival and proliferation factor [56]. Nevertheless, mice studies showing that the deficiency of other factors also caused osteoporosis led to the discovery of other molecular pathways influencing osteoclastogenesis, with Nuclear factor kappa-\u03b2 ligand (RANKL) recognized as the most important differentiation factor [57]. Many more genes and transcription factors that influence differentiation of osteoclasts were discovered afterwards, such as TRAF6 [58], c-Fos [59,60], Nf-kB [61], NFATc1 [62] and FcRy/DAP12 [63].\nAs previously mentioned, while RANKL\u2013RANK signalling is responsible for differentiation, M-CSF is essential for the proliferation and the survival of the osteoclast precursors [64]. Binding to its membrane receptor, it recruits Grb2 and src, which induce the ERK and PI3K pathways. When RANKL binds to its membrane receptors, it leads to the activation of numerous pathways involved in osteoclast differentiation, including NFATc1. Moreover, osteoclast precursors need costimulatory signals for the activation of differentiation processes. Ig-like ligands are expressed on osteoclast precursors and as costimulatory molecules to the RANK signalling [65].",
+          "cos_sim_score": 0.4802061915397644,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::6904644",
+          "title": "Rapid Discovery of Potential Drugs for Osteonecrosis of Femoral Head Based on Gene Expression Omnibus Database and Connectivity Map",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6904644/",
+          "text": "Introduction\nOsteonecrosis of femoral head (ONFH) is one of the most refractory orthopedic diseases, which has become a common public health problem1. ONFH is a multifactorial progressive disease in which greater osteonecrosis and collapse lead to loss of joint function or disability2, 3. The mechanisms underlying ONFH are not particularly clear and there is no specific drug for ONFH nowadays. Total hip arthroplasty (THA) is recognized as the ultimate treatment. Although the surgical technique is mature, its high cost and complications are still unacceptable to many people. The most important point is that this treatment is not suitable for early patients. Therefore, for early ONFH patients, timely and accurate diagnosis and conservative treatment are very important. But unfortunately, according to data, the early diagnosis and remedy for ONFH remains limited4. Therefore, the identification of suitable targeted molecular drugs will significantly benefit ONFH patients, particularly young patients. Due to the huge investment and long clinical observation needed for new drug research and development, the progress of new drug research and development for ONFH has been slow and rarely reported.\nThe Gene Expression Omnibus (GEO) database, a National Center for Biotechnology Information (NCBI) database for gene expression and hybridization array data, contains a wide assortment of high\u2010throughput experimental data for various diseases5. The GEO database is available for querying, downloading, and analyzing gene expression data for ONFH. The Connectivity Map (CMap) database, a genome\u2010wide expression database of gene expression profiles of multiple human cells, can be used to compare disease gene expression patterns and analyze molecular mechanisms of different pathophysiological states6, 7, 8. In addition, researchers can screen a ranked list of small targeted molecules based on connectivity scores. If there exists a significant negative correlation between a disease\u2010related gene expression pattern and the functional profile of a compound, we can preliminarily speculate about the existence of a link between the small molecule in question and its therapeutic effects on the disease. Using the CMap database, we can quickly identify new indications for existing drugs, a process known as drug repositioning or drug rediscovery.\nThere have been several successful applications of CMap to drug rediscovery. Based on prior experiences, we designed and performed our research, which we present as a flowchart (Fig. 1). Data was collected from the hip articular cartilage specimens of four ONFH patients and four healthy controls. This data was analyzed using the GEO database; a series of differentially expressed genes (DEGs) was then identified using R. ClueGO was used for the Gene Ontology (GO) analysis including the three categories of cellular components, molecular functions and biological processes and KEGG pathways. By comparing characteristic DEGs with shared expressed genes in the CMap database, small molecular compounds or drugs with negative correlations with ONFH were obtained.\nFigure 1\nThe flowsheet for the DEGs query signature and the discovery of candidate molecular compounds for ONFH.\nThe purpose of this study is: (i) mining ONFH related chips through GEO database to obtain differentially expressed genes; (ii) the core differential genes of ONFH were obtained by network topology analysis. Afterwards, the related physiological and pathological processes and signaling pathways were obtained by enrichment analysis; and (iii) potential drugs for ONFH were obtained from CMap database. It will provide some reference for the follow\u2010up clinical, basic research and the development of new drugs.\nMaterials and Methods\nData Source\nOnly one Agilent microarray dataset related to ONFH on Homo sapiens, which was identified by the accession number GSE74089, and was available in the GEO database on 6 December 2018 (https://www.ncbi.nlm.nih.gov/geo/). The data of accession number GSE74089, which was based on the GPL13497 [Agilent\u2010026652 Whole Human Genome Microarray 4\u00d744K v2], was contributed by Ruiyu L et al., which contained eight hip articular cartilage specimens that were collected from four ONFH patients and four healthy controls. Unfortunately, the descriptive text of the chip data does not mention whether the femoral head specimens included are from traumatic, steroid\u2010induced, or alcoholic ONFH patients, nor does it describe the stages.\nDifferentially Expressed Genes Analysis",
+          "cos_sim_score": 0.47242236137390137,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

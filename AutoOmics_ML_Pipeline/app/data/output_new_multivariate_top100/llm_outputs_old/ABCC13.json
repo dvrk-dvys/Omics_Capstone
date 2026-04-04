@@ -1,0 +1,136 @@
+{
+  "probe_id": "11751970_a_at",
+  "gene_symbol": "ABCC13",
+  "rf_importance": 0.0053,
+  "selection_freq": 1.0,
+  "abs_fold_change": 2.304772499999999,
+  "score": 0.3604,
+  "probe_count": 1,
+  "probe_ids": "11751970_a_at",
+  "max_score": 0.3604,
+  "mean_abs_fold_change": 2.3048,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T00:07:27",
+  "interpretation": "ABCC13 is a member of the ATP-binding cassette (ABC) transporter family, which is involved in the transport of various molecules across cellular membranes. However, in humans, ABCC13 is classified as a pseudogene, meaning it does not produce a functional protein. The retrieved evidence primarily links ABCC13 to various cancers, such as colorectal and hepatocellular carcinoma, but does not provide a direct connection to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH). Therefore, the biological relevance of ABCC13 in the context of SONFH is weak, and its potential as a biomarker for early detection is limited. [INFERENCE] suggests that while ABCC13 may play a role in other diseases, its lack of functional protein expression in humans diminishes its clinical utility in SONFH.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "ABCC13, as a pseudogene in humans, lacks direct relevance to the pathophysiology of Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "ABCC13 \u2194 colorectal carcinoma. https://platform.opentargets.org/target/ENSG00000291052/associations",
+    "ABCC13 \u2194 hepatocellular carcinoma. https://platform.opentargets.org/target/ENSG00000291052/associations",
+    "ABCC13 \u2194 colorectal cancer. https://platform.opentargets.org/target/ENSG00000291052/associations",
+    "ABCC13 \u2194 breast cancer. https://platform.opentargets.org/target/ENSG00000291052/associations",
+    "ABCC13 \u2194 cancer. https://platform.opentargets.org/target/ENSG00000291052/associations",
+    "ABCC13. https://en.wikipedia.org/wiki/ABCC13",
+    "Transmembrane domain of ABC transporters. https://en.wikipedia.org/wiki/Transmembrane_domain_of_ABC_transporters",
+    "Research in dyslexia. https://en.wikipedia.org/wiki/Research_in_dyslexia"
+  ],
+  "token_usage": {
+    "prompt_tokens": 5542,
+    "completion_tokens": 239,
+    "total_tokens": 5781,
+    "estimated_cost_usd": 0.000975
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": []
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000291052::EFO_1001951",
+          "title": "ABCC13 \u2194 colorectal carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000291052/associations",
+          "text": "Disease: colorectal carcinoma\nDescription: A malignant epithelial neoplasm that arises from the colon or rectum and invades through the muscularis mucosa into the submucosa. The vast majority are adenocarcinomas.\nAssociation score: 0.011",
+          "cos_sim_score": 0.011087395640541052,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000291052::EFO_0000182",
+          "title": "ABCC13 \u2194 hepatocellular carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000291052/associations",
+          "text": "Disease: hepatocellular carcinoma\nDescription: A malignant tumor that arises from hepatocytes. Hepatocellular carcinoma is relatively rare in the United States but very common in all African countries south of the Sahara and in Southeast Asia. Most cases are seen in patients over the age of 50 years, but this tumor can also occur in younger individuals and even in children. Hepatocellular carcinoma is more common in males than females and is associated with hepatitis B, hepatitis C, chronic alcohol abuse and cirrhosis. Serum elevation of alpha-fetoprotein occurs in a large percentage of patients with hepatocellular carcinoma. Grossly, hepatocellular carcinoma may present as a single mass, as multiple nodules, or as diffuse liver involvement. Microscopically, there is a wide range of differentiation from tumor to tumor (well differentiated to poorly differentiated tumors). Hepatocellular carcinomas quickly metastasize to regional lymph nodes and lung. The overall median survival of untreated liver cell carcinoma is about 4 months. The most effective treatment of hepatocellular carcinoma is complete resection of the tumor. Lately, an increasing number of tumors have been treated with liver transplantation.\nAssociation score: 0.004",
+          "cos_sim_score": 0.004229636114724921,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000291052::MONDO_0005575",
+          "title": "ABCC13 \u2194 colorectal cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000291052/associations",
+          "text": "Disease: colorectal cancer\nDescription: A primary or metastatic malignant neoplasm that affects the colon or rectum. Representative examples include carcinoma, lymphoma, and sarcoma.\nAssociation score: 0.004",
+          "cos_sim_score": 0.0036957985468470188,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000291052::MONDO_0007254",
+          "title": "ABCC13 \u2194 breast cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000291052/associations",
+          "text": "Disease: breast cancer\nDescription: A primary or metastatic malignant neoplasm involving the breast. The vast majority of cases are carcinomas arising from the breast parenchyma or the nipple. Malignant breast neoplasms occur more frequently in females than in males.\nAssociation score: 0.004",
+          "cos_sim_score": 0.0036957985468470188,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000291052::MONDO_0004992",
+          "title": "ABCC13 \u2194 cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000291052/associations",
+          "text": "Disease: cancer\nDescription: A tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues. Malignant neoplasms often metastasize to distant anatomic sites and may recur after excision. The most common malignant neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), Hodgkin and non-Hodgkin lymphomas, leukemias, melanomas, and sarcomas.\nAssociation score: 0.003",
+          "cos_sim_score": 0.003326218692162316,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::ABCC13",
+          "title": "ABCC13",
+          "url": "https://en.wikipedia.org/wiki/ABCC13",
+          "text": "Putative ATP-binding cassette transporter sub-family C member 13 is a protein that is not present in humans. In humans, ABCC13 is a pseudogene.\n\nFunction\nThis gene is a member of the superfamily of genes encoding ATP-binding cassette (ABC) transporters. ABC proteins transport various molecules across extra- and intra-cellular membranes. ABC genes are divided into seven distinct subfamilies (ABC1, MDR/TAP, MRP, ALD, OABP, GCN20, and White). This family member is part of the MRP subfamily, which is involved in multi-drug resistance, but the human locus is now thought to be a pseudogene incapable of encoding a functional ABC protein. Alternative splicing results in multiple transcript variants; however, not all variants have been fully described.\n\nSee also\nATP-binding cassette transporter\nABCC13+protein,+human at the U.S. National Library of Medicine Medical Subject Headings (MeSH)\n\nReferences\nFurther reading\n\nThis article incorporates text from the United States National Library of Medicine, which is in the public domain.",
+          "cos_sim_score": 0.5112876296043396,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Transmembrane domain of ABC transporters",
+          "title": "Transmembrane domain of ABC transporters",
+          "url": "https://en.wikipedia.org/wiki/Transmembrane_domain_of_ABC_transporters",
+          "text": "ABC transporter transmembrane domain is the main transmembrane structural unit of ATP-binding cassette transporter proteins, consisting of six alpha helixes that traverse the plasma membrane. Many members of the ABC transporter family (Pfam PF00005) have two such regions.\nThis family appears to correspond to ABC1 by TCDB classification.\n\nSubfamilies\nSulphate ABC transporter permease protein 2 InterPro: IPR005667\nPhosphate transport system permease protein 2 InterPro: IPR005672\nPhosphonate uptake transporter InterPro: IPR005769\nNitrate transport permease InterPro: IPR005889\nNifC-like ABC-type porter InterPro: IPR006469\nPhosphate ABC transporter, permease protein PstC InterPro: IPR011864\nMolybdate ABC transporter, permease protein InterPro: IPR011867\nNickel ABC transporter, permease subunit NikB InterPro: IPR014156\nNickel ABC transporter, permease subunit NikC InterPro: IPR014157\nEctoine/hydroxyectoine ABC transporter, permease protein EhuD InterPro: IPR014341\nEctoine/hydroxyectoine ABC transporter, permease protein EhuC InterPro: IPR014342\n\nHuman proteins containing this domain\nABCB1;     ABCB10;    ABCB11;    ABCB4;     ABCB5;     ABCB6;     ABCB7;     ABCB8;\nABCB9;     ABCC1;     ABCC10;    ABCC11;    ABCC12;    ABCC13;    ABCC2;     ABCC3;\nABCC4;     ABCC5;     ABCC6;     ABCC8;     ABCC9;     CFTR;  \nTAP1;      TAP2;      TAPL;\n\n\n== References ==",
+          "cos_sim_score": 0.3468363583087921,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Research in dyslexia",
+          "title": "Research in dyslexia",
+          "url": "https://en.wikipedia.org/wiki/Research_in_dyslexia",
+          "text": "Rapid auditory processing theory\nThe rapid auditory processing theory is an alternative to the phonological deficit theory, which specifies that the primary deficit lies in the perception of short or rapidly varying sounds. Support for this theory arises from evidence that people with dyslexia show poor performance on a number of auditory tasks, including frequency discrimination and temporal order judgment.\n\nVisual theory\nThe visual theory represents a traditional perspective of dyslexia, as being the result of a visual impairment creating problems when processing information from letters and words from a written text. This includes visual processing problems such as binocular, poor vergence, and visual crowding. The visual theory does not deny the possibility of alternative causes of dyslexia.\n\nResearch\nVarious methods and models have been used to study dyslexia.\n\nGenetics\nHigh genetic concordance found in twin studies suggest a significant genetic influence on reading ability, although the degree depends on the definition of dyslexia. Linkage analysis and genetic association studies (typically quantitative trait locus association studies, which use microarrays to look at single nucleotide polymorphisms of multiple genes at once) have been used to identify candidate genes that may be implicated in dyslexia, which have then been confirmed in various knockout models.\nAs of 2018 the leading candidate genes included DYX1C1 on chromosome 15, DCDC2 and KIAA0319 on chromosome 6, and ROBO1 on chromosome 3. These genes appear to be involved in neuronal migration, which has led to a theory of impaired migration during development of the nervous system in humans as a cause for developmental dyslexia. Other genes associated with dyslexia have included RBFOX2, ABCC13, ZNF385D, COL4A2 and FGF18.\nHowever, these genes account for a small proportion of variance in reading disability, often less than 0.5%. Additionally, the findings are not always replicated nor consistently supported by genome-wide association studies. Therefore, no single gene is definitively implicated in dyslexia. A 2007 review reported that no specific cognitive processes are known to be influenced by the proposed genes and that scientists had begun to include neurophysiological (e.g., event-related potential) and imaging (e.g., functional MRI) procedures in their phenotype characterisation of people with dyslexia.\nIt is likely that multiple genes, as well as the environment, interact to influence reading ability. The Generalist Genes hypothesis proposes that many of the same genes are implicated within different aspects of a learning disability as well as between different learning disabilities. Indeed, there also appear to be a large genetic influence on other learning abilities, such as language skills. The Generalist Genes hypothesis supports the findings that many learning disabilities are comorbid, such as speech sound disorder, language impairment, and reading disability, although this is also influenced by diagnostic overlap.\n\nNeuroimaging\nMagnetic resonance imaging (MRI) and diffusion tensor imaging (DTI) are the main neuroimaging methods used to study brain structure in people with dyslexia, and functional magnetic resonance imaging (fMRI) along with EEG are used to study brain function.",
+          "cos_sim_score": 0.07551078498363495,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Research in dyslexia",
+          "title": "Research in dyslexia",
+          "url": "https://en.wikipedia.org/wiki/Research_in_dyslexia",
+          "text": "Theories\nTheories of the etiology of dyslexia have and are evolving with each new generation of dyslexia researchers, and the more recent theories of dyslexia tend to enhance one or more of the older theories as understanding of the nature of dyslexia evolves.\nTheories should not be viewed as competing, but as attempting to explain the underlying causes of a similar set of symptoms from a variety of research perspectives and background.\n\nCerebellar theory\nThe cerebellar theory of dyslexia asserts that the cause of dyslexia is an abnormality in the cerebellum (a region in the back of the brain), which in turn cause disruption in normal development, which causes issues with motor control, balance, working memory, attention, automatization, and ultimately, reading.  This theory was initially proposed by Harold Levinson and Jan Frank in 1973 and further developed by Levinson and other researchers. Angela Fawcett and Rod Nicolson later proposed that the cerebellum contributes to motor control during the articulation of speech, and that articulation problems can contribute to the phonological processing deficits that can cause dyslexia. They also reasoned that the cerebellum contributes to the automatisation of learned behaviors, which may include learning the grapheme-phoneme relationships when reading text.\nIn attempting to explain all the many known reading and non-reading dyslexic symptoms, therapies and theories as well as the presence of only cerebellar and related vestibular neurophysiological signs in dyslexics, the cerebellum was postulated to coordinate in time and space all signals (visual, auditory, tactile, proprioceptive, motion) entering and leaving the brain as well as signal interconnections. The quality and severity of the many symptoms characterizing each dyslexic was reasoned to depend on the diverse cerebral cortical and other brain processors receiving scrambled signals due to a cerebellar dysfunction. Helpful therapies were reasoned to enhance cerebellar fine tuning (e.g., the use of cerebellar-vestibular stabilizing antimotion sickness medications) and/or improve descrambling and other compensatory cognitive capabilities (e.g., tutoring, biofeedback). Most other theories equate the dyslexia disorder with impaired reading comprehension and so attempt to only explain the latter. Another cerebellar proposal indicated that articulation problems can contribute to the phonological deficits that can cause dyslexia. The cerebellum also contributes to the automatisation of learned behaviors, which can include learning the grapheme-phoneme relationships when reading texts.\nHowever, some have suggested that cerebellar dysfunction alone may not be a primary cause of dyslexia and that dysarticulation and phonological deficits appear unrelated.\n\nEvolutionary hypothesis\nThis theory considers that reading is an unnatural act carried out for a very brief period in human evolutionary history. It has only been in the last hundred years that reading a visual form of speech has been promoted as a major form of communication, and subsequently a lack of time for reading behaviors to evolve. In many societies around the world the majority of the population do not use the visual notation of speech as a form of communication and do not use reading skills, and therefore have no dyslexia.\nMany developmental dyslexics significantly compensate for their cerebellar-vestibula \ndetermined symptoms and signs over time and most normal young children evidence age-appropriate \"dyslexic-like\" symptoms and cerebellar-vestibular (CV) \"immaturities.\" It was thus hypothesized that genetic dyslexia may represent an ontogenetic recapitulation of a pre-reading state in phylogeny and that ontogeny extended beyond the embryo into childhood and occasionally beyond, thus perhaps explaining late and even late-late blooming. The development of reading and related writing and spelling functioning, as well as the corresponding ontogenetic CV-cerebral developmental lag hypothesis of dyslexia, is indirectly supported by studies suggesting that \"the cerebellum has enlarged between three and fourfold in [only] the past million years of evolution [together with a corresponding spurt of the cerebrum].\"",
+          "cos_sim_score": 0.04804778844118118,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Research in dyslexia",
+          "title": "Research in dyslexia",
+          "url": "https://en.wikipedia.org/wiki/Research_in_dyslexia",
+          "text": "Magnocellular theory\nThe magnocellular theory attempts to unify the cerebellar theory, the phonological theory, the rapid auditory processing theory, and the visual theory. The magnocellular theory proposes that the magnocellular dysfunction is not only restricted to the visual pathways but also includes auditory and tactile modalities.\nHistorically, studies of contrast sensitivity were held to be in conflict with magnocellular theory, but as of 2010, studies of visual evoked potentials have generally supported it. Subjects' age (10-46), differences in experimental design, small sample sizes (<10 dyslexic subjects in prominent studies), and the presence, absence, or failure to assess for comorbid ADHD might explain these contradictory findings.\n\nNaming speed deficit and double deficit theories\nThe speed with which an individual can engage in the rapid automatized naming of familiar objects or letters is a strong predictor of dyslexia. Slow naming speed can be identified as early as kindergarten and persists in adults with dyslexia.\nA deficit in naming speed is hypothesized to represent a deficit that is separate from phonological processing deficit. Wolf identified four types of readers: readers with no deficits, readers with phonological processing deficit, readers with naming speed deficit, and readers with double deficit (that is, problems both with phonological processing and naming speed). Students with double deficits are most likely to have some sort of severe reading impairment.\nDistinguishing among these deficits has important implications for instructional intervention. If students with double deficits receive instruction only in phonological processing, they are only receiving part of what they need.\n\nPerceptual visual-noise exclusion hypothesis\nThe concept of a perceptual noise exclusion deficit (impaired filtering of behaviorally irrelevant visual information in dyslexia or visual-noise) is an emerging hypothesis, supported by research showing that subjects with dyslexia experience difficulty in performing visual tasks (such as motion detection in the presence of perceptual distractions) but do not show the same impairment when the distracting factors are removed in an experimental setting. The researchers have analogized their findings concerning visual discrimination tasks to findings in other research related to auditory discrimination tasks. They assert that dyslexic symptoms arise because of an impaired ability to filter out both visual and auditory distractions, and to categorize information so as to distinguish the important sensory data from the irrelevant.\n\nPhonological deficit theory\nThe phonological deficit theory proposes that people with dyslexia have a specific sound manipulation impairment, which affects their auditory memory, word recall, and sound association skills when processing speech. The phonological theory explains a reading impairment when using an alphabetic writing system which requires learning the grapheme/phoneme correspondence, the relationship between the graphic letter symbols and speech sounds which they represent.\n\nRapid auditory processing theory\nThe rapid auditory processing theory is an alternative to the phonological deficit theory, which specifies that the primary deficit lies in the perception of short or rapidly varying sounds. Support for this theory arises from evidence that people with dyslexia show poor performance on a number of auditory tasks, including frequency discrimination and temporal order judgment.\n\nVisual theory\nThe visual theory represents a traditional perspective of dyslexia, as being the result of a visual impairment creating problems when processing information from letters and words from a written text. This includes visual processing problems such as binocular, poor vergence, and visual crowding. The visual theory does not deny the possibility of alternative causes of dyslexia.\n\nResearch\nVarious methods and models have been used to study dyslexia.",
+          "cos_sim_score": 0.030353303998708725,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

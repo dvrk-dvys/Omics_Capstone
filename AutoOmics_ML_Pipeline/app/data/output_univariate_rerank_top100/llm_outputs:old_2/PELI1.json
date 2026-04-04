@@ -1,0 +1,211 @@
+{
+  "probe_id": "11733060_a_at",
+  "gene_symbol": "PELI1",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.0523782800878923,
+  "abs_fold_change": 1.783,
+  "score": 1.7703,
+  "probe_count": 4,
+  "probe_ids": "11733060_a_at | 11744529_a_at | 11733061_s_at | 11745912_a_at",
+  "max_score": 1.7703,
+  "mean_abs_fold_change": 1.567,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T19:08:25",
+  "interpretation": "PELI1 encodes an E3 ubiquitin ligase that plays a critical role in regulating inflammatory responses and cell death pathways, including necroptosis and pyroptosis. These processes are particularly relevant in the context of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), where glucocorticoid treatment can lead to osteoblast apoptosis and necroptosis, contributing to bone necrosis. Although direct evidence linking PELI1 to SONFH is limited, its involvement in inflammatory signaling pathways suggests a potential role in the disease's pathogenesis. The evidence retrieved primarily supports PELI1's biological functions rather than a direct association with SONFH, leading to a moderate confidence in its relevance as a biomarker. Therefore, while PELI1 may not be a definitive early-detection biomarker for SONFH, its biological functions warrant further investigation in the context of this disease.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 2",
+  "evidence_confidence": "moderate",
+  "biomarker_potential": "moderate",
+  "relevance_summary": "PELI1 is implicated in inflammatory processes that may contribute to the pathogenesis of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH).",
+  "citations": [
+    "PELI1 (Q96FA3). https://www.uniprot.org/uniprotkb/Q96FA3",
+    "PELI1 \u2014 PELI1. https://platform.opentargets.org/target/ENSG00000197329",
+    "PELI1 \u2194 insomnia. https://platform.opentargets.org/target/ENSG00000197329/associations",
+    "PELI1 \u2194 intelligence. https://platform.opentargets.org/target/ENSG00000197329/associations",
+    "PELI1 \u2194 prostate carcinoma. https://platform.opentargets.org/target/ENSG00000197329/associations",
+    "PELI1 \u2194 atherosclerosis. https://platform.opentargets.org/target/ENSG00000197329/associations",
+    "PELI1 \u2014 pellino E3 ubiquitin protein ligase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TP53 \u2014 tumor protein p53 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "MIR21 \u2014 microRNA 21 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ATM \u2014 ATM serine/threonine kinase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Bioinformatics analysis of PANoptosis regulators in the diagnosis and subtyping of steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11062652/",
+    "Identification of hub genes and therapeutic drugs in osteonecrosis of the femoral head through integrated bioinformatics analysis and literature mining (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC10366127/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 9124,
+    "completion_tokens": 329,
+    "total_tokens": 9453,
+    "estimated_cost_usd": 0.001566
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q96FA3",
+          "title": "PELI1 (Q96FA3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q96FA3",
+          "text": "Protein: E3 ubiquitin-protein ligase pellino homolog 1\nFunction: E3 ubiquitin ligase catalyzing the covalent attachment of ubiquitin moieties onto substrate proteins (PubMed:12496252, PubMed:17675297, PubMed:29883609, PubMed:30952868). Involved in the TLR and IL-1 signaling pathways via interaction with the complex containing IRAK kinases and TRAF6 (PubMed:12496252, PubMed:17675297). Acts as a positive regulator of inflammatory response in microglia through activation of NF-kappa-B and MAP kinase (By similarity). Mediates 'Lys-63'-linked polyubiquitination of IRAK1 allowing subsequent NF-kappa-B activation (PubMed:12496252, PubMed:17675297). Conjugates 'Lys-63'-linked ubiquitin chains to the adapter protein ASC/PYCARD, which in turn is crucial for NLRP3 inflammasome activation (PubMed:34706239). Mediates 'Lys-48'-linked polyubiquitination of RIPK3 leading to its subsequent proteasome-dependent degradation; preferentially recognizes and mediates the degradation of the 'Thr-182' phosphorylated form of RIPK3 (PubMed:29883609). Negatively regulates necroptosis by reducing RIPK3 expression (PubMed:29883609). Mediates 'Lys-63'-linked ubiquitination of RIPK1 (PubMed:29883609). Following phosphorylation by ATM, catalyzes 'Lys-63'-linked ubiquitination of NBN, promoting DNA repair via homologous recombination (PubMed:30952868). Negatively regulates activation of the metabolic mTORC1 signaling pathway by mediating 'Lys-63'-linked ubiquitination of mTORC1-inhibitory protein TSC1 and thereby promoting TSC1/TSC2 complex stability (PubMed:33215753)",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000197329::function",
+          "title": "PELI1 \u2014 PELI1",
+          "url": "https://platform.opentargets.org/target/ENSG00000197329",
+          "text": "Function: E3 ubiquitin ligase catalyzing the covalent attachment of ubiquitin moieties onto substrate proteins (PubMed:12496252, PubMed:17675297, PubMed:29883609, PubMed:30952868). Involved in the TLR and IL-1 signaling pathways via interaction with the complex containing IRAK kinases and TRAF6 (PubMed:12496252, PubMed:17675297). Acts as a positive regulator of inflammatory response in microglia through activation of NF-kappa-B and MAP kinase (By similarity). Mediates 'Lys- 63'-linked polyubiquitination of IRAK1 allowing subsequent NF-kappa-B activation (PubMed:12496252, PubMed:17675297). Conjugates 'Lys-63'- linked ubiquitin chains to the adapter protein ASC/PYCARD, which in turn is crucial for NLRP3 inflammasome activation (PubMed:34706239). Mediates 'Lys-48'-linked polyubiquitination of RIPK3 leading to its subsequent proteasome-dependent degradation; preferentially recognizes and mediates the degradation of the 'Thr-182' phosphorylated form of RIPK3 (PubMed:29883609). Negatively regulates necroptosis by reducing RIPK3 expression (PubMed:29883609). Mediates 'Lys-63'-linked ubiquitination of RIPK1 (PubMed:29883609). Following phosphorylation by ATM, catalyzes 'Lys-63'-linked ubiquitination of NBN, promoting DNA repair via homologous recombination (PubMed:30952868). Negatively regulates activation of the metabolic mTORC1 signaling pathway by mediating 'Lys-63'-linked ubiquitination of mTORC1-inhibitory protein TSC1 and thereby promoting TSC1/TSC2 complex stability (PubMed:33215753).",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197329::EFO_0004698",
+          "title": "PELI1 \u2194 insomnia",
+          "url": "https://platform.opentargets.org/target/ENSG00000197329/associations",
+          "text": "Disease: insomnia\nDescription: Disorders characterized by impairment of the ability to initiate or maintain sleep. This may occur as a primary disorder or in association with another medical or psychiatric condition\nAssociation score: 0.327",
+          "cos_sim_score": 0.32719187989665066,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197329::EFO_0004337",
+          "title": "PELI1 \u2194 intelligence",
+          "url": "https://platform.opentargets.org/target/ENSG00000197329/associations",
+          "text": "Disease: intelligence\nDescription: The ability to learn and to deal with new situations and to deal effectively with tasks involving abstractions.\nAssociation score: 0.324",
+          "cos_sim_score": 0.3237698710270783,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197329::EFO_0001663",
+          "title": "PELI1 \u2194 prostate carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000197329/associations",
+          "text": "Disease: prostate carcinoma\nDescription: A carcinoma that arises from epithelial cells of the prostate gland.\nAssociation score: 0.311",
+          "cos_sim_score": 0.31128763845960855,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000197329::EFO_0003914",
+          "title": "PELI1 \u2194 atherosclerosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000197329/associations",
+          "text": "Disease: atherosclerosis\nDescription: A disease characterized by the build-up of fatty material and calcium deposition in the arterial wall resulting in partial or complete occlusion of the arterial lumen.\nAssociation score: 0.284",
+          "cos_sim_score": 0.2842007660913957,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "PELI1 \u2014 pellino E3 ubiquitin protein ligase 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: PELI1\nGene name: pellino E3 ubiquitin protein ligase 1\nOrganism: Homo sapiens\nGene summary: Enables ubiquitin-ubiquitin ligase activity. Involved in several processes, including negative regulation of TORC1 signaling; negative regulation of necroptotic process; and protein polyubiquitination. Is active in site of double-strand break. Implicated in colorectal cancer. [provided by Alliance of Genome Resources, Jul 2025]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "PELI1",
+          "aliases": "",
+          "gene_description": "pellino E3 ubiquitin protein ligase 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TP53 \u2014 tumor protein p53",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TP53\nGene name: tumor protein p53\nAliases / synonyms: BCC7, BMFS5, LFS1, P53, TRP53\nOrganism: Homo sapiens\nGene summary: This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TP53",
+          "aliases": "BCC7, BMFS5, LFS1, P53, TRP53",
+          "gene_description": "tumor protein p53"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "MIR21 \u2014 microRNA 21",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: MIR21\nGene name: microRNA 21\nAliases / synonyms: MIRN21, hsa-mir-21, miR-21, miRNA21\nOrganism: Homo sapiens\nGene summary: microRNAs (miRNAs) are short (20-24 nt) non-coding RNAs that are involved in post-transcriptional regulation of gene expression in multicellular organisms by affecting both the stability and translation of mRNAs. miRNAs are transcribed by RNA polymerase II as part of capped and polyadenylated primary transcripts (pri-miRNAs) that can be either protein-coding or non-coding. The primary transcript is cleaved by the Drosha ribonuclease III enzyme to produce an approximately 70-nt stem-loop precursor miRNA (pre-miRNA), which is further cleaved by the cytoplasmic Dicer ribonuclease to generate the mature miRNA and antisense miRNA star (miRNA*) products. The mature miRNA is incorporated into a RNA-induced silencing complex (RISC), which recognizes target mRNAs through imperfect base pairing with...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "MIR21",
+          "aliases": "MIRN21, hsa-mir-21, miR-21, miRNA21",
+          "gene_description": "microRNA 21"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ATM \u2014 ATM serine/threonine kinase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ATM\nGene name: ATM serine/threonine kinase\nAliases / synonyms: AT1, ATA, ATC, ATD, ATDC, ATE, TEL1, TELO1\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene belongs to the PI3/PI4-kinase family. This protein is an important cell cycle checkpoint kinase that phosphorylates; thus, it functions as a regulator of a wide variety of downstream proteins, including tumor suppressor proteins p53 and BRCA1, checkpoint kinase CHK2, checkpoint proteins RAD17 and RAD9, and DNA repair protein NBS1. This protein and the closely related kinase ATR are thought to be master controllers of cell cycle checkpoint signaling pathways that are required for cell response to DNA damage and for genome stability. Mutations in this gene are associated with ataxia telangiectasia, an autosomal recessive disorder. [provided by RefSeq, Aug 2010]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ATM",
+          "aliases": "AT1, ATA, ATC, ATD, ATDC, ATE, TEL1, TELO1",
+          "gene_description": "ATM serine/threonine kinase"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::11062652",
+          "title": "Bioinformatics analysis of PANoptosis regulators in the diagnosis and subtyping of steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11062652/",
+          "text": "our research. Unlike the commonly seen m6A-related factors in previous studies, we focused on exploring PANoptosis regulators. Through WGCNA, we revealed the associations between these factors and steroid-induced osteonecrosis of the femoral head (SONFH). This method enabled us not only to construct a co-expression network among genes but also to discover novel genes related to SONFH. Therefore, we suggest that QKI may be involved in the abnormal immune microenvironment in SONFH, which in turn affects the activity of osteoblasts in the femoral head, leading to or worsening the collapse of the femoral head. Prostaglandin endoperoxide synthase 2 (PTGS2), also known as COX-2, encodes a key enzyme in the biosynthesis of prostaglandins. It has dual roles as a dioxygenase and a peroxidase. Jiang et al[28] showed that insulin-like growth factor 1 (IGF-1) upregulates the expression of COX-2 through the PI3K/AKT pathway, which reverses the inhibitory effect of dexamethasone on bone morphogenetic protein 9 (BMP9)-induced osteogenic differentiation of mouse embryonic fibroblasts. Therefore, PTGS2 may be a potential therapeutic target for SONFH patients due to its role in prostaglandin biosynthesis and inflammation. TCF3 belongs to the basic helix-loop-helix (bHLH) protein family.[29] TCF3 proteins form heterodimers or homodimers with other bHLH proteins to perform tissue- or cell-type-specific functions.[30] Liu et al[31] found that TCF3 has been proved to be a positive regulator of osteogenic differentiation. As a key transcription factor of the classical Wnt pathway, it promotes osteogenic differentiation in vitro and ectopic bone formation in vivo. In addition, their results showed that miR-17 could modulate the opposite effects of the classical Wnt signaling pathway on osteogenic differentiation by directly targeting TCF3 in different microenvironments. Therefore, TCF3 may be a promising target for further research on the treatment of SONFH. Zinc finger protein 428 (ZNF428) is a protein-coding gene whose biological function in orthopedic-related diseases is rarely reported. In this study, we screened ZNF428 and found its expression to be dysregulated in SONFH. Further exploration of its biological significance in SONFH could provide insights into the pathogenesis of SONFH and potential therapeutic targets.",
+          "cos_sim_score": 0.6009982824325562,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11062652",
+          "title": "Bioinformatics analysis of PANoptosis regulators in the diagnosis and subtyping of steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11062652/",
+          "text": "1. Introduction\nSteroid-induced osteonecrosis of the femoral head (SONFH) is a condition that disrupts blood supply to the femoral head, trabecular bone necrosis, and bone marrow in the femoral head and is a result of long-term or high-dose use of glucocorticoids.[1,2] Currently, the pathogenesis of SONFH is not fully understood; it may be influenced by multiple interrelated factors.[3] Bone metabolism is a complex series of biological processes that involve the synthesis and absorption of bone matrix. Abnormal metabolism can cause bone loss, trabecular collapse, and ultimately osteonecrosis. The stability of bone metabolism depends on the dynamic balance between osteoblasts involved in bone formation and osteoclasts involved in bone resorption, which is strictly regulated by multiple systems of the body.[4,5] Pyroptosis, apoptosis, and necroptosis are the most genetically defined programmed cell death pathways and are closely related to homeostasis and disease.[6] In contrast, PANoptosis is a novel inflammatory programmed cell death pathway regulated by the PANoptosome complex, with the key features of pyroptosis, apoptosis, and necroptosis. Moreover, PANoptosis cannot be characterized by any one of the 3 death modes alone but rather by the interaction among them.[7,8]\nCurrent research shows that PANoptosis is involved in the occurrence and development of many diseases, including aseptic inflammation, infection, and cancer.[9] Studies have shown that excessive use of glucocorticoids can lead to bone loss. Osteoblast apoptosis and necroptosis are closely involved in the process.[10,11] In addition, excessive use of glucocorticoids can render osteoblasts more susceptible to oxidative stress stimulation and upregulate the expression of inflammasomes, thereby inducing pyroptosis in osteoblasts and leading to osteogenic dysfunction.[12] These studies suggest that PANoptosis may be closely involved in systemic bone metabolism disorders and osteoporosis induced by excessive use of glucocorticoids, eventually leading to micro-fractures of the femoral head under stress when the patient is weight-bearing and inducing ONFH.[13,14] However, the molecular mechanism of SONFH and PANoptosis remains unclear, and the mechanism by which glucocorticoids affect bone repair and bone homeostasis through PANoptosis requires further investigation. To date, no bioinformatics study has been found on the relationship between PANoptosis and SONFH. Nevertheless, high-throughput sequencing technology is widely used to understand and obtain information about the molecular mechanisms involved in the pathological processes of disease. Li et al[15] collected peripheral serum samples of SONFH patients and control subjects for omics analysis and uploaded the data to the GEO database. This provided data support for the analysis of molecular characteristics related to SONFH. Therefore, in this study, the key genes related to PANoptosis in SONFH were screened using bioinformatics, immune infiltration analysis, and machine learning models, and the diagnostic value of these genes was explored. We hope our study results will reveal possible molecular mechanisms in the pathological process of SONFH and provide potential biomarkers for further investigation of SONFH.\n2. Materials and methods\n2.1. Data source and acquisition of differentially expressed PANoptosis-related genes\nEthical approval was not necessary as the study used publicly available data from the GEO database (http://www.ncbi.nlm.nih.gov/geo). GSE123568 was downloaded from the GEO database. The dataset includes 10 control subjects and 30 patients with SONFH, and includes 20 male cases and 20 female cases. Sample tissue was derived from peripheral blood mononuclear cells. After annotation, the original gene expression profile of GSE123568 was normalized and corrected by the \u201climma\u201d package. PANoptosis-related genes (PRGs) were obtained from a published article,[16] which include NLRP3, CASP8, PARP1, TAB3, TNFAIP3, TAB2, RIPK1, ZBP1, IRF1, PSTPIP2, AIM2, CASP7, RIPK3, GSDMD, MLKL, CASP1, FADD, TRADD, and CASP6.",
+          "cos_sim_score": 0.5425121784210205,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10366127",
+          "title": "Identification of hub genes and therapeutic drugs in osteonecrosis of the femoral head through integrated bioinformatics analysis and literature mining",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10366127/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a multifactorial disease with an unknown etiology, characterized by loss of integrity of the subchondral bone1. It mainly affects men aged 30\u201350 years and involves more and more youngers1,2. Despite the identification of corticosteroid use, alcohol, sickle-cell disease, and trauma as the major risk factors for ONFH, its pathogenesis remains incompletely understood2,3. Surgery is the only effective way to treat ONFH at present4. In the USA, approximately 10% of hip replacements are due to ONFH, and in the UK, ONFH is the third most common indication for total hip replacements in people under 50, which causes a heavy socioeconomic burden1,4. Effective drug therapies have not been established5. Therefore, identifying novel biomarkers and therapeutic drugs involved in the ONFH is of great significance in exploring efficient treatment strategies.\nOver the past two decades, few researchers have focused on exploring the mechanism of ONFH at the gene level6. Abnormalities in some genes, such as plasminogen-activating inhibitor-1 and nitric oxide synthase 3, have been proven to weaken the osteogenic differentiation capacity of bone marrow mesenchymal stem cells or disrupt angiogenesis, leading to the collapse of the femoral head surface7,8. However, the specific molecular mechanism of ONFH has not yet been clarified, and drug discovery has had little success. Recently, gene chips and high-throughput sequencing technologies have been widely used in the screening of disease-causing genes and have achieved practical and reliable results9. A new drug prediction method, drug-gene-disease triangulation based on literature mining, has been confirmed to be robust and reliable for identifying new drug candidates10.\nIn this study, we analyzed two gene expression profiles (Table 1) extracted from the National Center for Biotechnology Information Gene Expression Omnibus (GEO) database, which is a free global database of sequencing results. DEGs were identified by using the online tool GEO2R. Subsequently, the function of DEGs was determined by the Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analysis. With the help of Cytoscape, ten hub genes were selected and then validated by ROC analysis. Finally, the targeted drugs for ONFH were identified through the Drug-Gene Interaction Database (DGIdb) and cross-validated by integrated literature mining. Our study figured out the drug-gene-disease correlation to generate new insights into the prevention and treatment of ONFH.Table 1Detailed information on the GEO microarray profiles.ProfileOrganismSample sourceTechnology typeCasesControlsPlatformGSE123568Homo sapiensPeripheral serumIn situ oligonucleotide3010GPL15207GSE74089Homo sapiensHip cartilageIn situ oligonucleotide44GPL13497\nTable 1\nDetailed information on the GEO microarray profiles.\nResults\nIdentification of DEGs in ONFH",
+          "cos_sim_score": 0.518359899520874,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::10366127",
+          "title": "Identification of hub genes and therapeutic drugs in osteonecrosis of the femoral head through integrated bioinformatics analysis and literature mining",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10366127/",
+          "text": "In addition to the pharmaceuticals identified in this study, those mentioned in the most recent expert consensus also warrant consideration, including bisphosphonates, anticoagulants, vasodilators, and lipid lowering agents4. Briefly, bisphosphonates and anticoagulants are considered to be helpful for early ONFH, and clinicians can consider using them as appropriate. The evidence to support the use of statins or vasodilators in the treatment of ONFH is very low and their use cannot be recommended4,72\u201374.\nBisphosphonates not only cause osteoclast apoptosis but also prevent osteocyte and osteoblast apoptosis75\u201377. We found that three hub genes (PTGS2, MCL-1, and RUNX2) may play a mediating role. Risedronate was reported to enhance bone formation via the up-regulation of COX-2 expression78. Zoledronic acid induces apoptosis in osteoclast precursors and mature osteoclast-like cells by triggering Mcl-1 down-regulation79. RANKL increases the level of Mcl-1 in osteoclasts and significantly attenuates the ability of both clodronate and alendronate to induce osteoclast apoptosis80. Various bisphosphonates have been shown to promote osteogenic differentiation by up-regulating the expression of RUNX281\u201384. The use of bisphosphonates for treating ONFH is highly anticipated. Nevertheless, the clinical efficacy of bisphosphonates remains a topic of debate. While numerous reports indicate that bisphosphonates alleviate pain, enhance ambulation, and delay joint collapse in patients with ONFH73,85\u201393, there is also a substantial amount of negative evidence, particularly from high-quality meta-analyses of randomized control trials94\u201398. Serious side effects of bisphosphonates, such as atypical femoral fractures99,100 and osteonecrosis of the jaw100\u2013103, are also of great concern. We recommend that caution be taken with the use of bisphosphonates to treat ONFH, as mentioned in guidelines, more high-quality random clinical trials are needed to prove its efficacy3,4.\nThe main mechanism of anticoagulant treatment for ONFH is the alleviation of hypercoagulability104. Hypercoagulability has been demonstrated to not only induce primary ONFH3,104,105, but also ONFH that is secondary to certain diseases, such as thrombophilia106,107 and antiphospholipid syndrome23,108. Anticoagulants have been proven to have significant protective effects on ONFH caused by different causes105,109\u2013114. The results of literature mining suggest that anticoagulants may also possess other potential mechanisms for protecting against ONFH. Specifically, anticoagulant treatment has been found to have pro-osteogenic and pro-angiogenic effects, with the hub gene RUNX2 potentially playing a role in mediating this process115,116. These findings are conducive to further reveal the molecular mechanism of anticoagulant treatment of ONFH.\nWe do have some weak findings. CD68 is a macrophages-specific immunomarker that regulates osteoclast activity and is engaged in macrophage response and antigen presentation but does not participate in inflammation117. CD68 was previously found to be significantly elevated in synovial tissue near the necrotic femoral head118,119. For the first time, we discovered that CD68 is down-regulated in cartilage and peripheral blood.\u00a0This unusual finding deserves more attention in future studies. LRRK2 is a functional protein kinase and guanosine diphosphatase/guanosine triphosphate-binding protein that is widely expressed in multiple tissues. Our analysis shows that LRRK2 ranks second among 10 hub genes and participates in almost all functional enrichment terms. However, a previous study demonstrated that the specific inhibition of LRRK2 does not result in changes in bone mass120. The precise role of LRRK2 in ONFH warrants additional investigation. TIMP2 is a kind of endogenous tissue inhibitor of matrix metalloproteases (MMPs). Although TIMP2 expression is associated with MMPs in bone remodeling, its effect on bone metabolism appears to be non-essential121. More studies are required to elucidate the mechanism.",
+          "cos_sim_score": 0.4260574281215668,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::11062652",
+          "title": "Bioinformatics analysis of PANoptosis regulators in the diagnosis and subtyping of steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11062652/",
+          "text": "3.3. Identification of PANoptosis clusters in SONFH\nWe classified the peripheral blood samples in the GSE123568 dataset according to the DEGs obtained. The consensus clustering matrix showed improved stability of the number of clusters, higher consistency scores for each subtype, and clearer discrimination when the k value was set to 2 (Fig. 3A\u2013D). Principal component analysis scatter plots also revealed significant differences between the 2 clusters (Fig. 3E). Therefore, we divided the 30 SONFH patients into 2 clusters: C1 (n\u2005=\u200518) and C2 (n\u2005=\u200512).\nFigure 3.\nIdentification of PANoptosis clusters in steroid-induced osteonecrosis of the femoral head (SONFH). (A) Cumulative distribution function showed a consistency distribution between K\u2005=\u20050.2\u20130.9; (B) Consensus clustering scores. (C) When K\u2005=\u20052, the discrimination of the consensus clustering matrix was more evident; (D) when K\u2005=\u20052, the consistency score of each cluster was the highest. \u00a9 PCA scatter plot of cluster classification.\n3.4. Differentially expressed PRGs and differential analysis of immune cells between PANoptosis clusters\nWe evaluated the expression of differentially expressed PRGs in each cluster to further explore the molecular features between clusters. Figure 4A and B show the expression levels of differentially expressed PRGs in C1 and C2. C1 exhibited significantly higher expression levels of IRF1, MLKL, CASP1, CASP8, NLRP3, TAB3, and TNFAIP3, as shown in Figure 4A and B. Subsequently, immune infiltration analysis of samples was performed for each cluster. Results showed differences in the immune microenvironment between clusters. The proportion of plasma cells and M1 macrophages in C1 was relatively high. Meanwhile, the proportion of CD8\u2005+\u2005T cells and Tregs was relatively high in C2 (Fig. 4C and D).\nFigure 4.\nDifferentially expressed PRGs and differential analysis of immune cells between PANoptosis clusters. (A) Boxplot of differentially expressed PRGs expression in 2 PANoptosis clusters. (B) Heatmap of differentially expressed PRGs expression in 2 PANoptosis clusters. (C) Relative abundances of 22 infiltrated immune cells in 2 PANoptosis clusters. (D) Boxplot of immune infiltration differences in 2 PANoptosis clusters. (* P\u2005<\u2005.05, ** P\u2005<\u2005.01, *** P\u2005<\u2005.001).\n3.5. Gene module filtration and co-expression network construction\nTo identify key gene expression modules related to SONFH, we utilized the WGCNA algorithm to establish modules and co-expression networks between control subjects and SONFH patients. Next, we analyzed the top 25% of genes with the highest variation in the GSE123568 dataset. When the soft threshold was set to 12 and the scale-free fit index was equal to 0.9, a co-expressed network was built (Fig. 5A). We used the dynamic cutting algorithm to identify 3 different co-expression modules with different colors and generated a heatmap of the TOM (Fig. 5B\u2013D). Then, we analyzed the relationship between the genes in the 3 modules and the clinical features of patients (control and SONFH). Finally, we found that the blue module, consisting of 439 genes, was most closely related to SONFH (Fig. 5E). In addition, we observed that the blue module memberships were positively correlated with gene significance (Fig. 5F).\nFigure 5.\nCo-expression network of differentially expressed PRGs in SONFH. (A) Determination of the optimal soft threshold. (B) Clustering dendrogram of genes. (C) Module eigengenes dendrogram. (D) Correlation heatmap between 3 modules. (E) Correlation analysis between module eigengenes and clinical status. (F) Scatter plot between the blue module membership and SONFH genes significance.",
+          "cos_sim_score": 0.3976103663444519,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

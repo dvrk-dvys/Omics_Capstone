@@ -1,0 +1,183 @@
+{
+  "probe_id": "11716904_s_at",
+  "gene_symbol": "TGOLN2",
+  "score": 1.0,
+  "SD_TestAUC": 0.0811440825933579,
+  "abs_fold_change": 0.8256,
+  "probe_count": 2,
+  "probe_ids": "11716904_s_at | 11716903_a_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 0.8848,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T22:32:31",
+  "interpretation": "TGOLN2 encodes a protein that is integral to the trans-Golgi network, which is crucial for sorting and trafficking proteins within cells. This gene's function in membrane traffic may influence the secretion of factors involved in bone metabolism and repair, potentially linking it to conditions like osteoporosis. While TGOLN2 has been associated with osteoporosis, the direct evidence connecting it to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) is limited. The retrieved evidence primarily suggests a role in general bone health rather than a specific mechanism in SONFH. Therefore, while TGOLN2 may have some relevance as a biomarker, its clinical utility for early detection of SONFH remains uncertain and weakly supported.",
+  "evidence_relation": "indirect",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "TGOLN2 may play a role in bone metabolism, but its direct connection to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH) is not well established.",
+  "citations": [
+    "TGOLN2 (O43493). https://www.uniprot.org/uniprotkb/O43493",
+    "TGOLN2 (O43493-5). https://www.uniprot.org/uniprotkb/O43493-5",
+    "TGOLN2 (O43493-3). https://www.uniprot.org/uniprotkb/O43493-3",
+    "TGOLN2 \u2014 TGOLN2. https://platform.opentargets.org/target/ENSG00000152291",
+    "TGOLN2 \u2194 postmenopausal osteoporosis. https://platform.opentargets.org/target/ENSG00000152291/associations",
+    "TGOLN2 \u2194 osteoporosis. https://platform.opentargets.org/target/ENSG00000152291/associations",
+    "TGOLN2 \u2194 peripheral vascular disease. https://platform.opentargets.org/target/ENSG00000152291/associations",
+    "TGOLN2 \u2194 12q14 microdeletion syndrome. https://platform.opentargets.org/target/ENSG00000152291/associations",
+    "TGOLN2 \u2014 trans-golgi network protein 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "EGFR \u2014 epidermal growth factor receptor (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TGFB1 \u2014 transforming growth factor beta 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ERBB2 \u2014 erb-b2 receptor tyrosine kinase 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "APP \u2014 amyloid beta precursor protein (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4900,
+    "completion_tokens": 277,
+    "total_tokens": 5177,
+    "estimated_cost_usd": 0.000901
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::O43493",
+          "title": "TGOLN2 (O43493)",
+          "url": "https://www.uniprot.org/uniprotkb/O43493",
+          "text": "Protein: Trans-Golgi network integral membrane protein 2\nFunction: May be involved in regulating membrane traffic to and from trans-Golgi network",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::O43493-5",
+          "title": "TGOLN2 (O43493-5)",
+          "url": "https://www.uniprot.org/uniprotkb/O43493-5",
+          "text": "Protein: Isoform 5 of Trans-Golgi network integral membrane protein 2",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::O43493-3",
+          "title": "TGOLN2 (O43493-3)",
+          "url": "https://www.uniprot.org/uniprotkb/O43493-3",
+          "text": "Protein: Isoform TGN48 of Trans-Golgi network integral membrane protein 2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000152291::function",
+          "title": "TGOLN2 \u2014 TGOLN2",
+          "url": "https://platform.opentargets.org/target/ENSG00000152291",
+          "text": "Function: May be involved in regulating membrane traffic to and from trans-Golgi network.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000152291::EFO_0003854",
+          "title": "TGOLN2 \u2194 postmenopausal osteoporosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000152291/associations",
+          "text": "Disease: postmenopausal osteoporosis\nDescription: Metabolic disorder associated with fractures of the femoral neck, vertebrae, and distal forearm. It occurs commonly in women within 15-20 years after menopause, and is caused by factors associated with menopause including estrogen deficiency.\nAssociation score: 0.055",
+          "cos_sim_score": 0.05491956640614669,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000152291::EFO_0003882",
+          "title": "TGOLN2 \u2194 osteoporosis",
+          "url": "https://platform.opentargets.org/target/ENSG00000152291/associations",
+          "text": "Disease: osteoporosis\nDescription: A condition of reduced bone mass, with decreased cortical thickness and a decrease in the number and size of the trabeculae of cancellous bone (but normal chemical composition), resulting in increased fracture incidence. Osteoporosis is classified as primary (Type 1, postmenopausal osteoporosis; Type 2, age-associated osteoporosis; and idiopathic, which can affect juveniles, premenopausal women, and middle-aged men) and secondary osteoporosis (which results from an identifiable cause of bone mass loss).\nAssociation score: 0.055",
+          "cos_sim_score": 0.05491956640614669,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000152291::EFO_0003875",
+          "title": "TGOLN2 \u2194 peripheral vascular disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000152291/associations",
+          "text": "Disease: peripheral vascular disease\nDescription: Pathological processes involving any one of the BLOOD VESSELS in the vasculature outside the HEART.\nAssociation score: 0.046",
+          "cos_sim_score": 0.04622418032313512,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000152291::MONDO_0019784",
+          "title": "TGOLN2 \u2194 12q14 microdeletion syndrome",
+          "url": "https://platform.opentargets.org/target/ENSG00000152291/associations",
+          "text": "Disease: 12q14 microdeletion syndrome\nDescription: 12q14 microdeletion syndrome is characterized by mild intellectual deficit, failure to thrive, short stature and osteopoikilosis. It has been described in four unrelated patients. The syndrome appears to be caused by a heterozygous deletion at chromosome region 12q14, which was detected in three of the four patients. The deleted region contains the LEMD3 gene: mutations in this gene have already been implicated in osteopoikilosis.\nAssociation score: 0.044",
+          "cos_sim_score": 0.04406870187260384,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "TGOLN2 \u2014 trans-golgi network protein 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TGOLN2\nGene name: trans-golgi network protein 2\nAliases / synonyms: TGN38, TGN46, TGN48, TGN51, TTGN2, hTGN46, hTGN48, hTGN51\nOrganism: Homo sapiens\nGene summary: This gene encodes a type I integral membrane protein that is localized to the trans-Golgi network, a major sorting station for secretory and membrane proteins. The encoded protein cycles between early endosomes and the trans-Golgi network, and may play a role in exocytic vesicle formation. Alternatively spliced transcript variants encoding multiple isoforms have been observed for this gene. [provided by RefSeq, Oct 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TGOLN2",
+          "aliases": "TGN38, TGN46, TGN48, TGN51, TTGN2, hTGN46, hTGN48, hTGN51",
+          "gene_description": "trans-golgi network protein 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "EGFR \u2014 epidermal growth factor receptor",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: EGFR\nGene name: epidermal growth factor receptor\nAliases / synonyms: ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "EGFR",
+          "aliases": "ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA",
+          "gene_description": "epidermal growth factor receptor"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TGFB1 \u2014 transforming growth factor beta 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TGFB1\nGene name: transforming growth factor beta 1\nAliases / synonyms: CAEND1, CED, DPD1, IBDIMDE, LAP, TGF-beta1, TGFB, TGFbeta\nOrganism: Homo sapiens\nGene summary: This gene encodes a secreted ligand of the TGF-beta (transforming growth factor-beta) superfamily of proteins. Ligands of this family bind various TGF-beta receptors leading to recruitment and activation of SMAD family transcription factors that regulate gene expression. The encoded preproprotein is proteolytically processed to generate a latency-associated peptide (LAP) and a mature peptide, and is found in either a latent form composed of a mature peptide homodimer, a LAP homodimer, and a latent TGF-beta binding protein, or in an active form consisting solely of the mature peptide homodimer. The mature peptide may also form heterodimers with other TGFB family members. This encoded protein regulates cell proliferation, differentiation and growth, and can modulate expression and activation...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TGFB1",
+          "aliases": "CAEND1, CED, DPD1, IBDIMDE, LAP, TGF-beta1, TGFB, TGFbeta",
+          "gene_description": "transforming growth factor beta 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "ERBB2 \u2014 erb-b2 receptor tyrosine kinase 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: ERBB2\nGene name: erb-b2 receptor tyrosine kinase 2\nAliases / synonyms: CD340, HER-2, HER-2/neu, HER2, MLN 19, MLN-19, NEU, NGL, TKR1, VSCN2, c-ERB-2, c-ERB2, p185(erbB2)\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the epidermal growth factor (EGF) receptor family of receptor tyrosine kinases. This protein has no ligand binding domain of its own and therefore cannot bind growth factors. However, it does bind tightly to other ligand-bound EGF receptor family members to form a heterodimer, stabilizing ligand binding and enhancing kinase-mediated activation of downstream signalling pathways, such as those involving mitogen-activated protein kinase and phosphatidylinositol-3 kinase. Allelic variations at amino acid positions 654 and 655 of isoform a (positions 624 and 625 of isoform b) have been reported, with the most common allele, Ile654/Ile655, shown here. Amplification and/or overexpression of this gene has been reported in numerous cancers, including breast and ovarian...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "ERBB2",
+          "aliases": "CD340, HER-2, HER-2/neu, HER2, MLN 19, MLN-19, NEU, NGL, TKR1, VSCN2, c-ERB-2, c-ERB2, p185(erbB2)",
+          "gene_description": "erb-b2 receptor tyrosine kinase 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "APP \u2014 amyloid beta precursor protein",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: APP\nGene name: amyloid beta precursor protein\nAliases / synonyms: AAA, ABETA, ABPP, AD1, APPI, CTFgamma, CVAP, PN-II, PN2, alpha-sAPP, preA4\nOrganism: Homo sapiens\nGene summary: This gene encodes a cell surface receptor and transmembrane precursor protein that is cleaved by secretases to form a number of peptides. Some of these peptides are secreted and can bind to the acetyltransferase complex APBB1/TIP60 to promote transcriptional activation, while others form the protein basis of the amyloid plaques found in the brains of patients with Alzheimer disease. In addition, two of the peptides are antimicrobial peptides, having been shown to have bacteriocidal and antifungal activities. Mutations in this gene have been implicated in autosomal dominant Alzheimer disease and cerebroarterial amyloidosis (cerebral amyloid angiopathy). Multiple transcript variants encoding several different isoforms have been found for this gene. [provided by RefSeq, Aug 2014]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "APP",
+          "aliases": "AAA, ABETA, ABPP, AD1, APPI, CTFgamma, CVAP, PN-II, PN2, alpha-sAPP, preA4",
+          "gene_description": "amyloid beta precursor protein"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

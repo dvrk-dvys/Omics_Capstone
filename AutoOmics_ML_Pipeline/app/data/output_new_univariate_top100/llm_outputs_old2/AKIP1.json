@@ -1,0 +1,183 @@
+{
+  "probe_id": "11756746_s_at",
+  "gene_symbol": "AKIP1",
+  "score": 1.0,
+  "SD_TestAUC": 0.1047565601757847,
+  "abs_fold_change": 1.1032,
+  "probe_count": 1,
+  "probe_ids": "11756746_s_at",
+  "max_score": 1.0,
+  "mean_abs_fold_change": 1.1032,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T18:27:37",
+  "interpretation": "AKIP1 (A-kinase-interacting protein 1) is involved in enhancing the transcriptional activity of NF-kappa-B, a key regulator of inflammation and cell survival. This gene's function in the cAMP-dependent protein kinase signaling pathway suggests a role in modulating inflammatory responses, which are critical in the pathogenesis of Steroid-Induced Osteonecrosis of the Femoral Head (SONFH). However, the evidence linking AKIP1 directly to SONFH is limited, with no specific studies confirming its role as a biomarker in this context. Therefore, while AKIP1 may be biologically relevant due to its involvement in inflammatory pathways, its clinical utility as an early-detection biomarker for SONFH remains uncertain and is primarily based on inference rather than direct evidence.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "AKIP1 may play a role in the inflammatory processes associated with Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), but lacks direct evidence as a biomarker for this condition.",
+  "citations": [
+    "AKIP1 (Q9NQ31). https://www.uniprot.org/uniprotkb/Q9NQ31",
+    "AKIP1 (Q9NQ31-3). https://www.uniprot.org/uniprotkb/Q9NQ31-3",
+    "AKIP1 (Q9NQ31-2). https://www.uniprot.org/uniprotkb/Q9NQ31-2",
+    "AKIP1 \u2014 AKIP1. https://platform.opentargets.org/target/ENSG00000166452",
+    "AKIP1 \u2194 hyperpituitarism. https://platform.opentargets.org/target/ENSG00000166452/associations",
+    "AKIP1 \u2194 neoplasm. https://platform.opentargets.org/target/ENSG00000166452/associations",
+    "AKIP1 \u2194 prostate carcinoma. https://platform.opentargets.org/target/ENSG00000166452/associations",
+    "AKIP1 \u2194 gastric cancer. https://platform.opentargets.org/target/ENSG00000166452/associations",
+    "AKIP1 \u2014 A-kinase interacting protein 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "CXCL8 \u2014 C-X-C motif chemokine ligand 8 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "SIRT1 \u2014 sirtuin 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HMGB1 \u2014 high mobility group box 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "RELA \u2014 RELA proto-oncogene, NF-kB subunit (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4688,
+    "completion_tokens": 294,
+    "total_tokens": 4982,
+    "estimated_cost_usd": 0.00088
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q9NQ31",
+          "title": "AKIP1 (Q9NQ31)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9NQ31",
+          "text": "Protein: A-kinase-interacting protein 1\nFunction: Enhances NF-kappa-B transcriptional activity by regulating the nuclear localization of the NF-kappa-B subunit RELA and promoting the phosphorylation of RELA by PRKACA. Regulates the effect of the cAMP-dependent protein kinase signaling pathway on the NF-kappa-B activation cascade",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9NQ31-3",
+          "title": "AKIP1 (Q9NQ31-3)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9NQ31-3",
+          "text": "Protein: Isoform 3 of A-kinase-interacting protein 1",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q9NQ31-2",
+          "title": "AKIP1 (Q9NQ31-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q9NQ31-2",
+          "text": "Protein: Isoform 2 of A-kinase-interacting protein 1",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000166452::function",
+          "title": "AKIP1 \u2014 AKIP1",
+          "url": "https://platform.opentargets.org/target/ENSG00000166452",
+          "text": "Function: Enhances NF-kappa-B transcriptional activity by regulating the nuclear localization of the NF-kappa-B subunit RELA and promoting the phosphorylation of RELA by PRKACA. Regulates the effect of the cAMP-dependent protein kinase signaling pathway on the NF-kappa-B activation cascade.",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000166452::EFO_1000973",
+          "title": "AKIP1 \u2194 hyperpituitarism",
+          "url": "https://platform.opentargets.org/target/ENSG00000166452/associations",
+          "text": "Disease: hyperpituitarism\nDescription: Disease of the glandular, anterior portion of the pituitary (pituitary gland, anterior) resulting in hypersecretion of adenohypophyseal hormones such as growth hormone; prolactin; thyrotropin; luteinizing hormone; follicle stimulating hormone ; and adrenocorticotropic hormone. Hyperpituitarism usually is caused by a functional adenoma.\nAssociation score: 0.210",
+          "cos_sim_score": 0.20987420093863865,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000166452::EFO_0000616",
+          "title": "AKIP1 \u2194 neoplasm",
+          "url": "https://platform.opentargets.org/target/ENSG00000166452/associations",
+          "text": "Disease: neoplasm\nDescription: A benign or malignant tissue growth resulting from uncontrolled cell proliferation. Benign neoplastic cells resemble normal cells without exhibiting significant cytologic atypia, while malignant cells exhibit overt signs such as dysplastic features, atypical mitotic figures, necrosis, nuclear pleomorphism, and anaplasia. Representative examples of benign neoplasms include papillomas, cystadenomas, and lipomas; malignant neoplasms include carcinomas, sarcomas, lymphomas, and leukemias.\nAssociation score: 0.113",
+          "cos_sim_score": 0.11326299764449835,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000166452::EFO_0001663",
+          "title": "AKIP1 \u2194 prostate carcinoma",
+          "url": "https://platform.opentargets.org/target/ENSG00000166452/associations",
+          "text": "Disease: prostate carcinoma\nDescription: A carcinoma that arises from epithelial cells of the prostate gland.\nAssociation score: 0.107",
+          "cos_sim_score": 0.10730133913048713,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000166452::MONDO_0001056",
+          "title": "AKIP1 \u2194 gastric cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000166452/associations",
+          "text": "Disease: gastric cancer\nDescription: A primary or metastatic malignant neoplasm involving the stomach.\nAssociation score: 0.101",
+          "cos_sim_score": 0.10097605920728586,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "AKIP1 \u2014 A-kinase interacting protein 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: AKIP1\nGene name: A-kinase interacting protein 1\nAliases / synonyms: BCA3, C11orf17\nOrganism: Homo sapiens\nGene summary: This gene encodes a nuclear protein that interacts with protein kinase A catalytic subunit, and regulates the effect of the cAMP-dependent protein kinase signaling pathway on the NF-kappa-B activation cascade. Alternatively spliced transcript variants have been described for this gene. [provided by RefSeq, Oct 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "AKIP1",
+          "aliases": "BCA3, C11orf17",
+          "gene_description": "A-kinase interacting protein 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "CXCL8 \u2014 C-X-C motif chemokine ligand 8",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: CXCL8\nGene name: C-X-C motif chemokine ligand 8\nAliases / synonyms: GCP-1, GCP1, IL8, LECT, LUCT, LYNAP, MDNCF, MONAP, NAF, NAP-1, NAP1, SCYB8\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the CXC chemokine family and is a major mediator of the inflammatory response. The encoded protein is commonly referred to as interleukin-8 (IL-8). IL-8 is secreted by mononuclear macrophages, neutrophils, eosinophils, T lymphocytes, epithelial cells, and fibroblasts. It functions as a chemotactic factor by guiding the neutrophils to the site of infection. Bacterial and viral products rapidly induce IL-8 expression. IL-8 also participates with other cytokines in the proinflammatory signaling cascade and plays a role in systemic inflammatory response syndrome (SIRS). This gene is believed to play a role in the pathogenesis of the lower respiratory tract infection bronchiolitis, a common respiratory tract disease caused by the respiratory syncy...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "CXCL8",
+          "aliases": "GCP-1, GCP1, IL8, LECT, LUCT, LYNAP, MDNCF, MONAP, NAF, NAP-1, NAP1, SCYB8",
+          "gene_description": "C-X-C motif chemokine ligand 8"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "SIRT1 \u2014 sirtuin 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: SIRT1\nGene name: sirtuin 1\nAliases / synonyms: SIR2, SIR2L1, SIR2alpha\nOrganism: Homo sapiens\nGene summary: This gene encodes a member of the sirtuin family of proteins, homologs to the yeast Sir2 protein. Members of the sirtuin family are characterized by a sirtuin core domain and grouped into four classes. The functions of human sirtuins have not yet been determined; however, yeast sirtuin proteins are known to regulate epigenetic gene silencing and suppress recombination of rDNA. Studies suggest that the human sirtuins may function as intracellular regulatory proteins with mono-ADP-ribosyltransferase activity. The protein encoded by this gene is included in class I of the sirtuin family. Alternative splicing results in multiple transcript variants. [provided by RefSeq, Dec 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "SIRT1",
+          "aliases": "SIR2, SIR2L1, SIR2alpha",
+          "gene_description": "sirtuin 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "HMGB1 \u2014 high mobility group box 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HMGB1\nGene name: high mobility group box 1\nAliases / synonyms: HMG-1, HMG1, HMG3, SBP-1\nOrganism: Homo sapiens\nGene summary: This gene encodes a protein that belongs to the High Mobility Group-box superfamily. The encoded non-histone, nuclear DNA-binding protein regulates transcription, and is involved in organization of DNA. This protein plays a role in several cellular processes, including inflammation, cell differentiation and tumor cell migration. Multiple pseudogenes of this gene have been identified. Alternative splicing results in multiple transcript variants that encode the same protein. [provided by RefSeq, Sep 2015]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HMGB1",
+          "aliases": "HMG-1, HMG1, HMG3, SBP-1",
+          "gene_description": "high mobility group box 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "RELA \u2014 RELA proto-oncogene, NF-kB subunit",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: RELA\nGene name: RELA proto-oncogene, NF-kB subunit\nAliases / synonyms: AIF3BL3, CMCU, NFKB3, p65\nOrganism: Homo sapiens\nGene summary: NF-kappa-B is a ubiquitous transcription factor involved in several biological processes. It is held in the cytoplasm in an inactive state by specific inhibitors. Upon degradation of the inhibitor, NF-kappa-B moves to the nucleus and activates transcription of specific genes. NF-kappa-B is composed of NFKB1 or NFKB2 bound to either REL, RELA, or RELB. The most abundant form of NF-kappa-B is NFKB1 complexed with the product of this gene, RELA. Four transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Sep 2011]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "RELA",
+          "aliases": "AIF3BL3, CMCU, NFKB3, p65",
+          "gene_description": "RELA proto-oncogene, NF-kB subunit"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": []
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}

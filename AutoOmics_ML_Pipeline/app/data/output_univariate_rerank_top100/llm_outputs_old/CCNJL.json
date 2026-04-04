@@ -1,0 +1,136 @@
+{
+  "probe_id": "11726205_at",
+  "gene_symbol": "CCNJL",
+  "Median_TestAUC": 1.0,
+  "SD_TestAUC": 0.1141558148697958,
+  "abs_fold_change": 1.307,
+  "score": 1.3048,
+  "probe_count": 1,
+  "probe_ids": "11726205_at",
+  "max_score": 1.3048,
+  "mean_abs_fold_change": 1.307,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-02T02:23:24",
+  "interpretation": "CCNJL, or Cyclin-J-like protein, is involved in regulating the cell cycle by activating cyclin-dependent kinases (CDKs). While there is no direct evidence linking CCNJL to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in cell cycle regulation suggests a potential involvement in bone cell proliferation and differentiation, which are critical processes in bone health. The retrieved evidence primarily connects CCNJL to other diseases, such as liver disease and connective tissue disorders, indicating its broader biological relevance but lacking specificity to SONFH. Therefore, while CCNJL may play a role in cellular processes relevant to bone health, the evidence for its utility as a biomarker for SONFH is weak, leading to an inference that it may not be a clinically actionable biomarker for early detection of this condition.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "CCNJL's role in cell cycle regulation suggests a potential but unproven connection to the cellular processes involved in Steroid-Induced Osteonecrosis of the Femoral Head.",
+  "citations": [
+    "CCNJL (Q8IV13). https://www.uniprot.org/uniprotkb/Q8IV13",
+    "CCNJL (Q8IV13-2). https://www.uniprot.org/uniprotkb/Q8IV13-2",
+    "CCNJL \u2194 liver disease. https://platform.opentargets.org/target/ENSG00000135083/associations",
+    "CCNJL \u2194 tooth disease. https://platform.opentargets.org/target/ENSG00000135083/associations",
+    "CCNJL \u2194 connective tissue disease. https://platform.opentargets.org/target/ENSG00000135083/associations",
+    "CCNJL \u2194 Alzheimer disease. https://platform.opentargets.org/target/ENSG00000135083/associations",
+    "CCNJL \u2194 placenta praevia. https://platform.opentargets.org/target/ENSG00000135083/associations",
+    "List of human protein-coding genes 2. https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_2",
+    "Cyclin. https://en.wikipedia.org/wiki/Cyclin"
+  ],
+  "token_usage": {
+    "prompt_tokens": 4120,
+    "completion_tokens": 244,
+    "total_tokens": 4364,
+    "estimated_cost_usd": 0.000764
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::Q8IV13",
+          "title": "CCNJL (Q8IV13)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8IV13",
+          "text": "Protein: Cyclin-J-like protein",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::Q8IV13-2",
+          "title": "CCNJL (Q8IV13-2)",
+          "url": "https://www.uniprot.org/uniprotkb/Q8IV13-2",
+          "text": "Protein: Isoform 2 of Cyclin-J-like protein",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000135083::EFO_0001421",
+          "title": "CCNJL \u2194 liver disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000135083/associations",
+          "text": "Disease: liver disease\nDescription: Pathological processes of the LIVER.\nAssociation score: 0.324",
+          "cos_sim_score": 0.3239965984207568,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000135083::EFO_1001216",
+          "title": "CCNJL \u2194 tooth disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000135083/associations",
+          "text": "Disease: tooth disease\nDescription: A disease involving the calcareous tooth.\nAssociation score: 0.320",
+          "cos_sim_score": 0.3203557208876528,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000135083::EFO_1001986",
+          "title": "CCNJL \u2194 connective tissue disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000135083/associations",
+          "text": "Disease: connective tissue disease\nDescription: A disorder characterized by abnormalities in one or more of the elements of the connective tissues, typically associated with genetic defects.\nAssociation score: 0.242",
+          "cos_sim_score": 0.2415784220894297,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000135083::MONDO_0004975",
+          "title": "CCNJL \u2194 Alzheimer disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000135083/associations",
+          "text": "Disease: Alzheimer disease\nDescription: A progressive, neurodegenerative disease characterized by loss of function and death of nerve cells in several areas of the brain leading to loss of cognitive function such as memory and language.\nAssociation score: 0.214",
+          "cos_sim_score": 0.21355600775166633,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000135083::EFO_0007442",
+          "title": "CCNJL \u2194 placenta praevia",
+          "url": "https://platform.opentargets.org/target/ENSG00000135083/associations",
+          "text": "Disease: placenta praevia\nDescription: Abnormal placentation in which the placenta implants in the lower segment of the uterus (the zone of dilation) and may cover part or all of the opening of the cervix. It is often associated with serious antepartum bleeding and premature labor.\nAssociation score: 0.065",
+          "cos_sim_score": 0.06537298165189125,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "wikipedia_search",
+      "result": [
+        {
+          "id": "wikipedia::List of human protein-coding genes 2",
+          "title": "List of human protein-coding genes 2",
+          "url": "https://en.wikipedia.org/wiki/List_of_human_protein-coding_genes_2",
+          "text": "== References ==",
+          "cos_sim_score": 0.16915923357009888,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Cyclin",
+          "title": "Cyclin",
+          "url": "https://en.wikipedia.org/wiki/Cyclin",
+          "text": "Cyclins are proteins that control the progression of a cell through the cell cycle by activating cyclin-dependent kinases (CDK).\n\nEtymology\nCyclins were originally discovered by R. Timothy Hunt in 1982 while studying the cell cycle of sea urchins.\nIn an interview hosted by Jim Al-Khalili and R. Timothy Hunt for \"The Life Scientific\", which aired on December 13, 2011, explained that the name \"cyclin\" was originally named after his hobby cycling. It was only after the naming did its importance in the cell cycle become apparent.  As it was appropriate, the name stuck.\nR. Timothy Hunt: \"By the way, the name cyclin, which I coined, was really a joke, it's because I liked cycling so much at the time, but they did come and go in the cell...\"\n\nFunction\nCyclins were originally named because their concentration varies in a cyclical fashion during the cell cycle. (Note that the cyclins are now classified according to their conserved cyclin box structure, and not all these cyclins alter in level through the cell cycle.) The oscillations of the cyclins, namely fluctuations in cyclin gene expression and destruction by the ubiquitin mediated proteasome pathway, induce oscillations in Cdk activity to drive the cell cycle. A cyclin forms a complex with Cdk, which begins to activate, but the complete activation requires phosphorylation as well. Complex formation results in activation of the Cdk active site. Cyclins themselves have no enzymatic activity but have binding sites for some substrates and target the Cdks to specific subcellular locations.\nCyclins, when bound with the dependent kinases, such as the p34/cdc2/cdk1 protein, form the maturation-promoting factor. MPFs activate other proteins through phosphorylation. These phosphorylated proteins, in turn, are responsible for specific events during cell division such as microtubule formation and chromatin remodeling. Cyclins can be divided into four classes based on their behaviour in the cell cycle of vertebrate somatic cells and yeast cells: G1 cyclins, G1/S cyclins, S cyclins, and M cyclins. This division is useful when talking about most cell cycles, but it is not universal as some cyclins have different functions or timing in different cell types.\nG1/S Cyclins rise in late G1 and fall in early S phase. The Cdk- G1/S cyclin complex begins to induce the initial processes of DNA replication, primarily by arresting systems that prevent S phase Cdk activity in G1. The cyclins also promote other activities to progress the cell cycle, such as centrosome duplication in vertebrates or spindle pole body in yeast. The rise in presence of G1/S cyclins is paralleled by a rise in S cyclins.\nG1 cyclins do not behave like the other cyclins, in that the concentrations increase gradually (with no oscillation), throughout the cell cycle based on cell growth and the external growth-regulatory signals. The presence of G cyclins coordinate cell growth with the entry to a new cell cycle.\nS cyclins bind to Cdk and the complex directly induces DNA replication. The levels of S cyclins remain high, not only throughout S phase, but through G2 and early mitosis as well to promote early events in mitosis.\nM cyclin concentrations rise as the cell begins to enter mitosis and the concentrations peak at metaphase. Cell changes in the cell cycle like the assembly of mitotic spindles and alignment of sister-chromatids along the spindles are induced by M cyclin- Cdk complexes. The destruction of M cyclins during metaphase and anaphase, after the Spindle Assembly Checkpoint is satisfied, causes the exit of mitosis and cytokinesis.\nExpression of cyclins detected immunocytochemically in individual cells in relation to cellular DNA content (cell cycle phase), or in relation to initiation and termination of DNA replication during S-phase, can be measured by flow cytometry.\nKaposi sarcoma herpesvirus (KSHV) encodes a D-type cyclin (ORF72) that binds CDK6 and is likely to contribute to KSHV-related cancers.",
+          "cos_sim_score": 0.1237477958202362,
+          "source_type": "wikipedia"
+        },
+        {
+          "id": "wikipedia::Cyclin",
+          "title": "Cyclin",
+          "url": "https://en.wikipedia.org/wiki/Cyclin",
+          "text": "Domain structure\nCyclins are generally very different from each other in primary structure, or amino acid sequence. However, all members of the cyclin family are similar in 100 amino acids that make up the cyclin box.  Cyclins contain two domains of a similar all-\u03b1 fold, the first located at the N-terminus and the second at the C-terminus. All cyclins are believed to contain a similar tertiary structure of two compact domains of 5 \u03b1 helices. The first of which is the conserved cyclin box, outside of which cyclins are divergent. For example, the amino-terminal regions of S and M cyclins contain short destruction-box motifs that target these proteins for proteolysis in mitosis.\n\nTypes\nThere are several different cyclins that are active in different parts of the cell cycle and that cause the Cdk to phosphorylate different substrates. There are also several \"orphan\" cyclins for which no Cdk partner has been identified. For example, cyclin F is an orphan cyclin that is essential for G2/M transition. A study in C. elegans revealed the specific roles of mitotic cyclins. Notably, recent studies have shown that cyclin A creates a cellular environment that promotes microtubule detachment from kinetochores in prometaphase to ensure efficient error correction and faithful chromosome segregation. Cells must separate their chromosomes precisely, an event that relies on the bi-oriented attachment of chromosomes to spindle microtubules through specialized structures called kinetochores. In the early phases of division, there are numerous errors in how kinetochores bind to spindle microtubules. The unstable attachments promote the correction of errors by causing a constant detachment, realignment and reattachment of microtubules from kinetochores in the cells as they try to find the correct attachment. Protein cyclin A governs this process by keeping the process going until the errors are eliminated. In normal cells, persistent cyclin A expression prevents the stabilization of microtubules bound to kinetochores even in cells with aligned chromosomes. As levels of cyclin A decline, microtubule attachments become stable, allowing the chromosomes to be divided correctly as cell division proceeds. In contrast, in cyclin A-deficient cells, microtubule attachments are prematurely stabilized. Consequently, these cells may fail to correct errors, leading to higher rates of chromosome mis-segregation.\n\nMain groups\nThere are two main groups of cyclins:\n\nG1/S cyclins \u2013 essential for the control of the cell cycle at the G1/S transition,\nCyclin A / CDK2 \u2013 active in S phase.\nCyclin D / CDK4, Cyclin D / CDK6, and Cyclin E / CDK2 \u2013 regulates transition from G1 to S phase.\nG2/M cyclins \u2013 essential for the control of the cell cycle at the G2/M transition (mitosis). G2/M cyclins accumulate steadily during G2 and are abruptly destroyed as cells exit from mitosis (at the end of the M-phase).\nCyclin B / CDK1 \u2013 regulates progression from G2 to M phase.\n\nSubtypes\nThe specific cyclin subtypes along with their corresponding CDK (in brackets) are:\n\nOther proteins containing this domain\nIn addition, the following human protein contains a cyclin domain:\nCNTD1\n\nHistory\nLeland H. Hartwell, R. Timothy Hunt, and Paul M. Nurse won the 2001 Nobel Prize in Physiology or Medicine for their discovery of cyclin and cyclin-dependent kinase.\n\nReferences\nFurther reading\nExternal links\nEukaryotic Linear Motif resource motif class LIG_CYCLIN_1",
+          "cos_sim_score": 0.06042049825191498,
+          "source_type": "wikipedia"
+        }
+      ]
+    }
+  ]
+}

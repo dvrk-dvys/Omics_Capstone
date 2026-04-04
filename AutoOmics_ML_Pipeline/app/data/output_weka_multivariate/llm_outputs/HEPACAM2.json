@@ -1,0 +1,233 @@
+{
+  "rf_rank": 30,
+  "probe_id": "11728821_a_at",
+  "gene_symbol": "HEPACAM2",
+  "score": 0.65,
+  "rf_n_nodes": 4,
+  "j48_split": false,
+  "j48_threshold": NaN,
+  "j48_direction": NaN,
+  "j48_depth": NaN,
+  "abs_fold_change": 2.6654,
+  "log_fc": -2.6654,
+  "hybrid_score": NaN,
+  "source": "rf",
+  "probe_count": 2,
+  "probe_ids": "11728821_a_at | 11750918_a_at",
+  "max_score": 0.65,
+  "mean_abs_fold_change": 2.5668,
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-04-03T01:50:10",
+  "interpretation": "HEPACAM2 encodes a protein involved in centrosome maturation and microtubule formation, which are critical during cell division. While there is no direct evidence linking HEPACAM2 to Steroid-Induced Osteonecrosis of the Femoral Head (SONFH), its role in cell cycle regulation and apoptosis may suggest a potential indirect connection to the disease. Steroid-induced apoptosis of bone microvascular endothelial cells (BMECs) is a known mechanism in SONFH, and HEPACAM2's involvement in cell division could hypothetically influence the cellular response to glucocorticoids. However, the evidence supporting HEPACAM2 as a biomarker for SONFH is weak, leading to a low confidence in its clinical relevance as an early-detection biomarker for this condition.",
+  "evidence_relation": "inferred",
+  "evidence_tier": "Tier 4",
+  "evidence_confidence": "low",
+  "biomarker_potential": "weak",
+  "relevance_summary": "HEPACAM2 may play a role in cellular processes relevant to SONFH, but lacks direct evidence linking it to the disease.",
+  "citations": [
+    "HEPACAM2 (A8MVW5). https://www.uniprot.org/uniprotkb/A8MVW5",
+    "HEPACAM2 (A8MVW5-2). https://www.uniprot.org/uniprotkb/A8MVW5-2",
+    "HEPACAM2 (A8MVW5-3). https://www.uniprot.org/uniprotkb/A8MVW5-3",
+    "HEPACAM2 \u2014 HEPACAM2. https://platform.opentargets.org/target/ENSG00000188175",
+    "HEPACAM2 \u2194 prostate cancer. https://platform.opentargets.org/target/ENSG00000188175/associations",
+    "HEPACAM2 \u2194 Familial prostate cancer. https://platform.opentargets.org/target/ENSG00000188175/associations",
+    "HEPACAM2 \u2194 glomerulonephritis. https://platform.opentargets.org/target/ENSG00000188175/associations",
+    "HEPACAM2 \u2194 liver disease. https://platform.opentargets.org/target/ENSG00000188175/associations",
+    "HEPACAM2 \u2014 HEPACAM family member 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "FGFR1 \u2014 fibroblast growth factor receptor 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "LGALS1 \u2014 galectin 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "TNFRSF10B \u2014 TNF receptor superfamily member 10b (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "HMGCR \u2014 3-hydroxy-3-methylglutaryl-CoA reductase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "NEDD4 regulates VEGF signaling and mTOR to promote angiogenesis and the cell cycle in steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12676940/"
+  ],
+  "token_usage": {
+    "prompt_tokens": 8724,
+    "completion_tokens": 304,
+    "total_tokens": 9028,
+    "estimated_cost_usd": 0.001491
+  },
+  "tools_used": [
+    {
+      "name": "uniprot_search",
+      "result": [
+        {
+          "id": "uniprot::A8MVW5",
+          "title": "HEPACAM2 (A8MVW5)",
+          "url": "https://www.uniprot.org/uniprotkb/A8MVW5",
+          "text": "Protein: HEPACAM family member 2\nFunction: Required during prometaphase for centrosome maturation. Following poly-ADP-ribosylation (PARsylation) by TNKS, translocates from the Golgi apparatus to mitotic centrosomes and plays a key role in the formation of robust microtubules for prompt movement of chromosomes: anchors AKAP9/CG-NAP, a scaffold protein of the gamma-tubulin ring complex and promotes centrosome maturation",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::A8MVW5-2",
+          "title": "HEPACAM2 (A8MVW5-2)",
+          "url": "https://www.uniprot.org/uniprotkb/A8MVW5-2",
+          "text": "Protein: Isoform 2 of HEPACAM family member 2",
+          "source_type": "uniprot"
+        },
+        {
+          "id": "uniprot::A8MVW5-3",
+          "title": "HEPACAM2 (A8MVW5-3)",
+          "url": "https://www.uniprot.org/uniprotkb/A8MVW5-3",
+          "text": "Protein: Isoform 3 of HEPACAM family member 2",
+          "source_type": "uniprot"
+        }
+      ]
+    },
+    {
+      "name": "opentargets_search",
+      "result": [
+        {
+          "id": "opentargets::ENSG00000188175::function",
+          "title": "HEPACAM2 \u2014 HEPACAM2",
+          "url": "https://platform.opentargets.org/target/ENSG00000188175",
+          "text": "Function: Required during prometaphase for centrosome maturation. Following poly-ADP-ribosylation (PARsylation) by TNKS, translocates from the Golgi apparatus to mitotic centrosomes and plays a key role in the formation of robust microtubules for prompt movement of chromosomes: anchors AKAP9/CG-NAP, a scaffold protein of the gamma- tubulin ring complex and promotes centrosome maturation. .",
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000188175::MONDO_0008315",
+          "title": "HEPACAM2 \u2194 prostate cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000188175/associations",
+          "text": "Disease: prostate cancer\nDescription: A primary or metastatic malignant tumor involving the prostate gland. The vast majority are carcinomas.\nAssociation score: 0.112",
+          "cos_sim_score": 0.11179790604212228,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000188175::Orphanet_1331",
+          "title": "HEPACAM2 \u2194 Familial prostate cancer",
+          "url": "https://platform.opentargets.org/target/ENSG00000188175/associations",
+          "text": "Disease: Familial prostate cancer\nDescription: Prostate carcinoma that has developed in relatives of patients with a history of prostate carcinoma.\nAssociation score: 0.111",
+          "cos_sim_score": 0.11087395640541053,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000188175::MONDO_0002462",
+          "title": "HEPACAM2 \u2194 glomerulonephritis",
+          "url": "https://platform.opentargets.org/target/ENSG00000188175/associations",
+          "text": "Disease: glomerulonephritis\nDescription: A renal disorder characterized by damage in the glomeruli. It may be acute or chronic, focal or diffuse, and it may lead to renal failure. Causes include autoimmune disorders, infections, diabetes, and malignancies.\nAssociation score: 0.096",
+          "cos_sim_score": 0.09608682657477641,
+          "source_type": "opentargets"
+        },
+        {
+          "id": "opentargets::ENSG00000188175::EFO_0001421",
+          "title": "HEPACAM2 \u2194 liver disease",
+          "url": "https://platform.opentargets.org/target/ENSG00000188175/associations",
+          "text": "Disease: liver disease\nDescription: Pathological processes of the LIVER.\nAssociation score: 0.092",
+          "cos_sim_score": 0.09243326052432255,
+          "source_type": "opentargets"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    },
+    {
+      "name": "ncbi_gene_search",
+      "result": [
+        {
+          "id": "ncbi_gene::",
+          "title": "HEPACAM2 \u2014 HEPACAM family member 2",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HEPACAM2\nGene name: HEPACAM family member 2\nAliases / synonyms: MIKI\nOrganism: Homo sapiens\nGene summary: This gene encodes a protein related to the immunoglobulin superfamily that plays a role in mitosis. Knockdown of this gene results in prometaphase arrest, abnormal nuclear morphology and apoptosis. Poly(ADP-ribosylation) of the encoded protein promotes its translocation to centrosomes, which may stimulate centrosome maturation. A chromosomal deletion including this gene may be associated with myeloid leukemia and myelodysplastic syndrome in human patients. [provided by RefSeq, Oct 2016]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HEPACAM2",
+          "aliases": "MIKI",
+          "gene_description": "HEPACAM family member 2"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "FGFR1 \u2014 fibroblast growth factor receptor 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: FGFR1\nGene name: fibroblast growth factor receptor 1\nAliases / synonyms: BFGFR, CD331, CEK, ECCL, FGFBR, FGFR-1, FLG, FLT-2, FLT2, HBGFR, HH2, HRTFDS, KAL2, N-SAM, OGD, bFGF-R-1\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the fibroblast growth factor receptor (FGFR) family, where amino acid sequence is highly conserved between members and throughout evolution. FGFR family members differ from one another in their ligand affinities and tissue distribution. A full-length representative protein consists of an extracellular region, composed of three immunoglobulin-like domains, a single hydrophobic membrane-spanning segment and a cytoplasmic tyrosine kinase domain. The extracellular portion of the protein interacts with fibroblast growth factors, setting in motion a cascade of downstream signals, ultimately influencing mitogenesis and differentiation. This particular family member binds both acidic and basic fibroblast growth factors and is involved in limb inducti...",
+          "source_type": "ncbi_gene",
+          "official_symbol": "FGFR1",
+          "aliases": "BFGFR, CD331, CEK, ECCL, FGFBR, FGFR-1, FLG, FLT-2, FLT2, HBGFR, HH2, HRTFDS, KAL2, N-SAM, OGD, bFGF-R-1",
+          "gene_description": "fibroblast growth factor receptor 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "LGALS1 \u2014 galectin 1",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: LGALS1\nGene name: galectin 1\nAliases / synonyms: GAL1, GBP\nOrganism: Homo sapiens\nGene summary: The galectins are a family of beta-galactoside-binding proteins implicated in modulating cell-cell and cell-matrix interactions. This gene product may act as an autocrine negative growth factor that regulates cell proliferation. [provided by RefSeq, Jul 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "LGALS1",
+          "aliases": "GAL1, GBP",
+          "gene_description": "galectin 1"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "TNFRSF10B \u2014 TNF receptor superfamily member 10b",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: TNFRSF10B\nGene name: TNF receptor superfamily member 10b\nAliases / synonyms: CD262, DR5, KILLER, KILLER/DR5, TRAIL-R2, TRAILR2, TRICK2, TRICK2A, TRICK2B, TRICKB, ZTNFR9\nOrganism: Homo sapiens\nGene summary: The protein encoded by this gene is a member of the TNF-receptor superfamily, and contains an intracellular death domain. This receptor can be activated by tumor necrosis factor-related apoptosis inducing ligand (TNFSF10/TRAIL/APO-2L), and transduces an apoptosis signal. Studies with FADD-deficient mice suggested that FADD, a death domain containing adaptor protein, is required for the apoptosis mediated by this protein. Two transcript variants encoding different isoforms and one non-coding transcript have been found for this gene. [provided by RefSeq, Mar 2009]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "TNFRSF10B",
+          "aliases": "CD262, DR5, KILLER, KILLER/DR5, TRAIL-R2, TRAILR2, TRICK2, TRICK2A, TRICK2B, TRICKB, ZTNFR9",
+          "gene_description": "TNF receptor superfamily member 10b"
+        },
+        {
+          "id": "ncbi_gene::",
+          "title": "HMGCR \u2014 3-hydroxy-3-methylglutaryl-CoA reductase",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/",
+          "text": "Official symbol: HMGCR\nGene name: 3-hydroxy-3-methylglutaryl-CoA reductase\nAliases / synonyms: LDLCQ3, LGMDR28, MYPLG\nOrganism: Homo sapiens\nGene summary: HMG-CoA reductase is the rate-limiting enzyme for cholesterol synthesis and is regulated via a negative feedback mechanism mediated by sterols and non-sterol metabolites derived from mevalonate, the product of the reaction catalyzed by reductase. Normally in mammalian cells this enzyme is suppressed by cholesterol derived from the internalization and degradation of low density lipoprotein (LDL) via the LDL receptor. Competitive inhibitors of the reductase induce the expression of LDL receptors in the liver, which in turn increases the catabolism of plasma LDL and lowers the plasma concentration of cholesterol, an important determinant of atherosclerosis. Alternatively spliced transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Aug 2008]",
+          "source_type": "ncbi_gene",
+          "official_symbol": "HMGCR",
+          "aliases": "LDLCQ3, LGMDR28, MYPLG",
+          "gene_description": "3-hydroxy-3-methylglutaryl-CoA reductase"
+        }
+      ]
+    },
+    {
+      "name": "pmc_fulltext_search",
+      "result": [
+        {
+          "id": "pmc::12676940",
+          "title": "NEDD4 regulates VEGF signaling and mTOR to promote angiogenesis and the cell cycle in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12676940/",
+          "text": "Introduction\nOsteonecrosis of the femoral head (ONFH) is a degenerative hip joint disease that worsens over time (1). ONFH is characterized by bone cell death due to a lack of blood supply, which can lead to joint collapse and hip dysfunction (1). The causes of ONFH are complex and involve mechanical injury, genetic predisposition and biochemical imbalances (2,3). Among these factors, steroid use is reported in ~51% of ONFH cases (4). Prolonged or high-dose steroid therapy markedly increases the risk of ONFH, leading to steroid-induced ONFH (SONFH) (1). For example, in patients with systemic lupus erythematosus, the corticosteroid dosage is positively associated with the occurrence of ONFH. Daily doses as low as 10 mg have been associated with a 3.6% increase in risk, while doses >40 mg greatly increase the chance of developing ONFH (5). Steroids damage bone and blood vessel health through various mechanisms, including endothelial cell dysfunction and reduced angiogenesis, ultimately impairing blood flow supply (3,6). Endothelial cells serve an important role in angiogenesis, as their growth, migration and tube formation are important for repairing bone tissue (6,7). When angiogenesis is impaired, bone regeneration often fails (8). VEGF, a key factor that promotes angiogenesis, has been shown to enhance bone repair by stimulating angiogenesis, making it a potential treatment for ONFH (9\u201311). Angiogenesis and osteogenesis are closely linked processes that occur throughout bone development, maturation, aging and disease progression (12). Notably, activation of the VEGF-Notch signaling pathway has been reported to restore the proliferation of mesenchymal stem cells in aplastic anemia (13), while the mTOR/AP-1 complex subunit \u00b5-1/VEGF axis regulates endothelial cell growth (14). Additionally, increasing hypoxia-inducible factor (HIF)-1\u03b1/VEGF levels can help to protect against bone loss in models of nasal obstruction (15). Therefore, understanding the molecular mechanisms of angiogenesis and endothelial cell function is important for advancing treatments for ONFH.\nUbiquitination has become an important post-translational modification for regulating protein stability, signal transduction and cellular homeostasis (16\u201319). Neural precursor cell expressed developmentally downregulated protein 4 (NEDD4) is an E3 ubiquitin ligase that facilitates substrate ubiquitination and degradation, thereby influencing multiple biological processes such as cell proliferation, migration, angiogenesis and endothelial cell protection (20\u201322). NEDD4 has been demonstrated to promote endothelial cell proliferation, migration and angiogenesis (23). In addition to its role in endothelial regulation, NEDD4 also affects macrophage autophagy and tumor cell proliferation, highlighting its versatile function in maintaining the cellular balance (21,24).\nNEDD4 subfamily influences osteogenesis and bone cell biology (25). By mediating PTEN degradation, NEDD4 activates the PI3K/AKT pathway, which promotes cell proliferation and survival. This pathway also supports angiogenesis through PTEN inactivation and VEGF upregulation (26\u201329). Additionally, NEDD4 boosts osteocyte proliferation and is associated with improved outcomes in postmenopausal osteoporosis (30,31). Overall, these findings emphasize the potential of NEDD4 as a regulator of both angiogenesis and osteogenesis, making it a promising target in ONFH therapy. The present study was based on the concept that NEDD4 may serve a role in SONFH. To explore this, the present study observed how overexpression of NEDD4 affected the viability, migration and tube formation of bone microvascular endothelial cells (BMECs). The present study also investigated how glucocorticoids influenced NEDD4 expression and promoter methylation, shedding light on how NEDD4 contributes to angiogenesis and repair in SONFH.\nMaterials and methods\nConstruction of the NEDD4 overexpression (OE) vector",
+          "cos_sim_score": 0.6038731932640076,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12676940",
+          "title": "NEDD4 regulates VEGF signaling and mTOR to promote angiogenesis and the cell cycle in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12676940/",
+          "text": "Integrins, as transmembrane receptors, can detect the physical properties of the extracellular matrix and organize the cytoskeleton while transmitting bidirectional cellular signals. They mediate signaling pathways such as the TGF-\u03b2, Hippo, Wnt and Notch pathways, thereby serving important roles in biological processes such as cell adhesion, spreading, migration and mechanotransduction (47,48). The Notch signaling pathway could have therapeutic benefits for bone regeneration and osteoporosis treatment (49). The analysis in the present study showed that NEDD4 expression was positively correlated with ssGSEA scores of the TGF-\u03b2/SMAD and Hippo/yes-associated protein (YAP) pathways but negatively correlated with the Notch signaling pathway. Although NEDD4 expression was positively correlated with ITGA9 and FERMT2 expression in the integrin pathway, the ssGSEA score for this pathway was negative, suggesting that the regulatory role of NEDD4 is complex and this may influence pathways through different mechanisms. As an E3 ubiquitin ligase, NEDD4 may serve a key role in the progression and repair of ONFH. NEDD4 may contribute to bone tissue repair and remodeling by boosting the activity of the TGF-\u03b2/SMAD and Hippo/YAP signaling pathways (25,31). For example, NEDD4 may promote the growth and differentiation of bone cells by stabilizing TGF-\u03b2 receptors or SMAL proteins (31). At the same time, by enhancing the Hippo/YAP pathway, it may help regulate the mechanical adaptability and repair of bone tissue (25). Conversely, the negative correlation between NEDD4 and the Notch signaling pathway genes such as NOTCH2 and MAML2 indicated that NEDD4 may affect the pathological process of SONFH by inhibiting the Notch pathway and influencing osteoblast differentiation (49). The interaction of the integrin signaling pathway with NEDD4 could impact the regulation of these pathways, further affecting the progression and repair of SONFH (47). In summary, the regulatory roles of NEDD4 in the integrin, TGF-\u03b2/SMAD, Hippo/YAP and Notch signaling pathways highlighted its complex function in cell signal transduction. This diverse regulatory mechanism offers important insights for further exploring the functions and mechanisms of NEDD4 in SONFH.\nResearch has shown that ANGPT2 serves an important role in the vascular niche within the bone marrow, helping to maintain the balance and regeneration of hematopoietic stem cells (50). Although VEGFB does not directly contribute to angiogenesis, it indirectly supports vascular growth and cell survival by affecting the actions of VEGFA (51). Bone morphogenetic protein receptor type-1B (BMPR1B) also serves a role, as it can prevent chondrocyte hypertrophy and act as a stabilizer for cartilage during joint development (52). mTOR is involved in tissue regeneration across neurons, muscles, liver and intestines, helping restore tissue homeostasis (53). In the present study, NEDD4 expression was positively associated with the expression of genes involved in angiogenesis, such as ANGPT2, VEGFB, MTOR and BMPR1B. This finding further emphasizes the notable role of NEDD4 in regulating both angiogenesis and bone tissue homeostasis. Notably, the positive correlation between NEDD4 and ANGPT2 supported the role of ANGPT2 in coordinating hematopoietic stem cell homeostasis within the vascular niche (50). Additionally, this correlation suggested that NEDD4 may indirectly affect the function of VEGFA through interactions with VEGFB and mTOR, thereby encouraging vascular growth, and cell proliferation and survival (51,53). The positive correlation between NEDD4 and BMPR1B suggested that NEDD4 may prevent chondrocyte hypertrophy and support cartilage health and stability (52).",
+          "cos_sim_score": 0.3805578947067261,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12676940",
+          "title": "NEDD4 regulates VEGF signaling and mTOR to promote angiogenesis and the cell cycle in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12676940/",
+          "text": "The present study demonstrated that NEDD4 OE promoted the viability, migration and angiogenesis of BMECs, indicating its key role in endothelial cell function, and maintaining angiogenesis and homeostasis. NEDD4 regulates processes such as proliferation and angiogenesis via ubiquitination (23). Glucocorticoid-induced apoptosis of BMECs promotes the onset and progression of ONFH (54). The present research sheds light on the role and mechanism of NEDD4 in ONFH. The present study found that NEDD4 enhanced the cell function of BMECs by activating the VEGF signaling pathway and working with mTOR. When NEDD4 was overexpressed, the mRNA levels of mTOR, VEGF and VEGFR2 were significantly increased, demonstrating that NEDD4 promoted angiogenesis by triggering the VEGF signaling pathway. Notably, overexpression of NEDD4 did not markedly affect the ubiquitination level of mTOR, suggesting that NEDD4 did not directly mediate the ubiquitination of mTOR but instead affected it by activating the mTOR signaling pathway. In the siRNA transfection experiments, a synergistic effect of NEDD4 and mTOR on BMEC proliferation and migration was observed. Additionally, glucocorticoids inhibited the expression of NEDD4 by increasing the methylation level of the NEDD4 promoter region. After adding the methylation inhibitor 5-AZA, the methylation levels of the NEDD4 promoter notably decreased, while glucocorticoid MePr treatment markedly increased the methylation level of the NEDD4 promoter and significantly suppressed NEDD4 mRNA expression. This further supported the important role of NEDD4 in methylation regulation and showed the substantial influence of glucocorticoids on NEDD4 expression.\nIn conclusion, the present study revealed the diverse roles of NEDD4 in SONFH, particularly in angiogenesis, cellular homeostasis, cell cycle regulation and DNA damage repair. NEDD4 enhanced BMEC function by activating the VEGF signaling pathway and working with mTOR, with its expression regulated by methylation. This offers novel insights into NEDD4 as a potential therapeutic target for SONFH. Further research into the functions of NEDD4 in bone pathology and angiogenesis will provide valuable insights for developing novel treatment strategies. These findings not only add to the existing literature but also provide novel perspectives on the multiple roles of NEDD4 in SONFH and angiogenesis, indicating that NEDD4 may affect angiogenesis, bone tissue repair and bone regeneration through various mechanisms.\nNEDD4 may represent a promising therapeutic target for SONFH. By mediating PTEN degradation and activating the PI3K/AKT/mTOR pathway, NEDD4 promoted cell proliferation and survival, while also enhancing VEGF signaling to support angiogenesis and bone repair (26,31). These dual effects on osteogenesis and angiogenesis highlight its translational potential, and future studies on pharmacological or genetic modulation of NEDD4 could lead to novel treatment strategies.\nThe present study had several limitations. Primarily, the bioinformatics analysis was based on a single publicly available dataset without external validation, which may limit the generalizability of the present findings. Secondly, although the present study validated key molecular alterations in vitro, in vivo animal experiments were not performed, which reduced the translational value of the results. Furthermore, the relatively small sample size and limited types of control may weaken the conclusions of the present study. Additionally, the present study did not explore how NEDD4 regulates the mTOR and VEGF pathways at a mechanistic level. Finally, the present study did not include clinical relevance data, and thus, future studies should incorporate patient samples and correlation analyses to increase the translational significance of the present work. Overall, future research with larger cohorts, more comprehensive controls, in vivo validation, more in-depth mechanistic studies and clinical correlation analyses is needed to confirm and extend the findings of the present study.\nSupplementary Material\nSupporting Data\nSupporting Data",
+          "cos_sim_score": 0.19597145915031433,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12676940",
+          "title": "NEDD4 regulates VEGF signaling and mTOR to promote angiogenesis and the cell cycle in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12676940/",
+          "text": "MTT assay\nCells were incubated in 90 \u00b5l DMEM/F12 (Meilunbio) supplemented with 10% FBS and 1% penicillin-streptomycin with 10 \u00b5l 5 mg/ml MTT solution (Beijing Solarbio Science & Technology Co., Ltd.) for 4 h. The supernatants were then removed, and 110 \u00b5l DMSO formazan solubilization solution was added. The absorbance was measured at 560 nm using a Bio-Rad microplate reader.\n5-ethynyl-2\u2032-deoxyuridine (EdU) proliferation assay\nCell proliferation was evaluated using the EdU Cell Proliferation Kit (Wuhan Servicebio Technology Co., Ltd.) according to the manufacturer's instructions. In brief, cells from various experimental groups were seeded into 24-well plates at a density of 1\u00d7105 cells/well and incubated with EdU working solution for 2 h at 37\u00b0C. After fixation with 4% paraformaldehyde (Beijing Solarbio Science & Technology Co., Ltd.) at room temperature for 15 min and permeabilization with 0.5% Triton X-100, cells were stained using the Apollo\u00ae 567 fluorescent dye at room temperature for 30 min, according to the manufacturer's instructions.. Images were captured using a Nikon fluorescence microscope (Nikon Corporation) Cells that incorporated nuclear EdU exhibited green fluorescence. The percentage of EdU-positive cells was calculated from five randomly chosen fields per group and the data were statistically analyzed using ImageJ software (version 1.53; National Institutes of Health).\nTube formation assay\nMatrigel\u00ae (150 \u00b5l/well; Corning, Inc.) was added to 48-well plates and allowed to solidify at 37\u00b0C for 30 min. Cells (1\u00d7105/well) were then seeded and incubated at 37\u00b0C for 4 h. Cells were stained with Calcein-AM (2 \u00b5M; Beyotime Biotechnology) at 37\u00b0C for 30 min to visualize the tubular network. The formation of tubes was observed and images were captured under an inverted fluorescence microscope (Motic Biological Technology Co., Ltd.).\nWound healing assay\nBMECs were seeded into 6-well plates in triplicate and cultured until reaching 100% confluence. Cells were serum-starved overnight prior to the assay. Cells were cultured in DMEM/F12 with 10% fetal bovine serum (Gibco, USA) and 1% penicillin-streptomycin. A linear scratch was created across the cell monolayer using a sterile 200-\u00b5l pipette tip. Detached cells were removed by rinsing the wells three times with PBS, after which fresh culture medium containing NEDD4 overexpression plasmid, si-NEDD4 and their respective negative controls. Images were captured at 0, 24 and 48 h using an inverted light microscope (Motic Biological Technology Co., Ltd.). The scratch width was measured in pixels using ImageJ software (version 1.53; National Institutes of Health), with the width at 0 h defined as 100% (baseline); the widths at subsequent time points were expressed as a percentage relative to this baseline. The mean value from three independent experiments was used for analysis.\nMethylation-specific PCR",
+          "cos_sim_score": 0.15363042056560516,
+          "source_type": "pmc"
+        },
+        {
+          "id": "pmc::12676940",
+          "title": "NEDD4 regulates VEGF signaling and mTOR to promote angiogenesis and the cell cycle in steroid-induced osteonecrosis of the femoral head",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12676940/",
+          "text": "NEDD4 regulates vascular endothelial cell function by activating the VEGF signaling pathway while functionally interacting with mTOR signaling in BMECs\nTo verify the associations between NEDD4, mTOR and the VEGF signaling pathway, the present study used RT-qPCR to measure the mRNA levels of mTOR, VEGF and VEGFR2. NEDD4 OE significantly increased the mRNA levels of mTOR, VEGF and VEGFR2 (Fig. 6A). To explore the role of NEDD4 in BMEC function via mTOR regulation, siRNA transfection was performed to generate si-NEDD4- and si-mTOR-transfected BMECs. RT-qPCR identified si-NEDD4-1 and si-mTOR-3 as the most effective interference sequences (Fig. 6B). IP was performed to assess the ubiquitination level of mTOR, revealing a notable decrease in mTOR ubiquitination in NEDD4-overexpressing cells compared with the control group (Fig. 6C).. The morphology and fluorescence of BMECs following siRNA transfection confirmed successful transfection efficiency (Fig. 6D). Wound healing assay results showed a significant reduction in wound healing rates in the si-NEDD4 and si-mTOR groups compared with the control group, with a greater decrease observed in the si-NEDD4 + si-mTOR group at 48 h, aligning with the results from the MTT and EdU assays, where si-NEDD4 and si-NEDD4 + si-mTOR groups showed significantly reduced proliferation while the si-mTOR group exhibited a non-significant downward trend (Fig. 6E-G). In the tube formation assay, total tube length and number of junctions and meshes were significantly decreased in the si-NEDD4 and si-mTOR groups compared with the control group, with further significant reductions observed in the si-NEDD4 + si-mTOR group compared with the si-NEDD4 group, consistent with the findings from the MTT and scratch assays (Fig. 6H). In the MTT assay, OD560 values were significantly decreased in the si-NEDD4- and si-mTOR-transfected groups compared with the control group, and further decreased in the si-NEDD4 + si-mTOR compared with the si-NEDD4 group (Fig. 6I).\nGlucocorticoids inhibit NEDD4 expression by upregulating methylation levels in its promoter region\nCorrelation analysis of NEDD4 and methylation-related genes showed significant positive and negative correlations with genes such as KDM6B, PCNA, DNMT3A, SUV39H2, UHRF1, EZH2, TET2, DMAP1 and PRMT1, further highlighting the complex role of NEDD4 in methylation regulation (Fig. 7A). BMECs exhibited healthy proliferation after treatment with PBS, MePr, 5-AZA, or MePr + 5-AZA (Fig. 7B). Methylation-specific PCR results revealed increased methylation levels following MePr addition and decreased levels following 5-AZA treatment. Compared with the 5-AZA group, combined treatment with MePr and 5-AZA increased methylation levels in the NEDD4 promoter region (Fig. 7C). RT-qPCR results indicated that combined treatment with MePr + 5-AZA significantly suppressed NEDD4 mRNA expression compared with 5-AZA treatment alone (Fig. 7D).\nDiscussion",
+          "cos_sim_score": 0.14963677525520325,
+          "source_type": "pmc"
+        }
+      ]
+    },
+    {
+      "name": "geo_search",
+      "result": []
+    },
+    {
+      "name": "pubmed_search",
+      "result": []
+    }
+  ]
+}
