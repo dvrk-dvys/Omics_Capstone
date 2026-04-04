@@ -1,4 +1,8 @@
-# AutoOmics_ML_Pipeline
+<h1 align="center">AutoOmics_ML_Pipeline</h1>
+
+<p align="center">
+  <img src="ASSETS/f49cee5ecb1b78a02ddbfea596afeead.jpg" alt="Microarray Gene Expression Heatmap" width="700">
+</p>
 
 Python ML pipeline for SONFH biomarker discovery — parallel to the manual Weka capstone workflow.
 
@@ -20,11 +24,51 @@ The capstone course uses Weka (GUI-based) for classification. This app replicate
 | Manual biomarker shortlist | Auto-generated `biomarker_shortlist.csv` |
 | No EDA plots from pipeline | 7 EDA plots generated automatically (6 individual + composite multi-panel) |
 
-Both pipelines share the same preprocessing logic (`app/utils/`). The automated pipeline feeds the same LLM interpretation stage (Phase 6).
+Both pipelines share the same preprocessing logic (`app/utils/`). The automated pipeline feeds the same LLM interpretation stage.
+
+**Example LLM output — `BPGM.json`:**
+
+```json
+{
+  "file": "BPGM.json",
+  "probe_id": "11719581_a_at",
+  "gene_symbol": "BPGM",
+  "evidence_tier": "Tier 1",
+  "evidence_relation": "direct",
+  "evidence_confidence": "high",
+  "biomarker_potential": "strong",
+  "score": 0.6801,
+  "abs_fold_change": 3.3879618999999996,
+  "relevance_summary": "BPGM is implicated in the pathophysiology of steroid-induced osteonecrosis of the femoral head and has been identified as a potential biomarker for early detection of this condition.",
+  "citations": [
+    "BPGM (P07738). https://www.uniprot.org/uniprotkb/P07738",
+    "BPGM — BPGM. https://platform.opentargets.org/target/ENSG00000172331",
+    "BPGM ↔ hemolytic anemia due to diphosphoglycerate mutase deficiency. https://platform.opentargets.org/target/ENSG00000172331/associations",
+    "BPGM ↔ autosomal recessive secondary polycythemia not associated with VHL gene. https://platform.opentargets.org/target/ENSG00000172331/associations",
+    "BPGM ↔ placenta praevia. https://platform.opentargets.org/target/ENSG00000172331/associations",
+    "BPGM ↔ vertebral column disorder. https://platform.opentargets.org/target/ENSG00000172331/associations",
+    "Screening of Potential Biomarkers in the Peripheral Serum for Steroid-Induced Osteonecrosis of the Femoral Head Based on WGCNA and Machine Learning Algorithms. (2022). https://pubmed.ncbi.nlm.nih.gov/35154510/",
+    "BPGM — bisphosphoglycerate mutase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "AKT1 — AKT serine/threonine kinase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "GRB2 — growth factor receptor bound protein 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "GAPDH — glyceraldehyde-3-phosphate dehydrogenase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ATF6 — activating transcription factor 6 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Bioinformatics analysis and identification of genes and molecular pathways in steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8136174/",
+    "Advances in the mechanism for steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12902040/",
+    "Pathological mechanisms and related markers of steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11559024/",
+    "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+    "MEF cells, siBPGM control 5 [GSM6037560] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6037560",
+    "MEF cells, siBPGM control 2 [GSM6037557] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6037557",
+    "MEF cells, siBPGM control 4 [GSM6037559] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6037559",
+    "MEF cells, siBPGM control 3 [GSM6037558] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6037558",
+    "A renal function for 2,3-bisphosphoglycerate mutase (BPGM) [GSE200544] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE200544"
+  ]
+}
+```
 
 ---
 
-## Feature selection method (updated)
+## Feature selection method
 
 Probes are now ranked by a **hybrid score** instead of fold change alone:
 
@@ -51,7 +95,13 @@ AutoOmics_ML_Pipeline/
 │   │   │   ├── GSE123568_series_matrix.txt.gz
 │   │   │   ├── GSE123568_family.soft.gz
 │   │   │   └── GSE123568_abstract.txt
-│   │   └── output/           ← all generated files (safe to delete & regenerate)
+│   │   └── output_<run_name>/   ← each run archived under a descriptive name
+│   │       │                       e.g. output_new_multivariate_top100/
+│   │       │                            output_new_multivariate_top500/
+│   │       │                            output_new_univariate_top100/
+│   │       │                            output_univariate_rerank_top100/
+│   │       │                            output_weka_multivariate/
+│   │       │                            output_weka_univariate_ann/
 │   │       ├── parsed/
 │   │       ├── feature_selection/
 │   │       │   ├── top100_features.csv      ← Weka-comparable branch (train/eval default)
@@ -69,8 +119,12 @@ AutoOmics_ML_Pipeline/
 │   │       │   ├── pca_plot.png
 │   │       │   ├── sample_correlation.png
 │   │       │   ├── heatmap_top20.png
-│   │       │   └── eda_composite.png     ← 2×3 multi-panel composite (report Figure 1)
-│   │       ├── llm_outputs/  ← one JSON per gene (Phase 6)
+│   │       │   ├── eda_composite.png        ← 2×3 multi-panel composite (report Figure 1)
+│   │       │   ├── fig_2_model_comparison_<run>.png
+│   │       │   ├── fig_3_model_eval_<run>.png
+│   │       │   ├── fig_4_stat_vs_model_importance_<run>.png
+│   │       │   └── fig_biomarker_summary_composite_<run>.png
+│   │       ├── llm_outputs/  ← one JSON per gene
 │   │       └── biomarker_shortlist.csv
 │   ├── jobs/                 ← orchestration layer
 │   │   ├── ingest_job.py
@@ -79,7 +133,7 @@ AutoOmics_ML_Pipeline/
 │   │   ├── feature_select_job.py
 │   │   ├── train_eval_job.py
 │   │   ├── biomarker_job.py
-│   │   └── llm_job.py        ← scaffold (Phase 6)
+│   │   └── llm_job.py        ← LLM enrichment job
 │   ├── models/
 │   │   └── baseline_models.py
 │   └── utils/                ← shared logic (also used by manual Weka workflow)
@@ -302,8 +356,8 @@ cp report/sonfh_gene_audit.csv report/sonfh_gene_audit_multivariate_top500.csv
 | `--skip-pre` | Skip ingest, parse, preprocess (use existing outputs) |
 | `--skip-train` | Skip model training |
 | `--llm` | Run LLM biological interpretation (opt-in) |
-| `-m univariate` | Use ANN MCCV probe ranking for feature selection (default) |
-| `-m multivariate` | Use hybrid fold-change + t-stat ranking for feature selection |
+| `-m univariate` | **Mode:** Use ANN MCCV probe ranking for feature selection (default) |
+| `-m multivariate` | **Mode:** Use hybrid fold-change + t-stat ranking for feature selection |
 
 ---
 
@@ -315,124 +369,6 @@ cp report/sonfh_gene_audit.csv report/sonfh_gene_audit_multivariate_top500.csv
 - Gene-level deduped rankings: `app/data/output/feature_selection/gene_level_rankings.csv`
 - Top 100 genes: `app/data/output/feature_selection/top100_genes.csv`
 - EDA plots: `app/data/output/plots/` (7 plots: volcano, FC bar, boxplots, PCA, sample correlation, heatmap, eda_composite)
-
----
-
-## Results
-
-### LLM-Validated Biomarker Findings (Phase 6)
-
-All pipeline runs were filtered to direct-evidence genes (Tier 1–3, `evidence_relation=direct`).
-Results stored in `report/best_runs/` — each file represents one pipeline configuration.
-
-#### Aligned Gene Table (Tier + LLM Score)
-
-```
-Gene        NewMulti100     NewUni100       UniRerank       WekaMulti       WekaUni         |FC|
-------------------------------------------------------------------------------------------------
-NLRP1       —               T1(1.00)        T1(1.26)        —               T1(0.64)        ~1.27
-BPGM        T2(0.68)        —               —               T1(0.65)        —               ~3.39
-CISD2       T2(0.45)        —               —               T2(0.71)        —               ~2.26
-GYPA        T1(0.54)        —               —               T1(0.73)        —               ~2.88
-HEMGN       T1(0.46)        —               —               T2(0.61)        —               ~2.94
-P2RY13      —               —               T2(1.29)        —               T2(0.60)        ~1.29
-PIP5K1B     T2(0.56)        —               —               T2(0.65)        —               ~2.02
-TSTA3       T1(0.74)        —               —               T1(0.71)        —               ~1.74
-CBL         —               T1(1.00)        —               —               —               ~1.01
-LCP1        —               T1(1.00)        —               —               —               ~0.93
-RUNX2       —               —               —               —               T2(0.56)        ~1.22
-SETD1B      —               T2(1.00)        —               —               —               ~0.72
-STOM        T2(0.39)        —               —               —               —               ~1.63
-TMCC2       —               —               —               T2(0.64)        —               ~2.76
-```
-
-> **Note:** UniRerank (2 genes) and NewUni100 (4 genes) are incomplete — LLM runs cut early on those configurations. Counts will increase when those jobs finish.
-
-#### Tier Distribution Summary
-
-```
-Run            | T1 | T2 | T3 | Total
-----------------------------------------
-NewMulti100    |  3 |  4 |  0 |    7
-NewUni100      |  3 |  1 |  0 |    4
-UniRerank      |  1 |  1 |  0 |    2
-WekaMulti      |  3 |  4 |  0 |    7
-WekaUni        |  1 |  2 |  0 |    3
-```
-
-The multivariate configurations (NewMulti100, WekaMulti) converge on almost identical gene sets — strong agreement between the Weka and Python pipelines despite completely independent implementations.
-
----
-
-### Cross-Reference: Known Literature + Jia et al. 2023 (GSE123568)
-
-```
-Gene       Runs Found                    Known CSV   Category               Paper (Jia23)   |FC|
-------------------------------------------------------------------------------------------------
-NLRP1      NU100:T1  UR100:T1  WU:T1    T1 ✓        pyroptosis             —               1.27
-BPGM       NM100:T2  WM:T1              T1 ✓        erythroid metabolism   —               3.39
-GYPA       NM100:T1  WM:T1              T1 ✓        erythroid surface      —               2.45
-HEMGN      NM100:T1  WM:T2              T2 ✓        erythroid TF           —               2.94
-TMCC2      WM:T2                        T1 ✓        erythroid metabolism   —               2.76
-RUNX2      WU:T2                        T2 ✓        osteoblast TF          —               1.22
-TSTA3      NM100:T1  WM:T1              —           (other SONFH papers)   —               1.74
-PIP5K1B    NM100:T2  WM:T2              —           —                      —               2.02
-CISD2      NM100:T2  WM:T2              —           —                      —               2.10
-STOM       NM100:T2                     —           —                      —               1.63
-P2RY13     UR100:T2  WU:T2              —           —                      —               1.29
-CBL        NU100:T1                     —           —                      —               1.01
-LCP1       NU100:T1                     —           —                      —               0.93
-SETD1B     NU100:T2                     —           —                      —               0.72
-------------------------------------------------------------------------------------------------
-Known gene match:  6 / 14  (NLRP1, BPGM, GYPA, HEMGN, TMCC2, RUNX2)
-Paper gene match:  0 / 14  — no direct overlap with Jia et al. 2023
-```
-
-**Gene classification by source:**
-
-| Group | Genes |
-|---|---|
-| Found by pipeline + in known literature | NLRP1, BPGM, GYPA, HEMGN, TMCC2, RUNX2 |
-| Found by pipeline + novel (not in known list or paper) | TSTA3, PIP5K1B, CISD2, STOM, P2RY13, CBL, LCP1, SETD1B |
-| Found by paper (Jia23) + not found by pipeline | PAK2, CD28, CD4, PIK3CD, PLCG1, PRKCA, VCL, IQGAP1, ACTN4, RAC1, XIAP, PIK3CB, TRAF6, PSEN1, TUBA1A, YWHAZ, HDAC4, CSNK1D, STK11, STAT2, STAT1, ERBB2, CXCR4, AGT, LPAR1 |
-
-> **TSTA3** has `—` in the known CSV but is cited directly in other SONFH literature (the LLM retrieved a 2021 paper identifying it as a diagnostic marker alongside ARG2 and MAP4K5). Not truly novel — just not yet added to the curated list.
-
----
-
-### Why Zero Overlap with Jia et al. 2023 — and Why That's Expected
-
-The paper runs a completely different methodology on the same dataset (GSE123568):
-
-| Dimension | Jia et al. 2023 | Weka Pipeline | Python Pipeline |
-|---|---|---|---|
-| **Problem framing** | Stage prediction (Early / Mid / Late NONFH) | Binary: SONFH vs control | Binary: SONFH vs control |
-| **Feature selection** | STRING PPI network topology (degree, betweenness, closeness centrality via Cytoscape) | Fold-change ranking → Weka attribute selection | Hybrid score Z(FC)+Z(t-stat) or ANN wrapper |
-| **Gene scoring** | Network hub centrality + symptom participation rate (HPO/DisGeNET) | RF attribute importance + J48 split nodes | RF/XGB importance + combined_score |
-| **Validation** | Separate holdout cohort (n=64) + RT-qPCR wet lab validation | 10-fold stratified CV only | RepeatedStratKFold (5×10) + MLflow |
-| **Biological enrichment** | Clinical phenomics (symptom linkage) | None | LLM agentic RAG (PubMed + UniProt + OpenTargets) |
-| **Output** | Stage-specific biomarkers (25 genes, 3 sets) | Single ranked shortlist | Single ranked shortlist |
-
-The paper's approach surfaces **network hubs** — genes centrally wired in PPI space that coordinate signalling, not necessarily the most differentially expressed. This pipeline surfaces **statistically discriminating probes** — genes that maximally separate SONFH from control by expression magnitude, RF splitting power, or ANN classification accuracy.
-
-These two methods surface genuinely different biology. The paper's hubs (IQGAP1, STAT2, CXCR4) are signalling coordinators with modest fold-changes (~1.0–1.1) and near-zero RF importance — they sink to the bottom of a fold-change or importance ranking even though they're biologically central. Confirming this: PIK3CD ranked **493/500** and IQGAP1 ranked **89/100** in the respective shortlists, with RF importance of 0.0 and 0.0 respectively.
-
-Conversely, the loudest genes this pipeline found — GYPA, BPGM, HEMGN, TMCC2 (FC 2.7–3.4, all erythroid) — are the downstream wreckage of ischemia, not its cause. When the femoral head collapses and bone marrow dies, a massive erythroid distress signal floods peripheral blood. These are the fire alarm, not the arsonist. The paper's staging approach explicitly filters these out by requiring genes to appear *before* structural collapse.
-
-The one exception worth highlighting: **ELOVL6** (FC=1.49, T1, found in UniRerank) sits earlier in the causal chain — a lipid elongation enzyme linked to the fatty infiltration mechanism through which glucocorticoids reduce blood flow to the femoral head. It is a plausible upstream signal and warrants further investigation.
-
-```
-Glucocorticoids
-    → fat embolism / lipid metabolism shift   (PPARG, ELOVL6 ← found by this pipeline)
-    → endothelial dysfunction / NO reduction  (NOS3, VEGFA)
-    → microvascular occlusion
-    → ischemia of femoral head
-    → bone cell death
-    → structural collapse
-    → erythroid/inflammatory chaos            ← GYPA, BPGM, HEMGN, TMCC2 live here
-```
-
-The zero overlap is methodologically expected and is not a contradiction. It reflects a genuine difference in what each approach is designed to find.
 
 ---
 
@@ -448,7 +384,7 @@ The zero overlap is methodologically expected and is not a contradiction. It ref
 | `feature_selection/top100_genes.csv` | Top 100 rows of gene_level_rankings.csv — for literature comparison |
 | `models/model_comparison.csv` | AUC / F1 / balanced-acc for all baseline + tuned models |
 | `biomarker_shortlist.csv` | Top candidates ranked by combined RF importance + fold-change score |
-| `llm_outputs/*.json` | Per-gene LLM interpretation (Phase 6) |
+| `llm_outputs/*.json` | Per-gene LLM interpretation |
 | `plots/volcano_plot.png` | Volcano plot — all filtered probes, top N highlighted |
 | `plots/fold_change_top20.png` | Top 20 probes by absolute fold change |
 | `plots/boxplots_top6.png` | Box plots — top 6 probes, SONFH vs control |
@@ -523,7 +459,7 @@ Outputs to `report/figures/`:
 
 ---
 
-## LLM Integration (Phase 6)
+## LLM Integration
 
 Triggered with `--llm` flag. Wired into `main.py` — runs after the biomarker shortlist is generated.
 
@@ -535,25 +471,49 @@ export OPENAI_API_KEY=sk-...
 python -m app.main --skip-pre --llm
 ```
 
-**Architecture:** PubMed retrieval → semantic ranking → constrained GPT-4o prompt → structured output → human validation → Phase 7 report input.
+**Architecture:** Per-gene agentic retrieval loop → semantic ranking → constrained GPT-4o-mini prompt → structured JSON output.
+
+**Agentic loop:** For each gene the agent runs up to 4 iterations, autonomously selecting tools at each step without a hard-coded call order. Tools are registered as typed JSON function schemas (OpenAI tool-use format), with descriptions written as instructions so the LLM decides what to call and when. On iteration 1, `ncbi_gene_search` is always called first to canonicalise the gene symbol and resolve aliases before any disease-specific queries are issued.
+
+**Registered tools (8 across 5 sources):**
+
+| Tool | Source | Purpose |
+|---|---|---|
+| `ncbi_gene_search` | NCBI Entrez | Canonicalise gene symbol + resolve aliases (always first) |
+| `uniprot_search` | UniProt | Curated protein function |
+| `opentargets_search` | Open Targets | Gene–disease association scores |
+| `pubmed_search` | PubMed Entrez | Retrieve biomedical abstracts |
+| `pubmed_fetch_by_id` | PubMed Entrez | Hydrate specific abstracts by PMID |
+| `pmc_fulltext_search` | PMC Entrez | Escalation path when abstract-level evidence is absent or weak |
+| `geo_search` | GEO Entrez | Dataset-level metadata to validate disease context + tissue relevance |
+| `wikipedia_search` | MediaWiki | General-biology fallback when all domain-specific tools return insufficient evidence |
+
+Before any retrieved text is passed to the LLM, all chunks are cosine-ranked by semantic similarity to the query using `sentence-transformers`, ensuring the most relevant passages fill the context window.
+
+**Evidence tiers — how they are decided:**
+
+The LLM assigns a tier based on what the retrieved evidence actually contains, not on model recall. The prompt explicitly constrains it to grade only retrieved material:
+
+| Tier | Criteria |
+|---|---|
+| **Tier 1** | Retrieved source directly links this gene to SONFH in human peripheral blood or matching modality |
+| **Tier 2** | Human disease-specific mechanistic, pathway, or association evidence for SONFH or close ONFH variants |
+| **Tier 3** | Human evidence in disease-adjacent biology (e.g. osteonecrosis of other sites, related bone/vascular pathology) |
+| **Tier 4** | Animal, cell-line, speculative, or weakly grounded support only |
+
+Relation type (`direct` / `indirect` / `inferred`) is assigned separately: `direct` means the source explicitly names the gene in a SONFH context; `indirect` means biologically relevant pathway support without a direct disease paper; `inferred` means general gene biology with weak disease-specific grounding.
 
 | Step | What it does |
 |---|---|
-| 1 | Load `biomarker_shortlist.csv`, deduplicate to ~14 unique genes |
-| 2 | For each gene, query PubMed: `"{gene} osteonecrosis OR bone ischemia OR avascular necrosis"` |
-| 3 | Retrieve abstracts, chunk + cosine-rank by semantic similarity |
-| 4 | Build structured prompt: researcher role + gene + ranked abstracts + constraints |
-| 5 | Call OpenAI API (`gpt-4o`) — interpret only what the abstracts contain |
-| 6 | Write `app/data/output/llm_outputs/{gene}.json` — interpretation, citations, token usage per gene |
+| 1 | Load `biomarker_shortlist.csv`, deduplicate to unique genes |
+| 2 | Agent begins iteration loop — calls tools autonomously up to 4 times per gene |
+| 3 | All retrieved chunks cosine-ranked by semantic similarity before LLM sees them |
+| 4 | Constrained prompt: interpret only retrieved evidence, flag unsupported claims |
+| 5 | Write `app/data/output/llm_outputs/{gene}.json` — tier, relation, confidence, citations, score |
 
 Config in `pipeline.yaml` under `llm:` — model, query template, abstracts per gene, output path all configurable.
 
-Output `app/data/output/llm_outputs/` is the direct input to the Phase 7 written report Discussion section.
+Output `app/data/output/llm_outputs/` feeds directly into the report Discussion section.
 
 ---
 
-## TODO
-
-- [ ] **Save Auto-WEKA `.txt` output for multivariate Weka run** — re-run Auto-WEKA on `top100_features.arff`, copy the full results text from the Weka GUI and save to `data/femoral_head_necrosis/weka_models/multivariate/auto_weka.txt`
-- [ ] **Save Auto-WEKA `.txt` output for univariate ANN Weka run** — re-run Auto-WEKA on `top100_features_univariate_ann.arff`, save to `data/femoral_head_necrosis/weka_models/univariate_ann/auto_weka.txt`
-- Screenshots already exist at `data/screenshots/weka/auto_weka.png` and `data/screenshots/weka_old/auto_weka.png` for reference

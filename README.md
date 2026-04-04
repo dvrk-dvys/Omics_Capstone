@@ -5,6 +5,8 @@
   <img src="data/fhn_hip_replacement.jpeg" alt="Hip Replacement — Femoral Head Osteonecrosis" width="700">
 </p>
 
+> **Course:** [Omics Logic — Artificial Intelligence and Machine Learning](https://omicslogic.com/programs/artificial-intelligence-and-machine-learning)
+
 > **Python ML App:** A separate automated pipeline replicates and extends this workflow using scikit-learn, XGBoost, hyperopt, and MLflow — see [`AutoOmics_ML_Pipeline/README.md`](AutoOmics_ML_Pipeline/README.md).
 
 ---
@@ -54,14 +56,9 @@ intervention with core decompression or other joint-preserving procedures.
 The controls in this study are steroid users who did *not* develop osteonecrosis —
 making the comparison about **disease susceptibility**, not just steroid exposure.
 
-**Class imbalance note:** 30 SONFH vs 10 control (3:1 ratio). Mention in Methods
-as a study design limitation. Because the classes are imbalanced, results should be reported using per-class metrics (TP rate, F1, confusion matrix, and AUC), not overall accuracy alone.
-
 ---
 
 ## Dataset Choice & Modality Rationale (Microarray vs RNA-seq)
-
-> **Capstone report reminder:** Discuss this section explicitly in the Methods and/or Discussion — explain why microarray was chosen over RNA-seq and acknowledge the scientific assumptions and limitations below.
 
 This project uses GSE123568, a microarray-based gene expression dataset (30 SONFH vs 10 controls), selected over available RNA-seq datasets due to sample size, structure, and suitability for supervised machine learning.
 
@@ -145,6 +142,78 @@ weka_biomarker_shortlist.csv    weka_biomarker_shortlist.csv
 
 ---
 
+## Methods
+
+### Feature Selection Strategies
+
+**Univariate (ANN Wrapper):** A univariate ANN wrapper approach was implemented, as described in the course and provided in the `simple ANN wrapper and filter.R` file, to evaluate each probe independently. For each probe, a small neural network model was trained using only that single feature as input, following repeated stratified Monte Carlo cross-validation splits (typically 70% train / 30% test). Model performance was evaluated on held-out test data, and probes were ranked based on their median test AUC across all runs. This produces a ranking of the form:
+
+```
+Score_probe = median(AUC_test(i)), i = 1,...,N
+```
+
+Where **N** is the number of repeated Monte Carlo splits.
+
+In addition to the ANN-based implementation, alternative single-feature models including logistic regression and RBF-kernel SVM were also evaluated to assess robustness of the ranking; however, the ANN-based wrapper was retained as the primary method due to its stable and interpretable performance. The top 100 probes were selected after this univariate feature selection for both the manual Weka-based and AutoOmics univariate pipelines. Multiple feature selection strategies were explored; however, only those yielding stable and interpretable results are emphasised in this report. This approach isolates genes with strong independent predictive signals, but does not capture interactions between genes.
+
+An optional reranking step was also tested to break ties among probes with similarly high ANN performance. In this variant, probes were reranked using:
+
+```
+Univariate (ReRanker) Score = 0.7 × z(AUC) + 0.3 × z(|FC|)
+```
+
+These weights allow genes with both high AUC and large fold change to rise to the top of the ranking.
+
+**Multivariate (Hybrid Scoring):** In contrast to the univariate ANN wrapper, the `feature_select.py` script uses a hybrid ranking score that evaluates all probes simultaneously using differential expression statistics:
+
+```
+Hybrid Score = Z(FC) + Z(t)
+```
+
+Where:
+- **FC** (fold change) is the difference in mean log₂ expression between SONFH and control groups (FC = μ_SONFH − μ_control)
+- **t** is Welch's t-statistic comparing probe expression between groups
+- **Z(·)** denotes z-score normalisation across all probes
+
+This approach prioritises probes that are both strongly differentially expressed (effect size) and statistically significant across all samples. The top 100 probes were selected for the Weka-based classification, while the AutoOmics Python pipeline was tested with both top 100 and top 500 probes. The intuition behind expanding the feature set from 100 to 500 was that for the multivariate results a wider pool of lower-ranked features would reduce the dominance of higher-ranked signals, allowing additional potentially significant but weaker-signalled gene patterns to contribute to the model performance and make it into the final biomarker shortlist. Output files were generated in `.arff` format for direct compatibility with Weka.
+
+---
+
+### Weka Pipeline — Manual Baseline
+
+After the feature selection strategies above were run as standalone scripts, the formatted `.arff` input file is ready for Weka. A full suite of classification algorithms was evaluated under a consistent cross-validation framework, and model performance was compared using standard metrics (Accuracy, AUC ROC, Weighted F1-score, Kappa) to identify the optimal model. The best model, Random Forest, was chosen after comparative analysis (see Results), then the J48 Decision Tree is used to split nodes so any probes used at the decision boundaries are added to the biomarker shortlist, which serves as the input into the Agentic RAG enrichment job.
+
+---
+
+### AutoOmics Pipeline — Automated Extension
+
+The AutoOmics pipeline was designed to automate and extend the same core logic with improved reproducibility and class-imbalance handling. Following the same parsing and preprocessing steps, the pipeline operates in two modes (`--mode multivariate` and `--mode univariate`), evaluating a suite of classifiers under a RepeatedStratifiedKFold scheme (5×10). Balanced accuracy is used as the primary metric to account for the 30:10 class imbalance. The best-performing model is then used to derive feature importance, generating the biomarker shortlist for downstream LLM-based biological interpretation and validation.
+
+The Python pipeline was implemented using scikit-learn (≥1.4) for classification and cross-validation, with additional models including XGBoost (≥2.0). Hyperparameter optimization was performed using Hyperopt (≥0.2.7), and experiment tracking was managed with MLflow (≥2.13). Data processing and statistical analysis were conducted using pandas, NumPy, and SciPy, while visualisations were generated with matplotlib and seaborn. The LLM-based enrichment stage utilised the OpenAI Python SDK (GPT-4o-mini), with tools for retrieval from biomedical sources via Biopython (PubMed), sentence-transformers (embeddings), with Pydantic frameworks supporting the smooth transition from prompt to standardised structured LLM output as JSON files. Configuration and utility components were handled using PyYAML and python-dotenv.
+
+---
+
+### LLM-Based Evidence Integration
+
+The Agentic Retrieval Augmented Generation (RAG) enrichment stage is designed to act as a constrained research assistant, minimising hallucination through structured prompt templates with situational variable injection, output history, strict grounding rules, and a tiered (1–4) ranking system for the citations it finds (or doesn't). It retains relevant numerical metadata from each pipeline run to enable targeted multi-value queries, and is built modularly so it can be reconfigured for any GEO dataset or disease context. It does not confirm biomarkers — it assembles supporting material to inform a human-in-the-loop decision on which candidates warrant follow-up.
+
+The retrieval tools available to the agent are registered as a typed JSON function schema (OpenAI tool-use format), where each tool's description is written as an instruction rather than a label — this allows the LLM to autonomously select the appropriate tool at each step without a hard-coded call order. Eight tools are registered across five data sources:
+
+| Tool | Source | Purpose |
+|------|--------|---------|
+| `ncbi_gene_search` | NCBI Entrez | Always invoked first (iteration 1) to canonicalise gene symbol and resolve aliases |
+| `uniprot_search` | UniProt | Curated protein function |
+| `opentargets_search` | Open Targets | Gene–disease association scores |
+| `pubmed_search` | PubMed Entrez | Retrieve biomedical abstracts |
+| `pubmed_fetch_by_id` | PubMed Entrez | Hydrate specific abstracts by PMID |
+| `pmc_fulltext_search` | PMC Entrez | Escalation path when abstract-level evidence is absent or weak |
+| `geo_search` | GEO Entrez | Dataset-level metadata to validate disease context and tissue relevance |
+| `wikipedia_search` | MediaWiki | General-biology fallback when all domain-specific tools return insufficient evidence |
+
+Before any retrieved text is passed to the LLM, all chunks are semantically ranked by cosine similarity to the query using sentence-transformers, ensuring the most relevant passages fill the limited context window. The agent iterates this retrieval-reasoning loop up to four times, accumulating evidence across tool calls before producing its final structured JSON output.
+
+---
+
 ## Output Inventory
 
 ### Biomarker Shortlists
@@ -153,52 +222,49 @@ weka_biomarker_shortlist.csv    weka_biomarker_shortlist.csv
 |-----|------|-------|
 | Weka — multivariate | `data/femoral_head_necrosis/weka_models/multivariate/weka_biomarker_shortlist.csv` | RF importance, top 100 hybrid-score probes |
 | Weka — univariate ANN | `data/femoral_head_necrosis/weka_models/univariate_ann/weka_biomarker_shortlist.csv` | RF importance, top 100 ANN-ranked probes |
-| Python — multivariate top100 | `AutoOmics_ML_Pipeline/app/data/output_multivariate_top100_min_s_50/biomarker_shortlist.csv` | combined_score ≥ 0.50 |
-| Python — multivariate top500 | `AutoOmics_ML_Pipeline/app/data/output_multivariate_top500_min_s_45/biomarker_shortlist.csv` | combined_score ≥ 0.45 |
-| Python — univariate rerank | `AutoOmics_ML_Pipeline/app/data/output_univariate_rerank_top43/biomarker_shortlist.csv` | univariate_score, top 43 |
+| Python — multivariate top100 | `AutoOmics_ML_Pipeline/app/data/output_new_multivariate_top100/biomarker_shortlist.csv` | hybrid score, top 100 |
+| Python — multivariate top500 | `AutoOmics_ML_Pipeline/app/data/output_new_multivariate_top500/biomarker_shortlist.csv` | hybrid score, top 500 |
+| Python — univariate rerank top100 | `AutoOmics_ML_Pipeline/app/data/output_univariate_rerank_top100/biomarker_shortlist.csv` | ANN univariate score, top 100 |
+| Python — univariate top100 | `AutoOmics_ML_Pipeline/app/data/output_new_univariate_top100/biomarker_shortlist.csv` | ANN univariate score, top 100 |
 
-### LLM Outputs (JSON per gene)
+### LLM Outputs (best-run filtered JSONs)
 
-| Run | Path | Genes |
-|-----|------|-------|
-| **Weka — multivariate** | `data/femoral_head_necrosis/llm_outputs/multivariate/` | 25 |
-| **Weka — univariate ANN** | `data/femoral_head_necrosis/llm_outputs/univariate_ann/` | 25 (when complete) |
-| Python — multivariate top100 | `AutoOmics_ML_Pipeline/app/data/output_multivariate_top100_min_s_50/llm_outputs/` | 11 |
-| Python — multivariate top500 | `AutoOmics_ML_Pipeline/app/data/output_multivariate_top500_min_s_45/llm_outputs/` | 19 |
-| Python — univariate rerank | `AutoOmics_ML_Pipeline/app/data/output_univariate_rerank_top43/llm_outputs/` | 45 |
+Best-run filtered outputs (Tier 1–3, direct+indirect) are stored in `report/best_runs/` — one JSON per pipeline run. These feed `report/llm_output_scraper.py --analyze-all`.
 
-### Scraper Outputs
+| Run | Path |
+|-----|------|
+| Weka — multivariate | `AutoOmics_ML_Pipeline/app/data/output_weka_multivariate/llm_outputs/` |
+| Weka — univariate ANN | `AutoOmics_ML_Pipeline/app/data/output_weka_univariate_ann/llm_outputs/` |
+| Python — multivariate top100 | `AutoOmics_ML_Pipeline/app/data/output_new_multivariate_top100/llm_outputs/` |
+| Python — multivariate top500 | `AutoOmics_ML_Pipeline/app/data/output_new_multivariate_top500/llm_outputs/` |
+| Python — univariate rerank | `AutoOmics_ML_Pipeline/app/data/output_univariate_rerank_top100/llm_outputs/` |
+| Python — univariate top100 | `AutoOmics_ML_Pipeline/app/data/output_new_univariate_top100/llm_outputs/` |
 
-Run `report/llm_output_scraper.py` with `input_dir` pointed at any LLM outputs directory above.
-Save each output with a descriptive name to `report/` — e.g. `audit_weka_multivariate.json`, `audit_weka_univariate_ann.json`.
+### Analysis Tables + Report Outputs
 
----
+```
+report/
+├── best_runs/                        ← filtered JSONs (one per pipeline run)
+├── known_genes/
+│   ├── sonfh_known_genes.csv         ← 108 curated SONFH genes (KnownA)
+│   └── jia2023_known_genes.csv       ← 25 Jia et al. 2023 validated genes (KnownB)
+├── llm_analysis_tables/              ← generated by llm_output_scraper.py --analyze-all
+│   ├── table2_aligned_gene_matrix.csv
+│   ├── table3_tier_relation_counts.csv
+│   ├── table4_cross_pipeline_convergence.csv
+│   ├── table5_known_gene_hits.csv
+│   ├── table6_pipeline_signal_summary.csv
+│   └── <run>.csv                     ← per-run detail tables
+├── figures/
+│   ├── fig_weka_model_comparison.png    ← Weka classifier results (report Figure 2)
+│   └── fig_python_model_comparison.png  ← Python pipeline results (report Figure 3)
+└── llm_output_analysis_all_runs.txt  ← full cross-pipeline text report
+```
 
-## Pipeline Progress
-
-### Multivariate branch (hybrid score → Weka)
-- [x] Step 1 — Parse series matrix
-- [x] Step 2 — Preprocess (IQR filter)
-- [x] Step 3a — Feature selection + ARFF (`top100_features.arff`)
-- [x] Step 4 — Weka classifiers (9 files in `weka_models/multivariate/`)
-- [ ] Step 4 — J48 re-run with **Output model** enabled (tree not captured in first run)
-- [x] Step 5 — Biomarker shortlist (`weka_biomarker_shortlist.csv`)
-- [x] Step 6 — LLM biological interpretation (multivariate shortlist, top 25 genes)
-- [ ] Step 6 — Weka model comparison chart (`plots/multivariate/weka_model_comparison.png`)
-
-### Univariate branch (ANN ranking → Weka)
-- [ ] Step 3b — Univariate ANN feature selection + ARFF
-- [ ] Step 4 — Weka classifiers (9 files in `weka_models/univariate_ann/`)
-- [ ] Step 5 — Biomarker shortlist (`weka_models/univariate_ann/weka_biomarker_shortlist.csv`)
-- [ ] Step 6 — LLM biological interpretation (univariate shortlist)
-- [ ] Step 6 — Weka model comparison chart (`plots/univariate_ann/weka_model_comparison.png`)
-
-### Report
-- [ ] Results table (accuracy, AUC, kappa per classifier — both branches)
-- [ ] Top biomarker gene table (RF importance + J48 split + fold change)
-- [ ] Discussion — erythrocyte/vascular signature interpretation
-- [ ] Discussion — multivariate vs univariate gene overlap
-- [ ] LLM section — methodology and evidence grounding
+Regenerate tables and text report:
+```bash
+python report/llm_output_scraper.py --analyze-all --input report/best_runs
+```
 
 ---
 
@@ -294,7 +360,7 @@ All classifiers use **Cross-validation, Folds: 10**. After each run, right-click
 |---|---|---|
 | **1 — Classification** | Can we predict SONFH vs control from gene expression? | NaiveBayes, SMO, MLP, IBk |
 | **2 — Feature discovery** | Which specific genes drive that prediction? | J48, RandomForest, WrapperSubsetEval |
-| **3 — Biology** | What do those genes mean for SONFH pathophysiology? | Phase 6–7 LLM + PubMed |
+| **3 — Biology** | What do those genes mean for SONFH pathophysiology? | LLM + PubMed |
 
 The classifiers are not the final goal — they are a tool to extract signal. Pathway and biomarker discovery happen after, using the ranked feature list as input.
 
@@ -355,6 +421,55 @@ Weka on top100.arff
 Save all `.txt` files to:
 - `data/femoral_head_necrosis/weka_models/multivariate/` for the multivariate run
 - `data/femoral_head_necrosis/weka_models/univariate_ann/` for the univariate run
+
+<details>
+<summary><strong>Preprocessor &amp; all classifier results</strong> (click to expand)</summary>
+
+**Preprocessor / data view:**
+
+![weka_preprocessor](data/screenshots/weka/weka_preprocessor.png)
+
+**NaiveBayes:**
+
+![naive_bayes](data/screenshots/weka/naive_bayes.png)
+
+**RandomForest:**
+
+![random_forest](data/screenshots/weka/random_forest.png)
+
+**SMO (SVM):**
+
+![smo](data/screenshots/weka/smo.png)
+
+**IBk (k-NN):**
+
+![lazy_ibk](data/screenshots/weka/lazy_ibk.png)
+
+![lazy_ibk_knn_3](data/screenshots/weka/lazy_ibk_knn_3.png)
+
+![lazy_ibk_knn_5](data/screenshots/weka/lazy_ibk_knn_5.png)
+
+**MLP (MultilayerPerceptron):**
+
+![multilayerperceptron](data/screenshots/weka/multilayerpreceptron.png)
+
+**MLP hyperparameters:**
+
+![multilayerperceptron_hyperparameters](data/screenshots/weka/multilayerpreceptron_hyperparameters.png)
+
+**J48 Decision Tree:**
+
+![j48_tree](data/screenshots/weka_old/j48_tree.png)
+
+**Auto-Weka:**
+
+![auto_weka](data/screenshots/weka/auto_weka.png)
+
+**Select Attributes (WrapperSubsetEval + RF):**
+
+![select_attributes_randomforest](data/screenshots/weka/select_attributes_randomforest.png)
+
+</details>
 
 ---
 
@@ -478,11 +593,18 @@ data/femoral_head_necrosis/
 
 ---
 
-## EDA — Exploratory Data Analysis
+<details>
+<summary><strong>EDA — Exploratory Data Analysis</strong> (click to expand)</summary>
 
 > Generated by `AutoOmics_ML_Pipeline/app/utils/feature_select.py`, saved to `data/femoral_head_necrosis/plots/eda/`.
 
 The EDA plots run before the branch split and are identical for both multivariate and univariate approaches — they visualize the preprocessed data and the top probe landscape, not the final feature sets.
+
+---
+
+### EDA Composite
+
+![eda_composite](data/femoral_head_necrosis/plots/eda/eda_composite.png)
 
 ---
 
@@ -547,18 +669,7 @@ Log2 expression of the top 20 probes across all 40 samples. Block structure show
 
 ![heatmap_top20](data/femoral_head_necrosis/plots/eda/heatmap_top20.png)
 
----
-
-### 6 — Do the samples separate? — PCA
-
-> **"Low-dimensional structure confirms separation"** — PC1 captures strong class separation.
-
-PCA compresses the 100-probe feature space down to 2 numbers per patient. If the two groups land in different regions of this 2D space, the selected probes are genuinely capturing disease signal.
-
-- **X-axis — PC1 (~84% variance explained):** the single most important direction of variation. Because it captures most of the variance, nearly everything meaningful is in this one axis.
-- **Y-axis — PC2:** second direction, minor additional separation.
-
-![pca_plot](data/femoral_head_necrosis/plots/eda/pca_plot.png)
+</details>
 
 ---
 
@@ -655,140 +766,98 @@ AutoOmics_ML_Pipeline/app/data/input/
 
 ## Weka vs Python Pipeline: Methodology Comparison
 
-| | Weka | Python Pipeline |
-|---|---|---|
-| CV strategy | 10-fold, single run | RepeatedStratifiedKFold(5×10) = 50 folds |
-| Test set per fold | 4 samples | ~8 samples |
-| Primary metric | Accuracy | AUC + balanced accuracy |
-| Class imbalance handling | None explicit | `class_weight="balanced"` on all models |
-| Hyperparameter tuning | None (manual) | Hyperopt (TPE, 50 trials per model) |
-| Feature count | 100 probes | 50 probes (multivariate mode) |
-
-**Where Weka looks better:** J48 achieved 95% with a single decision split — one probe at a threshold correctly classifies 38/40 samples. This is a biomarker finding more than a classifier result. Auto-WEKA searched 300+ algorithm+hyperparameter configurations.
+**Where Weka stands out:** J48 achieved 95% with a single decision split — one probe at a threshold correctly classifies 38/40 samples. This is a biomarker finding more than a classifier result. Auto-WEKA searched 300+ algorithm+hyperparameter configurations.
 
 **Where Python pipeline is better:** AUC and balanced accuracy are the correct metrics for 30:10 class imbalance. A model that always predicts SONFH would be 75% accurate. Python's balanced accuracy confirms models are learning both classes. The 50-fold evaluation is statistically far more reliable — Weka's single 10-fold run cannot report standard deviations. A finding with `selection_freq = 1.0` across 50 folds is far more trustworthy than an importance score from a single run.
 
 **Gene-level differences between pipelines:** Weka RF is dominated by 3 correlated blood-type probes (RHD/RHCE/XK) that can overwhelm the Gini metric in a single run. The Python pipeline ranks **BPGM** (bisphosphoglycerate mutase) first — a red blood cell enzyme that regulates 2,3-BPG, which directly controls oxygen release from hemoglobin to tissues. For a disease caused by bone ischemia, BPGM is a mechanistically stronger candidate. The genes that appear in *both* pipelines (CA1, GYPA, RHD/RHCE) are the highest-confidence shortlist candidates.
 
-**The key insight:** Weka accuracy numbers move in 2.5% jumps (1 sample = 2.5% on 40 patients). A single lucky fold can inflate results. Run both pipelines and look for overlap in the gene lists — that overlap is the credible biomarker set.
+### Model Comparison Figures
+
+**Weka classifier results (multivariate branch)**
+
+![fig_weka_model_comparison](report/figures/fig_weka_model_comparison.png)
+
+**Python pipeline results**
+
+![fig_python_model_comparison](report/figures/fig_python_model_comparison.png)
 
 ---
 
-## Biological Signal — What the Top Genes Are Telling You
+## LLM Biological Interpretation
 
-The biomarker shortlist is dominated by erythrocyte membrane and oxygen-transport genes: RHD, RHCE, GYPA, GYPB (Rh blood group / glycophorin family), XK (Kx blood group), CA1 (carbonic anhydrase 1, abundant in RBCs), HEMGN (erythroid-specific), SNCA (alpha-synuclein, expressed in RBCs). This is a strong **hematological / vascular signature**, consistent with the ischemia and microvascular disruption central to SONFH pathophysiology.
+The Agentic RAG stage runs after biomarker shortlist generation. For each gene, the agent executes a multi-step retrieval-reasoning loop (up to 4 iterations), autonomously selecting from 8 registered tools (NCBI Gene, UniProt, Open Targets, PubMed, PMC fulltext, GEO, Wikipedia) to accumulate evidence before producing a final structured JSON output.
 
-These are **biomarker signals**, not causal drivers — the disease disrupts blood supply to the femoral head, and peripheral blood gene expression reflects that systemic vascular shift.
+**Running the LLM stage:**
 
-Notable exceptions to the RBC pattern:
-- **PIP5K1B** (J48 split probe) — phosphoinositide kinase, involved in cytoskeletal regulation and platelet activation
-- **BPGM** — regulates 2,3-BPG in RBCs; directly controls oxygen delivery to tissues; mechanistically compelling for an ischemic disease
-- **ABCG2** — ABC transporter expressed in endothelial cells and stem cells; links to vascular biology
-- **EIF1AY** — Y-chromosome gene; likely a sex/gender covariate in this cohort (note: 13M vs 17F in SONFH group)
-
-> **Predictive minimality vs biological completeness:** The WrapperSubsetEval often selects just 1–2 probes with near-perfect wrapper accuracy. This means a minimal gene set is sufficient for classification — but it does not mean those are the only biologically relevant genes. Use the wrapper result as supporting evidence for the most discriminative individual genes, not as the complete biological picture.
-
----
-
-## Phase 6 — LLM Biological Interpretation
-
-**Core concept:** The LLM is NOT the main system — it is a context-constrained interpretation layer over retrieved evidence and ML results. The LLM interprets only what the PubMed retrieval step provides, grounded in the ML feature output. It is not treated as an independent source of evidence — it organizes and interprets retrieved literature in disease context.
-
-**Pipeline architecture:**
-
-```
-[weka_biomarker_shortlist.csv]   ← ML output
-         ↓
-[PubMed retrieval]   search: "GENE osteonecrosis OR bone ischemia"
-         ↓           retrieve abstracts + verify PMIDs exist
-[LLM interpretation] prompt with role + gene context + constraints
-         ↓           output: mechanism + evidence summary + confidence
-[Human validation]   verify each claim before citing in report
-         ↓
-[Report Discussion]
-```
-
-**Prompt structure (what the professor means by "prompt engineering"):**
-The prompt is intentionally scoped to include: disease context (SONFH pathophysiology), dataset context (GSE123568, n=40, peripheral blood), the biomarker shortlist with ML evidence sources, retrieved PubMed abstracts as the sole evidence base, an explicit constraint against fabricating citations or recalling training data, and a requirement to flag weak or unsupported evidence explicitly. This reflects the emphasis on task definition, evidence scope, output constraints, and uncertainty handling.
-
-**Weka branch (external shortlist):**
 ```bash
 cd AutoOmics_ML_Pipeline
 
-# Multivariate Weka shortlist → LLM
+# Weka multivariate shortlist
 python -m app.main --skip-pre --skip-train --llm --shortlist ../data/femoral_head_necrosis/weka_models/multivariate/weka_biomarker_shortlist.csv
 
-# Univariate Weka shortlist → LLM
+# Weka univariate shortlist
 python -m app.main --skip-pre --skip-train --llm --shortlist ../data/femoral_head_necrosis/weka_models/univariate_ann/weka_biomarker_shortlist.csv
-```
 
-**Python pipeline shortlist → LLM** (uses internally generated shortlist from feature selection):
-```bash
-cd AutoOmics_ML_Pipeline
+# Python pipeline (uses internally generated shortlist)
 python -m app.main --skip-pre --skip-train --llm
 ```
 
-> `--skip-train --shortlist` together skips feature selection, univariate ANN, and biomarker shortlist generation entirely — the LLM job consumes the external CSV directly. Without `--shortlist`, feature selection still runs to build the shortlist internally.
+> `--skip-pre --skip-train` skips preprocessing and model training. Add `--shortlist` to pass an external CSV (e.g. from Weka); omit it to use the shortlist generated by the Python pipeline's own feature selection run.
 
-**Human validation checklist — mandatory before citing in report:**
+**JSON output format** — one file per gene written to `app/data/output/llm_outputs/`:
 
-*Reference validity:*
-- Does the PMID exist and resolve on PubMed?
-- Is the citation real (title, authors, journal, year match)?
+```json
+{
+  "file": "BPGM.json",
+  "probe_id": "11719581_a_at",
+  "gene_symbol": "BPGM",
+  "evidence_tier": "Tier 1",
+  "evidence_relation": "direct",
+  "evidence_confidence": "high",
+  "biomarker_potential": "strong",
+  "score": 0.6801,
+  "abs_fold_change": 3.3879618999999996,
+  "relevance_summary": "BPGM is implicated in the pathophysiology of steroid-induced osteonecrosis of the femoral head and has been identified as a potential biomarker for early detection of this condition.",
+  "citations": [
+    "BPGM (P07738). https://www.uniprot.org/uniprotkb/P07738",
+    "BPGM — BPGM. https://platform.opentargets.org/target/ENSG00000172331",
+    "BPGM ↔ hemolytic anemia due to diphosphoglycerate mutase deficiency. https://platform.opentargets.org/target/ENSG00000172331/associations",
+    "BPGM ↔ autosomal recessive secondary polycythemia not associated with VHL gene. https://platform.opentargets.org/target/ENSG00000172331/associations",
+    "BPGM ↔ placenta praevia. https://platform.opentargets.org/target/ENSG00000172331/associations",
+    "BPGM ↔ vertebral column disorder. https://platform.opentargets.org/target/ENSG00000172331/associations",
+    "Screening of Potential Biomarkers in the Peripheral Serum for Steroid-Induced Osteonecrosis of the Femoral Head Based on WGCNA and Machine Learning Algorithms. (2022). https://pubmed.ncbi.nlm.nih.gov/35154510/",
+    "BPGM — bisphosphoglycerate mutase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "AKT1 — AKT serine/threonine kinase 1 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "GRB2 — growth factor receptor bound protein 2 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "GAPDH — glyceraldehyde-3-phosphate dehydrogenase (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "ATF6 — activating transcription factor 6 (NCBI Gene). https://www.ncbi.nlm.nih.gov/gene/",
+    "Bioinformatics analysis and identification of genes and molecular pathways in steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC8136174/",
+    "Advances in the mechanism for steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC12902040/",
+    "Pathological mechanisms and related markers of steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC11559024/",
+    "Transcriptomic analysis reveals genetic factors regulating early steroid-induced osteonecrosis of the femoral head (PMC full text). https://pmc.ncbi.nlm.nih.gov/articles/PMC9478254/",
+    "MEF cells, siBPGM control 5 [GSM6037560] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6037560",
+    "MEF cells, siBPGM control 2 [GSM6037557] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6037557",
+    "MEF cells, siBPGM control 4 [GSM6037559] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6037559",
+    "MEF cells, siBPGM control 3 [GSM6037558] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6037558",
+    "A renal function for 2,3-bisphosphoglycerate mutase (BPGM) [GSE200544] (GEO). https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE200544"
+  ]
+}
+```
 
-*Claim validity:*
-- Does the retrieved abstract actually support the proposed mechanism?
-- Is the gene-SONFH relationship direct, indirect, inferred, or unsupported?
-- Is the confidence level the LLM assigned appropriate?
+**Evidence tiers:**
+- **Tier 1** — human biomarker evidence directly tied to SONFH, matching study modality where possible
+- **Tier 2** — human disease-specific mechanistic or association evidence
+- **Tier 3** — human evidence in disease-adjacent biology
+- **Tier 4** — animal, cell-line, speculative, or weakly grounded support only
 
----
+**Relation types:** `direct` (source explicitly links gene to SONFH), `indirect` (biologically relevant pathway support), `inferred` (general gene biology, weak disease-specific grounding).
 
-## Report Writing Notes
+Filtered best-run outputs (Tier 1–3, direct + indirect) are stored in `report/best_runs/` and feed the cross-pipeline audit script:
 
-**Target:** 8 pages A4, 11pt, 1.5x line spacing
-
-**Rubric breakdown:**
-
-| Section | Marks |
-|---------|-------|
-| Title | 1 |
-| Abstract | 4 |
-| Introduction — biological background | 5 |
-| Introduction — rationale for RNA-seq/microarray | 3 |
-| Introduction — justification for ML/Weka | 3 |
-| Introduction — aims and objectives | 4 |
-| Methods (dataset, preprocessing, feature selection, classifiers, evaluation) | 20 |
-| Results (commentary + figures/tables) | 20 |
-| Discussion (biology, literature, limitations, future work) | 20 |
-| Conclusion | 5 |
-| References | 5 |
-| Structure / style / presentation | 10 |
-| Bonus (novel analysis / LLM use) | up to 5 |
-
-**Level framing:**
-
-| Level | What it looks like |
-|---|---|
-| Core | Accuracy/AUC table, confusion matrix, class imbalance discussion, blood-vs-tissue caveat |
-| Higher marks | MLP + Auto-Weka + Select Attributes, stronger Methods justification |
-| Bonus | Biological interpretation of what the numbers mean, biomarker vs causal gene distinction, erythrocyte/vascular signature, LLM pipeline (Phase 6–7) |
-
-The framing for the report: *"Machine learning–guided biomarker discovery, followed by biological interpretation"* — not pure predictive modeling. Classifiers answer "can we classify?"; feature selection answers "which genes?"; biology answers "so what does that mean for SONFH?"
-
-**Key Discussion points:**
-- Interpret top probes/genes in SONFH pathophysiology context — erythrocyte/vascular signature, ischemic mechanism
-- Discuss class imbalance (30:10) — control class harder to classify; Naive Bayes most affected
-- Discuss blood vs tissue: these are blood-based transcriptomic biomarkers, not tissue expression; they reflect systemic response, not local bone changes
-- Literature comparison: cite Jia Y et al. 2023 (PMID: 37313692) + LLM agent results
-
-**Limitations to address:**
-- Class imbalance: 30 SONFH vs 10 control (3:1 ratio)
-- Peripheral serum ≠ tissue: cannot identify cell-type-specific changes
-- No external validation cohort
-- Fold-change ranking is exploratory — formal statistical testing (t-test with FDR correction) would be more rigorous
-- Some probe IDs may not correspond to well-characterized genes (`---` in gene symbol column)
-
-> **Note on rubric framing:** The Discussion rubric references "prostate cancer biology" — this project is SONFH; the rubric was reused. No specific research goal was prescribed — the expectation is: make a claim, then support it with your results.
+```bash
+python report/llm_output_scraper.py --analyze-all --input report/best_runs
+```
 
 ---
 
